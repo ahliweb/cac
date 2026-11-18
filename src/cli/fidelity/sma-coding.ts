@@ -9,19 +9,25 @@
  *
  * Distinct from `bun run validate` (schema, structural and referential
  * checks of the data on its own): validate cannot tell whether a cell still
- * says what the document says. Run standalone:
+ * says what the document says. Run standalone with
+ * `bun run check:sma-fidelity` or, together with the other programmes,
+ * `bun run check:fidelity --program sma-coding`. Moved here from
+ * `scripts/check-sma-coding-fidelity.ts` (issue #140, ADR-0008) so the
+ * programme table (`src/cli/program-registry.ts`) can run it; the script
+ * remains as a thin entry point.
  *
- *   bun run scripts/check-sma-coding-fidelity.ts
- *
- * Exits 0 with a summary line when every field matches; exits 1 and lists
- * every mismatch (not just the first) otherwise.
+ * The commands exit 0 with a summary line when every field matches, and 1
+ * listing every mismatch (not just the first) otherwise.
  */
 
 import { join } from "node:path";
-import { expandWeekCodes } from "../src/domain/sma-week-codes";
-import { CP_ELEMENT_NAMES, type CpElementId } from "../src/schema/sma-common";
+import { expandWeekCodes } from "../../domain/sma-week-codes";
+import { CP_ELEMENT_NAMES, type CpElementId } from "../../schema/sma-common";
+import type { FidelityModule, FidelityProblem } from "./types";
 
-const REPO_ROOT = join(import.meta.dir, "..");
+export type { FidelityProblem } from "./types";
+
+const REPO_ROOT = join(import.meta.dir, "..", "..", "..");
 export const SMA_SOURCE_PATH = join(REPO_ROOT, "docs", "programs", "sma-coding", "silabus.md");
 export const SMA_DATA_DIR = join(REPO_ROOT, "data", "sma-coding");
 export const SMA_DATA_FILES = [
@@ -545,12 +551,6 @@ export function expectedCorpus(markdown: string): Record<SmaDataFileName, Json> 
 
 // --- Comparison -----------------------------------------------------------------
 
-export interface FidelityProblem {
-  readonly context: string;
-  readonly expected: string;
-  readonly actual: string;
-}
-
 function show(value: unknown): string {
   return value === undefined ? "(missing)" : JSON.stringify(value);
 }
@@ -667,27 +667,35 @@ export function formatFidelityProblems(problems: readonly FidelityProblem[]): st
   ].join("\n");
 }
 
-if (import.meta.main) {
-  const markdown = await Bun.file(SMA_SOURCE_PATH).text();
-  const actual: Record<string, unknown> = {};
-  for (const file of SMA_DATA_FILES) {
-    const handle = Bun.file(join(SMA_DATA_DIR, file));
-    if (await handle.exists()) {
-      actual[file] = JSON.parse(await handle.text());
+/**
+ * Reads the document, the corpus files and the registry entry under
+ * `repoRoot` and runs {@link checkSmaFidelity}; the module the programme
+ * table registers for `sma-coding`.
+ */
+export const smaCodingFidelity: FidelityModule = {
+  async run(repoRoot: string = REPO_ROOT) {
+    const markdown = await Bun.file(
+      join(repoRoot, "docs", "programs", "sma-coding", "silabus.md"),
+    ).text();
+    const actual: Record<string, unknown> = {};
+    for (const file of SMA_DATA_FILES) {
+      const handle = Bun.file(join(repoRoot, "data", "sma-coding", file));
+      if (await handle.exists()) {
+        actual[file] = JSON.parse(await handle.text());
+      }
     }
-  }
-  const registry = JSON.parse(await Bun.file(join(REPO_ROOT, "data", "programs.json")).text()) as {
-    programs: Array<SmaRegistryEntry & { id: string }>;
-  };
-  const entry = registry.programs.find((program) => program.id === "sma-coding");
-  const problems = checkSmaFidelity(markdown, actual, entry);
-  if (entry === undefined) {
-    problems.push({
-      context: "programs.json",
-      expected: '"sma-coding" entry',
-      actual: "(missing)",
-    });
-  }
-  console.log(formatFidelityProblems(problems));
-  process.exit(problems.length === 0 ? 0 : 1);
-}
+    const registry = JSON.parse(await Bun.file(join(repoRoot, "data", "programs.json")).text()) as {
+      programs: Array<SmaRegistryEntry & { id: string }>;
+    };
+    const entry = registry.programs.find((program) => program.id === "sma-coding");
+    const problems = checkSmaFidelity(markdown, actual, entry);
+    if (entry === undefined) {
+      problems.push({
+        context: "programs.json",
+        expected: '"sma-coding" entry',
+        actual: "(missing)",
+      });
+    }
+    return { problems, message: formatFidelityProblems(problems) };
+  },
+};

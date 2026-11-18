@@ -22,6 +22,7 @@
     "check:requirements": "bun run scripts/check-requirements.ts",
     "check:checklist-fidelity": "bun run scripts/check-checklist-fidelity.ts",
     "check:module-code": "bun run scripts/check-module-code.ts",
+    "check:fidelity": "bun run scripts/check-fidelity.ts",
     "check:sma-fidelity": "bun run scripts/check-sma-coding-fidelity.ts",
     "changeset": "changeset",
     "version": "changeset version"

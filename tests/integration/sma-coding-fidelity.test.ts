@@ -17,7 +17,7 @@ import {
   SMA_DATA_FILES,
   sectionLines,
   splitTableRow,
-} from "../../scripts/check-sma-coding-fidelity";
+} from "../../src/cli/fidelity/sma-coding";
 
 const repoRoot = join(import.meta.dir, "..", "..");
 const markdown = readFileSync(

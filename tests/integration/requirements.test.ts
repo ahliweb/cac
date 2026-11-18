@@ -122,6 +122,7 @@ describe("docs/requirements/register.md and traceability.md", () => {
       "FR-33",
       "TR-12",
       "TR-13",
+      "TR-14",
       "GR-13",
     ]) {
       const row = byId.get(id);
@@ -142,6 +143,7 @@ describe("docs/requirements/register.md and traceability.md", () => {
       "FR-33",
       "TR-12",
       "TR-13",
+      "TR-14",
       "GR-13",
     ]);
     for (const row of testRows) {

@@ -9,7 +9,7 @@
 import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import type { CorpusFinding, CorpusSource } from "../domain/corpus-audit";
-import { type ModuleIndexEntry, parseModulesIndex } from "../domain/modules";
+import { type ModuleIndexEntry, type ModulesIndex, parseModulesIndex } from "../domain/modules";
 import type { ResolvedModuleReference } from "../render/module";
 import { MODULES_FILE_NAME } from "../schema/module";
 import { referencesFileSchema } from "../schema/reference";
@@ -24,13 +24,18 @@ async function readBody(contentPath: string, repoRoot: string): Promise<string |
   }
 }
 
-/** One finding per module whose body file is missing or blank. Skips an absent or invalid index (reported elsewhere). */
+/**
+ * One finding per module whose body file is missing or blank. Skips an absent or invalid index (reported elsewhere).
+ * `parseIndex` is the programme's own index parser (the table entry's `parseModulesIndex`, ADR-0008); by default it is chosen by `programId`.
+ */
 export async function moduleContentFindings(
   source: CorpusSource,
   repoRoot: string = REPO_ROOT,
   programId: string = "osn",
+  parseIndex: (source: CorpusSource) => { readonly modules: ModulesIndex | undefined } = (corpus) =>
+    parseModulesIndex(corpus, programId),
 ): Promise<CorpusFinding[]> {
-  const { modules } = parseModulesIndex(source, programId);
+  const { modules } = parseIndex(source);
   const findings: CorpusFinding[] = [];
   if (modules === undefined) {
     return findings;
