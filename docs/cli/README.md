@@ -114,6 +114,20 @@ osn validate [options]
    - every `Rnn`-shaped citation anywhere in the corpus resolves to a real
      reference in `data/osn/references.json`.
 
+5. **Learning modules** (ADR-0007, issue #54), only when the programme has
+   a `data/<program>/modules.json` (it is optional; a programme without
+   one is valid). The index is parsed against `src/schema/module.ts`:
+   unique kebab-case ids, `audience` `siswa`, `language` `id`, a `status`
+   of `draf`/`ditinjau`/`disetujui`/`ditarik`, at least one reference, and
+   a `review` (`approvedOn` date and `reviewerRole`, never a name) that is
+   **required when the status is `disetujui` and forbidden otherwise**.
+   Referentially: every `topicFamilies` id exists in `topic-families.json`;
+   every `weeks` number exists in `weeks.json` and that week exercises one
+   of the module's families; every `refId` exists in `references.json`
+   (explicit `{ title, url }` references must be `https`); `contentPath`
+   is `content/<program>/modules/<id>.md` for this programme; and the
+   Markdown file exists and is not blank.
+
 ### Options
 
 | Flag | Meaning |
@@ -327,13 +341,15 @@ see "Week-shifting rule" and "Session-date rule" above.
 
 Turns the validated curriculum corpus into Markdown artefacts: for
 mentors (issue #21) a weekly session plan, a checkpoint sheet, or a
-one-page SOP card, and for students (issue #53) a weekly learner sheet.
+one-page SOP card, and for students a weekly learner sheet (issue #53)
+or a learning module (issue #54).
 
 ```sh
 osn render weekly --week <1-28> [--out <path>] [--force]
 osn render checkpoint --number <1-7> [--out <path>] [--force]
 osn render sop [--out <path>] [--force]
 osn render lembar-siswa --week <1-28> [--out <path>] [--force]
+osn render modul --id <module-id> [--out <path>] [--force]
 ```
 
 The actual rendering logic (`renderWeeklyPlan`, `renderCheckpointSheet`,
@@ -411,6 +427,40 @@ a learner is stored).
 | --- | --- |
 | `--week <n>` | The week number, `1`-`28`. **Required.** |
 
+### `osn render modul`
+
+Renders one learning module of the programme (`--program`, default
+`osn`) from `data/<program>/modules.json` and its Markdown body under
+`content/<program>/modules/`. Unlike the other renderers this output is
+**authored content** (ADR-0007), not derived from the syllabus, so its
+status is always visible. Layout, in order: `# <title>`; unless the
+status is `disetujui`, a banner as the first line after the title --
+`> **DRAF — belum ditinjau.**` (`draf`),
+`> **DRAF — sedang ditinjau, belum disetujui.**` (`ditinjau`) or
+`> **DITARIK — jangan dipakai.**` (`ditarik`); the module body verbatim;
+`## Rujukan` (each `refId` resolved against the programme's
+`references.json`, or the explicit title and URL); and a footer with the
+status, the programme and, for `disetujui`, the approval date and the
+reviewer's role. Output is byte-deterministic.
+
+An unknown `--id` (the error lists the known ids), a missing `--id`, a
+programme without `modules.json`, an invalid index, a missing or blank
+body, or a dangling `refId` is exit `2` (run `osn validate` for the
+full findings).
+
+| Flag | Meaning |
+| --- | --- |
+| `--id <id>` | The module id. **Required.** |
+
+### Checking a module's code examples
+
+`bun run check:module-code` (`scripts/check-module-code.ts`, run in CI
+after `osn validate`) extracts every ```` ```cpp ```` block from
+`content/**/modules/*.md` and runs `g++ -std=c++17 -fsyntax-only` on it.
+Nothing is executed or linked -- a pass means each example compiles, not
+that it is correct for every input. Exit `0` clean, `1` when a block
+fails to compile or when `g++` is not installed.
+
 ### `--out` / `--force` (all `osn render` subcommands)
 
 | Flag | Meaning |
@@ -427,7 +477,7 @@ written to disk.
 | Code | Meaning |
 | --- | --- |
 | `0` | Success. |
-| `2` | Usage error: a missing or unknown subcommand, a missing required flag (`--week`/`--number`), a `--week`/`--number` value outside its valid range (or not an integer), or `--out` already exists without `--force`. |
+| `2` | Usage error: a missing or unknown subcommand, a missing required flag (`--week`/`--number`/`--id`), a `--week`/`--number` value outside its valid range (or not an integer), an unknown or unreadable module (`render modul`), or `--out` already exists without `--force`. |
 
 ### Example
 

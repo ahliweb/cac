@@ -1,0 +1,15 @@
+{
+  "modules": [
+    {
+      "id": "dasar-pemrograman",
+      "title": "Dasar Pemrograman dengan C++",
+      "topicFamilies": ["dasar-pemrograman"],
+      "weeks": [1, 2],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [{ "refId": "R1" }],
+      "contentPath": "content/osn/modules/dasar-pemrograman.md"
+    }
+  ]
+}

@@ -11,6 +11,7 @@
 
 import { resolve } from "node:path";
 import { auditCorpus } from "../../domain/corpus-audit";
+import { moduleFindings } from "../../domain/modules";
 import {
   DEFAULT_PROGRAM_ID,
   findProgram,
@@ -24,6 +25,7 @@ import type { Command, CommandContext } from "../command";
 import { EXIT_SUCCESS, EXIT_USAGE_ERROR, EXIT_VALIDATION_FAILURE } from "../command";
 import { loadCorpusFromDirectory } from "../corpus-loader";
 import { formatAuditJson, formatAuditText } from "../format-audit";
+import { moduleContentFindings } from "../module-content";
 import {
   extractProgramFlag,
   loadProgramRegistry,
@@ -41,7 +43,10 @@ playbooks, 6 assessment bank kinds, assessment weights summing to 100,
 both session templates summing to 120 minutes, 5 hint levels), and checks
 referential integrity across the corpus (week -> topic family, week
 checkpoint numbering <-> gate weeks, assessment-bank kind -> competition
-stage, every Rnn citation -> the reference register). It also checks that
+stage, every Rnn citation -> the reference register). When a programme has a
+learning-module index (data/<program>/modules.json, ADR-0007) it is checked
+too: schema, topic family / week / reference ids, and that every module's
+Markdown body exists and is non-empty. It also checks that
 the registry's syllabusVersion/syllabusDate equal the ones carried by the
 programme's corpus files and that the registered source document exists.
 Reports every problem found in one pass, grouped by file.
@@ -68,6 +73,7 @@ Exit codes:
 async function auditProgram(program: Program, corpusDir: string) {
   const source = await loadCorpusFromDirectory(corpusDir);
   const extra = registryVersionFindings(program, source);
+  extra.push(...moduleFindings(source, program.id), ...(await moduleContentFindings(source)));
   if (!(await repoPathExists(program.sourceDocument))) {
     extra.push({
       file: REGISTRY_FILE_NAME,

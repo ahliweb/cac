@@ -156,8 +156,9 @@ under `src/` or `data/`:
 Two decisions accepted on 2026-11-18 extend this architecture; their
 implementation is tracked in milestones M7–M9 (issues #49–#55). The
 programme registry and `--program` selector (#50) and the student learner
-sheet (`osn render lembar-siswa`, #53) have landed; the remaining items
-below are still direction, not current state:
+sheet (`osn render lembar-siswa`, #53) and the learning-module index,
+renderer and pilot module (`osn render modul`, #54) have landed; the
+remaining items below are still direction, not current state:
 
 - **ADR-0006** — the repository becomes multi-programme: a programme
   registry, one corpus per programme under `data/<program>/`, and a
@@ -166,7 +167,12 @@ below are still direction, not current state:
   draft syllabus is approved.
 - **ADR-0007** — learner modules are *authored* content, kept apart from
   the transcribed corpus, and carry a `draf` → `ditinjau` → `disetujui`
-  review lifecycle that only a human can complete.
+  review lifecycle that only a human can complete. Implemented in #54:
+  `data/<program>/modules.json` (optional per programme, validated by
+  `src/schema/module.ts` and `osn validate`), bodies under
+  `content/<program>/modules/`, `osn render modul` with the `DRAF` banner,
+  and `bun run check:module-code` for the C++ examples. Only the pilot
+  module exists; modules for other topic families are separate issues.
 
 Neither decision changes the boundaries below: learner sheets and
 modules are rendered Markdown, not an LMS, and no learner data is stored.

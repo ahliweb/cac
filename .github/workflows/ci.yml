@@ -50,5 +50,8 @@ jobs:
       - name: Validate curriculum data
         run: bun run validate
 
+      - name: Check module code examples
+        run: bun run check:module-code
+
       - name: Privacy check
         run: bun run privacy-check

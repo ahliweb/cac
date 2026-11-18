@@ -72,6 +72,7 @@ import { HINT_LEVEL_COUNT, type HintPolicyFile, hintPolicyFileSchema } from "../
 import { KPI_METRIC_IDS, type KpiDefinitionsFile, kpiDefinitionsFileSchema } from "../schema/kpi";
 import { learningLoadFileSchema } from "../schema/learning-load";
 import { mentorSopFileSchema } from "../schema/mentor-sop";
+import { MODULES_FILE_NAME } from "../schema/module";
 import {
   OPERATIONAL_RULE_COUNT,
   type OperationalRulesFile,
@@ -394,7 +395,8 @@ function schemaConformanceFindings(source: CorpusSource): SchemaConformanceResul
 
   let filesUnregistered = 0;
   for (const file of source.keys()) {
-    if (!REGISTRY_BY_FILE.has(file)) {
+    // modules.json is the optional learning-module index (ADR-0007); `moduleFindings` validates it.
+    if (!REGISTRY_BY_FILE.has(file) && file !== MODULES_FILE_NAME) {
       filesUnregistered += 1;
       findings.push(
         error(
