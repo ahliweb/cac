@@ -1,9 +1,10 @@
 # Riset AI dalam Rekayasa Perangkat Lunak: Vibe Coding, AI-native Engineer, dan Pengembangan Berkelanjutan
 
-- **Version:** v0.1.0
+- **Version:** v0.2.0
 - **Last updated:** 2026-11-19
-- **Status:** **DRAF** (riset, bukan keputusan pemilik). Issue #139. Konten karangan menurut [ADR-0007](../architecture/adr/0007-authored-learning-content.md).
+- **Status:** **DRAF** (riset; dokumen ini sendiri belum disetujui sebagai silabus atau korpus). Issue #139. Keputusan pemilik atas usulan U-01..U-17 dan pertanyaan Q1-Q7 dicatat pada 2026-11-19 (bagian 7.1 dan 8.1), dan usulannya sudah diterapkan di dokumen program masing-masing. Konten karangan menurut [ADR-0007](../architecture/adr/0007-authored-learning-content.md).
 - **Changelog:**
+  - v0.2.0 (2026-11-19): status penerapan tiap usulan U-01..U-17 (bagian 7.1) dan keputusan pemilik atas Q1-Q7 (bagian 8.1) dicatat sesuai keputusan pemilik pada issue #139; koreksi U-03 (minggu `A-XII2-M5..M8`, bukan minggu 6-8). Isi riset (bukti, kutipan, daftar pustaka) tidak diubah.
   - v0.1.0 (2026-11-19): draf awal. Metode dan skala bukti; istilah dan asal-usulnya (vibe coding, AI-native engineer, agentic coding, AI pair programming); bukti empiris produktivitas, mutu, keamanan, pemeliharaan, dan belajar pemula; praktik rekayasa perangkat lunak berkelanjutan dengan AI (termasuk energi dan tata kelola); kompetensi per jenjang; usulan pembaruan per program; pertanyaan terbuka; daftar pustaka dengan status verifikasi.
 
 > **DRAF, bukan keputusan pemilik dan bukan materi resmi lembaga mana pun.**
@@ -563,7 +564,7 @@ program diubah terpisah setelah itu.
 | --- | --- | --- | --- | --- | --- |
 | U-01 | `osn` | `docs/silabus/04` dan `07` (tidak ditemukan kebijakan AI, riset ilmu belajar 8.1 celah 3); `data/osn/hint-policy.json` | Kebijakan AI pada **lapisan prosedur operasional**, bukan transkripsi silabus: saat mengerjakan soal dan *re-solve*, tanpa AI; setelah penyelesaian mandiri atau editorial, AI hanya boleh menjelaskan dan pembinaan wajib *re-solve* tanpa AI. | **A (Disarankan):** tanpa AI saat kerja soal, AI penjelas setelahnya dengan *re-solve*. B: larangan total. C: bebas dengan pengungkapan. Aturan kontes resmi tentang AI `[belum terverifikasi]`. Kompleksitas rendah (satu dokumen prosedur); risiko A: pengawasan sulit. | `[B]` (Bastani), `[E] (desain RCT)` (Shen dan Tamkin), `[C]` (Prather 2024) |
 | U-02 | `sma-coding` blok fondasi dan jalur C | `FND-X1-M6` (keamanan dasar dan etika digital), `FND-X1-M2` (lisensi), `C-XI2-M2` (keamanan konektivitas: kredensial di luar kode) | Tambahkan butir lintas jalur: kebijakan kelas pemakaian AI; **jangan menempelkan data pribadi, kata sandi, atau kunci ke layanan AI**; catat bila keluaran AI dipakai; lisensi keluaran AI sebagai catatan "masih berkembang". Tidak ada minggu baru. | **A (Disarankan):** tambahkan butir ke `FND-X1-M6` dan `C-XI2-M2`, tanpa minggu baru. B: seri pendamping (`rancangan-modul-pendamping.md`). C: biarkan hanya di jalur D. | `[D]` (OWASP LLM02; Lee 2025), `J-S` (SE 9/2023) |
-| U-03 | `sma-coding` jalur A | `A-XII2` minggu 6-8 (latihan terpadu, kontes mini kelas) dan seluruh latihan inti | Pernyataan eksplisit: latihan terpadu dan kontes mini tanpa AI; berkaitan dengan *re-solve*. | **A (Disarankan):** satu kalimat kebijakan kelas. B: tanpa pernyataan. | `[B]`/`[E]` seperti U-01 |
+| U-03 | `sma-coding` jalur A | `A-XII2-M5..M8` (latihan terpadu I-IV, kontes mini kelas; koreksi v0.2.0: v0.1.0 menulis "minggu 6-8", kode nyata di silabus adalah M5..M8) dan seluruh latihan inti | Pernyataan eksplisit: latihan terpadu dan kontes mini tanpa AI; berkaitan dengan *re-solve*. | **A (Disarankan):** satu kalimat kebijakan kelas. B: tanpa pernyataan. | `[B]`/`[E]` seperti U-01 |
 | U-04 | `sma-coding` jalur B | `B-XI1-M12` (Git, PR, ulasan), `B-XI1-M5` (Bun: pengelola paket), `B-XI1-M7` (`bun test`), `B-XI2-M10` (keamanan aplikasi), `B-XII1-M10` (rahasia dan konfigurasi) | (a) Pada `B-XI1-M12`, murid **meninjau PR berisi kode "buatan AI" sintetis dengan cacat tertanam** yang disiapkan guru (murid tidak memakai layanan AI); (b) pada `B-XI1-M5`, periksa keberadaan dan reputasi paket sebelum `bun install` (paket fiktif); (c) pada `B-XII1-M10`, rahasia tidak ditempel ke asisten AI. | **A (Disarankan):** integrasikan ke minggu yang ada tanpa minggu baru. B: satu minggu baru "kode hasil AI". C: tidak ada. | `[C]` (Perry; Pearce), `[D]` (Fu; Bacchelli), `[E]` (Spracklen) |
 | U-05 | `sma-coding` jalur D | `D-X2-M11` (AI generatif dan verifikasi), `D-XI2-M12` (kartu model), `D-XII1-M10` (kualitas kode dan keterulangan) | (a) `D-X2-M11`: demonstrasi guru bahwa perintah yang sama dapat memberi keluaran berbeda; bedakan "AI sebagai subjek" dan "AI sebagai alat menulis kode"; (b) `D-XI2-M12`: tambahkan baris perkiraan biaya komputasi dan energi pada kartu model; (c) `D-XII1-M10`: catat versi model dan perintah bila AI dipakai. | **A (Disarankan):** tambahan butir pada tiga minggu. B: minggu baru "jejak energi". C: tidak ada. | `J-R` (Ouyang), `J-R` (Luccioni), `J-S` (IEA) |
 | U-06 | `smp-coding` | `SMP9-2-M10` (etika AI: keliru, bias, halusinasi, ketergantungan), `SMP8-2-M11` (kata sandi dan akun) | Di `SMP9-2-M10`, bahas tanpa perangkat "mengalihkan pekerjaan ke AI versus belajar" dengan contoh dari bukti (Bastani; Lehmann) pada aturan pakai AI kelas; di `SMP8-2-M11`, data pribadi dan kata sandi tidak ditempel ke layanan AI. | **A (Disarankan):** tetap tanpa pemakaian langsung oleh murid, tambah butir. B: demonstrasi guru terkendali. C: akun sekolah terbimbing, menunggu kebijakan privasi alat (Q11). | `[B]` (Bastani, matematika), `[E]` (Lehmann), `[inferensi]` untuk SMP |
@@ -582,6 +583,41 @@ program diubah terpisah setelah itu.
 Seluruh usulan bersifat **opsional dan saling terpisah**; masing-masing dapat
 dipilih, diubah, atau ditolak tanpa memengaruhi yang lain, kecuali bahwa
 U-02 (kebijakan kelas) adalah dasar bagi U-03 dan U-04.
+
+### 7.1 Status penerapan (diperbarui 2026-11-19)
+
+Pemilik memutuskan pada issue #139 (dialog pilihan, 2026-11-19) bahwa ke-17
+usulan **diterapkan dengan opsi rekomendasi**, disesuaikan dengan keputusan
+bahwa kebijakan AI disusun **per program** dan bahwa murid SMA bebas memakai
+AI dengan etika sementara murid SMP tetap demonstrasi guru (bagian 8.1).
+Setiap program direvisi lewat PR sendiri setelah encode selesai. Kolom
+"Diterapkan di" memuat PR yang sudah merge ke `main`; nomor bagian merujuk
+dokumen program.
+
+| Id | Program | Status | Diterapkan di |
+| --- | --- | --- | --- |
+| U-01 | `osn` | Diterapkan | PR #159: [`docs/operations/kebijakan-ai-osn.md`](../operations/kebijakan-ai-osn.md) v1.0.0 (lapisan prosedur operasional; tidak mengubah `docs/silabus/` maupun `data/osn/`). |
+| U-02 | `sma-coding` fondasi dan jalur C | Diterapkan | PR #161: silabus v1.3.0, butir pada `FND-X1-M6` dan `C-XI2-M2`, tanpa minggu baru. |
+| U-03 | `sma-coding` jalur A | Diterapkan | PR #161: pernyataan tanpa AI pada latihan terpadu `A-XII2-M5..M8` (koreksi minggu, lihat catatan U-03 di tabel). |
+| U-04 | `sma-coding` jalur B | Diterapkan | PR #161: meninjau kode buatan AI (`B-XI1-M12`), pemeriksaan paket (`B-XI1-M5`), rahasia (`B-XII1-M10`); murid boleh memakai AI langsung dengan etika. |
+| U-05 | `sma-coding` jalur D | Diterapkan | PR #161: non-determinisme, biaya komputasi dan energi, pencatatan versi model dan perintah (`D-X2-M11`, `D-XI2-M12`, `D-XII1-M10`); aturan lama "layanan AI daring hanya didemonstrasikan guru" digantikan. Bagian 7.4 silabus memuat kebijakan AI program. |
+| U-06 | `smp-coding` | Diterapkan | PR #160: silabus v1.1.0, bagian 7.1 (demonstrasi guru, tanpa akun murid, asesmen tanpa AI); butir pada `SMP9-2-M10` dan `SMP8-2-M11`. |
+| U-07 | `sd-coding` | Tanpa perubahan | Memang tidak ada usulan perubahan (demonstrasi guru saja); silabus v1.0.0 tetap. |
+| U-08 | `tk-coding` | Tanpa perubahan | Memang tidak ada usulan perubahan; silabus v1.0.0 tetap. |
+| U-09 | `kuliah-coding` jalur U | Diterapkan | PR #162: silabus v1.1.0, pokok bahasan AI di `KUL-U-202`. |
+| U-10 | `kuliah-coding` jalur I | Diterapkan | PR #162: rekayasa perangkat lunak berbantuan AI di `KUL-I-204`, `KUL-I-401`, `KUL-I-301`, `KUL-I-305`, `KUL-I-303`, tanpa menambah SKS. |
+| U-11 | `kuliah-coding` kebijakan AI | Diterapkan | PR #162: kebijakan tiga tingkat diperkuat (bagian 6.3-6.5: log pemakaian, wawancara kode, ujian praktik tanpa AI). |
+| U-12 | `kuliah-coding` jalur K | Diterapkan | PR #162: Merah saat kontes; sesudah kontes AI untuk menjelaskan solusi dengan pengungkapan dan *re-solve* tanpa AI (bagian 3.3). |
+| U-13 | `dewasa-coding` fondasi | Diterapkan | PR #163: silabus v1.1.0, `DW-FND-M1` (hak cipta dan lisensi keluaran AI, kebijakan tempat kerja, *prompt injection*, energi dan biaya). |
+| U-14 | `dewasa-coding` jalur PKJ | Diterapkan | PR #163: `DW-PKJ-M6` (catat alat, versi, perintah; hasil tidak identik; data sintetis). |
+| U-15 | `dewasa-coding` jalur PRO | Diterapkan | PR #163: modul baru `DW-PRO-M13` setelah `DW-PRO-M5` (8 jam), kebijakan AI di bagian 9.1. |
+| U-16 | `dewasa-coding` jalur BIS dan PRS | Tanpa perubahan | Memang tidak ada usulan perubahan; `DW-BIS-M7` dan jalur `PRS` tetap. |
+| U-17 | `docs/programs/README.md` | Diterapkan | Peta jenjang v2.0.0 (bagian 4 "Rujukan riset bersama") menautkan dokumen ini beserta kolom kebijakan AI per program. |
+
+Hasil bersihnya: dua belas usulan mengubah silabus program (U-02..U-06 dan
+U-09..U-15, dengan U-02..U-05 dalam satu revisi `sma-coding`), satu menjadi
+dokumen operasional (U-01), tiga memang tanpa perubahan (U-07, U-08, U-16),
+dan satu tautan (U-17).
 
 ## 8. Batasan dokumen dan pertanyaan terbuka untuk pemilik
 
@@ -616,6 +652,22 @@ menyajikan ke pemilik, DL-043):
 | Q5 | Apakah jejak energi dan biaya komputasi dimasukkan sebagai materi? | **A (Disarankan):** butir singkat pada jalur D, `KUL-I-303`, dan `KUL-U-202`, dengan angka ketidakpastian. B: praktikum pengukuran. C: tidak. |
 | Q6 | Apakah dokumen ini ditautkan dari `README.md`, `AGENTS.md`, `docs/architecture/repository-map.md`, dan `docs/programs/README.md`? | **Tautkan (Disarankan)** seperti riset ilmu belajar; atau tunda sampai disetujui. |
 | Q7 | Seberapa sering riset ini ditinjau ulang? | **Setiap 6 bulan (Disarankan)** karena bidang bergerak cepat; atau setiap kali ada studi besar baru. |
+
+### 8.1 Keputusan pemilik atas Q1-Q7 (2026-11-19, issue #139)
+
+Dicatat dari komentar keputusan pemilik pada issue #139 (dialog pilihan).
+Kolom "Opsi riset" menyebut opsi yang ditulis pada tabel di atas; pada Q2 dan
+Q3 pemilik **memilih berbeda dari rekomendasi riset**.
+
+| Id | Keputusan pemilik | Opsi riset |
+| --- | --- | --- |
+| Q1 | Istilah dijelaskan sebagai istilah di glosarium (mis. silabus `sma-coding` 7.4, `dewasa-coding` 9.1 dan glosarium kuliah 6.5); bukan tujuan atau label profil lulusan. | A (Disarankan) |
+| Q2 | Kebijakan AI disusun **per program**, bukan satu kerangka lintas program: OSN `docs/operations/kebijakan-ai-osn.md`, SMA 7.4, SMP 7.1, kuliah 6.3-6.5, dewasa 9.1; TK dan SD tanpa alat AI generatif untuk murid. | B (bukan rekomendasi) |
+| Q3 | **SMA (semua jalur) bebas memakai AI generatif dengan etika; SMP tetap demonstrasi guru.** Aturan lama jalur D SMA digantikan. Data pribadi murid tetap tidak masuk repositori (ADR-0004). | Bukan A, B, maupun C persis; SMA mendekati C dengan etika, SMP mengikuti A |
+| Q4 | Jalur I: integrasi di `KUL-I-204` dan `KUL-I-401` (PR #162); jalur PRO: modul baru `DW-PRO-M13` setelah `DW-PRO-M5` (PR #163). | A untuk jalur I, B untuk PRO (Disarankan) |
+| Q5 | Energi dan biaya komputasi sebagai butir singkat dengan ketidakpastian dinyatakan. | A (Disarankan) |
+| Q6 | Dokumen ini ditautkan dari `README.md`, `AGENTS.md`, `docs/architecture/repository-map.md`, dan `docs/programs/README.md`. | Tautkan (Disarankan) |
+| Q7 | Tinjau ulang setiap 6 bulan; dijadwalkan Mei 2027 di issue [#151](https://github.com/ahliweb/osn/issues/151). | Setiap 6 bulan (Disarankan) |
 
 ## 9. Daftar pustaka
 
