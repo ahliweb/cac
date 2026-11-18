@@ -8,12 +8,22 @@ multi-program) dan [ADR-0007](0007-authored-learning-content.md) (konten
 buatan sendiri); tidak menggantikan keduanya. Issue
 [#140](https://github.com/ahliweb/osn/issues/140).
 
+**Catatan status pelaksanaan (2026-11-19, tidak mengubah keputusan):**
+keputusan ini sudah dilaksanakan. Kelima program ter-encode dan terdaftar
+(PR #145 `tk-coding`, #146 `kuliah-coding`, #147 `dewasa-coding`, #148
+`sd-coding`, #149 `smp-coding`); tabel `PROGRAM_MODULES` di
+`src/cli/program-registry.ts` memuat tujuh entri, dan `bun run check:fidelity`
+menjalankan enam modul fidelity. Bagian "Context" dan seterusnya
+mencerminkan keadaan saat keputusan dibuat dan sengaja tidak diubah.
+
 ## Context
 
-Setelah `osn` dan `sma-coding`, lima program coding lain sudah punya draf
-silabus yang disetujui pemilik pada 2026-11-19 dan siap di-encode menjadi
+Setelah `osn` dan `sma-coding`, lima program coding lain memiliki draf
+silabus yang pada 2026-11-19 disetujui pemilik dan siap di-encode menjadi
 data: `tk-coding`, `sd-coding`, `smp-coding`, `kuliah-coding`,
-`dewasa-coding` (`docs/programs/<id>/silabus-draf.md`). Bentuk silabusnya
+`dewasa-coding` (saat keputusan ini ditulis, berkasnya
+`docs/programs/<id>/silabus-draf.md`; sejak persetujuan menjadi
+`docs/programs/<id>/silabus.md`, lihat catatan status di bawah). Bentuk silabusnya
 berbeda jauh: OSN adalah 28 minggu dengan 7 gerbang; SMA adalah 5 jalur x 6
 semester dengan peta CP; TK dan SD bermain tanpa layar atau berjam pendek;
 kuliah memakai SKS dan area pengetahuan; dewasa memakai jalur persona dan
