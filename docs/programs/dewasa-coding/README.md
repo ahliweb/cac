@@ -1,15 +1,15 @@
 # Program Pembelajaran Coding untuk Dewasa (`dewasa-coding`)
 
-- **Version:** v1.0.0
+- **Version:** v1.1.0
 - **Last updated:** 2026-11-19
-- **Status:** DISETUJUI pemilik pada 2026-11-19 (dialog pilihan, beserta rekomendasi penyusun; issue #131). Silabus dienkode ke `data/dewasa-coding/` dengan skema khusus program (ADR-0008) dan didaftarkan di `data/programs.json`. Belum ada `content/dewasa-coding/` (modul pembelajaran, ADR-0007).
-- **Changeset:** `.changeset/encode-dewasa-coding.md` (minor): silabus disetujui dan dienkode (#131). Riwayat: `.changeset/draf-dewasa-coding.md` (patch), dokumen riset dan silabus draf.
+- **Status:** DISETUJUI pemilik pada 2026-11-19 (dialog pilihan, beserta rekomendasi penyusun; issue #131). Silabus dienkode ke `data/dewasa-coding/` dengan skema khusus program (ADR-0008) dan didaftarkan di `data/programs.json`. Belum ada `content/dewasa-coding/` (modul pembelajaran, ADR-0007). Revisi v1.1.0 (rekayasa perangkat lunak berbantuan AI) disetujui pemilik pada 2026-11-19 lewat keputusan #139.
+- **Changeset:** `.changeset/encode-dewasa-coding.md` (minor): silabus disetujui dan dienkode (#131). Revisi v1.1.0: `.changeset/dewasa-coding-v1-1-ai.md` (minor, #139). Riwayat: `.changeset/draf-dewasa-coding.md` (patch), dokumen riset dan silabus draf.
 
 > Isi folder ini adalah konten **karangan** (*authored*) menurut
 > [ADR-0007](../../architecture/adr/0007-authored-learning-content.md), bukan
 > dokumen pemerintah dan bukan transkripsi. Persetujuan hanya oleh pemilik;
 > agent tidak pernah mencatat persetujuan atas nama pemilik. Persetujuan v1.0.0
-> dicatat pemilik pada 2026-11-19.
+> dan revisi v1.1.0 (#139) dicatat pemilik pada 2026-11-19.
 
 ## Tujuan program
 
@@ -25,7 +25,11 @@ jam** (bukan semester sekolah), dengan empat jalur menurut persona:
 
 Modul bersama semua jalur: `DW-FND-M1` (keamanan, privasi, etika kerja dengan
 kode dan AI; 8 jam). Jam per jalur seluruhnya `[asumsi]`: `PKJ` 48, `PRO`
-128, `PRS` 38, `BIS` 56 (termasuk `DW-FND-M1`).
+136, `PRS` 38, `BIS` 56 (termasuk `DW-FND-M1`). Sejak v1.1.0 jalur `PRO`
+memuat `DW-PRO-M13` (rekayasa perangkat lunak berbantuan AI, 8 jam, setelah
+`DW-PRO-M5`), dan silabus memuat kebijakan penggunaan AI untuk peserta dewasa
+(bagian 9.1). Dasar bukti revisi ini ada di
+[`../../riset/ai-rekayasa-perangkat-lunak.md`](../../riset/ai-rekayasa-perangkat-lunak.md).
 
 ## Daftar berkas
 
@@ -33,7 +37,7 @@ kode dan AI; 8 jam). Jam per jalur seluruhnya `[asumsi]`: `PKJ` 48, `PRO`
 | --- | --- |
 | `README.md` | Dokumen ini: status, tujuan, daftar berkas, keputusan pemilik, changelog. |
 | `riset.md` | Riset sumber bertanggal 2026-11-19: SKKNI 282/2016 (47 unit; tabel bagian 2.2 menjadi sumber judul unit di data), skema sertifikasi LSP, program pelatihan pemerintah, kerangka kecakapan digital, kebutuhan UMKM, kajian alat (lisensi, biaya, akun); memisahkan yang dibuka dari yang tidak. |
-| `silabus.md` | Silabus v1.0.0 yang disetujui: empat jalur dengan rencana modul berjam, pemetaan SKKNI untuk jalur profesional, jembatan, asesmen portofolio, opsi sertifikasi, privasi, opsi alat, biaya, dan keputusan pemilik (bagian 12). Sumber `data/dewasa-coding/`. |
+| `silabus.md` | Silabus v1.1.0 yang disetujui: empat jalur dengan rencana modul berjam, pemetaan SKKNI untuk jalur profesional, jembatan, asesmen portofolio, opsi sertifikasi, privasi dan kebijakan penggunaan AI (bagian 9), opsi alat, biaya, dan keputusan pemilik (bagian 12). Sumber `data/dewasa-coding/`. |
 
 ## Korpus data
 
@@ -48,7 +52,7 @@ kode dan AI; 8 jam). Jam per jalur seluruhnya `[asumsi]`: `PKJ` 48, `PRO`
 | `tracks.json` | empat jalur: persona, tujuan, jam, prasyarat, durasi, proyek data sintetis | silabus bagian 1, 4-7 |
 | `structure.json` | struktur program dan asumsi | silabus bagian 2 |
 | `shared.json` | modul bersama `DW-FND-M1` | silabus bagian 3 |
-| `module-plan.json` | 34 modul jalur dengan jam, prasyarat, keluaran portofolio atau unit SKKNI | silabus bagian 4-7 |
+| `module-plan.json` | 35 modul jalur (`PRO` 13 modul, urutan belajar menempatkan `DW-PRO-M13` setelah `DW-PRO-M5`) dengan jam, prasyarat, keluaran portofolio atau unit SKKNI | silabus bagian 4-7 |
 | `skkni-units.json` | 47 unit SKKNI 282/2016 (kode dan judul; salinan bertanda belum terverifikasi), klaim cakupan | `riset.md` bagian 2.2 dan silabus bagian 5.2 |
 | `certification.json` | opsi sertifikasi (tanpa sertifikasi bawaan) dan skema LSP | silabus bagian 5.2 dan 8.2 |
 | `bridges.json` | jembatan dari program lain (jembatan kuliah-coding ditunda) | silabus bagian 6.1 |
@@ -71,6 +75,7 @@ Rincian opsi ada di bagian 12 `silabus.md`. Semua rekomendasi penyusun dipilih:
 | 12.6 | Program pelatihan pemerintah | hanya rujukan dengan catatan cek situs resmi |
 | 12.7 | Jembatan dari kuliah-coding (#130) | ditunda sampai drafnya ada |
 | 12.8 | Pengerjaan lanjutan | skema khusus per program (ADR-0008); modul `content/` mulai dari jalur `PKJ` dan `BIS` |
+| 12.9 | Revisi v1.1.0, rekayasa perangkat lunak berbantuan AI (#139, 2026-11-19) | U-13 butir tambahan di `DW-FND-M1`; U-14 butir tambahan di `DW-PKJ-M6`; U-15 modul baru `DW-PRO-M13` setelah `DW-PRO-M5` (8 jam `[asumsi]`); U-16 tanpa perubahan; kebijakan AI per program (bagian 9.1); energi dan biaya komputasi sebagai butir singkat dengan ketidakpastian |
 
 Modul `content/dewasa-coding/modules/` belum ditulis dan bukan bagian dari
 issue #131.
@@ -88,3 +93,4 @@ dicatat dengan tanggal) dan, karena data dienkode dari silabus, mengubah
 | --- | --- | --- |
 | v0.1.0 | 2026-11-19 | Draf awal folder program: `riset.md` dan `silabus-draf.md` (#131). |
 | v1.0.0 | 2026-11-19 | Silabus disetujui pemilik beserta rekomendasi: `silabus-draf.md` menjadi `silabus.md` (v1.0.0), dienkode ke `data/dewasa-coding/` dan didaftarkan di `data/programs.json` (#131). |
+| v1.1.0 | 2026-11-19 | Revisi minor atas keputusan pemilik #139: modul `DW-PRO-M13` (jalur `PRO` 128 menjadi 136 jam), butir AI di `DW-FND-M1` dan `DW-PKJ-M6`, glosarium istilah AI, kebijakan penggunaan AI (bagian 9.1); `data/dewasa-coding/` dan registri diperbarui ke 1.1.0; skema `tracks.json` menjadikan `hoursPerModule` opsional (jalur dengan jam modul tak seragam); fidelity membaca kolom jam tabel `PRO` dan urutan belajar. |

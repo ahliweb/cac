@@ -4,6 +4,12 @@
  * project text of bagian 4-7). Hours are the syllabus's `[asumsi]`
  * estimates; the arithmetic (`sharedHours + trackHours = totalHours`) is
  * shape-level, the rest (against the modules) lives in the corpus audit.
+ *
+ * A track whose modules all take the same hours states `hoursPerModule`
+ * (`moduleCount x hoursPerModule = trackHours`); a track with unequal
+ * modules (PRO since v1.1.0: twelve of 10 hours and `DW-PRO-M13` of 8)
+ * omits it, and its own-module hours are checked against `module-plan.json`
+ * by the corpus audit instead.
  */
 
 import { z } from "zod";
@@ -20,8 +26,14 @@ export const dwTrackSchema = z
     ),
     trackHours: dwHoursSchema.describe("Hours of the track's own modules (the second term)."),
     totalHours: dwHoursSchema.describe("The total of the hours cell (`sharedHours + trackHours`)."),
-    moduleCount: dwHoursSchema.describe('The number of own modules, from "(N modul × H jam)".'),
-    hoursPerModule: dwHoursSchema.describe('Hours per own module, from "(N modul × H jam)".'),
+    moduleCount: dwHoursSchema.describe(
+      'The number of own modules: the sum of the "N modul" terms of "(N modul × H jam)".',
+    ),
+    hoursPerModule: dwHoursSchema
+      .optional()
+      .describe(
+        'Hours per own module, from "(N modul × H jam)"; present only when every own module takes the same hours.',
+      ),
     durationText: nonEmptyString.describe('The "Durasi" paragraph, whitespace-normalised.'),
     endOfTrack: nonEmptyString.describe('The "Akhir jalur" cell, verbatim.'),
     prerequisitesText: nonEmptyString.describe('The "Prasyarat" paragraph, whitespace-normalised.'),
@@ -38,10 +50,15 @@ export const dwTrackSchema = z
     path: ["totalHours"],
     message: "must equal sharedHours + trackHours",
   })
-  .refine((track) => track.moduleCount * track.hoursPerModule === track.trackHours, {
-    path: ["trackHours"],
-    message: "must equal moduleCount x hoursPerModule",
-  });
+  .refine(
+    (track) =>
+      track.hoursPerModule === undefined ||
+      track.moduleCount * track.hoursPerModule === track.trackHours,
+    {
+      path: ["trackHours"],
+      message: "must equal moduleCount x hoursPerModule",
+    },
+  );
 
 export const dwTracksFileSchema = z
   .object({

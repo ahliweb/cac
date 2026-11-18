@@ -16,8 +16,11 @@
  *
  * Two derivations are rules, not cells, and are stated here so a change to
  * them is a deliberate edit of this module: a module's `hours` is its
- * track's "(N modul × H jam)" figure, and a module's `prerequisites` is the
- * previous module of the table (the first module names the shared module).
+ * track's "(N modul × H jam)" figure (track PRO, whose modules are unequal
+ * since v1.1.0, has a "Jam" column instead), and a module's `prerequisites`
+ * is the previous row of the table (the first module names the shared
+ * module). A table lists modules in learning order, so a module number may
+ * differ from its row position (`DW-PRO-M13` sits after `DW-PRO-M5`).
  */
 
 import { join } from "node:path";
@@ -206,7 +209,9 @@ interface Track {
   readonly [key: string]: Json;
   readonly id: string;
   readonly moduleCount: number;
-  readonly hoursPerModule: number;
+  /** Hours of every own module; absent when the track's modules take unequal hours. */
+  readonly hoursPerModule?: number;
+  readonly trackHours: number;
 }
 
 function parseTracks(silabus: string): Track[] {
@@ -223,7 +228,19 @@ function parseTracks(silabus: string): Track[] {
     const hours = match(/^(\d+) \+ (\d+) = (\d+)$/, hoursCell as string, `${id} hours cell`);
     const section = sectionLines(silabus, TRACK_HEADINGS[id] as string);
     const durationText = labelledParagraph(section, "**Durasi:**");
-    const modules = match(/\((\d+) modul × (\d+) jam\)/, durationText, `${id} Durasi`);
+    const groups = [...durationText.matchAll(/(\d+) modul × (\d+) jam/g)].map((found) => ({
+      count: Number(group(found, 1)),
+      hours: Number(group(found, 2)),
+    }));
+    if (groups.length === 0) {
+      fail(`${id} Durasi: no "N modul × H jam" term in ${JSON.stringify(durationText)}.`);
+    }
+    const hourSum = groups.reduce((sum, term) => sum + term.count * term.hours, 0);
+    if (hourSum !== Number(group(hours, 2))) {
+      fail(
+        `${id} Durasi: the terms add up to ${hourSum} hours, the hours cell says ${group(hours, 2)}.`,
+      );
+    }
     const prerequisitesText = labelledParagraph(section, "**Prasyarat:**");
     const syntheticProject =
       id === "PRO"
@@ -236,8 +253,8 @@ function parseTracks(silabus: string): Track[] {
       sharedHours: Number(group(hours, 1)),
       trackHours: Number(group(hours, 2)),
       totalHours: Number(group(hours, 3)),
-      moduleCount: Number(group(modules, 1)),
-      hoursPerModule: Number(group(modules, 2)),
+      moduleCount: groups.reduce((sum, term) => sum + term.count, 0),
+      ...(groups.length === 1 ? { hoursPerModule: groups[0]?.hours as number } : {}),
       durationText,
       endOfTrack: endOfTrack as string,
       prerequisitesText,
@@ -260,26 +277,36 @@ function parseModules(silabus: string, tracks: readonly Track[]): Json[] {
     if (rows.length !== track.moduleCount) {
       fail(`${track.id}: Durasi says ${track.moduleCount} modules, the table has ${rows.length}.`);
     }
+    // PRO states each module's hours in a "Jam" column (unequal hours since v1.1.0).
+    const hoursColumn = track.hoursPerModule === undefined;
+    const trackModules: Json[] = [];
+    let previous = DW_SHARED_MODULE_CODE;
     rows.forEach((row, index) => {
-      const [codeCell, title, outcome, last] = cells(row, 4, `${track.id} module row ${index}`);
+      const parts = cells(row, hoursColumn ? 5 : 4, `${track.id} module row ${index}`);
+      const [codeCell, title, outcome] = parts;
+      const last = parts[parts.length - 1];
       const code = stripCode(codeCell as string);
-      const number = index + 1;
-      if (code !== `DW-${track.id}-M${number}`) {
-        fail(`${track.id} row ${index}: expected DW-${track.id}-M${number}, found ${code}.`);
-      }
+      const found = match(
+        new RegExp(`^DW-${track.id}-M([1-9]\\d*)$`),
+        code,
+        `${track.id} row ${index} code`,
+      );
+      const number = Number(group(found, 1));
+      const hours = hoursColumn
+        ? Number(group(match(/^(\d+)$/, parts[3] as string, `${track.id} row ${index} Jam`), 1))
+        : (track.hoursPerModule as number);
       const base = {
         code,
         track: track.id,
         number,
         title: title as string,
-        hours: track.hoursPerModule,
+        hours,
         outcome: outcome as string,
       };
-      const prerequisites = [
-        number === 1 ? DW_SHARED_MODULE_CODE : `DW-${track.id}-M${number - 1}`,
-      ];
+      const prerequisites = [previous];
+      previous = code;
       if (track.id === "PRO") {
-        modules.push({
+        trackModules.push({
           ...base,
           skkniUnitCodes: [...(last as string).matchAll(/J\.620100\.\d{3}\.\d{2}/g)].map(
             (found) => found[0],
@@ -287,9 +314,25 @@ function parseModules(silabus: string, tracks: readonly Track[]): Json[] {
           prerequisites,
         });
       } else {
-        modules.push({ ...base, portfolioOutput: last as string, prerequisites });
+        trackModules.push({ ...base, portfolioOutput: last as string, prerequisites });
       }
     });
+    const numbers = trackModules.map((module) => (module as { number: number }).number);
+    if ([...numbers].sort((a, b) => a - b).some((n, i) => n !== i + 1)) {
+      fail(
+        `${track.id}: module numbers must be 1..${numbers.length} once each; found [${numbers.join(", ")}].`,
+      );
+    }
+    const hourSum = trackModules.reduce<number>(
+      (sum, module) => sum + (module as { hours: number }).hours,
+      0,
+    );
+    if (hourSum !== track.trackHours) {
+      fail(
+        `${track.id}: the module hours add up to ${hourSum}, the track has ${track.trackHours}.`,
+      );
+    }
+    modules.push(...trackModules);
   }
   return modules;
 }
