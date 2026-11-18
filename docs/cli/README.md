@@ -25,7 +25,7 @@ These are recognised regardless of which subcommand (if any) is present:
 | `-h`, `--help` | With no subcommand: print global usage (this command list) and exit `0`. After a subcommand (`osn <command> --help`): print that command's own help and exit `0`, without running the command. |
 | `-V`, `--version` | Print the version from `package.json` (never hard-coded) and exit `0`. Takes precedence over everything else -- even `osn --version bogus-command` prints the version rather than failing on the unknown command. |
 | `--json` | Emit machine-readable JSON output instead of human-readable text, for commands that support it (`validate` does). May appear before or after the subcommand name. |
-| `--program <id>` | Per-command (`validate`, `plan`, `render`, `report`, `checklist`): the registered programme (`data/programs.json`) whose corpus to use; default `osn`. An unknown id is a usage error (exit `2`) naming the registered ids. Write it after the subcommand name. `osn validate` without it validates every registered programme. `privacy-check` takes no `--program`: it always scans all of `data/`. |
+| `--program <id>` | Per-command (`validate`, `plan`, `render`, `report`, `checklist`): the registered programme (`data/programs.json`) whose corpus to use; default `osn`. An unknown id is a usage error (exit `2`) naming the registered ids. Write it after the subcommand name. `osn validate` without it validates every registered programme. Only `validate` supports `sma-coding`; `plan`, `render` (except `render modul`), `report` and `checklist` read the OSN corpus only and exit `2` with "belum didukung untuk program sma-coding" rather than present OSN data as that programme's. `privacy-check` takes no `--program`: it always scans all of `data/`. |
 
 ## Exit codes
 
@@ -128,6 +128,37 @@ osn validate [options]
    is `content/<program>/modules/<id>.md` for this programme; and the
    Markdown file exists and is not blank.
 
+### The `sma-coding` programme
+
+`osn validate --program sma-coding` validates `data/sma-coding/` with its
+own file set and schemas (`SMA_DATA_FILE_REGISTRY` in
+`src/domain/sma-corpus-audit.ts`; schemas `src/schema/sma-*.ts`), not the
+OSN invariants above. The six files transcribe the owner-approved
+`docs/programs/sma-coding/silabus.md` v1.0 (tracks A and B):
+`cp-elements.json`, `tracks.json`, `structure.json`, `weeks.json`,
+`cp-mapping.json` and `osn-bridge.json`. It checks:
+
+- **Schema conformance** of every file, the reverse "unregistered file"
+  check (the optional `modules.json` is exempt), and registry agreement
+  (item 3 above).
+- **Structural invariants:** 6 CP quotations, 36 CP items, 7 structure rows,
+  24 CP mappings, 6 semesters per track, and every track-semester holding
+  exactly the weeks 1-14 (168 weeks in all); `structure.json` agrees with
+  the 14-week semester and with each week's class and phase.
+- **Referential integrity:** every mapped CP code exists in
+  `cp-elements.json`; every week code in `cp-mapping.json` and
+  `osn-bridge.json` exists in `weeks.json` and belongs to a track the row
+  lists; the normalised `weeks` equal the source `weeksText` expanded; every
+  track id exists in `tracks.json`; and every `familyId` of the OSN bridge
+  exists in `data/osn/topic-families.json` (a cross-programme reference,
+  ADR-0006) and all ten OSN families are covered.
+
+Whether the data still equals the document cell by cell is a separate
+check: `bun run check:sma-fidelity` (`scripts/check-sma-coding-fidelity.ts`,
+also run by `bun test` in `tests/integration/sma-coding-fidelity.test.ts`)
+parses the Markdown tables of bagian 1.3, 1.4, 2, 3, 4 and 5 and exits `1`
+listing every mismatching cell.
+
 ### Options
 
 | Flag | Meaning |
@@ -228,7 +259,7 @@ renderers in `src/cli/format-plan.ts` (`formatPlanMarkdown`,
 
 | Flag | Meaning |
 | --- | --- |
-| `--program <id>` | The registered programme whose corpus to use. Default `osn`; an unknown id is exit `2`. |
+| `--program <id>` | The registered programme whose corpus to use. Default `osn`; an unknown id is exit `2`. `sma-coding` is registered but not supported: exit `2`, "belum didukung untuk program sma-coding". |
 | `--start <date>` | The cohort's start date, ISO `YYYY-MM-DD`. **Required.** |
 | `--exclude <d1,d2,...>` | A comma-separated list of ISO `YYYY-MM-DD` dates to exclude (school holidays, exam days, ...). Optional; defaults to none. Order and duplicates don't matter -- the output normalises this list (deduplicated, ascending). |
 | `--target-stage <id>` | Report against a target competition stage's intensive-preparation week: one of `osn-k`, `osn-p`, `osn-nasional`, `toki-ioi-extension` (`src/domain/structure.ts`'s `STAGE_IDS`). Optional. See "Target-stage informational entry and schedule-slip warning" below. |
@@ -465,7 +496,7 @@ fails to compile or when `g++` is not installed.
 
 | Flag | Meaning |
 | --- | --- |
-| `--program <id>` | The registered programme whose corpus to use. Default `osn`; an unknown id is exit `2`. |
+| `--program <id>` | The registered programme whose corpus to use. Default `osn`; an unknown id is exit `2`. Only `render modul` accepts `sma-coding`; `weekly`, `checkpoint`, `sop` and `lembar-siswa` read the OSN corpus only and exit `2` with "belum didukung untuk program sma-coding". |
 | `--out <path>` | Write the rendered Markdown to this path instead of printing it to stdout. Resolved against the process's current working directory. |
 | `--force` | Required to overwrite a file that already exists at `--out`. Without it, an existing file is left byte-for-byte untouched (the write itself never opens the file for truncation) and the command exits `2` -- a mentor should never silently lose an edited worksheet to a repeated `osn render ... --out` invocation. |
 
@@ -522,7 +553,7 @@ domain functions.
 
 | Flag | Meaning |
 | --- | --- |
-| `--program <id>` | The registered programme whose corpus to use. Default `osn`; an unknown id is exit `2`. |
+| `--program <id>` | The registered programme whose corpus to use. Default `osn`; an unknown id is exit `2`. `sma-coding` is registered but not supported: exit `2`, "belum didukung untuk program sma-coding". |
 | `--records <path>` | A `.jsonl` (one JSON record per line, blank lines skipped) or `.json` (a JSON array of records) file. **Required.** See "Input format detection" below. |
 | `--by <topic\|week\|none>` | Group the KPI metrics by topic family or by §4 week number, in addition to the always-present overall (ungrouped) section. Default `none`. See "Grouping: a documented current limitation" below. |
 | `--format <md\|json>` | Output format. Default `md`. |
@@ -815,7 +846,7 @@ functions.
 | Flag | Meaning |
 | --- | --- |
 | `--format <md\|json>` | Output format. Default `md`. `--json` (the global flag) is equivalent to `--format json`; an explicit `--format` wins if both are given. |
-| `--program <id>` | The registered programme whose corpus to use. Default `osn`; an unknown id is exit `2`. |
+| `--program <id>` | The registered programme whose corpus to use. Default `osn`; an unknown id is exit `2`. `sma-coding` is registered but not supported: exit `2`, "belum didukung untuk program sma-coding". |
 | `--out <path>` | Write the rendered checklist to this path instead of stdout. |
 | `--force` | Required to overwrite a file that already exists at `--out`. Without it, an existing file is left byte-for-byte untouched and the command exits `2` -- same safety property as `osn render`'s/`osn report`'s `--out`/`--force` (`src/cli/output-writer.ts`). |
 | `-h`, `--help` | Show `osn checklist`'s own help. |

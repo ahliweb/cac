@@ -15,6 +15,7 @@ import {
   REGISTRY_FILE_NAME,
 } from "../domain/programs";
 import type { Program, ProgramRegistry } from "../schema/program";
+import { topicFamiliesSchema } from "../schema/topic-family";
 import type { CommandContext } from "./command";
 import { EXIT_USAGE_ERROR, EXIT_VALIDATION_FAILURE } from "./command";
 
@@ -74,6 +75,54 @@ export function extractProgramFlag(args: readonly string[]): {
     return { rest: [...args.slice(0, index), ...args.slice(index + 1)], value: null };
   }
   return { rest: [...args.slice(0, index), ...args.slice(index + 2)], value };
+}
+
+/**
+ * The `id`s in the default programme's (`osn`) `topic-families.json`, for
+ * cross-programme references (ADR-0006), or `undefined` when the registry
+ * has no such programme or its file is missing or invalid.
+ */
+export async function loadOsnTopicFamilyIds(
+  registry: ProgramRegistry,
+  repoRoot: string = REPO_ROOT,
+): Promise<ReadonlySet<string> | undefined> {
+  const osn = findProgram(registry, DEFAULT_PROGRAM_ID);
+  if (osn === undefined) {
+    return undefined;
+  }
+  try {
+    const path = join(resolve(repoRoot, osn.corpusDir), "topic-families.json");
+    const parsed = topicFamiliesSchema.safeParse(JSON.parse(await readFile(path, "utf-8")));
+    return parsed.success
+      ? new Set(parsed.data.topicFamilies.map((family) => family.id))
+      : undefined;
+  } catch {
+    return undefined;
+  }
+}
+
+/**
+ * Corpus-reading commands other than `validate` (`plan`, `render`
+ * weekly/checkpoint/sop/lembar-siswa, `report`, `checklist`) read the OSN
+ * corpus through static imports. For any other programme they must refuse
+ * rather than silently present OSN data as that programme's (issue #52):
+ * returns the exit code (2) after writing the message, or `undefined` when
+ * the programme is the OSN one and the command may proceed.
+ */
+export function rejectNonOsnProgram(
+  commandName: string,
+  program: Program,
+  ctx: CommandContext,
+): number | undefined {
+  if (program.id === DEFAULT_PROGRAM_ID) {
+    return undefined;
+  }
+  ctx.stderr(
+    `osn ${commandName}: belum didukung untuk program ${program.id}: perintah ini membaca corpus OSN ` +
+      `(program "${DEFAULT_PROGRAM_ID}") saja dan tidak akan menyajikannya sebagai data ${program.id}. ` +
+      `Gunakan "osn validate --program ${program.id}" untuk memvalidasi corpus program ini.\n`,
+  );
+  return EXIT_USAGE_ERROR;
 }
 
 export type ProgramOptionResult =

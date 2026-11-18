@@ -15,7 +15,7 @@ import type { Command } from "../command";
 import { EXIT_SUCCESS, EXIT_USAGE_ERROR } from "../command";
 import { formatChecklistJson } from "../format-checklist";
 import { writeOutputFile } from "../output-writer";
-import { resolveProgramOption } from "../program-loader";
+import { rejectNonOsnProgram, resolveProgramOption } from "../program-loader";
 
 const HELP_TEXT = `osn checklist -- render the cohort readiness checklist and operational rules
 
@@ -38,6 +38,7 @@ Options:
                        an existing file at --out is left byte-for-byte
                        untouched and the command exits 2.
   --program <id>  Programme whose corpus to use (a registered id; default osn).
+                  Only osn is supported; any other registered id exits 2.
   -h, --help           Show this help.
 
 Exit codes:
@@ -63,6 +64,10 @@ export const checklistCommand: Command = {
     const resolved = await resolveProgramOption("checklist", rawArgs, ctx);
     if (!resolved.ok) {
       return resolved.exitCode;
+    }
+    const unsupported = rejectNonOsnProgram("checklist", resolved.program, ctx);
+    if (unsupported !== undefined) {
+      return unsupported;
     }
     const args = resolved.args;
     let format: "md" | "json" = ctx.json ? "json" : "md";

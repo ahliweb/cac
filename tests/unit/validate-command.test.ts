@@ -94,7 +94,7 @@ describe("validateCommand.run", () => {
     expect(code).toBe(0);
     const parsed = JSON.parse(stdout.join(""));
     expect(parsed.ok).toBe(true);
-    expect(parsed.programs).toHaveLength(1);
+    expect(parsed.programs).toHaveLength(2);
     expect(parsed.programs[0].program).toBe("osn");
     expect(parsed.programs[0].ok).toBe(true);
   });
