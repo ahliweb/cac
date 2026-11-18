@@ -93,6 +93,21 @@
         }
       ],
       "contentPath": "content/osn/modules/search-sort.md"
+    },
+    {
+      "id": "strategi-problem-solving",
+      "title": "Strategi Problem Solving",
+      "topicFamilies": ["strategi-problem-solving"],
+      "weeks": [3, 6, 7, 8, 13, 14, 15, 16, 26, 27, 28],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "refId": "R1"
+        }
+      ],
+      "contentPath": "content/osn/modules/strategi-problem-solving.md"
     }
   ]
 }
