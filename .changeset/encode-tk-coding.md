@@ -1,5 +1,0 @@
----
-"kurikulum-informatika": minor
----
-
-Program `tk-coding` (pembelajaran coding TK/PAUD, berpikir komputasional) di-encode dan didaftarkan (#127). Pemilik menyetujui silabus v1.0.0 pada 2026-11-19 beserta rekomendasi penyusun untuk semua pertanyaan terbuka: `docs/programs/tk-coding/silabus-draf.md` menjadi `silabus.md` berstatus DISETUJUI (isi rencana tidak diubah; pertanyaan terbuka diganti keputusan pemilik di bagian 9). Sesuai ADR-0008 program memakai skema khusus: `src/schema/tk-*.ts`, audit murni `src/domain/tk-corpus-audit.ts` (48 minggu `TK-A1-M1` sampai `TK-B2-M12`, empat semester x 12 minggu, kode unik, rujukan CP dan minggu valid), tujuh berkas `data/tk-coding/*.json` hasil transkripsi setia, dan pemeriksa fidelity sel demi sel `src/cli/fidelity/tk-coding.ts` (`bun run check:fidelity --program tk-coding`). Pemetaan ke CP Fase Fondasi ditandai irisan penafsiran (`cpRelation: "irisan-penafsiran"`, `meetsCp: false`), bukan pemenuhan CP. Satu entri baru di `PROGRAM_MODULES` dan `data/programs.json`; `osn validate` kini memeriksa tiga program.

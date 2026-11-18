@@ -1,5 +1,0 @@
----
-"kurikulum-informatika": patch
----
-
-Sinkronisasi dokumen bersama dengan tujuh program terdaftar dan kebijakan AI per program (#127, #128, #129, #130, #131, #139, #140), tanpa perubahan kode, skema, atau data. `AGENTS.md`, `README.md`, `docs/architecture/` (README, peta repositori, catatan status ADR-0008), `docs/cli/README.md` (jumlah berkas per program, `check:fidelity` enam program, keluaran nyata dengan versi silabus `sma-coding` 1.3.0), `docs/programs/README.md` (v2.0.0: status, versi, dan kolom kebijakan AI nyata), `docs/panduan/*`, dan dua dokumen riset (`ai-rekayasa-perangkat-lunak.md` v0.2.0: status U-01..U-17 dan keputusan Q1-Q7; `ilmu-belajar-kognitif.md` v0.2.0) kini menggambarkan keadaan nyata. Register kebutuhan menambah `FR-34`..`FR-38` (encode dan validasi `tk-`, `sd-`, `smp-`, `kuliah-`, `dewasa-coding`), `TR-15`..`TR-19` (fidelity masing-masing) dan `ER-17` (kebijakan AI per program), dengan baris matriks issue dan uji; `tests/integration/requirements.test.ts` memuat ID baru. Jumlah berkas yang dipindai `osn privacy-check` di dokumen dikoreksi dari 33 menjadi 65.
