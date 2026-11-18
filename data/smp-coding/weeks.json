@@ -1,5 +1,5 @@
 {
-  "syllabusVersion": "1.0.0",
+  "syllabusVersion": "1.1.0",
   "syllabusDate": "2026-11-19",
   "sourceSection": "bagian 3",
   "semesters": [
@@ -716,7 +716,7 @@
       "kelas": "8",
       "semester": "SMP8-2",
       "week": 11,
-      "topic": "Kata sandi, akun, dan keamanan diri",
+      "topic": "Kata sandi, akun, dan keamanan diri; data pribadi dan kata sandi tidak ditempel ke layanan AI",
       "tool": "- (unplugged)",
       "output": "Kartu praktik aman; simulasi sandi kuat",
       "cpText": "D-LD-m, D-LD-p",
@@ -1067,9 +1067,9 @@
       "kelas": "9",
       "semester": "SMP9-2",
       "week": 10,
-      "topic": "Etika AI: keliru, bias, halusinasi, tiruan palsu (deep fake), ketergantungan",
+      "topic": "Etika AI: keliru, bias, halusinasi, tiruan palsu (deep fake), ketergantungan, mengalihkan pekerjaan berpikir ke AI",
       "tool": "- (unplugged)",
-      "output": "Debat terarah; aturan pakai AI kelas",
+      "output": "Debat terarah; aturan pakai AI kelas (bagian 7.1)",
       "cpText": "DK-EA-e, DK-EA-f, DK-EA-g",
       "cpCodes": ["DK-EA-e", "DK-EA-f", "DK-EA-g"],
       "irisanCodes": [],
