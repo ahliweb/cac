@@ -90,10 +90,9 @@ describe("osn validate with the sma-coding programme", () => {
   });
 });
 
+// `plan` and `render lembar-siswa` support sma-coding since #77 (tests/integration/cli-sma-plan.test.ts).
 describe("OSN-only commands refuse --program sma-coding (exit 2, never OSN data)", () => {
   const cases: string[][] = [
-    ["plan", "--start", "2026-01-05"],
-    ["render", "lembar-siswa", "--week", "1"],
     ["render", "weekly", "--week", "1"],
     ["render", "checkpoint", "--number", "1"],
     ["render", "sop"],

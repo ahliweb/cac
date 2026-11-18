@@ -92,7 +92,7 @@ schema), `privacy-scan.ts` (the `osn privacy-check` scan logic),
 `operations.ts` (readiness checklist, operational rules, syllabus-check
 log), `cohort-plan.ts` (the `osn plan` calendar generator), `report.ts`
 (the `osn report` KPI dashboard), and `corpus-audit.ts` (the `osn
-validate` whole-corpus audit), `sma-corpus-audit.ts` (the same for the `sma-coding` corpus, including the cross-programme reference to the OSN topic families), `sma-week-codes.ts` (expands the week notation of the SMA syllabus) `modules.ts` (the per-programme entry point for the optional `data/<program>/modules.json`; the OSN rules live here) and `sma-modules.ts` (the same for the `sma-coding` index: CP items, week codes, OSN bridge families, prerequisites and their cycles).
+validate` whole-corpus audit), `sma-corpus-audit.ts` (the same for the `sma-coding` corpus, including the cross-programme reference to the OSN topic families), `sma-week-codes.ts` (expands the week notation of the SMA syllabus), `sma-plan.ts` (the per-semester track plan and the week view behind `osn plan` and `osn render lembar-siswa` for `sma-coding`), `modules.ts` (the per-programme entry point for the optional `data/<program>/modules.json`; the OSN rules live here) and `sma-modules.ts` (the same for the `sma-coding` index: CP items, week codes, OSN bridge families, prerequisites and their cycles).
 
 ## `src/render/`
 
@@ -106,7 +106,7 @@ weekly learner sheet (`osn render lembar-siswa`).
 `process.exit` calls (that is `src/cli/`'s job); network I/O.
 
 **State today:** `weekly.ts`, `checkpoint.ts`, `sop.ts`, `checklist.ts`,
-`student-sheet.ts` (the five renderers) and `module.ts` (the learning-module renderer, `osn render modul`), plus `markdown-utils.ts` (shared formatting
+`student-sheet.ts` (the five renderers), `module.ts` (the learning-module renderer, `osn render modul`) and `sma-student-sheet.ts` (the `sma-coding` learner sheet, `osn render lembar-siswa --program sma-coding`), plus `markdown-utils.ts` (shared formatting
 helpers) and `errors.ts` (`RenderRequestError`).
 
 ## `src/cli/`
@@ -128,7 +128,7 @@ and exit-code constants), `commands/index.ts` (the command registry) and
 `commands/*.ts` (the six command handlers), plus the shared I/O/formatting
 helpers each command uses (`corpus-loader.ts`, `program-loader.ts` (registry loading and `--program` resolution), `privacy-scan-loader.ts`,
 `output-writer.ts`, `format-audit.ts`, `format-plan.ts`, `format-report.ts`,
-`format-privacy-check.ts`, `format-checklist.ts`) and `module-content.ts` (module body existence check for `osn validate`, and the loader behind `osn render modul`). A `bin` entry
+`format-privacy-check.ts`, `format-checklist.ts`), `sma-commands.ts`, `sma-corpus-loader.ts` and `format-sma-plan.ts` (the `--program sma-coding` branches of `osn plan` and `osn render lembar-siswa`: flag handling, the audited corpus loader, plan formatting) and `module-content.ts` (module body existence check for `osn validate`, and the loader behind `osn render modul`). A `bin` entry
 (`"osn": "src/cli/index.ts"`) is registered in `package.json`.
 
 ## `src/index.ts`

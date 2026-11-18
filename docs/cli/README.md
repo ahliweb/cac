@@ -25,7 +25,7 @@ These are recognised regardless of which subcommand (if any) is present:
 | `-h`, `--help` | With no subcommand: print global usage (this command list) and exit `0`. After a subcommand (`osn <command> --help`): print that command's own help and exit `0`, without running the command. |
 | `-V`, `--version` | Print the version from `package.json` (never hard-coded) and exit `0`. Takes precedence over everything else -- even `osn --version bogus-command` prints the version rather than failing on the unknown command. |
 | `--json` | Emit machine-readable JSON output instead of human-readable text, for commands that support it (`validate`, `plan`, `report`, `checklist` and `privacy-check`). **`render` ignores it**: `osn render --json ...` still prints Markdown (a rendered sheet is a document, not data), so a script must not expect JSON from it. May appear before or after the subcommand name. |
-| `--program <id>` | Per-command (`validate`, `plan`, `render`, `report`, `checklist`): the registered programme (`data/programs.json`) whose corpus to use; default `osn`. An unknown id is a usage error (exit `2`) naming the registered ids. Write it after the subcommand name. `osn validate` without it validates every registered programme. Only `validate` supports `sma-coding`; `plan`, `render` (except `render modul`), `report` and `checklist` read the OSN corpus only and exit `2` with "belum didukung untuk program sma-coding" rather than present OSN data as that programme's. `privacy-check` takes no `--program`: it always scans all of `data/`. |
+| `--program <id>` | Per-command (`validate`, `plan`, `render`, `report`, `checklist`): the registered programme (`data/programs.json`) whose corpus to use; default `osn`. An unknown id is a usage error (exit `2`) naming the registered ids. Write it after the subcommand name. `osn validate` without it validates every registered programme. `sma-coding` is supported by `validate`, `plan` (`--track`), `render lembar-siswa` (`--week <week-code>`) and `render modul`; `render weekly`, `render checkpoint` and `render sop`, `report` and `checklist` read the OSN corpus only and exit `2` with "belum didukung untuk program sma-coding" rather than present OSN data as that programme's. `privacy-check` takes no `--program`: it always scans all of `data/`. |
 
 ## Exit codes
 
@@ -282,7 +282,7 @@ renderers in `src/cli/format-plan.ts` (`formatPlanMarkdown`,
 
 | Flag | Meaning |
 | --- | --- |
-| `--program <id>` | The registered programme whose corpus to use. Default `osn`; an unknown id is exit `2`. `sma-coding` is registered but not supported: exit `2`, "belum didukung untuk program sma-coding". |
+| `--program <id>` | The registered programme whose corpus to use. Default `osn`; an unknown id is exit `2`. `sma-coding` has its own plan (see "`osn plan --program sma-coding`" below); the flags in this table other than `--program`, `--format` and `--json` are OSN-only. |
 | `--start <date>` | The cohort's start date, ISO `YYYY-MM-DD`. **Required.** |
 | `--exclude <d1,d2,...>` | A comma-separated list of ISO `YYYY-MM-DD` dates to exclude (school holidays, exam days, ...). Optional; defaults to none. Order and duplicates don't matter -- the output normalises this list (deduplicated, ascending). |
 | `--target-stage <id>` | Report against a target competition stage's intensive-preparation week: one of `osn-k`, `osn-p`, `osn-nasional`, `toki-ioi-extension` (`src/domain/structure.ts`'s `STAGE_IDS`). Optional. See "Target-stage informational entry and schedule-slip warning" below. |
@@ -365,7 +365,8 @@ regardless of host timezone.
 | Code | Meaning |
 | --- | --- |
 | `0` | Success. |
-| `2` | Usage error: `--start` missing, `--start`/an `--exclude` entry is not a real ISO `YYYY-MM-DD` calendar date, an unknown `--target-stage`, or an unknown `--format`. |
+| `1` | (`sma-coding` only) the programme corpus fails validation. |
+| `2` | Usage error: `--start` missing, `--start`/an `--exclude` entry is not a real ISO `YYYY-MM-DD` calendar date, an unknown `--target-stage`, or an unknown `--format`; for `sma-coding`: `--track` missing or unknown, an unknown `--kelas`/`--semester`, or an OSN-only flag. |
 
 ### Example
 
@@ -390,6 +391,80 @@ Target stage "osn-k" (OSN-K): intensive preparation lands on week 25, 2026-06-23
 Note week 1's date range is extended by one day (05-12, not 05-11) and its
 second session date shifts from 08 to 09, since 2026-01-07 was excluded --
 see "Week-shifting rule" and "Session-date rule" above.
+
+### `osn plan --program sma-coding`
+
+For the `sma-coding` programme `osn plan` prints the **plan per semester of
+one track** instead of a dated cohort calendar (owner decision 2026-11-18,
+issue #77). It is derived only from the validated `data/sma-coding/` corpus
+(`auditSmaCorpus` plus the module-index checks run first; a corpus that fails
+them exits `1` with a pointer to `osn validate --program sma-coding`).
+
+```sh
+osn plan --program sma-coding --track <A|B> [--kelas <X|XI|XII>] [--semester <kode>] [--format md|json]
+```
+
+| Flag | Meaning |
+| --- | --- |
+| `--track <id>` | The learning track, one of `tracks.json` (`A`, `B`). **Required**; missing or unknown is exit `2` naming the valid tracks. |
+| `--kelas <X\|XI\|XII>` | Only the two semesters of this class. Default: all six semesters. |
+| `--semester <kode>` | Only this semester: `X1`, `X2`, `XI1`, `XI2`, `XII1` or `XII2` (or `1`/`2` together with `--kelas`). A semester that does not belong to `--kelas` is exit `2`. |
+| `--format <md\|json>`, `--json` | Markdown (default) or JSON: the plan object with `program`, `syllabusVersion`, `syllabusDate`, `scope`, `track` and `semesters[]` (each with `foundation[]` and `weeks[]`; every week has `code`, `topic`, `objective`, `output`, `exercise`, `cpItems`, `osnBridges`, `modules`). |
+
+`--start`, `--exclude` and `--target-stage` belong to the OSN cohort calendar
+and are rejected with exit `2` for `sma-coding` (never silently ignored).
+
+Per week the Markdown shows the code, topic, objective, output and exercise
+(verbatim corpus cells), the CP items mapped to that week by `cp-mapping.json`
+(with their short label; "(parsial)" when the mapping says so), the OSN
+bridge entries of `osn-bridge.json` that name the week (track A only) and,
+when `data/sma-coding/modules.json` exists, the indexed modules that list the
+week in `weekCodes` (a module that is not approved is marked DRAF). Kelas X
+semester 1 starts with the shared foundation block `FND-X1-M1..M7` (the same
+for every track) before the track's weeks `M8..M14`. Output is
+byte-deterministic.
+
+Real output (`osn plan --program sma-coding --track A --semester X1`, abridged):
+
+```text
+# Rencana Pembelajaran -- Jalur A: Algoritmik dengan C++
+
+Program: Silabus Pembelajaran Coding SMA
+Cakupan: semester X1
+Sumber: silabus versi 1.1.0, tanggal 2026-11-19.
+
+## Semester X1 (kelas X, fase E)
+
+### Blok fondasi bersama (FND-X1-M1..FND-X1-M7): untuk semua murid sebelum memilih jalur
+
+#### FND-X1-M1 -- Komputer dan perangkat keras; model Input-Proses-Output Von Neumann
+
+- **Tujuan:** menyebut fungsi komponen (CPU, memori, penyimpanan, perangkat masukan dan keluaran, papan induk, catu daya); menjelaskan dan menyimulasikan siklus I-P-O komputer Von Neumann; membaca spesifikasi perangkat
+- **Keluaran:** diagram I-P-O beranotasi; lembar spesifikasi komputer lab
+- **Latihan:** kegiatan utama: simulasi I-P-O tanpa komputer (murid berperan CPU, memori, dan perangkat masukan/keluaran menjalankan kartu instruksi sederhana); membaca spesifikasi komputer lab lewat informasi sistem; mengenali komponen dari foto; opsional bila lab menyediakan komponen bekas: mengenali komponen dari komponen bekas (perangkat yang masih dipakai tidak dibongkar)
+- **Butir CP:** E-BK-e (model Input-Process-Output Von Neumann dan peran sistem operasi)
+
+...
+
+### Minggu jalur A
+
+#### A-X1-M8 -- Lingkungan g++, algoritma, pseudocode, diagram alir
+
+- **Tujuan:** mengompilasi program pertama; menulis solusi sederhana dalam pseudocode
+- **Keluaran:** `hello.cpp`; 3 pseudocode
+- **Latihan:** cetak teks; tukar dua nilai; cari nilai terbesar dari tiga
+- **Butir CP:** E-BK-d (solusi program sederhana dalam format pseudocode)
+
+#### A-X1-M9 -- Variabel, tipe data, ekspresi; masukan dan keluaran
+
+- **Tujuan:** memilih tipe (`int`, `long long`, `double`, `char`, `bool`) dan menulis ekspresi; membaca dan menulis data dengan `cin`/`cout`
+- **Keluaran:** program hitung berformat
+- **Latihan:** luas dan keliling; pembagian bulat dan sisa; konversi suhu; rata-rata dua bilangan
+- **Butir CP:** E-BK-d (solusi program sederhana dalam format pseudocode)
+- **Jembatan OSN:** dasar-pemrograman -- sintaks C++, variabel, I/O, percabangan, perulangan, fungsi. Catatan: Sesuai CP.
+
+...
+```
 
 ## `osn render`
 
@@ -481,6 +556,70 @@ a learner is stored).
 | --- | --- |
 | `--week <n>` | The week number, `1`-`28`. **Required.** |
 
+### `osn render lembar-siswa --program sma-coding`
+
+The learner sheet of one week of the `sma-coding` programme (issue #77),
+derived **only** from the validated corpus. `--week` takes a **week code**
+instead of a number: a track week such as `A-X1-M9` or `B-X2-M3`, or a week of
+the shared foundation block such as `FND-X1-M3` (case-insensitive). An unknown
+code is exit `2` and the message lists example valid codes
+(`jalur A: A-X1-M8 .. A-XII2-M14; jalur B: ...; blok fondasi FND: FND-X1-M1 .. FND-X1-M7`).
+
+Sections, in order: title and code; the position (track, class, semester and
+week, or "blok fondasi bersama"); the topic; **Tujuan**, **Keluaran** and
+**Latihan dan kegiatan** (verbatim corpus cells); **Butir CP terkait** (the
+items `cp-mapping.json` maps to the week, with their label, plus the CP
+quotation of each element from `cp-elements.json`); **Jembatan ke OSN** (only
+when `osn-bridge.json` names the week); **Modul pendamping** (only when
+`data/sma-coding/modules.json` exists and an indexed module lists the week in
+`weekCodes`: id, title and status; a module that is not `disetujui` is marked
+**DRAF**); **Daftar periksa mandiri** (blank checkboxes, one per clause of the
+objective plus one for the output); and a footer with the syllabus name,
+version and date from the programme registry. There is no field for a name or
+school (ADR-0004), and the output is byte-deterministic. `--out` and `--force`
+behave as for the other render subcommands. The week data are the same that
+`osn plan --program sma-coding` prints.
+
+Real output (`osn render lembar-siswa --program sma-coding --week FND-X1-M3`):
+
+```text
+# Lembar Belajar Siswa -- Minggu FND-X1-M3
+
+**Kode minggu:** FND-X1-M3
+
+**Posisi:** Blok fondasi bersama, untuk semua murid sebelum memilih jalur (kelas X, semester X1, minggu 3)
+
+**Topik:** Representasi data: biner, heksadesimal, teks, gambar sederhana
+
+## Tujuan
+mengonversi bilangan desimal, biner, dan heksadesimal; menjelaskan bit dan byte; menjelaskan bahwa teks disimpan sebagai kode karakter; menjelaskan gambar sebagai kisi piksel dan warna sebagai komponen merah-hijau-biru
+
+## Keluaran
+tabel konversi; lembar kode karakter; gambar 8x8 dalam bentuk deret bit
+
+## Latihan dan kegiatan
+konversi manual dengan lembar kerja; menyandikan kata fiktif dengan tabel kode karakter; menggambar gambar 8x8 hitam-putih di kertas kotak lalu menuliskannya sebagai deret bit; memilih warna dan membaca kode heksadesimalnya di aplikasi gambar
+
+## Butir CP terkait
+Tidak ada butir CP yang dipetakan ke minggu ini dalam pemetaan silabus.
+
+## Daftar periksa mandiri
+- [ ] mengonversi bilangan desimal, biner, dan heksadesimal
+- [ ] menjelaskan bit dan byte
+- [ ] menjelaskan bahwa teks disimpan sebagai kode karakter
+- [ ] menjelaskan gambar sebagai kisi piksel dan warna sebagai komponen merah-hijau-biru
+- [ ] Keluaran selesai: tabel konversi; lembar kode karakter; gambar 8x8 dalam bentuk deret bit
+
+---
+Sumber: Silabus Pembelajaran Coding SMA, versi 1.1.0, tanggal 2026-11-19.
+```
+
+Unknown code (exit `2`):
+
+```text
+osn render lembar-siswa: kode minggu "A-X1-M1" tidak dikenal untuk program sma-coding. Contoh kode yang sah: jalur A: A-X1-M8 .. A-XII2-M14; jalur B: B-X1-M8 .. B-XII2-M14; blok fondasi FND: FND-X1-M1 .. FND-X1-M7.
+```
+
 ### `osn render modul`
 
 Renders one learning module of the programme (`--program`, default
@@ -522,7 +661,7 @@ fails to compile or when `g++` is not installed.
 
 | Flag | Meaning |
 | --- | --- |
-| `--program <id>` | The registered programme whose corpus to use. Default `osn`; an unknown id is exit `2`. Only `render modul` accepts `sma-coding`; `weekly`, `checkpoint`, `sop` and `lembar-siswa` read the OSN corpus only and exit `2` with "belum didukung untuk program sma-coding". |
+| `--program <id>` | The registered programme whose corpus to use. Default `osn`; an unknown id is exit `2`. `sma-coding` is supported by `render lembar-siswa` (with a week code, see below) and `render modul`; `weekly`, `checkpoint` and `sop` read the OSN corpus only and exit `2` with "belum didukung untuk program sma-coding". |
 | `--out <path>` | Write the rendered Markdown to this path instead of printing it to stdout. Resolved against the process's current working directory. |
 | `--force` | Required to overwrite a file that already exists at `--out`. Without it, an existing file is left byte-for-byte untouched (the write itself never opens the file for truncation) and the command exits `2` -- a mentor should never silently lose an edited worksheet to a repeated `osn render ... --out` invocation. |
 
@@ -534,7 +673,8 @@ written to disk.
 | Code | Meaning |
 | --- | --- |
 | `0` | Success. |
-| `2` | Usage error: a missing or unknown subcommand, a missing required flag (`--week`/`--number`/`--id`), a `--week`/`--number` value outside its valid range (or not an integer), an unknown or unreadable module (`render modul`), or `--out` already exists without `--force`. |
+| `1` | (`render lembar-siswa --program sma-coding` only) the programme corpus fails validation. |
+| `2` | Usage error: a missing or unknown subcommand, a missing required flag (`--week`/`--number`/`--id`), a `--week`/`--number` value outside its valid range (or not an integer, or, for `sma-coding`, an unknown week code), an unknown or unreadable module (`render modul`), or `--out` already exists without `--force`. |
 
 ### Example
 

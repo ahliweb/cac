@@ -74,6 +74,7 @@ itself.
 | #49 — ADR-0006 multi-programme repository and ADR-0007 authored learning content | FR-27, GR-13 |
 | #50 — Per-programme data, programme registry and the `--program` flag | FR-27 |
 | #52 — Encode the `sma-coding` programme corpus | FR-28, FR-29, FR-30, TR-12 |
+| #77 — `osn plan` and `osn render lembar-siswa` for the `sma-coding` programme | FR-30, FR-33 |
 | #54 — Module schema, renderer and the pilot module | FR-31, TR-13, GR-13 |
 | #76 — Register the `sma-coding` requirements | TR-09 |
 | #106 — Module-index schema for the `sma-coding` programme | FR-32 |
@@ -83,7 +84,7 @@ backlog), while any issue may be cited. A new programme adds its issues here as 
 
 ## Matrix 3 — Requirement → tests
 
-Requirements `FR-27`-`FR-32`, `TR-12`, `TR-13` and `GR-13` have no OSN syllabus section, so they
+Requirements `FR-27`-`FR-33`, `TR-12`, `TR-13` and `GR-13` have no OSN syllabus section, so they
 are traced by issue (Matrix 2) and by the tests below. Every path must exist; the checker
 (`checkTestLinks`) fails on a missing file, an unregistered ID or a row with no test.
 
@@ -92,9 +93,10 @@ are traced by issue (Matrix 2) and by the tests below. Every path must exist; th
 | FR-27 | `tests/unit/program-schema.test.ts`, `tests/unit/program-loader.test.ts`, `tests/unit/programs.test.ts` |
 | FR-28 | `tests/unit/sma-corpus-audit.test.ts`, `tests/unit/sma-week-codes.test.ts`, `tests/integration/cli-sma-coding.test.ts` |
 | FR-29 | `tests/unit/sma-corpus-audit.test.ts`, `tests/integration/cli-sma-coding.test.ts` |
-| FR-30 | `tests/integration/cli-sma-coding.test.ts` |
+| FR-30 | `tests/integration/cli-sma-coding.test.ts`, `tests/integration/cli-sma-plan.test.ts` |
 | FR-31 | `tests/unit/module-schema.test.ts`, `tests/unit/modules-domain.test.ts`, `tests/unit/render-module.test.ts`, `tests/integration/cli-modules.test.ts` |
 | FR-32 | `tests/unit/sma-module-schema.test.ts`, `tests/unit/sma-modules-domain.test.ts`, `tests/integration/cli-sma-modules.test.ts` |
+| FR-33 | `tests/unit/sma-plan.test.ts`, `tests/unit/render-sma-student-sheet.test.ts`, `tests/unit/sma-commands.test.ts`, `tests/integration/cli-sma-plan.test.ts` |
 | TR-12 | `tests/integration/sma-coding-fidelity.test.ts` |
 | TR-13 | `tests/unit/check-module-code.test.ts`, `tests/integration/check-module-code.test.ts` |
 | GR-13 | `tests/unit/module-schema.test.ts`, `tests/unit/render-module.test.ts` |

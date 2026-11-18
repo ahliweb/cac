@@ -8,10 +8,12 @@
  */
 
 import { buildCohortPlan, type CohortPlan } from "../../domain/cohort-plan";
+import { SMA_CODING_PROGRAM_ID } from "../../schema/sma-common";
 import type { Command } from "../command";
 import { EXIT_SUCCESS, EXIT_USAGE_ERROR } from "../command";
 import { formatPlanJson, formatPlanMarkdown } from "../format-plan";
 import { rejectNonOsnProgram, resolveProgramOption } from "../program-loader";
+import { runSmaPlan } from "../sma-commands";
 
 const HELP_TEXT = `osn plan -- generate the dated 28-week cohort calendar
 
@@ -22,25 +24,41 @@ Excluded dates (holidays, exams) shift subsequent weeks rather than
 silently overlapping -- see docs/cli/README.md's "osn plan" section for
 the exact week-shifting and session-date rules.
 
-Usage: osn plan --start <YYYY-MM-DD> [options]
+Usage:
+  osn plan --start <YYYY-MM-DD> [options]
+  osn plan --program sma-coding --track <A|B> [--kelas <X|XI|XII>] [--semester <kode>] [options]
 
 Options:
-  --start <date>          Cohort start date, ISO YYYY-MM-DD. Required.
+  --start <date>          Cohort start date, ISO YYYY-MM-DD. Required (osn).
   --exclude <d1,d2,...>   Comma-separated ISO YYYY-MM-DD dates to exclude
-                           (school holidays, exam days, ...). Optional.
+                           (school holidays, exam days, ...). Optional (osn).
   --target-stage <id>     Report against a target competition stage's
                            intensive week (osn-k, osn-p, osn-nasional, or
-                           toki-ioi-extension). Optional.
+                           toki-ioi-extension). Optional (osn).
+  --track <id>            Learning track of the sma-coding programme (A or B,
+                           the approved tracks). Required for sma-coding.
+  --kelas <X|XI|XII>      sma-coding: only the two semesters of this class.
+  --semester <kode>       sma-coding: only this semester (X1, X2, XI1, XI2,
+                           XII1, XII2; or 1/2 together with --kelas). Without
+                           --kelas and --semester, all six semesters.
   --format <md|json>      Output format. Default: md. --json is equivalent
                            to --format json.
   --program <id>  Programme whose corpus to use (a registered id; default osn).
-                  Only osn is supported; any other registered id exits 2.
+                  osn: the dated 28-week cohort calendar. sma-coding: the
+                  plan per semester of one track (Markdown or JSON): every
+                  week with its code, topic, objective, output, exercise,
+                  mapped CP items and OSN bridge; kelas X semester 1 starts
+                  with the shared foundation block FND-X1-M1..M7. The
+                  OSN-only flags --start, --exclude and --target-stage exit 2
+                  for sma-coding.
   -h, --help              Show this help.
 
 Exit codes:
   0   success.
-  2   usage error: missing --start, an invalid/non-ISO date, an unknown
-      --target-stage, an unknown --format, or an unknown --program.`;
+  1   the sma-coding corpus fails validation (run osn validate).
+  2   usage error: missing --start (osn) or --track (sma-coding), an
+      invalid/non-ISO date, an unknown --target-stage, --track, --kelas,
+      --semester, --format, or an unknown --program.`;
 
 /** Extracts the value following the first occurrence of `flag` in `args`, or `undefined` if `flag` is absent. */
 function readFlagValue(args: readonly string[], flag: string): string | undefined {
@@ -60,6 +78,9 @@ export const planCommand: Command = {
     const resolved = await resolveProgramOption("plan", rawArgs, ctx);
     if (!resolved.ok) {
       return resolved.exitCode;
+    }
+    if (resolved.program.id === SMA_CODING_PROGRAM_ID) {
+      return runSmaPlan(resolved.args, ctx, resolved.program);
     }
     const unsupported = rejectNonOsnProgram("plan", resolved.program, ctx);
     if (unsupported !== undefined) {
