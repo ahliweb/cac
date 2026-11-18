@@ -44,7 +44,7 @@ Tanggal dibuka: **2026-11-19**. Rincian dan keterbatasan akses di
 | Mulai | "Pada saat Peraturan Menteri ini mulai berlaku, mata pelajaran pilihan Koding dan Kecerdasan Artifisial diselenggarakan Satuan Pendidikan pada jenjang pendidikan dasar dan jenjang pendidikan menengah mulai tahun ajaran 2025-2026 secara bertahap." (Pasal 32A). |
 | Kelas V | 72 JP per tahun; "Dialokasikan 2 (dua) JP per minggu"; 1 tahun = 36 minggu; 1 JP = 35 menit (Tabel 4). |
 | Kelas VI | 64 JP per tahun; "Dialokasikan 2 (dua) JP per minggu"; 1 tahun = 32 minggu; 1 JP = 35 menit (Tabel 5). |
-| Kelas I-IV | Tidak ada mata pelajaran KKA di tabel (Tabel 1-3); Muatan Lokal "paling banyak 2 (dua) JP per minggu", dapat berbentuk "teknologi". |
+| Kelas I-IV | Tidak ada mata pelajaran KKA di tabel (Tabel 1-3); Muatan Lokal "Paling banyak 2 (dua) JP per minggu", dapat berbentuk "teknologi". |
 | Informatika | Tidak ada di tabel struktur SD. |
 
 ### 1.2 Terverifikasi dari halaman resmi UPT Ditjen GTK (bukan PDF panduan/SK)
