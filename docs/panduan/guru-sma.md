@@ -227,7 +227,7 @@ osn render weekly --week 1 --program sma-coding
 ```
 
 ```text
-osn render weekly: belum didukung untuk program sma-coding: perintah ini membaca corpus OSN (program "osn") saja dan tidak akan menyajikannya sebagai data sma-coding. Gunakan "osn validate --program sma-coding" untuk memvalidasi corpus program ini. Perintah yang didukung untuk program sma-coding: "osn plan --track <jalur>", "osn render lembar-siswa --week <kode-minggu>" dan "osn render modul --id <id>".
+osn render weekly: belum didukung untuk program sma-coding: perintah ini membaca corpus OSN (program "osn") saja dan tidak akan menyajikannya sebagai data sma-coding. Untuk program sma-coding tersedia "osn plan --program sma-coding --track <jalur>", "osn render lembar-siswa --program sma-coding --week <kode-minggu>", "osn render modul --program sma-coding --id <id>", "osn validate --program sma-coding" dan "bun run check:fidelity --program sma-coding".
 ```
 
 Program ini punya perintah baca modul, tetapi selama

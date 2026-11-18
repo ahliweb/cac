@@ -59,7 +59,7 @@ describe("tk-coding fidelity: data/tk-coding vs. the approved silabus", () => {
 
   test("the registry entry exists and carries the document's version and date", () => {
     expect(tkEntry).toBeDefined();
-    expect(tkEntry?.syllabusVersion).toBe("1.0.0");
+    expect(tkEntry?.syllabusVersion).toBe("1.0.1");
     expect(tkEntry?.syllabusDate).toBe("2026-11-19");
   });
 

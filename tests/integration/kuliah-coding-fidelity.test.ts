@@ -61,7 +61,7 @@ describe("kuliah-coding fidelity: data/kuliah-coding vs. the approved silabus", 
   });
 
   test("the registry entry carries the document's version and date", () => {
-    expect(entry?.syllabusVersion).toBe("1.1.0");
+    expect(entry?.syllabusVersion).toBe("1.1.1");
     expect(entry?.syllabusDate).toBe("2026-11-19");
   });
 
@@ -110,7 +110,7 @@ describe("kuliah-coding fidelity: data/kuliah-coding vs. the approved silabus", 
     const levels = corpus["ai-policy.json"].levels as Array<Json>;
     expect(levels[0].rule).toContain("log pemakaian wajib");
     expect(levels[2].usedOnCourses).toEqual(["KUL-K-201", "KUL-K-301", "KUL-K-401"]);
-    expect(corpus["ai-policy.json"].syllabusVersion).toBe("1.1.0");
+    expect(corpus["ai-policy.json"].syllabusVersion).toBe("1.1.1");
   });
 });
 
@@ -203,7 +203,7 @@ describe("kuliah-coding fidelity: drift fails hard", () => {
     );
     expect(() => expectedCorpus(broken)).toThrow("expected 5 cells");
     expect(() => expectedCorpus(markdown.replace("### 6.3 ", "### 6.9 "))).toThrow("not found");
-    expect(() => expectedCorpus(markdown.replace("- **Version:** v1.1.0", "- Version"))).toThrow(
+    expect(() => expectedCorpus(markdown.replace("- **Version:** v1.1.1", "- Version"))).toThrow(
       "header Version",
     );
   });

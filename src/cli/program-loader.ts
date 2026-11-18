@@ -15,6 +15,7 @@ import {
   REGISTRY_FILE_NAME,
 } from "../domain/programs";
 import type { Program, ProgramRegistry } from "../schema/program";
+import { SMA_CODING_PROGRAM_ID } from "../schema/sma-common";
 import { topicFamiliesSchema } from "../schema/topic-family";
 import type { CommandContext } from "./command";
 import { EXIT_USAGE_ERROR, EXIT_VALIDATION_FAILURE } from "./command";
@@ -118,10 +119,15 @@ export function rejectNonOsnProgram(
   if (program.id === DEFAULT_PROGRAM_ID) {
     return undefined;
   }
+  const id = program.id;
+  const supported =
+    id === SMA_CODING_PROGRAM_ID
+      ? `Untuk program ${id} tersedia "osn plan --program ${id} --track <jalur>", "osn render lembar-siswa --program ${id} --week <kode-minggu>", "osn render modul --program ${id} --id <id>", "osn validate --program ${id}" dan "bun run check:fidelity --program ${id}".`
+      : `"osn plan" dan "osn render lembar-siswa" hanya tersedia untuk program "${DEFAULT_PROGRAM_ID}" dan "${SMA_CODING_PROGRAM_ID}"; program ${id} hanya didukung oleh "osn validate --program ${id}" dan "bun run check:fidelity --program ${id}".`;
   ctx.stderr(
-    `osn ${commandName}: belum didukung untuk program ${program.id}: perintah ini membaca corpus OSN ` +
-      `(program "${DEFAULT_PROGRAM_ID}") saja dan tidak akan menyajikannya sebagai data ${program.id}. ` +
-      `Gunakan "osn validate --program ${program.id}" untuk memvalidasi corpus program ini. Perintah yang didukung untuk program ${program.id}: "osn plan --track <jalur>", "osn render lembar-siswa --week <kode-minggu>" dan "osn render modul --id <id>".\n`,
+    `osn ${commandName}: belum didukung untuk program ${id}: perintah ini membaca corpus OSN ` +
+      `(program "${DEFAULT_PROGRAM_ID}") saja dan tidak akan menyajikannya sebagai data ${id}. ` +
+      `${supported}\n`,
   );
   return EXIT_USAGE_ERROR;
 }

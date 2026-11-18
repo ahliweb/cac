@@ -1,5 +1,5 @@
 {
-  "syllabusVersion": "1.1.0",
+  "syllabusVersion": "1.1.1",
   "syllabusDate": "2026-11-19",
   "sourceSection": "bagian 6.1",
   "bridges": [
@@ -26,9 +26,9 @@
     },
     {
       "id": "bridge-4",
-      "from": "kuliah-coding (issue #130, belum ada dokumen atau program)",
+      "from": "kuliah-coding (issue #130, silabusnya kini ada dan disetujui pemilik)",
       "to": "`PRO`",
-      "note": "**Belum dapat dirancang**: program itu belum ada di repositori. Jembatan ditunda menurut keputusan 12.7",
+      "note": "**Belum dapat dirancang** pada revisi ini: jembatan ditunda menurut keputusan 12.7",
       "status": "ditunda"
     },
     {

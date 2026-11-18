@@ -1,9 +1,9 @@
 # Silabus Pembelajaran Coding SD — v1.0
 
-- **Version:** v1.0.0
+- **Version:** v1.0.1
 - **Last updated:** 2026-11-19
 - **Status:** DISETUJUI pemilik program, 2026-11-19 — kelas 1-6, beserta rekomendasi penyusun atas ketujuh pertanyaan terbuka (issue #128); menjadi sumber corpus `data/sd-coding/` (ADR-0006, ADR-0008). Modul pendamping tidak termasuk persetujuan ini.
-- **Changeset:** Silabus v1.0 disetujui pemilik: draf v0.1.0 menjadi silabus berstatus disetujui, pertanyaan terbuka diganti keputusan pemilik (bagian 13), kutipan CP Fase C dicocokkan ulang dan diganti dengan teks SK Kepala BSKAP 046/H/KR/2025 (bagian 1.2-1.4).
+- **Changeset:** Silabus v1.0 disetujui pemilik: draf v0.1.0 menjadi silabus berstatus disetujui, pertanyaan terbuka diganti keputusan pemilik (bagian 13), kutipan CP Fase C dicocokkan ulang dan diganti dengan teks SK Kepala BSKAP 046/H/KR/2025 (bagian 1.2-1.4). Revisi patch v1.0.1 (#165): kalimat status yang basi; isi kurikulum tidak berubah.
 
 > **Disetujui pemilik program pada 2026-11-19** (keputusan lewat dialog
 > pilihan, dicatat di issue #128 dan bagian 13), beserta rekomendasi
@@ -462,9 +462,10 @@ pembagian materi di sumber: kelas 6 memuat materi lanjutan tiap elemen).
 
 ## 7. Jembatan dari TK dan ke SMP
 
-Program `tk-coding` dan `smp-coding` disusun paralel dan **belum ada di
-repositori ini**; bagian ini hanya menyatakan kemampuan masuk dan keluaran
-yang diharapkan `[asumsi]` dan harus diselaraskan ketika keduanya selesai.
+Program `tk-coding` dan `smp-coding` disusun paralel; silabus keduanya kini
+ada di repositori ini dan disetujui pemilik (2026-11-19), tetapi bagian ini
+disusun sebelum keduanya dibaca: ia hanya menyatakan kemampuan masuk dan
+keluaran yang diharapkan `[asumsi]` dan harus diselaraskan dengan keduanya.
 
 ### 7.1 Dari TK (`tk-coding`) ke kelas 1
 
@@ -654,4 +655,5 @@ Dengan persetujuan ini program `sd-coding` didaftarkan di
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
 | v1.0.0 | 2026-11-19 | Disetujui pemilik beserta rekomendasi penyusun (issue #128); pertanyaan terbuka diganti keputusan (bagian 13); kutipan CP Fase C dicocokkan dengan SK 046/H/KR/2025 dan dikoreksi (bagian 1.2-1.4, 4); rencana mingguan tidak diubah. |
+| v1.0.1 | 2026-11-19 | Revisi patch: kalimat status, keputusan pemilik #165; isi kurikulum tidak berubah. |
 | v0.1.0 | 2026-11-19 | Draf awal (issue #128), status DRAF. |

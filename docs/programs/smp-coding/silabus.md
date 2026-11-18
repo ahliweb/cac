@@ -1,9 +1,9 @@
 # Silabus Pembelajaran Coding SMP — v1.1
 
-- **Version:** v1.1.0
+- **Version:** v1.1.1
 - **Last updated:** 2026-11-19
 - **Status:** DISETUJUI pemilik program, 2026-11-19 — beserta semua rekomendasi penyusun (bagian 10; keputusan lewat dialog pilihan, dicatat di issue #129). Modul pembelajaran di `content/smp-coding/` dan modul pendamping tidak termasuk persetujuan ini.
-- **Changeset:** Silabus v1.1 disetujui pemilik (2026-11-19, keputusan di issue #139): bagian 7.1 "Kebijakan penggunaan AI" ditambah (pemakaian AI generatif oleh murid SMP tetap demonstrasi guru, tanpa akun murid; asesmen tanpa AI); butir "mengalihkan pekerjaan berpikir ke AI" ditambah di `SMP9-2-M10`, butir data pribadi dan kata sandi tidak ditempel ke layanan AI di `SMP8-2-M11`, energi dan biaya komputasi sebagai butir singkat dengan ketidakpastian; kode butir CP dan struktur 84 minggu tidak berubah. Sebelumnya: silabus v1.0 disetujui pemilik (2026-11-19) beserta rekomendasi penyusun: satu jalur inti blok ke pseudocode, Python hanya pengayaan di luar CP, CP KKA Fase D untuk materi AI kelas 9, klub OSN opsional, tanpa akun murid; butir Literasi Digital yang belum tercakup ditutup lewat modul pendamping (pekerjaan lanjutan); issue #129. Isi rencana sama dengan draf v0.2; yang berubah hanya status, bagian 10, changelog, dan satu koreksi hitungan di bagian 4 (`DK-BK-c`: 32 menjadi 31 minggu lain).
+- **Changeset:** Silabus v1.1 disetujui pemilik (2026-11-19, keputusan di issue #139): bagian 7.1 "Kebijakan penggunaan AI" ditambah (pemakaian AI generatif oleh murid SMP tetap demonstrasi guru, tanpa akun murid; asesmen tanpa AI); butir "mengalihkan pekerjaan berpikir ke AI" ditambah di `SMP9-2-M10`, butir data pribadi dan kata sandi tidak ditempel ke layanan AI di `SMP8-2-M11`, energi dan biaya komputasi sebagai butir singkat dengan ketidakpastian; kode butir CP dan struktur 84 minggu tidak berubah. Sebelumnya: silabus v1.0 disetujui pemilik (2026-11-19) beserta rekomendasi penyusun: satu jalur inti blok ke pseudocode, Python hanya pengayaan di luar CP, CP KKA Fase D untuk materi AI kelas 9, klub OSN opsional, tanpa akun murid; butir Literasi Digital yang belum tercakup ditutup lewat modul pendamping (pekerjaan lanjutan); issue #129. Isi rencana sama dengan draf v0.2; yang berubah hanya status, bagian 10, changelog, dan satu koreksi hitungan di bagian 4 (`DK-BK-c`: 32 menjadi 31 minggu lain). Revisi patch v1.1.1 (#165): kalimat status yang basi; isi kurikulum tidak berubah.
 
 > **Disetujui pemilik program pada 2026-11-19** (v1.0; keputusan lewat
 > dialog pilihan, dicatat di issue #129, bagian 10). Dokumen ini konten
@@ -386,8 +386,8 @@ pseudocode, data, KA, dan literasi digital.
 
 ### 5.1 Dari SD (`sd-coding`)
 
-Draf program `sd-coding` disusun **paralel** oleh pelaksana lain; isinya belum
-disepakati dan tidak dibaca penyusun dokumen ini. Asumsi `[asumsi]`: murid
+Program `sd-coding` (silabus disetujui pemilik pada 2026-11-19) disusun
+**paralel** oleh pelaksana lain dan isinya tidak dibaca penyusun dokumen ini. Asumsi `[asumsi]`: murid
 kelas 6 yang masuk SMP mengenal blok, urutan, perulangan, dan percabangan
 dasar. Karena itu `SMP7-1-M1` sampai `M5` dirancang sebagai tinjauan yang
 dapat dipadatkan; murid tanpa latar SD tetap dapat mengikutinya. Penyelarasan
@@ -571,6 +571,7 @@ bawah memuat keputusan yang berlaku.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v1.1.1 | 2026-11-19 | Revisi patch: kalimat status, keputusan pemilik #165; isi kurikulum tidak berubah. |
 | v1.1.0 | 2026-11-19 | Disetujui pemilik lewat keputusan di issue #139 (usulan U-06 dengan opsi rekomendasi): bagian 7.1 "Kebijakan penggunaan AI" ditambah (demonstrasi guru tanpa akun murid, alasan usia dan ketentuan layanan, etika, privasi, asesmen tanpa AI, energi dan biaya komputasi sebagai butir singkat berketidakpastian); `SMP9-2-M10` ditambah butir mengalihkan pekerjaan berpikir ke AI; `SMP8-2-M11` ditambah butir data pribadi dan kata sandi tidak ditempel ke layanan AI; bullet etika AI bagian 7 dan Q11 diselaraskan. Kode butir CP, struktur, 84 minggu, pemetaan, dan jembatan tidak berubah. |
 | v1.0.0 | 2026-11-19 | Disetujui pemilik beserta semua rekomendasi penyusun; bagian 10 menjadi catatan keputusan (opsi rekomendasi untuk Q1-Q11); status, banner, dan catatan modul pendamping diperbarui; rencana mingguan, pemetaan CP, dan jembatan tidak diubah dari v0.2 kecuali satu koreksi hitungan: pada bagian 4 baris `DK-BK-c`, "dan 32 minggu lain" menjadi "dan 31 minggu lain" (rencana bagian 3 memuat `DK-BK-c` di 36 minggu, 5 disebut dan 31 lainnya; selisih satu ditemukan audit corpus saat di-encode); pemilik perlu mengetahui koreksi ini (issue #129). |
 | v0.2.0 | 2026-11-19 | Kutipan dan kode butir CP diganti dengan teks resmi: CP Informatika Fase D dari Panduan 2025 (elemen BK dan LD) dan CP Koding dan KA Fase D dari SK 046/H/KR/2025; pemetaan CP disusun ulang; pemrograman teks, kodifikasi biner, dan klub ditandai pengayaan di luar CP; pertanyaan Q1, Q3, Q7, Q9 diperbarui, Q10 dan Q11 ditambah (issue #129). |

@@ -1,9 +1,9 @@
 {
-  "syllabusVersion": "1.1.0",
+  "syllabusVersion": "1.1.1",
   "syllabusDate": "2026-11-19",
   "sourceSection": "bagian 5",
   "fromSd": {
-    "text": "Draf program `sd-coding` disusun **paralel** oleh pelaksana lain; isinya belum disepakati dan tidak dibaca penyusun dokumen ini. Asumsi `[asumsi]`: murid kelas 6 yang masuk SMP mengenal blok, urutan, perulangan, dan percabangan dasar. Karena itu `SMP7-1-M1` sampai `M5` dirancang sebagai tinjauan yang dapat dipadatkan; murid tanpa latar SD tetap dapat mengikutinya. Penyelarasan kode (`SD6-2-...` ke `SMP7-1-...`) dilakukan setelah kedua silabus disetujui."
+    "text": "Program `sd-coding` (silabus disetujui pemilik pada 2026-11-19) disusun **paralel** oleh pelaksana lain dan isinya tidak dibaca penyusun dokumen ini. Asumsi `[asumsi]`: murid kelas 6 yang masuk SMP mengenal blok, urutan, perulangan, dan percabangan dasar. Karena itu `SMP7-1-M1` sampai `M5` dirancang sebagai tinjauan yang dapat dipadatkan; murid tanpa latar SD tetap dapat mengikutinya. Penyelarasan kode (`SD6-2-...` ke `SMP7-1-...`) dilakukan setelah kedua silabus disetujui."
   },
   "toSma": [
     {

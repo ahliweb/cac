@@ -34,16 +34,18 @@ Tujuh program terdaftar di `data/programs.json` (ADR-0006); semuanya diperiksa
 | --- | --- | --- | --- |
 | `osn` | Pembinaan OSN Informatika 2026, 28 minggu, 10 rumpun materi, 7 gerbang (checkpoint). | PDF silabus v2.0 (4 September 2026) di `docs/`. Kebijakan AI: [`kebijakan-ai-osn.md`](../operations/kebijakan-ai-osn.md). | Penuh: `validate`, `plan`, `render`, `report`, `checklist`. |
 | `sma-coding` | Coding SMA kelas X-XII: jalur A (C++), B (web JS/TS/Bun), C (IoT dan robotika), D (kecerdasan buatan dan analisis data), E (komputasi kuantum, kelas XI-XII). | `docs/programs/sma-coding/silabus.md` v1.3.0 (disetujui pemilik 2026-11-19; jalur D dan E di luar rumusan CP, pengayaan). Murid boleh memakai AI dengan etika (bagian 7.4). | `validate`, `check:fidelity`, `plan --track`, `render lembar-siswa --week <kode-minggu>` dan `render modul` (issue #77). `render weekly`, `render checkpoint` dan `render sop`, `report` dan `checklist` menolak dengan exit 2. |
-| `tk-coding` | Berpikir komputasional TK A dan TK B, tanpa layar. | `docs/programs/tk-coding/silabus.md` v1.0.0. Tanpa alat AI generatif untuk murid. | `validate`, `check:fidelity`. |
-| `sd-coding` | Coding SD kelas 1-6 (inti kelas 5-6, KKA Fase C). | `docs/programs/sd-coding/silabus.md` v1.0.0. Tanpa alat AI generatif untuk murid. | `validate`, `check:fidelity`. |
-| `smp-coding` | Coding SMP kelas 7-9 (Fase D), 84 minggu. | `docs/programs/smp-coding/silabus.md` v1.1.0. Demonstrasi guru, tanpa akun murid (bagian 7.1). | `validate`, `check:fidelity`. |
-| `kuliah-coding` | Coding perguruan tinggi dalam SKS: jalur U, I, K. | `docs/programs/kuliah-coding/silabus.md` v1.1.0. Kebijakan AI tiga tingkat (bagian 6.3-6.5). | `validate`, `check:fidelity`. |
-| `dewasa-coding` | Coding untuk dewasa: jalur Pekerja, Profesional, Personal, Pebisnis/UMKM, berbasis modul dan jam. | `docs/programs/dewasa-coding/silabus.md` v1.1.0. Kebijakan AI peserta dewasa (bagian 9.1). | `validate`, `check:fidelity`. |
+| `tk-coding` | Berpikir komputasional TK A dan TK B, tanpa layar. | `docs/programs/tk-coding/silabus.md` v1.0.1. Tanpa alat AI generatif untuk murid. | `validate`, `check:fidelity`. |
+| `sd-coding` | Coding SD kelas 1-6 (inti kelas 5-6, KKA Fase C). | `docs/programs/sd-coding/silabus.md` v1.0.1. Tanpa alat AI generatif untuk murid. | `validate`, `check:fidelity`. |
+| `smp-coding` | Coding SMP kelas 7-9 (Fase D), 84 minggu. | `docs/programs/smp-coding/silabus.md` v1.1.1. Demonstrasi guru, tanpa akun murid (bagian 7.1). | `validate`, `check:fidelity`. |
+| `kuliah-coding` | Coding perguruan tinggi dalam SKS: jalur U, I, K. | `docs/programs/kuliah-coding/silabus.md` v1.1.1. Kebijakan AI tiga tingkat (bagian 6.3-6.5). | `validate`, `check:fidelity`. |
+| `dewasa-coding` | Coding untuk dewasa: jalur Pekerja, Profesional, Personal, Pebisnis/UMKM, berbasis modul dan jam. | `docs/programs/dewasa-coding/silabus.md` v1.1.1. Kebijakan AI peserta dewasa (bagian 9.1). | `validate`, `check:fidelity`. |
 
 Untuk `tk-coding`, `sd-coding`, `smp-coding`, `kuliah-coding`, dan
-`dewasa-coding`, `plan` dan `render` menolak dengan exit 2 ("belum didukung
-untuk program <id>"). Kelima program itu belum punya modul materi di
-`content/`.
+`dewasa-coding`, `plan` dan `render lembar-siswa` menolak dengan exit 2 ("belum didukung
+untuk program <id>"; pesannya menyebut bahwa kedua perintah itu hanya ada untuk
+`osn` dan `sma-coding`, dan bahwa program itu hanya didukung `validate` dan
+`check:fidelity`). `render modul` juga exit 2 karena kelima program itu belum
+punya modul materi di `content/`.
 
 ## Anda siapa? Baca halaman ini
 

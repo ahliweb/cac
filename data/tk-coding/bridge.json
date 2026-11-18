@@ -1,9 +1,9 @@
 {
-  "syllabusVersion": "1.0.0",
+  "syllabusVersion": "1.0.1",
   "syllabusDate": "2026-11-19",
   "sourceSection": "bagian 5",
   "policy": "**Kebijakan.** Kepka 046/H/KR/2025 Diktum KEENAM: CP Fase A \"disusun selaras dengan Capaian Pembelajaran pada fase fondasi untuk memastikan transisi pembelajaran yang berkesinambungan dari PAUD ke SD\" (kutipan penuh enam kemampuan fondasi di riset 2.1). Mata pelajaran koding dan KA pilihan dimulai kelas V SD menurut halaman BBPMP yang dibuka (riset 2.5), bukan di PAUD.",
-  "sdProgram": "**Program `sd-coding`.** Program SD sedang disusun paralel (issue lain); dokumennya **belum ada** di repositori pada 2026-11-19 (`docs/programs/` hanya memuat `sma-coding` dan folder ini). Jembatan berikut bersifat rancangan sepihak dan **harus disesuaikan** setelah silabus `sd-coding` ada `[belum terverifikasi]`.",
+  "sdProgram": "**Program `sd-coding`.** Silabus `sd-coding` (issue #128) disetujui pemilik pada 2026-11-19 dan kini ada di `docs/programs/sd-coding/silabus.md`. Jembatan berikut disusun sebelum silabus itu dibaca, bersifat rancangan sepihak, dan **harus disesuaikan** dengannya `[belum terverifikasi]`.",
   "rows": [
     {
       "order": 1,
