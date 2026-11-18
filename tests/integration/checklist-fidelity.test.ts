@@ -7,7 +7,7 @@
  * See `scripts/check-checklist-fidelity.ts` for the implementation and
  * what "fidelity" means here (byte-identical to
  * `docs/silabus/14-checklist-dan-aturan-operasional.md`, the source
- * document `data/readiness-checklist.json`/`data/operational-rules.json`
+ * document `data/osn/readiness-checklist.json`/`data/osn/operational-rules.json`
  * were transcribed from).
  */
 
@@ -28,16 +28,16 @@ const sourceMarkdown = readFileSync(
   "utf-8",
 );
 const readinessFile = JSON.parse(
-  readFileSync(join(repoRoot, "data", "readiness-checklist.json"), "utf-8"),
+  readFileSync(join(repoRoot, "data", "osn", "readiness-checklist.json"), "utf-8"),
 ) as { items: Array<{ id: string; item: string }> };
 const operationalRulesFile = JSON.parse(
-  readFileSync(join(repoRoot, "data", "operational-rules.json"), "utf-8"),
+  readFileSync(join(repoRoot, "data", "osn", "operational-rules.json"), "utf-8"),
 ) as {
   rules: Array<{ order: number; rule: string }>;
   quickPointer: { stages: string[]; extensionCondition: string };
 };
 
-describe("checklist fidelity: data/readiness-checklist.json + data/operational-rules.json vs. §14 markdown", () => {
+describe("checklist fidelity: data/osn/readiness-checklist.json + data/osn/operational-rules.json vs. §14 markdown", () => {
   test("passes with zero mismatches against the real corpus", () => {
     const problems = checkFidelity(sourceMarkdown, readinessFile, operationalRulesFile);
     expect(formatFidelityProblems(problems)).toContain("OK --");

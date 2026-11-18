@@ -61,14 +61,14 @@ export function renderCheckpointSheet(checkpointNumber: number): string {
   const week = checkpointWeeks().find((entry) => entry.checkpoint === checkpointNumber);
   if (week === undefined) {
     throw new RenderRequestError(
-      `renderCheckpointSheet: no week carries checkpoint ${checkpointNumber} -- data/weeks.json has no matching checkpoint entry.`,
+      `renderCheckpointSheet: no week carries checkpoint ${checkpointNumber} -- data/osn/weeks.json has no matching checkpoint entry.`,
     );
   }
 
   const gate = gateAfter(week.week);
   if (gate === undefined) {
     throw new RenderRequestError(
-      `renderCheckpointSheet: week ${week.week} carries checkpoint ${checkpointNumber} but has no matching §4.1 gate -- data/weeks.json and data/gates.json have desynced.`,
+      `renderCheckpointSheet: week ${week.week} carries checkpoint ${checkpointNumber} but has no matching §4.1 gate -- data/osn/weeks.json and data/osn/gates.json have desynced.`,
     );
   }
 

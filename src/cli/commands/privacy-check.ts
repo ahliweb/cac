@@ -8,8 +8,8 @@
  * enforcement mechanism": "A CI-checkable scan over `data/`... a second,
  * corpus-wide check independent of any single schema, so a future data
  * file cannot bypass the schema-level guard by mistake." Unlike that
- * test, this scan is **recursive** (reaches `data/samples/`) and also
- * reads `.jsonl` files (reaches `data/samples/learning-records.sample.jsonl`),
+ * test, this scan is **recursive** (reaches `data/osn/samples/`) and also
+ * reads `.jsonl` files (reaches `data/osn/samples/learning-records.sample.jsonl`),
  * per the issue's explicit requirement -- see `src/cli/privacy-scan-
  * loader.ts`'s docblock for why this is a wider traversal than `osn
  * validate`'s registered-corpus scan.
@@ -50,7 +50,7 @@ const HELP_TEXT = `osn privacy-check -- scan data/ for direct-identifier-shaped 
 
 A CI-checkable governance control (ADR-0004, GR-04): recursively scans
 every ".json" and ".jsonl" file under data/ -- including nested
-directories such as data/samples/ -- for object keys shaped like a direct
+directories such as data/osn/samples/ -- for object keys shaped like a direct
 or indirect personal identifier (name, email, phone, NIK, school,
 birthdate, IP address, ...; see DIRECT_IDENTIFIER_DENYLIST in
 src/schema/learning-record.ts), at any nesting depth.
@@ -58,7 +58,7 @@ src/schema/learning-record.ts), at any nesting depth.
 Tolerance rule: the key "name" is permitted everywhere, because this
 repository's pre-existing curriculum corpus legitimately carries a "name"
 field for a curriculum entity's printed name (e.g. { "id": "osn-k",
-"name": "OSN-K" } in data/competition-stages.json) -- never a person's
+"name": "OSN-K" } in data/osn/competition-stages.json) -- never a person's
 name. Every other denylisted term is zero-tolerance: a single occurrence
 anywhere under data/ is reported as a finding. See
 docs/governance/privacy.md's "Data minimisation" section for the full

@@ -1,8 +1,8 @@
 /**
- * Typed loaders and lookup helpers over `data/readiness-checklist.json`
+ * Typed loaders and lookup helpers over `data/osn/readiness-checklist.json`
  * (the eight §14.1 cohort-readiness checklist items), `data/operational-
  * rules.json` (the eight §14.2 operational rules and the §14.2 mentor
- * quick-pointer callout), and `data/syllabus-check-log.json` (the §14.2
+ * quick-pointer callout), and `data/osn/syllabus-check-log.json` (the §14.2
  * rule 8 / Catatan Penutup syllabus-check log) -- issue #25.
  *
  * Per the "Layering rules" in `docs/architecture/README.md`, this module
@@ -25,9 +25,9 @@
 // filesystem read, no async loader, and Bun/tsc both resolve it at build
 // time. The value is `unknown` as far as validity is concerned; it is
 // still parsed through the schema below before anything trusts its shape.
-import rawOperationalRules from "../../data/operational-rules.json";
-import rawReadinessChecklist from "../../data/readiness-checklist.json";
-import rawSyllabusCheckLog from "../../data/syllabus-check-log.json";
+import rawOperationalRules from "../../data/osn/operational-rules.json";
+import rawReadinessChecklist from "../../data/osn/readiness-checklist.json";
+import rawSyllabusCheckLog from "../../data/osn/syllabus-check-log.json";
 import { parseDataFile } from "../schema/common";
 import {
   type OperationalRule,
@@ -46,9 +46,9 @@ import {
   syllabusCheckLogFileSchema,
 } from "../schema/syllabus-check";
 
-const READINESS_CHECKLIST_SOURCE_NAME = "data/readiness-checklist.json";
-const OPERATIONAL_RULES_SOURCE_NAME = "data/operational-rules.json";
-const SYLLABUS_CHECK_LOG_SOURCE_NAME = "data/syllabus-check-log.json";
+const READINESS_CHECKLIST_SOURCE_NAME = "data/osn/readiness-checklist.json";
+const OPERATIONAL_RULES_SOURCE_NAME = "data/osn/operational-rules.json";
+const SYLLABUS_CHECK_LOG_SOURCE_NAME = "data/osn/syllabus-check-log.json";
 
 const MS_PER_DAY = 24 * 60 * 60 * 1000;
 
@@ -56,7 +56,7 @@ const MS_PER_DAY = 24 * 60 * 60 * 1000;
 const ISO_DATE_PATTERN = /^(\d{4})-(\d{2})-(\d{2})$/;
 
 /**
- * The validated contents of `data/readiness-checklist.json`, parsed once at
+ * The validated contents of `data/osn/readiness-checklist.json`, parsed once at
  * module load. Throws {@link CorpusValidationError} if the file does not
  * match {@link readinessChecklistFileSchema}.
  */
@@ -67,7 +67,7 @@ const readinessChecklistFile: ReadinessChecklistFile = parseDataFile(
 );
 
 /**
- * The validated contents of `data/operational-rules.json`, parsed once at
+ * The validated contents of `data/osn/operational-rules.json`, parsed once at
  * module load. Throws {@link CorpusValidationError} if the file does not
  * match {@link operationalRulesFileSchema}.
  */
@@ -78,7 +78,7 @@ const operationalRulesFile: OperationalRulesFile = parseDataFile(
 );
 
 /**
- * The validated contents of `data/syllabus-check-log.json`, parsed once at
+ * The validated contents of `data/osn/syllabus-check-log.json`, parsed once at
  * module load. Throws {@link CorpusValidationError} if the file does not
  * match {@link syllabusCheckLogFileSchema}.
  */
@@ -96,9 +96,9 @@ export interface OperationsCorpusVersion {
 
 /**
  * The corpus version (`syllabusVersion`/`syllabusDate`) carried by
- * `data/readiness-checklist.json` -- read live from that file rather than
+ * `data/osn/readiness-checklist.json` -- read live from that file rather than
  * hard-coded, so a future syllabus revision is reflected here automatically.
- * `data/operational-rules.json` and `data/syllabus-check-log.json` carry
+ * `data/osn/operational-rules.json` and `data/osn/syllabus-check-log.json` carry
  * their own copies of the same two fields (per ADR-0005, every `data/*.json`
  * file carries its own provenance); this repository's operational corpus
  * is transcribed and versioned as one unit, so all three currently agree.
@@ -188,7 +188,7 @@ export function daysSinceLastSyllabusCheck(asOf: Date): number {
     // away, so a future schema change that loosened the pattern would fail
     // loudly instead of producing `NaN`.
     throw new Error(
-      `daysSinceLastSyllabusCheck: latest syllabus check's checkedOn "${latest.checkedOn}" is not a "YYYY-MM-DD" date -- data/syllabus-check-log.json may have changed shape.`,
+      `daysSinceLastSyllabusCheck: latest syllabus check's checkedOn "${latest.checkedOn}" is not a "YYYY-MM-DD" date -- data/osn/syllabus-check-log.json may have changed shape.`,
     );
   }
 

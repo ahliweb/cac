@@ -2,7 +2,7 @@
  * Zod schema for the §12 "Sumber Belajar dan Pustaka" mentor source
  * ordering (§12.1), primary books (§12.2) and practice platforms (§12.3) of
  * the syllabus corpus (`docs/silabus/12-sumber-belajar.md`), plus the
- * whole-file wrapper for `data/source-priority.json`.
+ * whole-file wrapper for `data/osn/source-priority.json`.
  *
  * Per the layering rules in `docs/architecture/README.md`, this module must
  * never import from `src/domain/`.
@@ -94,7 +94,7 @@ export const practicePlatformSchema = z
 export type PracticePlatform = z.infer<typeof practicePlatformSchema>;
 
 /**
- * The whole `data/source-priority.json` file: the five §12.1 source-priority
+ * The whole `data/osn/source-priority.json` file: the five §12.1 source-priority
  * rows, the three §12.2 primary books, the five §12.3 practice platforms,
  * plus the provenance fields (`syllabusVersion`, `syllabusDate`,
  * `sourceSection`) that let the corpus carry its own versioning, per
@@ -122,7 +122,7 @@ export const sourcePriorityFileSchema = z
       .describe("The full set of five §12.3 practice platforms."),
   })
   .describe(
-    "The full contents of `data/source-priority.json`: the §12.1 mentor " +
+    "The full contents of `data/osn/source-priority.json`: the §12.1 mentor " +
       "source-priority ordering, the §12.2 primary books and the §12.3 " +
       "practice platforms, with their corpus provenance.",
   );

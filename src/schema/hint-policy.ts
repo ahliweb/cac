@@ -2,7 +2,7 @@
  * Zod schema for the progressive-hinting escalation policy ("Aturan
  * hint/editorial") defined in §5.3 of the syllabus corpus
  * (`docs/silabus/05-format-pembelajaran-dan-sop.md`), plus the whole-file
- * wrapper for `data/hint-policy.json`.
+ * wrapper for `data/osn/hint-policy.json`.
  *
  * Per the layering rules in `docs/architecture/README.md`, this module must
  * never import from `src/domain/`. In particular, the mandatory re-solve
@@ -71,7 +71,7 @@ export const hintLevelSchema = z
 export type HintLevel = z.infer<typeof hintLevelSchema>;
 
 /**
- * The whole `data/hint-policy.json` file: the five §5.3 escalation levels,
+ * The whole `data/osn/hint-policy.json` file: the five §5.3 escalation levels,
  * the callout text itself (verbatim), a derived summary of the re-solve
  * obligation, plus the provenance fields (`syllabusVersion`,
  * `syllabusDate`, `sourceSection`) that let the corpus carry its own
@@ -129,7 +129,7 @@ export const hintPolicyFileSchema = z
     }
   })
   .describe(
-    "The full contents of `data/hint-policy.json`: the five §5.3 " +
+    "The full contents of `data/osn/hint-policy.json`: the five §5.3 " +
       "progressive-hinting escalation levels, the callout text, and the " +
       "re-solve policy summary, with their corpus provenance.",
   );

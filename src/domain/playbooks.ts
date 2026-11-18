@@ -1,7 +1,7 @@
 /**
  * Executable decision helpers over the seven §7 decision playbooks
  * (`docs/silabus/07-contoh-implementasi.md`), plus the typed loader/lookup
- * helpers over `data/playbooks.json`.
+ * helpers over `data/osn/playbooks.json`.
  *
  * **These functions encode pedagogical guidance, not a solver, and they
  * are advisory only.** §7's playbooks convert a problem's constraints into
@@ -28,14 +28,14 @@
 // filesystem read, no async loader, and Bun/tsc both resolve it at build
 // time. The value is `unknown` as far as validity is concerned; it is
 // still parsed through the schema below before anything trusts its shape.
-import rawPlaybooks from "../../data/playbooks.json";
+import rawPlaybooks from "../../data/osn/playbooks.json";
 import { parseDataFile } from "../schema/common";
 import { type Playbook, type PlaybooksFile, playbooksFileSchema } from "../schema/playbook";
 
-const PLAYBOOKS_SOURCE_NAME = "data/playbooks.json";
+const PLAYBOOKS_SOURCE_NAME = "data/osn/playbooks.json";
 
 /**
- * The validated contents of `data/playbooks.json`, parsed once at module
+ * The validated contents of `data/osn/playbooks.json`, parsed once at module
  * load. Throws {@link CorpusValidationError} if the file does not match
  * {@link playbooksFileSchema}.
  */

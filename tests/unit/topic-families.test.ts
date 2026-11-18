@@ -1,7 +1,7 @@
 /**
  * Tests for the topic-family schema (`src/schema/topic-family.ts`) and the
  * typed loader/lookup helpers over the real corpus
- * (`src/domain/topic-families.ts`, `data/topic-families.json`).
+ * (`src/domain/topic-families.ts`, `data/osn/topic-families.json`).
  *
  * Malformed-input fixtures are constructed inline against the schema; the
  * real data file under `data/` is never mutated by these tests.
@@ -29,7 +29,7 @@ const EXPECTED_IDS = [
   "geometri-dasar",
 ] as const;
 
-describe("data/topic-families.json (via src/domain/topic-families.ts)", () => {
+describe("data/osn/topic-families.json (via src/domain/topic-families.ts)", () => {
   test("the real data file parses through the schema without error", () => {
     expect(() => listTopicFamilies()).not.toThrow();
   });

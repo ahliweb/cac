@@ -3,7 +3,7 @@
  * difficulty, stage, complexity, common traps, expected solution") defined
  * in the §13 "Tata Kelola Implementasi AhliKoding.com" table of the
  * syllabus corpus (`docs/silabus/13-tata-kelola.md`), plus the controlled
- * vocabulary wrapper for `data/problem-taxonomy-vocab.json`.
+ * vocabulary wrapper for `data/osn/problem-taxonomy-vocab.json`.
  *
  * §13 names the seven tag dimensions but, unlike e.g. §6.1's assessment
  * weights or §6.2's status codes, gives no table of concrete values for
@@ -29,7 +29,7 @@ import { stageIdSchema } from "./stage";
 
 /**
  * The ten official topic-family ids defined in §2.1
- * (`data/topic-families.json`), in that file's order. Hardcoded here
+ * (`data/osn/topic-families.json`), in that file's order. Hardcoded here
  * rather than imported, in the same style `src/schema/stage.ts` hardcodes
  * `STAGE_IDS` and `src/schema/problem-status.ts` hardcodes
  * `PROBLEM_STATUS_CODES`: `src/schema/` describes shape and constraints
@@ -37,7 +37,7 @@ import { stageIdSchema } from "./stage";
  * `docs/architecture/README.md`, "Layering rules"), so a small, stable,
  * already-finalised id set like this one is restated as a literal here.
  * `tests/unit/problem-taxonomy.test.ts` asserts this list has no drift
- * against the real `data/topic-families.json` file (via
+ * against the real `data/osn/topic-families.json` file (via
  * `src/domain/topic-families.ts`).
  */
 export const OFFICIAL_TOPIC_IDS = [
@@ -75,7 +75,7 @@ export const DIFFICULTY_MAX = 5;
  * stages' natural difficulty progression (OSN-K -> OSN-P -> OSN Nasional
  * -> TOKI/IOI extension) so a mentor tagging a problem has a concrete
  * reference point rather than an arbitrary number. See
- * `data/problem-taxonomy-vocab.json` for the full band descriptions and
+ * `data/osn/problem-taxonomy-vocab.json` for the full band descriptions and
  * `docs/architecture/data-classification.md` for the justification
  * summary.
  */
@@ -88,7 +88,7 @@ export const difficultyLevelSchema = z
   .min(DIFFICULTY_MIN)
   .max(DIFFICULTY_MAX)
   .describe(
-    `The §13 'difficulty' tag dimension: an integer ${DIFFICULTY_MIN}-${DIFFICULTY_MAX} matching one of the named bands in data/problem-taxonomy-vocab.json (in order: ${DIFFICULTY_BAND_IDS.join(", ")}). DERIVED scale -- see the module docblock.`,
+    `The §13 'difficulty' tag dimension: an integer ${DIFFICULTY_MIN}-${DIFFICULTY_MAX} matching one of the named bands in data/osn/problem-taxonomy-vocab.json (in order: ${DIFFICULTY_BAND_IDS.join(", ")}). DERIVED scale -- see the module docblock.`,
   );
 
 // --- complexity -----------------------------------------------------------
@@ -311,7 +311,7 @@ const expectedSolutionClassEntrySchema = z.object({
 });
 
 /**
- * The whole `data/problem-taxonomy-vocab.json` file: the controlled
+ * The whole `data/osn/problem-taxonomy-vocab.json` file: the controlled
  * vocabulary for the three open §13 tag dimensions (`difficulty`,
  * `commonTraps`, `expectedSolution`), plus the provenance fields
  * (`syllabusVersion`, `syllabusDate`, `sourceSection`) that let the corpus
@@ -399,7 +399,7 @@ export const problemTaxonomyVocabFileSchema = z
     );
   })
   .describe(
-    "The full contents of `data/problem-taxonomy-vocab.json`: the " +
+    "The full contents of `data/osn/problem-taxonomy-vocab.json`: the " +
       "controlled vocabulary for the open §13 Problem Taxonomy dimensions.",
   );
 

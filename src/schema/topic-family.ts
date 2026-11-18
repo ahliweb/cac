@@ -50,7 +50,7 @@ export const topicFamilySchema = z
 export type TopicFamily = z.infer<typeof topicFamilySchema>;
 
 /**
- * The whole `data/topic-families.json` file: the ten topic families plus
+ * The whole `data/osn/topic-families.json` file: the ten topic families plus
  * the provenance fields (`syllabusVersion`, `syllabusDate`, `sourceSection`)
  * that let the corpus carry its own versioning, per ADR-0005.
  */
@@ -72,7 +72,7 @@ export const topicFamiliesSchema = z
       .describe("The full set of topic families defined by §2.1."),
   })
   .describe(
-    "The full contents of `data/topic-families.json`: the ten official " +
+    "The full contents of `data/osn/topic-families.json`: the ten official " +
       "topic families, with their corpus provenance.",
   );
 

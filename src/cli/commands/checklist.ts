@@ -15,6 +15,7 @@ import type { Command } from "../command";
 import { EXIT_SUCCESS, EXIT_USAGE_ERROR } from "../command";
 import { formatChecklistJson } from "../format-checklist";
 import { writeOutputFile } from "../output-writer";
+import { resolveProgramOption } from "../program-loader";
 
 const HELP_TEXT = `osn checklist -- render the cohort readiness checklist and operational rules
 
@@ -36,11 +37,12 @@ Options:
   --force              Overwrite --out if it already exists. Without it,
                        an existing file at --out is left byte-for-byte
                        untouched and the command exits 2.
+  --program <id>  Programme whose corpus to use (a registered id; default osn).
   -h, --help           Show this help.
 
 Exit codes:
   0   success.
-  2   usage error: an unknown --format, or --out already exists without
+  2   usage error: an unknown --format, an unknown --program, or --out already exists without
       --force.`;
 
 /** Extracts the value following the first occurrence of `flag` in `args`, or `undefined` if `flag` is absent (or has nothing after it). */
@@ -57,7 +59,12 @@ export const checklistCommand: Command = {
   summary: "Render the §14.1 cohort readiness checklist and §14.2 operational rules.",
   help: () => HELP_TEXT,
 
-  async run(args, ctx) {
+  async run(rawArgs, ctx) {
+    const resolved = await resolveProgramOption("checklist", rawArgs, ctx);
+    if (!resolved.ok) {
+      return resolved.exitCode;
+    }
+    const args = resolved.args;
     let format: "md" | "json" = ctx.json ? "json" : "md";
     if (args.includes("--format")) {
       const formatValue = readFlagValue(args, "--format");

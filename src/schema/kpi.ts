@@ -3,7 +3,7 @@
  * penggunaan") -- one of the seven §6.3 "KPI dashboard mentor" metrics
  * defined in the syllabus corpus
  * (`docs/silabus/06-evaluasi-rubrik-kpi.md`), plus the whole-file wrapper
- * for `data/kpi-definitions.json`.
+ * for `data/osn/kpi-definitions.json`.
  *
  * Per the layering rules in `docs/architecture/README.md`, this module must
  * never import from `src/domain/`. This module owns the *definition* of
@@ -149,7 +149,7 @@ export const kpiDefinitionSchema = z
 export type KpiDefinition = z.infer<typeof kpiDefinitionSchema>;
 
 /**
- * The whole `data/kpi-definitions.json` file: the seven §6.3 KPI metric
+ * The whole `data/osn/kpi-definitions.json` file: the seven §6.3 KPI metric
  * definitions, the §14.2 rule 7 caveat ("Jumlah soal bukan satu-satunya
  * KPI; mastery dan transfer lebih penting.", verbatim), plus the
  * provenance fields (`syllabusVersion`, `syllabusDate`, `sourceSection`)
@@ -207,7 +207,7 @@ export const kpiDefinitionsFileSchema = z
     }
   })
   .describe(
-    "The full contents of `data/kpi-definitions.json`: the seven §6.3 " +
+    "The full contents of `data/osn/kpi-definitions.json`: the seven §6.3 " +
       "mentor KPI metrics, the §14.2 rule 7 caveat, with their corpus " +
       "provenance.",
   );

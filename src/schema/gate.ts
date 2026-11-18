@@ -2,7 +2,7 @@
  * Zod schema for a phase gate ("gate per fase") — one of the seven
  * progression checkpoints defined in §4.1 of the syllabus corpus
  * (`docs/silabus/04-silabus-28-minggu.md`), plus the whole-file wrapper for
- * `data/gates.json`.
+ * `data/osn/gates.json`.
  *
  * Per the layering rules in `docs/architecture/README.md`, this module must
  * never import from `src/domain/`.
@@ -58,7 +58,7 @@ export const gateSchema = z
 export type Gate = z.infer<typeof gateSchema>;
 
 /**
- * The whole `data/gates.json` file: the seven phase gates plus the
+ * The whole `data/osn/gates.json` file: the seven phase gates plus the
  * provenance fields (`syllabusVersion`, `syllabusDate`, `sourceSection`)
  * that let the corpus carry its own versioning, per ADR-0005.
  */
@@ -78,7 +78,7 @@ export const gatesSchema = z
     gates: z.array(gateSchema).describe("The full set of seven phase gates defined by §4.1."),
   })
   .describe(
-    "The full contents of `data/gates.json`: the seven phase gates, with " +
+    "The full contents of `data/osn/gates.json`: the seven phase gates, with " +
       "their corpus provenance.",
   );
 

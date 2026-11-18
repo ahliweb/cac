@@ -20,7 +20,8 @@ Tables, not prose — drift should be visible at a glance.
 | `src/cli/` | CLI command handlers (`osn <command>`): `validate`, `plan`, `render`, `report`, `privacy-check`, `checklist`. |
 | `src/render/` | Generators that turn domain data into mentor-facing output. |
 | `src/index.ts` | Package entrypoint. |
-| `data/` | Curriculum data files (schema-validated content, not code). |
+| `data/programs.json` | Programme registry (ADR-0006), validated by `src/schema/program.ts`. |
+| `data/osn/` | The OSN programme corpus (`data/osn/*.json`) and `data/osn/samples/` (synthetic learning records). One `data/<program>/` directory per registered programme. |
 | `tests/unit/` | One module tested in isolation. Mirrors `src/` loosely. |
 | `tests/integration/` | Cross-module tests (schema → domain → CLI/render). |
 | `docs/architecture/` | System architecture overview, repository map, and ADRs. |
@@ -57,7 +58,7 @@ table.
 | `bun test` | Run the full test suite. |
 | `bun run test:coverage` | `bun test --coverage`; enforces the 85% lines/functions gate in `bunfig.toml`. |
 | `bun run build` | `bun build ./src/index.ts --outdir dist --target bun`. |
-| `bun run validate` | `osn validate` — validates the whole `data/*.json` corpus (schema, structural invariants, referential integrity); exits 0 clean / 1 on any finding. See `docs/cli/README.md`. |
+| `bun run validate` | `osn validate` — validates `data/programs.json` and every registered programme's `data/<program>/*.json` corpus (schema, structural invariants, referential integrity, registry version agreement); `--program <id>` selects one; exits 0 clean / 1 on any finding / 2 on usage error. See `docs/cli/README.md`. |
 | `bun run privacy-check` | `osn privacy-check` — recursively scans `data/` for direct-identifier-shaped keys (GR-04); exits 0 clean / 1 on any finding. |
 | `bun run check:requirements` | `bun run scripts/check-requirements.ts` — verifies the requirements register and traceability matrices are consistent and exhaustive. |
 | `bun run check:checklist-fidelity` | `bun run scripts/check-checklist-fidelity.ts` — verifies §14.1/§14.2 data matches the source syllabus verbatim. |
@@ -91,12 +92,12 @@ schema.**
 
 1. `src/schema/` — define or extend the Zod schema for the shape being
    added.
-2. `data/` — add data that the schema validates.
+2. `data/<program>/` — add data that the schema validates (register the programme in `data/programs.json`).
 3. `src/domain/` — add business logic that consumes the validated data.
 4. `tests/` — cover the schema, the data (via schema validation), and the
    domain logic.
 
-Never commit a `data/` file for a shape that has no corresponding schema.
+Never commit a `data/<program>/` file for a shape that has no corresponding schema.
 
 ## Curriculum content fidelity
 

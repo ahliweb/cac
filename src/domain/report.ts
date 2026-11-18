@@ -153,7 +153,7 @@ export interface KpiReportMetrics {
 
 /**
  * Pairs each {@link KpiReportMetrics} key with the matching
- * `data/kpi-definitions.json` metric id (`src/domain/kpi.ts`'s
+ * `data/osn/kpi-definitions.json` metric id (`src/domain/kpi.ts`'s
  * `listKpiDefinitions()`/`getKpiDefinition()`), in §6.3 table order, so a
  * formatter can walk the seven official definitions and look up each
  * one's computed result without hard-coding the pairing itself.

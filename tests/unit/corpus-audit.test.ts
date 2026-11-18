@@ -24,7 +24,7 @@ import {
   DATA_FILE_REGISTRY,
 } from "../../src/domain/corpus-audit";
 
-const DATA_DIR = join(import.meta.dir, "..", "..", "data");
+const DATA_DIR = join(import.meta.dir, "..", "..", "data", "osn");
 
 /** Reads and JSON-parses every `.json` file directly under `data/`, independent of any `src/domain/` loader. */
 async function loadRealCorpus(): Promise<Map<string, unknown>> {

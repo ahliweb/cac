@@ -14,7 +14,7 @@
  *     the first bad file can never tell you about the second bad file in
  *     the same run.
  *  2. **Testable against a fixture, not only the committed corpus.** A
- *     module that statically imports `../../data/weeks.json` can only ever
+ *     module that statically imports `../../data/osn/weeks.json` can only ever
  *     see the real, committed file — there is no way to point it at a
  *     temp-directory copy with one file deliberately corrupted, which is
  *     exactly what `tests/unit/domain/corpus-audit.test.ts` and
@@ -42,7 +42,7 @@
  * the fixture-testability requirement above: `findDanglingCitations` in
  * `registers.ts` resolves every candidate citation against
  * `registers.ts`'s own eagerly-loaded, statically-imported
- * `data/references.json` — the *real*, committed file, regardless of what
+ * `data/osn/references.json` — the *real*, committed file, regardless of what
  * corpus a caller is actually auditing. A fixture that corrupts a citation
  * to `"R99"` would still be (correctly) flagged, since `R99` is not a real
  * reference either way, but a fixture that instead *removes* a real
@@ -161,7 +161,7 @@ export interface AuditResult {
 
 /** One entry of {@link DATA_FILE_REGISTRY}: a `data/*.json` file name and the schema it must parse against. */
 export interface DataFileRegistryEntry {
-  /** The file name, with no directory prefix, e.g. `"weeks.json"` (the real file is `data/weeks.json`). */
+  /** The file name, with no directory prefix, e.g. `"weeks.json"` (the real file is `data/osn/weeks.json`). */
   readonly file: string;
   /** A short human description, used only in output/docs -- never parsed. */
   readonly description: string;
@@ -690,7 +690,7 @@ function findDanglingCitationsAgainst(
         error(
           file,
           path.length > 0 ? path.join(".") : "(root)",
-          `citation "${value}" does not resolve to any reference in data/references.json`,
+          `citation "${value}" does not resolve to any reference in data/osn/references.json`,
         ),
       ];
     }
@@ -752,7 +752,7 @@ function referentialIntegrityFindings(
             error(
               "weeks.json",
               `weeks[week=${week.week}].topicFamilies`,
-              `references unknown topic family id "${familyId}" (not present in data/topic-families.json)`,
+              `references unknown topic family id "${familyId}" (not present in data/osn/topic-families.json)`,
             ),
           );
         }
@@ -779,7 +779,7 @@ function referentialIntegrityFindings(
           "weeks.json",
           "weeks[*].checkpoint",
           `weeks carrying a non-null checkpoint (weeks [${checkpointWeekNumbers.join(", ")}]) must ` +
-            `exactly match the gate weeks in data/gates.json ([${gateWeekNumbers.join(", ")}])`,
+            `exactly match the gate weeks in data/osn/gates.json ([${gateWeekNumbers.join(", ")}])`,
         ),
       );
     }
@@ -808,7 +808,7 @@ function referentialIntegrityFindings(
           error(
             "assessment-bank.json",
             `banks[id=${bank.id}].servesStage`,
-            `references unknown stage id "${bank.servesStage}" (not present in data/competition-stages.json)`,
+            `references unknown stage id "${bank.servesStage}" (not present in data/osn/competition-stages.json)`,
           ),
         );
       }

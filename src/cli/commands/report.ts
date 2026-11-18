@@ -59,6 +59,7 @@ import type { Command } from "../command";
 import { EXIT_SUCCESS, EXIT_USAGE_ERROR, EXIT_VALIDATION_FAILURE } from "../command";
 import { formatReportJson, formatReportMarkdown } from "../format-report";
 import { writeOutputFile } from "../output-writer";
+import { resolveProgramOption } from "../program-loader";
 
 const HELP_TEXT = `osn report -- mentor KPI dashboard reporting from learning records
 
@@ -90,6 +91,7 @@ Options:
   --force              Overwrite --out if it already exists. Without it,
                        an existing file at --out is left byte-for-byte
                        untouched and the command exits 2.
+  --program <id>  Programme whose corpus to use (a registered id; default osn).
   -h, --help           Show this help.
 
 Input format detection:
@@ -116,7 +118,7 @@ Exit codes:
       by its message, never by a different code (see this file's docblock
       for why).
   2   usage error: --records missing, the given path cannot be read, an
-      unknown --by, or an unknown --format.`;
+      unknown --by, an unknown --format, or an unknown --program.`;
 
 /** Extracts the value following the first occurrence of `flag` in `args`, or `undefined` if `flag` is absent (or has nothing after it). */
 function readFlagValue(args: readonly string[], flag: string): string | undefined {
@@ -296,7 +298,12 @@ export const reportCommand: Command = {
   summary: "Compute the §6.3 mentor KPI dashboard from a learning-record file.",
   help: () => HELP_TEXT,
 
-  async run(args, ctx) {
+  async run(rawArgs, ctx) {
+    const resolved = await resolveProgramOption("report", rawArgs, ctx);
+    if (!resolved.ok) {
+      return resolved.exitCode;
+    }
+    const args = resolved.args;
     const recordsValue = readFlagValue(args, "--records");
     if (!args.includes("--records") || recordsValue === undefined) {
       ctx.stderr('osn report: --records <path> is required. Run "osn report --help" for usage.\n');

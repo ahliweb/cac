@@ -1,0 +1,127 @@
+/**
+ * Filesystem side of the programme registry (ADR-0006): reads and parses
+ * `data/programs.json`, and resolves the `--program <id>` option shared by
+ * every corpus-reading command. I/O belongs to the CLI layer; the pure
+ * rules live in `src/domain/programs.ts`.
+ */
+
+import { access, readFile } from "node:fs/promises";
+import { join, resolve } from "node:path";
+import {
+  DEFAULT_PROGRAM_ID,
+  findProgram,
+  listProgramIds,
+  parseProgramRegistry,
+  REGISTRY_FILE_NAME,
+} from "../domain/programs";
+import type { Program, ProgramRegistry } from "../schema/program";
+import type { CommandContext } from "./command";
+import { EXIT_USAGE_ERROR, EXIT_VALIDATION_FAILURE } from "./command";
+
+/** The repository's `data/` directory, resolved from this file so it is independent of the cwd. */
+export const DATA_ROOT = resolve(import.meta.dir, "../../data");
+
+/** The repository root, for resolving a registry entry's repository-relative paths. */
+export const REPO_ROOT = resolve(import.meta.dir, "../..");
+
+export type RegistryLoadResult =
+  | { readonly ok: true; readonly registry: ProgramRegistry }
+  | { readonly ok: false; readonly kind: "unreadable" | "invalid"; readonly message: string };
+
+/** Reads and validates `<dataRoot>/programs.json`. Never throws. */
+export async function loadProgramRegistry(
+  dataRoot: string = DATA_ROOT,
+): Promise<RegistryLoadResult> {
+  const path = join(dataRoot, REGISTRY_FILE_NAME);
+  let text: string;
+  try {
+    text = await readFile(path, "utf-8");
+  } catch (cause) {
+    return {
+      ok: false,
+      kind: "unreadable",
+      message: `failed to read programme registry "${path}": ${(cause as Error).message}`,
+    };
+  }
+  try {
+    return { ok: true, registry: parseProgramRegistry(JSON.parse(text)) };
+  } catch (cause) {
+    return { ok: false, kind: "invalid", message: (cause as Error).message };
+  }
+}
+
+/** `true` when the repository-relative `path` exists. */
+export async function repoPathExists(path: string, repoRoot: string = REPO_ROOT): Promise<boolean> {
+  try {
+    await access(resolve(repoRoot, path));
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+/** Removes `--program <id>` from `args`; `value` is `undefined` when absent, `null` when it has no usable value. */
+export function extractProgramFlag(args: readonly string[]): {
+  readonly rest: readonly string[];
+  readonly value: string | null | undefined;
+} {
+  const index = args.indexOf("--program");
+  if (index === -1) {
+    return { rest: args, value: undefined };
+  }
+  const value = args[index + 1];
+  if (value === undefined || value.startsWith("-")) {
+    return { rest: [...args.slice(0, index), ...args.slice(index + 1)], value: null };
+  }
+  return { rest: [...args.slice(0, index), ...args.slice(index + 2)], value };
+}
+
+export type ProgramOptionResult =
+  | {
+      readonly ok: true;
+      /** The registered programme selected (default `osn`). */
+      readonly program: Program;
+      /** `args` without `--program <id>`. */
+      readonly args: readonly string[];
+      /** The id the user typed, or `undefined` when `--program` was absent. */
+      readonly explicit: string | undefined;
+    }
+  | { readonly ok: false; readonly exitCode: number };
+
+/**
+ * Resolves `--program <id>` (default `osn`) against the registry. A missing
+ * value or an unknown programme is a usage error (exit 2) with a message
+ * naming the registered ids; an unreadable registry is also exit 2, an
+ * invalid one exit 1 (`osn validate` reports it in full).
+ */
+export async function resolveProgramOption(
+  commandName: string,
+  args: readonly string[],
+  ctx: CommandContext,
+): Promise<ProgramOptionResult> {
+  const { rest, value } = extractProgramFlag(args);
+  if (value === null) {
+    ctx.stderr(`osn ${commandName}: --program requires a programme id argument.\n`);
+    return { ok: false, exitCode: EXIT_USAGE_ERROR };
+  }
+
+  const loaded = await loadProgramRegistry();
+  if (!loaded.ok) {
+    ctx.stderr(`osn ${commandName}: ${loaded.message}\n`);
+    return {
+      ok: false,
+      exitCode: loaded.kind === "invalid" ? EXIT_VALIDATION_FAILURE : EXIT_USAGE_ERROR,
+    };
+  }
+
+  const id = value ?? DEFAULT_PROGRAM_ID;
+  const program = findProgram(loaded.registry, id);
+  if (program === undefined) {
+    ctx.stderr(
+      `osn ${commandName}: unknown programme "${id}". Registered programmes: ${listProgramIds(loaded.registry)}.\n`,
+    );
+    return { ok: false, exitCode: EXIT_USAGE_ERROR };
+  }
+
+  return { ok: true, program, args: rest, explicit: value };
+}

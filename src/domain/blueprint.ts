@@ -1,5 +1,5 @@
 /**
- * Typed loader/lookup helpers over `data/assessment-bank.json` (the six §13
+ * Typed loader/lookup helpers over `data/osn/assessment-bank.json` (the six §13
  * Assessment Bank kinds), plus `buildBlueprint()`: the §18 evaluation
  * blueprint generator that turns a `{ kind, week?, topicFamilies? }` request
  * into a structured evaluation blueprint honouring the §2.2 OSN-K/OSN-P
@@ -14,7 +14,7 @@
  * **`buildBlueprint()` never restates the §2.2 OSN-K/OSN-P item counts or
  * durations as new literals.** It reads them live from
  * `getStage("osn-k")`/`getStage("osn-p")` (`src/domain/structure.ts`,
- * backed by `data/competition-stages.json`) every time it is called, so a
+ * backed by `data/osn/competition-stages.json`) every time it is called, so a
  * future change to the stage data can never silently desync from this
  * module -- see `tests/unit/blueprint.test.ts` for the test that pins this.
  *
@@ -31,7 +31,7 @@
 // filesystem read, no async loader, and Bun/tsc both resolve it at build
 // time. The value is `unknown` as far as validity is concerned; it is
 // still parsed through the schema below before anything trusts its shape.
-import rawAssessmentBank from "../../data/assessment-bank.json";
+import rawAssessmentBank from "../../data/osn/assessment-bank.json";
 import {
   type AssessmentBankFile,
   assessmentBankFileSchema,
@@ -47,10 +47,10 @@ import { gateAfter, getWeek, listWeeks } from "./curriculum";
 import { getStage } from "./structure";
 import { isTopicFamilyId, listTopicFamilies } from "./topic-families";
 
-const ASSESSMENT_BANK_SOURCE_NAME = "data/assessment-bank.json";
+const ASSESSMENT_BANK_SOURCE_NAME = "data/osn/assessment-bank.json";
 
 /**
- * The validated contents of `data/assessment-bank.json`, parsed once at
+ * The validated contents of `data/osn/assessment-bank.json`, parsed once at
  * module load. Throws {@link CorpusValidationError} if the file does not
  * match {@link assessmentBankFileSchema}.
  */
@@ -376,7 +376,7 @@ function buildWeeklyBlueprint(
   const topicCoverage = topicFamiliesOverride ?? week.topicFamilies;
 
   const notes: string[] = [
-    `topicCoverage is drawn from data/weeks.json's topicFamilies for week ${week.week} (§4).`,
+    `topicCoverage is drawn from data/osn/weeks.json's topicFamilies for week ${week.week} (§4).`,
   ];
 
   let itemCount: ItemCount;
@@ -415,18 +415,18 @@ function buildCheckpointBlueprint(
   const gate = gateAfter(week.week);
   if (gate === undefined) {
     // Every checkpoint week (weekSchema's `checkpoint` field, backed by
-    // data/weeks.json) coincides with a §4.1 gate week (GATE_WEEKS) in the
+    // data/osn/weeks.json) coincides with a §4.1 gate week (GATE_WEEKS) in the
     // real corpus -- this is a corpus-consistency invariant, not a request
     // error, so it is asserted rather than surfaced as a
     // BlueprintRequestError.
     throw new Error(
-      `buildBlueprint: checkpoint week ${week.week} has no matching §4.1 gate -- data/weeks.json and data/gates.json have desynced.`,
+      `buildBlueprint: checkpoint week ${week.week} has no matching §4.1 gate -- data/osn/weeks.json and data/osn/gates.json have desynced.`,
     );
   }
 
   const notes: string[] = [
     `Checkpoint blueprints are only valid at the seven §4.1 gate weeks (${GATE_WEEKS.join(", ")}); week ${week.week} is one of them.`,
-    `topicCoverage is the cumulative set of topic families exercised from week 1 through week ${week.week} (data/weeks.json, §4).`,
+    `topicCoverage is the cumulative set of topic families exercised from week 1 through week ${week.week} (data/osn/weeks.json, §4).`,
   ];
   if (topicFamiliesOverride !== undefined) {
     notes.unshift(overrideNote(`the cumulative week 1-${week.week} topic-family set`));
@@ -479,10 +479,10 @@ function buildOsnPBlueprint(
   if (bankKind.scoringModel !== "partial") {
     // Defense in depth: `osn-p-style` must always score `"partial"` per
     // §2.2's "Partial scoring" -- if a future edit to
-    // data/assessment-bank.json ever drifted from that, fail loudly here
+    // data/osn/assessment-bank.json ever drifted from that, fail loudly here
     // rather than silently returning a wrong scoring model.
     throw new Error(
-      `buildBlueprint: osn-p-style must use scoringModel "partial" per §2.2's "Partial scoring"; data/assessment-bank.json now has "${bankKind.scoringModel}".`,
+      `buildBlueprint: osn-p-style must use scoringModel "partial" per §2.2's "Partial scoring"; data/osn/assessment-bank.json now has "${bankKind.scoringModel}".`,
     );
   }
 
@@ -548,7 +548,7 @@ function buildNationalMixedBlueprint(
  *    areas ({@link DIAGNOSTIC_AREAS}); no `week` required; `itemCount` is
  *    `null` (no count is defined in the source).
  *  - `weekly`: requires `week`; `topicCoverage` and `itemCount` are drawn
- *    from that week's `topicFamilies`/`problemLoad` (`data/weeks.json`,
+ *    from that week's `topicFamilies`/`problemLoad` (`data/osn/weeks.json`,
  *    §4). Where `problemLoad` is `null` (weeks 8, 12, 16, 20, 24, 25-28),
  *    `itemCount` is `null` and `notes` says so explicitly.
  *  - `checkpoint`: requires `week`, and that week must carry a checkpoint

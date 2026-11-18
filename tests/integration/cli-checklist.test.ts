@@ -177,7 +177,7 @@ describe("osn --help (real subprocess): lists checklist", () => {
 
 describe("osn validate: still passes with the three new data files registered (real subprocess)", () => {
   test("exits 0 against the real corpus, including readiness-checklist/operational-rules/syllabus-check-log", async () => {
-    const result = await runCliSubprocess(["validate", "--json"]);
+    const result = await runCliSubprocess(["validate", "--program", "osn", "--json"]);
     expect(result.exitCode).toBe(0);
 
     const parsed = JSON.parse(result.stdout) as {

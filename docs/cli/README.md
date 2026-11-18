@@ -25,6 +25,7 @@ These are recognised regardless of which subcommand (if any) is present:
 | `-h`, `--help` | With no subcommand: print global usage (this command list) and exit `0`. After a subcommand (`osn <command> --help`): print that command's own help and exit `0`, without running the command. |
 | `-V`, `--version` | Print the version from `package.json` (never hard-coded) and exit `0`. Takes precedence over everything else -- even `osn --version bogus-command` prints the version rather than failing on the unknown command. |
 | `--json` | Emit machine-readable JSON output instead of human-readable text, for commands that support it (`validate` does). May appear before or after the subcommand name. |
+| `--program <id>` | Per-command (`validate`, `plan`, `render`, `report`, `checklist`): the registered programme (`data/programs.json`) whose corpus to use; default `osn`. An unknown id is a usage error (exit `2`) naming the registered ids. Write it after the subcommand name. `osn validate` without it validates every registered programme. `privacy-check` takes no `--program`: it always scans all of `data/`. |
 
 ## Exit codes
 
@@ -67,7 +68,7 @@ needs to change.
 
 ## `osn validate`
 
-Validates the **entire** curriculum corpus (every `data/*.json` file) in
+Validates `data/programs.json` (the programme registry) and the **entire** corpus of one programme (every `data/<program>/*.json` file) or of every registered programme in
 one pass and reports **every** problem found, not just the first.
 
 ```sh
@@ -84,7 +85,7 @@ osn validate [options]
    (not just the first).
 
    The registry also runs in reverse: a `.json` file present under
-   `data/` that is **not** listed in the registry is itself reported as a
+   `data/<program>/` that is **not** listed in the registry is itself reported as a
    finding ("this data file is not covered by any schema...") rather than
    silently ignored -- this is what keeps a newly-added, unwired data file
    loud instead of invisible.
@@ -99,24 +100,27 @@ osn validate [options]
    items; 8 §14.2 operational rules; 10 §14.2 mentor quick-pointer stages;
    a non-empty §14.2 rule 8 syllabus-check log.
 
-3. **Referential integrity**, spanning two files where the fact cannot be
+3. **Registry agreement** (ADR-0006), per programme: every corpus file carrying `syllabusVersion`/`syllabusDate` must equal the values registered for the programme in `data/programs.json`, and the registered `sourceDocument` must exist. `data/programs.json` itself is validated by `src/schema/program.ts` (kebab-case unique ids, `corpusDir` = `data/<id>`, ISO date, repository-relative source path).
+
+4. **Referential integrity**, spanning two files where the fact cannot be
    expressed by either file's own schema:
    - every week's `topicFamilies` id resolves to a real topic family
-     (`data/topic-families.json`);
+     (`data/osn/topic-families.json`);
    - the set of weeks carrying a non-null `checkpoint` matches the gate
-     weeks in `data/gates.json` exactly, and checkpoint numbers are 1..N
+     weeks in `data/osn/gates.json` exactly, and checkpoint numbers are 1..N
      in ascending week order;
    - every assessment-bank kind's non-null `servesStage` resolves to a
-     real competition stage (`data/competition-stages.json`);
+     real competition stage (`data/osn/competition-stages.json`);
    - every `Rnn`-shaped citation anywhere in the corpus resolves to a real
-     reference in `data/references.json`.
+     reference in `data/osn/references.json`.
 
 ### Options
 
 | Flag | Meaning |
 | --- | --- |
-| `--json` | Emit `{ ok, findings, summary }` instead of grouped text. |
-| `--data-dir <path>` | Validate a different corpus directory instead of the repository's real `data/`. Primarily for testing against a deliberately corrupted fixture corpus (see `tests/integration/cli-validate-fixtures.test.ts`) -- not needed for normal use. |
+| `--program <id>` | Validate only this registered programme. Without it (and without `--data-dir`) every programme in `data/programs.json` is validated. An unknown id is a usage error (exit `2`). |
+| `--json` | Emit JSON instead of grouped text: `{ ok, program, findings, summary }` for one programme, `{ ok, programs: [{ program, ok, findings, summary }, ...] }` when all programmes are validated. |
+| `--data-dir <path>` | Validate a different corpus directory for one programme (`--program`, default `osn`) instead of its registered `data/<program>/`. Primarily for testing against a deliberately corrupted fixture corpus (see `tests/integration/cli-validate-fixtures.test.ts`) -- not needed for normal use. |
 | `-h`, `--help` | Show `osn validate`'s own help. |
 
 ### Exit codes
@@ -125,20 +129,21 @@ osn validate [options]
 | --- | --- |
 | `0` | The corpus has zero findings. |
 | `1` | The corpus has one or more findings. |
-| `2` | Usage error: `--data-dir` given with no path, or the given directory cannot be read. |
+| `2` | Usage error: unknown `--program`, `--program`/`--data-dir` given with no value, or the given directory cannot be read. |
 
 ### Example: clean corpus
 
 ```text
 $ osn validate
-osn validate: corpus at /path/to/repo/data
+osn validate: programme "osn", corpus at /path/to/repo/data/osn
 OK -- 22 data file(s) validated, 0 problem(s) found.
 ```
 
 ```sh
-$ osn validate --json
+$ osn validate --program osn --json
 {
   "ok": true,
+  "program": "osn",
   "findings": [],
   "summary": {
     "filesValidated": 22,
@@ -155,7 +160,7 @@ $ osn validate --json
 
 ```text
 $ osn validate
-osn validate: corpus at /path/to/repo/data
+osn validate: programme "osn", corpus at /path/to/repo/data/osn
 FAILED -- 2 problem(s) found (2 error(s), 0 warning(s)):
 
 curriculum-categories.json:
@@ -175,7 +180,7 @@ problem without re-reading the whole corpus.
 `osn validate`'s actual checking logic (`auditCorpus` in
 `src/domain/corpus-audit.ts`) is a pure function of an injected
 `CorpusSource` (a `file name -> parsed JSON` map) -- it never statically
-imports `data/*.json` itself, unlike every other module under
+imports `data/<program>/*.json` itself, unlike every other module under
 `src/domain/`. The one piece of filesystem I/O (reading a directory of
 `.json` files into that shape) lives in `src/cli/corpus-loader.ts`
 instead. This is why `--data-dir` above can point at an arbitrary
@@ -209,6 +214,7 @@ renderers in `src/cli/format-plan.ts` (`formatPlanMarkdown`,
 
 | Flag | Meaning |
 | --- | --- |
+| `--program <id>` | The registered programme whose corpus to use. Default `osn`; an unknown id is exit `2`. |
 | `--start <date>` | The cohort's start date, ISO `YYYY-MM-DD`. **Required.** |
 | `--exclude <d1,d2,...>` | A comma-separated list of ISO `YYYY-MM-DD` dates to exclude (school holidays, exam days, ...). Optional; defaults to none. Order and duplicates don't matter -- the output normalises this list (deduplicated, ascending). |
 | `--target-stage <id>` | Report against a target competition stage's intensive-preparation week: one of `osn-k`, `osn-p`, `osn-nasional`, `toki-ioi-extension` (`src/domain/structure.ts`'s `STAGE_IDS`). Optional. See "Target-stage informational entry and schedule-slip warning" below. |
@@ -383,6 +389,7 @@ from level 4 onward. Takes no subcommand-specific flags.
 
 | Flag | Meaning |
 | --- | --- |
+| `--program <id>` | The registered programme whose corpus to use. Default `osn`; an unknown id is exit `2`. |
 | `--out <path>` | Write the rendered Markdown to this path instead of printing it to stdout. Resolved against the process's current working directory. |
 | `--force` | Required to overwrite a file that already exists at `--out`. Without it, an existing file is left byte-for-byte untouched (the write itself never opens the file for truncation) and the command exits `2` -- a mentor should never silently lose an edited worksheet to a repeated `osn render ... --out` invocation. |
 
@@ -439,6 +446,7 @@ domain functions.
 
 | Flag | Meaning |
 | --- | --- |
+| `--program <id>` | The registered programme whose corpus to use. Default `osn`; an unknown id is exit `2`. |
 | `--records <path>` | A `.jsonl` (one JSON record per line, blank lines skipped) or `.json` (a JSON array of records) file. **Required.** See "Input format detection" below. |
 | `--by <topic\|week\|none>` | Group the KPI metrics by topic family or by §4 week number, in addition to the always-present overall (ungrouped) section. Default `none`. See "Grouping: a documented current limitation" below. |
 | `--format <md\|json>` | Output format. Default `md`. |
@@ -512,7 +520,7 @@ topic or by §4 week number, but only when given a `resolveTopic`/
 `recordedAt` timestamp, but no topic-family id and no week number of its
 own (see that module's docblock for the full reasoning). **This repository
 ships no `problemId` -> topic-family registry and no timestamp -> §4-week
-registry** -- there is no `data/*.json` file mapping specific problem ids
+registry** -- there is no `data/osn/*.json` file mapping specific problem ids
 to topic families, and mapping a timestamp to a week number needs a
 cohort's own start date and excluded-days list (`src/domain/cohort-plan.ts`),
 which `osn report` has no flag to supply.
@@ -561,7 +569,7 @@ Regardless of `--by`, every report contains:
 ### Example
 
 ```text
-$ osn report --records data/samples/learning-records.sample.jsonl
+$ osn report --records data/osn/samples/learning-records.sample.jsonl
 # osn report: mentor KPI dashboard
 
 Generated from 58 learning record(s), grouped by "none".
@@ -588,8 +596,8 @@ own "never silently drop a record" contract in `src/domain/kpi.ts`.)
 
 ### Sample data
 
-`data/samples/learning-records.sample.jsonl` (see
-`data/samples/README.md`) is a committed, clearly-synthetic sample dataset
+`data/osn/samples/learning-records.sample.jsonl` (see
+`data/osn/samples/README.md`) is a committed, clearly-synthetic sample dataset
 -- fake pseudonymous learners (`lr_demo0001`-`lr_demo0010`), fake problem
 ids (`demo-problem-001`-`demo-problem-015`), no real learner data of any
 kind (ADR-0004). It exists so this command (and its tests) have real input
@@ -600,10 +608,10 @@ to run against without this repository ever holding real learner data;
 
 A CI-checkable governance control (issue #23, GR-04): recursively scans
 every `.json`/`.jsonl` file under `data/` — including nested directories
-such as `data/samples/` — for object keys shaped like a direct or
+such as `data/osn/samples/` — for object keys shaped like a direct or
 indirect personal identifier, at any nesting depth. This promotes the ad
 hoc scan `tests/unit/learning-record.test.ts` already ran (top-level
-`data/*.json` only) to a first-class subcommand, per ADR-0004's "Decision
+`data/osn/*.json` only) to a first-class subcommand, per ADR-0004's "Decision
 detail: enforcement mechanism".
 
 ```sh
@@ -632,7 +640,7 @@ docblock).
 because this repository's pre-existing curriculum corpus (topic
 families, competition stages, curriculum categories, ...) legitimately
 carries a `name` field for a *curriculum entity's* printed name (e.g.
-`{ "id": "osn-k", "name": "OSN-K" }` in `data/competition-stages.json`),
+`{ "id": "osn-k", "name": "OSN-K" }` in `data/osn/competition-stages.json`),
 never a person's name. Every other denylisted term is zero-tolerance: a
 single occurrence anywhere under `data/` is reported. See
 `docs/governance/privacy.md`'s "Must-not-collect list" section for the
@@ -707,10 +715,10 @@ corpus's own `syllabusVersion`/`syllabusDate`.
 osn checklist [options]
 ```
 
-The actual data lives in `data/readiness-checklist.json` (the eight §14.1
+The actual data lives in `data/osn/readiness-checklist.json` (the eight §14.1
 items, each with a `verificationMethod` and `evidenceRequired`, both
 DERIVED -- see `src/schema/readiness-checklist.ts`'s docblock) and
-`data/operational-rules.json` (the eight §14.2 rules and the mentor
+`data/osn/operational-rules.json` (the eight §14.2 rules and the mentor
 quick-pointer callout, verbatim). The typed loaders
 (`listReadinessItems`, `getReadinessItem`, `listOperationalRules`,
 `quickPointer`, `listSyllabusChecks`, `latestSyllabusCheck`,
@@ -731,6 +739,7 @@ functions.
 | Flag | Meaning |
 | --- | --- |
 | `--format <md\|json>` | Output format. Default `md`. `--json` (the global flag) is equivalent to `--format json`; an explicit `--format` wins if both are given. |
+| `--program <id>` | The registered programme whose corpus to use. Default `osn`; an unknown id is exit `2`. |
 | `--out <path>` | Write the rendered checklist to this path instead of stdout. |
 | `--force` | Required to overwrite a file that already exists at `--out`. Without it, an existing file is left byte-for-byte untouched and the command exits `2` -- same safety property as `osn render`'s/`osn report`'s `--out`/`--force` (`src/cli/output-writer.ts`). |
 | `-h`, `--help` | Show `osn checklist`'s own help. |
@@ -740,10 +749,10 @@ functions.
 Regardless of `--format`, `osn checklist` reports:
 
 - **The corpus version** -- `syllabusVersion`/`syllabusDate` from
-  `data/readiness-checklist.json` (`operationsCorpusVersion()` in
+  `data/osn/readiness-checklist.json` (`operationsCorpusVersion()` in
   `src/domain/operations.ts`).
 - **The latest syllabus-check status** (§14.2 rule 8) -- the most recent
-  entry in `data/syllabus-check-log.json` by `checkedOn`, its `outcome`,
+  entry in `data/osn/syllabus-check-log.json` by `checkedOn`, its `outcome`,
   the official sources it checked, and the number of whole days between
   that date and `asOf` (`daysSinceLastSyllabusCheck`, UTC-only date
   arithmetic, no `Date` mutation -- see that function's docblock).

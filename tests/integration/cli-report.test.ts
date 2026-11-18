@@ -21,7 +21,7 @@ import { listKpiDefinitions } from "../../src/domain/kpi";
 
 const REPO_ROOT = join(import.meta.dir, "..", "..");
 const CLI_ENTRYPOINT = join(REPO_ROOT, "src", "cli", "index.ts");
-const SAMPLE_PATH = join(REPO_ROOT, "data", "samples", "learning-records.sample.jsonl");
+const SAMPLE_PATH = join(REPO_ROOT, "data", "osn", "samples", "learning-records.sample.jsonl");
 
 interface CliResult {
   readonly stdout: string;

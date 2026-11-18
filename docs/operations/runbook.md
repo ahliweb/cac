@@ -25,9 +25,9 @@ Run once, before Week 1 of a new cohort, in this order:
    ```
 
    Both must exit `0` before anything else proceeds -- `osn validate`
-   confirms the corpus itself (every `data/*.json` file, including
-   `data/readiness-checklist.json`, `data/operational-rules.json`, and
-   `data/syllabus-check-log.json`) is schema-valid and structurally sound
+   confirms the corpus itself (every `data/<program>/*.json` file, including
+   `data/osn/readiness-checklist.json`, `data/osn/operational-rules.json`, and
+   `data/osn/syllabus-check-log.json`) is schema-valid and structurally sound
    (issue #19's whole-corpus audit); `osn privacy-check` confirms no
    direct-identifier-shaped key has crept into `data/` (ADR-0004, GR-04).
 

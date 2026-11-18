@@ -1,6 +1,6 @@
 /**
  * Tests for the problem-taxonomy schema (`src/schema/problem-taxonomy.ts`)
- * and its controlled vocabulary file (`data/problem-taxonomy-vocab.json`).
+ * and its controlled vocabulary file (`data/osn/problem-taxonomy-vocab.json`).
  *
  * Malformed-input fixtures are constructed inline against the schema; the
  * real data file under `data/` is never mutated by these tests. Every
@@ -34,7 +34,7 @@ const VALID_TAGS = {
   expectedSolution: ["graph"],
 } as const;
 
-describe("OFFICIAL_TOPIC_IDS: no drift against data/topic-families.json", () => {
+describe("OFFICIAL_TOPIC_IDS: no drift against data/osn/topic-families.json", () => {
   test("matches the real topic-family ids exactly, in order", () => {
     const realIds = listTopicFamilies().map((family) => family.id);
     const officialTopicIds: string[] = [...OFFICIAL_TOPIC_IDS];
@@ -178,8 +178,8 @@ describe("problemTagsSchema: expected-solution dimension", () => {
   });
 });
 
-describe("data/problem-taxonomy-vocab.json", () => {
-  const dataPath = join(import.meta.dir, "..", "..", "data", "problem-taxonomy-vocab.json");
+describe("data/osn/problem-taxonomy-vocab.json", () => {
+  const dataPath = join(import.meta.dir, "..", "..", "data", "osn", "problem-taxonomy-vocab.json");
   const raw: unknown = JSON.parse(readFileSync(dataPath, "utf-8"));
 
   test("the real data file parses through problemTaxonomyVocabFileSchema without error", () => {

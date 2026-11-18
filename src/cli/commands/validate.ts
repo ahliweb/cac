@@ -1,86 +1,174 @@
 /**
- * `osn validate` -- validates the entire curriculum corpus (every
- * `data/*.json` file) in one pass: schema conformance, structural
- * invariants, and referential integrity. See
- * `src/domain/corpus-audit.ts` for the actual checks; this module is only
- * the thin I/O + formatting + exit-code shell around it, per the
- * "Layering rules" in `docs/architecture/README.md`.
+ * `osn validate` -- validates the curriculum corpus of one programme (every
+ * `data/<program>/*.json` file) or of every registered programme in one
+ * pass: schema conformance, structural invariants, referential integrity,
+ * and agreement with the programme registry `data/programs.json`
+ * (ADR-0006). See `src/domain/corpus-audit.ts` and
+ * `src/domain/programs.ts` for the actual checks; this module is only the
+ * thin I/O + formatting + exit-code shell around them, per the "Layering
+ * rules" in `docs/architecture/README.md`.
  */
 
 import { resolve } from "node:path";
 import { auditCorpus } from "../../domain/corpus-audit";
-import type { Command } from "../command";
+import {
+  DEFAULT_PROGRAM_ID,
+  findProgram,
+  listProgramIds,
+  REGISTRY_FILE_NAME,
+  registryVersionFindings,
+  withExtraFindings,
+} from "../../domain/programs";
+import type { Program } from "../../schema/program";
+import type { Command, CommandContext } from "../command";
 import { EXIT_SUCCESS, EXIT_USAGE_ERROR, EXIT_VALIDATION_FAILURE } from "../command";
 import { loadCorpusFromDirectory } from "../corpus-loader";
 import { formatAuditJson, formatAuditText } from "../format-audit";
+import {
+  extractProgramFlag,
+  loadProgramRegistry,
+  REPO_ROOT,
+  repoPathExists,
+} from "../program-loader";
 
-/**
- * The default corpus directory: the real, committed `data/` at the
- * repository root, resolved relative to this source file's own location
- * (`src/cli/commands/validate.ts` -> repo root is three directories up) so
- * it is correct regardless of the process's current working directory.
- */
-export const DEFAULT_DATA_DIR = resolve(import.meta.dir, "../../../data");
+const HELP_TEXT = `osn validate -- validate the curriculum corpus of one or every programme
 
-const HELP_TEXT = `osn validate -- validate the curriculum corpus
-
-Validates every data/*.json file against its schema, checks the fixed
+Validates data/programs.json (the programme registry) and, per programme,
+every data/<program>/*.json file against its schema, checks the fixed
 structural invariants (28 weeks, 7 gates, 10 topic families, 41
 references, 4 stages, 4 categories, 4 status codes, 7 KPI metrics, 7
 playbooks, 6 assessment bank kinds, assessment weights summing to 100,
 both session templates summing to 120 minutes, 5 hint levels), and checks
 referential integrity across the corpus (week -> topic family, week
 checkpoint numbering <-> gate weeks, assessment-bank kind -> competition
-stage, every Rnn citation -> the reference register). Reports every
-problem found in one pass, grouped by file.
+stage, every Rnn citation -> the reference register). It also checks that
+the registry's syllabusVersion/syllabusDate equal the ones carried by the
+programme's corpus files and that the registered source document exists.
+Reports every problem found in one pass, grouped by file.
 
 Usage: osn validate [options]
 
 Options:
-  --json              Emit a machine-readable { ok, findings, summary } result instead of text.
-  --data-dir <path>   Validate a different corpus directory instead of the repository's data/
-                       (primarily for testing against a fixture corpus).
+  --program <id>      Validate only this registered programme. Without it (and
+                       without --data-dir), every registered programme is validated.
+  --json              Emit machine-readable JSON instead of text:
+                       { ok, program, findings, summary } for one programme,
+                       { ok, programs: [...] } for all of them.
+  --data-dir <path>   Validate a different corpus directory for one programme
+                       (--program, default osn) instead of its registered
+                       data/<program>/ (primarily for testing against a fixture corpus).
   -h, --help          Show this help.
 
 Exit codes:
-  0   the corpus is clean (no findings).
-  1   the corpus has one or more findings (schema, structural, or referential).
-  2   usage error, e.g. --data-dir given with no path, or the given directory cannot be read.`;
+  0   every validated corpus is clean (no findings).
+  1   a corpus or the registry has one or more findings (schema, structural, referential, version).
+  2   usage error, e.g. unknown --program, --program/--data-dir given with no value, or a directory that cannot be read.`;
+
+/** One programme's audit: its corpus plus the registry cross-checks. */
+async function auditProgram(program: Program, corpusDir: string) {
+  const source = await loadCorpusFromDirectory(corpusDir);
+  const extra = registryVersionFindings(program, source);
+  if (!(await repoPathExists(program.sourceDocument))) {
+    extra.push({
+      file: REGISTRY_FILE_NAME,
+      path: `programs[${program.id}].sourceDocument`,
+      severity: "error",
+      message: `source document "${program.sourceDocument}" does not exist`,
+    });
+  }
+  return withExtraFindings(auditCorpus(source), extra);
+}
+
+type ProgramAudit = Awaited<ReturnType<typeof auditProgram>>;
+
+function emit(ctx: CommandContext, text: string): void {
+  ctx.stdout(`${text}\n`);
+}
 
 export const validateCommand: Command = {
   name: "validate",
-  summary: "Validate the curriculum corpus (data/*.json) in one pass.",
+  summary: "Validate the corpus of one (--program) or every registered programme.",
   help: () => HELP_TEXT,
 
   async run(args, ctx) {
-    let dataDir = DEFAULT_DATA_DIR;
+    const { rest, value: programValue } = extractProgramFlag(args);
+    if (programValue === null) {
+      ctx.stderr("osn validate: --program requires a programme id argument.\n");
+      return EXIT_USAGE_ERROR;
+    }
 
-    const dataDirFlagIndex = args.indexOf("--data-dir");
+    let dataDirOverride: string | undefined;
+    const dataDirFlagIndex = rest.indexOf("--data-dir");
     if (dataDirFlagIndex !== -1) {
-      const value = args[dataDirFlagIndex + 1];
+      const value = rest[dataDirFlagIndex + 1];
       if (value === undefined) {
         ctx.stderr("osn validate: --data-dir requires a directory path argument.\n");
         return EXIT_USAGE_ERROR;
       }
-      dataDir = resolve(ctx.cwd, value);
+      dataDirOverride = resolve(ctx.cwd, value);
     }
 
-    let source: Awaited<ReturnType<typeof loadCorpusFromDirectory>>;
-    try {
-      source = await loadCorpusFromDirectory(dataDir);
-    } catch (cause) {
-      ctx.stderr(`osn validate: ${(cause as Error).message}\n`);
-      return EXIT_USAGE_ERROR;
+    const loaded = await loadProgramRegistry();
+    if (!loaded.ok) {
+      ctx.stderr(`osn validate: ${loaded.message}\n`);
+      return loaded.kind === "invalid" ? EXIT_VALIDATION_FAILURE : EXIT_USAGE_ERROR;
+    }
+    const { registry } = loaded;
+
+    // One programme: an explicit --program, or --data-dir (which implies the default programme).
+    if (programValue !== undefined || dataDirOverride !== undefined) {
+      const id = programValue ?? DEFAULT_PROGRAM_ID;
+      const program = findProgram(registry, id);
+      if (program === undefined) {
+        ctx.stderr(
+          `osn validate: unknown programme "${id}". Registered programmes: ${listProgramIds(registry)}.\n`,
+        );
+        return EXIT_USAGE_ERROR;
+      }
+      const corpusDir = dataDirOverride ?? resolve(REPO_ROOT, program.corpusDir);
+      let result: ProgramAudit;
+      try {
+        result = await auditProgram(program, corpusDir);
+      } catch (cause) {
+        ctx.stderr(`osn validate: ${(cause as Error).message}\n`);
+        return EXIT_USAGE_ERROR;
+      }
+      emit(
+        ctx,
+        ctx.json
+          ? formatAuditJson({ program: program.id, ...result })
+          : formatAuditText(result, corpusDir, program.id),
+      );
+      return result.ok ? EXIT_SUCCESS : EXIT_VALIDATION_FAILURE;
     }
 
-    const result = auditCorpus(source);
-
-    if (ctx.json) {
-      ctx.stdout(`${formatAuditJson(result)}\n`);
-    } else {
-      ctx.stdout(`${formatAuditText(result, dataDir)}\n`);
+    // Every registered programme.
+    const results: Array<{ program: string; corpusDir: string; audit: ProgramAudit }> = [];
+    for (const program of registry.programs) {
+      const corpusDir = resolve(REPO_ROOT, program.corpusDir);
+      try {
+        results.push({
+          program: program.id,
+          corpusDir,
+          audit: await auditProgram(program, corpusDir),
+        });
+      } catch (cause) {
+        ctx.stderr(`osn validate: programme "${program.id}": ${(cause as Error).message}\n`);
+        return EXIT_USAGE_ERROR;
+      }
     }
-
-    return result.ok ? EXIT_SUCCESS : EXIT_VALIDATION_FAILURE;
+    const ok = results.every((entry) => entry.audit.ok);
+    emit(
+      ctx,
+      ctx.json
+        ? formatAuditJson({
+            ok,
+            programs: results.map((entry) => ({ program: entry.program, ...entry.audit })),
+          })
+        : results
+            .map((entry) => formatAuditText(entry.audit, entry.corpusDir, entry.program))
+            .join("\n\n"),
+    );
+    return ok ? EXIT_SUCCESS : EXIT_VALIDATION_FAILURE;
   },
 };

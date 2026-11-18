@@ -1,9 +1,9 @@
 /**
  * Tests for the assessment-bank schema (`src/schema/assessment-bank.ts`)
  * and the typed loader/lookup/blueprint-building helpers over the real
- * corpus (`src/domain/blueprint.ts`, `data/assessment-bank.json`), plus its
- * cross-checks against `data/competition-stages.json` (via
- * `src/domain/structure.ts`) and `data/weeks.json`/`data/gates.json` (via
+ * corpus (`src/domain/blueprint.ts`, `data/osn/assessment-bank.json`), plus its
+ * cross-checks against `data/osn/competition-stages.json` (via
+ * `src/domain/structure.ts`) and `data/osn/weeks.json`/`data/osn/gates.json` (via
  * `src/domain/curriculum.ts`).
  *
  * Malformed-input fixtures are constructed inline against the schema; the
@@ -41,7 +41,7 @@ const EXPECTED_BANK_KIND_IDS = [
 const CHECKPOINT_WEEKS = [4, 8, 12, 16, 20, 24, 28] as const;
 const NON_CHECKPOINT_WEEKS = [5, 13, 27] as const;
 
-describe("data/assessment-bank.json (via src/domain/blueprint.ts)", () => {
+describe("data/osn/assessment-bank.json (via src/domain/blueprint.ts)", () => {
   test("the real data file parses through the schema without error", () => {
     expect(() => listBankKinds()).not.toThrow();
   });

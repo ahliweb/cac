@@ -10,7 +10,7 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { loadCorpusFromDirectory } from "../../src/cli/corpus-loader";
 
-const DATA_DIR = join(import.meta.dir, "..", "..", "data");
+const DATA_DIR = join(import.meta.dir, "..", "..", "data", "osn");
 
 describe("loadCorpusFromDirectory", () => {
   test("reads every .json file under the real data/ directory as ok:true entries", async () => {

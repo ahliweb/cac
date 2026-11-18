@@ -79,7 +79,7 @@ consent process), it is not extended to this programme's learners.
 UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi (`R19`) is the
 governing law for how a downstream platform processes a learner's
 personal data (§10, `docs/silabus/10-regulasi-indonesia.md`;
-`data/regulations.json`'s `uu-27-2022` entry). This document does not
+`data/osn/regulations.json`'s `uu-27-2022` entry). This document does not
 attempt to state which specific lawful basis under that law a given
 platform relies on — that determination depends on the platform's actual
 processing purposes and must be made by that platform (with its own legal
@@ -186,8 +186,8 @@ from the code that enforces it:
 - `ipaddress`
 
 **One documented tolerance, and only one:** the key `name` is permitted
-in this repository's own `data/*.json` curriculum files (e.g. `{ "id":
-"osn-k", "name": "OSN-K" }` in `data/competition-stages.json`) because it
+in this repository's own `data/<program>/*.json` curriculum files (e.g. `{ "id":
+"osn-k", "name": "OSN-K" }` in `data/osn/competition-stages.json`) because it
 labels a *curriculum entity* (a competition stage, a topic family), never
 a person. This tolerance is scoped precisely to that pre-existing
 curriculum corpus and is applied identically by
@@ -353,7 +353,7 @@ document can implement on its behalf):
 ## Mapping table
 
 Every requirement above, mapped to the regulation that motivates it
-(citation ids from `data/regulations.json`, matching
+(citation ids from `data/osn/regulations.json`, matching
 `docs/silabus/10-regulasi-indonesia.md`'s §10 table):
 
 | Requirement | Regulation | Citation |
@@ -395,12 +395,12 @@ The "no direct identifier in `data/`" rule above is not just stated here
 — it is enforced mechanically, twice:
 
 1. `tests/unit/learning-record.test.ts` scans every top-level
-   `data/*.json` file (a unit test, run by `bun test`).
+   `data/<program>/*.json` file (a unit test, run by `bun test`).
 2. **`osn privacy-check`** (`src/cli/commands/privacy-check.ts`) promotes
    that scan to a first-class, CLI-invocable, CI-enforced governance
-   control: it walks `data/` **recursively** (reaching `data/samples/`)
+   control: it walks `data/` **recursively** (reaching `data/osn/samples/`)
    and reads **`.jsonl` files too** (reaching
-   `data/samples/learning-records.sample.jsonl`), applying the identical
+   `data/osn/samples/learning-records.sample.jsonl`), applying the identical
    `"name"`-tolerance rule described in "Must-not-collect list" above.
 
 ```sh

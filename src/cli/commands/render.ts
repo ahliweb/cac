@@ -16,6 +16,7 @@ import { renderWeeklyPlan } from "../../render/weekly";
 import type { Command } from "../command";
 import { EXIT_SUCCESS, EXIT_USAGE_ERROR } from "../command";
 import { writeOutputFile } from "../output-writer";
+import { resolveProgramOption } from "../program-loader";
 
 const SUBCOMMANDS = ["weekly", "checkpoint", "sop"] as const;
 type RenderSubcommand = (typeof SUBCOMMANDS)[number];
@@ -48,13 +49,14 @@ Options:
   --force         Overwrite --out if it already exists. Without it, an
                   existing file at --out is left byte-for-byte untouched
                   and the command exits 2.
+  --program <id>  Programme whose corpus to use (a registered id; default osn).
   -h, --help      Show this help.
 
 Exit codes:
   0   success.
   2   usage error: missing/unknown subcommand, a missing required flag
       (--week/--number), --week/--number outside its valid range, or
-      --out already exists without --force.`;
+      --out already exists without --force, or an unknown --program.`;
 
 /** Extracts the value following the first occurrence of `flag` in `args`, or `undefined` if `flag` is absent (or has nothing after it). */
 function readFlagValue(args: readonly string[], flag: string): string | undefined {
@@ -79,7 +81,12 @@ export const renderCommand: Command = {
   summary: "Render mentor-facing Markdown artefacts (weekly plan, checkpoint sheet, SOP card).",
   help: () => HELP_TEXT,
 
-  async run(args, ctx) {
+  async run(rawArgs, ctx) {
+    const resolved = await resolveProgramOption("render", rawArgs, ctx);
+    if (!resolved.ok) {
+      return resolved.exitCode;
+    }
+    const args = resolved.args;
     const subcommand = args[0];
     if (!isRenderSubcommand(subcommand)) {
       const problem =

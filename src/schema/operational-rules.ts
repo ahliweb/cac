@@ -4,7 +4,7 @@
  * syllabus corpus (`docs/silabus/14-checklist-dan-aturan-operasional.md`)
  * -- plus the §14.2 "Pointer cepat untuk mentor" callout (the ten-stage
  * mentor sequencing pointer and its closing extension condition), and the
- * whole-file wrapper for `data/operational-rules.json`.
+ * whole-file wrapper for `data/osn/operational-rules.json`.
  *
  * Both `rule` (the eight numbered rules) and the callout's `stages`/
  * `extensionCondition` are transcribed verbatim (Indonesian, except the
@@ -80,7 +80,7 @@ export const quickPointerSchema = z
 export type QuickPointer = z.infer<typeof quickPointerSchema>;
 
 /**
- * The whole `data/operational-rules.json` file: the eight §14.2 numbered
+ * The whole `data/osn/operational-rules.json` file: the eight §14.2 numbered
  * operational rules, the §14.2 mentor quick-pointer callout, plus the
  * provenance fields (`syllabusVersion`, `syllabusDate`, `sourceSection`)
  * that let the corpus carry its own versioning, per ADR-0005.
@@ -129,7 +129,7 @@ export const operationalRulesFileSchema = z
     }
   })
   .describe(
-    "The full contents of `data/operational-rules.json`: the eight §14.2 " +
+    "The full contents of `data/osn/operational-rules.json`: the eight §14.2 " +
       "operational rules and the §14.2 mentor quick-pointer callout, with " +
       "their corpus provenance.",
   );

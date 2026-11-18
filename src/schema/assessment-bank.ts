@@ -4,7 +4,7 @@
  * Implementasi AhliKoding.com" of the syllabus corpus
  * (`docs/silabus/13-tata-kelola.md`: "Pisahkan diagnostic, weekly,
  * checkpoint, OSN-K style, OSN-P style, national mixed."), plus the
- * whole-file wrapper for `data/assessment-bank.json`.
+ * whole-file wrapper for `data/osn/assessment-bank.json`.
  *
  * §13's row names the six kinds but gives no per-kind purpose, timing, or
  * scoring-model text of its own -- unlike most `data/*.json` files in this
@@ -23,7 +23,7 @@
  * `osn-k-style` and `osn-p-style` here, and the blueprint builder
  * (`src/domain/blueprint.ts`, issue #18) reads the real numbers from
  * `getStage("osn-k")`/`getStage("osn-p")` (`src/domain/structure.ts`,
- * backed by `data/competition-stages.json`) instead, so the two files can
+ * backed by `data/osn/competition-stages.json`) instead, so the two files can
  * never silently desync.
  *
  * Per the layering rules in `docs/architecture/README.md`, this module must
@@ -124,7 +124,7 @@ export const bankKindSchema = z
 export type BankKind = z.infer<typeof bankKindSchema>;
 
 /**
- * The whole `data/assessment-bank.json` file: the six §13 assessment-bank
+ * The whole `data/osn/assessment-bank.json` file: the six §13 assessment-bank
  * kinds plus the provenance fields (`syllabusVersion`, `syllabusDate`,
  * `sourceSection`) that let the corpus carry its own versioning, per
  * ADR-0005.
@@ -174,7 +174,7 @@ export const assessmentBankFileSchema = z
     }
   })
   .describe(
-    "The full contents of `data/assessment-bank.json`: the six §13 " +
+    "The full contents of `data/osn/assessment-bank.json`: the six §13 " +
       "assessment-bank kinds, with their corpus provenance.",
   );
 

@@ -29,16 +29,16 @@ The workflow is defined in `.github/workflows/ci.yml`. It has a single job,
 9. **Build** — `bun run build` (`bun build ./src/index.ts --outdir dist
    --target bun`).
 10. **Validate curriculum data** — `bun run validate` (`osn validate`).
-   Parses every `data/*.json` file against its schema, checks
+   Parses `data/programs.json` and every registered programme's `data/<program>/*.json` file against its schema, checks
    the fixed structural invariants (28 weeks, 7 gates, 10 topic families,
    41 references, and so on), and checks referential integrity across the
    corpus (week → topic family, week checkpoint numbering ↔ gate weeks,
    assessment-bank kind → competition stage, every `Rnn` citation → the
-   reference register) — see `docs/cli/README.md` for the full command
+   reference register), and that each registry entry's version/date match its corpus — see `docs/cli/README.md` for the full command
    reference. Exits `0` on a clean corpus, `1` if any finding exists.
 11. **Privacy check** — `bun run privacy-check` (`osn privacy-check`,
     GR-04). Recursively scans every `.json`/`.jsonl` file under `data/`
-    (including `data/samples/`) for a direct-identifier-shaped key, and
+    (including `data/osn/samples/`) for a direct-identifier-shaped key, and
     fails the build if any is found (beyond the documented `"name"`
     tolerance — see `docs/cli/README.md`'s "osn privacy-check" section).
     Runs immediately after `osn validate`, since both are corpus-wide

@@ -2,7 +2,7 @@
  * Tests for the assessment schemas (`src/schema/assessment.ts`,
  * `src/schema/problem-status.ts`) and the typed loader/lookup/grading
  * helpers over the real corpus (`src/domain/assessment.ts`,
- * `data/assessment-weights.json`, `data/problem-status.json`).
+ * `data/osn/assessment-weights.json`, `data/osn/problem-status.json`).
  *
  * Malformed-input fixtures are constructed inline against the schemas; the
  * real data files under `data/` are never mutated by these tests.
@@ -48,7 +48,7 @@ const FULL_SCORES: Readonly<Record<string, number>> = {
   "upsolve-learning-process": 50,
 };
 
-describe("data/assessment-weights.json (via src/domain/assessment.ts)", () => {
+describe("data/osn/assessment-weights.json (via src/domain/assessment.ts)", () => {
   test("the real data file parses through the schema without error", () => {
     expect(() => listComponents()).not.toThrow();
   });
@@ -142,7 +142,7 @@ describe("computeWeightedScore", () => {
   });
 });
 
-describe("data/problem-status.json (via src/domain/assessment.ts)", () => {
+describe("data/osn/problem-status.json (via src/domain/assessment.ts)", () => {
   test("the real data file parses through the schema without error", () => {
     expect(() => listStatuses()).not.toThrow();
   });

@@ -2,7 +2,7 @@
  * Zod schema for a problem-completion status code ("Status penyelesaian
  * soal") -- one of the four A/B/C/D statuses defined in §6.2 of the
  * syllabus corpus (`docs/silabus/06-evaluasi-rubrik-kpi.md`), plus the
- * whole-file wrapper for `data/problem-status.json`.
+ * whole-file wrapper for `data/osn/problem-status.json`.
  *
  * Per the layering rules in `docs/architecture/README.md`, this module must
  * never import from `src/domain/`. This module owns the *definition* of the
@@ -47,7 +47,7 @@ export const problemStatusSchema = z
 export type ProblemStatus = z.infer<typeof problemStatusSchema>;
 
 /**
- * The whole `data/problem-status.json` file: the four §6.2 problem-completion
+ * The whole `data/osn/problem-status.json` file: the four §6.2 problem-completion
  * statuses plus the provenance fields (`syllabusVersion`, `syllabusDate`,
  * `sourceSection`) that let the corpus carry its own versioning, per
  * ADR-0005.
@@ -96,7 +96,7 @@ export const problemStatusFileSchema = z
     }
   })
   .describe(
-    "The full contents of `data/problem-status.json`: the four A/B/C/D " +
+    "The full contents of `data/osn/problem-status.json`: the four A/B/C/D " +
       "problem-completion status codes defined by §6.2, with their corpus " +
       "provenance.",
   );

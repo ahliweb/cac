@@ -41,7 +41,7 @@ function requireWeekInRange(week: number): void {
  * either session, whose activity text names an exit ticket. Searches
  * rather than hard-coding "session 1's last segment" so this stays correct
  * even if the exit ticket ever moved to session 2's final segment instead
- * -- in the current corpus (`data/session-template.json`) it is session
+ * -- in the current corpus (`data/osn/session-template.json`) it is session
  * 1's segment 115-120 ("Exit ticket: 3 poin yang dipahami + 1 gap.").
  *
  * Throws {@link RenderRequestError} if neither session's final segment
@@ -60,7 +60,7 @@ function findExitTicketInstruction(): string {
   }
   throw new RenderRequestError(
     "renderWeeklyPlan: no session's final segment (§5.1) names an exit ticket -- " +
-      "data/session-template.json may have changed shape.",
+      "data/osn/session-template.json may have changed shape.",
   );
 }
 
@@ -158,7 +158,7 @@ export function renderWeeklyPlan(week: number): string {
     const gate = gateAfter(weekData.week);
     if (gate === undefined) {
       throw new RenderRequestError(
-        `renderWeeklyPlan: week ${weekData.week} carries checkpoint ${weekData.checkpoint} but has no matching §4.1 gate -- data/weeks.json and data/gates.json have desynced.`,
+        `renderWeeklyPlan: week ${weekData.week} carries checkpoint ${weekData.checkpoint} but has no matching §4.1 gate -- data/osn/weeks.json and data/osn/gates.json have desynced.`,
       );
     }
     lines.push("");

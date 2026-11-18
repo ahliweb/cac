@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "osn-informatika-2026",
+      "name": "kurikulum-informatika",
       "dependencies": {
         "zod": "^4.6.7",
       },

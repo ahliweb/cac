@@ -37,9 +37,9 @@ const QUICK_POINTER_STAGES = [
   "Contest Engineering",
 ] as const;
 
-// --- data/readiness-checklist.json (via src/domain/operations.ts) -----------
+// --- data/osn/readiness-checklist.json (via src/domain/operations.ts) -----------
 
-describe("data/readiness-checklist.json (via src/domain/operations.ts)", () => {
+describe("data/osn/readiness-checklist.json (via src/domain/operations.ts)", () => {
   test("the real data file parses through the schema without error", () => {
     expect(() => listReadinessItems()).not.toThrow();
   });
@@ -99,9 +99,9 @@ describe("data/readiness-checklist.json (via src/domain/operations.ts)", () => {
   });
 });
 
-// --- data/operational-rules.json (via src/domain/operations.ts) ------------
+// --- data/osn/operational-rules.json (via src/domain/operations.ts) ------------
 
-describe("data/operational-rules.json (via src/domain/operations.ts)", () => {
+describe("data/osn/operational-rules.json (via src/domain/operations.ts)", () => {
   test("the real data file parses through the schema without error", () => {
     expect(() => listOperationalRules()).not.toThrow();
   });
@@ -134,9 +134,9 @@ describe("data/operational-rules.json (via src/domain/operations.ts)", () => {
   });
 });
 
-// --- data/syllabus-check-log.json (via src/domain/operations.ts) -----------
+// --- data/osn/syllabus-check-log.json (via src/domain/operations.ts) -----------
 
-describe("data/syllabus-check-log.json (via src/domain/operations.ts)", () => {
+describe("data/osn/syllabus-check-log.json (via src/domain/operations.ts)", () => {
   test("the real data file parses through the schema without error", () => {
     expect(() => listSyllabusChecks()).not.toThrow();
   });

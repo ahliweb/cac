@@ -1,6 +1,6 @@
 /**
- * Typed loaders and lookup helpers over `data/curriculum-categories.json`,
- * `data/competition-stages.json` and `data/learning-load.json`: the §3
+ * Typed loaders and lookup helpers over `data/osn/curriculum-categories.json`,
+ * `data/osn/competition-stages.json` and `data/osn/learning-load.json`: the §3
  * CORE/SUPPORT/EXTENSION/DE-PRIORITIZED categories, the §2.2 competition
  * stages, and the §1.3 baseline learning load.
  *
@@ -10,14 +10,14 @@
  * own. Loading happens once, at module load, and the result is memoised.
  */
 
-import rawStages from "../../data/competition-stages.json";
+import rawStages from "../../data/osn/competition-stages.json";
 // `resolveJsonModule` is enabled in tsconfig.json, so a static import is a
 // deterministic, dependency-free way to bring the corpus files in — no
 // filesystem read, no async loader, and Bun/tsc both resolve it at build
 // time. The value is `unknown` as far as validity is concerned; it is
 // still parsed through the schema below before anything trusts its shape.
-import rawCategories from "../../data/curriculum-categories.json";
-import rawLearningLoad from "../../data/learning-load.json";
+import rawCategories from "../../data/osn/curriculum-categories.json";
+import rawLearningLoad from "../../data/osn/learning-load.json";
 import { type CategoriesFile, type Category, categoriesFileSchema } from "../schema/category";
 import { parseDataFile } from "../schema/common";
 import {
@@ -27,12 +27,12 @@ import {
 } from "../schema/learning-load";
 import { type Stage, type StagesFile, stagesFileSchema } from "../schema/stage";
 
-const CATEGORIES_SOURCE_NAME = "data/curriculum-categories.json";
-const STAGES_SOURCE_NAME = "data/competition-stages.json";
-const LEARNING_LOAD_SOURCE_NAME = "data/learning-load.json";
+const CATEGORIES_SOURCE_NAME = "data/osn/curriculum-categories.json";
+const STAGES_SOURCE_NAME = "data/osn/competition-stages.json";
+const LEARNING_LOAD_SOURCE_NAME = "data/osn/learning-load.json";
 
 /**
- * The validated contents of `data/curriculum-categories.json`, parsed once
+ * The validated contents of `data/osn/curriculum-categories.json`, parsed once
  * at module load. Throws {@link CorpusValidationError} if the file does not
  * match {@link categoriesFileSchema}.
  */
@@ -43,14 +43,14 @@ const categoriesFile: CategoriesFile = parseDataFile(
 );
 
 /**
- * The validated contents of `data/competition-stages.json`, parsed once at
+ * The validated contents of `data/osn/competition-stages.json`, parsed once at
  * module load. Throws {@link CorpusValidationError} if the file does not
  * match {@link stagesFileSchema}.
  */
 const stagesFile: StagesFile = parseDataFile(stagesFileSchema, rawStages, STAGES_SOURCE_NAME);
 
 /**
- * The validated contents of `data/learning-load.json`, parsed once at
+ * The validated contents of `data/osn/learning-load.json`, parsed once at
  * module load. Throws {@link CorpusValidationError} if the file does not
  * match {@link learningLoadFileSchema}.
  */

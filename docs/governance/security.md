@@ -91,7 +91,7 @@ not a restatement of the adjective. Each statement is labelled:
 - **[This repository]** `osn privacy-check` (`src/cli/commands/privacy-
   check.ts`, run in CI immediately after `osn validate` per
   `.github/workflows/ci.yml`) recursively scans every file under `data/`
-  (including `data/samples/*.jsonl`) for the same denylisted keys and
+  (including `data/osn/samples/*.jsonl`) for the same denylisted keys and
   fails the build if any are found. See `docs/governance/privacy.md`,
   "The automated check: `osn privacy-check`".
 - **[This repository]** This repository holds **no real learner data at
@@ -210,11 +210,11 @@ not a restatement of the adjective. Each statement is labelled:
 ## Control mapping table
 
 Each §13 control, mapped to the ISO/IEC standard(s) whose clause area it
-draws on, using the ids and citations from `data/standards.json`
+draws on, using the ids and citations from `data/osn/standards.json`
 (`R23`–`R29`). This table maps controls onto standards; it does not
 assert this repository or any platform is certified against any of them.
 
-| §13 control | Standard(s) | `data/standards.json` id | Citation | Why this standard applies |
+| §13 control | Standard(s) | `data/osn/standards.json` id | Citation | Why this standard applies |
 | --- | --- | --- | --- | --- |
 | Least privilege | ISO/IEC 27002:2022 (Security controls) | `iso-27002-2022` | `R24` | 27002's access-control clause area is the direct source for a least-privilege access model. |
 | Least privilege | ISO/IEC 27001:2022 (ISMS) | `iso-27001-2022` | `R23` | 27001 requires a risk-based ISMS that access control operates inside of — least privilege is a control the ISMS's risk treatment plan selects. |
@@ -241,7 +241,7 @@ assert this repository or any platform is certified against any of them.
 This repository operates no live service, so ISO/IEC 20000-1's IT
 service-management scope applies entirely to the **downstream platform**
 (support, incident, request, change, service quality — per
-`data/standards.json`'s application text for `iso-20000-1-2018`).
+`data/osn/standards.json`'s application text for `iso-20000-1-2018`).
 Implementable statements for that platform:
 
 - **Change management**: every production change goes through a defined
@@ -304,7 +304,7 @@ figure before relying on it operationally.
 
 ## Software lifecycle governance — ISO/IEC/IEEE 12207:2026 (`R34`)
 
-12207's application area, per `data/standards.json`, is "Governance
+12207's application area, per `data/osn/standards.json`, is "Governance
 siklus pengembangan platform" (governance of the platform's development
 lifecycle). This repository's **actual, current workflow** — not an
 aspirational one — already implements a recognisable instance of that
@@ -374,7 +374,7 @@ about the repository's own (nonexistent) UI.
 
 ### ISO/IEC 25010:2023 — Software product quality (`R33`)
 
-`data/standards.json`'s application text: "Quality model untuk
+`data/osn/standards.json`'s application text: "Quality model untuk
 usability, reliability, security, performance." A downstream platform
 should evaluate its own product against 25010's quality-characteristic
 model, including at minimum:
@@ -397,7 +397,7 @@ model, including at minimum:
 
 ### ISO/IEC 40500:2025 / WCAG 2.2 — Accessibility (`R35`)
 
-`data/standards.json`'s application text: "Aksesibilitas platform
+`data/osn/standards.json`'s application text: "Aksesibilitas platform
 pembelajaran" (accessibility of the learning platform). A downstream
 platform's learner-facing and mentor-facing interfaces should conform to
 WCAG 2.2 at, at minimum, level AA — covering the four WCAG principles
@@ -412,7 +412,7 @@ conformance (there is no platform to audit) — it states the requirement.
 
 ## Educational management alignment — ISO 21001:2025 (`R22`)
 
-`data/standards.json`'s application text: "Learner-centered quality,
+`data/osn/standards.json`'s application text: "Learner-centered quality,
 feedback, inclusion, continuous improvement." This is an
 **organisation-level** standard (an educational organization management
 system) — it applies to the organisation running the OSN Informatika
@@ -453,7 +453,7 @@ has), and residual risk after those mitigations.
 | ID | Description | Likelihood | Impact | Owner (role) | Existing mitigations | Residual risk |
 | --- | --- | --- | --- | --- | --- | --- |
 | RISK-01 | Minors' personal data (name, contact, school, learning history) is exposed, whether through this repository or a downstream platform built on it. | Low (this repository holds none by design); Medium for a downstream platform once real data exists. | High — the affected population is entirely school-age minors. | Data Protection Officer / Platform administrator (downstream role; this repository has no equivalent runtime role) | ADR-0004 (no learner personal data held here); `osn privacy-check` CI gate; `DIRECT_IDENTIFIER_DENYLIST` schema guard; `docs/governance/privacy.md`'s role-based access, minimisation, and retention design. | This repository cannot verify a downstream platform actually implements the documented design at runtime — residual risk is the gap between documented policy and a specific platform's real implementation. |
-| RISK-02 | A contest problem, expected solution, or test data leaks before its scheduled use, compromising contest integrity. | Medium — any problem-bank system with pre-release content is a target. | High — a leaked problem can invalidate a contest stage entirely. | Curriculum Board / Contest Operations Lead (role) | This repository's `data/` holds only problem-taxonomy **vocabulary** and curriculum structure (`data/problem-taxonomy-vocab.json`, `data/assessment-bank.json`), never live, unreleased contest problems or their solutions — there is nothing problem-specific here to leak. Role-based access design (`docs/governance/privacy.md`) restricts `internal`-class data to relevant roles. | A downstream platform's actual problem bank (which this repository does not define or hold) needs its own embargo/access-control mechanism for problems pending use; this repository has not defined one, since it is out of this repository's scope. |
+| RISK-02 | A contest problem, expected solution, or test data leaks before its scheduled use, compromising contest integrity. | Medium — any problem-bank system with pre-release content is a target. | High — a leaked problem can invalidate a contest stage entirely. | Curriculum Board / Contest Operations Lead (role) | This repository's `data/` holds only problem-taxonomy **vocabulary** and curriculum structure (`data/osn/problem-taxonomy-vocab.json`, `data/osn/assessment-bank.json`), never live, unreleased contest problems or their solutions — there is nothing problem-specific here to leak. Role-based access design (`docs/governance/privacy.md`) restricts `internal`-class data to relevant roles. | A downstream platform's actual problem bank (which this repository does not define or hold) needs its own embargo/access-control mechanism for problems pending use; this repository has not defined one, since it is out of this repository's scope. |
 | RISK-03 | The contest judge becomes unavailable during an active, timed contest window. | Medium — any single-instance or under-provisioned judge system is exposed to load spikes or infrastructure failure at exactly the worst time. | High — see the RTO/RPO justification above: lost contest time is not recoverable by re-attempting. | Judge/Infrastructure Operations (role) | The RPO/RTO recommendations and continuity-plan guidance in "Business continuity" above; the severity/response-timeline structure in `docs/governance/incident-response.md`. | This repository does not operate judge infrastructure; residual risk is entirely a function of the downstream platform's actual infrastructure choices, which this document can recommend targets for but not enforce. |
 | RISK-04 | The curriculum drifts from the official OSN/IOI syllabus sources it claims to transcribe faithfully. | Medium — any manually-maintained transcription can drift from a source that itself changes over time. | Medium — reduces the curriculum's accuracy and trustworthiness, though it does not expose anyone's data or halt a live contest. | Curriculum Board (role) | The `curriculum-change` issue-template workflow requiring a recorded syllabus check (`.github/ISSUE_TEMPLATE/curriculum-change.yml`); the PR template's "Syllabus check" gate (§14.2 rule 8); dual versioning (`syllabusVersion`/`syllabusDate`) and changeset/CHANGELOG discipline (`docs/development/releasing.md`); `AGENTS.md`'s "Curriculum content fidelity" rule. | A syllabus check is reviewer-verified, not automated (`docs/development/releasing.md`: "CI does not currently enforce this automatically — it is a reviewer responsibility") — residual risk is a reviewer accepting an incomplete or unverified syllabus check. |
 | RISK-05 | A compromised dependency (direct or transitive) or a compromised CI/tooling supply-chain component introduces malicious code or exfiltrates data. | Low–Medium — this repository has a minimal dependency footprint, but supply-chain compromise is a well-documented, industry-wide risk class. | High — a compromised build or CI step could affect every consumer of this repository. | Maintainer / Release Manager (role) | `bun install --frozen-lockfile` in CI (fails if `bun.lock` drifts from `package.json`); GitHub Actions pinned to major-version tags rather than floating refs (`docs/development/ci-cd.md`, "Action and tool pinning policy"); Bun pinned to an exact version; a minimal runtime dependency set (`zod` only; see `package.json`); least-privilege CI permissions (above) limiting the blast radius of a compromised action; automated weekly dependency and GitHub Actions update surveillance via `.github/dependabot.yml`. | Dependabot surfaces known-vulnerable and outdated dependencies, but it cannot detect a *novel* compromise of an otherwise-current package, and it opens pull requests rather than merging them — the residual risk is the review latency between an advisory being published and a maintainer merging the update. |
@@ -464,7 +464,7 @@ has), and residual risk after those mitigations.
 
 ## Every §11 standard, and its role in this document
 
-All fourteen standards from `data/standards.json` (§11) appear above;
+All fourteen standards from `data/osn/standards.json` (§11) appear above;
 this table is a single-glance index of where.
 
 | Standard | id | Citation | Where it appears above |
@@ -479,7 +479,7 @@ this table is a single-glance index of where.
 | ISO/IEC 27034-1:2011 | `iso-27034-1-2011` | `R29` | Control mapping table (secure authentication — secure application lifecycle) |
 | ISO/IEC 20000-1:2018 | `iso-20000-1-2018` | `R30` | "Service management" |
 | ISO 22301:2019 | `iso-22301-2019` | `R31` | "Business continuity" (RPO/RTO recommendations) |
-| ISO/IEC 15408 series:2026 | `iso-15408-series-2026` | `R32` | Named here: relevant only if a specific downstream component (e.g. a judge sandbox) needs formal security-assurance evaluation under Common Criteria — `data/standards.json`'s own application text scopes this to "bila membutuhkan" (if needed), so no control above assumes it applies universally; no such formal assurance need has been identified for this repository or documented for any downstream platform as of this writing. |
+| ISO/IEC 15408 series:2026 | `iso-15408-series-2026` | `R32` | Named here: relevant only if a specific downstream component (e.g. a judge sandbox) needs formal security-assurance evaluation under Common Criteria — `data/osn/standards.json`'s own application text scopes this to "bila membutuhkan" (if needed), so no control above assumes it applies universally; no such formal assurance need has been identified for this repository or documented for any downstream platform as of this writing. |
 | ISO/IEC 25010:2023 | `iso-25010-2023` | `R33` | "Product quality" |
 | ISO/IEC/IEEE 12207:2026 | `iso-iec-ieee-12207-2026` | `R34` | "Software lifecycle governance" |
 | ISO/IEC 40500:2025 | `iso-40500-2025` | `R35` | "Accessibility" |

@@ -124,7 +124,7 @@ describe("validate dispatch", () => {
   });
 
   test("osn validate --json emits parseable JSON with ok: true (--json after the subcommand)", async () => {
-    const result = await run(["validate", "--json"]);
+    const result = await run(["validate", "--program", "osn", "--json"]);
     expect(result.code).toBe(0);
     const parsed = JSON.parse(result.stdout);
     expect(parsed.ok).toBe(true);

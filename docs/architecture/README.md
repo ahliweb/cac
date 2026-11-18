@@ -1,6 +1,6 @@
 # Architecture overview
 
-This document describes the system architecture of `osn-informatika-2026`:
+This document describes the system architecture of `kurikulum-informatika`:
 what the four layers are, how a curriculum fact moves through them, the
 rules that keep the dependency graph one-way, and what this repository
 deliberately does not attempt to be.
@@ -17,12 +17,12 @@ The system is four layers, each depending only on the layer(s) to its
 left:
 
 ```
-data/*.json  --->  src/schema/  --->  src/domain/  --->  src/render/
+data/<program>/*.json  --->  src/schema/  --->  src/domain/  --->  src/render/
                                                      `->  src/cli/
 ```
 
-1. **`data/*.json`** — the curriculum corpus itself: inert JSON files with
-   no executable logic. 22 files today (topic families, weeks, gates,
+1. **`data/<program>/*.json`** (registry: `data/programs.json`, ADR-0006) — the curriculum corpus itself: inert JSON files with
+   no executable logic. One corpus today, `data/osn/`, 22 files (topic families, weeks, gates,
    references, assessment model, KPI definitions, playbooks, and more).
 2. **`src/schema/`** — Zod schemas that are the single source of truth for
    both runtime validation and the static TypeScript types inferred from
@@ -58,7 +58,7 @@ flowchart LR
     end
 
     subgraph Data["data/ — inert JSON"]
-        JSON["data/*.json\n(topic families, weeks, gates,\nreferences, records, ...)"]
+        JSON["data/<program>/*.json\n(topic families, weeks, gates,\nreferences, records, ...)"]
     end
 
     subgraph Schema["src/schema/ — Zod contracts"]
@@ -96,7 +96,7 @@ A single curriculum fact — for example, the phase gate after week 12 in
    faithful Markdown transcription of that section, preserving the
    original structure, tables, and citation markers (`Rnn`) — see TR-10 in
    `docs/requirements/register.md`.
-3. **`data/gates.json`** is the machine-readable
+3. **`data/osn/gates.json`** is the machine-readable
    encoding of the same fact: which week the gate follows, its minimum
    evidence text, and its `blocksProgression` flag. This file is
    hand-authored against the Markdown in step 2, not generated from it —
@@ -129,7 +129,7 @@ These are constraints on the dependency graph, not just a description of
 today's directory layout — they hold for every issue that lands code
 under `src/` or `data/`:
 
-- **`data/*.json` is inert.** Data files contain no executable logic, no
+- **`data/<program>/*.json` is inert.** Data files contain no executable logic, no
   computed fields, no references to code. They are plain JSON, hand-
   authored and reviewed like any other source file.
 - **`src/schema/` never imports `src/domain/`.** Schemas describe shape
@@ -139,7 +139,7 @@ under `src/` or `data/`:
   logic is presentation-agnostic — it has no knowledge of Markdown
   rendering or command-line argument parsing. This is what makes the same
   domain query reusable from both `osn render` and `osn report`.
-- **Validation happens at load, once.** Parsing a `data/*.json` file
+- **Validation happens at load, once.** Parsing a `data/<program>/*.json` file
   through its Zod schema is the single point where invalid data is
   rejected. Every module downstream of that parse call (`src/domain/`,
   `src/render/`, `src/cli/`) may assume the data it receives is valid and

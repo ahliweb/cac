@@ -11,8 +11,8 @@
  * Unlike `corpus-loader.ts` (which reads only files directly under a
  * directory, non-recursive, `.json` only -- see its own docblock), this
  * loader walks **recursively** and also reads `.jsonl` files, because
- * issue #23 explicitly requires the scan to reach `data/samples/` (one
- * level down) and `data/samples/learning-records.sample.jsonl` (not a
+ * issue #23 explicitly requires the scan to reach `data/osn/samples/` (one
+ * level down) and `data/osn/samples/learning-records.sample.jsonl` (not a
  * `.json` file). This is a different, wider traversal than `osn
  * validate`'s corpus registry scan on purpose: `osn validate` audits the
  * fixed, registered curriculum corpus; `osn privacy-check` is a blanket

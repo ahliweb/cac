@@ -1,7 +1,7 @@
 /**
  * Zod schema for a single week of the 28-week operational syllabus (§4 of
  * the syllabus corpus, `docs/silabus/04-silabus-28-minggu.md`), plus the
- * whole-file wrapper for `data/weeks.json`.
+ * whole-file wrapper for `data/osn/weeks.json`.
  *
  * Per the layering rules in `docs/architecture/README.md`, this module must
  * never import from `src/domain/`.
@@ -110,7 +110,7 @@ export const weekSchema = z
 export type Week = z.infer<typeof weekSchema>;
 
 /**
- * The whole `data/weeks.json` file: all 28 weeks plus the provenance fields
+ * The whole `data/osn/weeks.json` file: all 28 weeks plus the provenance fields
  * (`syllabusVersion`, `syllabusDate`, `sourceSection`) that let the corpus
  * carry its own versioning, per ADR-0005.
  */
@@ -130,7 +130,7 @@ export const weeksSchema = z
     weeks: z.array(weekSchema).describe("The full 28-week programme defined by §4."),
   })
   .describe(
-    "The full contents of `data/weeks.json`: the 28-week operational " +
+    "The full contents of `data/osn/weeks.json`: the 28-week operational " +
       "syllabus, with its corpus provenance.",
   );
 

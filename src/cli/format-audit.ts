@@ -33,8 +33,9 @@ function groupByFile(
 }
 
 /** Human-readable text output for `osn validate`, grouped by file so every problem in one file is easy to see together. */
-export function formatAuditText(result: AuditResult, dataDir: string): string {
-  const lines: string[] = [`osn validate: corpus at ${dataDir}`];
+export function formatAuditText(result: AuditResult, dataDir: string, programId?: string): string {
+  const label = programId === undefined ? "" : `programme "${programId}", `;
+  const lines: string[] = [`osn validate: ${label}corpus at ${dataDir}`];
 
   if (result.ok) {
     lines.push(
@@ -60,6 +61,6 @@ export function formatAuditText(result: AuditResult, dataDir: string): string {
 }
 
 /** Machine-readable `--json` output for `osn validate`: `{ ok, findings, summary }`, pretty-printed. */
-export function formatAuditJson(result: AuditResult): string {
+export function formatAuditJson(result: object): string {
   return JSON.stringify(result, null, 2);
 }

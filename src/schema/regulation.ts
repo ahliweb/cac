@@ -2,7 +2,7 @@
  * Zod schema for a single Indonesian regulation ("Regulasi Indonesia yang
  * Relevan") defined in §10 of the syllabus corpus
  * (`docs/silabus/10-regulasi-indonesia.md`), plus the whole-file wrapper for
- * `data/regulations.json`.
+ * `data/osn/regulations.json`.
  *
  * Per the layering rules in `docs/architecture/README.md`, this module must
  * never import from `src/domain/`.
@@ -37,7 +37,7 @@ export const regulationSchema = z
 export type Regulation = z.infer<typeof regulationSchema>;
 
 /**
- * The whole `data/regulations.json` file: the seven regulations, the §10
+ * The whole `data/osn/regulations.json` file: the seven regulations, the §10
  * preamble sentence and "Data peserta di bawah umur" callout (verbatim, at
  * file level since both govern the whole table rather than any single row),
  * plus the provenance fields (`syllabusVersion`, `syllabusDate`,
@@ -75,7 +75,7 @@ export const regulationsFileSchema = z
       .describe("The full set of seven Indonesian regulations defined by §10."),
   })
   .describe(
-    "The full contents of `data/regulations.json`: the seven Indonesian " +
+    "The full contents of `data/osn/regulations.json`: the seven Indonesian " +
       "regulations, the §10 preamble and minor-participants callout, with " +
       "their corpus provenance.",
   );

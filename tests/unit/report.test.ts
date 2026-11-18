@@ -28,6 +28,7 @@ const SAMPLE_PATH = join(
   "..",
   "..",
   "data",
+  "osn",
   "samples",
   "learning-records.sample.jsonl",
 );
@@ -63,7 +64,7 @@ function record(overrides: Partial<Record<string, unknown>>) {
 
 // --- sample dataset: schema + privacy sanity --------------------------------
 
-describe("data/samples/learning-records.sample.jsonl", () => {
+describe("data/osn/samples/learning-records.sample.jsonl", () => {
   test("every record passes parseLearningRecord (via parseLearningRecords)", () => {
     expect(() => loadSampleRecords()).not.toThrow();
   });

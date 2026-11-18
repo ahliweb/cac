@@ -11,6 +11,7 @@ import { buildCohortPlan, type CohortPlan } from "../../domain/cohort-plan";
 import type { Command } from "../command";
 import { EXIT_SUCCESS, EXIT_USAGE_ERROR } from "../command";
 import { formatPlanJson, formatPlanMarkdown } from "../format-plan";
+import { resolveProgramOption } from "../program-loader";
 
 const HELP_TEXT = `osn plan -- generate the dated 28-week cohort calendar
 
@@ -32,12 +33,13 @@ Options:
                            toki-ioi-extension). Optional.
   --format <md|json>      Output format. Default: md. --json is equivalent
                            to --format json.
+  --program <id>  Programme whose corpus to use (a registered id; default osn).
   -h, --help              Show this help.
 
 Exit codes:
   0   success.
   2   usage error: missing --start, an invalid/non-ISO date, an unknown
-      --target-stage, or an unknown --format.`;
+      --target-stage, an unknown --format, or an unknown --program.`;
 
 /** Extracts the value following the first occurrence of `flag` in `args`, or `undefined` if `flag` is absent. */
 function readFlagValue(args: readonly string[], flag: string): string | undefined {
@@ -53,7 +55,12 @@ export const planCommand: Command = {
   summary: "Generate the dated 28-week cohort calendar from a start date.",
   help: () => HELP_TEXT,
 
-  run(args, ctx) {
+  async run(rawArgs, ctx) {
+    const resolved = await resolveProgramOption("plan", rawArgs, ctx);
+    if (!resolved.ok) {
+      return resolved.exitCode;
+    }
+    const args = resolved.args;
     if (!args.includes("--start")) {
       ctx.stderr('osn plan: --start <YYYY-MM-DD> is required. Run "osn plan --help" for usage.\n');
       return EXIT_USAGE_ERROR;

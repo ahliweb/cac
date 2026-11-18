@@ -43,7 +43,7 @@ Option 4: plain JSON under `data/*.json`, with a Zod schema per shape
 under `src/schema/`, parsed once at load time (see "Layering rules" in
 `docs/architecture/README.md`). This is already the direction reflected in
 `README.md`'s repository map ("Curriculum data files") and in issue #9's
-scope (`data/topic-families.json` alongside `src/schema/topic-family.ts`).
+scope (`data/osn/topic-families.json` alongside `src/schema/topic-family.ts`).
 
 ### Why option 1 (YAML) was rejected
 
