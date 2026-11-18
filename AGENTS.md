@@ -35,7 +35,8 @@ Tables, not prose — drift should be visible at a glance.
 | `docs/operations/` | Operational runbook and syllabus-check procedure. |
 | `docs/silabus/` | Faithful Markdown transcription of the source syllabus PDF. |
 | `docs/*.pdf` | The source syllabus document. |
-| `docs/programs/` | Source documents of other programmes, one folder per programme id (ADR-0006). `docs/programs/sma-coding/silabus.md` is the SMA coding syllabus (authored, ADR-0007), v1.2 approved by the owner on 2026-11-19 for tracks A, B, C, D and E — the source for `data/sma-coding/`. |
+| `docs/programs/` | Source documents of other programmes, one folder per programme id (ADR-0006), plus the level map `docs/programs/README.md` (TK → SD → SMP → SMA → kuliah → dewasa). `sma-coding/`: the SMA coding syllabus (authored, ADR-0007), v1.2 approved by the owner on 2026-11-19 for tracks A, B, C, D and E — the source for `data/sma-coding/`. `tk-coding/`, `sd-coding/`, `smp-coding/`, `kuliah-coding/`, `dewasa-coding/`: `DRAF` research and draft syllabi (issues #127–#131), not owner-approved, with no `data/` and no registry entry. |
+| `docs/riset/` | Cross-programme research (authored content, ADR-0007): `ilmu-belajar-kognitif.md` (`DRAF`, issue #133), the shared pedagogy reference for every programme. It changes no syllabus or corpus. |
 | `.changeset/` | Pending changesets — one Markdown file per user-visible change. |
 | `.github/workflows/` | CI pipeline. |
 | `.github/ISSUE_TEMPLATE/` | Bug / feature / curriculum-change issue forms. |

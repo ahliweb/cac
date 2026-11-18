@@ -173,14 +173,42 @@ pekerjaan:
 gh issue list -R ahliweb/osn --state open
 ```
 
-Per 2026-11-19, setelah silabus v1.2 (jalur C, D, E; #68, #84, #88) dan modul
-pendamping untuk F-LD-d dan F-LD-e (#105) selesai, perintah di atas tidak
-mengembalikan issue apa pun: semua keputusan yang tercatat sebagai issue
-sudah Anda ambil. Jalankan perintahnya untuk keadaan terkini; keputusan baru
-akan muncul sebagai issue baru.
+Keluaran nyata perintah itu pada 2026-11-19 (kolom dipisah tab; label dan
+tanggal pembuatan dipotong di sini):
+
+```text
+131	OPEN	Riset dan draf silabus coding untuk dewasa: pekerja, profesional, personal, pebisnis
+130	OPEN	Riset dan draf silabus coding untuk perguruan tinggi
+129	OPEN	Riset dan draf silabus coding untuk SMP
+128	OPEN	Riset dan draf silabus coding untuk SD
+127	OPEN	Riset dan draf silabus coding untuk TK (PAUD)
+125	OPEN	Tinjauan pemilik atas 29 modul draf sma-coding
+124	OPEN	Seri modul materi untuk jalur C, D, dan E
+```
+
+Cara membacanya, per issue:
+
+| Issue | Jenis | Yang menunggu Anda | Dokumen untuk dibaca |
+| --- | --- | --- | --- |
+| #127 | Keputusan persetujuan draf | Meninjau draf `tk-coding` dan menjawab pertanyaan Q1-Q9 | [`tk-coding/README.md`](../programs/tk-coding/README.md) |
+| #128 | Keputusan persetujuan draf | Meninjau draf `sd-coding` dan tujuh pertanyaan terbuka | [`sd-coding/README.md`](../programs/sd-coding/README.md) |
+| #129 | Keputusan persetujuan draf | Meninjau draf `smp-coding` v0.2.0 dan pertanyaan Q1-Q11 | [`smp-coding/README.md`](../programs/smp-coding/README.md) |
+| #130 | Keputusan persetujuan draf | Meninjau draf `kuliah-coding` dan sembilan pertanyaan | [`kuliah-coding/README.md`](../programs/kuliah-coding/README.md) |
+| #131 | Keputusan persetujuan draf | Meninjau draf `dewasa-coding` dan pertanyaan 12.1-12.8 | [`dewasa-coding/README.md`](../programs/dewasa-coding/README.md) |
+| #125 | Tinjauan konten | Meninjau 29 modul draf `sma-coding` | bagian "Meninjau modul draf" di atas |
+| #124 | Pekerjaan lanjutan | Modul jalur C, D, E belum ada; belum menunggu keputusan Anda | [`sma-coding/README.md`](../programs/sma-coding/README.md) |
+
+Kelima draf program (#127 sampai #131) dan riset ilmu kognitif
+([`docs/riset/ilmu-belajar-kognitif.md`](../riset/ilmu-belajar-kognitif.md),
+issue #133) adalah kandidat tinjauan baru. Peta statusnya ada di
+[`docs/programs/README.md`](../programs/README.md). Menyetujui draf tidak
+otomatis mendaftarkan program: sesudah persetujuan, urutan kerjanya skema,
+`data/<program>/`, entri registri, lalu uji (ADR-0006). Riset #133 tidak
+mengubah dokumen program mana pun; perubahan program yang berasal darinya
+dikerjakan terpisah setelah Anda menyetujui.
 
 Silabus v1.1 (#92) dan v1.2 (#68, #84, #88) sudah Anda setujui 2026-11-19;
-kandidat tinjauan Anda: 29 modul draf `sma-coding` di
+kandidat tinjauan Anda yang lain: 29 modul draf `sma-coding` di
 `content/sma-coding/modules/` (fondasi, matematika komputasi, cloud,
 pendamping; baca dengan `osn render modul --program sma-coding --id <id>`,
 daftar id di `data/sma-coding/modules.json`).
