@@ -78,6 +78,21 @@
         }
       ],
       "contentPath": "content/osn/modules/rekursi.md"
+    },
+    {
+      "id": "search-sort",
+      "title": "Search dan Sort",
+      "topicFamilies": ["search-sort"],
+      "weeks": [4, 5],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "refId": "R1"
+        }
+      ],
+      "contentPath": "content/osn/modules/search-sort.md"
     }
   ]
 }
