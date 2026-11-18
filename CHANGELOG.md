@@ -6,15 +6,88 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 Version numbers here (`vX.Y.Z`) track the software in this repository —
-schema, domain model, CLI, and tooling. They are independent of the
-curriculum corpus's own `syllabusVersion` (currently `2.0`, dated
-`2026-09-04`), which tracks the source document. See
+schema, domain model, CLI, and tooling. They are independent of each
+programme's own syllabus version (`syllabusVersion` / `syllabusDate`), which
+tracks that programme's source document and is registered per programme in
+`data/programs.json` (ADR-0006). Currently only the `osn` programme is
+registered, at syllabus version `2.0`, dated `2026-09-04`. See
 [`docs/development/releasing.md`](docs/development/releasing.md) for how the
 two relate.
 
 ## [Unreleased]
 
 Nothing yet.
+
+## [2.0.0] — 2026-11-18
+
+Multi-programme restructure, learner sheets and learning modules. **This
+release contains breaking changes** — read the upgrade notes in
+[`docs/releases/v2.0.0.md`](docs/releases/v2.0.0.md). No curriculum content
+changed: the OSN corpus is byte-identical to v1.1.0, only moved.
+
+### Breaking
+
+- **Corpus paths moved.** `data/*.json` is now `data/osn/*.json` and
+  `data/samples/` is now `data/osn/samples/`. Any consumer reading the old
+  paths must update them (#50, #57).
+- **Package renamed** from `osn-informatika-2026` to `kurikulum-informatika`.
+  The `osn` binary keeps its name.
+- **`osn validate --json` output shape.** Without `--program` it validates
+  every registered programme and emits `{ ok, programs: [...] }`. With
+  `--program <id>` it emits `{ ok, program, findings, summary }`.
+
+### Added
+
+- **Programme registry** `data/programs.json` with schema
+  `src/schema/program.ts`, checked by `osn validate` (kebab-case unique ids,
+  `corpusDir` = `data/<id>`, source document exists, registered
+  `syllabusVersion`/`syllabusDate` equal the corpus files').
+- **`--program <id>`** (default `osn`) on `osn validate`, `plan`, `render`,
+  `report` and `checklist`; an unknown programme is a usage error (exit 2).
+  `osn privacy-check` still scans all of `data/` recursively.
+- **`osn render lembar-siswa --week <1-28>`** (#58) renders an Indonesian
+  learner sheet derived only from the validated corpus, with no explanatory
+  material and no learner-identity fields (ADR-0004). Supports `--out`,
+  `--force` and `--program`.
+- **Learning modules** (#59, ADR-0007): optional per-programme index
+  `data/<program>/modules.json` (schema `src/schema/module.ts`), Markdown
+  bodies under the new top-level `content/<program>/modules/`, and
+  `osn render modul --id <id>` with a `DRAF`/`DITARIK` banner unless the
+  module is `disetujui`. `osn validate` also checks the module index.
+- **`bun run check:module-code`** (also a CI step) compiles every `cpp` block
+  of the modules with `g++ -std=c++17 -fsyntax-only`, without running
+  anything, and fails when `g++` is missing.
+- **Pilot module `dasar-pemrograman`** (weeks 1-2, references R1), status
+  `draf`; it has not been reviewed or approved by a human.
+- **ADR-0006** (multi-programme repository) and **ADR-0007** (authored
+  learning content kept apart from the transcribed corpus, with a `draf` →
+  `ditinjau` → `disetujui` lifecycle only a human can complete) (#56).
+- **Draft SMA coding syllabus** under `docs/programs/sma-coding/` (#60, #64):
+  grades X-XII, a C++ track bridging to the ten OSN topic families and a web
+  track ending with the public `awcms-one` template. Status `DRAF`, not yet a
+  data source; recorded owner decisions: `awcms-one` option 1, and
+  C++-track topics beyond the CP are optional enrichment.
+
+### Changed
+
+- Third-party dependencies updated within their current major: zod 4.6.7,
+  `@changesets/cli` 3.0.3, `@types/bun` 1.4.4. Biome stays on 2.5.x because
+  2.6 would format Markdown and reformat every document (#44).
+- Bun pin raised from 1.4.0 to 1.4.4 in CI, the README and the bug-report
+  template (#46).
+
+### Fixed
+
+- `scripts/check-checklist-fidelity.ts` dropped to 84.82% line coverage under
+  Bun 1.4.4, just under the 85% per-file threshold. Tests added for the
+  rule-text mismatch and missing-section-marker error paths (now 91.07%); the
+  threshold is unchanged.
+
+### Notes
+
+- The pilot module and the SMA draft are authored content and remain `DRAF`;
+  neither has been approved by the owner.
+- All known limitations recorded in the v1.0.0 notes below still stand.
 
 ## [1.1.0] — 2026-09-05
 
@@ -227,6 +300,7 @@ documentation the syllabus itself mandates.
   and the entry says so; the next check must perform the live verification
   per [`docs/operations/syllabus-check.md`](docs/operations/syllabus-check.md).
 
-[Unreleased]: https://github.com/ahliweb/osn/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/ahliweb/osn/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/ahliweb/osn/compare/v1.1.0...v2.0.0
 [1.1.0]: https://github.com/ahliweb/osn/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/ahliweb/osn/releases/tag/v1.0.0

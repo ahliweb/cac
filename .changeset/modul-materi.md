@@ -1,5 +1,0 @@
----
-"kurikulum-informatika": minor
----
-
-Add learning modules (issue #54, ADR-0007): the optional per-programme index `data/<program>/modules.json` (schema `src/schema/module.ts`: id, title, topic families, weeks, status `draf`/`ditinjau`/`disetujui`/`ditarik`, references, `contentPath`; a `review` with approval date and reviewer role is required for `disetujui` and forbidden otherwise), Markdown bodies under the new top-level `content/<program>/modules/`, and `osn render modul --id <id> [--out] [--force] [--program]`, which puts a `DRAF`/`DITARIK` banner right after the title unless the module is `disetujui` and ends with references and a status/programme footer. `osn validate` now also checks a programme's module index (schema, topic family, week and reference ids, body file exists and is non-empty). New `bun run check:module-code` (also a CI step) compiles every `cpp` block of the modules with `g++ -std=c++17 -fsyntax-only` without running anything, and fails when `g++` is missing. Adds the pilot module `dasar-pemrograman` (Indonesian, status `draf`, weeks 1-2, referencing R1), which still needs human review before it can be approved.
