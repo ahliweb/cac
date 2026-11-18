@@ -1,6 +1,6 @@
 # Peta Jenjang Program Pembelajaran Coding
 
-- **Version:** v2.0.1
+- **Version:** v2.0.2
 - **Last updated:** 2026-11-19
 - **Status:** Dokumen peta (navigasi), bukan silabus. Isinya merangkum keadaan nyata folder program di `docs/programs/`, pembinaan OSN di `docs/silabus/`, dan registri `data/programs.json`. Menyebut status; tidak mengubah isi dokumen program mana pun.
 
@@ -66,6 +66,8 @@ Kolom "Dasar" memuat apa yang tertulis di silabus masing-masing pada saat penuli
 | `kuliah-coding` | `dewasa-coding` | Silabus kuliah (bagian 5.2) menulis portofolio sebagai bahan masuk dan menyatakan rujukan silang ke dewasa-coding belum dirancang. Silabus dewasa (12.7) belum merancang jembatan dari kuliah dan menjadikannya pertanyaan terbuka. **Belum selaras**. |
 | `sma-coding` jalur A, B, D | `dewasa-coding` | Silabus dewasa (bagian 6.1) memetakan jalur A ke `PRO`, jalur B ke `PRO` dan `BIS`, jalur D ke `PKJ` dan `PRO`, semua `[asumsi]`; juga menyebut pendamping anak ke jalur A atau B. |
 
+Rancangan penyelarasan kelima pasangan di atas (DRAF, menunggu keputusan pemilik; termasuk jembatan kuliah-coding ke dewasa-coding jalur `PRO`): [`rancangan-jembatan-antarprogram.md`](rancangan-jembatan-antarprogram.md).
+
 Ringkas: jembatan tiap program terkodekan di korpusnya sendiri
 (`data/<id>/bridge*.json` atau `osn-bridge.json`) dan diperiksa mesin terhadap
 silabusnya oleh `bun run check:fidelity`. Yang belum ada adalah penyamaan
@@ -108,3 +110,4 @@ sumbernya.
 | v1.0.0 | 2026-11-19 | Peta awal: alur jenjang TK sampai dewasa, tabel program dan status nyata, jembatan, dan rujukan riset ilmu kognitif (issue #127, #128, #129, #130, #131, #133). |
 | v2.0.0 | 2026-11-19 | Keadaan nyata: enam program coding disetujui, terdaftar, dan dienkode (versi silabus sama dengan registri); kolom kebijakan AI per program (#139); tautan `silabus.md`; rujukan dua dokumen riset (#127, #128, #129, #130, #131, #133, #139, #140). |
 | v2.0.1 | 2026-11-19 | Versi silabus tk, sd, smp, kuliah, dan dewasa ke revisi patch (issue #165); kalimat riwayat "belum ada" di bagian 3 disesuaikan dengan silabus yang sudah diperbaiki. |
+| v2.0.2 | 2026-11-19 | Tautan ke `rancangan-jembatan-antarprogram.md` (rancangan penyelarasan jembatan, DRAF) di bagian 3; isi peta tidak berubah. |
