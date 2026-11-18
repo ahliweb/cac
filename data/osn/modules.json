@@ -33,6 +33,21 @@
         }
       ],
       "contentPath": "content/osn/modules/logika-bitwise.md"
+    },
+    {
+      "id": "aritmetika",
+      "title": "Aritmetika dan Teori Bilangan Dasar",
+      "topicFamilies": ["aritmetika"],
+      "weeks": [9, 10],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "refId": "R1"
+        }
+      ],
+      "contentPath": "content/osn/modules/aritmetika.md"
     }
   ]
 }
