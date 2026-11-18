@@ -157,15 +157,17 @@ describe("auditDewasaCorpus on the committed corpus", () => {
 });
 
 describe("auditDewasaCorpus reports corruption", () => {
-  test("a missing, invalid-JSON and unregistered file are reported", () => {
+  test("a missing, invalid-JSON and unregistered file are reported; modules.json is tolerated", () => {
     const files = corpus();
     files.delete("bridges.json");
+    files.set("stray.json", {});
     files.set("modules.json", { modules: [] });
     const result = audit(files);
     expect(result.summary.filesMissing).toBe(1);
     expect(result.summary.filesUnregistered).toBe(1);
     expect(messages(result, "bridges.json")).toContain("required data file is missing");
-    expect(messages(result, "modules.json")).toContain("DW_DATA_FILE_REGISTRY");
+    expect(messages(result, "stray.json")).toContain("DW_DATA_FILE_REGISTRY");
+    expect(messages(result, "modules.json")).toBe("");
 
     const source: CorpusSource = new Map([
       ["tracks.json", { ok: false as const, error: "Unexpected token" }],

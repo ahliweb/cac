@@ -125,14 +125,14 @@ describe("auditSdCorpus: file level", () => {
     ).toBe(true);
   });
 
-  test("an unregistered file is reported, modules.json included (sd-coding has no module index)", () => {
+  test("an unregistered file is reported, but modules.json (the optional module index, ADR-0007) is tolerated", () => {
     const files = corpus();
     files.set("stray.json", {});
-    files.set("modules.json", {});
+    files.set("modules.json", { modules: [] });
     const result = audit(files);
-    expect(result.summary.filesUnregistered).toBe(2);
+    expect(result.summary.filesUnregistered).toBe(1);
     expect(messages(result, "stray.json")).toContain("not covered by any schema");
-    expect(messages(result, "modules.json")).toContain("not covered by any schema");
+    expect(messages(result, "modules.json")).toBe("");
   });
 
   test("a schema violation is reported with its path", () => {

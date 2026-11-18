@@ -59,8 +59,16 @@ learning-module index (data/<program>/modules.json, ADR-0007) it is checked
 too, with the programme's own schema: OSN modules by topic family / week /
 reference ids; sma-coding modules by CP item codes (cp-elements.json), week
 codes (weeks.json or foundation.json), OSN bridge family ids,
-prerequisites (module ids or foundation week codes, no cycle); and for both
-that every module's Markdown body exists and is non-empty. It also checks that
+prerequisites (module ids or foundation week codes, no cycle); tk-coding,
+sd-coding, smp-coding, kuliah-coding and dewasa-coding modules each by their
+own schema: the one unit code (week, course or module code) and its id, the
+CP overlap / CP item / CP code / knowledge area / SKKNI unit codes that the
+corpus maps to that unit and no others, prerequisites (module ids or unit
+codes, no cycle); and for every programme that every module's Markdown body
+exists and is non-empty (tk-coding and sd-coding: also the child's learner
+sheet content/<program>/lembar/<id>.md, which must carry no name or identity
+field). A reference file that a check needs but that is missing or invalid is
+a finding, not a skipped check. It also checks that
 the registry's syllabusVersion/syllabusDate equal the ones carried by the
 programme's corpus files and that the registered source document exists.
 Reports every problem found in one pass, grouped by file.
