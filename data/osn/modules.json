@@ -7,9 +7,17 @@
       "weeks": [1, 2],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
-      "references": [{ "refId": "R1" }],
-      "contentPath": "content/osn/modules/dasar-pemrograman.md"
+      "status": "disetujui",
+      "references": [
+        {
+          "refId": "R1"
+        }
+      ],
+      "contentPath": "content/osn/modules/dasar-pemrograman.md",
+      "review": {
+        "approvedOn": "2026-11-18",
+        "reviewerRole": "pemilik program"
+      }
     }
   ]
 }

@@ -41,7 +41,7 @@ run over this directory in CI: `osn validate` per registered programme (and the 
 
 **What must never go here:** transcribed syllabus content (that is `data/`); real learner data; problems copied from judges or competitions (link them instead); a module marked `disetujui` by an AI agent.
 
-**State today:** `content/osn/modules/dasar-pemrograman.md`, the pilot module (status `draf`).
+**State today:** `content/osn/modules/dasar-pemrograman.md`, the pilot module (status `disetujui`, approved by the programme owner on 2026-11-18).
 
 ## `src/schema/`
 

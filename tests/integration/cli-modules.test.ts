@@ -43,19 +43,24 @@ afterEach(async () => {
 });
 
 describe("osn render modul (real subprocess)", () => {
-  test("renders the pilot module with the DRAF banner right after the title", async () => {
+  test("renders the approved pilot module without a banner and with its approval footer", async () => {
+    // The pilot was approved by the programme owner on 2026-11-18 (issue #55).
+    // Banner text per status is covered by tests/unit/render-module.test.ts.
     const result = await cli("render", "modul", "--id", "dasar-pemrograman");
     expect(result.exitCode).toBe(0);
     expect(result.stderr).toBe("");
     const lines = result.stdout.split("\n");
     expect(lines[0]).toBe("# Dasar Pemrograman dengan C++");
-    expect(lines[2]).toStartWith("> **DRAF — belum ditinjau.**");
+    expect(lines[2]).toBe("## Untuk siapa modul ini");
+    expect(result.stdout).not.toContain("DRAF");
     expect(result.stdout).toContain("## Rujukan");
     expect(result.stdout).toContain(
       "- R1: Silabus OSN Informatika 2026 <https://osn.toki.id/silabus>",
     );
-    expect(result.stdout).toContain("Status modul: draf.");
-    expect(result.stdout).not.toContain("Disetujui pada");
+    expect(result.stdout).toContain("Status modul: disetujui.");
+    expect(result.stdout).toContain(
+      "Disetujui pada 2026-11-18 oleh peninjau dengan peran: pemilik program.",
+    );
   });
 
   test("is deterministic and writes with --out, refusing to overwrite without --force", async () => {
