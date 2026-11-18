@@ -17,3 +17,6 @@ coverage/
 .env*
 
 # NOTE: bun.lock IS committed intentionally, for reproducible installs.
+
+# Temporary git worktrees created for orchestrator subagents
+.claude/worktrees/
