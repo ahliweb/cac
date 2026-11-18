@@ -136,7 +136,8 @@ export const PROGRAM_MODULES: readonly ProgramModule[] = [
     parseModulesIndex: () => ({ modules: undefined, findings: [] }),
     moduleFindings: () => [],
     fidelity: dewasaCodingFidelity,
-    // sd-coding has no learning-module index (no content/sd-coding/ yet): there is nothing to parse or check.
+  },
+  {
     id: SD_CODING_PROGRAM_ID,
     dataFiles: SD_DATA_FILE_REGISTRY,
     audit: (source) => auditSdCorpus(source),
