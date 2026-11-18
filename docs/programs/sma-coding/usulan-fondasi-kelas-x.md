@@ -1,17 +1,20 @@
 # Usulan Blok Fondasi Informatika Dasar Wajib di Kelas X
 
-- **Version:** v0.2.0
+- **Version:** v0.3.0
 - **Last updated:** 2026-11-18
-- **Status:** DRAF — empat keputusan pemilik dicatat (2026-11-18); penerapan ke silabus v1.1 di issue #92
-- **Changeset:** Keputusan pemilik 2026-11-18 dicatat: opsi (b) + 1 minggu E-LD-d (7 minggu), kelas bersama lintas jalur, operasi bit ke pengayaan kelas XI. Empat pertanyaan masih terbuka.
+- **Status:** DRAF — kedelapan keputusan pemilik dicatat (2026-11-18); diterapkan pada [draf silabus v1.1](silabus-v1.1-draf.md) (issue #92); v1.1 belum disetujui
+- **Changeset:** Keputusan pemilik 2026-11-18 untuk pertanyaan 4, 6, 7, dan 8 dicatat (semua pertanyaan terjawab); draf silabus v1.1 menerapkannya.
 
 > **Keputusan pemilik (2026-11-18, dialog pilihan, dicatat di issue #86):**
 > blok fondasi **7 minggu** — paket enam minggu opsi (b) ditambah **satu
 > minggu perangkat pengolah dokumen, lembar kerja, dan presentasi (E-LD-d)**;
 > dijalankan sebagai **kelas bersama lintas jalur sebelum murid memilih
 > jalur**; operasi bit dasar (`A-X2-M12`) **pindah ke pengayaan kelas XI**.
-> Pertanyaan 4, 6, 7, dan 8 masih terbuka. Penerapan ke silabus v1.1 dan
-> corpus dikerjakan di issue #92; usulan ini belum menjadi silabus.
+> Keputusan lanjutan (2026-11-18): pertanyaan 4, 6, 7, dan 8 juga dijawab
+> (bagian 8), sehingga **kedelapan pertanyaan terjawab**. Penerapannya
+> disusun sebagai [draf silabus v1.1](silabus-v1.1-draf.md) (issue #92,
+> tahap 1); corpus dikerjakan sesudah pemilik menyetujui v1.1. Usulan ini
+> belum menjadi silabus.
 
 > **DRAF — belum disetujui pemilik.** Dokumen ini adalah konten karangan
 > menurut [ADR-0007](../../architecture/adr/0007-authored-learning-content.md):
@@ -348,16 +351,16 @@ yang dipilih; jalur C dan D memulai minggu materinya setelah blok fondasi.
 3. **[Terjawab 2026-11-18: ditambah satu minggu di fondasi]** **Perangkat pengolah dokumen, lembar kerja, dan presentasi (E-LD-d):**
    ditambah sebagai satu minggu fondasi, atau tetap di modul pendamping
    (#69)?
-4. **`B-X2-M9` dan `B-X2-M10`:** dihapus karena sudah dicakup fondasi (opsi
+4. **[Terjawab 2026-11-18: dihapus; slotnya dipakai minggu yang digeser dari semester 1]** **`B-X2-M9` dan `B-X2-M10`:** dihapus karena sudah dicakup fondasi (opsi
    b), atau dipertahankan sebagai pendalaman?
 5. **[Terjawab 2026-11-18: pindah ke pengayaan kelas XI]** **Operasi bit dasar (`A-X2-M12`, pengayaan) pada opsi (b):** dipindah ke
    pengayaan kelas XI atau dihapus? Keduanya mengubah jembatan OSN rumpun
    `logika-bitwise`.
-6. **Asesmen fondasi:** cukup formatif dan dilebur ke `M14`, atau perlu
+6. **[Terjawab 2026-11-18: formatif, dilebur ke M14 kelas X semester 1; tanpa minggu asesmen sendiri]** **Asesmen fondasi:** cukup formatif dan dilebur ke `M14`, atau perlu
    minggu atau penilaian tersendiri?
-7. **Representasi data:** dipertahankan sebagai prasyarat walau tidak ada di
+7. **[Terjawab 2026-11-18: tetap prasyarat; tidak dihitung sebagai pemenuhan butir CP mana pun]** **Representasi data:** dipertahankan sebagai prasyarat walau tidak ada di
    rumusan CP yang dikutip?
-8. **Kesiapan lab:** apakah lab sekolah menyediakan komponen bekas dan
+8. **[Terjawab 2026-11-18: simulasi peran sebagai jalur utama praktik; komponen bekas dan jaringan lokal terisolasi sebagai opsi bila lab menyediakan]** **Kesiapan lab:** apakah lab sekolah menyediakan komponen bekas dan
    jaringan lokal terisolasi untuk praktik jaringan, atau sebagian kegiatan
    cukup berupa simulasi peran?
 
@@ -365,5 +368,6 @@ yang dipilih; jalur C dan D memulai minggu materinya setelah blok fondasi.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v0.3.0 | 2026-11-18 | Mencatat keputusan pemilik untuk pertanyaan 4, 6, 7, dan 8 (semua pertanyaan terjawab); merujuk draf silabus v1.1 (`silabus-v1.1-draf.md`, issue #92) yang menerapkan keputusan. Isi usulan (bagian 1-7) tidak diubah. |
 | v0.2.0 | 2026-11-18 | Mencatat empat keputusan pemilik (pertanyaan 1, 2, 3, 5); pertanyaan 4, 6, 7, 8 masih terbuka; penerapan di issue #92. |
 | v0.1.0 | 2026-11-18 | Usulan awal (issue #86): topik fondasi per minggu, pemetaan ke kode butir CP silabus v1.0, tiga opsi panjang blok dengan tabel kelas X semester 1 dan 2, bentuk modul, hubungan dengan #68, #69, #84, pertanyaan terbuka. Status DRAF. |
