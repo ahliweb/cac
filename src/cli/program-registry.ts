@@ -148,6 +148,8 @@ export const PROGRAM_MODULES: readonly ProgramModule[] = [
     parseModulesIndex: () => ({ modules: undefined, findings: [] }),
     moduleFindings: () => [],
     fidelity: sdCodingFidelity,
+  },
+  {
     id: SMP_CODING_PROGRAM_ID,
     dataFiles: SMP_DATA_FILE_REGISTRY,
     audit: (source) => auditSmpCorpus(source),

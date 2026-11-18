@@ -403,14 +403,6 @@ function referentialFindings(parsed: Parsed): CorpusFinding[] {
             `semester "${week.semester}" is not in structure.json`,
           ),
         );
-      } else if (semester.kelas !== week.kelas) {
-        findings.push(
-          error(
-            "weeks.json",
-            `weeks[${index}].kelas`,
-            `kelas ${week.kelas} disagrees with structure.json for semester ${week.semester} (kelas ${semester.kelas})`,
-          ),
-        );
       }
     });
     const planned = weeks.semesters.map((s) => s.code).sort();
