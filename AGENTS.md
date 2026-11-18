@@ -34,6 +34,7 @@ Tables, not prose — drift should be visible at a glance.
 | `.changeset/` | Pending changesets — one Markdown file per user-visible change. |
 | `.github/workflows/` | CI pipeline. |
 | `.github/ISSUE_TEMPLATE/` | Bug / feature / curriculum-change issue forms. |
+| `.claude/agents/` | Claude Code executor subagents (`pelaksana-kompleks`, `pelaksana-sederhana`) used by the orchestrator — see "Pedoman Eksekusi Wajib" below. |
 
 Do not create new top-level directories without a corresponding issue
 scoping them. See `docs/architecture/repository-map.md` for the
@@ -148,25 +149,52 @@ not duplicate that policy here; that document is the source of truth.
 - [ ] No real learner data, secrets, or credentials committed.
 - [ ] Commit message references the issue number.
 
-## Orchestrator & Agent (model AI)
+<!-- template-versi: v1.1.0 (2026-11-13; DL-034, DL-036, DL-039, DL-043). Template ini sengaja tanpa metadata Version/Changeset karena disalin ke AGENTS.md repo lain; penanda ini dasar cek drift. -->
 
-> Standar lintas-portofolio internal tentang tingkatan model AI (snapshot 2026-10-28). Harga, effort, dan lini model dipelihara di standar internal itu — jangan disalin ke repo ini.
+## Pedoman Eksekusi Wajib (Orchestrator & Agent)
 
-Pekerjaan yang perlu dipecah ke beberapa agent memakai pola **orchestrator → agent**. Orchestrator memecah pekerjaan, membagi tugas, mengatur ketergantungan, lalu memeriksa dan menyatukan hasil; agent mengerjakan satu bagian yang sudah dibatasi.
+> Standar lintas-portofolio internal pemilik (standing instruction sejak 2026-11-01, DL-034); berlaku untuk **setiap** pekerjaan yang mengubah repo ini. Prosedur dan checklist lengkap: skill `eksekusi-terkelola` pada standar internal tersebut. Tabel peran di bawah hanya ringkasan; harga, tingkatan, dan angka model lengkap ada di standar internal tersebut — jangan disalin ke repo ini.
 
-| Peran | Claude Code | Codex / OpenAI |
-| --- | --- | --- |
-| Orchestrator | Opus 5.5, effort `high` | GPT-6.1 Sol, `high` |
-| Agent kompleks — lintas komponen, keamanan, integrasi, risiko regresi | Sonnet 5.5, `medium` (subagent `pelaksana-kompleks`) | GPT-6.1 Sol atau Terra, `medium` |
-| Agent sederhana — mekanis, terdefinisi jelas, risiko rendah | Haiku 5.5, `low` (subagent `pelaksana-sederhana`) | GPT-6 Luna atau Terra, `low` |
+**Opus adalah manajer dan koordinator utama.** Opus menganalisis pekerjaan, menilai kompleksitas dan risiko, memecah serta memprioritaskan tugas, mendelegasikan, mengawasi progres, mengelola ketergantungan, lalu meninjau, mengintegrasikan, menguji, dan memverifikasi semua hasil.
 
-Pekerjaan kritis (arsitektur, keamanan, migrasi besar): orchestrator Fable 5.1 `high`–`xhigh`, agent kompleks Opus 5.5 `high`.
+| Peran | Claude Code | Codex / OpenAI | Dipakai untuk |
+| --- | --- | --- | --- |
+| Manajer / orchestrator | Opus 5.5, `high` (`xhigh` untuk pekerjaan kritis) | GPT-6.1 Sol, `high` | Seluruh koordinasi dan verifikasi akhir |
+| Agent kompleks | Sonnet 5.5, `medium` (`high` bila risiko tinggi), subagent `pelaksana-kompleks` | GPT-6.1 Sol atau Terra, `medium` | Penalaran dalam, keputusan arsitektur atau lintas komponen, fungsi kritis, implementasi besar, risiko keamanan/performa/integrasi/regresi |
+| Agent sederhana | Haiku 5.5, `low`, subagent `pelaksana-sederhana` | GPT-6 Luna atau Terra, `low` | Tugas sederhana, terdefinisi jelas, risiko rendah, berulang, mekanis |
+
+**Fable tidak dipakai sebagai orchestrator** (keputusan pemilik, DL-034).
 
 Aturan:
 
-1. **Jangan memecah tugas kecil.** Coba satu model kuat (Opus 5.5 / GPT-6.1 Sol) dengan effort rendah lebih dulu.
-2. **Naikkan, jangan menebak.** Agent sederhana yang menemukan ambiguitas, risiko, atau sentuhan arsitektur berhenti dan mengembalikan tugas ke orchestrator, yang memindahkannya ke agent kompleks.
-3. **Agent paralel terisolasi.** Tidak boleh menyentuh file atau modul yang sama; tugas yang saling bergantung dijalankan berurutan.
-4. **Verifikasi tetap di orchestrator.** Diff, uji, dan angka dicek sendiri sebelum dipakai; laporan agent bukan bukti.
-5. **Agent tetap di scope-nya.** Tidak mengubah arsitektur, tidak mendelegasikan lagi, tidak menyentuh area di luar tugas.
-6. **Aturan repo ini tetap berlaku** untuk setiap agent — alur kerja, gerbang, guardrail keamanan, konvensi commit.
+1. **Pilih agent per tugas** berdasarkan kompleksitas, ketergantungan, risiko, kedalaman penalaran, dan dampak. Tugas kecil yang lebih murah dikerjakan langsung tidak dipecah.
+2. **Eskalasi, jangan menebak.** Tugas Haiku yang ternyata kompleks, ambigu, berisiko, atau menyentuh arsitektur dikembalikan ke Opus untuk dinilai ulang, lalu bila perlu dipindahkan ke Sonnet.
+3. **Paralel hanya bila terisolasi.** Agent paralel tidak boleh:
+   - tumpang-tindih scope atau mengerjakan hal yang sama;
+   - mengubah file, modul, atau area yang saling bergantung secara bersamaan;
+   - memicu race condition;
+   - membuat ketergantungan tak perlu;
+   - menimpa hasil agent lain;
+   - membawa keputusan yang tidak kompatibel;
+   - memicu konflik merge.
+
+   Ketergantungan dipetakan **sebelum** eksekusi. Tugas yang bergantung dijalankan berurutan.
+4. **Agent pelaksana tetap di scope-nya.** Agent tidak mendefinisikan ulang arsitektur, tidak memakai strategi yang bertentangan, tidak menyentuh area di luar tugas tanpa izin Opus, dan tidak mendelegasikan lagi.
+5. **Verifikasi tetap di Opus.** Diff, uji, angka, dan check dicek sendiri; laporan agent bukan bukti.
+6. **Setiap issue dan PR adalah unit kerja atomik** yang bisa diverifikasi sendiri sampai selesai diimplementasikan, diuji, di-review, dan diselesaikan.
+7. **Laporan progres ringkas paling lama tiap 5 menit kerja aktif** sampai semua kebutuhan, issue, dan PR dalam scope selesai dan terverifikasi. Isinya: yang selesai, yang berjalan, berikutnya atau hambatan. Hasil yang belum datang tidak boleh dikarang.
+8. **Keputusan arsitektur, pilihan implementasi, atau trade-off dinilai sebelum diimplementasikan.** Kriterianya: kelebihan dan kekurangan, keamanan, performa, kemudahan perawatan, skalabilitas, aksesibilitas, dampak SEO, UI/UX, kompatibilitas, kompleksitas operasional, dan implikasi jangka panjang. Sajikan rekomendasi lebih dulu.
+9. **Dokumentasi harus sama dengan kondisi nyata repo setelah implementasi**, bukan rencana atau perilaku lama. Checklist bidangnya ada di skill eksekusi-terkelola §7.
+10. **Gerbang merge ketat.** Merge hanya bila semua check wajib `SUCCESS`, diperiksa lewat status (bukan output yang disalurkan ke `tail`). Approval manusia yang diwajibkan (review branch protection, gerbang 15, rilis produksi) tidak dilewati.
+11. **Pembersihan dan integrasi akhir.** Setelah implementasi dan PR yang ada selesai:
+    - buat PR untuk branch relevan yang tersisa, review dengan proses yang sama, dan merge hanya bila check lolos;
+    - hapus branch lokal/remote yang sudah di-merge, tetapi pertahankan branch yang dilindungi, permanen, rilis, atau sengaja disimpan;
+    - perbarui versi dokumen serta metadata **Document Changeset** dan **Changelog** bila mengubah dokumen; untuk perubahan software, perbarui versi dan **Release Changeset hanya jika konvensi repo produk memintanya** — jangan samakan keduanya (lihat standar terminologi internal, DL-035);
+    - commit dengan pesan jelas;
+    - push commit, branch, tag, versi, dan changeset.
+
+    **Perubahan sah tidak ditinggalkan hanya di working tree lokal.**
+12. **Aturan repo ini tetap berlaku** untuk setiap agent: alur kerja, gerbang, guardrail keamanan, dan konvensi commit.
+13. **Koordinasi dengan kontributor lain** (standar koordinasi kontributor internal, DL-036). Isolasi paralel (aturan 3) berlaku juga terhadap kontributor dan sesi lain. Bila repo ini punya papan koordinasi (issue hidup di luar git), baca sebelum bekerja. Sebelum meluncurkan agent yang akan **merge, release, atau promote**, Opus membaca papan dan Deployment terakhir, mencantumkan kunci rilis (atau "tidak ada kunci") di brief, dan tidak merge atau deploy bila kunci rilis dipegang orang lain. Agent yang menemukan bentrok berhenti dan melapor; ia tidak mengambil alih klaim atau kunci.
+14. **Repo pedoman internal tidak disebut (DL-039).** Standar lintas-portofolio internal diterapkan di repo ini tanpa menyebut nama, path, atau tautan repo sumbernya: tidak di dokumen, kode, file agent, commit, branch, issue, PR, maupun artefak. Tunjuk asalnya dengan frasa "standar lintas-portofolio internal".
+15. **Keputusan pemilik disajikan sebagai dialog pilihan baku (DL-043).** Keputusan yang menjadi hak pemilik (persetujuan atau sign-off, pilihan antar nilai, trade-off, merge/tunda/rilis) **tidak** ditanyakan dengan kalimat "apakah saya boleh…?" dalam prosa. Opus menyajikannya lewat **dialog pilihan interaktif baku**: di Claude Code alat `AskUserQuestion`; di agent lain UI pilihan terstruktur yang setara, atau daftar opsi bernomor bila tidak ada. Bentuknya: 2-4 opsi yang saling eksklusif, **opsi yang direkomendasikan di urutan pertama dan ditandai "(Disarankan)"**, setiap opsi menyebut konsekuensinya. Keputusan yang saling terkait dikelompokkan (paling banyak 4 pertanyaan per dialog) dan boleh dijawab sekaligus lintas beberapa issue (sign-off massal). Setelah pemilik menjawab, **agent mengerjakan sendiri seluruh tindak lanjut mekanisnya**: mencatat keputusan (tanggal dan opsi terpilih) di issue dan dokumen keputusan repo, memperbarui label dan status, dan menutup issue yang tipe penyelesaiannya mengizinkan. Pagar: agent **tidak pernah mencatat persetujuan yang tidak dipilih pemilik** (jawaban teks bebas atau "Lainnya" adalah instruksi baru, bukan persetujuan); pilihan **tidak menggantikan aktivitas manusia nyata** (UAT lapangan, pilot, restore drill, rapat Go/No-Go, mandat hukum), sehingga issue semacam itu tetap terbuka sampai ada bukti; hanya Opus yang bertanya ke pemilik, agent pelaksana menyerahkan opsi ke Opus; dan AI tetap tidak menyetujui PR-nya sendiri maupun rilis produksi (review wajib di GitHub dan gerbang 15 tetap tindakan pemilik sendiri). Prosedur: skill eksekusi-terkelola §4.1 pada standar internal.
