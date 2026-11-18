@@ -1,17 +1,24 @@
-# Silabus Pembelajaran Coding SD — DRAF v0.1
+# Silabus Pembelajaran Coding SD — v1.0
 
-- **Version:** v0.1.0
+- **Version:** v1.0.0
 - **Last updated:** 2026-11-19
-- **Status:** DRAF (issue #128) — **belum disetujui pemilik program**; tidak ada `data/sd-coding/` dan tidak ada entri di `data/programs.json` sampai pemilik menyetujui
-- **Changeset:** Draf silabus awal program `sd-coding`: struktur waktu, tujuan, rencana mingguan kelas 1-6, pemetaan ke CP KKA Fase C, jembatan, asesmen, privasi, opsi alat dengan rekomendasi, dan pertanyaan terbuka.
+- **Status:** DISETUJUI pemilik program, 2026-11-19 — kelas 1-6, beserta rekomendasi penyusun atas ketujuh pertanyaan terbuka (issue #128); menjadi sumber corpus `data/sd-coding/` (ADR-0006, ADR-0008). Modul pendamping tidak termasuk persetujuan ini.
+- **Changeset:** Silabus v1.0 disetujui pemilik: draf v0.1.0 menjadi silabus berstatus disetujui, pertanyaan terbuka diganti keputusan pemilik (bagian 13), kutipan CP Fase C dicocokkan ulang dan diganti dengan teks SK Kepala BSKAP 046/H/KR/2025 (bagian 1.2-1.4).
 
-> **DRAF, bukan silabus resmi.** Dokumen ini adalah konten karangan menurut
+> **Disetujui pemilik program pada 2026-11-19** (keputusan lewat dialog
+> pilihan, dicatat di issue #128 dan bagian 13), beserta rekomendasi
+> penyusun untuk setiap pertanyaan terbuka. Dokumen ini adalah konten
+> karangan menurut
 > [ADR-0007](../../architecture/adr/0007-authored-learning-content.md) yang
 > berpijak pada capaian pembelajaran (CP) Koding dan Kecerdasan Artifisial
-> (KKA) Fase C. Bukan dokumen Kemendikdasmen. Menurut
-> [ADR-0006](../../architecture/adr/0006-multi-program-repository.md) program
-> berstatus draf tidak mendapat `data/` maupun entri registri. Agent tidak
-> pernah menyetujui atau mencatat persetujuan atas nama pemilik. Fakta
+> (KKA) Fase C, dan menjadi sumber corpus program `sd-coding`
+> ([ADR-0006](../../architecture/adr/0006-multi-program-repository.md),
+> [ADR-0008](../../architecture/adr/0008-skema-khusus-per-program.md)).
+> Bukan dokumen Kemendikdasmen. Kutipan CP di bagian 1.3 adalah transkripsi
+> teks SK Kepala BSKAP 046/H/KR/2025; selebihnya rancangan penyusun yang
+> disetujui. Butir bertanda `[belum terverifikasi]` tetap belum terverifikasi
+> dan butir `[asumsi]` tetap rancangan penyusun yang kini disetujui sebagai
+> bagian dari v1.0. Draf awal (v0.1.0) tersimpan di riwayat git. Fakta
 > sumber dan tanggal akses ada di [`riset.md`](riset.md); bagian 1 di bawah
 > hanya mengulang yang diperlukan.
 
@@ -47,32 +54,51 @@ Tanggal dibuka: **2026-11-19**. Rincian dan keterbatasan akses di
 | Kelas I-IV | Tidak ada mata pelajaran KKA di tabel (Tabel 1-3); Muatan Lokal "Paling banyak 2 (dua) JP per minggu", dapat berbentuk "teknologi". |
 | Informatika | Tidak ada di tabel struktur SD. |
 
-### 1.2 Terverifikasi dari halaman resmi UPT Ditjen GTK (bukan PDF panduan/SK)
+### 1.2 Terverifikasi dari teks SK Kepala BSKAP 046/H/KR/2025
 
-Halaman BGTK Kalimantan Timur, "Pelajaran Koding dan Kecerdasan Artifisial
-(KA) Fase C (Kelas V dan VI SD/MI)". Kutipan CP di bagian 1.3 disalin dari
-halaman itu; kesamaan huruf demi huruf dengan panduan atau SK
-`[belum terverifikasi]`.
+Sumber CP: *Keputusan Kepala Badan Standar, Kurikulum, dan Asesmen
+Pendidikan Kementerian Pendidikan Dasar dan Menengah Nomor 046/H/KR/2025
+tentang Capaian Pembelajaran pada Pendidikan Anak Usia Dini, Jenjang
+Pendidikan Dasar, dan Jenjang Pendidikan Menengah*, Lampiran II (jenjang SD),
+bagian XXVIII "Capaian Pembelajaran Koding dan Kecerdasan Artifisial", butir
+D.1 "Fase C (Umumnya untuk Kelas V dan VI SD/MI)". Teksnya dicocokkan huruf
+demi huruf pada 2026-11-19 dengan salinan SK (PDF 1691 halaman, butir D.1 di
+halaman 343) yang ditemukan orchestrator; alamat asal salinan itu belum
+terverifikasi (rincian di [`riset.md`](riset.md) bagian 1 dan 8). Halaman
+BGTK Kalimantan Timur yang dipakai draf awal ternyata tidak sama persis
+dengan SK (bagian 1.4); yang berlaku di sini adalah teks SK.
 
-### 1.3 Kutipan CP Fase C (persis dari halaman itu)
+### 1.3 Kutipan CP Fase C (persis dari SK)
 
-Hanya spasi dan pemenggalan baris yang dinormalkan.
+Hanya spasi dan pemenggalan baris yang dinormalkan. Kalimat pembuka SK:
+"Pada akhir Fase C, murid memiliki kemampuan sebagai berikut." Nomor di
+depan nama elemen adalah nomor butir di SK.
 
-*Berpikir Komputasional* — "Pada akhir Fase C, murid mampu memahami permasalahan sederhana dalam kehidupan sehari-hari, menerapkan pemecahan masalah secara sistematis, serta menuliskan instruksi logis dan terstruktur menggunakan sekumpulan kosakata atau simbol."
+*1.1 Berpikir Komputasional* — "Memahami permasalahan sederhana dalam kehidupan sehari-hari, menerapkan pemecahan masalah secara sistematis, serta menuliskan instruksi logis dan terstruktur menggunakan sekumpulan kosakata atau simbol."
 
-*Literasi Digital* — "Pada akhir Fase C, murid mampu memahami konsep dasar, manfaat dan dampak teknologi digital, memahami sistem komputer tingkat pra dasar, menerapkan pengamanan informasi pribadi dalam komunikasi daring, memanfaatkan internet, dan memproduksi serta mendiseminasi konten digital dalam bentuk teks dan gambar."
+*1.2 Literasi Digital* — "Memahami konsep dasar, manfaat, dan dampak teknologi digital, memahami sistem komputer tingkat pradasar, menerapkan pengamanan informasi pribadi dalam komunikasi daring, memanfaatkan internet, dan memproduksi serta mendiseminasi konten digital dalam bentuk teks dan gambar."
 
-*Literasi dan Etika Kecerdasan Artifisial* — "Pada akhir Fase C, murid mampu memahami konsep KA sederhana, manfaat dan dampak KA pada kehidupan sehari-hari, prinsip bahwa KA dikembangkan untuk meningkatkan kesejahteraan manusia dan tidak boleh merugikan manusia, mengetahui perbedaan manusia dan komputer dalam melakukan penginderaan, dan mengetahui perbedaan antara mesin cerdas dan mesin non-cerdas. Memahami etika dasar penggunaan KA seperti empati dan tidak menyakiti orang lain."
+*1.3 Literasi dan Etika Kecerdasan Artifisial* — "Memahami konsep KA sederhana, manfaat dan dampak KA pada kehidupan sehari-hari, prinsip bahwa KA dikembangkan untuk meningkatkan kesejahteraan manusia dan tidak boleh merugikan manusia, mengetahui perbedaan manusia dan komputer dalam melakukan penginderaan, dan mengetahui perbedaan antara mesin cerdas dan mesin non-cerdas. Memahami etika dasar penggunaan KA seperti empati dan tidak menyakiti orang lain."
 
-*Pemanfaatan dan Pengembangan Kecerdasan Artifisial* — "Pada akhir Fase C, murid mampu mensimulasikan secara sederhana kerja KA saat mengenali pola, mengklasifikasi benda konkret berdasarkan sifatnya, dan mengetahui bagaimana prediksi sistem KA dipengaruhi input benda konkret."
+*1.4 Pemanfaatan dan Pengembangan Kecerdasan Artifisial* — "Menyimulasikan secara sederhana kerja KA saat mengenali pola, mengklasifikasi benda konkret berdasarkan sifatnya, dan mengetahui bagaimana prediksi sistem KA dipengaruhi input benda konkret."
 
-Catatan dari halaman yang sama: "Semua elemen harus dicakup dalam pembelajaran sesuai Capaian Pembelajaran (CP), namun beban belajar (JP) yang dialokasi pada setiap elemen pada mata pelajaran Koding dan KA tidak harus sama."
+Catatan dari SK (bagian C): "Semua elemen harus dicakup dalam pembelajaran sesuai Capaian Pembelajaran (CP), namun beban belajar (JP) yang dialokasi pada setiap elemen pada mata pelajaran Koding dan KA tidak harus sama."
 
-### 1.4 Belum terverifikasi
+### 1.4 Koreksi terhadap draf awal dan yang masih belum terverifikasi
+
+Draf awal v0.1.0 mengutip halaman BGTK Kalimantan Timur. Setelah
+dicocokkan dengan SK, empat perbedaan dikoreksi pada bagian 1.3 dan 4:
+
+| Draf awal (halaman BGTK) | SK 046/H/KR/2025 |
+| --- | --- |
+| "Pada akhir Fase C, murid mampu memahami ..." | "Pada akhir Fase C, murid memiliki kemampuan sebagai berikut." lalu rumusan tiap elemen dimulai dengan kata kerja berhuruf kapital |
+| "manfaat dan dampak teknologi digital" | "manfaat, dan dampak teknologi digital" (dengan koma) |
+| "sistem komputer tingkat pra dasar" | "sistem komputer tingkat pradasar" |
+| "mensimulasikan secara sederhana kerja KA" | "Menyimulasikan secara sederhana kerja KA" |
 
 | Butir | Status |
 | --- | --- |
-| SK induk CP KKA (kemungkinan Keputusan Kepala BSKAP 046/H/KR/2025) | `[belum terverifikasi]`; tidak ada salinan resmi yang terbuka. |
+| Alamat asal salinan SK yang dicocokkan | `[belum terverifikasi]`; salinan ditemukan orchestrator, teksnya cocok dengan SK 046/H/KR/2025 (bagian 1.2). |
 | PDF *Panduan Mata Pelajaran Koding dan Kecerdasan Artifisial* | `[belum terverifikasi]`; tidak terbuka. |
 | Penerapan nyata di sekolah | Tidak diperiksa. |
 
@@ -137,8 +163,8 @@ Pengembangan KA.
 | C-BK-a | "memahami permasalahan sederhana dalam kehidupan sehari-hari" |
 | C-BK-b | "menerapkan pemecahan masalah secara sistematis" |
 | C-BK-c | "menuliskan instruksi logis dan terstruktur menggunakan sekumpulan kosakata atau simbol" |
-| C-LD-a | "memahami konsep dasar, manfaat dan dampak teknologi digital" |
-| C-LD-b | "memahami sistem komputer tingkat pra dasar" |
+| C-LD-a | "memahami konsep dasar, manfaat, dan dampak teknologi digital" |
+| C-LD-b | "memahami sistem komputer tingkat pradasar" |
 | C-LD-c | "menerapkan pengamanan informasi pribadi dalam komunikasi daring" |
 | C-LD-d | "memanfaatkan internet" |
 | C-LD-e | "memproduksi serta mendiseminasi konten digital dalam bentuk teks dan gambar" |
@@ -147,7 +173,7 @@ Pengembangan KA.
 | C-LE-c | "mengetahui perbedaan manusia dan komputer dalam melakukan penginderaan" |
 | C-LE-d | "mengetahui perbedaan antara mesin cerdas dan mesin non-cerdas" |
 | C-LE-e | "Memahami etika dasar penggunaan KA seperti empati dan tidak menyakiti orang lain" |
-| C-PP-a | "mensimulasikan secara sederhana kerja KA saat mengenali pola" |
+| C-PP-a | "menyimulasikan secara sederhana kerja KA saat mengenali pola" |
 | C-PP-b | "mengklasifikasi benda konkret berdasarkan sifatnya" |
 | C-PP-c | "mengetahui bagaimana prediksi sistem KA dipengaruhi input benda konkret" |
 
@@ -457,8 +483,8 @@ menjelaskan bahwa KA belajar dari data dan bisa keliru. Informatika baru
 menjadi mata pelajaran di SMP (riset bagian 4), dan panduan kodingka
 menyebut SMP mengenalkan pemrograman blok dan konsep KA sederhana (riset
 bagian 2.2). Karena itu `sd-coding` **tidak mengajarkan sintaks
-pemrograman**; blok visual hanya opsi di kelas 6 (bagian 11). Pertanyaan
-terbuka 5 meminta keputusan tentang penyelarasan.
+pemrograman**; blok visual hanya opsi di kelas 6 (bagian 11). Keputusan
+pemilik 5 (bagian 13) mengatur penyelarasan.
 
 ### 7.3 Ke SMA
 
@@ -486,7 +512,7 @@ yang suka berpikir logis (tanpa label OSN): tantangan "teka-teki
 algoritma" di akhir semester, dan penguatan konsep pengurutan dan pencarian
 di kelas 3 (`SD3-1-M7`, `SD3-1-M8`) yang kelak menjadi dasar topik OSN.
 Bila pemilik ingin jembatan resmi ke kompetisi lain, itu perlu riset
-sendiri (pertanyaan terbuka 6).
+sendiri (keputusan pemilik 6, bagian 13).
 
 ## 9. Asesmen `[asumsi]`
 
@@ -568,7 +594,7 @@ alat dari [`riset.md`](riset.md) bagian 5, dan harga tidak diperiksa.
 (misalnya pemrograman blok luring atau lewat akun guru) hanya di
 `SD6-1-M9` dan `M10` bila sekolah punya perangkat, dengan kegiatan kertas
 setara selalu tersedia. Robot edukasi tidak direkomendasikan dibeli sebelum
-pilot (riset bagian 5). Keputusan akhir ada di pemilik (pertanyaan terbuka 3).
+pilot (riset bagian 5). Opsi B disetujui pemilik (keputusan 3, bagian 13).
 
 ## 12. Kebutuhan lab dan sarana `[asumsi]`
 
@@ -576,33 +602,40 @@ pilot (riset bagian 5). Keputusan akhir ada di pemilik (pertanyaan terbuka 3).
 | --- | --- | --- |
 | Kelas 1-4 | Kartu, kertas, spidol, lantai berpetak (bisa digambar dengan kapur atau selotip), kardus; tanpa listrik. | Proyektor untuk gambar. |
 | Kelas 5-6 | Sama; papan tulis; kartu cetak; lembar kerja. | Satu komputer atau proyektor guru untuk demonstrasi M5 kelas 6 dan pengolah dokumen M7. Perangkat murid hanya bila sekolah menyediakan (opsi B). |
-| Guru | Pelatihan guru KKA resmi (guru kelas atau guru informatika) atau panduan guru yang disusun kemudian; keputusan terbuka (pertanyaan 7). | |
+| Guru | Pelatihan guru KKA resmi (guru kelas atau guru informatika) atau panduan guru yang disusun kemudian; keputusan pemilik 7 (bagian 13). | |
 
 Sekolah tanpa perangkat: seluruh silabus tetap dapat dijalankan;
 kegiatan `[opsi layar]` diganti kegiatan kertas pada baris yang sama.
 
-## 13. Pertanyaan terbuka (opsi dan rekomendasi)
+## 13. Keputusan pemilik atas pertanyaan terbuka (2026-11-19)
 
-Hanya orchestrator yang menyajikan ke pemilik lewat dialog pilihan.
+Pemilik menyetujui draf v0.1.0 beserta **rekomendasi penyusun** untuk ketujuh
+pertanyaan terbuka lewat dialog pilihan pada 2026-11-19 (dicatat di issue
+#128), dengan satu syarat: kutipan CP Fase C dicocokkan ulang dengan SK
+Kepala BSKAP 046/H/KR/2025 sebelum dikodekan. Syarat itu dipenuhi pada
+2026-11-19 (bagian 1.2-1.4: teks SK menggantikan kutipan halaman BGTK).
 
-| No. | Pertanyaan | Opsi | Rekomendasi |
+| No. | Pertanyaan | Opsi | Keputusan (opsi rekomendasi) |
 | --- | --- | --- | --- |
-| 1 | Sumber CP: halaman UPT belum dibandingkan dengan PDF panduan dan SK. | (a) pemilik menyediakan tautan atau berkas resmi (panduan dan SK 046/H/KR/2025), penyusun memverifikasi dan merevisi; (b) menerima halaman UPT sebagai sumber sementara dan tandai di silabus; (c) menunda silabus sampai tautan resmi tersedia. | (a). Tanpa sumber resmi, status `[belum terverifikasi]` tetap dan korpus tidak bisa dikodekan. |
-| 2 | Cakupan kelas. | (a) hanya kelas 5-6 (sesuai KKA); (b) kelas 4-6 (kelas 4 jembatan); (c) kelas 1-6 dengan kelas 1-4 sebagai pengantar opsional (seperti draf ini). | (c). Permintaan pemilik mencakup kelas 1-6; kelas 1-4 ditandai opsional dan di luar CP. |
+| 1 | Sumber CP: halaman UPT belum dibandingkan dengan PDF panduan dan SK. | (a) pemilik menyediakan tautan atau berkas resmi (panduan dan SK 046/H/KR/2025), penyusun memverifikasi dan merevisi; (b) menerima halaman UPT sebagai sumber sementara dan tandai di silabus; (c) menunda silabus sampai tautan resmi tersedia. | (a). Teks SK 046/H/KR/2025 dicocokkan dan dipakai (bagian 1.2-1.4); PDF panduan tetap `[belum terverifikasi]`. |
+| 2 | Cakupan kelas. | (a) hanya kelas 5-6 (sesuai KKA); (b) kelas 4-6 (kelas 4 jembatan); (c) kelas 1-6 dengan kelas 1-4 sebagai pengantar opsional (seperti draf ini). | (c). Kelas 1-4 ditandai opsional dan di luar CP. |
 | 3 | Alat kelas 5-6. | (a) unplugged saja; (b) unplugged inti + blok visual opsional kelas 6; (c) berlayar penuh. | (b). Bagian 11. |
-| 4 | Cara kelas 1-4 diselenggarakan. | (a) muatan lokal teknologi; (b) ekstrakurikuler; (c) terintegrasi ke mapel lain; (d) netral, keputusan sekolah. | (d). Silabus ini tidak boleh mengunci keputusan sekolah; (a) layak ditawarkan sebagai contoh karena muatan lokal "teknologi" tercantum di peraturan. |
-| 5 | Penyelarasan dengan `tk-coding` dan `smp-coding`. | (a) selaraskan setelah ketiganya berstatus draf; (b) tetapkan kosakata dan simbol bersama lebih dulu; (c) biarkan masing-masing mandiri. | (a), lalu (b) untuk simbol arah dan kosakata instruksi. |
-| 6 | Jembatan OSN dan kompetisi. | (a) tidak ada (draf ini); (b) riset kompetisi komputasi tingkat SD bila ada; (c) pengayaan tanpa label. | (a), dengan (c) sudah ada di kelas 3. Mengarang jembatan tidak boleh. |
-| 7 | Dukungan guru kelas. | (a) panduan guru dan lembar kerja menjadi modul draf di `content/` kelak; (b) hanya silabus; (c) bergantung pada pelatihan resmi. | (a) kelak, setelah silabus disetujui (ADR-0007: modul berstatus draf). |
+| 4 | Cara kelas 1-4 diselenggarakan. | (a) muatan lokal teknologi; (b) ekstrakurikuler; (c) terintegrasi ke mapel lain; (d) netral, keputusan sekolah. | (d). Silabus ini tidak mengunci keputusan sekolah; (a) layak ditawarkan sebagai contoh karena muatan lokal "teknologi" tercantum di peraturan. |
+| 5 | Penyelarasan dengan `tk-coding` dan `smp-coding`. | (a) selaraskan setelah ketiganya berstatus draf; (b) tetapkan kosakata dan simbol bersama lebih dulu; (c) biarkan masing-masing mandiri. | (a), lalu (b) untuk simbol arah dan kosakata instruksi. Penyelarasan dikerjakan ketika `tk-coding` dan `smp-coding` tersedia. |
+| 6 | Jembatan OSN dan kompetisi. | (a) tidak ada (draf ini); (b) riset kompetisi komputasi tingkat SD bila ada; (c) pengayaan tanpa label. | (a), dengan (c) sudah ada di kelas 3. Jembatan OSN tidak dikarang. |
+| 7 | Dukungan guru kelas. | (a) panduan guru dan lembar kerja menjadi modul draf di `content/` kelak; (b) hanya silabus; (c) bergantung pada pelatihan resmi. | (a) kelak (ADR-0007: modul berstatus draf). Modul belum ada dan tidak termasuk persetujuan ini. |
 
-Draf ini tidak mengusulkan `data/sd-coding/` maupun entri registri; itu
-baru dipertimbangkan setelah pemilik menyetujui silabus (ADR-0006).
+Dengan persetujuan ini program `sd-coding` didaftarkan di
+`data/programs.json` dan silabus dikodekan ke `data/sd-coding/`
+(ADR-0006, ADR-0008).
 
 ## 14. Sumber dan batasan
 
 - Sumber yang dibuka dan tanggalnya: [`riset.md`](riset.md) bagian 1 dan 8.
-- CP Fase C dikutip dari halaman UPT Ditjen GTK, bukan PDF atau SK
-  (bagian 1.2).
+- CP Fase C dikutip dari teks SK Kepala BSKAP 046/H/KR/2025 (bagian 1.2),
+  bukan dari PDF panduan; nama topik materi esensial kelas 5-6 mengikuti
+  tabel di halaman BGTK Kalimantan Timur (bukan bagian dari SK), jadi ejaan
+  "Pra Dasar" di `SD5-1-M8` dipertahankan.
 - Rencana mingguan adalah rancangan penyusun, belum diuji di kelas, belum
   ditinjau guru kelas atau pemilik; semua `[asumsi]`.
 - Kelas 1-4 di luar struktur kurikulum resmi KKA dan di luar CP; bukan
@@ -620,4 +653,5 @@ baru dipertimbangkan setelah pemilik menyetujui silabus (ADR-0006).
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v1.0.0 | 2026-11-19 | Disetujui pemilik beserta rekomendasi penyusun (issue #128); pertanyaan terbuka diganti keputusan (bagian 13); kutipan CP Fase C dicocokkan dengan SK 046/H/KR/2025 dan dikoreksi (bagian 1.2-1.4, 4); rencana mingguan tidak diubah. |
 | v0.1.0 | 2026-11-19 | Draf awal (issue #128), status DRAF. |
