@@ -16,6 +16,11 @@
 > Dokumen ini dipertahankan sebagai riwayat (perbandingan alat dengan
 > penilaian 11 kriteria dan sumber luar bertanggal akses 2026-11-19); bila
 > isinya berbeda dari silabus, silabus yang berlaku.
+>
+> **Catatan v1.3 (2026-11-19, issue #139):** aturan di draf ini bahwa layanan
+> AI daring "hanya didemonstrasikan guru" digantikan keputusan pemilik: murid
+> SMA bebas memakai AI generatif dengan etika (silabus bagian 7.4 dan 9.4).
+> Teks draf di bawah tidak diubah karena berfungsi sebagai riwayat.
 
 ## 0. Cara membaca dokumen ini
 

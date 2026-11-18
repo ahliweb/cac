@@ -8,7 +8,7 @@ kelas X-XII. Prasyarat: [`mulai-cepat.md`](mulai-cepat.md). Di halaman ini
 
 | Bagian | Status |
 | --- | --- |
-| Silabus v1.2: jalur A (C++), jalur B (web JS/TS/Bun, template `awcms-one`), jalur C (IoT dan robotika), jalur D (kecerdasan buatan dan analisis data), jalur E (komputasi kuantum), termasuk blok fondasi kelas X | **Disetujui** pemilik program, 2026-11-19 untuk kelima jalur (jalur A dan B: v1.1, 2026-11-19; v1.0: 2026-11-18). Menjadi sumber `data/sma-coding/`. |
+| Silabus v1.3: jalur A (C++), jalur B (web JS/TS/Bun, template `awcms-one`), jalur C (IoT dan robotika), jalur D (kecerdasan buatan dan analisis data), jalur E (komputasi kuantum), termasuk blok fondasi kelas X | **Disetujui** pemilik program, 2026-11-19 untuk kelima jalur (v1.3 menambah butir dan kebijakan AI, issue [#139](https://github.com/ahliweb/osn/issues/139); jalur A dan B: v1.1, 2026-11-19; v1.0: 2026-11-18). Menjadi sumber `data/sma-coding/`. |
 | Jalur C (IoT dan robotika, C++ gaya Arduino pada ESP32, kelas X-XII) | **Disetujui** v1.2 (issue [#68](https://github.com/ahliweb/osn/issues/68)); dipetakan ke CP lewat prinsip komputasinya. Perangkat dan keselamatan kerja: silabus bagian 3.3. |
 | Jalur D (kecerdasan buatan dan analisis data, kelas X-XII) | **Disetujui** v1.2 (issue [#84](https://github.com/ahliweb/osn/issues/84)) sebagai **pengayaan di luar rumusan CP**: tidak dihitung sebagai pemenuhan CP. |
 | Jalur E (komputasi kuantum dan cloud quantum, **kelas XI-XII saja**, kode minggu `E-XI1-M1`) | **Disetujui** v1.2 (issue [#88](https://github.com/ahliweb/osn/issues/88)) sebagai **pengayaan di luar rumusan CP**. Tidak ada semester kelas X dan tidak ada blok fondasi. |
@@ -106,7 +106,7 @@ dipetakan, dan jembatan OSN (jalur A dan C) bila ada. Bagian awal keluaran nyata
 
 Program: Silabus Pembelajaran Coding SMA
 Cakupan: semester X1
-Sumber: silabus versi 1.2.0, tanggal 2026-11-19.
+Sumber: silabus versi 1.3.0, tanggal 2026-11-19.
 
 ## Semester X1 (kelas X, fase E)
 
@@ -188,7 +188,7 @@ luas dan keliling; pembagian bulat dan sisa; konversi suhu; rata-rata dua bilang
 - [ ] Keluaran selesai: program hitung berformat
 
 ---
-Sumber: Silabus Pembelajaran Coding SMA, versi 1.2.0, tanggal 2026-11-19.
+Sumber: Silabus Pembelajaran Coding SMA, versi 1.3.0, tanggal 2026-11-19.
 ```
 
 Untuk minggu jalur pengayaan (D atau E) lembar menyatakan bahwa jalur itu di
@@ -371,7 +371,7 @@ silabus mengikuti alur di [`pemilik-peninjau.md`](pemilik-peninjau.md).
 | B | Komputer dengan Bun (versi mengikuti `awcms-one`, saat ini 1.4.4), Node tidak wajib, peramban modern, Git, editor; akses internet untuk paket. |
 | B (opsi 1 kelas XII) | Satu atau beberapa mesin lab yang mampu menjalankan Docker dan PostgreSQL; spesifikasi minimum belum terverifikasi. |
 | C | ESP32 DevKit (satu per kelompok tiga murid), komputer lab dengan kompiler C++ dan alat unggah, komponen elektronik dasar, daya USB atau baterai bertegangan rendah (tanpa listrik jaringan); jaringan lab terpisah dan penengah pesan lokal di komputer guru untuk kelas XI semester 2. Sekolah tanpa perangkat: set dipinjamkan mitra bergilir. |
-| D | Komputer lab dengan Orange Data Mining (kelas X); Python dengan `pandas` dan `scikit-learn` mulai kelas XI; spesifikasi minimum menunggu survei lab. Layanan AI daring hanya demonstrasi guru. |
+| D | Komputer lab dengan Orange Data Mining (kelas X); Python dengan `pandas` dan `scikit-learn` mulai kelas XI; spesifikasi minimum menunggu survei lab. Pemakaian AI generatif oleh murid bebas dengan etika (silabus bagian 7.4); murid tidak wajib punya akun pribadi. |
 | E | Peramban untuk Quirk; C++ (jalur A) atau Bun (jalur B) untuk simulator buatan sendiri; demonstrasi guru dengan Python dan Qiskit serta, bila ada, satu akun sekolah atau lembaga untuk cloud quantum. |
 | Umum | Akun uji sintetis; tanpa akun pribadi siswa wajib. |
 
@@ -389,3 +389,23 @@ diaudit mitra, ditinjau pemilik (silabus bagian 3.3 dan 9.3).
 - Proyek web siswa (formulir kontak dan sejenisnya) tidak boleh mengumpulkan
   data pribadi nyata; rahasia dan berkas `.env` tidak boleh di-commit.
 - Hasil kerja dan nilai siswa Anda simpan di sistem sekolah, bukan di sini.
+
+## Kebijakan penggunaan AI (silabus v1.3)
+
+Murid SMA di semua jalur boleh memakai AI generatif **dengan etika** (keputusan
+pemilik 2026-11-19, issue #139); ini menggantikan aturan lama jalur D bahwa
+layanan AI hanya didemonstrasikan guru. Aturan lengkapnya ada di silabus
+bagian 7.4. Ringkasnya untuk guru:
+
+- Murid mencatat pemakaian AI (alat, tujuan, garis besar perintah, bagian yang
+  dipakai, cara memverifikasi); log bersifat sintetis dan tidak disimpan di
+  repositori ini.
+- Tanpa AI: asesmen sumatif, kuis kode, latihan terpadu dan kontes mini jalur
+  A (`A-XII2-M5..M8`), dan tugas yang Anda tandai "tanpa AI" di awal tugas.
+- Tidak menaruh data pribadi, kata sandi, kunci, atau rahasia pada permintaan
+  ke layanan AI.
+- Kode buatan AI dibaca, dijalankan, dan diuji; murid harus dapat menjelaskan
+  kode yang ia serahkan.
+- Pemakaian tunduk pada usia minimum dan ketentuan tiap layanan serta izin
+  sekolah dan orang tua; Anda memeriksanya lebih dulu (belum diverifikasi
+  penyusun). Murid tidak wajib punya akun pribadi.
