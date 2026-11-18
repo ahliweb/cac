@@ -1,0 +1,429 @@
+# Silabus Draf Pembelajaran Coding untuk Dewasa — v0.1
+
+- **Version:** v0.1.0
+- **Last updated:** 2026-11-19
+- **Status:** DRAF — belum disetujui pemilik program. Tidak ada `data/dewasa-coding/`, tidak ada entri `data/programs.json`, dan tidak ada modul di `content/` sampai pemilik menyetujui silabus (ADR-0006, ADR-0007).
+- **Changeset:** Draf awal silabus program `dewasa-coding` dengan empat jalur persona (pekerja, profesional, personal, pebisnis/UMKM), modul berbasis jam, pemetaan ke SKKNI 282/2016 untuk jalur profesional, dan pertanyaan terbuka (#131).
+
+> **DRAF.** Dokumen ini konten **karangan** (*authored*) menurut
+> [ADR-0007](../../architecture/adr/0007-authored-learning-content.md),
+> bukan dokumen pemerintah dan bukan transkripsi. Fakta dari sumber luar
+> (nomor keputusan, kode unit, lisensi) dibaca dari sumber yang dibuka dan
+> dirinci di [`riset.md`](riset.md); selebihnya rancangan penyusun. Agent
+> tidak pernah mencatat persetujuan atas nama pemilik. Tujuan setiap jalur,
+> jam, dan urutan modul adalah usulan.
+
+## 0. Cara membaca dokumen ini
+
+- `[belum terverifikasi]`: tidak dapat dipastikan dari sumber yang benar-benar
+  dibuka (lihat `riset.md`). Bukan fakta.
+- `[asumsi]`: keputusan perancangan penyusun, bukan data resmi.
+- **Kode modul**: `DW-<jalur>-M<n>`. Jalur: `PKJ` (pekerja), `PRO`
+  (profesional), `PRS` (personal), `BIS` (pebisnis/UMKM). Modul bersama
+  seluruh jalur memakai `DW-FND-M<n>`. Contoh: `DW-PRO-M4`.
+- **Struktur waktu** memakai **jam belajar** per modul, bukan semester atau
+  minggu sekolah. Satu "jam" = 60 menit belajar efektif (teori, praktik, dan
+  tugas) `[asumsi]`. Jam di dokumen ini adalah **perkiraan** untuk pemula
+  dengan 3-5 jam belajar per minggu; tidak ada sumber resmi yang
+  menetapkannya.
+- Kutipan unit kompetensi SKKNI disalin dari daftar bab II.B Kepmenaker
+  282/2016 (`riset.md` bagian 2.2).
+
+## 1. Tujuan, sasaran, dan batas program
+
+Program memberi orang dewasa jalan belajar coding yang berpijak pada
+**tujuan nyata masing-masing persona**, bukan kurikulum sekolah. Empat
+jalur dirancang terpisah supaya peserta tidak dipaksa melewati materi yang
+tidak ia butuhkan, dengan satu modul fondasi bersama tentang keamanan dan
+etika.
+
+| Jalur | Persona | Tujuan utama | Jam `[asumsi]` | Akhir jalur |
+| --- | --- | --- | --- | --- |
+| `PKJ` | Pekerja | Meningkatkan keterampilan di pekerjaan saat ini: otomasi lembar kerja, skrip kecil, pengolahan data, dan AI sebagai alat produktivitas | 8 + 40 = 48 | Portofolio: satu alur kerja kantor yang diotomasi dengan data sintetis |
+| `PRO` | Profesional | Alih karier atau peningkatan menjadi pengembang perangkat lunak, selaras SKKNI 282/2016 | 8 + 120 = 128 | Portofolio kode lengkap dan opsi uji kompetensi LSP |
+| `PRS` | Personal | Pembelajar mandiri atau hobi: literasi komputasional dan proyek pribadi | 8 + 30 = 38 | Satu proyek pribadi dan peta jalan belajar lanjut |
+| `BIS` | Pebisnis/UMKM | Memakai alat digital untuk usaha: situs, toko daring, pencatatan dan data penjualan, otomasi, no-code/low-code, dan AI | 8 + 48 = 56 | Rencana dan prototipe digital usaha sintetis |
+
+Batas program:
+
+- Program **tidak** menjanjikan pekerjaan, sertifikat resmi, atau
+  pendanaan. Sertifikasi kompetensi hanya melalui LSP berlisensi BNSP di
+  luar program ini (bagian 8).
+- Program **bukan** layanan konsultasi bisnis, pajak, atau hukum.
+- Repositori **tidak menyimpan data peserta** (ADR-0004); semua contoh dan
+  proyek memakai data sintetis (bagian 9).
+
+## 2. Struktur program dan asumsi
+
+| Butir | Nilai `[asumsi]` |
+| --- | --- |
+| Satuan | Modul berjam; peserta mengambil satu jalur atau lebih |
+| Modul bersama | `DW-FND-M1` (8 jam) wajib bagi semua jalur sebelum modul jalur |
+| Beban belajar per minggu | 3-5 jam; jalur `PKJ` selesai sekitar 10-16 minggu, `PRO` sekitar 6-9 bulan, `PRS` sekitar 8-12 minggu, `BIS` sekitar 11-18 minggu |
+| Bahasa pemrograman inti | Python (jalur `PKJ`, `PRO`, `PRS`); JavaScript/TypeScript untuk web (jalur `PRO`, `BIS` opsional) |
+| Bentuk pelaksanaan | Mandiri bermodul dengan sesi pendampingan opsional (pertanyaan terbuka 12.2) |
+| Perangkat peserta | Laptop atau komputer dengan 4 GB RAM, sistem operasi bebas, koneksi internet untuk mengunduh alat sekali `[belum terverifikasi]` |
+| Prasyarat umum | Dapat mengoperasikan komputer, peramban, berkas, dan surel; tidak perlu pengalaman coding |
+| Bahasa pengantar | Indonesia |
+
+## 3. Modul bersama
+
+### 3.1 `DW-FND-M1` — Keamanan, privasi, dan etika kerja dengan kode dan AI (8 jam)
+
+| Butir | Isi |
+| --- | --- |
+| Hasil belajar | Peserta dapat (a) memisahkan data nyata dari data sintetis dan menolak memasukkan data pelanggan, rekan, atau diri sendiri ke latihan; (b) tidak menaruh kata sandi, kunci, atau token di berkas kode atau di dalam perintah ke asisten AI; (c) memakai manajer kata sandi dan autentikasi dua langkah; (d) memeriksa keluaran asisten AI sebelum dipakai |
+| Topik | data pribadi dan data usaha; kredensial dan berkas `.env` (tidak dibagikan, tidak di-commit); hak kekayaan intelektual dan lisensi (konsep); cara kerja asisten AI dan kemungkinan salah; menyaring konten dan penipuan daring |
+| Latihan | Audit potongan skrip sintetis yang sengaja berisi "kata sandi palsu"; buat daftar periksa privasi satu halaman |
+| Rujukan | DigComp 3.0 area 4 ("Safety, wellbeing and responsible use", kompetensi 4.2 dan 3.3) dan empat kerangka literasi digital nasional, hanya sebagai pembanding (`riset.md` bagian 5) |
+
+## 4. Jalur `PKJ` — Pekerja: upskilling di pekerjaan saat ini
+
+**Tujuan:** peserta mengurangi pekerjaan kantor berulang lewat rumus
+lembar kerja, skrip, dan alat bantu AI, dengan tetap menjaga kerahasiaan data
+kantor.
+
+**Prasyarat:** `DW-FND-M1`; terbiasa memakai lembar kerja dasar (jumlah,
+rata-rata, format) `[asumsi]`.
+
+**Durasi:** 40 jam `[asumsi]` (8 modul × 5 jam).
+
+**Alat (rekomendasi, bagian 10):** lembar kerja LibreOffice (atau lembar
+kerja yang dipakai kantor, tanpa data nyata di latihan), Python, editor teks.
+
+| Kode | Modul | Hasil belajar | Keluaran portofolio |
+| --- | --- | --- | --- |
+| `DW-PKJ-M1` | Memetakan pekerjaan berulang | mengidentifikasi tugas yang layak diotomasi; menulis langkah tugas sebagai algoritma | peta tiga tugas berulang dan langkahnya |
+| `DW-PKJ-M2` | Rumus dan pembersihan data lembar kerja | memakai rumus pencarian, kondisi, teks, tanggal; membersihkan data kotor sintetis | lembar kerja sintetis bersih dan terdokumentasi |
+| `DW-PKJ-M3` | Pengantar Python untuk data lembar kerja | variabel, daftar, pengulangan, fungsi; membaca berkas CSV | skrip yang membaca CSV sintetis |
+| `DW-PKJ-M4` | Mengolah dan menggabungkan data | memfilter, mengelompokkan, menggabungkan dua tabel CSV | skrip ringkasan per kategori |
+| `DW-PKJ-M5` | Otomasi berkas dan laporan | membuat laporan bulanan otomatis (CSV ke ringkasan), mengganti nama berkas massal pada folder sintetis | skrip laporan bulanan |
+| `DW-PKJ-M6` | AI untuk produktivitas kerja | menulis permintaan jelas; meminta draf rumus atau skrip; memeriksa dan menguji keluaran; mengenali halusinasi; menjaga data | catatan perbandingan keluaran AI dengan hasil uji |
+| `DW-PKJ-M7` | Visualisasi dan penyajian | membuat grafik yang jujur dan ringkasan satu halaman | satu halaman laporan dengan grafik |
+| `DW-PKJ-M8` | Proyek akhir | mengotomasi satu alur kerja kantor sintetis dari awal sampai akhir dengan dokumentasi | portofolio `PKJ` (bagian 8.1) |
+
+**Proyek berbasis data sintetis:** "Rekap absensi dan lembur dari log
+sintetis", "rekap faktur bulanan dari CSV sintetis", atau "daftar tugas tim
+dari beberapa lembar". Data dibangkitkan dengan skrip dari benih acak yang
+dicatat; tidak ada nama atau perusahaan nyata.
+
+**Pilihan lanjutan `[asumsi]`:** skrip pada lembar kerja web (Apps Script)
+sebagai topik opsional bagi pekerja yang kantornya memakai lembar kerja web
+(bagian 10.1: kuota, akun, dan alasan tidak menjadi inti).
+
+## 5. Jalur `PRO` — Profesional: alih karier atau menjadi pengembang
+
+**Tujuan:** peserta mampu bekerja pada tingkat pemula sebagai pengembang
+perangkat lunak (aplikasi web dan data sederhana), dengan unit kompetensi
+SKKNI 282/2016 sebagai kerangka rujukan (bagian 5.2).
+
+**Prasyarat:** `DW-FND-M1`; logika dasar dan kemampuan membaca Bahasa
+Inggris teknis `[asumsi]`. Peserta dari `PKJ` atau sma-coding jalur A/B
+dapat melewati sebagian modul (bagian 6).
+
+**Durasi:** 120 jam `[asumsi]` (12 modul × 10 jam) dengan beban 5 jam per
+minggu menjadi sekitar 24 minggu.
+
+**Alat (rekomendasi, bagian 10):** Python untuk inti pemrograman, SQL
+dengan basis data berkas ringan, Git, editor kode; JavaScript/TypeScript
+dengan Bun untuk modul web (selaras sma-coding jalur B).
+
+### 5.1 Rencana modul
+
+| Kode | Modul | Hasil belajar | Unit SKKNI terkait (bagian 5.2) |
+| --- | --- | --- | --- |
+| `DW-PRO-M1` | Lingkungan kerja pengembang dan Git | memasang dan mengatur alat pemrograman; memakai terminal; versi kode dengan Git | `J.620100.011.01`, `J.620100.012.01`, `J.620100.026.01` |
+| `DW-PRO-M2` | Dasar pemrograman terstruktur | variabel, kondisi, perulangan, subrutin; memecah masalah | `J.620100.013.01`, `J.620100.017.02`, `J.620100.010.01` |
+| `DW-PRO-M3` | Struktur data dan algoritma dasar | daftar, kamus, himpunan, pencarian, pengurutan; menyatakan dan membandingkan solusi | `J.620100.004.02`, `J.620100.022.02` |
+| `DW-PRO-M4` | Fungsi, modul, dan kode yang rapi | penggunaan ulang, organisasi berkas, pedoman penulisan, dokumentasi kode | `J.620100.014.01`, `J.620100.015.01`, `J.620100.016.01`, `J.620100.023.02` |
+| `DW-PRO-M5` | Debugging dan pengujian unit | menemukan galat sistematis; menulis uji unit | `J.620100.025.02`, `J.620100.033.02` |
+| `DW-PRO-M6` | Pemrograman berorientasi objek dan pustaka | kelas dan objek; memakai pustaka siap pakai | `J.620100.018.02`, `J.620100.019.02`, `J.620100.003.01` |
+| `DW-PRO-M7` | SQL dan akses basis data | skema, kueri, relasi antar tabel, akses dari kode | `J.620100.020.02`, `J.620100.021.02`, `J.620100.007.01` |
+| `DW-PRO-M8` | Antarmuka web: HTML, CSS, JavaScript/TypeScript | halaman responsif; interaksi sisi peramban | `J.620100.005.02`, `J.620100.006.01` |
+| `DW-PRO-M9` | Layanan web dan API | membuat dan memanggil API sederhana; berkas konfigurasi | `J.620100.027.01`, `J.620100.019.02` |
+| `DW-PRO-M10` | Kolaborasi: tinjau kode dan pengujian lanjut | tinjau kode sejawat; uji integrasi; analisis kode statis | `J.620100.032.01`, `J.620100.034.02`, `J.620100.036.02` |
+| `DW-PRO-M11` | Konfigurasi, pencatatan, dan operasi dasar | lingkungan pengembangan dan produksi; log dan pemberitahuan masalah; pembaruan | `J.620100.042.01`, `J.620100.046.01`, `J.620100.044.01`, `J.620100.047.01` |
+| `DW-PRO-M12` | Proyek akhir dan persiapan portofolio | membaca spesifikasi, membangun aplikasi kecil, uji penerimaan pengguna sintetis, petunjuk teknis | `J.620100.009.01`, `J.620100.038.01`, `J.620100.039.02`, `J.620100.008.01` |
+
+### 5.2 Pemetaan ke SKKNI 282/2016
+
+**Sumber:** Keputusan Menteri Ketenagakerjaan Nomor 282 Tahun 2016
+(ditetapkan 8 November 2016; status "Berlaku" di JDIH Kemnaker pada
+2026-11-19). Judul 47 unit ada di `riset.md` bagian 2.2; kolom "Unit SKKNI
+terkait" di atas memakai **kode persis dari daftar itu**.
+
+**Cakupan jujur:**
+
+| Pernyataan | Dasar |
+| --- | --- |
+| Modul `DW-PRO-M1..M12` menyentuh 34 dari 47 unit melalui **kesamaan judul dan topik** | Dihitung dari kolom unit di tabel 5.1 `[asumsi]` |
+| Pemetaan adalah ke **judul unit**, belum ke elemen kompetensi dan kriteria unjuk kerja | Elemen dan kriteria tidak dibaca (`riset.md` bagian 8) |
+| Menyentuh sebuah unit **tidak berarti** peserta kompeten menurut unit itu | Kompetensi dinyatakan hanya oleh uji LSP |
+| 13 unit tidak dicakup: `001`, `002`, `024`, `028`, `029`, `030`, `031`, `035`, `037`, `040`, `041`, `043`, `045` | Unit lanjutan (skalabilitas, real time, paralel, multimedia, profiling, stress test, cutover, migrasi, pemantauan sumber daya) di luar ruang lingkup pemula `[asumsi]` |
+| Sufiks versi kode (`.01` atau `.02`) mengikuti daftar bab II.B; halaman rincian unit `009` memuat `.02` | `[belum terverifikasi]` mana yang berlaku (`riset.md` bagian 2.2) |
+| Apakah ada SKKNI yang lebih baru dari 282/2016 | `[belum terverifikasi]` |
+
+Catatan penghitungan: 34 unit berbeda muncul di kolom unit tabel 5.1
+(dihitung dengan skrip kecil dari kode di tabel itu); 47 dikurangi 34 sama
+dengan 13 unit yang tidak dicakup. Pemilik diminta memeriksa ulang hitungan
+ini (bagian 12.4).
+
+**Skema LSP yang relevan (dari brosur satu LSP perguruan tinggi, `riset.md`
+bagian 3):** Junior Web Programmer (delapan unit: `004.02`, `005.02`,
+`011.01`, `015.01`, `017.02`, `019.02`, `023.02`, `025.02`), Programmer
+(sembilan unit: `009.01`, `016.01`, `017.02`, `018.02`, `019.02`, `021.02`,
+`023.02`, `025.02`, `033.02`). Seluruh unit itu ada di modul `PRO`
+(`004`, `005`, `011`, `015`, `017`, `019`, `023`, `025` dan `009`, `016`,
+`018`, `021`, `033`). Kecocokan judul `015.01` antara brosur dan SKKNI
+bermasalah (`riset.md` bagian 3).
+
+### 5.3 Proyek berbasis data sintetis
+
+Proyek utama: **aplikasi pencatatan inventaris kecil** (Python,
+SQL, dan antarmuka web sederhana) dengan data barang sintetis; atau
+alternatif **API laporan penjualan sintetis**. Peserta menyerahkan
+repositori kode, pengujian, dan petunjuk teknis. Data nyata, nama
+perusahaan nyata, dan kredensial tidak dipakai (bagian 9).
+
+## 6. Jalur `PRS` — Personal: pembelajar mandiri dan hobi
+
+**Tujuan:** peserta memahami cara berpikir komputasional dan menulis
+program kecil untuk kebutuhan pribadi (mengatur, menghitung, membuat
+halaman), tanpa tekanan karier.
+
+**Prasyarat:** `DW-FND-M1`; tidak ada prasyarat coding.
+
+**Durasi:** 30 jam `[asumsi]` (6 modul × 5 jam).
+
+| Kode | Modul | Hasil belajar | Keluaran portofolio |
+| --- | --- | --- | --- |
+| `DW-PRS-M1` | Berpikir komputasional tanpa kode | menguraikan masalah sehari-hari menjadi urutan, kondisi, dan pengulangan | tiga masalah pribadi dalam bentuk algoritma |
+| `DW-PRS-M2` | Program pertama dengan Python | variabel, masukan dan keluaran, kondisi, perulangan | kuis atau kalkulator kecil |
+| `DW-PRS-M3` | Data dan berkas | daftar, kamus, membaca dan menulis berkas teks | pencatat sederhana (mis. daftar bacaan) dengan data sintetis |
+| `DW-PRS-M4` | Halaman web pertama | HTML dan CSS; menerbitkan halaman statis secara lokal | halaman profil hobi sintetis |
+| `DW-PRS-M5` | Mengotomasi urusan sehari-hari | skrip untuk menamai ulang berkas, menghitung anggaran, mengingatkan jadwal | satu skrip yang berguna |
+| `DW-PRS-M6` | Proyek mandiri dan jalan lanjut | merancang, membangun, dan menjelaskan satu proyek; memilih jalur lanjut | proyek mandiri dan peta jalan belajar (mis. lanjut ke `PRO`) |
+
+**Proyek berbasis data sintetis:** setiap latihan memakai data contoh yang
+disediakan atau dibangkitkan; proyek mandiri boleh bertema pribadi tetapi
+**tidak mengunggah data pribadi nyata** ke repositori maupun layanan daring
+pada latihan (bagian 9).
+
+**Jembatan:** dari `PRS` ke `PRO` (M2 dan M3 `PRS` setara sebagian `PRO-M2`
+dan `PRO-M3`, dengan tugas dilengkapi) dan ke sma-coding jalur A atau B
+bagi peserta yang ingin mendampingi anak (bagian 6.1).
+
+### 6.1 Jembatan dari program lain
+
+| Asal | Tujuan | Catatan `[asumsi]` |
+| --- | --- | --- |
+| sma-coding jalur A (C++) | `PRO` | Dasar struktur data dan algoritma dari jalur A boleh menggantikan `DW-PRO-M3` setelah uji singkat; bahasa inti `PRO` tetap Python, sehingga M2 dan M4 diulang pada Python |
+| sma-coding jalur B (Bun, TypeScript, `awcms-one`) | `PRO` modul M8, M9; `BIS` modul M4 | Lulusan jalur B boleh langsung memulai M8 setelah M1 |
+| sma-coding jalur D (data, AI) | `PKJ` M3-M4, M6; `PRO` M3 | Pengolahan data dan etika AI sebagian sama |
+| kuliah-coding (issue #130, belum ada dokumen atau program) | `PRO` | **Belum dapat dirancang**: program itu belum ada di repositori. Jembatan dicatat sebagai pertanyaan terbuka (12.7) |
+| `PRS` | `PKJ`, `PRO`, `BIS` | Setelah `PRS-M6`, peserta memilih jalur lanjut |
+| `PKJ` | `PRO` | `PKJ-M3` sampai M5 menggantikan sebagian `PRO-M2` |
+
+## 7. Jalur `BIS` — Pebisnis/UMKM
+
+**Tujuan:** pemilik atau pengelola usaha kecil memakai alat digital secara
+mandiri dan aman: mencatat, membaca data penjualan, memiliki situs usaha,
+memahami toko daring dan pembayaran digital, mengotomasi tugas, dan memakai
+AI dengan hati-hati.
+
+**Prasyarat:** `DW-FND-M1`; mengoperasikan ponsel dan peramban. Tidak ada
+prasyarat coding.
+
+**Durasi:** 48 jam `[asumsi]` (8 modul × 6 jam), dengan pendampingan
+disarankan (riset: "Pendampingan sering kali lebih dibutuhkan daripada
+sekadar pelatihan penggunaan aplikasi", `riset.md` bagian 6).
+
+| Kode | Modul | Hasil belajar | Keluaran portofolio |
+| --- | --- | --- | --- |
+| `DW-BIS-M1` | Peta digital usaha | menilai proses usaha yang bisa didigitalkan; mengenali risiko | peta proses usaha sintetis |
+| `DW-BIS-M2` | Pencatatan penjualan di lembar kerja | merancang tabel transaksi, rumus total dan laba kasar, validasi data | buku penjualan sintetis |
+| `DW-BIS-M3` | Membaca data penjualan | ringkasan per produk dan per bulan, tabel pivot, grafik yang jujur | satu halaman ringkasan penjualan sintetis |
+| `DW-BIS-M4` | Situs usaha | halaman usaha statis (no-code atau template); konsep domain dan hosting; opsi template `awcms-one` profil `landing` sebagai lanjutan | situs statis usaha sintetis |
+| `DW-BIS-M5` | Toko daring dan pembayaran digital (konsep) | alur pesanan, katalog, ongkos kirim, konsep QRIS dan pembayaran; mengapa data pembayaran tidak disimpan sendiri | alur toko daring dalam diagram, tanpa transaksi nyata |
+| `DW-BIS-M6` | Otomasi no-code/low-code | formulir ke lembar kerja ke pemberitahuan; kapan otomasi layak | satu alur otomatis dengan formulir sintetis |
+| `DW-BIS-M7` | AI untuk usaha | draf teks promosi, ringkasan ulasan sintetis, balasan pelanggan contoh; verifikasi, hak cipta, dan privasi | contoh permintaan AI yang aman dan hasil yang diperiksa |
+| `DW-BIS-M8` | Proyek akhir: rencana digital usaha | menggabungkan M1-M7 menjadi rencana dan prototipe | portofolio `BIS` (bagian 8.1) |
+
+**Proyek berbasis data sintetis:** "Toko kue sintetis" dengan 200 transaksi
+buatan; dibangkitkan dari benih acak. **Data pelanggan nyata UMKM peserta
+tidak dipakai di latihan** (bagian 9). Peserta menerapkan hasil ke
+usahanya sendiri **di luar** materi program, dengan keputusan dan tanggung
+jawabnya sendiri.
+
+## 8. Asesmen dan opsi sertifikasi
+
+### 8.1 Asesmen berbasis portofolio `[asumsi]`
+
+| Prinsip | Isi |
+| --- | --- |
+| Bentuk | Portofolio per jalur: keluaran tiap modul (tabel di bagian 4-7) ditambah proyek akhir |
+| Rubrik | Ketepatan (berjalan benar pada data sintetis), keterbacaan, pengujian atau pemeriksaan hasil, dokumentasi, keamanan data (tanpa kredensial dan data nyata) |
+| Pemeriksaan | Tinjauan sejawat dan pendamping; kasus uji otomatis untuk modul kode `PKJ`, `PRO`, `PRS` |
+| Ambang | `[belum diputuskan]`; usulan: modul "selesai" bila rubrik terpenuhi, tanpa nilai angka |
+| Bukti penyelesaian | Daftar modul selesai yang dicatat peserta sendiri; **repositori ini tidak menyimpan catatan peserta** |
+
+### 8.2 Opsi sertifikasi
+
+| Opsi | Isi | Kelebihan | Kekurangan |
+| --- | --- | --- | --- |
+| A. Tanpa sertifikasi | Hanya portofolio | tanpa biaya, tanpa janji berlebihan | tidak ada pengakuan resmi |
+| B. Uji kompetensi LSP BNSP untuk jalur `PRO` | Peserta mendaftar sendiri ke LSP berlisensi untuk skema seperti Junior Web Programmer atau Programmer (`riset.md` bagian 3) | pengakuan nasional berbasis SKKNI | biaya, syarat peserta, dan jadwal ditentukan LSP dan `[belum terverifikasi]`; modul `PRO` tidak menjamin lulus |
+| C. Penyelenggara menerbitkan keterangan selesai | Pernyataan selesai modul oleh penyelenggara | murah | bukan sertifikat kompetensi; wewenang penyelenggara `[belum terverifikasi]` |
+
+**Rekomendasi:** A sebagai dasar, B sebagai opsi jalur `PRO` (peserta
+mendaftar sendiri), dan tidak ada sertifikat resmi untuk `PKJ`, `PRS`,
+`BIS`. Alasan: SKKNI hanya ada untuk pemrograman yang diverifikasi; tidak
+ada standar terbuka yang diverifikasi untuk tiga jalur lain.
+
+## 9. Privasi dan keamanan (ADR-0004)
+
+| Aturan | Isi |
+| --- | --- |
+| Repositori tanpa data pembelajar | Tidak ada nama, surel, nomor telepon, NIK, perusahaan, atau catatan kemajuan peserta di repositori ini ([ADR-0004](../../architecture/adr/0004-no-learner-personal-data.md)) |
+| Data latihan | Selalu sintetis dan jelas palsu; dibangkitkan dengan skrip dari benih acak yang dicatat |
+| Data pelanggan UMKM | **Tidak dipakai di latihan**, tidak diunggah ke layanan AI, no-code, atau lembar kerja web, dan tidak masuk ke portofolio |
+| Data kantor pekerja | Latihan `PKJ` tidak memakai berkas kerja nyata; peserta memindahkan hasil ke kantornya sendiri sesuai kebijakan kantor |
+| Kredensial | Kata sandi, kunci API, dan token **tidak disimpan** di berkas kode, repositori, tangkapan layar, atau permintaan ke asisten AI; berkas `.env` tidak di-commit |
+| Layanan daring | Latihan tidak mewajibkan akun layanan berbayar atau akun pribadi; layanan AI dan no-code pada modul terkait dipakai dengan data sintetis atau didemonstrasikan pendamping |
+| Hukum | Perlindungan data pribadi merujuk UU No. 27 Tahun 2022 sebagaimana dicatat di ADR-0004; penafsiran hukum untuk usaha peserta di luar program ini |
+
+## 10. Opsi alat, trade-off, dan rekomendasi
+
+Fakta lisensi dan kuota diverifikasi di `riset.md` bagian 7.
+
+### 10.1 Lembar kerja dan skrip (jalur `PKJ`, `BIS`)
+
+| Opsi | Kelebihan | Kekurangan |
+| --- | --- | --- |
+| **A. Lembar kerja LibreOffice (MPL 2.0) + Python (disarankan)** | gratis; tanpa akun; offline; data tetap di perangkat; Python terpakai juga di `PRO` dan `PRS` | peserta yang kantornya memakai lembar kerja web harus memindahkan konsep |
+| B. Lembar kerja web + Apps Script | sesuai kantor yang memakai layanan itu; skrip berjalan di awan | perlu akun layanan web; kuota: 6 menit per eksekusi dan 90 menit per hari untuk pemicu pada akun konsumen; data berada di layanan pihak lain, bertentangan dengan semangat ADR-0004 bila data nyata dipakai |
+| C. Hanya rumus, tanpa skrip | termudah | tidak menjawab tujuan otomasi lebih jauh |
+
+### 10.2 JavaScript/TypeScript dan template web (jalur `PRO`, `BIS`)
+
+| Opsi | Kelebihan | Kekurangan |
+| --- | --- | --- |
+| **A. Bun + TypeScript pada `PRO`-M8..M9; situs statis atau no-code pada `BIS` (disarankan)** | selaras sma-coding jalur B (Bun, `awcms-one`, MIT); `BIS` tidak perlu lingkungan berat | peserta `BIS` tidak belajar kode web |
+| B. `awcms-one` profil `landing` untuk semua jalur web | satu tumpukan; template nyata | beban berat (PostgreSQL, Docker; `apps/cms` hidup mungkin perlu: `[belum terverifikasi]`); terlalu berat untuk `BIS` |
+| C. Node.js dan kerangka kerja lain | ekosistem besar | tidak selaras sma-coding; tambahan alat |
+
+### 10.3 No-code/low-code (jalur `BIS`, opsional `PKJ`)
+
+| Opsi | Kelebihan | Kekurangan |
+| --- | --- | --- |
+| **A. Ajarkan konsep alur (pemicu, aksi, data) dan pakai satu alat yang lisensi dan lokasi datanya sudah dicek (disarankan)** | tahan terhadap perubahan alat; menghindari promosi | peserta harus memilih alat sendiri setelah kelas |
+| B. Pasang sendiri alat berlisensi "fair-code" seperti n8n | gratis untuk penggunaan internal; data di perangkat sendiri | batasan lisensi (penggunaan internal atau nonkomersial; bukan lisensi OSI); butuh pasang dan perawatan sendiri |
+| C. Layanan awan no-code berbayar | mudah | harga dan kuota `[belum terverifikasi]`; data di pihak lain; biaya berulang |
+
+### 10.4 AI untuk produktivitas
+
+| Opsi | Kelebihan | Kekurangan |
+| --- | --- | --- |
+| **A. Prinsip dan latihan dengan data sintetis; layanan dipilih peserta, didemonstrasikan pendamping (disarankan)** | tidak mengikat ke satu layanan; privasi terjaga; fokus pada verifikasi | peserta mungkin memakai layanan berbeda sehingga hasil tidak seragam |
+| B. Model lokal (mis. dijalankan dengan Ollama, MIT) | data di perangkat sendiri; gratis | butuh perangkat memadai (`[belum terverifikasi]`); lisensi bobot model berbeda-beda; mutu lebih rendah pada perangkat kecil |
+| C. Layanan AI berbayar sebagai bagian program | mutu tinggi | biaya peserta; data keluar perangkat; harga `[belum terverifikasi]` |
+
+## 11. Biaya bagi peserta
+
+| Komponen | Perkiraan | Status |
+| --- | --- | --- |
+| Perangkat lunak inti (Python, LibreOffice, Bun, editor, Git) | Rp0 | Lisensi terverifikasi (`riset.md` bagian 7); Git tidak dicek |
+| Perangkat keras | Laptop atau komputer milik sendiri | `[asumsi]` |
+| Koneksi internet | Biaya paket data peserta | tidak diperkirakan |
+| Layanan AI dan no-code | Rp0 pada rancangan inti (data sintetis, demonstrasi) | harga layanan berbayar `[belum terverifikasi]` |
+| Uji kompetensi LSP (opsional, jalur `PRO`) | ditetapkan LSP | `[belum terverifikasi]` |
+| Pendanaan pelatihan pemerintah | Kartu Prakerja dan DTS bisa menjadi peluang pendanaan peserta | status 2026 `[belum terverifikasi]` (`riset.md` bagian 4); program ini tidak menjadi mitra resmi |
+
+## 12. Pertanyaan terbuka bagi pemilik
+
+Keputusan ini hak pemilik; penyusun hanya memberi rekomendasi. Bila pemilik
+setuju, opsi terpilih dicatat dengan tanggal.
+
+### 12.1 Bentuk program: satu program bersama atau empat program terpisah
+
+| Opsi | Konsekuensi |
+| --- | --- |
+| **A. Satu program `dewasa-coding` dengan empat jalur dan modul bersama `DW-FND-M1` (disarankan)** | satu entri registri; modul keamanan tidak diulang; jembatan antarjalur mudah |
+| B. Empat program terpisah | setiap persona mandiri; modul keamanan diulang; empat entri registri dan korpus |
+
+### 12.2 Bentuk pelaksanaan
+
+| Opsi | Konsekuensi |
+| --- | --- |
+| **A. Mandiri bermodul + pendampingan opsional (disarankan)** | biaya rendah; riset UMKM menekankan pendampingan, sehingga opsional kuat untuk `BIS` |
+| B. Kohort terjadwal | struktur dan komunitas lebih baik; butuh penyelenggara dan jadwal |
+| C. Hanya mandiri tanpa pendampingan | termurah; risiko putus belajar |
+
+### 12.3 Bahasa inti jalur `PRO`
+
+| Opsi | Konsekuensi |
+| --- | --- |
+| **A. Python inti + JavaScript/TypeScript untuk web (disarankan)** | selaras `PKJ` dan `PRS`; web selaras sma-coding jalur B |
+| B. Hanya JavaScript/TypeScript | satu bahasa; kurang cocok untuk data dan otomasi |
+| C. Bahasa lain (mis. Java) | sesuai sebagian lowongan; tidak ada rujukan dalam riset; beban alat bertambah |
+
+### 12.4 Pemetaan SKKNI dan target skema `PRO`
+
+| Opsi | Konsekuensi |
+| --- | --- |
+| **A. Targetkan skema Junior Web Programmer sebagai acuan; verifikasi dengan LSP sebelum rilis (disarankan)** | delapan unit semuanya ada di `PRO`; jelas dan realistis untuk pemula |
+| B. Targetkan Programmer | sembilan unit; memerlukan OOP dan basis data kuat |
+| C. Tidak menargetkan skema | silabus bebas; kehilangan acuan resmi |
+
+Sebelum menyetujui, pemilik diminta memeriksa: SKKNI 282/2016 masih
+berlaku atau sudah digantikan; hitungan cakupan di bagian 5.2; selisih
+sufiks kode `009`.
+
+### 12.5 Sertifikasi
+
+| Opsi | Konsekuensi |
+| --- | --- |
+| **A. Tanpa sertifikasi bawaan; LSP opsional untuk `PRO` sebagai jalur mandiri peserta (disarankan)** | jujur, tanpa janji |
+| B. Jalin kerja sama dengan LSP | pengakuan lebih kuat; urusan hukum dan biaya `[belum terverifikasi]` |
+| C. Terbitkan keterangan selesai | murah; mudah disalahartikan sebagai sertifikat kompetensi |
+
+### 12.6 Program pelatihan pemerintah
+
+| Opsi | Konsekuensi |
+| --- | --- |
+| **A. Hanya rujukan di panduan peserta dengan catatan "cek situs resmi" (disarankan)** | tidak bergantung status yang tidak terverifikasi |
+| B. Jadikan penyelenggara terdaftar | akses pendanaan; syarat dan status `[belum terverifikasi]` |
+| C. Abaikan | tanpa risiko; kehilangan peluang peserta |
+
+### 12.7 Jembatan dari kuliah-coding
+
+| Opsi | Konsekuensi |
+| --- | --- |
+| **A. Tunda sampai draf kuliah-coding (#130) ada (disarankan)** | tidak mengarang |
+| B. Tulis jembatan dugaan sekarang | cepat; rawan salah |
+
+### 12.8 Pengerjaan lanjutan
+
+Setelah silabus disetujui: skema `src/schema/` untuk jalur dewasa bila
+bentuknya berbeda dari sma-coding (berjam, bukan mingguan), baru
+`data/dewasa-coding/`, entri registri, lalu modul `content/`. Urutan
+mengikuti AGENTS.md: skema, data, domain, uji. Pemilik memutuskan batch
+awal: **disarankan** jalur `PKJ` dan `BIS` lebih dulu karena paling sedikit
+bergantung pada SKKNI dan alat berat.
+
+## 13. Sumber dan batasan
+
+- Sumber dibuka dan terverifikasi: `riset.md` bagian 9.
+- Yang tidak terverifikasi: SKKNI lain, status Kartu Prakerja 2026, isi
+  DTS, dokumen resmi Peta Jalan Literasi Digital, data resmi UMKM, harga
+  layanan AI dan no-code (`riset.md` bagian 1).
+- Jam, urutan modul, dan beban belajar semuanya `[asumsi]`.
+- Pemetaan SKKNI hanya ke judul unit.
+- Kebutuhan UMKM bersumber berita dan opini, bobot bukti rendah.
+- Data peserta tidak disimpan di repositori; semua contoh sintetis.
+
+## Changelog
+
+| Versi | Tanggal | Perubahan |
+| --- | --- | --- |
+| v0.1.0 | 2026-11-19 | Draf awal (#131). |
