@@ -29,6 +29,7 @@ Tables, not prose — drift should be visible at a glance.
 | `docs/architecture/` | System architecture overview, repository map, and ADRs. |
 | `docs/requirements/` | Requirements register and traceability matrices. |
 | `docs/cli/` | `osn` CLI command reference. |
+| `docs/panduan/` | Panduan penggunaan berbahasa Indonesia per peran (mentor OSN, guru SMA, siswa, pemilik/peninjau, kontributor); setiap perintah di dalamnya sudah dijalankan. |
 | `docs/development/` | Engineering process docs (testing, CI/CD, releasing). |
 | `docs/governance/` | Privacy policy, security policy, incident-response procedure. |
 | `docs/operations/` | Operational runbook and syllabus-check procedure. |

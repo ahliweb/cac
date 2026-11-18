@@ -260,6 +260,20 @@ documents, which belong in `docs/governance/` (see below).
 every subcommand, flag, and exit code, kept in sync with
 `src/cli/commands/`.
 
+## `docs/panduan/`
+
+**What belongs here:** the Indonesian-language, task-oriented usage guide,
+one page per audience: `README.md` (index, glossary, "who are you"),
+`mulai-cepat.md`, `mentor-osn.md`, `guru-sma.md`, `siswa.md`,
+`pemilik-peninjau.md` and `kontributor.md`. Every command shown was run
+against the repository and example output is real output. It summarises and
+points to `docs/cli/`, `docs/operations/` and `docs/development/`; it does
+not replace them.
+
+**What must never go here:** a command or flag that was not run, curriculum
+content copied by hand instead of quoted from the corpus, learner data, or
+the model/price table of the internal cross-portfolio standard.
+
 ## `docs/operations/`
 
 **What belongs here:** `runbook.md` (the cohort-start procedure, weekly
