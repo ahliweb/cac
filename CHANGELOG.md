@@ -73,7 +73,9 @@ unchanged.
 - The decree number of the 2025 subject guide used as the CP source is still
   unverified.
 - Open: track C ([#68]), companion modules ([#69]), requirements for the
-  programme ([#76]), CLI support for `sma-coding` ([#77]) and track D ([#84]).
+  programme ([#76]), CLI support for `sma-coding` ([#77]), track D AI ([#84]),
+  the grade-X foundation block ([#86]), computational-maths modules ([#87]),
+  track E quantum ([#88]) and cloud modules ([#89]).
 
 ## [2.0.0] — 2026-11-18
 
@@ -367,3 +369,7 @@ documentation the syllabus itself mandates.
 [#76]: https://github.com/ahliweb/osn/issues/76
 [#77]: https://github.com/ahliweb/osn/issues/77
 [#84]: https://github.com/ahliweb/osn/issues/84
+[#86]: https://github.com/ahliweb/osn/issues/86
+[#87]: https://github.com/ahliweb/osn/issues/87
+[#88]: https://github.com/ahliweb/osn/issues/88
+[#89]: https://github.com/ahliweb/osn/issues/89
