@@ -1,6 +1,5 @@
 # Changelog
 
-
 All notable changes to this project are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
@@ -10,15 +9,93 @@ Version numbers here (`vX.Y.Z`) track the software in this repository —
 schema, domain model, CLI, and tooling. They are independent of each
 programme's own syllabus version (`syllabusVersion` / `syllabusDate`), which
 tracks that programme's source document and is registered per programme in
-`data/programs.json` (ADR-0006). Currently two programmes are
-registered: `osn` at syllabus version `2.0`, dated `2026-09-04`, and
-`sma-coding` at version `1.2.0`. See
+`data/programs.json` (ADR-0006). Currently seven programmes are
+registered: `osn` at syllabus version `2.0`, dated `2026-09-04`,
+`sma-coding` at `1.3.0`, `tk-coding` at `1.0.1`, `sd-coding` at `1.0.1`,
+`smp-coding` at `1.1.1`, `kuliah-coding` at `1.1.1` and `dewasa-coding` at
+`1.1.1`. See
 [`docs/development/releasing.md`](docs/development/releasing.md) for how the
 two relate.
 
 ## [Unreleased]
 
 Nothing yet.
+
+## [2.4.0] — 2026-11-19
+
+Five more coding programmes (TK, SD, SMP, university, adults) approved and
+encoded with a schema of their own each, a per-programme audit and fidelity
+table (ADR-0008), two research documents shared by every programme, and an
+AI-use policy per programme. **No breaking changes** — see
+[`docs/releases/v2.4.0.md`](docs/releases/v2.4.0.md). The OSN corpus
+(transcribed syllabus content) is unchanged.
+
+### Added
+
+- **Per-programme audit and fidelity table** ([#140], ADR-0008): `osn
+  validate` picks each programme's schemas, audit and module-index checks
+  from `PROGRAM_MODULES` in `src/cli/program-registry.ts`; a registered
+  programme with no table entry is a finding. New `bun run check:fidelity
+  [--program <id>]` runs every programme's cell-by-cell fidelity module
+  (`src/cli/fidelity/<id>.ts`); `check:sma-fidelity` still works.
+  Requirement `TR-14`.
+- **Five programmes approved by the owner on 2026-11-19 and encoded**, each
+  with its own `src/schema/<prefix>-*.ts`, pure audit, `data/<id>/` corpus
+  and fidelity module (requirements `FR-34`..`FR-38`, `TR-15`..`TR-19`):
+  - `tk-coding` ([#127]): 48 weeks; the link to CP Fase Fondasi is an
+    interpreted overlap (`meetsCp: false`), never CP fulfilment.
+  - `sd-coding` ([#128]): 168 weeks for grades 1–6; only non-reinforcement
+    weeks in grades 5–6 fulfil a CP Fase C item, `P-` introductions never do.
+  - `smp-coding` ([#129]): 84 weeks, CP Informatika and CP Koding dan KA
+    Fase D, an explicit list of uncovered items, optional OSN club.
+  - `kuliah-coding` ([#130]): tracks U, I and K, 24 courses, 66 SKS,
+    mapping to the 17 CS2023 knowledge areas, empty CPL column for the
+    adopting study programme.
+  - `dewasa-coding` ([#131]): four persona tracks and shared module
+    `DW-FND-M1`, mapped to SKKNI 282/2016 unit titles only.
+- **Research documents** (`DRAF`, authored content): cognitive science of
+  learning, including the work of Prof. Stella Christie
+  (`docs/riset/ilmu-belajar-kognitif.md`, [#133]), and AI in software
+  engineering — vibe coding, AI-native engineering, sustainable
+  development (`docs/riset/ai-rekayasa-perangkat-lunak.md`, [#139]). DOIs
+  and arXiv IDs checked against their registries.
+- **AI-use policy per programme** ([#139], requirement `ER-17`): OSN
+  coaching in `docs/operations/kebijakan-ai-osn.md`; `sma-coding` v1.3.0
+  (learners may use AI under ethics rules, replacing the track D
+  "teacher demonstration only" rule), `smp-coding` v1.1.0 (teacher
+  demonstration, no learner accounts), `kuliah-coding` v1.1.0 (AI-assisted
+  software engineering in `KUL-I-204`, three-level policy with usage log)
+  and `dewasa-coding` v1.1.0 (new module `DW-PRO-M13`, track `PRO` 136
+  hours). No new weeks or credits were added for this.
+- Level map `docs/programs/README.md` (TK → SD → SMP → SMA → university →
+  adults) with each programme's status, version and AI policy.
+
+### Changed
+
+- `osn validate` now checks seven programmes; `osn privacy-check` scans 65
+  data files.
+- The refusal message of `osn plan`, `osn render lembar-siswa`, `render
+  weekly`, `report` and `checklist` for a programme other than `osn` names
+  only the commands that really support it ([#165]); exit code stays 2.
+- Patch revisions of the approved syllabi `tk-coding` 1.0.1, `sd-coding`
+  1.0.1, `smp-coding` 1.1.1, `kuliah-coding` 1.1.1 and `dewasa-coding`
+  1.1.1 ([#165]): only stale sentences about whether a sibling programme
+  exists; no curriculum content, CP code or regulation quotation changed.
+- `AGENTS.md`, `README.md`, architecture docs, CLI reference, user guides
+  and the requirements register (99 requirements) describe the seven
+  programmes.
+
+### Notes
+
+- No learning modules exist yet for `tk-coding`, `sd-coding`,
+  `smp-coding`, `kuliah-coding` or `dewasa-coding`. The 29 `sma-coding`
+  modules are still `draf` ([#125]); modules for tracks C, D and E do not
+  exist yet ([#124]).
+- Bridges between neighbouring programmes were drafted before the other
+  syllabus existed and are marked to be aligned later.
+- Some regulatory copies are marked unverified in the research notes (the
+  origin URL of SK BSKAP 046/H/KR/2025, the SKKNI 282/2016 copy).
+- The AI research is due for review in May 2027 ([#151]).
 
 ## [2.3.0] — 2026-11-19
 
@@ -469,7 +546,8 @@ documentation the syllabus itself mandates.
   and the entry says so; the next check must perform the live verification
   per [`docs/operations/syllabus-check.md`](docs/operations/syllabus-check.md).
 
-[Unreleased]: https://github.com/ahliweb/osn/compare/v2.3.0...HEAD
+[Unreleased]: https://github.com/ahliweb/osn/compare/v2.4.0...HEAD
+[2.4.0]: https://github.com/ahliweb/osn/compare/v2.3.0...v2.4.0
 [2.3.0]: https://github.com/ahliweb/osn/compare/v2.2.0...v2.3.0
 [2.2.0]: https://github.com/ahliweb/osn/compare/v2.1.0...v2.2.0
 [2.1.0]: https://github.com/ahliweb/osn/compare/v2.0.0...v2.1.0
@@ -488,3 +566,13 @@ documentation the syllabus itself mandates.
 [#87]: https://github.com/ahliweb/osn/issues/87
 [#88]: https://github.com/ahliweb/osn/issues/88
 [#89]: https://github.com/ahliweb/osn/issues/89
+[#127]: https://github.com/ahliweb/osn/issues/127
+[#128]: https://github.com/ahliweb/osn/issues/128
+[#129]: https://github.com/ahliweb/osn/issues/129
+[#130]: https://github.com/ahliweb/osn/issues/130
+[#131]: https://github.com/ahliweb/osn/issues/131
+[#133]: https://github.com/ahliweb/osn/issues/133
+[#139]: https://github.com/ahliweb/osn/issues/139
+[#140]: https://github.com/ahliweb/osn/issues/140
+[#151]: https://github.com/ahliweb/osn/issues/151
+[#165]: https://github.com/ahliweb/osn/issues/165

@@ -1,5 +1,0 @@
----
-"kurikulum-informatika": patch
----
-
-Perapian pra-rilis v2.4.0 (#165, keputusan pemilik 2026-11-19). Pesan penolakan `osn plan`, `osn render lembar-siswa`, `render weekly`, `report`, dan `checklist` untuk program selain `osn` kini jujur: untuk `sma-coding` pesan mendaftar perintah yang benar-benar didukung, dan untuk program lain (`tk-coding`, `sd-coding`, `smp-coding`, `kuliah-coding`, `dewasa-coding`) pesan menyatakan bahwa `plan` dan `render lembar-siswa` hanya tersedia untuk `osn` dan `sma-coding` dan bahwa program itu hanya didukung `osn validate` dan `bun run check:fidelity`; exit code tetap 2. Paragraf pembuka `docs/programs/sma-coding/README.md` menyebut keadaan nyata (29 modul draf menunggu tinjauan #125, modul jalur C, D, E belum ada, #124). Revisi patch silabus `tk-coding` 1.0.1, `sd-coding` 1.0.1, `smp-coding` 1.1.1, `kuliah-coding` 1.1.1, dan `dewasa-coding` 1.1.1: hanya kalimat status yang basi tentang keberadaan program pasangan yang diganti (di silabus, korpus `bridge*.json`, dan registri `data/programs.json`); isi kurikulum, kode CP, dan kutipan regulasi tidak berubah.
