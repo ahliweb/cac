@@ -51,24 +51,25 @@ describe("sma-coding fidelity: data/sma-coding vs. the approved silabus", () => 
 
   test("the registry entry exists and carries the document's version and date", () => {
     expect(smaEntry).toBeDefined();
-    expect(smaEntry?.syllabusVersion).toBe("1.0.0");
-    expect(smaEntry?.syllabusDate).toBe("2026-11-18");
+    expect(smaEntry?.syllabusVersion).toBe("1.1.0");
+    expect(smaEntry?.syllabusDate).toBe("2026-11-19");
   });
 
   test("the derived corpus has the expected record counts", () => {
     const expected = expectedCorpus(markdown) as Record<string, Json>;
     expect(expected["cp-elements.json"].quotes).toHaveLength(6);
     expect(expected["cp-elements.json"].items).toHaveLength(36);
-    expect(expected["weeks.json"].weeks).toHaveLength(168);
-    expect(expected["cp-mapping.json"].mappings).toHaveLength(24);
+    expect(expected["weeks.json"].weeks).toHaveLength(154);
+    expect(expected["foundation.json"].weeks).toHaveLength(7);
+    expect(expected["cp-mapping.json"].mappings).toHaveLength(26);
     expect(expected["osn-bridge.json"].bridges).toHaveLength(10);
     expect(expected["structure.json"].rows).toHaveLength(7);
   });
 
   test("the cells with a literal pipe survive the transcription", () => {
     const weeks = load()["weeks.json"].weeks as Array<{ id: string; objective: string }>;
-    expect(weeks.find((week) => week.id === "A-X1-M8")?.objective).toContain("`||`");
-    expect(weeks.find((week) => week.id === "A-X2-M12")?.objective).toContain("`|`");
+    expect(weeks.find((week) => week.id === "A-X1-M10")?.objective).toContain("`||`");
+    expect(weeks.find((week) => week.id === "A-XI1-M3")?.objective).toContain("`|`");
   });
 });
 
@@ -78,8 +79,28 @@ describe("sma-coding fidelity: drift fails hard", () => {
     files["weeks.json"].weeks[5].topic = "Topik yang diperbaiki diam-diam";
     const problems = checkSmaFidelity(markdown, files, smaEntry);
     expect(problems).toHaveLength(1);
-    expect(problems[0]?.context).toBe("weeks.json.weeks[A-X1-M6].topic");
+    expect(problems[0]?.context).toBe("weeks.json.weeks[A-X1-M13].topic");
     expect(problems[0]?.actual).toContain("diperbaiki diam-diam");
+  });
+
+  test("a changed foundation week cell is reported with its FND week code and field", () => {
+    const files = load();
+    files["foundation.json"].weeks[2].objective = "diubah diam-diam";
+    const problems = checkSmaFidelity(markdown, files, smaEntry);
+    expect(problems).toHaveLength(1);
+    expect(problems[0]?.context).toBe("foundation.json.weeks[FND-X1-M3].objective");
+  });
+
+  test("a dropped foundation week and a missing foundation file are reported", () => {
+    const files = load();
+    files["foundation.json"].weeks.pop();
+    expect(checkSmaFidelity(markdown, files, smaEntry).map((problem) => problem.context)).toContain(
+      "foundation.json.weeks length",
+    );
+    delete files["foundation.json"];
+    expect(checkSmaFidelity(markdown, files, smaEntry).map((problem) => problem.context)).toContain(
+      "foundation.json",
+    );
   });
 
   test("a dropped record is reported as a length mismatch", () => {
@@ -128,22 +149,32 @@ describe("sma-coding fidelity: drift fails hard", () => {
   });
 
   test("a change in the document itself is detected against unchanged data", () => {
-    const edited = markdown.replace("| M6 | Perulangan I |", "| M6 | Perulangan satu |");
+    const edited = markdown.replace(
+      "| M11 | Perulangan | memakai `for`",
+      "| M11 | Perulangan satu | memakai `for`",
+    );
     expect(edited).not.toBe(markdown);
     const problems = checkSmaFidelity(edited, load(), smaEntry);
-    expect(problems.map((problem) => problem.context)).toContain("weeks.json.weeks[A-X1-M6].topic");
+    expect(problems.map((problem) => problem.context)).toContain(
+      "weeks.json.weeks[A-X1-M11].topic",
+    );
   });
 
   test("a document that breaks the table shape fails loudly instead of passing", () => {
     const broken = markdown.replace(
-      "| M6 | Perulangan I | memakai",
-      "| M6 | Perulangan I | x | memakai",
+      "| M11 | Perulangan | memakai",
+      "| M11 | Perulangan | x | memakai",
     );
     expect(() => expectedCorpus(broken)).toThrow("expected 5 cells");
   });
 
+  test("a foundation row outside its heading is refused", () => {
+    const orphan = markdown.replace(/^#### FND-X1 .*$/m, "#### Fondasi");
+    expect(() => expectedCorpus(orphan)).toThrow("outside its heading");
+  });
+
   test("an unapproved track in bagian 3 is refused", () => {
-    const unapproved = markdown.replace("jalur A dan B (issue #52)", "jalur A dan C (issue #52)");
+    const unapproved = markdown.replace("jalur A dan B (v1.1,", "jalur A dan C (v1.1,");
     expect(() => expectedCorpus(unapproved)).toThrow("not approved");
   });
 });

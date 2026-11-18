@@ -113,14 +113,15 @@ bukti; AI tidak menyetujui PR-nya sendiri maupun rilis produksi.
 
 Draf silabus program (mis. `docs/programs/sma-coding/`) adalah konten
 karangan. Ia menjadi sumber corpus `data/<program>/` hanya setelah Anda
-menyetujuinya (ADR-0006): silabus v1.0 `sma-coding` disetujui 2026-11-18
-untuk jalur A dan B, dan baru sesudahnya dikodekan ke `data/sma-coding/`.
+menyetujuinya (ADR-0006): silabus `sma-coding` v1.0 disetujui 2026-11-18 dan
+revisinya v1.1 (blok fondasi kelas X) disetujui 2026-11-19, keduanya untuk
+jalur A dan B, dan baru sesudahnya dikodekan ke `data/sma-coding/`.
 Perubahan atas silabus yang sudah disetujui: usulan lewat issue, revisi
 berstatus draf, lalu persetujuan Anda yang dicatat dengan tanggal. Contoh
-yang sedang berjalan: blok fondasi kelas X, keputusannya dicatat di
-[`usulan-fondasi-kelas-x.md`](../programs/sma-coding/usulan-fondasi-kelas-x.md)
-dan penerapannya ke v1.1 menunggu issue
-[#92](https://github.com/ahliweb/osn/issues/92).
+yang sudah selesai: blok fondasi kelas X, usulannya
+([`usulan-fondasi-kelas-x.md`](../programs/sma-coding/usulan-fondasi-kelas-x.md))
+diputuskan 2026-11-18 dan diterapkan di silabus v1.1 yang Anda setujui
+2026-11-19 ([#92](https://github.com/ahliweb/osn/issues/92)).
 
 ## Perubahan konten kurikulum (transkripsi)
 
@@ -184,5 +185,5 @@ gh issue list -R ahliweb/osn --state open
 ```
 
 Daftar di atas adalah keadaan pada 2026-11-18; jalankan perintahnya untuk
-keadaan terkini. Selain issue, kandidat tinjauan Anda: draf silabus SMA v1.1
-dengan blok fondasi kelas X (#92).
+keadaan terkini. Selain issue, kandidat tinjauan Anda: draf jalur C dan
+rancangan modul pendamping (lihat `docs/programs/sma-coding/`).

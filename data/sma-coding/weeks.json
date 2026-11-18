@@ -1,99 +1,8 @@
 {
-  "syllabusVersion": "1.0.0",
-  "syllabusDate": "2026-11-18",
+  "syllabusVersion": "1.1.0",
+  "syllabusDate": "2026-11-19",
   "sourceSection": "bagian 3",
   "weeks": [
-    {
-      "id": "A-X1-M1",
-      "track": "A",
-      "kelas": "X",
-      "semester": "X1",
-      "semesterCode": "A-X1",
-      "phase": "E",
-      "week": 1,
-      "topic": "Komputer, Input-Proses-Output, sistem operasi, lingkungan g++",
-      "objective": "menjelaskan model I-P-O Von Neumann dan peran OS; mengompilasi program pertama",
-      "output": "`hello.cpp`; diagram I-P-O",
-      "exercise": "simulasi I-P-O tanpa komputer; cetak teks"
-    },
-    {
-      "id": "A-X1-M2",
-      "track": "A",
-      "kelas": "X",
-      "semester": "X1",
-      "semesterCode": "A-X1",
-      "phase": "E",
-      "week": 2,
-      "topic": "Algoritma, pseudocode, diagram alir",
-      "objective": "menulis solusi sederhana dalam pseudocode",
-      "output": "3 pseudocode",
-      "exercise": "tukar dua nilai; cari nilai terbesar dari tiga"
-    },
-    {
-      "id": "A-X1-M3",
-      "track": "A",
-      "kelas": "X",
-      "semester": "X1",
-      "semesterCode": "A-X1",
-      "phase": "E",
-      "week": 3,
-      "topic": "Variabel, tipe data, ekspresi",
-      "objective": "memilih tipe (`int`, `long long`, `double`, `char`, `bool`) dan menulis ekspresi",
-      "output": "program hitung",
-      "exercise": "luas dan keliling; pembagian bulat dan sisa"
-    },
-    {
-      "id": "A-X1-M4",
-      "track": "A",
-      "kelas": "X",
-      "semester": "X1",
-      "semesterCode": "A-X1",
-      "phase": "E",
-      "week": 4,
-      "topic": "Masukan dan keluaran",
-      "objective": "membaca dan menulis data dengan `cin`/`cout`",
-      "output": "program berformat",
-      "exercise": "konversi suhu; rata-rata dua bilangan"
-    },
-    {
-      "id": "A-X1-M5",
-      "track": "A",
-      "kelas": "X",
-      "semester": "X1",
-      "semesterCode": "A-X1",
-      "phase": "E",
-      "week": 5,
-      "topic": "Percabangan",
-      "objective": "memakai `if`/`else`, `switch`",
-      "output": "program bercabang",
-      "exercise": "genap/ganjil; kategori nilai (data sintetis)"
-    },
-    {
-      "id": "A-X1-M6",
-      "track": "A",
-      "kelas": "X",
-      "semester": "X1",
-      "semesterCode": "A-X1",
-      "phase": "E",
-      "week": 6,
-      "topic": "Perulangan I",
-      "objective": "memakai `for` dan `while`",
-      "output": "program berulang",
-      "exercise": "jumlah deret; pola bintang"
-    },
-    {
-      "id": "A-X1-M7",
-      "track": "A",
-      "kelas": "X",
-      "semester": "X1",
-      "semesterCode": "A-X1",
-      "phase": "E",
-      "week": 7,
-      "topic": "Perulangan II",
-      "objective": "memakai perulangan bersarang, `break`, `continue`",
-      "output": "tabel keluaran",
-      "exercise": "tabel perkalian; uji prima sederhana"
-    },
     {
       "id": "A-X1-M8",
       "track": "A",
@@ -102,10 +11,10 @@
       "semesterCode": "A-X1",
       "phase": "E",
       "week": 8,
-      "topic": "Logika Boolean",
-      "objective": "menyusun tabel kebenaran; memakai `&&`, `||`, `!`, XOR",
-      "output": "tabel kebenaran",
-      "exercise": "sederhanakan kondisi; implikasi sebagai kondisi"
+      "topic": "Lingkungan g++, algoritma, pseudocode, diagram alir",
+      "objective": "mengompilasi program pertama; menulis solusi sederhana dalam pseudocode",
+      "output": "`hello.cpp`; 3 pseudocode",
+      "exercise": "cetak teks; tukar dua nilai; cari nilai terbesar dari tiga"
     },
     {
       "id": "A-X1-M9",
@@ -115,10 +24,10 @@
       "semesterCode": "A-X1",
       "phase": "E",
       "week": 9,
-      "topic": "Fungsi dan parameter",
-      "objective": "memecah program menjadi fungsi",
-      "output": "program modular",
-      "exercise": "faktorial; FPB"
+      "topic": "Variabel, tipe data, ekspresi; masukan dan keluaran",
+      "objective": "memilih tipe (`int`, `long long`, `double`, `char`, `bool`) dan menulis ekspresi; membaca dan menulis data dengan `cin`/`cout`",
+      "output": "program hitung berformat",
+      "exercise": "luas dan keliling; pembagian bulat dan sisa; konversi suhu; rata-rata dua bilangan"
     },
     {
       "id": "A-X1-M10",
@@ -128,10 +37,10 @@
       "semesterCode": "A-X1",
       "phase": "E",
       "week": 10,
-      "topic": "Array satu dimensi",
-      "objective": "menyimpan dan mengolah barisan data",
-      "output": "program array",
-      "exercise": "maksimum, minimum, rata-rata; balik array"
+      "topic": "Percabangan dan logika Boolean",
+      "objective": "memakai `if`/`else`, `switch`; menyusun tabel kebenaran; memakai `&&`, `||`, `!`, XOR",
+      "output": "program bercabang; tabel kebenaran",
+      "exercise": "genap/ganjil; kategori nilai (data sintetis); sederhanakan kondisi; implikasi sebagai kondisi"
     },
     {
       "id": "A-X1-M11",
@@ -141,10 +50,10 @@
       "semesterCode": "A-X1",
       "phase": "E",
       "week": 11,
-      "topic": "String",
-      "objective": "mengolah teks karakter demi karakter",
-      "output": "program teks",
-      "exercise": "palindrom; hitung vokal"
+      "topic": "Perulangan",
+      "objective": "memakai `for` dan `while`; memakai perulangan bersarang, `break`, `continue`",
+      "output": "program berulang; tabel keluaran",
+      "exercise": "jumlah deret; pola bintang; tabel perkalian; uji prima sederhana"
     },
     {
       "id": "A-X1-M12",
@@ -154,10 +63,10 @@
       "semesterCode": "A-X1",
       "phase": "E",
       "week": 12,
-      "topic": "Array dua dimensi",
-      "objective": "mengolah tabel data",
-      "output": "program matriks",
-      "exercise": "jumlah baris dan kolom; transpos"
+      "topic": "Fungsi dan parameter",
+      "objective": "memecah program menjadi fungsi",
+      "output": "program modular",
+      "exercise": "faktorial; FPB"
     },
     {
       "id": "A-X1-M13",
@@ -168,9 +77,9 @@
       "phase": "E",
       "week": 13,
       "topic": "Proyek mini: data berkualitas",
-      "objective": "memeriksa dan membersihkan data tabel kecil secara mandiri atau berkelompok",
+      "objective": "memeriksa dan membersihkan data kecil dari masukan berurutan secara mandiri atau berkelompok (array baru diajarkan di awal semester 2) `[asumsi]`",
       "output": "laporan singkat",
-      "exercise": "validasi rentang nilai; temukan data ganjil (sintetis)"
+      "exercise": "validasi rentang nilai; temukan data ganjil (sintetis) dari deretan masukan"
     },
     {
       "id": "A-X1-M14",
@@ -181,9 +90,9 @@
       "phase": "E",
       "week": 14,
       "topic": "Asesmen dan refleksi",
-      "objective": "menunjukkan penguasaan dasar",
+      "objective": "menunjukkan penguasaan dasar pemrograman dan konsep fondasi",
       "output": "uji tulis dan praktik; jurnal",
-      "exercise": "kuis kode"
+      "exercise": "kuis kode; kuis konsep fondasi (formatif, dilebur di sini)"
     },
     {
       "id": "A-X2-M1",
@@ -193,10 +102,10 @@
       "semesterCode": "A-X2",
       "phase": "E",
       "week": 1,
-      "topic": "Ulasan dan penelusuran galat",
-      "objective": "menemukan galat dengan mencetak nilai dan uji kecil",
-      "output": "daftar galat umum",
-      "exercise": "perbaiki 5 program rusak"
+      "topic": "Array satu dimensi",
+      "objective": "menyimpan dan mengolah barisan data",
+      "output": "program array",
+      "exercise": "maksimum, minimum, rata-rata; balik array"
     },
     {
       "id": "A-X2-M2",
@@ -206,10 +115,10 @@
       "semesterCode": "A-X2",
       "phase": "E",
       "week": 2,
-      "topic": "Aritmetika dasar",
-      "objective": "memakai paritas, habis dibagi, modulo",
-      "output": "program aritmetika",
-      "exercise": "digit penjumlahan; sisa bagi"
+      "topic": "String",
+      "objective": "mengolah teks karakter demi karakter",
+      "output": "program teks",
+      "exercise": "palindrom; hitung vokal"
     },
     {
       "id": "A-X2-M3",
@@ -219,10 +128,10 @@
       "semesterCode": "A-X2",
       "phase": "E",
       "week": 3,
-      "topic": "FPB, KPK, bilangan prima",
-      "objective": "menghitung FPB/KPK dan faktorisasi",
-      "output": "program bilangan",
-      "exercise": "faktorisasi prima; saringan sederhana"
+      "topic": "Array dua dimensi",
+      "objective": "mengolah tabel data",
+      "output": "program matriks",
+      "exercise": "jumlah baris dan kolom; transpos"
     },
     {
       "id": "A-X2-M4",
@@ -232,10 +141,10 @@
       "semesterCode": "A-X2",
       "phase": "E",
       "week": 4,
-      "topic": "Struktur data: daftar (`vector`)",
-      "objective": "menyimpan data yang ukurannya berubah",
-      "output": "program `vector`",
-      "exercise": "tambah/hapus elemen; hitung frekuensi"
+      "topic": "Ulasan dan penelusuran galat; aritmetika dasar",
+      "objective": "menemukan galat dengan mencetak nilai dan uji kecil; memakai paritas, habis dibagi, modulo",
+      "output": "daftar galat umum; program aritmetika",
+      "exercise": "perbaiki 5 program rusak; digit penjumlahan; sisa bagi"
     },
     {
       "id": "A-X2-M5",
@@ -245,10 +154,10 @@
       "semesterCode": "A-X2",
       "phase": "E",
       "week": 5,
-      "topic": "Struktur data: tumpukan (stack)",
-      "objective": "memakai prinsip LIFO",
-      "output": "program stack",
-      "exercise": "kurung seimbang"
+      "topic": "FPB, KPK, bilangan prima",
+      "objective": "menghitung FPB/KPK dan faktorisasi",
+      "output": "program bilangan",
+      "exercise": "faktorisasi prima; saringan sederhana"
     },
     {
       "id": "A-X2-M6",
@@ -258,10 +167,10 @@
       "semesterCode": "A-X2",
       "phase": "E",
       "week": 6,
-      "topic": "Struktur data: antrian (queue)",
-      "objective": "memakai prinsip FIFO",
-      "output": "program queue",
-      "exercise": "simulasi antrian loket (sintetis)"
+      "topic": "Struktur data: daftar (`vector`)",
+      "objective": "menyimpan data yang ukurannya berubah",
+      "output": "program `vector`",
+      "exercise": "tambah/hapus elemen; hitung frekuensi"
     },
     {
       "id": "A-X2-M7",
@@ -271,10 +180,10 @@
       "semesterCode": "A-X2",
       "phase": "E",
       "week": 7,
-      "topic": "Pencarian sekuensial dan biner",
-      "objective": "memilih dan menulis pencarian",
-      "output": "program pencarian",
-      "exercise": "cari nilai; tebak angka dengan biner"
+      "topic": "Struktur data: tumpukan (stack) dan antrian (queue)",
+      "objective": "memakai prinsip LIFO dan FIFO",
+      "output": "program stack dan queue",
+      "exercise": "kurung seimbang; simulasi antrian loket (sintetis)"
     },
     {
       "id": "A-X2-M8",
@@ -284,10 +193,10 @@
       "semesterCode": "A-X2",
       "phase": "E",
       "week": 8,
-      "topic": "Pengurutan: bubble sort",
-      "objective": "menulis dan menelusuri bubble sort",
-      "output": "program urut",
-      "exercise": "urutkan dan hitung pertukaran"
+      "topic": "Pencarian sekuensial dan biner",
+      "objective": "memilih dan menulis pencarian",
+      "output": "program pencarian",
+      "exercise": "cari nilai; tebak angka dengan biner"
     },
     {
       "id": "A-X2-M9",
@@ -297,10 +206,10 @@
       "semesterCode": "A-X2",
       "phase": "E",
       "week": 9,
-      "topic": "Pengurutan: insertion sort",
-      "objective": "menulis insertion sort dan membandingkannya",
+      "topic": "Pengurutan: bubble sort",
+      "objective": "menulis dan menelusuri bubble sort",
       "output": "program urut",
-      "exercise": "bandingkan jumlah langkah"
+      "exercise": "urutkan dan hitung pertukaran"
     },
     {
       "id": "A-X2-M10",
@@ -310,10 +219,10 @@
       "semesterCode": "A-X2",
       "phase": "E",
       "week": 10,
-      "topic": "Pengantar rekursi",
-      "objective": "menulis fungsi rekursif sederhana",
-      "output": "fungsi rekursif",
-      "exercise": "faktorial dan Fibonacci rekursif"
+      "topic": "Pengurutan: insertion sort",
+      "objective": "menulis insertion sort dan membandingkannya",
+      "output": "program urut",
+      "exercise": "bandingkan jumlah langkah"
     },
     {
       "id": "A-X2-M11",
@@ -323,10 +232,10 @@
       "semesterCode": "A-X2",
       "phase": "E",
       "week": 11,
-      "topic": "Efisiensi intuitif",
-      "objective": "menghitung banyak operasi dan membandingkan solusi",
-      "output": "tabel perbandingan",
-      "exercise": "jumlah langkah dua solusi"
+      "topic": "Pengantar rekursi",
+      "objective": "menulis fungsi rekursif sederhana",
+      "output": "fungsi rekursif",
+      "exercise": "faktorial dan Fibonacci rekursif"
     },
     {
       "id": "A-X2-M12",
@@ -336,10 +245,10 @@
       "semesterCode": "A-X2",
       "phase": "E",
       "week": 12,
-      "topic": "Operasi bit dasar (pengayaan)",
-      "objective": "memakai `&`, `|`, `^`, geser",
-      "output": "program bit",
-      "exercise": "cek bit ke-k; tukar tanpa variabel bantu"
+      "topic": "Efisiensi intuitif",
+      "objective": "menghitung banyak operasi dan membandingkan solusi",
+      "output": "tabel perbandingan",
+      "exercise": "jumlah langkah dua solusi"
     },
     {
       "id": "A-X2-M13",
@@ -401,10 +310,10 @@
       "semesterCode": "A-XI1",
       "phase": "F",
       "week": 3,
-      "topic": "Pencarian lengkap (complete search)",
-      "objective": "menyelesaikan masalah dengan mencoba semua kemungkinan",
-      "output": "program pencarian lengkap",
-      "exercise": "subhimpunan jumlah tertentu"
+      "topic": "Pencarian lengkap (complete search); operasi bit dasar (pengayaan, dari A-X2-M12 v1.0)",
+      "objective": "menyelesaikan masalah dengan mencoba semua kemungkinan; pengayaan: memakai `&`, `|`, `^`, geser untuk mewakili subhimpunan",
+      "output": "program pencarian lengkap; program bit (pengayaan)",
+      "exercise": "subhimpunan jumlah tertentu; pengayaan: cek bit ke-k, tukar tanpa variabel bantu"
     },
     {
       "id": "A-XI1-M4",
@@ -1096,97 +1005,6 @@
       "exercise": "kuis kode"
     },
     {
-      "id": "B-X1-M1",
-      "track": "B",
-      "kelas": "X",
-      "semester": "X1",
-      "semesterCode": "B-X1",
-      "phase": "E",
-      "week": 1,
-      "topic": "Komputer, I-P-O, sistem operasi, peramban, editor, Bun, Git",
-      "objective": "menjelaskan I-P-O dan peran OS; menjalankan skrip pertama",
-      "output": "`halo.js`; diagram I-P-O",
-      "exercise": "simulasi I-P-O; `console.log`"
-    },
-    {
-      "id": "B-X1-M2",
-      "track": "B",
-      "kelas": "X",
-      "semester": "X1",
-      "semesterCode": "B-X1",
-      "phase": "E",
-      "week": 2,
-      "topic": "Algoritma dan pseudocode",
-      "objective": "menulis pseudocode yang dekat dengan bahasa komputer",
-      "output": "3 pseudocode",
-      "exercise": "tukar dua nilai; nilai terbesar"
-    },
-    {
-      "id": "B-X1-M3",
-      "track": "B",
-      "kelas": "X",
-      "semester": "X1",
-      "semesterCode": "B-X1",
-      "phase": "E",
-      "week": 3,
-      "topic": "Variabel, tipe, ekspresi (JS)",
-      "objective": "memakai `let`, `const`, `number`, `string`, `boolean`",
-      "output": "skrip hitung",
-      "exercise": "luas dan keliling"
-    },
-    {
-      "id": "B-X1-M4",
-      "track": "B",
-      "kelas": "X",
-      "semester": "X1",
-      "semesterCode": "B-X1",
-      "phase": "E",
-      "week": 4,
-      "topic": "Masukan dan keluaran",
-      "objective": "membaca masukan (argumen berkas perintah atau formulir) dan menulis keluaran",
-      "output": "skrip berinteraksi",
-      "exercise": "konversi suhu"
-    },
-    {
-      "id": "B-X1-M5",
-      "track": "B",
-      "kelas": "X",
-      "semester": "X1",
-      "semesterCode": "B-X1",
-      "phase": "E",
-      "week": 5,
-      "topic": "Percabangan",
-      "objective": "memakai `if`/`else`, `switch`",
-      "output": "skrip bercabang",
-      "exercise": "genap/ganjil; kategori nilai (sintetis)"
-    },
-    {
-      "id": "B-X1-M6",
-      "track": "B",
-      "kelas": "X",
-      "semester": "X1",
-      "semesterCode": "B-X1",
-      "phase": "E",
-      "week": 6,
-      "topic": "Perulangan I",
-      "objective": "memakai `for`, `while`",
-      "output": "skrip berulang",
-      "exercise": "jumlah deret; pola"
-    },
-    {
-      "id": "B-X1-M7",
-      "track": "B",
-      "kelas": "X",
-      "semester": "X1",
-      "semesterCode": "B-X1",
-      "phase": "E",
-      "week": 7,
-      "topic": "Perulangan II",
-      "objective": "memakai perulangan bersarang, `break`, `continue`",
-      "output": "skrip tabel",
-      "exercise": "tabel perkalian; uji prima"
-    },
-    {
       "id": "B-X1-M8",
       "track": "B",
       "kelas": "X",
@@ -1194,10 +1012,10 @@
       "semesterCode": "B-X1",
       "phase": "E",
       "week": 8,
-      "topic": "Logika Boolean",
-      "objective": "memakai operator logika; `===` dan nilai \"truthy/falsy\"",
-      "output": "tabel kebenaran",
-      "exercise": "sederhanakan kondisi"
+      "topic": "Lingkungan kerja: peramban, editor, Bun, Git; algoritma dan pseudocode",
+      "objective": "menjalankan skrip pertama; menulis pseudocode yang dekat dengan bahasa komputer",
+      "output": "`halo.js`; 3 pseudocode",
+      "exercise": "`console.log`; tukar dua nilai; nilai terbesar"
     },
     {
       "id": "B-X1-M9",
@@ -1207,10 +1025,10 @@
       "semesterCode": "B-X1",
       "phase": "E",
       "week": 9,
-      "topic": "Fungsi",
-      "objective": "memakai fungsi biasa dan fungsi panah dengan parameter",
-      "output": "skrip modular",
-      "exercise": "faktorial; FPB"
+      "topic": "Variabel, tipe, ekspresi (JS); masukan dan keluaran",
+      "objective": "memakai `let`, `const`, `number`, `string`, `boolean`; membaca masukan (argumen berkas perintah atau formulir) dan menulis keluaran",
+      "output": "skrip hitung yang berinteraksi",
+      "exercise": "luas dan keliling; konversi suhu"
     },
     {
       "id": "B-X1-M10",
@@ -1220,10 +1038,10 @@
       "semesterCode": "B-X1",
       "phase": "E",
       "week": 10,
-      "topic": "Array",
-      "objective": "memakai array dan metode `map`/`filter`/`reduce`",
-      "output": "skrip array",
-      "exercise": "rata-rata; saring nilai"
+      "topic": "Percabangan dan logika Boolean",
+      "objective": "memakai `if`/`else`, `switch`; memakai operator logika; `===` dan nilai \"truthy/falsy\"",
+      "output": "skrip bercabang; tabel kebenaran",
+      "exercise": "genap/ganjil; kategori nilai (sintetis); sederhanakan kondisi"
     },
     {
       "id": "B-X1-M11",
@@ -1233,10 +1051,10 @@
       "semesterCode": "B-X1",
       "phase": "E",
       "week": 11,
-      "topic": "String dan templat",
-      "objective": "mengolah teks",
-      "output": "skrip teks",
-      "exercise": "palindrom; hitung vokal"
+      "topic": "Perulangan",
+      "objective": "memakai `for`, `while`; memakai perulangan bersarang, `break`, `continue`",
+      "output": "skrip berulang; skrip tabel",
+      "exercise": "jumlah deret; pola; tabel perkalian; uji prima"
     },
     {
       "id": "B-X1-M12",
@@ -1246,10 +1064,10 @@
       "semesterCode": "B-X1",
       "phase": "E",
       "week": 12,
-      "topic": "Objek dan JSON",
-      "objective": "memodelkan data dengan objek; membaca dan menulis JSON",
-      "output": "berkas JSON",
-      "exercise": "daftar buku (sintetis)"
+      "topic": "Fungsi",
+      "objective": "memakai fungsi biasa dan fungsi panah dengan parameter",
+      "output": "skrip modular",
+      "exercise": "faktorial; FPB"
     },
     {
       "id": "B-X1-M13",
@@ -1273,9 +1091,9 @@
       "phase": "E",
       "week": 14,
       "topic": "Asesmen dan refleksi",
-      "objective": "menunjukkan dasar pemrograman",
+      "objective": "menunjukkan dasar pemrograman dan konsep fondasi",
       "output": "uji tulis dan praktik; jurnal",
-      "exercise": "kuis kode"
+      "exercise": "kuis kode; kuis konsep fondasi (formatif, dilebur di sini)"
     },
     {
       "id": "B-X2-M1",
@@ -1285,10 +1103,10 @@
       "semesterCode": "B-X2",
       "phase": "E",
       "week": 1,
-      "topic": "HTML dasar",
-      "objective": "menyusun dokumen HTML semantik",
-      "output": "halaman HTML",
-      "exercise": "profil fiktif"
+      "topic": "Array",
+      "objective": "memakai array dan metode `map`/`filter`/`reduce`",
+      "output": "skrip array",
+      "exercise": "rata-rata; saring nilai"
     },
     {
       "id": "B-X2-M2",
@@ -1298,10 +1116,10 @@
       "semesterCode": "B-X2",
       "phase": "E",
       "week": 2,
-      "topic": "CSS dasar dan responsif",
-      "objective": "menata halaman agar nyaman di layar kecil",
-      "output": "halaman bergaya",
-      "exercise": "tata letak dua kolom"
+      "topic": "String dan templat",
+      "objective": "mengolah teks",
+      "output": "skrip teks",
+      "exercise": "palindrom; hitung vokal"
     },
     {
       "id": "B-X2-M3",
@@ -1311,10 +1129,10 @@
       "semesterCode": "B-X2",
       "phase": "E",
       "week": 3,
-      "topic": "DOM dan peristiwa",
-      "objective": "mengubah halaman dengan JS",
-      "output": "halaman interaktif",
-      "exercise": "penghitung klik"
+      "topic": "Objek dan JSON",
+      "objective": "memodelkan data dengan objek; membaca dan menulis JSON",
+      "output": "berkas JSON",
+      "exercise": "daftar buku (sintetis)"
     },
     {
       "id": "B-X2-M4",
@@ -1324,10 +1142,10 @@
       "semesterCode": "B-X2",
       "phase": "E",
       "week": 4,
-      "topic": "Struktur data: tumpukan dan antrian",
-      "objective": "membuat stack dan queue dengan array/kelas",
-      "output": "modul `stack`, `queue`",
-      "exercise": "kurung seimbang; antrian sintetis"
+      "topic": "HTML dasar",
+      "objective": "menyusun dokumen HTML semantik",
+      "output": "halaman HTML",
+      "exercise": "profil fiktif"
     },
     {
       "id": "B-X2-M5",
@@ -1337,10 +1155,10 @@
       "semesterCode": "B-X2",
       "phase": "E",
       "week": 5,
-      "topic": "Pencarian sekuensial dan biner",
-      "objective": "menulis kedua pencarian",
-      "output": "skrip pencarian",
-      "exercise": "tebak angka biner"
+      "topic": "CSS dasar dan responsif",
+      "objective": "menata halaman agar nyaman di layar kecil",
+      "output": "halaman bergaya",
+      "exercise": "tata letak dua kolom"
     },
     {
       "id": "B-X2-M6",
@@ -1350,10 +1168,10 @@
       "semesterCode": "B-X2",
       "phase": "E",
       "week": 6,
-      "topic": "Pengurutan: bubble sort",
-      "objective": "menulis dan menelusuri",
-      "output": "skrip urut",
-      "exercise": "hitung pertukaran"
+      "topic": "DOM dan peristiwa",
+      "objective": "mengubah halaman dengan JS",
+      "output": "halaman interaktif",
+      "exercise": "penghitung klik"
     },
     {
       "id": "B-X2-M7",
@@ -1363,10 +1181,10 @@
       "semesterCode": "B-X2",
       "phase": "E",
       "week": 7,
-      "topic": "Pengurutan: insertion sort dan visualisasi",
-      "objective": "memvisualisasikan langkah pengurutan",
-      "output": "halaman visualisasi",
-      "exercise": "animasi langkah"
+      "topic": "Struktur data: tumpukan dan antrian",
+      "objective": "membuat stack dan queue dengan array/kelas",
+      "output": "modul `stack`, `queue`",
+      "exercise": "kurung seimbang; antrian sintetis"
     },
     {
       "id": "B-X2-M8",
@@ -1376,10 +1194,10 @@
       "semesterCode": "B-X2",
       "phase": "E",
       "week": 8,
-      "topic": "Data berkualitas",
-      "objective": "memvalidasi masukan dan merapikan data tabel (JSON)",
-      "output": "skrip validasi",
-      "exercise": "cek rentang, duplikat"
+      "topic": "Pencarian sekuensial dan biner",
+      "objective": "menulis kedua pencarian",
+      "output": "skrip pencarian",
+      "exercise": "tebak angka biner"
     },
     {
       "id": "B-X2-M9",
@@ -1389,10 +1207,10 @@
       "semesterCode": "B-X2",
       "phase": "E",
       "week": 9,
-      "topic": "Kata sandi dan privasi akun",
-      "objective": "memakai manajer kata sandi, autentikasi dua langkah, konfigurasi privasi pada akun uji",
-      "output": "lembar periksa",
-      "exercise": "konfigurasi akun lab (bukan akun pribadi bila sekolah melarang)"
+      "topic": "Pengurutan: bubble sort dan insertion sort",
+      "objective": "menulis, menelusuri, dan membandingkan kedua pengurutan",
+      "output": "skrip urut",
+      "exercise": "hitung pertukaran; bandingkan jumlah langkah"
     },
     {
       "id": "B-X2-M10",
@@ -1402,10 +1220,10 @@
       "semesterCode": "B-X2",
       "phase": "E",
       "week": 10,
-      "topic": "HAKI dan lisensi perangkat lunak",
-      "objective": "membaca lisensi (misalnya MIT) dan memberi atribusi",
-      "output": "berkas `LICENSE` dan atribusi",
-      "exercise": "pilih lisensi untuk proyek"
+      "topic": "Data berkualitas",
+      "objective": "memvalidasi masukan dan merapikan data tabel (JSON)",
+      "output": "skrip validasi",
+      "exercise": "cek rentang, duplikat"
     },
     {
       "id": "B-X2-M11",
@@ -1442,9 +1260,9 @@
       "phase": "E",
       "week": 13,
       "topic": "Proyek mini: visualisasi algoritma",
-      "objective": "menggabungkan HTML/CSS/JS dan algoritma standar",
+      "objective": "menggabungkan HTML/CSS/JS dan algoritma standar; memvisualisasikan langkah pengurutan atau pencarian",
       "output": "halaman statis",
-      "exercise": "visualisasi pencarian atau pengurutan"
+      "exercise": "visualisasi pencarian atau pengurutan (animasi langkah)"
     },
     {
       "id": "B-X2-M14",

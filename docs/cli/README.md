@@ -133,22 +133,26 @@ osn validate [options]
 `osn validate --program sma-coding` validates `data/sma-coding/` with its
 own file set and schemas (`SMA_DATA_FILE_REGISTRY` in
 `src/domain/sma-corpus-audit.ts`; schemas `src/schema/sma-*.ts`), not the
-OSN invariants above. The six files transcribe the owner-approved
-`docs/programs/sma-coding/silabus.md` v1.0 (tracks A and B):
-`cp-elements.json`, `tracks.json`, `structure.json`, `weeks.json`,
-`cp-mapping.json` and `osn-bridge.json`. It checks:
+OSN invariants above. The seven files transcribe the owner-approved
+`docs/programs/sma-coding/silabus.md` v1.1 (tracks A and B plus the shared
+grade-X foundation block): `cp-elements.json`, `tracks.json`,
+`structure.json`, `weeks.json`, `foundation.json`, `cp-mapping.json` and
+`osn-bridge.json`. It checks:
 
 - **Schema conformance** of every file, the reverse "unregistered file"
   check (the optional `modules.json` is exempt), and registry agreement
   (item 3 above).
 - **Structural invariants:** 6 CP quotations, 36 CP items, 7 structure rows,
-  24 CP mappings, 6 semesters per track, and every track-semester holding
-  exactly the weeks 1-14 (168 weeks in all); `structure.json` agrees with
+  26 CP mappings, 6 semesters per track, every track-semester holding
+  exactly the weeks 1-14 except grade X semester 1, which holds weeks 8-14
+  after the foundation block (154 track weeks in all), and the foundation
+  block `FND-X1` holding exactly the weeks 1-7; `structure.json` agrees with
   the 14-week semester and with each week's class and phase.
 - **Referential integrity:** every mapped CP code exists in
   `cp-elements.json`; every week code in `cp-mapping.json` and
-  `osn-bridge.json` exists in `weeks.json` and belongs to a track the row
-  lists; the normalised `weeks` equal the source `weeksText` expanded; every
+  `osn-bridge.json` exists in `weeks.json` (and belongs to a track the row
+  lists) or is a foundation week in `foundation.json`, which counts for any
+  track; the normalised `weeks` equal the source `weeksText` expanded; every
   track id exists in `tracks.json`; and every `familyId` of the OSN bridge
   exists in `data/osn/topic-families.json` (a cross-programme reference,
   ADR-0006) and all ten OSN families are covered.
@@ -156,7 +160,7 @@ OSN invariants above. The six files transcribe the owner-approved
 Whether the data still equals the document cell by cell is a separate
 check: `bun run check:sma-fidelity` (`scripts/check-sma-coding-fidelity.ts`,
 also run by `bun test` in `tests/integration/sma-coding-fidelity.test.ts`)
-parses the Markdown tables of bagian 1.3, 1.4, 2, 3, 4 and 5 and exits `1`
+parses the Markdown tables of bagian 1.3, 1.4, 2, 3 (including the foundation table), 4 and 5 and exits `1`
 listing every mismatching cell.
 
 ### Options
@@ -805,7 +809,7 @@ terminal, a CI log, or a `--json` payload.
 ```text
 $ osn privacy-check
 osn privacy-check: scanning /path/to/repo/data
-OK -- 31 file(s) scanned, 0 direct-identifier-shaped key(s) found.
+OK -- 32 file(s) scanned, 0 direct-identifier-shaped key(s) found.
 ```
 
 ### Example: a planted identifier (illustrative)

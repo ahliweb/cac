@@ -14,9 +14,14 @@
 
 import type { z } from "zod";
 import { MODULES_FILE_NAME } from "../schema/module";
-import { SMA_WEEKS_PER_SEMESTER } from "../schema/sma-common";
+import {
+  SMA_FOUNDATION_BLOCK_ID,
+  SMA_FOUNDATION_WEEKS,
+  SMA_WEEKS_PER_SEMESTER,
+} from "../schema/sma-common";
 import { cpElementsFileSchema } from "../schema/sma-cp";
 import { cpMappingFileSchema } from "../schema/sma-cp-mapping";
+import { smaFoundationFileSchema } from "../schema/sma-foundation";
 import { osnBridgeFileSchema } from "../schema/sma-osn-bridge";
 import { SMA_STRUCTURE_ROW_IDS, smaStructureFileSchema } from "../schema/sma-structure";
 import { smaTracksFileSchema } from "../schema/sma-track";
@@ -35,17 +40,25 @@ export const SMA_DATA_FILE_REGISTRY: readonly SmaFileEntry[] = [
   { file: "tracks.json", schema: smaTracksFileSchema },
   { file: "structure.json", schema: smaStructureFileSchema },
   { file: "weeks.json", schema: smaWeeksFileSchema },
+  { file: "foundation.json", schema: smaFoundationFileSchema },
   { file: "cp-mapping.json", schema: cpMappingFileSchema },
   { file: "osn-bridge.json", schema: osnBridgeFileSchema },
 ];
 
-/** The fixed counts the approved v1.0 syllabus has. */
+/**
+ * The semester whose first weeks are taken by the shared foundation block:
+ * track weeks of this semester start after the block (silabus v1.1, bagian 3.0).
+ */
+export const SMA_FOUNDATION_SEMESTER = "X1";
+
+/** The fixed counts the approved v1.1 syllabus has. */
 export const SMA_EXPECTED_COUNTS = {
   cpQuotes: 6,
   cpItems: 36,
   structureRows: SMA_STRUCTURE_ROW_IDS.length,
   semestersPerTrack: 6,
-  cpMappings: 24,
+  cpMappings: 26,
+  foundationWeeks: SMA_FOUNDATION_WEEKS,
 } as const;
 
 function error(file: string, path: string, message: string): CorpusFinding {
@@ -121,6 +134,7 @@ function structuralFindings(parsed: Parsed): CorpusFinding[] {
   const structure = typed<z.infer<typeof smaStructureFileSchema>>(parsed, "structure.json");
   const weeks = typed<z.infer<typeof smaWeeksFileSchema>>(parsed, "weeks.json");
   const mapping = typed<z.infer<typeof cpMappingFileSchema>>(parsed, "cp-mapping.json");
+  const foundation = typed<z.infer<typeof smaFoundationFileSchema>>(parsed, "foundation.json");
 
   const count = (file: string, path: string, label: string, actual: number, expected: number) => {
     if (actual !== expected) {
@@ -179,6 +193,33 @@ function structuralFindings(parsed: Parsed): CorpusFinding[] {
     }
   }
 
+  if (foundation !== undefined) {
+    const expectedCodes = `${SMA_FOUNDATION_BLOCK_ID}-${SMA_FOUNDATION_SEMESTER}`;
+    const numbers = foundation.weeks.map((week) => week.week).sort((a, b) => a - b);
+    const complete =
+      numbers.length === SMA_FOUNDATION_WEEKS && numbers.every((n, i) => n === i + 1);
+    if (!complete) {
+      findings.push(
+        error(
+          "foundation.json",
+          "weeks",
+          `must contain exactly the weeks 1..${SMA_FOUNDATION_WEEKS} of ${expectedCodes} once each; found [${numbers.join(", ")}]`,
+        ),
+      );
+    }
+    foundation.weeks.forEach((week, index) => {
+      if (week.semesterCode !== expectedCodes) {
+        findings.push(
+          error(
+            "foundation.json",
+            `weeks[${index}].semesterCode`,
+            `the foundation block exists only in ${expectedCodes}`,
+          ),
+        );
+      }
+    });
+  }
+
   if (weeks !== undefined) {
     const bySemester = new Map<string, number[]>();
     for (const week of weeks.weeks) {
@@ -186,14 +227,19 @@ function structuralFindings(parsed: Parsed): CorpusFinding[] {
     }
     for (const [semesterCode, numbers] of bySemester) {
       const sorted = [...numbers].sort((a, b) => a - b);
+      // Track weeks of the foundation semester start after the foundation block.
+      const first = semesterCode.endsWith(`-${SMA_FOUNDATION_SEMESTER}`)
+        ? SMA_FOUNDATION_WEEKS + 1
+        : 1;
       const complete =
-        sorted.length === SMA_WEEKS_PER_SEMESTER && sorted.every((n, i) => n === i + 1);
+        sorted.length === SMA_WEEKS_PER_SEMESTER - first + 1 &&
+        sorted.every((n, i) => n === first + i);
       if (!complete) {
         findings.push(
           error(
             "weeks.json",
             `weeks[semesterCode=${semesterCode}]`,
-            `must contain exactly the weeks 1..${SMA_WEEKS_PER_SEMESTER} once each; found [${sorted.join(", ")}]`,
+            `must contain exactly the weeks ${first}..${SMA_WEEKS_PER_SEMESTER} once each; found [${sorted.join(", ")}]`,
           ),
         );
       }
@@ -233,8 +279,12 @@ function referentialFindings(
   const weeks = typed<z.infer<typeof smaWeeksFileSchema>>(parsed, "weeks.json");
   const mapping = typed<z.infer<typeof cpMappingFileSchema>>(parsed, "cp-mapping.json");
   const bridge = typed<z.infer<typeof osnBridgeFileSchema>>(parsed, "osn-bridge.json");
+  const foundation = typed<z.infer<typeof smaFoundationFileSchema>>(parsed, "foundation.json");
 
   const trackIds = tracks && new Set(tracks.tracks.map((track) => track.id));
+  // Foundation weeks belong to no track, so a row may cite them whatever tracks it lists.
+  const foundationIds = new Set(foundation?.weeks.map((week) => week.id) ?? []);
+  const weekIds = weeks && new Set([...weeks.weeks.map((week) => week.id), ...foundationIds]);
   const weekById = weeks && new Map(weeks.weeks.map((week) => [week.id, week]));
   const cpCodes = cp && new Set(cp.items.map((item) => item.code));
 
@@ -284,7 +334,10 @@ function referentialFindings(
   ) => {
     listed.forEach((code, i) => {
       const week = weekById?.get(code);
-      if (weekById !== undefined && week === undefined) {
+      if (foundationIds.has(code)) {
+        return;
+      }
+      if (weekIds !== undefined && !weekIds.has(code)) {
         findings.push(error(file, `${path}[${i}]`, `week "${code}" does not exist in weeks.json`));
       } else if (week !== undefined && !allowedTracks.has(week.track)) {
         findings.push(

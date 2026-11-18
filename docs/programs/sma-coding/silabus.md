@@ -1,18 +1,22 @@
-# Silabus Pembelajaran Coding SMA — v1.0
+# Silabus Pembelajaran Coding SMA — v1.1
 
-- **Version:** v1.0.0
-- **Last updated:** 2026-11-18
-- **Status:** DISETUJUI pemilik program, 2026-11-18 — jalur A dan B (issue #52). Jalur C (#68) dan modul pendamping (#69) masih disusun untuk v1.1.
-- **Changeset:** Silabus disetujui sebagai v1.0 untuk jalur A dan B; keenam pertanyaan terbuka dijawab pemilik.
+- **Version:** v1.1.0
+- **Last updated:** 2026-11-19
+- **Status:** DISETUJUI pemilik program, 2026-11-19 — jalur A dan B (v1.1, issue #92; v1.0 disetujui 2026-11-18, issue #52). Jalur C (#68) dan modul pendamping (#69) masih disusun.
+- **Changeset:** Silabus v1.1 disetujui pemilik: blok fondasi kelas X tujuh minggu (FND-X1-M1..M7, kelas bersama lintas jalur) diterapkan sesuai delapan keputusan pemilik 2026-11-18; kelas X semester 1 dan 2 jalur A dan B disusun ulang; pemetaan CP dan jembatan OSN diperbarui.
 
-> **Disetujui pemilik program pada 2026-11-18 untuk jalur A dan B**
-> (keputusan lewat dialog pilihan, dicatat di issue #52). Dokumen ini adalah
-> konten karangan menurut
-> [ADR-0007](../../architecture/adr/0007-authored-learning-content.md) yang
-> kini menjadi sumber corpus program `sma-coding` (ADR-0006). Kutipan CP di
-> bagian 1 adalah transkripsi sumber resmi; selebihnya rancangan penyusun
-> yang disetujui. Butir bertanda `[belum terverifikasi]` tetap belum
-> terverifikasi. Jalur C dan modul pendamping belum termasuk persetujuan ini.
+> **Disetujui pemilik program pada 2026-11-19 untuk jalur A dan B**
+> (v1.1; keputusan lewat dialog pilihan, dicatat di issue #92). Dokumen ini
+> adalah revisi v1.0 (disetujui 2026-11-18, issue #52) dan konten karangan
+> menurut [ADR-0007](../../architecture/adr/0007-authored-learning-content.md)
+> yang menjadi sumber corpus program `sma-coding` (ADR-0006). Kutipan CP di
+> bagian 1 adalah transkripsi sumber resmi (disalin persis dari v1.0);
+> selebihnya rancangan penyusun yang disetujui. Butir bertanda
+> `[belum terverifikasi]` tetap belum terverifikasi, dan butir `[asumsi]`
+> tetap rancangan penyusun yang kini disetujui sebagai bagian dari v1.1.
+> Jalur C dan modul pendamping belum termasuk persetujuan ini. Usulan asal
+> blok fondasi:
+> [`usulan-fondasi-kelas-x.md`](usulan-fondasi-kelas-x.md).
 
 ## 0. Cara membaca dokumen ini
 
@@ -23,6 +27,13 @@
 - Kode minggu berbentuk `jalur-kelas-semester-M<n>`, misalnya `A-X1-M3`
   (jalur A, kelas X, semester 1, minggu 3). Semester: `X1`, `X2` (Fase E);
   `XI1`, `XI2`, `XII1`, `XII2` (Fase F).
+- Kode minggu **blok fondasi** berbentuk `FND-X1-M<n>` (fondasi, kelas X,
+  semester 1, minggu `n`); blok ini kelas bersama lintas jalur (bagian 3.0).
+- **Penting (v1.1):** pada kelas X semester 1, nomor `M<n>` jalur A dan B
+  adalah **nomor minggu kalender semester**. Minggu 1-7 dipakai blok
+  fondasi, sehingga minggu jalur semester 1 dimulai dari `M8`
+  (`A-X1-M8`..`A-X1-M14`). Kode minggu kelas X pada v1.1 **tidak sama**
+  maknanya dengan v1.0; tabel padanan ada di bagian 3.0.
 - Kode butir CP berbentuk `E-BK-a` (Fase E, elemen Berpikir
   Komputasional, butir a). Pembagian butir (a, b, c, ...) adalah
   pemenggalan oleh penyusun atas rumusan CP pada tanda titik koma; kata-kata
@@ -57,7 +68,7 @@ panduan identik huruf demi huruf dengan lampiran SK `[belum terverifikasi]`.
 | Keputusan induk CP | Keputusan Kepala BSKAP Nomor 046/H/KR/2025, berlaku sejak 16 Juli 2025, mencabut Keputusan Kepala Badan Nomor 032/H/KR/2024 | `[belum terverifikasi]`: hanya terbaca dari situs sekunder (hasil pencarian: komunitasbelajar.id, kurikulummerdeka.com, pojoksatu.id); teks SK resmi dan URL domain pemerintahnya tidak berhasil dibuka. |
 | Perubahan 2026 | Keputusan Kepala BKPDM Nomor 020 Tahun 2026, ditetapkan 23 Juni 2026, mengubah 046/H/KR/2025 hanya untuk Agama dan Budi Pekerti; CP mata pelajaran lain (termasuk Informatika) tetap | `[belum terverifikasi]`: dari artikel sekunder (gebrak.id) yang hanya menulis "Sumber: Kemendikdasmen" tanpa tautan. |
 | URL resmi SK | -- | `[belum terverifikasi]`: tidak ditemukan. Pemilik diminta memberi tautan resmi (bagian 9). |
-| Alokasi jam pelajaran (JP) Informatika per kelas/minggu | -- | `[belum terverifikasi]`: dokumen yang dibuka tidak memuat struktur kurikulum SMA. Draf ini memakai asumsi di bagian 2. |
+| Alokasi jam pelajaran (JP) Informatika per kelas/minggu | -- | `[belum terverifikasi]`: dokumen yang dibuka tidak memuat struktur kurikulum SMA. Silabus ini memakai asumsi di bagian 2. |
 
 ### 1.3 Kutipan CP (apa adanya dari panduan, bagian B.d)
 
@@ -134,7 +145,7 @@ kualitasnya; merancang dan mengimplementasikan sebuah program yang
 menggunakan struktur data kompleks dan tepat menggunakan library atau
 perangkat yang tersedia."
 
-### 1.4 Kode butir CP yang dipakai draf ini (pemenggalan penyusun)
+### 1.4 Kode butir CP yang dipakai silabus ini (pemenggalan penyusun)
 
 | Kode | Butir (kata CP, dipersingkat untuk rujukan) |
 | --- | --- |
@@ -183,57 +194,164 @@ perangkat yang tersedia."
 | Semester | Dua per kelas: X1, X2, XI1, XI2, XII1, XII2 (enam semester per jalur) | `[asumsi]` |
 | Minggu per semester | 14 minggu materi + 2 minggu cadangan (libur, ujian sekolah, remedial) | `[asumsi]` |
 | Alokasi JP | Satu pertemuan 3 JP x 45 menit per minggu per jalur; sekolah menyesuaikan | Ditetapkan pemilik 2026-11-18. Angka JP resmi kurikulum tetap `[belum terverifikasi]`. |
-| Hubungan jalur | Murid memilih satu jalur (A, B, atau kelak C); boleh mengambil jalur lain bila waktu sekolah mengizinkan | Ditetapkan pemilik 2026-11-18. |
-| Pola tiap semester | Minggu 1-12 materi; minggu 13 proyek mini; minggu 14 asesmen dan refleksi | `[asumsi]` |
+| Hubungan jalur | Murid memilih satu jalur (A, B, atau kelak C); boleh mengambil jalur lain bila waktu sekolah mengizinkan. Sebelum memilih jalur, semua murid kelas X mengikuti blok fondasi bersama (bagian 3.0). | Ditetapkan pemilik 2026-11-18; blok fondasi bersama: keputusan pemilik 2026-11-18 (bagian 9.1). |
+| Pola tiap semester | Minggu 1-12 materi; minggu 13 proyek mini; minggu 14 asesmen dan refleksi. Kelas X semester 1: minggu 1-7 blok fondasi (FND-X1-M1..M7), minggu 8-12 materi jalur; asesmen fondasi bersifat formatif dan dilebur ke asesmen minggu 14. | `[asumsi]`; blok fondasi dan asesmen formatif: keputusan pemilik 2026-11-18 (bagian 9.1). |
 | Nilai dasar | CP wajib tercakup di pembelajaran Informatika sekolah; silabus coding ini hanya membahas butir yang dapat dicapai lewat coding. Butir lain ada di bagian 4.3. | Rancangan penyusun. |
 
 Prinsip rancangan: (1) mengikuti catatan panduan bahwa urutan penomoran CP
 bukan urutan belajar; (2) Fase E menekankan konsep dasar (pseudocode,
 struktur data dan algoritma standar); (3) Fase F menekankan strategi
-algoritmik, data, proses rekayasa, dan program terstruktur dengan library.
+algoritmik, data, proses rekayasa, dan program terstruktur dengan library;
+(4) v1.1: kelas X dibuka dengan blok fondasi informatika dasar yang sama
+untuk semua jalur, sebelum murid memilih jalur.
 
 ## 3. Rencana mingguan
 
 Kolom: **Topik** | **Tujuan** (murid mampu ...) | **Keluaran** | **Latihan**.
 Seluruh data latihan bersifat sintetis (bagian 8).
 
+### 3.0 Blok fondasi kelas X (bersama lintas jalur)
+
+Keputusan pemilik 2026-11-18 (bagian 9.1): semua murid kelas X mengikuti
+**blok fondasi informatika dasar tujuh minggu** sebelum memilih jalur
+(opsi (b) usulan, enam minggu, ditambah satu minggu perangkat pengolah
+dokumen, lembar kerja, dan presentasi, butir E-LD-d). Blok ini menempati
+minggu 1-7 kelas X semester 1 dan sama untuk jalur A, B, serta jalur C dan D
+bila kelak disetujui. Seluruh latihan memakai data sintetis, akun uji, dan
+perangkat lab; tidak ada data pribadi siswa (bagian 7.3). Setiap minggu
+`[asumsi]`: sekitar 1 JP konsep dan 2 JP praktik.
+
+#### FND-X1 (kelas X, semester 1; blok fondasi bersama lintas jalur)
+
+| Minggu | Topik | Tujuan | Keluaran | Latihan |
+| --- | --- | --- | --- | --- |
+| FND-X1-M1 | Komputer dan perangkat keras; model Input-Proses-Output Von Neumann | menyebut fungsi komponen (CPU, memori, penyimpanan, perangkat masukan dan keluaran, papan induk, catu daya); menjelaskan dan menyimulasikan siklus I-P-O komputer Von Neumann; membaca spesifikasi perangkat | diagram I-P-O beranotasi; lembar spesifikasi komputer lab | kegiatan utama: simulasi I-P-O tanpa komputer (murid berperan CPU, memori, dan perangkat masukan/keluaran menjalankan kartu instruksi sederhana); membaca spesifikasi komputer lab lewat informasi sistem; mengenali komponen dari foto; opsional bila lab menyediakan komponen bekas: mengenali komponen dari komponen bekas (perangkat yang masih dipakai tidak dibongkar) |
+| FND-X1-M2 | Perangkat lunak, sistem operasi, berkas, dan lisensi | membedakan perangkat lunak sistem dan aplikasi; menjelaskan peran sistem operasi (mengelola proses, memori, berkas, perangkat, antarmuka); mengelola berkas dan folder; membedakan jenis lisensi (proprietari, sumber terbuka, domain publik) dan memberi atribusi | peta peran sistem operasi; struktur folder yang rapi; tabel jenis lisensi | melihat daftar proses lewat pengelola tugas (proses sistem tidak dihentikan); menata folder dan penamaan berkas pada akun uji; membaca satu teks lisensi sumber terbuka yang pendek dan mengisi tabel hak dan kewajiban |
+| FND-X1-M3 | Representasi data: biner, heksadesimal, teks, gambar sederhana | mengonversi bilangan desimal, biner, dan heksadesimal; menjelaskan bit dan byte; menjelaskan bahwa teks disimpan sebagai kode karakter; menjelaskan gambar sebagai kisi piksel dan warna sebagai komponen merah-hijau-biru | tabel konversi; lembar kode karakter; gambar 8x8 dalam bentuk deret bit | konversi manual dengan lembar kerja; menyandikan kata fiktif dengan tabel kode karakter; menggambar gambar 8x8 hitam-putih di kertas kotak lalu menuliskannya sebagai deret bit; memilih warna dan membaca kode heksadesimalnya di aplikasi gambar |
+| FND-X1-M4 | Jaringan dan internet (konsep) | membedakan jaringan lokal dan jaringan luas, kabel dan nirkabel, klien dan server; menyebut peran router, switch, dan titik akses; menjelaskan alamat IP, DNS, dan HTTP/HTTPS secara konseptual; menguraikan bagaimana halaman web sampai ke peramban | peta jaringan sekolah (disederhanakan); diagram alur "membuka halaman web" | kegiatan utama: permainan peran (klien, server, DNS memakai kartu) untuk satu permintaan halaman; menggambar peta jaringan lab dari penjelasan guru tanpa alamat atau kredensial nyata; melihat alamat IP lokal komputer lab lewat pengaturan sistem |
+| FND-X1-M5 | Pengiriman data dan pemecahan masalah jaringan dasar | menjelaskan data dikirim dalam potongan (paket) antarperangkat; mengurutkan diagnosis dari fisik (kabel, Wi-Fi) ke alamat IP, DNS, lalu layanan; memakai alat uji sederhana | diagram alir diagnosis; catatan diagnosis tiga skenario | kegiatan utama: kartu skenario gangguan sintetis ("kabel lepas", "alamat salah", "DNS tidak menjawab") dengan simulasi peran; `ping` ke gateway lab dan alamat lokal komputer sendiri; opsional bila lab menyediakan jaringan lokal terisolasi: berbagi satu berkas antarkomputer di jaringan itu; uji ke internet publik hanya bila kebijakan sekolah mengizinkan `[asumsi]` |
+| FND-X1-M6 | Keamanan dasar dan etika digital | menyusun kata sandi yang kuat dan memakai manajer kata sandi; menerapkan autentikasi dua langkah secara sederhana; menerapkan konfigurasi privasi dan keamanan pada akun uji; menjelaskan langkah keamanan konektivitas dasar (kata sandi bawaan perangkat jaringan diganti, jaringan nirkabel terenkripsi, kewaspadaan pada jaringan publik, tanda HTTPS); mengenali pesan tipuan (phishing) dasar; menghargai hak atas kekayaan intelektual | lembar periksa keamanan akun; daftar periksa keamanan konektivitas | audit kata sandi dengan bahan sintetis; mengatur akun uji dengan manajer kata sandi lokal bersumber terbuka `[asumsi]`; demonstrasi autentikasi dua langkah oleh guru (murid tidak wajib memasang apa pun di ponsel pribadi); membandingkan dua konfigurasi privasi pada akun uji; mengenali pesan tipuan sintetis |
+| FND-X1-M7 | Perangkat pengolah dokumen, lembar kerja, dan presentasi `[asumsi]` | memilih perangkat yang sesuai kebutuhan (dokumen, lembar kerja, atau presentasi); menyusun dokumen terstruktur (judul, gaya, daftar, tabel, gambar beratribusi); memakai rumus dasar lembar kerja (jumlah, rata-rata, minimum, maksimum, kondisi sederhana) dan membuat grafik sederhana; menyusun presentasi ringkas dan terbaca (satu gagasan per slide, kontras cukup); menyimpan dan menukar berkas dalam format yang dapat dibuka di perangkat lain (misalnya format terbuka atau PDF) | dokumen laporan satu halaman bergaya; lembar kerja dengan rumus dan satu grafik; presentasi empat slide | menyusun laporan kegiatan klub fiktif dengan judul, daftar, dan satu tabel; merekap nilai sintetis (nama samaran seperti Murid-01) dengan rumus lalu membuat grafik batang; menyusun empat slide tentang satu topik fondasi (misalnya peta jaringan lab) dan mengekspornya ke PDF; perangkat mengikuti kesiapan lab (sumber terbuka atau berbasis web) `[asumsi]`; tidak memakai berkas atau data pribadi siswa |
+
+Catatan perancangan:
+
+- **Representasi data** (FND-X1-M3) dipertahankan sebagai **prasyarat**
+  (keputusan pemilik, bagian 9.1): rumusan CP yang dikutip pada bagian 1.3
+  tidak menyebutnya secara eksplisit, sehingga minggu ini **tidak dihitung
+  sebagai pemenuhan butir CP mana pun** (bagian 4.4).
+- **Praktik utama** blok fondasi adalah simulasi peran, kartu skenario, dan
+  informasi sistem (keputusan pemilik). Komponen bekas dan jaringan lokal
+  terisolasi hanya opsi bila lab menyediakannya; tanpa itu seluruh minggu
+  tetap dapat dijalankan, bahkan tanpa internet.
+- **Tidak ada pemrograman** di blok fondasi `[asumsi]`. Risiko: tujuh minggu
+  tanpa menulis kode dapat terasa jauh dari pilihan jalur; mitigasi lewat
+  praktik langsung (simulasi, diagnosis, dokumen dan lembar kerja) dan
+  perkenalan jalur sesudahnya `[asumsi]`.
+- **Asesmen fondasi bersifat formatif** (kuis singkat dan lembar praktik
+  tiap minggu) dan dilebur ke asesmen minggu 14 kelas X semester 1; tidak
+  ada minggu asesmen sendiri (keputusan pemilik, bagian 7.1).
+- Perangkat pengolah dokumen, lembar kerja, dan presentasi (butir E-LD-d)
+  menjadi satu minggu fondasi (FND-X1-M7) dan keluar dari daftar modul
+  pendamping (issue #69).
+
+#### Padanan nomor minggu kelas X: v1.0 ke v1.1
+
+Dengan tujuh minggu fondasi, semester 1 hanya memiliki tujuh minggu jalur
+(minggu 8-14: lima minggu materi, satu proyek mini, satu asesmen). Penyusun
+`[asumsi]` menempuhnya dengan **menggabungkan** minggu v1.0 yang bersifat
+pengantar atau berdekatan, dan **menggeser** tiga minggu struktur data
+dasar (array satu dimensi, string, array dua dimensi / objek dan JSON) ke
+awal semester 2. Sebagai imbalannya semester 2 melepaskan operasi bit
+(pengayaan, jalur A) dan kata sandi serta HAKI (jalur B), serta
+menggabungkan sepasang minggu yang berdekatan. Pola 14 minggu materi + 2
+minggu cadangan per semester tetap.
+
+Jalur A, semester 1:
+
+| Dari v1.0 | Ke v1.1 | Catatan |
+| --- | --- | --- |
+| A-X1-M1 | FND-X1-M1..M2; A-X1-M8 | I-P-O dan sistem operasi pindah ke blok fondasi; lingkungan g++ tetap di A-X1-M8. |
+| A-X1-M2 | A-X1-M8 | Digabung dengan lingkungan g++. |
+| A-X1-M3, M4 | A-X1-M9 | Variabel, tipe, ekspresi, dan masukan/keluaran digabung. |
+| A-X1-M5, M8 | A-X1-M10 | Percabangan dan logika Boolean digabung. |
+| A-X1-M6, M7 | A-X1-M11 | Perulangan I dan II digabung. |
+| A-X1-M9 | A-X1-M12 | Fungsi tetap. |
+| A-X1-M10, M11, M12 | A-X2-M1, M2, M3 | Array satu dimensi, string, array dua dimensi digeser ke awal semester 2. |
+| A-X1-M13 | A-X1-M13 | Proyek mini data berkualitas tanpa array (masukan berurutan) `[asumsi]`. |
+| A-X1-M14 | A-X1-M14 | Asesmen; asesmen formatif fondasi dilebur di sini. |
+
+Jalur A, semester 2:
+
+| Dari v1.0 | Ke v1.1 | Catatan |
+| --- | --- | --- |
+| A-X2-M1, M2 | A-X2-M4 | Penelusuran galat dan aritmetika dasar digabung. |
+| A-X2-M3 | A-X2-M5 | FPB, KPK, bilangan prima. |
+| A-X2-M4 | A-X2-M6 | `vector`. |
+| A-X2-M5, M6 | A-X2-M7 | Stack dan queue digabung `[asumsi]`. |
+| A-X2-M7 | A-X2-M8 | Pencarian. |
+| A-X2-M8, M9 | A-X2-M9, M10 | Bubble sort, insertion sort. |
+| A-X2-M10, M11 | A-X2-M11, M12 | Pengantar rekursi; efisiensi intuitif. |
+| A-X2-M12 | A-XI1-M3 | Operasi bit dasar (pengayaan) pindah ke pengayaan kelas XI (keputusan pemilik). |
+| A-X2-M13, M14 | A-X2-M13, M14 | Tetap. |
+
+Jalur B, semester 1:
+
+| Dari v1.0 | Ke v1.1 | Catatan |
+| --- | --- | --- |
+| B-X1-M1 | FND-X1-M1..M2; B-X1-M8 | I-P-O dan sistem operasi pindah ke blok fondasi; peramban, editor, Bun, Git tetap di B-X1-M8. |
+| B-X1-M2 | B-X1-M8 | Digabung dengan lingkungan kerja. |
+| B-X1-M3, M4 | B-X1-M9 | Variabel, tipe, ekspresi dan masukan/keluaran digabung. |
+| B-X1-M5, M8 | B-X1-M10 | Percabangan dan logika Boolean digabung. |
+| B-X1-M6, M7 | B-X1-M11 | Perulangan I dan II digabung. |
+| B-X1-M9 | B-X1-M12 | Fungsi tetap. |
+| B-X1-M10, M11, M12 | B-X2-M1, M2, M3 | Array, string dan templat, objek dan JSON digeser ke awal semester 2. |
+| B-X1-M13, M14 | B-X1-M13, M14 | Tetap; asesmen fondasi dilebur di M14. |
+
+Jalur B, semester 2:
+
+| Dari v1.0 | Ke v1.1 | Catatan |
+| --- | --- | --- |
+| B-X2-M1, M2, M3 | B-X2-M4, M5, M6 | HTML, CSS, DOM bergeser tiga minggu karena minggu yang digeser dari semester 1. |
+| B-X2-M4, M5 | B-X2-M7, M8 | Stack dan queue; pencarian. |
+| B-X2-M6, M7 | B-X2-M9 | Bubble sort dan insertion sort digabung `[asumsi]`; visualisasi langkah pindah ke proyek mini B-X2-M13. |
+| B-X2-M8 | B-X2-M10 | Data berkualitas. |
+| B-X2-M9 | (dihapus) | Kata sandi dan privasi: sudah dicakup FND-X1-M6 (keputusan pemilik). |
+| B-X2-M10 | (dihapus) | HAKI dan lisensi: sudah dicakup FND-X1-M2 dan M6 (keputusan pemilik); lisensi pada proyek tetap muncul di B-XII1-M11. |
+| B-X2-M11, M12 | B-X2-M11, M12 | Mesin pencari dan dokumentasi; Git. |
+| B-X2-M13, M14 | B-X2-M13, M14 | Tetap. |
+
 ### 3.1 Jalur A: Algoritmik dengan C++
 
 #### A-X1 (kelas X, semester 1; Fase E)
 
+Minggu 1-7 adalah blok fondasi (bagian 3.0); minggu jalur dimulai dari M8.
+
 | Minggu | Topik | Tujuan | Keluaran | Latihan |
 | --- | --- | --- | --- | --- |
-| M1 | Komputer, Input-Proses-Output, sistem operasi, lingkungan g++ | menjelaskan model I-P-O Von Neumann dan peran OS; mengompilasi program pertama | `hello.cpp`; diagram I-P-O | simulasi I-P-O tanpa komputer; cetak teks |
-| M2 | Algoritma, pseudocode, diagram alir | menulis solusi sederhana dalam pseudocode | 3 pseudocode | tukar dua nilai; cari nilai terbesar dari tiga |
-| M3 | Variabel, tipe data, ekspresi | memilih tipe (`int`, `long long`, `double`, `char`, `bool`) dan menulis ekspresi | program hitung | luas dan keliling; pembagian bulat dan sisa |
-| M4 | Masukan dan keluaran | membaca dan menulis data dengan `cin`/`cout` | program berformat | konversi suhu; rata-rata dua bilangan |
-| M5 | Percabangan | memakai `if`/`else`, `switch` | program bercabang | genap/ganjil; kategori nilai (data sintetis) |
-| M6 | Perulangan I | memakai `for` dan `while` | program berulang | jumlah deret; pola bintang |
-| M7 | Perulangan II | memakai perulangan bersarang, `break`, `continue` | tabel keluaran | tabel perkalian; uji prima sederhana |
-| M8 | Logika Boolean | menyusun tabel kebenaran; memakai `&&`, `||`, `!`, XOR | tabel kebenaran | sederhanakan kondisi; implikasi sebagai kondisi |
-| M9 | Fungsi dan parameter | memecah program menjadi fungsi | program modular | faktorial; FPB |
-| M10 | Array satu dimensi | menyimpan dan mengolah barisan data | program array | maksimum, minimum, rata-rata; balik array |
-| M11 | String | mengolah teks karakter demi karakter | program teks | palindrom; hitung vokal |
-| M12 | Array dua dimensi | mengolah tabel data | program matriks | jumlah baris dan kolom; transpos |
-| M13 | Proyek mini: data berkualitas | memeriksa dan membersihkan data tabel kecil secara mandiri atau berkelompok | laporan singkat | validasi rentang nilai; temukan data ganjil (sintetis) |
-| M14 | Asesmen dan refleksi | menunjukkan penguasaan dasar | uji tulis dan praktik; jurnal | kuis kode |
+| M8 | Lingkungan g++, algoritma, pseudocode, diagram alir | mengompilasi program pertama; menulis solusi sederhana dalam pseudocode | `hello.cpp`; 3 pseudocode | cetak teks; tukar dua nilai; cari nilai terbesar dari tiga |
+| M9 | Variabel, tipe data, ekspresi; masukan dan keluaran | memilih tipe (`int`, `long long`, `double`, `char`, `bool`) dan menulis ekspresi; membaca dan menulis data dengan `cin`/`cout` | program hitung berformat | luas dan keliling; pembagian bulat dan sisa; konversi suhu; rata-rata dua bilangan |
+| M10 | Percabangan dan logika Boolean | memakai `if`/`else`, `switch`; menyusun tabel kebenaran; memakai `&&`, `||`, `!`, XOR | program bercabang; tabel kebenaran | genap/ganjil; kategori nilai (data sintetis); sederhanakan kondisi; implikasi sebagai kondisi |
+| M11 | Perulangan | memakai `for` dan `while`; memakai perulangan bersarang, `break`, `continue` | program berulang; tabel keluaran | jumlah deret; pola bintang; tabel perkalian; uji prima sederhana |
+| M12 | Fungsi dan parameter | memecah program menjadi fungsi | program modular | faktorial; FPB |
+| M13 | Proyek mini: data berkualitas | memeriksa dan membersihkan data kecil dari masukan berurutan secara mandiri atau berkelompok (array baru diajarkan di awal semester 2) `[asumsi]` | laporan singkat | validasi rentang nilai; temukan data ganjil (sintetis) dari deretan masukan |
+| M14 | Asesmen dan refleksi | menunjukkan penguasaan dasar pemrograman dan konsep fondasi | uji tulis dan praktik; jurnal | kuis kode; kuis konsep fondasi (formatif, dilebur di sini) |
 
 #### A-X2 (kelas X, semester 2; Fase E)
 
 | Minggu | Topik | Tujuan | Keluaran | Latihan |
 | --- | --- | --- | --- | --- |
-| M1 | Ulasan dan penelusuran galat | menemukan galat dengan mencetak nilai dan uji kecil | daftar galat umum | perbaiki 5 program rusak |
-| M2 | Aritmetika dasar | memakai paritas, habis dibagi, modulo | program aritmetika | digit penjumlahan; sisa bagi |
-| M3 | FPB, KPK, bilangan prima | menghitung FPB/KPK dan faktorisasi | program bilangan | faktorisasi prima; saringan sederhana |
-| M4 | Struktur data: daftar (`vector`) | menyimpan data yang ukurannya berubah | program `vector` | tambah/hapus elemen; hitung frekuensi |
-| M5 | Struktur data: tumpukan (stack) | memakai prinsip LIFO | program stack | kurung seimbang |
-| M6 | Struktur data: antrian (queue) | memakai prinsip FIFO | program queue | simulasi antrian loket (sintetis) |
-| M7 | Pencarian sekuensial dan biner | memilih dan menulis pencarian | program pencarian | cari nilai; tebak angka dengan biner |
-| M8 | Pengurutan: bubble sort | menulis dan menelusuri bubble sort | program urut | urutkan dan hitung pertukaran |
-| M9 | Pengurutan: insertion sort | menulis insertion sort dan membandingkannya | program urut | bandingkan jumlah langkah |
-| M10 | Pengantar rekursi | menulis fungsi rekursif sederhana | fungsi rekursif | faktorial dan Fibonacci rekursif |
-| M11 | Efisiensi intuitif | menghitung banyak operasi dan membandingkan solusi | tabel perbandingan | jumlah langkah dua solusi |
-| M12 | Operasi bit dasar (pengayaan) | memakai `&`, `\|`, `^`, geser | program bit | cek bit ke-k; tukar tanpa variabel bantu |
+| M1 | Array satu dimensi | menyimpan dan mengolah barisan data | program array | maksimum, minimum, rata-rata; balik array |
+| M2 | String | mengolah teks karakter demi karakter | program teks | palindrom; hitung vokal |
+| M3 | Array dua dimensi | mengolah tabel data | program matriks | jumlah baris dan kolom; transpos |
+| M4 | Ulasan dan penelusuran galat; aritmetika dasar | menemukan galat dengan mencetak nilai dan uji kecil; memakai paritas, habis dibagi, modulo | daftar galat umum; program aritmetika | perbaiki 5 program rusak; digit penjumlahan; sisa bagi |
+| M5 | FPB, KPK, bilangan prima | menghitung FPB/KPK dan faktorisasi | program bilangan | faktorisasi prima; saringan sederhana |
+| M6 | Struktur data: daftar (`vector`) | menyimpan data yang ukurannya berubah | program `vector` | tambah/hapus elemen; hitung frekuensi |
+| M7 | Struktur data: tumpukan (stack) dan antrian (queue) | memakai prinsip LIFO dan FIFO | program stack dan queue | kurung seimbang; simulasi antrian loket (sintetis) |
+| M8 | Pencarian sekuensial dan biner | memilih dan menulis pencarian | program pencarian | cari nilai; tebak angka dengan biner |
+| M9 | Pengurutan: bubble sort | menulis dan menelusuri bubble sort | program urut | urutkan dan hitung pertukaran |
+| M10 | Pengurutan: insertion sort | menulis insertion sort dan membandingkannya | program urut | bandingkan jumlah langkah |
+| M11 | Pengantar rekursi | menulis fungsi rekursif sederhana | fungsi rekursif | faktorial dan Fibonacci rekursif |
+| M12 | Efisiensi intuitif | menghitung banyak operasi dan membandingkan solusi | tabel perbandingan | jumlah langkah dua solusi |
 | M13 | Proyek mini: pengelolaan data tabel | memakai struktur data dan pencarian/pengurutan standar pada satu masalah | program dan penjelasan | urut, cari, dan rekap data sintetis |
 | M14 | Asesmen dan refleksi | menunjukkan struktur data dan algoritma standar | uji tulis dan praktik | kuis kode |
 
@@ -243,7 +361,7 @@ Seluruh data latihan bersifat sintetis (bagian 8).
 | --- | --- | --- | --- | --- |
 | M1 | Proses rekayasa program | menguraikan spesifikasi, rancangan, implementasi, uji | dokumen rancangan satu halaman | rancang program rekap |
 | M2 | Kualitas kode dan pengujian | menulis uji kasus dan menjaga kualitas kode | berkas uji kasus | tulis kasus uji tepi |
-| M3 | Pencarian lengkap (complete search) | menyelesaikan masalah dengan mencoba semua kemungkinan | program pencarian lengkap | subhimpunan jumlah tertentu |
+| M3 | Pencarian lengkap (complete search); operasi bit dasar (pengayaan, dari A-X2-M12 v1.0) | menyelesaikan masalah dengan mencoba semua kemungkinan; pengayaan: memakai `&`, `\|`, `^`, geser untuk mewakili subhimpunan | program pencarian lengkap; program bit (pengayaan) | subhimpunan jumlah tertentu; pengayaan: cek bit ke-k, tukar tanpa variabel bantu |
 | M4 | Pencarian lengkap dan pemangkasan | memangkas pencarian yang tak perlu | program dengan pruning | kombinasi dengan batas |
 | M5 | Greedy I | menyusun pilihan serakah dan alasannya | program greedy | pecahan koin |
 | M6 | Greedy II | menguji kapan greedy benar atau salah | contoh tandingan | pemilihan kegiatan |
@@ -317,40 +435,35 @@ Seluruh data latihan bersifat sintetis (bagian 8).
 
 #### B-X1 (kelas X, semester 1; Fase E)
 
+Minggu 1-7 adalah blok fondasi (bagian 3.0); minggu jalur dimulai dari M8.
+
 | Minggu | Topik | Tujuan | Keluaran | Latihan |
 | --- | --- | --- | --- | --- |
-| M1 | Komputer, I-P-O, sistem operasi, peramban, editor, Bun, Git | menjelaskan I-P-O dan peran OS; menjalankan skrip pertama | `halo.js`; diagram I-P-O | simulasi I-P-O; `console.log` |
-| M2 | Algoritma dan pseudocode | menulis pseudocode yang dekat dengan bahasa komputer | 3 pseudocode | tukar dua nilai; nilai terbesar |
-| M3 | Variabel, tipe, ekspresi (JS) | memakai `let`, `const`, `number`, `string`, `boolean` | skrip hitung | luas dan keliling |
-| M4 | Masukan dan keluaran | membaca masukan (argumen berkas perintah atau formulir) dan menulis keluaran | skrip berinteraksi | konversi suhu |
-| M5 | Percabangan | memakai `if`/`else`, `switch` | skrip bercabang | genap/ganjil; kategori nilai (sintetis) |
-| M6 | Perulangan I | memakai `for`, `while` | skrip berulang | jumlah deret; pola |
-| M7 | Perulangan II | memakai perulangan bersarang, `break`, `continue` | skrip tabel | tabel perkalian; uji prima |
-| M8 | Logika Boolean | memakai operator logika; `===` dan nilai "truthy/falsy" | tabel kebenaran | sederhanakan kondisi |
-| M9 | Fungsi | memakai fungsi biasa dan fungsi panah dengan parameter | skrip modular | faktorial; FPB |
-| M10 | Array | memakai array dan metode `map`/`filter`/`reduce` | skrip array | rata-rata; saring nilai |
-| M11 | String dan templat | mengolah teks | skrip teks | palindrom; hitung vokal |
-| M12 | Objek dan JSON | memodelkan data dengan objek; membaca dan menulis JSON | berkas JSON | daftar buku (sintetis) |
+| M8 | Lingkungan kerja: peramban, editor, Bun, Git; algoritma dan pseudocode | menjalankan skrip pertama; menulis pseudocode yang dekat dengan bahasa komputer | `halo.js`; 3 pseudocode | `console.log`; tukar dua nilai; nilai terbesar |
+| M9 | Variabel, tipe, ekspresi (JS); masukan dan keluaran | memakai `let`, `const`, `number`, `string`, `boolean`; membaca masukan (argumen berkas perintah atau formulir) dan menulis keluaran | skrip hitung yang berinteraksi | luas dan keliling; konversi suhu |
+| M10 | Percabangan dan logika Boolean | memakai `if`/`else`, `switch`; memakai operator logika; `===` dan nilai "truthy/falsy" | skrip bercabang; tabel kebenaran | genap/ganjil; kategori nilai (sintetis); sederhanakan kondisi |
+| M11 | Perulangan | memakai `for`, `while`; memakai perulangan bersarang, `break`, `continue` | skrip berulang; skrip tabel | jumlah deret; pola; tabel perkalian; uji prima |
+| M12 | Fungsi | memakai fungsi biasa dan fungsi panah dengan parameter | skrip modular | faktorial; FPB |
 | M13 | Proyek mini | membuat permainan tebak angka berbasis teks | skrip dan penjelasan | tebak angka |
-| M14 | Asesmen dan refleksi | menunjukkan dasar pemrograman | uji tulis dan praktik; jurnal | kuis kode |
+| M14 | Asesmen dan refleksi | menunjukkan dasar pemrograman dan konsep fondasi | uji tulis dan praktik; jurnal | kuis kode; kuis konsep fondasi (formatif, dilebur di sini) |
 
 #### B-X2 (kelas X, semester 2; Fase E)
 
 | Minggu | Topik | Tujuan | Keluaran | Latihan |
 | --- | --- | --- | --- | --- |
-| M1 | HTML dasar | menyusun dokumen HTML semantik | halaman HTML | profil fiktif |
-| M2 | CSS dasar dan responsif | menata halaman agar nyaman di layar kecil | halaman bergaya | tata letak dua kolom |
-| M3 | DOM dan peristiwa | mengubah halaman dengan JS | halaman interaktif | penghitung klik |
-| M4 | Struktur data: tumpukan dan antrian | membuat stack dan queue dengan array/kelas | modul `stack`, `queue` | kurung seimbang; antrian sintetis |
-| M5 | Pencarian sekuensial dan biner | menulis kedua pencarian | skrip pencarian | tebak angka biner |
-| M6 | Pengurutan: bubble sort | menulis dan menelusuri | skrip urut | hitung pertukaran |
-| M7 | Pengurutan: insertion sort dan visualisasi | memvisualisasikan langkah pengurutan | halaman visualisasi | animasi langkah |
-| M8 | Data berkualitas | memvalidasi masukan dan merapikan data tabel (JSON) | skrip validasi | cek rentang, duplikat |
-| M9 | Kata sandi dan privasi akun | memakai manajer kata sandi, autentikasi dua langkah, konfigurasi privasi pada akun uji | lembar periksa | konfigurasi akun lab (bukan akun pribadi bila sekolah melarang) |
-| M10 | HAKI dan lisensi perangkat lunak | membaca lisensi (misalnya MIT) dan memberi atribusi | berkas `LICENSE` dan atribusi | pilih lisensi untuk proyek |
+| M1 | Array | memakai array dan metode `map`/`filter`/`reduce` | skrip array | rata-rata; saring nilai |
+| M2 | String dan templat | mengolah teks | skrip teks | palindrom; hitung vokal |
+| M3 | Objek dan JSON | memodelkan data dengan objek; membaca dan menulis JSON | berkas JSON | daftar buku (sintetis) |
+| M4 | HTML dasar | menyusun dokumen HTML semantik | halaman HTML | profil fiktif |
+| M5 | CSS dasar dan responsif | menata halaman agar nyaman di layar kecil | halaman bergaya | tata letak dua kolom |
+| M6 | DOM dan peristiwa | mengubah halaman dengan JS | halaman interaktif | penghitung klik |
+| M7 | Struktur data: tumpukan dan antrian | membuat stack dan queue dengan array/kelas | modul `stack`, `queue` | kurung seimbang; antrian sintetis |
+| M8 | Pencarian sekuensial dan biner | menulis kedua pencarian | skrip pencarian | tebak angka biner |
+| M9 | Pengurutan: bubble sort dan insertion sort | menulis, menelusuri, dan membandingkan kedua pengurutan | skrip urut | hitung pertukaran; bandingkan jumlah langkah |
+| M10 | Data berkualitas | memvalidasi masukan dan merapikan data tabel (JSON) | skrip validasi | cek rentang, duplikat |
 | M11 | Mesin pencari dan dokumentasi | mencari dan menilai dokumentasi teknis | catatan sumber | selesaikan masalah dari dokumentasi resmi |
 | M12 | Git dan kolaborasi dasar | memakai commit, cabang, dan kolaborasi | repositori latihan | kerja berpasangan |
-| M13 | Proyek mini: visualisasi algoritma | menggabungkan HTML/CSS/JS dan algoritma standar | halaman statis | visualisasi pencarian atau pengurutan |
+| M13 | Proyek mini: visualisasi algoritma | menggabungkan HTML/CSS/JS dan algoritma standar; memvisualisasikan langkah pengurutan atau pencarian | halaman statis | visualisasi pencarian atau pengurutan (animasi langkah) |
 | M14 | Asesmen dan refleksi | menunjukkan algoritma standar dan dasar web | uji tulis dan praktik | kuis kode |
 
 #### B-XI1 (kelas XI, semester 1; Fase F)
@@ -435,16 +548,18 @@ Seluruh data latihan bersifat sintetis (bagian 8).
 
 | Butir CP | Topik | Minggu | Jalur |
 | --- | --- | --- | --- |
-| E-BK-a | struktur data dan algoritma standar | A-X2-M4..M9; B-X2-M4..M7 | A, B |
-| E-BK-b | data berkualitas | A-X1-M13; B-X2-M8 | A, B |
-| E-BK-c | menerapkan algoritma dan struktur data standar | A-X2-M4..M9, M13; B-X2-M4..M7, M13 | A, B |
-| E-BK-d | pseudocode dan program dalam bahasa komputer | A-X1-M2..M12; B-X1-M2..M12 | A, B |
-| E-BK-e | model I-P-O dan sistem operasi | A-X1-M1; B-X1-M1 | A, B |
+| E-BK-a | struktur data dan algoritma standar | A-X2-M6..M10; B-X2-M7..M9 | A, B |
+| E-BK-b | data berkualitas | A-X1-M13; B-X2-M10 | A, B |
+| E-BK-c | menerapkan algoritma dan struktur data standar | A-X2-M6..M10, M13; B-X2-M7..M9, M13 | A, B |
+| E-BK-d | pseudocode dan program dalam bahasa komputer | A-X1-M8..M12; A-X2-M1..M3; B-X1-M8..M12; B-X2-M1..M3 | A, B |
+| E-BK-e | model I-P-O dan sistem operasi | FND-X1-M1..M2 | A, B |
 | E-LD-a | mesin pencari (hanya untuk dokumentasi teknis) | B-X2-M11 | B (parsial) |
-| E-LD-f | produksi konten dan kolaborasi | B-X2-M1..M3, M12..M13 | B |
-| E-LD-g | HAKI dan lisensi | B-X2-M10 | B |
-| E-LD-k | kata sandi dan autentikasi dua langkah | B-X2-M9 | B |
-| E-LD-l | konfigurasi privasi dan keamanan akun | B-X2-M9 | B |
+| E-LD-d | perangkat pengolah dokumen, lembar kerja, presentasi | FND-X1-M7 | A, B |
+| E-LD-e | keamanan dasar konektivitas jaringan | FND-X1-M4..M6 | A, B |
+| E-LD-f | produksi konten dan kolaborasi | B-X2-M4..M6, M12..M13 | B |
+| E-LD-g | HAKI dan lisensi | FND-X1-M2, M6 | A, B |
+| E-LD-k | kata sandi dan autentikasi dua langkah | FND-X1-M6 | A, B |
+| E-LD-l | konfigurasi privasi dan keamanan akun | FND-X1-M6 | A, B |
 
 ### 4.2 Fase F
 
@@ -467,15 +582,38 @@ Seluruh data latihan bersifat sintetis (bagian 8).
 
 ### 4.3 Butir CP di luar silabus coding ini
 
-Butir berikut tidak dicakup oleh jalur A dan B (tidak dihilangkan dari CP):
-E-LD-b, c, d, e, h, i, j; F-LD-a, b, c, h, j; F-BK-d (kecuali pengiriman
-data HTTP pada B-XI2-M11).
+Butir berikut tidak dicakup oleh jalur A dan B maupun blok fondasi (tidak
+dihilangkan dari CP): E-LD-b, c, h, i, j; F-LD-a, b, c, h, j; F-BK-d
+(kecuali pengiriman data HTTP pada B-XI2-M11). Pada v1.0 daftar ini juga
+memuat E-LD-d dan E-LD-e; keduanya kini tercakup oleh blok fondasi
+(bagian 4.1).
 
 **Keputusan pemilik (2026-11-18, issue #52):** butir-butir itu dicakup lewat
 **modul pendamping** literasi digital (issue #69). Interaksi dengan
 perangkat fisik seperti IoT dan robot (disebut di panduan, bagian C, bukan
 di rumusan CP) menjadi **jalur C terpisah** (issue #68). Keduanya disusun
-untuk silabus v1.1 dan baru berlaku setelah disetujui pemilik.
+untuk silabus v1.1 dan baru berlaku setelah disetujui pemilik. **Keputusan
+pemilik (2026-11-18, issue #86/#92):** E-LD-d keluar dari daftar modul
+pendamping karena menjadi FND-X1-M7.
+
+### 4.4 Pengantar blok fondasi (tidak dihitung sebagai pemenuhan butir CP)
+
+Blok fondasi memberi pengantar pedagogis pada butir berikut, tetapi
+**tidak dianggap memenuhinya** `[asumsi]`. Rumusan butir ada di bagian 1.3
+(kode di bagian 1.4); tidak dikutip ulang di sini.
+
+| Butir CP | Pengantar di blok fondasi | Pemenuhan tetap di |
+| --- | --- | --- |
+| F-BK-d | FND-X1-M4..M5 (konsep jaringan, pengiriman data, diagnosis dasar) | B-XI2-M11 (HTTP) dan modul pendamping (#69); butir Fase F tidak dipenuhi di kelas X. |
+| F-LD-e | FND-X1-M6 (keamanan konektivitas dasar) | B-XI2-M10 (parsial) dan modul pendamping (#69). |
+| F-LD-d | FND-X1-M1 (membaca spesifikasi komputer) | B-XII2-M1..M2 (jalur B). |
+
+**Representasi data** (FND-X1-M3: biner, heksadesimal, teks, gambar):
+dipertahankan sebagai **prasyarat** (keputusan pemilik, bagian 9.1) untuk
+memahami komputer Von Neumann (E-BK-e), tipe data pada A-X1-M9, operasi bit
+(A-XI1-M3, pengayaan), dan data bagi jalur C dan D. Minggu ini **tidak
+dihitung sebagai pemenuhan butir CP mana pun**, karena rumusan CP yang
+dikutip tidak menyebutnya secara eksplisit.
 
 ## 5. Jembatan ke OSN (jalur A)
 
@@ -489,19 +627,19 @@ kelas reguler jalur A.
 
 | Rumpun materi OSN (`id`) | Topik jalur A yang menyiapkan | Minggu | Catatan |
 | --- | --- | --- | --- |
-| `dasar-pemrograman` | sintaks C++, variabel, I/O, percabangan, perulangan, fungsi | A-X1-M3..M9 | Sesuai CP. |
-| `logika-bitwise` | logika Boolean; operasi bit | A-X1-M8; A-X2-M12 | Operasi bit: **P**. |
-| `aritmetika` | paritas, FPB/KPK, prima; aritmetika modular | A-X2-M2..M3; A-XII1-M8 | **P** untuk modular. |
+| `dasar-pemrograman` | sintaks C++, variabel, I/O, percabangan, perulangan, fungsi | A-X1-M9..M12 | Sesuai CP. |
+| `logika-bitwise` | logika Boolean; operasi bit | A-X1-M10; A-XI1-M3 | Operasi bit: **P**; pindah dari kelas X ke pengayaan kelas XI (keputusan pemilik 2026-11-18). |
+| `aritmetika` | paritas, FPB/KPK, prima; aritmetika modular | A-X2-M4..M5; A-XII1-M8 | **P** untuk modular. |
 | `aturan-berhitung` | aturan jumlah dan kali, permutasi dan kombinasi, Pascal | A-XII1-M6..M7 | **P**. |
-| `rekursi` | rekursi, divide-and-conquer, backtracking | A-X2-M10; A-XI1-M7, M11; A-XII2-M4 | Rekursi ada di panduan (strategi algoritmik). |
-| `search-sort` | pencarian sekuensial dan biner; bubble, insertion; merge, quick | A-X2-M7..M9; A-XI1-M8 | Bubble/insertion/sekuensial/biner sesuai panduan; merge dan quick: **P**. |
+| `rekursi` | rekursi, divide-and-conquer, backtracking | A-X2-M11; A-XI1-M7, M11; A-XII2-M4 | Rekursi ada di panduan (strategi algoritmik). |
+| `search-sort` | pencarian sekuensial dan biner; bubble, insertion; merge, quick | A-X2-M8..M10; A-XI1-M8 | Bubble/insertion/sekuensial/biner sesuai panduan; merge dan quick: **P**. |
 | `strategi-problem-solving` | pencarian lengkap dan pruning, greedy, divide-and-conquer, DP | A-XI1-M3..M7, M11..M12; A-XI2-M1..M4 | Greedy, rekursi, DP ada di panduan; pencarian lengkap: **P**. |
-| `struktur-data` | array, string, stack, queue, heap, DSU, Fenwick, segment tree | A-X1-M10..M12; A-X2-M4..M6; A-XI1-M9..M10; A-XII1-M4, M9..M10 | Stack, queue, list sesuai panduan; heap, DSU, Fenwick, segment tree: **P**. |
+| `struktur-data` | array, string, stack, queue, heap, DSU, Fenwick, segment tree | A-X2-M1..M3, M6..M7; A-XI1-M9..M10; A-XII1-M4, M9..M10 | Stack, queue, list sesuai panduan; heap, DSU, Fenwick, segment tree: **P**. |
 | `graph-tree` | representasi graf, BFS/DFS, keterhubungan, lintasan terpendek, MST, pohon berakar, LCA | A-XI2-M5..M8; A-XII1-M1..M5 | Seluruhnya **P** (graf tidak disebut di CP yang dikutip). |
 | `geometri-dasar` | koordinat, jarak Euclid, Pythagoras | A-XII1-M11 | **P**. |
 
 Kesepuluh id rumpun tercakup. Catatan: kedalaman yang dituntut OSN
-(misalnya tingkat kesulitan soal) tidak dijamin oleh draf ini; jembatan di
+(misalnya tingkat kesulitan soal) tidak dijamin oleh silabus ini; jembatan di
 sini hanya menyiapkan topik, bukan menggantikan pembinaan OSN.
 
 ## 6. Analisis kelayakan `awcms-one` untuk SMA (jalur B)
@@ -550,7 +688,7 @@ komputer lab sekolah.
 
 ### 6.3 Progresi yang disarankan
 
-JS dasar (B-X1) -> HTML/CSS/DOM dan algoritma standar (B-X2) -> TypeScript
+JS dasar (B-X1 M8..M12, B-X2 M1..M3) -> HTML/CSS/DOM dan algoritma standar (B-X2 M4..M13) -> TypeScript
 (B-XI1 M2..M4) -> Bun dan pengujian (B-XI1 M5..M7) -> server dan data
 (B-XI2) -> Astro (B-XII1 M1..M2) -> membaca `awcms-one` (B-XII1 M3..M4) ->
 profil `landing` dan `template:init` (B-XII1 M5..M8) -> proyek kustomisasi
@@ -584,6 +722,10 @@ Skor ini penilaian penyusun, bukan pengukuran.
 ### 7.1 Prinsip asesmen `[asumsi]`
 
 - Asesmen formatif tiap minggu lewat latihan; sumatif di minggu 14.
+- **Blok fondasi** (keputusan pemilik 2026-11-18): asesmen **formatif**
+  (kuis singkat dan lembar praktik tiap minggu), dilebur ke asesmen minggu
+  14 kelas X semester 1 (`A-X1-M14`, `B-X1-M14`); tidak ada minggu asesmen
+  atau penilaian sendiri untuk fondasi.
 - Praktik dinilai dengan uji kasus otomatis dan rubrik (ketepatan,
   keterbacaan, pengujian, justifikasi).
 - Fase F menilai kemampuan membandingkan alternatif solusi dan
@@ -601,6 +743,7 @@ Skor ini penilaian penyusun, bukan pengukuran.
 | B | Komputer dengan Bun (versi mengikuti `awcms-one`, saat ini 1.4.4), Node tidak wajib, peramban modern, Git, editor; akses internet untuk paket. |
 | B (opsi 1 kelas XII) | Satu atau beberapa mesin lab berkemampuan menjalankan Docker dan PostgreSQL; spesifikasi minimum `[belum terverifikasi]`. |
 | Umum | Akun uji sintetis; tanpa akun pribadi siswa wajib. |
+| Fondasi (kelas X, bersama) | Komputer lab dengan informasi sistem, perangkat pengolah dokumen, lembar kerja, dan presentasi (sumber terbuka atau berbasis web), serta jaringan lab biasa; kartu dan kertas untuk simulasi peran. Komponen bekas dan jaringan lokal terisolasi hanya opsi bila lab menyediakan; internet opsional `[asumsi]`. |
 
 **Penanggung jawab penyiapan lab (keputusan pemilik 2026-11-18):**
 campuran — lingkungan jalur A dan B disiapkan guru dan sekolah; lingkungan
@@ -624,9 +767,13 @@ penyelenggara.
   `[belum terverifikasi]` (bagian 1; keputusan pemilik: panduan dipakai).
 - Banyak topik jalur A (graf, DP, struktur data lanjut) adalah pengayaan
   opsional untuk jembatan OSN, bukan tuntutan CP (bagian 5).
-- Rencana mingguan belum diuji di kelas.
+- Rencana mingguan belum diuji di kelas; susunan kelas X v1.1 (tujuh minggu
+  fondasi, penggabungan dan penggeseran minggu) adalah rancangan penyusun
+  `[asumsi]`; disetujui pemilik sebagai bagian dari v1.1 (bagian 9.2).
 
 ## 9. Keputusan pemilik atas pertanyaan terbuka (2026-11-18)
+
+### 9.0 Keputusan atas silabus v1.0 (issue #52)
 
 Semua dijawab pemilik lewat dialog pilihan dan dicatat di issue #52.
 
@@ -641,6 +788,36 @@ Semua dijawab pemilik lewat dialog pilihan dan dicatat di issue #52.
 | 7 | Pemilihan jalur | Murid memilih satu jalur, boleh lebih. |
 | 8 | Penyiapan lab | Campuran: jalur A/B oleh sekolah; `awcms-one` dan IoT dibantu mitra (bagian 7.2). |
 
+### 9.1 Keputusan atas usulan blok fondasi kelas X (2026-11-18)
+
+Dijawab pemilik lewat dialog pilihan; dicatat di issue #86 dan diterapkan
+pada silabus v1.1 di issue #92. Persetujuan atas v1.1 secara keseluruhan
+dicatat terpisah di bagian 9.2.
+
+| No. | Pertanyaan | Keputusan |
+| --- | --- | --- |
+| Q1 | Panjang blok fondasi | Opsi (b), enam minggu, ditambah satu minggu perangkat pengolah dokumen, lembar kerja, dan presentasi (E-LD-d): **tujuh minggu**, kode FND-X1-M1..FND-X1-M7 (bagian 3.0). |
+| Q2 | Bentuk pelaksanaan | **Kelas bersama lintas jalur**, sebelum murid memilih jalur. |
+| Q3 | Perangkat pengolah dokumen, lembar kerja, presentasi (E-LD-d) | Menjadi **satu minggu fondasi** (FND-X1-M7); keluar dari daftar modul pendamping (#69). |
+| Q4 | `B-X2-M9` dan `B-X2-M10` | **Dihapus** karena sudah dicakup fondasi; slotnya dipakai minggu yang digeser dari semester 1 (bagian 3.0, padanan). |
+| Q5 | Operasi bit dasar (v1.0 `A-X2-M12`, pengayaan) | **Pindah ke pengayaan kelas XI** (`A-XI1-M3` pada v1.1). |
+| Q6 | Asesmen fondasi | **Formatif**, dilebur ke asesmen minggu 14 kelas X semester 1; tanpa minggu asesmen sendiri (bagian 7.1). |
+| Q7 | Representasi data | Tetap **prasyarat**; **tidak dihitung** sebagai pemenuhan butir CP mana pun (bagian 4.4). |
+| Q8 | Kesiapan lab untuk praktik jaringan dan perangkat keras | **Simulasi peran** sebagai jalur utama praktik; komponen bekas dan jaringan lokal terisolasi sebagai opsi bila lab menyediakan (bagian 3.0). |
+
+Rancangan penyusun yang menerapkan keputusan ini (penggabungan dan
+penggeseran minggu, nomor minggu baru) ditandai `[asumsi]` dan disetujui
+pemilik bersama v1.1 (bagian 9.2).
+
+### 9.2 Persetujuan silabus v1.1 (2026-11-19)
+
+Pemilik program **menyetujui silabus v1.1 pada 2026-11-19** untuk jalur A
+dan B lewat dialog pilihan; dicatat di issue #92. Persetujuan mencakup
+blok fondasi kelas X (bagian 3.0), penyusunan ulang kelas X semester 1 dan 2
+jalur A dan B, pemetaan CP (bagian 4), dan jembatan OSN (bagian 5) sebagaimana
+tertulis di dokumen ini. Jalur C (#68) dan modul pendamping (#69) tidak
+termasuk persetujuan ini.
+
 ## 10. Daftar rujukan
 
 | Rujukan | Status |
@@ -652,11 +829,14 @@ Semua dijawab pemilik lewat dialog pilihan dan dicatat di issue #52.
 | `ahliweb/awcms-one` (README, `docs/template.md`, `package.json`, metadata GitHub) `https://github.com/ahliweb/awcms-one` | Dibuka via GitHub API, 2026-11-18. |
 | `data/osn/topic-families.json` (silabus OSN v2.0, 2026-09-04) | Dibaca di repositori ini. |
 | ADR-0004, ADR-0006, ADR-0007 repositori ini | Dibaca. |
+| Silabus v1.0 (disetujui 2026-11-18; tersimpan di riwayat git) dan [`usulan-fondasi-kelas-x.md`](usulan-fondasi-kelas-x.md) (usulan blok fondasi, issue #86) | Dasar v1.1; dibaca di repositori ini. |
 
 ## Changelog
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v1.1.0 | 2026-11-19 | Disetujui pemilik program untuk jalur A dan B (issue #92, bagian 9.2). Menerapkan blok fondasi kelas X tujuh minggu (FND-X1-M1..M7, kelas bersama lintas jalur) sesuai delapan keputusan pemilik (bagian 9.1); kelas X semester 1 dan 2 jalur A dan B disusun ulang (minggu jalur dimulai dari M8; array, string, array dua dimensi / objek dan JSON digeser ke awal semester 2; beberapa minggu digabung); `B-X2-M9`/`M10` dihapus; operasi bit dipindah ke `A-XI1-M3` (pengayaan); pemetaan CP (4.1, 4.3, 4.4) dan jembatan OSN (5) diperbarui. Berkas draf `silabus-v1.1-draf.md` dihapus (isinya kini berkas ini). |
+| v1.1.0-draf | 2026-11-18 | Draf (issue #92, tahap 1) yang menjadi dasar v1.1; belum disetujui saat itu. |
 | v1.0.0 | 2026-11-18 | Disetujui pemilik program untuk jalur A dan B (issue #52). Keenam pertanyaan terbuka dijawab (bagian 9): panduan 2025 dipakai, 3 JP/minggu, modul pendamping (#69), jalur C terpisah (#68), murid memilih satu jalur, lab campuran. Berkas diganti nama dari `silabus-draf.md`. |
 | v0.2.0 | 2026-11-18 | Mencatat keputusan pemilik (issue #63): `awcms-one` opsi 1; topik bertanda P menjadi pengayaan opsional. Pertanyaan 4 dan 5 terjawab. Status tetap DRAF. |
 | v0.1.0 | 2026-11-18 | Draf awal (issue #51): sumber resmi dan kutipan CP Fase E/F, rencana mingguan dua jalur, pemetaan CP, jembatan OSN, analisis `awcms-one`, asesmen, perangkat, privasi, rujukan, pertanyaan terbuka. |

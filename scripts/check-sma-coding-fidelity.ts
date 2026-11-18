@@ -1,7 +1,8 @@
 /**
  * Fidelity check for the `sma-coding` corpus: parses the Markdown tables
  * and quotations of the owner-approved syllabus
- * (`docs/programs/sma-coding/silabus.md`, bagian 1.3, 1.4, 2, 3, 4 and 5)
+ * (`docs/programs/sma-coding/silabus.md`, bagian 1.3, 1.4, 2, 3 (incl. the
+ * shared foundation block 3.0), 4 and 5)
  * and compares the result cell by cell with `data/sma-coding/*.json`, so any
  * drift between the approved document and the data fails hard.
  *
@@ -27,6 +28,7 @@ export const SMA_DATA_FILES = [
   "tracks.json",
   "structure.json",
   "weeks.json",
+  "foundation.json",
   "cp-mapping.json",
   "osn-bridge.json",
 ] as const;
@@ -278,6 +280,8 @@ export function expectedCorpus(markdown: string): Record<SmaDataFileName, Json> 
   // bagian 3 -- tracks and weekly plan
   const tracks: Json[] = [];
   const weeks: Json[] = [];
+  const foundationWeeks: Json[] = [];
+  let inFoundation: { semester: string; kelas: string; phase: string } | undefined;
   const status = match(
     /^- \*\*Status:\*\* DISETUJUI pemilik program, (\d{4}-\d{2}-\d{2}) — jalur ([A-Z]) dan ([A-Z])\b/m,
     markdown,
@@ -300,6 +304,46 @@ export function expectedCorpus(markdown: string): Record<SmaDataFileName, Json> 
         tools: toolText.split(/,\s*(?:dan\s+)?|\s+dan\s+/).map((tool) => tool.trim()),
         approvalStatus: "disetujui",
         approvedOn: group(status, 1),
+      });
+      continue;
+    }
+    const foundationHeading =
+      /^#### FND-((?:XII|XI|X)[12]) \(kelas (X|XI|XII), semester (\d); blok fondasi[^)]*\)$/.exec(
+        line,
+      );
+    if (foundationHeading !== null) {
+      const semester = group(foundationHeading, 1);
+      if (semester !== `${group(foundationHeading, 2)}${group(foundationHeading, 3)}`) {
+        throw new Error(`check-sma-coding-fidelity: inconsistent heading ${JSON.stringify(line)}.`);
+      }
+      inFoundation = {
+        semester,
+        kelas: group(foundationHeading, 2),
+        phase: phaseOf(group(foundationHeading, 2)),
+      };
+      continue;
+    }
+    const foundationRow = /^\| (FND-((?:XII|XI|X)[12])-M(\d+)) \|/.exec(line);
+    if (foundationRow !== null) {
+      if (inFoundation === undefined || inFoundation.semester !== group(foundationRow, 2)) {
+        throw new Error(
+          `check-sma-coding-fidelity: foundation row ${group(foundationRow, 1)} outside its heading.`,
+        );
+      }
+      const row = splitTableRow(line);
+      const id = group(foundationRow, 1);
+      expectCells(row, 5, id);
+      foundationWeeks.push({
+        id,
+        kelas: inFoundation.kelas,
+        semester: inFoundation.semester,
+        semesterCode: `FND-${inFoundation.semester}`,
+        phase: inFoundation.phase,
+        week: Number(group(foundationRow, 3)),
+        topic: cell(row, 1, id),
+        objective: cell(row, 2, id),
+        output: cell(row, 3, id),
+        exercise: cell(row, 4, id),
       });
       continue;
     }
@@ -419,6 +463,7 @@ export function expectedCorpus(markdown: string): Record<SmaDataFileName, Json> 
       },
     },
     "weeks.json": { ...provenance("bagian 3"), weeks },
+    "foundation.json": { ...provenance("bagian 3.0"), weeks: foundationWeeks },
     "cp-mapping.json": { ...provenance("bagian 4"), mappings },
     "osn-bridge.json": { ...provenance("bagian 5"), track: bridgeTrack, bridges },
   };

@@ -8,16 +8,16 @@ kelas X-XII. Prasyarat: [`mulai-cepat.md`](mulai-cepat.md). Di halaman ini
 
 | Bagian | Status |
 | --- | --- |
-| Silabus v1.0, jalur A (C++) dan jalur B (web JS/TS/Bun, template `awcms-one`) | **Disetujui** pemilik program, 2026-11-18. Menjadi sumber `data/sma-coding/`. |
+| Silabus v1.1, jalur A (C++) dan jalur B (web JS/TS/Bun, template `awcms-one`), termasuk blok fondasi kelas X | **Disetujui** pemilik program, 2026-11-19 (v1.0: 2026-11-18). Menjadi sumber `data/sma-coding/`. |
 | Jalur C (IoT/robotika) | Masih disusun, issue [#68](https://github.com/ahliweb/osn/issues/68). Belum ada berkasnya. |
 | Jalur D (AI) | Masih disusun, issue [#84](https://github.com/ahliweb/osn/issues/84). |
 | Jalur E (komputasi kuantum dan cloud quantum) | Masih disusun, issue [#88](https://github.com/ahliweb/osn/issues/88). |
-| Blok fondasi informatika dasar kelas X (7 minggu, kelas bersama sebelum memilih jalur) | **Usulan berstatus DRAF.** Pemilik sudah memutuskan empat hal, tetapi belum menjadi silabus: penerapannya ke silabus v1.1 ada di issue [#92](https://github.com/ahliweb/osn/issues/92). Rencana kelas X yang berlaku tetap v1.0. Dokumen: [`usulan-fondasi-kelas-x.md`](../programs/sma-coding/usulan-fondasi-kelas-x.md). |
+| Blok fondasi informatika dasar kelas X (7 minggu, kelas bersama sebelum memilih jalur, kode `FND-X1-M1..M7`) | **Berlaku sejak silabus v1.1** (bagian 3.0). Rencana kelas X semester 1 dan 2 jalur A dan B disusun ulang; tabel padanan nomor minggu v1.0 ke v1.1 ada di bagian 3.0. Dokumen asal: [`usulan-fondasi-kelas-x.md`](../programs/sma-coding/usulan-fondasi-kelas-x.md). |
 | Modul pendamping literasi digital | Masih disusun, issue [#69](https://github.com/ahliweb/osn/issues/69). |
 | Seri modul matematika komputasi dan cloud | Belum ada, issue [#87](https://github.com/ahliweb/osn/issues/87), [#89](https://github.com/ahliweb/osn/issues/89). |
 | Rencana mingguan | Belum diuji di kelas (silabus bagian 8). |
 
-Jangan menganggap jalur C, D, E, atau blok fondasi sudah berlaku. Daftar
+Jangan menganggap jalur C, D, atau E sudah berlaku. Daftar
 issue terbuka terkini: `gh issue list -R ahliweb/osn --state open`.
 
 ## Membaca silabus
@@ -28,15 +28,19 @@ berguna bagi guru:
 
 | Bagian | Isi |
 | --- | --- |
-| 2 | Struktur program: dua semester per kelas, 14 minggu materi per semester, 3 JP x 45 menit per minggu per jalur, pola semester (minggu 1-12 materi, 13 proyek mini, 14 asesmen dan refleksi). |
-| 3 | Rencana mingguan jalur A (3.1) dan jalur B (3.2): tiap minggu punya topik, tujuan, keluaran, latihan. |
+| 2 | Struktur program: dua semester per kelas, 14 minggu materi per semester, 3 JP x 45 menit per minggu per jalur, pola semester (minggu 1-12 materi, 13 proyek mini, 14 asesmen dan refleksi; pada kelas X semester 1 minggu 1-7 adalah blok fondasi dan minggu jalur mulai dari M8). |
+| 3 | Blok fondasi kelas X bersama (3.0, tujuh minggu `FND-X1-M1..M7`, plus padanan nomor minggu v1.0 ke v1.1), lalu rencana mingguan jalur A (3.1) dan jalur B (3.2): tiap minggu punya topik, tujuan, keluaran, latihan. |
 | 4 | Pemetaan butir Capaian Pembelajaran (CP) ke minggu. |
 | 5 | Jembatan jalur A ke pembinaan OSN. |
 | 7 | Asesmen, kebutuhan lab, privasi. |
 | 9 | Keputusan pemilik atas pertanyaan terbuka. |
 
-Cara membaca kode: kode minggu `A-X1-M5` = jalur A, kelas X, semester 1,
-minggu 5. Kode butir CP `E-BK-a` = Fase E, elemen Berpikir Komputasional,
+Cara membaca kode: kode minggu `A-X1-M10` = jalur A, kelas X, semester 1,
+minggu 10. Pada v1.1 kelas X semester 1 dibuka dengan blok fondasi
+`FND-X1-M1..M7` (bersama untuk semua jalur), sehingga minggu jalur kelas X
+semester 1 dimulai dari `M8`; nomor `M<n>` di sana adalah nomor minggu
+kalender semester, dan tidak sama maknanya dengan v1.0 (lihat padanan di
+bagian 3.0). Kode butir CP `E-BK-a` = Fase E, elemen Berpikir Komputasional,
 butir a. Tanda `[asumsi]` berarti keputusan perancangan penyusun;
 `[belum terverifikasi]` berarti belum dipastikan dari sumber resmi dan tidak
 boleh diperlakukan sebagai fakta.
@@ -52,12 +56,13 @@ osn validate --program sma-coding
 
 ```text
 osn validate: programme "sma-coding", corpus at /.../data/sma-coding
-OK -- 6 data file(s) validated, 0 problem(s) found.
+OK -- 7 data file(s) validated, 0 problem(s) found.
 ```
 
-Memeriksa enam berkas di `data/sma-coding/`: 6 kutipan CP, 36 butir CP,
-24 pemetaan, enam semester per jalur masing-masing 14 minggu (168 minggu),
-serta rujukan antar-kode. Exit 0 bersih, 1 ada temuan, 2 salah pakai.
+Memeriksa tujuh berkas di `data/sma-coding/`: 6 kutipan CP, 36 butir CP,
+26 pemetaan, enam semester per jalur (minggu 1-14; khusus kelas X semester 1
+minggu jalur 8-14 sebanyak 154 minggu seluruh jalur), tujuh minggu fondasi
+`FND-X1-M1..M7`, serta rujukan antar-kode. Exit 0 bersih, 1 ada temuan, 2 salah pakai.
 
 Apakah data masih sama persis dengan tabel di `silabus.md`:
 
@@ -99,7 +104,8 @@ JSON di bawah ini.
 
 | Berkas | Isi |
 | --- | --- |
-| `weeks.json` | 168 minggu: id, jalur, kelas, semester, topik, tujuan, keluaran, latihan. |
+| `weeks.json` | 154 minggu jalur: id, jalur, kelas, semester, topik, tujuan, keluaran, latihan. |
+| `foundation.json` | 7 minggu blok fondasi kelas X bersama (`FND-X1-M1..M7`), bentuk sama dengan `weeks.json` tanpa jalur. |
 | `tracks.json` | Jalur dan status persetujuan. |
 | `structure.json` | Struktur program dan beban (sesi per minggu, JP). |
 | `cp-elements.json` | Kutipan CP dan 36 butir berkode. |
@@ -108,38 +114,38 @@ JSON di bawah ini.
 
 Contoh dengan `jq` (opsional; alternatif `bun` di bawah).
 
-Satu minggu tertentu (jalur A, kelas X, semester 1, minggu 5):
+Satu minggu tertentu (jalur A, kelas X, semester 1, minggu 10):
 
 ```sh
-jq '.weeks[] | select(.id=="A-X1-M5")' data/sma-coding/weeks.json
+jq '.weeks[] | select(.id=="A-X1-M10")' data/sma-coding/weeks.json
 ```
 
 ```json
 {
-  "id": "A-X1-M5",
+  "id": "A-X1-M10",
   "track": "A",
   "kelas": "X",
   "semester": "X1",
   "semesterCode": "A-X1",
   "phase": "E",
-  "week": 5,
-  "topic": "Percabangan",
-  "objective": "memakai `if`/`else`, `switch`",
-  "output": "program bercabang",
-  "exercise": "genap/ganjil; kategori nilai (data sintetis)"
+  "week": 10,
+  "topic": "Percabangan dan logika Boolean",
+  "objective": "memakai `if`/`else`, `switch`; menyusun tabel kebenaran; memakai `&&`, `||`, `!`, XOR",
+  "output": "program bercabang; tabel kebenaran",
+  "exercise": "genap/ganjil; kategori nilai (data sintetis); sederhanakan kondisi; implikasi sebagai kondisi"
 }
 ```
 
-Seluruh semester jalur B kelas X semester 1:
+Seluruh semester jalur B kelas X semester 1 (minggu jalur 8-14; minggu 1-7 adalah blok fondasi):
 
 ```sh
 jq -r '.weeks[] | select(.track=="B" and .semesterCode=="B-X1") | "\(.id)\t\(.topic)"' data/sma-coding/weeks.json
 ```
 
 ```text
-B-X1-M1	Komputer, I-P-O, sistem operasi, peramban, editor, Bun, Git
-B-X1-M2	Algoritma dan pseudocode
-B-X1-M3	Variabel, tipe, ekspresi (JS)
+B-X1-M8	Lingkungan kerja: peramban, editor, Bun, Git; algoritma dan pseudocode
+B-X1-M9	Variabel, tipe, ekspresi (JS); masukan dan keluaran
+B-X1-M10	Percabangan dan logika Boolean
 ...
 B-X1-M14	Asesmen dan refleksi
 ```
@@ -157,7 +163,7 @@ jq -r '.mappings[] | select(.cpCode=="E-BK-a") | .weeksText' data/sma-coding/cp-
 ```
 
 ```text
-A-X2-M4..M9; B-X2-M4..M7
+A-X2-M6..M10; B-X2-M7..M9
 ```
 
 Rumpun materi OSN yang berpadanan dengan minggu jalur A:
@@ -167,10 +173,24 @@ jq -r '.bridges[] | "\(.familyId)\t\(.weeksText)"' data/sma-coding/osn-bridge.js
 ```
 
 ```text
-dasar-pemrograman	A-X1-M3..M9
-logika-bitwise	A-X1-M8; A-X2-M12
-aritmetika	A-X2-M2..M3; A-XII1-M8
+dasar-pemrograman	A-X1-M9..M12
+logika-bitwise	A-X1-M10; A-XI1-M3
+aritmetika	A-X2-M4..M5; A-XII1-M8
 ...
+```
+
+Tujuh minggu blok fondasi kelas X (bersama untuk semua jalur):
+
+```sh
+jq -r '.weeks[] | "\(.id)\t\(.topic)"' data/sma-coding/foundation.json
+```
+
+```text
+FND-X1-M1	Komputer dan perangkat keras; model Input-Proses-Output Von Neumann
+FND-X1-M2	Perangkat lunak, sistem operasi, berkas, dan lisensi
+FND-X1-M3	Representasi data: biner, heksadesimal, teks, gambar sederhana
+...
+FND-X1-M7	Perangkat pengolah dokumen, lembar kerja, dan presentasi `[asumsi]`
 ```
 
 Beban jam dan status jalur:

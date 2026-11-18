@@ -1,30 +1,30 @@
 {
-  "syllabusVersion": "1.0.0",
-  "syllabusDate": "2026-11-18",
+  "syllabusVersion": "1.1.0",
+  "syllabusDate": "2026-11-19",
   "sourceSection": "bagian 5",
   "track": "A",
   "bridges": [
     {
       "familyId": "dasar-pemrograman",
       "topics": "sintaks C++, variabel, I/O, percabangan, perulangan, fungsi",
-      "weeksText": "A-X1-M3..M9",
-      "weeks": ["A-X1-M3", "A-X1-M4", "A-X1-M5", "A-X1-M6", "A-X1-M7", "A-X1-M8", "A-X1-M9"],
+      "weeksText": "A-X1-M9..M12",
+      "weeks": ["A-X1-M9", "A-X1-M10", "A-X1-M11", "A-X1-M12"],
       "note": "Sesuai CP.",
       "hasEnrichment": false
     },
     {
       "familyId": "logika-bitwise",
       "topics": "logika Boolean; operasi bit",
-      "weeksText": "A-X1-M8; A-X2-M12",
-      "weeks": ["A-X1-M8", "A-X2-M12"],
-      "note": "Operasi bit: **P**.",
+      "weeksText": "A-X1-M10; A-XI1-M3",
+      "weeks": ["A-X1-M10", "A-XI1-M3"],
+      "note": "Operasi bit: **P**; pindah dari kelas X ke pengayaan kelas XI (keputusan pemilik 2026-11-18).",
       "hasEnrichment": true
     },
     {
       "familyId": "aritmetika",
       "topics": "paritas, FPB/KPK, prima; aritmetika modular",
-      "weeksText": "A-X2-M2..M3; A-XII1-M8",
-      "weeks": ["A-X2-M2", "A-X2-M3", "A-XII1-M8"],
+      "weeksText": "A-X2-M4..M5; A-XII1-M8",
+      "weeks": ["A-X2-M4", "A-X2-M5", "A-XII1-M8"],
       "note": "**P** untuk modular.",
       "hasEnrichment": true
     },
@@ -39,16 +39,16 @@
     {
       "familyId": "rekursi",
       "topics": "rekursi, divide-and-conquer, backtracking",
-      "weeksText": "A-X2-M10; A-XI1-M7, M11; A-XII2-M4",
-      "weeks": ["A-X2-M10", "A-XI1-M7", "A-XI1-M11", "A-XII2-M4"],
+      "weeksText": "A-X2-M11; A-XI1-M7, M11; A-XII2-M4",
+      "weeks": ["A-X2-M11", "A-XI1-M7", "A-XI1-M11", "A-XII2-M4"],
       "note": "Rekursi ada di panduan (strategi algoritmik).",
       "hasEnrichment": false
     },
     {
       "familyId": "search-sort",
       "topics": "pencarian sekuensial dan biner; bubble, insertion; merge, quick",
-      "weeksText": "A-X2-M7..M9; A-XI1-M8",
-      "weeks": ["A-X2-M7", "A-X2-M8", "A-X2-M9", "A-XI1-M8"],
+      "weeksText": "A-X2-M8..M10; A-XI1-M8",
+      "weeks": ["A-X2-M8", "A-X2-M9", "A-X2-M10", "A-XI1-M8"],
       "note": "Bubble/insertion/sekuensial/biner sesuai panduan; merge dan quick: **P**.",
       "hasEnrichment": true
     },
@@ -75,14 +75,13 @@
     {
       "familyId": "struktur-data",
       "topics": "array, string, stack, queue, heap, DSU, Fenwick, segment tree",
-      "weeksText": "A-X1-M10..M12; A-X2-M4..M6; A-XI1-M9..M10; A-XII1-M4, M9..M10",
+      "weeksText": "A-X2-M1..M3, M6..M7; A-XI1-M9..M10; A-XII1-M4, M9..M10",
       "weeks": [
-        "A-X1-M10",
-        "A-X1-M11",
-        "A-X1-M12",
-        "A-X2-M4",
-        "A-X2-M5",
+        "A-X2-M1",
+        "A-X2-M2",
+        "A-X2-M3",
         "A-X2-M6",
+        "A-X2-M7",
         "A-XI1-M9",
         "A-XI1-M10",
         "A-XII1-M4",

@@ -12,8 +12,8 @@
       "id": "sma-coding",
       "name": "Silabus Pembelajaran Coding SMA",
       "sourceDocument": "docs/programs/sma-coding/silabus.md",
-      "syllabusVersion": "1.0.0",
-      "syllabusDate": "2026-11-18",
+      "syllabusVersion": "1.1.0",
+      "syllabusDate": "2026-11-19",
       "corpusDir": "data/sma-coding"
     }
   ]

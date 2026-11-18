@@ -1,0 +1,91 @@
+{
+  "syllabusVersion": "1.1.0",
+  "syllabusDate": "2026-11-19",
+  "sourceSection": "bagian 3.0",
+  "weeks": [
+    {
+      "id": "FND-X1-M1",
+      "kelas": "X",
+      "semester": "X1",
+      "semesterCode": "FND-X1",
+      "phase": "E",
+      "week": 1,
+      "topic": "Komputer dan perangkat keras; model Input-Proses-Output Von Neumann",
+      "objective": "menyebut fungsi komponen (CPU, memori, penyimpanan, perangkat masukan dan keluaran, papan induk, catu daya); menjelaskan dan menyimulasikan siklus I-P-O komputer Von Neumann; membaca spesifikasi perangkat",
+      "output": "diagram I-P-O beranotasi; lembar spesifikasi komputer lab",
+      "exercise": "kegiatan utama: simulasi I-P-O tanpa komputer (murid berperan CPU, memori, dan perangkat masukan/keluaran menjalankan kartu instruksi sederhana); membaca spesifikasi komputer lab lewat informasi sistem; mengenali komponen dari foto; opsional bila lab menyediakan komponen bekas: mengenali komponen dari komponen bekas (perangkat yang masih dipakai tidak dibongkar)"
+    },
+    {
+      "id": "FND-X1-M2",
+      "kelas": "X",
+      "semester": "X1",
+      "semesterCode": "FND-X1",
+      "phase": "E",
+      "week": 2,
+      "topic": "Perangkat lunak, sistem operasi, berkas, dan lisensi",
+      "objective": "membedakan perangkat lunak sistem dan aplikasi; menjelaskan peran sistem operasi (mengelola proses, memori, berkas, perangkat, antarmuka); mengelola berkas dan folder; membedakan jenis lisensi (proprietari, sumber terbuka, domain publik) dan memberi atribusi",
+      "output": "peta peran sistem operasi; struktur folder yang rapi; tabel jenis lisensi",
+      "exercise": "melihat daftar proses lewat pengelola tugas (proses sistem tidak dihentikan); menata folder dan penamaan berkas pada akun uji; membaca satu teks lisensi sumber terbuka yang pendek dan mengisi tabel hak dan kewajiban"
+    },
+    {
+      "id": "FND-X1-M3",
+      "kelas": "X",
+      "semester": "X1",
+      "semesterCode": "FND-X1",
+      "phase": "E",
+      "week": 3,
+      "topic": "Representasi data: biner, heksadesimal, teks, gambar sederhana",
+      "objective": "mengonversi bilangan desimal, biner, dan heksadesimal; menjelaskan bit dan byte; menjelaskan bahwa teks disimpan sebagai kode karakter; menjelaskan gambar sebagai kisi piksel dan warna sebagai komponen merah-hijau-biru",
+      "output": "tabel konversi; lembar kode karakter; gambar 8x8 dalam bentuk deret bit",
+      "exercise": "konversi manual dengan lembar kerja; menyandikan kata fiktif dengan tabel kode karakter; menggambar gambar 8x8 hitam-putih di kertas kotak lalu menuliskannya sebagai deret bit; memilih warna dan membaca kode heksadesimalnya di aplikasi gambar"
+    },
+    {
+      "id": "FND-X1-M4",
+      "kelas": "X",
+      "semester": "X1",
+      "semesterCode": "FND-X1",
+      "phase": "E",
+      "week": 4,
+      "topic": "Jaringan dan internet (konsep)",
+      "objective": "membedakan jaringan lokal dan jaringan luas, kabel dan nirkabel, klien dan server; menyebut peran router, switch, dan titik akses; menjelaskan alamat IP, DNS, dan HTTP/HTTPS secara konseptual; menguraikan bagaimana halaman web sampai ke peramban",
+      "output": "peta jaringan sekolah (disederhanakan); diagram alur \"membuka halaman web\"",
+      "exercise": "kegiatan utama: permainan peran (klien, server, DNS memakai kartu) untuk satu permintaan halaman; menggambar peta jaringan lab dari penjelasan guru tanpa alamat atau kredensial nyata; melihat alamat IP lokal komputer lab lewat pengaturan sistem"
+    },
+    {
+      "id": "FND-X1-M5",
+      "kelas": "X",
+      "semester": "X1",
+      "semesterCode": "FND-X1",
+      "phase": "E",
+      "week": 5,
+      "topic": "Pengiriman data dan pemecahan masalah jaringan dasar",
+      "objective": "menjelaskan data dikirim dalam potongan (paket) antarperangkat; mengurutkan diagnosis dari fisik (kabel, Wi-Fi) ke alamat IP, DNS, lalu layanan; memakai alat uji sederhana",
+      "output": "diagram alir diagnosis; catatan diagnosis tiga skenario",
+      "exercise": "kegiatan utama: kartu skenario gangguan sintetis (\"kabel lepas\", \"alamat salah\", \"DNS tidak menjawab\") dengan simulasi peran; `ping` ke gateway lab dan alamat lokal komputer sendiri; opsional bila lab menyediakan jaringan lokal terisolasi: berbagi satu berkas antarkomputer di jaringan itu; uji ke internet publik hanya bila kebijakan sekolah mengizinkan `[asumsi]`"
+    },
+    {
+      "id": "FND-X1-M6",
+      "kelas": "X",
+      "semester": "X1",
+      "semesterCode": "FND-X1",
+      "phase": "E",
+      "week": 6,
+      "topic": "Keamanan dasar dan etika digital",
+      "objective": "menyusun kata sandi yang kuat dan memakai manajer kata sandi; menerapkan autentikasi dua langkah secara sederhana; menerapkan konfigurasi privasi dan keamanan pada akun uji; menjelaskan langkah keamanan konektivitas dasar (kata sandi bawaan perangkat jaringan diganti, jaringan nirkabel terenkripsi, kewaspadaan pada jaringan publik, tanda HTTPS); mengenali pesan tipuan (phishing) dasar; menghargai hak atas kekayaan intelektual",
+      "output": "lembar periksa keamanan akun; daftar periksa keamanan konektivitas",
+      "exercise": "audit kata sandi dengan bahan sintetis; mengatur akun uji dengan manajer kata sandi lokal bersumber terbuka `[asumsi]`; demonstrasi autentikasi dua langkah oleh guru (murid tidak wajib memasang apa pun di ponsel pribadi); membandingkan dua konfigurasi privasi pada akun uji; mengenali pesan tipuan sintetis"
+    },
+    {
+      "id": "FND-X1-M7",
+      "kelas": "X",
+      "semester": "X1",
+      "semesterCode": "FND-X1",
+      "phase": "E",
+      "week": 7,
+      "topic": "Perangkat pengolah dokumen, lembar kerja, dan presentasi `[asumsi]`",
+      "objective": "memilih perangkat yang sesuai kebutuhan (dokumen, lembar kerja, atau presentasi); menyusun dokumen terstruktur (judul, gaya, daftar, tabel, gambar beratribusi); memakai rumus dasar lembar kerja (jumlah, rata-rata, minimum, maksimum, kondisi sederhana) dan membuat grafik sederhana; menyusun presentasi ringkas dan terbaca (satu gagasan per slide, kontras cukup); menyimpan dan menukar berkas dalam format yang dapat dibuka di perangkat lain (misalnya format terbuka atau PDF)",
+      "output": "dokumen laporan satu halaman bergaya; lembar kerja dengan rumus dan satu grafik; presentasi empat slide",
+      "exercise": "menyusun laporan kegiatan klub fiktif dengan judul, daftar, dan satu tabel; merekap nilai sintetis (nama samaran seperti Murid-01) dengan rumus lalu membuat grafik batang; menyusun empat slide tentang satu topik fondasi (misalnya peta jaringan lab) dan mengekspornya ke PDF; perangkat mengikuti kesiapan lab (sumber terbuka atau berbasis web) `[asumsi]`; tidak memakai berkas atau data pribadi siswa"
+    }
+  ]
+}

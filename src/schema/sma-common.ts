@@ -49,14 +49,24 @@ export const smaSemesterSchema = z
 /** The number of teaching weeks M1..M14 in one semester. */
 export const SMA_WEEKS_PER_SEMESTER = 14;
 
-/** A week code `<track>-<semester>-M<n>`, e.g. "A-X1-M3". */
+/**
+ * The block id of the shared foundation block (silabus bagian 3.0): a
+ * class taken by every pupil before choosing a track, so its week codes
+ * carry `FND` where a track letter would be (`FND-X1-M1`).
+ */
+export const SMA_FOUNDATION_BLOCK_ID = "FND";
+
+/** The number of weeks of the foundation block `FND-X1-M1..M7` (silabus v1.1). */
+export const SMA_FOUNDATION_WEEKS = 7;
+
+/** A week code `<track>-<semester>-M<n>`, e.g. "A-X1-M3", or a foundation week code, e.g. "FND-X1-M3". */
 export const smaWeekCodeSchema = z
   .string()
   .regex(
-    /^[A-Z]-(X|XI|XII)[12]-M([1-9]|1[0-4])$/,
-    'must be a week code such as "A-X1-M3" (track, semester, week 1-14)',
+    /^(?:[A-Z]|FND)-(X|XI|XII)[12]-M([1-9]|1[0-4])$/,
+    'must be a week code such as "A-X1-M3" or "FND-X1-M3" (track or FND, semester, week 1-14)',
   )
-  .describe('A week code such as "A-X1-M3".');
+  .describe('A week code such as "A-X1-M3" or "FND-X1-M3".');
 
 /** A CP item code, e.g. "E-BK-a" (phase, element, item letter). */
 export const cpCodeSchema = z
@@ -73,7 +83,7 @@ export const smaSourceSectionSchema = z
 /** The provenance fields every corpus file carries (ADR-0005, per programme). */
 export const smaProvenanceShape = {
   syllabusVersion: nonEmptyString.describe(
-    "The source syllabus's own version, e.g. \"1.0.0\"; equals the programme registry's value.",
+    "The source syllabus's own version, e.g. \"1.1.0\"; equals the programme registry's value.",
   ),
   syllabusDate: z
     .string()

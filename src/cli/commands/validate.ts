@@ -49,8 +49,9 @@ referential integrity across the corpus (week -> topic family, week
 checkpoint numbering <-> gate weeks, assessment-bank kind -> competition
 stage, every Rnn citation -> the reference register). Programme "sma-coding"
 has its own file set and schemas (data/sma-coding/, ADR-0006): the fixed counts
-of the approved syllabus (6 CP quotations, 36 CP items, 6 semesters of 14 weeks
-per track), CP code / week code / track references, and that every OSN topic
+of the approved syllabus (6 CP quotations, 36 CP items, 6 semesters per track
+whose weeks run 1..14, except kelas X semester 1 where track weeks run 8..14
+after the 7-week shared foundation block FND-X1), CP code / week code / track references, and that every OSN topic
 family id used by the OSN bridge exists in data/osn/topic-families.json. When a programme has a
 learning-module index (data/<program>/modules.json, ADR-0007) it is checked
 too: schema, topic family / week / reference ids, and that every module's

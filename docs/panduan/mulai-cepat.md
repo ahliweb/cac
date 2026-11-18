@@ -54,7 +54,7 @@ osn validate: programme "osn", corpus at /.../data/osn
 OK -- 22 data file(s) validated, 0 problem(s) found.
 
 osn validate: programme "sma-coding", corpus at /.../data/sma-coding
-OK -- 6 data file(s) validated, 0 problem(s) found.
+OK -- 7 data file(s) validated, 0 problem(s) found.
 ```
 
 Exit code 0 berarti kedua program lolos. Exit 1 berarti ada temuan (daftar
@@ -70,7 +70,7 @@ bun run privacy-check
 ```text
 $ bun run src/cli/index.ts privacy-check
 osn privacy-check: scanning /.../data
-OK -- 31 file(s) scanned, 0 direct-identifier-shaped key(s) found.
+OK -- 32 file(s) scanned, 0 direct-identifier-shaped key(s) found.
 ```
 
 ## 3. Cara menjalankan `osn`

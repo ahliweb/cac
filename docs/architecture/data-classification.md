@@ -65,10 +65,10 @@ published in `data/osn/topic-families.json` and `data/osn/competition-stages.jso
 
 ## SMA coding corpus (`data/sma-coding/`)
 
-Every field of the six `data/sma-coding/*.json` files (`src/schema/sma-*.ts`)
+Every field of the seven `data/sma-coding/*.json` files (`src/schema/sma-*.ts`)
 is `public`: they transcribe the owner-approved syllabus
 `docs/programs/sma-coding/silabus.md` (CP quotations and item codes, track
-names, programme structure, the weekly plan with its synthetic practice
+names, programme structure, the weekly plan and the shared foundation block with their synthetic practice
 exercises, the CP-to-week mapping, and the bridge to the OSN topic
 families). None describes a learner. `osn privacy-check` scans them like
 every other file under `data/`; field names avoid denylisted substrings

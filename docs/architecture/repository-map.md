@@ -26,7 +26,7 @@ must be validated by a schema in `src/schema/` (see "Ordering rule" in
 derived values, real learner personal data (see ADR-0004), or a data file
 for a shape that has no corresponding schema.
 
-**State today:** `data/programs.json` (two entries, `osn` and `sma-coding`), `data/sma-coding/` with six schema-validated JSON files transcribed from the approved `docs/programs/sma-coding/silabus.md` v1.0 (`cp-elements.json`, `tracks.json`, `structure.json`, `weeks.json`, `cp-mapping.json`, `osn-bridge.json`; schemas `src/schema/sma-*.ts`, audit `src/domain/sma-corpus-audit.ts`, cell-by-cell fidelity check `scripts/check-sma-coding-fidelity.ts`), and `data/osn/` with 22 schema-validated JSON files, one per curriculum
+**State today:** `data/programs.json` (two entries, `osn` and `sma-coding`), `data/sma-coding/` with seven schema-validated JSON files transcribed from the approved `docs/programs/sma-coding/silabus.md` v1.1 (`cp-elements.json`, `tracks.json`, `structure.json`, `weeks.json`, `foundation.json` (the shared grade-X foundation block `FND-X1-M1..M7`), `cp-mapping.json`, `osn-bridge.json`; schemas `src/schema/sma-*.ts`, audit `src/domain/sma-corpus-audit.ts`, cell-by-cell fidelity check `scripts/check-sma-coding-fidelity.ts`), and `data/osn/` with 22 schema-validated JSON files, one per curriculum
 concept (`data/osn/topic-families.json`, `data/osn/weeks.json`, `data/osn/gates.json`,
 `data/osn/references.json`, `data/osn/assessment-weights.json`,
 `data/osn/kpi-definitions.json`, `data/osn/playbooks.json`, and so on — see
@@ -65,7 +65,7 @@ is a domain-layer concern).
 `assessment-bank.ts`, `problem-taxonomy.ts`, `learning-record.ts`,
 `readiness-checklist.ts`, `operational-rules.ts`, `syllabus-check.ts`), plus
 the `sma-coding` corpus shapes (`sma-common.ts`, `sma-cp.ts`, `sma-track.ts`,
-`sma-structure.ts`, `sma-week.ts`, `sma-cp-mapping.ts`, `sma-osn-bridge.ts`).
+`sma-structure.ts`, `sma-week.ts`, `sma-foundation.ts`, `sma-cp-mapping.ts`, `sma-osn-bridge.ts`).
 
 ## `src/domain/`
 

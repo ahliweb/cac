@@ -1,9 +1,9 @@
 # Usulan Blok Fondasi Informatika Dasar Wajib di Kelas X
 
-- **Version:** v0.3.0
-- **Last updated:** 2026-11-18
-- **Status:** DRAF — kedelapan keputusan pemilik dicatat (2026-11-18); diterapkan pada [draf silabus v1.1](silabus-v1.1-draf.md) (issue #92); v1.1 belum disetujui
-- **Changeset:** Keputusan pemilik 2026-11-18 untuk pertanyaan 4, 6, 7, dan 8 dicatat (semua pertanyaan terjawab); draf silabus v1.1 menerapkannya.
+- **Version:** v0.4.0
+- **Last updated:** 2026-11-19
+- **Status:** DRAF — kedelapan keputusan pemilik dicatat (2026-11-18); sudah diterapkan di [silabus v1.1](silabus.md) (issue #92), yang disetujui pemilik 2026-11-19; dokumen usulan ini tetap menjadi riwayat usulan
+- **Changeset:** Merujuk silabus v1.1 yang sudah disetujui (menggantikan rujukan ke berkas draf v1.1 yang dihapus). Isi usulan tidak diubah.
 
 > **Keputusan pemilik (2026-11-18, dialog pilihan, dicatat di issue #86):**
 > blok fondasi **7 minggu** — paket enam minggu opsi (b) ditambah **satu
@@ -12,15 +12,15 @@
 > jalur**; operasi bit dasar (`A-X2-M12`) **pindah ke pengayaan kelas XI**.
 > Keputusan lanjutan (2026-11-18): pertanyaan 4, 6, 7, dan 8 juga dijawab
 > (bagian 8), sehingga **kedelapan pertanyaan terjawab**. Penerapannya
-> disusun sebagai [draf silabus v1.1](silabus-v1.1-draf.md) (issue #92,
-> tahap 1); corpus dikerjakan sesudah pemilik menyetujui v1.1. Usulan ini
-> belum menjadi silabus.
+> diterapkan di [silabus v1.1](silabus.md) (issue #92), yang disetujui pemilik
+> pada 2026-11-19 dan dikodekan ke `data/sma-coding/`. Teks usulan di bawah
+> tetap seperti saat disusun (kode minggu v1.0).
 
 > **DRAF — belum disetujui pemilik.** Dokumen ini adalah konten karangan
 > menurut [ADR-0007](../../architecture/adr/0007-authored-learning-content.md):
 > usulan dan penilaian penyusun, bukan transkripsi sumber resmi dan bukan
-> keputusan. Silabus [v1.0](silabus.md) tetap berlaku sampai pemilik
-> menyetujui revisi v1.1. Pilihan panjang blok (bagian 4) adalah hak
+> keputusan. Silabus v1.0 telah digantikan revisi [v1.1](silabus.md) yang
+> disetujui pemilik. Pilihan panjang blok (bagian 4) adalah hak
 > pemilik. Penyusun tidak mencatat persetujuan atas nama pemilik.
 
 ## 0. Cara membaca dokumen ini
@@ -368,6 +368,7 @@ yang dipilih; jalur C dan D memulai minggu materinya setelah blok fondasi.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v0.4.0 | 2026-11-19 | Merujuk silabus v1.1 yang disetujui (issue #92); berkas draf `silabus-v1.1-draf.md` dihapus. Isi usulan tidak diubah. |
 | v0.3.0 | 2026-11-18 | Mencatat keputusan pemilik untuk pertanyaan 4, 6, 7, dan 8 (semua pertanyaan terjawab); merujuk draf silabus v1.1 (`silabus-v1.1-draf.md`, issue #92) yang menerapkan keputusan. Isi usulan (bagian 1-7) tidak diubah. |
 | v0.2.0 | 2026-11-18 | Mencatat empat keputusan pemilik (pertanyaan 1, 2, 3, 5); pertanyaan 4, 6, 7, 8 masih terbuka; penerapan di issue #92. |
 | v0.1.0 | 2026-11-18 | Usulan awal (issue #86): topik fondasi per minggu, pemetaan ke kode butir CP silabus v1.0, tiga opsi panjang blok dengan tabel kelas X semester 1 dan 2, bentuk modul, hubungan dengan #68, #69, #84, pertanyaan terbuka. Status DRAF. |

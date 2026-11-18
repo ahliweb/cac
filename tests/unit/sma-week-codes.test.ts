@@ -33,6 +33,17 @@ describe("expandWeekCodes", () => {
     ]);
   });
 
+  test("foundation block codes expand like track codes", () => {
+    expect(expandWeekCodes("FND-X1-M1..M2")).toEqual(["FND-X1-M1", "FND-X1-M2"]);
+    expect(expandWeekCodes("FND-X1-M2, M6")).toEqual(["FND-X1-M2", "FND-X1-M6"]);
+    expect(expandWeekCodes("FND-X1-M4..M6; B-X2-M1")).toEqual([
+      "FND-X1-M4",
+      "FND-X1-M5",
+      "FND-X1-M6",
+      "B-X2-M1",
+    ]);
+  });
+
   test("a short part without a prefix is rejected", () => {
     expect(() => expandWeekCodes("M3")).toThrow('cannot parse week notation part "M3"');
   });

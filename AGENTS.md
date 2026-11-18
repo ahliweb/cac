@@ -23,7 +23,7 @@ Tables, not prose — drift should be visible at a glance.
 | `data/programs.json` | Programme registry (ADR-0006), validated by `src/schema/program.ts`. |
 | `content/` | Authored learning-module bodies, `content/<program>/modules/<id>.md` (ADR-0007). Indexed by `data/<program>/modules.json`; never transcribed syllabus content. |
 | `data/osn/` | The OSN programme corpus (`data/osn/*.json`) and `data/osn/samples/` (synthetic learning records). One `data/<program>/` directory per registered programme. |
-| `data/sma-coding/` | The SMA coding programme corpus (six JSON files transcribed from `docs/programs/sma-coding/silabus.md` v1.0: CP elements, tracks A/B, structure, weekly plan, CP mapping, OSN bridge), validated by the `src/schema/sma-*.ts` schemas and `src/domain/sma-corpus-audit.ts`. |
+| `data/sma-coding/` | The SMA coding programme corpus (seven JSON files transcribed from `docs/programs/sma-coding/silabus.md` v1.1: CP elements, tracks A/B, structure, weekly plan, shared grade-X foundation block `FND-X1`, CP mapping, OSN bridge), validated by the `src/schema/sma-*.ts` schemas and `src/domain/sma-corpus-audit.ts`. |
 | `tests/unit/` | One module tested in isolation. Mirrors `src/` loosely. |
 | `tests/integration/` | Cross-module tests (schema → domain → CLI/render). |
 | `docs/architecture/` | System architecture overview, repository map, and ADRs. |
@@ -35,7 +35,7 @@ Tables, not prose — drift should be visible at a glance.
 | `docs/operations/` | Operational runbook and syllabus-check procedure. |
 | `docs/silabus/` | Faithful Markdown transcription of the source syllabus PDF. |
 | `docs/*.pdf` | The source syllabus document. |
-| `docs/programs/` | Source documents of other programmes, one folder per programme id (ADR-0006). `docs/programs/sma-coding/silabus.md` is the SMA coding syllabus (authored, ADR-0007), v1.0 approved by the owner on 2026-11-18 for tracks A and B — the source for `data/sma-coding/`. |
+| `docs/programs/` | Source documents of other programmes, one folder per programme id (ADR-0006). `docs/programs/sma-coding/silabus.md` is the SMA coding syllabus (authored, ADR-0007), v1.1 approved by the owner on 2026-11-19 for tracks A and B — the source for `data/sma-coding/`. |
 | `.changeset/` | Pending changesets — one Markdown file per user-visible change. |
 | `.github/workflows/` | CI pipeline. |
 | `.github/ISSUE_TEMPLATE/` | Bug / feature / curriculum-change issue forms. |
