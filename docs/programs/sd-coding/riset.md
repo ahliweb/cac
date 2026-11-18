@@ -13,7 +13,7 @@
 > `[belum terverifikasi]` (tidak boleh diperlakukan sebagai fakta) atau
 > `[asumsi]` (rancangan penyusun). Program ini tidak punya `data/sd-coding/`
 > dan tidak terdaftar di `data/programs.json`
-> ([ADR-0006](../../architecture/adr/0006-multiple-programmes.md)).
+> ([ADR-0006](../../architecture/adr/0006-multi-program-repository.md)).
 
 ## 1. Cara riset dan keterbatasan akses
 

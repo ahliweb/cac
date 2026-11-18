@@ -9,7 +9,7 @@
 > [ADR-0007](../../architecture/adr/0007-authored-learning-content.md) yang
 > berpijak pada capaian pembelajaran (CP) Koding dan Kecerdasan Artifisial
 > (KKA) Fase C. Bukan dokumen Kemendikdasmen. Menurut
-> [ADR-0006](../../architecture/adr/0006-multiple-programmes.md) program
+> [ADR-0006](../../architecture/adr/0006-multi-program-repository.md) program
 > berstatus draf tidak mendapat `data/` maupun entri registri. Agent tidak
 > pernah menyetujui atau mencatat persetujuan atas nama pemilik. Fakta
 > sumber dan tanggal akses ada di [`riset.md`](riset.md); bagian 1 di bawah
