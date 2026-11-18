@@ -1,0 +1,61 @@
+{
+  "syllabusVersion": "1.0.0",
+  "syllabusDate": "2026-11-19",
+  "sourceSection": "bagian 5.2-8.2",
+  "options": [
+    {
+      "id": "A",
+      "name": "Tanpa sertifikasi",
+      "content": "Hanya portofolio",
+      "advantages": "tanpa biaya, tanpa janji berlebihan",
+      "disadvantages": "tidak ada pengakuan resmi"
+    },
+    {
+      "id": "B",
+      "name": "Uji kompetensi LSP BNSP untuk jalur `PRO`",
+      "content": "Peserta mendaftar sendiri ke LSP berlisensi untuk skema seperti Junior Web Programmer atau Programmer (`riset.md` bagian 3)",
+      "advantages": "pengakuan nasional berbasis SKKNI",
+      "disadvantages": "biaya, syarat peserta, dan jadwal ditentukan LSP dan `[belum terverifikasi]`; modul `PRO` tidak menjamin lulus"
+    },
+    {
+      "id": "C",
+      "name": "Penyelenggara menerbitkan keterangan selesai",
+      "content": "Pernyataan selesai modul oleh penyelenggara",
+      "advantages": "murah",
+      "disadvantages": "bukan sertifikat kompetensi; wewenang penyelenggara `[belum terverifikasi]`"
+    }
+  ],
+  "defaultOptionId": "A",
+  "recommendation": "A sebagai dasar, B sebagai opsi jalur `PRO` (peserta mendaftar sendiri), dan tidak ada sertifikat resmi untuk `PKJ`, `PRS`, `BIS`. Alasan: SKKNI hanya ada untuk pemrograman yang diverifikasi; tidak ada standar terbuka yang diverifikasi untuk tiga jalur lain.",
+  "lspSchemes": [
+    {
+      "id": "junior-web-programmer",
+      "name": "Junior Web Programmer",
+      "unitCodes": [
+        "J.620100.004.02",
+        "J.620100.005.02",
+        "J.620100.011.01",
+        "J.620100.015.01",
+        "J.620100.017.02",
+        "J.620100.019.02",
+        "J.620100.023.02",
+        "J.620100.025.02"
+      ]
+    },
+    {
+      "id": "programmer",
+      "name": "Programmer",
+      "unitCodes": [
+        "J.620100.009.01",
+        "J.620100.016.01",
+        "J.620100.017.02",
+        "J.620100.018.02",
+        "J.620100.019.02",
+        "J.620100.021.02",
+        "J.620100.023.02",
+        "J.620100.025.02",
+        "J.620100.033.02"
+      ]
+    }
+  ]
+}

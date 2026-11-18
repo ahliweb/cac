@@ -1,0 +1,67 @@
+{
+  "syllabusVersion": "1.0.0",
+  "syllabusDate": "2026-11-19",
+  "sourceSection": "bagian 1-7",
+  "tracks": [
+    {
+      "id": "PKJ",
+      "persona": "Pekerja",
+      "goal": "Meningkatkan keterampilan di pekerjaan saat ini: otomasi lembar kerja, skrip kecil, pengolahan data, dan AI sebagai alat produktivitas",
+      "sharedHours": 8,
+      "trackHours": 40,
+      "totalHours": 48,
+      "moduleCount": 8,
+      "hoursPerModule": 5,
+      "durationText": "40 jam `[asumsi]` (8 modul × 5 jam).",
+      "endOfTrack": "Portofolio: satu alur kerja kantor yang diotomasi dengan data sintetis",
+      "prerequisitesText": "`DW-FND-M1`; terbiasa memakai lembar kerja dasar (jumlah, rata-rata, format) `[asumsi]`.",
+      "prerequisiteModules": ["DW-FND-M1"],
+      "syntheticProject": "\"Rekap absensi dan lembur dari log sintetis\", \"rekap faktur bulanan dari CSV sintetis\", atau \"daftar tugas tim dari beberapa lembar\". Data dibangkitkan dengan skrip dari benih acak yang dicatat; tidak ada nama atau perusahaan nyata."
+    },
+    {
+      "id": "PRO",
+      "persona": "Profesional",
+      "goal": "Alih karier atau peningkatan menjadi pengembang perangkat lunak, selaras SKKNI 282/2016",
+      "sharedHours": 8,
+      "trackHours": 120,
+      "totalHours": 128,
+      "moduleCount": 12,
+      "hoursPerModule": 10,
+      "durationText": "120 jam `[asumsi]` (12 modul × 10 jam) dengan beban 5 jam per minggu menjadi sekitar 24 minggu.",
+      "endOfTrack": "Portofolio kode lengkap dan opsi uji kompetensi LSP",
+      "prerequisitesText": "`DW-FND-M1`; logika dasar dan kemampuan membaca Bahasa Inggris teknis `[asumsi]`. Peserta dari `PKJ` atau sma-coding jalur A/B dapat melewati sebagian modul (bagian 6).",
+      "prerequisiteModules": ["DW-FND-M1"],
+      "syntheticProject": "Proyek utama: **aplikasi pencatatan inventaris kecil** (Python, SQL, dan antarmuka web sederhana) dengan data barang sintetis; atau alternatif **API laporan penjualan sintetis**. Peserta menyerahkan repositori kode, pengujian, dan petunjuk teknis. Data nyata, nama perusahaan nyata, dan kredensial tidak dipakai (bagian 9)."
+    },
+    {
+      "id": "PRS",
+      "persona": "Personal",
+      "goal": "Pembelajar mandiri atau hobi: literasi komputasional dan proyek pribadi",
+      "sharedHours": 8,
+      "trackHours": 30,
+      "totalHours": 38,
+      "moduleCount": 6,
+      "hoursPerModule": 5,
+      "durationText": "30 jam `[asumsi]` (6 modul × 5 jam).",
+      "endOfTrack": "Satu proyek pribadi dan peta jalan belajar lanjut",
+      "prerequisitesText": "`DW-FND-M1`; tidak ada prasyarat coding.",
+      "prerequisiteModules": ["DW-FND-M1"],
+      "syntheticProject": "setiap latihan memakai data contoh yang disediakan atau dibangkitkan; proyek mandiri boleh bertema pribadi tetapi **tidak mengunggah data pribadi nyata** ke repositori maupun layanan daring pada latihan (bagian 9)."
+    },
+    {
+      "id": "BIS",
+      "persona": "Pebisnis/UMKM",
+      "goal": "Memakai alat digital untuk usaha: situs, toko daring, pencatatan dan data penjualan, otomasi, no-code/low-code, dan AI",
+      "sharedHours": 8,
+      "trackHours": 48,
+      "totalHours": 56,
+      "moduleCount": 8,
+      "hoursPerModule": 6,
+      "durationText": "48 jam `[asumsi]` (8 modul × 6 jam), dengan pendampingan disarankan (riset: \"Pendampingan sering kali lebih dibutuhkan daripada sekadar pelatihan penggunaan aplikasi\", `riset.md` bagian 6).",
+      "endOfTrack": "Rencana dan prototipe digital usaha sintetis",
+      "prerequisitesText": "`DW-FND-M1`; mengoperasikan ponsel dan peramban. Tidak ada prasyarat coding.",
+      "prerequisiteModules": ["DW-FND-M1"],
+      "syntheticProject": "\"Toko kue sintetis\" dengan 200 transaksi buatan; dibangkitkan dari benih acak. **Data pelanggan nyata UMKM peserta tidak dipakai di latihan** (bagian 9). Peserta menerapkan hasil ke usahanya sendiri **di luar** materi program, dengan keputusan dan tanggung jawabnya sendiri."
+    }
+  ]
+}

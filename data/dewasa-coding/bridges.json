@@ -1,0 +1,49 @@
+{
+  "syllabusVersion": "1.0.0",
+  "syllabusDate": "2026-11-19",
+  "sourceSection": "bagian 6.1",
+  "bridges": [
+    {
+      "id": "bridge-1",
+      "from": "sma-coding jalur A (C++)",
+      "to": "`PRO`",
+      "note": "Dasar struktur data dan algoritma dari jalur A boleh menggantikan `DW-PRO-M3` setelah uji singkat; bahasa inti `PRO` tetap Python, sehingga M2 dan M4 diulang pada Python",
+      "status": "dirancang"
+    },
+    {
+      "id": "bridge-2",
+      "from": "sma-coding jalur B (Bun, TypeScript, `awcms-one`)",
+      "to": "`PRO` modul M8, M9; `BIS` modul M4",
+      "note": "Lulusan jalur B boleh langsung memulai M8 setelah M1",
+      "status": "dirancang"
+    },
+    {
+      "id": "bridge-3",
+      "from": "sma-coding jalur D (data, AI)",
+      "to": "`PKJ` M3-M4, M6; `PRO` M3",
+      "note": "Pengolahan data dan etika AI sebagian sama",
+      "status": "dirancang"
+    },
+    {
+      "id": "bridge-4",
+      "from": "kuliah-coding (issue #130, belum ada dokumen atau program)",
+      "to": "`PRO`",
+      "note": "**Belum dapat dirancang**: program itu belum ada di repositori. Jembatan ditunda menurut keputusan 12.7",
+      "status": "ditunda"
+    },
+    {
+      "id": "bridge-5",
+      "from": "`PRS`",
+      "to": "`PKJ`, `PRO`, `BIS`",
+      "note": "Setelah `PRS-M6`, peserta memilih jalur lanjut",
+      "status": "dirancang"
+    },
+    {
+      "id": "bridge-6",
+      "from": "`PKJ`",
+      "to": "`PRO`",
+      "note": "`PKJ-M3` sampai M5 menggantikan sebagian `PRO-M2`",
+      "status": "dirancang"
+    }
+  ]
+}

@@ -8,12 +8,7 @@
 
 import { z } from "zod";
 import { nonEmptyString } from "./common";
-import {
-  dwHoursSchema,
-  dwModuleCodeSchema,
-  dwProvenanceShape,
-  dwTrackIdSchema,
-} from "./dw-common";
+import { dwHoursSchema, dwModuleCodeSchema, dwProvenanceShape, dwTrackIdSchema } from "./dw-common";
 
 export const dwTrackSchema = z
   .object({

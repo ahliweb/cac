@@ -25,6 +25,7 @@ import {
   type CorpusSource,
   DATA_FILE_REGISTRY,
 } from "../domain/corpus-audit";
+import { auditDewasaCorpus, DW_DATA_FILE_REGISTRY } from "../domain/dw-corpus-audit";
 import { auditKulCorpus, KUL_DATA_FILE_REGISTRY } from "../domain/kul-corpus-audit";
 import {
   type ModuleFindingsOptions,
@@ -35,10 +36,12 @@ import {
 import { REGISTRY_FILE_NAME } from "../domain/programs";
 import { auditSmaCorpus, SMA_DATA_FILE_REGISTRY } from "../domain/sma-corpus-audit";
 import { auditTkCorpus, TK_DATA_FILE_REGISTRY } from "../domain/tk-corpus-audit";
+import { DEWASA_CODING_PROGRAM_ID } from "../schema/dw-common";
 import { KUL_PROGRAM_ID } from "../schema/kul-common";
 import type { Program } from "../schema/program";
 import { SMA_CODING_PROGRAM_ID } from "../schema/sma-common";
 import { TK_CODING_PROGRAM_ID } from "../schema/tk-common";
+import { dewasaCodingFidelity } from "./fidelity/dewasa-coding";
 import { kuliahCodingFidelity } from "./fidelity/kuliah-coding";
 import { smaCodingFidelity } from "./fidelity/sma-coding";
 import { tkCodingFidelity } from "./fidelity/tk-coding";
@@ -120,6 +123,11 @@ export const PROGRAM_MODULES: readonly ProgramModule[] = [
     parseModulesIndex: () => ({ modules: undefined, findings: [] }),
     moduleFindings: () => [],
     fidelity: tkCodingFidelity,
+    id: DEWASA_CODING_PROGRAM_ID,
+    dataFiles: DW_DATA_FILE_REGISTRY,
+    audit: (source) => auditDewasaCorpus(source),
+    // No ADR-0007 learning-content index yet (the module plan is module-plan.json).
+    fidelity: dewasaCodingFidelity,
   },
 ];
 

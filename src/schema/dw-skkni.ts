@@ -27,7 +27,9 @@ export const dwSkkniUnitSchema = z
     title: nonEmptyString.describe('The "Judul unit kompetensi" cell of riset.md, verbatim.'),
     verification: z
       .enum(DW_SKKNI_VERIFICATIONS)
-      .describe('"salinan-belum-terverifikasi": copied from a scanned copy, not the official file.'),
+      .describe(
+        '"salinan-belum-terverifikasi": copied from a scanned copy, not the official file.',
+      ),
   })
   .strict();
 

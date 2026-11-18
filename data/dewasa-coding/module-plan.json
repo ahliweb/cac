@@ -1,0 +1,362 @@
+{
+  "syllabusVersion": "1.0.0",
+  "syllabusDate": "2026-11-19",
+  "sourceSection": "bagian 4-7",
+  "modules": [
+    {
+      "code": "DW-PKJ-M1",
+      "track": "PKJ",
+      "number": 1,
+      "title": "Memetakan pekerjaan berulang",
+      "hours": 5,
+      "outcome": "mengidentifikasi tugas yang layak diotomasi; menulis langkah tugas sebagai algoritma",
+      "portfolioOutput": "peta tiga tugas berulang dan langkahnya",
+      "prerequisites": ["DW-FND-M1"]
+    },
+    {
+      "code": "DW-PKJ-M2",
+      "track": "PKJ",
+      "number": 2,
+      "title": "Rumus dan pembersihan data lembar kerja",
+      "hours": 5,
+      "outcome": "memakai rumus pencarian, kondisi, teks, tanggal; membersihkan data kotor sintetis",
+      "portfolioOutput": "lembar kerja sintetis bersih dan terdokumentasi",
+      "prerequisites": ["DW-PKJ-M1"]
+    },
+    {
+      "code": "DW-PKJ-M3",
+      "track": "PKJ",
+      "number": 3,
+      "title": "Pengantar Python untuk data lembar kerja",
+      "hours": 5,
+      "outcome": "variabel, daftar, pengulangan, fungsi; membaca berkas CSV",
+      "portfolioOutput": "skrip yang membaca CSV sintetis",
+      "prerequisites": ["DW-PKJ-M2"]
+    },
+    {
+      "code": "DW-PKJ-M4",
+      "track": "PKJ",
+      "number": 4,
+      "title": "Mengolah dan menggabungkan data",
+      "hours": 5,
+      "outcome": "memfilter, mengelompokkan, menggabungkan dua tabel CSV",
+      "portfolioOutput": "skrip ringkasan per kategori",
+      "prerequisites": ["DW-PKJ-M3"]
+    },
+    {
+      "code": "DW-PKJ-M5",
+      "track": "PKJ",
+      "number": 5,
+      "title": "Otomasi berkas dan laporan",
+      "hours": 5,
+      "outcome": "membuat laporan bulanan otomatis (CSV ke ringkasan), mengganti nama berkas massal pada folder sintetis",
+      "portfolioOutput": "skrip laporan bulanan",
+      "prerequisites": ["DW-PKJ-M4"]
+    },
+    {
+      "code": "DW-PKJ-M6",
+      "track": "PKJ",
+      "number": 6,
+      "title": "AI untuk produktivitas kerja",
+      "hours": 5,
+      "outcome": "menulis permintaan jelas; meminta draf rumus atau skrip; memeriksa dan menguji keluaran; mengenali halusinasi; menjaga data",
+      "portfolioOutput": "catatan perbandingan keluaran AI dengan hasil uji",
+      "prerequisites": ["DW-PKJ-M5"]
+    },
+    {
+      "code": "DW-PKJ-M7",
+      "track": "PKJ",
+      "number": 7,
+      "title": "Visualisasi dan penyajian",
+      "hours": 5,
+      "outcome": "membuat grafik yang jujur dan ringkasan satu halaman",
+      "portfolioOutput": "satu halaman laporan dengan grafik",
+      "prerequisites": ["DW-PKJ-M6"]
+    },
+    {
+      "code": "DW-PKJ-M8",
+      "track": "PKJ",
+      "number": 8,
+      "title": "Proyek akhir",
+      "hours": 5,
+      "outcome": "mengotomasi satu alur kerja kantor sintetis dari awal sampai akhir dengan dokumentasi",
+      "portfolioOutput": "portofolio `PKJ` (bagian 8.1)",
+      "prerequisites": ["DW-PKJ-M7"]
+    },
+    {
+      "code": "DW-PRO-M1",
+      "track": "PRO",
+      "number": 1,
+      "title": "Lingkungan kerja pengembang dan Git",
+      "hours": 10,
+      "outcome": "memasang dan mengatur alat pemrograman; memakai terminal; versi kode dengan Git",
+      "skkniUnitCodes": ["J.620100.011.01", "J.620100.012.01", "J.620100.026.01"],
+      "prerequisites": ["DW-FND-M1"]
+    },
+    {
+      "code": "DW-PRO-M2",
+      "track": "PRO",
+      "number": 2,
+      "title": "Dasar pemrograman terstruktur",
+      "hours": 10,
+      "outcome": "variabel, kondisi, perulangan, subrutin; memecah masalah",
+      "skkniUnitCodes": ["J.620100.013.01", "J.620100.017.02", "J.620100.010.01"],
+      "prerequisites": ["DW-PRO-M1"]
+    },
+    {
+      "code": "DW-PRO-M3",
+      "track": "PRO",
+      "number": 3,
+      "title": "Struktur data dan algoritma dasar",
+      "hours": 10,
+      "outcome": "daftar, kamus, himpunan, pencarian, pengurutan; menyatakan dan membandingkan solusi",
+      "skkniUnitCodes": ["J.620100.004.02", "J.620100.022.02"],
+      "prerequisites": ["DW-PRO-M2"]
+    },
+    {
+      "code": "DW-PRO-M4",
+      "track": "PRO",
+      "number": 4,
+      "title": "Fungsi, modul, dan kode yang rapi",
+      "hours": 10,
+      "outcome": "penggunaan ulang, organisasi berkas, pedoman penulisan, dokumentasi kode",
+      "skkniUnitCodes": [
+        "J.620100.014.01",
+        "J.620100.015.01",
+        "J.620100.016.01",
+        "J.620100.023.02"
+      ],
+      "prerequisites": ["DW-PRO-M3"]
+    },
+    {
+      "code": "DW-PRO-M5",
+      "track": "PRO",
+      "number": 5,
+      "title": "Debugging dan pengujian unit",
+      "hours": 10,
+      "outcome": "menemukan galat sistematis; menulis uji unit",
+      "skkniUnitCodes": ["J.620100.025.02", "J.620100.033.02"],
+      "prerequisites": ["DW-PRO-M4"]
+    },
+    {
+      "code": "DW-PRO-M6",
+      "track": "PRO",
+      "number": 6,
+      "title": "Pemrograman berorientasi objek dan pustaka",
+      "hours": 10,
+      "outcome": "kelas dan objek; memakai pustaka siap pakai",
+      "skkniUnitCodes": ["J.620100.018.02", "J.620100.019.02", "J.620100.003.01"],
+      "prerequisites": ["DW-PRO-M5"]
+    },
+    {
+      "code": "DW-PRO-M7",
+      "track": "PRO",
+      "number": 7,
+      "title": "SQL dan akses basis data",
+      "hours": 10,
+      "outcome": "skema, kueri, relasi antar tabel, akses dari kode",
+      "skkniUnitCodes": ["J.620100.020.02", "J.620100.021.02", "J.620100.007.01"],
+      "prerequisites": ["DW-PRO-M6"]
+    },
+    {
+      "code": "DW-PRO-M8",
+      "track": "PRO",
+      "number": 8,
+      "title": "Antarmuka web: HTML, CSS, JavaScript/TypeScript",
+      "hours": 10,
+      "outcome": "halaman responsif; interaksi sisi peramban",
+      "skkniUnitCodes": ["J.620100.005.02", "J.620100.006.01"],
+      "prerequisites": ["DW-PRO-M7"]
+    },
+    {
+      "code": "DW-PRO-M9",
+      "track": "PRO",
+      "number": 9,
+      "title": "Layanan web dan API",
+      "hours": 10,
+      "outcome": "membuat dan memanggil API sederhana; berkas konfigurasi",
+      "skkniUnitCodes": ["J.620100.027.01", "J.620100.019.02"],
+      "prerequisites": ["DW-PRO-M8"]
+    },
+    {
+      "code": "DW-PRO-M10",
+      "track": "PRO",
+      "number": 10,
+      "title": "Kolaborasi: tinjau kode dan pengujian lanjut",
+      "hours": 10,
+      "outcome": "tinjau kode sejawat; uji integrasi; analisis kode statis",
+      "skkniUnitCodes": ["J.620100.032.01", "J.620100.034.02", "J.620100.036.02"],
+      "prerequisites": ["DW-PRO-M9"]
+    },
+    {
+      "code": "DW-PRO-M11",
+      "track": "PRO",
+      "number": 11,
+      "title": "Konfigurasi, pencatatan, dan operasi dasar",
+      "hours": 10,
+      "outcome": "lingkungan pengembangan dan produksi; log dan pemberitahuan masalah; pembaruan",
+      "skkniUnitCodes": [
+        "J.620100.042.01",
+        "J.620100.046.01",
+        "J.620100.044.01",
+        "J.620100.047.01"
+      ],
+      "prerequisites": ["DW-PRO-M10"]
+    },
+    {
+      "code": "DW-PRO-M12",
+      "track": "PRO",
+      "number": 12,
+      "title": "Proyek akhir dan persiapan portofolio",
+      "hours": 10,
+      "outcome": "membaca spesifikasi, membangun aplikasi kecil, uji penerimaan pengguna sintetis, petunjuk teknis",
+      "skkniUnitCodes": [
+        "J.620100.009.01",
+        "J.620100.038.01",
+        "J.620100.039.02",
+        "J.620100.008.01"
+      ],
+      "prerequisites": ["DW-PRO-M11"]
+    },
+    {
+      "code": "DW-PRS-M1",
+      "track": "PRS",
+      "number": 1,
+      "title": "Berpikir komputasional tanpa kode",
+      "hours": 5,
+      "outcome": "menguraikan masalah sehari-hari menjadi urutan, kondisi, dan pengulangan",
+      "portfolioOutput": "tiga masalah pribadi dalam bentuk algoritma",
+      "prerequisites": ["DW-FND-M1"]
+    },
+    {
+      "code": "DW-PRS-M2",
+      "track": "PRS",
+      "number": 2,
+      "title": "Program pertama dengan Python",
+      "hours": 5,
+      "outcome": "variabel, masukan dan keluaran, kondisi, perulangan",
+      "portfolioOutput": "kuis atau kalkulator kecil",
+      "prerequisites": ["DW-PRS-M1"]
+    },
+    {
+      "code": "DW-PRS-M3",
+      "track": "PRS",
+      "number": 3,
+      "title": "Data dan berkas",
+      "hours": 5,
+      "outcome": "daftar, kamus, membaca dan menulis berkas teks",
+      "portfolioOutput": "pencatat sederhana (mis. daftar bacaan) dengan data sintetis",
+      "prerequisites": ["DW-PRS-M2"]
+    },
+    {
+      "code": "DW-PRS-M4",
+      "track": "PRS",
+      "number": 4,
+      "title": "Halaman web pertama",
+      "hours": 5,
+      "outcome": "HTML dan CSS; menerbitkan halaman statis secara lokal",
+      "portfolioOutput": "halaman profil hobi sintetis",
+      "prerequisites": ["DW-PRS-M3"]
+    },
+    {
+      "code": "DW-PRS-M5",
+      "track": "PRS",
+      "number": 5,
+      "title": "Mengotomasi urusan sehari-hari",
+      "hours": 5,
+      "outcome": "skrip untuk menamai ulang berkas, menghitung anggaran, mengingatkan jadwal",
+      "portfolioOutput": "satu skrip yang berguna",
+      "prerequisites": ["DW-PRS-M4"]
+    },
+    {
+      "code": "DW-PRS-M6",
+      "track": "PRS",
+      "number": 6,
+      "title": "Proyek mandiri dan jalan lanjut",
+      "hours": 5,
+      "outcome": "merancang, membangun, dan menjelaskan satu proyek; memilih jalur lanjut",
+      "portfolioOutput": "proyek mandiri dan peta jalan belajar (mis. lanjut ke `PRO`)",
+      "prerequisites": ["DW-PRS-M5"]
+    },
+    {
+      "code": "DW-BIS-M1",
+      "track": "BIS",
+      "number": 1,
+      "title": "Peta digital usaha",
+      "hours": 6,
+      "outcome": "menilai proses usaha yang bisa didigitalkan; mengenali risiko",
+      "portfolioOutput": "peta proses usaha sintetis",
+      "prerequisites": ["DW-FND-M1"]
+    },
+    {
+      "code": "DW-BIS-M2",
+      "track": "BIS",
+      "number": 2,
+      "title": "Pencatatan penjualan di lembar kerja",
+      "hours": 6,
+      "outcome": "merancang tabel transaksi, rumus total dan laba kasar, validasi data",
+      "portfolioOutput": "buku penjualan sintetis",
+      "prerequisites": ["DW-BIS-M1"]
+    },
+    {
+      "code": "DW-BIS-M3",
+      "track": "BIS",
+      "number": 3,
+      "title": "Membaca data penjualan",
+      "hours": 6,
+      "outcome": "ringkasan per produk dan per bulan, tabel pivot, grafik yang jujur",
+      "portfolioOutput": "satu halaman ringkasan penjualan sintetis",
+      "prerequisites": ["DW-BIS-M2"]
+    },
+    {
+      "code": "DW-BIS-M4",
+      "track": "BIS",
+      "number": 4,
+      "title": "Situs usaha",
+      "hours": 6,
+      "outcome": "halaman usaha statis (no-code atau template); konsep domain dan hosting; opsi template `awcms-one` profil `landing` sebagai lanjutan",
+      "portfolioOutput": "situs statis usaha sintetis",
+      "prerequisites": ["DW-BIS-M3"]
+    },
+    {
+      "code": "DW-BIS-M5",
+      "track": "BIS",
+      "number": 5,
+      "title": "Toko daring dan pembayaran digital (konsep)",
+      "hours": 6,
+      "outcome": "alur pesanan, katalog, ongkos kirim, konsep QRIS dan pembayaran; mengapa data pembayaran tidak disimpan sendiri",
+      "portfolioOutput": "alur toko daring dalam diagram, tanpa transaksi nyata",
+      "prerequisites": ["DW-BIS-M4"]
+    },
+    {
+      "code": "DW-BIS-M6",
+      "track": "BIS",
+      "number": 6,
+      "title": "Otomasi no-code/low-code",
+      "hours": 6,
+      "outcome": "formulir ke lembar kerja ke pemberitahuan; kapan otomasi layak",
+      "portfolioOutput": "satu alur otomatis dengan formulir sintetis",
+      "prerequisites": ["DW-BIS-M5"]
+    },
+    {
+      "code": "DW-BIS-M7",
+      "track": "BIS",
+      "number": 7,
+      "title": "AI untuk usaha",
+      "hours": 6,
+      "outcome": "draf teks promosi, ringkasan ulasan sintetis, balasan pelanggan contoh; verifikasi, hak cipta, dan privasi",
+      "portfolioOutput": "contoh permintaan AI yang aman dan hasil yang diperiksa",
+      "prerequisites": ["DW-BIS-M6"]
+    },
+    {
+      "code": "DW-BIS-M8",
+      "track": "BIS",
+      "number": 8,
+      "title": "Proyek akhir: rencana digital usaha",
+      "hours": 6,
+      "outcome": "menggabungkan M1-M7 menjadi rencana dan prototipe",
+      "portfolioOutput": "portofolio `BIS` (bagian 8.1)",
+      "prerequisites": ["DW-BIS-M7"]
+    }
+  ]
+}

@@ -10,7 +10,9 @@ import { z } from "zod";
 import { nonEmptyString, slugSchema } from "./common";
 import { dwProvenanceShape, dwSkkniUnitCodeSchema } from "./dw-common";
 
-const optionIdSchema = z.string().regex(/^[A-Z]$/, 'must be a single upper-case letter such as "A"');
+const optionIdSchema = z
+  .string()
+  .regex(/^[A-Z]$/, 'must be a single upper-case letter such as "A"');
 
 export const dwCertificationOptionSchema = z
   .object({
