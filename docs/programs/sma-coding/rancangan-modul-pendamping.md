@@ -1,18 +1,20 @@
 # Rancangan Modul Pendamping Literasi Digital (SMA Coding)
 
-- **Version:** v0.1.0
-- **Last updated:** 2026-11-18
-- **Status:** DRAF — rancangan tahap 1 (issue #69); belum disetujui pemilik; draf modul belum ditulis
-- **Changeset:** Rancangan awal tujuh modul pendamping, pemetaan butir CP, opsi pelaksanaan, dan pertanyaan terbuka.
+- **Version:** v0.2.0
+- **Last updated:** 2026-11-19
+- **Status:** Rancangan DISETUJUI pemilik 2026-11-19 beserta keenam rekomendasi (issue #69); modul belum ada di repositori (menunggu skema indeks #106); modul yang kelak ditulis berstatus draf sampai ditinjau pemilik
+- **Changeset:** Mencatat persetujuan rancangan oleh pemilik (2026-11-19, enam rekomendasi); rujukan silabus diperbarui ke v1.1 yang sudah disetujui; pertanyaan terbuka ditandai terjawab; celah F-LD-d dan F-LD-e jalur A dicatat sebagai issue #105.
 
-> **DRAF — belum disetujui pemilik.** Dokumen ini adalah konten karangan
-> menurut [ADR-0007](../../architecture/adr/0007-authored-learning-content.md):
-> rancangan dan penilaian penyusun, bukan transkripsi sumber resmi dan bukan
-> keputusan. Silabus [v1.0](silabus.md) tetap berlaku sampai pemilik
-> menyetujui revisi v1.1. Pilihan cara pelaksanaan (bagian 4) dan semua
-> pertanyaan di bagian 8 adalah hak pemilik. Penyusun tidak mencatat
-> persetujuan atas nama pemilik. **Isi modul belum ditulis**; draf modul
-> (tahap 2) menyusul setelah rancangan ini disetujui.
+> **Rancangan disetujui pemilik pada 2026-11-19** (dialog pilihan, dicatat
+> di komentar issue #69) beserta **keenam rekomendasi** di bagian 8. Yang
+> disetujui adalah **rancangan**; **modulnya belum ditulis ke repositori**
+> dan modul yang kelak ditulis berstatus `draf` sampai pemilik meninjau dan
+> menyetujuinya per modul (ADR-0007). Dokumen ini adalah konten karangan
+> menurut [ADR-0007](../../architecture/adr/0007-authored-learning-content.md),
+> bukan transkripsi sumber resmi. Rujukan silabus kini [v1.1](silabus.md)
+> (disetujui 2026-11-19). Pengindeksan modul menunggu skema indeks sma-coding
+> (#106). Celah F-LD-d dan F-LD-e untuk jalur A dicatat sebagai issue
+> terpisah (#105).
 
 ## 0. Cara membaca dokumen ini
 
@@ -24,8 +26,9 @@
   2025, dicek 2026-11-18); hanya spasi dan pemenggalan baris yang
   dinormalkan.
 - `FND-X1-M<n>` adalah kode minggu blok fondasi kelas X yang diusulkan di
-  [usulan-fondasi-kelas-x.md](usulan-fondasi-kelas-x.md); kode itu belum ada
-  di corpus (penerapannya di issue #92).
+  [usulan-fondasi-kelas-x.md](usulan-fondasi-kelas-x.md) dan kini diterapkan
+  di silabus v1.1 bagian 3.0 serta `data/sma-coding/foundation.json`
+  (issue #92, disetujui 2026-11-19).
 - Satu pertemuan = 3 JP x 45 menit per minggu (silabus bagian 2, ditetapkan
   pemilik 2026-11-18). Durasi di dokumen ini dinyatakan dalam JP `[asumsi]`.
 
@@ -72,13 +75,15 @@ j; F-LD-a, b, c, h, j; F-BK-d) **sama** dengan bagian 4.3 dikurangi E-LD-d dan
 E-LD-e, sesuai bagian 3.1 usulan fondasi. Tidak ada selisih butir. Dua
 catatan:
 
-1. Silabus.md bagian 4.3 masih mencantumkan E-LD-d dan E-LD-e karena v1.0
-   belum diperbarui; pembaruannya ada di silabus v1.1 (#92).
+1. Silabus v1.0 bagian 4.3 mencantumkan E-LD-d dan E-LD-e; pada silabus v1.1
+   (#92, disetujui 2026-11-19) keduanya sudah dikeluarkan dari daftar karena
+   tercakup blok fondasi, sehingga daftar di bagian 4.3 v1.1 sama dengan
+   daftar rancangan ini.
 2. F-LD-d dan F-LD-e (usulan fondasi bagian 3) hanya mendapat pengantar dari
    fondasi dan **tidak** ada di bagian 4.3 (keduanya sudah dipetakan ke
    `B-XII2-M1..M2` dan `B-XI2-M10` untuk jalur B, parsial untuk F-LD-e), jadi
    tidak masuk rancangan ini. Jalur A tidak mencakup keduanya; itu celah
-   v1.0 di luar #69 (lihat bagian 9).
+   di luar #69 dan kini dicatat sebagai issue #105 (lihat bagian 8, nomor 6).
 
 ## 3. Daftar modul pendamping
 
@@ -184,7 +189,7 @@ lengkap.
 | --- | --- | --- |
 | E-LD-b | `pendamping-periksa-fakta-dan-baca-lateral` | Tercakup |
 | E-LD-c | `pendamping-periksa-fakta-dan-baca-lateral` | Tercakup |
-| E-LD-d | (tidak ada) | Satu minggu blok fondasi (keputusan pemilik 2026-11-18); penerapan #92 |
+| E-LD-d | (tidak ada) | Satu minggu blok fondasi `FND-X1-M7` (keputusan pemilik 2026-11-18; diterapkan di silabus v1.1, #92) |
 | E-LD-e | (tidak ada) | Tercakup FND-X1-M4..M6 |
 | E-LD-h | `pendamping-profesi-informatika-dan-budaya-digital` | Tercakup |
 | E-LD-i | `pendamping-profesi-informatika-dan-budaya-digital` | Tercakup |
@@ -230,7 +235,7 @@ lalu domain, lalu uji. Temuan dari `src/schema/module.ts`:
 | Bidang indeks saat ini | Kebutuhan modul pendamping |
 | --- | --- |
 | `topicFamilies` (wajib, minimal satu, diperiksa terhadap `topic-families.json` OSN) | `sma-coding` tidak punya rumpun materi OSN; modul perlu rujukan ke **butir CP** (`cp-elements.json`) dan/atau jalur. Bidang ini perlu menjadi opsional atau diganti sesuai program. |
-| `weeks` (nomor 1..MAX_WEEK, minggu OSN) | Modul pendamping tidak terikat satu minggu; perlu rujukan ke kode minggu `sma-coding` (`A-X1-M3`, `FND-X1-M<n>`) opsional, bukan nomor OSN. |
+| `weeks` (nomor 1..MAX_WEEK, minggu OSN) | Modul pendamping tidak terikat satu minggu; perlu rujukan ke kode minggu `sma-coding` (`A-X1-M9`, `FND-X1-M<n>`) opsional, bukan nomor OSN. |
 | Tidak ada bidang kelas atau fase | Perlu `grade` (X, XI, XII) atau `phase` (E, F) untuk pemetaan kelas. |
 | Tidak ada bidang butir CP | Perlu `cpItems` (kode butir) agar pemeriksaan keterpenuhan (butir 4.3 tersisa tercakup) dapat diotomatisasi seperti `sma-corpus-audit`. |
 | Tidak ada bidang prasyarat | Perlu `prerequisites` (id modul lain atau kode minggu fondasi). |
@@ -243,6 +248,15 @@ Keputusan arsitektur (skema bersama atau skema per program) ada pada
 orchestrator dan pemilik; tidak diambil di dokumen ini.
 
 ## 8. Pertanyaan terbuka untuk pemilik
+
+**Terjawab 2026-11-19 (komentar keputusan di issue #69):** pemilik
+menyetujui rancangan beserta **keenam rekomendasi** (opsi bertanda
+**rekomendasi** di bawah): (1) mandiri terbimbing sebagai dasar dengan
+cadangan dan lintas mapel opsional; (2) satu modul digabung untuk E-LD-h dan
+i; (3) modul F-BK-d dibaca semua jalur; (4) daftar periksa mandiri tanpa
+nilai; (5) rujukan hanya dokumen resmi dan sumber mapan yang dicek saat
+penulisan; (6) celah F-LD-d dan F-LD-e jalur A tidak dimasukkan ke #69 dan
+dicatat sebagai issue terpisah (#105). Modul ditulis berstatus `draf`.
 
 1. **Cara pelaksanaan:** (b) mandiri terbimbing sebagai dasar
    dengan (a) dan (c) opsional (**rekomendasi**), hanya (a), hanya (c), atau
@@ -267,7 +281,7 @@ orchestrator dan pemilik; tidak diambil di dokumen ini.
 
 ## 9. Sumber dan batasan
 
-- Satu-satunya kutipan CP berasal dari silabus v1.0 bagian 1.3 (bersumber
+- Satu-satunya kutipan CP berasal dari silabus bagian 1.3 (disusun saat v1.0; isinya tidak berubah di v1.1) (bersumber
   dari panduan resmi 2025 yang dibuka dan diekstrak 2026-11-18). Dokumen ini
   tidak memverifikasi ulang sumber luar.
 - Pengelompokan butir ke modul, kelas, durasi, bentuk kegiatan, dan semua opsi
@@ -277,14 +291,14 @@ orchestrator dan pemilik; tidak diambil di dokumen ini.
 - Nilai JP dan struktur semester mengikuti silabus bagian 2 dan tetap
   `[belum terverifikasi]` sebagai angka resmi kurikulum.
 - Rancangan belum diuji di kelas.
-- Kode `FND-X1-M<n>` dan minggu E-LD-d belum ada di corpus; menunggu #92.
-- Dokumen yang menjadi basi bila rancangan ini disetujui: silabus.md bagian
-  4.3 dan bagian 9 (diperbarui di v1.1, #92), `README.md` program
-  (baris modul pendamping), dan `AGENTS.md` (deskripsi `content/`). Tidak
-  diubah di tahap ini.
+- Kode `FND-X1-M<n>` (termasuk `FND-X1-M7` untuk E-LD-d) sudah ada di `data/sma-coding/foundation.json` sejak silabus v1.1 (#92).
+- Dokumen yang perlu diperbarui saat modul pertama masuk repositori: `README.md`
+  program ini, `AGENTS.md` (deskripsi `content/`), dan panduan; silabus bagian
+  4.3 dan 9 sudah diperbarui di v1.1 (#92).
 
 ## Changelog
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v0.2.0 | 2026-11-19 | Rancangan disetujui pemilik beserta keenam rekomendasi (issue #69); status, kotak catatan, dan pertanyaan terbuka diperbarui; rujukan silabus ke v1.1; celah F-LD-d dan F-LD-e jalur A dicatat sebagai #105; contoh kode minggu `A-X1-M3` menjadi `A-X1-M9` (padanan v1.0 ke v1.1). |
 | v0.1.0 | 2026-11-18 | Rancangan awal (issue #69, tahap 1): verifikasi daftar butir terhadap silabus bagian 4.3 dan usulan fondasi bagian 3.1; tujuh modul pendamping dengan butir, kelas, durasi, kegiatan, dan prasyarat; opsi pelaksanaan dengan penilaian dan rekomendasi; pemetaan butir ke modul; bentuk modul; kebutuhan skema indeks; pertanyaan terbuka. Status DRAF. |

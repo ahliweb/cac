@@ -1,16 +1,20 @@
 # Rancangan Seri Modul Cloud Computing untuk Program Coding SMA
 
-- **Version:** v0.1.0
-- **Last updated:** 2026-11-18
-- **Status:** DRAF — rancangan menunggu persetujuan pemilik (issue #89); modul belum ditulis
-- **Changeset:** Rancangan awal seri modul cloud computing (issue #89): tujuh modul, pemetaan ke minggu dan butir CP silabus v1.0, opsi praktik tanpa akun pribadi siswa, kebutuhan skema indeks, pertanyaan terbuka.
+- **Version:** v0.2.0
+- **Last updated:** 2026-11-19
+- **Status:** Rancangan DISETUJUI pemilik 2026-11-19 beserta ketujuh rekomendasi (issue #89); modul belum ada di repositori (menunggu skema indeks #106); modul yang kelak ditulis berstatus draf sampai ditinjau pemilik
+- **Changeset:** Mencatat persetujuan rancangan oleh pemilik (2026-11-19, tujuh rekomendasi); kode minggu diperbarui dari silabus v1.0 ke v1.1 memakai tabel padanan silabus bagian 3.0; pertanyaan terbuka ditandai terjawab.
 
-> **DRAF — belum disetujui pemilik.** Dokumen ini adalah konten karangan
-> menurut [ADR-0007](../../architecture/adr/0007-authored-learning-content.md):
-> rancangan dan penilaian penyusun, bukan transkripsi sumber resmi dan bukan
-> keputusan. Menurut acceptance criteria issue #89, **rancangan ini harus
-> disetujui pemilik sebelum modul pertama ditulis**. Penyusun tidak mencatat
-> persetujuan atas nama pemilik. Silabus [v1.0](silabus.md) tidak diubah.
+> **Rancangan disetujui pemilik pada 2026-11-19** (dialog pilihan, dicatat
+> di komentar issue #89) beserta **ketujuh rekomendasi** di bagian 7
+> (opsi 1a, 2a, 3a, 4a, 5a, 6a, 7a). Yang disetujui adalah **rancangan**;
+> **modulnya belum ditulis ke repositori** dan modul yang kelak ditulis
+> berstatus `draf` sampai pemilik meninjau dan menyetujuinya per modul
+> (ADR-0007). Dokumen ini adalah konten karangan menurut
+> [ADR-0007](../../architecture/adr/0007-authored-learning-content.md),
+> bukan transkripsi sumber resmi. Rujukan silabus kini [v1.1](silabus.md)
+> (disetujui 2026-11-19). Pengindeksan modul menunggu skema indeks sma-coding
+> (#106).
 
 ## 0. Cara membaca dokumen ini
 
@@ -19,12 +23,13 @@
   sebagai fakta.
 - `[asumsi]` berarti keputusan perancangan penyusun, bukan data resmi.
 - Kode minggu dan kode butir CP dipakai persis seperti di
-  [silabus.md](silabus.md) (bagian 0, 1.4, 3) dan
-  [usulan-fondasi-kelas-x.md](usulan-fondasi-kelas-x.md) (`FND-X1-M<n>`).
-  Dokumen ini tidak membuat kode baru. Blok fondasi berjumlah tujuh minggu
-  menurut keputusan pemilik (v0.2.0 usulan fondasi); tabel usulan baru memuat
-  `FND-X1-M1` sampai `M6`, sehingga nomor minggu ketujuh (E-LD-d)
-  `[asumsi]` belum pasti dan **tidak dipakai** sebagai prasyarat di sini.
+  [silabus.md](silabus.md) v1.1 (bagian 0, 1.4, 3), termasuk blok fondasi
+  `FND-X1-M1` sampai `M7`. Dokumen ini tidak membuat kode baru. Pada v0.2.0
+  kode kelas X dipetakan ulang dari v1.0 ke v1.1 memakai tabel padanan di
+  silabus bagian 3.0 dan diperiksa terhadap `data/sma-coding/weeks.json` dan
+  `foundation.json` (2026-11-19); kode kelas XI dan XII tidak berubah.
+  `FND-X1-M7` (E-LD-d, perangkat pengolah dokumen) tidak dipakai sebagai
+  prasyarat di sini.
 
 ## 1. Latar dan keputusan pemilik
 
@@ -38,6 +43,10 @@ rumusan CP** dan hanya bersinggungan dengan butir CP tertentu.
 
 **Keputusan pemilik (2026-11-18, dialog pilihan, issue #89):** seri modul
 cloud **terpisah**, **lintas jalur**, sebagai **pengayaan**.
+
+**Persetujuan rancangan (2026-11-19, dialog pilihan, issue #89):** pemilik
+menyetujui rancangan seri beserta **ketujuh rekomendasi** di bagian 7. Modul
+ditulis berstatus `draf`.
 
 ## 2. Tujuan
 
@@ -62,13 +71,13 @@ sertifikasi vendor, atau mewajibkan akun pada penyedia mana pun.
 ## 3. Daftar modul
 
 Tujuh modul `[asumsi]`. Id memakai kebab-case dan awalan `cloud-`. Semua
-kode minggu dan butir CP di tabel diambil dari silabus v1.0 (bagian 3 dan
+kode minggu dan butir CP di tabel diambil dari silabus v1.1 (bagian 3 dan
 1.4); kolom "Minggu terkait" berarti **titik pelekatan** (modul dibawakan
 sebagai pengayaan di sekitar minggu itu), bukan penggantian minggu.
 
-| Id modul | Judul | Isi | Prasyarat | Kelas sasaran | Minggu jalur v1.0 terkait | Butir CP terkait |
+| Id modul | Judul | Isi | Prasyarat | Kelas sasaran | Minggu jalur v1.1 terkait | Butir CP terkait |
 | --- | --- | --- | --- | --- | --- | --- |
-| `cloud-konsep-dasar` | Apa Itu Cloud Computing | definisi dan ciri (layanan sesuai permintaan, akses lewat jaringan, bersama-sama dipakai, tarif sesuai pemakaian); contoh sehari-hari; kapan cloud cocok dan tidak cocok | `FND-X1-M4`, `FND-X1-M5` (klien, server, internet, paket) | X | A: tidak ada minggu coding yang cocok, dibawakan bebas; B: `B-X2-M3` | E-LD-e (landasan; bukan pemenuhan) |
+| `cloud-konsep-dasar` | Apa Itu Cloud Computing | definisi dan ciri (layanan sesuai permintaan, akses lewat jaringan, bersama-sama dipakai, tarif sesuai pemakaian); contoh sehari-hari; kapan cloud cocok dan tidak cocok | `FND-X1-M4`, `FND-X1-M5` (klien, server, internet, paket) | X | A: tidak ada minggu coding yang cocok, dibawakan bebas; B: `B-X2-M6` | E-LD-e (landasan; bukan pemenuhan) |
 | `cloud-iaas-paas-saas` | IaaS, PaaS, dan SaaS | tiga model layanan dengan analogi (menyewa lahan, gedung, atau kantor siap pakai); contoh layanan tanpa mewajibkan merek tertentu; memilih model untuk kebutuhan | `cloud-konsep-dasar`; `FND-X1-M2` (peran OS) | X atau XI | A: `A-XI1-M1`; B: `B-XI1-M1` | F-BK-a (proses rekayasa; landasan) |
 | `cloud-layanan-dan-region` | Layanan, Region, dan Ketersediaan | jenis layanan umum (komputasi, penyimpanan, basis data, jaringan, kontainer); region dan zona; latensi, ketersediaan, redundansi, lokasi data dan implikasi hukum secara konseptual | `cloud-iaas-paas-saas`; `FND-X1-M4` (alamat IP, DNS, HTTP) | XI | A: `A-XI2-M9`; B: `B-XI2-M11` | F-BK-d (jaringan; landasan) |
 | `cloud-tanggung-jawab-bersama` | Model Tanggung Jawab Bersama | batas tanggung jawab penyedia dan pengguna per model layanan; contoh insiden akibat salah konfigurasi pengguna; daftar periksa "apa bagian saya" | `cloud-iaas-paas-saas`; `FND-X1-M6` (keamanan dasar) | XI | B: `B-XI2-M10`; A: dibawakan bebas | F-LD-e (landasan); E-LD-l |
@@ -209,7 +218,7 @@ dibaca 2026-11-18) menuntut:
 | Bidang saat ini | Kebutuhan seri cloud |
 | --- | --- |
 | `topicFamilies` (min 1, id rumpun materi) | Seri cloud bukan rumpun OSN dan tidak punya `data/sma-coding/` rumpun; perlu bidang pengelompokan "seri" atau rumpun yang sah untuk `sma-coding`. |
-| `weeks` (bilangan bulat 1 sampai batas) | Minggu `sma-coding` berkode `A-X1-M3`, `B-XII1-M4`, `FND-X1-M<n>`; perlu rujukan ke kode minggu, dan modul lintas jalur mungkin merujuk minggu beberapa jalur. |
+| `weeks` (bilangan bulat 1 sampai batas) | Minggu `sma-coding` berkode `A-X1-M9`, `B-XII1-M4`, `FND-X1-M<n>`; perlu rujukan ke kode minggu, dan modul lintas jalur mungkin merujuk minggu beberapa jalur. |
 | (tidak ada) | Bidang prasyarat antarmodul dan kelas sasaran. |
 | (tidak ada) | Bidang butir CP terkait, dengan nilai kosong sah untuk "di luar rumusan CP". |
 | `contentPath` | Sudah sesuai pola `content/<program>/modules/<id>.md`. |
@@ -220,10 +229,18 @@ dibaca 2026-11-18) menuntut:
 
 Keputusan ada pada pemilik; penyusun menyajikan opsi dan rekomendasi.
 
-| No. | Pertanyaan | Opsi | Rekomendasi penyusun |
+**Terjawab 2026-11-19 (komentar keputusan di issue #89):** pemilik
+menyetujui rancangan beserta **ketujuh rekomendasi** di kolom
+"Rekomendasi penyusun": opsi 1a, 2a, 3a, 4a, 5a, 6a, dan 7a. Seluruh
+pertanyaan di bawah dengan demikian terjawab dengan opsi rekomendasi. Edisi
+ISO/IEC 27017 tetap perlu dikonfirmasi dari sumber resmi sebelum modul
+ditulis (pertanyaan 5), dan fakta program penyedia diperiksa ulang dengan
+tanggal akses saat modul 5 dan 7 ditulis (pertanyaan 7).
+
+| No. | Pertanyaan | Opsi | Rekomendasi penyusun (dipilih pemilik 2026-11-19) |
 | --- | --- | --- | --- |
 | 1 | Praktik | (a) Simulasi + lokal wajib, demonstrasi guru opsional, akun siswa hanya anjuran; (b) simulasi + lokal saja, tanpa demonstrasi dan tanpa anjuran akun; (c) mengizinkan akun siswa sebagai bagian penilaian | (a). Memberi pengalaman nyata bagi yang mampu tanpa mewajibkan siapa pun. Opsi (c) bertentangan dengan silabus 7.2 dan tidak disarankan. |
-| 2 | Tempat dalam kalender | (a) pengayaan di luar jam wajib (ekstrakurikuler atau minggu cadangan); (b) menggantikan sebagian proyek mini; (c) menambah satu minggu di tiap semester | (a). Tidak mengubah silabus v1.0 dan keputusan pemilik "pengayaan". |
+| 2 | Tempat dalam kalender | (a) pengayaan di luar jam wajib (ekstrakurikuler atau minggu cadangan); (b) menggantikan sebagian proyek mini; (c) menambah satu minggu di tiap semester | (a). Tidak mengubah silabus dan sesuai keputusan pemilik "pengayaan". |
 | 3 | Jumlah modul | (a) tujuh modul seperti rancangan; (b) lima modul (menggabungkan 2 dengan 3, dan 5 dengan 6 `[asumsi]`); (c) tiga modul inti (1, 4, 6) | (a). Tiap modul tetap satu topik kecil; bila beban penulisan jadi masalah, mulai dari 1, 2, 4, 5, 6 dahulu. |
 | 4 | Modul 7 (jalur B) | (a) tetap, hanya simulasi dan demonstrasi; (b) ditunda sampai jalur B XII diuji di kelas; (c) dihapus | (a). Relevansi dengan `awcms-one` adalah keputusan pemilik; modul tidak memuat langkah penerbitan sungguhan ke akun siswa. |
 | 5 | Pengantar ISO/IEC 27017/27018 | (a) tetap konseptual satu bagian di modul 6; (b) dihapus dari materi siswa; (c) modul sendiri | (a). Sesuai permintaan pemilik; standar disebut sebagai gambaran, tanpa klaim sertifikasi. Edisi 27017 perlu dikonfirmasi dari sumber resmi sebelum ditulis. |
@@ -234,16 +251,16 @@ Keputusan ada pada pemilik; penyusun menyajikan opsi dan rekomendasi.
 
 | Issue | Hubungan |
 | --- | --- |
-| #86 (fondasi kelas X) | Prasyarat konsep jaringan (`FND-X1-M4`, `M5`) dan keamanan (`FND-X1-M6`). Penerapan fondasi ke silabus v1.1 di #92; bila nomor minggu fondasi berubah, kolom prasyarat dirapikan. |
-| #87 (seri matematika) | Skema indeks modul `sma-coding` dianalisis di sana; kebutuhan seri ini dicatat di bagian 6. |
+| #86 (fondasi kelas X) | Prasyarat konsep jaringan (`FND-X1-M4`, `M5`) dan keamanan (`FND-X1-M6`). Fondasi sudah diterapkan di silabus v1.1 (#92, disetujui 2026-11-19); bila nomor minggu fondasi berubah lagi, kolom prasyarat dirapikan. |
+| #87 (seri matematika) | Skema indeks modul `sma-coding` dianalisis di sana; kebutuhan seri ini dicatat di bagian 6. Pekerjaan skemanya dicatat di #106. |
 | #69 (modul pendamping literasi digital) | Beririsan pada keamanan dan literasi data; batasnya perlu dijaga agar tidak ganda. |
-| #52 (silabus v1.0) | Rujukan kode minggu dan butir CP; tidak diubah. |
+| #52 (silabus v1.0) dan #92 (silabus v1.1) | Rujukan kode minggu dan butir CP kini ke v1.1; silabus tidak diubah oleh seri ini. |
 
 ## 9. Sumber dan batasan
 
 | Sumber | Dipakai untuk | Status |
 | --- | --- | --- |
-| [`silabus.md`](silabus.md) v1.0.0 | Kode minggu, kode butir CP, kutipan CP, perangkat lab, privasi, `awcms-one` | Dibaca 2026-11-18. |
+| [`silabus.md`](silabus.md) v1.1.0 | Kode minggu, kode butir CP, kutipan CP, perangkat lab, privasi, `awcms-one` | Dibaca 2026-11-18 (v1.0); kode minggu dipetakan ke v1.1 dan diperiksa terhadap `data/sma-coding/` pada 2026-11-19. |
 | [`usulan-fondasi-kelas-x.md`](usulan-fondasi-kelas-x.md) v0.2.0 | Kode `FND-X1-M<n>` | Dibaca 2026-11-18. |
 | ADR-0004, 0006, 0007 | Aturan privasi, multi-program, konten karangan | Dibaca. |
 | `docs/silabus/11-pemetaan-iso.md`, `docs/silabus/99-referensi.md`, `docs/governance/security.md` | Posisi ISO/IEC 27017 dan 27018 di repositori | Dibaca; tidak diubah. |
@@ -266,4 +283,5 @@ Batasan:
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v0.2.0 | 2026-11-19 | Rancangan disetujui pemilik beserta ketujuh rekomendasi (issue #89); status, kotak catatan, dan pertanyaan terbuka diperbarui; kode minggu dipetakan dari v1.0 ke v1.1 (tabel padanan silabus bagian 3.0): `B-X2-M3` (DOM) menjadi `B-X2-M6`, contoh kode di bagian 6 `A-X1-M3` menjadi `A-X1-M9`; kode kelas XI dan XII tidak berubah. |
 | v0.1.0 | 2026-11-18 | Rancangan awal (issue #89): tujuan, tujuh modul dengan pemetaan minggu dan butir CP, opsi praktik tanpa akun siswa dengan rekomendasi, aturan konten, kebutuhan skema indeks, pertanyaan terbuka, sumber. Status DRAF. |
