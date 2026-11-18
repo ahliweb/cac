@@ -1,6 +1,6 @@
 {
   "name": "kurikulum-informatika",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "private": true,
   "type": "module",
   "description": "Curriculum-as-code for Indonesian informatics programmes (OSN Informatika 2026 first): schema, domain model, and rendering pipeline.",

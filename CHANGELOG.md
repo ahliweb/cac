@@ -1,5 +1,6 @@
 # Changelog
 
+
 All notable changes to this project are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
@@ -11,13 +12,47 @@ programme's own syllabus version (`syllabusVersion` / `syllabusDate`), which
 tracks that programme's source document and is registered per programme in
 `data/programs.json` (ADR-0006). Currently two programmes are
 registered: `osn` at syllabus version `2.0`, dated `2026-09-04`, and
-`sma-coding` at version `1.1.0`. See
+`sma-coding` at version `1.2.0`. See
 [`docs/development/releasing.md`](docs/development/releasing.md) for how the
 two relate.
 
 ## [Unreleased]
 
 Nothing yet.
+
+## [2.3.0] — 2026-11-19
+
+SMA coding syllabus v1.2 with tracks C, D and E, and two cross-track companion
+modules for CP items F-LD-d and F-LD-e. **No breaking changes** — see
+[`docs/releases/v2.3.0.md`](docs/releases/v2.3.0.md). The OSN corpus is
+unchanged.
+
+### Added
+
+- **SMA coding syllabus v1.2** approved by the programme owner on 2026-11-19
+  with every author recommendation and encoded (#123; [#68], [#84], [#88]):
+  track C (IoT and robotics, ESP32 with C++ in Arduino style), track D (AI;
+  Orange and unplugged activities in grade X, Python in XI–XII) and track E
+  (quantum computing, grades XI–XII only). Tracks D and E are enrichment
+  outside the CP wording and are never counted as covering a CP item.
+  `data/sma-coding/` is at 1.2.0: 5 tracks, 364 track weeks, 26 CP mappings,
+  9 enrichment links.
+- `tracks.json` gains `startClass` and `cpStatus`; `cp-mapping.json` gains
+  per-track `partialTracks` and `enrichmentLinks`; `osn-bridge.json` gains
+  `trackBridges` (track C). The audit rejects enrichment tracks in CP
+  mappings and grade-X weeks for track E.
+- `osn plan --program sma-coding --track C|D|E` and `osn render lembar-siswa
+  --week C-…|D-…|E-…`, with an enrichment note for tracks D and E.
+- Two draft companion modules closing the CP gap F-LD-d and F-LD-e for track
+  A (#122; [#105]): `pendamping-merancang-kebutuhan-sistem` and
+  `pendamping-keamanan-lanjut-konektivitas`; 29 draft `sma-coding` modules in
+  all.
+
+### Notes
+
+- Every `sma-coding` module is `draf` until the owner reviews it ([#125]);
+  modules for tracks C, D and E do not exist yet ([#124]). The weekly plans
+  of tracks C, D and E have not been tried in a classroom.
 
 ## [2.2.0] — 2026-11-19
 
@@ -434,7 +469,8 @@ documentation the syllabus itself mandates.
   and the entry says so; the next check must perform the live verification
   per [`docs/operations/syllabus-check.md`](docs/operations/syllabus-check.md).
 
-[Unreleased]: https://github.com/ahliweb/osn/compare/v2.2.0...HEAD
+[Unreleased]: https://github.com/ahliweb/osn/compare/v2.3.0...HEAD
+[2.3.0]: https://github.com/ahliweb/osn/compare/v2.2.0...v2.3.0
 [2.2.0]: https://github.com/ahliweb/osn/compare/v2.1.0...v2.2.0
 [2.1.0]: https://github.com/ahliweb/osn/compare/v2.0.0...v2.1.0
 [2.0.0]: https://github.com/ahliweb/osn/compare/v1.1.0...v2.0.0
@@ -446,6 +482,8 @@ documentation the syllabus itself mandates.
 [#77]: https://github.com/ahliweb/osn/issues/77
 [#84]: https://github.com/ahliweb/osn/issues/84
 [#105]: https://github.com/ahliweb/osn/issues/105
+[#124]: https://github.com/ahliweb/osn/issues/124
+[#125]: https://github.com/ahliweb/osn/issues/125
 [#86]: https://github.com/ahliweb/osn/issues/86
 [#87]: https://github.com/ahliweb/osn/issues/87
 [#88]: https://github.com/ahliweb/osn/issues/88
