@@ -12,10 +12,15 @@
  * **Pure**: no file I/O, no dates, no randomness.
  */
 
+import { learnerSheetIdentityProblems } from "../domain/learner-sheet";
 import type { Module, ModuleStatus } from "../schema/module";
+import { RenderRequestError } from "./errors";
 
-/** What the renderer needs of an index entry; OSN and `sma-coding` modules both satisfy it. */
-export type RenderableModule = Pick<Module, "title" | "status" | "review">;
+/** What the renderer needs of an index entry; the module of every programme satisfies it. */
+export type RenderableModule = Pick<Module, "title" | "status" | "review"> & {
+  /** `tk-coding` only: CP Fase Fondasi items the week overlaps in the author's interpretation (never fulfilment). */
+  readonly cpOverlap?: readonly string[] | undefined;
+};
 
 /** A module reference with its label/title/url resolved (register entry or explicit). */
 export interface ResolvedModuleReference {
@@ -67,6 +72,57 @@ export function renderModule(
     lines.push(`- ${prefix}${reference.title} <${reference.url}>`);
   }
   lines.push("");
+
+  lines.push("---");
+  lines.push(`Status modul: ${module.status}.`);
+  lines.push(`Program: ${program.name} (${program.id}).`);
+  if (module.cpOverlap !== undefined && module.cpOverlap.length > 0) {
+    lines.push(
+      `Irisan penafsiran dengan CP Fase Fondasi (bukan pemenuhan CP): ${module.cpOverlap.join(", ")}.`,
+    );
+  }
+  if (module.status === "disetujui" && module.review !== undefined) {
+    lines.push(
+      `Disetujui pada ${module.review.approvedOn} oleh peninjau dengan peran: ${module.review.reviewerRole}.`,
+    );
+  }
+
+  return lines.join("\n");
+}
+
+/**
+ * Renders the child's learner sheet of a `tk-coding` or `sd-coding` module
+ * (`content/<program>/lembar/<id>.md`): the module's title, the same status
+ * banner as {@link renderModule}, the sheet body verbatim and a footer with
+ * status and programme. A child's sheet must carry no name or identity field
+ * of the child (privacy, ADR-0004): a sheet with one is **refused**
+ * (`RenderRequestError` naming the lines), never printed.
+ *
+ * **Pure**: no file I/O, no dates, no randomness.
+ */
+export function renderModuleLearnerSheet(
+  module: RenderableModule,
+  sheetBody: string,
+  program: ModuleProgramInfo,
+): string {
+  const problems = learnerSheetIdentityProblems(sheetBody);
+  if (problems.length > 0) {
+    const listed = problems
+      .map((problem) => `line ${problem.line} (${JSON.stringify(problem.text)})`)
+      .join(", ");
+    throw new RenderRequestError(
+      `the learner sheet of "${module.title}" has a name or identity field of the child: ${listed}. A child's sheet carries none; remove it from the sheet.`,
+    );
+  }
+
+  const lines: string[] = [`# ${module.title}`, "", "**Lembar anak**", ""];
+
+  const banner = moduleBanner(module.status);
+  if (banner !== null) {
+    lines.push(banner, "");
+  }
+
+  lines.push(sheetBody.trim(), "");
 
   lines.push("---");
   lines.push(`Status modul: ${module.status}.`);

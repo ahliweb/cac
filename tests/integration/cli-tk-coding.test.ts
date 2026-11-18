@@ -109,7 +109,7 @@ describe("plan and render lembar-siswa refuse --program tk-coding honestly (exit
     expect(result.stderr).toContain("belum didukung untuk program tk-coding");
     expect(result.stderr).toContain('hanya tersedia untuk program "osn" dan "sma-coding"');
     expect(result.stderr).toContain(
-      'program tk-coding hanya didukung oleh "osn validate --program tk-coding" dan "bun run check:fidelity --program tk-coding"',
+      'program tk-coding didukung oleh "osn render modul --program tk-coding --id <id>" (tambahkan --lembar untuk lembar anak; perlu data/tk-coding/modules.json), "osn validate --program tk-coding" dan "bun run check:fidelity --program tk-coding"',
     );
     // The old wording advertised the very commands being refused.
     expect(result.stderr).not.toContain("Perintah yang didukung untuk program");

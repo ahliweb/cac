@@ -47,6 +47,8 @@ export type ModuleIndexEntry = Pick<
 > & {
   /** `tk-coding` and `sd-coding` only: the child's learner sheet, `content/<program>/lembar/<id>.md`. */
   readonly learnerSheetPath?: string | undefined;
+  /** `tk-coding` only: the CP Fase Fondasi items the week overlaps (interpreted overlap, never fulfilment). */
+  readonly cpOverlap?: readonly string[] | undefined;
 };
 
 /** A programme's parsed module index, reduced to the shared entry shape. */
