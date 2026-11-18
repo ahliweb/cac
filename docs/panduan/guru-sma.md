@@ -94,8 +94,22 @@ osn render weekly: belum didukung untuk program sma-coding: perintah ini membaca
 Hal serupa berlaku untuk `osn plan --start 2027-01-11 --program sma-coding`,
 `osn render sop`, `osn render checkpoint`, `osn render lembar-siswa`,
 `osn report` dan `osn checklist` dengan `--program sma-coding`. Program ini
-juga belum punya modul materi: `osn render modul --id <id> --program
-sma-coding` exit 2 dengan pesan `this programme has no modules.json`.
+punya perintah baca modul, tetapi selama `data/sma-coding/modules.json`
+belum ada, `osn render modul --id <id> --program sma-coding` exit 2 dengan
+pesan `this programme has no modules.json`.
+
+Setelah sebuah modul diindeks, bacalah dengan:
+
+```sh
+osn render modul --id <id-modul> --program sma-coding
+```
+
+Keluarannya memuat judul, spanduk status (modul yang belum `disetujui`
+diawali spanduk DRAF atau DITARIK), isi modul, bagian Rujukan, dan catatan
+status serta program di bagian bawah. `osn validate --program sma-coding`
+ikut memeriksa indeks modul itu: butir CP, kode minggu (termasuk blok
+fondasi `FND-...`), rumpun OSN yang dijembatani, prasyarat (tanpa siklus),
+dan keberadaan berkas isi.
 
 Untuk sementara, bahan ajar SMA adalah `silabus.md` itu sendiri dan data
 JSON di bawah ini.

@@ -9,9 +9,9 @@
 import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import type { CorpusFinding, CorpusSource } from "../domain/corpus-audit";
-import { parseModulesIndex } from "../domain/modules";
+import { type ModuleIndexEntry, parseModulesIndex } from "../domain/modules";
 import type { ResolvedModuleReference } from "../render/module";
-import { MODULES_FILE_NAME, type Module } from "../schema/module";
+import { MODULES_FILE_NAME } from "../schema/module";
 import { referencesFileSchema } from "../schema/reference";
 import { loadCorpusFromDirectory } from "./corpus-loader";
 import { REPO_ROOT } from "./program-loader";
@@ -28,8 +28,9 @@ async function readBody(contentPath: string, repoRoot: string): Promise<string |
 export async function moduleContentFindings(
   source: CorpusSource,
   repoRoot: string = REPO_ROOT,
+  programId: string = "osn",
 ): Promise<CorpusFinding[]> {
-  const { modules } = parseModulesIndex(source);
+  const { modules } = parseModulesIndex(source, programId);
   const findings: CorpusFinding[] = [];
   if (modules === undefined) {
     return findings;
@@ -57,14 +58,14 @@ export async function moduleContentFindings(
 export type ModuleLoadResult =
   | {
       readonly ok: true;
-      readonly module: Module;
+      readonly module: ModuleIndexEntry;
       readonly body: string;
       readonly references: readonly ResolvedModuleReference[];
     }
   | { readonly ok: false; readonly message: string };
 
 /**
- * Loads module `id` of the programme whose corpus lives in `corpusDir`,
+ * Loads module `id` of programme `programId` (default OSN) whose corpus lives in `corpusDir`,
  * with its Markdown body and its references resolved against the
  * programme's `references.json`. Never throws; failures come back as a message.
  */
@@ -72,6 +73,7 @@ export async function loadModule(
   corpusDir: string,
   id: string,
   repoRoot: string = REPO_ROOT,
+  programId: string = "osn",
 ): Promise<ModuleLoadResult> {
   let source: CorpusSource;
   try {
@@ -79,7 +81,7 @@ export async function loadModule(
   } catch (cause) {
     return { ok: false, message: (cause as Error).message };
   }
-  const { modules, findings } = parseModulesIndex(source);
+  const { modules, findings } = parseModulesIndex(source, programId);
   if (modules === undefined) {
     return {
       ok: false,

@@ -14,6 +14,9 @@
 
 import type { Module, ModuleStatus } from "../schema/module";
 
+/** What the renderer needs of an index entry; OSN and `sma-coding` modules both satisfy it. */
+export type RenderableModule = Pick<Module, "title" | "status" | "review">;
+
 /** A module reference with its label/title/url resolved (register entry or explicit). */
 export interface ResolvedModuleReference {
   /** The register id (e.g. `R1`), or `null` for an explicit title + URL reference. */
@@ -44,7 +47,7 @@ export function moduleBanner(status: ModuleStatus): string | null {
 
 /** Renders `module` with its Markdown `body`, resolved `references` and the owning `program`. */
 export function renderModule(
-  module: Module,
+  module: RenderableModule,
   body: string,
   references: readonly ResolvedModuleReference[],
   program: ModuleProgramInfo,

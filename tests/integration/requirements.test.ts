@@ -112,7 +112,17 @@ describe("docs/requirements/register.md and traceability.md", () => {
   test("the register cites issues beyond the initial backlog (the sma-coding requirements)", () => {
     const rows = parseRegister(registerText);
     const byId = new Map(rows.map((row) => [row.id, row]));
-    for (const id of ["FR-27", "FR-28", "FR-29", "FR-30", "FR-31", "TR-12", "TR-13", "GR-13"]) {
+    for (const id of [
+      "FR-27",
+      "FR-28",
+      "FR-29",
+      "FR-30",
+      "FR-31",
+      "FR-32",
+      "TR-12",
+      "TR-13",
+      "GR-13",
+    ]) {
       const row = byId.get(id);
       expect(row).toBeDefined();
       expect(row?.issues.some((issue) => issue > BACKLOG_LAST_ISSUE)).toBe(true);
@@ -127,6 +137,7 @@ describe("docs/requirements/register.md and traceability.md", () => {
       "FR-29",
       "FR-30",
       "FR-31",
+      "FR-32",
       "TR-12",
       "TR-13",
       "GR-13",
