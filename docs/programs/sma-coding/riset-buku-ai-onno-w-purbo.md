@@ -17,7 +17,7 @@
 
 Pemilik meminta (2026-11-18) pemetaan buku AI / machine learning / data
 science karya Onno W. Purbo (tokoh TI Indonesia) sebagai kemungkinan rujukan
-program coding SMA ([`silabus-draf.md`](silabus-draf.md)) dan/atau
+program coding SMA ([`silabus.md`](silabus.md)) dan/atau
 pembinaan OSN. Dokumen ini mencatat apa yang **benar-benar terbaca** dari
 sumber primer, menilai kecocokannya dengan butir CP dan jalur A/B, dan
 menyajikan opsi pemanfaatan. Isi buku tidak disalin.
@@ -143,15 +143,15 @@ sini karena di luar permintaan.
 
 ### 5.1 Catatan dasar: AI tidak disebut di rumusan CP
 
-Rumusan CP yang dikutip di `silabus-draf.md` bagian 1.3 (Fase E dan F)
+Rumusan CP yang dikutip di `silabus.md` bagian 1.3 (Fase E dan F)
 **tidak memuat kata "kecerdasan buatan", "AI", atau "machine learning"**,
-dan draf silabus tidak menyebutnya di mana pun. Karena itu pemetaan di
+dan silabus tidak menyebutnya di mana pun. Karena itu pemetaan di
 bawah adalah **tafsir penyusun** atas butir yang bersinggungan, bukan
 klaim bahwa CP mewajibkan AI. Kemungkinan CP versi lain (mis. adanya
-peraturan terpisah tentang AI) belum diperiksa di sini; draf sendiri
+peraturan terpisah tentang AI) belum diperiksa di sini; silabus sendiri
 menandai SK CP yang berlaku sebagai `[belum terverifikasi]` (bagian 1.2).
 
-### 5.2 Pemetaan ke butir CP (kode dari `silabus-draf.md` bagian 1.4)
+### 5.2 Pemetaan ke butir CP (kode dari `silabus.md` bagian 1.4)
 
 Pemetaan didasarkan pada deskripsi penerbit, bukan isi buku.
 
@@ -170,7 +170,7 @@ Pemetaan didasarkan pada deskripsi penerbit, bukan isi buku.
 
 | Jalur | Hubungan dengan buku | Penilaian |
 | --- | --- | --- |
-| A (C++, jembatan OSN) | Tidak ada. Rumpun materi OSN (`data/osn/topic-families.json`; `silabus-draf.md` bagian 5) bersifat algoritmik; seri SMA tidak melatih pemrograman, dan tidak ada tanda buku membahas topik rumpun OSN. | Tidak relevan untuk pembinaan OSN. Tidak ada klaim bahwa buku menyiapkan OSN. |
+| A (C++, jembatan OSN) | Tidak ada. Rumpun materi OSN (`data/osn/topic-families.json`; `silabus.md` bagian 5) bersifat algoritmik; seri SMA tidak melatih pemrograman, dan tidak ada tanda buku membahas topik rumpun OSN. | Tidak relevan untuk pembinaan OSN. Tidak ada klaim bahwa buku menyiapkan OSN. |
 | B (JS/TS, Bun, `awcms-one`) | Seri SMA: tidak ada (tanpa kode). *Membangun AI Chatbot WhatsApp dengan n8n, WAHA, dan Ollama* (bagian 3.2) memakai Docker dan alat otomasi; ia menyentuh gagasan webhook dan integrasi layanan, tetapi bukan JS/TS. | Kemungkinan bahan proyek pengayaan di akhir jalur B, **belum dicocokkan dengan minggu tertentu di rencana B** dan terlalu berat sebagai bacaan wajib. |
 | Di luar kedua jalur | Seluruh seri SMA lebih cocok sebagai bahan literasi AI dan analisis data untuk Informatika umum (lingkup bagian 4.3 draf yang pertanyaannya masih terbuka, nomor 3). | Kecocokan terbaik. |
 
@@ -224,10 +224,11 @@ dan jalur A/B sudah penuh.
    sebagai rujukan, mengingat isi belum diverifikasi dan ada selisih antara
    deskripsi penerbit dan metadata flipbook (X-2, XI-1)?
 3. Apakah pemilik ingin meminta kejelasan lisensi dan ISBN kepada InTech
-   Press ITS sebelum rujukan dipakai lebih jauh?
-4. Apakah AI/literasi AI dianggap bagian lingkup program ini, atau diserahkan
-   ke Informatika umum (terkait pertanyaan 3 pada `silabus-draf.md`
-   bagian 9)?
+   Press ITTS sebelum rujukan dipakai lebih jauh?
+4. Apakah AI/literasi AI dianggap bagian lingkup program ini? Catatan:
+   pertanyaan 3 silabus sudah dijawab pemilik (2026-11-18) — butir CP di luar
+   coding dicakup lewat modul pendamping (issue #69), yang bisa menjadi
+   tempat literasi AI bila opsi 1 atau 2 dipilih.
 5. Bila opsi 2 dipilih, di kelas dan semester mana modul diselipkan, dan
    status pengayaannya wajib atau opsional?
 6. Apakah buku non-AI Onno W. Purbo (mis. jaringan, sistem operasi) perlu
