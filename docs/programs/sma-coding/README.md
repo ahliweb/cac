@@ -1,6 +1,6 @@
 # Program Pembelajaran Coding SMA (`sma-coding`)
 
-- **Version:** v1.1.0
+- **Version:** v1.2.0
 - **Last updated:** 2026-11-18
 - **Status:** Silabus v1.0 DISETUJUI pemilik program (2026-11-18) untuk jalur A dan B; jalur C dan modul pendamping masih disusun.
 
@@ -44,12 +44,14 @@ persetujuan atas nama pemilik.
 | --- | --- |
 | `README.md` | Dokumen ini: tujuan, status, keputusan, daftar berkas. |
 | `silabus.md` | Silabus v1.0.0: sumber resmi dan kutipan CP, struktur dan rencana mingguan jalur A dan B, pemetaan CP, jembatan OSN, kelayakan `awcms-one`, asesmen, perangkat, privasi, keputusan pemilik, rujukan, changelog. |
+| `usulan-fondasi-kelas-x.md` | Usulan blok fondasi informatika dasar wajib di kelas X (issue #86): topik per minggu, pemetaan ke butir CP v1.0, tiga opsi panjang blok dengan dampak ke kelas X, bentuk modul, hubungan dengan #68, #69, #84. Status DRAF — usulan untuk silabus v1.1, belum disetujui. |
 | `riset-buku-ai-onno-w-purbo.md` | Riset buku AI karya Onno W. Purbo (issue #66): seri Buku AI SMA 6 jilid dan buku AI lain, terverifikasi dari halaman penerbit; pemetaan CP dan jalur; opsi pemanfaatan. Status DRAF — riset, belum keputusan pemilik. |
 
 ## Changelog
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v1.2.0 | 2026-11-18 | Menambah usulan blok fondasi kelas X (issue #86) ke daftar berkas. |
 | v1.1.0 | 2026-11-18 | Menambah dokumen riset buku AI karya Onno W. Purbo (issue #66) ke daftar berkas. |
 | v1.0.0 | 2026-11-18 | Silabus disetujui untuk jalur A dan B; `silabus-draf.md` menjadi `silabus.md`; status jalur C dan modul pendamping dicatat. |
 | v0.1.0 | 2026-11-18 | Draf awal folder program (issue #51). |
