@@ -1,9 +1,9 @@
 # Rancangan Seri Modul Cloud Computing untuk Program Coding SMA
 
-- **Version:** v0.2.0
+- **Version:** v0.3.0
 - **Last updated:** 2026-11-19
-- **Status:** Rancangan DISETUJUI pemilik 2026-11-19 beserta ketujuh rekomendasi (issue #89); modul belum ada di repositori (menunggu skema indeks #106); modul yang kelak ditulis berstatus draf sampai ditinjau pemilik
-- **Changeset:** Mencatat persetujuan rancangan oleh pemilik (2026-11-19, tujuh rekomendasi); kode minggu diperbarui dari silabus v1.0 ke v1.1 memakai tabel padanan silabus bagian 3.0; pertanyaan terbuka ditandai terjawab.
+- **Status:** Rancangan DISETUJUI pemilik 2026-11-19 beserta ketujuh rekomendasi (issue #89); tujuh modul draf `cloud-*` ada di repositori sejak 2026-11-19 (PR #117), terindeks di `data/sma-coding/modules.json`, berstatus draf sampai ditinjau pemilik; modul yang kelak ditulis berstatus draf sampai ditinjau pemilik
+- **Changeset:** Status: tujuh modul draf `cloud-*` masuk repositori dan terindeks (PR #117).
 
 > **Rancangan disetujui pemilik pada 2026-11-19** (dialog pilihan, dicatat
 > di komentar issue #89) beserta **ketujuh rekomendasi** di bagian 7
@@ -283,5 +283,6 @@ Batasan:
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v0.3.0 | 2026-11-19 | Status: tujuh modul draf `cloud-*` masuk repositori dan terindeks (PR #117). |
 | v0.2.0 | 2026-11-19 | Rancangan disetujui pemilik beserta ketujuh rekomendasi (issue #89); status, kotak catatan, dan pertanyaan terbuka diperbarui; kode minggu dipetakan dari v1.0 ke v1.1 (tabel padanan silabus bagian 3.0): `B-X2-M3` (DOM) menjadi `B-X2-M6`, contoh kode di bagian 6 `A-X1-M3` menjadi `A-X1-M9`; kode kelas XI dan XII tidak berubah. |
 | v0.1.0 | 2026-11-18 | Rancangan awal (issue #89): tujuan, tujuh modul dengan pemetaan minggu dan butir CP, opsi praktik tanpa akun siswa dengan rekomendasi, aturan konten, kebutuhan skema indeks, pertanyaan terbuka, sumber. Status DRAF. |

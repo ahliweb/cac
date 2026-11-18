@@ -97,7 +97,7 @@ export function renderSmaStudentSheet(
   }
 
   if (week.modules.length > 0) {
-    lines.push("## Modul pendamping");
+    lines.push("## Modul terkait");
     for (const module of week.modules) {
       const marked = module.status === "disetujui" ? "" : "**DRAF** ";
       lines.push(
