@@ -12,7 +12,7 @@
 - [ ] Scope is atomic — this PR does one thing; unrelated changes are not bundled in.
 - [ ] Tests added/updated for the change.
 - [ ] All local checks pass: `bun run format:check`, `bun run lint`, `bun run assist:check`, `bun run typecheck`, `bun run test:coverage`, `bun run build`, `bun run validate`, `bun run privacy-check`, `bun run check:module-code`.
-- [ ] Conditional checks pass when relevant: `bun run check:requirements` (if `docs/requirements/` was touched) and `bun run check:sma-fidelity` (if `data/sma-coding/` or `docs/programs/sma-coding/silabus.md` changed).
+- [ ] Conditional checks pass when relevant: `bun run check:requirements` (if `docs/requirements/` was touched) and `bun run check:fidelity` (if any `data/<program>/` or its source document changed; `bun run check:sma-fidelity` is the same check for `sma-coding` alone).
 - [ ] Docs updated (`docs/`) if behavior, setup, or process changed.
 - [ ] Changeset added if this PR is user-visible (see release process).
 - [ ] Acceptance criteria from the linked issue are met.

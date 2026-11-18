@@ -26,7 +26,7 @@ must be validated by a schema in `src/schema/` (see "Ordering rule" in
 derived values, real learner personal data (see ADR-0004), or a data file
 for a shape that has no corresponding schema.
 
-**State today:** `data/programs.json` (two entries, `osn` and `sma-coding`), `data/sma-coding/` with seven schema-validated JSON files transcribed from the approved `docs/programs/sma-coding/silabus.md` v1.2 (`cp-elements.json`, `tracks.json` (five tracks A–E with `startClass` and `cpStatus`), `structure.json`, `weeks.json` (364 track weeks; track E has only kelas XI–XII), `foundation.json` (the shared grade-X foundation block `FND-X1-M1..M7`), `cp-mapping.json` (CP mapping plus the `enrichmentLinks` of the out-of-CP tracks D and E), `osn-bridge.json` (track A plus `trackBridges` for track C); schemas `src/schema/sma-*.ts`, audit `src/domain/sma-corpus-audit.ts`, cell-by-cell fidelity check `scripts/check-sma-coding-fidelity.ts`), and `data/osn/` with 22 schema-validated JSON files, one per curriculum
+**State today:** `data/programs.json` (two entries, `osn` and `sma-coding`), `data/sma-coding/` with seven schema-validated JSON files transcribed from the approved `docs/programs/sma-coding/silabus.md` v1.2 (`cp-elements.json`, `tracks.json` (five tracks A–E with `startClass` and `cpStatus`), `structure.json`, `weeks.json` (364 track weeks; track E has only kelas XI–XII), `foundation.json` (the shared grade-X foundation block `FND-X1-M1..M7`), `cp-mapping.json` (CP mapping plus the `enrichmentLinks` of the out-of-CP tracks D and E), `osn-bridge.json` (track A plus `trackBridges` for track C); schemas `src/schema/sma-*.ts`, audit `src/domain/sma-corpus-audit.ts`, cell-by-cell fidelity check `src/cli/fidelity/sma-coding.ts`, run by `scripts/check-sma-coding-fidelity.ts` and `scripts/check-fidelity.ts`), and `data/osn/` with 22 schema-validated JSON files, one per curriculum
 concept (`data/osn/topic-families.json`, `data/osn/weeks.json`, `data/osn/gates.json`,
 `data/osn/references.json`, `data/osn/assessment-weights.json`,
 `data/osn/kpi-definitions.json`, `data/osn/playbooks.json`, and so on — see
@@ -125,7 +125,7 @@ output for display (call into `src/render/` instead).
 **State today:** `index.ts` (the thin `process.*`-touching shell),
 `run-cli.ts` (the dispatcher core), `command.ts` (the `Command` interface
 and exit-code constants), `commands/index.ts` (the command registry) and
-`commands/*.ts` (the six command handlers), plus the shared I/O/formatting
+`commands/*.ts` (the six command handlers), `program-registry.ts` (the programme table `PROGRAM_MODULES`, ADR-0008: id → data files + schemas, audit, module-index hooks, optional fidelity module; `osn validate` and `check:fidelity` dispatch through it), `fidelity/` (the per-programme fidelity modules and their `FidelityModule` contract; `sma-coding.ts`) and `fidelity-runner.ts` (`bun run check:fidelity`), plus the shared I/O/formatting
 helpers each command uses (`corpus-loader.ts`, `program-loader.ts` (registry loading and `--program` resolution), `privacy-scan-loader.ts`,
 `output-writer.ts`, `format-audit.ts`, `format-plan.ts`, `format-report.ts`,
 `format-privacy-check.ts`, `format-checklist.ts`), `sma-commands.ts`, `sma-corpus-loader.ts` and `format-sma-plan.ts` (the `--program sma-coding` branches of `osn plan` and `osn render lembar-siswa`: flag handling, the audited corpus loader, plan formatting) and `module-content.ts` (module body existence check for `osn validate`, and the loader behind `osn render modul`). A `bin` entry
@@ -173,7 +173,7 @@ CLI command run end-to-end asserting on output/exit code.
 **State today:** `requirements.test.ts` (verifies the requirements
 register and traceability matrices via `scripts/check-requirements.ts`),
 `checklist-fidelity.test.ts` (verifies transcription fidelity via
-`scripts/check-checklist-fidelity.ts`), `sma-coding-fidelity.test.ts` (the same for `data/sma-coding/` against the SMA syllabus, via `scripts/check-sma-coding-fidelity.ts`), `cli-sma-coding.test.ts` (`osn validate` for the `sma-coding` programme and the exit-2 refusal of OSN-only commands), `cli-validate.test.ts` and
+`scripts/check-checklist-fidelity.ts`), `sma-coding-fidelity.test.ts` (the same for `data/sma-coding/` against the SMA syllabus, via `src/cli/fidelity/sma-coding.ts`), `cli-sma-coding.test.ts` (`osn validate` for the `sma-coding` programme and the exit-2 refusal of OSN-only commands), `cli-validate.test.ts` and
 `cli-validate-fixtures.test.ts` (the full corpus, and a deliberately
 corrupted fixture corpus), and one end-to-end test per remaining CLI
 command (`cli-plan.test.ts`, `cli-render.test.ts`, `cli-report.test.ts`,

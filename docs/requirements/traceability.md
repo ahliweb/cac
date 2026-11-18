@@ -79,13 +79,14 @@ itself.
 | #54 — Module schema, renderer and the pilot module | FR-31, TR-13, GR-13 |
 | #76 — Register the `sma-coding` requirements | TR-09 |
 | #106 — Module-index schema for the `sma-coding` programme | FR-32 |
+| #140 — Programme table for audit and fidelity (ADR-0008) | TR-14 |
 
 Rows `#27` and later are not required by the checker: only `#1`-`#26` must be present (the initial
 backlog), while any issue may be cited. A new programme adds its issues here as it adds requirements.
 
 ## Matrix 3 — Requirement → tests
 
-Requirements `FR-27`-`FR-33`, `TR-12`, `TR-13` and `GR-13` have no OSN syllabus section, so they
+Requirements `FR-27`-`FR-33`, `TR-12`-`TR-14` and `GR-13` have no OSN syllabus section, so they
 are traced by issue (Matrix 2) and by the tests below. Every path must exist; the checker
 (`checkTestLinks`) fails on a missing file, an unregistered ID or a row with no test.
 
@@ -100,6 +101,7 @@ are traced by issue (Matrix 2) and by the tests below. Every path must exist; th
 | FR-33 | `tests/unit/sma-plan.test.ts`, `tests/unit/render-sma-student-sheet.test.ts`, `tests/unit/sma-commands.test.ts`, `tests/integration/cli-sma-plan.test.ts` |
 | TR-12 | `tests/integration/sma-coding-fidelity.test.ts` |
 | TR-13 | `tests/unit/check-module-code.test.ts`, `tests/integration/check-module-code.test.ts` |
+| TR-14 | `tests/unit/program-registry.test.ts`, `tests/integration/check-fidelity.test.ts` |
 | GR-13 | `tests/unit/module-schema.test.ts`, `tests/unit/render-module.test.ts` |
 
 Every requirement ID in `register.md` appears in at least one row of Matrix 1 or Matrix 2, and

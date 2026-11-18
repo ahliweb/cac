@@ -75,6 +75,14 @@ one pass and reports **every** problem found, not just the first.
 osn validate [options]
 ```
 
+Which audit runs for a programme is decided by the programme table
+(`PROGRAM_MODULES` in `src/cli/program-registry.ts`, ADR-0008), not by a
+per-id branch: each entry holds the programme's data files and schemas, its
+corpus audit and its module-index checks (and an optional fidelity module). A
+programme registered in `data/programs.json` with no table entry is reported as
+a finding (`programs[<id>]` in `programs.json`), never skipped; a table entry
+whose programme is not registered is a draft and is not validated.
+
 ### What it checks
 
 1. **Schema conformance.** Every file in the typed file->schema registry
@@ -195,6 +203,15 @@ also run by `bun test` in `tests/integration/sma-coding-fidelity.test.ts`)
 parses the Markdown tables of bagian 1.3, 1.4, 2, 3 (including the foundation
 table and the track summary 3.6), 4 (including the enrichment links 4.5) and 5
 (one table per track) and exits `1` listing every mismatching cell.
+
+`bun run check:fidelity [--program <id>]` (`scripts/check-fidelity.ts`) runs the
+fidelity module of every registered programme that has one (today only
+`sma-coding`; the logic is `src/cli/fidelity/sma-coding.ts`, the same module
+`check:sma-fidelity` runs) or only the programme named by `--program`. It exits
+`0` when the data equals the document, `1` listing every mismatch, and `2` for a
+usage error: `--program` without a value, a programme that is not registered, or
+a registered programme with no fidelity module (`osn` today; the message names
+the programmes that have one).
 
 ### Options
 
