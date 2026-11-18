@@ -74,19 +74,11 @@ describe("check:fidelity", () => {
   test("drift in the data exits 1 and lists the mismatch", async () => {
     const dir = await mkdtemp(join(tmpdir(), "osn-fid-drift-"));
     try {
-      await cp(join(repoRoot, "data", "programs.json"), join(dir, "data", "programs.json"), {
+      // Every programme's data and source document, so each fidelity module can run.
+      await cp(join(repoRoot, "data"), join(dir, "data"), { recursive: true });
+      await cp(join(repoRoot, "docs", "programs"), join(dir, "docs", "programs"), {
         recursive: true,
       });
-      await cp(join(repoRoot, "data", "sma-coding"), join(dir, "data", "sma-coding"), {
-        recursive: true,
-      });
-      await cp(
-        join(repoRoot, "docs", "programs", "sma-coding"),
-        join(dir, "docs", "programs", "sma-coding"),
-        {
-          recursive: true,
-        },
-      );
       const weeksPath = join(dir, "data", "sma-coding", "weeks.json");
       const weeks = (await readFile(weeksPath, "utf-8")).replace(/"topic": "/, '"topic": "UBAH ');
       await writeFile(weeksPath, weeks);

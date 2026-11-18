@@ -1,0 +1,74 @@
+{
+  "syllabusVersion": "1.0.0",
+  "syllabusDate": "2026-11-19",
+  "sourceSection": "bagian 4.2",
+  "cpRelation": "irisan-penafsiran",
+  "meetsCp": false,
+  "interpretationNote": "CP tidak memakai istilah koding atau berpikir komputasional (riset 2.1). Pemetaan berikut adalah **penafsiran penyusun** atas irisan, bukan rumusan resmi.",
+  "concepts": [
+    {
+      "concept": "Urutan, langkah",
+      "cpText": "FF-DL-b (\"kesadaran mengenai waktu\"), FF-DL-c",
+      "cpCodes": ["FF-DL-b", "FF-DL-c"],
+      "matchText": "Sedang: CP tidak menyebut urutan langkah secara eksplisit.",
+      "matchLevel": "sedang"
+    },
+    {
+      "concept": "Pola",
+      "cpText": "FF-DL-b (\"mengidentifikasi pola\")",
+      "cpCodes": ["FF-DL-b"],
+      "matchText": "Langsung.",
+      "matchLevel": "langsung"
+    },
+    {
+      "concept": "Pengelompokan (klasifikasi), data sederhana",
+      "cpText": "FF-DL-b (\"menyadari adanya persamaan dan perbedaan karakteristik antar objek\"); lingkup Matematika (\"analisis data, mengklasifikasi objek\")",
+      "cpCodes": ["FF-DL-b"],
+      "matchText": "Langsung.",
+      "matchLevel": "langsung"
+    },
+    {
+      "concept": "Arah dan ruang",
+      "cpText": "FF-DL-b (\"kesadaran tentang bentuk, posisi, dan ruang\")",
+      "cpCodes": ["FF-DL-b"],
+      "matchText": "Langsung.",
+      "matchLevel": "langsung"
+    },
+    {
+      "concept": "Instruksi dan \"program\" kartu, perintah, pengulangan",
+      "cpText": "FF-DL-d (\"merekayasa teknologi\"), FF-DL-c (\"memecahkan masalah sederhana\")",
+      "cpCodes": ["FF-DL-d", "FF-DL-c"],
+      "matchText": "Sedang: CP tidak menyebut instruksi atau algoritma.",
+      "matchLevel": "sedang"
+    },
+    {
+      "concept": "Memperbaiki kesalahan (*debugging*)",
+      "cpText": "FF-DL-c (\"memecahkan masalah sederhana\")",
+      "cpCodes": ["FF-DL-c"],
+      "matchText": "Sedang.",
+      "matchLevel": "sedang"
+    },
+    {
+      "concept": "Memecah tugas, merencanakan dan merancang",
+      "cpText": "Lingkup Rekayasa (\"merencanakan dan merancang sesuatu untuk menyelesaikan masalah dalam kehidupan sehari-hari\")",
+      "cpCodes": [],
+      "matchText": "Langsung.",
+      "matchLevel": "langsung"
+    },
+    {
+      "concept": "Pemakaian alat dan perangkat dengan aman",
+      "cpText": "FF-DL-d; lingkup Teknologi (\"memahami penggunaannya secara aman dan bertanggung jawab\")",
+      "cpCodes": ["FF-DL-d"],
+      "matchText": "Langsung.",
+      "matchLevel": "langsung"
+    },
+    {
+      "concept": "Bekerja sama, bergantian",
+      "cpText": "FF-JD-c",
+      "cpCodes": ["FF-JD-c"],
+      "matchText": "Langsung.",
+      "matchLevel": "langsung"
+    }
+  ],
+  "untouchedNote": "Silabus ini tidak membahas elemen Nilai Agama dan Budi Pekerti, subelemen Jati Diri selain FF-JD-c dan FF-JD-e, serta kegiatan literasi dan seni di luar yang menunjang cerita dan pameran. Pembelajaran PAUD harus tetap memenuhi CP secara utuh lewat kegiatan lain TK; program ini hanya **tambahan muatan berpikir komputasional** `[asumsi]`."
+}

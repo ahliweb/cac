@@ -62,11 +62,11 @@ describe("osn validate with the sma-coding programme", () => {
     expect(result.stdout).toContain("22 data file(s) validated");
   });
 
-  test("validate without flags covers both programmes", async () => {
+  test("validate without flags covers every registered programme", async () => {
     const result = await runCli(["validate", "--json"]);
     expect(result.exitCode).toBe(0);
     const json = JSON.parse(result.stdout) as { ok: boolean; programs: Array<{ program: string }> };
-    expect(json.programs.map((entry) => entry.program)).toEqual(["osn", "sma-coding"]);
+    expect(json.programs.map((entry) => entry.program)).toEqual(["osn", "sma-coding", "tk-coding"]);
   });
 
   test("a corrupted copy of the corpus is reported with exit 1", async () => {

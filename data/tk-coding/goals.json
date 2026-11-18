@@ -1,0 +1,79 @@
+{
+  "syllabusVersion": "1.0.0",
+  "syllabusDate": "2026-11-19",
+  "sourceSection": "bagian 2",
+  "principles": [
+    {
+      "order": 1,
+      "title": "Bermain adalah belajar.",
+      "text": "Seluruh kegiatan berbentuk permainan dengan anak sebagai pelaku aktif; tidak ada latihan nirkonteks (*drilling*), sesuai Lampiran I."
+    },
+    {
+      "order": 2,
+      "title": "Mayoritas tanpa layar.",
+      "text": "Seluruh rencana inti 48 minggu tanpa perangkat digital (*unplugged*). Layar hanya opsi kecil, didampingi guru, dan keputusan pemilik (bagian 8 dan 9)."
+    },
+    {
+      "order": 3,
+      "title": "Batas waktu layar.",
+      "text": "Program tidak menambah beban layar anak: bawaan 0 menit; bila opsi layar dipilih, paling lama `[asumsi]` 10 menit per minggu, ditampilkan guru untuk kelompok, tanpa tugas rumah berlayar (bagian 3)."
+    },
+    {
+      "order": 4,
+      "title": "Konkret sebelum simbol.",
+      "text": "Urutan: tubuh dan benda nyata, kartu bergambar, panah, lalu (opsional) layar."
+    },
+    {
+      "order": 5,
+      "title": "Tanpa penilaian angka.",
+      "text": "Hanya observasi naratif dan ceklis amatan; tidak ada nilai, peringkat, atau label (bagian 6)."
+    },
+    {
+      "order": 6,
+      "title": "Tanpa data anak di repositori.",
+      "text": "Tidak ada foto, nama, atau suara anak; aplikasi tanpa akun anak (bagian 7)."
+    },
+    {
+      "order": 7,
+      "title": "Keluarga sebagai mitra.",
+      "text": "Kegiatan rumah selalu tanpa layar dan bersifat ajakan (bagian 6.3)."
+    },
+    {
+      "order": 8,
+      "title": "Laju berbeda.",
+      "text": "Pembagian TK A dan TK B hanya pengaturan tingkat kesulitan; panduan resmi menyebut pembelajaran \"tidak perlu dikunci menjadi capaian per usia\"."
+    }
+  ],
+  "goalsIntro": "Pada akhir TK B, anak dapat `[asumsi]`:",
+  "goals": [
+    {
+      "order": 1,
+      "text": "menyusun dan menceritakan urutan 3-4 langkah kegiatan sehari-hari dan memperbaiki urutan yang terbalik;"
+    },
+    {
+      "order": 2,
+      "text": "mengenali, melanjutkan, dan membuat pola sederhana (warna, gerak, bunyi);"
+    },
+    {
+      "order": 3,
+      "text": "mengelompokkan benda menurut satu aturan, lalu dua aturan, dan menyebutkan aturannya;"
+    },
+    {
+      "order": 4,
+      "text": "memberi dan mengikuti instruksi arah sederhana (maju, belok kiri, belok kanan, berhenti, ulangi) di kisi lantai, serta mengoreksi instruksi yang salah;"
+    },
+    {
+      "order": 5,
+      "text": "memecah tugas sederhana menjadi bagian-bagian dan menyebutkan alasan pilihannya;"
+    },
+    {
+      "order": 6,
+      "text": "merencanakan, membuat, mencoba, dan memperbaiki rancangan benda sederhana;"
+    },
+    {
+      "order": 7,
+      "text": "mengenali alat di sekitar dan memakainya dengan aman, serta menyebutkan aturan aman memakai perangkat digital (diperkenalkan oleh orang dewasa)."
+    }
+  ],
+  "cpRelationNote": "Seluruh tujuan adalah irisan dengan CP (bagian 4); tujuan ini bukan pemenuhan CP."
+}

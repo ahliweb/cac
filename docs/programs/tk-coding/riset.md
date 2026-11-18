@@ -1,8 +1,8 @@
 # Riset Pembelajaran Coding (Berpikir Komputasional) untuk Anak TK/PAUD
 
-- **Version:** v0.1.0
+- **Version:** v0.1.1
 - **Last updated:** 2026-11-19
-- **Status:** DRAF riset (issue #127). Bukan keputusan pemilik dan bukan sumber corpus.
+- **Status:** Riset pendukung (issue #127); silabus yang bersumber darinya disetujui pemilik 2026-11-19 ([`silabus.md`](silabus.md) v1.0.0). Dokumen ini bukan sumber corpus.
 - **Changeset:** Riset awal sumber resmi, panduan waktu layar, pendekatan, dan risiko untuk program `tk-coding`.
 
 > Dokumen ini adalah konten **karangan** menurut
@@ -11,8 +11,8 @@
 > disalin dari berkas yang benar-benar dibuka pada **2026-11-19**; butir yang
 > tidak dapat dibuka atau dipastikan ditandai `[belum terverifikasi]`, dan
 > keputusan perancangan ditandai `[asumsi]`. Pilihan atas temuan riset
-> adalah hak pemilik; opsinya ada di
-> [`silabus-draf.md`](silabus-draf.md) bagian 9.
+> adalah hak pemilik; keputusannya (2026-11-19) ada di
+> [`silabus.md`](silabus.md) bagian 9.
 
 ## 1. Tujuan, metode, dan keterbatasan
 
@@ -209,3 +209,4 @@ dijadikan **opsi demonstrasi** (silabus bagian 8).
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
 | v0.1.0 | 2026-11-19 | Riset awal (issue #127). |
+| v0.1.1 | 2026-11-19 | Tautan dan status disesuaikan dengan silabus v1.0.0 yang disetujui (`silabus-draf.md` menjadi `silabus.md`; issue #127). |

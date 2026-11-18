@@ -15,6 +15,14 @@
       "syllabusVersion": "1.2.0",
       "syllabusDate": "2026-11-19",
       "corpusDir": "data/sma-coding"
+    },
+    {
+      "id": "tk-coding",
+      "name": "Silabus Pembelajaran Coding TK/PAUD (Berpikir Komputasional)",
+      "sourceDocument": "docs/programs/tk-coding/silabus.md",
+      "syllabusVersion": "1.0.0",
+      "syllabusDate": "2026-11-19",
+      "corpusDir": "data/tk-coding"
     }
   ]
 }

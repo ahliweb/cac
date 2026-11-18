@@ -69,10 +69,11 @@ describe("PROGRAM_MODULES", () => {
     }
   });
 
-  test("only sma-coding needs the OSN topic families and has a fidelity module (today)", () => {
+  test("only sma-coding needs the OSN topic families; sma-coding and tk-coding have a fidelity module (today)", () => {
     expect(findProgramModule("osn")?.needsOsnTopicFamilyIds).toBe(false);
     expect(findProgramModule("sma-coding")?.needsOsnTopicFamilyIds).toBe(true);
-    expect(fidelityProgramIds()).toEqual(["sma-coding"]);
+    expect(findProgramModule("tk-coding")?.needsOsnTopicFamilyIds).toBe(false);
+    expect(fidelityProgramIds()).toEqual(["sma-coding", "tk-coding"]);
   });
 
   test("findProgramModule returns undefined for an id with no entry", () => {
