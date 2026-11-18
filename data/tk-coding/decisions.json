@@ -1,0 +1,62 @@
+{
+  "syllabusVersion": "1.0.0",
+  "syllabusDate": "2026-11-19",
+  "sourceSection": "bagian 9",
+  "decidedOn": "2026-11-19",
+  "decisions": [
+    {
+      "id": "Q1",
+      "question": "Penggunaan layar",
+      "decision": "(a) Seluruh rencana tanpa layar; `TK-B2-M9/M10` hanya unplugged",
+      "consequence": "Nol layar; paling aman dan murah."
+    },
+    {
+      "id": "Q2",
+      "question": "Durasi dan frekuensi",
+      "decision": "(a) 1 sesi per minggu: TK A 20 menit, TK B 30 menit, plus integrasi harian opsional",
+      "consequence": "Dapat diterapkan tanpa menambah jam."
+    },
+    {
+      "id": "Q3",
+      "question": "Cakupan usia",
+      "decision": "(a) TK A dan TK B (48 minggu)",
+      "consequence": "KB/TPA usia 3-4 tahun tidak termasuk."
+    },
+    {
+      "id": "Q4",
+      "question": "Pembagian semester",
+      "decision": "(a) 12 minggu per semester seperti rencana",
+      "consequence": "Kode minggu stabil."
+    },
+    {
+      "id": "Q5",
+      "question": "Penamaan program",
+      "decision": "(a) Id `tk-coding`, tetapi isi dokumen memakai istilah resmi \"berpikir komputasional\"",
+      "consequence": "Konsisten dengan kebijakan; id tetap sejajar `sma-coding`."
+    },
+    {
+      "id": "Q6",
+      "question": "Alat opsional",
+      "decision": "(a) Tidak memakai alat berbayar; robot lantai dan aplikasi hanya catatan opsional",
+      "consequence": "Tidak butuh anggaran perangkat."
+    },
+    {
+      "id": "Q7",
+      "question": "Pemakaian bahan CS Unplugged (CC BY-SA 4.0)",
+      "decision": "(a) Hanya rujukan ide; semua kegiatan ditulis ulang oleh tim",
+      "consequence": "Tidak ada kewajiban lisensi turunan."
+    },
+    {
+      "id": "Q8",
+      "question": "Jembatan ke `sd-coding`",
+      "decision": "(a) Menunggu silabus `sd-coding` terbit, lalu menyelaraskan kode jembatan (bagian 5)",
+      "consequence": "Jembatan bagian 5 tetap rancangan sepihak sampai disesuaikan."
+    },
+    {
+      "id": "Q9",
+      "question": "Persetujuan dan registrasi",
+      "decision": "(a) Draf disetujui; skema, `data/tk-coding/`, dan entri `data/programs.json` dibuat sesuai urutan ADR-0006",
+      "consequence": "Program terdaftar dan divalidasi (issue #127)."
+    }
+  ]
+}

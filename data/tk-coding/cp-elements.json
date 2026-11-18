@@ -1,0 +1,56 @@
+{
+  "syllabusVersion": "1.0.0",
+  "syllabusDate": "2026-11-19",
+  "sourceSection": "bagian 4.1",
+  "items": [
+    {
+      "code": "FF-DL-a",
+      "elementId": "DL",
+      "text": "Murid mengenali dan memahami berbagai informasi, mengomunikasikan perasaan dan pikiran secara lisan, tulisan, atau menggunakan berbagai media serta membangun percakapan, menunjukkan minat, dan berpartisipasi dalam kegiatan pramembaca;"
+    },
+    {
+      "code": "FF-DL-b",
+      "elementId": "DL",
+      "text": "Murid memiliki kepekaaan bilangan; mengidentifikasi pola; memiliki kesadaran tentang bentuk, posisi, dan ruang; menyadari adanya persamaan dan perbedaan karakteristik antar objek; mampu melakukan pengukuran dengan satuan tidak baku; dan memiliki kesadaran mengenai waktu;"
+    },
+    {
+      "code": "FF-DL-c",
+      "elementId": "DL",
+      "text": "Murid mampu mengamati, menyebutkan alasan, pilihan atau keputusannya, mampu memecahkan masalah sederhana, serta mengetahui hubungan sebab akibat dari suatu kondisi atau situasi yang dipengaruhi oleh hukum alam dan kondisi sosial;"
+    },
+    {
+      "code": "FF-DL-d",
+      "elementId": "DL",
+      "text": "Murid menunjukkan kemampuan awal menggunakan dan merekayasa teknologi serta untuk mencari informasi, gagasan, dan keterampilan secara aman dan bertanggung jawab; dan"
+    },
+    {
+      "code": "FF-DL-e",
+      "elementId": "DL",
+      "text": "Murid mengeksplorasi berbagai proses seni, mengekspresikannya, serta mengapresiasi karya seni."
+    },
+    {
+      "code": "FF-JD-c",
+      "elementId": "JD",
+      "text": "Murid mengenali, mengekspresikan, dan mengelola emosi diri, serta membangun hubungan sosial secara sehat;"
+    },
+    {
+      "code": "FF-JD-e",
+      "elementId": "JD",
+      "text": "Murid memiliki fungsi gerak (motorik kasar, halus, dan taktil) untuk merawat dirinya, membangun kemandirian dan berkegiatan)."
+    }
+  ],
+  "scope": [
+    {
+      "subject": "Matematika",
+      "text": "Matematika pada konteks PAUD meliputi kemampuan menyatakan hubungan antar bilangan dengan berbagai cara (kesadaran bilangan), mengidentifikasi pola, mengenali bentuk dan karakteristik benda di sekitar yang dapat dibandingkan dan diukur, analisis data, mengklasifikasi objek, dan kesadaran mengenai waktu."
+    },
+    {
+      "subject": "Teknologi",
+      "text": "Teknologi dalam konteks PAUD meliputi kemampuan awal untuk mengenali bentuk dan fungsi benda buatan manusia yang digunakan dalam kehidupan sehari-hari serta memahami penggunaannya secara aman dan bertanggung jawab."
+    },
+    {
+      "subject": "Rekayasa",
+      "text": "Rekayasa dalam konteks PAUD meliputi kemampuan merencanakan dan merancang sesuatu untuk menyelesaikan masalah dalam kehidupan sehari-hari."
+    }
+  ]
+}

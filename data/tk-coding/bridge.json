@@ -1,0 +1,44 @@
+{
+  "syllabusVersion": "1.0.0",
+  "syllabusDate": "2026-11-19",
+  "sourceSection": "bagian 5",
+  "policy": "**Kebijakan.** Kepka 046/H/KR/2025 Diktum KEENAM: CP Fase A \"disusun selaras dengan Capaian Pembelajaran pada fase fondasi untuk memastikan transisi pembelajaran yang berkesinambungan dari PAUD ke SD\" (kutipan penuh enam kemampuan fondasi di riset 2.1). Mata pelajaran koding dan KA pilihan dimulai kelas V SD menurut halaman BBPMP yang dibuka (riset 2.5), bukan di PAUD.",
+  "sdProgram": "**Program `sd-coding`.** Program SD sedang disusun paralel (issue lain); dokumennya **belum ada** di repositori pada 2026-11-19 (`docs/programs/` hanya memuat `sma-coding` dan folder ini). Jembatan berikut bersifat rancangan sepihak dan **harus disesuaikan** setelah silabus `sd-coding` ada `[belum terverifikasi]`.",
+  "rows": [
+    {
+      "order": 1,
+      "output": "Menyusun dan membetulkan urutan 3-4 langkah (`TK-B1-M2`, `TK-B2-M4`)",
+      "outputWeeks": ["TK-B1-M2", "TK-B2-M4"],
+      "prerequisite": "Mengurutkan langkah penyelesaian tugas",
+      "note": "`[asumsi]`"
+    },
+    {
+      "order": 2,
+      "output": "Membuat dan melanjutkan pola (`TK-B1-M4`, `TK-B2-M1`)",
+      "outputWeeks": ["TK-B1-M4", "TK-B2-M1"],
+      "prerequisite": "Pola bilangan dan bentuk",
+      "note": "`[asumsi]`"
+    },
+    {
+      "order": 3,
+      "output": "Kartu arah dan \"program\" di kisi (`TK-B2-M3`)",
+      "outputWeeks": ["TK-B2-M3"],
+      "prerequisite": "Instruksi dan algoritma sederhana tanpa layar",
+      "note": "`[asumsi]`"
+    },
+    {
+      "order": 4,
+      "output": "Mengelompokkan dengan dua aturan (`TK-B1-M7`)",
+      "outputWeeks": ["TK-B1-M7"],
+      "prerequisite": "Klasifikasi dan tabel data",
+      "note": "`[asumsi]`"
+    },
+    {
+      "order": 5,
+      "output": "Aturan memakai perangkat digital (`TK-B2-M9`)",
+      "outputWeeks": ["TK-B2-M9"],
+      "prerequisite": "Literasi digital dasar dan keamanan",
+      "note": "`[asumsi]`"
+    }
+  ]
+}

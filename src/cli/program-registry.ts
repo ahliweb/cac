@@ -33,9 +33,12 @@ import {
 } from "../domain/modules";
 import { REGISTRY_FILE_NAME } from "../domain/programs";
 import { auditSmaCorpus, SMA_DATA_FILE_REGISTRY } from "../domain/sma-corpus-audit";
+import { auditTkCorpus, TK_DATA_FILE_REGISTRY } from "../domain/tk-corpus-audit";
 import type { Program } from "../schema/program";
 import { SMA_CODING_PROGRAM_ID } from "../schema/sma-common";
+import { TK_CODING_PROGRAM_ID } from "../schema/tk-common";
 import { smaCodingFidelity } from "./fidelity/sma-coding";
+import { tkCodingFidelity } from "./fidelity/tk-coding";
 import type { FidelityModule } from "./fidelity/types";
 
 /** Cross-programme inputs an audit may need; built once per `osn validate` run. */
@@ -94,6 +97,16 @@ export const PROGRAM_MODULES: readonly ProgramModule[] = [
     moduleFindings: (source, context) =>
       moduleFindings(source, SMA_CODING_PROGRAM_ID, moduleOptions(context)),
     fidelity: smaCodingFidelity,
+  },
+  {
+    id: TK_CODING_PROGRAM_ID,
+    dataFiles: TK_DATA_FILE_REGISTRY,
+    audit: (source) => auditTkCorpus(source),
+    needsOsnTopicFamilyIds: false,
+    // tk-coding has no learning-module index (no modules.json); a stray one is an unregistered file.
+    parseModulesIndex: () => ({ modules: undefined, findings: [] }),
+    moduleFindings: () => [],
+    fidelity: tkCodingFidelity,
   },
 ];
 

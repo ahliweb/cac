@@ -1,0 +1,107 @@
+{
+  "syllabusVersion": "1.0.0",
+  "syllabusDate": "2026-11-19",
+  "sourceSection": "bagian 3.1",
+  "rows": [
+    {
+      "id": "kelompok",
+      "item": "Kelompok",
+      "value": "TK A (usia sekitar 4-5 tahun) dan TK B (usia sekitar 5-6 tahun); contoh dokumen perencanaan resmi memakai \"Kelompok Usia : 4-5 Tahun\"",
+      "status": "Pembagian usia `[asumsi]`; CP tidak per usia."
+    },
+    {
+      "id": "tahun-ajaran",
+      "item": "Tahun ajaran",
+      "value": "Dua semester per kelompok: `A1`, `A2`, `B1`, `B2`",
+      "status": "`[asumsi]`"
+    },
+    {
+      "id": "minggu-per-semester",
+      "item": "Minggu per semester",
+      "value": "12 minggu materi (M1-M10 tema, M11 permainan besar, M12 refleksi); cadangan untuk libur dan hari besar di luar 12 minggu",
+      "status": "`[asumsi]`"
+    },
+    {
+      "id": "sesi-inti",
+      "item": "Sesi inti",
+      "value": "1 sesi per minggu: TK A 20 menit, TK B 30 menit, di kegiatan inti atau bermain `[asumsi]`",
+      "status": "Alokasi resmi `[belum terverifikasi]`."
+    },
+    {
+      "id": "integrasi-harian",
+      "item": "Integrasi harian",
+      "value": "Opsional 5-10 menit pada kegiatan harian (kegiatan awal, cerita, merapikan) memakai konsep minggu itu",
+      "status": "`[asumsi]`"
+    },
+    {
+      "id": "waktu-layar",
+      "item": "Waktu layar program",
+      "value": "Bawaan 0 menit. Opsi (hanya TK B semester 2, minggu `TK-B2-M9` dan `TK-B2-M10`): paling lama 10 menit per minggu, guru memegang perangkat",
+      "status": "`[asumsi]`; bergantung Q1."
+    },
+    {
+      "id": "kelompok-anak",
+      "item": "Kelompok anak",
+      "value": "Seluruh kelas; kerja berpasangan atau kelompok kecil tiga sampai empat anak",
+      "status": "`[asumsi]`"
+    }
+  ],
+  "groups": [
+    {
+      "id": "A",
+      "ageFrom": 4,
+      "ageTo": 5,
+      "sessionMinutes": 20
+    },
+    {
+      "id": "B",
+      "ageFrom": 5,
+      "ageTo": 6,
+      "sessionMinutes": 30
+    }
+  ],
+  "semesters": ["A1", "A2", "B1", "B2"],
+  "weeksPerSemester": {
+    "teaching": 12,
+    "themeWeeksTo": 10,
+    "bigGameWeek": 11,
+    "reflectionWeek": 12
+  },
+  "totalWeeks": 48,
+  "sessionsPerWeek": 1,
+  "dailyIntegrationMinutes": {
+    "min": 5,
+    "max": 10
+  },
+  "screen": {
+    "defaultMinutes": 0,
+    "optionalWeeks": ["TK-B2-M9", "TK-B2-M10"],
+    "maxOptionalMinutes": 10
+  },
+  "sessionPattern": [
+    {
+      "order": 1,
+      "name": "Pembuka",
+      "minutesText": "3-5 menit",
+      "description": "lagu atau cerita pendek yang memuat konsep minggu itu."
+    },
+    {
+      "order": 2,
+      "name": "Permainan inti",
+      "minutesText": "10-18 menit",
+      "description": "satu permainan tubuh atau meja yang dicontohkan guru dahulu."
+    },
+    {
+      "order": 3,
+      "name": "Mencoba dan memperbaiki",
+      "minutesText": "3-5 menit",
+      "description": "anak mencoba lagi atau saling membantu; kesalahan diperlakukan sebagai bagian bermain."
+    },
+    {
+      "order": 4,
+      "name": "Penutup",
+      "minutesText": "2-3 menit",
+      "description": "anak bercerita apa yang ia lakukan; guru mengajukan satu pertanyaan terbuka."
+    }
+  ]
+}
