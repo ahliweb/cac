@@ -75,6 +75,7 @@ itself.
 | #50 — Per-programme data, programme registry and the `--program` flag | FR-27 |
 | #52 — Encode the `sma-coding` programme corpus | FR-28, FR-29, FR-30, TR-12 |
 | #77 — `osn plan` and `osn render lembar-siswa` for the `sma-coding` programme | FR-30, FR-33 |
+| #68, #84, #88 — `sma-coding` tracks C (IoT/robotics), D (AI) and E (quantum) in syllabus v1.2 | FR-28, FR-33, TR-12 |
 | #54 — Module schema, renderer and the pilot module | FR-31, TR-13, GR-13 |
 | #76 — Register the `sma-coding` requirements | TR-09 |
 | #106 — Module-index schema for the `sma-coding` programme | FR-32 |

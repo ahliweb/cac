@@ -1,5 +1,5 @@
 {
-  "syllabusVersion": "1.1.0",
+  "syllabusVersion": "1.2.0",
   "syllabusDate": "2026-11-19",
   "sourceSection": "bagian 3",
   "tracks": [
@@ -7,6 +7,8 @@
       "id": "A",
       "name": "Algoritmik dengan C++",
       "tools": ["C++"],
+      "startClass": "X",
+      "cpStatus": "dalam-cp",
       "approvalStatus": "disetujui",
       "approvedOn": "2026-11-19"
     },
@@ -14,6 +16,35 @@
       "id": "B",
       "name": "Web dengan JavaScript, TypeScript, dan Bun",
       "tools": ["JavaScript", "TypeScript", "Bun"],
+      "startClass": "X",
+      "cpStatus": "dalam-cp",
+      "approvalStatus": "disetujui",
+      "approvedOn": "2026-11-19"
+    },
+    {
+      "id": "C",
+      "name": "IoT dan Robotika",
+      "tools": ["C++ (gaya Arduino)", "ESP32"],
+      "startClass": "X",
+      "cpStatus": "dalam-cp",
+      "approvalStatus": "disetujui",
+      "approvedOn": "2026-11-19"
+    },
+    {
+      "id": "D",
+      "name": "Kecerdasan Buatan dan Analisis Data",
+      "tools": ["Orange Data Mining", "Python"],
+      "startClass": "X",
+      "cpStatus": "pengayaan",
+      "approvalStatus": "disetujui",
+      "approvedOn": "2026-11-19"
+    },
+    {
+      "id": "E",
+      "name": "Komputasi Kuantum dan Cloud Quantum",
+      "tools": ["Quirk", "simulator buatan sendiri"],
+      "startClass": "XI",
+      "cpStatus": "pengayaan",
       "approvalStatus": "disetujui",
       "approvedOn": "2026-11-19"
     }

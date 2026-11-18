@@ -17,7 +17,7 @@ const SOURCE = { name: "Silabus Uji", version: "1.1.0", date: "2026-11-19" };
 const TRACK_WEEK: SmaWeekView = {
   code: "A-X1-M9",
   block: "jalur",
-  track: { id: "A", name: "Algoritmik dengan C++" },
+  track: { id: "A", name: "Algoritmik dengan C++", cpStatus: "dalam-cp" },
   kelas: "X",
   semester: "X1",
   phase: "E",
@@ -30,6 +30,7 @@ const TRACK_WEEK: SmaWeekView = {
     { code: "E-BK-d", label: "pseudocode", partial: false },
     { code: "E-BK-e", label: "model I-P-O", partial: true },
   ],
+  enrichmentLinks: [],
   osnBridges: [
     { familyId: "dasar-pemrograman", topics: "sintaks", note: "Sesuai CP.", hasEnrichment: false },
   ],
@@ -92,6 +93,26 @@ describe("renderSmaStudentSheet", () => {
 
   test("is deterministic", () => {
     expect(renderSmaStudentSheet(TRACK_WEEK, QUOTES, SOURCE)).toBe(sheet);
+  });
+
+  test("a week of a pengayaan track says so and shows irisan instead of CP items and quotations", () => {
+    const pengayaan: SmaWeekView = {
+      ...TRACK_WEEK,
+      code: "D-XI1-M5",
+      track: { id: "D", name: "Jalur Pengayaan", cpStatus: "pengayaan" },
+      cpItems: [],
+      enrichmentLinks: [{ code: "F-AD-a", label: "data terbuka", level: "Sedang." }],
+      osnBridges: [],
+      modules: [],
+    };
+    const text = renderSmaStudentSheet(pengayaan, QUOTES, SOURCE);
+    expect(text).toContain(
+      "Jalur D adalah pengayaan di luar rumusan CP; minggu jalur ini tidak dihitung sebagai pemenuhan butir CP mana pun.",
+    );
+    expect(text).toContain("## Irisan dengan CP (pengayaan, tidak dihitung pemenuhan CP)");
+    expect(text).toContain("- F-AD-a: data terbuka. Tingkat irisan: Sedang.");
+    expect(text).not.toContain("**Kutipan CP");
+    expect(text).not.toContain("Tidak ada butir CP yang dipetakan");
   });
 
   test("a foundation week without CP items, bridge or modules omits those sections", () => {

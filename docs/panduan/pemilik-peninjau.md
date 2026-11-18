@@ -113,9 +113,11 @@ bukti; AI tidak menyetujui PR-nya sendiri maupun rilis produksi.
 
 Draf silabus program (mis. `docs/programs/sma-coding/`) adalah konten
 karangan. Ia menjadi sumber corpus `data/<program>/` hanya setelah Anda
-menyetujuinya (ADR-0006): silabus `sma-coding` v1.0 disetujui 2026-11-18 dan
-revisinya v1.1 (blok fondasi kelas X) disetujui 2026-11-19, keduanya untuk
-jalur A dan B, dan baru sesudahnya dikodekan ke `data/sma-coding/`.
+menyetujuinya (ADR-0006): silabus `sma-coding` v1.0 disetujui 2026-11-18,
+revisinya v1.1 (blok fondasi kelas X) disetujui 2026-11-19 untuk jalur A dan B,
+dan v1.2 (jalur C, D, dan E, dari draf yang Anda setujui beserta semua
+rekomendasinya) disetujui 2026-11-19; baru sesudahnya dikodekan ke
+`data/sma-coding/`.
 Perubahan atas silabus yang sudah disetujui: usulan lewat issue, revisi
 berstatus draf, lalu persetujuan Anda yang dicatat dengan tanggal. Contoh
 yang sudah selesai: blok fondasi kelas X, usulannya
@@ -171,24 +173,14 @@ pekerjaan:
 gh issue list -R ahliweb/osn --state open
 ```
 
-```text
-105	OPEN	Celah butir CP F-LD-d dan F-LD-e untuk jalur A	type:docs, priority:P2, epic:sma-coding	2026-11-18T18:54:32Z
-88	OPEN	Draf jalur E (komputasi kuantum dan cloud quantum) untuk silabus coding SMA	type:docs, priority:P2, epic:sma-coding	2026-11-18T11:07:30Z
-84	OPEN	Draf jalur D (AI) untuk silabus coding SMA	type:docs, priority:P2, epic:sma-coding	2026-11-18T10:59:32Z
-68	OPEN	Draf jalur C (IoT/robotika) untuk silabus coding SMA	type:docs, priority:P2, epic:sma-coding	2026-11-18T08:28:12Z
-```
+Per 2026-11-19, setelah silabus v1.2 (jalur C, D, E; #68, #84, #88) dan modul
+pendamping untuk F-LD-d dan F-LD-e (#105) selesai, perintah di atas tidak
+mengembalikan issue apa pun: semua keputusan yang tercatat sebagai issue
+sudah Anda ambil. Jalankan perintahnya untuk keadaan terkini; keputusan baru
+akan muncul sebagai issue baru.
 
-Daftar di atas adalah keadaan pada 2026-11-19; jalankan perintahnya untuk
-keadaan terkini. Cara membacanya:
-
-| Issue | Keadaan | Yang menunggu |
-| --- | --- | --- |
-| #68, #84, #88 | Draf jalur C (IoT/robotika), D (AI), E (kuantum) sudah ada di `docs/programs/sma-coding/` berstatus DRAF | Keputusan Anda atas pertanyaan terbuka di masing-masing draf; belum ada persetujuan |
-| #105 | Celah butir CP F-LD-d dan F-LD-e untuk jalur A | Penilaian dan keputusan opsi |
-
-Silabus v1.1 (#92) sudah Anda setujui 2026-11-19 dan issue-nya tertutup;
-kandidat tinjauan Anda yang lain: draf jalur C, D, dan E di
-`docs/programs/sma-coding/`, dan 29 modul draf `sma-coding` di
+Silabus v1.1 (#92) dan v1.2 (#68, #84, #88) sudah Anda setujui 2026-11-19;
+kandidat tinjauan Anda: 29 modul draf `sma-coding` di
 `content/sma-coding/modules/` (fondasi, matematika komputasi, cloud,
 pendamping; baca dengan `osn render modul --program sma-coding --id <id>`,
 daftar id di `data/sma-coding/modules.json`).

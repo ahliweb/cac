@@ -57,6 +57,26 @@ function fixture(): SmaCorpus {
           id: "A",
           name: "Jalur Uji",
           tools: ["C++"],
+          startClass: "X",
+          cpStatus: "dalam-cp",
+          approvalStatus: "disetujui",
+          approvedOn: "2026-11-19",
+        },
+        {
+          id: "D",
+          name: "Jalur Pengayaan",
+          tools: ["Python"],
+          startClass: "X",
+          cpStatus: "pengayaan",
+          approvalStatus: "disetujui",
+          approvedOn: "2026-11-19",
+        },
+        {
+          id: "E",
+          name: "Jalur Kelas XI",
+          tools: ["Quirk"],
+          startClass: "XI",
+          cpStatus: "pengayaan",
           approvalStatus: "disetujui",
           approvedOn: "2026-11-19",
         },
@@ -69,6 +89,8 @@ function fixture(): SmaCorpus {
         week("A-X1-M9", "Sembilan"),
         week("A-X1-M8", "Delapan"),
         week("A-X2-M1", "Semester dua"),
+        week("D-X1-M8", "Pengayaan delapan"),
+        week("E-XI1-M1", "Kuantum satu"),
       ].map((w) => ({ ...w, phase: "E" as const, kelas: w.kelas as "X" })) as never,
     },
     foundation: {
@@ -100,7 +122,7 @@ function fixture(): SmaCorpus {
           weeks: ["A-X1-M9"],
           tracksText: "A (parsial)",
           tracks: ["A"],
-          partial: true,
+          partialTracks: ["A"],
           sourceSection: "bagian 4.1",
         },
         {
@@ -110,8 +132,18 @@ function fixture(): SmaCorpus {
           weeks: ["A-X1-M9"],
           tracksText: "A",
           tracks: ["A"],
-          partial: false,
+          partialTracks: [],
           sourceSection: "bagian 4.1",
+        },
+      ],
+      enrichmentLinks: [
+        {
+          track: "D",
+          cpCode: "E-BK-a",
+          topic: "irisan",
+          weeksText: "D-X1-M8",
+          weeks: ["D-X1-M8"],
+          level: "Rendah: tafsir penyusun.",
         },
       ],
     },
@@ -144,6 +176,21 @@ function fixture(): SmaCorpus {
           weeks: ["A-X1-M9"],
           note: "catatan",
           hasEnrichment: false,
+        },
+      ],
+      trackBridges: [
+        {
+          track: "D",
+          bridges: [
+            {
+              familyId: "struktur-data",
+              topics: "topik jembatan D",
+              weeksText: "D-X1-M8",
+              weeks: ["D-X1-M8"],
+              note: "catatan D",
+              hasEnrichment: false,
+            },
+          ],
         },
       ],
     },
@@ -212,7 +259,7 @@ describe("buildSmaTrackPlan", () => {
 
   test("an unknown track or semester throws SmaRequestError naming the valid values", () => {
     expect(() => buildSmaTrackPlan(fixture(), "Z")).toThrow(SmaRequestError);
-    expect(() => buildSmaTrackPlan(fixture(), "Z")).toThrow("Valid tracks: A");
+    expect(() => buildSmaTrackPlan(fixture(), "Z")).toThrow("Valid tracks: A, D, E");
     expect(() => buildSmaTrackPlan(fixture(), "A", ["Q1"])).toThrow(SMA_SEMESTER_CODES.join(", "));
   });
 });
@@ -220,7 +267,11 @@ describe("buildSmaTrackPlan", () => {
 describe("findSmaWeek, exampleSmaWeekCodes, cpQuotesFor, splitClauses", () => {
   test("findSmaWeek resolves a track week, a foundation week, and returns undefined otherwise", () => {
     const corpus = fixture();
-    expect(findSmaWeek(corpus, "A-X1-M9")?.track).toEqual({ id: "A", name: "Jalur Uji" });
+    expect(findSmaWeek(corpus, "A-X1-M9")?.track).toEqual({
+      id: "A",
+      name: "Jalur Uji",
+      cpStatus: "dalam-cp",
+    });
     expect(findSmaWeek(corpus, "FND-X1-M1")?.block).toBe("fondasi");
     expect(findSmaWeek(corpus, "A-X1-M1")).toBeUndefined();
   });
@@ -228,9 +279,11 @@ describe("findSmaWeek, exampleSmaWeekCodes, cpQuotesFor, splitClauses", () => {
   test("exampleSmaWeekCodes gives the first and last code of each track and of the foundation", () => {
     expect(exampleSmaWeekCodes(fixture())).toEqual([
       "jalur A: A-X1-M8 .. A-X2-M1",
+      "jalur D: D-X1-M8 .. D-X1-M8",
+      "jalur E: E-XI1-M1 .. E-XI1-M1",
       "blok fondasi FND: FND-X1-M1 .. FND-X1-M1",
     ]);
-    expect(smaTrackIds(fixture())).toEqual(["A"]);
+    expect(smaTrackIds(fixture())).toEqual(["A", "D", "E"]);
   });
 
   test("cpQuotesFor returns each element's quotation once, in order", () => {
@@ -269,7 +322,7 @@ describe("loadSmaCorpus", () => {
     const loaded = await loadSmaCorpus(SMA_DIR);
     expect(loaded.ok).toBe(true);
     if (loaded.ok) {
-      expect(loaded.corpus.weeks.weeks.length).toBe(154);
+      expect(loaded.corpus.weeks.weeks.length).toBe(364);
       expect(loaded.corpus.foundation.weeks.length).toBe(7);
     }
   });
@@ -325,5 +378,81 @@ describe("loadSmaCorpus", () => {
     await writeFile(join(dir, "modules.json"), JSON.stringify({ modules: [{ id: "x" }] }));
     const loaded = await loadSmaCorpus(dir);
     expect(loaded.ok).toBe(false);
+  });
+});
+
+describe("pengayaan and late-start tracks (silabus v1.2)", () => {
+  test("a week of a pengayaan track carries enrichment links, not CP items", () => {
+    const plan = buildSmaTrackPlan(fixture(), "D", ["X1"]);
+    expect(plan.track.cpStatus).toBe("pengayaan");
+    const d8 = plan.semesters[0]?.weeks[0];
+    expect(d8?.code).toBe("D-X1-M8");
+    expect(d8?.track?.cpStatus).toBe("pengayaan");
+    expect(d8?.cpItems).toEqual([]);
+    expect(d8?.enrichmentLinks).toEqual([
+      { code: "E-BK-a", label: "label a", level: "Rendah: tafsir penyusun." },
+    ]);
+  });
+
+  test("weeks of a counted track have no enrichment links", () => {
+    expect(findSmaWeek(fixture(), "A-X1-M9")?.enrichmentLinks).toEqual([]);
+  });
+
+  test("the OSN bridges of another track reach its own weeks only", () => {
+    const corpus = fixture();
+    expect(findSmaWeek(corpus, "D-X1-M8")?.osnBridges.map((b) => b.topics)).toEqual([
+      "topik jembatan D",
+    ]);
+    expect(findSmaWeek(corpus, "A-X1-M9")?.osnBridges.map((b) => b.topics)).toEqual([
+      "topik jembatan",
+    ]);
+  });
+
+  test("a track that starts in kelas XI lists no kelas X semester and takes no foundation block", () => {
+    const plan = buildSmaTrackPlan(fixture(), "E");
+    expect(plan.track.startClass).toBe("XI");
+    expect(plan.semesters.map((s) => s.semester)).toEqual(["XI1"]);
+    expect(plan.semesters[0]?.foundation).toEqual([]);
+  });
+
+  test("asking a kelas XI track for a kelas X semester is a request error", () => {
+    expect(() => buildSmaTrackPlan(fixture(), "E", ["X1"])).toThrow(SmaRequestError);
+    expect(() => buildSmaTrackPlan(fixture(), "E", ["X1"])).toThrow(
+      "jalur E tidak memiliki semester X1: jalur ini dimulai di kelas XI",
+    );
+  });
+
+  test("(parsial) is per track: a week is partial only when its own track is", () => {
+    const corpus = fixture();
+    const mapping = corpus.cpMapping.mappings[1];
+    if (mapping === undefined) {
+      throw new Error("fixture changed");
+    }
+    const shared = {
+      ...mapping,
+      cpCode: "E-BK-b",
+      weeksText: "A-X1-M8; D-X1-M8; FND-X1-M1",
+      weeks: ["A-X1-M8", "D-X1-M8", "FND-X1-M1"],
+      tracksText: "A, D (parsial)",
+      tracks: ["A", "D"],
+      partialTracks: ["D"],
+    };
+    const patched: SmaCorpus = {
+      ...corpus,
+      cpMapping: { ...corpus.cpMapping, mappings: [shared] },
+    };
+    const partialOf = (code: string) => findSmaWeek(patched, code)?.cpItems[0]?.partial;
+    expect(partialOf("A-X1-M8")).toBe(false);
+    expect(partialOf("D-X1-M8")).toBe(true);
+    // a foundation week is partial only when every listed track is partial
+    expect(partialOf("FND-X1-M1")).toBe(false);
+    const allPartial: SmaCorpus = {
+      ...patched,
+      cpMapping: {
+        ...patched.cpMapping,
+        mappings: [{ ...shared, partialTracks: ["A", "D"] }],
+      },
+    };
+    expect(findSmaWeek(allPartial, "FND-X1-M1")?.cpItems[0]?.partial).toBe(true);
   });
 });

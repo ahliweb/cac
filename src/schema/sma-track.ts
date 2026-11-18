@@ -1,11 +1,17 @@
 /**
  * Schema for `data/sma-coding/tracks.json`: the approved learning tracks
- * (jalur A and B of the approved syllabus; jalur C is not approved yet, #68).
+ * (jalur A to E of syllabus v1.2). `startClass` and `cpStatus` are read from
+ * the summary table of silabus bagian 3.6.
  */
 
 import { z } from "zod";
 import { nonEmptyString } from "./common";
-import { smaProvenanceShape, smaTrackIdSchema } from "./sma-common";
+import {
+  smaProvenanceShape,
+  smaTrackCpStatusSchema,
+  smaTrackIdSchema,
+  smaTrackStartClassSchema,
+} from "./sma-common";
 
 export const smaTrackSchema = z
   .object({
@@ -17,6 +23,10 @@ export const smaTrackSchema = z
       .array(nonEmptyString)
       .min(1)
       .describe("The language(s)/tool(s) named in the track title."),
+    startClass: smaTrackStartClassSchema.describe(
+      'The class the track starts in: "X" (six semesters, X1 from week 8 after the foundation block) or "XI" (four semesters).',
+    ),
+    cpStatus: smaTrackCpStatusSchema,
     approvalStatus: z.literal("disetujui").describe("Only approved tracks are encoded."),
     approvedOn: z
       .string()

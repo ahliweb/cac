@@ -13,7 +13,12 @@
  */
 
 import type { ModuleStatus } from "../schema/module";
-import { SMA_CLASSES, SMA_FOUNDATION_BLOCK_ID } from "../schema/sma-common";
+import {
+  SMA_CLASSES,
+  SMA_FOUNDATION_BLOCK_ID,
+  type SmaTrackCpStatus,
+  type SmaTrackStartClass,
+} from "../schema/sma-common";
 import type { CpElementsFile } from "../schema/sma-cp";
 import type { CpMappingFile } from "../schema/sma-cp-mapping";
 import type { SmaFoundationFile } from "../schema/sma-foundation";
@@ -50,8 +55,23 @@ export const SMA_SEMESTER_CODES: readonly string[] = SMA_CLASSES.flatMap((kelas)
 export interface SmaCpItemView {
   readonly code: string;
   readonly label: string;
-  /** `true` when `cp-mapping.json` marks the coverage "(parsial)". */
+  /**
+   * `true` when `cp-mapping.json` marks the coverage "(parsial)" for the
+   * week's track (for a foundation week: for every track the row lists).
+   */
   readonly partial: boolean;
+}
+
+/**
+ * A resemblance between a week of a pengayaan track (jalur D, E) and a CP
+ * item (`enrichmentLinks` in `cp-mapping.json`). It is shown to the reader
+ * but is never CP coverage.
+ */
+export interface SmaEnrichmentLinkView {
+  readonly code: string;
+  readonly label: string;
+  /** The "Tingkat irisan" cell, verbatim. */
+  readonly level: string;
 }
 
 export interface SmaBridgeView {
@@ -73,7 +93,11 @@ export interface SmaWeekView {
   /** `"fondasi"` for `FND-*` weeks, otherwise `"jalur"`. */
   readonly block: "jalur" | "fondasi";
   /** The track the week belongs to; `null` for a foundation week. */
-  readonly track: { readonly id: string; readonly name: string } | null;
+  readonly track: {
+    readonly id: string;
+    readonly name: string;
+    readonly cpStatus: SmaTrackCpStatus;
+  } | null;
   readonly kelas: string;
   readonly semester: string;
   readonly phase: string;
@@ -83,6 +107,8 @@ export interface SmaWeekView {
   readonly output: string;
   readonly exercise: string;
   readonly cpItems: readonly SmaCpItemView[];
+  /** Irisan with CP items for a week of a pengayaan track; empty otherwise. Not CP coverage. */
+  readonly enrichmentLinks: readonly SmaEnrichmentLinkView[];
   readonly osnBridges: readonly SmaBridgeView[];
   readonly modules: readonly SmaModuleView[];
 }
@@ -105,7 +131,13 @@ export interface SmaSemesterPlan {
 }
 
 export interface SmaTrackPlan {
-  readonly track: { readonly id: string; readonly name: string; readonly tools: readonly string[] };
+  readonly track: {
+    readonly id: string;
+    readonly name: string;
+    readonly tools: readonly string[];
+    readonly startClass: SmaTrackStartClass;
+    readonly cpStatus: SmaTrackCpStatus;
+  };
   readonly semesters: readonly SmaSemesterPlan[];
 }
 
@@ -122,7 +154,7 @@ function viewOf(
     output: string;
     exercise: string;
   },
-  track: { id: string; name: string } | null,
+  track: { id: string; name: string; cpStatus: SmaTrackCpStatus } | null,
 ): SmaWeekView {
   const itemLabels = new Map(corpus.cpElements.items.map((item) => [item.code, item.label]));
   const cpItems: SmaCpItemView[] = corpus.cpMapping.mappings
@@ -130,9 +162,22 @@ function viewOf(
     .map((mapping) => ({
       code: mapping.cpCode,
       label: itemLabels.get(mapping.cpCode) ?? "",
-      partial: mapping.partial,
+      partial:
+        track === null
+          ? mapping.tracks.every((id) => mapping.partialTracks.includes(id))
+          : mapping.partialTracks.includes(track.id),
     }));
-  const osnBridges: SmaBridgeView[] = corpus.osnBridge.bridges
+  const enrichmentLinks: SmaEnrichmentLinkView[] = corpus.cpMapping.enrichmentLinks
+    .filter((link) => link.weeks.includes(week.id))
+    .map((link) => ({
+      code: link.cpCode,
+      label: itemLabels.get(link.cpCode) ?? "",
+      level: link.level,
+    }));
+  const osnBridges: SmaBridgeView[] = [
+    ...corpus.osnBridge.bridges,
+    ...corpus.osnBridge.trackBridges.flatMap((entry) => entry.bridges),
+  ]
     .filter((bridge) => bridge.weeks.includes(week.id))
     .map((bridge) => ({
       familyId: bridge.familyId,
@@ -156,6 +201,7 @@ function viewOf(
     output: week.output,
     exercise: week.exercise,
     cpItems,
+    enrichmentLinks,
     osnBridges,
     modules,
   };
@@ -193,7 +239,7 @@ export function buildSmaTrackPlan(
   const wanted = SMA_SEMESTER_CODES.filter(
     (code) => semesters.length === 0 || semesters.includes(code),
   );
-  const trackRef = { id: track.id, name: track.name };
+  const trackRef = { id: track.id, name: track.name, cpStatus: track.cpStatus };
   const plans: SmaSemesterPlan[] = [];
   for (const semester of wanted) {
     const trackWeeks = corpus.weeks.weeks
@@ -202,8 +248,17 @@ export function buildSmaTrackPlan(
     const foundationWeeks = corpus.foundation.weeks
       .filter((week) => week.semester === semester)
       .sort((a, b) => a.week - b.week);
-    const first = trackWeeks[0] ?? foundationWeeks[0];
+    const first = trackWeeks[0];
     if (first === undefined) {
+      // A track that starts in kelas XI (jalur E) has no weeks, and takes no foundation block, in kelas X.
+      const beforeStart =
+        SMA_CLASSES.indexOf(semester.slice(0, -1) as (typeof SMA_CLASSES)[number]) <
+        SMA_CLASSES.indexOf(track.startClass);
+      if (beforeStart && semesters.length > 0) {
+        throw new SmaRequestError(
+          `jalur ${track.id} tidak memiliki semester ${semester}: jalur ini dimulai di kelas ${track.startClass}.`,
+        );
+      }
       continue;
     }
     plans.push({
@@ -215,7 +270,13 @@ export function buildSmaTrackPlan(
     });
   }
   return {
-    track: { id: track.id, name: track.name, tools: track.tools },
+    track: {
+      id: track.id,
+      name: track.name,
+      tools: track.tools,
+      startClass: track.startClass,
+      cpStatus: track.cpStatus,
+    },
     semesters: plans,
   };
 }
@@ -225,7 +286,11 @@ export function findSmaWeek(corpus: SmaCorpus, code: string): SmaWeekView | unde
   const trackWeek = corpus.weeks.weeks.find((week) => week.id === code);
   if (trackWeek !== undefined) {
     const track = corpus.tracks.tracks.find((candidate) => candidate.id === trackWeek.track);
-    return viewOf(corpus, trackWeek, { id: trackWeek.track, name: track?.name ?? trackWeek.track });
+    return viewOf(corpus, trackWeek, {
+      id: trackWeek.track,
+      name: track?.name ?? trackWeek.track,
+      cpStatus: track?.cpStatus ?? "dalam-cp",
+    });
   }
   const foundationWeek = corpus.foundation.weeks.find((week) => week.id === code);
   return foundationWeek === undefined ? undefined : viewOf(corpus, foundationWeek, null);

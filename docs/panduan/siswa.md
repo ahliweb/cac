@@ -62,7 +62,12 @@ Kalau kamu sendiri punya terminal dan repositori ini, perintahnya
 Kalau kamu belajar lewat silabus coding SMA (`sma-coding`), lembarmu dibuat
 per minggu dengan kode minggu, misalnya `A-X1-M9` (jalur A, kelas X, semester
 1, minggu 9) atau `FND-X1-M3` (blok fondasi bersama kelas X, sebelum memilih
-jalur). Gurumu menjalankan
+jalur). Jalur yang tersedia: A (C++), B (web), C (IoT dan robotika), D
+(kecerdasan buatan dan analisis data), dan E (komputasi kuantum; hanya kelas XI
+dan XII, kodenya `E-XI1-M3` dan seterusnya). Jalur D dan E adalah pengayaan di
+luar Capaian Pembelajaran (CP): lembarnya tidak memuat butir CP yang
+"dipenuhi", hanya bagian **Irisan dengan CP** sebagai keterangan. Gurumu
+menjalankan
 `osn render lembar-siswa --program sma-coding --week <kode-minggu>`. Isinya:
 topik, **Tujuan**, **Keluaran**, **Latihan dan kegiatan**, **Butir CP terkait**
 (beserta kutipan Capaian Pembelajaran-nya), **Jembatan ke OSN** (kalau ada),
@@ -100,7 +105,7 @@ Tidak ada butir CP yang dipetakan ke minggu ini dalam pemetaan silabus.
 - [ ] Keluaran selesai: tabel konversi; lembar kode karakter; gambar 8x8 dalam bentuk deret bit
 
 ---
-Sumber: Silabus Pembelajaran Coding SMA, versi 1.1.0, tanggal 2026-11-19.
+Sumber: Silabus Pembelajaran Coding SMA, versi 1.2.0, tanggal 2026-11-19.
 ```
 
 ## Modul materi

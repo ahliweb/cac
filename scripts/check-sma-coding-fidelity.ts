@@ -2,7 +2,8 @@
  * Fidelity check for the `sma-coding` corpus: parses the Markdown tables
  * and quotations of the owner-approved syllabus
  * (`docs/programs/sma-coding/silabus.md`, bagian 1.3, 1.4, 2, 3 (incl. the
- * shared foundation block 3.0), 4 and 5)
+ * shared foundation block 3.0 and the track summary 3.6), 4 (incl. the
+ * enrichment links 4.5) and 5 (per track))
  * and compares the result cell by cell with `data/sma-coding/*.json`, so any
  * drift between the approved document and the data fails hard.
  *
@@ -153,6 +154,11 @@ const ELEMENT_ID_BY_NAME = new Map(
   ]),
 );
 
+const CP_STATUS_BY_TEXT: Record<string, string> = {
+  "dalam CP": "dalam-cp",
+  "pengayaan di luar CP": "pengayaan",
+};
+
 const STRUCTURE_ROW_IDS: Record<string, string> = {
   "Kelas dan fase": "kelas-fase",
   Semester: "semester",
@@ -283,11 +289,33 @@ export function expectedCorpus(markdown: string): Record<SmaDataFileName, Json> 
   const foundationWeeks: Json[] = [];
   let inFoundation: { semester: string; kelas: string; phase: string } | undefined;
   const status = match(
-    /^- \*\*Status:\*\* DISETUJUI pemilik program, (\d{4}-\d{2}-\d{2}) — jalur ([A-Z]) dan ([A-Z])\b/m,
+    /^- \*\*Status:\*\* DISETUJUI pemilik program, (\d{4}-\d{2}-\d{2}) — jalur ([A-Z](?:, [A-Z])*,? dan [A-Z])\b/m,
     markdown,
     "Status line",
   );
-  const approvedTracks = new Set([group(status, 2), group(status, 3)]);
+  const approvedTracks = new Set(group(status, 2).match(/[A-Z]/g) ?? []);
+  // bagian 3.6 -- the track summary table (name, tools, first class, relation to the CP)
+  const summaryByTrack = new Map<
+    string,
+    { name: string; tools: string[]; startClass: string; cpStatus: string }
+  >();
+  for (const row of firstTableRows(sectionLines(markdown, "### 3.6 "))) {
+    expectCells(row, 5, "bagian 3.6 row");
+    const id = cell(row, 0, "bagian 3.6 track");
+    const relation = cell(row, 4, `bagian 3.6 ${id}`);
+    const cpStatus = CP_STATUS_BY_TEXT[relation];
+    if (cpStatus === undefined) {
+      throw new Error(
+        `check-sma-coding-fidelity: bagian 3.6 ${id}: unknown relation ${JSON.stringify(relation)}.`,
+      );
+    }
+    summaryByTrack.set(id, {
+      name: cell(row, 1, `bagian 3.6 ${id}`),
+      tools: cell(row, 2, `bagian 3.6 ${id}`).split(", "),
+      startClass: cell(row, 3, `bagian 3.6 ${id}`),
+      cpStatus,
+    });
+  }
   let current: { track: string; semester: string; kelas: string; phase: string } | undefined;
   for (const line of sectionLines(markdown, "## 3. ")) {
     const trackHeading = /^### 3\.\d Jalur ([A-Z]): (.+)$/.exec(line);
@@ -297,11 +325,18 @@ export function expectedCorpus(markdown: string): Record<SmaDataFileName, Json> 
       if (!approvedTracks.has(id)) {
         throw new Error(`check-sma-coding-fidelity: track ${id} is in bagian 3 but not approved.`);
       }
-      const toolText = name.includes(" dengan ") ? name.slice(name.indexOf(" dengan ") + 8) : name;
+      const summary = summaryByTrack.get(id);
+      if (summary === undefined || summary.name !== name) {
+        throw new Error(
+          `check-sma-coding-fidelity: track ${id} heading ${JSON.stringify(name)} does not match the bagian 3.6 summary (${JSON.stringify(summary?.name)}).`,
+        );
+      }
       tracks.push({
         id,
         name,
-        tools: toolText.split(/,\s*(?:dan\s+)?|\s+dan\s+/).map((tool) => tool.trim()),
+        tools: summary.tools,
+        startClass: summary.startClass,
+        cpStatus: summary.cpStatus,
         approvalStatus: "disetujui",
         approvedOn: group(status, 1),
       });
@@ -399,44 +434,83 @@ export function expectedCorpus(markdown: string): Record<SmaDataFileName, Json> 
       const cpCode = cell(row, 0, sourceSection);
       const weeksText = cell(row, 2, cpCode);
       const tracksText = cell(row, 3, cpCode);
-      const tracksMatch = match(
-        /^([A-Z](?:, [A-Z])*)( \(parsial\))?$/,
-        tracksText,
-        `${cpCode} jalur`,
-      );
+      match(/^[A-Z](?: \(parsial\))?(?:, [A-Z](?: \(parsial\))?)*$/, tracksText, `${cpCode} jalur`);
+      // "(parsial)" qualifies the track just before it ("B (parsial), C" = B partial, C full).
+      const trackTokens = tracksText.split(", ").map((token) => ({
+        id: token.slice(0, 1),
+        partial: token.endsWith("(parsial)"),
+      }));
       mappings.push({
         cpCode,
         topic: cell(row, 1, cpCode),
         weeksText,
         weeks: expandWeekCodes(weeksText),
         tracksText,
-        tracks: group(tracksMatch, 1).split(", "),
-        partial: tracksMatch[2] !== undefined,
+        tracks: trackTokens.map((token) => token.id),
+        partialTracks: trackTokens.filter((token) => token.partial).map((token) => token.id),
         sourceSection,
       });
     }
   }
 
-  // bagian 5 -- OSN bridge
-  const bridgeTrack = group(
-    match(/^## 5\. .*\(jalur ([A-Z])\)$/m, markdown, "bagian 5 heading"),
-    1,
-  );
-  const bridges: Json[] = firstTableRows(sectionLines(markdown, "## 5. ")).map((row) => {
-    expectCells(row, 4, "bagian 5 row");
-    const familyCell = cell(row, 0, "bagian 5 family");
-    const familyId = group(match(/^`(.+)`$/, familyCell, "bagian 5 family id"), 1);
-    const weeksText = cell(row, 2, familyId);
-    const note = cell(row, 3, familyId);
+  // bagian 4.5 -- enrichment links of the pengayaan tracks (not CP coverage)
+  const enrichmentLinks: Json[] = firstTableRows(sectionLines(markdown, "### 4.5 ")).map((row) => {
+    expectCells(row, 5, "bagian 4.5 row");
+    const track = cell(row, 0, "bagian 4.5 jalur");
+    const cpCode = cell(row, 1, `bagian 4.5 ${track}`);
+    const weeksText = cell(row, 3, `${track}/${cpCode}`);
     return {
-      familyId,
-      topics: cell(row, 1, familyId),
+      track,
+      cpCode,
+      topic: cell(row, 2, `${track}/${cpCode}`),
       weeksText,
       weeks: expandWeekCodes(weeksText),
-      note,
-      hasEnrichment: note.includes("**P**"),
+      level: cell(row, 4, `${track}/${cpCode}`),
     };
   });
+
+  // bagian 5 -- OSN bridges: 5.1 is the main track (jalur A), later "### 5.n Jalur X" tables are trackBridges
+  const bridgeTables: Array<{ track: string; bridges: Json[] }> = [];
+  const bridgeLines = sectionLines(markdown, "## 5. ");
+  for (let index = 0; index < bridgeLines.length; index += 1) {
+    const heading = /^### 5\.\d Jalur ([A-Z])$/.exec(bridgeLines[index] ?? "");
+    if (heading === null) {
+      continue;
+    }
+    const track = group(heading, 1);
+    let end = index + 1;
+    while (end < bridgeLines.length && !/^### /.test(bridgeLines[end] ?? "")) {
+      end += 1;
+    }
+    const rows = firstTableRows(bridgeLines.slice(index + 1, end)).map((row) => {
+      expectCells(row, 4, `bagian 5 ${track} row`);
+      const familyCell = cell(row, 0, `bagian 5 ${track} family`);
+      const familyId = group(match(/^`(.+)`$/, familyCell, "bagian 5 family id"), 1);
+      const weeksText = cell(row, 2, familyId);
+      const note = cell(row, 3, familyId);
+      return {
+        familyId,
+        topics: cell(row, 1, familyId),
+        weeksText,
+        weeks: expandWeekCodes(weeksText),
+        note,
+        hasEnrichment: note.includes("**P**"),
+      };
+    });
+    bridgeTables.push({ track, bridges: rows });
+  }
+  const mainBridge = bridgeTables[0];
+  if (mainBridge === undefined) {
+    throw new Error(
+      "check-sma-coding-fidelity: bagian 5 has no per-track table (### 5.1 Jalur A).",
+    );
+  }
+  const bridgeTrack = mainBridge.track;
+  const bridges = mainBridge.bridges;
+  const trackBridges: Json[] = bridgeTables.slice(1).map((entry) => ({
+    track: entry.track,
+    bridges: entry.bridges,
+  }));
 
   return {
     "cp-elements.json": { ...provenance("bagian 1"), quotes, items },
@@ -464,8 +538,8 @@ export function expectedCorpus(markdown: string): Record<SmaDataFileName, Json> 
     },
     "weeks.json": { ...provenance("bagian 3"), weeks },
     "foundation.json": { ...provenance("bagian 3.0"), weeks: foundationWeeks },
-    "cp-mapping.json": { ...provenance("bagian 4"), mappings },
-    "osn-bridge.json": { ...provenance("bagian 5"), track: bridgeTrack, bridges },
+    "cp-mapping.json": { ...provenance("bagian 4"), mappings, enrichmentLinks },
+    "osn-bridge.json": { ...provenance("bagian 5"), track: bridgeTrack, bridges, trackBridges },
   };
 }
 
@@ -484,7 +558,11 @@ function show(value: unknown): string {
 function recordLabel(value: unknown, index: number): string {
   if (typeof value === "object" && value !== null && !Array.isArray(value)) {
     const record = value as Record<string, unknown>;
-    const key = record.id ?? record.cpCode ?? record.code ?? record.familyId;
+    // enrichment links are keyed by (track, CP item); a trackBridges entry by its track
+    if (typeof record.track === "string" && typeof record.cpCode === "string") {
+      return `[${record.track}/${record.cpCode}]`;
+    }
+    const key = record.id ?? record.cpCode ?? record.code ?? record.familyId ?? record.track;
     if (typeof key === "string") {
       return `[${key}]`;
     }

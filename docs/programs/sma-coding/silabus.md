@@ -1,22 +1,27 @@
-# Silabus Pembelajaran Coding SMA — v1.1
+# Silabus Pembelajaran Coding SMA — v1.2
 
-- **Version:** v1.1.0
+- **Version:** v1.2.0
 - **Last updated:** 2026-11-19
-- **Status:** DISETUJUI pemilik program, 2026-11-19 — jalur A dan B (v1.1, issue #92; v1.0 disetujui 2026-11-18, issue #52). Jalur C (#68) dan modul pendamping (#69) masih disusun.
-- **Changeset:** Silabus v1.1 disetujui pemilik: blok fondasi kelas X tujuh minggu (FND-X1-M1..M7, kelas bersama lintas jalur) diterapkan sesuai delapan keputusan pemilik 2026-11-18; kelas X semester 1 dan 2 jalur A dan B disusun ulang; pemetaan CP dan jembatan OSN diperbarui.
+- **Status:** DISETUJUI pemilik program, 2026-11-19 — jalur A, B, C, D, dan E (v1.2, issue #68, #84, #88; v1.1 disetujui 2026-11-19, issue #92; v1.0 disetujui 2026-11-18, issue #52). Modul pendamping (#69) tidak termasuk persetujuan ini.
+- **Changeset:** Silabus v1.2 disetujui pemilik: jalur C (IoT dan robotika), D (kecerdasan buatan dan analisis data), dan E (komputasi kuantum) ditambahkan beserta rencana mingguan, pemetaan CP (jalur D dan E sebagai pengayaan di luar CP, tidak dihitung pemenuhan CP), jembatan OSN jalur C, dan keputusan pemilik 2026-11-19 (bagian 9.3); celah F-LD-d dan F-LD-e jalur A dicatat dicakup modul pendamping (issue #105).
 
-> **Disetujui pemilik program pada 2026-11-19 untuk jalur A dan B**
-> (v1.1; keputusan lewat dialog pilihan, dicatat di issue #92). Dokumen ini
-> adalah revisi v1.0 (disetujui 2026-11-18, issue #52) dan konten karangan
-> menurut [ADR-0007](../../architecture/adr/0007-authored-learning-content.md)
-> yang menjadi sumber corpus program `sma-coding` (ADR-0006). Kutipan CP di
-> bagian 1 adalah transkripsi sumber resmi (disalin persis dari v1.0);
-> selebihnya rancangan penyusun yang disetujui. Butir bertanda
-> `[belum terverifikasi]` tetap belum terverifikasi, dan butir `[asumsi]`
-> tetap rancangan penyusun yang kini disetujui sebagai bagian dari v1.1.
-> Jalur C dan modul pendamping belum termasuk persetujuan ini. Usulan asal
-> blok fondasi:
-> [`usulan-fondasi-kelas-x.md`](usulan-fondasi-kelas-x.md).
+> **Disetujui pemilik program pada 2026-11-19 untuk jalur A, B, C, D, dan E**
+> (v1.2; keputusan lewat dialog pilihan, dicatat di issue #68, #84, dan #88,
+> bagian 9.3). Dokumen ini adalah revisi v1.1 (disetujui 2026-11-19, issue
+> #92; v1.0 disetujui 2026-11-18, issue #52) dan konten karangan menurut
+> [ADR-0007](../../architecture/adr/0007-authored-learning-content.md) yang
+> menjadi sumber corpus program `sma-coding` (ADR-0006). Kutipan CP di bagian
+> 1 adalah transkripsi sumber resmi (disalin persis dari v1.0); selebihnya
+> rancangan penyusun yang disetujui. Butir bertanda `[belum terverifikasi]`
+> tetap belum terverifikasi, dan butir `[asumsi]` tetap rancangan penyusun
+> yang kini disetujui sebagai bagian dari v1.2. Jalur D dan E berada di luar
+> rumusan CP: pengayaan, tidak dihitung sebagai pemenuhan CP (bagian 4.5).
+> Modul pendamping tidak termasuk persetujuan ini. Draf asal jalur baru
+> tersimpan sebagai riwayat:
+> [`draf-jalur-c-iot.md`](draf-jalur-c-iot.md),
+> [`draf-jalur-d-ai.md`](draf-jalur-d-ai.md),
+> [`draf-jalur-e-kuantum.md`](draf-jalur-e-kuantum.md); usulan asal blok
+> fondasi: [`usulan-fondasi-kelas-x.md`](usulan-fondasi-kelas-x.md).
 
 ## 0. Cara membaca dokumen ini
 
@@ -34,6 +39,15 @@
   fondasi, sehingga minggu jalur semester 1 dimulai dari `M8`
   (`A-X1-M8`..`A-X1-M14`). Kode minggu kelas X pada v1.1 **tidak sama**
   maknanya dengan v1.0; tabel padanan ada di bagian 3.0.
+- **Jalur C dan D (v1.2)** memakai penomoran kelas X semester 1 yang sama
+  dengan jalur A dan B (minggu jalur mulai dari `M8`). **Jalur E (v1.2)** hanya
+  kelas XI dan XII: semesternya `XI1`, `XI2`, `XII1`, `XII2`, tanpa kelas X dan
+  tanpa blok fondasi.
+- Awalan `E-` dipakai dua keluarga kode yang tidak bertabrakan: kode minggu
+  jalur E (`E-XI1-M3`; selalu memuat segmen kelas dan diakhiri `M<n>`) dan kode
+  butir CP Fase E (`E-BK-a`; selalu `E-` atau `F-` diikuti elemen dua huruf).
+- **Jalur D dan E adalah pengayaan di luar rumusan CP**: tidak dihitung sebagai
+  pemenuhan butir CP mana pun (bagian 4.5).
 - Kode butir CP berbentuk `E-BK-a` (Fase E, elemen Berpikir
   Komputasional, butir a). Pembagian butir (a, b, c, ...) adalah
   pemenggalan oleh penyusun atas rumusan CP pada tanda titik koma; kata-kata
@@ -191,10 +205,10 @@ perangkat yang tersedia."
 | Butir | Nilai | Status |
 | --- | --- | --- |
 | Kelas dan fase | X = Fase E; XI dan XII = Fase F | Terverifikasi (bagian 1.1). |
-| Semester | Dua per kelas: X1, X2, XI1, XI2, XII1, XII2 (enam semester per jalur) | `[asumsi]` |
+| Semester | Dua per kelas: X1, X2, XI1, XI2, XII1, XII2 (enam semester per jalur A sampai D; jalur E hanya kelas XI dan XII) | `[asumsi]`; jalur E: keputusan pemilik 2026-11-19 (bagian 9.3). |
 | Minggu per semester | 14 minggu materi + 2 minggu cadangan (libur, ujian sekolah, remedial) | `[asumsi]` |
 | Alokasi JP | Satu pertemuan 3 JP x 45 menit per minggu per jalur; sekolah menyesuaikan | Ditetapkan pemilik 2026-11-18. Angka JP resmi kurikulum tetap `[belum terverifikasi]`. |
-| Hubungan jalur | Murid memilih satu jalur (A, B, atau kelak C); boleh mengambil jalur lain bila waktu sekolah mengizinkan. Sebelum memilih jalur, semua murid kelas X mengikuti blok fondasi bersama (bagian 3.0). | Ditetapkan pemilik 2026-11-18; blok fondasi bersama: keputusan pemilik 2026-11-18 (bagian 9.1). |
+| Hubungan jalur | Murid memilih satu jalur (A, B, C, D, atau E); boleh mengambil jalur lain bila waktu sekolah mengizinkan. Sebelum memilih jalur, semua murid kelas X mengikuti blok fondasi bersama (bagian 3.0); jalur E dimulai di kelas XI. Jalur D dan E adalah pengayaan di luar rumusan CP. | Ditetapkan pemilik 2026-11-18; blok fondasi bersama: keputusan pemilik 2026-11-18 (bagian 9.1); jalur C, D, dan E: keputusan pemilik 2026-11-19 (bagian 9.3). |
 | Pola tiap semester | Minggu 1-12 materi; minggu 13 proyek mini; minggu 14 asesmen dan refleksi. Kelas X semester 1: minggu 1-7 blok fondasi (FND-X1-M1..M7), minggu 8-12 materi jalur; asesmen fondasi bersifat formatif dan dilebur ke asesmen minggu 14. | `[asumsi]`; blok fondasi dan asesmen formatif: keputusan pemilik 2026-11-18 (bagian 9.1). |
 | Nilai dasar | CP wajib tercakup di pembelajaran Informatika sekolah; silabus coding ini hanya membahas butir yang dapat dicapai lewat coding. Butir lain ada di bagian 4.3. | Rancangan penyusun. |
 
@@ -203,7 +217,10 @@ bukan urutan belajar; (2) Fase E menekankan konsep dasar (pseudocode,
 struktur data dan algoritma standar); (3) Fase F menekankan strategi
 algoritmik, data, proses rekayasa, dan program terstruktur dengan library;
 (4) v1.1: kelas X dibuka dengan blok fondasi informatika dasar yang sama
-untuk semua jalur, sebelum murid memilih jalur.
+untuk semua jalur, sebelum murid memilih jalur; (5) v1.2: jalur C (IoT dan
+robotika) memetakan perangkat fisik ke CP hanya lewat prinsip komputasinya,
+sedangkan jalur D (AI) dan E (komputasi kuantum) berada di luar rumusan CP dan
+dicatat sebagai pengayaan.
 
 ## 3. Rencana mingguan
 
@@ -216,8 +233,8 @@ Keputusan pemilik 2026-11-18 (bagian 9.1): semua murid kelas X mengikuti
 **blok fondasi informatika dasar tujuh minggu** sebelum memilih jalur
 (opsi (b) usulan, enam minggu, ditambah satu minggu perangkat pengolah
 dokumen, lembar kerja, dan presentasi, butir E-LD-d). Blok ini menempati
-minggu 1-7 kelas X semester 1 dan sama untuk jalur A, B, serta jalur C dan D
-bila kelak disetujui. Seluruh latihan memakai data sintetis, akun uji, dan
+minggu 1-7 kelas X semester 1 dan sama untuk jalur A, B, C, dan D (jalur E
+dimulai di kelas XI dan tidak mengikuti blok ini). Seluruh latihan memakai data sintetis, akun uji, dan
 perangkat lab; tidak ada data pribadi siswa (bagian 7.3). Setiap minggu
 `[asumsi]`: sekitar 1 JP konsep dan 2 JP praktik.
 
@@ -542,20 +559,647 @@ Minggu 1-7 adalah blok fondasi (bagian 3.0); minggu jalur dimulai dari M8.
 | M13 | Portofolio dan refleksi | mengarsipkan karya dan merefleksikan proses | portofolio | refleksi |
 | M14 | Asesmen | menunjukkan seluruh jalur | uji praktik; rubrik proyek | rubrik |
 
+### 3.3 Jalur C: IoT dan Robotika
+
+Jalur terpisah untuk interaksi dengan perangkat fisik (IoT dan robot), yang
+disebut panduan bagian C tetapi bukan rumusan CP (bagian 4.3; keputusan
+pemilik 2026-11-18, issue #52). Disetujui pemilik pada 2026-11-19 beserta
+semua rekomendasi penyusun (bagian 9.3, issue #68); asal isi:
+[`draf-jalur-c-iot.md`](draf-jalur-c-iot.md) (riwayat, termasuk
+perbandingan platform dan cuplikan harga bertanggal 2026-11-19). Jalur C
+memetakan topik fisik ke butir CP hanya lewat prinsip komputasinya (I-P-O,
+data, jaringan, rekayasa; bagian 4.1 dan 4.2), sedangkan keterampilan
+perakitan dan elektronika **tidak** dihitung sebagai pemenuhan butir CP mana
+pun. Tanda (F) pada kolom Latihan berarti membutuhkan perangkat fisik; setiap
+minggu praktik dirancang dapat dilatih di simulator. Seluruh data latihan
+bersifat sintetis atau data lingkungan benda mati. Semua tabel jalur C
+`[asumsi]` sebagai rancangan penyusun yang disetujui; belum diuji di kelas.
+
+**Tujuan jalur C**
+
+Murid yang menyelesaikan jalur C `[asumsi]`:
+
+1. menulis program terstruktur dalam C++ (gaya Arduino) yang membaca sensor
+   dan menggerakkan aktuator, dengan pseudocode sebagai rancangan awal;
+2. memahami perangkat fisik sebagai perwujudan model Input-Proses-Output
+   (sensor = masukan, mikrokontroler = proses, aktuator = keluaran);
+3. mengolah data sensor yang berkualitas (kalibrasi, penyaringan derau,
+   validasi rentang) dan memakainya untuk keputusan;
+4. menghubungkan perangkat dalam jaringan, mengirim data antarperangkat, dan
+   memecahkan masalah sambungan;
+5. menjalani proses rekayasa produk (kebutuhan, rancangan, implementasi, uji,
+   dokumentasi) dan membandingkan beberapa alternatif solusi dengan
+   justifikasi;
+6. bekerja aman secara listrik dan menjaga privasi (ketentuan keselamatan dan privasi jalur C di bawah).
+
+Jalur C **bukan** pembinaan OSN; jembatan ke OSN dibahas di bagian 5.2.
+
+**Struktur dan prasyarat**
+
+| Butir | Nilai | Status |
+| --- | --- | --- |
+| Prasyarat | Blok fondasi `FND-X1-M1..M7` (perangkat keras, I-P-O, biner/heksadesimal, jaringan, keamanan dasar) | Keputusan pemilik; menggantikan minggu pengantar komputer |
+| Pengetahuan pemrograman awal | Tidak diasumsikan; jalur C mengajarkan dasar pemrograman sendiri di `C-X1-M8..M12` karena murid jalur C belum tentu mengambil jalur A | `[asumsi]` |
+| Bahasa | C++ (kerangka Arduino: `setup()`/`loop()`), selaras sintaks jalur A | Keputusan pemilik 2026-11-19 (bagian 9.3) |
+| Pola semester | X1: minggu 8–14 (7 minggu); semester lain: minggu 1–12 materi, 13 proyek mini, 14 asesmen dan refleksi | `[asumsi]` |
+| Pengelompokan | Praktik dalam kelompok 3 murid per set perangkat | `[asumsi]` |
+| Simulator | Setiap minggu praktik dirancang dapat dilatih di simulator bagi sekolah tanpa perangkat; kegiatan yang hanya mungkin dengan perangkat fisik ditandai (F) | `[asumsi]` |
+| Platform | ESP32 DevKit diprogram dengan C++ gaya Arduino untuk kelas X-XII; cadangan Raspberry Pi Pico (W bila perlu jaringan) | Keputusan pemilik 2026-11-19 (bagian 9.3); harga, spesifikasi, dan dukungan simulator `[belum terverifikasi]` |
+
+**Perangkat dan biaya** `[asumsi]`: satu set per kelompok tiga murid;
+pengadaan campuran (mitra dan sekolah) dengan batas tanggung jawab dicatat
+tertulis (bagian 9.3). Semua angka `[asumsi]` kecuali yang bertanda
+snapshot; harga komponen selain papan tidak diriset.
+
+| Komponen (kelas) | Jumlah per set | Harga | Status |
+| --- | --- | --- | --- |
+| Papan ESP32 DevKit (X–XII) | 1 | Rp85.347 (snapshot Tokopedia, 2026-11-19, stok habis) | Cuplikan; harga pengadaan `[belum terverifikasi]` |
+| Kabel USB data, papan percobaan (breadboard), kabel jumper | 1 set | `[belum terverifikasi]` | `[asumsi]` |
+| LED, resistor, tombol, potensiometer, sensor cahaya, buzzer (X) | 1 set | `[belum terverifikasi]` | `[asumsi]` |
+| Sensor suhu dan kelembapan, sensor jarak, servo, layar kecil (X2) | 1 set | `[belum terverifikasi]` | `[asumsi]` |
+| Papan kedua untuk komunikasi dua papan (XI1-M10..M13) dan jaringan (XI2) | 1 | sama dengan papan pertama | `[asumsi]` |
+| Sasis robot, motor DC, pengendali motor, sensor garis, wadah baterai (XII1) | 1 set per kelompok atau gilir bersama | `[belum terverifikasi]` | `[asumsi]` |
+| Komputer lab dengan kompiler dan alat unggah, port USB berfungsi | 1 per kelompok | milik sekolah | `[asumsi]` |
+| Jaringan lab terpisah dan penengah pesan lokal di komputer guru (XI2) | 1 | milik sekolah/mitra | `[asumsi]` |
+
+Perkiraan total per set `[asumsi, belum terverifikasi]`: Rp250.000-Rp500.000
+untuk set kelas X-XI (dua papan); tambahan Rp300.000-Rp600.000 untuk satu set
+robot kelas XII. Rentang ini tebakan perancang, bukan hasil survei harga;
+anggaran menunggu penawaran mitra atau toko.
+
+**Keselamatan kerja jalur C**
+
+Aturan jalur C `[asumsi]`:
+
+- **Tidak ada listrik jaringan (220 V).** Seluruh praktik memakai daya USB
+  atau baterai bertegangan rendah. Tidak ada relai ke beban listrik jaringan
+  dalam program murid.
+- **Baterai:** hanya wadah baterai AA/AAA atau baterai pak yang disediakan
+  guru; tidak memakai baterai litium tanpa pelindung; murid tidak mengisi
+  daya litium. Jenis yang diizinkan diputuskan pemilik bersama mitra.
+- **Perakitan:** daya dicabut sebelum mengubah rangkaian; periksa polaritas;
+  motor memakai modul pengendali, tidak dihubungkan langsung ke pin papan.
+- **Solder:** tidak diwajibkan; papan percobaan dan konektor jumper cukup.
+  Bila mitra mengadakan sesi solder, guru atau mitra mengawasi langsung.
+- **Mekanik:** robot diuji di meja bertepi; bagian bergerak tidak disentuh
+  saat menyala.
+- Daftar periksa keselamatan dipajang di lab dan dibaca murid di
+  `C-X1-M8` serta `C-XII1-M10`.
+- Tidak ada ketentuan keselamatan resmi yang dikutip; sumber standar
+  keselamatan lab sekolah `[belum terverifikasi]` dan harus ditambahkan
+  setelah mitra memberi rujukannya.
+
+**Peran mitra dalam keselamatan (keputusan pemilik 2026-11-19):** mitra
+menyusun dan mengaudit aturan keselamatan; hasilnya ditinjau pemilik.
+
+**Privasi dan data jalur C (ADR-0004)**
+
+- Repositori ini tidak menyimpan data siswa
+  ([ADR-0004](../../architecture/adr/0004-no-learner-personal-data.md));
+  seluruh contoh data bersifat sintetis atau data lingkungan benda mati
+  (suhu ruang, cahaya, jarak).
+- **Tidak ada kamera atau mikrofon yang merekam murid**; proyek yang
+  memerlukannya tidak termasuk jalur C. Sensor yang mengukur tubuh murid
+  (detak jantung, lokasi, gerak pribadi) tidak dipakai.
+- Tidak ada akun pribadi murid pada layanan awan; kredensial jaringan lab
+  tidak dimasukkan ke kode yang di-commit (dilatih di C-XI2-M2).
+- Data dikirim hanya ke server atau penengah pesan lokal milik guru/lab,
+  bukan layanan publik, kecuali kebijakan sekolah dan data sintetis
+  memungkinkannya.
+- Hotspot ponsel pribadi murid tidak dipakai.
+- Proyek akhir (C-XII2) tidak boleh mengumpulkan data pribadi nyata.
+
+#### C-X1 (kelas X, semester 1; Fase E)
+
+Minggu 1-7 adalah blok fondasi (bagian 3.0); minggu jalur dimulai dari M8.
+
+| Minggu | Topik | Tujuan | Keluaran | Latihan |
+| --- | --- | --- | --- | --- |
+| M8 | Mikrokontroler, papan, dan program pertama; keluaran digital | menjelaskan sensor-mikrokontroler-aktuator sebagai I-P-O; mengunggah dan menjalankan `setup()`/`loop()`; memakai variabel dan `digitalWrite` | program LED berkedip; diagram I-P-O perangkat | LED berkedip dengan variabel waktu; tulis pseudocode sebelum kode (F) |
+| M9 | Masukan digital, percabangan, logika Boolean | membaca tombol; memakai `if`/`else`, `&&`, `||`, `!` | program tombol-LED; tabel kebenaran | tombol menyalakan LED; dua tombol dengan logika AND/OR (F) |
+| M10 | Perulangan dan keluaran serial | memakai `for`/`while`; mencetak nilai ke monitor serial untuk penelusuran galat | program pola lampu; catatan galat | pola lampu berjalan; cetak nilai tombol (F) |
+| M11 | Masukan analog dan tipe data | membaca potensiometer dan sensor cahaya; memilih tipe data; memakai ambang | program ambang cahaya | lampu menyala saat gelap; peta nilai ke rentang lain (F) |
+| M12 | Fungsi dan array | memecah program menjadi fungsi; menyimpan pola dalam array | program modular | pola lampu dari array; fungsi `bacaCahaya()` |
+| M13 | Proyek mini | merancang dan menguji sistem kecil dengan satu sensor dan satu aktuator | rancangan, program, laporan singkat | lampu malam otomatis atau alarm tombol (F) |
+| M14 | Asesmen dan refleksi (termasuk asesmen formatif fondasi) | menunjukkan dasar pemrograman dan I-P-O fisik | uji tulis dan praktik; jurnal | kuis kode dan rangkaian |
+
+#### C-X2 (kelas X, semester 2; Fase E)
+
+| Minggu | Topik | Tujuan | Keluaran | Latihan |
+| --- | --- | --- | --- | --- |
+| M1 | Ulasan dan penelusuran galat perangkat | memisahkan galat kode dari galat rangkaian | daftar galat umum (kode dan kabel) | perbaiki 5 rangkaian dan program rusak (F) |
+| M2 | Sensor suhu dan kelembapan | membaca sensor lewat pustaka; memahami satuan | program pembacaan | tampilkan suhu ruang kelas (F) |
+| M3 | Data berkualitas dari sensor | memeriksa rentang, mengenali derau, dan membuang data ganjil | tabel data bersih | validasi rentang; tandai lonjakan palsu |
+| M4 | Array dan rata-rata bergerak | menyimpan beberapa pembacaan dan merata-ratakannya | program penyaring | rata-rata 5 pembacaan terakhir |
+| M5 | Keluaran analog (PWM) | mengatur kecerahan atau kecepatan dengan PWM | program PWM | redup-terang LED dengan potensiometer (F) |
+| M6 | Aktuator: servo dan buzzer | menggerakkan servo ke sudut tertentu; membunyikan nada | program aktuator | palang pintu mini (F) |
+| M7 | Waktu tanpa `delay` dan mesin keadaan sederhana | memakai penanda waktu `millis()`; memodelkan keadaan | diagram keadaan; program | lampu lalu lintas mini |
+| M8 | Menampilkan data | menampilkan nilai di layar kecil atau plotter serial | program tampilan | grafik suhu di plotter serial (F) |
+| M9 | Struktur data: tumpukan dan antrian sebagai penyangga | memakai LIFO dan FIFO untuk data sensor | program stack/queue | simulasi antrian pembacaan (sintetis) |
+| M10 | Pencarian dan pengurutan data sensor | mencari nilai dan mengurutkan untuk median | program median | median dari 7 pembacaan |
+| M11 | Sensor jarak dan keputusan | membaca jarak; memilih ambang keputusan dengan data | program jarak | alarm parkir mini (F) |
+| M12 | Mencatat data | mengirim data ke komputer sebagai teks berformat dan menyimpannya | berkas data sintetis atau lingkungan | catat suhu kelas 10 menit |
+| M13 | Proyek mini: stasiun pengamat | memadukan sensor, penyaringan, dan tampilan | perangkat, program, laporan | stasiun suhu dan cahaya kelas (F) |
+| M14 | Asesmen dan refleksi | menunjukkan struktur data dan algoritma standar pada data sensor | uji tulis dan praktik | kuis kode |
+
+#### C-XI1 (kelas XI, semester 1; Fase F)
+
+| Minggu | Topik | Tujuan | Keluaran | Latihan |
+| --- | --- | --- | --- | --- |
+| M1 | Proses rekayasa produk IoT | menguraikan kebutuhan, rancangan, implementasi, uji | dokumen rancangan satu halaman | rancang perangkat pemantau |
+| M2 | Kualitas kode dan pengujian | menulis kasus uji dan menjaga keterbacaan | berkas kasus uji | uji tepi pembacaan sensor |
+| M3 | Tipe data bentukan | memakai `struct` untuk menyatukan data sensor | modul data | `struct Pembacaan` |
+| M4 | Pustaka sendiri | membuat kelas atau pustaka kecil untuk sebuah sensor | pustaka sensor | pustaka sensor jarak (F) |
+| M5 | Alternatif solusi I: ambang dan histeresis | membandingkan dua cara mengambil keputusan dan menjustifikasi | laporan perbandingan | lampu: ambang sederhana vs histeresis |
+| M6 | Kendali hidup-mati | merancang kendali hidup-mati pada kasus pemanas atau kipas simulasi | program kendali | termostat mini (F) |
+| M7 | Alternatif solusi II: kendali proporsional | membandingkan kendali hidup-mati dan proporsional | laporan perbandingan | kecerahan proporsional terhadap cahaya (F) |
+| M8 | Efisiensi memori dan waktu pada mikrokontroler | menghitung memori dan waktu; memilih struktur data yang hemat | tabel perbandingan | array vs penyangga melingkar |
+| M9 | Struktur data: penyangga melingkar | merancang penyangga melingkar untuk aliran data | program penyangga | rata-rata bergerak dengan penyangga |
+| M10 | Pengiriman data antarperangkat I | mengirim data antar dua papan lewat serial | protokol sederhana | kirim pembacaan dari papan A ke B (F) |
+| M11 | Pengiriman data antarperangkat II | merancang format pesan dan pemeriksaan galat sederhana | spesifikasi pesan | tambahkan penanda awal dan jumlah periksa |
+| M12 | Pemecahan masalah sambungan | mendiagnosis urutan: daya, kabel, kode, format pesan | diagram alir diagnosis | tiga skenario gangguan sintetis (F) |
+| M13 | Proyek mini | membuat sistem dua papan teruji | perangkat, uji, laporan | proyek kelompok (F) |
+| M14 | Asesmen dan refleksi | menunjukkan rekayasa, kendali, dan pengiriman data | uji tulis dan praktik | kuis kode |
+
+#### C-XI2 (kelas XI, semester 2; Fase F)
+
+| Minggu | Topik | Tujuan | Keluaran | Latihan |
+| --- | --- | --- | --- | --- |
+| M1 | Jaringan nirkabel dan perangkat IoT | menjelaskan penghubungan papan ke jaringan lab dan peran alamat IP | papan terhubung ke jaringan lab | cetak alamat IP papan (F) |
+| M2 | Keamanan konektivitas | menyimpan kredensial di luar kode, mengganti sandi bawaan, memakai jaringan lab terpisah | lembar periksa keamanan | audit kode dari rahasia yang tertanam |
+| M3 | Klien HTTP | mengirim data sensor ke server lokal guru | program klien | kirim suhu ke server lab (F) |
+| M4 | Server mini | melayani halaman data sederhana dari papan atau komputer lab | halaman data | halaman suhu lokal (F) |
+| M5 | Publikasi-langganan: konsep | menjelaskan pola publikasi-langganan dan penengah pesan (broker) | diagram alir pesan | permainan peran broker |
+| M6 | Publikasi-langganan: praktik | menerbitkan dan berlangganan topik lewat broker lokal guru | program penerbit dan pelanggan | dua papan bertukar data lewat broker lokal (F) |
+| M7 | Format data | menyusun data sebagai JSON | pesan JSON | ubah pembacaan menjadi JSON |
+| M8 | Pemecahan masalah jaringan IoT | mendiagnosis dari sinyal, alamat, broker, hingga format | catatan diagnosis | tiga gangguan sintetis (F) |
+| M9 | Sumber data terbuka dan legal | menilai lisensi dan keterpercayaan; membandingkan data sensor sendiri dengan data terbuka yang dipilih guru | catatan sumber | baca lisensi satu dataset |
+| M10 | Rekap dan visualisasi | merekap per kategori dan menyajikan grafik | tabel dan grafik | rekap suhu per jam |
+| M11 | Prediksi sederhana | memakai rata-rata bergerak dan garis kecenderungan | program prediksi | prediksi suhu berikutnya dan galatnya |
+| M12 | Keputusan otomatis berbasis data | mengaitkan hasil analisis ke aktuator | sistem keputusan | kipas menyala dari tren suhu (F) |
+| M13 | Proyek: sistem IoT lokal | membangun sistem pemantau dengan pengiriman data dan analisis | sistem dan laporan | proyek kelompok (F) |
+| M14 | Asesmen dan refleksi | menunjukkan jaringan, data, dan keamanan | uji tulis dan praktik | kuis kode |
+
+#### C-XII1 (kelas XII, semester 1; Fase F)
+
+| Minggu | Topik | Tujuan | Keluaran | Latihan |
+| --- | --- | --- | --- | --- |
+| M1 | Merancang kebutuhan sistem | merumuskan kebutuhan pengguna fiktif dan batasan | dokumen kebutuhan | wawancara pengguna fiktif untuk robot sederhana |
+| M2 | Arsitektur dan pemilihan komponen | memilih sensor, pengendali, dan daya sesuai kebutuhan | tabel pemilihan komponen | bandingkan dua susunan komponen |
+| M3 | Motor DC dan pengendali motor | menggerakkan motor lewat modul pengendali bertegangan rendah | program motor | robot maju-mundur-belok (F) |
+| M4 | Sensor garis dan jarak | membaca sensor dan menentukan ambang | program sensor | kalibrasi sensor garis (F) |
+| M5 | Mesin keadaan robot | memodelkan perilaku robot sebagai keadaan | diagram keadaan | robot menghindari halangan (F) |
+| M6 | Pengikut garis: strategi 1 | menerapkan kendali hidup-mati | program pengikut garis | lintasan uji (F) |
+| M7 | Pengikut garis: strategi 2 | menerapkan kendali proporsional | program proporsional | lintasan uji yang sama (F) |
+| M8 | Membandingkan strategi | mengukur dan menjustifikasi pilihan strategi | laporan perbandingan | waktu tempuh dan galat dua strategi |
+| M9 | Kalibrasi dan pengujian sistematis | merancang uji berulang dan mencatat hasil | tabel hasil uji | sepuluh kali uji per strategi |
+| M10 | Daya dan keselamatan baterai | memilih sumber daya aman dan membaca tegangan | lembar periksa daya | rencana daya robot |
+| M11 | Hukum dan etika sensor | menjelaskan pokok UU ITE dan UU PDP terkait perangkat yang merekam | catatan kepatuhan | daftar periksa proyek |
+| M12 | Dokumentasi dan pemeliharaan | menulis dokumen perakitan dan panduan pengguna | dokumen proyek | panduan perakitan |
+| M13 | Proyek | menyiapkan rancangan proyek akhir | rencana proyek | rencana kerja |
+| M14 | Asesmen dan refleksi | menunjukkan rancangan, kendali, dan pengujian | uji tulis dan praktik | kuis |
+
+#### C-XII2 (kelas XII, semester 2; Fase F)
+
+| Minggu | Topik | Tujuan | Keluaran | Latihan |
+| --- | --- | --- | --- | --- |
+| M1 | Pemeliharaan program I | memperbaiki dan merapikan proyek lama | daftar perbaikan | refaktor satu proyek semester lalu |
+| M2 | Pemeliharaan program II | mengoptimalkan dan mencatat alasan | catatan optimasi | kurangi pemakaian memori |
+| M3 | Memodelkan masalah lapangan | menerjemahkan masalah nyata sekolah menjadi sistem | lembar pemodelan | tiga masalah fiktif |
+| M4 | Ulasan keamanan dan privasi | memeriksa rahasia, jaringan, dan data | laporan keamanan | audit proyek sendiri |
+| M5 | Proyek akhir: rancangan | merancang proyek akhir | dokumen rancangan | pilih topik |
+| M6 | Proyek akhir: sprint 1 (perangkat keras) | merakit dan menguji rangkaian | rangkaian teruji | perakitan (F) |
+| M7 | Proyek akhir: sprint 2 (program) | menulis program inti | program inti | implementasi |
+| M8 | Proyek akhir: sprint 3 (jaringan dan data) | menghubungkan dan mencatat data | sistem terhubung | integrasi (F) |
+| M9 | Proyek akhir: sprint 4 (penyempurnaan) | memperbaiki kualitas dan keandalan | rilis kandidat | perbaikan |
+| M10 | Ulasan sejawat | menilai proyek tim lain | catatan ulasan | tinjau proyek |
+| M11 | Pengujian akhir | menguji sistem terhadap kebutuhan | laporan uji | uji penerimaan |
+| M12 | Dokumentasi akhir | menulis dokumentasi lengkap | dokumen proyek | panduan pengguna |
+| M13 | Presentasi dan portofolio | mempresentasikan dan mengarsipkan | demo; portofolio | presentasi |
+| M14 | Asesmen dan refleksi | menunjukkan seluruh jalur | uji praktik; rubrik proyek | rubrik |
+
+### 3.4 Jalur D: Kecerdasan Buatan dan Analisis Data
+
+Jalur AI terpisah (hasil riset buku AI, issue #66 dan #83). Disetujui
+pemilik pada 2026-11-19 beserta semua rekomendasi penyusun (bagian 9.3, issue
+#84); asal isi: [`draf-jalur-d-ai.md`](draf-jalur-d-ai.md) (riwayat,
+termasuk perbandingan alat dan penilaian 11 kriteria). **Jalur D adalah
+pengayaan di luar rumusan CP:** rumusan CP bagian 1.3 tidak memuat kata
+"kecerdasan buatan", "AI", atau "machine learning" dan tidak mewajibkan AI;
+jalur D **tidak dihitung sebagai pemenuhan butir CP** mana pun. Irisan
+terdekatnya dengan CP (terutama F-AD-a) dicatat terpisah di bagian 4.5 dan
+tidak dihitung. Jalur D tidak menggantikan jalur A atau B dan tidak
+menjanjikan persiapan OSN (bagian 5.3). Semua tabel jalur D `[asumsi]`
+sebagai rancangan penyusun yang disetujui; belum diuji di kelas.
+
+**Tujuan jalur D**
+
+Murid yang menyelesaikan jalur D mampu `[asumsi]`:
+
+1. menjelaskan secara jujur apa yang dapat dan tidak dapat dilakukan sistem
+   AI (kecerdasan buatan) pada tingkat SMA, termasuk keterbatasan dan
+   kesalahannya;
+2. menyiapkan, memeriksa kualitas, dan melabeli data (sintetis atau
+   terbuka dan legal) sebagai bahan model;
+3. membangun, mengevaluasi, dan membandingkan model sederhana untuk
+   prediksi, klasifikasi, dan pengelompokan, serta menjustifikasi pilihan
+   berdasarkan bukti evaluasi;
+4. menilai keluaran AI (termasuk konten buatan AI) secara kritis dan
+   memverifikasinya;
+5. menerapkan etika AI, pelindungan data pribadi, dan penghargaan hak
+   kekayaan intelektual dalam setiap proyek;
+6. merancang, mengerjakan, mendokumentasikan, dan mempresentasikan satu
+   proyek akhir AI/analisis data.
+
+**Prasyarat dan hubungan dengan blok fondasi**
+
+| Kebutuhan jalur D | Dipenuhi oleh |
+| --- | --- |
+| Data sebagai biner, teks, dan gambar (piksel) sebagai bahan data | `FND-X1-M3` (representasi data) |
+| Model Input-Proses-Output sebagai kerangka sistem AI | `FND-X1-M1` |
+| Keamanan akun, privasi, dan etika digital | `FND-X1-M6` |
+| Lisensi dan atribusi (data dan perangkat lunak terbuka) | `FND-X1-M2` |
+| Konsep jaringan sebagai latar layanan daring dan API | `FND-X1-M4..M5` |
+| Dokumen, lembar kerja, dan presentasi untuk laporan | `FND-X1-M7` |
+
+Jalur D tidak mensyaratkan jalur A atau B `[asumsi]`; murid yang hanya
+mengambil jalur D belajar pemrograman Python di `D-XI1-M2..M4` (keputusan
+pemilik, bagian 9.3; tiga minggu mungkin kurang, perlu diuji di kelas).
+
+**Keputusan alat dan coding jalur D (bagian 9.3)**
+
+- Opsi bertahap: kelas X tanpa kode (Orange Data Mining dan kegiatan tanpa
+  komputer); Python dengan `pandas` dan `scikit-learn` mulai kelas XI
+  semester 1; Orange tetap untuk eksplorasi cepat. Rencana mingguan di bawah
+  mengikuti opsi ini.
+- Layanan AI daring (generatif) hanya didemonstrasikan guru; murid tidak
+  memakainya langsung dan tidak wajib punya akun.
+- Teachable Machine hanya sebagai pengayaan dengan data benda (tanpa wajah
+  dan suara).
+- Seri Buku AI SMA belum ditautkan: ditautkan setelah guru membaca isinya dan
+  penerbit menjelaskan lisensinya (isi seri tidak disalin atau diparafrasekan).
+- Kesiapan lab (pemasangan Orange dan Python di semua komputer atau hanya
+  sebagian) diputuskan setelah survei lab; spesifikasi minimum
+  `[belum terverifikasi]`.
+
+**Etika AI dan privasi data siswa**
+
+Berlaku untuk seluruh minggu jalur D. Dasarnya
+[ADR-0004](../../architecture/adr/0004-no-learner-personal-data.md) dan
+silabus bagian 7.3 (UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi
+dikutip ADR-0004; peserta adalah anak di bawah umur).
+
+| Aturan | Isi |
+| --- | --- |
+| Tanpa data pribadi siswa | Data latih, data uji, dan contoh tidak memuat nama, kontak, alamat, nomor identitas, sekolah, atau data lain yang dapat mengenali murid. Data bersifat sintetis atau dataset terbuka dan legal. |
+| Tanpa wajah dan suara siswa | Wajah, suara, dan foto murid atau orang lain **tidak** dipakai sebagai data latih atau uji (termasuk di Teachable Machine). Bahan latih berupa benda, gambar atau pola sintetis, atau data tabel. |
+| Tanpa akun pribadi wajib | Tidak ada kegiatan yang mewajibkan murid memiliki atau memakai akun pribadi di layanan daring. Layanan AI daring hanya didemonstrasikan guru (akun sekolah atau guru) tanpa memasukkan data pribadi; syarat usia layanan `[belum terverifikasi]` diperiksa guru lebih dulu. |
+| Tanpa data pribadi pada permintaan | Guru dan murid tidak menaruh data pribadi, rahasia, atau tugas bernilai pada layanan daring. |
+| Rahasia | Kunci layanan dan `.env` tidak di-commit atau dibagikan. |
+| Data terbuka dan legal | Sumber dataset dan lisensinya dicatat (`D-XI1-M5`); data yang syaratnya tidak jelas tidak dipakai. |
+| Keterbukaan | Murid mencatat bila keluaran AI dipakai dalam tugas; keluaran AI diverifikasi dan tidak disajikan sebagai fakta. |
+| Hasil karya | Model dan data hasil latih tidak memuat data pribadi; tidak ada data murid disimpan di repositori ini. |
+| Kebijakan sekolah | Kebijakan sekolah dan orang tua tentang layanan AI dan perangkat diikuti; penyusun tidak memverifikasi kebijakan Kemendikdasmen tentang AI di sekolah `[belum terverifikasi]`. |
+
+#### D-X1 (kelas X, semester 1; Fase E)
+
+Minggu 1-7 adalah blok fondasi (bagian 3.0); minggu jalur dimulai dari M8.
+
+| Minggu | Topik | Tujuan | Keluaran | Latihan |
+| --- | --- | --- | --- | --- |
+| M8 | Apa itu AI dan apa yang bukan | membedakan AI dari program biasa; menyebut contoh AI sehari-hari dan batasannya; menggambar sistem AI dengan model Input-Proses-Output | diagram I-P-O sistem AI | memilah daftar contoh "AI atau bukan"; telaah satu aplikasi fiktif |
+| M9 | Data, fitur, dan label | menjelaskan dataset, fitur, dan label; menilai kualitas dan bias data | tabel data beranotasi | menyusun 20 kartu benda bersama label; temukan data ganjil pada tabel sintetis |
+| M10 | Klasifikasi tanpa komputer | membuat aturan keputusan dari contoh berlabel dan mengujinya | pohon keputusan di kertas | klasifikasikan kartu benda; hitung ketepatan aturan |
+| M11 | Orange: memuat dan melihat data | memuat tabel di Orange; memakai tabel data dan diagram sebar | alur kerja Orange | eksplorasi tabel sintetis |
+| M12 | Model pertama dan pembagian data latih/uji | melatih pohon keputusan; membaca akurasi pada data uji | alur kerja klasifikasi | bandingkan akurasi data latih dan data uji |
+| M13 | Proyek mini | mengklasifikasikan data tabel sintetis dan melaporkan hasil | laporan singkat | proyek kelompok |
+| M14 | Asesmen dan refleksi | menunjukkan konsep dasar data dan model; sekaligus asesmen formatif fondasi yang dilebur ke minggu ini | uji tulis dan praktik; jurnal | kuis |
+
+#### D-X2 (kelas X, semester 2; Fase E)
+
+| Minggu | Topik | Tujuan | Keluaran | Latihan |
+| --- | --- | --- | --- | --- |
+| M1 | Dari data ke keputusan; ulasan | menguraikan alur data, model, evaluasi, keputusan; mengenali model yang salah | alur satu halaman | telaah model sintetis yang salah |
+| M2 | Bias dan keadilan | menjelaskan sumber bias dan dampaknya | catatan kasus | kasus fiktif pemberian nilai otomatis |
+| M3 | Privasi dan data pribadi | menjelaskan data pribadi, risiko penggunaan layanan AI, dan pokok pelindungan data pribadi | daftar periksa privasi | tandai data pribadi pada contoh fiktif |
+| M4 | Regresi: garis kecenderungan | memakai regresi linear di Orange | alur regresi | prediksi nilai dari data sintetis |
+| M5 | Galat dan kelebihan-suai (overfitting) | mengukur galat dan mengenali overfitting | catatan galat | bandingkan model sederhana dan rumit |
+| M6 | Klasifikasi: pohon keputusan dan tetangga terdekat | melatih dan membandingkan dua penggolong | tabel perbandingan | dua model pada satu data |
+| M7 | Mengevaluasi klasifikasi | membaca matriks kebingungan; membedakan jenis kesalahan | matriks beranotasi | hitung akurasi dan jenis galat |
+| M8 | Pengelompokan tanpa label | melakukan pengelompokan dan menafsirkan kelompok | alur pengelompokan | kelompokkan data sintetis |
+| M9 | Visualisasi untuk bercerita | memilih grafik yang tepat dan jujur | satu halaman visual | grafik dari data sintetis |
+| M10 | Teks sebagai data | menjelaskan teks sebagai fitur; menggolongkan teks sintetis | alur teks | pisahkan kalimat sintetis ke dua kategori |
+| M11 | AI generatif dan verifikasi | menjelaskan cara kerja kasar dan keterbatasannya (jawaban keliru yang meyakinkan); memverifikasi keluaran | lembar verifikasi | guru mendemonstrasikan; murid memeriksa klaim dengan sumber (tanpa akun murid) |
+| M12 | HAKI, lisensi data, dan AI | membaca lisensi data; menjelaskan isu hak cipta keluaran generatif | tabel lisensi | baca satu lisensi data terbuka |
+| M13 | Proyek mini | menyelesaikan satu pertanyaan dengan data sintetis dari data hingga evaluasi | laporan | proyek kelompok |
+| M14 | Asesmen dan refleksi | menunjukkan alur data-model-evaluasi dan etika dasar | uji tulis dan praktik; jurnal | kuis |
+
+#### D-XI1 (kelas XI, semester 1; Fase F)
+
+| Minggu | Topik | Tujuan | Keluaran | Latihan |
+| --- | --- | --- | --- | --- |
+| M1 | Proses proyek data dan AI | menguraikan masalah, data, model, evaluasi, penggunaan | rancangan satu halaman | rancang proyek fiktif |
+| M2 | Python I | memakai variabel, tipe, kondisi, perulangan | skrip dasar | hitung statistik sederhana |
+| M3 | Python II | memakai fungsi, daftar, kamus | skrip modular | rekap data sintetis |
+| M4 | Membaca berkas tabel | membaca dan menulis CSV dengan library | skrip berkas | baca CSV sintetis |
+| M5 | Sumber data terbuka dan legal | menilai sumber, lisensi, dan keterpercayaan data | catatan sumber | pilih dataset terbuka dan baca lisensinya |
+| M6 | Membersihkan data | menangani nilai hilang, duplikat, rentang | skrip pembersih | bersihkan data sintetis |
+| M7 | Statistik deskriptif dan grafik | merangkum data dan menyajikan grafik | grafik dan ringkasan | grafik dari data terbuka |
+| M8 | Prediksi sederhana | memakai rata-rata bergerak dan regresi linear; mengevaluasi galat | skrip prediksi | prediksi nilai berikutnya dan galat |
+| M9 | Klasifikasi dengan `scikit-learn` | melatih dan menguji penggolong | skrip penggolong | klasifikasi data sintetis |
+| M10 | Evaluasi dan validasi | membagi data; membaca metrik; validasi silang secara intuitif | tabel metrik | bandingkan pembagian data |
+| M11 | Membandingkan model | menghasilkan dua model atau lebih dan menjustifikasi pilihan | laporan perbandingan | tiga model pada satu data |
+| M12 | Kebocoran data dan bias evaluasi | mengenali kebocoran data dan evaluasi yang menyesatkan | catatan kasus | perbaiki evaluasi yang bocor |
+| M13 | Proyek mini | mengerjakan alur analisis data terbuka hingga prediksi | program dan laporan | proyek kelompok |
+| M14 | Asesmen dan refleksi | menunjukkan data, prediksi, dan evaluasi | uji tulis dan praktik | kuis kode |
+
+#### D-XI2 (kelas XI, semester 2; Fase F)
+
+| Minggu | Topik | Tujuan | Keluaran | Latihan |
+| --- | --- | --- | --- | --- |
+| M1 | Pengelompokan dengan Python | memakai k-means dan menafsirkan kelompok | skrip pengelompokan | kelompokkan data sintetis |
+| M2 | Pohon keputusan dan ensambel | menjelaskan dan memakai pohon serta hutan acak | skrip model | bandingkan pohon dan hutan |
+| M3 | Rekayasa fitur | membuat dan memilih fitur | skrip fitur | tambah fitur pada data sintetis |
+| M4 | Teks: pembersihan dan representasi | membersihkan teks; merepresentasikannya sebagai angka | skrip teks | representasi kalimat sintetis |
+| M5 | Klasifikasi teks | melatih penggolong teks | skrip penggolong teks | klasifikasi sentimen kalimat sintetis berbahasa Indonesia |
+| M6 | Gambar sebagai angka | menghubungkan piksel (`FND-X1-M3`) dengan fitur; menggolongkan gambar | skrip gambar | gambar sintetis hasil program (bentuk dan pola) |
+| M7 | Gagasan jaringan saraf | menjelaskan neuron, bobot, dan pelatihan secara konseptual | diagram beranotasi | hitung keluaran satu neuron dengan tangan |
+| M8 | Melatih jaringan kecil | melatih jaringan saraf kecil pada data tabel sintetis | skrip jaringan | bandingkan dengan model lain |
+| M9 | Menjelaskan keputusan model | menafsirkan fitur berpengaruh dan keterbatasan penjelasan | catatan penjelasan | tafsirkan satu model |
+| M10 | Penyalahgunaan AI dan verifikasi konten | mengenali konten palsu, penipuan, dan cara memverifikasi teks, gambar, video | lembar periksa | periksa contoh sintetis |
+| M11 | Layanan lewat API (opsional) | menjelaskan cara aplikasi memakai model lewat layanan; menjaga rahasia | catatan arsitektur | gambar alur permintaan; tanpa kunci pribadi |
+| M12 | Kartu model dan dokumentasi | mendokumentasikan data, tujuan, batasan, dan risiko model | kartu model | tulis kartu model proyek |
+| M13 | Proyek mini | mengerjakan satu proyek model dari data hingga kartu model | program dan laporan | proyek kelompok |
+| M14 | Asesmen dan refleksi | menunjukkan model, evaluasi, dan etika | uji tulis dan praktik | kuis kode |
+
+#### D-XII1 (kelas XII, semester 1; Fase F)
+
+| Minggu | Topik | Tujuan | Keluaran | Latihan |
+| --- | --- | --- | --- | --- |
+| M1 | Merumuskan proyek akhir | menentukan masalah dan kebutuhan pengguna fiktif | dokumen kebutuhan | wawancara pengguna fiktif |
+| M2 | Studi kasus AI I | menimbang manfaat dan risiko dari sumber publik (mis. kesehatan, pendidikan) | catatan kasus | baca satu kasus dan tulis manfaat dan risikonya |
+| M3 | Studi kasus AI II | menimbang manfaat dan risiko pada bidang lain (mis. transportasi, pertanian, budaya) | catatan kasus | idem |
+| M4 | Hukum dan kebijakan | menjelaskan pokok UU ITE dan UU PDP terkait proyek AI | daftar periksa kepatuhan | periksa rancangan proyek |
+| M5 | Menyiapkan data proyek | memilih data terbuka dan legal atau menyintesis data | catatan sumber dan data | siapkan data proyek |
+| M6 | Garis dasar dan metrik | menentukan metrik dan model pembanding sederhana | laporan garis dasar | hitung garis dasar |
+| M7 | Iterasi model I | memperbaiki model berdasarkan bukti | catatan eksperimen | satu perbaikan terukur |
+| M8 | Iterasi model II | mencatat eksperimen agar dapat diulang | tabel eksperimen | tiga eksperimen |
+| M9 | Ulasan sejawat | menilai data dan model tim lain | catatan ulasan | ulasan |
+| M10 | Kualitas kode dan keterulangan | merapikan kode; menetapkan benih acak; menulis README | proyek rapi | refaktor satu skrip |
+| M11 | Penilaian risiko dan etika proyek | memakai daftar periksa risiko dan dampak | laporan risiko | audit proyek sendiri |
+| M12 | Menyajikan hasil | menyajikan temuan dengan grafik dan narasi jujur | draf presentasi | latihan presentasi |
+| M13 | Proyek | menyiapkan proyek akhir | rencana dan kemajuan | rencana kerja |
+| M14 | Asesmen dan refleksi | menunjukkan kesiapan proyek akhir | uji tulis dan praktik | rubrik |
+
+#### D-XII2 (kelas XII, semester 2; Fase F)
+
+| Minggu | Topik | Tujuan | Keluaran | Latihan |
+| --- | --- | --- | --- | --- |
+| M1 | Perencanaan proyek akhir | menyusun rencana, pembagian peran, dan jadwal | rencana proyek | pilih topik |
+| M2 | Rancangan | merancang data, model, dan evaluasi | dokumen rancangan | rancangan tim |
+| M3 | Sprint 1: data | menyiapkan dan memeriksa data | data siap pakai | catatan kualitas data |
+| M4 | Sprint 1: garis dasar | membuat model pembanding | laporan garis dasar | metrik awal |
+| M5 | Sprint 2: model | membangun dan membandingkan model | model dan catatan | tiga model |
+| M6 | Sprint 2: evaluasi | mengevaluasi dengan benar dan mencari galat | laporan evaluasi | analisis galat |
+| M7 | Sprint 3: penyempurnaan | memperbaiki model dan kode | rilis kandidat | perbaikan |
+| M8 | Pengujian akhir | menguji pada data yang belum dipakai | laporan uji | uji akhir |
+| M9 | Dokumentasi | menulis kartu model dan panduan | dokumen | kartu model |
+| M10 | Ulasan etika dan privasi | memeriksa data pribadi, bias, dan dampak | laporan etika | audit |
+| M11 | Ulasan sejawat | menilai proyek tim lain | catatan ulasan | ulasan |
+| M12 | Presentasi | mendemonstrasikan proyek | demo | presentasi |
+| M13 | Portofolio dan refleksi | mengarsipkan karya dan merefleksikan proses | portofolio | refleksi |
+| M14 | Asesmen | menunjukkan seluruh jalur | uji praktik; rubrik proyek | rubrik |
+
+### 3.5 Jalur E: Komputasi Kuantum dan Cloud Quantum
+
+Jalur komputasi kuantum terpisah (issue #88). Disetujui pemilik pada
+2026-11-19 beserta semua rekomendasi penyusun (bagian 9.3); asal isi:
+[`draf-jalur-e-kuantum.md`](draf-jalur-e-kuantum.md) (riwayat, termasuk
+perbandingan stack, fakta layanan cloud quantum bertanggal akses 2026-11-19
+yang harus dicek ulang sebelum dipakai, dan analisis tabrakan kode).
+**Jalur E adalah pengayaan di luar rumusan CP:** ia tidak menggantikan,
+mengurangi, atau dihitung sebagai pemenuhan butir CP mana pun, dan tidak
+menggeser minggu jalur lain. Kemiripan terdekatnya dengan butir CP (F-BK-b,
+F-AP-d) dicatat terpisah di bagian 4.5 dan tidak dihitung. Semua tabel jalur E
+`[asumsi]` sebagai rancangan penyusun yang disetujui; belum diuji di kelas.
+
+**Rentang kelas dan kode minggu (keputusan pemilik 2026-11-19)**
+
+- Jalur E hanya **kelas XI dan XII** (Fase F; empat semester: XI1, XI2, XII1,
+  XII2). Jalur E tidak memiliki semester kelas X dan tidak mengikuti blok
+  fondasi; semester XI1 dan XI2 sebagai **inti** (konsep, matematika,
+  simulator, entanglement, Deutsch-Jozsa), XII1 dan XII2 sebagai **lanjutan**
+  (Grover, derau, cloud, proyek akhir). Murid yang hanya sempat dua semester
+  tetap menutup inti yang utuh.
+- Awalan kode minggu jalur E adalah `E-` (contoh `E-XI1-M3`). Aturan
+  penulisan: kode minggu selalu memuat segmen kelas dan diakhiri `M<n>`; kode
+  butir CP selalu `E-` atau `F-` diikuti elemen dua huruf (`E-BK-e`). Tidak ada
+  tabrakan mesin antara keduanya; kerancuan lisan ("butir E" dan "jalur E")
+  diatasi dengan aturan ini dan tanpa mengubah skema.
+- Beban 3 JP per minggu seperti jalur lain.
+
+**Tujuan jalur E**
+
+Setelah menyelesaikan jalur E, murid mampu `[asumsi]`:
+
+1. menjelaskan qubit, superposisi, pengukuran, dan entanglement dengan
+   bahasa dan matematika yang tepat pada tingkat SMA (vektor keadaan dan
+   matriks gerbang), tanpa mitos populer;
+2. menyusun dan menelusuri sirkuit kuantum kecil, serta memprediksi
+   distribusi hasil pengukurannya;
+3. menulis simulator vektor keadaan sederhana dan memakainya untuk memeriksa
+   perhitungan tangan;
+4. menjelaskan gagasan algoritma Deutsch-Jozsa, Bernstein-Vazirani, dan
+   Grover sederhana, serta membandingkan jumlah pertanyaan (query) dengan
+   pendekatan klasik;
+5. menjelaskan peran dan keterbatasan cloud quantum (antrian pekerjaan,
+   derau, kuota, biaya) dan membaca hasil pekerjaan pada perangkat nyata
+   yang dijalankan guru;
+6. menilai klaim populer tentang komputasi kuantum secara kritis.
+
+Bukan tujuan: fisika kuantum formal, pembuktian kompleksitas, pengodean
+koreksi galat kuantum, dan menjalankan algoritma Shor atau Grover berskala
+bermakna (tidak mungkin di perangkat saat ini untuk ukuran masalah kelas;
+catatan itu sendiri `[belum terverifikasi]` sampai modul ditulis dan
+disumberkan).
+
+**Prasyarat matematika dan ketergantungan**
+
+| Topik | Kebutuhan di jalur E | Sumber pemenuhan | Status |
+| --- | --- | --- | --- |
+| Probabilitas dasar (peluang, nilai harapan, distribusi diskret) | aturan Born; membaca histogram hasil | Matematika sekolah `[belum terverifikasi]`; dibangun ulang singkat di `E-XI1-M2` | Tidak ada di seri #87 |
+| Vektor (penjumlahan, perkalian skalar, panjang, hasil kali dalam) | vektor keadaan | Matematika sekolah `[belum terverifikasi]`; `E-XI1-M2` | Tidak ada di seri #87 |
+| Matriks (perkalian matriks-vektor, matriks-matriks, transpos) | gerbang sebagai matriks | Matematika sekolah `[belum terverifikasi]`; `E-XI1-M3` | Tidak ada di seri #87 |
+| Bilangan kompleks dasar (a + bi, modulus, konjugat) | amplitudo dan fase | Matematika sekolah `[belum terverifikasi]`; `E-XI1-M4`; **amplitudo real dahulu**, kompleks hanya untuk fase | Tidak ada di seri #87 |
+| Biner dan bit | kaitan qubit dengan bit | `FND-X1-M3`; `matkom-sistem-bilangan-basis` | Ada |
+| Logika Boolean dan tabel kebenaran | gerbang klasik, oracle | `matkom-logika-proposisi` | Ada |
+| Fungsi, satu-satu dan pada | reversibilitas; oracle `f` | `matkom-himpunan-relasi-fungsi` | Ada |
+| Pertumbuhan fungsi dan logaritma basis 2 | √N lawan N; 2^n amplitudo | `matkom-pertumbuhan-fungsi` | Ada |
+| Induksi dan rekursi | opsional (pola Grover berulang) | `matkom-induksi-dan-rekursi-matematis` | Ada (opsional) |
+
+Vektor, matriks, bilangan kompleks, dan probabilitas dibangun di dalam jalur
+selama tiga minggu `E-XI1-M2..M4` (keputusan pemilik 2026-11-19; dapat
+dipromosikan menjadi modul `matkom-*` setelah dicoba). Apakah materi itu
+sudah diajarkan di Matematika SMA sebelum kelas XI tidak diverifikasi.
+Minggu simulator buatan sendiri (`E-XI1-M10..M12`, `E-XI2-M4`) mensyaratkan
+dasar pemrograman jalur A atau B (setidaknya setara `A-X1-M9..M12` atau
+`B-X1-M9..M12`); bagian konsep terbuka bagi semua murid.
+
+**Stack dan akses cloud quantum (keputusan pemilik 2026-11-19, bagian 9.3)**
+
+- Inti murid: Quirk (alat visual di peramban) ditambah simulator vektor
+  keadaan buatan sendiri dalam bahasa jalurnya (C++ jalur A atau
+  TypeScript/Bun jalur B).
+- Python dengan Qiskit dan simulator lokal hanya sebagai **demonstrasi guru**
+  (`E-XII1-M9..M12`), bukan prasyarat murid.
+- Cloud quantum: **demonstrasi guru** lewat satu akun sekolah atau lembaga
+  (satu atau dua pekerjaan kecil per semester); murid tidak memakai akun
+  cloud quantum. Syarat usia dan akun lembaga diverifikasi pada ketentuan
+  layanan terkini sebelum akun dibuat.
+
+**Kebijakan akun tanpa data pribadi siswa**
+
+Selaras [ADR-0004](../../architecture/adr/0004-no-learner-personal-data.md)
+dan silabus bagian 7.3 `[asumsi]`:
+
+1. **Tidak ada akun cloud quantum atas nama murid.** Murid memakai simulator
+   lokal dan alat visual tanpa akun.
+2. Bila ada demonstrasi cloud, **satu akun guru atau sekolah (akun lembaga,
+   bukan akun pribadi guru bila mungkin)**; guru yang mengoperasikannya.
+3. Sirkuit, nama pekerjaan, tag, dan catatan yang dikirim ke layanan memakai
+   label sintetis (mis. `kelas-demo-01`), tanpa nama murid, sekolah, atau
+   penanda lain; hasil yang disimpan hanya histogram agregat.
+4. Token API dan kunci akun adalah rahasia: tidak di-commit, tidak ditaruh
+   di komputer murid, tidak ditayangkan di layar kelas.
+5. Layanan yang pemrosesannya di luar negeri (IBM Open Plan: wilayah
+   us-east) hanya menerima data sintetis; tidak ada data pribadi yang
+   dikirim, sehingga pertanyaan transfer lintas batas tidak muncul.
+6. Sebelum satu akun dibuat, guru atau sekolah membaca ketentuan layanan
+   terkini dan memverifikasi batas usia serta syarat akun lembaga; temuan
+   dicatat tanpa disalin ke repositori sebagai klaim.
+
+#### E-XI1 (kelas XI, semester 1; Fase F)
+
+Tahap: inti I — konsep dan matematika.
+
+| Minggu | Topik | Tujuan | Keluaran | Latihan |
+| --- | --- | --- | --- | --- |
+| M1 | Mengapa komputasi kuantum; bit klasik dan acak | membedakan bit klasik dan qubit secara garis besar; menyebut apa yang dijanjikan dan bukan; membuka alat visual | catatan "fakta dan mitos" | membandingkan koin acak klasik dengan sirkuit satu qubit di alat visual |
+| M2 | Probabilitas dan vektor | menghitung peluang diskret; memakai vektor dan hasil kali dalam | lembar vektor dan peluang | vektor dua dimensi; panjang dan normalisasi |
+| M3 | Matriks | mengalikan matriks dengan vektor dan dengan matriks | lembar matriks | perkalian tangan; periksa dengan program kecil |
+| M4 | Bilangan kompleks dasar | menghitung modulus dan konjugat; menjelaskan fase | lembar kompleks | modulus kuadrat; rotasi fase |
+| M5 | Qubit dan keadaan | menuliskan `\|0>`, `\|1>` dan keadaan umum sebagai vektor; syarat normalisasi | lembar keadaan | memeriksa keadaan sah atau tidak |
+| M6 | Superposisi dan aturan Born | menghitung peluang hasil dari amplitudo | tabel peluang | keadaan acak sintetis; hitung peluang |
+| M7 | Pengukuran | menjelaskan hasil acak, runtuhnya keadaan, dan jumlah percobaan (shot) | histogram hasil | memprediksi lalu mengamati histogram di alat visual |
+| M8 | Gerbang satu qubit | menerapkan X, Z, H sebagai matriks | tabel gerbang | tangan: H pada `\|0>`; X lalu H |
+| M9 | Sirkuit satu qubit dan interferensi | menelusuri sirkuit satu qubit; menjelaskan interferensi (H lalu H) | sirkuit beranotasi | merancang sirkuit dengan hasil yang ditentukan |
+| M10 | Simulator sendiri I | menyimpan vektor keadaan; menerapkan matriks gerbang | program simulator satu qubit | C++ (jalur A) atau TypeScript/Bun (jalur B) |
+| M11 | Simulator sendiri II | menyimulasikan pengukuran dengan pembangkit acak; membandingkan dengan teori | program ukur dan histogram | seribu shot; bandingkan dengan peluang tangan |
+| M12 | Dua qubit dan hasil kali tensor | menuliskan keadaan dua qubit sebagai vektor 4 dimensi | tabel dasar `\|00>..\|11>` | menyusun keadaan produk |
+| M13 | Proyek mini | menyusun dan menjelaskan satu sirkuit satu qubit | laporan dan sirkuit | pembangkit bit simulasi dan uji frekuensi (catatan: simulasi, bukan keacakan sejati) |
+| M14 | Asesmen dan refleksi | menunjukkan matematika dan sirkuit satu qubit | uji tulis dan praktik; jurnal | kuis |
+
+#### E-XI2 (kelas XI, semester 2; Fase F)
+
+Tahap: inti II — entanglement dan algoritma pertama.
+
+| Minggu | Topik | Tujuan | Keluaran | Latihan |
+| --- | --- | --- | --- | --- |
+| M1 | Gerbang dua qubit: CNOT | menerapkan CNOT sebagai matriks 4x4 | tabel CNOT | tangan: CNOT pada keadaan dasar |
+| M2 | Entanglement dan keadaan Bell | membangun keadaan Bell dari H dan CNOT; menjelaskan tidak dapat difaktorkan | sirkuit Bell | memeriksa apakah keadaan dapat difaktorkan |
+| M3 | Mengukur qubit terjerat | menjelaskan korelasi hasil; menolak mitos komunikasi lebih cepat dari cahaya | catatan korelasi | simulasi Bell seribu shot; ukur korelasi |
+| M4 | Simulator sendiri III: n qubit | memperluas simulator ke n qubit; menghitung memori 2^n | simulator n qubit | tabel memori; titik jenuh di mesin lab |
+| M5 | Gerbang fase dan rotasi (pengayaan) | memakai Y, S, T dan rotasi; menjelaskan fase global dan relatif | tabel gerbang lanjutan | gerbang pengganti dengan urutan gerbang lain |
+| M6 | Reversibilitas | menjelaskan mengapa gerbang kuantum reversibel; gerbang klasik reversibel (Toffoli) | tabel kebenaran Toffoli | membuat AND dari Toffoli |
+| M7 | Tak dapat menggandakan dan teleportasi (konsep) | menjelaskan tidak dapat menggandakan keadaan; menelusuri sirkuit teleportasi | diagram teleportasi | menelusuri teleportasi pada simulator |
+| M8 | Pengayaan: permainan CHSH | membandingkan strategi klasik dan kuantum secara simulasi | tabel kemenangan | menghitung kemenangan strategi klasik terbaik |
+| M9 | Pengayaan: distribusi kunci (konsep) | menelusuri ide protokol BB84 pada simulasi; menyebut batasnya | catatan protokol | simulasi dengan data sintetis; bukan keamanan nyata |
+| M10 | Oracle dan fungsi Boolean | memodelkan fungsi sebagai oracle; menghitung query | tabel oracle | konstan lawan seimbang |
+| M11 | Algoritma Deutsch | menjelaskan dan menyimulasikan Deutsch satu qubit | sirkuit dan hasil | satu query lawan dua query klasik |
+| M12 | Algoritma Deutsch-Jozsa | menjelaskan dan menyimulasikan Deutsch-Jozsa pada tiga qubit | sirkuit dan hasil | membuat oracle konstan dan seimbang |
+| M13 | Proyek mini | menyajikan satu fenomena (Bell, teleportasi, atau Deutsch-Jozsa) | simulasi dan poster | pilihan kelompok |
+| M14 | Asesmen dan refleksi | menunjukkan entanglement dan algoritma pertama | uji tulis dan praktik; jurnal | kuis |
+
+#### E-XII1 (kelas XII, semester 1; Fase F)
+
+Tahap: lanjutan I — algoritma dan alat nyata.
+
+| Minggu | Topik | Tujuan | Keluaran | Latihan |
+| --- | --- | --- | --- | --- |
+| M1 | Bernstein-Vazirani | menjelaskan dan menyimulasikan algoritma | sirkuit dan hasil | menemukan string rahasia dengan satu query |
+| M2 | Pembalikan fase | menjelaskan oracle fase dan tanda minus pada amplitudo | diagram amplitudo | menelusuri `\|x>` ke `-\|x>` |
+| M3 | Grover I | menjelaskan gagasan pencarian tak terurut dan oracle | sketsa algoritma | dua qubit: satu item ditandai |
+| M4 | Grover II | menjelaskan operator difusi dan amplifikasi amplitudo | diagram amplitudo per iterasi | menelusuri tiga dan empat item dengan tangan |
+| M5 | Grover III: jumlah iterasi | menghubungkan jumlah iterasi dengan √N; membandingkan dengan pencarian linear | tabel perbandingan | simulator sendiri: N sampai batas mesin; hitung query |
+| M6 | Gagasan Fourier kuantum dan Shor (konsep) | menyebut peran transformasi Fourier dan ide pemfaktoran; tidak mengimplementasikan | catatan konsep | membaca bagian tertentu sumber yang disumberkan |
+| M7 | Batas komputasi kuantum | membedakan klaim "lebih cepat" yang benar dan keliru | tabel fakta dan mitos II | menilai tiga klaim berita secara kritis |
+| M8 | Derau dan dekoherensi | menjelaskan sumber derau; menambahkan model derau sederhana di simulator | simulator dengan derau | membandingkan histogram ideal dan berderau |
+| M9 | Pustaka Qiskit dan Python I (demonstrasi) | membaca sirkuit yang sama dalam Qiskit; menjalankan pada simulator lokal | sirkuit Qiskit | membandingkan hasil dengan simulator sendiri |
+| M10 | Pustaka Qiskit dan Python II | membaca dan memodifikasi kode; menjalankan Bell dan Grover kecil secara lokal | catatan perbandingan | modifikasi jumlah shot dan gerbang |
+| M11 | Peran cloud quantum | menjelaskan alur: sirkuit, kompilasi ke gerbang perangkat, antrian, eksekusi, hasil; menyebut kuota, biaya, dan batas usia akun | diagram alur cloud quantum | menelaah ketentuan layanan secara bersama; menghitung biaya contoh dari tarif bersumber (bagian 6.4) |
+| M12 | Demonstrasi cloud quantum oleh guru | mengamati satu pekerjaan Bell kecil pada perangkat nyata lewat akun guru atau sekolah; membandingkan dengan simulator | histogram perangkat lawan simulator | menjelaskan selisih hasil; bila akses tidak tersedia, pakai hasil terarsip sintetis atau perekaman layar tanpa data pribadi |
+| M13 | Proyek mini | membandingkan simulator dan hasil perangkat | laporan | pilihan kelompok |
+| M14 | Asesmen dan refleksi | menunjukkan Grover, derau, dan alur cloud | uji tulis dan praktik; jurnal | kuis |
+
+#### E-XII2 (kelas XII, semester 2; Fase F)
+
+Tahap: lanjutan II — proyek akhir.
+
+| Minggu | Topik | Tujuan | Keluaran | Latihan |
+| --- | --- | --- | --- | --- |
+| M1 | Membaca hasil nyata | membaca histogram, galat statistik, dan jumlah shot | catatan interpretasi | selang kepercayaan sederhana dari shot |
+| M2 | Mitigasi derau (konsep) | menjelaskan gagasan mitigasi dan batasnya | catatan konsep | mengulang simulasi dengan model derau berbeda |
+| M3 | Pengayaan: algoritma hibrida (konsep) | menjelaskan pola kuantum-klasik bergantian (mis. VQE, QAOA) secara garis besar | diagram hibrida | menelusuri satu iterasi pada simulator |
+| M4 | Dampak ke keamanan informasi (konsep) | menjelaskan, dengan sumber, hubungan komputasi kuantum dengan kriptografi | catatan bersumber | menyusun kutipan sumber; tanpa klaim tak bersumber |
+| M5 | Etika, ekspektasi, dan karier | membedakan harapan realistis dan hype | refleksi | analisis satu artikel populer |
+| M6 | Proyek akhir: rancangan | merancang proyek (simulator, algoritma, atau studi banding) | dokumen rancangan | pilih topik |
+| M7 | Proyek akhir: implementasi I | membangun inti proyek | kode dan catatan | sprint |
+| M8 | Proyek akhir: implementasi II | menguji dan membandingkan dengan perhitungan tangan | uji dan catatan | sprint |
+| M9 | Proyek akhir: pengujian dan dokumentasi | mendokumentasikan dengan jelas | dokumentasi | tinjau sejawat |
+| M10 | Proyek akhir: pengujian lanjutan | memperbaiki dan mengoptimalkan | versi perbaikan | sprint |
+| M11 | Proyek akhir: presentasi | mempresentasikan | presentasi | demo |
+| M12 | Proyek akhir: portofolio | mengarsipkan tanpa data pribadi | portofolio | rapikan |
+| M13 | Cadangan terstruktur: tinjauan | menutup celah materi | ringkasan | pilihan kelompok |
+| M14 | Asesmen dan refleksi | menunjukkan seluruh jalur | uji tulis dan praktik; jurnal | kuis |
+
+### 3.6 Ringkasan jalur
+
+Sumber data `tracks.json`. Kolom "Kelas mulai" menyatakan kelas pertama jalur:
+jalur yang mulai di kelas X berjalan enam semester dan mengikuti blok fondasi
+(bagian 3.0), dengan minggu jalur kelas X semester 1 mulai dari M8; jalur
+yang mulai di kelas XI berjalan empat semester (jalur E; 56 minggu, tanpa
+blok fondasi). Kolom "Hubungan dengan CP": jalur "dalam CP" dipetakan ke butir
+CP pada bagian 4.1 dan 4.2; jalur "pengayaan di luar CP" tidak pernah dihitung
+sebagai pemenuhan butir CP (irisan dicatat di bagian 4.5).
+
+| Jalur | Nama | Bahasa dan alat | Kelas mulai | Hubungan dengan CP |
+| --- | --- | --- | --- | --- |
+| A | Algoritmik dengan C++ | C++ | X | dalam CP |
+| B | Web dengan JavaScript, TypeScript, dan Bun | JavaScript, TypeScript, Bun | X | dalam CP |
+| C | IoT dan Robotika | C++ (gaya Arduino), ESP32 | X | dalam CP |
+| D | Kecerdasan Buatan dan Analisis Data | Orange Data Mining, Python | X | pengayaan di luar CP |
+| E | Komputasi Kuantum dan Cloud Quantum | Quirk, simulator buatan sendiri | XI | pengayaan di luar CP |
+
 ## 4. Pemetaan elemen CP, topik, minggu, jalur
+
+Pemetaan 4.1 dan 4.2 memuat jalur yang dihitung memenuhi CP (jalur A, B, dan
+C). Tanda "(parsial)" pada kolom Jalur berlaku untuk jalur yang tepat
+mendahuluinya (misalnya `B (parsial), C`: B parsial, C penuh). Jalur D dan E
+adalah pengayaan di luar rumusan CP; kemiripannya dicatat terpisah di bagian
+4.5 dan tidak dihitung.
 
 ### 4.1 Fase E
 
 | Butir CP | Topik | Minggu | Jalur |
 | --- | --- | --- | --- |
-| E-BK-a | struktur data dan algoritma standar | A-X2-M6..M10; B-X2-M7..M9 | A, B |
-| E-BK-b | data berkualitas | A-X1-M13; B-X2-M10 | A, B |
-| E-BK-c | menerapkan algoritma dan struktur data standar | A-X2-M6..M10, M13; B-X2-M7..M9, M13 | A, B |
-| E-BK-d | pseudocode dan program dalam bahasa komputer | A-X1-M8..M12; A-X2-M1..M3; B-X1-M8..M12; B-X2-M1..M3 | A, B |
-| E-BK-e | model I-P-O dan sistem operasi | FND-X1-M1..M2 | A, B |
+| E-BK-a | struktur data dan algoritma standar | A-X2-M6..M10; B-X2-M7..M9; C-X2-M4, M9, M10 | A, B, C |
+| E-BK-b | data berkualitas | A-X1-M13; B-X2-M10; C-X2-M3, M12 | A, B, C |
+| E-BK-c | menerapkan algoritma dan struktur data standar | A-X2-M6..M10, M13; B-X2-M7..M9, M13; C-X2-M4, M9..M10, M13 | A, B, C |
+| E-BK-d | pseudocode dan program dalam bahasa komputer | A-X1-M8..M12; A-X2-M1..M3; B-X1-M8..M12; B-X2-M1..M3; C-X1-M8..M13 | A, B, C |
+| E-BK-e | model I-P-O dan sistem operasi | FND-X1-M1..M2; C-X1-M8 | A, B, C |
 | E-LD-a | mesin pencari (hanya untuk dokumentasi teknis) | B-X2-M11 | B (parsial) |
 | E-LD-d | perangkat pengolah dokumen, lembar kerja, presentasi | FND-X1-M7 | A, B |
-| E-LD-e | keamanan dasar konektivitas jaringan | FND-X1-M4..M6 | A, B |
+| E-LD-e | keamanan dasar konektivitas jaringan | FND-X1-M4..M6; C-XI2-M1..M2 | A, B, C |
 | E-LD-f | produksi konten dan kolaborasi | B-X2-M4..M6, M12..M13 | B |
 | E-LD-g | HAKI dan lisensi | FND-X1-M2, M6 | A, B |
 | E-LD-k | kata sandi dan autentikasi dua langkah | FND-X1-M6 | A, B |
@@ -565,36 +1209,41 @@ Minggu 1-7 adalah blok fondasi (bagian 3.0); minggu jalur dimulai dari M8.
 
 | Butir CP | Topik | Minggu | Jalur |
 | --- | --- | --- | --- |
-| F-BK-a | proses rekayasa | A-XI1-M1..M2; A-XII2-M11..M13; B-XI1-M1, M12; B-XII2-M1..M13 | A, B |
-| F-BK-b | beberapa strategi, justifikasi efisiensi | A-XI1-M3..M7, M11..M12; A-XI2-M1..M4; A-XII2-M8, M10; B-XI1-M9..M10 | A, B |
-| F-BK-c | struktur data lebih kompleks dan abstrak | A-XI1-M9..M10; A-XI2-M5..M8; A-XII1-M1..M5, M9..M10; B-XI1-M8 | A, B |
-| F-BK-d | jaringan (HTTP) | B-XI2-M11 | B (parsial) |
-| F-LD-d | merancang kebutuhan sistem | B-XII2-M1..M2 | B |
-| F-LD-e | keamanan jaringan lanjut | B-XI2-M10 | B (parsial) |
+| F-BK-a | proses rekayasa | A-XI1-M1..M2; A-XII2-M11..M13; B-XI1-M1, M12; B-XII2-M1..M13; C-XI1-M1..M2; C-XII1-M1..M2, M12; C-XII2-M5..M12 | A, B, C |
+| F-BK-b | beberapa strategi, justifikasi efisiensi | A-XI1-M3..M7, M11..M12; A-XI2-M1..M4; A-XII2-M8, M10; B-XI1-M9..M10; C-XI1-M5..M8; C-XII1-M8 | A, B, C |
+| F-BK-c | struktur data lebih kompleks dan abstrak | A-XI1-M9..M10; A-XI2-M5..M8; A-XII1-M1..M5, M9..M10; B-XI1-M8; C-XI1-M3, M9 | A, B, C (parsial) |
+| F-BK-d | jaringan (HTTP; jalur C: pengiriman data antarperangkat dan jaringan IoT) | B-XI2-M11; C-XI1-M10..M12; C-XI2-M1, M3..M8 | B (parsial), C |
+| F-LD-d | merancang kebutuhan sistem | B-XII2-M1..M2; C-XII1-M1..M2 | B, C |
+| F-LD-e | keamanan jaringan lanjut | B-XI2-M10; C-XI2-M2 | B (parsial), C (parsial) |
 | F-LD-f | mengkreasi konten digital | B-XII1-M6..M7; B-XII2-M3..M8 | B |
-| F-LD-g | hukum (UU ITE, UU PDP) | B-XI2-M10; B-XII2-M10 | B |
-| F-LD-i | kata sandi dan autentikasi | B-XII1-M10 | B (parsial) |
-| F-AD-a | data terbuka, keputusan, prediksi | A-XI2-M9..M13; B-XI2-M4..M8 | A, B |
-| F-AP-a | konsep strategi algoritmik | A-XI1-M3..M12; A-XI2-M1..M4; B-XI1-M9 | A, B |
-| F-AP-b | program terstruktur berdasarkan strategi | A-XI1-M3..M13; A-XI2-M1..M4; B-XI1-M8..M9, M13 | A, B |
-| F-AP-c | pemeliharaan dan kualitas kode | A-XI1-M2; A-XII2-M1..M2; B-XI1-M4, M7, M11..M12; B-XII1-M9, M12 | A, B |
-| F-AP-d | struktur data kompleks dan library | A-XI1-M9..M10; A-XII1-M12; B-XI1-M8; B-XI2-M1..M3; B-XII1-M1..M6 | A, B |
+| F-LD-g | hukum (UU ITE, UU PDP) | B-XI2-M10; B-XII2-M10; C-XII1-M11 | B, C (parsial) |
+| F-LD-i | kata sandi dan autentikasi | B-XII1-M10; C-XI2-M2 | B (parsial), C (parsial) |
+| F-AD-a | data terbuka, keputusan, prediksi | A-XI2-M9..M13; B-XI2-M4..M8; C-XI2-M9..M12 | A, B, C |
+| F-AP-a | konsep strategi algoritmik | A-XI1-M3..M12; A-XI2-M1..M4; B-XI1-M9; C-XI1-M5..M8; C-XII1-M6..M8 | A, B, C (parsial) |
+| F-AP-b | program terstruktur berdasarkan strategi | A-XI1-M3..M13; A-XI2-M1..M4; B-XI1-M8..M9, M13; C-XI1-M3..M7; C-XII1-M5..M8 | A, B, C |
+| F-AP-c | pemeliharaan dan kualitas kode | A-XI1-M2; A-XII2-M1..M2; B-XI1-M4, M7, M11..M12; B-XII1-M9, M12; C-XI1-M2; C-XII2-M1..M2 | A, B, C |
+| F-AP-d | struktur data kompleks dan library | A-XI1-M9..M10; A-XII1-M12; B-XI1-M8; B-XI2-M1..M3; B-XII1-M1..M6; C-XI1-M4; C-XII2-M6..M9 | A, B, C |
 
 ### 4.3 Butir CP di luar silabus coding ini
 
-Butir berikut tidak dicakup oleh jalur A dan B maupun blok fondasi (tidak
+Butir berikut tidak dicakup oleh jalur A, B, dan C maupun blok fondasi (tidak
 dihilangkan dari CP): E-LD-b, c, h, i, j; F-LD-a, b, c, h, j; F-BK-d
-(kecuali pengiriman data HTTP pada B-XI2-M11). Pada v1.0 daftar ini juga
+(kecuali pengiriman data HTTP pada B-XI2-M11 dan pengiriman data antarperangkat jalur C pada bagian 4.2). Pada v1.0 daftar ini juga
 memuat E-LD-d dan E-LD-e; keduanya kini tercakup oleh blok fondasi
 (bagian 4.1).
 
 **Keputusan pemilik (2026-11-18, issue #52):** butir-butir itu dicakup lewat
 **modul pendamping** literasi digital (issue #69). Interaksi dengan
 perangkat fisik seperti IoT dan robot (disebut di panduan, bagian C, bukan
-di rumusan CP) menjadi **jalur C terpisah** (issue #68). Keduanya disusun
-untuk silabus v1.1 dan baru berlaku setelah disetujui pemilik. **Keputusan
-pemilik (2026-11-18, issue #86/#92):** E-LD-d keluar dari daftar modul
-pendamping karena menjadi FND-X1-M7.
+di rumusan CP) menjadi **jalur C terpisah** (issue #68), yang kini disetujui
+dan tercantum di bagian 3.3 (v1.2). **Keputusan pemilik (2026-11-18, issue
+#86/#92):** E-LD-d keluar dari daftar modul pendamping karena menjadi
+FND-X1-M7.
+
+**Celah jalur A (keputusan pemilik 2026-11-19, issue #105):** butir F-LD-d dan
+F-LD-e tidak dicakup jalur A (hanya jalur B dan C, bagian 4.2). Celah itu
+**dicakup modul pendamping, issue #105** (modul lintas jalur yang dikerjakan
+terpisah; tidak dibuat di silabus ini).
 
 ### 4.4 Pengantar blok fondasi (tidak dihitung sebagai pemenuhan butir CP)
 
@@ -615,11 +1264,41 @@ memahami komputer Von Neumann (E-BK-e), tipe data pada A-X1-M9, operasi bit
 dihitung sebagai pemenuhan butir CP mana pun**, karena rumusan CP yang
 dikutip tidak menyebutnya secara eksplisit.
 
-## 5. Jembatan ke OSN (jalur A)
+### 4.5 Irisan jalur pengayaan di luar CP (tidak dihitung sebagai pemenuhan CP)
+
+Jalur D dan E berada di luar rumusan CP (bagian 3.4 dan 3.5), sehingga
+**tidak muncul di tabel 4.1 dan 4.2 dan tidak dihitung sebagai pemenuhan
+butir CP mana pun**. Tabel ini hanya mencatat kemiripan terdekat agar
+pembaca dapat menilai; seluruh tingkat irisan adalah tafsir penyusun. Rumusan
+butir ada di bagian 1.3 (kode di bagian 1.4). Penyusun tidak memeriksa apakah
+peraturan lain menyebut AI atau komputasi kuantum di mata pelajaran
+Informatika `[belum terverifikasi]`.
+
+| Jalur | Butir CP | Topik | Minggu | Tingkat irisan |
+| --- | --- | --- | --- | --- |
+| D | F-AD-a | data terbuka dan legal, prediksi | D-XI1-M5..M8, M13; D-XII1-M5 | **Irisan terdekat.** Sedang: rumusan menyebut "prediksi" dan "tanpa atau dengan komputer", tetapi tidak menyebut AI atau pembelajaran mesin. |
+| D | E-BK-b | kualitas dan pelabelan data | D-X1-M9, M13; D-X2-M1 | Rendah-sedang: kualitas dan pelabelan data. |
+| D | F-LD-b | verifikasi konten buatan AI | D-X2-M11; D-XI2-M10 | Rendah-sedang: verifikasi konten buatan AI. |
+| D | E-LD-g | lisensi data dan keluaran generatif | D-X2-M12 | Rendah: lisensi data dan keluaran generatif. |
+| D | F-LD-g | pelindungan data pribadi dan UU ITE | D-X2-M3; D-XII1-M4 | Rendah: pelindungan data pribadi dan UU ITE sebatas pokok. |
+| D | E-LD-l | privasi pada layanan AI daring | D-X2-M3 | Rendah: privasi pada layanan AI daring. |
+| D | F-AP-d | memakai library untuk model | D-XI1-M3..M4, M9; D-XI2-M2..M8 | Rendah, hanya karena alat memakai coding (Python): memakai library, tetapi struktur data kompleks bukan fokus. |
+| E | F-BK-b | membandingkan algoritma kuantum dengan pendekatan klasik | E-XII1-M5; E-XI2-M12 | Latihan serupa: membandingkan Grover dengan pencarian linear dan Deutsch-Jozsa dengan pendekatan klasik; tidak dihitung. |
+| E | F-AP-d | simulator vektor keadaan dan Qiskit | E-XI1-M10..M11; E-XI2-M4; E-XII1-M9..M10 | Menyentuh butir ini lewat simulator buatan sendiri dan penggunaan Qiskit (minggu sesuai rencana bagian 3.5); tidak dihitung. |
+
+Butir yang tidak disentuh jalur D: E-BK-a, c, d, e; F-BK-b, c, d; F-AP-a, b, c
+(kecuali kualitas kode di `D-XII1-M10`, rendah). Jalur D tidak melatih struktur
+data atau strategi algoritmik; ia tidak menggantikan jalur A dan B.
+
+## 5. Jembatan ke OSN
 
 ID rumpun diambil dari `data/osn/topic-families.json` (silabus OSN v2.0).
-Pemetaan ini penilaian penyusun, bukan bagian dari data OSN. Topik di luar
+Pemetaan ini penilaian penyusun, bukan bagian dari data OSN. Jalur A
+menyiapkan seluruh rumpun (bagian 5.1); jalur C hanya sebagian (bagian 5.2);
+jalur D dan E tidak menjanjikan persiapan OSN (bagian 5.3). Topik di luar
 rumusan CP ditandai **P** (pengayaan, melampaui CP).
+
+### 5.1 Jalur A
 
 **Keputusan pemilik (2026-11-18, issue #52):** topik bertanda **P** adalah
 **pengayaan opsional** — wajib bagi siswa yang menuju OSN, opsional untuk
@@ -641,6 +1320,33 @@ kelas reguler jalur A.
 Kesepuluh id rumpun tercakup. Catatan: kedalaman yang dituntut OSN
 (misalnya tingkat kesulitan soal) tidak dijamin oleh silabus ini; jembatan di
 sini hanya menyiapkan topik, bukan menggantikan pembinaan OSN.
+
+### 5.2 Jalur C
+
+Jalur C **bukan pembinaan OSN**; murid yang menuju OSN sebaiknya mengambil
+jalur A. Topik jalur C yang menyiapkan sebagian rumpun OSN (penilaian
+penyusun, bukan data OSN):
+
+| Rumpun materi OSN (`id`) | Topik jalur C yang menyiapkan | Minggu | Catatan |
+| --- | --- | --- | --- |
+| `dasar-pemrograman` | variabel, percabangan, perulangan, fungsi pada mikrokontroler | C-X1-M8..M12 | Hanya sebagian (tanpa `cin`/`cout`, tanpa string). |
+| `logika-bitwise` | logika Boolean | C-X1-M9 | Hanya logika Boolean; operasi bit tidak dibahas. |
+| `struktur-data` | array, stack, queue, penyangga melingkar | C-X2-M4, M9; C-XI1-M9 | Array, stack, queue, penyangga. |
+| `search-sort` | median dari data sensor | C-X2-M10 | Median; bukan pengurutan penuh. |
+
+Rumpun lain tidak tersentuh. Selaras sintaks: `C-X1-M8..M12` memakai C++
+dengan sintaks yang sama dengan `A-X1-M9..M12`, sehingga murid jalur C dapat
+berpindah atau mengambil jalur A tambahan dengan penyesuaian kecil
+(`cin`/`cout` diganti `Serial`). `C-XI2` (JSON, HTTP) beririsan dengan
+`B-XI2` sehingga murid dapat memakai keluaran data jalur C pada proyek web
+`[asumsi]`.
+
+### 5.3 Jalur D dan E
+
+Jalur D dan E tidak memiliki jembatan ke OSN dan tidak ada klaim bahwa
+keduanya menyiapkan OSN: rumpun materi OSN bersifat algoritmik (bagian 5.1),
+sedangkan kedua jalur adalah pengayaan di luar CP (bagian 4.5). Siswa yang
+menuju OSN sebaiknya mengambil jalur A.
 
 ## 6. Analisis kelayakan `awcms-one` untuk SMA (jalur B)
 
@@ -742,6 +1448,9 @@ Skor ini penilaian penyusun, bukan pengukuran.
 | A | Komputer dengan g++ (C++17 atau lebih baru), editor, terminal; tanpa internet pun memadai. |
 | B | Komputer dengan Bun (versi mengikuti `awcms-one`, saat ini 1.4.4), Node tidak wajib, peramban modern, Git, editor; akses internet untuk paket. |
 | B (opsi 1 kelas XII) | Satu atau beberapa mesin lab berkemampuan menjalankan Docker dan PostgreSQL; spesifikasi minimum `[belum terverifikasi]`. |
+| C | ESP32 DevKit (satu per kelompok tiga murid; set robot kelas XII bergilir bila anggaran ada), komputer lab dengan kompiler C++ dan alat unggah, komponen elektronik dasar, daya USB atau baterai bertegangan rendah tanpa listrik jaringan; jaringan lab terpisah dan penengah pesan lokal di komputer guru untuk kelas XI semester 2; sekolah tanpa perangkat: set dipinjamkan mitra bergilir, simulator sebagai latihan (dukungan simulator `[belum terverifikasi]`). |
+| D | Komputer lab dengan Orange Data Mining (kelas X); Python dengan `pandas` dan `scikit-learn` mulai kelas XI semester 1 (pemasangan paket butuh internet sekali `[belum terverifikasi]`); spesifikasi minimum menunggu survei lab `[belum terverifikasi]`; tanpa akun pribadi murid; layanan AI daring hanya demonstrasi guru. |
+| E | Peramban untuk Quirk; komputer dengan C++ (jalur A) atau Bun (jalur B) untuk simulator buatan sendiri; demonstrasi guru dengan Python, Qiskit, dan simulator lokal serta, bila ada, satu akun sekolah atau lembaga untuk cloud quantum; tanpa akun murid. |
 | Umum | Akun uji sintetis; tanpa akun pribadi siswa wajib. |
 | Fondasi (kelas X, bersama) | Komputer lab dengan informasi sistem, perangkat pengolah dokumen, lembar kerja, dan presentasi (sumber terbuka atau berbasis web), serta jaringan lab biasa; kartu dan kertas untuk simulasi peran. Komponen bekas dan jaringan lokal terisolasi hanya opsi bila lab menyediakan; internet opsional `[asumsi]`. |
 
@@ -760,6 +1469,10 @@ penyelenggara.
   pribadi siswa.
 - Proyek web (formulir kontak dan sejenisnya) tidak boleh mengumpulkan
   data pribadi nyata; rahasia dan `.env` tidak di-commit.
+- Ketentuan privasi dan keselamatan khusus jalur C, D, dan E ada di bagian
+  3.3, 3.4, dan 3.5 (tanpa kamera atau mikrofon yang merekam murid, tanpa wajah
+  dan suara murid sebagai data latih, tanpa akun murid pada layanan AI atau
+  cloud quantum).
 
 ## 8. Catatan keterbatasan
 
@@ -767,11 +1480,17 @@ penyelenggara.
   `[belum terverifikasi]` (bagian 1; keputusan pemilik: panduan dipakai).
 - Banyak topik jalur A (graf, DP, struktur data lanjut) adalah pengayaan
   opsional untuk jembatan OSN, bukan tuntutan CP (bagian 5).
+- Rencana mingguan jalur C, D, dan E adalah rancangan penyusun `[asumsi]`
+  yang disetujui, belum diuji di kelas, dan belum ditinjau guru atau mitra;
+  harga, spesifikasi, dukungan simulator, ketentuan keselamatan, dan ketentuan
+  layanan cloud quantum banyak yang `[belum terverifikasi]` (lihat draf
+  masing-masing sebagai riwayat) dan harus diselesaikan sebelum anggaran atau
+  pelaksanaan. Jalur D dan E bukan bagian CP (bagian 4.5).
 - Rencana mingguan belum diuji di kelas; susunan kelas X v1.1 (tujuh minggu
   fondasi, penggabungan dan penggeseran minggu) adalah rancangan penyusun
   `[asumsi]`; disetujui pemilik sebagai bagian dari v1.1 (bagian 9.2).
 
-## 9. Keputusan pemilik atas pertanyaan terbuka (2026-11-18)
+## 9. Keputusan pemilik atas pertanyaan terbuka (2026-11-18 dan 2026-11-19)
 
 ### 9.0 Keputusan atas silabus v1.0 (issue #52)
 
@@ -818,6 +1537,66 @@ jalur A dan B, pemetaan CP (bagian 4), dan jembatan OSN (bagian 5) sebagaimana
 tertulis di dokumen ini. Jalur C (#68) dan modul pendamping (#69) tidak
 termasuk persetujuan ini.
 
+### 9.3 Keputusan atas draf jalur C, D, dan E; silabus v1.2 (2026-11-19)
+
+Dijawab pemilik lewat dialog pilihan pada 2026-11-19 dan dicatat di issue #68
+(jalur C), #84 (jalur D), dan #88 (jalur E). Pemilik **menyetujui draf jalur C,
+D, dan E beserta semua rekomendasi penyusun**: setiap pertanyaan terbuka di draf
+dijawab dengan opsi rekomendasinya (untuk jalur E: kelas XI-XII saja dan
+awalan kode `E-`). Draf tetap tersimpan sebagai riwayat dengan pertanyaan
+ditandai terjawab. Penyusun tidak mencatat keputusan lain di luar opsi yang
+tertulis di draf.
+
+**Jalur C (issue #68)**
+
+| No. | Pertanyaan | Keputusan |
+| --- | --- | --- |
+| 1 | Platform utama | ESP32 DevKit; cadangan Raspberry Pi Pico (W bila perlu jaringan). |
+| 2 | Bahasa | C++ gaya Arduino, selaras jalur A. |
+| 3 | Pengadaan perangkat | Campuran (mitra dan sekolah); batas tanggung jawab dicatat tertulis. |
+| 4 | Sekolah tanpa perangkat | Set dipinjamkan mitra bergilir, dengan simulator sebagai latihan; dukungan simulator diverifikasi lebih dulu. |
+| 5 | Robot di kelas XII | Satu set bergilir bila anggaran ada; bila tidak, diganti proyek IoT statis. |
+| 6 | Infrastruktur jaringan untuk `C-XI2` | Jaringan lab terpisah dan penengah pesan lokal di komputer guru. |
+| 7 | Murid jalur C yang tidak pernah ambil jalur A | Jalur C mengajarkan dasar pemrograman sendiri (`C-X1-M8..M12`); risiko tujuh minggu padat di kelas X semester 1 diakui. |
+| 8 | Peran mitra pada keselamatan | Mitra menyusun dan mengaudit aturan keselamatan; ditinjau pemilik. |
+| 9 | Isi pasal hukum (UU ITE, UU PDP) di `C-XII1-M11` | Diverifikasi dari sumber resmi sebelum modul ditulis. |
+
+**Jalur D (issue #84)**
+
+| No. | Pertanyaan | Keputusan |
+| --- | --- | --- |
+| 1 | Alat dan coding | Opsi bertahap: tanpa kode di kelas X, Python di kelas XI-XII; cadangan JS/TS selaras jalur B. |
+| 2 | Bahasa pemrograman | Python. |
+| 3 | Layanan AI daring (generatif) | Hanya demonstrasi guru. |
+| 4 | Teachable Machine | Pengayaan dengan data benda (tanpa wajah dan suara). |
+| 5 | Seri Buku AI SMA | Ditautkan setelah guru membaca isinya dan lisensi dijelaskan penerbit (minta kejelasan ke InTech Press). |
+| 6 | Prasyarat | Tanpa prasyarat; Python diajarkan di `D-XI1-M2..M4` (tiga minggu mungkin kurang, perlu diuji di kelas). |
+| 7 | Posisi AI di luar CP | Disebut pengayaan di luar CP dan tidak dihitung sebagai pemenuhan CP (bagian 4.5). |
+| 8 | Kesiapan lab | Diputuskan setelah survei lab; spesifikasi minimum `[belum terverifikasi]`. |
+
+**Jalur E (issue #88)**
+
+| No. | Pertanyaan | Keputusan |
+| --- | --- | --- |
+| 1 | Rentang kelas | XI-XII (empat semester; inti dua semester). |
+| 2 | Awalan kode minggu | `E-`, dengan aturan penulisan (bagian 3.5); tanpa ubah skema. |
+| 3 | Stack inti murid | Quirk ditambah simulator buatan sendiri; Qiskit hanya demonstrasi guru. |
+| 4 | Akses cloud quantum | Demonstrasi guru; akun murid tidak disarankan dan tidak dipakai. |
+| 5 | Matematika yang belum ada di seri matematika komputasi | Dibangun tiga minggu di dalam jalur E (`E-XI1-M2..M4`), dengan opsi dipromosikan menjadi modul `matkom-*` setelah dicoba. |
+| 6 | Python di jalur E | Hanya demonstrasi guru. |
+| 7 | Prasyarat pemrograman | Dasar jalur A atau B diwajibkan untuk minggu simulator; bagian konsep terbuka bagi semua. |
+| 8 | Akun lembaga untuk demonstrasi | Akun sekolah atau lembaga; syarat usia dan akun lembaga diverifikasi pada ketentuan layanan terkini. |
+| 9 | Beban jam | 3 JP per minggu seperti jalur lain. |
+
+**Keputusan terkait: celah F-LD-d dan F-LD-e jalur A (issue #105).** Pemilik
+memutuskan celah itu ditutup dengan **modul pendamping lintas jalur**
+(dikerjakan terpisah dari silabus ini); silabus hanya mencatatnya di bagian
+4.3.
+
+**Silabus v1.2.** Dengan keputusan di atas, status silabus menjadi DISETUJUI
+pemilik, 2026-11-19, untuk jalur A, B, C, D, dan E. Persetujuan ini tidak
+mencakup modul pendamping (#69).
+
 ## 10. Daftar rujukan
 
 | Rujukan | Status |
@@ -829,12 +1608,14 @@ termasuk persetujuan ini.
 | `ahliweb/awcms-one` (README, `docs/template.md`, `package.json`, metadata GitHub) `https://github.com/ahliweb/awcms-one` | Dibuka via GitHub API, 2026-11-18. |
 | `data/osn/topic-families.json` (silabus OSN v2.0, 2026-09-04) | Dibaca di repositori ini. |
 | ADR-0004, ADR-0006, ADR-0007 repositori ini | Dibaca. |
+| [`draf-jalur-c-iot.md`](draf-jalur-c-iot.md), [`draf-jalur-d-ai.md`](draf-jalur-d-ai.md), [`draf-jalur-e-kuantum.md`](draf-jalur-e-kuantum.md) (draf jalur C, D, E; issue #68, #84, #88) | Dasar v1.2; riwayat. Sumber web bertanggal akses 2026-11-19 (platform, harga, alat, layanan cloud quantum) dicatat di draf masing-masing dan banyak yang `[belum terverifikasi]`. |
 | Silabus v1.0 (disetujui 2026-11-18; tersimpan di riwayat git) dan [`usulan-fondasi-kelas-x.md`](usulan-fondasi-kelas-x.md) (usulan blok fondasi, issue #86) | Dasar v1.1; dibaca di repositori ini. |
 
 ## Changelog
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v1.2.0 | 2026-11-19 | Disetujui pemilik program untuk jalur A, B, C, D, dan E (issue #68, #84, #88; bagian 9.3). Menambahkan jalur C (IoT dan robotika), D (kecerdasan buatan dan analisis data), dan E (komputasi kuantum, kelas XI-XII, awalan kode `E-`) beserta rencana mingguan, tujuan, pemetaan CP (jalur C digabung ke bagian 4.1 dan 4.2 dengan tanda parsial per jalur; jalur D dan E sebagai pengayaan di luar CP pada bagian 4.5, tidak dihitung pemenuhan CP), jembatan OSN jalur C (bagian 5.2), ringkasan jalur (bagian 3.6), dan keputusan pemilik atas semua pertanyaan terbuka draf (opsi rekomendasi). Mencatat celah F-LD-d dan F-LD-e jalur A dicakup modul pendamping (issue #105; bagian 4.3). Bagian 1.1-1.4 (kutipan CP) tidak berubah. Ketiga draf menjadi riwayat. |
 | v1.1.0 | 2026-11-19 | Disetujui pemilik program untuk jalur A dan B (issue #92, bagian 9.2). Menerapkan blok fondasi kelas X tujuh minggu (FND-X1-M1..M7, kelas bersama lintas jalur) sesuai delapan keputusan pemilik (bagian 9.1); kelas X semester 1 dan 2 jalur A dan B disusun ulang (minggu jalur dimulai dari M8; array, string, array dua dimensi / objek dan JSON digeser ke awal semester 2; beberapa minggu digabung); `B-X2-M9`/`M10` dihapus; operasi bit dipindah ke `A-XI1-M3` (pengayaan); pemetaan CP (4.1, 4.3, 4.4) dan jembatan OSN (5) diperbarui. Berkas draf `silabus-v1.1-draf.md` dihapus (isinya kini berkas ini). |
 | v1.1.0-draf | 2026-11-18 | Draf (issue #92, tahap 1) yang menjadi dasar v1.1; belum disetujui saat itu. |
 | v1.0.0 | 2026-11-18 | Disetujui pemilik program untuk jalur A dan B (issue #52). Keenam pertanyaan terbuka dijawab (bagian 9): panduan 2025 dipakai, 3 JP/minggu, modul pendamping (#69), jalur C terpisah (#68), murid memilih satu jalur, lab campuran. Berkas diganti nama dari `silabus-draf.md`. |

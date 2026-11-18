@@ -51,7 +51,7 @@ describe("sma-coding fidelity: data/sma-coding vs. the approved silabus", () => 
 
   test("the registry entry exists and carries the document's version and date", () => {
     expect(smaEntry).toBeDefined();
-    expect(smaEntry?.syllabusVersion).toBe("1.1.0");
+    expect(smaEntry?.syllabusVersion).toBe("1.2.0");
     expect(smaEntry?.syllabusDate).toBe("2026-11-19");
   });
 
@@ -59,10 +59,15 @@ describe("sma-coding fidelity: data/sma-coding vs. the approved silabus", () => 
     const expected = expectedCorpus(markdown) as Record<string, Json>;
     expect(expected["cp-elements.json"].quotes).toHaveLength(6);
     expect(expected["cp-elements.json"].items).toHaveLength(36);
-    expect(expected["weeks.json"].weeks).toHaveLength(154);
+    expect(expected["tracks.json"].tracks).toHaveLength(5);
+    expect(expected["weeks.json"].weeks).toHaveLength(364);
     expect(expected["foundation.json"].weeks).toHaveLength(7);
     expect(expected["cp-mapping.json"].mappings).toHaveLength(26);
+    expect(expected["cp-mapping.json"].enrichmentLinks).toHaveLength(9);
     expect(expected["osn-bridge.json"].bridges).toHaveLength(10);
+    expect(expected["osn-bridge.json"].trackBridges).toHaveLength(1);
+    expect(expected["osn-bridge.json"].trackBridges[0].track).toBe("C");
+    expect(expected["osn-bridge.json"].trackBridges[0].bridges).toHaveLength(4);
     expect(expected["structure.json"].rows).toHaveLength(7);
   });
 
@@ -127,6 +132,49 @@ describe("sma-coding fidelity: drift fails hard", () => {
     expect(contexts).toContain("tracks.json.tracks[A].name");
   });
 
+  test("a drifted cell in each of jalur C, D and E is reported with its week code and field", () => {
+    const files = load();
+    const weeks = files["weeks.json"].weeks as Array<Record<string, string>>;
+    const byId = (id: string) => weeks.find((week) => week.id === id) as Record<string, string>;
+    byId("C-X1-M8").topic = "diubah diam-diam";
+    byId("D-XI1-M2").objective = "diubah diam-diam";
+    byId("E-XI1-M5").exercise = "diubah diam-diam";
+    const contexts = checkSmaFidelity(markdown, files, smaEntry).map((problem) => problem.context);
+    expect(contexts).toEqual([
+      "weeks.json.weeks[C-X1-M8].topic",
+      "weeks.json.weeks[D-XI1-M2].objective",
+      "weeks.json.weeks[E-XI1-M5].exercise",
+    ]);
+  });
+
+  test("a drifted enrichment link, track bridge, partial marker and track attribute are reported", () => {
+    const files = load();
+    files["cp-mapping.json"].enrichmentLinks[0].level = "diubah";
+    files["cp-mapping.json"].mappings.find(
+      (m: { cpCode: string }) => m.cpCode === "F-BK-c",
+    ).partialTracks = [];
+    files["osn-bridge.json"].trackBridges[0].bridges[0].note = "diubah";
+    files["tracks.json"].tracks[4].startClass = "X";
+    files["tracks.json"].tracks[3].cpStatus = "dalam-cp";
+    const contexts = checkSmaFidelity(markdown, files, smaEntry).map((problem) => problem.context);
+    expect(contexts).toContain("cp-mapping.json.enrichmentLinks[D/F-AD-a].level");
+    expect(contexts).toContain("cp-mapping.json.mappings[F-BK-c].partialTracks length");
+    expect(contexts).toContain("osn-bridge.json.trackBridges[C].bridges[dasar-pemrograman].note");
+    expect(contexts).toContain("tracks.json.tracks[E].startClass");
+    expect(contexts).toContain("tracks.json.tracks[D].cpStatus");
+  });
+
+  test("the per-track partial marker is read from the Jalur cell", () => {
+    const mappings = (expectedCorpus(markdown) as Record<string, Json>)["cp-mapping.json"]
+      .mappings as Array<{ cpCode: string; tracks: string[]; partialTracks: string[] }>;
+    const row = (code: string) => mappings.find((m) => m.cpCode === code);
+    expect(row("F-BK-d")?.tracks).toEqual(["B", "C"]);
+    expect(row("F-BK-d")?.partialTracks).toEqual(["B"]);
+    expect(row("F-LD-e")?.partialTracks).toEqual(["B", "C"]);
+    expect(row("F-BK-c")?.partialTracks).toEqual(["C"]);
+    expect(row("E-BK-a")?.partialTracks).toEqual([]);
+  });
+
   test("a normalised week list that no longer matches the document is reported", () => {
     const files = load();
     files["cp-mapping.json"].mappings[0].weeks.pop();
@@ -174,8 +222,26 @@ describe("sma-coding fidelity: drift fails hard", () => {
   });
 
   test("an unapproved track in bagian 3 is refused", () => {
-    const unapproved = markdown.replace("jalur A dan B (v1.1,", "jalur A dan C (v1.1,");
+    const unapproved = markdown.replace(
+      "jalur A, B, C, D, dan E (v1.2,",
+      "jalur A, B, C, D, dan F (v1.2,",
+    );
+    expect(unapproved).not.toBe(markdown);
     expect(() => expectedCorpus(unapproved)).toThrow("not approved");
+  });
+
+  test("a track heading that disagrees with the bagian 3.6 summary is refused", () => {
+    const renamed = markdown.replace(
+      "### 3.3 Jalur C: IoT dan Robotika",
+      "### 3.3 Jalur C: Robotika",
+    );
+    expect(renamed).not.toBe(markdown);
+    expect(() => expectedCorpus(renamed)).toThrow("does not match the bagian 3.6 summary");
+  });
+
+  test("an unknown relation to the CP in the bagian 3.6 summary is refused", () => {
+    const odd = markdown.replace("| pengayaan di luar CP |", "| mungkin CP |");
+    expect(() => expectedCorpus(odd)).toThrow("unknown relation");
   });
 });
 

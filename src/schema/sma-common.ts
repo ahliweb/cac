@@ -40,6 +40,26 @@ export const smaTrackIdSchema = z
   .regex(/^[A-Z]$/, 'must be a single upper-case letter such as "A"')
   .describe('A learning track ID such as "A" or "B".');
 
+/**
+ * How a track relates to the CP (Capaian Pembelajaran) of Informatika.
+ * `dalam-cp`: its weeks are mapped to CP items in `cp-mapping.json` and count
+ * towards covering them. `pengayaan`: the track lies outside the CP wording
+ * (silabus v1.2: jalur D and E); it is never counted as covering a CP item,
+ * and any resemblance is recorded only as an `enrichmentLinks` entry.
+ */
+export const SMA_TRACK_CP_STATUSES = ["dalam-cp", "pengayaan"] as const;
+export const smaTrackCpStatusSchema = z
+  .enum(SMA_TRACK_CP_STATUSES)
+  .describe('A track\'s relation to the CP: "dalam-cp" or "pengayaan" (outside the CP wording).');
+export type SmaTrackCpStatus = z.infer<typeof smaTrackCpStatusSchema>;
+
+/** The classes a track may start in: X (six semesters) or XI (four semesters, jalur E). */
+export const SMA_TRACK_START_CLASSES = ["X", "XI"] as const;
+export const smaTrackStartClassSchema = z
+  .enum(SMA_TRACK_START_CLASSES)
+  .describe('The first class of a track: "X" or "XI".');
+export type SmaTrackStartClass = z.infer<typeof smaTrackStartClassSchema>;
+
 /** A semester code, e.g. "X1", "XI2", "XII1". */
 export const smaSemesterSchema = z
   .string()

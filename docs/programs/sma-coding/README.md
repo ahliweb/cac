@@ -1,24 +1,28 @@
 # Program Pembelajaran Coding SMA (`sma-coding`)
 
-- **Version:** v1.6.0
+- **Version:** v1.7.0
 - **Last updated:** 2026-11-19
-- **Status:** Silabus v1.1 DISETUJUI pemilik program (2026-11-19) untuk jalur A dan B, termasuk blok fondasi kelas X (v1.0: 2026-11-18); rancangan seri matematika komputasi, seri cloud, dan modul pendamping DISETUJUI pemilik (2026-11-19), 29 modul drafnya (termasuk 6 modul fondasi dan 2 modul pendamping lintas jalur untuk F-LD-d dan F-LD-e, #105) ada di `content/sma-coding/modules/` dan terindeks di `data/sma-coding/modules.json` sejak 2026-11-19, berstatus draf sampai ditinjau pemilik; draf jalur C, D, dan E berstatus DRAF menunggu keputusan pemilik.
+- **Status:** Silabus v1.2 DISETUJUI pemilik program (2026-11-19) untuk jalur A, B, C, D, dan E, termasuk blok fondasi kelas X (v1.1: 2026-11-19; v1.0: 2026-11-18); jalur D dan E di luar rumusan CP (pengayaan); rancangan seri matematika komputasi, seri cloud, dan modul pendamping DISETUJUI pemilik (2026-11-19), 29 modul drafnya (termasuk 6 modul fondasi dan 2 modul pendamping lintas jalur untuk F-LD-d dan F-LD-e, #105) ada di `content/sma-coding/modules/` dan terindeks di `data/sma-coding/modules.json` sejak 2026-11-19, berstatus draf sampai ditinjau pemilik; draf jalur C, D, dan E disetujui pemilik 2026-11-19 beserta semua rekomendasi dan sudah masuk silabus v1.2 (dokumen drafnya tetap sebagai riwayat).
 
-> **Silabus v1.1 disetujui pemilik program pada 2026-11-19 untuk jalur A dan
-> B** (issue #92; v1.0 disetujui 2026-11-18, issue #52). Isi folder ini
+> **Silabus v1.2 disetujui pemilik program pada 2026-11-19 untuk jalur A, B,
+> C, D, dan E** (issue #68, #84, #88; v1.1: issue #92; v1.0 disetujui
+> 2026-11-18, issue #52). Isi folder ini
 > adalah konten **karangan** (*authored*) menurut
 > [ADR-0007](../../architecture/adr/0007-authored-learning-content.md),
-> bukan dokumen pemerintah. Silabus v1.1 menjadi sumber corpus program
+> bukan dokumen pemerintah. Silabus v1.2 menjadi sumber corpus program
 > `sma-coding` (ADR-0006), dikodekan ke `data/sma-coding/` (tujuh berkas,
-> termasuk blok fondasi kelas X `foundation.json`). Pada 2026-11-19 pemilik
+> termasuk blok fondasi kelas X `foundation.json`; lima jalur, 364 minggu
+> jalur). Pada 2026-11-19 pemilik
 > juga menyetujui **rancangan** tiga seri modul (matematika komputasi #87,
 > cloud #89, pendamping literasi digital #69) beserta seluruh rekomendasinya;
 > persetujuan itu atas rancangan, bukan atas isi modul. **Belum ada modul
 > sma-coding di repositori** (`content/sma-coding/` dan
 > `data/sma-coding/modules.json` belum ada): modul draf menunggu skema indeks
 > modul (#106) dan modul fondasi kelas X dikerjakan di #107. Draf jalur C
-> (#68), D (#84), dan E (#88) sudah ada di folder ini berstatus DRAF;
-> keputusan opsinya menunggu pemilik dan belum menjadi bagian silabus.
+> (#68), D (#84), dan E (#88) disetujui pemilik pada 2026-11-19 beserta
+> semua rekomendasi penyusun dan kini menjadi bagian silabus v1.2 (bagian
+> 3.3 sampai 3.6, 4.5, 5.2 dan keputusan di bagian 9.3); berkas drafnya
+> dipertahankan sebagai riwayat.
 
 ## Tujuan program
 
@@ -30,12 +34,14 @@ Kurikulum Merdeka:
 | --- | --- | --- | --- |
 | A | Algoritmik dengan C++ | Selaras dengan, dan menjadi jembatan ke, pembinaan OSN Informatika (rumpun materi di `data/osn/topic-families.json`). | Disetujui v1.1 |
 | B | Pengembangan web dengan JavaScript + TypeScript, runtime Bun, dan template publik `ahliweb/awcms-one` (MIT) | Keterampilan membangun produk digital, berujung pada kustomisasi profil `landing` template. | Disetujui v1.1 |
-| C | IoT/robotika | Interaksi dengan perangkat fisik. | DRAF, menunggu keputusan pemilik (#68; [`draf-jalur-c-iot.md`](draf-jalur-c-iot.md)) |
-| D | Kecerdasan buatan dan analisis data | Di luar rumusan CP; pengayaan AI dan data (menurut draf). | DRAF, menunggu keputusan pemilik (#84; [`draf-jalur-d-ai.md`](draf-jalur-d-ai.md)) |
-| E | Komputasi kuantum dan cloud quantum | Di luar rumusan CP; pengayaan (menurut draf). | DRAF, menunggu keputusan pemilik (#88; [`draf-jalur-e-kuantum.md`](draf-jalur-e-kuantum.md)) |
+| C | IoT dan robotika (C++ gaya Arduino, ESP32), kelas X-XII | Interaksi dengan perangkat fisik; dipetakan ke CP hanya lewat prinsip komputasinya; jembatan OSN sebagian (bagian 5.2). | Disetujui v1.2, 2026-11-19 (#68; asal [`draf-jalur-c-iot.md`](draf-jalur-c-iot.md)) |
+| D | Kecerdasan buatan dan analisis data (Orange, lalu Python), kelas X-XII | **Pengayaan di luar rumusan CP**; tidak dihitung sebagai pemenuhan CP; tanpa jembatan OSN. | Disetujui v1.2, 2026-11-19 (#84; asal [`draf-jalur-d-ai.md`](draf-jalur-d-ai.md)) |
+| E | Komputasi kuantum dan cloud quantum (Quirk dan simulator buatan sendiri), **kelas XI-XII saja**, awalan kode `E-` | **Pengayaan di luar rumusan CP**; tidak dihitung sebagai pemenuhan CP; tanpa blok fondasi dan tanpa jembatan OSN. | Disetujui v1.2, 2026-11-19 (#88; asal [`draf-jalur-e-kuantum.md`](draf-jalur-e-kuantum.md)) |
 
-Jalur C, D, dan E belum masuk silabus dan belum punya `data/` maupun entri
-registri (ADR-0006) sampai pemilik memutuskan dan menyetujui silabusnya.
+Jalur C, D, dan E sudah masuk silabus v1.2 dan `data/sma-coding/` (ADR-0006).
+Corpus mencatat jalur D dan E sebagai `cpStatus` "pengayaan" dan hanya
+menyimpan irisan terdekatnya dengan butir CP sebagai `enrichmentLinks`
+(silabus bagian 4.5), bukan sebagai pemetaan.
 
 Modul pendamping literasi digital untuk butir CP di luar coding: rancangan
 disetujui pemilik 2026-11-19 (#69); sembilan modul draf `pendamping-*` ada di
@@ -46,8 +52,10 @@ disetujui pemilik 2026-11-19 (#69); sembilan modul draf `pendamping-*` ada di
 
 Keputusan atas v1.0 tertanggal 2026-11-18 (issue #49, #51, #52); keputusan
 atas blok fondasi kelas X tertanggal 2026-11-18 (issue #86) dan persetujuan
-v1.1 tertanggal 2026-11-19 (issue #92). Ringkasannya ada di bagian 9
-[`silabus.md`](silabus.md).
+v1.1 tertanggal 2026-11-19 (issue #92); keputusan atas draf jalur C, D, dan E
+tertanggal 2026-11-19 (issue #68, #84, #88; semua rekomendasi penyusun
+dipilih, untuk jalur E kelas XI-XII saja dan awalan kode `E-`). Ringkasannya
+ada di bagian 9 [`silabus.md`](silabus.md) (9.3 untuk v1.2).
 
 Persetujuan rancangan seri modul, 2026-11-19 (dialog pilihan; dicatat di
 komentar issue masing-masing): seri matematika komputasi (#87) beserta enam
@@ -55,11 +63,10 @@ rekomendasi, seri cloud (#89) beserta tujuh rekomendasi, dan modul pendamping
 (#69) beserta enam rekomendasi. Rinciannya di bagian awal tiap dokumen
 rancangan.
 
-Masih menunggu keputusan pemilik: pertanyaan terbuka pada draf jalur C, D,
-dan E (#68, #84, #88). Skema indeks modul sma-coding (#106), modul fondasi
-kelas X (#107), dan modul pendamping untuk celah butir CP F-LD-d dan F-LD-e
-(#105, keputusan pemilik 2026-11-19: modul pendamping lintas jalur) sudah
-dikerjakan; semua modulnya berstatus draf sampai ditinjau pemilik.
+Sudah dikerjakan: skema indeks modul sma-coding (#106), modul fondasi kelas X
+(#107), dan dua modul pendamping lintas jalur untuk celah butir CP F-LD-d dan
+F-LD-e (#105, dicatat di silabus bagian 4.3); semua modulnya berstatus draf
+sampai ditinjau pemilik. Modul untuk jalur C, D, dan E belum ada.
 
 ## Cara mengusulkan perubahan
 
@@ -73,11 +80,11 @@ persetujuan atas nama pemilik.
 | Berkas | Isi |
 | --- | --- |
 | `README.md` | Dokumen ini: tujuan, status, keputusan, daftar berkas. |
-| `silabus.md` | Silabus v1.1.0: sumber resmi dan kutipan CP, struktur, blok fondasi kelas X bersama (`FND-X1-M1..M7`) dan rencana mingguan jalur A dan B, pemetaan CP, jembatan OSN, kelayakan `awcms-one`, asesmen, perangkat, privasi, keputusan pemilik, rujukan, changelog. |
+| `silabus.md` | Silabus v1.2.0: sumber resmi dan kutipan CP, struktur, blok fondasi kelas X bersama (`FND-X1-M1..M7`) dan rencana mingguan jalur A, B, C, D, dan E (ringkasan jalur di bagian 3.6), pemetaan CP (jalur D dan E sebagai pengayaan di luar CP, bagian 4.5), jembatan OSN (jalur A dan C), kelayakan `awcms-one`, asesmen, perangkat, privasi, keputusan pemilik, rujukan, changelog. |
 | `usulan-fondasi-kelas-x.md` | Usulan blok fondasi informatika dasar wajib di kelas X (issue #86): topik per minggu, pemetaan ke butir CP v1.0, tiga opsi panjang blok dengan dampak ke kelas X, bentuk modul, hubungan dengan #68, #69, #84. Usulan asal blok fondasi yang kini diterapkan di silabus v1.1 (bagian 3.0); dokumen itu sendiri tetap berstatus DRAF sebagai riwayat usulan. |
-| `draf-jalur-c-iot.md` | Draf jalur C IoT/robotika (issue #68). Status DRAF; keputusan opsi menunggu pemilik. |
-| `draf-jalur-d-ai.md` | Draf jalur D kecerdasan buatan dan analisis data (issue #84). Status DRAF; keputusan opsi menunggu pemilik. |
-| `draf-jalur-e-kuantum.md` | Draf jalur E komputasi kuantum dan cloud quantum (issue #88). Status DRAF; keputusan opsi menunggu pemilik. |
+| `draf-jalur-c-iot.md` | Draf jalur C IoT/robotika (issue #68): disetujui pemilik 2026-11-19 dan masuk silabus v1.2; riwayat draf (perbandingan platform, harga bertanggal, sumber). |
+| `draf-jalur-d-ai.md` | Draf jalur D kecerdasan buatan dan analisis data (issue #84): disetujui pemilik 2026-11-19 dan masuk silabus v1.2; riwayat draf (perbandingan alat, sumber). |
+| `draf-jalur-e-kuantum.md` | Draf jalur E komputasi kuantum dan cloud quantum (issue #88): disetujui pemilik 2026-11-19 dan masuk silabus v1.2; riwayat draf (perbandingan stack, fakta layanan cloud quantum bertanggal, analisis kode). |
 | `rancangan-modul-pendamping.md` | Rancangan modul pendamping literasi digital (issue #69): tujuh modul, pemetaan butir CP, opsi pelaksanaan. Rancangan disetujui pemilik 2026-11-19 beserta rekomendasinya; sembilan modul draf `pendamping-*` ada di repositori (tujuh sejak 2026-11-19, #118; dua untuk F-LD-d dan F-LD-e, #105). |
 | `rancangan-seri-cloud.md` | Rancangan seri modul cloud computing (issue #89): tujuh modul lintas jalur sebagai pengayaan. Rancangan disetujui pemilik 2026-11-19 beserta rekomendasinya; tujuh modul draf `cloud-*` ada di repositori sejak 2026-11-19 (#117). Kode minggu sudah mengikuti silabus v1.1. |
 | `rancangan-seri-matematika-komputasi.md` | Rancangan seri modul matematika komputasi dasar (issue #87): tujuh modul. Rancangan disetujui pemilik 2026-11-19 beserta rekomendasinya; tujuh modul draf `matkom-*` ada di repositori sejak 2026-11-19 (#116). Kode minggu sudah dipetakan ke silabus v1.1. |
@@ -87,6 +94,7 @@ persetujuan atas nama pemilik.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v1.7.0 | 2026-11-19 | Silabus v1.2 disetujui (issue #68, #84, #88): jalur C, D, dan E masuk silabus dan `data/sma-coding/`; tabel jalur, keputusan, dan daftar berkas diperbarui; jalur D dan E tercatat sebagai pengayaan di luar CP. |
 | v1.6.0 | 2026-11-19 | Dua modul pendamping lintas jalur untuk butir F-LD-d dan F-LD-e (#105) masuk repositori dan terindeks; jumlah modul draf menjadi 29. |
 | v1.5.0 | 2026-11-19 | 27 modul draf sma-coding (fondasi, matematika komputasi, cloud, pendamping) masuk repositori dan terindeks (#115–#118); status rancangan diperbarui. |
 | v1.4.0 | 2026-11-19 | Menyelaraskan dengan keadaan nyata: jalur C, D, dan E (draf, #68, #84, #88) masuk tabel jalur dan daftar berkas; rancangan seri matematika komputasi, seri cloud, dan modul pendamping tercatat disetujui pemilik 2026-11-19 beserta rekomendasinya (modul belum ada di repositori; menunggu #106 dan #107); bagian keputusan memuat persetujuan itu dan issue lanjutan #105, #106, #107. |

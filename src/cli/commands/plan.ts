@@ -26,7 +26,7 @@ the exact week-shifting and session-date rules.
 
 Usage:
   osn plan --start <YYYY-MM-DD> [options]
-  osn plan --program sma-coding --track <A|B> [--kelas <X|XI|XII>] [--semester <kode>] [options]
+  osn plan --program sma-coding --track <A|B|C|D|E> [--kelas <X|XI|XII>] [--semester <kode>] [options]
 
 Options:
   --start <date>          Cohort start date, ISO YYYY-MM-DD. Required (osn).
@@ -35,12 +35,14 @@ Options:
   --target-stage <id>     Report against a target competition stage's
                            intensive week (osn-k, osn-p, osn-nasional, or
                            toki-ioi-extension). Optional (osn).
-  --track <id>            Learning track of the sma-coding programme (A or B,
-                           the approved tracks). Required for sma-coding.
+  --track <id>            Learning track of the sma-coding programme (A, B, C,
+                           D or E, the approved tracks). Required for
+                           sma-coding. Track E starts in kelas XI.
   --kelas <X|XI|XII>      sma-coding: only the two semesters of this class.
   --semester <kode>       sma-coding: only this semester (X1, X2, XI1, XI2,
                            XII1, XII2; or 1/2 together with --kelas). Without
-                           --kelas and --semester, all six semesters.
+                           --kelas and --semester, all six semesters (four for
+                           track E, which has no kelas X semesters).
   --format <md|json>      Output format. Default: md. --json is equivalent
                            to --format json.
   --program <id>  Programme whose corpus to use (a registered id; default osn).

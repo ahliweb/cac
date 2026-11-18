@@ -11,7 +11,10 @@ import { join } from "node:path";
 import type { CorpusSource } from "../../src/domain/corpus-audit";
 import { auditSmaCorpus, SMA_DATA_FILE_REGISTRY } from "../../src/domain/sma-corpus-audit";
 import { cpElementsFileSchema } from "../../src/schema/sma-cp";
+import { cpMappingFileSchema } from "../../src/schema/sma-cp-mapping";
 import { smaFoundationFileSchema, smaFoundationWeekSchema } from "../../src/schema/sma-foundation";
+import { osnBridgeFileSchema } from "../../src/schema/sma-osn-bridge";
+import { smaTracksFileSchema } from "../../src/schema/sma-track";
 import { smaWeekSchema } from "../../src/schema/sma-week";
 
 // biome-ignore lint/suspicious/noExplicitAny: fixture data is mutated freely
@@ -57,16 +60,34 @@ describe("auditSmaCorpus on the committed corpus", () => {
     expect(result.summary.filesUnregistered).toBe(0);
   });
 
-  test("has the record counts of the approved v1.1 syllabus", () => {
+  test("has the record counts of the approved v1.2 syllabus", () => {
     const files = corpus();
     expect(files.get("cp-elements.json").quotes).toHaveLength(6);
     expect(files.get("cp-elements.json").items).toHaveLength(36);
-    expect(files.get("tracks.json").tracks.map((t: { id: string }) => t.id)).toEqual(["A", "B"]);
+    expect(files.get("tracks.json").tracks.map((t: { id: string }) => t.id)).toEqual([
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+    ]);
     expect(files.get("structure.json").rows).toHaveLength(7);
-    expect(files.get("weeks.json").weeks).toHaveLength(154);
+    expect(files.get("weeks.json").weeks).toHaveLength(364);
     expect(files.get("foundation.json").weeks).toHaveLength(7);
     expect(files.get("cp-mapping.json").mappings).toHaveLength(26);
+    expect(files.get("cp-mapping.json").enrichmentLinks).toHaveLength(9);
     expect(files.get("osn-bridge.json").bridges).toHaveLength(10);
+    expect(files.get("osn-bridge.json").trackBridges).toHaveLength(1);
+  });
+
+  test("jalur A-D have 77 weeks each and jalur E has 56 (kelas XI-XII only)", () => {
+    const weeks = corpus().get("weeks.json").weeks as Array<{ track: string; kelas: string }>;
+    const of = (id: string) => weeks.filter((week) => week.track === id);
+    for (const id of ["A", "B", "C", "D"]) {
+      expect(of(id)).toHaveLength(77);
+    }
+    expect(of("E")).toHaveLength(56);
+    expect(of("E").some((week) => week.kelas === "X")).toBe(false);
   });
 });
 
@@ -211,7 +232,9 @@ describe("auditSmaCorpus: references", () => {
     const row = files
       .get("cp-mapping.json")
       .mappings.find((m: { cpCode: string }) => m.cpCode === "E-BK-e");
-    expect(row.weeksText).toBe("FND-X1-M1..M2");
+    expect(row.weeksText).toBe("FND-X1-M1..M2; C-X1-M8");
+    row.weeksText = "FND-X1-M1..M2";
+    row.weeks = ["FND-X1-M1", "FND-X1-M2"];
     row.tracks = ["A"];
     expect(audit(files).findings).toEqual([]);
   });
@@ -262,7 +285,9 @@ describe("auditSmaCorpus: references", () => {
 
   test("a week of an unlisted track is reported", () => {
     const files = corpus();
-    files.get("tracks.json").tracks.pop();
+    files.get("tracks.json").tracks = files
+      .get("tracks.json")
+      .tracks.filter((track: { id: string }) => track.id !== "B");
     expect(messages(audit(files), "weeks.json")).toContain('track "B" is not in tracks.json');
   });
 
@@ -296,7 +321,157 @@ describe("auditSmaCorpus: references", () => {
   });
 });
 
+describe("auditSmaCorpus: tracks of different length and pengayaan tracks (v1.2)", () => {
+  test("jalur E must not have weeks in a kelas X semester", () => {
+    const files = corpus();
+    const weeks = files.get("weeks.json").weeks;
+    const copy = { ...weeks.find((week: { id: string }) => week.id === "A-X2-M1") };
+    Object.assign(copy, { id: "E-X2-M1", track: "E", semesterCode: "E-X2" });
+    weeks.push(copy);
+    expect(messages(audit(files), "weeks.json")).toContain(
+      "track E starts in kelas XI (tracks.json) and must have no weeks in semester X2",
+    );
+  });
+
+  test("a kelas XI track with a missing semester is reported", () => {
+    const files = corpus();
+    files.get("weeks.json").weeks = files
+      .get("weeks.json")
+      .weeks.filter((week: { semesterCode: string }) => week.semesterCode !== "E-XII2");
+    expect(messages(audit(files), "weeks.json")).toContain(
+      "track E has no weeks for semester XII2",
+    );
+  });
+
+  test("a track that starts in kelas X must have its kelas X semesters", () => {
+    const files = corpus();
+    files.get("tracks.json").tracks[4].startClass = "X";
+    expect(messages(audit(files), "weeks.json")).toContain("track E has no weeks for semester X1");
+  });
+
+  test("the track and week totals are fixed", () => {
+    const files = corpus();
+    files.get("tracks.json").tracks.pop();
+    files.get("weeks.json").weeks.pop();
+    const result = audit(files);
+    expect(messages(result, "tracks.json")).toContain("expected exactly 5 tracks, found 4");
+    expect(messages(result, "weeks.json")).toContain("expected exactly 364 track weeks");
+  });
+
+  test("a pengayaan track cannot be listed as covering a CP item", () => {
+    const files = corpus();
+    const row = files.get("cp-mapping.json").mappings[0];
+    row.tracks = [...row.tracks, "D"];
+    expect(messages(audit(files), "cp-mapping.json")).toContain(
+      'track "D" is a pengayaan track (outside the CP wording) and cannot count as covering a CP item',
+    );
+  });
+
+  test("the nine enrichment links are fixed", () => {
+    const files = corpus();
+    files.get("cp-mapping.json").enrichmentLinks.pop();
+    expect(messages(audit(files), "cp-mapping.json")).toContain(
+      "expected exactly 9 enrichment links, found 8",
+    );
+  });
+
+  test("an enrichment link to an unknown CP item or unknown track is reported", () => {
+    const files = corpus();
+    const links = files.get("cp-mapping.json").enrichmentLinks;
+    links[0].cpCode = "E-BK-z";
+    links[1].track = "Z";
+    const text = messages(audit(files), "cp-mapping.json");
+    expect(text).toContain('CP item "E-BK-z" does not exist in cp-elements.json');
+    expect(text).toContain('track "Z" is not in tracks.json');
+  });
+
+  test("an enrichment link of a track that counts towards the CP is reported", () => {
+    const files = corpus();
+    const link = files.get("cp-mapping.json").enrichmentLinks[0];
+    Object.assign(link, { track: "C", weeksText: "C-X1-M8", weeks: ["C-X1-M8"] });
+    expect(messages(audit(files), "cp-mapping.json")).toContain(
+      'track "C" is counted in the CP mapping (cpStatus "dalam-cp"); enrichmentLinks are only for pengayaan tracks',
+    );
+  });
+
+  test("an enrichment link week of another track, a wrong list or bad notation is reported", () => {
+    const files = corpus();
+    const links = files.get("cp-mapping.json").enrichmentLinks;
+    Object.assign(links[0], { weeksText: "A-X1-M8", weeks: ["A-X1-M8"] });
+    links[1].weeks.pop();
+    links[2].weeksText = "minggu 4";
+    const text = messages(audit(files), "cp-mapping.json");
+    expect(text).toContain("belongs to track A");
+    expect(text).toContain("does not equal weeksText");
+    expect(text).toContain("cannot parse week notation");
+  });
+
+  test("a week of a bridge of another track must belong to that track and exist", () => {
+    const files = corpus();
+    const bridges = files.get("osn-bridge.json").trackBridges[0].bridges;
+    Object.assign(bridges[0], { weeksText: "A-X1-M9", weeks: ["A-X1-M9"] });
+    bridges[2].weeks.pop();
+    bridges[1].weeksText = "M3";
+    bridges[3].familyId = "tidak-ada";
+    const text = messages(audit(files), "osn-bridge.json");
+    expect(text).toContain("belongs to track A");
+    expect(text).toContain("does not equal weeksText");
+    expect(text).toContain("cannot parse week notation");
+    expect(text).toContain('OSN topic family "tidak-ada" does not exist');
+  });
+
+  test("a bridge table of an unknown track is reported, and other tracks need not cover every family", () => {
+    const files = corpus();
+    expect(audit(files).findings).toEqual([]);
+    files.get("osn-bridge.json").trackBridges[0].track = "Z";
+    expect(messages(audit(files), "osn-bridge.json")).toContain('track "Z" is not in tracks.json');
+  });
+});
+
 describe("sma schemas", () => {
+  test("partialTracks must be a subset of tracks", () => {
+    const file = read("data/sma-coding/cp-mapping.json") as Json;
+    file.mappings[0].partialTracks = ["Z"];
+    const result = cpMappingFileSchema.safeParse(file);
+    expect(result.success).toBe(false);
+    expect(JSON.stringify(result.error?.issues)).toContain("partialTracks must be a subset");
+  });
+
+  test("a (track, CP item) enrichment pair may appear only once, and a CP item is mapped once", () => {
+    const file = read("data/sma-coding/cp-mapping.json") as Json;
+    file.enrichmentLinks.push({ ...file.enrichmentLinks[0] });
+    file.mappings.push({ ...file.mappings[0] });
+    const text = JSON.stringify(cpMappingFileSchema.safeParse(file).error?.issues);
+    expect(text).toContain("each (track, CP item) pair may be linked only once");
+    expect(text).toContain("each CP item code may be mapped only once");
+  });
+
+  test("a track needs a valid startClass and cpStatus", () => {
+    const file = read("data/sma-coding/tracks.json") as Json;
+    expect(smaTracksFileSchema.safeParse(file).success).toBe(true);
+    file.tracks[0].startClass = "XII";
+    file.tracks[1].cpStatus = "campuran";
+    expect(smaTracksFileSchema.safeParse(file).success).toBe(false);
+  });
+
+  test("a track may have only one bridge table and a family only once per table", () => {
+    const file = read("data/sma-coding/osn-bridge.json") as Json;
+    expect(osnBridgeFileSchema.safeParse(file).success).toBe(true);
+    const dupTrack = structuredClone(file);
+    dupTrack.trackBridges[0].track = "A";
+    expect(JSON.stringify(osnBridgeFileSchema.safeParse(dupTrack).error?.issues)).toContain(
+      "each track may have only one bridge table",
+    );
+    const dupFamily = structuredClone(file);
+    dupFamily.trackBridges[0].bridges.push({ ...dupFamily.trackBridges[0].bridges[0] });
+    expect(JSON.stringify(osnBridgeFileSchema.safeParse(dupFamily).error?.issues)).toContain(
+      "each OSN topic family may appear only once",
+    );
+    const dupMain = structuredClone(file);
+    dupMain.bridges.push({ ...dupMain.bridges[0] });
+    expect(osnBridgeFileSchema.safeParse(dupMain).success).toBe(false);
+  });
+
   test("a CP quote whose element name does not match its element id is rejected", () => {
     const file = read("data/sma-coding/cp-elements.json") as Json;
     file.quotes[0].elementTitle = "Analisis Data";

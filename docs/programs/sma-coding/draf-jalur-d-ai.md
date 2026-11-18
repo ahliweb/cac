@@ -1,18 +1,21 @@
 # Draf Jalur D (Kecerdasan Buatan dan Analisis Data) — Silabus Coding SMA
 
-- **Version:** v0.1.0
-- **Last updated:** 2026-11-18
-- **Status:** DRAF — belum disetujui pemilik program (issue #84); modul dan data belum ada
-- **Changeset:** Draf awal jalur D (AI) kelas X–XII: rencana mingguan, pemetaan ke butir CP dengan catatan bahwa AI di luar rumusan CP, opsi alat dan coding dengan rekomendasi, posisi seri Buku AI SMA, etika dan privasi, pertanyaan terbuka.
+- **Version:** v0.2.0
+- **Last updated:** 2026-11-19
+- **Status:** DISETUJUI pemilik 2026-11-19 (issue #84) beserta semua rekomendasi penyusun dan sudah dimasukkan ke [silabus v1.2](silabus.md) bagian 3.4 (pengayaan di luar CP); dokumen ini tetap menjadi riwayat draf (bagian 10 menandai setiap pertanyaan terjawab)
+- **Changeset:** Pertanyaan terbuka (bagian 10) ditandai terjawab sesuai keputusan pemilik 2026-11-19; status menjadi disetujui dan merujuk silabus v1.2. Isi rencana tidak diubah.
 
-> **DRAF — belum disetujui pemilik.** Dokumen ini adalah konten karangan
-> menurut [ADR-0007](../../architecture/adr/0007-authored-learning-content.md):
-> rancangan dan penilaian penyusun, bukan transkripsi sumber resmi dan bukan
-> keputusan. Penyusun tidak mencatat persetujuan atas nama pemilik. Pilihan
-> alat, bahasa, dan seluruh opsi di bagian 5 dan 10 adalah hak pemilik;
-> "Disarankan" hanya rekomendasi penyusun. Jalur D baru bagian dari silabus
-> setelah pemilik menyetujuinya; sampai saat itu `data/sma-coding/` tidak
-> memuat jalur D.
+> **Disetujui pemilik pada 2026-11-19 dan dimasukkan ke silabus v1.2.**
+> Dokumen ini adalah konten karangan menurut
+> [ADR-0007](../../architecture/adr/0007-authored-learning-content.md):
+> rancangan dan penilaian penyusun, bukan transkripsi sumber resmi. Pemilik
+> menyetujui draf beserta semua rekomendasi penyusun lewat dialog pilihan
+> (silabus [bagian 9.3](silabus.md)); sumber kebenaran jalur D kini
+> [silabus.md bagian 3.4](silabus.md) dan `data/sma-coding/`. Jalur D adalah
+> **pengayaan di luar rumusan CP** dan tidak dihitung sebagai pemenuhan CP.
+> Dokumen ini dipertahankan sebagai riwayat (perbandingan alat dengan
+> penilaian 11 kriteria dan sumber luar bertanggal akses 2026-11-19); bila
+> isinya berbeda dari silabus, silabus yang berlaku.
 
 ## 0. Cara membaca dokumen ini
 
@@ -356,16 +359,16 @@ dikutip ADR-0004; peserta adalah anak di bawah umur).
 
 Keputusan milik pemilik; setiap opsi disertai rekomendasi penyusun.
 
-| No. | Pertanyaan | Opsi | Rekomendasi |
-| --- | --- | --- | --- |
-| 1 | Alat dan coding jalur D | (1) tanpa kode saja; (2) bertahap: tanpa kode di X, Python di XI-XII; (3) Python sejak X; (4) JS/TS selaras jalur B (bagian 5.2) | **Opsi 2**; cadangan opsi 4 |
-| 2 | Bahasa pemrograman bila ada kode | Python; JS/TS | **Python**; JS/TS bila sekolah ingin satu toolchain dengan jalur B |
-| 3 | Layanan AI daring (generatif) | hanya demonstrasi guru; tidak dipakai sama sekali; murid memakai akun sekolah | **Hanya demonstrasi guru** |
-| 4 | Teachable Machine | dipertahankan sebagai pengayaan dengan data benda; dihapus | **Pengayaan dengan data benda** (tanpa wajah dan suara) |
-| 5 | Seri Buku AI SMA | tautkan setelah guru membaca isinya dan lisensi dijelaskan penerbit; tautkan sekarang tanpa pembacaan; tidak ditautkan | **Tautkan setelah dibaca dan lisensi dijelaskan** (minta kejelasan ke InTech Press) |
-| 6 | Prasyarat | tanpa prasyarat; wajib jalur A atau B lebih dulu | **Tanpa prasyarat**; Python diajarkan di `D-XI1-M2..M4` (tiga minggu mungkin kurang, perlu diuji di kelas) |
-| 7 | Posisi AI di luar CP | jalur D disebut pengayaan di luar CP; dihubungkan ke modul pendamping #69 | **Disebut pengayaan di luar CP** dan tidak dihitung pemenuhan CP |
-| 8 | Kesiapan lab | semua komputer dapat memasang Orange dan Python; hanya sebagian | Diputuskan setelah survei lab; spesifikasi minimum `[belum terverifikasi]` |
+| No. | Pertanyaan | Opsi | Rekomendasi | Keputusan pemilik (2026-11-19) |
+| --- | --- | --- | --- | --- |
+| 1 | Alat dan coding jalur D | (1) tanpa kode saja; (2) bertahap: tanpa kode di X, Python di XI-XII; (3) Python sejak X; (4) JS/TS selaras jalur B (bagian 5.2) | **Opsi 2**; cadangan opsi 4 | Terjawab: opsi 2 (bertahap). |
+| 2 | Bahasa pemrograman bila ada kode | Python; JS/TS | **Python**; JS/TS bila sekolah ingin satu toolchain dengan jalur B | Terjawab: Python. |
+| 3 | Layanan AI daring (generatif) | hanya demonstrasi guru; tidak dipakai sama sekali; murid memakai akun sekolah | **Hanya demonstrasi guru** | Terjawab: hanya demonstrasi guru. |
+| 4 | Teachable Machine | dipertahankan sebagai pengayaan dengan data benda; dihapus | **Pengayaan dengan data benda** (tanpa wajah dan suara) | Terjawab: pengayaan dengan data benda. |
+| 5 | Seri Buku AI SMA | tautkan setelah guru membaca isinya dan lisensi dijelaskan penerbit; tautkan sekarang tanpa pembacaan; tidak ditautkan | **Tautkan setelah dibaca dan lisensi dijelaskan** (minta kejelasan ke InTech Press) | Terjawab: ditautkan setelah dibaca dan lisensi dijelaskan penerbit. |
+| 6 | Prasyarat | tanpa prasyarat; wajib jalur A atau B lebih dulu | **Tanpa prasyarat**; Python diajarkan di `D-XI1-M2..M4` (tiga minggu mungkin kurang, perlu diuji di kelas) | Terjawab: tanpa prasyarat; Python di `D-XI1-M2..M4`. |
+| 7 | Posisi AI di luar CP | jalur D disebut pengayaan di luar CP; dihubungkan ke modul pendamping #69 | **Disebut pengayaan di luar CP** dan tidak dihitung pemenuhan CP | Terjawab: pengayaan di luar CP, tidak dihitung pemenuhan CP. |
+| 8 | Kesiapan lab | semua komputer dapat memasang Orange dan Python; hanya sebagian | Diputuskan setelah survei lab; spesifikasi minimum `[belum terverifikasi]` | Terjawab: diputuskan setelah survei lab. |
 
 ## 11. Sumber dan batasan
 
@@ -397,4 +400,5 @@ Keputusan milik pemilik; setiap opsi disertai rekomendasi penyusun.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v0.2.0 | 2026-11-19 | Disetujui pemilik beserta semua rekomendasi (issue #84) dan dimasukkan ke silabus v1.2 bagian 3.4; pertanyaan bagian 10 ditandai terjawab; header status diperbarui. Isi rencana tidak diubah. |
 | v0.1.0 | 2026-11-18 | Draf awal jalur D (issue #84): tujuan, rencana mingguan kelas X-XII, pemetaan CP dengan catatan AI di luar rumusan CP, opsi alat dan coding dengan rekomendasi, posisi seri Buku AI SMA, etika dan privasi, pertanyaan terbuka. Status DRAF. |

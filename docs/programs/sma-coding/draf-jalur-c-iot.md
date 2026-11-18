@@ -1,18 +1,20 @@
 # Draf Jalur C: IoT dan Robotika (Kelas X–XII)
 
-- **Version:** v0.1.0
-- **Last updated:** 2026-11-18
-- **Status:** DRAF — belum disetujui pemilik (issue #68); untuk silabus v1.1
-- **Changeset:** Draf awal jalur C: rencana mingguan kelas X–XII, pemetaan butir CP, opsi platform dengan rekomendasi, perangkat dan biaya (asumsi), keselamatan dan privasi, pertanyaan terbuka.
+- **Version:** v0.2.0
+- **Last updated:** 2026-11-19
+- **Status:** DISETUJUI pemilik 2026-11-19 (issue #68) beserta semua rekomendasi penyusun dan sudah dimasukkan ke [silabus v1.2](silabus.md) bagian 3.3; dokumen ini tetap menjadi riwayat draf (bagian 11 menandai setiap pertanyaan terjawab)
+- **Changeset:** Pertanyaan terbuka (bagian 11) ditandai terjawab sesuai keputusan pemilik 2026-11-19; status menjadi disetujui dan merujuk silabus v1.2. Isi rencana tidak diubah.
 
-> **DRAF — belum disetujui pemilik.** Dokumen ini adalah konten karangan
-> menurut [ADR-0007](../../architecture/adr/0007-authored-learning-content.md):
-> rancangan dan penilaian penyusun, bukan transkripsi sumber resmi dan bukan
-> keputusan. Silabus [v1.0](silabus.md) (jalur A dan B) tetap berlaku; jalur
-> C baru berlaku setelah pemilik menyetujuinya untuk v1.1. Pilihan platform
-> (bagian 6) dan semua pertanyaan di bagian 11 adalah hak pemilik. Penyusun
-> tidak mencatat persetujuan atas nama pemilik. Sampai disetujui, jalur C
-> tidak masuk `data/sma-coding/` (ADR-0006).
+> **Disetujui pemilik pada 2026-11-19 dan dimasukkan ke silabus v1.2.**
+> Dokumen ini adalah konten karangan menurut
+> [ADR-0007](../../architecture/adr/0007-authored-learning-content.md):
+> rancangan dan penilaian penyusun, bukan transkripsi sumber resmi. Pemilik
+> menyetujui draf beserta semua rekomendasi penyusun lewat dialog pilihan
+> (silabus [bagian 9.3](silabus.md)); sumber kebenaran jalur C kini
+> [silabus.md bagian 3.3](silabus.md) dan `data/sma-coding/`. Dokumen ini
+> dipertahankan sebagai riwayat (perbandingan platform, cuplikan harga
+> bertanggal 2026-11-19 yang `[belum terverifikasi]`, dan sumber); bila isinya
+> berbeda dari silabus, silabus yang berlaku.
 
 ## 0. Cara membaca dokumen ini
 
@@ -351,17 +353,17 @@ Aturan jalur C `[asumsi]`:
 
 ## 11. Pertanyaan terbuka untuk pemilik
 
-| No. | Pertanyaan | Opsi | Rekomendasi penyusun |
-| --- | --- | --- | --- |
-| 1 | Platform utama | (a) ESP32 DevKit; (b) Raspberry Pi Pico/Pico W; (c) Arduino Uno kompatibel; (d) micro:bit | (a), cadangan (b) |
-| 2 | Bahasa | (a) C++ (gaya Arduino), selaras jalur A; (b) MicroPython; (c) MakeCode/JS | (a) |
-| 3 | Pengadaan perangkat | (a) mitra menyediakan set per kelompok; (b) sekolah membeli dengan daftar belanja dari mitra; (c) campuran | (c); batas tanggung jawab dicatat tertulis |
-| 4 | Sekolah tanpa perangkat | (a) simulator saja (butuh verifikasi lisensi kelas dan dukungan papan); (b) set dipinjamkan mitra bergilir; (c) jalur C hanya untuk sekolah yang punya perangkat | (b), dengan (a) sebagai latihan; verifikasi simulator dulu |
-| 5 | Robot di kelas XII | (a) ya, satu set bergilir; (b) tidak, diganti proyek IoT statis | (a) bila anggaran ada; bila tidak (b) |
-| 6 | Infrastruktur jaringan untuk XI2 | (a) jaringan lab terpisah dan penengah pesan lokal di komputer guru; (b) jaringan sekolah dan layanan publik | (a) demi keamanan dan privasi |
-| 7 | Murid jalur C yang tidak pernah ambil jalur A | (a) jalur C mengajarkan dasar sendiri (seperti draf ini); (b) mewajibkan kelas bersama dengan A di X1 | (a); risiko tujuh minggu padat di X1 diakui |
-| 8 | Peran mitra pada keselamatan | (a) mitra menyusun dan mengaudit aturan keselamatan; (b) sekolah | (a), ditinjau pemilik |
-| 9 | Isi pasal hukum (UU ITE, UU PDP) di C-XII1-M11 | (a) diverifikasi dari sumber resmi sebelum modul ditulis; (b) tidak dirinci | (a) |
+| No. | Pertanyaan | Opsi | Rekomendasi penyusun | Keputusan pemilik (2026-11-19) |
+| --- | --- | --- | --- | --- |
+| 1 | Platform utama | (a) ESP32 DevKit; (b) Raspberry Pi Pico/Pico W; (c) Arduino Uno kompatibel; (d) micro:bit | (a), cadangan (b) | Terjawab: (a) ESP32 DevKit; cadangan (b). |
+| 2 | Bahasa | (a) C++ (gaya Arduino), selaras jalur A; (b) MicroPython; (c) MakeCode/JS | (a) | Terjawab: (a) C++ gaya Arduino. |
+| 3 | Pengadaan perangkat | (a) mitra menyediakan set per kelompok; (b) sekolah membeli dengan daftar belanja dari mitra; (c) campuran | (c); batas tanggung jawab dicatat tertulis | Terjawab: (c) campuran; batas tanggung jawab dicatat tertulis. |
+| 4 | Sekolah tanpa perangkat | (a) simulator saja (butuh verifikasi lisensi kelas dan dukungan papan); (b) set dipinjamkan mitra bergilir; (c) jalur C hanya untuk sekolah yang punya perangkat | (b), dengan (a) sebagai latihan; verifikasi simulator dulu | Terjawab: (b) set dipinjamkan mitra bergilir, simulator sebagai latihan. |
+| 5 | Robot di kelas XII | (a) ya, satu set bergilir; (b) tidak, diganti proyek IoT statis | (a) bila anggaran ada; bila tidak (b) | Terjawab: (a) bila anggaran ada; bila tidak (b). |
+| 6 | Infrastruktur jaringan untuk XI2 | (a) jaringan lab terpisah dan penengah pesan lokal di komputer guru; (b) jaringan sekolah dan layanan publik | (a) demi keamanan dan privasi | Terjawab: (a) jaringan lab terpisah dan penengah pesan lokal. |
+| 7 | Murid jalur C yang tidak pernah ambil jalur A | (a) jalur C mengajarkan dasar sendiri (seperti draf ini); (b) mewajibkan kelas bersama dengan A di X1 | (a); risiko tujuh minggu padat di X1 diakui | Terjawab: (a) jalur C mengajarkan dasar sendiri. |
+| 8 | Peran mitra pada keselamatan | (a) mitra menyusun dan mengaudit aturan keselamatan; (b) sekolah | (a), ditinjau pemilik | Terjawab: (a) mitra menyusun dan mengaudit; ditinjau pemilik. |
+| 9 | Isi pasal hukum (UU ITE, UU PDP) di C-XII1-M11 | (a) diverifikasi dari sumber resmi sebelum modul ditulis; (b) tidak dirinci | (a) | Terjawab: (a) diverifikasi sebelum modul ditulis. |
 
 Pertanyaan 1, 3, 4, 5 berkaitan dengan biaya; jawab bersama agar konsisten.
 
@@ -402,4 +404,5 @@ Batasan:
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v0.2.0 | 2026-11-19 | Disetujui pemilik beserta semua rekomendasi (issue #68) dan dimasukkan ke silabus v1.2 bagian 3.3; pertanyaan bagian 11 ditandai terjawab; header status diperbarui. Isi rencana tidak diubah. |
 | v0.1.0 | 2026-11-18 | Draf awal (issue #68): tujuan, rencana mingguan X–XII, pemetaan CP, opsi platform dan rekomendasi, perangkat dan biaya (asumsi), keselamatan, privasi, jembatan, pertanyaan terbuka, sumber. Status DRAF. |
