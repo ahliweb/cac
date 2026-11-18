@@ -1,5 +1,8 @@
 # kurikulum-informatika
 
+> **Rencana perubahan identitas (2026-11-19):** pemilik menetapkan target nama repository **ahliweb/cac**, paradigma **Curriculum as Code (CaC)**, dan identitas produk **AhliKoding Curriculum**. Repository **masih bernama ahliweb/osn**; ini baru persiapan migrasi, **belum rename**. ID program osn dan data silabus tetap. Baca [ADR-0009](docs/architecture/adr/0009-cac-platform-identity.md), [rencana migrasi](docs/migrations/2026-11-osn-to-cac.md), [matriks dampak](docs/migrations/2026-11-cac-impact-matrix.md), [kontrak kebutuhan](docs/requirements/identity-cac.md), dan [roadmap](docs/roadmap.md).
+
+
 Curriculum-as-code for the **Silabus Operasional Pembinaan OSN Informatika
 2026** (v2.0, 4 September 2026): a typed, validated, versioned
 representation of the 28-week operational syllabus, plus the governance
