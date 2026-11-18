@@ -201,15 +201,15 @@ rumpun materi. Ada 10 modul untuk program `osn`:
 | `--id` | Judul | Minggu | Status |
 | --- | --- | --- | --- |
 | `dasar-pemrograman` | Dasar Pemrograman dengan C++ | 1, 2 | disetujui (2026-11-18) |
-| `logika-bitwise` | Logika dan Bitwise | 3, 10, 16, 25 | draf |
-| `aritmetika` | Aritmetika dan Teori Bilangan Dasar | 9, 10 | draf |
-| `aturan-berhitung` | Aturan Berhitung | 11, 12 | draf |
-| `rekursi` | Rekursi | 4, 5, 6 | draf |
-| `search-sort` | Search dan Sort | 4, 5 | draf |
-| `strategi-problem-solving` | Strategi Problem Solving | 3, 6, 7, 8, 13-16, 26-28 | draf |
-| `struktur-data` | Struktur Data untuk OSN Informatika | 2, 8, 20-23, 27 | draf |
-| `graph-tree` | Graph dan Tree untuk OSN Informatika | 17-20, 22, 27 | draf |
-| `geometri-dasar` | Geometri Dasar untuk OSN Informatika | 24 | draf |
+| `logika-bitwise` | Logika dan Bitwise | 3, 10, 16, 25 | disetujui (2026-11-18) |
+| `aritmetika` | Aritmetika dan Teori Bilangan Dasar | 9, 10 | disetujui (2026-11-18) |
+| `aturan-berhitung` | Aturan Berhitung | 11, 12 | disetujui (2026-11-18) |
+| `rekursi` | Rekursi | 4, 5, 6 | disetujui (2026-11-18) |
+| `search-sort` | Search dan Sort | 4, 5 | disetujui (2026-11-18) |
+| `strategi-problem-solving` | Strategi Problem Solving | 3, 6, 7, 8, 13-16, 26-28 | disetujui (2026-11-18) |
+| `struktur-data` | Struktur Data untuk OSN Informatika | 2, 8, 20-23, 27 | disetujui (2026-11-18) |
+| `graph-tree` | Graph dan Tree untuk OSN Informatika | 17-20, 22, 27 | disetujui (2026-11-18) |
+| `geometri-dasar` | Geometri Dasar untuk OSN Informatika | 24 | disetujui (2026-11-18) |
 
 Daftar di atas dari `data/osn/modules.json`; status bisa berubah setelah
 panduan ini ditulis, jadi periksa berkas itu atau jalankan `render modul`
@@ -222,29 +222,22 @@ osn render modul --id rekursi
 ```text
 # Rekursi
 
-> **DRAF — belum ditinjau.** Modul ini ditulis oleh tim (termasuk draf yang disusun agen AI) dan belum ditinjau oleh manusia. Isinya dapat memuat kekeliruan; periksa ke rujukan resmi di bagian bawah sebelum dipakai.
-
 ## Untuk siapa modul ini
 ...
 ## Rujukan
 - R1: Silabus OSN Informatika 2026 <https://osn.toki.id/silabus>
 
 ---
-Status modul: draf.
+Status modul: disetujui.
 Program: Silabus Operasional Pembinaan OSN Informatika 2026 (osn).
+Disetujui pada 2026-11-18 oleh peninjau dengan peran: pemilik program.
 ```
 
 **Arti spanduk.** Modul yang bukan `disetujui` selalu diawali spanduk:
 `DRAF — belum ditinjau.` (belum ada manusia yang meninjau),
 `DRAF — sedang ditinjau, belum disetujui.`, atau `DITARIK — jangan dipakai.`
 Modul `disetujui` tidak berspanduk dan diakhiri tanggal serta peran
-peninjau:
-
-```text
-Status modul: disetujui.
-Program: Silabus Operasional Pembinaan OSN Informatika 2026 (osn).
-Disetujui pada 2026-11-18 oleh peninjau dengan peran: pemilik program.
-```
+peninjau, seperti contoh di atas.
 
 Sebagai mentor, jangan membagikan modul `draf` ke siswa tanpa menyebutkan
 statusnya, dan periksa isinya lebih dulu. Id yang salah ditolak dengan daftar
