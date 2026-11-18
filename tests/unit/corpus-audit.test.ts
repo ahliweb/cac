@@ -65,7 +65,10 @@ const realCorpus = await loadRealCorpus();
 
 describe("DATA_FILE_REGISTRY", () => {
   test("covers every .json file actually present under data/", async () => {
-    const fileNames = (await readdir(DATA_DIR)).filter((name) => name.endsWith(".json"));
+    // modules.json is the optional learning-module index (ADR-0007), validated by moduleFindings.
+    const fileNames = (await readdir(DATA_DIR)).filter(
+      (name) => name.endsWith(".json") && name !== "modules.json",
+    );
     const registered = new Set(DATA_FILE_REGISTRY.map((entry) => entry.file));
     for (const name of fileNames) {
       expect(registered.has(name)).toBe(true);

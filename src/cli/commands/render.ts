@@ -1,6 +1,6 @@
 /**
- * `osn render <weekly|checkpoint|sop|lembar-siswa>` -- turns validated
- * corpus data into Markdown artefacts (issues #21, #53). See
+ * `osn render <weekly|checkpoint|sop|lembar-siswa|modul>` -- turns validated
+ * corpus data into Markdown artefacts (issues #21, #53, #54). See
  * `src/render/weekly.ts`, `src/render/checkpoint.ts`, `src/render/sop.ts`
  * and `src/render/student-sheet.ts` for the actual pure
  * rendering logic; this module is only the thin subcommand/flag parsing +
@@ -12,15 +12,17 @@
 import { resolve } from "node:path";
 import { renderCheckpointSheet } from "../../render/checkpoint";
 import { RenderRequestError } from "../../render/errors";
+import { renderModule } from "../../render/module";
 import { renderSopCard } from "../../render/sop";
 import { renderStudentSheet } from "../../render/student-sheet";
 import { renderWeeklyPlan } from "../../render/weekly";
 import type { Command } from "../command";
 import { EXIT_SUCCESS, EXIT_USAGE_ERROR } from "../command";
+import { loadModule } from "../module-content";
 import { writeOutputFile } from "../output-writer";
-import { resolveProgramOption } from "../program-loader";
+import { REPO_ROOT, resolveProgramOption } from "../program-loader";
 
-const SUBCOMMANDS = ["weekly", "checkpoint", "sop", "lembar-siswa"] as const;
+const SUBCOMMANDS = ["weekly", "checkpoint", "sop", "lembar-siswa", "modul"] as const;
 type RenderSubcommand = (typeof SUBCOMMANDS)[number];
 
 function isRenderSubcommand(value: string | undefined): value is RenderSubcommand {
@@ -39,17 +41,21 @@ and the §6.3 KPI snapshot fields), or a one-page mentor SOP card (the
 and the §5.3 hint ladder), or a learner sheet for students ("lembar
 belajar siswa": the week's coverage and outcome, topic families, practice
 target, gate evidence, the §5.3 hint callout, a blank self-check list,
-and references -- derived only from the validated corpus).
+and references -- derived only from the validated corpus), or a learning
+module ("modul": authored learning content from data/<program>/modules.json;
+unless its status is "disetujui" it starts with a DRAF/DITARIK banner).
 
 Usage:
   osn render weekly --week <1-28> [--out <path>] [--force]
   osn render checkpoint --number <1-7> [--out <path>] [--force]
   osn render sop [--out <path>] [--force]
   osn render lembar-siswa --week <1-28> [--out <path>] [--force]
+  osn render modul --id <module-id> [--out <path>] [--force]
 
 Options:
   --week <n>      Week number, 1-28. Required for "weekly" and "lembar-siswa".
   --number <n>    Checkpoint number, 1-7. Required for "checkpoint".
+  --id <id>       Module id from the programme's modules.json. Required for "modul".
   --out <path>    Write the rendered Markdown to this path instead of
                   stdout.
   --force         Overwrite --out if it already exists. Without it, an
@@ -61,7 +67,8 @@ Options:
 Exit codes:
   0   success.
   2   usage error: missing/unknown subcommand, a missing required flag
-      (--week/--number), --week/--number outside its valid range, or
+      (--week/--number/--id), --week/--number outside its valid range, an
+      unknown or unreadable module, or
       --out already exists without --force, or an unknown --program.`;
 
 /** Extracts the value following the first occurrence of `flag` in `args`, or `undefined` if `flag` is absent (or has nothing after it). */
@@ -85,7 +92,7 @@ function parseInteger(rawValue: string): number | null {
 export const renderCommand: Command = {
   name: "render",
   summary:
-    "Render Markdown artefacts (weekly plan, checkpoint sheet, SOP card, student learner sheet).",
+    "Render Markdown artefacts (weekly plan, checkpoint sheet, SOP card, student learner sheet, learning module).",
   help: () => HELP_TEXT,
 
   async run(rawArgs, ctx) {
@@ -160,6 +167,21 @@ export const renderCommand: Command = {
         }
         throw cause;
       }
+    } else if (subcommand === "modul") {
+      const id = readFlagValue(rest, "--id");
+      if (id === undefined || id.startsWith("-")) {
+        ctx.stderr("osn render modul: --id <module-id> is required.\n");
+        return EXIT_USAGE_ERROR;
+      }
+      const loaded = await loadModule(resolve(REPO_ROOT, resolved.program.corpusDir), id);
+      if (!loaded.ok) {
+        ctx.stderr(`osn render modul: ${loaded.message}\n`);
+        return EXIT_USAGE_ERROR;
+      }
+      content = renderModule(loaded.module, loaded.body, loaded.references, {
+        id: resolved.program.id,
+        name: resolved.program.name,
+      });
     } else {
       content = renderSopCard();
     }

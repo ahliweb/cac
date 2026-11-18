@@ -21,6 +21,7 @@ Tables, not prose — drift should be visible at a glance.
 | `src/render/` | Generators that turn domain data into mentor-facing output and the student learner sheet (`osn render lembar-siswa`). |
 | `src/index.ts` | Package entrypoint. |
 | `data/programs.json` | Programme registry (ADR-0006), validated by `src/schema/program.ts`. |
+| `content/` | Authored learning-module bodies, `content/<program>/modules/<id>.md` (ADR-0007). Indexed by `data/<program>/modules.json`; never transcribed syllabus content. |
 | `data/osn/` | The OSN programme corpus (`data/osn/*.json`) and `data/osn/samples/` (synthetic learning records). One `data/<program>/` directory per registered programme. |
 | `tests/unit/` | One module tested in isolation. Mirrors `src/` loosely. |
 | `tests/integration/` | Cross-module tests (schema → domain → CLI/render). |
@@ -62,6 +63,7 @@ table.
 | `bun run privacy-check` | `osn privacy-check` — recursively scans `data/` for direct-identifier-shaped keys (GR-04); exits 0 clean / 1 on any finding. |
 | `bun run check:requirements` | `bun run scripts/check-requirements.ts` — verifies the requirements register and traceability matrices are consistent and exhaustive. |
 | `bun run check:checklist-fidelity` | `bun run scripts/check-checklist-fidelity.ts` — verifies §14.1/§14.2 data matches the source syllabus verbatim. |
+| `bun run check:module-code` | `bun run scripts/check-module-code.ts` — compiles every ```` ```cpp ```` block in `content/**/modules/*.md` with `g++ -std=c++17 -fsyntax-only` (nothing is run); fails if `g++` is missing. |
 | `bun run changeset` | Create a changeset (interactive). |
 | `bun run version` | Consume changesets into `CHANGELOG.md` / bump version. |
 
@@ -148,6 +150,7 @@ not duplicate that policy here; that document is the source of truth.
 - [ ] `bun run validate` passes (corpus validation).
 - [ ] `bun run privacy-check` passes (no direct-identifier-shaped key in `data/`).
 - [ ] `bun run check:requirements` passes if `docs/requirements/` was touched.
+- [ ] `bun run check:module-code` passes (C++ examples in `content/` modules compile).
 - [ ] Every command and path mentioned in any doc you touched actually
       exists — verify, don't assume.
 - [ ] Tests added/updated for the change (per `docs/development/testing.md`).

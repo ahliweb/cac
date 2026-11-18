@@ -35,6 +35,14 @@ plus `data/osn/samples/` (synthetic sample learning records — see
 `data/osn/samples/README.md`). `osn validate` and `osn privacy-check` both
 run over this directory in CI: `osn validate` per registered programme (and the registry itself), `osn privacy-check` recursively over all of `data/`.
 
+## `content/`
+
+**What belongs here:** authored learning-module bodies, one Markdown file per module at `content/<program>/modules/<id>.md` (ADR-0007, scoped by issue #54). Each file is indexed by an entry in `data/<program>/modules.json`, which carries the review lifecycle (`draf` → `ditinjau` → `disetujui`, plus `ditarik`). `osn validate` checks that every indexed file exists and is non-empty; `bun run check:module-code` compiles its C++ examples.
+
+**What must never go here:** transcribed syllabus content (that is `data/`); real learner data; problems copied from judges or competitions (link them instead); a module marked `disetujui` by an AI agent.
+
+**State today:** `content/osn/modules/dasar-pemrograman.md`, the pilot module (status `draf`).
+
 ## `src/schema/`
 
 **What belongs here:** Zod schemas — the single source of truth for both
@@ -82,7 +90,7 @@ schema), `privacy-scan.ts` (the `osn privacy-check` scan logic),
 `operations.ts` (readiness checklist, operational rules, syllabus-check
 log), `cohort-plan.ts` (the `osn plan` calendar generator), `report.ts`
 (the `osn report` KPI dashboard), and `corpus-audit.ts` (the `osn
-validate` whole-corpus audit).
+validate` whole-corpus audit) and `modules.ts` (referential rules for the optional `data/<program>/modules.json`).
 
 ## `src/render/`
 
@@ -96,7 +104,7 @@ weekly learner sheet (`osn render lembar-siswa`).
 `process.exit` calls (that is `src/cli/`'s job); network I/O.
 
 **State today:** `weekly.ts`, `checkpoint.ts`, `sop.ts`, `checklist.ts`,
-`student-sheet.ts` (the five renderers), plus `markdown-utils.ts` (shared formatting
+`student-sheet.ts` (the five renderers) and `module.ts` (the learning-module renderer, `osn render modul`), plus `markdown-utils.ts` (shared formatting
 helpers) and `errors.ts` (`RenderRequestError`).
 
 ## `src/cli/`
@@ -118,7 +126,7 @@ and exit-code constants), `commands/index.ts` (the command registry) and
 `commands/*.ts` (the six command handlers), plus the shared I/O/formatting
 helpers each command uses (`corpus-loader.ts`, `program-loader.ts` (registry loading and `--program` resolution), `privacy-scan-loader.ts`,
 `output-writer.ts`, `format-audit.ts`, `format-plan.ts`, `format-report.ts`,
-`format-privacy-check.ts`, `format-checklist.ts`). A `bin` entry
+`format-privacy-check.ts`, `format-checklist.ts`) and `module-content.ts` (module body existence check for `osn validate`, and the loader behind `osn render modul`). A `bin` entry
 (`"osn": "src/cli/index.ts"`) is registered in `package.json`.
 
 ## `src/index.ts`
@@ -167,7 +175,7 @@ register and traceability matrices via `scripts/check-requirements.ts`),
 `cli-validate-fixtures.test.ts` (the full corpus, and a deliberately
 corrupted fixture corpus), and one end-to-end test per remaining CLI
 command (`cli-plan.test.ts`, `cli-render.test.ts`, `cli-report.test.ts`,
-`cli-privacy-check.test.ts`, `cli-checklist.test.ts`).
+`cli-privacy-check.test.ts`, `cli-checklist.test.ts`) plus `cli-modules.test.ts` (`osn render modul`, `osn validate` with a module index, and `check:module-code`).
 
 ## `scripts/`
 
@@ -178,8 +186,9 @@ tooling, not part of the curriculum-as-code pipeline itself).
 **What must never go here:** curriculum domain logic (belongs in `src/`).
 
 **State today:** `check-requirements.ts` (backs `bun run
-check:requirements`) and `check-checklist-fidelity.ts` (backs `bun run
-check:checklist-fidelity`).
+check:requirements`), `check-checklist-fidelity.ts` (backs `bun run
+check:checklist-fidelity`) and `check-module-code.ts` (backs `bun run
+check:module-code`).
 
 ## `docs/silabus/`
 

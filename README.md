@@ -52,8 +52,9 @@ bun test
 | `src/cli/` | The `osn` CLI's command handlers (`validate`, `plan`, `render`, `report`, `privacy-check`, `checklist`) and dispatcher. |
 | `src/render/` | Pure functions that turn domain data into mentor-facing Markdown artefacts (weekly plan, checkpoint sheet, SOP card, checklist) and the student learner sheet. |
 | `src/index.ts` | Package entrypoint, built by `bun run build` into `dist/`. |
+| `content/` | Authored learning-module bodies (`content/<program>/modules/<id>.md`, ADR-0007), indexed by `data/<program>/modules.json`. Always marked `DRAF` until a human approves them. |
 | `data/programs.json` | The programme registry (ADR-0006): one entry per programme, validated by `src/schema/program.ts`. |
-| `data/osn/` | The OSN programme corpus: 22 schema-validated JSON files (topic families, weeks, gates, references, assessment model, KPI definitions, playbooks, and more) plus `samples/` (synthetic learning records). |
+| `data/osn/` | The OSN programme corpus: 22 schema-validated JSON files plus the optional learning-module index `modules.json` (topic families, weeks, gates, references, assessment model, KPI definitions, playbooks, and more) plus `samples/` (synthetic learning records). |
 | `tests/unit/` | Fast, isolated tests, one module at a time. |
 | `tests/integration/` | Cross-module tests (requirements-register verification, full-corpus and CLI end-to-end tests). |
 | `docs/development/` | Engineering process docs: testing, CI/CD, releasing. |
@@ -93,6 +94,7 @@ test`). This table matches `package.json` exactly.
 | `bun run privacy-check` | `osn privacy-check` | Recursively scans `data/` for direct-identifier-shaped keys (GR-04). Exits 0 clean / 1 on any finding. See `docs/cli/README.md`. |
 | `bun run check:requirements` | `bun run scripts/check-requirements.ts` | Verifies `docs/requirements/register.md` and `traceability.md` are internally consistent and exhaustive. |
 | `bun run check:checklist-fidelity` | `bun run scripts/check-checklist-fidelity.ts` | Verifies the §14.1/§14.2 data in `data/osn/` matches the source syllabus verbatim. |
+| `bun run check:module-code` | `bun run scripts/check-module-code.ts` | Compiles every `cpp` block of `content/**/modules/*.md` with `g++ -std=c++17 -fsyntax-only` (never runs them). Exits 1 on a failing block or a missing `g++`. |
 | `bun run changeset` | `changeset` | Interactive changeset creation. See `docs/development/releasing.md`. |
 | `bun run version` | `changeset version` | Consumes changesets into `CHANGELOG.md` and bumps `package.json` version. |
 

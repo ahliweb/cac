@@ -21,6 +21,7 @@
     "privacy-check": "bun run src/cli/index.ts privacy-check",
     "check:requirements": "bun run scripts/check-requirements.ts",
     "check:checklist-fidelity": "bun run scripts/check-checklist-fidelity.ts",
+    "check:module-code": "bun run scripts/check-module-code.ts",
     "changeset": "changeset",
     "version": "changeset version"
   },
