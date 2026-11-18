@@ -48,7 +48,7 @@ export const KUL_DATA_FILE_REGISTRY: readonly KulFileEntry[] = [
 ];
 
 /**
- * The fixed counts and totals the approved v1.0 syllabus has (bagian 2.2 and
+ * The fixed counts and totals the approved syllabus (v1.0, unchanged in v1.1) has (bagian 2.2 and
  * 4.2): per-track course counts and SKS, the overall totals, the 17 CS2023
  * knowledge areas and the sizes of the other tables.
  */

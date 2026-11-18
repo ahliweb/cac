@@ -28,7 +28,7 @@
       "id": "kuliah-coding",
       "name": "Silabus Pembelajaran Coding Perguruan Tinggi",
       "sourceDocument": "docs/programs/kuliah-coding/silabus.md",
-      "syllabusVersion": "1.0.0",
+      "syllabusVersion": "1.1.0",
       "syllabusDate": "2026-11-19",
       "corpusDir": "data/kuliah-coding"
     },
