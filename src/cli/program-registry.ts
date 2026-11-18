@@ -36,21 +36,21 @@ import {
 import { REGISTRY_FILE_NAME } from "../domain/programs";
 import { auditSdCorpus, SD_DATA_FILE_REGISTRY } from "../domain/sd-corpus-audit";
 import { auditSmaCorpus, SMA_DATA_FILE_REGISTRY } from "../domain/sma-corpus-audit";
+import { auditSmpCorpus, SMP_DATA_FILE_REGISTRY } from "../domain/smp-corpus-audit";
 import { auditTkCorpus, TK_DATA_FILE_REGISTRY } from "../domain/tk-corpus-audit";
 import { DEWASA_CODING_PROGRAM_ID } from "../schema/dw-common";
 import { KUL_PROGRAM_ID } from "../schema/kul-common";
-import { auditSmpCorpus, SMP_DATA_FILE_REGISTRY } from "../domain/smp-corpus-audit";
 import type { Program } from "../schema/program";
 import { SD_CODING_PROGRAM_ID } from "../schema/sd-common";
 import { SMA_CODING_PROGRAM_ID } from "../schema/sma-common";
+import { SMP_CODING_PROGRAM_ID } from "../schema/smp-common";
 import { TK_CODING_PROGRAM_ID } from "../schema/tk-common";
 import { dewasaCodingFidelity } from "./fidelity/dewasa-coding";
 import { kuliahCodingFidelity } from "./fidelity/kuliah-coding";
 import { sdCodingFidelity } from "./fidelity/sd-coding";
 import { smaCodingFidelity } from "./fidelity/sma-coding";
-import { tkCodingFidelity } from "./fidelity/tk-coding";
-import { SMP_CODING_PROGRAM_ID } from "../schema/smp-common";
 import { smpCodingFidelity } from "./fidelity/smp-coding";
+import { tkCodingFidelity } from "./fidelity/tk-coding";
 import type { FidelityModule } from "./fidelity/types";
 
 /** Cross-programme inputs an audit may need; built once per `osn validate` run. */
