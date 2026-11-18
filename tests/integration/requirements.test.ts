@@ -109,7 +109,7 @@ describe("docs/requirements/register.md and traceability.md", () => {
     }
   });
 
-  test("the register cites issues beyond the initial backlog (the sma-coding requirements)", () => {
+  test("the register cites issues beyond the initial backlog (the multi-programme requirements)", () => {
     const rows = parseRegister(registerText);
     const byId = new Map(rows.map((row) => [row.id, row]));
     for (const id of [
@@ -120,9 +120,20 @@ describe("docs/requirements/register.md and traceability.md", () => {
       "FR-31",
       "FR-32",
       "FR-33",
+      "FR-34",
+      "FR-35",
+      "FR-36",
+      "FR-37",
+      "FR-38",
       "TR-12",
       "TR-13",
       "TR-14",
+      "TR-15",
+      "TR-16",
+      "TR-17",
+      "TR-18",
+      "TR-19",
+      "ER-17",
       "GR-13",
     ]) {
       const row = byId.get(id);
@@ -141,9 +152,19 @@ describe("docs/requirements/register.md and traceability.md", () => {
       "FR-31",
       "FR-32",
       "FR-33",
+      "FR-34",
+      "FR-35",
+      "FR-36",
+      "FR-37",
+      "FR-38",
       "TR-12",
       "TR-13",
       "TR-14",
+      "TR-15",
+      "TR-16",
+      "TR-17",
+      "TR-18",
+      "TR-19",
       "GR-13",
     ]);
     for (const row of testRows) {
