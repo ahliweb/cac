@@ -9,14 +9,16 @@
  */
 
 import { describe, expect, test } from "bun:test";
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import {
+  BACKLOG_FIRST_ISSUE,
+  BACKLOG_LAST_ISSUE,
   checkRegister,
+  checkTestLinks,
   checkTraceability,
   formatProblems,
   type IssueRow,
-  MAX_ISSUE,
   MAX_SECTION,
   MIN_ISSUE,
   MIN_SECTION,
@@ -24,6 +26,7 @@ import {
   parseRegister,
   parseTraceabilityIssues,
   parseTraceabilitySections,
+  parseTraceabilityTests,
   REQUIREMENT_ID_PATTERN,
   type RegisterRow,
   runChecks,
@@ -38,10 +41,25 @@ const traceabilityText = readFileSync(
   join(repoRoot, "docs", "requirements", "traceability.md"),
   "utf-8",
 );
+const fileExists = (relativePath: string): boolean => existsSync(join(repoRoot, relativePath));
+
+/** A register row with every field valid, for fixtures that vary one field at a time. */
+function validRow(overrides: Partial<RegisterRow> = {}): RegisterRow {
+  return {
+    id: "FR-01",
+    title: "A",
+    source: "§1",
+    statement: "The system shall do a thing.",
+    verification: "unit test",
+    issues: [9],
+    status: "planned",
+    ...overrides,
+  };
+}
 
 describe("docs/requirements/register.md and traceability.md", () => {
   test("pass the full completeness check with zero problems", () => {
-    const result = runChecks(registerText, traceabilityText);
+    const result = runChecks(registerText, traceabilityText, fileExists);
     expect(formatProblems(result.problems)).toBe(
       "check-requirements: OK — register and traceability matrices are consistent.",
     );
@@ -79,13 +97,45 @@ describe("docs/requirements/register.md and traceability.md", () => {
     }
   });
 
-  test("every requirement references at least one issue within #1-#26", () => {
+  test("every requirement references at least one well-formed issue (positive integer, no upper bound)", () => {
     const rows = parseRegister(registerText);
     for (const row of rows) {
       expect(row.issues.length).toBeGreaterThan(0);
+      expect(row.invalidIssueTokens).toEqual([]);
       for (const issue of row.issues) {
+        expect(Number.isInteger(issue)).toBe(true);
         expect(issue).toBeGreaterThanOrEqual(MIN_ISSUE);
-        expect(issue).toBeLessThanOrEqual(MAX_ISSUE);
+      }
+    }
+  });
+
+  test("the register cites issues beyond the initial backlog (the sma-coding requirements)", () => {
+    const rows = parseRegister(registerText);
+    const byId = new Map(rows.map((row) => [row.id, row]));
+    for (const id of ["FR-27", "FR-28", "FR-29", "FR-30", "FR-31", "TR-12", "TR-13", "GR-13"]) {
+      const row = byId.get(id);
+      expect(row).toBeDefined();
+      expect(row?.issues.some((issue) => issue > BACKLOG_LAST_ISSUE)).toBe(true);
+    }
+  });
+
+  test("every requirement of the tests matrix links only existing test files", () => {
+    const testRows = parseTraceabilityTests(traceabilityText);
+    expect(testRows.map((row) => row.requirementId)).toEqual([
+      "FR-27",
+      "FR-28",
+      "FR-29",
+      "FR-30",
+      "FR-31",
+      "TR-12",
+      "TR-13",
+      "GR-13",
+    ]);
+    for (const row of testRows) {
+      expect(row.tests.length).toBeGreaterThan(0);
+      for (const test of row.tests) {
+        expect(test).toMatch(/^tests\/(unit|integration)\/.+\.test\.ts$/);
+        expect(fileExists(test)).toBe(true);
       }
     }
   });
@@ -105,7 +155,7 @@ describe("docs/requirements/register.md and traceability.md", () => {
     const issueRows = parseTraceabilityIssues(traceabilityText);
     const byIssue = new Map(issueRows.map((row) => [row.issue, row]));
 
-    for (let issue = MIN_ISSUE; issue <= MAX_ISSUE; issue += 1) {
+    for (let issue = BACKLOG_FIRST_ISSUE; issue <= BACKLOG_LAST_ISSUE; issue += 1) {
       const row = byIssue.get(issue);
       expect(row).toBeDefined();
       expect(row?.requirementIds.length ?? 0).toBeGreaterThan(0);
@@ -176,7 +226,7 @@ describe("check-requirements pure functions (unit-level, fixture-driven)", () =>
     );
   });
 
-  test("checkRegister flags a malformed ID, empty fields, an unknown verification method, an out-of-range issue and a bad status", () => {
+  test("checkRegister flags a malformed ID, empty fields, an unknown verification method and a bad status", () => {
     const badRows: RegisterRow[] = [
       {
         id: "XX-01",
@@ -194,8 +244,49 @@ describe("check-requirements pure functions (unit-level, fixture-driven)", () =>
     expect(problems.some((p) => p.includes("Source is empty"))).toBe(true);
     expect(problems.some((p) => p.includes("Statement is empty"))).toBe(true);
     expect(problems.some((p) => p.includes('Verification "vibes"'))).toBe(true);
-    expect(problems.some((p) => p.includes("references issue #27"))).toBe(true);
+    expect(problems.some((p) => p.includes("issue #27"))).toBe(false);
     expect(problems.some((p) => p.includes('Status "done"'))).toBe(true);
+  });
+
+  test("checkRegister accepts issues beyond #26 and rejects a non-positive issue number", () => {
+    expect(checkRegister([validRow({ issues: [27, 76, 1000] })])).toEqual([]);
+    const problems = checkRegister([validRow({ issues: [0] })]);
+    expect(problems.some((p) => p.includes("references issue #0, which is not a positive"))).toBe(
+      true,
+    );
+  });
+
+  test("parseRegister accepts #27 and #76 and reports malformed Issue(s) tokens instead of dropping them", () => {
+    const header = "| ID | Title | Source | Statement | Verification | Issue(s) | Status |";
+    const make = (issues: string): string =>
+      [
+        header,
+        "| --- | --- | --- | --- | --- | --- | --- |",
+        `| FR-01 | A | §1 | S | unit test | ${issues} | planned |`,
+      ].join("\n");
+
+    const ok = parseRegister(make("#27, #76"));
+    expect(ok[0]?.issues).toEqual([27, 76]);
+    expect(ok[0]?.invalidIssueTokens).toEqual([]);
+    expect(checkRegister(ok)).toEqual([]);
+
+    for (const bad of ["#0", "#abc", "26", "#1a", "#01", "#", "#1.5", "#99999999999999999999"]) {
+      const rows = parseRegister(make(bad));
+      expect(rows[0]?.invalidIssueTokens).toEqual([bad]);
+      const problems = checkRegister(rows);
+      expect(problems.some((p) => p.includes(`Issue(s) token "${bad}"`))).toBe(true);
+    }
+
+    // A good token next to a bad one: the good one is kept, the bad one is reported.
+    const mixed = parseRegister(make("#19, 20"));
+    expect(mixed[0]?.issues).toEqual([19]);
+    expect(mixed[0]?.invalidIssueTokens).toEqual(["20"]);
+    expect(checkRegister(mixed).some((p) => p.includes('token "20"'))).toBe(true);
+
+    // A cell with only a bad token has no issue and is reported as empty too.
+    expect(checkRegister(parseRegister(make("abc"))).some((p) => p.includes("is empty"))).toBe(
+      true,
+    );
   });
 
   test("checkRegister flags an empty Issue(s) cell and a duplicate ID", () => {
@@ -281,6 +372,113 @@ describe("check-requirements pure functions (unit-level, fixture-driven)", () =>
 
     const problems = checkTraceability(registerRows, sectionRows, issueRows);
     expect(problems.some((p) => p.includes("§5 has no requirements listed"))).toBe(true);
+  });
+
+  test("checkTraceability still requires #1-#26 but does not demand or reject issues after #26", () => {
+    const registerRows = [validRow()];
+    const sectionRows: SectionRow[] = Array.from({ length: 14 }, (_, index) => ({
+      section: index + 1,
+      label: `§${index + 1}`,
+      requirementIds: ["FR-01"],
+      issues: [1],
+      status: "planned",
+    }));
+    const backlog: IssueRow[] = Array.from({ length: 26 }, (_, index) => ({
+      issue: index + 1,
+      label: `#${index + 1}`,
+      requirementIds: ["FR-01"],
+    }));
+
+    // Accepted: #27 and #76 present or absent alike.
+    expect(checkTraceability(registerRows, sectionRows, backlog)).toEqual([]);
+    const withLater: IssueRow[] = [
+      ...backlog,
+      { issue: 27, label: "#27", requirementIds: ["FR-01"] },
+      { issue: 76, label: "#76", requirementIds: ["FR-01"] },
+    ];
+    expect(checkTraceability(registerRows, sectionRows, withLater)).toEqual([]);
+
+    // Rejected: a missing backlog issue, even when later issues are present.
+    const missing = withLater.filter((row) => row.issue !== 13);
+    expect(
+      checkTraceability(registerRows, sectionRows, missing).some((p) =>
+        p.includes("#13 is missing from the issue matrix"),
+      ),
+    ).toBe(true);
+  });
+
+  test("parseTraceabilityIssues keeps a malformed label as issue 0 and checkTraceability reports it", () => {
+    const text = [
+      "| Issue | Requirements covered |",
+      "| --- | --- |",
+      "| #27 — later | FR-01 |",
+      "| #0 — zero | FR-01 |",
+      "| #abc — word | FR-01 |",
+      "| 28 — no hash | FR-01 |",
+      "| #29— glued | FR-01 |",
+    ].join("\n");
+    const rows = parseTraceabilityIssues(text);
+    expect(rows.map((row) => row.issue)).toEqual([27, 0, 0, 0, 0]);
+    const problems = checkTraceability([validRow()], [], rows);
+    const reported = problems.filter((p) => p.includes("does not start with a well-formed"));
+    expect(reported).toHaveLength(4);
+  });
+
+  test("checkTraceability reports a malformed token in a section's Issues cell", () => {
+    const text = [
+      "| Syllabus section | Requirements | Issues | Status |",
+      "| --- | --- | --- | --- |",
+      "| §1 — X | FR-01 | #10, 11 | implemented |",
+    ].join("\n");
+    const rows = parseTraceabilitySections(text);
+    expect(rows[0]?.issues).toEqual([10]);
+    const problems = checkTraceability([validRow()], rows, []);
+    expect(problems.some((p) => p.includes('§1 Issues token "11"'))).toBe(true);
+  });
+
+  test("parseTraceabilityTests reads the tests matrix and ignores a document without one", () => {
+    expect(parseTraceabilityTests("# nothing here\n")).toEqual([]);
+    const text = [
+      "| Requirement | Tests |",
+      "| --- | --- |",
+      "| FR-27 | `tests/unit/a.test.ts`, `tests/unit/b.test.ts` |",
+      "| FR-28 | |",
+    ].join("\n");
+    expect(parseTraceabilityTests(text)).toEqual([
+      { requirementId: "FR-27", tests: ["tests/unit/a.test.ts", "tests/unit/b.test.ts"] },
+      { requirementId: "FR-28", tests: [] },
+    ]);
+  });
+
+  test("checkTestLinks flags an unregistered ID, a duplicate, a row with no test and a missing file", () => {
+    const registerRows = [validRow({ id: "FR-27" })];
+    const problems = checkTestLinks(
+      registerRows,
+      [
+        { requirementId: "FR-27", tests: ["tests/unit/smoke.test.ts"] },
+        { requirementId: "FR-27", tests: [] },
+        { requirementId: "FR-99", tests: ["tests/unit/tidak-ada.test.ts"] },
+      ],
+      fileExists,
+    );
+    expect(problems.some((p) => p.includes('"FR-27" appears more than once'))).toBe(true);
+    expect(problems.some((p) => p.includes('"FR-27" lists no test file'))).toBe(true);
+    expect(problems.some((p) => p.includes('"FR-99" is absent from register.md'))).toBe(true);
+    expect(
+      problems.some((p) =>
+        p.includes('names "tests/unit/tidak-ada.test.ts", which does not exist'),
+      ),
+    ).toBe(true);
+    expect(problems.some((p) => p.includes("smoke.test.ts"))).toBe(false);
+    // Without an existence probe, paths are not checked.
+    expect(
+      checkTestLinks(registerRows, [{ requirementId: "FR-27", tests: ["tidak/ada.ts"] }]),
+    ).toEqual([]);
+  });
+
+  test("runChecks with fileExists fails when the tests matrix names a missing file", () => {
+    const result = runChecks(registerText, traceabilityText, () => false);
+    expect(result.problems.some((p) => p.includes("which does not exist"))).toBe(true);
   });
 
   test("formatProblems renders a numbered, human-readable list and a clean OK message", () => {

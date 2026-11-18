@@ -67,20 +67,31 @@ known, finite set.
 The register is only trustworthy if it is exhaustive in both directions. Concretely:
 
 1. **No orphan requirement.** Every requirement row cites a non-empty `Source` (a syllabus
-   section, or — for a handful of cross-cutting engineering/governance requirements — the
-   document's front matter) and a non-empty `Issue(s)` reference into `#1`–`#26`. A requirement
-   with no source or no implementing issue is not allowed to exist in `register.md`.
+   section, the document's front matter for a handful of cross-cutting engineering/governance
+   requirements, or — for requirements of another programme — that programme's source document or
+   the ADR that introduced it) and a non-empty `Issue(s)` cell. A requirement with no source or no
+   implementing issue is not allowed to exist in `register.md`.
+   - Each token of `Issue(s)` must be exactly `#<positive integer>` (`#19`, `#5, #26`). There is
+     no upper bound, because programmes added after the initial backlog cite later issues. A
+     malformed token (`#0`, `#abc`, `26`, `#1a`) is reported as an error, never ignored.
 2. **No uncovered section.** Every numbered syllabus section, `§1` through `§14`, plus the
    reference list (`§99`, `docs/silabus/99-referensi.md`), contributes at least one requirement.
    This is asserted per-section in `traceability.md`'s first matrix.
-3. **No uncovered issue.** Every issue `#1`–`#26` in the backlog is covered by at least one
-   requirement. This is asserted per-issue in `traceability.md`'s second matrix.
+3. **No uncovered issue.** Every issue `#1`–`#26` of the initial backlog is covered by at least
+   one requirement. This is asserted per-issue in `traceability.md`'s second matrix. The range
+   is the *required* set and is separate from rule 1's *citable* set: issues after `#26` may be
+   cited and may have rows in that matrix, but are not demanded.
 4. **No drift between the register and the matrices.** The set of requirement IDs that appear
    anywhere in `traceability.md` is exactly the set of IDs defined in `register.md` — no more, no
-   fewer, no typos.
+   fewer, no typos. A requirement may be covered by either of the first two matrices; the
+   requirements of another programme have no OSN section and appear in the issue matrix only.
+5. **Test links exist.** Every row of `traceability.md`'s third matrix ("Requirement → tests")
+   names a registered requirement and at least one test file, and every listed file exists. The
+   matrix is required for the requirements added after the initial backlog (`FR-27`–`FR-31`,
+   `TR-12`, `TR-13`, `GR-13`) and optional for older ones.
 
 `scripts/check-requirements.ts` (`bun run check:requirements`) parses both Markdown files and
-asserts all four rules mechanically, and `tests/integration/requirements.test.ts` runs the same
+asserts all five rules mechanically, and `tests/integration/requirements.test.ts` runs the same
 assertions as part of `bun test` so a broken register fails CI like any other regression.
 
 ## Adding or changing a requirement
@@ -92,5 +103,9 @@ assertions as part of `bun test` so a broken register fails CI like any other re
 - Write `Statement` as one sentence, testable ("the system shall…" / "every X shall…"), not a
   restatement of the syllabus prose.
 - Add or update the corresponding row(s) in both matrices of `traceability.md` in the same change.
+- A requirement of a new programme (ADR-0006) cites that programme's source document or ADR as
+  `Source`, is traced in the issue matrix to the issue that built it (a new row if needed, any
+  number), and gets a row in the tests matrix pointing at the test files that really exercise
+  it — read the test before linking it.
 - Run `bun run check:requirements` before committing; it is the fastest way to catch a missed
   cross-reference.

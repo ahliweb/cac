@@ -56,6 +56,24 @@ run. Each step is a separate, individually named step (not one shell script)
 so that a failure is attributable to a specific check from the GitHub
 checks list, without needing to open the log.
 
+## Local checks that are not CI steps
+
+Three `package.json` scripts exist for contributors but are **not** steps of
+`.github/workflows/ci.yml`; CI never runs them as commands:
+
+| Script | What it checks | Still guarded in CI through |
+| --- | --- | --- |
+| `bun run check:requirements` | Requirements register and traceability matrices (`docs/requirements/`). | `tests/integration/requirements.test.ts`, run by the `bun run test:coverage` step. |
+| `bun run check:checklist-fidelity` | §14.1/§14.2 data against the source syllabus verbatim. | `tests/integration/checklist-fidelity.test.ts`, run by the same step. |
+| `bun run check:sma-fidelity` | `data/sma-coding/*.json` cell by cell against `docs/programs/sma-coding/silabus.md`. | `tests/integration/sma-coding-fidelity.test.ts`, run by the same step. |
+
+The test files import the checkers' functions and assert that the committed
+documents and data pass, so a drift also fails the `Test with coverage` step.
+What CI does not do is run the scripts' own command-line entry points
+(argument handling, exit code), so run the script before pushing when you
+touch the files it covers. By contrast `bun run check:module-code` (step 11)
+and `bun run privacy-check` (step 12) are real CI steps.
+
 ## Triggers
 
 The workflow runs on:
@@ -129,6 +147,10 @@ bun run validate && \
 bun run check:module-code && \
 bun run privacy-check
 ```
+
+To also run the local-only checks above, add `bun run check:requirements`,
+`bun run check:checklist-fidelity` and `bun run check:sma-fidelity` to that
+list.
 
 Any step that fails locally will fail identically in CI, since CI runs
 these exact `package.json` scripts with the same pinned Bun version — there

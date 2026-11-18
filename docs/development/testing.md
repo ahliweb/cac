@@ -32,6 +32,20 @@ tests/
   `cli-render.test.ts`, `cli-report.test.ts`, `cli-privacy-check.test.ts`,
   `cli-checklist.test.ts`).
 
+Three tests in `tests/integration/` guard documents and data against
+drift: `requirements.test.ts` (the requirements register, its traceability
+matrices and the tests matrix, whose listed test files must exist),
+`checklist-fidelity.test.ts` (§14.1/§14.2 against the source syllabus) and
+`sma-coding-fidelity.test.ts` (`data/sma-coding/` against
+`docs/programs/sma-coding/silabus.md`). Each has a script of the same purpose
+(`check:requirements`, `check:checklist-fidelity`, `check:sma-fidelity`); the
+scripts are local commands that CI does not run, but the tests run in CI under
+`bun run test:coverage`. `check:module-code` (C++ blocks of `content/` modules
+compile) is the opposite case: a CI step of its own, with unit and integration
+tests of its logic (`tests/unit/check-module-code.test.ts`,
+`tests/integration/check-module-code.test.ts`). See "Local checks that are not
+CI steps" in `docs/development/ci-cd.md`.
+
 Both directories mirror the shape of `src/` closely enough that a reader can
 find the test for a given module without guessing — exact mirroring is not
 enforced, but tests should live next to the concept they cover, not be

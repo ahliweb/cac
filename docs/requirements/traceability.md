@@ -1,12 +1,15 @@
 # Traceability Matrices
 
-Two views on the same 77 requirements in `register.md`, proving the register is exhaustive in
+Three views on the 85 requirements in `register.md`, proving the register is exhaustive in
 both directions (see `README.md`'s "completeness rule"):
 
 1. **Syllabus section → requirements → issues** — proves every numbered section of the source
    syllabus, §1 through §14, plus the reference list, contributes at least one requirement.
-2. **Issue → requirements covered** — proves no issue in the backlog (`#1`-`#26`) is left without
-   a requirement it satisfies.
+2. **Issue → requirements covered** — proves no issue in the initial backlog (`#1`-`#26`) is left
+   without a requirement it satisfies, and traces the requirements added later (ADR-0006,
+   ADR-0007, the `sma-coding` programme) to the issues that built them.
+3. **Requirement → tests** — links each requirement added after the initial backlog to the test
+   files that really exercise it; the checker fails if a listed file does not exist.
 
 `scripts/check-requirements.ts` parses both tables below and asserts these properties
 mechanically; do not hand-edit one matrix without updating the other and `register.md`.
@@ -68,7 +71,32 @@ itself.
 | #24 — Security policy and ISO/IEC control mapping | GR-06, GR-07, GR-08, GR-09 |
 | #25 — Operational runbook: syllabus check procedure and cohort readiness checklist | FR-26, OR-01, OR-02, OR-03, OR-04, OR-05, OR-06, OR-07, OR-08, OR-11, ER-16 |
 | #26 — Release v1.0.0: final verification, versioning, changelog and tag | GR-12, OR-12 |
+| #49 — ADR-0006 multi-programme repository and ADR-0007 authored learning content | FR-27, GR-13 |
+| #50 — Per-programme data, programme registry and the `--program` flag | FR-27 |
+| #52 — Encode the `sma-coding` programme corpus | FR-28, FR-29, FR-30, TR-12 |
+| #54 — Module schema, renderer and the pilot module | FR-31, TR-13, GR-13 |
+| #76 — Register the `sma-coding` requirements | TR-09 |
 
-Every requirement ID in `register.md` appears in at least one row of each matrix, and every ID
-appearing in these matrices is defined in `register.md` — `scripts/check-requirements.ts` asserts
-this set equality on every run.
+Rows `#27` and later are not required by the checker: only `#1`-`#26` must be present (the initial
+backlog), while any issue may be cited. A new programme adds its issues here as it adds requirements.
+
+## Matrix 3 — Requirement → tests
+
+Requirements `FR-27`-`FR-31`, `TR-12`, `TR-13` and `GR-13` have no OSN syllabus section, so they
+are traced by issue (Matrix 2) and by the tests below. Every path must exist; the checker
+(`checkTestLinks`) fails on a missing file, an unregistered ID or a row with no test.
+
+| Requirement | Tests |
+| --- | --- |
+| FR-27 | `tests/unit/program-schema.test.ts`, `tests/unit/program-loader.test.ts`, `tests/unit/programs.test.ts` |
+| FR-28 | `tests/unit/sma-corpus-audit.test.ts`, `tests/unit/sma-week-codes.test.ts`, `tests/integration/cli-sma-coding.test.ts` |
+| FR-29 | `tests/unit/sma-corpus-audit.test.ts`, `tests/integration/cli-sma-coding.test.ts` |
+| FR-30 | `tests/integration/cli-sma-coding.test.ts` |
+| FR-31 | `tests/unit/module-schema.test.ts`, `tests/unit/modules-domain.test.ts`, `tests/unit/render-module.test.ts`, `tests/integration/cli-modules.test.ts` |
+| TR-12 | `tests/integration/sma-coding-fidelity.test.ts` |
+| TR-13 | `tests/unit/check-module-code.test.ts`, `tests/integration/check-module-code.test.ts` |
+| GR-13 | `tests/unit/module-schema.test.ts`, `tests/unit/render-module.test.ts` |
+
+Every requirement ID in `register.md` appears in at least one row of Matrix 1 or Matrix 2, and
+every ID appearing in any matrix is defined in `register.md` — `scripts/check-requirements.ts`
+asserts this set equality on every run.
