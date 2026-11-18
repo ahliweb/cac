@@ -173,23 +173,14 @@ pekerjaan:
 gh issue list -R ahliweb/osn --state open
 ```
 
-```text
-105	OPEN	Celah butir CP F-LD-d dan F-LD-e untuk jalur A	type:docs, priority:P2, epic:sma-coding	2026-11-18T18:54:32Z
-88	OPEN	Draf jalur E (komputasi kuantum dan cloud quantum) untuk silabus coding SMA	type:docs, priority:P2, epic:sma-coding	2026-11-18T11:07:30Z
-84	OPEN	Draf jalur D (AI) untuk silabus coding SMA	type:docs, priority:P2, epic:sma-coding	2026-11-18T10:59:32Z
-68	OPEN	Draf jalur C (IoT/robotika) untuk silabus coding SMA	type:docs, priority:P2, epic:sma-coding	2026-11-18T08:28:12Z
-```
+Per 2026-11-19, setelah silabus v1.2 (jalur C, D, E; #68, #84, #88) dan modul
+pendamping untuk F-LD-d dan F-LD-e (#105) selesai, perintah di atas tidak
+mengembalikan issue apa pun: semua keputusan yang tercatat sebagai issue
+sudah Anda ambil. Jalankan perintahnya untuk keadaan terkini; keputusan baru
+akan muncul sebagai issue baru.
 
-Daftar di atas adalah keadaan pada 2026-11-19; jalankan perintahnya untuk
-keadaan terkini. Cara membacanya:
-
-| Issue | Keadaan | Yang menunggu |
-| --- | --- | --- |
-| #68, #84, #88 | Draf jalur C (IoT/robotika), D (AI), E (kuantum): Anda menyetujuinya beserta semua rekomendasi pada 2026-11-19 dan sudah masuk silabus v1.2 (dokumen draf menjadi riwayat) | Penutupan issue di GitHub; daftar di atas adalah keadaan sebelum penutupan |
-| #105 | Celah butir CP F-LD-d dan F-LD-e untuk jalur A | Diputuskan ditutup dengan modul pendamping lintas jalur; silabus mencatatnya di bagian 4.3; modulnya dikerjakan terpisah |
-
-Silabus v1.1 (#92) sudah Anda setujui 2026-11-19 dan issue-nya tertutup;
-kandidat tinjauan Anda yang lain: 29 modul draf `sma-coding` di
+Silabus v1.1 (#92) dan v1.2 (#68, #84, #88) sudah Anda setujui 2026-11-19;
+kandidat tinjauan Anda: 29 modul draf `sma-coding` di
 `content/sma-coding/modules/` (fondasi, matematika komputasi, cloud,
 pendamping; baca dengan `osn render modul --program sma-coding --id <id>`,
 daftar id di `data/sma-coding/modules.json`).
