@@ -1,18 +1,20 @@
 # Program Pembelajaran Coding TK/PAUD (`tk-coding`)
 
-- **Version:** v0.1.0
+- **Version:** v1.0.0
 - **Last updated:** 2026-11-19
-- **Status:** DRAF. Belum disetujui pemilik program. Tidak ada `data/tk-coding/` dan tidak ada entri `data/programs.json` (ADR-0006).
+- **Status:** DISETUJUI pemilik program, 2026-11-19, beserta rekomendasi penyusun (silabus v1.0.0). Terdaftar di `data/programs.json` dengan corpus `data/tk-coding/` (ADR-0006, ADR-0008).
 
 > Isi folder ini adalah konten **karangan** (*authored*) menurut
 > [ADR-0007](../../architecture/adr/0007-authored-learning-content.md):
-> riset dan draf silabus pembelajaran coding untuk anak TK/PAUD (usia sekitar
+> riset dan silabus pembelajaran coding untuk anak TK/PAUD (usia sekitar
 > 4-6 tahun), disusun atas permintaan pemilik (issue #127). Ini bukan dokumen
-> pemerintah. Program yang silabusnya masih draf tidak mendapat `data/` maupun
-> entri registri sampai pemilik menyetujuinya
-> ([ADR-0006](../../architecture/adr/0006-multi-program-repository.md)).
-> Agent tidak pernah menyetujui draf atas nama pemilik. Repositori ini tidak
-> memuat data anak ([ADR-0004](../../architecture/adr/0004-no-learner-personal-data.md)).
+> pemerintah. Silabus v1.0.0 disetujui pemilik pada 2026-11-19 (keputusan lewat
+> dialog pilihan, rekomendasi penyusun dipilih untuk semua pertanyaan), lalu
+> di-encode menjadi `data/tk-coding/` dan didaftarkan sesuai
+> [ADR-0006](../../architecture/adr/0006-multi-program-repository.md) dan
+> [ADR-0008](../../architecture/adr/0008-skema-khusus-per-program.md).
+> Repositori ini tidak memuat data anak
+> ([ADR-0004](../../architecture/adr/0004-no-learner-personal-data.md)).
 
 ## Tujuan program
 
@@ -25,7 +27,7 @@ jembatan awal ke program SD (`sd-coding`, sedang disusun terpisah).
 
 Temuan utama riset: CP Fase Fondasi tidak menyebut koding secara eksplisit;
 irisannya adalah pola, klasifikasi, pemecahan masalah sederhana, rekayasa, dan
-pemakaian teknologi secara aman. Rekomendasi draf: seluruh 48 minggu tanpa
+pemakaian teknologi secara aman. Keputusan pemilik (silabus bagian 9): seluruh 48 minggu tanpa
 perangkat, tanpa nilai angka, tanpa data anak di repositori.
 
 ## Daftar berkas
@@ -34,15 +36,14 @@ perangkat, tanpa nilai angka, tanpa data anak di repositori.
 | --- | --- |
 | `README.md` | Dokumen ini: status, tujuan, daftar berkas, pertanyaan pemilik, changelog. |
 | `riset.md` | Riset (v0.1.0): sumber resmi yang benar-benar dibuka beserta kutipan persis dan tanggal akses 2026-11-19, panduan waktu layar, pendekatan berpikir komputasional anak usia dini, risiko, dan sumber yang tidak dapat dibuka. |
-| `silabus-draf.md` | Silabus draf v0.1.0-draf: sumber dan kutipan resmi, prinsip, struktur waktu, rencana 48 minggu (`TK-A1-M1` sampai `TK-B2-M12`), pemetaan irisan ke CP, jembatan ke SD, asesmen observasi, peran orang tua, privasi, sarana, opsi alat dengan rekomendasi, pertanyaan terbuka. |
+| `silabus.md` | Silabus v1.0.0 (disetujui, sumber corpus `data/tk-coding/`): sumber dan kutipan resmi, prinsip, struktur waktu, rencana 48 minggu (`TK-A1-M1` sampai `TK-B2-M12`), pemetaan irisan ke CP (penafsiran, bukan pemenuhan CP), jembatan ke SD, asesmen observasi, peran orang tua, privasi, sarana, opsi alat dengan rekomendasi, keputusan pemilik. |
 
-## Pertanyaan untuk pemilik
+## Keputusan pemilik (2026-11-19)
 
-Rincian opsi, konsekuensi, dan rekomendasi ada di
-[`silabus-draf.md`](silabus-draf.md) bagian 9. Ringkasannya (rekomendasi
-penyusun pertama):
+Pemilik menyetujui rekomendasi penyusun pada semua pertanyaan; rinciannya ada
+di [`silabus.md`](silabus.md) bagian 9.
 
-| No. | Pertanyaan | Rekomendasi penyusun |
+| No. | Pertanyaan | Keputusan |
 | --- | --- | --- |
 | Q1 | Penggunaan layar | Seluruh rencana tanpa layar. |
 | Q2 | Durasi dan frekuensi | Satu sesi per minggu: TK A 20 menit, TK B 30 menit, plus integrasi harian opsional. |
@@ -52,16 +53,18 @@ penyusun pertama):
 | Q6 | Alat opsional | Tidak memakai alat berbayar. |
 | Q7 | Bahan CS Unplugged (CC BY-SA 4.0) | Hanya rujukan ide. |
 | Q8 | Jembatan ke `sd-coding` | Menunggu silabus `sd-coding` terbit. |
-| Q9 | Persetujuan dan registrasi | Tinjau draf; registrasi menyusul sesuai ADR-0006 bila disetujui. |
+| Q9 | Persetujuan dan registrasi | Disetujui; `data/tk-coding/` dan entri registri dibuat. |
 
 ## Cara mengusulkan perubahan
 
 Usulan lewat issue, revisi berstatus draf, lalu persetujuan pemilik yang
-dicatat dengan tanggal (ADR-0007). Setelah disetujui, urutan kerja mengikuti
-ADR-0006: skema, `data/tk-coding/`, entri registri, domain, dan uji.
+dicatat dengan tanggal (ADR-0007). Perubahan isi `silabus.md` harus diikuti
+`data/tk-coding/`; `bun run check:fidelity --program tk-coding` membandingkan
+keduanya sel demi sel.
 
 ## Changelog
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
 | v0.1.0 | 2026-11-19 | Draf awal folder program (issue #127): README, riset, dan silabus draf. |
+| v1.0.0 | 2026-11-19 | Silabus disetujui pemilik beserta rekomendasi penyusun; `silabus-draf.md` menjadi `silabus.md`; program di-encode ke `data/tk-coding/` dan didaftarkan (issue #127). |

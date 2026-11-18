@@ -1,18 +1,22 @@
-# Silabus Pembelajaran Coding TK/PAUD (Berpikir Komputasional) — Draf v0.1
+# Silabus Pembelajaran Coding TK/PAUD (Berpikir Komputasional) — v1.0
 
-- **Version:** v0.1.0-draf
+- **Version:** v1.0.0
 - **Last updated:** 2026-11-19
-- **Status:** DRAF — belum disetujui pemilik program. Tidak ada `data/tk-coding/` dan tidak ada entri `data/programs.json` sampai pemilik menyetujui silabus ini (ADR-0006).
-- **Changeset:** Draf awal silabus `tk-coding` (issue #127): sumber resmi, prinsip, struktur waktu TK A dan TK B, rencana 48 minggu tanpa layar sebagai bawaan, pemetaan irisan ke CP Fase Fondasi, jembatan ke program SD, asesmen, privasi, opsi alat dengan rekomendasi, dan pertanyaan terbuka.
+- **Status:** DISETUJUI pemilik program, 2026-11-19, beserta rekomendasi penyusun untuk setiap pertanyaan terbuka (keputusan lewat dialog pilihan, dicatat di issue #127; bagian 9). Rencana 48 minggu tanpa layar sebagai bawaan.
+- **Changeset:** Silabus v1.0 disetujui pemilik: draf v0.1.0-draf dipertahankan isinya; pertanyaan terbuka (bagian 9) diganti keputusan pemilik (opsi rekomendasi tiap pertanyaan); `silabus-draf.md` menjadi `silabus.md`, sumber corpus `data/tk-coding/` (issue #127, ADR-0006, ADR-0008).
 
-> **DRAF.** Dokumen ini konten **karangan** (*authored*) menurut
-> [ADR-0007](../../architecture/adr/0007-authored-learning-content.md),
-> disusun agent atas permintaan pemilik (issue #127). Ia bukan dokumen
-> pemerintah, bukan sumber corpus, dan **belum disetujui**; agent tidak
-> pernah menyetujuinya atas nama pemilik. Kutipan resmi di bagian 1 adalah
-> transkripsi persis dari berkas yang dibuka pada 2026-11-19 (rinci dan
-> dengan tautan di [`riset.md`](riset.md)); selebihnya rancangan penyusun.
-> Konten sampel bersifat umum dan **tanpa data anak sungguhan**
+> **Disetujui pemilik program pada 2026-11-19** (keputusan lewat dialog
+> dengan opsi rekomendasi penyusun untuk setiap pertanyaan; bagian 9, issue
+> #127). Dokumen ini konten **karangan** (*authored*) menurut
+> [ADR-0007](../../architecture/adr/0007-authored-learning-content.md) yang
+> menjadi sumber corpus program `tk-coding` (ADR-0006). Ia bukan dokumen
+> pemerintah. Kutipan resmi di bagian 1 adalah transkripsi persis dari berkas
+> yang dibuka pada 2026-11-19 (rinci dan dengan tautan di
+> [`riset.md`](riset.md)); selebihnya rancangan penyusun yang disetujui.
+> Butir bertanda `[belum terverifikasi]` tetap belum terverifikasi, dan butir
+> `[asumsi]` tetap rancangan penyusun yang kini disetujui sebagai bagian dari
+> v1.0. Pemetaan ke CP (bagian 4) adalah **irisan penafsiran** penyusun, bukan
+> pemenuhan CP. Konten sampel bersifat umum dan **tanpa data anak sungguhan**
 > ([ADR-0004](../../architecture/adr/0004-no-learner-personal-data.md)).
 
 ## 0. Cara membaca dokumen ini
@@ -315,22 +319,24 @@ sudah dibatasi WHO, dan paling mudah dirawat. Opsi 2 dan 3 hanya sebagai
 tambahan yang dipilih sekolah atau pemilik; opsi 4 tidak direkomendasikan.
 Keputusan ada di Q1 dan Q6 (bagian 9).
 
-## 9. Pertanyaan terbuka untuk pemilik
+## 9. Keputusan pemilik
 
-Semua opsi berstatus usulan; **belum ada keputusan**. Rekomendasi penyusun
-dicetak tebal dan tercantum pertama.
+Pemilik memutuskan pada 2026-11-19 (dialog pilihan; issue #127) untuk
+**menyetujui rekomendasi penyusun pada setiap pertanyaan**. Setiap baris
+mencatat opsi terpilih (yang bertanda tebal pada draf v0.1.0-draf) dan
+konsekuensinya.
 
-| No. | Pertanyaan | Opsi (dan konsekuensi) | Rekomendasi |
+| No. | Pertanyaan | Keputusan pemilik (opsi terpilih) | Konsekuensi |
 | --- | --- | --- | --- |
-| Q1 | Penggunaan layar | **(a) Seluruh rencana tanpa layar; `TK-B2-M9/M10` hanya unplugged** (nol layar; paling aman dan murah). (b) Tanpa layar, tetapi `TK-B2-M9/M10` boleh demonstrasi guru sampai 10 menit per minggu (menambah satu opsi tablet dan satu aplikasi yang harus diperiksa). (c) Layar rutin tiap minggu (tidak sejalan dengan prinsip batas layar WHO dan kemampuan sarana). | **(a)** |
-| Q2 | Durasi dan frekuensi | **(a) 1 sesi per minggu: TK A 20 menit, TK B 30 menit, plus integrasi harian opsional** (dapat diterapkan tanpa menambah jam). (b) 2 sesi pendek per minggu (membutuhkan ruang jadwal). (c) Hanya integrasi harian tanpa sesi khusus (lebih ringan, kurang terstruktur). | **(a)** |
-| Q3 | Cakupan usia | **(a) TK A dan TK B (48 minggu)**. (b) Hanya TK B (24 minggu; lebih singkat, kehilangan pembiasaan awal). (c) Tambah KB/TPA usia 3-4 tahun (di luar permintaan; butuh riset tambahan). | **(a)** |
-| Q4 | Pembagian semester | **(a) 12 minggu per semester seperti draf**. (b) Mengikuti tema bulanan sekolah (fleksibel, tetapi kode minggu tidak stabil). | **(a)** |
-| Q5 | Penamaan program | **(a) Id `tk-coding`, tetapi isi dokumen memakai istilah resmi "berpikir komputasional"** (konsisten dengan kebijakan; id tetap sejajar `sma-coding`). (b) Ganti id menjadi `tk-berpikir-komputasional` (lebih tepat, tetapi tidak sejajar program lain). (c) Pakai "coding" penuh (berisiko menyiratkan koding sungguhan pada anak TK). | **(a)** |
-| Q6 | Alat opsional | **(a) Tidak memakai alat berbayar; robot lantai dan aplikasi hanya catatan opsional**. (b) Memasukkan robot lantai sebagai opsi resmi di silabus (butuh anggaran; harga belum terverifikasi). (c) Memasukkan aplikasi blok bergambar sebagai opsi resmi (lihat Q1). | **(a)** |
-| Q7 | Pemakaian bahan CS Unplugged (CC BY-SA 4.0) | **(a) Hanya rujukan ide; semua kegiatan ditulis ulang oleh tim**. (b) Mengadaptasi dekat dengan atribusi dan lisensi turunan (butuh pengelolaan lisensi). | **(a)** |
-| Q8 | Jembatan ke `sd-coding` | **(a) Menunggu silabus `sd-coding` terbit, lalu menyelaraskan kode jembatan (bagian 5)**. (b) Memutuskan kode SD sekarang secara sepihak (risiko tidak selaras). | **(a)** |
-| Q9 | Persetujuan dan registrasi | **(a) Meninjau draf ini, lalu bila disetujui: skema, `data/tk-coding/`, dan entri `data/programs.json` menyusul sesuai urutan ADR-0006**. (b) Meminta revisi draf lebih dulu (tidak ada data atau registri). (c) Menunda program. | **(a)** (hak pemilik) |
+| Q1 | Penggunaan layar | (a) Seluruh rencana tanpa layar; `TK-B2-M9/M10` hanya unplugged | Nol layar; paling aman dan murah. |
+| Q2 | Durasi dan frekuensi | (a) 1 sesi per minggu: TK A 20 menit, TK B 30 menit, plus integrasi harian opsional | Dapat diterapkan tanpa menambah jam. |
+| Q3 | Cakupan usia | (a) TK A dan TK B (48 minggu) | KB/TPA usia 3-4 tahun tidak termasuk. |
+| Q4 | Pembagian semester | (a) 12 minggu per semester seperti rencana | Kode minggu stabil. |
+| Q5 | Penamaan program | (a) Id `tk-coding`, tetapi isi dokumen memakai istilah resmi "berpikir komputasional" | Konsisten dengan kebijakan; id tetap sejajar `sma-coding`. |
+| Q6 | Alat opsional | (a) Tidak memakai alat berbayar; robot lantai dan aplikasi hanya catatan opsional | Tidak butuh anggaran perangkat. |
+| Q7 | Pemakaian bahan CS Unplugged (CC BY-SA 4.0) | (a) Hanya rujukan ide; semua kegiatan ditulis ulang oleh tim | Tidak ada kewajiban lisensi turunan. |
+| Q8 | Jembatan ke `sd-coding` | (a) Menunggu silabus `sd-coding` terbit, lalu menyelaraskan kode jembatan (bagian 5) | Jembatan bagian 5 tetap rancangan sepihak sampai disesuaikan. |
+| Q9 | Persetujuan dan registrasi | (a) Draf disetujui; skema, `data/tk-coding/`, dan entri `data/programs.json` dibuat sesuai urutan ADR-0006 | Program terdaftar dan divalidasi (issue #127). |
 
 ## 10. Sumber dan batasan
 
@@ -345,3 +351,4 @@ dicetak tebal dan tercantum pertama.
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
 | v0.1.0-draf | 2026-11-19 | Draf awal (issue #127): sumber resmi, prinsip, struktur TK A dan TK B, rencana 48 minggu, pemetaan irisan ke CP, jembatan SD, asesmen, privasi, opsi alat, pertanyaan terbuka. Belum disetujui pemilik. |
+| v1.0.0 | 2026-11-19 | Disetujui pemilik beserta rekomendasi penyusun (issue #127): status DISETUJUI, `silabus-draf.md` menjadi `silabus.md`, pertanyaan terbuka diganti keputusan pemilik (bagian 9). Isi rencana tidak diubah. |
