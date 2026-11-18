@@ -1,0 +1,5 @@
+---
+"kurikulum-informatika": patch
+---
+
+Verifikasi dua sumber regulasi pada catatan riset (tanpa mengubah isi kurikulum). Alamat asal salinan SK Kepala BSKAP 046/H/KR/2025 terverifikasi: berkas di `bpmpbabel.kemendikdasmen.go.id` (1691 halaman) memiliki SHA-256 identik dengan salinan yang dipakai, dan kutipan CP di `data/sd-coding/cp-elements.json` (4 dari 4) dan CP KKA Fase D di `data/smp-coding/cp-elements.json` (4 dari 4) cocok kata demi kata; `docs/programs/sd-coding/riset.md` v0.2.2 dan `docs/programs/smp-coding/riset.md` v0.3.1 mencatat URL, SHA-256, dan hasilnya. Berkas lampiran resmi Kepmenaker 282/2016 di JDIH Kemnaker (156 halaman) diunduh dan daftar 47 unit dicocokkan: 46 cocok persis, satu judul berbeda ejaan (unit 047, "Pembaharuan" di berkas resmi, "Pembaruan" di repo; dilaporkan untuk keputusan pemilik, tidak diubah); `docs/programs/dewasa-coding/riset.md` v1.0.1 mencatat hasilnya. Padanan SK 046 di JDIH Kemendikdasmen tidak ditemukan dan tetap bertanda belum terverifikasi.

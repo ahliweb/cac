@@ -1,9 +1,9 @@
 # Riset Sumber Program Coding Dewasa (`dewasa-coding`)
 
-- **Version:** v1.0.0
+- **Version:** v1.0.1
 - **Last updated:** 2026-11-19
-- **Status:** Bahan penyusunan [`silabus.md`](silabus.md) yang disetujui pemilik pada 2026-11-19 (#131); bukan transkripsi sumber resmi dan bukan keputusan pemilik. Tabel 47 unit di bagian 2.2 adalah salinan yang **belum terverifikasi terhadap berkas resmi** dan menjadi sumber `data/dewasa-coding/skkni-units.json` (diperiksa oleh `bun run check:fidelity --program dewasa-coding`).
-- **Changeset:** Riset dijadikan rujukan silabus yang disetujui (v1.0.0): tautan `silabus-draf.md` diganti `silabus.md`, status diperbarui (#131).
+- **Status:** Bahan penyusunan [`silabus.md`](silabus.md) yang disetujui pemilik pada 2026-11-19 (#131); bukan transkripsi sumber resmi dan bukan keputusan pemilik. Tabel 47 unit di bagian 2.2 dicocokkan pada 2026-11-19 dengan berkas resmi JDIH Kemnaker (kode dan judul: 46 dari 47 unit cocok persis, satu judul berbeda ejaan, lihat bagian 2.2) dan menjadi sumber `data/dewasa-coding/skkni-units.json` (diperiksa oleh `bun run check:fidelity --program dewasa-coding`).
+- **Changeset:** v1.0.1: berkas resmi Kepmenaker 282/2016 di JDIH diunduh dan dicocokkan dengan tabel 47 unit (bagian 2.1 dan 2.2); isi tabel tidak diubah. Riset dijadikan rujukan silabus yang disetujui (v1.0.0): tautan `silabus-draf.md` diganti `silabus.md`, status diperbarui (#131).
 
 > Dokumen ini konten **karangan** menurut
 > [ADR-0007](../../architecture/adr/0007-authored-learning-content.md). Ia
@@ -55,22 +55,47 @@
 | Tujuan utama | "Menghasilkan perangkat lunak handal sesuai dengan kebutuhan pengguna" | Halaman 6 PDF, pemetaan kompetensi. |
 | Fungsi kunci | Merancang aplikasi perangkat lunak; Mengimplementasikan perangkat lunak; Melakukan instalasi dan operasi perangkat lunak | Halaman 6-8 PDF. |
 
-Berkas PDF yang dibaca adalah **salinan pindaian pada situs sebuah LSP
-perguruan tinggi** (43 halaman, tanpa teks yang dapat diseleksi), bukan
-berkas dari JDIH: halaman JDIH 282/2016 tidak melampirkan berkas.
-Kecocokan salinan dengan berkas resmi `[belum terverifikasi]`, tetapi nomor,
-judul, dan tanggal salinan cocok dengan halaman JDIH.
+Rincian butir di atas dibaca dari **salinan pindaian pada situs sebuah LSP
+perguruan tinggi** (43 halaman, tanpa teks yang dapat diseleksi).
+
+**Berkas resmi JDIH `[terverifikasi 2026-11-19]`.** Pada 2026-11-19 halaman
+JDIH 282/2016 ternyata menyematkan berkas lampiran; diunduh dari
+`https://jdih.kemnaker.go.id/asset/data_puu/SKKNI%202016-282.pdf` (HTTP 200;
+1.603.631 bita; 156 halaman; berjudul "LAMPIRAN", dibuat 21 November 2016;
+dengan teks yang dapat diseleksi; SHA-256
+`8f050a74013ba21e3a311ad7ac6c74dd92a547eae5deba012a5ff33c7c548e88`). Berkas itu
+hanya **lampiran** (Bab I dan seterusnya); salinan diktum dan tanda tangan
+Menteri tidak ada di dalamnya, sehingga butir "Ditetapkan" dan diktum di tabel
+di atas tetap bersandar pada salinan LSP dan halaman JDIH, bukan pada berkas
+ini. Halaman JDIH menyatakan status "Berlaku", tanggal 08 November 2016, dan
+mencabut KEP.142/MEN/V/2005 dan 615/2012 (cocok dengan tabel di atas).
 
 URL yang dibuka:
 
 - `https://jdih.kemnaker.go.id/peraturan/detail/1381/keputusan-menteri-ketenagakerjaan-nomor-282-tahun-2016` (2026-11-19)
+- `https://jdih.kemnaker.go.id/asset/data_puu/SKKNI%202016-282.pdf` (2026-11-19; berkas lampiran resmi, 156 halaman)
 - `https://lsp.gunadarma.ac.id/media/skema/skkni/SKKNI2016-282_Pemrogram.pdf` (2026-11-19; salinan pindaian)
 - `https://jdih.kemnaker.go.id/peraturan/detail/1311/keputusan-menteri-ketenagakerjaan-nomor-139-tahun-2016` (2026-11-19; **bukan** bidang pemrograman umum: SKKNI ERP, tidak dipakai)
 
 ### 2.2 Daftar 47 unit kompetensi (bab II.B, apa adanya)
 
 Kode dan judul disalin dari tabel "Daftar Unit Kompetensi" (halaman 8-10
-PDF). Hanya spasi yang dinormalkan.
+PDF salinan LSP). Hanya spasi yang dinormalkan.
+
+**Hasil pencocokan dengan berkas resmi JDIH `[terverifikasi 2026-11-19]`.**
+Tabel "Daftar Unit Kompetensi" bab II.B di berkas resmi (halaman PDF 12-14)
+diekstrak dengan `pdftotext -layout` dan dicocokkan kata demi kata, kode dan
+judul, dengan tabel di bawah dan dengan `data/dewasa-coding/skkni-units.json`
+(spasi dan pemenggalan baris dinormalkan). **47 unit ada di kedua sisi;
+46 cocok persis; 1 berbeda:**
+
+- Unit 47, `J.620100.047.01`: berkas resmi "Melakukan Pembaharuan Perangkat
+  Lunak"; repo "Melakukan Pembaruan Perangkat Lunak".
+
+Butir 47 tetap `[belum terverifikasi]` sampai pemilik memutuskan koreksi
+ejaan (judul resmi memakai "Pembaharuan", juga pada halaman rincian unit
+`047`); tabel dan data tidak diubah di sini. Dua kode unit lain, 3 dan 28,
+tampak berbeda hanya karena judul tabel berulang di batas halaman PDF.
 
 | No | Kode unit | Judul unit kompetensi |
 | --- | --- | --- |
@@ -128,8 +153,14 @@ Catatan kehati-hatian:
   dengan sufiks di halaman rincian unit: halaman 34 PDF memuat unit
   "Menggunakan Spesifikasi Program" sebagai `J.620100.009.02`, sedangkan
   daftar bab II.B dan brosur LSP memuat `J.620100.009.01`. Silabus
-  memakai **daftar bab II.B** dan menuliskan kode lengkap; selisih sufiks
-  `[belum terverifikasi]` mana yang berlaku.
+  memakai **daftar bab II.B** dan menuliskan kode lengkap. Berkas resmi JDIH
+  `[terverifikasi 2026-11-19]` memuat selisih yang sama: daftar bab II.B
+  memakai `.01` dan `.02` seperti di tabel, sedangkan halaman rincian unit
+  memuat sufiks lain, setidaknya pada unit `004`, `005`, `007`, `009`, `010` (tertukar
+  `.01` dan `.02`) dan penulisan tiga digit (`.002`, `.001`) pada unit `019`,
+  `028`, `029`, `030`, `031`, `032`. Jadi selisih berasal dari dokumen resmi
+  itu sendiri, dan daftar bab II.B tetap dipakai; sufiks mana yang berlaku
+  secara hukum `[belum terverifikasi]` (tidak ada penjelasan di berkas).
 - Hanya halaman 1-16 PDF yang dibaca (keputusan, tim perumus, pemetaan,
   daftar unit, dan satu halaman rincian unit). Elemen kompetensi dan
   kriteria unjuk kerja 47 unit **tidak dibaca**; pemetaan di silabus
@@ -302,3 +333,4 @@ dijalankan tanpa `apps/cms` hidup tetap berlaku (`[belum terverifikasi]`).
 | --- | --- | --- |
 | v0.1.0 | 2026-11-19 | Riset awal (#131). |
 | v1.0.0 | 2026-11-19 | Silabus rujukan disetujui pemilik: tautan dan status diperbarui; isi riset tidak diubah (#131). |
+| v1.0.1 | 2026-11-19 | Berkas resmi JDIH Kepmenaker 282/2016 diunduh dan dicocokkan: 46 dari 47 unit cocok, judul unit 47 berbeda ejaan (dilaporkan, tidak diubah); isi tabel tidak diubah. |

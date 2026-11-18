@@ -1,9 +1,9 @@
 # Riset Pembelajaran Coding SD — Kebijakan, Capaian Resmi, Alat, dan Privasi
 
-- **Version:** v0.2.1
+- **Version:** v0.2.2
 - **Last updated:** 2026-11-19
 - **Status:** Riset pendukung silabus `sd-coding` v1.0 yang disetujui pemilik 2026-11-19 (issue #128); CP Fase C dicocokkan dengan SK 046/H/KR/2025 (bagian 3.5). Bagian lain tetap catatan riset penyusun, bukan keputusan.
-- **Changeset:** Bagian 3.5 baru: kutipan CP Fase C dicocokkan huruf demi huruf dengan teks SK Kepala BSKAP 046/H/KR/2025 (empat perbedaan, teks SK dipakai); bagian 1, 2.4, 3.1, dan 7 diperbarui. Riset awal untuk program `sd-coding`: kebijakan mata pelajaran pilihan Koding dan Kecerdasan Artifisial (KKA) di SD, capaian Fase C, posisi Informatika, kajian alat, dan risiko privasi anak.
+- **Changeset:** v0.2.2: alamat asal salinan SK 046 terverifikasi (URL, SHA-256, hasil pencocokan ulang di bagian 3.5). Bagian 3.5 baru: kutipan CP Fase C dicocokkan huruf demi huruf dengan teks SK Kepala BSKAP 046/H/KR/2025 (empat perbedaan, teks SK dipakai); bagian 1, 2.4, 3.1, dan 7 diperbarui. Riset awal untuk program `sd-coding`: kebijakan mata pelajaran pilihan Koding dan Kecerdasan Artifisial (KKA) di SD, capaian Fase C, posisi Informatika, kajian alat, dan risiko privasi anak.
 
 > Dokumen ini adalah konten karangan menurut
 > [ADR-0007](../../architecture/adr/0007-authored-learning-content.md):
@@ -29,7 +29,7 @@ dijalankan. PDF diekstrak teksnya dengan `pdftotext`.
 | `kodingka.kemendikdasmen.go.id` (halaman Pembelajaran dan Soal Sering Ditanya) | **Dibuka**. |
 | `peraturan.bpk.go.id` (UU 27/2022, PDF) | **Dibuka**; Pasal 4 dan Pasal 25 dibaca. |
 | PDF *Panduan Mata Pelajaran Koding dan Kecerdasan Artifisial* di `kurikulum.kemdikbud.go.id` (dan padanan di `kurikulum.kemendikdasmen.go.id`) | **Tidak terbuka**: DNS `kemdikbud.go.id` tidak terjangkau dari lingkungan penyusun; `kurikulum.kemendikdasmen.go.id` kehabisan waktu (60 detik). URL hanya diketahui dari hasil pencarian. |
-| Keputusan Kepala BSKAP Nomor 046/H/KR/2025 (SK induk CP) | Saat riset awal **tidak terbuka**. Pada 2026-11-19 orchestrator menemukan salinan PDF-nya (1691 halaman, SHA-256 `45809d2c88a612f90ee5adbd60d71a8952527d6924c626d126ea6926ae3d3394`, teks diekstrak dengan `pdftotext`); **alamat asal salinan belum terverifikasi**. Kutipan CP Fase C dicocokkan dengan salinan itu (bagian 3.5). |
+| Keputusan Kepala BSKAP Nomor 046/H/KR/2025 (SK induk CP) | Saat riset awal **tidak terbuka**. Pada 2026-11-19 orchestrator menemukan salinan PDF-nya (1691 halaman, SHA-256 `45809d2c88a612f90ee5adbd60d71a8952527d6924c626d126ea6926ae3d3394`, teks diekstrak dengan `pdftotext`); alamat asal salinan `[terverifikasi 2026-11-19]`: berkas dengan SHA-256 yang sama diunduh dari subdomain resmi Kemendikdasmen (URL di bagian 3.5). Kutipan CP Fase C dicocokkan dengan salinan itu (bagian 3.5). |
 | `pusatprestasinasional.kemdikbud.go.id` (dokumen OSN SD) | **Tidak terbuka** (DNS tidak terjangkau). |
 | `repositori.kemendikdasmen.go.id/35941/` | **Tidak terbuka** (kehabisan waktu). |
 | Berita (antaranews.com dan lain-lain) | Satu artikel dibuka; tidak memuat fakta regulasi, **tidak dipakai** sebagai bukti. |
@@ -107,7 +107,7 @@ murid; ia tidak dipakai sebagai sumber CP.
 
 | Butir | Status |
 | --- | --- |
-| SK induk CP KKA | Keputusan Kepala BSKAP Nomor 046/H/KR/2025 (berlaku 16 Juli 2025 menurut hasil pencarian `[belum terverifikasi]`). Pada riset awal tidak terbuka; teksnya kemudian dicocokkan dari salinan PDF yang ditemukan orchestrator (bagian 3.5), alamat asal salinan `[belum terverifikasi]`. |
+| SK induk CP KKA | Keputusan Kepala BSKAP Nomor 046/H/KR/2025 (ditetapkan di Jakarta 16 Juli 2025, mulai berlaku sejak ditetapkan, Diktum KEDELAPAN; mencabut 32/H/KR/2024, Diktum KETUJUH: `[terverifikasi 2026-11-19]` dari teks PDF, bagian 3.5). Pada riset awal tidak terbuka; teksnya dicocokkan dari salinan PDF yang ditemukan orchestrator (bagian 3.5), dan alamat asal salinan kini `[terverifikasi 2026-11-19]`. Masih `[belum terverifikasi]`: padanan di JDIH Kemendikdasmen (tidak ditemukan; salinan di `bpmpbabel.kemendikdasmen.go.id` bertanda "Salinan sesuai dengan aslinya"). |
 | URL resmi panduan KKA | Dari hasil pencarian: `https://kurikulum.kemdikbud.go.id/file/panduan/dokumen/33.%20Final%20Panduan%20Mata%20Pelajaran%20Panduan%20Mata%20Pelajaran%20Koding%20dan%20Kecerdasan%20Artifisial_12_Sep_2025_revisi%203.pdf` `[belum terverifikasi]`: tidak dibuka. |
 | Pelaksanaan nyata (jumlah sekolah, jadwal gelombang) | Tidak diperiksa. Pasal 32A hanya berkata "secara bertahap". |
 | Apakah ekstrakurikuler SD diatur terpisah | Tidak diperiksa. |
@@ -185,7 +185,20 @@ Kementerian Pendidikan Dasar dan Menengah Nomor 046/H/KR/2025 tentang
 Capaian Pembelajaran pada Pendidikan Anak Usia Dini, Jenjang Pendidikan
 Dasar, dan Jenjang Pendidikan Menengah"), 1691 halaman, SHA-256
 `45809d2c88a612f90ee5adbd60d71a8952527d6924c626d126ea6926ae3d3394`, ditemukan
-orchestrator; **URL asal belum terverifikasi**. Teks diekstrak dengan
+orchestrator.
+
+**Alamat asal `[terverifikasi 2026-11-19]`.** Pada 2026-11-19 berkas diunduh
+ulang dari
+`https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf`
+(subdomain `bpmpbabel` dari domain resmi `kemendikdasmen.go.id`, jalur
+`/PPID/`; HTTP 200; 14.908.908 bita; 1691 halaman; PDF dibuat 18 Juli
+2025). SHA-256 unduhan `45809d2c...3394` **identik** dengan salinan yang
+dicocokkan sebelumnya, sehingga berkas yang dipakai silabus adalah berkas dari
+alamat itu. Teks (Menimbang, Diktum KETUJUH dan KEDELAPAN, "Ditetapkan di
+Jakarta pada tanggal 16 Juli 2025", "Salinan sesuai dengan aslinya") dibaca
+dari PDF itu. Padanan di JDIH Kemendikdasmen tidak ditemukan, jadi kesesuaian
+dengan naskah asli di luar penanda "Salinan sesuai dengan aslinya" pada berkas
+tidak diperiksa. Teks diekstrak dengan
 `pdftotext -layout`; tidak ada yang dijalankan dari berkas itu. CP Fase C KKA
 ada di Lampiran II (jenjang SD), bagian XXVIII, butir D.1 (halaman PDF 343).
 Kalimat pembuka SK: "Pada akhir Fase C, murid memiliki kemampuan sebagai
@@ -207,6 +220,11 @@ Fase C, murid mampu memahami ...". Tiga elemen lain berbeda:
 | 1.4 Pemanfaatan dan Pengembangan KA | "mensimulasikan secara sederhana kerja KA" | "Menyimulasikan secara sederhana kerja KA" |
 
 Elemen 1.3 (Literasi dan Etika KA) cocok persis selain kata pembuka.
+**Pencocokan ulang 2026-11-19 terhadap berkas dari alamat resmi (kata demi
+kata, spasi dan karakter lebar nol dinormalkan):** keempat kutipan di
+`data/sd-coding/cp-elements.json` (BK 1.1, LD 1.2, LE 1.3, PP 1.4) ditemukan
+persis dalam teks SK; 4 dari 4 cocok, tanpa selisih. Halaman PDF 343.
+
 Pemenggalan butir `C-xx-a` dst. di silabus bagian 4 sudah memakai ejaan SK
 (tiga butir dikoreksi: `C-LD-a`, `C-LD-b`, `C-PP-a`). Nama topik materi
 esensial kelas 5-6 berasal dari tabel pemetaan di halaman BGTK, bukan dari SK
@@ -298,7 +316,7 @@ rekomendasi ada di [`silabus.md`](silabus.md) bagian 11.
 2. Kelas I-IV tidak punya mapel KKA; program untuk kelas itu adalah
    rancangan penyusun di luar struktur resmi.
 3. CP Fase C empat elemen, terverifikasi dari teks SK 046/H/KR/2025
-   (bagian 3.5; alamat asal salinan belum terverifikasi); PDF panduan
+   (bagian 3.5; alamat asal salinan `[terverifikasi 2026-11-19]`); PDF panduan
    **belum terbuka**.
 4. Informatika bukan mapel SD; OSN Informatika bukan sasaran SD (lihat
    [`silabus.md`](silabus.md) bagian 8).
@@ -320,6 +338,7 @@ rekomendasi ada di [`silabus.md`](silabus.md) bagian 11.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v0.2.2 | 2026-11-19 | Alamat asal salinan SK 046 terverifikasi (URL resmi, SHA-256 identik, pencocokan ulang 4 dari 4 kutipan CP Fase C); isi kurikulum tidak diubah. |
 | v0.2.1 | 2026-11-19 | Rujukan status `smp-coding` (bagian 4) diperbarui: program itu kini disetujui dan terdaftar; isi riset tidak diubah. |
 | v0.2.0 | 2026-11-19 | Kutipan CP Fase C dicocokkan dengan SK 046/H/KR/2025 (bagian 3.5, provenance salinan); status dan rujukan ke `silabus.md` diperbarui (issue #128). |
 | v0.1.0 | 2026-11-19 | Riset awal (issue #128). |
