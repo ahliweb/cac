@@ -112,7 +112,7 @@ Milestones as tracked in the GitHub repository (`ahliweb/osn`):
 | **M5: CLI & Generators** | `osn` CLI: validate, plan, render, report, checklist | Complete |
 | **M6: Governance & Release** | Privacy, security, ISO mapping, runbook, v1.0.0 | Complete (v1.0.0, then v1.1.0). |
 | **M7: Multi-program Foundation** | ADR-0006/0007, programme registry, `data/<program>/`, `--program` | Complete (v2.0.0). |
-| **M8: OSN Learner Materials** | Learner sheet, learning modules | In progress — learner sheet and module framework shipped in v2.0.0; the pilot module awaits owner review before the other nine ([#55](https://github.com/ahliweb/osn/issues/55)). |
+| **M8: OSN Learner Materials** | Learner sheet, learning modules | In progress — learner sheet and module framework shipped in v2.0.0; the pilot module `dasar-pemrograman` was approved on 2026-11-18; the other nine are being drafted ([#55](https://github.com/ahliweb/osn/issues/55)). |
 | **M9: SMA Coding Programme** | SMA coding syllabus (grades X–XII) and its corpus | In progress — draft syllabus in `docs/programs/sma-coding/`; encoding waits for owner approval ([#52](https://github.com/ahliweb/osn/issues/52)). |
 
 See `gh issue list --repo ahliweb/osn --state all` (or the
