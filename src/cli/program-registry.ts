@@ -39,6 +39,7 @@ import { auditSmaCorpus, SMA_DATA_FILE_REGISTRY } from "../domain/sma-corpus-aud
 import { auditTkCorpus, TK_DATA_FILE_REGISTRY } from "../domain/tk-corpus-audit";
 import { DEWASA_CODING_PROGRAM_ID } from "../schema/dw-common";
 import { KUL_PROGRAM_ID } from "../schema/kul-common";
+import { auditSmpCorpus, SMP_DATA_FILE_REGISTRY } from "../domain/smp-corpus-audit";
 import type { Program } from "../schema/program";
 import { SD_CODING_PROGRAM_ID } from "../schema/sd-common";
 import { SMA_CODING_PROGRAM_ID } from "../schema/sma-common";
@@ -48,6 +49,8 @@ import { kuliahCodingFidelity } from "./fidelity/kuliah-coding";
 import { sdCodingFidelity } from "./fidelity/sd-coding";
 import { smaCodingFidelity } from "./fidelity/sma-coding";
 import { tkCodingFidelity } from "./fidelity/tk-coding";
+import { SMP_CODING_PROGRAM_ID } from "../schema/smp-common";
+import { smpCodingFidelity } from "./fidelity/smp-coding";
 import type { FidelityModule } from "./fidelity/types";
 
 /** Cross-programme inputs an audit may need; built once per `osn validate` run. */
@@ -145,6 +148,14 @@ export const PROGRAM_MODULES: readonly ProgramModule[] = [
     parseModulesIndex: () => ({ modules: undefined, findings: [] }),
     moduleFindings: () => [],
     fidelity: sdCodingFidelity,
+    id: SMP_CODING_PROGRAM_ID,
+    dataFiles: SMP_DATA_FILE_REGISTRY,
+    audit: (source) => auditSmpCorpus(source),
+    needsOsnTopicFamilyIds: false,
+    // No module index yet (ADR-0007): a stray modules.json is reported by the audit as unregistered.
+    parseModulesIndex: () => ({ modules: undefined, findings: [] }),
+    moduleFindings: () => [],
+    fidelity: smpCodingFidelity,
   },
 ];
 

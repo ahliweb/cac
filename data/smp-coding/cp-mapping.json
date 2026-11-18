@@ -1,0 +1,333 @@
+{
+  "syllabusVersion": "1.0.0",
+  "syllabusDate": "2026-11-19",
+  "sourceSection": "bagian 4",
+  "mappings": [
+    {
+      "cpCode": "D-BK-a",
+      "weeksText": "SMP7-1-M1, SMP7-1-M2, SMP7-1-M5, SMP7-1-M6, SMP7-1-M7, dan 19 minggu lain (kolom Butir CP di bagian 3)",
+      "weeks": ["SMP7-1-M1", "SMP7-1-M2", "SMP7-1-M5", "SMP7-1-M6", "SMP7-1-M7"],
+      "otherWeeks": 19,
+      "coverageText": "Penuh",
+      "coverage": "penuh"
+    },
+    {
+      "cpCode": "D-BK-b",
+      "weeksText": "SMP7-2-M1, SMP7-2-M4",
+      "weeks": ["SMP7-2-M1", "SMP7-2-M4"],
+      "otherWeeks": 0,
+      "coverageText": "Sebagian: daftar (list) dan tabel; antrian, tumpukan, pohon, dan graf tidak",
+      "coverage": "sebagian"
+    },
+    {
+      "cpCode": "D-BK-c",
+      "weeksText": "SMP8-1-M6",
+      "weeks": ["SMP8-1-M6"],
+      "otherWeeks": 0,
+      "coverageText": "Sebagian: pilah, urut, saring; pengalamatan sel absolut dan relatif, ringkasan tidak",
+      "coverage": "sebagian"
+    },
+    {
+      "cpCode": "D-BK-d",
+      "weeksText": "SMP8-1-M6, SMP8-1-M7, SMP8-1-M8, SMP8-1-M14, SMP9-1-M4, SMP9-1-M5, SMP9-1-M6, SMP9-1-M7, SMP9-1-M13, SMP9-1-M14",
+      "weeks": [
+        "SMP8-1-M6",
+        "SMP8-1-M7",
+        "SMP8-1-M8",
+        "SMP8-1-M14",
+        "SMP9-1-M4",
+        "SMP9-1-M5",
+        "SMP9-1-M6",
+        "SMP9-1-M7",
+        "SMP9-1-M13",
+        "SMP9-1-M14"
+      ],
+      "otherWeeks": 0,
+      "coverageText": "Penuh",
+      "coverage": "penuh"
+    },
+    {
+      "cpCode": "D-BK-e",
+      "weeksText": "SMP7-1-M2, SMP7-1-M3, SMP7-1-M4, SMP7-1-M5, SMP7-1-M6, dan 23 minggu lain (kolom Butir CP di bagian 3)",
+      "weeks": ["SMP7-1-M2", "SMP7-1-M3", "SMP7-1-M4", "SMP7-1-M5", "SMP7-1-M6"],
+      "otherWeeks": 23,
+      "coverageText": "Penuh (blok visual dan pseudocode)",
+      "coverage": "penuh"
+    },
+    {
+      "cpCode": "D-LD-a",
+      "weeksText": "-",
+      "weeks": [],
+      "otherWeeks": 0,
+      "coverageText": "**Tidak dicakup** (di luar silabus coding; dicakup Informatika umum atau modul pendamping)",
+      "coverage": "tidak-dicakup"
+    },
+    {
+      "cpCode": "D-LD-b",
+      "weeksText": "SMP9-1-M6, SMP9-1-M11",
+      "weeks": ["SMP9-1-M6", "SMP9-1-M11"],
+      "otherWeeks": 0,
+      "coverageText": "Sebagian",
+      "coverage": "sebagian"
+    },
+    {
+      "cpCode": "D-LD-c",
+      "weeksText": "-",
+      "weeks": [],
+      "otherWeeks": 0,
+      "coverageText": "**Tidak dicakup** (di luar silabus coding; dicakup Informatika umum atau modul pendamping)",
+      "coverage": "tidak-dicakup"
+    },
+    {
+      "cpCode": "D-LD-d",
+      "weeksText": "SMP8-2-M12, SMP9-1-M11",
+      "weeks": ["SMP8-2-M12", "SMP9-1-M11"],
+      "otherWeeks": 0,
+      "coverageText": "Sebagian",
+      "coverage": "sebagian"
+    },
+    {
+      "cpCode": "D-LD-e",
+      "weeksText": "SMP7-2-M12, SMP8-1-M6, SMP9-1-M7, SMP9-2-M7",
+      "weeks": ["SMP7-2-M12", "SMP8-1-M6", "SMP9-1-M7", "SMP9-2-M7"],
+      "otherWeeks": 0,
+      "coverageText": "Sebagian",
+      "coverage": "sebagian"
+    },
+    {
+      "cpCode": "D-LD-f",
+      "weeksText": "SMP7-2-M10, SMP8-1-M10",
+      "weeks": ["SMP7-2-M10", "SMP8-1-M10"],
+      "otherWeeks": 0,
+      "coverageText": "Sebagian",
+      "coverage": "sebagian"
+    },
+    {
+      "cpCode": "D-LD-g",
+      "weeksText": "SMP8-1-M12",
+      "weeks": ["SMP8-1-M12"],
+      "otherWeeks": 0,
+      "coverageText": "Sebagian",
+      "coverage": "sebagian"
+    },
+    {
+      "cpCode": "D-LD-h",
+      "weeksText": "-",
+      "weeks": [],
+      "otherWeeks": 0,
+      "coverageText": "**Tidak dicakup** (di luar silabus coding; dicakup Informatika umum atau modul pendamping)",
+      "coverage": "tidak-dicakup"
+    },
+    {
+      "cpCode": "D-LD-i",
+      "weeksText": "SMP7-2-M12, SMP9-2-M7, SMP9-2-M12, SMP9-2-M13",
+      "weeks": ["SMP7-2-M12", "SMP9-2-M7", "SMP9-2-M12", "SMP9-2-M13"],
+      "otherWeeks": 0,
+      "coverageText": "Sebagian",
+      "coverage": "sebagian"
+    },
+    {
+      "cpCode": "D-LD-j",
+      "weeksText": "SMP7-1-M12",
+      "weeks": ["SMP7-1-M12"],
+      "otherWeeks": 0,
+      "coverageText": "Sebagian",
+      "coverage": "sebagian"
+    },
+    {
+      "cpCode": "D-LD-k",
+      "weeksText": "-",
+      "weeks": [],
+      "otherWeeks": 0,
+      "coverageText": "**Tidak dicakup** (di luar silabus coding; dicakup Informatika umum atau modul pendamping)",
+      "coverage": "tidak-dicakup"
+    },
+    {
+      "cpCode": "D-LD-l",
+      "weeksText": "-",
+      "weeks": [],
+      "otherWeeks": 0,
+      "coverageText": "**Tidak dicakup** (di luar silabus coding; dicakup Informatika umum atau modul pendamping)",
+      "coverage": "tidak-dicakup"
+    },
+    {
+      "cpCode": "D-LD-m",
+      "weeksText": "SMP8-2-M11",
+      "weeks": ["SMP8-2-M11"],
+      "otherWeeks": 0,
+      "coverageText": "Sebagian",
+      "coverage": "sebagian"
+    },
+    {
+      "cpCode": "D-LD-n",
+      "weeksText": "-",
+      "weeks": [],
+      "otherWeeks": 0,
+      "coverageText": "**Tidak dicakup** (di luar silabus coding; dicakup Informatika umum atau modul pendamping)",
+      "coverage": "tidak-dicakup"
+    },
+    {
+      "cpCode": "D-LD-o",
+      "weeksText": "SMP8-2-M12",
+      "weeks": ["SMP8-2-M12"],
+      "otherWeeks": 0,
+      "coverageText": "Sebagian",
+      "coverage": "sebagian"
+    },
+    {
+      "cpCode": "D-LD-p",
+      "weeksText": "SMP7-1-M12, SMP8-2-M11",
+      "weeks": ["SMP7-1-M12", "SMP8-2-M11"],
+      "otherWeeks": 0,
+      "coverageText": "Sebagian",
+      "coverage": "sebagian"
+    },
+    {
+      "cpCode": "D-LD-q",
+      "weeksText": "-",
+      "weeks": [],
+      "otherWeeks": 0,
+      "coverageText": "**Tidak dicakup** (di luar silabus coding; dicakup Informatika umum atau modul pendamping)",
+      "coverage": "tidak-dicakup"
+    },
+    {
+      "cpCode": "DK-BK-a",
+      "weeksText": "SMP7-2-M1, SMP8-1-M6, SMP8-1-M7, SMP8-1-M8, SMP8-1-M14, SMP9-1-M4, SMP9-1-M5, SMP9-1-M6, SMP9-1-M7, SMP9-1-M13, SMP9-1-M14",
+      "weeks": [
+        "SMP7-2-M1",
+        "SMP8-1-M6",
+        "SMP8-1-M7",
+        "SMP8-1-M8",
+        "SMP8-1-M14",
+        "SMP9-1-M4",
+        "SMP9-1-M5",
+        "SMP9-1-M6",
+        "SMP9-1-M7",
+        "SMP9-1-M13",
+        "SMP9-1-M14"
+      ],
+      "otherWeeks": 0,
+      "coverageText": "Penuh",
+      "coverage": "penuh"
+    },
+    {
+      "cpCode": "DK-BK-b",
+      "weeksText": "SMP7-1-M11, SMP7-1-M13, SMP7-2-M11, SMP7-2-M13, SMP8-1-M11, dan 11 minggu lain (kolom Butir CP di bagian 3)",
+      "weeks": ["SMP7-1-M11", "SMP7-1-M13", "SMP7-2-M11", "SMP7-2-M13", "SMP8-1-M11"],
+      "otherWeeks": 11,
+      "coverageText": "Penuh",
+      "coverage": "penuh"
+    },
+    {
+      "cpCode": "DK-BK-c",
+      "weeksText": "SMP7-1-M3, SMP7-1-M4, SMP7-1-M5, SMP7-1-M6, SMP7-1-M8, dan 31 minggu lain (kolom Butir CP di bagian 3)",
+      "weeks": ["SMP7-1-M3", "SMP7-1-M4", "SMP7-1-M5", "SMP7-1-M6", "SMP7-1-M8"],
+      "otherWeeks": 31,
+      "coverageText": "Penuh untuk instruksi blok dan pseudocode; baris bertanda `*` (Python) melampaui rumusan CP",
+      "coverage": "penuh"
+    },
+    {
+      "cpCode": "DK-LD-a",
+      "weeksText": "SMP7-1-M12, SMP7-2-M12, SMP9-2-M7, SMP9-2-M12, SMP9-2-M13",
+      "weeks": ["SMP7-1-M12", "SMP7-2-M12", "SMP9-2-M7", "SMP9-2-M12", "SMP9-2-M13"],
+      "otherWeeks": 0,
+      "coverageText": "Sebagian: slide, infografis, dan laporan; audio dan video tidak",
+      "coverage": "sebagian"
+    },
+    {
+      "cpCode": "DK-EA-a",
+      "weeksText": "-",
+      "weeks": [],
+      "otherWeeks": 0,
+      "coverageText": "**Tidak dicakup** (di luar silabus coding; dicakup Informatika umum atau modul pendamping)",
+      "coverage": "tidak-dicakup"
+    },
+    {
+      "cpCode": "DK-EA-b",
+      "weeksText": "SMP9-2-M8",
+      "weeks": ["SMP9-2-M8"],
+      "otherWeeks": 0,
+      "coverageText": "Sebagian: unplugged saja",
+      "coverage": "sebagian"
+    },
+    {
+      "cpCode": "DK-EA-c",
+      "weeksText": "SMP9-2-M9",
+      "weeks": ["SMP9-2-M9"],
+      "otherWeeks": 0,
+      "coverageText": "Sebagian: unplugged saja",
+      "coverage": "sebagian"
+    },
+    {
+      "cpCode": "DK-EA-d",
+      "weeksText": "-",
+      "weeks": [],
+      "otherWeeks": 0,
+      "coverageText": "**Tidak dicakup** (di luar silabus coding; dicakup Informatika umum atau modul pendamping)",
+      "coverage": "tidak-dicakup"
+    },
+    {
+      "cpCode": "DK-EA-e",
+      "weeksText": "SMP9-2-M10",
+      "weeks": ["SMP9-2-M10"],
+      "otherWeeks": 0,
+      "coverageText": "Sebagian",
+      "coverage": "sebagian"
+    },
+    {
+      "cpCode": "DK-EA-f",
+      "weeksText": "SMP9-2-M10",
+      "weeks": ["SMP9-2-M10"],
+      "otherWeeks": 0,
+      "coverageText": "Sebagian",
+      "coverage": "sebagian"
+    },
+    {
+      "cpCode": "DK-EA-g",
+      "weeksText": "SMP9-2-M10",
+      "weeks": ["SMP9-2-M10"],
+      "otherWeeks": 0,
+      "coverageText": "Sebagian: contoh tiruan palsu dibahas tanpa membuat tiruan",
+      "coverage": "sebagian"
+    },
+    {
+      "cpCode": "DK-PA-a",
+      "weeksText": "-",
+      "weeks": [],
+      "otherWeeks": 0,
+      "coverageText": "Tidak dicakup: tanpa perangkat KA di tangan murid (bagian 7)",
+      "coverage": "tidak-dicakup"
+    },
+    {
+      "cpCode": "DK-PA-b",
+      "weeksText": "-",
+      "weeks": [],
+      "otherWeeks": 0,
+      "coverageText": "Tidak dicakup: tanpa perangkat KA di tangan murid (bagian 7)",
+      "coverage": "tidak-dicakup"
+    }
+  ],
+  "enrichment": [
+    {
+      "id": "a",
+      "kind": "pemrograman-teks",
+      "text": "seluruh pemrograman teks Python (`SMP8-2` sampai `SMP9-2`), karena kedua CP Fase D tidak memuat elemen Algoritma dan Pemrograman",
+      "semesters": ["SMP8-2", "SMP9-1", "SMP9-2"],
+      "weeks": []
+    },
+    {
+      "id": "b",
+      "kind": "kodifikasi-biner",
+      "text": "kodifikasi biner (`SMP7-2-M2`, `M3`), yang tidak ada di CP Informatika Fase D 2025 (versi lama CP memuatnya)",
+      "semesters": [],
+      "weeks": ["SMP7-2-M2", "SMP7-2-M3"]
+    },
+    {
+      "id": "c",
+      "kind": "klub",
+      "text": "klub pengayaan (bagian 3.4)",
+      "semesters": [],
+      "weeks": []
+    }
+  ]
+}

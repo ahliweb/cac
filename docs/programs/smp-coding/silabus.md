@@ -3,7 +3,7 @@
 - **Version:** v1.0.0
 - **Last updated:** 2026-11-19
 - **Status:** DISETUJUI pemilik program, 2026-11-19 — beserta semua rekomendasi penyusun (bagian 10; keputusan lewat dialog pilihan, dicatat di issue #129). Modul pembelajaran di `content/smp-coding/` dan modul pendamping tidak termasuk persetujuan ini.
-- **Changeset:** Silabus v1.0 disetujui pemilik (2026-11-19) beserta rekomendasi penyusun: satu jalur inti blok ke pseudocode, Python hanya pengayaan di luar CP, CP KKA Fase D untuk materi AI kelas 9, klub OSN opsional, tanpa akun murid; butir Literasi Digital yang belum tercakup ditutup lewat modul pendamping (pekerjaan lanjutan); issue #129. Isi rencana sama dengan draf v0.2; hanya status, bagian 10, dan changelog yang berubah.
+- **Changeset:** Silabus v1.0 disetujui pemilik (2026-11-19) beserta rekomendasi penyusun: satu jalur inti blok ke pseudocode, Python hanya pengayaan di luar CP, CP KKA Fase D untuk materi AI kelas 9, klub OSN opsional, tanpa akun murid; butir Literasi Digital yang belum tercakup ditutup lewat modul pendamping (pekerjaan lanjutan); issue #129. Isi rencana sama dengan draf v0.2; yang berubah hanya status, bagian 10, changelog, dan satu koreksi hitungan di bagian 4 (`DK-BK-c`: 32 menjadi 31 minggu lain).
 
 > **Disetujui pemilik program pada 2026-11-19** (v1.0; keputusan lewat
 > dialog pilihan, dicatat di issue #129, bagian 10). Dokumen ini konten
@@ -353,7 +353,7 @@ pemenuhan; kode `pengayaan` berarti tidak ada butir CP resmi yang cocok
 | D-LD-q | - | **Tidak dicakup** (di luar silabus coding; dicakup Informatika umum atau modul pendamping) |
 | DK-BK-a | SMP7-2-M1, SMP8-1-M6, SMP8-1-M7, SMP8-1-M8, SMP8-1-M14, SMP9-1-M4, SMP9-1-M5, SMP9-1-M6, SMP9-1-M7, SMP9-1-M13, SMP9-1-M14 | Penuh |
 | DK-BK-b | SMP7-1-M11, SMP7-1-M13, SMP7-2-M11, SMP7-2-M13, SMP8-1-M11, dan 11 minggu lain (kolom Butir CP di bagian 3) | Penuh |
-| DK-BK-c | SMP7-1-M3, SMP7-1-M4, SMP7-1-M5, SMP7-1-M6, SMP7-1-M8, dan 32 minggu lain (kolom Butir CP di bagian 3) | Penuh untuk instruksi blok dan pseudocode; baris bertanda `*` (Python) melampaui rumusan CP |
+| DK-BK-c | SMP7-1-M3, SMP7-1-M4, SMP7-1-M5, SMP7-1-M6, SMP7-1-M8, dan 31 minggu lain (kolom Butir CP di bagian 3) | Penuh untuk instruksi blok dan pseudocode; baris bertanda `*` (Python) melampaui rumusan CP |
 | DK-LD-a | SMP7-1-M12, SMP7-2-M12, SMP9-2-M7, SMP9-2-M12, SMP9-2-M13 | Sebagian: slide, infografis, dan laporan; audio dan video tidak |
 | DK-EA-a | - | **Tidak dicakup** (di luar silabus coding; dicakup Informatika umum atau modul pendamping) |
 | DK-EA-b | SMP9-2-M8 | Sebagian: unplugged saja |
@@ -534,6 +534,6 @@ bawah memuat keputusan yang berlaku.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
-| v1.0.0 | 2026-11-19 | Disetujui pemilik beserta semua rekomendasi penyusun; bagian 10 menjadi catatan keputusan (opsi rekomendasi untuk Q1-Q11); status, banner, dan catatan modul pendamping diperbarui; rencana mingguan, pemetaan CP, dan jembatan tidak diubah dari v0.2 (issue #129). |
+| v1.0.0 | 2026-11-19 | Disetujui pemilik beserta semua rekomendasi penyusun; bagian 10 menjadi catatan keputusan (opsi rekomendasi untuk Q1-Q11); status, banner, dan catatan modul pendamping diperbarui; rencana mingguan, pemetaan CP, dan jembatan tidak diubah dari v0.2 kecuali satu koreksi hitungan: pada bagian 4 baris `DK-BK-c`, "dan 32 minggu lain" menjadi "dan 31 minggu lain" (rencana bagian 3 memuat `DK-BK-c` di 36 minggu, 5 disebut dan 31 lainnya; selisih satu ditemukan audit corpus saat di-encode); pemilik perlu mengetahui koreksi ini (issue #129). |
 | v0.2.0 | 2026-11-19 | Kutipan dan kode butir CP diganti dengan teks resmi: CP Informatika Fase D dari Panduan 2025 (elemen BK dan LD) dan CP Koding dan KA Fase D dari SK 046/H/KR/2025; pemetaan CP disusun ulang; pemrograman teks, kodifikasi biner, dan klub ditandai pengayaan di luar CP; pertanyaan Q1, Q3, Q7, Q9 diperbarui, Q10 dan Q11 ditambah (issue #129). |
 | v0.1.0 | 2026-11-19 | Draf awal (issue #129), memakai CP dari dokumen ATP buatan guru. |
