@@ -123,10 +123,15 @@ export const PROGRAM_MODULES: readonly ProgramModule[] = [
     parseModulesIndex: () => ({ modules: undefined, findings: [] }),
     moduleFindings: () => [],
     fidelity: tkCodingFidelity,
+  },
+  {
     id: DEWASA_CODING_PROGRAM_ID,
     dataFiles: DW_DATA_FILE_REGISTRY,
     audit: (source) => auditDewasaCorpus(source),
+    needsOsnTopicFamilyIds: false,
     // No ADR-0007 learning-content index yet (the module plan is module-plan.json).
+    parseModulesIndex: () => ({ modules: undefined, findings: [] }),
+    moduleFindings: () => [],
     fidelity: dewasaCodingFidelity,
   },
 ];
