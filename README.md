@@ -66,6 +66,7 @@ bun test
 | `.github/workflows/` | CI pipeline (`ci.yml`). |
 | `.github/ISSUE_TEMPLATE/` | Bug, feature, and curriculum-change issue forms. |
 | `.changeset/` | Pending changesets (see `docs/development/releasing.md`). |
+| `.claude/agents/` | Claude Code executor subagents used by the orchestrator (see `AGENTS.md`). |
 
 See `docs/architecture/repository-map.md` for the exhaustive,
 directory-by-directory description.

@@ -254,3 +254,13 @@ duplicate it).
 **What belongs here:** issue forms, including the `curriculum-change.yml`
 form used to propose or record a curriculum content change (per
 `AGENTS.md`, "Curriculum content fidelity").
+
+## `.claude/agents/`
+
+**What belongs here:** Claude Code subagent definitions for the
+orchestrator → agent pattern: `pelaksana-kompleks` (complex, Sonnet) and
+`pelaksana-sederhana` (simple, Haiku). Their rules and the orchestrator's
+are in `AGENTS.md`, "Pedoman Eksekusi Wajib (Orchestrator & Agent)".
+
+**What must never go here:** curriculum content, learner data, secrets,
+or credentials.
