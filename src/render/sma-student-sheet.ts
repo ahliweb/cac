@@ -73,7 +73,11 @@ export function renderSmaStudentSheet(
   lines.push("");
 
   lines.push("## Butir CP terkait");
-  if (week.cpItems.length === 0) {
+  if (week.track?.cpStatus === "pengayaan") {
+    lines.push(
+      `Jalur ${week.track.id} adalah pengayaan di luar rumusan CP; minggu jalur ini tidak dihitung sebagai pemenuhan butir CP mana pun.`,
+    );
+  } else if (week.cpItems.length === 0) {
     lines.push("Tidak ada butir CP yang dipetakan ke minggu ini dalam pemetaan silabus.");
   } else {
     for (const item of week.cpItems) {
@@ -87,6 +91,14 @@ export function renderSmaStudentSheet(
     }
   }
   lines.push("");
+
+  if (week.enrichmentLinks.length > 0) {
+    lines.push("## Irisan dengan CP (pengayaan, tidak dihitung pemenuhan CP)");
+    for (const link of week.enrichmentLinks) {
+      lines.push(`- ${link.code}: ${link.label}. Tingkat irisan: ${link.level}`);
+    }
+    lines.push("");
+  }
 
   if (week.osnBridges.length > 0) {
     lines.push("## Jembatan ke OSN");

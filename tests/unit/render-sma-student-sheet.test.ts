@@ -17,7 +17,7 @@ const SOURCE = { name: "Silabus Uji", version: "1.1.0", date: "2026-11-19" };
 const TRACK_WEEK: SmaWeekView = {
   code: "A-X1-M9",
   block: "jalur",
-  track: { id: "A", name: "Algoritmik dengan C++" },
+  track: { id: "A", name: "Algoritmik dengan C++", cpStatus: "dalam-cp" },
   kelas: "X",
   semester: "X1",
   phase: "E",
@@ -30,6 +30,7 @@ const TRACK_WEEK: SmaWeekView = {
     { code: "E-BK-d", label: "pseudocode", partial: false },
     { code: "E-BK-e", label: "model I-P-O", partial: true },
   ],
+  enrichmentLinks: [],
   osnBridges: [
     { familyId: "dasar-pemrograman", topics: "sintaks", note: "Sesuai CP.", hasEnrichment: false },
   ],

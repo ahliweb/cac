@@ -1,5 +1,5 @@
 {
-  "syllabusVersion": "1.1.0",
+  "syllabusVersion": "1.2.0",
   "syllabusDate": "2026-11-19",
   "sourceSection": "bagian 2",
   "rows": [
@@ -12,8 +12,8 @@
     {
       "id": "semester",
       "item": "Semester",
-      "value": "Dua per kelas: X1, X2, XI1, XI2, XII1, XII2 (enam semester per jalur)",
-      "status": "`[asumsi]`"
+      "value": "Dua per kelas: X1, X2, XI1, XI2, XII1, XII2 (enam semester per jalur A sampai D; jalur E hanya kelas XI dan XII)",
+      "status": "`[asumsi]`; jalur E: keputusan pemilik 2026-11-19 (bagian 9.3)."
     },
     {
       "id": "minggu-per-semester",
@@ -30,8 +30,8 @@
     {
       "id": "hubungan-jalur",
       "item": "Hubungan jalur",
-      "value": "Murid memilih satu jalur (A, B, atau kelak C); boleh mengambil jalur lain bila waktu sekolah mengizinkan. Sebelum memilih jalur, semua murid kelas X mengikuti blok fondasi bersama (bagian 3.0).",
-      "status": "Ditetapkan pemilik 2026-11-18; blok fondasi bersama: keputusan pemilik 2026-11-18 (bagian 9.1)."
+      "value": "Murid memilih satu jalur (A, B, C, D, atau E); boleh mengambil jalur lain bila waktu sekolah mengizinkan. Sebelum memilih jalur, semua murid kelas X mengikuti blok fondasi bersama (bagian 3.0); jalur E dimulai di kelas XI. Jalur D dan E adalah pengayaan di luar rumusan CP.",
+      "status": "Ditetapkan pemilik 2026-11-18; blok fondasi bersama: keputusan pemilik 2026-11-18 (bagian 9.1); jalur C, D, dan E: keputusan pemilik 2026-11-19 (bagian 9.3)."
     },
     {
       "id": "pola-semester",

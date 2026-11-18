@@ -62,7 +62,7 @@ export async function runSmaPlan(
   const track = flagValue(args, "--track");
   if (track === undefined || track === null) {
     return usage(
-      `--track <jalur> wajib untuk program ${program.id} (jalur yang disetujui, mis. A atau B). ` +
+      `--track <jalur> wajib untuk program ${program.id} (jalur yang disetujui: A, B, C, D atau E). ` +
         'Jalankan "osn plan --help".',
     );
   }

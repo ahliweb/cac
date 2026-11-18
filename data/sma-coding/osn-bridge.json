@@ -1,5 +1,5 @@
 {
-  "syllabusVersion": "1.1.0",
+  "syllabusVersion": "1.2.0",
   "syllabusDate": "2026-11-19",
   "sourceSection": "bagian 5",
   "track": "A",
@@ -116,6 +116,45 @@
       "weeks": ["A-XII1-M11"],
       "note": "**P**.",
       "hasEnrichment": true
+    }
+  ],
+  "trackBridges": [
+    {
+      "track": "C",
+      "bridges": [
+        {
+          "familyId": "dasar-pemrograman",
+          "topics": "variabel, percabangan, perulangan, fungsi pada mikrokontroler",
+          "weeksText": "C-X1-M8..M12",
+          "weeks": ["C-X1-M8", "C-X1-M9", "C-X1-M10", "C-X1-M11", "C-X1-M12"],
+          "note": "Hanya sebagian (tanpa `cin`/`cout`, tanpa string).",
+          "hasEnrichment": false
+        },
+        {
+          "familyId": "logika-bitwise",
+          "topics": "logika Boolean",
+          "weeksText": "C-X1-M9",
+          "weeks": ["C-X1-M9"],
+          "note": "Hanya logika Boolean; operasi bit tidak dibahas.",
+          "hasEnrichment": false
+        },
+        {
+          "familyId": "struktur-data",
+          "topics": "array, stack, queue, penyangga melingkar",
+          "weeksText": "C-X2-M4, M9; C-XI1-M9",
+          "weeks": ["C-X2-M4", "C-X2-M9", "C-XI1-M9"],
+          "note": "Array, stack, queue, penyangga.",
+          "hasEnrichment": false
+        },
+        {
+          "familyId": "search-sort",
+          "topics": "median dari data sensor",
+          "weeksText": "C-X2-M10",
+          "weeks": ["C-X2-M10"],
+          "note": "Median; bukan pengurutan penuh.",
+          "hasEnrichment": false
+        }
+      ]
     }
   ]
 }

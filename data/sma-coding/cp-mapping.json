@@ -1,12 +1,12 @@
 {
-  "syllabusVersion": "1.1.0",
+  "syllabusVersion": "1.2.0",
   "syllabusDate": "2026-11-19",
   "sourceSection": "bagian 4",
   "mappings": [
     {
       "cpCode": "E-BK-a",
       "topic": "struktur data dan algoritma standar",
-      "weeksText": "A-X2-M6..M10; B-X2-M7..M9",
+      "weeksText": "A-X2-M6..M10; B-X2-M7..M9; C-X2-M4, M9, M10",
       "weeks": [
         "A-X2-M6",
         "A-X2-M7",
@@ -15,27 +15,30 @@
         "A-X2-M10",
         "B-X2-M7",
         "B-X2-M8",
-        "B-X2-M9"
+        "B-X2-M9",
+        "C-X2-M4",
+        "C-X2-M9",
+        "C-X2-M10"
       ],
-      "tracksText": "A, B",
-      "tracks": ["A", "B"],
-      "partial": false,
+      "tracksText": "A, B, C",
+      "tracks": ["A", "B", "C"],
+      "partialTracks": [],
       "sourceSection": "bagian 4.1"
     },
     {
       "cpCode": "E-BK-b",
       "topic": "data berkualitas",
-      "weeksText": "A-X1-M13; B-X2-M10",
-      "weeks": ["A-X1-M13", "B-X2-M10"],
-      "tracksText": "A, B",
-      "tracks": ["A", "B"],
-      "partial": false,
+      "weeksText": "A-X1-M13; B-X2-M10; C-X2-M3, M12",
+      "weeks": ["A-X1-M13", "B-X2-M10", "C-X2-M3", "C-X2-M12"],
+      "tracksText": "A, B, C",
+      "tracks": ["A", "B", "C"],
+      "partialTracks": [],
       "sourceSection": "bagian 4.1"
     },
     {
       "cpCode": "E-BK-c",
       "topic": "menerapkan algoritma dan struktur data standar",
-      "weeksText": "A-X2-M6..M10, M13; B-X2-M7..M9, M13",
+      "weeksText": "A-X2-M6..M10, M13; B-X2-M7..M9, M13; C-X2-M4, M9..M10, M13",
       "weeks": [
         "A-X2-M6",
         "A-X2-M7",
@@ -46,17 +49,21 @@
         "B-X2-M7",
         "B-X2-M8",
         "B-X2-M9",
-        "B-X2-M13"
+        "B-X2-M13",
+        "C-X2-M4",
+        "C-X2-M9",
+        "C-X2-M10",
+        "C-X2-M13"
       ],
-      "tracksText": "A, B",
-      "tracks": ["A", "B"],
-      "partial": false,
+      "tracksText": "A, B, C",
+      "tracks": ["A", "B", "C"],
+      "partialTracks": [],
       "sourceSection": "bagian 4.1"
     },
     {
       "cpCode": "E-BK-d",
       "topic": "pseudocode dan program dalam bahasa komputer",
-      "weeksText": "A-X1-M8..M12; A-X2-M1..M3; B-X1-M8..M12; B-X2-M1..M3",
+      "weeksText": "A-X1-M8..M12; A-X2-M1..M3; B-X1-M8..M12; B-X2-M1..M3; C-X1-M8..M13",
       "weeks": [
         "A-X1-M8",
         "A-X1-M9",
@@ -73,21 +80,27 @@
         "B-X1-M12",
         "B-X2-M1",
         "B-X2-M2",
-        "B-X2-M3"
+        "B-X2-M3",
+        "C-X1-M8",
+        "C-X1-M9",
+        "C-X1-M10",
+        "C-X1-M11",
+        "C-X1-M12",
+        "C-X1-M13"
       ],
-      "tracksText": "A, B",
-      "tracks": ["A", "B"],
-      "partial": false,
+      "tracksText": "A, B, C",
+      "tracks": ["A", "B", "C"],
+      "partialTracks": [],
       "sourceSection": "bagian 4.1"
     },
     {
       "cpCode": "E-BK-e",
       "topic": "model I-P-O dan sistem operasi",
-      "weeksText": "FND-X1-M1..M2",
-      "weeks": ["FND-X1-M1", "FND-X1-M2"],
-      "tracksText": "A, B",
-      "tracks": ["A", "B"],
-      "partial": false,
+      "weeksText": "FND-X1-M1..M2; C-X1-M8",
+      "weeks": ["FND-X1-M1", "FND-X1-M2", "C-X1-M8"],
+      "tracksText": "A, B, C",
+      "tracks": ["A", "B", "C"],
+      "partialTracks": [],
       "sourceSection": "bagian 4.1"
     },
     {
@@ -97,7 +110,7 @@
       "weeks": ["B-X2-M11"],
       "tracksText": "B (parsial)",
       "tracks": ["B"],
-      "partial": true,
+      "partialTracks": ["B"],
       "sourceSection": "bagian 4.1"
     },
     {
@@ -107,17 +120,17 @@
       "weeks": ["FND-X1-M7"],
       "tracksText": "A, B",
       "tracks": ["A", "B"],
-      "partial": false,
+      "partialTracks": [],
       "sourceSection": "bagian 4.1"
     },
     {
       "cpCode": "E-LD-e",
       "topic": "keamanan dasar konektivitas jaringan",
-      "weeksText": "FND-X1-M4..M6",
-      "weeks": ["FND-X1-M4", "FND-X1-M5", "FND-X1-M6"],
-      "tracksText": "A, B",
-      "tracks": ["A", "B"],
-      "partial": false,
+      "weeksText": "FND-X1-M4..M6; C-XI2-M1..M2",
+      "weeks": ["FND-X1-M4", "FND-X1-M5", "FND-X1-M6", "C-XI2-M1", "C-XI2-M2"],
+      "tracksText": "A, B, C",
+      "tracks": ["A", "B", "C"],
+      "partialTracks": [],
       "sourceSection": "bagian 4.1"
     },
     {
@@ -127,7 +140,7 @@
       "weeks": ["B-X2-M4", "B-X2-M5", "B-X2-M6", "B-X2-M12", "B-X2-M13"],
       "tracksText": "B",
       "tracks": ["B"],
-      "partial": false,
+      "partialTracks": [],
       "sourceSection": "bagian 4.1"
     },
     {
@@ -137,7 +150,7 @@
       "weeks": ["FND-X1-M2", "FND-X1-M6"],
       "tracksText": "A, B",
       "tracks": ["A", "B"],
-      "partial": false,
+      "partialTracks": [],
       "sourceSection": "bagian 4.1"
     },
     {
@@ -147,7 +160,7 @@
       "weeks": ["FND-X1-M6"],
       "tracksText": "A, B",
       "tracks": ["A", "B"],
-      "partial": false,
+      "partialTracks": [],
       "sourceSection": "bagian 4.1"
     },
     {
@@ -157,13 +170,13 @@
       "weeks": ["FND-X1-M6"],
       "tracksText": "A, B",
       "tracks": ["A", "B"],
-      "partial": false,
+      "partialTracks": [],
       "sourceSection": "bagian 4.1"
     },
     {
       "cpCode": "F-BK-a",
       "topic": "proses rekayasa",
-      "weeksText": "A-XI1-M1..M2; A-XII2-M11..M13; B-XI1-M1, M12; B-XII2-M1..M13",
+      "weeksText": "A-XI1-M1..M2; A-XII2-M11..M13; B-XI1-M1, M12; B-XII2-M1..M13; C-XI1-M1..M2; C-XII1-M1..M2, M12; C-XII2-M5..M12",
       "weeks": [
         "A-XI1-M1",
         "A-XI1-M2",
@@ -184,17 +197,30 @@
         "B-XII2-M10",
         "B-XII2-M11",
         "B-XII2-M12",
-        "B-XII2-M13"
+        "B-XII2-M13",
+        "C-XI1-M1",
+        "C-XI1-M2",
+        "C-XII1-M1",
+        "C-XII1-M2",
+        "C-XII1-M12",
+        "C-XII2-M5",
+        "C-XII2-M6",
+        "C-XII2-M7",
+        "C-XII2-M8",
+        "C-XII2-M9",
+        "C-XII2-M10",
+        "C-XII2-M11",
+        "C-XII2-M12"
       ],
-      "tracksText": "A, B",
-      "tracks": ["A", "B"],
-      "partial": false,
+      "tracksText": "A, B, C",
+      "tracks": ["A", "B", "C"],
+      "partialTracks": [],
       "sourceSection": "bagian 4.2"
     },
     {
       "cpCode": "F-BK-b",
       "topic": "beberapa strategi, justifikasi efisiensi",
-      "weeksText": "A-XI1-M3..M7, M11..M12; A-XI2-M1..M4; A-XII2-M8, M10; B-XI1-M9..M10",
+      "weeksText": "A-XI1-M3..M7, M11..M12; A-XI2-M1..M4; A-XII2-M8, M10; B-XI1-M9..M10; C-XI1-M5..M8; C-XII1-M8",
       "weeks": [
         "A-XI1-M3",
         "A-XI1-M4",
@@ -210,17 +236,22 @@
         "A-XII2-M8",
         "A-XII2-M10",
         "B-XI1-M9",
-        "B-XI1-M10"
+        "B-XI1-M10",
+        "C-XI1-M5",
+        "C-XI1-M6",
+        "C-XI1-M7",
+        "C-XI1-M8",
+        "C-XII1-M8"
       ],
-      "tracksText": "A, B",
-      "tracks": ["A", "B"],
-      "partial": false,
+      "tracksText": "A, B, C",
+      "tracks": ["A", "B", "C"],
+      "partialTracks": [],
       "sourceSection": "bagian 4.2"
     },
     {
       "cpCode": "F-BK-c",
       "topic": "struktur data lebih kompleks dan abstrak",
-      "weeksText": "A-XI1-M9..M10; A-XI2-M5..M8; A-XII1-M1..M5, M9..M10; B-XI1-M8",
+      "weeksText": "A-XI1-M9..M10; A-XI2-M5..M8; A-XII1-M1..M5, M9..M10; B-XI1-M8; C-XI1-M3, M9",
       "weeks": [
         "A-XI1-M9",
         "A-XI1-M10",
@@ -235,41 +266,55 @@
         "A-XII1-M5",
         "A-XII1-M9",
         "A-XII1-M10",
-        "B-XI1-M8"
+        "B-XI1-M8",
+        "C-XI1-M3",
+        "C-XI1-M9"
       ],
-      "tracksText": "A, B",
-      "tracks": ["A", "B"],
-      "partial": false,
+      "tracksText": "A, B, C (parsial)",
+      "tracks": ["A", "B", "C"],
+      "partialTracks": ["C"],
       "sourceSection": "bagian 4.2"
     },
     {
       "cpCode": "F-BK-d",
-      "topic": "jaringan (HTTP)",
-      "weeksText": "B-XI2-M11",
-      "weeks": ["B-XI2-M11"],
-      "tracksText": "B (parsial)",
-      "tracks": ["B"],
-      "partial": true,
+      "topic": "jaringan (HTTP; jalur C: pengiriman data antarperangkat dan jaringan IoT)",
+      "weeksText": "B-XI2-M11; C-XI1-M10..M12; C-XI2-M1, M3..M8",
+      "weeks": [
+        "B-XI2-M11",
+        "C-XI1-M10",
+        "C-XI1-M11",
+        "C-XI1-M12",
+        "C-XI2-M1",
+        "C-XI2-M3",
+        "C-XI2-M4",
+        "C-XI2-M5",
+        "C-XI2-M6",
+        "C-XI2-M7",
+        "C-XI2-M8"
+      ],
+      "tracksText": "B (parsial), C",
+      "tracks": ["B", "C"],
+      "partialTracks": ["B"],
       "sourceSection": "bagian 4.2"
     },
     {
       "cpCode": "F-LD-d",
       "topic": "merancang kebutuhan sistem",
-      "weeksText": "B-XII2-M1..M2",
-      "weeks": ["B-XII2-M1", "B-XII2-M2"],
-      "tracksText": "B",
-      "tracks": ["B"],
-      "partial": false,
+      "weeksText": "B-XII2-M1..M2; C-XII1-M1..M2",
+      "weeks": ["B-XII2-M1", "B-XII2-M2", "C-XII1-M1", "C-XII1-M2"],
+      "tracksText": "B, C",
+      "tracks": ["B", "C"],
+      "partialTracks": [],
       "sourceSection": "bagian 4.2"
     },
     {
       "cpCode": "F-LD-e",
       "topic": "keamanan jaringan lanjut",
-      "weeksText": "B-XI2-M10",
-      "weeks": ["B-XI2-M10"],
-      "tracksText": "B (parsial)",
-      "tracks": ["B"],
-      "partial": true,
+      "weeksText": "B-XI2-M10; C-XI2-M2",
+      "weeks": ["B-XI2-M10", "C-XI2-M2"],
+      "tracksText": "B (parsial), C (parsial)",
+      "tracks": ["B", "C"],
+      "partialTracks": ["B", "C"],
       "sourceSection": "bagian 4.2"
     },
     {
@@ -288,33 +333,33 @@
       ],
       "tracksText": "B",
       "tracks": ["B"],
-      "partial": false,
+      "partialTracks": [],
       "sourceSection": "bagian 4.2"
     },
     {
       "cpCode": "F-LD-g",
       "topic": "hukum (UU ITE, UU PDP)",
-      "weeksText": "B-XI2-M10; B-XII2-M10",
-      "weeks": ["B-XI2-M10", "B-XII2-M10"],
-      "tracksText": "B",
-      "tracks": ["B"],
-      "partial": false,
+      "weeksText": "B-XI2-M10; B-XII2-M10; C-XII1-M11",
+      "weeks": ["B-XI2-M10", "B-XII2-M10", "C-XII1-M11"],
+      "tracksText": "B, C (parsial)",
+      "tracks": ["B", "C"],
+      "partialTracks": ["C"],
       "sourceSection": "bagian 4.2"
     },
     {
       "cpCode": "F-LD-i",
       "topic": "kata sandi dan autentikasi",
-      "weeksText": "B-XII1-M10",
-      "weeks": ["B-XII1-M10"],
-      "tracksText": "B (parsial)",
-      "tracks": ["B"],
-      "partial": true,
+      "weeksText": "B-XII1-M10; C-XI2-M2",
+      "weeks": ["B-XII1-M10", "C-XI2-M2"],
+      "tracksText": "B (parsial), C (parsial)",
+      "tracks": ["B", "C"],
+      "partialTracks": ["B", "C"],
       "sourceSection": "bagian 4.2"
     },
     {
       "cpCode": "F-AD-a",
       "topic": "data terbuka, keputusan, prediksi",
-      "weeksText": "A-XI2-M9..M13; B-XI2-M4..M8",
+      "weeksText": "A-XI2-M9..M13; B-XI2-M4..M8; C-XI2-M9..M12",
       "weeks": [
         "A-XI2-M9",
         "A-XI2-M10",
@@ -325,17 +370,21 @@
         "B-XI2-M5",
         "B-XI2-M6",
         "B-XI2-M7",
-        "B-XI2-M8"
+        "B-XI2-M8",
+        "C-XI2-M9",
+        "C-XI2-M10",
+        "C-XI2-M11",
+        "C-XI2-M12"
       ],
-      "tracksText": "A, B",
-      "tracks": ["A", "B"],
-      "partial": false,
+      "tracksText": "A, B, C",
+      "tracks": ["A", "B", "C"],
+      "partialTracks": [],
       "sourceSection": "bagian 4.2"
     },
     {
       "cpCode": "F-AP-a",
       "topic": "konsep strategi algoritmik",
-      "weeksText": "A-XI1-M3..M12; A-XI2-M1..M4; B-XI1-M9",
+      "weeksText": "A-XI1-M3..M12; A-XI2-M1..M4; B-XI1-M9; C-XI1-M5..M8; C-XII1-M6..M8",
       "weeks": [
         "A-XI1-M3",
         "A-XI1-M4",
@@ -351,17 +400,24 @@
         "A-XI2-M2",
         "A-XI2-M3",
         "A-XI2-M4",
-        "B-XI1-M9"
+        "B-XI1-M9",
+        "C-XI1-M5",
+        "C-XI1-M6",
+        "C-XI1-M7",
+        "C-XI1-M8",
+        "C-XII1-M6",
+        "C-XII1-M7",
+        "C-XII1-M8"
       ],
-      "tracksText": "A, B",
-      "tracks": ["A", "B"],
-      "partial": false,
+      "tracksText": "A, B, C (parsial)",
+      "tracks": ["A", "B", "C"],
+      "partialTracks": ["C"],
       "sourceSection": "bagian 4.2"
     },
     {
       "cpCode": "F-AP-b",
       "topic": "program terstruktur berdasarkan strategi",
-      "weeksText": "A-XI1-M3..M13; A-XI2-M1..M4; B-XI1-M8..M9, M13",
+      "weeksText": "A-XI1-M3..M13; A-XI2-M1..M4; B-XI1-M8..M9, M13; C-XI1-M3..M7; C-XII1-M5..M8",
       "weeks": [
         "A-XI1-M3",
         "A-XI1-M4",
@@ -380,17 +436,26 @@
         "A-XI2-M4",
         "B-XI1-M8",
         "B-XI1-M9",
-        "B-XI1-M13"
+        "B-XI1-M13",
+        "C-XI1-M3",
+        "C-XI1-M4",
+        "C-XI1-M5",
+        "C-XI1-M6",
+        "C-XI1-M7",
+        "C-XII1-M5",
+        "C-XII1-M6",
+        "C-XII1-M7",
+        "C-XII1-M8"
       ],
-      "tracksText": "A, B",
-      "tracks": ["A", "B"],
-      "partial": false,
+      "tracksText": "A, B, C",
+      "tracks": ["A", "B", "C"],
+      "partialTracks": [],
       "sourceSection": "bagian 4.2"
     },
     {
       "cpCode": "F-AP-c",
       "topic": "pemeliharaan dan kualitas kode",
-      "weeksText": "A-XI1-M2; A-XII2-M1..M2; B-XI1-M4, M7, M11..M12; B-XII1-M9, M12",
+      "weeksText": "A-XI1-M2; A-XII2-M1..M2; B-XI1-M4, M7, M11..M12; B-XII1-M9, M12; C-XI1-M2; C-XII2-M1..M2",
       "weeks": [
         "A-XI1-M2",
         "A-XII2-M1",
@@ -400,17 +465,20 @@
         "B-XI1-M11",
         "B-XI1-M12",
         "B-XII1-M9",
-        "B-XII1-M12"
+        "B-XII1-M12",
+        "C-XI1-M2",
+        "C-XII2-M1",
+        "C-XII2-M2"
       ],
-      "tracksText": "A, B",
-      "tracks": ["A", "B"],
-      "partial": false,
+      "tracksText": "A, B, C",
+      "tracks": ["A", "B", "C"],
+      "partialTracks": [],
       "sourceSection": "bagian 4.2"
     },
     {
       "cpCode": "F-AP-d",
       "topic": "struktur data kompleks dan library",
-      "weeksText": "A-XI1-M9..M10; A-XII1-M12; B-XI1-M8; B-XI2-M1..M3; B-XII1-M1..M6",
+      "weeksText": "A-XI1-M9..M10; A-XII1-M12; B-XI1-M8; B-XI2-M1..M3; B-XII1-M1..M6; C-XI1-M4; C-XII2-M6..M9",
       "weeks": [
         "A-XI1-M9",
         "A-XI1-M10",
@@ -424,12 +492,102 @@
         "B-XII1-M3",
         "B-XII1-M4",
         "B-XII1-M5",
-        "B-XII1-M6"
+        "B-XII1-M6",
+        "C-XI1-M4",
+        "C-XII2-M6",
+        "C-XII2-M7",
+        "C-XII2-M8",
+        "C-XII2-M9"
       ],
-      "tracksText": "A, B",
-      "tracks": ["A", "B"],
-      "partial": false,
+      "tracksText": "A, B, C",
+      "tracks": ["A", "B", "C"],
+      "partialTracks": [],
       "sourceSection": "bagian 4.2"
+    }
+  ],
+  "enrichmentLinks": [
+    {
+      "track": "D",
+      "cpCode": "F-AD-a",
+      "topic": "data terbuka dan legal, prediksi",
+      "weeksText": "D-XI1-M5..M8, M13; D-XII1-M5",
+      "weeks": ["D-XI1-M5", "D-XI1-M6", "D-XI1-M7", "D-XI1-M8", "D-XI1-M13", "D-XII1-M5"],
+      "level": "**Irisan terdekat.** Sedang: rumusan menyebut \"prediksi\" dan \"tanpa atau dengan komputer\", tetapi tidak menyebut AI atau pembelajaran mesin."
+    },
+    {
+      "track": "D",
+      "cpCode": "E-BK-b",
+      "topic": "kualitas dan pelabelan data",
+      "weeksText": "D-X1-M9, M13; D-X2-M1",
+      "weeks": ["D-X1-M9", "D-X1-M13", "D-X2-M1"],
+      "level": "Rendah-sedang: kualitas dan pelabelan data."
+    },
+    {
+      "track": "D",
+      "cpCode": "F-LD-b",
+      "topic": "verifikasi konten buatan AI",
+      "weeksText": "D-X2-M11; D-XI2-M10",
+      "weeks": ["D-X2-M11", "D-XI2-M10"],
+      "level": "Rendah-sedang: verifikasi konten buatan AI."
+    },
+    {
+      "track": "D",
+      "cpCode": "E-LD-g",
+      "topic": "lisensi data dan keluaran generatif",
+      "weeksText": "D-X2-M12",
+      "weeks": ["D-X2-M12"],
+      "level": "Rendah: lisensi data dan keluaran generatif."
+    },
+    {
+      "track": "D",
+      "cpCode": "F-LD-g",
+      "topic": "pelindungan data pribadi dan UU ITE",
+      "weeksText": "D-X2-M3; D-XII1-M4",
+      "weeks": ["D-X2-M3", "D-XII1-M4"],
+      "level": "Rendah: pelindungan data pribadi dan UU ITE sebatas pokok."
+    },
+    {
+      "track": "D",
+      "cpCode": "E-LD-l",
+      "topic": "privasi pada layanan AI daring",
+      "weeksText": "D-X2-M3",
+      "weeks": ["D-X2-M3"],
+      "level": "Rendah: privasi pada layanan AI daring."
+    },
+    {
+      "track": "D",
+      "cpCode": "F-AP-d",
+      "topic": "memakai library untuk model",
+      "weeksText": "D-XI1-M3..M4, M9; D-XI2-M2..M8",
+      "weeks": [
+        "D-XI1-M3",
+        "D-XI1-M4",
+        "D-XI1-M9",
+        "D-XI2-M2",
+        "D-XI2-M3",
+        "D-XI2-M4",
+        "D-XI2-M5",
+        "D-XI2-M6",
+        "D-XI2-M7",
+        "D-XI2-M8"
+      ],
+      "level": "Rendah, hanya karena alat memakai coding (Python): memakai library, tetapi struktur data kompleks bukan fokus."
+    },
+    {
+      "track": "E",
+      "cpCode": "F-BK-b",
+      "topic": "membandingkan algoritma kuantum dengan pendekatan klasik",
+      "weeksText": "E-XII1-M5; E-XI2-M12",
+      "weeks": ["E-XII1-M5", "E-XI2-M12"],
+      "level": "Latihan serupa: membandingkan Grover dengan pencarian linear dan Deutsch-Jozsa dengan pendekatan klasik; tidak dihitung."
+    },
+    {
+      "track": "E",
+      "cpCode": "F-AP-d",
+      "topic": "simulator vektor keadaan dan Qiskit",
+      "weeksText": "E-XI1-M10..M11; E-XI2-M4; E-XII1-M9..M10",
+      "weeks": ["E-XI1-M10", "E-XI1-M11", "E-XI2-M4", "E-XII1-M9", "E-XII1-M10"],
+      "level": "Menyentuh butir ini lewat simulator buatan sendiri dan penggunaan Qiskit (minggu sesuai rencana bagian 3.5); tidak dihitung."
     }
   ]
 }

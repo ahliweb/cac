@@ -15,6 +15,7 @@
 import type { z } from "zod";
 import { MODULES_FILE_NAME } from "../schema/module";
 import {
+  SMA_CLASSES,
   SMA_FOUNDATION_BLOCK_ID,
   SMA_FOUNDATION_WEEKS,
   SMA_WEEKS_PER_SEMESTER,
@@ -51,15 +52,28 @@ export const SMA_DATA_FILE_REGISTRY: readonly SmaFileEntry[] = [
  */
 export const SMA_FOUNDATION_SEMESTER = "X1";
 
-/** The fixed counts the approved v1.1 syllabus has. */
+/**
+ * The fixed counts the approved v1.2 syllabus has. `weeks` is the total over
+ * all tracks: jalur A-D have 77 each (kelas X semester 1 starts at week 8,
+ * the other five semesters have 14) and jalur E has 56 (kelas XI-XII only).
+ * `enrichmentLinks` are the irisan of jalur D (7) and E (2) with CP items.
+ */
 export const SMA_EXPECTED_COUNTS = {
   cpQuotes: 6,
   cpItems: 36,
   structureRows: SMA_STRUCTURE_ROW_IDS.length,
   semestersPerTrack: 6,
+  tracks: 5,
+  weeks: 364,
   cpMappings: 26,
+  enrichmentLinks: 9,
   foundationWeeks: SMA_FOUNDATION_WEEKS,
 } as const;
+
+/** The position of a kelas in teaching order (X < XI < XII). */
+function classIndex(kelas: string): number {
+  return (SMA_CLASSES as readonly string[]).indexOf(kelas);
+}
 
 function error(file: string, path: string, message: string): CorpusFinding {
   return { file, path, message, severity: "error" };
@@ -161,6 +175,21 @@ function structuralFindings(parsed: Parsed): CorpusFinding[] {
       SMA_EXPECTED_COUNTS.cpMappings,
     );
   }
+  if (tracks !== undefined) {
+    count("tracks.json", "tracks", "tracks", tracks.tracks.length, SMA_EXPECTED_COUNTS.tracks);
+  }
+  if (weeks !== undefined) {
+    count("weeks.json", "weeks", "track weeks", weeks.weeks.length, SMA_EXPECTED_COUNTS.weeks);
+  }
+  if (mapping !== undefined) {
+    count(
+      "cp-mapping.json",
+      "enrichmentLinks",
+      "enrichment links",
+      mapping.enrichmentLinks.length,
+      SMA_EXPECTED_COUNTS.enrichmentLinks,
+    );
+  }
   if (structure !== undefined) {
     count(
       "structure.json",
@@ -247,12 +276,22 @@ function structuralFindings(parsed: Parsed): CorpusFinding[] {
     if (tracks !== undefined && structure !== undefined) {
       for (const track of tracks.tracks) {
         for (const semester of structure.semesters) {
-          if (!bySemester.has(`${track.id}-${semester.code}`)) {
+          const present = bySemester.has(`${track.id}-${semester.code}`);
+          const started = classIndex(semester.kelas) >= classIndex(track.startClass);
+          if (started && !present) {
             findings.push(
               error(
                 "weeks.json",
                 `weeks[semesterCode=${track.id}-${semester.code}]`,
                 `track ${track.id} has no weeks for semester ${semester.code}`,
+              ),
+            );
+          } else if (!started && present) {
+            findings.push(
+              error(
+                "weeks.json",
+                `weeks[semesterCode=${track.id}-${semester.code}]`,
+                `track ${track.id} starts in kelas ${track.startClass} (tracks.json) and must have no weeks in semester ${semester.code}`,
               ),
             );
           }
@@ -354,6 +393,11 @@ function referentialFindings(
   const sameList = (a: readonly string[], b: readonly string[]) =>
     a.length === b.length && a.every((value, i) => value === b[i]);
 
+  // A pengayaan track lies outside the CP wording: it may never count as covering a CP item.
+  const enrichmentTrackIds = new Set(
+    tracks?.tracks.filter((track) => track.cpStatus === "pengayaan").map((track) => track.id) ?? [],
+  );
+
   if (mapping !== undefined) {
     mapping.mappings.forEach((row, index) => {
       const at = `mappings[${index}]`;
@@ -371,6 +415,14 @@ function referentialFindings(
           if (!trackIds.has(id)) {
             findings.push(
               error("cp-mapping.json", `${at}.tracks[${i}]`, `track "${id}" is not in tracks.json`),
+            );
+          } else if (enrichmentTrackIds.has(id)) {
+            findings.push(
+              error(
+                "cp-mapping.json",
+                `${at}.tracks[${i}]`,
+                `track "${id}" is a pengayaan track (outside the CP wording) and cannot count as covering a CP item; record it in enrichmentLinks instead`,
+              ),
             );
           }
         });
@@ -402,6 +454,50 @@ function referentialFindings(
         findings.push(error("cp-mapping.json", `${at}.weeksText`, (cause as Error).message));
       }
       checkWeeks("cp-mapping.json", `${at}.weeks`, row.weeks, new Set(row.tracks));
+    });
+  }
+
+  if (mapping !== undefined) {
+    mapping.enrichmentLinks.forEach((link, index) => {
+      const at = `enrichmentLinks[${index}]`;
+      if (cpCodes !== undefined && !cpCodes.has(link.cpCode)) {
+        findings.push(
+          error(
+            "cp-mapping.json",
+            `${at}.cpCode`,
+            `CP item "${link.cpCode}" does not exist in cp-elements.json`,
+          ),
+        );
+      }
+      if (trackIds !== undefined) {
+        if (!trackIds.has(link.track)) {
+          findings.push(
+            error("cp-mapping.json", `${at}.track`, `track "${link.track}" is not in tracks.json`),
+          );
+        } else if (!enrichmentTrackIds.has(link.track)) {
+          findings.push(
+            error(
+              "cp-mapping.json",
+              `${at}.track`,
+              `track "${link.track}" is counted in the CP mapping (cpStatus "dalam-cp"); enrichmentLinks are only for pengayaan tracks`,
+            ),
+          );
+        }
+      }
+      try {
+        if (!sameList(expandWeekCodes(link.weeksText), link.weeks)) {
+          findings.push(
+            error(
+              "cp-mapping.json",
+              `${at}.weeks`,
+              `does not equal weeksText "${link.weeksText}" expanded`,
+            ),
+          );
+        }
+      } catch (cause) {
+        findings.push(error("cp-mapping.json", `${at}.weeksText`, (cause as Error).message));
+      }
+      checkWeeks("cp-mapping.json", `${at}.weeks`, link.weeks, new Set([link.track]));
     });
   }
 
@@ -462,6 +558,41 @@ function referentialFindings(
         }
       }
     }
+
+    bridge.trackBridges.forEach((entry, entryIndex) => {
+      const at = `trackBridges[${entryIndex}]`;
+      if (trackIds !== undefined && !trackIds.has(entry.track)) {
+        findings.push(
+          error("osn-bridge.json", `${at}.track`, `track "${entry.track}" is not in tracks.json`),
+        );
+      }
+      entry.bridges.forEach((row, index) => {
+        const rowAt = `${at}.bridges[${index}]`;
+        try {
+          if (!sameList(expandWeekCodes(row.weeksText), row.weeks)) {
+            findings.push(
+              error(
+                "osn-bridge.json",
+                `${rowAt}.weeks`,
+                `does not equal weeksText "${row.weeksText}" expanded`,
+              ),
+            );
+          }
+        } catch (cause) {
+          findings.push(error("osn-bridge.json", `${rowAt}.weeksText`, (cause as Error).message));
+        }
+        checkWeeks("osn-bridge.json", `${rowAt}.weeks`, row.weeks, new Set([entry.track]));
+        if (osnTopicFamilyIds !== undefined && !osnTopicFamilyIds.has(row.familyId)) {
+          findings.push(
+            error(
+              "osn-bridge.json",
+              `${rowAt}.familyId`,
+              `OSN topic family "${row.familyId}" does not exist in data/osn/topic-families.json`,
+            ),
+          );
+        }
+      });
+    });
   }
 
   return findings;

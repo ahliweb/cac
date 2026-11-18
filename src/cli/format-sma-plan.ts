@@ -37,6 +37,13 @@ function pushWeek(lines: string[], week: SmaWeekView): void {
           .map((item) => `${item.code}${item.partial ? " (parsial)" : ""} (${item.label})`)
           .join("; ");
   lines.push(`- **Butir CP:** ${cp}`);
+  if (week.enrichmentLinks.length > 0) {
+    lines.push(
+      `- **Irisan dengan CP (pengayaan, tidak dihitung pemenuhan CP):** ${week.enrichmentLinks
+        .map((link) => `${link.code} (${link.label}); tingkat: ${link.level}`)
+        .join(" | ")}`,
+    );
+  }
   for (const bridge of week.osnBridges) {
     lines.push(
       `- **Jembatan OSN:** ${bridge.familyId} -- ${bridge.topics}. Catatan: ${bridge.note}`,
@@ -62,6 +69,11 @@ export function formatSmaPlanMarkdown(
   lines.push(`Program: ${source.name}`);
   lines.push(`Cakupan: ${scopeText(scope)}`);
   lines.push(`Sumber: silabus versi ${source.version}, tanggal ${source.date}.`);
+  if (plan.track.cpStatus === "pengayaan") {
+    lines.push(
+      `Catatan: jalur ${plan.track.id} adalah pengayaan di luar rumusan CP; tidak dihitung sebagai pemenuhan butir CP.`,
+    );
+  }
   lines.push("");
   for (const semester of plan.semesters) {
     lines.push(
