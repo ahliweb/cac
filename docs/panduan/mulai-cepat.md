@@ -70,7 +70,7 @@ bun run privacy-check
 ```text
 $ bun run src/cli/index.ts privacy-check
 osn privacy-check: scanning /.../data
-OK -- 32 file(s) scanned, 0 direct-identifier-shaped key(s) found.
+OK -- 33 file(s) scanned, 0 direct-identifier-shaped key(s) found.
 ```
 
 ## 3. Cara menjalankan `osn`
@@ -85,7 +85,7 @@ Contoh versi:
 
 ```text
 $ bun run src/cli/index.ts --version
-2.1.0
+2.2.0
 ```
 
 Bentuk pendek `bun src/cli/index.ts ...` juga bekerja (keluaran sama). Dua

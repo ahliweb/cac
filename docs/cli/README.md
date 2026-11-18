@@ -971,7 +971,7 @@ terminal, a CI log, or a `--json` payload.
 ```text
 $ osn privacy-check
 osn privacy-check: scanning /path/to/repo/data
-OK -- 32 file(s) scanned, 0 direct-identifier-shaped key(s) found.
+OK -- 33 file(s) scanned, 0 direct-identifier-shaped key(s) found.
 ```
 
 ### Example: a planted identifier (illustrative)
