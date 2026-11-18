@@ -18,6 +18,21 @@
         "approvedOn": "2026-11-18",
         "reviewerRole": "pemilik program"
       }
+    },
+    {
+      "id": "logika-bitwise",
+      "title": "Logika dan Bitwise",
+      "topicFamilies": ["logika-bitwise"],
+      "weeks": [3, 10, 16, 25],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "refId": "R1"
+        }
+      ],
+      "contentPath": "content/osn/modules/logika-bitwise.md"
     }
   ]
 }

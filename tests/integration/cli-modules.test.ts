@@ -183,6 +183,7 @@ describe("bun run check:module-code (real subprocess)", () => {
   test("passes on the committed modules and counts their cpp blocks", async () => {
     const result = await run(["bun", "run", "scripts/check-module-code.ts"]);
     expect(result.exitCode).toBe(0);
-    expect(result.stdout).toMatch(/OK -- \d+ cpp block\(s\) in 1 module file\(s\)/);
+    // The module count grows as modules are added (#55); assert the shape only.
+    expect(result.stdout).toMatch(/OK -- \d+ cpp block\(s\) in \d+ module file\(s\)/);
   });
 });
