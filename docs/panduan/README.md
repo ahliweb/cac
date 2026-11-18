@@ -59,5 +59,7 @@ Dokumen ini independen dan bukan dokumen resmi Puspresnas, IA TOKI, atau IOI.
 
 - [`docs/operations/runbook.md`](../operations/runbook.md): siklus operasi kohort (Inggris).
 - [`docs/governance/privacy.md`](../governance/privacy.md): kebijakan privasi.
+- [`docs/programs/`](../programs/README.md): peta jenjang program coding (TK sampai dewasa) dan status tiap program; hanya `osn` dan `sma-coding` yang terdaftar, lima lainnya draf.
 - [`docs/programs/sma-coding/`](../programs/sma-coding/README.md): silabus SMA.
+- [`docs/riset/ilmu-belajar-kognitif.md`](../riset/ilmu-belajar-kognitif.md): riset ilmu kognitif tentang cara belajar efektif (DRAF), rujukan pedagogi semua program.
 - [`CONTRIBUTING.md`](../../CONTRIBUTING.md) dan [`AGENTS.md`](../../AGENTS.md): aturan kontribusi.

@@ -2,7 +2,7 @@
 
 - **Version:** v0.1.0
 - **Last updated:** 2026-11-19
-- **Status:** DRAF (issue #128) — riset dan draf silabus; **belum disetujui pemilik**. Tidak ada `data/sd-coding/`, tidak ada entri di `data/programs.json`, dan tidak ada `content/sd-coding/` sampai pemilik menyetujui silabus ([ADR-0006](../../architecture/adr/0006-multiple-programmes.md), [ADR-0007](../../architecture/adr/0007-authored-learning-content.md)).
+- **Status:** DRAF (issue #128) — riset dan draf silabus; **belum disetujui pemilik**. Tidak ada `data/sd-coding/`, tidak ada entri di `data/programs.json`, dan tidak ada `content/sd-coding/` sampai pemilik menyetujui silabus ([ADR-0006](../../architecture/adr/0006-multi-program-repository.md), [ADR-0007](../../architecture/adr/0007-authored-learning-content.md)).
 
 > Isi folder ini adalah konten **karangan** (*authored*) menurut
 > [ADR-0007](../../architecture/adr/0007-authored-learning-content.md),

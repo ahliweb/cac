@@ -196,20 +196,42 @@ check:sma-fidelity`).
 ## `docs/programs/`
 
 **What belongs here:** one folder per programme other than OSN, named by
-programme id (ADR-0006), holding that programme's source document. A
-source document that the owner has not yet approved is authored content
-and stays marked `DRAF` (ADR-0007). Today: `sma-coding/` — the syllabus for
-the senior-high-school coding programme (`README.md`, `silabus.md`, the draft research note
-`riset-buku-ai-onno-w-purbo.md`, and the draft proposal
-`usulan-fondasi-kelas-x.md` for syllabus v1.1, and the approved drafts
-`draf-jalur-c-iot.md`, `draf-jalur-d-ai.md`, `draf-jalur-e-kuantum.md` kept as
-history), v1.2 approved by the programme owner on 2026-11-19 for tracks A, B,
-C, D and E (v1.0 on 2026-11-18 for tracks A and B); tracks D and E are
-outside the CP wording (enrichment).
+programme id (ADR-0006), holding that programme's source document, plus the
+level map `README.md` (TK → SD → SMP → SMA → university → adult: status,
+bridges and the link to the shared research). A source document that the
+owner has not yet approved is authored content and stays marked `DRAF`
+(ADR-0007). Today:
+
+- `README.md` — the level map (v1.0.0).
+- `sma-coding/` — the syllabus for the senior-high-school coding programme
+  (`README.md`, `silabus.md`, the draft research note
+  `riset-buku-ai-onno-w-purbo.md`, the draft proposal
+  `usulan-fondasi-kelas-x.md` for syllabus v1.1, the approved drafts
+  `draf-jalur-c-iot.md`, `draf-jalur-d-ai.md`, `draf-jalur-e-kuantum.md` kept
+  as history, and the module series designs `rancangan-*.md`), v1.2 approved
+  by the programme owner on 2026-11-19 for tracks A, B, C, D and E (v1.0 on
+  2026-11-18 for tracks A and B); tracks D and E are outside the CP wording
+  (enrichment). Registered in `data/programs.json`.
+- `tk-coding/`, `sd-coding/`, `smp-coding/`, `kuliah-coding/`,
+  `dewasa-coding/` — each holds `README.md`, `riset.md` and
+  `silabus-draf.md`. All `DRAF` (issues #127–#131), not owner-approved: no
+  `data/<program>/`, no registry entry, no `content/<program>/`.
 
 **What must never go here:** machine-readable data (belongs in
 `data/<program>/`, and only after the source is approved); learner data;
 an approval the owner did not give.
+
+## `docs/riset/`
+
+**What belongs here:** cross-programme research that serves more than one
+programme (authored content, ADR-0007, marked `DRAF` until the owner
+approves). Today: `ilmu-belajar-kognitif.md` (v0.1.0, issue #133), the
+cognitive-science reference on effective learning with per-programme
+recommendations. It changes no syllabus, corpus or programme document.
+
+**What must never go here:** programme-specific syllabi (belong in
+`docs/programs/<id>/`); machine-readable data; an approval the owner did not
+give.
 
 ## `docs/silabus/`
 
