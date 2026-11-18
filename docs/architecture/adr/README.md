@@ -14,7 +14,7 @@ Every ADR in this directory uses the same five sections, in this order:
 
 | Section | Content |
 | --- | --- |
-| **Status** | `Proposed`, `Accepted`, `Superseded by ADR-NNNN`, or `Deprecated`. All five ADRs below are `Accepted`. |
+| **Status** | `Proposed`, `Accepted`, `Superseded by ADR-NNNN`, or `Deprecated`. All ADRs below are `Accepted`. |
 | **Context** | The problem or force that made a decision necessary — what requirement or constraint is driving this, with a citation to the syllabus section or requirement ID behind it. |
 | **Options considered** | Every option that was seriously weighed, including the one chosen. At least two rejected alternatives, each with a concrete, specific reason it was rejected — not "we didn't like it." |
 | **Decision** | The option chosen, stated plainly. |
@@ -36,8 +36,10 @@ file.
 | [0003](0003-json-data-with-zod-contracts.md) | JSON data with Zod schemas as the contract | Accepted |
 | [0004](0004-no-learner-personal-data.md) | No learner personal data in the repository | Accepted |
 | [0005](0005-dual-versioning.md) | Dual versioning: software SemVer vs. independent syllabus version | Accepted |
+| [0006](0006-multi-program-repository.md) | Multi-program repository with per-programme corpora | Accepted |
+| [0007](0007-authored-learning-content.md) | Authored learning content with a review lifecycle | Accepted |
 
-These five ADRs satisfy requirement **TR-05** in
+ADRs 0001–0005 satisfy requirement **TR-05** in
 `docs/requirements/register.md` ("Architecture documentation and ADRs...
 at least five Architecture Decision Records... each listing rejected
 alternatives"), tracked under GitHub issue **#8**.

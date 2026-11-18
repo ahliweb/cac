@@ -114,6 +114,14 @@ Never commit a `data/` file for a shape that has no corresponding schema.
   the expected changelog impact (§14.2 rule 8).
 - Any curriculum content change requires a **changeset**
   (`docs/development/releasing.md`).
+- **Authored content** (learner modules, draft programme syllabi) is a
+  separate class with its own rules — ADR-0007. It is never mixed into a
+  transcribed corpus, stays visibly marked `DRAF` until approved, and an
+  AI agent **never** sets a module or draft syllabus to `disetujui` or
+  records an approval the owner did not give.
+- **Multiple programmes** — ADR-0006. A programme whose source syllabus
+  is still a draft gets no `data/<program>/` directory and no registry
+  entry until the owner approves that syllabus.
 
 ## Privacy
 
