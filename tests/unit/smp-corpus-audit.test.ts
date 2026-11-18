@@ -441,7 +441,7 @@ describe("smp schemas", () => {
     ...over,
   });
   const cpFile = (over: Json = {}) => ({
-    syllabusVersion: "1.0.0",
+    syllabusVersion: "1.1.0",
     syllabusDate: "2026-11-19",
     sourceSection: "bagian 1",
     quotes: [quote()],

@@ -1,9 +1,9 @@
-# Silabus Pembelajaran Coding SMP — v1.0
+# Silabus Pembelajaran Coding SMP — v1.1
 
-- **Version:** v1.0.0
+- **Version:** v1.1.0
 - **Last updated:** 2026-11-19
 - **Status:** DISETUJUI pemilik program, 2026-11-19 — beserta semua rekomendasi penyusun (bagian 10; keputusan lewat dialog pilihan, dicatat di issue #129). Modul pembelajaran di `content/smp-coding/` dan modul pendamping tidak termasuk persetujuan ini.
-- **Changeset:** Silabus v1.0 disetujui pemilik (2026-11-19) beserta rekomendasi penyusun: satu jalur inti blok ke pseudocode, Python hanya pengayaan di luar CP, CP KKA Fase D untuk materi AI kelas 9, klub OSN opsional, tanpa akun murid; butir Literasi Digital yang belum tercakup ditutup lewat modul pendamping (pekerjaan lanjutan); issue #129. Isi rencana sama dengan draf v0.2; yang berubah hanya status, bagian 10, changelog, dan satu koreksi hitungan di bagian 4 (`DK-BK-c`: 32 menjadi 31 minggu lain).
+- **Changeset:** Silabus v1.1 disetujui pemilik (2026-11-19, keputusan di issue #139): bagian 7.1 "Kebijakan penggunaan AI" ditambah (pemakaian AI generatif oleh murid SMP tetap demonstrasi guru, tanpa akun murid; asesmen tanpa AI); butir "mengalihkan pekerjaan berpikir ke AI" ditambah di `SMP9-2-M10`, butir data pribadi dan kata sandi tidak ditempel ke layanan AI di `SMP8-2-M11`, energi dan biaya komputasi sebagai butir singkat dengan ketidakpastian; kode butir CP dan struktur 84 minggu tidak berubah. Sebelumnya: silabus v1.0 disetujui pemilik (2026-11-19) beserta rekomendasi penyusun: satu jalur inti blok ke pseudocode, Python hanya pengayaan di luar CP, CP KKA Fase D untuk materi AI kelas 9, klub OSN opsional, tanpa akun murid; butir Literasi Digital yang belum tercakup ditutup lewat modul pendamping (pekerjaan lanjutan); issue #129. Isi rencana sama dengan draf v0.2; yang berubah hanya status, bagian 10, changelog, dan satu koreksi hitungan di bagian 4 (`DK-BK-c`: 32 menjadi 31 minggu lain).
 
 > **Disetujui pemilik program pada 2026-11-19** (v1.0; keputusan lewat
 > dialog pilihan, dicatat di issue #129, bagian 10). Dokumen ini konten
@@ -261,7 +261,7 @@ demonstrasi). "Unplugged" berarti kegiatan tanpa komputer tersedia. Alat:
 | SMP8-2-M8 | Daftar (list) | Python | Program daftar belanja | DK-BK-c* |
 | SMP8-2-M9 | Fungsi | Python | Program dengan dua fungsi | DK-BK-c* |
 | SMP8-2-M10 | Membaca pesan galat dan debugging | Python | Lima program bergalat diperbaiki | D-BK-a |
-| SMP8-2-M11 | Kata sandi, akun, dan keamanan diri | - (unplugged) | Kartu praktik aman; simulasi sandi kuat | D-LD-m, D-LD-p |
+| SMP8-2-M11 | Kata sandi, akun, dan keamanan diri; data pribadi dan kata sandi tidak ditempel ke layanan AI | - (unplugged) | Kartu praktik aman; simulasi sandi kuat | D-LD-m, D-LD-p |
 | SMP8-2-M12 | Informasi publik dan privat di media sosial | - (unplugged) | Sortir kartu: bagikan, jangan bagikan | D-LD-d, D-LD-o |
 | SMP8-2-M13 | Proyek mini: kuis teks atau gambar | Python | Satu program | DK-BK-c*, DK-BK-b |
 | SMP8-2-M14 | Asesmen dan refleksi | Python | Tugas praktik dan jurnal | DK-BK-c*, D-BK-a |
@@ -300,7 +300,7 @@ demonstrasi). "Unplugged" berarti kegiatan tanpa komputer tersedia. Alat:
 | SMP9-2-M7 | Laporan dan presentasi | Dokumen | Laporan dan presentasi | DK-LD-a, D-LD-i, D-LD-e |
 | SMP9-2-M8 | Pengantar kecerdasan artifisial: penginderaan dan sensor | - (unplugged) | Permainan klasifikasi dengan kartu | DK-EA-b |
 | SMP9-2-M9 | Mesin belajar dari contoh dan kualitas data | - (unplugged) | "Melatih" model kartu dan mengujinya | DK-EA-c |
-| SMP9-2-M10 | Etika AI: keliru, bias, halusinasi, tiruan palsu (deep fake), ketergantungan | - (unplugged) | Debat terarah; aturan pakai AI kelas | DK-EA-e, DK-EA-f, DK-EA-g |
+| SMP9-2-M10 | Etika AI: keliru, bias, halusinasi, tiruan palsu (deep fake), ketergantungan, mengalihkan pekerjaan berpikir ke AI | - (unplugged) | Debat terarah; aturan pakai AI kelas (bagian 7.1) | DK-EA-e, DK-EA-f, DK-EA-g |
 | SMP9-2-M11 | Jembatan ke SMA: membaca kode bahasa lain | Python dan teks | Terjemahan satu program Python ke pseudocode dan C++ (hanya dibaca) | D-BK-e, DK-BK-c* |
 | SMP9-2-M12 | Pameran produk | - | Pameran kelas | DK-LD-a, D-LD-i |
 | SMP9-2-M13 | Portofolio dan refleksi | - | Portofolio berkas murid sendiri | DK-LD-a, D-LD-i |
@@ -439,18 +439,55 @@ SMP.
   lokasi. SKB tujuh menteri tentang teknologi digital dan AI (disebut di
   berita, 12 Maret 2026) mengatur kesiapan usia dan durasi pemakaian; teksnya
   belum dibuka `[belum terverifikasi]`.
-- **Etika AI** (mengikuti pernyataan pejabat bahwa AI adalah alat dan murid
-  tetap menyelesaikan tugas sendiri, `riset.md` bagian 3): alat AI generatif
-  **tidak dipakai murid** untuk menulis tugas; aturan pakai AI kelas ditulis
-  bersama pada `SMP9-2-M10`; pembahasan keluaran yang salah, bias, halusinasi,
-  tiruan palsu (*deep fake*), dan ketergantungan dilakukan tanpa perangkat.
-  Ini selaras dengan CP KKA Fase D: KA "adalah sebagai alat bantu sehingga
-  manusia tidak boleh tergantung dan percaya sepenuhnya pada KA" dan murid
-  "menganalisis konten deep fake" (bagian 1.3). Butir `DK-PA-a` dan `DK-PA-b`
-  (menggunakan perangkat KA) sengaja belum dicakup; mengakomodasinya butuh
-  keputusan tentang alat KA yang aman bagi murid (Q11).
+- **Etika AI**: ketentuan lengkap ada di bagian 7.1. Ringkasnya, alat AI
+  generatif **tidak dipakai langsung oleh murid**; pembahasan keluaran yang
+  salah, bias, halusinasi, tiruan palsu (*deep fake*), dan ketergantungan
+  dilakukan tanpa perangkat, selaras dengan CP KKA Fase D (bagian 1.3). Butir
+  `DK-PA-a` dan `DK-PA-b` (menggunakan perangkat KA) tetap tidak dicakup
+  dan hanya didemonstrasikan guru (Q11).
 - **Kode yang dijalankan**: contoh kode yang kelak masuk modul hanya dijalankan
   di peramban atau mesin sekolah dan tidak mengirim data keluar.
+
+### 7.1 Kebijakan penggunaan AI (v1.1, keputusan pemilik 2026-11-19, issue #139)
+
+Kebijakan ini disusun **khusus untuk program `smp-coding`** (bukan kerangka
+lintas program) dan melengkapi ketentuan privasi di atas. Landasan bukti ada di
+`docs/riset/ai-rekayasa-perangkat-lunak.md`; bukti tentang pelajar SMP
+`[inferensi]` karena tidak ada bukti dari Indonesia.
+
+1. **Demonstrasi guru, tanpa akun murid.** Layanan AI generatif hanya
+   didemonstrasikan guru di layar kelas, dengan akun guru atau sekolah dan
+   masukan yang disiapkan guru. Murid tidak membuat akun dan tidak memakai
+   layanan AI generatif langsung untuk mengerjakan tugas. Ini berbeda dari
+   program `sma-coding`, tempat murid boleh memakai AI dengan etika.
+2. **Alasan usia dan ketentuan layanan.** Murid SMP berusia sekitar 12-15
+   tahun; ketentuan banyak layanan AI daring mensyaratkan usia minimum atau
+   persetujuan orang tua `[belum terverifikasi]` per layanan, dan teks SKB
+   tujuh menteri tentang teknologi digital dan AI belum dibuka (bagian 7).
+   Karena itu pemakaian langsung oleh murid ditunda sampai syarat itu
+   diverifikasi (Q11).
+3. **Etika.** Selaras dengan CP KKA Fase D, KA adalah alat bantu: manusia
+   tidak boleh tergantung dan percaya sepenuhnya pada KA (bagian 1.3).
+   Dibahas tanpa perangkat di `SMP9-2-M10`: keluaran bisa keliru, bias, atau
+   mengarang (halusinasi); tiruan palsu (*deep fake*); dan **mengalihkan
+   pekerjaan berpikir ke AI** (*offloading*) versus belajar, dengan contoh dari
+   bukti penelitian (mis. pelajar yang memakai AI tanpa pagar belajar kurang
+   dari yang berlatih sendiri `[B]`) yang disajikan guru sebagai bukti awal,
+   bukan fakta pasti. Hasil pembahasan menjadi aturan pakai AI kelas yang
+   ditulis bersama.
+4. **Privasi.** Data pribadi (nama lengkap, sekolah, alamat, foto, nomor
+   telepon) dan kata sandi tidak pernah ditempel ke layanan AI, juga pada
+   demonstrasi guru; dibahas di `SMP8-2-M11`. Data murid tetap tidak masuk
+   repositori (ADR-0004).
+5. **Asesmen tanpa AI.** Tugas praktik, kuis, dan asesmen akhir (bagian 6)
+   dikerjakan murid sendiri tanpa layanan AI; karya sendiri dikerjakan sendiri.
+6. **Energi dan biaya komputasi (butir singkat).** Pada `SMP9-2-M10` guru
+   menyebut sekilas bahwa menjalankan model AI memakai listrik dan biaya
+   komputasi; besarnya bergantung pada model dan layanan serta **tidak pasti**,
+   sehingga tidak ada angka yang diajarkan sebagai fakta.
+
+Kebijakan ini ditinjau ulang bersama dokumen riset (tiap 6 bulan) dan bila
+syarat usia layanan diverifikasi.
 
 ## 8. Kebutuhan sarana `[asumsi]`
 
@@ -518,7 +555,7 @@ bawah memuat keputusan yang berlaku.
 | Q8 | Keselarasan dengan `sd-coding` | Disamakan setelah kedua silabus disetujui; belum dilakukan di v1.0. |
 | Q9 | Materi KA di kelas 9 | CP KKA Fase D menjadi dasar materi KA kelas 9: tiga minggu unplugged (`SMP9-2-M8` sampai `M10`) tetap rencana v1.0. Perluasan untuk `DK-EA-a` dan `DK-EA-d` (kegiatan di minggu yang ada atau minggu cadangan) adalah pekerjaan lanjutan; rencana mingguan v1.0 tidak diubah dan kedua butir tetap tercatat belum dicakup. |
 | Q10 | Butir Literasi Digital di luar coding (`D-LD-a`, `c`, `h`, `k`, `l`, `n`, `q`) | Ditutup lewat modul pendamping, seperti sma-coding. Modul itu **pekerjaan lanjutan dan belum dibuat**; sampai ada, butir-butir itu tercatat belum dicakup di `data/smp-coding/uncovered.json`. |
-| Q11 | Butir `DK-PA-a` dan `DK-PA-b` | Tidak dicakup; hanya didemonstrasikan guru sampai kebijakan privasi alat KA dikaji. |
+| Q11 | Butir `DK-PA-a` dan `DK-PA-b` | Tidak dicakup; hanya didemonstrasikan guru sampai kebijakan privasi alat KA dikaji. Ditegaskan 2026-11-19 (issue #139): pemakaian AI generatif oleh murid SMP tetap demonstrasi guru, tanpa akun murid (bagian 7.1). |
 
 ## 11. Sumber dan batasan
 
@@ -534,6 +571,7 @@ bawah memuat keputusan yang berlaku.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v1.1.0 | 2026-11-19 | Disetujui pemilik lewat keputusan di issue #139 (usulan U-06 dengan opsi rekomendasi): bagian 7.1 "Kebijakan penggunaan AI" ditambah (demonstrasi guru tanpa akun murid, alasan usia dan ketentuan layanan, etika, privasi, asesmen tanpa AI, energi dan biaya komputasi sebagai butir singkat berketidakpastian); `SMP9-2-M10` ditambah butir mengalihkan pekerjaan berpikir ke AI; `SMP8-2-M11` ditambah butir data pribadi dan kata sandi tidak ditempel ke layanan AI; bullet etika AI bagian 7 dan Q11 diselaraskan. Kode butir CP, struktur, 84 minggu, pemetaan, dan jembatan tidak berubah. |
 | v1.0.0 | 2026-11-19 | Disetujui pemilik beserta semua rekomendasi penyusun; bagian 10 menjadi catatan keputusan (opsi rekomendasi untuk Q1-Q11); status, banner, dan catatan modul pendamping diperbarui; rencana mingguan, pemetaan CP, dan jembatan tidak diubah dari v0.2 kecuali satu koreksi hitungan: pada bagian 4 baris `DK-BK-c`, "dan 32 minggu lain" menjadi "dan 31 minggu lain" (rencana bagian 3 memuat `DK-BK-c` di 36 minggu, 5 disebut dan 31 lainnya; selisih satu ditemukan audit corpus saat di-encode); pemilik perlu mengetahui koreksi ini (issue #129). |
 | v0.2.0 | 2026-11-19 | Kutipan dan kode butir CP diganti dengan teks resmi: CP Informatika Fase D dari Panduan 2025 (elemen BK dan LD) dan CP Koding dan KA Fase D dari SK 046/H/KR/2025; pemetaan CP disusun ulang; pemrograman teks, kodifikasi biner, dan klub ditandai pengayaan di luar CP; pertanyaan Q1, Q3, Q7, Q9 diperbarui, Q10 dan Q11 ditambah (issue #129). |
 | v0.1.0 | 2026-11-19 | Draf awal (issue #129), memakai CP dari dokumen ATP buatan guru. |

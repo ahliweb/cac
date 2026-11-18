@@ -60,7 +60,7 @@ describe("smp-coding fidelity: data/smp-coding vs. the approved silabus", () => 
 
   test("the registry entry exists and carries the document's version and date", () => {
     expect(smpEntry).toBeDefined();
-    expect(smpEntry?.syllabusVersion).toBe("1.0.0");
+    expect(smpEntry?.syllabusVersion).toBe("1.1.0");
     expect(smpEntry?.syllabusDate).toBe("2026-11-19");
     expect(registry.programs.find((p) => p.id === "smp-coding")).toMatchObject({
       sourceDocument: "docs/programs/smp-coding/silabus.md",
@@ -102,6 +102,24 @@ describe("smp-coding fidelity: drift fails hard", () => {
     expect(problems).toHaveLength(1);
     expect(problems[0]?.context).toBe("weeks.json.weeks[SMP7-1-M6].topic");
     expect(problems[0]?.actual).toContain("diperbaiki diam-diam");
+  });
+
+  test("the v1.1 AI items (SMP9-2-M10, SMP8-2-M11) cannot be dropped silently from the data", () => {
+    const files = load();
+    const m10 = files["weeks.json"].weeks.find((w: Json) => w.id === "SMP9-2-M10");
+    const m11 = files["weeks.json"].weeks.find((w: Json) => w.id === "SMP8-2-M11");
+    expect(m10.topic).toContain("mengalihkan pekerjaan berpikir ke AI");
+    expect(m11.topic).toContain("tidak ditempel ke layanan AI");
+    m10.topic = m10.topic.replace(", mengalihkan pekerjaan berpikir ke AI", "");
+    m11.topic = m11.topic.replace("; data pribadi dan kata sandi tidak ditempel ke layanan AI", "");
+    const contexts = checkSmpFidelity(markdown, files, smpEntry).map((p) => p.context);
+    expect(contexts).toContain("weeks.json.weeks[SMP9-2-M10].topic");
+    expect(contexts).toContain("weeks.json.weeks[SMP8-2-M11].topic");
+  });
+
+  test("the silabus keeps the AI policy section (7.1)", () => {
+    expect(markdown).toContain("### 7.1 Kebijakan penggunaan AI");
+    expect(markdown).toContain("Demonstrasi guru, tanpa akun murid");
   });
 
   test("a Python overlap silently promoted to coverage is reported", () => {
@@ -186,9 +204,9 @@ describe("smp-coding fidelity: the document must keep the statements the data re
         markdown.replace("Ditutup lewat modul pendamping", "Ditutup lewat Informatika"),
       ),
     ).toThrow("Q10 no longer decides on a modul pendamping");
-    expect(() => expectedCorpus(markdown.replace("hanya didemonstrasikan guru", "bebas"))).toThrow(
-      "Q11 no longer decides on a teacher demonstration",
-    );
+    expect(() =>
+      expectedCorpus(markdown.replaceAll("hanya didemonstrasikan guru", "bebas")),
+    ).toThrow("Q11 no longer decides on a teacher demonstration");
     expect(() => expectedCorpus(markdown.replace("| Q11 |", "| Q99 |"))).toThrow(
       "bagian 10 has no decision row Q11",
     );
