@@ -151,6 +151,24 @@ under `src/` or `data/`:
   schema importing from `src/domain/`, is an architecture violation
   regardless of how convenient it looks locally.
 
+## Direction: more programmes and learner material
+
+Two decisions accepted on 2026-11-18 extend this architecture; their
+implementation is tracked in milestones M7–M9 (issues #49–#55) and this
+overview describes the current single-programme state until those land:
+
+- **ADR-0006** — the repository becomes multi-programme: a programme
+  registry, one corpus per programme under `data/<program>/`, and a
+  `--program` selector on the CLI. The first additional programme is a
+  coding programme for senior high schools (SMA), encoded only after its
+  draft syllabus is approved.
+- **ADR-0007** — learner modules are *authored* content, kept apart from
+  the transcribed corpus, and carry a `draf` → `ditinjau` → `disetujui`
+  review lifecycle that only a human can complete.
+
+Neither decision changes the boundaries below: learner sheets and
+modules are rendered Markdown, not an LMS, and no learner data is stored.
+
 ## Out of scope
 
 This repository is curriculum-as-code, not a learning platform. The
