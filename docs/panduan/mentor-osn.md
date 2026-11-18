@@ -344,6 +344,8 @@ runbook bagian 3 dan 4.
 
 ## Bila Anda mengelola program SMA
 
-Perintah di atas (kecuali `render modul`, yang pada `sma-coding` belum punya
-modul) hanya untuk program `osn`. Menambahkan `--program sma-coding` ditolak.
-Lihat [`guru-sma.md`](guru-sma.md).
+Perintah di atas hanya untuk program `osn`, kecuali `plan` dan
+`render lembar-siswa` (yang untuk `sma-coding` memakai `--track` dan kode
+minggu) serta `render modul`. `render weekly`, `render checkpoint`,
+`render sop`, `report`, dan `checklist` dengan `--program sma-coding` ditolak
+(exit 2). Lihat [`guru-sma.md`](guru-sma.md).

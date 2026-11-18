@@ -75,28 +75,135 @@ $ bun run scripts/check-sma-coding-fidelity.ts
 check-sma-coding-fidelity: OK -- every cell of data/sma-coding/*.json matches docs/programs/sma-coding/silabus.md.
 ```
 
+## Rencana per semester dan lembar siswa
+
+Dua perintah menurunkan keluaran **hanya** dari corpus `data/sma-coding/`
+yang lolos validasi (keputusan pemilik 2026-11-18, issue
+[#77](https://github.com/ahliweb/osn/issues/77)).
+
+**Rencana per semester satu jalur:**
+
+```sh
+osn plan --program sma-coding --track A --semester X1
+```
+
+`--track` wajib (`A` atau `B`). `--kelas X|XI|XII` memilih dua semester satu
+kelas, `--semester` memilih satu semester (`X1`, `X2`, `XI1`, `XI2`, `XII1`,
+`XII2`), tanpa keduanya keluar semua enam semester. `--json` memberi data
+yang sama untuk diolah program. Kelas X semester 1 diawali blok fondasi
+bersama `FND-X1-M1..M7` (sama untuk semua jalur), baru minggu jalur M8-M14.
+Tiap minggu memuat kode, topik, tujuan, keluaran, latihan, butir CP yang
+dipetakan, dan jembatan OSN (jalur A) bila ada. Bagian awal keluaran nyata:
+
+```text
+# Rencana Pembelajaran -- Jalur A: Algoritmik dengan C++
+
+Program: Silabus Pembelajaran Coding SMA
+Cakupan: semester X1
+Sumber: silabus versi 1.1.0, tanggal 2026-11-19.
+
+## Semester X1 (kelas X, fase E)
+
+### Blok fondasi bersama (FND-X1-M1..FND-X1-M7): untuk semua murid sebelum memilih jalur
+
+#### FND-X1-M1 -- Komputer dan perangkat keras; model Input-Proses-Output Von Neumann
+
+- **Tujuan:** menyebut fungsi komponen (CPU, memori, penyimpanan, perangkat masukan dan keluaran, papan induk, catu daya); menjelaskan dan menyimulasikan siklus I-P-O komputer Von Neumann; membaca spesifikasi perangkat
+- **Keluaran:** diagram I-P-O beranotasi; lembar spesifikasi komputer lab
+- **Latihan:** kegiatan utama: simulasi I-P-O tanpa komputer (murid berperan CPU, memori, dan perangkat masukan/keluaran menjalankan kartu instruksi sederhana); membaca spesifikasi komputer lab lewat informasi sistem; mengenali komponen dari foto; opsional bila lab menyediakan komponen bekas: mengenali komponen dari komponen bekas (perangkat yang masih dipakai tidak dibongkar)
+- **Butir CP:** E-BK-e (model Input-Process-Output Von Neumann dan peran sistem operasi)
+
+...
+
+### Minggu jalur A
+
+#### A-X1-M8 -- Lingkungan g++, algoritma, pseudocode, diagram alir
+
+- **Tujuan:** mengompilasi program pertama; menulis solusi sederhana dalam pseudocode
+- **Keluaran:** `hello.cpp`; 3 pseudocode
+- **Latihan:** cetak teks; tukar dua nilai; cari nilai terbesar dari tiga
+- **Butir CP:** E-BK-d (solusi program sederhana dalam format pseudocode)
+
+#### A-X1-M9 -- Variabel, tipe data, ekspresi; masukan dan keluaran
+
+- **Tujuan:** memilih tipe (`int`, `long long`, `double`, `char`, `bool`) dan menulis ekspresi; membaca dan menulis data dengan `cin`/`cout`
+- **Keluaran:** program hitung berformat
+- **Latihan:** luas dan keliling; pembagian bulat dan sisa; konversi suhu; rata-rata dua bilangan
+- **Butir CP:** E-BK-d (solusi program sederhana dalam format pseudocode)
+- **Jembatan OSN:** dasar-pemrograman -- sintaks C++, variabel, I/O, percabangan, perulangan, fungsi. Catatan: Sesuai CP.
+
+...
+```
+
+**Lembar siswa satu minggu**, untuk dibagikan atau dicetak:
+
+```sh
+osn render lembar-siswa --program sma-coding --week A-X1-M9 --out lembar-A-X1-M9.md
+```
+
+`--week` berisi kode minggu: minggu jalur (`A-X1-M9`, `B-X2-M3`) atau minggu
+fondasi (`FND-X1-M3`). Kode yang tidak dikenal ditolak dengan exit 2 dan daftar
+contoh kode yang sah. Lembar tidak memuat kolom nama atau sekolah. Bila ada
+modul di `data/sma-coding/modules.json` yang mencantumkan minggu itu, id,
+judul, dan statusnya ikut disebut; modul yang belum disetujui diberi tanda
+**DRAF**. Keluaran nyata untuk `A-X1-M9`:
+
+```text
+# Lembar Belajar Siswa -- Minggu A-X1-M9
+
+**Kode minggu:** A-X1-M9
+
+**Posisi:** Jalur A -- Algoritmik dengan C++ (kelas X, semester X1, minggu 9)
+
+**Topik:** Variabel, tipe data, ekspresi; masukan dan keluaran
+
+## Tujuan
+memilih tipe (`int`, `long long`, `double`, `char`, `bool`) dan menulis ekspresi; membaca dan menulis data dengan `cin`/`cout`
+
+## Keluaran
+program hitung berformat
+
+## Latihan dan kegiatan
+luas dan keliling; pembagian bulat dan sisa; konversi suhu; rata-rata dua bilangan
+
+## Butir CP terkait
+- E-BK-d: solusi program sederhana dalam format pseudocode
+
+**Kutipan CP, Berpikir Komputasional (Fase E):**
+
+> Pada akhir fase E, murid mampu memahami konsep struktur data dan algoritma standar; menerapkan proses komputasi yang dilakukan manusia secara mandiri atau berkelompok untuk mendapatkan data yang berkualitas; menerapkan algoritma dan struktur data standar untuk menghasilkan berbagai solusi dalam menyelesaikan persoalan; menuliskan solusi rancangan program sederhana dalam format pseudocode yang dekat dengan bahasa komputer; memahami model dan menyimulasikan dinamika Input-Process-Output dalam sebuah komputer Von Neumann, serta memahami peran sistem operasi.
+
+## Jembatan ke OSN
+- dasar-pemrograman: sintaks C++, variabel, I/O, percabangan, perulangan, fungsi. Catatan: Sesuai CP.
+
+## Daftar periksa mandiri
+- [ ] memilih tipe (`int`, `long long`, `double`, `char`, `bool`) dan menulis ekspresi
+- [ ] membaca dan menulis data dengan `cin`/`cout`
+- [ ] Keluaran selesai: program hitung berformat
+
+---
+Sumber: Silabus Pembelajaran Coding SMA, versi 1.1.0, tanggal 2026-11-19.
+```
+
 ## Yang BELUM didukung alat
 
-`plan`, `render` (kecuali `render modul`), `report`, dan `checklist` membaca
-corpus OSN saja. Bila diberi `--program sma-coding`, semuanya menolak dengan
-exit 2 supaya data OSN tidak tampil seolah-olah data program SMA. Dukungannya
-dilacak di issue [#77](https://github.com/ahliweb/osn/issues/77). Contoh
-(semua exit 2):
+`render weekly`, `render checkpoint`, `render sop`, `report`, dan `checklist`
+membaca corpus OSN saja. Bila diberi `--program sma-coding`, semuanya menolak
+dengan exit 2 supaya data OSN tidak tampil seolah-olah data program SMA
+(keputusan pemilik 2026-11-18: perintah-perintah ini memang tidak didukung
+untuk program ini). Contoh (exit 2):
 
 ```sh
 osn render weekly --week 1 --program sma-coding
 ```
 
 ```text
-osn render weekly: belum didukung untuk program sma-coding: perintah ini membaca corpus OSN (program "osn") saja dan tidak akan menyajikannya sebagai data sma-coding. Gunakan "osn validate --program sma-coding" untuk memvalidasi corpus program ini.
+osn render weekly: belum didukung untuk program sma-coding: perintah ini membaca corpus OSN (program "osn") saja dan tidak akan menyajikannya sebagai data sma-coding. Gunakan "osn validate --program sma-coding" untuk memvalidasi corpus program ini. Perintah yang didukung untuk program sma-coding: "osn plan --track <jalur>", "osn render lembar-siswa --week <kode-minggu>" dan "osn render modul --id <id>".
 ```
 
-Hal serupa berlaku untuk `osn plan --start 2027-01-11 --program sma-coding`,
-`osn render sop`, `osn render checkpoint`, `osn render lembar-siswa`,
-`osn report` dan `osn checklist` dengan `--program sma-coding`. Program ini
-punya perintah baca modul, tetapi selama `data/sma-coding/modules.json`
-belum ada, `osn render modul --id <id> --program sma-coding` exit 2 dengan
-pesan `this programme has no modules.json`.
+Program ini punya perintah baca modul, tetapi selama
+`data/sma-coding/modules.json` belum ada, `osn render modul --id <id> --program
+sma-coding` exit 2 dengan pesan `this programme has no modules.json`.
 
 Setelah sebuah modul diindeks, bacalah dengan:
 

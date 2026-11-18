@@ -102,12 +102,13 @@ export async function loadOsnTopicFamilyIds(
 }
 
 /**
- * Corpus-reading commands other than `validate` (`plan`, `render`
- * weekly/checkpoint/sop/lembar-siswa, `report`, `checklist`) read the OSN
- * corpus through static imports. For any other programme they must refuse
- * rather than silently present OSN data as that programme's (issue #52):
- * returns the exit code (2) after writing the message, or `undefined` when
- * the programme is the OSN one and the command may proceed.
+ * Corpus-reading commands that only read the OSN corpus through static
+ * imports (`render weekly/checkpoint/sop`, `report`, `checklist`; `plan`
+ * and `render lembar-siswa` too, for any programme but `sma-coding`, which
+ * has its own branches since issue #77). For any other programme they must
+ * refuse rather than silently present OSN data as that programme's (issue
+ * #52): returns the exit code (2) after writing the message, or `undefined`
+ * when the programme is the OSN one and the command may proceed.
  */
 export function rejectNonOsnProgram(
   commandName: string,
@@ -120,7 +121,7 @@ export function rejectNonOsnProgram(
   ctx.stderr(
     `osn ${commandName}: belum didukung untuk program ${program.id}: perintah ini membaca corpus OSN ` +
       `(program "${DEFAULT_PROGRAM_ID}") saja dan tidak akan menyajikannya sebagai data ${program.id}. ` +
-      `Gunakan "osn validate --program ${program.id}" untuk memvalidasi corpus program ini.\n`,
+      `Gunakan "osn validate --program ${program.id}" untuk memvalidasi corpus program ini. Perintah yang didukung untuk program ${program.id}: "osn plan --track <jalur>", "osn render lembar-siswa --week <kode-minggu>" dan "osn render modul --id <id>".\n`,
   );
   return EXIT_USAGE_ERROR;
 }

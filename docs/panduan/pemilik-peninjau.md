@@ -194,7 +194,7 @@ keadaan terkini. Cara membacanya:
 | #106 | Skema indeks modul sma-coding (`src/schema/sma-module.ts`) belum dikerjakan | Pekerjaan teknis; menjadi syarat masuknya modul sma-coding ke repositori |
 | #107 | Modul materi blok fondasi kelas X (`FND-X1-M1..M7`) | Draf menunggu #106; kelak ditinjau per modul |
 | #105 | Celah butir CP F-LD-d dan F-LD-e untuk jalur A | Penilaian dan keputusan opsi |
-| #77 | Dukungan `plan`, `render`, `checklist` untuk program sma-coding | Pekerjaan teknis (perintah itu masih keluar dengan kode 2 untuk `sma-coding`) |
+| #77 | Dukungan `plan` dan `render lembar-siswa` untuk program sma-coding | Pekerjaan teknis, sudah dikerjakan (keputusan pemilik 2026-11-18: `weekly`, `checkpoint`, `sop`, `report`, `checklist` tetap menolak) |
 
 Silabus v1.1 (#92) sudah Anda setujui 2026-11-19 dan issue-nya tertutup;
 kandidat tinjauan Anda yang lain ada di `docs/programs/sma-coding/` (draf

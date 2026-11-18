@@ -16,11 +16,13 @@ import { renderModule } from "../../render/module";
 import { renderSopCard } from "../../render/sop";
 import { renderStudentSheet } from "../../render/student-sheet";
 import { renderWeeklyPlan } from "../../render/weekly";
+import { SMA_CODING_PROGRAM_ID } from "../../schema/sma-common";
 import type { Command } from "../command";
 import { EXIT_SUCCESS, EXIT_USAGE_ERROR } from "../command";
 import { loadModule } from "../module-content";
 import { writeOutputFile } from "../output-writer";
 import { REPO_ROOT, rejectNonOsnProgram, resolveProgramOption } from "../program-loader";
+import { buildSmaLembarSiswa } from "../sma-commands";
 
 const SUBCOMMANDS = ["weekly", "checkpoint", "sop", "lembar-siswa", "modul"] as const;
 type RenderSubcommand = (typeof SUBCOMMANDS)[number];
@@ -50,10 +52,14 @@ Usage:
   osn render checkpoint --number <1-7> [--out <path>] [--force]
   osn render sop [--out <path>] [--force]
   osn render lembar-siswa --week <1-28> [--out <path>] [--force]
+  osn render lembar-siswa --program sma-coding --week <week-code> [--out <path>] [--force]
   osn render modul --id <module-id> [--out <path>] [--force]
 
 Options:
   --week <n>      Week number, 1-28. Required for "weekly" and "lembar-siswa".
+                  For sma-coding, "lembar-siswa" takes a week code instead
+                  (A-X1-M9, B-X2-M3, or a foundation week FND-X1-M3); an
+                  unknown code exits 2 listing valid examples.
   --number <n>    Checkpoint number, 1-7. Required for "checkpoint".
   --id <id>       Module id from the programme's modules.json. Required for "modul".
   --out <path>    Write the rendered Markdown to this path instead of
@@ -62,15 +68,18 @@ Options:
                   existing file at --out is left byte-for-byte untouched
                   and the command exits 2.
   --program <id>  Programme whose corpus to use (a registered id; default osn).
-                  Only "modul" accepts another programme; the other
-                  subcommands exit 2 for any programme but osn.
+                  sma-coding supports "lembar-siswa" (a sheet per week of a
+                  track or of the foundation block, derived only from its
+                  validated corpus) and "modul"; "weekly", "checkpoint" and
+                  "sop" exit 2 for any programme but osn.
   -h, --help      Show this help.
 
 Exit codes:
   0   success.
+  1   the sma-coding corpus fails validation (run osn validate).
   2   usage error: missing/unknown subcommand, a missing required flag
-      (--week/--number/--id), --week/--number outside its valid range, an
-      unknown or unreadable module, or
+      (--week/--number/--id), --week/--number outside its valid range (or an
+      unknown sma-coding week code), an unknown or unreadable module, or
       --out already exists without --force, or an unknown --program.`;
 
 /** Extracts the value following the first occurrence of `flag` in `args`, or `undefined` if `flag` is absent (or has nothing after it). */
@@ -115,8 +124,10 @@ export const renderCommand: Command = {
       return EXIT_USAGE_ERROR;
     }
 
-    // Only "modul" reads the programme's own corpus directory; every other subcommand reads the OSN corpus.
-    if (subcommand !== "modul") {
+    // "modul" reads the programme's own corpus directory, and so does "lembar-siswa" for
+    // sma-coding (issue #77); every other subcommand reads the OSN corpus.
+    const smaSheet = subcommand === "lembar-siswa" && resolved.program.id === SMA_CODING_PROGRAM_ID;
+    if (subcommand !== "modul" && !smaSheet) {
       const unsupported = rejectNonOsnProgram(`render ${subcommand}`, resolved.program, ctx);
       if (unsupported !== undefined) {
         return unsupported;
@@ -126,7 +137,13 @@ export const renderCommand: Command = {
     const rest = args.slice(1);
     let content: string;
 
-    if (subcommand === "weekly" || subcommand === "lembar-siswa") {
+    if (smaSheet) {
+      const built = await buildSmaLembarSiswa(readFlagValue(rest, "--week"), ctx, resolved.program);
+      if (!built.ok) {
+        return built.exitCode;
+      }
+      content = built.content;
+    } else if (subcommand === "weekly" || subcommand === "lembar-siswa") {
       const weekRaw = readFlagValue(rest, "--week");
       if (weekRaw === undefined) {
         ctx.stderr(`osn render ${subcommand}: --week <1-28> is required.\n`);

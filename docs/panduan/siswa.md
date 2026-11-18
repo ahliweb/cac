@@ -57,6 +57,52 @@ Kalau kamu sendiri punya terminal dan repositori ini, perintahnya
 `bun run src/cli/index.ts render lembar-siswa --week 4` (lihat
 [`mulai-cepat.md`](mulai-cepat.md)).
 
+## Lembar belajar program coding SMA
+
+Kalau kamu belajar lewat silabus coding SMA (`sma-coding`), lembarmu dibuat
+per minggu dengan kode minggu, misalnya `A-X1-M9` (jalur A, kelas X, semester
+1, minggu 9) atau `FND-X1-M3` (blok fondasi bersama kelas X, sebelum memilih
+jalur). Gurumu menjalankan
+`osn render lembar-siswa --program sma-coding --week <kode-minggu>`. Isinya:
+topik, **Tujuan**, **Keluaran**, **Latihan dan kegiatan**, **Butir CP terkait**
+(beserta kutipan Capaian Pembelajaran-nya), **Jembatan ke OSN** (kalau ada),
+**Modul pendamping** (kalau ada; modul bertanda **DRAF** belum ditinjau
+manusia, jadi periksa lagi ke rujukan resminya), dan **Daftar periksa mandiri**
+berisi kotak kosong. Cara memakainya sama dengan lembar OSN di atas. Lembar ini
+juga tanpa kolom nama. Cuplikan nyata lembar `FND-X1-M3`:
+
+```text
+# Lembar Belajar Siswa -- Minggu FND-X1-M3
+
+**Kode minggu:** FND-X1-M3
+
+**Posisi:** Blok fondasi bersama, untuk semua murid sebelum memilih jalur (kelas X, semester X1, minggu 3)
+
+**Topik:** Representasi data: biner, heksadesimal, teks, gambar sederhana
+
+## Tujuan
+mengonversi bilangan desimal, biner, dan heksadesimal; menjelaskan bit dan byte; menjelaskan bahwa teks disimpan sebagai kode karakter; menjelaskan gambar sebagai kisi piksel dan warna sebagai komponen merah-hijau-biru
+
+## Keluaran
+tabel konversi; lembar kode karakter; gambar 8x8 dalam bentuk deret bit
+
+## Latihan dan kegiatan
+konversi manual dengan lembar kerja; menyandikan kata fiktif dengan tabel kode karakter; menggambar gambar 8x8 hitam-putih di kertas kotak lalu menuliskannya sebagai deret bit; memilih warna dan membaca kode heksadesimalnya di aplikasi gambar
+
+## Butir CP terkait
+Tidak ada butir CP yang dipetakan ke minggu ini dalam pemetaan silabus.
+
+## Daftar periksa mandiri
+- [ ] mengonversi bilangan desimal, biner, dan heksadesimal
+- [ ] menjelaskan bit dan byte
+- [ ] menjelaskan bahwa teks disimpan sebagai kode karakter
+- [ ] menjelaskan gambar sebagai kisi piksel dan warna sebagai komponen merah-hijau-biru
+- [ ] Keluaran selesai: tabel konversi; lembar kode karakter; gambar 8x8 dalam bentuk deret bit
+
+---
+Sumber: Silabus Pembelajaran Coding SMA, versi 1.1.0, tanggal 2026-11-19.
+```
+
 ## Modul materi
 
 Modul adalah bacaan lebih panjang: penjelasan, contoh kode C++, dan latihan
