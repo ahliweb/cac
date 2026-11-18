@@ -190,6 +190,19 @@ check:requirements`), `check-checklist-fidelity.ts` (backs `bun run
 check:checklist-fidelity`) and `check-module-code.ts` (backs `bun run
 check:module-code`).
 
+## `docs/programs/`
+
+**What belongs here:** one folder per programme other than OSN, named by
+programme id (ADR-0006), holding that programme's source document. A
+source document that the owner has not yet approved is authored content
+and stays marked `DRAF` (ADR-0007). Today: `sma-coding/` — the draft
+syllabus for the senior-high-school coding programme (`README.md`,
+`silabus-draf.md`).
+
+**What must never go here:** machine-readable data (belongs in
+`data/<program>/`, and only after the source is approved); learner data;
+an approval the owner did not give.
+
 ## `docs/silabus/`
 
 **What belongs here:** the faithful Markdown transcription of the source

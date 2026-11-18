@@ -33,6 +33,7 @@ Tables, not prose — drift should be visible at a glance.
 | `docs/operations/` | Operational runbook and syllabus-check procedure. |
 | `docs/silabus/` | Faithful Markdown transcription of the source syllabus PDF. |
 | `docs/*.pdf` | The source syllabus document. |
+| `docs/programs/` | Source documents of other programmes, one folder per programme id (ADR-0006). `docs/programs/sma-coding/` holds the SMA coding syllabus **draft** (authored, `DRAF`, ADR-0007) — not yet a data source. |
 | `.changeset/` | Pending changesets — one Markdown file per user-visible change. |
 | `.github/workflows/` | CI pipeline. |
 | `.github/ISSUE_TEMPLATE/` | Bug / feature / curriculum-change issue forms. |

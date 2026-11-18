@@ -19,7 +19,7 @@ Kurikulum Merdeka, dengan dua jalur:
 
 | Jalur | Isi | Peran |
 | --- | --- | --- |
-| A | Algoritmik dengan C++ | Selaras dengan, dan menjadi jembatan ke, pembinaan OSN Informatika (rumpun materi di `data/topic-families.json`). |
+| A | Algoritmik dengan C++ | Selaras dengan, dan menjadi jembatan ke, pembinaan OSN Informatika (rumpun materi di `data/osn/topic-families.json`). |
 | B | Pengembangan web dengan JavaScript + TypeScript, runtime Bun, dan template publik `ahliweb/awcms-one` (MIT) | Keterampilan membangun produk digital, berujung pada kustomisasi template. |
 
 Keputusan pemilik tertanggal 2026-11-18 (issue #49 dan #51) mengikat

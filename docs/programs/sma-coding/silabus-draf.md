@@ -474,7 +474,7 @@ Apakah lingkup ini sesuai keinginan pemilik adalah pertanyaan terbuka
 
 ## 5. Jembatan ke OSN (jalur A)
 
-ID rumpun diambil dari `data/topic-families.json` (silabus OSN v2.0).
+ID rumpun diambil dari `data/osn/topic-families.json` (silabus OSN v2.0).
 Pemetaan ini penilaian penyusun, bukan bagian dari data OSN. Topik di luar
 rumusan CP ditandai **P** (pengayaan, melampaui CP).
 
@@ -634,7 +634,7 @@ Skor ini penilaian penyusun, bukan pengukuran.
 | Keputusan Kepala BSKAP Nomor 046/H/KR/2025 tentang Capaian Pembelajaran (PAUD, SD, SMP, SMA) | `[belum terverifikasi]`; hanya dari situs sekunder; URL resmi tidak ditemukan. |
 | Keputusan Kepala BKPDM Nomor 020 Tahun 2026 | `[belum terverifikasi]`; hanya dari artikel sekunder. |
 | `ahliweb/awcms-one` (README, `docs/template.md`, `package.json`, metadata GitHub) `https://github.com/ahliweb/awcms-one` | Dibuka via GitHub API, 2026-11-18. |
-| `data/topic-families.json` (silabus OSN v2.0, 2026-09-04) | Dibaca di repositori ini. |
+| `data/osn/topic-families.json` (silabus OSN v2.0, 2026-09-04) | Dibaca di repositori ini. |
 | ADR-0004, ADR-0006, ADR-0007 repositori ini | Dibaca. |
 
 ## Changelog
