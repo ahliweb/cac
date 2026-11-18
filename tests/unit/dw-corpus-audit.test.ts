@@ -93,11 +93,11 @@ describe("auditDewasaCorpus on the committed corpus", () => {
     expect(files.get("bridges.json").bridges).toHaveLength(6);
   });
 
-  test("marks the unit copy as unverified and the mapping as title-level (owner decision)", () => {
+  test("marks every unit title as matched against the official annex and the mapping as title-level", () => {
     const skkni = corpus().get("skkni-units.json");
     expect(skkni.mappingDepth).toBe("judul-unit");
     for (const unit of skkni.units) {
-      expect(unit.verification).toBe("salinan-belum-terverifikasi");
+      expect(unit.verification).toBe("judul-cocok-lampiran-resmi");
     }
   });
 

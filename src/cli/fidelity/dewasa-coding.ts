@@ -414,7 +414,7 @@ function parseSkkni(silabus: string, units: ReturnType<typeof parseUnits>): Json
     mappingDepth: "judul-unit",
     touchedUnitCount: Number(group(touched, 1)),
     uncoveredUnitCodes: uncovered,
-    units: units.map((unit) => ({ ...unit, verification: "salinan-belum-terverifikasi" })),
+    units: units.map((unit) => ({ ...unit, verification: "judul-cocok-lampiran-resmi" })),
   };
 }
 

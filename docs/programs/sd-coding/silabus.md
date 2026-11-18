@@ -1,6 +1,6 @@
 # Silabus Pembelajaran Coding SD — v1.0
 
-- **Version:** v1.0.1
+- **Version:** v1.0.2
 - **Last updated:** 2026-11-19
 - **Status:** DISETUJUI pemilik program, 2026-11-19 — kelas 1-6, beserta rekomendasi penyusun atas ketujuh pertanyaan terbuka (issue #128); menjadi sumber corpus `data/sd-coding/` (ADR-0006, ADR-0008). Modul pendamping tidak termasuk persetujuan ini.
 - **Changeset:** Silabus v1.0 disetujui pemilik: draf v0.1.0 menjadi silabus berstatus disetujui, pertanyaan terbuka diganti keputusan pemilik (bagian 13), kutipan CP Fase C dicocokkan ulang dan diganti dengan teks SK Kepala BSKAP 046/H/KR/2025 (bagian 1.2-1.4). Revisi patch v1.0.1 (#165): kalimat status yang basi; isi kurikulum tidak berubah.
@@ -63,8 +63,8 @@ Pendidikan Dasar, dan Jenjang Pendidikan Menengah*, Lampiran II (jenjang SD),
 bagian XXVIII "Capaian Pembelajaran Koding dan Kecerdasan Artifisial", butir
 D.1 "Fase C (Umumnya untuk Kelas V dan VI SD/MI)". Teksnya dicocokkan huruf
 demi huruf pada 2026-11-19 dengan salinan SK (PDF 1691 halaman, butir D.1 di
-halaman 343) yang ditemukan orchestrator; alamat asal salinan itu belum
-terverifikasi (rincian di [`riset.md`](riset.md) bagian 1 dan 8). Halaman
+halaman 343) yang ditemukan orchestrator; alamat asal salinan itu
+`[terverifikasi 2026-11-19]` (subdomain resmi `kemendikdasmen.go.id`; rincian di [`riset.md`](riset.md) bagian 1 dan 8). Halaman
 BGTK Kalimantan Timur yang dipakai draf awal ternyata tidak sama persis
 dengan SK (bagian 1.4); yang berlaku di sini adalah teks SK.
 
@@ -98,7 +98,7 @@ dicocokkan dengan SK, empat perbedaan dikoreksi pada bagian 1.3 dan 4:
 
 | Butir | Status |
 | --- | --- |
-| Alamat asal salinan SK yang dicocokkan | `[belum terverifikasi]`; salinan ditemukan orchestrator, teksnya cocok dengan SK 046/H/KR/2025 (bagian 1.2). |
+| Alamat asal salinan SK yang dicocokkan | `[terverifikasi 2026-11-19]`: `https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf` (subdomain resmi `kemendikdasmen.go.id`, SHA-256 `45809d2c...3394`, identik dengan salinan yang ditemukan orchestrator; teksnya cocok dengan SK 046/H/KR/2025, bagian 1.2). Padanan di JDIH Kemendikdasmen `[belum terverifikasi]`. |
 | PDF *Panduan Mata Pelajaran Koding dan Kecerdasan Artifisial* | `[belum terverifikasi]`; tidak terbuka. |
 | Penerapan nyata di sekolah | Tidak diperiksa. |
 
@@ -656,4 +656,5 @@ Dengan persetujuan ini program `sd-coding` didaftarkan di
 | --- | --- | --- |
 | v1.0.0 | 2026-11-19 | Disetujui pemilik beserta rekomendasi penyusun (issue #128); pertanyaan terbuka diganti keputusan (bagian 13); kutipan CP Fase C dicocokkan dengan SK 046/H/KR/2025 dan dikoreksi (bagian 1.2-1.4, 4); rencana mingguan tidak diubah. |
 | v1.0.1 | 2026-11-19 | Revisi patch: kalimat status, keputusan pemilik #165; isi kurikulum tidak berubah. |
+| v1.0.2 | 2026-11-19 | Revisi patch: status verifikasi sumber (SK 046, SKKNI 282/2016); isi kurikulum lain tidak berubah. |
 | v0.1.0 | 2026-11-19 | Draf awal (issue #128), status DRAF. |

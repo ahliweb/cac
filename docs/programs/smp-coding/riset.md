@@ -1,9 +1,9 @@
 # Riset Pembelajaran Coding SMP (`smp-coding`)
 
-- **Version:** v0.3.0
+- **Version:** v0.3.1
 - **Last updated:** 2026-11-19
-- **Status:** Catatan riset (issue #129). Silabus yang bersandar padanya, `silabus.md` v1.0.0, disetujui pemilik pada 2026-11-19; dokumen riset ini sendiri tidak bersifat keputusan. Tanggal akses penyusun: **2026-11-19**; berkas yang disediakan orchestrator: Panduan diunduh 2026-11-18, SK 046 salinan (tanggal unduh tidak tercatat).
-- **Changeset:** Riset sumber resmi, CP Informatika dan CP Koding dan Kecerdasan Artifisial (KKA) Fase D dari teks resmi, kebijakan KKA, OSN jenjang SMP, dan kajian alat untuk silabus coding SMP. v0.3.0: status disesuaikan dengan persetujuan silabus v1.0.0 (2026-11-19); isi riset tidak diubah.
+- **Status:** Catatan riset (issue #129). Silabus yang bersandar padanya, `silabus.md` v1.0.0, disetujui pemilik pada 2026-11-19; dokumen riset ini sendiri tidak bersifat keputusan. Tanggal akses penyusun: **2026-11-19**; berkas yang disediakan orchestrator: Panduan diunduh 2026-11-18, SK 046 salinan (tanggal unduh tidak tercatat); pada 2026-11-19 berkas SK diunduh ulang dari subdomain resmi Kemendikdasmen (bagian 2.1).
+- **Changeset:** Riset sumber resmi, CP Informatika dan CP Koding dan Kecerdasan Artifisial (KKA) Fase D dari teks resmi, kebijakan KKA, OSN jenjang SMP, dan kajian alat untuk silabus coding SMP. v0.3.1: alamat asal salinan SK 046 terverifikasi dan kutipan KKA Fase D dicocokkan ulang (bagian 2.1 dan 6). v0.3.0: status disesuaikan dengan persetujuan silabus v1.0.0 (2026-11-19); isi riset tidak diubah.
 
 > Dokumen ini adalah **catatan riset**, bukan silabus dan bukan dokumen
 > pemerintah. Pola tanda mengikuti `docs/programs/sma-coding/silabus.md`:
@@ -17,7 +17,7 @@
    Pelajaran Informatika, Fase D-F* 2025 (URL resmi, diunduh orchestrator
    2026-11-18), yang memuat CP Informatika Fase D; (b) salinan SK Kepala BSKAP
    046/H/KR/2025 yang ditemukan orchestrator, yang memuat CP Informatika dan CP
-   Koding dan KA (KKA) Fase D. URL asal salinan SK belum terverifikasi.
+   Koding dan KA (KKA) Fase D. URL asal salinan SK `[terverifikasi 2026-11-19]` (bagian 2.1).
 2. **CP Informatika Fase D (2025) hanya berelemen Berpikir Komputasional dan
    Literasi Digital**, tanpa elemen Algoritma dan Pemrograman maupun Analisis
    Data. Pemrograman disebut hanya sebagai menuliskan instruksi dalam
@@ -49,7 +49,7 @@
 | Sumber | Provenance | Hasil |
 | --- | --- | --- |
 | `https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf` (Panduan Mata Pelajaran Informatika, Fase D-F, Pusat Kurikulum dan Pembelajaran 2025; metadata PDF: dibuat 12 September 2025) | Diunduh **orchestrator pada 2026-11-18** dari URL resmi itu; teks diekstrak dengan `pdftotext -layout` (6.703 baris); berkas yang sama dengan sumber kutipan CP Fase E dan F di `docs/programs/sma-coding/silabus.md` | **Terverifikasi dan dikutip.** CP Fase D di bagian B.d (halaman cetak 11-12); materi esensial Fase D (bagian C); contoh alur tujuan pembelajaran Fase D. |
-| Salinan SK Kepala BSKAP Nomor 046/H/KR/2025 tentang Capaian Pembelajaran pada PAUD, Jenjang Pendidikan Dasar, dan Jenjang Pendidikan Menengah | PDF 1.691 halaman bertanda "SALINAN" yang **ditemukan orchestrator**; **URL asal belum terverifikasi** (tidak tercatat, dan penyusun tidak menemukan URL resminya); teks diekstrak penyusun dari salinan itu | Dibuka dan dikutip. Ditetapkan di Jakarta, 16 Juli 2025; mulai berlaku sejak ditetapkan; mencabut Keputusan Kepala Badan 32/H/KR/2024 (Diktum KETUJUH dan KEDELAPAN). Konsiderans menyebut Permendikdasmen Nomor 13 Tahun 2025. CP Informatika: Lampiran II bagian XI; CP Koding dan KA: Lampiran II bagian XXVIII (Lampiran III, SMK, bagian IV memuat KKA terpisah). Kesesuaian salinan dengan aslinya `[belum terverifikasi]`. |
+| Salinan SK Kepala BSKAP Nomor 046/H/KR/2025 tentang Capaian Pembelajaran pada PAUD, Jenjang Pendidikan Dasar, dan Jenjang Pendidikan Menengah | PDF 1.691 halaman bertanda "SALINAN" yang **ditemukan orchestrator**; **URL asal `[terverifikasi 2026-11-19]`**: `https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf` (subdomain `bpmpbabel` dari domain resmi `kemendikdasmen.go.id`; diunduh ulang 2026-11-19, HTTP 200, 14.908.908 bita, 1691 halaman, SHA-256 `45809d2c88a612f90ee5adbd60d71a8952527d6924c626d126ea6926ae3d3394`, identik dengan salinan yang dikutip); teks diekstrak penyusun dari salinan itu | Dibuka dan dikutip. Ditetapkan di Jakarta, 16 Juli 2025; mulai berlaku sejak ditetapkan; mencabut Keputusan Kepala Badan 32/H/KR/2024 (Diktum KETUJUH dan KEDELAPAN). Konsiderans menyebut Permendikdasmen Nomor 13 Tahun 2025. CP Informatika: Lampiran II bagian XI; CP Koding dan KA: Lampiran II bagian XXVIII (Lampiran III, SMK, bagian IV memuat KKA terpisah). Teks PDF memuat "Ditetapkan di Jakarta pada tanggal 16 Juli 2025" dan "Salinan sesuai dengan aslinya" `[terverifikasi 2026-11-19]`; kesesuaian dengan naskah asli di luar penanda itu `[belum terverifikasi]` (padanan di JDIH Kemendikdasmen tidak ditemukan). Pencocokan ulang 2026-11-19 (kata demi kata; spasi dan karakter lebar nol dinormalkan): keempat kutipan KKA Fase D di `data/smp-coding/cp-elements.json` (BK 2.1, LD 2.2, EA 2.3, PA 2.4) cocok persis dengan teks SK, 4 dari 4, tanpa selisih (halaman PDF 343-344). Dua kutipan Informatika Fase D bersumber dari Panduan 2025, bukan SK; sebagai pembanding, isi SK Lampiran II bagian XI sama dengan kutipan itu selain kalimat pembuka (SK membuka dengan "Memahami ...", tanpa "Pada akhir fase D, murid mampu") dan penanda daftar "1.2. 2." yang tersisip di tengah kalimat BK pada ekstraksi PDF. |
 | Jalur akses penyusun sendiri | `curl` ke repositori Kemendikdasmen kehabisan waktu (30, 40, 60 detik) dan alat pengambil halaman menjawab `ECONNREFUSED`; portal kurikulum, buku guru Informatika VII, dan situs Puspresnas juga tidak terjangkau | Penyusun tidak membuka sumber resmi langsung; semua kutipan resmi dicocokkan ke berkas yang disediakan orchestrator (bagian 7). |
 
 ### 2.2 CP Informatika Fase D: kutipan persis dari Panduan 2025
@@ -82,8 +82,8 @@ Catatan dari Panduan yang relevan:
 
 ### 2.3 CP Koding dan Kecerdasan Artifisial (KKA) Fase D: kutipan persis dari SK 046
 
-Sumber: salinan SK 046/H/KR/2025 (provenance di bagian 2.1; **URL asal belum
-terverifikasi**), Lampiran II, bagian XXVIII.D.2 ("Fase D (Umumnya untuk Kelas
+Sumber: salinan SK 046/H/KR/2025 (provenance di bagian 2.1; URL asal
+`[terverifikasi 2026-11-19]`), Lampiran II, bagian XXVIII.D.2 ("Fase D (Umumnya untuk Kelas
 VII, VIII dan IX SMP/MTs)"). Kalimat pembuka SK: "Pada akhir Fase D, murid
 memiliki kemampuan sebagai berikut." Hanya spasi, pemenggalan baris, dan
 karakter tak terlihat (spasi lebar nol) yang dinormalkan.
@@ -181,7 +181,7 @@ perangkat keras tidak dicari (tidak ada angka yang diklaim).
 
 | Butir | Tindakan yang diminta |
 | --- | --- |
-| URL resmi SK 046/H/KR/2025 dan kesesuaian salinan dengan aslinya | Pemilik atau tim memberi URL resmi (atau mengonfirmasi asal salinan). |
+| Padanan SK 046/H/KR/2025 di JDIH Kemendikdasmen (alamat asal salinan sudah `[terverifikasi 2026-11-19]`, bagian 2.1) | Opsional: pemilik atau tim memberi URL JDIH bila ada. |
 | Teks Permendikdasmen Nomor 13 Tahun 2025 (ketentuan "pilihan", struktur, JP KKA) | Pemilik atau tim menyediakan tautan resmi. |
 | Alokasi JP KKA per minggu (2 JP hanya dari ringkasan naskah akademik di situs sekunder) | Dicek ke teks regulasi atau lampiran struktur. |
 | Menit per JP di SMP (contoh RPP Panduan memakai 40 menit; itu contoh, bukan ketentuan) | Dicek ke standar proses yang berlaku. |
@@ -203,7 +203,7 @@ laporan pelaksana pada issue #129.
 | Sumber | Peran |
 | --- | --- |
 | Panduan Mata Pelajaran Informatika, Fase D-F (`repositori.kemendikdasmen.go.id/33634/...`), salinan teks dari orchestrator, diunduh 2026-11-18 | CP Informatika Fase D (kutipan persis); materi esensial; alur tujuan; contoh RPP. |
-| Salinan SK 046/H/KR/2025 dari orchestrator (URL asal belum terverifikasi) | CP Informatika dan KKA Fase D (kutipan persis); tanggal berlaku; konsiderans. |
+| Salinan SK 046/H/KR/2025 dari orchestrator (URL asal `[terverifikasi 2026-11-19]`, bagian 2.1) | CP Informatika dan KKA Fase D (kutipan persis); tanggal berlaku; konsiderans. |
 | `https://static.perangkat-ajar.belajar.id/SMP.D.INF.IPS.1.pdf` (2026-11-19) | Pembanding: CP versi lama (dokumen guru). |
 | `https://infopublik.id/kategori/pp-tunas/962486/kemendikdasmen-mulai-terapkan-mata-pelajaran-coding-dan-ai-pada-tahun-ajaran-2025-2026` (2026-11-19) | Status KKA pilihan; metode; SKB tujuh menteri (13 Maret 2026). |
 | `https://news.republika.co.id/berita/sygtsq458/siapsiap-coding-dan-ai-diajarkan-untuk-sdsmpsma-mulai-tahun-ajaran-depan` (2026-11-19) | Penekanan berpikir komputasional dan etika AI (26 Juni 2025). |
@@ -225,6 +225,7 @@ Silabus OSN SMP), situs biro Bebras, teks Permendikdasmen KKA.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v0.3.1 | 2026-11-19 | URL asal salinan SK 046 terverifikasi (SHA-256 identik); kutipan KKA Fase D dicocokkan ulang, 4 dari 4 cocok; isi kurikulum tidak diubah. |
 | v0.3.0 | 2026-11-19 | Status disesuaikan: silabus disetujui pemilik sebagai `silabus.md` v1.0.0; rujukan `silabus-draf.md` diperbarui; isi riset tidak diubah (issue #129). |
 | v0.2.0 | 2026-11-19 | Teks resmi CP Fase D (Panduan 2025 dan SK 046) menggantikan kutipan dokumen guru; dokumen guru menjadi pembanding; CP KKA Fase D ditambahkan; provenance dicatat; bagian 3 dan 6 diperbarui (issue #129). |
 | v0.1.0 | 2026-11-19 | Riset awal (issue #129). |

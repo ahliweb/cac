@@ -51,7 +51,7 @@ describe("sma-coding fidelity: data/sma-coding vs. the approved silabus", () => 
 
   test("the registry entry exists and carries the document's version and date", () => {
     expect(smaEntry).toBeDefined();
-    expect(smaEntry?.syllabusVersion).toBe("1.3.0");
+    expect(smaEntry?.syllabusVersion).toBe("1.3.1");
     expect(smaEntry?.syllabusDate).toBe("2026-11-19");
   });
 
