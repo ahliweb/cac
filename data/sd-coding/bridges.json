@@ -1,0 +1,38 @@
+{
+  "syllabusVersion": "1.0.0",
+  "syllabusDate": "2026-11-19",
+  "sourceSection": "bagian 7",
+  "intro": "Program `tk-coding` dan `smp-coding` disusun paralel dan **belum ada di repositori ini**; bagian ini hanya menyatakan kemampuan masuk dan keluaran yang diharapkan `[asumsi]` dan harus diselaraskan ketika keduanya selesai.",
+  "bridges": [
+    {
+      "id": "tk-ke-kelas-1",
+      "sourceSection": "bagian 7.1",
+      "heading": "Dari TK (`tk-coding`) ke kelas 1",
+      "text": "Prasyarat yang diasumsikan: mengikuti perintah satu atau dua langkah, mengurutkan tiga kartu gambar, mengelompokkan benda menurut satu sifat, dan bersikap baik pada teman. Kegiatan kelas 1 semester 1 mengulang dasar-dasar itu tanpa menganggapnya sudah dikuasai. Bila TK memakai istilah atau simbol tertentu, kelas 1 menyepakati simbol bersama di awal tahun."
+    },
+    {
+      "id": "kelas-6-ke-smp",
+      "sourceSection": "bagian 7.2",
+      "heading": "Dari kelas 6 ke SMP (`smp-coding`)",
+      "text": "Keluaran yang diharapkan di akhir kelas 6: menulis instruksi logis dengan simbol, menguji dan memperbaikinya, menjelaskan masukan-proses-keluaran, menjaga informasi pribadi, membedakan mesin cerdas dan non-cerdas, menjelaskan bahwa KA belajar dari data dan bisa keliru. Informatika baru menjadi mata pelajaran di SMP (riset bagian 4), dan panduan kodingka menyebut SMP mengenalkan pemrograman blok dan konsep KA sederhana (riset bagian 2.2). Karena itu `sd-coding` **tidak mengajarkan sintaks pemrograman**; blok visual hanya opsi di kelas 6 (bagian 11). Keputusan pemilik 5 (bagian 13) mengatur penyelarasan."
+    },
+    {
+      "id": "ke-sma",
+      "sourceSection": "bagian 7.3",
+      "heading": "Ke SMA",
+      "text": "Jembatan tidak langsung: SD, SMP, lalu program `sma-coding` (jalur A dan seterusnya). Tidak ada jembatan SD ke SMA di silabus ini."
+    }
+  ],
+  "osn": {
+    "status": "tidak-ada",
+    "sourceSection": "bagian 8",
+    "statement": "tidak ada jembatan OSN untuk SD.",
+    "findings": [
+      "Program OSN di repositori ini adalah OSN Informatika (silabus operasional OSN Informatika 2026) dan korpus `data/osn/`; tidak ada data jenjang SD (pencarian di `data/osn`, `README.md`, dan `docs/silabus`: tidak ada rujukan jenjang SD).",
+      "Dari ringkasan hasil pencarian, dokumen penetapan peserta OSN SD (2023 provinsi, 2024 nasional) memuat bidang Matematika dan IPA, tanpa Informatika. Dokumen-dokumen itu **tidak terbuka** (domain tidak terjangkau), jadi `[belum terverifikasi]`; ringkasan yang sama menyebut sesi IPS sebagai uji coba pada 2025, sehingga daftar bidang SD dapat berubah antar tahun.",
+      "Informatika sebagai mata pelajaran tidak ada di SD (riset bagian 4)."
+    ],
+    "enrichmentText": "Maka silabus ini tidak mengarang jembatan OSN. Kegiatan opsional untuk murid yang suka berpikir logis (tanpa label OSN): tantangan \"teka-teki algoritma\" di akhir semester, dan penguatan konsep pengurutan dan pencarian di kelas 3 (`SD3-1-M7`, `SD3-1-M8`) yang kelak menjadi dasar topik OSN. Bila pemilik ingin jembatan resmi ke kompetisi lain, itu perlu riset sendiri (keputusan pemilik 6, bagian 13).",
+    "enrichmentWeeks": ["SD3-1-M7", "SD3-1-M8"]
+  }
+}
