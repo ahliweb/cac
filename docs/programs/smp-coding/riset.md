@@ -1,9 +1,9 @@
 # Riset Pembelajaran Coding SMP (`smp-coding`)
 
-- **Version:** v0.2.0
+- **Version:** v0.3.0
 - **Last updated:** 2026-11-19
-- **Status:** DRAF riset (issue #129) — belum keputusan pemilik. Tanggal akses penyusun: **2026-11-19**; berkas yang disediakan orchestrator: Panduan diunduh 2026-11-18, SK 046 salinan (tanggal unduh tidak tercatat).
-- **Changeset:** Riset sumber resmi, CP Informatika dan CP Koding dan Kecerdasan Artifisial (KKA) Fase D dari teks resmi, kebijakan KKA, OSN jenjang SMP, dan kajian alat untuk draf silabus coding SMP.
+- **Status:** Catatan riset (issue #129). Silabus yang bersandar padanya, `silabus.md` v1.0.0, disetujui pemilik pada 2026-11-19; dokumen riset ini sendiri tidak bersifat keputusan. Tanggal akses penyusun: **2026-11-19**; berkas yang disediakan orchestrator: Panduan diunduh 2026-11-18, SK 046 salinan (tanggal unduh tidak tercatat).
+- **Changeset:** Riset sumber resmi, CP Informatika dan CP Koding dan Kecerdasan Artifisial (KKA) Fase D dari teks resmi, kebijakan KKA, OSN jenjang SMP, dan kajian alat untuk silabus coding SMP. v0.3.0: status disesuaikan dengan persetujuan silabus v1.0.0 (2026-11-19); isi riset tidak diubah.
 
 > Dokumen ini adalah **catatan riset**, bukan silabus dan bukan dokumen
 > pemerintah. Pola tanda mengikuti `docs/programs/sma-coding/silabus.md`:
@@ -25,7 +25,7 @@
    programming)". **CP KKA Fase D** berelemen BK, LD, Literasi dan Etika KA,
    serta Pemanfaatan dan Pengembangan KA, juga tanpa pemrograman teks.
    Akibatnya pemrograman teks (Python) di SMP **melampaui rumusan CP**; ini
-   mengubah status Python di draf silabus menjadi pengayaan.
+   mengubah status Python di silabus menjadi pengayaan.
 3. Dokumen ATP buatan guru yang dibuka lebih dulu (delapan elemen: BK, TIK, SK,
    JKI, AD, AP, DSI, PLB) mencerminkan CP versi lama (sebelum 046/H/KR/2025);
    kini hanya **pembanding** (bagian 2.4), tidak dipakai sebagai kutipan.
@@ -138,7 +138,7 @@ tidak dibuka. CP KKA sendiri ada di bagian 2.3.
 | Dasar regulasi | SK 046/H/KR/2025 (ditetapkan 16 Juli 2025) memuat CP Koding dan KA untuk Fase C, D, E, F (Lampiran II bagian XXVIII dan Lampiran III bagian IV). Konsiderans SK menyebut pelaksanaan Pasal 11 ayat (1) Permendikbudristek Nomor 12 Tahun 2024 sebagaimana diubah dengan Peraturan Menteri Pendidikan Dasar dan Menengah Nomor 13 Tahun 2025. | Salinan SK 046 dari orchestrator (URL asal belum terverifikasi). | Nomor Permen **terverifikasi dari konsiderans SK**; teks Permen dan ketentuan "pilihan" serta struktur JP di dalamnya `[belum terverifikasi]`. |
 | Tahun mulai | Dua pernyataan berbeda beredar: "mulai tahun pelajaran 2025-2026" (Mendikdasmen, 2026) dan, dalam hasil pencarian lain, tahun ajaran 2026/2027 untuk pelaksanaan lebih luas. | InfoPublik (dibuka); sumber 2026/2027 hanya hasil pencarian, tidak dibuka. | Tahun mulai efektif per sekolah `[belum terverifikasi]`. |
 | Sasaran isi | Wakil Kemendikdasmen (Republika, 26 Juni 2025): koding di SD sampai SMA lebih ditekankan pada melatih *computational thinking*, bukan membuat murid menulis kode seperti jurusan ilmu komputer: "Coding di sini bukan membuat modul program, tetapi pendekatan untuk melatih computational thinking anak-anak kita." Murid juga perlu diajar bahwa AI adalah alat, dengan pendampingan guru dan orang tua serta etika penggunaan AI. | `https://news.republika.co.id/berita/sygtsq458/siapsiap-coding-dan-ai-diajarkan-untuk-sdsmpsma-mulai-tahun-ajaran-depan` | Pernyataan tenaga ahli Kemendikdasmen di media. |
-| SKB tujuh menteri | Pedoman pemanfaatan teknologi digital dan AI pada jalur pendidikan ditandatangani 12 Maret 2026; mempertimbangkan kesiapan usia, termasuk durasi penggunaan dan jenis konten. | InfoPublik (di atas) | Berita; teks SKB tidak dibuka. Relevan untuk bagian etika dan privasi draf silabus. |
+| SKB tujuh menteri | Pedoman pemanfaatan teknologi digital dan AI pada jalur pendidikan ditandatangani 12 Maret 2026; mempertimbangkan kesiapan usia, termasuk durasi penggunaan dan jenis konten. | InfoPublik (di atas) | Berita; teks SKB tidak dibuka. Relevan untuk bagian etika dan privasi silabus. |
 | Kemitraan swasta | Inisiatif swasta (disebut di berita) mengarahkan SMP ke "pengembangan aplikasi mobile" dan SMA ke Python. | `https://www.gebrak.id/?p=40307` (20 Agustus 2025; kutipan pihak swasta) | Bukan kebijakan pemerintah; **tidak dijadikan dasar** rancangan. |
 
 **Implikasi untuk rancangan:** KKA bersifat pilihan dan menekankan berpikir
@@ -157,7 +157,7 @@ pertemuan (opsi *unplugged* tercantum di setiap minggu).
 | Kompetisi lain untuk SMP | Tidak diverifikasi (halaman biro Bebras Indonesia dibuka tetapi kosong tanpa JavaScript). | `[belum terverifikasi]`; tidak dijadikan dasar. |
 
 **Implikasi:** tidak ada kompetisi OSN Informatika SMP yang dapat dirujuk
-sebagai tujuan. "Jembatan OSN" di draf silabus berarti persiapan fondasi
+sebagai tujuan. "Jembatan OSN" di silabus berarti persiapan fondasi
 untuk jalur A program `sma-coding` (C++ dan rumpun materi OSN SMA), dan
 pengayaan pemecahan masalah opsional di SMP.
 
@@ -192,7 +192,7 @@ perangkat keras tidak dicari (tidak ada angka yang diklaim).
 
 Pencocokan dilakukan dengan skrip sementara (tidak disimpan di repositori;
 di luar scope) yang membaca setiap baris kutipan (`> ...`) di `riset.md` dan
-`silabus-draf.md`, menormalkan spasi, spasi setelah tanda hubung, dan
+`silabus.md` (saat itu `silabus-draf.md`, sebelum disetujui), menormalkan spasi, spasi setelah tanda hubung, dan
 karakter spasi lebar nol, lalu mencari kecocokan persis di salah satu dari:
 teks `pdftotext -layout` Panduan (untuk blok 1.1 dan 1.2) atau teks
 `pdftotext -layout` salinan SK 046 (untuk blok KKA). Hasilnya dicatat dalam
@@ -225,5 +225,6 @@ Silabus OSN SMP), situs biro Bebras, teks Permendikdasmen KKA.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v0.3.0 | 2026-11-19 | Status disesuaikan: silabus disetujui pemilik sebagai `silabus.md` v1.0.0; rujukan `silabus-draf.md` diperbarui; isi riset tidak diubah (issue #129). |
 | v0.2.0 | 2026-11-19 | Teks resmi CP Fase D (Panduan 2025 dan SK 046) menggantikan kutipan dokumen guru; dokumen guru menjadi pembanding; CP KKA Fase D ditambahkan; provenance dicatat; bagian 3 dan 6 diperbarui (issue #129). |
 | v0.1.0 | 2026-11-19 | Riset awal (issue #129). |

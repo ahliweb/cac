@@ -1,17 +1,22 @@
-# Draf Silabus Pembelajaran Coding SMP — v0.2
+# Silabus Pembelajaran Coding SMP — v1.0
 
-- **Version:** v0.2.0
+- **Version:** v1.0.0
 - **Last updated:** 2026-11-19
-- **Status:** DRAF (ADR-0007) — belum disetujui pemilik program. Tidak ada `data/smp-coding/`, tidak ada entri `data/programs.json`, dan tidak ada modul di `content/` sampai pemilik menyetujui silabus ini (ADR-0006).
-- **Changeset:** Draf v0.2: kutipan dan kode butir CP Fase D diganti dengan teks resmi (Panduan Mata Pelajaran Informatika 2025 dan CP Koding dan Kecerdasan Artifisial pada SK 046/H/KR/2025); pemetaan CP disusun ulang; issue #129.
+- **Status:** DISETUJUI pemilik program, 2026-11-19 — beserta semua rekomendasi penyusun (bagian 10; keputusan lewat dialog pilihan, dicatat di issue #129). Modul pembelajaran di `content/smp-coding/` dan modul pendamping tidak termasuk persetujuan ini.
+- **Changeset:** Silabus v1.0 disetujui pemilik (2026-11-19) beserta rekomendasi penyusun: satu jalur inti blok ke pseudocode, Python hanya pengayaan di luar CP, CP KKA Fase D untuk materi AI kelas 9, klub OSN opsional, tanpa akun murid; butir Literasi Digital yang belum tercakup ditutup lewat modul pendamping (pekerjaan lanjutan); issue #129. Isi rencana sama dengan draf v0.2; yang berubah hanya status, bagian 10, changelog, dan satu koreksi hitungan di bagian 4 (`DK-BK-c`: 32 menjadi 31 minggu lain).
 
-> **DRAF, bukan keputusan.** Dokumen ini konten **karangan** (*authored*)
-> menurut [ADR-0007](../../architecture/adr/0007-authored-learning-content.md)
-> dan bukan dokumen pemerintah. Agent tidak pernah mengubah status ini
-> menjadi disetujui; hanya pemilik yang dapat menyetujui, dan persetujuan
-> dicatat dengan tanggal. Dasar riset dan semua status verifikasi ada di
+> **Disetujui pemilik program pada 2026-11-19** (v1.0; keputusan lewat
+> dialog pilihan, dicatat di issue #129, bagian 10). Dokumen ini konten
+> **karangan** (*authored*) menurut
+> [ADR-0007](../../architecture/adr/0007-authored-learning-content.md) dan
+> bukan dokumen pemerintah; ia menjadi sumber corpus program `smp-coding`
+> (ADR-0006, ADR-0008). Dasar riset dan semua status verifikasi ada di
 > [`riset.md`](riset.md). Kutipan CP di bagian 1 adalah transkripsi sumber
-> resmi; selebihnya rancangan penyusun.
+> resmi; selebihnya rancangan penyusun yang kini disetujui. Butir bertanda
+> `[belum terverifikasi]` tetap belum terverifikasi, dan butir `[asumsi]`
+> tetap rancangan penyusun yang disetujui sebagai bagian dari v1.0. Draf asal
+> (v0.2) tersimpan di riwayat git; modul pendamping tidak termasuk
+> persetujuan ini.
 
 ## 0. Cara membaca dokumen ini
 
@@ -348,7 +353,7 @@ pemenuhan; kode `pengayaan` berarti tidak ada butir CP resmi yang cocok
 | D-LD-q | - | **Tidak dicakup** (di luar silabus coding; dicakup Informatika umum atau modul pendamping) |
 | DK-BK-a | SMP7-2-M1, SMP8-1-M6, SMP8-1-M7, SMP8-1-M8, SMP8-1-M14, SMP9-1-M4, SMP9-1-M5, SMP9-1-M6, SMP9-1-M7, SMP9-1-M13, SMP9-1-M14 | Penuh |
 | DK-BK-b | SMP7-1-M11, SMP7-1-M13, SMP7-2-M11, SMP7-2-M13, SMP8-1-M11, dan 11 minggu lain (kolom Butir CP di bagian 3) | Penuh |
-| DK-BK-c | SMP7-1-M3, SMP7-1-M4, SMP7-1-M5, SMP7-1-M6, SMP7-1-M8, dan 32 minggu lain (kolom Butir CP di bagian 3) | Penuh untuk instruksi blok dan pseudocode; baris bertanda `*` (Python) melampaui rumusan CP |
+| DK-BK-c | SMP7-1-M3, SMP7-1-M4, SMP7-1-M5, SMP7-1-M6, SMP7-1-M8, dan 31 minggu lain (kolom Butir CP di bagian 3) | Penuh untuk instruksi blok dan pseudocode; baris bertanda `*` (Python) melampaui rumusan CP |
 | DK-LD-a | SMP7-1-M12, SMP7-2-M12, SMP9-2-M7, SMP9-2-M12, SMP9-2-M13 | Sebagian: slide, infografis, dan laporan; audio dan video tidak |
 | DK-EA-a | - | **Tidak dicakup** (di luar silabus coding; dicakup Informatika umum atau modul pendamping) |
 | DK-EA-b | SMP9-2-M8 | Sebagian: unplugged saja |
@@ -364,9 +369,10 @@ pemenuhan; kode `pengayaan` berarti tidak ada butir CP resmi yang cocok
 (`D-LD-a`, `c`, `h`, `k`, `l`, `n`, `q`) dan `DK-PA-a`, `DK-PA-b` tidak
 dicakup minggu mana pun; wajib dicakup pembelajaran Informatika sekolah di
 luar silabus coding ini (mengikuti sma-coding bagian 4.3), idealnya lewat
-modul pendamping seperti pada sma-coding. Keputusan tentang modul pendamping
-SMP belum diambil (Q10). `DK-EA-a` dan `DK-EA-d` juga belum punya minggu
-khusus; kandidatnya perluasan `SMP9-2-M8` sampai `M10`.
+modul pendamping seperti pada sma-coding. Keputusan pemilik: modul
+pendamping SMP (Q10, bagian 10), pekerjaan lanjutan yang belum dikerjakan.
+`DK-EA-a` dan `DK-EA-d` juga belum punya minggu khusus; kandidatnya
+perluasan `SMP9-2-M8` sampai `M10`.
 
 **Pengayaan di luar rumusan CP:** (a) seluruh pemrograman teks Python
 (`SMP8-2` sampai `SMP9-2`), karena kedua CP Fase D tidak memuat elemen
@@ -493,21 +499,26 @@ Scratch (kelas 7) lalu MakeCode (simulator, kelas 8) lalu Python (mulai
 kelas 8 semester 2, ditandai pengayaan di luar CP), tanpa akun murid, satu jalur inti dengan klub pengayaan
 opsional, 2 JP per minggu, dengan kegiatan *unplugged* di setiap tahap.
 
-## 10. Pertanyaan terbuka (keputusan pemilik)
+## 10. Keputusan pemilik (2026-11-19)
 
-| # | Pertanyaan | Opsi | Rekomendasi |
-| --- | --- | --- | --- |
-| Q1 | Dasar CP Fase D (sudah terjawab sebagian: teks resmi tersedia) | (a) Pakai teks resmi Panduan 2025 dan SK 046 yang kini dikutip (bagian 1). (b) Tunggu lampiran SK dari URL resmi sebelum dikunci. (c) Tidak memetakan CP. | **(a)** (Disarankan), dengan syarat pemilik memberi atau mengonfirmasi URL resmi SK 046 (salinan yang dipakai belum punya URL asal terverifikasi); isi Panduan sudah terverifikasi dari URL resmi. |
-| Q2 | Status program di sekolah | (a) Mata pelajaran pilihan Koding dan KA. (b) Ekstrakurikuler. (c) Modul terintegrasi dalam Informatika. (d) Netral: tulis untuk semua dan biarkan sekolah memilih. | **(d)** (Disarankan), karena regulasi belum terverifikasi dan sekolah berbeda. |
-| Q3 | Pemrograman teks di SMP (kedua CP Fase D tidak memuatnya) | (a) Python sebagai pengayaan yang ditandai (rancangan ini). (b) Tanpa pemrograman teks: blok dan pseudocode saja. (c) JavaScript. (d) C++. | **(a)** (Disarankan): bagian wajib CP tidak bergantung padanya dan ia menjadi jembatan ke SMA; **(b)** layak bila pemilik ingin silabus tepat pada CP (bagian 9.1). |
-| Q4 | Jalur | (a) Satu jalur inti ditambah klub pengayaan OSN opsional. (b) Satu jalur saja tanpa pengayaan. (c) Beberapa jalur seperti sma-coding. | **(a)** (Disarankan): SMP tidak punya OSN Informatika; pengayaan tidak membebani semua murid. |
-| Q5 | Alat blok | Scratch / MakeCode saja / Snap atau lain (belum dikaji) | **Scratch kelas 7 dan MakeCode kelas 8**; verifikasi syarat akun dan editor luring dahulu. |
-| Q6 | Perangkat fisik | Simulator saja / simulator + papan opsional / papan wajib | **Simulator + papan opsional**. |
-| Q7 | Alokasi dan menit JP | 2 JP x 40 menit / 2 JP x 45 menit / sesuai sekolah | **Sesuai sekolah**, rencana ditulis untuk 2 JP; contoh RPP Panduan memakai 40 menit per JP; angka resmi KKA belum diperiksa. |
-| Q8 | Keselarasan dengan `sd-coding` (paralel) | Samakan kode dan jembatan setelah kedua silabus disetujui / setujui sendiri-sendiri | **Samakan setelah keduanya disetujui**. |
-| Q9 | Materi KA di kelas 9 (kini terikat CP KKA Fase D, bukan pengayaan) | Tiga minggu unplugged (`SMP9-2-M8` sampai `M10`, rancangan ini) / perluas ke semester lain / tidak ada | **Perluas secukupnya**: tiga minggu belum mencakup `DK-EA-a` dan `DK-EA-d`; tambahkan sebagai kegiatan di minggu yang ada atau di minggu cadangan. |
-| Q10 | Butir Literasi Digital di luar coding (`D-LD-a`, `c`, `h`, `k`, `l`, `n`, `q`) | Modul pendamping seperti sma-coding / cukup di Informatika umum / tambah minggu | **Modul pendamping** (Disarankan), diputuskan setelah silabus disetujui. |
-| Q11 | Butir `DK-PA-a` dan `DK-PA-b` (menggunakan perangkat KA) | Tidak dicakup, hanya didemonstrasikan guru / alat KA berprivasi dikaji dulu / bebas | **Demonstrasi guru** (Disarankan) sampai kebijakan privasi alat dikaji. |
+Pemilik menyetujui draf v0.2 beserta **opsi yang direkomendasikan** untuk
+setiap pertanyaan (dialog pilihan, 2026-11-19; dicatat di issue #129).
+Rumusan pertanyaan dan opsi lengkap ada di riwayat git (draf v0.2); tabel di
+bawah memuat keputusan yang berlaku.
+
+| # | Pertanyaan | Keputusan |
+| --- | --- | --- |
+| Q1 | Dasar CP Fase D | Teks resmi Panduan 2025 dan SK 046 yang dikutip di bagian 1. URL asal salinan SK 046 tetap **belum terverifikasi** (bagian 1.1, 11); tidak ada URL yang dicatat pemilik. |
+| Q2 | Status program di sekolah | Netral: ditulis untuk semua bentuk, sekolah memilih. |
+| Q3 | Pemrograman teks di SMP | Python sebagai pengayaan yang ditandai, di luar rumusan CP (bagian 4); bagian wajib CP tidak bergantung padanya. |
+| Q4 | Jalur | Satu jalur inti ditambah klub pengayaan OSN opsional (bagian 3.4). |
+| Q5 | Alat blok | Scratch (kelas 7) dan MakeCode (kelas 8); syarat akun dan editor luring perlu dicek sebelum modul ditulis. |
+| Q6 | Perangkat fisik | Simulator, papan fisik opsional. |
+| Q7 | Alokasi dan menit JP | Sesuai sekolah; rencana ditulis untuk 2 JP per minggu. |
+| Q8 | Keselarasan dengan `sd-coding` | Disamakan setelah kedua silabus disetujui; belum dilakukan di v1.0. |
+| Q9 | Materi KA di kelas 9 | CP KKA Fase D menjadi dasar materi KA kelas 9: tiga minggu unplugged (`SMP9-2-M8` sampai `M10`) tetap rencana v1.0. Perluasan untuk `DK-EA-a` dan `DK-EA-d` (kegiatan di minggu yang ada atau minggu cadangan) adalah pekerjaan lanjutan; rencana mingguan v1.0 tidak diubah dan kedua butir tetap tercatat belum dicakup. |
+| Q10 | Butir Literasi Digital di luar coding (`D-LD-a`, `c`, `h`, `k`, `l`, `n`, `q`) | Ditutup lewat modul pendamping, seperti sma-coding. Modul itu **pekerjaan lanjutan dan belum dibuat**; sampai ada, butir-butir itu tercatat belum dicakup di `data/smp-coding/uncovered.json`. |
+| Q11 | Butir `DK-PA-a` dan `DK-PA-b` | Tidak dicakup; hanya didemonstrasikan guru sampai kebijakan privasi alat KA dikaji. |
 
 ## 11. Sumber dan batasan
 
@@ -523,5 +534,6 @@ opsional, 2 JP per minggu, dengan kegiatan *unplugged* di setiap tahap.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v1.0.0 | 2026-11-19 | Disetujui pemilik beserta semua rekomendasi penyusun; bagian 10 menjadi catatan keputusan (opsi rekomendasi untuk Q1-Q11); status, banner, dan catatan modul pendamping diperbarui; rencana mingguan, pemetaan CP, dan jembatan tidak diubah dari v0.2 kecuali satu koreksi hitungan: pada bagian 4 baris `DK-BK-c`, "dan 32 minggu lain" menjadi "dan 31 minggu lain" (rencana bagian 3 memuat `DK-BK-c` di 36 minggu, 5 disebut dan 31 lainnya; selisih satu ditemukan audit corpus saat di-encode); pemilik perlu mengetahui koreksi ini (issue #129). |
 | v0.2.0 | 2026-11-19 | Kutipan dan kode butir CP diganti dengan teks resmi: CP Informatika Fase D dari Panduan 2025 (elemen BK dan LD) dan CP Koding dan KA Fase D dari SK 046/H/KR/2025; pemetaan CP disusun ulang; pemrograman teks, kodifikasi biner, dan klub ditandai pengayaan di luar CP; pertanyaan Q1, Q3, Q7, Q9 diperbarui, Q10 dan Q11 ditambah (issue #129). |
 | v0.1.0 | 2026-11-19 | Draf awal (issue #129), memakai CP dari dokumen ATP buatan guru. |

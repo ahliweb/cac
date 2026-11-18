@@ -1,0 +1,61 @@
+{
+  "syllabusVersion": "1.0.0",
+  "syllabusDate": "2026-11-19",
+  "sourceSection": "bagian 5",
+  "fromSd": {
+    "text": "Draf program `sd-coding` disusun **paralel** oleh pelaksana lain; isinya belum disepakati dan tidak dibaca penyusun dokumen ini. Asumsi `[asumsi]`: murid kelas 6 yang masuk SMP mengenal blok, urutan, perulangan, dan percabangan dasar. Karena itu `SMP7-1-M1` sampai `M5` dirancang sebagai tinjauan yang dapat dipadatkan; murid tanpa latar SD tetap dapat mengikutinya. Penyelarasan kode (`SD6-2-...` ke `SMP7-1-...`) dilakukan setelah kedua silabus disetujui."
+  },
+  "toSma": [
+    {
+      "from": "Blok kelas 7 dan pemecahan masalah",
+      "to": "Blok fondasi kelas X (`FND-X1-M1..M7`), yang membuka tanpa mensyaratkan bahasa pemrograman",
+      "note": "Murid SMP tanpa mapel KKA tetap diterima di fondasi.",
+      "smpWeeks": [],
+      "cpCodes": [],
+      "smaTracks": []
+    },
+    {
+      "from": "Python kelas 8-9 (pengayaan di luar CP Fase D)",
+      "to": "Jalur D (AI dan analisis data) memakai Orange lalu Python",
+      "note": "Python menjadi bahasa pertama bagi murid yang masuk D; murid tanpa pengayaan Python tetap dapat masuk.",
+      "smpWeeks": [],
+      "cpCodes": [],
+      "smaTracks": ["D"]
+    },
+    {
+      "from": "Logika, percabangan, perulangan, fungsi, daftar",
+      "to": "Jalur A (C++) dan jalur B (JS/TS)",
+      "note": "Konsep yang sama; sintaks baru. Jalur A butuh tipe statis dan kompilasi yang tidak diajarkan di SMP.",
+      "smpWeeks": [],
+      "cpCodes": [],
+      "smaTracks": ["A", "B"]
+    },
+    {
+      "from": "Simulator MakeCode kelas 8",
+      "to": "Jalur C (IoT dan robotika, C++ gaya Arduino, ESP32)",
+      "note": "Konsep masukan dan keluaran perangkat sudah dikenal.",
+      "smpWeeks": [],
+      "cpCodes": [],
+      "smaTracks": ["C"]
+    },
+    {
+      "from": "Literasi dan etika KA kelas 9 (`DK-EA-b`, `c`, `e`, `f`, `g`)",
+      "to": "Jalur D",
+      "note": "Fondasi sebelum alat AI.",
+      "smpWeeks": [],
+      "cpCodes": ["DK-EA-b", "DK-EA-c", "DK-EA-e", "DK-EA-f", "DK-EA-g"],
+      "smaTracks": ["D"]
+    },
+    {
+      "from": "`SMP9-2-M11` (membaca kode lain)",
+      "to": "Jalur A, B",
+      "note": "Pengantar, bukan prasyarat.",
+      "smpWeeks": ["SMP9-2-M11"],
+      "cpCodes": [],
+      "smaTracks": ["A", "B"]
+    }
+  ],
+  "toOsn": {
+    "text": "OSN Informatika hanya untuk SMA/sederajat (`osn.toki.id`, `riset.md` bagian 4); tidak ada OSN SMP Informatika yang dapat dipastikan. Jembatannya adalah klub pengayaan (bagian 3.4) dan jalur A program `sma-coding`, lalu program `osn` (korpus di `data/osn/`). Silabus ini tidak membuat target kompetisi SMP."
+  }
+}
