@@ -79,12 +79,12 @@ Options:
   --by <topic|week|none>
                        Group the KPI metrics by topic family or by §4 week
                        number, in addition to the overall (ungrouped)
-                       section. Default: none. NOTE: this repository ships
-                       no problemId->topic or date->week registry of its
-                       own (see docs/cli/README.md's "osn report" section),
-                       so --by topic and --by week currently always fail
-                       with an actionable usage error; use --by none (the
-                       default) to get a full report today.
+                       section. Default: none. DOCUMENTED LIMIT: a learning
+                       record carries neither a topic family nor a week
+                       number, so --by topic and --by week always exit 2
+                       with an explanatory message; use --by none (the
+                       default), or --format json and group outside the CLI
+                       (see docs/cli/README.md's "osn report" section).
   --format <md|json>   Output format. Default: md.
   --out <path>         Write the rendered report to this path instead of
                        stdout.
@@ -294,6 +294,20 @@ function isReportGroupBy(value: string | undefined): value is ReportGroupBy {
   return value === "topic" || value === "week" || value === "none";
 }
 
+/**
+ * The CLI-facing explanation of why `--by topic` / `--by week` cannot work
+ * from a bare learning-record file (a documented limit, issue #95): a
+ * learning record carries neither a topic family nor a week number, and the
+ * CLI has no registry to derive them from.
+ */
+export function groupByUnsupportedMessage(groupBy: "topic" | "week"): string {
+  const missing =
+    groupBy === "topic"
+      ? "a learning record carries a problemId but no topic family (rumpun materi), and no problem-to-topic mapping is shipped with the CLI"
+      : "a learning record carries a recordedAt timestamp but no week number, and a week depends on a cohort's own start date and excluded days, which the CLI cannot know";
+  return `osn report: --by ${groupBy} is not supported by the CLI: ${missing}. Supported: omit --by (or use --by none) for the overall report; export --format json and group by ${groupBy} outside the CLI. This is a documented limit (docs/cli/README.md, "osn report").\n`;
+}
+
 export const reportCommand: Command = {
   name: "report",
   summary: "Compute the §6.3 mentor KPI dashboard from a learning-record file.",
@@ -394,7 +408,11 @@ export const reportCommand: Command = {
       report = buildKpiReport({ records, groupBy });
     } catch (cause) {
       if (cause instanceof ReportRequestError) {
-        ctx.stderr(`osn report: ${cause.message}\n`);
+        ctx.stderr(
+          groupBy === "topic" || groupBy === "week"
+            ? groupByUnsupportedMessage(groupBy)
+            : `osn report: ${cause.message}\n`,
+        );
         return EXIT_USAGE_ERROR;
       }
       throw cause;

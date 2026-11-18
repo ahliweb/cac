@@ -43,9 +43,9 @@ Corpus version: 2.0 (2026-09-04)
 
 ## Syllabus-check status (§14.2 rule 8)
 
-Latest check: 2026-09-05 -- outcome: no-change.
+Latest check: 2026-11-18 -- outcome: no-change.
 Sources checked: R1, R2, R3, R7, R8.
-Days since last check (as of 2026-11-18): 74.
+Days since last check (as of 2026-11-18): 0.
 
 ## Cohort readiness checklist (§14.1)
 
@@ -53,10 +53,13 @@ Days since last check (as of 2026-11-18): 74.
 ...
 ```
 
-Perhatikan baris "Days since last check". Entri pemeriksaan 2026-09-05 di
-repositori hanya mencatat asal transkripsi, bukan pemeriksaan langsung ke
-situs resmi (catatannya tertulis di `osn checklist --json`). Sebelum kohort
-baru, lakukan pemeriksaan silabus sesungguhnya mengikuti
+Perhatikan baris "Days since last check": angka itu dihitung dari tanggal
+hari ini (UTC), jadi akan bertambah seiring waktu. Entri 2026-09-05 di
+repositori hanya mencatat asal transkripsi. Entri 2026-11-18 adalah
+pemeriksaan langsung ke R1, R2, R3, R7, dan R8 yang dikerjakan agent AI atas
+nama pemilik; isi catatannya (apa yang dibandingkan dan apa yang tidak) ada di
+`data/osn/syllabus-check-log.json`. Sebelum kohort baru, ulangi pemeriksaan
+silabus mengikuti
 [`docs/operations/syllabus-check.md`](../operations/syllabus-check.md).
 Jangan memulai Minggu 1 selagi ada butir §14.1 yang belum terpenuhi.
 
@@ -326,8 +329,12 @@ Hal yang perlu diketahui:
     - [index 0] (root): key "email"
   ```
 
-- `--by topic` dan `--by week` saat ini selalu gagal (exit 2), karena catatan
-  tidak membawa rumpun materi maupun nomor minggu. Pakai bawaan (`--by none`).
+- `--by topic` dan `--by week` adalah batas yang didokumentasikan: selalu
+  berhenti dengan exit 2, karena catatan belajar tidak membawa rumpun materi
+  maupun nomor minggu. Pesan galatnya menjelaskan alasannya dan alternatifnya:
+  jalankan tanpa `--by` (sama dengan `--by none`) untuk laporan keseluruhan,
+  atau keluarkan `--format json` lalu kelompokkan per rumpun atau minggu di
+  luar CLI.
 - `--format json` (atau `--json`) untuk keluaran mesin; `--out`/`--force` seperti di atas.
 - Baca laporan sebagai sinyal penguasaan dan transfer, bukan papan skor jumlah
   soal (peringatan itu dicetak di setiap laporan).

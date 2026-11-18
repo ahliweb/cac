@@ -156,10 +156,19 @@ describe("data/osn/syllabus-check-log.json (via src/domain/operations.ts)", () =
   });
 
   test("the seeded entry cites R1/R2/R3/R7/R8 and does not claim a live network check was performed", () => {
-    const latest = latestSyllabusCheck();
-    expect(latest.sources).toEqual(["R1", "R2", "R3", "R7", "R8"]);
-    expect(latest.notes.toLowerCase()).toContain("no live check");
-    expect(latest.notes.toLowerCase()).toContain("no network access");
+    const seeded = listSyllabusChecks().find((entry) => entry.checkedOn === "2026-09-05");
+    expect(seeded).toBeDefined();
+    expect(seeded?.sources).toEqual(["R1", "R2", "R3", "R7", "R8"]);
+    expect(seeded?.notes.toLowerCase()).toContain("no live check");
+    expect(seeded?.notes.toLowerCase()).toContain("no network access");
+  });
+
+  test("the 2026-11-18 entry is a live check performed by an AI agent and says what was not done", () => {
+    const live = listSyllabusChecks().find((entry) => entry.checkedOn === "2026-11-18");
+    expect(live).toBeDefined();
+    expect(live?.sources).toEqual(["R1", "R2", "R3", "R7", "R8"]);
+    expect(live?.notes).toContain("AI agent");
+    expect(live?.notes).toContain("Not done:");
   });
 
   test("latestSyllabusCheck picks the entry with the greatest checkedOn date", () => {

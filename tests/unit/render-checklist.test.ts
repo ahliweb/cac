@@ -12,7 +12,7 @@ import {
 } from "../../src/domain/operations";
 import { renderChecklist } from "../../src/render/checklist";
 
-const FIXED_ASOF = new Date("2026-09-10T00:00:00Z");
+const FIXED_ASOF = new Date("2026-11-25T00:00:00Z");
 
 describe("renderChecklist", () => {
   const rendered = renderChecklist(FIXED_ASOF);
@@ -71,7 +71,7 @@ describe("renderChecklist", () => {
   });
 
   test("changes only the days-since figure for a different asOf, not the underlying data", () => {
-    const later = renderChecklist(new Date("2026-09-20T00:00:00Z"));
+    const later = renderChecklist(new Date("2026-12-05T00:00:00Z"));
     expect(later).not.toBe(rendered);
     for (const item of listReadinessItems()) {
       expect(later).toContain(item.item);

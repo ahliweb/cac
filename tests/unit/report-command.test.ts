@@ -107,22 +107,32 @@ describe("reportCommand.run: usage errors", () => {
     expect(stderr.join("")).toContain("--by");
   });
 
-  test("--by topic without a resolver exits 2 naming resolveTopic", async () => {
+  test("--by topic exits 2 with the documented-limit message", async () => {
     const path = join(tempDir, "records.jsonl");
     await writeFile(path, `${JSON.stringify(BASE_RECORD)}\n`, "utf-8");
     const { ctx, stderr } = makeContext();
     const code = await reportCommand.run(["--records", path, "--by", "topic"], ctx);
     expect(code).toBe(2);
-    expect(stderr.join("")).toContain("resolveTopic");
+    const message = stderr.join("");
+    expect(message).toContain("--by topic is not supported by the CLI");
+    expect(message).toContain("no topic family");
+    expect(message).toContain("omit --by (or use --by none)");
+    expect(message).toContain("--format json");
+    expect(message).not.toContain("resolveTopic");
   });
 
-  test("--by week without a resolver exits 2 naming resolveWeek", async () => {
+  test("--by week exits 2 with the documented-limit message", async () => {
     const path = join(tempDir, "records.jsonl");
     await writeFile(path, `${JSON.stringify(BASE_RECORD)}\n`, "utf-8");
     const { ctx, stderr } = makeContext();
     const code = await reportCommand.run(["--records", path, "--by", "week"], ctx);
     expect(code).toBe(2);
-    expect(stderr.join("")).toContain("resolveWeek");
+    const message = stderr.join("");
+    expect(message).toContain("--by week is not supported by the CLI");
+    expect(message).toContain("no week number");
+    expect(message).toContain("omit --by (or use --by none)");
+    expect(message).toContain("--format json");
+    expect(message).not.toContain("resolveWeek");
   });
 
   test("--format with no following value exits 2", async () => {
