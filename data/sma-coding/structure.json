@@ -1,6 +1,6 @@
 {
-  "syllabusVersion": "1.0.0",
-  "syllabusDate": "2026-11-18",
+  "syllabusVersion": "1.1.0",
+  "syllabusDate": "2026-11-19",
   "sourceSection": "bagian 2",
   "rows": [
     {
@@ -30,14 +30,14 @@
     {
       "id": "hubungan-jalur",
       "item": "Hubungan jalur",
-      "value": "Murid memilih satu jalur (A, B, atau kelak C); boleh mengambil jalur lain bila waktu sekolah mengizinkan",
-      "status": "Ditetapkan pemilik 2026-11-18."
+      "value": "Murid memilih satu jalur (A, B, atau kelak C); boleh mengambil jalur lain bila waktu sekolah mengizinkan. Sebelum memilih jalur, semua murid kelas X mengikuti blok fondasi bersama (bagian 3.0).",
+      "status": "Ditetapkan pemilik 2026-11-18; blok fondasi bersama: keputusan pemilik 2026-11-18 (bagian 9.1)."
     },
     {
       "id": "pola-semester",
       "item": "Pola tiap semester",
-      "value": "Minggu 1-12 materi; minggu 13 proyek mini; minggu 14 asesmen dan refleksi",
-      "status": "`[asumsi]`"
+      "value": "Minggu 1-12 materi; minggu 13 proyek mini; minggu 14 asesmen dan refleksi. Kelas X semester 1: minggu 1-7 blok fondasi (FND-X1-M1..M7), minggu 8-12 materi jalur; asesmen fondasi bersifat formatif dan dilebur ke asesmen minggu 14.",
+      "status": "`[asumsi]`; blok fondasi dan asesmen formatif: keputusan pemilik 2026-11-18 (bagian 9.1)."
     },
     {
       "id": "nilai-dasar",

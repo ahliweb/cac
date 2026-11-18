@@ -4,12 +4,13 @@
  * individual week codes, so the notation can be checked referentially.
  *
  * Notation: segments are separated by `;`. A segment starts with a full
- * code carrying its semester prefix (`A-X2-M4..M9`); later parts of the
+ * code carrying its semester prefix (`A-X2-M4..M9`, or `FND-X1-M2` for the
+ * shared foundation block); later parts of the
  * same segment, separated by `,`, reuse that prefix (`, M13`). A part is a
  * single week (`M13`) or an inclusive range (`M4..M9`).
  */
 
-const FULL_PART = /^([A-Z]-(?:X|XI|XII)[12])-M(\d+)(?:\.\.M(\d+))?$/;
+const FULL_PART = /^((?:[A-Z]|FND)-(?:X|XI|XII)[12])-M(\d+)(?:\.\.M(\d+))?$/;
 const SHORT_PART = /^M(\d+)(?:\.\.M(\d+))?$/;
 
 /**

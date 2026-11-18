@@ -35,11 +35,11 @@ async function runCli(args: readonly string[]): Promise<CliResult> {
 }
 
 describe("osn validate with the sma-coding programme", () => {
-  test("--program sma-coding validates its six files, exit 0", async () => {
+  test("--program sma-coding validates its seven files, exit 0", async () => {
     const result = await runCli(["validate", "--program", "sma-coding"]);
     expect(result.exitCode).toBe(0);
     expect(result.stdout).toContain('programme "sma-coding"');
-    expect(result.stdout).toContain("6 data file(s) validated, 0 problem(s) found");
+    expect(result.stdout).toContain("7 data file(s) validated, 0 problem(s) found");
   });
 
   test("--program sma-coding --json reports ok and no unregistered file", async () => {
@@ -52,7 +52,7 @@ describe("osn validate with the sma-coding programme", () => {
     };
     expect(json.ok).toBe(true);
     expect(json.program).toBe("sma-coding");
-    expect(json.summary.filesValidated).toBe(6);
+    expect(json.summary.filesValidated).toBe(7);
     expect(json.summary.filesUnregistered).toBe(0);
   });
 

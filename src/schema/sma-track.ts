@@ -1,6 +1,6 @@
 /**
  * Schema for `data/sma-coding/tracks.json`: the approved learning tracks
- * (jalur A and B of syllabus v1.0; jalur C is not approved yet, #68).
+ * (jalur A and B of the approved syllabus; jalur C is not approved yet, #68).
  */
 
 import { z } from "zod";
@@ -21,7 +21,7 @@ export const smaTrackSchema = z
     approvedOn: z
       .string()
       .regex(/^\d{4}-\d{2}-\d{2}$/, 'must be an ISO date "YYYY-MM-DD"')
-      .describe("The owner's approval date, from the syllabus status line."),
+      .describe("The owner's approval date of the encoded syllabus version, from its status line."),
   })
   .strict();
 

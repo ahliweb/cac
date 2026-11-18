@@ -29,7 +29,7 @@ Dokumen ini independen dan bukan dokumen resmi Puspresnas, IA TOKI, atau IOI.
 | Program (`--program`) | Isi | Sumber | Dukungan alat |
 | --- | --- | --- | --- |
 | `osn` | Pembinaan OSN Informatika 2026, 28 minggu, 10 rumpun materi, 7 gerbang (checkpoint). | PDF silabus v2.0 (4 September 2026) di `docs/`. | Penuh: `validate`, `plan`, `render`, `report`, `checklist`. |
-| `sma-coding` | Coding SMA kelas X-XII: jalur A (C++) dan jalur B (web JS/TS/Bun). | `docs/programs/sma-coding/silabus.md` v1.0, disetujui pemilik program 2026-11-18. | Baru `validate`. Perintah lain menolak dengan exit 2 (issue #77). |
+| `sma-coding` | Coding SMA kelas X-XII: jalur A (C++) dan jalur B (web JS/TS/Bun). | `docs/programs/sma-coding/silabus.md` v1.1, disetujui pemilik program 2026-11-19 (v1.0: 2026-11-18). | Baru `validate`. Perintah lain menolak dengan exit 2 (issue #77). |
 
 ## Anda siapa? Baca halaman ini
 
