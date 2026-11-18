@@ -195,9 +195,10 @@ check:module-code`).
 **What belongs here:** one folder per programme other than OSN, named by
 programme id (ADR-0006), holding that programme's source document. A
 source document that the owner has not yet approved is authored content
-and stays marked `DRAF` (ADR-0007). Today: `sma-coding/` — the draft
-syllabus for the senior-high-school coding programme (`README.md`,
-`silabus-draf.md`).
+and stays marked `DRAF` (ADR-0007). Today: `sma-coding/` — the syllabus for
+the senior-high-school coding programme (`README.md`, `silabus.md`), v1.0
+approved by the programme owner on 2026-11-18 for tracks A and B (track C
+and companion modules still being drafted).
 
 **What must never go here:** machine-readable data (belongs in
 `data/<program>/`, and only after the source is approved); learner data;

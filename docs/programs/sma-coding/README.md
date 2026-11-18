@@ -1,52 +1,53 @@
 # Program Pembelajaran Coding SMA (`sma-coding`)
 
-- **Version:** v0.1.0
+- **Version:** v1.0.0
 - **Last updated:** 2026-11-18
-- **Status:** DRAF
+- **Status:** Silabus v1.0 DISETUJUI pemilik program (2026-11-18) untuk jalur A dan B; jalur C dan modul pendamping masih disusun.
 
-> **DRAF — belum disetujui pemilik.** Seluruh isi folder ini adalah konten
-> **karangan** (*authored*) berstatus DRAF sesuai
-> [ADR-0007](../../architecture/adr/0007-authored-learning-content.md). Ini
-> bukan transkripsi sumber resmi, bukan dokumen pemerintah, dan belum boleh
-> dipakai sebagai sumber data. Program ini belum terdaftar di registri
-> program dan belum punya korpus di `data/` (ADR-0006).
+> **Disetujui pemilik program pada 2026-11-18 untuk jalur A dan B** (issue
+> #52). Isi folder ini adalah konten **karangan** (*authored*) menurut
+> [ADR-0007](../../architecture/adr/0007-authored-learning-content.md),
+> bukan dokumen pemerintah. Silabus v1.0 kini menjadi sumber corpus program
+> `sma-coding` (ADR-0006); pengodean ke `data/sma-coding/` dikerjakan di
+> issue #52. Jalur C (#68) dan modul pendamping (#69) belum disetujui.
 
 ## Tujuan program
 
 Menyediakan silabus pembelajaran coding untuk SMA kelas X (Fase E) sampai
 XI–XII (Fase F) yang berpijak pada Capaian Pembelajaran (CP) Informatika
-Kurikulum Merdeka, dengan dua jalur:
+Kurikulum Merdeka:
 
-| Jalur | Isi | Peran |
-| --- | --- | --- |
-| A | Algoritmik dengan C++ | Selaras dengan, dan menjadi jembatan ke, pembinaan OSN Informatika (rumpun materi di `data/osn/topic-families.json`). |
-| B | Pengembangan web dengan JavaScript + TypeScript, runtime Bun, dan template publik `ahliweb/awcms-one` (MIT) | Keterampilan membangun produk digital, berujung pada kustomisasi template. |
+| Jalur | Isi | Peran | Status |
+| --- | --- | --- | --- |
+| A | Algoritmik dengan C++ | Selaras dengan, dan menjadi jembatan ke, pembinaan OSN Informatika (rumpun materi di `data/osn/topic-families.json`). | Disetujui v1.0 |
+| B | Pengembangan web dengan JavaScript + TypeScript, runtime Bun, dan template publik `ahliweb/awcms-one` (MIT) | Keterampilan membangun produk digital, berujung pada kustomisasi profil `landing` template. | Disetujui v1.0 |
+| C | IoT/robotika | Interaksi dengan perangkat fisik. | Disusun (#68) |
 
-Keputusan pemilik tertanggal 2026-11-18 (issue #49 dan #51) mengikat
-pilihan sumber, cakupan kelas, dan dua jalur di atas.
+Modul pendamping literasi digital untuk butir CP di luar coding: disusun
+(#69).
 
-## Cara review
+## Keputusan pemilik
 
-1. Baca [`silabus-draf.md`](silabus-draf.md) mulai dari bagian 1 (sumber
-   resmi); tandai setiap butir `[belum terverifikasi]`.
-2. Periksa tabel pemetaan CP (bagian 4) dan jembatan OSN (bagian 5).
-3. Nilai analisis kelayakan `awcms-one` (bagian 6) dan jawab "Pertanyaan
-   terbuka untuk pemilik" (bagian 9).
-4. Catat keputusan (tanggal dan opsi terpilih) di issue #51. Persetujuan
-   hanya sah bila dipilih pemilik; draf ini tidak pernah mencatat
-   persetujuan atas nama pemilik.
-5. Setelah disetujui, pengodean ke `data/` dikerjakan di issue terpisah
-   (#52): skema lebih dulu, lalu data, domain, dan uji.
+Semua keputusan tertanggal 2026-11-18 dan dicatat di issue #49, #51, dan
+#52; ringkasannya ada di bagian 9 [`silabus.md`](silabus.md).
+
+## Cara mengusulkan perubahan
+
+Perubahan pada silabus yang sudah disetujui mengikuti alur konten karangan
+(ADR-0007): usulan lewat issue, revisi berstatus draf, lalu persetujuan
+pemilik yang dicatat dengan tanggal. Agent tidak pernah mencatat
+persetujuan atas nama pemilik.
 
 ## Daftar berkas
 
 | Berkas | Isi |
 | --- | --- |
-| `README.md` | Dokumen ini: tujuan, status, cara review, daftar berkas. |
-| `silabus-draf.md` | Draf silabus v0.1.0: sumber resmi, struktur dan rencana mingguan kedua jalur, pemetaan CP, jembatan OSN, kelayakan `awcms-one`, asesmen, perangkat, privasi, rujukan, pertanyaan terbuka, changelog. |
+| `README.md` | Dokumen ini: tujuan, status, keputusan, daftar berkas. |
+| `silabus.md` | Silabus v1.0.0: sumber resmi dan kutipan CP, struktur dan rencana mingguan jalur A dan B, pemetaan CP, jembatan OSN, kelayakan `awcms-one`, asesmen, perangkat, privasi, keputusan pemilik, rujukan, changelog. |
 
 ## Changelog
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v1.0.0 | 2026-11-18 | Silabus disetujui untuk jalur A dan B; `silabus-draf.md` menjadi `silabus.md`; status jalur C dan modul pendamping dicatat. |
 | v0.1.0 | 2026-11-18 | Draf awal folder program (issue #51). |
