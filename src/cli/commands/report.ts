@@ -59,7 +59,7 @@ import type { Command } from "../command";
 import { EXIT_SUCCESS, EXIT_USAGE_ERROR, EXIT_VALIDATION_FAILURE } from "../command";
 import { formatReportJson, formatReportMarkdown } from "../format-report";
 import { writeOutputFile } from "../output-writer";
-import { resolveProgramOption } from "../program-loader";
+import { rejectNonOsnProgram, resolveProgramOption } from "../program-loader";
 
 const HELP_TEXT = `osn report -- mentor KPI dashboard reporting from learning records
 
@@ -92,6 +92,7 @@ Options:
                        an existing file at --out is left byte-for-byte
                        untouched and the command exits 2.
   --program <id>  Programme whose corpus to use (a registered id; default osn).
+                  Only osn is supported; any other registered id exits 2.
   -h, --help           Show this help.
 
 Input format detection:
@@ -302,6 +303,10 @@ export const reportCommand: Command = {
     const resolved = await resolveProgramOption("report", rawArgs, ctx);
     if (!resolved.ok) {
       return resolved.exitCode;
+    }
+    const unsupported = rejectNonOsnProgram("report", resolved.program, ctx);
+    if (unsupported !== undefined) {
+      return unsupported;
     }
     const args = resolved.args;
     const recordsValue = readFlagValue(args, "--records");

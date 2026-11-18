@@ -1,0 +1,21 @@
+{
+  "syllabusVersion": "1.0.0",
+  "syllabusDate": "2026-11-18",
+  "sourceSection": "bagian 3",
+  "tracks": [
+    {
+      "id": "A",
+      "name": "Algoritmik dengan C++",
+      "tools": ["C++"],
+      "approvalStatus": "disetujui",
+      "approvedOn": "2026-11-18"
+    },
+    {
+      "id": "B",
+      "name": "Web dengan JavaScript, TypeScript, dan Bun",
+      "tools": ["JavaScript", "TypeScript", "Bun"],
+      "approvalStatus": "disetujui",
+      "approvedOn": "2026-11-18"
+    }
+  ]
+}

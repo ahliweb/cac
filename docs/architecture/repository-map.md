@@ -26,7 +26,7 @@ must be validated by a schema in `src/schema/` (see "Ordering rule" in
 derived values, real learner personal data (see ADR-0004), or a data file
 for a shape that has no corresponding schema.
 
-**State today:** `data/programs.json` (one entry, `osn`) and `data/osn/` with 22 schema-validated JSON files, one per curriculum
+**State today:** `data/programs.json` (two entries, `osn` and `sma-coding`), `data/sma-coding/` with six schema-validated JSON files transcribed from the approved `docs/programs/sma-coding/silabus.md` v1.0 (`cp-elements.json`, `tracks.json`, `structure.json`, `weeks.json`, `cp-mapping.json`, `osn-bridge.json`; schemas `src/schema/sma-*.ts`, audit `src/domain/sma-corpus-audit.ts`, cell-by-cell fidelity check `scripts/check-sma-coding-fidelity.ts`), and `data/osn/` with 22 schema-validated JSON files, one per curriculum
 concept (`data/osn/topic-families.json`, `data/osn/weeks.json`, `data/osn/gates.json`,
 `data/osn/references.json`, `data/osn/assessment-weights.json`,
 `data/osn/kpi-definitions.json`, `data/osn/playbooks.json`, and so on — see
@@ -63,7 +63,9 @@ is a domain-layer concern).
 `session-template.ts`, `hint-policy.ts`, `mentor-sop.ts`, `assessment.ts`,
 `learning-load.ts`, `problem-status.ts`, `kpi.ts`, `playbook.ts`,
 `assessment-bank.ts`, `problem-taxonomy.ts`, `learning-record.ts`,
-`readiness-checklist.ts`, `operational-rules.ts`, `syllabus-check.ts`).
+`readiness-checklist.ts`, `operational-rules.ts`, `syllabus-check.ts`), plus
+the `sma-coding` corpus shapes (`sma-common.ts`, `sma-cp.ts`, `sma-track.ts`,
+`sma-structure.ts`, `sma-week.ts`, `sma-cp-mapping.ts`, `sma-osn-bridge.ts`).
 
 ## `src/domain/`
 
@@ -90,7 +92,7 @@ schema), `privacy-scan.ts` (the `osn privacy-check` scan logic),
 `operations.ts` (readiness checklist, operational rules, syllabus-check
 log), `cohort-plan.ts` (the `osn plan` calendar generator), `report.ts`
 (the `osn report` KPI dashboard), and `corpus-audit.ts` (the `osn
-validate` whole-corpus audit) and `modules.ts` (referential rules for the optional `data/<program>/modules.json`).
+validate` whole-corpus audit), `sma-corpus-audit.ts` (the same for the `sma-coding` corpus, including the cross-programme reference to the OSN topic families), `sma-week-codes.ts` (expands the week notation of the SMA syllabus) and `modules.ts` (referential rules for the optional `data/<program>/modules.json`).
 
 ## `src/render/`
 
@@ -171,7 +173,7 @@ CLI command run end-to-end asserting on output/exit code.
 **State today:** `requirements.test.ts` (verifies the requirements
 register and traceability matrices via `scripts/check-requirements.ts`),
 `checklist-fidelity.test.ts` (verifies transcription fidelity via
-`scripts/check-checklist-fidelity.ts`), `cli-validate.test.ts` and
+`scripts/check-checklist-fidelity.ts`), `sma-coding-fidelity.test.ts` (the same for `data/sma-coding/` against the SMA syllabus, via `scripts/check-sma-coding-fidelity.ts`), `cli-sma-coding.test.ts` (`osn validate` for the `sma-coding` programme and the exit-2 refusal of OSN-only commands), `cli-validate.test.ts` and
 `cli-validate-fixtures.test.ts` (the full corpus, and a deliberately
 corrupted fixture corpus), and one end-to-end test per remaining CLI
 command (`cli-plan.test.ts`, `cli-render.test.ts`, `cli-report.test.ts`,
@@ -187,8 +189,9 @@ tooling, not part of the curriculum-as-code pipeline itself).
 
 **State today:** `check-requirements.ts` (backs `bun run
 check:requirements`), `check-checklist-fidelity.ts` (backs `bun run
-check:checklist-fidelity`) and `check-module-code.ts` (backs `bun run
-check:module-code`).
+check:checklist-fidelity`), `check-module-code.ts` (backs `bun run
+check:module-code`) and `check-sma-coding-fidelity.ts` (backs `bun run
+check:sma-fidelity`).
 
 ## `docs/programs/`
 

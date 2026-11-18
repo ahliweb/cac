@@ -23,6 +23,7 @@ Tables, not prose — drift should be visible at a glance.
 | `data/programs.json` | Programme registry (ADR-0006), validated by `src/schema/program.ts`. |
 | `content/` | Authored learning-module bodies, `content/<program>/modules/<id>.md` (ADR-0007). Indexed by `data/<program>/modules.json`; never transcribed syllabus content. |
 | `data/osn/` | The OSN programme corpus (`data/osn/*.json`) and `data/osn/samples/` (synthetic learning records). One `data/<program>/` directory per registered programme. |
+| `data/sma-coding/` | The SMA coding programme corpus (six JSON files transcribed from `docs/programs/sma-coding/silabus.md` v1.0: CP elements, tracks A/B, structure, weekly plan, CP mapping, OSN bridge), validated by the `src/schema/sma-*.ts` schemas and `src/domain/sma-corpus-audit.ts`. |
 | `tests/unit/` | One module tested in isolation. Mirrors `src/` loosely. |
 | `tests/integration/` | Cross-module tests (schema → domain → CLI/render). |
 | `docs/architecture/` | System architecture overview, repository map, and ADRs. |
@@ -65,6 +66,7 @@ table.
 | `bun run check:requirements` | `bun run scripts/check-requirements.ts` — verifies the requirements register and traceability matrices are consistent and exhaustive. |
 | `bun run check:checklist-fidelity` | `bun run scripts/check-checklist-fidelity.ts` — verifies §14.1/§14.2 data matches the source syllabus verbatim. |
 | `bun run check:module-code` | `bun run scripts/check-module-code.ts` — compiles every ```` ```cpp ```` block in `content/**/modules/*.md` with `g++ -std=c++17 -fsyntax-only` (nothing is run); fails if `g++` is missing. |
+| `bun run check:sma-fidelity` | `bun run scripts/check-sma-coding-fidelity.ts` — parses the Markdown tables of `docs/programs/sma-coding/silabus.md` (bagian 1.3, 1.4, 2, 3, 4, 5) and compares them cell by cell with `data/sma-coding/*.json`; exits 1 on any drift. |
 | `bun run changeset` | Create a changeset (interactive). |
 | `bun run version` | Consume changesets into `CHANGELOG.md` / bump version. |
 
@@ -152,6 +154,7 @@ not duplicate that policy here; that document is the source of truth.
 - [ ] `bun run privacy-check` passes (no direct-identifier-shaped key in `data/`).
 - [ ] `bun run check:requirements` passes if `docs/requirements/` was touched.
 - [ ] `bun run check:module-code` passes (C++ examples in `content/` modules compile).
+- [ ] `bun run check:sma-fidelity` passes if `data/sma-coding/` or `docs/programs/sma-coding/silabus.md` changed.
 - [ ] Every command and path mentioned in any doc you touched actually
       exists — verify, don't assume.
 - [ ] Tests added/updated for the change (per `docs/development/testing.md`).

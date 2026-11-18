@@ -55,6 +55,7 @@ bun test
 | `content/` | Authored learning-module bodies (`content/<program>/modules/<id>.md`, ADR-0007), indexed by `data/<program>/modules.json`. Always marked `DRAF` until a human approves them. |
 | `data/programs.json` | The programme registry (ADR-0006): one entry per programme, validated by `src/schema/program.ts`. |
 | `data/osn/` | The OSN programme corpus: 22 schema-validated JSON files plus the optional learning-module index `modules.json` (topic families, weeks, gates, references, assessment model, KPI definitions, playbooks, and more) plus `samples/` (synthetic learning records). |
+| `data/sma-coding/` | The SMA coding programme corpus: six schema-validated JSON files transcribed from the approved `docs/programs/sma-coding/silabus.md` v1.0 (CP elements, tracks A and B, structure, 168-week plan, CP mapping, OSN bridge). |
 | `tests/unit/` | Fast, isolated tests, one module at a time. |
 | `tests/integration/` | Cross-module tests (requirements-register verification, full-corpus and CLI end-to-end tests). |
 | `docs/development/` | Engineering process docs: testing, CI/CD, releasing. |
@@ -96,6 +97,7 @@ test`). This table matches `package.json` exactly.
 | `bun run check:requirements` | `bun run scripts/check-requirements.ts` | Verifies `docs/requirements/register.md` and `traceability.md` are internally consistent and exhaustive. |
 | `bun run check:checklist-fidelity` | `bun run scripts/check-checklist-fidelity.ts` | Verifies the §14.1/§14.2 data in `data/osn/` matches the source syllabus verbatim. |
 | `bun run check:module-code` | `bun run scripts/check-module-code.ts` | Compiles every `cpp` block of `content/**/modules/*.md` with `g++ -std=c++17 -fsyntax-only` (never runs them). Exits 1 on a failing block or a missing `g++`. |
+| `bun run check:sma-fidelity` | `bun run scripts/check-sma-coding-fidelity.ts` | Verifies `data/sma-coding/*.json` matches the tables of the approved `docs/programs/sma-coding/silabus.md` cell by cell. Exits 1 on any drift. |
 | `bun run changeset` | `changeset` | Interactive changeset creation. See `docs/development/releasing.md`. |
 | `bun run version` | `changeset version` | Consumes changesets into `CHANGELOG.md` and bumps `package.json` version. |
 
@@ -113,7 +115,7 @@ Milestones as tracked in the GitHub repository (`ahliweb/osn`):
 | **M6: Governance & Release** | Privacy, security, ISO mapping, runbook, v1.0.0 | Complete (v1.0.0, then v1.1.0). |
 | **M7: Multi-program Foundation** | ADR-0006/0007, programme registry, `data/<program>/`, `--program` | Complete (v2.0.0). |
 | **M8: OSN Learner Materials** | Learner sheet, learning modules | In progress — learner sheet and module framework shipped in v2.0.0; the pilot module `dasar-pemrograman` was approved on 2026-11-18; the other nine are being drafted ([#55](https://github.com/ahliweb/osn/issues/55)). |
-| **M9: SMA Coding Programme** | SMA coding syllabus (grades X–XII) and its corpus | In progress — syllabus v1.0 (tracks A and B) approved 2026-11-18 in `docs/programs/sma-coding/`; encoding into `data/sma-coding/` in progress ([#52](https://github.com/ahliweb/osn/issues/52)); track C ([#68](https://github.com/ahliweb/osn/issues/68)) and companion modules ([#69](https://github.com/ahliweb/osn/issues/69)) being drafted. |
+| **M9: SMA Coding Programme** | SMA coding syllabus (grades X–XII) and its corpus | In progress — syllabus v1.0 (tracks A and B) approved 2026-11-18 in `docs/programs/sma-coding/` and encoded into `data/sma-coding/` ([#52](https://github.com/ahliweb/osn/issues/52); `osn validate --program sma-coding`; `plan`, `render`, `report` and `checklist` do not support the programme yet and exit 2); track C ([#68](https://github.com/ahliweb/osn/issues/68)) and companion modules ([#69](https://github.com/ahliweb/osn/issues/69)) being drafted. |
 
 See `gh issue list --repo ahliweb/osn --state all` (or the
 [Issues](https://github.com/ahliweb/osn/issues) tab) for the individual

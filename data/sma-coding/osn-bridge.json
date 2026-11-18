@@ -1,0 +1,122 @@
+{
+  "syllabusVersion": "1.0.0",
+  "syllabusDate": "2026-11-18",
+  "sourceSection": "bagian 5",
+  "track": "A",
+  "bridges": [
+    {
+      "familyId": "dasar-pemrograman",
+      "topics": "sintaks C++, variabel, I/O, percabangan, perulangan, fungsi",
+      "weeksText": "A-X1-M3..M9",
+      "weeks": ["A-X1-M3", "A-X1-M4", "A-X1-M5", "A-X1-M6", "A-X1-M7", "A-X1-M8", "A-X1-M9"],
+      "note": "Sesuai CP.",
+      "hasEnrichment": false
+    },
+    {
+      "familyId": "logika-bitwise",
+      "topics": "logika Boolean; operasi bit",
+      "weeksText": "A-X1-M8; A-X2-M12",
+      "weeks": ["A-X1-M8", "A-X2-M12"],
+      "note": "Operasi bit: **P**.",
+      "hasEnrichment": true
+    },
+    {
+      "familyId": "aritmetika",
+      "topics": "paritas, FPB/KPK, prima; aritmetika modular",
+      "weeksText": "A-X2-M2..M3; A-XII1-M8",
+      "weeks": ["A-X2-M2", "A-X2-M3", "A-XII1-M8"],
+      "note": "**P** untuk modular.",
+      "hasEnrichment": true
+    },
+    {
+      "familyId": "aturan-berhitung",
+      "topics": "aturan jumlah dan kali, permutasi dan kombinasi, Pascal",
+      "weeksText": "A-XII1-M6..M7",
+      "weeks": ["A-XII1-M6", "A-XII1-M7"],
+      "note": "**P**.",
+      "hasEnrichment": true
+    },
+    {
+      "familyId": "rekursi",
+      "topics": "rekursi, divide-and-conquer, backtracking",
+      "weeksText": "A-X2-M10; A-XI1-M7, M11; A-XII2-M4",
+      "weeks": ["A-X2-M10", "A-XI1-M7", "A-XI1-M11", "A-XII2-M4"],
+      "note": "Rekursi ada di panduan (strategi algoritmik).",
+      "hasEnrichment": false
+    },
+    {
+      "familyId": "search-sort",
+      "topics": "pencarian sekuensial dan biner; bubble, insertion; merge, quick",
+      "weeksText": "A-X2-M7..M9; A-XI1-M8",
+      "weeks": ["A-X2-M7", "A-X2-M8", "A-X2-M9", "A-XI1-M8"],
+      "note": "Bubble/insertion/sekuensial/biner sesuai panduan; merge dan quick: **P**.",
+      "hasEnrichment": true
+    },
+    {
+      "familyId": "strategi-problem-solving",
+      "topics": "pencarian lengkap dan pruning, greedy, divide-and-conquer, DP",
+      "weeksText": "A-XI1-M3..M7, M11..M12; A-XI2-M1..M4",
+      "weeks": [
+        "A-XI1-M3",
+        "A-XI1-M4",
+        "A-XI1-M5",
+        "A-XI1-M6",
+        "A-XI1-M7",
+        "A-XI1-M11",
+        "A-XI1-M12",
+        "A-XI2-M1",
+        "A-XI2-M2",
+        "A-XI2-M3",
+        "A-XI2-M4"
+      ],
+      "note": "Greedy, rekursi, DP ada di panduan; pencarian lengkap: **P**.",
+      "hasEnrichment": true
+    },
+    {
+      "familyId": "struktur-data",
+      "topics": "array, string, stack, queue, heap, DSU, Fenwick, segment tree",
+      "weeksText": "A-X1-M10..M12; A-X2-M4..M6; A-XI1-M9..M10; A-XII1-M4, M9..M10",
+      "weeks": [
+        "A-X1-M10",
+        "A-X1-M11",
+        "A-X1-M12",
+        "A-X2-M4",
+        "A-X2-M5",
+        "A-X2-M6",
+        "A-XI1-M9",
+        "A-XI1-M10",
+        "A-XII1-M4",
+        "A-XII1-M9",
+        "A-XII1-M10"
+      ],
+      "note": "Stack, queue, list sesuai panduan; heap, DSU, Fenwick, segment tree: **P**.",
+      "hasEnrichment": true
+    },
+    {
+      "familyId": "graph-tree",
+      "topics": "representasi graf, BFS/DFS, keterhubungan, lintasan terpendek, MST, pohon berakar, LCA",
+      "weeksText": "A-XI2-M5..M8; A-XII1-M1..M5",
+      "weeks": [
+        "A-XI2-M5",
+        "A-XI2-M6",
+        "A-XI2-M7",
+        "A-XI2-M8",
+        "A-XII1-M1",
+        "A-XII1-M2",
+        "A-XII1-M3",
+        "A-XII1-M4",
+        "A-XII1-M5"
+      ],
+      "note": "Seluruhnya **P** (graf tidak disebut di CP yang dikutip).",
+      "hasEnrichment": true
+    },
+    {
+      "familyId": "geometri-dasar",
+      "topics": "koordinat, jarak Euclid, Pythagoras",
+      "weeksText": "A-XII1-M11",
+      "weeks": ["A-XII1-M11"],
+      "note": "**P**.",
+      "hasEnrichment": true
+    }
+  ]
+}

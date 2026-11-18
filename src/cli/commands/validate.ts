@@ -20,7 +20,9 @@ import {
   registryVersionFindings,
   withExtraFindings,
 } from "../../domain/programs";
-import type { Program } from "../../schema/program";
+import { auditSmaCorpus } from "../../domain/sma-corpus-audit";
+import type { Program, ProgramRegistry } from "../../schema/program";
+import { SMA_CODING_PROGRAM_ID } from "../../schema/sma-common";
 import type { Command, CommandContext } from "../command";
 import { EXIT_SUCCESS, EXIT_USAGE_ERROR, EXIT_VALIDATION_FAILURE } from "../command";
 import { loadCorpusFromDirectory } from "../corpus-loader";
@@ -28,6 +30,7 @@ import { formatAuditJson, formatAuditText } from "../format-audit";
 import { moduleContentFindings } from "../module-content";
 import {
   extractProgramFlag,
+  loadOsnTopicFamilyIds,
   loadProgramRegistry,
   REPO_ROOT,
   repoPathExists,
@@ -36,14 +39,19 @@ import {
 const HELP_TEXT = `osn validate -- validate the curriculum corpus of one or every programme
 
 Validates data/programs.json (the programme registry) and, per programme,
-every data/<program>/*.json file against its schema, checks the fixed
+every data/<program>/*.json file against its schema. Programme "osn" is
+checked against the fixed
 structural invariants (28 weeks, 7 gates, 10 topic families, 41
 references, 4 stages, 4 categories, 4 status codes, 7 KPI metrics, 7
 playbooks, 6 assessment bank kinds, assessment weights summing to 100,
 both session templates summing to 120 minutes, 5 hint levels), and checks
 referential integrity across the corpus (week -> topic family, week
 checkpoint numbering <-> gate weeks, assessment-bank kind -> competition
-stage, every Rnn citation -> the reference register). When a programme has a
+stage, every Rnn citation -> the reference register). Programme "sma-coding"
+has its own file set and schemas (data/sma-coding/, ADR-0006): the fixed counts
+of the approved syllabus (6 CP quotations, 36 CP items, 6 semesters of 14 weeks
+per track), CP code / week code / track references, and that every OSN topic
+family id used by the OSN bridge exists in data/osn/topic-families.json. When a programme has a
 learning-module index (data/<program>/modules.json, ADR-0007) it is checked
 too: schema, topic family / week / reference ids, and that every module's
 Markdown body exists and is non-empty. It also checks that
@@ -70,7 +78,7 @@ Exit codes:
   2   usage error, e.g. unknown --program, --program/--data-dir given with no value, or a directory that cannot be read.`;
 
 /** One programme's audit: its corpus plus the registry cross-checks. */
-async function auditProgram(program: Program, corpusDir: string) {
+async function auditProgram(program: Program, corpusDir: string, registry: ProgramRegistry) {
   const source = await loadCorpusFromDirectory(corpusDir);
   const extra = registryVersionFindings(program, source);
   extra.push(...moduleFindings(source, program.id), ...(await moduleContentFindings(source)));
@@ -82,7 +90,11 @@ async function auditProgram(program: Program, corpusDir: string) {
       message: `source document "${program.sourceDocument}" does not exist`,
     });
   }
-  return withExtraFindings(auditCorpus(source), extra);
+  const base =
+    program.id === SMA_CODING_PROGRAM_ID
+      ? auditSmaCorpus(source, await loadOsnTopicFamilyIds(registry))
+      : auditCorpus(source);
+  return withExtraFindings(base, extra);
 }
 
 type ProgramAudit = Awaited<ReturnType<typeof auditProgram>>;
@@ -134,7 +146,7 @@ export const validateCommand: Command = {
       const corpusDir = dataDirOverride ?? resolve(REPO_ROOT, program.corpusDir);
       let result: ProgramAudit;
       try {
-        result = await auditProgram(program, corpusDir);
+        result = await auditProgram(program, corpusDir, registry);
       } catch (cause) {
         ctx.stderr(`osn validate: ${(cause as Error).message}\n`);
         return EXIT_USAGE_ERROR;
@@ -156,7 +168,7 @@ export const validateCommand: Command = {
         results.push({
           program: program.id,
           corpusDir,
-          audit: await auditProgram(program, corpusDir),
+          audit: await auditProgram(program, corpusDir, registry),
         });
       } catch (cause) {
         ctx.stderr(`osn validate: programme "${program.id}": ${(cause as Error).message}\n`);

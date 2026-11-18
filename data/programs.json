@@ -7,6 +7,14 @@
       "syllabusVersion": "2.0",
       "syllabusDate": "2026-09-04",
       "corpusDir": "data/osn"
+    },
+    {
+      "id": "sma-coding",
+      "name": "Silabus Pembelajaran Coding SMA",
+      "sourceDocument": "docs/programs/sma-coding/silabus.md",
+      "syllabusVersion": "1.0.0",
+      "syllabusDate": "2026-11-18",
+      "corpusDir": "data/sma-coding"
     }
   ]
 }

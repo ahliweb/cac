@@ -1,0 +1,110 @@
+{
+  "syllabusVersion": "1.0.0",
+  "syllabusDate": "2026-11-18",
+  "sourceSection": "bagian 2",
+  "rows": [
+    {
+      "id": "kelas-fase",
+      "item": "Kelas dan fase",
+      "value": "X = Fase E; XI dan XII = Fase F",
+      "status": "Terverifikasi (bagian 1.1)."
+    },
+    {
+      "id": "semester",
+      "item": "Semester",
+      "value": "Dua per kelas: X1, X2, XI1, XI2, XII1, XII2 (enam semester per jalur)",
+      "status": "`[asumsi]`"
+    },
+    {
+      "id": "minggu-per-semester",
+      "item": "Minggu per semester",
+      "value": "14 minggu materi + 2 minggu cadangan (libur, ujian sekolah, remedial)",
+      "status": "`[asumsi]`"
+    },
+    {
+      "id": "alokasi-jp",
+      "item": "Alokasi JP",
+      "value": "Satu pertemuan 3 JP x 45 menit per minggu per jalur; sekolah menyesuaikan",
+      "status": "Ditetapkan pemilik 2026-11-18. Angka JP resmi kurikulum tetap `[belum terverifikasi]`."
+    },
+    {
+      "id": "hubungan-jalur",
+      "item": "Hubungan jalur",
+      "value": "Murid memilih satu jalur (A, B, atau kelak C); boleh mengambil jalur lain bila waktu sekolah mengizinkan",
+      "status": "Ditetapkan pemilik 2026-11-18."
+    },
+    {
+      "id": "pola-semester",
+      "item": "Pola tiap semester",
+      "value": "Minggu 1-12 materi; minggu 13 proyek mini; minggu 14 asesmen dan refleksi",
+      "status": "`[asumsi]`"
+    },
+    {
+      "id": "nilai-dasar",
+      "item": "Nilai dasar",
+      "value": "CP wajib tercakup di pembelajaran Informatika sekolah; silabus coding ini hanya membahas butir yang dapat dicapai lewat coding. Butir lain ada di bagian 4.3.",
+      "status": "Rancangan penyusun."
+    }
+  ],
+  "classPhases": [
+    {
+      "kelas": "X",
+      "phase": "E"
+    },
+    {
+      "kelas": "XI",
+      "phase": "F"
+    },
+    {
+      "kelas": "XII",
+      "phase": "F"
+    }
+  ],
+  "semesters": [
+    {
+      "code": "X1",
+      "kelas": "X",
+      "phase": "E"
+    },
+    {
+      "code": "X2",
+      "kelas": "X",
+      "phase": "E"
+    },
+    {
+      "code": "XI1",
+      "kelas": "XI",
+      "phase": "F"
+    },
+    {
+      "code": "XI2",
+      "kelas": "XI",
+      "phase": "F"
+    },
+    {
+      "code": "XII1",
+      "kelas": "XII",
+      "phase": "F"
+    },
+    {
+      "code": "XII2",
+      "kelas": "XII",
+      "phase": "F"
+    }
+  ],
+  "weeksPerSemester": {
+    "teaching": 14,
+    "reserve": 2
+  },
+  "load": {
+    "sessionsPerWeek": 1,
+    "jpPerSession": 3,
+    "minutesPerJp": 45
+  },
+  "semesterPattern": {
+    "materiFromWeek": 1,
+    "materiToWeek": 12,
+    "miniProjectWeek": 13,
+    "assessmentWeek": 14
+  }
+}

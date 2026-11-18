@@ -1,0 +1,267 @@
+{
+  "syllabusVersion": "1.0.0",
+  "syllabusDate": "2026-11-18",
+  "sourceSection": "bagian 1",
+  "quotes": [
+    {
+      "phase": "E",
+      "elementId": "BK",
+      "elementTitle": "Berpikir Komputasional",
+      "guideNumber": "2.1",
+      "text": "Pada akhir fase E, murid mampu memahami konsep struktur data dan algoritma standar; menerapkan proses komputasi yang dilakukan manusia secara mandiri atau berkelompok untuk mendapatkan data yang berkualitas; menerapkan algoritma dan struktur data standar untuk menghasilkan berbagai solusi dalam menyelesaikan persoalan; menuliskan solusi rancangan program sederhana dalam format pseudocode yang dekat dengan bahasa komputer; memahami model dan menyimulasikan dinamika Input-Process-Output dalam sebuah komputer Von Neumann, serta memahami peran sistem operasi."
+    },
+    {
+      "phase": "E",
+      "elementId": "LD",
+      "elementTitle": "Literasi Digital",
+      "guideNumber": "2.2",
+      "text": "Pada akhir fase E, murid mampu memahami penggunaan mesin pencari dengan variabel yang lebih banyak; mengetahui ekosistem periksa fakta untuk memilah fakta dan bukan; menggunakan cara membaca lateral untuk mengevaluasi berbagai informasi digital; memahami pemanfaatan perangkat teknologi yang lebih beragam untuk pengolah dokumen, lembar kerja, dan presentasi; memahami konsep dan penerapan serta konfigurasi keamanan dasar untuk konektivitas jaringan data lokal dan internet baik kabel maupun nirkabel; memahami pemanfaatan media digital untuk produksi dan diseminasi konten, partisipasi dan kolaborasi; menghargai hak atas kekayaan intelektual, mengenal profesi bidang Informatika, memahami penerapan digitalisasi budaya Indonesia, menyaring konten negatif di dunia digital; menerapkan pengelolaan kata sandi dengan manajer kata sandi, dan menerapkan autentikasi dua langkah secara sederhana, serta menerapkan konfigurasi privasi dan keamanan pada akun platform digital."
+    },
+    {
+      "phase": "F",
+      "elementId": "BK",
+      "elementTitle": "Berpikir Komputasional",
+      "guideNumber": "3.1",
+      "text": "Pada akhir fase F, murid mampu memahami alur proses pengembangan program atau produk teknologi digital; menganalisis persoalan yang bisa menghasilkan lebih dari satu solusi dengan pemahamannya terhadap beberapa strategi algoritmik untuk menghasilkan beberapa alternatif solusi dari satu persoalan dengan memberikan justifikasi efisiensi, kelebihan, dan keterbatasan dari setiap alternatif solusi; mampu memilih dan menerapkan solusi terbaik, paling efisien, dan optimal dengan merancang struktur data yang lebih kompleks dan abstrak; serta mengenali berbagai model jaringan komputer serta mampu melakukan pengiriman data antar perangkat dalam jaringan komputer dan troubleshooting permasalahan jaringan komputer."
+    },
+    {
+      "phase": "F",
+      "elementId": "LD",
+      "elementTitle": "Literasi Digital",
+      "guideNumber": "3.2",
+      "text": "Pada akhir fase F, murid mampu memahami penggunaan mesin pencari untuk melakukan riset; mengevaluasi kebenaran konten menggunakan verifikasi teks, gambar, dan video; menggunakan cara membaca lateral untuk mengevaluasi informasi digital yang kompleks; merancang kebutuhan sistem komputer sesuai kebutuhan pengguna; memahami konsep dan penerapan serta konfigurasi keamanan lanjut untuk konektivitas jaringan data lokal dan internet baik kabel maupun nirkabel; mengkreasi konten digital dengan peralatan dan metode yang bervariasi; memahami hukum dan perundang-undangan terkait isu digital di Indonesia; memahami pemanfaatan teknologi digital dalam demokrasi; menerapkan pengelolaan kata sandi dengan manajer kata sandi dan autentikasi dua langkah dengan beragam moda; serta memahami pemanfaatan platform loka pasar, perbankan digital, dompet digital beserta aspek keamanannya."
+    },
+    {
+      "phase": "F",
+      "elementId": "AD",
+      "elementTitle": "Analisis Data",
+      "guideNumber": "3.3",
+      "text": "Pada akhir fase F, murid mampu memanfaatkan sumber data yang terbuka, terpercaya, dan legal untuk mengolah data untuk pengambilan keputusan dan prediksi secara efektif, efisien, dan optimal tanpa atau dengan komputer."
+    },
+    {
+      "phase": "F",
+      "elementId": "AP",
+      "elementTitle": "Algoritma dan Pemrograman",
+      "guideNumber": "3.4",
+      "text": "Pada akhir fase F, murid mampu memahami konsep strategi algoritmik; mengembangkan program komputer terstruktur dalam notasi algoritma atau notasi lain berdasarkan strategi algoritmik yang tepat; mengembangkan, melakukan pemeliharaan, dan penyempurnaan algoritma standar ke dalam kode sumber program dengan memperhatikan kualitasnya; merancang dan mengimplementasikan sebuah program yang menggunakan struktur data kompleks dan tepat menggunakan library atau perangkat yang tersedia."
+    }
+  ],
+  "items": [
+    {
+      "code": "E-BK-a",
+      "phase": "E",
+      "elementId": "BK",
+      "label": "konsep struktur data dan algoritma standar"
+    },
+    {
+      "code": "E-BK-b",
+      "phase": "E",
+      "elementId": "BK",
+      "label": "proses komputasi manusia untuk data berkualitas"
+    },
+    {
+      "code": "E-BK-c",
+      "phase": "E",
+      "elementId": "BK",
+      "label": "menerapkan algoritma dan struktur data standar"
+    },
+    {
+      "code": "E-BK-d",
+      "phase": "E",
+      "elementId": "BK",
+      "label": "solusi program sederhana dalam format pseudocode"
+    },
+    {
+      "code": "E-BK-e",
+      "phase": "E",
+      "elementId": "BK",
+      "label": "model Input-Process-Output Von Neumann dan peran sistem operasi"
+    },
+    {
+      "code": "E-LD-a",
+      "phase": "E",
+      "elementId": "LD",
+      "label": "mesin pencari"
+    },
+    {
+      "code": "E-LD-b",
+      "phase": "E",
+      "elementId": "LD",
+      "label": "ekosistem periksa fakta"
+    },
+    {
+      "code": "E-LD-c",
+      "phase": "E",
+      "elementId": "LD",
+      "label": "membaca lateral"
+    },
+    {
+      "code": "E-LD-d",
+      "phase": "E",
+      "elementId": "LD",
+      "label": "perangkat pengolah dokumen, lembar kerja, presentasi"
+    },
+    {
+      "code": "E-LD-e",
+      "phase": "E",
+      "elementId": "LD",
+      "label": "keamanan dasar konektivitas jaringan"
+    },
+    {
+      "code": "E-LD-f",
+      "phase": "E",
+      "elementId": "LD",
+      "label": "media digital untuk produksi dan diseminasi konten, partisipasi, kolaborasi"
+    },
+    {
+      "code": "E-LD-g",
+      "phase": "E",
+      "elementId": "LD",
+      "label": "hak atas kekayaan intelektual"
+    },
+    {
+      "code": "E-LD-h",
+      "phase": "E",
+      "elementId": "LD",
+      "label": "profesi bidang Informatika"
+    },
+    {
+      "code": "E-LD-i",
+      "phase": "E",
+      "elementId": "LD",
+      "label": "digitalisasi budaya Indonesia"
+    },
+    {
+      "code": "E-LD-j",
+      "phase": "E",
+      "elementId": "LD",
+      "label": "menyaring konten negatif"
+    },
+    {
+      "code": "E-LD-k",
+      "phase": "E",
+      "elementId": "LD",
+      "label": "manajer kata sandi dan autentikasi dua langkah"
+    },
+    {
+      "code": "E-LD-l",
+      "phase": "E",
+      "elementId": "LD",
+      "label": "konfigurasi privasi dan keamanan akun platform"
+    },
+    {
+      "code": "F-BK-a",
+      "phase": "F",
+      "elementId": "BK",
+      "label": "alur proses pengembangan program atau produk digital"
+    },
+    {
+      "code": "F-BK-b",
+      "phase": "F",
+      "elementId": "BK",
+      "label": "lebih dari satu solusi, strategi algoritmik, justifikasi efisiensi"
+    },
+    {
+      "code": "F-BK-c",
+      "phase": "F",
+      "elementId": "BK",
+      "label": "memilih solusi terbaik dengan struktur data lebih kompleks dan abstrak"
+    },
+    {
+      "code": "F-BK-d",
+      "phase": "F",
+      "elementId": "BK",
+      "label": "model jaringan komputer, pengiriman data, troubleshooting"
+    },
+    {
+      "code": "F-LD-a",
+      "phase": "F",
+      "elementId": "LD",
+      "label": "mesin pencari untuk riset"
+    },
+    {
+      "code": "F-LD-b",
+      "phase": "F",
+      "elementId": "LD",
+      "label": "verifikasi kebenaran konten"
+    },
+    {
+      "code": "F-LD-c",
+      "phase": "F",
+      "elementId": "LD",
+      "label": "membaca lateral informasi kompleks"
+    },
+    {
+      "code": "F-LD-d",
+      "phase": "F",
+      "elementId": "LD",
+      "label": "merancang kebutuhan sistem komputer sesuai kebutuhan pengguna"
+    },
+    {
+      "code": "F-LD-e",
+      "phase": "F",
+      "elementId": "LD",
+      "label": "keamanan lanjut konektivitas jaringan"
+    },
+    {
+      "code": "F-LD-f",
+      "phase": "F",
+      "elementId": "LD",
+      "label": "mengkreasi konten digital"
+    },
+    {
+      "code": "F-LD-g",
+      "phase": "F",
+      "elementId": "LD",
+      "label": "hukum dan perundang-undangan isu digital"
+    },
+    {
+      "code": "F-LD-h",
+      "phase": "F",
+      "elementId": "LD",
+      "label": "teknologi digital dalam demokrasi"
+    },
+    {
+      "code": "F-LD-i",
+      "phase": "F",
+      "elementId": "LD",
+      "label": "manajer kata sandi dan autentikasi dua langkah beragam moda"
+    },
+    {
+      "code": "F-LD-j",
+      "phase": "F",
+      "elementId": "LD",
+      "label": "loka pasar, perbankan digital, dompet digital dan keamanannya"
+    },
+    {
+      "code": "F-AD-a",
+      "phase": "F",
+      "elementId": "AD",
+      "label": "sumber data terbuka, terpercaya, legal untuk keputusan dan prediksi"
+    },
+    {
+      "code": "F-AP-a",
+      "phase": "F",
+      "elementId": "AP",
+      "label": "konsep strategi algoritmik"
+    },
+    {
+      "code": "F-AP-b",
+      "phase": "F",
+      "elementId": "AP",
+      "label": "program terstruktur berdasarkan strategi algoritmik"
+    },
+    {
+      "code": "F-AP-c",
+      "phase": "F",
+      "elementId": "AP",
+      "label": "pengembangan, pemeliharaan, penyempurnaan algoritma standar, kualitas kode"
+    },
+    {
+      "code": "F-AP-d",
+      "phase": "F",
+      "elementId": "AP",
+      "label": "program dengan struktur data kompleks memakai library atau perangkat"
+    }
+  ]
+}

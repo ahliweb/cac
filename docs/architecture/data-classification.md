@@ -63,6 +63,17 @@ published in `data/osn/topic-families.json` and `data/osn/competition-stages.jso
 | `commonTraps` | public | Trap categories a learner is likely to fall into. |
 | `expectedSolution` | public | Expected solution technique class(es). |
 
+## SMA coding corpus (`data/sma-coding/`)
+
+Every field of the six `data/sma-coding/*.json` files (`src/schema/sma-*.ts`)
+is `public`: they transcribe the owner-approved syllabus
+`docs/programs/sma-coding/silabus.md` (CP quotations and item codes, track
+names, programme structure, the weekly plan with its synthetic practice
+exercises, the CP-to-week mapping, and the bridge to the OSN topic
+families). None describes a learner. `osn privacy-check` scans them like
+every other file under `data/`; field names avoid denylisted substrings
+(e.g. `elementTitle`, not `elementName`).
+
 ## Retention and minimisation rule
 
 This repository's own retention rule is trivial and absolute: **retain

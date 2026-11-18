@@ -20,7 +20,7 @@ import type { Command } from "../command";
 import { EXIT_SUCCESS, EXIT_USAGE_ERROR } from "../command";
 import { loadModule } from "../module-content";
 import { writeOutputFile } from "../output-writer";
-import { REPO_ROOT, resolveProgramOption } from "../program-loader";
+import { REPO_ROOT, rejectNonOsnProgram, resolveProgramOption } from "../program-loader";
 
 const SUBCOMMANDS = ["weekly", "checkpoint", "sop", "lembar-siswa", "modul"] as const;
 type RenderSubcommand = (typeof SUBCOMMANDS)[number];
@@ -62,6 +62,8 @@ Options:
                   existing file at --out is left byte-for-byte untouched
                   and the command exits 2.
   --program <id>  Programme whose corpus to use (a registered id; default osn).
+                  Only "modul" accepts another programme; the other
+                  subcommands exit 2 for any programme but osn.
   -h, --help      Show this help.
 
 Exit codes:
@@ -111,6 +113,14 @@ export const renderCommand: Command = {
         `osn render: ${problem}. Valid subcommands: ${SUBCOMMANDS.join(", ")}. Run "osn render --help" for usage.\n`,
       );
       return EXIT_USAGE_ERROR;
+    }
+
+    // Only "modul" reads the programme's own corpus directory; every other subcommand reads the OSN corpus.
+    if (subcommand !== "modul") {
+      const unsupported = rejectNonOsnProgram(`render ${subcommand}`, resolved.program, ctx);
+      if (unsupported !== undefined) {
+        return unsupported;
+      }
     }
 
     const rest = args.slice(1);

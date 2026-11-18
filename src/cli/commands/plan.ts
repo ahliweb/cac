@@ -11,7 +11,7 @@ import { buildCohortPlan, type CohortPlan } from "../../domain/cohort-plan";
 import type { Command } from "../command";
 import { EXIT_SUCCESS, EXIT_USAGE_ERROR } from "../command";
 import { formatPlanJson, formatPlanMarkdown } from "../format-plan";
-import { resolveProgramOption } from "../program-loader";
+import { rejectNonOsnProgram, resolveProgramOption } from "../program-loader";
 
 const HELP_TEXT = `osn plan -- generate the dated 28-week cohort calendar
 
@@ -34,6 +34,7 @@ Options:
   --format <md|json>      Output format. Default: md. --json is equivalent
                            to --format json.
   --program <id>  Programme whose corpus to use (a registered id; default osn).
+                  Only osn is supported; any other registered id exits 2.
   -h, --help              Show this help.
 
 Exit codes:
@@ -59,6 +60,10 @@ export const planCommand: Command = {
     const resolved = await resolveProgramOption("plan", rawArgs, ctx);
     if (!resolved.ok) {
       return resolved.exitCode;
+    }
+    const unsupported = rejectNonOsnProgram("plan", resolved.program, ctx);
+    if (unsupported !== undefined) {
+      return unsupported;
     }
     const args = resolved.args;
     if (!args.includes("--start")) {

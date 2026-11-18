@@ -22,8 +22,10 @@ data/<program>/*.json  --->  src/schema/  --->  src/domain/  --->  src/render/
 ```
 
 1. **`data/<program>/*.json`** (registry: `data/programs.json`, ADR-0006) — the curriculum corpus itself: inert JSON files with
-   no executable logic. One corpus today, `data/osn/`, 22 files (topic families, weeks, gates,
-   references, assessment model, KPI definitions, playbooks, and more).
+   no executable logic. Two corpora today: `data/osn/`, 22 files (topic families, weeks, gates,
+   references, assessment model, KPI definitions, playbooks, and more), and
+   `data/sma-coding/`, 6 files transcribed from the approved SMA coding
+   syllabus (CP elements, tracks, structure, weekly plan, CP mapping, OSN bridge).
 2. **`src/schema/`** — Zod schemas that are the single source of truth for
    both runtime validation and the static TypeScript types inferred from
    them (see ADR-0003). A schema describes the shape a data file must have
