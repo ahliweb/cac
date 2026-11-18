@@ -1,5 +1,0 @@
----
-"kurikulum-informatika": major
----
-
-Restructure the repository for multiple programmes (ADR-0006, issue #50). Breaking changes: (1) the OSN corpus moved, byte-identical, from `data/*.json` to `data/osn/` and `data/samples/` to `data/osn/samples/` — any consumer reading the old paths must update them; (2) the package was renamed from `osn-informatika-2026` to `kurikulum-informatika` (the `osn` binary keeps its name); (3) new programme registry `data/programs.json` with schema `src/schema/program.ts`, checked by `osn validate` (kebab-case unique ids, `corpusDir` = `data/<id>`, source document exists, registered `syllabusVersion`/`syllabusDate` equal the corpus files'); (4) `osn validate`, `plan`, `render`, `report` and `checklist` accept `--program <id>` (default `osn`), an unknown programme is a usage error (exit 2), `osn validate` without `--program` validates every registered programme, and `osn validate --json` now emits `{ ok, programs: [...] }` in that case (`{ ok, program, findings, summary }` for a single programme). `osn privacy-check` still scans all of `data/` recursively. No curriculum content changed.
