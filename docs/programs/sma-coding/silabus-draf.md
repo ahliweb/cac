@@ -1,8 +1,9 @@
 # Silabus Pembelajaran Coding SMA — Draf v0
 
-- **Version:** v0.1.0
+- **Version:** v0.2.0
 - **Last updated:** 2026-11-18
 - **Status:** DRAF
+- **Changeset:** Keputusan pemilik 2026-11-18 dicatat: `awcms-one` opsi 1; topik jalur A di luar CP berstatus pengayaan opsional. Draf secara keseluruhan belum disetujui.
 
 > **DRAF — belum disetujui pemilik.** Konten karangan menurut
 > [ADR-0007](../../architecture/adr/0007-authored-learning-content.md).
@@ -478,6 +479,10 @@ ID rumpun diambil dari `data/osn/topic-families.json` (silabus OSN v2.0).
 Pemetaan ini penilaian penyusun, bukan bagian dari data OSN. Topik di luar
 rumusan CP ditandai **P** (pengayaan, melampaui CP).
 
+**Keputusan pemilik (2026-11-18, issue #52):** topik bertanda **P** adalah
+**pengayaan opsional** — wajib bagi siswa yang menuju OSN, opsional untuk
+kelas reguler jalur A.
+
 | Rumpun materi OSN (`id`) | Topik jalur A yang menyiapkan | Minggu | Catatan |
 | --- | --- | --- | --- |
 | `dasar-pemrograman` | sintaks C++, variabel, I/O, percabangan, perulangan, fungsi | A-X1-M3..M9 | Sesuai CP. |
@@ -557,7 +562,11 @@ profil `landing` dan `template:init` (B-XII1 M5..M8) -> proyek kustomisasi
 | 4 | Satu instans demonstrasi milik guru yang dipakai bersama | Satu lingkungan saja | Bertentangan dengan aturan template-only (ADR-0024); satu titik gagal |
 
 Rekomendasi penyusun: opsi 1, dengan opsi 2 sebagai cadangan bila
-komputer lab tidak mampu menjalankan Docker. Keputusan ada pada pemilik.
+komputer lab tidak mampu menjalankan Docker.
+
+**Keputusan pemilik (2026-11-18, issue #52): opsi 1** — `awcms-one` sebagai
+studi kasus dan kustomisasi profil `landing` di kelas XII; lingkungan
+Docker/PostgreSQL disiapkan guru per tim.
 
 Penilaian ringkas (1 = lemah, 3 = kuat) untuk keempat opsi pada kriteria
 penting: keamanan (1: 3, 2: 3, 3: 2, 4: 1), pemeliharaan (1: 2, 2: 3, 3: 1,
@@ -616,9 +625,11 @@ Skor ini penilaian penyusun, bukan pengukuran.
    mengasumsikan 3 JP x 45 menit.)
 3. Apakah lingkup bagian 4.3 (butir Literasi Digital dan jaringan di luar
    coding) diserahkan ke Informatika umum, atau perlu dimasukkan jalur?
-4. Seberapa jauh pengayaan jalur A di luar CP (graf, DP, Fenwick,
-   segment tree) disetujui?
-5. Opsi awcms-one mana (bagian 6.4): 1 (disarankan), 2, 3, atau 4?
+4. ~~Seberapa jauh pengayaan jalur A di luar CP (graf, DP, Fenwick,
+   segment tree) disetujui?~~ **Terjawab 2026-11-18:** pengayaan opsional
+   (bagian 5).
+5. ~~Opsi awcms-one mana (bagian 6.4): 1 (disarankan), 2, 3, atau 4?~~
+   **Terjawab 2026-11-18:** opsi 1 (bagian 6.4).
 6. Apakah interaksi dengan perangkat (IoT, robot) perlu ditambahkan
    sebagai jalur tambahan?
 7. Apakah murid memilih satu jalur, atau diharapkan mengikuti keduanya?
@@ -641,4 +652,5 @@ Skor ini penilaian penyusun, bukan pengukuran.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v0.2.0 | 2026-11-18 | Mencatat keputusan pemilik (issue #63): `awcms-one` opsi 1; topik bertanda P menjadi pengayaan opsional. Pertanyaan 4 dan 5 terjawab. Status tetap DRAF. |
 | v0.1.0 | 2026-11-18 | Draf awal (issue #51): sumber resmi dan kutipan CP Fase E/F, rencana mingguan dua jalur, pemetaan CP, jembatan OSN, analisis `awcms-one`, asesmen, perangkat, privasi, rujukan, pertanyaan terbuka. |
