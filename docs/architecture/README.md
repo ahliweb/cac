@@ -36,7 +36,7 @@ data/<program>/*.json  --->  src/schema/  --->  src/domain/  --->  src/render/
    that consume the domain layer:
    - `src/render/` turns domain data into mentor-facing artefacts
      (Markdown session plans, checkpoint sheets, SOP cards, the cohort
-     readiness checklist).
+     readiness checklist) and the student learner sheet.
    - `src/cli/` is the `osn` command-line entrypoint that wires
      subcommands (`validate`, `plan`, `render`, `report`, `privacy-check`,
      `checklist`) to the domain and render layers, dispatching without an
@@ -154,8 +154,10 @@ under `src/` or `data/`:
 ## Direction: more programmes and learner material
 
 Two decisions accepted on 2026-11-18 extend this architecture; their
-implementation is tracked in milestones M7–M9 (issues #49–#55) and this
-overview describes the current single-programme state until those land:
+implementation is tracked in milestones M7–M9 (issues #49–#55). The
+programme registry and `--program` selector (#50) and the student learner
+sheet (`osn render lembar-siswa`, #53) have landed; the remaining items
+below are still direction, not current state:
 
 - **ADR-0006** — the repository becomes multi-programme: a programme
   registry, one corpus per programme under `data/<program>/`, and a

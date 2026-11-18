@@ -50,7 +50,7 @@ bun test
 | `src/schema/` | Zod schemas for curriculum data — the single source of truth for both runtime validation and inferred static types (ADR-0003). |
 | `src/domain/` | Domain model / business rules over parsed curriculum data: KPI engine, decision playbooks, cohort planning, learning records, and more. |
 | `src/cli/` | The `osn` CLI's command handlers (`validate`, `plan`, `render`, `report`, `privacy-check`, `checklist`) and dispatcher. |
-| `src/render/` | Pure functions that turn domain data into mentor-facing Markdown artefacts (weekly plan, checkpoint sheet, SOP card, checklist). |
+| `src/render/` | Pure functions that turn domain data into mentor-facing Markdown artefacts (weekly plan, checkpoint sheet, SOP card, checklist) and the student learner sheet. |
 | `src/index.ts` | Package entrypoint, built by `bun run build` into `dist/`. |
 | `data/programs.json` | The programme registry (ADR-0006): one entry per programme, validated by `src/schema/program.ts`. |
 | `data/osn/` | The OSN programme corpus: 22 schema-validated JSON files (topic families, weeks, gates, references, assessment model, KPI definitions, playbooks, and more) plus `samples/` (synthetic learning records). |

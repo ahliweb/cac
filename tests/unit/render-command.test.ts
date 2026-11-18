@@ -134,6 +134,68 @@ describe("renderCommand.run: checkpoint", () => {
   });
 });
 
+describe("renderCommand.run: lembar-siswa", () => {
+  test("renders the learner sheet to stdout with the registry's source footer", async () => {
+    const { ctx, stdout } = makeContext();
+    const code = await renderCommand.run(["lembar-siswa", "--week", "4"], ctx);
+    expect(code).toBe(0);
+    const output = stdout.join("");
+    expect(output).toContain("# Lembar Belajar Siswa -- Minggu 4");
+    expect(output).toContain("Sumber: Silabus Operasional Pembinaan OSN Informatika 2026");
+  });
+
+  test("missing --week exits 2", async () => {
+    const { ctx, stderr } = makeContext();
+    expect(await renderCommand.run(["lembar-siswa"], ctx)).toBe(2);
+    expect(stderr.join("")).toContain("osn render lembar-siswa: --week <1-28> is required");
+  });
+
+  test("a non-integer --week exits 2", async () => {
+    const { ctx, stderr } = makeContext();
+    expect(await renderCommand.run(["lembar-siswa", "--week", "x"], ctx)).toBe(2);
+    expect(stderr.join("")).toContain("--week must be an integer");
+  });
+
+  test("an out-of-range --week exits 2", async () => {
+    const { ctx, stderr } = makeContext();
+    expect(await renderCommand.run(["lembar-siswa", "--week", "29"], ctx)).toBe(2);
+    expect(stderr.join("")).toContain("Valid range: 1-28");
+  });
+
+  test("--out writes the file; a second run without --force exits 2, with --force overwrites", async () => {
+    const outPath = join(tempDir, "lembar.md");
+    const first = makeContext();
+    expect(
+      await renderCommand.run(["lembar-siswa", "--week", "1", "--out", outPath], first.ctx),
+    ).toBe(0);
+    const written = await readFile(outPath, "utf-8");
+    expect(written).toContain("# Lembar Belajar Siswa -- Minggu 1");
+
+    const second = makeContext();
+    expect(
+      await renderCommand.run(["lembar-siswa", "--week", "2", "--out", outPath], second.ctx),
+    ).toBe(2);
+    expect(await readFile(outPath, "utf-8")).toBe(written);
+
+    const third = makeContext();
+    expect(
+      await renderCommand.run(
+        ["lembar-siswa", "--week", "2", "--out", outPath, "--force"],
+        third.ctx,
+      ),
+    ).toBe(0);
+    expect(await readFile(outPath, "utf-8")).toContain("Minggu 2");
+  });
+
+  test("an unknown --program exits 2", async () => {
+    const { ctx, stderr } = makeContext();
+    expect(await renderCommand.run(["lembar-siswa", "--week", "1", "--program", "nope"], ctx)).toBe(
+      2,
+    );
+    expect(stderr.join("")).toContain('unknown programme "nope"');
+  });
+});
+
 describe("renderCommand.run: sop", () => {
   test("renders the SOP card to stdout and returns exit 0", async () => {
     const { ctx, stdout } = makeContext();

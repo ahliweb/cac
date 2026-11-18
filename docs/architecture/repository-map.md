@@ -87,15 +87,16 @@ validate` whole-corpus audit).
 ## `src/render/`
 
 **What belongs here:** pure functions that turn validated domain data into
-mentor-facing Markdown artefacts — weekly session plans, checkpoint
-sheets, SOP cards, and the cohort readiness checklist.
+Markdown artefacts — for mentors weekly session plans, checkpoint
+sheets, SOP cards, and the cohort readiness checklist; for students the
+weekly learner sheet (`osn render lembar-siswa`).
 
 **What must never go here:** data loading or validation (that is
 `src/domain/`'s job, consumed here already-valid); CLI argument parsing or
 `process.exit` calls (that is `src/cli/`'s job); network I/O.
 
-**State today:** `weekly.ts`, `checkpoint.ts`, `sop.ts`, `checklist.ts`
-(the four renderers), plus `markdown-utils.ts` (shared formatting
+**State today:** `weekly.ts`, `checkpoint.ts`, `sop.ts`, `checklist.ts`,
+`student-sheet.ts` (the five renderers), plus `markdown-utils.ts` (shared formatting
 helpers) and `errors.ts` (`RenderRequestError`).
 
 ## `src/cli/`
