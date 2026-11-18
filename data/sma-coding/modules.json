@@ -1,0 +1,118 @@
+{
+  "modules": [
+    {
+      "id": "fondasi-komputer-dan-hardware",
+      "title": "Komputer, Perangkat Keras, dan Model Input-Proses-Output",
+      "cpItems": ["E-BK-e"],
+      "weekCodes": ["FND-X1-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": [],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/fondasi-komputer-dan-hardware.md"
+    },
+    {
+      "id": "fondasi-software-dan-sistem-operasi",
+      "title": "Perangkat Lunak, Sistem Operasi, Berkas, dan Lisensi",
+      "cpItems": ["E-BK-e", "E-LD-g"],
+      "weekCodes": ["FND-X1-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["fondasi-komputer-dan-hardware"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/fondasi-software-dan-sistem-operasi.md"
+    },
+    {
+      "id": "fondasi-representasi-data",
+      "title": "Representasi Data: Biner, Heksadesimal, Teks, dan Gambar",
+      "cpItems": [],
+      "weekCodes": ["FND-X1-M3"],
+      "bridgeFamilies": ["logika-bitwise", "dasar-pemrograman"],
+      "gradeLevels": ["X"],
+      "prerequisites": ["fondasi-komputer-dan-hardware"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/fondasi-representasi-data.md"
+    },
+    {
+      "id": "fondasi-jaringan-dan-internet",
+      "title": "Jaringan dan Internet: Konsep, Pengiriman Data, dan Diagnosis Dasar",
+      "cpItems": ["E-LD-e"],
+      "weekCodes": ["FND-X1-M4", "FND-X1-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["fondasi-representasi-data"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/fondasi-jaringan-dan-internet.md"
+    },
+    {
+      "id": "fondasi-keamanan-dasar",
+      "title": "Keamanan Dasar dan Etika Digital",
+      "cpItems": ["E-LD-e", "E-LD-g", "E-LD-k", "E-LD-l"],
+      "weekCodes": ["FND-X1-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["fondasi-jaringan-dan-internet"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/fondasi-keamanan-dasar.md"
+    },
+    {
+      "id": "fondasi-perangkat-produktivitas",
+      "title": "Perangkat Pengolah Dokumen, Lembar Kerja, dan Presentasi",
+      "cpItems": ["E-LD-d"],
+      "weekCodes": ["FND-X1-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["fondasi-software-dan-sistem-operasi"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/fondasi-perangkat-produktivitas.md"
+    }
+  ]
+}
