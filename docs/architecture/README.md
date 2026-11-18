@@ -173,8 +173,9 @@ remaining items below are still direction, not current state:
   `data/<program>/modules.json` (optional per programme, validated by
   `src/schema/module.ts` and `osn validate`), bodies under
   `content/<program>/modules/`, `osn render modul` with the `DRAF` banner,
-  and `bun run check:module-code` for the C++ examples. Only the pilot
-  module exists; modules for other topic families are separate issues.
+  and `bun run check:module-code` for the C++ examples. All ten OSN
+  modules exist (#55) and were approved by the programme owner on
+  2026-11-18.
 
 Neither decision changes the boundaries below: learner sheets and
 modules are rendered Markdown, not an LMS, and no learner data is stored.

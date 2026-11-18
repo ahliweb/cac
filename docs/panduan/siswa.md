@@ -87,8 +87,9 @@ Hasilnya modul lengkap dengan spanduk status dan daftar rujukan di akhir.
 
 ### Arti DRAF
 
-Hanya modul `dasar-pemrograman` yang sudah disetujui manusia. Sembilan modul
-lain berstatus **draf** dan diawali spanduk ini:
+Sejak 2026-11-18 kesepuluh modul OSN sudah disetujui pemilik program. Modul
+yang belum disetujui (misalnya modul baru) berstatus **draf** dan diawali
+spanduk ini:
 
 ```text
 > **DRAF — belum ditinjau.** Modul ini ditulis oleh tim (termasuk draf yang disusun agen AI) dan belum ditinjau oleh manusia. Isinya dapat memuat kekeliruan; periksa ke rujukan resmi di bagian bawah sebelum dipakai.

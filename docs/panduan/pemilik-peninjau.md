@@ -28,8 +28,9 @@ osn render modul --id rekursi
 Atau buka berkasnya langsung di GitHub:
 `content/osn/modules/<id>.md`. Daftar sepuluh modul dan statusnya ada di
 [`mentor-osn.md`](mentor-osn.md); sumber kebenarannya `data/osn/modules.json`.
-Saat panduan ini ditulis, `dasar-pemrograman` sudah `disetujui` (2026-11-18)
-dan sembilan lainnya `draf`.
+Per 2026-11-18 kesepuluh modul OSN sudah `disetujui`: `dasar-pemrograman`
+lebih dulu, sembilan lainnya menyusul pada hari yang sama. Langkah di bawah
+berlaku untuk setiap modul baru, termasuk modul program `sma-coding`.
 
 ### 2. Daftar periksa review
 
@@ -183,5 +184,5 @@ gh issue list -R ahliweb/osn --state open
 ```
 
 Daftar di atas adalah keadaan pada 2026-11-18; jalankan perintahnya untuk
-keadaan terkini. Selain issue, kandidat tinjauan Anda: sembilan modul OSN
-berstatus `draf`, dan penerapan blok fondasi kelas X (#92).
+keadaan terkini. Selain issue, kandidat tinjauan Anda: draf silabus SMA v1.1
+dengan blok fondasi kelas X (#92).

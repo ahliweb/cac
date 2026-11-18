@@ -26,13 +26,17 @@
       "weeks": [3, 10, 16, 25],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "refId": "R1"
         }
       ],
-      "contentPath": "content/osn/modules/logika-bitwise.md"
+      "contentPath": "content/osn/modules/logika-bitwise.md",
+      "review": {
+        "approvedOn": "2026-11-18",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "aritmetika",
@@ -41,13 +45,17 @@
       "weeks": [9, 10],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "refId": "R1"
         }
       ],
-      "contentPath": "content/osn/modules/aritmetika.md"
+      "contentPath": "content/osn/modules/aritmetika.md",
+      "review": {
+        "approvedOn": "2026-11-18",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "aturan-berhitung",
@@ -56,13 +64,17 @@
       "weeks": [11, 12],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "refId": "R1"
         }
       ],
-      "contentPath": "content/osn/modules/aturan-berhitung.md"
+      "contentPath": "content/osn/modules/aturan-berhitung.md",
+      "review": {
+        "approvedOn": "2026-11-18",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "rekursi",
@@ -71,13 +83,17 @@
       "weeks": [4, 5, 6],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "refId": "R1"
         }
       ],
-      "contentPath": "content/osn/modules/rekursi.md"
+      "contentPath": "content/osn/modules/rekursi.md",
+      "review": {
+        "approvedOn": "2026-11-18",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "search-sort",
@@ -86,13 +102,17 @@
       "weeks": [4, 5],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "refId": "R1"
         }
       ],
-      "contentPath": "content/osn/modules/search-sort.md"
+      "contentPath": "content/osn/modules/search-sort.md",
+      "review": {
+        "approvedOn": "2026-11-18",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "strategi-problem-solving",
@@ -101,13 +121,17 @@
       "weeks": [3, 6, 7, 8, 13, 14, 15, 16, 26, 27, 28],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "refId": "R1"
         }
       ],
-      "contentPath": "content/osn/modules/strategi-problem-solving.md"
+      "contentPath": "content/osn/modules/strategi-problem-solving.md",
+      "review": {
+        "approvedOn": "2026-11-18",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "struktur-data",
@@ -116,7 +140,7 @@
       "weeks": [2, 8, 20, 21, 22, 23, 27],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "refId": "R1"
@@ -125,7 +149,11 @@
           "refId": "R4"
         }
       ],
-      "contentPath": "content/osn/modules/struktur-data.md"
+      "contentPath": "content/osn/modules/struktur-data.md",
+      "review": {
+        "approvedOn": "2026-11-18",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "graph-tree",
@@ -134,7 +162,7 @@
       "weeks": [17, 18, 19, 20, 22, 27],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "refId": "R1"
@@ -143,7 +171,11 @@
           "refId": "R4"
         }
       ],
-      "contentPath": "content/osn/modules/graph-tree.md"
+      "contentPath": "content/osn/modules/graph-tree.md",
+      "review": {
+        "approvedOn": "2026-11-18",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "geometri-dasar",
@@ -152,7 +184,7 @@
       "weeks": [24],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "refId": "R1"
@@ -161,7 +193,11 @@
           "refId": "R4"
         }
       ],
-      "contentPath": "content/osn/modules/geometri-dasar.md"
+      "contentPath": "content/osn/modules/geometri-dasar.md",
+      "review": {
+        "approvedOn": "2026-11-18",
+        "reviewerRole": "pemilik program"
+      }
     }
   ]
 }
