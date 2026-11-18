@@ -48,12 +48,15 @@ owner approval of the nine OSN modules. **No breaking changes** — see
   `draf` and indexed: the grade-X foundation block (#115, #107),
   computational maths (#116, #87), cloud computing (#117, #89) and companion
   digital-literacy modules (#118, #69).
-- **Design documents** (all `DRAF`, not approved): companion modules (#100),
-  cloud series (#101), computational maths series (#102), track C IoT and
-  robotics (#108, #68), track D AI (#110, #84) and track E quantum (#111,
-  #88).
+- **Design documents**: companion modules (#100), cloud series (#101) and
+  computational maths series (#102), approved by the owner with their
+  recommendations on 2026-11-19; drafts of track C IoT and robotics (#108,
+  #68), track D AI (#110, #84) and track E quantum (#111, #88), `DRAF` in this
+  release (their integration into the syllabus is not part of it).
 - **Requirements for the `sma-coding` programme** (#103, #76): `FR-27`..`FR-31`,
-  `TR-12`, `TR-13` and `GR-13` with a third traceability matrix.
+  `TR-12`, `TR-13` and `GR-13` with a third traceability matrix; `FR-32`
+  for the `sma-coding` module index (#114, #106) and `FR-33` for `plan` and
+  `render lembar-siswa` on `sma-coding` (#119, #77).
 - **Usage guide** `docs/panduan/` in Indonesian, per role (#96, #94).
 
 ### Changed
