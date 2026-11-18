@@ -24,7 +24,7 @@ These are recognised regardless of which subcommand (if any) is present:
 | --- | --- |
 | `-h`, `--help` | With no subcommand: print global usage (this command list) and exit `0`. After a subcommand (`osn <command> --help`): print that command's own help and exit `0`, without running the command. |
 | `-V`, `--version` | Print the version from `package.json` (never hard-coded) and exit `0`. Takes precedence over everything else -- even `osn --version bogus-command` prints the version rather than failing on the unknown command. |
-| `--json` | Emit machine-readable JSON output instead of human-readable text, for commands that support it (`validate` does). May appear before or after the subcommand name. |
+| `--json` | Emit machine-readable JSON output instead of human-readable text, for commands that support it (`validate`, `plan`, `report`, `checklist` and `privacy-check`). **`render` ignores it**: `osn render --json ...` still prints Markdown (a rendered sheet is a document, not data), so a script must not expect JSON from it. May appear before or after the subcommand name. |
 | `--program <id>` | Per-command (`validate`, `plan`, `render`, `report`, `checklist`): the registered programme (`data/programs.json`) whose corpus to use; default `osn`. An unknown id is a usage error (exit `2`) naming the registered ids. Write it after the subcommand name. `osn validate` without it validates every registered programme. Only `validate` supports `sma-coding`; `plan`, `render` (except `render modul`), `report` and `checklist` read the OSN corpus only and exit `2` with "belum didukung untuk program sma-coding" rather than present OSN data as that programme's. `privacy-check` takes no `--program`: it always scans all of `data/`. |
 
 ## Exit codes
@@ -187,8 +187,8 @@ OK -- 22 data file(s) validated, 0 problem(s) found.
 ```sh
 $ osn validate --program osn --json
 {
-  "ok": true,
   "program": "osn",
+  "ok": true,
   "findings": [],
   "summary": {
     "filesValidated": 22,
@@ -555,7 +555,7 @@ domain functions.
 | --- | --- |
 | `--program <id>` | The registered programme whose corpus to use. Default `osn`; an unknown id is exit `2`. `sma-coding` is registered but not supported: exit `2`, "belum didukung untuk program sma-coding". |
 | `--records <path>` | A `.jsonl` (one JSON record per line, blank lines skipped) or `.json` (a JSON array of records) file. **Required.** See "Input format detection" below. |
-| `--by <topic\|week\|none>` | Group the KPI metrics by topic family or by §4 week number, in addition to the always-present overall (ungrouped) section. Default `none`. See "Grouping: a documented current limitation" below. |
+| `--by <topic\|week\|none>` | Group the KPI metrics by topic family or by §4 week number, in addition to the always-present overall (ungrouped) section. Default `none`. `topic` and `week` are a documented limit: they always exit `2` with an explanatory message. See "Grouping: a documented limit" below. |
 | `--format <md\|json>` | Output format. Default `md`. |
 | `--out <path>` | Write the rendered report to this path instead of stdout. |
 | `--force` | Required to overwrite a file that already exists at `--out`. Without it, an existing file is left byte-for-byte untouched and the command exits `2` -- same safety property as `osn render`'s `--out`/`--force` (`src/cli/output-writer.ts`). |
@@ -619,7 +619,7 @@ valid JSON at all), the command refuses to process the file and reports
 "report every invalid index" discipline `parseLearningRecords`
 (`src/domain/learning-record.ts`) already uses for #15's batch parsing.
 
-### Grouping: a documented current limitation
+### Grouping: a documented limit
 
 `buildKpiReport` (`src/domain/report.ts`) supports grouping the report by
 topic or by §4 week number, but only when given a `resolveTopic`/
@@ -632,14 +632,23 @@ to topic families, and mapping a timestamp to a week number needs a
 cohort's own start date and excluded-days list (`src/domain/cohort-plan.ts`),
 which `osn report` has no flag to supply.
 
-Consequently, **`--by topic` and `--by week` currently always fail** with
-an actionable usage error (exit `2`) explaining exactly this, and `--by
-none` (the default) is the only grouping that works via the CLI today.
-`buildKpiReport` itself is fully generic over any caller-supplied resolver
--- a future CLI enhancement (or a programmatic caller in the same process)
-that does have a real topic/week mapping can pass `resolveTopic`/
-`resolveWeek` and get real per-group sections without any change to
-`src/domain/report.ts`.
+Consequently, **`--by topic` and `--by week` are a documented limit of the
+CLI, not a pending feature**: they always exit `2`, and the pesan galat
+(decided by the owner on 2026-11-18, issue #95) states the reason and the
+supported alternatives. For `--by topic`:
+
+```text
+osn report: --by topic is not supported by the CLI: a learning record carries a problemId but no topic family (rumpun materi), and no problem-to-topic mapping is shipped with the CLI. Supported: omit --by (or use --by none) for the overall report; export --format json and group by topic outside the CLI. This is a documented limit (docs/cli/README.md, "osn report").
+```
+
+`--by week` gives the same message with its own reason (a record carries
+a `recordedAt` timestamp but no week number, and a week depends on a
+cohort's own start date and excluded days). The only grouping that works
+via the CLI is `--by none` (the default). `buildKpiReport` itself is fully
+generic over any caller-supplied resolver, so a programmatic caller in the
+same process that does have a real topic/week mapping can pass
+`resolveTopic`/`resolveWeek` and get per-group sections without any change
+to `src/domain/report.ts`.
 
 ### Report contents
 
@@ -671,7 +680,7 @@ Regardless of `--by`, every report contains:
 | --- | --- |
 | `0` | Success. |
 | `1` | Invalid input: one or more records failed schema validation (every failing index listed), or a privacy refusal (see above). Both cases exit `1`; a privacy refusal is distinguished by its message (always starting `"osn report: privacy refusal:"`), never by a different exit code -- see `src/cli/commands/report.ts`'s docblock for why this repository did not add a fourth exit code just for this one case. |
-| `2` | Usage error: `--records` missing, the given path cannot be read, an unknown `--by`, an unknown `--format`, `--by topic`/`--by week` (see "Grouping" above), or `--out` already exists without `--force`. |
+| `2` | Usage error: `--records` missing, the given path cannot be read, an unknown `--by`, an unknown `--format`, `--by topic`/`--by week` (a documented limit, see "Grouping" above), or `--out` already exists without `--force`. |
 
 ### Example
 
@@ -684,7 +693,7 @@ Generated from 58 learning record(s), grouped by "none".
 
 ## overall (58 record(s))
 
-#### A/B/C/D per topic
+### A/B/C/D per topic
 
 _Mengukur independensi dan dependency pada bantuan._
 
@@ -692,14 +701,19 @@ Total records: 58
 
 | Topic | Total | A | B | C | D |
 | --- | --- | --- | --- | --- | --- |
-| unresolved | 58 | 30 (51.7%) | 12 (20.7%) | 10 (17.2%) | 6 (10.3%) |
+| unresolved | 58 | 23 (39.7%) | 11 (19.0%) | 11 (19.0%) | 13 (22.4%) |
+
+### Time-to-first-correct
 ...
 ```
 
-(The `A/B/C/D per topic` metric shows one `unresolved` bucket here because
-no `--by topic`-style `resolveTopic` was supplied for this run -- see
-"Grouping" above; every record still counts, per `statusDistributionByTopic`'s
-own "never silently drop a record" contract in `src/domain/kpi.ts`.)
+(The output is cut after the first metric here; the real report continues
+with the remaining six metrics, the postmortem and the scheduled re-solves.
+Its section headings are `##` for `overall`, the postmortem and the
+scheduled re-solves, and `###` for each metric. The `A/B/C/D per topic` metric shows one `unresolved`
+bucket because no topic mapping is available to the CLI -- see "Grouping"
+above; every record still counts, per `statusDistributionByTopic`'s own
+"never silently drop a record" contract in `src/domain/kpi.ts`.)
 
 ### Sample data
 
@@ -791,7 +805,7 @@ terminal, a CI log, or a `--json` payload.
 ```text
 $ osn privacy-check
 osn privacy-check: scanning /path/to/repo/data
-OK -- 23 file(s) scanned, 0 direct-identifier-shaped key(s) found.
+OK -- 31 file(s) scanned, 0 direct-identifier-shaped key(s) found.
 ```
 
 ### Example: a planted identifier (illustrative)
@@ -889,9 +903,9 @@ Corpus version: 2.0 (2026-09-04)
 
 ## Syllabus-check status (§14.2 rule 8)
 
-Latest check: 2026-09-05 -- outcome: no-change.
+Latest check: 2026-11-18 -- outcome: no-change.
 Sources checked: R1, R2, R3, R7, R8.
-Days since last check (as of 2026-09-05): 0.
+Days since last check (as of 2026-11-18): 0.
 
 ## Cohort readiness checklist (§14.1)
 

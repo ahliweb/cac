@@ -201,10 +201,18 @@ describe("osn report (real subprocess): usage errors", () => {
     expect(result.stderr).toContain("--by");
   });
 
-  test("--by topic without a resolver exits 2 with an actionable message", async () => {
+  test("--by topic exits 2 with the documented-limit message", async () => {
     const result = await runCliSubprocess(["report", "--records", SAMPLE_PATH, "--by", "topic"]);
     expect(result.exitCode).toBe(2);
-    expect(result.stderr).toContain("resolveTopic");
+    expect(result.stderr).toContain("--by topic is not supported by the CLI");
+    expect(result.stderr).toContain("omit --by (or use --by none)");
+  });
+
+  test("--by week exits 2 with the documented-limit message", async () => {
+    const result = await runCliSubprocess(["report", "--records", SAMPLE_PATH, "--by", "week"]);
+    expect(result.exitCode).toBe(2);
+    expect(result.stderr).toContain("--by week is not supported by the CLI");
+    expect(result.stderr).toContain("no week number");
   });
 
   test("an unknown --format exits 2", async () => {
