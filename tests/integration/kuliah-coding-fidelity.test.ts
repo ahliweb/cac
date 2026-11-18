@@ -61,7 +61,7 @@ describe("kuliah-coding fidelity: data/kuliah-coding vs. the approved silabus", 
   });
 
   test("the registry entry carries the document's version and date", () => {
-    expect(entry?.syllabusVersion).toBe("1.0.0");
+    expect(entry?.syllabusVersion).toBe("1.1.0");
     expect(entry?.syllabusDate).toBe("2026-11-19");
   });
 
@@ -90,6 +90,27 @@ describe("kuliah-coding fidelity: data/kuliah-coding vs. the approved silabus", 
     expect(byCode("KUL-U-101").cpmk[3].code).toBe("KUL-U-101-C4");
     expect(byCode("KUL-I-102").cpmk).toHaveLength(3);
     expect(byCode("KUL-K-201").kaCodes).toEqual(["AL", "SDF"]);
+  });
+
+  test("v1.1 AI revision: AI-assisted engineering outcomes, strengthened policy, unchanged SKS", () => {
+    const corpus = expectedCorpus(markdown) as Record<string, Json>;
+    const courses = corpus["courses.json"].courses as Array<Json>;
+    const byCode = (code: string) => courses.find((c) => c.code === code);
+    expect(byCode("KUL-U-202").cpmk).toHaveLength(5);
+    expect(byCode("KUL-U-202").sks).toBe(2);
+    expect(byCode("KUL-I-204").cpmk).toHaveLength(4);
+    expect(byCode("KUL-I-204").sks).toBe(3);
+    expect(byCode("KUL-I-204").topics).toContain("SSDF dan SLSA");
+    expect(byCode("KUL-I-401").cpmk).toHaveLength(4);
+    for (const code of ["KUL-I-301", "KUL-I-303", "KUL-I-305"]) {
+      expect(byCode(code).cpmk.length).toBeGreaterThanOrEqual(3);
+    }
+    const sks = courses.reduce((sum, c) => sum + (c.sks as number), 0);
+    expect(sks).toBe(66);
+    const levels = corpus["ai-policy.json"].levels as Array<Json>;
+    expect(levels[0].rule).toContain("log pemakaian wajib");
+    expect(levels[2].usedOnCourses).toEqual(["KUL-K-201", "KUL-K-301", "KUL-K-401"]);
+    expect(corpus["ai-policy.json"].syllabusVersion).toBe("1.1.0");
   });
 });
 
@@ -182,7 +203,7 @@ describe("kuliah-coding fidelity: drift fails hard", () => {
     );
     expect(() => expectedCorpus(broken)).toThrow("expected 5 cells");
     expect(() => expectedCorpus(markdown.replace("### 6.3 ", "### 6.9 "))).toThrow("not found");
-    expect(() => expectedCorpus(markdown.replace("- **Version:** v1.0.0", "- Version"))).toThrow(
+    expect(() => expectedCorpus(markdown.replace("- **Version:** v1.1.0", "- Version"))).toThrow(
       "header Version",
     );
   });

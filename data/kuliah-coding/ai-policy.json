@@ -1,19 +1,19 @@
 {
-  "syllabusVersion": "1.0.0",
+  "syllabusVersion": "1.1.0",
   "syllabusDate": "2026-11-19",
   "sourceSection": "bagian 6.3",
   "levels": [
     {
       "level": "hijau",
       "levelText": "Hijau",
-      "rule": "AI boleh dipakai dengan pengungkapan ringkas (alat, tujuan)",
-      "usedOnText": "Proyek, eksplorasi, dokumentasi",
-      "usedOnCourses": []
+      "rule": "AI boleh dipakai dengan pengungkapan ringkas (alat, tujuan) dan log pemakaian wajib (alat dan versi, tujuan, perintah, bagian keluaran yang dipakai); mahasiswa siap menjawab wawancara kode singkat",
+      "usedOnText": "Proyek, eksplorasi, dokumentasi, termasuk KUL-U-202, KUL-I-204, KUL-I-401",
+      "usedOnCourses": ["KUL-U-202", "KUL-I-204", "KUL-I-401"]
     },
     {
       "level": "kuning",
       "levelText": "Kuning",
-      "rule": "AI boleh menjelaskan konsep, tidak boleh menghasilkan solusi yang diserahkan",
+      "rule": "AI boleh menjelaskan konsep, tidak boleh menghasilkan solusi yang diserahkan; dipakai hanya sesudah gerbang kesiapan (bagian 6.4)",
       "usedOnText": "Tugas dasar pemrograman KUL-U-101, KUL-I-101, KUL-I-102",
       "usedOnCourses": ["KUL-U-101", "KUL-I-101", "KUL-I-102"]
     },
@@ -21,8 +21,8 @@
       "level": "merah",
       "levelText": "Merah",
       "rule": "AI tidak boleh",
-      "usedOnText": "Ujian praktik, kontes, seleksi, tugas penilaian kemampuan dasar",
-      "usedOnCourses": []
+      "usedOnText": "Ujian praktik, kontes (jalur K: KUL-K-201, KUL-K-301, KUL-K-401), seleksi, tugas penilaian kemampuan dasar",
+      "usedOnCourses": ["KUL-K-201", "KUL-K-301", "KUL-K-401"]
     }
   ]
 }

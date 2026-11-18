@@ -71,7 +71,7 @@ describe("auditKulCorpus on the committed corpus", () => {
     expect(result.summary.filesUnregistered).toBe(0);
   });
 
-  test("has the counts and SKS totals of the approved v1.0 syllabus", () => {
+  test("has the counts and SKS totals of the approved syllabus (v1.0 and v1.1)", () => {
     const files = corpus();
     const courses = files.get("courses.json").courses as Array<{
       track: string;
