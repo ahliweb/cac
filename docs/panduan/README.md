@@ -24,12 +24,26 @@ Yang **bukan** repositori ini:
 
 Dokumen ini independen dan bukan dokumen resmi Puspresnas, IA TOKI, atau IOI.
 
-## Dua program
+## Tujuh program
+
+Tujuh program terdaftar di `data/programs.json` (ADR-0006); semuanya diperiksa
+`osn validate`. Peta jenjang lengkap ada di
+[`docs/programs/README.md`](../programs/README.md).
 
 | Program (`--program`) | Isi | Sumber | Dukungan alat |
 | --- | --- | --- | --- |
-| `osn` | Pembinaan OSN Informatika 2026, 28 minggu, 10 rumpun materi, 7 gerbang (checkpoint). | PDF silabus v2.0 (4 September 2026) di `docs/`. | Penuh: `validate`, `plan`, `render`, `report`, `checklist`. |
-| `sma-coding` | Coding SMA kelas X-XII: jalur A (C++), B (web JS/TS/Bun), C (IoT dan robotika), D (kecerdasan buatan dan analisis data), E (komputasi kuantum, kelas XI-XII). | `docs/programs/sma-coding/silabus.md` v1.2, disetujui pemilik program 2026-11-19 untuk kelima jalur (v1.1: 2026-11-19; v1.0: 2026-11-18). Jalur D dan E di luar rumusan CP (pengayaan). | `validate`, `plan --track`, `render lembar-siswa --week <kode-minggu>` dan `render modul` (issue #77). `render weekly`, `render checkpoint` and `render sop`, `report` dan `checklist` menolak dengan exit 2. |
+| `osn` | Pembinaan OSN Informatika 2026, 28 minggu, 10 rumpun materi, 7 gerbang (checkpoint). | PDF silabus v2.0 (4 September 2026) di `docs/`. Kebijakan AI: [`kebijakan-ai-osn.md`](../operations/kebijakan-ai-osn.md). | Penuh: `validate`, `plan`, `render`, `report`, `checklist`. |
+| `sma-coding` | Coding SMA kelas X-XII: jalur A (C++), B (web JS/TS/Bun), C (IoT dan robotika), D (kecerdasan buatan dan analisis data), E (komputasi kuantum, kelas XI-XII). | `docs/programs/sma-coding/silabus.md` v1.3.0 (disetujui pemilik 2026-11-19; jalur D dan E di luar rumusan CP, pengayaan). Murid boleh memakai AI dengan etika (bagian 7.4). | `validate`, `check:fidelity`, `plan --track`, `render lembar-siswa --week <kode-minggu>` dan `render modul` (issue #77). `render weekly`, `render checkpoint` dan `render sop`, `report` dan `checklist` menolak dengan exit 2. |
+| `tk-coding` | Berpikir komputasional TK A dan TK B, tanpa layar. | `docs/programs/tk-coding/silabus.md` v1.0.0. Tanpa alat AI generatif untuk murid. | `validate`, `check:fidelity`. |
+| `sd-coding` | Coding SD kelas 1-6 (inti kelas 5-6, KKA Fase C). | `docs/programs/sd-coding/silabus.md` v1.0.0. Tanpa alat AI generatif untuk murid. | `validate`, `check:fidelity`. |
+| `smp-coding` | Coding SMP kelas 7-9 (Fase D), 84 minggu. | `docs/programs/smp-coding/silabus.md` v1.1.0. Demonstrasi guru, tanpa akun murid (bagian 7.1). | `validate`, `check:fidelity`. |
+| `kuliah-coding` | Coding perguruan tinggi dalam SKS: jalur U, I, K. | `docs/programs/kuliah-coding/silabus.md` v1.1.0. Kebijakan AI tiga tingkat (bagian 6.3-6.5). | `validate`, `check:fidelity`. |
+| `dewasa-coding` | Coding untuk dewasa: jalur Pekerja, Profesional, Personal, Pebisnis/UMKM, berbasis modul dan jam. | `docs/programs/dewasa-coding/silabus.md` v1.1.0. Kebijakan AI peserta dewasa (bagian 9.1). | `validate`, `check:fidelity`. |
+
+Untuk `tk-coding`, `sd-coding`, `smp-coding`, `kuliah-coding`, dan
+`dewasa-coding`, `plan` dan `render` menolak dengan exit 2 ("belum didukung
+untuk program <id>"). Kelima program itu belum punya modul materi di
+`content/`.
 
 ## Anda siapa? Baca halaman ini
 
@@ -47,7 +61,7 @@ Dokumen ini independen dan bukan dokumen resmi Puspresnas, IA TOKI, atau IOI.
 | Istilah | Arti |
 | --- | --- |
 | Corpus | Kumpulan berkas JSON data kurikulum satu program di `data/<program>/`. Divalidasi skema; `osn validate` memeriksanya. |
-| Program | Satu kurikulum yang terdaftar di `data/programs.json` (ADR-0006): `osn` dan `sma-coding`. |
+| Program | Satu kurikulum yang terdaftar di `data/programs.json` (ADR-0006): `osn`, `sma-coding`, `tk-coding`, `sd-coding`, `smp-coding`, `kuliah-coding`, dan `dewasa-coding`. |
 | Modul | Bahan belajar siswa (penjelasan, contoh, latihan) berbentuk Markdown di `content/<program>/modules/`, diindeks `data/<program>/modules.json`. Konten karangan, bukan transkripsi silabus (ADR-0007). |
 | Draf (`draf`) | Status modul atau dokumen yang belum ditinjau manusia. Selalu ditandai spanduk `DRAF`. Status lain: `ditinjau`, `disetujui`, `ditarik`. |
 | Disetujui (`disetujui`) | Hanya manusia (pemilik atau peninjau yang ia tunjuk) yang boleh menetapkannya, dengan tanggal dan peran peninjau. |
@@ -59,7 +73,8 @@ Dokumen ini independen dan bukan dokumen resmi Puspresnas, IA TOKI, atau IOI.
 
 - [`docs/operations/runbook.md`](../operations/runbook.md): siklus operasi kohort (Inggris).
 - [`docs/governance/privacy.md`](../governance/privacy.md): kebijakan privasi.
-- [`docs/programs/`](../programs/README.md): peta jenjang program coding (TK sampai dewasa) dan status tiap program; hanya `osn` dan `sma-coding` yang terdaftar, lima lainnya draf.
+- [`docs/programs/`](../programs/README.md): peta jenjang program coding (TK sampai dewasa) dan status tiap program; ketujuh program terdaftar dan disetujui pemilik.
 - [`docs/programs/sma-coding/`](../programs/sma-coding/README.md): silabus SMA.
-- [`docs/riset/ilmu-belajar-kognitif.md`](../riset/ilmu-belajar-kognitif.md): riset ilmu kognitif tentang cara belajar efektif (DRAF), rujukan pedagogi semua program.
+- [`docs/riset/ilmu-belajar-kognitif.md`](../riset/ilmu-belajar-kognitif.md): riset ilmu kognitif tentang cara belajar efektif, rujukan pedagogi semua program.
+- [`docs/riset/ai-rekayasa-perangkat-lunak.md`](../riset/ai-rekayasa-perangkat-lunak.md): riset AI dalam rekayasa perangkat lunak, dasar kebijakan AI per program (issue #139).
 - [`CONTRIBUTING.md`](../../CONTRIBUTING.md) dan [`AGENTS.md`](../../AGENTS.md): aturan kontribusi.
