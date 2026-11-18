@@ -28,7 +28,7 @@
   semester 1 nomor `M<n>` adalah **nomor minggu kalender semester**:
   minggu 1-7 dipakai blok fondasi `FND-X1-M1..M7`, sehingga jalur D
   dimulai di `D-X1-M8` (sama seperti jalur A dan B pada
-  [`silabus-v1.1-draf.md`](silabus-v1.1-draf.md) bagian 3.0). Semester
+  `silabus-v1.1-draf.md` (kini [`silabus.md`](silabus.md)) bagian 3.0). Semester
   lain: `D-X2-M1`, `D-XI1-M1`, `D-XI2-M1`, `D-XII1-M1`, `D-XII2-M1`.
 - Kode butir CP (mis. `F-AD-a`) dipakai persis seperti di
   [`silabus.md` bagian 1.4](silabus.md). Dokumen ini tidak membuat kode
@@ -47,7 +47,7 @@
   dilebur ke minggu 14 semester 1 (usulan fondasi, keputusan 2026-11-18).
 - Menurut keterangan orchestrator, silabus v1.1 disetujui pemilik pada
   2026-11-19. Pada saat dokumen ini disusun, berkas
-  [`silabus-v1.1-draf.md`](silabus-v1.1-draf.md) di repositori masih
+  `silabus-v1.1-draf.md` (kini [`silabus.md`](silabus.md)) di repositori masih
   berstatus DRAF dan belum mencatat persetujuan itu; dokumen ini tidak
   mencatatnya.
 - Jalur D **tidak** menggantikan jalur A atau B dan tidak menjanjikan
@@ -75,7 +75,7 @@ Murid yang menyelesaikan jalur D mampu `[asumsi]`:
 ## 3. Prasyarat dan hubungan dengan blok fondasi
 
 Jalur D bergantung pada blok fondasi (kelas bersama, `FND-X1-M1..M7`;
-rincian di [`silabus-v1.1-draf.md`](silabus-v1.1-draf.md) bagian 3.0):
+rincian di `silabus-v1.1-draf.md` (kini [`silabus.md`](silabus.md)) bagian 3.0):
 
 | Kebutuhan jalur D | Dipenuhi oleh |
 | --- | --- |
