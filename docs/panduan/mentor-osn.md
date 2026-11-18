@@ -342,6 +342,16 @@ Hal yang perlu diketahui:
 Untuk siklus kontes, postmortem, dan upsolve yang memakai laporan ini, lihat
 runbook bagian 3 dan 4.
 
+## Kebijakan penggunaan AI
+
+Selama kerja soal latihan, *re-solve*, simulasi kontes, dan checkpoint,
+peserta tidak memakai AI. AI hanya boleh menjelaskan setelah peserta
+menyelesaikan soal sendiri atau setelah editorial dibuka, dan penjelasan itu
+tetap diikuti *re-solve* tanpa AI. Aturan kontes resmi berlaku dan harus dicek
+dari sumber resmi; data pribadi peserta tidak boleh ditempel ke layanan AI.
+Rincian, alasan dari riset, dan peran mentor ada di
+[`docs/operations/kebijakan-ai-osn.md`](../operations/kebijakan-ai-osn.md).
+
 ## Bila Anda mengelola program SMA
 
 Perintah di atas hanya untuk program `osn`, kecuali `plan` dan
