@@ -18,7 +18,7 @@ Tables, not prose — drift should be visible at a glance.
 | `src/schema/` | Zod schemas that validate curriculum data shapes. |
 | `src/domain/` | Business rules operating on parsed (schema-valid) curriculum data. |
 | `src/cli/` | CLI command handlers (`osn <command>`): `validate`, `plan`, `render`, `report`, `privacy-check`, `checklist`. |
-| `src/render/` | Generators that turn domain data into mentor-facing output. |
+| `src/render/` | Generators that turn domain data into mentor-facing output and the student learner sheet (`osn render lembar-siswa`). |
 | `src/index.ts` | Package entrypoint. |
 | `data/programs.json` | Programme registry (ADR-0006), validated by `src/schema/program.ts`. |
 | `data/osn/` | The OSN programme corpus (`data/osn/*.json`) and `data/osn/samples/` (synthetic learning records). One `data/<program>/` directory per registered programme. |

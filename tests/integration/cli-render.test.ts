@@ -89,6 +89,96 @@ describe("osn render weekly (real subprocess)", () => {
   });
 });
 
+describe("osn render lembar-siswa (real subprocess)", () => {
+  test("a gate week (4) exits 0 and includes the gate evidence", async () => {
+    const result = await runCliSubprocess(["render", "lembar-siswa", "--week", "4"]);
+    expect(result.exitCode).toBe(0);
+    expect(result.stderr).toBe("");
+    expect(result.stdout).toContain("# Lembar Belajar Siswa -- Minggu 4");
+    expect(result.stdout).toContain("## Gerbang fase setelah minggu 4");
+    expect(result.stdout).toContain("- [ ] ");
+    expect(result.stdout).toContain(
+      "Sumber: Silabus Operasional Pembinaan OSN Informatika 2026, versi 2.0, tanggal 2026-09-04.",
+    );
+  });
+
+  test("a non-gate week (1) exits 0 with no gate section", async () => {
+    const result = await runCliSubprocess(["render", "lembar-siswa", "--week", "1"]);
+    expect(result.exitCode).toBe(0);
+    expect(result.stdout).toContain("# Lembar Belajar Siswa -- Minggu 1");
+    expect(result.stdout).not.toContain("Gerbang fase");
+  });
+
+  test("two runs produce byte-identical output; --out matches stdout; --program osn is the default", async () => {
+    const first = await runCliSubprocess(["render", "lembar-siswa", "--week", "8"]);
+    const second = await runCliSubprocess([
+      "render",
+      "lembar-siswa",
+      "--week",
+      "8",
+      "--program",
+      "osn",
+    ]);
+    expect(first.stdout).toBe(second.stdout);
+
+    const outPath = join(tempDir, "lembar-8.md");
+    const out = await runCliSubprocess(["render", "lembar-siswa", "--week", "8", "--out", outPath]);
+    expect(out.exitCode).toBe(0);
+    expect(await readFile(outPath, "utf-8")).toBe(first.stdout);
+  });
+
+  test("--out refuses to overwrite without --force (exit 2) and --force overwrites", async () => {
+    const outPath = join(tempDir, "lembar.md");
+    expect(
+      (await runCliSubprocess(["render", "lembar-siswa", "--week", "1", "--out", outPath]))
+        .exitCode,
+    ).toBe(0);
+    const refused = await runCliSubprocess([
+      "render",
+      "lembar-siswa",
+      "--week",
+      "2",
+      "--out",
+      outPath,
+    ]);
+    expect(refused.exitCode).toBe(2);
+    expect(refused.stderr).toContain("--force");
+    expect(await readFile(outPath, "utf-8")).toContain("Minggu 1");
+    const forced = await runCliSubprocess([
+      "render",
+      "lembar-siswa",
+      "--week",
+      "2",
+      "--out",
+      outPath,
+      "--force",
+    ]);
+    expect(forced.exitCode).toBe(0);
+    expect(await readFile(outPath, "utf-8")).toContain("Minggu 2");
+  });
+
+  test("out-of-range --week exits 2 and writes nothing", async () => {
+    const outPath = join(tempDir, "nope.md");
+    const result = await runCliSubprocess([
+      "render",
+      "lembar-siswa",
+      "--week",
+      "29",
+      "--out",
+      outPath,
+    ]);
+    expect(result.exitCode).toBe(2);
+    expect(result.stderr).toContain("Valid range: 1-28");
+    await expect(readFile(outPath, "utf-8")).rejects.toThrow();
+  });
+
+  test("missing --week exits 2", async () => {
+    const result = await runCliSubprocess(["render", "lembar-siswa"]);
+    expect(result.exitCode).toBe(2);
+    expect(result.stderr).toContain("--week");
+  });
+});
+
 describe("osn render checkpoint (real subprocess)", () => {
   test("exits 0 and prints non-empty Markdown to stdout", async () => {
     const result = await runCliSubprocess(["render", "checkpoint", "--number", "1"]);

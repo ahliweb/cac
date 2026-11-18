@@ -1,7 +1,8 @@
 /**
- * `osn render <weekly|checkpoint|sop>` -- turns validated corpus data into
- * mentor-facing Markdown artefacts (issue #21). See `src/render/weekly.ts`,
- * `src/render/checkpoint.ts` and `src/render/sop.ts` for the actual pure
+ * `osn render <weekly|checkpoint|sop|lembar-siswa>` -- turns validated
+ * corpus data into Markdown artefacts (issues #21, #53). See
+ * `src/render/weekly.ts`, `src/render/checkpoint.ts`, `src/render/sop.ts`
+ * and `src/render/student-sheet.ts` for the actual pure
  * rendering logic; this module is only the thin subcommand/flag parsing +
  * `--out`/`--force` file-writing + exit-code shell around them, per the
  * "Layering rules" in `docs/architecture/README.md` -- exactly the same
@@ -12,13 +13,14 @@ import { resolve } from "node:path";
 import { renderCheckpointSheet } from "../../render/checkpoint";
 import { RenderRequestError } from "../../render/errors";
 import { renderSopCard } from "../../render/sop";
+import { renderStudentSheet } from "../../render/student-sheet";
 import { renderWeeklyPlan } from "../../render/weekly";
 import type { Command } from "../command";
 import { EXIT_SUCCESS, EXIT_USAGE_ERROR } from "../command";
 import { writeOutputFile } from "../output-writer";
 import { resolveProgramOption } from "../program-loader";
 
-const SUBCOMMANDS = ["weekly", "checkpoint", "sop"] as const;
+const SUBCOMMANDS = ["weekly", "checkpoint", "sop", "lembar-siswa"] as const;
 type RenderSubcommand = (typeof SUBCOMMANDS)[number];
 
 function isRenderSubcommand(value: string | undefined): value is RenderSubcommand {
@@ -34,15 +36,19 @@ and -- on a gate week -- the §4.1 gate evidence), a checkpoint sheet
 (gate evidence, §6.1 rubric weights, the §6.2 A/B/C/D recording grid,
 and the §6.3 KPI snapshot fields), or a one-page mentor SOP card (the
 §5.2 seven-step SOP, minimum test checklist, post-Accepted questions,
-and the §5.3 hint ladder).
+and the §5.3 hint ladder), or a learner sheet for students ("lembar
+belajar siswa": the week's coverage and outcome, topic families, practice
+target, gate evidence, the §5.3 hint callout, a blank self-check list,
+and references -- derived only from the validated corpus).
 
 Usage:
   osn render weekly --week <1-28> [--out <path>] [--force]
   osn render checkpoint --number <1-7> [--out <path>] [--force]
   osn render sop [--out <path>] [--force]
+  osn render lembar-siswa --week <1-28> [--out <path>] [--force]
 
 Options:
-  --week <n>      Week number, 1-28. Required for "weekly".
+  --week <n>      Week number, 1-28. Required for "weekly" and "lembar-siswa".
   --number <n>    Checkpoint number, 1-7. Required for "checkpoint".
   --out <path>    Write the rendered Markdown to this path instead of
                   stdout.
@@ -78,7 +84,8 @@ function parseInteger(rawValue: string): number | null {
 
 export const renderCommand: Command = {
   name: "render",
-  summary: "Render mentor-facing Markdown artefacts (weekly plan, checkpoint sheet, SOP card).",
+  summary:
+    "Render Markdown artefacts (weekly plan, checkpoint sheet, SOP card, student learner sheet).",
   help: () => HELP_TEXT,
 
   async run(rawArgs, ctx) {
@@ -102,24 +109,31 @@ export const renderCommand: Command = {
     const rest = args.slice(1);
     let content: string;
 
-    if (subcommand === "weekly") {
+    if (subcommand === "weekly" || subcommand === "lembar-siswa") {
       const weekRaw = readFlagValue(rest, "--week");
       if (weekRaw === undefined) {
-        ctx.stderr("osn render weekly: --week <1-28> is required.\n");
+        ctx.stderr(`osn render ${subcommand}: --week <1-28> is required.\n`);
         return EXIT_USAGE_ERROR;
       }
       const week = parseInteger(weekRaw);
       if (week === null) {
         ctx.stderr(
-          `osn render weekly: --week must be an integer (1-28); received ${JSON.stringify(weekRaw)}.\n`,
+          `osn render ${subcommand}: --week must be an integer (1-28); received ${JSON.stringify(weekRaw)}.\n`,
         );
         return EXIT_USAGE_ERROR;
       }
       try {
-        content = renderWeeklyPlan(week);
+        content =
+          subcommand === "weekly"
+            ? renderWeeklyPlan(week)
+            : renderStudentSheet(week, {
+                name: resolved.program.name,
+                version: resolved.program.syllabusVersion,
+                date: resolved.program.syllabusDate,
+              });
       } catch (cause) {
         if (cause instanceof RenderRequestError) {
-          ctx.stderr(`osn render weekly: ${cause.message}\n`);
+          ctx.stderr(`osn render ${subcommand}: ${cause.message}\n`);
           return EXIT_USAGE_ERROR;
         }
         throw cause;

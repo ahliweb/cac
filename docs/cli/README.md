@@ -325,19 +325,21 @@ see "Week-shifting rule" and "Session-date rule" above.
 
 ## `osn render`
 
-Turns the validated curriculum corpus into mentor-facing Markdown
-artefacts (issue #21): a weekly session plan, a checkpoint sheet, or a
-one-page mentor SOP card.
+Turns the validated curriculum corpus into Markdown artefacts: for
+mentors (issue #21) a weekly session plan, a checkpoint sheet, or a
+one-page SOP card, and for students (issue #53) a weekly learner sheet.
 
 ```sh
 osn render weekly --week <1-28> [--out <path>] [--force]
 osn render checkpoint --number <1-7> [--out <path>] [--force]
 osn render sop [--out <path>] [--force]
+osn render lembar-siswa --week <1-28> [--out <path>] [--force]
 ```
 
 The actual rendering logic (`renderWeeklyPlan`, `renderCheckpointSheet`,
-`renderSopCard`) lives in `src/render/weekly.ts`, `src/render/
-checkpoint.ts` and `src/render/sop.ts` as **pure functions from validated
+`renderSopCard`, `renderStudentSheet`) lives in `src/render/weekly.ts`,
+`src/render/checkpoint.ts`, `src/render/sop.ts` and
+`src/render/student-sheet.ts` as **pure functions from validated
 data to a Markdown string** -- no file I/O, no `process` access, no dates,
 no randomness. `osn render` itself (`src/cli/commands/render.ts`) is only
 subcommand/flag parsing plus the thin `--out`/`--force` file-writing layer
@@ -385,7 +387,31 @@ test checklist, its four post-Accepted questions, and the §5.3 hint
 policy ladder together with the mandatory re-solve obligation it carries
 from level 4 onward. Takes no subcommand-specific flags.
 
-### `--out` / `--force` (all three `osn render` subcommands)
+### `osn render lembar-siswa`
+
+Renders an Indonesian-language learner sheet ("lembar belajar siswa") for
+one week, derived **only** from the validated corpus -- it adds headings
+and labels but no explanatory teaching text (authored material is a
+separate matter, ADR-0007). Sections, in order: title, week and focus;
+the week's content coverage; the outcome (capaian); the topic families
+the week exercises (name and coverage); the practice target with the
+problem-load range (or a note that there is no fixed count, and a marker
+when the week has a mini contest); -- only when a §4.1 phase gate follows
+the week -- the evidence to master before moving on; the §5.3 hint-policy
+callout quoted verbatim; a self-check list of **blank** checkboxes (one
+per content item plus the outcome); the references cited by the week's
+topic families (deduplicated, in order of first appearance); and a footer naming
+the source syllabus, version and date from the programme registry.
+
+The sheet has no fields for a learner's name, school or any other
+identifier, and the output is byte-deterministic (ADR-0004: nothing about
+a learner is stored).
+
+| Flag | Meaning |
+| --- | --- |
+| `--week <n>` | The week number, `1`-`28`. **Required.** |
+
+### `--out` / `--force` (all `osn render` subcommands)
 
 | Flag | Meaning |
 | --- | --- |
