@@ -42,6 +42,7 @@ bun run check:requirements
 bun run check:checklist-fidelity
 bun run check:module-code
 bun run check:sma-fidelity
+bun run check:fidelity
 ```
 
 | Perintah | Memeriksa | Wajib kapan |
@@ -58,6 +59,7 @@ bun run check:sma-fidelity
 | `bun run check:requirements` | Register kebutuhan dan matriks keterlacakan konsisten. | Bila `docs/requirements/` disentuh. |
 | `bun run check:checklist-fidelity` | Data §14.1/§14.2 sama persis dengan silabus sumber. | Bila data atau dokumen itu disentuh. |
 | `bun run check:module-code` | Semua blok C++ di modul bisa dikompilasi (`g++` wajib ada). | Bila modul di `content/` berubah. |
+| `bun run check:fidelity` | Fidelity semua program yang punya modul fidelity (atau `--program <id>`), lewat tabel program (ADR-0008). | Bila `data/<program>/` atau dokumen sumbernya berubah. |
 | `bun run check:sma-fidelity` | `data/sma-coding/` sama sel demi sel dengan `silabus.md`. | Bila `data/sma-coding/` atau silabus itu berubah. |
 
 Contoh keluaran pemeriksaan yang lolos:

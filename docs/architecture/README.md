@@ -177,7 +177,13 @@ remaining items below are still direction, not current state:
   modules exist (#55) and were approved by the programme owner on
   2026-11-18.
 
-Neither decision changes the boundaries below: learner sheets and
+- **ADR-0008** — each programme gets its own schemas, audit and (when its
+  source is tabular) fidelity module, wired through one programme table,
+  `PROGRAM_MODULES` in `src/cli/program-registry.ts`, which `osn validate`
+  and `bun run check:fidelity` use. Implemented in #140 for `osn` and
+  `sma-coding`; the five further coding programmes add one entry each.
+
+Neither of the first two decisions changes the boundaries below: learner sheets and
 modules are rendered Markdown, not an LMS, and no learner data is stored.
 
 ## Out of scope

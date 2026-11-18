@@ -10,8 +10,6 @@
  */
 
 import { resolve } from "node:path";
-import { auditCorpus } from "../../domain/corpus-audit";
-import { moduleFindings } from "../../domain/modules";
 import {
   DEFAULT_PROGRAM_ID,
   findProgram,
@@ -20,9 +18,7 @@ import {
   registryVersionFindings,
   withExtraFindings,
 } from "../../domain/programs";
-import { auditSmaCorpus } from "../../domain/sma-corpus-audit";
 import type { Program, ProgramRegistry } from "../../schema/program";
-import { SMA_CODING_PROGRAM_ID } from "../../schema/sma-common";
 import type { Command, CommandContext } from "../command";
 import { EXIT_SUCCESS, EXIT_USAGE_ERROR, EXIT_VALIDATION_FAILURE } from "../command";
 import { loadCorpusFromDirectory } from "../corpus-loader";
@@ -35,6 +31,12 @@ import {
   REPO_ROOT,
   repoPathExists,
 } from "../program-loader";
+import {
+  emptyAuditResult,
+  findProgramModule,
+  missingProgramModuleFinding,
+  type ProgramAuditContext,
+} from "../program-registry";
 
 const HELP_TEXT = `osn validate -- validate the curriculum corpus of one or every programme
 
@@ -81,16 +83,29 @@ Exit codes:
   1   a corpus or the registry has one or more findings (schema, structural, referential, version).
   2   usage error, e.g. unknown --program, --program/--data-dir given with no value, or a directory that cannot be read.`;
 
-/** One programme's audit: its corpus plus the registry cross-checks. */
-async function auditProgram(program: Program, corpusDir: string, registry: ProgramRegistry) {
+/**
+ * One programme's audit: its corpus plus the registry cross-checks. The
+ * programme-specific parts come from the table entry
+ * (`src/cli/program-registry.ts`, ADR-0008); a registered programme with no
+ * entry is reported as a finding rather than skipped.
+ */
+export async function auditProgram(program: Program, corpusDir: string, registry: ProgramRegistry) {
   const source = await loadCorpusFromDirectory(corpusDir);
+  const module = findProgramModule(program.id);
   const extra = registryVersionFindings(program, source);
-  const osnTopicFamilyIds =
-    program.id === SMA_CODING_PROGRAM_ID ? await loadOsnTopicFamilyIds(registry) : undefined;
-  extra.push(
-    ...moduleFindings(source, program.id, { osnTopicFamilyIds }),
-    ...(await moduleContentFindings(source, REPO_ROOT, program.id)),
-  );
+  const context: ProgramAuditContext = {
+    osnTopicFamilyIds: module?.needsOsnTopicFamilyIds
+      ? await loadOsnTopicFamilyIds(registry)
+      : undefined,
+  };
+  if (module !== undefined) {
+    extra.push(
+      ...module.moduleFindings(source, context),
+      ...(await moduleContentFindings(source, REPO_ROOT, program.id, module.parseModulesIndex)),
+    );
+  } else {
+    extra.push(missingProgramModuleFinding(program));
+  }
   if (!(await repoPathExists(program.sourceDocument))) {
     extra.push({
       file: REGISTRY_FILE_NAME,
@@ -99,10 +114,7 @@ async function auditProgram(program: Program, corpusDir: string, registry: Progr
       message: `source document "${program.sourceDocument}" does not exist`,
     });
   }
-  const base =
-    program.id === SMA_CODING_PROGRAM_ID
-      ? auditSmaCorpus(source, osnTopicFamilyIds)
-      : auditCorpus(source);
+  const base = module === undefined ? emptyAuditResult() : module.audit(source, context);
   return withExtraFindings(base, extra);
 }
 

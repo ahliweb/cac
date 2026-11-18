@@ -88,7 +88,7 @@ The register is only trustworthy if it is exhaustive in both directions. Concret
 5. **Test links exist.** Every row of `traceability.md`'s third matrix ("Requirement → tests")
    names a registered requirement and at least one test file, and every listed file exists. The
    matrix is required for the requirements added after the initial backlog (`FR-27`–`FR-33`,
-   `TR-12`, `TR-13`, `GR-13`) and optional for older ones.
+   `TR-12`, `TR-13`, `TR-14`, `GR-13`) and optional for older ones.
 
 `scripts/check-requirements.ts` (`bun run check:requirements`) parses both Markdown files and
 asserts all five rules mechanically, and `tests/integration/requirements.test.ts` runs the same

@@ -17,7 +17,7 @@ Tables, not prose — drift should be visible at a glance.
 | --- | --- |
 | `src/schema/` | Zod schemas that validate curriculum data shapes. |
 | `src/domain/` | Business rules operating on parsed (schema-valid) curriculum data. |
-| `src/cli/` | CLI command handlers (`osn <command>`): `validate`, `plan`, `render`, `report`, `privacy-check`, `checklist`. |
+| `src/cli/` | CLI command handlers (`osn <command>`): `validate`, `plan`, `render`, `report`, `privacy-check`, `checklist`. `program-registry.ts` is the programme table (id → data files + schemas, audit, module-index hooks, optional fidelity module) that `validate` and `check:fidelity` dispatch through; `fidelity/` holds the per-programme fidelity modules (ADR-0008). |
 | `src/render/` | Generators that turn domain data into mentor-facing output and the student learner sheet (`osn render lembar-siswa`). |
 | `src/index.ts` | Package entrypoint. |
 | `data/programs.json` | Programme registry (ADR-0006), validated by `src/schema/program.ts`. |
@@ -68,6 +68,7 @@ table.
 | `bun run check:requirements` | `bun run scripts/check-requirements.ts` — verifies the requirements register and traceability matrices are consistent and exhaustive. |
 | `bun run check:checklist-fidelity` | `bun run scripts/check-checklist-fidelity.ts` — verifies §14.1/§14.2 data matches the source syllabus verbatim. |
 | `bun run check:module-code` | `bun run scripts/check-module-code.ts` — compiles every ```` ```cpp ```` block in `content/**/modules/*.md` with `g++ -std=c++17 -fsyntax-only` (nothing is run); fails if `g++` is missing. |
+| `bun run check:fidelity` | `bun run scripts/check-fidelity.ts [--program <id>]` — runs the fidelity module of every registered programme that has one (today `sma-coding`), or of `--program <id>`, from the programme table `src/cli/program-registry.ts` (ADR-0008); exits 0 clean / 1 on drift / 2 on usage error. |
 | `bun run check:sma-fidelity` | `bun run scripts/check-sma-coding-fidelity.ts` — parses the Markdown tables of `docs/programs/sma-coding/silabus.md` (bagian 1.3, 1.4, 2, 3, 4, 5) and compares them cell by cell with `data/sma-coding/*.json`; exits 1 on any drift. |
 | `bun run changeset` | Create a changeset (interactive). |
 | `bun run version` | Consume changesets into `CHANGELOG.md` / bump version. |
@@ -156,6 +157,7 @@ not duplicate that policy here; that document is the source of truth.
 - [ ] `bun run privacy-check` passes (no direct-identifier-shaped key in `data/`).
 - [ ] `bun run check:requirements` passes if `docs/requirements/` was touched.
 - [ ] `bun run check:module-code` passes (C++ examples in `content/` modules compile).
+- [ ] `bun run check:fidelity` passes if any `data/<program>/` or its source document changed (`check:sma-fidelity` is the same check for `sma-coding` alone).
 - [ ] `bun run check:sma-fidelity` passes if `data/sma-coding/` or `docs/programs/sma-coding/silabus.md` changed.
 - [ ] Every command and path mentioned in any doc you touched actually
       exists — verify, don't assume.

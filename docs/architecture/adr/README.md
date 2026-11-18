@@ -38,6 +38,7 @@ file.
 | [0005](0005-dual-versioning.md) | Dual versioning: software SemVer vs. independent syllabus version | Accepted |
 | [0006](0006-multi-program-repository.md) | Multi-program repository with per-programme corpora | Accepted |
 | [0007](0007-authored-learning-content.md) | Authored learning content with a review lifecycle | Accepted |
+| [0008](0008-skema-khusus-per-program.md) | Skema khusus per program dan titik sambung audit/fidelity | Accepted |
 
 ADRs 0001–0005 satisfy requirement **TR-05** in
 `docs/requirements/register.md` ("Architecture documentation and ADRs...

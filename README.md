@@ -110,6 +110,7 @@ test`). This table matches `package.json` exactly.
 | `bun run check:requirements` | `bun run scripts/check-requirements.ts` | Verifies `docs/requirements/register.md` and `traceability.md` are internally consistent and exhaustive. |
 | `bun run check:checklist-fidelity` | `bun run scripts/check-checklist-fidelity.ts` | Verifies the §14.1/§14.2 data in `data/osn/` matches the source syllabus verbatim. |
 | `bun run check:module-code` | `bun run scripts/check-module-code.ts` | Compiles every `cpp` block of `content/**/modules/*.md` with `g++ -std=c++17 -fsyntax-only` (never runs them). Exits 1 on a failing block or a missing `g++`. |
+| `bun run check:fidelity` | `bun run scripts/check-fidelity.ts [--program <id>]` | Runs the fidelity check of every registered programme that has one (today `sma-coding`), or only `--program <id>`, via the programme table (ADR-0008). Exits 1 on drift, 2 on a usage error. |
 | `bun run check:sma-fidelity` | `bun run scripts/check-sma-coding-fidelity.ts` | Verifies `data/sma-coding/*.json` matches the tables of the approved `docs/programs/sma-coding/silabus.md` cell by cell. Exits 1 on any drift. |
 | `bun run changeset` | `changeset` | Interactive changeset creation. See `docs/development/releasing.md`. |
 | `bun run version` | `changeset version` | Consumes changesets into `CHANGELOG.md` and bumps `package.json` version. |

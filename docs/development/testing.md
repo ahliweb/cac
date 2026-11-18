@@ -38,7 +38,7 @@ matrices and the tests matrix, whose listed test files must exist),
 `checklist-fidelity.test.ts` (§14.1/§14.2 against the source syllabus) and
 `sma-coding-fidelity.test.ts` (`data/sma-coding/` against
 `docs/programs/sma-coding/silabus.md`). Each has a script of the same purpose
-(`check:requirements`, `check:checklist-fidelity`, `check:sma-fidelity`); the
+(`check:requirements`, `check:checklist-fidelity`, `check:sma-fidelity`, and `check:fidelity`, which runs every programme's fidelity module from the programme table, ADR-0008; `tests/integration/check-fidelity.test.ts` covers it and `tests/unit/program-registry.test.ts` the table); the
 scripts are local commands that CI does not run, but the tests run in CI under
 `bun run test:coverage`. `check:module-code` (C++ blocks of `content/` modules
 compile) is the opposite case: a CI step of its own, with unit and integration
