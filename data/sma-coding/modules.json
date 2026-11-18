@@ -391,6 +391,139 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/cloud-deploy-sederhana.md"
+    },
+    {
+      "id": "pendamping-periksa-fakta-dan-baca-lateral",
+      "title": "Memilah Fakta dan Membaca Lateral",
+      "cpItems": ["E-LD-b", "E-LD-c"],
+      "weekCodes": [],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": [],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/pendamping-periksa-fakta-dan-baca-lateral.md"
+    },
+    {
+      "id": "pendamping-profesi-informatika-dan-budaya-digital",
+      "title": "Profesi Informatika dan Digitalisasi Budaya Indonesia",
+      "cpItems": ["E-LD-h", "E-LD-i"],
+      "weekCodes": [],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": [],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/pendamping-profesi-informatika-dan-budaya-digital.md"
+    },
+    {
+      "id": "pendamping-menyaring-konten-negatif",
+      "title": "Menyaring Konten Negatif",
+      "cpItems": ["E-LD-j"],
+      "weekCodes": [],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["FND-X1-M6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/pendamping-menyaring-konten-negatif.md"
+    },
+    {
+      "id": "pendamping-riset-dan-verifikasi-konten",
+      "title": "Riset dengan Mesin Pencari dan Verifikasi Teks, Gambar, Video",
+      "cpItems": ["F-LD-a", "F-LD-b", "F-LD-c"],
+      "weekCodes": [],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["pendamping-periksa-fakta-dan-baca-lateral"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/pendamping-riset-dan-verifikasi-konten.md"
+    },
+    {
+      "id": "pendamping-model-jaringan-dan-troubleshooting",
+      "title": "Model Jaringan, Pengiriman Data, dan Pemecahan Masalah",
+      "cpItems": ["F-BK-d"],
+      "weekCodes": [],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["FND-X1-M4", "FND-X1-M5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/pendamping-model-jaringan-dan-troubleshooting.md"
+    },
+    {
+      "id": "pendamping-teknologi-dan-demokrasi",
+      "title": "Teknologi Digital dalam Demokrasi",
+      "cpItems": ["F-LD-h"],
+      "weekCodes": [],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["pendamping-riset-dan-verifikasi-konten"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/pendamping-teknologi-dan-demokrasi.md"
+    },
+    {
+      "id": "pendamping-transaksi-digital-aman",
+      "title": "Loka Pasar, Perbankan Digital, dan Dompet Digital Secara Aman",
+      "cpItems": ["F-LD-j"],
+      "weekCodes": [],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["FND-X1-M6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/pendamping-transaksi-digital-aman.md"
     }
   ]
 }
