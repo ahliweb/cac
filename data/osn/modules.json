@@ -108,6 +108,24 @@
         }
       ],
       "contentPath": "content/osn/modules/strategi-problem-solving.md"
+    },
+    {
+      "id": "struktur-data",
+      "title": "Struktur Data untuk OSN Informatika",
+      "topicFamilies": ["struktur-data"],
+      "weeks": [2, 8, 20, 21, 22, 23, 27],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "refId": "R1"
+        },
+        {
+          "refId": "R4"
+        }
+      ],
+      "contentPath": "content/osn/modules/struktur-data.md"
     }
   ]
 }
