@@ -1,8 +1,8 @@
 # Program Pembelajaran Coding SMA (`sma-coding`)
 
-- **Version:** v1.5.0
+- **Version:** v1.6.0
 - **Last updated:** 2026-11-19
-- **Status:** Silabus v1.1 DISETUJUI pemilik program (2026-11-19) untuk jalur A dan B, termasuk blok fondasi kelas X (v1.0: 2026-11-18); rancangan seri matematika komputasi, seri cloud, dan modul pendamping DISETUJUI pemilik (2026-11-19), 27 modul drafnya (termasuk 6 modul fondasi) ada di `content/sma-coding/modules/` dan terindeks di `data/sma-coding/modules.json` sejak 2026-11-19, berstatus draf sampai ditinjau pemilik; draf jalur C, D, dan E berstatus DRAF menunggu keputusan pemilik.
+- **Status:** Silabus v1.1 DISETUJUI pemilik program (2026-11-19) untuk jalur A dan B, termasuk blok fondasi kelas X (v1.0: 2026-11-18); rancangan seri matematika komputasi, seri cloud, dan modul pendamping DISETUJUI pemilik (2026-11-19), 29 modul drafnya (termasuk 6 modul fondasi dan 2 modul pendamping lintas jalur untuk F-LD-d dan F-LD-e, #105) ada di `content/sma-coding/modules/` dan terindeks di `data/sma-coding/modules.json` sejak 2026-11-19, berstatus draf sampai ditinjau pemilik; draf jalur C, D, dan E berstatus DRAF menunggu keputusan pemilik.
 
 > **Silabus v1.1 disetujui pemilik program pada 2026-11-19 untuk jalur A dan
 > B** (issue #92; v1.0 disetujui 2026-11-18, issue #52). Isi folder ini
@@ -75,7 +75,7 @@ persetujuan atas nama pemilik.
 | `draf-jalur-c-iot.md` | Draf jalur C IoT/robotika (issue #68). Status DRAF; keputusan opsi menunggu pemilik. |
 | `draf-jalur-d-ai.md` | Draf jalur D kecerdasan buatan dan analisis data (issue #84). Status DRAF; keputusan opsi menunggu pemilik. |
 | `draf-jalur-e-kuantum.md` | Draf jalur E komputasi kuantum dan cloud quantum (issue #88). Status DRAF; keputusan opsi menunggu pemilik. |
-| `rancangan-modul-pendamping.md` | Rancangan modul pendamping literasi digital (issue #69): tujuh modul, pemetaan butir CP, opsi pelaksanaan. Rancangan disetujui pemilik 2026-11-19 beserta rekomendasinya; tujuh modul draf `pendamping-*` ada di repositori sejak 2026-11-19 (#118). |
+| `rancangan-modul-pendamping.md` | Rancangan modul pendamping literasi digital (issue #69): tujuh modul, pemetaan butir CP, opsi pelaksanaan. Rancangan disetujui pemilik 2026-11-19 beserta rekomendasinya; sembilan modul draf `pendamping-*` ada di repositori (tujuh sejak 2026-11-19, #118; dua untuk F-LD-d dan F-LD-e, #105). |
 | `rancangan-seri-cloud.md` | Rancangan seri modul cloud computing (issue #89): tujuh modul lintas jalur sebagai pengayaan. Rancangan disetujui pemilik 2026-11-19 beserta rekomendasinya; tujuh modul draf `cloud-*` ada di repositori sejak 2026-11-19 (#117). Kode minggu sudah mengikuti silabus v1.1. |
 | `rancangan-seri-matematika-komputasi.md` | Rancangan seri modul matematika komputasi dasar (issue #87): tujuh modul. Rancangan disetujui pemilik 2026-11-19 beserta rekomendasinya; tujuh modul draf `matkom-*` ada di repositori sejak 2026-11-19 (#116). Kode minggu sudah dipetakan ke silabus v1.1. |
 | `riset-buku-ai-onno-w-purbo.md` | Riset buku AI karya Onno W. Purbo (issue #66): seri Buku AI SMA 6 jilid dan buku AI lain, terverifikasi dari halaman penerbit; pemetaan CP dan jalur; opsi pemanfaatan. Status DRAF — riset, belum keputusan pemilik. |
@@ -84,6 +84,7 @@ persetujuan atas nama pemilik.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v1.6.0 | 2026-11-19 | Dua modul pendamping lintas jalur untuk butir F-LD-d dan F-LD-e (#105) masuk repositori dan terindeks; jumlah modul draf menjadi 29. |
 | v1.5.0 | 2026-11-19 | 27 modul draf sma-coding (fondasi, matematika komputasi, cloud, pendamping) masuk repositori dan terindeks (#115–#118); status rancangan diperbarui. |
 | v1.4.0 | 2026-11-19 | Menyelaraskan dengan keadaan nyata: jalur C, D, dan E (draf, #68, #84, #88) masuk tabel jalur dan daftar berkas; rancangan seri matematika komputasi, seri cloud, dan modul pendamping tercatat disetujui pemilik 2026-11-19 beserta rekomendasinya (modul belum ada di repositori; menunggu #106 dan #107); bagian keputusan memuat persetujuan itu dan issue lanjutan #105, #106, #107. |
 | v1.3.0 | 2026-11-19 | Silabus v1.1 disetujui (issue #92): status, daftar berkas (menambah ketiga berkas rancangan), dan keputusan diperbarui; `silabus-v1.1-draf.md` menjadi `silabus.md`. |

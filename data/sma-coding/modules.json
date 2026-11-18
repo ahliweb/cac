@@ -524,6 +524,44 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/pendamping-transaksi-digital-aman.md"
+    },
+    {
+      "id": "pendamping-merancang-kebutuhan-sistem",
+      "title": "Merancang Kebutuhan Sistem Komputer Sesuai Pengguna",
+      "cpItems": ["F-LD-d"],
+      "weekCodes": [],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["FND-X1-M1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/pendamping-merancang-kebutuhan-sistem.md"
+    },
+    {
+      "id": "pendamping-keamanan-lanjut-konektivitas",
+      "title": "Keamanan Lanjut Konektivitas Jaringan",
+      "cpItems": ["F-LD-e"],
+      "weekCodes": [],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["FND-X1-M6", "pendamping-model-jaringan-dan-troubleshooting"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/pendamping-keamanan-lanjut-konektivitas.md"
     }
   ]
 }

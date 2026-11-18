@@ -1,9 +1,9 @@
 # Rancangan Modul Pendamping Literasi Digital (SMA Coding)
 
-- **Version:** v0.3.0
+- **Version:** v0.4.0
 - **Last updated:** 2026-11-19
-- **Status:** Rancangan DISETUJUI pemilik 2026-11-19 beserta keenam rekomendasi (issue #69); tujuh modul draf `pendamping-*` ada di repositori sejak 2026-11-19 (PR #118), terindeks di `data/sma-coding/modules.json`, berstatus draf sampai ditinjau pemilik; modul yang kelak ditulis berstatus draf sampai ditinjau pemilik
-- **Changeset:** Status: tujuh modul draf `pendamping-*` masuk repositori dan terindeks (PR #118).
+- **Status:** Rancangan DISETUJUI pemilik 2026-11-19 beserta keenam rekomendasi (issue #69); tujuh modul draf `pendamping-*` ada di repositori sejak 2026-11-19 (PR #118) dan dua modul tambahan untuk #105 menyusul, semuanya terindeks di `data/sma-coding/modules.json`, berstatus draf sampai ditinjau pemilik; modul yang kelak ditulis berstatus draf sampai ditinjau pemilik
+- **Changeset:** Status: dua modul pendamping tambahan untuk F-LD-d dan F-LD-e (#105) masuk repositori dan terindeks; total sembilan modul `pendamping-*`.
 
 > **Rancangan disetujui pemilik pada 2026-11-19** (dialog pilihan, dicatat
 > di komentar issue #69) beserta **keenam rekomendasi** di bagian 8. Yang
@@ -141,6 +141,29 @@ ponsel pribadi, atau membuka konten berbahaya sungguhan.
 | `pendamping-transaksi-digital-aman` | Cara kerja loka pasar, perbankan digital, dan dompet digital; tanda toko dan tautan palsu; kata sandi, 2FA, batas transaksi, dan langkah bila terjadi penipuan. | Halaman toko, notifikasi, dan pesan tipuan tiruan buatan penyusun; tidak ada uang, rekening, atau akun nyata. |
 | `pendamping-model-jaringan-dan-troubleshooting` | Model jaringan (klien-server, rekan sebaya, topologi, lapisan secara ringkas); pengiriman data antar perangkat di jaringan lab (kecuali jalur B yang sudah memakai `B-XI2-M11` untuk HTTP: modul dibaca sebagai pendalaman); diagnosis bertahap dari fisik sampai layanan. | Kartu skenario gangguan sintetis; jaringan lab terisolasi atau simulasi peran bila lab tidak mendukung. |
 
+### 3.3 Modul tambahan untuk celah F-LD-d dan F-LD-e (#105)
+
+Keputusan pemilik 2026-11-19 (komentar issue #105): celah F-LD-d dan F-LD-e
+ditutup dengan modul pendamping **lintas jalur** (pola seri ini: tugas
+mandiri terbimbing, daftar periksa mandiri tanpa nilai), **tanpa mengubah
+minggu wajib**. Dua modul `[asumsi]`, satu per butir karena materinya
+berbeda (kebutuhan pengguna versus keamanan jaringan) dan kelasnya berbeda:
+
+| Id modul | Judul | Butir CP | Kelas / fase | Durasi `[asumsi]` | Prasyarat |
+| --- | --- | --- | --- | --- | --- |
+| `pendamping-merancang-kebutuhan-sistem` | Merancang Kebutuhan Sistem Komputer Sesuai Pengguna | F-LD-d | XII / Fase F | 3 JP | `FND-X1-M1` (membaca spesifikasi komputer). |
+| `pendamping-keamanan-lanjut-konektivitas` | Keamanan Lanjut Konektivitas Jaringan | F-LD-e | XI / Fase F | 3 JP | `FND-X1-M6` dan `pendamping-model-jaringan-dan-troubleshooting`. |
+
+Kutipan CP (silabus bagian 1.3, Fase F, Literasi Digital): F-LD-d
+"merancang kebutuhan sistem komputer sesuai kebutuhan pengguna"; F-LD-e
+"memahami konsep dan penerapan serta konfigurasi keamanan lanjut untuk
+konektivitas jaringan data lokal dan internet baik kabel maupun nirkabel".
+Modul keamanan hanya memuat konsep dan konfigurasi bertahan (enkripsi Wi-Fi,
+segmentasi, pembaruan firmware, VPN secara konseptual, hak minimum), tanpa
+teknik menyerang. Jalur B tetap memakai `B-XII2-M1..M2` dan `B-XI2-M10`;
+kedua modul dibaca sebagai pelengkap. Dengan ini total modul pendamping
+menjadi sembilan, sekitar 32 JP.
+
 ## 4. Cara pelaksanaan
 
 Pemilik memutuskan; **rancangan tidak menambah minggu wajib** (silabus bagian
@@ -200,6 +223,8 @@ lengkap.
 | F-LD-h | `pendamping-teknologi-dan-demokrasi` | Tercakup |
 | F-LD-j | `pendamping-transaksi-digital-aman` | Tercakup |
 | F-BK-d | `pendamping-model-jaringan-dan-troubleshooting` | Tercakup; pengiriman data HTTP jalur B tetap di `B-XI2-M11` |
+| F-LD-d | `pendamping-merancang-kebutuhan-sistem` | Modul tambahan lintas jalur (#105); jalur B juga `B-XII2-M1..M2` |
+| F-LD-e | `pendamping-keamanan-lanjut-konektivitas` | Modul tambahan lintas jalur (#105); jalur B juga `B-XI2-M10` |
 
 Hasil: sebelas butir tersisa semuanya tercakup (dua butir lain sudah dialihkan
 ke fondasi). Pemetaan ini adalah rancangan; ia belum menjadi corpus.
@@ -300,6 +325,7 @@ dicatat sebagai issue terpisah (#105). Modul ditulis berstatus `draf`.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v0.4.0 | 2026-11-19 | Dua modul tambahan lintas jalur untuk celah F-LD-d dan F-LD-e (keputusan pemilik di issue #105): bagian 3.3 baru, pemetaan bagian 5 diperbarui; modul draf `pendamping-merancang-kebutuhan-sistem` dan `pendamping-keamanan-lanjut-konektivitas` terindeks. |
 | v0.3.0 | 2026-11-19 | Status: tujuh modul draf `pendamping-*` masuk repositori dan terindeks (PR #118). |
 | v0.2.0 | 2026-11-19 | Rancangan disetujui pemilik beserta keenam rekomendasi (issue #69); status, kotak catatan, dan pertanyaan terbuka diperbarui; rujukan silabus ke v1.1; celah F-LD-d dan F-LD-e jalur A dicatat sebagai #105; contoh kode minggu `A-X1-M3` menjadi `A-X1-M9` (padanan v1.0 ke v1.1). |
 | v0.1.0 | 2026-11-18 | Rancangan awal (issue #69, tahap 1): verifikasi daftar butir terhadap silabus bagian 4.3 dan usulan fondasi bagian 3.1; tujuh modul pendamping dengan butir, kelas, durasi, kegiatan, dan prasyarat; opsi pelaksanaan dengan penilaian dan rekomendasi; pemetaan butir ke modul; bentuk modul; kebutuhan skema indeks; pertanyaan terbuka. Status DRAF. |

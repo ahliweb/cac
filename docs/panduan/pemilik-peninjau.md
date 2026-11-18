@@ -188,7 +188,7 @@ keadaan terkini. Cara membacanya:
 
 Silabus v1.1 (#92) sudah Anda setujui 2026-11-19 dan issue-nya tertutup;
 kandidat tinjauan Anda yang lain: draf jalur C, D, dan E di
-`docs/programs/sma-coding/`, dan 27 modul draf `sma-coding` di
+`docs/programs/sma-coding/`, dan 29 modul draf `sma-coding` di
 `content/sma-coding/modules/` (fondasi, matematika komputasi, cloud,
 pendamping; baca dengan `osn render modul --program sma-coding --id <id>`,
 daftar id di `data/sma-coding/modules.json`).
