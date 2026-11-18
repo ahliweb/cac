@@ -12,7 +12,7 @@
       "id": "sma-coding",
       "name": "Silabus Pembelajaran Coding SMA",
       "sourceDocument": "docs/programs/sma-coding/silabus.md",
-      "syllabusVersion": "1.3.0",
+      "syllabusVersion": "1.3.1",
       "syllabusDate": "2026-11-19",
       "corpusDir": "data/sma-coding"
     },
@@ -36,7 +36,7 @@
       "id": "dewasa-coding",
       "name": "Silabus Pembelajaran Coding untuk Dewasa",
       "sourceDocument": "docs/programs/dewasa-coding/silabus.md",
-      "syllabusVersion": "1.1.1",
+      "syllabusVersion": "1.1.2",
       "syllabusDate": "2026-11-19",
       "corpusDir": "data/dewasa-coding"
     },
@@ -44,7 +44,7 @@
       "id": "sd-coding",
       "name": "Silabus Pembelajaran Coding SD",
       "sourceDocument": "docs/programs/sd-coding/silabus.md",
-      "syllabusVersion": "1.0.1",
+      "syllabusVersion": "1.0.2",
       "syllabusDate": "2026-11-19",
       "corpusDir": "data/sd-coding"
     },
@@ -52,7 +52,7 @@
       "id": "smp-coding",
       "name": "Silabus Pembelajaran Coding SMP",
       "sourceDocument": "docs/programs/smp-coding/silabus.md",
-      "syllabusVersion": "1.1.1",
+      "syllabusVersion": "1.1.2",
       "syllabusDate": "2026-11-19",
       "corpusDir": "data/smp-coding"
     }

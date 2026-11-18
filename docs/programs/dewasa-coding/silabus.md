@@ -1,6 +1,6 @@
 # Silabus Pembelajaran Coding untuk Dewasa — v1.1
 
-- **Version:** v1.1.1
+- **Version:** v1.1.2
 - **Last updated:** 2026-11-19
 - **Status:** DISETUJUI pemilik program pada 2026-11-19 (dialog pilihan, beserta seluruh rekomendasi penyusun; keputusan di bagian 12). Revisi v1.1.0 (rekayasa perangkat lunak berbantuan AI, kebijakan penggunaan AI per program) disetujui pemilik pada 2026-11-19 lewat keputusan #139 (bagian 12.9). Dienkode ke `data/dewasa-coding/` (skema khusus program, ADR-0008) dan didaftarkan di `data/programs.json` (ADR-0006). Belum ada modul di `content/dewasa-coding/` (ADR-0007).
 - **Changeset:** Silabus program `dewasa-coding` disetujui pemilik pada 2026-11-19 (v1.0.0): empat jalur persona (pekerja, profesional, personal, pebisnis/UMKM), modul berbasis jam, pemetaan ke SKKNI 282/2016 untuk jalur profesional (hanya sampai judul unit), pertanyaan terbuka diganti keputusan pemilik (#131). Revisi v1.1.0 (#139, minor): modul baru `DW-PRO-M13` (rekayasa perangkat lunak berbantuan AI, 8 jam, jalur PRO 128 menjadi 136 jam), butir tambahan di `DW-FND-M1` dan `DW-PKJ-M6`, dan bagian 9.1 Kebijakan penggunaan AI; riwayat di `.changeset/dewasa-coding-v1-1-ai.md`. Revisi patch v1.1.1 (#165): kalimat status yang basi; isi kurikulum tidak berubah.
@@ -12,8 +12,8 @@
 > keputusan, kode unit, lisensi) dibaca dari sumber yang dibuka dan dirinci
 > di [`riset.md`](riset.md); selebihnya rancangan penyusun. Tujuan setiap
 > jalur, jam, dan urutan modul adalah rancangan yang disetujui, tetap
-> berstatus `[asumsi]` sebagai perkiraan. Salinan daftar unit SKKNI
-> belum terverifikasi terhadap berkas resmi. Bahan revisi v1.1.0 (bukti
+> berstatus `[asumsi]` sebagai perkiraan. Judul daftar 47 unit SKKNI
+> dicocokkan kata demi kata dengan lampiran resmi JDIH Kemnaker pada 2026-11-19 (sufiks kode tetap `[belum terverifikasi]`). Bahan revisi v1.1.0 (bukti
 > dampak alat AI, hak cipta, privasi, energi) dibaca dari
 > [`../../riset/ai-rekayasa-perangkat-lunak.md`](../../riset/ai-rekayasa-perangkat-lunak.md);
 > kekuatan buktinya dirinci di sana, bukan diulang di sini.
@@ -420,7 +420,7 @@ yang dipilih adalah opsi yang sebelumnya ditandai disarankan, kini ditandai
 
 ### 12.4 Pemetaan SKKNI dan target skema `PRO`
 
-**Keputusan:** opsi A, skema Junior Web Programmer sebagai acuan. Pemetaan SKKNI 282/2016 hanya sampai **judul unit** (bukan elemen kompetensi dan kriteria unjuk kerja), dan salinan daftar 47 unit **belum terverifikasi terhadap berkas resmi**; verifikasi dengan LSP dilakukan sebelum menjanjikan apa pun kepada peserta.
+**Keputusan:** opsi A, skema Junior Web Programmer sebagai acuan. Pemetaan SKKNI 282/2016 hanya sampai **judul unit** (bukan elemen kompetensi dan kriteria unjuk kerja), dan judul daftar 47 unit **dicocokkan kata demi kata dengan lampiran resmi JDIH Kemnaker pada 2026-11-19** (sufiks kode tetap `[belum terverifikasi]`); verifikasi dengan LSP dilakukan sebelum menjanjikan apa pun kepada peserta.
 
 | Opsi | Konsekuensi |
 | --- | --- |
@@ -508,3 +508,4 @@ M10, dan M12), bukan angka dari sumber. Kebijakan penggunaan AI: bagian 9.1.
 | v1.0.0 | 2026-11-19 | Disetujui pemilik beserta rekomendasi (dialog pilihan 2026-11-19): status DISETUJUI; bagian 12 diubah dari pertanyaan terbuka menjadi keputusan (opsi rekomendasi); rencana modul, jam, dan pemetaan tidak diubah (#131). |
 | v1.1.0 | 2026-11-19 | Revisi minor yang disetujui pemilik lewat keputusan #139: modul baru `DW-PRO-M13` rekayasa perangkat lunak berbantuan AI (8 jam; jalur `PRO` 120 menjadi 128 jam, total 128 menjadi 136; tabel 5.1 mendapat kolom jam dan urutan belajar; `DW-PRO-M6` bergantung pada `DW-PRO-M13`); butir tambahan di `DW-FND-M1` (hak cipta dan lisensi keluaran AI, kebijakan tempat kerja, *prompt injection*, energi dan biaya komputasi) dan `DW-PKJ-M6` (catat alat, versi, perintah; hasil tidak identik; uji data sintetis); glosarium istilah AI (3.2); kebijakan penggunaan AI (9.1); keputusan 12.9. Hitungan 34 unit SKKNI yang disentuh tidak berubah (#139). |
 | v1.1.1 | 2026-11-19 | Revisi patch: kalimat status, keputusan pemilik #165; isi kurikulum tidak berubah. |
+| v1.1.2 | 2026-11-19 | Revisi patch: status verifikasi sumber (SK 046, SKKNI 282/2016); koreksi judul unit 47 sesuai lampiran resmi; isi kurikulum lain tidak berubah. |

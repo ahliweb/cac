@@ -1,6 +1,6 @@
 # Silabus Pembelajaran Coding SMP — v1.1
 
-- **Version:** v1.1.1
+- **Version:** v1.1.2
 - **Last updated:** 2026-11-19
 - **Status:** DISETUJUI pemilik program, 2026-11-19 — beserta semua rekomendasi penyusun (bagian 10; keputusan lewat dialog pilihan, dicatat di issue #129). Modul pembelajaran di `content/smp-coding/` dan modul pendamping tidak termasuk persetujuan ini.
 - **Changeset:** Silabus v1.1 disetujui pemilik (2026-11-19, keputusan di issue #139): bagian 7.1 "Kebijakan penggunaan AI" ditambah (pemakaian AI generatif oleh murid SMP tetap demonstrasi guru, tanpa akun murid; asesmen tanpa AI); butir "mengalihkan pekerjaan berpikir ke AI" ditambah di `SMP9-2-M10`, butir data pribadi dan kata sandi tidak ditempel ke layanan AI di `SMP8-2-M11`, energi dan biaya komputasi sebagai butir singkat dengan ketidakpastian; kode butir CP dan struktur 84 minggu tidak berubah. Sebelumnya: silabus v1.0 disetujui pemilik (2026-11-19) beserta rekomendasi penyusun: satu jalur inti blok ke pseudocode, Python hanya pengayaan di luar CP, CP KKA Fase D untuk materi AI kelas 9, klub OSN opsional, tanpa akun murid; butir Literasi Digital yang belum tercakup ditutup lewat modul pendamping (pekerjaan lanjutan); issue #129. Isi rencana sama dengan draf v0.2; yang berubah hanya status, bagian 10, changelog, dan satu koreksi hitungan di bagian 4 (`DK-BK-c`: 32 menjadi 31 minggu lain). Revisi patch v1.1.1 (#165): kalimat status yang basi; isi kurikulum tidak berubah.
@@ -56,7 +56,7 @@
 | Butir | Nilai | Status |
 | --- | --- | --- |
 | Panduan Mata Pelajaran Informatika, Fase D-F, BSKAP Kemendikdasmen, Pusat Kurikulum dan Pembelajaran 2025 | `https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf` (sumber yang sama dengan silabus sma-coding bagian 1) | **Terverifikasi**: teks lengkap tersedia (diunduh orchestrator, `pdftotext`); CP Fase D di bagian B.d halaman 11-12 cetak. Penyusun sendiri tidak dapat menjangkau URL itu (`riset.md` bagian 2). |
-| SK Kepala BSKAP 046/H/KR/2025 tentang CP (ditetapkan 16 Juli 2025; mencabut 032/H/KR/2024) | Salinan PDF bertanda "SALINAN" yang ditemukan orchestrator | Teksnya dibuka dan dikutip. **URL asal belum terverifikasi.** Memuat CP Informatika (Lampiran II, bagian XI) dan CP Koding dan KA (Lampiran II, bagian XXVIII). |
+| SK Kepala BSKAP 046/H/KR/2025 tentang CP (ditetapkan 16 Juli 2025; mencabut 032/H/KR/2024) | Salinan PDF bertanda "SALINAN" yang ditemukan orchestrator | Teksnya dibuka dan dikutip. **URL asal `[terverifikasi 2026-11-19]`** (subdomain resmi `bpmpbabel.kemendikdasmen.go.id`, SHA-256 identik; `riset.md` bagian 2.1). Memuat CP Informatika (Lampiran II, bagian XI) dan CP Koding dan KA (Lampiran II, bagian XXVIII). |
 | Pemetaan fase ke kelas | Fase D = kelas VII, VIII, dan IX SMP/MTs/Paket B | CP KKA: "Umumnya untuk Kelas VII, VIII dan IX SMP/MTs". Salinan SK menulis CP Informatika Fase D untuk "Kelas VII, VIII, dan XI" (tampak salah ketik; kelas IX); Panduan memakai tiga kelas VII, VIII, IX pada contoh ATP. |
 | Regulasi mata pelajaran pilihan Koding dan KA | SK 046 menyebut Permendikdasmen Nomor 13 Tahun 2025 (perubahan Permendikbudristek 12 Tahun 2024) pada konsiderans | Nomor Permen terverifikasi dari konsiderans SK; **teks Permen tidak dibuka**; ketentuan "pilihan" dan JP `[belum terverifikasi]` dari teks regulasi (`riset.md` bagian 3). |
 
@@ -83,7 +83,7 @@ Hanya spasi dan pemenggalan baris yang dinormalkan (juga penanda pergantian hala
 ### 1.3 Kutipan CP Koding dan Kecerdasan Artifisial Fase D (SK 046/H/KR/2025, Lampiran II, bagian XXVIII.D.2)
 
 Teks di bawah mengikuti salinan SK yang ditemukan orchestrator (URL asal
-belum terverifikasi). Setiap kutipan didahului kalimat pembuka SK: "Pada akhir
+`[terverifikasi 2026-11-19]`). Setiap kutipan didahului kalimat pembuka SK: "Pada akhir
 Fase D, murid memiliki kemampuan sebagai berikut." Hanya spasi, pemenggalan
 baris, dan karakter tak terlihat (spasi lebar nol) yang dinormalkan.
 
@@ -545,7 +545,7 @@ bawah memuat keputusan yang berlaku.
 
 | # | Pertanyaan | Keputusan |
 | --- | --- | --- |
-| Q1 | Dasar CP Fase D | Teks resmi Panduan 2025 dan SK 046 yang dikutip di bagian 1. URL asal salinan SK 046 tetap **belum terverifikasi** (bagian 1.1, 11); tidak ada URL yang dicatat pemilik. |
+| Q1 | Dasar CP Fase D | Teks resmi Panduan 2025 dan SK 046 yang dikutip di bagian 1. URL asal salinan SK 046 `[terverifikasi 2026-11-19]` (bagian 1.1, 11; `riset.md` bagian 2.1); padanan di JDIH Kemendikdasmen `[belum terverifikasi]`. |
 | Q2 | Status program di sekolah | Netral: ditulis untuk semua bentuk, sekolah memilih. |
 | Q3 | Pemrograman teks di SMP | Python sebagai pengayaan yang ditandai, di luar rumusan CP (bagian 4); bagian wajib CP tidak bergantung padanya. |
 | Q4 | Jalur | Satu jalur inti ditambah klub pengayaan OSN opsional (bagian 3.4). |
@@ -560,7 +560,7 @@ bawah memuat keputusan yang berlaku.
 ## 11. Sumber dan batasan
 
 - Sumber dan status ada di [`riset.md`](riset.md); tidak diulang di sini.
-- Batasan utama: URL asal salinan SK 046 belum terverifikasi; teks Permen 13
+- Batasan utama: padanan SK 046 di JDIH Kemendikdasmen belum ditemukan (URL asal salinan sudah `[terverifikasi 2026-11-19]`); teks Permen 13
   Tahun 2025 tidak dibuka; JP per minggu, menit per JP, syarat akun, harga
   perangkat, dan ketentuan "pilihan" KKA `[belum terverifikasi]` dari teks
   regulasi; pemrograman teks, kodifikasi biner, dan klub pengayaan melampaui
@@ -571,6 +571,7 @@ bawah memuat keputusan yang berlaku.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v1.1.2 | 2026-11-19 | Revisi patch: status verifikasi sumber (SK 046, SKKNI 282/2016); isi kurikulum lain tidak berubah. |
 | v1.1.1 | 2026-11-19 | Revisi patch: kalimat status, keputusan pemilik #165; isi kurikulum tidak berubah. |
 | v1.1.0 | 2026-11-19 | Disetujui pemilik lewat keputusan di issue #139 (usulan U-06 dengan opsi rekomendasi): bagian 7.1 "Kebijakan penggunaan AI" ditambah (demonstrasi guru tanpa akun murid, alasan usia dan ketentuan layanan, etika, privasi, asesmen tanpa AI, energi dan biaya komputasi sebagai butir singkat berketidakpastian); `SMP9-2-M10` ditambah butir mengalihkan pekerjaan berpikir ke AI; `SMP8-2-M11` ditambah butir data pribadi dan kata sandi tidak ditempel ke layanan AI; bullet etika AI bagian 7 dan Q11 diselaraskan. Kode butir CP, struktur, 84 minggu, pemetaan, dan jembatan tidak berubah. |
 | v1.0.0 | 2026-11-19 | Disetujui pemilik beserta semua rekomendasi penyusun; bagian 10 menjadi catatan keputusan (opsi rekomendasi untuk Q1-Q11); status, banner, dan catatan modul pendamping diperbarui; rencana mingguan, pemetaan CP, dan jembatan tidak diubah dari v0.2 kecuali satu koreksi hitungan: pada bagian 4 baris `DK-BK-c`, "dan 32 minggu lain" menjadi "dan 31 minggu lain" (rencana bagian 3 memuat `DK-BK-c` di 36 minggu, 5 disebut dan 31 lainnya; selisih satu ditemukan audit corpus saat di-encode); pemilik perlu mengetahui koreksi ini (issue #129). |

@@ -24,10 +24,10 @@ data/<program>/*.json  --->  src/schema/  --->  src/domain/  --->  src/render/
 1. **`data/<program>/*.json`** (registry: `data/programs.json`, ADR-0006) — the curriculum corpus itself: inert JSON files with
    no executable logic. Seven corpora today, one per registered programme: `data/osn/` (22 files: topic families, weeks, gates,
    references, assessment model, KPI definitions, playbooks, and more),
-   `data/sma-coding/` (7 files plus the optional `modules.json`, syllabus v1.3.0),
+   `data/sma-coding/` (7 files plus the optional `modules.json`, syllabus v1.3.1),
    `data/tk-coding/` (7, v1.0.1), `data/kuliah-coding/` (6, v1.1.1),
-   `data/dewasa-coding/` (7, v1.1.1), `data/sd-coding/` (5, v1.0.1) and
-   `data/smp-coding/` (7, v1.1.1), each transcribed from the programme's
+   `data/dewasa-coding/` (7, v1.1.2), `data/sd-coding/` (5, v1.0.2) and
+   `data/smp-coding/` (7, v1.1.2), each transcribed from the programme's
    approved `docs/programs/<id>/silabus.md` (CP elements, tracks or levels,
    structure, weekly or module plan, CP mapping, bridges).
 2. **`src/schema/`** — Zod schemas that are the single source of truth for

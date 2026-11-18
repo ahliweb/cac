@@ -23,7 +23,7 @@ untuk PAUD) yang bermain, mayoritas tanpa layar, dan beririsan dengan Capaian
 Pembelajaran Fase Fondasi (Kepka BSKAP 046/H/KR/2025). Dasar kebijakannya
 Kepmendikdasmen 127/P/2025, yang menyebut "pembelajaran muatan pengembangan
 berpikir komputasional pada pendidikan anak usia dini". Program ini menjadi
-jembatan awal ke program SD (`sd-coding`, kini disetujui dan terdaftar, silabus v1.0.1).
+jembatan awal ke program SD (`sd-coding`, kini disetujui dan terdaftar, silabus v1.0.2).
 
 Temuan utama riset: CP Fase Fondasi tidak menyebut koding secara eksplisit;
 irisannya adalah pola, klasifikasi, pemecahan masalah sederhana, rekayasa, dan

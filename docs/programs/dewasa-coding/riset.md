@@ -1,9 +1,9 @@
 # Riset Sumber Program Coding Dewasa (`dewasa-coding`)
 
-- **Version:** v1.0.1
+- **Version:** v1.0.2
 - **Last updated:** 2026-11-19
-- **Status:** Bahan penyusunan [`silabus.md`](silabus.md) yang disetujui pemilik pada 2026-11-19 (#131); bukan transkripsi sumber resmi dan bukan keputusan pemilik. Tabel 47 unit di bagian 2.2 dicocokkan pada 2026-11-19 dengan berkas resmi JDIH Kemnaker (kode dan judul: 46 dari 47 unit cocok persis, satu judul berbeda ejaan, lihat bagian 2.2) dan menjadi sumber `data/dewasa-coding/skkni-units.json` (diperiksa oleh `bun run check:fidelity --program dewasa-coding`).
-- **Changeset:** v1.0.1: berkas resmi Kepmenaker 282/2016 di JDIH diunduh dan dicocokkan dengan tabel 47 unit (bagian 2.1 dan 2.2); isi tabel tidak diubah. Riset dijadikan rujukan silabus yang disetujui (v1.0.0): tautan `silabus-draf.md` diganti `silabus.md`, status diperbarui (#131).
+- **Status:** Bahan penyusunan [`silabus.md`](silabus.md) yang disetujui pemilik pada 2026-11-19 (#131); bukan transkripsi sumber resmi dan bukan keputusan pemilik. Tabel 47 unit di bagian 2.2 dicocokkan pada 2026-11-19 dengan berkas resmi JDIH Kemnaker (kode dan judul; judul unit 47 dikoreksi menjadi teks resmi, lihat bagian 2.2) dan menjadi sumber `data/dewasa-coding/skkni-units.json` (diperiksa oleh `bun run check:fidelity --program dewasa-coding`).
+- **Changeset:** v1.0.2: judul unit 47 dikoreksi menjadi "Melakukan Pembaharuan Perangkat Lunak" sesuai lampiran resmi (halaman PDF 14 dan rincian unit 047); status verifikasi 47 unit menjadi `judul-cocok-lampiran-resmi`. v1.0.1: berkas resmi Kepmenaker 282/2016 di JDIH diunduh dan dicocokkan dengan tabel 47 unit (bagian 2.1 dan 2.2); isi tabel tidak diubah. Riset dijadikan rujukan silabus yang disetujui (v1.0.0): tautan `silabus-draf.md` diganti `silabus.md`, status diperbarui (#131).
 
 > Dokumen ini konten **karangan** menurut
 > [ADR-0007](../../architecture/adr/0007-authored-learning-content.md). Ia
@@ -82,20 +82,21 @@ URL yang dibuka:
 Kode dan judul disalin dari tabel "Daftar Unit Kompetensi" (halaman 8-10
 PDF salinan LSP). Hanya spasi yang dinormalkan.
 
-**Hasil pencocokan dengan berkas resmi JDIH `[terverifikasi 2026-11-19]`.**
+**Hasil pencocokan dengan berkas resmi JDIH `[terverifikasi 2026-11-19]`; judul 47 unit kini identik dengan lampiran resmi.**
 Tabel "Daftar Unit Kompetensi" bab II.B di berkas resmi (halaman PDF 12-14)
 diekstrak dengan `pdftotext -layout` dan dicocokkan kata demi kata, kode dan
 judul, dengan tabel di bawah dan dengan `data/dewasa-coding/skkni-units.json`
-(spasi dan pemenggalan baris dinormalkan). **47 unit ada di kedua sisi;
-46 cocok persis; 1 berbeda:**
-
-- Unit 47, `J.620100.047.01`: berkas resmi "Melakukan Pembaharuan Perangkat
-  Lunak"; repo "Melakukan Pembaruan Perangkat Lunak".
-
-Butir 47 tetap `[belum terverifikasi]` sampai pemilik memutuskan koreksi
-ejaan (judul resmi memakai "Pembaharuan", juga pada halaman rincian unit
-`047`); tabel dan data tidak diubah di sini. Dua kode unit lain, 3 dan 28,
-tampak berbeda hanya karena judul tabel berulang di batas halaman PDF.
+(spasi dan pemenggalan baris dinormalkan). Pada pencocokan pertama, 47 unit
+ada di kedua sisi dan 46 cocok persis; satu berbeda: unit 47,
+`J.620100.047.01`, berkas resmi "Melakukan Pembaharuan Perangkat Lunak"
+(halaman PDF 14; juga pada halaman rincian unit `047`), repo "Melakukan
+Pembaruan Perangkat Lunak". Atas instruksi pemilik, judul unit 47 dikoreksi
+menjadi teks resmi (tabel di bawah, `skkni-units.json`), sehingga kini
+**47 dari 47 judul identik** dengan lampiran resmi; status tiap unit di data
+`judul-cocok-lampiran-resmi`. Dua kode unit lain, 3 dan 28, tampak berbeda
+hanya karena judul tabel berulang di batas halaman PDF. **Sufiks kode tetap
+`[belum terverifikasi]`**: berkas resmi tidak konsisten antarbagian (lihat
+catatan di bawah tabel), sehingga sufiks mengikuti daftar bab II.B.
 
 | No | Kode unit | Judul unit kompetensi |
 | --- | --- | --- |
@@ -145,7 +146,7 @@ tampak berbeda hanya karena judul tabel berulang di batas halaman PDF.
 | 44 | J.620100.044.01 | Menerapkan Alert Notification Jika Aplikasi Bermasalah |
 | 45 | J.620100.045.01 | Melakukan Pemantauan Resource yang Digunakan Aplikasi |
 | 46 | J.620100.046.01 | Melakukan Logging Aplikasi |
-| 47 | J.620100.047.01 | Melakukan Pembaruan Perangkat Lunak |
+| 47 | J.620100.047.01 | Melakukan Pembaharuan Perangkat Lunak |
 
 Catatan kehati-hatian:
 
@@ -334,3 +335,4 @@ dijalankan tanpa `apps/cms` hidup tetap berlaku (`[belum terverifikasi]`).
 | v0.1.0 | 2026-11-19 | Riset awal (#131). |
 | v1.0.0 | 2026-11-19 | Silabus rujukan disetujui pemilik: tautan dan status diperbarui; isi riset tidak diubah (#131). |
 | v1.0.1 | 2026-11-19 | Berkas resmi JDIH Kepmenaker 282/2016 diunduh dan dicocokkan: 46 dari 47 unit cocok, judul unit 47 berbeda ejaan (dilaporkan, tidak diubah); isi tabel tidak diubah. |
+| v1.0.2 | 2026-11-19 | Judul unit 47 dikoreksi menjadi "Melakukan Pembaharuan Perangkat Lunak" sesuai lampiran resmi JDIH (halaman PDF 14, sha256 `8f05...8e88`); status 47 unit `judul-cocok-lampiran-resmi`; sufiks kode tetap belum terverifikasi. |

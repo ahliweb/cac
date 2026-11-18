@@ -105,7 +105,7 @@ Tidak ada butir CP yang dipetakan ke minggu ini dalam pemetaan silabus.
 - [ ] Keluaran selesai: tabel konversi; lembar kode karakter; gambar 8x8 dalam bentuk deret bit
 
 ---
-Sumber: Silabus Pembelajaran Coding SMA, versi 1.3.0, tanggal 2026-11-19.
+Sumber: Silabus Pembelajaran Coding SMA, versi 1.3.1, tanggal 2026-11-19.
 ```
 
 ### Memakai AI di program coding SMA

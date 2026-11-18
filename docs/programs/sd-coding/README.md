@@ -1,6 +1,6 @@
 # Program Pembelajaran Coding SD (`sd-coding`)
 
-- **Version:** v1.0.1
+- **Version:** v1.0.2
 - **Last updated:** 2026-11-19
 - **Status:** Silabus v1.0 DISETUJUI pemilik program (2026-11-19) untuk kelas 1-6 beserta rekomendasi penyusun (issue #128); sudah dikodekan ke `data/sd-coding/` (lima berkas) dan terdaftar di `data/programs.json` ([ADR-0006](../../architecture/adr/0006-multi-program-repository.md), [ADR-0008](../../architecture/adr/0008-skema-khusus-per-program.md)). Belum ada `content/sd-coding/` (modul pendamping tidak termasuk persetujuan; [ADR-0007](../../architecture/adr/0007-authored-learning-content.md)).
 - **Changeset:** Silabus disetujui dan dikodekan: `silabus-draf.md` menjadi `silabus.md` v1.0.0 dengan keputusan pemilik menggantikan pertanyaan terbuka, kutipan CP Fase C dikoreksi dengan teks SK 046/H/KR/2025, corpus `data/sd-coding/` dan pendaftaran program (issue #128).
@@ -36,7 +36,7 @@ sebagai opsi, tanpa akun pribadi murid.
 - CP Fase C terdiri dari empat elemen (Berpikir Komputasional, Literasi
   Digital, Literasi dan Etika KA, Pemanfaatan dan Pengembangan KA) dan dikutip
   persis dari teks SK Kepala BSKAP 046/H/KR/2025 (dicocokkan 2026-11-19;
-  alamat asal salinan SK belum terverifikasi); PDF panduan **belum terbuka**.
+  alamat asal salinan SK `[terverifikasi 2026-11-19]`, subdomain resmi `kemendikdasmen.go.id`); PDF panduan **belum terbuka**.
 - Tidak ada jembatan OSN untuk SD (tidak ada Informatika di SD; dokumen OSN
   SD tidak terbuka, `[belum terverifikasi]`).
 - Rekomendasi alat: unplugged inti + blok visual opsional di kelas 6.
@@ -70,12 +70,13 @@ Silabus dikodekan ke `data/sd-coding/` (skema `src/schema/sd-*.ts`, audit
 | --- | --- |
 | `README.md` | Dokumen ini: status, tujuan, temuan, keputusan pemilik, corpus, berkas, changelog. |
 | `riset.md` | Riset v0.2.0: sumber resmi yang benar-benar dibuka (URL dan tanggal akses 2026-11-19), kebijakan KKA di SD, CP Fase C beserta pencocokan dengan SK 046/H/KR/2025 (bagian 3.5), posisi Informatika, kajian alat, risiko privasi anak. |
-| `silabus.md` | Silabus v1.0.1 (disetujui pemilik 2026-11-19): sumber dan kutipan CP dari SK, struktur waktu, tujuan, pemetaan CP (kode butir buatan), rencana mingguan kelas 1-6, jembatan, asesmen, privasi dan etika AI, opsi alat, kebutuhan lab, keputusan pemilik. Sumber corpus `data/sd-coding/`. |
+| `silabus.md` | Silabus v1.0.2 (disetujui pemilik 2026-11-19): sumber dan kutipan CP dari SK, struktur waktu, tujuan, pemetaan CP (kode butir buatan), rencana mingguan kelas 1-6, jembatan, asesmen, privasi dan etika AI, opsi alat, kebutuhan lab, keputusan pemilik. Sumber corpus `data/sd-coding/`. |
 
 ## Changelog
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
 | v1.0.1 | 2026-11-19 | Silabus direvisi patch ke v1.0.1 (issue #165): kalimat status yang basi tentang program pasangannya diperbaiki; isi kurikulum dan corpus tidak berubah. |
+| v1.0.2 | 2026-11-19 | Silabus direvisi patch ke v1.0.2: alamat asal salinan SK 046 terverifikasi (`riset.md` v0.2.2); isi kurikulum dan corpus tidak berubah. |
 | v1.0.0 | 2026-11-19 | Silabus disetujui pemilik dan dikodekan ke `data/sd-coding/`; `silabus-draf.md` menjadi `silabus.md`; keputusan pemilik dicatat; CP dicocokkan dengan SK 046/H/KR/2025 (issue #128). |
 | v0.1.0 | 2026-11-19 | Folder program dibuat: README, riset, dan draf silabus (issue #128). |
