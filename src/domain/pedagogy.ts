@@ -1,6 +1,6 @@
 /**
- * Typed loaders and lookup helpers over `data/session-template.json`,
- * `data/mentor-sop.json` and `data/hint-policy.json`: the §5.1 two-session
+ * Typed loaders and lookup helpers over `data/osn/session-template.json`,
+ * `data/osn/mentor-sop.json` and `data/osn/hint-policy.json`: the §5.1 two-session
  * weekly template, the §5.2 seven-step mentor SOP, and the §5.3
  * progressive-hinting escalation policy.
  *
@@ -18,14 +18,14 @@
  * `requiresResolve` below.
  */
 
-import rawHintPolicy from "../../data/hint-policy.json";
-import rawMentorSop from "../../data/mentor-sop.json";
+import rawHintPolicy from "../../data/osn/hint-policy.json";
+import rawMentorSop from "../../data/osn/mentor-sop.json";
 // `resolveJsonModule` is enabled in tsconfig.json, so a static import is a
 // deterministic, dependency-free way to bring the corpus files in — no
 // filesystem read, no async loader, and Bun/tsc both resolve it at build
 // time. The value is `unknown` as far as validity is concerned; it is
 // still parsed through the schema below before anything trusts its shape.
-import rawSessionTemplate from "../../data/session-template.json";
+import rawSessionTemplate from "../../data/osn/session-template.json";
 import { parseDataFile } from "../schema/common";
 import { type HintLevel, type HintPolicyFile, hintPolicyFileSchema } from "../schema/hint-policy";
 import { type MentorSopFile, mentorSopFileSchema, type SopStep } from "../schema/mentor-sop";
@@ -36,12 +36,12 @@ import {
   sessionTemplateFileSchema,
 } from "../schema/session-template";
 
-const SESSION_TEMPLATE_SOURCE_NAME = "data/session-template.json";
-const MENTOR_SOP_SOURCE_NAME = "data/mentor-sop.json";
-const HINT_POLICY_SOURCE_NAME = "data/hint-policy.json";
+const SESSION_TEMPLATE_SOURCE_NAME = "data/osn/session-template.json";
+const MENTOR_SOP_SOURCE_NAME = "data/osn/mentor-sop.json";
+const HINT_POLICY_SOURCE_NAME = "data/osn/hint-policy.json";
 
 /**
- * The validated contents of `data/session-template.json`, parsed once at
+ * The validated contents of `data/osn/session-template.json`, parsed once at
  * module load. Throws {@link CorpusValidationError} if the file does not
  * match {@link sessionTemplateFileSchema}.
  */
@@ -52,7 +52,7 @@ const sessionTemplateFile: SessionTemplateFile = parseDataFile(
 );
 
 /**
- * The validated contents of `data/mentor-sop.json`, parsed once at module
+ * The validated contents of `data/osn/mentor-sop.json`, parsed once at module
  * load. Throws {@link CorpusValidationError} if the file does not match
  * {@link mentorSopFileSchema}.
  */
@@ -63,7 +63,7 @@ const mentorSopFile: MentorSopFile = parseDataFile(
 );
 
 /**
- * The validated contents of `data/hint-policy.json`, parsed once at module
+ * The validated contents of `data/osn/hint-policy.json`, parsed once at module
  * load. Throws {@link CorpusValidationError} if the file does not match
  * {@link hintPolicyFileSchema}.
  */

@@ -1,7 +1,7 @@
 /**
  * Tests for the §7 playbook schema (`src/schema/playbook.ts`) and the
  * typed loader/lookup helpers plus the four executable decision selectors
- * over the real corpus (`src/domain/playbooks.ts`, `data/playbooks.json`).
+ * over the real corpus (`src/domain/playbooks.ts`, `data/osn/playbooks.json`).
  *
  * Malformed-input fixtures are constructed inline against the schemas; the
  * real data file under `data/` is never mutated by these tests.
@@ -31,9 +31,9 @@ const EXPECTED_IDS = [
   "osn-k-tracing",
 ] as const;
 
-// --- data/playbooks.json (via src/domain/playbooks.ts) ----------------------
+// --- data/osn/playbooks.json (via src/domain/playbooks.ts) ----------------------
 
-describe("data/playbooks.json (via src/domain/playbooks.ts)", () => {
+describe("data/osn/playbooks.json (via src/domain/playbooks.ts)", () => {
   test("the real data file parses through the schema without error", () => {
     expect(() => listPlaybooks()).not.toThrow();
   });

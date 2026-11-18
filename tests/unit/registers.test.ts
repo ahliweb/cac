@@ -3,8 +3,8 @@
  * (`src/schema/reference.ts`, `src/schema/regulation.ts`,
  * `src/schema/standard.ts`, `src/schema/source-priority.ts`) and the typed
  * loader/lookup helpers over the real corpus (`src/domain/registers.ts`,
- * `data/references.json`, `data/regulations.json`, `data/standards.json`,
- * `data/source-priority.json`).
+ * `data/osn/references.json`, `data/osn/regulations.json`, `data/osn/standards.json`,
+ * `data/osn/source-priority.json`).
  *
  * Malformed-input fixtures are constructed inline against the schemas; the
  * real data files under `data/` are never mutated by these tests.
@@ -39,7 +39,7 @@ function expectedReferenceIds(): string[] {
   return Array.from({ length: EXPECTED_REFERENCE_COUNT }, (_, index) => `R${index + 1}`);
 }
 
-describe("data/references.json (via src/domain/registers.ts)", () => {
+describe("data/osn/references.json (via src/domain/registers.ts)", () => {
   test("the real data file parses through the schema without error", () => {
     expect(() => listReferences()).not.toThrow();
   });
@@ -151,7 +151,7 @@ describe("resolveCitations", () => {
   });
 });
 
-describe("data/regulations.json (via src/domain/registers.ts)", () => {
+describe("data/osn/regulations.json (via src/domain/registers.ts)", () => {
   test("the real data file parses through the schema without error", () => {
     expect(() => listRegulations()).not.toThrow();
   });
@@ -194,7 +194,7 @@ describe("getRegulation", () => {
   });
 });
 
-describe("data/standards.json (via src/domain/registers.ts)", () => {
+describe("data/osn/standards.json (via src/domain/registers.ts)", () => {
   test("the real data file parses through the schema without error", () => {
     expect(() => listStandards()).not.toThrow();
   });

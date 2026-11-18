@@ -3,7 +3,7 @@
  * baseline") — one of the five operational rows (Sesi mentor, Latihan
  * mandiri, Soal terkurasi, Contest, Checkpoint) defined in §1.3 of the
  * syllabus corpus (`docs/silabus/01-identitas-program.md`), plus the
- * whole-file wrapper for `data/learning-load.json`.
+ * whole-file wrapper for `data/osn/learning-load.json`.
  *
  * Per the layering rules in `docs/architecture/README.md`, this module must
  * never import from `src/domain/`.
@@ -106,7 +106,7 @@ export const learningLoadComponentSchema = z
 export type LearningLoadComponent = z.infer<typeof learningLoadComponentSchema>;
 
 /**
- * The whole `data/learning-load.json` file: the five baseline learning-load
+ * The whole `data/osn/learning-load.json` file: the five baseline learning-load
  * components plus the provenance fields (`syllabusVersion`, `syllabusDate`,
  * `sourceSection`) that let the corpus carry its own versioning, per
  * ADR-0005.
@@ -129,7 +129,7 @@ export const learningLoadFileSchema = z
       .describe("The full set of five baseline learning-load components defined by §1.3."),
   })
   .describe(
-    "The full contents of `data/learning-load.json`: the five baseline " +
+    "The full contents of `data/osn/learning-load.json`: the five baseline " +
       "learning-load components, with their corpus provenance.",
   );
 

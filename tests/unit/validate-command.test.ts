@@ -12,7 +12,8 @@ import { mkdtemp, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import type { CommandContext } from "../../src/cli/command";
-import { DEFAULT_DATA_DIR, validateCommand } from "../../src/cli/commands/validate";
+import { validateCommand } from "../../src/cli/commands/validate";
+import { DATA_ROOT } from "../../src/cli/program-loader";
 
 function makeContext(overrides: Partial<CommandContext> = {}): {
   ctx: CommandContext;
@@ -31,11 +32,9 @@ function makeContext(overrides: Partial<CommandContext> = {}): {
   return { ctx, stdout, stderr };
 }
 
-describe("DEFAULT_DATA_DIR", () => {
+describe("DATA_ROOT", () => {
   test("resolves to the repository's real data/ directory", () => {
-    expect(
-      DEFAULT_DATA_DIR.endsWith(`${join("osn", "data")}`) || DEFAULT_DATA_DIR.endsWith("data"),
-    ).toBe(true);
+    expect(DATA_ROOT.endsWith(`${join("osn", "data")}`) || DATA_ROOT.endsWith("data")).toBe(true);
   });
 });
 
@@ -95,5 +94,48 @@ describe("validateCommand.run", () => {
     expect(code).toBe(0);
     const parsed = JSON.parse(stdout.join(""));
     expect(parsed.ok).toBe(true);
+    expect(parsed.programs).toHaveLength(1);
+    expect(parsed.programs[0].program).toBe("osn");
+    expect(parsed.programs[0].ok).toBe(true);
+  });
+});
+
+describe("validateCommand.run --program", () => {
+  test("--program osn validates only that programme (exit 0, programme named in the output)", async () => {
+    const { ctx, stdout } = makeContext();
+    const code = await validateCommand.run(["--program", "osn"], ctx);
+    expect(code).toBe(0);
+    expect(stdout.join("")).toContain('programme "osn"');
+  });
+
+  test("--program osn --json emits the single-programme shape with a program field", async () => {
+    const { ctx, stdout } = makeContext({ json: true });
+    const code = await validateCommand.run(["--program", "osn"], ctx);
+    expect(code).toBe(0);
+    const parsed = JSON.parse(stdout.join(""));
+    expect(parsed.program).toBe("osn");
+    expect(parsed.ok).toBe(true);
+    expect(parsed.programs).toBeUndefined();
+  });
+
+  test("an unknown programme is a usage error (exit 2) naming the registered ids", async () => {
+    const { ctx, stderr } = makeContext();
+    const code = await validateCommand.run(["--program", "tidak-ada"], ctx);
+    expect(code).toBe(2);
+    expect(stderr.join("")).toContain('unknown programme "tidak-ada"');
+    expect(stderr.join("")).toContain("Registered programmes: osn");
+  });
+
+  test("--program with no value is a usage error (exit 2)", async () => {
+    const { ctx, stderr } = makeContext();
+    const code = await validateCommand.run(["--program"], ctx);
+    expect(code).toBe(2);
+    expect(stderr.join("")).toContain("--program requires a programme id argument");
+  });
+
+  test("--data-dir with an unknown --program is still a usage error", async () => {
+    const { ctx } = makeContext();
+    const code = await validateCommand.run(["--program", "tidak-ada", "--data-dir", "."], ctx);
+    expect(code).toBe(2);
   });
 });

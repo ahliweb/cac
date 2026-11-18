@@ -2,7 +2,7 @@
  * Zod schema for a competition stage ("tahap kompetisi") — one of the four
  * OSN-K/OSN-P/OSN Nasional/TOKI-IOI-extension stages defined in §2.2 of the
  * syllabus corpus (`docs/silabus/02-arsitektur-kompetensi.md`), plus the
- * whole-file wrapper for `data/competition-stages.json`.
+ * whole-file wrapper for `data/osn/competition-stages.json`.
  *
  * Per the layering rules in `docs/architecture/README.md`, this module must
  * never import from `src/domain/`.
@@ -143,7 +143,7 @@ export const stageSchema = z
 export type Stage = z.infer<typeof stageSchema>;
 
 /**
- * The whole `data/competition-stages.json` file: the four competition
+ * The whole `data/osn/competition-stages.json` file: the four competition
  * stages plus the provenance fields (`syllabusVersion`, `syllabusDate`,
  * `sourceSection`) that let the corpus carry its own versioning, per
  * ADR-0005.
@@ -166,7 +166,7 @@ export const stagesFileSchema = z
       .describe("The full set of four competition stages defined by §2.2."),
   })
   .describe(
-    "The full contents of `data/competition-stages.json`: the four " +
+    "The full contents of `data/osn/competition-stages.json`: the four " +
       "competition stages, with their corpus provenance.",
   );
 

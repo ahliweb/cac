@@ -2,7 +2,7 @@
  * Pure computation of the seven §6.3 mentor KPI metrics
  * (`docs/silabus/06-evaluasi-rubrik-kpi.md`) over a batch of
  * {@link LearningRecord}s (issue #15's output), plus the typed loader/
- * lookup helpers over `data/kpi-definitions.json`.
+ * lookup helpers over `data/osn/kpi-definitions.json`.
  *
  * **Everything in this module is a pure function over `readonly
  * LearningRecord[]`.** There is no I/O, no formatting, and no rendering
@@ -33,15 +33,15 @@
 // filesystem read, no async loader, and Bun/tsc both resolve it at build
 // time. The value is `unknown` as far as validity is concerned; it is
 // still parsed through the schema below before anything trusts its shape.
-import rawKpiDefinitions from "../../data/kpi-definitions.json";
+import rawKpiDefinitions from "../../data/osn/kpi-definitions.json";
 import { parseDataFile } from "../schema/common";
 import { type KpiDefinition, kpiDefinitionsFileSchema } from "../schema/kpi";
 import type { LearningRecord } from "../schema/learning-record";
 
-const KPI_DEFINITIONS_SOURCE_NAME = "data/kpi-definitions.json";
+const KPI_DEFINITIONS_SOURCE_NAME = "data/osn/kpi-definitions.json";
 
 /**
- * The validated contents of `data/kpi-definitions.json`, parsed once at
+ * The validated contents of `data/osn/kpi-definitions.json`, parsed once at
  * module load. Throws {@link CorpusValidationError} if the file does not
  * match {@link kpiDefinitionsFileSchema}.
  */

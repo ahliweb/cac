@@ -13,7 +13,7 @@ import { RenderRequestError } from "../../src/render/errors";
 /** Matches an unresolved template artefact that should never survive into rendered output. */
 const UNRESOLVED_PLACEHOLDER = /\{\{|undefined|NaN|TODO/;
 
-/** The five §6.1 assessment component names, verbatim from `data/assessment-weights.json`. */
+/** The five §6.1 assessment component names, verbatim from `data/osn/assessment-weights.json`. */
 const RUBRIC_COMPONENT_NAMES = [
   "Computational thinking & konsep",
   "Problem solving & algorithm selection",
@@ -25,7 +25,7 @@ const RUBRIC_COMPONENT_NAMES = [
 /** The four §6.2 problem-completion status codes. */
 const STATUS_CODES = ["A", "B", "C", "D"];
 
-/** The seven §6.3 KPI metric names, verbatim from `data/kpi-definitions.json`. */
+/** The seven §6.3 KPI metric names, verbatim from `data/osn/kpi-definitions.json`. */
 const KPI_METRIC_NAMES = [
   "A/B/C/D per topic",
   "Time-to-first-correct",

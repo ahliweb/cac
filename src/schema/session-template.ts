@@ -2,7 +2,7 @@
  * Zod schema for the two-session weekly template ("Template dua sesi per
  * minggu") defined in §5.1 of the syllabus corpus
  * (`docs/silabus/05-format-pembelajaran-dan-sop.md`), plus the whole-file
- * wrapper for `data/session-template.json`.
+ * wrapper for `data/osn/session-template.json`.
  *
  * Per the layering rules in `docs/architecture/README.md`, this module must
  * never import from `src/domain/`.
@@ -122,7 +122,7 @@ export const sessionSchema = z
 export type Session = z.infer<typeof sessionSchema>;
 
 /**
- * The whole `data/session-template.json` file: the two §5.1 weekly sessions
+ * The whole `data/osn/session-template.json` file: the two §5.1 weekly sessions
  * plus the provenance fields (`syllabusVersion`, `syllabusDate`,
  * `sourceSection`) that let the corpus carry its own versioning, per
  * ADR-0005.
@@ -162,7 +162,7 @@ export const sessionTemplateFileSchema = z
     }
   })
   .describe(
-    "The full contents of `data/session-template.json`: the two §5.1 " +
+    "The full contents of `data/osn/session-template.json`: the two §5.1 " +
       "weekly sessions, with their corpus provenance.",
   );
 

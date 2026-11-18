@@ -1,6 +1,6 @@
 /**
  * Typed loaders, lookup helpers, and grading/scheduling logic over
- * `data/assessment-weights.json` and `data/problem-status.json`: the §6.1
+ * `data/osn/assessment-weights.json` and `data/osn/problem-status.json`: the §6.1
  * five weighted internal assessment components and the §6.2 A/B/C/D
  * problem-completion status codes.
  *
@@ -22,8 +22,8 @@
 // filesystem read, no async loader, and Bun/tsc both resolve it at build
 // time. The value is `unknown` as far as validity is concerned; it is
 // still parsed through the schema below before anything trusts its shape.
-import rawAssessmentWeights from "../../data/assessment-weights.json";
-import rawProblemStatus from "../../data/problem-status.json";
+import rawAssessmentWeights from "../../data/osn/assessment-weights.json";
+import rawProblemStatus from "../../data/osn/problem-status.json";
 import {
   type AssessmentComponent,
   type AssessmentWeightsFile,
@@ -36,11 +36,11 @@ import {
   problemStatusFileSchema,
 } from "../schema/problem-status";
 
-const ASSESSMENT_WEIGHTS_SOURCE_NAME = "data/assessment-weights.json";
-const PROBLEM_STATUS_SOURCE_NAME = "data/problem-status.json";
+const ASSESSMENT_WEIGHTS_SOURCE_NAME = "data/osn/assessment-weights.json";
+const PROBLEM_STATUS_SOURCE_NAME = "data/osn/problem-status.json";
 
 /**
- * The validated contents of `data/assessment-weights.json`, parsed once at
+ * The validated contents of `data/osn/assessment-weights.json`, parsed once at
  * module load. Throws {@link CorpusValidationError} if the file does not
  * match {@link assessmentWeightsFileSchema}.
  */
@@ -51,7 +51,7 @@ const assessmentWeightsFile: AssessmentWeightsFile = parseDataFile(
 );
 
 /**
- * The validated contents of `data/problem-status.json`, parsed once at
+ * The validated contents of `data/osn/problem-status.json`, parsed once at
  * module load. Throws {@link CorpusValidationError} if the file does not
  * match {@link problemStatusFileSchema}.
  */

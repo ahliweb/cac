@@ -19,7 +19,7 @@ import { join } from "node:path";
 
 const REPO_ROOT = join(import.meta.dir, "..", "..");
 const CLI_ENTRYPOINT = join(REPO_ROOT, "src", "cli", "index.ts");
-const REAL_DATA_DIR = join(REPO_ROOT, "data");
+const REAL_DATA_DIR = join(REPO_ROOT, "data", "osn");
 
 interface CliResult {
   readonly stdout: string;
@@ -164,6 +164,78 @@ describe("osn validate --data-dir (real subprocess, corrupted fixture corpus)", 
       expect(result.stdout).toContain("not covered by any schema");
     } finally {
       await rm(dir, { recursive: true, force: true });
+    }
+  });
+});
+
+describe("osn validate: programme registry and --program (real subprocess)", () => {
+  test("a corpus file whose syllabusVersion disagrees with the registry is reported, exit 1", async () => {
+    const dir = await copyRealCorpus();
+    try {
+      const path = join(dir, "standards.json");
+      // biome-ignore lint/suspicious/noExplicitAny: deliberately malformed fixture data
+      const file = (await readJson(path)) as any;
+      file.syllabusVersion = "9.9";
+      await writeJson(path, file);
+
+      const result = await runCliSubprocess(["validate", "--program", "osn", "--data-dir", dir]);
+      expect(result.exitCode).toBe(1);
+      expect(result.stdout).toContain("standards.json:");
+      expect(result.stdout).toContain("syllabusVersion");
+      expect(result.stdout).toContain("programs.json");
+    } finally {
+      await rm(dir, { recursive: true, force: true });
+    }
+  });
+
+  test("a corpus file whose syllabusDate disagrees with the registry is reported, exit 1", async () => {
+    const dir = await copyRealCorpus();
+    try {
+      const path = join(dir, "weeks.json");
+      // biome-ignore lint/suspicious/noExplicitAny: deliberately malformed fixture data
+      const file = (await readJson(path)) as any;
+      file.syllabusDate = "2030-01-01";
+      await writeJson(path, file);
+
+      const result = await runCliSubprocess(["validate", "--data-dir", dir]);
+      expect(result.exitCode).toBe(1);
+      expect(result.stdout).toContain("syllabusDate");
+    } finally {
+      await rm(dir, { recursive: true, force: true });
+    }
+  });
+
+  test("validate without --program validates every registered programme, exit 0", async () => {
+    const result = await runCliSubprocess(["validate"]);
+    expect(result.exitCode).toBe(0);
+    expect(result.stdout).toContain('programme "osn"');
+  });
+
+  test("validate --program tidak-ada exits 2 with a clear message", async () => {
+    const result = await runCliSubprocess(["validate", "--program", "tidak-ada"]);
+    expect(result.exitCode).toBe(2);
+    expect(result.stderr).toContain('unknown programme "tidak-ada"');
+  });
+
+  test("plan --program osn works and plan --program tidak-ada exits 2", async () => {
+    const ok = await runCliSubprocess(["plan", "--program", "osn", "--start", "2026-01-05"]);
+    expect(ok.exitCode).toBe(0);
+    expect(ok.stdout).toContain("osn plan: cohort calendar");
+
+    const bad = await runCliSubprocess(["plan", "--program", "tidak-ada", "--start", "2026-01-05"]);
+    expect(bad.exitCode).toBe(2);
+    expect(bad.stderr).toContain("unknown programme");
+  });
+
+  test("render and checklist accept --program osn; every corpus command rejects an unknown id with exit 2", async () => {
+    expect((await runCliSubprocess(["render", "sop", "--program", "osn"])).exitCode).toBe(0);
+    expect((await runCliSubprocess(["checklist", "--program", "osn"])).exitCode).toBe(0);
+    for (const args of [
+      ["render", "sop", "--program", "x-y"],
+      ["checklist", "--program", "x-y"],
+      ["report", "--records", "none.jsonl", "--program", "x-y"],
+    ]) {
+      expect((await runCliSubprocess(args)).exitCode).toBe(2);
     }
   });
 });

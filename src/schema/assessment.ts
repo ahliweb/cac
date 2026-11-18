@@ -2,7 +2,7 @@
  * Zod schema for an internal assessment component ("Bobot internal") -- one
  * of the five weighted components defined in §6.1 of the syllabus corpus
  * (`docs/silabus/06-evaluasi-rubrik-kpi.md`), plus the whole-file wrapper
- * for `data/assessment-weights.json`.
+ * for `data/osn/assessment-weights.json`.
  *
  * Per the layering rules in `docs/architecture/README.md`, this module must
  * never import from `src/domain/`. This module owns the *definition* of the
@@ -69,7 +69,7 @@ export const assessmentComponentSchema = z
 export type AssessmentComponent = z.infer<typeof assessmentComponentSchema>;
 
 /**
- * The whole `data/assessment-weights.json` file: the five §6.1 assessment
+ * The whole `data/osn/assessment-weights.json` file: the five §6.1 assessment
  * components plus the provenance fields (`syllabusVersion`, `syllabusDate`,
  * `sourceSection`) that let the corpus carry its own versioning, per
  * ADR-0005.
@@ -123,7 +123,7 @@ export const assessmentWeightsFileSchema = z
     }
   })
   .describe(
-    "The full contents of `data/assessment-weights.json`: the five §6.1 " +
+    "The full contents of `data/osn/assessment-weights.json`: the five §6.1 " +
       "internal assessment components, with their corpus provenance.",
   );
 

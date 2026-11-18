@@ -50,14 +50,14 @@ from the schema silently.
 
 Every field here is `public`: a problem's tags describe the *problem*, not
 any learner, and are ordinary curriculum content of the same kind already
-published in `data/topic-families.json` and `data/competition-stages.json`.
+published in `data/osn/topic-families.json` and `data/osn/competition-stages.json`.
 
 | Field | Classification | Notes |
 | --- | --- | --- |
 | `problemId` | public | The tagged problem's stable id. |
 | `officialTopic` | public | One of the ten §2.1 topic-family ids. |
 | `prerequisite` | public | Topic-family ids a learner should know beforehand. |
-| `difficulty` | public | 1-5 difficulty band (see `data/problem-taxonomy-vocab.json`). |
+| `difficulty` | public | 1-5 difficulty band (see `data/osn/problem-taxonomy-vocab.json`). |
 | `stage` | public | One of the four §2.2 competition-stage ids. |
 | `complexity` | public | Expected solution complexity class, in Big-O notation. |
 | `commonTraps` | public | Trap categories a learner is likely to fall into. |
@@ -66,7 +66,7 @@ published in `data/topic-families.json` and `data/competition-stages.json`.
 ## Retention and minimisation rule
 
 This repository's own retention rule is trivial and absolute: **retain
-none.** No `data/*.json` file may ever contain a real learning record or
+none.** No `data/<program>/*.json` file may ever contain a real learning record or
 real problem-taxonomy-adjacent learner data (there is no such thing as
 "problem-taxonomy learner data" -- the taxonomy describes problems, not
 people). `tests/unit/learning-record.test.ts` enforces this mechanically

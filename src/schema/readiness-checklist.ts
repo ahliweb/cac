@@ -3,7 +3,7 @@
  * sebelum memulai cohort") -- one of the eight items defined in §14.1 of
  * the syllabus corpus (`docs/silabus/14-checklist-dan-aturan-
  * operasional.md`), plus the whole-file wrapper for
- * `data/readiness-checklist.json`.
+ * `data/osn/readiness-checklist.json`.
  *
  * §14.1 states each item as a single bulleted instruction with no
  * accompanying "how do you know this is done" text of its own --
@@ -59,7 +59,7 @@ export const readinessChecklistItemSchema = z
 export type ReadinessChecklistItem = z.infer<typeof readinessChecklistItemSchema>;
 
 /**
- * The whole `data/readiness-checklist.json` file: the eight §14.1
+ * The whole `data/osn/readiness-checklist.json` file: the eight §14.1
  * readiness-checklist items, plus the provenance fields (`syllabusVersion`,
  * `syllabusDate`, `sourceSection`) that let the corpus carry its own
  * versioning, per ADR-0005.
@@ -104,7 +104,7 @@ export const readinessChecklistFileSchema = z
     }
   })
   .describe(
-    "The full contents of `data/readiness-checklist.json`: the eight §14.1 " +
+    "The full contents of `data/osn/readiness-checklist.json`: the eight §14.1 " +
       "cohort-readiness checklist items, with their corpus provenance.",
   );
 

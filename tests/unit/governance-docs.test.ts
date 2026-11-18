@@ -32,7 +32,7 @@ const SECURITY_MD_PATH = join(REPO_ROOT, "SECURITY.md");
 const GOVERNANCE_SECURITY_PATH = join(REPO_ROOT, "docs", "governance", "security.md");
 const INCIDENT_RESPONSE_PATH = join(REPO_ROOT, "docs", "governance", "incident-response.md");
 const PRIVACY_PATH = join(REPO_ROOT, "docs", "governance", "privacy.md");
-const STANDARDS_JSON_PATH = join(REPO_ROOT, "data", "standards.json");
+const STANDARDS_JSON_PATH = join(REPO_ROOT, "data", "osn", "standards.json");
 
 const securityMdText = readFileSync(SECURITY_MD_PATH, "utf-8");
 const governanceSecurityText = readFileSync(GOVERNANCE_SECURITY_PATH, "utf-8");
@@ -91,7 +91,7 @@ function parseMarkdownTable(markdown: string): string[][] {
   );
 }
 
-describe("data/standards.json has all fourteen §11 standards", () => {
+describe("data/osn/standards.json has all fourteen §11 standards", () => {
   test("the fixture itself has fourteen entries (sanity check on the assertion below)", () => {
     expect(standardsFile.standards.length).toBe(14);
   });

@@ -2,8 +2,8 @@
  * Tests for the pedagogy schemas (`src/schema/session-template.ts`,
  * `src/schema/mentor-sop.ts`, `src/schema/hint-policy.ts`) and the typed
  * loader/lookup helpers over the real corpus (`src/domain/pedagogy.ts`,
- * `data/session-template.json`, `data/mentor-sop.json`,
- * `data/hint-policy.json`).
+ * `data/osn/session-template.json`, `data/osn/mentor-sop.json`,
+ * `data/osn/hint-policy.json`).
  *
  * Malformed-input fixtures are constructed inline against the schemas; the
  * real data files under `data/` are never mutated by these tests.
@@ -49,7 +49,7 @@ const EXPECTED_MINIMUM_TESTS = [
   "disconnected/negative-edge bila relevan",
 ] as const;
 
-describe("data/session-template.json (via src/domain/pedagogy.ts)", () => {
+describe("data/osn/session-template.json (via src/domain/pedagogy.ts)", () => {
   test("the real data file parses through the schema without error", () => {
     expect(() => getSession(1)).not.toThrow();
     expect(() => getSession(2)).not.toThrow();
@@ -96,7 +96,7 @@ describe("getSession", () => {
   });
 });
 
-describe("data/mentor-sop.json (via src/domain/pedagogy.ts)", () => {
+describe("data/osn/mentor-sop.json (via src/domain/pedagogy.ts)", () => {
   test("the real data file parses through the schema without error", () => {
     expect(() => sopSteps()).not.toThrow();
   });
@@ -127,7 +127,7 @@ describe("data/mentor-sop.json (via src/domain/pedagogy.ts)", () => {
   });
 });
 
-describe("data/hint-policy.json (via src/domain/pedagogy.ts)", () => {
+describe("data/osn/hint-policy.json (via src/domain/pedagogy.ts)", () => {
   test("the real data file parses through the schema without error", () => {
     expect(() => hintLevels()).not.toThrow();
   });

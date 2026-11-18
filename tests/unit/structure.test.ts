@@ -2,8 +2,8 @@
  * Tests for the category/stage/learning-load schemas
  * (`src/schema/category.ts`, `src/schema/stage.ts`,
  * `src/schema/learning-load.ts`) and the typed loader/lookup helpers over
- * the real corpus (`src/domain/structure.ts`, `data/curriculum-categories.json`,
- * `data/competition-stages.json`, `data/learning-load.json`).
+ * the real corpus (`src/domain/structure.ts`, `data/osn/curriculum-categories.json`,
+ * `data/osn/competition-stages.json`, `data/osn/learning-load.json`).
  *
  * Malformed-input fixtures are constructed inline against the schemas; the
  * real data files under `data/` are never mutated by these tests.
@@ -34,7 +34,7 @@ import { contestFormatSchema, stageSchema, stagesFileSchema } from "../../src/sc
 const EXPECTED_CATEGORY_IDS = ["core", "support", "extension", "de-prioritized"] as const;
 const EXPECTED_STAGE_IDS = ["osn-k", "osn-p", "osn-nasional", "toki-ioi-extension"] as const;
 
-describe("data/curriculum-categories.json (via src/domain/structure.ts)", () => {
+describe("data/osn/curriculum-categories.json (via src/domain/structure.ts)", () => {
   test("the real data file parses through the schema without error", () => {
     expect(() => listCategories()).not.toThrow();
   });
@@ -91,7 +91,7 @@ describe("getCategory / findCategory", () => {
   });
 });
 
-describe("data/competition-stages.json (via src/domain/structure.ts)", () => {
+describe("data/osn/competition-stages.json (via src/domain/structure.ts)", () => {
   test("the real data file parses through the schema without error", () => {
     expect(() => listStages()).not.toThrow();
   });
@@ -178,7 +178,7 @@ describe("getStage / findStage", () => {
   });
 });
 
-describe("data/learning-load.json (via src/domain/structure.ts)", () => {
+describe("data/osn/learning-load.json (via src/domain/structure.ts)", () => {
   test("the real data file parses through the schema without error", () => {
     expect(() => listLearningLoad()).not.toThrow();
   });

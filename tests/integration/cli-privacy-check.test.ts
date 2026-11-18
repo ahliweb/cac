@@ -61,10 +61,10 @@ describe("osn privacy-check (real subprocess, real data/)", () => {
     expect(parsed.summary.filesScanned).toBeGreaterThan(0);
   });
 
-  test("reaches data/samples/learning-records.sample.jsonl (recursive, .jsonl-aware) without any finding", async () => {
+  test("reaches data/osn/samples/learning-records.sample.jsonl (recursive, .jsonl-aware) without any finding", async () => {
     const result = await runCliSubprocess(["privacy-check", "--json"]);
     const parsed = JSON.parse(result.stdout);
-    expect(parsed.summary.filesScanned).toBeGreaterThanOrEqual(20); // 19 top-level data/*.json + at least the .jsonl sample.
+    expect(parsed.summary.filesScanned).toBeGreaterThanOrEqual(24); // data/programs.json + 22 data/osn/*.json + the .jsonl sample.
   });
 });
 

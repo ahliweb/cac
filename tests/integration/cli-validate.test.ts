@@ -49,7 +49,7 @@ describe("osn validate (real subprocess, real corpus)", () => {
   });
 
   test("--json emits a parseable { ok: true, findings: [], summary } result", async () => {
-    const result = await runCliSubprocess(["validate", "--json"]);
+    const result = await runCliSubprocess(["validate", "--program", "osn", "--json"]);
     expect(result.exitCode).toBe(0);
     const parsed = JSON.parse(result.stdout);
     expect(parsed.ok).toBe(true);

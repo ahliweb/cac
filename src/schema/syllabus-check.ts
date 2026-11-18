@@ -6,7 +6,7 @@
  * `docs/silabus/99-referensi.md` ("Sebelum setiap siklus pembinaan, Tim
  * Riset AhliKoding.com dari AhliWeb.com perlu melakukan syllabus check
  * terhadap sumber resmi OSN/IOI...") -- plus the whole-file wrapper for
- * `data/syllabus-check-log.json`.
+ * `data/osn/syllabus-check-log.json`.
  *
  * Per the layering rules in `docs/architecture/README.md`, this module must
  * never import from `src/domain/`. It reuses {@link citationRefSchema} from
@@ -81,7 +81,7 @@ export const syllabusCheckEntrySchema = z
 export type SyllabusCheckEntry = z.infer<typeof syllabusCheckEntrySchema>;
 
 /**
- * The whole `data/syllabus-check-log.json` file: the dated log of syllabus
+ * The whole `data/osn/syllabus-check-log.json` file: the dated log of syllabus
  * checks (append-only in intent; never rewritten in place), plus the
  * provenance fields (`syllabusVersion`, `syllabusDate`) that let the corpus
  * carry its own versioning, per ADR-0005. There is no single §-numbered
@@ -118,7 +118,7 @@ export const syllabusCheckLogFileSchema = z
   })
   .strict()
   .describe(
-    "The full contents of `data/syllabus-check-log.json`: the dated log of " +
+    "The full contents of `data/osn/syllabus-check-log.json`: the dated log of " +
       "§14.2 rule 8 syllabus checks, with their corpus provenance.",
   );
 

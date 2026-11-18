@@ -1,7 +1,7 @@
 # Architecture Decision Records
 
 This directory records the significant architectural decisions made for
-`osn-informatika-2026`, in the lightweight ADR format popularised by
+`kurikulum-informatika`, in the lightweight ADR format popularised by
 Michael Nygard. An ADR exists to answer, permanently, "why is it built
 this way and not some other way" — without it, the reasoning behind a
 choice like "JSON, not YAML" or "no LMS" lives only in someone's memory

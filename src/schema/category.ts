@@ -2,7 +2,7 @@
  * Zod schema for a curriculum category ("kategori kurikulum") — one of the
  * four CORE/SUPPORT/EXTENSION/DE-PRIORITIZED buckets defined in §3 of the
  * syllabus corpus (`docs/silabus/03-struktur-kurikulum.md`), plus the
- * whole-file wrapper for `data/curriculum-categories.json`.
+ * whole-file wrapper for `data/osn/curriculum-categories.json`.
  *
  * Per the layering rules in `docs/architecture/README.md`, this module must
  * never import from `src/domain/`.
@@ -48,7 +48,7 @@ export const categorySchema = z
 export type Category = z.infer<typeof categorySchema>;
 
 /**
- * The whole `data/curriculum-categories.json` file: the four categories,
+ * The whole `data/osn/curriculum-categories.json` file: the four categories,
  * the §3 "Aturan dependency" callout (verbatim, at file level since it
  * governs all four categories jointly rather than any single row), plus the
  * provenance fields (`syllabusVersion`, `syllabusDate`, `sourceSection`)
@@ -78,7 +78,7 @@ export const categoriesFileSchema = z
       .describe("The full set of four curriculum categories defined by §3."),
   })
   .describe(
-    "The full contents of `data/curriculum-categories.json`: the four " +
+    "The full contents of `data/osn/curriculum-categories.json`: the four " +
       "CORE/SUPPORT/EXTENSION/DE-PRIORITIZED categories, the dependency " +
       "rule, and their corpus provenance.",
   );

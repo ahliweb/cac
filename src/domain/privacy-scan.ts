@@ -4,7 +4,7 @@
  * `tests/unit/learning-record.test.ts` already ran over `data/*.json`
  * (non-recursive, JSON files only) into a first-class governance control
  * that scans **recursively** through the whole `data/` tree, including
- * nested directories (`data/samples/`) and `.jsonl` files.
+ * nested directories (`data/osn/samples/`) and `.jsonl` files.
  *
  * Per the "Layering rules" in `docs/architecture/README.md`, this module
  * is pure -- a function of an injected {@link PrivacyScanEntry} list, no
@@ -32,7 +32,7 @@ import { findDirectIdentifiers } from "../schema/learning-record";
  * platforms -- landed by issues #9-#14, well before `DIRECT_IDENTIFIER_
  * DENYLIST` existed) legitimately carries a `"name"` field for a
  * *curriculum entity's* printed name, e.g. `{ "id": "osn-k", "name":
- * "OSN-K" }` in `data/competition-stages.json`. None of that is a
+ * "OSN-K" }` in `data/osn/competition-stages.json`. None of that is a
  * person's name.
  *
  * This is exactly the `TOLERATED_KEY` exception `tests/unit/learning-

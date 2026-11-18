@@ -13,7 +13,7 @@ corresponding issue scoping them").
 
 ## `data/`
 
-**What belongs here:** curriculum data files, one JSON file (or small
+**What belongs here:** `programs.json` (the programme registry, ADR-0006) and one sub-directory `data/<program>/` per registered programme, each holding that programme's curriculum data files, one JSON file (or small
 family of files) per curriculum concept — topic families, the 28-week
 dataset, phase gates, curriculum categories, competition stages, the
 reference/regulation/standards registers, session templates, assessment
@@ -26,14 +26,14 @@ must be validated by a schema in `src/schema/` (see "Ordering rule" in
 derived values, real learner personal data (see ADR-0004), or a data file
 for a shape that has no corresponding schema.
 
-**State today:** 22 schema-validated JSON files, one per curriculum
-concept (`data/topic-families.json`, `data/weeks.json`, `data/gates.json`,
-`data/references.json`, `data/assessment-weights.json`,
-`data/kpi-definitions.json`, `data/playbooks.json`, and so on — see
+**State today:** `data/programs.json` (one entry, `osn`) and `data/osn/` with 22 schema-validated JSON files, one per curriculum
+concept (`data/osn/topic-families.json`, `data/osn/weeks.json`, `data/osn/gates.json`,
+`data/osn/references.json`, `data/osn/assessment-weights.json`,
+`data/osn/kpi-definitions.json`, `data/osn/playbooks.json`, and so on — see
 `osn validate`'s output for the exhaustive, currently-registered list),
-plus `data/samples/` (synthetic sample learning records — see
-`data/samples/README.md`). `osn validate` and `osn privacy-check` both
-run recursively/registry-driven over this directory in CI.
+plus `data/osn/samples/` (synthetic sample learning records — see
+`data/osn/samples/README.md`). `osn validate` and `osn privacy-check` both
+run over this directory in CI: `osn validate` per registered programme (and the registry itself), `osn privacy-check` recursively over all of `data/`.
 
 ## `src/schema/`
 
@@ -49,7 +49,7 @@ data shape.
 validation; anything that reads from disk or the network itself (loading
 is a domain-layer concern).
 
-**State today:** one schema module per `data/*.json` shape (`common.ts`,
+**State today:** one schema module per `data/<program>/*.json` shape (`common.ts`,
 `topic-family.ts`, `week.ts`, `gate.ts`, `category.ts`, `stage.ts`,
 `reference.ts`, `regulation.ts`, `standard.ts`, `source-priority.ts`,
 `session-template.ts`, `hint-policy.ts`, `mentor-sop.ts`, `assessment.ts`,
@@ -59,7 +59,7 @@ is a domain-layer concern).
 
 ## `src/domain/`
 
-**What belongs here:** typed loaders (parse a `data/*.json` file through
+**What belongs here:** typed loaders (parse a `data/<program>/*.json` file through
 its schema), typed lookup/query helpers over already-validated data, and
 business rules that operate on that data (e.g. KPI computation, the
 core-before-extension gate, hint-level escalation, decision-playbook
@@ -115,7 +115,7 @@ output for display (call into `src/render/` instead).
 `run-cli.ts` (the dispatcher core), `command.ts` (the `Command` interface
 and exit-code constants), `commands/index.ts` (the command registry) and
 `commands/*.ts` (the six command handlers), plus the shared I/O/formatting
-helpers each command uses (`corpus-loader.ts`, `privacy-scan-loader.ts`,
+helpers each command uses (`corpus-loader.ts`, `program-loader.ts` (registry loading and `--program` resolution), `privacy-scan-loader.ts`,
 `output-writer.ts`, `format-audit.ts`, `format-plan.ts`, `format-report.ts`,
 `format-privacy-check.ts`, `format-checklist.ts`). A `bin` entry
 (`"osn": "src/cli/index.ts"`) is registered in `package.json`.

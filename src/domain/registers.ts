@@ -1,8 +1,8 @@
 /**
  * Typed loaders and lookup helpers over the reference, regulation, standard
- * and source-priority registers: `data/references.json` (§99),
- * `data/regulations.json` (§10), `data/standards.json` (§11) and
- * `data/source-priority.json` (§12).
+ * and source-priority registers: `data/osn/references.json` (§99),
+ * `data/osn/regulations.json` (§10), `data/osn/standards.json` (§11) and
+ * `data/osn/source-priority.json` (§12).
  *
  * Per the "Layering rules" in `docs/architecture/README.md`, this module
  * assumes the data it receives is valid once it has passed through
@@ -15,25 +15,25 @@
  * fast rather than surfacing later as a silent broken link.
  */
 
-import rawStages from "../../data/competition-stages.json";
+import rawStages from "../../data/osn/competition-stages.json";
 // The rest of the corpus, imported here purely so
 // {@link assertNoDanglingCitations} can walk it for stray `Rnn` citations.
 // Static imports (rather than a runtime directory scan) keep the check
 // deterministic and dependency-free, per issue #12's implementation notes.
-import rawCategories from "../../data/curriculum-categories.json";
-import rawGates from "../../data/gates.json";
-import rawLearningLoad from "../../data/learning-load.json";
+import rawCategories from "../../data/osn/curriculum-categories.json";
+import rawGates from "../../data/osn/gates.json";
+import rawLearningLoad from "../../data/osn/learning-load.json";
 // `resolveJsonModule` is enabled in tsconfig.json, so a static import is a
 // deterministic, dependency-free way to bring the corpus files in — no
 // filesystem read, no async loader, and Bun/tsc both resolve it at build
 // time. The value is `unknown` as far as validity is concerned; it is
 // still parsed through the schema below before anything trusts its shape.
-import rawReferences from "../../data/references.json";
-import rawRegulations from "../../data/regulations.json";
-import rawSourcePriority from "../../data/source-priority.json";
-import rawStandards from "../../data/standards.json";
-import rawTopicFamilies from "../../data/topic-families.json";
-import rawWeeks from "../../data/weeks.json";
+import rawReferences from "../../data/osn/references.json";
+import rawRegulations from "../../data/osn/regulations.json";
+import rawSourcePriority from "../../data/osn/source-priority.json";
+import rawStandards from "../../data/osn/standards.json";
+import rawTopicFamilies from "../../data/osn/topic-families.json";
+import rawWeeks from "../../data/osn/weeks.json";
 import { parseDataFile } from "../schema/common";
 import {
   type Reference,
@@ -51,13 +51,13 @@ import {
 } from "../schema/source-priority";
 import { type Standard, type StandardsFile, standardsFileSchema } from "../schema/standard";
 
-const REFERENCES_SOURCE_NAME = "data/references.json";
-const REGULATIONS_SOURCE_NAME = "data/regulations.json";
-const STANDARDS_SOURCE_NAME = "data/standards.json";
-const SOURCE_PRIORITY_SOURCE_NAME = "data/source-priority.json";
+const REFERENCES_SOURCE_NAME = "data/osn/references.json";
+const REGULATIONS_SOURCE_NAME = "data/osn/regulations.json";
+const STANDARDS_SOURCE_NAME = "data/osn/standards.json";
+const SOURCE_PRIORITY_SOURCE_NAME = "data/osn/source-priority.json";
 
 /**
- * The validated contents of `data/references.json`, parsed once at module
+ * The validated contents of `data/osn/references.json`, parsed once at module
  * load. Throws {@link CorpusValidationError} if the file does not match
  * {@link referencesFileSchema}.
  */
@@ -68,7 +68,7 @@ const referencesFile: ReferencesFile = parseDataFile(
 );
 
 /**
- * The validated contents of `data/regulations.json`, parsed once at module
+ * The validated contents of `data/osn/regulations.json`, parsed once at module
  * load. Throws {@link CorpusValidationError} if the file does not match
  * {@link regulationsFileSchema}.
  */
@@ -79,7 +79,7 @@ const regulationsFile: RegulationsFile = parseDataFile(
 );
 
 /**
- * The validated contents of `data/standards.json`, parsed once at module
+ * The validated contents of `data/osn/standards.json`, parsed once at module
  * load. Throws {@link CorpusValidationError} if the file does not match
  * {@link standardsFileSchema}.
  */
@@ -90,7 +90,7 @@ const standardsFile: StandardsFile = parseDataFile(
 );
 
 /**
- * The validated contents of `data/source-priority.json`, parsed once at
+ * The validated contents of `data/osn/source-priority.json`, parsed once at
  * module load. Throws {@link CorpusValidationError} if the file does not
  * match {@link sourcePriorityFileSchema}.
  */
@@ -204,7 +204,7 @@ export function sourcePriority(): SourcePriorityRegister {
 export interface DanglingCitation {
   /** The citation id that was found, e.g. `"R99"`. */
   readonly id: string;
-  /** The label identifying where it was found, e.g. `"data/weeks.json"`. */
+  /** The label identifying where it was found, e.g. `"data/osn/weeks.json"`. */
   readonly label: string;
 }
 
@@ -213,7 +213,7 @@ export interface DanglingCitation {
  * `"R99"`. Deliberately broader than `citationRefSchema`'s R1-R41 range
  * (`src/schema/common.ts`): every citation-typed *field* in this corpus
  * already goes through `citationRefSchema` at parse time, so an in-range
- * dangling id can only arise from a real gap in `data/references.json`.
+ * dangling id can only arise from a real gap in `data/osn/references.json`.
  * This walker's job is the defense-in-depth case -- catching a stray
  * out-of-range or malformed `"Rxx"`-shaped token wherever it appears in
  * raw, not-yet-schema-checked JSON (including inline test fixtures) -- so
@@ -225,7 +225,7 @@ const CITATION_REF_PATTERN = /^R\d+$/;
 /**
  * Recursively walks `value` (arbitrary parsed JSON), collecting every
  * string that looks like a citation id (matches {@link CITATION_REF_PATTERN})
- * but does not resolve to a real reference in `data/references.json`.
+ * but does not resolve to a real reference in `data/osn/references.json`.
  * `label` identifies `value`'s origin (typically a `data/*.json` file name)
  * and is attached to every {@link DanglingCitation} this call returns.
  *
@@ -263,7 +263,7 @@ export function findDanglingCitations(value: unknown, label: string): DanglingCi
 
 /**
  * Asserts that every citation id used anywhere in the corpus resolves to a
- * real reference in `data/references.json`. Scans every other `data/*.json`
+ * real reference in `data/osn/references.json`. Scans every other `data/*.json`
  * file (statically imported above, not read from disk at runtime, to keep
  * this deterministic and dependency-free) with {@link findDanglingCitations}
  * and throws a single error naming *every* dangling id and the file it was
@@ -275,15 +275,15 @@ export function findDanglingCitations(value: unknown, label: string): DanglingCi
  */
 export function assertNoDanglingCitations(): void {
   const corpus: ReadonlyArray<readonly [string, unknown]> = [
-    ["data/topic-families.json", rawTopicFamilies],
-    ["data/weeks.json", rawWeeks],
-    ["data/gates.json", rawGates],
-    ["data/curriculum-categories.json", rawCategories],
-    ["data/competition-stages.json", rawStages],
-    ["data/learning-load.json", rawLearningLoad],
-    ["data/regulations.json", rawRegulations],
-    ["data/standards.json", rawStandards],
-    ["data/source-priority.json", rawSourcePriority],
+    ["data/osn/topic-families.json", rawTopicFamilies],
+    ["data/osn/weeks.json", rawWeeks],
+    ["data/osn/gates.json", rawGates],
+    ["data/osn/curriculum-categories.json", rawCategories],
+    ["data/osn/competition-stages.json", rawStages],
+    ["data/osn/learning-load.json", rawLearningLoad],
+    ["data/osn/regulations.json", rawRegulations],
+    ["data/osn/standards.json", rawStandards],
+    ["data/osn/source-priority.json", rawSourcePriority],
   ];
 
   const dangling = corpus.flatMap(([label, raw]) => findDanglingCitations(raw, label));
@@ -292,7 +292,7 @@ export function assertNoDanglingCitations(): void {
     const lines = dangling.map((entry) => `  - ${entry.id} in ${entry.label}`).join("\n");
     throw new Error(
       `assertNoDanglingCitations: found ${dangling.length} dangling citation reference(s) ` +
-        `that do not resolve to a real reference in data/references.json:\n${lines}`,
+        `that do not resolve to a real reference in data/osn/references.json:\n${lines}`,
     );
   }
 }

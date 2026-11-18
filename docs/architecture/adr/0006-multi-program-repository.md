@@ -65,7 +65,7 @@ Option 3. Concretely:
 | --- | --- |
 | Programme | A curriculum with its own source document, syllabus version and date, and corpus. Programme IDs are lower-case kebab-case. The first two are `osn` and `sma-coding`. |
 | Registry | `data/programs.json`, validated by a Zod schema in `src/schema/`. It lists only programmes whose corpus exists in `data/`. A programme whose source syllabus is still a draft is documented under `docs/programs/<id>/` but is **not** registered and has **no** `data/<id>/` directory. |
-| Corpus layout | `data/<program>/` holds that programme's JSON corpus. The OSN corpus moves, byte-identical, from `data/*.json` to `data/osn/`, and `data/samples/` to `data/osn/samples/`. |
+| Corpus layout | `data/<program>/` holds that programme's JSON corpus. The OSN corpus moves, byte-identical, from `data/*.json` to `data/osn/`, and `data/osn/samples/` to `data/osn/samples/`. |
 | Schemas | Existing schemas stay in `src/schema/` and may be reused by any programme whose source has the same shape. A programme-specific shape gets its own schema file. The rule "never data without a schema" (`AGENTS.md`) applies per programme. |
 | CLI | The binary keeps the name `osn` (the repository's name; renaming it would break every documented command for no functional gain). Every command that reads a corpus accepts `--program <id>`, defaulting to `osn`. An unknown programme is a usage error (exit 2). `osn validate` without `--program` validates every registered programme. `osn privacy-check` keeps scanning all of `data/` recursively. |
 | Package | Renamed from `osn-informatika-2026` to `kurikulum-informatika`. The repository itself keeps the name `osn`. |

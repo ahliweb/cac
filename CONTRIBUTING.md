@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for contributing to `osn-informatika-2026`. This document covers
+Thanks for contributing to `kurikulum-informatika`. This document covers
 branch naming, commit style, the PR process, and how to propose a
 curriculum change. For AI agent-specific instructions (repository layout,
 command table, workflow ordering), see `AGENTS.md`.

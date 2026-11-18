@@ -1,6 +1,6 @@
 /**
  * Tests for the §6.3 mentor KPI metric definitions
- * (`src/schema/kpi.ts`, `data/kpi-definitions.json`) and the pure
+ * (`src/schema/kpi.ts`, `data/osn/kpi-definitions.json`) and the pure
  * computation functions over `LearningRecord`s (`src/domain/kpi.ts`).
  *
  * Every fixture below is a synthetic, obviously-fake `lr_...` learner ref
@@ -89,7 +89,7 @@ function assertResultIsWellFormed<T>(result: KpiResult<T>): void {
 
 // --- KPI metric definitions --------------------------------------------------
 
-describe("data/kpi-definitions.json (via src/domain/kpi.ts)", () => {
+describe("data/osn/kpi-definitions.json (via src/domain/kpi.ts)", () => {
   test("the real data file parses through the schema without error", () => {
     expect(() => listKpiDefinitions()).not.toThrow();
   });

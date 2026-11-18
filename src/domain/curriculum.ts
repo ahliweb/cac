@@ -1,6 +1,6 @@
 /**
- * Typed loaders and lookup helpers over `data/weeks.json` and
- * `data/gates.json`: the 28-week operational syllabus (§4) and its seven
+ * Typed loaders and lookup helpers over `data/osn/weeks.json` and
+ * `data/osn/gates.json`: the 28-week operational syllabus (§4) and its seven
  * phase gates (§4.1).
  *
  * Per the "Layering rules" in `docs/architecture/README.md`, this module
@@ -18,33 +18,33 @@
 // filesystem read, no async loader, and Bun/tsc both resolve it at build
 // time. The value is `unknown` as far as validity is concerned; it is
 // still parsed through the schema below before anything trusts its shape.
-import rawGates from "../../data/gates.json";
-import rawWeeks from "../../data/weeks.json";
+import rawGates from "../../data/osn/gates.json";
+import rawWeeks from "../../data/osn/weeks.json";
 import { parseDataFile } from "../schema/common";
 import { type Gate, type GatesFile, gatesSchema } from "../schema/gate";
 import { type Week, type WeeksFile, weeksSchema } from "../schema/week";
 import { isTopicFamilyId } from "./topic-families";
 
-const WEEKS_SOURCE_NAME = "data/weeks.json";
-const GATES_SOURCE_NAME = "data/gates.json";
+const WEEKS_SOURCE_NAME = "data/osn/weeks.json";
+const GATES_SOURCE_NAME = "data/osn/gates.json";
 
 /**
- * The validated contents of `data/weeks.json`, parsed once at module load.
+ * The validated contents of `data/osn/weeks.json`, parsed once at module load.
  * Throws {@link CorpusValidationError} if the file does not match
  * {@link weeksSchema}.
  */
 const weeksFile: WeeksFile = parseDataFile(weeksSchema, rawWeeks, WEEKS_SOURCE_NAME);
 
 /**
- * The validated contents of `data/gates.json`, parsed once at module load.
+ * The validated contents of `data/osn/gates.json`, parsed once at module load.
  * Throws {@link CorpusValidationError} if the file does not match
  * {@link gatesSchema}.
  */
 const gatesFile: GatesFile = parseDataFile(gatesSchema, rawGates, GATES_SOURCE_NAME);
 
 /**
- * Checks that every `topicFamilies` reference in `data/weeks.json` resolves
- * to a topic family defined by `data/topic-families.json`. Throws a
+ * Checks that every `topicFamilies` reference in `data/osn/weeks.json` resolves
+ * to a topic family defined by `data/osn/topic-families.json`. Throws a
  * readable error naming the first offending week and topic-family id if
  * not — this is the one referential-integrity fact that spans two data
  * files, so it cannot live inside either file's own schema.
@@ -59,7 +59,7 @@ export function assertReferentialIntegrity(): void {
       if (!isTopicFamilyId(topicFamilyId)) {
         throw new Error(
           `assertReferentialIntegrity: week ${week.week} references unknown topic ` +
-            `family id "${topicFamilyId}" (data/weeks.json vs data/topic-families.json)`,
+            `family id "${topicFamilyId}" (data/osn/weeks.json vs data/osn/topic-families.json)`,
         );
       }
     }

@@ -111,7 +111,7 @@ function renderContestTimeAllocation(value: ContestTimeAllocationResult): string
   ];
 }
 
-/** Renders one {@link KpiReportSection}: a heading naming its label and record count, then all seven KPI metrics in §6.3 table order, each with its official name and purpose from `data/kpi-definitions.json`. */
+/** Renders one {@link KpiReportSection}: a heading naming its label and record count, then all seven KPI metrics in §6.3 table order, each with its official name and purpose from `data/osn/kpi-definitions.json`. */
 function formatSection(section: KpiReportSection, headingLevel: 2 | 3): string[] {
   const heading = "#".repeat(headingLevel);
   const lines: string[] = [`${heading} ${section.label} (${section.recordCount} record(s))`, ""];

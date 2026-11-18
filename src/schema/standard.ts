@@ -2,7 +2,7 @@
  * Zod schema for a single ISO/IEC standard ("Pemetaan Standar ISO/IEC")
  * defined in §11 of the syllabus corpus
  * (`docs/silabus/11-pemetaan-iso.md`), plus the whole-file wrapper for
- * `data/standards.json`.
+ * `data/osn/standards.json`.
  *
  * Per the layering rules in `docs/architecture/README.md`, this module must
  * never import from `src/domain/`.
@@ -43,7 +43,7 @@ export const standardSchema = z
 export type Standard = z.infer<typeof standardSchema>;
 
 /**
- * The whole `data/standards.json` file: the 14 standards plus the §11
+ * The whole `data/osn/standards.json` file: the 14 standards plus the §11
  * preamble (verbatim, at file level since it governs the whole table
  * rather than any single row) and the provenance fields
  * (`syllabusVersion`, `syllabusDate`, `sourceSection`) that let the corpus
@@ -72,7 +72,7 @@ export const standardsFileSchema = z
       .describe("The full set of 14 ISO/IEC standards defined by §11."),
   })
   .describe(
-    "The full contents of `data/standards.json`: the 14 ISO/IEC standards " +
+    "The full contents of `data/osn/standards.json`: the 14 ISO/IEC standards " +
       "and the §11 preamble, with their corpus provenance.",
   );
 

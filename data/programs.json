@@ -1,0 +1,12 @@
+{
+  "programs": [
+    {
+      "id": "osn",
+      "name": "Silabus Operasional Pembinaan OSN Informatika 2026",
+      "sourceDocument": "docs/Silabus_Operasional_OSN_Informatika_2026_Siap_Pakai_AhliKoding_AhliWeb.pdf",
+      "syllabusVersion": "2.0",
+      "syllabusDate": "2026-09-04",
+      "corpusDir": "data/osn"
+    }
+  ]
+}

@@ -24,7 +24,7 @@ corpus. A syllabus check is the one control that catches that drift.
 ## Official sources to check
 
 The five official sources this corpus's own reference register
-(`data/references.json`, §99) names for OSN and IOI:
+(`data/osn/references.json`, §99) names for OSN and IOI:
 
 | Ref | Title | URL |
 | --- | --- | --- |
@@ -34,8 +34,8 @@ The five official sources this corpus's own reference register
 | **R7** | Official Syllabus page (IOI) | https://ioinformatics.org/page/syllabus/12 |
 | **R8** | IOI Syllabus 2025 (official PDF available at time of review) | https://ioinformatics.org/files/ioi-syllabus-2025.pdf |
 
-These URLs are read live from `data/references.json` above (do not
-hard-code them in a checklist or script -- if `data/references.json`'s
+These URLs are read live from `data/osn/references.json` above (do not
+hard-code them in a checklist or script -- if `data/osn/references.json`'s
 own URL for one of these refs is ever corrected, that correction should
 be the single source of truth, and this table should be regenerated from
 it, not maintained as a second independent copy). `osn checklist`'s
@@ -68,11 +68,11 @@ that a fresh check is due, rather than relying on the previous entry.
 For each of the five sources above:
 
 1. Open the source's URL (from the table above, sourced from
-   `data/references.json`) and read its current syllabus content.
+   `data/osn/references.json`) and read its current syllabus content.
 2. Compare it against the corresponding section(s) of this repository's
    curriculum corpus (topic families, competition-stage formats,
    problem-taxonomy vocabulary, and anything else transcribed from that
-   source -- see `data/source-priority.json`, §12, for which sources this
+   source -- see `data/osn/source-priority.json`, §12, for which sources this
    corpus treats as authoritative for which content).
 3. Note any difference: a changed topic, a changed contest format detail,
    a changed date, a changed URL, or a source that has moved/gone dark.
@@ -85,7 +85,7 @@ does and does not do" below).
 ## How to record the outcome
 
 Append (never rewrite in place) a new entry to
-`data/syllabus-check-log.json`'s `checks` array:
+`data/osn/syllabus-check-log.json`'s `checks` array:
 
 ```json
 {
@@ -123,7 +123,7 @@ Validate the result:
 osn validate
 ```
 
-`data/syllabus-check-log.json` is registered in `DATA_FILE_REGISTRY`
+`data/osn/syllabus-check-log.json` is registered in `DATA_FILE_REGISTRY`
 (`src/domain/corpus-audit.ts`) and checked for schema conformance (every
 entry has a real `checkedOn`, a non-empty `sources` list of valid
 citation refs, a valid `outcome`) and the structural invariant that the
@@ -134,14 +134,14 @@ log itself is never empty.
 - **`osn checklist`** reads and reports the *latest already-recorded*
   syllabus-check entry (date, outcome, sources, days since) -- it does
   not perform a live check itself.
-- **`osn validate`** confirms `data/syllabus-check-log.json` is
+- **`osn validate`** confirms `data/osn/syllabus-check-log.json` is
   well-formed and non-empty -- it does not confirm the entries it
   contains are truthful or that a live check actually happened.
 - **No command in this repository has network access** and none ever
   fetches an external URL. The actual comparison against a live source
   (steps 1-2 above) is, and remains, a human procedure. Any future
   automation of part of this check must still record its result through
-  the same `data/syllabus-check-log.json` entry shape, and must not
+  the same `data/osn/syllabus-check-log.json` entry shape, and must not
   claim a broader check happened than what it actually automated.
 
 ## When a change is detected: the flow to a changeset and a changelog entry
@@ -159,7 +159,7 @@ detail on each step):
    Board row: "validator syllabus resmi") -- the syllabus check surfaces
    the difference; the Curriculum Board decides how the corpus is
    updated in response.
-3. **Update the affected `data/*.json` file(s)** and their
+3. **Update the affected `data/<program>/*.json` file(s)** and their
    `syllabusVersion`/`syllabusDate` provenance fields, per the approved
    change.
 4. **Add a changeset** (`bun run changeset`) describing the change, per
@@ -174,7 +174,7 @@ detail on each step):
    structure, the ten topic families, the phase gates, or the assessment
    weights, each of which is `major`).
 6. **Confirm `osn validate` still passes** against the updated corpus,
-   including the updated `data/syllabus-check-log.json` entry.
+   including the updated `data/osn/syllabus-check-log.json` entry.
 
 `outcome: "no-change"` skips steps 1-3 entirely -- only the log entry
 itself is added.

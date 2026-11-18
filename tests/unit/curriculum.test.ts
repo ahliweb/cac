@@ -1,7 +1,7 @@
 /**
  * Tests for the week/gate schemas (`src/schema/week.ts`, `src/schema/gate.ts`)
  * and the typed loader/lookup helpers over the real corpus
- * (`src/domain/curriculum.ts`, `data/weeks.json`, `data/gates.json`).
+ * (`src/domain/curriculum.ts`, `data/osn/weeks.json`, `data/osn/gates.json`).
  *
  * Malformed-input fixtures are constructed inline against the schemas; the
  * real data files under `data/` are never mutated by these tests.
@@ -27,7 +27,7 @@ const GATE_WEEKS = [4, 8, 12, 16, 20, 24, 28] as const;
 const MINI_CONTEST_WEEKS = [8, 16, 20] as const;
 const NULL_PROBLEM_LOAD_WEEKS = [25, 26, 27, 28] as const;
 
-describe("data/weeks.json (via src/domain/curriculum.ts)", () => {
+describe("data/osn/weeks.json (via src/domain/curriculum.ts)", () => {
   test("the real data file parses through the schema without error", () => {
     expect(() => listWeeks()).not.toThrow();
   });
@@ -147,7 +147,7 @@ describe("weeksForTopicFamily", () => {
   });
 });
 
-describe("data/gates.json (via src/domain/curriculum.ts)", () => {
+describe("data/osn/gates.json (via src/domain/curriculum.ts)", () => {
   test("the real data file parses through the schema without error", () => {
     expect(() => listGates()).not.toThrow();
   });

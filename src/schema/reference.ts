@@ -1,7 +1,7 @@
 /**
  * Zod schema for a single citation reference (R1-R41) into the "Daftar
  * Referensi" of `docs/silabus/99-referensi.md`, plus the whole-file wrapper
- * for `data/references.json`.
+ * for `data/osn/references.json`.
  *
  * Per the layering rules in `docs/architecture/README.md`, this module must
  * never import from `src/domain/`.
@@ -110,7 +110,7 @@ export const referenceSchema = z
 export type Reference = z.infer<typeof referenceSchema>;
 
 /**
- * The whole `data/references.json` file: all 41 references plus the
+ * The whole `data/osn/references.json` file: all 41 references plus the
  * provenance fields (`syllabusVersion`, `syllabusDate`, `sourceSection`)
  * that let the corpus carry its own versioning, per ADR-0005.
  */
@@ -132,7 +132,7 @@ export const referencesFileSchema = z
       .describe("The full set of 41 references (R1-R41) defined by §99."),
   })
   .describe(
-    "The full contents of `data/references.json`: all 41 references, with " +
+    "The full contents of `data/osn/references.json`: all 41 references, with " +
       "their corpus provenance.",
   );
 

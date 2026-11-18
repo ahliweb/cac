@@ -3,7 +3,7 @@
  * one of the seven worked, directly executable operational playbooks
  * defined across §7.1-§7.7 of the syllabus corpus
  * (`docs/silabus/07-contoh-implementasi.md`), plus the whole-file wrapper
- * for `data/playbooks.json`.
+ * for `data/osn/playbooks.json`.
  *
  * Per the layering rules in `docs/architecture/README.md`, this module must
  * never import from `src/domain/`. This module owns the *transcription* of
@@ -86,7 +86,7 @@ export const playbookSchema = z
 export type Playbook = z.infer<typeof playbookSchema>;
 
 /**
- * The whole `data/playbooks.json` file: the seven §7 decision playbooks
+ * The whole `data/osn/playbooks.json` file: the seven §7 decision playbooks
  * plus the provenance fields (`syllabusVersion`, `syllabusDate`,
  * `sourceSection`) that let the corpus carry its own versioning, per
  * ADR-0005.
@@ -136,7 +136,7 @@ export const playbooksFileSchema = z
     }
   })
   .describe(
-    "The full contents of `data/playbooks.json`: the seven §7 decision " +
+    "The full contents of `data/osn/playbooks.json`: the seven §7 decision " +
       "playbooks, with their corpus provenance.",
   );
 

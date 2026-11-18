@@ -1,7 +1,7 @@
 /**
  * Fidelity check for issue #25: proves every verbatim-Indonesian field in
- * `data/readiness-checklist.json` (the §14.1 items) and
- * `data/operational-rules.json` (the §14.2 rules and the mentor
+ * `data/osn/readiness-checklist.json` (the §14.1 items) and
+ * `data/osn/operational-rules.json` (the §14.2 rules and the mentor
  * quick-pointer callout) is byte-identical to the corresponding line of
  * `docs/silabus/14-checklist-dan-aturan-operasional.md` -- the source
  * document those two data files were transcribed from.
@@ -22,8 +22,8 @@ import { join } from "node:path";
 
 const REPO_ROOT = join(import.meta.dir, "..");
 const SOURCE_MD_PATH = join(REPO_ROOT, "docs", "silabus", "14-checklist-dan-aturan-operasional.md");
-const READINESS_JSON_PATH = join(REPO_ROOT, "data", "readiness-checklist.json");
-const OPERATIONAL_RULES_JSON_PATH = join(REPO_ROOT, "data", "operational-rules.json");
+const READINESS_JSON_PATH = join(REPO_ROOT, "data", "osn", "readiness-checklist.json");
+const OPERATIONAL_RULES_JSON_PATH = join(REPO_ROOT, "data", "osn", "operational-rules.json");
 
 interface ReadinessItem {
   readonly id: string;

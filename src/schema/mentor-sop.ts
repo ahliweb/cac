@@ -2,7 +2,7 @@
  * Zod schema for the seven-step mentor SOP ("SOP pengajaran setiap
  * algoritma/struktur data") defined in §5.2 of the syllabus corpus
  * (`docs/silabus/05-format-pembelajaran-dan-sop.md`), plus the whole-file
- * wrapper for `data/mentor-sop.json`.
+ * wrapper for `data/osn/mentor-sop.json`.
  *
  * Per the layering rules in `docs/architecture/README.md`, this module must
  * never import from `src/domain/`.
@@ -48,7 +48,7 @@ export const sopStepSchema = z
 export type SopStep = z.infer<typeof sopStepSchema>;
 
 /**
- * The whole `data/mentor-sop.json` file: the seven ordered §5.2 SOP steps,
+ * The whole `data/osn/mentor-sop.json` file: the seven ordered §5.2 SOP steps,
  * step 6's minimum-test checklist, step 7's post-Accepted questions, plus
  * the provenance fields (`syllabusVersion`, `syllabusDate`,
  * `sourceSection`) that let the corpus carry its own versioning, per
@@ -112,7 +112,7 @@ export const mentorSopFileSchema = z
     }
   })
   .describe(
-    "The full contents of `data/mentor-sop.json`: the seven ordered §5.2 " +
+    "The full contents of `data/osn/mentor-sop.json`: the seven ordered §5.2 " +
       "SOP steps, step 6's minimum test checklist, step 7's post-Accepted " +
       "questions, with their corpus provenance.",
   );

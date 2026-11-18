@@ -1,5 +1,5 @@
 /**
- * Typed loader and lookup helpers over `data/topic-families.json`, the ten
+ * Typed loader and lookup helpers over `data/osn/topic-families.json`, the ten
  * official topic families ("rumpun materi resmi") defined in §2.1 of the
  * syllabus corpus.
  *
@@ -14,7 +14,7 @@
 // filesystem read, no async loader, and Bun/tsc both resolve it at build
 // time. The value is `unknown` as far as validity is concerned; it is
 // still parsed through the schema below before anything trusts its shape.
-import rawTopicFamilies from "../../data/topic-families.json";
+import rawTopicFamilies from "../../data/osn/topic-families.json";
 import { parseDataFile } from "../schema/common";
 import {
   type TopicFamiliesFile,
@@ -22,10 +22,10 @@ import {
   topicFamiliesSchema,
 } from "../schema/topic-family";
 
-const SOURCE_NAME = "data/topic-families.json";
+const SOURCE_NAME = "data/osn/topic-families.json";
 
 /**
- * The validated contents of `data/topic-families.json`, parsed once at
+ * The validated contents of `data/osn/topic-families.json`, parsed once at
  * module load. Throws {@link CorpusValidationError} if the file does not
  * match {@link topicFamiliesSchema}.
  */

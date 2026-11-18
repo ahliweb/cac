@@ -391,7 +391,7 @@ describe("docs/architecture/data-classification.md matches LEARNING_RECORD_CLASS
 });
 
 describe("no file under data/ contains any denylisted identifier key", () => {
-  const dataDir = join(import.meta.dir, "..", "..", "data");
+  const dataDir = join(import.meta.dir, "..", "..", "data", "osn");
   const jsonFiles = readdirSync(dataDir).filter((name) => name.endsWith(".json"));
 
   /**
@@ -402,7 +402,7 @@ describe("no file under data/ contains any denylisted identifier key", () => {
    * every one of them landed by earlier issues, #9-#14, well before this
    * denylist existed) legitimately carries a `"name"` field for the
    * *entity's* printed name, e.g. `{ "id": "osn-k", "name": "OSN-K" }` in
-   * `data/competition-stages.json`. None of it is a person's name, and
+   * `data/osn/competition-stages.json`. None of it is a person's name, and
    * modifying those pre-existing files is out of scope for this issue.
    * Every OTHER denylisted term -- nama, email, phone/telepon, nik, nisn,
    * school/sekolah, address/alamat, birthdate/tanggalLahir, dob,

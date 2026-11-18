@@ -1,4 +1,4 @@
-# osn-informatika-2026
+# kurikulum-informatika
 
 Curriculum-as-code for the **Silabus Operasional Pembinaan OSN Informatika
 2026** (v2.0, 4 September 2026): a typed, validated, versioned
@@ -52,7 +52,8 @@ bun test
 | `src/cli/` | The `osn` CLI's command handlers (`validate`, `plan`, `render`, `report`, `privacy-check`, `checklist`) and dispatcher. |
 | `src/render/` | Pure functions that turn domain data into mentor-facing Markdown artefacts (weekly plan, checkpoint sheet, SOP card, checklist). |
 | `src/index.ts` | Package entrypoint, built by `bun run build` into `dist/`. |
-| `data/` | The curriculum corpus: 22 schema-validated JSON files (topic families, weeks, gates, references, assessment model, KPI definitions, playbooks, and more). |
+| `data/programs.json` | The programme registry (ADR-0006): one entry per programme, validated by `src/schema/program.ts`. |
+| `data/osn/` | The OSN programme corpus: 22 schema-validated JSON files (topic families, weeks, gates, references, assessment model, KPI definitions, playbooks, and more) plus `samples/` (synthetic learning records). |
 | `tests/unit/` | Fast, isolated tests, one module at a time. |
 | `tests/integration/` | Cross-module tests (requirements-register verification, full-corpus and CLI end-to-end tests). |
 | `docs/development/` | Engineering process docs: testing, CI/CD, releasing. |
@@ -88,10 +89,10 @@ test`). This table matches `package.json` exactly.
 | `bun test` | `bun test` | Full test suite. |
 | `bun run test:coverage` | `bun test --coverage` | Enforces the coverage gate in `bunfig.toml` (see `docs/development/testing.md`). |
 | `bun run build` | `bun build ./src/index.ts --outdir dist --target bun` | — |
-| `bun run validate` | `osn validate` | Validates every `data/*.json` file (schema, structural invariants, referential integrity). Exits 0 clean / 1 on any finding. See `docs/cli/README.md`. |
+| `bun run validate` | `osn validate` | Validates `data/programs.json` and the corpus of every registered programme (or one, with `--program <id>`): schema, structural invariants, referential integrity, registry version agreement. Exits 0 clean / 1 on any finding. See `docs/cli/README.md`. |
 | `bun run privacy-check` | `osn privacy-check` | Recursively scans `data/` for direct-identifier-shaped keys (GR-04). Exits 0 clean / 1 on any finding. See `docs/cli/README.md`. |
 | `bun run check:requirements` | `bun run scripts/check-requirements.ts` | Verifies `docs/requirements/register.md` and `traceability.md` are internally consistent and exhaustive. |
-| `bun run check:checklist-fidelity` | `bun run scripts/check-checklist-fidelity.ts` | Verifies the §14.1/§14.2 data in `data/` matches the source syllabus verbatim. |
+| `bun run check:checklist-fidelity` | `bun run scripts/check-checklist-fidelity.ts` | Verifies the §14.1/§14.2 data in `data/osn/` matches the source syllabus verbatim. |
 | `bun run changeset` | `changeset` | Interactive changeset creation. See `docs/development/releasing.md`. |
 | `bun run version` | `changeset version` | Consumes changesets into `CHANGELOG.md` and bumps `package.json` version. |
 
