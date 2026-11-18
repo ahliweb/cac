@@ -74,7 +74,7 @@ Catatan dari Panduan yang relevan:
 | --- | --- | --- |
 | Elemen Informatika | Empat elemen mata pelajaran (BK, LD, Analisis Data, Algoritma dan Pemrograman); Fase D memuat dua elemen pertama | Bagian B (deskripsi elemen) dan B.d |
 | Pemrograman di Fase D | Materi esensial "(4) Dasar pemrograman": "Kreasi Solusi Tertulis", "Instruksi prosedural" dengan "Kosa kata terbatas", "simbol (visual programming)", "teks (pseudocode)" | Bagian C, Fase D |
-| Proyek mini Fase D | Murid merancang solusi berbasis teknologi sederhana "melalui kegiatan unplugged (menyusun kartu) atau dengan memanfaatkan software pembuat aplikasi (scratch, blocky atau bahasa pemrograman berbasis blok lainnya) jika tersedia" | Bagian C, penjelasan materi 1 |
+| Proyek mini Fase D | Murid merancang solusi berbasis teknologi sederhana "melalui kegiatan secara unplugged (menyusun kartu) atau dengan memanfaatkan software pembuat aplikasi (scratch, blocky atau bahasa pemrograman berbasis blok lainnya) jika tersedia" | Bagian C, penjelasan materi 1 |
 | Materi data | Himpunan data terstruktur: bervolume kecil, daftar, antrian, tumpukan, pohon, graf; lembar kerja: baris, kolom, sel, pengalamatan absolut dan relatif, pengurutan, penyaringan, peringkasan | Bagian C, Fase D |
 | Beban per elemen | "beban belajar yang dialokasi pada setiap elemen ... tidak harus sama" | Bagian B.c |
 | Alur tujuan (contoh) | Tujuan pembelajaran 1.1-1.5 (BK) dan 2.1-2.17 (LD) dibagi ke kelas VII, VIII, dan IX | Bagian D.2 (halaman cetak 85-87) |
