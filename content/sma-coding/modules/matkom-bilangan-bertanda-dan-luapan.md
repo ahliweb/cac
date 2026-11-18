@@ -15,6 +15,16 @@ Setelah mempelajari modul ini, kamu diharapkan bisa:
 
 Bagian pokok dapat dikerjakan di kertas. Contoh kode opsional: contoh C++17 hanya diperiksa bisa dikompilasi, contoh TypeScript diperiksa penyusun secara manual dengan menjalankannya. Keduanya bukan bukti kebenaran untuk semua masukan.
 
+## Ingat kembali
+
+Jawab dari ingatan, tanpa membuka modul sebelumnya (`matkom-sistem-bilangan-basis`). Cocokkan di bagian kunci.
+
+1. Ubah 217 ke biner dengan bagi berulang. Dari ujung mana sisa dibaca?
+2. Ubah `3E8` (heksadesimal) ke biner tanpa lewat desimal.
+3. Hitung `1011₂ + 110₂` dan cek dalam desimal.
+4. Mengapa 0,1 desimal tidak punya bentuk biner yang berhenti?
+5. Berapa banyak pola berbeda pada n bit?
+
 ## Ulasan singkat
 
 Kamu sudah tahu bahwa n bit membentuk 2^n pola dan bahwa bilangan tak negatif ditulis dengan nilai tempat basis 2. Pertanyaan baru di sini: bagaimana menyimpan bilangan **negatif** hanya dengan nol dan satu, dan apa yang terjadi bila hasil hitung tidak muat.
@@ -109,6 +119,8 @@ Pertanyaan yang dapat kamu tanyakan sebelum memilih tipe: berapa nilai terbesar 
 
 Pada tipe bertanda, periksa dulu apakah penjumlahan muat.
 
+**Prediksi dulu.** Sebelum membaca komentar keluaran, tulis tebakanmu untuk empat baris yang dicetak program ini: (1) hasil `uint8_t` 200 + 100, (2) apakah 2147483647 + 1 muat pada `int`, (3) apakah 100 + 200 muat, (4) apakah `0.1 + 0.2 == 0.3` benar dan apakah selisihnya lebih kecil dari `1e-9`.
+
 ```cpp
 #include <climits>
 #include <cstdint>
@@ -182,7 +194,7 @@ Tulis rentang bilangan bertanda pada 12 bit dan pada 16 bit.
 
 ### Latihan 4: Melilit
 
-Pada 8 bit bertanda, berapa hasil tersimpan untuk 127 + 1, dan untuk -128 - 1? Jelaskan dengan gagasan odometer.
+Pada penyimpanan 8 bit bertanda (misalnya hasil hitung yang disimpan ke `int8_t`), berapa hasil tersimpan untuk 127 + 1, dan untuk -128 - 1? Jelaskan dengan gagasan odometer. Catatan: ini menggambarkan pola bit pada 8 bit. Di C++, hitungan pada `int` yang melebihi rentang `int` adalah perilaku tak terdefinisi; melilit adalah aturan baku hanya untuk tipe tak bertanda.
 
 ### Latihan 5: Memilih tipe
 
@@ -213,6 +225,39 @@ int main() {
 }
 ```
 
+### Latihan 8: Susun langkah (soal Parsons)
+
+Langkah membuat -x dari x (8 bit) berikut tercampur. Susun, lalu terapkan untuk x = 20.
+
+```text
+(a) tambah 1 pada hasilnya
+(b) tulis x dalam biner 8 bit
+(c) cek: jumlahkan dengan x, hasilnya harus 0 setelah bit ke-9 dibuang
+(d) balik semua bit (0 jadi 1, 1 jadi 0)
+```
+
+### Latihan 9: Lengkapi kode (soal setengah jadi)
+
+Lengkapi pemeriksaan sebelum menjumlah pada tipe `int` bila `b` negatif:
+
+```text
+if (b < 0 && a < ____ - b) {
+    return false;  // tidak muat
+}
+```
+
+### Latihan bercampur dan ulang berjarak
+
+Kerjakan tanpa melihat catatan.
+
+1. Tulis -64 dan -1 dalam komplemen dua 8 bit. Cek dengan penjumlahan.
+2. Ubah `0,0111₂` ke desimal. (dari modul sebelumnya)
+3. Sebuah penghitung `uint8_t` menyimpan nilai 250 lalu ditambah 10. Berapa hasilnya? Apa bedanya bila penghitung itu `int` bertanda 32 bit?
+4. Jelaskan dengan kata-katamu mengapa memeriksa luapan sesudah menjumlah pada `int` tidak dapat diandalkan di C++. (Penjelasan diri.)
+5. Mengapa uang sebaiknya disimpan sebagai bilangan bulat dalam satuan terkecil, bukan `double`?
+
+Jadwal ulang: jawab lagi tanpa catatan setelah satu hari dan setelah satu minggu; ganti angkanya. Soal serupa muncul lagi di awal modul teks, gambar, dan suara.
+
 ### Kunci singkat
 
 - Latihan 1: -37 = `11011011`; -100: 100 = `01100100`, balik `10011011`, tambah 1 menjadi `10011100`. Cek: -128 + 16 + 8 + 4 = -100.
@@ -222,6 +267,10 @@ int main() {
 - Latihan 5: jumlah maksimum 5.000.000.000, melebihi 2.147.483.647, sehingga tidak muat; pakai 64 bit.
 - Latihan 6: 0,1 dan 0,2 tidak punya bentuk biner berhingga sehingga tersimpan terbulatkan, sedangkan 0,5, 0,25, 0,75 adalah pecahan dengan penyebut pangkat dua. Bandingkan dengan `abs(a - b) < 1e-9`.
 - Latihan 7: luapan pada tipe `int` bertanda adalah perilaku tak terdefinisi, sehingga pemeriksaan sesudahnya tidak dijamin; kompiler bahkan boleh menganggapnya tidak pernah terjadi. Perbaikan: hitung dengan `long long`, atau periksa dulu seperti `a > INT_MAX - b`.
+- Latihan 8: urutan (b), (d), (a), (c). Untuk 20: `00010100`, balik `11101011`, tambah 1 menjadi `11101100` = -20 (cocok dengan Latihan 2: `11101100` bertanda = -20). Cek: `00010100 + 11101100 = 1 00000000`. Bila urutanmu beda, ingat bahwa menambah 1 harus sesudah membalik; bila terbalik, hasilnya hanya komplemen satu.
+- Latihan 9: `INT_MIN`. Alasan: `INT_MIN - b` dengan `b` negatif tidak meluap, sedangkan `a < INT_MIN - b` berarti `a + b` akan lebih kecil dari `INT_MIN`. Bila kamu menulis `INT_MAX`, telusuri `a = -5, b = -3`.
+- Ingat kembali: 1: `11011001`; sisa dibaca dari yang terakhir ke yang pertama. 2: `0011 1110 1000`. 3: `1011₂ + 110₂ = 10001₂` (11 + 6 = 17). 4: penyebut 10 punya faktor 5, bukan hanya pangkat dua. 5: 2^n. Bila ada yang salah, baca ulang bagian itu di modul sebelumnya lalu jawab lagi besok.
+- Latihan bercampur: 1: -64 = `11000000` (64 = `01000000`, balik `10111111`, tambah 1); -1 = `11111111`; cek: 64 + (-64) = 0. 2: 0,0111₂ = 1/4 + 1/8 + 1/16 = 7/16 = 0,4375. 3: 260 - 256 = 4 pada `uint8_t`; pada `int` 32 bit hasilnya 260. 4: luapan `int` bertanda adalah perilaku tak terdefinisi, jadi kompiler tidak wajib menghasilkan nilai yang melilit dan boleh mengoptimalkan pemeriksaan itu; periksa dulu atau pakai tipe lebih besar. 5: `double` tidak persis menyimpan pecahan seperti 0,1; bilangan bulat dalam satuan terkecil persis.
 
 ## Kesalahan umum
 

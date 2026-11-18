@@ -14,6 +14,15 @@ Cara memakai: baca penjelasan, lakukan kegiatan simulasi bersama temanmu, isi le
 
 Catatan keselamatan: modul ini tidak meminta kamu membongkar komputer yang masih dipakai. Mengenali komponen cukup lewat foto, gambar, atau komponen bekas yang disiapkan guru (kegiatan itu opsional).
 
+## Ingat kembali
+
+Ini modul pertama, jadi pertanyaannya mengambil dari pengalamanmu sendiri. Jawab tanpa mencari di mana pun; menebak boleh dan tidak dinilai. Jawabanmu dicocokkan di bagian kunci.
+
+1. Sebutkan tiga perangkat yang menurutmu termasuk komputer.
+2. Apa yang terjadi pada tulisan yang belum disimpan bila listrik tiba-tiba mati? Mengapa?
+3. Menurutmu, apa beda "menyimpan" dan "membuka" sebuah berkas?
+4. Tuliskan urutan langkah membuat teh manis, satu langkah per baris, sedetail mungkin.
+
 ## Apa itu komputer?
 
 Komputer adalah mesin yang menerima data (masukan), mengolahnya sesuai instruksi (proses), lalu menghasilkan hasil (keluaran). Ponsel, laptop, dan mesin kasir adalah komputer. Karena ketiganya mengikuti pola yang sama, kita belajar polanya dulu.
@@ -46,15 +55,20 @@ Contoh sehari-hari:
 Dua hal yang sering tertukar:
 
 - **Memori dan penyimpanan itu berbeda.** Memori cepat tetapi sementara; penyimpanan lebih lambat tetapi tetap. Saat kamu membuka sebuah berkas, salinannya dimuat dari penyimpanan ke memori.
-- **Ukuran.** Satuan data dibahas di modul representasi data. Untuk sekarang: 1 byte menyimpan satu karakter teks sederhana, 1 KB = 1024 byte, dan 1 MB = 1024 KB.
+- **Ukuran.** Satuan data dibahas di modul representasi data. Untuk sekarang: 1 byte menyimpan satu karakter teks sederhana, 1 KB = 1024 byte, dan 1 MB = 1024 KB. (Sebagian pihak memakai 1 KB = 1000 byte; perbedaannya dijelaskan di modul representasi data.)
 
 ## Model komputer Von Neumann
 
 Hampir semua komputer modern mengikuti rancangan yang dikemukakan John von Neumann pada pertengahan abad ke-20. Gagasan pentingnya: **program (kumpulan instruksi) disimpan di memori yang sama dengan data.** CPU mengambil instruksi dari memori satu per satu, lalu menjalankannya.
 
 ```text
- [Masukan] --> [ CPU ] <--> [ Memori: instruksi + data ] --> [Keluaran]
+ [Masukan] --> [ CPU ] <--> [ Memori: instruksi + data ]
+                  |
+                  v
+              [Keluaran]
 ```
+
+Pada model dasar ini masukan dan keluaran berhubungan lewat CPU. Komputer modern punya jalur tambahan, tetapi gambar ini cukup untuk memahami gagasannya.
 
 CPU mengulang siklus sederhana berikut (disebut siklus ambil-jalankan):
 
@@ -64,6 +78,8 @@ CPU mengulang siklus sederhana berikut (disebut siklus ambil-jalankan):
 3. JALANKAN: kerjakan (hitung, pindahkan data, terima masukan, atau kirim keluaran).
 4. ULANGI  : lanjut ke instruksi berikutnya.
 ```
+
+Ini model sederhana. CPU modern punya beberapa inti dan mengerjakan banyak hal hampir bersamaan, tetapi gagasan dasarnya tetap siklus ini. Model seperti ini disebut **mesin konseptual** (*notional machine*): penyederhanaan yang kita pakai untuk menalar apa yang dilakukan komputer.
 
 Di CPU ada satu tempat kecil yang menyimpan hasil hitungan sementara. Pada simulasi di bawah kita sebut **Akumulator**.
 
@@ -108,6 +124,8 @@ Kartu 5: CETAK
 Kartu 6: BERHENTI
 ```
 
+**Prediksi dulu.** Sebelum membaca jejak di bawah, tutup tabelnya dan tebak: apa keluaran program ini untuk masukan `3, 4`? Tulis tebakanmu dan satu alasan. Lalu cocokkan dengan jejak.
+
 Jejak yang benar:
 
 | Langkah | Kartu | Akumulator | M1 | Keluaran |
@@ -120,6 +138,8 @@ Jejak yang benar:
 | 6 | BERHENTI | 7 | 3 | 7 |
 
 Perhatikan tiga hal: (1) setiap kartu dijalankan berurutan; (2) memori menjaga nilai 3 agar tidak hilang ketika Akumulator berganti isi; (3) hasil baru terlihat ketika kartu CETAK dijalankan.
+
+Catatan tentang model: dalam simulasi, kartu program ditaruh di meja supaya mudah diambil satu per satu. Pada komputer Von Neumann sungguhan, instruksi juga disimpan di memori, sama seperti data. Itu perbedaan antara simulasi dan kenyataan.
 
 Langkah kegiatan:
 
@@ -206,6 +226,32 @@ Kelompokkan sebagai masukan atau keluaran: papan ketik, layar, mikrofon, pengera
 
 Gambar diagram I-P-O untuk "mesin kasir sekolah fiktif". Beri keterangan: apa masukannya, apa yang dihitung, apa keluarannya. Hasil gambar ini adalah keluaran minggu ini (diagram I-P-O beranotasi).
 
+### Latihan 7: Susun kartu (soal Parsons)
+
+Enam kartu berikut tercampur urutannya. Susun menjadi program yang membaca dua angka lalu mencetak jumlahnya. Tiap kartu dipakai tepat satu kali.
+
+```text
+CETAK
+TAMBAH M1
+BACA
+BERHENTI
+SIMPAN M1
+BACA
+```
+
+Setelah menyusun, jalankan programmu pada masukan `6, 7` dengan tabel jejak.
+
+## Latihan bercampur dan ulang berjarak
+
+Kerjakan tanpa melihat catatan. Soal serupa muncul lagi di awal modul berikutnya dan sebaiknya dikerjakan lagi seminggu kemudian; simpan jawabanmu untuk dibandingkan.
+
+1. Jejak program `BACA, SIMPAN M1, BACA, TAMBAH M1, TAMBAH M1, CETAK, BERHENTI` pada masukan `6, 1`. Berapa keluarannya?
+2. Dari komponen CPU, RAM, SSD, catu daya: mana yang isinya hilang bila listrik mati, dan mana yang tidak?
+3. Kelompokkan sebagai masukan atau keluaran: kamera, pencetak, layar sentuh.
+4. Jelaskan dengan kata-katamu sendiri, dalam tiga kalimat: mengapa program perlu disimpan di memori, bukan hanya di penyimpanan? (Penjelasan diri: sebut alasannya, bukan hanya fakta.)
+
+Jadwal ulang: jawab lagi tanpa catatan setelah satu hari, lalu setelah satu minggu. Ubah angka masukan pada soal 1 setiap kali.
+
 ## Kuis formatif
 
 Jawab tanpa melihat catatan. Kunci ada di bagian akhir.
@@ -249,6 +295,12 @@ Untuk `2, 3, 4`: M1 = 2, lalu Akumulator 3 + 2 = 5 disimpan ke M1, lalu 4 + 5 = 
 **Latihan 5.** Masukan: papan ketik, mikrofon, pemindai kode batang. Keluaran: layar, pengeras suara, pencetak. Layar sentuh keduanya (menerima sentuhan dan menampilkan gambar).
 
 **Latihan 6.** Contoh: masukan = barang yang dipindai dan harganya; proses = menjumlahkan harga; keluaran = total belanja di layar dan struk.
+
+**Latihan 7.** BACA, SIMPAN M1, BACA, TAMBAH M1, CETAK, BERHENTI. Untuk `6, 7`: Akumulator 6, M1 = 6, Akumulator 7, lalu 7 + 6 = 13, keluaran 13. Bila urutanmu beda: periksa dulu apakah ada angka yang dibaca dua kali sebelum disimpan (angka pertama hilang). Perbaiki dengan menaruh SIMPAN M1 tepat setelah BACA pertama, lalu jalankan ulang jejaknya.
+
+**Ingat kembali.** Jawaban bebas; yang dicari adalah gambaranmu sebelum belajar. Arah yang baik: (2) tulisan yang belum disimpan hilang karena masih di RAM; (4) urutan langkah yang berurutan dan jelas, itulah gagasan program. Bila langkahmu melompat (misalnya "campur" tanpa menyebut menuang air), tambahkan langkah yang hilang; komputer juga butuh langkah selengkap itu.
+
+**Latihan bercampur.** 1: Akumulator 6, M1 = 6, Akumulator 1, TAMBAH M1 menjadi 7, TAMBAH M1 menjadi 13; keluaran 13. 2: RAM hilang; SSD tidak; CPU tidak menyimpan program secara tetap; catu daya tidak menyimpan data. 3: kamera masukan, pencetak keluaran, layar sentuh keduanya. 4: contoh: CPU hanya mengambil instruksi dari memori yang cepat, sedangkan penyimpanan lebih lambat; saat dijalankan, program dimuat dulu ke memori. Bila penjelasanmu hanya mengulang fakta ("karena aturannya"), tulis ulang dengan kata "karena" dan satu akibat.
 
 **Kuis.**
 

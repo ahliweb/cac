@@ -16,6 +16,16 @@ Setelah mempelajari modul ini, kamu diharapkan bisa:
 
 Modul ini tentang **penalaran**. Cara kerja tumpukan panggilan (call stack) dan backtracking dibahas di modul OSN `rekursi`, bukan di sini. Contoh C++17 hanya diperiksa bisa dikompilasi, contoh TypeScript diperiksa penyusun secara manual dengan menjalankannya; keduanya bukan bukti benar untuk semua masukan. Bagian pokok dapat dikerjakan di kertas.
 
+## Ingat kembali
+
+Jawab dari ingatan, tanpa membuka modul `matkom-logika-proposisi` dan `matkom-himpunan-relasi-fungsi`. Cocokkan di bagian kunci.
+
+1. Kapan p → q salah, dan apa kontrapositifnya?
+2. Berapa banyak fungsi dari himpunan 3 anggota ke himpunan 2 anggota? Berapa yang satu-satu?
+3. Berapa banyak himpunan bagian dari himpunan dengan 4 anggota?
+4. Apa beda satu-satu dan pada?
+5. Dalam kata-kata, apa arti "untuk semua x berlaku P(x)", dan apa satu contoh tandingan?
+
 ## Barisan dan deret
 
 **Barisan** adalah daftar bilangan berurutan: a₁, a₂, a₃, ... Contoh: 2, 5, 8, 11, ... (selisih tetap 3).
@@ -144,6 +154,8 @@ Kode tidak membuktikan rumus; ia hanya memeriksa sejumlah nilai. Dua kegunaannya
 
 ### C++17: memeriksa rumus dan menghitung panggilan (opsional)
 
+**Prediksi dulu.** Sebelum membaca komentar keluaran, tulis tebakanmu untuk tiga baris yang dicetak: (1) apakah rumus jumlah benar untuk n = 1 sampai 20, (2) nilai `hanoi(5)`, (3) banyak panggilan `fib(10)`. Bila kamu ingat tabel hubungan rekurens di atas, pakai itu untuk (3).
+
 ```cpp
 #include <iostream>
 using namespace std;
@@ -257,6 +269,42 @@ Sebuah perulangan menghitung faktorial: `hasil = 1; untuk i dari 1 sampai n: has
 
 Gunakan C(0) = C(1) = 1 dan C(n) = C(n−1) + C(n−2) + 1 untuk menghitung C(6). Lalu cocokkan dengan 2 · Fₙ₊₁ − 1 dengan F₀ = 0, F₁ = 1. (Tebakan itu dapat dibuktikan dengan induksi; coba untuk tantangan.)
 
+### Latihan 8: Susun bukti (soal Parsons)
+
+Kalimat berikut adalah bagian bukti induksi untuk 1 + 2 + ... + n = n(n+1)/2, tetapi tercampur. Susun menjadi bukti yang runtut.
+
+```text
+(a) Hipotesis: andaikan 1 + 2 + ... + k = k(k+1)/2 untuk suatu k ≥ 1.
+(b) Kesimpulan: rumus benar untuk semua n ≥ 1.
+(c) Basis: untuk n = 1, ruas kiri 1 dan ruas kanan 1·2/2 = 1.
+(d) Langkah: 1 + ... + k + (k+1) = k(k+1)/2 + (k+1) = (k+1)(k+2)/2.
+```
+
+### Latihan 9: Lengkapi kode (soal setengah jadi)
+
+Lengkapi fungsi rekursif untuk menara Hanoi sesuai T(n) = 2T(n−1) + 1:
+
+```text
+long long hanoi(int n) {
+    if (n == ____) {
+        return 1;
+    }
+    return ____ * hanoi(n - 1) + ____;
+}
+```
+
+### Latihan bercampur dan ulang berjarak
+
+Kerjakan tanpa melihat catatan.
+
+1. Buktikan dengan induksi bahwa 1² + 2² + ... + n² = n(n+1)(2n+1)/6. Tuliskan basis, hipotesis, dan langkah.
+2. Himpunan dengan n anggota punya 2^n himpunan bagian. Buktikan dengan induksi bahwa 2^n > n untuk semua n ≥ 0 (petunjuk: 2^(k+1) = 2 · 2^k).
+3. Sebuah fungsi `f(n) = n + f(n-1)` tanpa kasus dasar dipanggil dengan n = 3. Apa yang salah, dan bagian bukti induksi apa yang hilang?
+4. Jelaskan dengan kata-katamu mengapa pemeriksaan 1.000 contoh bukan bukti. (Penjelasan diri.)
+5. Hitung C(7) dengan C(n) = C(n−1) + C(n−2) + 1, C(0) = C(1) = 1.
+
+Jadwal ulang: jawab lagi tanpa catatan setelah satu hari dan setelah satu minggu; ganti rumus pada soal 1. Soal serupa muncul lagi di awal modul pertumbuhan fungsi.
+
 ### Kunci singkat
 
 - Latihan 1: lihat Contoh 2; basis 1 = 1², hipotesis jumlah k suku = k², langkah k² + (2k+1) = (k+1)².
@@ -266,6 +314,10 @@ Gunakan C(0) = C(1) = 1 dan C(n) = C(n−1) + C(n−2) + 1 untuk menghitung C(6)
 - Latihan 5: basis salah (n = 1 memberi ruas kiri 1 tetapi ruas kanan 2). Langkah induksi saja tidak cukup; basis wajib benar.
 - Latihan 6: sebelum iterasi untuk i, hasil = (i−1)!. Awal i = 1: hasil = 1 = 0!. Setiap iterasi mengalikan i sehingga hasil = i!. Setelah i = n selesai, hasil = n!.
 - Latihan 7: C(6) = C(5) + C(4) + 1 = 15 + 9 + 1 = 25; 2 · F₇ − 1 = 2 · 13 − 1 = 25. Cocok.
+- Latihan 8: urutan (c), (a), (d), (b). Bila (d) kamu taruh sebelum (a), langkah memakai hipotesis yang belum diandaikan; bila (b) tidak terakhir, kesimpulan mendahului bukti.
+- Latihan 9: `1`, `2`, `1`. Telusuri `hanoi(2)`: 2 · hanoi(1) + 1 = 3. Bila hasilmu berbeda, periksa kasus dasar.
+- Ingat kembali: 1: salah hanya bila p benar dan q salah; kontrapositifnya ¬q → ¬p. 2: 2^3 = 8 fungsi; tidak ada yang satu-satu (3 anggota ke 2 anggota). 3: 2^4 = 16. 4: satu-satu: keluaran berbeda untuk masukan berbeda; pada: tiap anggota kodomain terpakai. 5: "tidak ada pelanggar"; contoh tandingan adalah satu x yang membuat P(x) salah. Bila ada yang salah, ulangi bagian itu di modul asalnya lalu jawab lagi besok.
+- Latihan bercampur: 1: basis n = 1: 1 = 1·2·3/6. Hipotesis: jumlah sampai k = k(k+1)(2k+1)/6. Langkah: tambah (k+1)²: k(k+1)(2k+1)/6 + (k+1)² = (k+1)(k(2k+1) + 6(k+1))/6 = (k+1)(2k² + 7k + 6)/6 = (k+1)(k+2)(2k+3)/6. 2: basis 2^0 = 1 > 0; langkah 2^(k+1) = 2 · 2^k > 2k ≥ k + 1 untuk k ≥ 1; untuk k = 0, 2^1 = 2 > 1 diperiksa langsung. 3: tidak ada kasus dasar sehingga rekursi tak berhenti; bagian basis yang hilang. 4: 1.000 contoh tidak meliputi tak terhingga n; contohnya n² + n + 41 yang gagal di n = 40. 5: C(7) = 25 + 15 + 1 = 41.
 
 ## Kesalahan umum
 

@@ -16,6 +16,16 @@ Setelah mempelajari modul ini, kamu diharapkan bisa:
 
 Bagian pokok dapat dikerjakan di kertas tanpa menulis kode. Contoh kode bersifat opsional. Contoh C++17 hanya diperiksa bisa dikompilasi, dan contoh TypeScript diperiksa penyusun secara manual dengan menjalankannya; keduanya tidak membuktikan benar untuk semua masukan.
 
+## Ingat kembali
+
+Jawab dari ingatan, tanpa membuka modul representasi data (`FND-X1-M3`). Cocokkan di bagian kunci.
+
+1. Berapa nilai terbesar yang muat pada 8 bit tanpa tanda minus, dan berapa banyak nilai berbeda?
+2. Ubah `00100101` ke desimal.
+3. Ubah 100 ke biner 8 bit.
+4. Satu simbol heksadesimal mewakili berapa bit?
+5. Tuliskan tiga langkah mengubah kode warna `#FF8000` menjadi tiga angka desimal R, G, B.
+
 ## Ulasan singkat
 
 Modul ini mengasumsikan kamu sudah pernah melihat bahwa komputer menyimpan data sebagai bit (0 atau 1), bahwa 8 bit membentuk satu byte, dan bahwa bilangan dapat ditulis dalam desimal, biner, atau heksadesimal. Di sini kita merapikan aturannya supaya berlaku untuk basis apa pun.
@@ -148,6 +158,8 @@ Hanya pecahan yang penyebutnya (setelah disederhanakan) pangkat dua, seperti 1/2
 
 Program ini mengubah bilangan bulat tak negatif ke basis 2 sampai 16 dengan cara bagi berulang, sama seperti tabel di atas.
 
+**Prediksi dulu.** Sebelum membaca komentar keluaran di dalam kode, baca fungsi `keBasis` dan tulis tebakanmu: apa tiga baris yang dicetak untuk `n = 217`? Telusuri satu putaran `while` dengan basis 2 di kertas untuk membantu.
+
 ```cpp
 #include <algorithm>
 #include <iostream>
@@ -230,6 +242,45 @@ Berapa bilangan berbeda yang dapat disimpan dalam 10 bit? Berapa angka heksadesi
 
 Tulis fungsi yang menerima teks biner (misalnya `"101101"`) dan mengembalikan nilai desimalnya tanpa memakai fungsi konversi bawaan. Petunjuk: telusuri dari kiri; tiap angka baru, kalikan hasil sementara dengan 2 lalu tambahkan angka itu.
 
+### Latihan 8: Susun program (soal Parsons)
+
+Baris fungsi `keBasis` berikut tercampur (bagian `if (n == 0)` dilewati). Susun menjadi badan fungsi yang benar. Tiap baris dipakai satu kali.
+
+```text
+(a) reverse(hasil.begin(), hasil.end());
+(b) hasil += angka[n % basis];
+(c) while (n > 0) {
+(d) n /= basis;
+(e) return hasil;
+(f) string hasil;
+(g) }
+```
+
+### Latihan 9: Lengkapi kode (soal setengah jadi)
+
+Lengkapi fungsi yang mengubah teks biner menjadi nilai (tanpa fungsi konversi bawaan), memakai gagasan dari Latihan 7:
+
+```text
+long long dariBiner(const string& teks) {
+    long long hasil = 0;
+    for (char c : teks) {
+        hasil = hasil * ____ + (c - '____');
+    }
+    return hasil;
+}
+```
+
+### Latihan bercampur dan ulang berjarak
+
+Kerjakan tanpa melihat catatan.
+
+1. Ubah `0b11010110` ke heksadesimal tanpa lewat desimal, lalu ke desimal. Selain itu, ubah 0,375 ke biner.
+2. Sebuah gambar 8x8 hitam-putih disimpan sebagai 8 byte. Satu baris bernilai `A5` heksadesimal; gambarlah baris itu (1 = hitam). (dari modul representasi data)
+3. Mengapa `0,1` desimal tidak punya bentuk biner yang berhenti, padahal `0,5` punya? Jelaskan dengan kata-katamu. (Penjelasan diri.)
+4. Temukan kesalahannya: murid fiktif menulis `1010 + 110 = 10010`. Cek dengan desimal: apa yang salah, dan berapa hasil yang benar?
+
+Jadwal ulang: jawab lagi tanpa catatan setelah satu hari dan setelah satu minggu; ganti angkanya. Soal serupa muncul lagi di awal modul bilangan bertanda.
+
 ### Kunci singkat
 
 - Latihan 1: (a) 45; (b) 3 x 64 + 6 x 8 + 4 = 244; (c) 2 x 16 + 15 = 47.
@@ -239,6 +290,10 @@ Tulis fungsi yang menerima teks biner (misalnya `"101101"`) dan mengembalikan ni
 - Latihan 5: `0,1101₂`. Untuk 0,3: tidak berhingga, karena 3/10 setelah disederhanakan punya faktor 5 pada penyebut, bukan hanya pangkat dua.
 - Latihan 6: 2^10 = 1024 bilangan (0 sampai 1023). Nilai terbesar 1023 = `3FF (basis 16)`, tiga angka.
 - Latihan 7: awalnya hasil 0; untuk `"101101"` hasil berturut-turut 1, 2, 5, 11, 22, 45.
+- Latihan 8: urutan (f), (c), (b), (d), (g), (a), (e). Bila `reverse` ditaruh di dalam perulangan, hasilnya kacau; bila `n /= basis` terlupa, perulangan tak berhenti. Jalankan urutanmu pada `n = 6`, basis 2 dengan tabel jejak untuk memeriksa.
+- Latihan 9: `hasil * 2 + (c - '0')`. Untuk `"101"`: 1, 2, 5. Bila hasilmu salah, telusuri `"11"` dulu dengan tabel jejak.
+- Ingat kembali: 1: 255; 256 nilai. 2: 37. 3: `01100100`. 4: 4 bit. 5: pisahkan `FF`, `80`, `00`; ubah tiap pasangan ke desimal (255, 128, 0). Bila ada yang salah, baca ulang bagian itu di modul `FND-X1-M3` lalu jawab lagi besok.
+- Latihan bercampur: 1: `11010110` = `D6` = 214; 0,375 = `0,011` (0,375 x 2 = 0,75 (0); 0,75 x 2 = 1,5 (1); 0,5 x 2 = 1,0 (1)). 2: `A5` = `10100101`, gambar `#.#..#.#`. 3: penyebut 10 punya faktor 5, bukan hanya pangkat dua, sehingga pembagian berulang tak pernah menghasilkan sisa nol; 0,5 = 1/2 berhenti. 4: `1010` = 10 dan `110` = 6, jumlahnya 16 = `10000`, sedangkan `10010` = 18; kolom kedua, ketiga, dan keempat dari kanan masing-masing menghasilkan simpanan 1, sehingga hasil akhirnya `10000`; murid itu menghentikan rantai simpanan lebih awal. Pelajaran: konversi balik ke desimal adalah cara menguji hasil.
 
 ## Kesalahan umum
 

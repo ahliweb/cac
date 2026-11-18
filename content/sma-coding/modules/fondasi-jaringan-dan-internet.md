@@ -19,6 +19,16 @@ Aturan keselamatan dan privasi untuk semua kegiatan:
 - Peta jaringan tidak memuat alamat, kata sandi, atau kredensial nyata sekolah.
 - Kegiatan utama modul ini berupa simulasi peran dan tidak butuh internet. Yang memakai perangkat lab atau internet ditandai opsional.
 
+## Ingat kembali
+
+Jawab dari ingatan, tanpa membuka modul representasi data (FND-X1-M3). Cocokkan di bagian kunci.
+
+1. Berapa bit dalam satu byte, dan berapa banyak nilai berbeda yang bisa disimpan satu byte?
+2. Ubah `00010100` ke desimal.
+3. Ubah 200 ke biner 8 bit.
+4. Satu simbol heksadesimal mewakili berapa bit?
+5. Teks `OK` disimpan sebagai angka apa saja (O = 79, K = 75)?
+
 ## Jaringan komputer
 
 Jaringan komputer adalah kumpulan perangkat yang saling terhubung untuk bertukar data.
@@ -53,7 +63,7 @@ Manusia lebih mudah mengingat nama seperti `contoh.example` daripada angka. **DN
 
 ### HTTP dan HTTPS
 
-**HTTP** adalah aturan (protokol) peramban untuk meminta halaman web dan server untuk mengirimkannya. **HTTPS** adalah HTTP yang dienkripsi, sehingga isi yang dikirim sulit dibaca pihak lain di tengah jalan. Peramban menandai alamat HTTPS dengan gembok atau tanda serupa.
+**HTTP** adalah aturan (protokol) peramban untuk meminta halaman web dan server untuk mengirimkannya. **HTTPS** adalah HTTP yang dienkripsi, sehingga isi yang dikirim sulit dibaca pihak lain di tengah jalan. Peramban menandai alamat HTTPS dengan ikon di bilah alamat; bentuk ikonnya berbeda antarperamban dan antarversi (dulu umumnya gembok). Yang paling pasti terlihat adalah alamat yang berawalan `https://`.
 
 ### Bagaimana halaman web sampai ke peramban?
 
@@ -124,6 +134,8 @@ Aturan emas: kerjakan berurutan; bila satu tahap gagal, perbaiki dulu sebelum la
 
 `ping` mengirim paket kecil ke sebuah alamat dan menunggu balasan. Bila ada balasan, jalur menuju alamat itu bekerja.
 
+**Prediksi dulu.** Sebelum menjalankan `ping` ke `127.0.0.1`, tebak: apakah akan ada balasan walau komputer tidak tersambung ke jaringan apa pun? Tulis tebakan dan alasanmu.
+
 Uji komputer sendiri (aman dan tidak butuh internet):
 
 ```sh
@@ -150,7 +162,7 @@ ping -c 4 GATEWAY-LAB
 
 Catatan: sebagian perangkat sengaja tidak membalas ping. Tidak ada balasan belum tentu berarti rusak.
 
-Opsional dan hanya bila kebijakan sekolah mengizinkan akses internet: uji penerjemahan nama dengan `nslookup contoh.example` atau menguji alamat publik lain yang ditunjuk guru. Jangan melakukan uji ke alamat sembarang. Mengirim banyak paket ke pihak lain tanpa izin dapat dianggap gangguan.
+Opsional dan hanya bila kebijakan sekolah mengizinkan akses internet: uji penerjemahan nama dengan `nslookup example.com` (nama `example.com` disediakan untuk contoh dan memang punya alamat) atau menguji nama lain yang ditunjuk guru. Jangan memakai `nslookup contoh.example`: nama berakhiran `.example` sengaja tidak punya alamat di internet, sehingga selalu gagal dan bisa menyesatkan diagnosismu. Jangan melakukan uji ke alamat sembarang. Mengirim banyak paket ke pihak lain tanpa izin dapat dianggap gangguan.
 
 ## Kegiatan 3: Kartu skenario gangguan
 
@@ -174,7 +186,7 @@ Dilakukan hanya bila lab menyediakan jaringan lokal yang terpisah dari internet 
 
 Cocokkan: switch, router, klien, server, DNS, HTTPS dengan fungsinya: (a) menyediakan halaman, (b) menerjemahkan nama menjadi alamat IP, (c) menghubungkan dua jaringan berbeda, (d) meminta halaman, (e) menghubungkan perangkat dalam satu jaringan lokal, (f) mengirim halaman secara terenkripsi.
 
-### Latihan 2: Alur halaman web
+### Latihan 2: Alur halaman web (soal Parsons)
 
 Urutkan langkah acak berikut menjadi urutan yang benar: (1) server mengirim paket halaman, (2) peramban bertanya ke DNS, (3) peramban menampilkan halaman, (4) peramban mengirim permintaan ke alamat IP, (5) DNS menjawab dengan alamat IP.
 
@@ -195,6 +207,30 @@ Seorang murid fiktif, Murid-07, tidak bisa membuka halaman web. `ping` ke gatewa
 ### Latihan 6: Diagram alir
 
 Gambar diagram alir diagnosis dengan lima tahap (fisik, alamat IP, gateway, DNS, layanan). Beri panah "ya" dan "tidak" pada tiap pertanyaan. Ini adalah keluaran minggu M5. Tambahkan juga diagram alur "membuka halaman web" sebagai keluaran minggu M4.
+
+### Latihan 7: Susun diagnosis (soal Parsons)
+
+Tahap berikut tercampur. Susun menjadi urutan diagnosis yang benar, lalu tulis satu pertanyaan periksa untuk tiap tahap.
+
+```text
+(a) DNS
+(b) layanan
+(c) fisik
+(d) gateway
+(e) alamat IP
+```
+
+## Latihan bercampur dan ulang berjarak
+
+Kerjakan tanpa melihat catatan.
+
+1. Ubah `00101000` ke desimal, lalu ke heksadesimal. (dari modul sebelumnya)
+2. Alamat `192.0.2.10`: tulis tiap bagiannya dalam biner 8 bit.
+3. Murid fiktif tidak bisa membuka `sekolah.example`. `ping 127.0.0.1` berhasil, ping ke gateway gagal. Di tahap mana masalahnya? Apa langkah berikutnya?
+4. Jelaskan dengan kata-katamu mengapa kita memeriksa dari tahap fisik ke atas, bukan langsung memeriksa DNS. (Penjelasan diri.)
+5. Mengapa paket diberi nomor urut?
+
+Jadwal ulang: jawab lagi tanpa catatan setelah satu hari dan setelah satu minggu. Soal 3 dipakai lagi di awal modul keamanan dasar, dengan skenario yang diubah.
 
 ## Kuis formatif
 
@@ -225,6 +261,12 @@ Gambar diagram alir diagnosis dengan lima tahap (fisik, alamat IP, gateway, DNS,
 **Latihan 5.** Masalah di tahap DNS: koneksi dan gateway sehat, tetapi nama tidak diterjemahkan. Perbaikan: periksa pengaturan DNS pada komputer atau minta guru memeriksa layanan DNS lab.
 
 **Latihan 6.** Contoh alur: kabel/Wi-Fi tersambung? tidak: sambungkan. Ya: ada alamat IP? tidak: perbaiki. Ya: `ping` gateway berhasil? tidak: periksa jaringan lokal. Ya: nama dapat diterjemahkan? tidak: periksa DNS. Ya: layanan berjalan? tidak: tunggu atau hubungi pengelola layanan.
+
+**Latihan 7.** Urutan: (c), (e), (d), (a), (b). Contoh pertanyaan: fisik, kabel atau Wi-Fi tersambung?; alamat IP, perangkat punya alamat yang masuk akal?; gateway, ping ke router berhasil?; DNS, nama bisa diterjemahkan?; layanan, server tujuan berjalan? Bila urutanmu beda, ingat aturan: bagian bawah dulu, karena tahap atas bergantung padanya; lalu coba lagi dengan kartu skenario A, B, dan C.
+
+**Ingat kembali.** 1: 8 bit; 256 nilai. 2: 20. 3: `11001000` (128 + 64 + 8). 4: 4 bit. 5: 79 dan 75 (hex `4F 4B`). Bila ada yang salah, ulangi hanya cara konversinya di modul M3, lalu kerjakan soal serupa dengan angka lain.
+
+**Latihan bercampur.** 1: `00101000` = 40 = `28`. 2: `192` = `11000000`, `0` = `00000000`, `2` = `00000010`, `10` = `00001010`. 3: tahap gateway/jaringan lokal (loopback sehat tetapi router tak terjangkau); periksa kabel atau Wi-Fi dan pengaturan alamat IP, bukan DNS. 4: contoh: tahap atas bergantung pada tahap bawah, jadi bila kabel lepas, memeriksa DNS membuang waktu dan hasilnya menyesatkan. 5: agar paket yang tiba tidak berurutan dapat disusun benar dan paket yang hilang diketahui.
 
 **Kegiatan 1 (nama tidak ada).** DNS tidak menemukan alamat sehingga permintaan tidak dapat dikirim.
 

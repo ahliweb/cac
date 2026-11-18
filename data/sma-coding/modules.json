@@ -34,6 +34,10 @@
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "The Open Source Definition (Open Source Initiative)",
+          "url": "https://opensource.org/osd"
         }
       ],
       "contentPath": "content/sma-coding/modules/fondasi-software-dan-sistem-operasi.md"
@@ -72,6 +76,14 @@
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "RFC 5737: IPv4 Address Blocks Reserved for Documentation (IETF)",
+          "url": "https://www.rfc-editor.org/rfc/rfc5737"
+        },
+        {
+          "title": "RFC 2606: Reserved Top Level DNS Names (IETF)",
+          "url": "https://www.rfc-editor.org/rfc/rfc2606"
         }
       ],
       "contentPath": "content/sma-coding/modules/fondasi-jaringan-dan-internet.md"
@@ -91,6 +103,10 @@
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "NIST Special Publication 800-63B: Digital Identity Guidelines, Authentication and Authenticator Management",
+          "url": "https://pages.nist.gov/800-63-4/sp800-63b.html"
         }
       ],
       "contentPath": "content/sma-coding/modules/fondasi-keamanan-dasar.md"
@@ -110,6 +126,10 @@
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Web Content Accessibility Guidelines (WCAG) 2.2, kriteria 1.4.3 Contrast (Minimum) (W3C)",
+          "url": "https://www.w3.org/TR/WCAG22/#contrast-minimum"
         }
       ],
       "contentPath": "content/sma-coding/modules/fondasi-perangkat-produktivitas.md"
@@ -148,6 +168,14 @@
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Arithmetic operators, bagian Overflows (cppreference.com)",
+          "url": "https://en.cppreference.com/w/cpp/language/operator_arithmetic"
+        },
+        {
+          "title": "Number.MAX_SAFE_INTEGER (MDN Web Docs)",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER"
         }
       ],
       "contentPath": "content/sma-coding/modules/matkom-bilangan-bertanda-dan-luapan.md"
@@ -167,6 +195,10 @@
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "RFC 3629: UTF-8, a transformation format of ISO 10646 (IETF)",
+          "url": "https://www.rfc-editor.org/rfc/rfc3629"
         }
       ],
       "contentPath": "content/sma-coding/modules/matkom-teks-gambar-suara.md"

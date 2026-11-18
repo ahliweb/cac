@@ -1,0 +1,5 @@
+---
+"kurikulum-informatika": patch
+---
+
+Tinjauan ilmiah 13 modul draf `sma-coding` (6 `fondasi-*` dan 7 `matkom-*`, issue #125). Laporan tinjauan baru `docs/programs/sma-coding/tinjauan-modul/fondasi-matkom.md` (DRAF; status modul tetap `draf`, tidak ada persetujuan). Revisi modul: `fondasi-jaringan-dan-internet` memperbaiki uji DNS (`nslookup example.com`; `.example` sengaja tidak punya alamat); `fondasi-keamanan-dasar` menambah butir AI silabus v1.3 (kebijakan AI kelas, bagian 7.4); `fondasi-perangkat-produktivitas` menghapus klaim nama fungsi yang tidak terverifikasi dan mengajarkan `COUNTIF`; `matkom-logika-proposisi` menambah pseudocode dan mengganti contoh C++ yang hampa; `matkom-pertumbuhan-fungsi` mengoreksi klaim prasyarat; catatan kecil pada modul lain. Semua modul menambah bagian "Ingat kembali", "Prediksi dulu", soal Parsons atau setengah jadi, dan "Latihan bercampur dan ulang berjarak" (riset ilmu belajar kognitif, bagian 3, 6, 8.2), serta rujukan terverifikasi pada indeks `data/sma-coding/modules.json`.
