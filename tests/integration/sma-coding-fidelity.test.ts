@@ -51,7 +51,7 @@ describe("sma-coding fidelity: data/sma-coding vs. the approved silabus", () => 
 
   test("the registry entry exists and carries the document's version and date", () => {
     expect(smaEntry).toBeDefined();
-    expect(smaEntry?.syllabusVersion).toBe("1.2.0");
+    expect(smaEntry?.syllabusVersion).toBe("1.3.0");
     expect(smaEntry?.syllabusDate).toBe("2026-11-19");
   });
 
@@ -208,6 +208,60 @@ describe("sma-coding fidelity: drift fails hard", () => {
     );
   });
 
+  test("the v1.3 AI items are in the document and in the data, and drift in either is reported", () => {
+    const aiWeeks = [
+      "FND-X1-M6",
+      "C-XI2-M2",
+      "A-XII2-M5",
+      "A-XII2-M6",
+      "A-XII2-M7",
+      "A-XII2-M8",
+      "B-XI1-M5",
+      "B-XI1-M12",
+      "B-XII1-M10",
+      "D-X2-M11",
+      "D-XI2-M12",
+      "D-XII1-M10",
+    ];
+    const files = load();
+    const weeks = [...files["weeks.json"].weeks, ...files["foundation.json"].weeks] as Array<{
+      id: string;
+      objective: string;
+      exercise: string;
+      output: string;
+    }>;
+    for (const id of aiWeeks) {
+      const week = weeks.find((w) => w.id === id);
+      expect(week).toBeDefined();
+      expect(`${week?.objective} ${week?.exercise} ${week?.output}`).toMatch(/AI|energi/);
+    }
+    // the superseded v1.2 rule must not survive in a week cell
+    expect(weeks.find((w) => w.id === "D-X2-M11")?.exercise).not.toContain("tanpa akun murid");
+
+    const driftedData = load();
+    const row = driftedData["weeks.json"].weeks.find((w: { id: string }) => w.id === "B-XI1-M12");
+    row.exercise = "tinjau PR teman";
+    const contexts = checkSmaFidelity(markdown, driftedData, smaEntry).map((p) => p.context);
+    expect(contexts).toContain("weeks.json.weeks[B-XI1-M12].exercise");
+
+    const driftedDoc = markdown.replace(
+      "tanpa AI (menyelesaikan ulang sendiri)",
+      "boleh memakai AI",
+    );
+    expect(driftedDoc).not.toBe(markdown);
+    expect(checkSmaFidelity(driftedDoc, load(), smaEntry).map((p) => p.context)).toContain(
+      "weeks.json.weeks[A-XII2-M7].exercise",
+    );
+  });
+
+  test("the AI policy section replaces the v1.2 rule and keeps the privacy limits", () => {
+    expect(markdown).toContain("### 7.4 Kebijakan penggunaan AI");
+    expect(markdown).toContain("bebas dengan etika");
+    expect(markdown).toContain("### 9.4 Keputusan atas riset AI");
+    expect(markdown).not.toContain("murid tidak\n  memakainya langsung");
+    expect(markdown).toContain("ADR-0004");
+  });
+
   test("a document that breaks the table shape fails loudly instead of passing", () => {
     const broken = markdown.replace(
       "| M11 | Perulangan | memakai",
@@ -223,8 +277,8 @@ describe("sma-coding fidelity: drift fails hard", () => {
 
   test("an unapproved track in bagian 3 is refused", () => {
     const unapproved = markdown.replace(
-      "jalur A, B, C, D, dan E (v1.2,",
-      "jalur A, B, C, D, dan F (v1.2,",
+      "jalur A, B, C, D, dan E (v1.3,",
+      "jalur A, B, C, D, dan F (v1.3,",
     );
     expect(unapproved).not.toBe(markdown);
     expect(() => expectedCorpus(unapproved)).toThrow("not approved");
