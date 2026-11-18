@@ -180,10 +180,12 @@ describe("osn validate with a module index (real subprocess, fixture corpus)", (
 });
 
 describe("bun run check:module-code (real subprocess)", () => {
+  // Compiles every cpp block of every module with g++, so it grows with the
+  // module count (#55) and needs more than bun's 5 s default timeout.
   test("passes on the committed modules and counts their cpp blocks", async () => {
     const result = await run(["bun", "run", "scripts/check-module-code.ts"]);
     expect(result.exitCode).toBe(0);
     // The module count grows as modules are added (#55); assert the shape only.
     expect(result.stdout).toMatch(/OK -- \d+ cpp block\(s\) in \d+ module file\(s\)/);
-  });
+  }, 180_000);
 });
