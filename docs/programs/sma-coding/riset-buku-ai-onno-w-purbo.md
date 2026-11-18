@@ -1,11 +1,15 @@
 # Riset Buku AI Karya Onno W. Purbo — Rujukan untuk Program Coding SMA
 
-- **Version:** v0.1.0
+- **Version:** v0.2.0
 - **Last updated:** 2026-11-18
-- **Status:** DRAF — riset, belum keputusan
-- **Changeset:** Dokumen riset awal (issue #66). Tidak mengubah silabus, data, atau kode.
+- **Status:** Riset selesai; keputusan pemilik 2026-11-18: jalur AI terpisah (jalur D, issue #84)
+- **Changeset:** Keputusan pemilik atas opsi pemanfaatan dicatat: jalur AI terpisah (jalur D, #84).
 
-> **DRAF — belum disetujui pemilik.** Dokumen ini adalah konten karangan
+> **Keputusan pemilik (2026-11-18, dialog pilihan):** hasil riset ini
+> dimanfaatkan sebagai **jalur AI terpisah** (jalur D), ditindaklanjuti di
+> issue #84. Isi riset di bawah tetap catatan riset, bukan silabus.
+>
+> Dokumen ini adalah konten karangan
 > menurut [ADR-0007](../../architecture/adr/0007-authored-learning-content.md):
 > hasil riset dan penilaian penyusun, bukan transkripsi sumber resmi dan
 > bukan keputusan. Satu-satunya hal yang dikutip dari sumber luar adalah
@@ -193,10 +197,13 @@ Keputusan menjadi hak pemilik; berikut opsi dan penilaian penyusun.
 | --- | --- | --- | --- | --- |
 | 1 (Disarankan): rujukan bacaan pengayaan | Mencantumkan tautan halaman penerbit (bukan salinan) sebagai bacaan pengayaan opsional untuk guru/siswa di draf, setelah guru atau pemilik membaca isinya. | Biaya rendah; tidak melanggar hak cipta; tidak mengubah struktur program; sejalan dengan prinsip "pengayaan opsional" yang sudah diputuskan untuk topik di luar CP. | Mutu isi belum diverifikasi; tautan bisa mati; tidak ada kontrol versi. | Rendah. Perlu langkah baca-isi sebelum dicantumkan. |
 | 2: modul AI pengayaan di kelas XI–XII | Menulis modul karangan sendiri (ADR-0007) tentang analisis data/AI dasar dengan alat tanpa kode, terpetakan ke F-AD-a, berstatus DRAF, **terinspirasi** buku tanpa menyalin. | Selaras CP analisis data; milik sendiri sehingga bebas masalah lisensi dan dapat versi. | Biaya penulisan dan review; menambah beban jam di jadwal yang sudah padat; AI tidak ada di CP yang dikutip. | Sedang. Perlu menentukan jam dan status pengayaan; hindari kemiripan dengan buku. |
-| 3: jalur C "AI" terpisah | Program/jalur baru (AI dan analisis data) di samping A dan B. | Memberi tempat tersendiri bagi minat AI; bisa memakai seri ini sebagai bacaan inti. | Memperluas scope program jauh dari rancangan awal; perlu ADR/issue baru; berisiko lisensi bila buku dijadikan inti; AI tidak ada di CP. | Tinggi. |
+| 3: jalur AI terpisah (kini jalur D; jalur C dipakai untuk IoT, #68) | Program/jalur baru (AI dan analisis data) di samping A dan B. | Memberi tempat tersendiri bagi minat AI; bisa memakai seri ini sebagai bacaan inti. | Memperluas scope program jauh dari rancangan awal; perlu ADR/issue baru; berisiko lisensi bila buku dijadikan inti; AI tidak ada di CP. | Tinggi. |
 | 4: tidak dipakai | Tidak memasukkan rujukan ini. | Tidak ada pekerjaan tambahan; fokus pada CP dan OSN. | Kehilangan sumber Indonesia gratis yang sesuai jenjang; guru mungkin tetap mencari sendiri. | Rendah. |
 
-**Rekomendasi penyusun: opsi 1.** Alasan: sumber Indonesia bagi
+**Keputusan pemilik (2026-11-18): opsi 3 — jalur AI terpisah** (jalur D,
+issue #84), bukan rekomendasi penyusun.
+
+**Rekomendasi penyusun (tidak dipilih): opsi 1.** Alasan: sumber Indonesia bagi
 siswa SMA yang tidak menuntut kemampuan pemrograman, biaya dan risiko
 terendah, dan tidak memaksa keputusan tentang CP atau struktur. Untuk
 meningkatkannya ke opsi 2 sebaiknya terlebih dulu (a) dibaca isi enam
@@ -219,7 +226,8 @@ dan jalur A/B sudah penuh.
 
 ## 8. Pertanyaan terbuka untuk pemilik
 
-1. Opsi pemanfaatan mana (bagian 6): 1 (disarankan), 2, 3, atau 4?
+1. ~~Opsi pemanfaatan mana (bagian 6)?~~ **Terjawab 2026-11-18:** jalur AI
+   terpisah (jalur D, #84).
 2. Apakah pemilik atau guru akan membaca isi enam jilid sebelum dicantumkan
    sebagai rujukan, mengingat isi belum diverifikasi dan ada selisih antara
    deskripsi penerbit dan metadata flipbook (X-2, XI-1)?
@@ -249,4 +257,5 @@ dan jalur A/B sudah penuh.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v0.2.0 | 2026-11-18 | Mencatat keputusan pemilik: jalur AI terpisah (jalur D, issue #84). |
 | v0.1.0 | 2026-11-18 | Draf awal riset (issue #66): seri Buku AI SMA (enam jilid) dan buku AI Onno W. Purbo lain terverifikasi dari halaman penerbit; butir belum terverifikasi; pemetaan CP dan jalur; opsi dan rekomendasi. |
