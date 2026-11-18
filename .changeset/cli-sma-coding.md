@@ -1,5 +1,0 @@
----
-"kurikulum-informatika": minor
----
-
-Dukung `plan` dan `render lembar-siswa` untuk program `sma-coding` (#77, keputusan pemilik 2026-11-18). `osn plan --program sma-coding --track <A|B> [--kelas X|XI|XII] [--semester ...]` mencetak rencana per semester satu jalur (Markdown atau JSON), dengan blok fondasi `FND-X1-M1..M7` sebelum minggu jalur M8..M14 pada kelas X semester 1; tiap minggu memuat kode, topik, tujuan, keluaran, latihan, butir CP yang dipetakan, dan jembatan OSN. `osn render lembar-siswa --program sma-coding --week <kode-minggu>` (mis. `A-X1-M9`, `FND-X1-M3`) membuat lembar siswa berbahasa Indonesia yang diturunkan hanya dari corpus tervalidasi: butir CP dengan kutipannya, jembatan OSN, modul pendamping bertanda DRAF bila belum disetujui, daftar periksa mandiri berisi kotak kosong, tanpa isian nama atau sekolah. `render weekly`, `render checkpoint`, `render sop`, `report`, dan `checklist` tetap menolak `sma-coding` dengan exit 2 (pesan kini menyebut perintah yang didukung). Requirement baru `FR-33`; `FR-30` diperbarui. Dokumen CLI dan panduan guru dan siswa diperbarui dengan keluaran nyata.

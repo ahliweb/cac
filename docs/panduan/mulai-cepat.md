@@ -85,7 +85,7 @@ Contoh versi:
 
 ```text
 $ bun run src/cli/index.ts --version
-2.1.0
+2.2.0
 ```
 
 Bentuk pendek `bun src/cli/index.ts ...` juga bekerja (keluaran sama). Dua

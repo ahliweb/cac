@@ -11,13 +11,85 @@ programme's own syllabus version (`syllabusVersion` / `syllabusDate`), which
 tracks that programme's source document and is registered per programme in
 `data/programs.json` (ADR-0006). Currently two programmes are
 registered: `osn` at syllabus version `2.0`, dated `2026-09-04`, and
-`sma-coding` at version `1.0.0`. See
+`sma-coding` at version `1.1.0`. See
 [`docs/development/releasing.md`](docs/development/releasing.md) for how the
 two relate.
 
 ## [Unreleased]
 
 Nothing yet.
+
+## [2.2.0] — 2026-11-19
+
+SMA coding syllabus v1.1 with the grade-X foundation block, `plan` and
+`render lembar-siswa` for `sma-coding`, 27 draft `sma-coding` modules, and the
+owner approval of the nine OSN modules. **No breaking changes** — see
+[`docs/releases/v2.2.0.md`](docs/releases/v2.2.0.md). The OSN corpus
+(transcribed syllabus content) is unchanged.
+
+### Added
+
+- **SMA coding syllabus v1.1** approved by the programme owner on 2026-11-19
+  and encoded (#112, #92): the shared grade-X foundation block
+  `FND-X1-M1..M7` in the new `data/sma-coding/foundation.json` (schema
+  `src/schema/sma-foundation.ts`, week-code prefix `FND`). `osn validate
+  --program sma-coding` now checks seven data files, 154 track weeks and 26
+  CP mappings; the registry entry moves to `1.1.0`. Drafted first in #104.
+- **`osn plan` and `osn render lembar-siswa` for `sma-coding`** (#119, #77):
+  `osn plan --program sma-coding --track <A|B>` prints a per-semester plan;
+  `osn render lembar-siswa --program sma-coding --week <week-code>` renders
+  an Indonesian learner sheet derived only from the validated corpus (CP
+  items, OSN bridge, no identity fields). Requirement `FR-33` added.
+- **Module index schema for `sma-coding`** (#114, #106):
+  `src/schema/sma-module.ts` for `data/sma-coding/modules.json`; `osn
+  validate --program sma-coding` checks the index and `osn render modul --id
+  <id> --program sma-coding` renders with the same status banner as OSN.
+- **27 draft `sma-coding` modules** under `content/sma-coding/modules/`, all
+  `draf` and indexed: the grade-X foundation block (#115, #107),
+  computational maths (#116, #87), cloud computing (#117, #89) and companion
+  digital-literacy modules (#118, #69).
+- **Design documents** (all `DRAF`, not approved): companion modules (#100),
+  cloud series (#101), computational maths series (#102), track C IoT and
+  robotics (#108, #68), track D AI (#110, #84) and track E quantum (#111,
+  #88).
+- **Requirements for the `sma-coding` programme** (#103, #76): `FR-27`..`FR-31`,
+  `TR-12`, `TR-13` and `GR-13` with a third traceability matrix.
+- **Usage guide** `docs/panduan/` in Indonesian, per role (#96, #94).
+
+### Changed
+
+- **Nine OSN modules approved** by the programme owner on 2026-11-18 (#99,
+  #98): all ten OSN modules are now `disetujui` and render without the `DRAF`
+  banner. Content unchanged; M8 is complete.
+- **`render lembar-siswa` titles related modules "Modul terkait"** for
+  `sma-coding` instead of "Modul pendamping", which is a separate series
+  (#120).
+- **`osn report --by topic|week`** keeps exiting 2 (documented limit) but the
+  message now states the reason and the alternative (#109, #95).
+- **`check:requirements` is stricter** (#103): it accepts issue references
+  above #26 and reports malformed references (`#0`, `#abc`, `26`) instead of
+  ignoring them.
+- **Biome 2.6** with Markdown excluded from formatting (#97, #44).
+- **Stale documents refreshed** (#109, #113, #120, #95): CLI and guide
+  examples are now real output; the programme and owner documents match the
+  decisions of 2026-11-18 and 2026-11-19. A syllabus check of R1, R2, R3, R7
+  and R8 on 2026-11-18 is logged in `data/osn/syllabus-check-log.json`
+  (performed by an AI agent; no corpus change).
+
+### Fixed
+
+- **A silently skipped week check** (#114): the module check for `sma-coding`
+  read `weeks.json` with the OSN schema and was skipped without a report. It
+  now uses each programme's own schema, and a check that cannot run because
+  a reference file is missing is reported as a finding.
+
+### Notes
+
+- Authored content stays `draf` until the owner approves it (ADR-0007); the
+  27 `sma-coding` modules and the drafts of tracks C, D and E are not
+  approved.
+- Open: track C ([#68]), track D AI ([#84]), track E quantum ([#88]) and the
+  CP gap F-LD-d/e for track A ([#105]) await owner decisions.
 
 ## [2.1.0] — 2026-11-18
 
@@ -359,7 +431,8 @@ documentation the syllabus itself mandates.
   and the entry says so; the next check must perform the live verification
   per [`docs/operations/syllabus-check.md`](docs/operations/syllabus-check.md).
 
-[Unreleased]: https://github.com/ahliweb/osn/compare/v2.1.0...HEAD
+[Unreleased]: https://github.com/ahliweb/osn/compare/v2.2.0...HEAD
+[2.2.0]: https://github.com/ahliweb/osn/compare/v2.1.0...v2.2.0
 [2.1.0]: https://github.com/ahliweb/osn/compare/v2.0.0...v2.1.0
 [2.0.0]: https://github.com/ahliweb/osn/compare/v1.1.0...v2.0.0
 [1.1.0]: https://github.com/ahliweb/osn/compare/v1.0.0...v1.1.0
@@ -369,6 +442,7 @@ documentation the syllabus itself mandates.
 [#76]: https://github.com/ahliweb/osn/issues/76
 [#77]: https://github.com/ahliweb/osn/issues/77
 [#84]: https://github.com/ahliweb/osn/issues/84
+[#105]: https://github.com/ahliweb/osn/issues/105
 [#86]: https://github.com/ahliweb/osn/issues/86
 [#87]: https://github.com/ahliweb/osn/issues/87
 [#88]: https://github.com/ahliweb/osn/issues/88
