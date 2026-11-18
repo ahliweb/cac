@@ -70,6 +70,13 @@ Run once, before Week 1 of a new cohort, in this order:
    copy of §14.2; a mentor onboarding to a new cohort should read them
    from `osn checklist`, not from a possibly-stale printed handout.
 
+6. **Explain the AI-use policy to every mentor and learner** -- see
+   [`kebijakan-ai-osn.md`](kebijakan-ai-osn.md): no AI while working
+   problems, in re-solves, contest simulations, and checkpoints; AI only as
+   an explainer afterwards, followed by a re-solve without AI. This is an
+   operational procedure, not part of the transcribed syllabus; the rules
+   of official contests must be checked from official sources.
+
 Only once every §14.1 item is confirmed does the cohort's Week 1 begin.
 
 ## 2. The weekly cycle
@@ -188,6 +195,9 @@ Board liaison", engaged specifically for a contest-integrity incident).
 
 ## Related documents
 
+- [`docs/operations/kebijakan-ai-osn.md`](kebijakan-ai-osn.md) -- the
+  AI-use policy for OSN coaching (when no AI, when AI may explain, official
+  contest rules, privacy, mentor role); issue #139.
 - [`docs/operations/syllabus-check.md`](syllabus-check.md) -- the full
   §14.2 rule 8 syllabus-check procedure this runbook's cohort-start step 2
   and monthly-review step 5 point to.
