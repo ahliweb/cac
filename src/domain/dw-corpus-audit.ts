@@ -46,9 +46,11 @@ export const DW_DATA_FILE_REGISTRY: readonly DwFileEntry[] = [
 ];
 
 /**
- * The fixed numbers of the approved v1.0 syllabus. `hours` is
+ * The fixed numbers of the approved v1.1 syllabus. `hours` is
  * shared + own = total per track (`[asumsi]` estimates, but fixed by the
- * approved text); `modules` is the own-module count per track.
+ * approved text); `modules` is the own-module count per track. Track PRO
+ * has 13 modules since v1.1.0 (#139): twelve of 10 hours plus
+ * `DW-PRO-M13` of 8, taught after `DW-PRO-M5`.
  */
 export const DW_EXPECTED_COUNTS = {
   tracks: 4,
@@ -60,10 +62,10 @@ export const DW_EXPECTED_COUNTS = {
   certificationOptions: 3,
   lspSchemes: 2,
   bridges: 6,
-  modules: { PKJ: 8, PRO: 12, PRS: 6, BIS: 8 },
+  modules: { PKJ: 8, PRO: 13, PRS: 6, BIS: 8 },
   hours: {
     PKJ: { shared: 8, own: 40, total: 48 },
-    PRO: { shared: 8, own: 120, total: 128 },
+    PRO: { shared: 8, own: 128, total: 136 },
     PRS: { shared: 8, own: 30, total: 38 },
     BIS: { shared: 8, own: 48, total: 56 },
   },
