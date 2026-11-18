@@ -38,7 +38,9 @@ Jalur C, D, dan E belum masuk silabus dan belum punya `data/` maupun entri
 registri (ADR-0006) sampai pemilik memutuskan dan menyetujui silabusnya.
 
 Modul pendamping literasi digital untuk butir CP di luar coding: rancangan
-disetujui pemilik 2026-11-19 (#69); modulnya belum ditulis ke repositori.
+disetujui pemilik 2026-11-19 (#69); sembilan modul draf `pendamping-*` ada di
+`content/sma-coding/modules/` (#69, ditambah dua modul untuk F-LD-d dan F-LD-e,
+#105).
 
 ## Keputusan pemilik
 
@@ -54,9 +56,10 @@ rekomendasi, seri cloud (#89) beserta tujuh rekomendasi, dan modul pendamping
 rancangan.
 
 Masih menunggu keputusan pemilik: pertanyaan terbuka pada draf jalur C, D,
-dan E (#68, #84, #88). Pekerjaan lanjutan yang sudah dicatat sebagai issue:
-skema indeks modul sma-coding (#106), modul fondasi kelas X (#107), dan celah
-butir CP F-LD-d dan F-LD-e untuk jalur A (#105).
+dan E (#68, #84, #88). Skema indeks modul sma-coding (#106), modul fondasi
+kelas X (#107), dan modul pendamping untuk celah butir CP F-LD-d dan F-LD-e
+(#105, keputusan pemilik 2026-11-19: modul pendamping lintas jalur) sudah
+dikerjakan; semua modulnya berstatus draf sampai ditinjau pemilik.
 
 ## Cara mengusulkan perubahan
 
