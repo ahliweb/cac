@@ -13,18 +13,63 @@
  * programme's own `content/<program>/modules/`.
  */
 
-import { MODULES_FILE_NAME, type ModulesFile, modulesFileSchema } from "../schema/module";
+import {
+  MODULES_FILE_NAME,
+  type Module,
+  type ModulesFile,
+  modulesFileSchema,
+} from "../schema/module";
 import { referencesFileSchema } from "../schema/reference";
+import { SMA_CODING_PROGRAM_ID } from "../schema/sma-common";
 import { topicFamiliesSchema } from "../schema/topic-family";
 import { weeksSchema } from "../schema/week";
 import type { CorpusFinding, CorpusSource } from "./corpus-audit";
+import { parseSmaModulesIndex, smaModuleFindings } from "./sma-modules";
+
+/**
+ * The part of an index entry every programme's module shape shares: what
+ * `osn validate`'s body check and `osn render modul` need. Both the OSN
+ * {@link Module} and the `sma-coding` module are assignable to it.
+ */
+export type ModuleIndexEntry = Pick<
+  Module,
+  "id" | "title" | "status" | "review" | "references" | "contentPath"
+>;
+
+/** A programme's parsed module index, reduced to the shared entry shape. */
+export interface ModulesIndex {
+  readonly modules: readonly ModuleIndexEntry[];
+}
+
+/** Optional cross-programme inputs for {@link moduleFindings}. */
+export interface ModuleFindingsOptions {
+  /** Ids in `data/osn/topic-families.json`; used by the `sma-coding` bridge-family check. */
+  readonly osnTopicFamilyIds?: ReadonlySet<string> | undefined;
+}
 
 function error(path: string, message: string): CorpusFinding {
   return { file: MODULES_FILE_NAME, path, message, severity: "error" };
 }
 
-/** Parses the index out of `source`: `undefined` when absent; findings when unreadable/invalid. */
-export function parseModulesIndex(source: CorpusSource): {
+/**
+ * Parses the index out of `source` with the schema of programme `programId`
+ * (default OSN; `sma-coding` has its own, `src/schema/sma-module.ts`):
+ * `undefined` when absent; findings when unreadable/invalid.
+ */
+export function parseModulesIndex(
+  source: CorpusSource,
+  programId: string = "osn",
+): {
+  readonly modules: ModulesIndex | undefined;
+  readonly findings: CorpusFinding[];
+} {
+  if (programId === SMA_CODING_PROGRAM_ID) {
+    return parseSmaModulesIndex(source);
+  }
+  return parseOsnModulesIndex(source);
+}
+
+function parseOsnModulesIndex(source: CorpusSource): {
   readonly modules: ModulesFile | undefined;
   readonly findings: CorpusFinding[];
 } {
@@ -63,10 +108,19 @@ function parsedFile<T>(
 /**
  * Every problem in the programme's module index. `programId` is the
  * registered id the corpus belongs to (a module's `contentPath` must sit
- * under `content/<programId>/modules/`).
+ * under `content/<programId>/modules/`). Each programme is checked with its
+ * own schemas: `sma-coding` goes to `smaModuleFindings`; every other id is
+ * checked as an OSN-shaped index against the OSN corpus files.
  */
-export function moduleFindings(source: CorpusSource, programId: string): CorpusFinding[] {
-  const { modules, findings } = parseModulesIndex(source);
+export function moduleFindings(
+  source: CorpusSource,
+  programId: string,
+  options: ModuleFindingsOptions = {},
+): CorpusFinding[] {
+  if (programId === SMA_CODING_PROGRAM_ID) {
+    return smaModuleFindings(source, options.osnTopicFamilyIds);
+  }
+  const { modules, findings } = parseOsnModulesIndex(source);
   if (modules === undefined) {
     return findings;
   }

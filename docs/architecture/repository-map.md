@@ -65,7 +65,7 @@ is a domain-layer concern).
 `assessment-bank.ts`, `problem-taxonomy.ts`, `learning-record.ts`,
 `readiness-checklist.ts`, `operational-rules.ts`, `syllabus-check.ts`), plus
 the `sma-coding` corpus shapes (`sma-common.ts`, `sma-cp.ts`, `sma-track.ts`,
-`sma-structure.ts`, `sma-week.ts`, `sma-foundation.ts`, `sma-cp-mapping.ts`, `sma-osn-bridge.ts`).
+`sma-structure.ts`, `sma-week.ts`, `sma-foundation.ts`, `sma-cp-mapping.ts`, `sma-osn-bridge.ts`) and the `sma-coding` module-index shape (`sma-module.ts`, which reuses the status, review and reference parts of the OSN `module.ts`).
 
 ## `src/domain/`
 
@@ -92,7 +92,7 @@ schema), `privacy-scan.ts` (the `osn privacy-check` scan logic),
 `operations.ts` (readiness checklist, operational rules, syllabus-check
 log), `cohort-plan.ts` (the `osn plan` calendar generator), `report.ts`
 (the `osn report` KPI dashboard), and `corpus-audit.ts` (the `osn
-validate` whole-corpus audit), `sma-corpus-audit.ts` (the same for the `sma-coding` corpus, including the cross-programme reference to the OSN topic families), `sma-week-codes.ts` (expands the week notation of the SMA syllabus) and `modules.ts` (referential rules for the optional `data/<program>/modules.json`).
+validate` whole-corpus audit), `sma-corpus-audit.ts` (the same for the `sma-coding` corpus, including the cross-programme reference to the OSN topic families), `sma-week-codes.ts` (expands the week notation of the SMA syllabus) `modules.ts` (the per-programme entry point for the optional `data/<program>/modules.json`; the OSN rules live here) and `sma-modules.ts` (the same for the `sma-coding` index: CP items, week codes, OSN bridge families, prerequisites and their cycles).
 
 ## `src/render/`
 
@@ -177,7 +177,7 @@ register and traceability matrices via `scripts/check-requirements.ts`),
 `cli-validate-fixtures.test.ts` (the full corpus, and a deliberately
 corrupted fixture corpus), and one end-to-end test per remaining CLI
 command (`cli-plan.test.ts`, `cli-render.test.ts`, `cli-report.test.ts`,
-`cli-privacy-check.test.ts`, `cli-checklist.test.ts`) plus `cli-modules.test.ts` (`osn render modul`, `osn validate` with a module index, and `check:module-code`).
+`cli-privacy-check.test.ts`, `cli-checklist.test.ts`) plus `cli-modules.test.ts` (`osn render modul`, `osn validate` with a module index, and `check:module-code`) and `cli-sma-modules.test.ts` (the same two commands for `sma-coding`, run against a temporary copy of the repository so the committed corpus and `content/` are untouched).
 
 ## `scripts/`
 

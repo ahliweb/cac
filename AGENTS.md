@@ -21,7 +21,7 @@ Tables, not prose — drift should be visible at a glance.
 | `src/render/` | Generators that turn domain data into mentor-facing output and the student learner sheet (`osn render lembar-siswa`). |
 | `src/index.ts` | Package entrypoint. |
 | `data/programs.json` | Programme registry (ADR-0006), validated by `src/schema/program.ts`. |
-| `content/` | Authored learning-module bodies, `content/<program>/modules/<id>.md` (ADR-0007). Indexed by `data/<program>/modules.json`; never transcribed syllabus content. |
+| `content/` | Authored learning-module bodies, `content/<program>/modules/<id>.md` (ADR-0007). Indexed by `data/<program>/modules.json` (OSN: `src/schema/module.ts`; `sma-coding`: its own `src/schema/sma-module.ts`); never transcribed syllabus content. |
 | `data/osn/` | The OSN programme corpus (`data/osn/*.json`) and `data/osn/samples/` (synthetic learning records). One `data/<program>/` directory per registered programme. |
 | `data/sma-coding/` | The SMA coding programme corpus (seven JSON files transcribed from `docs/programs/sma-coding/silabus.md` v1.1: CP elements, tracks A/B, structure, weekly plan, shared grade-X foundation block `FND-X1`, CP mapping, OSN bridge), validated by the `src/schema/sma-*.ts` schemas and `src/domain/sma-corpus-audit.ts`. |
 | `tests/unit/` | One module tested in isolation. Mirrors `src/` loosely. |

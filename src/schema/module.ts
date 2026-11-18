@@ -48,18 +48,21 @@ export const moduleReviewSchema = z
   })
   .strict();
 
+/** An explicit reference: a title and an https URL (shared with the `sma-coding` module schema). */
+export const moduleExplicitReferenceSchema = z
+  .object({
+    title: nonEmptyString,
+    url: z
+      .string()
+      .url()
+      .refine((value) => value.startsWith("https://"), "must be an https URL"),
+  })
+  .strict();
+
 /** A reference: an id in the programme's references register, or an explicit title + https URL. */
 export const moduleReferenceSchema = z.union([
   z.object({ refId: nonEmptyString }).strict(),
-  z
-    .object({
-      title: nonEmptyString,
-      url: z
-        .string()
-        .url()
-        .refine((value) => value.startsWith("https://"), "must be an https URL"),
-    })
-    .strict(),
+  moduleExplicitReferenceSchema,
 ]);
 export type ModuleReference = z.infer<typeof moduleReferenceSchema>;
 

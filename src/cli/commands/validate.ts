@@ -54,8 +54,11 @@ whose weeks run 1..14, except kelas X semester 1 where track weeks run 8..14
 after the 7-week shared foundation block FND-X1), CP code / week code / track references, and that every OSN topic
 family id used by the OSN bridge exists in data/osn/topic-families.json. When a programme has a
 learning-module index (data/<program>/modules.json, ADR-0007) it is checked
-too: schema, topic family / week / reference ids, and that every module's
-Markdown body exists and is non-empty. It also checks that
+too, with the programme's own schema: OSN modules by topic family / week /
+reference ids; sma-coding modules by CP item codes (cp-elements.json), week
+codes (weeks.json or foundation.json), OSN bridge family ids,
+prerequisites (module ids or foundation week codes, no cycle); and for both
+that every module's Markdown body exists and is non-empty. It also checks that
 the registry's syllabusVersion/syllabusDate equal the ones carried by the
 programme's corpus files and that the registered source document exists.
 Reports every problem found in one pass, grouped by file.
@@ -82,7 +85,12 @@ Exit codes:
 async function auditProgram(program: Program, corpusDir: string, registry: ProgramRegistry) {
   const source = await loadCorpusFromDirectory(corpusDir);
   const extra = registryVersionFindings(program, source);
-  extra.push(...moduleFindings(source, program.id), ...(await moduleContentFindings(source)));
+  const osnTopicFamilyIds =
+    program.id === SMA_CODING_PROGRAM_ID ? await loadOsnTopicFamilyIds(registry) : undefined;
+  extra.push(
+    ...moduleFindings(source, program.id, { osnTopicFamilyIds }),
+    ...(await moduleContentFindings(source, REPO_ROOT, program.id)),
+  );
   if (!(await repoPathExists(program.sourceDocument))) {
     extra.push({
       file: REGISTRY_FILE_NAME,
@@ -93,7 +101,7 @@ async function auditProgram(program: Program, corpusDir: string, registry: Progr
   }
   const base =
     program.id === SMA_CODING_PROGRAM_ID
-      ? auditSmaCorpus(source, await loadOsnTopicFamilyIds(registry))
+      ? auditSmaCorpus(source, osnTopicFamilyIds)
       : auditCorpus(source);
   return withExtraFindings(base, extra);
 }

@@ -128,6 +128,25 @@ osn validate [options]
    is `content/<program>/modules/<id>.md` for this programme; and the
    Markdown file exists and is not blank.
 
+   For `sma-coding` the index is parsed against its own schema,
+   `src/schema/sma-module.ts` (issue #106; the OSN schema is unchanged),
+   whose entries carry `cpItems`, `weekCodes`, `bridgeFamilies`,
+   `gradeLevels`, `prerequisites`, `audience`, `language`, `status`,
+   `review`, `references` (explicit `{ title, url }` with an `https` URL;
+   no `refId`, the programme has no `references.json`) and `contentPath`
+   (`content/sma-coding/modules/<id>.md`); `review` follows the same rule
+   as above. `cpItems`, `weekCodes`, `bridgeFamilies` and `prerequisites`
+   may be empty (a series module is not counted as meeting a CP item).
+   Referentially: every `cpItems` code exists in `cp-elements.json`; every
+   `weekCodes` entry exists in `weeks.json` (track weeks) or
+   `foundation.json` (`FND-...`); every `bridgeFamilies` id exists in
+   `data/osn/topic-families.json`; every `prerequisites` entry is the id of
+   another module in the index or an existing foundation week code, and the
+   module prerequisites contain no cycle (a module cannot require itself);
+   and the Markdown file exists and is not blank. A reference file that a
+   used field needs but that is missing or invalid is itself reported
+   ("cannot be checked"), never skipped silently.
+
 ### The `sma-coding` programme
 
 `osn validate --program sma-coding` validates `data/sma-coding/` with its
@@ -465,7 +484,8 @@ a learner is stored).
 ### `osn render modul`
 
 Renders one learning module of the programme (`--program`, default
-`osn`) from `data/<program>/modules.json` and its Markdown body under
+`osn`; `sma-coding` is also supported, issue #106) from
+`data/<program>/modules.json` and its Markdown body under
 `content/<program>/modules/`. Unlike the other renderers this output is
 **authored content** (ADR-0007), not derived from the syllabus, so its
 status is always visible. Layout, in order: `# <title>`; unless the
@@ -474,12 +494,14 @@ status is `disetujui`, a banner as the first line after the title --
 `> **DRAF — sedang ditinjau, belum disetujui.**` (`ditinjau`) or
 `> **DITARIK — jangan dipakai.**` (`ditarik`); the module body verbatim;
 `## Rujukan` (each `refId` resolved against the programme's
-`references.json`, or the explicit title and URL); and a footer with the
+`references.json`, or the explicit title and URL; `sma-coding` modules
+only have explicit references); and a footer with the
 status, the programme and, for `disetujui`, the approval date and the
 reviewer's role. Output is byte-deterministic.
 
 An unknown `--id` (the error lists the known ids), a missing `--id`, a
-programme without `modules.json`, an invalid index, a missing or blank
+programme without `modules.json` (today `sma-coding` until its index is
+added: the message is `this programme has no modules.json`), an invalid index, a missing or blank
 body, or a dangling `refId` is exit `2` (run `osn validate` for the
 full findings).
 

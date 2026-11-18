@@ -5,7 +5,7 @@ Full register of requirements derived from *Silabus Operasional Pembinaan OSN In
 verification methods. See `traceability.md` for the section↔requirement↔issue matrices that
 prove this register is exhaustive.
 
-85 requirements: 31 `FR`, 13 `TR`, 12 `OR`, 16 `ER`, 13 `GR`. The first 77 are derived from the OSN syllabus; `FR-27`-`FR-31`, `TR-12`, `TR-13` and `GR-13` were added for the multi-programme work (ADR-0006, ADR-0007) and the `sma-coding` programme, and cite those documents instead of an OSN section.
+86 requirements: 32 `FR`, 13 `TR`, 12 `OR`, 16 `ER`, 13 `GR`. The first 77 are derived from the OSN syllabus; `FR-27`-`FR-32`, `TR-12`, `TR-13` and `GR-13` were added for the multi-programme work (ADR-0006, ADR-0007) and the `sma-coding` programme, and cite those documents instead of an OSN section.
 
 ## Functional (FR)
 
@@ -42,6 +42,7 @@ prove this register is exhaustive.
 | FR-29 | Cross-programme reference to OSN topic families | [silabus SMA coding](../programs/sma-coding/silabus.md) | Every row of `data/sma-coding/osn-bridge.json` shall reference an existing OSN topic family (read from the OSN corpus), a known track and a week of that track; an unresolvable reference, or an OSN corpus that cannot be loaded, shall be reported rather than skipped. | unit test | #52 | implemented |
 | FR-30 | OSN-only commands refuse other programmes | [ADR-0006](../architecture/adr/0006-multi-program-repository.md) | `osn plan`, `osn render` (weekly, checkpoint, sop, lembar-siswa), `osn report` and `osn checklist` shall exit 2 with a message naming the programme, writing nothing to stdout, when `--program` names a programme other than `osn`, instead of presenting OSN data as that programme's. | integration test | #52 | implemented |
 | FR-31 | Authored learning-module index and renderer | [ADR-0007](../architecture/adr/0007-authored-learning-content.md) | A programme may carry `data/<id>/modules.json`, validated by the module schema and checked for unknown topic families, weeks and references, a foreign `contentPath` and a missing or empty body file, and `osn render modul --id <id>` shall render a module deterministically from its index entry and its Markdown body. | integration test | #54 | implemented |
+| FR-32 | sma-coding learning-module index and renderer | [ADR-0007](../architecture/adr/0007-authored-learning-content.md) | `data/sma-coding/modules.json` shall be validated by its own schema (`src/schema/sma-module.ts`; the OSN module schema is unchanged): CP item codes, track and foundation week codes, OSN bridge families, school classes, prerequisites (module ids or foundation week codes), status and the ADR-0007 review rule. `osn validate --program sma-coding` shall report an unknown CP item, week code, bridge family or prerequisite, a prerequisite cycle, a duplicate id and a missing or empty body file, and a check whose reference file cannot be read shall be reported rather than skipped; `osn render modul --id <id> --program sma-coding` shall render the module with the same status banner as OSN. | integration test | #106 | implemented |
 
 ## Technical / Architectural (TR)
 

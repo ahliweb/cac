@@ -183,7 +183,12 @@ export const renderCommand: Command = {
         ctx.stderr("osn render modul: --id <module-id> is required.\n");
         return EXIT_USAGE_ERROR;
       }
-      const loaded = await loadModule(resolve(REPO_ROOT, resolved.program.corpusDir), id);
+      const loaded = await loadModule(
+        resolve(REPO_ROOT, resolved.program.corpusDir),
+        id,
+        REPO_ROOT,
+        resolved.program.id,
+      );
       if (!loaded.ok) {
         ctx.stderr(`osn render modul: ${loaded.message}\n`);
         return EXIT_USAGE_ERROR;
