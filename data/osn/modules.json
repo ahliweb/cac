@@ -126,6 +126,24 @@
         }
       ],
       "contentPath": "content/osn/modules/struktur-data.md"
+    },
+    {
+      "id": "graph-tree",
+      "title": "Graph dan Tree untuk OSN Informatika",
+      "topicFamilies": ["graph-tree"],
+      "weeks": [17, 18, 19, 20, 22, 27],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "refId": "R1"
+        },
+        {
+          "refId": "R4"
+        }
+      ],
+      "contentPath": "content/osn/modules/graph-tree.md"
     }
   ]
 }
