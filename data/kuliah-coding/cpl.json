@@ -1,0 +1,28 @@
+{
+  "syllabusVersion": "1.0.0",
+  "syllabusDate": "2026-11-19",
+  "sourceSection": "bagian 4.1",
+  "codeCell": "tiap `KUL-*`",
+  "fillCell": "(kosong; diisi program studi)",
+  "noteCell": "Pasal 8 ayat (5): mata kuliah berkontribusi pada CPL melalui CPMK.",
+  "competencyGroups": [
+    "penguasaan IPTEK dan keterampilan khusus",
+    "kecakapan umum",
+    "pengetahuan dan keterampilan untuk kerja atau studi lanjut",
+    "kemampuan intelektual dan pembelajar sepanjang hayat"
+  ],
+  "trackGroups": [
+    {
+      "track": "U",
+      "groupText": "kecakapan umum"
+    },
+    {
+      "track": "I",
+      "groupText": "penguasaan IPTEK dan keterampilan khusus"
+    },
+    {
+      "track": "K",
+      "groupText": "kemampuan intelektual (berpikir kritis)"
+    }
+  ]
+}

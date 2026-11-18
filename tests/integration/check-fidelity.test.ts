@@ -82,7 +82,7 @@ describe("check:fidelity", () => {
       const weeksPath = join(dir, "data", "sma-coding", "weeks.json");
       const weeks = (await readFile(weeksPath, "utf-8")).replace(/"topic": "/, '"topic": "UBAH ');
       await writeFile(weeksPath, weeks);
-      const result = await run([], dir);
+      const result = await run(["--program", "sma-coding"], dir);
       expect(result.code).toBe(1);
       expect(result.out).toContain("FAILED");
       expect(result.out).toContain("UBAH ");

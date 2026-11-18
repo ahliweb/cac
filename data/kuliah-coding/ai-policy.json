@@ -1,0 +1,28 @@
+{
+  "syllabusVersion": "1.0.0",
+  "syllabusDate": "2026-11-19",
+  "sourceSection": "bagian 6.3",
+  "levels": [
+    {
+      "level": "hijau",
+      "levelText": "Hijau",
+      "rule": "AI boleh dipakai dengan pengungkapan ringkas (alat, tujuan)",
+      "usedOnText": "Proyek, eksplorasi, dokumentasi",
+      "usedOnCourses": []
+    },
+    {
+      "level": "kuning",
+      "levelText": "Kuning",
+      "rule": "AI boleh menjelaskan konsep, tidak boleh menghasilkan solusi yang diserahkan",
+      "usedOnText": "Tugas dasar pemrograman KUL-U-101, KUL-I-101, KUL-I-102",
+      "usedOnCourses": ["KUL-U-101", "KUL-I-101", "KUL-I-102"]
+    },
+    {
+      "level": "merah",
+      "levelText": "Merah",
+      "rule": "AI tidak boleh",
+      "usedOnText": "Ujian praktik, kontes, seleksi, tugas penilaian kemampuan dasar",
+      "usedOnCourses": []
+    }
+  ]
+}

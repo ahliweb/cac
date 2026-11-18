@@ -1,0 +1,800 @@
+{
+  "syllabusVersion": "1.0.0",
+  "syllabusDate": "2026-11-19",
+  "sourceSection": "bagian 3.1",
+  "courses": [
+    {
+      "code": "KUL-U-101",
+      "track": "U",
+      "name": "Berpikir Komputasional dan Dasar Pemrograman",
+      "elective": false,
+      "sks": 3,
+      "semester": "S1",
+      "prerequisitesText": "tidak ada",
+      "prerequisites": [],
+      "kaText": "SDF, AL (pengantar)",
+      "kaCodes": ["SDF", "AL"],
+      "cpmk": [
+        {
+          "code": "KUL-U-101-C1",
+          "text": "menguraikan masalah menjadi langkah (dekomposisi, pola, abstraksi, algoritma)",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-U-101-C2",
+          "text": "menulis program Python dengan variabel, percabangan, perulangan, fungsi, dan koleksi",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-U-101-C3",
+          "text": "menguji dan memperbaiki program dengan kasus uji sederhana",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-U-101-C4",
+          "text": "menyimpan dan membagikan kode dengan Git",
+          "origin": "karangan"
+        }
+      ],
+      "topics": "berpikir komputasional; Python dasar; struktur data bawaan (list, dict, set); berkas teks dan CSV; modul dan pustaka standar; pengujian dasar; Git dasar",
+      "assessment": "kuis mingguan, tiga tugas pemrograman, proyek kecil di bidang prodi mahasiswa, ujian praktik",
+      "cplProdi": []
+    },
+    {
+      "code": "KUL-U-102",
+      "track": "U",
+      "name": "Analisis Data dengan Python",
+      "elective": false,
+      "sks": 3,
+      "semester": "S2",
+      "prerequisitesText": "KUL-U-101",
+      "prerequisites": ["KUL-U-101"],
+      "kaText": "DM, MSF (statistik dasar), SDF",
+      "kaCodes": ["DM", "MSF", "SDF"],
+      "cpmk": [
+        {
+          "code": "KUL-U-102-C1",
+          "text": "memuat, membersihkan, dan memeriksa data tabular",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-U-102-C2",
+          "text": "menghitung statistik deskriptif dan membuat visualisasi",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-U-102-C3",
+          "text": "menyusun alur analisis yang dapat diulang (notebook)",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-U-102-C4",
+          "text": "menafsirkan hasil dan menyebut keterbatasan data",
+          "origin": "karangan"
+        }
+      ],
+      "topics": "tabel data; pembersihan; ringkasan statistik; grafik; notebook; sumber data terbuka; kualitas dan bias data",
+      "assessment": "dua laporan analisis atas data terbuka (bukan data pribadi), presentasi singkat",
+      "cplProdi": []
+    },
+    {
+      "code": "KUL-U-201",
+      "track": "U",
+      "name": "Otomasi Kerja dan Skrip",
+      "elective": false,
+      "sks": 3,
+      "semester": "S3",
+      "prerequisitesText": "KUL-U-101",
+      "prerequisites": ["KUL-U-101"],
+      "kaText": "SDF, SEC (dasar), NC (dasar)",
+      "kaCodes": ["SDF", "SEC", "NC"],
+      "cpmk": [
+        {
+          "code": "KUL-U-201-C1",
+          "text": "mengotomasi tugas berulang (berkas, teks, surel/dokumen) dengan skrip",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-U-201-C2",
+          "text": "memakai API publik dan format data JSON",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-U-201-C3",
+          "text": "menjadwalkan dan mencatat (log) eksekusi",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-U-201-C4",
+          "text": "menilai risiko keamanan skrip (kredensial, izin)",
+          "origin": "karangan"
+        }
+      ],
+      "topics": "pengolahan berkas; ekspresi reguler dasar; permintaan HTTP dan JSON; penjadwalan; pengelolaan rahasia (kunci API tidak masuk repositori); etika dan hukum otomasi",
+      "assessment": "tiga skrip otomasi dengan dokumentasi, proyek akhir otomasi alur kerja nyata (data sintetis)",
+      "cplProdi": []
+    },
+    {
+      "code": "KUL-U-202",
+      "track": "U",
+      "name": "Literasi, Etika, dan Keamanan AI",
+      "elective": false,
+      "sks": 2,
+      "semester": "S4",
+      "prerequisitesText": "tidak ada",
+      "prerequisites": [],
+      "kaText": "AI, SEP, SEC",
+      "kaCodes": ["AI", "SEP", "SEC"],
+      "cpmk": [
+        {
+          "code": "KUL-U-202-C1",
+          "text": "menjelaskan cara kerja sistem AI generatif secara konseptual dan keterbatasannya",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-U-202-C2",
+          "text": "menilai keluaran AI (verifikasi, bias, halusinasi)",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-U-202-C3",
+          "text": "memakai asisten AI secara bertanggung jawab dan mengungkapkan pemakaiannya",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-U-202-C4",
+          "text": "menguraikan risiko privasi dan hak cipta",
+          "origin": "karangan"
+        }
+      ],
+      "topics": "pembelajaran mesin secara konseptual; model bahasa; rekayasa perintah (prompt) dan evaluasi; privasi dan pelindungan data pribadi; hak cipta; integritas akademik; dampak sosial",
+      "assessment": "studi kasus evaluasi keluaran AI, refleksi berkas pemakaian AI, ujian tertulis",
+      "cplProdi": []
+    },
+    {
+      "code": "KUL-U-301",
+      "track": "U",
+      "name": "Proyek Komputasi Lintas Disiplin",
+      "elective": false,
+      "sks": 3,
+      "semester": "S6",
+      "prerequisitesText": "KUL-U-102 atau KUL-U-201",
+      "prerequisites": ["KUL-U-102", "KUL-U-201"],
+      "kaText": "SDF, SE (dasar), SEP",
+      "kaCodes": ["SDF", "SE", "SEP"],
+      "cpmk": [
+        {
+          "code": "KUL-U-301-C1",
+          "text": "merumuskan masalah komputasi di bidang prodi bersama pemangku kepentingan",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-U-301-C2",
+          "text": "membangun prototipe dengan data sintetis atau terbuka",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-U-301-C3",
+          "text": "mendokumentasikan, menguji, dan mempresentasikan",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-U-301-C4",
+          "text": "bekerja dalam tim lintas program studi",
+          "origin": "karangan"
+        }
+      ],
+      "topics": "perumusan masalah; perencanaan proyek; pengembangan iteratif; dokumentasi; presentasi; refleksi etika",
+      "assessment": "proposal, bukti kemajuan di repositori, demo, laporan, penilaian rekan",
+      "cplProdi": []
+    },
+    {
+      "code": "KUL-I-101",
+      "track": "I",
+      "name": "Fondasi Pemrograman",
+      "elective": false,
+      "sks": 4,
+      "semester": "S1",
+      "prerequisitesText": "tidak ada",
+      "prerequisites": [],
+      "kaText": "SDF, FPL",
+      "kaCodes": ["SDF", "FPL"],
+      "cpmk": [
+        {
+          "code": "KUL-I-101-C1",
+          "text": "menulis program prosedural bertipe statis",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-101-C2",
+          "text": "memakai fungsi, larik, dan penunjuk/referensi",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-101-C3",
+          "text": "men-debug dengan alat",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-101-C4",
+          "text": "memakai Git",
+          "origin": "karangan"
+        }
+      ],
+      "topics": "variabel dan tipe, alur kendali, fungsi, larik dan string, memori, I/O berkas, pengujian",
+      "assessment": "tugas mingguan, ujian praktik, proyek kecil",
+      "cplProdi": []
+    },
+    {
+      "code": "KUL-I-102",
+      "track": "I",
+      "name": "Struktur Data",
+      "elective": false,
+      "sks": 3,
+      "semester": "S2",
+      "prerequisitesText": "KUL-I-101",
+      "prerequisites": ["KUL-I-101"],
+      "kaText": "SDF, AL",
+      "kaCodes": ["SDF", "AL"],
+      "cpmk": [
+        {
+          "code": "KUL-I-102-C1",
+          "text": "menerapkan list, stack, queue, pohon, tabel hash, heap, graf",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-102-C2",
+          "text": "memilih struktur data menurut kebutuhan",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-102-C3",
+          "text": "menganalisis biaya operasi",
+          "origin": "karangan"
+        }
+      ],
+      "topics": "struktur linear, pohon, hash, heap, graf dasar, pengantar kompleksitas",
+      "assessment": "tugas implementasi, ujian tertulis dan praktik",
+      "cplProdi": []
+    },
+    {
+      "code": "KUL-I-103",
+      "track": "I",
+      "name": "Matematika Diskret untuk Komputasi",
+      "elective": false,
+      "sks": 3,
+      "semester": "S2",
+      "prerequisitesText": "tidak ada",
+      "prerequisites": [],
+      "kaText": "MSF",
+      "kaCodes": ["MSF"],
+      "cpmk": [
+        {
+          "code": "KUL-I-103-C1",
+          "text": "memakai logika, himpunan, relasi",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-103-C2",
+          "text": "membuktikan dengan induksi",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-103-C3",
+          "text": "menghitung (kombinatorika)",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-103-C4",
+          "text": "memakai teori graf dan bilangan dasar",
+          "origin": "karangan"
+        }
+      ],
+      "topics": "logika, bukti, himpunan, hitungan, graf, aritmetika modular",
+      "assessment": "kuis, ujian tertulis",
+      "cplProdi": []
+    },
+    {
+      "code": "KUL-I-201",
+      "track": "I",
+      "name": "Analisis dan Desain Algoritma",
+      "elective": false,
+      "sks": 3,
+      "semester": "S3",
+      "prerequisitesText": "KUL-I-102, KUL-I-103",
+      "prerequisites": ["KUL-I-102", "KUL-I-103"],
+      "kaText": "AL",
+      "kaCodes": ["AL"],
+      "cpmk": [
+        {
+          "code": "KUL-I-201-C1",
+          "text": "merancang algoritma (greedy, divide and conquer, DP)",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-201-C2",
+          "text": "menganalisis kebenaran dan kompleksitas",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-201-C3",
+          "text": "mengenali masalah sulit",
+          "origin": "karangan"
+        }
+      ],
+      "topics": "notasi asimtotik, rekurens, DP, graf, pencarian, kelas masalah",
+      "assessment": "tugas rancangan, ujian",
+      "cplProdi": []
+    },
+    {
+      "code": "KUL-I-202",
+      "track": "I",
+      "name": "Basis Data",
+      "elective": false,
+      "sks": 3,
+      "semester": "S3",
+      "prerequisitesText": "KUL-I-102",
+      "prerequisites": ["KUL-I-102"],
+      "kaText": "DM",
+      "kaCodes": ["DM"],
+      "cpmk": [
+        {
+          "code": "KUL-I-202-C1",
+          "text": "memodelkan data (ER, relasional)",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-202-C2",
+          "text": "menulis kueri SQL",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-202-C3",
+          "text": "menerapkan normalisasi, indeks, transaksi",
+          "origin": "karangan"
+        }
+      ],
+      "topics": "model data, SQL, normalisasi, transaksi, indeks",
+      "assessment": "proyek basis data, ujian praktik",
+      "cplProdi": []
+    },
+    {
+      "code": "KUL-I-203",
+      "track": "I",
+      "name": "Organisasi Komputer dan Sistem Operasi",
+      "elective": false,
+      "sks": 3,
+      "semester": "S4",
+      "prerequisitesText": "KUL-I-101",
+      "prerequisites": ["KUL-I-101"],
+      "kaText": "AR, OS, SF",
+      "kaCodes": ["AR", "OS", "SF"],
+      "cpmk": [
+        {
+          "code": "KUL-I-203-C1",
+          "text": "menjelaskan arsitektur CPU dan memori",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-203-C2",
+          "text": "menjelaskan proses, penjadwalan, memori virtual",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-203-C3",
+          "text": "memakai baris perintah dan sistem berkas",
+          "origin": "karangan"
+        }
+      ],
+      "topics": "representasi data, assembly dasar, proses dan utas, memori, berkas",
+      "assessment": "laboratorium, ujian",
+      "cplProdi": []
+    },
+    {
+      "code": "KUL-I-204",
+      "track": "I",
+      "name": "Rekayasa Perangkat Lunak",
+      "elective": false,
+      "sks": 3,
+      "semester": "S4",
+      "prerequisitesText": "KUL-I-102",
+      "prerequisites": ["KUL-I-102"],
+      "kaText": "SE",
+      "kaCodes": ["SE"],
+      "cpmk": [
+        {
+          "code": "KUL-I-204-C1",
+          "text": "mengelola kebutuhan dan rancangan",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-204-C2",
+          "text": "menerapkan proses iteratif, pengujian, tinjau kode",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-204-C3",
+          "text": "memakai kendali versi dan CI dalam tim",
+          "origin": "karangan"
+        }
+      ],
+      "topics": "proses, UML ringan, pengujian, tinjau kode, CI, pemeliharaan",
+      "assessment": "proyek tim kecil",
+      "cplProdi": []
+    },
+    {
+      "code": "KUL-I-205",
+      "track": "I",
+      "name": "Pengembangan Web",
+      "elective": false,
+      "sks": 3,
+      "semester": "S4",
+      "prerequisitesText": "KUL-I-202",
+      "prerequisites": ["KUL-I-202"],
+      "kaText": "SPD",
+      "kaCodes": ["SPD"],
+      "cpmk": [
+        {
+          "code": "KUL-I-205-C1",
+          "text": "membangun aplikasi web klien dan peladen",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-205-C2",
+          "text": "merancang API",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-205-C3",
+          "text": "mengamankan aplikasi web dasar",
+          "origin": "karangan"
+        }
+      ],
+      "topics": "HTML/CSS, JS/TS, HTTP, REST, autentikasi dasar, aksesibilitas",
+      "assessment": "proyek web, ujian praktik",
+      "cplProdi": []
+    },
+    {
+      "code": "KUL-I-301",
+      "track": "I",
+      "name": "Jaringan Komputer dan Keamanan",
+      "elective": false,
+      "sks": 3,
+      "semester": "S5",
+      "prerequisitesText": "KUL-I-203",
+      "prerequisites": ["KUL-I-203"],
+      "kaText": "NC, SEC",
+      "kaCodes": ["NC", "SEC"],
+      "cpmk": [
+        {
+          "code": "KUL-I-301-C1",
+          "text": "menjelaskan lapisan protokol",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-301-C2",
+          "text": "menulis klien-peladen soket",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-301-C3",
+          "text": "menerapkan praktik keamanan dasar",
+          "origin": "karangan"
+        }
+      ],
+      "topics": "model lapisan, TCP/IP, soket, kriptografi dasar, ancaman umum",
+      "assessment": "laboratorium, ujian",
+      "cplProdi": []
+    },
+    {
+      "code": "KUL-I-302",
+      "track": "I",
+      "name": "Komputasi Paralel, Terdistribusi, dan Cloud",
+      "elective": false,
+      "sks": 3,
+      "semester": "S6",
+      "prerequisitesText": "KUL-I-203",
+      "prerequisites": ["KUL-I-203"],
+      "kaText": "PDC",
+      "kaCodes": ["PDC"],
+      "cpmk": [
+        {
+          "code": "KUL-I-302-C1",
+          "text": "menulis program konkuren",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-302-C2",
+          "text": "menjelaskan sistem terdistribusi dan konsistensi",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-302-C3",
+          "text": "memanfaatkan layanan cloud",
+          "origin": "karangan"
+        }
+      ],
+      "topics": "utas, sinkronisasi, model terdistribusi, kontainer, layanan cloud",
+      "assessment": "proyek, laboratorium",
+      "cplProdi": []
+    },
+    {
+      "code": "KUL-I-303",
+      "track": "I",
+      "name": "Kecerdasan Buatan dan Pembelajaran Mesin",
+      "elective": false,
+      "sks": 3,
+      "semester": "S5",
+      "prerequisitesText": "KUL-I-201, statistik",
+      "prerequisites": ["KUL-I-201"],
+      "kaText": "AI",
+      "kaCodes": ["AI"],
+      "cpmk": [
+        {
+          "code": "KUL-I-303-C1",
+          "text": "menerapkan pencarian dan pembelajaran terbimbing",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-303-C2",
+          "text": "mengevaluasi model",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-303-C3",
+          "text": "membahas etika dan bias",
+          "origin": "karangan"
+        }
+      ],
+      "topics": "pencarian, regresi dan klasifikasi, evaluasi, jaringan saraf dasar, etika",
+      "assessment": "proyek, ujian",
+      "cplProdi": []
+    },
+    {
+      "code": "KUL-I-304",
+      "track": "I",
+      "name": "Interaksi Manusia-Komputer",
+      "elective": false,
+      "sks": 2,
+      "semester": "S5",
+      "prerequisitesText": "KUL-I-205",
+      "prerequisites": ["KUL-I-205"],
+      "kaText": "HCI",
+      "kaCodes": ["HCI"],
+      "cpmk": [
+        {
+          "code": "KUL-I-304-C1",
+          "text": "merancang antarmuka berbasis pengguna",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-304-C2",
+          "text": "mengevaluasi kebergunaan dan aksesibilitas",
+          "origin": "karangan"
+        }
+      ],
+      "topics": "prinsip rancangan, evaluasi, aksesibilitas",
+      "assessment": "proyek rancangan",
+      "cplProdi": []
+    },
+    {
+      "code": "KUL-I-305",
+      "track": "I",
+      "name": "Profesi, Etika, dan Masyarakat",
+      "elective": false,
+      "sks": 2,
+      "semester": "S6",
+      "prerequisitesText": "tidak ada",
+      "prerequisites": [],
+      "kaText": "SEP",
+      "kaCodes": ["SEP"],
+      "cpmk": [
+        {
+          "code": "KUL-I-305-C1",
+          "text": "menalar kasus etika profesi",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-305-C2",
+          "text": "menjelaskan hak cipta, lisensi, dan pelindungan data pribadi",
+          "origin": "karangan"
+        }
+      ],
+      "topics": "etika, lisensi, privasi, dampak sosial, profesi",
+      "assessment": "studi kasus, esai",
+      "cplProdi": []
+    },
+    {
+      "code": "KUL-I-306",
+      "track": "I",
+      "name": "Grafika dan Teknik Interaktif",
+      "elective": true,
+      "sks": 2,
+      "semester": "S6",
+      "prerequisitesText": "KUL-I-102",
+      "prerequisites": ["KUL-I-102"],
+      "kaText": "GIT",
+      "kaCodes": ["GIT"],
+      "cpmk": [
+        {
+          "code": "KUL-I-306-C1",
+          "text": "menjelaskan dasar grafika",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-306-C2",
+          "text": "membuat visual interaktif sederhana",
+          "origin": "karangan"
+        }
+      ],
+      "topics": "rendering dasar, transformasi, interaksi",
+      "assessment": "proyek",
+      "cplProdi": []
+    },
+    {
+      "code": "KUL-I-307",
+      "track": "I",
+      "name": "Rekayasa Data dan Pengantar Pembelajaran Mesin Terapan",
+      "elective": true,
+      "sks": 2,
+      "semester": "S7",
+      "prerequisitesText": "KUL-I-202",
+      "prerequisites": ["KUL-I-202"],
+      "kaText": "DM, AI",
+      "kaCodes": ["DM", "AI"],
+      "cpmk": [
+        {
+          "code": "KUL-I-307-C1",
+          "text": "membangun alur data",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-307-C2",
+          "text": "menerapkan model terlatih pada data",
+          "origin": "karangan"
+        }
+      ],
+      "topics": "ETL, fitur, model, evaluasi, penyajian",
+      "assessment": "proyek",
+      "cplProdi": []
+    },
+    {
+      "code": "KUL-I-401",
+      "track": "I",
+      "name": "Proyek Perangkat Lunak Tim",
+      "elective": false,
+      "sks": 4,
+      "semester": "S7",
+      "prerequisitesText": "KUL-I-204",
+      "prerequisites": ["KUL-I-204"],
+      "kaText": "SE, SEP",
+      "kaCodes": ["SE", "SEP"],
+      "cpmk": [
+        {
+          "code": "KUL-I-401-C1",
+          "text": "mengerjakan produk perangkat lunak dalam tim",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-401-C2",
+          "text": "mengelola proyek",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-401-C3",
+          "text": "menyajikan dan mempertanggungjawabkan hasil",
+          "origin": "karangan"
+        }
+      ],
+      "topics": "kapstone dengan pemangku kepentingan, tinjau kode, rilis, dokumentasi",
+      "assessment": "proyek, demo, sidang",
+      "cplProdi": []
+    },
+    {
+      "code": "KUL-K-201",
+      "track": "K",
+      "name": "Pemrograman Kompetitif I",
+      "elective": false,
+      "sks": 2,
+      "semester": "S3",
+      "prerequisitesText": "KUL-I-102 atau sma-coding jalur A atau KUL-U-101 dengan seleksi `[asumsi]`",
+      "prerequisites": ["KUL-I-102", "KUL-U-101"],
+      "kaText": "AL, SDF",
+      "kaCodes": ["AL", "SDF"],
+      "cpmk": [
+        {
+          "code": "KUL-K-201-C1",
+          "text": "menyelesaikan soal bertipe OSN/ICPC dasar (pencarian, pengurutan, greedy, rekursi, struktur data standar) dalam batas waktu",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-K-201-C2",
+          "text": "membaca batas soal dan memperkirakan kompleksitas",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-K-201-C3",
+          "text": "membuat kasus uji sendiri",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-K-201-C4",
+          "text": "memakai pustaka standar C++ secara efisien",
+          "origin": "karangan"
+        }
+      ],
+      "topics": "templat kode, I/O cepat, pustaka standar, pengurutan dan pencarian biner, greedy, DP dasar, graf dasar (BFS, DFS)",
+      "assessment": "lima kontes mingguan perorangan (soal tertaut, bukan disalin), analisis pascakontes",
+      "cplProdi": []
+    },
+    {
+      "code": "KUL-K-301",
+      "track": "K",
+      "name": "Pemrograman Kompetitif II",
+      "elective": false,
+      "sks": 2,
+      "semester": "S5",
+      "prerequisitesText": "KUL-K-201",
+      "prerequisites": ["KUL-K-201"],
+      "kaText": "AL, MSF",
+      "kaCodes": ["AL", "MSF"],
+      "cpmk": [
+        {
+          "code": "KUL-K-301-C1",
+          "text": "menerapkan DP lanjutan, graf (jalur terpendek, pohon rentang minimum, aliran dasar), dan teori bilangan",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-K-301-C2",
+          "text": "menerapkan struktur data lanjutan (segment tree, DSU)",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-K-301-C3",
+          "text": "menyelesaikan soal tingkat menengah dengan analisis kebenaran",
+          "origin": "karangan"
+        }
+      ],
+      "topics": "DP lanjutan, graf lanjutan, teori bilangan, struktur data lanjutan, string, geometri dasar",
+      "assessment": "kontes tim, tugas analisis algoritma",
+      "cplProdi": []
+    },
+    {
+      "code": "KUL-K-401",
+      "track": "K",
+      "name": "Studio Tim Kompetisi",
+      "elective": false,
+      "sks": 2,
+      "semester": "S7",
+      "prerequisitesText": "KUL-K-301",
+      "prerequisites": ["KUL-K-301"],
+      "kaText": "AL, SEP (kerja tim)",
+      "kaCodes": ["AL", "SEP"],
+      "cpmk": [
+        {
+          "code": "KUL-K-401-C1",
+          "text": "bekerja sebagai tim tiga orang dengan satu komputer dan membagi peran",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-K-401-C2",
+          "text": "mengelola waktu pada kontes sekitar lima jam",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-K-401-C3",
+          "text": "melakukan debugging dan menulis kode pembanding",
+          "origin": "karangan"
+        },
+        {
+          "code": "KUL-K-401-C4",
+          "text": "menyusun refleksi dan rencana latihan",
+          "origin": "karangan"
+        }
+      ],
+      "topics": "strategi tim, pembagian soal, simulasi kontes, analisis soal yang gagal. Format \"tim tiga orang, satu komputer, lima jam\" mengikuti aturan regional ICPC yang dibuka (`riset.md` bagian 5) tetapi dipakai hanya sebagai bentuk latihan `[asumsi]`",
+      "assessment": "simulasi kontes, penilaian pelatih, refleksi",
+      "cplProdi": []
+    }
+  ]
+}
