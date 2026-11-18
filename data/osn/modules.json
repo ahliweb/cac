@@ -144,6 +144,24 @@
         }
       ],
       "contentPath": "content/osn/modules/graph-tree.md"
+    },
+    {
+      "id": "geometri-dasar",
+      "title": "Geometri Dasar untuk OSN Informatika",
+      "topicFamilies": ["geometri-dasar"],
+      "weeks": [24],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "refId": "R1"
+        },
+        {
+          "refId": "R4"
+        }
+      ],
+      "contentPath": "content/osn/modules/geometri-dasar.md"
     }
   ]
 }
