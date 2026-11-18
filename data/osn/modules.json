@@ -48,6 +48,21 @@
         }
       ],
       "contentPath": "content/osn/modules/aritmetika.md"
+    },
+    {
+      "id": "aturan-berhitung",
+      "title": "Aturan Berhitung",
+      "topicFamilies": ["aturan-berhitung"],
+      "weeks": [11, 12],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "refId": "R1"
+        }
+      ],
+      "contentPath": "content/osn/modules/aturan-berhitung.md"
     }
   ]
 }
