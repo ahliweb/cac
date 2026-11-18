@@ -26,7 +26,7 @@ must be validated by a schema in `src/schema/` (see "Ordering rule" in
 derived values, real learner personal data (see ADR-0004), or a data file
 for a shape that has no corresponding schema.
 
-**State today:** `data/programs.json` (two entries, `osn` and `sma-coding`), `data/sma-coding/` with seven schema-validated JSON files transcribed from the approved `docs/programs/sma-coding/silabus.md` v1.2 (`cp-elements.json`, `tracks.json` (five tracks A–E with `startClass` and `cpStatus`), `structure.json`, `weeks.json` (364 track weeks; track E has only kelas XI–XII), `foundation.json` (the shared grade-X foundation block `FND-X1-M1..M7`), `cp-mapping.json` (CP mapping plus the `enrichmentLinks` of the out-of-CP tracks D and E), `osn-bridge.json` (track A plus `trackBridges` for track C); schemas `src/schema/sma-*.ts`, audit `src/domain/sma-corpus-audit.ts`, cell-by-cell fidelity check `src/cli/fidelity/sma-coding.ts`, run by `scripts/check-sma-coding-fidelity.ts` and `scripts/check-fidelity.ts`), and `data/osn/` with 22 schema-validated JSON files, one per curriculum
+**State today:** `data/programs.json` (seven entries: `osn`, `sma-coding`, `tk-coding`, `kuliah-coding`, `dewasa-coding`, `sd-coding`, `smp-coding`), and one corpus directory per programme. Each non-OSN corpus is transcribed from that programme's approved `docs/programs/<id>/silabus.md` and has its own schemas (`src/schema/<prefix>-*.ts`), corpus audit (`src/domain/<prefix>-corpus-audit.ts`) and cell-by-cell fidelity module (`src/cli/fidelity/<id>.ts`), wired through `src/cli/program-registry.ts` (ADR-0008): `data/sma-coding/` (syllabus v1.3.0; seven corpus files `cp-elements.json`, `tracks.json` (five tracks A–E with `startClass` and `cpStatus`), `structure.json`, `weeks.json` (364 track weeks; track E has only kelas XI–XII), `foundation.json` (the shared grade-X foundation block `FND-X1-M1..M7`), `cp-mapping.json` (CP mapping plus the `enrichmentLinks` of the out-of-CP tracks D and E), `osn-bridge.json` (track A plus `trackBridges` for track C), plus the optional `modules.json`; prefix `sma-`), `data/tk-coding/` (v1.0.0; 7 files: `bridge`, `cp-elements`, `cp-mapping`, `decisions`, `goals`, `structure`, `weeks`; prefix `tk-`), `data/kuliah-coding/` (v1.1.0; 6 files: `ai-policy`, `bridges`, `courses`, `cpl`, `knowledge-areas`, `tracks`; prefix `kul-`), `data/dewasa-coding/` (v1.1.0; 7 files: `bridges`, `certification`, `module-plan`, `shared`, `skkni-units`, `structure`, `tracks`; prefix `dw-`; `module-plan.json` is deliberately not `modules.json`, which is reserved for ADR-0007), `data/sd-coding/` (v1.0.0; 5 files: `bridges`, `cp-elements`, `cp-mapping`, `structure`, `weeks`; prefix `sd-`) and `data/smp-coding/` (v1.1.0; 7 files: `bridge`, `club`, `cp-elements`, `cp-mapping`, `structure`, `uncovered`, `weeks`; prefix `smp-`), and `data/osn/` with 22 schema-validated JSON files, one per curriculum
 concept (`data/osn/topic-families.json`, `data/osn/weeks.json`, `data/osn/gates.json`,
 `data/osn/references.json`, `data/osn/assessment-weights.json`,
 `data/osn/kpi-definitions.json`, `data/osn/playbooks.json`, and so on — see
@@ -65,7 +65,7 @@ is a domain-layer concern).
 `assessment-bank.ts`, `problem-taxonomy.ts`, `learning-record.ts`,
 `readiness-checklist.ts`, `operational-rules.ts`, `syllabus-check.ts`), plus
 the `sma-coding` corpus shapes (`sma-common.ts`, `sma-cp.ts`, `sma-track.ts`,
-`sma-structure.ts`, `sma-week.ts`, `sma-foundation.ts`, `sma-cp-mapping.ts`, `sma-osn-bridge.ts`) and the `sma-coding` module-index shape (`sma-module.ts`, which reuses the status, review and reference parts of the OSN `module.ts`).
+`sma-structure.ts`, `sma-week.ts`, `sma-foundation.ts`, `sma-cp-mapping.ts`, `sma-osn-bridge.ts`) and the `sma-coding` module-index shape (`sma-module.ts`, which reuses the status, review and reference parts of the OSN `module.ts`), plus one family per further programme (ADR-0008): `tk-*.ts` (`tk-common`, `tk-goals`, `tk-cp-elements`, `tk-cp-mapping`, `tk-structure`, `tk-weeks`, `tk-bridge`, `tk-decisions`), `kul-*.ts` (`kul-common`, `kul-cpl`, `kul-knowledge-area`, `kul-course`, `kul-track`, `kul-bridge`, `kul-ai-policy`), `dw-*.ts` (`dw-common`, `dw-structure`, `dw-track`, `dw-shared`, `dw-module`, `dw-skkni`, `dw-certification`, `dw-bridge`), `sd-*.ts` (`sd-common`, `sd-cp`, `sd-cp-mapping`, `sd-structure`, `sd-week`, `sd-bridges`) and `smp-*.ts` (`smp-common`, `smp-cp`, `smp-cp-mapping`, `smp-structure`, `smp-week`, `smp-club`, `smp-uncovered`, `smp-bridge`).
 
 ## `src/domain/`
 
@@ -92,7 +92,7 @@ schema), `privacy-scan.ts` (the `osn privacy-check` scan logic),
 `operations.ts` (readiness checklist, operational rules, syllabus-check
 log), `cohort-plan.ts` (the `osn plan` calendar generator), `report.ts`
 (the `osn report` KPI dashboard), and `corpus-audit.ts` (the `osn
-validate` whole-corpus audit), `sma-corpus-audit.ts` (the same for the `sma-coding` corpus, including the cross-programme reference to the OSN topic families), `sma-week-codes.ts` (expands the week notation of the SMA syllabus), `sma-plan.ts` (the per-semester track plan and the week view behind `osn plan` and `osn render lembar-siswa` for `sma-coding`), `modules.ts` (the per-programme entry point for the optional `data/<program>/modules.json`; the OSN rules live here) and `sma-modules.ts` (the same for the `sma-coding` index: CP items, week codes, OSN bridge families, prerequisites and their cycles).
+validate` whole-corpus audit), `sma-corpus-audit.ts` (the same for the `sma-coding` corpus, including the cross-programme reference to the OSN topic families), `tk-corpus-audit.ts`, `kul-corpus-audit.ts`, `dw-corpus-audit.ts`, `sd-corpus-audit.ts` and `smp-corpus-audit.ts` (the same for the other five programmes, ADR-0008), `sd-week-codes.ts` and `smp-week-codes.ts` (week notation of the SD and SMP syllabi), `sma-week-codes.ts` (expands the week notation of the SMA syllabus), `sma-plan.ts` (the per-semester track plan and the week view behind `osn plan` and `osn render lembar-siswa` for `sma-coding`), `modules.ts` (the per-programme entry point for the optional `data/<program>/modules.json`; the OSN rules live here) and `sma-modules.ts` (the same for the `sma-coding` index: CP items, week codes, OSN bridge families, prerequisites and their cycles).
 
 ## `src/render/`
 
@@ -125,7 +125,7 @@ output for display (call into `src/render/` instead).
 **State today:** `index.ts` (the thin `process.*`-touching shell),
 `run-cli.ts` (the dispatcher core), `command.ts` (the `Command` interface
 and exit-code constants), `commands/index.ts` (the command registry) and
-`commands/*.ts` (the six command handlers), `program-registry.ts` (the programme table `PROGRAM_MODULES`, ADR-0008: id → data files + schemas, audit, module-index hooks, optional fidelity module; `osn validate` and `check:fidelity` dispatch through it), `fidelity/` (the per-programme fidelity modules and their `FidelityModule` contract; `sma-coding.ts`) and `fidelity-runner.ts` (`bun run check:fidelity`), plus the shared I/O/formatting
+`commands/*.ts` (the six command handlers), `program-registry.ts` (the programme table `PROGRAM_MODULES`, ADR-0008: id → data files + schemas, audit, module-index hooks, optional fidelity module; `osn validate` and `check:fidelity` dispatch through it), `fidelity/` (the per-programme fidelity modules and their `FidelityModule` contract: `sma-coding.ts`, `tk-coding.ts`, `kuliah-coding.ts`, `dewasa-coding.ts`, `sd-coding.ts`, `smp-coding.ts`) and `fidelity-runner.ts` (`bun run check:fidelity`), plus the shared I/O/formatting
 helpers each command uses (`corpus-loader.ts`, `program-loader.ts` (registry loading and `--program` resolution), `privacy-scan-loader.ts`,
 `output-writer.ts`, `format-audit.ts`, `format-plan.ts`, `format-report.ts`,
 `format-privacy-check.ts`, `format-checklist.ts`), `sma-commands.ts`, `sma-corpus-loader.ts` and `format-sma-plan.ts` (the `--program sma-coding` branches of `osn plan` and `osn render lembar-siswa`: flag handling, the audited corpus loader, plan formatting) and `module-content.ts` (module body existence check for `osn validate`, and the loader behind `osn render modul`). A `bin` entry
@@ -173,7 +173,7 @@ CLI command run end-to-end asserting on output/exit code.
 **State today:** `requirements.test.ts` (verifies the requirements
 register and traceability matrices via `scripts/check-requirements.ts`),
 `checklist-fidelity.test.ts` (verifies transcription fidelity via
-`scripts/check-checklist-fidelity.ts`), `sma-coding-fidelity.test.ts` (the same for `data/sma-coding/` against the SMA syllabus, via `src/cli/fidelity/sma-coding.ts`), `cli-sma-coding.test.ts` (`osn validate` for the `sma-coding` programme and the exit-2 refusal of OSN-only commands), `cli-validate.test.ts` and
+`scripts/check-checklist-fidelity.ts`), `sma-coding-fidelity.test.ts` (the same for `data/sma-coding/` against the SMA syllabus, via `src/cli/fidelity/sma-coding.ts`) and its counterparts `tk-coding-fidelity.test.ts`, `kuliah-coding-fidelity.test.ts`, `dewasa-coding-fidelity.test.ts`, `sd-coding-fidelity.test.ts`, `smp-coding-fidelity.test.ts`, `check-fidelity.test.ts` (`bun run check:fidelity`), `cli-sma-coding.test.ts` (`osn validate` for the `sma-coding` programme and the exit-2 refusal of OSN-only commands) with `cli-tk-coding.test.ts`, `cli-kuliah-coding.test.ts`, `cli-dewasa-coding.test.ts`, `cli-sd-coding.test.ts` and `cli-smp-coding.test.ts` for the other programmes, `cli-validate.test.ts` and
 `cli-validate-fixtures.test.ts` (the full corpus, and a deliberately
 corrupted fixture corpus), and one end-to-end test per remaining CLI
 command (`cli-plan.test.ts`, `cli-render.test.ts`, `cli-report.test.ts`,
@@ -190,7 +190,8 @@ tooling, not part of the curriculum-as-code pipeline itself).
 **State today:** `check-requirements.ts` (backs `bun run
 check:requirements`), `check-checklist-fidelity.ts` (backs `bun run
 check:checklist-fidelity`), `check-module-code.ts` (backs `bun run
-check:module-code`) and `check-sma-coding-fidelity.ts` (backs `bun run
+check:module-code`), `check-fidelity.ts` (backs `bun run
+check:fidelity`, every programme with a fidelity module) and `check-sma-coding-fidelity.ts` (backs `bun run
 check:sma-fidelity`).
 
 ## `docs/programs/`
@@ -199,23 +200,25 @@ check:sma-fidelity`).
 programme id (ADR-0006), holding that programme's source document, plus the
 level map `README.md` (TK → SD → SMP → SMA → university → adult: status,
 bridges and the link to the shared research). A source document that the
-owner has not yet approved is authored content and stays marked `DRAF`
-(ADR-0007). Today:
+owner has not approved is authored content and stays marked `DRAF`
+(ADR-0007). Today all six programme folders are approved, registered and
+encoded:
 
-- `README.md` — the level map (v1.0.0).
+- `README.md` — the level map (v2.0.0): real status, version and AI policy per programme, bridges, link to both research documents.
 - `sma-coding/` — the syllabus for the senior-high-school coding programme
   (`README.md`, `silabus.md`, the draft research note
   `riset-buku-ai-onno-w-purbo.md`, the draft proposal
   `usulan-fondasi-kelas-x.md` for syllabus v1.1, the approved drafts
   `draf-jalur-c-iot.md`, `draf-jalur-d-ai.md`, `draf-jalur-e-kuantum.md` kept
-  as history, and the module series designs `rancangan-*.md`), v1.2 approved
-  by the programme owner on 2026-11-19 for tracks A, B, C, D and E (v1.0 on
-  2026-11-18 for tracks A and B); tracks D and E are outside the CP wording
+  as history, and the module series designs `rancangan-*.md`), v1.3.0
+  approved by the programme owner on 2026-11-19 for tracks A, B, C, D and E
+  (v1.0 on 2026-11-18 for tracks A and B; v1.3 adds the AI items and the AI-use policy, #139); tracks D and E are outside the CP wording
   (enrichment). Registered in `data/programs.json`.
-- `tk-coding/`, `sd-coding/`, `smp-coding/`, `kuliah-coding/`,
-  `dewasa-coding/` — each holds `README.md`, `riset.md` and
-  `silabus-draf.md`. All `DRAF` (issues #127–#131), not owner-approved: no
-  `data/<program>/`, no registry entry, no `content/<program>/`.
+- `tk-coding/` (v1.0.0), `sd-coding/` (v1.0.0), `smp-coding/` (v1.1.0),
+  `kuliah-coding/` (v1.1.0), `dewasa-coding/` (v1.1.0) — each holds
+  `README.md`, `riset.md` and `silabus.md`, approved by the owner on 2026-11-19
+  (issues #127–#131; v1.1 revisions #139), registered in `data/programs.json`
+  and encoded into `data/<id>/`. None has a `content/<id>/` yet.
 
 **What must never go here:** machine-readable data (belongs in
 `data/<program>/`, and only after the source is approved); learner data;
@@ -225,9 +228,13 @@ an approval the owner did not give.
 
 **What belongs here:** cross-programme research that serves more than one
 programme (authored content, ADR-0007, marked `DRAF` until the owner
-approves). Today: `ilmu-belajar-kognitif.md` (v0.1.0, issue #133), the
+approves). Today: `ilmu-belajar-kognitif.md` (issue #133), the
 cognitive-science reference on effective learning with per-programme
-recommendations. It changes no syllabus, corpus or programme document.
+recommendations, and `ai-rekayasa-perangkat-lunak.md` (issue #139), the
+research on AI in software engineering behind the per-programme AI-use
+policies. They change no syllabus, corpus or programme document by
+themselves; the policies live in each programme's own syllabus (and, for OSN,
+in `docs/operations/kebijakan-ai-osn.md`).
 
 **What must never go here:** programme-specific syllabi (belong in
 `docs/programs/<id>/`); machine-readable data; an approval the owner did not
@@ -301,8 +308,10 @@ the model/price table of the internal cross-portfolio standard.
 ## `docs/operations/`
 
 **What belongs here:** `runbook.md` (the cohort-start procedure, weekly
-cycle, contest→postmortem→upsolve loop, and monthly review) and
-`syllabus-check.md` (the §14.2 rule 8 syllabus-check procedure).
+cycle, contest→postmortem→upsolve loop, and monthly review),
+`syllabus-check.md` (the §14.2 rule 8 syllabus-check procedure) and
+`kebijakan-ai-osn.md` (the AI-use policy for OSN coaching, an operational
+procedure outside the transcribed corpus, issue #139).
 
 ## `.changeset/`
 

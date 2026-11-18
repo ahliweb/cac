@@ -1,6 +1,6 @@
 # Riset Pembelajaran Coding SD — Kebijakan, Capaian Resmi, Alat, dan Privasi
 
-- **Version:** v0.2.0
+- **Version:** v0.2.1
 - **Last updated:** 2026-11-19
 - **Status:** Riset pendukung silabus `sd-coding` v1.0 yang disetujui pemilik 2026-11-19 (issue #128); CP Fase C dicocokkan dengan SK 046/H/KR/2025 (bagian 3.5). Bagian lain tetap catatan riset penyusun, bukan keputusan.
 - **Changeset:** Bagian 3.5 baru: kutipan CP Fase C dicocokkan huruf demi huruf dengan teks SK Kepala BSKAP 046/H/KR/2025 (empat perbedaan, teks SK dipakai); bagian 1, 2.4, 3.1, dan 7 diperbarui. Riset awal untuk program `sd-coding`: kebijakan mata pelajaran pilihan Koding dan Kecerdasan Artifisial (KKA) di SD, capaian Fase C, posisi Informatika, kajian alat, dan risiko privasi anak.
@@ -237,7 +237,7 @@ pengantar yang berpijak pada Fase C KKA, bukan sebagai Informatika SD.
 
 CP Informatika Fase D-F (dipakai program `sma-coding`) tidak berlaku untuk
 SD. Jembatan ke Informatika berada di program SMP (`smp-coding`,
-disusun paralel, belum ada di repositori ini).
+kini disetujui dan terdaftar, silabus v1.1.0).
 
 ## 5. Kajian alat
 
@@ -320,5 +320,6 @@ rekomendasi ada di [`silabus.md`](silabus.md) bagian 11.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v0.2.1 | 2026-11-19 | Rujukan status `smp-coding` (bagian 4) diperbarui: program itu kini disetujui dan terdaftar; isi riset tidak diubah. |
 | v0.2.0 | 2026-11-19 | Kutipan CP Fase C dicocokkan dengan SK 046/H/KR/2025 (bagian 3.5, provenance salinan); status dan rujukan ke `silabus.md` diperbarui (issue #128). |
 | v0.1.0 | 2026-11-19 | Riset awal (issue #128). |

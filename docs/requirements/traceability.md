@@ -80,13 +80,19 @@ itself.
 | #76 — Register the `sma-coding` requirements | TR-09 |
 | #106 — Module-index schema for the `sma-coding` programme | FR-32 |
 | #140 — Programme table for audit and fidelity (ADR-0008) | TR-14 |
+| #127 — Research and syllabus for TK/PAUD coding; approved and encoded as `tk-coding` v1.0.0 (PR #145) | FR-34, TR-15 |
+| #128 — Research and syllabus for SD coding; approved and encoded as `sd-coding` v1.0.0 (PR #148) | FR-35, TR-16 |
+| #129 — Research and syllabus for SMP coding; approved and encoded as `smp-coding` v1.1.0 (PR #149) | FR-36, TR-17 |
+| #130 — Research and syllabus for university coding; approved and encoded as `kuliah-coding` v1.1.0 (PR #146) | FR-37, TR-18 |
+| #131 — Research and syllabus for adult coding; approved and encoded as `dewasa-coding` v1.1.0 (PR #147) | FR-38, TR-19 |
+| #139 — AI in software engineering research and the per-programme AI-use policies (PR #159 OSN, #160 SMP, #161 SMA, #162 kuliah, #163 dewasa) | ER-17, FR-36, FR-37, FR-38 |
 
 Rows `#27` and later are not required by the checker: only `#1`-`#26` must be present (the initial
 backlog), while any issue may be cited. A new programme adds its issues here as it adds requirements.
 
 ## Matrix 3 — Requirement → tests
 
-Requirements `FR-27`-`FR-33`, `TR-12`-`TR-14` and `GR-13` have no OSN syllabus section, so they
+Requirements `FR-27`-`FR-38`, `TR-12`-`TR-19` and `GR-13` have no OSN syllabus section, so they
 are traced by issue (Matrix 2) and by the tests below. Every path must exist; the checker
 (`checkTestLinks`) fails on a missing file, an unregistered ID or a row with no test.
 
@@ -99,9 +105,19 @@ are traced by issue (Matrix 2) and by the tests below. Every path must exist; th
 | FR-31 | `tests/unit/module-schema.test.ts`, `tests/unit/modules-domain.test.ts`, `tests/unit/render-module.test.ts`, `tests/integration/cli-modules.test.ts` |
 | FR-32 | `tests/unit/sma-module-schema.test.ts`, `tests/unit/sma-modules-domain.test.ts`, `tests/integration/cli-sma-modules.test.ts` |
 | FR-33 | `tests/unit/sma-plan.test.ts`, `tests/unit/render-sma-student-sheet.test.ts`, `tests/unit/sma-commands.test.ts`, `tests/integration/cli-sma-plan.test.ts` |
+| FR-34 | `tests/unit/tk-corpus-audit.test.ts`, `tests/integration/cli-tk-coding.test.ts` |
+| FR-35 | `tests/unit/sd-corpus-audit.test.ts`, `tests/unit/sd-week-codes.test.ts`, `tests/integration/cli-sd-coding.test.ts` |
+| FR-36 | `tests/unit/smp-corpus-audit.test.ts`, `tests/integration/cli-smp-coding.test.ts` |
+| FR-37 | `tests/unit/kul-corpus-audit.test.ts`, `tests/integration/cli-kuliah-coding.test.ts` |
+| FR-38 | `tests/unit/dw-corpus-audit.test.ts`, `tests/integration/cli-dewasa-coding.test.ts` |
 | TR-12 | `tests/integration/sma-coding-fidelity.test.ts` |
 | TR-13 | `tests/unit/check-module-code.test.ts`, `tests/integration/check-module-code.test.ts` |
 | TR-14 | `tests/unit/program-registry.test.ts`, `tests/integration/check-fidelity.test.ts` |
+| TR-15 | `tests/integration/tk-coding-fidelity.test.ts` |
+| TR-16 | `tests/integration/sd-coding-fidelity.test.ts` |
+| TR-17 | `tests/integration/smp-coding-fidelity.test.ts` |
+| TR-18 | `tests/integration/kuliah-coding-fidelity.test.ts` |
+| TR-19 | `tests/integration/dewasa-coding-fidelity.test.ts` |
 | GR-13 | `tests/unit/module-schema.test.ts`, `tests/unit/render-module.test.ts` |
 
 Every requirement ID in `register.md` appears in at least one row of Matrix 1 or Matrix 2, and

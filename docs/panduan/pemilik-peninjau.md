@@ -10,8 +10,8 @@ karangan dan siklus ulasnya) serta ADR-0006 (banyak program). Di halaman ini
 
 | Jenis | Contoh | Aturan |
 | --- | --- | --- |
-| Transkripsi | `data/osn/*.json`, `data/sma-coding/*.json`, lembar belajar yang diturunkan dari corpus | Disalin setia dari sumber. Berubah hanya lewat syllabus check dan form `curriculum-change`. |
-| Karangan | Modul di `content/<program>/modules/`, draf silabus di `docs/programs/` | Ditulis tim, termasuk draf agent AI. Berstatus `draf` sampai **manusia** menyetujuinya. |
+| Transkripsi | `data/osn/*.json` (dari PDF silabus OSN), `data/<program>/*.json` (disalin setia dari `silabus.md` program yang sudah Anda setujui), lembar belajar yang diturunkan dari corpus | Disalin setia dari sumber. Berubah hanya lewat syllabus check dan form `curriculum-change` (OSN) atau revisi silabus yang Anda setujui (program coding); `bun run check:fidelity` memeriksa data terhadap silabusnya. |
+| Karangan | Modul di `content/<program>/modules/`, silabus program coding di `docs/programs/<id>/silabus.md`, kebijakan AI per program | Ditulis tim, termasuk draf agent AI. Berstatus `draf` sampai **manusia** menyetujuinya; silabus program berlaku setelah Anda menyetujuinya. |
 
 Agent AI boleh membuat dan menyunting draf, tetapi **tidak pernah**
 menetapkan `disetujui` atas inisiatif sendiri dan tidak pernah mencatat
@@ -113,11 +113,16 @@ bukti; AI tidak menyetujui PR-nya sendiri maupun rilis produksi.
 
 Draf silabus program (mis. `docs/programs/sma-coding/`) adalah konten
 karangan. Ia menjadi sumber corpus `data/<program>/` hanya setelah Anda
-menyetujuinya (ADR-0006): silabus `sma-coding` v1.0 disetujui 2026-11-18,
-revisinya v1.1 (blok fondasi kelas X) disetujui 2026-11-19 untuk jalur A dan B,
-dan v1.2 (jalur C, D, dan E, dari draf yang Anda setujui beserta semua
-rekomendasinya) disetujui 2026-11-19; baru sesudahnya dikodekan ke
-`data/sma-coding/`.
+menyetujuinya (ADR-0006). Keadaan 2026-11-19: keenam program coding sudah
+Anda setujui, dikodekan ke `data/<id>/`, dan terdaftar di
+`data/programs.json` (ADR-0008): `sma-coding` v1.3.0 (v1.0 disetujui
+2026-11-18; v1.1, v1.2, dan v1.3 pada 2026-11-19), `tk-coding` v1.0.0,
+`sd-coding` v1.0.0, `smp-coding` v1.1.0, `kuliah-coding` v1.1.0, dan
+`dewasa-coding` v1.1.0. Revisi v1.1/v1.3 memuat butir dan kebijakan AI sesuai
+keputusan Anda pada issue [#139](https://github.com/ahliweb/osn/issues/139)
+(kebijakan disusun per program). Peta statusnya ada di
+[`docs/programs/README.md`](../programs/README.md).
+
 Perubahan atas silabus yang sudah disetujui: usulan lewat issue, revisi
 berstatus draf, lalu persetujuan Anda yang dicatat dengan tanggal. Contoh
 yang sudah selesai: blok fondasi kelas X, usulannya
@@ -177,11 +182,15 @@ Keluaran nyata perintah itu pada 2026-11-19 (kolom dipisah tab; label dan
 tanggal pembuatan dipotong di sini):
 
 ```text
-131	OPEN	Riset dan draf silabus coding untuk dewasa: pekerja, profesional, personal, pebisnis
-130	OPEN	Riset dan draf silabus coding untuk perguruan tinggi
-129	OPEN	Riset dan draf silabus coding untuk SMP
-128	OPEN	Riset dan draf silabus coding untuk SD
-127	OPEN	Riset dan draf silabus coding untuk TK (PAUD)
+157	OPEN	[F1/06] docs: finalisasi runbook rename dan kriteria penerimaan pascamigrasi
+156	OPEN	[F1/05] docs: cross-spec review dan catat hasil Gate 9 CaC
+155	OPEN	[F1/04] riset: audit keamanan, perubahan GitHub dan strategi recovery
+154	OPEN	[F1/03] docs: verifikasi invariants data kurikulum dan traceability rename
+153	OPEN	[F1/02] riset: petakan kontrak CLI osn dan strategi kompatibilitas cac
+152	OPEN	[F1/01] riset: audit seluruh consumer, integrasi, dan URL aktif repo OSN
+151	OPEN	Tinjau ulang riset AI dalam rekayasa perangkat lunak (Mei 2027)
+150	OPEN	[F1/00] epik: persiapkan migrasi identitas CaC ke ahliweb/cac
+139	OPEN	Riset AI dalam rekayasa perangkat lunak: vibe coding, AI-native engineer, pengembangan berkelanjutan
 125	OPEN	Tinjauan pemilik atas 29 modul draf sma-coding
 124	OPEN	Seri modul materi untuk jalur C, D, dan E
 ```
@@ -190,25 +199,24 @@ Cara membacanya, per issue:
 
 | Issue | Jenis | Yang menunggu Anda | Dokumen untuk dibaca |
 | --- | --- | --- | --- |
-| #127 | Keputusan persetujuan draf | Meninjau draf `tk-coding` dan menjawab pertanyaan Q1-Q9 | [`tk-coding/README.md`](../programs/tk-coding/README.md) |
-| #128 | Keputusan persetujuan draf | Meninjau draf `sd-coding` dan tujuh pertanyaan terbuka | [`sd-coding/README.md`](../programs/sd-coding/README.md) |
-| #129 | Keputusan persetujuan draf | Meninjau draf `smp-coding` v0.2.0 dan pertanyaan Q1-Q11 | [`smp-coding/README.md`](../programs/smp-coding/README.md) |
-| #130 | Keputusan persetujuan draf | Meninjau draf `kuliah-coding` dan sembilan pertanyaan | [`kuliah-coding/README.md`](../programs/kuliah-coding/README.md) |
-| #131 | Keputusan persetujuan draf | Meninjau draf `dewasa-coding` dan pertanyaan 12.1-12.8 | [`dewasa-coding/README.md`](../programs/dewasa-coding/README.md) |
 | #125 | Tinjauan konten | Meninjau 29 modul draf `sma-coding` | bagian "Meninjau modul draf" di atas |
 | #124 | Pekerjaan lanjutan | Modul jalur C, D, E belum ada; belum menunggu keputusan Anda | [`sma-coding/README.md`](../programs/sma-coding/README.md) |
+| #139 | Riset dan keputusan | Keputusan kebijakan AI per program sudah Anda ambil dan diterapkan (OSN #159, SMP #160, SMA #161, kuliah #162, dewasa #163); issue masih terbuka (tinjau ulang terjadwal di #151) | [`riset/ai-rekayasa-perangkat-lunak.md`](../riset/ai-rekayasa-perangkat-lunak.md) |
+| #151 | Tinjau ulang terjadwal | Meninjau ulang riset AI pada Mei 2027; belum jatuh tempo | [`riset/ai-rekayasa-perangkat-lunak.md`](../riset/ai-rekayasa-perangkat-lunak.md) |
+| #150 sampai #157 | Persiapan migrasi identitas (epik dan turunannya) | Dikerjakan di jalur terpisah (PR draf #158); tidak dibahas panduan ini | lihat issue #150 |
 
-Kelima draf program (#127 sampai #131) dan riset ilmu kognitif
-([`docs/riset/ilmu-belajar-kognitif.md`](../riset/ilmu-belajar-kognitif.md),
-issue #133) adalah kandidat tinjauan baru. Peta statusnya ada di
-[`docs/programs/README.md`](../programs/README.md). Menyetujui draf tidak
-otomatis mendaftarkan program: sesudah persetujuan, urutan kerjanya skema,
-`data/<program>/`, entri registri, lalu uji (ADR-0006). Riset #133 tidak
-mengubah dokumen program mana pun; perubahan program yang berasal darinya
-dikerjakan terpisah setelah Anda menyetujui.
+Issue #127 sampai #131 (draf lima program coding), #133 (riset ilmu
+kognitif) dan #140 (titik sambung audit dan fidelity) sudah selesai dan
+tertutup. Persetujuan silabus tidak otomatis menyiapkan materi: kelima
+program itu belum punya modul di `content/` dan belum didukung `plan` dan
+`render`.
 
-Silabus v1.1 (#92) dan v1.2 (#68, #84, #88) sudah Anda setujui 2026-11-19;
-kandidat tinjauan Anda yang lain: 29 modul draf `sma-coding` di
-`content/sma-coding/modules/` (fondasi, matematika komputasi, cloud,
-pendamping; baca dengan `osn render modul --program sma-coding --id <id>`,
-daftar id di `data/sma-coding/modules.json`).
+Kandidat tinjauan Anda berikutnya:
+
+- 29 modul draf `sma-coding` di `content/sma-coding/modules/` (fondasi,
+  matematika komputasi, cloud, pendamping; baca dengan
+  `osn render modul --program sma-coding --id <id>`, daftar id di
+  `data/sma-coding/modules.json`), issue #125.
+- Silabus v1.1 (#92), v1.2 (#68, #84, #88), dan v1.3 (#139) sudah Anda
+  setujui; yang belum ada adalah modul materi untuk jalur C, D, dan E (#124)
+  dan untuk lima program coding lainnya.

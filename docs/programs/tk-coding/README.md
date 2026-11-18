@@ -1,6 +1,6 @@
 # Program Pembelajaran Coding TK/PAUD (`tk-coding`)
 
-- **Version:** v1.0.0
+- **Version:** v1.0.1
 - **Last updated:** 2026-11-19
 - **Status:** DISETUJUI pemilik program, 2026-11-19, beserta rekomendasi penyusun (silabus v1.0.0). Terdaftar di `data/programs.json` dengan corpus `data/tk-coding/` (ADR-0006, ADR-0008).
 
@@ -23,7 +23,7 @@ untuk PAUD) yang bermain, mayoritas tanpa layar, dan beririsan dengan Capaian
 Pembelajaran Fase Fondasi (Kepka BSKAP 046/H/KR/2025). Dasar kebijakannya
 Kepmendikdasmen 127/P/2025, yang menyebut "pembelajaran muatan pengembangan
 berpikir komputasional pada pendidikan anak usia dini". Program ini menjadi
-jembatan awal ke program SD (`sd-coding`, sedang disusun terpisah).
+jembatan awal ke program SD (`sd-coding`, kini disetujui dan terdaftar, silabus v1.0.0).
 
 Temuan utama riset: CP Fase Fondasi tidak menyebut koding secara eksplisit;
 irisannya adalah pola, klasifikasi, pemecahan masalah sederhana, rekayasa, dan
@@ -68,3 +68,4 @@ keduanya sel demi sel.
 | --- | --- | --- |
 | v0.1.0 | 2026-11-19 | Draf awal folder program (issue #127): README, riset, dan silabus draf. |
 | v1.0.0 | 2026-11-19 | Silabus disetujui pemilik beserta rekomendasi penyusun; `silabus-draf.md` menjadi `silabus.md`; program di-encode ke `data/tk-coding/` dan didaftarkan (issue #127). |
+| v1.0.1 | 2026-11-19 | Kalimat status `sd-coding` di bagian tujuan diperbarui (kini disetujui dan terdaftar); isi program tidak diubah. |
