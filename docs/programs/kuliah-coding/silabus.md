@@ -1,17 +1,21 @@
-# Silabus Pembelajaran Coding Perguruan Tinggi (DRAF) — v0.1
+# Silabus Pembelajaran Coding Perguruan Tinggi — v1.0
 
-- **Version:** v0.1.0
+- **Version:** v1.0.0
 - **Last updated:** 2026-11-19
-- **Status:** **DRAF**, belum disetujui pemilik. Issue #130. Tidak ada `data/kuliah-coding/` dan tidak ada entri `data/programs.json` sampai pemilik menyetujui (ADR-0006).
-- **Changeset:** Draf awal silabus coding perguruan tinggi: tiga jalur (U, I, K), 24 mata kuliah dalam SKS dan semester, pemetaan ke 17 knowledge area CS2023, jembatan dari SMA dan ke dunia kerja, kebijakan asesmen dan AI, pertanyaan terbuka dengan rekomendasi.
+- **Status:** DISETUJUI pemilik program, 2026-11-19 (issue #130), beserta seluruh rekomendasi penyusun atas pertanyaan terbuka (bagian 9). Menjadi sumber corpus program `kuliah-coding` (ADR-0006, ADR-0008).
+- **Changeset:** Silabus v1.0 disetujui pemilik: tiga jalur (U, I, K), 24 mata kuliah dalam SKS dan semester, pemetaan ke 17 knowledge area CS2023, kolom CPL tetap isian program studi pengadopsi, jembatan dari SMA dan ke dunia kerja, kebijakan AI tiga tingkat, dan keputusan pemilik 2026-11-19 atas pertanyaan terbuka (opsi rekomendasi); isi rencana tidak berubah dari draf v0.1.
 
-> **DRAF, bukan silabus resmi.** Dokumen ini konten **karangan** menurut
+> **Disetujui pemilik program pada 2026-11-19** (keputusan lewat dialog
+> pilihan, dicatat di issue #130 dan di bagian 9). Dokumen ini konten
+> **karangan** menurut
 > [ADR-0007](../../architecture/adr/0007-authored-learning-content.md): bukan
 > dokumen pemerintah, bukan kurikulum program studi mana pun, dan bukan materi
 > resmi Puspresnas, IA TOKI, ACM, IEEE, atau penyelenggara ICPC. Seluruh
 > capaian pembelajaran mata kuliah (CPMK), topik, dan pembagian SKS adalah
-> **rancangan penyusun**. Agent tidak mengubah status ini; hanya pemilik yang
-> dapat menyetujui. Dasar sumber ada di [`riset.md`](riset.md).
+> **rancangan penyusun yang kini disetujui**; persetujuan tidak mengubah
+> sifatnya sebagai karangan. Butir `[belum terverifikasi]` tetap belum
+> terverifikasi dan butir `[asumsi]` tetap rancangan penyusun. Dasar sumber ada
+> di [`riset.md`](riset.md).
 
 ## 0. Cara membaca dokumen ini
 
@@ -66,7 +70,7 @@ mahasiswa sendiri, tanpa data pribadi di repositori ini (bagian 8);
 
 **Rekomendasi penyusun: opsi A**, dengan U dan K kecil (14 dan 6 SKS) dan I
 sebagai paket inti yang dapat diadopsi sebagian (bagian 2.4).
-Hanya rekomendasi; keputusan di pemilik (bagian 9).
+Dipilih pemilik pada 2026-11-19 (bagian 9, nomor 1).
 
 ### 2.2 Ringkasan jalur
 
@@ -449,22 +453,24 @@ huruf b: tanpa membedakan latar belakang ekonomi).
 - Modul kuliah tidak mensyaratkan akun mahasiswa pada layanan pihak ketiga
   `[asumsi]`.
 
-## 9. Pertanyaan terbuka untuk pemilik
+## 9. Keputusan pemilik atas pertanyaan terbuka (2026-11-19)
 
-Keputusan milik pemilik. Opsi disertai rekomendasi penyusun.
+Dijawab pemilik lewat dialog pilihan pada 2026-11-19 dan dicatat di issue
+#130: draf disetujui **beserta rekomendasi penyusun**, sehingga setiap
+pertanyaan terbuka draf v0.1 terjawab dengan opsi rekomendasinya.
 
-| No. | Pertanyaan | Opsi | Rekomendasi |
-| --- | --- | --- | --- |
-| 1 | Pembagian jalur | (A) tiga jalur U, I, K; (B) dua jalur, K ekstrakurikuler; (C) satu jalur I | **A** (bagian 2.1) |
-| 2 | Bahasa pertama jalur I | (A) C++ dahulu; (B) Python dahulu; (C) Java | **A**; Python di jalur U (bagian 7.1) |
-| 3 | Besar jalur I | (A) paket penuh 42 SKS inti; (B) hanya 8 mata kuliah inti (SDF, AL, DM, SE, SPD, AI, SEP, proyek); (C) hanya tabel pemetaan tanpa rencana mata kuliah | **A** sebagai draf, dengan catatan prodi dapat mengadopsi sebagian |
-| 4 | Bentuk adopsi jalur U dan K | (A) mata kuliah pilihan/umum prodi; (B) paket lintas prodi (di luar program studi, Pasal 16 ayat (4)); (C) keduanya | **C** |
-| 5 | Kebijakan AI | (A) tiga tingkat hijau-kuning-merah (bagian 6.3); (B) larangan menyeluruh; (C) bebas dengan pengungkapan | **A** |
-| 6 | Mata kuliah FPL dan statistik | (A) tambah FPL (2 SKS) dan statistik (3 SKS) ke jalur I; (B) biarkan sebagai celah yang diakui; (C) FPL saja | **B** pada draf awal, putuskan setelah audit unit CS2023 |
-| 7 | Rujukan ICPC | (A) pemilik memberi tautan aturan ICPC wilayah tujuan; (B) draf memakai format regional Eropa/Amerika Utara sebagai bentuk latihan saja; (C) hapus jalur K | **A**, sementara **B** |
-| 8 | Rujukan APTIKOM dan CPL | (A) pemilik memberi tautan dokumen kurikulum acuan; (B) tanpa rujukan APTIKOM; (C) cari lagi nanti | **A**, sementara **B** |
-| 9 | Lab dan cloud | (A) lab kampus; (B) BYOD; (C) cloud; (D) A+B | **D** (bagian 7.3) |
-| 10 | Hubungan ke dewasa-coding | (A) tautkan setelah program itu ada; (B) tidak ditautkan; (C) satu program gabungan | **A** |
+| No. | Pertanyaan | Keputusan |
+| --- | --- | --- |
+| 1 | Pembagian jalur | **A**: tiga jalur U, I, K (bagian 2.1). |
+| 2 | Bahasa pertama jalur I | **A**: C++ dahulu di jalur I dan K; Python di jalur U (bagian 7.1). |
+| 3 | Besar jalur I | **A**: paket penuh 42 SKS inti, dengan catatan prodi dapat mengadopsi sebagian (bagian 2.4). |
+| 4 | Bentuk adopsi jalur U dan K | **C**: keduanya, mata kuliah pilihan/umum prodi dan paket lintas prodi (bagian 2.4). |
+| 5 | Kebijakan AI | **A**: tiga tingkat hijau-kuning-merah (bagian 6.3). |
+| 6 | Mata kuliah FPL dan statistik | **B**: dibiarkan sebagai celah yang diakui (bagian 4.2); diputuskan ulang setelah audit unit CS2023. |
+| 7 | Rujukan ICPC | **A**, sementara **B**: bila pemilik memberi tautan aturan ICPC wilayah tujuan, rujukan diperbarui; sementara format regional dipakai sebagai bentuk latihan saja. Tautan belum diberikan. |
+| 8 | Rujukan APTIKOM dan CPL | **A**, sementara **B**: bila pemilik memberi tautan dokumen kurikulum acuan, rujukan diperbarui; sementara tanpa rujukan APTIKOM. CPL tetap kolom isian program studi pengadopsi (bagian 4.1). Tautan belum diberikan. |
+| 9 | Lab dan cloud | **D**: lab kampus dan perangkat milik mahasiswa; cloud hanya untuk KUL-I-302 dan proyek tertentu (bagian 7.3). |
+| 10 | Hubungan ke dewasa-coding | **A**: ditautkan setelah program itu ada (bagian 5.2). |
 
 ## 10. Sumber dan batasan
 
@@ -477,10 +483,11 @@ Keputusan milik pemilik. Opsi disertai rekomendasi penyusun.
   CPL resmi, tidak ada unit CS2023, tidak ada aturan ICPC Indonesia, tidak ada
   harga atau lisensi alat yang diriset; tidak ada pilot di kelas; tidak ada
   masukan dosen, prodi, atau industri; jam dan beban belum diuji.
-- Tidak ada keputusan pemilik yang tercatat pada versi ini.
+- Keputusan pemilik 2026-11-19 tercatat di bagian 9. Persetujuan tidak mengubah batasan di atas: isi rencana tetap karangan penyusun.
 
 ## Changelog
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v1.0.0 | 2026-11-19 | Disetujui pemilik program beserta rekomendasi penyusun (issue #130). Berkas diganti nama dari `silabus-draf.md`; status menjadi disetujui; pertanyaan terbuka (bagian 9) diganti keputusan pemilik; isi rencana (bagian 1-8) tidak berubah. |
 | v0.1.0 | 2026-11-19 | Draf awal (issue #130): tiga jalur, 24 mata kuliah, pemetaan KA CS2023, jembatan, asesmen, AI, privasi, alat, pertanyaan terbuka. |

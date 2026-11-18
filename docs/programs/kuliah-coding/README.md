@@ -1,20 +1,20 @@
 # Program Pembelajaran Coding Perguruan Tinggi (`kuliah-coding`)
 
-- **Version:** v0.1.0
+- **Version:** v1.0.0
 - **Last updated:** 2026-11-19
-- **Status:** **DRAF**, belum disetujui pemilik. Issue #130. Program ini **belum terdaftar**: tidak ada `data/kuliah-coding/`, tidak ada entri `data/programs.json`, dan tidak ada `content/kuliah-coding/` (ADR-0006: program berstatus draf hanya hidup di `docs/programs/`).
+- **Status:** **DISETUJUI** pemilik program, 2026-11-19 (issue #130), beserta rekomendasi penyusun. Program **terdaftar** di `data/programs.json` (versi silabus 1.0.0) dan corpusnya ada di `data/kuliah-coding/` (ADR-0006, ADR-0008). Belum ada `content/kuliah-coding/` (modul pendamping).
 
 > Isi folder ini adalah konten **karangan** (*authored*) menurut
 > [ADR-0007](../../architecture/adr/0007-authored-learning-content.md), bukan
 > dokumen pemerintah dan bukan materi resmi Puspresnas, IA TOKI, ACM, IEEE,
-> atau penyelenggara ICPC. Agent tidak pernah mencatat persetujuan atas nama
-> pemilik.
+> atau penyelenggara ICPC. Persetujuan pemilik atas silabus tidak mengubah
+> sifat karangan itu.
 
 ## Tujuan program
 
 Menyediakan silabus pembelajaran coding untuk mahasiswa Indonesia, dalam
 satuan SKS dan semester menurut Permendiktisaintek 39/2025, pada tiga jalur
-(rekomendasi pembagian ada di `silabus-draf.md` bagian 2.1):
+(pembagian dijelaskan di `silabus.md` bagian 2.1):
 
 | Jalur | Isi | Sasaran | Mata kuliah / SKS |
 | --- | --- | --- | --- |
@@ -28,31 +28,34 @@ satuan SKS dan semester menurut Permendiktisaintek 39/2025, pada tiga jalur
 | --- | --- |
 | `README.md` | Dokumen ini: status, tujuan, berkas, pertanyaan pemilik, changelog. |
 | `riset.md` | Sumber yang benar-benar dibuka pada 2026-11-19 (URL, tanggal akses, hasil), kutipan terverifikasi (Permendiktisaintek 39/2025, 17 knowledge area CS2023, aturan regional ICPC), dan yang belum terverifikasi (CPL nasional untuk coding, unit CS2023, aturan ICPC Indonesia, APTIKOM). |
-| `silabus-draf.md` | Draf silabus v0.1: jalur U, I, K; 24 mata kuliah berkode `KUL-<jalur>-<nnn>` dengan SKS, semester, prasyarat, CPMK karangan; pemetaan; jembatan dari SMA dan ke dunia kerja; asesmen, integritas akademik, AI; bahasa dan alat; privasi; pertanyaan terbuka. |
+| `silabus.md` | Silabus v1.0 (disetujui; sumber `data/kuliah-coding/`): jalur U, I, K; 24 mata kuliah berkode `KUL-<jalur>-<nnn>` dengan SKS, semester, prasyarat, CPMK karangan; pemetaan; jembatan dari SMA dan ke dunia kerja; asesmen, integritas akademik, AI; bahasa dan alat; privasi; keputusan pemilik atas pertanyaan terbuka. |
 
-## Pertanyaan untuk pemilik
+## Keputusan pemilik (2026-11-19)
 
-Rincian opsi dan rekomendasi ada di `silabus-draf.md` bagian 9. Ringkasan
-(rekomendasi di huruf tebal):
+Dijawab lewat dialog pilihan dan dicatat di issue #130; rinciannya ada di
+`silabus.md` bagian 9. Draf disetujui beserta rekomendasi penyusun:
 
-1. Pembagian jalur: **tiga jalur (U, I, K)** / dua jalur / satu jalur.
-2. Bahasa pertama jalur I: **C++ dahulu (Python di jalur U)** / Python dahulu / Java.
-3. Besar jalur I: **paket penuh 42 SKS inti sebagai draf** / 8 mata kuliah inti / hanya pemetaan.
-4. Bentuk adopsi jalur U dan K: mata kuliah pilihan / paket lintas prodi / **keduanya**.
-5. Kebijakan AI: **tiga tingkat hijau-kuning-merah** / larangan / bebas dengan pengungkapan.
-6. Mata kuliah FPL dan statistik: **biarkan sebagai celah dahulu** / tambah.
-7. Rujukan ICPC dan APTIKOM: **pemilik memberi tautan resmi**; sementara tanpa rujukan itu.
-8. Lab dan cloud: **lab kampus dan BYOD** / cloud.
-9. Hubungan ke dewasa-coding: **tautkan setelah program itu ada**.
+1. Pembagian jalur: **tiga jalur (U, I, K)**.
+2. Bahasa pertama jalur I: **C++ dahulu** (Python di jalur U).
+3. Besar jalur I: **paket penuh 42 SKS inti**; prodi dapat mengadopsi sebagian.
+4. Bentuk adopsi jalur U dan K: **keduanya** (mata kuliah pilihan/umum dan paket lintas prodi).
+5. Kebijakan AI: **tiga tingkat hijau-kuning-merah**.
+6. Mata kuliah FPL dan statistik: **dibiarkan sebagai celah yang diakui**.
+7. Rujukan ICPC dan APTIKOM: tautan resmi diminta dari pemilik; sementara tanpa rujukan itu. CPL tetap **kolom isian program studi pengadopsi**.
+8. Lab dan cloud: **lab kampus dan BYOD**.
+9. Hubungan ke dewasa-coding: **ditautkan setelah program itu ada**.
 
-## Cara menyetujui
+## Corpus
 
-Persetujuan lewat dialog pilihan pemilik (AGENTS.md, DL-043), dicatat dengan
-tanggal di issue #130 dan di dokumen ini. Setelah itu mengikuti ADR-0006:
-skema, lalu `data/kuliah-coding/`, entri registri, dan tes; tidak sebelumnya.
+`data/kuliah-coding/` ditranskripsi setia dari `silabus.md`; skemanya
+`src/schema/kul-*.ts`, auditnya `src/domain/kul-corpus-audit.ts`, dan
+kesetiaannya diperiksa sel demi sel oleh `bun run check:fidelity --program
+kuliah-coding` (`src/cli/fidelity/kuliah-coding.ts`). Perubahan isi silabus
+memerlukan persetujuan pemilik baru.
 
 ## Changelog
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v1.0.0 | 2026-11-19 | Disetujui pemilik (issue #130); `silabus-draf.md` menjadi `silabus.md`; program terdaftar dan di-encode ke `data/kuliah-coding/`. |
 | v0.1.0 | 2026-11-19 | Draf awal folder program (issue #130): README, riset, silabus draf. |

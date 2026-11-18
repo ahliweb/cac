@@ -1,8 +1,8 @@
 # Riset Sumber: Pembelajaran Coding untuk Mahasiswa (`kuliah-coding`)
 
-- **Version:** v0.1.0
+- **Version:** v1.0.0
 - **Last updated:** 2026-11-19
-- **Status:** DRAF (riset, bukan keputusan pemilik). Issue #130.
+- **Status:** Riset pendukung [`silabus.md`](silabus.md) v1.0, yang disetujui pemilik 2026-11-19 (issue #130, keputusan di `silabus.md` bagian 9). Dokumen ini catatan sumber, bukan dokumen yang disetujui itu sendiri; temuan `[belum terverifikasi]` tetap belum terverifikasi.
 
 > Dokumen ini mencatat sumber yang **benar-benar dibuka** penyusun pada
 > **2026-11-19**, apa yang terverifikasi dari tiap sumber, dan apa yang tidak.
@@ -261,7 +261,7 @@ skema, dan pedoman teknis MBKM terkini tidak dibuka `[belum terverifikasi]`.
    kurikulum, atau dokumen kerangka kualifikasi nasional.
 3. CS2023 hanya terbaca sampai daftar KA.
 4. Aturan ICPC yang dibuka bersifat regional (Eropa, Amerika Utara).
-5. Pelatihan, harga, dan lisensi alat (bagian 7 silabus draf) tidak diriset
+5. Pelatihan, harga, dan lisensi alat (bagian 7 `silabus.md`) tidak diriset
    pada tahap ini; hanya lisensi dan sifat umum yang disebut, ditandai
    `[belum terverifikasi]` bila perlu.
 
@@ -269,4 +269,5 @@ skema, dan pedoman teknis MBKM terkini tidak dibuka `[belum terverifikasi]`.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v1.0.0 | 2026-11-19 | Status disesuaikan dengan persetujuan pemilik atas `silabus.md` v1.0 (`silabus-draf.md` diganti nama); isi riset tidak berubah. |
 | v0.1.0 | 2026-11-19 | Riset awal (issue #130): regulasi (Permendiktisaintek 39/2025), CS2023 (17 KA), ICPC, APTIKOM, MBKM. |
