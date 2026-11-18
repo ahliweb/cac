@@ -1,9 +1,9 @@
 # Rancangan Modul Pendamping Literasi Digital (SMA Coding)
 
-- **Version:** v0.2.0
+- **Version:** v0.3.0
 - **Last updated:** 2026-11-19
-- **Status:** Rancangan DISETUJUI pemilik 2026-11-19 beserta keenam rekomendasi (issue #69); modul belum ada di repositori (menunggu skema indeks #106); modul yang kelak ditulis berstatus draf sampai ditinjau pemilik
-- **Changeset:** Mencatat persetujuan rancangan oleh pemilik (2026-11-19, enam rekomendasi); rujukan silabus diperbarui ke v1.1 yang sudah disetujui; pertanyaan terbuka ditandai terjawab; celah F-LD-d dan F-LD-e jalur A dicatat sebagai issue #105.
+- **Status:** Rancangan DISETUJUI pemilik 2026-11-19 beserta keenam rekomendasi (issue #69); tujuh modul draf `pendamping-*` ada di repositori sejak 2026-11-19 (PR #118), terindeks di `data/sma-coding/modules.json`, berstatus draf sampai ditinjau pemilik; modul yang kelak ditulis berstatus draf sampai ditinjau pemilik
+- **Changeset:** Status: tujuh modul draf `pendamping-*` masuk repositori dan terindeks (PR #118).
 
 > **Rancangan disetujui pemilik pada 2026-11-19** (dialog pilihan, dicatat
 > di komentar issue #69) beserta **keenam rekomendasi** di bagian 8. Yang
@@ -300,5 +300,6 @@ dicatat sebagai issue terpisah (#105). Modul ditulis berstatus `draf`.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v0.3.0 | 2026-11-19 | Status: tujuh modul draf `pendamping-*` masuk repositori dan terindeks (PR #118). |
 | v0.2.0 | 2026-11-19 | Rancangan disetujui pemilik beserta keenam rekomendasi (issue #69); status, kotak catatan, dan pertanyaan terbuka diperbarui; rujukan silabus ke v1.1; celah F-LD-d dan F-LD-e jalur A dicatat sebagai #105; contoh kode minggu `A-X1-M3` menjadi `A-X1-M9` (padanan v1.0 ke v1.1). |
 | v0.1.0 | 2026-11-18 | Rancangan awal (issue #69, tahap 1): verifikasi daftar butir terhadap silabus bagian 4.3 dan usulan fondasi bagian 3.1; tujuh modul pendamping dengan butir, kelas, durasi, kegiatan, dan prasyarat; opsi pelaksanaan dengan penilaian dan rekomendasi; pemetaan butir ke modul; bentuk modul; kebutuhan skema indeks; pertanyaan terbuka. Status DRAF. |

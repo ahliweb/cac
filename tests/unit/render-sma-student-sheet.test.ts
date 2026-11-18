@@ -54,7 +54,7 @@ describe("renderSmaStudentSheet", () => {
       "## Latihan dan kegiatan",
       "## Butir CP terkait",
       "## Jembatan ke OSN",
-      "## Modul pendamping",
+      "## Modul terkait",
       "## Daftar periksa mandiri",
     ]);
   });
@@ -110,7 +110,7 @@ describe("renderSmaStudentSheet", () => {
     );
     expect(text).toContain("Tidak ada butir CP yang dipetakan ke minggu ini");
     expect(text).not.toContain("## Jembatan ke OSN");
-    expect(text).not.toContain("## Modul pendamping");
+    expect(text).not.toContain("## Modul terkait");
   });
 });
 

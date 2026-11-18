@@ -66,7 +66,7 @@ jalur). Gurumu menjalankan
 `osn render lembar-siswa --program sma-coding --week <kode-minggu>`. Isinya:
 topik, **Tujuan**, **Keluaran**, **Latihan dan kegiatan**, **Butir CP terkait**
 (beserta kutipan Capaian Pembelajaran-nya), **Jembatan ke OSN** (kalau ada),
-**Modul pendamping** (kalau ada; modul bertanda **DRAF** belum ditinjau
+**Modul terkait** (kalau ada; modul bertanda **DRAF** belum ditinjau
 manusia, jadi periksa lagi ke rujukan resminya), dan **Daftar periksa mandiri**
 berisi kotak kosong. Cara memakainya sama dengan lembar OSN di atas. Lembar ini
 juga tanpa kolom nama. Cuplikan nyata lembar `FND-X1-M3`:

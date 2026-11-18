@@ -1,9 +1,9 @@
 # Rancangan Seri Modul Matematika Komputasi Dasar (sma-coding)
 
-- **Version:** v0.2.0
+- **Version:** v0.3.0
 - **Last updated:** 2026-11-19
-- **Status:** Rancangan DISETUJUI pemilik 2026-11-19 beserta keenam rekomendasi (issue #87); modul belum ada di repositori (menunggu skema indeks #106); modul yang kelak ditulis berstatus draf sampai ditinjau pemilik
-- **Changeset:** Mencatat persetujuan rancangan oleh pemilik (2026-11-19, enam rekomendasi); kode minggu diperbarui dari silabus v1.0 ke v1.1 memakai tabel padanan silabus bagian 3.0; pertanyaan terbuka ditandai terjawab; urutan pengerjaan diselaraskan dengan #106.
+- **Status:** Rancangan DISETUJUI pemilik 2026-11-19 beserta keenam rekomendasi (issue #87); tujuh modul draf `matkom-*` ada di repositori sejak 2026-11-19 (PR #116), terindeks di `data/sma-coding/modules.json`, berstatus draf sampai ditinjau pemilik; modul yang kelak ditulis berstatus draf sampai ditinjau pemilik
+- **Changeset:** Status: tujuh modul draf `matkom-*` masuk repositori dan terindeks (PR #116).
 
 > **Rancangan disetujui pemilik pada 2026-11-19** (dialog pilihan, dicatat
 > di komentar issue #87) beserta **keenam rekomendasi** di bagian 7. Yang
@@ -406,5 +406,6 @@ mencatat persetujuan itu.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v0.3.0 | 2026-11-19 | Status: tujuh modul draf `matkom-*` masuk repositori dan terindeks (PR #116). |
 | v0.2.0 | 2026-11-19 | Rancangan disetujui pemilik beserta keenam rekomendasi (issue #87); status, kotak catatan, dan pertanyaan terbuka diperbarui; kode minggu kelas X dipetakan dari v1.0 ke v1.1 (tabel padanan silabus bagian 3.0): `A-X1-M3`→`A-X1-M9`, `A-X2-M2`→`A-X2-M4`, `A-X1-M11`/`M12`→`A-X2-M2`/`M3`, `A-X1-M5`+`M8`→`A-X1-M10`, `A-X1-M9`→`A-X1-M12`, `A-X2-M10`→`A-X2-M11`, `A-X2-M7`→`A-X2-M8`, `A-X2-M11`→`A-X2-M12`, `B-X1-M3`→`B-X1-M9`, `B-X1-M5`+`M8`→`B-X1-M10`, `B-X1-M9`→`B-X1-M12`, `B-X1-M11`→`B-X2-M2`, `B-X2-M2`→`B-X2-M5`; kode kelas XI dan XII tidak berubah; urutan pengerjaan diselaraskan dengan #106. |
 | v0.1.0 | 2026-11-18 | Rancangan awal (issue #87, tahap 1): tujuan, tujuh modul dengan pemetaan minggu v1.0 dan butir CP, batas dengan fondasi dan modul OSN, bentuk modul, kebutuhan skema (dua opsi, rekomendasi), urutan pengerjaan, enam pertanyaan terbuka. Status DRAF. |

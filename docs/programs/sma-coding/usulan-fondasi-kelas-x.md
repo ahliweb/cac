@@ -1,9 +1,9 @@
 # Usulan Blok Fondasi Informatika Dasar Wajib di Kelas X
 
-- **Version:** v0.5.0
+- **Version:** v0.6.0
 - **Last updated:** 2026-11-19
 - **Status:** DRAF — kedelapan keputusan pemilik dicatat (2026-11-18); sudah diterapkan di [silabus v1.1](silabus.md) (issue #92), yang disetujui pemilik 2026-11-19; dokumen usulan ini tetap menjadi riwayat usulan
-- **Changeset:** Bagian 5 (bentuk materi) diperbarui: modul fondasi kini dikerjakan di issue #107 (draf ditulis, menunggu skema indeks #106; belum ada di repositori). Isi usulan lainnya tidak diubah.
+- **Changeset:** Bagian 5: keenam modul draf fondasi masuk repositori (PR #115) dan terindeks (skema #106).
 
 > **Keputusan pemilik (2026-11-18, dialog pilihan, dicatat di issue #86):**
 > blok fondasi **7 minggu** — paket enam minggu opsi (b) ditambah **satu
@@ -296,10 +296,9 @@ Keputusan ada pada pemilik.
 ## 5. Bentuk materi
 
 **Keadaan 2026-11-19:** modul fondasi kini dikerjakan di issue **#107**
-(materi blok fondasi kelas X, `FND-X1-M1..M7`). Drafnya sudah ditulis tetapi
-**belum masuk repositori**: `content/sma-coding/` dan
-`data/sma-coding/modules.json` belum ada, karena pengindeksan menunggu skema
-indeks modul sma-coding (issue **#106**). Modul tetap berstatus `draf` sampai
+(materi blok fondasi kelas X, `FND-X1-M1..M7`). Keenam modul draf `fondasi-*`
+sudah masuk repositori sejak 2026-11-19 (PR #115) di `content/sma-coding/modules/`
+dan terindeks di `data/sma-coding/modules.json` (skema #106). Modul tetap berstatus `draf` sampai
 pemilik menyetujuinya (ADR-0007). Catatan (2) dan (3) di bawah dikerjakan di
 #106 (skema indeks) dan #92 (kode minggu fondasi; sudah selesai di silabus
 v1.1, `foundation.json`, dan skema `src/schema/sma-foundation.ts`). Tabel di
@@ -379,6 +378,7 @@ yang dipilih; jalur C dan D memulai minggu materinya setelah blok fondasi.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v0.6.0 | 2026-11-19 | Bagian 5: keenam modul draf fondasi masuk repositori (PR #115) dan terindeks (skema #106). |
 | v0.5.0 | 2026-11-19 | Bagian 5: menambah catatan keadaan nyata, yaitu modul fondasi dikerjakan di #107 (draf ditulis, belum masuk repositori) dan menunggu skema indeks #106. Isi usulan lainnya tidak diubah. |
 | v0.4.0 | 2026-11-19 | Merujuk silabus v1.1 yang disetujui (issue #92); berkas draf `silabus-v1.1-draf.md` dihapus. Isi usulan tidak diubah. |
 | v0.3.0 | 2026-11-18 | Mencatat keputusan pemilik untuk pertanyaan 4, 6, 7, dan 8 (semua pertanyaan terjawab); merujuk draf silabus v1.1 (`silabus-v1.1-draf.md`, issue #92) yang menerapkan keputusan. Isi usulan (bagian 1-7) tidak diubah. |

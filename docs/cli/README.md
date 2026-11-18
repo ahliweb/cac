@@ -570,7 +570,7 @@ week, or "blok fondasi bersama"); the topic; **Tujuan**, **Keluaran** and
 **Latihan dan kegiatan** (verbatim corpus cells); **Butir CP terkait** (the
 items `cp-mapping.json` maps to the week, with their label, plus the CP
 quotation of each element from `cp-elements.json`); **Jembatan ke OSN** (only
-when `osn-bridge.json` names the week); **Modul pendamping** (only when
+when `osn-bridge.json` names the week); **Modul terkait** (only when
 `data/sma-coding/modules.json` exists and an indexed module lists the week in
 `weekCodes`: id, title and status; a module that is not `disetujui` is marked
 **DRAF**); **Daftar periksa mandiri** (blank checkboxes, one per clause of the
