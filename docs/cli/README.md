@@ -25,7 +25,7 @@ These are recognised regardless of which subcommand (if any) is present:
 | `-h`, `--help` | With no subcommand: print global usage (this command list) and exit `0`. After a subcommand (`osn <command> --help`): print that command's own help and exit `0`, without running the command. |
 | `-V`, `--version` | Print the version from `package.json` (never hard-coded) and exit `0`. Takes precedence over everything else -- even `osn --version bogus-command` prints the version rather than failing on the unknown command. |
 | `--json` | Emit machine-readable JSON output instead of human-readable text, for commands that support it (`validate`, `plan`, `report`, `checklist` and `privacy-check`). **`render` ignores it**: `osn render --json ...` still prints Markdown (a rendered sheet is a document, not data), so a script must not expect JSON from it. May appear before or after the subcommand name. |
-| `--program <id>` | Per-command (`validate`, `plan`, `render`, `report`, `checklist`): the registered programme (`data/programs.json`) whose corpus to use; default `osn`. An unknown id is a usage error (exit `2`) naming the registered ids. Write it after the subcommand name. `osn validate` without it validates every registered programme. `sma-coding` is supported by `validate`, `plan` (`--track`), `render lembar-siswa` (`--week <week-code>`) and `render modul`; `render weekly`, `render checkpoint` and `render sop`, `report` and `checklist` read the OSN corpus only and exit `2` with "belum didukung untuk program sma-coding" rather than present OSN data as that programme's. `privacy-check` takes no `--program`: it always scans all of `data/`. |
+| `--program <id>` | Per-command (`validate`, `plan`, `render`, `report`, `checklist`): the registered programme (`data/programs.json`) whose corpus to use; default `osn`. An unknown id is a usage error (exit `2`) naming the registered ids. Write it after the subcommand name. `osn validate` without it validates every registered programme. All seven registered programmes are supported by `validate`. `plan` (`--track`), `render lembar-siswa` (`--week <week-code>`) and `render modul` additionally support `sma-coding`; for the five other coding programmes (`tk-coding`, `kuliah-coding`, `dewasa-coding`, `sd-coding`, `smp-coding`) `plan` and `render` exit `2` with "belum didukung untuk program <id>". `render weekly`, `render checkpoint` and `render sop`, `report` and `checklist` read the OSN corpus only and exit `2` with the same message for every programme other than `osn`, rather than present OSN data as that programme's. `privacy-check` takes no `--program`: it always scans all of `data/`. |
 
 ## Exit codes
 
@@ -161,7 +161,7 @@ whose programme is not registered is a draft and is not validated.
 own file set and schemas (`SMA_DATA_FILE_REGISTRY` in
 `src/domain/sma-corpus-audit.ts`; schemas `src/schema/sma-*.ts`), not the
 OSN invariants above. The seven files transcribe the owner-approved
-`docs/programs/sma-coding/silabus.md` v1.2 (tracks A to E plus the shared
+`docs/programs/sma-coding/silabus.md` v1.3.0 (tracks A to E plus the shared
 grade-X foundation block): `cp-elements.json`, `tracks.json`,
 `structure.json`, `weeks.json`, `foundation.json`, `cp-mapping.json` and
 `osn-bridge.json`. It checks:
@@ -179,7 +179,7 @@ grade-X foundation block): `cp-elements.json`, `tracks.json`,
   for E); the foundation block `FND-X1` holds exactly the weeks 1-7;
   `structure.json` agrees with the 14-week semester and with each week's
   class and phase.
-- **Pengayaan tracks (silabus v1.2):** tracks D and E have `cpStatus`
+- **Pengayaan tracks (silabus v1.2, unchanged in v1.3):** tracks D and E have `cpStatus`
   `pengayaan` (outside the CP wording). They may never appear in
   `cp-mapping.json` `mappings[].tracks`; their resemblance to CP items lives
   only in `enrichmentLinks` (bagian 4.5), whose tracks must be pengayaan
@@ -205,13 +205,68 @@ table and the track summary 3.6), 4 (including the enrichment links 4.5) and 5
 (one table per track) and exits `1` listing every mismatching cell.
 
 `bun run check:fidelity [--program <id>]` (`scripts/check-fidelity.ts`) runs the
-fidelity module of every registered programme that has one (today only
-`sma-coding`; the logic is `src/cli/fidelity/sma-coding.ts`, the same module
-`check:sma-fidelity` runs) or only the programme named by `--program`. It exits
-`0` when the data equals the document, `1` listing every mismatch, and `2` for a
-usage error: `--program` without a value, a programme that is not registered, or
-a registered programme with no fidelity module (`osn` today; the message names
-the programmes that have one).
+fidelity module of every registered programme that has one (today the six
+coding programmes: `sma-coding`, `tk-coding`, `kuliah-coding`, `dewasa-coding`,
+`sd-coding`, `smp-coding`; each logic is `src/cli/fidelity/<id>.ts`, and
+`check:sma-fidelity` runs the same `sma-coding` module) or only the programme
+named by `--program`. It exits `0` when the data equals the document, `1`
+listing every mismatch, and `2` for a usage error: `--program` without a
+value, a programme that is not registered, or a registered programme with no
+fidelity module (`osn` today; the message names the programmes that have one).
+Real output:
+
+```text
+$ bun run check:fidelity
+check-kuliah-coding-fidelity: OK -- every cell of data/kuliah-coding/*.json matches docs/programs/kuliah-coding/silabus.md.
+check-sma-coding-fidelity: OK -- every cell of data/sma-coding/*.json matches docs/programs/sma-coding/silabus.md.
+check-tk-coding-fidelity: OK -- every cell of data/tk-coding/*.json matches docs/programs/tk-coding/silabus.md.
+check-dewasa-coding-fidelity: OK -- every cell of data/dewasa-coding/*.json matches docs/programs/dewasa-coding/silabus.md (SKKNI unit titles: riset.md bagian 2.2).
+check-sd-coding-fidelity: OK -- every cell of data/sd-coding/*.json matches docs/programs/sd-coding/silabus.md.
+check-smp-coding-fidelity: OK -- every cell of data/smp-coding/*.json matches docs/programs/smp-coding/silabus.md.
+```
+
+### The other coding programmes
+
+Each of the five further coding programmes has its own file set and schemas
+and its own corpus audit, picked from the programme table (ADR-0008); the
+numbers below are the corpus files `osn validate` counts (the optional
+`modules.json` is not counted). All five syllabi are owner-approved
+(2026-11-19).
+
+| Programme | Syllabus | Corpus files | Schemas / audit |
+| --- | --- | --- | --- |
+| `tk-coding` | v1.0.0 | 7 (`bridge`, `cp-elements`, `cp-mapping`, `decisions`, `goals`, `structure`, `weeks`) | `src/schema/tk-*.ts`, `src/domain/tk-corpus-audit.ts` |
+| `kuliah-coding` | v1.1.0 | 6 (`ai-policy`, `bridges`, `courses`, `cpl`, `knowledge-areas`, `tracks`) | `src/schema/kul-*.ts`, `src/domain/kul-corpus-audit.ts` |
+| `dewasa-coding` | v1.1.0 | 7 (`bridges`, `certification`, `module-plan`, `shared`, `skkni-units`, `structure`, `tracks`) | `src/schema/dw-*.ts`, `src/domain/dw-corpus-audit.ts` |
+| `sd-coding` | v1.0.0 | 5 (`bridges`, `cp-elements`, `cp-mapping`, `structure`, `weeks`) | `src/schema/sd-*.ts`, `src/domain/sd-corpus-audit.ts` |
+| `smp-coding` | v1.1.0 | 7 (`bridge`, `club`, `cp-elements`, `cp-mapping`, `structure`, `uncovered`, `weeks`) | `src/schema/smp-*.ts`, `src/domain/smp-corpus-audit.ts` |
+
+Real output of `osn validate` (all registered programmes; each block is one
+programme, the path is shortened):
+
+```text
+$ osn validate
+osn validate: programme "osn", corpus at /path/to/repo/data/osn
+OK -- 22 data file(s) validated, 0 problem(s) found.
+
+osn validate: programme "sma-coding", corpus at /path/to/repo/data/sma-coding
+OK -- 7 data file(s) validated, 0 problem(s) found.
+
+osn validate: programme "tk-coding", corpus at /path/to/repo/data/tk-coding
+OK -- 7 data file(s) validated, 0 problem(s) found.
+
+osn validate: programme "kuliah-coding", corpus at /path/to/repo/data/kuliah-coding
+OK -- 6 data file(s) validated, 0 problem(s) found.
+
+osn validate: programme "dewasa-coding", corpus at /path/to/repo/data/dewasa-coding
+OK -- 7 data file(s) validated, 0 problem(s) found.
+
+osn validate: programme "sd-coding", corpus at /path/to/repo/data/sd-coding
+OK -- 5 data file(s) validated, 0 problem(s) found.
+
+osn validate: programme "smp-coding", corpus at /path/to/repo/data/smp-coding
+OK -- 7 data file(s) validated, 0 problem(s) found.
+```
 
 ### Options
 
@@ -233,7 +288,7 @@ the programmes that have one).
 ### Example: clean corpus
 
 ```text
-$ osn validate
+$ osn validate --program osn
 osn validate: programme "osn", corpus at /path/to/repo/data/osn
 OK -- 22 data file(s) validated, 0 problem(s) found.
 ```
@@ -258,7 +313,7 @@ $ osn validate --program osn --json
 ### Example: a corrupted corpus (illustrative)
 
 ```text
-$ osn validate
+$ osn validate --program osn
 osn validate: programme "osn", corpus at /path/to/repo/data/osn
 FAILED -- 2 problem(s) found (2 error(s), 0 warning(s)):
 
@@ -465,7 +520,7 @@ Real output (`osn plan --program sma-coding --track A --semester X1`, abridged):
 
 Program: Silabus Pembelajaran Coding SMA
 Cakupan: semester X1
-Sumber: silabus versi 1.2.0, tanggal 2026-11-19.
+Sumber: silabus versi 1.3.0, tanggal 2026-11-19.
 
 ## Semester X1 (kelas X, fase E)
 
@@ -507,7 +562,7 @@ A pengayaan track states so in the header (`osn plan --program sma-coding --trac
 
 Program: Silabus Pembelajaran Coding SMA
 Cakupan: semester XI1
-Sumber: silabus versi 1.2.0, tanggal 2026-11-19.
+Sumber: silabus versi 1.3.0, tanggal 2026-11-19.
 Catatan: jalur D adalah pengayaan di luar rumusan CP; tidak dihitung sebagai pemenuhan butir CP.
 ```
 
@@ -667,7 +722,7 @@ Tidak ada butir CP yang dipetakan ke minggu ini dalam pemetaan silabus.
 - [ ] Keluaran selesai: tabel konversi; lembar kode karakter; gambar 8x8 dalam bentuk deret bit
 
 ---
-Sumber: Silabus Pembelajaran Coding SMA, versi 1.2.0, tanggal 2026-11-19.
+Sumber: Silabus Pembelajaran Coding SMA, versi 1.3.0, tanggal 2026-11-19.
 ```
 
 Unknown code (exit `2`):
@@ -727,7 +782,7 @@ fails to compile or when `g++` is not installed.
 
 | Flag | Meaning |
 | --- | --- |
-| `--program <id>` | The registered programme whose corpus to use. Default `osn`; an unknown id is exit `2`. `sma-coding` is supported by `render lembar-siswa` (with a week code, see below) and `render modul`; `weekly`, `checkpoint` and `sop` read the OSN corpus only and exit `2` with "belum didukung untuk program sma-coding". |
+| `--program <id>` | The registered programme whose corpus to use. Default `osn`; an unknown id is exit `2`. `sma-coding` is supported by `render lembar-siswa` (with a week code, see below) and `render modul`; `weekly`, `checkpoint` and `sop` read the OSN corpus only and exit `2` with "belum didukung untuk program <id>" for every programme other than `osn`; the five other coding programmes (everything but `osn` and `sma-coding`) also refuse `render lembar-siswa` and `render modul` the same way. |
 | `--out <path>` | Write the rendered Markdown to this path instead of printing it to stdout. Resolved against the process's current working directory. |
 | `--force` | Required to overwrite a file that already exists at `--out`. Without it, an existing file is left byte-for-byte untouched (the write itself never opens the file for truncation) and the command exits `2` -- a mentor should never silently lose an edited worksheet to a repeated `osn render ... --out` invocation. |
 
@@ -785,7 +840,7 @@ domain functions.
 
 | Flag | Meaning |
 | --- | --- |
-| `--program <id>` | The registered programme whose corpus to use. Default `osn`; an unknown id is exit `2`. `sma-coding` is registered but not supported: exit `2`, "belum didukung untuk program sma-coding". |
+| `--program <id>` | The registered programme whose corpus to use. Default `osn`; an unknown id is exit `2`. every programme other than `osn` is registered but not supported: exit `2`, "belum didukung untuk program <id>" (for example `sma-coding`). |
 | `--records <path>` | A `.jsonl` (one JSON record per line, blank lines skipped) or `.json` (a JSON array of records) file. **Required.** See "Input format detection" below. |
 | `--by <topic\|week\|none>` | Group the KPI metrics by topic family or by §4 week number, in addition to the always-present overall (ungrouped) section. Default `none`. `topic` and `week` are a documented limit: they always exit `2` with an explanatory message. See "Grouping: a documented limit" below. |
 | `--format <md\|json>` | Output format. Default `md`. |
@@ -1092,7 +1147,7 @@ functions.
 | Flag | Meaning |
 | --- | --- |
 | `--format <md\|json>` | Output format. Default `md`. `--json` (the global flag) is equivalent to `--format json`; an explicit `--format` wins if both are given. |
-| `--program <id>` | The registered programme whose corpus to use. Default `osn`; an unknown id is exit `2`. `sma-coding` is registered but not supported: exit `2`, "belum didukung untuk program sma-coding". |
+| `--program <id>` | The registered programme whose corpus to use. Default `osn`; an unknown id is exit `2`. every programme other than `osn` is registered but not supported: exit `2`, "belum didukung untuk program <id>" (for example `sma-coding`). |
 | `--out <path>` | Write the rendered checklist to this path instead of stdout. |
 | `--force` | Required to overwrite a file that already exists at `--out`. Without it, an existing file is left byte-for-byte untouched and the command exits `2` -- same safety property as `osn render`'s/`osn report`'s `--out`/`--force` (`src/cli/output-writer.ts`). |
 | `-h`, `--help` | Show `osn checklist`'s own help. |
