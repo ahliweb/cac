@@ -246,6 +246,151 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/matkom-pertumbuhan-fungsi.md"
+    },
+    {
+      "id": "cloud-konsep-dasar",
+      "title": "Apa Itu Cloud Computing",
+      "cpItems": ["E-LD-e"],
+      "weekCodes": ["B-X2-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X", "XI"],
+      "prerequisites": ["FND-X1-M4", "FND-X1-M5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "NIST SP 800-145, The NIST Definition of Cloud Computing",
+          "url": "https://csrc.nist.gov/pubs/sp/800/145/final"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/cloud-konsep-dasar.md"
+    },
+    {
+      "id": "cloud-iaas-paas-saas",
+      "title": "IaaS, PaaS, dan SaaS",
+      "cpItems": ["F-BK-a"],
+      "weekCodes": ["A-XI1-M1", "B-XI1-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X", "XI"],
+      "prerequisites": ["cloud-konsep-dasar", "FND-X1-M2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "NIST SP 800-145, The NIST Definition of Cloud Computing",
+          "url": "https://csrc.nist.gov/pubs/sp/800/145/final"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/cloud-iaas-paas-saas.md"
+    },
+    {
+      "id": "cloud-layanan-dan-region",
+      "title": "Layanan, Region, dan Ketersediaan",
+      "cpItems": ["F-BK-d"],
+      "weekCodes": ["A-XI2-M9", "B-XI2-M11"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["cloud-iaas-paas-saas", "FND-X1-M4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/cloud-layanan-dan-region.md"
+    },
+    {
+      "id": "cloud-tanggung-jawab-bersama",
+      "title": "Model Tanggung Jawab Bersama",
+      "cpItems": ["F-LD-e", "E-LD-l"],
+      "weekCodes": ["B-XI2-M10"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["cloud-iaas-paas-saas", "FND-X1-M6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "AWS, Shared Responsibility Model",
+          "url": "https://aws.amazon.com/compliance/shared-responsibility-model/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/cloud-tanggung-jawab-bersama.md"
+    },
+    {
+      "id": "cloud-biaya-dan-tagihan",
+      "title": "Biaya dan Jebakan Tagihan",
+      "cpItems": ["F-LD-j"],
+      "weekCodes": ["B-XI2-M10", "B-XII1-M10", "A-XI2-M10"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["cloud-iaas-paas-saas", "FND-X1-M6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "AWS Free Tier",
+          "url": "https://aws.amazon.com/free/"
+        },
+        {
+          "title": "GitHub Education untuk pelajar",
+          "url": "https://docs.github.com/en/education/about-github-education/github-education-for-students/about-github-education-for-students"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/cloud-biaya-dan-tagihan.md"
+    },
+    {
+      "id": "cloud-keamanan-dan-privasi",
+      "title": "Keamanan dan Privasi di Cloud",
+      "cpItems": ["E-LD-k", "E-LD-l", "F-LD-g", "F-LD-i", "F-LD-e"],
+      "weekCodes": ["B-XI2-M10", "B-XII1-M10", "B-XII2-M9", "B-XII2-M10"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI", "XII"],
+      "prerequisites": ["cloud-tanggung-jawab-bersama", "FND-X1-M6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/cloud-keamanan-dan-privasi.md"
+    },
+    {
+      "id": "cloud-deploy-sederhana",
+      "title": "Menerbitkan Aplikasi Sederhana",
+      "cpItems": ["F-AP-d", "F-BK-a", "F-AP-c"],
+      "weekCodes": [
+        "B-XI2-M1",
+        "B-XI2-M12",
+        "B-XII1-M3",
+        "B-XII1-M4",
+        "B-XII1-M5",
+        "B-XII1-M10",
+        "B-XII2-M9"
+      ],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["cloud-biaya-dan-tagihan", "cloud-keamanan-dan-privasi"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/cloud-deploy-sederhana.md"
     }
   ]
 }
