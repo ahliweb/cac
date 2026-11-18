@@ -225,7 +225,7 @@ Hal yang perlu dipahami:
 
 - Parameter biasa dikirim berdasarkan nilai (disalin). Mengubah parameter di dalam fungsi tidak mengubah variabel asal di pemanggil.
 - Scope: variabel yang dideklarasikan di dalam fungsi atau blok `{ }` hanya terlihat di dalam blok itu. Variabel di luar semua fungsi bersifat global dan terlihat di seluruh program; pakai seperlunya karena menyulitkan penelusuran.
-- Sebuah fungsi harus mendefinisikan atau mendeklarasikan namanya sebelum dipakai.
+- Fungsi harus dideklarasikan atau didefinisikan sebelum dipanggil. Itu sebabnya contoh di atas menulis `habisDibagi` dan `kuadrat` sebelum `main`.
 
 ```cpp
 #include <iostream>

@@ -1,7 +1,9 @@
 /**
- * Tests for `scripts/check-module-code.ts` (issue #54): fenced-block
- * extraction, the tree walk with an injected compiler, and the real
- * `g++ -std=c++17 -fsyntax-only` check on a valid and an invalid block.
+ * Unit tests for `scripts/check-module-code.ts` (issue #54): fenced-block
+ * extraction, the tree walk, and exit codes, all with an injected fake
+ * compiler. Unit tests do not shell out (docs/development/testing.md); the
+ * real `g++ -std=c++17 -fsyntax-only` checks live in
+ * tests/integration/check-module-code.test.ts.
  */
 
 import { afterEach, beforeEach, describe, expect, test } from "bun:test";
@@ -12,7 +14,6 @@ import {
   type Compiler,
   checkModuleCode,
   extractCppBlocks,
-  gppSyntaxCheck,
   run,
 } from "../../scripts/check-module-code";
 
@@ -100,29 +101,6 @@ describe("checkModuleCode", () => {
     };
     await expect(checkModuleCode(root, missing)).rejects.toThrow("g++ not found");
   });
-
-  test("real g++: a valid block passes and an invalid block fails", async () => {
-    await write("content/osn/modules/baik.md", `\`\`\`cpp\n${VALID}\n\`\`\`\n`);
-    expect((await checkModuleCode(root)).failures).toEqual([]);
-    await write("content/osn/modules/buruk.md", `\`\`\`cpp\n${INVALID}\n\`\`\`\n`);
-    const result = await checkModuleCode(root);
-    expect(result.blocksChecked).toBe(2);
-    expect(result.failures).toHaveLength(1);
-    expect(result.failures[0]).toContain("buruk.md");
-    expect(result.failures[0]).toContain("undeclared_name");
-  });
-});
-
-describe("gppSyntaxCheck", () => {
-  test("accepts C++17 code and rejects a syntax error", async () => {
-    const good = await gppSyntaxCheck(
-      "#include <optional>\nint main() { std::optional<int> x; return x.value_or(0); }\n",
-    );
-    expect(good).toEqual({ ok: true, diagnostics: "" });
-    const bad = await gppSyntaxCheck("int main( {\n");
-    expect(bad.ok).toBe(false);
-    expect(bad.diagnostics.length).toBeGreaterThan(0);
-  });
 });
 
 describe("run (exit code and messages)", () => {
@@ -145,7 +123,8 @@ describe("run (exit code and messages)", () => {
   });
 
   test("exits 1 and lists the failing block when a block does not compile", async () => {
-    expect(await run(root, gppSyntaxCheck, out)).toBe(1);
+    const failing: Compiler = async () => ({ ok: false, diagnostics: "kesalahan palsu" });
+    expect(await run(root, failing, out)).toBe(1);
     expect(lines.join("\n")).toContain("FAILED -- 1 block(s) do not compile");
   });
 
