@@ -34,7 +34,7 @@
   [silabus.md bagian 1.4](silabus.md). Dokumen ini tidak membuat kode butir
   baru. Kutipan CP di bagian 7 disalin persis dari silabus bagian 1.3.
 - Kode minggu fondasi `FND-X1-M<n>` mengikuti
-  [silabus-v1.1-draf.md](silabus-v1.1-draf.md) (blok fondasi tujuh minggu);
+  `silabus-v1.1-draf.md` (kini [`silabus.md`](silabus.md)) (blok fondasi tujuh minggu);
   id modul `matkom-*` mengikuti
   [rancangan-seri-matematika-komputasi.md](rancangan-seri-matematika-komputasi.md)
   (issue #87). Orchestrator menyampaikan bahwa silabus v1.1 dan rancangan
