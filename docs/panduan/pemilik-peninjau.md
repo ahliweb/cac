@@ -172,18 +172,30 @@ gh issue list -R ahliweb/osn --state open
 ```
 
 ```text
-94	OPEN	Panduan penggunaan repo per peran (Bahasa Indonesia)	epic:corpus, type:docs, priority:P1	...
-92	OPEN	Terapkan blok fondasi kelas X ke silabus SMA v1.1 dan corpus sma-coding	type:feature, priority:P1, epic:sma-coding	...
-89	OPEN	Seri modul cloud computing untuk program coding SMA	type:docs, priority:P2, epic:sma-coding	...
-88	OPEN	Draf jalur E (komputasi kuantum dan cloud quantum) untuk silabus coding SMA	...
-87	OPEN	Seri modul matematika komputasi dasar untuk program coding SMA	...
-84	OPEN	Draf jalur D (AI) untuk silabus coding SMA	...
-77	OPEN	Dukungan plan/render/checklist untuk program sma-coding	...
-76	OPEN	Daftarkan kebutuhan program sma-coding di register dan matriks keterlacakan	...
-69	OPEN	Modul pendamping literasi digital untuk program coding SMA	...
-68	OPEN	Draf jalur C (IoT/robotika) untuk silabus coding SMA	...
+107	OPEN	Modul materi blok fondasi kelas X (FND-X1-M1..M7)	type:docs, priority:P1, epic:sma-coding	2026-11-18T18:55:09Z
+106	OPEN	Skema indeks modul untuk program sma-coding	type:feature, priority:P1, epic:sma-coding	2026-11-18T18:54:35Z
+105	OPEN	Celah butir CP F-LD-d dan F-LD-e untuk jalur A	type:docs, priority:P2, epic:sma-coding	2026-11-18T18:54:32Z
+89	OPEN	Seri modul cloud computing untuk program coding SMA	type:docs, priority:P2, epic:sma-coding	2026-11-18T18:54:28Z
+88	OPEN	Draf jalur E (komputasi kuantum dan cloud quantum) untuk silabus coding SMA	type:docs, priority:P2, epic:sma-coding	2026-11-18T11:07:30Z
+87	OPEN	Seri modul matematika komputasi dasar untuk program coding SMA	type:docs, priority:P2, epic:sma-coding	2026-11-18T18:54:26Z
+84	OPEN	Draf jalur D (AI) untuk silabus coding SMA	type:docs, priority:P2, epic:sma-coding	2026-11-18T10:59:32Z
+77	OPEN	Dukungan plan/render/checklist untuk program sma-coding	type:feature, priority:P2, epic:sma-coding	2026-11-18T13:26:19Z
+69	OPEN	Modul pendamping literasi digital untuk program coding SMA	type:docs, priority:P2, epic:sma-coding	2026-11-18T18:54:30Z
+68	OPEN	Draf jalur C (IoT/robotika) untuk silabus coding SMA	type:docs, priority:P2, epic:sma-coding	2026-11-18T08:28:12Z
 ```
 
-Daftar di atas adalah keadaan pada 2026-11-18; jalankan perintahnya untuk
-keadaan terkini. Selain issue, kandidat tinjauan Anda: draf jalur C dan
-rancangan modul pendamping (lihat `docs/programs/sma-coding/`).
+Daftar di atas adalah keadaan pada 2026-11-19; jalankan perintahnya untuk
+keadaan terkini. Cara membacanya:
+
+| Issue | Keadaan | Yang menunggu |
+| --- | --- | --- |
+| #68, #84, #88 | Draf jalur C (IoT/robotika), D (AI), E (kuantum) sudah ada di `docs/programs/sma-coding/` berstatus DRAF | Keputusan Anda atas pertanyaan terbuka di masing-masing draf; belum ada persetujuan |
+| #69, #87, #89 | Rancangan modul pendamping, seri matematika komputasi, dan seri cloud sudah Anda setujui 2026-11-19 beserta rekomendasinya (tercatat di komentar tiap issue) | Penulisan modul draf; belum ada modul di repositori. Setiap modul tetap perlu tinjauan dan persetujuan Anda per modul |
+| #106 | Skema indeks modul sma-coding (`src/schema/sma-module.ts`) belum dikerjakan | Pekerjaan teknis; menjadi syarat masuknya modul sma-coding ke repositori |
+| #107 | Modul materi blok fondasi kelas X (`FND-X1-M1..M7`) | Draf menunggu #106; kelak ditinjau per modul |
+| #105 | Celah butir CP F-LD-d dan F-LD-e untuk jalur A | Penilaian dan keputusan opsi |
+| #77 | Dukungan `plan`, `render`, `checklist` untuk program sma-coding | Pekerjaan teknis (perintah itu masih keluar dengan kode 2 untuk `sma-coding`) |
+
+Silabus v1.1 (#92) sudah Anda setujui 2026-11-19 dan issue-nya tertutup;
+kandidat tinjauan Anda yang lain ada di `docs/programs/sma-coding/` (draf
+jalur C, D, dan E).
