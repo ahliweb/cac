@@ -18,8 +18,8 @@
 import { z } from "zod";
 import { nonEmptyString } from "./common";
 import {
-  SD_WEEKS_PER_SEMESTER,
   SD_CP_STAGE,
+  SD_WEEKS_PER_SEMESTER,
   sdClassSchema,
   sdCpCodeSchema,
   sdElementIdSchema,

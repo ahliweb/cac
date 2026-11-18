@@ -8,9 +8,9 @@ import { z } from "zod";
 import { nonEmptyString } from "./common";
 import {
   SD_CP_ELEMENT_NAMES,
+  sdCpCodeSchema,
   sdElementIdSchema,
   sdProvenanceShape,
-  sdCpCodeSchema,
 } from "./sd-common";
 
 /** One CP quotation: Fase C's text for one element, verbatim from the SK. */

@@ -16,16 +16,16 @@
  */
 
 import type { z } from "zod";
+import { SD_BRIDGE_IDS, sdBridgesFileSchema } from "../schema/sd-bridges";
 import {
   SD_CP_CLASSES,
   SD_CP_STAGE,
   SD_MINUTES_PER_JP,
   SD_WEEKS_PER_SEMESTER,
 } from "../schema/sd-common";
-import { SD_BRIDGE_IDS, sdBridgesFileSchema } from "../schema/sd-bridges";
 import { sdCpElementsFileSchema } from "../schema/sd-cp";
 import { sdCpMappingFileSchema } from "../schema/sd-cp-mapping";
-import { sdStructureFileSchema, SD_STRUCTURE_ROW_IDS } from "../schema/sd-structure";
+import { SD_STRUCTURE_ROW_IDS, sdStructureFileSchema } from "../schema/sd-structure";
 import { sdWeeksFileSchema } from "../schema/sd-week";
 import type { AuditResult, CorpusFinding, CorpusSource } from "./corpus-audit";
 import { expandSdWeekCodes } from "./sd-week-codes";
