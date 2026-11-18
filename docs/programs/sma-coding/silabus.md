@@ -1,15 +1,18 @@
-# Silabus Pembelajaran Coding SMA — Draf v0
+# Silabus Pembelajaran Coding SMA — v1.0
 
-- **Version:** v0.2.0
+- **Version:** v1.0.0
 - **Last updated:** 2026-11-18
-- **Status:** DRAF
-- **Changeset:** Keputusan pemilik 2026-11-18 dicatat: `awcms-one` opsi 1; topik jalur A di luar CP berstatus pengayaan opsional. Draf secara keseluruhan belum disetujui.
+- **Status:** DISETUJUI pemilik program, 2026-11-18 — jalur A dan B (issue #52). Jalur C (#68) dan modul pendamping (#69) masih disusun untuk v1.1.
+- **Changeset:** Silabus disetujui sebagai v1.0 untuk jalur A dan B; keenam pertanyaan terbuka dijawab pemilik.
 
-> **DRAF — belum disetujui pemilik.** Konten karangan menurut
-> [ADR-0007](../../architecture/adr/0007-authored-learning-content.md).
-> Kutipan CP di bagian 1 adalah satu-satunya teks yang ditranskripsi dari
-> sumber; semua yang lain (struktur, rencana mingguan, pemetaan, jembatan,
-> analisis) adalah rancangan penyusun dan dapat berubah setelah review.
+> **Disetujui pemilik program pada 2026-11-18 untuk jalur A dan B**
+> (keputusan lewat dialog pilihan, dicatat di issue #52). Dokumen ini adalah
+> konten karangan menurut
+> [ADR-0007](../../architecture/adr/0007-authored-learning-content.md) yang
+> kini menjadi sumber corpus program `sma-coding` (ADR-0006). Kutipan CP di
+> bagian 1 adalah transkripsi sumber resmi; selebihnya rancangan penyusun
+> yang disetujui. Butir bertanda `[belum terverifikasi]` tetap belum
+> terverifikasi. Jalur C dan modul pendamping belum termasuk persetujuan ini.
 
 ## 0. Cara membaca dokumen ini
 
@@ -179,8 +182,8 @@ perangkat yang tersedia."
 | Kelas dan fase | X = Fase E; XI dan XII = Fase F | Terverifikasi (bagian 1.1). |
 | Semester | Dua per kelas: X1, X2, XI1, XI2, XII1, XII2 (enam semester per jalur) | `[asumsi]` |
 | Minggu per semester | 14 minggu materi + 2 minggu cadangan (libur, ujian sekolah, remedial) | `[asumsi]` |
-| Alokasi JP | Satu pertemuan 3 JP x 45 menit per minggu per jalur sebagai ukuran perancangan; sekolah menyesuaikan | `[asumsi]`, `[belum terverifikasi]`: tidak ada angka JP resmi yang dapat dikutip. |
-| Hubungan dua jalur | Jalur dipilih per kelompok murid (peminatan atau ekstrakurikuler); murid boleh mengambil keduanya bila waktu ada | `[asumsi]` |
+| Alokasi JP | Satu pertemuan 3 JP x 45 menit per minggu per jalur; sekolah menyesuaikan | Ditetapkan pemilik 2026-11-18. Angka JP resmi kurikulum tetap `[belum terverifikasi]`. |
+| Hubungan jalur | Murid memilih satu jalur (A, B, atau kelak C); boleh mengambil jalur lain bila waktu sekolah mengizinkan | Ditetapkan pemilik 2026-11-18. |
 | Pola tiap semester | Minggu 1-12 materi; minggu 13 proyek mini; minggu 14 asesmen dan refleksi | `[asumsi]` |
 | Nilai dasar | CP wajib tercakup di pembelajaran Informatika sekolah; silabus coding ini hanya membahas butir yang dapat dicapai lewat coding. Butir lain ada di bagian 4.3. | Rancangan penyusun. |
 
@@ -464,14 +467,15 @@ Seluruh data latihan bersifat sintetis (bagian 8).
 
 ### 4.3 Butir CP di luar silabus coding ini
 
-Butir berikut tidak diperlakukan oleh dua jalur coding dan harus dicakup
-oleh pembelajaran Informatika umum di sekolah (tidak dihilangkan dari CP,
-hanya bukan lingkup draf ini): E-LD-b, c, d, e, h, i, j; F-LD-a, b, c, h, j;
-F-BK-d (kecuali pengiriman data HTTP pada B-XI2-M11); bagian F-AP-d yang
-menyebut interaksi dengan perangkat lain seperti IoT dan robot fisik
-(disebut di panduan, bagian C, bukan di rumusan CP; belum ada dalam draf).
-Apakah lingkup ini sesuai keinginan pemilik adalah pertanyaan terbuka
-(bagian 9).
+Butir berikut tidak dicakup oleh jalur A dan B (tidak dihilangkan dari CP):
+E-LD-b, c, d, e, h, i, j; F-LD-a, b, c, h, j; F-BK-d (kecuali pengiriman
+data HTTP pada B-XI2-M11).
+
+**Keputusan pemilik (2026-11-18, issue #52):** butir-butir itu dicakup lewat
+**modul pendamping** literasi digital (issue #69). Interaksi dengan
+perangkat fisik seperti IoT dan robot (disebut di panduan, bagian C, bukan
+di rumusan CP) menjadi **jalur C terpisah** (issue #68). Keduanya disusun
+untuk silabus v1.1 dan baru berlaku setelah disetujui pemilik.
 
 ## 5. Jembatan ke OSN (jalur A)
 
@@ -598,6 +602,11 @@ Skor ini penilaian penyusun, bukan pengukuran.
 | B (opsi 1 kelas XII) | Satu atau beberapa mesin lab berkemampuan menjalankan Docker dan PostgreSQL; spesifikasi minimum `[belum terverifikasi]`. |
 | Umum | Akun uji sintetis; tanpa akun pribadi siswa wajib. |
 
+**Penanggung jawab penyiapan lab (keputusan pemilik 2026-11-18):**
+campuran — lingkungan jalur A dan B disiapkan guru dan sekolah; lingkungan
+`awcms-one` (Docker/PostgreSQL) dan perangkat IoT jalur C dibantu mitra
+penyelenggara.
+
 ### 7.3 Catatan privasi
 
 - Program ini tidak menyimpan data siswa. Repositori ini tidak memuat data
@@ -609,32 +618,28 @@ Skor ini penilaian penyusun, bukan pengukuran.
 - Proyek web (formulir kontak dan sejenisnya) tidak boleh mengumpulkan
   data pribadi nyata; rahasia dan `.env` tidak di-commit.
 
-## 8. Catatan keterbatasan draf
+## 8. Catatan keterbatasan
 
-- Rumusan CP berasal dari panduan resmi, bukan SK; regulasi dan alokasi JP
-  belum terverifikasi (bagian 1).
+- Rumusan CP berasal dari panduan resmi, bukan SK; nomor SK tetap
+  `[belum terverifikasi]` (bagian 1; keputusan pemilik: panduan dipakai).
 - Banyak topik jalur A (graf, DP, struktur data lanjut) adalah pengayaan
-  untuk jembatan OSN, bukan tuntutan CP (bagian 5).
-- Rencana mingguan adalah usulan; belum diuji di kelas.
+  opsional untuk jembatan OSN, bukan tuntutan CP (bagian 5).
+- Rencana mingguan belum diuji di kelas.
 
-## 9. Pertanyaan terbuka untuk pemilik
+## 9. Keputusan pemilik atas pertanyaan terbuka (2026-11-18)
 
-1. Dapatkah pemilik memberi tautan resmi SK CP yang berlaku (nomor,
-   tahun, URL domain pemerintah) agar bagian 1.2 bisa diverifikasi?
-2. Berapa JP Informatika per minggu yang berlaku di sekolah sasaran? (Draf
-   mengasumsikan 3 JP x 45 menit.)
-3. Apakah lingkup bagian 4.3 (butir Literasi Digital dan jaringan di luar
-   coding) diserahkan ke Informatika umum, atau perlu dimasukkan jalur?
-4. ~~Seberapa jauh pengayaan jalur A di luar CP (graf, DP, Fenwick,
-   segment tree) disetujui?~~ **Terjawab 2026-11-18:** pengayaan opsional
-   (bagian 5).
-5. ~~Opsi awcms-one mana (bagian 6.4): 1 (disarankan), 2, 3, atau 4?~~
-   **Terjawab 2026-11-18:** opsi 1 (bagian 6.4).
-6. Apakah interaksi dengan perangkat (IoT, robot) perlu ditambahkan
-   sebagai jalur tambahan?
-7. Apakah murid memilih satu jalur, atau diharapkan mengikuti keduanya?
-8. Siapa pemilik tanggung jawab penyiapan lingkungan lab (guru, sekolah,
-   mitra)?
+Semua dijawab pemilik lewat dialog pilihan dan dicatat di issue #52.
+
+| No. | Pertanyaan | Keputusan |
+| --- | --- | --- |
+| 1 | Dasar hukum CP | Panduan Mata Pelajaran Informatika 2025 dipakai; nomor SK tetap `[belum terverifikasi]` sampai tautan resmi tersedia. |
+| 2 | Alokasi JP | 3 JP x 45 menit per minggu. |
+| 3 | Butir CP di luar coding (bagian 4.3) | Dicakup lewat modul pendamping (issue #69). |
+| 4 | Topik jalur A di luar CP | Pengayaan opsional (bagian 5). |
+| 5 | Opsi `awcms-one` | Opsi 1 (bagian 6.4). |
+| 6 | IoT/robot | Jalur C terpisah (issue #68). |
+| 7 | Pemilihan jalur | Murid memilih satu jalur, boleh lebih. |
+| 8 | Penyiapan lab | Campuran: jalur A/B oleh sekolah; `awcms-one` dan IoT dibantu mitra (bagian 7.2). |
 
 ## 10. Daftar rujukan
 
@@ -652,5 +657,6 @@ Skor ini penilaian penyusun, bukan pengukuran.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v1.0.0 | 2026-11-18 | Disetujui pemilik program untuk jalur A dan B (issue #52). Keenam pertanyaan terbuka dijawab (bagian 9): panduan 2025 dipakai, 3 JP/minggu, modul pendamping (#69), jalur C terpisah (#68), murid memilih satu jalur, lab campuran. Berkas diganti nama dari `silabus-draf.md`. |
 | v0.2.0 | 2026-11-18 | Mencatat keputusan pemilik (issue #63): `awcms-one` opsi 1; topik bertanda P menjadi pengayaan opsional. Pertanyaan 4 dan 5 terjawab. Status tetap DRAF. |
 | v0.1.0 | 2026-11-18 | Draf awal (issue #51): sumber resmi dan kutipan CP Fase E/F, rencana mingguan dua jalur, pemetaan CP, jembatan OSN, analisis `awcms-one`, asesmen, perangkat, privasi, rujukan, pertanyaan terbuka. |

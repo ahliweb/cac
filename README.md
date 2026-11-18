@@ -65,7 +65,7 @@ bun test
 | `docs/operations/` | The operational runbook and syllabus-check procedure. |
 | `docs/silabus/` | The faithful Markdown transcription of the source syllabus PDF. |
 | `docs/*.pdf` | The source syllabus document itself. |
-| `docs/programs/` | Source documents of other programmes (ADR-0006). `sma-coding/` holds the **draft** SMA coding syllabus (grades X–XII, C++ track and JS/TS/Bun/awcms-one track), awaiting owner approval. |
+| `docs/programs/` | Source documents of other programmes (ADR-0006). `sma-coding/` holds the SMA coding syllabus (grades X–XII): v1.0 approved by the owner on 2026-11-18 for the C++ track and the JS/TS/Bun/awcms-one track; an IoT/robotics track and companion modules are being drafted. |
 | `.github/workflows/` | CI pipeline (`ci.yml`). |
 | `.github/ISSUE_TEMPLATE/` | Bug, feature, and curriculum-change issue forms. |
 | `.changeset/` | Pending changesets (see `docs/development/releasing.md`). |
@@ -113,7 +113,7 @@ Milestones as tracked in the GitHub repository (`ahliweb/osn`):
 | **M6: Governance & Release** | Privacy, security, ISO mapping, runbook, v1.0.0 | Complete (v1.0.0, then v1.1.0). |
 | **M7: Multi-program Foundation** | ADR-0006/0007, programme registry, `data/<program>/`, `--program` | Complete (v2.0.0). |
 | **M8: OSN Learner Materials** | Learner sheet, learning modules | In progress — learner sheet and module framework shipped in v2.0.0; the pilot module `dasar-pemrograman` was approved on 2026-11-18; the other nine are being drafted ([#55](https://github.com/ahliweb/osn/issues/55)). |
-| **M9: SMA Coding Programme** | SMA coding syllabus (grades X–XII) and its corpus | In progress — draft syllabus in `docs/programs/sma-coding/`; encoding waits for owner approval ([#52](https://github.com/ahliweb/osn/issues/52)). |
+| **M9: SMA Coding Programme** | SMA coding syllabus (grades X–XII) and its corpus | In progress — syllabus v1.0 (tracks A and B) approved 2026-11-18 in `docs/programs/sma-coding/`; encoding into `data/sma-coding/` in progress ([#52](https://github.com/ahliweb/osn/issues/52)); track C ([#68](https://github.com/ahliweb/osn/issues/68)) and companion modules ([#69](https://github.com/ahliweb/osn/issues/69)) being drafted. |
 
 See `gh issue list --repo ahliweb/osn --state all` (or the
 [Issues](https://github.com/ahliweb/osn/issues) tab) for the individual
