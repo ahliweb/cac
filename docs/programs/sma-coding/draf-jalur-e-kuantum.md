@@ -1,17 +1,22 @@
 # Draf Jalur E: Komputasi Kuantum dan Cloud Quantum
 
-- **Version:** v0.1.0
+- **Version:** v0.2.0
 - **Last updated:** 2026-11-19
-- **Status:** DRAF — belum disetujui pemilik program (issue #88); bukan bagian silabus v1.0 maupun v1.1; tidak ada data atau modul yang dibuat darinya
-- **Changeset:** Draf awal jalur E (issue #88): tujuan, rekomendasi rentang kelas, rencana mingguan empat semester, prasyarat matematika, opsi stack dan akses cloud quantum dengan sumber bertanggal, kebijakan akun, posisi terhadap CP, pertanyaan terbuka.
+- **Status:** DISETUJUI pemilik 2026-11-19 (issue #88) beserta semua rekomendasi penyusun (kelas XI–XII saja, awalan kode `E-`) dan sudah dimasukkan ke [silabus v1.2](silabus.md) bagian 3.5 (pengayaan di luar CP); dokumen ini tetap menjadi riwayat draf (bagian 9 menandai setiap pertanyaan terjawab)
+- **Changeset:** Pertanyaan terbuka (bagian 9) ditandai terjawab sesuai keputusan pemilik 2026-11-19; status menjadi disetujui dan merujuk silabus v1.2. Isi rencana tidak diubah; penanda sementara `E-XI1-M1` kini kode minggu resmi.
 
-> **DRAF — belum disetujui pemilik.** Dokumen ini adalah konten karangan
-> menurut [ADR-0007](../../architecture/adr/0007-authored-learning-content.md):
-> rancangan dan penilaian penyusun, bukan transkripsi sumber resmi dan bukan
-> keputusan. Rekomendasi penyusun di bagian 4, 5, dan 9 tidak mengikat; semua
-> keputusan di dalamnya adalah hak pemilik. Penyusun tidak mencatat
-> persetujuan atas nama pemilik. Jalur E berada **di luar rumusan CP**
-> (pengayaan, bagian 7) dan belum masuk corpus `data/sma-coding/`.
+> **Disetujui pemilik pada 2026-11-19 dan dimasukkan ke silabus v1.2.**
+> Dokumen ini adalah konten karangan menurut
+> [ADR-0007](../../architecture/adr/0007-authored-learning-content.md):
+> rancangan dan penilaian penyusun, bukan transkripsi sumber resmi. Pemilik
+> menyetujui draf beserta semua rekomendasi penyusun lewat dialog pilihan
+> (silabus [bagian 9.3](silabus.md)); sumber kebenaran jalur E kini
+> [silabus.md bagian 3.5](silabus.md) dan `data/sma-coding/`. Jalur E berada
+> **di luar rumusan CP** (pengayaan, bagian 7) dan tidak dihitung sebagai
+> pemenuhan CP. Dokumen ini dipertahankan sebagai riwayat (perbandingan
+> stack, fakta layanan cloud quantum bertanggal akses 2026-11-19 yang harus
+> dicek ulang, dan analisis tabrakan kode); bila isinya berbeda dari
+> silabus, silabus yang berlaku.
 
 ## 0. Cara membaca dokumen ini
 
@@ -23,8 +28,8 @@
   angka di sini harus dicek ulang sebelum dipakai merencanakan.
 - Kode minggu mengikuti pola
   [silabus.md bagian 0](silabus.md): `jalur-kelas-semester-M<n>`. Awalan
-  jalur E **belum diputuskan** (bagian 8, pertanyaan 2); tabel memakai
-  `E-XI1-M1` sebagai penanda sementara.
+  jalur E diputuskan `E-` (bagian 8, pertanyaan 2, terjawab 2026-11-19);
+  `E-XI1-M1` kini kode minggu resmi.
 - Kode butir CP (mis. `E-BK-e`) dipakai persis seperti di
   [silabus.md bagian 1.4](silabus.md). Dokumen ini tidak membuat kode butir
   baru. Kutipan CP di bagian 7 disalin persis dari silabus bagian 1.3.
@@ -370,17 +375,17 @@ daripada penyimpangan urutan. Keputusan milik pemilik (pertanyaan terbuka 2).
 Setiap butir menyebut opsi dan rekomendasi penyusun; jawaban diminta lewat
 orchestrator.
 
-| No. | Pertanyaan | Opsi | Rekomendasi penyusun |
-| --- | --- | --- | --- |
-| 1 | Rentang kelas | (a) XI–XII (empat semester, inti dua semester); (b) X–XII; (c) hanya XI | (a) (bagian 3) |
-| 2 | Awalan kode minggu | (a) `E-`; (b) `Q-`; (c) awalan beberapa huruf (ubah skema) | (a) dengan aturan penulisan (bagian 8) |
-| 3 | Stack inti murid | (a) Quirk + simulator buatan sendiri; (b) Qiskit + Aer untuk murid; (c) pustaka JS | (a); Qiskit hanya demonstrasi guru (bagian 6.2) |
-| 4 | Akses cloud quantum | (a) demonstrasi guru; (b) hanya simulator; (c) akun murid | (a); (c) tidak disarankan (bagian 6.3, 6.4) |
-| 5 | Matematika yang belum ada di seri #87 (vektor, matriks, kompleks, probabilitas) | (a) dibangun tiga minggu di dalam jalur E (`E-XI1-M2..M4`); (b) ditambah modul `matkom-*` baru di seri #87; (c) mensyaratkan murid sudah mempelajarinya di Matematika | (a), dengan opsi mempromosikan menjadi modul `matkom-*` setelah dicoba |
-| 6 | Python di jalur E | (a) hanya demonstrasi guru; (b) diajarkan murid | (a) |
-| 7 | Prasyarat pemrograman | (a) wajib telah menyelesaikan dasar jalur A atau B; (b) mandiri dengan alat visual dan simulator buatan sendiri opsional | (a) untuk minggu simulator; bagian konsep terbuka untuk semua |
-| 8 | Akun lembaga untuk demonstrasi | (a) akun sekolah atau lembaga; (b) akun guru; (c) tanpa demonstrasi nyata | (a); verifikasi syarat usia dan akun lembaga di ketentuan layanan terkini |
-| 9 | Beban jam | (a) 3 JP per minggu seperti jalur lain; (b) 2 JP ditambah 1 JP mandiri | (a) |
+| No. | Pertanyaan | Opsi | Rekomendasi penyusun | Keputusan pemilik (2026-11-19) |
+| --- | --- | --- | --- | --- |
+| 1 | Rentang kelas | (a) XI–XII (empat semester, inti dua semester); (b) X–XII; (c) hanya XI | (a) (bagian 3) | Terjawab: (a) XI–XII. |
+| 2 | Awalan kode minggu | (a) `E-`; (b) `Q-`; (c) awalan beberapa huruf (ubah skema) | (a) dengan aturan penulisan (bagian 8) | Terjawab: (a) `E-`. |
+| 3 | Stack inti murid | (a) Quirk + simulator buatan sendiri; (b) Qiskit + Aer untuk murid; (c) pustaka JS | (a); Qiskit hanya demonstrasi guru (bagian 6.2) | Terjawab: (a) Quirk + simulator buatan sendiri. |
+| 4 | Akses cloud quantum | (a) demonstrasi guru; (b) hanya simulator; (c) akun murid | (a); (c) tidak disarankan (bagian 6.3, 6.4) | Terjawab: (a) demonstrasi guru. |
+| 5 | Matematika yang belum ada di seri #87 (vektor, matriks, kompleks, probabilitas) | (a) dibangun tiga minggu di dalam jalur E (`E-XI1-M2..M4`); (b) ditambah modul `matkom-*` baru di seri #87; (c) mensyaratkan murid sudah mempelajarinya di Matematika | (a), dengan opsi mempromosikan menjadi modul `matkom-*` setelah dicoba | Terjawab: (a) dibangun tiga minggu di jalur E. |
+| 6 | Python di jalur E | (a) hanya demonstrasi guru; (b) diajarkan murid | (a) | Terjawab: (a) hanya demonstrasi guru. |
+| 7 | Prasyarat pemrograman | (a) wajib telah menyelesaikan dasar jalur A atau B; (b) mandiri dengan alat visual dan simulator buatan sendiri opsional | (a) untuk minggu simulator; bagian konsep terbuka untuk semua | Terjawab: (a) wajib dasar jalur A atau B untuk minggu simulator. |
+| 8 | Akun lembaga untuk demonstrasi | (a) akun sekolah atau lembaga; (b) akun guru; (c) tanpa demonstrasi nyata | (a); verifikasi syarat usia dan akun lembaga di ketentuan layanan terkini | Terjawab: (a) akun sekolah atau lembaga. |
+| 9 | Beban jam | (a) 3 JP per minggu seperti jalur lain; (b) 2 JP ditambah 1 JP mandiri | (a) | Terjawab: (a) 3 JP per minggu. |
 
 ## 10. Sumber dan batasan
 
@@ -420,4 +425,5 @@ Batasan:
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v0.2.0 | 2026-11-19 | Disetujui pemilik beserta semua rekomendasi (issue #88) dan dimasukkan ke silabus v1.2 bagian 3.5; pertanyaan bagian 9 ditandai terjawab; header status diperbarui; penanda `E-XI1-M1` menjadi kode minggu resmi. Isi rencana tidak diubah. |
 | v0.1.0 | 2026-11-19 | Draf awal (issue #88): tujuan, rekomendasi rentang XI–XII, prasyarat dan ketergantungan, rencana mingguan empat semester, opsi stack dan akses cloud quantum dengan sumber bertanggal, kebijakan akun tanpa data siswa, posisi terhadap CP, analisis tabrakan kode minggu, sembilan pertanyaan terbuka. |

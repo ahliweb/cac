@@ -113,9 +113,11 @@ bukti; AI tidak menyetujui PR-nya sendiri maupun rilis produksi.
 
 Draf silabus program (mis. `docs/programs/sma-coding/`) adalah konten
 karangan. Ia menjadi sumber corpus `data/<program>/` hanya setelah Anda
-menyetujuinya (ADR-0006): silabus `sma-coding` v1.0 disetujui 2026-11-18 dan
-revisinya v1.1 (blok fondasi kelas X) disetujui 2026-11-19, keduanya untuk
-jalur A dan B, dan baru sesudahnya dikodekan ke `data/sma-coding/`.
+menyetujuinya (ADR-0006): silabus `sma-coding` v1.0 disetujui 2026-11-18,
+revisinya v1.1 (blok fondasi kelas X) disetujui 2026-11-19 untuk jalur A dan B,
+dan v1.2 (jalur C, D, dan E, dari draf yang Anda setujui beserta semua
+rekomendasinya) disetujui 2026-11-19; baru sesudahnya dikodekan ke
+`data/sma-coding/`.
 Perubahan atas silabus yang sudah disetujui: usulan lewat issue, revisi
 berstatus draf, lalu persetujuan Anda yang dicatat dengan tanggal. Contoh
 yang sudah selesai: blok fondasi kelas X, usulannya
@@ -183,12 +185,11 @@ keadaan terkini. Cara membacanya:
 
 | Issue | Keadaan | Yang menunggu |
 | --- | --- | --- |
-| #68, #84, #88 | Draf jalur C (IoT/robotika), D (AI), E (kuantum) sudah ada di `docs/programs/sma-coding/` berstatus DRAF | Keputusan Anda atas pertanyaan terbuka di masing-masing draf; belum ada persetujuan |
-| #105 | Celah butir CP F-LD-d dan F-LD-e untuk jalur A | Penilaian dan keputusan opsi |
+| #68, #84, #88 | Draf jalur C (IoT/robotika), D (AI), E (kuantum): Anda menyetujuinya beserta semua rekomendasi pada 2026-11-19 dan sudah masuk silabus v1.2 (dokumen draf menjadi riwayat) | Penutupan issue di GitHub; daftar di atas adalah keadaan sebelum penutupan |
+| #105 | Celah butir CP F-LD-d dan F-LD-e untuk jalur A | Diputuskan ditutup dengan modul pendamping lintas jalur; silabus mencatatnya di bagian 4.3; modulnya dikerjakan terpisah |
 
 Silabus v1.1 (#92) sudah Anda setujui 2026-11-19 dan issue-nya tertutup;
-kandidat tinjauan Anda yang lain: draf jalur C, D, dan E di
-`docs/programs/sma-coding/`, dan 29 modul draf `sma-coding` di
+kandidat tinjauan Anda yang lain: 29 modul draf `sma-coding` di
 `content/sma-coding/modules/` (fondasi, matematika komputasi, cloud,
 pendamping; baca dengan `osn render modul --program sma-coding --id <id>`,
 daftar id di `data/sma-coding/modules.json`).

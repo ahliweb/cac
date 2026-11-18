@@ -95,6 +95,26 @@ describe("renderSmaStudentSheet", () => {
     expect(renderSmaStudentSheet(TRACK_WEEK, QUOTES, SOURCE)).toBe(sheet);
   });
 
+  test("a week of a pengayaan track says so and shows irisan instead of CP items and quotations", () => {
+    const pengayaan: SmaWeekView = {
+      ...TRACK_WEEK,
+      code: "D-XI1-M5",
+      track: { id: "D", name: "Jalur Pengayaan", cpStatus: "pengayaan" },
+      cpItems: [],
+      enrichmentLinks: [{ code: "F-AD-a", label: "data terbuka", level: "Sedang." }],
+      osnBridges: [],
+      modules: [],
+    };
+    const text = renderSmaStudentSheet(pengayaan, QUOTES, SOURCE);
+    expect(text).toContain(
+      "Jalur D adalah pengayaan di luar rumusan CP; minggu jalur ini tidak dihitung sebagai pemenuhan butir CP mana pun.",
+    );
+    expect(text).toContain("## Irisan dengan CP (pengayaan, tidak dihitung pemenuhan CP)");
+    expect(text).toContain("- F-AD-a: data terbuka. Tingkat irisan: Sedang.");
+    expect(text).not.toContain("**Kutipan CP");
+    expect(text).not.toContain("Tidak ada butir CP yang dipetakan");
+  });
+
   test("a foundation week without CP items, bridge or modules omits those sections", () => {
     const foundation: SmaWeekView = {
       ...TRACK_WEEK,

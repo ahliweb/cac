@@ -26,7 +26,7 @@ must be validated by a schema in `src/schema/` (see "Ordering rule" in
 derived values, real learner personal data (see ADR-0004), or a data file
 for a shape that has no corresponding schema.
 
-**State today:** `data/programs.json` (two entries, `osn` and `sma-coding`), `data/sma-coding/` with seven schema-validated JSON files transcribed from the approved `docs/programs/sma-coding/silabus.md` v1.1 (`cp-elements.json`, `tracks.json`, `structure.json`, `weeks.json`, `foundation.json` (the shared grade-X foundation block `FND-X1-M1..M7`), `cp-mapping.json`, `osn-bridge.json`; schemas `src/schema/sma-*.ts`, audit `src/domain/sma-corpus-audit.ts`, cell-by-cell fidelity check `scripts/check-sma-coding-fidelity.ts`), and `data/osn/` with 22 schema-validated JSON files, one per curriculum
+**State today:** `data/programs.json` (two entries, `osn` and `sma-coding`), `data/sma-coding/` with seven schema-validated JSON files transcribed from the approved `docs/programs/sma-coding/silabus.md` v1.2 (`cp-elements.json`, `tracks.json` (five tracks A–E with `startClass` and `cpStatus`), `structure.json`, `weeks.json` (364 track weeks; track E has only kelas XI–XII), `foundation.json` (the shared grade-X foundation block `FND-X1-M1..M7`), `cp-mapping.json` (CP mapping plus the `enrichmentLinks` of the out-of-CP tracks D and E), `osn-bridge.json` (track A plus `trackBridges` for track C); schemas `src/schema/sma-*.ts`, audit `src/domain/sma-corpus-audit.ts`, cell-by-cell fidelity check `scripts/check-sma-coding-fidelity.ts`), and `data/osn/` with 22 schema-validated JSON files, one per curriculum
 concept (`data/osn/topic-families.json`, `data/osn/weeks.json`, `data/osn/gates.json`,
 `data/osn/references.json`, `data/osn/assessment-weights.json`,
 `data/osn/kpi-definitions.json`, `data/osn/playbooks.json`, and so on — see
@@ -201,9 +201,11 @@ source document that the owner has not yet approved is authored content
 and stays marked `DRAF` (ADR-0007). Today: `sma-coding/` — the syllabus for
 the senior-high-school coding programme (`README.md`, `silabus.md`, the draft research note
 `riset-buku-ai-onno-w-purbo.md`, and the draft proposal
-`usulan-fondasi-kelas-x.md` for syllabus v1.1), v1.0
-approved by the programme owner on 2026-11-18 for tracks A and B (track C
-and companion modules still being drafted).
+`usulan-fondasi-kelas-x.md` for syllabus v1.1, and the approved drafts
+`draf-jalur-c-iot.md`, `draf-jalur-d-ai.md`, `draf-jalur-e-kuantum.md` kept as
+history), v1.2 approved by the programme owner on 2026-11-19 for tracks A, B,
+C, D and E (v1.0 on 2026-11-18 for tracks A and B); tracks D and E are
+outside the CP wording (enrichment).
 
 **What must never go here:** machine-readable data (belongs in
 `data/<program>/`, and only after the source is approved); learner data;

@@ -153,7 +153,7 @@ osn validate [options]
 own file set and schemas (`SMA_DATA_FILE_REGISTRY` in
 `src/domain/sma-corpus-audit.ts`; schemas `src/schema/sma-*.ts`), not the
 OSN invariants above. The seven files transcribe the owner-approved
-`docs/programs/sma-coding/silabus.md` v1.1 (tracks A and B plus the shared
+`docs/programs/sma-coding/silabus.md` v1.2 (tracks A to E plus the shared
 grade-X foundation block): `cp-elements.json`, `tracks.json`,
 `structure.json`, `weeks.json`, `foundation.json`, `cp-mapping.json` and
 `osn-bridge.json`. It checks:
@@ -161,12 +161,23 @@ grade-X foundation block): `cp-elements.json`, `tracks.json`,
 - **Schema conformance** of every file, the reverse "unregistered file"
   check (the optional `modules.json` is exempt), and registry agreement
   (item 3 above).
-- **Structural invariants:** 6 CP quotations, 36 CP items, 7 structure rows,
-  26 CP mappings, 6 semesters per track, every track-semester holding
-  exactly the weeks 1-14 except grade X semester 1, which holds weeks 8-14
-  after the foundation block (154 track weeks in all), and the foundation
-  block `FND-X1` holding exactly the weeks 1-7; `structure.json` agrees with
-  the 14-week semester and with each week's class and phase.
+- **Structural invariants:** 5 tracks, 6 CP quotations, 36 CP items, 7
+  structure rows, 26 CP mappings, 9 enrichment links, 6 semesters per
+  programme, every track-semester holding exactly the weeks 1-14 except
+  grade X semester 1, which holds weeks 8-14 after the foundation block;
+  a track that starts in grade X (`startClass` in `tracks.json`; tracks A-D)
+  has all six semesters, a track that starts in grade XI (track E) has only
+  XI1..XII2 and no grade X week (364 track weeks in all: 77 each for A-D, 56
+  for E); the foundation block `FND-X1` holds exactly the weeks 1-7;
+  `structure.json` agrees with the 14-week semester and with each week's
+  class and phase.
+- **Pengayaan tracks (silabus v1.2):** tracks D and E have `cpStatus`
+  `pengayaan` (outside the CP wording). They may never appear in
+  `cp-mapping.json` `mappings[].tracks`; their resemblance to CP items lives
+  only in `enrichmentLinks` (bagian 4.5), whose tracks must be pengayaan
+  tracks and whose weeks must belong to that track. `partialTracks` of a
+  mapping row (the "(parsial)" marker, per track) must be a subset of its
+  `tracks`.
 - **Referential integrity:** every mapped CP code exists in
   `cp-elements.json`; every week code in `cp-mapping.json` and
   `osn-bridge.json` exists in `weeks.json` (and belongs to a track the row
@@ -174,13 +185,16 @@ grade-X foundation block): `cp-elements.json`, `tracks.json`,
   track; the normalised `weeks` equal the source `weeksText` expanded; every
   track id exists in `tracks.json`; and every `familyId` of the OSN bridge
   exists in `data/osn/topic-families.json` (a cross-programme reference,
-  ADR-0006) and all ten OSN families are covered.
+  ADR-0006). The main bridge (track A) covers all ten OSN families; the
+  `trackBridges` of other tracks (track C, bagian 5.2) cover only some and
+  their weeks must belong to that track.
 
 Whether the data still equals the document cell by cell is a separate
 check: `bun run check:sma-fidelity` (`scripts/check-sma-coding-fidelity.ts`,
 also run by `bun test` in `tests/integration/sma-coding-fidelity.test.ts`)
-parses the Markdown tables of bagian 1.3, 1.4, 2, 3 (including the foundation table), 4 and 5 and exits `1`
-listing every mismatching cell.
+parses the Markdown tables of bagian 1.3, 1.4, 2, 3 (including the foundation
+table and the track summary 3.6), 4 (including the enrichment links 4.5) and 5
+(one table per track) and exits `1` listing every mismatching cell.
 
 ### Options
 
@@ -366,7 +380,7 @@ regardless of host timezone.
 | --- | --- |
 | `0` | Success. |
 | `1` | (`sma-coding` only) the programme corpus fails validation. |
-| `2` | Usage error: `--start` missing, `--start`/an `--exclude` entry is not a real ISO `YYYY-MM-DD` calendar date, an unknown `--target-stage`, or an unknown `--format`; for `sma-coding`: `--track` missing or unknown, an unknown `--kelas`/`--semester`, or an OSN-only flag. |
+| `2` | Usage error: `--start` missing, `--start`/an `--exclude` entry is not a real ISO `YYYY-MM-DD` calendar date, an unknown `--target-stage`, or an unknown `--format`; for `sma-coding`: `--track` missing or unknown, an unknown `--kelas`/`--semester`, a kelas X semester asked of track E (which starts in kelas XI), or an OSN-only flag. |
 
 ### Example
 
@@ -401,23 +415,26 @@ issue #77). It is derived only from the validated `data/sma-coding/` corpus
 them exits `1` with a pointer to `osn validate --program sma-coding`).
 
 ```sh
-osn plan --program sma-coding --track <A|B> [--kelas <X|XI|XII>] [--semester <kode>] [--format md|json]
+osn plan --program sma-coding --track <A|B|C|D|E> [--kelas <X|XI|XII>] [--semester <kode>] [--format md|json]
 ```
 
 | Flag | Meaning |
 | --- | --- |
-| `--track <id>` | The learning track, one of `tracks.json` (`A`, `B`). **Required**; missing or unknown is exit `2` naming the valid tracks. |
-| `--kelas <X\|XI\|XII>` | Only the two semesters of this class. Default: all six semesters. |
+| `--track <id>` | The learning track, one of `tracks.json` (`A`, `B`, `C`, `D`, `E`). **Required**; missing or unknown is exit `2` naming the valid tracks. |
+| `--kelas <X\|XI\|XII>` | Only the two semesters of this class. Default: all semesters of the track (six; four for track E, which starts in kelas XI, so `--track E --kelas X` is exit `2`). |
 | `--semester <kode>` | Only this semester: `X1`, `X2`, `XI1`, `XI2`, `XII1` or `XII2` (or `1`/`2` together with `--kelas`). A semester that does not belong to `--kelas` is exit `2`. |
-| `--format <md\|json>`, `--json` | Markdown (default) or JSON: the plan object with `program`, `syllabusVersion`, `syllabusDate`, `scope`, `track` and `semesters[]` (each with `foundation[]` and `weeks[]`; every week has `code`, `topic`, `objective`, `output`, `exercise`, `cpItems`, `osnBridges`, `modules`). |
+| `--format <md\|json>`, `--json` | Markdown (default) or JSON: the plan object with `program`, `syllabusVersion`, `syllabusDate`, `scope`, `track` and `semesters[]` (each with `foundation[]` and `weeks[]`; every week has `code`, `topic`, `objective`, `output`, `exercise`, `cpItems`, `enrichmentLinks`, `osnBridges`, `modules`; `track` carries `startClass` and `cpStatus`). |
 
 `--start`, `--exclude` and `--target-stage` belong to the OSN cohort calendar
 and are rejected with exit `2` for `sma-coding` (never silently ignored).
 
 Per week the Markdown shows the code, topic, objective, output and exercise
 (verbatim corpus cells), the CP items mapped to that week by `cp-mapping.json`
-(with their short label; "(parsial)" when the mapping says so), the OSN
-bridge entries of `osn-bridge.json` that name the week (track A only) and,
+(with their short label; "(parsial)" when the mapping marks the week's own
+track partial), for a week of a pengayaan track (D, E) the enrichment links
+(CP resemblances that are not counted as covering the item) with a note that
+the track lies outside the CP wording, the OSN bridge entries of
+`osn-bridge.json` that name the week (tracks A and C) and,
 when `data/sma-coding/modules.json` exists, the indexed modules that list the
 week in `weekCodes` (a module that is not approved is marked DRAF). Kelas X
 semester 1 starts with the shared foundation block `FND-X1-M1..M7` (the same
@@ -431,7 +448,7 @@ Real output (`osn plan --program sma-coding --track A --semester X1`, abridged):
 
 Program: Silabus Pembelajaran Coding SMA
 Cakupan: semester X1
-Sumber: silabus versi 1.1.0, tanggal 2026-11-19.
+Sumber: silabus versi 1.2.0, tanggal 2026-11-19.
 
 ## Semester X1 (kelas X, fase E)
 
@@ -464,6 +481,24 @@ Sumber: silabus versi 1.1.0, tanggal 2026-11-19.
 - **Jembatan OSN:** dasar-pemrograman -- sintaks C++, variabel, I/O, percabangan, perulangan, fungsi. Catatan: Sesuai CP.
 
 ...
+```
+
+A pengayaan track states so in the header (`osn plan --program sma-coding --track D --semester XI1`, first lines):
+
+```text
+# Rencana Pembelajaran -- Jalur D: Kecerdasan Buatan dan Analisis Data
+
+Program: Silabus Pembelajaran Coding SMA
+Cakupan: semester XI1
+Sumber: silabus versi 1.2.0, tanggal 2026-11-19.
+Catatan: jalur D adalah pengayaan di luar rumusan CP; tidak dihitung sebagai pemenuhan butir CP.
+```
+
+A kelas X semester of track E (which starts in kelas XI) is a usage error:
+
+```text
+$ osn plan --program sma-coding --track E --kelas X
+osn plan: jalur E tidak memiliki semester X1: jalur ini dimulai di kelas XI.
 ```
 
 ## `osn render`
@@ -560,16 +595,20 @@ a learner is stored).
 
 The learner sheet of one week of the `sma-coding` programme (issue #77),
 derived **only** from the validated corpus. `--week` takes a **week code**
-instead of a number: a track week such as `A-X1-M9` or `B-X2-M3`, or a week of
-the shared foundation block such as `FND-X1-M3` (case-insensitive). An unknown
-code is exit `2` and the message lists example valid codes
-(`jalur A: A-X1-M8 .. A-XII2-M14; jalur B: ...; blok fondasi FND: FND-X1-M1 .. FND-X1-M7`).
+instead of a number: a track week such as `A-X1-M9`, `C-X1-M8`, `D-XI1-M5` or
+`E-XI2-M12`, or a week of the shared foundation block such as `FND-X1-M3`
+(case-insensitive). An unknown code is exit `2` and the message lists example
+valid codes (`jalur A: A-X1-M8 .. A-XII2-M14; jalur B: ...; jalur E: E-XI1-M1 ..
+E-XII2-M14; blok fondasi FND: FND-X1-M1 .. FND-X1-M7`).
 
 Sections, in order: title and code; the position (track, class, semester and
 week, or "blok fondasi bersama"); the topic; **Tujuan**, **Keluaran** and
 **Latihan dan kegiatan** (verbatim corpus cells); **Butir CP terkait** (the
 items `cp-mapping.json` maps to the week, with their label, plus the CP
-quotation of each element from `cp-elements.json`); **Jembatan ke OSN** (only
+quotation of each element from `cp-elements.json`; for a pengayaan track
+the section says the track is outside the CP wording and shows no quotation);
+**Irisan dengan CP (pengayaan, tidak dihitung pemenuhan CP)** (only when
+`enrichmentLinks` names the week); **Jembatan ke OSN** (only
 when `osn-bridge.json` names the week); **Modul terkait** (only when
 `data/sma-coding/modules.json` exists and an indexed module lists the week in
 `weekCodes`: id, title and status; a module that is not `disetujui` is marked
@@ -611,13 +650,23 @@ Tidak ada butir CP yang dipetakan ke minggu ini dalam pemetaan silabus.
 - [ ] Keluaran selesai: tabel konversi; lembar kode karakter; gambar 8x8 dalam bentuk deret bit
 
 ---
-Sumber: Silabus Pembelajaran Coding SMA, versi 1.1.0, tanggal 2026-11-19.
+Sumber: Silabus Pembelajaran Coding SMA, versi 1.2.0, tanggal 2026-11-19.
 ```
 
 Unknown code (exit `2`):
 
 ```text
-osn render lembar-siswa: kode minggu "A-X1-M1" tidak dikenal untuk program sma-coding. Contoh kode yang sah: jalur A: A-X1-M8 .. A-XII2-M14; jalur B: B-X1-M8 .. B-XII2-M14; blok fondasi FND: FND-X1-M1 .. FND-X1-M7.
+osn render lembar-siswa: kode minggu "A-X1-M1" tidak dikenal untuk program sma-coding. Contoh kode yang sah: jalur A: A-X1-M8 .. A-XII2-M14; jalur B: B-X1-M8 .. B-XII2-M14; jalur C: C-X1-M8 .. C-XII2-M14; jalur D: D-X1-M8 .. D-XII2-M14; jalur E: E-XI1-M1 .. E-XII2-M14; blok fondasi FND: FND-X1-M1 .. FND-X1-M7.
+```
+
+A week of a pengayaan track (`osn render lembar-siswa --program sma-coding --week D-XI1-M5`, middle of the output):
+
+```text
+## Butir CP terkait
+Jalur D adalah pengayaan di luar rumusan CP; minggu jalur ini tidak dihitung sebagai pemenuhan butir CP mana pun.
+
+## Irisan dengan CP (pengayaan, tidak dihitung pemenuhan CP)
+- F-AD-a: sumber data terbuka, terpercaya, legal untuk keputusan dan prediksi. Tingkat irisan: **Irisan terdekat.** Sedang: rumusan menyebut "prediksi" dan "tanpa atau dengan komputer", tetapi tidak menyebut AI atau pembelajaran mesin.
 ```
 
 ### `osn render modul`

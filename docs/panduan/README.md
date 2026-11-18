@@ -29,7 +29,7 @@ Dokumen ini independen dan bukan dokumen resmi Puspresnas, IA TOKI, atau IOI.
 | Program (`--program`) | Isi | Sumber | Dukungan alat |
 | --- | --- | --- | --- |
 | `osn` | Pembinaan OSN Informatika 2026, 28 minggu, 10 rumpun materi, 7 gerbang (checkpoint). | PDF silabus v2.0 (4 September 2026) di `docs/`. | Penuh: `validate`, `plan`, `render`, `report`, `checklist`. |
-| `sma-coding` | Coding SMA kelas X-XII: jalur A (C++) dan jalur B (web JS/TS/Bun). | `docs/programs/sma-coding/silabus.md` v1.1, disetujui pemilik program 2026-11-19 (v1.0: 2026-11-18). | `validate`, `plan --track`, `render lembar-siswa --week <kode-minggu>` dan `render modul` (issue #77). `render weekly`, `render checkpoint` and `render sop`, `report` dan `checklist` menolak dengan exit 2. |
+| `sma-coding` | Coding SMA kelas X-XII: jalur A (C++), B (web JS/TS/Bun), C (IoT dan robotika), D (kecerdasan buatan dan analisis data), E (komputasi kuantum, kelas XI-XII). | `docs/programs/sma-coding/silabus.md` v1.2, disetujui pemilik program 2026-11-19 untuk kelima jalur (v1.1: 2026-11-19; v1.0: 2026-11-18). Jalur D dan E di luar rumusan CP (pengayaan). | `validate`, `plan --track`, `render lembar-siswa --week <kode-minggu>` dan `render modul` (issue #77). `render weekly`, `render checkpoint` and `render sop`, `report` dan `checklist` menolak dengan exit 2. |
 
 ## Anda siapa? Baca halaman ini
 
@@ -51,7 +51,7 @@ Dokumen ini independen dan bukan dokumen resmi Puspresnas, IA TOKI, atau IOI.
 | Modul | Bahan belajar siswa (penjelasan, contoh, latihan) berbentuk Markdown di `content/<program>/modules/`, diindeks `data/<program>/modules.json`. Konten karangan, bukan transkripsi silabus (ADR-0007). |
 | Draf (`draf`) | Status modul atau dokumen yang belum ditinjau manusia. Selalu ditandai spanduk `DRAF`. Status lain: `ditinjau`, `disetujui`, `ditarik`. |
 | Disetujui (`disetujui`) | Hanya manusia (pemilik atau peninjau yang ia tunjuk) yang boleh menetapkannya, dengan tanggal dan peran peninjau. |
-| Jalur | Lintasan belajar dalam program `sma-coding`: A (C++), B (web). Jalur C, D, E masih usulan. |
+| Jalur | Lintasan belajar dalam program `sma-coding`: A (C++), B (web), C (IoT dan robotika), D (AI dan analisis data), E (komputasi kuantum, hanya kelas XI-XII). Jalur D dan E adalah pengayaan di luar CP. |
 | Konten transkripsi | Data yang disalin setia dari sumber silabus. Tidak boleh "diperbaiki" maknanya. |
 | Konten karangan | Modul dan draf silabus yang ditulis tim. Wajib ditinjau manusia sebelum disetujui. |
 
