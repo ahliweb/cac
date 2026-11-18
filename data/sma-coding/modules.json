@@ -113,6 +113,139 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/fondasi-perangkat-produktivitas.md"
+    },
+    {
+      "id": "matkom-sistem-bilangan-basis",
+      "title": "Sistem Bilangan dan Konversi Basis",
+      "cpItems": ["E-BK-e"],
+      "weekCodes": ["FND-X1-M3", "A-X1-M9", "B-X1-M9"],
+      "bridgeFamilies": ["logika-bitwise", "aritmetika"],
+      "gradeLevels": ["X"],
+      "prerequisites": ["FND-X1-M3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/matkom-sistem-bilangan-basis.md"
+    },
+    {
+      "id": "matkom-bilangan-bertanda-dan-luapan",
+      "title": "Bilangan Bertanda, Komplemen Dua, dan Luapan",
+      "cpItems": ["E-BK-e"],
+      "weekCodes": ["A-X1-M9", "A-X2-M4", "B-X1-M9"],
+      "bridgeFamilies": ["dasar-pemrograman", "logika-bitwise"],
+      "gradeLevels": ["X"],
+      "prerequisites": ["matkom-sistem-bilangan-basis"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/matkom-bilangan-bertanda-dan-luapan.md"
+    },
+    {
+      "id": "matkom-teks-gambar-suara",
+      "title": "Representasi Teks, Gambar, dan Suara",
+      "cpItems": [],
+      "weekCodes": ["A-X2-M2", "A-X2-M3", "B-X2-M2", "B-X2-M5"],
+      "bridgeFamilies": ["struktur-data"],
+      "gradeLevels": ["X"],
+      "prerequisites": ["FND-X1-M3", "matkom-sistem-bilangan-basis"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/matkom-teks-gambar-suara.md"
+    },
+    {
+      "id": "matkom-logika-proposisi",
+      "title": "Logika Proposisi untuk Pemrogram",
+      "cpItems": ["E-BK-d"],
+      "weekCodes": ["A-X1-M10", "B-X1-M10"],
+      "bridgeFamilies": ["logika-bitwise"],
+      "gradeLevels": ["X"],
+      "prerequisites": [],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/matkom-logika-proposisi.md"
+    },
+    {
+      "id": "matkom-himpunan-relasi-fungsi",
+      "title": "Himpunan, Relasi, dan Fungsi",
+      "cpItems": ["F-BK-c", "F-AP-d"],
+      "weekCodes": ["A-X1-M12", "A-XI1-M9", "A-XI2-M5", "B-X1-M12", "B-XI1-M8"],
+      "bridgeFamilies": ["aritmetika", "struktur-data", "graph-tree"],
+      "gradeLevels": ["X", "XI"],
+      "prerequisites": ["matkom-logika-proposisi"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/matkom-himpunan-relasi-fungsi.md"
+    },
+    {
+      "id": "matkom-induksi-dan-rekursi-matematis",
+      "title": "Induksi dan Rekursi Matematis",
+      "cpItems": ["F-AP-a", "F-BK-b"],
+      "weekCodes": ["A-X2-M11", "A-XI1-M7", "A-XI2-M1", "A-XI2-M2", "B-XI1-M9"],
+      "bridgeFamilies": ["rekursi", "aturan-berhitung", "strategi-problem-solving"],
+      "gradeLevels": ["X", "XI"],
+      "prerequisites": ["matkom-logika-proposisi", "matkom-himpunan-relasi-fungsi"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/matkom-induksi-dan-rekursi-matematis.md"
+    },
+    {
+      "id": "matkom-pertumbuhan-fungsi",
+      "title": "Pertumbuhan Fungsi dan Efisiensi Intuitif",
+      "cpItems": ["F-BK-b"],
+      "weekCodes": ["A-X2-M8", "A-X2-M12", "A-XI1-M8", "A-XI1-M12", "B-X2-M8", "B-XI1-M10"],
+      "bridgeFamilies": ["search-sort", "rekursi", "strategi-problem-solving"],
+      "gradeLevels": ["X", "XI"],
+      "prerequisites": ["matkom-sistem-bilangan-basis", "matkom-induksi-dan-rekursi-matematis"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/matkom-pertumbuhan-fungsi.md"
     }
   ]
 }
