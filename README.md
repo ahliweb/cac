@@ -65,6 +65,7 @@ bun test
 | `docs/operations/` | The operational runbook and syllabus-check procedure. |
 | `docs/silabus/` | The faithful Markdown transcription of the source syllabus PDF. |
 | `docs/*.pdf` | The source syllabus document itself. |
+| `docs/programs/` | Source documents of other programmes (ADR-0006). `sma-coding/` holds the **draft** SMA coding syllabus (grades X–XII, C++ track and JS/TS/Bun/awcms-one track), awaiting owner approval. |
 | `.github/workflows/` | CI pipeline (`ci.yml`). |
 | `.github/ISSUE_TEMPLATE/` | Bug, feature, and curriculum-change issue forms. |
 | `.changeset/` | Pending changesets (see `docs/development/releasing.md`). |
