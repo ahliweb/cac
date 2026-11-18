@@ -16,6 +16,17 @@ documentation that syllabus mandates.
 > Riset AhliKoding.com dari AhliWeb.com** and is not published, endorsed,
 > or reviewed by Puspresnas, IA TOKI, or the IOI.
 
+## Panduan penggunaan (Bahasa Indonesia)
+
+Panduan berorientasi tugas per peran ada di [`docs/panduan/`](docs/panduan/README.md):
+
+- [Mulai cepat](docs/panduan/mulai-cepat.md): pemasangan dan pemeriksaan pertama.
+- [Mentor OSN](docs/panduan/mentor-osn.md): kalender kohort, rencana sesi, lembar checkpoint, laporan KPI.
+- [Guru SMA](docs/panduan/guru-sma.md): program `sma-coding`, silabus, data, kebutuhan lab.
+- [Siswa](docs/panduan/siswa.md): lembar belajar, modul, kebijakan hint.
+- [Pemilik dan peninjau](docs/panduan/pemilik-peninjau.md): review konten, keputusan, rilis.
+- [Kontributor](docs/panduan/kontributor.md): alur issue sampai PR.
+
 ## What this repository is not
 
 - **Not a judge.** It does not compile, run, or score submitted code.
@@ -62,6 +73,7 @@ bun test
 | `docs/architecture/` | System architecture overview, repository map, and Architecture Decision Records (`adr/`). |
 | `docs/requirements/` | The requirements register and its traceability matrices. |
 | `docs/cli/` | The `osn` CLI command reference. |
+| `docs/panduan/` | Panduan penggunaan berbahasa Indonesia per peran (mentor OSN, guru SMA, siswa, pemilik/peninjau, kontributor). |
 | `docs/governance/` | Privacy policy, security policy, and incident-response procedure. |
 | `docs/operations/` | The operational runbook and syllabus-check procedure. |
 | `docs/silabus/` | The faithful Markdown transcription of the source syllabus PDF. |
