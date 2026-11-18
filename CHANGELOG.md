@@ -9,14 +9,73 @@ Version numbers here (`vX.Y.Z`) track the software in this repository —
 schema, domain model, CLI, and tooling. They are independent of each
 programme's own syllabus version (`syllabusVersion` / `syllabusDate`), which
 tracks that programme's source document and is registered per programme in
-`data/programs.json` (ADR-0006). Currently only the `osn` programme is
-registered, at syllabus version `2.0`, dated `2026-09-04`. See
+`data/programs.json` (ADR-0006). Currently two programmes are
+registered: `osn` at syllabus version `2.0`, dated `2026-09-04`, and
+`sma-coding` at version `1.0.0`. See
 [`docs/development/releasing.md`](docs/development/releasing.md) for how the
 two relate.
 
 ## [Unreleased]
 
 Nothing yet.
+
+## [2.1.0] — 2026-11-18
+
+Nine draft learning modules, the `sma-coding` programme corpus and the owner
+approvals behind them. **No breaking changes** — see
+[`docs/releases/v2.1.0.md`](docs/releases/v2.1.0.md). The OSN corpus is
+unchanged.
+
+### Added
+
+- **`sma-coding` programme corpus** `data/sma-coding/` (#52, #82),
+  transcribed from the approved SMA coding syllabus v1.0 (tracks A and B): CP
+  quotations and item codes, tracks, programme structure, the 168-week plan,
+  the CP-to-week mapping and the bridge to the ten OSN topic families. It is
+  registered in `data/programs.json`; new schemas `src/schema/sma-*.ts` and
+  `src/domain/sma-corpus-audit.ts` back `osn validate --program sma-coding`,
+  which also checks that every OSN topic family id used by the bridge exists
+  in the OSN corpus. `osn validate` without `--program` now validates both
+  programmes.
+- **`bun run check:sma-fidelity`** (also run by `bun test`) compares every
+  table cell of the syllabus with the data and fails on drift.
+- **Nine learning modules** for the OSN programme, all status `draf` (ADR-0007,
+  #55): `aritmetika`, `aturan-berhitung`, `geometri-dasar`, `graph-tree`,
+  `logika-bitwise`, `rekursi`, `search-sort`, `strategi-problem-solving` and
+  `struktur-data` (#71-#75, #78-#81). They render with the `DRAF` banner until
+  the owner approves them.
+- **Research on AI books** by Onno W. Purbo as possible references for the
+  SMA coding programme (#66, #83): verified titles, unverified items listed
+  separately, fit against CP codes and tracks, utilisation options. Docs
+  only; links to the books and does not copy their content.
+
+### Changed
+
+- **Pilot module `dasar-pemrograman` is `disetujui`** (#55, #67): approved by
+  the programme owner on 2026-11-18, so `osn render modul --id
+  dasar-pemrograman` no longer shows the `DRAF` banner. Content unchanged.
+- **SMA coding syllabus v1.0 approved** by the programme owner for tracks A
+  (C++) and B (JS/TS on Bun with `awcms-one`) on 2026-11-18 (#70); renamed from
+  `docs/programs/sma-coding/silabus-draf.md` to `silabus.md`. The six open
+  questions are answered; track C and the companion modules are not part of
+  this approval.
+- **Owner decision on the AI book research** (#84, #85): the findings feed a
+  separate AI track D in the SMA coding programme; the research note moves to
+  v0.2.0.
+- **`osn plan`, `render` (except `render modul`), `report` and `checklist`
+  refuse `--program sma-coding`** with exit 2 ("belum didukung untuk program
+  sma-coding") instead of serving OSN data.
+
+### Notes
+
+- The nine new modules are authored content in `draf` status; approval is a
+  human step (ADR-0007) and is not part of this release.
+- The decree number of the 2025 subject guide used as the CP source is still
+  unverified.
+- Open: track C ([#68]), companion modules ([#69]), requirements for the
+  programme ([#76]), CLI support for `sma-coding` ([#77]), track D AI ([#84]),
+  the grade-X foundation block ([#86]), computational-maths modules ([#87]),
+  track E quantum ([#88]) and cloud modules ([#89]).
 
 ## [2.0.0] — 2026-11-18
 
@@ -300,7 +359,17 @@ documentation the syllabus itself mandates.
   and the entry says so; the next check must perform the live verification
   per [`docs/operations/syllabus-check.md`](docs/operations/syllabus-check.md).
 
-[Unreleased]: https://github.com/ahliweb/osn/compare/v2.0.0...HEAD
+[Unreleased]: https://github.com/ahliweb/osn/compare/v2.1.0...HEAD
+[2.1.0]: https://github.com/ahliweb/osn/compare/v2.0.0...v2.1.0
 [2.0.0]: https://github.com/ahliweb/osn/compare/v1.1.0...v2.0.0
 [1.1.0]: https://github.com/ahliweb/osn/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/ahliweb/osn/releases/tag/v1.0.0
+[#68]: https://github.com/ahliweb/osn/issues/68
+[#69]: https://github.com/ahliweb/osn/issues/69
+[#76]: https://github.com/ahliweb/osn/issues/76
+[#77]: https://github.com/ahliweb/osn/issues/77
+[#84]: https://github.com/ahliweb/osn/issues/84
+[#86]: https://github.com/ahliweb/osn/issues/86
+[#87]: https://github.com/ahliweb/osn/issues/87
+[#88]: https://github.com/ahliweb/osn/issues/88
+[#89]: https://github.com/ahliweb/osn/issues/89
