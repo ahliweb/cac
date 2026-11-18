@@ -214,8 +214,8 @@ encoded:
   approved by the programme owner on 2026-11-19 for tracks A, B, C, D and E
   (v1.0 on 2026-11-18 for tracks A and B; v1.3 adds the AI items and the AI-use policy, #139); tracks D and E are outside the CP wording
   (enrichment). Registered in `data/programs.json`.
-- `tk-coding/` (v1.0.0), `sd-coding/` (v1.0.0), `smp-coding/` (v1.1.0),
-  `kuliah-coding/` (v1.1.0), `dewasa-coding/` (v1.1.0) — each holds
+- `tk-coding/` (v1.0.1), `sd-coding/` (v1.0.1), `smp-coding/` (v1.1.1),
+  `kuliah-coding/` (v1.1.1), `dewasa-coding/` (v1.1.1) — each holds
   `README.md`, `riset.md` and `silabus.md`, approved by the owner on 2026-11-19
   (issues #127–#131; v1.1 revisions #139), registered in `data/programs.json`
   and encoded into `data/<id>/`. None has a `content/<id>/` yet.

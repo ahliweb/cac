@@ -78,7 +78,7 @@ describe("sd-coding fidelity: data/sd-coding vs. the approved silabus", () => {
 
   test("the registry entry exists and carries the document's version and date", () => {
     expect(sdEntry).toBeDefined();
-    expect(sdEntry?.syllabusVersion).toBe("1.0.0");
+    expect(sdEntry?.syllabusVersion).toBe("1.0.1");
     expect(sdEntry?.syllabusDate).toBe("2026-11-19");
   });
 

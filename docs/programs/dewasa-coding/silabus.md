@@ -1,9 +1,9 @@
 # Silabus Pembelajaran Coding untuk Dewasa — v1.1
 
-- **Version:** v1.1.0
+- **Version:** v1.1.1
 - **Last updated:** 2026-11-19
 - **Status:** DISETUJUI pemilik program pada 2026-11-19 (dialog pilihan, beserta seluruh rekomendasi penyusun; keputusan di bagian 12). Revisi v1.1.0 (rekayasa perangkat lunak berbantuan AI, kebijakan penggunaan AI per program) disetujui pemilik pada 2026-11-19 lewat keputusan #139 (bagian 12.9). Dienkode ke `data/dewasa-coding/` (skema khusus program, ADR-0008) dan didaftarkan di `data/programs.json` (ADR-0006). Belum ada modul di `content/dewasa-coding/` (ADR-0007).
-- **Changeset:** Silabus program `dewasa-coding` disetujui pemilik pada 2026-11-19 (v1.0.0): empat jalur persona (pekerja, profesional, personal, pebisnis/UMKM), modul berbasis jam, pemetaan ke SKKNI 282/2016 untuk jalur profesional (hanya sampai judul unit), pertanyaan terbuka diganti keputusan pemilik (#131). Revisi v1.1.0 (#139, minor): modul baru `DW-PRO-M13` (rekayasa perangkat lunak berbantuan AI, 8 jam, jalur PRO 128 menjadi 136 jam), butir tambahan di `DW-FND-M1` dan `DW-PKJ-M6`, dan bagian 9.1 Kebijakan penggunaan AI; riwayat di `.changeset/dewasa-coding-v1-1-ai.md`.
+- **Changeset:** Silabus program `dewasa-coding` disetujui pemilik pada 2026-11-19 (v1.0.0): empat jalur persona (pekerja, profesional, personal, pebisnis/UMKM), modul berbasis jam, pemetaan ke SKKNI 282/2016 untuk jalur profesional (hanya sampai judul unit), pertanyaan terbuka diganti keputusan pemilik (#131). Revisi v1.1.0 (#139, minor): modul baru `DW-PRO-M13` (rekayasa perangkat lunak berbantuan AI, 8 jam, jalur PRO 128 menjadi 136 jam), butir tambahan di `DW-FND-M1` dan `DW-PKJ-M6`, dan bagian 9.1 Kebijakan penggunaan AI; riwayat di `.changeset/dewasa-coding-v1-1-ai.md`. Revisi patch v1.1.1 (#165): kalimat status yang basi; isi kurikulum tidak berubah.
 
 > Dokumen ini konten **karangan** (*authored*) menurut
 > [ADR-0007](../../architecture/adr/0007-authored-learning-content.md),
@@ -244,7 +244,7 @@ bagi peserta yang ingin mendampingi anak (bagian 6.1).
 | sma-coding jalur A (C++) | `PRO` | Dasar struktur data dan algoritma dari jalur A boleh menggantikan `DW-PRO-M3` setelah uji singkat; bahasa inti `PRO` tetap Python, sehingga M2 dan M4 diulang pada Python |
 | sma-coding jalur B (Bun, TypeScript, `awcms-one`) | `PRO` modul M8, M9; `BIS` modul M4 | Lulusan jalur B boleh langsung memulai M8 setelah M1 |
 | sma-coding jalur D (data, AI) | `PKJ` M3-M4, M6; `PRO` M3 | Pengolahan data dan etika AI sebagian sama |
-| kuliah-coding (issue #130, belum ada dokumen atau program) | `PRO` | **Belum dapat dirancang**: program itu belum ada di repositori. Jembatan ditunda menurut keputusan 12.7 |
+| kuliah-coding (issue #130, silabusnya kini ada dan disetujui pemilik) | `PRO` | **Belum dapat dirancang** pada revisi ini: jembatan ditunda menurut keputusan 12.7 |
 | `PRS` | `PKJ`, `PRO`, `BIS` | Setelah `PRS-M6`, peserta memilih jalur lanjut |
 | `PKJ` | `PRO` | `PKJ-M3` sampai M5 menggantikan sebagian `PRO-M2` |
 
@@ -507,3 +507,4 @@ M10, dan M12), bukan angka dari sumber. Kebijakan penggunaan AI: bagian 9.1.
 | v0.1.0 | 2026-11-19 | Draf awal (#131). |
 | v1.0.0 | 2026-11-19 | Disetujui pemilik beserta rekomendasi (dialog pilihan 2026-11-19): status DISETUJUI; bagian 12 diubah dari pertanyaan terbuka menjadi keputusan (opsi rekomendasi); rencana modul, jam, dan pemetaan tidak diubah (#131). |
 | v1.1.0 | 2026-11-19 | Revisi minor yang disetujui pemilik lewat keputusan #139: modul baru `DW-PRO-M13` rekayasa perangkat lunak berbantuan AI (8 jam; jalur `PRO` 120 menjadi 128 jam, total 128 menjadi 136; tabel 5.1 mendapat kolom jam dan urutan belajar; `DW-PRO-M6` bergantung pada `DW-PRO-M13`); butir tambahan di `DW-FND-M1` (hak cipta dan lisensi keluaran AI, kebijakan tempat kerja, *prompt injection*, energi dan biaya komputasi) dan `DW-PKJ-M6` (catat alat, versi, perintah; hasil tidak identik; uji data sintetis); glosarium istilah AI (3.2); kebijakan penggunaan AI (9.1); keputusan 12.9. Hitungan 34 unit SKKNI yang disentuh tidak berubah (#139). |
+| v1.1.1 | 2026-11-19 | Revisi patch: kalimat status, keputusan pemilik #165; isi kurikulum tidak berubah. |

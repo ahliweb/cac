@@ -1,6 +1,6 @@
 # Program Pembelajaran Coding Perguruan Tinggi (`kuliah-coding`)
 
-- **Version:** v1.1.0
+- **Version:** v1.1.1
 - **Last updated:** 2026-11-19
 - **Status:** **DISETUJUI** pemilik program: v1.0 pada 2026-11-19 (issue #130) beserta rekomendasi penyusun, revisi v1.1 (rekayasa perangkat lunak berbantuan AI) lewat keputusan pemilik 2026-11-19 (issue #139). Program **terdaftar** di `data/programs.json` (versi silabus 1.1.0) dan corpusnya ada di `data/kuliah-coding/` (ADR-0006, ADR-0008). Belum ada `content/kuliah-coding/` (modul pendamping).
 
@@ -80,6 +80,7 @@ dan audit tetap); hanya isi sel dan versi (1.1.0).
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v1.1.1 | 2026-11-19 | Silabus direvisi patch ke v1.1.1 (issue #165): kalimat status yang basi tentang program pasangannya diperbaiki; isi kurikulum dan corpus tidak berubah. |
 | v1.1.0 | 2026-11-19 | Rekayasa perangkat lunak berbantuan AI (issue #139): `KUL-U-202`, `KUL-I-204`, `KUL-I-401`, `KUL-I-301`, `KUL-I-305`, `KUL-I-303`, jalur K, kebijakan AI diperkuat, glosarium; SKS tidak berubah; corpus dan registri ke 1.1.0. |
 | v1.0.0 | 2026-11-19 | Disetujui pemilik (issue #130); `silabus-draf.md` menjadi `silabus.md`; program terdaftar dan di-encode ke `data/kuliah-coding/`. |
 | v0.1.0 | 2026-11-19 | Draf awal folder program (issue #130): README, riset, silabus draf. |

@@ -1,9 +1,9 @@
 # Silabus Pembelajaran Coding TK/PAUD (Berpikir Komputasional) — v1.0
 
-- **Version:** v1.0.0
+- **Version:** v1.0.1
 - **Last updated:** 2026-11-19
 - **Status:** DISETUJUI pemilik program, 2026-11-19, beserta rekomendasi penyusun untuk setiap pertanyaan terbuka (keputusan lewat dialog pilihan, dicatat di issue #127; bagian 9). Rencana 48 minggu tanpa layar sebagai bawaan.
-- **Changeset:** Silabus v1.0 disetujui pemilik: draf v0.1.0-draf dipertahankan isinya; pertanyaan terbuka (bagian 9) diganti keputusan pemilik (opsi rekomendasi tiap pertanyaan); `silabus-draf.md` menjadi `silabus.md`, sumber corpus `data/tk-coding/` (issue #127, ADR-0006, ADR-0008).
+- **Changeset:** Silabus v1.0 disetujui pemilik: draf v0.1.0-draf dipertahankan isinya; pertanyaan terbuka (bagian 9) diganti keputusan pemilik (opsi rekomendasi tiap pertanyaan); `silabus-draf.md` menjadi `silabus.md`, sumber corpus `data/tk-coding/` (issue #127, ADR-0006, ADR-0008). Revisi patch v1.0.1 (#165): kalimat status yang basi; isi kurikulum tidak berubah.
 
 > **Disetujui pemilik program pada 2026-11-19** (keputusan lewat dialog
 > dengan opsi rekomendasi penyusun untuk setiap pertanyaan; bagian 9, issue
@@ -239,7 +239,7 @@ memenuhi CP secara utuh lewat kegiatan lain TK; program ini hanya
 ## 5. Jembatan ke program SD
 
 - **Kebijakan.** Kepka 046/H/KR/2025 Diktum KEENAM: CP Fase A "disusun selaras dengan Capaian Pembelajaran pada fase fondasi untuk memastikan transisi pembelajaran yang berkesinambungan dari PAUD ke SD" (kutipan penuh enam kemampuan fondasi di riset 2.1). Mata pelajaran koding dan KA pilihan dimulai kelas V SD menurut halaman BBPMP yang dibuka (riset 2.5), bukan di PAUD.
-- **Program `sd-coding`.** Program SD sedang disusun paralel (issue lain); dokumennya **belum ada** di repositori pada 2026-11-19 (`docs/programs/` hanya memuat `sma-coding` dan folder ini). Jembatan berikut bersifat rancangan sepihak dan **harus disesuaikan** setelah silabus `sd-coding` ada `[belum terverifikasi]`.
+- **Program `sd-coding`.** Silabus `sd-coding` (issue #128) disetujui pemilik pada 2026-11-19 dan kini ada di `docs/programs/sd-coding/silabus.md`. Jembatan berikut disusun sebelum silabus itu dibaca, bersifat rancangan sepihak, dan **harus disesuaikan** dengannya `[belum terverifikasi]`.
 
 | Keluaran akhir TK B | Prasyarat untuk SD awal (Fase A) | Catatan |
 | --- | --- | --- |
@@ -352,3 +352,4 @@ konsekuensinya.
 | --- | --- | --- |
 | v0.1.0-draf | 2026-11-19 | Draf awal (issue #127): sumber resmi, prinsip, struktur TK A dan TK B, rencana 48 minggu, pemetaan irisan ke CP, jembatan SD, asesmen, privasi, opsi alat, pertanyaan terbuka. Belum disetujui pemilik. |
 | v1.0.0 | 2026-11-19 | Disetujui pemilik beserta rekomendasi penyusun (issue #127): status DISETUJUI, `silabus-draf.md` menjadi `silabus.md`, pertanyaan terbuka diganti keputusan pemilik (bagian 9). Isi rencana tidak diubah. |
+| v1.0.1 | 2026-11-19 | Revisi patch: kalimat status, keputusan pemilik #165; isi kurikulum tidak berubah. |

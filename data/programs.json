@@ -20,7 +20,7 @@
       "id": "tk-coding",
       "name": "Silabus Pembelajaran Coding TK/PAUD (Berpikir Komputasional)",
       "sourceDocument": "docs/programs/tk-coding/silabus.md",
-      "syllabusVersion": "1.0.0",
+      "syllabusVersion": "1.0.1",
       "syllabusDate": "2026-11-19",
       "corpusDir": "data/tk-coding"
     },
@@ -28,7 +28,7 @@
       "id": "kuliah-coding",
       "name": "Silabus Pembelajaran Coding Perguruan Tinggi",
       "sourceDocument": "docs/programs/kuliah-coding/silabus.md",
-      "syllabusVersion": "1.1.0",
+      "syllabusVersion": "1.1.1",
       "syllabusDate": "2026-11-19",
       "corpusDir": "data/kuliah-coding"
     },
@@ -36,7 +36,7 @@
       "id": "dewasa-coding",
       "name": "Silabus Pembelajaran Coding untuk Dewasa",
       "sourceDocument": "docs/programs/dewasa-coding/silabus.md",
-      "syllabusVersion": "1.1.0",
+      "syllabusVersion": "1.1.1",
       "syllabusDate": "2026-11-19",
       "corpusDir": "data/dewasa-coding"
     },
@@ -44,7 +44,7 @@
       "id": "sd-coding",
       "name": "Silabus Pembelajaran Coding SD",
       "sourceDocument": "docs/programs/sd-coding/silabus.md",
-      "syllabusVersion": "1.0.0",
+      "syllabusVersion": "1.0.1",
       "syllabusDate": "2026-11-19",
       "corpusDir": "data/sd-coding"
     },
@@ -52,7 +52,7 @@
       "id": "smp-coding",
       "name": "Silabus Pembelajaran Coding SMP",
       "sourceDocument": "docs/programs/smp-coding/silabus.md",
-      "syllabusVersion": "1.1.0",
+      "syllabusVersion": "1.1.1",
       "syllabusDate": "2026-11-19",
       "corpusDir": "data/smp-coding"
     }

@@ -1,8 +1,8 @@
 {
-  "syllabusVersion": "1.0.0",
+  "syllabusVersion": "1.0.1",
   "syllabusDate": "2026-11-19",
   "sourceSection": "bagian 7",
-  "intro": "Program `tk-coding` dan `smp-coding` disusun paralel dan **belum ada di repositori ini**; bagian ini hanya menyatakan kemampuan masuk dan keluaran yang diharapkan `[asumsi]` dan harus diselaraskan ketika keduanya selesai.",
+  "intro": "Program `tk-coding` dan `smp-coding` disusun paralel; silabus keduanya kini ada di repositori ini dan disetujui pemilik (2026-11-19), tetapi bagian ini disusun sebelum keduanya dibaca: ia hanya menyatakan kemampuan masuk dan keluaran yang diharapkan `[asumsi]` dan harus diselaraskan dengan keduanya.",
   "bridges": [
     {
       "id": "tk-ke-kelas-1",

@@ -1,6 +1,6 @@
 # Program Pembelajaran Coding untuk Dewasa (`dewasa-coding`)
 
-- **Version:** v1.1.0
+- **Version:** v1.1.1
 - **Last updated:** 2026-11-19
 - **Status:** DISETUJUI pemilik pada 2026-11-19 (dialog pilihan, beserta rekomendasi penyusun; issue #131). Silabus dienkode ke `data/dewasa-coding/` dengan skema khusus program (ADR-0008) dan didaftarkan di `data/programs.json`. Belum ada `content/dewasa-coding/` (modul pembelajaran, ADR-0007). Revisi v1.1.0 (rekayasa perangkat lunak berbantuan AI) disetujui pemilik pada 2026-11-19 lewat keputusan #139.
 - **Changeset:** `.changeset/encode-dewasa-coding.md` (minor): silabus disetujui dan dienkode (#131). Revisi v1.1.0: `.changeset/dewasa-coding-v1-1-ai.md` (minor, #139). Riwayat: `.changeset/draf-dewasa-coding.md` (patch), dokumen riset dan silabus draf.
@@ -37,7 +37,7 @@ memuat `DW-PRO-M13` (rekayasa perangkat lunak berbantuan AI, 8 jam, setelah
 | --- | --- |
 | `README.md` | Dokumen ini: status, tujuan, daftar berkas, keputusan pemilik, changelog. |
 | `riset.md` | Riset sumber bertanggal 2026-11-19: SKKNI 282/2016 (47 unit; tabel bagian 2.2 menjadi sumber judul unit di data), skema sertifikasi LSP, program pelatihan pemerintah, kerangka kecakapan digital, kebutuhan UMKM, kajian alat (lisensi, biaya, akun); memisahkan yang dibuka dari yang tidak. |
-| `silabus.md` | Silabus v1.1.0 yang disetujui: empat jalur dengan rencana modul berjam, pemetaan SKKNI untuk jalur profesional, jembatan, asesmen portofolio, opsi sertifikasi, privasi dan kebijakan penggunaan AI (bagian 9), opsi alat, biaya, dan keputusan pemilik (bagian 12). Sumber `data/dewasa-coding/`. |
+| `silabus.md` | Silabus v1.1.1 yang disetujui: empat jalur dengan rencana modul berjam, pemetaan SKKNI untuk jalur profesional, jembatan, asesmen portofolio, opsi sertifikasi, privasi dan kebijakan penggunaan AI (bagian 9), opsi alat, biaya, dan keputusan pemilik (bagian 12). Sumber `data/dewasa-coding/`. |
 
 ## Korpus data
 
@@ -94,3 +94,4 @@ dicatat dengan tanggal) dan, karena data dienkode dari silabus, mengubah
 | v0.1.0 | 2026-11-19 | Draf awal folder program: `riset.md` dan `silabus-draf.md` (#131). |
 | v1.0.0 | 2026-11-19 | Silabus disetujui pemilik beserta rekomendasi: `silabus-draf.md` menjadi `silabus.md` (v1.0.0), dienkode ke `data/dewasa-coding/` dan didaftarkan di `data/programs.json` (#131). |
 | v1.1.0 | 2026-11-19 | Revisi minor atas keputusan pemilik #139: modul `DW-PRO-M13` (jalur `PRO` 128 menjadi 136 jam), butir AI di `DW-FND-M1` dan `DW-PKJ-M6`, glosarium istilah AI, kebijakan penggunaan AI (bagian 9.1); `data/dewasa-coding/` dan registri diperbarui ke 1.1.0; skema `tracks.json` menjadikan `hoursPerModule` opsional (jalur dengan jam modul tak seragam); fidelity membaca kolom jam tabel `PRO` dan urutan belajar. |
+| v1.1.1 | 2026-11-19 | Silabus direvisi patch ke v1.1.1 (issue #165): kalimat status yang basi tentang program pasangannya diperbaiki; isi kurikulum dan corpus tidak berubah. |

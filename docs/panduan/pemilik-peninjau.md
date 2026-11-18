@@ -116,9 +116,9 @@ karangan. Ia menjadi sumber corpus `data/<program>/` hanya setelah Anda
 menyetujuinya (ADR-0006). Keadaan 2026-11-19: keenam program coding sudah
 Anda setujui, dikodekan ke `data/<id>/`, dan terdaftar di
 `data/programs.json` (ADR-0008): `sma-coding` v1.3.0 (v1.0 disetujui
-2026-11-18; v1.1, v1.2, dan v1.3 pada 2026-11-19), `tk-coding` v1.0.0,
-`sd-coding` v1.0.0, `smp-coding` v1.1.0, `kuliah-coding` v1.1.0, dan
-`dewasa-coding` v1.1.0. Revisi v1.1/v1.3 memuat butir dan kebijakan AI sesuai
+2026-11-18; v1.1, v1.2, dan v1.3 pada 2026-11-19), `tk-coding` v1.0.1,
+`sd-coding` v1.0.1, `smp-coding` v1.1.1, `kuliah-coding` v1.1.1, dan
+`dewasa-coding` v1.1.1 (revisi patch kalimat status, #165). Revisi v1.1/v1.3 memuat butir dan kebijakan AI sesuai
 keputusan Anda pada issue [#139](https://github.com/ahliweb/osn/issues/139)
 (kebijakan disusun per program). Peta statusnya ada di
 [`docs/programs/README.md`](../programs/README.md).

@@ -235,11 +235,11 @@ numbers below are the corpus files `osn validate` counts (the optional
 
 | Programme | Syllabus | Corpus files | Schemas / audit |
 | --- | --- | --- | --- |
-| `tk-coding` | v1.0.0 | 7 (`bridge`, `cp-elements`, `cp-mapping`, `decisions`, `goals`, `structure`, `weeks`) | `src/schema/tk-*.ts`, `src/domain/tk-corpus-audit.ts` |
-| `kuliah-coding` | v1.1.0 | 6 (`ai-policy`, `bridges`, `courses`, `cpl`, `knowledge-areas`, `tracks`) | `src/schema/kul-*.ts`, `src/domain/kul-corpus-audit.ts` |
-| `dewasa-coding` | v1.1.0 | 7 (`bridges`, `certification`, `module-plan`, `shared`, `skkni-units`, `structure`, `tracks`) | `src/schema/dw-*.ts`, `src/domain/dw-corpus-audit.ts` |
-| `sd-coding` | v1.0.0 | 5 (`bridges`, `cp-elements`, `cp-mapping`, `structure`, `weeks`) | `src/schema/sd-*.ts`, `src/domain/sd-corpus-audit.ts` |
-| `smp-coding` | v1.1.0 | 7 (`bridge`, `club`, `cp-elements`, `cp-mapping`, `structure`, `uncovered`, `weeks`) | `src/schema/smp-*.ts`, `src/domain/smp-corpus-audit.ts` |
+| `tk-coding` | v1.0.1 | 7 (`bridge`, `cp-elements`, `cp-mapping`, `decisions`, `goals`, `structure`, `weeks`) | `src/schema/tk-*.ts`, `src/domain/tk-corpus-audit.ts` |
+| `kuliah-coding` | v1.1.1 | 6 (`ai-policy`, `bridges`, `courses`, `cpl`, `knowledge-areas`, `tracks`) | `src/schema/kul-*.ts`, `src/domain/kul-corpus-audit.ts` |
+| `dewasa-coding` | v1.1.1 | 7 (`bridges`, `certification`, `module-plan`, `shared`, `skkni-units`, `structure`, `tracks`) | `src/schema/dw-*.ts`, `src/domain/dw-corpus-audit.ts` |
+| `sd-coding` | v1.0.1 | 5 (`bridges`, `cp-elements`, `cp-mapping`, `structure`, `weeks`) | `src/schema/sd-*.ts`, `src/domain/sd-corpus-audit.ts` |
+| `smp-coding` | v1.1.1 | 7 (`bridge`, `club`, `cp-elements`, `cp-mapping`, `structure`, `uncovered`, `weeks`) | `src/schema/smp-*.ts`, `src/domain/smp-corpus-audit.ts` |
 
 Real output of `osn validate` (all registered programmes; each block is one
 programme, the path is shortened):

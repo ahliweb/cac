@@ -60,7 +60,7 @@ describe("smp-coding fidelity: data/smp-coding vs. the approved silabus", () => 
 
   test("the registry entry exists and carries the document's version and date", () => {
     expect(smpEntry).toBeDefined();
-    expect(smpEntry?.syllabusVersion).toBe("1.1.0");
+    expect(smpEntry?.syllabusVersion).toBe("1.1.1");
     expect(smpEntry?.syllabusDate).toBe("2026-11-19");
     expect(registry.programs.find((p) => p.id === "smp-coding")).toMatchObject({
       sourceDocument: "docs/programs/smp-coding/silabus.md",
