@@ -1,9 +1,17 @@
 # Usulan Blok Fondasi Informatika Dasar Wajib di Kelas X
 
-- **Version:** v0.1.0
+- **Version:** v0.2.0
 - **Last updated:** 2026-11-18
-- **Status:** DRAF — usulan untuk silabus v1.1, belum disetujui
-- **Changeset:** Usulan awal (issue #86): topik fondasi, pemetaan ke butir CP silabus v1.0, tiga opsi panjang blok dengan dampak ke kelas X, bentuk materi, hubungan dengan #68, #69, #84, pertanyaan terbuka.
+- **Status:** DRAF — empat keputusan pemilik dicatat (2026-11-18); penerapan ke silabus v1.1 di issue #92
+- **Changeset:** Keputusan pemilik 2026-11-18 dicatat: opsi (b) + 1 minggu E-LD-d (7 minggu), kelas bersama lintas jalur, operasi bit ke pengayaan kelas XI. Empat pertanyaan masih terbuka.
+
+> **Keputusan pemilik (2026-11-18, dialog pilihan, dicatat di issue #86):**
+> blok fondasi **7 minggu** — paket enam minggu opsi (b) ditambah **satu
+> minggu perangkat pengolah dokumen, lembar kerja, dan presentasi (E-LD-d)**;
+> dijalankan sebagai **kelas bersama lintas jalur sebelum murid memilih
+> jalur**; operasi bit dasar (`A-X2-M12`) **pindah ke pengayaan kelas XI**.
+> Pertanyaan 4, 6, 7, dan 8 masih terbuka. Penerapan ke silabus v1.1 dan
+> corpus dikerjakan di issue #92; usulan ini belum menjadi silabus.
 
 > **DRAF — belum disetujui pemilik.** Dokumen ini adalah konten karangan
 > menurut [ADR-0007](../../architecture/adr/0007-authored-learning-content.md):
@@ -272,6 +280,8 @@ Penilaian 11 kriteria (penilaian penyusun, bukan pengukuran):
 | Kompleksitas operasional (kalender) | Rendah | Rendah | Tinggi (cadangan hilang) |
 | Implikasi jangka panjang | Fondasi mungkin kurang dalam; menuntut pengayaan | Pondasi paling kuat; menghapus pengayaan bit | Rapuh bila kalender sekolah berubah |
 
+**Keputusan pemilik (2026-11-18): opsi (b) ditambah satu minggu E-LD-d.**
+
 **Rekomendasi penyusun: opsi (b), 6 minggu fondasi**, karena murid kelas X
 adalah pemula dan fondasi (terutama jaringan dan keamanan) cukup luas untuk
 butuh waktu sendiri; empat penggabungan pada opsi (a) menekan ritme belajar
@@ -330,17 +340,17 @@ yang dipilih; jalur C dan D memulai minggu materinya setelah blok fondasi.
 
 ## 8. Pertanyaan terbuka untuk pemilik
 
-1. **Panjang blok:** opsi (a) 4 minggu, (b) 6 minggu (rekomendasi), atau (c)
+1. **[Terjawab 2026-11-18: opsi (b) + 1 minggu E-LD-d (7 minggu)]** **Panjang blok:** opsi (a) 4 minggu, (b) 6 minggu (rekomendasi), atau (c)
    5 minggu dengan memakai cadangan?
-2. **Bentuk pelaksanaan:** apakah blok fondasi dijalankan sebagai kelas
+2. **[Terjawab 2026-11-18: kelas bersama lintas jalur sebelum memilih jalur]** **Bentuk pelaksanaan:** apakah blok fondasi dijalankan sebagai kelas
    bersama lintas jalur sebelum murid memilih jalur, atau diajarkan di dalam
    tiap jalur?
-3. **Perangkat pengolah dokumen, lembar kerja, dan presentasi (E-LD-d):**
+3. **[Terjawab 2026-11-18: ditambah satu minggu di fondasi]** **Perangkat pengolah dokumen, lembar kerja, dan presentasi (E-LD-d):**
    ditambah sebagai satu minggu fondasi, atau tetap di modul pendamping
    (#69)?
 4. **`B-X2-M9` dan `B-X2-M10`:** dihapus karena sudah dicakup fondasi (opsi
    b), atau dipertahankan sebagai pendalaman?
-5. **Operasi bit dasar (`A-X2-M12`, pengayaan) pada opsi (b):** dipindah ke
+5. **[Terjawab 2026-11-18: pindah ke pengayaan kelas XI]** **Operasi bit dasar (`A-X2-M12`, pengayaan) pada opsi (b):** dipindah ke
    pengayaan kelas XI atau dihapus? Keduanya mengubah jembatan OSN rumpun
    `logika-bitwise`.
 6. **Asesmen fondasi:** cukup formatif dan dilebur ke `M14`, atau perlu
@@ -355,4 +365,5 @@ yang dipilih; jalur C dan D memulai minggu materinya setelah blok fondasi.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v0.2.0 | 2026-11-18 | Mencatat empat keputusan pemilik (pertanyaan 1, 2, 3, 5); pertanyaan 4, 6, 7, 8 masih terbuka; penerapan di issue #92. |
 | v0.1.0 | 2026-11-18 | Usulan awal (issue #86): topik fondasi per minggu, pemetaan ke kode butir CP silabus v1.0, tiga opsi panjang blok dengan tabel kelas X semester 1 dan 2, bentuk modul, hubungan dengan #68, #69, #84, pertanyaan terbuka. Status DRAF. |
