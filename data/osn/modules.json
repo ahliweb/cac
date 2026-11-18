@@ -63,6 +63,21 @@
         }
       ],
       "contentPath": "content/osn/modules/aturan-berhitung.md"
+    },
+    {
+      "id": "rekursi",
+      "title": "Rekursi",
+      "topicFamilies": ["rekursi"],
+      "weeks": [4, 5, 6],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "refId": "R1"
+        }
+      ],
+      "contentPath": "content/osn/modules/rekursi.md"
     }
   ]
 }
