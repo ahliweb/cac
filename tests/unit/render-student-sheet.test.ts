@@ -32,6 +32,10 @@ describe("renderStudentSheet: content", () => {
     }
     expect(markdown).toContain(week.practice);
     expect(markdown).toContain("Jumlah soal: 6-10 soal");
+    // §4 caveat, quoted verbatim from the source syllabus.
+    expect(markdown).toContain(
+      "Angka soal adalah kapasitas kerja internal, bukan ambang resmi kelulusan.",
+    );
     expect(markdown).toContain("Sumber: Silabus Uji, versi 9.9, tanggal 2030-01-02.");
   });
 

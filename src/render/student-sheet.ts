@@ -104,7 +104,7 @@ export function renderStudentSheet(week: number, source: StudentSheetSource): st
     lines.push("Jumlah soal: tidak ada angka tetap untuk minggu ini (simulasi atau kontes).");
   } else {
     lines.push(
-      `Jumlah soal: ${weekData.problemLoad.min}-${weekData.problemLoad.max} soal (kapasitas kerja internal, bukan ambang kelulusan resmi).`,
+      `Jumlah soal: ${weekData.problemLoad.min}-${weekData.problemLoad.max} soal. Angka soal adalah kapasitas kerja internal, bukan ambang resmi kelulusan.`,
     );
   }
   if (weekData.hasMiniContest) {
