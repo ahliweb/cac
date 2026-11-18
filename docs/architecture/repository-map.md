@@ -199,8 +199,9 @@ check:sma-fidelity`).
 programme id (ADR-0006), holding that programme's source document. A
 source document that the owner has not yet approved is authored content
 and stays marked `DRAF` (ADR-0007). Today: `sma-coding/` — the syllabus for
-the senior-high-school coding programme (`README.md`, `silabus.md`, and the draft research note
-`riset-buku-ai-onno-w-purbo.md`), v1.0
+the senior-high-school coding programme (`README.md`, `silabus.md`, the draft research note
+`riset-buku-ai-onno-w-purbo.md`, and the draft proposal
+`usulan-fondasi-kelas-x.md` for syllabus v1.1), v1.0
 approved by the programme owner on 2026-11-18 for tracks A and B (track C
 and companion modules still being drafted).
 
