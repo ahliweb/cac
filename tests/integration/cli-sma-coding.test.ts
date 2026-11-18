@@ -66,7 +66,10 @@ describe("osn validate with the sma-coding programme", () => {
     const result = await runCli(["validate", "--json"]);
     expect(result.exitCode).toBe(0);
     const json = JSON.parse(result.stdout) as { ok: boolean; programs: Array<{ program: string }> };
-    expect(json.programs.map((entry) => entry.program)).toEqual(["osn", "sma-coding", "tk-coding"]);
+    const ids = json.programs.map((entry) => entry.program);
+    // Registry order: osn and sma-coding first; further programmes follow (ADR-0008).
+    expect(ids.slice(0, 2)).toEqual(["osn", "sma-coding"]);
+    expect(new Set(ids).size).toBe(ids.length);
   });
 
   test("a corrupted copy of the corpus is reported with exit 1", async () => {

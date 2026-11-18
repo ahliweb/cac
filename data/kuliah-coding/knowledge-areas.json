@@ -1,0 +1,262 @@
+{
+  "syllabusVersion": "1.0.0",
+  "syllabusDate": "2026-11-19",
+  "sourceSection": "bagian 4.2",
+  "areas": [
+    {
+      "code": "AL",
+      "name": "Algorithmic Foundations",
+      "coursesText": "KUL-I-102 (sebagian), KUL-I-201 (utama)",
+      "courseLinks": [
+        {
+          "course": "KUL-I-102",
+          "level": "sebagian"
+        },
+        {
+          "course": "KUL-I-201",
+          "level": "utama"
+        }
+      ],
+      "supportText": "KUL-K-201, KUL-K-301, KUL-K-401",
+      "supportCourses": ["KUL-K-201", "KUL-K-301", "KUL-K-401"]
+    },
+    {
+      "code": "AR",
+      "name": "Architecture and Organization",
+      "coursesText": "KUL-I-203 (utama)",
+      "courseLinks": [
+        {
+          "course": "KUL-I-203",
+          "level": "utama"
+        }
+      ],
+      "supportText": "",
+      "supportCourses": []
+    },
+    {
+      "code": "AI",
+      "name": "Artificial Intelligence",
+      "coursesText": "KUL-I-303 (utama), KUL-I-307 (sebagian)",
+      "courseLinks": [
+        {
+          "course": "KUL-I-303",
+          "level": "utama"
+        },
+        {
+          "course": "KUL-I-307",
+          "level": "sebagian"
+        }
+      ],
+      "supportText": "KUL-U-202",
+      "supportCourses": ["KUL-U-202"]
+    },
+    {
+      "code": "DM",
+      "name": "Data Management",
+      "coursesText": "KUL-I-202 (utama), KUL-I-307 (sebagian)",
+      "courseLinks": [
+        {
+          "course": "KUL-I-202",
+          "level": "utama"
+        },
+        {
+          "course": "KUL-I-307",
+          "level": "sebagian"
+        }
+      ],
+      "supportText": "KUL-U-102",
+      "supportCourses": ["KUL-U-102"]
+    },
+    {
+      "code": "FPL",
+      "name": "Foundations of Programming Languages",
+      "coursesText": "KUL-I-101 (sebagian)",
+      "courseLinks": [
+        {
+          "course": "KUL-I-101",
+          "level": "sebagian"
+        }
+      ],
+      "supportText": "celah: paradigma dan semantik bahasa belum punya mata kuliah sendiri",
+      "supportCourses": []
+    },
+    {
+      "code": "GIT",
+      "name": "Graphics and Interactive Techniques",
+      "coursesText": "KUL-I-306 (pilihan)",
+      "courseLinks": [
+        {
+          "course": "KUL-I-306",
+          "level": "pilihan"
+        }
+      ],
+      "supportText": "",
+      "supportCourses": []
+    },
+    {
+      "code": "HCI",
+      "name": "Human-Computer Interaction",
+      "coursesText": "KUL-I-304 (utama)",
+      "courseLinks": [
+        {
+          "course": "KUL-I-304",
+          "level": "utama"
+        }
+      ],
+      "supportText": "",
+      "supportCourses": []
+    },
+    {
+      "code": "MSF",
+      "name": "Mathematical and Statistical Foundations",
+      "coursesText": "KUL-I-103 (utama)",
+      "courseLinks": [
+        {
+          "course": "KUL-I-103",
+          "level": "utama"
+        }
+      ],
+      "supportText": "KUL-K-301; statistik: celah, diasumsikan dari prodi",
+      "supportCourses": ["KUL-K-301"]
+    },
+    {
+      "code": "NC",
+      "name": "Networking and Communication",
+      "coursesText": "KUL-I-301 (utama)",
+      "courseLinks": [
+        {
+          "course": "KUL-I-301",
+          "level": "utama"
+        }
+      ],
+      "supportText": "KUL-U-201 (dasar)",
+      "supportCourses": ["KUL-U-201"]
+    },
+    {
+      "code": "OS",
+      "name": "Operating Systems",
+      "coursesText": "KUL-I-203 (utama)",
+      "courseLinks": [
+        {
+          "course": "KUL-I-203",
+          "level": "utama"
+        }
+      ],
+      "supportText": "",
+      "supportCourses": []
+    },
+    {
+      "code": "PDC",
+      "name": "Parallel and Distributed Computing",
+      "coursesText": "KUL-I-302 (utama)",
+      "courseLinks": [
+        {
+          "course": "KUL-I-302",
+          "level": "utama"
+        }
+      ],
+      "supportText": "",
+      "supportCourses": []
+    },
+    {
+      "code": "SEC",
+      "name": "Security",
+      "coursesText": "KUL-I-301 (sebagian), KUL-I-205 (sebagian)",
+      "courseLinks": [
+        {
+          "course": "KUL-I-301",
+          "level": "sebagian"
+        },
+        {
+          "course": "KUL-I-205",
+          "level": "sebagian"
+        }
+      ],
+      "supportText": "KUL-U-201, KUL-U-202",
+      "supportCourses": ["KUL-U-201", "KUL-U-202"]
+    },
+    {
+      "code": "SEP",
+      "name": "Society, Ethics, and the Profession",
+      "coursesText": "KUL-I-305 (utama), KUL-I-401 (sebagian)",
+      "courseLinks": [
+        {
+          "course": "KUL-I-305",
+          "level": "utama"
+        },
+        {
+          "course": "KUL-I-401",
+          "level": "sebagian"
+        }
+      ],
+      "supportText": "KUL-U-202, KUL-U-301, KUL-K-401",
+      "supportCourses": ["KUL-U-202", "KUL-U-301", "KUL-K-401"]
+    },
+    {
+      "code": "SDF",
+      "name": "Software Development Fundamentals",
+      "coursesText": "KUL-I-101 (utama), KUL-I-102 (utama)",
+      "courseLinks": [
+        {
+          "course": "KUL-I-101",
+          "level": "utama"
+        },
+        {
+          "course": "KUL-I-102",
+          "level": "utama"
+        }
+      ],
+      "supportText": "KUL-U-101, KUL-U-102, KUL-U-201",
+      "supportCourses": ["KUL-U-101", "KUL-U-102", "KUL-U-201"]
+    },
+    {
+      "code": "SE",
+      "name": "Software Engineering",
+      "coursesText": "KUL-I-204 (utama), KUL-I-401 (utama)",
+      "courseLinks": [
+        {
+          "course": "KUL-I-204",
+          "level": "utama"
+        },
+        {
+          "course": "KUL-I-401",
+          "level": "utama"
+        }
+      ],
+      "supportText": "KUL-U-301",
+      "supportCourses": ["KUL-U-301"]
+    },
+    {
+      "code": "SPD",
+      "name": "Specialized Platform Development",
+      "coursesText": "KUL-I-205 (utama)",
+      "courseLinks": [
+        {
+          "course": "KUL-I-205",
+          "level": "utama"
+        }
+      ],
+      "supportText": "",
+      "supportCourses": []
+    },
+    {
+      "code": "SF",
+      "name": "Systems Fundamentals",
+      "coursesText": "KUL-I-203 (sebagian)",
+      "courseLinks": [
+        {
+          "course": "KUL-I-203",
+          "level": "sebagian"
+        }
+      ],
+      "supportText": "",
+      "supportCourses": []
+    }
+  ],
+  "gaps": [
+    "FPL belum punya mata kuliah tersendiri",
+    "statistik di MSF diasumsikan diampu prodi",
+    "cakupan di dalam KA tidak diaudit karena unit CS2023 tidak terverifikasi",
+    "jam inti CS2023 tidak dipakai"
+  ]
+}

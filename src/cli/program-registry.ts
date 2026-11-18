@@ -25,6 +25,7 @@ import {
   type CorpusSource,
   DATA_FILE_REGISTRY,
 } from "../domain/corpus-audit";
+import { auditKulCorpus, KUL_DATA_FILE_REGISTRY } from "../domain/kul-corpus-audit";
 import {
   type ModuleFindingsOptions,
   type ModulesIndex,
@@ -34,9 +35,11 @@ import {
 import { REGISTRY_FILE_NAME } from "../domain/programs";
 import { auditSmaCorpus, SMA_DATA_FILE_REGISTRY } from "../domain/sma-corpus-audit";
 import { auditTkCorpus, TK_DATA_FILE_REGISTRY } from "../domain/tk-corpus-audit";
+import { KUL_PROGRAM_ID } from "../schema/kul-common";
 import type { Program } from "../schema/program";
 import { SMA_CODING_PROGRAM_ID } from "../schema/sma-common";
 import { TK_CODING_PROGRAM_ID } from "../schema/tk-common";
+import { kuliahCodingFidelity } from "./fidelity/kuliah-coding";
 import { smaCodingFidelity } from "./fidelity/sma-coding";
 import { tkCodingFidelity } from "./fidelity/tk-coding";
 import type { FidelityModule } from "./fidelity/types";
@@ -87,6 +90,16 @@ export const PROGRAM_MODULES: readonly ProgramModule[] = [
     needsOsnTopicFamilyIds: false,
     parseModulesIndex: (source) => parseModulesIndex(source, "osn"),
     moduleFindings: (source, context) => moduleFindings(source, "osn", moduleOptions(context)),
+  },
+  {
+    id: KUL_PROGRAM_ID,
+    dataFiles: KUL_DATA_FILE_REGISTRY,
+    audit: (source) => auditKulCorpus(source),
+    needsOsnTopicFamilyIds: false,
+    // No learner modules yet (ADR-0007): no modules.json, no content/kuliah-coding/.
+    parseModulesIndex: () => ({ modules: undefined, findings: [] }),
+    moduleFindings: () => [],
+    fidelity: kuliahCodingFidelity,
   },
   {
     id: SMA_CODING_PROGRAM_ID,

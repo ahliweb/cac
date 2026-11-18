@@ -1,0 +1,56 @@
+{
+  "syllabusVersion": "1.0.0",
+  "syllabusDate": "2026-11-19",
+  "sourceSection": "bagian 2.2",
+  "tracks": [
+    {
+      "id": "U",
+      "name": "coding untuk semua program studi",
+      "target": "Semua program studi; mata kuliah pilihan atau umum `[asumsi]`",
+      "courseCountText": "5",
+      "sksText": "14",
+      "semesterRangeText": "S1-S6",
+      "courseCount": 5,
+      "coreCourseCount": 5,
+      "sks": 14,
+      "coreSks": 14,
+      "firstSemester": "S1",
+      "lastSemester": "S6"
+    },
+    {
+      "id": "I",
+      "name": "informatika / ilmu komputer",
+      "target": "Informatika / ilmu komputer",
+      "courseCountText": "16 (14 inti + 2 pilihan)",
+      "sksText": "46 (inti 42)",
+      "semesterRangeText": "S1-S7",
+      "courseCount": 16,
+      "coreCourseCount": 14,
+      "sks": 46,
+      "coreSks": 42,
+      "firstSemester": "S1",
+      "lastSemester": "S7"
+    },
+    {
+      "id": "K",
+      "name": "kompetitif (ICPC) sebagai lanjutan OSN",
+      "target": "Peminat kompetisi, lanjutan OSN",
+      "courseCountText": "3",
+      "sksText": "6",
+      "semesterRangeText": "S3-S7",
+      "courseCount": 3,
+      "coreCourseCount": 3,
+      "sks": 6,
+      "coreSks": 6,
+      "firstSemester": "S3",
+      "lastSemester": "S7"
+    }
+  ],
+  "total": {
+    "courseCountText": "24",
+    "sksText": "66 (inti 62)",
+    "courseCount": 24,
+    "sks": 66,
+    "coreSks": 62
+  }
+}
