@@ -1,0 +1,39 @@
+{
+  "syllabusVersion": "1.0.0",
+  "syllabusDate": "2026-11-19",
+  "sourceSection": "bagian 2",
+  "rows": [
+    {
+      "item": "Satuan",
+      "value": "Modul berjam; peserta mengambil satu jalur atau lebih"
+    },
+    {
+      "item": "Modul bersama",
+      "value": "`DW-FND-M1` (8 jam) wajib bagi semua jalur sebelum modul jalur"
+    },
+    {
+      "item": "Beban belajar per minggu",
+      "value": "3-5 jam; jalur `PKJ` selesai sekitar 10-16 minggu, `PRO` sekitar 6-9 bulan, `PRS` sekitar 8-12 minggu, `BIS` sekitar 11-18 minggu"
+    },
+    {
+      "item": "Bahasa pemrograman inti",
+      "value": "Python (jalur `PKJ`, `PRO`, `PRS`); JavaScript/TypeScript untuk web (jalur `PRO`, `BIS` opsional)"
+    },
+    {
+      "item": "Bentuk pelaksanaan",
+      "value": "Mandiri bermodul dengan sesi pendampingan opsional (keputusan 12.2)"
+    },
+    {
+      "item": "Perangkat peserta",
+      "value": "Laptop atau komputer dengan 4 GB RAM, sistem operasi bebas, koneksi internet untuk mengunduh alat sekali `[belum terverifikasi]`"
+    },
+    {
+      "item": "Prasyarat umum",
+      "value": "Dapat mengoperasikan komputer, peramban, berkas, dan surel; tidak perlu pengalaman coding"
+    },
+    {
+      "item": "Bahasa pengantar",
+      "value": "Indonesia"
+    }
+  ]
+}

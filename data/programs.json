@@ -31,6 +31,14 @@
       "syllabusVersion": "1.0.0",
       "syllabusDate": "2026-11-19",
       "corpusDir": "data/kuliah-coding"
+    },
+    {
+      "id": "dewasa-coding",
+      "name": "Silabus Pembelajaran Coding untuk Dewasa",
+      "sourceDocument": "docs/programs/dewasa-coding/silabus.md",
+      "syllabusVersion": "1.0.0",
+      "syllabusDate": "2026-11-19",
+      "corpusDir": "data/dewasa-coding"
     }
   ]
 }

@@ -1,9 +1,9 @@
 # Riset Sumber Program Coding Dewasa (`dewasa-coding`)
 
-- **Version:** v0.1.0
+- **Version:** v1.0.0
 - **Last updated:** 2026-11-19
-- **Status:** DRAF riset (issue #131) — bahan penyusunan [`silabus-draf.md`](silabus-draf.md); bukan transkripsi sumber resmi dan bukan keputusan pemilik.
-- **Changeset:** Riset awal sumber SKKNI, skema sertifikasi, program pelatihan, kerangka kecakapan digital, kebutuhan UMKM, dan alat (#131).
+- **Status:** Bahan penyusunan [`silabus.md`](silabus.md) yang disetujui pemilik pada 2026-11-19 (#131); bukan transkripsi sumber resmi dan bukan keputusan pemilik. Tabel 47 unit di bagian 2.2 adalah salinan yang **belum terverifikasi terhadap berkas resmi** dan menjadi sumber `data/dewasa-coding/skkni-units.json` (diperiksa oleh `bun run check:fidelity --program dewasa-coding`).
+- **Changeset:** Riset dijadikan rujukan silabus yang disetujui (v1.0.0): tautan `silabus-draf.md` diganti `silabus.md`, status diperbarui (#131).
 
 > Dokumen ini konten **karangan** menurut
 > [ADR-0007](../../architecture/adr/0007-authored-learning-content.md). Ia
@@ -127,12 +127,12 @@ Catatan kehati-hatian:
 - Sufiks versi kode (`.01` atau `.02`) di daftar ini **tidak selalu sama**
   dengan sufiks di halaman rincian unit: halaman 34 PDF memuat unit
   "Menggunakan Spesifikasi Program" sebagai `J.620100.009.02`, sedangkan
-  daftar bab II.B dan brosur LSP memuat `J.620100.009.01`. Silabus draf
+  daftar bab II.B dan brosur LSP memuat `J.620100.009.01`. Silabus
   memakai **daftar bab II.B** dan menuliskan kode lengkap; selisih sufiks
   `[belum terverifikasi]` mana yang berlaku.
 - Hanya halaman 1-16 PDF yang dibaca (keputusan, tim perumus, pemetaan,
   daftar unit, dan satu halaman rincian unit). Elemen kompetensi dan
-  kriteria unjuk kerja 47 unit **tidak dibaca**; pemetaan di silabus draf
+  kriteria unjuk kerja 47 unit **tidak dibaca**; pemetaan di silabus
   hanya ke judul unit, bukan ke kriteria unjuk kerjanya.
 - Judul hanya mencakup subbidang pemrograman. Unit untuk basis data
   (selain SQL dan akses basis data), analitik data, keamanan aplikasi, dan
@@ -144,7 +144,7 @@ Hasil pencarian menyebut berkas bernama "SKKNI 2019-211" (kualifikasi 6
 bidang elektronika dan pemrograman), "SKKNI 2017-044" (system analyst), dan
 dua berkas bidang data (2020-268, 2020-299). **Tidak ada yang dibuka**;
 nomor, isi, dan statusnya `[belum terverifikasi]` dan tidak dipakai di
-silabus draf.
+silabus.
 
 ## 3. Skema sertifikasi BNSP/LSP
 
@@ -184,7 +184,7 @@ pada LSP perguruan tinggi lain dan LSP swasta; tidak dipakai.
 | Insentif dan syarat | Angka lama (mis. Rp3.500.000 pelatihan) hanya dari cuplikan pencarian | **Tidak dipakai**; `[belum terverifikasi]`. |
 
 Kesimpulan: status Kartu Prakerja dan DTS pada 2026 **tidak dapat
-ditetapkan** dari sumber resmi yang bisa dibuka. Silabus draf memperlakukan
+ditetapkan** dari sumber resmi yang bisa dibuka. Silabus memperlakukan
 keduanya sebagai peluang pendanaan peserta yang harus dicek peserta sendiri
 di situs resmi, bukan sebagai mitra atau asumsi biaya.
 
@@ -209,7 +209,7 @@ dicek ulang): `https://joint-research-centre.ec.europa.eu/projects-and-activitie
 - Empat tingkat kemahiran: "Basic", "Intermediate", "Advanced", "Highly
   advanced".
 
-Pemakaian di silabus draf: **hanya pembanding** (terutama 3.4 dan 4.2);
+Pemakaian di silabus: **hanya pembanding** (terutama 3.4 dan 4.2);
 DigComp bukan standar Indonesia dan tidak dipetakan butir demi butir.
 
 ### 5.2 Kerangka literasi digital nasional
@@ -301,3 +301,4 @@ dijalankan tanpa `apps/cms` hidup tetap berlaku (`[belum terverifikasi]`).
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
 | v0.1.0 | 2026-11-19 | Riset awal (#131). |
+| v1.0.0 | 2026-11-19 | Silabus rujukan disetujui pemilik: tautan dan status diperbarui; isi riset tidak diubah (#131). |

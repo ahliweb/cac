@@ -1,0 +1,16 @@
+{
+  "syllabusVersion": "1.0.0",
+  "syllabusDate": "2026-11-19",
+  "sourceSection": "bagian 3",
+  "modules": [
+    {
+      "code": "DW-FND-M1",
+      "title": "Keamanan, privasi, dan etika kerja dengan kode dan AI",
+      "hours": 8,
+      "outcome": "Peserta dapat (a) memisahkan data nyata dari data sintetis dan menolak memasukkan data pelanggan, rekan, atau diri sendiri ke latihan; (b) tidak menaruh kata sandi, kunci, atau token di berkas kode atau di dalam perintah ke asisten AI; (c) memakai manajer kata sandi dan autentikasi dua langkah; (d) memeriksa keluaran asisten AI sebelum dipakai",
+      "topics": "data pribadi dan data usaha; kredensial dan berkas `.env` (tidak dibagikan, tidak di-commit); hak kekayaan intelektual dan lisensi (konsep); cara kerja asisten AI dan kemungkinan salah; menyaring konten dan penipuan daring",
+      "exercises": "Audit potongan skrip sintetis yang sengaja berisi \"kata sandi palsu\"; buat daftar periksa privasi satu halaman",
+      "references": "DigComp 3.0 area 4 (\"Safety, wellbeing and responsible use\", kompetensi 4.2 dan 3.3) dan empat kerangka literasi digital nasional, hanya sebagai pembanding (`riset.md` bagian 5)"
+    }
+  ]
+}
