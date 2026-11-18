@@ -107,6 +107,9 @@ describe("OSN-only commands refuse --program sma-coding (exit 2, never OSN data)
     const result = await runCli([...args, "--program", "sma-coding"]);
     expect(result.exitCode).toBe(2);
     expect(result.stderr).toContain("belum didukung untuk program sma-coding");
+    expect(result.stderr).toContain(
+      'Untuk program sma-coding tersedia "osn plan --program sma-coding --track <jalur>"',
+    );
     expect(result.stdout).toBe("");
   });
 

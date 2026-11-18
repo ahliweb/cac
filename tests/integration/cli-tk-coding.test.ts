@@ -96,3 +96,23 @@ describe("OSN-only commands refuse --program tk-coding (exit 2, never OSN data)"
     expect(result.stdout).toBe("");
   });
 });
+
+describe("plan and render lembar-siswa refuse --program tk-coding honestly (exit 2)", () => {
+  const cases: string[][] = [
+    ["plan", "--track", "A"],
+    ["render", "lembar-siswa", "--week", "1"],
+  ];
+
+  test.each(cases)("osn %s", async (...args: string[]) => {
+    const result = await runCli([...args, "--program", "tk-coding"]);
+    expect(result.exitCode).toBe(2);
+    expect(result.stderr).toContain("belum didukung untuk program tk-coding");
+    expect(result.stderr).toContain('hanya tersedia untuk program "osn" dan "sma-coding"');
+    expect(result.stderr).toContain(
+      'program tk-coding hanya didukung oleh "osn validate --program tk-coding" dan "bun run check:fidelity --program tk-coding"',
+    );
+    // The old wording advertised the very commands being refused.
+    expect(result.stderr).not.toContain("Perintah yang didukung untuk program");
+    expect(result.stdout).toBe("");
+  });
+});

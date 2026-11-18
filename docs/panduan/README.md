@@ -41,9 +41,11 @@ Tujuh program terdaftar di `data/programs.json` (ADR-0006); semuanya diperiksa
 | `dewasa-coding` | Coding untuk dewasa: jalur Pekerja, Profesional, Personal, Pebisnis/UMKM, berbasis modul dan jam. | `docs/programs/dewasa-coding/silabus.md` v1.1.0. Kebijakan AI peserta dewasa (bagian 9.1). | `validate`, `check:fidelity`. |
 
 Untuk `tk-coding`, `sd-coding`, `smp-coding`, `kuliah-coding`, dan
-`dewasa-coding`, `plan` dan `render` menolak dengan exit 2 ("belum didukung
-untuk program <id>"). Kelima program itu belum punya modul materi di
-`content/`.
+`dewasa-coding`, `plan` dan `render lembar-siswa` menolak dengan exit 2 ("belum didukung
+untuk program <id>"; pesannya menyebut bahwa kedua perintah itu hanya ada untuk
+`osn` dan `sma-coding`, dan bahwa program itu hanya didukung `validate` dan
+`check:fidelity`). `render modul` juga exit 2 karena kelima program itu belum
+punya modul materi di `content/`.
 
 ## Anda siapa? Baca halaman ini
 
