@@ -2025,6 +2025,175 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xi1-m7.md"
+    },
+    {
+      "id": "e-xi1-m1",
+      "title": "Mengapa komputasi kuantum; bit klasik dan acak",
+      "cpItems": [],
+      "weekCodes": ["E-XI1-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": [],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Quirk: Quantum Circuit Simulator",
+          "url": "https://algassert.com/quirk"
+        },
+        {
+          "title": "IBM Quantum Learning: Classical information",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/single-systems/classical-information"
+        },
+        {
+          "title": "IBM Quantum Learning: Quantum information",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/single-systems/quantum-information"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi1-m1.md"
+    },
+    {
+      "id": "e-xi1-m2",
+      "title": "Probabilitas dan vektor",
+      "cpItems": [],
+      "weekCodes": ["E-XI1-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi1-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Classical information",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/single-systems/classical-information"
+        },
+        {
+          "title": "IBM Quantum Learning: Quantum information",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/single-systems/quantum-information"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi1-m2.md"
+    },
+    {
+      "id": "e-xi1-m3",
+      "title": "Matriks",
+      "cpItems": [],
+      "weekCodes": ["E-XI1-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi1-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Classical information",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/single-systems/classical-information"
+        },
+        {
+          "title": "IBM Quantum Learning: Quantum information",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/single-systems/quantum-information"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi1-m3.md"
+    },
+    {
+      "id": "e-xi1-m4",
+      "title": "Bilangan kompleks dasar",
+      "cpItems": [],
+      "weekCodes": ["E-XI1-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi1-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/single-systems/quantum-information"
+        },
+        {
+          "title": "cppreference: std::complex",
+          "url": "https://en.cppreference.com/w/cpp/numeric/complex"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi1-m4.md"
+    },
+    {
+      "id": "e-xi1-m5",
+      "title": "Qubit dan keadaan",
+      "cpItems": [],
+      "weekCodes": ["E-XI1-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi1-m4", "matkom-sistem-bilangan-basis"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/single-systems/quantum-information"
+        },
+        {
+          "title": "cppreference: std::complex",
+          "url": "https://en.cppreference.com/w/cpp/numeric/complex"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi1-m5.md"
+    },
+    {
+      "id": "e-xi1-m6",
+      "title": "Superposisi dan aturan Born",
+      "cpItems": [],
+      "weekCodes": ["E-XI1-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi1-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/single-systems/quantum-information"
+        },
+        {
+          "title": "Quirk: Quantum Circuit Simulator",
+          "url": "https://algassert.com/quirk"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi1-m6.md"
+    },
+    {
+      "id": "e-xi1-m7",
+      "title": "Pengukuran",
+      "cpItems": [],
+      "weekCodes": ["E-XI1-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi1-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/single-systems/quantum-information"
+        },
+        {
+          "title": "Quirk: Quantum Circuit Simulator",
+          "url": "https://algassert.com/quirk"
+        },
+        {
+          "title": "cppreference: std::mersenne_twister_engine",
+          "url": "https://en.cppreference.com/w/cpp/numeric/random/mersenne_twister_engine"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi1-m7.md"
     }
   ]
 }
