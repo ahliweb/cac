@@ -1032,6 +1032,191 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-x1-m14.md"
+    },
+    {
+      "id": "c-x2-m1",
+      "title": "Ulasan dan penelusuran galat perangkat",
+      "cpItems": [],
+      "weekCodes": ["C-X2-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: pinMode()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/digital-io/pinMode/"
+        },
+        {
+          "title": "Arduino: digitalRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/digital-io/digitalread/"
+        },
+        {
+          "title": "Arduino: Serial.println()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/communication/serial/println/"
+        },
+        {
+          "title": "Arduino-ESP32 (Espressif)",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x2-m1.md"
+    },
+    {
+      "id": "c-x2-m2",
+      "title": "Sensor suhu dan kelembapan",
+      "cpItems": [],
+      "weekCodes": ["C-X2-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x2-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: Serial.println()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/communication/serial/println/"
+        },
+        {
+          "title": "Arduino-ESP32 (Espressif)",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x2-m2.md"
+    },
+    {
+      "id": "c-x2-m3",
+      "title": "Data berkualitas dari sensor",
+      "cpItems": ["E-BK-b"],
+      "weekCodes": ["C-X2-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x2-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Arduino-ESP32: ADC (Espressif)",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/adc.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x2-m3.md"
+    },
+    {
+      "id": "c-x2-m4",
+      "title": "Array dan rata-rata bergerak",
+      "cpItems": ["E-BK-a", "E-BK-c"],
+      "weekCodes": ["C-X2-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x2-m3", "c-x1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: analogRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/"
+        },
+        {
+          "title": "Arduino: Serial.println()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/communication/serial/println/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x2-m4.md"
+    },
+    {
+      "id": "c-x2-m5",
+      "title": "Keluaran analog (PWM)",
+      "cpItems": [],
+      "weekCodes": ["C-X2-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x2-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: analogWrite()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogWrite/"
+        },
+        {
+          "title": "Arduino: map()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/math/map/"
+        },
+        {
+          "title": "Arduino: constrain()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/math/constrain/"
+        },
+        {
+          "title": "Arduino-ESP32: LED Control (LEDC)",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/ledc.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x2-m5.md"
+    },
+    {
+      "id": "c-x2-m6",
+      "title": "Aktuator: servo dan buzzer",
+      "cpItems": [],
+      "weekCodes": ["C-X2-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x2-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: pustaka Servo",
+          "url": "https://docs.arduino.cc/libraries/servo/"
+        },
+        {
+          "title": "Arduino-ESP32: LED Control (LEDC)",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/ledc.html"
+        },
+        {
+          "title": "Arduino: tone()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/advanced-io/tone/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x2-m6.md"
+    },
+    {
+      "id": "c-x2-m7",
+      "title": "Waktu tanpa delay dan mesin keadaan sederhana",
+      "cpItems": [],
+      "weekCodes": ["C-X2-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x2-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: millis()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/millis/"
+        },
+        {
+          "title": "Arduino: Blink Without Delay",
+          "url": "https://docs.arduino.cc/built-in-examples/digital/BlinkWithoutDelay/"
+        },
+        {
+          "title": "Arduino-ESP32 (Espressif)",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x2-m7.md"
     }
   ]
 }
