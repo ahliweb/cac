@@ -267,6 +267,278 @@
       "prerequisites": ["dw-fnd-m1"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-prs-m1.md"
+    },
+    {
+      "id": "dw-prs-m2",
+      "title": "Program pertama dengan Python",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python Tutorial: an informal introduction to Python (angka, teks, daftar)",
+          "url": "https://docs.python.org/3/tutorial/introduction.html"
+        },
+        {
+          "title": "Python Tutorial: more control flow tools (if, for, range)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        },
+        {
+          "title": "Python documentation: built-in functions (input, print, int)",
+          "url": "https://docs.python.org/3/library/functions.html"
+        }
+      ],
+      "moduleCodes": ["DW-PRS-M2"],
+      "skkniUnits": [],
+      "track": "PRS",
+      "prerequisites": ["DW-PRS-M1"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-prs-m2.md"
+    },
+    {
+      "id": "dw-prs-m3",
+      "title": "Data dan berkas",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python Tutorial: data structures (daftar dan kamus)",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        },
+        {
+          "title": "Python Tutorial: input and output (membaca dan menulis berkas)",
+          "url": "https://docs.python.org/3/tutorial/inputoutput.html"
+        },
+        {
+          "title": "Python documentation: built-in functions (open)",
+          "url": "https://docs.python.org/3/library/functions.html"
+        }
+      ],
+      "moduleCodes": ["DW-PRS-M3"],
+      "skkniUnits": [],
+      "track": "PRS",
+      "prerequisites": ["dw-prs-m2"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-prs-m3.md"
+    },
+    {
+      "id": "dw-prs-m4",
+      "title": "Halaman web pertama",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "MDN Web Docs: HTML",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+        },
+        {
+          "title": "MDN Web Docs: CSS",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+        },
+        {
+          "title": "Python documentation: http.server",
+          "url": "https://docs.python.org/3/library/http.server.html"
+        }
+      ],
+      "moduleCodes": ["DW-PRS-M4"],
+      "skkniUnits": [],
+      "track": "PRS",
+      "prerequisites": ["dw-prs-m3"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-prs-m4.md"
+    },
+    {
+      "id": "dw-prs-m5",
+      "title": "Mengotomasi urusan sehari-hari",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python documentation: pathlib, jalur berkas berorientasi objek",
+          "url": "https://docs.python.org/3/library/pathlib.html"
+        },
+        {
+          "title": "Python documentation: datetime",
+          "url": "https://docs.python.org/3/library/datetime.html"
+        },
+        {
+          "title": "Python Tutorial: input and output (format keluaran)",
+          "url": "https://docs.python.org/3/tutorial/inputoutput.html"
+        }
+      ],
+      "moduleCodes": ["DW-PRS-M5"],
+      "skkniUnits": [],
+      "track": "PRS",
+      "prerequisites": ["dw-prs-m4"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-prs-m5.md"
+    },
+    {
+      "id": "dw-prs-m6",
+      "title": "Proyek mandiri dan jalan lanjut",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python documentation: doctest",
+          "url": "https://docs.python.org/3/library/doctest.html"
+        },
+        {
+          "title": "Python Tutorial: more control flow tools (fungsi dan alur)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        },
+        {
+          "title": "MDN Web Docs: HTML",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+        }
+      ],
+      "moduleCodes": ["DW-PRS-M6"],
+      "skkniUnits": [],
+      "track": "PRS",
+      "prerequisites": ["dw-prs-m5"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-prs-m6.md"
+    },
+    {
+      "id": "dw-bis-m1",
+      "title": "Peta digital usaha",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "JDIH BPK: UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi (teks resmi; dibuka 2026-11-19)",
+          "url": "https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022"
+        }
+      ],
+      "moduleCodes": ["DW-BIS-M1"],
+      "skkniUnits": [],
+      "track": "BIS",
+      "prerequisites": ["dw-fnd-m1"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-bis-m1.md"
+    },
+    {
+      "id": "dw-bis-m2",
+      "title": "Pencatatan penjualan di lembar kerja",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "LibreOffice Help: Validity (validasi data)",
+          "url": "https://help.libreoffice.org/latest/en-US/text/scalc/01/12120000.html"
+        },
+        {
+          "title": "LibreOffice Help: Validity, tab Criteria",
+          "url": "https://help.libreoffice.org/latest/en-US/text/scalc/01/12120100.html"
+        },
+        {
+          "title": "LibreOffice Help: Mathematical Functions (SUMIF, SUMIFS, SUMPRODUCT)",
+          "url": "https://help.libreoffice.org/latest/en-US/text/scalc/01/04060106.html"
+        },
+        {
+          "title": "Python documentation: random, pseudo-random numbers",
+          "url": "https://docs.python.org/3/library/random.html"
+        },
+        {
+          "title": "Python documentation: csv, CSV file reading and writing",
+          "url": "https://docs.python.org/3/library/csv.html"
+        }
+      ],
+      "moduleCodes": ["DW-BIS-M2"],
+      "skkniUnits": [],
+      "track": "BIS",
+      "prerequisites": ["dw-bis-m1"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-bis-m2.md"
+    },
+    {
+      "id": "dw-bis-m3",
+      "title": "Membaca data penjualan",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "LibreOffice Help: Creating Pivot Tables",
+          "url": "https://help.libreoffice.org/latest/en-US/text/scalc/guide/datapilot_createtable.html"
+        },
+        {
+          "title": "LibreOffice Help: Updating Pivot Tables",
+          "url": "https://help.libreoffice.org/latest/en-US/text/scalc/guide/datapilot_updatetable.html"
+        },
+        {
+          "title": "LibreOffice Help: Charts in LibreOffice",
+          "url": "https://help.libreoffice.org/latest/en-US/text/schart/main0000.html"
+        },
+        {
+          "title": "LibreOffice Help: Mathematical Functions (SUMIF, SUMIFS)",
+          "url": "https://help.libreoffice.org/latest/en-US/text/scalc/01/04060106.html"
+        }
+      ],
+      "moduleCodes": ["DW-BIS-M3"],
+      "skkniUnits": [],
+      "track": "BIS",
+      "prerequisites": ["dw-bis-m2"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-bis-m3.md"
+    },
+    {
+      "id": "dw-bis-m4",
+      "title": "Situs usaha",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "MDN: What is a domain name?",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_domain_name"
+        },
+        {
+          "title": "MDN: What is a web server?",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_web_server"
+        },
+        {
+          "title": "MDN: The img element (atribut alt)",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img"
+        },
+        {
+          "title": "MDN: HTML, HyperText Markup Language",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+        },
+        {
+          "title": "PANDI: Daftar Registrar (registrar domain .id harus diakreditasi PANDI; dibuka 2026-11-19)",
+          "url": "https://pandi.id/partner-registrar"
+        }
+      ],
+      "moduleCodes": ["DW-BIS-M4"],
+      "skkniUnits": [],
+      "track": "BIS",
+      "prerequisites": ["dw-bis-m3"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-bis-m4.md"
+    },
+    {
+      "id": "dw-bis-m5",
+      "title": "Toko daring dan pembayaran digital (konsep)",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Bank Indonesia: Quick Response Code Indonesian Standard (QRIS) (dibuka 2026-11-19; fakta dapat berubah)",
+          "url": "https://www.bi.go.id/id/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/QRIS/default.aspx"
+        },
+        {
+          "title": "Bank Indonesia, Cerita BI: Cara Memastikan Pembayaran QRIS Benar-Benar Masuk (11 November 2026)",
+          "url": "https://www.bi.go.id/id/publikasi/ruang-media/cerita-bi/Pages/cara-memastikan-pembayaran-qris-benar-benar-masuk.aspx"
+        },
+        {
+          "title": "JDIH BPK: UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi (teks resmi; dibuka 2026-11-19)",
+          "url": "https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022"
+        }
+      ],
+      "moduleCodes": ["DW-BIS-M5"],
+      "skkniUnits": [],
+      "track": "BIS",
+      "prerequisites": ["dw-bis-m4"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-bis-m5.md"
     }
   ]
 }
