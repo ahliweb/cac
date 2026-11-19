@@ -28,6 +28,11 @@ aturan ADR-0007 yang sama yang dipakai bersama (`program-module-common.ts`).
 anak program `tk-coding` dan `sd-coding`. Belum ada `modules.json` atau
 modul isi nyata untuk kelima program.
 
+**Catatan (2026-11-19, tidak mengubah keputusan):** [ADR-0010](0010-pemeriksaan-silang-kode-lintas-program.md)
+memberi satu pengecualian sempit atas larangan satu program bergantung pada
+program lain: `osn validate` memeriksa silang kode minggu, mata kuliah, dan
+modul program lain yang disebut di tabel jembatan (issue #177).
+
 ## Context
 
 Setelah `osn` dan `sma-coding`, lima program coding lain memiliki draf

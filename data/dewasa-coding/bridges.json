@@ -1,5 +1,5 @@
 {
-  "syllabusVersion": "1.1.2",
+  "syllabusVersion": "1.2.0",
   "syllabusDate": "2026-11-19",
   "sourceSection": "bagian 6.1",
   "bridges": [
@@ -26,10 +26,10 @@
     },
     {
       "id": "bridge-4",
-      "from": "kuliah-coding (issue #130, silabusnya kini ada dan disetujui pemilik)",
-      "to": "`PRO`",
-      "note": "**Belum dapat dirancang** pada revisi ini: jembatan ditunda menurut keputusan 12.7",
-      "status": "ditunda"
+      "from": "kuliah-coding (jalur U, I, K)",
+      "to": "`PRO` (modul `DW-PRO-M1` sampai `DW-PRO-M13`)",
+      "note": "Pengakuan per modul atas dasar bukti yang diperiksa, dengan tiga status (lewati, padatkan, wajib); `DW-FND-M1` dan `DW-PRO-M12` tetap wajib; rincian dan batas di bagian 6.2",
+      "status": "dirancang"
     },
     {
       "id": "bridge-5",

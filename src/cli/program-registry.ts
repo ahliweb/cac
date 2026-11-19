@@ -25,6 +25,7 @@ import {
   type CorpusSource,
   DATA_FILE_REGISTRY,
 } from "../domain/corpus-audit";
+import type { CrossProgramCodes } from "../domain/cross-program-refs";
 import { auditDewasaCorpus, DW_DATA_FILE_REGISTRY } from "../domain/dw-corpus-audit";
 import { auditKulCorpus, KUL_DATA_FILE_REGISTRY } from "../domain/kul-corpus-audit";
 import {
@@ -57,6 +58,8 @@ import type { FidelityModule } from "./fidelity/types";
 export interface ProgramAuditContext {
   /** Ids in `data/osn/topic-families.json` (only loaded when the module sets `needsOsnTopicFamilyIds`). */
   readonly osnTopicFamilyIds?: ReadonlySet<string> | undefined;
+  /** Week, course and module codes of the registered programmes (only loaded when the module sets `crossProgramScan`; ADR-0010). */
+  readonly crossProgramCodes?: CrossProgramCodes | undefined;
 }
 
 /** One data file of a programme's corpus and the schema it must parse against. */
@@ -84,6 +87,12 @@ export interface ProgramModule {
   readonly moduleFindings: (source: CorpusSource, context: ProgramAuditContext) => CorpusFinding[];
   /** Optional check of the corpus against the approved source document, run by `bun run check:fidelity`. */
   readonly fidelity?: FidelityModule;
+  /**
+   * Data files of this programme (bridge tables) whose string values are
+   * scanned for week, course and module codes of any programme, each of
+   * which must exist in the corpus it belongs to (ADR-0010).
+   */
+  readonly crossProgramScan?: readonly string[];
 }
 
 function moduleOptions(context: ProgramAuditContext): ModuleFindingsOptions {
@@ -110,6 +119,7 @@ export const PROGRAM_MODULES: readonly ProgramModule[] = [
     moduleFindings: (source, context) =>
       moduleFindings(source, KUL_PROGRAM_ID, moduleOptions(context)),
     fidelity: kuliahCodingFidelity,
+    crossProgramScan: ["bridges.json"],
   },
   {
     id: SMA_CODING_PROGRAM_ID,
@@ -143,6 +153,7 @@ export const PROGRAM_MODULES: readonly ProgramModule[] = [
     moduleFindings: (source, context) =>
       moduleFindings(source, DEWASA_CODING_PROGRAM_ID, moduleOptions(context)),
     fidelity: dewasaCodingFidelity,
+    crossProgramScan: ["bridges.json", "kuliah-bridge.json"],
   },
   {
     id: SD_CODING_PROGRAM_ID,
