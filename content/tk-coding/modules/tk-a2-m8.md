@@ -12,7 +12,7 @@ Anak dapat menyebut satu alasan atas pilihannya.
 - Lembar anak `tk-a2-m8` dicetak satu per kelompok; gambarnya (SVG buatan penyusun) memuat peta kisi 3x3 dengan bintang, rumah, dan bendera, serta dua urutan kartu untuk dipilih salah satu.
 - Tanpa perangkat digital.
 
-Catatan bahasa: satu "maju" memindahkan boneka satu petak ke depan. "Belok kiri" memutar boneka seperempat putaran ke arah tangan kiri tanpa pindah petak. Belok kanan belum dipakai; belok kanan masuk di semester berikutnya.
+Catatan bahasa: satu "maju" memindahkan boneka satu petak ke depan. "Belok kiri" memutar boneka seperempat putaran ke arah tangan kiri tanpa pindah petak. Belok kanan tidak dipakai di program TK ini.
 
 ## Ingat kembali
 

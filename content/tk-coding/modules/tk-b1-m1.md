@@ -7,7 +7,7 @@ Anak dapat mengikuti tiga perintah beruntun di kisi lantai.
 ## Alat dan bahan
 
 - Kisi 4x4 dari selotip kertas di lantai (enam belas petak, tiap petak kira-kira selebar dua telapak kaki anak). Pojok kanan bawah diberi tanda bintang sebagai tempat mulai; satu petak lain diberi tanda bendera.
-- Kartu panah besar buatan guru: beberapa "maju" dan beberapa "belok kiri". Kartu "belok kanan" belum dipakai.
+- Kartu panah besar buatan guru: beberapa "maju" dan beberapa "belok kiri". Kartu "belok kanan" tidak dipakai di program TK ini.
 - "Robot": teman yang bermain sebagai robot.
 - Lembar anak `tk-b1-m1` dicetak satu per kelompok; gambarnya (SVG buatan penyusun) memuat kisi 4x4 dengan robot dan bendera, tiga kotak kosong untuk urutan kartu, dan tiga kartu untuk ditempel.
 - Tanpa perangkat digital.

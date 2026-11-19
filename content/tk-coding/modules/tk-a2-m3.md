@@ -47,7 +47,7 @@ Bila ada kejadian yang menonjol, tulis catatan anekdot tiga sampai lima kalimat 
 
 - **Anak yang belum banyak bicara:** cukup menunjuk kartu; guru yang menyebut "maju" atau "belok kiri".
 - **Perlu dukungan:** guru berdiri di sebelah anak dan menyentuh ringan tangan berpita saat belok kiri. Mulai dengan satu kartu, baru dua. Kurangi bantuan sedikit demi sedikit.
-- **Siap tantangan:** anak memandu dengan urutan yang dipilihnya (belok kiri dulu, baru maju) dan temannya menebak urutannya setelah dijalankan. Jangan menambah belok kanan; belok kanan masuk di semester berikutnya.
+- **Siap tantangan:** anak memandu dengan urutan yang dipilihnya (belok kiri dulu, baru maju) dan temannya menebak urutannya setelah dijalankan. Jangan menambah belok kanan; belok kanan tidak dipakai di program TK ini.
 - **Bahasa daerah:** boleh memakai kata "maju" dan "belok kiri" dalam bahasa rumah anak; ulangi dengan bahasa Indonesia secara santai.
 - Hindari lomba tercepat.
 

@@ -7,7 +7,7 @@ Anak dapat menggabungkan perintah maju, belok, dan ulangi.
 ## Alat dan bahan
 
 - Kisi 5x5 dari selotip kertas di lantai (dua puluh lima petak, tiap petak kira-kira selebar dua telapak kaki anak). Pojok kanan bawah diberi tanda bintang sebagai tempat mulai; satu petak lain diberi tanda bendera.
-- Kartu panah besar buatan guru: beberapa "maju" dan beberapa "belok kiri", ditambah kartu "ulang x2" seperti di `TK-B1-M5`. Kartu "ulang x2" ditaruh tepat sebelum **satu** kartu; kartu itu dikerjakan dua kali. Kartu "belok kanan" belum dipakai.
+- Kartu panah besar buatan guru: beberapa "maju" dan beberapa "belok kiri", ditambah kartu "ulang x2" seperti di `TK-B1-M5`. Kartu "ulang x2" ditaruh tepat sebelum **satu** kartu; kartu itu dikerjakan dua kali. Kartu "belok kanan" tidak dipakai di program TK ini.
 - "Robot": teman yang bermain sebagai robot.
 - Lembar anak `tk-b2-m1` dicetak satu per anak atau pasangan; gambarnya (SVG buatan penyusun) memuat kisi 5x5 dengan robot dan bendera, empat kotak kosong untuk urutan kartu, dan empat kartu untuk ditempel: ulang x2, maju, maju, dan belok kiri.
 - Tanpa perangkat digital.
