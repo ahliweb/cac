@@ -1,9 +1,9 @@
 # Silabus Pembelajaran Coding SMA — v1.4
 
-- **Version:** v1.4.0
+- **Version:** v1.4.1
 - **Last updated:** 2026-11-19
-- **Status:** DISETUJUI pemilik program, 2026-11-19 — jalur A, B, C, D, dan E (v1.3, issue #139; v1.2, issue #68, #84, #88; v1.1 disetujui 2026-11-19, issue #92; v1.0 disetujui 2026-11-18, issue #52). Modul pendamping (#69) tidak termasuk persetujuan ini. Revisi v1.4.0 (subbagian kemampuan masuk dari SMP dan penempatan di blok fondasi, bagian 3.0) disetujui lewat keputusan pemilik 2026-11-19 (issue #177, bagian 9.5).
-- **Changeset:** Silabus v1.3 disetujui pemilik lewat keputusan 2026-11-19 (issue #139, bagian 9.4): butir AI pada lima minggu jalur A, B, C, dan fondasi serta tiga minggu jalur D, aturan pemakaian AI generatif oleh murid SMA diganti menjadi bebas dengan etika, dan bagian 7.4 "Kebijakan penggunaan AI" ditambahkan; tidak ada minggu baru. Sebelumnya, silabus v1.2 disetujui pemilik: jalur C (IoT dan robotika), D (kecerdasan buatan dan analisis data), dan E (komputasi kuantum) ditambahkan beserta rencana mingguan, pemetaan CP (jalur D dan E sebagai pengayaan di luar CP, tidak dihitung pemenuhan CP), jembatan OSN jalur C, dan keputusan pemilik 2026-11-19 (bagian 9.3); celah F-LD-d dan F-LD-e jalur A dicatat dicakup modul pendamping (issue #105). Revisi minor v1.4.0 (#177, bagian 9.5): subbagian baru di bagian 3.0 menyatakan bahwa silabus ini tidak mensyaratkan `smp-coding`, memetakan irisan minggu SMP dengan blok fondasi dan minggu jalur A dan B, serta mengatur pengamatan awal dan tugas pendalaman di dalam kelas bersama; kode minggu, jumlah minggu, pemetaan CP, jalur, dan jembatan OSN tidak berubah.
+- **Status:** DISETUJUI pemilik program, 2026-11-19 — jalur A, B, C, D, dan E (v1.3, issue #139; v1.2, issue #68, #84, #88; v1.1 disetujui 2026-11-19, issue #92; v1.0 disetujui 2026-11-18, issue #52). Modul pendamping (#69) tidak termasuk persetujuan ini. Revisi v1.4.0 (subbagian kemampuan masuk dari SMP dan penempatan di blok fondasi, bagian 3.0) disetujui lewat keputusan pemilik 2026-11-19 (issue #177, bagian 9.5). Revisi patch v1.4.1 (dasar hukum siber: KUHP UU 1/2023) atas instruksi pemilik 2026-11-19, issue #238.
+- **Changeset:** Silabus v1.3 disetujui pemilik lewat keputusan 2026-11-19 (issue #139, bagian 9.4): butir AI pada lima minggu jalur A, B, C, dan fondasi serta tiga minggu jalur D, aturan pemakaian AI generatif oleh murid SMA diganti menjadi bebas dengan etika, dan bagian 7.4 "Kebijakan penggunaan AI" ditambahkan; tidak ada minggu baru. Sebelumnya, silabus v1.2 disetujui pemilik: jalur C (IoT dan robotika), D (kecerdasan buatan dan analisis data), dan E (komputasi kuantum) ditambahkan beserta rencana mingguan, pemetaan CP (jalur D dan E sebagai pengayaan di luar CP, tidak dihitung pemenuhan CP), jembatan OSN jalur C, dan keputusan pemilik 2026-11-19 (bagian 9.3); celah F-LD-d dan F-LD-e jalur A dicatat dicakup modul pendamping (issue #105). Revisi minor v1.4.0 (#177, bagian 9.5): subbagian baru di bagian 3.0 menyatakan bahwa silabus ini tidak mensyaratkan `smp-coding`, memetakan irisan minggu SMP dengan blok fondasi dan minggu jalur A dan B, serta mengatur pengamatan awal dan tugas pendalaman di dalam kelas bersama; kode minggu, jumlah minggu, pemetaan CP, jalur, dan jembatan OSN tidak berubah. Revisi patch v1.4.1 (#238, instruksi pemilik 2026-11-19): rumusan dasar hukum pada lima minggu (`B-XI2-M10`, `B-XII2-M10`, `C-XII1-M11`, `D-XII1-M4`) dan butir `F-LD-g` diselaraskan dengan UU 1/2023 (KUHP); kode minggu, jumlah minggu, pemetaan CP, dan jalur tidak berubah.
 
 > **Disetujui pemilik program pada 2026-11-19 untuk jalur A, B, C, D, dan E**
 > (v1.2; keputusan lewat dialog pilihan, dicatat di issue #68, #84, dan #88,
@@ -83,6 +83,7 @@ panduan identik huruf demi huruf dengan lampiran SK `[belum terverifikasi]`.
 | Keputusan induk CP | Keputusan Kepala BSKAP Nomor 046/H/KR/2025, berlaku sejak 16 Juli 2025, mencabut Keputusan Kepala Badan Nomor 032/H/KR/2024 | `[terverifikasi 2026-11-19]` dari teks PDF SK (1691 halaman, SHA-256 `45809d2c88a612f90ee5adbd60d71a8952527d6924c626d126ea6926ae3d3394`) yang diunduh dari subdomain resmi `bpmpbabel.kemendikdasmen.go.id` (URL dan hasil pencocokan di [`../smp-coding/riset.md`](../smp-coding/riset.md) bagian 2.1): "Ditetapkan di Jakarta pada tanggal 16 Juli 2025", Diktum KEDELAPAN berlaku sejak ditetapkan, Diktum KETUJUH mencabut 32/H/KR/2024. Padanan di JDIH Kemendikdasmen `[belum terverifikasi]` (tidak ditemukan). |
 | Perubahan 2026 | Keputusan Kepala BKPDM Nomor 020 Tahun 2026, ditetapkan 23 Juni 2026, mengubah 046/H/KR/2025 hanya untuk Agama dan Budi Pekerti; CP mata pelajaran lain (termasuk Informatika) tetap | `[belum terverifikasi]`: dari artikel sekunder (gebrak.id) yang hanya menulis "Sumber: Kemendikdasmen" tanpa tautan. |
 | URL resmi SK | -- | `[belum terverifikasi]`: tidak ditemukan. Pemilik diminta memberi tautan resmi (bagian 9). |
+| Dasar hukum siber dan data pribadi | UU 11/2008 tentang ITE (diubah UU 19/2016 dan UU 1/2024) tetap berlaku, tetapi Pasal 27 ayat (1) dan (3), 28 ayat (2), 30, 31 ayat (1) dan (2), 36, 45 ayat (1) dan (3), 45A ayat (2), 46, 47, dan 51 ayat (2) dicabut oleh UU 1/2023 tentang KUHP (berlaku sejak 2 Januari 2026). Ketentuan pidana siber kini ada di KUHP bagian "Tindak Pidana terhadap Informatika dan Elektronika" (mis. akses tanpa hak ke komputer atau sistem elektronik: Pasal 332; penyadapan transmisi informasi elektronik yang tidak bersifat publik: Pasal 258). Pelindungan data pribadi: UU 27/2022. | `[terverifikasi 2026-11-19]`: daftar pasal dicabut dari JDIH BPK (`https://peraturan.bpk.go.id/Details/37589/uu-no-11-tahun-2008`; status dan tanggal berlaku UU 1/2023 di `https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023`) dan dari naskah UU 1/2023 (PDF di JDIH BPK; ketentuan penutup Pasal 622 ayat (1) huruf r, Pasal 258, dan Pasal 332 dibaca). Naskah UU 1/2023 diubah UU 1/2026 tentang Penyesuaian Pidana (tercatat di JDIH BPK; isinya tidak dibaca). Bunyi pasal tidak dikutip di silabus; materi modul memverifikasi ulang sebelum dipakai. UU 27/2022 tidak dibuka ulang di revisi ini. |
 | Alokasi jam pelajaran (JP) Informatika per kelas/minggu | -- | `[belum terverifikasi]`: dokumen yang dibuka tidak memuat struktur kurikulum SMA. Silabus ini memakai asumsi di bagian 2. |
 
 ### 1.3 Kutipan CP (apa adanya dari panduan, bagian B.d)
@@ -532,7 +533,7 @@ Minggu 1-7 adalah blok fondasi (bagian 3.0); minggu jalur dimulai dari M8.
 | M7 | Visualisasi data | menyajikan data sebagai tabel dan grafik SVG | halaman grafik | grafik batang dari data |
 | M8 | Prediksi sederhana | memakai rata-rata bergerak dan garis kecenderungan | skrip prediksi | prediksi dan galat |
 | M9 | Mengonsumsi API publik | memakai `fetch`, `async/await` | halaman yang memuat data | tampilkan data API publik |
-| M10 | Keamanan aplikasi dan UU | mengenali XSS, rahasia di variabel lingkungan, pokok UU ITE dan UU PDP | lembar periksa | audit aplikasi sendiri |
+| M10 | Keamanan aplikasi dan UU | mengenali XSS, rahasia di variabel lingkungan, pokok UU ITE (beserta perubahannya), ketentuan pidana siber dalam KUHP (UU 1/2023), dan UU PDP | lembar periksa | audit aplikasi sendiri |
 | M11 | Jaringan: HTTP dan pemecahan masalah | membaca permintaan/respons; memakai DevTools untuk troubleshooting | catatan jaringan | diagnosis permintaan gagal |
 | M12 | Penyajian statis (opsional) | menerbitkan situs statis | situs statis | publikasi di lab |
 | M13 | Proyek: aplikasi data | membangun aplikasi data kecil | aplikasi dan laporan | proyek kelompok |
@@ -570,7 +571,7 @@ Minggu 1-7 adalah blok fondasi (bagian 3.0); minggu jalur dimulai dari M8.
 | M7 | Sprint 3: penyempurnaan | memperbaiki kualitas dan aksesibilitas | rilis kandidat | perbaikan |
 | M8 | Sprint 3: dokumentasi | menulis dokumentasi pengguna | dokumen | panduan pengguna |
 | M9 | Ulasan keamanan | memeriksa rahasia, dependensi, dan masukan | laporan keamanan | audit |
-| M10 | Privasi dan hukum | memeriksa pokok UU ITE dan UU PDP terkait proyek | catatan kepatuhan | daftar periksa |
+| M10 | Privasi dan hukum | memeriksa pokok UU ITE (beserta perubahannya), ketentuan pidana siber dalam KUHP (UU 1/2023), dan UU PDP terkait proyek | catatan kepatuhan | daftar periksa |
 | M11 | Ulasan sejawat | menilai proyek tim lain | catatan ulasan | ulasan |
 | M12 | Presentasi | mendemonstrasikan proyek | demo | presentasi |
 | M13 | Portofolio dan refleksi | mengarsipkan karya dan merefleksikan proses | portofolio | refleksi |
@@ -771,7 +772,7 @@ Minggu 1-7 adalah blok fondasi (bagian 3.0); minggu jalur dimulai dari M8.
 | M8 | Membandingkan strategi | mengukur dan menjustifikasi pilihan strategi | laporan perbandingan | waktu tempuh dan galat dua strategi |
 | M9 | Kalibrasi dan pengujian sistematis | merancang uji berulang dan mencatat hasil | tabel hasil uji | sepuluh kali uji per strategi |
 | M10 | Daya dan keselamatan baterai | memilih sumber daya aman dan membaca tegangan | lembar periksa daya | rencana daya robot |
-| M11 | Hukum dan etika sensor | menjelaskan pokok UU ITE dan UU PDP terkait perangkat yang merekam | catatan kepatuhan | daftar periksa proyek |
+| M11 | Hukum dan etika sensor | menjelaskan pokok UU ITE (beserta perubahannya), ketentuan pidana siber dalam KUHP (UU 1/2023), dan UU PDP terkait perangkat yang merekam | catatan kepatuhan | daftar periksa proyek |
 | M12 | Dokumentasi dan pemeliharaan | menulis dokumen perakitan dan panduan pengguna | dokumen proyek | panduan perakitan |
 | M13 | Proyek | menyiapkan rancangan proyek akhir | rencana proyek | rencana kerja |
 | M14 | Asesmen dan refleksi | menunjukkan rancangan, kendali, dan pengujian | uji tulis dan praktik | kuis |
@@ -958,7 +959,7 @@ Minggu 1-7 adalah blok fondasi (bagian 3.0); minggu jalur dimulai dari M8.
 | M1 | Merumuskan proyek akhir | menentukan masalah dan kebutuhan pengguna fiktif | dokumen kebutuhan | wawancara pengguna fiktif |
 | M2 | Studi kasus AI I | menimbang manfaat dan risiko dari sumber publik (mis. kesehatan, pendidikan) | catatan kasus | baca satu kasus dan tulis manfaat dan risikonya |
 | M3 | Studi kasus AI II | menimbang manfaat dan risiko pada bidang lain (mis. transportasi, pertanian, budaya) | catatan kasus | idem |
-| M4 | Hukum dan kebijakan | menjelaskan pokok UU ITE dan UU PDP terkait proyek AI | daftar periksa kepatuhan | periksa rancangan proyek |
+| M4 | Hukum dan kebijakan | menjelaskan pokok UU ITE (beserta perubahannya), ketentuan pidana siber dalam KUHP (UU 1/2023), dan UU PDP terkait proyek AI | daftar periksa kepatuhan | periksa rancangan proyek |
 | M5 | Menyiapkan data proyek | memilih data terbuka dan legal atau menyintesis data | catatan sumber dan data | siapkan data proyek |
 | M6 | Garis dasar dan metrik | menentukan metrik dan model pembanding sederhana | laporan garis dasar | hitung garis dasar |
 | M7 | Iterasi model I | memperbaiki model berdasarkan bukti | catatan eksperimen | satu perbaikan terukur |
@@ -1235,7 +1236,7 @@ adalah pengayaan di luar rumusan CP; kemiripannya dicatat terpisah di bagian
 | F-LD-d | merancang kebutuhan sistem | B-XII2-M1..M2; C-XII1-M1..M2 | B, C |
 | F-LD-e | keamanan jaringan lanjut | B-XI2-M10; C-XI2-M2 | B (parsial), C (parsial) |
 | F-LD-f | mengkreasi konten digital | B-XII1-M6..M7; B-XII2-M3..M8 | B |
-| F-LD-g | hukum (UU ITE, UU PDP) | B-XI2-M10; B-XII2-M10; C-XII1-M11 | B, C (parsial) |
+| F-LD-g | hukum (UU ITE, KUHP UU 1/2023, UU PDP) | B-XI2-M10; B-XII2-M10; C-XII1-M11 | B, C (parsial) |
 | F-LD-i | kata sandi dan autentikasi | B-XII1-M10; C-XI2-M2 | B (parsial), C (parsial) |
 | F-AD-a | data terbuka, keputusan, prediksi | A-XI2-M9..M13; B-XI2-M4..M8; C-XI2-M9..M12 | A, B, C |
 | F-AP-a | konsep strategi algoritmik | A-XI1-M3..M12; A-XI2-M1..M4; B-XI1-M9; C-XI1-M5..M8; C-XII1-M6..M8 | A, B, C (parsial) |
@@ -1299,7 +1300,7 @@ Informatika `[belum terverifikasi]`.
 | D | E-BK-b | kualitas dan pelabelan data | D-X1-M9, M13; D-X2-M1 | Rendah-sedang: kualitas dan pelabelan data. |
 | D | F-LD-b | verifikasi konten buatan AI | D-X2-M11; D-XI2-M10 | Rendah-sedang: verifikasi konten buatan AI. |
 | D | E-LD-g | lisensi data dan keluaran generatif | D-X2-M12 | Rendah: lisensi data dan keluaran generatif. |
-| D | F-LD-g | pelindungan data pribadi dan UU ITE | D-X2-M3; D-XII1-M4 | Rendah: pelindungan data pribadi dan UU ITE sebatas pokok. |
+| D | F-LD-g | pelindungan data pribadi, UU ITE, dan ketentuan pidana siber dalam KUHP | D-X2-M3; D-XII1-M4 | Rendah: pelindungan data pribadi, UU ITE, dan ketentuan pidana siber dalam KUHP sebatas pokok. |
 | D | E-LD-l | privasi pada layanan AI daring | D-X2-M3 | Rendah: privasi pada layanan AI daring. |
 | D | F-AP-d | memakai library untuk model | D-XI1-M3..M4, M9; D-XI2-M2..M8 | Rendah, hanya karena alat memakai coding (Python): memakai library, tetapi struktur data kompleks bukan fokus. |
 | E | F-BK-b | membandingkan algoritma kuantum dengan pendekatan klasik | E-XII1-M5; E-XI2-M12 | Latihan serupa: membandingkan Grover dengan pencarian linear dan Deutsch-Jozsa dengan pendekatan klasik; tidak dihitung. |
@@ -1622,7 +1623,7 @@ tertulis di draf.
 | 6 | Infrastruktur jaringan untuk `C-XI2` | Jaringan lab terpisah dan penengah pesan lokal di komputer guru. |
 | 7 | Murid jalur C yang tidak pernah ambil jalur A | Jalur C mengajarkan dasar pemrograman sendiri (`C-X1-M8..M12`); risiko tujuh minggu padat di kelas X semester 1 diakui. |
 | 8 | Peran mitra pada keselamatan | Mitra menyusun dan mengaudit aturan keselamatan; ditinjau pemilik. |
-| 9 | Isi pasal hukum (UU ITE, UU PDP) di `C-XII1-M11` | Diverifikasi dari sumber resmi sebelum modul ditulis. |
+| 9 | Isi pasal hukum (UU ITE, KUHP, UU PDP) di `C-XII1-M11` | Diverifikasi dari sumber resmi sebelum modul ditulis; pasal ITE yang dicabut KUHP dicatat di bagian 1.2 (v1.4.1). |
 
 **Jalur D (issue #84)**
 
@@ -1708,6 +1709,7 @@ dan jembatan OSN tidak berubah.
 | `ahliweb/awcms-one` (README, `docs/template.md`, `package.json`, metadata GitHub) `https://github.com/ahliweb/awcms-one` | Dibuka via GitHub API, 2026-11-18. |
 | `data/osn/topic-families.json` (silabus OSN v2.0, 2026-09-04) | Dibaca di repositori ini. |
 | ADR-0004, ADR-0006, ADR-0007 repositori ini | Dibaca. |
+| JDIH BPK: UU 11/2008 `https://peraturan.bpk.go.id/Details/37589/uu-no-11-tahun-2008` dan UU 1/2023 `https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023` (naskah PDF UU 1/2023 diunduh dari tautan Download halaman itu) | Dibuka dan dibaca, 2026-11-19; dasar v1.4.1 (#238). |
 | [`draf-jalur-c-iot.md`](draf-jalur-c-iot.md), [`draf-jalur-d-ai.md`](draf-jalur-d-ai.md), [`draf-jalur-e-kuantum.md`](draf-jalur-e-kuantum.md) (draf jalur C, D, E; issue #68, #84, #88) | Dasar v1.2; riwayat. Sumber web bertanggal akses 2026-11-19 (platform, harga, alat, layanan cloud quantum) dicatat di draf masing-masing dan banyak yang `[belum terverifikasi]`. |
 | [`docs/riset/ai-rekayasa-perangkat-lunak.md`](../../riset/ai-rekayasa-perangkat-lunak.md) (riset AI dalam rekayasa perangkat lunak; keputusan pemilik di issue #139) | Dasar v1.3; dibaca di repositori ini. Riset, bukan transkripsi sumber resmi. |
 | Silabus v1.0 (disetujui 2026-11-18; tersimpan di riwayat git) dan [`usulan-fondasi-kelas-x.md`](usulan-fondasi-kelas-x.md) (usulan blok fondasi, issue #86) | Dasar v1.1; dibaca di repositori ini. |
@@ -1716,6 +1718,7 @@ dan jembatan OSN tidak berubah.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v1.4.1 | 2026-11-19 | Revisi patch atas instruksi pemilik 2026-11-19 ("update peraturan"), issue #238: rumusan dasar hukum pada `B-XI2-M10`, `B-XII2-M10`, `C-XII1-M11`, `D-XII1-M4`, butir `F-LD-g` (bagian 4.1, 4.5), dan keputusan 9 diselaraskan dengan UU 1/2023 (KUHP), yang mencabut sebagian pasal pidana UU ITE; baris baru di bagian 1.2 mencatat sumber (JDIH BPK, dibuka 2026-11-19). Kode minggu, jumlah minggu, pemetaan CP, dan jalur tidak berubah. |
 | v1.4.0 | 2026-11-19 | Revisi minor yang disetujui pemilik lewat keputusan #177 (bagian 9.5): subbagian baru di bagian 3.0, "Kemampuan masuk dari SMP dan penempatan di blok fondasi" (tidak mensyaratkan `smp-coding`; tujuh baris irisan minggu SMP dengan fondasi dan minggu jalur A dan B; pengamatan awal di `FND-X1-M1` dan tugas pendalaman di dalam kelas bersama); dicerminkan di `data/sma-coding/smp-bridge.json`. Kode minggu, jumlah minggu, pemetaan CP, jalur, dan jembatan OSN tidak berubah (#177). |
 | v1.3.1 | 2026-11-19 | Revisi patch: status verifikasi sumber (SK 046, SKKNI 282/2016); isi kurikulum lain tidak berubah. |
 | v1.3.0 | 2026-11-19 | Disetujui pemilik lewat keputusan 2026-11-19 (issue #139; bagian 9.4). Menambahkan butir AI tanpa minggu baru: kebijakan dan privasi pemakaian AI (`FND-X1-M6`, `C-XI2-M2`), tanpa AI pada latihan terpadu jalur A (`A-XII2-M5..M8`), tinjau kode buatan AI, pemeriksaan paket, dan rahasia (`B-XI1-M12`, `B-XI1-M5`, `B-XII1-M10`), non-determinisme, biaya komputasi dan energi, dan pencatatan versi model dan perintah (`D-X2-M11`, `D-XI2-M12`, `D-XII1-M10`). Aturan jalur D "layanan AI daring hanya didemonstrasikan guru" diganti: pemakaian AI generatif oleh murid SMA bebas dengan etika (bagian 3.4, 7.2, 7.3, 9.3, 9.4). Menambahkan bagian 7.4 "Kebijakan penggunaan AI" (per program; etika, log, kapan tanpa AI, privasi, verifikasi kode, glosarium istilah). Kode dan jumlah minggu, pemetaan CP, dan jembatan OSN tidak berubah. |

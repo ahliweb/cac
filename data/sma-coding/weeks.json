@@ -1,5 +1,5 @@
 {
-  "syllabusVersion": "1.4.0",
+  "syllabusVersion": "1.4.1",
   "syllabusDate": "2026-11-19",
   "sourceSection": "bagian 3",
   "weeks": [
@@ -1585,7 +1585,7 @@
       "phase": "F",
       "week": 10,
       "topic": "Keamanan aplikasi dan UU",
-      "objective": "mengenali XSS, rahasia di variabel lingkungan, pokok UU ITE dan UU PDP",
+      "objective": "mengenali XSS, rahasia di variabel lingkungan, pokok UU ITE (beserta perubahannya), ketentuan pidana siber dalam KUHP (UU 1/2023), dan UU PDP",
       "output": "lembar periksa",
       "exercise": "audit aplikasi sendiri"
     },
@@ -1949,7 +1949,7 @@
       "phase": "F",
       "week": 10,
       "topic": "Privasi dan hukum",
-      "objective": "memeriksa pokok UU ITE dan UU PDP terkait proyek",
+      "objective": "memeriksa pokok UU ITE (beserta perubahannya), ketentuan pidana siber dalam KUHP (UU 1/2023), dan UU PDP terkait proyek",
       "output": "catatan kepatuhan",
       "exercise": "daftar periksa"
     },
@@ -2781,7 +2781,7 @@
       "phase": "F",
       "week": 11,
       "topic": "Hukum dan etika sensor",
-      "objective": "menjelaskan pokok UU ITE dan UU PDP terkait perangkat yang merekam",
+      "objective": "menjelaskan pokok UU ITE (beserta perubahannya), ketentuan pidana siber dalam KUHP (UU 1/2023), dan UU PDP terkait perangkat yang merekam",
       "output": "catatan kepatuhan",
       "exercise": "daftar periksa proyek"
     },
@@ -3691,7 +3691,7 @@
       "phase": "F",
       "week": 4,
       "topic": "Hukum dan kebijakan",
-      "objective": "menjelaskan pokok UU ITE dan UU PDP terkait proyek AI",
+      "objective": "menjelaskan pokok UU ITE (beserta perubahannya), ketentuan pidana siber dalam KUHP (UU 1/2023), dan UU PDP terkait proyek AI",
       "output": "daftar periksa kepatuhan",
       "exercise": "periksa rancangan proyek"
     },
