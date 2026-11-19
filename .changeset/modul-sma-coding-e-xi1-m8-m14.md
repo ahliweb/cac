@@ -1,5 +1,0 @@
----
-"kurikulum-informatika": patch
----
-
-Tujuh modul belajar jalur E (komputasi kuantum) `sma-coding` semester XI1 bagian kedua, `e-xi1-m8` sampai `e-xi1-m14` (issue #124, batch 2 gelombang E-XI1 menurut `docs/programs/sma-coding/rancangan-modul-cde.md`): gerbang satu qubit (X, Z, H sebagai matriks), sirkuit satu qubit dan interferensi, simulator vektor keadaan buatan sendiri bagian I dan II (C++ dan TypeScript dengan Bun menghasilkan keluaran yang sama persis), dua qubit dan hasil kali tensor, proyek mini pembangkit bit simulasi, serta asesmen dan refleksi semester. Setiap modul mengikuti templat berbasis bukti, memakai Quirk sebagai simulator visual (tautan sirkuit dibuka dan dilihat penyusun), dan menandai pemakaian AI per soal; semua contoh kode dijalankan dan angkanya dihitung ulang. Tujuh entri baru ditambahkan di akhir `data/sma-coding/modules.json` berstatus `draf` dengan `cpItems` kosong (pengayaan, tidak dihitung memenuhi CP). Ketergantungan `e-xi1-m8` pada `e-xi1-m7` dan `e-xi1-m12` pada `e-xi1-m3` disebut di teks, bukan di `prerequisites`, karena kedua modul itu belum terindeks. Tidak ada modul yang disetujui.

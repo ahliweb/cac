@@ -1,5 +1,0 @@
----
-"kurikulum-informatika": patch
----
-
-Tujuh modul belajar jalur C (IoT dan robotika) `sma-coding` semester X2 bagian kedua, `c-x2-m8` sampai `c-x2-m14` (issue #124, putaran P2 gelombang C-X2 menurut `docs/programs/sma-coding/rancangan-modul-cde.md`): menampilkan data di plotter serial, tumpukan dan antrian sebagai penyangga, pencarian dan pengurutan untuk median, sensor jarak dan keputusan, mencatat data berformat CSV, proyek mini stasiun pengamat, serta asesmen dan refleksi semester. Setiap modul mengikuti templat berbasis bukti dan memuat latihan dengan dan tanpa papan (kertas dan "papan tiruan" C++), keselamatan perangkat untuk minggu bertanda (F), serta penanda pemakaian AI per soal; contoh C++ dijalankan dan blok `arduino` dikompilasi dengan header tiruan, termasuk header tiruan baru `PustakaJarak.h` untuk pustaka karangan di `scripts/fixtures/arduino-mock/`. Tujuh entri baru ditambahkan di akhir `data/sma-coding/modules.json` berstatus `draf` (butir CP sesuai pemetaan; tidak dihitung memenuhi CP). Ketergantungan pada `c-x2-m1` sampai `c-x2-m7` disebut di teks, bukan di `prerequisites`, karena modul itu belum terindeks. Tidak ada modul yang disetujui.

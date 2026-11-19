@@ -1,5 +1,0 @@
----
-"kurikulum-informatika": patch
----
-
-Lima modul belajar berikutnya program `dewasa-coding` (paket D6, status `draf`): `dw-pro-m3` (struktur data dan algoritma dasar), `dw-pro-m4` (fungsi, modul, dan kode yang rapi), `dw-pro-m5` (debugging dan pengujian unit), `dw-pro-m13` (rekayasa perangkat lunak berbantuan AI, setelah `dw-pro-m5`, 8 jam), dan `dw-pro-m6` (pemrograman berorientasi objek dan pustaka, bergantung pada `dw-pro-m13`). Isi modul ditulis di `content/dewasa-coding/modules/` mengikuti rancangan modul yang disetujui pemilik pada 2026-11-19 dan dicatat di `data/dewasa-coding/modules.json` dengan `skkniUnits` hanya dari pemetaan silabus 5.2; setiap modul menyebut status jembatan kuliah ke `PRO` (lewati, padatkan, atau wajib) dan `dw-pro-m13` memuat kebijakan AI dewasa silabus 9.1 secara lengkap (uji lebih dulu, tinjauan kode, catatan asal, instruksi tersembunyi, rantai pasok paket, hak cipta, dan energi secara singkat). Contoh Python dijalankan (`python3 -I` atau `python3 -m unittest` untuk modul yang diimpor), semua data sintetis dan keluaran AI adalah contoh rekaan. Tidak ada modul yang disetujui.

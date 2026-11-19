@@ -1,5 +1,0 @@
----
-"kurikulum-informatika": patch
----
-
-Tujuh modul pertama jalur E (komputasi kuantum) `sma-coding` kelas XI semester 1 (`e-xi1-m1` sampai `e-xi1-m7`, issue #124, keputusan pemilik 2026-11-19), berstatus `draf`: modul di `content/sma-coding/modules/` dan entrinya di `data/sma-coding/modules.json` dengan `cpItems` kosong, karena jalur E adalah pengayaan di luar rumusan CP dan minggu 1 sampai 7 tidak punya irisan pengayaan. Isinya: mengapa komputasi kuantum dan pembongkaran mitos "semua jawaban sekaligus", probabilitas dan vektor, matriks, bilangan kompleks dasar (amplitudo real dahulu, kompleks untuk fase), qubit dan keadaan, superposisi dan aturan Born, serta pengukuran (shot dan histogram). Quirk dipakai sebagai simulator visual lewat tautan sirkuit yang sudah dibuka penyusun, contoh C++ dan satu contoh TypeScript dijalankan penyusun dan keluarannya dicatat apa adanya, dan tidak ada akun murid, Qiskit, atau cloud quantum pada minggu ini. Rujukan: dokumentasi IBM Quantum Learning, halaman Quirk, dan cppreference.
