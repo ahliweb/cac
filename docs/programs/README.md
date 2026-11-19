@@ -19,7 +19,7 @@
 ```text
 TK/PAUD --> SD --> SMP --> SMA ------------> Kuliah --> Dewasa
 tk-coding  sd-coding smp-coding sma-coding   kuliah-coding dewasa-coding
- (v1.0.2)  (v1.1.0)  (v1.2.0)    (v1.4.0)      (v1.2.0)     (v1.2.0)
+ (v1.0.2)  (v1.1.0)  (v1.2.0)    (v1.4.1)      (v1.2.0)     (v1.2.0)
                                   |
                                   +--> osn (pembinaan OSN, jalur A)
                                         (terdaftar, v2.0)
