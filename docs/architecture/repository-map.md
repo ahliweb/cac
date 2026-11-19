@@ -196,7 +196,8 @@ tooling, not part of the curriculum-as-code pipeline itself).
 **State today:** `check-requirements.ts` (backs `bun run
 check:requirements`), `check-checklist-fidelity.ts` (backs `bun run
 check:checklist-fidelity`), `check-module-code.ts` (backs `bun run
-check:module-code`), `check-fidelity.ts` (backs `bun run
+check:module-code`; `fixtures/arduino-mock/Arduino.h` is its mock Arduino header), `check-learner-assets.ts` (backs `bun run
+check:learner-assets`), `check-fidelity.ts` (backs `bun run
 check:fidelity`, every programme with a fidelity module) and `check-sma-coding-fidelity.ts` (backs `bun run
 check:sma-fidelity`).
 

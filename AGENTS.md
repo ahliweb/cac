@@ -69,7 +69,8 @@ table.
 | `bun run privacy-check` | `osn privacy-check` — recursively scans `data/` for direct-identifier-shaped keys (GR-04); exits 0 clean / 1 on any finding. |
 | `bun run check:requirements` | `bun run scripts/check-requirements.ts` — verifies the requirements register and traceability matrices are consistent and exhaustive. |
 | `bun run check:checklist-fidelity` | `bun run scripts/check-checklist-fidelity.ts` — verifies §14.1/§14.2 data matches the source syllabus verbatim. |
-| `bun run check:module-code` | `bun run scripts/check-module-code.ts` — compiles every ```` ```cpp ```` block in `content/**/modules/*.md` with `g++ -std=c++17 -fsyntax-only` (nothing is run); fails if `g++` is missing. |
+| `bun run check:module-code` | `bun run scripts/check-module-code.ts` — checks the fenced code of `content/**/modules/*.md` without running it: ```` ```cpp ```` with `g++ -std=c++17 -fsyntax-only`; ```` ```arduino ```` the same way against the mock `scripts/fixtures/arduino-mock/Arduino.h` (syntax and types only, not board behaviour); ```` ```python ```` with `python3 -I` `ast.parse` (syntax only). A block whose info string carries `setengah-jadi` (e.g. ```` ```cpp setengah-jadi ````) is skipped and counted. Fails if `g++` or `python3` is missing. |
+| `bun run check:learner-assets` | `bun run scripts/check-learner-assets.ts` — checks `content/<program>/gambar/*.svg` (well-formed, `svg` root with `viewBox`, no script/image/foreignObject/`on*`/external `href`/`data:`/`@import`/external `url()`, at most 50 KB) and that every image link in `content/<program>/lembar/*.md` points to an existing file in that `gambar/`; an unreferenced SVG is a warning. |
 | `bun run check:fidelity` | `bun run scripts/check-fidelity.ts [--program <id>]` — menjalankan pemeriksaan fidelity setiap program terdaftar yang punya modul fidelity (`sma-coding`, `tk-coding`, `kuliah-coding`, `dewasa-coding`, `sd-coding`, `smp-coding`) lewat tabel `src/cli/program-registry.ts` (ADR-0008), membandingkan tabel `docs/programs/<id>/silabus.md` dengan `data/<id>/*.json` sel demi sel; exit 1 bila ada drift, 2 untuk salah pakai. |
 | `bun run check:sma-fidelity` | `bun run scripts/check-sma-coding-fidelity.ts` — pemeriksaan fidelity khusus `sma-coding` (bagian 1.3, 1.4, 2, 3, 4, 5 `silabus.md`); exit 1 bila ada drift. |
 | `bun run changeset` | Create a changeset (interactive). |
@@ -158,7 +159,8 @@ not duplicate that policy here; that document is the source of truth.
 - [ ] `bun run validate` passes (corpus validation).
 - [ ] `bun run privacy-check` passes (no direct-identifier-shaped key in `data/`).
 - [ ] `bun run check:requirements` passes if `docs/requirements/` was touched.
-- [ ] `bun run check:module-code` passes (C++ examples in `content/` modules compile).
+- [ ] `bun run check:module-code` passes (C++, Arduino and Python examples in `content/` modules compile or parse).
+- [ ] `bun run check:learner-assets` passes (SVG and image links of learner sheets).
 - [ ] `bun run check:fidelity` passes if any `data/<program>/` or its source document changed (`check:sma-fidelity` is the same check for `sma-coding` alone; run `check:fidelity` on its own to see every registered programme pass).
 - [ ] Every command and path mentioned in any doc you touched actually
       exists — verify, don't assume.

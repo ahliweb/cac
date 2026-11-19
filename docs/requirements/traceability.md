@@ -1,6 +1,6 @@
 # Traceability Matrices
 
-Three views on the 85 requirements in `register.md`, proving the register is exhaustive in
+Three views on the 106 requirements in `register.md`, proving the register is exhaustive in
 both directions (see `README.md`'s "completeness rule"):
 
 1. **Syllabus section → requirements → issues** — proves every numbered section of the source
@@ -85,6 +85,7 @@ itself.
 | #129 — Research and syllabus for SMP coding; approved and encoded as `smp-coding` v1.1.0 (PR #149) | FR-36, TR-17 |
 | #130 — Research and syllabus for university coding; approved and encoded as `kuliah-coding` v1.1.0 (PR #146) | FR-37, TR-18 |
 | #131 — Research and syllabus for adult coding; approved and encoded as `dewasa-coding` v1.1.0 (PR #147) | FR-38, TR-19 |
+| #178 — Automatic checker for Arduino/Python examples and learner-sheet SVG assets | TR-20, TR-21 |
 | #139 — AI in software engineering research and the per-programme AI-use policies (PR #159 OSN, #160 SMP, #161 SMA, #162 kuliah, #163 dewasa) | ER-17, FR-36, FR-37, FR-38 |
 | #172 — module indexes of `tk-coding`, `sd-coding`, `smp-coding`, `kuliah-coding` and `dewasa-coding` (schemas, validation, `osn render modul`, learner sheets for tk and sd) | FR-39, FR-40, FR-41, FR-42, FR-43 |
 
@@ -93,7 +94,7 @@ backlog), while any issue may be cited. A new programme adds its issues here as 
 
 ## Matrix 3 — Requirement → tests
 
-Requirements `FR-27`-`FR-43`, `TR-12`-`TR-19` and `GR-13` have no OSN syllabus section, so they
+Requirements `FR-27`-`FR-43`, `TR-12`-`TR-21` and `GR-13` have no OSN syllabus section, so they
 are traced by issue (Matrix 2) and by the tests below. Every path must exist; the checker
 (`checkTestLinks`) fails on a missing file, an unregistered ID or a row with no test.
 
@@ -124,6 +125,8 @@ are traced by issue (Matrix 2) and by the tests below. Every path must exist; th
 | TR-17 | `tests/integration/smp-coding-fidelity.test.ts` |
 | TR-18 | `tests/integration/kuliah-coding-fidelity.test.ts` |
 | TR-19 | `tests/integration/dewasa-coding-fidelity.test.ts` |
+| TR-20 | `tests/unit/check-module-code.test.ts`, `tests/integration/check-module-code.test.ts` |
+| TR-21 | `tests/unit/check-learner-assets.test.ts`, `tests/integration/check-learner-assets.test.ts` |
 | GR-13 | `tests/unit/module-schema.test.ts`, `tests/unit/render-module.test.ts` |
 
 Every requirement ID in `register.md` appears in at least one row of Matrix 1 or Matrix 2, and

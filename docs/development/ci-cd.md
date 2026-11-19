@@ -36,13 +36,27 @@ The workflow is defined in `.github/workflows/ci.yml`. It has a single job,
    assessment-bank kind → competition stage, every `Rnn` citation → the
    reference register), and that each registry entry's version/date match its corpus — see `docs/cli/README.md` for the full command
    reference. Exits `0` on a clean corpus, `1` if any finding exists.
-11. **Check module code examples** — `bun run check:module-code`
-    (`scripts/check-module-code.ts`). Extracts every ```` ```cpp ```` block
-    from `content/**/modules/*.md` and runs `g++ -std=c++17 -fsyntax-only`
-    on it; nothing is executed (this repository is not a judge, ADR-0004).
-    Fails if a block does not compile, and also if `g++` is not installed
-    (`ubuntu-latest` ships it). Exits `0` clean, `1` otherwise.
-12. **Privacy check** — `bun run privacy-check` (`osn privacy-check`,
+11. **Ensure python3 is available** — `python3 --version`. The module
+    check parses ```` ```python ```` blocks with it (`ubuntu-latest` ships
+    it); this step names a missing interpreter before the check does.
+12. **Check module code examples** — `bun run check:module-code`
+    (`scripts/check-module-code.ts`). Extracts the fenced blocks of
+    `content/**/modules/*.md` and checks them; nothing is executed (this
+    repository is not a judge, ADR-0004). ```` ```cpp ```` runs
+    `g++ -std=c++17 -fsyntax-only`; ```` ```arduino ```` runs the same
+    compiler with `#include "Arduino.h"` against the mock header in
+    `scripts/fixtures/arduino-mock/` (syntax and types against a mock API,
+    not proof of board behaviour); ```` ```python ```` runs
+    `python3 -I -c "import ast,sys; ast.parse(sys.stdin.read())"`. A block
+    with `setengah-jadi` in its info string (e.g. ```` ```cpp setengah-jadi ````)
+    is skipped and counted. Fails if a block does not pass, and also if
+    `g++` or `python3` is not installed. Exits `0` clean, `1` otherwise.
+13. **Check learner assets** — `bun run check:learner-assets`
+    (`scripts/check-learner-assets.ts`). Validates `content/<program>/gambar/*.svg`
+    (well-formed, `viewBox`, no script/raster/external reference, at most
+    50 KB) and the image links of `content/<program>/lembar/*.md`; an
+    orphan SVG is a warning only. Exits `0` clean, `1` on any error.
+14. **Privacy check** — `bun run privacy-check` (`osn privacy-check`,
     GR-04). Recursively scans every `.json`/`.jsonl` file under `data/`
     (including `data/osn/samples/`) for a direct-identifier-shaped key, and
     fails the build if any is found (beyond the documented `"name"`
@@ -72,8 +86,9 @@ The test files import the checkers' functions and assert that the committed
 documents and data pass, so a drift also fails the `Test with coverage` step.
 What CI does not do is run the scripts' own command-line entry points
 (argument handling, exit code), so run the script before pushing when you
-touch the files it covers. By contrast `bun run check:module-code` (step 11)
-and `bun run privacy-check` (step 12) are real CI steps.
+touch the files it covers. By contrast `bun run check:module-code` (step 12),
+`bun run check:learner-assets` (step 13) and `bun run privacy-check` (step 14)
+are real CI steps.
 
 ## Triggers
 
@@ -145,7 +160,9 @@ bun run typecheck && \
 bun run test:coverage && \
 bun run build && \
 bun run validate && \
+python3 --version && \
 bun run check:module-code && \
+bun run check:learner-assets && \
 bun run privacy-check
 ```
 

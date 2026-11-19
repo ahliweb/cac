@@ -155,7 +155,7 @@ Dua tombol dapat dipakai bersama. Misalnya "LED menyala bila A ditekan dan B jug
 
 Sekarang sebagian diisi olehmu. Tujuannya: LED menyala bila **tepat satu** dari dua tombol ditekan (bukan keduanya, bukan tidak ada). Lengkapi bagian `____`.
 
-```arduino
+```arduino setengah-jadi
 // Arduino-C++ untuk ESP32. Tidak dikompilasi oleh check:module-code.
 const int PIN_A = 4;
 const int PIN_B = 5;

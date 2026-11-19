@@ -11,8 +11,10 @@ import { mkdir, mkdtemp, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import {
+  type Checkers,
   type Compiler,
   checkModuleCode,
+  extractBlocks,
   extractCppBlocks,
   run,
 } from "../../scripts/check-module-code";
@@ -49,6 +51,59 @@ describe("extractCppBlocks", () => {
   });
 });
 
+describe("extractBlocks (arduino, python, setengah-jadi)", () => {
+  test("recognises cpp, arduino and python blocks with their language", () => {
+    const markdown = [
+      "```arduino",
+      "void setup() {}",
+      "```",
+      "```Python",
+      "print(1)",
+      "```",
+      "```py",
+      "x = 1",
+      "```",
+      "```typescript",
+      "let a = 1;",
+      "```",
+    ].join("\n");
+    expect(extractBlocks(markdown)).toEqual([
+      { language: "arduino", startLine: 2, code: "void setup() {}\n", incomplete: false },
+      { language: "python", startLine: 5, code: "print(1)\n", incomplete: false },
+    ]);
+  });
+
+  test("the setengah-jadi marker in the info string flags a block as incomplete, for every language", () => {
+    const markdown = [
+      "```cpp setengah-jadi",
+      "int x = ____;",
+      "```",
+      "```arduino setengah-jadi",
+      "void setup() { ____ }",
+      "```",
+      "```python setengah-jadi",
+      "def f(:",
+      "```",
+      "```python",
+      "pass",
+      "```",
+    ].join("\n");
+    expect(extractBlocks(markdown).map((block) => [block.language, block.incomplete])).toEqual([
+      ["cpp", true],
+      ["arduino", true],
+      ["python", true],
+      ["python", false],
+    ]);
+  });
+
+  test("the marker only counts after the language and extractCppBlocks drops incomplete blocks", () => {
+    expect(extractBlocks("```text setengah-jadi\nx\n```")).toEqual([]);
+    expect(
+      extractCppBlocks("```cpp setengah-jadi\nint x = ____;\n```\n```cpp\nint y;\n```"),
+    ).toEqual([{ startLine: 5, code: "int y;\n" }]);
+  });
+});
+
 describe("checkModuleCode", () => {
   let root: string;
 
@@ -67,7 +122,8 @@ describe("checkModuleCode", () => {
   test("no modules means no blocks and no failures", async () => {
     expect(await checkModuleCode(root)).toEqual({
       filesChecked: 0,
-      blocksChecked: 0,
+      blocksChecked: { cpp: 0, arduino: 0, python: 0 },
+      blocksSkipped: { cpp: 0, arduino: 0, python: 0 },
       failures: [],
     });
   });
@@ -88,10 +144,59 @@ describe("checkModuleCode", () => {
         : { ok: true, diagnostics: "" };
     const result = await checkModuleCode(root, fake);
     expect(result.filesChecked).toBe(1);
-    expect(result.blocksChecked).toBe(2);
+    expect(result.blocksChecked.cpp).toBe(2);
     expect(result.failures).toHaveLength(1);
-    expect(result.failures[0]).toContain("content/osn/modules/a.md: block 2 (starting at line 6)");
+    expect(result.failures[0]).toContain(
+      "content/osn/modules/a.md: cpp block 2 (starting at line 6) does not compile",
+    );
     expect(result.failures[0]).toContain("kesalahan palsu");
+  });
+
+  test("routes each language to its own checker, skips setengah-jadi blocks and counts them", async () => {
+    await write(
+      "content/osn/modules/a.md",
+      [
+        "```cpp",
+        "int a;",
+        "```",
+        "```arduino",
+        "void setup() {}",
+        "```",
+        "```python",
+        "SALAH(",
+        "```",
+        "```python setengah-jadi",
+        "def f(:",
+        "```",
+        "```cpp setengah-jadi",
+        "int ____;",
+        "```",
+      ].join("\n"),
+    );
+    const seen: string[] = [];
+    const checkers: Checkers = {
+      cpp: async () => {
+        seen.push("cpp");
+        return { ok: true, diagnostics: "" };
+      },
+      arduino: async () => {
+        seen.push("arduino");
+        return { ok: true, diagnostics: "" };
+      },
+      python: async (code) => {
+        seen.push("python");
+        return code.includes("SALAH")
+          ? { ok: false, diagnostics: "SyntaxError palsu" }
+          : { ok: true, diagnostics: "" };
+      },
+    };
+    const result = await checkModuleCode(root, checkers);
+    expect(seen).toEqual(["cpp", "arduino", "python"]);
+    expect(result.blocksChecked).toEqual({ cpp: 1, arduino: 1, python: 1 });
+    expect(result.blocksSkipped).toEqual({ cpp: 1, arduino: 0, python: 1 });
+    expect(result.failures).toHaveLength(1);
+    expect(result.failures[0]).toContain("python block 1 (starting at line 8) has a syntax error");
+    expect(result.failures[0]).toContain("SyntaxError palsu");
   });
 
   test("a compiler that cannot start propagates (the script then exits 1)", async () => {
@@ -125,13 +230,25 @@ describe("run (exit code and messages)", () => {
   test("exits 1 and lists the failing block when a block does not compile", async () => {
     const failing: Compiler = async () => ({ ok: false, diagnostics: "kesalahan palsu" });
     expect(await run(root, failing, out)).toBe(1);
-    expect(lines.join("\n")).toContain("FAILED -- 1 block(s) do not compile");
+    expect(lines.join("\n")).toContain("FAILED -- 1 block(s) failed");
   });
 
   test("exits 0 when everything compiles", async () => {
     const ok: Compiler = async () => ({ ok: true, diagnostics: "" });
     expect(await run(root, ok, out)).toBe(0);
-    expect(lines.join("\n")).toContain("OK -- 1 cpp block(s) in 1 module file(s)");
+    expect(lines.join("\n")).toContain(
+      "OK -- 1 cpp, 0 arduino (mock Arduino.h) and 0 python block(s) in 1 module file(s)",
+    );
+  });
+
+  test("reports skipped setengah-jadi blocks in the OK line", async () => {
+    await writeFile(
+      join(root, "content", "osn", "modules", "a.md"),
+      "```python setengah-jadi\ndef f(:\n```\n",
+    );
+    const ok: Compiler = async () => ({ ok: true, diagnostics: "" });
+    expect(await run(root, ok, out)).toBe(0);
+    expect(lines.join("\n")).toContain("1 block(s) marked setengah-jadi skipped");
   });
 
   test("exits 1 loudly when the compiler is unavailable", async () => {
@@ -139,6 +256,6 @@ describe("run (exit code and messages)", () => {
       throw new Error("spawn g++ ENOENT");
     };
     expect(await run(root, missing, out)).toBe(1);
-    expect(lines.join("\n")).toContain("refuses to pass without a compiler");
+    expect(lines.join("\n")).toContain("refuses to pass without them");
   });
 });

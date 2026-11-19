@@ -131,7 +131,7 @@ Cocokkan dengan tebakanmu. Bila ada yang meleset, cari baris yang kamu salah bac
 
 Sekarang sebagian diisi olehmu. Tujuannya: LED berkedip **dua kali cepat** (masing-masing 100 ms) lalu jeda 1 detik. Lengkapi bagian `____`.
 
-```arduino
+```arduino setengah-jadi
 // Arduino-C++ untuk ESP32. Tidak dikompilasi oleh check:module-code.
 const int PIN_LED = 2;
 const int KEDIP_MS = 100;
