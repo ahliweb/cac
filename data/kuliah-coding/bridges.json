@@ -4,22 +4,22 @@
   "sourceSection": "bagian 5",
   "fromSma": [
     {
-      "from": "sma-coding jalur A (C++ algoritmik), v1.2",
-      "toText": "KUL-I-101, KUL-I-102, KUL-K-201",
-      "toCourses": ["KUL-I-101", "KUL-I-102", "KUL-K-201"],
-      "basis": "Pengakuan lewat rekognisi pembelajaran lampau (Pasal 14 ayat (3) huruf c); bukti berupa portofolio dan uji penempatan; tata cara ditetapkan perguruan tinggi `[belum terverifikasi]`. Jalur A dan jalur K punya topik yang sama dengan rumpun OSN di `data/osn/topic-families.json` (mis. struktur data, graph-tree, search-sort, rekursi)."
+      "from": "sma-coding jalur A (C++ algoritmik)",
+      "toText": "KUL-I-101 (sebagian), KUL-I-102 (sebagian), KUL-I-201 (sebagian), KUL-K-201",
+      "toCourses": ["KUL-I-101", "KUL-I-102", "KUL-I-201", "KUL-K-201"],
+      "basis": "Pengakuan per CPMK, bukan per mata kuliah. `KUL-I-101`: C1 dan fungsi serta larik pada C2 dikenali (`A-X1-M9` sampai `A-X1-M12`, `A-X2-M1` sampai `A-X2-M3`); penunjuk atau rujukan, debugging dengan alat, dan Git tidak diajarkan di jalur A (Git hanya di `B-X2-M12` dan `B-XI1-M12`), sehingga C3 dan C4 serta bagian penunjuk pada C2 tetap dipelajari. `KUL-I-102`: struktur linear, antrian prioritas, graf, dan DSU dikenali (`A-X2-M6`, `A-X2-M7`, `A-XI1-M10`, `A-XI2-M5` sampai `A-XI2-M8`, `A-XII1-M4`); daftar berantai dan tabel hash tidak tercantum di jalur A. `KUL-I-201`: greedy, DP, dan graf dikenali (`A-XI1-M5`, `A-XI1-M6`, `A-XI2-M1` sampai `A-XI2-M3`) tetapi prasyaratnya `KUL-I-102` dan `KUL-I-103`. `KUL-K-201`: topik sama dengan rumpun OSN di `data/osn/topic-families.json` (mis. struktur data, graph-tree, search-sort, rekursi), dengan seleksi `[asumsi]`. C++ sama dengan `KUL-I-101`; berbeda dengan Python di jalur U."
     },
     {
       "from": "sma-coding jalur B (web, JS/TS)",
-      "toText": "KUL-I-205",
+      "toText": "KUL-I-205 (sebagian)",
       "toCourses": ["KUL-I-205"],
-      "basis": "Portofolio web; bahasa sama (TypeScript) `[asumsi]`."
+      "basis": "Portofolio web; bahasa sama (TypeScript) `[asumsi]`. Server HTTP, API JSON, validasi, dan keamanan aplikasi (`B-XI2-M1` sampai `B-XI2-M3`, `B-XI2-M10`) dikenali; basis data tidak diajarkan di jalur B padahal prasyarat `KUL-I-205` adalah `KUL-I-202`, sehingga pengakuan hanya atas CPMK yang dapat berdiri sendiri."
     },
     {
       "from": "sma-coding jalur C (IoT), D (AI), E (kuantum)",
-      "toText": "KUL-U-201 (C), KUL-U-202 dan KUL-I-303 (D), pengayaan (E)",
-      "toCourses": ["KUL-U-201", "KUL-U-202", "KUL-I-303"],
-      "basis": "Jalur D dan E di sma-coding adalah pengayaan di luar CP; pengakuan di kuliah tidak otomatis `[asumsi]`."
+      "toText": "KUL-U-201 (C, sebagian), KUL-U-102 (D, sebagian), KUL-U-202 dan KUL-I-303 (D, sebagian), pengayaan (E)",
+      "toCourses": ["KUL-U-201", "KUL-U-102", "KUL-U-202", "KUL-I-303"],
+      "basis": "Jalur D dan E di sma-coding adalah pengayaan di luar CP; pengakuan di kuliah tidak otomatis `[asumsi]`. Jalur C: JSON dan HTTP (`C-XI2`) beririsan dengan C2 `KUL-U-201`. Jalur D: Python, pembersihan data, statistik deskriptif, dan evaluasi (`D-XI1-M2` sampai `D-XI1-M7`, `D-XI1-M10`) beririsan dengan C1 sampai C2 `KUL-U-102`; D memakai Python sedangkan jalur I memakai C++."
     },
     {
       "from": "Pembinaan OSN Informatika (korpus `data/osn/`)",
@@ -28,10 +28,10 @@
       "basis": "Selaras topik; peserta OSN tidak otomatis memenuhi prasyarat, ada uji penempatan `[asumsi]`."
     },
     {
-      "from": "Blok fondasi kelas X sma-coding",
-      "toText": "KUL-U-101",
-      "toCourses": ["KUL-U-101"],
-      "basis": "Tumpang tindih berpikir komputasional; prodi menentukan pengakuan."
+      "from": "Blok fondasi kelas X sma-coding (FND-X1-M1..M7)",
+      "toText": "KUL-I-203 (sebagian), KUL-I-301 (sebagian), KUL-U-202 (sebagian)",
+      "toCourses": ["KUL-I-203", "KUL-I-301", "KUL-U-202"],
+      "basis": "Fondasi memuat sistem komputer, jaringan, dan keamanan dasar, bukan berpikir komputasional: irisannya dengan `KUL-I-203` (representasi data, masukan-proses-keluaran, sistem operasi; `FND-X1-M1` sampai `FND-X1-M3`), `KUL-I-301` (konsep jaringan dan keamanan dasar; `FND-X1-M4` sampai `FND-X1-M6`), dan `KUL-U-202` (privasi dan kebijakan AI; `FND-X1-M6`). Tidak ada padanan di jalur U untuk fondasi selain `KUL-U-202`; prodi menentukan pengakuan. Baris ini menggantikan pemetaan ke `KUL-U-101` pada v1.1.1, yang tidak tepat."
     }
   ],
   "toWork": [

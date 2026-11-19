@@ -758,7 +758,7 @@ Status penerapan per pasangan (K8 opsi 1; diperbarui oleh PR masing-masing):
 | Urutan | Pasangan | Versi | Status |
 | --- | --- | --- | --- |
 | 1 | `kuliah-coding` ke `dewasa-coding` jalur `PRO` | dewasa 1.2.0, kuliah 1.2.0 | Diterapkan |
-| 2 | `sma-coding` dan `kuliah-coding` | kuliah 1.2.0 (sudah naik di urutan 1) | Belum |
+| 2 | `sma-coding` dan `kuliah-coding` | kuliah 1.2.0 (sudah naik di urutan 1) | Diterapkan |
 | 3 | `smp-coding` dan `sma-coding` | smp 1.2.0, sma 1.4.0 | Belum |
 | 4 | `sd-coding` dan `smp-coding` | sd 1.1.0 | Belum |
 | 5 | `tk-coding` dan `sd-coding` | tk 1.0.2 | Belum |
