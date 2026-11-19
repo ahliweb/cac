@@ -593,6 +593,132 @@
       ],
       "contentPath": "content/tk-coding/modules/tk-b1-m6.md",
       "learnerSheetPath": "content/tk-coding/lembar/tk-b1-m6.md"
+    },
+    {
+      "id": "tk-b1-m7",
+      "title": "Dua aturan",
+      "cpOverlap": ["FF-DL-b", "FF-DL-c"],
+      "weekCodes": ["TK-B1-M7"],
+      "groups": ["B"],
+      "prerequisites": ["TK-A1-M7", "TK-A1-M8"],
+      "audience": "guru",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
+          "url": "https://www.kemendikdasmen.go.id/pengumuman/13654-kepmendikdasmen-tentang-pedoman-implementasi-koding-dan-kecerdasan-artifisial-pada-paud-dikdasmen"
+        }
+      ],
+      "contentPath": "content/tk-coding/modules/tk-b1-m7.md",
+      "learnerSheetPath": "content/tk-coding/lembar/tk-b1-m7.md"
+    },
+    {
+      "id": "tk-b1-m8",
+      "title": "Gambar data",
+      "cpOverlap": ["FF-DL-b"],
+      "weekCodes": ["TK-B1-M8"],
+      "groups": ["B"],
+      "prerequisites": ["TK-A1-M7"],
+      "audience": "guru",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
+          "url": "https://www.kemendikdasmen.go.id/pengumuman/13654-kepmendikdasmen-tentang-pedoman-implementasi-koding-dan-kecerdasan-artifisial-pada-paud-dikdasmen"
+        }
+      ],
+      "contentPath": "content/tk-coding/modules/tk-b1-m8.md",
+      "learnerSheetPath": "content/tk-coding/lembar/tk-b1-m8.md"
+    },
+    {
+      "id": "tk-b1-m9",
+      "title": "Alat dan mesin sederhana",
+      "cpOverlap": ["FF-DL-d"],
+      "weekCodes": ["TK-B1-M9"],
+      "groups": ["B"],
+      "prerequisites": ["TK-A1-M9"],
+      "audience": "guru",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
+          "url": "https://www.kemendikdasmen.go.id/pengumuman/13654-kepmendikdasmen-tentang-pedoman-implementasi-koding-dan-kecerdasan-artifisial-pada-paud-dikdasmen"
+        }
+      ],
+      "contentPath": "content/tk-coding/modules/tk-b1-m9.md",
+      "learnerSheetPath": "content/tk-coding/lembar/tk-b1-m9.md"
+    },
+    {
+      "id": "tk-b1-m10",
+      "title": "Mencari informasi bersama",
+      "cpOverlap": ["FF-DL-a", "FF-DL-d"],
+      "weekCodes": ["TK-B1-M10"],
+      "groups": ["B"],
+      "prerequisites": [],
+      "audience": "guru",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
+          "url": "https://www.kemendikdasmen.go.id/pengumuman/13654-kepmendikdasmen-tentang-pedoman-implementasi-koding-dan-kecerdasan-artifisial-pada-paud-dikdasmen"
+        }
+      ],
+      "contentPath": "content/tk-coding/modules/tk-b1-m10.md",
+      "learnerSheetPath": "content/tk-coding/lembar/tk-b1-m10.md"
+    },
+    {
+      "id": "tk-b1-m11",
+      "title": "Permainan besar: peta harta",
+      "cpOverlap": ["FF-DL-c", "FF-JD-c"],
+      "weekCodes": ["TK-B1-M11"],
+      "groups": ["B"],
+      "prerequisites": ["TK-B1-M2", "TK-B1-M3", "TK-B1-M5"],
+      "audience": "guru",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
+          "url": "https://www.kemendikdasmen.go.id/pengumuman/13654-kepmendikdasmen-tentang-pedoman-implementasi-koding-dan-kecerdasan-artifisial-pada-paud-dikdasmen"
+        }
+      ],
+      "contentPath": "content/tk-coding/modules/tk-b1-m11.md",
+      "learnerSheetPath": "content/tk-coding/lembar/tk-b1-m11.md"
+    },
+    {
+      "id": "tk-b1-m12",
+      "title": "Pameran dan cerita",
+      "cpOverlap": ["FF-DL-a"],
+      "weekCodes": ["TK-B1-M12"],
+      "groups": ["B"],
+      "prerequisites": [
+        "TK-B1-M1",
+        "TK-B1-M2",
+        "TK-B1-M3",
+        "TK-B1-M4",
+        "TK-B1-M5",
+        "TK-B1-M6",
+        "TK-B1-M7",
+        "TK-B1-M8",
+        "TK-B1-M9",
+        "TK-B1-M10",
+        "TK-B1-M11"
+      ],
+      "audience": "guru",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
+          "url": "https://www.kemendikdasmen.go.id/pengumuman/13654-kepmendikdasmen-tentang-pedoman-implementasi-koding-dan-kecerdasan-artifisial-pada-paud-dikdasmen"
+        }
+      ],
+      "contentPath": "content/tk-coding/modules/tk-b1-m12.md",
+      "learnerSheetPath": "content/tk-coding/lembar/tk-b1-m12.md"
     }
   ]
 }

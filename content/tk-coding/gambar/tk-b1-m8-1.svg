@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-labelledby="t d">
+  <title id="t">Gambar data cuaca</title>
+  <desc id="d">Piktogram tiga kolom. Kolom kiri bertuliskan cerah berisi empat matahari bertumpuk. Kolom tengah bertuliskan berawan berisi dua awan. Kolom kanan bertuliskan hujan berisi satu tetes air. Kolom cerah paling tinggi.</desc>
+  <rect width="600" height="400" fill="#ffffff"/>
+  <line x1="40" y1="340" x2="560" y2="340" stroke="#333333" stroke-width="4"/>
+  <text x="130" y="374" font-family="sans-serif" font-size="24" text-anchor="middle" fill="#333333">cerah</text>
+  <text x="300" y="374" font-family="sans-serif" font-size="24" text-anchor="middle" fill="#333333">berawan</text>
+  <text x="470" y="374" font-family="sans-serif" font-size="24" text-anchor="middle" fill="#333333">hujan</text>
+  <g stroke="#333333" stroke-width="3">
+    <rect x="98" y="276" width="64" height="64" fill="#fffde7"/>
+    <rect x="98" y="212" width="64" height="64" fill="#fffde7"/>
+    <rect x="98" y="148" width="64" height="64" fill="#fffde7"/>
+    <rect x="98" y="84" width="64" height="64" fill="#fffde7"/>
+    <rect x="268" y="276" width="64" height="64" fill="#fffde7"/>
+    <rect x="268" y="212" width="64" height="64" fill="#fffde7"/>
+    <rect x="438" y="276" width="64" height="64" fill="#fffde7"/>
+  </g>
+  <g fill="#fdd835" stroke="#333333" stroke-width="3">
+    <circle cx="130" cy="308" r="14"/>
+    <circle cx="130" cy="244" r="14"/>
+    <circle cx="130" cy="180" r="14"/>
+    <circle cx="130" cy="116" r="14"/>
+  </g>
+  <g stroke="#333333" stroke-width="3" stroke-linecap="round">
+    <path d="M130 284 V290 M130 326 V332 M108 308 H114 M146 308 H152"/>
+    <path d="M130 220 V226 M130 262 V268 M108 244 H114 M146 244 H152"/>
+    <path d="M130 156 V162 M130 198 V204 M108 180 H114 M146 180 H152"/>
+    <path d="M130 92 V98 M130 134 V140 M108 116 H114 M146 116 H152"/>
+  </g>
+  <g fill="#cfd8dc" stroke="#333333" stroke-width="3" stroke-linejoin="round">
+    <path d="M282 316 Q276 316 276 308 Q276 300 286 300 Q288 290 300 290 Q312 290 314 300 Q324 300 324 308 Q324 316 316 316 Z"/>
+    <path d="M282 252 Q276 252 276 244 Q276 236 286 236 Q288 226 300 226 Q312 226 314 236 Q324 236 324 244 Q324 252 316 252 Z"/>
+  </g>
+  <path d="M470 288 Q484 308 484 316 Q484 328 470 328 Q456 328 456 316 Q456 308 470 288 Z" fill="#81d4fa" stroke="#333333" stroke-width="3" stroke-linejoin="round"/>
+</svg>
