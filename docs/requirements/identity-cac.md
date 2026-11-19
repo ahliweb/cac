@@ -29,6 +29,7 @@
 - Keputusan: ADR-0009.
 - Rencana: docs/migrations/2026-11-osn-to-cac.md.
 - Matriks dampak: docs/migrations/2026-11-cac-impact-matrix.md.
+- Invariants dan baseline data (IDENTITY-CAC-002, 005, 009): [2026-11-cac-invariants.md](../migrations/2026-11-cac-invariants.md) (#154).
 - Eksekusi: issue per area setelah Definition of Ready (Gate 9), setiap PR menutup issue atomik.
 - Validasi: tests/**, CI, checklist Go/No-Go, migration log post-rename.
 
