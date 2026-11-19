@@ -5110,6 +5110,167 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xii1-m14.md"
+    },
+    {
+      "id": "d-xii2-m1",
+      "title": "Perencanaan proyek akhir",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025 (Proses Rekayasa)",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "scikit-learn: Cross-validation, evaluating estimator performance",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m1.md"
+    },
+    {
+      "id": "d-xii2-m2",
+      "title": "Rancangan (kelas XII semester 2)",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python: hashlib, secure hashes and message digests",
+          "url": "https://docs.python.org/3/library/hashlib.html"
+        },
+        {
+          "title": "scikit-learn: Cross-validation, evaluating estimator performance",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m2.md"
+    },
+    {
+      "id": "d-xii2-m3",
+      "title": "Sprint 1: data",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Common pitfalls and recommended practices",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "pandas: DataFrame.duplicated",
+          "url": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.duplicated.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m3.md"
+    },
+    {
+      "id": "d-xii2-m4",
+      "title": "Sprint 1: garis dasar",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: DummyClassifier",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.dummy.DummyClassifier.html"
+        },
+        {
+          "title": "scikit-learn: precision_recall_fscore_support",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_recall_fscore_support.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m4.md"
+    },
+    {
+      "id": "d-xii2-m5",
+      "title": "Sprint 2: model",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: cross_validate",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html"
+        },
+        {
+          "title": "scikit-learn: RandomForestClassifier",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m5.md"
+    },
+    {
+      "id": "d-xii2-m6",
+      "title": "Sprint 2: evaluasi",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: cross_val_predict",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_val_predict.html"
+        },
+        {
+          "title": "scikit-learn: confusion_matrix",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m6.md"
+    },
+    {
+      "id": "d-xii2-m7",
+      "title": "Sprint 3: penyempurnaan",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Tuning the decision threshold for class prediction",
+          "url": "https://scikit-learn.org/stable/modules/classification_threshold.html"
+        },
+        {
+          "title": "scikit-learn: Common pitfalls and recommended practices",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m7.md"
     }
   ]
 }
