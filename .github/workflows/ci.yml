@@ -50,8 +50,14 @@ jobs:
       - name: Validate curriculum data
         run: bun run validate
 
+      - name: Ensure python3 is available
+        run: python3 --version
+
       - name: Check module code examples
         run: bun run check:module-code
+
+      - name: Check learner assets
+        run: bun run check:learner-assets
 
       - name: Privacy check
         run: bun run privacy-check
