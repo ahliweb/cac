@@ -1406,6 +1406,211 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-x2-m7.md"
+    },
+    {
+      "id": "c-x2-m8",
+      "title": "Menampilkan data (F)",
+      "cpItems": [],
+      "weekCodes": ["C-X2-M8"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: Serial.print()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/communication/serial/print/"
+        },
+        {
+          "title": "Arduino: Serial.println()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/communication/serial/println/"
+        },
+        {
+          "title": "Arduino: millis()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/millis/"
+        },
+        {
+          "title": "Arduino IDE 2: Serial Plotter",
+          "url": "https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-serial-plotter/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x2-m8.md"
+    },
+    {
+      "id": "c-x2-m9",
+      "title": "Struktur data: tumpukan dan antrian sebagai penyangga",
+      "cpItems": ["E-BK-a", "E-BK-c"],
+      "weekCodes": ["C-X2-M9"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x2-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: Array",
+          "url": "https://docs.arduino.cc/language-reference/en/variables/data-types/array/"
+        },
+        {
+          "title": "cppreference: std::queue",
+          "url": "https://en.cppreference.com/w/cpp/container/queue"
+        },
+        {
+          "title": "cppreference: std::stack",
+          "url": "https://en.cppreference.com/w/cpp/container/stack"
+        },
+        {
+          "title": "Arduino: millis()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/millis/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x2-m9.md"
+    },
+    {
+      "id": "c-x2-m10",
+      "title": "Pencarian dan pengurutan data sensor",
+      "cpItems": ["E-BK-a", "E-BK-c"],
+      "weekCodes": ["C-X2-M10"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x2-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::sort",
+          "url": "https://en.cppreference.com/w/cpp/algorithm/sort"
+        },
+        {
+          "title": "Arduino: Array",
+          "url": "https://docs.arduino.cc/language-reference/en/variables/data-types/array/"
+        },
+        {
+          "title": "Arduino: millis()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/millis/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x2-m10.md"
+    },
+    {
+      "id": "c-x2-m11",
+      "title": "Sensor jarak dan keputusan (F)",
+      "cpItems": [],
+      "weekCodes": ["C-X2-M11"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x2-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "NASA Glenn: Speed of Sound",
+          "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/speed-of-sound-interactive/"
+        },
+        {
+          "title": "Arduino: pulseIn()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/advanced-io/pulseIn/"
+        },
+        {
+          "title": "Arduino: millis()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/millis/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x2-m11.md"
+    },
+    {
+      "id": "c-x2-m12",
+      "title": "Mencatat data",
+      "cpItems": ["E-BK-b"],
+      "weekCodes": ["C-X2-M12"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x2-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: Serial.print()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/communication/serial/print/"
+        },
+        {
+          "title": "Arduino: Serial.println()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/communication/serial/println/"
+        },
+        {
+          "title": "Python: modul csv",
+          "url": "https://docs.python.org/3/library/csv.html"
+        },
+        {
+          "title": "Arduino: millis()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/millis/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x2-m12.md"
+    },
+    {
+      "id": "c-x2-m13",
+      "title": "Proyek mini: stasiun pengamat (F)",
+      "cpItems": ["E-BK-c"],
+      "weekCodes": ["C-X2-M13"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: analogRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/"
+        },
+        {
+          "title": "Arduino: Serial.print()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/communication/serial/print/"
+        },
+        {
+          "title": "Arduino: Serial.println()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/communication/serial/println/"
+        },
+        {
+          "title": "Arduino-ESP32 (Espressif)",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x2-m13.md"
+    },
+    {
+      "id": "c-x2-m14",
+      "title": "Asesmen dan refleksi (kelas X semester 2)",
+      "cpItems": [],
+      "weekCodes": ["C-X2-M14"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: analogRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/"
+        },
+        {
+          "title": "Arduino: millis()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/millis/"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x2-m14.md"
     }
   ]
 }
