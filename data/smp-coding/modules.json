@@ -1575,6 +1575,148 @@
         }
       ],
       "contentPath": "content/smp-coding/modules/smp9-1-m14.md"
+    },
+    {
+      "id": "smp9-2-m1",
+      "title": "Mengidentifikasi persoalan masyarakat sekitar",
+      "weekCodes": ["SMP9-2-M1"],
+      "cpCodes": ["DK-BK-b"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["SMP9-1-M12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-2-m1.md"
+    },
+    {
+      "id": "smp9-2-m2",
+      "title": "Merancang solusi",
+      "weekCodes": ["SMP9-2-M2"],
+      "cpCodes": ["DK-BK-b", "D-BK-a"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["SMP9-2-M1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-2-m2.md"
+    },
+    {
+      "id": "smp9-2-m3",
+      "title": "Implementasi, tahap 1",
+      "weekCodes": ["SMP9-2-M3"],
+      "cpCodes": ["DK-BK-b", "D-BK-e", "DK-BK-c"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["SMP9-2-M2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3 Tutorial: Defining Functions (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-2-m3.md"
+    },
+    {
+      "id": "smp9-2-m4",
+      "title": "Implementasi, tahap 2",
+      "weekCodes": ["SMP9-2-M4"],
+      "cpCodes": ["DK-BK-b"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["SMP9-2-M3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3: Tipe bawaan, dict.get dan metode str (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/library/stdtypes.html"
+        },
+        {
+          "title": "Python 3: Fungsi bawaan input dan len (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/library/functions.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-2-m4.md"
+    },
+    {
+      "id": "smp9-2-m5",
+      "title": "Pengujian dengan pengguna",
+      "weekCodes": ["SMP9-2-M5"],
+      "cpCodes": ["DK-BK-b"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["SMP9-2-M4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-2-m5.md"
+    },
+    {
+      "id": "smp9-2-m6",
+      "title": "Penyempurnaan",
+      "weekCodes": ["SMP9-2-M6"],
+      "cpCodes": ["DK-BK-b"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["SMP9-2-M5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3: Tipe bawaan, dict.get dan metode str (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/library/stdtypes.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-2-m6.md"
+    },
+    {
+      "id": "smp9-2-m7",
+      "title": "Laporan dan presentasi",
+      "weekCodes": ["SMP9-2-M7"],
+      "cpCodes": ["DK-LD-a", "D-LD-i", "D-LD-e"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["SMP9-2-M6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-2-m7.md"
     }
   ]
 }
