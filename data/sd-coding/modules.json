@@ -432,6 +432,153 @@
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd5-2-m7.md",
       "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m7.md"
+    },
+    {
+      "id": "sd5-2-m8",
+      "title": "Pengaruh Data Input terhadap Hasil Mengenali Pola dan Klasifikasi KA",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        }
+      ],
+      "weekCodes": ["SD5-2-M8"],
+      "cpItems": ["C-PP-c"],
+      "gradeLevels": [5],
+      "prerequisites": ["SD5-2-M7"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd5-2-m8.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m8.md"
+    },
+    {
+      "id": "sd5-2-m9",
+      "title": "Penguatan: Survei mesin di rumah",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        }
+      ],
+      "weekCodes": ["SD5-2-M9"],
+      "cpItems": [],
+      "gradeLevels": [5],
+      "prerequisites": ["SD5-2-M3"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd5-2-m9.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m9.md"
+    },
+    {
+      "id": "sd5-2-m10",
+      "title": "Penguatan: Pengklasifikasi kartu",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        }
+      ],
+      "weekCodes": ["SD5-2-M10"],
+      "cpItems": [],
+      "gradeLevels": [5],
+      "prerequisites": ["SD5-2-M5", "SD5-2-M6"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd5-2-m10.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m10.md"
+    },
+    {
+      "id": "sd5-2-m11",
+      "title": "Penguatan: Instruksi untuk mesin yang belajar",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        }
+      ],
+      "weekCodes": ["SD5-2-M11"],
+      "cpItems": [],
+      "gradeLevels": [5],
+      "prerequisites": ["SD5-1-M6", "SD5-2-M7"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd5-2-m11.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m11.md"
+    },
+    {
+      "id": "sd5-2-m12",
+      "title": "Penguatan: KA untuk kesejahteraan",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        }
+      ],
+      "weekCodes": ["SD5-2-M12"],
+      "cpItems": [],
+      "gradeLevels": [5],
+      "prerequisites": ["SD5-2-M4"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd5-2-m12.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m12.md"
+    },
+    {
+      "id": "sd5-2-m13",
+      "title": "Proyek mini: pameran \"mesin kotak\"",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        }
+      ],
+      "weekCodes": ["SD5-2-M13"],
+      "cpItems": [],
+      "gradeLevels": [5],
+      "prerequisites": ["SD5-2-M6", "SD5-2-M7", "SD5-2-M8"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd5-2-m13.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m13.md"
+    },
+    {
+      "id": "sd5-2-m14",
+      "title": "Asesmen dan refleksi",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        }
+      ],
+      "weekCodes": ["SD5-2-M14"],
+      "cpItems": [],
+      "gradeLevels": [5],
+      "prerequisites": [
+        "SD5-2-M1",
+        "SD5-2-M2",
+        "SD5-2-M3",
+        "SD5-2-M4",
+        "SD5-2-M5",
+        "SD5-2-M6",
+        "SD5-2-M7",
+        "SD5-2-M8",
+        "SD5-2-M9",
+        "SD5-2-M10",
+        "SD5-2-M11",
+        "SD5-2-M12",
+        "SD5-2-M13"
+      ],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd5-2-m14.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m14.md"
     }
   ]
 }

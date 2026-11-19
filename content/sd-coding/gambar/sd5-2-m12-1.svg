@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 230" width="560" height="230" role="img" aria-labelledby="t d">
+  <title id="t">Tabel kasus Baca-Suara</title>
+  <desc id="d">Tabel dua kolom dengan tiga baris untuk kasus fiktif Baca-Suara. Yang terbantu: teman yang sulit melihat huruf kecil. Yang bisa salah: nama atau istilah sulit. Yang memeriksa: manusia.</desc>
+  <rect width="560" height="230" fill="#ffffff"/>
+  <rect x="10" y="10" width="540" height="40" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+  <text x="280" y="36" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222" text-anchor="middle">Kasus fiktif: Baca-Suara</text>
+  <g stroke="#2a5d9f" stroke-width="2" fill="#f4f8fd">
+    <rect x="10" y="50" width="170" height="52"/>
+    <rect x="10" y="102" width="170" height="52"/>
+    <rect x="10" y="154" width="170" height="52"/>
+  </g>
+  <g stroke="#444444" stroke-width="2" fill="#ffffff">
+    <rect x="180" y="50" width="370" height="52"/>
+    <rect x="180" y="102" width="370" height="52"/>
+    <rect x="180" y="154" width="370" height="52"/>
+  </g>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <text x="95" y="82" font-weight="bold" text-anchor="middle">Yang terbantu</text>
+    <text x="95" y="134" font-weight="bold" text-anchor="middle">Yang bisa salah</text>
+    <text x="95" y="186" font-weight="bold" text-anchor="middle">Yang memeriksa</text>
+    <text x="365" y="82" text-anchor="middle">teman yang sulit melihat huruf kecil</text>
+    <text x="365" y="134" text-anchor="middle">nama atau istilah sulit</text>
+    <text x="365" y="186" text-anchor="middle">manusia</text>
+  </g>
+</svg>
