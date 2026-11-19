@@ -7,6 +7,7 @@
 import { describe, expect, test } from "bun:test";
 import {
   extractImageLinks,
+  leadingTitleLine,
   MAX_SVG_BYTES,
   scanXml,
   svgProblems,
@@ -14,6 +15,22 @@ import {
 
 const svg = (inner: string, attributes = 'viewBox="0 0 10 10"') =>
   `<svg xmlns="http://www.w3.org/2000/svg" ${attributes}>${inner}</svg>`;
+
+describe("leadingTitleLine", () => {
+  test("finds a leading H1, after blank lines and after front matter", () => {
+    expect(leadingTitleLine("# Judul\n\nIsi")).toBe(1);
+    expect(leadingTitleLine("\n\n# Judul\n")).toBe(3);
+    expect(leadingTitleLine("---\nkey: v\n---\n\n# Judul\n")).toBe(5);
+  });
+
+  test("ignores a body without a leading H1", () => {
+    expect(leadingTitleLine("")).toBeUndefined();
+    expect(leadingTitleLine("Isi\n\n# Nanti\n")).toBeUndefined();
+    expect(leadingTitleLine("## Bagian\n")).toBeUndefined();
+    expect(leadingTitleLine("#hashtag\n")).toBeUndefined();
+    expect(leadingTitleLine("```text\n# bukan judul\n```\n")).toBeUndefined();
+  });
+});
 
 describe("scanXml", () => {
   test("accepts a well-formed document with prolog, comment, CDATA and entities", () => {

@@ -88,19 +88,26 @@ const isLanguage = (word: string): word is Language =>
  * Extracts every fenced block of `markdown` whose language is cpp, arduino or
  * python (case-insensitive); other fenced blocks are skipped. The opening
  * fence may carry further info-string words (e.g. {@link INCOMPLETE_MARKER});
- * a closing fence is a bare ```.
+ * a closing fence is a bare ```. A fence indented inside a list item has its
+ * indentation removed from every content line (CommonMark), so the code is
+ * checked as the reader sees it.
  */
 export function extractBlocks(markdown: string): CodeBlock[] {
   const blocks: CodeBlock[] = [];
   const lines = markdown.split("\n");
-  let open: { info: string[]; startLine: number; body: string[] } | undefined;
+  let open: { info: string[]; startLine: number; body: string[]; indent: number } | undefined;
 
   lines.forEach((line, index) => {
     const fence = /^\s*```(.*)$/.exec(line);
     const info = fence === null ? [] : (fence[1] ?? "").trim().split(/\s+/).filter(Boolean);
     if (open === undefined) {
       if (fence !== null) {
-        open = { info, startLine: index + 2, body: [] };
+        open = {
+          info,
+          startLine: index + 2,
+          body: [],
+          indent: (/^ */.exec(line) as RegExpExecArray)[0].length,
+        };
       }
       return;
     }
@@ -117,7 +124,11 @@ export function extractBlocks(markdown: string): CodeBlock[] {
       open = undefined;
       return;
     }
-    open.body.push(line);
+    // CommonMark: the opening fence's indentation is removed from each
+    // content line (at most that many spaces), so a block indented inside a
+    // list item reaches the checker with its own code at column zero.
+    const strip = Math.min(open.indent, (/^ */.exec(line) as RegExpExecArray)[0].length);
+    open.body.push(line.slice(strip));
   });
 
   return blocks;

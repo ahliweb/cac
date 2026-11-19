@@ -92,6 +92,56 @@ describe("pythonSyntaxCheck (real python3)", () => {
   );
 });
 
+describe("indented fenced blocks inside list items (real checkers)", () => {
+  let root: string;
+  beforeEach(async () => {
+    root = await mkdtemp(join(tmpdir(), "osn-check-module-code-indent-"));
+    await mkdir(join(root, "content", "osn", "modules"), { recursive: true });
+  });
+  afterEach(async () => {
+    await rm(root, { recursive: true, force: true });
+  });
+
+  test(
+    "an indented python and cpp block are dedented and pass; a real error in one still fails",
+    async () => {
+      await writeFile(
+        join(root, "content", "osn", "modules", "menjorok.md"),
+        [
+          "1. Python:",
+          "",
+          "   ```python",
+          "   def f(x):",
+          "       return x + 1",
+          "   ```",
+          "",
+          "2. C++:",
+          "",
+          "   ```cpp",
+          "   int main() {",
+          "       return 0;",
+          "   }",
+          "   ```",
+          "",
+        ].join("\n"),
+      );
+      const ok = await checkModuleCode(root);
+      expect(ok.failures).toEqual([]);
+      expect(ok.blocksChecked).toMatchObject({ python: 1, cpp: 1 });
+
+      await writeFile(
+        join(root, "content", "osn", "modules", "salah.md"),
+        "- butir\n\n  ```python\n  def f(:\n      pass\n  ```\n",
+      );
+      const bad = await checkModuleCode(root);
+      expect(bad.failures).toHaveLength(1);
+      expect(bad.failures[0]).toContain("salah.md");
+      expect(bad.failures[0]).toContain("SyntaxError");
+    },
+    GPP_TIMEOUT_MS,
+  );
+});
+
 describe("checkModuleCode and run (real g++)", () => {
   let root: string;
   const lines: string[] = [];

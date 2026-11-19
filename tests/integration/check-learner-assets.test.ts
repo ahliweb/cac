@@ -9,7 +9,12 @@ import { afterEach, beforeEach, describe, expect, test } from "bun:test";
 import { mkdir, mkdtemp, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import { checkLearnerAssets, MAX_SVG_BYTES, run } from "../../scripts/check-learner-assets";
+import {
+  checkLearnerAssets,
+  DUPLICATE_TITLE_IS_ERROR,
+  MAX_SVG_BYTES,
+  run,
+} from "../../scripts/check-learner-assets";
 
 const GOOD_SVG =
   '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><circle r="4"/></svg>';
@@ -35,6 +40,7 @@ describe("checkLearnerAssets and run", () => {
   test("an empty tree is clean", async () => {
     await rm(join(root, "content"), { recursive: true });
     expect(await checkLearnerAssets(root)).toEqual({
+      duplicateTitles: 0,
       svgChecked: 0,
       sheetsChecked: 0,
       linksChecked: 0,
@@ -49,7 +55,7 @@ describe("checkLearnerAssets and run", () => {
 
   test("a referenced clean SVG passes with exit 0", async () => {
     await write("content/tk-sintetis/gambar/bola.svg", GOOD_SVG);
-    await write("content/tk-sintetis/lembar/satu.md", "# Satu\n\n![bola](../gambar/bola.svg)\n");
+    await write("content/tk-sintetis/lembar/satu.md", "Satu\n\n![bola](../gambar/bola.svg)\n");
     const result = await checkLearnerAssets(root);
     expect(result).toMatchObject({
       svgChecked: 1,
@@ -70,6 +76,21 @@ describe("checkLearnerAssets and run", () => {
     ]);
     expect(await run(root, out)).toBe(0);
     expect(lines.join("\n")).toContain("WARNING -- content/tk-sintetis/gambar/yatim.svg");
+  });
+
+  test("a module body or sheet that starts with its own '# ' title is a warning, not a failure", async () => {
+    await write("content/tk-sintetis/modules/dua.md", "\n# Dua\n\nIsi.\n");
+    await write("content/tk-sintetis/lembar/tiga.md", "# Tiga\n\nIsi.\n");
+    await write("content/tk-sintetis/lembar/empat.md", "Isi tanpa judul.\n\n# Bagian\n");
+    const result = await checkLearnerAssets(root);
+    expect(DUPLICATE_TITLE_IS_ERROR).toBe(false);
+    expect(result.errors).toEqual([]);
+    expect(result.duplicateTitles).toBe(2);
+    expect(result.warnings).toHaveLength(2);
+    expect(result.warnings.join("\n")).toContain("content/tk-sintetis/modules/dua.md:2:");
+    expect(result.warnings.join("\n")).toContain("content/tk-sintetis/lembar/tiga.md:1:");
+    expect(await run(root, out)).toBe(0);
+    expect(lines.join("\n")).toContain("2 warning(s)");
   });
 
   test("a bad SVG fails with the file name and the rule", async () => {

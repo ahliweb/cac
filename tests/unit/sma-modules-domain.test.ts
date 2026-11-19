@@ -24,6 +24,7 @@ const REFERENCE = {
 };
 
 function entry(overrides: Record<string, unknown> = {}): Record<string, unknown> {
+  const id = (overrides.id as string | undefined) ?? "contoh";
   return {
     id: "contoh",
     title: "Contoh",
@@ -36,7 +37,7 @@ function entry(overrides: Record<string, unknown> = {}): Record<string, unknown>
     language: "id",
     status: "draf",
     references: [REFERENCE],
-    contentPath: "content/sma-coding/modules/contoh.md",
+    contentPath: `content/sma-coding/modules/${id}.md`,
     ...overrides,
   };
 }
@@ -132,6 +133,45 @@ describe("moduleFindings for sma-coding", () => {
     ]);
     expect(findings[1]?.message).toContain("weeks.json");
     expect(findings[2]?.message).toContain("foundation.json");
+  });
+
+  test("enrichment tracks D and E: a module claiming a CP item is a finding, by id prefix or by week code", () => {
+    const byId = run(
+      sourceWith(
+        index(entry({ id: "d-x1-m8", weekCodes: [] }), entry({ id: "e-xi1-m1", weekCodes: [] })),
+      ),
+    );
+    expect(paths(byId)).toEqual(["modules[0].cpItems", "modules[1].cpItems"]);
+    expect(byId[0]?.message).toContain("enrichment track");
+
+    const byWeek = run(
+      sourceWith(index(entry({ id: "seri-ai", weekCodes: ["D-X1-M8"], bridgeFamilies: [] }))),
+    );
+    expect(paths(byWeek)).toEqual(["modules[0].cpItems"]);
+  });
+
+  test("enrichment tracks D and E: empty cpItems is clean; track A/C modules may keep cpItems", () => {
+    expect(
+      run(
+        sourceWith(
+          index(
+            entry({ id: "d-x1-m8", cpItems: [], weekCodes: ["D-X1-M8"], bridgeFamilies: [] }),
+            entry({ id: "e-xi1-m1", cpItems: [], weekCodes: [], bridgeFamilies: [] }),
+            entry({ id: "c-x1-m8", weekCodes: ["C-X1-M8"], bridgeFamilies: [] }),
+            entry({ id: "dasar-d", weekCodes: ["A-X1-M8"], bridgeFamilies: [] }),
+          ),
+        ),
+      ),
+    ).toEqual([]);
+  });
+
+  test("the rule works without tracks.json (fallback D and E) and follows tracks.json cpStatus when present", () => {
+    const noTracks = run(
+      sourceWith(index(entry({ id: "seri-ai", weekCodes: ["D-X1-M8"], bridgeFamilies: [] })), [
+        "tracks.json",
+      ]),
+    );
+    expect(paths(noTracks)).toEqual(["modules[0].cpItems"]);
   });
 
   test("the week check is not skipped for sma-coding (regression: it was parsed with the OSN schema)", () => {

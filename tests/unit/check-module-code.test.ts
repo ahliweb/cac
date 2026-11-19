@@ -22,6 +22,35 @@ import {
 const VALID = "int main() { return 0; }";
 const INVALID = "int main() { return undeclared_name; }";
 
+describe("extractBlocks (fence indented inside a list item, CommonMark)", () => {
+  test("removes the fence indentation from every content line, keeping deeper indentation", () => {
+    const markdown = [
+      "1. Langkah:",
+      "",
+      "   ```python",
+      "   def f(x):",
+      "       return x",
+      "",
+      "   print(f(1))",
+      "   ```",
+      "",
+    ].join("\n");
+    const [block] = extractBlocks(markdown);
+    expect(block?.language).toBe("python");
+    expect(block?.code).toBe("def f(x):\n    return x\n\nprint(f(1))\n");
+  });
+
+  test("strips at most the fence indentation (lines indented less keep what they have)", () => {
+    const markdown = ["- butir", "   ```cpp", "  int a;", "      int b;", "   ```"].join("\n");
+    expect(extractBlocks(markdown)[0]?.code).toBe("int a;\n   int b;\n");
+  });
+
+  test("an unindented fence is unchanged", () => {
+    const markdown = "```python\n    x = 1\n```\n";
+    expect(extractBlocks(markdown)[0]?.code).toBe("    x = 1\n");
+  });
+});
+
 describe("extractCppBlocks", () => {
   test("extracts only cpp blocks, with the line each starts on", () => {
     const markdown = [

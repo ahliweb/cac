@@ -13,6 +13,12 @@
  * families, every prerequisite is a module of the index or an existing
  * foundation week code, and the prerequisite graph has no cycle.
  *
+ * Enrichment tracks (D and E: `cpStatus` `pengayaan` in `tracks.json`) are
+ * outside the CP formulation, so a module of such a track claims no CP item
+ * (`docs/programs/sma-coding/rancangan-modul-cde.md` bagian 1): its `cpItems`
+ * must be empty. A module is of an enrichment track when its id starts with
+ * `d-` or `e-`, or when a week code it names belongs to a `pengayaan` track.
+ *
  * A reference file that a used field needs but that is missing or invalid is
  * itself a finding, never a silent skip: a check that cannot run must not
  * look like a check that passed.
@@ -22,6 +28,7 @@ import { MODULES_FILE_NAME } from "../schema/module";
 import { cpElementsFileSchema } from "../schema/sma-cp";
 import { smaFoundationFileSchema } from "../schema/sma-foundation";
 import { type SmaModulesFile, smaModulesFileSchema } from "../schema/sma-module";
+import { smaTracksFileSchema } from "../schema/sma-track";
 import { smaWeeksFileSchema } from "../schema/sma-week";
 import type { CorpusFinding, CorpusSource } from "./corpus-audit";
 
@@ -66,6 +73,20 @@ function parsedFile<T>(
   return result.success ? result.data : undefined;
 }
 
+/** Track ids that `rancangan-modul-cde.md` fixes as enrichment, used when `tracks.json` is unavailable. */
+const DEFAULT_ENRICHMENT_TRACKS: ReadonlySet<string> = new Set(["D", "E"]);
+
+/** Whether `module` belongs to an enrichment track (id prefix `d-`/`e-`, or a week code of such a track). */
+function isEnrichmentModule(
+  module: { readonly id: string; readonly weekCodes: readonly string[] },
+  enrichmentTracks: ReadonlySet<string>,
+): boolean {
+  return (
+    /^[de]-/.test(module.id) ||
+    module.weekCodes.some((code) => enrichmentTracks.has(code.split("-")[0] ?? ""))
+  );
+}
+
 /** Whether `target` is reachable from `start` along prerequisite edges (a node reaches itself only via a path of length >= 1 when `start === target`). */
 function reaches(
   edges: ReadonlyMap<string, readonly string[]>,
@@ -104,6 +125,13 @@ export function smaModuleFindings(
   const cpElements = parsedFile(source, "cp-elements.json", cpElementsFileSchema);
   const weeks = parsedFile(source, "weeks.json", smaWeeksFileSchema);
   const foundation = parsedFile(source, "foundation.json", smaFoundationFileSchema);
+  const tracks = parsedFile(source, "tracks.json", smaTracksFileSchema);
+  const enrichmentTracks =
+    tracks === undefined
+      ? DEFAULT_ENRICHMENT_TRACKS
+      : new Set(
+          tracks.tracks.filter((track) => track.cpStatus === "pengayaan").map((track) => track.id),
+        );
   const cpCodes = cpElements && new Set(cpElements.items.map((item) => item.code));
   const trackWeekCodes = weeks && new Set(weeks.weeks.map((week) => week.id));
   const foundationWeekCodes = foundation && new Set(foundation.weeks.map((week) => week.id));
@@ -153,6 +181,15 @@ export function smaModuleFindings(
 
   modules.modules.forEach((module, index) => {
     const at = (field: string, i: number) => `modules[${index}].${field}[${i}]`;
+
+    if (module.cpItems.length > 0 && isEnrichmentModule(module, enrichmentTracks)) {
+      findings.push(
+        error(
+          `modules[${index}].cpItems`,
+          `module "${module.id}" is of an enrichment track (D or E, outside the CP formulation) and must have empty cpItems`,
+        ),
+      );
+    }
 
     if (cpCodes !== undefined) {
       module.cpItems.forEach((code, i) => {
