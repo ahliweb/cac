@@ -1,12 +1,12 @@
 ## Untuk siapa modul ini
 
-Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M2` silabus v1.4: entanglement (keterjeratan) dan keadaan Bell. Prasyarat: modul `e-xi2-m1` (CNOT). Alat: kertas, kalkulator, dan Quirk (peramban, tanpa akun). Contoh Python 3 murni bersifat opsional (tanpa pustaka tambahan dan tanpa akun); hitungan dikerjakan dengan tangan lebih dulu.
+Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M2` silabus v1.4: entanglement (keterjeratan) dan keadaan Bell. Prasyarat: modul `e-xi2-m1` (CNOT). Alat: kertas, kalkulator, dan Quirk (peramban, tanpa akun). Contoh C++17 bersifat opsional (pustaka standar saja dan tanpa akun; murid jalur B boleh menerjemahkannya ke TypeScript); hitungan dikerjakan dengan tangan lebih dulu.
 
 Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur E adalah pengayaan di luar rumusan capaian pembelajaran (CP); minggu ini tidak punya irisan pengayaan, jadi modul ini tidak dihitung memenuhi butir CP mana pun.
 
 Aturan AI jalur ini: AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu, dan tanpa akun wajib. Saran: jawab dulu sendiri, baru minta penjelasan atau petunjuk bertahap. Setiap soal `Latihan` bertanda `AI: boleh` atau `AI: tanpa AI`.
 
-Catatan untuk guru: empat keadaan Bell, fakta bahwa tak satu pun berupa produk, dan rangkaian H lalu CNOT yang membuatnya dibaca penyusun dari halaman IBM Quantum Learning "Quantum information" (multiple systems) dan "Quantum circuits", per 2026-11-19; halaman itu menulis keadaan Bell dengan huruf Yunani, modul ini dengan `Phi` dan `Psi`. Uji `a*d = b*c` untuk amplitudo real adalah pengembangan dari `e-xi1-m12`, bukan kutipan. Di Quirk, kabel bawah adalah qubit pertama; arah garis pada lingkaran amplitudo menunjukkan tanda (kanan positif, kiri negatif untuk amplitudo real). Angka dihitung ulang dengan Python 3.12.
+Catatan untuk guru: empat keadaan Bell, fakta bahwa tak satu pun berupa produk, dan rangkaian H lalu CNOT yang membuatnya dibaca penyusun dari halaman IBM Quantum Learning "Quantum information" (multiple systems) dan "Quantum circuits", per 2026-11-19; halaman itu menulis keadaan Bell dengan huruf Yunani, modul ini dengan `Phi` dan `Psi`. Uji `a*d = b*c` untuk amplitudo real adalah pengembangan dari `e-xi1-m12`, bukan kutipan. Di Quirk, kabel bawah adalah qubit pertama; arah garis pada lingkaran amplitudo menunjukkan tanda (kanan positif, kiri negatif untuk amplitudo real). Angka dihitung ulang dengan program C++ di modul ini.
 
 ## Ingat kembali
 
@@ -44,64 +44,80 @@ Mulai dari `|00>`. Pasang H pada qubit pertama, lalu CNOT dengan qubit pertama s
 
 Keempatnya terjerat dan saling tegak lurus: bila komponen yang sesuai dikalikan lalu dijumlahkan (hasil kali dalam), tiap pasangan berbeda memberi 0. `Phi+` dan `Phi-` memberi peluang sama (0,5 untuk `00` dan `11`) tetapi berbeda tanda pada komponen `11`: beda fase relatif, yang baru terlihat bila ada gerbang lanjutan (`E-XI2-M5`).
 
-```python
-from math import sqrt
+```cpp
+#include <cmath>
+#include <cstdio>
+#include <string>
+#include <vector>
 
-h = 1 / sqrt(2)
+using Vektor = std::vector<double>;
+using Matriks = std::vector<Vektor>;
 
+const double h = 1.0 / std::sqrt(2.0);
 
-def kali(matriks, vektor):
-    return [sum(m * v for m, v in zip(baris, vektor)) for baris in matriks]
-
-
-def tulis(v):
-    return "(" + ", ".join(f"{x:.4f}" for x in v) + ")"
-
-
-CNOT = [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 0, 1], [0, 0, 1, 0]]
-# H pada qubit pertama, qubit kedua dibiarkan (matriks H tensor I).
-H_PERTAMA = [
-    [h, 0, h, 0],
-    [0, h, 0, h],
-    [h, 0, -h, 0],
-    [0, h, 0, -h],
-]
-
-
-def bisa_difaktorkan(v):
-    """Untuk amplitudo real (a, b, c, d): produk dua qubit bila a*d = b*c."""
-    return abs(v[0] * v[3] - v[1] * v[2]) < 1e-9
-
-
-dasar = {
-    "00": [1, 0, 0, 0],
-    "01": [0, 1, 0, 0],
-    "10": [0, 0, 1, 0],
-    "11": [0, 0, 0, 1],
+Vektor kali(const Matriks& matriks, const Vektor& vektor) {
+    Vektor hasil;
+    for (const Vektor& baris : matriks) {
+        double jumlah = 0.0;
+        for (size_t j = 0; j < vektor.size(); j++) jumlah += baris[j] * vektor[j];
+        hasil.push_back(jumlah);
+    }
+    return hasil;
 }
 
-bell = {}
-for nama, v in dasar.items():
-    hasil = kali(CNOT, kali(H_PERTAMA, v))
-    bell[nama] = hasil
-    jawab = "ya" if bisa_difaktorkan(hasil) else "tidak"
-    print("|" + nama + ">  ->", tulis(hasil), " dapat difaktorkan:", jawab)
+std::string tulis(const Vektor& v) {
+    std::string s = "(";
+    for (size_t i = 0; i < v.size(); i++) {
+        char buf[32];
+        std::snprintf(buf, sizeof buf, "%.4f", v[i] + 0.0);
+        if (i > 0) s += ", ";
+        s += buf;
+    }
+    return s + ")";
+}
 
-# Perbandingan: H pada kedua qubit dari |00> memberi (h, h) kali (h, h), sebuah produk.
-produk = [0.5, 0.5, 0.5, 0.5]
-print("produk", tulis(produk), " dapat difaktorkan:", "ya" if bisa_difaktorkan(produk) else "tidak")
+// Untuk amplitudo real (a, b, c, d): produk dua qubit bila a*d = b*c.
+bool bisa_difaktorkan(const Vektor& v) { return std::fabs(v[0] * v[3] - v[1] * v[2]) < 1e-9; }
 
-# Empat keadaan Bell saling tegak lurus: hasil kali dalam 0 antar pasangan berbeda.
-nama_bell = list(bell)
-terbesar = 0.0
-for i in range(4):
-    for j in range(i + 1, 4):
-        dalam = sum(x * y for x, y in zip(bell[nama_bell[i]], bell[nama_bell[j]]))
-        terbesar = max(terbesar, abs(dalam))
-print("hasil kali dalam terbesar antar pasangan berbeda:", f"{terbesar:.4f}")
+int main() {
+    const Matriks CNOT = {{1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 0, 1}, {0, 0, 1, 0}};
+    // H pada qubit pertama, qubit kedua dibiarkan (matriks H tensor I).
+    const Matriks H_PERTAMA = {
+        {h, 0, h, 0},
+        {0, h, 0, h},
+        {h, 0, -h, 0},
+        {0, h, 0, -h},
+    };
+    const char* nama[4] = {"00", "01", "10", "11"};
+
+    Vektor bell[4];
+    for (int i = 0; i < 4; i++) {
+        Vektor dasar(4, 0.0);
+        dasar[i] = 1.0;
+        bell[i] = kali(CNOT, kali(H_PERTAMA, dasar));
+        std::printf("|%s>  -> %s  dapat difaktorkan: %s\n", nama[i], tulis(bell[i]).c_str(),
+                    bisa_difaktorkan(bell[i]) ? "ya" : "tidak");
+    }
+
+    // Perbandingan: H pada kedua qubit dari |00> memberi (h, h) kali (h, h), sebuah produk.
+    Vektor produk = {0.5, 0.5, 0.5, 0.5};
+    std::printf("produk %s  dapat difaktorkan: %s\n", tulis(produk).c_str(),
+                bisa_difaktorkan(produk) ? "ya" : "tidak");
+
+    // Empat keadaan Bell saling tegak lurus: hasil kali dalam 0 antar pasangan berbeda.
+    double terbesar = 0.0;
+    for (int i = 0; i < 4; i++)
+        for (int j = i + 1; j < 4; j++) {
+            double dalam = 0.0;
+            for (int k = 0; k < 4; k++) dalam += bell[i][k] * bell[j][k];
+            if (std::fabs(dalam) > terbesar) terbesar = std::fabs(dalam);
+        }
+    std::printf("hasil kali dalam terbesar antar pasangan berbeda: %.4f\n", terbesar);
+    return 0;
+}
 ```
 
-Keluaran asli (dijalankan penyusun dengan `python3 -I`, Python 3.12):
+Keluaran asli (`g++ -std=c++17 -Wall -Wextra`):
 
 ```text
 |00>  -> (0.7071, 0.0000, 0.0000, 0.7071)  dapat difaktorkan: tidak
@@ -124,9 +140,10 @@ Lengkapi (kunci di bagian akhir).
 2. Untuk `|Psi+> = (0 ; h ; h ; 0)`: `a*d = ____`, `b*c = ____`, jadi terjerat atau produk? ____
 3. Lengkapi uji faktorisasi:
 
-```python setengah-jadi
-def bisa_difaktorkan(v):
-    return abs(v[____] * v[____] - v[____] * v[____]) < 1e-9
+```cpp setengah-jadi
+bool bisa_difaktorkan(const Vektor& v) {
+    return std::fabs(v[____] * v[____] - v[____] * v[____]) < 1e-9;
+}
 ```
 
 ## Soal Parsons
@@ -134,10 +151,10 @@ def bisa_difaktorkan(v):
 Susun baris-baris di bawah (sudah diacak) menjadi pembangunan keadaan Bell dari `|00>`. Penjorokan sengaja dihilangkan.
 
 ```text
-(a) awal = [1, 0, 0, 0]
-(b) sesudah_h = kali(H_PERTAMA, awal)
-(c) bell = kali(CNOT, sesudah_h)
-(d) print(tulis(bell))
+(a) Vektor awal = {1, 0, 0, 0};
+(b) Vektor sesudah_h = kali(H_PERTAMA, awal);
+(c) Vektor bell = kali(CNOT, sesudah_h);
+(d) std::printf("%s\n", tulis(bell).c_str());
 ```
 
 ## Latihan

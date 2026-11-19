@@ -3368,8 +3368,8 @@
           "url": "https://algassert.com/quirk"
         },
         {
-          "title": "Python: modul random",
-          "url": "https://docs.python.org/3/library/random.html"
+          "title": "cppreference: tipe bilangan bulat berukuran tetap (uint32_t)",
+          "url": "https://en.cppreference.com/w/cpp/types/integer"
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi2-m3.md"
@@ -3391,8 +3391,20 @@
           "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/multiple-systems/quantum-information"
         },
         {
-          "title": "Python: modul sys (getsizeof)",
-          "url": "https://docs.python.org/3/library/sys.html"
+          "title": "cppreference: operator sizeof",
+          "url": "https://en.cppreference.com/w/cpp/language/sizeof"
+        },
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/w/cpp/container/vector"
+        },
+        {
+          "title": "The TypeScript Handbook",
+          "url": "https://www.typescriptlang.org/docs/handbook/intro.html"
+        },
+        {
+          "title": "Bun: menjalankan TypeScript",
+          "url": "https://bun.sh/docs/runtime/typescript"
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi2-m4.md"
@@ -3422,8 +3434,8 @@
           "url": "https://algassert.com/quirk"
         },
         {
-          "title": "Python: modul cmath",
-          "url": "https://docs.python.org/3/library/cmath.html"
+          "title": "cppreference: std::complex",
+          "url": "https://en.cppreference.com/w/cpp/numeric/complex"
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi2-m5.md"
@@ -3449,8 +3461,8 @@
           "url": "https://algassert.com/quirk"
         },
         {
-          "title": "Python: modul itertools",
-          "url": "https://docs.python.org/3/library/itertools.html"
+          "title": "cppreference: std::set",
+          "url": "https://en.cppreference.com/w/cpp/container/set"
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi2-m6.md"
@@ -4028,6 +4040,517 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi2-m14.md"
+    },
+    {
+      "id": "c-xii1-m1",
+      "title": "Merancang kebutuhan sistem",
+      "cpItems": ["F-BK-a", "F-LD-d"],
+      "weekCodes": ["C-XII1-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xi2-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D - F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii1-m1.md"
+    },
+    {
+      "id": "c-xii1-m2",
+      "title": "Arsitektur dan pemilihan komponen",
+      "cpItems": ["F-BK-a", "F-LD-d"],
+      "weekCodes": ["C-XII1-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii1-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D - F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii1-m2.md"
+    },
+    {
+      "id": "c-xii1-m3",
+      "title": "Motor DC dan pengendali motor (F)",
+      "cpItems": [],
+      "weekCodes": ["C-XII1-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii1-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino-ESP32 (Espressif): LEDC (PWM)",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/ledc.html"
+        },
+        {
+          "title": "Arduino: digitalWrite()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/digital-io/digitalwrite/"
+        },
+        {
+          "title": "Arduino: constrain()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/math/constrain/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii1-m3.md"
+    },
+    {
+      "id": "c-xii1-m4",
+      "title": "Sensor garis dan jarak (F)",
+      "cpItems": [],
+      "weekCodes": ["C-XII1-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii1-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: analogRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/"
+        },
+        {
+          "title": "Arduino-ESP32 (Espressif): ADC",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/adc.html"
+        },
+        {
+          "title": "Arduino: pulseIn()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/advanced-io/pulseIn/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii1-m4.md"
+    },
+    {
+      "id": "c-xii1-m5",
+      "title": "Mesin keadaan robot (F)",
+      "cpItems": ["F-AP-b"],
+      "weekCodes": ["C-XII1-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii1-m4", "c-x2-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: millis()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/millis/"
+        },
+        {
+          "title": "Arduino: Blink tanpa delay",
+          "url": "https://docs.arduino.cc/built-in-examples/digital/BlinkWithoutDelay/"
+        },
+        {
+          "title": "C++ Core Guidelines",
+          "url": "https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii1-m5.md"
+    },
+    {
+      "id": "c-xii1-m6",
+      "title": "Pengikut garis: strategi 1 (F)",
+      "cpItems": ["F-AP-a", "F-AP-b"],
+      "weekCodes": ["C-XII1-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii1-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: analogRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/"
+        },
+        {
+          "title": "Arduino-ESP32 (Espressif): LEDC (PWM)",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/ledc.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii1-m6.md"
+    },
+    {
+      "id": "c-xii1-m7",
+      "title": "Pengikut garis: strategi 2 (F)",
+      "cpItems": ["F-AP-a", "F-AP-b"],
+      "weekCodes": ["C-XII1-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii1-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: constrain()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/math/constrain/"
+        },
+        {
+          "title": "Arduino: analogRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii1-m7.md"
+    },
+    {
+      "id": "d-xii1-m1",
+      "title": "Merumuskan proyek akhir",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xi2-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Nielsen Norman Group: User Interviews 101",
+          "url": "https://www.nngroup.com/articles/user-interviews/"
+        },
+        {
+          "title": "scikit-learn: Metrics and scoring",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m1.md"
+    },
+    {
+      "id": "d-xii1-m2",
+      "title": "Studi kasus AI I",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "WHO: Ethics and governance of artificial intelligence for health",
+          "url": "https://www.who.int/publications/i/item/9789240029200"
+        },
+        {
+          "title": "UNESCO: Guidance for generative AI in education and research",
+          "url": "https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m2.md"
+    },
+    {
+      "id": "d-xii1-m3",
+      "title": "Studi kasus AI II",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "UNESCO: Ethics of Artificial Intelligence",
+          "url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics"
+        },
+        {
+          "title": "Undang-Undang Nomor 28 Tahun 2014 tentang Hak Cipta, JDIH BPK",
+          "url": "https://peraturan.bpk.go.id/Details/38690/uu-no-28-tahun-2014"
+        },
+        {
+          "title": "scikit-learn: LinearRegression",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m3.md"
+    },
+    {
+      "id": "d-xii1-m4",
+      "title": "Hukum dan kebijakan",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m3", "d-x2-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi, JDIH BPK",
+          "url": "https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022"
+        },
+        {
+          "title": "Undang-Undang Nomor 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik, JDIH BPK",
+          "url": "https://peraturan.bpk.go.id/Details/37589/uu-no-11-tahun-2008"
+        },
+        {
+          "title": "Undang-Undang Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana, JDIH BPK",
+          "url": "https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m4.md"
+    },
+    {
+      "id": "d-xii1-m5",
+      "title": "Menyiapkan data proyek",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: train_test_split",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html"
+        },
+        {
+          "title": "NumPy: Random Generator",
+          "url": "https://numpy.org/doc/stable/reference/random/generator.html"
+        },
+        {
+          "title": "Creative Commons: CC BY 4.0 (deed, bahasa Indonesia)",
+          "url": "https://creativecommons.org/licenses/by/4.0/deed.id"
+        },
+        {
+          "title": "Portal Satu Data Indonesia",
+          "url": "https://data.go.id"
+        },
+        {
+          "title": "Gebru dkk.: Datasheets for Datasets (bacaan tambahan; bukan sumber isi modul)",
+          "url": "https://arxiv.org/abs/1803.09010"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m5.md"
+    },
+    {
+      "id": "d-xii1-m6",
+      "title": "Garis dasar dan metrik",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: DummyClassifier",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.dummy.DummyClassifier.html"
+        },
+        {
+          "title": "scikit-learn: Metrics and scoring",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "scikit-learn: LogisticRegression",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m6.md"
+    },
+    {
+      "id": "d-xii1-m7",
+      "title": "Iterasi model I",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Cross-validation",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "scikit-learn: cross_validate",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html"
+        },
+        {
+          "title": "scikit-learn: StratifiedKFold",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.StratifiedKFold.html"
+        },
+        {
+          "title": "scikit-learn: Common pitfalls and recommended practices",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m7.md"
+    },
+    {
+      "id": "e-xii1-m1",
+      "title": "Bernstein-Vazirani",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xi2-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: The Deutsch-Jozsa algorithm (termasuk Bernstein-Vazirani)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/quantum-query-algorithms/deutsch-jozsa-algorithm"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m1.md"
+    },
+    {
+      "id": "e-xii1-m2",
+      "title": "Pembalikan fase",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Grover's algorithm (Analysis)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/grover-algorithm/analysis"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m2.md"
+    },
+    {
+      "id": "e-xii1-m3",
+      "title": "Grover I",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Grover's algorithm (Introduction)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/grover-algorithm/introduction"
+        },
+        {
+          "title": "IBM Quantum Learning: Grover's algorithm (Unstructured search)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/grover-algorithm/unstructured-search"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m3.md"
+    },
+    {
+      "id": "e-xii1-m4",
+      "title": "Grover II",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Grover's algorithm (Analysis)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/grover-algorithm/analysis"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m4.md"
+    },
+    {
+      "id": "e-xii1-m5",
+      "title": "Grover III: jumlah iterasi",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m4", "matkom-pertumbuhan-fungsi"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Grover's algorithm (Analysis)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/grover-algorithm/analysis"
+        },
+        {
+          "title": "IBM Quantum Learning: Grover's algorithm (Introduction)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/grover-algorithm/introduction"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m5.md"
+    },
+    {
+      "id": "e-xii1-m6",
+      "title": "Gagasan Fourier kuantum dan Shor (konsep)",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Shor's algorithm",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/phase-estimation-and-factoring/shor-algorithm"
+        },
+        {
+          "title": "NIST: Post-Quantum Cryptography",
+          "url": "https://csrc.nist.gov/projects/post-quantum-cryptography"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m6.md"
+    },
+    {
+      "id": "e-xii1-m7",
+      "title": "Batas komputasi kuantum",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Grover's algorithm (Introduction)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/grover-algorithm/introduction"
+        },
+        {
+          "title": "Bennett, Bernstein, Brassard, Vazirani: Strengths and Weaknesses of Quantum Computing (arXiv)",
+          "url": "https://arxiv.org/abs/quant-ph/9701001"
+        },
+        {
+          "title": "NIST: Post-Quantum Cryptography",
+          "url": "https://csrc.nist.gov/projects/post-quantum-cryptography"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m7.md"
     }
   ]
 }

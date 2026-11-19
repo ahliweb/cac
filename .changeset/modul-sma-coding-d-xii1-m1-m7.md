@@ -1,0 +1,5 @@
+---
+"kurikulum-informatika": patch
+---
+
+Tujuh modul belajar jalur D (kecerdasan buatan dan analisis data) `sma-coding` semester XII1 batch 1, `d-xii1-m1` sampai `d-xii1-m7` (issue #124, gelombang D-XII1 menurut `docs/programs/sma-coding/rancangan-modul-cde.md`): merumuskan proyek akhir, studi kasus AI I (kesehatan dan pendidikan), studi kasus AI II (transportasi, pertanian, budaya), hukum dan kebijakan (pokok UU PDP dan UU ITE sebagai daftar periksa kepatuhan), menyiapkan data proyek, garis dasar dan metrik, serta iterasi model I. Setiap modul mengikuti templat berbasis bukti, memuat penanda pemakaian AI per soal, rantai `Ingat kembali` dan `Ulang berjarak` dari semester sebelumnya, kasus karangan tanpa data pribadi, dan contoh Python yang dijalankan dengan `python3 -I` (Python 3.14.6, `numpy` 2.5.5, `pandas` 3.1.1, `scikit-learn` 1.9.1, per 2026-11; keluaran di modul sama dengan keluaran asli). Tujuh entri baru ditambahkan di akhir `data/sma-coding/modules.json` berstatus `draf` dengan `cpItems` kosong (jalur D pengayaan; tidak dihitung memenuhi CP). Tidak ada modul yang disetujui.

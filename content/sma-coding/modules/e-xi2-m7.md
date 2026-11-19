@@ -1,6 +1,6 @@
 ## Untuk siapa modul ini
 
-Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M7` silabus v1.4: keadaan kuantum tidak dapat digandakan, dan teleportasi (konsep). Prasyarat: modul `e-xi2-m6` (reversibilitas). Alat: kertas, kalkulator, dan Python 3 murni opsional; hitungan tangan lebih dulu.
+Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M7` silabus v1.4: keadaan kuantum tidak dapat digandakan, dan teleportasi (konsep). Prasyarat: modul `e-xi2-m6` (reversibilitas). Alat: kertas, kalkulator, dan kompilator C++17 opsional; hitungan tangan lebih dulu.
 
 Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur E adalah pengayaan di luar rumusan CP; minggu ini tanpa irisan pengayaan, jadi modul ini tidak dihitung memenuhi butir CP mana pun.
 
@@ -47,111 +47,148 @@ Hasilnya: `B` berada pada `(alfa, beta)`. Keempat hasil Alice masing-masing berp
 
 Blok pertama mencoba menyalin dengan CNOT:
 
-```python
-def cnot_dua(v):
-    """CNOT pada vektor dua qubit (00, 01, 10, 11); qubit pertama kontrol."""
-    return [v[0], v[1], v[3], v[2]]
+```cpp
+#include <cmath>
+#include <cstdio>
+#include <string>
+#include <vector>
 
+using Vektor = std::vector<double>;
 
-def tulis(v):
-    return "(" + ", ".join(f"{x:.4f}" for x in v) + ")"
+// CNOT pada vektor dua qubit (00, 01, 10, 11); qubit pertama kontrol.
+Vektor cnot_dua(const Vektor& v) { return {v[0], v[1], v[3], v[2]}; }
 
+std::string tulis(const Vektor& v) {
+    std::string s = "(";
+    for (size_t i = 0; i < v.size(); i++) {
+        char buf[32];
+        std::snprintf(buf, sizeof buf, "%.4f", v[i] + 0.0);
+        if (i > 0) s += ", ";
+        s += buf;
+    }
+    return s + ")";
+}
 
-a, b = 0.6, 0.8
+int main() {
+    double a = 0.6, b = 0.8;
 
-# CNOT menyalin keadaan dasar: |x>|0> menjadi |x>|x>.
-print("|0>|0> ->", tulis(cnot_dua([1, 0, 0, 0])), "  salinan yang diinginkan:", tulis([1, 0, 0, 0]))
-print("|1>|0> ->", tulis(cnot_dua([0, 0, 1, 0])), "  salinan yang diinginkan:", tulis([0, 0, 0, 1]))
+    // CNOT menyalin keadaan dasar: |x>|0> menjadi |x>|x>.
+    std::printf("|0>|0> -> %s   salinan yang diinginkan: %s\n", tulis(cnot_dua({1, 0, 0, 0})).c_str(),
+                tulis({1, 0, 0, 0}).c_str());
+    std::printf("|1>|0> -> %s   salinan yang diinginkan: %s\n", tulis(cnot_dua({0, 0, 1, 0})).c_str(),
+                tulis({0, 0, 0, 1}).c_str());
 
-# Keadaan (a, b) tensor |0>, lalu CNOT.
-hasil = cnot_dua([a, 0, b, 0])
-salinan = [a * a, a * b, b * a, b * b]  # (a, b) tensor (a, b), yang kita inginkan
-print("hasil CNOT        :", tulis(hasil))
-print("salinan diinginkan:", tulis(salinan))
-print("hasil dapat difaktorkan (a*d = b*c)?", abs(hasil[0] * hasil[3] - hasil[1] * hasil[2]) < 1e-9)
+    // Keadaan (a, b) tensor |0>, lalu CNOT.
+    Vektor hasil = cnot_dua({a, 0, b, 0});
+    Vektor salinan = {a * a, a * b, b * a, b * b};  // (a, b) tensor (a, b), yang kita inginkan
+    std::printf("hasil CNOT        : %s\n", tulis(hasil).c_str());
+    std::printf("salinan diinginkan: %s\n", tulis(salinan).c_str());
+    bool produk = std::fabs(hasil[0] * hasil[3] - hasil[1] * hasil[2]) < 1e-9;
+    std::printf("hasil dapat difaktorkan (a*d = b*c)? %s\n", produk ? "ya" : "tidak");
+    return 0;
+}
 ```
 
-Keluaran asli (dijalankan penyusun dengan `python3 -I`, Python 3.12):
+Keluaran asli (`g++ -std=c++17 -Wall -Wextra`):
 
 ```text
 |0>|0> -> (1.0000, 0.0000, 0.0000, 0.0000)   salinan yang diinginkan: (1.0000, 0.0000, 0.0000, 0.0000)
 |1>|0> -> (0.0000, 0.0000, 0.0000, 1.0000)   salinan yang diinginkan: (0.0000, 0.0000, 0.0000, 1.0000)
 hasil CNOT        : (0.6000, 0.0000, 0.0000, 0.8000)
 salinan diinginkan: (0.3600, 0.4800, 0.4800, 0.6400)
-hasil dapat difaktorkan (a*d = b*c)? False
+hasil dapat difaktorkan (a*d = b*c)? tidak
 ```
 
 Blok kedua menelusuri teleportasi (fungsi gerbang disalin ringkas dari `e-xi2-m4`) untuk tiga qubit `Q, A, B`, `Q` paling kiri:
 
-```python
-from math import sqrt
+```cpp
+#include <cmath>
+#include <cstdio>
+#include <utility>
+#include <vector>
 
-h = 1 / sqrt(2)
-H = [[h, h], [h, -h]]
-N = 3  # tiga qubit: Q (yang dikirim), A (milik Alice), B (milik Bob); Q paling kiri
+using Vektor = std::vector<double>;
 
+const double h = 1.0 / std::sqrt(2.0);
+const int N = 3;  // tiga qubit: Q (yang dikirim), A (milik Alice), B (milik Bob); Q paling kiri
 
-def gerbang_satu(v, g, k):
-    geser = N - 1 - k
-    for i in range(len(v)):
-        if (i >> geser) & 1 == 0:
-            j = i | (1 << geser)
-            a, b = v[i], v[j]
-            v[i] = g[0][0] * a + g[0][1] * b
-            v[j] = g[1][0] * a + g[1][1] * b
+// H pada qubit ke-k (0 = paling kiri), di tempat.
+void hadamard(Vektor& v, int k) {
+    int geser = N - 1 - k;
+    for (size_t i = 0; i < v.size(); i++) {
+        if (((i >> geser) & 1) == 0) {
+            size_t j = i | (size_t(1) << geser);
+            double a = v[i], b = v[j];
+            v[i] = h * a + h * b;
+            v[j] = h * a - h * b;
+        }
+    }
+}
 
+void cnot(Vektor& v, int kontrol, int target) {
+    int gk = N - 1 - kontrol, gt = N - 1 - target;
+    for (size_t i = 0; i < v.size(); i++) {
+        if (((i >> gk) & 1) == 1 && ((i >> gt) & 1) == 0) {
+            size_t j = i | (size_t(1) << gt);
+            double sementara = v[i];
+            v[i] = v[j];
+            v[j] = sementara;
+        }
+    }
+}
 
-def cnot(v, kontrol, target):
-    gk, gt = N - 1 - kontrol, N - 1 - target
-    for i in range(len(v)):
-        if (i >> gk) & 1 == 1 and (i >> gt) & 1 == 0:
-            j = i | (1 << gt)
-            v[i], v[j] = v[j], v[i]
+// Keadaan Q kali Bell (A, B), lalu CNOT Q->A dan H pada Q.
+Vektor sampai_alice(double alfa, double beta) {
+    Vektor v(8, 0.0);
+    for (int q = 0; q < 2; q++) {
+        double amp = q == 0 ? alfa : beta;
+        v[(q << 2) | 0b00] = amp * h;  // Q = q, A B = 00
+        v[(q << 2) | 0b11] = amp * h;  // Q = q, A B = 11
+    }
+    cnot(v, 0, 1);
+    hadamard(v, 0);
+    return v;
+}
 
+int main() {
+    double alfa = 0.6, beta = 0.8;
+    Vektor v = sampai_alice(alfa, beta);
+    std::printf("keadaan Q yang dikirim: (%.1f, %.1f)\n", alfa, beta);
+    for (int q = 0; q < 2; q++) {
+        for (int a = 0; a < 2; a++) {
+            size_t dasar = (q << 2) | (a << 1);
+            double bob[2] = {v[dasar], v[dasar | 1]};  // amplitudo B = 0 dan B = 1
+            double peluang = bob[0] * bob[0] + bob[1] * bob[1];
+            bob[0] /= std::sqrt(peluang);              // keadaan Bob bila hasil Alice (q, a)
+            bob[1] /= std::sqrt(peluang);
+            double sebelum[2] = {bob[0], bob[1]};
+            if (a == 1) std::swap(bob[0], bob[1]);     // X bila hasil qubit A = 1
+            if (q == 1) bob[1] = -bob[1];              // Z bila hasil qubit Q = 1
+            std::printf("hasil Alice %d%d: peluang %.2f, Bob sebelum (%.4f, %.4f), sesudah koreksi (%.4f, %.4f)\n",
+                        q, a, peluang, sebelum[0] + 0.0, sebelum[1] + 0.0, bob[0] + 0.0, bob[1] + 0.0);
+        }
+    }
 
-def sampai_alice(alfa, beta):
-    """Keadaan Q kali Bell (A, B), lalu CNOT Q->A dan H pada Q."""
-    v = [0.0] * 8
-    for q, amp in ((0, alfa), (1, beta)):
-        v[(q << 2) | 0b00] = amp * h  # Q = q, A B = 00
-        v[(q << 2) | 0b11] = amp * h  # Q = q, A B = 11
-    cnot(v, 0, 1)
-    gerbang_satu(v, H, 0)
-    return v
-
-
-alfa, beta = 0.6, 0.8
-v = sampai_alice(alfa, beta)
-print("keadaan Q yang dikirim:", (alfa, beta))
-for q in (0, 1):
-    for a in (0, 1):
-        dasar = (q << 2) | (a << 1)
-        bob = [v[dasar], v[dasar | 1]]            # amplitudo B = 0 dan B = 1
-        peluang = bob[0] ** 2 + bob[1] ** 2
-        bob = [x / sqrt(peluang) for x in bob]    # keadaan Bob bila hasil Alice (q, a)
-        sebelum = tuple(round(x, 4) for x in bob)
-        if a == 1:                                # X bila hasil qubit A = 1
-            bob = [bob[1], bob[0]]
-        if q == 1:                                # Z bila hasil qubit Q = 1
-            bob = [bob[0], -bob[1]]
-        sesudah = tuple(round(x + 0.0, 4) for x in bob)
-        print(f"hasil Alice {q}{a}: peluang {peluang:.2f}, Bob sebelum {sebelum}, sesudah koreksi {sesudah}")
-
-# Sebelum pesan klasik tiba, peluang Bob membaca 0 tidak bergantung pada (alfa, beta).
-for al, be in ((1.0, 0.0), (0.6, 0.8), (0.8, -0.6)):
-    w = sampai_alice(al, be)
-    p0 = sum(w[i] ** 2 for i in range(8) if i % 2 == 0)
-    print(f"Q = {(al, be)}: P(Bob membaca 0 sebelum koreksi) = {p0:.4f}")
+    // Sebelum pesan klasik tiba, peluang Bob membaca 0 tidak bergantung pada (alfa, beta).
+    const double uji[3][2] = {{1.0, 0.0}, {0.6, 0.8}, {0.8, -0.6}};
+    for (const auto& keadaan : uji) {
+        Vektor w = sampai_alice(keadaan[0], keadaan[1]);
+        double p0 = 0.0;
+        for (size_t i = 0; i < 8; i += 2) p0 += w[i] * w[i];  // indeks genap: bit B = 0
+        std::printf("Q = (%.1f, %.1f): P(Bob membaca 0 sebelum koreksi) = %.4f\n", keadaan[0], keadaan[1], p0);
+    }
+    return 0;
+}
 ```
 
-Keluaran asli (dijalankan penyusun dengan `python3 -I`, Python 3.12):
+Keluaran asli (`g++ -std=c++17 -Wall -Wextra`):
 
 ```text
 keadaan Q yang dikirim: (0.6, 0.8)
-hasil Alice 00: peluang 0.25, Bob sebelum (0.6, 0.8), sesudah koreksi (0.6, 0.8)
-hasil Alice 01: peluang 0.25, Bob sebelum (0.8, 0.6), sesudah koreksi (0.6, 0.8)
-hasil Alice 10: peluang 0.25, Bob sebelum (0.6, -0.8), sesudah koreksi (0.6, 0.8)
-hasil Alice 11: peluang 0.25, Bob sebelum (-0.8, 0.6), sesudah koreksi (0.6, 0.8)
+hasil Alice 00: peluang 0.25, Bob sebelum (0.6000, 0.8000), sesudah koreksi (0.6000, 0.8000)
+hasil Alice 01: peluang 0.25, Bob sebelum (0.8000, 0.6000), sesudah koreksi (0.6000, 0.8000)
+hasil Alice 10: peluang 0.25, Bob sebelum (0.6000, -0.8000), sesudah koreksi (0.6000, 0.8000)
+hasil Alice 11: peluang 0.25, Bob sebelum (-0.8000, 0.6000), sesudah koreksi (0.6000, 0.8000)
 Q = (1.0, 0.0): P(Bob membaca 0 sebelum koreksi) = 0.5000
 Q = (0.6, 0.8): P(Bob membaca 0 sebelum koreksi) = 0.5000
 Q = (0.8, -0.6): P(Bob membaca 0 sebelum koreksi) = 0.5000
@@ -167,11 +204,9 @@ Lengkapi (kunci di bagian akhir).
 2. Hasil CNOT pada `(0,8 ; -0,6)` kali `|0>` = `(____ ; 0 ; 0 ; ____)`.
 3. Lengkapi koreksi Bob:
 
-```python setengah-jadi
-if a == 1:                 # hasil qubit A
-    bob = [bob[____], bob[____]]
-if q == 1:                 # hasil qubit Q
-    bob = [bob[0], ____ * bob[1]]
+```cpp setengah-jadi
+if (a == 1) std::swap(bob[____], bob[____]);  // hasil qubit A
+if (q == 1) bob[1] = ____ * bob[1];            // hasil qubit Q
 ```
 
 ## Soal Parsons
@@ -179,10 +214,10 @@ if q == 1:                 # hasil qubit Q
 Susun baris-baris di bawah (sudah diacak) menjadi koreksi Bob. Penjorokan sengaja dihilangkan.
 
 ```text
-(a) if a == 1:
-(b) bob = [bob[1], bob[0]]
-(c) if q == 1:
-(d) bob = [bob[0], -bob[1]]
+(a) if (a == 1)
+(b) std::swap(bob[0], bob[1]);
+(c) if (q == 1)
+(d) bob[1] = -bob[1];
 ```
 
 ## Latihan
@@ -228,7 +263,7 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `e-xi2-m8` (satu minggu
 
 **Prediksi dulu.** (1) bukan: `(0,6 ; 0 ; 0 ; 0,8)` lawan `(0,36 ; 0,48 ; 0,48 ; 0,64)`; (2) tidak cukup: halaman IBM menyatakan bahwa mengirim qubit hanya lewat komunikasi klasik tidak mungkin, sehingga teleportasi memakai satu pasangan terjerat ditambah dua bit klasik; (3) tidak: `Q` menjadi `|0>` atau `|1>` karena dibaca.
 
-**Contoh setengah jadi.** 1: `ab` dan `ab`; `-0,48` dan `-0,48`. 2: `0,8` dan `-0,6`. 3: `bob[1], bob[0]` (kedua komponen bertukar); `-1 * bob[1]`.
+**Contoh setengah jadi.** 1: `ab` dan `ab`; `-0,48` dan `-0,48`. 2: `0,8` dan `-0,6`. 3: `bob[0]` dan `bob[1]` (kedua komponen bertukar); `-1 * bob[1]`.
 
 **Soal Parsons.** a, b, c, d.
 
