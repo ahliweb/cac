@@ -7,7 +7,7 @@ Anak dapat menyusun program kartu untuk mencapai "harta" di peta.
 ## Alat dan bahan
 
 - Kisi 5x5 dari selotip kertas di lantai (tiap petak kira-kira selebar dua telapak kaki anak). Pojok kanan bawah diberi bintang sebagai tempat mulai. Satu balok bangunan (rintangan) ditaruh di petak tengah pada kolom paling kanan, dua petak di atas bintang. "Harta" (kotak kecil atau gambar peti) ditaruh di petak ketiga dari kiri pada baris kedua dari bawah.
-- Kartu panah besar: "maju" (empat salinan), "belok kiri" (dua), dan "ulang x2" (dua), seperti di `TK-B1-M5`. Kartu "belok kanan" belum dipakai.
+- Kartu panah besar: "maju" (empat salinan), "belok kiri" (dua), dan "ulang x2" (dua), seperti di `TK-B1-M5`. Kartu "belok kanan" tidak dipakai di program TK ini.
 - "Robot": teman yang bermain sebagai robot.
 - Lembar anak `tk-b1-m11` dicetak satu per anak atau pasangan; gambarnya (SVG buatan penyusun) memuat peta 5x5 dengan robot, balok, dan harta, empat kotak kosong, dan lima kartu untuk ditempel.
 - Tanpa perangkat digital.

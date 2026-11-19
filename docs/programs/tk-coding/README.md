@@ -1,8 +1,8 @@
 # Program Pembelajaran Coding TK/PAUD (`tk-coding`)
 
-- **Version:** v1.1.0
+- **Version:** v1.1.1
 - **Last updated:** 2026-11-19
-- **Status:** DISETUJUI pemilik program, 2026-11-19, beserta rekomendasi penyusun (silabus v1.0.2: revisi patch kalimat status, #165, dan revisi patch jembatan ke SD, keputusan pemilik #177). Terdaftar di `data/programs.json` dengan corpus `data/tk-coding/` (ADR-0006, ADR-0008). Modul belajar: 48 modul draf (satu per minggu) di `content/tk-coding/modules/`, 48 lembar anak di `content/tk-coding/lembar/`, 48 gambar SVG di `content/tk-coding/gambar/`, terindeks di `data/tk-coding/modules.json`; semuanya berstatus `draf` dan belum ditinjau pemilik (per 2026-11-19).
+- **Status:** DISETUJUI pemilik program, 2026-11-19, beserta rekomendasi penyusun (silabus v1.0.3: revisi patch kalimat status, #165; revisi patch jembatan ke SD, keputusan pemilik #177; revisi patch tujuan 4 tanpa `belok kanan`, instruksi pemilik #239). Terdaftar di `data/programs.json` dengan corpus `data/tk-coding/` (ADR-0006, ADR-0008). Modul belajar: 48 modul draf (satu per minggu) di `content/tk-coding/modules/`, 48 lembar anak di `content/tk-coding/lembar/`, 48 gambar SVG di `content/tk-coding/gambar/`, terindeks di `data/tk-coding/modules.json`; semuanya berstatus `draf` dan belum ditinjau pemilik (per 2026-11-19).
 
 > Isi folder ini adalah konten **karangan** (*authored*) menurut
 > [ADR-0007](../../architecture/adr/0007-authored-learning-content.md):
@@ -38,7 +38,7 @@ perangkat, tanpa nilai angka, tanpa data anak di repositori.
 | `riset.md` | Riset (v0.1.0): sumber resmi yang benar-benar dibuka beserta kutipan persis dan tanggal akses 2026-11-19, panduan waktu layar, pendekatan berpikir komputasional anak usia dini, risiko, dan sumber yang tidak dapat dibuka. |
 | `rancangan-modul.md` | Rancangan modul belajar (DRAF, v0.1.0): pemetaan 48 minggu, templat berbasis bukti, gelombang penulisan, gerbang mutu. Rancangan dipakai untuk menulis modul yang kini ada di `content/tk-coding/`. |
 | `rancangan-modul-contoh/` | Riwayat: modul pilot (`panduan-tk-a1-m1.md`, `lembar-tk-a1-m1.md`) sebelum modul sebenarnya ditulis; modul nyatanya `content/tk-coding/modules/tk-a1-m1.md` dan `content/tk-coding/lembar/tk-a1-m1.md`. |
-| `silabus.md` | Silabus v1.0.2 (disetujui, sumber corpus `data/tk-coding/`): sumber dan kutipan resmi, prinsip, struktur waktu, rencana 48 minggu (`TK-A1-M1` sampai `TK-B2-M12`), pemetaan irisan ke CP (penafsiran, bukan pemenuhan CP), jembatan ke SD, asesmen observasi, peran orang tua, privasi, sarana, opsi alat dengan rekomendasi, keputusan pemilik. |
+| `silabus.md` | Silabus v1.0.3 (disetujui, sumber corpus `data/tk-coding/`): sumber dan kutipan resmi, prinsip, struktur waktu, rencana 48 minggu (`TK-A1-M1` sampai `TK-B2-M12`), pemetaan irisan ke CP (penafsiran, bukan pemenuhan CP), jembatan ke SD, asesmen observasi, peran orang tua, privasi, sarana, opsi alat dengan rekomendasi, keputusan pemilik. |
 
 ## Keputusan pemilik (2026-11-19)
 
@@ -92,3 +92,4 @@ keduanya sel demi sel.
 | v1.0.2 | 2026-11-19 | Silabus direvisi patch ke v1.0.1 (issue #165): kalimat status yang basi tentang program pasangannya diperbaiki; isi kurikulum dan corpus tidak berubah. |
 | v1.0.3 | 2026-11-19 | Silabus direvisi patch ke v1.0.2 atas keputusan pemilik #177: bagian 5 (jembatan ke SD) diselaraskan dengan silabus `sd-coding` (rujukan `TK-B2-M1` dikoreksi, kode minggu SD, kosakata dan simbol disamakan, jalur padat); isi kurikulum TK tidak berubah. |
 | v1.1.0 | 2026-11-19 | Sinkron dokumen (#124): status modul belajar (48 modul draf, 48 lembar, 48 gambar SVG, indeks `modules.json`), `rancangan-modul.md` dan pilot masuk daftar berkas; isi silabus dan corpus tidak berubah. |
+| v1.1.1 | 2026-11-19 | Silabus direvisi patch ke v1.0.3 atas instruksi pemilik "sesuaikan yang valid" (#239): tujuan 4 tidak lagi menyebut `belok kanan` (tidak diajarkan di 48 minggu dan belum sesuai perkembangan usia); `riset.md` v0.1.2 memuat bukti; catatan di enam panduan guru disesuaikan. |

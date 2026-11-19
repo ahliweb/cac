@@ -1,9 +1,9 @@
 # Silabus Pembelajaran Coding TK/PAUD (Berpikir Komputasional) — v1.0
 
-- **Version:** v1.0.2
+- **Version:** v1.0.3
 - **Last updated:** 2026-11-19
-- **Status:** DISETUJUI pemilik program, 2026-11-19, beserta rekomendasi penyusun untuk setiap pertanyaan terbuka (keputusan lewat dialog pilihan, dicatat di issue #127; bagian 9). Rencana 48 minggu tanpa layar sebagai bawaan. Revisi patch v1.0.2 (jembatan ke SD, bagian 5) dicatat lewat keputusan pemilik 2026-11-19 (issue #177); isi kurikulum TK tidak berubah.
-- **Changeset:** Silabus v1.0 disetujui pemilik: draf v0.1.0-draf dipertahankan isinya; pertanyaan terbuka (bagian 9) diganti keputusan pemilik (opsi rekomendasi tiap pertanyaan); `silabus-draf.md` menjadi `silabus.md`, sumber corpus `data/tk-coding/` (issue #127, ADR-0006, ADR-0008). Revisi patch v1.0.1 (#165): kalimat status yang basi; isi kurikulum tidak berubah. Revisi patch v1.0.2 (#177): bagian 5 (jembatan ke SD) diselaraskan setelah silabus `sd-coding` dibaca: rujukan minggu dikoreksi (`TK-B2-M1` melatih arah dan ulang, bukan pola; `TK-B1-M6` ditambahkan untuk pola), kolom kedua menyebut butir pengenalan SD kelas 1-2 dengan kode minggu SD (bukan lagi "Fase A", karena kelas 1-4 SD di luar struktur KKA), kosakata dan simbol arah disamakan lewat kesepakatan simbol bersama, dan jalur padat untuk pengulangan; Q8 terpenuhi; isi kurikulum TK tidak berubah.
+- **Status:** DISETUJUI pemilik program, 2026-11-19, beserta rekomendasi penyusun untuk setiap pertanyaan terbuka (keputusan lewat dialog pilihan, dicatat di issue #127; bagian 9). Rencana 48 minggu tanpa layar sebagai bawaan. Revisi patch v1.0.2 (jembatan ke SD, bagian 5) dicatat lewat keputusan pemilik 2026-11-19 (issue #177); isi kurikulum TK tidak berubah. Revisi patch v1.0.3 (tujuan 4, #239) atas instruksi pemilik 2026-11-19 "sesuaikan yang valid": `belok kanan` dikeluarkan dari rumusan tujuan karena tidak diajarkan di rencana 48 minggu dan belum sesuai perkembangan usia TK.
+- **Changeset:** Silabus v1.0 disetujui pemilik: draf v0.1.0-draf dipertahankan isinya; pertanyaan terbuka (bagian 9) diganti keputusan pemilik (opsi rekomendasi tiap pertanyaan); `silabus-draf.md` menjadi `silabus.md`, sumber corpus `data/tk-coding/` (issue #127, ADR-0006, ADR-0008). Revisi patch v1.0.1 (#165): kalimat status yang basi; isi kurikulum tidak berubah. Revisi patch v1.0.2 (#177): bagian 5 (jembatan ke SD) diselaraskan setelah silabus `sd-coding` dibaca: rujukan minggu dikoreksi (`TK-B2-M1` melatih arah dan ulang, bukan pola; `TK-B1-M6` ditambahkan untuk pola), kolom kedua menyebut butir pengenalan SD kelas 1-2 dengan kode minggu SD (bukan lagi "Fase A", karena kelas 1-4 SD di luar struktur KKA), kosakata dan simbol arah disamakan lewat kesepakatan simbol bersama, dan jalur padat untuk pengulangan; Q8 terpenuhi; isi kurikulum TK tidak berubah. Revisi patch v1.0.3 (#239): tujuan 4 pada bagian 2.2 tidak lagi menyebut `belok kanan` (hanya maju, belok kiri, berhenti, ulangi), sebab tabel minggu hanya mengajarkan belok kiri dan belok kanan tidak pernah dilatih; pembedaan kiri dan kanan tubuh tetap di `TK-A1-M4`; alasan perkembangan di `riset.md` bagian 4.2; jumlah minggu, kode, dan CP tidak berubah.
 
 > **Disetujui pemilik program pada 2026-11-19** (keputusan lewat dialog
 > dengan opsi rekomendasi penyusun untuk setiap pertanyaan; bagian 9, issue
@@ -98,12 +98,14 @@ Pada akhir TK B, anak dapat `[asumsi]`:
 1. menyusun dan menceritakan urutan 3-4 langkah kegiatan sehari-hari dan memperbaiki urutan yang terbalik;
 2. mengenali, melanjutkan, dan membuat pola sederhana (warna, gerak, bunyi);
 3. mengelompokkan benda menurut satu aturan, lalu dua aturan, dan menyebutkan aturannya;
-4. memberi dan mengikuti instruksi arah sederhana (maju, belok kiri, belok kanan, berhenti, ulangi) di kisi lantai, serta mengoreksi instruksi yang salah;
+4. memberi dan mengikuti instruksi arah sederhana (maju, belok kiri, berhenti, ulangi) di kisi lantai, serta mengoreksi instruksi yang salah;
 5. memecah tugas sederhana menjadi bagian-bagian dan menyebutkan alasan pilihannya;
 6. merencanakan, membuat, mencoba, dan memperbaiki rancangan benda sederhana;
 7. mengenali alat di sekitar dan memakainya dengan aman, serta menyebutkan aturan aman memakai perangkat digital (diperkenalkan oleh orang dewasa).
 
 Seluruh tujuan adalah irisan dengan CP (bagian 4); tujuan ini bukan pemenuhan CP.
+
+Catatan tujuan 4 (v1.0.3, #239): `belok kanan` sengaja tidak termasuk. Anak usia 5-6 tahun umumnya baru menguasai kiri-kanan pada tubuhnya sendiri (bagian 4.2 `riset.md`), sehingga rencana minggu hanya melatih `belok kiri` bersama pembedaan kiri dan kanan tubuh (`TK-A1-M4`, `TK-A2-M3`); `belok kanan` ditunda ke program SD.
 
 ## 3. Struktur waktu dan rencana
 
@@ -353,3 +355,4 @@ konsekuensinya.
 | v1.0.0 | 2026-11-19 | Disetujui pemilik beserta rekomendasi penyusun (issue #127): status DISETUJUI, `silabus-draf.md` menjadi `silabus.md`, pertanyaan terbuka diganti keputusan pemilik (bagian 9). Isi rencana tidak diubah. |
 | v1.0.1 | 2026-11-19 | Revisi patch: kalimat status, keputusan pemilik #165; isi kurikulum tidak berubah. |
 | v1.0.2 | 2026-11-19 | Revisi patch yang dicatat lewat keputusan pemilik #177: bagian 5 (jembatan ke SD) diselaraskan dengan silabus `sd-coding`: rujukan minggu `TK-B2-M1` dikoreksi (melatih arah dan ulang, bukan pola; pola kini `TK-B1-M4` dan `TK-B1-M6`), kolom kedua memuat butir pengenalan SD dengan kode minggu SD, kosakata dan simbol disamakan, jalur padat untuk pengulangan; Q8 terpenuhi; isi kurikulum TK (48 minggu, CP, tujuan) tidak berubah (#177). |
+| v1.0.3 | 2026-11-19 | Revisi patch atas instruksi pemilik 2026-11-19 ("sesuaikan yang valid", #239): tujuan 4 (bagian 2.2) tidak lagi menyebut `belok kanan`; tabel minggu, kode minggu, CP, dan jembatan tidak berubah. |

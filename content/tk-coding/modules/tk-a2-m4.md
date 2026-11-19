@@ -47,7 +47,7 @@ Bila ada kejadian yang menonjol, tulis catatan anekdot tiga sampai lima kalimat 
 
 - **Anak yang belum banyak bicara:** cukup menaruh atau menunjuk kartu; guru yang membacakannya.
 - **Perlu dukungan:** guru memindahkan tujuan lebih dekat (satu atau dua maju saja) dan berjalan di samping boneka. Kurangi bantuan sedikit demi sedikit.
-- **Siap tantangan:** anak memilih sendiri petak tujuan dan menyusun kartunya sebelum boneka bergerak. Jangan menambah belok kanan; belok kanan masuk di semester berikutnya.
+- **Siap tantangan:** anak memilih sendiri petak tujuan dan menyusun kartunya sebelum boneka bergerak. Jangan menambah belok kanan; belok kanan tidak dipakai di program TK ini.
 - **Bahasa daerah:** boleh memakai kata "maju" dan "belok kiri" dalam bahasa rumah anak; ulangi dengan bahasa Indonesia secara santai.
 - Hindari lomba tercepat sampai di bendera.
 
