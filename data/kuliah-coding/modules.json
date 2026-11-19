@@ -23,7 +23,10 @@
           "title": "Debugging with GDB",
           "url": "https://sourceware.org/gdb/current/onlinedocs/gdb.html/"
         },
-        { "title": "Git Reference", "url": "https://git-scm.com/docs" }
+        {
+          "title": "Git Reference",
+          "url": "https://git-scm.com/docs"
+        }
       ],
       "contentPath": "content/kuliah-coding/modules/kul-i-101.md"
     },
@@ -70,6 +73,112 @@
         }
       ],
       "contentPath": "content/kuliah-coding/modules/kul-i-103.md"
+    },
+    {
+      "id": "kul-u-101",
+      "title": "Berpikir Komputasional dan Dasar Pemrograman",
+      "courseCodes": ["KUL-U-101"],
+      "knowledgeAreas": ["SDF", "AL"],
+      "semester": "S1",
+      "prerequisites": [],
+      "audience": "mahasiswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "The Python Tutorial, Python Software Foundation",
+          "url": "https://docs.python.org/3/tutorial/index.html"
+        },
+        {
+          "title": "Modul csv (pustaka standar Python), Python Software Foundation",
+          "url": "https://docs.python.org/3/library/csv.html"
+        },
+        {
+          "title": "Git Reference, git-scm.com",
+          "url": "https://git-scm.com/docs"
+        },
+        {
+          "title": "ACM/IEEE-CS/AAAI, Computer Science Curricula 2023, knowledge areas",
+          "url": "https://csed.acm.org/knowledge-areas/"
+        }
+      ],
+      "contentPath": "content/kuliah-coding/modules/kul-u-101.md"
+    },
+    {
+      "id": "kul-u-102",
+      "title": "Analisis Data dengan Python",
+      "courseCodes": ["KUL-U-102"],
+      "knowledgeAreas": ["DM", "MSF", "SDF"],
+      "semester": "S2",
+      "prerequisites": ["kul-u-101"],
+      "audience": "mahasiswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "pandas documentation, pandas",
+          "url": "https://pandas.pydata.org/docs/"
+        },
+        {
+          "title": "Matplotlib documentation, Matplotlib",
+          "url": "https://matplotlib.org/stable/"
+        },
+        {
+          "title": "The Python Tutorial, Python Software Foundation",
+          "url": "https://docs.python.org/3/tutorial/index.html"
+        },
+        {
+          "title": "Portal Satu Data Indonesia",
+          "url": "https://data.go.id/"
+        },
+        {
+          "title": "Badan Pusat Statistik",
+          "url": "https://www.bps.go.id/"
+        },
+        {
+          "title": "ACM/IEEE-CS/AAAI, Computer Science Curricula 2023, knowledge areas",
+          "url": "https://csed.acm.org/knowledge-areas/"
+        }
+      ],
+      "contentPath": "content/kuliah-coding/modules/kul-u-102.md"
+    },
+    {
+      "id": "kul-u-201",
+      "title": "Otomasi Kerja dan Skrip",
+      "courseCodes": ["KUL-U-201"],
+      "knowledgeAreas": ["SDF", "SEC", "NC"],
+      "semester": "S3",
+      "prerequisites": ["kul-u-101"],
+      "audience": "mahasiswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "The Python Standard Library, Python Software Foundation",
+          "url": "https://docs.python.org/3/library/index.html"
+        },
+        {
+          "title": "RFC 9309, Robots Exclusion Protocol, IETF",
+          "url": "https://www.rfc-editor.org/rfc/rfc9309"
+        },
+        {
+          "title": "UU Nomor 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik (JDIH BPK)",
+          "url": "https://peraturan.bpk.go.id/Details/37589/uu-no-11-tahun-2008"
+        },
+        {
+          "title": "OWASP Top 10, OWASP Foundation",
+          "url": "https://owasp.org/www-project-top-ten/"
+        },
+        {
+          "title": "Git Reference, git-scm.com",
+          "url": "https://git-scm.com/docs"
+        },
+        {
+          "title": "ACM/IEEE-CS/AAAI, Computer Science Curricula 2023, knowledge areas",
+          "url": "https://csed.acm.org/knowledge-areas/"
+        }
+      ],
+      "contentPath": "content/kuliah-coding/modules/kul-u-201.md"
     }
   ]
 }
