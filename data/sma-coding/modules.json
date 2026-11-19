@@ -5110,6 +5110,332 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xii1-m14.md"
+    },
+    {
+      "id": "d-xii2-m1",
+      "title": "Perencanaan proyek akhir",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025 (Proses Rekayasa)",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "scikit-learn: Cross-validation, evaluating estimator performance",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m1.md"
+    },
+    {
+      "id": "d-xii2-m2",
+      "title": "Rancangan (kelas XII semester 2)",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python: hashlib, secure hashes and message digests",
+          "url": "https://docs.python.org/3/library/hashlib.html"
+        },
+        {
+          "title": "scikit-learn: Cross-validation, evaluating estimator performance",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m2.md"
+    },
+    {
+      "id": "d-xii2-m3",
+      "title": "Sprint 1: data",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Common pitfalls and recommended practices",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "pandas: DataFrame.duplicated",
+          "url": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.duplicated.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m3.md"
+    },
+    {
+      "id": "d-xii2-m4",
+      "title": "Sprint 1: garis dasar",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: DummyClassifier",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.dummy.DummyClassifier.html"
+        },
+        {
+          "title": "scikit-learn: precision_recall_fscore_support",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_recall_fscore_support.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m4.md"
+    },
+    {
+      "id": "d-xii2-m5",
+      "title": "Sprint 2: model",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: cross_validate",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html"
+        },
+        {
+          "title": "scikit-learn: RandomForestClassifier",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m5.md"
+    },
+    {
+      "id": "d-xii2-m6",
+      "title": "Sprint 2: evaluasi",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: cross_val_predict",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_val_predict.html"
+        },
+        {
+          "title": "scikit-learn: confusion_matrix",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m6.md"
+    },
+    {
+      "id": "d-xii2-m7",
+      "title": "Sprint 3: penyempurnaan",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Tuning the decision threshold for class prediction",
+          "url": "https://scikit-learn.org/stable/modules/classification_threshold.html"
+        },
+        {
+          "title": "scikit-learn: Common pitfalls and recommended practices",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m7.md"
+    },
+    {
+      "id": "e-xii2-m1",
+      "title": "Membaca hasil nyata",
+      "cpItems": [],
+      "weekCodes": ["E-XII2-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "NIST/SEMATECH e-Handbook of Statistical Methods: 7.2.4.1. Confidence intervals",
+          "url": "https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm"
+        },
+        {
+          "title": "IBM Quantum Platform: qiskit.primitives.StatevectorSampler",
+          "url": "https://quantum.cloud.ibm.com/docs/en/api/qiskit/qiskit.primitives.StatevectorSampler"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii2-m1.md"
+    },
+    {
+      "id": "e-xii2-m2",
+      "title": "Mitigasi derau (konsep)",
+      "cpItems": [],
+      "weekCodes": ["E-XII2-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii2-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Platform: Overview of noise management techniques",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/error-mitigation-and-suppression-techniques"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii2-m2.md"
+    },
+    {
+      "id": "e-xii2-m3",
+      "title": "Pengayaan: algoritma hibrida (konsep)",
+      "cpItems": [],
+      "weekCodes": ["E-XII2-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii2-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Platform: Variational Quantum Eigensolver (tutorial)",
+          "url": "https://quantum.cloud.ibm.com/docs/en/tutorials/variational-quantum-eigensolver"
+        },
+        {
+          "title": "Farhi, Goldstone, Gutmann: A Quantum Approximate Optimization Algorithm (arXiv)",
+          "url": "https://arxiv.org/abs/1411.4028"
+        },
+        {
+          "title": "Peruzzo dkk.: A variational eigenvalue solver on a quantum processor (arXiv)",
+          "url": "https://arxiv.org/abs/1304.3061"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii2-m3.md"
+    },
+    {
+      "id": "e-xii2-m4",
+      "title": "Dampak ke keamanan informasi (konsep)",
+      "cpItems": [],
+      "weekCodes": ["E-XII2-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii2-m3", "e-xii1-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "NIST: Post-Quantum Cryptography (proyek)",
+          "url": "https://csrc.nist.gov/projects/post-quantum-cryptography"
+        },
+        {
+          "title": "NIST: Post-Quantum Cryptography FAQs",
+          "url": "https://csrc.nist.gov/projects/post-quantum-cryptography/faqs"
+        },
+        {
+          "title": "IBM Quantum Learning: Shor's algorithm",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/phase-estimation-and-factoring/shor-algorithm"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii2-m4.md"
+    },
+    {
+      "id": "e-xii2-m5",
+      "title": "Etika, ekspektasi, dan karier",
+      "cpItems": [],
+      "weekCodes": ["E-XII2-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii2-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Preskill: Quantum Computing in the NISQ era and beyond (arXiv)",
+          "url": "https://arxiv.org/abs/1801.00862"
+        },
+        {
+          "title": "NIST: Post-Quantum Cryptography (proyek)",
+          "url": "https://csrc.nist.gov/projects/post-quantum-cryptography"
+        },
+        {
+          "title": "NIST: Post-Quantum Cryptography FAQs",
+          "url": "https://csrc.nist.gov/projects/post-quantum-cryptography/faqs"
+        },
+        {
+          "title": "Bennett, Bernstein, Brassard, Vazirani: Strengths and Weaknesses of Quantum Computing (arXiv)",
+          "url": "https://arxiv.org/abs/quant-ph/9701001"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii2-m5.md"
+    },
+    {
+      "id": "e-xii2-m6",
+      "title": "Proyek akhir: rancangan",
+      "cpItems": [],
+      "weekCodes": ["E-XII2-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii2-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Grover's algorithm (Analysis)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/grover-algorithm/analysis"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii2-m6.md"
+    },
+    {
+      "id": "e-xii2-m7",
+      "title": "Proyek akhir: implementasi I",
+      "cpItems": [],
+      "weekCodes": ["E-XII2-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii2-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Platform: qiskit.quantum_info.Statevector",
+          "url": "https://quantum.cloud.ibm.com/docs/en/api/qiskit/qiskit.quantum_info.Statevector"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii2-m7.md"
     }
   ]
 }
