@@ -10,7 +10,7 @@
 import { RenderRequestError } from "../render/errors";
 import { renderModule, renderModuleLearnerSheet } from "../render/module";
 import type { CommandContext } from "./command";
-import { EXIT_USAGE_ERROR, EXIT_VALIDATION_FAILURE } from "./command";
+import { cliOf, EXIT_USAGE_ERROR, EXIT_VALIDATION_FAILURE } from "./command";
 import type { ModuleLoadResult } from "./module-content";
 
 export type ModuleOutput =
@@ -36,7 +36,7 @@ export function buildModuleOutput(
     };
   }
   if (loaded.learnerSheet === undefined) {
-    ctx.stderr(`osn render modul: module "${loaded.module.id}" has no learner sheet.\n`);
+    ctx.stderr(`${cliOf(ctx)} render modul: module "${loaded.module.id}" has no learner sheet.\n`);
     return { ok: false, exitCode: EXIT_USAGE_ERROR };
   }
   try {
@@ -46,7 +46,7 @@ export function buildModuleOutput(
     };
   } catch (cause) {
     if (cause instanceof RenderRequestError) {
-      ctx.stderr(`osn render modul: ${cause.message}\n`);
+      ctx.stderr(`${cliOf(ctx)} render modul: ${cause.message}\n`);
       return { ok: false, exitCode: EXIT_VALIDATION_FAILURE };
     }
     throw cause;

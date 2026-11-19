@@ -6,6 +6,7 @@
  */
 
 import type { PrivacyScanFinding } from "../domain/privacy-scan";
+import { DEFAULT_CLI_NAME } from "./command";
 import type { PrivacyScanParseIssue } from "./privacy-scan-loader";
 
 /** The full result of one `osn privacy-check` run, ready to format. */
@@ -46,8 +47,12 @@ function groupByFile(
 }
 
 /** Human-readable text output for `osn privacy-check`, grouped by file. Never prints a finding's value -- only `file`, in-file `path`, and `key`. */
-export function formatPrivacyCheckText(result: PrivacyCheckResult, dataDir: string): string {
-  const lines: string[] = [`osn privacy-check: scanning ${dataDir}`];
+export function formatPrivacyCheckText(
+  result: PrivacyCheckResult,
+  dataDir: string,
+  cli: string = DEFAULT_CLI_NAME,
+): string {
+  const lines: string[] = [`${cli} privacy-check: scanning ${dataDir}`];
 
   if (result.ok) {
     lines.push(
@@ -70,7 +75,7 @@ export function formatPrivacyCheckText(result: PrivacyCheckResult, dataDir: stri
   if (result.parseIssues.length > 0) {
     lines.push("");
     lines.push(
-      `Warning: ${result.parseIssues.length} file/line(s) could not be parsed as JSON and were skipped (this is not a privacy finding -- run "osn validate" to check corpus JSON validity):`,
+      `Warning: ${result.parseIssues.length} file/line(s) could not be parsed as JSON and were skipped (this is not a privacy finding -- run "${cli} validate" to check corpus JSON validity):`,
     );
     for (const issue of result.parseIssues) {
       lines.push(`  - ${issue.file}: ${issue.message}`);

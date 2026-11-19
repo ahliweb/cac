@@ -7,6 +7,15 @@ issues, `src/render/`). It has no external CLI framework dependency
 (TR-11) -- subcommand dispatch, flag parsing, and help text are all
 hand-rolled in `src/cli/run-cli.ts`.
 
+The CLI is also available as `cac` (Curriculum as Code, the canonical
+name; entry `src/cli/cac.ts`, `bin.cac` in `package.json`). `osn` is an
+alias with identical behaviour: both entries call the same `runCli`, so
+commands, flags, `--json` output and exit codes are the same, and only the
+name printed in usage, help and message prefixes follows the name you
+typed (`cac validate: ...` versus `osn validate: ...`). Titles of saved
+Markdown artefacts (for example `# osn checklist:`) do not change. The rest
+of this reference writes `osn`; read it as `cac` or `osn`.
+
 ## Synopsis
 
 ```sh

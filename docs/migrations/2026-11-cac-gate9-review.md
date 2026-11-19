@@ -1,7 +1,7 @@
 # Tinjauan Silang dan Usulan Gate 9 (Kesiapan Implementasi F2) Migrasi OSN ke CaC
 
 ## Metadata
-- Version: v1.1.0
+- Version: v1.2.0
 - Last updated: 2026-11-20
 - Status: **Gate 9 PASSED, diputuskan pemilik 2026-11-20** lewat dialog pilihan (opsi "PASSED (Disarankan)"), hanya untuk kesiapan implementasi F2. Rename repository belum dilakukan dan tetap menunggu Gate 15 serta izin eksekusi terpisah.
 - Issue: #156 (turunan epik #150, fase F1); mendukung seluruh IDENTITY-CAC-001..010
@@ -191,7 +191,7 @@ Tidak masuk dialog karena bukan keputusan pemilik saat ini, belum waktunya, atau
 | Butir | Alasan ditunda | Ditunda ke |
 | --- | --- | --- |
 | U-01, U-03, U-04, U-05, U-06, U-07 | Permintaan informasi (siapa memegang klon, repo privat atau akun lain, integrasi non-GitHub, isi Wiki dan Projects, aplikasi terpasang, tautan pihak lain), bukan pilihan antar opsi; hanya mengikat pada G-03 Gate 15. U-02 sudah dilipat ke pertanyaan 2 | F3 (sebelum G-03); dijawab di issue #152 atau issue F3 |
-| K7 (wording final help `cac`) | Teks final hanya bisa dinilai dalam PR F2; pertanyaan 2 hanya menyetujui prosesnya | F2/01 (persetujuan di PR) |
+| K7 (wording final help `cac`) | Teks final hanya bisa dinilai dalam PR F2; pertanyaan 2 hanya menyetujui prosesnya | **Diputuskan pemilik 2026-11-20** lewat dialog pilihan (opsi "Setujui apa adanya (Disarankan)"): wording help `cac` di PR #258 (#251) disetujui tanpa perubahan |
 | Evaluasi peringatan runtime alias (K2 opsi C) dan jadwal penghapusan `osn` | Perlu hasil inventaris consumer dan data sesudah rename; tidak bisa diputuskan sekarang | F4, setelah inventaris consumer |
 | H-01..H-07 (rehearsal repo uji) | Aktivitas manusia nyata; pilihan di dialog tidak menggantikannya | F3, oleh pemilik |
 | X-02 (cakupan `check:requirements` untuk `IDENTITY-CAC-*`) | Keputusan teknis orchestrator, bukan hak pemilik; perubahan skrip di luar scope #156 | F2/05 (usulan issue chore) |
@@ -206,6 +206,9 @@ Tidak masuk dialog karena bukan keputusan pemilik saat ini, belum waktunya, atau
 - [releasing.md](../development/releasing.md); [AGENTS.md](../../AGENTS.md) (verifikasi dan aturan koordinasi).
 
 ## Changelog
+### 2026-11-20 - v1.2.0
+- Mencatat keputusan pemilik atas K7: wording help `cac` di PR #258 (#251) disetujui apa adanya.
+
 ### 2026-11-20 - v1.1.0
 - Mencatat keputusan pemilik lewat dialog pilihan: Gate 9 PASSED (kesiapan F2 saja), paket F2 sesuai rekomendasi, ruleset diaktifkan setelah diuji, aturan F3 sesuai rekomendasi. X-03 dan X-13 diperbaiki orchestrator.
 

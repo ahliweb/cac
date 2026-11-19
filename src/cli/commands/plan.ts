@@ -10,12 +10,13 @@
 import { buildCohortPlan, type CohortPlan } from "../../domain/cohort-plan";
 import { SMA_CODING_PROGRAM_ID } from "../../schema/sma-common";
 import type { Command } from "../command";
-import { EXIT_SUCCESS, EXIT_USAGE_ERROR } from "../command";
+import { cliOf, DEFAULT_CLI_NAME, EXIT_SUCCESS, EXIT_USAGE_ERROR } from "../command";
 import { formatPlanJson, formatPlanMarkdown } from "../format-plan";
 import { rejectNonOsnProgram, resolveProgramOption } from "../program-loader";
 import { runSmaPlan } from "../sma-commands";
 
-const HELP_TEXT = `osn plan -- generate the dated 28-week cohort calendar
+function helpText(cli: string): string {
+  return `${cli} plan -- generate the dated 28-week cohort calendar
 
 Builds the §4 28-week operational calendar from a cohort start date:
 per-week date ranges, focus, session dates, mini-contest and checkpoint
@@ -25,8 +26,8 @@ silently overlapping -- see docs/cli/README.md's "osn plan" section for
 the exact week-shifting and session-date rules.
 
 Usage:
-  osn plan --start <YYYY-MM-DD> [options]
-  osn plan --program sma-coding --track <A|B|C|D|E> [--kelas <X|XI|XII>] [--semester <kode>] [options]
+  ${cli} plan --start <YYYY-MM-DD> [options]
+  ${cli} plan --program sma-coding --track <A|B|C|D|E> [--kelas <X|XI|XII>] [--semester <kode>] [options]
 
 Options:
   --start <date>          Cohort start date, ISO YYYY-MM-DD. Required (osn).
@@ -57,10 +58,11 @@ Options:
 
 Exit codes:
   0   success.
-  1   the sma-coding corpus fails validation (run osn validate).
+  1   the sma-coding corpus fails validation (run ${cli} validate).
   2   usage error: missing --start (osn) or --track (sma-coding), an
       invalid/non-ISO date, an unknown --target-stage, --track, --kelas,
       --semester, --format, or an unknown --program.`;
+}
 
 /** Extracts the value following the first occurrence of `flag` in `args`, or `undefined` if `flag` is absent. */
 function readFlagValue(args: readonly string[], flag: string): string | undefined {
@@ -74,9 +76,10 @@ function readFlagValue(args: readonly string[], flag: string): string | undefine
 export const planCommand: Command = {
   name: "plan",
   summary: "Generate the dated 28-week cohort calendar from a start date.",
-  help: () => HELP_TEXT,
+  help: (cli = DEFAULT_CLI_NAME) => helpText(cli),
 
   async run(rawArgs, ctx) {
+    const cli = cliOf(ctx);
     const resolved = await resolveProgramOption("plan", rawArgs, ctx);
     if (!resolved.ok) {
       return resolved.exitCode;
@@ -90,13 +93,15 @@ export const planCommand: Command = {
     }
     const args = resolved.args;
     if (!args.includes("--start")) {
-      ctx.stderr('osn plan: --start <YYYY-MM-DD> is required. Run "osn plan --help" for usage.\n');
+      ctx.stderr(
+        `${cli} plan: --start <YYYY-MM-DD> is required. Run "${cli} plan --help" for usage.\n`,
+      );
       return EXIT_USAGE_ERROR;
     }
 
     const startValue = readFlagValue(args, "--start");
     if (startValue === undefined) {
-      ctx.stderr("osn plan: --start requires a date argument (YYYY-MM-DD).\n");
+      ctx.stderr(`${cli} plan: --start requires a date argument (YYYY-MM-DD).\n`);
       return EXIT_USAGE_ERROR;
     }
 
@@ -104,7 +109,7 @@ export const planCommand: Command = {
     if (args.includes("--exclude")) {
       const excludeValue = readFlagValue(args, "--exclude");
       if (excludeValue === undefined) {
-        ctx.stderr("osn plan: --exclude requires a comma-separated list of dates.\n");
+        ctx.stderr(`${cli} plan: --exclude requires a comma-separated list of dates.\n`);
         return EXIT_USAGE_ERROR;
       }
       excludedDates = excludeValue
@@ -117,7 +122,7 @@ export const planCommand: Command = {
     if (args.includes("--target-stage")) {
       const targetStageValue = readFlagValue(args, "--target-stage");
       if (targetStageValue === undefined) {
-        ctx.stderr("osn plan: --target-stage requires a stage id argument.\n");
+        ctx.stderr(`${cli} plan: --target-stage requires a stage id argument.\n`);
         return EXIT_USAGE_ERROR;
       }
       targetStage = targetStageValue;
@@ -128,7 +133,7 @@ export const planCommand: Command = {
       const formatValue = readFlagValue(args, "--format");
       if (formatValue !== "md" && formatValue !== "json") {
         ctx.stderr(
-          `osn plan: --format must be "md" or "json"; received ${JSON.stringify(formatValue ?? "")}.\n`,
+          `${cli} plan: --format must be "md" or "json"; received ${JSON.stringify(formatValue ?? "")}.\n`,
         );
         return EXIT_USAGE_ERROR;
       }
@@ -143,7 +148,7 @@ export const planCommand: Command = {
         ...(targetStage !== undefined ? { targetStage } : {}),
       });
     } catch (cause) {
-      ctx.stderr(`osn plan: ${(cause as Error).message}\n`);
+      ctx.stderr(`${cli} plan: ${(cause as Error).message}\n`);
       return EXIT_USAGE_ERROR;
     }
 

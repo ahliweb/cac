@@ -24,6 +24,20 @@ export interface CommandContext {
   readonly cwd: string;
   readonly stdout: (text: string) => void;
   readonly stderr: (text: string) => void;
+  /**
+   * The name the CLI was invoked as (`cac` or `osn`), used for every command
+   * name printed in usage, help and error prefixes. Optional so a context
+   * built without it behaves exactly as before: the default is `osn`.
+   */
+  readonly cli?: string;
+}
+
+/** The legacy CLI name, used when no caller name is given. */
+export const DEFAULT_CLI_NAME = "osn";
+
+/** The caller name of `ctx`, defaulting to {@link DEFAULT_CLI_NAME}. */
+export function cliOf(ctx: CommandContext): string {
+  return ctx.cli ?? DEFAULT_CLI_NAME;
 }
 
 /** One `osn` subcommand. */
@@ -32,8 +46,8 @@ export interface Command {
   readonly name: string;
   /** A one-line summary, shown in the global `osn --help` command list. */
   readonly summary: string;
-  /** This command's own `osn <name> --help` text. Called by the dispatcher, not by the command itself -- see `run-cli.ts`. */
-  readonly help: () => string;
+  /** This command's own `<cli> <name> --help` text, with the caller name `cli` (default `osn`). Called by the dispatcher, not by the command itself -- see `run-cli.ts`. */
+  readonly help: (cli?: string) => string;
   /**
    * Runs the command. `args` is `argv` with the subcommand name and the
    * global `--json`/`--help`/`-h` flags already stripped out by the

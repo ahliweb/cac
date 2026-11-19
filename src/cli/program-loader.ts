@@ -21,7 +21,7 @@ import { SMA_CODING_PROGRAM_ID } from "../schema/sma-common";
 import { TK_CODING_PROGRAM_ID } from "../schema/tk-common";
 import { topicFamiliesSchema } from "../schema/topic-family";
 import type { CommandContext } from "./command";
-import { EXIT_USAGE_ERROR, EXIT_VALIDATION_FAILURE } from "./command";
+import { cliOf, EXIT_USAGE_ERROR, EXIT_VALIDATION_FAILURE } from "./command";
 
 /** The repository's `data/` directory, resolved from this file so it is independent of the cwd. */
 export const DATA_ROOT = resolve(import.meta.dir, "../../data");
@@ -114,8 +114,8 @@ export function hasLearnerSheets(id: string): boolean {
 }
 
 /** The `render modul` wording of the refusal message of programme `id` (it needs the programme's `modules.json`). */
-function moduleCommands(id: string): string {
-  const base = `"osn render modul --program ${id} --id <id>"`;
+function moduleCommands(id: string, cli: string): string {
+  const base = `"${cli} render modul --program ${id} --id <id>"`;
   return hasLearnerSheets(id)
     ? `${base} (tambahkan --lembar untuk lembar anak; perlu data/${id}/modules.json)`
     : `${base} (perlu data/${id}/modules.json)`;
@@ -140,12 +140,13 @@ export function rejectNonOsnProgram(
     return undefined;
   }
   const id = program.id;
+  const cli = cliOf(ctx);
   const supported =
     id === SMA_CODING_PROGRAM_ID
-      ? `Untuk program ${id} tersedia "osn plan --program ${id} --track <jalur>", "osn render lembar-siswa --program ${id} --week <kode-minggu>", "osn render modul --program ${id} --id <id>", "osn validate --program ${id}" dan "bun run check:fidelity --program ${id}".`
-      : `"osn plan" dan "osn render lembar-siswa" hanya tersedia untuk program "${DEFAULT_PROGRAM_ID}" dan "${SMA_CODING_PROGRAM_ID}"; program ${id} didukung oleh ${moduleCommands(id)}, "osn validate --program ${id}" dan "bun run check:fidelity --program ${id}".`;
+      ? `Untuk program ${id} tersedia "${cli} plan --program ${id} --track <jalur>", "${cli} render lembar-siswa --program ${id} --week <kode-minggu>", "${cli} render modul --program ${id} --id <id>", "${cli} validate --program ${id}" dan "bun run check:fidelity --program ${id}".`
+      : `"${cli} plan" dan "${cli} render lembar-siswa" hanya tersedia untuk program "${DEFAULT_PROGRAM_ID}" dan "${SMA_CODING_PROGRAM_ID}"; program ${id} didukung oleh ${moduleCommands(id, cli)}, "${cli} validate --program ${id}" dan "bun run check:fidelity --program ${id}".`;
   ctx.stderr(
-    `osn ${commandName}: belum didukung untuk program ${id}: perintah ini membaca corpus OSN ` +
+    `${cli} ${commandName}: belum didukung untuk program ${id}: perintah ini membaca corpus OSN ` +
       `(program "${DEFAULT_PROGRAM_ID}") saja dan tidak akan menyajikannya sebagai data ${id}. ` +
       `${supported}\n`,
   );
@@ -175,15 +176,16 @@ export async function resolveProgramOption(
   args: readonly string[],
   ctx: CommandContext,
 ): Promise<ProgramOptionResult> {
+  const cli = cliOf(ctx);
   const { rest, value } = extractProgramFlag(args);
   if (value === null) {
-    ctx.stderr(`osn ${commandName}: --program requires a programme id argument.\n`);
+    ctx.stderr(`${cli} ${commandName}: --program requires a programme id argument.\n`);
     return { ok: false, exitCode: EXIT_USAGE_ERROR };
   }
 
   const loaded = await loadProgramRegistry();
   if (!loaded.ok) {
-    ctx.stderr(`osn ${commandName}: ${loaded.message}\n`);
+    ctx.stderr(`${cli} ${commandName}: ${loaded.message}\n`);
     return {
       ok: false,
       exitCode: loaded.kind === "invalid" ? EXIT_VALIDATION_FAILURE : EXIT_USAGE_ERROR,
@@ -194,7 +196,7 @@ export async function resolveProgramOption(
   const program = findProgram(loaded.registry, id);
   if (program === undefined) {
     ctx.stderr(
-      `osn ${commandName}: unknown programme "${id}". Registered programmes: ${listProgramIds(loaded.registry)}.\n`,
+      `${cli} ${commandName}: unknown programme "${id}". Registered programmes: ${listProgramIds(loaded.registry)}.\n`,
     );
     return { ok: false, exitCode: EXIT_USAGE_ERROR };
   }

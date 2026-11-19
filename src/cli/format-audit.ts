@@ -5,6 +5,7 @@
  */
 
 import type { AuditResult } from "../domain/corpus-audit";
+import { DEFAULT_CLI_NAME } from "./command";
 
 /** Groups `findings` by `file`, preserving first-seen file order, then sorts each file's own findings by `path` for deterministic output. */
 function groupByFile(
@@ -33,9 +34,14 @@ function groupByFile(
 }
 
 /** Human-readable text output for `osn validate`, grouped by file so every problem in one file is easy to see together. */
-export function formatAuditText(result: AuditResult, dataDir: string, programId?: string): string {
+export function formatAuditText(
+  result: AuditResult,
+  dataDir: string,
+  programId?: string,
+  cli: string = DEFAULT_CLI_NAME,
+): string {
   const label = programId === undefined ? "" : `programme "${programId}", `;
-  const lines: string[] = [`osn validate: ${label}corpus at ${dataDir}`];
+  const lines: string[] = [`${cli} validate: ${label}corpus at ${dataDir}`];
 
   if (result.ok) {
     lines.push(
