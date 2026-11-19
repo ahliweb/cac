@@ -1,12 +1,12 @@
 ## Untuk siapa modul ini
 
-Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M7` silabus v1.4: keadaan kuantum tidak dapat digandakan, dan teleportasi (konsep). Prasyarat: modul `e-xi2-m6` (reversibilitas). Alat: kertas, kalkulator, dan Python 3 murni (tanpa pustaka tambahan dan tanpa akun) untuk menelusuri teleportasi pada simulator; kode bersifat opsional, hitungan tangan lebih dulu. Murid jalur A atau B boleh menerjemahkan program ke bahasa jalurnya.
+Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M7` silabus v1.4: keadaan kuantum tidak dapat digandakan, dan teleportasi (konsep). Prasyarat: modul `e-xi2-m6` (reversibilitas). Alat: kertas, kalkulator, dan Python 3 murni opsional; hitungan tangan lebih dulu.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur E adalah pengayaan di luar rumusan capaian pembelajaran (CP); minggu ini tidak punya irisan pengayaan, jadi modul ini tidak dihitung memenuhi butir CP mana pun.
+Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur E adalah pengayaan di luar rumusan CP; minggu ini tanpa irisan pengayaan, jadi modul ini tidak dihitung memenuhi butir CP mana pun.
 
 Aturan AI jalur ini: AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu, dan tanpa akun wajib. Saran: jawab dulu sendiri, baru minta penjelasan atau petunjuk bertahap. Setiap soal `Latihan` bertanda `AI: boleh` atau `AI: tanpa AI`.
 
-Catatan untuk guru: langkah teleportasi, biayanya (satu e-bit dan dua bit klasik), bahwa yang berpindah adalah informasi kuantum dan bukan materi, bahwa keadaan Alice sesudahnya menjadi `|0>` atau `|1>`, teorema *no-cloning*, dan bahwa mengambil informasi dari keadaan tak dikenal umumnya mengganggunya dibaca penyusun dari halaman IBM Quantum Learning "Quantum teleportation", per 2026-11-19. Bukti kelinearan di modul ini adalah penyajian penyusun atas argumen baku, diperiksa angka untuk satu keadaan; bukan kutipan halaman itu. Tidak ada klaim tentang eksperimen teleportasi nyata. Simulator memperlihatkan semua amplitudo; pada perangkat nyata hanya hasil bacaan yang diperoleh `[belum terverifikasi]` di luar halaman yang dibaca.
+Catatan untuk guru: langkah dan biaya teleportasi (satu e-bit, dua bit klasik), bahwa yang berpindah adalah informasi kuantum, keadaan Alice sesudahnya `|0>` atau `|1>`, teorema *no-cloning*, dan bahwa mengambil informasi dari keadaan tak dikenal umumnya mengganggunya dibaca penyusun dari halaman IBM Quantum Learning "Quantum teleportation", per 2026-11-19. Bukti kelinearan di modul ini adalah penyajian penyusun atas argumen baku, diperiksa angka untuk satu keadaan; bukan kutipan halaman itu. Tanpa klaim tentang eksperimen nyata. Simulator memperlihatkan semua amplitudo; pada perangkat nyata hanya hasil bacaan `[belum terverifikasi]` di luar halaman itu.
 
 ## Ingat kembali
 
@@ -21,32 +21,31 @@ Jawab dari ingatan, baru cek di bagian kunci.
 
 Setelah modul ini kamu dapat:
 
-- menjelaskan mengapa CNOT hanya menyalin keadaan dasar dan bukan keadaan sembarang, dan menyebut argumen kelinearannya;
-- menyebut bahwa tidak ada gerbang yang menyalin keadaan kuantum sembarang yang tidak diketahui;
+- menjelaskan mengapa CNOT hanya menyalin keadaan dasar, dengan argumen kelinearan, dan menyebut bahwa tidak ada gerbang yang menyalin keadaan sembarang;
 - menelusuri sirkuit teleportasi pada simulator dan menunjukkan keadaan Bob sebelum dan sesudah koreksi;
 - menjelaskan mengapa teleportasi tidak mengirim informasi lebih cepat dari cahaya dan tidak menyisakan salinan.
 
 ## Prediksi dulu
 
-Qubit pertama `(0,6 ; 0,8)` dan qubit kedua `|0>`, lalu CNOT. Sebelum membaca contoh, tebak dan tulis: (1) apakah hasilnya salinan `(0,6 ; 0,8)` kali `(0,6 ; 0,8)`; (2) apakah Alice cukup mengirim dua bit klasik kepada Bob supaya Bob memegang qubit yang sama dengan qubit Alice, tanpa pasangan terjerat; (3) setelah teleportasi, apakah Alice masih memegang keadaan semula.
+Qubit pertama `(0,6 ; 0,8)`, qubit kedua `|0>`, lalu CNOT. Tebak dan tulis: (1) apakah hasilnya salinan `(0,6 ; 0,8)` kali `(0,6 ; 0,8)`; (2) apakah Alice cukup mengirim dua bit klasik kepada Bob agar Bob memegang qubit yang sama, tanpa pasangan terjerat; (3) setelah teleportasi, apakah Alice masih memegang keadaan semula.
 
 ## Contoh terselesaikan
 
-**CNOT menyalin keadaan dasar.** `|x>|0>` menjadi `|x>|x>` untuk x = 0 dan 1. Itu terlihat seperti menyalin. Tetapi salinan yang kita inginkan dari `(a, b)` adalah `(a, b)` kali `(a, b) = (a², ab, ab, b²)`. CNOT pada `(a, b)` kali `|0>` memberi `(a, 0, 0, b)`. Untuk `(0,6 ; 0,8)`: hasil CNOT `(0,6 ; 0 ; 0 ; 0,8)`, salinan yang diinginkan `(0,36 ; 0,48 ; 0,48 ; 0,64)`. Keduanya berbeda, dan hasil CNOT terjerat (`a*d = 0,48`, `b*c = 0`).
+**CNOT menyalin keadaan dasar.** `|x>|0>` menjadi `|x>|x>` untuk x = 0 dan 1. Salinan yang kita inginkan dari `(a, b)` adalah `(a, b)` kali `(a, b) = (a², ab, ab, b²)`. CNOT pada `(a, b)` kali `|0>` memberi `(a, 0, 0, b)`. Untuk `(0,6 ; 0,8)`: hasil CNOT `(0,6 ; 0 ; 0 ; 0,8)`, salinan yang diinginkan `(0,36 ; 0,48 ; 0,48 ; 0,64)`. Keduanya berbeda; hasil CNOT terjerat (`a*d = 0,48`, `b*c = 0`).
 
-**Argumen kelinearan.** Misalkan suatu gerbang U menyalin dua keadaan dasar: `U|0, 0> = |0, 0>` dan `U|1, 0> = |1, 1>`. Gerbang adalah perkalian matriks, yang linear: `U(a|0, 0> + b|1, 0>) = a|0, 0> + b|1, 1>`. Itu `(a, 0, 0, b)`, sedangkan salinan yang diinginkan `(a², ab, ab, b²)` mempunyai `ab` tidak nol bila `a` dan `b` keduanya tidak nol. Keduanya tidak sama, jadi tidak ada U yang menyalin keadaan dasar sekaligus semua superposisinya. Teorema *no-cloning* yang disebut halaman IBM menyatakan hal yang lebih umum: tidak ada cara menyalin keadaan kuantum sembarang yang tidak diketahui. Simulator yang menyalin vektor dan membaca semua amplitudonya melakukan sesuatu yang tidak dapat dilakukan pada qubit nyata.
+**Argumen kelinearan.** Misalkan gerbang U menyalin dua keadaan dasar: `U|0, 0> = |0, 0>` dan `U|1, 0> = |1, 1>`. Perkalian matriks linear: `U(a|0, 0> + b|1, 0>) = a|0, 0> + b|1, 1>`. Itu `(a, 0, 0, b)`, sedangkan salinan `(a², ab, ab, b²)` punya `ab` tidak nol bila `a` dan `b` tidak nol. Jadi tidak ada U yang menyalin keadaan dasar sekaligus semua superposisinya. Teorema *no-cloning* yang disebut halaman IBM menyatakan hal yang lebih umum: tidak ada cara menyalin keadaan kuantum sembarang yang tidak diketahui. Simulator yang menyalin vektor dan membaca semua amplitudonya melakukan sesuatu yang tidak dapat dilakukan pada qubit nyata.
 
-**Teleportasi.** Alice memegang qubit `Q` dengan keadaan tidak diketahui `(alfa, beta)` dan qubit `A`; Bob memegang qubit `B`; `A` dan `B` berada pada keadaan Bell `(h, 0, 0, h)`. Alice tidak dapat mengirim `Q` langsung, hanya bit klasik. Langkahnya:
+**Teleportasi.** Alice memegang qubit `Q` dengan keadaan tidak diketahui `(alfa, beta)` dan qubit `A`; Bob memegang qubit `B`; `A` dan `B` berada pada keadaan Bell `(h, 0, 0, h)`. Alice hanya dapat mengirim bit klasik. Langkahnya:
 
 1. Alice memasang CNOT dengan `Q` sebagai kontrol dan `A` sebagai target, lalu H pada `Q`.
 2. Alice membaca `Q` dan `A`, mendapat dua bit, dan mengirimnya kepada Bob lewat kanal klasik.
 3. Bob memasang X pada `B` bila hasil `A` bernilai 1, lalu Z pada `B` bila hasil `Q` bernilai 1.
 
-Hasilnya: `B` berada pada `(alfa, beta)`. Keempat hasil Alice masing-masing berpeluang 0,25, tidak bergantung pada `(alfa, beta)`. Alice tidak lagi memegang keadaan semula: `Q` menjadi `|0>` atau `|1>` karena dibaca, dan pasangan terjerat "terpakai". Yang berpindah adalah informasi kuantum, bukan materi; keadaan tidak digandakan, melainkan dipindahkan.
+Hasilnya: `B` berada pada `(alfa, beta)`. Keempat hasil Alice masing-masing berpeluang 0,25, tidak bergantung pada `(alfa, beta)`. Alice tidak lagi memegang keadaan semula: `Q` menjadi `|0>` atau `|1>` karena dibaca, dan pasangan terjerat terpakai. Yang berpindah adalah informasi kuantum, bukan materi.
 
-**Tidak lebih cepat dari cahaya.** Sebelum dua bit klasik tiba, Bob tidak tahu koreksi apa yang harus dipasang. Program di bawah mencetak peluang Bob membaca 0 sebelum koreksi: selalu 0,5 untuk `(alfa, beta)` yang mana pun, jadi pembacaan Bob sebelum menerima pesan tidak memberi tahu apa pun tentang `(alfa, beta)`. Informasi baru "tiba" bersama dua bit klasik, yang dibatasi kecepatan kanal biasa.
+**Tidak lebih cepat dari cahaya.** Sebelum dua bit klasik tiba, Bob tidak tahu koreksinya. Program mencetak peluang Bob membaca 0 sebelum koreksi: selalu 0,5 untuk `(alfa, beta)` mana pun, jadi pembacaan Bob tidak memberi tahu apa pun tentang keadaan itu. Informasi baru "tiba" bersama dua bit klasik, yang dibatasi kecepatan kanal biasa.
 
-Blok pertama menguji satu percobaan menyalin dengan CNOT:
+Blok pertama mencoba menyalin dengan CNOT:
 
 ```python
 def cnot_dua(v):
@@ -82,7 +81,7 @@ salinan diinginkan: (0.3600, 0.4800, 0.4800, 0.6400)
 hasil dapat difaktorkan (a*d = b*c)? False
 ```
 
-Blok kedua menelusuri teleportasi dengan fungsi gerbang yang sama seperti di `e-xi2-m4` (disalin ringkas), untuk tiga qubit `Q, A, B` dengan `Q` paling kiri:
+Blok kedua menelusuri teleportasi (fungsi gerbang disalin ringkas dari `e-xi2-m4`) untuk tiga qubit `Q, A, B`, `Q` paling kiri:
 
 ```python
 from math import sqrt
@@ -158,7 +157,7 @@ Q = (0.6, 0.8): P(Bob membaca 0 sebelum koreksi) = 0.5000
 Q = (0.8, -0.6): P(Bob membaca 0 sebelum koreksi) = 0.5000
 ```
 
-Bacaan hasilnya: pada tiap hasil Alice (`qa`: digit pertama hasil `Q`, kedua hasil `A`), Bob sebelum koreksi memegang keadaan berbeda, tetapi setelah koreksi yang sesuai ia selalu memegang `(0,6 ; 0,8)`. Program menelusuri amplitudo tanpa memilih hasil acak; pada perangkat nyata tiap shot memberi satu hasil acak.
+Bacaan hasilnya (`qa`: digit pertama hasil `Q`, kedua hasil `A`): Bob sebelum koreksi memegang keadaan berbeda, setelah koreksi selalu `(0,6 ; 0,8)`. Program menelusuri amplitudo tanpa memilih hasil acak.
 
 ## Contoh setengah jadi
 
@@ -177,7 +176,7 @@ if q == 1:                 # hasil qubit Q
 
 ## Soal Parsons
 
-Susun baris-baris di bawah (sudah diacak) menjadi bagian koreksi Bob. Penjorokan sengaja dihilangkan.
+Susun baris-baris di bawah (sudah diacak) menjadi koreksi Bob. Penjorokan sengaja dihilangkan.
 
 ```text
 (a) if a == 1:
@@ -188,15 +187,15 @@ Susun baris-baris di bawah (sudah diacak) menjadi bagian koreksi Bob. Penjorokan
 
 ## Latihan
 
-1. **Dengan tangan.** (`AI: tanpa AI`) Hitung CNOT pada `(0,8 ; -0,6)` kali `|0>`, bandingkan dengan salinan `(0,64 ; -0,48 ; -0,48 ; 0,36)`, dan periksa apakah hasil CNOT produk atau terjerat.
-2. **Koreksi.** (`AI: tanpa AI`) Pada teleportasi `(0,6 ; 0,8)`, Alice mendapat hasil `01` dan Bob memegang `(0,8 ; 0,6)`. Gerbang apa yang dipasang Bob, dan hasilnya? Ulangi untuk hasil `11` dengan Bob `(-0,8 ; 0,6)`.
-3. **Ubah keadaan.** (`AI: boleh`) Ubah `alfa, beta` pada program menjadi `0,8` dan `-0,6`, jalankan, dan bandingkan keadaan Bob sesudah koreksi dengan keadaan yang dikirim. Apakah peluang tiap hasil Alice berubah?
-4. **Rancang dulu.** (`AI: boleh`) Tulis pseudocode aturan koreksi Bob dari dua bit `(q, a)`: gerbang apa dan dalam urutan apa. Baru ubah menjadi kode bila mau.
-5. **Catatan pemakaian AI (opsional).** Bila memakai asisten AI, catat alat, tujuan, garis besar perintah, bagian yang dipakai, dan cara memeriksa jawabannya.
+1. **Dengan tangan.** (`AI: tanpa AI`) Hitung CNOT pada `(0,8 ; -0,6)` kali `|0>`, bandingkan dengan salinan `(0,64 ; -0,48 ; -0,48 ; 0,36)`, dan periksa produk atau terjerat.
+2. **Koreksi.** (`AI: tanpa AI`) Pada teleportasi `(0,6 ; 0,8)`, hasil Alice `01` dan Bob memegang `(0,8 ; 0,6)`: gerbang apa dan hasilnya? Ulangi untuk hasil `11` dengan Bob `(-0,8 ; 0,6)`.
+3. **Ubah keadaan.** (`AI: boleh`) Ubah `alfa, beta` menjadi `0,8` dan `-0,6`, jalankan, dan bandingkan keadaan Bob sesudah koreksi dengan yang dikirim. Apakah peluang hasil Alice berubah?
+4. **Rancang dulu.** (`AI: boleh`) Tulis pseudocode aturan koreksi Bob dari dua bit `(q, a)`: gerbang apa, urutan apa.
+5. **Catatan pemakaian AI (opsional).** Bila memakai asisten AI, catat alat, tujuan, garis besar perintah, bagian yang dipakai, dan cara memeriksanya.
 
 ## Latihan bercampur
 
-1. `A` dan `B` memulai teleportasi pada keadaan Bell `(h, 0, 0, h)`. Bagaimana kamu membangun keadaan itu dari `|00>`, dan apa peluang tiap hasil bila `A` dan `B` dibaca? (`e-xi2-m2`)
+1. Bagaimana membangun keadaan Bell `(h, 0, 0, h)` pasangan `A` dan `B` dari `|00>`, dan apa peluang tiap hasil bila dibaca? (`e-xi2-m2`)
 2. Keempat hasil Alice masing-masing berpeluang 0,25. Pada 1000 shot, berapa kali tiap hasil diharapkan, dan berapa simpangan wajarnya? (`e-xi1-m7`)
 3. Apakah koreksi Bob (X lalu Z) reversibel? Apakah pembacaan Alice reversibel? Jelaskan. (`e-xi2-m6`)
 
@@ -211,15 +210,14 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `e-xi2-m8` (satu minggu
 ## Kesalahan umum
 
 - **"Teleportasi memindahkan benda seperti di film."** Yang dipindahkan adalah informasi kuantum, bukan materi.
-- **"Teleportasi menggandakan qubit."** Keadaan Alice rusak karena pembacaan; hanya ada satu salinan akhir, di Bob.
-- **"Teleportasi lebih cepat dari cahaya."** Bob memerlukan dua bit klasik; sebelum itu, pembacaannya acak 50:50 apa pun keadaan yang dikirim.
-- **"CNOT menyalin qubit, jadi tak-dapat-menggandakan hanya masalah praktik."** CNOT hanya menyalin keadaan dasar; untuk superposisi ia menghasilkan keadaan terjerat, dan kelinearan melarang salinan umum.
-- **"Simulator membuktikan kita dapat menyalin keadaan."** Simulator menyalin vektor di memori komputer; qubit nyata tidak punya vektor yang dapat dibaca utuh.
+- **"Teleportasi menggandakan qubit."** Keadaan Alice rusak karena dibaca; hanya ada satu salinan, di Bob.
+- **"Teleportasi lebih cepat dari cahaya."** Bob memerlukan dua bit klasik; sebelum itu pembacaannya acak 50:50.
+- **"CNOT menyalin qubit."** Hanya keadaan dasar; superposisi menjadi keadaan terjerat.
+- **"Simulator membuktikan keadaan dapat disalin."** Simulator menyalin vektor di memori; qubit nyata tidak punya vektor yang dapat dibaca utuh.
 
 ## Cek mandiri
 
-- [ ] Saya dapat menunjukkan bahwa CNOT tidak menyalin `(0,6 ; 0,8)`.
-- [ ] Saya dapat menyebut argumen kelinearan untuk tak-dapat-menggandakan.
+- [ ] Saya dapat menunjukkan bahwa CNOT tidak menyalin `(0,6 ; 0,8)` dan menyebut argumen kelinearannya.
 - [ ] Saya dapat menyebut tiga langkah teleportasi.
 - [ ] Saya dapat menjelaskan mengapa teleportasi tidak lebih cepat dari cahaya.
 - [ ] Saya mencatat pemakaian AI bila saya memakainya.
@@ -228,7 +226,7 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `e-xi2-m8` (satu minggu
 
 **Ingat kembali.** 1: peluang hasil qubit kedua tidak bergantung pada apa yang dilakukan atau diukur pada qubit pertama, dan hasil pertama acak sehingga tidak dapat dipilih; korelasi hanya terlihat setelah membandingkan lewat kanal biasa. 2: H pada qubit 0, lalu CNOT dari qubit 0 ke 1, lalu CNOT dari qubit 1 ke 2. 3: operasi yang dapat dibalik tanpa kehilangan informasi, yaitu ada operasi kebalikan; gerbang kuantum: X, H, atau CNOT; gerbang klasik: Toffoli (atau NOT). 4: menyalin vektor keadaan dan membaca seluruh amplitudo kapan saja; pada qubit nyata hanya hasil pembacaan yang diperoleh (`[belum terverifikasi]`, lihat catatan guru).
 
-**Prediksi dulu.** (1) bukan: `(0,6 ; 0 ; 0 ; 0,8)` lawan `(0,36 ; 0,48 ; 0,48 ; 0,64)`; (2) tidak cukup: halaman IBM menyatakan bahwa mengirim qubit hanya lewat komunikasi klasik tidak mungkin, sehingga teleportasi memakai satu pasangan terjerat ditambah dua bit klasik; (3) tidak: `Q` menjadi `|0>` atau `|1>` karena dibaca. Banyak murid menjawab bahwa CNOT "menyalin" karena tabel keadaan dasarnya tampak begitu.
+**Prediksi dulu.** (1) bukan: `(0,6 ; 0 ; 0 ; 0,8)` lawan `(0,36 ; 0,48 ; 0,48 ; 0,64)`; (2) tidak cukup: halaman IBM menyatakan bahwa mengirim qubit hanya lewat komunikasi klasik tidak mungkin, sehingga teleportasi memakai satu pasangan terjerat ditambah dua bit klasik; (3) tidak: `Q` menjadi `|0>` atau `|1>` karena dibaca.
 
 **Contoh setengah jadi.** 1: `ab` dan `ab`; `-0,48` dan `-0,48`. 2: `0,8` dan `-0,6`. 3: `bob[1], bob[0]` (kedua komponen bertukar); `-1 * bob[1]`.
 

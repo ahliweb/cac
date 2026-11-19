@@ -1,12 +1,12 @@
 ## Untuk siapa modul ini
 
-Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M3` silabus v1.4: mengukur qubit terjerat. Prasyarat: modul `e-xi2-m2` (keadaan Bell). Alat: kertas, kalkulator, dan Quirk (peramban, tanpa akun). Contoh Python 3 murni bersifat opsional (tanpa pustaka tambahan dan tanpa akun); hitungan dikerjakan dengan tangan lebih dulu.
+Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M3` silabus v1.4: mengukur qubit terjerat. Prasyarat: modul `e-xi2-m2`. Alat: kertas, kalkulator, Quirk (tanpa akun), dan Python 3 murni opsional; hitungan tangan lebih dulu.
 
 Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur E adalah pengayaan di luar rumusan capaian pembelajaran (CP); minggu ini tidak punya irisan pengayaan, jadi modul ini tidak dihitung memenuhi butir CP mana pun.
 
 Aturan AI jalur ini: AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu, dan tanpa akun wajib. Saran: jawab dulu sendiri, baru minta penjelasan atau petunjuk bertahap. Setiap soal `Latihan` bertanda `AI: boleh` atau `AI: tanpa AI`.
 
-Catatan untuk guru: aturan membaca sebagian sistem (peluang dari kuadrat komponen yang cocok, keadaan sesudahnya dinormalkan) dan pernyataan bahwa peluang hasil satu sistem tidak boleh bergantung pada apakah sistem lain diukur (kalau tidak, komunikasi lebih cepat dari cahaya mungkin) dibaca penyusun dari halaman IBM Quantum Learning "Quantum information" (multiple systems), per 2026-11-19. Bahwa bit acak klasik yang dibagi dapat meniru korelasi "selalu sama" pada pembacaan 0/1 adalah hasil program di modul ini; pembeda sebenarnya disajikan di `E-XI2-M8` dan tidak dibuktikan di sini. Dokumentasi Python menjamin `random()` memberi deret sama untuk benih bulat yang sama.
+Catatan untuk guru: aturan membaca sebagian sistem (peluang dari kuadrat komponen yang cocok, keadaan sesudahnya dinormalkan) serta pernyataan bahwa peluang hasil satu sistem tidak bergantung pada pengukuran sistem lain dibaca penyusun dari halaman IBM Quantum Learning "Quantum information" (multiple systems), per 2026-11-19. Bahwa bit acak klasik yang dibagi dapat meniru korelasi "selalu sama" pada pembacaan 0/1 adalah hasil program di modul ini; pembeda sebenarnya disajikan di `E-XI2-M8` dan tidak dibuktikan di sini. Dokumentasi Python menjamin `random()` konsisten untuk benih sama.
 
 ## Ingat kembali
 
@@ -20,22 +20,22 @@ Jawab dari ingatan, baru cek di bagian kunci.
 
 Setelah modul ini kamu dapat:
 
-- menghitung peluang tiap hasil dua bit dan korelasinya (seberapa sering dua bit sama) dari keadaan Bell;
+- menghitung peluang hasil dua bit dan korelasinya dari keadaan Bell;
 - menghitung keadaan qubit kedua setelah qubit pertama dibaca, untuk keadaan terjerat dan keadaan produk;
 - menjelaskan mengapa hasil qubit terjerat tidak dapat dipakai mengirim pesan lebih cepat dari cahaya;
-- membandingkan histogram keadaan terjerat dengan keadaan produk dari simulasi seribu shot.
+- membandingkan histogram keadaan terjerat dan produk dari simulasi seribu shot.
 
 ## Prediksi dulu
 
-Keadaan Bell `(h, 0, 0, h)` dibaca pada kedua qubit, 1000 shot. Sebelum membaca contoh, tebak dan tulis: (1) hasil apa yang muncul dan kira-kira berapa kali masing-masing; (2) bila hanya qubit pertama dibaca dan hasilnya 0, apa yang kamu ketahui tentang qubit kedua; (3) apakah (2) berarti qubit pertama "mengirim pesan" ke qubit kedua.
+Keadaan Bell `(h, 0, 0, h)` dibaca 1000 shot. Tebak dan tulis: (1) hasil apa yang muncul dan berapa kali; (2) bila hanya qubit pertama dibaca dan hasilnya 0, apa yang kamu ketahui tentang qubit kedua; (3) apakah itu berarti qubit pertama "mengirim pesan".
 
 ## Contoh terselesaikan
 
-**Dua qubit dibaca.** Peluang hasil dua bit adalah kuadrat komponennya (`e-xi1-m12`). Untuk `(h, 0, 0, h)`: `00` dan `11` masing-masing 0,5, sedangkan `01` dan `10` nol. Bandingkan keadaan produk `(h, h)` kali `(h, h) = (0,5 ; 0,5 ; 0,5 ; 0,5)`: keempat hasil 0,25. **Korelasi** di sini berarti seberapa sering dua bit bernilai sama: pada keadaan Bell selalu, pada keadaan produk separuh waktu.
+**Dua qubit dibaca.** Peluang hasil dua bit adalah kuadrat komponennya. Untuk `(h, 0, 0, h)`: `00` dan `11` masing-masing 0,5, `01` dan `10` nol. Pada produk `(h, h)` kali `(h, h)` keempat hasil 0,25. **Korelasi** berarti seberapa sering dua bit sama: pada keadaan Bell selalu, pada produk separuh waktu.
 
-**Hanya qubit pertama dibaca.** Tulis `(a00, a01, a10, a11)`. Bila qubit pertama terbaca 0, peluangnya `a00² + a01²`, dan qubit kedua menjadi `(a00, a01)` dibagi akar peluang itu; bila terbaca 1, peluangnya `a10² + a11²` dan qubit kedua menjadi `(a10, a11)` yang dinormalkan. Untuk `(h, 0, 0, h)`: pertama 0 dengan peluang 0,5, lalu qubit kedua pasti `|0>`; pertama 1 dengan peluang 0,5, lalu qubit kedua pasti `|1>`. Untuk keadaan produk `(0,48 ; -0,36 ; 0,64 ; -0,48)`: hasil pertama 0 (peluang 0,36) maupun 1 (peluang 0,64) membuat qubit kedua `(0,8 ; -0,6)`, sama saja. Itulah cirinya: pada produk, hasil qubit pertama tidak memengaruhi qubit kedua; pada keadaan terjerat, memengaruhi.
+**Hanya qubit pertama dibaca.** Tulis `(a00, a01, a10, a11)`. Bila qubit pertama terbaca 0, peluangnya `a00² + a01²`, dan qubit kedua menjadi `(a00, a01)` dibagi akar peluang itu; bila terbaca 1, peluangnya `a10² + a11²` dan qubit kedua menjadi `(a10, a11)` yang dinormalkan. Untuk `(h, 0, 0, h)`: pertama 0 dengan peluang 0,5, lalu qubit kedua pasti `|0>`; pertama 1 dengan peluang 0,5, lalu qubit kedua pasti `|1>`. Untuk produk `(0,48 ; -0,36 ; 0,64 ; -0,48)`: hasil pertama 0 (peluang 0,36) maupun 1 (0,64) membuat qubit kedua `(0,8 ; -0,6)`. Jadi pada produk hasil qubit pertama tidak memengaruhi qubit kedua; pada keadaan terjerat, memengaruhi.
 
-**Tidak ada pesan.** Peluang qubit kedua terbaca 1 pada `(h, 0, 0, h)` adalah `a01² + a11² = 0,5`. Bila pemilik qubit pertama memasang X, kita dapat `(0, h, h, 0)` dan peluang qubit kedua terbaca 1 tetap 0,5; bila memasang Z, kita dapat `(h, 0, 0, -h)` dan peluangnya tetap 0,5. Pemilik qubit kedua melihat deret 0 dan 1 acak 50:50 apa pun yang dilakukan pemilik qubit pertama. Hasil pertama pun acak, sehingga pemilik qubit pertama tidak dapat memilih bit yang "dikirim". Korelasi baru tampak setelah kedua pihak **membandingkan catatan lewat kanal biasa**. Halaman IBM yang dibaca penyusun menyatakan hal serupa: peluang hasil satu sistem tidak bergantung pada apakah sistem lain diukur, karena kalau bergantung, komunikasi lebih cepat dari cahaya akan mungkin.
+**Tidak ada pesan.** Peluang qubit kedua terbaca 1 pada `(h, 0, 0, h)` adalah `a01² + a11² = 0,5`. Bila pemilik qubit pertama memasang X, kita dapat `(0, h, h, 0)`; bila Z, `(h, 0, 0, -h)`; peluang qubit kedua terbaca 1 tetap 0,5. Pemilik qubit kedua melihat deret acak 50:50 apa pun yang dilakukan pemilik qubit pertama, dan hasil pertama pun acak sehingga bit yang "dikirim" tidak dapat dipilih. Korelasi baru tampak setelah kedua pihak **membandingkan catatan lewat kanal biasa**. Halaman IBM menyatakan hal serupa: peluang hasil satu sistem tidak bergantung pada apakah sistem lain diukur, sebab kalau bergantung, komunikasi lebih cepat dari cahaya mungkin.
 
 **Satu peringatan jujur.** Dua amplop berisi salinan bit acak yang sama juga memberi hasil "selalu sama" (koin klasik di program). Pada pembacaan 0/1 saja, korelasi itu belum membedakan keadaan terjerat dari bit acak klasik yang dibagi; pembedanya ada pada pembacaan dengan cara lain, bahan `E-XI2-M8`.
 
@@ -107,7 +107,7 @@ P(kedua = 1), setelah X     : 0.5000
 P(kedua = 1), setelah Z     : 0.5000
 ```
 
-Bacaan hasilnya: pada keadaan Bell, `01` dan `10` nol dan `sama` tepat 1000; 495 dan 505 wajar di sekitar 500 (simpangan kira-kira 15,8). Pada keadaan produk, `sama` 488 dekat harapan 500; koin klasik memberi `sama` 1000 juga. Dua keadaan setelah X dan Z ditulis tangan di program (X pada qubit pertama menukar komponen pertama dengan ketiga dan kedua dengan keempat; Z mengganti tanda komponen ketiga dan keempat).
+Bacaan hasilnya: pada Bell `01` dan `10` nol dan `sama` tepat 1000; 495 dan 505 wajar (simpangan kira-kira 15,8). Pada produk `sama` 488 dekat harapan 500; koin klasik juga 1000. Keadaan setelah X dan Z ditulis tangan di program (X menukar komponen 1 dengan 3 dan 2 dengan 4; Z mengganti tanda komponen 3 dan 4).
 
 Fungsi berikut membaca hanya qubit pertama:
 
@@ -156,7 +156,7 @@ produk (0,48 ; -0,36 ; 0,64 ; -0,48)
   pertama terbaca 1: peluang 0.5, qubit kedua menjadi (0.7071, -0.7071)
 ```
 
-**Quirk.** Buka [H lalu CNOT](https://algassert.com/quirk#circuit=%7B%22cols%22:%5B%5B1,%22H%22%5D,%5B%22X%22,%22%E2%80%A2%22%5D%5D%7D). Tampilan peluang tiap kabel pada tautan itu 50,0 persen untuk keduanya, sementara kotak amplitudo hanya menyala pada `00` dan `11`: peluang per kabel tidak memperlihatkan korelasi, vektor keduanya memperlihatkannya. Quirk menampilkan peluang hitungan, bukan sampel acak, jadi histogram shot berasal dari program.
+**Quirk.** Buka [H lalu CNOT](https://algassert.com/quirk#circuit=%7B%22cols%22:%5B%5B1,%22H%22%5D,%5B%22X%22,%22%E2%80%A2%22%5D%5D%7D). Tampilan peluang tiap kabel pada tautan itu 50,0 persen untuk keduanya, sementara kotak amplitudo hanya menyala pada `00` dan `11`: peluang per kabel tidak memperlihatkan korelasi, vektor keduanya memperlihatkannya. Quirk menampilkan peluang hitungan, bukan sampel acak.
 
 ## Contoh setengah jadi
 
@@ -184,17 +184,17 @@ Susun baris-baris di bawah (sudah diacak) menjadi bagian fungsi `baca_pertama` y
 
 ## Latihan
 
-1. **Dengan tangan.** (`AI: tanpa AI`) Untuk `(0,5 ; 0,5 ; 0,5 ; -0,5)`: peluang qubit pertama terbaca 0 dan 1, dan keadaan qubit kedua sesudah tiap hasil. Apakah keadaan ini produk? Jelaskan dengan hasilmu.
-2. **Korelasi.** (`AI: tanpa AI`) Untuk `|Psi-> = (0 ; h ; -h ; 0)`: peluang tiap hasil dua bit, dan seberapa sering dua bit sama. Apakah ini juga terjerat?
-3. **Ubah benih.** (`AI: boleh`) Ubah benih pada program shot, jalankan lagi, dan bandingkan nilai `sama` untuk keadaan Bell dan keadaan produk. Mengapa Bell selalu 1000 sedangkan produk tidak?
-4. **Rancang dulu.** (`AI: boleh`) Tulis pseudocode yang menerima daftar pasangan bit hasil shot dan mengembalikan seberapa sering dua bit sama.
+1. **Dengan tangan.** (`AI: tanpa AI`) Untuk `(0,5 ; 0,5 ; 0,5 ; -0,5)`: peluang tiap hasil qubit pertama dan keadaan qubit kedua sesudahnya. Produk atau terjerat? Jelaskan.
+2. **Korelasi.** (`AI: tanpa AI`) Untuk `|Psi-> = (0 ; h ; -h ; 0)`: peluang tiap hasil dua bit dan seberapa sering dua bit sama. Terjerat?
+3. **Ubah benih.** (`AI: boleh`) Ubah benih program shot dan bandingkan `sama` untuk Bell dan produk. Mengapa Bell selalu 1000 sedangkan produk tidak?
+4. **Rancang dulu.** (`AI: boleh`) Tulis pseudocode yang menghitung seberapa sering dua bit sama dari daftar pasangan hasil shot.
 5. **Catatan pemakaian AI (opsional).** Bila memakai asisten AI, catat alat, tujuan, garis besar perintah, bagian yang dipakai, dan cara memeriksa jawabannya.
 
 ## Latihan bercampur
 
-1. Mulai dari `|01>`, pasang H pada qubit pertama lalu CNOT. Tulis keadaan hasilnya dan peluang tiap hasil dua bit. (`e-xi2-m1`, `e-xi2-m2`)
+1. Dari `|01>`, pasang H pada qubit pertama lalu CNOT. Tulis keadaan hasil dan peluang tiap hasil. (`e-xi2-m1`, `e-xi2-m2`)
 2. `|Phi+>` dibaca 1000 shot. Berapa hasil `00` yang diharapkan, dengan simpangan wajarnya? (`e-xi1-m7`)
-3. Dua qubit disiapkan terpisah: `(0,6 ; 0,8)` dan `(0,8 ; -0,6)`. Qubit pertama dibaca dan hasilnya 1. Apa keadaan qubit kedua? Bandingkan dengan keadaan Bell. (`e-xi1-m12`)
+3. Qubit terpisah `(0,6 ; 0,8)` dan `(0,8 ; -0,6)`: qubit pertama terbaca 1. Apa keadaan qubit kedua, dan bedanya dengan Bell? (`e-xi1-m12`)
 
 ## Ulang berjarak
 
@@ -206,10 +206,9 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `e-xi2-m4` (satu minggu
 
 ## Kesalahan umum
 
-- **"Qubit pertama menentukan hasil qubit kedua, jadi kita bisa mengirim pesan."** Hasil qubit pertama acak 50:50 dan tidak dapat dipilih; korelasi baru terlihat setelah membandingkan catatan lewat kanal biasa.
-- **"Korelasi 'selalu sama' sudah membuktikan sifat kuantum."** Dua amplop berisi bit acak yang sama juga memberi hasil itu; pembedanya ada pada pembacaan dengan cara lain (`E-XI2-M8`).
-- **"Histogram Bell harus persis 500 dan 500."** Itu hanya harapan; 495 dan 505 wajar. Yang pasti tepat adalah `01` dan `10` bernilai nol.
-- **"Quirk menjalankan dua qubit yang saling berkomunikasi."** Quirk dan program ini hanya memperbarui satu vektor; tidak ada sinyal antar qubit.
+- **"Qubit pertama menentukan hasil qubit kedua, jadi kita bisa mengirim pesan."** Hasil pertama acak dan tidak dapat dipilih.
+- **"Korelasi 'selalu sama' sudah membuktikan sifat kuantum."** Dua amplop berisi bit sama juga memberi hasil itu (`E-XI2-M8`).
+- **"Histogram Bell harus persis 500 dan 500."** 495 dan 505 wajar; yang pasti tepat adalah `01` dan `10` nol.
 
 ## Cek mandiri
 

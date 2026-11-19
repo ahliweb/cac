@@ -1,12 +1,12 @@
 ## Untuk siapa modul ini
 
-Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M4` silabus v1.4: simulator sendiri III, yaitu memperluas simulator ke n qubit dan menghitung memori `2^n`. Prasyarat: modul `e-xi2-m3` (mengukur qubit terjerat). Di luar indeks, bagian kode memerlukan dasar pemrograman setara `A-X1-M9` sampai `A-X1-M12` (C++) atau `B-X1-M9` sampai `B-X1-M12` (TypeScript/Bun), dan simulator satu qubit dari `E-XI1-M10` dan `E-XI1-M11`; guru memeriksanya. Bagian konsep dan hitungan memori terbuka bagi semua murid. Alat: kertas, kalkulator, dan Python 3 murni (tanpa pustaka tambahan dan tanpa akun) untuk membaca dan menjalankan contoh; murid jalur A atau B boleh menerjemahkannya ke bahasa jalurnya.
+Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M4` silabus v1.4: simulator sendiri III, yaitu memperluas simulator ke n qubit dan menghitung memori `2^n`. Prasyarat: modul `e-xi2-m3` (mengukur qubit terjerat). Di luar indeks, bagian kode memerlukan dasar pemrograman setara `A-X1-M9..M12` (C++) atau `B-X1-M9..M12` (TypeScript/Bun) dan simulator `E-XI1-M10` dan `E-XI1-M11`; guru memeriksanya. Bagian konsep dan hitungan memori terbuka bagi semua murid. Alat: kertas, kalkulator, dan Python 3 murni (tanpa akun); murid jalur A atau B boleh menerjemahkannya.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur E adalah pengayaan di luar rumusan capaian pembelajaran (CP). Minggu ini mempunyai irisan pengayaan `F-AP-d` (simulator vektor keadaan dan Qiskit) yang tidak dihitung; modul ini tidak dihitung memenuhi butir CP mana pun.
+Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur E adalah pengayaan di luar rumusan CP. Irisan pengayaan minggu ini `F-AP-d` tidak dihitung; modul ini tidak dihitung memenuhi butir CP mana pun.
 
-Aturan AI jalur ini: AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu, dan tanpa akun wajib. Saran: jawab dulu sendiri, baru minta penjelasan atau petunjuk bertahap; kode buatan AI kamu baca, jalankan, dan uji. Setiap soal `Latihan` bertanda `AI: boleh` atau `AI: tanpa AI`.
+Aturan AI jalur ini: AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu, dan tanpa akun wajib. Saran: jawab dulu sendiri, baru minta petunjuk bertahap; kode buatan AI kamu baca, jalankan, dan uji. Setiap soal `Latihan` bertanda `AI: boleh` atau `AI: tanpa AI`.
 
-Catatan untuk guru: bahwa keadaan n qubit adalah vektor `2^n` komponen yang diberi indeks bit string dibaca penyusun dari halaman IBM Quantum Learning "Quantum information" (multiple systems), per 2026-11-19. Simulator di modul ini karangan penyusun, dibandingkan dengan hitungan tangan `e-xi2-m1` dan `e-xi2-m2`. Angka memori adalah `2^n x 8` byte (amplitudo real); amplitudo kompleks memakai 16 byte. Ukuran satu bilangan desimal Python (24 byte) diukur penyusun dengan `sys.getsizeof` pada Python 3.12 dan bergantung pada versi serta mesin. Batas mesin laboratorium tidak diukur penyusun.
+Catatan untuk guru: bahwa keadaan n qubit adalah vektor `2^n` komponen yang diberi indeks bit string dibaca penyusun dari halaman IBM Quantum Learning "Quantum information" (multiple systems), per 2026-11-19. Simulator karangan penyusun, dibandingkan dengan hitungan tangan `e-xi2-m1` dan `e-xi2-m2`. Memori adalah `2^n x 8` byte (amplitudo real; kompleks 16 byte). Ukuran float Python (24 byte) diukur dengan `sys.getsizeof` pada Python 3.12 dan bergantung versi dan mesin. Batas mesin lab tidak diukur.
 
 ## Ingat kembali
 
@@ -27,11 +27,11 @@ Setelah modul ini kamu dapat:
 
 ## Prediksi dulu
 
-Simulator dua qubit memakai vektor empat komponen. Sebelum membaca contoh, tebak dan tulis: (1) berapa komponen untuk tiga qubit dan untuk sepuluh qubit; (2) berapa byte untuk menyimpan vektor 30 qubit bila tiap amplitudo memakai 8 byte; (3) berapa kali lipat memori bertambah bila satu qubit ditambahkan.
+Tebak dan tulis: (1) berapa komponen untuk tiga dan sepuluh qubit; (2) berapa byte untuk vektor 30 qubit bila tiap amplitudo 8 byte; (3) berapa kali lipat memori bertambah bila satu qubit ditambahkan.
 
 ## Contoh terselesaikan
 
-**`2^n` komponen.** Satu qubit punya dua hasil (0, 1), dua qubit empat, tiga qubit delapan: tiap qubit tambahan menggandakan jumlah hasil, jadi n qubit punya `2^n` hasil dan vektor `2^n` komponen. Komponen ke-i (mulai dari 0) cocok dengan bit string biner i: untuk tiga qubit, komponen ke-5 adalah `101` karena 5 dalam biner adalah 101 (`matkom-sistem-bilangan-basis`). Qubit ke-0 adalah bit paling kiri, seperti urutan `00, 01, 10, 11` sebelumnya.
+**`2^n` komponen.** Tiap qubit tambahan menggandakan jumlah hasil (2, 4, 8, ...), jadi n qubit punya `2^n` hasil dan vektor `2^n` komponen. Komponen ke-i (mulai dari 0) cocok dengan bit string biner i: untuk tiga qubit, komponen ke-5 adalah `101` karena 5 dalam biner adalah 101 (`matkom-sistem-bilangan-basis`). Qubit ke-0 adalah bit paling kiri, seperti urutan `00, 01, 10, 11` sebelumnya.
 
 **Gerbang pada qubit ke-k.** Gerbang 2 x 2 pada qubit ke-k tidak mengubah qubit lain. Kumpulkan komponen yang berbeda hanya pada bit ke-k, yaitu pasangan `(bit k = 0, bit k = 1)`. Untuk tiap pasangan `(a, b)`, hitung `(g00*a + g01*b, g10*a + g11*b)` seperti pada satu qubit. Untuk n qubit ada `2^(n-1)` pasangan. Misalnya H pada qubit tengah dari tiga qubit memasangkan komponen `(0, 2)`, `(1, 3)`, `(4, 6)`, `(5, 7)`.
 
@@ -132,9 +132,9 @@ memori vektor n qubit, 8 byte per amplitudo:
 ukuran satu float Python (byte): 24
 ```
 
-Bacaan hasilnya: dua qubit memberi `(h, 0, 0, h)` seperti `e-xi2-m2`; tiga qubit hanya `000` dan `111`. Pada n = 12, H di semua qubit memberi 4096 peluang sama dan jumlah kuadrat tetap 1. Satu bilangan desimal Python memakai 24 byte, bukan 8, jadi tabel memori adalah batas bawah untuk daftar Python.
+Bacaan hasilnya: dua qubit memberi `(h, 0, 0, h)` seperti `e-xi2-m2`; tiga qubit hanya `000` dan `111`; n = 12 memberi 4096 peluang sama. Float Python 24 byte, bukan 8, jadi tabel memori adalah batas bawah untuk daftar Python.
 
-**Menelusuri.** Untuk tiga qubit setelah H pada qubit 0: `(h, 0, 0, 0, h, 0, 0, 0)`, komponen `000` dan `100`. CNOT 0 ke 1 menukar komponen yang qubit-0-nya 1 dan qubit-1-nya berbeda: `100` dan `110`, jadi `(h, 0, 0, 0, 0, 0, h, 0)`. CNOT 1 ke 2 menukar komponen `110` dan `111`: `(h, 0, 0, 0, 0, 0, 0, h)`. Hanya program yang menjalankan penelusuran ini; keadaannya tidak dapat "dibaca" dari satu qubit.
+**Menelusuri.** Untuk tiga qubit setelah H pada qubit 0: `(h, 0, 0, 0, h, 0, 0, 0)`, komponen `000` dan `100`. CNOT 0 ke 1 menukar komponen yang qubit-0-nya 1 dan qubit-1-nya berbeda: `100` dan `110`, jadi `(h, 0, 0, 0, 0, 0, h, 0)`. CNOT 1 ke 2 menukar komponen `110` dan `111`: `(h, 0, 0, 0, 0, 0, 0, h)`.
 
 ## Contoh setengah jadi
 
@@ -165,14 +165,14 @@ Susun baris-baris di bawah (sudah diacak) menjadi fungsi yang membuat keadaan aw
 ## Latihan
 
 1. **Tabel memori.** (`AI: tanpa AI`) Lengkapi memori vektor untuk n = 5, 15, dan 25 dengan 8 byte per amplitudo, lalu ulangi dengan 16 byte (amplitudo kompleks).
-2. **Telusuri pasangan.** (`AI: tanpa AI`) Untuk tiga qubit, tulis pasangan indeks yang digabung bila H dipasang pada qubit 0 dan pada qubit 2.
-3. **Titik jenuh di mesin lab.** (`AI: boleh`) Ubah n pada bagian "H pada semua qubit" menjadi 14, 16, dan 18. Catat waktu (misalnya dengan `time.perf_counter()`) dan, bila bisa, pemakaian memori mesinmu. Mulai dari n kecil; berhenti bila mesin melambat atau memori hampir habis, dan jangan mencoba n besar (batas ditentukan gurumu). Tidak ada angka kunci: hasilnya bergantung mesinmu. Yang dapat kamu uji adalah polanya: berapa kali lipat waktu bertambah per qubit tambahan?
-4. **Rancang dulu.** (`AI: boleh`) Tulis pseudocode yang membuat keadaan GHZ untuk n qubit (H pada qubit 0, lalu CNOT dari qubit k ke k+1). Baru ubah menjadi kode bila mau.
+2. **Telusuri pasangan.** (`AI: tanpa AI`) Untuk tiga qubit, tulis pasangan indeks yang digabung oleh H pada qubit 0 dan pada qubit 2.
+3. **Titik jenuh di mesin lab.** (`AI: boleh`) Ubah n pada bagian "H pada semua qubit" menjadi 14, 16, dan 18, dan catat waktu (misalnya `time.perf_counter()`) serta, bila bisa, memori mesinmu. Berhenti bila mesin melambat atau memori hampir habis; jangan mencoba n besar (batas dari gurumu). Angka bergantung mesin; ujilah polanya: berapa kali lipat waktu bertambah per qubit tambahan?
+4. **Rancang dulu.** (`AI: boleh`) Tulis pseudocode keadaan GHZ untuk n qubit (H pada qubit 0, lalu CNOT dari qubit k ke k+1).
 5. **Catatan pemakaian AI (opsional).** Bila memakai asisten AI, catat alat, tujuan, garis besar perintah, bagian yang dipakai, dan cara memeriksa jawabannya.
 
 ## Latihan bercampur
 
-1. Keadaan GHZ tiga qubit dibaca 1000 shot. Perkirakan jumlah hasil `000` dengan simpangan wajarnya, dan hasil apa saja yang tidak pernah muncul. (`e-xi1-m7`)
+1. GHZ tiga qubit dibaca 1000 shot. Perkirakan jumlah `000` dengan simpangannya, dan hasil yang tidak pernah muncul. (`e-xi1-m7`)
 2. Pada keadaan GHZ tiga qubit, qubit pertama terbaca 1. Apa hasil dua qubit lainnya? (`e-xi2-m3`)
 3. Komponen ke-5 dan ke-6 pada vektor tiga qubit cocok dengan bit string apa? (`matkom-sistem-bilangan-basis`)
 
@@ -188,7 +188,6 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `e-xi2-m5` (satu minggu
 
 - **"Menambah satu qubit menambah satu komponen."** Menggandakannya: `2^n`, bukan `n`.
 - **"Simulator dengan 30 qubit hanya butuh 30 angka."** Ia butuh `2^30` angka; itulah sebabnya simulator vektor keadaan mencapai batas memori cepat.
-- **"Hasil simulator berlaku untuk perangkat nyata dengan n qubit yang sama."** Simulator ideal tanpa derau; perangkat nyata punya batas lain (`E-XII1-M8`).
 - **"Qubit ke-0 adalah bit paling kanan."** Dalam modul ini qubit ke-0 adalah bit paling kiri, seperti urutan `00, 01, 10, 11`; mengubah kesepakatan mengubah letak komponen.
 - **"Simulator menjalankan gerbang pada tiap qubit satu per satu di memori terpisah."** Semua qubit berbagi satu vektor; itulah mengapa keadaan terjerat dapat disimpan.
 

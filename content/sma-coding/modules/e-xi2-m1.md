@@ -1,6 +1,6 @@
 ## Untuk siapa modul ini
 
-Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M1` silabus v1.4: gerbang dua qubit, yaitu CNOT. Prasyarat di indeks: `e-xi1-m7` (pengukuran). Di luar indeks kamu juga memakai `e-xi1-m8` (gerbang X) dan `e-xi1-m12` (dua qubit dan hasil kali tensor) dari semester sebelumnya; guru memeriksa bahwa keduanya sudah kamu kerjakan. Alat: kertas, kalkulator, dan Quirk (peramban, tanpa akun). Contoh kode memakai Python 3 murni, tanpa pustaka tambahan dan tanpa akun, dan bersifat opsional; murid jalur A atau B boleh menerjemahkannya ke C++ atau TypeScript. Hitungan dikerjakan dengan tangan lebih dulu.
+Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M1` silabus v1.4: gerbang dua qubit, yaitu CNOT. Prasyarat di indeks: `e-xi1-m7` (pengukuran). Di luar indeks kamu juga memakai `e-xi1-m8` (gerbang X) dan `e-xi1-m12` (dua qubit dan hasil kali tensor) dari semester sebelumnya; guru memeriksa bahwa keduanya sudah kamu kerjakan. Alat: kertas, kalkulator, Quirk (tanpa akun), dan Python 3 murni opsional; murid jalur A atau B boleh menerjemahkannya ke C++ atau TypeScript. Hitungan tangan lebih dulu.
 
 Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur E adalah pengayaan di luar rumusan capaian pembelajaran (CP); minggu ini tidak punya irisan pengayaan, jadi modul ini tidak dihitung memenuhi butir CP mana pun.
 
@@ -27,7 +27,7 @@ Setelah modul ini kamu dapat:
 
 ## Prediksi dulu
 
-Qubit pertama berada pada `|1>` dan qubit kedua pada `|0>`. CNOT dipasang dengan qubit pertama sebagai kontrol. Sebelum membaca contoh, tebak dan tulis: (1) keadaan sesudahnya; (2) apa yang terjadi bila qubit pertama `|0>`; (3) bila qubit pertama `(h, h)` dan qubit kedua `|0>`, apakah keadaan sesudahnya masih berupa produk dua qubit, dan mengapa. Di sini `h` berarti 1/akar2, kira-kira 0,7071.
+Qubit pertama `|1>`, qubit kedua `|0>`, CNOT dengan qubit pertama sebagai kontrol. Tebak dan tulis: (1) keadaan sesudahnya; (2) apa yang terjadi bila qubit pertama `|0>`; (3) bila qubit pertama `(h, h)` dan qubit kedua `|0>`, apakah keadaan sesudahnya masih berupa produk dua qubit, dan mengapa. Di sini `h` berarti 1/akar2, kira-kira 0,7071.
 
 ## Contoh terselesaikan
 
@@ -47,7 +47,7 @@ CNOT = [[1, 0, 0, 0],
         [0, 0, 1, 0]]
 ```
 
-Pada vektor `(a00, a01, a10, a11)`, hasilnya `(a00, a01, a11, a10)`: komponen `10` dan `11` bertukar tempat. Untuk `(0,48 ; -0,36 ; 0,64 ; -0,48)` hasilnya `(0,48 ; -0,36 ; -0,48 ; 0,64)`. Jumlah kuadratnya tetap 1 karena yang berubah hanya letak komponen.
+Pada vektor `(a00, a01, a10, a11)`, hasilnya `(a00, a01, a11, a10)`: komponen `10` dan `11` bertukar tempat. Untuk `(0,48 ; -0,36 ; 0,64 ; -0,48)` hasilnya `(0,48 ; -0,36 ; -0,48 ; 0,64)`.
 
 **Kontrol dalam superposisi.** Qubit pertama `(h, h)` dan qubit kedua `|0>` adalah keadaan produk `(h, 0, h, 0)`. CNOT menukar komponen ketiga dan keempat: `(h, 0, 0, h)`. Uji dari `e-xi1-m12`: `a*d = h*h = 0,5` sedangkan `b*c = 0*0 = 0`, tidak sama, jadi keadaan ini **bukan** produk dua qubit. CNOT dapat mengubah dua qubit yang terpisah menjadi keadaan yang tidak dapat dipisah; itu bahan `E-XI2-M2`.
 
@@ -119,7 +119,7 @@ dua kali (0.4800, -0.3600, 0.6400, -0.4800)
 jumlah kuadrat sesudah CNOT: 1.0000
 ```
 
-Perhatikan peluang akhir: hasil `00` dan `11` masing-masing 0,5, sedangkan `01` dan `10` mustahil. Hasil dua qubit itu sekarang saling terkait; `E-XI2-M3` membahas arti pembacaannya.
+Peluang akhir: `00` dan `11` masing-masing 0,5, `01` dan `10` mustahil; `E-XI2-M3` membahas arti pembacaannya.
 
 **Quirk.** Buka [CNOT dengan masukan `|10>`](https://algassert.com/quirk#circuit=%7B%22cols%22:%5B%5B%22X%22,%22%E2%80%A2%22%5D%5D,%22init%22:%5B0,1%5D%7D). Pada tautan itu penyusun melihat kabel bawah (qubit pertama, kontrol, titik hitam) bernilai 1 dan kabel atas (target, lingkaran dengan tanda plus) awalnya 0; kotak amplitudo akhir menyala hanya pada sel kanan-bawah, yaitu `11`, dan kedua tampilan kabel menyatakan "On". Itu sesuai baris ketiga tabel. Seperti biasa, **prediksi dulu**, baru buka tautannya.
 
@@ -153,7 +153,7 @@ Susun baris-baris di bawah (sudah diacak) menjadi perulangan yang mencetak hasil
 ## Latihan
 
 1. **Dengan tangan.** (`AI: tanpa AI`) Keadaan `(0 ; 0,6 ; 0 ; 0,8)` sah? Hitung CNOT kali keadaan itu, lalu peluang tiap hasil dua bit.
-2. **Tabel.** (`AI: boleh`) Tunjukkan bahwa CNOT pada `|ab>` memberi `|a, a XOR b>` untuk keempat pasangan `ab`, dan jelaskan dengan kata-katamu apa peran kontrol.
+2. **Tabel.** (`AI: boleh`) Tunjukkan bahwa CNOT pada `|ab>` memberi `|a, a XOR b>` untuk keempat `ab`, dan jelaskan peran kontrol.
 3. **Prediksi lalu uji.** (`AI: boleh`) Di Quirk, siapkan masukan `|11>` pada CNOT yang sama seperti contoh, tebak sel mana yang menyala, lalu cek di [tautan](https://algassert.com/quirk#circuit=%7B%22cols%22:%5B%5B%22X%22,%22%E2%80%A2%22%5D%5D,%22init%22:%5B1,1%5D%7D).
 4. **Dua kali.** (`AI: tanpa AI`) Terapkan CNOT dua kali pada `(0,48 ; -0,36 ; 0,64 ; -0,48)` dan jelaskan mengapa hasilnya kembali semula.
 5. **Rancang dulu.** (`AI: boleh`) Tulis pseudocode fungsi yang menerapkan CNOT pada vektor empat komponen tanpa membuat matriks. Baru ubah menjadi kode bila mau.

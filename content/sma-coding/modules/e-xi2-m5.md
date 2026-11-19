@@ -1,6 +1,6 @@
 ## Untuk siapa modul ini
 
-Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M5` silabus v1.4: gerbang fase dan rotasi, tanda **pengayaan** pada judul minggunya. Prasyarat: modul `e-xi2-m4` (simulator n qubit). Bilangan kompleks dipakai hanya untuk fase (`e-xi1-m4`): kalikan dengan bilangan yang modulusnya 1 memutar titik tanpa mengubah panjangnya. Alat: kertas, kalkulator, dan Quirk (peramban, tanpa akun). Contoh Python 3 murni bersifat opsional (tanpa pustaka tambahan dan tanpa akun); hitungan dikerjakan dengan tangan lebih dulu.
+Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M5` silabus v1.4: gerbang fase dan rotasi, tanda **pengayaan** pada judul minggunya. Prasyarat: modul `e-xi2-m4` (simulator n qubit). Bilangan kompleks dipakai hanya untuk fase (`e-xi1-m4`): kalikan dengan bilangan yang modulusnya 1 memutar titik tanpa mengubah panjangnya. Alat: kertas, kalkulator, Quirk (tanpa akun), dan Python 3 murni opsional; hitungan tangan lebih dulu.
 
 Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur E adalah pengayaan di luar rumusan capaian pembelajaran (CP); minggu ini tidak punya irisan pengayaan, jadi modul ini tidak dihitung memenuhi butir CP mana pun.
 
