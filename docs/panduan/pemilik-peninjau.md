@@ -30,8 +30,8 @@ Atau buka berkasnya langsung di GitHub:
 [`mentor-osn.md`](mentor-osn.md); sumber kebenarannya `data/osn/modules.json`.
 Per 2026-11-18 kesepuluh modul OSN sudah `disetujui`: `dasar-pemrograman`
 lebih dulu, sembilan lainnya menyusul pada hari yang sama. Langkah di bawah
-berlaku untuk setiap modul baru, termasuk 599 modul draf enam program coding
-(`sma-coding` 239 modul, `sd-coding` 168, `smp-coding` 84, `tk-coding` 48,
+berlaku untuk setiap modul baru, termasuk 613 modul draf enam program coding
+(`sma-coding` 253 modul, `sd-coding` 168, `smp-coding` 84, `tk-coding` 48,
 `dewasa-coding` 36, `kuliah-coding` 24; per 2026-11-19 semuanya `draf`).
 
 ### 2. Daftar periksa review
@@ -71,8 +71,8 @@ check-learner-assets: OK -- 216 SVG file(s), 216 image link(s) in 216 sheet(s); 
 
 ### 3. Tambahan untuk modul draf program coding
 
-Ada 599 modul draf enam program coding per 2026-11-19 (`tk-coding` 48,
-`sd-coding` 168, `smp-coding` 84, `sma-coding` 239, `kuliah-coding` 24,
+Ada 613 modul draf enam program coding per 2026-11-19 (`tk-coding` 48,
+`sd-coding` 168, `smp-coding` 84, `sma-coding` 253, `kuliah-coding` 24,
 `dewasa-coding` 36), semuanya `draf`. Selain tabel di atas, periksa butir
 berikut; butir khusus yang sudah diketahui perlu dicek per modul dikumpulkan di
 [`catatan-tinjauan-modul.md`](../programs/catatan-tinjauan-modul.md).
@@ -244,7 +244,7 @@ Cara membacanya, per issue:
 
 | Issue | Jenis | Yang menunggu Anda | Dokumen untuk dibaca |
 | --- | --- | --- | --- |
-| #125 | Tinjauan konten | Meninjau modul draf: awalnya 29 modul `sma-coding` (judul issue belum diperbarui), kini 599 modul draf enam program coding | bagian "Meninjau modul draf" di atas dan [`catatan-tinjauan-modul.md`](../programs/catatan-tinjauan-modul.md) |
+| #125 | Tinjauan konten | Meninjau modul draf: awalnya 29 modul `sma-coding` (judul issue belum diperbarui), kini 613 modul draf enam program coding | bagian "Meninjau modul draf" di atas dan [`catatan-tinjauan-modul.md`](../programs/catatan-tinjauan-modul.md) |
 | #124 | Pekerjaan lanjutan | Penulisan modul: seluruh modul enam program sudah masuk repositori sebagai draf; yang tersisa adalah sinkron dokumen dan tinjauan, belum menunggu keputusan Anda | [`programs/README.md`](../programs/README.md) |
 | #151 | Tinjau ulang terjadwal | Meninjau ulang riset AI pada Mei 2027; belum jatuh tempo | [`riset/ai-rekayasa-perangkat-lunak.md`](../riset/ai-rekayasa-perangkat-lunak.md) |
 | #150 sampai #157 | Persiapan migrasi identitas (epik dan turunannya) | Dikerjakan di jalur terpisah (PR draf #158); tidak dibahas panduan ini | lihat issue #150 |
@@ -260,8 +260,8 @@ ditinjau, dan `plan` serta `render lembar-siswa` belum mendukungnya
 
 Kandidat tinjauan Anda berikutnya:
 
-- 239 modul draf `sma-coding` di `content/sma-coding/modules/` (fondasi,
-  matematika komputasi, cloud, pendamping, dan jalur C, D, E; baca dengan
+- 253 modul draf `sma-coding` di `content/sma-coding/modules/` (fondasi,
+  matematika komputasi, cloud, pendamping, dan jalur A, B, C, D, E; baca dengan
   `osn render modul --program sma-coding --id <id>`, daftar id di
   `data/sma-coding/modules.json`), issue #125.
 - Modul draf lima program coding lainnya (`tk-coding` 48, `sd-coding` 168,
