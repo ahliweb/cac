@@ -141,7 +141,7 @@ Baris yatim `T006` dicatat, tidak dibuang diam-diam. Periksa dengan hitungan: 7 
 
 Hitung total unit per kode produk. Lengkapi satu titik `___`, lalu jalankan di akhir skrip ringkasan:
 
-```python
+```python setengah-jadi
 unit_per_kode = defaultdict(int)
 for t in transaksi:
     unit_per_kode[t["kode_produk"]] += ___
