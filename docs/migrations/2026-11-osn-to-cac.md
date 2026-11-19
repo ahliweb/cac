@@ -93,6 +93,9 @@ Source of truth tetap **repository yang sama (GitHub repo ID dipertahankan ketik
 - Wajib evidence berupa commit SHA, CI run URL, hasil test, daftar consumer diverifikasi dan keputusan gate; jangan menandai lulus berdasarkan dokumen saja.
 
 ## 7. Risiko eksternal dan rollback
+
+Matriks risiko lengkap (19 risiko), gladi lokal recovery dan rename-back, serta checklist Go/No-Go: [2026-11-cac-security-recovery.md](2026-11-cac-security-recovery.md) (F1/04, #155).
+
 | Risiko | Pencegahan | Respons saat kejadian |
 | --- | --- | --- |
 | Link lama redirect tidak lengkap | audit URLs, update canonical | perbaiki link di sumber dan periksa redirect |
