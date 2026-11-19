@@ -1,0 +1,5 @@
+---
+"kurikulum-informatika": patch
+---
+
+Enam modul belajar terakhir jalur Profesional program `dewasa-coding` (paket D7, status `draf`): `dw-pro-m7` sampai `dw-pro-m12` (SQL dan akses basis data, antarmuka web, layanan web dan API, kolaborasi dengan tinjau kode dan pengujian lanjut, konfigurasi, pencatatan, dan operasi dasar, serta proyek akhir dan persiapan portofolio). Isi modul ditulis di `content/dewasa-coding/modules/` mengikuti rancangan modul yang disetujui pemilik pada 2026-11-19 (cek awal pengalaman lima soal tanpa skor, tes mengingat berjarak dengan rantai `dewasa`, kebijakan AI dewasa silabus 9.1, status jembatan kuliah ke `PRO` per modul) dan diindeks di `data/dewasa-coding/modules.json` dengan `skkniUnits` sesuai silabus 5.2 sebatas judul unit. Contoh Python dan SQL (`sqlite3`) dijalankan beserta ujinya, contoh TypeScript dijalankan dengan Bun dan halamannya dibuka di peramban tanpa kepala; semua data sintetis dan alamat contoh hanya `.example`. Tidak ada modul yang disetujui.
