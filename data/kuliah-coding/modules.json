@@ -179,6 +179,206 @@
         }
       ],
       "contentPath": "content/kuliah-coding/modules/kul-u-201.md"
+    },
+    {
+      "id": "kul-i-201",
+      "title": "Analisis dan Desain Algoritma",
+      "courseCodes": ["KUL-I-201"],
+      "knowledgeAreas": ["AL"],
+      "semester": "S3",
+      "prerequisites": ["kul-i-102", "kul-i-103"],
+      "audience": "mahasiswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "MIT OpenCourseWare: Design and Analysis of Algorithms (6.046J, Spring 2015)",
+          "url": "https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2015/"
+        },
+        {
+          "title": "MIT OpenCourseWare: Introduction to Algorithms (6.006, Spring 2020)",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/"
+        },
+        {
+          "title": "Standard C++ Foundation: Get Started",
+          "url": "https://isocpp.org/get-started"
+        },
+        {
+          "title": "GCC: Online Documentation",
+          "url": "https://gcc.gnu.org/onlinedocs/"
+        }
+      ],
+      "contentPath": "content/kuliah-coding/modules/kul-i-201.md"
+    },
+    {
+      "id": "kul-i-202",
+      "title": "Basis Data",
+      "courseCodes": ["KUL-I-202"],
+      "knowledgeAreas": ["DM"],
+      "semester": "S3",
+      "prerequisites": ["kul-i-102"],
+      "audience": "mahasiswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "SQLite: Documentation",
+          "url": "https://sqlite.org/docs.html"
+        },
+        {
+          "title": "SQLite: Foreign Key Support",
+          "url": "https://www.sqlite.org/foreignkeys.html"
+        },
+        {
+          "title": "SQLite: Transaction",
+          "url": "https://www.sqlite.org/lang_transaction.html"
+        },
+        {
+          "title": "SQLite: Query Planning",
+          "url": "https://www.sqlite.org/queryplanner.html"
+        },
+        {
+          "title": "SQLite: NULL Handling",
+          "url": "https://www.sqlite.org/nulls.html"
+        },
+        {
+          "title": "Python: sqlite3, DB-API 2.0 interface for SQLite databases",
+          "url": "https://docs.python.org/3/library/sqlite3.html"
+        }
+      ],
+      "contentPath": "content/kuliah-coding/modules/kul-i-202.md"
+    },
+    {
+      "id": "kul-i-203",
+      "title": "Organisasi Komputer dan Sistem Operasi",
+      "courseCodes": ["KUL-I-203"],
+      "knowledgeAreas": ["AR", "OS", "SF"],
+      "semester": "S4",
+      "prerequisites": ["kul-i-101"],
+      "audience": "mahasiswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "GNU Binutils: Using as (GNU assembler)",
+          "url": "https://sourceware.org/binutils/docs/as/"
+        },
+        {
+          "title": "Linux man-pages: write(2)",
+          "url": "https://man7.org/linux/man-pages/man2/write.2.html"
+        },
+        {
+          "title": "Linux man-pages: fork(2)",
+          "url": "https://man7.org/linux/man-pages/man2/fork.2.html"
+        },
+        {
+          "title": "Operating Systems: Three Easy Pieces (Arpaci-Dusseau)",
+          "url": "https://pages.cs.wisc.edu/~remzi/OSTEP/"
+        },
+        {
+          "title": "GNU Coreutils Manual",
+          "url": "https://www.gnu.org/software/coreutils/manual/"
+        },
+        {
+          "title": "GNU Bash Reference Manual",
+          "url": "https://www.gnu.org/software/bash/manual/"
+        },
+        {
+          "title": "GCC: Online Documentation",
+          "url": "https://gcc.gnu.org/onlinedocs/"
+        }
+      ],
+      "contentPath": "content/kuliah-coding/modules/kul-i-203.md"
+    },
+    {
+      "id": "kul-k-201",
+      "title": "Pemrograman Kompetitif I",
+      "courseCodes": ["KUL-K-201"],
+      "knowledgeAreas": ["AL", "SDF"],
+      "semester": "S3",
+      "prerequisites": ["KUL-I-102", "KUL-U-101"],
+      "audience": "mahasiswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: Algorithms library (C++)",
+          "url": "https://en.cppreference.com/w/cpp/algorithm"
+        },
+        {
+          "title": "OSN Bidang Informatika: Arsip Soal",
+          "url": "https://osn.toki.id/arsip"
+        },
+        {
+          "title": "CSES Problem Set",
+          "url": "https://cses.fi/problemset/"
+        },
+        {
+          "title": "CP-Algorithms",
+          "url": "https://cp-algorithms.com/"
+        }
+      ],
+      "contentPath": "content/kuliah-coding/modules/kul-k-201.md"
+    },
+    {
+      "id": "kul-k-301",
+      "title": "Pemrograman Kompetitif II",
+      "courseCodes": ["KUL-K-301"],
+      "knowledgeAreas": ["AL", "MSF"],
+      "semester": "S5",
+      "prerequisites": ["KUL-K-201"],
+      "audience": "mahasiswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "CP-Algorithms",
+          "url": "https://cp-algorithms.com/"
+        },
+        {
+          "title": "CSES Problem Set",
+          "url": "https://cses.fi/problemset/"
+        },
+        {
+          "title": "OSN Bidang Informatika: Arsip Soal",
+          "url": "https://osn.toki.id/arsip"
+        },
+        {
+          "title": "cppreference: Algorithms library (C++)",
+          "url": "https://en.cppreference.com/w/cpp/algorithm"
+        }
+      ],
+      "contentPath": "content/kuliah-coding/modules/kul-k-301.md"
+    },
+    {
+      "id": "kul-k-401",
+      "title": "Studio Tim Kompetisi",
+      "courseCodes": ["KUL-K-401"],
+      "knowledgeAreas": ["AL", "SEP"],
+      "semester": "S7",
+      "prerequisites": ["KUL-K-301"],
+      "audience": "mahasiswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "ICPC Europe Championship 2026: rules (halaman aturan regional)",
+          "url": "https://euc.icpc.global/?p=2499"
+        },
+        {
+          "title": "ICPC North America Championship: rules (halaman aturan regional)",
+          "url": "https://nc.na.icpc.global/rules/"
+        },
+        {
+          "title": "OSN Bidang Informatika: Arsip Soal",
+          "url": "https://osn.toki.id/arsip"
+        },
+        {
+          "title": "CSES Problem Set",
+          "url": "https://cses.fi/problemset/"
+        }
+      ],
+      "contentPath": "content/kuliah-coding/modules/kul-k-401.md"
     }
   ]
 }
