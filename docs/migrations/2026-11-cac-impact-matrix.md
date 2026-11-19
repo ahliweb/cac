@@ -1,7 +1,7 @@
 # Matriks Dampak Migrasi OSN ke CaC
 
 ## Metadata
-- Version: v1.0.0
+- Version: v1.0.1
 - Last updated: 2026-11-19
 - Changeset: Mendaftar kontrak terdampak, prioritas, pengujian, dan pekerjaan lintas-repo sebelum rename.
 
@@ -10,7 +10,7 @@
 | --- | --- | --- |
 | Repository | ahliweb/osn, branch utama main, publik | ahliweb/cac; main dipertahankan |
 | Identitas | README: kurikulum-informatika | AhliKoding Curriculum / Curriculum as Code |
-| Package | package.json name=kurikulum-informatika, private=true, version=2.3.0 pada snapshot audit | curriculum-as-code, private tetap true |
+| Package | package.json name=kurikulum-informatika, private=true, version=2.5.0 (diukur ulang 2026-11-19 pada `main`; angka 2.3.0 pada snapshot audit awal sudah basi) | curriculum-as-code, private tetap true |
 | CLI | package.json bin.osn = src/cli/index.ts; runCli/help/error menulis osn | bin.cac + bin.osn alias kompatibel |
 | Sumber program | data/osn/, data/sma-coding/, data/programs.json | semua ID/path program dipertahankan |
 | Konten | content/<program>/modules, docs/programs, docs/silabus | tidak menulis ulang atau merelabeli sejarah |
@@ -54,6 +54,16 @@
 - Kepatuhan konteks Indonesia: UU 27/2022 PDP dan PP 71/2019 PSTE dievaluasi secara proporsional bila ada pengolahan data pribadi/integrasi layanan. Dokumen ini bukan penilaian hukum penuh.
 
 ## Open questions yang harus ditutup sebelum Go/No-Go
+Status per tinjauan silang #156 (2026-11-19): pertanyaan di bawah sudah dipetakan ke dokumen bukti F1; butir yang menunggu jawaban pemilik tetap terbuka dan tercatat di [tinjauan Gate 9](2026-11-cac-gate9-review.md).
+
+| # | Pertanyaan | Status | Rujukan |
+| --- | --- | --- | --- |
+| Q1 | Consumer CLI di luar repo; lama alias `osn` wajib tersedia | Terbuka: butuh jawaban pemilik | U-01, U-02 di [inventaris consumer](2026-11-cac-consumer-inventory.md); K3 di [kontrak CLI](2026-11-cac-cli-contract.md) |
+| Q2 | Aplikasi yang mengimpor nama paket lama | Terbuka: tidak ada impor di `src/` atau `tests/`; importer luar tidak diketahui | U-02; bagian 5.4 kontrak CLI |
+| Q3 | Workflow eksternal memakai `ahliweb/osn` sebagai Action | Terjawab sebagian: 0 di repo dan di pencarian kode akun pemilik; repo privat/akun lain belum terjangkau | C-07, C-13, N-14, U-03 |
+| Q4 | Pages, aset rilis, webhook, integrasi, badge, DNS, deployment | Terjawab sebagian: Pages, webhook, deploy key, environment, secret, badge, aset rilis semuanya kosong; integrasi di luar GitHub dan DNS belum diketahui | N-01..N-11, U-04, U-06 |
+| Q5 | `main` dilindungi; siapa approver dan pemegang kunci rilis | Terjawab: **tidak dilindungi**, 0 ruleset, satu admin; keputusan aktivasi menunggu pemilik | N-13, N-12; R-01, R-13, P-01, P-04 di [audit keamanan dan recovery](2026-11-cac-security-recovery.md) |
+| Q6 | Deprecation notice alias `osn`; perilaku `osn` dan `cac` identik atau ada breaking | Terjawab sebagai usulan, keputusan menunggu pemilik | K2, K4 di kontrak CLI bagian 5.2, 5.3 |
 - Siapa consumer CLI di luar repo? Berapa lama alias osn wajib tersedia?
 - Adakah aplikasi yang mengimpor package name lama?
 - Adakah workflow eksternal yang menggunakan ahliweb/osn sebagai GitHub Action?
@@ -62,5 +72,8 @@
 - Apakah alias CLI osn yang saat ini tersurat di skrip semua perlu diberi deprecation notice? Default perilaku osn dan cac apakah identik atau ada breaking change yang disetujui?
 
 ## Changelog
+### 2026-11-19 - v1.0.1
+- Menyelaraskan versi paket baseline dengan `package.json` (2.5.0) dan memetakan open questions ke dokumen bukti F1 (issue #156). Tidak mengubah klasifikasi dampak.
+
 ### 2026-11-19 - v1.0.0
 - Baseline dan matriks risiko/acceptance test perubahan identitas.
