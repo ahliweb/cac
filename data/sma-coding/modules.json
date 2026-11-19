@@ -1611,6 +1611,239 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-x2-m14.md"
+    },
+    {
+      "id": "d-x2-m8",
+      "title": "Pengelompokan tanpa label",
+      "cpItems": [],
+      "weekCodes": ["D-X2-M8"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Orange Data Mining: widget k-Means",
+          "url": "https://orangedatamining.com/widget-catalog/unsupervised/kmeans/"
+        },
+        {
+          "title": "Orange Data Mining: widget Hierarchical Clustering (pengelompokan alternatif, bacaan tambahan)",
+          "url": "https://orangedatamining.com/widget-catalog/unsupervised/hierarchicalclustering/"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x2-m8.md"
+    },
+    {
+      "id": "d-x2-m9",
+      "title": "Visualisasi untuk bercerita",
+      "cpItems": [],
+      "weekCodes": ["D-X2-M9"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x2-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Orange Data Mining: widget Bar Plot",
+          "url": "https://orangedatamining.com/widget-catalog/visualize/barplot/"
+        },
+        {
+          "title": "Orange Data Mining: widget Box Plot",
+          "url": "https://orangedatamining.com/widget-catalog/visualize/boxplot/"
+        },
+        {
+          "title": "Orange Data Mining: widget Scatter Plot",
+          "url": "https://orangedatamining.com/widget-catalog/visualize/scatterplot/"
+        },
+        {
+          "title": "From Data to Viz: Dataviz caveats (bacaan tambahan, bukan sumber resmi)",
+          "url": "https://www.data-to-viz.com/caveats.html"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x2-m9.md"
+    },
+    {
+      "id": "d-x2-m10",
+      "title": "Teks sebagai data",
+      "cpItems": [],
+      "weekCodes": ["D-X2-M10"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x2-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Orange Data Mining: widget Bag of Words (add-on Text Mining)",
+          "url": "https://orangedatamining.com/widget-catalog/text-mining/bagofwords-widget/"
+        },
+        {
+          "title": "Orange Data Mining: widget Preprocess Text (add-on Text Mining)",
+          "url": "https://orangedatamining.com/widget-catalog/text-mining/preprocesstext/"
+        },
+        {
+          "title": "Orange Data Mining: widget Test and Score",
+          "url": "https://orangedatamining.com/widget-catalog/evaluate/testandscore/"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x2-m10.md"
+    },
+    {
+      "id": "d-x2-m11",
+      "title": "AI generatif dan verifikasi",
+      "cpItems": [],
+      "weekCodes": ["D-X2-M11"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x2-m10", "d-x1-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "NIST AI 600-1: Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile, Juli 2024 (bagian 2.2, confabulation)",
+          "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf"
+        },
+        {
+          "title": "Surat Edaran Menteri Komunikasi dan Informatika Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial, JDIH Kemkomdigi",
+          "url": "https://jdih.komdigi.go.id/produk_hukum/view/id/883/t/surat+edaran+menteri+komunikasi+dan+informatika+nomor+9+tahun+2023"
+        },
+        {
+          "title": "Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi, JDIH BPK",
+          "url": "https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022"
+        },
+        {
+          "title": "Undang-Undang Nomor 28 Tahun 2014 tentang Hak Cipta, JDIH BPK",
+          "url": "https://peraturan.bpk.go.id/Details/38690/uu-no-28-tahun-2014"
+        },
+        {
+          "title": "UNESCO: Guidance for generative AI in education and research, 2023",
+          "url": "https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x2-m11.md"
+    },
+    {
+      "id": "d-x2-m12",
+      "title": "HAKI, lisensi data, dan AI",
+      "cpItems": [],
+      "weekCodes": ["D-X2-M12"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x2-m11", "FND-X1-M2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Undang-Undang Nomor 28 Tahun 2014 tentang Hak Cipta, JDIH BPK",
+          "url": "https://peraturan.bpk.go.id/Details/38690/uu-no-28-tahun-2014"
+        },
+        {
+          "title": "Creative Commons: CC BY 4.0 (deed, bahasa Indonesia)",
+          "url": "https://creativecommons.org/licenses/by/4.0/deed.id"
+        },
+        {
+          "title": "Creative Commons: CC BY-SA 4.0 (deed, bahasa Indonesia)",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.id"
+        },
+        {
+          "title": "Creative Commons: CC BY-NC 4.0 (deed, bahasa Indonesia)",
+          "url": "https://creativecommons.org/licenses/by-nc/4.0/deed.id"
+        },
+        {
+          "title": "Creative Commons: CC0 1.0 (deed, bahasa Indonesia)",
+          "url": "https://creativecommons.org/publicdomain/zero/1.0/deed.id"
+        },
+        {
+          "title": "Creative Commons: Best practices for attribution",
+          "url": "https://wiki.creativecommons.org/wiki/Best_practices_for_attribution"
+        },
+        {
+          "title": "U.S. Copyright Office: Copyright and Artificial Intelligence, Part 2: Copyrightability, Januari 2025",
+          "url": "https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf"
+        },
+        {
+          "title": "Surat Edaran Menteri Komunikasi dan Informatika Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial, JDIH Kemkomdigi",
+          "url": "https://jdih.komdigi.go.id/produk_hukum/view/id/883/t/surat+edaran+menteri+komunikasi+dan+informatika+nomor+9+tahun+2023"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x2-m12.md"
+    },
+    {
+      "id": "d-x2-m13",
+      "title": "Proyek mini (kelas X semester 2)",
+      "cpItems": [],
+      "weekCodes": ["D-X2-M13"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Orange Data Mining: widget Test and Score",
+          "url": "https://orangedatamining.com/widget-catalog/evaluate/testandscore/"
+        },
+        {
+          "title": "Orange Data Mining: widget Confusion Matrix",
+          "url": "https://orangedatamining.com/widget-catalog/evaluate/confusionmatrix/"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x2-m13.md"
+    },
+    {
+      "id": "d-x2-m14",
+      "title": "Asesmen dan refleksi (kelas X semester 2)",
+      "cpItems": [],
+      "weekCodes": ["D-X2-M14"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Orange Data Mining: widget Test and Score",
+          "url": "https://orangedatamining.com/widget-catalog/evaluate/testandscore/"
+        },
+        {
+          "title": "Orange Data Mining: widget k-Means",
+          "url": "https://orangedatamining.com/widget-catalog/unsupervised/kmeans/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x2-m14.md"
     }
   ]
 }
