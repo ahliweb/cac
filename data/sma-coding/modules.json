@@ -855,6 +855,183 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-x1-m14.md"
+    },
+    {
+      "id": "d-x1-m8",
+      "title": "Apa itu AI dan apa yang bukan",
+      "cpItems": [],
+      "weekCodes": ["D-X1-M8"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["FND-X1-M1", "FND-X1-M3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Elements of AI, MinnaLearn dan University of Helsinki (bacaan tambahan)",
+          "url": "https://www.elementsofai.com/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x1-m8.md"
+    },
+    {
+      "id": "d-x1-m9",
+      "title": "Data, fitur, dan label",
+      "cpItems": [],
+      "weekCodes": ["D-X1-M9"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x1-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Orange Data Mining: widget File",
+          "url": "https://orangedatamining.com/widget-catalog/data/file/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x1-m9.md"
+    },
+    {
+      "id": "d-x1-m10",
+      "title": "Klasifikasi tanpa komputer",
+      "cpItems": [],
+      "weekCodes": ["D-X1-M10"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x1-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Orange Data Mining: widget Tree",
+          "url": "https://orangedatamining.com/widget-catalog/model/tree/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x1-m10.md"
+    },
+    {
+      "id": "d-x1-m11",
+      "title": "Orange: memuat dan melihat data",
+      "cpItems": [],
+      "weekCodes": ["D-X1-M11"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x1-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Orange Data Mining: widget File",
+          "url": "https://orangedatamining.com/widget-catalog/data/file/"
+        },
+        {
+          "title": "Orange Data Mining: widget Data Table",
+          "url": "https://orangedatamining.com/widget-catalog/data/datatable/"
+        },
+        {
+          "title": "Orange Data Mining: widget Scatter Plot",
+          "url": "https://orangedatamining.com/widget-catalog/visualize/scatterplot/"
+        },
+        {
+          "title": "Orange Data Mining: halaman unduh",
+          "url": "https://orangedatamining.com/download/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x1-m11.md"
+    },
+    {
+      "id": "d-x1-m12",
+      "title": "Model pertama dan pembagian data latih/uji",
+      "cpItems": [],
+      "weekCodes": ["D-X1-M12"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x1-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Orange Data Mining: widget Tree",
+          "url": "https://orangedatamining.com/widget-catalog/model/tree/"
+        },
+        {
+          "title": "Orange Data Mining: widget Test and Score",
+          "url": "https://orangedatamining.com/widget-catalog/evaluate/testandscore/"
+        },
+        {
+          "title": "Orange Data Mining: widget File",
+          "url": "https://orangedatamining.com/widget-catalog/data/file/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x1-m12.md"
+    },
+    {
+      "id": "d-x1-m13",
+      "title": "Proyek mini (kelas X semester 1)",
+      "cpItems": [],
+      "weekCodes": ["D-X1-M13"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Orange Data Mining: widget Tree",
+          "url": "https://orangedatamining.com/widget-catalog/model/tree/"
+        },
+        {
+          "title": "Orange Data Mining: widget Test and Score",
+          "url": "https://orangedatamining.com/widget-catalog/evaluate/testandscore/"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x1-m13.md"
+    },
+    {
+      "id": "d-x1-m14",
+      "title": "Asesmen dan refleksi (kelas X semester 1)",
+      "cpItems": [],
+      "weekCodes": ["D-X1-M14"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Orange Data Mining: widget Test and Score",
+          "url": "https://orangedatamining.com/widget-catalog/evaluate/testandscore/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x1-m14.md"
     }
   ]
 }
