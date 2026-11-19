@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 430" width="420" height="430" role="img" aria-labelledby="t d">
+  <title id="t">Diagram alir menyiapkan tas sekolah</title>
+  <desc id="d">Diagram alir dari atas ke bawah: oval MULAI, kotak Ambil buku sesuai jadwal, kotak Masukkan buku ke tas, kotak Masukkan botol minum, oval SELESAI, dihubungkan panah. Di bawah ada kunci simbol: oval untuk awal dan akhir, kotak untuk satu langkah.</desc>
+  <rect width="420" height="430" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444444"/>
+    </marker>
+  </defs>
+  <ellipse cx="210" cy="30" rx="60" ry="18" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="210" y="35" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#222222">MULAI</text>
+  <rect x="95" y="80" width="230" height="40" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+  <text x="210" y="105" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#222222">Ambil buku sesuai jadwal</text>
+  <rect x="95" y="150" width="230" height="40" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+  <text x="210" y="175" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#222222">Masukkan buku ke tas</text>
+  <rect x="95" y="220" width="230" height="40" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+  <text x="210" y="245" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#222222">Masukkan botol minum</text>
+  <ellipse cx="210" cy="310" rx="60" ry="18" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="210" y="315" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#222222">SELESAI</text>
+  <polyline points="210,48 210,78" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <polyline points="210,120 210,148" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <polyline points="210,190 210,218" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <polyline points="210,260 210,290" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <ellipse cx="70" cy="385" rx="40" ry="15" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="70" y="390" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#222222">oval</text>
+  <text x="120" y="390" font-family="sans-serif" font-size="12" text-anchor="start" fill="#222222">awal dan akhir</text>
+  <rect x="220" y="370" width="80" height="30" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+  <text x="260" y="390" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#222222">kotak</text>
+  <text x="305" y="390" font-family="sans-serif" font-size="12" text-anchor="start" fill="#222222">satu langkah</text>
+</svg>

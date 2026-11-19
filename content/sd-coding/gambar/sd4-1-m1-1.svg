@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 250" width="520" height="250" role="img" aria-labelledby="t d">
+  <title id="t">Masalah, langkah, periksa</title>
+  <desc id="d">Tiga kotak berurutan dengan panah: masalah, langkah, periksa. Isinya contoh pensil patah: ujung pensil patah, ambil peraut lalu raut pensil, coba menulis satu garis.</desc>
+  <rect width="520" height="250" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444444"/>
+    </marker>
+  </defs>
+  <rect x="20" y="40" width="140" height="130" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="90" y="70" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">MASALAH</text>
+  <text x="90" y="105" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">Ujung pensil patah</text>
+  <rect x="190" y="40" width="140" height="130" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+  <text x="260" y="70" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">LANGKAH</text>
+  <text x="260" y="105" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">1 ambil peraut</text>
+  <text x="260" y="128" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">2 raut pensil</text>
+  <rect x="360" y="40" width="140" height="130" fill="#e8f5e9" stroke="#2e7d32" stroke-width="2"/>
+  <text x="430" y="70" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">PERIKSA</text>
+  <text x="430" y="105" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">Coba tulis satu garis</text>
+  <text x="430" y="128" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">Putus? raut lagi</text>
+  <polyline points="162,105 186,105" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <polyline points="332,105 356,105" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <text x="260" y="215" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#222222">Masalah, lalu langkah berurutan, lalu periksa hasilnya</text>
+</svg>
