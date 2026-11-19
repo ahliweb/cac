@@ -1,6 +1,6 @@
 # Traceability Matrices
 
-Three views on the 108 requirements in `register.md`, proving the register is exhaustive in
+Three views on the 109 requirements in `register.md`, proving the register is exhaustive in
 both directions (see `README.md`'s "completeness rule"):
 
 1. **Syllabus section → requirements → issues** — proves every numbered section of the source
@@ -88,14 +88,14 @@ itself.
 | #178 — Automatic checker for Arduino/Python examples and learner-sheet SVG assets | TR-20, TR-21 |
 | #139 — AI in software engineering research and the per-programme AI-use policies (PR #159 OSN, #160 SMP, #161 SMA, #162 kuliah, #163 dewasa) | ER-17, FR-36, FR-37, FR-38 |
 | #172 — module indexes of `tk-coding`, `sd-coding`, `smp-coding`, `kuliah-coding` and `dewasa-coding` (schemas, validation, `osn render modul`, learner sheets for tk and sd) | FR-39, FR-40, FR-41, FR-42, FR-43 |
-| #177 — Apply the owner-approved inter-programme bridge alignment (kuliah-coding to `dewasa-coding` `PRO` first; five atomic PRs) | FR-44, TR-22, FR-37, FR-38 |
+| #177 — Apply the owner-approved inter-programme bridge alignment (kuliah-coding to `dewasa-coding` `PRO` first; five atomic PRs) | FR-44, FR-45, TR-22, FR-28, FR-36, FR-37, FR-38 |
 
 Rows `#27` and later are not required by the checker: only `#1`-`#26` must be present (the initial
 backlog), while any issue may be cited. A new programme adds its issues here as it adds requirements.
 
 ## Matrix 3 — Requirement → tests
 
-Requirements `FR-27`-`FR-44`, `TR-12`-`TR-22` and `GR-13` have no OSN syllabus section, so they
+Requirements `FR-27`-`FR-45`, `TR-12`-`TR-22` and `GR-13` have no OSN syllabus section, so they
 are traced by issue (Matrix 2) and by the tests below. Every path must exist; the checker
 (`checkTestLinks`) fails on a missing file, an unregistered ID or a row with no test.
 
@@ -119,6 +119,7 @@ are traced by issue (Matrix 2) and by the tests below. Every path must exist; th
 | FR-42 | `tests/unit/program-module-schemas.test.ts`, `tests/unit/program-modules-domain.test.ts`, `tests/integration/cli-program-modules-validate.test.ts`, `tests/integration/cli-program-modules-render.test.ts` |
 | FR-43 | `tests/unit/program-module-schemas.test.ts`, `tests/unit/program-modules-domain.test.ts`, `tests/integration/cli-program-modules-validate.test.ts`, `tests/integration/cli-program-modules-render.test.ts` |
 | FR-44 | `tests/unit/dw-kuliah-bridge.test.ts`, `tests/integration/dewasa-coding-fidelity.test.ts` |
+| FR-45 | `tests/unit/sma-smp-bridge.test.ts`, `tests/integration/cli-sma-coding.test.ts` |
 | TR-12 | `tests/integration/sma-coding-fidelity.test.ts` |
 | TR-13 | `tests/unit/check-module-code.test.ts`, `tests/integration/check-module-code.test.ts` |
 | TR-14 | `tests/unit/program-registry.test.ts`, `tests/integration/check-fidelity.test.ts` |
@@ -129,7 +130,7 @@ are traced by issue (Matrix 2) and by the tests below. Every path must exist; th
 | TR-19 | `tests/integration/dewasa-coding-fidelity.test.ts` |
 | TR-20 | `tests/unit/check-module-code.test.ts`, `tests/integration/check-module-code.test.ts` |
 | TR-21 | `tests/unit/check-learner-assets.test.ts`, `tests/integration/check-learner-assets.test.ts` |
-| TR-22 | `tests/unit/cross-program-refs.test.ts`, `tests/integration/cli-dewasa-coding.test.ts` |
+| TR-22 | `tests/unit/cross-program-refs.test.ts`, `tests/integration/cli-dewasa-coding.test.ts`, `tests/integration/cli-kuliah-coding.test.ts`, `tests/integration/cli-smp-coding.test.ts`, `tests/integration/cli-sma-coding.test.ts` |
 | GR-13 | `tests/unit/module-schema.test.ts`, `tests/unit/render-module.test.ts` |
 
 Every requirement ID in `register.md` appears in at least one row of Matrix 1 or Matrix 2, and

@@ -54,7 +54,7 @@ osn validate: programme "osn", corpus at /.../data/osn
 OK -- 22 data file(s) validated, 0 problem(s) found.
 
 osn validate: programme "sma-coding", corpus at /.../data/sma-coding
-OK -- 7 data file(s) validated, 0 problem(s) found.
+OK -- 8 data file(s) validated, 0 problem(s) found.
 
 osn validate: programme "tk-coding", corpus at /.../data/tk-coding
 OK -- 7 data file(s) validated, 0 problem(s) found.

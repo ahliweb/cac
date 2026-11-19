@@ -1,40 +1,50 @@
 {
-  "syllabusVersion": "1.1.2",
+  "syllabusVersion": "1.2.0",
   "syllabusDate": "2026-11-19",
   "sourceSection": "bagian 5",
   "fromSd": {
-    "text": "Program `sd-coding` (silabus disetujui pemilik pada 2026-11-19) disusun **paralel** oleh pelaksana lain dan isinya tidak dibaca penyusun dokumen ini. Asumsi `[asumsi]`: murid kelas 6 yang masuk SMP mengenal blok, urutan, perulangan, dan percabangan dasar. Karena itu `SMP7-1-M1` sampai `M5` dirancang sebagai tinjauan yang dapat dipadatkan; murid tanpa latar SD tetap dapat mengikutinya. Penyelarasan kode (`SD6-2-...` ke `SMP7-1-...`) dilakukan setelah kedua silabus disetujui."
+    "text": "Program `sd-coding` (disetujui pemilik pada 2026-11-19) sudah dibaca. Asumsi `[asumsi]`: murid kelas 7 berasal dari SD dengan latar yang berbeda-beda; `sd-coding` kelas 1-4 opsional dan kelas 5-6 pilihan, dan tidak mengajarkan sintaks pemrograman, sehingga murid dapat belum mengenal blok, perulangan, ataupun percabangan (`sd-coding` bagian 7.2). Karena itu `SMP7-1-M1` dipakai guru sebagai pengamatan awal (tugas tanpa layar, ceklis \"terlihat\" dan \"belum terlihat\", tanpa tes dan tanpa nilai angka, daftar \"sudah bisa\" dari `SD6-2-M14` sebagai bahan bila ada); `SMP7-1-M1` dan `SMP7-1-M2` (tanpa layar) boleh dipadatkan bagi murid yang terlihat menguasainya, yang lalu mengerjakan tugas tambahan yang disiapkan guru; `SMP7-1-M3` sampai `SMP7-1-M5` (Scratch, termasuk perulangan) dan `SMP7-1-M8` sampai `SMP7-1-M9` (percabangan, variabel) tidak dipadatkan bagi siapa pun karena Scratch tidak diajarkan di SD; murid yang sudah mengenal konsepnya tanpa layar mengerjakannya sebagai penerjemahan ke blok. Kegiatan KA kelas 9 (`SMP9-2-M8` sampai `SMP9-2-M10`) beririsan dengan KA kelas 5-6 SD (`SD6-2-M4`) dan memakai tuntutan lebih tinggi untuk murid yang sudah mengikutinya, tanpa mengubah rencana minggu. Penyelarasan kode `SD6-2-...` ke `SMP7-1-...` dilakukan dengan revisi ini; dasar `[asumsi]`: efek keahlian terbalik (`docs/riset/ilmu-belajar-kognitif.md` bagian 3.4)."
   },
   "toSma": [
     {
-      "from": "Blok kelas 7 dan pemecahan masalah",
+      "from": "Sistem komputer, jaringan, keamanan akun, dan dokumen: `SMP7-2-M2`, `SMP7-2-M3`, `SMP7-2-M10`, `SMP7-2-M12`, `SMP8-1-M6`, `SMP8-1-M7`, `SMP8-1-M12`, `SMP8-2-M11`, `SMP8-2-M12`",
       "to": "Blok fondasi kelas X (`FND-X1-M1..M7`), yang membuka tanpa mensyaratkan bahasa pemrograman",
-      "note": "Murid SMP tanpa mapel KKA tetap diterima di fondasi.",
-      "smpWeeks": [],
+      "note": "Tumpang tindih nyata (mis. `SMP7-2-M10` dan `FND-X1-M1`; `SMP8-2-M11` dan `FND-X1-M6`), tetapi fondasi tetap kelas bersama (`sma-coding` bagian 9.1); murid dengan latar ini diamati di awal fondasi dan diberi tugas pendalaman. Murid SMP tanpa mapel KKA tetap diterima di fondasi. Baris ini menggantikan pemetaan blok kelas 7 ke fondasi pada versi sebelumnya (v1.1.2), yang tidak tepat karena fondasi tidak memuat pemrograman.",
+      "smpWeeks": [
+        "SMP7-2-M2",
+        "SMP7-2-M3",
+        "SMP7-2-M10",
+        "SMP7-2-M12",
+        "SMP8-1-M6",
+        "SMP8-1-M7",
+        "SMP8-1-M12",
+        "SMP8-2-M11",
+        "SMP8-2-M12"
+      ],
       "cpCodes": [],
       "smaTracks": []
     },
     {
-      "from": "Python kelas 8-9 (pengayaan di luar CP Fase D)",
+      "from": "Python kelas 8-9 (pengayaan di luar CP Fase D): `SMP8-2-M2`, `SMP8-2-M9`",
       "to": "Jalur D (AI dan analisis data) memakai Orange lalu Python",
-      "note": "Python menjadi bahasa pertama bagi murid yang masuk D; murid tanpa pengayaan Python tetap dapat masuk.",
-      "smpWeeks": [],
+      "note": "Python menjadi bahasa pertama bagi murid yang masuk D; murid tanpa pengayaan Python tetap dapat masuk. `D-XI1-M2` dan `D-XI1-M3` mengajarkan Python dari awal, sehingga murid berlatar Python memadatkannya lewat soal setengah jadi.",
+      "smpWeeks": ["SMP8-2-M2", "SMP8-2-M9"],
       "cpCodes": [],
       "smaTracks": ["D"]
     },
     {
-      "from": "Logika, percabangan, perulangan, fungsi, daftar",
+      "from": "Logika, percabangan, perulangan, fungsi, daftar: `SMP7-1-M5`, `SMP7-1-M8`, `SMP8-2-M4`, `SMP8-2-M5`, `SMP8-2-M9`",
       "to": "Jalur A (C++) dan jalur B (JS/TS)",
-      "note": "Konsep yang sama; sintaks baru. Jalur A butuh tipe statis dan kompilasi yang tidak diajarkan di SMP.",
-      "smpWeeks": [],
+      "note": "Konsep yang sama; sintaks baru. Jalur A butuh tipe statis dan kompilasi yang tidak diajarkan di SMP. `A-X1-M9` sampai `A-X1-M12` dan `B-X1-M9` sampai `B-X1-M12` mengajar dari awal tanpa mengandaikan SMP; murid berlatar teks memakai tugas baca-dan-prediksi dan soal setengah jadi sebelum menulis dari halaman kosong.",
+      "smpWeeks": ["SMP7-1-M5", "SMP7-1-M8", "SMP8-2-M4", "SMP8-2-M5", "SMP8-2-M9"],
       "cpCodes": [],
       "smaTracks": ["A", "B"]
     },
     {
-      "from": "Simulator MakeCode kelas 8",
+      "from": "Simulator MakeCode kelas 8: `SMP8-1-M9`, `SMP8-1-M10`, `SMP8-1-M11`",
       "to": "Jalur C (IoT dan robotika, C++ gaya Arduino, ESP32)",
       "note": "Konsep masukan dan keluaran perangkat sudah dikenal.",
-      "smpWeeks": [],
+      "smpWeeks": ["SMP8-1-M9", "SMP8-1-M10", "SMP8-1-M11"],
       "cpCodes": [],
       "smaTracks": ["C"]
     },

@@ -1,8 +1,8 @@
 # Program Pembelajaran Coding SMP (`smp-coding`)
 
-- **Version:** v1.1.2
+- **Version:** v1.2.0
 - **Last updated:** 2026-11-19
-- **Status:** DISETUJUI pemilik program, 2026-11-19 — silabus v1.1.2 (revisi patch status verifikasi sumber SK 046; v1.1.1 revisi patch kalimat status, #165; v1.0.0 beserta semua rekomendasi penyusun, issue #129; v1.1.0 menambah butir dan kebijakan AI, keputusan di issue #139). Program **terdaftar** di `data/programs.json` dan corpusnya di `data/smp-coding/` (skema khusus program, ADR-0008). Belum ada modul di `content/smp-coding/` (pekerjaan lanjutan, ADR-0007).
+- **Status:** DISETUJUI pemilik program, 2026-11-19 — silabus v1.1.2 (revisi patch status verifikasi sumber SK 046; v1.1.1 revisi patch kalimat status, #165; v1.0.0 beserta semua rekomendasi penyusun, issue #129; v1.1.0 menambah butir dan kebijakan AI, keputusan di issue #139). Program **terdaftar** di `data/programs.json` dan corpusnya di `data/smp-coding/` (skema khusus program, ADR-0008). Belum ada modul di `content/smp-coding/` (pekerjaan lanjutan, ADR-0007). Revisi v1.2.0 (jembatan dari SD dan ke SMA, bagian 5.1 dan 5.2) disetujui lewat keputusan pemilik 2026-11-19 (issue #177).
 
 > Isi folder ini adalah konten **karangan** (*authored*) menurut
 > [ADR-0007](../../architecture/adr/0007-authored-learning-content.md), bukan
@@ -38,7 +38,7 @@ Python. Keputusan pemilik 2026-11-19:
 | --- | --- |
 | `README.md` | Dokumen ini: status, tujuan, daftar berkas, keputusan pemilik, pekerjaan lanjutan, changelog. |
 | `riset.md` | Riset: provenance sumber resmi, kutipan persis CP Informatika Fase D (Panduan 2025) dan CP Koding dan KA Fase D (SK 046), dokumen ATP guru sebagai pembanding, kebijakan KKA di SMP, OSN jenjang SMP, kajian alat. |
-| `silabus.md` | Silabus v1.1.2 (disetujui; bagian 7.1 memuat kebijakan penggunaan AI): kutipan dan kode butir CP, struktur waktu, rencana 84 minggu, klub pengayaan, pemetaan CP, jembatan, asesmen, privasi, kebutuhan sarana, opsi alat, catatan keputusan pemilik. Sumber corpus `data/smp-coding/`. |
+| `silabus.md` | Silabus v1.2.0 (disetujui; bagian 7.1 memuat kebijakan penggunaan AI): kutipan dan kode butir CP, struktur waktu, rencana 84 minggu, klub pengayaan, pemetaan CP, jembatan, asesmen, privasi, kebutuhan sarana, opsi alat, catatan keputusan pemilik. Sumber corpus `data/smp-coding/`. |
 
 Corpus yang di-encode dari `silabus.md` ada di `data/smp-coding/` (tujuh
 berkas: `cp-elements`, `structure`, `weeks`, `cp-mapping`, `uncovered`,
@@ -69,6 +69,7 @@ Q11 demonstrasi guru.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v1.2.0 | 2026-11-19 | Revisi minor atas keputusan pemilik #177: bagian 5.1 tidak lagi mengasumsikan blok, perulangan, dan percabangan dari SD (`SMP7-1-M1` pengamatan awal, hanya `SMP7-1-M1` dan `SMP7-1-M2` boleh dipadatkan); bagian 5.2 memperinci pemetaan ke SMA per kode minggu dan mengoreksi pemetaan blok kelas 7 ke fondasi `FND-X1-M1..M7`; rencana minggu, CP, dan jam tidak berubah. |
 | v1.1.1 | 2026-11-19 | Silabus direvisi patch ke v1.1.1 (issue #165): kalimat status yang basi tentang program pasangannya diperbaiki; isi kurikulum dan corpus tidak berubah. |
 | v1.1.2 | 2026-11-19 | Silabus direvisi patch ke v1.1.2: URL asal salinan SK 046 terverifikasi (`riset.md` v0.3.1); isi kurikulum dan corpus tidak berubah. |
 | v1.1.0 | 2026-11-19 | Silabus v1.1: bagian 7.1 "Kebijakan penggunaan AI"; butir mengalihkan pekerjaan berpikir ke AI di `SMP9-2-M10` dan data pribadi dan kata sandi tidak ditempel ke layanan AI di `SMP8-2-M11`; `data/smp-coding/weeks.json` diperbarui; versi registri 1.1.0; kode butir CP dan struktur tidak berubah (usulan U-06, keputusan pemilik di issue #139). |
