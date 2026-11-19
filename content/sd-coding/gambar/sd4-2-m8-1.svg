@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 260" width="520" height="260" role="img" aria-labelledby="t d">
+  <title id="t">Dua kotak: non-cerdas dan cerdas</title>
+  <desc id="d">Dua kotak berdampingan. Kotak NON-CERDAS berisi kipas angin: berputar sama saja. Kotak CERDAS berisi robot penyapu: berbelok bila ada kursi.</desc>
+  <rect width="520" height="260" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444444"/>
+    </marker>
+  </defs>
+  <text x="260" y="26" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">Memilah mesin</text>
+  <rect x="20" y="45" width="230" height="40" fill="#fbe9e9" stroke="#a32020" stroke-width="3"/>
+  <text x="135" y="70" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#222222">NON-CERDAS</text>
+  <rect x="270" y="45" width="230" height="40" fill="#e9f6ea" stroke="#2b7a33" stroke-width="2"/>
+  <text x="385" y="70" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#222222">CERDAS</text>
+  <rect x="20" y="85" width="230" height="120" fill="#ffffff" stroke="#444444" stroke-width="3"/>
+  <rect x="270" y="85" width="230" height="120" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+  <circle cx="135" cy="125" r="26" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+  <line x1="135" y1="125" x2="135" y2="101" stroke="#444444" stroke-width="3"/>
+  <line x1="135" y1="125" x2="156" y2="137" stroke="#444444" stroke-width="3"/>
+  <line x1="135" y1="125" x2="114" y2="137" stroke="#444444" stroke-width="3"/>
+  <line x1="135" y1="151" x2="135" y2="165" stroke="#444444" stroke-width="3"/>
+  <text x="135" y="183" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#222222">kipas angin</text>
+  <text x="135" y="198" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">berputar sama saja</text>
+  <ellipse cx="330" cy="140" rx="30" ry="14" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+  <rect x="410" y="120" width="26" height="26" fill="#eeeeee" stroke="#444444" stroke-width="2"/>
+  <text x="423" y="138" font-family="sans-serif" font-size="10" text-anchor="middle" fill="#222222">kursi</text>
+  <path d="M362,140 L395,140 Q405,140 405,155 L405,160" fill="none" stroke="#444444" stroke-width="2" marker-end="url(#a)"/>
+  <text x="385" y="183" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#222222">robot penyapu</text>
+  <text x="385" y="198" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">berbelok bila ada kursi</text>
+  <text x="260" y="235" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">Mesin cerdas memeriksa keadaan, lalu memilih tindakannya.</text>
+</svg>

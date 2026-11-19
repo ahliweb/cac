@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 270" width="540" height="270" role="img" aria-labelledby="t d">
+  <title id="t">Peta isi semester 2</title>
+  <desc id="d">Empat baris. Perangkat dan keamanan minggu satu sampai tujuh. Mesin cerdas, piksel, dan mesin kartu minggu delapan sampai sepuluh. Empati minggu sebelas. Panduan dan poster minggu dua belas dan tiga belas.</desc>
+  <rect width="540" height="270" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444444"/>
+    </marker>
+  </defs>
+  <text x="270" y="26" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">Isi semester 2</text>
+  <rect x="20" y="45" width="500" height="40" fill="#e9f0fb" stroke="#444444" stroke-width="2"/>
+  <text x="35" y="70" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="start" fill="#222222">Perangkat dan keamanan</text>
+  <text x="505" y="70" font-family="sans-serif" font-size="12" text-anchor="end" fill="#222222">minggu 1 sampai 7</text>
+  <rect x="20" y="95" width="500" height="40" fill="#e9f6ea" stroke="#444444" stroke-width="2"/>
+  <text x="35" y="120" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="start" fill="#222222">Mesin cerdas, piksel, mesin kartu</text>
+  <text x="505" y="120" font-family="sans-serif" font-size="12" text-anchor="end" fill="#222222">minggu 8 sampai 10</text>
+  <rect x="20" y="145" width="500" height="40" fill="#fff6dc" stroke="#444444" stroke-width="2"/>
+  <text x="35" y="170" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="start" fill="#222222">Empati</text>
+  <text x="505" y="170" font-family="sans-serif" font-size="12" text-anchor="end" fill="#222222">minggu 11</text>
+  <rect x="20" y="195" width="500" height="40" fill="#f3e9fb" stroke="#444444" stroke-width="2"/>
+  <text x="35" y="220" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="start" fill="#222222">Panduan dan poster</text>
+  <text x="505" y="220" font-family="sans-serif" font-size="12" text-anchor="end" fill="#222222">minggu 12 dan 13</text>
+  <text x="270" y="255" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">Semua topik ini dilanjutkan di kelas 5.</text>
+</svg>

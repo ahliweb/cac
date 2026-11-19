@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" width="520" height="300" role="img" aria-labelledby="t d">
+  <title id="t">Panduan tiga aturan bergambar</title>
+  <desc id="d">Panduan satu halaman berjudul kalau ada pesan aneh. Tiga kotak bernomor: satu berhenti, jangan dibuka dan jangan disebarkan; dua tanya, tunjukkan ke orang dewasa; tiga cek, siapa penulisnya dan apa sumbernya. Di bawah: kalau ragu, tanya orang dewasa.</desc>
+  <rect width="520" height="300" fill="#ffffff"/>
+  <rect x="20" y="15" width="480" height="270" fill="#ffffff" stroke="#444444" stroke-width="3"/>
+  <text x="260" y="50" font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#222222">Kalau ada pesan aneh</text>
+  <rect x="40" y="70" width="140" height="150" fill="#f5f5f5" stroke="#444444" stroke-width="2"/>
+  <circle cx="110" cy="105" r="22" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+  <text x="110" y="112" font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#222222">1</text>
+  <text x="110" y="155" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">BERHENTI</text>
+  <text x="110" y="178" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">jangan dibuka,</text>
+  <text x="110" y="194" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">jangan disebarkan</text>
+  <rect x="195" y="70" width="140" height="150" fill="#f5f5f5" stroke="#444444" stroke-width="2"/>
+  <circle cx="265" cy="105" r="22" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+  <text x="265" y="112" font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#222222">2</text>
+  <text x="265" y="155" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">TANYA</text>
+  <text x="265" y="178" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">tunjukkan ke</text>
+  <text x="265" y="194" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">orang dewasa</text>
+  <rect x="350" y="70" width="140" height="150" fill="#f5f5f5" stroke="#444444" stroke-width="2"/>
+  <circle cx="420" cy="105" r="22" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+  <text x="420" y="112" font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#222222">3</text>
+  <text x="420" y="155" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">CEK</text>
+  <text x="420" y="178" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">siapa penulisnya,</text>
+  <text x="420" y="194" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">apa sumbernya</text>
+  <text x="260" y="255" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">Kalau ragu, tanya orang dewasa.</text>
+</svg>

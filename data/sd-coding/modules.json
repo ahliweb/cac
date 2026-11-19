@@ -2689,6 +2689,173 @@
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd1-1-m14.md",
       "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m14.md"
+    },
+    {
+      "id": "sd4-2-m8",
+      "title": "Mesin cerdas dan non-cerdas",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        },
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD4-2-M8"],
+      "cpItems": [],
+      "gradeLevels": [4],
+      "prerequisites": ["SD3-2-M9"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd4-2-m8.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m8.md"
+    },
+    {
+      "id": "sd4-2-m9",
+      "title": "Bagaimana mesin \"melihat\"",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        },
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD4-2-M9"],
+      "cpItems": [],
+      "gradeLevels": [4],
+      "prerequisites": ["SD2-2-M3"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd4-2-m9.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m9.md"
+    },
+    {
+      "id": "sd4-2-m10",
+      "title": "Mengenali pola dengan kartu",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        },
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD4-2-M10"],
+      "cpItems": [],
+      "gradeLevels": [4],
+      "prerequisites": ["SD3-2-M10", "SD4-2-M8"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd4-2-m10.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m10.md"
+    },
+    {
+      "id": "sd4-2-m11",
+      "title": "Empati dan tidak menyakiti",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        },
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD4-2-M11"],
+      "cpItems": [],
+      "gradeLevels": [4],
+      "prerequisites": ["SD3-2-M11"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd4-2-m11.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m11.md"
+    },
+    {
+      "id": "sd4-2-m12",
+      "title": "Penguatan: panduan aman untuk adik kelas",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD4-2-M12"],
+      "cpItems": [],
+      "gradeLevels": [4],
+      "prerequisites": ["SD4-2-M3", "SD4-2-M4", "SD4-2-M6"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd4-2-m12.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m12.md"
+    },
+    {
+      "id": "sd4-2-m13",
+      "title": "Proyek mini: poster panduan",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD4-2-M13"],
+      "cpItems": [],
+      "gradeLevels": [4],
+      "prerequisites": ["SD4-2-M12"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd4-2-m13.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m13.md"
+    },
+    {
+      "id": "sd4-2-m14",
+      "title": "Asesmen dan refleksi",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        },
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD4-2-M14"],
+      "cpItems": [],
+      "gradeLevels": [4],
+      "prerequisites": [
+        "SD4-2-M1",
+        "SD4-2-M2",
+        "SD4-2-M3",
+        "SD4-2-M4",
+        "SD4-2-M5",
+        "SD4-2-M6",
+        "SD4-2-M7",
+        "SD4-2-M8",
+        "SD4-2-M9",
+        "SD4-2-M10",
+        "SD4-2-M11",
+        "SD4-2-M12",
+        "SD4-2-M13"
+      ],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd4-2-m14.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m14.md"
     }
   ]
 }
