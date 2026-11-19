@@ -1,10 +1,11 @@
 # Kebutuhan Identitas CaC dan Traceability Migrasi
 
 ## Metadata
-- Version: v1.0.0
+- Version: v1.0.1
 - Last updated: 2026-11-19
 - Changeset: Menambahkan kontrak identitas dan migrasi terukur yang tidak mengubah requirement kurikulum.
-- Status: disiapkan untuk Gate 9; implementasi belum dimulai.
+- Status: bukti F1 tersedia; Gate 9 PASSED (keputusan pemilik 2026-11-20, [tinjauan Gate 9](../migrations/2026-11-cac-gate9-review.md)); implementasi F2 boleh dimulai, rename tetap menunggu Gate 15.
+- Catatan verifikasi: berkas ini belum terdaftar di `register.md` dan `traceability.md`, dan pola ID `check:requirements` (`FR|TR|OR|ER|GR`) tidak mencakup `IDENTITY-CAC-*`; bukti per kebutuhan dilacak manual di tinjauan Gate 9, bagian 4.
 
 | ID | Kebutuhan (shall) | Artefak | Acceptance evidence |
 | --- | --- | --- | --- |
@@ -29,10 +30,16 @@
 - Keputusan: ADR-0009.
 - Rencana: docs/migrations/2026-11-osn-to-cac.md.
 - Matriks dampak: docs/migrations/2026-11-cac-impact-matrix.md.
+- Inventaris consumer (IDENTITY-CAC-008): [2026-11-cac-consumer-inventory.md](../migrations/2026-11-cac-consumer-inventory.md) (#152).
+- Kontrak CLI dan strategi kompatibilitas (IDENTITY-CAC-003, 004, 005): [2026-11-cac-cli-contract.md](../migrations/2026-11-cac-cli-contract.md) (#153).
 - Invariants dan baseline data (IDENTITY-CAC-002, 005, 009): [2026-11-cac-invariants.md](../migrations/2026-11-cac-invariants.md) (#154).
+- Tinjauan silang dan usulan Gate 9 (seluruh kebutuhan): [2026-11-cac-gate9-review.md](../migrations/2026-11-cac-gate9-review.md) (#156).
 - Eksekusi: issue per area setelah Definition of Ready (Gate 9), setiap PR menutup issue atomik.
 - Validasi: tests/**, CI, checklist Go/No-Go, migration log post-rename.
 
 ## Changelog
+### 2026-11-19 - v1.0.1
+- Menautkan bukti F1 (inventaris consumer, kontrak CLI, tinjauan Gate 9), memperbarui status dan mencatat bahwa `check:requirements` belum mencakup berkas ini (issue #156). Tidak mengubah teks kebutuhan.
+
 ### 2026-11-19 - v1.0.0
 - Memformalkan 10 kebutuhan dan kriteria buktinya.

@@ -1,7 +1,7 @@
 # ADR-0009: Identitas Platform Curriculum as Code (CaC)
 
 ## Metadata
-- Version: v1.0.0
+- Version: v1.0.1
 - Last updated: 2026-11-19
 - Changeset: Mencatat keputusan nama platform dan target rename repo tanpa melaksanakan rename.
 
@@ -11,7 +11,7 @@ Accepted (keputusan pemilik, 2026-11-19). **Execution pending**: keputusan ident
 ## Context
 Repositori saat ini bernama ahliweb/osn, package private bernama kurikulum-informatika, CLI bernama osn, sementara ADR-0006 memperluas domain menjadi multi-program (OSN, SMA coding dan rencana TK/SD/SMP/kuliah/dewasa). Nama OSN tepat untuk satu program namun salah untuk platform yang menyimpan beberapa program. ADR-0001 sudah menetapkan paradigma curriculum-as-code; ADR-0005 membedakan versi perangkat lunak dari versi silabus; ADR-0004 melarang penyimpanan data pribadi pembelajar.
 
-Kebutuhan IDENTITY-CAC-001..009 dijabarkan pada docs/requirements/identity-cac.md. Rencana pelaksanaan: docs/migrations/2026-11-osn-to-cac.md.
+Kebutuhan IDENTITY-CAC-001..010 dijabarkan pada docs/requirements/identity-cac.md. Rencana pelaksanaan: docs/migrations/2026-11-osn-to-cac.md.
 
 ## Options considered
 | Opsi | Keunggulan | Penolakan atau trade-off |
@@ -42,5 +42,8 @@ Kebutuhan IDENTITY-CAC-001..009 dijabarkan pada docs/requirements/identity-cac.m
 - Referensi: ADR-0001, ADR-0004, ADR-0005, ADR-0006, ADR-0007, ADR-0008; docs/migrations/2026-11-osn-to-cac.md; https://docs.github.com/en/repositories/creating-and-managing-repositories/renaming-a-repository
 
 ## Changelog
+### 2026-11-19 - v1.0.1
+- Editorial (#156, X-03): rentang kebutuhan ditulis IDENTITY-CAC-001..010; keputusan tidak berubah.
+
 ### 2026-11-19 - v1.0.0
 - Menetapkan singkatan CaC dan slug ahliweb/cac; rename ditahan sampai readiness gate.
