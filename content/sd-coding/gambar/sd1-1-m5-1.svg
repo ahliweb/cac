@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 200" width="640" height="200" role="img" aria-labelledby="t d">
+  <title id="t">Pola merah dan biru bergantian</title>
+  <desc id="d">Enam lingkaran berurutan: merah, biru, merah, biru, merah, biru. Dua lingkaran pertama dilingkari garis putus-putus dan diberi tulisan bagian yang berulang. Di bawah tiap lingkaran ada tulisan warnanya.</desc>
+  <rect width="640" height="200" fill="#ffffff"/>
+  <line x1="40" y1="95" x2="600" y2="95" stroke="#888888" stroke-width="3"/>
+  <g stroke-width="3">
+    <circle cx="80" cy="95" r="34" fill="#d94f4f" stroke="#8f2a2a"/>
+    <circle cx="170" cy="95" r="34" fill="#2a5d9f" stroke="#1b3f70"/>
+    <circle cx="260" cy="95" r="34" fill="#d94f4f" stroke="#8f2a2a"/>
+    <circle cx="350" cy="95" r="34" fill="#2a5d9f" stroke="#1b3f70"/>
+    <circle cx="440" cy="95" r="34" fill="#d94f4f" stroke="#8f2a2a"/>
+    <circle cx="530" cy="95" r="34" fill="#2a5d9f" stroke="#1b3f70"/>
+  </g>
+  <rect x="35" y="45" width="180" height="100" rx="30" fill="none" stroke="#7bbf5a" stroke-width="3" stroke-dasharray="8 6"/>
+  <g font-family="sans-serif" font-size="16" fill="#222222" text-anchor="middle">
+    <text x="80" y="160">merah</text>
+    <text x="170" y="160">biru</text>
+    <text x="260" y="160">merah</text>
+    <text x="350" y="160">biru</text>
+    <text x="440" y="160">merah</text>
+    <text x="530" y="160">biru</text>
+    <text x="125" y="30" fill="#3b7d1f">bagian yang berulang</text>
+  </g>
+</svg>

@@ -1956,6 +1956,147 @@
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd2-1-m7.md",
       "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m7.md"
+    },
+    {
+      "id": "sd1-1-m1",
+      "title": "Perintah satu langkah",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD1-1-M1"],
+      "cpItems": [],
+      "gradeLevels": [1],
+      "prerequisites": [],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd1-1-m1.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m1.md"
+    },
+    {
+      "id": "sd1-1-m2",
+      "title": "Urutan kegiatan sehari-hari",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD1-1-M2"],
+      "cpItems": [],
+      "gradeLevels": [1],
+      "prerequisites": [],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd1-1-m2.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m2.md"
+    },
+    {
+      "id": "sd1-1-m3",
+      "title": "Urutan benar dan salah",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD1-1-M3"],
+      "cpItems": [],
+      "gradeLevels": [1],
+      "prerequisites": ["SD1-1-M2"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd1-1-m3.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m3.md"
+    },
+    {
+      "id": "sd1-1-m4",
+      "title": "Maju, kiri, kanan",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        },
+        {
+          "title": "CS Unplugged (rujukan ide kegiatan tanpa layar; hanya ditautkan, CC BY-SA 4.0)",
+          "url": "https://www.csunplugged.org/en/"
+        }
+      ],
+      "weekCodes": ["SD1-1-M4"],
+      "cpItems": [],
+      "gradeLevels": [1],
+      "prerequisites": ["SD1-1-M1"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd1-1-m4.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m4.md"
+    },
+    {
+      "id": "sd1-1-m5",
+      "title": "Pola warna dan bentuk",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD1-1-M5"],
+      "cpItems": [],
+      "gradeLevels": [1],
+      "prerequisites": [],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd1-1-m5.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m5.md"
+    },
+    {
+      "id": "sd1-1-m6",
+      "title": "Pola gerak dan bunyi",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD1-1-M6"],
+      "cpItems": [],
+      "gradeLevels": [1],
+      "prerequisites": ["SD1-1-M5"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd1-1-m6.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m6.md"
+    },
+    {
+      "id": "sd1-1-m7",
+      "title": "Perintah dengan gambar panah",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        },
+        {
+          "title": "CS Unplugged (rujukan ide kegiatan tanpa layar; hanya ditautkan, CC BY-SA 4.0)",
+          "url": "https://www.csunplugged.org/en/"
+        }
+      ],
+      "weekCodes": ["SD1-1-M7"],
+      "cpItems": [],
+      "gradeLevels": [1],
+      "prerequisites": ["SD1-1-M4"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd1-1-m7.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m7.md"
     }
   ]
 }

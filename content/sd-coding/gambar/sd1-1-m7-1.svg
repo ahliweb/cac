@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280" width="640" height="280" role="img" aria-labelledby="t d">
+  <title id="t">Kisi 3x3 bernomor dengan jalur panah dari petak 7 ke petak 3</title>
+  <desc id="d">Kisi 3x3 bernomor 1 sampai 9, baris atas 1 2 3. Rumah di petak 7 dan bintang di petak 3. Empat panah biru: dari 7 ke 4, dari 4 ke 1, dari 1 ke 2, dari 2 ke 3.</desc>
+  <rect width="640" height="280" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a5d9f"/>
+    </marker>
+  </defs>
+  <g fill="#fffdf5" stroke="#888888" stroke-width="2">
+    <rect x="200" y="20" width="80" height="80"/>
+    <rect x="280" y="20" width="80" height="80"/>
+    <rect x="360" y="20" width="80" height="80"/>
+    <rect x="200" y="100" width="80" height="80"/>
+    <rect x="280" y="100" width="80" height="80"/>
+    <rect x="360" y="100" width="80" height="80"/>
+    <rect x="200" y="180" width="80" height="80"/>
+    <rect x="280" y="180" width="80" height="80"/>
+    <rect x="360" y="180" width="80" height="80"/>
+  </g>
+  <g font-family="sans-serif" font-size="14" fill="#777777">
+    <text x="206" y="36">1</text>
+    <text x="286" y="36">2</text>
+    <text x="366" y="36">3</text>
+    <text x="206" y="116">4</text>
+    <text x="286" y="116">5</text>
+    <text x="366" y="116">6</text>
+    <text x="206" y="196">7</text>
+    <text x="286" y="196">8</text>
+    <text x="366" y="196">9</text>
+  </g>
+  <polygon points="240,205 270,230 270,250 210,250 210,230" fill="#e8c27a" stroke="#b86a00" stroke-width="2"/>
+  <rect x="233" y="232" width="14" height="18" fill="#b86a00"/>
+  <polygon points="410,45 416,62 434,62 420,72 425,89 410,79 395,89 400,72 386,62 404,62" fill="#f2d24b" stroke="#b8960a" stroke-width="2"/>
+  <g stroke="#2a5d9f" stroke-width="4" fill="none" marker-end="url(#a)">
+    <line x1="240" y1="196" x2="240" y2="146"/>
+    <line x1="240" y1="116" x2="240" y2="66"/>
+    <line x1="260" y1="60" x2="300" y2="60"/>
+    <line x1="320" y1="60" x2="370" y2="60"/>
+  </g>
+</svg>

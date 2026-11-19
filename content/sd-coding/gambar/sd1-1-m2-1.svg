@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 230" width="640" height="230" role="img" aria-labelledby="t d">
+  <title id="t">Empat kartu kegiatan pagi dari kiri ke kanan</title>
+  <desc id="d">Empat kartu berurutan dengan panah dan angka 1 sampai 4. Kartu 1: tempat tidur dan bulan sabit. Kartu 2: pancuran air. Kartu 3: mangkuk dan sendok. Kartu 4: tas sekolah.</desc>
+  <rect width="640" height="230" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a5d9f"/>
+    </marker>
+  </defs>
+  <g fill="#fffdf5" stroke="#888888" stroke-width="2">
+    <rect x="15" y="20" width="130" height="150" rx="10"/>
+    <rect x="175" y="20" width="130" height="150" rx="10"/>
+    <rect x="335" y="20" width="130" height="150" rx="10"/>
+    <rect x="495" y="20" width="130" height="150" rx="10"/>
+  </g>
+  <g stroke="#2a5d9f" stroke-width="3" fill="none" marker-end="url(#a)">
+    <line x1="147" y1="95" x2="173" y2="95"/>
+    <line x1="307" y1="95" x2="333" y2="95"/>
+    <line x1="467" y1="95" x2="493" y2="95"/>
+  </g>
+  <g font-family="sans-serif" font-size="18" font-weight="bold" fill="#2a5d9f" text-anchor="middle">
+    <text x="35" y="45">1</text>
+    <text x="195" y="45">2</text>
+    <text x="355" y="45">3</text>
+    <text x="515" y="45">4</text>
+  </g>
+  <rect x="35" y="85" width="90" height="30" rx="5" fill="#e8c27a" stroke="#b86a00" stroke-width="2"/>
+  <rect x="35" y="65" width="14" height="50" rx="4" fill="#b86a00"/>
+  <path d="M100,60 A14,14 0 1 0 100,88 A10,10 0 1 1 100,60 z" fill="#f2d24b" stroke="#b8960a" stroke-width="1.5"/>
+  <g stroke="#555555" stroke-width="3" fill="none">
+    <line x1="215" y1="55" x2="265" y2="55"/>
+    <line x1="265" y1="55" x2="265" y2="68"/>
+  </g>
+  <g stroke="#2a5d9f" stroke-width="3" stroke-linecap="round">
+    <line x1="225" y1="75" x2="219" y2="105"/>
+    <line x1="240" y1="75" x2="236" y2="115"/>
+    <line x1="255" y1="75" x2="253" y2="105"/>
+    <line x1="270" y1="75" x2="270" y2="115"/>
+    <line x1="285" y1="75" x2="287" y2="105"/>
+  </g>
+  <path d="M365,85 L435,85 Q432,125 400,125 Q368,125 365,85 z" fill="#fffdf5" stroke="#b86a00" stroke-width="3"/>
+  <line x1="440" y1="70" x2="425" y2="105" stroke="#888888" stroke-width="4" stroke-linecap="round"/>
+  <ellipse cx="445" cy="66" rx="8" ry="11" fill="#cfd8e3" stroke="#555555" stroke-width="2"/>
+  <rect x="530" y="75" width="70" height="70" rx="12" fill="#7bbf5a" stroke="#3b7d1f" stroke-width="3"/>
+  <rect x="545" y="95" width="40" height="25" rx="5" fill="#b9e0a0" stroke="#3b7d1f" stroke-width="2"/>
+  <path d="M545,75 Q565,52 585,75" fill="none" stroke="#3b7d1f" stroke-width="4"/>
+  <g font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">
+    <text x="80" y="155">bangun tidur</text>
+    <text x="240" y="155">mandi</text>
+    <text x="400" y="155">sarapan</text>
+    <text x="560" y="165">ke sekolah</text>
+  </g>
+</svg>
