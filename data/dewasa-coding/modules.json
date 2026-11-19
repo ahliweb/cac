@@ -657,6 +657,158 @@
       "prerequisites": ["dw-pro-m1"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-pro-m2.md"
+    },
+    {
+      "id": "dw-pro-m3",
+      "title": "Struktur data dan algoritma dasar",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python Tutorial: data structures (daftar, himpunan, kamus)",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        },
+        {
+          "title": "Python HOWTO: sorting techniques",
+          "url": "https://docs.python.org/3/howto/sorting.html"
+        },
+        {
+          "title": "Python Library Reference: built-in types (set dan dict)",
+          "url": "https://docs.python.org/3/library/stdtypes.html"
+        }
+      ],
+      "moduleCodes": ["DW-PRO-M3"],
+      "skkniUnits": ["J.620100.004.02", "J.620100.022.02"],
+      "track": "PRO",
+      "prerequisites": ["DW-PRO-M2"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pro-m3.md"
+    },
+    {
+      "id": "dw-pro-m4",
+      "title": "Fungsi, modul, dan kode yang rapi",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "PEP 8: Style Guide for Python Code",
+          "url": "https://peps.python.org/pep-0008/"
+        },
+        {
+          "title": "PEP 257: Docstring Conventions",
+          "url": "https://peps.python.org/pep-0257/"
+        },
+        {
+          "title": "Python Tutorial: modules",
+          "url": "https://docs.python.org/3/tutorial/modules.html"
+        },
+        {
+          "title": "Python documentation: doctest",
+          "url": "https://docs.python.org/3/library/doctest.html"
+        }
+      ],
+      "moduleCodes": ["DW-PRO-M4"],
+      "skkniUnits": ["J.620100.014.01", "J.620100.015.01", "J.620100.016.01", "J.620100.023.02"],
+      "track": "PRO",
+      "prerequisites": ["dw-pro-m3"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pro-m4.md"
+    },
+    {
+      "id": "dw-pro-m5",
+      "title": "Debugging dan pengujian unit",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python documentation: unittest",
+          "url": "https://docs.python.org/3/library/unittest.html"
+        },
+        {
+          "title": "Python documentation: pdb, the Python debugger",
+          "url": "https://docs.python.org/3/library/pdb.html"
+        },
+        {
+          "title": "Python Tutorial: errors and exceptions",
+          "url": "https://docs.python.org/3/tutorial/errors.html"
+        }
+      ],
+      "moduleCodes": ["DW-PRO-M5"],
+      "skkniUnits": ["J.620100.025.02", "J.620100.033.02"],
+      "track": "PRO",
+      "prerequisites": ["dw-pro-m4"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pro-m5.md"
+    },
+    {
+      "id": "dw-pro-m13",
+      "title": "Rekayasa perangkat lunak berbantuan AI",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "OWASP Top 10 for LLM Applications 2025",
+          "url": "https://genai.owasp.org/llm-top-10/"
+        },
+        {
+          "title": "NIST SP 800-218: Secure Software Development Framework (SSDF) v1.1",
+          "url": "https://csrc.nist.gov/pubs/sp/800/218/final"
+        },
+        {
+          "title": "SLSA specification v1.0: About",
+          "url": "https://slsa.dev/spec/v1.0/about"
+        },
+        {
+          "title": "U.S. Copyright Office: Copyright and Artificial Intelligence (hukum AS)",
+          "url": "https://www.copyright.gov/ai/"
+        },
+        {
+          "title": "SE Menteri Komunikasi dan Informatika Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (JDIH Komdigi)",
+          "url": "https://jdih.komdigi.go.id/produk_hukum/view/id/883/t/surat+edaran+menteri+komunikasi+dan+informatika+nomor+9+tahun+2023"
+        },
+        {
+          "title": "Python documentation: ast (analisis statis)",
+          "url": "https://docs.python.org/3/library/ast.html"
+        }
+      ],
+      "moduleCodes": ["DW-PRO-M13"],
+      "skkniUnits": [
+        "J.620100.009.01",
+        "J.620100.033.02",
+        "J.620100.032.01",
+        "J.620100.036.02",
+        "J.620100.019.02"
+      ],
+      "track": "PRO",
+      "prerequisites": ["dw-pro-m5"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pro-m13.md"
+    },
+    {
+      "id": "dw-pro-m6",
+      "title": "Pemrograman berorientasi objek dan pustaka",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python Tutorial: classes",
+          "url": "https://docs.python.org/3/tutorial/classes.html"
+        },
+        {
+          "title": "Python documentation: json",
+          "url": "https://docs.python.org/3/library/json.html"
+        },
+        {
+          "title": "Python documentation: statistics",
+          "url": "https://docs.python.org/3/library/statistics.html"
+        }
+      ],
+      "moduleCodes": ["DW-PRO-M6"],
+      "skkniUnits": ["J.620100.018.02", "J.620100.019.02", "J.620100.003.01"],
+      "track": "PRO",
+      "prerequisites": ["dw-pro-m13"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pro-m6.md"
     }
   ]
 }
