@@ -1,9 +1,9 @@
-# Silabus Pembelajaran Coding SMA — v1.3
+# Silabus Pembelajaran Coding SMA — v1.4
 
-- **Version:** v1.3.1
+- **Version:** v1.4.0
 - **Last updated:** 2026-11-19
-- **Status:** DISETUJUI pemilik program, 2026-11-19 — jalur A, B, C, D, dan E (v1.3, issue #139; v1.2, issue #68, #84, #88; v1.1 disetujui 2026-11-19, issue #92; v1.0 disetujui 2026-11-18, issue #52). Modul pendamping (#69) tidak termasuk persetujuan ini.
-- **Changeset:** Silabus v1.3 disetujui pemilik lewat keputusan 2026-11-19 (issue #139, bagian 9.4): butir AI pada lima minggu jalur A, B, C, dan fondasi serta tiga minggu jalur D, aturan pemakaian AI generatif oleh murid SMA diganti menjadi bebas dengan etika, dan bagian 7.4 "Kebijakan penggunaan AI" ditambahkan; tidak ada minggu baru. Sebelumnya, silabus v1.2 disetujui pemilik: jalur C (IoT dan robotika), D (kecerdasan buatan dan analisis data), dan E (komputasi kuantum) ditambahkan beserta rencana mingguan, pemetaan CP (jalur D dan E sebagai pengayaan di luar CP, tidak dihitung pemenuhan CP), jembatan OSN jalur C, dan keputusan pemilik 2026-11-19 (bagian 9.3); celah F-LD-d dan F-LD-e jalur A dicatat dicakup modul pendamping (issue #105).
+- **Status:** DISETUJUI pemilik program, 2026-11-19 — jalur A, B, C, D, dan E (v1.3, issue #139; v1.2, issue #68, #84, #88; v1.1 disetujui 2026-11-19, issue #92; v1.0 disetujui 2026-11-18, issue #52). Modul pendamping (#69) tidak termasuk persetujuan ini. Revisi v1.4.0 (subbagian kemampuan masuk dari SMP dan penempatan di blok fondasi, bagian 3.0) disetujui lewat keputusan pemilik 2026-11-19 (issue #177, bagian 9.5).
+- **Changeset:** Silabus v1.3 disetujui pemilik lewat keputusan 2026-11-19 (issue #139, bagian 9.4): butir AI pada lima minggu jalur A, B, C, dan fondasi serta tiga minggu jalur D, aturan pemakaian AI generatif oleh murid SMA diganti menjadi bebas dengan etika, dan bagian 7.4 "Kebijakan penggunaan AI" ditambahkan; tidak ada minggu baru. Sebelumnya, silabus v1.2 disetujui pemilik: jalur C (IoT dan robotika), D (kecerdasan buatan dan analisis data), dan E (komputasi kuantum) ditambahkan beserta rencana mingguan, pemetaan CP (jalur D dan E sebagai pengayaan di luar CP, tidak dihitung pemenuhan CP), jembatan OSN jalur C, dan keputusan pemilik 2026-11-19 (bagian 9.3); celah F-LD-d dan F-LD-e jalur A dicatat dicakup modul pendamping (issue #105). Revisi minor v1.4.0 (#177, bagian 9.5): subbagian baru di bagian 3.0 menyatakan bahwa silabus ini tidak mensyaratkan `smp-coding`, memetakan irisan minggu SMP dengan blok fondasi dan minggu jalur A dan B, serta mengatur pengamatan awal dan tugas pendalaman di dalam kelas bersama; kode minggu, jumlah minggu, pemetaan CP, jalur, dan jembatan OSN tidak berubah.
 
 > **Disetujui pemilik program pada 2026-11-19 untuk jalur A, B, C, D, dan E**
 > (v1.2; keputusan lewat dialog pilihan, dicatat di issue #68, #84, dan #88,
@@ -337,6 +337,22 @@ Jalur B, semester 2:
 | B-X2-M10 | (dihapus) | HAKI dan lisensi: sudah dicakup FND-X1-M2 dan M6 (keputusan pemilik); lisensi pada proyek tetap muncul di B-XII1-M11. |
 | B-X2-M11, M12 | B-X2-M11, M12 | Mesin pencari dan dokumentasi; Git. |
 | B-X2-M13, M14 | B-X2-M13, M14 | Tetap. |
+
+#### Kemampuan masuk dari SMP dan penempatan di blok fondasi (v1.4)
+
+Silabus ini tidak mensyaratkan `smp-coding`, mata pelajaran Koding dan KA, ataupun Informatika SMP tertentu: murid kelas X berasal dari SMP dengan bentuk program yang berbeda-beda (`smp-coding` bagian 2) `[asumsi]`. Blok fondasi dan minggu jalur kelas X semester 1 mengajar dari awal, sehingga murid dengan latar SMP yang kuat mengulang sebagian isinya. Pengulangan itu diatur, bukan dibiarkan: fondasi tetap kelas bersama lintas jalur (keputusan pemilik, bagian 9.1), dan murid yang sudah menguasai suatu minggu mengerjakan tugas pendalaman di dalam kelas yang sama, bukan keluar dari kelas.
+
+| Asal di SMP (`smp-coding`) | Minggu silabus ini yang beririsan | Perlakuan di dalam kelas bersama `[asumsi]` |
+| --- | --- | --- |
+| `SMP7-2-M10` (komputer sebagai sistem: masukan, proses, keluaran) | `FND-X1-M1` | Murid yang terlihat menguasainya menjelaskan siklus kepada teman dan membaca spesifikasi komputer lab yang lebih rinci. |
+| `SMP7-2-M2`, `SMP7-2-M3` (biner, teks dan gambar sebagai data; keduanya pengayaan di SMP) | `FND-X1-M3` | Tugas pendalaman: heksadesimal dan kode karakter tanpa lembar bantu. |
+| `SMP8-1-M12` (jaringan lokal, ponsel, dan internet) | `FND-X1-M4`, `FND-X1-M5` | Tugas pendalaman: diagnosis tiga skenario gangguan tanpa petunjuk urutan. |
+| `SMP8-2-M11`, `SMP8-2-M12` (kata sandi, akun, informasi publik dan privat) | `FND-X1-M6` | Tidak dipadatkan: keamanan akun dan kebijakan AI kelas dilatih bagi semua murid. |
+| `SMP8-1-M6`, `SMP8-1-M7`, `SMP7-2-M12` (lembar kerja, grafik, laporan) | `FND-X1-M7` | Tugas pendalaman: rumus kondisi dan grafik dari data sintetis yang lebih besar. |
+| `SMP7-1-M12`, `SMP9-1-M6` (atribusi, izin, lisensi data terbuka) | `FND-X1-M2` | Murid memberi atribusi dan memilih lisensi pada karya sendiri. |
+| `SMP8-2-M2` sampai `SMP8-2-M9` (Python: variabel, percabangan, perulangan, daftar, fungsi) | `A-X1-M9` sampai `A-X1-M12`, `B-X1-M9` sampai `B-X1-M12` | Murid berlatar teks memakai tugas baca-dan-prediksi dan soal setengah jadi, lalu menulis dari halaman kosong; sintaks C++ atau JavaScript tetap dipelajari. |
+
+Pengamatan awal: `FND-X1-M1` memuat tugas awal singkat per topik fondasi (sekitar sepuluh menit `[asumsi]`, tanpa nilai angka dan tanpa catatan di repositori ini) dan ceklis "terlihat" dan "belum terlihat" milik guru, yang menentukan murid mana mengerjakan tugas pendalaman di minggu fondasi tertentu. Murid yang memiliki portofolio `SMP9-2-M13` boleh membawanya sebagai bahan bagi guru; portofolio itu milik murid, bukan syarat, dan tidak disimpan di repositori ini. Kebijakan AI bagian 7.4 berlaku sama bagi semua murid; tugas baca-dan-prediksi ditandai guru "tanpa AI" karena tujuannya melatih membaca dan menelusuri kode. Dasar `[asumsi]`: efek keahlian terbalik dan contoh yang dipudarkan (`docs/riset/ilmu-belajar-kognitif.md` bagian 3.4) serta urutan baca-prediksi-selidiki sebelum menulis (bagian 6.3 riset yang sama).
 
 ### 3.1 Jalur A: Algoritmik dengan C++
 
@@ -1665,6 +1681,22 @@ keputusan lain di luar yang tertulis di issue.
 C, D, dan E, dengan perubahan di atas. Kode minggu, jumlah minggu, pemetaan CP,
 dan jembatan OSN tidak berubah.
 
+### 9.5 Keputusan atas penyelarasan jembatan antarprogram; silabus v1.4 (2026-11-19)
+
+Dijawab pemilik lewat dialog pilihan pada 2026-11-19 dan dicatat di issue #177
+(rancangan: [`docs/programs/rancangan-jembatan-antarprogram.md`](../rancangan-jembatan-antarprogram.md),
+bagian 6). Penyusun tidak mencatat keputusan lain di luar yang tertulis di issue.
+
+| No. | Pertanyaan | Keputusan |
+| --- | --- | --- |
+| 1 | K1 (pengulangan di awal program atas) | Opsi 1 (rekomendasi): pengamatan singkat dan tugas pendalaman di dalam kelas yang sama, tanpa tes, tanpa nilai angka, tanpa catatan di repositori. |
+| 2 | K3 (blok fondasi bagi lulusan SMP berpengalaman) | Opsi 1 (rekomendasi): subbagian baru di bagian 3.0; fondasi tetap kelas bersama lintas jalur (keputusan 9.1); murid berpengalaman tidak dibebaskan dari minggu fondasi. |
+| 3 | K7 (pengodean tabel baru) | Opsi 1 (rekomendasi): tabel dicerminkan di `data/sma-coding/smp-bridge.json` dan kode minggu SMP diperiksa silang terhadap korpus `smp-coding` (ADR-0010). |
+
+**Silabus v1.4.** Status tetap DISETUJUI pemilik, 2026-11-19, untuk jalur A, B,
+C, D, dan E, dengan tambahan di atas. Kode minggu, jumlah minggu, pemetaan CP,
+dan jembatan OSN tidak berubah.
+
 ## 10. Daftar rujukan
 
 | Rujukan | Status |
@@ -1684,6 +1716,7 @@ dan jembatan OSN tidak berubah.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v1.4.0 | 2026-11-19 | Revisi minor yang disetujui pemilik lewat keputusan #177 (bagian 9.5): subbagian baru di bagian 3.0, "Kemampuan masuk dari SMP dan penempatan di blok fondasi" (tidak mensyaratkan `smp-coding`; tujuh baris irisan minggu SMP dengan fondasi dan minggu jalur A dan B; pengamatan awal di `FND-X1-M1` dan tugas pendalaman di dalam kelas bersama); dicerminkan di `data/sma-coding/smp-bridge.json`. Kode minggu, jumlah minggu, pemetaan CP, jalur, dan jembatan OSN tidak berubah (#177). |
 | v1.3.1 | 2026-11-19 | Revisi patch: status verifikasi sumber (SK 046, SKKNI 282/2016); isi kurikulum lain tidak berubah. |
 | v1.3.0 | 2026-11-19 | Disetujui pemilik lewat keputusan 2026-11-19 (issue #139; bagian 9.4). Menambahkan butir AI tanpa minggu baru: kebijakan dan privasi pemakaian AI (`FND-X1-M6`, `C-XI2-M2`), tanpa AI pada latihan terpadu jalur A (`A-XII2-M5..M8`), tinjau kode buatan AI, pemeriksaan paket, dan rahasia (`B-XI1-M12`, `B-XI1-M5`, `B-XII1-M10`), non-determinisme, biaya komputasi dan energi, dan pencatatan versi model dan perintah (`D-X2-M11`, `D-XI2-M12`, `D-XII1-M10`). Aturan jalur D "layanan AI daring hanya didemonstrasikan guru" diganti: pemakaian AI generatif oleh murid SMA bebas dengan etika (bagian 3.4, 7.2, 7.3, 9.3, 9.4). Menambahkan bagian 7.4 "Kebijakan penggunaan AI" (per program; etika, log, kapan tanpa AI, privasi, verifikasi kode, glosarium istilah). Kode dan jumlah minggu, pemetaan CP, dan jembatan OSN tidak berubah. |
 | v1.2.0 | 2026-11-19 | Disetujui pemilik program untuk jalur A, B, C, D, dan E (issue #68, #84, #88; bagian 9.3). Menambahkan jalur C (IoT dan robotika), D (kecerdasan buatan dan analisis data), dan E (komputasi kuantum, kelas XI-XII, awalan kode `E-`) beserta rencana mingguan, tujuan, pemetaan CP (jalur C digabung ke bagian 4.1 dan 4.2 dengan tanda parsial per jalur; jalur D dan E sebagai pengayaan di luar CP pada bagian 4.5, tidak dihitung pemenuhan CP), jembatan OSN jalur C (bagian 5.2), ringkasan jalur (bagian 3.6), dan keputusan pemilik atas semua pertanyaan terbuka draf (opsi rekomendasi). Mencatat celah F-LD-d dan F-LD-e jalur A dicakup modul pendamping (issue #105; bagian 4.3). Bagian 1.1-1.4 (kutipan CP) tidak berubah. Ketiga draf menjadi riwayat. |

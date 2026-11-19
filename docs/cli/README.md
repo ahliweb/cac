@@ -199,11 +199,12 @@ whose programme is not registered is a draft and is not validated.
 `osn validate --program sma-coding` validates `data/sma-coding/` with its
 own file set and schemas (`SMA_DATA_FILE_REGISTRY` in
 `src/domain/sma-corpus-audit.ts`; schemas `src/schema/sma-*.ts`), not the
-OSN invariants above. The seven files transcribe the owner-approved
-`docs/programs/sma-coding/silabus.md` v1.3.1 (tracks A to E plus the shared
+OSN invariants above. The eight files transcribe the owner-approved
+`docs/programs/sma-coding/silabus.md` v1.4.0 (tracks A to E plus the shared
 grade-X foundation block): `cp-elements.json`, `tracks.json`,
-`structure.json`, `weeks.json`, `foundation.json`, `cp-mapping.json` and
-`osn-bridge.json`. It checks:
+`structure.json`, `weeks.json`, `foundation.json`, `cp-mapping.json`,
+`osn-bridge.json` and `smp-bridge.json` (the SMP entry-and-placement table of
+bagian 3.0, v1.4, #177). It checks:
 
 - **Schema conformance** of every file, the reverse "unregistered file"
   check (the optional `modules.json` is exempt), and registry agreement
@@ -279,7 +280,7 @@ owner-approved (2026-11-19).
 | `kuliah-coding` | v1.2.0 | 6 (`ai-policy`, `bridges`, `courses`, `cpl`, `knowledge-areas`, `tracks`) | `src/schema/kul-*.ts`, `src/domain/kul-corpus-audit.ts` |
 | `dewasa-coding` | v1.2.0 | 8 (`bridges`, `certification`, `kuliah-bridge`, `module-plan`, `shared`, `skkni-units`, `structure`, `tracks`) | `src/schema/dw-*.ts`, `src/domain/dw-corpus-audit.ts` |
 | `sd-coding` | v1.0.2 | 5 (`bridges`, `cp-elements`, `cp-mapping`, `structure`, `weeks`) | `src/schema/sd-*.ts`, `src/domain/sd-corpus-audit.ts` |
-| `smp-coding` | v1.1.2 | 7 (`bridge`, `club`, `cp-elements`, `cp-mapping`, `structure`, `uncovered`, `weeks`) | `src/schema/smp-*.ts`, `src/domain/smp-corpus-audit.ts` |
+| `smp-coding` | v1.2.0 | 7 (`bridge`, `club`, `cp-elements`, `cp-mapping`, `structure`, `uncovered`, `weeks`) | `src/schema/smp-*.ts`, `src/domain/smp-corpus-audit.ts` |
 
 Real output of `osn validate` (all registered programmes; each block is one
 programme, the path is shortened):
@@ -290,7 +291,7 @@ osn validate: programme "osn", corpus at /path/to/repo/data/osn
 OK -- 22 data file(s) validated, 0 problem(s) found.
 
 osn validate: programme "sma-coding", corpus at /path/to/repo/data/sma-coding
-OK -- 7 data file(s) validated, 0 problem(s) found.
+OK -- 8 data file(s) validated, 0 problem(s) found.
 
 osn validate: programme "tk-coding", corpus at /path/to/repo/data/tk-coding
 OK -- 7 data file(s) validated, 0 problem(s) found.
@@ -560,7 +561,7 @@ Real output (`osn plan --program sma-coding --track A --semester X1`, abridged):
 
 Program: Silabus Pembelajaran Coding SMA
 Cakupan: semester X1
-Sumber: silabus versi 1.3.1, tanggal 2026-11-19.
+Sumber: silabus versi 1.4.0, tanggal 2026-11-19.
 
 ## Semester X1 (kelas X, fase E)
 
@@ -602,7 +603,7 @@ A pengayaan track states so in the header (`osn plan --program sma-coding --trac
 
 Program: Silabus Pembelajaran Coding SMA
 Cakupan: semester XI1
-Sumber: silabus versi 1.3.1, tanggal 2026-11-19.
+Sumber: silabus versi 1.4.0, tanggal 2026-11-19.
 Catatan: jalur D adalah pengayaan di luar rumusan CP; tidak dihitung sebagai pemenuhan butir CP.
 ```
 
@@ -763,7 +764,7 @@ Tidak ada butir CP yang dipetakan ke minggu ini dalam pemetaan silabus.
 - [ ] Keluaran selesai: tabel konversi; lembar kode karakter; gambar 8x8 dalam bentuk deret bit
 
 ---
-Sumber: Silabus Pembelajaran Coding SMA, versi 1.3.1, tanggal 2026-11-19.
+Sumber: Silabus Pembelajaran Coding SMA, versi 1.4.0, tanggal 2026-11-19.
 ```
 
 Unknown code (exit `2`):

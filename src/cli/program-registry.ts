@@ -130,6 +130,7 @@ export const PROGRAM_MODULES: readonly ProgramModule[] = [
     moduleFindings: (source, context) =>
       moduleFindings(source, SMA_CODING_PROGRAM_ID, moduleOptions(context)),
     fidelity: smaCodingFidelity,
+    crossProgramScan: ["smp-bridge.json"],
   },
   {
     id: TK_CODING_PROGRAM_ID,
@@ -176,6 +177,7 @@ export const PROGRAM_MODULES: readonly ProgramModule[] = [
     moduleFindings: (source, context) =>
       moduleFindings(source, SMP_CODING_PROGRAM_ID, moduleOptions(context)),
     fidelity: smpCodingFidelity,
+    crossProgramScan: ["bridge.json"],
   },
 ];
 

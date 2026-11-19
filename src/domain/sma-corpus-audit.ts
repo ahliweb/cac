@@ -24,6 +24,7 @@ import { cpElementsFileSchema } from "../schema/sma-cp";
 import { cpMappingFileSchema } from "../schema/sma-cp-mapping";
 import { smaFoundationFileSchema } from "../schema/sma-foundation";
 import { osnBridgeFileSchema } from "../schema/sma-osn-bridge";
+import { smaSmpBridgeFileSchema } from "../schema/sma-smp-bridge";
 import { SMA_STRUCTURE_ROW_IDS, smaStructureFileSchema } from "../schema/sma-structure";
 import { smaTracksFileSchema } from "../schema/sma-track";
 import { smaWeeksFileSchema } from "../schema/sma-week";
@@ -44,6 +45,7 @@ export const SMA_DATA_FILE_REGISTRY: readonly SmaFileEntry[] = [
   { file: "foundation.json", schema: smaFoundationFileSchema },
   { file: "cp-mapping.json", schema: cpMappingFileSchema },
   { file: "osn-bridge.json", schema: osnBridgeFileSchema },
+  { file: "smp-bridge.json", schema: smaSmpBridgeFileSchema },
 ];
 
 /**
@@ -68,6 +70,8 @@ export const SMA_EXPECTED_COUNTS = {
   cpMappings: 26,
   enrichmentLinks: 9,
   foundationWeeks: SMA_FOUNDATION_WEEKS,
+  /** Rows of the SMP entry-and-placement table in bagian 3.0 (v1.4, #177). */
+  smpBridgeRows: 7,
 } as const;
 
 /** The position of a kelas in teaching order (X < XI < XII). */
@@ -149,6 +153,7 @@ function structuralFindings(parsed: Parsed): CorpusFinding[] {
   const weeks = typed<z.infer<typeof smaWeeksFileSchema>>(parsed, "weeks.json");
   const mapping = typed<z.infer<typeof cpMappingFileSchema>>(parsed, "cp-mapping.json");
   const foundation = typed<z.infer<typeof smaFoundationFileSchema>>(parsed, "foundation.json");
+  const smpBridge = typed<z.infer<typeof smaSmpBridgeFileSchema>>(parsed, "smp-bridge.json");
 
   const count = (file: string, path: string, label: string, actual: number, expected: number) => {
     if (actual !== expected) {
@@ -156,6 +161,15 @@ function structuralFindings(parsed: Parsed): CorpusFinding[] {
     }
   };
 
+  if (smpBridge !== undefined) {
+    count(
+      "smp-bridge.json",
+      "rows",
+      "SMP entry rows",
+      smpBridge.rows.length,
+      SMA_EXPECTED_COUNTS.smpBridgeRows,
+    );
+  }
   if (cp !== undefined) {
     count(
       "cp-elements.json",
@@ -319,6 +333,7 @@ function referentialFindings(
   const mapping = typed<z.infer<typeof cpMappingFileSchema>>(parsed, "cp-mapping.json");
   const bridge = typed<z.infer<typeof osnBridgeFileSchema>>(parsed, "osn-bridge.json");
   const foundation = typed<z.infer<typeof smaFoundationFileSchema>>(parsed, "foundation.json");
+  const smpBridge = typed<z.infer<typeof smaSmpBridgeFileSchema>>(parsed, "smp-bridge.json");
 
   const trackIds = tracks && new Set(tracks.tracks.map((track) => track.id));
   // Foundation weeks belong to no track, so a row may cite them whatever tracks it lists.
@@ -588,6 +603,24 @@ function referentialFindings(
               "osn-bridge.json",
               `${rowAt}.familyId`,
               `OSN topic family "${row.familyId}" does not exist in data/osn/topic-families.json`,
+            ),
+          );
+        }
+      });
+    });
+  }
+
+  // The SMP entry table (bagian 3.0, v1.4): every sma-coding week it names must exist.
+  // The smp-coding week codes of its first column are checked by the cross-programme check (ADR-0010).
+  if (smpBridge !== undefined && weekIds !== undefined) {
+    smpBridge.rows.forEach((row, index) => {
+      row.smaWeeks.forEach((code, i) => {
+        if (!weekIds.has(code)) {
+          findings.push(
+            error(
+              "smp-bridge.json",
+              `rows[${index}].smaWeeks[${i}]`,
+              `week "${code}" does not exist in weeks.json or foundation.json`,
             ),
           );
         }

@@ -1,9 +1,9 @@
-# Silabus Pembelajaran Coding SMP — v1.1
+# Silabus Pembelajaran Coding SMP — v1.2
 
-- **Version:** v1.1.2
+- **Version:** v1.2.0
 - **Last updated:** 2026-11-19
-- **Status:** DISETUJUI pemilik program, 2026-11-19 — beserta semua rekomendasi penyusun (bagian 10; keputusan lewat dialog pilihan, dicatat di issue #129). Modul pembelajaran di `content/smp-coding/` dan modul pendamping tidak termasuk persetujuan ini.
-- **Changeset:** Silabus v1.1 disetujui pemilik (2026-11-19, keputusan di issue #139): bagian 7.1 "Kebijakan penggunaan AI" ditambah (pemakaian AI generatif oleh murid SMP tetap demonstrasi guru, tanpa akun murid; asesmen tanpa AI); butir "mengalihkan pekerjaan berpikir ke AI" ditambah di `SMP9-2-M10`, butir data pribadi dan kata sandi tidak ditempel ke layanan AI di `SMP8-2-M11`, energi dan biaya komputasi sebagai butir singkat dengan ketidakpastian; kode butir CP dan struktur 84 minggu tidak berubah. Sebelumnya: silabus v1.0 disetujui pemilik (2026-11-19) beserta rekomendasi penyusun: satu jalur inti blok ke pseudocode, Python hanya pengayaan di luar CP, CP KKA Fase D untuk materi AI kelas 9, klub OSN opsional, tanpa akun murid; butir Literasi Digital yang belum tercakup ditutup lewat modul pendamping (pekerjaan lanjutan); issue #129. Isi rencana sama dengan draf v0.2; yang berubah hanya status, bagian 10, changelog, dan satu koreksi hitungan di bagian 4 (`DK-BK-c`: 32 menjadi 31 minggu lain). Revisi patch v1.1.1 (#165): kalimat status yang basi; isi kurikulum tidak berubah.
+- **Status:** DISETUJUI pemilik program, 2026-11-19 — beserta semua rekomendasi penyusun (bagian 10; keputusan lewat dialog pilihan, dicatat di issue #129). Revisi v1.2.0 (jembatan dari SD dan ke SMA, bagian 5.1 dan 5.2) disetujui pemilik pada 2026-11-19 lewat keputusan #177 (seluruh rekomendasi K1 sampai K8). Modul pembelajaran di `content/smp-coding/` dan modul pendamping tidak termasuk persetujuan ini.
+- **Changeset:** Silabus v1.1 disetujui pemilik (2026-11-19, keputusan di issue #139): bagian 7.1 "Kebijakan penggunaan AI" ditambah (pemakaian AI generatif oleh murid SMP tetap demonstrasi guru, tanpa akun murid; asesmen tanpa AI); butir "mengalihkan pekerjaan berpikir ke AI" ditambah di `SMP9-2-M10`, butir data pribadi dan kata sandi tidak ditempel ke layanan AI di `SMP8-2-M11`, energi dan biaya komputasi sebagai butir singkat dengan ketidakpastian; kode butir CP dan struktur 84 minggu tidak berubah. Sebelumnya: silabus v1.0 disetujui pemilik (2026-11-19) beserta rekomendasi penyusun: satu jalur inti blok ke pseudocode, Python hanya pengayaan di luar CP, CP KKA Fase D untuk materi AI kelas 9, klub OSN opsional, tanpa akun murid; butir Literasi Digital yang belum tercakup ditutup lewat modul pendamping (pekerjaan lanjutan); issue #129. Isi rencana sama dengan draf v0.2; yang berubah hanya status, bagian 10, changelog, dan satu koreksi hitungan di bagian 4 (`DK-BK-c`: 32 menjadi 31 minggu lain). Revisi patch v1.1.1 (#165): kalimat status yang basi; isi kurikulum tidak berubah. Revisi minor v1.2.0 (#177): bagian 5.1 tidak lagi mengasumsikan murid mengenal blok, perulangan, atau percabangan (`sd-coding` tidak menjaminnya); `SMP7-1-M1` menjadi pengamatan awal, hanya `SMP7-1-M1` dan `SMP7-1-M2` (tanpa layar) yang boleh dipadatkan; bagian 5.2: pemetaan blok kelas 7 ke blok fondasi `FND-X1-M1..M7` dikoreksi (fondasi tidak memuat pemrograman), irisan minggu SMP dengan fondasi dan jalur A, B, C, D diperinci per kode minggu; rencana minggu, CP, dan jam tidak berubah.
 
 > **Disetujui pemilik program pada 2026-11-19** (v1.0; keputusan lewat
 > dialog pilihan, dicatat di issue #129, bagian 10). Dokumen ini konten
@@ -386,21 +386,16 @@ pseudocode, data, KA, dan literasi digital.
 
 ### 5.1 Dari SD (`sd-coding`)
 
-Program `sd-coding` (silabus disetujui pemilik pada 2026-11-19) disusun
-**paralel** oleh pelaksana lain dan isinya tidak dibaca penyusun dokumen ini. Asumsi `[asumsi]`: murid
-kelas 6 yang masuk SMP mengenal blok, urutan, perulangan, dan percabangan
-dasar. Karena itu `SMP7-1-M1` sampai `M5` dirancang sebagai tinjauan yang
-dapat dipadatkan; murid tanpa latar SD tetap dapat mengikutinya. Penyelarasan
-kode (`SD6-2-...` ke `SMP7-1-...`) dilakukan setelah kedua silabus disetujui.
+Program `sd-coding` (disetujui pemilik pada 2026-11-19) sudah dibaca. Asumsi `[asumsi]`: murid kelas 7 berasal dari SD dengan latar yang berbeda-beda; `sd-coding` kelas 1-4 opsional dan kelas 5-6 pilihan, dan tidak mengajarkan sintaks pemrograman, sehingga murid dapat belum mengenal blok, perulangan, ataupun percabangan (`sd-coding` bagian 7.2). Karena itu `SMP7-1-M1` dipakai guru sebagai pengamatan awal (tugas tanpa layar, ceklis "terlihat" dan "belum terlihat", tanpa tes dan tanpa nilai angka, daftar "sudah bisa" dari `SD6-2-M14` sebagai bahan bila ada); `SMP7-1-M1` dan `SMP7-1-M2` (tanpa layar) boleh dipadatkan bagi murid yang terlihat menguasainya, yang lalu mengerjakan tugas tambahan yang disiapkan guru; `SMP7-1-M3` sampai `SMP7-1-M5` (Scratch, termasuk perulangan) dan `SMP7-1-M8` sampai `SMP7-1-M9` (percabangan, variabel) tidak dipadatkan bagi siapa pun karena Scratch tidak diajarkan di SD; murid yang sudah mengenal konsepnya tanpa layar mengerjakannya sebagai penerjemahan ke blok. Kegiatan KA kelas 9 (`SMP9-2-M8` sampai `SMP9-2-M10`) beririsan dengan KA kelas 5-6 SD (`SD6-2-M4`) dan memakai tuntutan lebih tinggi untuk murid yang sudah mengikutinya, tanpa mengubah rencana minggu. Penyelarasan kode `SD6-2-...` ke `SMP7-1-...` dilakukan dengan revisi ini; dasar `[asumsi]`: efek keahlian terbalik (`docs/riset/ilmu-belajar-kognitif.md` bagian 3.4).
 
-### 5.2 Ke SMA (`sma-coding` v1.2)
+### 5.2 Ke SMA (`sma-coding`)
 
 | Dari SMP | Ke sma-coding | Catatan |
 | --- | --- | --- |
-| Blok kelas 7 dan pemecahan masalah | Blok fondasi kelas X (`FND-X1-M1..M7`), yang membuka tanpa mensyaratkan bahasa pemrograman | Murid SMP tanpa mapel KKA tetap diterima di fondasi. |
-| Python kelas 8-9 (pengayaan di luar CP Fase D) | Jalur D (AI dan analisis data) memakai Orange lalu Python | Python menjadi bahasa pertama bagi murid yang masuk D; murid tanpa pengayaan Python tetap dapat masuk. |
-| Logika, percabangan, perulangan, fungsi, daftar | Jalur A (C++) dan jalur B (JS/TS) | Konsep yang sama; sintaks baru. Jalur A butuh tipe statis dan kompilasi yang tidak diajarkan di SMP. |
-| Simulator MakeCode kelas 8 | Jalur C (IoT dan robotika, C++ gaya Arduino, ESP32) | Konsep masukan dan keluaran perangkat sudah dikenal. |
+| Sistem komputer, jaringan, keamanan akun, dan dokumen: `SMP7-2-M2`, `SMP7-2-M3`, `SMP7-2-M10`, `SMP7-2-M12`, `SMP8-1-M6`, `SMP8-1-M7`, `SMP8-1-M12`, `SMP8-2-M11`, `SMP8-2-M12` | Blok fondasi kelas X (`FND-X1-M1..M7`), yang membuka tanpa mensyaratkan bahasa pemrograman | Tumpang tindih nyata (mis. `SMP7-2-M10` dan `FND-X1-M1`; `SMP8-2-M11` dan `FND-X1-M6`), tetapi fondasi tetap kelas bersama (`sma-coding` bagian 9.1); murid dengan latar ini diamati di awal fondasi dan diberi tugas pendalaman. Murid SMP tanpa mapel KKA tetap diterima di fondasi. Baris ini menggantikan pemetaan blok kelas 7 ke fondasi pada versi sebelumnya (v1.1.2), yang tidak tepat karena fondasi tidak memuat pemrograman. |
+| Python kelas 8-9 (pengayaan di luar CP Fase D): `SMP8-2-M2`, `SMP8-2-M9` | Jalur D (AI dan analisis data) memakai Orange lalu Python | Python menjadi bahasa pertama bagi murid yang masuk D; murid tanpa pengayaan Python tetap dapat masuk. `D-XI1-M2` dan `D-XI1-M3` mengajarkan Python dari awal, sehingga murid berlatar Python memadatkannya lewat soal setengah jadi. |
+| Logika, percabangan, perulangan, fungsi, daftar: `SMP7-1-M5`, `SMP7-1-M8`, `SMP8-2-M4`, `SMP8-2-M5`, `SMP8-2-M9` | Jalur A (C++) dan jalur B (JS/TS) | Konsep yang sama; sintaks baru. Jalur A butuh tipe statis dan kompilasi yang tidak diajarkan di SMP. `A-X1-M9` sampai `A-X1-M12` dan `B-X1-M9` sampai `B-X1-M12` mengajar dari awal tanpa mengandaikan SMP; murid berlatar teks memakai tugas baca-dan-prediksi dan soal setengah jadi sebelum menulis dari halaman kosong. |
+| Simulator MakeCode kelas 8: `SMP8-1-M9`, `SMP8-1-M10`, `SMP8-1-M11` | Jalur C (IoT dan robotika, C++ gaya Arduino, ESP32) | Konsep masukan dan keluaran perangkat sudah dikenal. |
 | Literasi dan etika KA kelas 9 (`DK-EA-b`, `c`, `e`, `f`, `g`) | Jalur D | Fondasi sebelum alat AI. |
 | `SMP9-2-M11` (membaca kode lain) | Jalur A, B | Pengantar, bukan prasyarat. |
 
@@ -552,7 +547,7 @@ bawah memuat keputusan yang berlaku.
 | Q5 | Alat blok | Scratch (kelas 7) dan MakeCode (kelas 8); syarat akun dan editor luring perlu dicek sebelum modul ditulis. |
 | Q6 | Perangkat fisik | Simulator, papan fisik opsional. |
 | Q7 | Alokasi dan menit JP | Sesuai sekolah; rencana ditulis untuk 2 JP per minggu. |
-| Q8 | Keselarasan dengan `sd-coding` | Disamakan setelah kedua silabus disetujui; belum dilakukan di v1.0. |
+| Q8 | Keselarasan dengan `sd-coding` | Disamakan setelah kedua silabus disetujui; belum dilakukan di v1.0, dilakukan di v1.2.0 (keputusan pemilik #177, bagian 5.1). |
 | Q9 | Materi KA di kelas 9 | CP KKA Fase D menjadi dasar materi KA kelas 9: tiga minggu unplugged (`SMP9-2-M8` sampai `M10`) tetap rencana v1.0. Perluasan untuk `DK-EA-a` dan `DK-EA-d` (kegiatan di minggu yang ada atau minggu cadangan) adalah pekerjaan lanjutan; rencana mingguan v1.0 tidak diubah dan kedua butir tetap tercatat belum dicakup. |
 | Q10 | Butir Literasi Digital di luar coding (`D-LD-a`, `c`, `h`, `k`, `l`, `n`, `q`) | Ditutup lewat modul pendamping, seperti sma-coding. Modul itu **pekerjaan lanjutan dan belum dibuat**; sampai ada, butir-butir itu tercatat belum dicakup di `data/smp-coding/uncovered.json`. |
 | Q11 | Butir `DK-PA-a` dan `DK-PA-b` | Tidak dicakup; hanya didemonstrasikan guru sampai kebijakan privasi alat KA dikaji. Ditegaskan 2026-11-19 (issue #139): pemakaian AI generatif oleh murid SMP tetap demonstrasi guru, tanpa akun murid (bagian 7.1). |
@@ -571,6 +566,7 @@ bawah memuat keputusan yang berlaku.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v1.2.0 | 2026-11-19 | Revisi minor yang disetujui pemilik lewat keputusan #177: bagian 5.1 (dari SD) tidak lagi mengasumsikan blok, perulangan, dan percabangan; `SMP7-1-M1` menjadi pengamatan awal tanpa tes; hanya `SMP7-1-M1` dan `SMP7-1-M2` boleh dipadatkan; bagian 5.2 (ke SMA) memperinci pemetaan per kode minggu dan mengoreksi pemetaan blok kelas 7 ke blok fondasi `FND-X1-M1..M7` (fondasi tidak memuat pemrograman); rencana minggu, CP, dan jam tidak berubah (#177). |
 | v1.1.2 | 2026-11-19 | Revisi patch: status verifikasi sumber (SK 046, SKKNI 282/2016); isi kurikulum lain tidak berubah. |
 | v1.1.1 | 2026-11-19 | Revisi patch: kalimat status, keputusan pemilik #165; isi kurikulum tidak berubah. |
 | v1.1.0 | 2026-11-19 | Disetujui pemilik lewat keputusan di issue #139 (usulan U-06 dengan opsi rekomendasi): bagian 7.1 "Kebijakan penggunaan AI" ditambah (demonstrasi guru tanpa akun murid, alasan usia dan ketentuan layanan, etika, privasi, asesmen tanpa AI, energi dan biaya komputasi sebagai butir singkat berketidakpastian); `SMP9-2-M10` ditambah butir mengalihkan pekerjaan berpikir ke AI; `SMP8-2-M11` ditambah butir data pribadi dan kata sandi tidak ditempel ke layanan AI; bullet etika AI bagian 7 dan Q11 diselaraskan. Kode butir CP, struktur, 84 minggu, pemetaan, dan jembatan tidak berubah. |

@@ -87,6 +87,25 @@ describe("osn validate with the smp-coding programme", () => {
   });
 });
 
+describe("osn validate: cross-programme codes in the smp-coding bridge (ADR-0010, #177)", () => {
+  test("a sma-coding week that does not exist is reported with exit 1", async () => {
+    const dir = await mkdtemp(join(tmpdir(), "smp-coding-crossref-fixture-"));
+    try {
+      await cp(join(REPO_ROOT, "data", "smp-coding"), dir, { recursive: true });
+      const path = join(dir, "bridge.json");
+      const file = JSON.parse(await readFile(path, "utf-8"));
+      file.toSma[2].note += " Lihat `A-X1-M99`.";
+      await writeFile(path, JSON.stringify(file, null, 2));
+      const result = await runCli(["validate", "--program", "smp-coding", "--data-dir", dir]);
+      expect(result.exitCode).toBe(1);
+      expect(result.stdout).toContain("bridge.json");
+      expect(result.stdout).toContain('"A-X1-M99" is not a week of programme "sma-coding"');
+    } finally {
+      await rm(dir, { recursive: true, force: true });
+    }
+  });
+});
+
 describe("check:fidelity for smp-coding", () => {
   test("--program smp-coding runs its fidelity module and exits 0", () => {
     const proc = Bun.spawnSync(
