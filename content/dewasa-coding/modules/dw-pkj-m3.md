@@ -161,7 +161,7 @@ total: 993500
 
 Lengkapi dua titik `___`, lalu jalankan pada `daftar_faktur`:
 
-```python
+```python setengah-jadi
 def total_per_kode(daftar, kode):
     hasil = 0
     for baris in daftar:
