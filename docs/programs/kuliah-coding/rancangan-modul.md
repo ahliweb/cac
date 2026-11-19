@@ -1,9 +1,12 @@
 # Rancangan Modul Belajar `kuliah-coding` (24 modul)
 
-- **Version:** v0.1.0
+- **Version:** v0.1.1
 - **Last updated:** 2026-11-19
-- **Status:** DRAF, menunggu persetujuan pemilik. Yang dirancang di sini adalah **rencana penulisan**; belum satu pun modul ditulis ke `content/kuliah-coding/modules/` dan belum ada `data/kuliah-coding/modules.json`. Modul pilot ada di [`rancangan-modul-contoh/kul-u-101.md`](rancangan-modul-contoh/kul-u-101.md).
+- **Status:** DRAF, menunggu persetujuan pemilik (status persetujuan rancangan tidak diubah). Modulnya **sudah ditulis** per 2026-11-19: 24 modul di `content/kuliah-coding/modules/`, terindeks di `data/kuliah-coding/modules.json`; semuanya berstatus `draf`.
 - **Changeset:** v0.1.0: dokumen pertama (rancangan modul belajar `kuliah-coding`, satu modul per mata kuliah, 24 modul, struktur internal per pekan atau pokok bahasan), bersama pilot `kul-u-101`.
+
+> **Catatan status (2026-11-19, sinkron dokumen #124).** Frasa "belum satu pun modul ditulis" dan "belum ada `modules.json`" di bawah adalah riwayat: 24 modul ada di `content/kuliah-coding/modules/` (jalur U 5, I 16, K 3) dan terindeks di `data/kuliah-coding/modules.json` (skema `src/schema/kul-module.ts`), semua `draf`, belum ditinjau. Pilot `rancangan-modul-contoh/` kini riwayat; modul nyatanya `content/kuliah-coding/modules/kul-u-101.md`. Aturan "agen penulis tidak menyunting indeks" adalah aturan masa penulisan. Judul `#` dan bagian `## Rujukan` tidak lagi ada di tubuh modul (judul dan rujukan dirender dari indeks); judul ganda kini galat di `bun run check:learner-assets`.
+> Keputusan dan kontrak yang disetujui pemilik di dokumen ini tidak berubah; yang diperbarui hanya klausa status yang basi.
 
 > Isi dokumen ini adalah konten **karangan** (*authored*) menurut
 > [ADR-0007](../../architecture/adr/0007-authored-learning-content.md), bukan
@@ -574,3 +577,4 @@ sementara. Tautan Python tutorial, modul `csv`, dan referensi Git dibuka
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
 | v0.1.0 | 2026-11-19 | Dokumen pertama: pemetaan 24 modul, struktur internal per mata kuliah, templat berbasis bukti, aturan rujukan, gelombang dan gerbang mutu, tiga pertanyaan keputusan, dan pilot `kul-u-101`. |
+| v0.1.1 | 2026-11-19 | Sinkron dokumen (#124): catatan status; 24 modul kini ada di `content/kuliah-coding/` dan terindeks; pilot menjadi riwayat. Isi rancangan tidak berubah. |

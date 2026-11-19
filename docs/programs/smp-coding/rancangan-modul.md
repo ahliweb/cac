@@ -1,9 +1,12 @@
 # Rancangan Modul Belajar `smp-coding` (84 modul)
 
-- **Version:** v0.1.0
+- **Version:** v0.1.1
 - **Last updated:** 2026-11-19
-- **Status:** DRAF, menunggu persetujuan pemilik. Yang dirancang di sini adalah **rencana penulisan**; belum satu pun modul ditulis ke `content/smp-coding/modules/` dan belum ada `data/smp-coding/modules.json`. Modul pilot ada di [`rancangan-modul-contoh/smp7-1-m1.md`](rancangan-modul-contoh/smp7-1-m1.md).
+- **Status:** DRAF, menunggu persetujuan pemilik (status persetujuan rancangan tidak diubah). Modulnya **sudah ditulis** per 2026-11-19: 84 modul di `content/smp-coding/modules/`, terindeks di `data/smp-coding/modules.json`; semuanya berstatus `draf`.
 - **Changeset:** v0.1.0: dokumen pertama (rancangan modul belajar `smp-coding`, satu modul per minggu, 84 modul), bersama pilot `smp7-1-m1`.
+
+> **Catatan status (2026-11-19, sinkron dokumen #124).** Frasa "belum satu pun modul ditulis" dan "belum ada `modules.json`" di bawah adalah riwayat: 84 modul ada di `content/smp-coding/modules/` dan terindeks di `data/smp-coding/modules.json` (skema `src/schema/smp-module.ts`), semua `draf`, belum ditinjau. Pilot `rancangan-modul-contoh/` kini riwayat; modul nyatanya `content/smp-coding/modules/smp7-1-m1.md`. Pemeriksa Python sudah ada: `bun run check:module-code` memeriksa sintaks blok `python` (`ast.parse`, tidak menjalankannya) selain `cpp` dan `arduino`; pilihan Q3 di bawah dibiarkan sebagai catatan rancangan. Judul `#` dan bagian `## Rujukan` tidak lagi ada di tubuh modul (judul dan rujukan dirender dari indeks); judul ganda kini galat di `bun run check:learner-assets`.
+> Keputusan dan kontrak yang disetujui pemilik di dokumen ini tidak berubah; yang diperbarui hanya klausa status yang basi.
 
 > Isi dokumen ini adalah konten **karangan** (*authored*) menurut
 > [ADR-0007](../../architecture/adr/0007-authored-learning-content.md), bukan
@@ -393,3 +396,4 @@ laporan penyusun (bukan di repositori).
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
 | v0.1.0 | 2026-11-19 | Dokumen pertama: pemetaan 84 modul, templat berbasis bukti, aturan rujukan, gelombang penulisan dan gerbang mutu, tiga pertanyaan keputusan, dan pilot `smp7-1-m1`. |
+| v0.1.1 | 2026-11-19 | Sinkron dokumen (#124): catatan status; 84 modul kini ada di `content/smp-coding/` dan terindeks; pemeriksa Python sudah ada; pilot menjadi riwayat. Isi rancangan tidak berubah. |

@@ -37,11 +37,11 @@ run over this directory in CI: `osn validate` per registered programme (and the 
 
 ## `content/`
 
-**What belongs here:** authored learning-module bodies, one Markdown file per module at `content/<program>/modules/<id>.md` (ADR-0007, scoped by issue #54). Each file is indexed by an entry in `data/<program>/modules.json`, which carries the review lifecycle (`draf` → `ditinjau` → `disetujui`, plus `ditarik`). `osn validate` checks that every indexed file exists and is non-empty; `bun run check:module-code` compiles its C++ examples. Every programme has its own index schema (see `src/schema/` below); `tk-coding` and `sd-coding` modules are teacher guides, each with a separate learner sheet for the child at `content/<program>/lembar/<id>.md` (no name or identity field of the child; checked by `osn validate` and refused by `osn render modul --lembar`). The directory `content/<id>/` exists only once the programme has a module; an empty one is never created. No module of `tk-coding`, `sd-coding`, `smp-coding`, `kuliah-coding` or `dewasa-coding` exists yet (their schemas, validation and rendering do, issue-by-issue content follows).
+**What belongs here:** authored learning-module bodies, one Markdown file per module at `content/<program>/modules/<id>.md` (ADR-0007, scoped by issue #54). Each file is indexed by an entry in `data/<program>/modules.json`, which carries the review lifecycle (`draf` → `ditinjau` → `disetujui`, plus `ditarik`). `osn validate` checks that every indexed file exists and is non-empty; `bun run check:module-code` checks the fenced code of the modules without running it (`cpp` and `arduino` compiled with `g++ -fsyntax-only`, `python` parsed with `ast.parse`). Every programme has its own index schema (see `src/schema/` below); `tk-coding` and `sd-coding` modules are teacher guides, each with a separate learner sheet for the child at `content/<program>/lembar/<id>.md` (no name or identity field of the child; checked by `osn validate` and refused by `osn render modul --lembar`) and with its illustrations as SVG files in `content/<program>/gambar/` (checked by `bun run check:learner-assets`). A module body carries no `# ` title and no `## Rujukan` section (title and references come from the index entry); `bun run check:learner-assets` fails on a duplicate title. The directory `content/<id>/` exists only once the programme has a module; an empty one is never created.
 
 **What must never go here:** transcribed syllabus content (that is `data/`); real learner data; problems copied from judges or competitions (link them instead); a module marked `disetujui` by an AI agent.
 
-**State today:** `content/osn/modules/` holds ten modules, one per OSN topic family; all are `disetujui` (the pilot `dasar-pemrograman` and the other nine approved by the programme owner on 2026-11-18).
+**State today:** `content/osn/modules/` holds ten modules, one per OSN topic family; all are `disetujui` (the pilot `dasar-pemrograman` and the other nine approved by the programme owner on 2026-11-18). The six coding programmes hold 599 modules in total as of 2026-11-19, all `draf` and not yet reviewed by the owner: `tk-coding` 48 modules, 48 learner sheets and 48 SVG; `sd-coding` 168 modules, 168 sheets and 168 SVG; `smp-coding` 84; `sma-coding` 239 (29 cross-track plus 210 for tracks C, D and E; tracks A and B have no weekly modules); `kuliah-coding` 24; `dewasa-coding` 36 (counts from each `data/<program>/modules.json`). Points a human reviewer must check are collected in `docs/programs/catatan-tinjauan-modul.md`.
 
 ## `src/schema/`
 
@@ -211,21 +211,23 @@ owner has not approved is authored content and stays marked `DRAF`
 (ADR-0007). Today all six programme folders are approved, registered and
 encoded:
 
-- `README.md` — the level map (v2.0.0): real status, version and AI policy per programme, bridges, link to both research documents.
+- `README.md` — the level map (v2.6.0): real status, version and AI policy per programme, bridges, link to both research documents.
 - `sma-coding/` — the syllabus for the senior-high-school coding programme
   (`README.md`, `silabus.md`, the draft research note
   `riset-buku-ai-onno-w-purbo.md`, the draft proposal
   `usulan-fondasi-kelas-x.md` for syllabus v1.1, the approved drafts
   `draf-jalur-c-iot.md`, `draf-jalur-d-ai.md`, `draf-jalur-e-kuantum.md` kept
-  as history, and the module series designs `rancangan-*.md`), v1.4.0
+  as history, the module series designs `rancangan-*.md` and `rancangan-modul-cde.md`, the pilot modules in `rancangan-modul-cde-contoh/` kept as history, and review notes in `tinjauan-modul/`), v1.4.0
   approved by the programme owner on 2026-11-19 for tracks A, B, C, D and E
   (v1.0 on 2026-11-18 for tracks A and B; v1.3 adds the AI items and the AI-use policy, #139); tracks D and E are outside the CP wording
   (enrichment). Registered in `data/programs.json`.
 - `tk-coding/` (v1.0.2), `sd-coding/` (v1.1.0), `smp-coding/` (v1.2.0),
   `kuliah-coding/` (v1.2.0), `dewasa-coding/` (v1.2.0) — each holds
-  `README.md`, `riset.md` and `silabus.md`, approved by the owner on 2026-11-19
+  `README.md`, `riset.md`, `silabus.md` and the module design `rancangan-modul.md`
+  with its pilot in `rancangan-modul-contoh/` (kept as history), approved by the owner on 2026-11-19
   (issues #127–#131; v1.1 revisions #139), registered in `data/programs.json`
-  and encoded into `data/<id>/`. None has a `content/<id>/` yet.
+  and encoded into `data/<id>/`. Each has its learner modules in `content/<id>/` (draft, indexed by `data/<id>/modules.json`).
+- `catatan-tinjauan-modul.md` — points for the human reviewer of the draft modules (issue #125), authored content marked `DRAF`.
 
 **What must never go here:** machine-readable data (belongs in
 `data/<program>/`, and only after the source is approved); learner data;

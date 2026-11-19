@@ -1,9 +1,12 @@
 # Rancangan Modul Lengkap SD (`sd-coding`)
 
-- **Version:** v0.1.0
+- **Version:** v0.1.1
 - **Last updated:** 2026-11-19
-- **Status:** **DRAF**, menunggu persetujuan pemilik. Rancangan untuk 168 modul (panduan guru dan lembar anak, 336 berkas) di `content/sd-coding/`; modulnya belum ditulis.
+- **Status:** **DRAF**, menunggu persetujuan pemilik (status persetujuan rancangan tidak diubah). Modulnya **sudah ditulis** per 2026-11-19: 168 panduan guru di `content/sd-coding/modules/`, 168 lembar anak di `content/sd-coding/lembar/`, 168 gambar SVG di `content/sd-coding/gambar/`, terindeks di `data/sd-coding/modules.json`; semuanya berstatus `draf`.
 - **Changeset:** Rancangan modul SD: pemetaan 168 minggu, templat berbasis bukti, gelombang penulisan, gerbang mutu, pertanyaan keputusan, dan satu modul pilot.
+
+> **Catatan status (2026-11-19, sinkron dokumen #124).** Frasa "modulnya belum ditulis" di bawah adalah riwayat: modul nyatanya ada di `content/sd-coding/` (168 modul, 168 lembar, 168 SVG, indeks `data/sd-coding/modules.json`, semua `draf`, belum ditinjau). Pilot `rancangan-modul-contoh/` kini riwayat; modul nyatanya `sd1-1-m1` (`content/sd-coding/modules/sd1-1-m1.md` dan `content/sd-coding/lembar/sd1-1-m1.md`). "Tanpa aset gambar di repositori" dan "agent penulis tidak mengedit indeks" adalah aturan pada masa rancangan: gambar kini berupa SVG di `content/sd-coding/gambar/` (diperiksa `bun run check:learner-assets`) dan skema indeks khusus program sudah ada (`src/schema/sd-module.ts`). Judul `#` dan bagian `## Rujukan` tidak lagi ada di tubuh modul (judul dan rujukan dirender dari indeks); judul ganda kini galat di `bun run check:learner-assets`.
+> Keputusan dan kontrak yang disetujui pemilik di dokumen ini tidak berubah; yang diperbarui hanya klausa status yang basi.
 
 > **DRAF, bukan keputusan pemilik.** Dokumen ini adalah konten **karangan**
 > menurut [ADR-0007](../../architecture/adr/0007-authored-learning-content.md):
@@ -494,3 +497,4 @@ rekomendasi.
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
 | v0.1.0 | 2026-11-19 | Draf awal rancangan modul SD: pemetaan 168 minggu, templat panduan dan lembar, PRIMM sederhana, aturan rujukan, gelombang, gerbang mutu, tiga pertanyaan keputusan, dan pilot `sd1-1-m1`. |
+| v0.1.1 | 2026-11-19 | Sinkron dokumen (#124): catatan status; modul, lembar, dan gambar SVG kini ada di `content/sd-coding/`; pilot menjadi riwayat. Isi rancangan tidak berubah. |

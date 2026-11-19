@@ -1,9 +1,10 @@
 # Riset Ilmu Kognitif tentang Cara Belajar Efektif
 
-- **Version:** v0.2.0
+- **Version:** v0.2.1
 - **Last updated:** 2026-11-19
 - **Status:** **DRAF** (riset, bukan keputusan pemilik). Issue #133. Konten karangan menurut [ADR-0007](../architecture/adr/0007-authored-learning-content.md).
 - **Changelog:**
+  - v0.2.1 (2026-11-19): catatan status bagian 8 dimutakhirkan (sinkron dokumen #124): versi silabus sesuai `data/programs.json` dan keberadaan modul belajar; isi riset, rekomendasi, dan daftar pustaka tidak diubah.
   - v0.2.0 (2026-11-19): status program disesuaikan dengan keadaan repositori (bagian 8): lima program coding tk, sd, smp, kuliah, dewasa kini disetujui pemilik, terdaftar, dan ter-encode; sma-coding silabus v1.3.0; celah kebijakan AI OSN ditangani (PR #159). Isi riset, rekomendasi, dan daftar pustaka tidak diubah; rekomendasi pada 8.3 dan 8.4 ditulis dari dokumen yang dibaca saat riset dan belum diperiksa ulang terhadap silabus yang disetujui.
   - v0.1.0 (2026-11-19): draf awal. Metode dan skala bukti; sembilan kelompok prinsip belajar; verifikasi Prof. Stella Christie; delapan mitos; riset pendidikan komputasi; perkembangan usia; rekomendasi dan celah per program; daftar pustaka dengan status verifikasi.
 
@@ -610,12 +611,15 @@ Pembedaan: **K** = didukung bukti kuat (`[A]` atau `[B]` untuk prinsipnya);
 
 **Catatan status (v0.2.0, 2026-11-19).** Bagian 8 ditulis ketika hanya `osn`
 dan `sma-coding` ada di `main`. Sekarang tujuh program terdaftar
-(`data/programs.json`): `osn`, `sma-coding` v1.3.0, `tk-coding` v1.0.0,
-`sd-coding` v1.0.0, `smp-coding` v1.1.0, `kuliah-coding` v1.1.0, dan
-`dewasa-coding` v1.1.0; peta jenjang di
-[`docs/programs/README.md`](../programs/README.md). Rekomendasi di bawah
+(`data/programs.json`, per 2026-11-19): `osn` 2.0, `sma-coding` 1.4.0,
+`tk-coding` 1.0.2, `sd-coding` 1.1.0, `smp-coding` 1.2.0, `kuliah-coding` 1.2.0,
+dan `dewasa-coding` 1.2.0; peta jenjang di
+[`docs/programs/README.md`](../programs/README.md). Modul belajar enam program
+coding juga sudah ada sebagai draf (599 modul: `tk-coding` 48, `sd-coding` 168,
+`smp-coding` 84, `sma-coding` 239, `kuliah-coding` 24, `dewasa-coding` 36;
+`data/<id>/modules.json`), belum ditinjau pemilik. Rekomendasi di bawah
 tetap seperti ditulis dan **belum dicocokkan ulang** dengan silabus yang
-disetujui, kecuali yang dicatat tersendiri.
+disetujui maupun dengan modul itu, kecuali yang dicatat tersendiri.
 
 ### 8.1 OSN (`data/osn/`, `docs/silabus/`)
 

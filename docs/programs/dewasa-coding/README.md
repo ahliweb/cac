@@ -1,8 +1,8 @@
 # Program Pembelajaran Coding untuk Dewasa (`dewasa-coding`)
 
-- **Version:** v1.2.0
+- **Version:** v1.3.0
 - **Last updated:** 2026-11-19
-- **Status:** DISETUJUI pemilik pada 2026-11-19 (dialog pilihan, beserta rekomendasi penyusun; issue #131). Silabus dienkode ke `data/dewasa-coding/` dengan skema khusus program (ADR-0008) dan didaftarkan di `data/programs.json`. Belum ada `content/dewasa-coding/` (modul pembelajaran, ADR-0007). Revisi v1.1.0 (rekayasa perangkat lunak berbantuan AI) disetujui pemilik pada 2026-11-19 lewat keputusan #139. Revisi v1.2.0 (jembatan kuliah-coding ke jalur `PRO`) disetujui lewat keputusan #177.
+- **Status:** DISETUJUI pemilik pada 2026-11-19 (dialog pilihan, beserta rekomendasi penyusun; issue #131). Silabus dienkode ke `data/dewasa-coding/` dengan skema khusus program (ADR-0008) dan didaftarkan di `data/programs.json`. Modul pembelajaran (ADR-0007): 36 modul draf di `content/dewasa-coding/modules/`, terindeks di `data/dewasa-coding/modules.json`; semuanya berstatus `draf` dan belum ditinjau pemilik (per 2026-11-19). Revisi v1.1.0 (rekayasa perangkat lunak berbantuan AI) disetujui pemilik pada 2026-11-19 lewat keputusan #139. Revisi v1.2.0 (jembatan kuliah-coding ke jalur `PRO`) disetujui lewat keputusan #177.
 - **Changeset:** `.changeset/encode-dewasa-coding.md` (minor): silabus disetujui dan dienkode (#131). Revisi v1.1.0: `.changeset/dewasa-coding-v1-1-ai.md` (minor, #139). Riwayat: `.changeset/draf-dewasa-coding.md` (patch), dokumen riset dan silabus draf. Revisi v1.2.0 (#177): `.changeset/jembatan-kuliah-dewasa.md` (minor).
 
 > Isi folder ini adalah konten **karangan** (*authored*) menurut
@@ -37,11 +37,13 @@ memuat `DW-PRO-M13` (rekayasa perangkat lunak berbantuan AI, 8 jam, setelah
 | --- | --- |
 | `README.md` | Dokumen ini: status, tujuan, daftar berkas, keputusan pemilik, changelog. |
 | `riset.md` | Riset sumber bertanggal 2026-11-19: SKKNI 282/2016 (47 unit; tabel bagian 2.2 menjadi sumber judul unit di data), skema sertifikasi LSP, program pelatihan pemerintah, kerangka kecakapan digital, kebutuhan UMKM, kajian alat (lisensi, biaya, akun); memisahkan yang dibuka dari yang tidak. |
+| `rancangan-modul.md` | Rancangan modul belajar (DRAF, v0.1.0): pemetaan 36 modul (35 modul jalur ditambah `DW-FND-M1`), templat berbasis bukti, gelombang penulisan, gerbang mutu. Rancangan dipakai untuk menulis modul yang kini ada di `content/dewasa-coding/`. |
+| `rancangan-modul-contoh/` | Riwayat: modul pilot `dw-fnd-m1.md` sebelum modul sebenarnya ditulis; modul nyatanya `content/dewasa-coding/modules/dw-fnd-m1.md`. |
 | `silabus.md` | Silabus v1.2.0 yang disetujui: empat jalur dengan rencana modul berjam, pemetaan SKKNI untuk jalur profesional, jembatan (termasuk jembatan kuliah-coding ke jalur `PRO`, bagian 6.2), asesmen portofolio, opsi sertifikasi, privasi dan kebijakan penggunaan AI (bagian 9), opsi alat, biaya, dan keputusan pemilik (bagian 12). Sumber `data/dewasa-coding/`. |
 
 ## Korpus data
 
-`data/dewasa-coding/` berisi delapan berkas JSON, divalidasi oleh skema
+`data/dewasa-coding/` berisi delapan berkas JSON korpus (ditambah `modules.json`, indeks modul belajar yang bukan transkripsi silabus), divalidasi oleh skema
 `src/schema/dw-*.ts` dan audit `src/domain/dw-corpus-audit.ts`
 (`osn validate --program dewasa-coding`), dan dicocokkan sel demi sel dengan
 `silabus.md` oleh `bun run check:fidelity --program dewasa-coding`
@@ -58,9 +60,25 @@ memuat `DW-PRO-M13` (rekayasa perangkat lunak berbantuan AI, 8 jam, setelah
 | `bridges.json` | jembatan dari program lain (jembatan kuliah-coding berstatus `dirancang` sejak v1.2.0) | silabus bagian 6.1 |
 | `kuliah-bridge.json` | jembatan kuliah-coding ke `PRO` (v1.2.0, #177): tiga profil masuk, status lewati/padatkan/wajib tiap modul `PRO`, dampak jam, modul yang wajib bagi semua; skema `src/schema/dw-kuliah-bridge.ts`; kode `KUL-` diperiksa silang terhadap korpus kuliah-coding (ADR-0010) | silabus bagian 6.2 |
 
-Nama `module-plan.json` sengaja bukan `modules.json`: nama itu dicadangkan
-untuk indeks modul pembelajaran ADR-0007 (`content/dewasa-coding/modules/`),
-yang belum ada.
+Nama `module-plan.json` sengaja bukan `modules.json`: `module-plan.json` adalah
+rencana modul dari silabus (transkripsi), sedangkan `modules.json` adalah
+indeks modul pembelajaran ADR-0007 (`content/dewasa-coding/modules/`), yang
+kini ada dan berisi 36 entri.
+
+## Modul belajar
+
+Status per 2026-11-19, dihitung dari repositori:
+
+| Bagian | Jumlah | Lokasi |
+| --- | --- | --- |
+| Modul | 36: `dw-fnd` 1, `dw-pkj` 8, `dw-pro` 13, `dw-prs` 6, `dw-bis` 8 | `content/dewasa-coding/modules/<id>.md` |
+| Indeks | 36 entri, semuanya `draf` | `data/dewasa-coding/modules.json` (skema `src/schema/dw-learning-module.ts`) |
+
+Tidak ada `lembar/` dan `gambar/` untuk program ini. Semua modul berstatus
+`draf` dan belum ditinjau pemilik; tinjauan dilacak di issue #125 dan butir
+yang perlu dicek peninjau dikumpulkan di
+[`../catatan-tinjauan-modul.md`](../catatan-tinjauan-modul.md). Modul
+mengikuti [`rancangan-modul.md`](rancangan-modul.md).
 
 ## Keputusan pemilik (2026-11-19)
 
@@ -78,8 +96,8 @@ Rincian opsi ada di bagian 12 `silabus.md`. Semua rekomendasi penyusun dipilih:
 | 12.8 | Pengerjaan lanjutan | skema khusus per program (ADR-0008); modul `content/` mulai dari jalur `PKJ` dan `BIS` |
 | 12.9 | Revisi v1.1.0, rekayasa perangkat lunak berbantuan AI (#139, 2026-11-19) | U-13 butir tambahan di `DW-FND-M1`; U-14 butir tambahan di `DW-PKJ-M6`; U-15 modul baru `DW-PRO-M13` setelah `DW-PRO-M5` (8 jam `[asumsi]`); U-16 tanpa perubahan; kebijakan AI per program (bagian 9.1); energi dan biaya komputasi sebagai butir singkat dengan ketidakpastian |
 
-Modul `content/dewasa-coding/modules/` belum ditulis dan bukan bagian dari
-issue #131.
+Modul `content/dewasa-coding/modules/` bukan bagian dari issue #131; modulnya
+ditulis kemudian dan kini ada sebagai draf (lihat "Modul belajar").
 
 ## Cara mengusulkan perubahan
 
@@ -97,4 +115,5 @@ dicatat dengan tanggal) dan, karena data dienkode dari silabus, mengubah
 | v1.1.0 | 2026-11-19 | Revisi minor atas keputusan pemilik #139: modul `DW-PRO-M13` (jalur `PRO` 128 menjadi 136 jam), butir AI di `DW-FND-M1` dan `DW-PKJ-M6`, glosarium istilah AI, kebijakan penggunaan AI (bagian 9.1); `data/dewasa-coding/` dan registri diperbarui ke 1.1.0; skema `tracks.json` menjadikan `hoursPerModule` opsional (jalur dengan jam modul tak seragam); fidelity membaca kolom jam tabel `PRO` dan urutan belajar. |
 | v1.1.1 | 2026-11-19 | Silabus direvisi patch ke v1.1.1 (issue #165): kalimat status yang basi tentang program pasangannya diperbaiki; isi kurikulum dan corpus tidak berubah. |
 | v1.1.2 | 2026-11-19 | Silabus direvisi patch ke v1.1.2: judul 47 unit SKKNI dicocokkan dengan lampiran resmi JDIH Kemnaker, judul unit 47 dikoreksi menjadi "Melakukan Pembaharuan Perangkat Lunak" (`riset.md` v1.0.2), status unit di `skkni-units.json` menjadi `judul-cocok-lampiran-resmi`. |
+| v1.3.0 | 2026-11-19 | Sinkron dokumen (#124): status modul belajar (36 modul draf dan indeks `modules.json`), `rancangan-modul.md` dan pilot masuk daftar berkas; keterangan nama `module-plan.json` dan `modules.json` diperbarui; isi silabus dan corpus tidak berubah. |
 | v1.2.0 | 2026-11-19 | Revisi minor atas keputusan pemilik #177: jembatan kuliah-coding ke jalur `PRO` (bagian 6.1 baris kuliah-coding, bagian 6.2 baru, keputusan 12.7 dan 12.8), berkas data baru `kuliah-bridge.json` dengan skema dan audit, pemeriksaan silang kode lintas program (ADR-0010); modul dan jam `PRO` tidak berubah. |

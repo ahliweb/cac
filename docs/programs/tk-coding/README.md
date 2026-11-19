@@ -1,8 +1,8 @@
 # Program Pembelajaran Coding TK/PAUD (`tk-coding`)
 
-- **Version:** v1.0.3
+- **Version:** v1.1.0
 - **Last updated:** 2026-11-19
-- **Status:** DISETUJUI pemilik program, 2026-11-19, beserta rekomendasi penyusun (silabus v1.0.2: revisi patch kalimat status, #165, dan revisi patch jembatan ke SD, keputusan pemilik #177). Terdaftar di `data/programs.json` dengan corpus `data/tk-coding/` (ADR-0006, ADR-0008).
+- **Status:** DISETUJUI pemilik program, 2026-11-19, beserta rekomendasi penyusun (silabus v1.0.2: revisi patch kalimat status, #165, dan revisi patch jembatan ke SD, keputusan pemilik #177). Terdaftar di `data/programs.json` dengan corpus `data/tk-coding/` (ADR-0006, ADR-0008). Modul belajar: 48 modul draf (satu per minggu) di `content/tk-coding/modules/`, 48 lembar anak di `content/tk-coding/lembar/`, 48 gambar SVG di `content/tk-coding/gambar/`, terindeks di `data/tk-coding/modules.json`; semuanya berstatus `draf` dan belum ditinjau pemilik (per 2026-11-19).
 
 > Isi folder ini adalah konten **karangan** (*authored*) menurut
 > [ADR-0007](../../architecture/adr/0007-authored-learning-content.md):
@@ -36,6 +36,8 @@ perangkat, tanpa nilai angka, tanpa data anak di repositori.
 | --- | --- |
 | `README.md` | Dokumen ini: status, tujuan, daftar berkas, pertanyaan pemilik, changelog. |
 | `riset.md` | Riset (v0.1.0): sumber resmi yang benar-benar dibuka beserta kutipan persis dan tanggal akses 2026-11-19, panduan waktu layar, pendekatan berpikir komputasional anak usia dini, risiko, dan sumber yang tidak dapat dibuka. |
+| `rancangan-modul.md` | Rancangan modul belajar (DRAF, v0.1.0): pemetaan 48 minggu, templat berbasis bukti, gelombang penulisan, gerbang mutu. Rancangan dipakai untuk menulis modul yang kini ada di `content/tk-coding/`. |
+| `rancangan-modul-contoh/` | Riwayat: modul pilot (`panduan-tk-a1-m1.md`, `lembar-tk-a1-m1.md`) sebelum modul sebenarnya ditulis; modul nyatanya `content/tk-coding/modules/tk-a1-m1.md` dan `content/tk-coding/lembar/tk-a1-m1.md`. |
 | `silabus.md` | Silabus v1.0.2 (disetujui, sumber corpus `data/tk-coding/`): sumber dan kutipan resmi, prinsip, struktur waktu, rencana 48 minggu (`TK-A1-M1` sampai `TK-B2-M12`), pemetaan irisan ke CP (penafsiran, bukan pemenuhan CP), jembatan ke SD, asesmen observasi, peran orang tua, privasi, sarana, opsi alat dengan rekomendasi, keputusan pemilik. |
 
 ## Keputusan pemilik (2026-11-19)
@@ -55,6 +57,24 @@ di [`silabus.md`](silabus.md) bagian 9.
 | Q8 | Jembatan ke `sd-coding` | Menunggu silabus `sd-coding` terbit. |
 | Q9 | Persetujuan dan registrasi | Disetujui; `data/tk-coding/` dan entri registri dibuat. |
 
+## Modul belajar
+
+Status per 2026-11-19, dihitung dari repositori:
+
+| Bagian | Jumlah | Lokasi |
+| --- | --- | --- |
+| Modul panduan guru | 48 (`tk-a1-m1` sampai `tk-b2-m12`) | `content/tk-coding/modules/<id>.md` |
+| Lembar anak | 48 | `content/tk-coding/lembar/<id>.md` |
+| Gambar SVG lembar | 48 | `content/tk-coding/gambar/` |
+| Indeks | 48 entri, semuanya `draf` | `data/tk-coding/modules.json` (skema `src/schema/tk-module.ts`) |
+
+Semua modul berstatus `draf` dan belum ditinjau pemilik; tinjauan modul
+dilacak di issue #125 dan butir yang perlu dicek peninjau dikumpulkan di
+[`../catatan-tinjauan-modul.md`](../catatan-tinjauan-modul.md). Modul
+mengikuti [`rancangan-modul.md`](rancangan-modul.md). Perintah:
+`bun run check:learner-assets` (SVG dan tautan gambar lembar) dan
+`osn render modul --program tk-coding --id <id> --lembar` (lembar anak).
+
 ## Cara mengusulkan perubahan
 
 Usulan lewat issue, revisi berstatus draf, lalu persetujuan pemilik yang
@@ -71,3 +91,4 @@ keduanya sel demi sel.
 | v1.0.1 | 2026-11-19 | Kalimat status `sd-coding` di bagian tujuan diperbarui (kini disetujui dan terdaftar); isi program tidak diubah. |
 | v1.0.2 | 2026-11-19 | Silabus direvisi patch ke v1.0.1 (issue #165): kalimat status yang basi tentang program pasangannya diperbaiki; isi kurikulum dan corpus tidak berubah. |
 | v1.0.3 | 2026-11-19 | Silabus direvisi patch ke v1.0.2 atas keputusan pemilik #177: bagian 5 (jembatan ke SD) diselaraskan dengan silabus `sd-coding` (rujukan `TK-B2-M1` dikoreksi, kode minggu SD, kosakata dan simbol disamakan, jalur padat); isi kurikulum TK tidak berubah. |
+| v1.1.0 | 2026-11-19 | Sinkron dokumen (#124): status modul belajar (48 modul draf, 48 lembar, 48 gambar SVG, indeks `modules.json`), `rancangan-modul.md` dan pilot masuk daftar berkas; isi silabus dan corpus tidak berubah. |
