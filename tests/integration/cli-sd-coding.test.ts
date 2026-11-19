@@ -85,3 +85,22 @@ describe("osn validate with the sd-coding programme", () => {
     }
   });
 });
+
+describe("osn validate: cross-programme codes in the sd-coding bridges (ADR-0010, #177)", () => {
+  test("an smp-coding week that does not exist is reported with exit 1", async () => {
+    const dir = await mkdtemp(join(tmpdir(), "sd-crossref-fixture-"));
+    try {
+      await cp(join(REPO_ROOT, "data", "sd-coding"), dir, { recursive: true });
+      const path = join(dir, "bridges.json");
+      const file = JSON.parse(await readFile(path, "utf-8"));
+      file.bridges[1].text += " Lihat `SMP7-1-M99`.";
+      await writeFile(path, JSON.stringify(file, null, 2));
+      const result = await runCli(["validate", "--program", "sd-coding", "--data-dir", dir]);
+      expect(result.exitCode).toBe(1);
+      expect(result.stdout).toContain("bridges.json");
+      expect(result.stdout).toContain('"SMP7-1-M99" is not a week of programme "smp-coding"');
+    } finally {
+      await rm(dir, { recursive: true, force: true });
+    }
+  });
+});

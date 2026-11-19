@@ -78,7 +78,7 @@ bun test
 | `docs/operations/` | The operational runbook, the syllabus-check procedure and `kebijakan-ai-osn.md` (AI-use policy for OSN coaching, #139). |
 | `docs/silabus/` | The faithful Markdown transcription of the source syllabus PDF. |
 | `docs/*.pdf` | The source syllabus document itself. |
-| `docs/programs/` | Source documents of the programmes other than OSN (ADR-0006), one folder per programme id, and the level map `README.md` (TK → SD → SMP → SMA → university → adult). All six programmes are approved by the owner, registered and encoded (2026-11-19): `sma-coding` syllabus v1.4.0 (tracks A–E), `tk-coding` v1.0.1, `kuliah-coding` v1.2.0, `dewasa-coding` v1.2.0, `sd-coding` v1.0.2 and `smp-coding` v1.2.0. Each folder's `silabus.md` is the authored source of `data/<id>/` (ADR-0007). |
+| `docs/programs/` | Source documents of the programmes other than OSN (ADR-0006), one folder per programme id, and the level map `README.md` (TK → SD → SMP → SMA → university → adult). All six programmes are approved by the owner, registered and encoded (2026-11-19): `sma-coding` syllabus v1.4.0 (tracks A–E), `tk-coding` v1.0.1, `kuliah-coding` v1.2.0, `dewasa-coding` v1.2.0, `sd-coding` v1.1.0 and `smp-coding` v1.2.0. Each folder's `silabus.md` is the authored source of `data/<id>/` (ADR-0007). |
 | `docs/riset/` | Cross-programme research (authored): `ilmu-belajar-kognitif.md` (cognitive science of effective learning) and `ai-rekayasa-perangkat-lunak.md` (AI in software engineering, the basis of the per-programme AI policies, issue [#139](https://github.com/ahliweb/osn/issues/139)). |
 | `.github/workflows/` | CI pipeline (`ci.yml`). |
 | `.github/ISSUE_TEMPLATE/` | Bug, feature, and curriculum-change issue forms. |

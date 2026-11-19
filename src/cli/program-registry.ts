@@ -166,6 +166,7 @@ export const PROGRAM_MODULES: readonly ProgramModule[] = [
     moduleFindings: (source, context) =>
       moduleFindings(source, SD_CODING_PROGRAM_ID, moduleOptions(context)),
     fidelity: sdCodingFidelity,
+    crossProgramScan: ["bridges.json"],
   },
   {
     id: SMP_CODING_PROGRAM_ID,
