@@ -192,9 +192,3 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `d-x2-m7` (sekitar satu
 ## Langkah berikutnya
 
 Modul berikut: `d-x2-m7` (mengevaluasi klasifikasi), yang memecah kesalahan menjadi jenis galat. Bacaan pendamping: `matkom-logika-proposisi` untuk gagasan aturan bertingkat.
-
-## Rujukan
-
-- Orange Data Mining: widget Tree. <https://orangedatamining.com/widget-catalog/model/tree/>
-- Orange Data Mining: widget kNN. <https://orangedatamining.com/widget-catalog/model/knn/>
-- Orange Data Mining: widget Test and Score. <https://orangedatamining.com/widget-catalog/evaluate/testandscore/>

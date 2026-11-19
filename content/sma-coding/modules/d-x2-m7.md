@@ -147,9 +147,3 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `d-x2-m8` (sekitar satu
 ## Langkah berikutnya
 
 Modul berikut: `d-x2-m8` (pengelompokan tanpa label), tempat kamu mengelompokkan data tanpa jawaban. Bacaan pendamping: `matkom-himpunan-relasi-fungsi` untuk gagasan himpunan dan hubungan.
-
-## Rujukan
-
-- Orange Data Mining: widget Confusion Matrix. <https://orangedatamining.com/widget-catalog/evaluate/confusionmatrix/>
-- Orange Data Mining: widget Test and Score. <https://orangedatamining.com/widget-catalog/evaluate/testandscore/>
-- Panduan Mata Pelajaran Informatika, Fase D – F, 2025. <https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf>

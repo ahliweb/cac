@@ -164,9 +164,3 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `d-x2-m2` (sekitar satu
 ## Langkah berikutnya
 
 Modul berikut: `d-x2-m2` (bias dan keadilan), yang mengajak kamu melihat siapa yang dirugikan ketika model salah. Bacaan pendamping: `d-x1-m13` untuk laporan hasil model.
-
-## Rujukan
-
-- Orange Data Mining: widget Tree. <https://orangedatamining.com/widget-catalog/model/tree/>
-- Orange Data Mining: widget Test and Score. <https://orangedatamining.com/widget-catalog/evaluate/testandscore/>
-- Panduan Mata Pelajaran Informatika, Fase D – F, 2025. <https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf>

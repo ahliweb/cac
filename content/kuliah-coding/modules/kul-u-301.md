@@ -539,20 +539,3 @@ pengujian.
   punya ketentuan lain.
 - **Hukum:** modul hanya mengutip pasal yang terbaca pada teks resmi; undang
   unit hukum kampus untuk persoalan data nyata.
-
-## Rujukan
-
-- *The Python Standard Library: graphlib, csv, datetime, subprocess*, Python
-  Software Foundation (dibuka 2026-11-19):
-  <https://docs.python.org/3/library/index.html>
-- *Git Reference*, git-scm.com (dibuka 2026-11-19): <https://git-scm.com/docs>
-- *Principles behind the Agile Manifesto* (dibuka 2026-11-19):
-  <https://agilemanifesto.org/principles.html>
-- Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi, JDIH
-  BPK (teks asli; Pasal 1 dan 10 dibaca 2026-11-19):
-  <https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022>
-- Surat Edaran Menteri Komunikasi dan Informatika Nomor 9 Tahun 2023 tentang
-  Etika Kecerdasan Artifisial, JDIH Komdigi (pedoman etika; dibuka 2026-11-19):
-  <https://jdih.komdigi.go.id/produk_hukum/view/id/883/t/surat+edaran+menteri+komunikasi+dan+informatika+nomor+9+tahun+2023>
-- ACM/IEEE-CS/AAAI, *Computer Science Curricula 2023*, daftar knowledge area
-  (SDF, SE, SEP) (dibuka 2026-11-19): <https://csed.acm.org/knowledge-areas/>

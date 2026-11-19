@@ -251,8 +251,3 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `c-x2-m3` (sekitar satu
 ## Langkah berikutnya
 
 Modul berikut: `c-x2-m3` (data berkualitas dari sensor), yang memeriksa rentang dan membuang data ganjil dari pembacaan seperti ini. Modul terkait: `fondasi-komputer-dan-hardware` untuk gagasan masukan dan keluaran. Pembacaan lanjut: lembar data sensormu dan dokumentasi pustakanya.
-
-## Rujukan
-
-- Arduino, rujukan bahasa: `Serial.println()` (jumlah angka di belakang koma). <https://docs.arduino.cc/language-reference/en/functions/communication/serial/println/>
-- Espressif, dokumentasi Arduino-ESP32. <https://docs.espressif.com/projects/arduino-esp32/en/latest/>

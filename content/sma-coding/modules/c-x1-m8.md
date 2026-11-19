@@ -227,9 +227,3 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `c-x1-m9` (pertanyaan 1
 ## Langkah berikutnya
 
 Modul berikut: `c-x1-m9` (masukan digital, percabangan, logika Boolean), yang menambahkan tombol sebagai masukan. Modul terkait: `fondasi-keamanan-dasar` untuk kebiasaan aman secara umum. Pembacaan lanjut: dokumentasi `pinMode`, `digitalWrite`, dan `delay` di Arduino dan dokumentasi Arduino-ESP32 milik Espressif.
-
-## Rujukan
-
-- Arduino, rujukan bahasa: `pinMode()`, `digitalWrite()`, `delay()`. <https://docs.arduino.cc/language-reference/en/functions/digital-io/pinMode/>, <https://docs.arduino.cc/language-reference/en/functions/digital-io/digitalwrite/>, <https://docs.arduino.cc/language-reference/en/functions/time/delay/>
-- Espressif, dokumentasi Arduino-ESP32. <https://docs.espressif.com/projects/arduino-esp32/en/latest/>
-- Panduan Mata Pelajaran Informatika, Fase D – F, 2025. <https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf>

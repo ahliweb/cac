@@ -197,8 +197,3 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `c-xi1-m3` (sekitar sat
 ## Langkah berikutnya
 
 Modul berikut: `c-xi1-m3` (tipe data bentukan), yang menyatukan masukan dan hasil harapan dalam satu `struct` supaya dua larik sejajar tidak perlu lagi. Modul terkait: `fondasi-keamanan-dasar` untuk gagasan memeriksa masukan yang tidak valid. Pembacaan lanjut: C++ Core Guidelines bagian fungsi (F) dan ekspresi (ES).
-
-## Rujukan
-
-- C++ Core Guidelines (F.2, ES.45). <https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines>
-- Arduino, rujukan bahasa: `analogRead()`. <https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/>

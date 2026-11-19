@@ -169,9 +169,3 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `d-x2-m6` (sekitar satu
 ## Langkah berikutnya
 
 Modul berikut: `d-x2-m6` (klasifikasi: pohon keputusan dan tetangga terdekat). Bacaan pendamping: `matkom-pertumbuhan-fungsi` untuk gagasan seberapa cepat sesuatu membesar.
-
-## Rujukan
-
-- Orange Data Mining: widget Linear Regression. <https://orangedatamining.com/widget-catalog/model/linearregression/>
-- Orange Data Mining: widget Tree. <https://orangedatamining.com/widget-catalog/model/tree/>
-- Orange Data Mining: widget Test and Score. <https://orangedatamining.com/widget-catalog/evaluate/testandscore/>

@@ -803,16 +803,3 @@ untuk prototipe. Bila kamu bergabung ke jalur informatika, `KUL-I-202`
   Pastikan lab memiliki `pandas` dan `matplotlib`.
 - **Tingkat AI** pada bagian kebijakan adalah `[asumsi]`: ubah bila prodi
   punya ketentuan lain.
-
-## Rujukan
-
-- *pandas documentation*, pandas (dibuka 2026-11-19):
-  <https://pandas.pydata.org/docs/>
-- *Matplotlib documentation*, Matplotlib (dibuka 2026-11-19):
-  <https://matplotlib.org/stable/>
-- *The Python Tutorial*, Python Software Foundation (dibuka 2026-11-19):
-  <https://docs.python.org/3/tutorial/index.html>
-- *Portal Satu Data Indonesia* (dibuka 2026-11-19): <https://data.go.id/>
-- *Badan Pusat Statistik* (dibuka 2026-11-19): <https://www.bps.go.id/>
-- ACM/IEEE-CS/AAAI, *Computer Science Curricula 2023*, daftar knowledge
-  area (DM, MSF, SDF) (dibuka 2026-11-19): <https://csed.acm.org/knowledge-areas/>

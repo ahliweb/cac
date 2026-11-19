@@ -258,9 +258,3 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `c-x2-m8` (sekitar satu
 ## Langkah berikutnya
 
 Modul berikut: `c-x2-m8` (menampilkan data), yang memakai penunjuk waktu ini untuk memperbarui tampilan tanpa membeku. Modul terkait: `matkom-bilangan-bertanda-dan-luapan` untuk luapan bilangan. Pembacaan lanjut: contoh Arduino "Blink Without Delay".
-
-## Rujukan
-
-- Arduino, rujukan bahasa: `millis()`. <https://docs.arduino.cc/language-reference/en/functions/time/millis/>
-- Arduino, contoh bawaan: Blink Without Delay. <https://docs.arduino.cc/built-in-examples/digital/BlinkWithoutDelay/>
-- Espressif, dokumentasi Arduino-ESP32. <https://docs.espressif.com/projects/arduino-esp32/en/latest/>

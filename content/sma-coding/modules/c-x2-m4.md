@@ -235,8 +235,3 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `c-x2-m5` (sekitar satu
 ## Langkah berikutnya
 
 Modul berikut: `c-x2-m5` (keluaran analog atau PWM), yang memakai nilai analog sebagai masukan untuk mengatur kecerahan. Di kelas XI jalur ini ada penyangga melingkar, cara menyimpan jendela tanpa menggeser seluruh isi. Pembacaan lanjut: rujukan Arduino tentang `analogRead()`.
-
-## Rujukan
-
-- Arduino, rujukan bahasa: `analogRead()`. <https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/>
-- Arduino, rujukan bahasa: `Serial.println()`. <https://docs.arduino.cc/language-reference/en/functions/communication/serial/println/>

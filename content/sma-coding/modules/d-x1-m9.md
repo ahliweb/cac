@@ -150,8 +150,3 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `d-x1-m10` (sekitar sat
 ## Langkah berikutnya
 
 Modul berikut: `d-x1-m10` (klasifikasi tanpa komputer), tempat kartu berlabel dipakai untuk membuat aturan keputusan di kertas. Bacaan pendamping untuk menilai sumber dan klaim: `pendamping-periksa-fakta-dan-baca-lateral`.
-
-## Rujukan
-
-- Panduan Mata Pelajaran Informatika, Fase D – F, 2025. <https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf>
-- Orange Data Mining: widget File (menjelaskan fitur, target, dan meta pada kolom data). <https://orangedatamining.com/widget-catalog/data/file/>

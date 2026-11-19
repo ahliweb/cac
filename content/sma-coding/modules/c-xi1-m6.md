@@ -263,9 +263,3 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `c-xi1-m7` (sekitar sat
 ## Langkah berikutnya
 
 Modul berikut: `c-xi1-m7` (alternatif solusi II: kendali proporsional), yang membandingkan kendali hidup-mati dengan kendali proporsional. Modul terkait: `pendamping-keamanan-lanjut-konektivitas` untuk gagasan perangkat yang aman. Pembacaan lanjut: dokumentasi `digitalWrite()` untuk memahami keluaran digital.
-
-## Rujukan
-
-- Arduino, rujukan bahasa: `digitalWrite()`. <https://docs.arduino.cc/language-reference/en/functions/digital-io/digitalwrite/>
-- Arduino, rujukan bahasa: `analogRead()`. <https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/>
-- Arduino, rujukan bahasa: `millis()`. <https://docs.arduino.cc/language-reference/en/functions/time/millis/>

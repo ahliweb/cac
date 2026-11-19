@@ -137,9 +137,3 @@ Kunci: (1) 18, huruf R; (2) lima bit memberi 32 pola, lebih dari 26; (3) siapa p
 - **AI:** tanpa AI. Kebijakan `smp-coding` (silabus bagian 7.1): AI generatif hanya demonstrasi guru, tanpa akun murid; asesmen tanpa AI.
 - **Privasi:** pesan sandi hanya kata rekaan; jangan memakai nama atau alamat sebenarnya.
 - **Unsur pembelajaran:** ingat kembali dan jarak (`K`), PRIMM (`K` usia 11 sampai 14), contoh lengkap lalu setengah jadi (`K`), Parsons (`M`), latihan bercampur (`K`).
-
-## Rujukan
-
-- *Panduan Mata Pelajaran Informatika, Fase D – F*, BSKAP, 2025:
-  <https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf>
-- CS Unplugged, "Binary numbers" (hanya tautan; idenya ditulis ulang di modul ini): <https://www.csunplugged.org/en/topics/binary-numbers/>

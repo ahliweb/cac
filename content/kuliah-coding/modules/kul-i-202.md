@@ -779,21 +779,3 @@ data, `AUTO_INCREMENT` atau `SERIAL`, dan tingkat isolasi. Ketahanan transaksi
 dijelaskan konseptual karena tidak dapat diperagakan dalam skrip pendek.
 Data contoh di modul (pelanggan fiktif) tidak memuat data pribadi nyata;
 larang mahasiswa memakai data nyata pada tugas.
-
-## Rujukan
-
-- SQLite, *Documentation* (sqlite.org), dibuka 2026-11-19:
-  <https://sqlite.org/docs.html>
-- SQLite, *Foreign Key Support*, dibuka 2026-11-19:
-  <https://www.sqlite.org/foreignkeys.html>
-- SQLite, *Transaction*, dibuka 2026-11-19:
-  <https://www.sqlite.org/lang_transaction.html>
-- SQLite, *Query Planning* (`EXPLAIN QUERY PLAN` dan indeks), dibuka
-  2026-11-19: <https://www.sqlite.org/queryplanner.html>
-- SQLite, *NULL Handling*, dibuka 2026-11-19:
-  <https://www.sqlite.org/nulls.html>
-- Python, *sqlite3: DB-API 2.0 interface for SQLite databases*, dibuka
-  2026-11-19: <https://docs.python.org/3/library/sqlite3.html>
-- ACM/IEEE-CS/AAAI, *Computer Science Curricula 2023*, knowledge area DM:
-  <https://csed.acm.org/knowledge-areas/> (daftar KA terverifikasi; rincian
-  unit **tidak** dibaca, jadi tidak dikutip).

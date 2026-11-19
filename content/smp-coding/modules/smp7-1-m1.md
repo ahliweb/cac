@@ -204,8 +204,3 @@ langkahnya benar.
   14, riset 6.3), tabel penelusuran sebagai mesin konseptual dan *dual
   coding* (`K`/`M`, riset 6.2 dan 3.7), contoh lengkap lalu setengah jadi
   (`K`, riset 3.4), soal Parsons (`M`, riset 6.3).
-
-## Rujukan
-
-- *Panduan Mata Pelajaran Informatika, Fase D – F*, BSKAP, 2025:
-  <https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf>

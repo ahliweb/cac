@@ -767,23 +767,3 @@ acak per bagian; jangan menilai pasangan. ISA x86-64 dipilih penyusun
 Jalankan latihan assembly dan proses di mesin virtual atau akun terisolasi.
 Memori virtual dibatasi pada pemetaan halaman dan penggantian; TLB dan alokator
 memori tingkat lanjut hanya disebut.
-
-## Rujukan
-
-- GNU Binutils, *Using as* (GNU assembler), dibuka 2026-11-19:
-  <https://sourceware.org/binutils/docs/as/>
-- Linux man-pages, `write(2)`, dibuka 2026-11-19:
-  <https://man7.org/linux/man-pages/man2/write.2.html>
-- Linux man-pages, `fork(2)`, dibuka 2026-11-19:
-  <https://man7.org/linux/man-pages/man2/fork.2.html>
-- Arpaci-Dusseau dan Arpaci-Dusseau, *Operating Systems: Three Easy Pieces*,
-  dibuka 2026-11-19: <https://pages.cs.wisc.edu/~remzi/OSTEP/>
-- GNU Project, *GNU Coreutils Manual*, dibuka 2026-11-19:
-  <https://www.gnu.org/software/coreutils/manual/>
-- GNU Project, *Bash Reference Manual*, dibuka 2026-11-19:
-  <https://www.gnu.org/software/bash/manual/>
-- GNU Project, *Using the GNU Compiler Collection (GCC)*, dibuka 2026-11-19:
-  <https://gcc.gnu.org/onlinedocs/>
-- ACM/IEEE-CS/AAAI, *Computer Science Curricula 2023*, knowledge area AR,
-  OS, dan SF: <https://csed.acm.org/knowledge-areas/> (daftar KA
-  terverifikasi; rincian unit **tidak** dibaca, jadi tidak dikutip).

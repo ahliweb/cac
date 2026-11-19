@@ -218,9 +218,3 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `c-x2-m9` (sekitar satu
 ## Langkah berikutnya
 
 Modul berikut: `c-x2-m9` (tumpukan dan antrian sebagai penyangga), yang menyimpan pembacaan sebelum ditampilkan atau diproses. Modul terkait: `fondasi-representasi-data` untuk gagasan tentang cara data disajikan. Pembacaan lanjut: dokumentasi `Serial.println()` di Arduino.
-
-## Rujukan
-
-- Arduino, rujukan bahasa: `Serial.print()` dan `Serial.println()`. <https://docs.arduino.cc/language-reference/en/functions/communication/serial/print/>, <https://docs.arduino.cc/language-reference/en/functions/communication/serial/println/>
-- Arduino, rujukan bahasa: `millis()`. <https://docs.arduino.cc/language-reference/en/functions/time/millis/>
-- Arduino, tutorial Serial Plotter di Arduino IDE 2 (halaman dimuat lewat JavaScript; isinya tidak dibaca penyusun). Dibuka 2026-11-19 (status 200). <https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-serial-plotter/>

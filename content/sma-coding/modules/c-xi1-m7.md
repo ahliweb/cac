@@ -265,10 +265,3 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `c-xi1-m8` (sekitar sat
 ## Langkah berikutnya
 
 Modul berikut: `c-xi1-m8` (efisiensi memori dan waktu pada mikrokontroler), yang menanyakan berapa banyak sumber daya yang dipakai solusi-solusi seperti ini. Modul terkait: `matkom-pertumbuhan-fungsi` untuk gagasan membandingkan pertumbuhan kerja. Pembacaan lanjut: dokumentasi `map()` dan `constrain()` Arduino serta antarmuka `ledc` ESP32.
-
-## Rujukan
-
-- Arduino, rujukan bahasa: `constrain()`. <https://docs.arduino.cc/language-reference/en/functions/math/constrain/>
-- Arduino, rujukan bahasa: `map()`. <https://docs.arduino.cc/language-reference/en/functions/math/map/>
-- Arduino, rujukan bahasa: `analogWrite()`. <https://docs.arduino.cc/language-reference/en/functions/analog-io/analogWrite/>
-- Espressif, dokumentasi Arduino-ESP32: LEDC (PWM). <https://docs.espressif.com/projects/arduino-esp32/en/latest/api/ledc.html>

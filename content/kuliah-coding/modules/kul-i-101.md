@@ -821,17 +821,3 @@ Praktikum berpasangan: bentuk pasangan acak per bagian, jangan menilai
 pekerjaan pasangan. Tingkat AI **Kuning** untuk tugas dasar pemrograman adalah
 ketetapan silabus 6.3; gerbang kesiapan di pertemuan 11. Kompilasi dan
 sanitizer disiapkan di lab sebelum pertemuan 13.
-
-## Rujukan
-
-- Standard C++ Foundation, *Get Started* (isocpp.org), dibuka 2026-11-19:
-  <https://isocpp.org/get-started>
-- GNU Project, *Using the GNU Compiler Collection (GCC)*, bagian Instrumentation
-  Options (sanitizer), dibuka 2026-11-19:
-  <https://gcc.gnu.org/onlinedocs/gcc/Instrumentation-Options.html>
-- GNU Project, *Debugging with GDB*, dibuka 2026-11-19:
-  <https://sourceware.org/gdb/current/onlinedocs/gdb.html/>
-- *Git Reference*, git-scm.com, dibuka 2026-11-19: <https://git-scm.com/docs>
-- ACM/IEEE-CS/AAAI, *Computer Science Curricula 2023*, knowledge area SDF dan
-  FPL: <https://csed.acm.org/knowledge-areas/> (daftar KA terverifikasi;
-  rincian unit **tidak** dibaca, jadi tidak dikutip).

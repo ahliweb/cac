@@ -180,9 +180,3 @@ Kunci: (1) memulai skrip di bawahnya ketika tombol spasi ditekan; (2) 90 dan 120
 - **AI:** tanpa AI. Kebijakan `smp-coding` (silabus bagian 7.1): AI generatif hanya demonstrasi guru, tanpa akun murid; asesmen tanpa AI.
 - **Privasi:** tanpa nama murid pada berkas proyek.
 - **Unsur pembelajaran:** ingat kembali dan jarak (`K`), PRIMM (`K` usia 11 sampai 14, riset 6.3), tabel penelusuran (`K`, riset 6.2), contoh lengkap lalu setengah jadi (`K`, riset 3.4), Parsons (`M`), latihan bercampur (`K`, riset 3.3).
-
-## Rujukan
-
-- *Panduan Mata Pelajaran Informatika, Fase D – F*, BSKAP, 2025:
-  <https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf>
-- Scratch, tentang Scratch (situs resmi Scratch Foundation): <https://scratch.mit.edu/about>

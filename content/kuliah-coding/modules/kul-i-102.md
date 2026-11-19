@@ -807,16 +807,3 @@ kontak, jadwal). Praktikum berpasangan dengan pasangan acak per bagian; jangan
 menilai pasangan. Pohon seimbang (AVL, merah-hitam) tidak termasuk topik
 corpus, hanya disebut. Penelusuran dengan gambar kotak dan panah sebelum
 mengetik memberi manfaat besar pada pemula.
-
-## Rujukan
-
-- Standard C++ Foundation, *Get Started* (isocpp.org), dibuka 2026-11-19:
-  <https://isocpp.org/get-started>
-- MIT OpenCourseWare, *Introduction to Algorithms* (6.006, Spring 2020), dibuka
-  2026-11-19:
-  <https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/>
-- GNU Project, *Using the GNU Compiler Collection (GCC)*, dibuka 2026-11-19:
-  <https://gcc.gnu.org/onlinedocs/>
-- ACM/IEEE-CS/AAAI, *Computer Science Curricula 2023*, knowledge area SDF dan
-  AL: <https://csed.acm.org/knowledge-areas/> (daftar KA terverifikasi;
-  rincian unit **tidak** dibaca, jadi tidak dikutip).

@@ -161,8 +161,3 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `d-x2-m4` (sekitar satu
 ## Langkah berikutnya
 
 Modul berikut: `d-x2-m4` (regresi: garis kecenderungan), yang memakai data angka sintetis. Bacaan pendamping: `pendamping-transaksi-digital-aman` dan `cloud-keamanan-dan-privasi`.
-
-## Rujukan
-
-- Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi, JDIH BPK. <https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022>
-- Panduan Mata Pelajaran Informatika, Fase D – F, 2025. <https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf>

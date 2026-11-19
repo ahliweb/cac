@@ -26,6 +26,10 @@
         {
           "title": "Git Reference",
           "url": "https://git-scm.com/docs"
+        },
+        {
+          "title": "ACM/IEEE-CS/AAAI: Computer Science Curricula 2023, daftar knowledge area (rincian unit tidak dibaca)",
+          "url": "https://csed.acm.org/knowledge-areas/"
         }
       ],
       "contentPath": "content/kuliah-coding/modules/kul-i-101.md"
@@ -48,6 +52,14 @@
         {
           "title": "MIT OpenCourseWare: Introduction to Algorithms (6.006, Spring 2020)",
           "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/"
+        },
+        {
+          "title": "GNU Project: Using the GNU Compiler Collection (GCC)",
+          "url": "https://gcc.gnu.org/onlinedocs/"
+        },
+        {
+          "title": "ACM/IEEE-CS/AAAI: Computer Science Curricula 2023, daftar knowledge area (rincian unit tidak dibaca)",
+          "url": "https://csed.acm.org/knowledge-areas/"
         }
       ],
       "contentPath": "content/kuliah-coding/modules/kul-i-102.md"
@@ -70,6 +82,14 @@
         {
           "title": "MIT OpenCourseWare: Mathematics for Computer Science (6.042J, Spring 2015)",
           "url": "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/"
+        },
+        {
+          "title": "Standard C++ Foundation: Get Started",
+          "url": "https://isocpp.org/get-started"
+        },
+        {
+          "title": "ACM/IEEE-CS/AAAI: Computer Science Curricula 2023, daftar knowledge area (rincian unit tidak dibaca)",
+          "url": "https://csed.acm.org/knowledge-areas/"
         }
       ],
       "contentPath": "content/kuliah-coding/modules/kul-i-103.md"
@@ -206,6 +226,10 @@
         {
           "title": "GCC: Online Documentation",
           "url": "https://gcc.gnu.org/onlinedocs/"
+        },
+        {
+          "title": "ACM/IEEE-CS/AAAI: Computer Science Curricula 2023, daftar knowledge area (rincian unit tidak dibaca)",
+          "url": "https://csed.acm.org/knowledge-areas/"
         }
       ],
       "contentPath": "content/kuliah-coding/modules/kul-i-201.md"
@@ -244,6 +268,10 @@
         {
           "title": "Python: sqlite3, DB-API 2.0 interface for SQLite databases",
           "url": "https://docs.python.org/3/library/sqlite3.html"
+        },
+        {
+          "title": "ACM/IEEE-CS/AAAI: Computer Science Curricula 2023, daftar knowledge area (rincian unit tidak dibaca)",
+          "url": "https://csed.acm.org/knowledge-areas/"
         }
       ],
       "contentPath": "content/kuliah-coding/modules/kul-i-202.md"
@@ -286,6 +314,10 @@
         {
           "title": "GCC: Online Documentation",
           "url": "https://gcc.gnu.org/onlinedocs/"
+        },
+        {
+          "title": "ACM/IEEE-CS/AAAI: Computer Science Curricula 2023, daftar knowledge area (rincian unit tidak dibaca)",
+          "url": "https://csed.acm.org/knowledge-areas/"
         }
       ],
       "contentPath": "content/kuliah-coding/modules/kul-i-203.md"
@@ -418,6 +450,26 @@
         {
           "title": "NIST AI Risk Management Framework",
           "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+        },
+        {
+          "title": "Choose a License: MIT, Apache-2.0, GPL-3.0 (ringkasan)",
+          "url": "https://choosealicense.com/"
+        },
+        {
+          "title": "SPDX License List",
+          "url": "https://spdx.org/licenses/"
+        },
+        {
+          "title": "OWASP Gen AI Security Project: OWASP Top 10 for LLM Applications 2025",
+          "url": "https://genai.owasp.org/llm-top-10/"
+        },
+        {
+          "title": "U.S. Copyright Office: Copyright and Artificial Intelligence, Part 2: Copyrightability (Januari 2025; hukum AS)",
+          "url": "https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf"
+        },
+        {
+          "title": "ACM/IEEE-CS/AAAI: Computer Science Curricula 2023, daftar knowledge area (rincian unit tidak dibaca)",
+          "url": "https://csed.acm.org/knowledge-areas/"
         }
       ],
       "contentPath": "content/kuliah-coding/modules/kul-i-305.md"
@@ -464,6 +516,18 @@
         {
           "title": "U.S. Copyright Office: Copyright and Artificial Intelligence, Part 2: Copyrightability",
           "url": "https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf"
+        },
+        {
+          "title": "Surat Edaran Menteri Komunikasi dan Informatika Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (JDIH Komdigi; pedoman etika, bukan peraturan yang mengikat langsung)",
+          "url": "https://jdih.komdigi.go.id/produk_hukum/view/id/883/t/surat+edaran+menteri+komunikasi+dan+informatika+nomor+9+tahun+2023"
+        },
+        {
+          "title": "International Energy Agency: Energy and AI (ringkasan eksekutif, 2025)",
+          "url": "https://www.iea.org/reports/energy-and-ai/executive-summary"
+        },
+        {
+          "title": "ACM/IEEE-CS/AAAI: Computer Science Curricula 2023, daftar knowledge area (rincian unit tidak dibaca)",
+          "url": "https://csed.acm.org/knowledge-areas/"
         }
       ],
       "contentPath": "content/kuliah-coding/modules/kul-u-202.md"
@@ -494,6 +558,14 @@
         {
           "title": "UU Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi (JDIH BPK)",
           "url": "https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022"
+        },
+        {
+          "title": "Surat Edaran Menteri Komunikasi dan Informatika Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (JDIH Komdigi; pedoman etika, bukan peraturan yang mengikat langsung)",
+          "url": "https://jdih.komdigi.go.id/produk_hukum/view/id/883/t/surat+edaran+menteri+komunikasi+dan+informatika+nomor+9+tahun+2023"
+        },
+        {
+          "title": "ACM/IEEE-CS/AAAI: Computer Science Curricula 2023, daftar knowledge area (rincian unit tidak dibaca)",
+          "url": "https://csed.acm.org/knowledge-areas/"
         }
       ],
       "contentPath": "content/kuliah-coding/modules/kul-u-301.md"

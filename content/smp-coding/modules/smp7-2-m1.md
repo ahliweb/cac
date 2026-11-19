@@ -149,8 +149,3 @@ Kunci: (1) data adalah fakta mentah, informasi adalah data yang diolah untuk men
 - **AI:** tanpa AI. Kebijakan `smp-coding` (silabus bagian 7.1): AI generatif hanya demonstrasi guru, tanpa akun murid; asesmen tanpa AI.
 - **Privasi:** semua data rekaan; jangan menulis nama murid asli di tabel.
 - **Unsur pembelajaran:** ingat kembali dan jarak (`K`), PRIMM (`K` usia 11 sampai 14), contoh lengkap lalu setengah jadi (`K`), Parsons (`M`), latihan bercampur (`K`).
-
-## Rujukan
-
-- *Panduan Mata Pelajaran Informatika, Fase D – F*, BSKAP, 2025:
-  <https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf>

@@ -710,19 +710,3 @@ dengan pasangan acak per bagian; jangan menilai pasangan. Dasar teori NP
 dibatasi pengenalan (P, NP, sertifikat, subset sum); reduksi formal dan
 algoritma jalur terpendek berbobot tidak termasuk topik corpus (lanjutan di
 `KUL-K-301`).
-
-## Rujukan
-
-- MIT OpenCourseWare, *Design and Analysis of Algorithms* (6.046J, Spring
-  2015), dibuka 2026-11-19:
-  <https://ocw.mit.edu/courses/6-046j-design-and-analysis-of-algorithms-spring-2015/>
-- MIT OpenCourseWare, *Introduction to Algorithms* (6.006, Spring 2020), dibuka
-  2026-11-19:
-  <https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/>
-- Standard C++ Foundation, *Get Started* (isocpp.org), dibuka 2026-11-19:
-  <https://isocpp.org/get-started>
-- GNU Project, *Using the GNU Compiler Collection (GCC)*, dibuka 2026-11-19:
-  <https://gcc.gnu.org/onlinedocs/>
-- ACM/IEEE-CS/AAAI, *Computer Science Curricula 2023*, knowledge area AL:
-  <https://csed.acm.org/knowledge-areas/> (daftar KA terverifikasi; rincian
-  unit **tidak** dibaca, jadi tidak dikutip).

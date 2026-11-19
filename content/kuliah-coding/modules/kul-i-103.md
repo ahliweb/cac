@@ -677,16 +677,3 @@ sebagai bahan belajar. Variasi tugas: ganti angka dan struktur graf per
 mahasiswa. Program C++ di modul ini hanya memeriksa contoh; tekankan bahwa itu
 bukan bukti. Tingkat AI di atas `[asumsi]`, usulan baku keputusan pemilik
 2026-11-19.
-
-## Rujukan
-
-- Oscar Levin, *Discrete Mathematics: An Open Introduction* (buku terbuka),
-  dibuka 2026-11-19: <https://discrete.openmathbooks.org/dmoi3.html>
-- MIT OpenCourseWare, *Mathematics for Computer Science* (6.042J, Spring 2015),
-  dibuka 2026-11-19:
-  <https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/>
-- Standard C++ Foundation, *Get Started* (isocpp.org), dibuka 2026-11-19:
-  <https://isocpp.org/get-started>
-- ACM/IEEE-CS/AAAI, *Computer Science Curricula 2023*, knowledge area MSF:
-  <https://csed.acm.org/knowledge-areas/> (daftar KA terverifikasi;
-  rincian unit **tidak** dibaca, jadi tidak dikutip).

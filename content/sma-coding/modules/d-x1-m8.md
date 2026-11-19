@@ -144,8 +144,3 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `d-x1-m9` (sekitar satu
 ## Langkah berikutnya
 
 Modul berikut: `d-x1-m9` (data, fitur, dan label), yang memperlihatkan bagaimana tabel contoh disiapkan untuk model. Bacaan tambahan untuk guru atau murid yang berminat: kursus pengantar AI Elements of AI, kursus daring gratis dalam bahasa Inggris (per 2026-11 daftar negaranya tidak memuat Indonesia; syarat akun tidak diperiksa penyusun).
-
-## Rujukan
-
-- Panduan Mata Pelajaran Informatika, Fase D – F, 2025. <https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf>
-- Elements of AI, MinnaLearn dan University of Helsinki (bacaan tambahan; bukan sumber isi modul). <https://www.elementsofai.com/>
