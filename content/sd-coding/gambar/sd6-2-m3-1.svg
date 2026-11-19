@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 210" width="520" height="210" role="img" aria-labelledby="t d">
+  <title id="t">Aturan tentang KA menjaga teman</title>
+  <desc id="d">Tiga kotak dari kiri ke kanan. Kasus: Ari mengolok-olok teman. Siapa terluka: teman yang digambar. Aturan: Kita tidak memakai KA untuk mengolok-olok teman, karena teman bisa terluka.</desc>
+  <rect width="520" height="210" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444444"/>
+    </marker>
+  </defs>
+  <rect x="10" y="40" width="150" height="110" rx="6" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="85" y="64" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Kasus</text>
+  <text x="85" y="92" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">Ari mengolok-olok</text>
+  <text x="85" y="110" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">teman lewat gambar</text>
+  <text x="85" y="128" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">buatan KA</text>
+  <rect x="185" y="40" width="150" height="110" rx="6" fill="#fdecea" stroke="#c62828" stroke-width="2"/>
+  <text x="260" y="64" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Siapa terluka</text>
+  <text x="260" y="98" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">teman yang</text>
+  <text x="260" y="116" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">digambar</text>
+  <rect x="360" y="40" width="150" height="110" rx="6" fill="#e6f4ea" stroke="#2e7d32" stroke-width="2"/>
+  <text x="435" y="64" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Aturan</text>
+  <text x="435" y="88" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">Kita tidak memakai</text>
+  <text x="435" y="106" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">KA untuk mengolok-</text>
+  <text x="435" y="124" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">olok, karena teman</text>
+  <text x="435" y="142" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">bisa terluka.</text>
+  <line x1="162" y1="95" x2="182" y2="95" stroke="#444444" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="337" y1="95" x2="357" y2="95" stroke="#444444" stroke-width="2" marker-end="url(#a)"/>
+  <text x="260" y="185" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">aturan menyebut tindakan dan siapa yang dijaga</text>
+</svg>

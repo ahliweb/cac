@@ -895,6 +895,143 @@
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd6-1-m14.md",
       "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m14.md"
+    },
+    {
+      "id": "sd6-2-m1",
+      "title": "Cara kerja KA secara sederhana",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        }
+      ],
+      "weekCodes": ["SD6-2-M1"],
+      "cpItems": ["C-LE-a"],
+      "gradeLevels": [6],
+      "prerequisites": ["SD5-2-M1", "SD5-2-M6"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd6-2-m1.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m1.md"
+    },
+    {
+      "id": "sd6-2-m2",
+      "title": "Dampak Kecerdasan Artifisial",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        }
+      ],
+      "weekCodes": ["SD6-2-M2"],
+      "cpItems": ["C-LE-a", "C-LE-b"],
+      "gradeLevels": [6],
+      "prerequisites": ["SD6-2-M1", "SD5-2-M4"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd6-2-m2.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m2.md"
+    },
+    {
+      "id": "sd6-2-m3",
+      "title": "Etika Dasar Penggunaan KA",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        },
+        {
+          "title": "UU 27/2022 tentang Pelindungan Data Pribadi",
+          "url": "https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022"
+        }
+      ],
+      "weekCodes": ["SD6-2-M3"],
+      "cpItems": ["C-LE-b", "C-LE-e"],
+      "gradeLevels": [6],
+      "prerequisites": ["SD6-2-M2", "SD4-2-M11"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd6-2-m3.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m3.md"
+    },
+    {
+      "id": "sd6-2-m4",
+      "title": "Cara KA Belajar dari Data",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        }
+      ],
+      "weekCodes": ["SD6-2-M4"],
+      "cpItems": ["C-PP-a"],
+      "gradeLevels": [6],
+      "prerequisites": ["SD5-2-M6", "SD5-2-M7"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd6-2-m4.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m4.md"
+    },
+    {
+      "id": "sd6-2-m5",
+      "title": "Model Pola dan Klasifikasi Sederhana",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        }
+      ],
+      "weekCodes": ["SD6-2-M5"],
+      "cpItems": ["C-PP-a", "C-PP-b"],
+      "gradeLevels": [6],
+      "prerequisites": ["SD6-2-M4", "SD5-2-M6"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd6-2-m5.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m5.md"
+    },
+    {
+      "id": "sd6-2-m6",
+      "title": "Faktor yang Mempengaruhi Prediksi KA",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        }
+      ],
+      "weekCodes": ["SD6-2-M6"],
+      "cpItems": ["C-PP-c"],
+      "gradeLevels": [6],
+      "prerequisites": ["SD6-2-M4", "SD5-2-M8"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd6-2-m6.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m6.md"
+    },
+    {
+      "id": "sd6-2-m7",
+      "title": "Batasan Sederhana KA",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        }
+      ],
+      "weekCodes": ["SD6-2-M7"],
+      "cpItems": ["C-PP-c"],
+      "gradeLevels": [6],
+      "prerequisites": ["SD6-2-M6"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd6-2-m7.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m7.md"
     }
   ]
 }
