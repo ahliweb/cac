@@ -2926,6 +2926,557 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xi1-m14.md"
+    },
+    {
+      "id": "c-xi2-m1",
+      "title": "Jaringan nirkabel dan perangkat IoT (F)",
+      "cpItems": ["E-LD-e", "F-BK-d"],
+      "weekCodes": ["C-XI2-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi1-m7", "FND-X1-M4", "FND-X1-M5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino-ESP32 (Espressif): Wi-Fi API",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/wifi.html"
+        },
+        {
+          "title": "IETF RFC 5737: Blok alamat IPv4 untuk dokumentasi",
+          "url": "https://www.rfc-editor.org/rfc/rfc5737"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D - F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi2-m1.md"
+    },
+    {
+      "id": "c-xi2-m2",
+      "title": "Keamanan konektivitas",
+      "cpItems": ["E-LD-e", "F-LD-e", "F-LD-i"],
+      "weekCodes": ["C-XI2-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi2-m1", "FND-X1-M6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "OWASP: Secrets Management Cheat Sheet",
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D - F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi2-m2.md"
+    },
+    {
+      "id": "c-xi2-m3",
+      "title": "Klien HTTP (F)",
+      "cpItems": ["F-BK-d"],
+      "weekCodes": ["C-XI2-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi2-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "MDN: Gambaran umum HTTP (An overview of HTTP)",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview"
+        },
+        {
+          "title": "Arduino-ESP32: pustaka HTTPClient (kode sumber)",
+          "url": "https://github.com/espressif/arduino-esp32/tree/master/libraries/HTTPClient"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi2-m3.md"
+    },
+    {
+      "id": "c-xi2-m4",
+      "title": "Server mini (F)",
+      "cpItems": ["F-BK-d"],
+      "weekCodes": ["C-XI2-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi2-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "MDN: Gambaran umum HTTP (An overview of HTTP)",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview"
+        },
+        {
+          "title": "Arduino-ESP32: pustaka WebServer (kode sumber)",
+          "url": "https://github.com/espressif/arduino-esp32/tree/master/libraries/WebServer"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi2-m4.md"
+    },
+    {
+      "id": "c-xi2-m5",
+      "title": "Publikasi-langganan: konsep",
+      "cpItems": ["F-BK-d"],
+      "weekCodes": ["C-XI2-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi2-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "OASIS: MQTT Version 3.1.1",
+          "url": "https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html"
+        },
+        {
+          "title": "Eclipse Mosquitto (contoh broker MQTT)",
+          "url": "https://mosquitto.org/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi2-m5.md"
+    },
+    {
+      "id": "c-xi2-m6",
+      "title": "Publikasi-langganan: praktik (F)",
+      "cpItems": ["F-BK-d"],
+      "weekCodes": ["C-XI2-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi2-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "PubSubClient (pustaka klien MQTT untuk Arduino)",
+          "url": "https://github.com/knolleary/pubsubclient"
+        },
+        {
+          "title": "OASIS: MQTT Version 3.1.1",
+          "url": "https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html"
+        },
+        {
+          "title": "Eclipse Mosquitto (contoh broker MQTT)",
+          "url": "https://mosquitto.org/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi2-m6.md"
+    },
+    {
+      "id": "c-xi2-m7",
+      "title": "Format data",
+      "cpItems": ["F-BK-d"],
+      "weekCodes": ["C-XI2-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi2-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IETF RFC 8259: Format pertukaran data JSON",
+          "url": "https://www.rfc-editor.org/rfc/rfc8259"
+        },
+        {
+          "title": "JSON (json.org): pengantar",
+          "url": "https://www.json.org/json-en.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi2-m7.md"
+    },
+    {
+      "id": "d-xi2-m1",
+      "title": "Pengelompokan dengan Python",
+      "cpItems": [],
+      "weekCodes": ["D-XI2-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi1-m7", "d-x2-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Clustering (bagian k-means)",
+          "url": "https://scikit-learn.org/stable/modules/clustering.html"
+        },
+        {
+          "title": "scikit-learn: StandardScaler",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html"
+        },
+        {
+          "title": "scikit-learn: silhouette_score",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.metrics.silhouette_score.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi2-m1.md"
+    },
+    {
+      "id": "d-xi2-m2",
+      "title": "Pohon keputusan dan ensambel",
+      "cpItems": [],
+      "weekCodes": ["D-XI2-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi2-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Decision Trees",
+          "url": "https://scikit-learn.org/stable/modules/tree.html"
+        },
+        {
+          "title": "scikit-learn: Ensembles (hutan acak)",
+          "url": "https://scikit-learn.org/stable/modules/ensemble.html"
+        },
+        {
+          "title": "scikit-learn: RandomForestClassifier",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi2-m2.md"
+    },
+    {
+      "id": "d-xi2-m3",
+      "title": "Rekayasa fitur",
+      "cpItems": [],
+      "weekCodes": ["D-XI2-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi2-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "pandas: get_dummies",
+          "url": "https://pandas.pydata.org/docs/reference/api/pandas.get_dummies.html"
+        },
+        {
+          "title": "scikit-learn: Feature selection",
+          "url": "https://scikit-learn.org/stable/modules/feature_selection.html"
+        },
+        {
+          "title": "scikit-learn: Pipelines and composite estimators",
+          "url": "https://scikit-learn.org/stable/modules/compose.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi2-m3.md"
+    },
+    {
+      "id": "d-xi2-m4",
+      "title": "Teks: pembersihan dan representasi",
+      "cpItems": [],
+      "weekCodes": ["D-XI2-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi2-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Feature extraction (teks)",
+          "url": "https://scikit-learn.org/stable/modules/feature_extraction.html"
+        },
+        {
+          "title": "scikit-learn: CountVectorizer",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html"
+        },
+        {
+          "title": "scikit-learn: TfidfVectorizer",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html"
+        },
+        {
+          "title": "Python: re (ekspresi reguler)",
+          "url": "https://docs.python.org/3/library/re.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi2-m4.md"
+    },
+    {
+      "id": "d-xi2-m5",
+      "title": "Klasifikasi teks",
+      "cpItems": [],
+      "weekCodes": ["D-XI2-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi2-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Naive Bayes",
+          "url": "https://scikit-learn.org/stable/modules/naive_bayes.html"
+        },
+        {
+          "title": "scikit-learn: Cross-validation",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "scikit-learn: Pipelines and composite estimators",
+          "url": "https://scikit-learn.org/stable/modules/compose.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi2-m5.md"
+    },
+    {
+      "id": "d-xi2-m6",
+      "title": "Gambar sebagai angka",
+      "cpItems": [],
+      "weekCodes": ["D-XI2-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi2-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "NumPy: numpy.array",
+          "url": "https://numpy.org/doc/stable/reference/generated/numpy.array.html"
+        },
+        {
+          "title": "scikit-learn: Nearest Neighbors",
+          "url": "https://scikit-learn.org/stable/modules/neighbors.html"
+        },
+        {
+          "title": "scikit-learn: confusion_matrix",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi2-m6.md"
+    },
+    {
+      "id": "d-xi2-m7",
+      "title": "Gagasan jaringan saraf",
+      "cpItems": [],
+      "weekCodes": ["D-XI2-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi2-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Neural network models (supervised)",
+          "url": "https://scikit-learn.org/stable/modules/neural_networks_supervised.html"
+        },
+        {
+          "title": "Python: math (fungsi matematika)",
+          "url": "https://docs.python.org/3/library/math.html"
+        },
+        {
+          "title": "Elements of AI, MinnaLearn dan University of Helsinki (bacaan tambahan; bukan sumber isi modul)",
+          "url": "https://www.elementsofai.com/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi2-m7.md"
+    },
+    {
+      "id": "e-xi2-m1",
+      "title": "Gerbang dua qubit: CNOT",
+      "cpItems": [],
+      "weekCodes": ["E-XI2-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi1-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information (multiple systems)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/multiple-systems/quantum-information"
+        },
+        {
+          "title": "IBM Quantum Learning: Quantum circuits",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/quantum-circuits/circuits"
+        },
+        {
+          "title": "Quirk: Quantum Circuit Simulator",
+          "url": "https://algassert.com/quirk"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi2-m1.md"
+    },
+    {
+      "id": "e-xi2-m2",
+      "title": "Entanglement dan keadaan Bell",
+      "cpItems": [],
+      "weekCodes": ["E-XI2-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi2-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information (multiple systems)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/multiple-systems/quantum-information"
+        },
+        {
+          "title": "IBM Quantum Learning: Quantum circuits",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/quantum-circuits/circuits"
+        },
+        {
+          "title": "Quirk: Quantum Circuit Simulator",
+          "url": "https://algassert.com/quirk"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi2-m2.md"
+    },
+    {
+      "id": "e-xi2-m3",
+      "title": "Mengukur qubit terjerat",
+      "cpItems": [],
+      "weekCodes": ["E-XI2-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi2-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information (multiple systems)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/multiple-systems/quantum-information"
+        },
+        {
+          "title": "Quirk: Quantum Circuit Simulator",
+          "url": "https://algassert.com/quirk"
+        },
+        {
+          "title": "Python: modul random",
+          "url": "https://docs.python.org/3/library/random.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi2-m3.md"
+    },
+    {
+      "id": "e-xi2-m4",
+      "title": "Simulator sendiri III: n qubit",
+      "cpItems": [],
+      "weekCodes": ["E-XI2-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi2-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information (multiple systems)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/multiple-systems/quantum-information"
+        },
+        {
+          "title": "Python: modul sys (getsizeof)",
+          "url": "https://docs.python.org/3/library/sys.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi2-m4.md"
+    },
+    {
+      "id": "e-xi2-m5",
+      "title": "Gerbang fase dan rotasi (pengayaan)",
+      "cpItems": [],
+      "weekCodes": ["E-XI2-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi2-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information (single systems)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/single-systems/quantum-information"
+        },
+        {
+          "title": "Qiskit: RYGate",
+          "url": "https://quantum.cloud.ibm.com/docs/en/api/qiskit/qiskit.circuit.library.RYGate"
+        },
+        {
+          "title": "Quirk: Quantum Circuit Simulator",
+          "url": "https://algassert.com/quirk"
+        },
+        {
+          "title": "Python: modul cmath",
+          "url": "https://docs.python.org/3/library/cmath.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi2-m5.md"
+    },
+    {
+      "id": "e-xi2-m6",
+      "title": "Reversibilitas",
+      "cpItems": [],
+      "weekCodes": ["E-XI2-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi2-m5", "matkom-himpunan-relasi-fungsi"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information (multiple systems)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/multiple-systems/quantum-information"
+        },
+        {
+          "title": "Quirk: Quantum Circuit Simulator",
+          "url": "https://algassert.com/quirk"
+        },
+        {
+          "title": "Python: modul itertools",
+          "url": "https://docs.python.org/3/library/itertools.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi2-m6.md"
+    },
+    {
+      "id": "e-xi2-m7",
+      "title": "Tak dapat menggandakan dan teleportasi (konsep)",
+      "cpItems": [],
+      "weekCodes": ["E-XI2-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi2-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum teleportation",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/entanglement-in-action/quantum-teleportation"
+        },
+        {
+          "title": "IBM Quantum Learning: Quantum information (multiple systems)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/multiple-systems/quantum-information"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi2-m7.md"
     }
   ]
 }

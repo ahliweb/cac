@@ -100,8 +100,8 @@ extern HardwareSerial Serial;
 // Pustaka pendamping: deklarasi kosong (hanya nama, tanpa anggota).
 class TwoWire {};
 extern TwoWire Wire;
-class WiFiClass {};
-extern WiFiClass WiFi;
+// WiFi, WiFiClient, IPAddress, HTTPClient, WebServer, dan PubSubClient punya
+// header tiruan sendiri (WiFi.h, HTTPClient.h, WebServer.h, PubSubClient.h).
 
 // Nada dan LEDC inti Arduino-ESP32 (nama mengikuti dokumentasi Espressif 3.x).
 void tone(uint8_t pin, unsigned int frequency, unsigned long duration = 0);
