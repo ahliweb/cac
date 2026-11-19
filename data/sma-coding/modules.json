@@ -5436,6 +5436,159 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xii2-m7.md"
+    },
+    {
+      "id": "c-xii2-m1",
+      "title": "Pemeliharaan program I",
+      "cpItems": ["F-AP-c"],
+      "weekCodes": ["C-XII2-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii1-m7", "c-xi1-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: const",
+          "url": "https://docs.arduino.cc/language-reference/en/variables/variable-scope-qualifiers/const/"
+        },
+        {
+          "title": "C++ Core Guidelines",
+          "url": "https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii2-m1.md"
+    },
+    {
+      "id": "c-xii2-m2",
+      "title": "Pemeliharaan program II",
+      "cpItems": ["F-AP-c"],
+      "weekCodes": ["C-XII2-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii2-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: sizeof()",
+          "url": "https://docs.arduino.cc/language-reference/en/variables/utilities/sizeof/"
+        },
+        {
+          "title": "Arduino: const",
+          "url": "https://docs.arduino.cc/language-reference/en/variables/variable-scope-qualifiers/const/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii2-m2.md"
+    },
+    {
+      "id": "c-xii2-m3",
+      "title": "Memodelkan masalah lapangan",
+      "cpItems": [],
+      "weekCodes": ["C-XII2-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii2-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D - F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii2-m3.md"
+    },
+    {
+      "id": "c-xii2-m4",
+      "title": "Ulasan keamanan dan privasi",
+      "cpItems": [],
+      "weekCodes": ["C-XII2-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii2-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "OWASP: Secrets Management Cheat Sheet",
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html"
+        },
+        {
+          "title": "NIST IR 8259A: IoT Device Cybersecurity Capability Core Baseline",
+          "url": "https://csrc.nist.gov/pubs/ir/8259/a/final"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii2-m4.md"
+    },
+    {
+      "id": "c-xii2-m5",
+      "title": "Proyek akhir: rancangan",
+      "cpItems": ["F-BK-a"],
+      "weekCodes": ["C-XII2-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii2-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D - F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii2-m5.md"
+    },
+    {
+      "id": "c-xii2-m6",
+      "title": "Proyek akhir: sprint 1 (perangkat keras) (F)",
+      "cpItems": ["F-BK-a", "F-AP-d"],
+      "weekCodes": ["C-XII2-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii2-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: analogRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/"
+        },
+        {
+          "title": "Arduino-ESP32 (Espressif): ADC",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/adc.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii2-m6.md"
+    },
+    {
+      "id": "c-xii2-m7",
+      "title": "Proyek akhir: sprint 2 (program)",
+      "cpItems": ["F-BK-a", "F-AP-d"],
+      "weekCodes": ["C-XII2-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii2-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: millis()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/millis/"
+        },
+        {
+          "title": "C++ Core Guidelines",
+          "url": "https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii2-m7.md"
     }
   ]
 }
