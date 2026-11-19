@@ -664,8 +664,10 @@ Nilai `5` adalah jeda dalam detik yang diminta situs. Namun **izin teknis bukan 
 Teks asli UU Nomor 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik
 Pasal 30 ayat (1) menyebut perbuatan "dengan sengaja dan tanpa hak atau melawan
 hukum mengakses Komputer dan/atau Sistem Elektronik milik Orang lain dengan
-cara apa pun". Undang-undang itu sudah diubah beberapa kali, jadi periksa
-versi terbarunya; modul ini bukan nasihat hukum dan tidak menafsirkan pasal.
+cara apa pun". Pasal itu termasuk ketentuan UU ITE yang dicabut oleh UU Nomor 1
+Tahun 2023 tentang KUHP (Pasal 622), yang berlaku sejak 2 Januari 2026; perbuatan
+serupa kini diatur di KUHP. Periksa teks berlaku di JDIH resmi; modul ini bukan
+nasihat hukum dan tidak menafsirkan pasal.
 Pegangan praktis: **hanya otomasi sistem milikmu sendiri, sistem yang
 secara tertulis mengizinkan, atau API publik sesuai syaratnya**.
 
