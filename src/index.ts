@@ -1,5 +1,5 @@
 /**
- * Entrypoint for kurikulum-informatika.
+ * Entrypoint for curriculum-as-code (Curriculum as Code, AhliKoding Curriculum).
  *
  * This package expresses the OSN Informatika 2026 operational syllabus as
  * code: schema, domain model, and rendering pipeline. This file is currently
@@ -14,6 +14,6 @@ export const CURRICULUM_SOURCE =
 
 /** Basic package identity, re-exported for programmatic consumers. */
 export const packageInfo = {
-  name: "kurikulum-informatika",
+  name: "curriculum-as-code",
   source: CURRICULUM_SOURCE,
 } as const;

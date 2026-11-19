@@ -1,6 +1,6 @@
 # Architecture overview
 
-This document describes the system architecture of `kurikulum-informatika`:
+This document describes the system architecture of `curriculum-as-code`:
 what the four layers are, how a curriculum fact moves through them, the
 rules that keep the dependency graph one-way, and what this repository
 deliberately does not attempt to be.
