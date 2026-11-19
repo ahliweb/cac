@@ -59,7 +59,7 @@ describe("tk-coding fidelity: data/tk-coding vs. the approved silabus", () => {
 
   test("the registry entry exists and carries the document's version and date", () => {
     expect(tkEntry).toBeDefined();
-    expect(tkEntry?.syllabusVersion).toBe("1.0.1");
+    expect(tkEntry?.syllabusVersion).toBe("1.0.2");
     expect(tkEntry?.syllabusDate).toBe("2026-11-19");
   });
 
@@ -104,6 +104,30 @@ describe("tk-coding fidelity: data/tk-coding vs. the approved silabus", () => {
     expect(expected["cp-mapping.json"].meetsCp).toBe(false);
     expect(expected["cp-mapping.json"].concepts[0].matchLevel).toBe("sedang");
     expect(expected["cp-mapping.json"].concepts[1].matchLevel).toBe("langsung");
+  });
+});
+
+describe("tk-coding fidelity: v1.0.2 bridge (#177)", () => {
+  test("the bridge is aligned with sd-coding: corrected pattern weeks, SD week codes, five rows", () => {
+    const expected = expectedCorpus(markdown) as Record<string, Json>;
+    const bridge = expected["bridge.json"];
+    expect(bridge.sdProgram).toContain("sudah dibaca");
+    expect(bridge.sdProgram).not.toContain("harus disesuaikan");
+    expect(bridge.rows).toHaveLength(5);
+    // TK-B2-M1 trains direction and repeat, not patterns: the pattern row now cites TK-B1-M4 and TK-B1-M6.
+    expect(bridge.rows[1].outputWeeks).toEqual(["TK-B1-M4", "TK-B1-M6"]);
+    expect(bridge.rows[2].outputWeeks).toEqual(["TK-B1-M5", "TK-B2-M1", "TK-B2-M3"]);
+    expect(bridge.rows[2].prerequisite).toContain("`SD1-1-M8`");
+    expect(bridge.rows[4].prerequisite).toContain("`SD1-2-M9`");
+    expect(bridge.rows[4].note).toContain("tidak dilewati");
+  });
+
+  test("question Q8 records that the bridge was aligned with sd-coding", () => {
+    const expected = expectedCorpus(markdown) as Record<string, Json>;
+    const q8 = (expected["decisions.json"].decisions as Array<Json>).find(
+      (decision) => decision.id === "Q8" || decision.question === "Jembatan ke `sd-coding`",
+    );
+    expect(JSON.stringify(q8)).toContain("kode jembatan kini menyebut kode minggu SD");
   });
 });
 

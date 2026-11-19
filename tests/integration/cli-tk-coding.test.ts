@@ -86,6 +86,25 @@ describe("osn validate with the tk-coding programme", () => {
   });
 });
 
+describe("osn validate: cross-programme codes in the tk-coding bridge (ADR-0010, #177)", () => {
+  test("an sd-coding week that does not exist is reported with exit 1", async () => {
+    const dir = await mkdtemp(join(tmpdir(), "tk-crossref-fixture-"));
+    try {
+      await cp(join(REPO_ROOT, "data", "tk-coding"), dir, { recursive: true });
+      const path = join(dir, "bridge.json");
+      const file = JSON.parse(await readFile(path, "utf-8"));
+      file.rows[0].prerequisite += " dan `SD1-1-M99`";
+      await writeFile(path, JSON.stringify(file, null, 2));
+      const result = await runCli(["validate", "--program", "tk-coding", "--data-dir", dir]);
+      expect(result.exitCode).toBe(1);
+      expect(result.stdout).toContain("bridge.json");
+      expect(result.stdout).toContain('"SD1-1-M99" is not a week of programme "sd-coding"');
+    } finally {
+      await rm(dir, { recursive: true, force: true });
+    }
+  });
+});
+
 describe("OSN-only commands refuse --program tk-coding (exit 2, never OSN data)", () => {
   const cases: string[][] = [["render", "weekly", "--week", "1"], ["render", "sop"], ["checklist"]];
 

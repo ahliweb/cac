@@ -1,8 +1,8 @@
 # Program Pembelajaran Coding TK/PAUD (`tk-coding`)
 
-- **Version:** v1.0.2
+- **Version:** v1.0.3
 - **Last updated:** 2026-11-19
-- **Status:** DISETUJUI pemilik program, 2026-11-19, beserta rekomendasi penyusun (silabus v1.0.1, revisi patch kalimat status, #165). Terdaftar di `data/programs.json` dengan corpus `data/tk-coding/` (ADR-0006, ADR-0008).
+- **Status:** DISETUJUI pemilik program, 2026-11-19, beserta rekomendasi penyusun (silabus v1.0.2: revisi patch kalimat status, #165, dan revisi patch jembatan ke SD, keputusan pemilik #177). Terdaftar di `data/programs.json` dengan corpus `data/tk-coding/` (ADR-0006, ADR-0008).
 
 > Isi folder ini adalah konten **karangan** (*authored*) menurut
 > [ADR-0007](../../architecture/adr/0007-authored-learning-content.md):
@@ -36,7 +36,7 @@ perangkat, tanpa nilai angka, tanpa data anak di repositori.
 | --- | --- |
 | `README.md` | Dokumen ini: status, tujuan, daftar berkas, pertanyaan pemilik, changelog. |
 | `riset.md` | Riset (v0.1.0): sumber resmi yang benar-benar dibuka beserta kutipan persis dan tanggal akses 2026-11-19, panduan waktu layar, pendekatan berpikir komputasional anak usia dini, risiko, dan sumber yang tidak dapat dibuka. |
-| `silabus.md` | Silabus v1.0.1 (disetujui, sumber corpus `data/tk-coding/`): sumber dan kutipan resmi, prinsip, struktur waktu, rencana 48 minggu (`TK-A1-M1` sampai `TK-B2-M12`), pemetaan irisan ke CP (penafsiran, bukan pemenuhan CP), jembatan ke SD, asesmen observasi, peran orang tua, privasi, sarana, opsi alat dengan rekomendasi, keputusan pemilik. |
+| `silabus.md` | Silabus v1.0.2 (disetujui, sumber corpus `data/tk-coding/`): sumber dan kutipan resmi, prinsip, struktur waktu, rencana 48 minggu (`TK-A1-M1` sampai `TK-B2-M12`), pemetaan irisan ke CP (penafsiran, bukan pemenuhan CP), jembatan ke SD, asesmen observasi, peran orang tua, privasi, sarana, opsi alat dengan rekomendasi, keputusan pemilik. |
 
 ## Keputusan pemilik (2026-11-19)
 
@@ -70,3 +70,4 @@ keduanya sel demi sel.
 | v1.0.0 | 2026-11-19 | Silabus disetujui pemilik beserta rekomendasi penyusun; `silabus-draf.md` menjadi `silabus.md`; program di-encode ke `data/tk-coding/` dan didaftarkan (issue #127). |
 | v1.0.1 | 2026-11-19 | Kalimat status `sd-coding` di bagian tujuan diperbarui (kini disetujui dan terdaftar); isi program tidak diubah. |
 | v1.0.2 | 2026-11-19 | Silabus direvisi patch ke v1.0.1 (issue #165): kalimat status yang basi tentang program pasangannya diperbaiki; isi kurikulum dan corpus tidak berubah. |
+| v1.0.3 | 2026-11-19 | Silabus direvisi patch ke v1.0.2 atas keputusan pemilik #177: bagian 5 (jembatan ke SD) diselaraskan dengan silabus `sd-coding` (rujukan `TK-B2-M1` dikoreksi, kode minggu SD, kosakata dan simbol disamakan, jalur padat); isi kurikulum TK tidak berubah. |

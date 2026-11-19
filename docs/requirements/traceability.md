@@ -130,7 +130,7 @@ are traced by issue (Matrix 2) and by the tests below. Every path must exist; th
 | TR-19 | `tests/integration/dewasa-coding-fidelity.test.ts` |
 | TR-20 | `tests/unit/check-module-code.test.ts`, `tests/integration/check-module-code.test.ts` |
 | TR-21 | `tests/unit/check-learner-assets.test.ts`, `tests/integration/check-learner-assets.test.ts` |
-| TR-22 | `tests/unit/cross-program-refs.test.ts`, `tests/integration/cli-dewasa-coding.test.ts`, `tests/integration/cli-kuliah-coding.test.ts`, `tests/integration/cli-smp-coding.test.ts`, `tests/integration/cli-sma-coding.test.ts`, `tests/integration/cli-sd-coding.test.ts` |
+| TR-22 | `tests/unit/cross-program-refs.test.ts`, `tests/integration/cli-dewasa-coding.test.ts`, `tests/integration/cli-kuliah-coding.test.ts`, `tests/integration/cli-smp-coding.test.ts`, `tests/integration/cli-sma-coding.test.ts`, `tests/integration/cli-sd-coding.test.ts`, `tests/integration/cli-tk-coding.test.ts` |
 | GR-13 | `tests/unit/module-schema.test.ts`, `tests/unit/render-module.test.ts` |
 
 Every requirement ID in `register.md` appears in at least one row of Matrix 1 or Matrix 2, and
