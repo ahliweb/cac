@@ -14,6 +14,16 @@ Modul ini menyiapkan butir capaian pembelajaran yang berbunyi "memahami pemanfaa
 
 Modul ini tidak menunjuk satu produk. Menu dan nama tombol berbeda antarperangkat lunak, jadi modul memakai istilah umum. Pakailah perangkat yang disediakan lab (sumber terbuka atau berbasis web); guru akan menunjukkan letak menunya. Tanpa berkas atau data pribadi siswa: semua isi latihan fiktif, dan nama murid memakai nama samaran seperti Murid-01.
 
+## Ingat kembali
+
+Jawab dari ingatan, tanpa membuka modul keamanan dasar (FND-X1-M6) dan modul perangkat lunak (FND-X1-M2). Cocokkan di bagian kunci.
+
+1. Hitung 26^5 dan jelaskan mengapa menambah panjang kata sandi lebih berpengaruh daripada mengganti satu huruf dengan simbol.
+2. Permintaan ke asisten AI mana yang aman dikirim apa adanya: "Jelaskan apa itu DNS", "Ini kata sandi akun uji saya, tolong nilai kekuatannya", atau "Ini alamat dan nomor telepon temanku, tolong buatkan kartu nama"?
+3. Apa itu atribusi, dan tulis contoh atribusi untuk foto fiktif "Gedung Lab" karya Pembuat-Fiktif berlisensi Lisensi Contoh 1.0.
+4. Tulis nama berkas yang rapi untuk "Laporan Minggu 7 FINAL (2).docx" milik Murid-01.
+5. Apa beda perangkat lunak sistem dan perangkat lunak aplikasi? Pengolah dokumen termasuk yang mana?
+
 ## Memilih perangkat yang tepat
 
 | Kebutuhan | Perangkat | Contoh hasil |
@@ -65,7 +75,9 @@ Contoh data fiktif: nilai kuis lima murid samaran.
 | 5 | Murid-04 | 65 |
 | 6 | Murid-05 | 85 |
 
-Rumus dasar (nama fungsi bisa berbeda mengikuti bahasa perangkat lunak; yang berikut memakai nama bahasa Inggris, dan padanannya dalam bahasa Indonesia biasanya `JUMLAH`, `RATA2`, `MIN`, `MAKS`, `JIKA`):
+**Prediksi dulu.** Sebelum membaca hasil di bawah, hitung dengan tangan jumlah dan rata-rata nilai pada tabel, lalu tulis. Tebak juga: berapa murid yang berstatus "Tuntas" bila batasnya 75?
+
+Rumus dasar. Nama fungsi dan tanda pemisah argumen bisa berbeda antarperangkat lunak dan antarbahasa antarmuka; yang berikut memakai nama bahasa Inggris yang umum. Bila rumusmu tidak dikenali, cari nama fungsi yang setara di bantuan perangkat lunak yang kamu pakai.
 
 ```text
 =SUM(B2:B6)      jumlah               -> 395
@@ -73,9 +85,10 @@ Rumus dasar (nama fungsi bisa berbeda mengikuti bahasa perangkat lunak; yang ber
 =MIN(B2:B6)      nilai terkecil       -> 65
 =MAX(B2:B6)      nilai terbesar       -> 90
 =IF(B2>=75,"Tuntas","Remedial")       -> Tuntas (untuk Murid-01)
+=COUNTIF(B2:B6,">=75")                -> 4 (banyak sel yang memenuhi syarat)
 ```
 
-`B2:B6` artinya rentang dari sel `B2` sampai `B6`. Pemisah argumen bisa titik koma (`;`) atau koma (`,`) tergantung pengaturan bahasa. Rumus `IF` memeriksa kondisi, lalu memberi satu nilai bila benar dan nilai lain bila salah. Bila rumus `IF` di kolom C ditarik ke bawah, hasilnya untuk kelima murid adalah: Tuntas, Tuntas, Tuntas, Remedial, Tuntas.
+`B2:B6` artinya rentang dari sel `B2` sampai `B6`. Pemisah argumen bisa titik koma (`;`) atau koma (`,`) tergantung pengaturan bahasa. Rumus `IF` memeriksa kondisi, lalu memberi satu nilai bila benar dan nilai lain bila salah. Rumus `COUNTIF` menghitung berapa sel di rentang yang memenuhi syarat; syaratnya ditulis dalam tanda kutip. Bila rumus `IF` di kolom C ditarik ke bawah, hasilnya untuk kelima murid adalah: Tuntas, Tuntas, Tuntas, Remedial, Tuntas.
 
 Pemeriksaan hitungan: 80 + 75 + 90 + 65 + 85 = 395, dan 395 / 5 = 79.
 
@@ -88,7 +101,7 @@ Kebiasaan baik: simpan data mentah di satu tempat dan buat rumus merujuk ke sel,
 - **Satu gagasan per slide.** Bila perlu dua gagasan, buat dua slide.
 - **Sedikit teks.** Gunakan butir pendek, bukan kalimat panjang; slide bukan naskah.
 - **Huruf besar dan jelas** sehingga terbaca dari belakang ruangan.
-- **Kontras cukup** antara huruf dan latar (teks gelap pada latar terang atau sebaliknya). Hindari kombinasi yang sulit dibaca seperti kuning di atas putih. Pedoman aksesibilitas umum menyarankan rasio kontras minimal 4,5 banding 1 untuk teks biasa.
+- **Kontras cukup** antara huruf dan latar (teks gelap pada latar terang atau sebaliknya). Hindari kombinasi yang sulit dibaca seperti kuning di atas putih. Pedoman aksesibilitas web WCAG (kriteria 1.4.3) menyarankan rasio kontras minimal 4,5 banding 1 untuk teks biasa; angka itu patokan yang baik juga untuk slide.
 - **Gambar dan diagram membantu**, dengan atribusi bila bukan buatanmu.
 - **Jangan hanya mengandalkan warna** untuk menyampaikan makna; tambahkan label atau bentuk.
 - **Latihan** menyampaikan: bicaralah menjelaskan slide, bukan membacanya.
@@ -146,6 +159,34 @@ Sebuah slide fiktif berisi tiga paragraf panjang dengan huruf kecil dan teks abu
 
 Kamu perlu mengirim laporan akhir kepada guru yang hanya akan membacanya, dan lembar kerja kepada temanmu yang perlu menyuntingnya. Format apa yang kamu pilih untuk masing-masing?
 
+### Latihan 8: Susun langkah rekap nilai (soal Parsons)
+
+Langkah berikut tercampur. Susun menjadi urutan kerja yang masuk akal untuk rekap nilai sintetis.
+
+```text
+(a) buat grafik batang dari kolom nama samaran dan nilai
+(b) ketik judul kolom: Nama samaran, Nilai
+(c) tulis rumus jumlah, rata-rata, minimum, maksimum yang merujuk ke rentang sel
+(d) isi data Murid-01 sampai Murid-06
+(e) simpan sebagai lembar kerja dan, bila perlu, ekspor ke PDF
+```
+
+### Latihan 9: Lengkapi rumus (soal setengah jadi)
+
+Kolom C berisi status. Lengkapi rumus di C2 agar menampilkan "Tuntas" bila nilai minimal 75, selain itu "Remedial": `=IF(____, "Tuntas", ____)`. Setelah itu, rumus apa yang menghitung berapa murid berstatus "Remedial"?
+
+## Latihan bercampur dan ulang berjarak
+
+Kerjakan tanpa melihat catatan.
+
+1. Slide fiktif berisi atribusi gambar yang hilang dan teks abu-abu muda di latar putih. Tulis dua perbaikan, satu dari modul ini dan satu dari modul keamanan dasar.
+2. Nilai 60, 80, 100: tulis rumus rata-rata dan hasilnya. Mengapa lebih baik rumus merujuk ke sel daripada mengetik angkanya ulang?
+3. Nama berkas `Rekap Nilai Kelas!!.xlsx` perlu diperbaiki. Tulis nama yang sesuai aturan pada modul perangkat lunak.
+4. Murid fiktif memakai asisten AI untuk membuat rumus lembar kerja dan menyalinnya. Apa yang harus ia catat, dan apa yang harus ia periksa sebelum memakai rumus itu?
+5. Jelaskan dengan kata-katamu mengapa grafik batang dengan sumbu yang dipotong menyesatkan. (Penjelasan diri.)
+
+Jadwal ulang: jawab lagi tanpa catatan setelah satu hari dan setelah satu minggu. Modul ini penutup blok fondasi; pertanyaan seperti ini dapat dipakai guru sebagai pemanasan di awal minggu jalur.
+
 ## Kuis formatif
 
 1. Kapan memakai lembar kerja daripada pengolah dokumen?
@@ -179,6 +220,14 @@ Kamu perlu mengirim laporan akhir kepada guru yang hanya akan membacanya, dan le
 **Latihan 6.** Misalnya: ringkas menjadi butir pendek; satu gagasan per slide; perbesar huruf; naikkan kontras dengan teks gelap; tambahkan gambar atau diagram.
 
 **Latihan 7.** Laporan: PDF. Lembar kerja: format terbuka atau format umum yang didukung bersama (atau CSV bila hanya data tanpa rumus).
+
+**Latihan 8.** Urutan: (b), (d), (c), (a), (e). Bila urutanmu beda: rumus (c) butuh data yang sudah ada, jadi (d) sebelum (c); jalankan urutanmu dan lihat di mana rumus menghasilkan nol atau galat.
+
+**Latihan 9.** `=IF(B2>=75, "Tuntas", "Remedial")`. Banyak "Remedial": `=COUNTIF(C2:C7,"Remedial")` = 3 pada data kegiatan 2. Bila hasilmu 0, periksa apakah ejaan "Remedial" sama persis dengan isi sel.
+
+**Ingat kembali.** 1: 26^5 = 11.881.376; panjang mengalikan kemungkinan dengan 26 tiap huruf tambahan, sedangkan satu simbol hanya menambah sedikit. 2: hanya "Jelaskan apa itu DNS". 3: `Foto "Gedung Lab" oleh Pembuat-Fiktif, Lisensi Contoh 1.0.` 4: contoh `laporan-minggu-07_murid-01.docx`. 5: sistem mengelola komputer, aplikasi membantu pengguna; pengolah dokumen adalah aplikasi. Bila ada yang salah, baca ulang bagian itu di modul asalnya lalu jawab lagi besok.
+
+**Latihan bercampur.** 1: tambahkan atribusi dan naikkan kontras dengan teks gelap di latar putih. 2: `=AVERAGE(B2:B4)` = 80; agar hasil ikut berubah bila nilai diubah. 3: `rekap-nilai-kelas.xlsx` (atau ekstensi sesuai format yang dipakai). 4: catat alat, tujuan, bagian yang dipakai, dan cara memeriksa; periksa rumus pada data kecil yang hasilnya sudah kamu hitung dengan tangan. 5: panjang batang tidak lagi sebanding dengan nilai sehingga selisih tampak lebih besar daripada kenyataan.
 
 **Kuis.**
 

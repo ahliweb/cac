@@ -13,6 +13,16 @@ Setelah mempelajari modul ini, kamu diharapkan bisa:
 
 Cara memakai: kerjakan perhitungan dengan tangan di lembar kerja. Jangan hanya membaca. Kunci ada di akhir; semua angkanya sudah dihitung ulang.
 
+## Ingat kembali
+
+Jawab dari ingatan, tanpa membuka modul sebelumnya (FND-X1-M1 dan M2). Cocokkan di bagian kunci.
+
+1. Apa yang disimpan memori komputer Von Neumann, selain data?
+2. Sebutkan lima peran sistem operasi.
+3. Apa beda perangkat lunak sistem dan aplikasi? Beri satu contoh tiap jenis.
+4. Apa yang dimaksud atribusi, dan mengapa karya berlisensi perlu diberi atribusi?
+5. Mengapa sebuah berkas yang ekstensinya diganti dari `.txt` menjadi `.png` tidak berubah menjadi gambar?
+
 ## Bit dan byte
 
 Komputer dibangun dari komponen yang hanya punya dua keadaan, misalnya arus ada atau tidak ada. Dua keadaan itu ditulis 0 dan 1.
@@ -26,7 +36,7 @@ Komputer dibangun dari komponen yang hanya punya dua keadaan, misalnya arus ada 
 | 1 KB | 1024 byte |
 | 1 MB | 1024 KB |
 
-Catatan: sebagian produsen penyimpanan memakai 1 KB = 1000 byte. Itu sebabnya kapasitas yang tertulis di kemasan dan di komputer bisa sedikit berbeda.
+Catatan: sebagian produsen penyimpanan memakai 1 KB = 1000 byte. Itu sebabnya kapasitas yang tertulis di kemasan dan di komputer bisa sedikit berbeda. Untuk membedakannya, ada penulisan baku KiB (kibibyte, 1024 byte) dan MiB (mebibyte, 1024 KiB) untuk kelipatan 1024, sedangkan KB dan MB dalam arti SI berarti 1000. Di modul ini, 1 KB = 1024 byte dipakai agar cocok dengan modul sebelumnya; saat membaca angka kapasitas di dunia nyata, periksa pihak mana yang memakai arti yang mana.
 
 Dengan n bit, ada 2^n kemungkinan nilai, sehingga nilai terbesar tanpa tanda minus adalah 2^n - 1.
 
@@ -46,6 +56,8 @@ Bilangan desimal memakai sepuluh angka (0 sampai 9) dan nilai tempat kelipatan 1
 ```
 
 ### Biner ke desimal
+
+**Prediksi dulu.** Tanpa menghitung rinci, tebak: apakah `00110101` lebih besar atau lebih kecil dari 64, dan mengapa? Tulis tebakanmu, lalu periksa dengan contoh di bawah.
 
 Jumlahkan nilai tempat yang bernilai 1. Contoh: `00110101`.
 
@@ -102,7 +114,7 @@ Satu simbol heksadesimal mewakili tepat 4 bit. Jadi satu byte ditulis dengan dua
 
 Dari heksadesimal ke desimal: `CA` = 12 x 16 + 10 = 202. Kebalikannya: `3F` -> 0011 1111 = `00111111` = 63, dan `FF` = 15 x 16 + 15 = 255.
 
-Awalan `0x` atau `#` sering dipakai untuk menandai heksadesimal, misalnya `0xCA` atau `#CA`.
+Awalan `0x` sering dipakai untuk menandai heksadesimal pada pemrograman, misalnya `0xCA`. Awalan `#` dipakai pada kode warna, misalnya `#CA8040` (dibahas di bagian warna).
 
 ## Teks sebagai kode karakter
 
@@ -218,6 +230,32 @@ c. Berapa byte yang dibutuhkan gambar berwarna 10 x 10 piksel tanpa kompresi?
 
 Jumlahkan secara biner `1011` dan `0110`, lalu ubah hasilnya ke desimal. Cek dengan menjumlahkan versi desimalnya.
 
+### Latihan 9: Susun langkah (soal Parsons)
+
+Langkah mengubah desimal ke biner 8 bit dengan cara pengurangan berikut tercampur. Susun menjadi urutan yang benar.
+
+```text
+(a) ulangi untuk nilai tempat berikutnya sampai nilai tempat 1
+(b) tulis nilai tempat 128 64 32 16 8 4 2 1
+(c) bila nilai tempat muat, tulis bit 1 lalu kurangkan; bila tidak, tulis bit 0
+(d) cek: jumlahkan nilai tempat yang bit-nya 1
+(e) mulai dari nilai tempat terbesar
+```
+
+Lalu pakai urutan itu untuk mengubah 77 ke biner.
+
+## Latihan bercampur dan ulang berjarak
+
+Kerjakan tanpa melihat catatan.
+
+1. Ubah `01001101` ke desimal dan ke heksadesimal.
+2. Kata `SMA` disimpan sebagai berapa byte? Tulis dalam heksadesimal.
+3. Gambar hitam-putih 16 x 16 piksel butuh berapa byte tanpa kompresi? (Petunjuk: 1 bit per piksel.)
+4. Sebuah berkas bernama `foto.png` ditulis ulang oleh seorang murid fiktif sebagai `foto.txt` tanpa mengubah isinya. Apakah isinya jadi teks? Jelaskan dengan kata-katamu, mengaitkan modul sebelumnya tentang ekstensi berkas dan modul ini tentang bit. (Penjelasan diri.)
+5. Mengapa program kartu pada modul pertama bisa menyimpan angka di memori, padahal memori hanya menyimpan bit?
+
+Jadwal ulang: jawab lagi tanpa catatan setelah satu hari dan setelah satu minggu; ganti angka pada soal 1 dan 3.
+
 ## Kuis formatif
 
 1. Berapa bit dalam 1 byte?
@@ -250,6 +288,12 @@ Jumlahkan secara biner `1011` dan `0110`, lalu ubah hasilnya ke desimal. Cek den
 **Latihan 7.** a. `#FFFF00` (kuning). b. R = 70 (46 heksa), G = 130 (82 heksa), B = 180 (B4 heksa). c. 10 x 10 x 3 = 300 byte.
 
 **Latihan 8.** `1011` = 11 dan `0110` = 6; jumlahnya 17 = `10001`. Cek: 16 + 1 = 17.
+
+**Latihan 9.** Urutan: (b), (e), (c), (a), (d). Untuk 77: 77 - 64 = 13 (bit 64 = 1); 32 dan 16 tidak muat (0, 0); 13 - 8 = 5 (bit 8 = 1); 5 - 4 = 1 (bit 4 = 1); 2 tidak muat (0); 1 - 1 = 0 (bit 1 = 1). Hasil `01001101`. Cek: 64 + 8 + 4 + 1 = 77. Bila urutanmu beda: bagian "mulai dari terbesar" harus sebelum "muat atau tidak"; ulangi menyusun dengan menjalankan langkahmu pada 77 dan lihat di mana macet.
+
+**Ingat kembali.** 1: instruksi program. 2: mengelola proses, memori, berkas, perangkat, antarmuka. 3: sistem mengelola komputer (contoh sistem operasi), aplikasi membantu pengguna mengerjakan sesuatu (contoh peramban). 4: menyebut pembuat dan sumber; menghargai pembuat dan memenuhi syarat lisensi. 5: ekstensi hanya label; isi berkas tidak berubah. Bila ada yang salah, baca ulang bagian itu saja di modul asalnya lalu jawab lagi besok.
+
+**Latihan bercampur.** 1: `01001101` = 77 = `4D`. 2: 3 byte: `53 4D 41`. 3: 16 x 16 = 256 bit = 32 byte. 4: tidak; isinya tetap data gambar, hanya namanya yang berubah, sehingga pembuka teks menampilkan karakter acak; keduanya adalah deretan bit dan yang menentukan tafsirnya adalah format. 5: angka disandikan sebagai deret bit (biner), sama seperti teks dan gambar.
 
 **Kuis.** 1: 8. 2: 13 (8 + 4 + 1). 3: `00011001` (16 + 8 + 1). 4: 4 bit. 5: setiap karakter punya kode angka dalam tabel kode karakter. 6: 3 byte.
 

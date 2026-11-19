@@ -16,6 +16,16 @@ Setelah mempelajari modul ini, kamu diharapkan bisa:
 
 Bagian pokok dapat dikerjakan di kertas. Contoh kode opsional. Contoh C++17 hanya diperiksa bisa dikompilasi, contoh TypeScript diperiksa penyusun secara manual dengan menjalankannya; keduanya bukan bukti benar untuk semua masukan. Semua contoh teks, gambar, dan suara di modul ini fiktif atau dibuat untuk latihan.
 
+## Ingat kembali
+
+Jawab dari ingatan, tanpa membuka modul sebelumnya. Cocokkan di bagian kunci.
+
+1. Berapa kode ASCII huruf `K` bila `A` = 65? (modul representasi data)
+2. Satu piksel RGB 24 bit memakai berapa byte? Tulis kode heksadesimal warna kuning (R = 255, G = 255, B = 0).
+3. Ubah `A5` heksadesimal ke biner 8 bit. (modul basis)
+4. Pada 8 bit bertanda komplemen dua, nilai terkecil dan terbesar berapa? (modul bilangan bertanda)
+5. Mengapa `0.1 + 0.2 == 0.3` salah di komputer?
+
 ## Ulasan singkat
 
 Kamu sudah tahu bahwa teks disimpan sebagai kode angka per karakter, bahwa gambar adalah kisi piksel, dan bahwa warna memakai komponen merah, hijau, biru. Di sini kita memperdalamnya: aturan penyandian yang dipakai internet (UTF-8), ukuran berkas, kompresi, dan suara.
@@ -107,7 +117,7 @@ Warna RGB 24 bit sering ditulis sebagai `#RRGGBB` dalam heksadesimal; tiap pasan
 - `#808080`: abu-abu sedang (ketiganya 128).
 - `#000000` hitam, `#FFFFFF` putih.
 
-**Ukuran gambar mentah** = lebar x tinggi x byte per piksel. Foto 1920 x 1080 piksel pada 24 bit: 1920 x 1080 x 3 = 6.220.800 byte, sekitar 5,93 MiB (dibagi 1.048.576). Karena itulah gambar hampir selalu dikompresi.
+**Ukuran gambar mentah** = lebar x tinggi x byte per piksel. Foto 1920 x 1080 piksel pada 24 bit: 1920 x 1080 x 3 = 6.220.800 byte, sekitar 5,93 MiB (dibagi 1.048.576; MiB adalah kelipatan 1024 yang di modul fondasi sering disebut MB). Karena itulah gambar hampir selalu dikompresi.
 
 Hubungan dengan pemrograman: gambar adalah **array dua dimensi** (baris dan kolom) yang tiap selnya satu piksel.
 
@@ -118,6 +128,8 @@ Kompresi mengurangi ukuran dengan memakai pola. **Pengodean panjang-ulang** (run
 Contoh: `AAAABBBCCD` menjadi `4A3B2C1D` (10 karakter menjadi 8). Cocok untuk gambar dengan blok warna besar yang sama.
 
 Perhatikan bahwa RLE bisa **memperbesar** data yang jarang berulang: `ABCD` menjadi `1A1B1C1D` (4 menjadi 8). Tidak ada kompresi yang baik untuk semua data.
+
+Catatan: RLE versi sederhana ini hanya cocok untuk teks tanpa angka. Bila datanya berisi angka, `11A` bisa berarti "sebelas A" atau "1, lalu 1A"; format RLE nyata memakai aturan tambahan agar tidak rancu.
 
 Kompresi **tanpa kehilangan** bisa dibalik persis (RLE termasuk). Kompresi **dengan kehilangan** (seperti banyak format foto dan musik) membuang detail yang sulit dikenali manusia dan tidak bisa dikembalikan persis.
 
@@ -139,6 +151,8 @@ Contoh kuantisasi: gelombang bernilai 0,5 pada skala -1 sampai 1, dengan 3 bit (
 ### C++17: panjang karakter dan RLE (opsional)
 
 Program ini menghitung byte dan karakter UTF-8 pada teks yang ditulis dengan kode byte eksplisit, serta mengkodekan RLE.
+
+**Prediksi dulu.** Sebelum membaca komentar keluaran: `"caf\xC3\xA9"` adalah `café` ditulis dengan byte UTF-8 (`C3 A9` untuk `é`). Tebak dan tulis: berapa `kafe.size()`, dan berapa karakter yang dihitung `hitungKarakter`? Telusuri byte kelima (`A9` = `10101001`) untuk melihat mengapa ia tidak dihitung.
 
 ```cpp
 #include <iostream>
@@ -230,7 +244,7 @@ Tuliskan byte UTF-8 untuk `ñ` (U+00F1). Petunjuk: rentang 2 byte; 0xF1 = `11110
 
 ### Latihan 3: Karakter dan byte
 
-Hitung banyak karakter dan banyak byte UTF-8 untuk `aku ❤` (spasi dihitung; `❤` titik kode U+2764 berada di rentang 3 byte).
+Hitung banyak karakter dan banyak byte UTF-8 untuk `aku ❤` (spasi dihitung; `❤` titik kode U+2764 berada di rentang 3 byte). Catatan: banyak papan ketik menampilkan emoji hati sebagai `❤` ditambah penanda tampilan U+FE0F (tampil sebagai `❤️`), yang menambah satu titik kode dan tiga byte; soal ini memakai `❤` saja.
 
 ### Latihan 4: Ukuran gambar
 
@@ -248,6 +262,45 @@ Kodekan `WWWWWWBBWWW` dengan RLE. Lalu dekode `3x2y5z`. Beri satu contoh teks ya
 
 Rekaman mono, 16 bit, 22.050 Hz, 30 detik. Berapa byte mentahnya? Berapa banyak tingkat kuantisasi yang tersedia?
 
+### Latihan 8: Susun langkah UTF-8 (soal Parsons)
+
+Langkah menyandikan satu titik kode ke UTF-8 berikut tercampur. Susun, lalu terapkan untuk `ö` (U+00F6).
+
+```text
+(a) isi bit titik kode ke tempat `x` pada pola, dari kanan
+(b) tentukan rentang titik kode, sehingga tahu banyak byte dan polanya
+(c) ubah titik kode ke biner
+(d) tulis tiap byte dalam heksadesimal
+```
+
+### Latihan 9: Lengkapi kode (soal setengah jadi)
+
+Lengkapi pengodean RLE: baris yang hilang menaikkan penunjuk ke awal kelompok berikutnya.
+
+```text
+while (i < s.size()) {
+    size_t j = i;
+    while (j < s.size() && s[j] == s[i]) {
+        j++;
+    }
+    hasil += to_string(j - i);
+    hasil += s[i];
+    ____ = j;
+}
+```
+
+### Latihan bercampur dan ulang berjarak
+
+Kerjakan tanpa melihat catatan.
+
+1. Gambar 64 x 64 piksel, 8 bit per piksel, berapa byte mentahnya? Bila diubah ke 24 bit?
+2. Kodekan `AAABCCCCCD` dengan RLE. Apakah hasilnya lebih pendek?
+3. Rekaman mono 8 bit 4.000 Hz selama 5 detik: berapa byte mentahnya?
+4. Tulis `é` (U+00E9) sebagai dua byte UTF-8 tanpa melihat contoh. Lalu jelaskan dengan kata-katamu mengapa `length` JavaScript untuk `"😀"` adalah 2, bukan 1. (Penjelasan diri.)
+5. Warna `#00FF80`: berapa nilai R, G, B, dan berapa byte satu piksel berwarna itu?
+
+Jadwal ulang: jawab lagi tanpa catatan setelah satu hari dan setelah satu minggu; ganti angkanya. Modul berikutnya memakai bahan lain, jadi jadwal ulang inilah yang menjaga ingatanmu.
+
 ### Kunci singkat
 
 - Latihan 1: 'M' = 77; 'm' = 109; `'8' - '0'` = 8.
@@ -257,6 +310,10 @@ Rekaman mono, 16 bit, 22.050 Hz, 30 detik. Berapa byte mentahnya? Berapa banyak 
 - Latihan 5: `33` = 51, `66` = 102, `CC` = 204; 16.777.216 warna (2^24).
 - Latihan 6: `6W2B3W`; `3x2y5z` menjadi `xxxyyzzzzz`; contoh membesar: `ABCD` menjadi `1A1B1C1D`.
 - Latihan 7: 22.050 x 2 x 1 x 30 = 1.323.000 byte; 65.536 tingkat.
+- Latihan 8: urutan (c), (b), (a), (d). Untuk `ö`: 246 = `11110110`; rentang 2 byte; isi ke `00011 110110`; byte `11000011` (C3) dan `10110110` (B6); hasil `C3 B6`. Bila hasilmu beda, periksa apakah kamu menentukan rentang sebelum mengisi pola, dan apakah byte kedua diawali `10`.
+- Latihan 9: `i`. Tanpa baris itu perulangan luar tidak maju. Telusuri `"AAB"`: kelompok pertama j = 2 lalu i = 2.
+- Ingat kembali: 1: `K` = 75. 2: 3 byte; `#FFFF00`. 3: `10100101`. 4: -128 sampai 127. 5: 0,1 tidak punya bentuk biner berhingga sehingga tersimpan terbulatkan. Bila ada yang salah, baca ulang bagian itu di modul asalnya lalu jawab lagi besok.
+- Latihan bercampur: 1: 4.096 byte pada 8 bit; 12.288 byte pada 24 bit. 2: `3A1B5C1D` (8 karakter dari 10, lebih pendek). 3: 4.000 x 1 x 1 x 5 = 20.000 byte. 4: `é` = `C3 A9`; `length` JavaScript menghitung unit 16 bit, dan emoji di luar rentang 16 bit memakai dua unit. 5: R = 0, G = 255, B = 128; 3 byte.
 
 ## Kesalahan umum
 
