@@ -1,9 +1,10 @@
 # Riset AI dalam Rekayasa Perangkat Lunak: Vibe Coding, AI-native Engineer, dan Pengembangan Berkelanjutan
 
-- **Version:** v0.2.0
+- **Version:** v0.2.1
 - **Last updated:** 2026-11-19
 - **Status:** **DRAF** (riset; dokumen ini sendiri belum disetujui sebagai silabus atau korpus). Issue #139. Keputusan pemilik atas usulan U-01..U-17 dan pertanyaan Q1-Q7 dicatat pada 2026-11-19 (bagian 7.1 dan 8.1), dan usulannya sudah diterapkan di dokumen program masing-masing. Konten karangan menurut [ADR-0007](../architecture/adr/0007-authored-learning-content.md).
 - **Changelog:**
+  - v0.2.1 (2026-11-19): catatan status di bawah tabel bagian 6 (sinkron dokumen #124): baris SMA jalur A, B, C dan jalur D di tabel itu ditulis sebelum keputusan #139 diterapkan; isi riset, bukti, dan daftar pustaka tidak diubah.
   - v0.2.0 (2026-11-19): status penerapan tiap usulan U-01..U-17 (bagian 7.1) dan keputusan pemilik atas Q1-Q7 (bagian 8.1) dicatat sesuai keputusan pemilik pada issue #139; koreksi U-03 (minggu `A-XII2-M5..M8`, bukan minggu 6-8). Isi riset (bukti, kutipan, daftar pustaka) tidak diubah.
   - v0.1.0 (2026-11-19): draf awal. Metode dan skala bukti; istilah dan asal-usulnya (vibe coding, AI-native engineer, agentic coding, AI pair programming); bukti empiris produktivitas, mutu, keamanan, pemeliharaan, dan belajar pemula; praktik rekayasa perangkat lunak berkelanjutan dengan AI (termasuk energi dan tata kelola); kompetensi per jenjang; usulan pembaruan per program; pertanyaan terbuka; daftar pustaka dengan status verifikasi.
 
@@ -541,6 +542,8 @@ yang melebar (Prather; Lehmann).
 | **Dewasa PKJ** (pekerja) | AI sebagai alat produktivitas (`DW-PKJ-M6`: perintah jelas, draf rumus atau skrip, memeriksa dan menguji keluaran, mengenali halusinasi, menjaga data). | Setelah `DW-PKJ-M3` (Python untuk data lembar kerja) dan `M5` (otomasi laporan). | `DW-FND-M1` (keamanan, privasi, etika kerja dengan kode dan AI, 8 jam); data sintetis. | Portofolio dengan catatan perbandingan keluaran AI dengan hasil uji (sudah di `DW-PKJ-M6`). |
 | **Dewasa PRO** (profesional, alih karier) | Pengujian unit (`DW-PRO-M5`), tinjau kode dan uji integrasi (`DW-PRO-M10`), konfigurasi dan log (`DW-PRO-M11`), proyek akhir (`DW-PRO-M12`). | Diusulkan **setelah** `DW-PRO-M5`, supaya pemelajar sudah dapat menguji sebelum mengawasi keluaran AI. | Kebijakan tempat kerja; data sintetis; rahasia tidak ditempel. | Proyek dengan riwayat commit; uji kompetensi (opsi LSP, draf dewasa). |
 | **Dewasa BIS** (pebisnis, UMKM) | AI untuk usaha (`DW-BIS-M7`: draf teks promosi, ringkasan ulasan sintetis; verifikasi, hak cipta, privasi). | Sesuai draf (data sintetis, tidak ada data pelanggan). | Data pelanggan tidak diunggah; kredensial tidak ditempel. | Prototipe dengan data sintetis. |
+
+**Catatan status (v0.2.1, 2026-11-19).** Tabel di atas ditulis sebelum keputusan pemilik #139 diterapkan dan tidak diubah. Keadaan sekarang, menurut silabus `sma-coding` v1.4.0 (bagian 7.4 dan 9.4): baris "SMA jalur A, B, C" yang menyebut silabus belum mengatur pemakaian AI sudah digantikan, karena butir AI kini ada di `FND-X1-M6`, `C-XI2-M2`, `A-XII2-M5..M8`, `B-XI1-M5`, `B-XI1-M12`, dan `B-XII1-M10`; dan baris "SMA jalur D" yang menyebut layanan AI generatif hanya demonstrasi guru sudah digantikan oleh keputusan bahwa murid SMA di semua jalur boleh memakai AI dengan etika. Penerapan tiap usulan ada di bagian 7.1. Modul belajar yang menuliskan kebijakan ini kini ada sebagai draf di `content/` (belum ditinjau pemilik).
 
 **Asesmen tahan AI: dukungan bukti.** Finnie-Ansley dkk. (2022) menunjukkan
 bahwa asisten kode era 2021 mengungguli sebagian besar mahasiswa pada soal

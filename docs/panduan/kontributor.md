@@ -51,14 +51,15 @@ bun run check:fidelity
 | `bun run lint` | Aturan lint Biome. | Selalu. |
 | `bun run assist:check` | Urutan impor (tidak tercakup `lint`/`format:check`). | Selalu. |
 | `bun run typecheck` | `tsc --noEmit`. | Selalu. |
-| `bun test` | Seluruh tes (`1293 pass, 0 fail` saat panduan ini ditulis). | Selalu. |
+| `bun test` | Seluruh tes (`2129 pass, 0 fail` per 2026-11-19). | Selalu. |
 | `bun run test:coverage` | Tes dengan gerbang cakupan 85% baris/fungsi (`bunfig.toml`). | Selalu (CI menjalankannya). |
 | `bun run build` | Membangun `src/index.ts` ke `dist/`. | Selalu. |
 | `bun run validate` | Validasi corpus semua program. | Selalu. |
 | `bun run privacy-check` | Tidak ada kunci berbentuk data pribadi di `data/`. | Selalu. |
 | `bun run check:requirements` | Register kebutuhan dan matriks keterlacakan konsisten. | Bila `docs/requirements/` disentuh. |
 | `bun run check:checklist-fidelity` | Data §14.1/§14.2 sama persis dengan silabus sumber. | Bila data atau dokumen itu disentuh. |
-| `bun run check:module-code` | Semua blok C++ di modul bisa dikompilasi (`g++` wajib ada). | Bila modul di `content/` berubah. |
+| `bun run check:module-code` | Blok `cpp` dan `arduino` di modul lolos `g++ -fsyntax-only` (`arduino` terhadap `Arduino.h` tiruan) dan blok `python` lolos `ast.parse`; hanya sintaks dan tipe, bukan perilaku (`g++` dan `python3` wajib ada). | Bila modul di `content/` berubah. |
+| `bun run check:learner-assets` | SVG di `content/<program>/gambar/` dan tautan gambar di `content/<program>/lembar/` sah; judul `# ` ganda di `content/*/modules/*.md` atau `lembar/*.md` adalah galat. | Bila modul, lembar, atau gambar di `content/` berubah. |
 | `bun run check:fidelity` | Fidelity semua program yang punya modul fidelity (atau `--program <id>`), lewat tabel program (ADR-0008). | Bila `data/<program>/` atau dokumen sumbernya berubah. |
 | `bun run check:sma-fidelity` | `data/sma-coding/` sama sel demi sel dengan `silabus.md`. | Bila `data/sma-coding/` atau silabus itu berubah. |
 

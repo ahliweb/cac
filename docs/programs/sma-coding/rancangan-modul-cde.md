@@ -1,9 +1,12 @@
 # Rancangan Seri Modul Jalur C, D, dan E (sma-coding): 210 Modul, Satu per Minggu
 
-- **Version:** v0.1.0
+- **Version:** v0.1.1
 - **Last updated:** 2026-11-19
-- **Status:** DRAF. Rancangan seri menunggu persetujuan pemilik (issue #124). Belum ada modul jalur C, D, atau E di `content/`; hanya dua modul contoh pilot di `rancangan-modul-cde-contoh/` (bukan modul resmi, belum terindeks).
+- **Status:** Rancangan **DISETUJUI pemilik 2026-11-19** lewat dialog keputusan (opsi "Setujui, evaluasi guru paralel": templat dan semua rekomendasi disetujui; penulisan tidak dijeda, evaluasi guru nyata berjalan paralel dan temuannya diperbaiki lewat PR revisi). Persetujuan ini untuk rancangan, bukan modul. 210 modul jalur C (77), D (77), dan E (56) **sudah ditulis** per 2026-11-19 di `content/sma-coding/modules/` dan terindeks di `data/sma-coding/modules.json`; semuanya berstatus `draf`, belum ditinjau (issue #125). Dua modul pilot di `rancangan-modul-cde-contoh/` kini riwayat.
 - **Changeset:** `.changeset/rancangan-modul-cde.md` (patch): dokumen rancangan dan dua modul contoh; tidak mengubah `content/`, `data/`, `src/`, atau silabus.
+
+> **Catatan status (2026-11-19, sinkron dokumen #124).** Frasa "belum ada modul jalur C, D, atau E di `content/`" dan "belum terindeks" adalah riwayat: 210 modul `c-*` (77), `d-*` (77), dan `e-*` (56) ada di `content/sma-coding/modules/` dan di `data/sma-coding/modules.json` (total indeks 239 dengan 29 modul lintas jalur), semua `draf`. Modul nyata dari dua pilot: `c-x1-m8` dan `d-x1-m8` (`content/sma-coding/modules/c-x1-m8.md`, `d-x1-m8.md`). Aturan jalur D dan E `cpItems` kosong kini diperiksa otomatis oleh domain `src/domain/sma-modules.ts` (bukan hanya rancangan dan tinjauan); `bun run check:module-code` memeriksa blok `cpp`, `arduino` (dengan `Arduino.h` tiruan), dan `python` (sintaks); blok `ts` tetap tidak diperiksa otomatis. Butir yang perlu dicek peninjau: [`../catatan-tinjauan-modul.md`](../catatan-tinjauan-modul.md). Judul `#` dan bagian `## Rujukan` tidak lagi ada di tubuh modul (judul dan rujukan dirender dari indeks); judul ganda kini galat di `bun run check:learner-assets`.
+> Keputusan dan kontrak yang disetujui pemilik di dokumen ini tidak berubah; yang diperbarui hanya klausa status yang basi.
 
 > **Prasyarat issue #124:** "Rancangan seri per jalur (daftar modul, pemetaan
 > minggu, butir CP atau irisan pengayaan) disetujui pemilik sebelum modul
@@ -785,3 +788,4 @@ tidak punya irisan pengayaan), `weekCodes: ["D-X1-M8"]`, `gradeLevels: ["X"]`,
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
 | v0.1.0 | 2026-11-19 | Rancangan awal (issue #124): pemetaan 210 modul (jalur C 77, D 77, E 56) dengan jenis minggu, butir CP atau irisan pengayaan, dan prasyarat; templat modul berbasis bukti dengan varian proyek dan asesmen; aturan kode, keselamatan, AI, privasi, rujukan; 16 gelombang penulisan dengan gerbang mutu; empat pertanyaan keputusan; dua modul contoh pilot (`c-x1-m8`, `d-x1-m8`). Status DRAF. |
+| v0.1.1 | 2026-11-19 | Sinkron dokumen (#124): catatan status; 210 modul jalur C, D, E kini ada di `content/sma-coding/` dan terindeks; pilot menjadi riwayat. Isi rancangan tidak berubah. |

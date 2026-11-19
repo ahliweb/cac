@@ -30,7 +30,9 @@ Atau buka berkasnya langsung di GitHub:
 [`mentor-osn.md`](mentor-osn.md); sumber kebenarannya `data/osn/modules.json`.
 Per 2026-11-18 kesepuluh modul OSN sudah `disetujui`: `dasar-pemrograman`
 lebih dulu, sembilan lainnya menyusul pada hari yang sama. Langkah di bawah
-berlaku untuk setiap modul baru, termasuk modul program `sma-coding`.
+berlaku untuk setiap modul baru, termasuk 599 modul draf enam program coding
+(`sma-coding` 239 modul, `sd-coding` 168, `smp-coding` 84, `tk-coding` 48,
+`dewasa-coding` 36, `kuliah-coding` 24; per 2026-11-19 semuanya `draf`).
 
 ### 2. Daftar periksa review
 
@@ -53,10 +55,52 @@ bun run check:module-code
 
 ```text
 $ bun run scripts/check-module-code.ts
-check-module-code: OK -- 116 cpp, 0 arduino (mock Arduino.h) and 0 python block(s) in 39 module file(s) pass (g++ -std=c++17 -fsyntax-only; python3 ast.parse); 0 block(s) marked setengah-jadi skipped.
+check-module-code: OK -- 314 cpp, 53 arduino (mock Arduino.h) and 362 python block(s) in 609 module file(s) pass (g++ -std=c++17 -fsyntax-only; python3 ast.parse); 221 block(s) marked setengah-jadi skipped.
 ```
 
-Blok soal setengah jadi yang sengaja tidak lengkap diberi kata `setengah-jadi` setelah bahasa pada pagar pembuka (misalnya ```` ```cpp setengah-jadi ````); blok itu dilewati dan dihitung di keluaran. Untuk lembar anak bergambar, `bun run check:learner-assets` memeriksa berkas SVG di `content/<program>/gambar/` dan tautan gambar di `content/<program>/lembar/`.
+Blok soal setengah jadi yang sengaja tidak lengkap diberi kata `setengah-jadi` setelah bahasa pada pagar pembuka (misalnya ```` ```cpp setengah-jadi ````); blok itu dilewati dan dihitung di keluaran. Untuk lembar anak bergambar, `bun run check:learner-assets` memeriksa berkas SVG di `content/<program>/gambar/` dan tautan gambar di `content/<program>/lembar/`:
+
+```sh
+bun run check:learner-assets
+```
+
+```text
+$ bun run scripts/check-learner-assets.ts
+check-learner-assets: OK -- 216 SVG file(s), 216 image link(s) in 216 sheet(s); 0 warning(s).
+```
+
+### 3. Tambahan untuk modul draf program coding
+
+Ada 599 modul draf enam program coding per 2026-11-19 (`tk-coding` 48,
+`sd-coding` 168, `smp-coding` 84, `sma-coding` 239, `kuliah-coding` 24,
+`dewasa-coding` 36), semuanya `draf`. Selain tabel di atas, periksa butir
+berikut; butir khusus yang sudah diketahui perlu dicek per modul dikumpulkan di
+[`catatan-tinjauan-modul.md`](../programs/catatan-tinjauan-modul.md).
+
+| Aspek | Pertanyaan |
+| --- | --- |
+| Fakta bertanggal | Harga, kuota layanan, versi perangkat lunak, dan nama menu ditulis "per 2026-11" atau tanggal lain yang jelas? Cocokkan dengan halaman resmi pada hari Anda meninjau, karena fakta seperti ini cepat berubah. |
+| Regulasi | Setiap pasal, nomor peraturan, dan tahun cocok dengan sumber resmi (JDIH atau situs lembaga), bukan ringkasan pihak ketiga? Contoh: Pasal 30 UU ITE dicabut oleh UU 1/2023, yang berlaku 2 Januari 2026; modul tidak boleh memakainya sebagai hukum yang masih berlaku. |
+| Ingat kembali berjarak | Apakah ada bagian "Ingat kembali" yang meminta murid menulis dari ingatan, memuat pokok bahasan minggu-minggu sebelumnya, bukan hanya minggu lalu? |
+| Prediksi sebelum menjalankan | Apakah murid diminta memprediksi keluaran sebelum kode dijalankan atau jawaban dibuka? |
+| Contoh terselesaikan dan pemudarannya | Apakah ada contoh terselesaikan lebih dulu, lalu contoh setengah jadi (blok `setengah-jadi`) yang makin banyak ditinggalkan? |
+| Latihan bercampur | Apakah ada latihan yang mencampur topik dari modul sebelumnya, bukan hanya topik minggu ini? |
+| Kode dijalankan | Apakah Anda atau penulis benar-benar menjalankan contoh dan keluarannya sama dengan yang tertulis? `bun run check:module-code` hanya memeriksa sintaks dan tipe, bukan perilaku. |
+| Tanpa data pribadi | Tidak ada nama, sekolah, akun, atau data nyata, di modul maupun di lembar anak (TK dan SD). |
+| Kebijakan AI program | Apakah yang dikatakan modul tentang AI sesuai kebijakan program itu (TK dan SD tanpa alat AI generatif untuk murid; SMP demonstrasi guru tanpa akun murid; SMA bebas dengan etika; kuliah tiga tingkat; dewasa bagian 9.1 silabusnya)? |
+
+Cara membaca modul program lain (perintahnya sudah dijalankan):
+
+```sh
+osn render modul --program sd-coding --id sd1-1-m1
+osn render modul --program sd-coding --id sd1-1-m1 --lembar
+osn render modul --program sma-coding --id c-x1-m8
+```
+
+Isi modul tidak memuat judul `# ` atau bagian `## Rujukan` sendiri: judul dan
+rujukan dicetak dari indeks `data/<program>/modules.json`, dan
+`bun run check:learner-assets` menolak judul ganda.
+
 
 ## Mencatat keputusan
 
@@ -180,8 +224,8 @@ pekerjaan:
 gh issue list -R ahliweb/osn --state open
 ```
 
-Keluaran nyata perintah itu pada 2026-11-19 (kolom dipisah tab; label dan
-tanggal pembuatan dipotong di sini):
+Keluaran nyata perintah itu pada 2026-11-19, setelah semua modul masuk
+`main` (kolom dipisah tab; label dan tanggal pembuatan dipotong di sini):
 
 ```text
 157	OPEN	[F1/06] docs: finalisasi runbook rename dan kriteria penerimaan pascamigrasi
@@ -192,7 +236,6 @@ tanggal pembuatan dipotong di sini):
 152	OPEN	[F1/01] riset: audit seluruh consumer, integrasi, dan URL aktif repo OSN
 151	OPEN	Tinjau ulang riset AI dalam rekayasa perangkat lunak (Mei 2027)
 150	OPEN	[F1/00] epik: persiapkan migrasi identitas CaC ke ahliweb/cac
-139	OPEN	Riset AI dalam rekayasa perangkat lunak: vibe coding, AI-native engineer, pengembangan berkelanjutan
 125	OPEN	Tinjauan pemilik atas 29 modul draf sma-coding
 124	OPEN	Seri modul materi untuk jalur C, D, dan E
 ```
@@ -201,24 +244,29 @@ Cara membacanya, per issue:
 
 | Issue | Jenis | Yang menunggu Anda | Dokumen untuk dibaca |
 | --- | --- | --- | --- |
-| #125 | Tinjauan konten | Meninjau 29 modul draf `sma-coding` | bagian "Meninjau modul draf" di atas |
-| #124 | Pekerjaan lanjutan | Modul jalur C, D, E belum ada; belum menunggu keputusan Anda | [`sma-coding/README.md`](../programs/sma-coding/README.md) |
-| #139 | Riset dan keputusan | Keputusan kebijakan AI per program sudah Anda ambil dan diterapkan (OSN #159, SMP #160, SMA #161, kuliah #162, dewasa #163); issue masih terbuka (tinjau ulang terjadwal di #151) | [`riset/ai-rekayasa-perangkat-lunak.md`](../riset/ai-rekayasa-perangkat-lunak.md) |
+| #125 | Tinjauan konten | Meninjau modul draf: awalnya 29 modul `sma-coding` (judul issue belum diperbarui), kini 599 modul draf enam program coding | bagian "Meninjau modul draf" di atas dan [`catatan-tinjauan-modul.md`](../programs/catatan-tinjauan-modul.md) |
+| #124 | Pekerjaan lanjutan | Penulisan modul: seluruh modul enam program sudah masuk repositori sebagai draf; yang tersisa adalah sinkron dokumen dan tinjauan, belum menunggu keputusan Anda | [`programs/README.md`](../programs/README.md) |
 | #151 | Tinjau ulang terjadwal | Meninjau ulang riset AI pada Mei 2027; belum jatuh tempo | [`riset/ai-rekayasa-perangkat-lunak.md`](../riset/ai-rekayasa-perangkat-lunak.md) |
 | #150 sampai #157 | Persiapan migrasi identitas (epik dan turunannya) | Dikerjakan di jalur terpisah (PR draf #158); tidak dibahas panduan ini | lihat issue #150 |
 
 Issue #127 sampai #131 (draf lima program coding), #133 (riset ilmu
-kognitif) dan #140 (titik sambung audit dan fidelity) sudah selesai dan
-tertutup. Persetujuan silabus tidak otomatis menyiapkan materi: kelima
-program itu belum punya modul di `content/` dan belum didukung `plan` dan
-`render`.
+kognitif), #139 (riset AI; keputusan kebijakan AI per program sudah Anda ambil
+dan diterapkan: OSN #159, SMP #160, SMA #161, kuliah #162, dewasa #163; tinjau
+ulang terjadwal di #151) dan #140 (titik sambung audit dan fidelity) sudah
+selesai dan tertutup. Persetujuan silabus tidak otomatis menyetujui materi:
+modul kelima program itu sudah ada sebagai draf di `content/`, tetapi belum
+ditinjau, dan `plan` serta `render lembar-siswa` belum mendukungnya
+(`render modul` mendukung).
 
 Kandidat tinjauan Anda berikutnya:
 
-- 29 modul draf `sma-coding` di `content/sma-coding/modules/` (fondasi,
-  matematika komputasi, cloud, pendamping; baca dengan
+- 239 modul draf `sma-coding` di `content/sma-coding/modules/` (fondasi,
+  matematika komputasi, cloud, pendamping, dan jalur C, D, E; baca dengan
   `osn render modul --program sma-coding --id <id>`, daftar id di
   `data/sma-coding/modules.json`), issue #125.
+- Modul draf lima program coding lainnya (`tk-coding` 48, `sd-coding` 168,
+  `smp-coding` 84, `kuliah-coding` 24, `dewasa-coding` 36), dibaca dengan
+  `osn render modul --program <id> --id <id-modul>`; butir yang perlu dicek
+  dikumpulkan di [`catatan-tinjauan-modul.md`](../programs/catatan-tinjauan-modul.md).
 - Silabus v1.1 (#92), v1.2 (#68, #84, #88), dan v1.3 (#139) sudah Anda
-  setujui; yang belum ada adalah modul materi untuk jalur C, D, dan E (#124)
-  dan untuk lima program coding lainnya.
+  setujui. Jalur A dan B `sma-coding` belum punya modul materi mingguan.

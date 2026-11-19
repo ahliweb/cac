@@ -173,10 +173,17 @@ Their state today:
   `data/<program>/modules.json` (optional per programme, validated by
   `src/schema/module.ts` and `osn validate`), bodies under
   `content/<program>/modules/`, `osn render modul` with the `DRAF` banner,
-  and `bun run check:module-code` for the C++ examples. All ten OSN
-  modules exist (#55) and were approved by the programme owner on
-  2026-11-18; the 29 `sma-coding` modules are `draf` awaiting owner review
-  (#125). The other five programmes have no learner modules yet.
+  and `bun run check:module-code` for the C++, Arduino and Python examples
+  (syntax only for the last two). All ten OSN modules exist (#55) and were
+  approved by the programme owner on 2026-11-18. Each of the six coding
+  programmes has its own index schema and `modules.json`, and as of
+  2026-11-19 their 599 modules (`tk-coding` 48, `sd-coding` 168,
+  `smp-coding` 84, `sma-coding` 239, `kuliah-coding` 24, `dewasa-coding` 36)
+  are all `draf` awaiting owner review (#125); `tk-coding` and `sd-coding`
+  modules are teacher guides with a learner sheet and SVG illustrations in
+  `content/<program>/lembar/` and `gambar/`. A module body has no `# ` title
+  and no `## Rujukan` section (both come from the index), and
+  `bun run check:learner-assets` fails on a duplicate title.
 - **ADR-0008** — each programme gets its own schemas, audit and (when its
   source is tabular) fidelity module, wired through one programme table,
   `PROGRAM_MODULES` in `src/cli/program-registry.ts`, which `osn validate`

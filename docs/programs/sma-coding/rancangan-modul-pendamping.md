@@ -1,9 +1,12 @@
 # Rancangan Modul Pendamping Literasi Digital (SMA Coding)
 
-- **Version:** v0.4.0
+- **Version:** v0.4.1
 - **Last updated:** 2026-11-19
-- **Status:** Rancangan DISETUJUI pemilik 2026-11-19 beserta keenam rekomendasi (issue #69); tujuh modul draf `pendamping-*` ada di repositori sejak 2026-11-19 (PR #118) dan dua modul tambahan untuk #105 menyusul, semuanya terindeks di `data/sma-coding/modules.json`, berstatus draf sampai ditinjau pemilik; modul yang kelak ditulis berstatus draf sampai ditinjau pemilik
+- **Status:** Rancangan DISETUJUI pemilik 2026-11-19 beserta keenam rekomendasi (issue #69); sembilan modul draf `pendamping-*` (tujuh sejak PR #118, dua untuk #105) ada di `content/sma-coding/modules/` dan terindeks di `data/sma-coding/modules.json`, berstatus draf sampai ditinjau pemilik
 - **Changeset:** Status: dua modul pendamping tambahan untuk F-LD-d dan F-LD-e (#105) masuk repositori dan terindeks; total sembilan modul `pendamping-*`.
+
+> **Catatan status (2026-11-19, sinkron dokumen #124).** Kalimat "modulnya belum ditulis ke repositori" di blok kutipan bawah adalah riwayat saat persetujuan: sembilan modul `pendamping-*` kini ada di `content/sma-coding/modules/` dan di `data/sma-coding/modules.json` (skema `src/schema/sma-module.ts`), semua `draf`, belum ditinjau. Analisis bagian 7 ("kebutuhan skema indeks") adalah riwayat: skema indeks sma-coding sudah ada dan `data/sma-coding/modules.json` berisi 239 entri.
+> Keputusan dan kontrak yang disetujui pemilik di dokumen ini tidak berubah; yang diperbarui hanya klausa status yang basi.
 
 > **Rancangan disetujui pemilik pada 2026-11-19** (dialog pilihan, dicatat
 > di komentar issue #69) beserta **keenam rekomendasi** di bagian 8. Yang
@@ -325,6 +328,7 @@ dicatat sebagai issue terpisah (#105). Modul ditulis berstatus `draf`.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v0.4.1 | 2026-11-19 | Sinkron dokumen (#124): catatan status; klausa "modulnya belum ditulis" dan analisis skema ditandai riwayat. Isi rancangan tidak berubah. |
 | v0.4.0 | 2026-11-19 | Dua modul tambahan lintas jalur untuk celah F-LD-d dan F-LD-e (keputusan pemilik di issue #105): bagian 3.3 baru, pemetaan bagian 5 diperbarui; modul draf `pendamping-merancang-kebutuhan-sistem` dan `pendamping-keamanan-lanjut-konektivitas` terindeks. |
 | v0.3.0 | 2026-11-19 | Status: tujuh modul draf `pendamping-*` masuk repositori dan terindeks (PR #118). |
 | v0.2.0 | 2026-11-19 | Rancangan disetujui pemilik beserta keenam rekomendasi (issue #69); status, kotak catatan, dan pertanyaan terbuka diperbarui; rujukan silabus ke v1.1; celah F-LD-d dan F-LD-e jalur A dicatat sebagai #105; contoh kode minggu `A-X1-M3` menjadi `A-X1-M9` (padanan v1.0 ke v1.1). |

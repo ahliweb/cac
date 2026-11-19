@@ -1,9 +1,12 @@
 # Rancangan Seri Modul Matematika Komputasi Dasar (sma-coding)
 
-- **Version:** v0.3.0
+- **Version:** v0.3.1
 - **Last updated:** 2026-11-19
-- **Status:** Rancangan DISETUJUI pemilik 2026-11-19 beserta keenam rekomendasi (issue #87); tujuh modul draf `matkom-*` ada di repositori sejak 2026-11-19 (PR #116), terindeks di `data/sma-coding/modules.json`, berstatus draf sampai ditinjau pemilik; modul yang kelak ditulis berstatus draf sampai ditinjau pemilik
+- **Status:** Rancangan DISETUJUI pemilik 2026-11-19 beserta keenam rekomendasi (issue #87); tujuh modul draf `matkom-*` ada di `content/sma-coding/modules/` (PR #116) dan terindeks di `data/sma-coding/modules.json`, berstatus draf sampai ditinjau pemilik
 - **Changeset:** Status: tujuh modul draf `matkom-*` masuk repositori dan terindeks (PR #116).
+
+> **Catatan status (2026-11-19, sinkron dokumen #124).** Kalimat "modulnya belum ditulis ke repositori" di blok kutipan bawah, "`data/sma-coding/modules.json` belum ada" (bagian 6), dan urutan pengerjaan bagian 8 yang menyebut skema dan indeks belum selesai adalah riwayat saat persetujuan: tujuh modul `matkom-*` kini ada di `content/sma-coding/modules/` dan di `data/sma-coding/modules.json` (skema `src/schema/sma-module.ts`, #106), semua `draf`, belum ditinjau.
+> Keputusan dan kontrak yang disetujui pemilik di dokumen ini tidak berubah; yang diperbarui hanya klausa status yang basi.
 
 > **Rancangan disetujui pemilik pada 2026-11-19** (dialog pilihan, dicatat
 > di komentar issue #87) beserta **keenam rekomendasi** di bagian 7. Yang
@@ -406,6 +409,7 @@ mencatat persetujuan itu.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v0.3.1 | 2026-11-19 | Sinkron dokumen (#124): catatan status; klausa "belum ditulis", "indeks belum ada" dan langkah skema ditandai riwayat. Isi rancangan tidak berubah. |
 | v0.3.0 | 2026-11-19 | Status: tujuh modul draf `matkom-*` masuk repositori dan terindeks (PR #116). |
 | v0.2.0 | 2026-11-19 | Rancangan disetujui pemilik beserta keenam rekomendasi (issue #87); status, kotak catatan, dan pertanyaan terbuka diperbarui; kode minggu kelas X dipetakan dari v1.0 ke v1.1 (tabel padanan silabus bagian 3.0): `A-X1-M3`→`A-X1-M9`, `A-X2-M2`→`A-X2-M4`, `A-X1-M11`/`M12`→`A-X2-M2`/`M3`, `A-X1-M5`+`M8`→`A-X1-M10`, `A-X1-M9`→`A-X1-M12`, `A-X2-M10`→`A-X2-M11`, `A-X2-M7`→`A-X2-M8`, `A-X2-M11`→`A-X2-M12`, `B-X1-M3`→`B-X1-M9`, `B-X1-M5`+`M8`→`B-X1-M10`, `B-X1-M9`→`B-X1-M12`, `B-X1-M11`→`B-X2-M2`, `B-X2-M2`→`B-X2-M5`; kode kelas XI dan XII tidak berubah; urutan pengerjaan diselaraskan dengan #106. |
 | v0.1.0 | 2026-11-18 | Rancangan awal (issue #87, tahap 1): tujuan, tujuh modul dengan pemetaan minggu v1.0 dan butir CP, batas dengan fondasi dan modul OSN, bentuk modul, kebutuhan skema (dua opsi, rekomendasi), urutan pengerjaan, enam pertanyaan terbuka. Status DRAF. |
