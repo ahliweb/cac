@@ -923,6 +923,172 @@
         }
       ],
       "contentPath": "content/smp-coding/modules/smp8-1-m14.md"
+    },
+    {
+      "id": "smp8-2-m1",
+      "title": "Dari blok ke teks: apa yang sama, apa yang beda",
+      "weekCodes": ["SMP8-2-M1"],
+      "cpCodes": ["D-BK-e"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["SMP8-1-M1", "SMP8-1-M9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3: Tutorial, 4. More Control Flow Tools (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-2-m1.md"
+    },
+    {
+      "id": "smp8-2-m2",
+      "title": "Keluaran, masukan, variabel",
+      "weekCodes": ["SMP8-2-M2"],
+      "cpCodes": [],
+      "gradeLevels": ["8"],
+      "prerequisites": ["SMP8-2-M1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3: Built-in Functions, termasuk print dan input (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/library/functions.html"
+        },
+        {
+          "title": "Python 3: Tutorial, 3. An Informal Introduction to Python (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/introduction.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-2-m2.md"
+    },
+    {
+      "id": "smp8-2-m3",
+      "title": "Ekspresi dan tipe data",
+      "weekCodes": ["SMP8-2-M3"],
+      "cpCodes": [],
+      "gradeLevels": ["8"],
+      "prerequisites": ["SMP8-2-M2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3: Tutorial, 3. An Informal Introduction to Python (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/introduction.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-2-m3.md"
+    },
+    {
+      "id": "smp8-2-m4",
+      "title": "Percabangan if",
+      "weekCodes": ["SMP8-2-M4"],
+      "cpCodes": [],
+      "gradeLevels": ["8"],
+      "prerequisites": ["SMP8-2-M3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3: Tutorial, 4. More Control Flow Tools (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-2-m4.md"
+    },
+    {
+      "id": "smp8-2-m5",
+      "title": "Perulangan for dan while",
+      "weekCodes": ["SMP8-2-M5"],
+      "cpCodes": [],
+      "gradeLevels": ["8"],
+      "prerequisites": ["SMP8-2-M4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3: Tutorial, 4. More Control Flow Tools (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-2-m5.md"
+    },
+    {
+      "id": "smp8-2-m6",
+      "title": "Menerjemahkan program Scratch ke Python",
+      "weekCodes": ["SMP8-2-M6"],
+      "cpCodes": ["D-BK-e"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["SMP8-2-M5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3: Tutorial, 4. More Control Flow Tools (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-2-m6.md"
+    },
+    {
+      "id": "smp8-2-m7",
+      "title": "Menggambar dengan perulangan (grafik kura-kura)",
+      "weekCodes": ["SMP8-2-M7"],
+      "cpCodes": ["D-BK-e", "DK-BK-c"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["SMP8-2-M5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3: turtle, Turtle graphics (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/library/turtle.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-2-m7.md"
     }
   ]
 }
