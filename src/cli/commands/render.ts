@@ -12,13 +12,12 @@
 import { resolve } from "node:path";
 import { renderCheckpointSheet } from "../../render/checkpoint";
 import { RenderRequestError } from "../../render/errors";
-import { renderModule, renderModuleLearnerSheet } from "../../render/module";
 import { renderSopCard } from "../../render/sop";
 import { renderStudentSheet } from "../../render/student-sheet";
 import { renderWeeklyPlan } from "../../render/weekly";
 import { SMA_CODING_PROGRAM_ID } from "../../schema/sma-common";
 import type { Command } from "../command";
-import { EXIT_SUCCESS, EXIT_USAGE_ERROR, EXIT_VALIDATION_FAILURE } from "../command";
+import { EXIT_SUCCESS, EXIT_USAGE_ERROR } from "../command";
 import { loadModule } from "../module-content";
 import { writeOutputFile } from "../output-writer";
 import {
@@ -27,6 +26,7 @@ import {
   rejectNonOsnProgram,
   resolveProgramOption,
 } from "../program-loader";
+import { buildModuleOutput } from "../render-module-output";
 import { buildSmaLembarSiswa } from "../sma-commands";
 
 const SUBCOMMANDS = ["weekly", "checkpoint", "sop", "lembar-siswa", "modul"] as const;
@@ -240,24 +240,16 @@ export const renderCommand: Command = {
         ctx.stderr(`osn render modul: ${loaded.message}\n`);
         return EXIT_USAGE_ERROR;
       }
-      const programInfo = { id: resolved.program.id, name: resolved.program.name };
-      if (lembar) {
-        if (loaded.learnerSheet === undefined) {
-          ctx.stderr(`osn render modul: module "${id}" has no learner sheet.\n`);
-          return EXIT_USAGE_ERROR;
-        }
-        try {
-          content = renderModuleLearnerSheet(loaded.module, loaded.learnerSheet.body, programInfo);
-        } catch (cause) {
-          if (cause instanceof RenderRequestError) {
-            ctx.stderr(`osn render modul: ${cause.message}\n`);
-            return EXIT_VALIDATION_FAILURE;
-          }
-          throw cause;
-        }
-      } else {
-        content = renderModule(loaded.module, loaded.body, loaded.references, programInfo);
+      const output = buildModuleOutput(
+        loaded,
+        lembar,
+        { id: resolved.program.id, name: resolved.program.name },
+        ctx,
+      );
+      if (!output.ok) {
+        return output.exitCode;
       }
+      content = output.content;
     } else {
       content = renderSopCard();
     }
