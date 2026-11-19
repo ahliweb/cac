@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 200" width="540" height="200" role="img" aria-labelledby="t d">
+  <title id="t">Alur demonstrasi mesin kartu</title>
+  <desc id="d">Empat kotak bersambung panah dari kiri ke kanan: LATIH dengan kartu contoh berlabel, UJI dengan kartu yang belum pernah dilihat, UBAH SATU KARTU lalu uji ulang, dan BATAS DAN ATURAN yang dibacakan penyaji.</desc>
+  <rect width="540" height="200" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a5d9f"/>
+    </marker>
+  </defs>
+  <g font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">
+    <rect x="10" y="40" width="108" height="100" rx="8" fill="#e8f0fb" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="64" y="80">LATIH</text>
+    <rect x="148" y="40" width="108" height="100" rx="8" fill="#e8f0fb" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="202" y="80">UJI</text>
+    <rect x="286" y="40" width="108" height="100" rx="8" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+    <text x="340" y="74">UBAH</text>
+    <text x="340" y="94">SATU KARTU</text>
+    <rect x="424" y="40" width="108" height="100" rx="8" fill="#e6f4ea" stroke="#2e7d32" stroke-width="2"/>
+    <text x="478" y="74">BATAS DAN</text>
+    <text x="478" y="94">ATURAN</text>
+  </g>
+  <g font-family="sans-serif" font-size="11" fill="#222222" text-anchor="middle">
+    <text x="64" y="112">kartu contoh</text>
+    <text x="64" y="127">berlabel</text>
+    <text x="202" y="112">kartu yang belum</text>
+    <text x="202" y="127">pernah dilihat</text>
+    <text x="340" y="115">lalu uji ulang</text>
+    <text x="478" y="115">dibacakan penyaji</text>
+  </g>
+  <g stroke="#2a5d9f" stroke-width="3" fill="none" marker-end="url(#a)">
+    <path d="M120,90 L144,90"/>
+    <path d="M258,90 L282,90"/>
+    <path d="M396,90 L420,90"/>
+  </g>
+</svg>
