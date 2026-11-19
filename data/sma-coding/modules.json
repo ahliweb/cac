@@ -3859,6 +3859,10 @@
         {
           "title": "IBM Quantum Learning: Quantum information (multiple systems)",
           "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/multiple-systems/quantum-information"
+        },
+        {
+          "title": "cppreference: Pseudo-random number generation",
+          "url": "https://en.cppreference.com/w/cpp/numeric/random"
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi2-m8.md"
@@ -3876,16 +3880,16 @@
       "status": "draf",
       "references": [
         {
-          "title": "Wikipedia: BB84",
-          "url": "https://en.wikipedia.org/wiki/BB84"
+          "title": "Bennett dan Brassard: Quantum cryptography: Public key distribution and coin tossing (arXiv:2003.06557)",
+          "url": "https://arxiv.org/abs/2003.06557"
         },
         {
           "title": "NCSC: Quantum security technologies",
           "url": "https://www.ncsc.gov.uk/whitepaper/quantum-key-distribution"
         },
         {
-          "title": "Python: modul random",
-          "url": "https://docs.python.org/3/library/random.html"
+          "title": "cppreference: Pseudo-random number generation",
+          "url": "https://en.cppreference.com/w/cpp/numeric/random"
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi2-m9.md"
@@ -3928,6 +3932,14 @@
         {
           "title": "IBM Quantum Learning: Deutsch's algorithm",
           "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/quantum-query-algorithms/deutsch-algorithm"
+        },
+        {
+          "title": "TypeScript: Everyday Types",
+          "url": "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html"
+        },
+        {
+          "title": "Bun: dokumentasi",
+          "url": "https://bun.sh/docs"
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi2-m11.md"
@@ -3947,6 +3959,14 @@
         {
           "title": "IBM Quantum Learning: Deutsch-Jozsa algorithm",
           "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/quantum-query-algorithms/deutsch-jozsa-algorithm"
+        },
+        {
+          "title": "TypeScript: Everyday Types",
+          "url": "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html"
+        },
+        {
+          "title": "Bun: dokumentasi",
+          "url": "https://bun.sh/docs"
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi2-m12.md"
@@ -3974,6 +3994,10 @@
         {
           "title": "IBM Quantum Learning: Quantum information (multiple systems)",
           "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/multiple-systems/quantum-information"
+        },
+        {
+          "title": "cppreference: Pseudo-random number generation",
+          "url": "https://en.cppreference.com/w/cpp/numeric/random"
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi2-m13.md"

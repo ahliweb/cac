@@ -1,6 +1,6 @@
 ## Untuk siapa modul ini
 
-Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M11` silabus v1.4: algoritma Deutsch, yaitu menjelaskan dan menyimulasikan Deutsch satu qubit. Prasyarat: modul `e-xi2-m10` (oracle dan fungsi Boolean). Alat: kertas, kalkulator, dan Python 3 murni opsional (tanpa akun); hitungan tangan lebih dulu.
+Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M11` silabus v1.4: algoritma Deutsch, yaitu menjelaskan dan menyimulasikan Deutsch satu qubit. Prasyarat: modul `e-xi2-m10` (oracle dan fungsi Boolean). Alat: kertas, kalkulator, dan simulatormu dari `e-xi2-m4` (C++17 atau TypeScript dengan Bun; tanpa akun); hitungan tangan lebih dulu.
 
 Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur E adalah pengayaan di luar rumusan CP; minggu ini tanpa irisan pengayaan, jadi modul ini tidak dihitung memenuhi butir CP mana pun.
 
@@ -38,80 +38,90 @@ Tebak dan tulis: (1) bila `f` konstan, apa hasil membaca qubit query pada akhir 
 
 **Mengapa berhasil.** Setelah H, qubit bantu berada pada `|-> = (h, -h)`. Gerbang X membalik tanda `|->`, jadi oracle pada `|x>|->` memberi `(-1)^f(x) |x>|->`: hasil `f(x)` pindah menjadi tanda pada qubit query, sedangkan qubit bantu tetap `|->` (*phase kickback*). Qubit query menjadi `((-1)^f(0) |0> + (-1)^f(1) |1>)` dibagi akar2. Bila `f(0) = f(1)`, tandanya sama, yaitu `|+>` sampai tanda global, dan H mengubahnya menjadi `|0>`. Bila berbeda, yaitu `|->`, H mengubahnya menjadi `|1>`. Itu interferensi seperti `e-xi1-m9`: tanda tidak mengubah peluang pembacaan langsung, tetapi mengubah hasil setelah H. Yang kamu peroleh hanya `f(0) XOR f(1)`, bukan `f(0)` dan `f(1)` sendiri; tanda global `(-1)^f(0)` tidak teramati (`e-xi2-m5`).
 
-```python
-from math import sqrt
+```cpp
+#include <cmath>
+#include <cstdio>
+#include <vector>
 
-h = 1 / sqrt(2)
-H = [[h, h], [h, -h]]
+using Vektor = std::vector<double>;
+using Matriks = std::vector<Vektor>;
 
+const double H1 = 1.0 / std::sqrt(2.0);
+const Matriks H = {{H1, H1}, {H1, -H1}};
 
-def tulis(v):
-    return "(" + "; ".join(f"{x:.4f}" for x in v) + ")"
+void tulis(const char* label, const Vektor& v) {
+    std::printf("%s(", label);
+    for (size_t i = 0; i < v.size(); i++)
+        std::printf("%s%.4f", i ? "; " : "", v[i] + 0.0);  // + 0.0 menghindari "-0.0000"
+    std::printf(")\n");
+}
 
+// Gerbang 2 x 2 pada qubit pertama (qubit query) dari vektor (00, 01, 10, 11).
+Vektor gerbang_pertama(const Vektor& v, const Matriks& g) {
+    Vektor hasil(4, 0.0);
+    for (int y = 0; y < 2; y++) {
+        double a = v[y], b = v[2 + y];
+        hasil[y] = g[0][0] * a + g[0][1] * b;
+        hasil[2 + y] = g[1][0] * a + g[1][1] * b;
+    }
+    return hasil;
+}
 
-def gerbang_pertama(v, g):
-    """Gerbang 2 x 2 pada qubit pertama (qubit query) dari vektor (00, 01, 10, 11)."""
-    hasil = [0.0] * 4
-    for y in (0, 1):
-        a, b = v[y], v[2 + y]
-        hasil[y] = g[0][0] * a + g[0][1] * b
-        hasil[2 + y] = g[1][0] * a + g[1][1] * b
-    return hasil
+Vektor gerbang_kedua(const Vektor& v, const Matriks& g) {
+    Vektor hasil(4, 0.0);
+    for (int x = 0; x < 2; x++) {
+        double a = v[2 * x], b = v[2 * x + 1];
+        hasil[2 * x] = g[0][0] * a + g[0][1] * b;
+        hasil[2 * x + 1] = g[1][0] * a + g[1][1] * b;
+    }
+    return hasil;
+}
 
+// Oracle U_f: |x, y> menjadi |x, y XOR f(x)>. Menghitung berapa kali dipasang pada sirkuit.
+struct Oracle {
+    int f[2];
+    int dipasang = 0;
 
-def gerbang_kedua(v, g):
-    hasil = [0.0] * 4
-    for x in (0, 1):
-        a, b = v[2 * x], v[2 * x + 1]
-        hasil[2 * x] = g[0][0] * a + g[0][1] * b
-        hasil[2 * x + 1] = g[1][0] * a + g[1][1] * b
-    return hasil
+    Vektor pasang(const Vektor& v) {
+        dipasang += 1;
+        Vektor hasil(4, 0.0);
+        for (int x = 0; x < 2; x++)
+            for (int y = 0; y < 2; y++) hasil[2 * x + (y ^ f[x])] = v[2 * x + y];
+        return hasil;
+    }
+};
 
+// Kembalikan peluang qubit query terbaca 1.
+double deutsch(Oracle& oracle, bool tampil) {
+    Vektor v = {0.0, 1.0, 0.0, 0.0};  // |0>|1>: qubit query 0, qubit bantu 1
+    v = gerbang_pertama(v, H);
+    v = gerbang_kedua(v, H);
+    if (tampil) tulis("  setelah H, H     : ", v);
+    v = oracle.pasang(v);
+    if (tampil) tulis("  setelah oracle   : ", v);
+    v = gerbang_pertama(v, H);
+    if (tampil) tulis("  setelah H query  : ", v);
+    return v[2] * v[2] + v[3] * v[3];
+}
 
-class Oracle:
-    """Oracle U_f: |x, y> menjadi |x, y XOR f(x)>. Menghitung berapa kali dipasang pada sirkuit."""
-
-    def __init__(self, f0, f1):
-        self.f = (f0, f1)
-        self.dipasang = 0
-
-    def pasang(self, v):
-        self.dipasang += 1
-        hasil = [0.0] * 4
-        for x in (0, 1):
-            for y in (0, 1):
-                hasil[2 * x + (y ^ self.f[x])] = v[2 * x + y]
-        return hasil
-
-
-def deutsch(oracle, tampil=False):
-    v = [0.0, 1.0, 0.0, 0.0]                  # |0>|1>: qubit query 0, qubit bantu 1
-    v = gerbang_pertama(v, H)
-    v = gerbang_kedua(v, H)
-    if tampil:
-        print("  setelah H, H     :", tulis(v))
-    v = oracle.pasang(v)
-    if tampil:
-        print("  setelah oracle   :", tulis(v))
-    v = gerbang_pertama(v, H)
-    if tampil:
-        print("  setelah H query  :", tulis(v))
-    return v[2] ** 2 + v[3] ** 2              # peluang qubit query terbaca 1
-
-
-print("jejak untuk f(0)=0, f(1)=1 (seimbang):")
-deutsch(Oracle(0, 1), tampil=True)
-print("semua empat fungsi:")
-for f0 in (0, 1):
-    for f1 in (0, 1):
-        o = Oracle(f0, f1)
-        p1 = deutsch(o)
-        kelas = "konstan" if f0 == f1 else "seimbang"
-        print(f"  f(0)={f0} f(1)={f1} ({kelas}): P(query terbaca 1) = {p1:.4f}, "
-              f"oracle dipasang {o.dipasang} kali")
+int main() {
+    std::printf("jejak untuk f(0)=0, f(1)=1 (seimbang):\n");
+    Oracle jejak{{0, 1}};
+    deutsch(jejak, true);
+    std::printf("semua empat fungsi:\n");
+    for (int f0 = 0; f0 < 2; f0++) {
+        for (int f1 = 0; f1 < 2; f1++) {
+            Oracle o{{f0, f1}};
+            double p1 = deutsch(o, false);
+            std::printf("  f(0)=%d f(1)=%d (%s): P(query terbaca 1) = %.4f, oracle dipasang %d kali\n",
+                        f0, f1, f0 == f1 ? "konstan" : "seimbang", p1, o.dipasang);
+        }
+    }
+    return 0;
+}
 ```
 
-Keluaran asli (dijalankan penyusun dengan `python3 -I`, Python 3.12):
+Keluaran asli (dikompilasi penyusun dengan `g++ -std=c++17 -Wall -Wextra`, lalu dijalankan):
 
 ```text
 jejak untuk f(0)=0, f(1)=1 (seimbang):
@@ -125,6 +135,85 @@ semua empat fungsi:
   f(0)=1 f(1)=1 (konstan): P(query terbaca 1) = 0.0000, oracle dipasang 1 kali
 ```
 
+**TypeScript dengan Bun (jalur B).** Padanan program di atas; keluarannya sama persis dengan versi C++ (dijalankan penyusun dengan `bun`, dibandingkan baris demi baris dengan `diff`).
+
+```ts
+type Vektor = number[];
+type Matriks = number[][];
+
+const H1 = 1 / Math.sqrt(2);
+const H: Matriks = [[H1, H1], [H1, -H1]];
+
+function tulis(label: string, v: Vektor): void {
+  // + 0 menghindari "-0.0000", sama dengan versi C++
+  console.log(`${label}(${v.map((x) => (x + 0).toFixed(4)).join("; ")})`);
+}
+
+// Gerbang 2 x 2 pada qubit pertama (qubit query) dari vektor (00, 01, 10, 11).
+function gerbangPertama(v: Vektor, g: Matriks): Vektor {
+  const hasil: Vektor = [0, 0, 0, 0];
+  for (let y = 0; y < 2; y++) {
+    const a = v[y];
+    const b = v[2 + y];
+    hasil[y] = g[0][0] * a + g[0][1] * b;
+    hasil[2 + y] = g[1][0] * a + g[1][1] * b;
+  }
+  return hasil;
+}
+
+function gerbangKedua(v: Vektor, g: Matriks): Vektor {
+  const hasil: Vektor = [0, 0, 0, 0];
+  for (let x = 0; x < 2; x++) {
+    const a = v[2 * x];
+    const b = v[2 * x + 1];
+    hasil[2 * x] = g[0][0] * a + g[0][1] * b;
+    hasil[2 * x + 1] = g[1][0] * a + g[1][1] * b;
+  }
+  return hasil;
+}
+
+// Oracle U_f: |x, y> menjadi |x, y XOR f(x)>. Menghitung berapa kali dipasang pada sirkuit.
+class Oracle {
+  dipasang = 0;
+  constructor(readonly f: [number, number]) {}
+
+  pasang(v: Vektor): Vektor {
+    this.dipasang += 1;
+    const hasil: Vektor = [0, 0, 0, 0];
+    for (let x = 0; x < 2; x++) {
+      for (let y = 0; y < 2; y++) hasil[2 * x + (y ^ this.f[x])] = v[2 * x + y];
+    }
+    return hasil;
+  }
+}
+
+// Kembalikan peluang qubit query terbaca 1.
+function deutsch(oracle: Oracle, tampil: boolean): number {
+  let v: Vektor = [0, 1, 0, 0]; // |0>|1>: qubit query 0, qubit bantu 1
+  v = gerbangPertama(v, H);
+  v = gerbangKedua(v, H);
+  if (tampil) tulis("  setelah H, H     : ", v);
+  v = oracle.pasang(v);
+  if (tampil) tulis("  setelah oracle   : ", v);
+  v = gerbangPertama(v, H);
+  if (tampil) tulis("  setelah H query  : ", v);
+  return v[2] * v[2] + v[3] * v[3];
+}
+
+console.log("jejak untuk f(0)=0, f(1)=1 (seimbang):");
+deutsch(new Oracle([0, 1]), true);
+console.log("semua empat fungsi:");
+for (let f0 = 0; f0 < 2; f0++) {
+  for (let f1 = 0; f1 < 2; f1++) {
+    const o = new Oracle([f0, f1]);
+    const p1 = deutsch(o, false);
+    console.log(
+      `  f(0)=${f0} f(1)=${f1} (${f0 === f1 ? "konstan" : "seimbang"}): P(query terbaca 1) = ${p1.toFixed(4)}, oracle dipasang ${o.dipasang} kali`,
+    );
+  }
+}
+```
+
 Bacaan hasilnya: jejak sama dengan tangan; empat fungsi dipisahkan pasti, dan oracle dipasang sekali. **Batasnya:** halaman IBM menyebut keunggulan ini sederhana (satu query lawan dua) dan hitungannya hanya model query. Simulator kita menyusun oracle dengan menelusuri `f` di semua masukan, jadi simulasi ini tidak memperlihatkan kecepatan apa pun; yang diperlihatkan hanya hitungan pemasangan oracle pada sirkuit. Tidak ada klaim tentang kecepatan komputer kuantum nyata.
 
 ## Contoh setengah jadi
@@ -135,26 +224,26 @@ Lengkapi (kunci di bagian akhir).
 2. Untuk `f(0) = 0` dan `f(1) = 0` oracle tidak mengubah vektor. H pada qubit query dari `(0,5; -0,5; 0,5; -0,5)` memberi `(____; ____; 0; 0)`.
 3. Lengkapi:
 
-```python setengah-jadi
-def pasang(self, v):
-    self.dipasang += ____
-    hasil = [0.0] * 4
-    for x in (0, 1):
-        for y in (0, 1):
-            hasil[2 * x + (y ____ self.f[x])] = v[2 * x + y]
-    return hasil
+```cpp setengah-jadi
+Vektor pasang(const Vektor& v) {
+    dipasang += ____;
+    Vektor hasil(4, 0.0);
+    for (int x = 0; x < 2; x++)
+        for (int y = 0; y < 2; y++) hasil[2 * x + (y ____ f[x])] = v[2 * x + y];
+    return hasil;
+}
 ```
 
 ## Soal Parsons
 
-Susun baris-baris di bawah (sudah diacak) menjadi metode `pasang` pada oracle. Penjorokan sengaja dihilangkan.
+Susun baris-baris di bawah (sudah diacak) menjadi isi metode `pasang` pada oracle. Penjorokan sengaja dihilangkan.
 
 ```text
-(a) return hasil
-(b) for y in (0, 1):
-(c) hasil = [0.0] * 4
-(d) hasil[2 * x + (y ^ self.f[x])] = v[2 * x + y]
-(e) for x in (0, 1):
+(a) return hasil;
+(b) for (int y = 0; y < 2; y++)
+(c) Vektor hasil(4, 0.0);
+(d) hasil[2 * x + (y ^ f[x])] = v[2 * x + y];
+(e) for (int x = 0; x < 2; x++)
 ```
 
 ## Latihan

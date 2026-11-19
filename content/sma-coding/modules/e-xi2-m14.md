@@ -4,7 +4,7 @@ Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M14` s
 
 Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur E adalah pengayaan di luar rumusan capaian pembelajaran (CP), dan asesmen ini tidak dihitung sebagai pemenuhan butir CP. Asesmen ini **tanpa AI**: jangan memakai AI generatif saat mengerjakannya (silabus 7.4). Bobot nilai dan predikat mengikuti kebijakan sekolah `[belum terverifikasi]`; modul ini hanya memberi soal, rubrik singkat, dan kunci. Murid tanpa dasar pemrograman mengerjakan soal dengan tangan dan kalkulator saja.
 
-Catatan untuk guru: soal memakai angka yang dihitung ulang penyusun dengan Python 3 murni (tanpa akun); Qiskit dan layanan cloud tidak dipakai. Soal 6 dan 7 bersandar pada modul `e-xi2-m8`, `e-xi2-m9`, `e-xi2-m11`, dan `e-xi2-m12`, yang masih berstatus DRAF.
+Catatan untuk guru: soal memakai angka yang dihitung ulang penyusun dengan program kecil; Qiskit dan layanan cloud tidak dipakai. Soal 6 dan 7 bersandar pada modul `e-xi2-m8`, `e-xi2-m9`, `e-xi2-m11`, dan `e-xi2-m12`, yang masih berstatus DRAF.
 
 ## Ingat kembali
 

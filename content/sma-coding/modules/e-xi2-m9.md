@@ -1,12 +1,12 @@
 ## Untuk siapa modul ini
 
-Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M9` silabus v1.4: pengayaan distribusi kunci (konsep), yaitu menelusuri ide protokol BB84 pada simulasi dan menyebut batasnya. Prasyarat: modul `e-xi2-m8`; modul `e-xi2-m7` sebaiknya sudah kamu kerjakan. Alat: kertas, kalkulator, dan Python 3 murni opsional (tanpa akun); hitungan tangan lebih dulu.
+Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M9` silabus v1.4: pengayaan distribusi kunci (konsep), yaitu menelusuri ide protokol BB84 pada simulasi dan menyebut batasnya. Prasyarat: modul `e-xi2-m8`; modul `e-xi2-m7` sebaiknya sudah kamu kerjakan. Alat: kertas, kalkulator, dan C++17 opsional (tanpa akun; murid jalur B boleh menerjemahkannya ke TypeScript); hitungan tangan lebih dulu.
 
 Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur E adalah pengayaan di luar rumusan CP; minggu ini pengayaan murni, jadi modul ini tidak dihitung memenuhi butir CP mana pun.
 
 Aturan AI jalur ini: AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu, dan tanpa akun wajib. Saran: jawab dulu sendiri, baru minta petunjuk bertahap; kode buatan AI kamu baca, jalankan, dan uji. Setiap soal `Latihan` bertanda `AI: boleh` atau `AI: tanpa AI`.
 
-Catatan untuk guru: langkah BB84 (dua basis, penyaringan, pembandingan sebagian bit, saluran publik terautentikasi) dibaca penyusun dari halaman Wikipedia "BB84", dan batas QKD dari halaman NCSC (lembaga keamanan siber Inggris) "Quantum security technologies", keduanya per 2026-11-19. Angka 25 persen untuk penyadap yang membaca lalu mengirim ulang adalah hitungan penyusun, dicek dengan simulasi. Semua data sintetis. Modul ini bukan panduan membuat sistem kunci: `random` Python menurut dokumentasinya tidak boleh dipakai untuk keperluan keamanan.
+Catatan untuk guru: langkah BB84 (dua basis, penyaringan, pembandingan sebagian bit, saluran publik terautentikasi) dibaca penyusun dari cetak ulang makalah Bennett dan Brassard (arXiv:2003.06557, naskah asli 1984), termasuk bahwa penyadap yang membaca dan mengirim ulang semua foton pada satu basis menimbulkan ketidakcocokan pada 1/4 bit yang dibaca ulang di basis asli. Batas QKD dibaca dari halaman NCSC (lembaga keamanan siber Inggris) "Quantum security technologies"; keduanya per 2026-11-19. Penyadap berbasis acak di modul ini adalah hitungan penyusun yang juga memberi 1/4, dicek dengan simulasi. Semua data sintetis. Modul ini bukan panduan membuat sistem kunci: pembangkit acak di programnya (kongruensi linear buatan sendiri) mudah ditebak dan tidak boleh dipakai untuk keperluan keamanan.
 
 ## Ingat kembali
 
@@ -36,106 +36,144 @@ Tebak dan tulis: (1) seberapa sering basis Alice dan Bob sama bila keduanya memi
 
 **Penyadap.** Eve membaca setiap qubit di basis acak lalu mengirim ulang. Ia memilih basis benar dengan peluang 1/2: qubit tidak terganggu. Ia salah dengan peluang 1/2: qubit runtuh ke keadaan basis yang salah, dan Bob, bila basisnya sama dengan Alice, membaca acak sehingga salah dengan peluang 1/2. Kesalahan di kunci tersaring: `1/2 x 1/2 = 1/4`. Eve tidak dapat menyalin qubit untuk membacanya nanti (`e-xi2-m7`).
 
-```python
-import random
-from math import sqrt
+```cpp
+#include <cmath>
+#include <cstdint>
+#include <cstdio>
+#include <vector>
 
-h = 1 / sqrt(2)
-H = [[h, h], [h, -h]]
-rng = random.Random(2026)  # benih tetap; hanya untuk simulasi, BUKAN untuk kunci sungguhan
+struct Qubit {
+    double a0, a1;  // amplitudo |0> dan |1>
+};
 
+const double H1 = 1.0 / std::sqrt(2.0);
 
-def kali(m, v):
-    return [m[0][0] * v[0] + m[0][1] * v[1], m[1][0] * v[0] + m[1][1] * v[1]]
+// Pembangkit semu buatan sendiri; benih tetap. Hanya untuk simulasi, BUKAN untuk kunci sungguhan.
+uint32_t benih = 2026;
 
+double acak01() {
+    benih = 1664525u * benih + 1013904223u;
+    return benih / 4294967296.0;
+}
 
-def siapkan(bit, basis):
-    """Basis 0: |0> atau |1>. Basis 1: |+> atau |->, yaitu H dikenakan pada |0> atau |1>."""
-    v = [1.0, 0.0] if bit == 0 else [0.0, 1.0]
-    return kali(H, v) if basis == 1 else v
+int acak_bit() { return acak01() < 0.5 ? 0 : 1; }
 
+Qubit gerbang_h(Qubit q) { return {H1 * (q.a0 + q.a1), H1 * (q.a0 - q.a1)}; }
 
-def baca(v, basis):
-    """Baca dalam basis itu. Kembalikan hasil dan keadaan sesudah dibaca."""
-    w = kali(H, v) if basis == 1 else v      # H memutar basis 1 menjadi basis 0
-    hasil = 0 if rng.random() < w[0] ** 2 else 1
-    return hasil, siapkan(hasil, basis)       # keadaan runtuh ke keadaan basis yang dibaca
+// Basis 0: |0> atau |1>. Basis 1: |+> atau |->, yaitu H dikenakan pada |0> atau |1>.
+Qubit siapkan(int bit, int basis) {
+    Qubit q = bit == 0 ? Qubit{1.0, 0.0} : Qubit{0.0, 1.0};
+    return basis == 1 ? gerbang_h(q) : q;
+}
 
+// Baca dalam basis itu. Kembalikan hasil; keadaan runtuh ke keadaan basis yang dibaca.
+int baca(Qubit& q, int basis) {
+    Qubit w = basis == 1 ? gerbang_h(q) : q;  // H memutar basis 1 menjadi basis 0
+    int hasil = acak01() < w.a0 * w.a0 ? 0 : 1;
+    q = siapkan(hasil, basis);
+    return hasil;
+}
 
-def jalankan(n, ada_penyadap):
-    kunci_a, kunci_b = [], []
-    baris = []
-    for _ in range(n):
-        bit, basis_a, basis_b = rng.randint(0, 1), rng.randint(0, 1), rng.randint(0, 1)
-        qubit = siapkan(bit, basis_a)
-        if ada_penyadap:                      # Eve membaca di basis acak lalu mengirim ulang
-            _, qubit = baca(qubit, rng.randint(0, 1))
-        hasil, _ = baca(qubit, basis_b)
-        simpan = basis_a == basis_b
-        if simpan:
-            kunci_a.append(bit)
-            kunci_b.append(hasil)
-        baris.append((bit, basis_a, basis_b, hasil, simpan))
-    return kunci_a, kunci_b, baris
+struct Hasil {
+    int tersaring = 0;
+    int tidak_cocok = 0;
+};
 
+Hasil jalankan(int n, bool ada_penyadap, bool cetak) {
+    Hasil h;
+    if (cetak) std::printf("bit  basisA basisB  hasilB  disimpan\n");
+    for (int i = 0; i < n; i++) {
+        int bit = acak_bit(), basis_a = acak_bit(), basis_b = acak_bit();
+        Qubit q = siapkan(bit, basis_a);
+        if (ada_penyadap) baca(q, acak_bit());  // Eve membaca di basis acak lalu mengirim ulang
+        int hasil = baca(q, basis_b);
+        bool simpan = basis_a == basis_b;
+        if (simpan) {
+            h.tersaring++;
+            if (hasil != bit) h.tidak_cocok++;
+        }
+        if (cetak)
+            std::printf("  %d      %d      %d      %d      %s\n", bit, basis_a, basis_b, hasil,
+                        simpan ? "ya" : "tidak");
+    }
+    return h;
+}
 
-ka, kb, baris = jalankan(8, False)
-print("bit  basisA basisB  hasilB  disimpan")
-for bit, ba, bb, hasil, simpan in baris:
-    print(f"  {bit}      {ba}      {bb}      {hasil}      {'ya' if simpan else 'tidak'}")
-
-for penyadap in (False, True):
-    ka, kb, _ = jalankan(4000, penyadap)
-    salah = sum(1 for a, b in zip(ka, kb) if a != b)
-    print(f"penyadap={penyadap}: kunci tersaring {len(ka)} bit, tidak cocok {salah} "
-          f"({salah / len(ka):.3f})")
+int main() {
+    jalankan(8, false, true);
+    for (int penyadap = 0; penyadap < 2; penyadap++) {
+        Hasil h = jalankan(4000, penyadap == 1, false);
+        std::printf("penyadap=%s: kunci tersaring %d bit, tidak cocok %d (%.3f)\n",
+                    penyadap ? "ya" : "tidak", h.tersaring, h.tidak_cocok,
+                    static_cast<double>(h.tidak_cocok) / h.tersaring);
+    }
+    return 0;
+}
 ```
 
-Keluaran asli (dijalankan penyusun dengan `python3 -I`, Python 3.12):
+Keluaran asli (dikompilasi penyusun dengan `g++ -std=c++17 -Wall -Wextra`, lalu dijalankan):
 
 ```text
 bit  basisA basisB  hasilB  disimpan
-  0      1      0      1      tidak
-  1      1      1      1      ya
-  0      0      1      1      tidak
+  0      0      0      0      ya
   1      0      1      1      tidak
-  0      1      1      0      ya
+  0      1      0      0      tidak
+  1      0      1      1      tidak
+  1      0      0      1      ya
   1      1      0      1      tidak
+  1      0      0      1      ya
   0      1      1      0      ya
-  1      0      1      0      tidak
-penyadap=False: kunci tersaring 1967 bit, tidak cocok 0 (0.000)
-penyadap=True: kunci tersaring 1949 bit, tidak cocok 510 (0.262)
+penyadap=tidak: kunci tersaring 1955 bit, tidak cocok 0 (0.000)
+penyadap=ya: kunci tersaring 2011 bit, tidak cocok 493 (0.245)
 ```
 
-Bacaan hasilnya: dari 8 qubit, 3 posisi disimpan dan semuanya cocok. Tanpa penyadap tidak ada yang tidak cocok; dengan penyadap 510 dari 1949, kira-kira 26 persen. Harapan 487 dengan simpangan wajar kira-kira 19, jadi 510 wajar. Simulasi ini tanpa derau saluran; ambang ketidakcocokan yang diterima ditetapkan protokol, bukan modul ini.
+Bacaan hasilnya: dari 8 qubit, 4 posisi disimpan dan semuanya cocok. Tanpa penyadap tidak ada yang tidak cocok; dengan penyadap 493 dari 2011, kira-kira 25 persen. Harapan 503 dengan simpangan wajar kira-kira 19, jadi 493 wajar. Simulasi ini tanpa derau saluran; ambang ketidakcocokan yang diterima ditetapkan protokol, bukan modul ini.
 
 **Kunci untuk apa.** Kunci tersaring dipakai sebagai sandi XOR (*one-time pad*): sandi = pesan XOR kunci, dan dekripsi = sandi XOR kunci. Syaratnya kunci acak sejati, rahasia, dan sekali pakai.
 
-```python
-def xor_bit(a, b):
-    return [x ^ y for x, y in zip(a, b)]
+```cpp
+#include <cstdio>
+#include <vector>
 
+using Bit = std::vector<int>;
 
-pesan = [1, 0, 1, 1, 0, 0, 1, 0]   # pesan sintetis, 8 bit
-kunci = [0, 1, 1, 0, 1, 0, 0, 1]   # kunci contoh 8 bit (bukan kunci sungguhan)
-sandi = xor_bit(pesan, kunci)
-kembali = xor_bit(sandi, kunci)
-print("pesan  :", pesan)
-print("kunci  :", kunci)
-print("sandi  :", sandi)
-print("dekripsi:", kembali, "sama dengan pesan:", kembali == pesan)
-salah = [0, 1, 1, 0, 1, 0, 0, 0]   # kunci salah di satu posisi
-print("kunci salah satu bit ->", xor_bit(sandi, salah))
+Bit xor_bit(const Bit& a, const Bit& b) {
+    Bit hasil;
+    for (size_t i = 0; i < a.size(); i++) hasil.push_back(a[i] ^ b[i]);
+    return hasil;
+}
+
+void tulis(const char* label, const Bit& v) {
+    std::printf("%s", label);
+    for (int x : v) std::printf("%d", x);
+    std::printf("\n");
+}
+
+int main() {
+    Bit pesan = {1, 0, 1, 1, 0, 0, 1, 0};  // pesan sintetis, 8 bit
+    Bit kunci = {0, 1, 1, 0, 1, 0, 0, 1};  // kunci contoh 8 bit (bukan kunci sungguhan)
+    Bit sandi = xor_bit(pesan, kunci);
+    Bit kembali = xor_bit(sandi, kunci);
+    tulis("pesan   : ", pesan);
+    tulis("kunci   : ", kunci);
+    tulis("sandi   : ", sandi);
+    tulis("dekripsi: ", kembali);
+    std::printf("sama dengan pesan: %s\n", kembali == pesan ? "ya" : "tidak");
+    Bit salah = {0, 1, 1, 0, 1, 0, 0, 0};  // kunci salah di satu posisi
+    tulis("kunci salah satu bit -> ", xor_bit(sandi, salah));
+    return 0;
+}
 ```
 
-Keluaran asli (dijalankan penyusun dengan `python3 -I`, Python 3.12):
+Keluaran asli (dikompilasi penyusun dengan `g++ -std=c++17 -Wall -Wextra`, lalu dijalankan):
 
 ```text
-pesan  : [1, 0, 1, 1, 0, 0, 1, 0]
-kunci  : [0, 1, 1, 0, 1, 0, 0, 1]
-sandi  : [1, 1, 0, 1, 1, 0, 1, 1]
-dekripsi: [1, 0, 1, 1, 0, 0, 1, 0] sama dengan pesan: True
-kunci salah satu bit -> [1, 0, 1, 1, 0, 0, 1, 1]
+pesan   : 10110010
+kunci   : 01101001
+sandi   : 11011011
+dekripsi: 10110010
+sama dengan pesan: ya
+kunci salah satu bit -> 10110011
 ```
 
 **Batas.** Per 2026-11-19, NCSC menyatakan bahwa QKD tidak menyediakan autentikasi sehingga rentan terhadap penyerang fisik di tengah jalur, dan harus dipasang bersama autentikasi yang aman dari ancaman kuantum. NCSC juga tidak merekomendasikan QKD untuk aplikasi pemerintah atau militer dan menilai kriptografi tahan-kuantum sebagai mitigasi terbaik. Simulasi di atas tidak membuktikan keamanan apa pun.
@@ -148,26 +186,27 @@ Lengkapi (kunci di bagian akhir).
 2. Kesalahan di kunci tersaring akibat Eve: ____ x ____ = ____.
 3. Lengkapi dua fungsi:
 
-```python setengah-jadi
-def siapkan(bit, basis):
-    v = [1.0, 0.0] if bit == 0 else [0.0, 1.0]
-    return kali(H, v) if basis == ____ else v
+```cpp setengah-jadi
+Qubit siapkan(int bit, int basis) {
+    Qubit q = bit == 0 ? Qubit{1.0, 0.0} : Qubit{0.0, 1.0};
+    return basis == ____ ? gerbang_h(q) : q;
+}
 
-
-def disimpan(basis_a, basis_b):
-    return basis_a ____ basis_b
+bool disimpan(int basis_a, int basis_b) {
+    return basis_a ____ basis_b;
+}
 ```
 
 ## Soal Parsons
 
-Susun baris-baris di bawah (sudah diacak) menjadi isi satu putaran perulangan: pilih nilai acak, siapkan qubit, baca, lalu simpan bila basis sama. Penjorokan sengaja dihilangkan.
+Susun baris-baris di bawah (sudah diacak) menjadi isi satu putaran perulangan: pilih nilai acak, siapkan qubit, baca, lalu simpan bila basis sama. Penjorokan dan kurung kurawal penutup sengaja dihilangkan.
 
 ```text
-(a) hasil, _ = baca(qubit, basis_b)
-(b) qubit = siapkan(bit, basis_a)
-(c) bit, basis_a, basis_b = rng.randint(0, 1), rng.randint(0, 1), rng.randint(0, 1)
-(d) if basis_a == basis_b:
-(e) kunci_a.append(bit)
+(a) int hasil = baca(q, basis_b);
+(b) Qubit q = siapkan(bit, basis_a);
+(c) int bit = acak_bit(), basis_a = acak_bit(), basis_b = acak_bit();
+(d) if (basis_a == basis_b) {
+(e) h.tersaring++;
 ```
 
 ## Latihan
@@ -197,7 +236,7 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `e-xi2-m10` (satu mingg
 
 - **"BB84 mengirim pesan lewat qubit."** Yang dihasilkan adalah kunci acak bersama; pesan dienkripsi terpisah, misalnya dengan XOR.
 - **"Penyadap pasti tertangkap."** Ia terdeteksi secara statistik: bila hanya sedikit bit yang dibandingkan, peluang ia lolos masih ada.
-- **"Simulasi ini aman untuk kunci sungguhan."** `random` Python bukan untuk keamanan, dan keamanan nyata memerlukan perangkat, autentikasi, dan langkah lanjutan.
+- **"Simulasi ini aman untuk kunci sungguhan."** pembangkit acak di program ini mudah ditebak, dan keamanan nyata memerlukan perangkat, autentikasi, dan langkah lanjutan.
 
 ## Cek mandiri
 

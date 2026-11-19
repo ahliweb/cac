@@ -1,6 +1,6 @@
 ## Untuk siapa modul ini
 
-Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M8` silabus v1.4: pengayaan permainan CHSH, yaitu membandingkan strategi klasik dan kuantum secara simulasi. Prasyarat: modul `e-xi1-m14` (inti semester XI1); modul `e-xi2-m2`, `e-xi2-m3`, dan `e-xi2-m7` sebaiknya sudah kamu kerjakan. Alat: kertas, kalkulator, dan Python 3 murni opsional (tanpa akun); hitungan tangan lebih dulu.
+Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M8` silabus v1.4: pengayaan permainan CHSH, yaitu membandingkan strategi klasik dan kuantum secara simulasi. Prasyarat: modul `e-xi1-m14` (inti semester XI1); modul `e-xi2-m2`, `e-xi2-m3`, dan `e-xi2-m7` sebaiknya sudah kamu kerjakan. Alat: kertas, kalkulator, dan C++17 opsional (tanpa akun; murid jalur B boleh menerjemahkannya ke TypeScript); hitungan tangan lebih dulu.
 
 Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur E adalah pengayaan di luar rumusan CP; minggu ini pengayaan murni, jadi modul ini tidak dihitung memenuhi butir CP mana pun.
 
@@ -35,31 +35,42 @@ Tebak dan tulis: (1) peluang menang terbaik dua pemain klasik yang tidak boleh b
 
 **Strategi klasik.** Pada strategi pasti, `a` ditentukan oleh `x` saja dan `b` oleh `y` saja: ada 16 strategi. Andaikan sebuah strategi menang di `(0,0)`, `(0,1)`, dan `(1,0)`. Maka `a(0) = b(0)`, `a(0) = b(1)`, dan `a(1) = b(0)`, jadi keempat nilai itu sama, dan strategi itu kalah di `(1,1)` yang menuntut jawaban berbeda. Program menghitung 8 strategi yang menang di satu pasangan dan 8 yang menang di tiga, tidak ada yang menang di keempatnya: terbaik 3/4. Strategi acak, termasuk acak bersama, hanyalah pilihan acak di antara strategi pasti, dan rata-rata tidak melebihi maksimumnya (penalaran halaman IBM).
 
-```python
-from itertools import product
+```cpp
+#include <cstdio>
 
+// CHSH: menang bila a XOR b sama dengan x AND y.
+bool menang(int x, int y, int a, int b) { return (a ^ b) == (x & y); }
 
-def menang(x, y, a, b):
-    """CHSH: menang bila a XOR b sama dengan x AND y."""
-    return (a ^ b) == (x & y)
-
-
-daftar = []
-for a0, a1, b0, b1 in product((0, 1), repeat=4):
-    a = {0: a0, 1: a1}  # jawaban Alice untuk pertanyaan x
-    b = {0: b0, 1: b1}  # jawaban Bob untuk pertanyaan y
-    n = sum(menang(x, y, a[x], b[y]) for x, y in product((0, 1), repeat=2))
-    daftar.append(((a0, a1, b0, b1), n))
-
-print("jumlah strategi deterministik:", len(daftar))
-for n in range(5):
-    print(f"  menang di {n} dari 4 pasangan pertanyaan: {sum(1 for _, k in daftar if k == n)} strategi")
-terbaik = max(k for _, k in daftar)
-print("terbaik:", terbaik, "dari 4 =", terbaik / 4)
-print("contoh strategi terbaik (a(0), a(1), b(0), b(1)):", [s for s, k in daftar if k == terbaik][0])
+int main() {
+    int jumlah = 0;
+    int sebaran[5] = {0, 0, 0, 0, 0};  // berapa strategi menang di 0..4 pasangan
+    int terbaik = 0;
+    int contoh[4] = {0, 0, 0, 0};
+    for (int kode = 0; kode < 16; kode++) {
+        int a[2] = {(kode >> 3) & 1, (kode >> 2) & 1};  // jawaban Alice untuk x = 0, 1
+        int b[2] = {(kode >> 1) & 1, kode & 1};         // jawaban Bob untuk y = 0, 1
+        int n = 0;
+        for (int x = 0; x < 2; x++)
+            for (int y = 0; y < 2; y++)
+                if (menang(x, y, a[x], b[y])) n++;
+        jumlah++;
+        sebaran[n]++;
+        if (n > terbaik) {
+            terbaik = n;
+            contoh[0] = a[0]; contoh[1] = a[1]; contoh[2] = b[0]; contoh[3] = b[1];
+        }
+    }
+    std::printf("jumlah strategi deterministik: %d\n", jumlah);
+    for (int n = 0; n < 5; n++)
+        std::printf("  menang di %d dari 4 pasangan pertanyaan: %d strategi\n", n, sebaran[n]);
+    std::printf("terbaik: %d dari 4 = %.2f\n", terbaik, terbaik / 4.0);
+    std::printf("contoh strategi terbaik (a(0), a(1), b(0), b(1)): (%d, %d, %d, %d)\n",
+                contoh[0], contoh[1], contoh[2], contoh[3]);
+    return 0;
+}
 ```
 
-Keluaran asli (dijalankan penyusun dengan `python3 -I`, Python 3.12):
+Keluaran asli (dikompilasi penyusun dengan `g++ -std=c++17 -Wall -Wextra`, lalu dijalankan):
 
 ```text
 jumlah strategi deterministik: 16
@@ -78,63 +89,95 @@ contoh strategi terbaik (a(0), a(1), b(0), b(1)): (0, 0, 0, 0)
 
 **Menjawab teka-teki `e-xi2-m3`.** Dua amplop berisi bit acak yang sama dapat meniru "selalu sama" pada pembacaan 0/1. Di permainan ini jawaban harus bergantung pada pertanyaan yang tidak diketahui pasangannya: strategi klasik mentok di 3/4, modelnya memberi 0,8536.
 
-```python
-import random
-from math import cos, pi, sin, sqrt
+```cpp
+#include <cmath>
+#include <cstdint>
+#include <cstdio>
+#include <vector>
 
-h = 1 / sqrt(2)
+using Vektor = std::vector<double>;
+using Matriks = std::vector<Vektor>;
 
+const double PI = std::acos(-1.0);
+const double H1 = 1.0 / std::sqrt(2.0);
 
-def U(t):
-    """Putar arah baca sebesar t: matriks real [[cos, sin], [-sin, cos]]."""
-    return [[cos(t), sin(t)], [-sin(t), cos(t)]]
+// Putar arah baca sebesar t: matriks real [[cos, sin], [-sin, cos]].
+Matriks U(double t) { return {{std::cos(t), std::sin(t)}, {-std::sin(t), std::cos(t)}}; }
 
+// Hasil kali tensor dua matriks 2 x 2 menjadi matriks 4 x 4.
+Matriks tensor(const Matriks& a, const Matriks& b) {
+    Matriks m(4, Vektor(4, 0.0));
+    for (int i = 0; i < 4; i++)
+        for (int j = 0; j < 4; j++) m[i][j] = a[i / 2][j / 2] * b[i % 2][j % 2];
+    return m;
+}
 
-def tensor(a, b):
-    """Hasil kali tensor dua matriks 2 x 2 menjadi matriks 4 x 4."""
-    return [[a[i // 2][j // 2] * b[i % 2][j % 2] for j in range(4)] for i in range(4)]
+Vektor kali(const Matriks& m, const Vektor& v) {
+    Vektor hasil(m.size(), 0.0);
+    for (size_t i = 0; i < m.size(); i++)
+        for (size_t j = 0; j < v.size(); j++) hasil[i] += m[i][j] * v[j];
+    return hasil;
+}
 
+uint32_t benih = 2026;  // pembangkit semu buatan sendiri; benih tetap
 
-def kali(m, v):
-    return [sum(m[i][j] * v[j] for j in range(len(v))) for i in range(len(m))]
+double acak01() {
+    benih = 1664525u * benih + 1013904223u;
+    return benih / 4294967296.0;
+}
 
+// p = {P(00), P(01), P(10), P(11)}, indeks i = 2a + b; menang bila a XOR b = x AND y.
+double peluang_menang(const Vektor& p, int x, int y) {
+    double pm = 0.0;
+    for (int i = 0; i < 4; i++)
+        if (((i >> 1) ^ (i & 1)) == (x & y)) pm += p[i];
+    return pm;
+}
 
-bell = [h, 0, 0, h]
-alice = {0: 0.0, 1: pi / 4}       # arah baca Alice untuk x = 0 dan x = 1
-bob = {0: pi / 8, 1: -pi / 8}     # arah baca Bob untuk y = 0 dan y = 1
+int main() {
+    Vektor bell = {H1, 0, 0, H1};
+    double alice[2] = {0.0, PI / 4};       // arah baca Alice untuk x = 0 dan x = 1
+    double bob[2] = {PI / 8, -PI / 8};     // arah baca Bob untuk y = 0 dan y = 1
 
-semua = {}
-total = 0.0
-for x in (0, 1):
-    for y in (0, 1):
-        v = kali(tensor(U(alice[x]), U(bob[y])), bell)
-        p = [c * c for c in v]            # peluang 00, 01, 10, 11
-        semua[(x, y)] = p
-        # menang bila a XOR b = x AND y; indeks i = 2 a + b
-        pm = sum(p[i] for i in range(4) if ((i >> 1) ^ (i & 1)) == (x & y))
-        total += pm / 4
-        print(f"x={x} y={y}: peluang 00,01,10,11 = {[round(q, 4) for q in p]}, "
-              f"menang {pm:.4f}, P(a=0) = {p[0] + p[1]:.4f}")
-print(f"rata-rata menang: {total:.4f}; cos^2(pi/8) = {cos(pi / 8) ** 2:.4f}")
+    Vektor semua[2][2];
+    double total = 0.0;
+    for (int x = 0; x < 2; x++) {
+        for (int y = 0; y < 2; y++) {
+            Vektor v = kali(tensor(U(alice[x]), U(bob[y])), bell);
+            Vektor p(4);
+            for (int i = 0; i < 4; i++) p[i] = v[i] * v[i];  // peluang 00, 01, 10, 11
+            semua[x][y] = p;
+            double pm = peluang_menang(p, x, y);
+            total += pm / 4;
+            std::printf("x=%d y=%d: peluang 00,01,10,11 = [%.4f, %.4f, %.4f, %.4f], menang %.4f, P(a=0) = %.4f\n",
+                        x, y, p[0], p[1], p[2], p[3], pm, p[0] + p[1]);
+        }
+    }
+    double c = std::cos(PI / 8);
+    std::printf("rata-rata menang: %.4f; cos^2(pi/8) = %.4f\n", total, c * c);
 
-# Simulasi 10000 putaran: jawaban diambil dari peluang di atas (model, bukan perangkat nyata).
-rng = random.Random(2026)
-putaran = 10000
-menangs = 0
-for _ in range(putaran):
-    x, y = rng.randint(0, 1), rng.randint(0, 1)
-    r, kum, hasil = rng.random(), 0.0, 3
-    for i, q in enumerate(semua[(x, y)]):
-        kum += q
-        if r < kum:
-            hasil = i
-            break
-    menangs += ((hasil >> 1) ^ (hasil & 1)) == (x & y)
-sigma = sqrt(putaran * total * (1 - total))
-print(f"{putaran} putaran: menang {menangs}, harapan {putaran * total:.0f}, simpangan wajar {sigma:.1f}")
+    // Simulasi 10000 putaran: jawaban diambil dari peluang di atas (model, bukan perangkat nyata).
+    const int putaran = 10000;
+    int menangs = 0;
+    for (int k = 0; k < putaran; k++) {
+        int x = acak01() < 0.5 ? 0 : 1;
+        int y = acak01() < 0.5 ? 0 : 1;
+        double r = acak01(), kum = 0.0;
+        int hasil = 3;
+        for (int i = 0; i < 4; i++) {
+            kum += semua[x][y][i];
+            if (r < kum) { hasil = i; break; }
+        }
+        if (((hasil >> 1) ^ (hasil & 1)) == (x & y)) menangs++;
+    }
+    double sigma = std::sqrt(putaran * total * (1 - total));
+    std::printf("%d putaran: menang %d, harapan %.0f, simpangan wajar %.1f\n", putaran, menangs,
+                putaran * total, sigma);
+    return 0;
+}
 ```
 
-Keluaran asli (dijalankan penyusun dengan `python3 -I`, Python 3.12):
+Keluaran asli (dikompilasi penyusun dengan `g++ -std=c++17 -Wall -Wextra`, lalu dijalankan):
 
 ```text
 x=0 y=0: peluang 00,01,10,11 = [0.4268, 0.0732, 0.0732, 0.4268], menang 0.8536, P(a=0) = 0.5000
@@ -142,10 +185,10 @@ x=0 y=1: peluang 00,01,10,11 = [0.4268, 0.0732, 0.0732, 0.4268], menang 0.8536, 
 x=1 y=0: peluang 00,01,10,11 = [0.4268, 0.0732, 0.0732, 0.4268], menang 0.8536, P(a=0) = 0.5000
 x=1 y=1: peluang 00,01,10,11 = [0.0732, 0.4268, 0.4268, 0.0732], menang 0.8536, P(a=0) = 0.5000
 rata-rata menang: 0.8536; cos^2(pi/8) = 0.8536
-10000 putaran: menang 8558, harapan 8536, simpangan wajar 35.4
+10000 putaran: menang 8512, harapan 8536, simpangan wajar 35.4
 ```
 
-Bacaan hasilnya: 8558 selisih 22 dari harapan, kira-kira 0,6 simpangan: wajar. Batasnya: program mengambil jawaban dari peluang yang ia hitung sendiri, jadi ia menguji aritmetika model, bukan perilaku alam atau perangkat nyata.
+Bacaan hasilnya: 8512 selisih 24 dari harapan, kira-kira 0,7 simpangan: wajar. Batasnya: program mengambil jawaban dari peluang yang ia hitung sendiri, jadi ia menguji aritmetika model, bukan perilaku alam atau perangkat nyata.
 
 ## Contoh setengah jadi
 
@@ -155,15 +198,18 @@ Lengkapi (kunci di bagian akhir).
 2. Untuk selisih sudut `pi/8`: `cos²(pi/8) = (1 + cos(pi/4))/2` = ____ (empat desimal).
 3. Lengkapi fungsi berikut:
 
-```python setengah-jadi
-def menang(x, y, a, b):
-    return (a ____ b) == (x ____ y)
+```cpp setengah-jadi
+bool menang(int x, int y, int a, int b) {
+    return (a ____ b) == (x ____ y);
+}
 
-
-def peluang_menang(p, x, y):
-    """p = [P(00), P(01), P(10), P(11)], indeks i = 2a + b."""
-    target = x & y
-    return sum(p[i] for i in range(4) if ((i >> 1) ____ (i & 1)) == target)
+// p = {P(00), P(01), P(10), P(11)}, indeks i = 2a + b
+double peluang_menang(const Vektor& p, int x, int y) {
+    double pm = 0.0;
+    for (int i = 0; i < 4; i++)
+        if (((i >> 1) ____ (i & 1)) == (x & y)) pm += p[i];
+    return pm;
+}
 ```
 
 ## Soal Parsons
@@ -171,11 +217,11 @@ def peluang_menang(p, x, y):
 Susun baris-baris di bawah (sudah diacak) menjadi perhitungan rata-rata menang. Penjorokan sengaja dihilangkan.
 
 ```text
-(a) print(total)
-(b) for y in (0, 1):
-(c) total = 0
-(d) for x in (0, 1):
-(e) total += peluang_menang(semua[(x, y)], x, y) / 4
+(a) std::printf("%.4f\n", total);
+(b) for (int y = 0; y < 2; y++)
+(c) double total = 0;
+(d) for (int x = 0; x < 2; x++)
+(e) total += peluang_menang(semua[x][y], x, y) / 4;
 ```
 
 ## Latihan
