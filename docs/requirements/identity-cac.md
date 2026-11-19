@@ -1,11 +1,11 @@
 # Kebutuhan Identitas CaC dan Traceability Migrasi
 
 ## Metadata
-- Version: v1.0.1
-- Last updated: 2026-11-19
+- Version: v1.0.2
+- Last updated: 2026-11-20
 - Changeset: Menambahkan kontrak identitas dan migrasi terukur yang tidak mengubah requirement kurikulum.
 - Status: bukti F1 tersedia; Gate 9 PASSED (keputusan pemilik 2026-11-20, [tinjauan Gate 9](../migrations/2026-11-cac-gate9-review.md)); implementasi F2 boleh dimulai, rename tetap menunggu Gate 15.
-- Catatan verifikasi: berkas ini belum terdaftar di `register.md` dan `traceability.md`, dan pola ID `check:requirements` (`FR|TR|OR|ER|GR`) tidak mencakup `IDENTITY-CAC-*`; bukti per kebutuhan dilacak manual di tinjauan Gate 9, bagian 4.
+- Catatan verifikasi: berkas ini sumber kebenaran `IDENTITY-CAC-001..010`; kesepuluhnya terdaftar di `register.md` dan `traceability.md` dan diperiksa `check:requirements` (issue #255): ID unik dan berurutan, pernyataan di register identik dengan tabel ini, dan setiap ID ada di matriks issue. Bukti per kebutuhan tetap dilacak di tinjauan Gate 9, bagian 4.
 
 | ID | Kebutuhan (shall) | Artefak | Acceptance evidence |
 | --- | --- | --- | --- |
@@ -38,6 +38,9 @@
 - Validasi: tests/**, CI, checklist Go/No-Go, migration log post-rename.
 
 ## Changelog
+### 2026-11-20 - v1.0.2
+- Mendaftarkan kebutuhan di `register.md` dan `traceability.md` serta memperluas `check:requirements` (issue #255); memperbarui catatan verifikasi. Tidak mengubah teks kebutuhan.
+
 ### 2026-11-19 - v1.0.1
 - Menautkan bukti F1 (inventaris consumer, kontrak CLI, tinjauan Gate 9), memperbarui status dan mencatat bahwa `check:requirements` belum mencakup berkas ini (issue #156). Tidak mengubah teks kebutuhan.
 

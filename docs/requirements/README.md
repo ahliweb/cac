@@ -28,6 +28,7 @@ would break every cross-reference in `traceability.md`, past PRs and past change
 | `OR-nn` | Operational | Cohort readiness, syllabus check, runbook, coaching cycle, governance bodies. |
 | `ER-nn` | Educational / pedagogical | Teaching rules: SOP, hint policy, session template, gates, assessment weights, status codes, KPI, playbooks, the "no rote memorisation" principle, the core-before-extension rule. |
 | `GR-nn` | Governance / regulatory | Privacy, minors' data, ISO mapping, security controls, versioning/changelog. |
+| `IDENTITY-CAC-nnn` | Platform identity | Curriculum as Code (CaC) platform identity and migration (ADR-0009); three-digit sequence; defined in `identity-cac.md`, repeated verbatim in `register.md` and traced by issue in `traceability.md`. |
 
 A requirement's category is chosen by what kind of claim it makes, not by which issue implements
 it — a single issue commonly satisfies requirements from more than one category (for example

@@ -1,6 +1,6 @@
 # Traceability Matrices
 
-Three views on the 109 requirements in `register.md`, proving the register is exhaustive in
+Three views on the 119 requirements in `register.md`, proving the register is exhaustive in
 both directions (see `README.md`'s "completeness rule"):
 
 1. **Syllabus section → requirements → issues** — proves every numbered section of the source
@@ -89,6 +89,15 @@ itself.
 | #139 — AI in software engineering research and the per-programme AI-use policies (PR #159 OSN, #160 SMP, #161 SMA, #162 kuliah, #163 dewasa) | ER-17, FR-36, FR-37, FR-38 |
 | #172 — module indexes of `tk-coding`, `sd-coding`, `smp-coding`, `kuliah-coding` and `dewasa-coding` (schemas, validation, `osn render modul`, learner sheets for tk and sd) | FR-39, FR-40, FR-41, FR-42, FR-43 |
 | #177 — Apply the owner-approved inter-programme bridge alignment (kuliah-coding to `dewasa-coding` `PRO` first; five atomic PRs) | FR-44, FR-45, TR-22, FR-28, FR-36, FR-37, FR-38 |
+| #150 — Epic: prepare the migration of the CaC identity to `ahliweb/cac` | IDENTITY-CAC-001, IDENTITY-CAC-002, IDENTITY-CAC-007, IDENTITY-CAC-010 |
+| #156 — Gate 9 cross-review and readiness proposal | IDENTITY-CAC-001, IDENTITY-CAC-007 |
+| #157 — Final rename runbook and post-migration criteria | IDENTITY-CAC-010 |
+| #251 — Add the `cac` bin and the `osn` alias in one core | IDENTITY-CAC-003 |
+| #252 — Change the package identity to `curriculum-as-code` without breaking consumers | IDENTITY-CAC-005 |
+| #253 — Synchronise README, AGENTS, CLI reference, panduan and governance for `cac` | IDENTITY-CAC-006 |
+| #254 — Contract tests for the two CLIs, all programmes and fidelity | IDENTITY-CAC-002, IDENTITY-CAC-003, IDENTITY-CAC-004 |
+| #255 — `check:requirements` coverage for IDENTITY-CAC and the two-CLI CI check | IDENTITY-CAC-002, IDENTITY-CAC-004, IDENTITY-CAC-008, IDENTITY-CAC-009 |
+| #256 — Changeset and release compatibility notes per SemVer | IDENTITY-CAC-005 |
 
 Rows `#27` and later are not required by the checker: only `#1`-`#26` must be present (the initial
 backlog), while any issue may be cited. A new programme adds its issues here as it adds requirements.
@@ -96,7 +105,9 @@ backlog), while any issue may be cited. A new programme adds its issues here as 
 ## Matrix 3 — Requirement → tests
 
 Requirements `FR-27`-`FR-45`, `TR-12`-`TR-22` and `GR-13` have no OSN syllabus section, so they
-are traced by issue (Matrix 2) and by the tests below. Every path must exist; the checker
+are traced by issue (Matrix 2) and by the tests below. The `IDENTITY-CAC-*` rows list the
+tests that already lock the CaC compatibility contract (#251, #254); requirements whose evidence
+is a later rename step (F3/F4) have no row yet. Every path must exist; the checker
 (`checkTestLinks`) fails on a missing file, an unregistered ID or a row with no test.
 
 | Requirement | Tests |
@@ -132,6 +143,11 @@ are traced by issue (Matrix 2) and by the tests below. Every path must exist; th
 | TR-21 | `tests/unit/check-learner-assets.test.ts`, `tests/integration/check-learner-assets.test.ts` |
 | TR-22 | `tests/unit/cross-program-refs.test.ts`, `tests/integration/cli-dewasa-coding.test.ts`, `tests/integration/cli-kuliah-coding.test.ts`, `tests/integration/cli-smp-coding.test.ts`, `tests/integration/cli-sma-coding.test.ts`, `tests/integration/cli-sd-coding.test.ts`, `tests/integration/cli-tk-coding.test.ts` |
 | GR-13 | `tests/unit/module-schema.test.ts`, `tests/unit/render-module.test.ts` |
+| IDENTITY-CAC-002 | `tests/integration/registry-invariants.test.ts`, `tests/integration/cli-contract.test.ts` |
+| IDENTITY-CAC-003 | `tests/integration/cli-cac-alias.test.ts`, `tests/unit/run-cli-caller-name.test.ts`, `tests/integration/cli-contract.test.ts` |
+| IDENTITY-CAC-004 | `tests/integration/cli-contract.test.ts`, `tests/integration/cli-cac-alias.test.ts` |
+| IDENTITY-CAC-005 | `tests/integration/registry-invariants.test.ts` |
+| IDENTITY-CAC-009 | `tests/integration/cli-contract.test.ts` |
 
 Every requirement ID in `register.md` appears in at least one row of Matrix 1 or Matrix 2, and
 every ID appearing in any matrix is defined in `register.md` — `scripts/check-requirements.ts`

@@ -2,7 +2,8 @@
  * Verifies `docs/requirements/register.md` and `docs/requirements/traceability.md`
  * against the completeness rule described in `docs/requirements/README.md`:
  *
- *   1. Every requirement ID is unique and matches `^(FR|TR|OR|ER|GR)-\d{2}$`.
+ *   1. Every requirement ID is unique and matches `^(FR|TR|OR|ER|GR)-\d{2}$`
+ *      or, for the platform-identity requirements, `^IDENTITY-CAC-\d{3}$`.
  *   2. Every requirement row has a non-empty source, statement, verification and
  *      issue reference, and the verification method is one of the fixed set.
  *   3. Every issue reference is a well-formed `#<positive integer>` token (no
@@ -18,6 +19,12 @@
  *      the register, and vice versa.
  *   7. The optional "Requirement → tests" matrix names only registered IDs,
  *      each with at least one test path that exists in the repository.
+ *
+ *   8. `docs/requirements/identity-cac.md` (the source of the `IDENTITY-CAC-nnn`
+ *      requirements) lists unique, contiguous IDs from 001; every one is in the
+ *      register with the identical statement, and the register holds no
+ *      `IDENTITY-CAC-*` ID that identity-cac.md does not define. Rule 6 already
+ *      forces each registered ID into the issue matrix of `traceability.md`.
  *
  * All parsing is done against plain Markdown tables — no remark/markdown-it
  * dependency — so the functions here are pure string-in, string-out and are
@@ -42,7 +49,10 @@ export const STATUSES = ["planned", "implemented", "verified"] as const;
 
 export type Status = (typeof STATUSES)[number];
 
-export const REQUIREMENT_ID_PATTERN = /^(FR|TR|OR|ER|GR)-\d{2}$/;
+export const REQUIREMENT_ID_PATTERN = /^((FR|TR|OR|ER|GR)-\d{2}|IDENTITY-CAC-\d{3})$/;
+
+/** The platform-identity requirement IDs defined in `docs/requirements/identity-cac.md`. */
+export const IDENTITY_CAC_ID_PATTERN = /^IDENTITY-CAC-(\d{3})$/;
 
 /** Smallest issue number that may be cited (issues are positive integers; no upper bound). */
 export const MIN_ISSUE = 1;
@@ -155,6 +165,12 @@ const REGISTER_HEADER = [
 const SECTION_HEADER = ["Syllabus section", "Requirements", "Issues", "Status"];
 const ISSUE_HEADER = ["Issue", "Requirements covered"];
 const TEST_LINK_HEADER = ["Requirement", "Tests"];
+const IDENTITY_HEADER = ["ID", "Kebutuhan (shall)", "Artefak", "Acceptance evidence"];
+
+export interface IdentityRow {
+  readonly id: string;
+  readonly statement: string;
+}
 
 /** A well-formed issue reference: `#` and a positive integer without leading zeros. */
 const ISSUE_TOKEN_PATTERN = /^#[1-9]\d*$/;
@@ -306,6 +322,78 @@ export function parseTraceabilityTests(text: string): TestLinkRow[] {
   }));
 }
 
+/** Parses the `ID | Kebutuhan (shall) | ...` table of `identity-cac.md`. */
+export function parseIdentityCac(text: string): IdentityRow[] {
+  const table = parseMarkdownTables(text).find((candidate) =>
+    sameHeader(candidate.header, IDENTITY_HEADER),
+  );
+  if (table === undefined) return [];
+  return table.rows.map((cells) => ({ id: cells[0] ?? "", statement: cells[1] ?? "" }));
+}
+
+/** Rule check 8 from the module docblock: identity-cac.md versus the register. */
+export function checkIdentityCac(
+  identityRows: readonly IdentityRow[],
+  registerRows: readonly RegisterRow[],
+): string[] {
+  const problems: string[] = [];
+
+  if (identityRows.length === 0) {
+    problems.push("identity-cac.md: no requirement rows were found (table header mismatch?)");
+    return problems;
+  }
+
+  const seen = new Map<string, number>();
+  const numbers: number[] = [];
+  for (const row of identityRows) {
+    const match = IDENTITY_CAC_ID_PATTERN.exec(row.id);
+    if (match?.[1] === undefined) {
+      problems.push(`identity-cac.md: ID "${row.id}" does not match ^IDENTITY-CAC-\\d{3}$`);
+      continue;
+    }
+    seen.set(row.id, (seen.get(row.id) ?? 0) + 1);
+    numbers.push(Number.parseInt(match[1], 10));
+  }
+  for (const [id, count] of seen) {
+    if (count > 1) {
+      problems.push(`identity-cac.md: ID "${id}" appears ${count} times (must be unique)`);
+    }
+  }
+  const distinct = [...new Set(numbers)].sort((a, b) => a - b);
+  distinct.forEach((value, index) => {
+    if (value !== index + 1) {
+      problems.push(
+        `identity-cac.md: IDs are not contiguous from IDENTITY-CAC-001 (expected ${String(index + 1).padStart(3, "0")}, found ${String(value).padStart(3, "0")})`,
+      );
+    }
+  });
+
+  const registered = new Map<string, RegisterRow>();
+  for (const row of registerRows) {
+    if (IDENTITY_CAC_ID_PATTERN.test(row.id)) registered.set(row.id, row);
+  }
+  for (const row of identityRows) {
+    if (!IDENTITY_CAC_ID_PATTERN.test(row.id)) continue;
+    const entry = registered.get(row.id);
+    if (entry === undefined) {
+      problems.push(
+        `register.md: ${row.id} is defined in identity-cac.md but absent from the register`,
+      );
+    } else if (entry.statement.trim() !== row.statement.trim()) {
+      problems.push(
+        `register.md: ${row.id} statement differs from identity-cac.md (the register must repeat it verbatim)`,
+      );
+    }
+  }
+  for (const id of registered.keys()) {
+    if (!seen.has(id)) {
+      problems.push(`register.md: ${id} is absent from identity-cac.md, its source of truth`);
+    }
+  }
+
+  return problems;
+}
+
 /** Rule checks 1-3 from the module docblock, scoped to `register.md` alone. */
 export function checkRegister(rows: readonly RegisterRow[]): string[] {
   const problems: string[] = [];
@@ -321,7 +409,9 @@ export function checkRegister(rows: readonly RegisterRow[]): string[] {
     const context = `register.md: ${row.id || "(missing id)"}`;
 
     if (!REQUIREMENT_ID_PATTERN.test(row.id)) {
-      problems.push(`${context}: ID "${row.id}" does not match ^(FR|TR|OR|ER|GR)-\\d{2}$`);
+      problems.push(
+        `${context}: ID "${row.id}" does not match ^((FR|TR|OR|ER|GR)-\\d{2}|IDENTITY-CAC-\\d{3})$`,
+      );
     } else {
       seen.set(row.id, (seen.get(row.id) ?? 0) + 1);
     }
@@ -504,6 +594,7 @@ export function runChecks(
   registerText: string,
   traceabilityText: string,
   fileExists?: (relativePath: string) => boolean,
+  identityText?: string,
 ): CheckResult {
   const registerRows = parseRegister(registerText);
   const sectionRows = parseTraceabilitySections(traceabilityText);
@@ -514,6 +605,9 @@ export function runChecks(
     ...checkRegister(registerRows),
     ...checkTraceability(registerRows, sectionRows, issueRows),
     ...checkTestLinks(registerRows, testRows, fileExists),
+    ...(identityText === undefined
+      ? []
+      : checkIdentityCac(parseIdentityCac(identityText), registerRows)),
   ];
 
   return { registerRows, sectionRows, issueRows, problems };
@@ -533,13 +627,17 @@ async function readRepoFile(relativePath: string): Promise<string> {
 }
 
 if (import.meta.main) {
-  const [registerText, traceabilityText] = await Promise.all([
+  const [registerText, traceabilityText, identityText] = await Promise.all([
     readRepoFile("docs/requirements/register.md"),
     readRepoFile("docs/requirements/traceability.md"),
+    readRepoFile("docs/requirements/identity-cac.md"),
   ]);
 
-  const { problems } = runChecks(registerText, traceabilityText, (relativePath) =>
-    existsSync(join(import.meta.dir, "..", relativePath)),
+  const { problems } = runChecks(
+    registerText,
+    traceabilityText,
+    (relativePath) => existsSync(join(import.meta.dir, "..", relativePath)),
+    identityText,
   );
   console.log(formatProblems(problems));
   process.exit(problems.length === 0 ? 0 : 1);
