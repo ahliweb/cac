@@ -1,0 +1,142 @@
+{
+  "modules": [
+    {
+      "id": "dw-fnd-m1",
+      "title": "Keamanan, privasi, dan etika kerja dengan kode dan AI",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "OWASP Gen AI Security Project, OWASP Top 10 for LLM Applications 2025 (LLM01 Prompt Injection, LLM02 Sensitive Information Disclosure)",
+          "url": "https://genai.owasp.org/llm-top-10/"
+        },
+        {
+          "title": "European Commission, Joint Research Centre, DigComp 3.0, area 4 (hanya pembanding)",
+          "url": "https://joint-research-centre.ec.europa.eu/projects-and-activities/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp/digcomp-framework_en"
+        },
+        {
+          "title": "Python documentation: re, regular expression operations",
+          "url": "https://docs.python.org/3/library/re.html"
+        },
+        {
+          "title": "Git documentation: gitignore",
+          "url": "https://git-scm.com/docs/gitignore"
+        },
+        {
+          "title": "U.S. Copyright Office, Copyright and Artificial Intelligence (hukum AS, bukan hukum Indonesia)",
+          "url": "https://www.copyright.gov/ai/"
+        }
+      ],
+      "moduleCodes": ["DW-FND-M1"],
+      "skkniUnits": [],
+      "track": "FND",
+      "prerequisites": [],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-fnd-m1.md"
+    },
+    {
+      "id": "dw-pkj-m1",
+      "title": "Memetakan pekerjaan berulang",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python Tutorial: an informal introduction to Python",
+          "url": "https://docs.python.org/3/tutorial/introduction.html"
+        }
+      ],
+      "moduleCodes": ["DW-PKJ-M1"],
+      "skkniUnits": [],
+      "track": "PKJ",
+      "prerequisites": ["dw-fnd-m1"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pkj-m1.md"
+    },
+    {
+      "id": "dw-pkj-m2",
+      "title": "Rumus dan pembersihan data lembar kerja",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "LibreOffice Help: Text Functions",
+          "url": "https://help.libreoffice.org/latest/en-US/text/scalc/01/04060110.html"
+        },
+        {
+          "title": "LibreOffice Help: Date & Time Functions",
+          "url": "https://help.libreoffice.org/latest/en-US/text/scalc/01/04060102.html"
+        },
+        {
+          "title": "LibreOffice Help: Logical Functions",
+          "url": "https://help.libreoffice.org/latest/en-US/text/scalc/01/04060105.html"
+        },
+        {
+          "title": "LibreOffice Help: Spreadsheet Functions (termasuk VLOOKUP)",
+          "url": "https://help.libreoffice.org/latest/en-US/text/scalc/01/04060109.html"
+        }
+      ],
+      "moduleCodes": ["DW-PKJ-M2"],
+      "skkniUnits": [],
+      "track": "PKJ",
+      "prerequisites": ["dw-pkj-m1"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pkj-m2.md"
+    },
+    {
+      "id": "dw-pkj-m3",
+      "title": "Pengantar Python untuk data lembar kerja",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python documentation: csv, CSV file reading and writing",
+          "url": "https://docs.python.org/3/library/csv.html"
+        },
+        {
+          "title": "Python Tutorial: more control flow tools (fungsi)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        },
+        {
+          "title": "Python documentation: using Python (pemasangan)",
+          "url": "https://docs.python.org/3/using/index.html"
+        },
+        {
+          "title": "Python documentation: random, generate pseudo-random numbers",
+          "url": "https://docs.python.org/3/library/random.html"
+        }
+      ],
+      "moduleCodes": ["DW-PKJ-M3"],
+      "skkniUnits": [],
+      "track": "PKJ",
+      "prerequisites": ["dw-pkj-m2"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pkj-m3.md"
+    },
+    {
+      "id": "dw-pkj-m4",
+      "title": "Mengolah dan menggabungkan data",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python documentation: csv, CSV file reading and writing",
+          "url": "https://docs.python.org/3/library/csv.html"
+        },
+        {
+          "title": "Python documentation: collections (defaultdict)",
+          "url": "https://docs.python.org/3/library/collections.html"
+        },
+        {
+          "title": "Python Tutorial: data structures (daftar, komprehensi, kamus)",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        }
+      ],
+      "moduleCodes": ["DW-PKJ-M4"],
+      "skkniUnits": [],
+      "track": "PKJ",
+      "prerequisites": ["dw-pkj-m3"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pkj-m4.md"
+    }
+  ]
+}
