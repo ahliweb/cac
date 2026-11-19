@@ -27,7 +27,7 @@ Dokumen ini independen dan bukan dokumen resmi Puspresnas, IA TOKI, atau IOI.
 ## Tujuh program
 
 Tujuh program terdaftar di `data/programs.json` (ADR-0006); semuanya diperiksa
-`osn validate`. Peta jenjang lengkap ada di
+`cac validate`. Peta jenjang lengkap ada di
 [`docs/programs/README.md`](../programs/README.md).
 
 | Program (`--program`) | Isi | Sumber | Dukungan alat |
@@ -66,7 +66,7 @@ pesan `this programme has no modules.json`.
 
 | Istilah | Arti |
 | --- | --- |
-| Corpus | Kumpulan berkas JSON data kurikulum satu program di `data/<program>/`. Divalidasi skema; `osn validate` memeriksanya. |
+| Corpus | Kumpulan berkas JSON data kurikulum satu program di `data/<program>/`. Divalidasi skema; `cac validate` memeriksanya. |
 | Program | Satu kurikulum yang terdaftar di `data/programs.json` (ADR-0006): `osn`, `sma-coding`, `tk-coding`, `sd-coding`, `smp-coding`, `kuliah-coding`, dan `dewasa-coding`. |
 | Modul | Bahan belajar siswa (penjelasan, contoh, latihan) berbentuk Markdown di `content/<program>/modules/`, diindeks `data/<program>/modules.json`. Konten karangan, bukan transkripsi silabus (ADR-0007). |
 | Draf (`draf`) | Status modul atau dokumen yang belum ditinjau manusia. Selalu ditandai spanduk `DRAF`. Status lain: `ditinjau`, `disetujui`, `ditarik`. |

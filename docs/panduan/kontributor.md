@@ -177,5 +177,5 @@ changelog. Rinciannya di [`pemilik-peninjau.md`](pemilik-peninjau.md) dan
 - [`docs/development/testing.md`](../development/testing.md): strategi tes dan gerbang cakupan.
 - [`docs/development/ci-cd.md`](../development/ci-cd.md): apa yang dijalankan CI.
 - [`docs/development/releasing.md`](../development/releasing.md): changeset, versi, rilis.
-- [`docs/cli/README.md`](../cli/README.md): referensi lengkap perintah `osn`.
+- [`docs/cli/README.md`](../cli/README.md): referensi lengkap perintah `cac` (alias `osn`).
 - [`docs/governance/privacy.md`](../governance/privacy.md): kebijakan privasi.

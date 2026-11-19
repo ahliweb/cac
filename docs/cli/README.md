@@ -1,27 +1,39 @@
-# `osn` CLI reference
+# `cac` CLI reference
 
-The `osn` command-line interface (issue #19) is the outermost layer of
+The `cac` command-line interface (Curriculum as Code, CaC; product
+AhliKoding Curriculum; issue #19) is the outermost layer of
 this repository (see `docs/architecture/README.md`'s "four layers"): it
 dispatches subcommands that call into `src/domain/` (and, for later
 issues, `src/render/`). It has no external CLI framework dependency
 (TR-11) -- subcommand dispatch, flag parsing, and help text are all
 hand-rolled in `src/cli/run-cli.ts`.
 
-The CLI is also available as `cac` (Curriculum as Code, the canonical
-name; entry `src/cli/cac.ts`, `bin.cac` in `package.json`). `osn` is an
-alias with identical behaviour: both entries call the same `runCli`, so
-commands, flags, `--json` output and exit codes are the same, and only the
-name printed in usage, help and message prefixes follows the name you
-typed (`cac validate: ...` versus `osn validate: ...`). Titles of saved
-Markdown artefacts (for example `# osn checklist:`) do not change. The rest
-of this reference writes `osn`; read it as `cac` or `osn`.
+`cac` is the canonical name (entry `src/cli/cac.ts`, `bin.cac` in
+`package.json`). `osn` is a compatible alias with identical behaviour
+(entry `src/cli/index.ts`, `bin.osn`): both entries call the same
+`runCli`, so commands, flags, `--json` output and exit codes are the same,
+and only the name printed in usage, help and message prefixes follows the
+name you typed (`cac validate: ...` versus `osn validate: ...`). The alias
+prints no deprecation warning. Titles of saved Markdown artefacts (for
+example `# osn checklist:`) do not change. This reference writes `cac`;
+every example also works with `osn`, apart from the message prefix.
+
+Alias policy (ADR-0009, owner decision K3 of 2026-11-20): the `osn` alias
+is removed only in a MAJOR release, at the earliest six months after the
+removal is announced and only when no consumer still uses it. The
+programme id `osn` (`data/osn/`, `--program osn`) is unrelated to the alias
+and does not change. This is an independent curriculum tool, not official
+Puspresnas / IA TOKI / IOI material.
 
 ## Synopsis
 
 ```sh
-osn <command> [options]
+cac <command> [options]
 
 # equivalently, during development, without installing a bin symlink:
+bun run src/cli/cac.ts <command> [options]
+
+# the compatible alias (same behaviour, `osn` in message prefixes):
 bun run src/cli/index.ts <command> [options]
 ```
 
@@ -32,9 +44,9 @@ These are recognised regardless of which subcommand (if any) is present:
 | Flag | Meaning |
 | --- | --- |
 | `-h`, `--help` | With no subcommand: print global usage (this command list) and exit `0`. After a subcommand (`osn <command> --help`): print that command's own help and exit `0`, without running the command. |
-| `-V`, `--version` | Print the version from `package.json` (never hard-coded) and exit `0`. Takes precedence over everything else -- even `osn --version bogus-command` prints the version rather than failing on the unknown command. |
-| `--json` | Emit machine-readable JSON output instead of human-readable text, for commands that support it (`validate`, `plan`, `report`, `checklist` and `privacy-check`). **`render` ignores it**: `osn render --json ...` still prints Markdown (a rendered sheet is a document, not data), so a script must not expect JSON from it. May appear before or after the subcommand name. |
-| `--program <id>` | Per-command (`validate`, `plan`, `render`, `report`, `checklist`): the registered programme (`data/programs.json`) whose corpus to use; default `osn`. An unknown id is a usage error (exit `2`) naming the registered ids. Write it after the subcommand name. `osn validate` without it validates every registered programme. All seven registered programmes are supported by `validate`. `plan` (`--track`), `render lembar-siswa` (`--week <week-code>`) and `render modul` additionally support `sma-coding`; `render modul` also supports each of the five other coding programmes (`tk-coding`, `kuliah-coding`, `dewasa-coding`, `sd-coding`, `smp-coding`) once its `data/<id>/modules.json` exists (and `--lembar` for the learner sheet of `tk-coding` and `sd-coding`), and exits `2` with "this programme has no modules.json" until then; for those five `plan` and `render lembar-siswa` exit `2` with "belum didukung untuk program <id>" (the message says `plan` and `render lembar-siswa` exist only for `osn` and `sma-coding`, and that the programme is supported by `render modul`, `validate` and `check:fidelity`). `render weekly`, `render checkpoint` and `render sop`, `report` and `checklist` read the OSN corpus only and exit `2` with the "belum didukung" message for every programme other than `osn` (for `sma-coding` it lists the commands that do work), rather than present OSN data as that programme's. `privacy-check` takes no `--program`: it always scans all of `data/`. |
+| `-V`, `--version` | Print the version from `package.json` (never hard-coded) and exit `0`. Takes precedence over everything else -- even `cac --version bogus-command` prints the version rather than failing on the unknown command. |
+| `--json` | Emit machine-readable JSON output instead of human-readable text, for commands that support it (`validate`, `plan`, `report`, `checklist` and `privacy-check`). **`render` ignores it**: `cac render --json ...` still prints Markdown (a rendered sheet is a document, not data), so a script must not expect JSON from it. May appear before or after the subcommand name. |
+| `--program <id>` | Per-command (`validate`, `plan`, `render`, `report`, `checklist`): the registered programme (`data/programs.json`) whose corpus to use; default `osn`. An unknown id is a usage error (exit `2`) naming the registered ids. Write it after the subcommand name. `cac validate` without it validates every registered programme. All seven registered programmes are supported by `validate`. `plan` (`--track`), `render lembar-siswa` (`--week <week-code>`) and `render modul` additionally support `sma-coding`; `render modul` also supports each of the five other coding programmes (`tk-coding`, `kuliah-coding`, `dewasa-coding`, `sd-coding`, `smp-coding`) once its `data/<id>/modules.json` exists (and `--lembar` for the learner sheet of `tk-coding` and `sd-coding`), and exits `2` with "this programme has no modules.json" until then; for those five `plan` and `render lembar-siswa` exit `2` with "belum didukung untuk program <id>" (the message says `plan` and `render lembar-siswa` exist only for `osn` and `sma-coding`, and that the programme is supported by `render modul`, `validate` and `check:fidelity`). `render weekly`, `render checkpoint` and `render sop`, `report` and `checklist` read the OSN corpus only and exit `2` with the "belum didukung" message for every programme other than `osn` (for `sma-coding` it lists the commands that do work), rather than present OSN data as that programme's. `privacy-check` takes no `--program`: it always scans all of `data/`. |
 
 ## Exit codes
 
@@ -43,8 +55,8 @@ Applied consistently across every subcommand:
 | Code | Meaning |
 | --- | --- |
 | `0` | Success. |
-| `1` | Validation failure -- the command ran to completion but found a problem (e.g. `osn validate` found one or more corpus findings). |
-| `2` | Usage error -- unknown command, bad flag, or a missing required argument (including running `osn` with no subcommand at all). |
+| `1` | Validation failure -- the command ran to completion but found a problem (e.g. `cac validate` found one or more corpus findings). |
+| `2` | Usage error -- unknown command, bad flag, or a missing required argument (including running `cac` with no subcommand at all). |
 
 An uncaught internal error inside a command is also reported as exit `1`,
 after being caught and printed as a plain message -- never as a raw stack
@@ -56,7 +68,7 @@ trace.
 
 1. Checks `--version`/`-V` first, anywhere in argv.
 2. Finds the first argv token that does not start with `-` as the
-   subcommand name. No such token (bare `osn`, or only flags) -> global
+   subcommand name. No such token (bare `cac`, or only flags) -> global
    usage, exit `0` if `--help`/`-h` was given, else exit `2`.
 3. Looks the subcommand up in a registry (`src/cli/commands/index.ts`'s
    `COMMAND_REGISTRY`, keyed by name). Unknown name -> an error naming
@@ -75,13 +87,13 @@ exporting a `Command` (`src/cli/command.ts`'s interface: `name`,
 array in `src/cli/commands/index.ts` -- nothing in `run-cli.ts` itself
 needs to change.
 
-## `osn validate`
+## `cac validate`
 
 Validates `data/programs.json` (the programme registry) and the **entire** corpus of one programme (every `data/<program>/*.json` file) or of every registered programme in
 one pass and reports **every** problem found, not just the first.
 
 ```sh
-osn validate [options]
+cac validate [options]
 ```
 
 Which audit runs for a programme is decided by the programme table
@@ -189,7 +201,7 @@ whose programme is not registered is a draft and is not validated.
    an `id` that is not the lower-case unit code; a missing or blank Markdown
    body; for `tk-coding` and `sd-coding` also a missing or blank learner sheet
    (`content/<program>/lembar/<id>.md`) or one with a name or identity field of
-   the child (see `osn render modul --lembar`). A reference file that a used
+   the child (see `cac render modul --lembar`). A reference file that a used
    field needs but that is missing or invalid is itself reported ("cannot be
    checked"), never skipped silently.
 
@@ -208,7 +220,7 @@ whose programme is not registered is a draft and is not validated.
 
 ### The `sma-coding` programme
 
-`osn validate --program sma-coding` validates `data/sma-coding/` with its
+`cac validate --program sma-coding` validates `data/sma-coding/` with its
 own file set and schemas (`SMA_DATA_FILE_REGISTRY` in
 `src/domain/sma-corpus-audit.ts`; schemas `src/schema/sma-*.ts`), not the
 OSN invariants above. The eight files transcribe the owner-approved
@@ -281,7 +293,7 @@ check-smp-coding-fidelity: OK -- every cell of data/smp-coding/*.json matches do
 
 Each of the five further coding programmes has its own file set and schemas
 and its own corpus audit, picked from the programme table (ADR-0008); the
-numbers below are the corpus files `osn validate` counts (the optional
+numbers below are the corpus files `cac validate` counts (the optional
 `modules.json` is not counted and, like `sma-coding`'s, is exempt from the
 "unregistered file" check; its rules are above). All five syllabi are
 owner-approved (2026-11-19).
@@ -294,30 +306,30 @@ owner-approved (2026-11-19).
 | `sd-coding` | v1.1.0 | 5 (`bridges`, `cp-elements`, `cp-mapping`, `structure`, `weeks`) | `src/schema/sd-*.ts`, `src/domain/sd-corpus-audit.ts` |
 | `smp-coding` | v1.2.0 | 7 (`bridge`, `club`, `cp-elements`, `cp-mapping`, `structure`, `uncovered`, `weeks`) | `src/schema/smp-*.ts`, `src/domain/smp-corpus-audit.ts` |
 
-Real output of `osn validate` (all registered programmes; each block is one
+Real output of `cac validate` (all registered programmes; each block is one
 programme, the path is shortened):
 
 ```text
-$ osn validate
-osn validate: programme "osn", corpus at /path/to/repo/data/osn
+$ cac validate
+cac validate: programme "osn", corpus at /path/to/repo/data/osn
 OK -- 22 data file(s) validated, 0 problem(s) found.
 
-osn validate: programme "sma-coding", corpus at /path/to/repo/data/sma-coding
+cac validate: programme "sma-coding", corpus at /path/to/repo/data/sma-coding
 OK -- 8 data file(s) validated, 0 problem(s) found.
 
-osn validate: programme "tk-coding", corpus at /path/to/repo/data/tk-coding
+cac validate: programme "tk-coding", corpus at /path/to/repo/data/tk-coding
 OK -- 7 data file(s) validated, 0 problem(s) found.
 
-osn validate: programme "kuliah-coding", corpus at /path/to/repo/data/kuliah-coding
+cac validate: programme "kuliah-coding", corpus at /path/to/repo/data/kuliah-coding
 OK -- 6 data file(s) validated, 0 problem(s) found.
 
-osn validate: programme "dewasa-coding", corpus at /path/to/repo/data/dewasa-coding
+cac validate: programme "dewasa-coding", corpus at /path/to/repo/data/dewasa-coding
 OK -- 8 data file(s) validated, 0 problem(s) found.
 
-osn validate: programme "sd-coding", corpus at /path/to/repo/data/sd-coding
+cac validate: programme "sd-coding", corpus at /path/to/repo/data/sd-coding
 OK -- 5 data file(s) validated, 0 problem(s) found.
 
-osn validate: programme "smp-coding", corpus at /path/to/repo/data/smp-coding
+cac validate: programme "smp-coding", corpus at /path/to/repo/data/smp-coding
 OK -- 7 data file(s) validated, 0 problem(s) found.
 ```
 
@@ -328,7 +340,7 @@ OK -- 7 data file(s) validated, 0 problem(s) found.
 | `--program <id>` | Validate only this registered programme. Without it (and without `--data-dir`) every programme in `data/programs.json` is validated. An unknown id is a usage error (exit `2`). |
 | `--json` | Emit JSON instead of grouped text: `{ ok, program, findings, summary }` for one programme, `{ ok, programs: [{ program, ok, findings, summary }, ...] }` when all programmes are validated. |
 | `--data-dir <path>` | Validate a different corpus directory for one programme (`--program`, default `osn`) instead of its registered `data/<program>/`. Primarily for testing against a deliberately corrupted fixture corpus (see `tests/integration/cli-validate-fixtures.test.ts`) -- not needed for normal use. |
-| `-h`, `--help` | Show `osn validate`'s own help. |
+| `-h`, `--help` | Show `cac validate`'s own help. |
 
 ### Exit codes
 
@@ -341,13 +353,13 @@ OK -- 7 data file(s) validated, 0 problem(s) found.
 ### Example: clean corpus
 
 ```text
-$ osn validate --program osn
-osn validate: programme "osn", corpus at /path/to/repo/data/osn
+$ cac validate --program osn
+cac validate: programme "osn", corpus at /path/to/repo/data/osn
 OK -- 22 data file(s) validated, 0 problem(s) found.
 ```
 
 ```sh
-$ osn validate --program osn --json
+$ cac validate --program osn --json
 {
   "program": "osn",
   "ok": true,
@@ -366,8 +378,8 @@ $ osn validate --program osn --json
 ### Example: a corrupted corpus (illustrative)
 
 ```text
-$ osn validate --program osn
-osn validate: programme "osn", corpus at /path/to/repo/data/osn
+$ cac validate --program osn
+cac validate: programme "osn", corpus at /path/to/repo/data/osn
 FAILED -- 2 problem(s) found (2 error(s), 0 warning(s)):
 
 curriculum-categories.json:
@@ -384,7 +396,7 @@ problem without re-reading the whole corpus.
 
 ### How the validator is testable against a fixture, not just the real corpus
 
-`osn validate`'s actual checking logic (`auditCorpus` in
+`cac validate`'s actual checking logic (`auditCorpus` in
 `src/domain/corpus-audit.ts`) is a pure function of an injected
 `CorpusSource` (a `file name -> parsed JSON` map) -- it never statically
 imports `data/<program>/*.json` itself, unlike every other module under
@@ -398,7 +410,7 @@ why this module could not simply reuse
 `assertNoDanglingCitations`/`findDanglingCitations` from
 `src/domain/registers.ts`).
 
-## `osn plan`
+## `cac plan`
 
 Generates the dated 28-week cohort calendar against the §4 operational
 syllabus: for each week, its date range, focus, two session dates,
@@ -407,26 +419,26 @@ to proceed past that gate. Implements TR-07 (deterministic, UTC-only date
 arithmetic), FR-23 and OR-03.
 
 ```sh
-osn plan --start <YYYY-MM-DD> [options]
+cac plan --start <YYYY-MM-DD> [options]
 ```
 
 The actual planning logic (`buildCohortPlan`) lives in
-`src/domain/cohort-plan.ts` as a pure function with no I/O -- `osn plan`
+`src/domain/cohort-plan.ts` as a pure function with no I/O -- `cac plan`
 itself (`src/cli/commands/plan.ts`) is only flag parsing plus the two
 renderers in `src/cli/format-plan.ts` (`formatPlanMarkdown`,
-`formatPlanJson`), exactly the same split `osn validate` uses around
+`formatPlanJson`), exactly the same split `cac validate` uses around
 `auditCorpus`.
 
 ### Options
 
 | Flag | Meaning |
 | --- | --- |
-| `--program <id>` | The registered programme whose corpus to use. Default `osn`; an unknown id is exit `2`. `sma-coding` has its own plan (see "`osn plan --program sma-coding`" below); the flags in this table other than `--program`, `--format` and `--json` are OSN-only. |
+| `--program <id>` | The registered programme whose corpus to use. Default `osn`; an unknown id is exit `2`. `sma-coding` has its own plan (see "`cac plan --program sma-coding`" below); the flags in this table other than `--program`, `--format` and `--json` are OSN-only. |
 | `--start <date>` | The cohort's start date, ISO `YYYY-MM-DD`. **Required.** |
 | `--exclude <d1,d2,...>` | A comma-separated list of ISO `YYYY-MM-DD` dates to exclude (school holidays, exam days, ...). Optional; defaults to none. Order and duplicates don't matter -- the output normalises this list (deduplicated, ascending). |
 | `--target-stage <id>` | Report against a target competition stage's intensive-preparation week: one of `osn-k`, `osn-p`, `osn-nasional`, `toki-ioi-extension` (`src/domain/structure.ts`'s `STAGE_IDS`). Optional. See "Target-stage informational entry and schedule-slip warning" below. |
 | `--format <md\|json>` | Output format. Default `md`. `--json` (the global flag) is equivalent to `--format json`; an explicit `--format` wins if both are given. |
-| `-h`, `--help` | Show `osn plan`'s own help. |
+| `-h`, `--help` | Show `cac plan`'s own help. |
 
 ### Week-shifting rule
 
@@ -494,7 +506,7 @@ millisecond instant of UTC midnight on that calendar day, arithmetic is
 plain millisecond addition, and every value is read back out via
 `Date#getUTC*` accessors only (never `Date#setDate`/`Date#getDate`, which
 are sensitive to the host's local timezone) -- see
-`src/domain/cohort-plan.ts`'s docblock. No date library is used. `osn plan`
+`src/domain/cohort-plan.ts`'s docblock. No date library is used. `cac plan`
 is a pure function of its flags: identical `--start`/`--exclude`/
 `--target-stage`/`--format` produce byte-identical stdout, on any machine,
 regardless of host timezone.
@@ -510,7 +522,7 @@ regardless of host timezone.
 ### Example
 
 ```text
-$ osn plan --start 2026-01-05 --exclude 2026-01-07 --target-stage osn-k
+$ cac plan --start 2026-01-05 --exclude 2026-01-07 --target-stage osn-k
 # osn plan: cohort calendar
 
 Start date: 2026-01-05
@@ -531,16 +543,16 @@ Note week 1's date range is extended by one day (05-12, not 05-11) and its
 second session date shifts from 08 to 09, since 2026-01-07 was excluded --
 see "Week-shifting rule" and "Session-date rule" above.
 
-### `osn plan --program sma-coding`
+### `cac plan --program sma-coding`
 
-For the `sma-coding` programme `osn plan` prints the **plan per semester of
+For the `sma-coding` programme `cac plan` prints the **plan per semester of
 one track** instead of a dated cohort calendar (owner decision 2026-11-18,
 issue #77). It is derived only from the validated `data/sma-coding/` corpus
 (`auditSmaCorpus` plus the module-index checks run first; a corpus that fails
-them exits `1` with a pointer to `osn validate --program sma-coding`).
+them exits `1` with a pointer to `cac validate --program sma-coding`).
 
 ```sh
-osn plan --program sma-coding --track <A|B|C|D|E> [--kelas <X|XI|XII>] [--semester <kode>] [--format md|json]
+cac plan --program sma-coding --track <A|B|C|D|E> [--kelas <X|XI|XII>] [--semester <kode>] [--format md|json]
 ```
 
 | Flag | Meaning |
@@ -566,7 +578,7 @@ semester 1 starts with the shared foundation block `FND-X1-M1..M7` (the same
 for every track) before the track's weeks `M8..M14`. Output is
 byte-deterministic.
 
-Real output (`osn plan --program sma-coding --track A --semester X1`, abridged):
+Real output (`cac plan --program sma-coding --track A --semester X1`, abridged):
 
 ```text
 # Rencana Pembelajaran -- Jalur A: Algoritmik dengan C++
@@ -608,7 +620,7 @@ Sumber: silabus versi 1.4.1, tanggal 2026-11-19.
 ...
 ```
 
-A pengayaan track states so in the header (`osn plan --program sma-coding --track D --semester XI1`, first lines):
+A pengayaan track states so in the header (`cac plan --program sma-coding --track D --semester XI1`, first lines):
 
 ```text
 # Rencana Pembelajaran -- Jalur D: Kecerdasan Buatan dan Analisis Data
@@ -622,11 +634,11 @@ Catatan: jalur D adalah pengayaan di luar rumusan CP; tidak dihitung sebagai pem
 A kelas X semester of track E (which starts in kelas XI) is a usage error:
 
 ```text
-$ osn plan --program sma-coding --track E --kelas X
-osn plan: jalur E tidak memiliki semester X1: jalur ini dimulai di kelas XI.
+$ cac plan --program sma-coding --track E --kelas X
+cac plan: jalur E tidak memiliki semester X1: jalur ini dimulai di kelas XI.
 ```
 
-## `osn render`
+## `cac render`
 
 Turns the validated curriculum corpus into Markdown artefacts: for
 mentors (issue #21) a weekly session plan, a checkpoint sheet, or a
@@ -634,12 +646,12 @@ one-page SOP card, and for students a weekly learner sheet (issue #53)
 or a learning module (issue #54).
 
 ```sh
-osn render weekly --week <1-28> [--out <path>] [--force]
-osn render checkpoint --number <1-7> [--out <path>] [--force]
-osn render sop [--out <path>] [--force]
-osn render lembar-siswa --week <1-28> [--out <path>] [--force]
-osn render modul [--program <id>] --id <module-id> [--out <path>] [--force]
-osn render modul --program <tk-coding|sd-coding> --id <module-id> --lembar [--out <path>] [--force]
+cac render weekly --week <1-28> [--out <path>] [--force]
+cac render checkpoint --number <1-7> [--out <path>] [--force]
+cac render sop [--out <path>] [--force]
+cac render lembar-siswa --week <1-28> [--out <path>] [--force]
+cac render modul [--program <id>] --id <module-id> [--out <path>] [--force]
+cac render modul --program <tk-coding|sd-coding> --id <module-id> --lembar [--out <path>] [--force]
 ```
 
 The actual rendering logic (`renderWeeklyPlan`, `renderCheckpointSheet`,
@@ -647,18 +659,18 @@ The actual rendering logic (`renderWeeklyPlan`, `renderCheckpointSheet`,
 `src/render/checkpoint.ts`, `src/render/sop.ts` and
 `src/render/student-sheet.ts` as **pure functions from validated
 data to a Markdown string** -- no file I/O, no `process` access, no dates,
-no randomness. `osn render` itself (`src/cli/commands/render.ts`) is only
+no randomness. `cac render` itself (`src/cli/commands/render.ts`) is only
 subcommand/flag parsing plus the thin `--out`/`--force` file-writing layer
-(`src/cli/output-writer.ts`), exactly the same split `osn plan` uses
+(`src/cli/output-writer.ts`), exactly the same split `cac plan` uses
 around `buildCohortPlan`.
 
 Every renderer fails loudly on an out-of-range request: it throws a named
 `RenderRequestError` (`src/render/errors.ts`) naming the valid range,
 before emitting anything, rather than ever producing a partially-filled
-document. `osn render` catches that one error class and reports it as a
+document. `cac render` catches that one error class and reports it as a
 clean usage error (exit `2`).
 
-### `osn render weekly`
+### `cac render weekly`
 
 Renders a mentor-ready plan for one week of the §4 28-week syllabus: the
 week number and focus, its content list, its learning outcome, the
@@ -674,7 +686,7 @@ required to proceed past it.
 | --- | --- |
 | `--week <n>` | The week number, `1`-`28`. **Required.** |
 
-### `osn render checkpoint`
+### `cac render checkpoint`
 
 Renders a checkpoint sheet for one of the seven §4.1 phase gates: the
 gate evidence required to proceed, the §6.1 rubric weights table (with
@@ -686,14 +698,14 @@ fields (from `listKpiDefinitions()`).
 | --- | --- |
 | `--number <n>` | The checkpoint number, `1`-`7`. **Required.** |
 
-### `osn render sop`
+### `cac render sop`
 
 Renders a one-page mentor SOP card: the §5.2 seven-step SOP, its minimum
 test checklist, its four post-Accepted questions, and the §5.3 hint
 policy ladder together with the mandatory re-solve obligation it carries
 from level 4 onward. Takes no subcommand-specific flags.
 
-### `osn render lembar-siswa`
+### `cac render lembar-siswa`
 
 Renders an Indonesian-language learner sheet ("lembar belajar siswa") for
 one week, derived **only** from the validated corpus -- it adds headings
@@ -717,7 +729,7 @@ a learner is stored).
 | --- | --- |
 | `--week <n>` | The week number, `1`-`28`. **Required.** |
 
-### `osn render lembar-siswa --program sma-coding`
+### `cac render lembar-siswa --program sma-coding`
 
 The learner sheet of one week of the `sma-coding` programme (issue #77),
 derived **only** from the validated corpus. `--week` takes a **week code**
@@ -743,9 +755,9 @@ objective plus one for the output); and a footer with the syllabus name,
 version and date from the programme registry. There is no field for a name or
 school (ADR-0004), and the output is byte-deterministic. `--out` and `--force`
 behave as for the other render subcommands. The week data are the same that
-`osn plan --program sma-coding` prints.
+`cac plan --program sma-coding` prints.
 
-Real output (`osn render lembar-siswa --program sma-coding --week FND-X1-M3`):
+Real output (`cac render lembar-siswa --program sma-coding --week FND-X1-M3`):
 
 ```text
 # Lembar Belajar Siswa -- Minggu FND-X1-M3
@@ -782,10 +794,10 @@ Sumber: Silabus Pembelajaran Coding SMA, versi 1.4.1, tanggal 2026-11-19.
 Unknown code (exit `2`):
 
 ```text
-osn render lembar-siswa: kode minggu "A-X1-M1" tidak dikenal untuk program sma-coding. Contoh kode yang sah: jalur A: A-X1-M8 .. A-XII2-M14; jalur B: B-X1-M8 .. B-XII2-M14; jalur C: C-X1-M8 .. C-XII2-M14; jalur D: D-X1-M8 .. D-XII2-M14; jalur E: E-XI1-M1 .. E-XII2-M14; blok fondasi FND: FND-X1-M1 .. FND-X1-M7.
+cac render lembar-siswa: kode minggu "A-X1-M1" tidak dikenal untuk program sma-coding. Contoh kode yang sah: jalur A: A-X1-M8 .. A-XII2-M14; jalur B: B-X1-M8 .. B-XII2-M14; jalur C: C-X1-M8 .. C-XII2-M14; jalur D: D-X1-M8 .. D-XII2-M14; jalur E: E-XI1-M1 .. E-XII2-M14; blok fondasi FND: FND-X1-M1 .. FND-X1-M7.
 ```
 
-A week of a pengayaan track (`osn render lembar-siswa --program sma-coding --week D-XI1-M5`, middle of the output):
+A week of a pengayaan track (`cac render lembar-siswa --program sma-coding --week D-XI1-M5`, middle of the output):
 
 ```text
 ## Butir CP terkait
@@ -795,7 +807,7 @@ Jalur D adalah pengayaan di luar rumusan CP; minggu jalur ini tidak dihitung seb
 - F-AD-a: sumber data terbuka, terpercaya, legal untuk keputusan dan prediksi. Tingkat irisan: **Irisan terdekat.** Sedang: rumusan menyebut "prediksi" dan "tanpa atau dengan komputer", tetapi tidak menyebut AI atau pembelajaran mesin.
 ```
 
-### `osn render modul`
+### `cac render modul`
 
 Renders one learning module of the programme (`--program`, default
 `osn`; every programme with a `modules.json` is supported: `sma-coding`,
@@ -820,7 +832,7 @@ footer line `Irisan penafsiran dengan CP Fase Fondasi (bukan pemenuhan CP):
 An unknown `--id` (the error lists the known ids), a missing `--id`, a
 programme without `modules.json` (the message is `this programme has no
 modules.json`), an invalid index, a missing or blank body, or a dangling
-`refId` is exit `2` (run `osn validate` for the full findings).
+`refId` is exit `2` (run `cac validate` for the full findings).
 
 | Flag | Meaning |
 | --- | --- |
@@ -838,7 +850,7 @@ A `tk-coding` module is a **teacher guide**; its status banner is the same as
 for every programme, and `cpOverlap` is shown as an interpreted overlap:
 
 ```text
-$ osn render modul --program tk-coding --id tk-a1-m1
+$ cac render modul --program tk-coding --id tk-a1-m1
 # Kegiatan sehari-hariku
 
 > **DRAF — belum ditinjau.** Modul ini ditulis oleh tim (termasuk draf yang disusun agen AI) dan belum ditinjau oleh manusia. Isinya dapat memuat kekeliruan; periksa ke rujukan resmi di bagian bawah sebelum dipakai.
@@ -861,7 +873,7 @@ same title and banner, a `**Lembar anak**` label, the sheet verbatim and a
 footer with status and programme; no `## Rujukan` section.
 
 ```text
-$ osn render modul --program tk-coding --id tk-a1-m1 --lembar
+$ cac render modul --program tk-coding --id tk-a1-m1 --lembar
 # Kegiatan sehari-hariku
 
 **Lembar anak**
@@ -881,16 +893,16 @@ A child's sheet must have **no name or identity field of the child**
 (privacy, ADR-0004; `src/domain/learner-sheet.ts`): a heading, a table
 header or a fill-in line such as `Nama:`, `Nama anak`, `NIS`, `Tanggal
 lahir`, `Alamat`, `Identitas` -- bare or filled in. The renderer refuses such
-a sheet (exit `1`, nothing on stdout) and `osn validate` reports it. A line
+a sheet (exit `1`, nothing on stdout) and `cac validate` reports it. A line
 that merely begins with the word (`Nama binatang: kucing`) is not a field.
 
 ```text
-$ osn render modul --program tk-coding --id tk-a1-m1 --lembar
-osn render modul: the learner sheet of "Kegiatan sehari-hariku" has a name or identity field of the child: line 3 ("Nama: ______"). A child's sheet carries none; remove it from the sheet.
+$ cac render modul --program tk-coding --id tk-a1-m1 --lembar
+cac render modul: the learner sheet of "Kegiatan sehari-hariku" has a name or identity field of the child: line 3 ("Nama: ______"). A child's sheet carries none; remove it from the sheet.
 [exit 1]
 
-$ osn render modul --program smp-coding --id x --lembar
-osn render modul: --lembar berlaku untuk program tk-coding dan sd-coding saja (panduan guru plus lembar anak); program smp-coding tidak punya lembar anak.
+$ cac render modul --program smp-coding --id x --lembar
+cac render modul: --lembar berlaku untuk program tk-coding dan sd-coding saja (panduan guru plus lembar anak); program smp-coding tidak punya lembar anak.
 [exit 2]
 ```
 
@@ -903,15 +915,15 @@ the OSN corpus, or only `sma-coding`'s); the message is honest about it and
 names `render modul`:
 
 ```text
-$ osn plan --program tk-coding --track A
-osn plan: belum didukung untuk program tk-coding: perintah ini membaca corpus OSN (program "osn") saja dan tidak akan menyajikannya sebagai data tk-coding. "osn plan" dan "osn render lembar-siswa" hanya tersedia untuk program "osn" dan "sma-coding"; program tk-coding didukung oleh "osn render modul --program tk-coding --id <id>" (tambahkan --lembar untuk lembar anak; perlu data/tk-coding/modules.json), "osn validate --program tk-coding" dan "bun run check:fidelity --program tk-coding".
+$ cac plan --program tk-coding --track A
+cac plan: belum didukung untuk program tk-coding: perintah ini membaca corpus OSN (program "osn") saja dan tidak akan menyajikannya sebagai data tk-coding. "cac plan" dan "cac render lembar-siswa" hanya tersedia untuk program "osn" dan "sma-coding"; program tk-coding didukung oleh "cac render modul --program tk-coding --id <id>" (tambahkan --lembar untuk lembar anak; perlu data/tk-coding/modules.json), "cac validate --program tk-coding" dan "bun run check:fidelity --program tk-coding".
 [exit 2]
 ```
 
 ### Checking a module's code examples
 
 `bun run check:module-code` (`scripts/check-module-code.ts`, run in CI
-after `osn validate`) extracts the fenced blocks from
+after `cac validate`) extracts the fenced blocks from
 `content/**/modules/*.md` and checks them without running anything:
 
 - ```` ```cpp ```` -- `g++ -std=c++17 -fsyntax-only`.
@@ -960,17 +972,17 @@ any error.
 
 The same command also fails when a module body
 (`content/<program>/modules/*.md`) or a sheet (`lembar/*.md`) begins with
-its own `# ` title: `osn render modul` already prints the H1 from the index,
+its own `# ` title: `cac render modul` already prints the H1 from the index,
 so the title would appear twice. This is an **error** (exit code 1;
 `DUPLICATE_TITLE_IS_ERROR` in `scripts/check-learner-assets.ts` is `true`).
 
-### `--out` / `--force` (all `osn render` subcommands)
+### `--out` / `--force` (all `cac render` subcommands)
 
 | Flag | Meaning |
 | --- | --- |
 | `--program <id>` | The registered programme whose corpus to use. Default `osn`; an unknown id is exit `2`. `sma-coding` is supported by `render lembar-siswa` (with a week code, see below) and `render modul`; `weekly`, `checkpoint` and `sop` read the OSN corpus only and exit `2` with "belum didukung untuk program <id>" for every programme other than `osn`; the five other coding programmes (everything but `osn` and `sma-coding`) also refuse `render lembar-siswa` the same way (the message now names `render modul`), and support `render modul` once they have a `modules.json` (`--lembar` for `tk-coding` and `sd-coding`), else exit `2` with "this programme has no modules.json". |
 | `--out <path>` | Write the rendered Markdown to this path instead of printing it to stdout. Resolved against the process's current working directory. |
-| `--force` | Required to overwrite a file that already exists at `--out`. Without it, an existing file is left byte-for-byte untouched (the write itself never opens the file for truncation) and the command exits `2` -- a mentor should never silently lose an edited worksheet to a repeated `osn render ... --out` invocation. |
+| `--force` | Required to overwrite a file that already exists at `--out`. Without it, an existing file is left byte-for-byte untouched (the write itself never opens the file for truncation) and the command exits `2` -- a mentor should never silently lose an edited worksheet to a repeated `cac render ... --out` invocation. |
 
 Without `--out`, the rendered Markdown is printed to stdout and nothing is
 written to disk.
@@ -986,7 +998,7 @@ written to disk.
 ### Example
 
 ```text
-$ osn render checkpoint --number 1
+$ cac render checkpoint --number 1
 # Checkpoint 1 (after week 4: Search/sort dasar & recursion)
 
 ## Gate evidence required (§4.1)
@@ -1002,7 +1014,7 @@ $ osn render checkpoint --number 1
 ...
 ```
 
-## `osn report`
+## `cac report`
 
 Computes the seven §6.3 mentor KPI metrics (`src/domain/kpi.ts`), a §13.1
 step-4 postmortem error-taxonomy breakdown, and a §13.1 step-5
@@ -1011,15 +1023,15 @@ scheduled-re-solves listing (`src/domain/assessment.ts`'s
 Implements FR-25, OR-09, OR-10.
 
 ```sh
-osn report --records <path> [options]
+cac report --records <path> [options]
 ```
 
 The actual reporting logic (`buildKpiReport`) lives in
-`src/domain/report.ts` as a pure function with no I/O -- `osn report`
+`src/domain/report.ts` as a pure function with no I/O -- `cac report`
 itself (`src/cli/commands/report.ts`) is only input-format detection, the
 **privacy gate** (below), schema validation, and the two renderers in
 `src/cli/format-report.ts` (`formatReportMarkdown`, `formatReportJson`),
-exactly the same split `osn validate`/`osn plan` use around their own
+exactly the same split `cac validate`/`cac plan` use around their own
 domain functions.
 
 ### Options
@@ -1031,8 +1043,8 @@ domain functions.
 | `--by <topic\|week\|none>` | Group the KPI metrics by topic family or by §4 week number, in addition to the always-present overall (ungrouped) section. Default `none`. `topic` and `week` are a documented limit: they always exit `2` with an explanatory message. See "Grouping: a documented limit" below. |
 | `--format <md\|json>` | Output format. Default `md`. |
 | `--out <path>` | Write the rendered report to this path instead of stdout. |
-| `--force` | Required to overwrite a file that already exists at `--out`. Without it, an existing file is left byte-for-byte untouched and the command exits `2` -- same safety property as `osn render`'s `--out`/`--force` (`src/cli/output-writer.ts`). |
-| `-h`, `--help` | Show `osn report`'s own help. |
+| `--force` | Required to overwrite a file that already exists at `--out`. Without it, an existing file is left byte-for-byte untouched and the command exits `2` -- same safety property as `cac render`'s `--out`/`--force` (`src/cli/output-writer.ts`). |
+| `-h`, `--help` | Show `cac report`'s own help. |
 
 ### Input format detection
 
@@ -1068,8 +1080,8 @@ real identifier accidentally present in an export is never echoed back
 into a terminal, a CI log, or a redirected `--out` file. For example:
 
 ```text
-$ osn report --records ./export-with-a-mistake.jsonl
-osn report: privacy refusal: 1 field(s) shaped like a direct or indirect personal identifier were
+$ cac report --records ./export-with-a-mistake.jsonl
+cac report: privacy refusal: 1 field(s) shaped like a direct or indirect personal identifier were
 found (see ADR-0004). Refusing to process "./export-with-a-mistake.jsonl". Values are never logged
 -- only field paths and record indices are shown below. Remove or rename these fields in the
 source data and re-run:
@@ -1103,7 +1115,7 @@ ships no `problemId` -> topic-family registry and no timestamp -> §4-week
 registry** -- there is no `data/osn/*.json` file mapping specific problem ids
 to topic families, and mapping a timestamp to a week number needs a
 cohort's own start date and excluded-days list (`src/domain/cohort-plan.ts`),
-which `osn report` has no flag to supply.
+which `cac report` has no flag to supply.
 
 Consequently, **`--by topic` and `--by week` are a documented limit of the
 CLI, not a pending feature**: they always exit `2`, and the pesan galat
@@ -1111,7 +1123,7 @@ CLI, not a pending feature**: they always exit `2`, and the pesan galat
 supported alternatives. For `--by topic`:
 
 ```text
-osn report: --by topic is not supported by the CLI: a learning record carries a problemId but no topic family (rumpun materi), and no problem-to-topic mapping is shipped with the CLI. Supported: omit --by (or use --by none) for the overall report; export --format json and group by topic outside the CLI. This is a documented limit (docs/cli/README.md, "osn report").
+cac report: --by topic is not supported by the CLI: a learning record carries a problemId but no topic family (rumpun materi), and no problem-to-topic mapping is shipped with the CLI. Supported: omit --by (or use --by none) for the overall report; export --format json and group by topic outside the CLI. This is a documented limit (docs/cli/README.md, "cac report").
 ```
 
 `--by week` gives the same message with its own reason (a record carries
@@ -1152,13 +1164,13 @@ Regardless of `--by`, every report contains:
 | Code | Meaning |
 | --- | --- |
 | `0` | Success. |
-| `1` | Invalid input: one or more records failed schema validation (every failing index listed), or a privacy refusal (see above). Both cases exit `1`; a privacy refusal is distinguished by its message (always starting `"osn report: privacy refusal:"`), never by a different exit code -- see `src/cli/commands/report.ts`'s docblock for why this repository did not add a fourth exit code just for this one case. |
+| `1` | Invalid input: one or more records failed schema validation (every failing index listed), or a privacy refusal (see above). Both cases exit `1`; a privacy refusal is distinguished by its message (always starting `"cac report: privacy refusal:"`), never by a different exit code -- see `src/cli/commands/report.ts`'s docblock for why this repository did not add a fourth exit code just for this one case. |
 | `2` | Usage error: `--records` missing, the given path cannot be read, an unknown `--by`, an unknown `--format`, `--by topic`/`--by week` (a documented limit, see "Grouping" above), or `--out` already exists without `--force`. |
 
 ### Example
 
 ```text
-$ osn report --records data/osn/samples/learning-records.sample.jsonl
+$ cac report --records data/osn/samples/learning-records.sample.jsonl
 # osn report: mentor KPI dashboard
 
 Generated from 58 learning record(s), grouped by "none".
@@ -1198,7 +1210,7 @@ kind (ADR-0004). It exists so this command (and its tests) have real input
 to run against without this repository ever holding real learner data;
 **it must never be replaced with real cohort data.**
 
-## `osn privacy-check`
+## `cac privacy-check`
 
 A CI-checkable governance control (issue #23, GR-04): recursively scans
 every `.json`/`.jsonl` file under `data/` — including nested directories
@@ -1209,15 +1221,15 @@ hoc scan `tests/unit/learning-record.test.ts` already ran (top-level
 detail: enforcement mechanism".
 
 ```sh
-osn privacy-check [options]
+cac privacy-check [options]
 ```
 
 The actual scanning logic (`scanEntriesForDirectIdentifiers`) lives in
 `src/domain/privacy-scan.ts` as a pure function over an injected entry
-list — `osn privacy-check` itself (`src/cli/commands/privacy-check.ts`)
+list — `cac privacy-check` itself (`src/cli/commands/privacy-check.ts`)
 is only the recursive directory read (`src/cli/privacy-scan-loader.ts`)
 plus the two renderers in `src/cli/format-privacy-check.ts`, exactly the
-same split `osn validate` uses around `auditCorpus`.
+same split `cac validate` uses around `auditCorpus`.
 
 ### What it checks
 
@@ -1243,7 +1255,7 @@ the enforcement.
 
 A file that is not valid JSON (or a `.jsonl` line that is not valid JSON)
 is skipped and reported separately as a `parseIssues` entry — this is
-`osn validate`'s concern (schema/JSON conformance), not this control's;
+`cac validate`'s concern (schema/JSON conformance), not this control's;
 one malformed file never prevents every other file from being scanned,
 and a parse issue never affects this command's exit code.
 
@@ -1253,14 +1265,14 @@ and a parse issue never affects this command's exit code.
 | --- | --- |
 | `--json` | Emit `{ ok, findings, parseIssues, summary }` instead of grouped text. |
 | `--data-dir <path>` | Scan a different directory instead of the repository's real `data/` (primarily for testing against a fixture directory). |
-| `-h`, `--help` | Show `osn privacy-check`'s own help. |
+| `-h`, `--help` | Show `cac privacy-check`'s own help. |
 
 ### Finding shape: never the value
 
 Every finding carries exactly three fields: `file` (or, for a `.jsonl`
 file, `"<file>:<line>"`), `path` (the dot-separated in-file path to the
 offending key's parent, or `"(root)"`), and `key` (the offending key
-itself) — **never the value found there**, matching `osn report`'s
+itself) — **never the value found there**, matching `cac report`'s
 privacy-gate refusal pattern (`src/cli/commands/report.ts`'s docblock): a
 real identifier accidentally committed must never be echoed back into a
 terminal, a CI log, or a `--json` payload.
@@ -1276,16 +1288,16 @@ terminal, a CI log, or a `--json` payload.
 ### Example: clean corpus
 
 ```text
-$ osn privacy-check
-osn privacy-check: scanning /path/to/repo/data
+$ cac privacy-check
+cac privacy-check: scanning /path/to/repo/data
 OK -- 33 file(s) scanned, 0 direct-identifier-shaped key(s) found.
 ```
 
 ### Example: a planted identifier (illustrative)
 
 ```text
-$ osn privacy-check --data-dir ./fixture-with-a-mistake
-osn privacy-check: scanning ./fixture-with-a-mistake
+$ cac privacy-check --data-dir ./fixture-with-a-mistake
+cac privacy-check: scanning ./fixture-with-a-mistake
 FAILED -- 1 direct-identifier-shaped key(s) found in 3 file(s) scanned. Values are never shown -- only file, path, and key:
 
 samples/learning-records.sample.jsonl:12:
@@ -1294,11 +1306,11 @@ samples/learning-records.sample.jsonl:12:
 
 ### CI
 
-`osn privacy-check` runs in CI (`.github/workflows/ci.yml`, the "Privacy
-check" step) immediately after `osn validate`, on every push and pull
+`cac privacy-check` runs in CI (`.github/workflows/ci.yml`, the "Privacy
+check" step) immediately after `cac validate`, on every push and pull
 request, via `bun run privacy-check`.
 
-## `osn checklist`
+## `cac checklist`
 
 Renders the §14.1 eight-item cohort-readiness checklist, the §14.2 eight
 operational rules and mentor quick-pointer callout, and the latest §14.2
@@ -1306,7 +1318,7 @@ rule 8 syllabus-check status (issue #25), together with this operational
 corpus's own `syllabusVersion`/`syllabusDate`.
 
 ```sh
-osn checklist [options]
+cac checklist [options]
 ```
 
 The actual data lives in `data/osn/readiness-checklist.json` (the eight §14.1
@@ -1325,7 +1337,7 @@ last syllabus check" is necessarily relative to *some* current date. `osn
 checklist` itself (`src/cli/commands/checklist.ts`) is the one place that
 reads the wall clock, then passes that single `asOf` to both the Markdown
 renderer and the `--format json` builder (`src/cli/format-checklist.ts`),
-exactly the same split `osn plan`/`osn render` use around their own pure
+exactly the same split `cac plan`/`cac render` use around their own pure
 functions.
 
 ### Options
@@ -1335,12 +1347,12 @@ functions.
 | `--format <md\|json>` | Output format. Default `md`. `--json` (the global flag) is equivalent to `--format json`; an explicit `--format` wins if both are given. |
 | `--program <id>` | The registered programme whose corpus to use. Default `osn`; an unknown id is exit `2`. every programme other than `osn` is registered but not supported: exit `2`, "belum didukung untuk program <id>" (for example `sma-coding`). |
 | `--out <path>` | Write the rendered checklist to this path instead of stdout. |
-| `--force` | Required to overwrite a file that already exists at `--out`. Without it, an existing file is left byte-for-byte untouched and the command exits `2` -- same safety property as `osn render`'s/`osn report`'s `--out`/`--force` (`src/cli/output-writer.ts`). |
-| `-h`, `--help` | Show `osn checklist`'s own help. |
+| `--force` | Required to overwrite a file that already exists at `--out`. Without it, an existing file is left byte-for-byte untouched and the command exits `2` -- same safety property as `cac render`'s/`cac report`'s `--out`/`--force` (`src/cli/output-writer.ts`). |
+| `-h`, `--help` | Show `cac checklist`'s own help. |
 
 ### Contents
 
-Regardless of `--format`, `osn checklist` reports:
+Regardless of `--format`, `cac checklist` reports:
 
 - **The corpus version** -- `syllabusVersion`/`syllabusDate` from
   `data/osn/readiness-checklist.json` (`operationsCorpusVersion()` in
@@ -1369,7 +1381,7 @@ Regardless of `--format`, `osn checklist` reports:
 ### Example
 
 ```text
-$ osn checklist
+$ cac checklist
 # osn checklist: cohort readiness & operational rules
 
 Corpus version: 2.0 (2026-09-04)
@@ -1399,7 +1411,7 @@ Problem Solving -> C++ -> Complexity -> Math/Logic -> Complete Search -> Greedy 
 Extension hanya setelah core stabil.
 ```
 
-See `docs/operations/runbook.md` for how `osn checklist` fits into the
+See `docs/operations/runbook.md` for how `cac checklist` fits into the
 cohort-start procedure, and `docs/operations/syllabus-check.md` for the
 full §14.2 rule 8 syllabus-check procedure this command's status line
 summarises.

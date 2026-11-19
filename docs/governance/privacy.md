@@ -39,7 +39,7 @@ defines:
 - **Policy** (this document, and `docs/architecture/data-classification.md`)
   — what that data means privacy-wise and how it must be handled once a
   platform actually holds it.
-- **A CI-checkable control** (`osn privacy-check`, below) — an automated
+- **A CI-checkable control** (`cac privacy-check`, below) — an automated
   scan that fails the build if this repository's own `data/` directory
   ever grows a field shaped like a direct personal identifier.
 
@@ -284,7 +284,7 @@ enough to reconstruct *who did what, to which scope, when*, without ever
 needing to reproduce *what the data actually said*.
 
 **What must never be logged: identifier values.** This repository already
-establishes the pattern to follow, in `osn report`'s privacy-gate refusal
+establishes the pattern to follow, in `cac report`'s privacy-gate refusal
 (`src/cli/commands/report.ts`): when it refuses a file containing a
 personal-identifier-shaped field, it names the field's **path** and the
 **record index** it was found in, but never the value at that path — "so
@@ -389,14 +389,14 @@ incident procedure) belongs to the security policy, issue
 the requirement so this document's coverage of the §10 callout is
 complete, without duplicating that document's detail.
 
-## The automated check: `osn privacy-check`
+## The automated check: `cac privacy-check`
 
 The "no direct identifier in `data/`" rule above is not just stated here
 — it is enforced mechanically, twice:
 
 1. `tests/unit/learning-record.test.ts` scans every top-level
    `data/<program>/*.json` file (a unit test, run by `bun test`).
-2. **`osn privacy-check`** (`src/cli/commands/privacy-check.ts`) promotes
+2. **`cac privacy-check`** (`src/cli/commands/privacy-check.ts`) promotes
    that scan to a first-class, CLI-invocable, CI-enforced governance
    control: it walks `data/` **recursively** (reaching `data/osn/samples/`)
    and reads **`.jsonl` files too** (reaching
@@ -406,12 +406,12 @@ The "no direct identifier in `data/`" rule above is not just stated here
 ```sh
 bun run privacy-check
 # equivalently:
-osn privacy-check [--data-dir <path>] [--json]
+cac privacy-check [--data-dir <path>] [--json]
 ```
 
 It exits `0` clean, `1` if any finding is present, `2` on a usage error.
 Every finding names the file (or, for a `.jsonl` file, `<file>:<line>`),
 the in-file path to the offending key, and the key itself — **never the
-value**. See `docs/cli/README.md`'s "osn privacy-check" section for full
+value**. See `docs/cli/README.md`'s "cac privacy-check" section for full
 usage, and the CI workflow (`.github/workflows/ci.yml`) for where it runs
-(after `osn validate`, on every push and pull request).
+(after `cac validate`, on every push and pull request).

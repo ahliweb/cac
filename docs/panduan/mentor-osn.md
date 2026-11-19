@@ -2,8 +2,9 @@
 
 Untuk mentor yang menjalankan kohort pembinaan OSN Informatika 28 minggu
 (program `osn`). Prasyarat: [`mulai-cepat.md`](mulai-cepat.md) selesai dan
-`bun run validate` exit 0. Di halaman ini `osn <perintah>` berarti
-`bun run src/cli/index.ts <perintah>`.
+`bun run validate` exit 0. Di halaman ini `cac <perintah>` berarti
+`bun run src/cli/cac.ts <perintah>` (`osn` adalah alias lama yang
+berperilaku sama).
 
 Siklus kerja lengkap (awal kohort, mingguan, kontes-postmortem-upsolve,
 tinjauan bulanan) ada di [`docs/operations/runbook.md`](../operations/runbook.md).
@@ -14,14 +15,14 @@ Panduan ini adalah versi "perintah apa untuk keperluan apa".
 | Saya ingin | Perintah |
 | --- | --- |
 | Memastikan data kurikulum utuh sebelum kohort | `bun run validate` dan `bun run privacy-check` |
-| Daftar periksa kesiapan kohort dan aturan operasional | `osn checklist` |
-| Kalender 28 minggu bertanggal | `osn plan --start <YYYY-MM-DD> --exclude <tanggal,...>` |
-| Rencana sesi satu minggu | `osn render weekly --week <1-28>` |
-| Lembar checkpoint satu gerbang | `osn render checkpoint --number <1-7>` |
-| Kartu SOP satu halaman | `osn render sop` |
-| Lembar belajar untuk siswa | `osn render lembar-siswa --week <1-28>` |
-| Modul materi untuk siswa | `osn render modul --id <id-modul>` |
-| Laporan KPI dari catatan belajar | `osn report --records <berkas>` |
+| Daftar periksa kesiapan kohort dan aturan operasional | `cac checklist` |
+| Kalender 28 minggu bertanggal | `cac plan --start <YYYY-MM-DD> --exclude <tanggal,...>` |
+| Rencana sesi satu minggu | `cac render weekly --week <1-28>` |
+| Lembar checkpoint satu gerbang | `cac render checkpoint --number <1-7>` |
+| Kartu SOP satu halaman | `cac render sop` |
+| Lembar belajar untuk siswa | `cac render lembar-siswa --week <1-28>` |
+| Modul materi untuk siswa | `cac render modul --id <id-modul>` |
+| Laporan KPI dari catatan belajar | `cac report --records <berkas>` |
 | Menyimpan hasil ke berkas | tambahkan `--out <berkas>` (dan `--force` untuk menimpa) |
 
 ## Sebelum kohort mulai
@@ -29,10 +30,10 @@ Panduan ini adalah versi "perintah apa untuk keperluan apa".
 ```sh
 bun run validate
 bun run privacy-check
-osn checklist
+cac checklist
 ```
 
-`osn checklist` mencetak versi corpus, status pemeriksaan silabus terakhir,
+`cac checklist` mencetak versi corpus, status pemeriksaan silabus terakhir,
 delapan butir kesiapan (§14.1), delapan aturan operasional (§14.2), dan
 penunjuk cepat mentor. Cuplikan nyata:
 
@@ -66,7 +67,7 @@ Jangan memulai Minggu 1 selagi ada butir §14.1 yang belum terpenuhi.
 ## Kalender kohort: `plan`
 
 ```sh
-osn plan --start 2027-01-11 --exclude 2027-01-13,2027-03-10 --target-stage osn-k
+cac plan --start 2027-01-11 --exclude 2027-01-13,2027-03-10 --target-stage osn-k
 ```
 
 ```text
@@ -100,7 +101,7 @@ menganggapnya final.
 ## Rencana sesi mingguan: `render weekly`
 
 ```sh
-osn render weekly --week 4
+cac render weekly --week 4
 ```
 
 ```text
@@ -147,8 +148,8 @@ tiket keluar, pengingat SOP tujuh langkah, tangga hint, dan (hanya pada
 minggu gerbang) bukti gerbang. Minggu di luar 1-28 ditolak:
 
 ```text
-$ osn render weekly --week 29
-osn render weekly: renderWeeklyPlan: week 29 is out of range. Valid range: 1-28.
+$ cac render weekly --week 29
+cac render weekly: renderWeeklyPlan: week 29 is out of range. Valid range: 1-28.
 ```
 
 (exit 2.) Cetak atau bagikan rencana ini apa adanya: semua mentor memakai
@@ -159,7 +160,7 @@ rubrik dan kebijakan hint yang sama (runbook §2).
 Pada minggu gerbang (4, 8, 12, 16, 20, 24, 28), selain rencana mingguan:
 
 ```sh
-osn render checkpoint --number 1
+cac render checkpoint --number 1
 ```
 
 Berisi bukti gerbang, bobot rubrik (§6.1), kisi pencatatan A/B/C/D (§6.2),
@@ -178,7 +179,7 @@ dan kolom KPI (§6.3). Nomor 1-7; `--number 8` exit 2.
 ## Kartu SOP: `render sop`
 
 ```sh
-osn render sop
+cac render sop
 ```
 
 Satu halaman: SOP tujuh langkah (§5.2), daftar uji minimal, empat
@@ -187,7 +188,7 @@ pertanyaan setelah Accepted, dan tangga hint. Tanpa opsi tambahan.
 ## Lembar belajar siswa: `render lembar-siswa`
 
 ```sh
-osn render lembar-siswa --week 4
+cac render lembar-siswa --week 4
 ```
 
 Lembar berbahasa Indonesia yang diturunkan hanya dari corpus: cakupan
@@ -219,7 +220,7 @@ panduan ini ditulis, jadi periksa berkas itu atau jalankan `render modul`
 dan lihat spanduknya.
 
 ```sh
-osn render modul --id rekursi
+cac render modul --id rekursi
 ```
 
 ```text
@@ -247,31 +248,31 @@ statusnya, dan periksa isinya lebih dulu. Id yang salah ditolak dengan daftar
 id yang dikenal (exit 2):
 
 ```text
-osn render modul: unknown module "tidak-ada". Known modules: dasar-pemrograman, logika-bitwise, aritmetika, ...
+cac render modul: unknown module "tidak-ada". Known modules: dasar-pemrograman, logika-bitwise, aritmetika, ...
 ```
 
 ## Menyimpan ke berkas: `--out` dan `--force`
 
-Semua `osn render ...` dan `osn checklist` serta `osn report` menerima
+Semua `cac render ...` dan `cac checklist` serta `cac report` menerima
 `--out <berkas>`. Tanpa itu, hasil dicetak ke layar.
 
 ```sh
-osn render weekly --week 4 --out minggu-04.md
+cac render weekly --week 4 --out minggu-04.md
 ```
 
 ```text
-osn render weekly: wrote minggu-04.md
+cac render weekly: wrote minggu-04.md
 ```
 
 Menjalankannya lagi tidak menimpa berkas (supaya lembar yang sudah Anda
 edit tidak hilang):
 
 ```text
-osn render weekly: --out "minggu-04.md" already exists. Use --force to overwrite it.
+cac render weekly: --out "minggu-04.md" already exists. Use --force to overwrite it.
 ```
 
 (exit 2.) Tambahkan `--force` bila memang ingin menimpa:
-`osn render weekly --week 4 --out minggu-04.md --force`.
+`cac render weekly --week 4 --out minggu-04.md --force`.
 
 `--json` (keluaran JSON) bekerja untuk `validate`, `plan`, `report`,
 `checklist`, dan `privacy-check`. Untuk `render` opsi itu tidak mengubah
@@ -279,7 +280,7 @@ apa pun: hasilnya tetap Markdown.
 
 ## Laporan KPI: `report`
 
-`osn report` menghitung tujuh metrik KPI (§6.3), rincian taksonomi kesalahan
+`cac report` menghitung tujuh metrik KPI (§6.3), rincian taksonomi kesalahan
 untuk postmortem, dan jadwal re-solve dari **berkas catatan belajar**
 (`.jsonl`, satu catatan per baris, atau `.json` berupa larik).
 
@@ -292,7 +293,7 @@ untuk postmortem, dan jadwal re-solve dari **berkas catatan belajar**
 Contoh memakai sampel sintetis:
 
 ```sh
-osn report --records data/osn/samples/learning-records.sample.jsonl
+cac report --records data/osn/samples/learning-records.sample.jsonl
 ```
 
 ```text
@@ -325,7 +326,7 @@ Hal yang perlu diketahui:
   tidak pernah nilainya:
 
   ```text
-  osn report: privacy refusal: 1 field(s) shaped like a direct or indirect personal identifier were found (see ADR-0004). Refusing to process "rekaman-salah.jsonl". Values are never logged -- only field paths and record indices are shown below. Remove or rename these fields in the source data and re-run:
+  cac report: privacy refusal: 1 field(s) shaped like a direct or indirect personal identifier were found (see ADR-0004). Refusing to process "rekaman-salah.jsonl". Values are never logged -- only field paths and record indices are shown below. Remove or rename these fields in the source data and re-run:
     - [index 0] (root): key "email"
   ```
 

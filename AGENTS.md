@@ -6,6 +6,14 @@ repository encodes the **Silabus Operasional Pembinaan OSN Informatika
 document — not official Puspresnas / IA TOKI / IOI material. See
 `README.md` for full context.
 
+Identity (ADR-0009): the paradigm is **Curriculum as Code (CaC)**, the
+product is **AhliKoding Curriculum**, the canonical CLI is `cac`, and the
+private package is `curriculum-as-code`. `osn` remains as an identical
+compatible CLI alias (it is removed only in a MAJOR release, at the earliest
+six months after the announcement and with no active consumer). The
+programme id `osn` and `data/osn/` are unchanged. The repository is still
+`ahliweb/osn` until the rename, so URLs here stay `ahliweb/osn`.
+
 This file must stay accurate to the *current* state of the repository, not
 aspiration. It is re-verified against the final implementation at the end
 of the programme ([issue #26](https://github.com/ahliweb/osn/issues/26)).
@@ -17,8 +25,8 @@ Tables, not prose — drift should be visible at a glance.
 | --- | --- |
 | `src/schema/` | Zod schemas that validate curriculum data shapes. Per-programme module-index schemas (ADR-0007, ADR-0008): `module.ts` (OSN), `sma-module.ts`, `tk-module.ts`, `sd-module.ts`, `smp-module.ts`, `kul-module.ts`, `dw-learning-module.ts` (not `dw-module.ts`, which is `module-plan.json`); their shared ADR-0007 rules are in `program-module-common.ts`. |
 | `src/domain/` | Business rules operating on parsed (schema-valid) curriculum data, including the module-index rules per programme (`modules.ts` dispatches to `sma-modules.ts`, `tk-modules.ts`, `sd-modules.ts`, `smp-modules.ts`, `kul-modules.ts`, `dw-modules.ts`; shared helpers in `program-modules-common.ts`) and `learner-sheet.ts` (a child's sheet carries no name or identity field). |
-| `src/cli/` | CLI command handlers (`osn <command>`): `validate`, `plan`, `render` (also `render modul --program <id>` and, for `tk-coding` and `sd-coding`, `--lembar`), `report`, `privacy-check`, `checklist`. `program-registry.ts` is the programme table (id → data files + schemas, audit, module-index hooks, optional fidelity module) that `validate` and `check:fidelity` dispatch through; `fidelity/` holds the per-programme fidelity modules (ADR-0008). |
-| `src/render/` | Generators that turn domain data into mentor-facing output and the student learner sheet (`osn render lembar-siswa`). |
+| `src/cli/` | CLI command handlers (`cac <command>`, canonical; `osn <command>` is an identical alias; entries `cac.ts` and `index.ts` share one dispatcher, `run-cli.ts`): `validate`, `plan`, `render` (also `render modul --program <id>` and, for `tk-coding` and `sd-coding`, `--lembar`), `report`, `privacy-check`, `checklist`. `program-registry.ts` is the programme table (id → data files + schemas, audit, module-index hooks, optional fidelity module) that `validate` and `check:fidelity` dispatch through; `fidelity/` holds the per-programme fidelity modules (ADR-0008). |
+| `src/render/` | Generators that turn domain data into mentor-facing output and the student learner sheet (`cac render lembar-siswa`). |
 | `src/index.ts` | Package entrypoint. |
 | `data/programs.json` | Programme registry (ADR-0006), validated by `src/schema/program.ts`. |
 | `content/` | Authored learning-module bodies, `content/<program>/modules/<id>.md` (ADR-0007). Indexed by `data/<program>/modules.json` (optional per programme; each programme has its own schema: OSN `src/schema/module.ts`, `sma-coding` `sma-module.ts`, `tk-coding` `tk-module.ts`, `sd-coding` `sd-module.ts`, `smp-coding` `smp-module.ts`, `kuliah-coding` `kul-module.ts`, `dewasa-coding` `dw-learning-module.ts`); one module per programme unit (week, course or syllabus module), its id the unit code in lower case. `tk-coding` and `sd-coding` modules are teacher guides with a separate learner sheet for the child in `content/<program>/lembar/<id>.md`, whose SVG illustrations live in `content/<program>/gambar/` (checked by `check:learner-assets`). Module bodies carry no `# ` title and no `## Rujukan` section (both come from the index). Counts as of 2026-11-20, all `draf`: `tk-coding` 48, `sd-coding` 168, `smp-coding` 84, `sma-coding` 281, `kuliah-coding` 24, `dewasa-coding` 36 modules (plus 48 and 168 learner sheets and SVG for TK and SD); `osn` 10, `disetujui`. Never transcribed syllabus content. Do not create an empty `content/<id>/` directory. |
@@ -29,7 +37,7 @@ Tables, not prose — drift should be visible at a glance.
 | `tests/integration/` | Cross-module tests (schema → domain → CLI/render). |
 | `docs/architecture/` | System architecture overview, repository map, and ADRs. |
 | `docs/requirements/` | Requirements register and traceability matrices. |
-| `docs/cli/` | `osn` CLI command reference. |
+| `docs/cli/` | `cac` CLI command reference (documents the `osn` alias and its removal policy). |
 | `docs/panduan/` | Panduan penggunaan berbahasa Indonesia per peran (mentor OSN, guru SMA, siswa, pemilik/peninjau, kontributor); setiap perintah di dalamnya sudah dijalankan. |
 | `docs/development/` | Engineering process docs (testing, CI/CD, releasing). |
 | `docs/governance/` | Privacy policy, security policy, incident-response procedure. |
@@ -64,8 +72,8 @@ table.
 | `bun test` | Run the full test suite. |
 | `bun run test:coverage` | `bun test --coverage`; enforces the 85% lines/functions gate in `bunfig.toml`. |
 | `bun run build` | `bun build ./src/index.ts --outdir dist --target bun`. |
-| `bun run validate` | `osn validate` — validates `data/programs.json` and every registered programme's `data/<program>/*.json` corpus (schema, structural invariants, referential integrity, registry version agreement); `--program <id>` selects one; exits 0 clean / 1 on any finding / 2 on usage error. See `docs/cli/README.md`. |
-| `bun run privacy-check` | `osn privacy-check` — recursively scans `data/` for direct-identifier-shaped keys (GR-04); exits 0 clean / 1 on any finding. |
+| `bun run validate` | `bun run src/cli/index.ts validate` (`cac validate`, run through the `osn` alias entry) — validates `data/programs.json` and every registered programme's `data/<program>/*.json` corpus (schema, structural invariants, referential integrity, registry version agreement); `--program <id>` selects one; exits 0 clean / 1 on any finding / 2 on usage error. See `docs/cli/README.md`. |
+| `bun run privacy-check` | `bun run src/cli/index.ts privacy-check` (`cac privacy-check`, run through the `osn` alias entry) — recursively scans `data/` for direct-identifier-shaped keys (GR-04); exits 0 clean / 1 on any finding. |
 | `bun run check:requirements` | `bun run scripts/check-requirements.ts` — verifies the requirements register and traceability matrices are consistent and exhaustive. |
 | `bun run check:checklist-fidelity` | `bun run scripts/check-checklist-fidelity.ts` — verifies §14.1/§14.2 data matches the source syllabus verbatim. |
 | `bun run check:module-code` | `bun run scripts/check-module-code.ts` — checks the fenced code of `content/**/modules/*.md` without running it: ```` ```cpp ```` with `g++ -std=c++17 -fsyntax-only`; ```` ```arduino ```` the same way against the mock `scripts/fixtures/arduino-mock/Arduino.h` (syntax and types only, not board behaviour); ```` ```python ```` with `python3 -I` `ast.parse` (syntax only); ```` ```ts ````/```` ```typescript ```` and ```` ```js ````/```` ```javascript ```` with `Bun.Transpiler` (syntax only, no type check, nothing run). A fence indented inside a list item is dedented per CommonMark before checking. A block whose info string carries `setengah-jadi` (e.g. ```` ```cpp setengah-jadi ````) is skipped and counted. Fails if `g++` or `python3` is missing. |

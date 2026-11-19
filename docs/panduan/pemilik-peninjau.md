@@ -4,7 +4,8 @@ Untuk pemilik program dan peninjau yang ditunjuknya: meninjau konten
 karangan, memutuskan, dan merilis. Dasar aturannya:
 [ADR-0007](../architecture/adr/0007-authored-learning-content.md) (konten
 karangan dan siklus ulasnya) serta ADR-0006 (banyak program). Di halaman ini
-`osn <perintah>` berarti `bun run src/cli/index.ts <perintah>`.
+`cac <perintah>` berarti `bun run src/cli/cac.ts <perintah>` (`osn` adalah
+alias lama yang berperilaku sama).
 
 ## Dua jenis konten, dua aturan
 
@@ -22,7 +23,7 @@ persetujuan yang tidak Anda pilih.
 ### 1. Baca modulnya
 
 ```sh
-osn render modul --id rekursi
+cac render modul --id rekursi
 ```
 
 Atau buka berkasnya langsung di GitHub:
@@ -92,9 +93,9 @@ berikut; butir khusus yang sudah diketahui perlu dicek per modul dikumpulkan di
 Cara membaca modul program lain (perintahnya sudah dijalankan):
 
 ```sh
-osn render modul --program sd-coding --id sd1-1-m1
-osn render modul --program sd-coding --id sd1-1-m1 --lembar
-osn render modul --program sma-coding --id c-x1-m8
+cac render modul --program sd-coding --id sd1-1-m1
+cac render modul --program sd-coding --id sd1-1-m1 --lembar
+cac render modul --program sma-coding --id c-x1-m8
 ```
 
 Isi modul tidak memuat judul `# ` atau bagian `## Rujukan` sendiri: judul dan
@@ -134,7 +135,7 @@ Keputusan persetujuan adalah hak Anda. Alurnya:
    `data/osn/` yang statusnya diubah tanpa `review`):
 
    ```sh
-   osn validate --program osn --data-dir salinan-uji
+   cac validate --program osn --data-dir salinan-uji
    ```
 
    ```text
@@ -188,7 +189,7 @@ Mengubah data yang bersumber dari silabus resmi tidak dilakukan sambil lalu:
    halaman OSN-K, OSN-P; IOI: `ioinformatics.org/page/syllabus/12`).
    Prosedurnya di [`docs/operations/syllabus-check.md`](../operations/syllabus-check.md).
 3. Implementasi dengan urutan skema, data, domain, tes. Sertakan changeset.
-4. Pemeriksaan kesiapan kohort (`osn checklist`) menampilkan jumlah hari sejak
+4. Pemeriksaan kesiapan kohort (`cac checklist`) menampilkan jumlah hari sejak
    syllabus check terakhir, jadi tanggal tertinggal terlihat.
 
 ## Rilis
@@ -262,11 +263,11 @@ Kandidat tinjauan Anda berikutnya:
 
 - 281 modul draf `sma-coding` di `content/sma-coding/modules/` (fondasi,
   matematika komputasi, cloud, pendamping, dan jalur A, B, C, D, E; baca dengan
-  `osn render modul --program sma-coding --id <id>`, daftar id di
+  `cac render modul --program sma-coding --id <id>`, daftar id di
   `data/sma-coding/modules.json`), issue #125.
 - Modul draf lima program coding lainnya (`tk-coding` 48, `sd-coding` 168,
   `smp-coding` 84, `kuliah-coding` 24, `dewasa-coding` 36), dibaca dengan
-  `osn render modul --program <id> --id <id-modul>`; butir yang perlu dicek
+  `cac render modul --program <id> --id <id-modul>`; butir yang perlu dicek
   dikumpulkan di [`catatan-tinjauan-modul.md`](../programs/catatan-tinjauan-modul.md).
 - Silabus v1.1 (#92), v1.2 (#68, #84, #88), dan v1.3 (#139) sudah Anda
   setujui. Jalur A dan B `sma-coding` belum punya modul materi mingguan.

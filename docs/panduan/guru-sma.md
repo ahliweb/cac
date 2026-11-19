@@ -2,7 +2,8 @@
 
 Untuk guru dan penyelenggara yang memakai silabus pembelajaran coding SMA
 kelas X-XII. Prasyarat: [`mulai-cepat.md`](mulai-cepat.md). Di halaman ini
-`osn <perintah>` berarti `bun run src/cli/index.ts <perintah>`.
+`cac <perintah>` berarti `bun run src/cli/cac.ts <perintah>` (`osn` adalah
+alias lama yang berperilaku sama).
 
 ## Status program, jujur apa adanya
 
@@ -56,11 +57,11 @@ mengizinkan (keputusan pemilik, bagian 9).
 ## Memvalidasi data program
 
 ```sh
-osn validate --program sma-coding
+cac validate --program sma-coding
 ```
 
 ```text
-osn validate: programme "sma-coding", corpus at /.../data/sma-coding
+cac validate: programme "sma-coding", corpus at /.../data/sma-coding
 OK -- 8 data file(s) validated, 0 problem(s) found.
 ```
 
@@ -90,7 +91,7 @@ yang lolos validasi (keputusan pemilik 2026-11-18, issue
 **Rencana per semester satu jalur:**
 
 ```sh
-osn plan --program sma-coding --track A --semester X1
+cac plan --program sma-coding --track A --semester X1
 ```
 
 `--track` wajib (`A`, `B`, `C`, `D`, atau `E`). `--kelas X|XI|XII` memilih dua
@@ -148,7 +149,7 @@ Sumber: silabus versi 1.4.1, tanggal 2026-11-19.
 **Lembar siswa satu minggu**, untuk dibagikan atau dicetak:
 
 ```sh
-osn render lembar-siswa --program sma-coding --week A-X1-M9 --out lembar-A-X1-M9.md
+cac render lembar-siswa --program sma-coding --week A-X1-M9 --out lembar-A-X1-M9.md
 ```
 
 `--week` berisi kode minggu: minggu jalur (`A-X1-M9`, `C-X1-M8`, `D-XI1-M5`,
@@ -211,11 +212,11 @@ Jalur D adalah pengayaan di luar rumusan CP; minggu jalur ini tidak dihitung seb
 Contoh penolakan (exit 2) untuk jalur E di kelas X:
 
 ```sh
-osn plan --program sma-coding --track E --kelas X
+cac plan --program sma-coding --track E --kelas X
 ```
 
 ```text
-osn plan: jalur E tidak memiliki semester X1: jalur ini dimulai di kelas XI.
+cac plan: jalur E tidak memiliki semester X1: jalur ini dimulai di kelas XI.
 ```
 
 ## Yang BELUM didukung alat
@@ -227,11 +228,11 @@ dengan exit 2 supaya data OSN tidak tampil seolah-olah data program SMA
 untuk program ini). Contoh (exit 2):
 
 ```sh
-osn render weekly --week 1 --program sma-coding
+cac render weekly --week 1 --program sma-coding
 ```
 
 ```text
-osn render weekly: belum didukung untuk program sma-coding: perintah ini membaca corpus OSN (program "osn") saja dan tidak akan menyajikannya sebagai data sma-coding. Untuk program sma-coding tersedia "osn plan --program sma-coding --track <jalur>", "osn render lembar-siswa --program sma-coding --week <kode-minggu>", "osn render modul --program sma-coding --id <id>", "osn validate --program sma-coding" dan "bun run check:fidelity --program sma-coding".
+cac render weekly: belum didukung untuk program sma-coding: perintah ini membaca corpus OSN (program "osn") saja dan tidak akan menyajikannya sebagai data sma-coding. Untuk program sma-coding tersedia "cac plan --program sma-coding --track <jalur>", "cac render lembar-siswa --program sma-coding --week <kode-minggu>", "cac render modul --program sma-coding --id <id>", "cac validate --program sma-coding" dan "bun run check:fidelity --program sma-coding".
 ```
 
 Program ini punya perintah baca modul, dan `data/sma-coding/modules.json` sudah
@@ -241,12 +242,12 @@ itu exit 2 dengan pesan `this programme has no modules.json`.)
 Bacalah sebuah modul yang sudah diindeks dengan:
 
 ```sh
-osn render modul --id <id-modul> --program sma-coding
+cac render modul --id <id-modul> --program sma-coding
 ```
 
 Keluarannya memuat judul, spanduk status (modul yang belum `disetujui`
 diawali spanduk DRAF atau DITARIK), isi modul, bagian Rujukan, dan catatan
-status serta program di bagian bawah. `osn validate --program sma-coding`
+status serta program di bagian bawah. `cac validate --program sma-coding`
 ikut memeriksa indeks modul itu: butir CP, kode minggu (termasuk blok
 fondasi `FND-...`), rumpun OSN yang dijembatani, prasyarat (tanpa siklus),
 dan keberadaan berkas isi.
