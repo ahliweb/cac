@@ -5589,6 +5589,171 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii2-m7.md"
+    },
+    {
+      "id": "d-xii2-m8",
+      "title": "Pengujian akhir (kelas XII semester 2)",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M8"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m13"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Cross-validation, evaluating estimator performance",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "scikit-learn: Common pitfalls and recommended practices",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m8.md"
+    },
+    {
+      "id": "d-xii2-m9",
+      "title": "Dokumentasi (kelas XII semester 2)",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M9"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Mitchell dkk. (2019), Model Cards for Model Reporting, FAT* '19",
+          "url": "https://arxiv.org/abs/1810.03993"
+        },
+        {
+          "title": "Hugging Face: Model Cards (contoh format)",
+          "url": "https://huggingface.co/docs/hub/model-cards"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m9.md"
+    },
+    {
+      "id": "d-xii2-m10",
+      "title": "Ulasan etika dan privasi",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M10"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi, JDIH BPK",
+          "url": "https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022"
+        },
+        {
+          "title": "NIST AI 100-1: Artificial Intelligence Risk Management Framework (AI RMF 1.0), Januari 2023",
+          "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m10.md"
+    },
+    {
+      "id": "d-xii2-m11",
+      "title": "Ulasan sejawat (kelas XII semester 2)",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M11"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Common pitfalls and recommended practices",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "Kapoor dan Narayanan (2022), Leakage and the Reproducibility Crisis in ML-based Science",
+          "url": "https://arxiv.org/abs/2207.07048"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m11.md"
+    },
+    {
+      "id": "d-xii2-m12",
+      "title": "Presentasi (kelas XII semester 2)",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M12"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Mitchell dkk. (2019), Model Cards for Model Reporting, FAT* '19",
+          "url": "https://arxiv.org/abs/1810.03993"
+        },
+        {
+          "title": "scikit-learn: Cross-validation, evaluating estimator performance",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m12.md"
+    },
+    {
+      "id": "d-xii2-m13",
+      "title": "Portofolio dan refleksi",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M13"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python: hashlib, secure hashes and message digests",
+          "url": "https://docs.python.org/3/library/hashlib.html"
+        },
+        {
+          "title": "Pineau dkk. (2020), Improving Reproducibility in Machine Learning Research (bacaan tambahan)",
+          "url": "https://arxiv.org/abs/2003.12206"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m13.md"
+    },
+    {
+      "id": "d-xii2-m14",
+      "title": "Asesmen (kelas XII semester 2)",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M14"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Common pitfalls and recommended practices",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m14.md"
     }
   ]
 }
