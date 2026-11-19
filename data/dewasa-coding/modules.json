@@ -539,6 +539,124 @@
       "prerequisites": ["dw-bis-m4"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-bis-m5.md"
+    },
+    {
+      "id": "dw-bis-m6",
+      "title": "Otomasi no-code/low-code",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python documentation: csv, CSV file reading and writing",
+          "url": "https://docs.python.org/3/library/csv.html"
+        },
+        {
+          "title": "Python Tutorial: data structures (set, dictionary)",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        }
+      ],
+      "moduleCodes": ["DW-BIS-M6"],
+      "skkniUnits": [],
+      "track": "BIS",
+      "prerequisites": ["DW-BIS-M5"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-bis-m6.md"
+    },
+    {
+      "id": "dw-bis-m7",
+      "title": "AI untuk usaha",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "OWASP Gen AI Security Project, OWASP Top 10 for LLM Applications 2025 (LLM01 Prompt Injection)",
+          "url": "https://genai.owasp.org/llm-top-10/"
+        },
+        {
+          "title": "U.S. Copyright Office, Copyright and Artificial Intelligence (hukum AS, bukan hukum Indonesia)",
+          "url": "https://www.copyright.gov/ai/"
+        }
+      ],
+      "moduleCodes": ["DW-BIS-M7"],
+      "skkniUnits": [],
+      "track": "BIS",
+      "prerequisites": ["dw-bis-m6"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-bis-m7.md"
+    },
+    {
+      "id": "dw-bis-m8",
+      "title": "Proyek akhir: rencana digital usaha",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python documentation: csv, CSV file reading and writing",
+          "url": "https://docs.python.org/3/library/csv.html"
+        },
+        {
+          "title": "Python documentation: collections (defaultdict)",
+          "url": "https://docs.python.org/3/library/collections.html"
+        }
+      ],
+      "moduleCodes": ["DW-BIS-M8"],
+      "skkniUnits": [],
+      "track": "BIS",
+      "prerequisites": ["dw-bis-m7"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-bis-m8.md"
+    },
+    {
+      "id": "dw-pro-m1",
+      "title": "Lingkungan kerja pengembang dan Git",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Pro Git, Scott Chacon dan Ben Straub (buku daring, Git SCM)",
+          "url": "https://git-scm.com/book/en/v2"
+        },
+        {
+          "title": "Git documentation: gitignore",
+          "url": "https://git-scm.com/docs/gitignore"
+        },
+        {
+          "title": "Git documentation: git-commit",
+          "url": "https://git-scm.com/docs/git-commit"
+        },
+        {
+          "title": "Python Tutorial: virtual environments and packages",
+          "url": "https://docs.python.org/3/tutorial/venv.html"
+        }
+      ],
+      "moduleCodes": ["DW-PRO-M1"],
+      "skkniUnits": ["J.620100.011.01", "J.620100.012.01", "J.620100.026.01"],
+      "track": "PRO",
+      "prerequisites": ["dw-fnd-m1"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pro-m1.md"
+    },
+    {
+      "id": "dw-pro-m2",
+      "title": "Dasar pemrograman terstruktur",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python Tutorial: more control flow tools (kondisi, perulangan, fungsi)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        },
+        {
+          "title": "Python Tutorial: an informal introduction to Python",
+          "url": "https://docs.python.org/3/tutorial/introduction.html"
+        }
+      ],
+      "moduleCodes": ["DW-PRO-M2"],
+      "skkniUnits": ["J.620100.013.01", "J.620100.017.02", "J.620100.010.01"],
+      "track": "PRO",
+      "prerequisites": ["dw-pro-m1"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pro-m2.md"
     }
   ]
 }
