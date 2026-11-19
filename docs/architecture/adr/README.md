@@ -1,7 +1,7 @@
 # Architecture Decision Records
 
 This directory records the significant architectural decisions made for
-`kurikulum-informatika`, in the lightweight ADR format popularised by
+`curriculum-as-code`, in the lightweight ADR format popularised by
 Michael Nygard. An ADR exists to answer, permanently, "why is it built
 this way and not some other way" — without it, the reasoning behind a
 choice like "JSON, not YAML" or "no LMS" lives only in someone's memory

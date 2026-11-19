@@ -114,7 +114,7 @@ langsung; formatnya seperti ini:
 
 ```md
 ---
-"kurikulum-informatika": minor
+"curriculum-as-code": minor
 ---
 
 Ringkasan perubahan dalam satu atau dua kalimat.

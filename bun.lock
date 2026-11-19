@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "kurikulum-informatika",
+      "name": "curriculum-as-code",
       "dependencies": {
         "zod": "^4.6.7",
       },

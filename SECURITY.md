@@ -13,7 +13,7 @@ reads first.
 
 ## Scope
 
-This repository (`kurikulum-informatika`) is curriculum-as-code: a typed,
+This repository (`curriculum-as-code`) is curriculum-as-code: a typed,
 validated, version-controlled representation of the OSN Informatika 2026
 operational syllabus, plus its governance documentation (see `README.md`,
 "What this repository is not"). It is **not** a judge, not an LMS, and
