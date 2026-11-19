@@ -789,6 +789,108 @@
         }
       ],
       "contentPath": "content/kuliah-coding/modules/kul-i-303.md"
+    },
+    {
+      "id": "kul-i-306",
+      "title": "Grafika dan Teknik Interaktif",
+      "courseCodes": ["KUL-I-306"],
+      "knowledgeAreas": ["GIT"],
+      "semester": "S6",
+      "prerequisites": ["kul-i-102"],
+      "audience": "mahasiswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "ACM/IEEE-CS/AAAI Computer Science Curricula 2023: Knowledge Areas (daftar 17 KA)",
+          "url": "https://csed.acm.org/knowledge-areas/"
+        },
+        {
+          "title": "Python 3 Standard Library",
+          "url": "https://docs.python.org/3/library/index.html"
+        },
+        {
+          "title": "MDN: Canvas tutorial",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial"
+        },
+        {
+          "title": "W3C: Understanding Success Criterion 2.3.1, Three Flashes or Below Threshold (WCAG 2.2)",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold.html"
+        }
+      ],
+      "contentPath": "content/kuliah-coding/modules/kul-i-306.md"
+    },
+    {
+      "id": "kul-i-307",
+      "title": "Rekayasa Data dan Pengantar Pembelajaran Mesin Terapan",
+      "courseCodes": ["KUL-I-307"],
+      "knowledgeAreas": ["DM", "AI"],
+      "semester": "S7",
+      "prerequisites": ["kul-i-202"],
+      "audience": "mahasiswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python: sqlite3, antarmuka DB-API untuk SQLite",
+          "url": "https://docs.python.org/3/library/sqlite3.html"
+        },
+        {
+          "title": "SQLite: UPSERT",
+          "url": "https://www.sqlite.org/lang_upsert.html"
+        },
+        {
+          "title": "SQLite: Null Handling",
+          "url": "https://www.sqlite.org/nulls.html"
+        },
+        {
+          "title": "NumPy v1.26 Manual",
+          "url": "https://numpy.org/doc/1.26/"
+        },
+        {
+          "title": "Python: pickle, serialisasi objek (peringatan keamanan)",
+          "url": "https://docs.python.org/3/library/pickle.html"
+        },
+        {
+          "title": "Mitchell dkk.: Model Cards for Model Reporting (arXiv:1810.03993)",
+          "url": "https://arxiv.org/abs/1810.03993"
+        }
+      ],
+      "contentPath": "content/kuliah-coding/modules/kul-i-307.md"
+    },
+    {
+      "id": "kul-i-401",
+      "title": "Proyek Perangkat Lunak Tim",
+      "courseCodes": ["KUL-I-401"],
+      "knowledgeAreas": ["SE", "SEP"],
+      "semester": "S7",
+      "prerequisites": ["KUL-I-204"],
+      "audience": "mahasiswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Semantic Versioning 2.0.0",
+          "url": "https://semver.org/"
+        },
+        {
+          "title": "Keep a Changelog 1.1.0",
+          "url": "https://keepachangelog.com/en/1.1.0/"
+        },
+        {
+          "title": "The Scrum Guide",
+          "url": "https://scrumguides.org/scrum-guide.html"
+        },
+        {
+          "title": "W3C: Understanding Success Criterion 1.4.3, Contrast (Minimum) (WCAG 2.2)",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "ACM/IEEE-CS/AAAI Computer Science Curricula 2023: Knowledge Areas (daftar 17 KA)",
+          "url": "https://csed.acm.org/knowledge-areas/"
+        }
+      ],
+      "contentPath": "content/kuliah-coding/modules/kul-i-401.md"
     }
   ]
 }
