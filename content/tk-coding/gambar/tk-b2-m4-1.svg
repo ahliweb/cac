@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 520" width="600" height="520" role="img" aria-labelledby="t d">
+  <title id="t">Cari kesalahan program teman</title>
+  <desc id="d">Kisi lima kali lima petak dilihat dari atas. Robot di petak pojok kanan bawah menghadap ke atas, ditandai mulai. Bendera tujuan di petak keempat dari kiri pada baris ketiga dari atas. Di bawah kisi ada program empat kartu milik teman, dihubungkan tanda panah: ulang x2, maju, belok kiri, belok kiri. Di sebelah kanan bawah ada satu kartu tanya dulu.</desc>
+  <rect width="600" height="520" fill="#ffffff"/>
+  <rect x="20" y="12" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="76" y="12" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="132" y="12" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="188" y="12" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="244" y="12" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="20" y="68" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="76" y="68" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="132" y="68" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="188" y="68" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="244" y="68" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="20" y="124" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="76" y="124" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="132" y="124" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="188" y="124" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="244" y="124" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="20" y="180" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="76" y="180" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="132" y="180" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="188" y="180" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="244" y="180" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="20" y="236" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="76" y="236" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="132" y="236" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="188" y="236" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="244" y="236" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <path d="M216 174 V130" stroke="#333333" stroke-width="5" stroke-linecap="round"/>
+  <path d="M216 130 L238 140 L216 150 Z" fill="#e53935" stroke="#333333" stroke-width="3" stroke-linejoin="round"/>
+  <g transform="translate(272,264)">
+    <rect x="-20" y="-20" width="40" height="40" rx="8" fill="#b3e5fc" stroke="#333333" stroke-width="4"/>
+    <path d="M-12 -2 L0 -18 L12 -2 Z" fill="#333333"/>
+    <circle cx="-8" cy="10" r="4" fill="#333333"/><circle cx="8" cy="10" r="4" fill="#333333"/>
+  </g>
+  <text x="312" y="270" font-family="sans-serif" font-size="20" text-anchor="start" fill="#333333">mulai</text>
+  <text x="30" y="334" font-family="sans-serif" font-size="20" text-anchor="start" fill="#333333">program temanmu</text>
+  <rect x="30" y="346" width="90" height="82" rx="10" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <path d="M57 366 A15 15 0 1 1 44 375" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round"/>
+  <path d="M35 370 L45 376 L51 364" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="93" y="392" font-family="sans-serif" font-size="26" text-anchor="middle" fill="#333333">x2</text>
+  <text x="75" y="418" font-family="sans-serif" font-size="18" text-anchor="middle" fill="#333333">ulang</text>
+  <path d="M122 387 H138 M130 378 L138 387 L130 396" fill="none" stroke="#333333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="134" y="346" width="90" height="82" rx="10" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <path d="M179 396 V360 M169 370 L179 358 L189 370" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="179" y="418" font-family="sans-serif" font-size="18" text-anchor="middle" fill="#333333">maju</text>
+  <path d="M226 387 H242 M234 378 L242 387 L234 396" fill="none" stroke="#333333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="238" y="346" width="90" height="82" rx="10" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <path d="M291 396 V374 Q291 366 283 366 H265 M273 356 L263 366 L273 376" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="283" y="418" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#333333">belok kiri</text>
+  <path d="M330 387 H346 M338 378 L346 387 L338 396" fill="none" stroke="#333333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="342" y="346" width="90" height="82" rx="10" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <path d="M395 396 V374 Q395 366 387 366 H369 M377 356 L367 366 L377 376" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="387" y="418" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#333333">belok kiri</text>
+  <text x="30" y="470" font-family="sans-serif" font-size="18" text-anchor="start" fill="#333333">lingkari kartu yang keliru</text>
+  <rect x="470" y="436" width="100" height="78" rx="10" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <path d="M498 448 H542 Q548 448 548 454 V476 Q548 482 542 482 H516 L506 492 V482 H498 Q492 482 492 476 V454 Q492 448 498 448 Z" fill="#ffffff" stroke="#333333" stroke-width="3" stroke-linejoin="round"/>
+  <text x="520" y="474" font-family="sans-serif" font-size="26" text-anchor="middle" fill="#333333">?</text>
+  <text x="520" y="510" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#333333">tanya dulu</text>
+</svg>

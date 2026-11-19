@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-labelledby="t d">
+  <title id="t">Rancang lalu bangun</title>
+  <desc id="d">Di atas ada tiga bentuk balok yang tersedia: persegi, persegi panjang, dan segitiga. Di bawahnya ada dua kotak besar putus-putus yang dihubungkan tanda panah: kotak kiri berjudul rencanaku untuk menggambar rencana, kotak kanan berjudul setelah dibangun untuk menggambar hasil bangunan.</desc>
+  <rect width="600" height="400" fill="#ffffff"/>
+  <text x="300" y="30" font-family="sans-serif" font-size="20" text-anchor="middle" fill="#333333">balok yang kita punya</text>
+  <rect x="130" y="46" width="50" height="50" fill="#d7a86e" stroke="#333333" stroke-width="3"/>
+  <rect x="240" y="56" width="100" height="40" fill="#d7a86e" stroke="#333333" stroke-width="3"/>
+  <path d="M410 96 L460 96 L435 46 Z" fill="#d7a86e" stroke="#333333" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="20" y1="124" x2="580" y2="124" stroke="#999999" stroke-width="2" stroke-dasharray="4 6"/>
+  <text x="130" y="158" font-family="sans-serif" font-size="20" text-anchor="middle" fill="#333333">rencanaku</text>
+  <text x="470" y="158" font-family="sans-serif" font-size="20" text-anchor="middle" fill="#333333">setelah dibangun</text>
+  <rect x="20" y="170" width="220" height="210" rx="12" fill="none" stroke="#333333" stroke-width="4" stroke-dasharray="10 8"/>
+  <rect x="360" y="170" width="220" height="210" rx="12" fill="none" stroke="#333333" stroke-width="4" stroke-dasharray="10 8"/>
+  <path d="M268 275 H284 M276 266 L284 275 L276 284" fill="none" stroke="#333333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M298 275 H314 M306 266 L314 275 L306 284" fill="none" stroke="#333333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
