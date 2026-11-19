@@ -2383,6 +2383,153 @@
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd3-2-m7.md",
       "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m7.md"
+    },
+    {
+      "id": "sd2-1-m8",
+      "title": "Kartu \"jika ... maka ...\"",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD2-1-M8"],
+      "cpItems": [],
+      "gradeLevels": [2],
+      "prerequisites": [],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd2-1-m8.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m8.md"
+    },
+    {
+      "id": "sd2-1-m9",
+      "title": "Dua pilihan dalam permainan jalur",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD2-1-M9"],
+      "cpItems": [],
+      "gradeLevels": [2],
+      "prerequisites": ["SD2-1-M8"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd2-1-m9.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m9.md"
+    },
+    {
+      "id": "sd2-1-m10",
+      "title": "Kode warna",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD2-1-M10"],
+      "cpItems": [],
+      "gradeLevels": [2],
+      "prerequisites": ["SD2-1-M1"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd2-1-m10.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m10.md"
+    },
+    {
+      "id": "sd2-1-m11",
+      "title": "Sandi huruf ke angka",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD2-1-M11"],
+      "cpItems": [],
+      "gradeLevels": [2],
+      "prerequisites": ["SD2-1-M10"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd2-1-m11.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m11.md"
+    },
+    {
+      "id": "sd2-1-m12",
+      "title": "Penguatan: labirin kelas",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD2-1-M12"],
+      "cpItems": [],
+      "gradeLevels": [2],
+      "prerequisites": ["SD2-1-M1", "SD2-1-M3"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd2-1-m12.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m12.md"
+    },
+    {
+      "id": "sd2-1-m13",
+      "title": "Proyek mini: labirin dan sandi",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD2-1-M13"],
+      "cpItems": [],
+      "gradeLevels": [2],
+      "prerequisites": ["SD2-1-M10", "SD2-1-M12"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd2-1-m13.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m13.md"
+    },
+    {
+      "id": "sd2-1-m14",
+      "title": "Asesmen dan refleksi",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD2-1-M14"],
+      "cpItems": [],
+      "gradeLevels": [2],
+      "prerequisites": [
+        "SD2-1-M1",
+        "SD2-1-M2",
+        "SD2-1-M3",
+        "SD2-1-M4",
+        "SD2-1-M5",
+        "SD2-1-M6",
+        "SD2-1-M7",
+        "SD2-1-M8",
+        "SD2-1-M9",
+        "SD2-1-M10",
+        "SD2-1-M11",
+        "SD2-1-M12",
+        "SD2-1-M13"
+      ],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd2-1-m14.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m14.md"
     }
   ]
 }
