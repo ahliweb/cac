@@ -4205,6 +4205,199 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii1-m7.md"
+    },
+    {
+      "id": "d-xii1-m1",
+      "title": "Merumuskan proyek akhir",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xi2-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Nielsen Norman Group: User Interviews 101",
+          "url": "https://www.nngroup.com/articles/user-interviews/"
+        },
+        {
+          "title": "scikit-learn: Metrics and scoring",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m1.md"
+    },
+    {
+      "id": "d-xii1-m2",
+      "title": "Studi kasus AI I",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "WHO: Ethics and governance of artificial intelligence for health",
+          "url": "https://www.who.int/publications/i/item/9789240029200"
+        },
+        {
+          "title": "UNESCO: Guidance for generative AI in education and research",
+          "url": "https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m2.md"
+    },
+    {
+      "id": "d-xii1-m3",
+      "title": "Studi kasus AI II",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "UNESCO: Ethics of Artificial Intelligence",
+          "url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics"
+        },
+        {
+          "title": "Undang-Undang Nomor 28 Tahun 2014 tentang Hak Cipta, JDIH BPK",
+          "url": "https://peraturan.bpk.go.id/Details/38690/uu-no-28-tahun-2014"
+        },
+        {
+          "title": "scikit-learn: LinearRegression",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m3.md"
+    },
+    {
+      "id": "d-xii1-m4",
+      "title": "Hukum dan kebijakan",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m3", "d-x2-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi, JDIH BPK",
+          "url": "https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022"
+        },
+        {
+          "title": "Undang-Undang Nomor 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik, JDIH BPK",
+          "url": "https://peraturan.bpk.go.id/Details/37589/uu-no-11-tahun-2008"
+        },
+        {
+          "title": "Undang-Undang Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana, JDIH BPK",
+          "url": "https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m4.md"
+    },
+    {
+      "id": "d-xii1-m5",
+      "title": "Menyiapkan data proyek",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: train_test_split",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html"
+        },
+        {
+          "title": "NumPy: Random Generator",
+          "url": "https://numpy.org/doc/stable/reference/random/generator.html"
+        },
+        {
+          "title": "Creative Commons: CC BY 4.0 (deed, bahasa Indonesia)",
+          "url": "https://creativecommons.org/licenses/by/4.0/deed.id"
+        },
+        {
+          "title": "Portal Satu Data Indonesia",
+          "url": "https://data.go.id"
+        },
+        {
+          "title": "Gebru dkk.: Datasheets for Datasets (bacaan tambahan; bukan sumber isi modul)",
+          "url": "https://arxiv.org/abs/1803.09010"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m5.md"
+    },
+    {
+      "id": "d-xii1-m6",
+      "title": "Garis dasar dan metrik",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: DummyClassifier",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.dummy.DummyClassifier.html"
+        },
+        {
+          "title": "scikit-learn: Metrics and scoring",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "scikit-learn: LogisticRegression",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m6.md"
+    },
+    {
+      "id": "d-xii1-m7",
+      "title": "Iterasi model I",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Cross-validation",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "scikit-learn: cross_validate",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html"
+        },
+        {
+          "title": "scikit-learn: StratifiedKFold",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.StratifiedKFold.html"
+        },
+        {
+          "title": "scikit-learn: Common pitfalls and recommended practices",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m7.md"
     }
   ]
 }
