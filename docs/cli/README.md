@@ -913,6 +913,15 @@ after `osn validate`) extracts the fenced blocks from
   mock API, not evidence of behaviour on a board.
 - ```` ```python ```` -- `python3 -I -c "import ast,sys; ast.parse(sys.stdin.read())"`;
   syntax only.
+- ```` ```ts ```` (also ```` ```typescript ````) and ```` ```js ```` (also
+  ```` ```javascript ````) -- Bun's built-in `Bun.Transpiler` with the `ts` or
+  `js` loader parses the block and the output is discarded; nothing is run and
+  no dependency is added. This is a **syntax check only, not a type check**:
+  `let x: string = 5;` and a call to an undeclared name pass, a top-level
+  `return` passes, and imports are not resolved. Malformed code and a
+  duplicate declaration in one scope are rejected, with the line and column
+  inside the block. JSX is not enabled (```` ```tsx ```` and ```` ```jsx ````
+  blocks are not checked at all).
 
 A fenced block indented inside a list item (for example a fence opened with
 three spaces) is dedented as CommonMark does: the opening fence's
@@ -922,7 +931,8 @@ before the block is checked.
 An intentionally incomplete block (a fill-in-the-blank exercise) is excluded
 by adding the word `setengah-jadi` after the language in the opening fence
 (```` ```cpp setengah-jadi ````, ```` ```arduino setengah-jadi ````,
-```` ```python setengah-jadi ````); it is skipped but counted in the output.
+```` ```python setengah-jadi ````, ```` ```ts setengah-jadi ````,
+```` ```js setengah-jadi ````); it is skipped but counted in the output.
 Exit `0` clean, `1` when a block fails or when `g++` or `python3` is not
 installed.
 

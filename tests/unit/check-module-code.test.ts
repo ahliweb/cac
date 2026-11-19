@@ -16,7 +16,9 @@ import {
   checkModuleCode,
   extractBlocks,
   extractCppBlocks,
+  jsSyntaxCheck,
   run,
+  tsSyntaxCheck,
 } from "../../scripts/check-module-code";
 
 const VALID = "int main() { return 0; }";
@@ -92,7 +94,7 @@ describe("extractBlocks (arduino, python, setengah-jadi)", () => {
       "```py",
       "x = 1",
       "```",
-      "```typescript",
+      "```tsx",
       "let a = 1;",
       "```",
     ].join("\n");
@@ -133,6 +135,89 @@ describe("extractBlocks (arduino, python, setengah-jadi)", () => {
   });
 });
 
+describe("extractBlocks (ts and js, with aliases)", () => {
+  test("ts/typescript and js/javascript map to ts and js, case-insensitively; tsx and jsx are ignored", () => {
+    const markdown = [
+      "```ts",
+      "let a: number = 1;",
+      "```",
+      "```TypeScript",
+      "let b = 2;",
+      "```",
+      "```js",
+      "var c = 3;",
+      "```",
+      "```JavaScript setengah-jadi",
+      "var d = ____;",
+      "```",
+      "```tsx",
+      "x",
+      "```",
+      "```jsx",
+      "y",
+      "```",
+    ].join("\n");
+    expect(extractBlocks(markdown).map((b) => [b.language, b.startLine, b.incomplete])).toEqual([
+      ["ts", 2, false],
+      ["ts", 5, false],
+      ["js", 8, false],
+      ["js", 11, true],
+    ]);
+  });
+
+  test("an indented ts block is dedented", () => {
+    const markdown =
+      "1. Langkah:\n\n   ```ts\n   function f(x: number) {\n     return x;\n   }\n   ```\n";
+    expect(extractBlocks(markdown)[0]?.code).toBe("function f(x: number) {\n  return x;\n}\n");
+  });
+});
+
+describe("tsSyntaxCheck and jsSyntaxCheck (real Bun.Transpiler, syntax only)", () => {
+  test("accept valid TypeScript: types, generics, import/export, enum, top-level await", async () => {
+    const code = [
+      'import { baca } from "./baca";',
+      "interface Titik { x: number; y: number }",
+      "type Pasangan<T> = [T, T] | null;",
+      "enum Warna { Merah, Biru }",
+      "export function salin<T extends object>(a: T): T { return { ...a }; }",
+      "class Kotak { constructor(private sisi: number) {} luas(): number { return this.sisi ** 2; } }",
+      "export const data = await baca();",
+      "",
+    ].join("\n");
+    expect(await tsSyntaxCheck(code)).toEqual({ ok: true, diagnostics: "" });
+  });
+
+  test("a type error is not a syntax error (syntax check only)", async () => {
+    expect(await tsSyntaxCheck("let x: string = 5;\nnamaTakAda();\n")).toEqual({
+      ok: true,
+      diagnostics: "",
+    });
+  });
+
+  test("reject broken TypeScript with the line and column inside the block", async () => {
+    const bad = await tsSyntaxCheck("const a = 1;\nconst b: number = ;\n");
+    expect(bad.ok).toBe(false);
+    expect(bad.diagnostics).toContain("line 2");
+    const open = await tsSyntaxCheck("function f() {\n");
+    expect(open.ok).toBe(false);
+    const dup = await tsSyntaxCheck("const a = 1;\nconst a = 2;\n");
+    expect(dup.ok).toBe(false);
+    expect(dup.diagnostics).toContain("already been declared");
+  });
+
+  test("accept valid JavaScript and reject broken JavaScript", async () => {
+    expect(await jsSyntaxCheck("const f = (a, b) => a + b;\nconsole.log(f(1, 2));\n")).toEqual({
+      ok: true,
+      diagnostics: "",
+    });
+    const bad = await jsSyntaxCheck("for (const x of ) {}\n");
+    expect(bad.ok).toBe(false);
+    expect(bad.diagnostics).toContain("line 1");
+    // Type annotations are not JavaScript.
+    expect((await jsSyntaxCheck("let x: number = 1;\n")).ok).toBe(false);
+  });
+});
+
 describe("checkModuleCode", () => {
   let root: string;
 
@@ -151,8 +236,8 @@ describe("checkModuleCode", () => {
   test("no modules means no blocks and no failures", async () => {
     expect(await checkModuleCode(root)).toEqual({
       filesChecked: 0,
-      blocksChecked: { cpp: 0, arduino: 0, python: 0 },
-      blocksSkipped: { cpp: 0, arduino: 0, python: 0 },
+      blocksChecked: { cpp: 0, arduino: 0, python: 0, ts: 0, js: 0 },
+      blocksSkipped: { cpp: 0, arduino: 0, python: 0, ts: 0, js: 0 },
       failures: [],
     });
   });
@@ -200,6 +285,15 @@ describe("checkModuleCode", () => {
         "```cpp setengah-jadi",
         "int ____;",
         "```",
+        "```ts",
+        "let t: number = 1;",
+        "```",
+        "```javascript",
+        "var j = 1;",
+        "```",
+        "```ts setengah-jadi",
+        "let u: ____ = 1;",
+        "```",
       ].join("\n"),
     );
     const seen: string[] = [];
@@ -218,11 +312,19 @@ describe("checkModuleCode", () => {
           ? { ok: false, diagnostics: "SyntaxError palsu" }
           : { ok: true, diagnostics: "" };
       },
+      ts: async () => {
+        seen.push("ts");
+        return { ok: true, diagnostics: "" };
+      },
+      js: async () => {
+        seen.push("js");
+        return { ok: true, diagnostics: "" };
+      },
     };
     const result = await checkModuleCode(root, checkers);
-    expect(seen).toEqual(["cpp", "arduino", "python"]);
-    expect(result.blocksChecked).toEqual({ cpp: 1, arduino: 1, python: 1 });
-    expect(result.blocksSkipped).toEqual({ cpp: 1, arduino: 0, python: 1 });
+    expect(seen).toEqual(["cpp", "arduino", "python", "ts", "js"]);
+    expect(result.blocksChecked).toEqual({ cpp: 1, arduino: 1, python: 1, ts: 1, js: 1 });
+    expect(result.blocksSkipped).toEqual({ cpp: 1, arduino: 0, python: 1, ts: 1, js: 0 });
     expect(result.failures).toHaveLength(1);
     expect(result.failures[0]).toContain("python block 1 (starting at line 8) has a syntax error");
     expect(result.failures[0]).toContain("SyntaxError palsu");
@@ -266,7 +368,7 @@ describe("run (exit code and messages)", () => {
     const ok: Compiler = async () => ({ ok: true, diagnostics: "" });
     expect(await run(root, ok, out)).toBe(0);
     expect(lines.join("\n")).toContain(
-      "OK -- 1 cpp, 0 arduino (mock Arduino.h) and 0 python block(s) in 1 module file(s)",
+      "OK -- 1 cpp, 0 arduino (mock Arduino.h), 0 python, 0 ts and 0 js block(s) in 1 module file(s)",
     );
   });
 

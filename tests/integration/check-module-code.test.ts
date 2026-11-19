@@ -204,6 +204,15 @@ describe("checkModuleCode and run (real g++)", () => {
           "```arduino setengah-jadi",
           "void setup() { ____ }",
           "```",
+          "```ts",
+          "const n: number = 1;",
+          "```",
+          "```js",
+          "const m = 2;",
+          "```",
+          "```ts setengah-jadi",
+          "const k: ____ = 3;",
+          "```",
           "```cpp setengah-jadi",
           "int x = ____;",
           "```",
@@ -211,13 +220,27 @@ describe("checkModuleCode and run (real g++)", () => {
       );
       const result = await checkModuleCode(root);
       expect(result.failures).toEqual([]);
-      expect(result.blocksChecked).toEqual({ cpp: 1, arduino: 1, python: 1 });
-      expect(result.blocksSkipped).toEqual({ cpp: 1, arduino: 1, python: 1 });
+      expect(result.blocksChecked).toEqual({ cpp: 1, arduino: 1, python: 1, ts: 1, js: 1 });
+      expect(result.blocksSkipped).toEqual({ cpp: 1, arduino: 1, python: 1, ts: 1, js: 0 });
       expect(await run(root, undefined, out)).toBe(0);
-      expect(lines.join("\n")).toContain("1 cpp, 1 arduino (mock Arduino.h) and 1 python block(s)");
+      expect(lines.join("\n")).toContain(
+        "1 cpp, 1 arduino (mock Arduino.h), 1 python, 1 ts and 1 js block(s)",
+      );
     },
     GPP_TIMEOUT_MS,
   );
+
+  test("a broken ts block and a broken js block each fail the run, with file and block line", async () => {
+    await write(
+      "content/osn/modules/buruk.md",
+      "teks\n\n```ts\nconst a: number = ;\n```\n```javascript\nfunction f( {\n```\n",
+    );
+    expect(await run(root, undefined, out)).toBe(1);
+    const output = lines.join("\n");
+    expect(output).toContain("FAILED -- 2 block(s) failed");
+    expect(output).toContain("buruk.md: ts block 1 (starting at line 4) has a syntax error");
+    expect(output).toContain("buruk.md: js block 1 (starting at line 7) has a syntax error");
+  });
 
   test(
     "a broken arduino sketch and a broken python block each fail the run",

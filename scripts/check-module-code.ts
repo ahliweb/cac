@@ -14,11 +14,20 @@
  *                 pins, memory). `setup`/`loop` are only declared; no `main`.
  *   - ```python   `python3 -I -c "import ast,sys; ast.parse(sys.stdin.read())"`
  *                 -- syntax only; the code is parsed, never run.
+ *   - ```ts       (also ```typescript) and ```js (also ```javascript): Bun's
+ *                 built-in `Bun.Transpiler` (loader `ts` / `js`) parses the block
+ *                 and strips types; the output is discarded, nothing is run and no
+ *                 dependency is added. This is a SYNTAX check only, not a type
+ *                 check: `let x: string = 5;` passes, an undeclared name passes,
+ *                 and a top-level `return` passes. Imports are not resolved. It
+ *                 does reject malformed code and duplicate declarations in one
+ *                 scope. JSX is not enabled, so a block holding JSX must be marked
+ *                 `setengah-jadi` or fenced as ```text.
  *
  * Blocks of any other language (```text, ```json, ...) are ignored.
  *
  * Intentionally incomplete blocks (fill-in-the-blank exercises) are excluded
- * with ONE convention, valid for cpp, arduino and python alike: put the word
+ * with ONE convention, valid for every checked language alike: put the word
  * `setengah-jadi` in the info string of the opening fence, e.g.
  *
  *   ```cpp setengah-jadi
@@ -50,7 +59,13 @@ export const ARDUINO_MOCK_DIR = join(import.meta.dir, "fixtures", "arduino-mock"
 export const INCOMPLETE_MARKER = "setengah-jadi";
 
 /** The languages this check covers. */
-export const LANGUAGES = ["cpp", "arduino", "python"] as const;
+export const LANGUAGES = ["cpp", "arduino", "python", "ts", "js"] as const;
+
+/** Info-string spellings that name a checked language other than itself. */
+const LANGUAGE_ALIASES: Readonly<Record<string, string>> = {
+  typescript: "ts",
+  javascript: "js",
+};
 
 export type Language = (typeof LANGUAGES)[number];
 
@@ -84,9 +99,16 @@ export type Checkers = Readonly<Record<Language, Compiler>>;
 const isLanguage = (word: string): word is Language =>
   (LANGUAGES as readonly string[]).includes(word);
 
+/** The checked language an info-string word names (aliases resolved), or undefined. */
+const languageOf = (word: string): Language | undefined => {
+  const lower = word.toLowerCase();
+  const name = LANGUAGE_ALIASES[lower] ?? lower;
+  return isLanguage(name) ? name : undefined;
+};
+
 /**
- * Extracts every fenced block of `markdown` whose language is cpp, arduino or
- * python (case-insensitive); other fenced blocks are skipped. The opening
+ * Extracts every fenced block of `markdown` whose language is cpp, arduino,
+ * python, ts/typescript or js/javascript (case-insensitive); other fenced blocks are skipped. The opening
  * fence may carry further info-string words (e.g. {@link INCOMPLETE_MARKER});
  * a closing fence is a bare ```. A fence indented inside a list item has its
  * indentation removed from every content line (CommonMark), so the code is
@@ -112,8 +134,8 @@ export function extractBlocks(markdown: string): CodeBlock[] {
       return;
     }
     if (fence !== null && info.length === 0) {
-      const language = (open.info[0] ?? "").toLowerCase();
-      if (isLanguage(language)) {
+      const language = languageOf(open.info[0] ?? "");
+      if (language !== undefined) {
         blocks.push({
           language,
           startLine: open.startLine,
@@ -173,12 +195,50 @@ export const arduinoSyntaxCheck: Compiler = (code) =>
 export const pythonSyntaxCheck: Compiler = (code) =>
   runWithStdin(["python3", "-I", "-c", "import ast,sys; ast.parse(sys.stdin.read())"], code);
 
+/**
+ * Builds a syntax checker on `Bun.Transpiler` for `loader`. The block is
+ * transpiled (types stripped) and the output discarded; a parse error becomes a
+ * diagnostic of the form `line L, column C: message` with `L` relative to the
+ * block's own first line. Syntax only, never a type check, never run.
+ */
+const transpilerSyntaxCheck = (loader: "ts" | "js"): Compiler => {
+  return async (code) => {
+    try {
+      new Bun.Transpiler({ loader }).transformSync(code);
+      return { ok: true, diagnostics: "" };
+    } catch (cause) {
+      const errors = (cause as { errors?: unknown }).errors;
+      const list = Array.isArray(errors) ? errors : [cause];
+      const lines = list.map((entry) => {
+        const { message, position } = entry as {
+          message?: string;
+          position?: { line: number; column: number } | null;
+        };
+        const where = position ? `line ${position.line}, column ${position.column}: ` : "";
+        return `${where}${message ?? "syntax error"}`;
+      });
+      return { ok: false, diagnostics: lines.join("\n") };
+    }
+  };
+};
+
+/** The real TypeScript checker: `Bun.Transpiler` with the `ts` loader (syntax only). */
+export const tsSyntaxCheck: Compiler = transpilerSyntaxCheck("ts");
+
+/** The real JavaScript checker: `Bun.Transpiler` with the `js` loader (syntax only). */
+export const jsSyntaxCheck: Compiler = transpilerSyntaxCheck("js");
+
 /** The real checkers, one per language. */
 export const defaultCheckers: Checkers = {
   cpp: gppSyntaxCheck,
   arduino: arduinoSyntaxCheck,
   python: pythonSyntaxCheck,
+  ts: tsSyntaxCheck,
+  js: jsSyntaxCheck,
 };
+
+/** Languages whose checker only parses (no compiler), so a failure is a syntax error. */
+const SYNTAX_ONLY: ReadonlySet<Language> = new Set<Language>(["python", "ts", "js"]);
 
 /** The result of checking a repository tree. */
 export interface CheckResult {
@@ -190,11 +250,17 @@ export interface CheckResult {
   readonly failures: readonly string[];
 }
 
-const zeroCounts = (): Record<Language, number> => ({ cpp: 0, arduino: 0, python: 0 });
+const zeroCounts = (): Record<Language, number> => ({
+  cpp: 0,
+  arduino: 0,
+  python: 0,
+  ts: 0,
+  js: 0,
+});
 
 /**
  * Finds every `content/**\/modules/*.md` under `repoRoot` (sorted) and checks
- * each cpp, arduino and python block. `checkers` may be one function applied
+ * each cpp, arduino, python, ts and js block. `checkers` may be one function applied
  * to every language (convenient for tests) or one checker per language.
  */
 export async function checkModuleCode(
@@ -219,7 +285,7 @@ export async function checkModuleCode(
       blocksChecked[block.language] += 1;
       const result = await checkerFor(block.language)(block.code);
       if (!result.ok) {
-        const problem = block.language === "python" ? "has a syntax error" : "does not compile";
+        const problem = SYNTAX_ONLY.has(block.language) ? "has a syntax error" : "does not compile";
         failures.push(
           `${file}: ${block.language} block ${blocksChecked[block.language]} (starting at line ${block.startLine}) ${problem}:\n${result.diagnostics}`,
         );
@@ -247,7 +313,7 @@ export async function run(
     result = await checkModuleCode(repoRoot, checkers);
   } catch (cause) {
     out.error(
-      `check-module-code: could not run a checker (${(cause as Error).message}). Install g++ with C++17 support and python3; the check refuses to pass without them.`,
+      `check-module-code: could not run a checker (${(cause as Error).message}). Install g++ with C++17 support and python3, and run under Bun; the check refuses to pass without them.`,
     );
     return 1;
   }
@@ -258,10 +324,10 @@ export async function run(
     }
     return 1;
   }
-  const { cpp, arduino, python } = result.blocksChecked;
+  const { cpp, arduino, python, ts, js } = result.blocksChecked;
   const skipped = LANGUAGES.reduce((sum, language) => sum + result.blocksSkipped[language], 0);
   out.log(
-    `check-module-code: OK -- ${cpp} cpp, ${arduino} arduino (mock Arduino.h) and ${python} python block(s) in ${result.filesChecked} module file(s) pass (g++ -std=c++17 -fsyntax-only; python3 ast.parse); ${skipped} block(s) marked ${INCOMPLETE_MARKER} skipped.`,
+    `check-module-code: OK -- ${cpp} cpp, ${arduino} arduino (mock Arduino.h), ${python} python, ${ts} ts and ${js} js block(s) in ${result.filesChecked} module file(s) pass (g++ -std=c++17 -fsyntax-only; python3 ast.parse; Bun.Transpiler syntax only for ts and js); ${skipped} block(s) marked ${INCOMPLETE_MARKER} skipped.`,
   );
   return 0;
 }
