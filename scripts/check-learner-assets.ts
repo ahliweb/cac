@@ -18,6 +18,13 @@
  * root, quoted attributes, legal entity references), not a full XML parser:
  * it exists so the repository needs no extra dependency.
  *
+ * A third, separate rule covers the document title (issue #178, #124):
+ * `osn render modul` (and `--lembar`) prints the H1 title from the index, so
+ * a module body `content/<program>/modules/*.md` and a sheet
+ * `content/<program>/lembar/*.md` must not begin with an `# ` heading of
+ * its own (it would print twice). Until the content is normalised this is a
+ * WARNING; set {@link DUPLICATE_TITLE_IS_ERROR} to `true` to make it an error.
+ *
  * Run standalone:
  *
  *   bun run scripts/check-learner-assets.ts
@@ -31,6 +38,13 @@ const REPO_ROOT = join(import.meta.dir, "..");
 
 /** Largest accepted SVG, in bytes. */
 export const MAX_SVG_BYTES = 50 * 1024;
+
+/**
+ * Whether a body that starts with its own `# ` title is an error (`true`) or
+ * only a warning (`false`, the current state while existing content is
+ * normalised). Flip this constant once no file triggers the warning.
+ */
+export const DUPLICATE_TITLE_IS_ERROR = false;
 
 const FORBIDDEN_ELEMENTS = new Set(["script", "image", "foreignobject"]);
 
@@ -277,11 +291,33 @@ export function extractImageLinks(markdown: string): ImageLink[] {
   return links;
 }
 
+/**
+ * The 1-based line of a leading `# ` (H1) heading of `markdown`, or `undefined`
+ * when the first non-blank line is not one. A leading YAML front matter block
+ * is skipped; a `#` inside fenced code is never the first line.
+ */
+export function leadingTitleLine(markdown: string): number | undefined {
+  const lines = markdown.split("\n");
+  let index = 0;
+  if (lines[0]?.trim() === "---") {
+    const end = lines.findIndex((line, i) => i > 0 && line.trim() === "---");
+    if (end > 0) {
+      index = end + 1;
+    }
+  }
+  while (index < lines.length && (lines[index] ?? "").trim() === "") {
+    index += 1;
+  }
+  return /^#\s+\S/.test(lines[index] ?? "") ? index + 1 : undefined;
+}
+
 /** The result of checking a repository tree. */
 export interface AssetCheckResult {
   readonly svgChecked: number;
   readonly sheetsChecked: number;
   readonly linksChecked: number;
+  /** Module bodies and sheets whose first line is a duplicate `# ` title. */
+  readonly duplicateTitles: number;
   readonly errors: readonly string[];
   readonly warnings: readonly string[];
 }
@@ -299,6 +335,17 @@ export async function checkLearnerAssets(repoRoot: string): Promise<AssetCheckRe
   const sheets = await scan("content/*/lembar/*.md");
   const referenced = new Set<string>();
   let linksChecked = 0;
+  let duplicateTitles = 0;
+
+  for (const file of [...(await scan("content/*/modules/*.md")), ...sheets]) {
+    const line = leadingTitleLine(await Bun.file(join(repoRoot, file)).text());
+    if (line !== undefined) {
+      duplicateTitles += 1;
+      (DUPLICATE_TITLE_IS_ERROR ? errors : warnings).push(
+        `${file}:${line}: body starts with its own "# " title; the renderer already prints the title from the index`,
+      );
+    }
+  }
 
   for (const file of svgFiles) {
     const bytes = await Bun.file(join(repoRoot, file)).bytes();
@@ -345,6 +392,7 @@ export async function checkLearnerAssets(repoRoot: string): Promise<AssetCheckRe
     svgChecked: svgFiles.length,
     sheetsChecked: sheets.length,
     linksChecked,
+    duplicateTitles,
     errors,
     warnings,
   };

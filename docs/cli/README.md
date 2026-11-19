@@ -145,6 +145,9 @@ whose programme is not registered is a draft and is not validated.
    (`content/sma-coding/modules/<id>.md`); `review` follows the same rule
    as above. `cpItems`, `weekCodes`, `bridgeFamilies` and `prerequisites`
    may be empty (a series module is not counted as meeting a CP item).
+   For `sma-coding`, a module of an enrichment track (D or E: id starting
+   `d-` or `e-`, or a week code of a track whose `cpStatus` is `pengayaan`
+   in `tracks.json`) must have `cpItems: []`.
    Referentially: every `cpItems` code exists in `cp-elements.json`; every
    `weekCodes` entry exists in `weeks.json` (track weeks) or
    `foundation.json` (`FND-...`); every `bridgeFamilies` id exists in
@@ -911,6 +914,11 @@ after `osn validate`) extracts the fenced blocks from
 - ```` ```python ```` -- `python3 -I -c "import ast,sys; ast.parse(sys.stdin.read())"`;
   syntax only.
 
+A fenced block indented inside a list item (for example a fence opened with
+three spaces) is dedented as CommonMark does: the opening fence's
+indentation is removed from each content line (at most that many spaces)
+before the block is checked.
+
 An intentionally incomplete block (a fill-in-the-blank exercise) is excluded
 by adding the word `setengah-jadi` after the language in the opening fence
 (```` ```cpp setengah-jadi ````, ```` ```arduino setengah-jadi ````,
@@ -930,6 +938,14 @@ no DOCTYPE, no `@import` or `url()` that is not a `#fragment`, and at most
 programme's `gambar/`. An SVG no sheet references is printed as a warning
 and does not change the exit code. Exit `0` clean (warnings allowed), `1` on
 any error.
+
+The same command also warns when a module body
+(`content/<program>/modules/*.md`) or a sheet (`lembar/*.md`) begins with
+its own `# ` title: `osn render modul` already prints the H1 from the index,
+so the title would appear twice. This is a **warning** for now (exit code
+unaffected); set `DUPLICATE_TITLE_IS_ERROR` to `true` in
+`scripts/check-learner-assets.ts` to make it an error once the content is
+normalised.
 
 ### `--out` / `--force` (all `osn render` subcommands)
 
