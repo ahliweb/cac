@@ -37,7 +37,7 @@ Setelah modul ini kamu dapat:
 Baca program ini dan **tebak dulu, tulis jawabanmu, baru jalankan atau telusuri**.
 
 ```arduino
-// Arduino-C++ untuk ESP32. Tidak dikompilasi oleh check:module-code.
+// Arduino-C++ untuk ESP32. Diperiksa check:module-code terhadap header tiruan (sintaks dan tipe saja, bukan bukti perilaku papan).
 const int PIN_LED = 2;      // nomor pin LED bawaan; periksa papanmu
 const int JEDA_MS = 500;    // lama jeda dalam milidetik
 
@@ -132,7 +132,7 @@ Cocokkan dengan tebakanmu. Bila ada yang meleset, cari baris yang kamu salah bac
 Sekarang sebagian diisi olehmu. Tujuannya: LED berkedip **dua kali cepat** (masing-masing 100 ms) lalu jeda 1 detik. Lengkapi bagian `____`.
 
 ```arduino setengah-jadi
-// Arduino-C++ untuk ESP32. Tidak dikompilasi oleh check:module-code.
+// Arduino-C++ untuk ESP32. Diperiksa check:module-code terhadap header tiruan (sintaks dan tipe saja, bukan bukti perilaku papan).
 const int PIN_LED = 2;
 const int KEDIP_MS = 100;
 const int JEDA_PANJANG_MS = ____;

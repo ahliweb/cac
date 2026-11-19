@@ -37,7 +37,7 @@ Setelah modul ini kamu dapat:
 Baca program ini dan **tebak dulu, tulis jawabanmu, baru jalankan atau telusuri**. Tombol disambung ke pin 4 dan ke GND; mode `INPUT_PULLUP` menjaga pin tetap `HIGH` selama tombol tidak ditekan.
 
 ```arduino
-// Arduino-C++ untuk ESP32. Tidak dikompilasi oleh check:module-code.
+// Arduino-C++ untuk ESP32. Diperiksa check:module-code terhadap header tiruan (sintaks dan tipe saja, bukan bukti perilaku papan).
 const int PIN_TOMBOL = 4;   // contoh; periksa papanmu
 const int PIN_LED = 2;
 
@@ -156,7 +156,7 @@ Dua tombol dapat dipakai bersama. Misalnya "LED menyala bila A ditekan dan B jug
 Sekarang sebagian diisi olehmu. Tujuannya: LED menyala bila **tepat satu** dari dua tombol ditekan (bukan keduanya, bukan tidak ada). Lengkapi bagian `____`.
 
 ```arduino setengah-jadi
-// Arduino-C++ untuk ESP32. Tidak dikompilasi oleh check:module-code.
+// Arduino-C++ untuk ESP32. Diperiksa check:module-code terhadap header tiruan (sintaks dan tipe saja, bukan bukti perilaku papan).
 const int PIN_A = 4;
 const int PIN_B = 5;
 const int PIN_LED = 2;
