@@ -1,13 +1,10 @@
-# Struktur Data
-
-> **DRAF — belum ditinjau.** Ini modul belajar untuk mata kuliah `KUL-I-102`
-> (3 SKS, semester 2, jalur I), bagian dari program `kuliah-coding`. Konten
-> karangan menurut ADR-0007; belum disetujui pemilik atau peninjau. Kode di
-> modul ini adalah **C++17** (g++ 13.3, Linux): tiap blok `cpp` dikompilasi
-> dengan `-std=c++17 -Wall -Wextra` tanpa peringatan, dijalankan, dan
-> keluarannya cocok dengan yang tertulis.
-
 ## Untuk siapa modul ini
+
+Modul belajar untuk mata kuliah `KUL-I-102` (3 SKS, semester 2, jalur I), bagian
+dari program `kuliah-coding`. Konten ini karangan menurut ADR-0007 dan belum
+disetujui. Kode di modul ini adalah **C++17** (g++ 13.3, Linux): tiap blok `cpp`
+dikompilasi dengan `-std=c++17 -Wall -Wextra` tanpa peringatan, dijalankan, dan
+keluarannya cocok dengan yang tertulis.
 
 Mahasiswa semester 2 informatika atau ilmu komputer yang sudah menempuh
 `KUL-I-101` (fungsi, larik, penunjuk, rekursi). Satu mata kuliah, satu
@@ -810,16 +807,3 @@ kontak, jadwal). Praktikum berpasangan dengan pasangan acak per bagian; jangan
 menilai pasangan. Pohon seimbang (AVL, merah-hitam) tidak termasuk topik
 corpus, hanya disebut. Penelusuran dengan gambar kotak dan panah sebelum
 mengetik memberi manfaat besar pada pemula.
-
-## Rujukan
-
-- Standard C++ Foundation, *Get Started* (isocpp.org), dibuka 2026-11-19:
-  <https://isocpp.org/get-started>
-- MIT OpenCourseWare, *Introduction to Algorithms* (6.006, Spring 2020), dibuka
-  2026-11-19:
-  <https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/>
-- GNU Project, *Using the GNU Compiler Collection (GCC)*, dibuka 2026-11-19:
-  <https://gcc.gnu.org/onlinedocs/>
-- ACM/IEEE-CS/AAAI, *Computer Science Curricula 2023*, knowledge area SDF dan
-  AL: <https://csed.acm.org/knowledge-areas/> (daftar KA terverifikasi;
-  rincian unit **tidak** dibaca, jadi tidak dikutip).

@@ -1,5 +1,3 @@
-# Aku robot, kamu pemandu
-
 ![Robot yang melangkah dan robot yang berdiri tegak, dua lingkaran kosong di bawahnya, dan dua kartu tanda di bagian bawah.](../gambar/tk-a1-m3-1.svg)
 
 `[Gambar: di bagian atas ada dua robot sederhana dari kotak dan garis, tanpa wajah. Robot kiri melangkah dengan kaki terbuka; robot kanan berdiri tegak dengan kaki rapat. Di bawah tiap robot ada satu lingkaran kosong dengan garis putus-putus.]`

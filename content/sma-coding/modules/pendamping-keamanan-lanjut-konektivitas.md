@@ -208,11 +208,6 @@ Isi untuk dirimu sendiri; tanpa nilai dan tidak dikumpulkan.
 
 Daftar periksa ini penilaian dirimu, dan penilaian diri sering lebih yakin daripada kenyataan. Yang menunjukkan penguasaan sebenarnya adalah jawabanmu pada Latihan bercampur dan Ulang berjarak.
 
-## Rujukan
-
-- Panduan Mata Pelajaran Informatika, Fase D – F, 2025: sumber kutipan butir CP di atas.
-- Dokumentasi resmi pabrikan perute dan sistem operasi yang kamu pakai untuk langkah konfigurasi yang tepat pada perangkat tertentu.
-
 ## Catatan untuk guru
 
 - Modul ini bersifat bertahan. Jangan menambahkan latihan memindai, menebak kata sandi, atau mengakses jaringan yang bukan milik siswa; hal itu dapat menjadi tindak pidana (akses ilegal ke sistem elektronik) dan melanggar kebijakan sekolah. Dasar hukumnya telah bergeser: pangkalan data peraturan BPK mencatat bahwa sebagian ketentuan UU 11/2008 tentang Informasi dan Transaksi Elektronik, termasuk Pasal 30, dicabut oleh UU 1/2023 tentang Kitab Undang-Undang Hukum Pidana, yang mulai berlaku 2 Januari 2026 (https://peraturan.bpk.go.id/Details/37589/uu-no-11-tahun-2008 dan https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023, dibuka 2026-11-19). Modul ini tidak memberi nasihat hukum dan tidak merinci pasal; guru yang membahasnya memeriksa teks resmi yang berlaku.

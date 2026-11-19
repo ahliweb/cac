@@ -57,7 +57,8 @@ Bila ada kejadian yang menonjol, tulis catatan anekdot tiga sampai lima kalimat 
 ## Keselamatan dan privasi
 
 - Balok bangunan ukuran besar, tidak berujung tajam, tidak ada bagian yang bisa tertelan. Menara dibangun rendah (tidak lebih tinggi dari lutut anak) di lantai rata atau di meja kecil; bila roboh, semua menjauh dahulu, lalu merapikan bersama. Balok tidak dilempar.
-- Krayon dan kertas tidak beracun; tidak dimasukkan ke mulut.- Tanpa foto, video, atau rekaman suara anak; tanpa nama anak di bahan kegiatan.
+- Krayon dan kertas tidak beracun; tidak dimasukkan ke mulut.
+- Tanpa foto, video, atau rekaman suara anak; tanpa nama anak di bahan kegiatan.
 - Tanpa layar.
 
 ## Catatan untuk orang tua

@@ -299,9 +299,3 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `c-x2-m7` (sekitar satu
 ## Langkah berikutnya
 
 Modul berikut: `c-x2-m7` (waktu tanpa `delay` dan mesin keadaan sederhana), yang membuat palang tetap tanggap saat menunggu. Modul terkait: `matkom-himpunan-relasi-fungsi` untuk gagasan fungsi dalam matematika. Pembacaan lanjut: dokumentasi pustaka servo dan LEDC.
-
-## Rujukan
-
-- Arduino, pustaka Servo. <https://docs.arduino.cc/libraries/servo/>
-- Espressif, dokumentasi Arduino-ESP32: LED Control (LEDC), termasuk `ledcAttach()` dan `ledcWriteTone()`. Dibuka 2026-11-19. <https://docs.espressif.com/projects/arduino-esp32/en/latest/api/ledc.html>
-- Arduino, rujukan bahasa: `tone()` (alternatif pada papan lain). <https://docs.arduino.cc/language-reference/en/functions/advanced-io/tone/>

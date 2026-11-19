@@ -163,10 +163,3 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `d-x2-m5` (sekitar satu
 ## Langkah berikutnya
 
 Modul berikut: `d-x2-m5` (galat dan kelebihan-suai), yang mengukur galat pada data uji. Bacaan pendamping: `matkom-pertumbuhan-fungsi` untuk gagasan bentuk fungsi.
-
-## Rujukan
-
-- Orange Data Mining: widget Linear Regression. <https://orangedatamining.com/widget-catalog/model/linearregression/>
-- Orange Data Mining: widget Scatter Plot. <https://orangedatamining.com/widget-catalog/visualize/scatterplot/>
-- Orange Data Mining: widget Test and Score. <https://orangedatamining.com/widget-catalog/evaluate/testandscore/>
-- Orange Data Mining: widget Predictions. <https://orangedatamining.com/widget-catalog/evaluate/predictions/>

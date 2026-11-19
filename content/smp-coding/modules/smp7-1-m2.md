@@ -173,8 +173,3 @@ Kunci: (1) urutan langkah berhingga, tepat dan berurutan, untuk menyelesaikan tu
 - **AI:** modul ini tidak memakai AI. Kebijakan `smp-coding` (silabus bagian 7.1): AI generatif hanya didemonstrasikan guru, tanpa akun murid; tugas dan asesmen dikerjakan murid sendiri.
 - **Privasi:** jangan mengumpulkan kertas bernama murid ke repositori atau layanan daring. Contoh memakai peran, bukan nama.
 - **Unsur pembelajaran** (rancangan modul bagian 4): ingat kembali dan jarak (`K`, riset 3.1, 3.2), PRIMM (`K` usia 11 sampai 14, riset 6.3), tabel penelusuran (`K`, riset 6.2), contoh terselesaikan lalu setengah jadi (`K`, riset 3.4), soal Parsons (`M`, riset 6.3).
-
-## Rujukan
-
-- *Panduan Mata Pelajaran Informatika, Fase D – F*, BSKAP, 2025:
-  <https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf>

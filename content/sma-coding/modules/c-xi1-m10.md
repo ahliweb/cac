@@ -158,11 +158,10 @@ sah 3, rusak 1, dibuang 1
 
 Baca hasilnya dengan jujur. Dua baris pertama lolos walaupun satu memakai `\r\n`. Baris ketiga 19 karakter, melebihi 15 yang muat (satu tempat dipakai `\0` penutup), sehingga dibuang. Baris `290,` rusak karena tidak ada bilangan kedua. Baris `-5,3000` **lolos** `urai`, tetapi suhu -0,5 derajat belum tentu masuk akal di ruangan; kelolosan bentuk bukan kelolosan makna. Penerima ini dicoba pada aliran karangan di komputer; kabel, derau, dan waktu sungguhan baru teruji dengan dua papan.
 
-Sketsa di bawah ada dua: pengirim untuk papan A dan penerima untuk papan B. Kedua hanya diperiksa sintaksnya terhadap header tiruan, tidak dijalankan pada papan. Baris `extern` ada karena header tiruan belum mengenal `Serial2`; pada inti Arduino-ESP32 yang sebenarnya objek itu sudah ada.
+Sketsa di bawah ada dua: pengirim untuk papan A dan penerima untuk papan B. Kedua hanya diperiksa sintaksnya terhadap header tiruan, tidak dijalankan pada papan.
 
 ```arduino
 // Arduino-C++ untuk ESP32, papan A (pengirim). Diperiksa check:module-code terhadap header tiruan (sintaks dan tipe saja, bukan bukti perilaku papan).
-extern HardwareSerial Serial2;  // sudah ada di inti Arduino-ESP32; ditulis agar header tiruan menerimanya
 
 const int PIN_SUHU = 34;                 // contoh; periksa papanmu
 const int PIN_CAHAYA = 35;               // contoh; periksa papanmu
@@ -191,7 +190,6 @@ void loop() {
 
 ```arduino
 // Arduino-C++ untuk ESP32, papan B (penerima). Diperiksa check:module-code terhadap header tiruan (sintaks dan tipe saja, bukan bukti perilaku papan).
-extern HardwareSerial Serial2;  // sudah ada di inti Arduino-ESP32; ditulis agar header tiruan menerimanya
 
 const unsigned long BAUD = 115200;       // harus sama dengan papan A
 const int PANJANG_MAKS = 16;

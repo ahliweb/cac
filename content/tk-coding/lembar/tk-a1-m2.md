@@ -1,5 +1,3 @@
-# Cerita tiga gambar
-
 ![Tiga kotak kosong berlabel awal, tengah, akhir; di bawahnya tiga kartu cerita bola.](../gambar/tk-a1-m2-1.svg)
 
 `[Gambar: tiga kotak kosong berjajar di bagian atas kertas, dihubungkan dua panah ke kanan. Di atas kotak pertama tertulis "awal", kotak kedua "tengah", kotak ketiga "akhir".]`

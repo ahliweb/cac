@@ -1,14 +1,11 @@
-# Matematika Diskret untuk Komputasi
-
-> **DRAF — belum ditinjau.** Ini modul belajar untuk mata kuliah `KUL-I-103`
-> (3 SKS, semester 2, jalur I), bagian dari program `kuliah-coding`. Konten
-> karangan menurut ADR-0007; belum disetujui pemilik atau peninjau. Kode di
-> modul ini adalah **C++17** (g++ 13.3, Linux) dan dipakai untuk **memeriksa**
-> klaim pada contoh kecil, bukan untuk membuktikannya: tiap blok `cpp`
-> dikompilasi dengan `-std=c++17 -Wall -Wextra` tanpa peringatan, dijalankan,
-> dan keluarannya cocok dengan yang tertulis.
-
 ## Untuk siapa modul ini
+
+Modul belajar untuk mata kuliah `KUL-I-103` (3 SKS, semester 2, jalur I), bagian
+dari program `kuliah-coding`. Konten ini karangan menurut ADR-0007 dan belum
+disetujui. Kode di modul ini adalah **C++17** (g++ 13.3, Linux) dan dipakai
+untuk **memeriksa** klaim pada contoh kecil, bukan untuk membuktikannya: tiap
+blok `cpp` dikompilasi dengan `-std=c++17 -Wall -Wextra` tanpa peringatan,
+dijalankan, dan keluarannya cocok dengan yang tertulis.
 
 Mahasiswa semester 2 informatika atau ilmu komputer. Tidak ada prasyarat mata
 kuliah; kemampuan memprogram dasar dari `KUL-I-101` membantu membaca contoh.
@@ -680,16 +677,3 @@ sebagai bahan belajar. Variasi tugas: ganti angka dan struktur graf per
 mahasiswa. Program C++ di modul ini hanya memeriksa contoh; tekankan bahwa itu
 bukan bukti. Tingkat AI di atas `[asumsi]`, usulan baku keputusan pemilik
 2026-11-19.
-
-## Rujukan
-
-- Oscar Levin, *Discrete Mathematics: An Open Introduction* (buku terbuka),
-  dibuka 2026-11-19: <https://discrete.openmathbooks.org/dmoi3.html>
-- MIT OpenCourseWare, *Mathematics for Computer Science* (6.042J, Spring 2015),
-  dibuka 2026-11-19:
-  <https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/>
-- Standard C++ Foundation, *Get Started* (isocpp.org), dibuka 2026-11-19:
-  <https://isocpp.org/get-started>
-- ACM/IEEE-CS/AAAI, *Computer Science Curricula 2023*, knowledge area MSF:
-  <https://csed.acm.org/knowledge-areas/> (daftar KA terverifikasi;
-  rincian unit **tidak** dibaca, jadi tidak dikutip).

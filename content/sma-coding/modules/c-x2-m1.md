@@ -216,9 +216,3 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `c-x2-m2` (sekitar satu
 ## Langkah berikutnya
 
 Modul berikut: `c-x2-m2` (sensor suhu dan kelembapan), yang memakai kebiasaan penelusuran ini ketika sensor memberi nilai aneh. Modul terkait: `fondasi-keamanan-dasar` untuk kebiasaan aman. Pembacaan lanjut: dokumentasi Arduino tentang `Serial`.
-
-## Rujukan
-
-- Arduino, rujukan bahasa: `pinMode()` dan `digitalRead()`. <https://docs.arduino.cc/language-reference/en/functions/digital-io/pinMode/>, <https://docs.arduino.cc/language-reference/en/functions/digital-io/digitalread/>
-- Arduino, rujukan bahasa: `Serial.println()`. <https://docs.arduino.cc/language-reference/en/functions/communication/serial/println/>
-- Espressif, dokumentasi Arduino-ESP32. <https://docs.espressif.com/projects/arduino-esp32/en/latest/>

@@ -1,5 +1,3 @@
-# Bagi-bagi tugas
-
 `TK-A2-M9` · TK A · sesi 20 menit · irisan CP: `FF-DL-c` (memecahkan masalah sederhana), `FF-JD-c` (kerja sama dan membangun hubungan sosial), bukan pemenuhan CP
 
 ## Tujuan
@@ -66,7 +64,3 @@ Bila ada kejadian yang menonjol, tulis catatan anekdot tiga sampai lima kalimat 
 ## Catatan untuk orang tua
 
 Di rumah, ajak anak membagi satu tugas kecil, misalnya merapikan mainan: "Kamu bagian buku, aku bagian boneka." Ini hanya ajakan bermain, tidak wajib dan tidak diperiksa, serta tidak memakai layar.
-
-## Rujukan
-
-- Kepmendikdasmen 127/P/2025, cara pelaksanaan tanpa perangkat digital (unplugged): https://www.kemendikdasmen.go.id/pengumuman/13654-kepmendikdasmen-tentang-pedoman-implementasi-koding-dan-kecerdasan-artifisial-pada-paud-dikdasmen (dibuka 2026-11-19; dokumen pemerintah, hanya ditautkan).

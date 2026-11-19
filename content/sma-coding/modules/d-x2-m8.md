@@ -166,9 +166,3 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `d-x2-m9` (sekitar satu
 ## Langkah berikutnya
 
 Modul berikut: `d-x2-m9` (visualisasi untuk bercerita), tempat kamu memilih grafik yang jujur. Bacaan pendamping: `matkom-himpunan-relasi-fungsi` untuk gagasan himpunan dan hubungan.
-
-## Rujukan
-
-- Orange Data Mining: widget k-Means. <https://orangedatamining.com/widget-catalog/unsupervised/kmeans/>
-- Orange Data Mining: widget Hierarchical Clustering (pengelompokan alternatif, bacaan tambahan). <https://orangedatamining.com/widget-catalog/unsupervised/hierarchicalclustering/>
-- Panduan Mata Pelajaran Informatika, Fase D – F, 2025. <https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf>

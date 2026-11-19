@@ -1,5 +1,3 @@
-# Pola gerak dan bunyi
-
 ![Baris gambar tepuk dan hentak berselang-seling, dua kotak kosong di ujung, dan dua kartu tepuk dan hentak.](../gambar/tk-a1-m6-1.svg)
 
 `[Gambar: satu baris empat gambar: dua tangan bertepuk, telapak kaki, dua tangan bertepuk, telapak kaki. Di ujung kanan ada dua kotak kosong dengan garis putus-putus.]`

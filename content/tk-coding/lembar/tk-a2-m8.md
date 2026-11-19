@@ -1,5 +1,3 @@
-# Kenapa aku memilih ini?
-
 ![Peta sembilan petak dengan bintang di kanan bawah, rumah di tengah, dan bendera di tengah atas. Di bawah dua jalan: jalan ke rumah dengan tiga kartu dan jalan ke bendera dengan empat kartu.](../gambar/tk-a2-m8-1.svg)
 
 `[Gambar: peta tiga kali tiga petak dilihat dari atas. Boneka kecil berdiri di petak pojok kanan bawah menghadap ke atas, ditandai bintang. Rumah kecil ada di petak tengah. Bendera merah ada di petak tengah baris paling atas.]`

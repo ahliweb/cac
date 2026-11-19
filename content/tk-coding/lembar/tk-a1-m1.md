@@ -1,5 +1,3 @@
-# Dulu, lalu
-
 ![Dua kotak kosong berlabel dulu dan lalu dengan panah di antaranya; di bawahnya kartu cuci tangan dan kartu makan.](../gambar/tk-a1-m1-1.svg)
 
 `[Gambar: dua kotak besar berdampingan di tengah kertas. Di antara keduanya ada panah ke kanan yang tebal. Di atas kotak kiri tertulis "dulu"; di atas kotak kanan tertulis "lalu". Kedua kotak masih kosong.]`

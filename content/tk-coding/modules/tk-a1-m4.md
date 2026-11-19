@@ -1,5 +1,3 @@
-# Kiri dan kanan
-
 `TK-A1-M4` · TK A · sesi 20 menit · irisan CP: `FF-DL-b` (kesadaran tentang posisi dan ruang), `FF-JD-e` (fungsi gerak), bukan pemenuhan CP
 
 ## Tujuan
@@ -65,7 +63,3 @@ Bila ada kejadian yang menonjol, tulis catatan anekdot tiga sampai lima kalimat 
 ## Catatan untuk orang tua
 
 Saat memakai sepatu atau kaus kaki, ajak anak menyebut "kaki kiri" dan "kaki kanan". Ini hanya ajakan bermain, tidak wajib dan tidak diperiksa, serta tidak memakai layar.
-
-## Rujukan
-
-- Kepmendikdasmen 127/P/2025, cara pelaksanaan tanpa perangkat digital (unplugged): https://www.kemendikdasmen.go.id/pengumuman/13654-kepmendikdasmen-tentang-pedoman-implementasi-koding-dan-kecerdasan-artifisial-pada-paud-dikdasmen (dibuka 2026-11-19; dokumen pemerintah, hanya ditautkan).

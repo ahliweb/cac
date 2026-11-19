@@ -193,8 +193,3 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `c-xi1-m2` (sekitar sat
 ## Langkah berikutnya
 
 Modul berikut: `c-xi1-m2` (kualitas kode dan pengujian), yang menjadikan daftar uji sebagai berkas kasus uji. Modul terkait: `pendamping-merancang-kebutuhan-sistem` untuk menulis kebutuhan sistem. Pembacaan lanjut: *Panduan Mata Pelajaran Informatika, Fase D – F* untuk kerangka capaian fase F.
-
-## Rujukan
-
-- Kemendikdasmen, *Panduan Mata Pelajaran Informatika, Fase D – F*, 2025. <https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf>
-- Arduino, rujukan bahasa: `millis()`. <https://docs.arduino.cc/language-reference/en/functions/time/millis/>

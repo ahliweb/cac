@@ -294,9 +294,3 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `c-x2-m10` (sekitar sat
 ## Langkah berikutnya
 
 Modul berikut: `c-x2-m10` (pencarian dan pengurutan data sensor), yang memakai larik untuk mencari nilai dan menghitung median. Modul terkait: `fondasi-komputer-dan-hardware` untuk gagasan memori yang terbatas. Pembacaan lanjut: halaman `std::queue` dan `std::stack` di cppreference, yaitu versi pustaka standar C++ untuk komputer (tidak dipakai pada contoh papan di sini).
-
-## Rujukan
-
-- Arduino, rujukan bahasa: struktur larik (`Array`). <https://docs.arduino.cc/language-reference/en/variables/data-types/array/>
-- cppreference: `std::queue` dan `std::stack`. <https://en.cppreference.com/w/cpp/container/queue>, <https://en.cppreference.com/w/cpp/container/stack>
-- Arduino, rujukan bahasa: `millis()`. <https://docs.arduino.cc/language-reference/en/functions/time/millis/>

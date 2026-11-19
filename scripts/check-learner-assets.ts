@@ -22,8 +22,8 @@
  * `osn render modul` (and `--lembar`) prints the H1 title from the index, so
  * a module body `content/<program>/modules/*.md` and a sheet
  * `content/<program>/lembar/*.md` must not begin with an `# ` heading of
- * its own (it would print twice). Until the content is normalised this is a
- * WARNING; set {@link DUPLICATE_TITLE_IS_ERROR} to `true` to make it an error.
+ * its own (it would print twice). The content is normalised, so this is an
+ * ERROR ({@link DUPLICATE_TITLE_IS_ERROR}).
  *
  * Run standalone:
  *
@@ -40,11 +40,10 @@ const REPO_ROOT = join(import.meta.dir, "..");
 export const MAX_SVG_BYTES = 50 * 1024;
 
 /**
- * Whether a body that starts with its own `# ` title is an error (`true`) or
- * only a warning (`false`, the current state while existing content is
- * normalised). Flip this constant once no file triggers the warning.
+ * Whether a body that starts with its own `# ` title is an error (`true`, the
+ * current state: existing content is normalised) or only a warning (`false`).
  */
-export const DUPLICATE_TITLE_IS_ERROR = false;
+export const DUPLICATE_TITLE_IS_ERROR = true;
 
 const FORBIDDEN_ELEMENTS = new Set(["script", "image", "foreignobject"]);
 

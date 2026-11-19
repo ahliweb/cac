@@ -258,8 +258,3 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `c-xi1-m4` (sekitar sat
 ## Langkah berikutnya
 
 Modul berikut: `c-xi1-m4` (pustaka sendiri), yang menaruh `struct` dan fungsi-fungsinya dalam satu kelas untuk sensor jarak. Modul terkait: `fondasi-representasi-data` untuk gagasan bagaimana data diwakili. Pembacaan lanjut: C++ Core Guidelines bagian kelas dan hierarki kelas (C).
-
-## Rujukan
-
-- C++ Core Guidelines (C.1, C.8). <https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines>
-- Arduino, rujukan bahasa: `millis()`. <https://docs.arduino.cc/language-reference/en/functions/time/millis/>

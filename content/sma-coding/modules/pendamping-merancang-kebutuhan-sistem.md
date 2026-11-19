@@ -169,11 +169,6 @@ Isi untuk dirimu sendiri; tanpa nilai dan tidak dikumpulkan.
 
 Daftar periksa ini penilaian dirimu, dan penilaian diri sering lebih yakin daripada kenyataan. Yang menunjukkan penguasaan sebenarnya adalah jawabanmu pada Latihan bercampur dan Ulang berjarak.
 
-## Rujukan
-
-- Panduan Mata Pelajaran Informatika, Fase D – F, 2025: sumber kutipan butir CP di atas.
-- Materi blok fondasi `FND-X1-M1` pada repositori ini (membaca spesifikasi komputer).
-
 ## Catatan untuk guru
 
 - Jangan meminta siswa mewawancarai orang sungguhan atau menyerahkan data pribadi; seluruh kegiatan memakai pengguna fiktif.

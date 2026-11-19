@@ -815,19 +815,3 @@ memperdalam keamanan perangkat lunak.
   hukum kampus.
 - **Tingkat AI** pada bagian kebijakan adalah `[asumsi]`: ubah bila prodi
   punya ketentuan lain.
-
-## Rujukan
-
-- *The Python Standard Library: pathlib, re, json, urllib.request, logging,
-  subprocess, urllib.robotparser*, Python Software Foundation (dibuka
-  2026-11-19): <https://docs.python.org/3/library/index.html>
-- RFC 9309, *Robots Exclusion Protocol*, IETF (dibuka 2026-11-19):
-  <https://www.rfc-editor.org/rfc/rfc9309>
-- UU Nomor 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik, JDIH BPK
-  (teks asli; pasal 30 ayat (1) dibaca 2026-11-19):
-  <https://peraturan.bpk.go.id/Details/37589/uu-no-11-tahun-2008>
-- *OWASP Top 10* (dibuka 2026-11-19): <https://owasp.org/www-project-top-ten/>
-- *Git Reference*, git-scm.com (dibuka 2026-11-19):
-  <https://git-scm.com/docs>
-- ACM/IEEE-CS/AAAI, *Computer Science Curricula 2023*, daftar knowledge
-  area (SDF, SEC, NC) (dibuka 2026-11-19): <https://csed.acm.org/knowledge-areas/>

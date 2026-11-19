@@ -196,9 +196,3 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `d-x2-m3` (sekitar satu
 ## Langkah berikutnya
 
 Modul berikut: `d-x2-m3` (privasi dan data pribadi). Bacaan pendamping: `pendamping-teknologi-dan-demokrasi` untuk diskusi tentang dampak teknologi pada warga.
-
-## Rujukan
-
-- Orange Data Mining: widget Tree. <https://orangedatamining.com/widget-catalog/model/tree/>
-- Orange Data Mining: widget Test and Score. <https://orangedatamining.com/widget-catalog/evaluate/testandscore/>
-- Panduan Mata Pelajaran Informatika, Fase D – F, 2025. <https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf>

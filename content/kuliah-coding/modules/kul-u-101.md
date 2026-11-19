@@ -497,14 +497,3 @@ kamu bergabung ke jalur informatika, `KUL-I-101`.
   dibentuk acak per bagian dan tugas yang dinilai tetap perorangan.
 - **Tingkat AI:** Kuning untuk tugas dasar (silabus 6.3), Merah untuk ujian
   praktik; tingkat Hijau pada proyek kecil adalah `[asumsi]`, ubah bila perlu.
-
-## Rujukan
-
-- *The Python Tutorial*, Python Software Foundation (dibuka 2026-11-19):
-  <https://docs.python.org/3/tutorial/index.html>
-- Modul `csv` (pustaka standar Python), Python Software Foundation (dibuka
-  2026-11-19): <https://docs.python.org/3/library/csv.html>
-- *Git Reference*, git-scm.com (dibuka 2026-11-19): <https://git-scm.com/docs>
-- ACM/IEEE-CS/AAAI, *Computer Science Curricula 2023*, knowledge area SDF dan
-  AL: <https://csed.acm.org/knowledge-areas/> (daftar KA terverifikasi;
-  rincian unit **tidak** dibaca, jadi tidak dikutip).

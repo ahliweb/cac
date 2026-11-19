@@ -78,19 +78,19 @@ describe("checkLearnerAssets and run", () => {
     expect(lines.join("\n")).toContain("WARNING -- content/tk-sintetis/gambar/yatim.svg");
   });
 
-  test("a module body or sheet that starts with its own '# ' title is a warning, not a failure", async () => {
+  test("a module body or sheet that starts with its own '# ' title is an error", async () => {
     await write("content/tk-sintetis/modules/dua.md", "\n# Dua\n\nIsi.\n");
     await write("content/tk-sintetis/lembar/tiga.md", "# Tiga\n\nIsi.\n");
     await write("content/tk-sintetis/lembar/empat.md", "Isi tanpa judul.\n\n# Bagian\n");
     const result = await checkLearnerAssets(root);
-    expect(DUPLICATE_TITLE_IS_ERROR).toBe(false);
-    expect(result.errors).toEqual([]);
+    expect(DUPLICATE_TITLE_IS_ERROR).toBe(true);
+    expect(result.warnings).toEqual([]);
     expect(result.duplicateTitles).toBe(2);
-    expect(result.warnings).toHaveLength(2);
-    expect(result.warnings.join("\n")).toContain("content/tk-sintetis/modules/dua.md:2:");
-    expect(result.warnings.join("\n")).toContain("content/tk-sintetis/lembar/tiga.md:1:");
-    expect(await run(root, out)).toBe(0);
-    expect(lines.join("\n")).toContain("2 warning(s)");
+    expect(result.errors).toHaveLength(2);
+    expect(result.errors.join("\n")).toContain("content/tk-sintetis/modules/dua.md:2:");
+    expect(result.errors.join("\n")).toContain("content/tk-sintetis/lembar/tiga.md:1:");
+    expect(await run(root, out)).toBe(1);
+    expect(lines.join("\n")).toContain("FAILED -- 2 problem(s)");
   });
 
   test("a bad SVG fails with the file name and the rule", async () => {

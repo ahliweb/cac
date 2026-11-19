@@ -939,13 +939,11 @@ programme's `gambar/`. An SVG no sheet references is printed as a warning
 and does not change the exit code. Exit `0` clean (warnings allowed), `1` on
 any error.
 
-The same command also warns when a module body
+The same command also fails when a module body
 (`content/<program>/modules/*.md`) or a sheet (`lembar/*.md`) begins with
 its own `# ` title: `osn render modul` already prints the H1 from the index,
-so the title would appear twice. This is a **warning** for now (exit code
-unaffected); set `DUPLICATE_TITLE_IS_ERROR` to `true` in
-`scripts/check-learner-assets.ts` to make it an error once the content is
-normalised.
+so the title would appear twice. This is an **error** (exit code 1;
+`DUPLICATE_TITLE_IS_ERROR` in `scripts/check-learner-assets.ts` is `true`).
 
 ### `--out` / `--force` (all `osn render` subcommands)
 

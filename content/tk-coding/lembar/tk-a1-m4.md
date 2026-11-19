@@ -1,5 +1,3 @@
-# Kiri dan kanan
-
 ![Dua tangan dilihat dari atas; tangan kiri punya lingkaran putus-putus untuk stiker; satu stiker bulat di bawah.](../gambar/tk-a1-m4-1.svg)
 
 `[Gambar: dua tangan terlihat dari atas, seperti saat anak melihat tangannya sendiri. Tangan di sisi kiri kertas adalah tangan kiri; di punggung tangannya ada lingkaran putus-putus. Tangan di sisi kanan kertas adalah tangan kanan, tanpa lingkaran. Di bawah tangan tertulis "kiri" dan "kanan".]`

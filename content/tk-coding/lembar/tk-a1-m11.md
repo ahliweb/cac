@@ -1,5 +1,3 @@
-# Permainan besar: jalan robot
-
 ![Jalur dari awal ke garis berhenti, dua kotak kosong untuk dua kartu perintah, dan dua kartu: maju dan berhenti.](../gambar/tk-a1-m11-1.svg)
 
 `[Gambar: satu jalur berkelok dari titik awal (bintang) di kiri ke garis melintang berwarna merah di kanan. Di bawah jalur ada dua kotak kosong bergaris putus-putus, kotak pertama dan kotak kedua, dihubungkan tanda panah.]`

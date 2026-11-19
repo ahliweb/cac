@@ -284,10 +284,3 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `c-xi1-m5` (sekitar sat
 ## Langkah berikutnya
 
 Modul berikut: `c-xi1-m5` (alternatif solusi I: ambang dan histeresis), yang memakai pustaka sensor sebagai masukan keputusan. Modul terkait: `fondasi-komputer-dan-hardware` untuk gambaran perangkat keras. Pembacaan lanjut: panduan membuat pustaka Arduino.
-
-## Rujukan
-
-- C++ Core Guidelines (C.8, I.4). <https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines>
-- Arduino, panduan membuat pustaka. <https://docs.arduino.cc/learn/contributions/arduino-creating-library-guide/>
-- Arduino, rujukan bahasa: `micros()`. <https://docs.arduino.cc/language-reference/en/functions/time/micros/>
-- Arduino, rujukan bahasa: `digitalRead()`. <https://docs.arduino.cc/language-reference/en/functions/digital-io/digitalread/>

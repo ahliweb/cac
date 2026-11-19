@@ -218,9 +218,3 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `c-x2-m6` (sekitar satu
 ## Langkah berikutnya
 
 Modul berikut: `c-x2-m6` (aktuator: servo dan buzzer), yang menggerakkan dan membunyikan sesuatu dari keputusan program. Modul terkait: `fondasi-komputer-dan-hardware` untuk gagasan masukan dan keluaran. Pembacaan lanjut: dokumentasi Arduino-ESP32 tentang LEDC.
-
-## Rujukan
-
-- Arduino, rujukan bahasa: `analogWrite()` dan `map()`. <https://docs.arduino.cc/language-reference/en/functions/analog-io/analogWrite/>, <https://docs.arduino.cc/language-reference/en/functions/math/map/>
-- Arduino, rujukan bahasa: `constrain()`. <https://docs.arduino.cc/language-reference/en/functions/math/constrain/>
-- Espressif, dokumentasi Arduino-ESP32: LED Control (LEDC). Dibuka 2026-11-19. <https://docs.espressif.com/projects/arduino-esp32/en/latest/api/ledc.html>

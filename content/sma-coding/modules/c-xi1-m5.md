@@ -247,8 +247,3 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `c-xi1-m6` (sekitar sat
 ## Langkah berikutnya
 
 Modul berikut: `c-xi1-m6` (kendali hidup-mati), yang memakai histeresis untuk termostat mini. Modul terkait: `pendamping-model-jaringan-dan-troubleshooting` untuk gagasan menelusuri masalah secara bertahap. Pembacaan lanjut: dokumentasi `analogRead()` untuk resolusi pembacaan analog papanmu.
-
-## Rujukan
-
-- Arduino, rujukan bahasa: `analogRead()`. <https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/>
-- Arduino, rujukan bahasa: `digitalWrite()`. <https://docs.arduino.cc/language-reference/en/functions/digital-io/digitalwrite/>

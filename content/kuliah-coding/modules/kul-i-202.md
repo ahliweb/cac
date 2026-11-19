@@ -1,14 +1,11 @@
-# Basis Data
-
-> **DRAF — belum ditinjau.** Ini modul belajar untuk mata kuliah `KUL-I-202`
-> (3 SKS, semester 3, jalur I), bagian dari program `kuliah-coding`. Konten
-> karangan menurut ADR-0007; belum disetujui pemilik atau peninjau. Kode di
-> modul ini adalah **SQL (SQLite 3.45.1)**, dijalankan lewat modul `sqlite3`
-> Python 3.12.3 dengan `python3 -I`, dan sedikit Python. Setiap blok `sql`
-> dan `python` dijalankan penulis dan keluarannya cocok dengan yang tertulis.
-> Blok berinfo `setengah-jadi` sengaja berlubang dan tidak dijalankan.
-
 ## Untuk siapa modul ini
+
+Modul belajar untuk mata kuliah `KUL-I-202` (3 SKS, semester 3, jalur I), bagian
+dari program `kuliah-coding`. Konten ini karangan menurut ADR-0007 dan belum
+disetujui. Kode di modul ini adalah **SQL (SQLite 3.45.1)**, dijalankan lewat
+modul `sqlite3` Python 3.12.3 dengan `python3 -I`, dan sedikit Python. Setiap
+blok `sql` dan `python` dijalankan penulis dan keluarannya cocok dengan yang
+tertulis. Blok berinfo `setengah-jadi` sengaja berlubang dan tidak dijalankan.
 
 Mahasiswa semester 3 informatika atau ilmu komputer yang sudah menempuh
 `KUL-I-102` (struktur data: pohon, tabel hash). Satu mata kuliah, satu
@@ -782,21 +779,3 @@ data, `AUTO_INCREMENT` atau `SERIAL`, dan tingkat isolasi. Ketahanan transaksi
 dijelaskan konseptual karena tidak dapat diperagakan dalam skrip pendek.
 Data contoh di modul (pelanggan fiktif) tidak memuat data pribadi nyata;
 larang mahasiswa memakai data nyata pada tugas.
-
-## Rujukan
-
-- SQLite, *Documentation* (sqlite.org), dibuka 2026-11-19:
-  <https://sqlite.org/docs.html>
-- SQLite, *Foreign Key Support*, dibuka 2026-11-19:
-  <https://www.sqlite.org/foreignkeys.html>
-- SQLite, *Transaction*, dibuka 2026-11-19:
-  <https://www.sqlite.org/lang_transaction.html>
-- SQLite, *Query Planning* (`EXPLAIN QUERY PLAN` dan indeks), dibuka
-  2026-11-19: <https://www.sqlite.org/queryplanner.html>
-- SQLite, *NULL Handling*, dibuka 2026-11-19:
-  <https://www.sqlite.org/nulls.html>
-- Python, *sqlite3: DB-API 2.0 interface for SQLite databases*, dibuka
-  2026-11-19: <https://docs.python.org/3/library/sqlite3.html>
-- ACM/IEEE-CS/AAAI, *Computer Science Curricula 2023*, knowledge area DM:
-  <https://csed.acm.org/knowledge-areas/> (daftar KA terverifikasi; rincian
-  unit **tidak** dibaca, jadi tidak dikutip).

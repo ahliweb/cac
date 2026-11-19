@@ -1,5 +1,3 @@
-# Alat di sekitar kita
-
 `TK-A1-M9` · TK A · sesi 20 menit · irisan CP: `FF-DL-d` (kemampuan awal menggunakan dan merekayasa teknologi), bukan pemenuhan CP
 
 ## Tujuan
@@ -65,7 +63,3 @@ Bila ada kejadian yang menonjol, tulis catatan anekdot tiga sampai lima kalimat 
 ## Catatan untuk orang tua
 
 Saat makan atau bersiap di rumah, ajak anak menyebut nama dan kegunaan satu alat: "Ini sendok, untuk makan." Ini hanya ajakan bermain, tidak wajib dan tidak diperiksa, serta tidak memakai layar.
-
-## Rujukan
-
-- Kepmendikdasmen 127/P/2025, cara pelaksanaan tanpa perangkat digital (unplugged): https://www.kemendikdasmen.go.id/pengumuman/13654-kepmendikdasmen-tentang-pedoman-implementasi-koding-dan-kecerdasan-artifisial-pada-paud-dikdasmen (dibuka 2026-11-19; dokumen pemerintah, hanya ditautkan).

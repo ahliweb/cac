@@ -1,16 +1,13 @@
-# Organisasi Komputer dan Sistem Operasi
-
-> **DRAF — belum ditinjau.** Ini modul belajar untuk mata kuliah `KUL-I-203`
-> (3 SKS, semester 4, jalur I), bagian dari program `kuliah-coding`. Konten
-> karangan menurut ADR-0007; belum disetujui pemilik atau peninjau. Kode di
-> modul ini adalah **C++17** (g++ 13.3, Linux x86-64), **assembly x86-64**
-> (GNU as 2.42, sintaks Intel), dan perintah **bash 5.2** (GNU coreutils
-> 9.4). Blok `cpp` dikompilasi dengan `-std=c++17 -Wall -Wextra` tanpa
-> peringatan, dijalankan, dan keluarannya cocok dengan yang tertulis;
-> assembly dirakit dan dijalankan; perintah bash dijalankan. Blok berinfo
-> `setengah-jadi` sengaja berlubang dan tidak dijalankan.
-
 ## Untuk siapa modul ini
+
+Modul belajar untuk mata kuliah `KUL-I-203` (3 SKS, semester 4, jalur I), bagian
+dari program `kuliah-coding`. Konten ini karangan menurut ADR-0007 dan belum
+disetujui. Kode di modul ini adalah **C++17** (g++ 13.3, Linux x86-64),
+**assembly x86-64** (GNU as 2.42, sintaks Intel), dan perintah **bash 5.2** (GNU
+coreutils 9.4). Blok `cpp` dikompilasi dengan `-std=c++17 -Wall -Wextra` tanpa
+peringatan, dijalankan, dan keluarannya cocok dengan yang tertulis; assembly
+dirakit dan dijalankan; perintah bash dijalankan. Blok berinfo `setengah-jadi`
+sengaja berlubang dan tidak dijalankan.
 
 Mahasiswa semester 4 informatika atau ilmu komputer yang sudah menempuh
 `KUL-I-101` (penunjuk, memori, fungsi). Satu mata kuliah, satu semester: 14
@@ -770,23 +767,3 @@ acak per bagian; jangan menilai pasangan. ISA x86-64 dipilih penyusun
 Jalankan latihan assembly dan proses di mesin virtual atau akun terisolasi.
 Memori virtual dibatasi pada pemetaan halaman dan penggantian; TLB dan alokator
 memori tingkat lanjut hanya disebut.
-
-## Rujukan
-
-- GNU Binutils, *Using as* (GNU assembler), dibuka 2026-11-19:
-  <https://sourceware.org/binutils/docs/as/>
-- Linux man-pages, `write(2)`, dibuka 2026-11-19:
-  <https://man7.org/linux/man-pages/man2/write.2.html>
-- Linux man-pages, `fork(2)`, dibuka 2026-11-19:
-  <https://man7.org/linux/man-pages/man2/fork.2.html>
-- Arpaci-Dusseau dan Arpaci-Dusseau, *Operating Systems: Three Easy Pieces*,
-  dibuka 2026-11-19: <https://pages.cs.wisc.edu/~remzi/OSTEP/>
-- GNU Project, *GNU Coreutils Manual*, dibuka 2026-11-19:
-  <https://www.gnu.org/software/coreutils/manual/>
-- GNU Project, *Bash Reference Manual*, dibuka 2026-11-19:
-  <https://www.gnu.org/software/bash/manual/>
-- GNU Project, *Using the GNU Compiler Collection (GCC)*, dibuka 2026-11-19:
-  <https://gcc.gnu.org/onlinedocs/>
-- ACM/IEEE-CS/AAAI, *Computer Science Curricula 2023*, knowledge area AR,
-  OS, dan SF: <https://csed.acm.org/knowledge-areas/> (daftar KA
-  terverifikasi; rincian unit **tidak** dibaca, jadi tidak dikutip).

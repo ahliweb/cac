@@ -249,8 +249,3 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `c-x1-m10` (pertanyaan 
 ## Langkah berikutnya
 
 Modul berikut: `c-x1-m10` (perulangan dan keluaran serial), yang membuat program mengulang dan mencetak nilai untuk mencari galat. Modul terkait: `matkom-logika-proposisi` membahas tabel kebenaran lebih dalam. Pembacaan lanjut: dokumentasi `pinMode`, `digitalRead` (Arduino) dan GPIO pada dokumentasi Arduino-ESP32 milik Espressif.
-
-## Rujukan
-
-- Arduino, rujukan bahasa: `pinMode()` (termasuk `INPUT_PULLUP`) dan `digitalRead()`. <https://docs.arduino.cc/language-reference/en/functions/digital-io/pinMode/>, <https://docs.arduino.cc/language-reference/en/functions/digital-io/digitalread/>
-- Espressif, dokumentasi Arduino-ESP32: GPIO. <https://docs.espressif.com/projects/arduino-esp32/en/latest/api/gpio.html>

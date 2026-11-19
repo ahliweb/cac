@@ -1,5 +1,3 @@
-# Tebak aturan
-
 ![Dua kotak berisi benda. Kotak kiri berisi lingkaran berbagai warna, kotak kanan berisi bentuk yang bukan lingkaran. Di bawah ada dua kartu aturan.](../gambar/tk-a1-m8-1.svg)
 
 `[Gambar: dua kotak berdampingan. Kotak kiri berisi empat lingkaran, masing-masing berbeda warna: merah, biru bertitik putih, kuning, dan hijau. Kotak kanan berisi satu persegi, satu segitiga, dan dua persegi panjang dengan warna berbeda-beda. Di bawah kotak kiri ada satu kotak kosong putus-putus untuk menempel kartu aturan.]`

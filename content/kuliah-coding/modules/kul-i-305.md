@@ -1,16 +1,13 @@
-# Profesi, Etika, dan Masyarakat
-
-> **DRAF — belum ditinjau.** Ini modul belajar untuk mata kuliah `KUL-I-305`
-> (2 SKS, semester 6, jalur I), bagian dari program `kuliah-coding`. Konten
-> karangan menurut ADR-0007; belum disetujui pemilik atau peninjau. Mata
-> kuliah ini sebagian besar tentang **kasus dan penalaran**, bukan kode. Dua
-> blok `cpp` kecil di bagian 3 adalah **C++17** (g++ 13.3, Linux): keduanya
-> dikompilasi dengan `-std=c++17 -Wall -Wextra` tanpa peringatan, dijalankan,
-> dan keluarannya cocok. Semua nama, kasus, dan data **fiktif**. Bagian hukum
-> hanya memuat yang tertulis pada teks resmi yang dibaca penyusun; ini bahan
-> belajar, bukan nasihat hukum.
-
 ## Untuk siapa modul ini
+
+Modul belajar untuk mata kuliah `KUL-I-305` (2 SKS, semester 6, jalur I), bagian
+dari program `kuliah-coding`. Konten ini karangan menurut ADR-0007 dan belum
+disetujui. Mata kuliah ini sebagian besar tentang **kasus dan penalaran**, bukan
+kode. Dua blok `cpp` kecil di bagian 3 adalah **C++17** (g++ 13.3, Linux):
+keduanya dikompilasi dengan `-std=c++17 -Wall -Wextra` tanpa peringatan,
+dijalankan, dan keluarannya cocok. Semua nama, kasus, dan data **fiktif**.
+Bagian hukum hanya memuat yang tertulis pada teks resmi yang dibaca penyusun;
+ini bahan belajar, bukan nasihat hukum.
 
 Mahasiswa semester 6 informatika atau ilmu komputer. Tidak ada prasyarat mata
 kuliah. Satu mata kuliah, satu semester: 14 pertemuan, ujian tengah sesudah
@@ -556,36 +553,3 @@ memakai kerangka ini untuk memutuskan kasus nyata bersama pihak hukum.
   punya ketentuan lain. Kode etik asosiasi profesi tidak dikutip karena
   halamannya tidak dapat dibuka penyusun pada 2026-11-19; dosen dapat
   menambahkan kode etik yang berlaku untuk bidang itu.
-
-## Rujukan
-
-- Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi, JDIH
-  BPK (teks asli; Pasal 1, 2, 4 sampai 10, 20, 35, 36, 46, 65 dibaca
-  2026-11-19): <https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022>
-- Undang-Undang Nomor 28 Tahun 2014 tentang Hak Cipta, JDIH BPK (teks asli;
-  Pasal 1, 9, 40 dibaca 2026-11-19):
-  <https://peraturan.bpk.go.id/Details/38690/uu-no-28-tahun-2014>
-- Undang-Undang Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana,
-  JDIH BPK (teks asli; Pasal 332, 622, 624 dibaca 2026-11-19):
-  <https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023>
-- Surat Edaran Menteri Komunikasi dan Informatika Nomor 9 Tahun 2023 tentang
-  Etika Kecerdasan Artifisial, JDIH Komdigi (pedoman etika, bukan peraturan
-  yang mengikat langsung; dibuka 2026-11-19):
-  <https://jdih.komdigi.go.id/produk_hukum/view/id/883/t/surat+edaran+menteri+komunikasi+dan+informatika+nomor+9+tahun+2023>
-- GNU General Public License v3.0, teks lengkap, gnu.org (bagian 5 dibaca
-  2026-11-19): <https://www.gnu.org/licenses/gpl-3.0.html>
-- Creative Commons, *Attribution-ShareAlike 4.0 International* (ringkasan
-  lisensi, dibuka 2026-11-19): <https://creativecommons.org/licenses/by-sa/4.0/>
-- Choose a License, *MIT*, *Apache-2.0*, *GPL-3.0* (ringkasan, dibuka
-  2026-11-19): <https://choosealicense.com/>
-- SPDX License List (dibuka 2026-11-19): <https://spdx.org/licenses/>
-- NIST, *AI Risk Management Framework* (halaman ringkasan; teks kerangka tidak
-  dibaca; dibuka 2026-11-19):
-  <https://www.nist.gov/itl/ai-risk-management-framework>
-- OWASP Gen AI Security Project, *OWASP Top 10 for LLM Applications 2025*
-  (daftar sepuluh risiko; dibuka 2026-11-19): <https://genai.owasp.org/llm-top-10/>
-- U.S. Copyright Office, *Copyright and Artificial Intelligence, Part 2:
-  Copyrightability* (Januari 2025; hukum AS; dibuka 2026-11-19):
-  <https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf>
-- ACM/IEEE-CS/AAAI, *Computer Science Curricula 2023*, knowledge area SEP
-  (dibuka 2026-11-19): <https://csed.acm.org/knowledge-areas/>

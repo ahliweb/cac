@@ -160,11 +160,3 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `d-x2-m10` (sekitar sat
 ## Langkah berikutnya
 
 Modul berikut: `d-x2-m10` (teks sebagai data), tempat kamu mengubah kalimat menjadi angka. Bacaan pendamping: `pendamping-periksa-fakta-dan-baca-lateral` untuk memeriksa klaim yang disajikan lewat grafik.
-
-## Rujukan
-
-- Orange Data Mining: widget Bar Plot. <https://orangedatamining.com/widget-catalog/visualize/barplot/>
-- Orange Data Mining: widget Box Plot. <https://orangedatamining.com/widget-catalog/visualize/boxplot/>
-- Orange Data Mining: widget Scatter Plot. <https://orangedatamining.com/widget-catalog/visualize/scatterplot/>
-- From Data to Viz: Dataviz caveats (bacaan tambahan, bukan sumber resmi). <https://www.data-to-viz.com/caveats.html>
-- Panduan Mata Pelajaran Informatika, Fase D – F, 2025. <https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf>

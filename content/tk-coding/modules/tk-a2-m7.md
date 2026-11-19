@@ -1,5 +1,3 @@
-# Sebab dan akibat
-
 `TK-A2-M7` · TK A · sesi 20 menit · irisan CP: `FF-DL-c` (hubungan sebab akibat), bukan pemenuhan CP
 
 ## Tujuan
@@ -8,7 +6,8 @@ Anak dapat menyebut akibat dari satu kejadian ("jika air dituang, ...").
 
 ## Alat dan bahan
 
-- Tiga pasang kartu sebab-akibat bergambar buatan guru atau bebas hak, tanpa wajah atau foto anak nyata: (1) air dituang ke spons, lalu spons basah; (2) bola didorong, lalu bola menggelinding; (3) hujan turun, lalu tanah basah.- Untuk percobaan, di atas nampan: spons bersih yang kering, piring plastik, cangkir plastik kecil berisi sedikit air bersih, dan kain lap. Air dituang oleh guru atau di bawah pengawasan penuh guru; air tidak diminum.
+- Tiga pasang kartu sebab-akibat bergambar buatan guru atau bebas hak, tanpa wajah atau foto anak nyata: (1) air dituang ke spons, lalu spons basah; (2) bola didorong, lalu bola menggelinding; (3) hujan turun, lalu tanah basah.
+- Untuk percobaan, di atas nampan: spons bersih yang kering, piring plastik, cangkir plastik kecil berisi sedikit air bersih, dan kain lap. Air dituang oleh guru atau di bawah pengawasan penuh guru; air tidak diminum.
 - Lembar anak `tk-a2-m7` dicetak satu per kelompok; gambarnya (SVG buatan penyusun) memuat tiga gambar sebab di kiri, tiga kotak kosong di kanan, dan tiga kartu akibat untuk ditempel.
 - Tanpa perangkat digital.
 
@@ -64,7 +63,3 @@ Bila ada kejadian yang menonjol, tulis catatan anekdot tiga sampai lima kalimat 
 ## Catatan untuk orang tua
 
 Di rumah, saat anak mencuci tangan atau menyiram tanaman, ajak anak menebak, "Jika air dituang ke sini, apa yang terjadi?" Ini hanya ajakan bermain, tidak wajib dan tidak diperiksa, serta tidak memakai layar.
-
-## Rujukan
-
-- Kepmendikdasmen 127/P/2025, cara pelaksanaan tanpa perangkat digital (unplugged): https://www.kemendikdasmen.go.id/pengumuman/13654-kepmendikdasmen-tentang-pedoman-implementasi-koding-dan-kecerdasan-artifisial-pada-paud-dikdasmen (dibuka 2026-11-19; dokumen pemerintah, hanya ditautkan).

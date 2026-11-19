@@ -1,5 +1,3 @@
-# Urutan empat langkah
-
 ![Empat kotak kosong berurutan dari kiri ke kanan, dan di bawahnya empat kartu menanam biji: air, lubang, tunas, biji.](../gambar/tk-a2-m1-1.svg)
 
 `[Gambar: empat kotak kosong bergaris putus-putus berjajar dari kiri ke kanan, dihubungkan tiga tanda panah. Di bawah kotak tertulis "pertama, kedua, ketiga, keempat".]`

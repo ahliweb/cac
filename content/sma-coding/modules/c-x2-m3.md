@@ -186,8 +186,3 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `c-x2-m4` (sekitar satu
 ## Langkah berikutnya
 
 Modul berikut: `c-x2-m4` (larik dan rata-rata bergerak), yang meratakan derau dengan menyimpan beberapa pembacaan terakhir. Modul terkait: `matkom-logika-proposisi` untuk logika "dan" dan "atau". Pembacaan lanjut: lembar data sensormu.
-
-## Rujukan
-
-- Panduan Mata Pelajaran Informatika, Fase D – F, 2025. <https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf>
-- Espressif, dokumentasi Arduino-ESP32: ADC (pembacaan masukan analog). <https://docs.espressif.com/projects/arduino-esp32/en/latest/api/adc.html>
