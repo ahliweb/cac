@@ -211,6 +211,9 @@ describe("osn validate --program <id> with a module index", () => {
       for (const entry of entries) {
         await repo.write(String(entry.contentPath), "## Panduan\n\nTeks.\n");
       }
+      // The synthetic codes may name real modules whose sheets exist in the
+      // copied repository; the first sheet must be absent for this case.
+      await rm(`${repo.root}/${String(entries[0]?.learnerSheetPath)}`, { force: true });
       await repo.write(String(entries[1]?.learnerSheetPath), "\n");
       await repo.write(String(entries[2]?.learnerSheetPath), "# Lembar\n\nNama: ________\n");
       const result = await repo.cli("validate", "--program", program);

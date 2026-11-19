@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="600" height="420" role="img" aria-labelledby="t d">
+  <title id="t">Tangan kiri dan tangan kanan</title>
+  <desc id="d">Dua tangan terlihat dari atas seperti saat anak memandang tangannya sendiri. Tangan kiri di sisi kiri kertas dengan lingkaran putus-putus di punggung tangan untuk menempel stiker, tangan kanan di sisi kanan. Di bawah ada satu stiker bulat untuk digunting.</desc>
+  <rect width="600" height="420" fill="#ffffff"/>
+  <g id="tangan-kiri" fill="#ffe0b2" stroke="#333333" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="95" y="150" width="150" height="150" rx="22"/>
+    <rect x="100" y="60" width="26" height="105" rx="13"/>
+    <rect x="138" y="35" width="26" height="130" rx="13"/>
+    <rect x="176" y="25" width="26" height="140" rx="13"/>
+    <rect x="212" y="40" width="26" height="125" rx="13"/>
+    <path d="M245 230 L305 185 Q320 175 328 188 Q336 202 322 212 L250 275 Z"/>
+  </g>
+  <g id="tangan-kanan" fill="#ffe0b2" stroke="#333333" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="355" y="150" width="150" height="150" rx="22"/>
+    <rect x="474" y="60" width="26" height="105" rx="13"/>
+    <rect x="436" y="35" width="26" height="130" rx="13"/>
+    <rect x="398" y="25" width="26" height="140" rx="13"/>
+    <rect x="362" y="40" width="26" height="125" rx="13"/>
+    <path d="M355 230 L295 185 Q280 175 272 188 Q264 202 278 212 L350 275 Z"/>
+  </g>
+  <circle cx="170" cy="225" r="32" fill="none" stroke="#333333" stroke-width="4" stroke-dasharray="8 7"/>
+  <g font-family="sans-serif" font-size="26" text-anchor="middle" fill="#333333">
+    <text x="170" y="335">kiri</text>
+    <text x="430" y="335">kanan</text>
+  </g>
+  <line x1="30" y1="360" x2="570" y2="360" stroke="#999999" stroke-width="2" stroke-dasharray="4 6"/>
+  <circle cx="300" cy="392" r="22" fill="#ffd54f" stroke="#333333" stroke-width="3"/>
+</svg>

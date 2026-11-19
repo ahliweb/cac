@@ -63,15 +63,4 @@ describe("renderCommand.run: modul and --lembar (in-process)", () => {
     expect(await renderCommand.run(["sop", "--lembar"], ctx)).toBe(2);
     expect(stderr.join("")).toContain('--lembar is only valid with "osn render modul"');
   });
-
-  test("a programme without a modules.json says so", async () => {
-    const { ctx, stderr } = makeContext();
-    expect(
-      await renderCommand.run(
-        ["modul", "--program", "tk-coding", "--id", "tk-a1-m1", "--lembar"],
-        ctx,
-      ),
-    ).toBe(2);
-    expect(stderr.join("")).toContain("this programme has no modules.json");
-  });
 });

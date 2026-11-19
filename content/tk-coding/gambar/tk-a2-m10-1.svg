@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="600" height="420" role="img" aria-labelledby="t d">
+  <title>Merancang kipas</title>
+  <desc id="d">Tiga gambar berurutan dari kiri ke kanan dihubungkan panah. Pertama selembar kertas persegi panjang. Kedua kertas dengan lipatan bolak-balik berbentuk gelombang bergerigi. Ketiga kipas terbuka berbentuk setengah lingkaran dengan pangkal dijepit. Di bawah ada satu kotak kosong putus-putus untuk menggambar kipas setelah diubah.</desc>
+  <rect width="600" height="420" fill="#ffffff"/>
+  <!-- 1. kertas datar -->
+  <rect x="30" y="50" width="120" height="84" rx="4" fill="#fffde7" stroke="#333333" stroke-width="4"/>
+  <text x="90" y="172" font-family="sans-serif" font-size="20" text-anchor="middle" fill="#333333">kertas</text>
+  <path d="M164 92 H198 M186 80 L200 92 L186 104" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- 2. lipat bolak-balik -->
+  <path d="M215 134 L230 50 L245 134 L260 50 L275 134 L290 50 L305 134 L320 50 L335 134" fill="#fffde7" stroke="#333333" stroke-width="4" stroke-linejoin="round"/>
+  <text x="275" y="172" font-family="sans-serif" font-size="20" text-anchor="middle" fill="#333333">lipat bolak-balik</text>
+  <path d="M356 92 H390 M378 80 L392 92 L378 104" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- 3. kipas terbuka -->
+  <path d="M480 140 L409 69 A100 100 0 0 1 551 69 Z" fill="#fff9c4" stroke="#333333" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M480 140 L428 62 M480 140 L455 50 M480 140 L480 44 M480 140 L505 50 M480 140 L532 62" stroke="#333333" stroke-width="2" fill="none"/>
+  <rect x="470" y="134" width="20" height="26" rx="3" fill="#cfd8dc" stroke="#333333" stroke-width="3"/>
+  <text x="480" y="190" font-family="sans-serif" font-size="20" text-anchor="middle" fill="#333333">kipas</text>
+  <line x1="20" y1="214" x2="580" y2="214" stroke="#999999" stroke-width="2" stroke-dasharray="4 6"/>
+  <text x="300" y="242" font-family="sans-serif" font-size="20" text-anchor="middle" fill="#333333">kipasku setelah kuubah</text>
+  <rect x="150" y="256" width="300" height="148" rx="14" fill="none" stroke="#333333" stroke-width="4" stroke-dasharray="10 8"/>
+</svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="600" height="420" role="img" aria-labelledby="t d">
+  <title>Permainan kita semester ini</title>
+  <desc id="d">Empat gambar permainan di empat sudut: empat kartu urutan dengan panah di antaranya, peta tiga kali tiga petak dengan bintang dan bendera, satu baris manik merah, merah, biru, merah, dan kipas terbuka dari kertas. Di tengah ada lingkaran putus-putus untuk menempel stiker. Di pojok bawah ada satu stiker bulat kuning.</desc>
+  <rect width="600" height="420" fill="#ffffff"/>
+  <!-- kiri atas: empat kartu urutan -->
+  <g fill="#fffde7" stroke="#333333" stroke-width="3">
+    <rect x="20" y="28" width="46" height="62" rx="6"/>
+    <rect x="86" y="28" width="46" height="62" rx="6"/>
+    <rect x="152" y="28" width="46" height="62" rx="6"/>
+    <rect x="218" y="28" width="46" height="62" rx="6"/>
+  </g>
+  <g fill="none" stroke="#333333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M68 59 H84 M78 53 L85 59 L78 65"/>
+    <path d="M134 59 H150 M144 53 L151 59 L144 65"/>
+    <path d="M200 59 H216 M210 53 L217 59 L210 65"/>
+  </g>
+  <g fill="#333333">
+    <circle cx="43" cy="59" r="8"/>
+    <path d="M97 72 L109 46 L121 72 Z"/>
+    <rect x="164" y="48" width="22" height="22" rx="3"/>
+    <path d="M230 70 V48 M230 48 L252 48 L252 70" fill="none" stroke="#333333" stroke-width="4"/>
+  </g>
+  <!-- kanan atas: peta 3x3 dengan bintang dan bendera -->
+  <g fill="#ffffff" stroke="#333333" stroke-width="3">
+    <rect x="380" y="20" width="48" height="48"/><rect x="428" y="20" width="48" height="48"/><rect x="476" y="20" width="48" height="48"/>
+    <rect x="380" y="68" width="48" height="48"/><rect x="428" y="68" width="48" height="48"/><rect x="476" y="68" width="48" height="48"/>
+    <rect x="380" y="116" width="48" height="48"/><rect x="428" y="116" width="48" height="48"/><rect x="476" y="116" width="48" height="48"/>
+  </g>
+  <path d="M452 62 V26" stroke="#333333" stroke-width="4" stroke-linecap="round"/>
+  <path d="M452 26 L474 34 L452 42 Z" fill="#e53935" stroke="#333333" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M500 128 L506 142 L521 143 L509 152 L513 158 L500 150 L487 158 L491 152 L479 143 L494 142 Z" fill="#ffd54f" stroke="#333333" stroke-width="2" stroke-linejoin="round"/>
+  <!-- kiri bawah: pola manik -->
+  <g stroke="#333333" stroke-width="3">
+    <circle cx="50" cy="330" r="22" fill="#e53935"/>
+    <circle cx="105" cy="330" r="22" fill="#e53935"/>
+    <circle cx="160" cy="330" r="22" fill="#1e88e5"/>
+    <circle cx="215" cy="330" r="22" fill="#e53935"/>
+  </g>
+  <!-- kanan bawah: kipas -->
+  <path d="M460 380 L400 320 A85 85 0 0 1 520 320 Z" fill="#fff9c4" stroke="#333333" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M460 380 L416 316 M460 380 L440 304 M460 380 L460 296 M460 380 L480 304 M460 380 L504 316" stroke="#333333" stroke-width="2" fill="none"/>
+  <rect x="451" y="374" width="18" height="24" rx="3" fill="#cfd8dc" stroke="#333333" stroke-width="3"/>
+  <!-- tengah: lingkaran stiker -->
+  <circle cx="300" cy="215" r="48" fill="none" stroke="#333333" stroke-width="4" stroke-dasharray="8 7"/>
+  <!-- stiker bulat -->
+  <circle cx="555" cy="395" r="18" fill="#ffd54f" stroke="#333333" stroke-width="3"/>
+</svg>

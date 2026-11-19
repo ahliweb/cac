@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="600" height="420" role="img" aria-labelledby="t d">
+  <title>Permainan besar: raja urutan</title>
+  <desc id="d">Empat kotak kosong putus-putus berjajar dari kiri ke kanan dihubungkan panah, dengan gambar mahkota kecil di atas kotak pertama. Di bagian bawah ada empat kartu untuk ditempel: tangan di bawah keran dengan tetes air, kursi, mangkuk dengan sendok, dan kotak bekal tertutup.</desc>
+  <rect width="600" height="420" fill="#ffffff"/>
+  <!-- mahkota -->
+  <path d="M40 60 L52 30 L68 52 L84 30 L96 60 Z" fill="#ffd54f" stroke="#333333" stroke-width="3" stroke-linejoin="round"/>
+  <!-- empat kotak jawab -->
+  <rect x="30" y="76" width="106" height="100" rx="10" fill="none" stroke="#333333" stroke-width="4" stroke-dasharray="10 8"/>
+  <path d="M140 126 H152 M146 118 L154 126 L146 134" fill="none" stroke="#333333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="158" y="76" width="106" height="100" rx="10" fill="none" stroke="#333333" stroke-width="4" stroke-dasharray="10 8"/>
+  <path d="M268 126 H280 M274 118 L282 126 L274 134" fill="none" stroke="#333333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="286" y="76" width="106" height="100" rx="10" fill="none" stroke="#333333" stroke-width="4" stroke-dasharray="10 8"/>
+  <path d="M396 126 H408 M402 118 L410 126 L402 134" fill="none" stroke="#333333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="414" y="76" width="106" height="100" rx="10" fill="none" stroke="#333333" stroke-width="4" stroke-dasharray="10 8"/>
+  <line x1="20" y1="204" x2="580" y2="204" stroke="#999999" stroke-width="2" stroke-dasharray="4 6"/>
+  <text x="300" y="232" font-family="sans-serif" font-size="18" text-anchor="middle" fill="#333333">kartu untuk ditempel</text>
+  <!-- kartu 1: cuci tangan -->
+  <rect x="30" y="248" width="120" height="150" rx="10" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <path d="M50 280 H100 Q108 280 108 288 V294" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round"/>
+  <g fill="#1e88e5" stroke="#333333" stroke-width="2">
+    <path d="M108 304 q-5 9 0 12 q5 -3 0 -12 Z"/>
+    <path d="M108 324 q-5 9 0 12 q5 -3 0 -12 Z"/>
+  </g>
+  <path d="M70 366 Q70 336 90 336 L110 336 Q132 336 132 360 L132 372 L70 372 Z" fill="#ffe0b2" stroke="#333333" stroke-width="3" stroke-linejoin="round"/>
+  <!-- kartu 2: duduk (kursi) -->
+  <rect x="165" y="248" width="120" height="150" rx="10" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <path d="M200 280 V340 H258 M200 340 V382 M258 340 V382" fill="none" stroke="#333333" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- kartu 3: makan (mangkuk dan sendok) -->
+  <rect x="300" y="248" width="120" height="150" rx="10" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <path d="M322 320 H398 Q396 362 360 362 Q324 362 322 320 Z" fill="#ffccbc" stroke="#333333" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M390 290 L372 330" stroke="#333333" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="394" cy="286" rx="9" ry="12" fill="#cfd8dc" stroke="#333333" stroke-width="3" transform="rotate(25 394 286)"/>
+  <!-- kartu 4: kotak bekal tertutup -->
+  <rect x="435" y="248" width="120" height="150" rx="10" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <rect x="456" y="306" width="78" height="52" rx="8" fill="#c8e6c9" stroke="#333333" stroke-width="4"/>
+  <rect x="452" y="294" width="86" height="16" rx="6" fill="#a5d6a7" stroke="#333333" stroke-width="4"/>
+  <path d="M478 294 V284 H512 V294" fill="none" stroke="#333333" stroke-width="4" stroke-linejoin="round"/>
+</svg>
