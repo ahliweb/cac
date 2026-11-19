@@ -5436,6 +5436,465 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xii2-m7.md"
+    },
+    {
+      "id": "c-xii2-m1",
+      "title": "Pemeliharaan program I",
+      "cpItems": ["F-AP-c"],
+      "weekCodes": ["C-XII2-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii1-m7", "c-xi1-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: const",
+          "url": "https://docs.arduino.cc/language-reference/en/variables/variable-scope-qualifiers/const/"
+        },
+        {
+          "title": "C++ Core Guidelines",
+          "url": "https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii2-m1.md"
+    },
+    {
+      "id": "c-xii2-m2",
+      "title": "Pemeliharaan program II",
+      "cpItems": ["F-AP-c"],
+      "weekCodes": ["C-XII2-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii2-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: sizeof()",
+          "url": "https://docs.arduino.cc/language-reference/en/variables/utilities/sizeof/"
+        },
+        {
+          "title": "Arduino: const",
+          "url": "https://docs.arduino.cc/language-reference/en/variables/variable-scope-qualifiers/const/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii2-m2.md"
+    },
+    {
+      "id": "c-xii2-m3",
+      "title": "Memodelkan masalah lapangan",
+      "cpItems": [],
+      "weekCodes": ["C-XII2-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii2-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D - F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii2-m3.md"
+    },
+    {
+      "id": "c-xii2-m4",
+      "title": "Ulasan keamanan dan privasi",
+      "cpItems": [],
+      "weekCodes": ["C-XII2-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii2-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "OWASP: Secrets Management Cheat Sheet",
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html"
+        },
+        {
+          "title": "NIST IR 8259A: IoT Device Cybersecurity Capability Core Baseline",
+          "url": "https://csrc.nist.gov/pubs/ir/8259/a/final"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii2-m4.md"
+    },
+    {
+      "id": "c-xii2-m5",
+      "title": "Proyek akhir: rancangan",
+      "cpItems": ["F-BK-a"],
+      "weekCodes": ["C-XII2-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii2-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D - F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii2-m5.md"
+    },
+    {
+      "id": "c-xii2-m6",
+      "title": "Proyek akhir: sprint 1 (perangkat keras) (F)",
+      "cpItems": ["F-BK-a", "F-AP-d"],
+      "weekCodes": ["C-XII2-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii2-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: analogRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/"
+        },
+        {
+          "title": "Arduino-ESP32 (Espressif): ADC",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/adc.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii2-m6.md"
+    },
+    {
+      "id": "c-xii2-m7",
+      "title": "Proyek akhir: sprint 2 (program)",
+      "cpItems": ["F-BK-a", "F-AP-d"],
+      "weekCodes": ["C-XII2-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii2-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: millis()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/millis/"
+        },
+        {
+          "title": "C++ Core Guidelines",
+          "url": "https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii2-m7.md"
+    },
+    {
+      "id": "d-xii2-m8",
+      "title": "Pengujian akhir (kelas XII semester 2)",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M8"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m13"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Cross-validation, evaluating estimator performance",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "scikit-learn: Common pitfalls and recommended practices",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m8.md"
+    },
+    {
+      "id": "d-xii2-m9",
+      "title": "Dokumentasi (kelas XII semester 2)",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M9"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Mitchell dkk. (2019), Model Cards for Model Reporting, FAT* '19",
+          "url": "https://arxiv.org/abs/1810.03993"
+        },
+        {
+          "title": "Hugging Face: Model Cards (contoh format)",
+          "url": "https://huggingface.co/docs/hub/model-cards"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m9.md"
+    },
+    {
+      "id": "d-xii2-m10",
+      "title": "Ulasan etika dan privasi",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M10"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi, JDIH BPK",
+          "url": "https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022"
+        },
+        {
+          "title": "NIST AI 100-1: Artificial Intelligence Risk Management Framework (AI RMF 1.0), Januari 2023",
+          "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m10.md"
+    },
+    {
+      "id": "d-xii2-m11",
+      "title": "Ulasan sejawat (kelas XII semester 2)",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M11"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Common pitfalls and recommended practices",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "Kapoor dan Narayanan (2022), Leakage and the Reproducibility Crisis in ML-based Science",
+          "url": "https://arxiv.org/abs/2207.07048"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m11.md"
+    },
+    {
+      "id": "d-xii2-m12",
+      "title": "Presentasi (kelas XII semester 2)",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M12"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Mitchell dkk. (2019), Model Cards for Model Reporting, FAT* '19",
+          "url": "https://arxiv.org/abs/1810.03993"
+        },
+        {
+          "title": "scikit-learn: Cross-validation, evaluating estimator performance",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m12.md"
+    },
+    {
+      "id": "d-xii2-m13",
+      "title": "Portofolio dan refleksi",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M13"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python: hashlib, secure hashes and message digests",
+          "url": "https://docs.python.org/3/library/hashlib.html"
+        },
+        {
+          "title": "Pineau dkk. (2020), Improving Reproducibility in Machine Learning Research (bacaan tambahan)",
+          "url": "https://arxiv.org/abs/2003.12206"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m13.md"
+    },
+    {
+      "id": "d-xii2-m14",
+      "title": "Asesmen (kelas XII semester 2)",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M14"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Common pitfalls and recommended practices",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m14.md"
+    },
+    {
+      "id": "e-xii2-m8",
+      "title": "Proyek akhir: implementasi II",
+      "cpItems": [],
+      "weekCodes": ["E-XII2-M8"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m14"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Grover's algorithm (Analysis)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/grover-algorithm/analysis"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii2-m8.md"
+    },
+    {
+      "id": "e-xii2-m9",
+      "title": "Proyek akhir: pengujian dan dokumentasi",
+      "cpItems": [],
+      "weekCodes": ["E-XII2-M9"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii2-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "NIST/SEMATECH e-Handbook of Statistical Methods: 7.2.4.1. Confidence intervals",
+          "url": "https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii2-m9.md"
+    },
+    {
+      "id": "e-xii2-m10",
+      "title": "Proyek akhir: pengujian lanjutan",
+      "cpItems": [],
+      "weekCodes": ["E-XII2-M10"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii2-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Platform: qiskit.quantum_info.Statevector",
+          "url": "https://quantum.cloud.ibm.com/docs/en/api/qiskit/qiskit.quantum_info.Statevector"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii2-m10.md"
+    },
+    {
+      "id": "e-xii2-m11",
+      "title": "Proyek akhir: presentasi",
+      "cpItems": [],
+      "weekCodes": ["E-XII2-M11"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii2-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Preskill: Quantum Computing in the NISQ era and beyond (arXiv)",
+          "url": "https://arxiv.org/abs/1801.00862"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii2-m11.md"
+    },
+    {
+      "id": "e-xii2-m12",
+      "title": "Proyek akhir: portofolio",
+      "cpItems": [],
+      "weekCodes": ["E-XII2-M12"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii2-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "NIST: Post-Quantum Cryptography FAQs",
+          "url": "https://csrc.nist.gov/projects/post-quantum-cryptography/faqs"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii2-m12.md"
+    },
+    {
+      "id": "e-xii2-m13",
+      "title": "Cadangan terstruktur: tinjauan",
+      "cpItems": [],
+      "weekCodes": ["E-XII2-M13"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m14"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Preskill: Quantum Computing in the NISQ era and beyond (arXiv)",
+          "url": "https://arxiv.org/abs/1801.00862"
+        },
+        {
+          "title": "Bennett, Bernstein, Brassard, Vazirani: Strengths and Weaknesses of Quantum Computing (arXiv)",
+          "url": "https://arxiv.org/abs/quant-ph/9701001"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii2-m13.md"
+    },
+    {
+      "id": "e-xii2-m14",
+      "title": "Asesmen dan refleksi (kelas XII semester 2)",
+      "cpItems": [],
+      "weekCodes": ["E-XII2-M14"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii2-m13"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "NIST: Post-Quantum Cryptography (proyek)",
+          "url": "https://csrc.nist.gov/projects/post-quantum-cryptography"
+        },
+        {
+          "title": "IBM Quantum Learning: Grover's algorithm (Analysis)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/grover-algorithm/analysis"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii2-m14.md"
     }
   ]
 }
