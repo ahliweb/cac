@@ -1844,6 +1844,187 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-x2-m14.md"
+    },
+    {
+      "id": "c-xi1-m1",
+      "title": "Proses rekayasa produk IoT",
+      "cpItems": ["F-BK-a"],
+      "weekCodes": ["C-XI1-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": [],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F (Kemendikdasmen, 2025)",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Arduino: millis()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/millis/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi1-m1.md"
+    },
+    {
+      "id": "c-xi1-m2",
+      "title": "Kualitas kode dan pengujian",
+      "cpItems": ["F-BK-a", "F-AP-c"],
+      "weekCodes": ["C-XI1-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi1-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "C++ Core Guidelines",
+          "url": "https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines"
+        },
+        {
+          "title": "Arduino: analogRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi1-m2.md"
+    },
+    {
+      "id": "c-xi1-m3",
+      "title": "Tipe data bentukan",
+      "cpItems": ["F-BK-c", "F-AP-b"],
+      "weekCodes": ["C-XI1-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi1-m2", "c-x1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "C++ Core Guidelines",
+          "url": "https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines"
+        },
+        {
+          "title": "Arduino: millis()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/millis/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi1-m3.md"
+    },
+    {
+      "id": "c-xi1-m4",
+      "title": "Pustaka sendiri (F)",
+      "cpItems": ["F-AP-b", "F-AP-d"],
+      "weekCodes": ["C-XI1-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi1-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "C++ Core Guidelines",
+          "url": "https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines"
+        },
+        {
+          "title": "Arduino: panduan membuat pustaka",
+          "url": "https://docs.arduino.cc/learn/contributions/arduino-creating-library-guide/"
+        },
+        {
+          "title": "Arduino: micros()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/micros/"
+        },
+        {
+          "title": "Arduino: digitalRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/digital-io/digitalread/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi1-m4.md"
+    },
+    {
+      "id": "c-xi1-m5",
+      "title": "Alternatif solusi I: ambang dan histeresis",
+      "cpItems": ["F-BK-b", "F-AP-a", "F-AP-b"],
+      "weekCodes": ["C-XI1-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi1-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: analogRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/"
+        },
+        {
+          "title": "Arduino: digitalWrite()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/digital-io/digitalwrite/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi1-m5.md"
+    },
+    {
+      "id": "c-xi1-m6",
+      "title": "Kendali hidup-mati (F)",
+      "cpItems": ["F-BK-b", "F-AP-a", "F-AP-b"],
+      "weekCodes": ["C-XI1-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi1-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: digitalWrite()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/digital-io/digitalwrite/"
+        },
+        {
+          "title": "Arduino: analogRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/"
+        },
+        {
+          "title": "Arduino: millis()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/millis/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi1-m6.md"
+    },
+    {
+      "id": "c-xi1-m7",
+      "title": "Alternatif solusi II: kendali proporsional (F)",
+      "cpItems": ["F-BK-b", "F-AP-a", "F-AP-b"],
+      "weekCodes": ["C-XI1-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi1-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: constrain()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/math/constrain/"
+        },
+        {
+          "title": "Arduino: map()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/math/map/"
+        },
+        {
+          "title": "Arduino: analogWrite()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogWrite/"
+        },
+        {
+          "title": "Arduino-ESP32 (Espressif): LEDC (PWM)",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/ledc.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi1-m7.md"
     }
   ]
 }
