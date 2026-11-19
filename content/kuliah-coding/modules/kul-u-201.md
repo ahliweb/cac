@@ -154,7 +154,7 @@ Lengkapi fungsi yang membaca semua berkas `.csv` di satu folder dan
 mengembalikan jumlah baris data (tanpa baris judul) tiap berkas, dalam
 kamus berurutan menurut nama:
 
-```python
+```python setengah-jadi
 import csv
 from pathlib import Path
 
@@ -249,7 +249,7 @@ HTML atau JSON, karena ada pustaka khusus untuk itu.
 Lengkapi agar mengganti semua deret spasi atau garis bawah pada nama berkas
 menjadi satu tanda `-`:
 
-```python
+```python setengah-jadi
 import re
 
 nama = "Laporan  Maret__2026 final"
@@ -366,7 +366,7 @@ Lengkapi fungsi yang mencoba paling banyak tiga kali dengan jeda yang
 bertambah, tetapi **hanya** untuk galat sementara; kode `404` tidak
 diulang karena mengulang tidak akan mengubahnya:
 
-```python
+```python setengah-jadi
 import time
 import urllib.error
 
@@ -475,7 +475,7 @@ menggandakan data.
 
 Lengkapi agar menulis log ke berkas, bukan ke layar, dengan waktu:
 
-```python
+```python setengah-jadi
 import logging
 
 logging.basicConfig(

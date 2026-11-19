@@ -178,7 +178,7 @@ rentang nilainya masuk akal.
 Lengkapi kode agar mencetak banyaknya baris cabang Barat dan jumlah
 penjualan (kolom `jumlah`, `NaN` diabaikan) di cabang Timur:
 
-```python
+```python setengah-jadi
 import pandas as pd
 
 df = pd.read_csv("kedai.csv")
@@ -312,7 +312,7 @@ print(df["jumlah"].tolist())
 Lengkapi fungsi pembersih yang mengembalikan tabel bersih dan **mencatat
 berapa baris dibuang** karena tiap alasan:
 
-```python
+```python setengah-jadi
 import pandas as pd
 
 
@@ -417,7 +417,7 @@ menggesernya jauh.
 Lengkapi agar mencetak rata-rata `jumlah` **per cabang** dan cabang mana yang
 lebih tinggi:
 
-```python
+```python setengah-jadi
 import pandas as pd
 
 df = pd.read_csv("kedai_bersih.csv")
@@ -485,7 +485,7 @@ untuk perubahan menurut waktu, sebar (*scatter*) untuk hubungan dua bilangan.
 
 Lengkapi grafik garis jumlah terjual per tanggal:
 
-```python
+```python setengah-jadi
 import matplotlib.pyplot as plt
 import pandas as pd
 
@@ -584,7 +584,7 @@ versi, atau simpan alurnya sebagai skrip dan notebook sebagai laporan.
 Tulis uji untuk `bersihkan`: tabel kecil dengan satu baris `NaN` dan satu
 baris `jumlah` 500 harus tersisa satu baris.
 
-```python
+```python setengah-jadi
 import pandas as pd
 
 

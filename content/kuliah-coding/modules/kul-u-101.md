@@ -113,7 +113,7 @@ ditulis dulu; kalau dibalik, semua nilai di atas 65 menjadi `"B"`.
 Lengkapi tiga tempat `___` agar program menghitung ongkos kirim: gratis bila
 belanja minimal 100000, selain itu 10000.
 
-```python
+```python setengah-jadi
 belanja = int(input("Belanja: "))
 if belanja ___ 100000:
     ongkos = ___
@@ -204,7 +204,7 @@ sendiri.
 
 Lengkapi fungsi yang mengembalikan nilai terbesar, atau `None` bila kosong:
 
-```python
+```python setengah-jadi
 def terbesar(daftar):
     if ___:
         return None
@@ -259,7 +259,7 @@ jadi panjangnya adalah banyaknya kata berbeda.
 
 Lengkapi program yang mencari barang yang stoknya kurang dari 5:
 
-```python
+```python setengah-jadi
 stok = {"pensil": 10, "buku": 4, "penggaris": 2}
 menipis = []
 for nama, jumlah in stok.___():
