@@ -1217,6 +1217,195 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-x2-m7.md"
+    },
+    {
+      "id": "d-x2-m1",
+      "title": "Dari data ke keputusan; ulasan",
+      "cpItems": [],
+      "weekCodes": ["D-X2-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Orange Data Mining: widget Tree",
+          "url": "https://orangedatamining.com/widget-catalog/model/tree/"
+        },
+        {
+          "title": "Orange Data Mining: widget Test and Score",
+          "url": "https://orangedatamining.com/widget-catalog/evaluate/testandscore/"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x2-m1.md"
+    },
+    {
+      "id": "d-x2-m2",
+      "title": "Bias dan keadilan",
+      "cpItems": [],
+      "weekCodes": ["D-X2-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x2-m1", "d-x1-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Orange Data Mining: widget Tree",
+          "url": "https://orangedatamining.com/widget-catalog/model/tree/"
+        },
+        {
+          "title": "Orange Data Mining: widget Test and Score",
+          "url": "https://orangedatamining.com/widget-catalog/evaluate/testandscore/"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x2-m2.md"
+    },
+    {
+      "id": "d-x2-m3",
+      "title": "Privasi dan data pribadi",
+      "cpItems": [],
+      "weekCodes": ["D-X2-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x2-m2", "fondasi-keamanan-dasar"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi, JDIH BPK",
+          "url": "https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x2-m3.md"
+    },
+    {
+      "id": "d-x2-m4",
+      "title": "Regresi: garis kecenderungan",
+      "cpItems": [],
+      "weekCodes": ["D-X2-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x2-m3", "d-x1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Orange Data Mining: widget Linear Regression",
+          "url": "https://orangedatamining.com/widget-catalog/model/linearregression/"
+        },
+        {
+          "title": "Orange Data Mining: widget Scatter Plot",
+          "url": "https://orangedatamining.com/widget-catalog/visualize/scatterplot/"
+        },
+        {
+          "title": "Orange Data Mining: widget Test and Score",
+          "url": "https://orangedatamining.com/widget-catalog/evaluate/testandscore/"
+        },
+        {
+          "title": "Orange Data Mining: widget Predictions",
+          "url": "https://orangedatamining.com/widget-catalog/evaluate/predictions/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x2-m4.md"
+    },
+    {
+      "id": "d-x2-m5",
+      "title": "Galat dan kelebihan-suai (overfitting)",
+      "cpItems": [],
+      "weekCodes": ["D-X2-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x2-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Orange Data Mining: widget Linear Regression",
+          "url": "https://orangedatamining.com/widget-catalog/model/linearregression/"
+        },
+        {
+          "title": "Orange Data Mining: widget Tree",
+          "url": "https://orangedatamining.com/widget-catalog/model/tree/"
+        },
+        {
+          "title": "Orange Data Mining: widget Test and Score",
+          "url": "https://orangedatamining.com/widget-catalog/evaluate/testandscore/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x2-m5.md"
+    },
+    {
+      "id": "d-x2-m6",
+      "title": "Klasifikasi: pohon keputusan dan tetangga terdekat",
+      "cpItems": [],
+      "weekCodes": ["D-X2-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x2-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Orange Data Mining: widget Tree",
+          "url": "https://orangedatamining.com/widget-catalog/model/tree/"
+        },
+        {
+          "title": "Orange Data Mining: widget kNN",
+          "url": "https://orangedatamining.com/widget-catalog/model/knn/"
+        },
+        {
+          "title": "Orange Data Mining: widget Test and Score",
+          "url": "https://orangedatamining.com/widget-catalog/evaluate/testandscore/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x2-m6.md"
+    },
+    {
+      "id": "d-x2-m7",
+      "title": "Mengevaluasi klasifikasi",
+      "cpItems": [],
+      "weekCodes": ["D-X2-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x2-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Orange Data Mining: widget Confusion Matrix",
+          "url": "https://orangedatamining.com/widget-catalog/evaluate/confusionmatrix/"
+        },
+        {
+          "title": "Orange Data Mining: widget Test and Score",
+          "url": "https://orangedatamining.com/widget-catalog/evaluate/testandscore/"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x2-m7.md"
     }
   ]
 }
