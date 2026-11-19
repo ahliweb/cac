@@ -24,6 +24,7 @@ Source of truth tetap **repository yang sama (GitHub repo ID dipertahankan ketik
 ### F1 — Baseline / specification — sekarang
 - Catat persetujuan nama ahliweb/cac, keputusan brand dan anti-ambiguity notice.
 - Audit inventaris file dan tautan, GitHub Actions, releases, branches, dependents, clones, badge, webhooks, Pages, integrasi lain. Catat "tidak diketahui" hingga diverifikasi.
+  Hasil F1/01 (#152): [2026-11-cac-consumer-inventory.md](2026-11-cac-consumer-inventory.md).
 - Lengkapi traceability IDENTITY-CAC dan matriks risiko, identifikasi maintainer/owner integrasi.
 - Cross-spec review/DoR: pastikan acceptance test jelas, tidak mengubah kontrak data/kurikulum, strategi rollback dan testing terdokumentasi, tidak ada PII/secret.
 - Output: ADR-0009, runbook ini, requirements, impact matrix, roadmap, review DoR.
