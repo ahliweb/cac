@@ -50,6 +50,16 @@ jobs:
       - name: Validate curriculum data
         run: bun run validate
 
+      - name: Validate with the canonical CLI (cac)
+        run: bun src/cli/cac.ts validate
+
+      - name: Validate with the transitional alias CLI (osn)
+        if: ${{ !cancelled() }}
+        run: bun src/cli/index.ts validate
+
+      - name: Check requirements register and traceability
+        run: bun run check:requirements
+
       - name: Ensure python3 is available
         run: python3 --version
 

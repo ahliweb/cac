@@ -186,6 +186,11 @@ describe("docs/requirements/register.md and traceability.md", () => {
       "TR-21",
       "TR-22",
       "GR-13",
+      "IDENTITY-CAC-002",
+      "IDENTITY-CAC-003",
+      "IDENTITY-CAC-004",
+      "IDENTITY-CAC-005",
+      "IDENTITY-CAC-009",
     ]);
     for (const row of testRows) {
       expect(row.tests.length).toBeGreaterThan(0);
