@@ -1501,6 +1501,181 @@
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd6-2-m14.md",
       "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m14.md"
+    },
+    {
+      "id": "sd4-1-m8",
+      "title": "Menguji di atas kertas",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        },
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD4-1-M8"],
+      "cpItems": [],
+      "gradeLevels": [4],
+      "prerequisites": ["SD4-1-M6", "SD4-1-M7"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd4-1-m8.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m8.md"
+    },
+    {
+      "id": "sd4-1-m9",
+      "title": "Memperbaiki kesalahan",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        },
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD4-1-M9"],
+      "cpItems": [],
+      "gradeLevels": [4],
+      "prerequisites": ["SD4-1-M8"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd4-1-m9.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m9.md"
+    },
+    {
+      "id": "sd4-1-m10",
+      "title": "Instruksi untuk mesin dengan kosakata terbatas",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        },
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD4-1-M10"],
+      "cpItems": [],
+      "gradeLevels": [4],
+      "prerequisites": ["SD3-1-M2", "SD3-1-M5"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd4-1-m10.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m10.md"
+    },
+    {
+      "id": "sd4-1-m11",
+      "title": "Sifat benda dan tabel sifat",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        },
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD4-1-M11"],
+      "cpItems": [],
+      "gradeLevels": [4],
+      "prerequisites": ["SD3-2-M3", "SD2-2-M8"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd4-1-m11.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m11.md"
+    },
+    {
+      "id": "sd4-1-m12",
+      "title": "Penguatan: memecahkan masalah sekolah",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        },
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD4-1-M12"],
+      "cpItems": [],
+      "gradeLevels": [4],
+      "prerequisites": ["SD4-1-M5", "SD4-1-M9"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd4-1-m12.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m12.md"
+    },
+    {
+      "id": "sd4-1-m13",
+      "title": "Proyek mini: panduan memecahkan masalah",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        },
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD4-1-M13"],
+      "cpItems": [],
+      "gradeLevels": [4],
+      "prerequisites": ["SD4-1-M5", "SD4-1-M12"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd4-1-m13.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m13.md"
+    },
+    {
+      "id": "sd4-1-m14",
+      "title": "Asesmen dan refleksi",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        },
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD4-1-M14"],
+      "cpItems": [],
+      "gradeLevels": [4],
+      "prerequisites": [
+        "SD4-1-M1",
+        "SD4-1-M2",
+        "SD4-1-M3",
+        "SD4-1-M4",
+        "SD4-1-M5",
+        "SD4-1-M6",
+        "SD4-1-M7",
+        "SD4-1-M8",
+        "SD4-1-M9",
+        "SD4-1-M10",
+        "SD4-1-M11",
+        "SD4-1-M12",
+        "SD4-1-M13"
+      ],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd4-1-m14.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m14.md"
     }
   ]
 }
