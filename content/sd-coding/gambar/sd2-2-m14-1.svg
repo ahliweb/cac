@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" role="img" aria-labelledby="t d">
+  <title id="t">Mesin Dobel, tiga lingkaran bernomor, dan dua lingkaran sortir</title>
+  <desc id="d">Tiga bagian. Kiri atas: kartu 3 masuk kotak Mesin Dobel dan keluar kartu 6. Kanan atas: tiga lingkaran berbeda ukuran bertanda A, B, dan C dengan kotak kosong di bawahnya. Bawah: dua lingkaran sortir bertumpang bertanda merah dan lingkaran dengan kartu biru lingkaran di sebelahnya.</desc>
+  <rect width="640" height="400" fill="#ffffff"/>
+  <defs>
+    <marker id="ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a5d9f"/>
+    </marker>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#b3261e"/>
+    </marker>
+    <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1b7a3d"/>
+    </marker>
+    <marker id="ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#222222"/>
+    </marker>
+  </defs>
+  <text x="20" y="26" font-family="sans-serif" font-size="15" fill="#2a5d9f" text-anchor="start" font-weight="bold">Contoh</text>
+  <rect x="15" y="60" width="50" height="60" rx="5" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="40" y="98" font-family="sans-serif" font-size="24" fill="#222222" text-anchor="middle" font-weight="bold">3</text>
+  <line x1="68" y1="90" x2="90" y2="90" stroke="#2a5d9f" stroke-width="2" marker-end="url(#ab)"/>
+  <rect x="92" y="55" width="70" height="70" rx="8" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="3"/>
+  <text x="127" y="85" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle" font-weight="bold">Mesin</text>
+  <text x="127" y="103" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle" font-weight="bold">Dobel</text>
+  <line x1="165" y1="90" x2="187" y2="90" stroke="#b3261e" stroke-width="2" marker-end="url(#ar)"/>
+  <rect x="190" y="60" width="50" height="60" rx="5" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="215" y="98" font-family="sans-serif" font-size="24" fill="#222222" text-anchor="middle" font-weight="bold">6</text>
+  <text x="300" y="26" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="start" font-weight="bold">Urutan: beri nomor 1, 2, 3</text>
+  <circle cx="336" cy="90" r="26" fill="#e8f1fb" stroke="#222222" stroke-width="3"/>
+  <text x="336" y="150" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle" font-weight="bold">A</text>
+  <rect x="322" y="160" width="28" height="26" rx="0" fill="#ffffff" stroke="#888888" stroke-width="2"/>
+  <circle cx="432" cy="90" r="40" fill="#e8f1fb" stroke="#222222" stroke-width="3"/>
+  <text x="432" y="150" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle" font-weight="bold">B</text>
+  <rect x="418" y="160" width="28" height="26" rx="0" fill="#ffffff" stroke="#888888" stroke-width="2"/>
+  <circle cx="518" cy="90" r="16" fill="#e8f1fb" stroke="#222222" stroke-width="3"/>
+  <text x="518" y="150" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle" font-weight="bold">C</text>
+  <rect x="504" y="160" width="28" height="26" rx="0" fill="#ffffff" stroke="#888888" stroke-width="2"/>
+  <text x="20" y="214" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="start" font-weight="bold">Dua aturan</text>
+  <circle cx="130" cy="315" r="60" fill="#fdeeee" stroke="#b3261e" stroke-width="3"/>
+  <circle cx="200" cy="315" r="60" fill="#eef3fb" stroke="#2a5d9f" stroke-width="3"/>
+  <text x="105" y="250" font-family="sans-serif" font-size="13" fill="#b3261e" text-anchor="middle" font-weight="bold">merah</text>
+  <text x="225" y="250" font-family="sans-serif" font-size="13" fill="#2a5d9f" text-anchor="middle" font-weight="bold">lingkaran</text>
+  <circle cx="400" cy="315" r="18" fill="#cfe0f5" stroke="#2a5d9f" stroke-width="3"/>
+  <text x="400" y="355" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">biru lingkaran</text>
+</svg>

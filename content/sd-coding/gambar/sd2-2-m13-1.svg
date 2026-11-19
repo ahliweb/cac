@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" width="640" height="420" role="img" aria-labelledby="t d">
+  <title id="t">Poster dua sisi: kita atur sendiri dan mengindra lalu memilih</title>
+  <desc id="d">Poster dengan dua sisi. Sisi kiri bertanda kita atur sendiri berisi kipas dan keterangan Kipas: kita yang menyalakannya. Sisi kanan bertanda mengindra lalu memilih berisi pintu otomatis dengan panah dari orang sederhana ke pintu dan keterangan Pintu otomatis mengindra orang, lalu memilih membuka. Di bawah ada daftar periksa tiga hal.</desc>
+  <rect width="640" height="420" fill="#ffffff"/>
+  <defs>
+    <marker id="ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a5d9f"/>
+    </marker>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#b3261e"/>
+    </marker>
+    <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1b7a3d"/>
+    </marker>
+    <marker id="ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#222222"/>
+    </marker>
+  </defs>
+  <rect x="20" y="20" width="600" height="290" rx="10" fill="#ffffff" stroke="#222222" stroke-width="3"/>
+  <line x1="320" y1="20" x2="320" y2="310" stroke="#888888" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="170" y="50" font-family="sans-serif" font-size="17" fill="#b86a00" text-anchor="middle" font-weight="bold">kita atur sendiri</text>
+  <text x="470" y="50" font-family="sans-serif" font-size="17" fill="#2a5d9f" text-anchor="middle" font-weight="bold">mengindra lalu memilih</text>
+  <circle cx="170" cy="150" r="50" fill="#fdf6e8" stroke="#222222" stroke-width="3"/>
+  <circle cx="170" cy="150" r="8" fill="#222222" stroke="#222222" stroke-width="1"/>
+  <line x1="170" y1="150" x2="170" y2="112" stroke="#b86a00" stroke-width="10" stroke-linecap="round"/>
+  <line x1="170" y1="150" x2="137" y2="169" stroke="#b86a00" stroke-width="10" stroke-linecap="round"/>
+  <line x1="170" y1="150" x2="203" y2="169" stroke="#b86a00" stroke-width="10" stroke-linecap="round"/>
+  <line x1="170" y1="200" x2="170" y2="235" stroke="#222222" stroke-width="5"/>
+  <line x1="145" y1="235" x2="195" y2="235" stroke="#222222" stroke-width="5"/>
+  <text x="170" y="268" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">Kipas: kita yang</text>
+  <text x="170" y="286" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">menyalakannya</text>
+  <circle cx="380" cy="130" r="10" fill="#ffe3cf" stroke="#222222" stroke-width="2"/>
+  <line x1="380" y1="140" x2="380" y2="185" stroke="#222222" stroke-width="3"/>
+  <line x1="380" y1="155" x2="362" y2="175" stroke="#222222" stroke-width="3"/>
+  <line x1="380" y1="155" x2="398" y2="175" stroke="#222222" stroke-width="3"/>
+  <line x1="380" y1="185" x2="366" y2="215" stroke="#222222" stroke-width="3"/>
+  <line x1="380" y1="185" x2="394" y2="215" stroke="#222222" stroke-width="3"/>
+  <line x1="410" y1="150" x2="450" y2="150" stroke="#2a5d9f" stroke-width="3" marker-end="url(#ab)"/>
+  <text x="425" y="138" font-family="sans-serif" font-size="12" fill="#2a5d9f" text-anchor="middle">mengindra</text>
+  <rect x="460" y="90" width="50" height="130" rx="0" fill="#e8f1fb" stroke="#222222" stroke-width="3"/>
+  <rect x="515" y="90" width="50" height="130" rx="0" fill="#e8f1fb" stroke="#222222" stroke-width="3"/>
+  <text x="470" y="252" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">Pintu otomatis mengindra orang,</text>
+  <text x="470" y="270" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">lalu memilih membuka</text>
+  <text x="320" y="346" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle" font-weight="bold">Periksa: alat di sisi yang benar?</text>
+  <text x="320" y="368" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle" font-weight="bold">Keterangan menyebut yang diindra dan dipilih?</text>
+  <text x="320" y="390" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle" font-weight="bold">Gambar jelas?</text>
+</svg>
