@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="600" height="420" role="img" aria-labelledby="t d">
+  <title id="t">Permainan kita semester ini</title>
+  <desc id="d">Empat gambar permainan di empat sudut: satu baris lingkaran merah dan biru berselang-seling, dua tangan bertepuk dan telapak kaki, tiga kartu urutan dengan panah di antaranya, dan robot dari kotak dengan panah maju. Di tengah ada lingkaran putus-putus untuk menempel stiker. Di pojok bawah ada satu stiker bulat kuning.</desc>
+  <rect width="600" height="420" fill="#ffffff"/>
+  <g stroke="#333333" stroke-width="3">
+    <!-- kiri atas: pola warna -->
+    <circle cx="50" cy="60" r="22" fill="#e53935"/>
+    <circle cx="105" cy="60" r="22" fill="#1e88e5"/>
+    <circle cx="160" cy="60" r="22" fill="#e53935"/>
+    <circle cx="215" cy="60" r="22" fill="#1e88e5"/>
+    <!-- kanan atas: tepuk dan hentak -->
+    <path d="M360 80 Q360 45 385 40 L385 80 Z" fill="#ffe0b2" stroke-linejoin="round"/>
+    <path d="M426 80 Q426 45 401 40 L401 80 Z" fill="#ffe0b2" stroke-linejoin="round"/>
+    <path d="M475 40 Q470 65 474 82 Q488 90 506 84 Q514 74 508 64 Q504 42 490 38 Q480 38 475 40 Z" fill="#ffe0b2" stroke-linejoin="round"/>
+    <path d="M466 98 H520" stroke-width="4" stroke-linecap="round"/>
+    <!-- kiri bawah: kartu urutan -->
+    <rect x="30" y="300" width="60" height="70" rx="6" fill="#fffde7"/>
+    <rect x="120" y="300" width="60" height="70" rx="6" fill="#fffde7"/>
+    <rect x="210" y="300" width="60" height="70" rx="6" fill="#fffde7"/>
+    <!-- kanan bawah: robot -->
+    <rect x="395" y="295" width="60" height="55" rx="6" fill="#cfd8dc"/>
+    <rect x="405" y="262" width="40" height="33" rx="5" fill="#cfd8dc"/>
+    <rect x="405" y="350" width="14" height="30" fill="#cfd8dc"/>
+    <rect x="431" y="350" width="14" height="30" fill="#cfd8dc"/>
+  </g>
+  <g fill="none" stroke="#333333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M94 335 H116 M108 327 L117 335 L108 343"/>
+    <path d="M184 335 H206 M198 327 L207 335 L198 343"/>
+    <path d="M480 322 H530 M515 308 L532 322 L515 336"/>
+  </g>
+  <g fill="#333333">
+    <circle cx="60" cy="335" r="9"/>
+    <path d="M150 350 L165 320 L180 350 Z"/>
+    <rect x="228" y="318" width="24" height="24" rx="3"/>
+  </g>
+  <circle cx="300" cy="215" r="48" fill="none" stroke="#333333" stroke-width="4" stroke-dasharray="8 7"/>
+  <circle cx="545" cy="395" r="18" fill="#ffd54f" stroke="#333333" stroke-width="3"/>
+</svg>
