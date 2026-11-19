@@ -1,12 +1,12 @@
 ## Untuk siapa modul ini
 
-Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M1` silabus v1.4: gerbang dua qubit, yaitu CNOT. Prasyarat di indeks: `e-xi1-m7` (pengukuran). Di luar indeks kamu juga memakai `e-xi1-m8` (gerbang X) dan `e-xi1-m12` (dua qubit dan hasil kali tensor) dari semester sebelumnya; guru memeriksa bahwa keduanya sudah kamu kerjakan. Alat: kertas, kalkulator, Quirk (tanpa akun), dan Python 3 murni opsional; murid jalur A atau B boleh menerjemahkannya ke C++ atau TypeScript. Hitungan tangan lebih dulu.
+Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M1` silabus v1.4: gerbang dua qubit, yaitu CNOT. Prasyarat di indeks: `e-xi1-m7` (pengukuran). Di luar indeks kamu juga memakai `e-xi1-m8` (gerbang X) dan `e-xi1-m12` (dua qubit dan hasil kali tensor) dari semester sebelumnya; guru memeriksa bahwa keduanya sudah kamu kerjakan. Alat: kertas, kalkulator, Quirk (tanpa akun), dan kompilator C++17 opsional (murid jalur B boleh menerjemahkannya ke TypeScript). Hitungan tangan lebih dulu.
 
 Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur E adalah pengayaan di luar rumusan capaian pembelajaran (CP); minggu ini tidak punya irisan pengayaan, jadi modul ini tidak dihitung memenuhi butir CP mana pun.
 
 Aturan AI jalur ini: AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu, dan tanpa akun wajib. Saran: jawab dulu sendiri, baru minta penjelasan atau petunjuk bertahap. Setiap soal `Latihan` bertanda `AI: boleh` atau `AI: tanpa AI`.
 
-Catatan untuk guru: matriks CNOT 4 x 4, peran kontrol dan target, dan fakta bahwa CNOT tidak dapat ditulis sebagai hasil kali tensor dua gerbang satu qubit dibaca penyusun dari halaman IBM Quantum Learning "Quantum information" (multiple systems) dan "Quantum circuits", per 2026-11-19; urutan komponen `00, 01, 10, 11` dengan kontrol di kiri sama dengan halaman itu. Di Quirk, penyusun melihat kabel bawah adalah qubit pertama (kontrol) dan kabel atas qubit kedua (target); pada kotak amplitudo akhir, kabel atas menentukan kolom dan kabel bawah menentukan baris. Angka dihitung ulang penyusun dengan Python 3.12.
+Catatan untuk guru: matriks CNOT 4 x 4, peran kontrol dan target, dan fakta bahwa CNOT tidak dapat ditulis sebagai hasil kali tensor dua gerbang satu qubit dibaca penyusun dari halaman IBM Quantum Learning "Quantum information" (multiple systems) dan "Quantum circuits", per 2026-11-19; urutan komponen `00, 01, 10, 11` dengan kontrol di kiri sama dengan halaman itu. Di Quirk, penyusun melihat kabel bawah adalah qubit pertama (kontrol) dan kabel atas qubit kedua (target); pada kotak amplitudo akhir, kabel atas menentukan kolom dan kabel bawah menentukan baris. Angka dihitung ulang penyusun dengan program C++ di modul ini.
 
 ## Ingat kembali
 
@@ -53,58 +53,80 @@ Pada vektor `(a00, a01, a10, a11)`, hasilnya `(a00, a01, a11, a10)`: komponen `1
 
 **CNOT dua kali.** Menukar dua komponen lalu menukarnya lagi mengembalikan vektor semula, jadi CNOT kali CNOT adalah matriks identitas.
 
-Program berikut menerapkan semua ini (Python 3, murni):
+Program berikut menerapkan semua ini (C++17, pustaka standar saja):
 
-```python
-from math import sqrt
+```cpp
+#include <cmath>
+#include <cstdio>
+#include <string>
+#include <vector>
 
-h = 1 / sqrt(2)  # 0,7071
+using Vektor = std::vector<double>;
+using Matriks = std::vector<Vektor>;
 
+const double h = 1.0 / std::sqrt(2.0);  // 0,7071
 
-def kali(matriks, vektor):
-    """Matriks (daftar baris) dikalikan vektor."""
-    return [sum(m * v for m, v in zip(baris, vektor)) for baris in matriks]
-
-
-def tulis(v):
-    return "(" + ", ".join(f"{x:.4f}" for x in v) + ")"
-
-
-# Urutan komponen: 00, 01, 10, 11 (digit kiri = qubit pertama = kontrol).
-CNOT = [
-    [1, 0, 0, 0],
-    [0, 1, 0, 0],
-    [0, 0, 0, 1],
-    [0, 0, 1, 0],
-]
-
-dasar = {
-    "00": [1, 0, 0, 0],
-    "01": [0, 1, 0, 0],
-    "10": [0, 0, 1, 0],
-    "11": [0, 0, 0, 1],
+// Matriks (daftar baris) dikalikan vektor.
+Vektor kali(const Matriks& matriks, const Vektor& vektor) {
+    Vektor hasil;
+    for (const Vektor& baris : matriks) {
+        double jumlah = 0.0;
+        for (size_t j = 0; j < vektor.size(); j++) jumlah += baris[j] * vektor[j];
+        hasil.push_back(jumlah);
+    }
+    return hasil;
 }
 
-for nama, v in dasar.items():
-    print("CNOT", "|" + nama + ">", "=", tulis(kali(CNOT, v)))
+std::string tulis(const Vektor& v) {
+    std::string s = "(";
+    for (size_t i = 0; i < v.size(); i++) {
+        char buf[32];
+        std::snprintf(buf, sizeof buf, "%.4f", v[i] + 0.0);  // "+ 0.0" menghindari "-0.0000"
+        if (i > 0) s += ", ";
+        s += buf;
+    }
+    return s + ")";
+}
 
-# Kontrol dalam superposisi: qubit pertama H|0> = (h, h), qubit kedua |0>.
-awal = [h, 0, h, 0]
-akhir = kali(CNOT, awal)
-print("awal  ", tulis(awal))
-print("akhir ", tulis(akhir))
-print("peluang akhir", tulis([x * x for x in akhir]))
+int main() {
+    // Urutan komponen: 00, 01, 10, 11 (digit kiri = qubit pertama = kontrol).
+    const Matriks CNOT = {
+        {1, 0, 0, 0},
+        {0, 1, 0, 0},
+        {0, 0, 0, 1},
+        {0, 0, 1, 0},
+    };
+    const char* nama[4] = {"00", "01", "10", "11"};
 
-# CNOT dua kali memberi keadaan semula.
-coba = [0.48, -0.36, 0.64, -0.48]
-sekali = kali(CNOT, coba)
-dua_kali = kali(CNOT, sekali)
-print("sekali  ", tulis(sekali))
-print("dua kali", tulis(dua_kali))
-print("jumlah kuadrat sesudah CNOT:", f"{sum(x * x for x in sekali):.4f}")
+    for (int i = 0; i < 4; i++) {
+        Vektor dasar(4, 0.0);
+        dasar[i] = 1.0;
+        std::printf("CNOT |%s> = %s\n", nama[i], tulis(kali(CNOT, dasar)).c_str());
+    }
+
+    // Kontrol dalam superposisi: qubit pertama H|0> = (h, h), qubit kedua |0>.
+    Vektor awal = {h, 0, h, 0};
+    Vektor akhir = kali(CNOT, awal);
+    std::printf("awal   %s\n", tulis(awal).c_str());
+    std::printf("akhir  %s\n", tulis(akhir).c_str());
+    Vektor peluang;
+    for (double x : akhir) peluang.push_back(x * x);
+    std::printf("peluang akhir %s\n", tulis(peluang).c_str());
+
+    // CNOT dua kali memberi keadaan semula.
+    Vektor coba = {0.48, -0.36, 0.64, -0.48};
+    Vektor sekali = kali(CNOT, coba);
+    Vektor dua_kali = kali(CNOT, sekali);
+    std::printf("sekali   %s\n", tulis(sekali).c_str());
+    std::printf("dua kali %s\n", tulis(dua_kali).c_str());
+    double kuadrat = 0.0;
+    for (double x : sekali) kuadrat += x * x;
+    std::printf("jumlah kuadrat sesudah CNOT: %.4f\n", kuadrat);
+    return 0;
+}
 ```
 
-Keluaran asli (dijalankan penyusun dengan `python3 -I`, Python 3.12):
+Keluaran asli (`g++ -std=c++17 -Wall -Wextra`):
 
 ```text
 CNOT |00> = (1.0000, 0.0000, 0.0000, 0.0000)
@@ -131,23 +153,24 @@ Lengkapi (kunci di bagian akhir).
 2. CNOT pada `(0,6 ; 0 ; 0,8 ; 0)` memberi `(____ ; ____ ; ____ ; ____)`.
 3. Lengkapi matriks CNOT:
 
-```python setengah-jadi
-CNOT = [
-    [1, 0, 0, 0],
-    [0, 1, 0, 0],
-    [0, 0, ____, ____],
-    [0, 0, ____, ____],
-]
+```cpp setengah-jadi
+const Matriks CNOT = {
+    {1, 0, 0, 0},
+    {0, 1, 0, 0},
+    {0, 0, ____, ____},
+    {0, 0, ____, ____},
+};
 ```
 
 ## Soal Parsons
 
-Susun baris-baris di bawah (sudah diacak) menjadi perulangan yang mencetak hasil CNOT pada empat keadaan dasar. Baris (b) dan (c) berada di dalam perulangan; penjorokan sengaja dihilangkan.
+Susun baris-baris di bawah (sudah diacak) menjadi perulangan yang mencetak hasil CNOT pada empat keadaan dasar. Baris (b) sampai (d) berada di dalam perulangan; penjorokan dan `}` penutup tidak diberikan.
 
 ```text
-(a) for nama, v in dasar.items():
-(b) hasil = kali(CNOT, v)
-(c) print("CNOT", nama, tulis(hasil))
+(a) for (int i = 0; i < 4; i++) {
+(b) Vektor dasar(4, 0.0);
+(c) dasar[i] = 1.0;
+(d) std::printf("CNOT |%s> = %s\n", nama[i], tulis(kali(CNOT, dasar)).c_str());
 ```
 
 ## Latihan
@@ -195,9 +218,9 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `e-xi2-m2` (satu minggu
 
 **Prediksi dulu.** (1) `|11>`: kontrol 1 membalik target. (2) tidak berubah, karena kontrol 0. (3) hasilnya `(h, 0, 0, h)` dan bukan produk, sebab `a*d = 0,5` berbeda dari `b*c = 0`. Banyak murid menebak bahwa hasilnya tetap produk karena "kedua qubit tidak bersentuhan".
 
-**Contoh setengah jadi.** 1: `|10>` dan `|01>`. 2: `(0,6 ; 0 ; 0 ; 0,8)`, karena komponen ketiga dan keempat bertukar. 3: baris ketiga `[0, 0, 0, 1]`, baris keempat `[0, 0, 1, 0]`; yaitu `0, 1` lalu `1, 0`.
+**Contoh setengah jadi.** 1: `|10>` dan `|01>`. 2: `(0,6 ; 0 ; 0 ; 0,8)`, karena komponen ketiga dan keempat bertukar. 3: baris ketiga `{0, 0, 0, 1}`, baris keempat `{0, 0, 1, 0}`; yaitu `0, 1` lalu `1, 0`.
 
-**Soal Parsons.** a, b, c.
+**Soal Parsons.** a, b, c, d.
 
 **Latihan.** 1: jumlah kuadrat `0,36 + 0,64 = 1`, sah; hasil `(0 ; 0,6 ; 0,8 ; 0)`; peluang `01` adalah 0,36 dan `10` adalah 0,64, sedangkan `00` dan `11` nol. 2: `00` ke `00`, `01` ke `01`, `10` ke `11`, `11` ke `10`; bila `a = 0` bagian kedua tetap `b`, bila `a = 1` menjadi kebalikan `b`; kontrol menentukan apakah target dibalik. 3: `|11>` menjadi `|10>`, jadi hanya sel kiri-bawah yang menyala (kabel bawah 1, kabel atas 0). 4: sekali memberi `(0,48 ; -0,36 ; -0,48 ; 0,64)`, dua kali `(0,48 ; -0,36 ; 0,64 ; -0,48)`; menukar dua komponen lalu menukarnya lagi memulihkan susunan semula. 5: contoh: `kembalikan [v0, v1, v3, v2]`. 6: opsional.
 

@@ -1,6 +1,6 @@
 ## Untuk siapa modul ini
 
-Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M6` silabus v1.4: reversibilitas. Prasyarat: modul `e-xi2-m5` (gerbang fase dan rotasi), dan pengertian fungsi satu-ke-satu dari `matkom-himpunan-relasi-fungsi`. Alat: kertas, kalkulator, dan Quirk (peramban, tanpa akun). Contoh Python 3 murni bersifat opsional (tanpa pustaka tambahan dan tanpa akun); hitungan dikerjakan dengan tangan lebih dulu.
+Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M6` silabus v1.4: reversibilitas. Prasyarat: modul `e-xi2-m5` (gerbang fase dan rotasi), dan pengertian fungsi satu-ke-satu dari `matkom-himpunan-relasi-fungsi`. Alat: kertas, kalkulator, dan Quirk (peramban, tanpa akun). Contoh C++17 bersifat opsional (pustaka standar saja dan tanpa akun; murid jalur B boleh menerjemahkannya ke TypeScript); hitungan dikerjakan dengan tangan lebih dulu.
 
 Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur E adalah pengayaan di luar rumusan capaian pembelajaran (CP); minggu ini tidak punya irisan pengayaan, jadi modul ini tidak dihitung memenuhi butir CP mana pun.
 
@@ -41,77 +41,106 @@ Gerbang AND klasik mengubah dua bit menjadi satu bit. Gerbang Toffoli menerima t
 
 **Pengukuran tidak reversibel.** Keadaan `(0,6 ; 0,8)` dan `(0,8 ; 0,6)` dibaca dan hasilnya 1: keduanya menjadi `|1>` (`e-xi1-m7`). Dari `|1>` kamu tidak dapat tahu keadaan awalnya. Matriks "baca hasil 0" `[[1, 0], [0, 0]]` tidak uniter. Jadi pembacaan memang kehilangan informasi, berbeda dari gerbang.
 
-```python
-from itertools import product
-from math import sqrt
+```cpp
+#include <cmath>
+#include <cstdio>
+#include <set>
+#include <vector>
 
+using Matriks = std::vector<std::vector<double>>;
 
-def toffoli(a, b, c):
-    """Balik bit c bila a dan b keduanya 1."""
-    return (a, b, c ^ (a & b))
+// Balik bit c bila a dan b keduanya 1. Tiga bit dibungkus menjadi satu bilangan 0..7: (a, b, c).
+int toffoli(int x) {
+    int a = (x >> 2) & 1, b = (x >> 1) & 1, c = x & 1;
+    return (a << 2) | (b << 1) | (c ^ (a & b));
+}
 
+void cetak_bit(int x) { std::printf("%d %d %d", (x >> 2) & 1, (x >> 1) & 1, x & 1); }
 
-print("tabel Toffoli (a b c -> a b c')")
-for a, b, c in product((0, 1), repeat=3):
-    print(f"  {a} {b} {c} -> {' '.join(map(str, toffoli(a, b, c)))}")
+Matriks matriks_toffoli() {
+    Matriks m(8, std::vector<double>(8, 0.0));
+    for (int i = 0; i < 8; i++) m[toffoli(i)][i] = 1.0;
+    return m;
+}
 
-keluaran = {toffoli(*x) for x in product((0, 1), repeat=3)}
-print("keluaran berbeda:", len(keluaran), "dari 8 masukan")
+// Untuk matriks real: uniter bila M kali transposnya = identitas.
+bool uniter_real(const Matriks& m) {
+    size_t n = m.size();
+    for (size_t i = 0; i < n; i++)
+        for (size_t j = 0; j < n; j++) {
+            double nilai = 0.0;
+            for (size_t k = 0; k < m[0].size(); k++) nilai += m[i][k] * m[j][k];
+            if (std::fabs(nilai - (i == j ? 1.0 : 0.0)) > 1e-9) return false;
+        }
+    return true;
+}
 
-# AND biasa: empat masukan, hanya dua keluaran, jadi tidak dapat dibalik.
-kelompok = {}
-for a, b in product((0, 1), repeat=2):
-    kelompok.setdefault(a & b, []).append((a, b))
-print("AND mengelompokkan masukan:", kelompok)
+const char* benar(bool b) { return b ? "benar" : "salah"; }
 
-# AND lewat Toffoli: bit ketiga dimulai dari 0.
-for a, b in product((0, 1), repeat=2):
-    hasil = toffoli(a, b, 0)[2]
-    print(f"  Toffoli({a}, {b}, 0) -> bit ketiga {hasil}, sama dengan AND: {hasil == (a & b)}")
+// Keadaan sesudah hasil dibaca: |0> atau |1>, apa pun amplitudo awalnya (asal hasil itu mungkin muncul).
+void setelah_baca(const double v[2], int hasil, double keluar[2]) {
+    if (v[hasil] == 0.0) std::printf("hasil mustahil\n");
+    keluar[0] = hasil == 0 ? 1.0 : 0.0;
+    keluar[1] = hasil == 0 ? 0.0 : 1.0;
+}
 
-# Toffoli dua kali memberi masukan semula.
-print("Toffoli dua kali = semula:", all(toffoli(*toffoli(*x)) == x for x in product((0, 1), repeat=3)))
+int main() {
+    std::printf("tabel Toffoli (a b c -> a b c')\n");
+    std::set<int> keluaran;
+    for (int x = 0; x < 8; x++) {
+        std::printf("  ");
+        cetak_bit(x);
+        std::printf(" -> ");
+        cetak_bit(toffoli(x));
+        std::printf("\n");
+        keluaran.insert(toffoli(x));
+    }
+    std::printf("keluaran berbeda: %zu dari 8 masukan\n", keluaran.size());
 
+    // AND biasa: empat masukan, hanya dua keluaran, jadi tidak dapat dibalik.
+    std::printf("AND mengelompokkan masukan:\n");
+    for (int hasil = 0; hasil < 2; hasil++) {
+        std::printf("  keluaran %d <-", hasil);
+        for (int a = 0; a < 2; a++)
+            for (int b = 0; b < 2; b++)
+                if ((a & b) == hasil) std::printf(" (%d, %d)", a, b);
+        std::printf("\n");
+    }
 
-def matriks_toffoli():
-    m = [[0] * 8 for _ in range(8)]
-    for i in range(8):
-        a, b, c = (i >> 2) & 1, (i >> 1) & 1, i & 1
-        a2, b2, c2 = toffoli(a, b, c)
-        m[(a2 << 2) | (b2 << 1) | c2][i] = 1
-    return m
+    // AND lewat Toffoli: bit ketiga dimulai dari 0.
+    for (int a = 0; a < 2; a++)
+        for (int b = 0; b < 2; b++) {
+            int bit_ketiga = toffoli((a << 2) | (b << 1)) & 1;
+            std::printf("  Toffoli(%d, %d, 0) -> bit ketiga %d, sama dengan AND: %s\n", a, b, bit_ketiga,
+                        benar(bit_ketiga == (a & b)));
+        }
 
+    // Toffoli dua kali memberi masukan semula.
+    bool semua = true;
+    for (int x = 0; x < 8; x++)
+        if (toffoli(toffoli(x)) != x) semua = false;
+    std::printf("Toffoli dua kali = semula: %s\n", benar(semua));
 
-def uniter_real(m):
-    """Untuk matriks real: uniter bila M kali transposnya = identitas."""
-    n = len(m)
-    for i in range(n):
-        for j in range(n):
-            nilai = sum(m[i][k] * m[j][k] for k in range(len(m[0])))
-            if abs(nilai - (1 if i == j else 0)) > 1e-9:
-                return False
-    return True
+    double h = 1.0 / std::sqrt(2.0);
+    std::printf("H uniter           : %s\n", benar(uniter_real({{h, h}, {h, -h}})));
+    std::printf("CNOT uniter        : %s\n",
+                benar(uniter_real({{1, 0, 0, 0}, {0, 1, 0, 0}, {0, 0, 0, 1}, {0, 0, 1, 0}})));
+    std::printf("Toffoli uniter     : %s\n", benar(uniter_real(matriks_toffoli())));
+    std::printf("baca hasil 0 (proyeksi [[1,0],[0,0]]) uniter: %s\n", benar(uniter_real({{1, 0}, {0, 0}})));
 
-
-h = 1 / sqrt(2)
-print("H uniter           :", uniter_real([[h, h], [h, -h]]))
-print("CNOT uniter        :", uniter_real([[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 0, 1], [0, 0, 1, 0]]))
-print("Toffoli uniter     :", uniter_real(matriks_toffoli()))
-print("baca hasil 0 (proyeksi [[1,0],[0,0]]) uniter:", uniter_real([[1, 0], [0, 0]]))
-
-
-def setelah_baca(v, hasil):
-    """Keadaan setelah hasil dibaca: |0> atau |1>, asal hasil itu mungkin muncul."""
-    assert v[hasil] != 0
-    return (1, 0) if hasil == 0 else (0, 1)
-
-
-# Dua keadaan awal berbeda, satu keadaan sesudahnya: pembacaan tidak dapat dibalik.
-for awal in ((0.6, 0.8), (0.8, 0.6)):
-    print("keadaan awal", awal, "-> setelah hasil 1 dibaca:", setelah_baca(awal, 1))
+    // Dua keadaan awal berbeda, satu keadaan sesudahnya: pembacaan tidak dapat dibalik.
+    const double awal[2][2] = {{0.6, 0.8}, {0.8, 0.6}};
+    for (const auto& v : awal) {
+        double sesudah[2];
+        setelah_baca(v, 1, sesudah);
+        std::printf("keadaan awal (%.1f, %.1f) -> setelah hasil 1 dibaca: (%.0f, %.0f)\n", v[0], v[1],
+                    sesudah[0], sesudah[1]);
+    }
+    return 0;
+}
 ```
 
-Keluaran asli (dijalankan penyusun dengan `python3 -I`, Python 3.12):
+Keluaran asli (`g++ -std=c++17 -Wall -Wextra`):
 
 ```text
 tabel Toffoli (a b c -> a b c')
@@ -124,16 +153,18 @@ tabel Toffoli (a b c -> a b c')
   1 1 0 -> 1 1 1
   1 1 1 -> 1 1 0
 keluaran berbeda: 8 dari 8 masukan
-AND mengelompokkan masukan: {0: [(0, 0), (0, 1), (1, 0)], 1: [(1, 1)]}
-  Toffoli(0, 0, 0) -> bit ketiga 0, sama dengan AND: True
-  Toffoli(0, 1, 0) -> bit ketiga 0, sama dengan AND: True
-  Toffoli(1, 0, 0) -> bit ketiga 0, sama dengan AND: True
-  Toffoli(1, 1, 0) -> bit ketiga 1, sama dengan AND: True
-Toffoli dua kali = semula: True
-H uniter           : True
-CNOT uniter        : True
-Toffoli uniter     : True
-baca hasil 0 (proyeksi [[1,0],[0,0]]) uniter: False
+AND mengelompokkan masukan:
+  keluaran 0 <- (0, 0) (0, 1) (1, 0)
+  keluaran 1 <- (1, 1)
+  Toffoli(0, 0, 0) -> bit ketiga 0, sama dengan AND: benar
+  Toffoli(0, 1, 0) -> bit ketiga 0, sama dengan AND: benar
+  Toffoli(1, 0, 0) -> bit ketiga 0, sama dengan AND: benar
+  Toffoli(1, 1, 0) -> bit ketiga 1, sama dengan AND: benar
+Toffoli dua kali = semula: benar
+H uniter           : benar
+CNOT uniter        : benar
+Toffoli uniter     : benar
+baca hasil 0 (proyeksi [[1,0],[0,0]]) uniter: salah
 keadaan awal (0.6, 0.8) -> setelah hasil 1 dibaca: (0, 1)
 keadaan awal (0.8, 0.6) -> setelah hasil 1 dibaca: (0, 1)
 ```
@@ -150,9 +181,11 @@ Lengkapi (kunci di bagian akhir).
 2. NOT dari Toffoli: bila `a = 1` dan `b = 1`, `c` menjadi `____` dari `c`.
 3. Lengkapi gerbang Toffoli:
 
-```python setengah-jadi
-def toffoli(a, b, c):
-    return (a, b, c ^ (____ & ____))
+```cpp setengah-jadi
+int toffoli(int x) {
+    int a = (x >> 2) & 1, b = (x >> 1) & 1, c = x & 1;
+    return (a << 2) | (b << 1) | (c ^ (____ & ____));
+}
 ```
 
 ## Soal Parsons
@@ -160,9 +193,10 @@ def toffoli(a, b, c):
 Susun baris-baris di bawah (sudah diacak) menjadi pemeriksaan bahwa Toffoli adalah kebalikan dirinya sendiri. Penjorokan sengaja dihilangkan.
 
 ```text
-(a) print("Toffoli dua kali = semula:", semua)
-(b) semua = all(toffoli(*toffoli(*x)) == x for x in product((0, 1), repeat=3))
-(c) from itertools import product
+(a) std::printf("Toffoli dua kali = semula: %s\n", semua ? "benar" : "salah");
+(b) if (toffoli(toffoli(x)) != x) semua = false;
+(c) bool semua = true;
+(d) for (int x = 0; x < 8; x++)
 ```
 
 ## Latihan
@@ -211,7 +245,7 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `e-xi2-m7` (satu minggu
 
 **Contoh setengah jadi.** 1: `101` dan `111`. 2: `c` dibalik (menjadi kebalikannya). 3: `a & b`.
 
-**Soal Parsons.** c, b, a. Impor dulu, lalu hitung `semua`, lalu cetak.
+**Soal Parsons.** c, d, b, a. Nyatakan `semua` dulu, lalu perulangan, lalu periksa di dalam perulangan, lalu cetak.
 
 **Latihan.** 1: `101` tetap `101`; `110` menjadi `111`; `111` menjadi `110`; `111` ke `110` ke `111`. 2: `(0,0,0)` ke bit ketiga 0; `(0,1,0)` ke 0; `(1,0,0)` ke 0; `(1,1,0)` ke 1; itu AND; dengan `a = b = 1`: `(1,1,0)` ke `(1,1,1)` dan `(1,1,1)` ke `(1,1,0)`, jadi `c` menjadi kebalikannya (NOT). 3: OR memberi 0 hanya untuk `00` (satu masukan) dan 1 untuk `01`, `10`, `11` (tiga masukan); dari keluaran 1 tak diketahui masukannya, jadi OR tidak reversibel. 4: contoh: `jika jumlah keluaran berbeda sama dengan jumlah masukan, jawab "reversibel"; selain itu "tidak"`. 5: opsional.
 

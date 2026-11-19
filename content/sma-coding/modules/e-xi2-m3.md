@@ -1,12 +1,12 @@
 ## Untuk siapa modul ini
 
-Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M3` silabus v1.4: mengukur qubit terjerat. Prasyarat: modul `e-xi2-m2`. Alat: kertas, kalkulator, Quirk (tanpa akun), dan Python 3 murni opsional; hitungan tangan lebih dulu.
+Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M3` silabus v1.4: mengukur qubit terjerat. Prasyarat: modul `e-xi2-m2`. Alat: kertas, kalkulator, Quirk (tanpa akun), dan kompilator C++17 opsional; hitungan tangan lebih dulu.
 
 Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur E adalah pengayaan di luar rumusan capaian pembelajaran (CP); minggu ini tidak punya irisan pengayaan, jadi modul ini tidak dihitung memenuhi butir CP mana pun.
 
 Aturan AI jalur ini: AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu, dan tanpa akun wajib. Saran: jawab dulu sendiri, baru minta penjelasan atau petunjuk bertahap. Setiap soal `Latihan` bertanda `AI: boleh` atau `AI: tanpa AI`.
 
-Catatan untuk guru: aturan membaca sebagian sistem (peluang dari kuadrat komponen yang cocok, keadaan sesudahnya dinormalkan) serta pernyataan bahwa peluang hasil satu sistem tidak bergantung pada pengukuran sistem lain dibaca penyusun dari halaman IBM Quantum Learning "Quantum information" (multiple systems), per 2026-11-19. Bahwa bit acak klasik yang dibagi dapat meniru korelasi "selalu sama" pada pembacaan 0/1 adalah hasil program di modul ini; pembeda sebenarnya disajikan di `E-XI2-M8` dan tidak dibuktikan di sini. Dokumentasi Python menjamin `random()` konsisten untuk benih sama.
+Catatan untuk guru: aturan membaca sebagian sistem (peluang dari kuadrat komponen yang cocok, keadaan sesudahnya dinormalkan) serta pernyataan bahwa peluang hasil satu sistem tidak bergantung pada pengukuran sistem lain dibaca penyusun dari halaman IBM Quantum Learning "Quantum information" (multiple systems), per 2026-11-19. Bahwa bit acak klasik yang dibagi dapat meniru korelasi "selalu sama" pada pembacaan 0/1 adalah hasil program di modul ini; pembeda sebenarnya disajikan di `E-XI2-M8` dan tidak dibuktikan di sini. Pembangkit acak modul ini buatan sendiri (benih tetap), bukan untuk kriptografi.
 
 ## Ingat kembali
 
@@ -39,121 +39,135 @@ Keadaan Bell `(h, 0, 0, h)` dibaca 1000 shot. Tebak dan tulis: (1) hasil apa yan
 
 **Satu peringatan jujur.** Dua amplop berisi salinan bit acak yang sama juga memberi hasil "selalu sama" (koin klasik di program). Pada pembacaan 0/1 saja, korelasi itu belum membedakan keadaan terjerat dari bit acak klasik yang dibagi; pembedanya ada pada pembacaan dengan cara lain, bahan `E-XI2-M8`.
 
-```python
-import random
-from math import sqrt
+```cpp
+#include <cmath>
+#include <cstdint>
+#include <cstdio>
+#include <vector>
 
-h = 1 / sqrt(2)
-rng = random.Random(2026)  # benih tetap: keluaran selalu sama
-NAMA = ["00", "01", "10", "11"]
+using Vektor = std::vector<double>;
 
+const double h = 1.0 / std::sqrt(2.0);
 
-def ukur(v, shot):
-    """Baca dua qubit sebanyak shot kali; kembalikan jumlah tiap hasil."""
-    peluang = [x * x for x in v]
-    hitung = {n: 0 for n in NAMA}
-    for _ in range(shot):
-        r = rng.random()
-        total = 0.0
-        for i, p in enumerate(peluang):
-            total += p
-            if r < total or i == 3:
-                hitung[NAMA[i]] += 1
-                break
-    return hitung
+uint32_t benih = 2026;  // pembangkit semu buatan sendiri; benih tetap: keluaran selalu sama
 
+double acak01() {
+    benih = 1664525u * benih + 1013904223u;
+    return benih / 4294967296.0;  // bilangan di [0, 1)
+}
 
-def sama(hitung):
-    """Jumlah shot dengan dua bit sama (00 atau 11)."""
-    return hitung["00"] + hitung["11"]
+// Baca dua qubit sebanyak shot kali; hitung[i] = jumlah hasil ke-i (00, 01, 10, 11).
+std::vector<int> ukur(const Vektor& v, int shot) {
+    std::vector<int> hitung(4, 0);
+    for (int s = 0; s < shot; s++) {
+        double r = acak01();
+        double total = 0.0;
+        for (int i = 0; i < 4; i++) {
+            total += v[i] * v[i];
+            if (r < total || i == 3) {
+                hitung[i]++;
+                break;
+            }
+        }
+    }
+    return hitung;
+}
 
+// Jumlah shot dengan dua bit sama (00 atau 11).
+int sama(const std::vector<int>& hitung) { return hitung[0] + hitung[3]; }
 
-bell = [h, 0, 0, h]
-produk = [0.5, 0.5, 0.5, 0.5]
+void cetak(const char* nama, const std::vector<int>& hitung) {
+    std::printf("%-9s 00=%d 01=%d 10=%d 11=%d  sama: %d\n", nama, hitung[0], hitung[1], hitung[2],
+                hitung[3], sama(hitung));
+}
 
-hitung_bell = ukur(bell, 1000)
-hitung_produk = ukur(produk, 1000)
-print("Bell     ", hitung_bell, "sama:", sama(hitung_bell))
-print("produk   ", hitung_produk, "sama:", sama(hitung_produk))
+// Peluang qubit kedua terbaca 1 = P(01) + P(11).
+double peluang_kedua_1(const Vektor& v) { return v[1] * v[1] + v[3] * v[3]; }
 
-# Dua bit acak yang dibagi (klasik): satu koin, salinannya diberikan ke dua pihak.
-klasik = {n: 0 for n in NAMA}
-for _ in range(1000):
-    bit = "0" if rng.random() < 0.5 else "1"
-    klasik[bit + bit] += 1
-print("koin klasik", klasik, "sama:", sama(klasik))
+int main() {
+    Vektor bell = {h, 0, 0, h};
+    Vektor produk = {0.5, 0.5, 0.5, 0.5};
 
+    cetak("Bell", ukur(bell, 1000));
+    cetak("produk", ukur(produk, 1000));
 
-def peluang_kedua_1(v):
-    """Peluang qubit kedua terbaca 1 = P(01) + P(11)."""
-    return v[1] ** 2 + v[3] ** 2
+    // Dua bit acak yang dibagi (klasik): satu koin, salinannya diberikan ke dua pihak.
+    std::vector<int> klasik(4, 0);
+    for (int s = 0; s < 1000; s++) {
+        int bit = acak01() < 0.5 ? 0 : 1;
+        klasik[bit * 3]++;  // bit 0 -> hasil 00 (indeks 0), bit 1 -> hasil 11 (indeks 3)
+    }
+    cetak("klasik", klasik);
 
-
-setelah_x = [0, h, h, 0]   # X pada qubit pertama dari Bell: (0, h, h, 0)
-setelah_z = [h, 0, 0, -h]  # Z pada qubit pertama dari Bell: (h, 0, 0, -h)
-print("P(kedua = 1), Bell          :", f"{peluang_kedua_1(bell):.4f}")
-print("P(kedua = 1), setelah X     :", f"{peluang_kedua_1(setelah_x):.4f}")
-print("P(kedua = 1), setelah Z     :", f"{peluang_kedua_1(setelah_z):.4f}")
+    Vektor setelah_x = {0, h, h, 0};   // X pada qubit pertama dari Bell: (0, h, h, 0)
+    Vektor setelah_z = {h, 0, 0, -h};  // Z pada qubit pertama dari Bell: (h, 0, 0, -h)
+    std::printf("P(kedua = 1), Bell      : %.4f\n", peluang_kedua_1(bell));
+    std::printf("P(kedua = 1), setelah X : %.4f\n", peluang_kedua_1(setelah_x));
+    std::printf("P(kedua = 1), setelah Z : %.4f\n", peluang_kedua_1(setelah_z));
+    return 0;
+}
 ```
 
-Keluaran asli (dijalankan penyusun dengan `python3 -I`, Python 3.12):
+Keluaran asli (`g++ -std=c++17 -Wall -Wextra`):
 
 ```text
-Bell      {'00': 495, '01': 0, '10': 0, '11': 505} sama: 1000
-produk    {'00': 245, '01': 274, '10': 238, '11': 243} sama: 488
-koin klasik {'00': 543, '01': 0, '10': 0, '11': 457} sama: 1000
-P(kedua = 1), Bell          : 0.5000
-P(kedua = 1), setelah X     : 0.5000
-P(kedua = 1), setelah Z     : 0.5000
+Bell      00=502 01=0 10=0 11=498  sama: 1000
+produk    00=256 01=252 10=254 11=238  sama: 494
+klasik    00=505 01=0 10=0 11=495  sama: 1000
+P(kedua = 1), Bell      : 0.5000
+P(kedua = 1), setelah X : 0.5000
+P(kedua = 1), setelah Z : 0.5000
 ```
 
-Bacaan hasilnya: pada Bell `01` dan `10` nol dan `sama` tepat 1000; 495 dan 505 wajar (simpangan kira-kira 15,8). Pada produk `sama` 488 dekat harapan 500; koin klasik juga 1000. Keadaan setelah X dan Z ditulis tangan di program (X menukar komponen 1 dengan 3 dan 2 dengan 4; Z mengganti tanda komponen 3 dan 4).
+Bacaan hasilnya: pada Bell `01` dan `10` nol dan `sama` tepat 1000; 502 dan 498 wajar (simpangan kira-kira 15,8). Pada produk `sama` 494 dekat harapan 500; koin klasik juga 1000. Keadaan setelah X dan Z ditulis tangan di program (X menukar komponen 1 dengan 3 dan 2 dengan 4; Z mengganti tanda komponen 3 dan 4).
 
 Fungsi berikut membaca hanya qubit pertama:
 
-```python
-from math import sqrt
+```cpp
+#include <cmath>
+#include <cstdio>
+#include <vector>
 
-h = 1 / sqrt(2)
+using Vektor = std::vector<double>;
 
+const double h = 1.0 / std::sqrt(2.0);
 
-def baca_pertama(v):
-    """Baca hanya qubit pertama dari (a00, a01, a10, a11).
-
-    Untuk tiap hasil: peluangnya, dan keadaan qubit kedua sesudahnya.
-    """
-    hasil = {}
-    for pertama in (0, 1):
-        sepasang = v[2 * pertama: 2 * pertama + 2]      # komponen yang cocok dengan hasil itu
-        peluang = sepasang[0] ** 2 + sepasang[1] ** 2
-        kedua = tuple(round(x / sqrt(peluang) + 0.0, 4) for x in sepasang)
-        hasil[pertama] = (round(peluang, 4), kedua)
-    return hasil
-
-
-contoh = {
-    "Bell (h, 0, 0, h)": [h, 0, 0, h],
-    "produk (0,48 ; -0,36 ; 0,64 ; -0,48)": [0.48, -0.36, 0.64, -0.48],
-    "(0,5 ; 0,5 ; 0,5 ; -0,5)": [0.5, 0.5, 0.5, -0.5],
+// Baca hanya qubit pertama dari (a00, a01, a10, a11): untuk tiap hasil, tulis peluangnya
+// dan keadaan qubit kedua sesudahnya.
+void baca_pertama(const Vektor& v) {
+    for (int pertama = 0; pertama < 2; pertama++) {
+        double a = v[2 * pertama];      // dua komponen yang cocok dengan hasil itu
+        double b = v[2 * pertama + 1];
+        double peluang = a * a + b * b;
+        double akar = std::sqrt(peluang);
+        std::printf("  pertama terbaca %d: peluang %.4f, qubit kedua menjadi (%.4f, %.4f)\n", pertama,
+                    peluang, a / akar + 0.0, b / akar + 0.0);
+    }
 }
-for nama, v in contoh.items():
-    print(nama)
-    for pertama, (peluang, kedua) in baca_pertama(v).items():
-        print(f"  pertama terbaca {pertama}: peluang {peluang}, qubit kedua menjadi {kedua}")
+
+int main() {
+    std::printf("Bell (h, 0, 0, h)\n");
+    baca_pertama({h, 0, 0, h});
+    std::printf("produk (0,48 ; -0,36 ; 0,64 ; -0,48)\n");
+    baca_pertama({0.48, -0.36, 0.64, -0.48});
+    std::printf("(0,5 ; 0,5 ; 0,5 ; -0,5)\n");
+    baca_pertama({0.5, 0.5, 0.5, -0.5});
+    return 0;
+}
 ```
 
-Keluaran asli (dijalankan penyusun dengan `python3 -I`, Python 3.12):
+Keluaran asli (`g++ -std=c++17 -Wall -Wextra`):
 
 ```text
 Bell (h, 0, 0, h)
-  pertama terbaca 0: peluang 0.5, qubit kedua menjadi (1.0, 0.0)
-  pertama terbaca 1: peluang 0.5, qubit kedua menjadi (0.0, 1.0)
+  pertama terbaca 0: peluang 0.5000, qubit kedua menjadi (1.0000, 0.0000)
+  pertama terbaca 1: peluang 0.5000, qubit kedua menjadi (0.0000, 1.0000)
 produk (0,48 ; -0,36 ; 0,64 ; -0,48)
-  pertama terbaca 0: peluang 0.36, qubit kedua menjadi (0.8, -0.6)
-  pertama terbaca 1: peluang 0.64, qubit kedua menjadi (0.8, -0.6)
+  pertama terbaca 0: peluang 0.3600, qubit kedua menjadi (0.8000, -0.6000)
+  pertama terbaca 1: peluang 0.6400, qubit kedua menjadi (0.8000, -0.6000)
 (0,5 ; 0,5 ; 0,5 ; -0,5)
-  pertama terbaca 0: peluang 0.5, qubit kedua menjadi (0.7071, 0.7071)
-  pertama terbaca 1: peluang 0.5, qubit kedua menjadi (0.7071, -0.7071)
+  pertama terbaca 0: peluang 0.5000, qubit kedua menjadi (0.7071, 0.7071)
+  pertama terbaca 1: peluang 0.5000, qubit kedua menjadi (0.7071, -0.7071)
 ```
 
 **Quirk.** Buka [H lalu CNOT](https://algassert.com/quirk#circuit=%7B%22cols%22:%5B%5B1,%22H%22%5D,%5B%22X%22,%22%E2%80%A2%22%5D%5D%7D). Tampilan peluang tiap kabel pada tautan itu 50,0 persen untuk keduanya, sementara kotak amplitudo hanya menyala pada `00` dan `11`: peluang per kabel tidak memperlihatkan korelasi, vektor keduanya memperlihatkannya. Quirk menampilkan peluang hitungan, bukan sampel acak.
@@ -166,20 +180,21 @@ Lengkapi (kunci di bagian akhir).
 2. Untuk `(0,5 ; 0,5 ; 0,5 ; -0,5)`: peluang qubit pertama terbaca 0 = `0,5² + ____²` = ____.
 3. Lengkapi fungsi yang menghitung peluang qubit pertama terbaca 0:
 
-```python setengah-jadi
-def peluang_pertama_0(v):
-    return v[____] ** 2 + v[____] ** 2
+```cpp setengah-jadi
+double peluang_pertama_0(const Vektor& v) {
+    return v[____] * v[____] + v[____] * v[____];
+}
 ```
 
 ## Soal Parsons
 
-Susun baris-baris di bawah (sudah diacak) menjadi bagian fungsi `baca_pertama` yang menghitung keadaan qubit kedua sesudah hasil tertentu. Baris dalam perulangan dijorokkan; penjorokan sengaja dihilangkan.
+Susun baris-baris di bawah (sudah diacak) menjadi bagian fungsi `baca_pertama` yang menghitung keadaan qubit kedua. Baris (b) sampai (d) berada di dalam perulangan; penjorokan dan `}` penutup tidak diberikan.
 
 ```text
-(a) for pertama in (0, 1):
-(b) sepasang = v[2 * pertama: 2 * pertama + 2]
-(c) peluang = sepasang[0] ** 2 + sepasang[1] ** 2
-(d) kedua = tuple(x / sqrt(peluang) for x in sepasang)
+(a) for (int pertama = 0; pertama < 2; pertama++) {
+(b) double a = v[2 * pertama], b = v[2 * pertama + 1];
+(c) double peluang = a * a + b * b;
+(d) double kedua0 = a / std::sqrt(peluang), kedua1 = b / std::sqrt(peluang);
 ```
 
 ## Latihan
@@ -208,7 +223,7 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `e-xi2-m4` (satu minggu
 
 - **"Qubit pertama menentukan hasil qubit kedua, jadi kita bisa mengirim pesan."** Hasil pertama acak dan tidak dapat dipilih.
 - **"Korelasi 'selalu sama' sudah membuktikan sifat kuantum."** Dua amplop berisi bit sama juga memberi hasil itu (`E-XI2-M8`).
-- **"Histogram Bell harus persis 500 dan 500."** 495 dan 505 wajar; yang pasti tepat adalah `01` dan `10` nol.
+- **"Histogram Bell harus persis 500 dan 500."** 502 dan 498 wajar; yang pasti tepat adalah `01` dan `10` nol.
 
 ## Cek mandiri
 
@@ -224,7 +239,7 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `e-xi2-m4` (satu minggu
 
 **Prediksi dulu.** (1) `00` kira-kira 500 kali dan `11` kira-kira 500 kali; `01` dan `10` nol; (2) qubit kedua pasti terbaca 0; (3) tidak: hasil pertama acak, tidak dapat dipilih. Banyak murid menebak keempat hasil kira-kira 250.
 
-**Contoh setengah jadi.** 1: `0,5`, `0,5`, `0`; berbeda. 2: `0,5² + 0,5²` = 0,5. 3: `v[0] ** 2 + v[1] ** 2`.
+**Contoh setengah jadi.** 1: `0,5`, `0,5`, `0`; berbeda. 2: `0,5² + 0,5²` = 0,5. 3: `v[0] * v[0] + v[1] * v[1]`.
 
 **Soal Parsons.** a, b, c, d.
 

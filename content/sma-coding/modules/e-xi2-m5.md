@@ -1,12 +1,12 @@
 ## Untuk siapa modul ini
 
-Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M5` silabus v1.4: gerbang fase dan rotasi, tanda **pengayaan** pada judul minggunya. Prasyarat: modul `e-xi2-m4` (simulator n qubit). Bilangan kompleks dipakai hanya untuk fase (`e-xi1-m4`): kalikan dengan bilangan yang modulusnya 1 memutar titik tanpa mengubah panjangnya. Alat: kertas, kalkulator, Quirk (tanpa akun), dan Python 3 murni opsional; hitungan tangan lebih dulu.
+Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M5` silabus v1.4: gerbang fase dan rotasi, tanda **pengayaan** pada judul minggunya. Prasyarat: modul `e-xi2-m4` (simulator n qubit). Bilangan kompleks dipakai hanya untuk fase (`e-xi1-m4`): kalikan dengan bilangan yang modulusnya 1 memutar titik tanpa mengubah panjangnya. Alat: kertas, kalkulator, Quirk (tanpa akun), dan kompilator C++17 opsional (`<complex>` dari pustaka standar); hitungan tangan lebih dulu.
 
 Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur E adalah pengayaan di luar rumusan capaian pembelajaran (CP); minggu ini tidak punya irisan pengayaan, jadi modul ini tidak dihitung memenuhi butir CP mana pun.
 
 Aturan AI jalur ini: AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu, dan tanpa akun wajib. Saran: jawab dulu sendiri, baru minta penjelasan atau petunjuk bertahap. Setiap soal `Latihan` bertanda `AI: boleh` atau `AI: tanpa AI`.
 
-Catatan untuk guru: matriks Pauli (X, Y, Z), H, gerbang fase `P(theta)` beserta `S` (`theta` = pi/2) dan `T` (`theta` = pi/4) dibaca penyusun dari halaman IBM Quantum Learning "Quantum information" (single systems), per 2026-11-19. Matriks rotasi Ry dibaca dari halaman dokumentasi Qiskit untuk `RYGate`. Istilah **fase global** dan **fase relatif** serta pernyataan bahwa fase global tidak teramati tidak ditemukan penyusun dengan kata itu di halaman IBM yang dibuka `[belum terverifikasi]`; keduanya diperlihatkan lewat hitungan di modul ini. Di Quirk, gerbang S dan T tampil dengan nama itu; penyusun melihat bahwa H, T, H pada `|0>` memberi peluang hasil 1 sebesar 14,6 persen pada tampilan kabel. Angka dihitung ulang dengan Python 3.12.
+Catatan untuk guru: matriks Pauli (X, Y, Z), H, gerbang fase `P(theta)` beserta `S` (`theta` = pi/2) dan `T` (`theta` = pi/4) dibaca penyusun dari halaman IBM Quantum Learning "Quantum information" (single systems), per 2026-11-19. Matriks rotasi Ry dibaca dari halaman dokumentasi Qiskit untuk `RYGate`. Istilah **fase global** dan **fase relatif** serta pernyataan bahwa fase global tidak teramati tidak ditemukan penyusun dengan kata itu di halaman IBM yang dibuka `[belum terverifikasi]`; keduanya diperlihatkan lewat hitungan di modul ini. Di Quirk, gerbang S dan T tampil dengan nama itu; penyusun melihat bahwa H, T, H pada `|0>` memberi peluang hasil 1 sebesar 14,6 persen pada tampilan kabel. Angka dihitung ulang dengan program C++ di modul ini.
 
 ## Ingat kembali
 
@@ -41,89 +41,134 @@ Keadaan `(h, h)` diberi gerbang Z, S, atau T. Sebelum membaca contoh, tebak dan 
 
 **Rotasi Ry.** `Ry(theta) = [[cos(theta/2), -sin(theta/2)], [sin(theta/2), cos(theta/2)]]`: semua entri real, jadi amplitudonya tetap real. Pada `|0>`: `(cos(theta/2), sin(theta/2))`, sehingga peluang membaca 1 adalah `sin²(theta/2)`. Untuk membuat `(0,6 ; 0,8)`: `theta/2` adalah sudut yang kosinusnya 0,6 dan sinusnya 0,8, yaitu kira-kira 53,13 derajat, jadi `theta` kira-kira 106,26 derajat.
 
-```python
-import cmath
-from math import atan2, cos, degrees, pi, sin, sqrt
+```cpp
+#include <cmath>
+#include <complex>
+#include <cstdio>
+#include <string>
+#include <vector>
 
-h = 1 / sqrt(2)
-X = [[0, 1], [1, 0]]
-Y = [[0, -1j], [1j, 0]]
-Z = [[1, 0], [0, -1]]
-H = [[h, h], [h, -h]]
-S = [[1, 0], [0, 1j]]
-T = [[1, 0], [0, cmath.exp(1j * pi / 4)]]
+using Bil = std::complex<double>;
+using Vektor = std::vector<Bil>;
+using Matriks = std::vector<Vektor>;
 
+const double PI = std::acos(-1.0);
+const double h = 1.0 / std::sqrt(2.0);
+const Bil I(0.0, 1.0);  // bilangan imajiner i
 
-def kali(m, v):
-    return [sum(a * b for a, b in zip(baris, v)) for baris in m]
+Vektor kali(const Matriks& m, const Vektor& v) {
+    Vektor hasil;
+    for (const Vektor& baris : m) {
+        Bil jumlah = 0.0;
+        for (size_t k = 0; k < v.size(); k++) jumlah += baris[k] * v[k];
+        hasil.push_back(jumlah);
+    }
+    return hasil;
+}
 
+Matriks kali_matriks(const Matriks& a, const Matriks& b) {
+    Matriks c(2, Vektor(2, 0.0));
+    for (int i = 0; i < 2; i++)
+        for (int j = 0; j < 2; j++)
+            for (int k = 0; k < 2; k++) c[i][j] += a[i][k] * b[k][j];
+    return c;
+}
 
-def kali_matriks(a, b):
-    return [[sum(a[i][k] * b[k][j] for k in range(2)) for j in range(2)] for i in range(2)]
+bool sama(const Matriks& a, const Matriks& b) {
+    for (int i = 0; i < 2; i++)
+        for (int j = 0; j < 2; j++)
+            if (std::abs(a[i][j] - b[i][j]) > 1e-9) return false;
+    return true;
+}
 
+std::string tulis(const Vektor& v) {
+    std::string s = "(";
+    for (size_t i = 0; i < v.size(); i++) {
+        char buf[48];
+        std::snprintf(buf, sizeof buf, "%.4f%+.4fi", v[i].real() + 0.0, v[i].imag() + 0.0);
+        if (i > 0) s += ", ";
+        s += buf;
+    }
+    return s + ")";
+}
 
-def sama(a, b):
-    return all(abs(a[i][j] - b[i][j]) < 1e-9 for i in range(2) for j in range(2))
+std::string tulis_peluang(const Vektor& v) {
+    char buf[48];
+    std::snprintf(buf, sizeof buf, "[%.4f, %.4f]", std::norm(v[0]), std::norm(v[1]));  // norm = |z|^2
+    return buf;
+}
 
+// Rotasi Ry: matriks real, jadi amplitudo tetap real.
+Matriks ry(double sudut) {
+    double c = std::cos(sudut / 2), s = std::sin(sudut / 2);
+    return {{c, -s}, {s, c}};
+}
 
-def tulis(v):
-    return "(" + ", ".join(f"{z.real:.4f}{z.imag:+.4f}i" for z in v) + ")"
+Matriks kali_skalar(Bil k, const Matriks& m) {
+    Matriks hasil = m;
+    for (Vektor& baris : hasil)
+        for (Bil& z : baris) z *= k;
+    return hasil;
+}
 
+const char* benar(bool b) { return b ? "benar" : "salah"; }
 
-def peluang(v):
-    return [abs(z) ** 2 for z in v]
+int main() {
+    const Matriks X = {{0, 1}, {1, 0}};
+    const Matriks Y = {{0, -I}, {I, 0}};
+    const Matriks Z = {{1, 0}, {0, -1}};
+    const Matriks H = {{h, h}, {h, -h}};
+    const Matriks S = {{1, 0}, {0, I}};
+    const Matriks T = {{1, 0}, {0, std::polar(1.0, PI / 4)}};
 
+    Vektor plus = {h, h};
+    std::printf("keadaan (h, h): %s\n", tulis(plus).c_str());
+    const char* nama[3] = {"Z", "S", "T"};
+    const Matriks* gerbang[3] = {&Z, &S, &T};
+    for (int i = 0; i < 3; i++) {
+        Vektor sesudah = kali(*gerbang[i], plus);
+        Vektor lalu_h = kali(H, sesudah);
+        std::printf("%s: %s  peluang %s  lalu H: peluang %s\n", nama[i], tulis(sesudah).c_str(),
+                    tulis_peluang(sesudah).c_str(), tulis_peluang(lalu_h).c_str());
+    }
 
-def ry(sudut):
-    """Rotasi Ry: matriks real, jadi amplitudo tetap real."""
-    c, s = cos(sudut / 2), sin(sudut / 2)
-    return [[c, -s], [s, c]]
+    // Fase global: mengalikan seluruh vektor dengan i tidak mengubah peluang apa pun.
+    Vektor global_i = {I * plus[0], I * plus[1]};
+    std::printf("(h, h) kali i : %s  lalu H: peluang %s\n", tulis(global_i).c_str(),
+                tulis_peluang(kali(H, global_i)).c_str());
+    std::printf("(h, h) biasa  : %s  lalu H: peluang %s\n", tulis(plus).c_str(),
+                tulis_peluang(kali(H, plus)).c_str());
 
+    // Gerbang pengganti.
+    std::printf("S kali S = Z        : %s\n", benar(sama(kali_matriks(S, S), Z)));
+    std::printf("T kali T = S        : %s\n", benar(sama(kali_matriks(T, T), S)));
+    std::printf("H Z H = X           : %s\n", benar(sama(kali_matriks(H, kali_matriks(Z, H)), X)));
+    std::printf("i kali (X Z) = Y    : %s\n", benar(sama(kali_skalar(I, kali_matriks(X, Z)), Y)));
+    std::printf("Y dan X Z sama?     : %s\n", benar(sama(kali_matriks(X, Z), Y)));
 
-plus = [h, h]
-print("keadaan (h, h):", tulis(plus))
-for nama, g in (("Z", Z), ("S", S), ("T", T)):
-    sesudah = kali(g, plus)
-    lalu_h = kali(H, sesudah)
-    print(f"{nama}: {tulis(sesudah)}  peluang {[round(p, 4) for p in peluang(sesudah)]}"
-          f"  lalu H: peluang {[round(p, 4) for p in peluang(lalu_h)]}")
-
-# Fase global: mengalikan seluruh vektor dengan i tidak mengubah peluang apa pun.
-global_i = [1j * z for z in plus]
-print("(h, h) kali i :", tulis(global_i), " lalu H: peluang",
-      [round(p, 4) for p in peluang(kali(H, global_i))])
-print("(h, h) biasa  :", tulis(plus), " lalu H: peluang",
-      [round(p, 4) for p in peluang(kali(H, plus))])
-
-# Gerbang pengganti.
-print("S kali S = Z        :", sama(kali_matriks(S, S), Z))
-print("T kali T = S        :", sama(kali_matriks(T, T), S))
-print("H Z H = X           :", sama(kali_matriks(H, kali_matriks(Z, H)), X))
-iXZ = [[1j * z for z in baris] for baris in kali_matriks(X, Z)]
-print("i kali (X Z) = Y    :", sama(iXZ, Y))
-print("Y dan X Z sama?     :", sama(kali_matriks(X, Z), Y))
-
-# Rotasi Ry membuat keadaan (0,6 ; 0,8) dari |0>.
-theta = 2 * atan2(0.8, 0.6)
-hasil = kali(ry(theta), [1, 0])
-print(f"sudut Ry = {degrees(theta):.2f} derajat -> ({hasil[0].real:.4f}, {hasil[1].real:.4f}),"
-      f" P(1) = {abs(hasil[1]) ** 2:.4f}")
+    // Rotasi Ry membuat keadaan (0,6 ; 0,8) dari |0>.
+    double theta = 2 * std::atan2(0.8, 0.6);
+    Vektor hasil = kali(ry(theta), {1.0, 0.0});
+    std::printf("sudut Ry = %.2f derajat -> (%.4f, %.4f), P(1) = %.4f\n", theta * 180.0 / PI,
+                hasil[0].real(), hasil[1].real(), std::norm(hasil[1]));
+    return 0;
+}
 ```
 
-Keluaran asli (dijalankan penyusun dengan `python3 -I`, Python 3.12):
+Keluaran asli (`g++ -std=c++17 -Wall -Wextra`):
 
 ```text
 keadaan (h, h): (0.7071+0.0000i, 0.7071+0.0000i)
-Z: (0.7071+0.0000i, -0.7071+0.0000i)  peluang [0.5, 0.5]  lalu H: peluang [0.0, 1.0]
-S: (0.7071+0.0000i, 0.0000+0.7071i)  peluang [0.5, 0.5]  lalu H: peluang [0.5, 0.5]
-T: (0.7071+0.0000i, 0.5000+0.5000i)  peluang [0.5, 0.5]  lalu H: peluang [0.8536, 0.1464]
-(h, h) kali i : (0.0000+0.7071i, 0.0000+0.7071i)  lalu H: peluang [1.0, 0.0]
-(h, h) biasa  : (0.7071+0.0000i, 0.7071+0.0000i)  lalu H: peluang [1.0, 0.0]
-S kali S = Z        : True
-T kali T = S        : True
-H Z H = X           : True
-i kali (X Z) = Y    : True
-Y dan X Z sama?     : False
+Z: (0.7071+0.0000i, -0.7071+0.0000i)  peluang [0.5000, 0.5000]  lalu H: peluang [0.0000, 1.0000]
+S: (0.7071+0.0000i, 0.0000+0.7071i)  peluang [0.5000, 0.5000]  lalu H: peluang [0.5000, 0.5000]
+T: (0.7071+0.0000i, 0.5000+0.5000i)  peluang [0.5000, 0.5000]  lalu H: peluang [0.8536, 0.1464]
+(h, h) kali i : (0.0000+0.7071i, 0.0000+0.7071i)  lalu H: peluang [1.0000, 0.0000]
+(h, h) biasa  : (0.7071+0.0000i, 0.7071+0.0000i)  lalu H: peluang [1.0000, 0.0000]
+S kali S = Z        : benar
+T kali T = S        : benar
+H Z H = X           : benar
+i kali (X Z) = Y    : benar
+Y dan X Z sama?     : salah
 sudut Ry = 106.26 derajat -> (0.6000, 0.8000), P(1) = 0.6400
 ```
 
@@ -139,10 +184,11 @@ Lengkapi (kunci di bagian akhir).
 2. `Ry(theta)` pada `|0>` memberi `(____ , ____)`; untuk `theta` = 180 derajat hasilnya `(____ , ____)`.
 3. Lengkapi matriks Ry:
 
-```python setengah-jadi
-def ry(sudut):
-    c, s = cos(sudut / 2), sin(sudut / 2)
-    return [[c, ____], [____, c]]
+```cpp setengah-jadi
+Matriks ry(double sudut) {
+    double c = std::cos(sudut / 2), s = std::sin(sudut / 2);
+    return {{c, ____}, {____, c}};
+}
 ```
 
 ## Soal Parsons
@@ -150,8 +196,8 @@ def ry(sudut):
 Susun baris-baris di bawah (sudah diacak) menjadi pemeriksaan bahwa `S kali S = Z`. Penjorokan sengaja dihilangkan.
 
 ```text
-(a) hasil = kali_matriks(S, S)
-(b) print("S kali S = Z :", sama(hasil, Z))
+(a) Matriks hasil = kali_matriks(S, S);
+(b) std::printf("S kali S = Z : %s\n", benar(sama(hasil, Z)));
 ```
 
 ## Latihan
@@ -181,7 +227,7 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `e-xi2-m6` (satu minggu
 - **"Fase mengubah peluang."** Fase sendiri tidak mengubah peluang pada bacaan langsung; yang mengubahnya adalah fase relatif **ditambah** gerbang lain seperti H.
 - **"Fase global dan fase relatif sama saja."** Global mengalikan seluruh vektor (tak teramati); relatif membedakan komponen satu dari yang lain.
 - **"S dan Z hanya berbeda tanda."** S mengalikan `|1>` dengan `i` (putar 90 derajat), Z dengan `-1` (putar 180 derajat); dua S sama dengan satu Z.
-- **"Gerbang kompleks berarti simulator butuh pustaka khusus."** Python sudah punya bilangan kompleks; yang berubah hanya cara mencetak amplitudo.
+- **"Gerbang kompleks berarti simulator butuh pustaka khusus."** C++ sudah punya `std::complex` di pustaka standar; yang berubah hanya cara mencetak amplitudo.
 - **"Rotasi Ry memutar qubit secara fisik."** Ry adalah matriks yang kita kalikan pada vektor; apa yang dilakukan perangkat nyata tidak ditentukan oleh modul ini.
 
 ## Cek mandiri
@@ -198,7 +244,7 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `e-xi2-m6` (satu minggu
 
 **Prediksi dulu.** (1) 0,5 untuk ketiganya, karena modulus komponen tidak berubah; (2) tidak sama: Z memberi peluang 0 sebesar 0, S sebesar 0,5, T sebesar kira-kira 0,8536. Urutan: Z, S, T. Banyak murid menjawab "fase tidak mengubah apa pun, jadi semuanya 0,5".
 
-**Contoh setengah jadi.** 1: Z; `i` kali `i` = `-1`. 2: `(cos(theta/2), sin(theta/2))`; untuk 180 derajat: `(0, 1)`, karena `cos 90 = 0` dan `sin 90 = 1`. 3: `-s` lalu `s`; yaitu `[[c, -s], [s, c]]`.
+**Contoh setengah jadi.** 1: Z; `i` kali `i` = `-1`. 2: `(cos(theta/2), sin(theta/2))`; untuk 180 derajat: `(0, 1)`, karena `cos 90 = 0` dan `sin 90 = 1`. 3: `-s` lalu `s`; yaitu `{{c, -s}, {s, c}}`.
 
 **Soal Parsons.** a, b.
 

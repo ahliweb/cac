@@ -3368,8 +3368,8 @@
           "url": "https://algassert.com/quirk"
         },
         {
-          "title": "Python: modul random",
-          "url": "https://docs.python.org/3/library/random.html"
+          "title": "cppreference: tipe bilangan bulat berukuran tetap (uint32_t)",
+          "url": "https://en.cppreference.com/w/cpp/types/integer"
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi2-m3.md"
@@ -3391,8 +3391,20 @@
           "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/multiple-systems/quantum-information"
         },
         {
-          "title": "Python: modul sys (getsizeof)",
-          "url": "https://docs.python.org/3/library/sys.html"
+          "title": "cppreference: operator sizeof",
+          "url": "https://en.cppreference.com/w/cpp/language/sizeof"
+        },
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/w/cpp/container/vector"
+        },
+        {
+          "title": "The TypeScript Handbook",
+          "url": "https://www.typescriptlang.org/docs/handbook/intro.html"
+        },
+        {
+          "title": "Bun: menjalankan TypeScript",
+          "url": "https://bun.sh/docs/runtime/typescript"
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi2-m4.md"
@@ -3422,8 +3434,8 @@
           "url": "https://algassert.com/quirk"
         },
         {
-          "title": "Python: modul cmath",
-          "url": "https://docs.python.org/3/library/cmath.html"
+          "title": "cppreference: std::complex",
+          "url": "https://en.cppreference.com/w/cpp/numeric/complex"
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi2-m5.md"
@@ -3449,8 +3461,8 @@
           "url": "https://algassert.com/quirk"
         },
         {
-          "title": "Python: modul itertools",
-          "url": "https://docs.python.org/3/library/itertools.html"
+          "title": "cppreference: std::set",
+          "url": "https://en.cppreference.com/w/cpp/container/set"
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi2-m6.md"

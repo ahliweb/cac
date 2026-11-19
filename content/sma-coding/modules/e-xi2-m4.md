@@ -1,12 +1,12 @@
 ## Untuk siapa modul ini
 
-Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M4` silabus v1.4: simulator sendiri III, yaitu memperluas simulator ke n qubit dan menghitung memori `2^n`. Prasyarat: modul `e-xi2-m3` (mengukur qubit terjerat). Di luar indeks, bagian kode memerlukan dasar pemrograman setara `A-X1-M9..M12` (C++) atau `B-X1-M9..M12` (TypeScript/Bun) dan simulator `E-XI1-M10` dan `E-XI1-M11`; guru memeriksanya. Bagian konsep dan hitungan memori terbuka bagi semua murid. Alat: kertas, kalkulator, dan Python 3 murni (tanpa akun); murid jalur A atau B boleh menerjemahkannya.
+Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M4` silabus v1.4: simulator sendiri III, yaitu memperluas simulator ke n qubit dan menghitung memori `2^n`. Prasyarat: modul `e-xi2-m3` (mengukur qubit terjerat). Di luar indeks, bagian kode memerlukan dasar pemrograman setara `A-X1-M9..M12` (C++) atau `B-X1-M9..M12` (TypeScript/Bun) dan simulator `E-XI1-M10` dan `E-XI1-M11`; guru memeriksanya. Bagian konsep dan hitungan memori terbuka bagi semua murid. Alat: kertas, kalkulator, dan kompilator C++17 (tanpa akun); versi TypeScript disertakan.
 
 Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur E adalah pengayaan di luar rumusan CP. Irisan pengayaan minggu ini `F-AP-d` tidak dihitung; modul ini tidak dihitung memenuhi butir CP mana pun.
 
 Aturan AI jalur ini: AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu, dan tanpa akun wajib. Saran: jawab dulu sendiri, baru minta petunjuk bertahap; kode buatan AI kamu baca, jalankan, dan uji. Setiap soal `Latihan` bertanda `AI: boleh` atau `AI: tanpa AI`.
 
-Catatan untuk guru: bahwa keadaan n qubit adalah vektor `2^n` komponen yang diberi indeks bit string dibaca penyusun dari halaman IBM Quantum Learning "Quantum information" (multiple systems), per 2026-11-19. Simulator karangan penyusun, dibandingkan dengan hitungan tangan `e-xi2-m1` dan `e-xi2-m2`. Memori adalah `2^n x 8` byte (amplitudo real; kompleks 16 byte). Ukuran float Python (24 byte) diukur dengan `sys.getsizeof` pada Python 3.12 dan bergantung versi dan mesin. Batas mesin lab tidak diukur.
+Catatan untuk guru: bahwa keadaan n qubit adalah vektor `2^n` komponen yang diberi indeks bit string dibaca penyusun dari halaman IBM Quantum Learning "Quantum information" (multiple systems), per 2026-11-19. Simulator karangan penyusun, dibandingkan dengan hitungan tangan `e-xi2-m1` dan `e-xi2-m2`. Memori adalah `2^n x 8` byte (amplitudo real; kompleks 16 byte). Ukuran satu `double` (8 byte) diukur dengan `sizeof`. Batas mesin lab tidak diukur.
 
 ## Ingat kembali
 
@@ -39,82 +39,104 @@ Tebak dan tulis: (1) berapa komponen untuk tiga dan sepuluh qubit; (2) berapa by
 
 **Memori.** Vektor `2^n` komponen dengan 8 byte per komponen memerlukan `2^n x 8` byte. Menambah satu qubit menggandakan memori, dan waktu tiap gerbang ikut berlipat dua karena pekerjaannya sebanding dengan `2^n`. Pada n = 30 itu 8 GiB; amplitudo kompleks memakai 16 byte per komponen. Jadi simulator vektor keadaan hanya cocok untuk n kecil. Dari sini tidak dapat disimpulkan apa pun tentang berapa qubit yang dapat dikendalikan perangkat nyata.
 
-```python
-import sys
-from math import sqrt
+```cpp
+#include <cmath>
+#include <cstdint>
+#include <cstdio>
+#include <vector>
 
-h = 1 / sqrt(2)
-H = [[h, h], [h, -h]]
+using Vektor = std::vector<double>;
+using Gerbang = double[2][2];
 
+const double h = 1.0 / std::sqrt(2.0);
+const Gerbang H = {{h, h}, {h, -h}};
 
-def keadaan_awal(n):
-    v = [0.0] * (2 ** n)
-    v[0] = 1.0  # |00...0>
-    return v
+Vektor keadaan_awal(int n) {
+    Vektor v(size_t(1) << n, 0.0);
+    v[0] = 1.0;  // |00...0>
+    return v;
+}
 
+// Terapkan gerbang 2 x 2 g pada qubit ke-k (0 = paling kiri), di tempat.
+void gerbang_satu(Vektor& v, int n, const Gerbang& g, int k) {
+    int geser = n - 1 - k;
+    for (size_t i = 0; i < v.size(); i++) {
+        if (((i >> geser) & 1) == 0) {         // bit qubit k bernilai 0
+            size_t j = i | (size_t(1) << geser);  // pasangannya: bit itu bernilai 1
+            double a = v[i], b = v[j];
+            v[i] = g[0][0] * a + g[0][1] * b;
+            v[j] = g[1][0] * a + g[1][1] * b;
+        }
+    }
+}
 
-def gerbang_satu(v, n, g, k):
-    """Terapkan gerbang 2 x 2 g pada qubit ke-k (0 = paling kiri), di tempat."""
-    geser = n - 1 - k
-    for i in range(len(v)):
-        if (i >> geser) & 1 == 0:        # bit qubit k bernilai 0
-            j = i | (1 << geser)         # pasangannya: bit itu bernilai 1
-            a, b = v[i], v[j]
-            v[i] = g[0][0] * a + g[0][1] * b
-            v[j] = g[1][0] * a + g[1][1] * b
+// Bila kontrol bernilai 1, tukar dua komponen yang beda hanya pada bit target.
+void cnot(Vektor& v, int n, int kontrol, int target) {
+    int gk = n - 1 - kontrol;
+    int gt = n - 1 - target;
+    for (size_t i = 0; i < v.size(); i++) {
+        if (((i >> gk) & 1) == 1 && ((i >> gt) & 1) == 0) {
+            size_t j = i | (size_t(1) << gt);
+            double sementara = v[i];
+            v[i] = v[j];
+            v[j] = sementara;
+        }
+    }
+}
 
+void tampilkan(const Vektor& v, int n) {
+    for (size_t i = 0; i < v.size(); i++) {
+        if (std::fabs(v[i]) > 1e-12) {
+            std::printf("  ");
+            for (int bit = n - 1; bit >= 0; bit--) std::putchar(((i >> bit) & 1) ? '1' : '0');
+            std::printf(": amplitudo %+.4f, peluang %.4f\n", v[i], v[i] * v[i]);
+        }
+    }
+}
 
-def cnot(v, n, kontrol, target):
-    """Bila kontrol bernilai 1, tukar dua komponen yang beda hanya pada bit target."""
-    gk = n - 1 - kontrol
-    gt = n - 1 - target
-    for i in range(len(v)):
-        if (i >> gk) & 1 == 1 and (i >> gt) & 1 == 0:
-            j = i | (1 << gt)
-            v[i], v[j] = v[j], v[i]
+int main() {
+    // Dua qubit: keadaan Bell.
+    Vektor v2 = keadaan_awal(2);
+    gerbang_satu(v2, 2, H, 0);
+    cnot(v2, 2, 0, 1);
+    std::printf("dua qubit, H lalu CNOT:\n");
+    tampilkan(v2, 2);
 
+    // Tiga qubit: H pada qubit 0, lalu CNOT 0->1 dan 1->2.
+    Vektor v3 = keadaan_awal(3);
+    gerbang_satu(v3, 3, H, 0);
+    cnot(v3, 3, 0, 1);
+    cnot(v3, 3, 1, 2);
+    std::printf("tiga qubit, H, CNOT 0->1, CNOT 1->2:\n");
+    tampilkan(v3, 3);
 
-def tampilkan(v, n):
-    for i, x in enumerate(v):
-        if abs(x) > 1e-12:
-            print(f"  {format(i, f'0{n}b')}: amplitudo {x:+.4f}, peluang {x * x:.4f}")
+    // H pada semua qubit: n = 12.
+    int n = 12;
+    Vektor v = keadaan_awal(n);
+    for (int k = 0; k < n; k++) gerbang_satu(v, n, H, k);
+    double jumlah = 0.0;
+    for (double x : v) jumlah += x * x;
+    std::printf("n = %d: %zu komponen, jumlah kuadrat %.4f, tiap peluang %.6f\n", n, v.size(), jumlah,
+                v[0] * v[0]);
 
-
-# Dua qubit: keadaan Bell.
-v2 = keadaan_awal(2)
-gerbang_satu(v2, 2, H, 0)
-cnot(v2, 2, 0, 1)
-print("dua qubit, H lalu CNOT:")
-tampilkan(v2, 2)
-
-# Tiga qubit: H pada qubit 0, lalu CNOT 0->1 dan 1->2.
-v3 = keadaan_awal(3)
-gerbang_satu(v3, 3, H, 0)
-cnot(v3, 3, 0, 1)
-cnot(v3, 3, 1, 2)
-print("tiga qubit, H, CNOT 0->1, CNOT 1->2:")
-tampilkan(v3, 3)
-
-# H pada semua qubit: n = 12.
-n = 12
-v = keadaan_awal(n)
-for k in range(n):
-    gerbang_satu(v, n, H, k)
-print(f"n = {n}: {len(v)} komponen, jumlah kuadrat {sum(x * x for x in v):.4f}, "
-      f"tiap peluang {v[0] ** 2:.6f}")
-
-# Memori vektor keadaan bila tiap amplitudo satu bilangan 8 byte (float64).
-print("memori vektor n qubit, 8 byte per amplitudo:")
-for n in (10, 20, 30, 40):
-    byte = (2 ** n) * 8
-    for satuan, nama in ((2 ** 40, "TiB"), (2 ** 30, "GiB"), (2 ** 20, "MiB"), (2 ** 10, "KiB")):
-        if byte >= satuan:
-            break
-    print(f"  n = {n}: {2 ** n} komponen, {byte} byte = {byte / satuan:g} {nama}")
-print("ukuran satu float Python (byte):", sys.getsizeof(0.5))
+    // Memori vektor keadaan bila tiap amplitudo satu double (8 byte).
+    std::printf("memori vektor n qubit, %zu byte per amplitudo:\n", sizeof(double));
+    const int ukuran_n[4] = {10, 20, 30, 40};
+    const uint64_t satuan[4] = {uint64_t(1) << 40, uint64_t(1) << 30, uint64_t(1) << 20, uint64_t(1) << 10};
+    const char* nama[4] = {"TiB", "GiB", "MiB", "KiB"};
+    for (int m : ukuran_n) {
+        uint64_t komponen = uint64_t(1) << m;
+        uint64_t byte = komponen * sizeof(double);
+        int s = 0;
+        while (s < 3 && byte < satuan[s]) s++;
+        std::printf("  n = %d: %llu komponen, %llu byte = %g %s\n", m, (unsigned long long)komponen,
+                    (unsigned long long)byte, double(byte) / double(satuan[s]), nama[s]);
+    }
+    return 0;
+}
 ```
 
-Keluaran asli (dijalankan penyusun dengan `python3 -I`, Python 3.12):
+Keluaran asli (`g++ -std=c++17 -Wall -Wextra`):
 
 ```text
 dua qubit, H lalu CNOT:
@@ -129,10 +151,92 @@ memori vektor n qubit, 8 byte per amplitudo:
   n = 20: 1048576 komponen, 8388608 byte = 8 MiB
   n = 30: 1073741824 komponen, 8589934592 byte = 8 GiB
   n = 40: 1099511627776 komponen, 8796093022208 byte = 8 TiB
-ukuran satu float Python (byte): 24
 ```
 
-Bacaan hasilnya: dua qubit memberi `(h, 0, 0, h)` seperti `e-xi2-m2`; tiga qubit hanya `000` dan `111`; n = 12 memberi 4096 peluang sama. Float Python 24 byte, bukan 8, jadi tabel memori adalah batas bawah untuk daftar Python.
+Bacaan hasilnya: dua qubit memberi `(h, 0, 0, h)` seperti `e-xi2-m2`; tiga qubit hanya `000` dan `111`; n = 12 memberi 4096 peluang sama. Satu `double` memang 8 byte, sama dengan asumsi tabel memori.
+
+**TypeScript dengan Bun (jalur B).** Versi ini setara dengan C++ dan keluarannya sama persis (dijalankan dengan `bun`, dibandingkan baris demi baris).
+
+```ts
+type Vektor = number[];
+type Gerbang = number[][];
+
+const h = 1 / Math.sqrt(2);
+const H: Gerbang = [[h, h], [h, -h]];
+
+function keadaanAwal(n: number): Vektor {
+  const v: Vektor = new Array(2 ** n).fill(0);
+  v[0] = 1; // |00...0>
+  return v;
+}
+
+// Terapkan gerbang 2 x 2 g pada qubit ke-k (0 = paling kiri), di tempat.
+function gerbangSatu(v: Vektor, n: number, g: Gerbang, k: number): void {
+  const geser = n - 1 - k;
+  for (let i = 0; i < v.length; i++) {
+    if (((i >> geser) & 1) === 0) { // bit qubit k bernilai 0
+      const j = i | (1 << geser);   // pasangannya: bit itu bernilai 1
+      const a = v[i], b = v[j];
+      v[i] = g[0][0] * a + g[0][1] * b;
+      v[j] = g[1][0] * a + g[1][1] * b;
+    }
+  }
+}
+
+// Bila kontrol bernilai 1, tukar dua komponen yang beda hanya pada bit target.
+function cnot(v: Vektor, n: number, kontrol: number, target: number): void {
+  const gk = n - 1 - kontrol;
+  const gt = n - 1 - target;
+  for (let i = 0; i < v.length; i++) {
+    if (((i >> gk) & 1) === 1 && ((i >> gt) & 1) === 0) {
+      const j = i | (1 << gt);
+      [v[i], v[j]] = [v[j], v[i]];
+    }
+  }
+}
+
+function tampilkan(v: Vektor, n: number): void {
+  v.forEach((x, i) => {
+    if (Math.abs(x) > 1e-12) {
+      const tanda = x >= 0 ? "+" : "-";
+      console.log(`  ${i.toString(2).padStart(n, "0")}: amplitudo ${tanda}${Math.abs(x).toFixed(4)}, peluang ${(x * x).toFixed(4)}`);
+    }
+  });
+}
+
+// Dua qubit: keadaan Bell.
+const v2 = keadaanAwal(2);
+gerbangSatu(v2, 2, H, 0);
+cnot(v2, 2, 0, 1);
+console.log("dua qubit, H lalu CNOT:");
+tampilkan(v2, 2);
+
+// Tiga qubit: H pada qubit 0, lalu CNOT 0->1 dan 1->2.
+const v3 = keadaanAwal(3);
+gerbangSatu(v3, 3, H, 0);
+cnot(v3, 3, 0, 1);
+cnot(v3, 3, 1, 2);
+console.log("tiga qubit, H, CNOT 0->1, CNOT 1->2:");
+tampilkan(v3, 3);
+
+// H pada semua qubit: n = 12.
+const n = 12;
+const v = keadaanAwal(n);
+for (let k = 0; k < n; k++) gerbangSatu(v, n, H, k);
+const jumlah = v.reduce((s, x) => s + x * x, 0);
+console.log(`n = ${n}: ${v.length} komponen, jumlah kuadrat ${jumlah.toFixed(4)}, tiap peluang ${(v[0] * v[0]).toFixed(6)}`);
+
+// Memori vektor keadaan bila tiap amplitudo satu Float64 (8 byte).
+const bytePerAmplitudo = Float64Array.BYTES_PER_ELEMENT;
+console.log(`memori vektor n qubit, ${bytePerAmplitudo} byte per amplitudo:`);
+const satuan: [number, string][] = [[2 ** 40, "TiB"], [2 ** 30, "GiB"], [2 ** 20, "MiB"], [2 ** 10, "KiB"]];
+for (const m of [10, 20, 30, 40]) {
+  const komponen = 2 ** m;
+  const byte = komponen * bytePerAmplitudo;
+  const [ukuran, nama] = satuan.find(([u]) => byte >= u) ?? satuan[3];
+  console.log(`  n = ${m}: ${komponen} komponen, ${byte} byte = ${byte / ukuran} ${nama}`);
+}
+```
 
 **Menelusuri.** Untuk tiga qubit setelah H pada qubit 0: `(h, 0, 0, 0, h, 0, 0, 0)`, komponen `000` dan `100`. CNOT 0 ke 1 menukar komponen yang qubit-0-nya 1 dan qubit-1-nya berbeda: `100` dan `110`, jadi `(h, 0, 0, 0, 0, 0, h, 0)`. CNOT 1 ke 2 menukar komponen `110` dan `111`: `(h, 0, 0, 0, 0, 0, 0, h)`.
 
@@ -144,29 +248,29 @@ Lengkapi (kunci di bagian akhir).
 2. Untuk n = 5 dan 8 byte per amplitudo, memori `2^5 x 8` = ____ byte.
 3. Lengkapi pembuatan keadaan GHZ tiga qubit (qubit 0 diberi H, lalu CNOT berantai):
 
-```python setengah-jadi
-v = keadaan_awal(3)
-gerbang_satu(v, 3, H, ____)
-cnot(v, 3, 0, ____)
-cnot(v, 3, ____, 2)
+```cpp setengah-jadi
+Vektor v = keadaan_awal(3);
+gerbang_satu(v, 3, H, ____);
+cnot(v, 3, 0, ____);
+cnot(v, 3, ____, 2);
 ```
 
 ## Soal Parsons
 
-Susun baris-baris di bawah (sudah diacak) menjadi fungsi yang membuat keadaan awal n qubit. Baris `v = ...` dan `return v` berada di dalam fungsi; penjorokan sengaja dihilangkan.
+Susun baris-baris di bawah (sudah diacak) menjadi fungsi yang membuat keadaan awal n qubit. Baris (b) sampai (d) berada di dalam fungsi; penjorokan dan `}` penutup tidak diberikan.
 
 ```text
-(a) def keadaan_awal(n):
-(b) v = [0.0] * (2 ** n)
-(c) v[0] = 1.0
-(d) return v
+(a) Vektor keadaan_awal(int n) {
+(b) Vektor v(size_t(1) << n, 0.0);
+(c) v[0] = 1.0;
+(d) return v;
 ```
 
 ## Latihan
 
 1. **Tabel memori.** (`AI: tanpa AI`) Lengkapi memori vektor untuk n = 5, 15, dan 25 dengan 8 byte per amplitudo, lalu ulangi dengan 16 byte (amplitudo kompleks).
 2. **Telusuri pasangan.** (`AI: tanpa AI`) Untuk tiga qubit, tulis pasangan indeks yang digabung oleh H pada qubit 0 dan pada qubit 2.
-3. **Titik jenuh di mesin lab.** (`AI: boleh`) Ubah n pada bagian "H pada semua qubit" menjadi 14, 16, dan 18, dan catat waktu (misalnya `time.perf_counter()`) serta, bila bisa, memori mesinmu. Berhenti bila mesin melambat atau memori hampir habis; jangan mencoba n besar (batas dari gurumu). Angka bergantung mesin; ujilah polanya: berapa kali lipat waktu bertambah per qubit tambahan?
+3. **Titik jenuh di mesin lab.** (`AI: boleh`) Ubah n pada bagian "H pada semua qubit" menjadi 14, 16, dan 18, dan catat waktu (misalnya `std::chrono::steady_clock` di C++ atau `performance.now()` di Bun) serta, bila bisa, memori mesinmu. Berhenti bila mesin melambat atau memori hampir habis; jangan mencoba n besar (batas dari gurumu). Angka bergantung mesin; ujilah polanya: berapa kali lipat waktu bertambah per qubit tambahan?
 4. **Rancang dulu.** (`AI: boleh`) Tulis pseudocode keadaan GHZ untuk n qubit (H pada qubit 0, lalu CNOT dari qubit k ke k+1).
 5. **Catatan pemakaian AI (opsional).** Bila memakai asisten AI, catat alat, tujuan, garis besar perintah, bagian yang dipakai, dan cara memeriksa jawabannya.
 
