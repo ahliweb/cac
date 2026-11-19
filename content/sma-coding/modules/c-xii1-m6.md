@@ -342,4 +342,4 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `C-XII1-M7` (sekitar sa
 
 ## Langkah berikutnya
 
-Modul berikut: `c-xii1-m7` (pengikut garis: strategi 2), yang menjalankan kendali proporsional pada lintasan uji yang sama. Bacaan lanjut: penjelasan kendali hidup-mati (lihat Rujukan).
+Modul berikut: `c-xii1-m7` (pengikut garis: strategi 2), yang menjalankan kendali proporsional pada lintasan uji yang sama. Bacaan lanjut: dokumentasi `analogRead` dan PWM Arduino-ESP32 (lihat Rujukan).

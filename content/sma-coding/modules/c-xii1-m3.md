@@ -43,7 +43,7 @@ Fungsi `dariKecepatan(k)` menjepit `k` ke rentang -255 sampai 255, lalu menghasi
 
 ## Contoh terselesaikan
 
-Motor DC berputar ke satu arah bila arus mengalir ke satu arah; membalik polaritas membalik putaran. Pin papan tidak kuat dan tidak boleh menggerakkan motor, jadi ada **modul pengendali** berisi jembatan-H, yang membalik polaritas atas sinyal kecil dari papan. Kecepatan diatur dengan PWM, seperti kecerahan LED pada `c-x2-m5`. Pada modul contoh ini tiap motor punya dua pin arah dan satu pin kecepatan:
+Motor DC berputar ke satu arah bila arus mengalir ke satu arah; membalik polaritas membalik putaran. Pin papan tidak kuat dan tidak boleh menggerakkan motor, jadi ada **modul pengendali** berisi jembatan-H, yang membalik polaritas atas sinyal kecil dari papan (cara kerja rinci ada di lembar data modulmu). Kecepatan diatur dengan PWM, seperti kecerahan LED pada `c-x2-m5`. Pada modul contoh ini tiap motor punya dua pin arah dan satu pin kecepatan:
 
 | IN1 | IN2 | Efek pada contoh |
 | --- | --- | --- |
@@ -327,4 +327,4 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `C-XII1-M4` (sekitar sa
 
 ## Langkah berikutnya
 
-Modul berikut: `c-xii1-m4` (sensor garis dan jarak), yang memberi robot kemampuan membaca lintasan dan halangan. Bacaan lanjut: dokumentasi PWM Arduino-ESP32 dan penjelasan jembatan-H (lihat Rujukan).
+Modul berikut: `c-xii1-m4` (sensor garis dan jarak), yang memberi robot kemampuan membaca lintasan dan halangan. Bacaan lanjut: dokumentasi PWM Arduino-ESP32 (lihat Rujukan) dan lembar data modul pengendali dari guru.

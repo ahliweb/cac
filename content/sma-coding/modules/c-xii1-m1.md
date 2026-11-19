@@ -223,4 +223,4 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `C-XII1-M2` (sekitar sa
 
 ## Langkah berikutnya
 
-Modul berikut: `c-xii1-m2` (arsitektur dan pemilihan komponen), yang mengubah dokumen kebutuhan menjadi pilihan komponen. Bacaan pendamping: `pendamping-merancang-kebutuhan-sistem`. Bacaan lanjut: panduan mata pelajaran Informatika dan ensiklopedia terbuka tentang analisis kebutuhan (lihat Rujukan).
+Modul berikut: `c-xii1-m2` (arsitektur dan pemilihan komponen), yang mengubah dokumen kebutuhan menjadi pilihan komponen. Bacaan pendamping: `pendamping-merancang-kebutuhan-sistem`. Bacaan lanjut: panduan mata pelajaran Informatika (lihat Rujukan).

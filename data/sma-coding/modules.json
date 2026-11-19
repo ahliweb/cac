@@ -4056,10 +4056,6 @@
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D - F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
-        },
-        {
-          "title": "Wikipedia: Requirements analysis (bacaan pengantar)",
-          "url": "https://en.wikipedia.org/wiki/Requirements_analysis"
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii1-m1.md"
@@ -4106,10 +4102,6 @@
         {
           "title": "Arduino: constrain()",
           "url": "https://docs.arduino.cc/language-reference/en/functions/math/constrain/"
-        },
-        {
-          "title": "Wikipedia: H-bridge (bacaan pengantar)",
-          "url": "https://en.wikipedia.org/wiki/H-bridge"
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii1-m3.md"
@@ -4181,10 +4173,6 @@
       "status": "draf",
       "references": [
         {
-          "title": "Wikipedia: Bang-bang control (bacaan pengantar)",
-          "url": "https://en.wikipedia.org/wiki/Bang%E2%80%93bang_control"
-        },
-        {
           "title": "Arduino: analogRead()",
           "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/"
         },
@@ -4208,16 +4196,12 @@
       "status": "draf",
       "references": [
         {
-          "title": "Wikipedia: Proportional control (bacaan pengantar)",
-          "url": "https://en.wikipedia.org/wiki/Proportional_control"
-        },
-        {
-          "title": "Wikipedia: PID controller (bacaan pengantar)",
-          "url": "https://en.wikipedia.org/wiki/PID_controller"
-        },
-        {
           "title": "Arduino: constrain()",
           "url": "https://docs.arduino.cc/language-reference/en/functions/math/constrain/"
+        },
+        {
+          "title": "Arduino: analogRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/"
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii1-m7.md"

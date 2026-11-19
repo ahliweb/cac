@@ -353,4 +353,4 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `C-XII1-M8` (sekitar sa
 
 ## Langkah berikutnya
 
-Modul berikut: `C-XII1-M8` (membandingkan strategi, belum terindeks saat modul ini ditulis), yang mengukur dan menjustifikasi pilihan antara hidup-mati dan proporsional. Bacaan lanjut: penjelasan kendali proporsional dan PID (lihat Rujukan).
+Modul berikut: `C-XII1-M8` (membandingkan strategi, belum terindeks saat modul ini ditulis), yang mengukur dan menjustifikasi pilihan antara hidup-mati dan proporsional. Bacaan lanjut: dokumentasi `constrain` dan `analogRead` (lihat Rujukan).
