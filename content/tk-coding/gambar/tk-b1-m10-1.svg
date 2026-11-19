@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="600" height="340" role="img" aria-labelledby="t d">
+  <title id="t">Tempat mencari informasi</title>
+  <desc id="d">Di atas ada tanda tanya besar dan gambar kelinci sederhana. Di bawahnya ada tiga kotak berjajar: buku terbuka, sosok orang tanpa wajah dengan gelembung bicara, dan gambar bingkai berisi gunung dan matahari. Tiap kotak diberi tulisan buku, orang, dan gambar.</desc>
+  <rect width="600" height="340" fill="#ffffff"/>
+  <text x="120" y="96" font-family="sans-serif" font-size="96" text-anchor="middle" fill="#333333">?</text>
+  <g fill="#ffffff" stroke="#333333" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <ellipse cx="400" cy="70" rx="44" ry="30"/>
+    <ellipse cx="454" cy="44" rx="24" ry="20"/>
+    <ellipse cx="450" cy="14" rx="7" ry="22"/>
+    <ellipse cx="470" cy="14" rx="7" ry="22"/>
+    <circle cx="354" cy="62" r="8"/>
+  </g>
+  <circle cx="460" cy="44" r="3" fill="#333333"/>
+  <text x="300" y="150" font-family="sans-serif" font-size="18" text-anchor="middle" fill="#333333">lingkari satu tempat untuk mencari</text>
+  <rect x="30" y="170" width="160" height="130" rx="10" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <rect x="220" y="170" width="160" height="130" rx="10" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <rect x="410" y="170" width="160" height="130" rx="10" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <g fill="#ffffff" stroke="#333333" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M110 194 Q85 184 56 190 V256 Q85 250 110 260 Z"/>
+    <path d="M110 194 Q135 184 164 190 V256 Q135 250 110 260 Z"/>
+    <path d="M70 206 Q88 202 100 208 M70 220 Q88 216 100 222 M120 208 Q132 202 150 206 M120 222 Q132 216 150 220"/>
+    <circle cx="300" cy="208" r="16"/>
+    <path d="M300 224 V262 M300 236 L280 252 M300 236 L320 252 M300 262 L286 282 M300 262 L314 282"/>
+    <path d="M326 192 H366 Q372 192 372 198 V214 Q372 220 366 220 H344 L334 230 V220 H326 Q320 220 320 214 V198 Q320 192 326 192 Z"/>
+    <rect x="440" y="190" width="100" height="70"/>
+    <path d="M440 260 L475 222 L500 246 L518 230 L540 260 Z"/>
+    <circle cx="518" cy="210" r="10"/>
+  </g>
+  <text x="110" y="288" font-family="sans-serif" font-size="22" text-anchor="middle" fill="#333333">buku</text>
+  <text x="300" y="296" font-family="sans-serif" font-size="22" text-anchor="middle" fill="#333333">orang</text>
+  <text x="490" y="288" font-family="sans-serif" font-size="22" text-anchor="middle" fill="#333333">gambar</text>
+</svg>

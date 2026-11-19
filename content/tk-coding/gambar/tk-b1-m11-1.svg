@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 540" width="600" height="540" role="img" aria-labelledby="t d">
+  <title id="t">Peta harta</title>
+  <desc id="d">Kisi lima kali lima petak dilihat dari atas. Robot berdiri di petak pojok kanan bawah menghadap ke atas, ditandai mulai. Satu balok abu-abu menghalangi petak di tengah pada kolom paling kanan. Peti harta ada di petak ketiga dari kiri pada baris kedua dari bawah. Di bawah kisi ada empat kotak kosong putus-putus berpanah dan lima kartu untuk ditempel: tiga maju, satu belok kiri, dan satu ulang x2.</desc>
+  <rect width="600" height="540" fill="#ffffff"/>
+  <g fill="#ffffff" stroke="#333333" stroke-width="3">
+    <rect x="30" y="12" width="56" height="56"/>
+    <rect x="86" y="12" width="56" height="56"/>
+    <rect x="142" y="12" width="56" height="56"/>
+    <rect x="198" y="12" width="56" height="56"/>
+    <rect x="254" y="12" width="56" height="56"/>
+    <rect x="30" y="68" width="56" height="56"/>
+    <rect x="86" y="68" width="56" height="56"/>
+    <rect x="142" y="68" width="56" height="56"/>
+    <rect x="198" y="68" width="56" height="56"/>
+    <rect x="254" y="68" width="56" height="56"/>
+    <rect x="30" y="124" width="56" height="56"/>
+    <rect x="86" y="124" width="56" height="56"/>
+    <rect x="142" y="124" width="56" height="56"/>
+    <rect x="198" y="124" width="56" height="56"/>
+    <rect x="254" y="124" width="56" height="56" fill="#b0bec5"/>
+    <rect x="30" y="180" width="56" height="56"/>
+    <rect x="86" y="180" width="56" height="56"/>
+    <rect x="142" y="180" width="56" height="56"/>
+    <rect x="198" y="180" width="56" height="56"/>
+    <rect x="254" y="180" width="56" height="56"/>
+    <rect x="30" y="236" width="56" height="56"/>
+    <rect x="86" y="236" width="56" height="56"/>
+    <rect x="142" y="236" width="56" height="56"/>
+    <rect x="198" y="236" width="56" height="56"/>
+    <rect x="254" y="236" width="56" height="56"/>
+  </g>
+  <path d="M262 152 H302 M262 140 H302 M262 164 H302" stroke="#333333" stroke-width="3" stroke-linecap="round"/>
+  <g transform="translate(170,208)">
+    <rect x="-20" y="-14" width="40" height="28" rx="4" fill="#ffb74d" stroke="#333333" stroke-width="4"/>
+    <path d="M-20 -2 H20" stroke="#333333" stroke-width="3"/>
+    <rect x="-4" y="-6" width="8" height="10" fill="#fdd835" stroke="#333333" stroke-width="2"/>
+  </g>
+  <g transform="translate(282,264)">
+    <rect x="-20" y="-20" width="40" height="40" rx="8" fill="#b3e5fc" stroke="#333333" stroke-width="4"/>
+    <path d="M-12 -2 L0 -18 L12 -2 Z" fill="#333333"/>
+    <circle cx="-8" cy="10" r="4" fill="#333333"/><circle cx="8" cy="10" r="4" fill="#333333"/>
+  </g>
+  <text x="322" y="272" font-family="sans-serif" font-size="20" text-anchor="start" fill="#333333">mulai</text>
+  <text x="322" y="158" font-family="sans-serif" font-size="20" text-anchor="start" fill="#333333">balok</text>
+  <text x="170" y="256" font-family="sans-serif" font-size="18" text-anchor="middle" fill="#333333">harta</text>
+  <g fill="none" stroke="#333333" stroke-width="4" stroke-dasharray="10 8">
+    <rect x="30" y="316" width="100" height="56" rx="10"/>
+    <rect x="166" y="316" width="100" height="56" rx="10"/>
+    <rect x="302" y="316" width="100" height="56" rx="10"/>
+    <rect x="438" y="316" width="100" height="56" rx="10"/>
+  </g>
+  <g fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M134 344 H162 M150 332 L162 344 L150 356"/>
+    <path d="M270 344 H298 M286 332 L298 344 L286 356"/>
+    <path d="M406 344 H434 M422 332 L434 344 L422 356"/>
+  </g>
+  <line x1="20" y1="394" x2="580" y2="394" stroke="#999999" stroke-width="2" stroke-dasharray="4 6"/>
+  <text x="300" y="418" font-family="sans-serif" font-size="18" text-anchor="middle" fill="#333333">kartu untuk ditempel</text>
+  <g fill="#fffde7" stroke="#333333" stroke-width="3">
+    <rect x="20" y="430" width="96" height="82" rx="10"/>
+    <rect x="130" y="430" width="96" height="82" rx="10"/>
+    <rect x="240" y="430" width="96" height="82" rx="10"/>
+    <rect x="350" y="430" width="96" height="82" rx="10"/>
+    <rect x="460" y="430" width="96" height="82" rx="10"/>
+  </g>
+  <g fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M68 478 V440 M58 450 L68 438 L78 450"/>
+    <path d="M178 478 V440 M168 450 L178 438 L188 450"/>
+    <path d="M288 478 V440 M278 450 L288 438 L298 450"/>
+    <path d="M410 478 V456 Q410 448 402 448 H384 M392 438 L382 448 L392 458"/>
+    <path d="M488 460 A16 16 0 1 1 498 482"/>
+    <path d="M478 462 L488 458 L492 470"/>
+  </g>
+  <g font-family="sans-serif" fill="#333333" text-anchor="middle">
+    <text x="68" y="504" font-size="18">maju</text>
+    <text x="178" y="504" font-size="18">maju</text>
+    <text x="288" y="504" font-size="18">maju</text>
+    <text x="398" y="504" font-size="16">belok kiri</text>
+    <text x="530" y="474" font-size="30">x2</text>
+    <text x="518" y="504" font-size="18">ulang</text>
+  </g>
+</svg>
