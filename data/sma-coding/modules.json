@@ -4897,6 +4897,219 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xii1-m14.md"
+    },
+    {
+      "id": "e-xii1-m8",
+      "title": "Derau dan dekoherensi",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M8"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xi2-m14"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Platform: View backend details",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/qpu-information"
+        },
+        {
+          "title": "IBM Quantum Platform: Exact and noisy simulation with Qiskit Aer primitives",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/simulate-with-qiskit-aer"
+        },
+        {
+          "title": "IBM Quantum Platform: Overview of noise management techniques",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/error-mitigation-and-suppression-techniques"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m8.md"
+    },
+    {
+      "id": "e-xii1-m9",
+      "title": "Pustaka Qiskit dan Python I (demonstrasi)",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M9"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Platform: Bit-ordering in the Qiskit SDK",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/bit-ordering"
+        },
+        {
+          "title": "IBM Quantum Platform: Introduction to primitives",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/primitives"
+        },
+        {
+          "title": "IBM Quantum Platform: Install Qiskit",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/install-qiskit"
+        },
+        {
+          "title": "IBM Quantum Platform: Construct circuits",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/construct-circuits"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m9.md"
+    },
+    {
+      "id": "e-xii1-m10",
+      "title": "Pustaka Qiskit dan Python II",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M10"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Platform: Grover's algorithm (tutorial)",
+          "url": "https://quantum.cloud.ibm.com/docs/en/tutorials/grovers-algorithm"
+        },
+        {
+          "title": "IBM Quantum Platform: Bit-ordering in the Qiskit SDK",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/bit-ordering"
+        },
+        {
+          "title": "IBM Quantum Platform: Construct circuits",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/construct-circuits"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m10.md"
+    },
+    {
+      "id": "e-xii1-m11",
+      "title": "Peran cloud quantum",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M11"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Platform: Plans overview",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/plans-overview"
+        },
+        {
+          "title": "IBM Quantum Platform: Fair-share scheduler",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/fair-share-scheduler"
+        },
+        {
+          "title": "IBM Quantum Platform: Monitor or cancel a job",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/monitor-job"
+        },
+        {
+          "title": "IBM Quantum Platform: Introduction to transpilation",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/transpile"
+        },
+        {
+          "title": "IBM Quantum Platform: View backend details",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/qpu-information"
+        },
+        {
+          "title": "IBM Quantum: Products and services (harga paket)",
+          "url": "https://www.ibm.com/quantum/pricing"
+        },
+        {
+          "title": "IBM Quantum Platform: FAQ",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/faq"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m11.md"
+    },
+    {
+      "id": "e-xii1-m12",
+      "title": "Demonstrasi cloud quantum oleh guru",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M12"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Platform: Run your first circuit on hardware",
+          "url": "https://quantum.cloud.ibm.com/docs/en/tutorials/hello-world"
+        },
+        {
+          "title": "IBM Quantum Platform: Sampler examples",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/sampler-examples"
+        },
+        {
+          "title": "IBM Quantum Platform: Monitor or cancel a job",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/monitor-job"
+        },
+        {
+          "title": "IBM Quantum Platform: View backend details",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/qpu-information"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m12.md"
+    },
+    {
+      "id": "e-xii1-m13",
+      "title": "Proyek mini (kelas XII semester 1)",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M13"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Platform: Exact and noisy simulation with Qiskit Aer primitives",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/simulate-with-qiskit-aer"
+        },
+        {
+          "title": "IBM Quantum Platform: View backend details",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/qpu-information"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m13.md"
+    },
+    {
+      "id": "e-xii1-m14",
+      "title": "Asesmen dan refleksi (kelas XII semester 1)",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M14"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Platform: Plans overview",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/plans-overview"
+        },
+        {
+          "title": "IBM Quantum: Products and services (harga paket)",
+          "url": "https://www.ibm.com/quantum/pricing"
+        },
+        {
+          "title": "NIST: Post-Quantum Cryptography (proyek)",
+          "url": "https://csrc.nist.gov/projects/post-quantum-cryptography"
+        },
+        {
+          "title": "IBM Quantum Platform: Exact and noisy simulation with Qiskit Aer primitives",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/simulate-with-qiskit-aer"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m14.md"
     }
   ]
 }
