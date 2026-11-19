@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 520" width="600" height="520" role="img" aria-labelledby="t d">
+  <title id="t">Dua jalan, mana lebih pendek?</title>
+  <desc id="d">Kisi lima kali lima petak dilihat dari atas. Robot di petak pojok kanan bawah menghadap ke atas, ditandai mulai. Bendera tujuan di petak keempat dari kiri pada baris ketiga dari atas. Di bawah kisi ada dua program kartu ke bendera yang sama. Program 1 punya empat kartu: maju, maju, belok kiri, maju. Program 2 punya tujuh kartu: maju, maju, maju, belok kiri, maju, belok kiri, maju.</desc>
+  <rect width="600" height="520" fill="#ffffff"/>
+  <rect x="20" y="12" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="76" y="12" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="132" y="12" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="188" y="12" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="244" y="12" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="20" y="68" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="76" y="68" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="132" y="68" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="188" y="68" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="244" y="68" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="20" y="124" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="76" y="124" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="132" y="124" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="188" y="124" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="244" y="124" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="20" y="180" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="76" y="180" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="132" y="180" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="188" y="180" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="244" y="180" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="20" y="236" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="76" y="236" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="132" y="236" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="188" y="236" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="244" y="236" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <path d="M216 174 V130" stroke="#333333" stroke-width="5" stroke-linecap="round"/>
+  <path d="M216 130 L238 140 L216 150 Z" fill="#e53935" stroke="#333333" stroke-width="3" stroke-linejoin="round"/>
+  <g transform="translate(272,264)">
+    <rect x="-20" y="-20" width="40" height="40" rx="8" fill="#b3e5fc" stroke="#333333" stroke-width="4"/>
+    <path d="M-12 -2 L0 -18 L12 -2 Z" fill="#333333"/>
+    <circle cx="-8" cy="10" r="4" fill="#333333"/><circle cx="8" cy="10" r="4" fill="#333333"/>
+  </g>
+  <text x="312" y="270" font-family="sans-serif" font-size="20" text-anchor="start" fill="#333333">mulai</text>
+  <text x="30" y="332" font-family="sans-serif" font-size="20" text-anchor="start" fill="#333333">program 1</text>
+  <rect x="30" y="342" width="58" height="50" rx="8" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <path d="M59 382 V352 M50 362 L59 351 L68 362" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="96" y="342" width="58" height="50" rx="8" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <path d="M125 382 V352 M116 362 L125 351 L134 362" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="162" y="342" width="58" height="50" rx="8" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <path d="M199 382 V366 Q199 358 191 358 H177 M183 349 L174 358 L183 367" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="228" y="342" width="58" height="50" rx="8" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <path d="M257 382 V352 M248 362 L257 351 L266 362" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="30" y="432" font-family="sans-serif" font-size="20" text-anchor="start" fill="#333333">program 2</text>
+  <rect x="30" y="442" width="58" height="50" rx="8" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <path d="M59 482 V452 M50 462 L59 451 L68 462" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="96" y="442" width="58" height="50" rx="8" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <path d="M125 482 V452 M116 462 L125 451 L134 462" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="162" y="442" width="58" height="50" rx="8" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <path d="M191 482 V452 M182 462 L191 451 L200 462" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="228" y="442" width="58" height="50" rx="8" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <path d="M265 482 V466 Q265 458 257 458 H243 M249 449 L240 458 L249 467" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="294" y="442" width="58" height="50" rx="8" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <path d="M323 482 V452 M314 462 L323 451 L332 462" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="360" y="442" width="58" height="50" rx="8" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <path d="M397 482 V466 Q397 458 389 458 H375 M381 449 L372 458 L381 467" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="426" y="442" width="58" height="50" rx="8" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <path d="M455 482 V452 M446 462 L455 451 L464 462" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
