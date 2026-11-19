@@ -579,6 +579,147 @@
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd5-2-m14.md",
       "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m14.md"
+    },
+    {
+      "id": "sd6-1-m1",
+      "title": "Pemanfaatan Algoritma Sederhana",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        }
+      ],
+      "weekCodes": ["SD6-1-M1"],
+      "cpItems": ["C-BK-b", "C-BK-c"],
+      "gradeLevels": [6],
+      "prerequisites": ["SD5-1-M3", "SD5-1-M6"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd6-1-m1.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m1.md"
+    },
+    {
+      "id": "sd6-1-m2",
+      "title": "Pengenalan Representasi Simbol dalam Instruksi",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        }
+      ],
+      "weekCodes": ["SD6-1-M2"],
+      "cpItems": ["C-BK-c"],
+      "gradeLevels": [6],
+      "prerequisites": ["SD6-1-M1", "SD5-1-M6"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd6-1-m2.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m2.md"
+    },
+    {
+      "id": "sd6-1-m3",
+      "title": "Eksperimen dengan Instruksi Logis",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        }
+      ],
+      "weekCodes": ["SD6-1-M3"],
+      "cpItems": ["C-BK-c"],
+      "gradeLevels": [6],
+      "prerequisites": ["SD6-1-M2"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd6-1-m3.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m3.md"
+    },
+    {
+      "id": "sd6-1-m4",
+      "title": "Penguatan: Menguji dan memperbaiki instruksi",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        }
+      ],
+      "weekCodes": ["SD6-1-M4"],
+      "cpItems": [],
+      "gradeLevels": [6],
+      "prerequisites": ["SD6-1-M3"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd6-1-m4.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m4.md"
+    },
+    {
+      "id": "sd6-1-m5",
+      "title": "Pemanfaatan Internet Secara Aman dan Produktif",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        },
+        {
+          "title": "UU 27/2022 tentang Pelindungan Data Pribadi",
+          "url": "https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022"
+        }
+      ],
+      "weekCodes": ["SD6-1-M5"],
+      "cpItems": ["C-LD-c", "C-LD-d"],
+      "gradeLevels": [6],
+      "prerequisites": ["SD5-1-M9", "SD5-1-M10"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd6-1-m5.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m5.md"
+    },
+    {
+      "id": "sd6-1-m6",
+      "title": "Dampak Teknologi Digital",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        }
+      ],
+      "weekCodes": ["SD6-1-M6"],
+      "cpItems": ["C-LD-a"],
+      "gradeLevels": [6],
+      "prerequisites": ["SD5-1-M7"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd6-1-m6.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m6.md"
+    },
+    {
+      "id": "sd6-1-m7",
+      "title": "Produksi dan Diseminasi Konten Digital Sederhana",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        },
+        {
+          "title": "UU 27/2022 tentang Pelindungan Data Pribadi",
+          "url": "https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022"
+        }
+      ],
+      "weekCodes": ["SD6-1-M7"],
+      "cpItems": ["C-LD-e"],
+      "gradeLevels": [6],
+      "prerequisites": ["SD6-1-M5", "SD5-1-M9"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd6-1-m7.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m7.md"
     }
   ]
 }

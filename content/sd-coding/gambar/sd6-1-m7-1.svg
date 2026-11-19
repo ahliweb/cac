@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 380" width="480" height="380" role="img" aria-labelledby="t d">
+  <title id="t">Lembar informasi dengan judul, tiga kalimat, dan gambar tanaman</title>
+  <desc id="d">Lembar dengan kotak judul Menyiram Tanaman Kelas di atas, tiga kalimat pendek, dan satu gambar tanaman dalam pot yang disiram dari gayung.</desc>
+  <rect width="480" height="380" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a5d9f"/>
+    </marker>
+    <marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#b86a00"/>
+    </marker>
+  </defs>
+  <rect x="60" y="14" width="360" height="352" fill="#ffffff" stroke="#888888" stroke-width="2"/>
+  <rect x="80" y="30" width="320" height="44" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="240" y="59" font-family="sans-serif" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">Menyiram Tanaman Kelas</text>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <text x="84" y="104">Siram pagi hari.</text>
+    <text x="84" y="128">Tuang air pelan-pelan.</text>
+    <text x="84" y="152">Kembalikan gayung ke tempatnya.</text>
+  </g>
+  <rect x="80" y="170" width="320" height="180" fill="#f7fbf4" stroke="#888888" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <polygon points="215,300 275,300 268,340 222,340" fill="#c97b3a" stroke="#7a4616" stroke-width="2"/>
+  <path d="M245,300 L245,240" stroke="#2e7d32" stroke-width="4" fill="none"/>
+  <path d="M245,265 C220,262 212,245 214,232 C232,236 244,248 245,265 Z" fill="#7cb342" stroke="#2e7d32" stroke-width="2"/>
+  <path d="M245,250 C270,247 280,230 276,218 C258,222 246,234 245,250 Z" fill="#7cb342" stroke="#2e7d32" stroke-width="2"/>
+  <path d="M320,200 L370,200 L362,236 L328,236 Z" fill="#90caf9" stroke="#1565c0" stroke-width="2"/>
+  <path d="M320,206 L296,196" stroke="#1565c0" stroke-width="3" fill="none"/>
+  <g fill="#42a5f5">
+    <path d="M300,214 q4,8 0,12 q-4,-4 0,-12 z"/>
+    <path d="M290,232 q4,8 0,12 q-4,-4 0,-12 z"/>
+    <path d="M280,250 q4,8 0,12 q-4,-4 0,-12 z"/>
+  </g>
+</svg>

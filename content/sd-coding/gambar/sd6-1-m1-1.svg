@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 262" width="520" height="262" role="img" aria-labelledby="t d">
+  <title id="t">Tabel giliran piket tiga kelompok selama tiga hari</title>
+  <desc id="d">Tabel tiga baris dan tiga kolom. Baris Mawar, Melati, Kenanga; kolom Senin, Selasa, Rabu. Mawar mengerjakan sapu, papan, tanaman. Tiap hari tiap kelompok pindah satu tugas ke bawah.</desc>
+  <rect width="520" height="262" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a5d9f"/>
+    </marker>
+    <marker id="o" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#b86a00"/>
+    </marker>
+  </defs>
+  <g font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">
+    <text x="170" y="52" font-weight="bold">Senin</text>
+    <text x="280" y="52" font-weight="bold">Selasa</text>
+    <text x="390" y="52" font-weight="bold">Rabu</text>
+    <text x="60" y="85" font-weight="bold">Mawar</text>
+    <text x="60" y="135" font-weight="bold">Melati</text>
+    <text x="60" y="185" font-weight="bold">Kenanga</text>
+  </g>
+  <rect x="120" y="62" width="100" height="36" fill="#e8f1fb" stroke="#888888" stroke-width="1.5"/>
+  <text x="170" y="85" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">sapu</text>
+  <rect x="230" y="62" width="100" height="36" fill="#e8f1fb" stroke="#888888" stroke-width="1.5"/>
+  <text x="280" y="85" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">papan</text>
+  <rect x="340" y="62" width="100" height="36" fill="#e8f1fb" stroke="#888888" stroke-width="1.5"/>
+  <text x="390" y="85" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">tanaman</text>
+  <rect x="120" y="112" width="100" height="36" fill="#ffffff" stroke="#888888" stroke-width="1.5"/>
+  <text x="170" y="135" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">papan</text>
+  <rect x="230" y="112" width="100" height="36" fill="#ffffff" stroke="#888888" stroke-width="1.5"/>
+  <text x="280" y="135" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">tanaman</text>
+  <rect x="340" y="112" width="100" height="36" fill="#ffffff" stroke="#888888" stroke-width="1.5"/>
+  <text x="390" y="135" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">sapu</text>
+  <rect x="120" y="162" width="100" height="36" fill="#ffffff" stroke="#888888" stroke-width="1.5"/>
+  <text x="170" y="185" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">tanaman</text>
+  <rect x="230" y="162" width="100" height="36" fill="#ffffff" stroke="#888888" stroke-width="1.5"/>
+  <text x="280" y="185" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">sapu</text>
+  <rect x="340" y="162" width="100" height="36" fill="#ffffff" stroke="#888888" stroke-width="1.5"/>
+  <text x="390" y="185" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">papan</text>
+  <text x="280" y="228" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Tiap hari tiap kelompok pindah satu tugas ke bawah.</text>
+  <text x="280" y="248" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">Baris Mawar diberi warna: sapu, papan, tanaman.</text>
+</svg>
