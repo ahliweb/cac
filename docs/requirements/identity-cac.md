@@ -4,7 +4,7 @@
 - Version: v1.0.1
 - Last updated: 2026-11-19
 - Changeset: Menambahkan kontrak identitas dan migrasi terukur yang tidak mengubah requirement kurikulum.
-- Status: bukti F1 tersedia dan Gate 9 diusulkan di [tinjauan Gate 9](../migrations/2026-11-cac-gate9-review.md) (menunggu keputusan pemilik); implementasi belum dimulai.
+- Status: bukti F1 tersedia; Gate 9 PASSED (keputusan pemilik 2026-11-20, [tinjauan Gate 9](../migrations/2026-11-cac-gate9-review.md)); implementasi F2 boleh dimulai, rename tetap menunggu Gate 15.
 - Catatan verifikasi: berkas ini belum terdaftar di `register.md` dan `traceability.md`, dan pola ID `check:requirements` (`FR|TR|OR|ER|GR`) tidak mencakup `IDENTITY-CAC-*`; bukti per kebutuhan dilacak manual di tinjauan Gate 9, bagian 4.
 
 | ID | Kebutuhan (shall) | Artefak | Acceptance evidence |

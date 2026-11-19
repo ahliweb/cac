@@ -1,9 +1,9 @@
 # Tinjauan Silang dan Usulan Gate 9 (Kesiapan Implementasi F2) Migrasi OSN ke CaC
 
 ## Metadata
-- Version: v1.0.0
-- Last updated: 2026-11-19
-- Status: **USULAN – menunggu keputusan pemilik.** Dokumen ini bukan keputusan. Gate 9 belum dinyatakan lulus maupun tidak lulus; rename repository belum dilakukan dan tidak boleh dilakukan berdasarkan dokumen ini.
+- Version: v1.1.0
+- Last updated: 2026-11-20
+- Status: **Gate 9 PASSED, diputuskan pemilik 2026-11-20** lewat dialog pilihan (opsi "PASSED (Disarankan)"), hanya untuk kesiapan implementasi F2. Rename repository belum dilakukan dan tetap menunggu Gate 15 serta izin eksekusi terpisah.
 - Issue: #156 (turunan epik #150, fase F1); mendukung seluruh IDENTITY-CAC-001..010
 - Changeset: Mencatat tinjauan silang ADR-0009, kebutuhan, roadmap, matriks dampak, runbook, dan empat audit F1; applicability UX/ERD/RBAC/API; tabel bukti per kebutuhan; usulan verdict Gate 9; dan konsolidasi butir keputusan pemilik menjadi empat pertanyaan dialog. Tidak mengubah kode, paket, CLI, data, atau setelan GitHub.
 - Konteks: [ADR-0009](../architecture/adr/0009-cac-platform-identity.md), [IDENTITY-CAC](../requirements/identity-cac.md), [roadmap](../roadmap.md), [matriks dampak](2026-11-cac-impact-matrix.md), [rencana migrasi](2026-11-osn-to-cac.md)
@@ -14,9 +14,9 @@
 | --- | --- |
 | Verdict yang diusulkan | PASSED (hanya untuk kesiapan implementasi F2), lihat bagian 5 |
 | Pengusul | Agent pelaksana, tanggal usulan 2026-11-19 (diverifikasi orchestrator) |
-| Keputusan pemilik | menunggu pemilik |
-| Reviewer | menunggu pemilik |
-| Tanggal keputusan | menunggu pemilik |
+| Keputusan pemilik | **PASSED** (dialog pilihan 2026-11-20, opsi disarankan) |
+| Reviewer | Pemilik repositori (keputusan lewat dialog orchestrator); bukti diverifikasi orchestrator |
+| Tanggal keputusan | 2026-11-20 |
 
 Gate 9 di dokumen ini berarti **kesiapan implementasi F2** (Definition of Ready sebelum refactor kompatibilitas `cac`/`osn`), bukan izin rename. Gate 15 dan izin eksekusi rename tidak dibahas di sini selain sebagai prasyarat yang tetap tertahan.
 
@@ -47,7 +47,7 @@ Tingkat: **blocking** bila mencegah F2 dimulai dengan benar (Gate 9) atau membua
 | --- | --- | --- | --- | --- | --- |
 | X-01 | Matriks dampak (baseline): `version=2.3.0 pada snapshot audit` | `package.json` 2.5.0; inventaris C-06 dan kontrak CLI memakai 2.5.0 | Non-blocking | Mengganti dengan 2.5.0 dan menandai 2.3.0 basi di matriks (v1.0.1) | **Diperbaiki** |
 | X-02 | AGENTS.md: `check:requirements` memverifikasi register dan traceability "consistent and exhaustive"; `identity-cac.md` memuat 10 kebutuhan | `register.md` dan `traceability.md` tidak merujuk `identity-cac.md`; pola ID di `scripts/check-requirements.ts` hanya `^(FR\|TR\|OR\|ER\|GR)-\d{2}$`, sehingga `IDENTITY-CAC-001` tidak bisa didaftarkan tanpa mengubah skrip | Non-blocking (bukti dilacak manual di bagian 4); risiko drift tak terdeteksi mesin | Sebagian: catatan verifikasi ditambahkan ke `identity-cac.md` (v1.0.1). Usulan: issue F2/05 memperluas skrip dengan pola kedua (`IDENTITY-CAC-\d{3}`) dan tes, atau memutuskan secara tertulis bahwa berkas ini tetap ditinjau manual. Perubahan skrip di luar scope #156 | **Sebagian**; usulan ke orchestrator |
-| X-03 | ADR-0009, Context: "IDENTITY-CAC-001..009" | `identity-cac.md`, epik #150, #156: 001..010 (CAC-010 rollout dan rollback) | Non-blocking (salah ketik; keputusan ADR tidak terpengaruh) | Ubah teks ADR menjadi 001..010 beserta entri changelog ADR; ADR di luar daftar yang boleh diubah di issue ini | **Diusulkan** |
+| X-03 | ADR-0009, Context: "IDENTITY-CAC-001..009" | `identity-cac.md`, epik #150, #156: 001..010 (CAC-010 rollout dan rollback) | Non-blocking (salah ketik; keputusan ADR tidak terpengaruh) | Ubah teks ADR menjadi 001..010 beserta entri changelog ADR; ADR di luar daftar yang boleh diubah di issue ini | **Diperbaiki** orchestrator di PR #156 (ADR-0009 v1.0.1) |
 | X-04 | Matriks dampak, open question: "Apakah branch main dilindungi?" (belum dijawab); AGENTS.md aturan 10 mengandalkan check `SUCCESS` sebelum merge | Inventaris N-13 dan keamanan R-01: HTTP 404, 0 ruleset, satu admin; gerbang hanya ditegakkan disiplin proses | Non-blocking untuk F2 (keadaan ini berlaku untuk semua PR sejak awal); tinggi untuk Gate 15 (G-04) | Matriks: pertanyaan dijawab dan dipetakan ke N-13, R-01, P-01 (v1.0.1). Keputusan aktivasi: pertanyaan dialog 3 | **Diperbaiki** (dokumen); keputusan menunggu pemilik |
 | X-05 | Runbook F3: "Latih runbook pemulihan di lingkungan aman / simulasi dokumentasi" | Keamanan G-09 dan bagian 4.3: rehearsal H-01..H-07 di repo uji sungguhan, termasuk rename-balik; simulasi lokal tidak membuktikan perilaku GitHub | Non-blocking untuk Gate 9; **blocking untuk Gate 15** (G-09) | Runbook disetel di #157: rehearsal wajib di repo uji, simulasi dokumentasi tidak cukup | **Diusulkan** (#157) |
 | X-06 | Runbook bagian 3 F1 dan 9 hanya merujuk #152 dan #153; kontrak CLI bagian 8 meminta matriks dampak dan runbook menautkan dokumennya | Matriks IMP-02, IMP-03, IMP-12 tanpa tautan bukti; runbook tanpa tautan ke #154, #155, #156 | Non-blocking | Tautan ke inventaris, kontrak CLI, dan keamanan ditambahkan di tabel open questions matriks (v1.0.1). Runbook ditautkan di #157 agar tidak bentrok dengan penulisan ulangnya | **Sebagian**; sisanya #157 |
@@ -57,7 +57,7 @@ Tingkat: **blocking** bila mencegah F2 dimulai dengan benar (Gate 9) atau membua
 | X-10 | Inventaris C-01: 773 kemunculan `osn <perintah>` di 134 berkas (docs 435; src, tests, scripts 327) | Kontrak CLI 2.5: 446 kemunculan di 45 berkas dokumen | Non-blocking (lingkup dan pola hitung berbeda; keduanya mengakui hasil ulang perintah yang berlaku) | Tidak direkonsiliasi; F2/03 memakai hasil ulang `git grep` saat itu, bukan angka dokumen | **Dicatat** |
 | X-11 | Matriks IMP-02: bukti "snapshot exit 0/1/2, stdout/stderr ... untuk kedua bin"; runbook: "fungsi setara" | Kontrak CLI K4: prefiks stderr/stdout teks memang berbeda (`cac:` vs `osn:`), JSON dan exit code identik; CLI-C-10: `osn` harus sama persis dengan baseline | Non-blocking (kesetaraan = semantik: exit code dan JSON; teks berawalan nama pemanggil) | Dinyatakan di tes F2/04: snapshot per bin, kesetaraan JSON byte-identik dan exit code, teks bermerek dibandingkan per nama | **Diusulkan** (F2/04) |
 | X-12 | IDENTITY-CAC-010: rollout SHALL punya "observabilitas kegagalan"; evidence "monitoring summary" | Keamanan 5.5 hanya memuat stop condition; runbook F4 "Pantau kejadian ..." tanpa templat log atau ringkasan pemantauan | Non-blocking (bukti baru wajib pada F3/F4); Gate 15 | Templat migration log dan ringkasan pemantauan dikerjakan #157 | **Diusulkan** (#157) |
-| X-13 | AGENTS.md baris `data/<id>`: `tk-coding` "v1.0.2" (baris lain di berkas yang sama: 1.0.3); `docs/programs/README.md`: `sma-coding` `syllabusVersion` 1.4.0 | `data/programs.json` dan invariants: `sma-coding` 1.4.1, `tk-coding` 1.0.3 | Non-blocking, **di luar scope** (bukan dokumen migrasi) dan tidak memengaruhi Gate 9 | Dilaporkan ke orchestrator untuk issue docs terpisah; tidak disentuh | **Dilaporkan** |
+| X-13 | AGENTS.md baris `data/<id>`: `tk-coding` "v1.0.2" (baris lain di berkas yang sama: 1.0.3); `docs/programs/README.md`: `sma-coding` `syllabusVersion` 1.4.0 | `data/programs.json` dan invariants: `sma-coding` 1.4.1, `tk-coding` 1.0.3 | Non-blocking, **di luar scope** (bukan dokumen migrasi) dan tidak memengaruhi Gate 9 | Dilaporkan ke orchestrator untuk issue docs terpisah; tidak disentuh | **Diperbaiki** orchestrator: AGENTS.md di PR #156, `docs/programs/README.md` di PR #249 (#237) |
 
 Konsistensi yang diperiksa dan **sesuai** (tidak ada discrepancy):
 - ADR-0009 butir 1-8, runbook bagian 1-3, roadmap F1-F4, dan IDENTITY-CAC sepakat pada: slug `ahliweb/cac`, rename in-place, program `osn` tidak diganti, CLI `cac` canonical dengan alias `osn`, SemVer terpisah dari `syllabusVersion`, Gate 9 sebelum refactor dan Gate 15 sebelum rename.
@@ -98,7 +98,7 @@ Kriteria #156: setiap kebutuhan punya acceptance evidence **atau owner**. "Bukti
 Ringkasan: 10 dari 10 kebutuhan memiliki bukti kesiapan dan owner; 0 dinyatakan terverifikasi (memang belum ada implementasi).
 
 ## 5. Usulan Gate 9
-**USULAN: PASSED, untuk kesiapan implementasi F2 saja. Menunggu keputusan pemilik.** Bukan keputusan; pemilik memutuskan lewat dialog (bagian 6, pertanyaan 1).
+**USULAN: PASSED, untuk kesiapan implementasi F2 saja.** Pemilik memutuskan **PASSED** pada 2026-11-20 (bagian 6, pertanyaan 1). Syarat S-1 terpenuhi oleh jawaban pertanyaan 2.
 
 ### 5.1 Alasan
 1. **Tidak ada discrepancy blocking** antara ADR, baseline, kontrak CLI, dan rollback (bagian 2: 0 blocking, 13 non-blocking). Kriteria kedua #156 terpenuhi.
@@ -176,6 +176,15 @@ Konsolidasi seluruh butir keputusan menjadi empat pertanyaan; opsi pertama di ti
 | 2 | Tanpa rename-balik | Hanya recovery maju; risiko R-11 hilang, tetapi tidak ada jalan mundur bila integrasi inti tak bisa dipindah. Rehearsal H-05 gugur; repo uji untuk H-01..H-04, H-06, H-07 dan butir P-04 sampai P-06 tetap seperti opsi 1 |
 | 3 | Tunda ke F3 | Tidak diputuskan sekarang; dibawa saat issue F3/01 dibuat. Gate 9 tidak terpengaruh, tetapi lead time repo uji bertambah dan G-12 tetap terbuka |
 
+**Jawaban pemilik (dialog pilihan, 2026-11-20).** Hanya opsi yang dipilih pemilik yang dicatat:
+
+| Pertanyaan | Opsi dipilih | Akibat |
+| --- | --- | --- |
+| 1. Gate 9 | PASSED (Disarankan) | Issue F2/01..06 boleh dibuat dan dikerjakan sebagai PR atomik; rename, Gate 15, dan izin eksekusi tetap tertahan. |
+| 2. Paket F2 | Terima rekomendasi (Disarankan) | K1 dua entri tipis `cac` dan `osn` ke satu `runCli`; K2 tanpa peringatan runtime; K3 `osn` dihapus hanya di rilis MAJOR, paling cepat 6 bulan setelah pengumuman dan tanpa consumer aktif; K4 prefiks `osn:` tetap bagi pemanggil `osn`; K5 judul Markdown artefak tidak berubah; K6 nama paket `curriculum-as-code` di F2 dalam satu PR atomik; K7 wording help `cac` diajukan di PR F2. Rilis minor. |
+| 3. Ruleset `main` | Setelah diuji (Disarankan) | Ruleset diuji di repo uji lalu diaktifkan **oleh pemilik** sebelum freeze F3 (check `Quality` wajib, larang force-push dan hapus branch); agent tidak mengubah setelan GitHub. |
+| 4. Aturan F3 | Terima rekomendasi (Disarankan) | Jendela rename-balik 24 jam; rename hanya saat pemilik tersedia penuh; pemilik sendiri membuat dan menghapus repo uji untuk rehearsal H-01..H-07; dilarang membuat repo `ahliweb/osn` selama masa alias. |
+
 ## 7. Butir ditunda
 Tidak masuk dialog karena bukan keputusan pemilik saat ini, belum waktunya, atau bukan wewenang pemilik.
 
@@ -197,5 +206,8 @@ Tidak masuk dialog karena bukan keputusan pemilik saat ini, belum waktunya, atau
 - [releasing.md](../development/releasing.md); [AGENTS.md](../../AGENTS.md) (verifikasi dan aturan koordinasi).
 
 ## Changelog
+### 2026-11-20 - v1.1.0
+- Mencatat keputusan pemilik lewat dialog pilihan: Gate 9 PASSED (kesiapan F2 saja), paket F2 sesuai rekomendasi, ruleset diaktifkan setelah diuji, aturan F3 sesuai rekomendasi. X-03 dan X-13 diperbaiki orchestrator.
+
 ### 2026-11-19 - v1.0.0
 - Dokumen pertama (issue #156): metode dan pengukuran ulang baseline, 13 discrepancy (0 blocking), applicability UX/ERD/RBAC/API, tabel bukti IDENTITY-CAC-001..010, usulan Gate 9 PASSED (menunggu keputusan pemilik), empat pertanyaan dialog, dan butir yang ditunda.
