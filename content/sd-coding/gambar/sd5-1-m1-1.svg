@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 260" width="480" height="260" role="img" aria-labelledby="t d">
+  <title id="t">Tiga rak berisi empat buku</title>
+  <desc id="d">Tiga rak buku, masing-masing berisi empat buku. Di atasnya tertulis 12 buku dan 3 rak sebagai yang diketahui, dan tanda tanya sebagai yang diminta.</desc>
+  <rect x="0" y="0" width="480" height="260" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <rect x="20" y="14" width="200" height="56" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="30" y="34" font-weight="bold">DIKETAHUI</text>
+    <text x="30" y="54">12 buku, 3 rak, sama banyak</text>
+    <rect x="260" y="14" width="200" height="56" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+    <text x="270" y="34" font-weight="bold">DIMINTA</text>
+    <text x="270" y="54">Buku di tiap rak = ?</text>
+  </g>
+  <g stroke="#444444" stroke-width="2" fill="none">
+    <rect x="30" y="100" width="130" height="110"/>
+    <rect x="175" y="100" width="130" height="110"/>
+    <rect x="320" y="100" width="130" height="110"/>
+  </g>
+  <g stroke="#555555" stroke-width="1.5">
+    <rect x="38" y="140" width="22" height="64" fill="#e57373"/>
+    <rect x="64" y="140" width="22" height="64" fill="#64b5f6"/>
+    <rect x="90" y="140" width="22" height="64" fill="#81c784"/>
+    <rect x="116" y="140" width="22" height="64" fill="#ffd54f"/>
+    <rect x="183" y="140" width="22" height="64" fill="#e57373"/>
+    <rect x="209" y="140" width="22" height="64" fill="#64b5f6"/>
+    <rect x="235" y="140" width="22" height="64" fill="#81c784"/>
+    <rect x="261" y="140" width="22" height="64" fill="#ffd54f"/>
+    <rect x="328" y="140" width="22" height="64" fill="#e57373"/>
+    <rect x="354" y="140" width="22" height="64" fill="#64b5f6"/>
+    <rect x="380" y="140" width="22" height="64" fill="#81c784"/>
+    <rect x="406" y="140" width="22" height="64" fill="#ffd54f"/>
+  </g>
+  <g font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">
+    <text x="95" y="232">rak 1</text>
+    <text x="240" y="232">rak 2</text>
+    <text x="385" y="232">rak 3</text>
+  </g>
+</svg>

@@ -1,0 +1,141 @@
+{
+  "modules": [
+    {
+      "id": "sd5-1-m1",
+      "title": "Pengenalan Berpikir Komputasional",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        },
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD5-1-M1"],
+      "cpItems": ["C-BK-a"],
+      "gradeLevels": [5],
+      "prerequisites": ["SD4-1-M1"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd5-1-m1.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m1.md"
+    },
+    {
+      "id": "sd5-1-m2",
+      "title": "Konsep Dasar Berpikir Komputasional",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        }
+      ],
+      "weekCodes": ["SD5-1-M2"],
+      "cpItems": ["C-BK-a", "C-BK-b"],
+      "gradeLevels": [5],
+      "prerequisites": ["SD5-1-M1"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd5-1-m2.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m2.md"
+    },
+    {
+      "id": "sd5-1-m3",
+      "title": "Pemecahan Masalah dalam Kehidupan Sehari-hari",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        }
+      ],
+      "weekCodes": ["SD5-1-M3"],
+      "cpItems": ["C-BK-a", "C-BK-b"],
+      "gradeLevels": [5],
+      "prerequisites": ["SD5-1-M1", "SD5-1-M2"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd5-1-m3.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m3.md"
+    },
+    {
+      "id": "sd5-1-m4",
+      "title": "Pemecahan Masalah Multi-langkah",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        }
+      ],
+      "weekCodes": ["SD5-1-M4"],
+      "cpItems": ["C-BK-b"],
+      "gradeLevels": [5],
+      "prerequisites": ["SD5-1-M3"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd5-1-m4.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m4.md"
+    },
+    {
+      "id": "sd5-1-m5",
+      "title": "Proyek Pemecahan Masalah Multi-langkah",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        }
+      ],
+      "weekCodes": ["SD5-1-M5"],
+      "cpItems": ["C-BK-b"],
+      "gradeLevels": [5],
+      "prerequisites": ["SD5-1-M2", "SD5-1-M4"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd5-1-m5.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m5.md"
+    },
+    {
+      "id": "sd5-1-m6",
+      "title": "Menuliskan Urutan Instruksi secara Logis",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        }
+      ],
+      "weekCodes": ["SD5-1-M6"],
+      "cpItems": ["C-BK-c"],
+      "gradeLevels": [5],
+      "prerequisites": ["SD5-1-M2", "SD4-1-M10"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd5-1-m6.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m6.md"
+    },
+    {
+      "id": "sd5-1-m7",
+      "title": "Konsep Dasar Teknologi Digital",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        }
+      ],
+      "weekCodes": ["SD5-1-M7"],
+      "cpItems": ["C-LD-a"],
+      "gradeLevels": [5],
+      "prerequisites": ["SD4-2-M7"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd5-1-m7.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m7.md"
+    }
+  ]
+}
