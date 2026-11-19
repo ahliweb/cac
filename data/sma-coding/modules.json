@@ -4720,6 +4720,183 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii1-m14.md"
+    },
+    {
+      "id": "d-xii1-m8",
+      "title": "Iterasi model II",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M8"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xi2-m14"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: cross_validate",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html"
+        },
+        {
+          "title": "scikit-learn: kesalahan umum dan praktik yang dianjurkan (kebocoran data, keacakan)",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "Pineau dkk. (2020), Improving Reproducibility in Machine Learning Research (bacaan tambahan; bukan sumber isi modul)",
+          "url": "https://arxiv.org/abs/2003.12206"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m8.md"
+    },
+    {
+      "id": "d-xii1-m9",
+      "title": "Ulasan sejawat (kelas XII semester 1)",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M9"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Kapoor dan Narayanan (2022), Leakage and the Reproducibility Crisis in ML-based Science",
+          "url": "https://arxiv.org/abs/2207.07048"
+        },
+        {
+          "title": "scikit-learn: kesalahan umum dan praktik yang dianjurkan (kebocoran data, keacakan)",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m9.md"
+    },
+    {
+      "id": "d-xii1-m10",
+      "title": "Kualitas kode dan keterulangan",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M10"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "NumPy: numpy.random.default_rng",
+          "url": "https://numpy.org/doc/stable/reference/random/generator.html"
+        },
+        {
+          "title": "Python: importlib.metadata",
+          "url": "https://docs.python.org/3/library/importlib.metadata.html"
+        },
+        {
+          "title": "scikit-learn: kesalahan umum dan praktik yang dianjurkan (kebocoran data, keacakan)",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "Pineau dkk. (2020), Improving Reproducibility in Machine Learning Research (bacaan tambahan; bukan sumber isi modul)",
+          "url": "https://arxiv.org/abs/2003.12206"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m10.md"
+    },
+    {
+      "id": "d-xii1-m11",
+      "title": "Penilaian risiko dan etika proyek",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M11"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "NIST AI 100-1: Artificial Intelligence Risk Management Framework (AI RMF 1.0), Januari 2023",
+          "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf"
+        },
+        {
+          "title": "scikit-learn: cross_val_predict",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_val_predict.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m11.md"
+    },
+    {
+      "id": "d-xii1-m12",
+      "title": "Menyajikan hasil",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M12"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Matplotlib: Axes.bar",
+          "url": "https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.bar.html"
+        },
+        {
+          "title": "Matplotlib: Axes.set_ylim",
+          "url": "https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_ylim.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m12.md"
+    },
+    {
+      "id": "d-xii1-m13",
+      "title": "Proyek (kelas XII semester 1)",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M13"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "scikit-learn: cross_validate",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html"
+        },
+        {
+          "title": "scikit-learn: kesalahan umum dan praktik yang dianjurkan (kebocoran data, keacakan)",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m13.md"
+    },
+    {
+      "id": "d-xii1-m14",
+      "title": "Asesmen dan refleksi (kelas XII semester 1)",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M14"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: kesalahan umum dan praktik yang dianjurkan (kebocoran data, keacakan)",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m14.md"
     }
   ]
 }
