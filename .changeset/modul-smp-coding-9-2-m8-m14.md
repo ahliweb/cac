@@ -1,5 +1,0 @@
----
-"kurikulum-informatika": patch
----
-
-Tujuh modul belajar program `smp-coding` (kelas 9, semester 2, minggu 8 sampai 14, penutup SMP: pengantar kecerdasan artifisial dan sensor, mesin belajar dari contoh dan kualitas data, etika AI, jembatan ke SMA dengan membaca kode bahasa lain, pameran produk, portofolio dan refleksi, serta asesmen akhir) ditulis di `content/smp-coding/modules/` dan diindeks di `data/smp-coding/modules.json` berstatus `draf`, belum ditinjau. Contoh Python dijalankan dengan `python3 -I` dan satu contoh C++ (hanya dibaca murid) dikompilasi dan dijalankan, kegiatan berjalan tanpa akun murid dan tanpa AI oleh murid (AI generatif hanya demonstrasi guru), minggu kecerdasan artifisial berupa kegiatan kartu tanpa perangkat, minggu pameran dan portofolio memakai contoh rencana, minggu asesmen berupa kuis mengingat kembali tanpa AI, langkah dokumen yang tidak dijalankan penulis ditandai untuk diperiksa guru, dan butir CP yang dikaitkan hanya yang dipetakan corpus ke minggu itu.

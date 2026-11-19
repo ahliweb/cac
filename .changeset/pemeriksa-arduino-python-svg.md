@@ -1,5 +1,0 @@
----
-"kurikulum-informatika": minor
----
-
-Pemeriksa otomatis contoh kode dan aset lembar anak (issue #178, keputusan pemilik 2026-11-19). `bun run check:module-code` kini juga memeriksa blok ```` ```arduino ```` (dikompilasi dengan `g++ -std=c++17 -fsyntax-only` terhadap header tiruan `scripts/fixtures/arduino-mock/Arduino.h`; hanya sintaks dan tipe, bukan bukti perilaku papan) dan blok ```` ```python ```` (`ast.parse` lewat `python3 -I`; hanya sintaks). Blok soal setengah jadi dikecualikan dengan kata `setengah-jadi` pada info string pagar pembuka (mis. ```` ```cpp setengah-jadi ````), berlaku untuk cpp, arduino, dan python; blok yang dilewati dihitung di keluaran. Perintah baru `bun run check:learner-assets` memeriksa `content/<program>/gambar/*.svg` (XML well-formed, `viewBox`, tanpa skrip, raster, `foreignObject`, atribut `on*`, tautan atau `data:` URI eksternal, `@import`, maksimal 50 KB) dan tautan gambar di `content/<program>/lembar/*.md`; SVG yatim hanya peringatan. CI mendapat langkah baru untuk keduanya (konfirmasi `python3` dan pemeriksa aset). Kebutuhan baru TR-20 dan TR-21 (total 101 kebutuhan). Tidak ada perubahan `content/`, `data/`, atau silabus.

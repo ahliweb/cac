@@ -11,15 +11,119 @@ programme's own syllabus version (`syllabusVersion` / `syllabusDate`), which
 tracks that programme's source document and is registered per programme in
 `data/programs.json` (ADR-0006). Currently seven programmes are
 registered: `osn` at syllabus version `2.0`, dated `2026-09-04`,
-`sma-coding` at `1.3.0`, `tk-coding` at `1.0.1`, `sd-coding` at `1.0.1`,
-`smp-coding` at `1.1.1`, `kuliah-coding` at `1.1.1` and `dewasa-coding` at
-`1.1.1`. See
+`sma-coding` at `1.4.0`, `tk-coding` at `1.0.2`, `sd-coding` at `1.1.0`,
+`smp-coding` at `1.2.0`, `kuliah-coding` at `1.2.0` and `dewasa-coding` at
+`1.2.0`. See
 [`docs/development/releasing.md`](docs/development/releasing.md) for how the
 two relate.
 
 ## [Unreleased]
 
 Nothing yet.
+
+## [2.5.0] — 2026-11-19
+
+Learning modules for all six coding programmes, alignment of the
+inter-programme bridges, source verification of two regulations, and new
+automatic checks for module code and learner-sheet assets. **No breaking
+changes** — see [`docs/releases/v2.5.0.md`](docs/releases/v2.5.0.md). Every
+module is a draft: all 599 modules in `data/<program>/modules.json` have
+status `draf`, and none is approved by the owner. The OSN corpus
+(transcribed syllabus content) and `docs/silabus/` are unchanged since
+v2.4.0.
+
+### Added
+
+- **Learning-module index per programme** ([#124]): `tk-coding`,
+  `sd-coding`, `smp-coding`, `kuliah-coding` and `dewasa-coding` may carry
+  `data/<id>/modules.json`, each with a schema of its own
+  (`src/schema/tk-module.ts`, `sd-module.ts`, `smp-module.ts`,
+  `kul-module.ts`, `dw-learning-module.ts`) following `sma-module.ts`. The
+  module id is the unit code in lower case; module bodies live in
+  `content/<program>/modules/<id>.md`. `osn validate --program <id>` checks
+  unit codes, CP, knowledge-area and SKKNI references, prerequisites and
+  status against ADR-0007. `osn render modul --program <id>` now works for
+  all six programmes; `--lembar` renders the child's sheet for `tk-coding`
+  and `sd-coding`. Requirements `FR-39`..`FR-43`.
+- **599 draft learning modules** ([#124], owner decision 2026-11-19:
+  complete modules, one per week, course or syllabus module), all `draf`:
+  - `tk-coding`: 48 modules, each a teacher guide with a separate learner
+    sheet without an identity field and an SVG picture.
+  - `sd-coding`: 168 modules for grades 1–6, each with a teacher guide,
+    learner sheet and SVG picture.
+  - `smp-coding`: 84 modules for grades 7–9.
+  - `sma-coding`: 210 modules for tracks C (IoT and robotics, 77), D (AI
+    and data analysis, 77) and E (quantum computing, 56), in addition to
+    the 29 earlier modules (239 in total); the series design is in
+    `docs/programs/sma-coding/rancangan-modul-cde.md`. Tracks A and B have
+    no weekly modules.
+  - `kuliah-coding`: 24 modules, one per course, with a structure per
+    meeting.
+  - `dewasa-coding`: 36 modules across the four persona tracks and the
+    shared module `DW-FND-M1`.
+  - Design documents for each series (`docs/programs/<id>/rancangan-modul*.md`)
+    and `docs/programs/catatan-tinjauan-modul.md`, a list of points for the
+    human reviewer.
+- **Inter-programme bridges aligned** ([#177], owner decisions 2026-11-19,
+  five atomic changes): `kuliah-coding` to `dewasa-coding` track `PRO`
+  (new `data/dewasa-coding/kuliah-bridge.json`, three entry profiles,
+  per-module recognition, decision 12.7 option A, requirement `FR-44`),
+  `sma-coding` to `kuliah-coding` (recognition per CPMK), `smp-coding` and
+  `sma-coding` (new `data/sma-coding/smp-bridge.json` and placement in the
+  foundation block, requirement `FR-45`), `sd-coding` and `smp-coding`
+  (no assumption about blocks), and `tk-coding` to `sd-coding`. Syllabi
+  rose to `sma-coding` 1.4.0, `tk-coding` 1.0.2, `sd-coding` 1.1.0,
+  `smp-coding` 1.2.0, `kuliah-coding` 1.2.0 and `dewasa-coding` 1.2.0. The
+  design is in `docs/programs/rancangan-jembatan-antarprogram.md`.
+- **Cross-programme code check** (ADR-0010, `TR-22`): `osn validate` scans
+  the bridge files each programme registers and reports every week, course
+  or module code that does not exist in its source corpus.
+- **Checks for module code and learner assets** ([#178], `TR-20`, `TR-21`):
+  `bun run check:module-code` now also checks ```` ```arduino ```` blocks
+  (compiled with `g++ -std=c++17 -fsyntax-only` against the mock
+  `scripts/fixtures/arduino-mock/Arduino.h`; syntax and types only) and
+  ```` ```python ```` blocks (`ast.parse`, syntax only); a block whose info
+  string carries `setengah-jadi` is skipped and counted. New `bun run
+  check:learner-assets` checks `content/<program>/gambar/*.svg` and the
+  image links of learner sheets. CI gained steps for both.
+- **Scientific review of the 29 earlier `sma-coding` modules** ([#125]):
+  two draft reports in `docs/programs/sma-coding/tinjauan-modul/`
+  (`fondasi-matkom.md`, `cloud-pendamping.md`) with corrections to the
+  modules; the modules stay `draf`, no approval recorded.
+
+### Changed
+
+- **Source verification** (owner decision 2026-11-19): the origin of SK
+  BSKAP 046/H/KR/2025 is verified and the CP quotations in
+  `data/sd-coding/cp-elements.json` and the CP KKA Phase D in
+  `data/smp-coding/cp-elements.json` match word for word; the 47 SKKNI
+  282/2016 unit codes and titles were matched against the official
+  attachment, one title spelling corrected (unit `J.620100.047.01`).
+  `src/schema/dw-skkni.ts` gained the verification value
+  `judul-cocok-lampiran-resmi`. Patch revisions of the syllabi (`sma-coding`
+  1.3.1, `sd-coding` 1.0.2, `smp-coding` 1.1.2, `dewasa-coding` 1.1.2) before
+  the bridge revisions above.
+- **Stricter module rules** ([#178]): `osn validate` rejects an enrichment
+  module of `sma-coding` (tracks D and E) whose `cpItems` is not empty;
+  `check:module-code` dedents fenced blocks nested in list items;
+  `check:learner-assets` rejects (error, not warning) module or sheet
+  content that starts with its own `# ` title.
+- **Normalisation** ([#124]): module and sheet bodies no longer carry their
+  own title or DRAF banner (155 files) nor a `## Rujukan` section (136
+  modules; the renderer adds both from the index); 18 references added to
+  the `kuliah-coding` index; prerequisites made consistent; index entries
+  sorted in corpus order; the mock `Arduino.h` knows `Serial2`.
+- `AGENTS.md`, `README.md`, architecture docs, CLI reference, user guides,
+  programme READMEs and the requirements register (109 requirements) were
+  synchronised with the module series and the new checks.
+- Tests: the real `g++` tests have a 30 second timeout.
+
+### Notes
+
+- All 599 modules are `draf`. Human review of the 29 earlier `sma-coding`
+  modules and of the new series is still open ([#125]); a parallel
+  evaluation by teachers has not happened.
+- Weekly modules for `sma-coding` tracks A and B do not exist.
 
 ## [2.4.0] — 2026-11-19
 
@@ -546,7 +650,8 @@ documentation the syllabus itself mandates.
   and the entry says so; the next check must perform the live verification
   per [`docs/operations/syllabus-check.md`](docs/operations/syllabus-check.md).
 
-[Unreleased]: https://github.com/ahliweb/osn/compare/v2.4.0...HEAD
+[Unreleased]: https://github.com/ahliweb/osn/compare/v2.5.0...HEAD
+[2.5.0]: https://github.com/ahliweb/osn/compare/v2.4.0...v2.5.0
 [2.4.0]: https://github.com/ahliweb/osn/compare/v2.3.0...v2.4.0
 [2.3.0]: https://github.com/ahliweb/osn/compare/v2.2.0...v2.3.0
 [2.2.0]: https://github.com/ahliweb/osn/compare/v2.1.0...v2.2.0
@@ -562,6 +667,8 @@ documentation the syllabus itself mandates.
 [#105]: https://github.com/ahliweb/osn/issues/105
 [#124]: https://github.com/ahliweb/osn/issues/124
 [#125]: https://github.com/ahliweb/osn/issues/125
+[#177]: https://github.com/ahliweb/osn/issues/177
+[#178]: https://github.com/ahliweb/osn/issues/178
 [#86]: https://github.com/ahliweb/osn/issues/86
 [#87]: https://github.com/ahliweb/osn/issues/87
 [#88]: https://github.com/ahliweb/osn/issues/88
