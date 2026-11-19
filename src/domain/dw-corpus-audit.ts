@@ -27,6 +27,7 @@ import { dwSharedFileSchema } from "../schema/dw-shared";
 import { dwSkkniFileSchema } from "../schema/dw-skkni";
 import { dwStructureFileSchema } from "../schema/dw-structure";
 import { dwTracksFileSchema } from "../schema/dw-track";
+import { MODULES_FILE_NAME } from "../schema/module";
 import type { AuditResult, CorpusFinding, CorpusSource } from "./corpus-audit";
 
 interface DwFileEntry {
@@ -120,7 +121,8 @@ function schemaFindings(source: CorpusSource) {
   const registered = new Set(DW_DATA_FILE_REGISTRY.map((entry) => entry.file));
   let filesUnregistered = 0;
   for (const file of source.keys()) {
-    if (!registered.has(file)) {
+    // modules.json is the optional learning-module index (ADR-0007), validated by `moduleFindings`.
+    if (!registered.has(file) && file !== MODULES_FILE_NAME) {
       filesUnregistered += 1;
       findings.push(
         error(

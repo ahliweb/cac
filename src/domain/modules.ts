@@ -13,6 +13,8 @@
  * programme's own `content/<program>/modules/`.
  */
 
+import { DEWASA_CODING_PROGRAM_ID } from "../schema/dw-common";
+import { KUL_PROGRAM_ID } from "../schema/kul-common";
 import {
   MODULES_FILE_NAME,
   type Module,
@@ -20,11 +22,19 @@ import {
   modulesFileSchema,
 } from "../schema/module";
 import { referencesFileSchema } from "../schema/reference";
+import { SD_CODING_PROGRAM_ID } from "../schema/sd-common";
 import { SMA_CODING_PROGRAM_ID } from "../schema/sma-common";
+import { SMP_CODING_PROGRAM_ID } from "../schema/smp-common";
+import { TK_CODING_PROGRAM_ID } from "../schema/tk-common";
 import { topicFamiliesSchema } from "../schema/topic-family";
 import { weeksSchema } from "../schema/week";
 import type { CorpusFinding, CorpusSource } from "./corpus-audit";
+import { dwModuleFindings, parseDwModulesIndex } from "./dw-modules";
+import { kulModuleFindings, parseKulModulesIndex } from "./kul-modules";
+import { parseSdModulesIndex, sdModuleFindings } from "./sd-modules";
 import { parseSmaModulesIndex, smaModuleFindings } from "./sma-modules";
+import { parseSmpModulesIndex, smpModuleFindings } from "./smp-modules";
+import { parseTkModulesIndex, tkModuleFindings } from "./tk-modules";
 
 /**
  * The part of an index entry every programme's module shape shares: what
@@ -34,7 +44,12 @@ import { parseSmaModulesIndex, smaModuleFindings } from "./sma-modules";
 export type ModuleIndexEntry = Pick<
   Module,
   "id" | "title" | "status" | "review" | "references" | "contentPath"
->;
+> & {
+  /** `tk-coding` and `sd-coding` only: the child's learner sheet, `content/<program>/lembar/<id>.md`. */
+  readonly learnerSheetPath?: string | undefined;
+  /** `tk-coding` only: the CP Fase Fondasi items the week overlaps (interpreted overlap, never fulfilment). */
+  readonly cpOverlap?: readonly string[] | undefined;
+};
 
 /** A programme's parsed module index, reduced to the shared entry shape. */
 export interface ModulesIndex {
@@ -53,8 +68,10 @@ function error(path: string, message: string): CorpusFinding {
 
 /**
  * Parses the index out of `source` with the schema of programme `programId`
- * (default OSN; `sma-coding` has its own, `src/schema/sma-module.ts`):
- * `undefined` when absent; findings when unreadable/invalid.
+ * (default OSN; every other programme has its own, `src/schema/sma-module.ts`,
+ * `tk-module.ts`, `sd-module.ts`, `smp-module.ts`, `kul-module.ts`,
+ * `dw-learning-module.ts`): `undefined` when absent; findings when
+ * unreadable/invalid.
  */
 export function parseModulesIndex(
   source: CorpusSource,
@@ -63,10 +80,22 @@ export function parseModulesIndex(
   readonly modules: ModulesIndex | undefined;
   readonly findings: CorpusFinding[];
 } {
-  if (programId === SMA_CODING_PROGRAM_ID) {
-    return parseSmaModulesIndex(source);
+  switch (programId) {
+    case SMA_CODING_PROGRAM_ID:
+      return parseSmaModulesIndex(source);
+    case TK_CODING_PROGRAM_ID:
+      return parseTkModulesIndex(source);
+    case SD_CODING_PROGRAM_ID:
+      return parseSdModulesIndex(source);
+    case SMP_CODING_PROGRAM_ID:
+      return parseSmpModulesIndex(source);
+    case KUL_PROGRAM_ID:
+      return parseKulModulesIndex(source);
+    case DEWASA_CODING_PROGRAM_ID:
+      return parseDwModulesIndex(source);
+    default:
+      return parseOsnModulesIndex(source);
   }
-  return parseOsnModulesIndex(source);
 }
 
 function parseOsnModulesIndex(source: CorpusSource): {
@@ -109,16 +138,30 @@ function parsedFile<T>(
  * Every problem in the programme's module index. `programId` is the
  * registered id the corpus belongs to (a module's `contentPath` must sit
  * under `content/<programId>/modules/`). Each programme is checked with its
- * own schemas: `sma-coding` goes to `smaModuleFindings`; every other id is
- * checked as an OSN-shaped index against the OSN corpus files.
+ * own schemas and corpus files (`smaModuleFindings`, `tkModuleFindings`, ...);
+ * an id with no module shape of its own is checked as an OSN-shaped index
+ * against the OSN corpus files.
  */
 export function moduleFindings(
   source: CorpusSource,
   programId: string,
   options: ModuleFindingsOptions = {},
 ): CorpusFinding[] {
-  if (programId === SMA_CODING_PROGRAM_ID) {
-    return smaModuleFindings(source, options.osnTopicFamilyIds);
+  switch (programId) {
+    case SMA_CODING_PROGRAM_ID:
+      return smaModuleFindings(source, options.osnTopicFamilyIds);
+    case TK_CODING_PROGRAM_ID:
+      return tkModuleFindings(source);
+    case SD_CODING_PROGRAM_ID:
+      return sdModuleFindings(source);
+    case SMP_CODING_PROGRAM_ID:
+      return smpModuleFindings(source);
+    case KUL_PROGRAM_ID:
+      return kulModuleFindings(source);
+    case DEWASA_CODING_PROGRAM_ID:
+      return dwModuleFindings(source);
+    default:
+      break;
   }
   const { modules, findings } = parseOsnModulesIndex(source);
   if (modules === undefined) {

@@ -16,6 +16,7 @@
  */
 
 import type { z } from "zod";
+import { MODULES_FILE_NAME } from "../schema/module";
 import { SD_BRIDGE_IDS, sdBridgesFileSchema } from "../schema/sd-bridges";
 import {
   SD_CP_CLASSES,
@@ -115,7 +116,8 @@ function schemaFindings(source: CorpusSource) {
   const registered = new Set(SD_DATA_FILE_REGISTRY.map((entry) => entry.file));
   let filesUnregistered = 0;
   for (const file of source.keys()) {
-    if (!registered.has(file)) {
+    // modules.json is the optional learning-module index (ADR-0007), validated by `moduleFindings`.
+    if (!registered.has(file) && file !== MODULES_FILE_NAME) {
       filesUnregistered += 1;
       findings.push(
         error(

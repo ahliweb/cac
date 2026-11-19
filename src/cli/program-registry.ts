@@ -105,9 +105,10 @@ export const PROGRAM_MODULES: readonly ProgramModule[] = [
     dataFiles: KUL_DATA_FILE_REGISTRY,
     audit: (source) => auditKulCorpus(source),
     needsOsnTopicFamilyIds: false,
-    // No learner modules yet (ADR-0007): no modules.json, no content/kuliah-coding/.
-    parseModulesIndex: () => ({ modules: undefined, findings: [] }),
-    moduleFindings: () => [],
+    // modules.json is optional (ADR-0007); its own schema is src/schema/kul-module.ts.
+    parseModulesIndex: (source) => parseModulesIndex(source, KUL_PROGRAM_ID),
+    moduleFindings: (source, context) =>
+      moduleFindings(source, KUL_PROGRAM_ID, moduleOptions(context)),
     fidelity: kuliahCodingFidelity,
   },
   {
@@ -125,9 +126,10 @@ export const PROGRAM_MODULES: readonly ProgramModule[] = [
     dataFiles: TK_DATA_FILE_REGISTRY,
     audit: (source) => auditTkCorpus(source),
     needsOsnTopicFamilyIds: false,
-    // tk-coding has no learning-module index (no modules.json); a stray one is an unregistered file.
-    parseModulesIndex: () => ({ modules: undefined, findings: [] }),
-    moduleFindings: () => [],
+    // modules.json is optional (ADR-0007); its own schema is src/schema/tk-module.ts.
+    parseModulesIndex: (source) => parseModulesIndex(source, TK_CODING_PROGRAM_ID),
+    moduleFindings: (source, context) =>
+      moduleFindings(source, TK_CODING_PROGRAM_ID, moduleOptions(context)),
     fidelity: tkCodingFidelity,
   },
   {
@@ -135,9 +137,11 @@ export const PROGRAM_MODULES: readonly ProgramModule[] = [
     dataFiles: DW_DATA_FILE_REGISTRY,
     audit: (source) => auditDewasaCorpus(source),
     needsOsnTopicFamilyIds: false,
-    // No ADR-0007 learning-content index yet (the module plan is module-plan.json).
-    parseModulesIndex: () => ({ modules: undefined, findings: [] }),
-    moduleFindings: () => [],
+    // modules.json is the optional ADR-0007 content index (src/schema/dw-learning-module.ts);
+    // the syllabus's own module table is module-plan.json.
+    parseModulesIndex: (source) => parseModulesIndex(source, DEWASA_CODING_PROGRAM_ID),
+    moduleFindings: (source, context) =>
+      moduleFindings(source, DEWASA_CODING_PROGRAM_ID, moduleOptions(context)),
     fidelity: dewasaCodingFidelity,
   },
   {
@@ -145,8 +149,10 @@ export const PROGRAM_MODULES: readonly ProgramModule[] = [
     dataFiles: SD_DATA_FILE_REGISTRY,
     audit: (source) => auditSdCorpus(source),
     needsOsnTopicFamilyIds: false,
-    parseModulesIndex: () => ({ modules: undefined, findings: [] }),
-    moduleFindings: () => [],
+    // modules.json is optional (ADR-0007); its own schema is src/schema/sd-module.ts.
+    parseModulesIndex: (source) => parseModulesIndex(source, SD_CODING_PROGRAM_ID),
+    moduleFindings: (source, context) =>
+      moduleFindings(source, SD_CODING_PROGRAM_ID, moduleOptions(context)),
     fidelity: sdCodingFidelity,
   },
   {
@@ -154,9 +160,10 @@ export const PROGRAM_MODULES: readonly ProgramModule[] = [
     dataFiles: SMP_DATA_FILE_REGISTRY,
     audit: (source) => auditSmpCorpus(source),
     needsOsnTopicFamilyIds: false,
-    // No module index yet (ADR-0007): a stray modules.json is reported by the audit as unregistered.
-    parseModulesIndex: () => ({ modules: undefined, findings: [] }),
-    moduleFindings: () => [],
+    // modules.json is optional (ADR-0007); its own schema is src/schema/smp-module.ts.
+    parseModulesIndex: (source) => parseModulesIndex(source, SMP_CODING_PROGRAM_ID),
+    moduleFindings: (source, context) =>
+      moduleFindings(source, SMP_CODING_PROGRAM_ID, moduleOptions(context)),
     fidelity: smpCodingFidelity,
   },
 ];

@@ -37,7 +37,7 @@ run over this directory in CI: `osn validate` per registered programme (and the 
 
 ## `content/`
 
-**What belongs here:** authored learning-module bodies, one Markdown file per module at `content/<program>/modules/<id>.md` (ADR-0007, scoped by issue #54). Each file is indexed by an entry in `data/<program>/modules.json`, which carries the review lifecycle (`draf` → `ditinjau` → `disetujui`, plus `ditarik`). `osn validate` checks that every indexed file exists and is non-empty; `bun run check:module-code` compiles its C++ examples.
+**What belongs here:** authored learning-module bodies, one Markdown file per module at `content/<program>/modules/<id>.md` (ADR-0007, scoped by issue #54). Each file is indexed by an entry in `data/<program>/modules.json`, which carries the review lifecycle (`draf` → `ditinjau` → `disetujui`, plus `ditarik`). `osn validate` checks that every indexed file exists and is non-empty; `bun run check:module-code` compiles its C++ examples. Every programme has its own index schema (see `src/schema/` below); `tk-coding` and `sd-coding` modules are teacher guides, each with a separate learner sheet for the child at `content/<program>/lembar/<id>.md` (no name or identity field of the child; checked by `osn validate` and refused by `osn render modul --lembar`). The directory `content/<id>/` exists only once the programme has a module; an empty one is never created. No module of `tk-coding`, `sd-coding`, `smp-coding`, `kuliah-coding` or `dewasa-coding` exists yet (their schemas, validation and rendering do, issue-by-issue content follows).
 
 **What must never go here:** transcribed syllabus content (that is `data/`); real learner data; problems copied from judges or competitions (link them instead); a module marked `disetujui` by an AI agent.
 
@@ -65,7 +65,7 @@ is a domain-layer concern).
 `assessment-bank.ts`, `problem-taxonomy.ts`, `learning-record.ts`,
 `readiness-checklist.ts`, `operational-rules.ts`, `syllabus-check.ts`), plus
 the `sma-coding` corpus shapes (`sma-common.ts`, `sma-cp.ts`, `sma-track.ts`,
-`sma-structure.ts`, `sma-week.ts`, `sma-foundation.ts`, `sma-cp-mapping.ts`, `sma-osn-bridge.ts`) and the `sma-coding` module-index shape (`sma-module.ts`, which reuses the status, review and reference parts of the OSN `module.ts`), plus one family per further programme (ADR-0008): `tk-*.ts` (`tk-common`, `tk-goals`, `tk-cp-elements`, `tk-cp-mapping`, `tk-structure`, `tk-weeks`, `tk-bridge`, `tk-decisions`), `kul-*.ts` (`kul-common`, `kul-cpl`, `kul-knowledge-area`, `kul-course`, `kul-track`, `kul-bridge`, `kul-ai-policy`), `dw-*.ts` (`dw-common`, `dw-structure`, `dw-track`, `dw-shared`, `dw-module`, `dw-skkni`, `dw-certification`, `dw-bridge`), `sd-*.ts` (`sd-common`, `sd-cp`, `sd-cp-mapping`, `sd-structure`, `sd-week`, `sd-bridges`) and `smp-*.ts` (`smp-common`, `smp-cp`, `smp-cp-mapping`, `smp-structure`, `smp-week`, `smp-club`, `smp-uncovered`, `smp-bridge`).
+`sma-structure.ts`, `sma-week.ts`, `sma-foundation.ts`, `sma-cp-mapping.ts`, `sma-osn-bridge.ts`) and the module-index shape of every other programme (ADR-0007, ADR-0008): `sma-module.ts`, `tk-module.ts`, `sd-module.ts`, `smp-module.ts`, `kul-module.ts` and `dw-learning-module.ts` (the index of authored content; `dw-module.ts` is `module-plan.json`), each reusing the status, review and reference parts of the OSN `module.ts` and, for the five newest, the shared rules in `program-module-common.ts` (one module per programme unit, id = lower-case unit code, `contentPath`, `review`), plus one family per further programme (ADR-0008): `tk-*.ts` (`tk-common`, `tk-goals`, `tk-cp-elements`, `tk-cp-mapping`, `tk-structure`, `tk-weeks`, `tk-bridge`, `tk-decisions`), `kul-*.ts` (`kul-common`, `kul-cpl`, `kul-knowledge-area`, `kul-course`, `kul-track`, `kul-bridge`, `kul-ai-policy`), `dw-*.ts` (`dw-common`, `dw-structure`, `dw-track`, `dw-shared`, `dw-module`, `dw-skkni`, `dw-certification`, `dw-bridge`), `sd-*.ts` (`sd-common`, `sd-cp`, `sd-cp-mapping`, `sd-structure`, `sd-week`, `sd-bridges`) and `smp-*.ts` (`smp-common`, `smp-cp`, `smp-cp-mapping`, `smp-structure`, `smp-week`, `smp-club`, `smp-uncovered`, `smp-bridge`).
 
 ## `src/domain/`
 
@@ -92,7 +92,7 @@ schema), `privacy-scan.ts` (the `osn privacy-check` scan logic),
 `operations.ts` (readiness checklist, operational rules, syllabus-check
 log), `cohort-plan.ts` (the `osn plan` calendar generator), `report.ts`
 (the `osn report` KPI dashboard), and `corpus-audit.ts` (the `osn
-validate` whole-corpus audit), `sma-corpus-audit.ts` (the same for the `sma-coding` corpus, including the cross-programme reference to the OSN topic families), `tk-corpus-audit.ts`, `kul-corpus-audit.ts`, `dw-corpus-audit.ts`, `sd-corpus-audit.ts` and `smp-corpus-audit.ts` (the same for the other five programmes, ADR-0008), `sd-week-codes.ts` and `smp-week-codes.ts` (week notation of the SD and SMP syllabi), `sma-week-codes.ts` (expands the week notation of the SMA syllabus), `sma-plan.ts` (the per-semester track plan and the week view behind `osn plan` and `osn render lembar-siswa` for `sma-coding`), `modules.ts` (the per-programme entry point for the optional `data/<program>/modules.json`; the OSN rules live here) and `sma-modules.ts` (the same for the `sma-coding` index: CP items, week codes, OSN bridge families, prerequisites and their cycles).
+validate` whole-corpus audit), `sma-corpus-audit.ts` (the same for the `sma-coding` corpus, including the cross-programme reference to the OSN topic families), `tk-corpus-audit.ts`, `kul-corpus-audit.ts`, `dw-corpus-audit.ts`, `sd-corpus-audit.ts` and `smp-corpus-audit.ts` (the same for the other five programmes, ADR-0008), `sd-week-codes.ts` and `smp-week-codes.ts` (week notation of the SD and SMP syllabi), `sma-week-codes.ts` (expands the week notation of the SMA syllabus), `sma-plan.ts` (the per-semester track plan and the week view behind `osn plan` and `osn render lembar-siswa` for `sma-coding`), `modules.ts` (the per-programme entry point for the optional `data/<program>/modules.json`; the OSN rules live here) `sma-modules.ts` (the same for the `sma-coding` index: CP items, week codes, OSN bridge families, prerequisites and their cycles), `tk-modules.ts`, `sd-modules.ts`, `smp-modules.ts`, `kul-modules.ts` and `dw-modules.ts` (the same for the other five programmes: unit code and the CP overlap, CP items, CP codes, knowledge areas or SKKNI units the corpus maps to that unit, prerequisites and their cycles; helpers in `program-modules-common.ts`) and `learner-sheet.ts` (finds a name or identity field in a child's learner sheet).
 
 ## `src/render/`
 
@@ -106,7 +106,7 @@ weekly learner sheet (`osn render lembar-siswa`).
 `process.exit` calls (that is `src/cli/`'s job); network I/O.
 
 **State today:** `weekly.ts`, `checkpoint.ts`, `sop.ts`, `checklist.ts`,
-`student-sheet.ts` (the five renderers), `module.ts` (the learning-module renderer, `osn render modul`) and `sma-student-sheet.ts` (the `sma-coding` learner sheet, `osn render lembar-siswa --program sma-coding`), plus `markdown-utils.ts` (shared formatting
+`student-sheet.ts` (the five renderers), `module.ts` (the learning-module renderer, `osn render modul`, for every programme with a `modules.json`; also the learner sheet of a `tk-coding` or `sd-coding` module, `--lembar`, which refuses a sheet with a name or identity field of the child) and `sma-student-sheet.ts` (the `sma-coding` learner sheet, `osn render lembar-siswa --program sma-coding`), plus `markdown-utils.ts` (shared formatting
 helpers) and `errors.ts` (`RenderRequestError`).
 
 ## `src/cli/`
@@ -128,7 +128,7 @@ and exit-code constants), `commands/index.ts` (the command registry) and
 `commands/*.ts` (the six command handlers), `program-registry.ts` (the programme table `PROGRAM_MODULES`, ADR-0008: id → data files + schemas, audit, module-index hooks, optional fidelity module; `osn validate` and `check:fidelity` dispatch through it), `fidelity/` (the per-programme fidelity modules and their `FidelityModule` contract: `sma-coding.ts`, `tk-coding.ts`, `kuliah-coding.ts`, `dewasa-coding.ts`, `sd-coding.ts`, `smp-coding.ts`) and `fidelity-runner.ts` (`bun run check:fidelity`), plus the shared I/O/formatting
 helpers each command uses (`corpus-loader.ts`, `program-loader.ts` (registry loading and `--program` resolution), `privacy-scan-loader.ts`,
 `output-writer.ts`, `format-audit.ts`, `format-plan.ts`, `format-report.ts`,
-`format-privacy-check.ts`, `format-checklist.ts`), `sma-commands.ts`, `sma-corpus-loader.ts` and `format-sma-plan.ts` (the `--program sma-coding` branches of `osn plan` and `osn render lembar-siswa`: flag handling, the audited corpus loader, plan formatting) and `module-content.ts` (module body existence check for `osn validate`, and the loader behind `osn render modul`). A `bin` entry
+`format-privacy-check.ts`, `format-checklist.ts`), `sma-commands.ts`, `sma-corpus-loader.ts` and `format-sma-plan.ts` (the `--program sma-coding` branches of `osn plan` and `osn render lembar-siswa`: flag handling, the audited corpus loader, plan formatting) `module-content.ts` (module body and learner-sheet existence check for `osn validate`, and the loader behind `osn render modul`) and `render-module-output.ts` (the module or, with `--lembar`, the child's learner sheet as the Markdown `osn render modul` prints, and its exit code). A `bin` entry
 (`"osn": "src/cli/index.ts"`) is registered in `package.json`.
 
 ## `src/index.ts`
@@ -160,6 +160,12 @@ belongs in `tests/integration/`); production code.
 command, render helper), plus `smoke.test.ts` and Markdown snapshot
 fixtures under `tests/unit/__snapshots__/` for the render layer.
 
+## `tests/helpers/`
+
+**What belongs here:** support code shared by tests, never a test itself (no `*.test.ts`): `program-module-entries.ts` (synthetic module-index entries of the five per-programme module schemas) and `program-modules-repo.ts` (a temporary copy of the repository, with the installed dependencies linked, in which the end-to-end tests of the module indexes add a synthetic `modules.json` and synthetic content).
+
+**What must never go here:** production code, real learner data, or real module content.
+
 ## `tests/integration/`
 
 **What belongs here:** tests that exercise multiple modules together —
@@ -177,7 +183,7 @@ register and traceability matrices via `scripts/check-requirements.ts`),
 `cli-validate-fixtures.test.ts` (the full corpus, and a deliberately
 corrupted fixture corpus), and one end-to-end test per remaining CLI
 command (`cli-plan.test.ts`, `cli-render.test.ts`, `cli-report.test.ts`,
-`cli-privacy-check.test.ts`, `cli-checklist.test.ts`) plus `cli-modules.test.ts` (`osn render modul`, `osn validate` with a module index, and `check:module-code`) and `cli-sma-modules.test.ts` (the same two commands for `sma-coding`, run against a temporary copy of the repository so the committed corpus and `content/` are untouched).
+`cli-privacy-check.test.ts`, `cli-checklist.test.ts`) plus `cli-modules.test.ts` (`osn render modul`, `osn validate` with a module index, and `check:module-code`) `cli-sma-modules.test.ts` (the same two commands for `sma-coding`, run against a temporary copy of the repository so the committed corpus and `content/` are untouched), and `cli-program-modules-validate.test.ts` and `cli-program-modules-render.test.ts` (`osn validate` and `osn render modul`, with `--lembar`, for `tk-coding`, `sd-coding`, `smp-coding`, `kuliah-coding` and `dewasa-coding`, the same way).
 
 ## `scripts/`
 

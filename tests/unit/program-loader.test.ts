@@ -19,7 +19,9 @@ import { loadPrivacyScanEntries } from "../../src/cli/privacy-scan-loader";
 import {
   DATA_ROOT,
   extractProgramFlag,
+  hasLearnerSheets,
   loadProgramRegistry,
+  rejectNonOsnProgram,
   repoPathExists,
   resolveProgramOption,
 } from "../../src/cli/program-loader";
@@ -191,5 +193,57 @@ describe("privacy scan reach", () => {
       files.some((file) => file.startsWith("osn/samples/learning-records.sample.jsonl:")),
     ).toBe(true);
     expect(loaded.parseIssues).toEqual([]);
+  });
+});
+
+describe("hasLearnerSheets", () => {
+  test("only tk-coding and sd-coding have a learner sheet per module", () => {
+    expect(hasLearnerSheets("tk-coding")).toBe(true);
+    expect(hasLearnerSheets("sd-coding")).toBe(true);
+    for (const id of ["osn", "sma-coding", "smp-coding", "kuliah-coding", "dewasa-coding"]) {
+      expect(hasLearnerSheets(id)).toBe(false);
+    }
+  });
+});
+
+describe("rejectNonOsnProgram", () => {
+  const program = (id: string) => ({
+    id,
+    name: `Program ${id}`,
+    sourceDocument: "docs/x.md",
+    syllabusVersion: "1.0.0",
+    syllabusDate: "2026-11-19",
+    corpusDir: `data/${id}`,
+  });
+
+  test("the OSN programme may proceed (undefined, nothing written)", () => {
+    const { ctx, stderr } = makeContext();
+    expect(rejectNonOsnProgram("plan", program("osn"), ctx)).toBeUndefined();
+    expect(stderr).toEqual([]);
+  });
+
+  test("sma-coding gets the list of commands that work, render modul included", () => {
+    const { ctx, stderr } = makeContext();
+    expect(rejectNonOsnProgram("report", program("sma-coding"), ctx)).toBe(2);
+    expect(stderr.join("")).toContain('"osn render modul --program sma-coding --id <id>"');
+  });
+
+  test.each([
+    ["tk-coding", true],
+    ["sd-coding", true],
+    ["smp-coding", false],
+    ["kuliah-coding", false],
+    ["dewasa-coding", false],
+  ])("%s: honest refusal that names render modul (--lembar: %p)", (id, sheets) => {
+    const { ctx, stderr } = makeContext();
+    expect(rejectNonOsnProgram("plan", program(id), ctx)).toBe(2);
+    const text = stderr.join("");
+    expect(text).toContain(`belum didukung untuk program ${id}`);
+    expect(text).toContain('hanya tersedia untuk program "osn" dan "sma-coding"');
+    expect(text).toContain(`"osn render modul --program ${id} --id <id>"`);
+    expect(text).toContain(`perlu data/${id}/modules.json`);
+    expect(text.includes("tambahkan --lembar untuk lembar anak")).toBe(sheets);
+    expect(text).toContain(`"osn validate --program ${id}"`);
+    expect(text).toContain(`"bun run check:fidelity --program ${id}"`);
   });
 });

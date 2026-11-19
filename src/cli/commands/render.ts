@@ -12,7 +12,6 @@
 import { resolve } from "node:path";
 import { renderCheckpointSheet } from "../../render/checkpoint";
 import { RenderRequestError } from "../../render/errors";
-import { renderModule } from "../../render/module";
 import { renderSopCard } from "../../render/sop";
 import { renderStudentSheet } from "../../render/student-sheet";
 import { renderWeeklyPlan } from "../../render/weekly";
@@ -21,7 +20,13 @@ import type { Command } from "../command";
 import { EXIT_SUCCESS, EXIT_USAGE_ERROR } from "../command";
 import { loadModule } from "../module-content";
 import { writeOutputFile } from "../output-writer";
-import { REPO_ROOT, rejectNonOsnProgram, resolveProgramOption } from "../program-loader";
+import {
+  hasLearnerSheets,
+  REPO_ROOT,
+  rejectNonOsnProgram,
+  resolveProgramOption,
+} from "../program-loader";
+import { buildModuleOutput } from "../render-module-output";
 import { buildSmaLembarSiswa } from "../sma-commands";
 
 const SUBCOMMANDS = ["weekly", "checkpoint", "sop", "lembar-siswa", "modul"] as const;
@@ -45,7 +50,10 @@ belajar siswa": the week's coverage and outcome, topic families, practice
 target, gate evidence, the §5.3 hint callout, a blank self-check list,
 and references -- derived only from the validated corpus), or a learning
 module ("modul": authored learning content from data/<program>/modules.json;
-unless its status is "disetujui" it starts with a DRAF/DITARIK banner).
+unless its status is "disetujui" it starts with a DRAF/DITARIK banner). For
+tk-coding and sd-coding a module is a teacher guide, and "modul --lembar"
+renders the separate learner sheet for the child instead (same banner; a sheet
+with a name or identity field of the child is refused).
 
 Usage:
   osn render weekly --week <1-28> [--out <path>] [--force]
@@ -54,6 +62,8 @@ Usage:
   osn render lembar-siswa --week <1-28> [--out <path>] [--force]
   osn render lembar-siswa --program sma-coding --week <week-code> [--out <path>] [--force]
   osn render modul --id <module-id> [--out <path>] [--force]
+  osn render modul --program <id> --id <module-id> [--out <path>] [--force]
+  osn render modul --program <tk-coding|sd-coding> --id <module-id> --lembar [--out <path>] [--force]
 
 Options:
   --week <n>      Week number, 1-28. Required for "weekly" and "lembar-siswa".
@@ -62,6 +72,9 @@ Options:
                   unknown code exits 2 listing valid examples.
   --number <n>    Checkpoint number, 1-7. Required for "checkpoint".
   --id <id>       Module id from the programme's modules.json. Required for "modul".
+  --lembar        With "modul", for tk-coding and sd-coding only: render the
+                  child's learner sheet (content/<program>/lembar/<id>.md)
+                  instead of the teacher guide. Exit 2 for any other programme.
   --out <path>    Write the rendered Markdown to this path instead of
                   stdout.
   --force         Overwrite --out if it already exists. Without it, an
@@ -71,15 +84,21 @@ Options:
                   sma-coding supports "lembar-siswa" (a sheet per week of a
                   track or of the foundation block, derived only from its
                   validated corpus) and "modul"; "weekly", "checkpoint" and
-                  "sop" exit 2 for any programme but osn.
+                  "sop" exit 2 for any programme but osn. "modul" works for
+                  every programme that has a data/<program>/modules.json
+                  (osn, sma-coding, tk-coding, sd-coding, smp-coding,
+                  kuliah-coding, dewasa-coding).
   -h, --help      Show this help.
 
 Exit codes:
   0   success.
-  1   the sma-coding corpus fails validation (run osn validate).
+  1   the sma-coding corpus fails validation (run osn validate), or the
+      learner sheet asked for with --lembar has a name or identity field.
   2   usage error: missing/unknown subcommand, a missing required flag
       (--week/--number/--id), --week/--number outside its valid range (or an
-      unknown sma-coding week code), an unknown or unreadable module, or
+      unknown sma-coding week code), an unknown or unreadable module,
+      --lembar for a programme without learner sheets or with another
+      subcommand than "modul", or
       --out already exists without --force, or an unknown --program.`;
 
 /** Extracts the value following the first occurrence of `flag` in `args`, or `undefined` if `flag` is absent (or has nothing after it). */
@@ -135,6 +154,10 @@ export const renderCommand: Command = {
     }
 
     const rest = args.slice(1);
+    if (subcommand !== "modul" && rest.includes("--lembar")) {
+      ctx.stderr(`osn render ${subcommand}: --lembar is only valid with "osn render modul".\n`);
+      return EXIT_USAGE_ERROR;
+    }
     let content: string;
 
     if (smaSheet) {
@@ -200,6 +223,13 @@ export const renderCommand: Command = {
         ctx.stderr("osn render modul: --id <module-id> is required.\n");
         return EXIT_USAGE_ERROR;
       }
+      const lembar = rest.includes("--lembar");
+      if (lembar && !hasLearnerSheets(resolved.program.id)) {
+        ctx.stderr(
+          `osn render modul: --lembar berlaku untuk program tk-coding dan sd-coding saja (panduan guru plus lembar anak); program ${resolved.program.id} tidak punya lembar anak.\n`,
+        );
+        return EXIT_USAGE_ERROR;
+      }
       const loaded = await loadModule(
         resolve(REPO_ROOT, resolved.program.corpusDir),
         id,
@@ -210,10 +240,16 @@ export const renderCommand: Command = {
         ctx.stderr(`osn render modul: ${loaded.message}\n`);
         return EXIT_USAGE_ERROR;
       }
-      content = renderModule(loaded.module, loaded.body, loaded.references, {
-        id: resolved.program.id,
-        name: resolved.program.name,
-      });
+      const output = buildModuleOutput(
+        loaded,
+        lembar,
+        { id: resolved.program.id, name: resolved.program.name },
+        ctx,
+      );
+      if (!output.ok) {
+        return output.exitCode;
+      }
+      content = output.content;
     } else {
       content = renderSopCard();
     }

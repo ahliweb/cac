@@ -25,7 +25,7 @@ These are recognised regardless of which subcommand (if any) is present:
 | `-h`, `--help` | With no subcommand: print global usage (this command list) and exit `0`. After a subcommand (`osn <command> --help`): print that command's own help and exit `0`, without running the command. |
 | `-V`, `--version` | Print the version from `package.json` (never hard-coded) and exit `0`. Takes precedence over everything else -- even `osn --version bogus-command` prints the version rather than failing on the unknown command. |
 | `--json` | Emit machine-readable JSON output instead of human-readable text, for commands that support it (`validate`, `plan`, `report`, `checklist` and `privacy-check`). **`render` ignores it**: `osn render --json ...` still prints Markdown (a rendered sheet is a document, not data), so a script must not expect JSON from it. May appear before or after the subcommand name. |
-| `--program <id>` | Per-command (`validate`, `plan`, `render`, `report`, `checklist`): the registered programme (`data/programs.json`) whose corpus to use; default `osn`. An unknown id is a usage error (exit `2`) naming the registered ids. Write it after the subcommand name. `osn validate` without it validates every registered programme. All seven registered programmes are supported by `validate`. `plan` (`--track`), `render lembar-siswa` (`--week <week-code>`) and `render modul` additionally support `sma-coding`; for the five other coding programmes (`tk-coding`, `kuliah-coding`, `dewasa-coding`, `sd-coding`, `smp-coding`) `plan` and `render lembar-siswa` exit `2` with "belum didukung untuk program <id>" (the message says `plan` and `render lembar-siswa` exist only for `osn` and `sma-coding`, and that the programme is supported only by `validate` and `check:fidelity`); `render modul` exits `2` with "this programme has no modules.json". `render weekly`, `render checkpoint` and `render sop`, `report` and `checklist` read the OSN corpus only and exit `2` with the "belum didukung" message for every programme other than `osn` (for `sma-coding` it lists the commands that do work), rather than present OSN data as that programme's. `privacy-check` takes no `--program`: it always scans all of `data/`. |
+| `--program <id>` | Per-command (`validate`, `plan`, `render`, `report`, `checklist`): the registered programme (`data/programs.json`) whose corpus to use; default `osn`. An unknown id is a usage error (exit `2`) naming the registered ids. Write it after the subcommand name. `osn validate` without it validates every registered programme. All seven registered programmes are supported by `validate`. `plan` (`--track`), `render lembar-siswa` (`--week <week-code>`) and `render modul` additionally support `sma-coding`; `render modul` also supports each of the five other coding programmes (`tk-coding`, `kuliah-coding`, `dewasa-coding`, `sd-coding`, `smp-coding`) once its `data/<id>/modules.json` exists (and `--lembar` for the learner sheet of `tk-coding` and `sd-coding`), and exits `2` with "this programme has no modules.json" until then; for those five `plan` and `render lembar-siswa` exit `2` with "belum didukung untuk program <id>" (the message says `plan` and `render lembar-siswa` exist only for `osn` and `sma-coding`, and that the programme is supported by `render modul`, `validate` and `check:fidelity`). `render weekly`, `render checkpoint` and `render sop`, `report` and `checklist` read the OSN corpus only and exit `2` with the "belum didukung" message for every programme other than `osn` (for `sma-coding` it lists the commands that do work), rather than present OSN data as that programme's. `privacy-check` takes no `--program`: it always scans all of `data/`. |
 
 ## Exit codes
 
@@ -155,6 +155,32 @@ whose programme is not registered is a draft and is not validated.
    used field needs but that is missing or invalid is itself reported
    ("cannot be checked"), never skipped silently.
 
+   Each of the five other coding programmes has its own module-index schema
+   too (ADR-0007, ADR-0008; `modules.json` stays optional for all of them).
+   A module serves **one** programme unit and its `id` is that unit's code in
+   lower case (`tk-a1-m1`, `sd1-1-m1`, `smp7-1-m1`, `kul-u-101`,
+   `dw-pro-m1`, `dw-fnd-m1`); `review`, `references`, `contentPath` and the
+   statuses follow the rules above. What differs:
+
+   | Programme | Schema / rules | Reader | Unit field | Programme-specific fields (all checked against the corpus) |
+   | --- | --- | --- | --- | --- |
+   | `tk-coding` | `src/schema/tk-module.ts`, `src/domain/tk-modules.ts` | `guru` | `weekCodes` (one `TK-...` week) | `cpOverlap`: only CP Fase Fondasi items the week itself lists in `cp` (an interpreted overlap, never fulfilment: `meetsCp: false`); `groups` = the week's age group; `learnerSheetPath` (required) |
+   | `sd-coding` | `src/schema/sd-module.ts`, `src/domain/sd-modules.ts` | `guru` | `weekCodes` (one `SD<kelas>-<sem>-M<n>` week) | `cpItems`: only items `cp-mapping.json` maps to the week (never a kelas 1-4 week, never a `P-` introduction, never a `[penguatan]` week); `gradeLevels` = the week's kelas; `learnerSheetPath` (required) |
+   | `smp-coding` | `src/schema/smp-module.ts`, `src/domain/smp-modules.ts` | `siswa` | `weekCodes` (one `SMP<kelas>-<sem>-M<n>` week) | `cpCodes`: only items `weeks.json` maps to the week as covered (an enrichment week, or an item marked `*` for Python, claims none); `gradeLevels` = the week's kelas |
+   | `kuliah-coding` | `src/schema/kul-module.ts`, `src/domain/kul-modules.ts` | `mahasiswa` | `courseCodes` (one `KUL-...` course) | `knowledgeAreas`: only areas mapped to the course (its `kaCodes`, or a link or support entry in `knowledge-areas.json`); `semester` = the course's semester |
+   | `dewasa-coding` | `src/schema/dw-learning-module.ts`, `src/domain/dw-modules.ts` | `peserta` | `moduleCodes` (one `DW-...` module, also the shared `DW-FND-M1`; found in `module-plan.json` or `shared.json`) | `skkniUnits`: SKKNI unit codes only for the units `module-plan.json` maps to that module (track PRO, unit-title depth); `track` = the module code's track |
+
+   Findings reported for all five: an unknown unit code, or a CP / CP-overlap /
+   knowledge-area / SKKNI code that is unknown or not valid for that unit; a
+   prerequisite (another module's id, or a unit code of the programme) that is
+   unknown or closes a cycle (a module cannot require itself); a duplicate id;
+   an `id` that is not the lower-case unit code; a missing or blank Markdown
+   body; for `tk-coding` and `sd-coding` also a missing or blank learner sheet
+   (`content/<program>/lembar/<id>.md`) or one with a name or identity field of
+   the child (see `osn render modul --lembar`). A reference file that a used
+   field needs but that is missing or invalid is itself reported ("cannot be
+   checked"), never skipped silently.
+
 ### The `sma-coding` programme
 
 `osn validate --program sma-coding` validates `data/sma-coding/` with its
@@ -230,8 +256,9 @@ check-smp-coding-fidelity: OK -- every cell of data/smp-coding/*.json matches do
 Each of the five further coding programmes has its own file set and schemas
 and its own corpus audit, picked from the programme table (ADR-0008); the
 numbers below are the corpus files `osn validate` counts (the optional
-`modules.json` is not counted). All five syllabi are owner-approved
-(2026-11-19).
+`modules.json` is not counted and, like `sma-coding`'s, is exempt from the
+"unregistered file" check; its rules are above). All five syllabi are
+owner-approved (2026-11-19).
 
 | Programme | Syllabus | Corpus files | Schemas / audit |
 | --- | --- | --- | --- |
@@ -585,7 +612,8 @@ osn render weekly --week <1-28> [--out <path>] [--force]
 osn render checkpoint --number <1-7> [--out <path>] [--force]
 osn render sop [--out <path>] [--force]
 osn render lembar-siswa --week <1-28> [--out <path>] [--force]
-osn render modul --id <module-id> [--out <path>] [--force]
+osn render modul [--program <id>] --id <module-id> [--out <path>] [--force]
+osn render modul --program <tk-coding|sd-coding> --id <module-id> --lembar [--out <path>] [--force]
 ```
 
 The actual rendering logic (`renderWeeklyPlan`, `renderCheckpointSheet`,
@@ -744,7 +772,9 @@ Jalur D adalah pengayaan di luar rumusan CP; minggu jalur ini tidak dihitung seb
 ### `osn render modul`
 
 Renders one learning module of the programme (`--program`, default
-`osn`; `sma-coding` is also supported, issue #106) from
+`osn`; every programme with a `modules.json` is supported: `sma-coding`,
+issue #106, and `tk-coding`, `sd-coding`, `smp-coding`, `kuliah-coding` and
+`dewasa-coding`, ADR-0008) from
 `data/<program>/modules.json` and its Markdown body under
 `content/<program>/modules/`. Unlike the other renderers this output is
 **authored content** (ADR-0007), not derived from the syllabus, so its
@@ -754,20 +784,103 @@ status is `disetujui`, a banner as the first line after the title --
 `> **DRAF — sedang ditinjau, belum disetujui.**` (`ditinjau`) or
 `> **DITARIK — jangan dipakai.**` (`ditarik`); the module body verbatim;
 `## Rujukan` (each `refId` resolved against the programme's
-`references.json`, or the explicit title and URL; `sma-coding` modules
-only have explicit references); and a footer with the
+`references.json`, or the explicit title and URL; the modules of every
+programme but `osn` only have explicit references); and a footer with the
 status, the programme and, for `disetujui`, the approval date and the
-reviewer's role. Output is byte-deterministic.
+reviewer's role. A `tk-coding` module that records a `cpOverlap` adds the
+footer line `Irisan penafsiran dengan CP Fase Fondasi (bukan pemenuhan CP):
+<kode>.` Output is byte-deterministic.
 
 An unknown `--id` (the error lists the known ids), a missing `--id`, a
-programme without `modules.json` (today `sma-coding` until its index is
-added: the message is `this programme has no modules.json`), an invalid index, a missing or blank
-body, or a dangling `refId` is exit `2` (run `osn validate` for the
-full findings).
+programme without `modules.json` (the message is `this programme has no
+modules.json`), an invalid index, a missing or blank body, or a dangling
+`refId` is exit `2` (run `osn validate` for the full findings).
 
 | Flag | Meaning |
 | --- | --- |
 | `--id <id>` | The module id. **Required.** |
+| `--lembar` | `tk-coding` and `sd-coding` only: render the child's learner sheet instead of the teacher guide. Exit `2` for any other programme or any other `render` subcommand. |
+
+#### Examples (synthetic fixture)
+
+The examples below were produced against a temporary copy of the repository
+with a synthetic `data/tk-coding/modules.json` and synthetic content files
+(`tk-a1-m1`); the repository itself has no module index for these
+programmes yet.
+
+A `tk-coding` module is a **teacher guide**; its status banner is the same as
+for every programme, and `cpOverlap` is shown as an interpreted overlap:
+
+```text
+$ osn render modul --program tk-coding --id tk-a1-m1
+# Kegiatan sehari-hariku
+
+> **DRAF — belum ditinjau.** Modul ini ditulis oleh tim (termasuk draf yang disusun agen AI) dan belum ditinjau oleh manusia. Isinya dapat memuat kekeliruan; periksa ke rujukan resmi di bagian bawah sebelum dipakai.
+
+## Tujuan
+
+Anak menyebut dua kegiatan yang berurutan.
+
+## Rujukan
+- Rujukan sintetis untuk uji <https://contoh.example/rujukan>
+
+---
+Status modul: draf.
+Program: Silabus Pembelajaran Coding TK/PAUD (Berpikir Komputasional) (tk-coding).
+Irisan penafsiran dengan CP Fase Fondasi (bukan pemenuhan CP): FF-DL-b.
+```
+
+`--lembar` renders the separate sheet for the child (`content/tk-coding/lembar/tk-a1-m1.md`):
+same title and banner, a `**Lembar anak**` label, the sheet verbatim and a
+footer with status and programme; no `## Rujukan` section.
+
+```text
+$ osn render modul --program tk-coding --id tk-a1-m1 --lembar
+# Kegiatan sehari-hariku
+
+**Lembar anak**
+
+> **DRAF — belum ditinjau.** Modul ini ditulis oleh tim (termasuk draf yang disusun agen AI) dan belum ditinjau oleh manusia. Isinya dapat memuat kekeliruan; periksa ke rujukan resmi di bagian bawah sebelum dipakai.
+
+## Tempel urutannya
+
+Tempel gambar cuci tangan, lalu gambar makan.
+
+---
+Status modul: draf.
+Program: Silabus Pembelajaran Coding TK/PAUD (Berpikir Komputasional) (tk-coding).
+```
+
+A child's sheet must have **no name or identity field of the child**
+(privacy, ADR-0004; `src/domain/learner-sheet.ts`): a heading, a table
+header or a fill-in line such as `Nama:`, `Nama anak`, `NIS`, `Tanggal
+lahir`, `Alamat`, `Identitas` -- bare or filled in. The renderer refuses such
+a sheet (exit `1`, nothing on stdout) and `osn validate` reports it. A line
+that merely begins with the word (`Nama binatang: kucing`) is not a field.
+
+```text
+$ osn render modul --program tk-coding --id tk-a1-m1 --lembar
+osn render modul: the learner sheet of "Kegiatan sehari-hariku" has a name or identity field of the child: line 3 ("Nama: ______"). A child's sheet carries none; remove it from the sheet.
+[exit 1]
+
+$ osn render modul --program smp-coding --id x --lembar
+osn render modul: --lembar berlaku untuk program tk-coding dan sd-coding saja (panduan guru plus lembar anak); program smp-coding tidak punya lembar anak.
+[exit 2]
+```
+
+The other programmes (`smp-coding`, `kuliah-coding`, `dewasa-coding`)
+render exactly like `sma-coding` modules: the guide for the pupil, student
+or participant, with its own `Program:` footer line.
+
+`plan` and `render lembar-siswa` still refuse these programmes (they read
+the OSN corpus, or only `sma-coding`'s); the message is honest about it and
+names `render modul`:
+
+```text
+$ osn plan --program tk-coding --track A
+osn plan: belum didukung untuk program tk-coding: perintah ini membaca corpus OSN (program "osn") saja dan tidak akan menyajikannya sebagai data tk-coding. "osn plan" dan "osn render lembar-siswa" hanya tersedia untuk program "osn" dan "sma-coding"; program tk-coding didukung oleh "osn render modul --program tk-coding --id <id>" (tambahkan --lembar untuk lembar anak; perlu data/tk-coding/modules.json), "osn validate --program tk-coding" dan "bun run check:fidelity --program tk-coding".
+[exit 2]
+```
 
 ### Checking a module's code examples
 
@@ -782,7 +895,7 @@ fails to compile or when `g++` is not installed.
 
 | Flag | Meaning |
 | --- | --- |
-| `--program <id>` | The registered programme whose corpus to use. Default `osn`; an unknown id is exit `2`. `sma-coding` is supported by `render lembar-siswa` (with a week code, see below) and `render modul`; `weekly`, `checkpoint` and `sop` read the OSN corpus only and exit `2` with "belum didukung untuk program <id>" for every programme other than `osn`; the five other coding programmes (everything but `osn` and `sma-coding`) also refuse `render lembar-siswa` the same way, and `render modul` with "this programme has no modules.json". |
+| `--program <id>` | The registered programme whose corpus to use. Default `osn`; an unknown id is exit `2`. `sma-coding` is supported by `render lembar-siswa` (with a week code, see below) and `render modul`; `weekly`, `checkpoint` and `sop` read the OSN corpus only and exit `2` with "belum didukung untuk program <id>" for every programme other than `osn`; the five other coding programmes (everything but `osn` and `sma-coding`) also refuse `render lembar-siswa` the same way (the message now names `render modul`), and support `render modul` once they have a `modules.json` (`--lembar` for `tk-coding` and `sd-coding`), else exit `2` with "this programme has no modules.json". |
 | `--out <path>` | Write the rendered Markdown to this path instead of printing it to stdout. Resolved against the process's current working directory. |
 | `--force` | Required to overwrite a file that already exists at `--out`. Without it, an existing file is left byte-for-byte untouched (the write itself never opens the file for truncation) and the command exits `2` -- a mentor should never silently lose an edited worksheet to a repeated `osn render ... --out` invocation. |
 
