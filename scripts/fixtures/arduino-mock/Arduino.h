@@ -9,6 +9,7 @@
 // badan fungsi.
 #pragma once
 
+#include <math.h>  // Arduino.h asli juga menyertakan math.h (NAN, isnan, sqrt).
 #include <stddef.h>
 #include <stdint.h>
 
@@ -101,6 +102,14 @@ class TwoWire {};
 extern TwoWire Wire;
 class WiFiClass {};
 extern WiFiClass WiFi;
+
+// Nada dan LEDC inti Arduino-ESP32 (nama mengikuti dokumentasi Espressif 3.x).
+void tone(uint8_t pin, unsigned int frequency, unsigned long duration = 0);
+void noTone(uint8_t pin);
+bool ledcAttach(uint8_t pin, uint32_t freq, uint8_t resolution);
+uint32_t ledcWrite(uint8_t pin, uint32_t duty);
+uint32_t ledcWriteTone(uint8_t pin, uint32_t freq);
+bool ledcDetach(uint8_t pin);
 
 // Titik masuk sketsa: cukup dideklarasikan; sketsa mendefinisikannya.
 void setup();

@@ -37,7 +37,7 @@ Setelah modul ini kamu dapat:
 Baca program ini dan **tebak dulu, tulis jawabanmu, baru telusuri**. Sensor melaporkan suhu 30,0.
 
 ```arduino
-// Arduino-C++ untuk ESP32. Tidak dikompilasi oleh check:module-code.
+// Arduino-C++ untuk ESP32. Diperiksa check:module-code terhadap header tiruan (sintaks dan tipe saja, bukan bukti perilaku papan).
 #include <PustakaSensor.h>
 
 SensorIklim sensor(4);
@@ -66,7 +66,7 @@ Pustaka adalah kumpulan fungsi siap pakai. Kamu tidak menulis ulang cara papan "
 Sensor butuh jeda antar pembacaan; lamanya tertulis di lembar data sensormu (contoh di sini 2 detik `[belum terverifikasi]`), dan membaca terlalu sering menghasilkan nilai yang tidak bisa dipercaya. Bila pembacaan gagal, pustaka mengembalikan nilai khusus NaN ("bukan angka"). NaN tidak boleh dipakai seperti suhu: kamu memeriksanya dengan `isnan()` lebih dulu.
 
 ```arduino
-// Arduino-C++ untuk ESP32. Tidak dikompilasi oleh check:module-code.
+// Arduino-C++ untuk ESP32. Diperiksa check:module-code terhadap header tiruan (sintaks dan tipe saja, bukan bukti perilaku papan).
 // SensorIklim adalah pustaka contoh karangan; pustaka sungguhan punya nama sendiri.
 #include <PustakaSensor.h>
 

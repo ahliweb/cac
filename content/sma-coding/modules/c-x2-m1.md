@@ -35,7 +35,7 @@ Setelah modul ini kamu dapat:
 Baca program dan keterangan rangkaian ini, lalu **tebak dulu, tulis jawabanmu, baru telusuri**.
 
 ```arduino
-// Arduino-C++ untuk ESP32. Tidak dikompilasi oleh check:module-code.
+// Arduino-C++ untuk ESP32. Diperiksa check:module-code terhadap header tiruan (sintaks dan tipe saja, bukan bukti perilaku papan).
 const int PIN_LED = 2;
 
 void setup() {

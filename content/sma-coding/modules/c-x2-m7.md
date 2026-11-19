@@ -29,7 +29,7 @@ Setelah modul ini kamu dapat:
 Baca program ini dan **tebak dulu, tulis jawabanmu, baru telusuri**. Tombol memakai `INPUT_PULLUP`.
 
 ```arduino
-// Arduino-C++ untuk ESP32. Tidak dikompilasi oleh check:module-code.
+// Arduino-C++ untuk ESP32. Diperiksa check:module-code terhadap header tiruan (sintaks dan tipe saja, bukan bukti perilaku papan).
 const int PIN_LED = 2;
 const int PIN_TOMBOL = 15;
 
@@ -71,7 +71,7 @@ Selang waktu selalu dihitung sebagai **selisih**: `sekarang - mulai >= durasi`. 
 Diagram keadaannya berupa lingkaran: MERAH ke HIJAU ke KUNING lalu kembali ke MERAH. Kode di bawah memetakan tiap keadaan menjadi satu nilai `enum`, dan seluruh perilaku ada di satu fungsi `loop()` yang kecil.
 
 ```arduino
-// Arduino-C++ untuk ESP32. Tidak dikompilasi oleh check:module-code.
+// Arduino-C++ untuk ESP32. Diperiksa check:module-code terhadap header tiruan (sintaks dan tipe saja, bukan bukti perilaku papan).
 const int PIN_MERAH = 25;    // contoh; periksa papanmu
 const int PIN_HIJAU = 26;
 const int PIN_KUNING = 27;

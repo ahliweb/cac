@@ -49,7 +49,7 @@ Perintahnya `analogWrite(pin, nilai)`. Menurut dokumentasi Arduino-ESP32 (versi 
 Potensiometer adalah pembagi tegangan yang diputar tangan: kaki tengahnya ke pin masukan analog menghasilkan nilai dari ujung bawah ke ujung atas. Pembacaan 0 sampai 4095 pada contoh ini mengikuti modul sebelumnya `[belum terverifikasi]` untuk papanmu. Dalam praktik potensiometer jarang mencapai tepat 0 dan 4095, sama seperti ambang cahaya yang harus diukur. Maka batas bawah dan atas diukur lalu dipakai untuk `constrain()` (membatasi nilai) dan `map()`.
 
 ```arduino
-// Arduino-C++ untuk ESP32. Tidak dikompilasi oleh check:module-code.
+// Arduino-C++ untuk ESP32. Diperiksa check:module-code terhadap header tiruan (sintaks dan tipe saja, bukan bukti perilaku papan).
 const int PIN_POT = 34;      // contoh; periksa papanmu
 const int PIN_LED = 5;       // contoh; periksa papanmu
 const int POT_MIN = 40;      // ukur sendiri; ini contoh

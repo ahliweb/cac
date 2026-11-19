@@ -45,7 +45,7 @@ Kita butuh tiga hal: larik `jendela` berukuran `N`, penghitung `terisi` yang men
 Program berikut untuk papan membaca masukan analog tiap 200 ms, menaruhnya di jendela, dan mencetak nilai mentah beserta rata-ratanya.
 
 ```arduino
-// Arduino-C++ untuk ESP32. Tidak dikompilasi oleh check:module-code.
+// Arduino-C++ untuk ESP32. Diperiksa check:module-code terhadap header tiruan (sintaks dan tipe saja, bukan bukti perilaku papan).
 const int PIN_SENSOR = 34;   // contoh; periksa papanmu
 const int N = 5;             // ukuran jendela
 float jendela[N];

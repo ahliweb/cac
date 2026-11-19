@@ -39,7 +39,7 @@ Setelah modul ini kamu dapat:
 Baca program ini dan **tebak dulu, tulis jawabanmu, baru telusuri**. Palang hanya bisa bergerak sampai 90 derajat.
 
 ```arduino
-// Arduino-C++ untuk ESP32. Tidak dikompilasi oleh check:module-code.
+// Arduino-C++ untuk ESP32. Diperiksa check:module-code terhadap header tiruan (sintaks dan tipe saja, bukan bukti perilaku papan).
 #include <ESP32Servo.h>
 
 Servo servo;
@@ -68,7 +68,7 @@ Servo adalah motor kecil dengan pengatur sendiri. Kamu tidak mengatur kecepatan 
 Karena lengan palang punya batas mekanik, sudut dikirim lewat fungsi `batasiSudut()` yang menjepit nilai ke rentang aman. Fungsi sekecil ini bisa diuji sendiri di komputer tanpa servo, termasuk di batasnya. Untuk buzzer ada dua jenis. **Buzzer aktif** punya pembangkit nada sendiri: ia berbunyi dengan nada tetap bila diberi daya, dan program hanya menghidupkan atau mematikannya. **Buzzer pasif** perlu sinyal berfrekuensi: nada ditentukan frekuensi yang kamu berikan, dalam hertz. Sebagai patokan, 440 Hz adalah nada A standar, dan menggandakan frekuensi menaikkan nada satu oktaf. Pada contoh ini buzzer pasif dibunyikan dengan `ledcWriteTone(pin, frekuensi)`, dan frekuensi 0 mendiamkannya. Dokumentasi Arduino-ESP32 (versi "latest" per 2026-11-19) menyebut pin harus disiapkan lebih dulu, dengan `ledcAttach(pin, frekuensi, resolusi)` di `setup()`; fungsi ini bisa berbeda di versi inti papanmu.
 
 ```arduino
-// Arduino-C++ untuk ESP32. Tidak dikompilasi oleh check:module-code.
+// Arduino-C++ untuk ESP32. Diperiksa check:module-code terhadap header tiruan (sintaks dan tipe saja, bukan bukti perilaku papan).
 // Pustaka servo untuk ESP32 biasanya terpisah dan namanya bisa berbeda [belum terverifikasi].
 #include <ESP32Servo.h>
 
