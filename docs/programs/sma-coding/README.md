@@ -1,6 +1,6 @@
 # Program Pembelajaran Coding SMA (`sma-coding`)
 
-- **Version:** v1.10.1
+- **Version:** v1.11.0
 - **Last updated:** 2026-11-19
 - **Status:** Silabus v1.3 (butir dan kebijakan AI, issue #139) dan sebelumnya v1.2 DISETUJUI pemilik program (2026-11-19) untuk jalur A, B, C, D, dan E, termasuk blok fondasi kelas X (v1.1: 2026-11-19; v1.0: 2026-11-18); jalur D dan E di luar rumusan CP (pengayaan); rancangan seri matematika komputasi, seri cloud, dan modul pendamping DISETUJUI pemilik (2026-11-19), 239 modul drafnya ada di `content/sma-coding/modules/` dan terindeks di `data/sma-coding/modules.json` (29 modul fondasi, matematika komputasi, cloud, dan pendamping, termasuk 6 modul fondasi dan 2 modul pendamping lintas jalur untuk F-LD-d dan F-LD-e, #105; ditambah 210 modul mingguan jalur C, D, dan E, #124), berstatus draf sampai ditinjau pemilik; draf jalur C, D, dan E disetujui pemilik 2026-11-19 beserta semua rekomendasi dan sudah masuk silabus v1.2 (dokumen drafnya tetap sebagai riwayat). Revisi v1.4.0 (kemampuan masuk dari SMP dan penempatan di blok fondasi, bagian 3.0) disetujui lewat keputusan pemilik 2026-11-19 (issue #177).
 
@@ -17,10 +17,10 @@
 > juga menyetujui **rancangan** tiga seri modul (matematika komputasi #87,
 > cloud #89, pendamping literasi digital #69) beserta seluruh rekomendasinya;
 > persetujuan itu atas rancangan, bukan atas isi modul. **Modul sma-coding
-> sudah ada tetapi berstatus `draf`**: 239 modul ada di
+> sudah ada tetapi berstatus `draf`**: 253 modul ada di
 > `content/sma-coding/modules/` dan terindeks di `data/sma-coding/modules.json`
 > (29 modul lintas jalur: 6 fondasi kelas X, 7 matematika komputasi, 7 cloud,
-> dan 9 pendamping literasi digital; ditambah 210 modul mingguan: jalur C 77,
+> dan 9 pendamping literasi digital; ditambah 224 modul mingguan: jalur A 7, B 7, C 77,
 > D 77, E 56, [#124](https://github.com/ahliweb/osn/issues/124));
 > semuanya menunggu tinjauan pemilik
 > ([#125](https://github.com/ahliweb/osn/issues/125)). Jalur A dan B tidak
@@ -58,7 +58,7 @@ disetujui pemilik 2026-11-19 (#69); sembilan modul draf `pendamping-*` ada di
 ## Modul belajar
 
 Status per 2026-11-19, dihitung dari `data/sma-coding/modules.json` dan
-`content/sma-coding/modules/` (239 entri dan 239 berkas, semuanya `draf`,
+`content/sma-coding/modules/` (253 entri dan 253 berkas, semuanya `draf`,
 belum ditinjau pemilik):
 
 | Kelompok | Jumlah | Id | Rancangan |
@@ -70,7 +70,8 @@ belum ditinjau pemilik):
 | Jalur C (IoT dan robotika) | 77 | `c-x1-m1` .. `c-xii2-m14` | [`rancangan-modul-cde.md`](rancangan-modul-cde.md) |
 | Jalur D (AI dan data) | 77 | `d-x1-m1` .. `d-xii2-m14` | [`rancangan-modul-cde.md`](rancangan-modul-cde.md) |
 | Jalur E (kuantum) | 56 | `e-xi1-m1` .. `e-xii2-m14` | [`rancangan-modul-cde.md`](rancangan-modul-cde.md) |
-| Jalur A dan B | 0 | (tidak ada modul mingguan) | belum dirancang |
+| Jalur A (algoritmik C++) | 7 | `a-x1-m8` .. | [`rancangan-modul-ab.md`](rancangan-modul-ab.md) |
+| Jalur B (web JS/TS/Bun) | 7 | `b-x1-m8` .. | [`rancangan-modul-ab.md`](rancangan-modul-ab.md) |
 
 Tidak ada `lembar/` dan `gambar/` untuk program ini. Butir yang perlu dicek
 peninjau manusia (#125) dikumpulkan di
@@ -134,6 +135,7 @@ persetujuan atas nama pemilik.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v1.11.0 | 2026-11-19 | Modul jalur A dan B mulai ditulis (#237, rancangan `rancangan-modul-ab.md`): putaran P1, 14 modul draf `a-x1-m8..m14` dan `b-x1-m8..m14`; jumlah modul dan tabel kelompok diperbarui. |
 | v1.10.1 | 2026-11-19 | Silabus direvisi patch ke v1.4.1 atas instruksi pemilik 2026-11-19 (#238): dasar hukum siber diselaraskan dengan UU 1/2023 (KUHP); isi kurikulum selain rumusan dasar hukum tidak berubah. |
 | v1.10.0 | 2026-11-19 | Sinkron dokumen (#124): 239 modul draf di `content/sma-coding/modules/` dan `data/sma-coding/modules.json` (29 lintas jalur ditambah 210 modul jalur C, D, E); bagian "Modul belajar" baru; `rancangan-modul-cde.md` dan folder pilot masuk daftar berkas; jalur A dan B tercatat tanpa modul mingguan; isi silabus dan corpus tidak berubah. |
 | v1.9.0 | 2026-11-19 | Silabus v1.4.0 disetujui (issue #177, keputusan pemilik K1, K3, K7): subbagian baru di bagian 3.0 "Kemampuan masuk dari SMP dan penempatan di blok fondasi" (tidak mensyaratkan SMP; irisan minggu SMP dengan fondasi dan jalur A, B; pengamatan awal dan tugas pendalaman di kelas bersama), dicerminkan di `data/sma-coding/smp-bridge.json` (8 berkas korpus); kode minggu, jumlah minggu, pemetaan CP, dan jalur tidak berubah. |
