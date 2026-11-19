@@ -290,7 +290,7 @@
       "moduleCodes": ["DW-PRS-M2"],
       "skkniUnits": [],
       "track": "PRS",
-      "prerequisites": ["DW-PRS-M1"],
+      "prerequisites": ["dw-prs-m1"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-prs-m2.md"
     },
@@ -558,7 +558,7 @@
       "moduleCodes": ["DW-BIS-M6"],
       "skkniUnits": [],
       "track": "BIS",
-      "prerequisites": ["DW-BIS-M5"],
+      "prerequisites": ["dw-bis-m5"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-bis-m6.md"
     },
@@ -680,7 +680,7 @@
       "moduleCodes": ["DW-PRO-M3"],
       "skkniUnits": ["J.620100.004.02", "J.620100.022.02"],
       "track": "PRO",
-      "prerequisites": ["DW-PRO-M2"],
+      "prerequisites": ["dw-pro-m2"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-pro-m3.md"
     },
@@ -836,7 +836,7 @@
       "moduleCodes": ["DW-PRO-M7"],
       "skkniUnits": ["J.620100.020.02", "J.620100.021.02", "J.620100.007.01"],
       "track": "PRO",
-      "prerequisites": ["DW-PRO-M6"],
+      "prerequisites": ["dw-pro-m6"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-pro-m7.md"
     },
