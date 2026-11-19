@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 430" width="500" height="430" role="img" aria-labelledby="t d">
+  <title id="t">Diagram alir dengan simbol keputusan</title>
+  <desc id="d">Diagram alir: oval MULAI, belah ketupat Hujan, panah ya ke kotak Bawa payung, panah tidak ke kotak Pakai topi, keduanya bertemu di oval SELESAI.</desc>
+  <rect width="500" height="430" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444444"/>
+    </marker>
+  </defs>
+  <ellipse cx="250" cy="30" rx="60" ry="18" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="250" y="35" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#222222">MULAI</text>
+  <polyline points="250,48 250,80" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <polygon points="250,80 330,120 250,160 170,120" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+  <text x="250" y="125" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#222222">Hujan?</text>
+  <polyline points="170,120 110,120 110,218" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <text x="140" y="112" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#222222">ya</text>
+  <polyline points="330,120 390,120 390,218" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <text x="360" y="112" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#222222">tidak</text>
+  <rect x="35" y="220" width="150" height="40" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+  <text x="110" y="245" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#222222">Bawa payung</text>
+  <rect x="315" y="220" width="150" height="40" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+  <text x="390" y="245" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#222222">Pakai topi</text>
+  <polyline points="110,260 110,320 250,320" stroke="#444444" stroke-width="2" fill="none"/>
+  <polyline points="390,260 390,320 250,320" stroke="#444444" stroke-width="2" fill="none"/>
+  <polyline points="250,320 250,340" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <ellipse cx="250" cy="358" rx="60" ry="18" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="250" y="363" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#222222">SELESAI</text>
+  <text x="250" y="412" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#222222">Belah ketupat berisi pertanyaan. Dua panah keluar: ya dan tidak.</text>
+</svg>
