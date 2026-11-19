@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280" width="640" height="280" role="img" aria-labelledby="t d">
+  <title id="t">Barisan enam kartu acak dan barisan yang sudah urut</title>
+  <desc id="d">Dua baris kartu. Baris atas, acak: 6, 2, 8, 1, 5, 3, dengan kartu 1 dilingkari. Baris bawah, urut dari kecil ke besar: 1, 2, 3, 5, 6, 8.</desc>
+  <rect width="640" height="280" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="16" fill="#222222">
+    <text x="20" y="22" font-weight="bold">Acak</text>
+    <text x="20" y="172" font-weight="bold">Urut</text>
+  </g>
+  <g fill="#ffffff" stroke="#2a5d9f" stroke-width="3">
+    <rect x="30" y="35" width="75" height="85" rx="8"/>
+    <rect x="125" y="35" width="75" height="85" rx="8"/>
+    <rect x="220" y="35" width="75" height="85" rx="8"/>
+    <rect x="315" y="35" width="75" height="85" rx="8"/>
+    <rect x="410" y="35" width="75" height="85" rx="8"/>
+    <rect x="505" y="35" width="75" height="85" rx="8"/>
+  </g>
+  <g font-family="sans-serif" font-size="44" font-weight="bold" fill="#2a5d9f" text-anchor="middle">
+    <text x="67" y="94">6</text>
+    <text x="162" y="94">2</text>
+    <text x="257" y="94">8</text>
+    <text x="352" y="94">1</text>
+    <text x="447" y="94">5</text>
+    <text x="542" y="94">3</text>
+  </g>
+  <ellipse cx="352" cy="77" rx="52" ry="58" fill="none" stroke="#d94f4f" stroke-width="3"/>
+  <g fill="#fffdf5" stroke="#3b7d1f" stroke-width="3">
+    <rect x="30" y="195" width="75" height="85" rx="8" transform="translate(0,-10)"/>
+    <rect x="125" y="195" width="75" height="85" rx="8" transform="translate(0,-10)"/>
+    <rect x="220" y="195" width="75" height="85" rx="8" transform="translate(0,-10)"/>
+    <rect x="315" y="195" width="75" height="85" rx="8" transform="translate(0,-10)"/>
+    <rect x="410" y="195" width="75" height="85" rx="8" transform="translate(0,-10)"/>
+    <rect x="505" y="195" width="75" height="85" rx="8" transform="translate(0,-10)"/>
+  </g>
+  <g font-family="sans-serif" font-size="44" font-weight="bold" fill="#3b7d1f" text-anchor="middle">
+    <text x="67" y="254">1</text>
+    <text x="162" y="254">2</text>
+    <text x="257" y="254">3</text>
+    <text x="352" y="254">5</text>
+    <text x="447" y="254">6</text>
+    <text x="542" y="254">8</text>
+  </g>
+</svg>

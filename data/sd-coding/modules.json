@@ -1193,6 +1193,139 @@
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd4-1-m7.md",
       "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m7.md"
+    },
+    {
+      "id": "sd3-1-m1",
+      "title": "Algoritma sebagai resep atau rute",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD3-1-M1"],
+      "cpItems": [],
+      "gradeLevels": [3],
+      "prerequisites": ["SD2-1-M5"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd3-1-m1.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m1.md"
+    },
+    {
+      "id": "sd3-1-m2",
+      "title": "Algoritma tertulis dengan kosakata terbatas",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD3-1-M2"],
+      "cpItems": [],
+      "gradeLevels": [3],
+      "prerequisites": ["SD2-1-M1", "SD2-1-M2"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd3-1-m2.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m2.md"
+    },
+    {
+      "id": "sd3-1-m3",
+      "title": "Variabel: kotak berlabel",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD3-1-M3"],
+      "cpItems": [],
+      "gradeLevels": [3],
+      "prerequisites": [],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd3-1-m3.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m3.md"
+    },
+    {
+      "id": "sd3-1-m4",
+      "title": "Percabangan jika-maka-jika tidak",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD3-1-M4"],
+      "cpItems": [],
+      "gradeLevels": [3],
+      "prerequisites": ["SD2-1-M8", "SD2-1-M9"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd3-1-m4.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m4.md"
+    },
+    {
+      "id": "sd3-1-m5",
+      "title": "Pengulangan dengan syarat",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD3-1-M5"],
+      "cpItems": [],
+      "gradeLevels": [3],
+      "prerequisites": ["SD2-1-M3", "SD2-1-M4"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd3-1-m5.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m5.md"
+    },
+    {
+      "id": "sd3-1-m6",
+      "title": "Menggabungkan pengulangan dan percabangan",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD3-1-M6"],
+      "cpItems": [],
+      "gradeLevels": [3],
+      "prerequisites": ["SD3-1-M4", "SD3-1-M5"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd3-1-m6.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m6.md"
+    },
+    {
+      "id": "sd3-1-m7",
+      "title": "Mengurutkan kartu bilangan",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD3-1-M7"],
+      "cpItems": [],
+      "gradeLevels": [3],
+      "prerequisites": [],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd3-1-m7.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m7.md"
     }
   ]
 }
