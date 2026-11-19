@@ -1,9 +1,9 @@
 # Silabus Pembelajaran Coding TK/PAUD (Berpikir Komputasional) — v1.0
 
-- **Version:** v1.0.1
+- **Version:** v1.0.2
 - **Last updated:** 2026-11-19
-- **Status:** DISETUJUI pemilik program, 2026-11-19, beserta rekomendasi penyusun untuk setiap pertanyaan terbuka (keputusan lewat dialog pilihan, dicatat di issue #127; bagian 9). Rencana 48 minggu tanpa layar sebagai bawaan.
-- **Changeset:** Silabus v1.0 disetujui pemilik: draf v0.1.0-draf dipertahankan isinya; pertanyaan terbuka (bagian 9) diganti keputusan pemilik (opsi rekomendasi tiap pertanyaan); `silabus-draf.md` menjadi `silabus.md`, sumber corpus `data/tk-coding/` (issue #127, ADR-0006, ADR-0008). Revisi patch v1.0.1 (#165): kalimat status yang basi; isi kurikulum tidak berubah.
+- **Status:** DISETUJUI pemilik program, 2026-11-19, beserta rekomendasi penyusun untuk setiap pertanyaan terbuka (keputusan lewat dialog pilihan, dicatat di issue #127; bagian 9). Rencana 48 minggu tanpa layar sebagai bawaan. Revisi patch v1.0.2 (jembatan ke SD, bagian 5) dicatat lewat keputusan pemilik 2026-11-19 (issue #177); isi kurikulum TK tidak berubah.
+- **Changeset:** Silabus v1.0 disetujui pemilik: draf v0.1.0-draf dipertahankan isinya; pertanyaan terbuka (bagian 9) diganti keputusan pemilik (opsi rekomendasi tiap pertanyaan); `silabus-draf.md` menjadi `silabus.md`, sumber corpus `data/tk-coding/` (issue #127, ADR-0006, ADR-0008). Revisi patch v1.0.1 (#165): kalimat status yang basi; isi kurikulum tidak berubah. Revisi patch v1.0.2 (#177): bagian 5 (jembatan ke SD) diselaraskan setelah silabus `sd-coding` dibaca: rujukan minggu dikoreksi (`TK-B2-M1` melatih arah dan ulang, bukan pola; `TK-B1-M6` ditambahkan untuk pola), kolom kedua menyebut butir pengenalan SD kelas 1-2 dengan kode minggu SD (bukan lagi "Fase A", karena kelas 1-4 SD di luar struktur KKA), kosakata dan simbol arah disamakan lewat kesepakatan simbol bersama, dan jalur padat untuk pengulangan; Q8 terpenuhi; isi kurikulum TK tidak berubah.
 
 > **Disetujui pemilik program pada 2026-11-19** (keputusan lewat dialog
 > dengan opsi rekomendasi penyusun untuk setiap pertanyaan; bagian 9, issue
@@ -239,18 +239,17 @@ memenuhi CP secara utuh lewat kegiatan lain TK; program ini hanya
 ## 5. Jembatan ke program SD
 
 - **Kebijakan.** Kepka 046/H/KR/2025 Diktum KEENAM: CP Fase A "disusun selaras dengan Capaian Pembelajaran pada fase fondasi untuk memastikan transisi pembelajaran yang berkesinambungan dari PAUD ke SD" (kutipan penuh enam kemampuan fondasi di riset 2.1). Mata pelajaran koding dan KA pilihan dimulai kelas V SD menurut halaman BBPMP yang dibuka (riset 2.5), bukan di PAUD.
-- **Program `sd-coding`.** Silabus `sd-coding` (issue #128) disetujui pemilik pada 2026-11-19 dan kini ada di `docs/programs/sd-coding/silabus.md`. Jembatan berikut disusun sebelum silabus itu dibaca, bersifat rancangan sepihak, dan **harus disesuaikan** dengannya `[belum terverifikasi]`.
+- **Program `sd-coding`.** Silabus `sd-coding` (disetujui pemilik pada 2026-11-19) sudah dibaca dan jembatan berikut dipetakan ke kode minggunya (`docs/programs/sd-coding/silabus.md` bagian 5 dan 7.1). Kelas 1-4 SD berada di luar struktur KKA dan berupa pengenalan opsional, sehingga keluaran TK B bukan prasyarat SD dan SD tidak memakai istilah "Fase A" untuk kelas 1; kolom kedua tabel menyebut butir pengenalan SD yang disentuh. Keluaran TK B sudah mencakup, dan di beberapa butir melampaui, kemampuan masuk kelas 1, sehingga yang perlu diatur adalah pengulangan, bukan celah `[asumsi]`.
 
-| Keluaran akhir TK B | Prasyarat untuk SD awal (Fase A) | Catatan |
+| Keluaran akhir TK B | Butir pengenalan SD yang disentuh (kelas 1-2) | Catatan |
 | --- | --- | --- |
-| Menyusun dan membetulkan urutan 3-4 langkah (`TK-B1-M2`, `TK-B2-M4`) | Mengurutkan langkah penyelesaian tugas | `[asumsi]` |
-| Membuat dan melanjutkan pola (`TK-B1-M4`, `TK-B2-M1`) | Pola bilangan dan bentuk | `[asumsi]` |
-| Kartu arah dan "program" di kisi (`TK-B2-M3`) | Instruksi dan algoritma sederhana tanpa layar | `[asumsi]` |
-| Mengelompokkan dengan dua aturan (`TK-B1-M7`) | Klasifikasi dan tabel data | `[asumsi]` |
-| Aturan memakai perangkat digital (`TK-B2-M9`) | Literasi digital dasar dan keamanan | `[asumsi]` |
+| Menyusun dan membetulkan urutan 3-4 langkah (`TK-B1-M2`, `TK-B2-M4`) | Mengurutkan langkah penyelesaian tugas (`SD1-1-M2`, `SD1-1-M3`, `SD1-1-M10`; lanjutannya `SD2-1-M6`, `SD2-1-M7`) | `[asumsi]` Murid yang terlihat menguasainya tidak mengulang urutan penuh di kelas 1 (`sd-coding` bagian 7.1). |
+| Membuat dan melanjutkan pola (`TK-B1-M4`, `TK-B1-M6`) | Pola warna, bentuk, gerak, dan bunyi (`SD1-1-M5`, `SD1-1-M6`, `SD2-1-M4`) | `[asumsi]` Rujukan minggu dikoreksi dari v1.0.1: `TK-B2-M1` melatih arah dan ulang, bukan pola. |
+| Kartu arah, kartu ulang, dan "program" di kisi (`TK-B1-M5`, `TK-B2-M1`, `TK-B2-M3`) | Instruksi dan algoritma sederhana tanpa layar (`SD1-1-M4`, `SD1-1-M7`, `SD1-1-M8`, `SD2-1-M1`, `SD2-1-M3`) | `[asumsi]` Simbol arah dan kata "ulang" sama dengan TK bila murid mengenalnya; bila tidak, kelas 1 menyepakati simbol bersama di awal tahun (`sd-coding` bagian 13, nomor 5). |
+| Mengelompokkan dengan dua aturan dan membaca gambar data (`TK-B1-M7`, `TK-B1-M8`) | Klasifikasi dan tabel data (`SD1-2-M1`, `SD1-2-M2`, `SD1-2-M3`; tabel baru di `SD3-2-M3`) | `[asumsi]` Piktogram TK mendahului tabel SD; kelas 1 tidak perlu mengulang pengelompokan satu sifat bagi murid yang terlihat menguasainya. |
+| Aturan memakai perangkat digital (`TK-B2-M9`) | Literasi digital dasar dan keamanan (`SD1-2-M4`, `SD1-2-M8`, `SD1-2-M9`) | `[asumsi]` Diulang dengan jarak waktu, bukan dipadatkan: aturan keamanan perangkat tidak dilewati karena murid sudah pernah mendengarnya. |
 
-Setelah `sd-coding` disetujui, kode jembatan ke kode minggu SD dicatat di sini
-dan di pertanyaan Q8 (bagian 9).
+Q8 (bagian 9) terpenuhi oleh revisi ini: kode jembatan kini menyebut kode minggu SD. Pembawa informasi dari TK ke SD adalah ringkasan naratif akhir TK B (`TK-B2-M12`) yang tetap di sekolah dan keluarga; repositori ini tidak memuat berkas anak (ADR-0004). SD mengamati murid kelas 1 dengan ceklis "terlihat" dan "belum terlihat" yang sama bentuknya dengan bagian 6.1, tanpa tes dan tanpa nilai angka.
 
 ## 6. Asesmen, peran guru, dan peran orang tua
 
@@ -335,7 +334,7 @@ konsekuensinya.
 | Q5 | Penamaan program | (a) Id `tk-coding`, tetapi isi dokumen memakai istilah resmi "berpikir komputasional" | Konsisten dengan kebijakan; id tetap sejajar `sma-coding`. |
 | Q6 | Alat opsional | (a) Tidak memakai alat berbayar; robot lantai dan aplikasi hanya catatan opsional | Tidak butuh anggaran perangkat. |
 | Q7 | Pemakaian bahan CS Unplugged (CC BY-SA 4.0) | (a) Hanya rujukan ide; semua kegiatan ditulis ulang oleh tim | Tidak ada kewajiban lisensi turunan. |
-| Q8 | Jembatan ke `sd-coding` | (a) Menunggu silabus `sd-coding` terbit, lalu menyelaraskan kode jembatan (bagian 5) | Jembatan bagian 5 tetap rancangan sepihak sampai disesuaikan. |
+| Q8 | Jembatan ke `sd-coding` | (a) Menunggu silabus `sd-coding` terbit, lalu menyelaraskan kode jembatan (bagian 5) | Jembatan bagian 5 disesuaikan dengan silabus `sd-coding` di v1.0.2 (keputusan pemilik #177): kode jembatan kini menyebut kode minggu SD. |
 | Q9 | Persetujuan dan registrasi | (a) Draf disetujui; skema, `data/tk-coding/`, dan entri `data/programs.json` dibuat sesuai urutan ADR-0006 | Program terdaftar dan divalidasi (issue #127). |
 
 ## 10. Sumber dan batasan
@@ -353,3 +352,4 @@ konsekuensinya.
 | v0.1.0-draf | 2026-11-19 | Draf awal (issue #127): sumber resmi, prinsip, struktur TK A dan TK B, rencana 48 minggu, pemetaan irisan ke CP, jembatan SD, asesmen, privasi, opsi alat, pertanyaan terbuka. Belum disetujui pemilik. |
 | v1.0.0 | 2026-11-19 | Disetujui pemilik beserta rekomendasi penyusun (issue #127): status DISETUJUI, `silabus-draf.md` menjadi `silabus.md`, pertanyaan terbuka diganti keputusan pemilik (bagian 9). Isi rencana tidak diubah. |
 | v1.0.1 | 2026-11-19 | Revisi patch: kalimat status, keputusan pemilik #165; isi kurikulum tidak berubah. |
+| v1.0.2 | 2026-11-19 | Revisi patch yang dicatat lewat keputusan pemilik #177: bagian 5 (jembatan ke SD) diselaraskan dengan silabus `sd-coding`: rujukan minggu `TK-B2-M1` dikoreksi (melatih arah dan ulang, bukan pola; pola kini `TK-B1-M4` dan `TK-B1-M6`), kolom kedua memuat butir pengenalan SD dengan kode minggu SD, kosakata dan simbol disamakan, jalur padat untuk pengulangan; Q8 terpenuhi; isi kurikulum TK (48 minggu, CP, tujuan) tidak berubah (#177). |

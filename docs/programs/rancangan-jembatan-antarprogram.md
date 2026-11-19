@@ -2,7 +2,7 @@
 
 - **Version:** v0.2.0
 - **Last updated:** 2026-11-19
-- **Status:** **DITERAPKAN** (v0.2.0): pemilik menyetujui seluruh rekomendasi K1 sampai K8 pada 2026-11-19 lewat dialog pilihan (issue #177; bagian 9.1). Penerapannya lima PR atomik berurutan (K8 opsi 1); status tiap pasangan ada di tabel bagian 9.1 dan diperbarui oleh PR yang menerapkannya. Teks pengganti di bagian 4 sampai 8 menjadi isi silabus program masing-masing (konten karangan, ADR-0007) dan tunduk pada silabus itu setelah diterapkan; dokumen ini tetap sebagai catatan alasan dan analisisnya. Jembatan kuliah-coding ke dewasa-coding jalur `PRO` dirancang karena pemilik menginstruksikan perancangannya mulai 2026-11-19.
+- **Status:** **DITERAPKAN** (v0.2.0; kelima pasangan sudah diterapkan): pemilik menyetujui seluruh rekomendasi K1 sampai K8 pada 2026-11-19 lewat dialog pilihan (issue #177; bagian 9.1). Penerapannya lima PR atomik berurutan (K8 opsi 1); status tiap pasangan ada di tabel bagian 9.1. Teks pengganti di bagian 4 sampai 8 menjadi isi silabus program masing-masing (konten karangan, ADR-0007) dan tunduk pada silabus itu setelah diterapkan; dokumen ini tetap sebagai catatan alasan dan analisisnya. Jembatan kuliah-coding ke dewasa-coding jalur `PRO` dirancang karena pemilik menginstruksikan perancangannya mulai 2026-11-19.
 - **Changeset:** v0.2.0: status diterapkan, keputusan pemilik dicatat (bagian 9.1); `.changeset/jembatan-kuliah-dewasa.md` dan changeset PR berikutnya. v0.1.0: dokumen rancangan (konten karangan menurut [ADR-0007](../architecture/adr/0007-authored-learning-content.md)).
 
 > Dokumen ini adalah **rancangan dan catatan alasan**, bukan transkripsi.
@@ -761,7 +761,7 @@ Status penerapan per pasangan (K8 opsi 1; diperbarui oleh PR masing-masing):
 | 2 | `sma-coding` dan `kuliah-coding` | kuliah 1.2.0 (sudah naik di urutan 1) | Diterapkan |
 | 3 | `smp-coding` dan `sma-coding` | smp 1.2.0, sma 1.4.0 | Diterapkan |
 | 4 | `sd-coding` dan `smp-coding` | sd 1.1.0 (bagian 5.1 `smp-coding` sudah termasuk di smp 1.2.0 pada urutan 3, satu blok teks dengan bagian 5.2) | Diterapkan |
-| 5 | `tk-coding` dan `sd-coding` | tk 1.0.2 | Belum |
+| 5 | `tk-coding` dan `sd-coding` | tk 1.0.2 (bagian 7.1 `sd-coding` sudah termasuk di sd 1.1.0 pada urutan 4, satu blok teks dengan 7.2) | Diterapkan |
 
 ### K1. Cara menangani pengulangan di awal program atas (TK ke SD, SD ke SMP, SMP ke SMA)
 

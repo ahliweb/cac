@@ -1,6 +1,6 @@
 # Peta Jenjang Program Pembelajaran Coding
 
-- **Version:** v2.4.0
+- **Version:** v2.5.0
 - **Last updated:** 2026-11-19
 - **Status:** Dokumen peta (navigasi), bukan silabus. Isinya merangkum keadaan nyata folder program di `docs/programs/`, pembinaan OSN di `docs/silabus/`, dan registri `data/programs.json`. Menyebut status; tidak mengubah isi dokumen program mana pun.
 
@@ -19,7 +19,7 @@
 ```text
 TK/PAUD --> SD --> SMP --> SMA ------------> Kuliah --> Dewasa
 tk-coding  sd-coding smp-coding sma-coding   kuliah-coding dewasa-coding
- (v1.0.1)  (v1.1.0)  (v1.2.0)    (v1.4.0)      (v1.2.0)     (v1.2.0)
+ (v1.0.2)  (v1.1.0)  (v1.2.0)    (v1.4.0)      (v1.2.0)     (v1.2.0)
                                   |
                                   +--> osn (pembinaan OSN, jalur A)
                                         (terdaftar, v2.0)
@@ -36,7 +36,7 @@ Semua versi dan tanggal di bawah sama dengan `data/programs.json`
 
 | Jenjang | Id program | Sasaran | Status nyata dan versi | Kebijakan AI untuk murid | Berkas utama | Issue |
 | --- | --- | --- | --- | --- | --- | --- |
-| TK/PAUD | `tk-coding` | TK A dan TK B (usia sekitar 4-6 tahun); berpikir komputasional, tanpa layar | **Disetujui**, terdaftar, dienkode ke `data/tk-coding/` (7 berkas). Silabus v1.0.1. Belum ada `content/`. | Tanpa alat AI generatif untuk murid | [`tk-coding/README.md`](tk-coding/README.md), [`riset.md`](tk-coding/riset.md), [`silabus.md`](tk-coding/silabus.md) | [#127](https://github.com/ahliweb/osn/issues/127) (selesai) |
+| TK/PAUD | `tk-coding` | TK A dan TK B (usia sekitar 4-6 tahun); berpikir komputasional, tanpa layar | **Disetujui**, terdaftar, dienkode ke `data/tk-coding/` (7 berkas). Silabus v1.0.2. Belum ada `content/`. | Tanpa alat AI generatif untuk murid | [`tk-coding/README.md`](tk-coding/README.md), [`riset.md`](tk-coding/riset.md), [`silabus.md`](tk-coding/silabus.md) | [#127](https://github.com/ahliweb/osn/issues/127) (selesai) |
 | SD | `sd-coding` | Kelas 1-6; inti pada kelas 5-6 (KKA Fase C), kelas 1-4 pengantar opsional | **Disetujui**, terdaftar, dienkode ke `data/sd-coding/` (5 berkas). Silabus v1.1.0. Belum ada `content/sd-coding/`. | Tanpa alat AI generatif untuk murid | [`sd-coding/README.md`](sd-coding/README.md), [`riset.md`](sd-coding/riset.md), [`silabus.md`](sd-coding/silabus.md) | [#128](https://github.com/ahliweb/osn/issues/128) (selesai) |
 | SMP | `smp-coding` | Kelas 7-9 (Fase D); blok ke pseudocode, data, proyek, literasi AI, Python sebagai pengayaan | **Disetujui**, terdaftar, dienkode ke `data/smp-coding/` (7 berkas). Silabus v1.2.0. Belum ada modul `content/smp-coding/`. | Demonstrasi guru tanpa akun murid; asesmen tanpa AI (silabus 7.1) | [`smp-coding/README.md`](smp-coding/README.md), [`riset.md`](smp-coding/riset.md), [`silabus.md`](smp-coding/silabus.md) | [#129](https://github.com/ahliweb/osn/issues/129) (selesai) |
 | SMA | `sma-coding` | Kelas X-XII; jalur A (C++), B (web), C (IoT dan robotika), D (AI dan data, pengayaan), E (kuantum, kelas XI-XII, pengayaan) | **Disetujui**, terdaftar (`syllabusVersion` 1.4.0), dienkode ke `data/sma-coding/` (8 berkas korpus plus `modules.json`). 29 modul draf di `content/sma-coding/modules/` menunggu tinjauan pemilik. | Murid SMA boleh memakai AI dengan etika (silabus 7.4) | [`sma-coding/README.md`](sma-coding/README.md), [`silabus.md`](sma-coding/silabus.md) | [#125](https://github.com/ahliweb/osn/issues/125) (tinjauan modul, terbuka), [#124](https://github.com/ahliweb/osn/issues/124) (modul jalur C, D, E, terbuka); keputusan silabus: #52, #92, #68, #84, #88, #139 |
@@ -53,11 +53,11 @@ bukan satu kerangka lintas program, dengan dasar
 
 ## 3. Jembatan antarjenjang
 
-Kolom "Dasar" memuat apa yang tertulis di silabus masing-masing pada saat penulisannya, tanpa tambahan dari peta ini. Beberapa silabus ditulis sebelum silabus pasangannya ada; kalimat status yang basi tentang keberadaan program pasangannya sudah diperbaiki lewat revisi patch (issue #165), tetapi keselarasan isi jembatan belum.
+Kolom "Dasar dan keselarasan" memuat apa yang tertulis di silabus masing-masing, tanpa tambahan dari peta ini. Kelima pasangan jenjang berstatus **Selaras** sejak keputusan pemilik 2026-11-19 (#177). Beberapa silabus ditulis sebelum silabus pasangannya ada; kalimat status yang basi tentang keberadaan program pasangannya sudah diperbaiki lewat revisi patch (issue #165), tetapi keselarasan isi jembatan belum.
 
 | Dari | Ke | Dasar dan keselarasan |
 | --- | --- | --- |
-| `tk-coding` | `sd-coding` | Silabus TK (bagian 5) menulis lima keluaran TK B sebagai prasyarat SD awal, semuanya `[asumsi]`; menyatakan kode jembatan harus disesuaikan dengan silabus SD (Q8: menunggu silabus SD). Silabus SD (bagian 7.1) menulis prasyarat kelas 1 dari TK juga sebagai `[asumsi]`. **Belum selaras**: kedua sisi belum saling dibaca. |
+| `tk-coding` | `sd-coding` | **Selaras** (keputusan pemilik 2026-11-19, #177; tk v1.0.2, sd v1.1.0). Kedua silabus saling dibaca. Silabus TK (bagian 5) memetakan lima keluaran TK B ke butir pengenalan SD kelas 1-2 dengan kode minggu SD (bukan "Fase A": kelas 1-4 SD di luar struktur KKA), mengoreksi rujukan `TK-B2-M1` (melatih arah dan ulang, bukan pola), dan menyamakan kosakata dan simbol arah. Silabus SD (bagian 7.1) menyatakan kelas 1 dirancang untuk murid dengan maupun tanpa latar TK B: pengamatan awal lewat permainan rute tanpa tes, jalur padat di kelas yang sama, aturan keamanan perangkat diulang dengan jarak waktu dan tidak dipadatkan. Terkodekan di `data/tk-coding/bridge.json` dan `data/sd-coding/bridges.json`; kode minggu TK dan SD yang disebut diperiksa silang oleh `osn validate` (ADR-0010). |
 | `sd-coding` | `smp-coding` | **Selaras** (keputusan pemilik 2026-11-19, #177; sd v1.1.0, smp v1.2.0). Kedua silabus saling dibaca. Silabus SD (bagian 7.2) menyatakan apa yang **tidak dijamin** kelas 5-6 (perulangan, percabangan, dan variabel hanya di kelas 2-4 opsional; blok visual hanya opsi di `SD6-1-M9` dan `SD6-1-M10`) dan tetap tidak mengajarkan sintaks pemrograman. Silabus SMP (bagian 5.1) tidak lagi mengasumsikan murid mengenal blok, perulangan, atau percabangan: `SMP7-1-M1` menjadi pengamatan awal tanpa tes, hanya `SMP7-1-M1` dan `SMP7-1-M2` (tanpa layar) boleh dipadatkan, dan `SMP7-1-M3` sampai `SMP7-1-M5` serta `SMP7-1-M8` dan `SMP7-1-M9` tidak dipadatkan bagi siapa pun. Terkodekan di `data/sd-coding/bridges.json` dan `data/smp-coding/bridge.json`; kode minggu SD dan SMP yang disebut diperiksa silang oleh `osn validate` (ADR-0010). |
 | `smp-coding` | `sma-coding` | **Selaras** (keputusan pemilik 2026-11-19, #177; smp v1.2.0, sma v1.4.0). Silabus SMP (bagian 5.2) memperinci pemetaan ke SMA per kode minggu dan **mengoreksi** pemetaan blok kelas 7 ke blok fondasi `FND-X1-M1..M7` (fondasi tidak memuat pemrograman; Scratch kelas 7 beririsan dengan `A-X1-M8..M12` dan `B-X1-M8..M12`). Silabus `sma-coding` (bagian 3.0, subbagian baru) menyatakan tidak mensyaratkan SMP, memetakan irisan minggu SMP dengan fondasi dan jalur A dan B, dan mengatur pengamatan awal dan tugas pendalaman di dalam kelas bersama (fondasi tetap kelas bersama, keputusan 9.1 SMA). Terkodekan di `data/smp-coding/bridge.json` dan `data/sma-coding/smp-bridge.json`; kode minggu SMP dan SMA yang disebut diperiksa silang oleh `osn validate` (ADR-0010). |
 | `sma-coding` jalur A | `osn` | Jembatan disetujui dan terkodekan di `data/sma-coding/osn-bridge.json` (jalur A selaras rumpun `data/osn/topic-families.json`; jalur C sebagian lewat `trackBridges`). |
@@ -69,10 +69,10 @@ Kolom "Dasar" memuat apa yang tertulis di silabus masing-masing pada saat penuli
 Rancangan penyelarasan kelima pasangan di atas (disetujui pemilik pada 2026-11-19, issue #177, seluruh rekomendasi K1 sampai K8; diterapkan bertahap dalam lima PR, pasangan yang sudah berstatus **Selaras** di tabel adalah yang sudah diterapkan): [`rancangan-jembatan-antarprogram.md`](rancangan-jembatan-antarprogram.md).
 
 Ringkas: jembatan tiap program terkodekan di korpusnya sendiri
-(`data/<id>/bridge*.json` atau `osn-bridge.json`) dan diperiksa mesin terhadap
-silabusnya oleh `bun run check:fidelity`. Yang belum ada adalah penyamaan
-antarprogram (kedua sisi saling membaca, kode jembatan disamakan); itu
-menunggu keputusan pemilik.
+(`data/<id>/bridge*.json`, `osn-bridge.json`, `smp-bridge.json`, `kuliah-bridge.json`) dan diperiksa mesin terhadap
+silabusnya oleh `bun run check:fidelity`; kode minggu, mata kuliah, dan modul program lain yang disebut di
+tabel jembatan diperiksa silang oleh `osn validate` terhadap korpus program asalnya (ADR-0010). Penyamaan
+antarprogram (kedua sisi saling membaca, kode jembatan disamakan) sudah dilakukan untuk kelima pasangan jenjang.
 
 ## 4. Rujukan riset bersama
 
@@ -115,3 +115,4 @@ sumbernya.
 | v2.2.0 | 2026-11-19 | Jembatan `sma-coding` dan `kuliah-coding` selaras (#177): pengakuan per CPMK (kuliah v1.2.0 bagian 5.1), koreksi rujukan fondasi. |
 | v2.3.0 | 2026-11-19 | Jembatan `smp-coding` dan `sma-coding` selaras (#177): smp v1.2.0 dan sma v1.4.0, `data/sma-coding/` 8 berkas; koreksi pemetaan blok kelas 7 ke fondasi. |
 | v2.4.0 | 2026-11-19 | Jembatan `sd-coding` dan `smp-coding` selaras (#177): sd v1.1.0 (bagian 7), smp v1.2.0 bagian 5.1. |
+| v2.5.0 | 2026-11-19 | Jembatan `tk-coding` dan `sd-coding` selaras (#177): tk v1.0.2, sd v1.1.0 bagian 7.1; seluruh peta bagian 3 berstatus selaras; keadaan pemeriksaan silang kode (ADR-0010). |

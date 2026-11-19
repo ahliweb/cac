@@ -142,6 +142,7 @@ export const PROGRAM_MODULES: readonly ProgramModule[] = [
     moduleFindings: (source, context) =>
       moduleFindings(source, TK_CODING_PROGRAM_ID, moduleOptions(context)),
     fidelity: tkCodingFidelity,
+    crossProgramScan: ["bridge.json"],
   },
   {
     id: DEWASA_CODING_PROGRAM_ID,

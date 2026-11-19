@@ -276,7 +276,7 @@ owner-approved (2026-11-19).
 
 | Programme | Syllabus | Corpus files | Schemas / audit |
 | --- | --- | --- | --- |
-| `tk-coding` | v1.0.1 | 7 (`bridge`, `cp-elements`, `cp-mapping`, `decisions`, `goals`, `structure`, `weeks`) | `src/schema/tk-*.ts`, `src/domain/tk-corpus-audit.ts` |
+| `tk-coding` | v1.0.2 | 7 (`bridge`, `cp-elements`, `cp-mapping`, `decisions`, `goals`, `structure`, `weeks`) | `src/schema/tk-*.ts`, `src/domain/tk-corpus-audit.ts` |
 | `kuliah-coding` | v1.2.0 | 6 (`ai-policy`, `bridges`, `courses`, `cpl`, `knowledge-areas`, `tracks`) | `src/schema/kul-*.ts`, `src/domain/kul-corpus-audit.ts` |
 | `dewasa-coding` | v1.2.0 | 8 (`bridges`, `certification`, `kuliah-bridge`, `module-plan`, `shared`, `skkni-units`, `structure`, `tracks`) | `src/schema/dw-*.ts`, `src/domain/dw-corpus-audit.ts` |
 | `sd-coding` | v1.1.0 | 5 (`bridges`, `cp-elements`, `cp-mapping`, `structure`, `weeks`) | `src/schema/sd-*.ts`, `src/domain/sd-corpus-audit.ts` |
