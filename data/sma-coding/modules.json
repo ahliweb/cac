@@ -6426,6 +6426,734 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-x1-m14.md"
+    },
+    {
+      "id": "a-x2-m1",
+      "title": "Array satu dimensi",
+      "cpItems": ["E-BK-d"],
+      "weekCodes": ["A-X2-M1"],
+      "bridgeFamilies": ["struktur-data"],
+      "gradeLevels": ["X"],
+      "prerequisites": ["a-x1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: Array declaration",
+          "url": "https://en.cppreference.com/w/cpp/language/array"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-x2-m1.md"
+    },
+    {
+      "id": "a-x2-m2",
+      "title": "String",
+      "cpItems": ["E-BK-d"],
+      "weekCodes": ["A-X2-M2"],
+      "bridgeFamilies": ["struktur-data"],
+      "gradeLevels": ["X"],
+      "prerequisites": ["a-x2-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::basic_string",
+          "url": "https://en.cppreference.com/w/cpp/string/basic_string"
+        },
+        {
+          "title": "cppreference: std::getline",
+          "url": "https://en.cppreference.com/w/cpp/string/basic_string/getline"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-x2-m2.md"
+    },
+    {
+      "id": "a-x2-m3",
+      "title": "Array dua dimensi",
+      "cpItems": ["E-BK-d"],
+      "weekCodes": ["A-X2-M3"],
+      "bridgeFamilies": ["struktur-data"],
+      "gradeLevels": ["X"],
+      "prerequisites": ["a-x2-m2", "a-x2-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: Array declaration",
+          "url": "https://en.cppreference.com/w/cpp/language/array"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-x2-m3.md"
+    },
+    {
+      "id": "a-x2-m4",
+      "title": "Ulasan dan penelusuran galat; aritmetika dasar",
+      "cpItems": [],
+      "weekCodes": ["A-X2-M4"],
+      "bridgeFamilies": ["aritmetika"],
+      "gradeLevels": ["X"],
+      "prerequisites": ["a-x2-m3", "a-x1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "GCC: Warning Options",
+          "url": "https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-x2-m4.md"
+    },
+    {
+      "id": "a-x2-m5",
+      "title": "FPB, KPK, bilangan prima",
+      "cpItems": [],
+      "weekCodes": ["A-X2-M5"],
+      "bridgeFamilies": ["aritmetika"],
+      "gradeLevels": ["X"],
+      "prerequisites": ["a-x2-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::gcd",
+          "url": "https://en.cppreference.com/w/cpp/numeric/gcd"
+        },
+        {
+          "title": "cppreference: std::lcm",
+          "url": "https://en.cppreference.com/w/cpp/numeric/lcm"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-x2-m5.md"
+    },
+    {
+      "id": "a-x2-m6",
+      "title": "Struktur data: daftar (`vector`)",
+      "cpItems": ["E-BK-a", "E-BK-c"],
+      "weekCodes": ["A-X2-M6"],
+      "bridgeFamilies": ["struktur-data"],
+      "gradeLevels": ["X"],
+      "prerequisites": ["a-x2-m5", "a-x2-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/w/cpp/container/vector"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-x2-m6.md"
+    },
+    {
+      "id": "a-x2-m7",
+      "title": "Struktur data: tumpukan (stack) dan antrian (queue)",
+      "cpItems": ["E-BK-a", "E-BK-c"],
+      "weekCodes": ["A-X2-M7"],
+      "bridgeFamilies": ["struktur-data"],
+      "gradeLevels": ["X"],
+      "prerequisites": ["a-x2-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::stack",
+          "url": "https://en.cppreference.com/w/cpp/container/stack"
+        },
+        {
+          "title": "cppreference: std::queue",
+          "url": "https://en.cppreference.com/w/cpp/container/queue"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-x2-m7.md"
+    },
+    {
+      "id": "a-x2-m8",
+      "title": "Pencarian sekuensial dan biner",
+      "cpItems": ["E-BK-a", "E-BK-c"],
+      "weekCodes": ["A-X2-M8"],
+      "bridgeFamilies": ["search-sort"],
+      "gradeLevels": ["X"],
+      "prerequisites": ["a-x2-m7", "a-x2-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::find",
+          "url": "https://en.cppreference.com/w/cpp/algorithm/find"
+        },
+        {
+          "title": "cppreference: std::binary_search",
+          "url": "https://en.cppreference.com/w/cpp/algorithm/binary_search"
+        },
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/w/cpp/container/vector"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-x2-m8.md"
+    },
+    {
+      "id": "a-x2-m9",
+      "title": "Pengurutan: bubble sort",
+      "cpItems": ["E-BK-a", "E-BK-c"],
+      "weekCodes": ["A-X2-M9"],
+      "bridgeFamilies": ["search-sort"],
+      "gradeLevels": ["X"],
+      "prerequisites": ["a-x2-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::swap",
+          "url": "https://en.cppreference.com/w/cpp/algorithm/swap"
+        },
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/w/cpp/container/vector"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-x2-m9.md"
+    },
+    {
+      "id": "a-x2-m10",
+      "title": "Pengurutan: insertion sort",
+      "cpItems": ["E-BK-a", "E-BK-c"],
+      "weekCodes": ["A-X2-M10"],
+      "bridgeFamilies": ["search-sort"],
+      "gradeLevels": ["X"],
+      "prerequisites": ["a-x2-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::sort",
+          "url": "https://en.cppreference.com/w/cpp/algorithm/sort"
+        },
+        {
+          "title": "cppreference: std::is_sorted",
+          "url": "https://en.cppreference.com/w/cpp/algorithm/is_sorted"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-x2-m10.md"
+    },
+    {
+      "id": "a-x2-m11",
+      "title": "Pengantar rekursi",
+      "cpItems": [],
+      "weekCodes": ["A-X2-M11"],
+      "bridgeFamilies": ["rekursi"],
+      "gradeLevels": ["X"],
+      "prerequisites": ["a-x2-m10", "a-x1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: Functions",
+          "url": "https://en.cppreference.com/w/cpp/language/functions"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-x2-m11.md"
+    },
+    {
+      "id": "a-x2-m12",
+      "title": "Efisiensi intuitif",
+      "cpItems": [],
+      "weekCodes": ["A-X2-M12"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["a-x2-m11", "a-x2-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::find",
+          "url": "https://en.cppreference.com/w/cpp/algorithm/find"
+        },
+        {
+          "title": "cppreference: std::binary_search",
+          "url": "https://en.cppreference.com/w/cpp/algorithm/binary_search"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-x2-m12.md"
+    },
+    {
+      "id": "a-x2-m13",
+      "title": "Proyek mini: pengelolaan data tabel",
+      "cpItems": ["E-BK-c"],
+      "weekCodes": ["A-X2-M13"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["a-x2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/w/cpp/container/vector"
+        },
+        {
+          "title": "cppreference: std::fixed",
+          "url": "https://en.cppreference.com/w/cpp/io/manip/fixed"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-x2-m13.md"
+    },
+    {
+      "id": "a-x2-m14",
+      "title": "Asesmen dan refleksi (kelas X semester 2)",
+      "cpItems": [],
+      "weekCodes": ["A-X2-M14"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["a-x2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/cpp/container/vector"
+        },
+        {
+          "title": "cppreference: std::stack",
+          "url": "https://en.cppreference.com/cpp/container/stack"
+        },
+        {
+          "title": "cppreference: std::queue",
+          "url": "https://en.cppreference.com/cpp/container/queue"
+        },
+        {
+          "title": "cppreference: std::binary_search",
+          "url": "https://en.cppreference.com/cpp/algorithm/binary_search"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-x2-m14.md"
+    },
+    {
+      "id": "b-x2-m1",
+      "title": "Array",
+      "cpItems": ["E-BK-d"],
+      "weekCodes": ["B-X2-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["b-x1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "MDN: Array",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
+        },
+        {
+          "title": "MDN: Array.prototype.map()",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map"
+        },
+        {
+          "title": "MDN: Array.prototype.filter()",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-x2-m1.md"
+    },
+    {
+      "id": "b-x2-m2",
+      "title": "String dan templat",
+      "cpItems": ["E-BK-d"],
+      "weekCodes": ["B-X2-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["b-x2-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "MDN: Template literals",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals"
+        },
+        {
+          "title": "MDN: String.prototype.split()",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-x2-m2.md"
+    },
+    {
+      "id": "b-x2-m3",
+      "title": "Objek dan JSON",
+      "cpItems": ["E-BK-d"],
+      "weekCodes": ["B-X2-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["b-x2-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "MDN: Working with objects",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects"
+        },
+        {
+          "title": "MDN: JSON",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-x2-m3.md"
+    },
+    {
+      "id": "b-x2-m4",
+      "title": "HTML dasar",
+      "cpItems": ["E-LD-f"],
+      "weekCodes": ["B-X2-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["b-x2-m3", "FND-X1-M4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "MDN: <img> element",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img"
+        },
+        {
+          "title": "MDN: <header> element",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/header"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-x2-m4.md"
+    },
+    {
+      "id": "b-x2-m5",
+      "title": "CSS dasar dan responsif",
+      "cpItems": ["E-LD-f"],
+      "weekCodes": ["B-X2-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["b-x2-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "MDN: Introduction to the CSS box model",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Box_model/Introduction"
+        },
+        {
+          "title": "MDN: Specificity",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascade/Specificity"
+        },
+        {
+          "title": "MDN: Using media queries",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries/Using"
+        },
+        {
+          "title": "MDN: Basic concepts of flexbox",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Flexible_box_layout/Basic_concepts"
+        },
+        {
+          "title": "MDN: Viewport meta element",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta/name/viewport"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-x2-m5.md"
+    },
+    {
+      "id": "b-x2-m6",
+      "title": "DOM dan peristiwa",
+      "cpItems": ["E-LD-f"],
+      "weekCodes": ["B-X2-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["b-x2-m5", "b-x1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "MDN: Document Object Model (DOM)",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+        },
+        {
+          "title": "MDN: Document.querySelector()",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector"
+        },
+        {
+          "title": "MDN: Node.textContent",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent"
+        },
+        {
+          "title": "MDN: EventTarget.addEventListener()",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener"
+        },
+        {
+          "title": "MDN: Event.preventDefault()",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-x2-m6.md"
+    },
+    {
+      "id": "b-x2-m7",
+      "title": "Struktur data: tumpukan dan antrian",
+      "cpItems": ["E-BK-a", "E-BK-c"],
+      "weekCodes": ["B-X2-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["b-x2-m6", "b-x2-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "MDN: Array.prototype.push()",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push"
+        },
+        {
+          "title": "MDN: Array.prototype.pop()",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop"
+        },
+        {
+          "title": "MDN: Array.prototype.shift()",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift"
+        },
+        {
+          "title": "MDN: Classes",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-x2-m7.md"
+    },
+    {
+      "id": "b-x2-m8",
+      "title": "Pencarian sekuensial dan biner",
+      "cpItems": ["E-BK-a", "E-BK-c"],
+      "weekCodes": ["B-X2-M8"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["b-x2-m7", "b-x2-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "MDN: Array.prototype.indexOf",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf"
+        },
+        {
+          "title": "Bun: dokumentasi",
+          "url": "https://bun.sh/docs"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-x2-m8.md"
+    },
+    {
+      "id": "b-x2-m9",
+      "title": "Pengurutan: bubble sort dan insertion sort",
+      "cpItems": ["E-BK-a", "E-BK-c"],
+      "weekCodes": ["B-X2-M9"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["b-x2-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "MDN: Array.prototype.sort",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort"
+        },
+        {
+          "title": "Bun: dokumentasi",
+          "url": "https://bun.sh/docs"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-x2-m9.md"
+    },
+    {
+      "id": "b-x2-m10",
+      "title": "Data berkualitas",
+      "cpItems": ["E-BK-b"],
+      "weekCodes": ["B-X2-M10"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["b-x2-m9", "b-x2-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "MDN: Set",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set"
+        },
+        {
+          "title": "MDN: Number.isNaN",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isNaN"
+        },
+        {
+          "title": "MDN: JSON.parse",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse"
+        },
+        {
+          "title": "Bun: File I/O",
+          "url": "https://bun.sh/docs/runtime/file-io"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-x2-m10.md"
+    },
+    {
+      "id": "b-x2-m11",
+      "title": "Mesin pencari dan dokumentasi",
+      "cpItems": ["E-LD-a"],
+      "weekCodes": ["B-X2-M11"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["b-x2-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "MDN: Referensi JavaScript",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference"
+        },
+        {
+          "title": "MDN: String.prototype.padStart",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart"
+        },
+        {
+          "title": "MDN: Array.prototype.at",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/at"
+        },
+        {
+          "title": "MDN: Array.prototype.toSorted",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toSorted"
+        },
+        {
+          "title": "MDN: String.prototype.substr",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr"
+        },
+        {
+          "title": "Bun: panduan argumen baris perintah",
+          "url": "https://bun.sh/guides/process/argv"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-x2-m11.md"
+    },
+    {
+      "id": "b-x2-m12",
+      "title": "Git dan kolaborasi dasar",
+      "cpItems": ["E-LD-f"],
+      "weekCodes": ["B-X2-M12"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["b-x2-m11", "b-x1-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Git: git-branch",
+          "url": "https://git-scm.com/docs/git-branch"
+        },
+        {
+          "title": "Git: git-merge",
+          "url": "https://git-scm.com/docs/git-merge"
+        },
+        {
+          "title": "Git: git-clone",
+          "url": "https://git-scm.com/docs/git-clone"
+        },
+        {
+          "title": "Git: git-init",
+          "url": "https://git-scm.com/docs/git-init"
+        },
+        {
+          "title": "Git: git-push",
+          "url": "https://git-scm.com/docs/git-push"
+        },
+        {
+          "title": "Git: git-pull",
+          "url": "https://git-scm.com/docs/git-pull"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-x2-m12.md"
+    },
+    {
+      "id": "b-x2-m13",
+      "title": "Proyek mini: visualisasi algoritma",
+      "cpItems": ["E-BK-c", "E-LD-f"],
+      "weekCodes": ["B-X2-M13"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["b-x2-m12", "b-x2-m6", "b-x2-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "MDN: Node.textContent",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent"
+        },
+        {
+          "title": "MDN: EventTarget.addEventListener",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener"
+        },
+        {
+          "title": "MDN: Window.setTimeout",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/setTimeout"
+        },
+        {
+          "title": "MDN: Document.createElement",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-x2-m13.md"
+    },
+    {
+      "id": "b-x2-m14",
+      "title": "Asesmen dan refleksi (kelas X semester 2)",
+      "cpItems": [],
+      "weekCodes": ["B-X2-M14"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["b-x2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "MDN: Referensi JavaScript",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference"
+        },
+        {
+          "title": "MDN: String.prototype.padStart",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart"
+        },
+        {
+          "title": "MDN: Set",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set"
+        },
+        {
+          "title": "Git: git-merge",
+          "url": "https://git-scm.com/docs/git-merge"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-x2-m14.md"
     }
   ]
 }
