@@ -19,7 +19,7 @@ import { renderSmaStudentSheet } from "../render/sma-student-sheet";
 import type { Program } from "../schema/program";
 import { SMA_CLASSES } from "../schema/sma-common";
 import type { CommandContext } from "./command";
-import { EXIT_SUCCESS, EXIT_USAGE_ERROR, EXIT_VALIDATION_FAILURE } from "./command";
+import { cliOf, EXIT_SUCCESS, EXIT_USAGE_ERROR, EXIT_VALIDATION_FAILURE } from "./command";
 import { formatSmaPlanJson, formatSmaPlanMarkdown } from "./format-sma-plan";
 import { REPO_ROOT } from "./program-loader";
 import { loadSmaCorpus } from "./sma-corpus-loader";
@@ -46,7 +46,7 @@ export async function runSmaPlan(
   program: Program,
 ): Promise<number> {
   const usage = (message: string): number => {
-    ctx.stderr(`osn plan: ${message}\n`);
+    ctx.stderr(`${cliOf(ctx)} plan: ${message}\n`);
     return EXIT_USAGE_ERROR;
   };
 
@@ -63,7 +63,7 @@ export async function runSmaPlan(
   if (track === undefined || track === null) {
     return usage(
       `--track <jalur> wajib untuk program ${program.id} (jalur yang disetujui: A, B, C, D atau E). ` +
-        'Jalankan "osn plan --help".',
+        `Jalankan "${cliOf(ctx)} plan --help".`,
     );
   }
 
@@ -111,7 +111,7 @@ export async function runSmaPlan(
 
   const loaded = await loadSmaCorpus(resolve(REPO_ROOT, program.corpusDir));
   if (!loaded.ok) {
-    ctx.stderr(`osn plan: ${loaded.message}\n`);
+    ctx.stderr(`${cliOf(ctx)} plan: ${loaded.message}\n`);
     return EXIT_VALIDATION_FAILURE;
   }
 
@@ -157,7 +157,7 @@ export async function buildSmaLembarSiswa(
   program: Program,
 ): Promise<SmaSheetResult> {
   const fail = (message: string, exitCode: number = EXIT_USAGE_ERROR): SmaSheetResult => {
-    ctx.stderr(`osn render lembar-siswa: ${message}\n`);
+    ctx.stderr(`${cliOf(ctx)} render lembar-siswa: ${message}\n`);
     return { ok: false, exitCode };
   };
 

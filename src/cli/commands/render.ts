@@ -17,7 +17,7 @@ import { renderStudentSheet } from "../../render/student-sheet";
 import { renderWeeklyPlan } from "../../render/weekly";
 import { SMA_CODING_PROGRAM_ID } from "../../schema/sma-common";
 import type { Command } from "../command";
-import { EXIT_SUCCESS, EXIT_USAGE_ERROR } from "../command";
+import { cliOf, DEFAULT_CLI_NAME, EXIT_SUCCESS, EXIT_USAGE_ERROR } from "../command";
 import { loadModule } from "../module-content";
 import { writeOutputFile } from "../output-writer";
 import {
@@ -36,7 +36,8 @@ function isRenderSubcommand(value: string | undefined): value is RenderSubcomman
   return value !== undefined && (SUBCOMMANDS as readonly string[]).includes(value);
 }
 
-const HELP_TEXT = `osn render -- render mentor-facing Markdown artefacts
+function helpText(cli: string): string {
+  return `${cli} render -- render mentor-facing Markdown artefacts
 
 Turns the validated curriculum corpus into mentor-ready Markdown: a
 weekly session plan (focus, content, outcome, both §5.1 120-minute
@@ -56,14 +57,14 @@ renders the separate learner sheet for the child instead (same banner; a sheet
 with a name or identity field of the child is refused).
 
 Usage:
-  osn render weekly --week <1-28> [--out <path>] [--force]
-  osn render checkpoint --number <1-7> [--out <path>] [--force]
-  osn render sop [--out <path>] [--force]
-  osn render lembar-siswa --week <1-28> [--out <path>] [--force]
-  osn render lembar-siswa --program sma-coding --week <week-code> [--out <path>] [--force]
-  osn render modul --id <module-id> [--out <path>] [--force]
-  osn render modul --program <id> --id <module-id> [--out <path>] [--force]
-  osn render modul --program <tk-coding|sd-coding> --id <module-id> --lembar [--out <path>] [--force]
+  ${cli} render weekly --week <1-28> [--out <path>] [--force]
+  ${cli} render checkpoint --number <1-7> [--out <path>] [--force]
+  ${cli} render sop [--out <path>] [--force]
+  ${cli} render lembar-siswa --week <1-28> [--out <path>] [--force]
+  ${cli} render lembar-siswa --program sma-coding --week <week-code> [--out <path>] [--force]
+  ${cli} render modul --id <module-id> [--out <path>] [--force]
+  ${cli} render modul --program <id> --id <module-id> [--out <path>] [--force]
+  ${cli} render modul --program <tk-coding|sd-coding> --id <module-id> --lembar [--out <path>] [--force]
 
 Options:
   --week <n>      Week number, 1-28. Required for "weekly" and "lembar-siswa".
@@ -92,7 +93,7 @@ Options:
 
 Exit codes:
   0   success.
-  1   the sma-coding corpus fails validation (run osn validate), or the
+  1   the sma-coding corpus fails validation (run ${cli} validate), or the
       learner sheet asked for with --lembar has a name or identity field.
   2   usage error: missing/unknown subcommand, a missing required flag
       (--week/--number/--id), --week/--number outside its valid range (or an
@@ -100,6 +101,7 @@ Exit codes:
       --lembar for a programme without learner sheets or with another
       subcommand than "modul", or
       --out already exists without --force, or an unknown --program.`;
+}
 
 /** Extracts the value following the first occurrence of `flag` in `args`, or `undefined` if `flag` is absent (or has nothing after it). */
 function readFlagValue(args: readonly string[], flag: string): string | undefined {
@@ -123,9 +125,10 @@ export const renderCommand: Command = {
   name: "render",
   summary:
     "Render Markdown artefacts (weekly plan, checkpoint sheet, SOP card, student learner sheet, learning module).",
-  help: () => HELP_TEXT,
+  help: (cli = DEFAULT_CLI_NAME) => helpText(cli),
 
   async run(rawArgs, ctx) {
+    const cli = cliOf(ctx);
     const resolved = await resolveProgramOption("render", rawArgs, ctx);
     if (!resolved.ok) {
       return resolved.exitCode;
@@ -138,7 +141,7 @@ export const renderCommand: Command = {
           ? "a subcommand is required"
           : `unknown subcommand ${JSON.stringify(subcommand)}`;
       ctx.stderr(
-        `osn render: ${problem}. Valid subcommands: ${SUBCOMMANDS.join(", ")}. Run "osn render --help" for usage.\n`,
+        `${cli} render: ${problem}. Valid subcommands: ${SUBCOMMANDS.join(", ")}. Run "${cli} render --help" for usage.\n`,
       );
       return EXIT_USAGE_ERROR;
     }
@@ -155,7 +158,9 @@ export const renderCommand: Command = {
 
     const rest = args.slice(1);
     if (subcommand !== "modul" && rest.includes("--lembar")) {
-      ctx.stderr(`osn render ${subcommand}: --lembar is only valid with "osn render modul".\n`);
+      ctx.stderr(
+        `${cli} render ${subcommand}: --lembar is only valid with "${cli} render modul".\n`,
+      );
       return EXIT_USAGE_ERROR;
     }
     let content: string;
@@ -169,13 +174,13 @@ export const renderCommand: Command = {
     } else if (subcommand === "weekly" || subcommand === "lembar-siswa") {
       const weekRaw = readFlagValue(rest, "--week");
       if (weekRaw === undefined) {
-        ctx.stderr(`osn render ${subcommand}: --week <1-28> is required.\n`);
+        ctx.stderr(`${cli} render ${subcommand}: --week <1-28> is required.\n`);
         return EXIT_USAGE_ERROR;
       }
       const week = parseInteger(weekRaw);
       if (week === null) {
         ctx.stderr(
-          `osn render ${subcommand}: --week must be an integer (1-28); received ${JSON.stringify(weekRaw)}.\n`,
+          `${cli} render ${subcommand}: --week must be an integer (1-28); received ${JSON.stringify(weekRaw)}.\n`,
         );
         return EXIT_USAGE_ERROR;
       }
@@ -190,7 +195,7 @@ export const renderCommand: Command = {
               });
       } catch (cause) {
         if (cause instanceof RenderRequestError) {
-          ctx.stderr(`osn render ${subcommand}: ${cause.message}\n`);
+          ctx.stderr(`${cli} render ${subcommand}: ${cause.message}\n`);
           return EXIT_USAGE_ERROR;
         }
         throw cause;
@@ -198,13 +203,13 @@ export const renderCommand: Command = {
     } else if (subcommand === "checkpoint") {
       const numberRaw = readFlagValue(rest, "--number");
       if (numberRaw === undefined) {
-        ctx.stderr("osn render checkpoint: --number <1-7> is required.\n");
+        ctx.stderr(`${cli} render checkpoint: --number <1-7> is required.\n`);
         return EXIT_USAGE_ERROR;
       }
       const number = parseInteger(numberRaw);
       if (number === null) {
         ctx.stderr(
-          `osn render checkpoint: --number must be an integer (1-7); received ${JSON.stringify(numberRaw)}.\n`,
+          `${cli} render checkpoint: --number must be an integer (1-7); received ${JSON.stringify(numberRaw)}.\n`,
         );
         return EXIT_USAGE_ERROR;
       }
@@ -212,7 +217,7 @@ export const renderCommand: Command = {
         content = renderCheckpointSheet(number);
       } catch (cause) {
         if (cause instanceof RenderRequestError) {
-          ctx.stderr(`osn render checkpoint: ${cause.message}\n`);
+          ctx.stderr(`${cli} render checkpoint: ${cause.message}\n`);
           return EXIT_USAGE_ERROR;
         }
         throw cause;
@@ -220,13 +225,13 @@ export const renderCommand: Command = {
     } else if (subcommand === "modul") {
       const id = readFlagValue(rest, "--id");
       if (id === undefined || id.startsWith("-")) {
-        ctx.stderr("osn render modul: --id <module-id> is required.\n");
+        ctx.stderr(`${cli} render modul: --id <module-id> is required.\n`);
         return EXIT_USAGE_ERROR;
       }
       const lembar = rest.includes("--lembar");
       if (lembar && !hasLearnerSheets(resolved.program.id)) {
         ctx.stderr(
-          `osn render modul: --lembar berlaku untuk program tk-coding dan sd-coding saja (panduan guru plus lembar anak); program ${resolved.program.id} tidak punya lembar anak.\n`,
+          `${cli} render modul: --lembar berlaku untuk program tk-coding dan sd-coding saja (panduan guru plus lembar anak); program ${resolved.program.id} tidak punya lembar anak.\n`,
         );
         return EXIT_USAGE_ERROR;
       }
@@ -237,7 +242,7 @@ export const renderCommand: Command = {
         resolved.program.id,
       );
       if (!loaded.ok) {
-        ctx.stderr(`osn render modul: ${loaded.message}\n`);
+        ctx.stderr(`${cli} render modul: ${loaded.message}\n`);
         return EXIT_USAGE_ERROR;
       }
       const output = buildModuleOutput(
@@ -269,17 +274,17 @@ export const renderCommand: Command = {
     if (!result.ok) {
       if (result.reason === "exists") {
         ctx.stderr(
-          `osn render ${subcommand}: --out ${JSON.stringify(outValue)} already exists. Use --force to overwrite it.\n`,
+          `${cli} render ${subcommand}: --out ${JSON.stringify(outValue)} already exists. Use --force to overwrite it.\n`,
         );
       } else {
         ctx.stderr(
-          `osn render ${subcommand}: failed to write ${JSON.stringify(outValue)}: ${result.message}\n`,
+          `${cli} render ${subcommand}: failed to write ${JSON.stringify(outValue)}: ${result.message}\n`,
         );
       }
       return EXIT_USAGE_ERROR;
     }
 
-    ctx.stdout(`osn render ${subcommand}: wrote ${outValue}\n`);
+    ctx.stdout(`${cli} render ${subcommand}: wrote ${outValue}\n`);
     return EXIT_SUCCESS;
   },
 };

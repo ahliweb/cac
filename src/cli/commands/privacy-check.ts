@@ -33,7 +33,13 @@
 import { resolve } from "node:path";
 import { scanEntriesForDirectIdentifiers } from "../../domain/privacy-scan";
 import type { Command } from "../command";
-import { EXIT_SUCCESS, EXIT_USAGE_ERROR, EXIT_VALIDATION_FAILURE } from "../command";
+import {
+  cliOf,
+  DEFAULT_CLI_NAME,
+  EXIT_SUCCESS,
+  EXIT_USAGE_ERROR,
+  EXIT_VALIDATION_FAILURE,
+} from "../command";
 import { formatPrivacyCheckJson, formatPrivacyCheckText } from "../format-privacy-check";
 import { loadPrivacyScanEntries } from "../privacy-scan-loader";
 
@@ -46,7 +52,8 @@ import { loadPrivacyScanEntries } from "../privacy-scan-loader";
  */
 export const DEFAULT_DATA_DIR = resolve(import.meta.dir, "../../../data");
 
-const HELP_TEXT = `osn privacy-check -- scan data/ for direct-identifier-shaped keys
+function helpText(cli: string): string {
+  return `${cli} privacy-check -- scan data/ for direct-identifier-shaped keys
 
 A CI-checkable governance control (ADR-0004, GR-04): recursively scans
 every ".json" and ".jsonl" file under data/ -- including nested
@@ -64,7 +71,7 @@ anywhere under data/ is reported as a finding. See
 docs/governance/privacy.md's "Data minimisation" section for the full
 rationale.
 
-Usage: osn privacy-check [options]
+Usage: ${cli} privacy-check [options]
 
 Options:
   --json              Emit a machine-readable { ok, findings, parseIssues, summary } result instead of text.
@@ -74,20 +81,22 @@ Options:
 
 Findings never include the offending value -- only the file (or, for a
 .jsonl file, "<file>:<line>"), the in-file path to the key's parent, and
-the key itself. This matches "osn report"'s privacy-gate refusal
+the key itself. This matches "${cli} report"'s privacy-gate refusal
 behaviour (src/cli/commands/report.ts).
 
 Exit codes:
   0   clean -- no direct-identifier-shaped key found (beyond the "name" tolerance).
   1   one or more direct-identifier-shaped keys found.
   2   usage error, e.g. an unknown flag, --data-dir given with no path, or the given directory cannot be read.`;
+}
 
 export const privacyCheckCommand: Command = {
   name: "privacy-check",
   summary: "Scan data/ recursively for direct-identifier-shaped keys (GR-04 governance control).",
-  help: () => HELP_TEXT,
+  help: (cli = DEFAULT_CLI_NAME) => helpText(cli),
 
   async run(args, ctx) {
+    const cli = cliOf(ctx);
     let dataDir = DEFAULT_DATA_DIR;
 
     for (let index = 0; index < args.length; index += 1) {
@@ -99,7 +108,7 @@ export const privacyCheckCommand: Command = {
       if (arg === "--data-dir") {
         const value = args[index + 1];
         if (value === undefined) {
-          ctx.stderr("osn privacy-check: --data-dir requires a directory path argument.\n");
+          ctx.stderr(`${cli} privacy-check: --data-dir requires a directory path argument.\n`);
           return EXIT_USAGE_ERROR;
         }
         dataDir = resolve(ctx.cwd, value);
@@ -108,7 +117,7 @@ export const privacyCheckCommand: Command = {
       }
 
       ctx.stderr(
-        `osn privacy-check: unrecognised argument ${JSON.stringify(arg)}. Run "osn privacy-check --help" for usage.\n`,
+        `${cli} privacy-check: unrecognised argument ${JSON.stringify(arg)}. Run "${cli} privacy-check --help" for usage.\n`,
       );
       return EXIT_USAGE_ERROR;
     }
@@ -117,7 +126,7 @@ export const privacyCheckCommand: Command = {
     try {
       loaded = await loadPrivacyScanEntries(dataDir);
     } catch (cause) {
-      ctx.stderr(`osn privacy-check: ${(cause as Error).message}\n`);
+      ctx.stderr(`${cli} privacy-check: ${(cause as Error).message}\n`);
       return EXIT_USAGE_ERROR;
     }
 
@@ -135,7 +144,7 @@ export const privacyCheckCommand: Command = {
     if (ctx.json) {
       ctx.stdout(`${formatPrivacyCheckJson(result)}\n`);
     } else {
-      ctx.stdout(`${formatPrivacyCheckText(result, dataDir)}\n`);
+      ctx.stdout(`${formatPrivacyCheckText(result, dataDir, cli)}\n`);
     }
 
     return result.ok ? EXIT_SUCCESS : EXIT_VALIDATION_FAILURE;

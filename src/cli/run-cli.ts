@@ -17,7 +17,12 @@
 
 import packageJson from "../../package.json";
 import type { CommandContext } from "./command";
-import { EXIT_SUCCESS, EXIT_USAGE_ERROR, EXIT_VALIDATION_FAILURE } from "./command";
+import {
+  DEFAULT_CLI_NAME,
+  EXIT_SUCCESS,
+  EXIT_USAGE_ERROR,
+  EXIT_VALIDATION_FAILURE,
+} from "./command";
 import { COMMAND_REGISTRY, COMMANDS } from "./commands";
 
 /** The I/O `runCli` needs, injected by the caller. See this module's docblock for why. */
@@ -25,6 +30,30 @@ export interface RunCliIo {
   readonly stdout: (text: string) => void;
   readonly stderr: (text: string) => void;
   readonly cwd: string;
+  /**
+   * The name the CLI was invoked as: `cac` (canonical) or `osn` (the legacy
+   * alias). Printed in usage, help and error prefixes. Default `osn`, so a
+   * caller that does not pass it sees exactly the pre-`cac` output.
+   */
+  readonly cli?: string;
+}
+
+/** First line of the global help. The `osn` line is the legacy text, unchanged. */
+function globalTitle(cli: string): string {
+  return cli === "cac"
+    ? "cac -- Curriculum as Code CLI (AhliKoding Curriculum)"
+    : "osn -- OSN Informatika 2026 curriculum CLI";
+}
+
+/** Lines after the title, only for `cac`: the alias and non-affiliation notes. The `osn` help has none, so it stays byte-identical to its legacy text. */
+function globalNotes(cli: string): string[] {
+  return cli === "cac"
+    ? [
+        "`osn` is the legacy name of this CLI: it behaves identically (same commands, flags, JSON and exit codes).",
+        "An independent curriculum tool; not official Puspresnas / IA TOKI / IOI material.",
+        "",
+      ]
+    : [];
 }
 
 function commandListLines(): string {
@@ -34,18 +63,23 @@ function commandListLines(): string {
   );
 }
 
-/** The global `osn --help` / `osn` (no subcommand) usage text, built from {@link COMMANDS} so it can never drift from the actual registry. */
-export function buildGlobalUsage(): string {
+/**
+ * The global `<cli> --help` / `<cli>` (no subcommand) usage text, built from
+ * {@link COMMANDS} so it can never drift from the actual registry. The
+ * default caller name `osn` yields the legacy text byte for byte.
+ */
+export function buildGlobalUsage(cli: string = DEFAULT_CLI_NAME): string {
   return [
-    "osn -- OSN Informatika 2026 curriculum CLI",
+    globalTitle(cli),
     "",
-    "Usage: osn <command> [options]",
+    ...globalNotes(cli),
+    `Usage: ${cli} <command> [options]`,
     "",
     "Commands:",
     commandListLines(),
     "",
     "Global flags:",
-    "  -h, --help       Show this help, or a command's help with `osn <command> --help`.",
+    `  -h, --help       Show this help, or a command's help with \`${cli} <command> --help\`.`,
     "  -V, --version    Print the CLI version and exit.",
     "  --json           Emit machine-readable JSON output (where the command supports it).",
     "",
@@ -79,6 +113,7 @@ export function buildGlobalUsage(): string {
  *     `Command.run`'s docblock.
  */
 export async function runCli(argv: readonly string[], io: RunCliIo): Promise<number> {
+  const cli = io.cli ?? DEFAULT_CLI_NAME;
   if (argv.includes("--version") || argv.includes("-V")) {
     io.stdout(`${packageJson.version}\n`);
     return EXIT_SUCCESS;
@@ -88,10 +123,10 @@ export async function runCli(argv: readonly string[], io: RunCliIo): Promise<num
 
   if (commandName === undefined) {
     if (argv.includes("--help") || argv.includes("-h")) {
-      io.stdout(`${buildGlobalUsage()}\n`);
+      io.stdout(`${buildGlobalUsage(cli)}\n`);
       return EXIT_SUCCESS;
     }
-    io.stderr(`${buildGlobalUsage()}\n`);
+    io.stderr(`${buildGlobalUsage(cli)}\n`);
     return EXIT_USAGE_ERROR;
   }
 
@@ -99,7 +134,7 @@ export async function runCli(argv: readonly string[], io: RunCliIo): Promise<num
   if (command === undefined) {
     const validNames = COMMANDS.map((entry) => entry.name).join(", ");
     io.stderr(
-      `osn: unknown command "${commandName}". Valid commands: ${validNames}. Run "osn --help" for usage.\n`,
+      `${cli}: unknown command "${commandName}". Valid commands: ${validNames}. Run "${cli} --help" for usage.\n`,
     );
     return EXIT_USAGE_ERROR;
   }
@@ -108,19 +143,19 @@ export async function runCli(argv: readonly string[], io: RunCliIo): Promise<num
   const commandArgs = [...argv.slice(0, commandIndex), ...argv.slice(commandIndex + 1)];
 
   if (commandArgs.includes("--help") || commandArgs.includes("-h")) {
-    io.stdout(`${command.help()}\n`);
+    io.stdout(`${command.help(cli)}\n`);
     return EXIT_SUCCESS;
   }
 
   const json = commandArgs.includes("--json");
   const runArgs = commandArgs.filter((arg) => arg !== "--json");
 
-  const ctx: CommandContext = { json, cwd: io.cwd, stdout: io.stdout, stderr: io.stderr };
+  const ctx: CommandContext = { json, cwd: io.cwd, stdout: io.stdout, stderr: io.stderr, cli };
 
   try {
     return await command.run(runArgs, ctx);
   } catch (cause) {
-    io.stderr(`osn ${command.name}: unexpected error: ${(cause as Error).message}\n`);
+    io.stderr(`${cli} ${command.name}: unexpected error: ${(cause as Error).message}\n`);
     return EXIT_VALIDATION_FAILURE;
   }
 }

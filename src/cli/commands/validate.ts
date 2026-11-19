@@ -21,7 +21,13 @@ import {
 } from "../../domain/programs";
 import type { Program, ProgramRegistry } from "../../schema/program";
 import type { Command, CommandContext } from "../command";
-import { EXIT_SUCCESS, EXIT_USAGE_ERROR, EXIT_VALIDATION_FAILURE } from "../command";
+import {
+  cliOf,
+  DEFAULT_CLI_NAME,
+  EXIT_SUCCESS,
+  EXIT_USAGE_ERROR,
+  EXIT_VALIDATION_FAILURE,
+} from "../command";
 import { loadCorpusFromDirectory } from "../corpus-loader";
 import { formatAuditJson, formatAuditText } from "../format-audit";
 import { moduleContentFindings } from "../module-content";
@@ -40,7 +46,8 @@ import {
   type ProgramAuditContext,
 } from "../program-registry";
 
-const HELP_TEXT = `osn validate -- validate the curriculum corpus of one or every programme
+function helpText(cli: string): string {
+  return `${cli} validate -- validate the curriculum corpus of one or every programme
 
 Validates data/programs.json (the programme registry) and, per programme,
 every data/<program>/*.json file against its schema. Programme "osn" is
@@ -78,7 +85,7 @@ course and module code of any programme named in them exists in the corpus of
 the programme it belongs to.
 Reports every problem found in one pass, grouped by file.
 
-Usage: osn validate [options]
+Usage: ${cli} validate [options]
 
 Options:
   --program <id>      Validate only this registered programme. Without it (and
@@ -95,6 +102,7 @@ Exit codes:
   0   every validated corpus is clean (no findings).
   1   a corpus or the registry has one or more findings (schema, structural, referential, version).
   2   usage error, e.g. unknown --program, --program/--data-dir given with no value, or a directory that cannot be read.`;
+}
 
 /**
  * One programme's audit: its corpus plus the registry cross-checks. The
@@ -149,12 +157,13 @@ function emit(ctx: CommandContext, text: string): void {
 export const validateCommand: Command = {
   name: "validate",
   summary: "Validate the corpus of one (--program) or every registered programme.",
-  help: () => HELP_TEXT,
+  help: (cli = DEFAULT_CLI_NAME) => helpText(cli),
 
   async run(args, ctx) {
+    const cli = cliOf(ctx);
     const { rest, value: programValue } = extractProgramFlag(args);
     if (programValue === null) {
-      ctx.stderr("osn validate: --program requires a programme id argument.\n");
+      ctx.stderr(`${cli} validate: --program requires a programme id argument.\n`);
       return EXIT_USAGE_ERROR;
     }
 
@@ -163,7 +172,7 @@ export const validateCommand: Command = {
     if (dataDirFlagIndex !== -1) {
       const value = rest[dataDirFlagIndex + 1];
       if (value === undefined) {
-        ctx.stderr("osn validate: --data-dir requires a directory path argument.\n");
+        ctx.stderr(`${cli} validate: --data-dir requires a directory path argument.\n`);
         return EXIT_USAGE_ERROR;
       }
       dataDirOverride = resolve(ctx.cwd, value);
@@ -171,7 +180,7 @@ export const validateCommand: Command = {
 
     const loaded = await loadProgramRegistry();
     if (!loaded.ok) {
-      ctx.stderr(`osn validate: ${loaded.message}\n`);
+      ctx.stderr(`${cli} validate: ${loaded.message}\n`);
       return loaded.kind === "invalid" ? EXIT_VALIDATION_FAILURE : EXIT_USAGE_ERROR;
     }
     const { registry } = loaded;
@@ -182,7 +191,7 @@ export const validateCommand: Command = {
       const program = findProgram(registry, id);
       if (program === undefined) {
         ctx.stderr(
-          `osn validate: unknown programme "${id}". Registered programmes: ${listProgramIds(registry)}.\n`,
+          `${cli} validate: unknown programme "${id}". Registered programmes: ${listProgramIds(registry)}.\n`,
         );
         return EXIT_USAGE_ERROR;
       }
@@ -191,14 +200,14 @@ export const validateCommand: Command = {
       try {
         result = await auditProgram(program, corpusDir, registry);
       } catch (cause) {
-        ctx.stderr(`osn validate: ${(cause as Error).message}\n`);
+        ctx.stderr(`${cli} validate: ${(cause as Error).message}\n`);
         return EXIT_USAGE_ERROR;
       }
       emit(
         ctx,
         ctx.json
           ? formatAuditJson({ program: program.id, ...result })
-          : formatAuditText(result, corpusDir, program.id),
+          : formatAuditText(result, corpusDir, program.id, cli),
       );
       return result.ok ? EXIT_SUCCESS : EXIT_VALIDATION_FAILURE;
     }
@@ -214,7 +223,7 @@ export const validateCommand: Command = {
           audit: await auditProgram(program, corpusDir, registry),
         });
       } catch (cause) {
-        ctx.stderr(`osn validate: programme "${program.id}": ${(cause as Error).message}\n`);
+        ctx.stderr(`${cli} validate: programme "${program.id}": ${(cause as Error).message}\n`);
         return EXIT_USAGE_ERROR;
       }
     }
@@ -227,7 +236,7 @@ export const validateCommand: Command = {
             programs: results.map((entry) => ({ program: entry.program, ...entry.audit })),
           })
         : results
-            .map((entry) => formatAuditText(entry.audit, entry.corpusDir, entry.program))
+            .map((entry) => formatAuditText(entry.audit, entry.corpusDir, entry.program, cli))
             .join("\n\n"),
     );
     return ok ? EXIT_SUCCESS : EXIT_VALIDATION_FAILURE;

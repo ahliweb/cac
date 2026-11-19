@@ -56,12 +56,19 @@ import {
   learningRecordSchema,
 } from "../../schema/learning-record";
 import type { Command } from "../command";
-import { EXIT_SUCCESS, EXIT_USAGE_ERROR, EXIT_VALIDATION_FAILURE } from "../command";
+import {
+  cliOf,
+  DEFAULT_CLI_NAME,
+  EXIT_SUCCESS,
+  EXIT_USAGE_ERROR,
+  EXIT_VALIDATION_FAILURE,
+} from "../command";
 import { formatReportJson, formatReportMarkdown } from "../format-report";
 import { writeOutputFile } from "../output-writer";
 import { rejectNonOsnProgram, resolveProgramOption } from "../program-loader";
 
-const HELP_TEXT = `osn report -- mentor KPI dashboard reporting from learning records
+function helpText(cli: string): string {
+  return `${cli} report -- mentor KPI dashboard reporting from learning records
 
 Computes the seven §6.3 mentor KPI metrics, a §13.1 step-4 postmortem
 error-taxonomy breakdown, and a §13.1 step-5 scheduled-re-solves listing
@@ -70,7 +77,7 @@ personal-identifier-shaped fields and validated against the
 learning-record schema before anything is computed -- see "Privacy gate"
 below.
 
-Usage: osn report --records <path> [options]
+Usage: ${cli} report --records <path> [options]
 
 Options:
   --records <path>     A .jsonl (one JSON record per line, blank lines
@@ -108,7 +115,7 @@ denylisted-identifier-shaped field (name, email, NISN, school, ...) at any
 depth (see ADR-0004). If any record contains one, the whole file is
 refused: the error names every offending field's path and record index,
 but NEVER the value found there. This runs before schema validation, so
-the message is unmistakably a privacy refusal ("osn report: privacy
+the message is unmistakably a privacy refusal ("${cli} report: privacy
 refusal: ...") rather than a generic invalid-record error.
 
 Exit codes:
@@ -120,6 +127,7 @@ Exit codes:
       for why).
   2   usage error: --records missing, the given path cannot be read, an
       unknown --by, an unknown --format, or an unknown --program.`;
+}
 
 /** Extracts the value following the first occurrence of `flag` in `args`, or `undefined` if `flag` is absent (or has nothing after it). */
 function readFlagValue(args: readonly string[], flag: string): string | undefined {
@@ -300,20 +308,24 @@ function isReportGroupBy(value: string | undefined): value is ReportGroupBy {
  * learning record carries neither a topic family nor a week number, and the
  * CLI has no registry to derive them from.
  */
-export function groupByUnsupportedMessage(groupBy: "topic" | "week"): string {
+export function groupByUnsupportedMessage(
+  groupBy: "topic" | "week",
+  cli: string = DEFAULT_CLI_NAME,
+): string {
   const missing =
     groupBy === "topic"
       ? "a learning record carries a problemId but no topic family (rumpun materi), and no problem-to-topic mapping is shipped with the CLI"
       : "a learning record carries a recordedAt timestamp but no week number, and a week depends on a cohort's own start date and excluded days, which the CLI cannot know";
-  return `osn report: --by ${groupBy} is not supported by the CLI: ${missing}. Supported: omit --by (or use --by none) for the overall report; export --format json and group by ${groupBy} outside the CLI. This is a documented limit (docs/cli/README.md, "osn report").\n`;
+  return `${cli} report: --by ${groupBy} is not supported by the CLI: ${missing}. Supported: omit --by (or use --by none) for the overall report; export --format json and group by ${groupBy} outside the CLI. This is a documented limit (docs/cli/README.md, "osn report").\n`;
 }
 
 export const reportCommand: Command = {
   name: "report",
   summary: "Compute the §6.3 mentor KPI dashboard from a learning-record file.",
-  help: () => HELP_TEXT,
+  help: (cli = DEFAULT_CLI_NAME) => helpText(cli),
 
   async run(rawArgs, ctx) {
+    const cli = cliOf(ctx);
     const resolved = await resolveProgramOption("report", rawArgs, ctx);
     if (!resolved.ok) {
       return resolved.exitCode;
@@ -325,7 +337,9 @@ export const reportCommand: Command = {
     const args = resolved.args;
     const recordsValue = readFlagValue(args, "--records");
     if (!args.includes("--records") || recordsValue === undefined) {
-      ctx.stderr('osn report: --records <path> is required. Run "osn report --help" for usage.\n');
+      ctx.stderr(
+        `${cli} report: --records <path> is required. Run "${cli} report --help" for usage.\n`,
+      );
       return EXIT_USAGE_ERROR;
     }
 
@@ -334,7 +348,7 @@ export const reportCommand: Command = {
       const byValue = readFlagValue(args, "--by");
       if (!isReportGroupBy(byValue)) {
         ctx.stderr(
-          `osn report: --by must be "topic", "week" or "none"; received ${JSON.stringify(byValue ?? "")}.\n`,
+          `${cli} report: --by must be "topic", "week" or "none"; received ${JSON.stringify(byValue ?? "")}.\n`,
         );
         return EXIT_USAGE_ERROR;
       }
@@ -346,7 +360,7 @@ export const reportCommand: Command = {
       const formatValue = readFlagValue(args, "--format");
       if (formatValue !== "md" && formatValue !== "json") {
         ctx.stderr(
-          `osn report: --format must be "md" or "json"; received ${JSON.stringify(formatValue ?? "")}.\n`,
+          `${cli} report: --format must be "md" or "json"; received ${JSON.stringify(formatValue ?? "")}.\n`,
         );
         return EXIT_USAGE_ERROR;
       }
@@ -359,7 +373,7 @@ export const reportCommand: Command = {
       text = await readFile(absolutePath, "utf-8");
     } catch (cause) {
       ctx.stderr(
-        `osn report: failed to read --records ${JSON.stringify(recordsValue)}: ${(cause as Error).message}\n`,
+        `${cli} report: failed to read --records ${JSON.stringify(recordsValue)}: ${(cause as Error).message}\n`,
       );
       return EXIT_USAGE_ERROR;
     }
@@ -377,7 +391,7 @@ export const reportCommand: Command = {
         )
         .join("\n");
       ctx.stderr(
-        `osn report: privacy refusal: ${privacyViolations.length} field(s) shaped like a direct or indirect personal identifier were found (see ADR-0004). Refusing to process ${JSON.stringify(recordsValue)}. Values are never logged -- only field paths and record indices are shown below. Remove or rename these fields in the source data and re-run:\n${lines}\n`,
+        `${cli} report: privacy refusal: ${privacyViolations.length} field(s) shaped like a direct or indirect personal identifier were found (see ADR-0004). Refusing to process ${JSON.stringify(recordsValue)}. Values are never logged -- only field paths and record indices are shown below. Remove or rename these fields in the source data and re-run:\n${lines}\n`,
       );
       return EXIT_VALIDATION_FAILURE;
     }
@@ -398,7 +412,7 @@ export const reportCommand: Command = {
         .map((issue) => `  - [index ${issue.index}] ${issue.path}: ${issue.message}`)
         .join("\n");
       ctx.stderr(
-        `osn report: ${allIssues.length} invalid record(s) found in ${JSON.stringify(recordsValue)}:\n${lines}\n`,
+        `${cli} report: ${allIssues.length} invalid record(s) found in ${JSON.stringify(recordsValue)}:\n${lines}\n`,
       );
       return EXIT_VALIDATION_FAILURE;
     }
@@ -410,8 +424,8 @@ export const reportCommand: Command = {
       if (cause instanceof ReportRequestError) {
         ctx.stderr(
           groupBy === "topic" || groupBy === "week"
-            ? groupByUnsupportedMessage(groupBy)
-            : `osn report: ${cause.message}\n`,
+            ? groupByUnsupportedMessage(groupBy, cli)
+            : `${cli} report: ${cause.message}\n`,
         );
         return EXIT_USAGE_ERROR;
       }
@@ -434,17 +448,17 @@ export const reportCommand: Command = {
     if (!writeResult.ok) {
       if (writeResult.reason === "exists") {
         ctx.stderr(
-          `osn report: --out ${JSON.stringify(outValue)} already exists. Use --force to overwrite it.\n`,
+          `${cli} report: --out ${JSON.stringify(outValue)} already exists. Use --force to overwrite it.\n`,
         );
       } else {
         ctx.stderr(
-          `osn report: failed to write ${JSON.stringify(outValue)}: ${writeResult.message}\n`,
+          `${cli} report: failed to write ${JSON.stringify(outValue)}: ${writeResult.message}\n`,
         );
       }
       return EXIT_USAGE_ERROR;
     }
 
-    ctx.stdout(`osn report: wrote ${outValue}\n`);
+    ctx.stdout(`${cli} report: wrote ${outValue}\n`);
     return EXIT_SUCCESS;
   },
 };

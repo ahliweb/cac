@@ -12,12 +12,13 @@
 import { resolve } from "node:path";
 import { renderChecklist } from "../../render/checklist";
 import type { Command } from "../command";
-import { EXIT_SUCCESS, EXIT_USAGE_ERROR } from "../command";
+import { cliOf, DEFAULT_CLI_NAME, EXIT_SUCCESS, EXIT_USAGE_ERROR } from "../command";
 import { formatChecklistJson } from "../format-checklist";
 import { writeOutputFile } from "../output-writer";
 import { rejectNonOsnProgram, resolveProgramOption } from "../program-loader";
 
-const HELP_TEXT = `osn checklist -- render the cohort readiness checklist and operational rules
+function helpText(cli: string): string {
+  return `${cli} checklist -- render the cohort readiness checklist and operational rules
 
 Renders the §14.1 eight-item cohort-readiness checklist (each with its
 verification method and required evidence), the §14.2 eight operational
@@ -26,7 +27,7 @@ closing extension condition), and the latest §14.2 rule 8 syllabus-check
 status (date, outcome, sources checked, and days since), alongside this
 corpus's own syllabusVersion/syllabusDate.
 
-Usage: osn checklist [--format md|json] [--out <path>] [--force]
+Usage: ${cli} checklist [--format md|json] [--out <path>] [--force]
 
 Options:
   --format <md|json>   Output format. Default: md. --json (the global
@@ -45,6 +46,7 @@ Exit codes:
   0   success.
   2   usage error: an unknown --format, an unknown --program, or --out already exists without
       --force.`;
+}
 
 /** Extracts the value following the first occurrence of `flag` in `args`, or `undefined` if `flag` is absent (or has nothing after it). */
 function readFlagValue(args: readonly string[], flag: string): string | undefined {
@@ -58,9 +60,10 @@ function readFlagValue(args: readonly string[], flag: string): string | undefine
 export const checklistCommand: Command = {
   name: "checklist",
   summary: "Render the §14.1 cohort readiness checklist and §14.2 operational rules.",
-  help: () => HELP_TEXT,
+  help: (cli = DEFAULT_CLI_NAME) => helpText(cli),
 
   async run(rawArgs, ctx) {
+    const cli = cliOf(ctx);
     const resolved = await resolveProgramOption("checklist", rawArgs, ctx);
     if (!resolved.ok) {
       return resolved.exitCode;
@@ -75,7 +78,7 @@ export const checklistCommand: Command = {
       const formatValue = readFlagValue(args, "--format");
       if (formatValue !== "md" && formatValue !== "json") {
         ctx.stderr(
-          `osn checklist: --format must be "md" or "json"; received ${JSON.stringify(formatValue ?? "")}.\n`,
+          `${cli} checklist: --format must be "md" or "json"; received ${JSON.stringify(formatValue ?? "")}.\n`,
         );
         return EXIT_USAGE_ERROR;
       }
@@ -103,17 +106,17 @@ export const checklistCommand: Command = {
     if (!result.ok) {
       if (result.reason === "exists") {
         ctx.stderr(
-          `osn checklist: --out ${JSON.stringify(outValue)} already exists. Use --force to overwrite it.\n`,
+          `${cli} checklist: --out ${JSON.stringify(outValue)} already exists. Use --force to overwrite it.\n`,
         );
       } else {
         ctx.stderr(
-          `osn checklist: failed to write ${JSON.stringify(outValue)}: ${result.message}\n`,
+          `${cli} checklist: failed to write ${JSON.stringify(outValue)}: ${result.message}\n`,
         );
       }
       return EXIT_USAGE_ERROR;
     }
 
-    ctx.stdout(`osn checklist: wrote ${outValue}\n`);
+    ctx.stdout(`${cli} checklist: wrote ${outValue}\n`);
     return EXIT_SUCCESS;
   },
 };
