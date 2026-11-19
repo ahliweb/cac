@@ -9,6 +9,9 @@
  */
 
 import { describe, expect, test } from "bun:test";
+import { cp, mkdtemp, rm } from "node:fs/promises";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
 import type { CommandContext } from "../../src/cli/command";
 import { renderCommand } from "../../src/cli/commands/render";
 
@@ -65,13 +68,23 @@ describe("renderCommand.run: modul and --lembar (in-process)", () => {
   });
 
   test("a programme without a modules.json says so", async () => {
-    const { ctx, stderr } = makeContext();
-    expect(
-      await renderCommand.run(
-        ["modul", "--program", "tk-coding", "--id", "tk-a1-m1", "--lembar"],
-        ctx,
-      ),
-    ).toBe(2);
-    expect(stderr.join("")).toContain("this programme has no modules.json");
+    // Every programme now carries a module index, so the case runs against a
+    // temporary copy of data/ with the tk-coding index removed.
+    const root = await mkdtemp(join(tmpdir(), "osn-render-no-index-"));
+    try {
+      await cp(join(process.cwd(), "data"), join(root, "data"), { recursive: true });
+      await rm(join(root, "data", "tk-coding", "modules.json"), { force: true });
+      const { ctx, stderr } = makeContext();
+      ctx.cwd = root;
+      expect(
+        await renderCommand.run(
+          ["modul", "--program", "tk-coding", "--id", "tk-a1-m1", "--lembar"],
+          ctx,
+        ),
+      ).toBe(2);
+      expect(stderr.join("")).toContain("this programme has no modules.json");
+    } finally {
+      await rm(root, { recursive: true, force: true });
+    }
   });
 });
