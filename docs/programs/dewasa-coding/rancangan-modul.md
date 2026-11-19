@@ -2,7 +2,7 @@
 
 - **Version:** v0.1.1
 - **Last updated:** 2026-11-19
-- **Status:** DRAF, menunggu persetujuan pemilik (status persetujuan rancangan tidak diubah). Modulnya **sudah ditulis** per 2026-11-19: 36 modul di `content/dewasa-coding/modules/`, terindeks di `data/dewasa-coding/modules.json`; semuanya berstatus `draf`.
+- **Status:** Rancangan **DISETUJUI pemilik 2026-11-19** lewat dialog keputusan (opsi "Setujui semua rekomendasi"). Persetujuan ini untuk rancangan, bukan modul. Modulnya **sudah ditulis** per 2026-11-19: 36 modul di `content/dewasa-coding/modules/`, terindeks di `data/dewasa-coding/modules.json`; semuanya berstatus `draf`.
 - **Changeset:** v0.1.0: dokumen pertama (rancangan modul belajar `dewasa-coding`, satu modul per modul silabus, 36 modul: 35 modul jalur ditambah `DW-FND-M1`), bersama pilot `dw-fnd-m1`.
 
 > **Catatan status (2026-11-19, sinkron dokumen #124).** Frasa "belum satu pun modul ditulis" dan "belum ada `modules.json`" di bawah adalah riwayat: 36 modul ada di `content/dewasa-coding/modules/` (`dw-fnd` 1, `dw-pkj` 8, `dw-pro` 13, `dw-prs` 6, `dw-bis` 8) dan terindeks di `data/dewasa-coding/modules.json` (skema `src/schema/dw-learning-module.ts`), semua `draf`, belum ditinjau. Pilot `rancangan-modul-contoh/` kini riwayat; modul nyatanya `content/dewasa-coding/modules/dw-fnd-m1.md`. Aturan "agen tidak menyunting `modules.json`" adalah aturan masa penulisan. Judul `#` dan bagian `## Rujukan` tidak lagi ada di tubuh modul (judul dan rujukan dirender dari indeks); judul ganda kini galat di `bun run check:learner-assets`.

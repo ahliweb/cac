@@ -2,7 +2,7 @@
 
 - **Version:** v0.1.1
 - **Last updated:** 2026-11-19
-- **Status:** DRAF, menunggu persetujuan pemilik (status persetujuan rancangan tidak diubah). Modulnya **sudah ditulis** per 2026-11-19: 24 modul di `content/kuliah-coding/modules/`, terindeks di `data/kuliah-coding/modules.json`; semuanya berstatus `draf`.
+- **Status:** Rancangan **DISETUJUI pemilik 2026-11-19** lewat dialog keputusan (opsi "Setujui semua rekomendasi", termasuk tingkat AI baku `[asumsi]` untuk mata kuliah yang belum ditetapkan silabus). Persetujuan ini untuk rancangan, bukan modul. Modulnya **sudah ditulis** per 2026-11-19: 24 modul di `content/kuliah-coding/modules/`, terindeks di `data/kuliah-coding/modules.json`; semuanya berstatus `draf`.
 - **Changeset:** v0.1.0: dokumen pertama (rancangan modul belajar `kuliah-coding`, satu modul per mata kuliah, 24 modul, struktur internal per pekan atau pokok bahasan), bersama pilot `kul-u-101`.
 
 > **Catatan status (2026-11-19, sinkron dokumen #124).** Frasa "belum satu pun modul ditulis" dan "belum ada `modules.json`" di bawah adalah riwayat: 24 modul ada di `content/kuliah-coding/modules/` (jalur U 5, I 16, K 3) dan terindeks di `data/kuliah-coding/modules.json` (skema `src/schema/kul-module.ts`), semua `draf`, belum ditinjau. Pilot `rancangan-modul-contoh/` kini riwayat; modul nyatanya `content/kuliah-coding/modules/kul-u-101.md`. Aturan "agen penulis tidak menyunting indeks" adalah aturan masa penulisan. Judul `#` dan bagian `## Rujukan` tidak lagi ada di tubuh modul (judul dan rujukan dirender dari indeks); judul ganda kini galat di `bun run check:learner-assets`.
