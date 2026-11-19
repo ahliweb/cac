@@ -1,6 +1,7 @@
 # Mulai cepat
 
-Halaman ini membawa Anda dari nol sampai bisa menjalankan `osn` dan
+Halaman ini membawa Anda dari nol sampai bisa menjalankan `cac` (nama
+resmi perintah; `osn` adalah alias lama yang tetap bekerja) dan
 memastikan data kurikulum valid. Butuh sekitar lima menit.
 
 ## Prasyarat
@@ -9,7 +10,7 @@ memastikan data kurikulum valid. Butuh sekitar lima menit.
 | --- | --- | --- |
 | [Bun](https://bun.sh) 1.4.4 | Menjalankan semua perintah. | Versi yang dipakai CI (`.github/workflows/ci.yml`). Cek dengan `bun --version`. |
 | Git | Mengambil repositori. | Tidak perlu bila Anda hanya menerima berkas hasil cetak dari mentor. |
-| `g++` | Hanya untuk `bun run check:module-code`, yang memeriksa contoh C++ di modul bisa dikompilasi. | Tidak perlu untuk `osn validate`, `plan`, `render`, `report`. Hanya perintah itu yang membutuhkannya. |
+| `g++` | Hanya untuk `bun run check:module-code`, yang memeriksa contoh C++ di modul bisa dikompilasi. | Tidak perlu untuk `cac validate`, `plan`, `render`, `report`. Hanya perintah itu yang membutuhkannya. |
 | `jq` (opsional) | Membaca berkas JSON di `data/` dari terminal (dipakai di [`guru-sma.md`](guru-sma.md)). | Alternatif tanpa `jq` juga ditunjukkan di sana. |
 
 ```text
@@ -85,46 +86,63 @@ bun run privacy-check
 ```text
 $ bun run src/cli/index.ts privacy-check
 osn privacy-check: scanning /.../data
-OK -- 65 file(s) scanned, 0 direct-identifier-shaped key(s) found.
+OK -- 72 file(s) scanned, 0 direct-identifier-shaped key(s) found.
 ```
 
-## 3. Cara menjalankan `osn`
+## 3. Cara menjalankan `cac`
+
+`cac` (Curriculum as Code, produk AhliKoding Curriculum) adalah nama resmi
+perintah. `osn` adalah alias kompatibel yang berperilaku identik (perintah,
+opsi, keluaran JSON, dan kode keluar sama; hanya nama pada awalan pesan yang
+mengikuti nama yang Anda ketik, misalnya `cac validate: ...` atau
+`osn validate: ...`). Alias tidak menampilkan peringatan. Kebijakan
+penghapusan alias: `osn` dihapus hanya pada rilis MAJOR, paling cepat enam
+bulan setelah pengumuman dan hanya bila tidak ada pengguna aktif yang masih
+memakainya. ID program `osn` (`--program osn`, `data/osn/`) tidak berkaitan
+dengan alias ini dan tidak berubah.
 
 Cara yang terbukti bekerja:
 
 ```sh
-bun run src/cli/index.ts <perintah> [opsi]
+bun run src/cli/cac.ts <perintah> [opsi]
 ```
 
 Contoh versi:
 
 ```text
-$ bun run src/cli/index.ts --version
+$ bun run src/cli/cac.ts --version
 2.5.0
 ```
 
-Bentuk pendek `bun src/cli/index.ts ...` juga bekerja (keluaran sama). Dua
-cara yang **tidak** bekerja, supaya Anda tidak buang waktu:
+Bentuk pendek `bun src/cli/cac.ts ...` juga bekerja (keluaran sama). Alias
+lama dijalankan dengan `bun run src/cli/index.ts <perintah>`. Cara yang
+**tidak** bekerja, supaya Anda tidak buang waktu:
 
 | Perintah | Hasil |
 | --- | --- |
-| `./src/cli/index.ts --version` | `Permission denied`, exit 126 (berkas tidak executable). |
+| `./src/cli/cac.ts --version` | `Permission denied`, exit 126 (berkas tidak executable). |
+| `bunx cac --version` | Gagal (`could not determine executable to run for package cac`, exit 1): paket ini privat dan tidak diterbitkan. Jangan dipakai. |
 | `bunx osn --version` | Mengunduh paket npm lain bernama `osn` yang tidak ada hubungannya, lalu gagal (exit 1). Jangan dipakai. |
 
-Pada panduan ini, `osn <perintah>` adalah singkatan dari
-`bun run src/cli/index.ts <perintah>`. Beberapa perintah punya pintasan di
-`package.json`: `bun run validate` dan `bun run privacy-check`.
+Pada panduan ini, `cac <perintah>` adalah singkatan dari
+`bun run src/cli/cac.ts <perintah>`. Beberapa perintah punya pintasan di
+`package.json`: `bun run validate` dan `bun run privacy-check` (keduanya
+memanggil entri alias `src/cli/index.ts`, sehingga awalan pesannya `osn
+validate:`).
 
 ## 4. Melihat bantuan
 
 ```sh
-bun run src/cli/index.ts --help
+bun run src/cli/cac.ts --help
 ```
 
 ```text
-osn -- OSN Informatika 2026 curriculum CLI
+cac -- Curriculum as Code CLI (AhliKoding Curriculum)
 
-Usage: osn <command> [options]
+`osn` is the legacy name of this CLI: it behaves identically (same commands, flags, JSON and exit codes).
+An independent curriculum tool; not official Puspresnas / IA TOKI / IOI material.
+
+Usage: cac <command> [options]
 
 Commands:
   validate        Validate the corpus of one (--program) or every registered programme.
@@ -136,8 +154,8 @@ Commands:
 ...
 ```
 
-Bantuan per perintah: `bun run src/cli/index.ts <perintah> --help`, misalnya
-`bun run src/cli/index.ts plan --help`. Teks bantuan berbahasa Inggris.
+Bantuan per perintah: `bun run src/cli/cac.ts <perintah> --help`, misalnya
+`bun run src/cli/cac.ts plan --help`. Teks bantuan berbahasa Inggris.
 
 Kode keluar yang berlaku di semua perintah:
 

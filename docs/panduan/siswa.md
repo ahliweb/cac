@@ -12,7 +12,7 @@ tidak punya kolom nama.
 ## Lembar belajar mingguan
 
 Satu lembar untuk satu minggu (1-28 pada program OSN). Mentor membuatnya
-dengan perintah `osn render lembar-siswa --week <n>`. Isinya, berurutan:
+dengan perintah `cac render lembar-siswa --week <n>`. Isinya, berurutan:
 
 | Bagian | Gunanya |
 | --- | --- |
@@ -54,7 +54,7 @@ Memahami invariant sederhana, rekursi dasar, dan binary search.
 ```
 
 Kalau kamu sendiri punya terminal dan repositori ini, perintahnya
-`bun run src/cli/index.ts render lembar-siswa --week 4` (lihat
+`bun run src/cli/cac.ts render lembar-siswa --week 4` (lihat
 [`mulai-cepat.md`](mulai-cepat.md)).
 
 ## Lembar belajar program coding SMA
@@ -68,7 +68,7 @@ dan XII, kodenya `E-XI1-M3` dan seterusnya). Jalur D dan E adalah pengayaan di
 luar Capaian Pembelajaran (CP): lembarnya tidak memuat butir CP yang
 "dipenuhi", hanya bagian **Irisan dengan CP** sebagai keterangan. Gurumu
 menjalankan
-`osn render lembar-siswa --program sma-coding --week <kode-minggu>`. Isinya:
+`cac render lembar-siswa --program sma-coding --week <kode-minggu>`. Isinya:
 topik, **Tujuan**, **Keluaran**, **Latihan dan kegiatan**, **Butir CP terkait**
 (beserta kutipan Capaian Pembelajaran-nya), **Jembatan ke OSN** (kalau ada),
 **Modul terkait** (kalau ada; modul bertanda **DRAF** belum ditinjau
@@ -149,7 +149,7 @@ tanyakan ke mentormu.
 ### Membaca dengan perintah
 
 ```sh
-bun run src/cli/index.ts render modul --id rekursi
+bun run src/cli/cac.ts render modul --id rekursi
 ```
 
 Hasilnya modul lengkap dengan spanduk status dan daftar rujukan di akhir.

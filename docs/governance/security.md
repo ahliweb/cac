@@ -88,12 +88,12 @@ not a restatement of the adjective. Each statement is labelled:
   (`src/schema/learning-record.ts`) is `.strict()` and rejects any field
   shaped like a direct personal identifier (`DIRECT_IDENTIFIER_DENYLIST`)
   — see ADR-0004, "Decision detail: enforcement mechanism".
-- **[This repository]** `osn privacy-check` (`src/cli/commands/privacy-
-  check.ts`, run in CI immediately after `osn validate` per
+- **[This repository]** `cac privacy-check` (`src/cli/commands/privacy-
+  check.ts`, run in CI immediately after `cac validate` per
   `.github/workflows/ci.yml`) recursively scans every file under `data/`
   (including `data/osn/samples/*.jsonl`) for the same denylisted keys and
   fails the build if any are found. See `docs/governance/privacy.md`,
-  "The automated check: `osn privacy-check`".
+  "The automated check: `cac privacy-check`".
 - **[This repository]** This repository holds **no real learner data at
   all** (ADR-0004) — the strongest form of data minimisation available to
   it is holding none.
@@ -141,8 +141,8 @@ not a restatement of the adjective. Each statement is labelled:
 
 - **[This repository]** Where this repository's own tooling reports a
   finding about sensitive-shaped data, it names the file, path, and key —
-  **never the value** — per `osn report`'s privacy-gate refusal
-  (`src/cli/commands/report.ts`) and `osn privacy-check`'s findings
+  **never the value** — per `cac report`'s privacy-gate refusal
+  (`src/cli/commands/report.ts`) and `cac privacy-check`'s findings
   format (`src/cli/format-privacy-check.ts`); see
   `docs/governance/privacy.md`, "Access logging" for the discipline this
   generalises from.
@@ -332,9 +332,9 @@ governance, end to end:
      lines/functions gate in `bunfig.toml`)
    - `bun run build` (`bun build ./src/index.ts --outdir dist --target
      bun`)
-   - `bun run validate` (`osn validate` — schema, structural invariant,
+   - `bun run validate` (`cac validate` — schema, structural invariant,
      and referential-integrity checks over the curriculum corpus)
-   - `bun run privacy-check` (`osn privacy-check` — the data-minimisation
+   - `bun run privacy-check` (`cac privacy-check` — the data-minimisation
      control described above)
 
    See `docs/development/ci-cd.md` for the full description of why this
@@ -452,7 +452,7 @@ has), and residual risk after those mitigations.
 
 | ID | Description | Likelihood | Impact | Owner (role) | Existing mitigations | Residual risk |
 | --- | --- | --- | --- | --- | --- | --- |
-| RISK-01 | Minors' personal data (name, contact, school, learning history) is exposed, whether through this repository or a downstream platform built on it. | Low (this repository holds none by design); Medium for a downstream platform once real data exists. | High — the affected population is entirely school-age minors. | Data Protection Officer / Platform administrator (downstream role; this repository has no equivalent runtime role) | ADR-0004 (no learner personal data held here); `osn privacy-check` CI gate; `DIRECT_IDENTIFIER_DENYLIST` schema guard; `docs/governance/privacy.md`'s role-based access, minimisation, and retention design. | This repository cannot verify a downstream platform actually implements the documented design at runtime — residual risk is the gap between documented policy and a specific platform's real implementation. |
+| RISK-01 | Minors' personal data (name, contact, school, learning history) is exposed, whether through this repository or a downstream platform built on it. | Low (this repository holds none by design); Medium for a downstream platform once real data exists. | High — the affected population is entirely school-age minors. | Data Protection Officer / Platform administrator (downstream role; this repository has no equivalent runtime role) | ADR-0004 (no learner personal data held here); `cac privacy-check` CI gate; `DIRECT_IDENTIFIER_DENYLIST` schema guard; `docs/governance/privacy.md`'s role-based access, minimisation, and retention design. | This repository cannot verify a downstream platform actually implements the documented design at runtime — residual risk is the gap between documented policy and a specific platform's real implementation. |
 | RISK-02 | A contest problem, expected solution, or test data leaks before its scheduled use, compromising contest integrity. | Medium — any problem-bank system with pre-release content is a target. | High — a leaked problem can invalidate a contest stage entirely. | Curriculum Board / Contest Operations Lead (role) | This repository's `data/` holds only problem-taxonomy **vocabulary** and curriculum structure (`data/osn/problem-taxonomy-vocab.json`, `data/osn/assessment-bank.json`), never live, unreleased contest problems or their solutions — there is nothing problem-specific here to leak. Role-based access design (`docs/governance/privacy.md`) restricts `internal`-class data to relevant roles. | A downstream platform's actual problem bank (which this repository does not define or hold) needs its own embargo/access-control mechanism for problems pending use; this repository has not defined one, since it is out of this repository's scope. |
 | RISK-03 | The contest judge becomes unavailable during an active, timed contest window. | Medium — any single-instance or under-provisioned judge system is exposed to load spikes or infrastructure failure at exactly the worst time. | High — see the RTO/RPO justification above: lost contest time is not recoverable by re-attempting. | Judge/Infrastructure Operations (role) | The RPO/RTO recommendations and continuity-plan guidance in "Business continuity" above; the severity/response-timeline structure in `docs/governance/incident-response.md`. | This repository does not operate judge infrastructure; residual risk is entirely a function of the downstream platform's actual infrastructure choices, which this document can recommend targets for but not enforce. |
 | RISK-04 | The curriculum drifts from the official OSN/IOI syllabus sources it claims to transcribe faithfully. | Medium — any manually-maintained transcription can drift from a source that itself changes over time. | Medium — reduces the curriculum's accuracy and trustworthiness, though it does not expose anyone's data or halt a live contest. | Curriculum Board (role) | The `curriculum-change` issue-template workflow requiring a recorded syllabus check (`.github/ISSUE_TEMPLATE/curriculum-change.yml`); the PR template's "Syllabus check" gate (§14.2 rule 8); dual versioning (`syllabusVersion`/`syllabusDate`) and changeset/CHANGELOG discipline (`docs/development/releasing.md`); `AGENTS.md`'s "Curriculum content fidelity" rule. | A syllabus check is reviewer-verified, not automated (`docs/development/releasing.md`: "CI does not currently enforce this automatically — it is a reviewer responsibility") — residual risk is a reviewer accepting an incomplete or unverified syllabus check. |
