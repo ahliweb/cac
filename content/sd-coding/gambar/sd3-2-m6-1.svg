@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 340" width="640" height="340" role="img" aria-labelledby="t d">
+  <title id="t">Pengirim, kurir, dan penerima dengan amplop berisi empat kartu panah</title>
+  <desc id="d">Tiga kotak berderet dari kiri ke kanan dengan panah di antaranya: PENGIRIM, KURIR, dan PENERIMA. Di atas panah pertama ada amplop berisi empat kartu panah: atas, atas, kanan, atas. Di bawah kotak penerima tertulis berakhir di c3.</desc>
+  <rect width="640" height="340" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a5d9f"/>
+    </marker>
+  </defs>
+  <g stroke="#555555" stroke-width="2" fill="#e8f1fb">
+    <rect x="20" y="170" width="150" height="70" rx="8"/>
+    <rect x="245" y="170" width="150" height="70" rx="8"/>
+    <rect x="470" y="170" width="150" height="70" rx="8"/>
+  </g>
+  <g font-family="sans-serif" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">
+    <text x="95" y="212">PENGIRIM</text>
+    <text x="320" y="212">KURIR</text>
+    <text x="545" y="212">PENERIMA</text>
+  </g>
+  <g stroke="#2a5d9f" stroke-width="3" fill="none" marker-end="url(#a)">
+    <line x1="172" y1="205" x2="242" y2="205"/>
+    <line x1="397" y1="205" x2="467" y2="205"/>
+  </g>
+  <rect x="150" y="60" width="190" height="90" rx="4" fill="#fff8e1" stroke="#b86a00" stroke-width="2"/>
+  <polyline points="150,60 245,115 340,60" fill="none" stroke="#b86a00" stroke-width="2"/>
+  <g stroke="#2a5d9f" stroke-width="3" fill="none">
+    <path d="M178,138 L178,120 M172,126 L178,119 L184,126"/>
+    <path d="M213,138 L213,120 M207,126 L213,119 L219,126"/>
+    <path d="M243,129 L261,129 M255,123 L262,129 L255,135"/>
+    <path d="M300,138 L300,120 M294,126 L300,119 L306,126"/>
+  </g>
+  <text x="545" y="275" font-family="sans-serif" font-size="16" fill="#222222" text-anchor="middle">berakhir di c3</text>
+</svg>

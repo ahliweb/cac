@@ -2250,6 +2250,139 @@
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd4-2-m7.md",
       "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m7.md"
+    },
+    {
+      "id": "sd3-2-m1",
+      "title": "Simbol pengganti kata",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD3-2-M1"],
+      "cpItems": [],
+      "gradeLevels": [3],
+      "prerequisites": ["SD3-1-M2"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd3-2-m1.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m1.md"
+    },
+    {
+      "id": "sd3-2-m2",
+      "title": "Dua keadaan: nyala dan padam",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD3-2-M2"],
+      "cpItems": [],
+      "gradeLevels": [3],
+      "prerequisites": ["SD3-2-M1"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd3-2-m2.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m2.md"
+    },
+    {
+      "id": "sd3-2-m3",
+      "title": "Data: tabel sederhana",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD3-2-M3"],
+      "cpItems": [],
+      "gradeLevels": [3],
+      "prerequisites": [],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd3-2-m3.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m3.md"
+    },
+    {
+      "id": "sd3-2-m4",
+      "title": "Diagram gambar",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD3-2-M4"],
+      "cpItems": [],
+      "gradeLevels": [3],
+      "prerequisites": ["SD3-2-M3"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd3-2-m4.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m4.md"
+    },
+    {
+      "id": "sd3-2-m5",
+      "title": "Perangkat dan fungsinya",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD3-2-M5"],
+      "cpItems": [],
+      "gradeLevels": [3],
+      "prerequisites": ["SD2-2-M2"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd3-2-m5.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m5.md"
+    },
+    {
+      "id": "sd3-2-m6",
+      "title": "Pesan lewat kurir",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD3-2-M6"],
+      "cpItems": [],
+      "gradeLevels": [3],
+      "prerequisites": ["SD3-2-M5"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd3-2-m6.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m6.md"
+    },
+    {
+      "id": "sd3-2-m7",
+      "title": "Mencari informasi, didampingi guru",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD3-2-M7"],
+      "cpItems": [],
+      "gradeLevels": [3],
+      "prerequisites": ["SD3-2-M5", "SD3-2-M6"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd3-2-m7.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m7.md"
     }
   ]
 }
