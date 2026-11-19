@@ -2926,6 +2926,175 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xi1-m14.md"
+    },
+    {
+      "id": "c-xi2-m1",
+      "title": "Jaringan nirkabel dan perangkat IoT (F)",
+      "cpItems": ["E-LD-e", "F-BK-d"],
+      "weekCodes": ["C-XI2-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi1-m7", "FND-X1-M4", "FND-X1-M5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino-ESP32 (Espressif): Wi-Fi API",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/wifi.html"
+        },
+        {
+          "title": "IETF RFC 5737: Blok alamat IPv4 untuk dokumentasi",
+          "url": "https://www.rfc-editor.org/rfc/rfc5737"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D - F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi2-m1.md"
+    },
+    {
+      "id": "c-xi2-m2",
+      "title": "Keamanan konektivitas",
+      "cpItems": ["E-LD-e", "F-LD-e", "F-LD-i"],
+      "weekCodes": ["C-XI2-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi2-m1", "FND-X1-M6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "OWASP: Secrets Management Cheat Sheet",
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D - F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi2-m2.md"
+    },
+    {
+      "id": "c-xi2-m3",
+      "title": "Klien HTTP (F)",
+      "cpItems": ["F-BK-d"],
+      "weekCodes": ["C-XI2-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi2-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "MDN: Gambaran umum HTTP (An overview of HTTP)",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview"
+        },
+        {
+          "title": "Arduino-ESP32: pustaka HTTPClient (kode sumber)",
+          "url": "https://github.com/espressif/arduino-esp32/tree/master/libraries/HTTPClient"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi2-m3.md"
+    },
+    {
+      "id": "c-xi2-m4",
+      "title": "Server mini (F)",
+      "cpItems": ["F-BK-d"],
+      "weekCodes": ["C-XI2-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi2-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "MDN: Gambaran umum HTTP (An overview of HTTP)",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview"
+        },
+        {
+          "title": "Arduino-ESP32: pustaka WebServer (kode sumber)",
+          "url": "https://github.com/espressif/arduino-esp32/tree/master/libraries/WebServer"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi2-m4.md"
+    },
+    {
+      "id": "c-xi2-m5",
+      "title": "Publikasi-langganan: konsep",
+      "cpItems": ["F-BK-d"],
+      "weekCodes": ["C-XI2-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi2-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "OASIS: MQTT Version 3.1.1",
+          "url": "https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html"
+        },
+        {
+          "title": "Eclipse Mosquitto (contoh broker MQTT)",
+          "url": "https://mosquitto.org/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi2-m5.md"
+    },
+    {
+      "id": "c-xi2-m6",
+      "title": "Publikasi-langganan: praktik (F)",
+      "cpItems": ["F-BK-d"],
+      "weekCodes": ["C-XI2-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi2-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "PubSubClient (pustaka klien MQTT untuk Arduino)",
+          "url": "https://github.com/knolleary/pubsubclient"
+        },
+        {
+          "title": "OASIS: MQTT Version 3.1.1",
+          "url": "https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html"
+        },
+        {
+          "title": "Eclipse Mosquitto (contoh broker MQTT)",
+          "url": "https://mosquitto.org/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi2-m6.md"
+    },
+    {
+      "id": "c-xi2-m7",
+      "title": "Format data",
+      "cpItems": ["F-BK-d"],
+      "weekCodes": ["C-XI2-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi2-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IETF RFC 8259: Format pertukaran data JSON",
+          "url": "https://www.rfc-editor.org/rfc/rfc8259"
+        },
+        {
+          "title": "JSON (json.org): pengantar",
+          "url": "https://www.json.org/json-en.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi2-m7.md"
     }
   ]
 }
