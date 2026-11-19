@@ -3292,6 +3292,191 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xi2-m7.md"
+    },
+    {
+      "id": "e-xi2-m1",
+      "title": "Gerbang dua qubit: CNOT",
+      "cpItems": [],
+      "weekCodes": ["E-XI2-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi1-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information (multiple systems)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/multiple-systems/quantum-information"
+        },
+        {
+          "title": "IBM Quantum Learning: Quantum circuits",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/quantum-circuits/circuits"
+        },
+        {
+          "title": "Quirk: Quantum Circuit Simulator",
+          "url": "https://algassert.com/quirk"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi2-m1.md"
+    },
+    {
+      "id": "e-xi2-m2",
+      "title": "Entanglement dan keadaan Bell",
+      "cpItems": [],
+      "weekCodes": ["E-XI2-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi2-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information (multiple systems)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/multiple-systems/quantum-information"
+        },
+        {
+          "title": "IBM Quantum Learning: Quantum circuits",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/quantum-circuits/circuits"
+        },
+        {
+          "title": "Quirk: Quantum Circuit Simulator",
+          "url": "https://algassert.com/quirk"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi2-m2.md"
+    },
+    {
+      "id": "e-xi2-m3",
+      "title": "Mengukur qubit terjerat",
+      "cpItems": [],
+      "weekCodes": ["E-XI2-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi2-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information (multiple systems)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/multiple-systems/quantum-information"
+        },
+        {
+          "title": "Quirk: Quantum Circuit Simulator",
+          "url": "https://algassert.com/quirk"
+        },
+        {
+          "title": "Python: modul random",
+          "url": "https://docs.python.org/3/library/random.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi2-m3.md"
+    },
+    {
+      "id": "e-xi2-m4",
+      "title": "Simulator sendiri III: n qubit",
+      "cpItems": [],
+      "weekCodes": ["E-XI2-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi2-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information (multiple systems)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/multiple-systems/quantum-information"
+        },
+        {
+          "title": "Python: modul sys (getsizeof)",
+          "url": "https://docs.python.org/3/library/sys.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi2-m4.md"
+    },
+    {
+      "id": "e-xi2-m5",
+      "title": "Gerbang fase dan rotasi (pengayaan)",
+      "cpItems": [],
+      "weekCodes": ["E-XI2-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi2-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information (single systems)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/single-systems/quantum-information"
+        },
+        {
+          "title": "Qiskit: RYGate",
+          "url": "https://quantum.cloud.ibm.com/docs/en/api/qiskit/qiskit.circuit.library.RYGate"
+        },
+        {
+          "title": "Quirk: Quantum Circuit Simulator",
+          "url": "https://algassert.com/quirk"
+        },
+        {
+          "title": "Python: modul cmath",
+          "url": "https://docs.python.org/3/library/cmath.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi2-m5.md"
+    },
+    {
+      "id": "e-xi2-m6",
+      "title": "Reversibilitas",
+      "cpItems": [],
+      "weekCodes": ["E-XI2-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi2-m5", "matkom-himpunan-relasi-fungsi"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information (multiple systems)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/multiple-systems/quantum-information"
+        },
+        {
+          "title": "Quirk: Quantum Circuit Simulator",
+          "url": "https://algassert.com/quirk"
+        },
+        {
+          "title": "Python: modul itertools",
+          "url": "https://docs.python.org/3/library/itertools.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi2-m6.md"
+    },
+    {
+      "id": "e-xi2-m7",
+      "title": "Tak dapat menggandakan dan teleportasi (konsep)",
+      "cpItems": [],
+      "weekCodes": ["E-XI2-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi2-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum teleportation",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/entanglement-in-action/quantum-teleportation"
+        },
+        {
+          "title": "IBM Quantum Learning: Quantum information (multiple systems)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/multiple-systems/quantum-information"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi2-m7.md"
     }
   ]
 }
