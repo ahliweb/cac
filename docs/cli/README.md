@@ -181,6 +181,19 @@ whose programme is not registered is a draft and is not validated.
    field needs but that is missing or invalid is itself reported ("cannot be
    checked"), never skipped silently.
 
+6. **Cross-programme codes** (ADR-0010, issue #177), for the bridge files a
+   programme lists in `crossProgramScan` of its table entry (today
+   `dewasa-coding`: `bridges.json` and `kuliah-bridge.json`;
+   `kuliah-coding`: `bridges.json`). Every string value of those files is
+   scanned for week, course and module codes of any programme (`TK-B1-M5`,
+   `SD1-1-M8`, `SMP7-1-M3`, `A-X1-M9`, `FND-X1-M1`, `KUL-I-101`,
+   `DW-PRO-M6`; a range `<code>..M<n>` also checks its end), and each code
+   must exist in the corpus of the programme it belongs to (week `id`s,
+   course and module `code`s, read from that programme's own files). A code
+   that does not exist is reported with its file, JSON path and programme;
+   a programme whose corpus cannot be read is skipped here (its own audit
+   reports it). Prose cells give no other protection against a wrong code.
+
 ### The `sma-coding` programme
 
 `osn validate --program sma-coding` validates `data/sma-coding/` with its
@@ -263,8 +276,8 @@ owner-approved (2026-11-19).
 | Programme | Syllabus | Corpus files | Schemas / audit |
 | --- | --- | --- | --- |
 | `tk-coding` | v1.0.1 | 7 (`bridge`, `cp-elements`, `cp-mapping`, `decisions`, `goals`, `structure`, `weeks`) | `src/schema/tk-*.ts`, `src/domain/tk-corpus-audit.ts` |
-| `kuliah-coding` | v1.1.1 | 6 (`ai-policy`, `bridges`, `courses`, `cpl`, `knowledge-areas`, `tracks`) | `src/schema/kul-*.ts`, `src/domain/kul-corpus-audit.ts` |
-| `dewasa-coding` | v1.1.2 | 7 (`bridges`, `certification`, `module-plan`, `shared`, `skkni-units`, `structure`, `tracks`) | `src/schema/dw-*.ts`, `src/domain/dw-corpus-audit.ts` |
+| `kuliah-coding` | v1.2.0 | 6 (`ai-policy`, `bridges`, `courses`, `cpl`, `knowledge-areas`, `tracks`) | `src/schema/kul-*.ts`, `src/domain/kul-corpus-audit.ts` |
+| `dewasa-coding` | v1.2.0 | 8 (`bridges`, `certification`, `kuliah-bridge`, `module-plan`, `shared`, `skkni-units`, `structure`, `tracks`) | `src/schema/dw-*.ts`, `src/domain/dw-corpus-audit.ts` |
 | `sd-coding` | v1.0.2 | 5 (`bridges`, `cp-elements`, `cp-mapping`, `structure`, `weeks`) | `src/schema/sd-*.ts`, `src/domain/sd-corpus-audit.ts` |
 | `smp-coding` | v1.1.2 | 7 (`bridge`, `club`, `cp-elements`, `cp-mapping`, `structure`, `uncovered`, `weeks`) | `src/schema/smp-*.ts`, `src/domain/smp-corpus-audit.ts` |
 
@@ -286,7 +299,7 @@ osn validate: programme "kuliah-coding", corpus at /path/to/repo/data/kuliah-cod
 OK -- 6 data file(s) validated, 0 problem(s) found.
 
 osn validate: programme "dewasa-coding", corpus at /path/to/repo/data/dewasa-coding
-OK -- 7 data file(s) validated, 0 problem(s) found.
+OK -- 8 data file(s) validated, 0 problem(s) found.
 
 osn validate: programme "sd-coding", corpus at /path/to/repo/data/sd-coding
 OK -- 5 data file(s) validated, 0 problem(s) found.

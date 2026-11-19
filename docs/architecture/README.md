@@ -25,8 +25,8 @@ data/<program>/*.json  --->  src/schema/  --->  src/domain/  --->  src/render/
    no executable logic. Seven corpora today, one per registered programme: `data/osn/` (22 files: topic families, weeks, gates,
    references, assessment model, KPI definitions, playbooks, and more),
    `data/sma-coding/` (7 files plus the optional `modules.json`, syllabus v1.3.1),
-   `data/tk-coding/` (7, v1.0.1), `data/kuliah-coding/` (6, v1.1.1),
-   `data/dewasa-coding/` (7, v1.1.2), `data/sd-coding/` (5, v1.0.2) and
+   `data/tk-coding/` (7, v1.0.1), `data/kuliah-coding/` (6, v1.2.0),
+   `data/dewasa-coding/` (8, v1.2.0), `data/sd-coding/` (5, v1.0.2) and
    `data/smp-coding/` (7, v1.1.2), each transcribed from the programme's
    approved `docs/programs/<id>/silabus.md` (CP elements, tracks or levels,
    structure, weekly or module plan, CP mapping, bridges).
@@ -183,6 +183,15 @@ Their state today:
   and `bun run check:fidelity` use. Implemented in #140: all seven programmes
   have a table entry, and the six coding programmes have a fidelity module
   (`src/cli/fidelity/<id>.ts`).
+- **ADR-0010** — bridge tables name week, course and module codes of
+  neighbouring programmes in prose cells; `osn validate` scans the bridge
+  files a programme registers (`crossProgramScan` in its table entry) and
+  reports every code that does not exist in the corpus it belongs to
+  (`src/domain/cross-program-refs.ts`; code sets loaded by
+  `loadCrossProgramCodes` in `src/cli/program-loader.ts`). A narrow exception
+  to ADR-0008 (only ids are read, never the other programme's schema or
+  audit), following the OSN topic-family check of `sma-coding` (FR-29).
+  Implemented in #177.
 
 AI-use policy is likewise per programme (decision of #139): in each
 programme's own syllabus, and for OSN in

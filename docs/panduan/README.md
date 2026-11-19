@@ -37,8 +37,8 @@ Tujuh program terdaftar di `data/programs.json` (ADR-0006); semuanya diperiksa
 | `tk-coding` | Berpikir komputasional TK A dan TK B, tanpa layar. | `docs/programs/tk-coding/silabus.md` v1.0.1. Tanpa alat AI generatif untuk murid. | `validate`, `check:fidelity`, `render modul` (`--lembar` untuk lembar anak). |
 | `sd-coding` | Coding SD kelas 1-6 (inti kelas 5-6, KKA Fase C). | `docs/programs/sd-coding/silabus.md` v1.0.2. Tanpa alat AI generatif untuk murid. | `validate`, `check:fidelity`, `render modul` (`--lembar` untuk lembar anak). |
 | `smp-coding` | Coding SMP kelas 7-9 (Fase D), 84 minggu. | `docs/programs/smp-coding/silabus.md` v1.1.2. Demonstrasi guru, tanpa akun murid (bagian 7.1). | `validate`, `check:fidelity`, `render modul`. |
-| `kuliah-coding` | Coding perguruan tinggi dalam SKS: jalur U, I, K. | `docs/programs/kuliah-coding/silabus.md` v1.1.1. Kebijakan AI tiga tingkat (bagian 6.3-6.5). | `validate`, `check:fidelity`, `render modul`. |
-| `dewasa-coding` | Coding untuk dewasa: jalur Pekerja, Profesional, Personal, Pebisnis/UMKM, berbasis modul dan jam. | `docs/programs/dewasa-coding/silabus.md` v1.1.2. Kebijakan AI peserta dewasa (bagian 9.1). | `validate`, `check:fidelity`, `render modul`. |
+| `kuliah-coding` | Coding perguruan tinggi dalam SKS: jalur U, I, K. | `docs/programs/kuliah-coding/silabus.md` v1.2.0. Kebijakan AI tiga tingkat (bagian 6.3-6.5). | `validate`, `check:fidelity`, `render modul`. |
+| `dewasa-coding` | Coding untuk dewasa: jalur Pekerja, Profesional, Personal, Pebisnis/UMKM, berbasis modul dan jam. | `docs/programs/dewasa-coding/silabus.md` v1.2.0. Kebijakan AI peserta dewasa (bagian 9.1). | `validate`, `check:fidelity`, `render modul`. |
 
 Untuk `tk-coding`, `sd-coding`, `smp-coding`, `kuliah-coding`, dan
 `dewasa-coding`, `plan` dan `render lembar-siswa` menolak dengan exit 2 ("belum didukung

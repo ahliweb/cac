@@ -1,8 +1,8 @@
 # Program Pembelajaran Coding Perguruan Tinggi (`kuliah-coding`)
 
-- **Version:** v1.1.1
+- **Version:** v1.2.0
 - **Last updated:** 2026-11-19
-- **Status:** **DISETUJUI** pemilik program: v1.0 pada 2026-11-19 (issue #130) beserta rekomendasi penyusun, revisi v1.1 (rekayasa perangkat lunak berbantuan AI) lewat keputusan pemilik 2026-11-19 (issue #139). Program **terdaftar** di `data/programs.json` (versi silabus 1.1.0) dan corpusnya ada di `data/kuliah-coding/` (ADR-0006, ADR-0008). Belum ada `content/kuliah-coding/` (modul pendamping).
+- **Status:** **DISETUJUI** pemilik program: v1.0 pada 2026-11-19 (issue #130) beserta rekomendasi penyusun, revisi v1.1 (rekayasa perangkat lunak berbantuan AI) lewat keputusan pemilik 2026-11-19 (issue #139). Program **terdaftar** di `data/programs.json` (versi silabus 1.1.0) dan corpusnya ada di `data/kuliah-coding/` (ADR-0006, ADR-0008). Belum ada `content/kuliah-coding/` (modul pendamping). Revisi v1.2.0 (bagian 5, jembatan; baris dewasa-coding di 5.2) disetujui lewat keputusan pemilik 2026-11-19 (issue #177).
 
 > Isi folder ini adalah konten **karangan** (*authored*) menurut
 > [ADR-0007](../../architecture/adr/0007-authored-learning-content.md), bukan
@@ -28,7 +28,7 @@ satuan SKS dan semester menurut Permendiktisaintek 39/2025, pada tiga jalur
 | --- | --- |
 | `README.md` | Dokumen ini: status, tujuan, berkas, pertanyaan pemilik, changelog. |
 | `riset.md` | Sumber yang benar-benar dibuka pada 2026-11-19 (URL, tanggal akses, hasil), kutipan terverifikasi (Permendiktisaintek 39/2025, 17 knowledge area CS2023, aturan regional ICPC), dan yang belum terverifikasi (CPL nasional untuk coding, unit CS2023, aturan ICPC Indonesia, APTIKOM). |
-| `silabus.md` | Silabus v1.1 (disetujui; sumber `data/kuliah-coding/`): jalur U, I, K; 24 mata kuliah berkode `KUL-<jalur>-<nnn>` dengan SKS, semester, prasyarat, CPMK karangan; pemetaan; jembatan dari SMA dan ke dunia kerja; asesmen, integritas akademik, AI; bahasa dan alat; privasi; keputusan pemilik atas pertanyaan terbuka dan atas revisi v1.1; kebijakan AI diperkuat (bagian 6.3 sampai 6.5). |
+| `silabus.md` | Silabus v1.2 (disetujui; sumber `data/kuliah-coding/`): jalur U, I, K; 24 mata kuliah berkode `KUL-<jalur>-<nnn>` dengan SKS, semester, prasyarat, CPMK karangan; pemetaan; jembatan dari SMA dan ke dunia kerja; asesmen, integritas akademik, AI; bahasa dan alat; privasi; keputusan pemilik atas pertanyaan terbuka dan atas revisi v1.1; kebijakan AI diperkuat (bagian 6.3 sampai 6.5). |
 
 ## Keputusan pemilik (2026-11-19)
 
@@ -80,6 +80,7 @@ dan audit tetap); hanya isi sel dan versi (1.1.0).
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v1.2.0 | 2026-11-19 | Revisi minor atas keputusan pemilik #177: bagian 5.2 baris dewasa-coding merujuk jalur `PRO` dan bagian 6.2 silabus dewasa-coding v1.2 (portofolio `KUL-U-301` dan `KUL-I-401` sebagai bukti masuk); mata kuliah, SKS, dan KA tidak berubah. |
 | v1.1.1 | 2026-11-19 | Silabus direvisi patch ke v1.1.1 (issue #165): kalimat status yang basi tentang program pasangannya diperbaiki; isi kurikulum dan corpus tidak berubah. |
 | v1.1.0 | 2026-11-19 | Rekayasa perangkat lunak berbantuan AI (issue #139): `KUL-U-202`, `KUL-I-204`, `KUL-I-401`, `KUL-I-301`, `KUL-I-305`, `KUL-I-303`, jalur K, kebijakan AI diperkuat, glosarium; SKS tidak berubah; corpus dan registri ke 1.1.0. |
 | v1.0.0 | 2026-11-19 | Disetujui pemilik (issue #130); `silabus-draf.md` menjadi `silabus.md`; program terdaftar dan di-encode ke `data/kuliah-coding/`. |

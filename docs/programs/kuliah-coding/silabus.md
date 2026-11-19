@@ -1,9 +1,9 @@
-# Silabus Pembelajaran Coding Perguruan Tinggi — v1.1
+# Silabus Pembelajaran Coding Perguruan Tinggi — v1.2
 
-- **Version:** v1.1.1
+- **Version:** v1.2.0
 - **Last updated:** 2026-11-19
-- **Status:** DISETUJUI pemilik program. v1.0 disetujui 2026-11-19 (issue #130) beserta seluruh rekomendasi penyusun atas pertanyaan terbuka (bagian 9); revisi v1.1 (rekayasa perangkat lunak berbantuan AI, usulan U-09 sampai U-12) disetujui lewat keputusan pemilik 2026-11-19 (issue #139, bagian 9.1). Menjadi sumber corpus program `kuliah-coding` (ADR-0006, ADR-0008).
-- **Changeset:** v1.1 (issue #139): pokok bahasan AI diperluas di KUL-U-202; rekayasa perangkat lunak berbantuan AI diintegrasikan di KUL-I-204, KUL-I-401, KUL-I-301, KUL-I-305, dan KUL-I-303 tanpa menambah SKS; kebijakan AI tiga tingkat diperkuat dengan log pemakaian, wawancara kode, ujian praktik tanpa AI, dan gerbang kesiapan (bagian 6.3 dan 6.4); jalur K Merah saat kontes; glosarium istilah (bagian 6.5). Jumlah mata kuliah dan SKS tidak berubah. Sebelumnya, v1.0: Silabus v1.0 disetujui pemilik: tiga jalur (U, I, K), 24 mata kuliah dalam SKS dan semester, pemetaan ke 17 knowledge area CS2023, kolom CPL tetap isian program studi pengadopsi, jembatan dari SMA dan ke dunia kerja, kebijakan AI tiga tingkat, dan keputusan pemilik 2026-11-19 atas pertanyaan terbuka (opsi rekomendasi); isi rencana tidak berubah dari draf v0.1. Revisi patch v1.1.1 (#165): kalimat status yang basi; isi kurikulum tidak berubah.
+- **Status:** DISETUJUI pemilik program. v1.0 disetujui 2026-11-19 (issue #130) beserta seluruh rekomendasi penyusun atas pertanyaan terbuka (bagian 9); revisi v1.1 (rekayasa perangkat lunak berbantuan AI, usulan U-09 sampai U-12) disetujui lewat keputusan pemilik 2026-11-19 (issue #139, bagian 9.1). Revisi v1.2.0 (jembatan dari dan ke program lain, bagian 5) disetujui lewat keputusan pemilik 2026-11-19 (issue #177, seluruh rekomendasi K1 sampai K8). Menjadi sumber corpus program `kuliah-coding` (ADR-0006, ADR-0008).
+- **Changeset:** v1.1 (issue #139): pokok bahasan AI diperluas di KUL-U-202; rekayasa perangkat lunak berbantuan AI diintegrasikan di KUL-I-204, KUL-I-401, KUL-I-301, KUL-I-305, dan KUL-I-303 tanpa menambah SKS; kebijakan AI tiga tingkat diperkuat dengan log pemakaian, wawancara kode, ujian praktik tanpa AI, dan gerbang kesiapan (bagian 6.3 dan 6.4); jalur K Merah saat kontes; glosarium istilah (bagian 6.5). Jumlah mata kuliah dan SKS tidak berubah. Sebelumnya, v1.0: Silabus v1.0 disetujui pemilik: tiga jalur (U, I, K), 24 mata kuliah dalam SKS dan semester, pemetaan ke 17 knowledge area CS2023, kolom CPL tetap isian program studi pengadopsi, jembatan dari SMA dan ke dunia kerja, kebijakan AI tiga tingkat, dan keputusan pemilik 2026-11-19 atas pertanyaan terbuka (opsi rekomendasi); isi rencana tidak berubah dari draf v0.1. Revisi patch v1.1.1 (#165): kalimat status yang basi; isi kurikulum tidak berubah. Revisi minor v1.2.0 (#177): bagian 5 (jembatan) diselaraskan; baris dewasa-coding di bagian 5.2 kini merujuk jalur `PRO` dan bagian 6.2 silabus dewasa-coding v1.2; mata kuliah, SKS, jalur, dan KA tidak berubah.
 
 > **Disetujui pemilik program pada 2026-11-19** (keputusan lewat dialog
 > pilihan, dicatat di issue #130 dan di bagian 9). Dokumen ini konten
@@ -369,7 +369,7 @@ terbuka).
 | Ke | Bagaimana | Catatan |
 | --- | --- | --- |
 | Magang | Pasal 16 ayat (1) memasukkan magang sebagai bentuk pemenuhan beban belajar; Pasal 18 ayat (4) dan (7) memberi dasar pemenuhan sebagian beban di luar program studi | Durasi dan beban ditetapkan perguruan tinggi (Pasal 18 ayat (6)). Magang bukan mata kuliah draf ini `[asumsi]`. |
-| Program dewasa-coding (disusun paralel; silabusnya kini ada dan disetujui pemilik, issue #131) | Portofolio proyek KUL-U-301 dan KUL-I-401 menjadi bahan masuk; tamatan jalur U dapat melanjutkan ke jalur kerja di dewasa-coding | Rujukan silang ke silabus dewasa-coding belum dirancang; tidak diklaim sekarang. |
+| Program dewasa-coding (jalur `PRO`; silabus v1.2, issue #131) | Portofolio proyek `KUL-U-301` dan `KUL-I-401` menjadi bukti masuk; modul `DW-PRO-*` yang dapat dilewati atau dipadatkan ditentukan per profil (jalur U, I, K) di `dewasa-coding` bagian 6.2 | Bukan alih kredit dan bukan sertifikat: pengakuan terjadi di program dewasa-coding, atas dasar bukti yang diperiksa, bukan transkrip. Jalur `PKJ` dan `BIS` belum dirancang `[asumsi]`. |
 | Sertifikasi profesi | Pasal 7 huruf c menyebut "sertifikat profesi" sebagai salah satu tujuan CPL | Skema sertifikasi tertentu (mis. SKKNI) `[belum terverifikasi]`; tidak dipetakan. |
 | Pendidikan lanjutan | Pasal 21 mengatur percepatan pembelajaran bagi mahasiswa berkemampuan luar biasa (dibaca sebagian) | Tidak dikembangkan di draf ini. |
 
@@ -558,6 +558,7 @@ Usulan U-09 sampai U-12 pada riset AI diterapkan dengan opsi rekomendasi.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v1.2.0 | 2026-11-19 | Revisi minor yang disetujui pemilik lewat keputusan #177: bagian 5.2, baris dewasa-coding, merujuk jalur `PRO` dan bagian 6.2 silabus dewasa-coding v1.2 (portofolio `KUL-U-301` dan `KUL-I-401` menjadi bukti masuk; modul `DW-PRO-*` yang dilewati atau dipadatkan ditentukan per profil); mata kuliah, SKS, jalur, dan KA tidak berubah (#177). |
 | v1.1.1 | 2026-11-19 | Revisi patch: kalimat status, keputusan pemilik #165; isi kurikulum tidak berubah. |
 | v1.1.0 | 2026-11-19 | Rekayasa perangkat lunak berbantuan AI (issue #139, keputusan pemilik U-09 sampai U-12): `KUL-U-202` diperluas; `KUL-I-204`, `KUL-I-401`, `KUL-I-301`, `KUL-I-305`, `KUL-I-303` memuat butir AI tanpa menambah SKS; tiga tingkat AI diperkuat dengan log, wawancara kode, ujian praktik tanpa AI, gerbang kesiapan; jalur K Merah saat kontes; bagian 6.4 (penguatan), 6.5 (glosarium), 9.1 (keputusan). Jumlah mata kuliah, SKS, jalur, dan KA tidak berubah. |
 | v1.0.0 | 2026-11-19 | Disetujui pemilik program beserta rekomendasi penyusun (issue #130). Berkas diganti nama dari `silabus-draf.md`; status menjadi disetujui; pertanyaan terbuka (bagian 9) diganti keputusan pemilik; isi rencana (bagian 1-8) tidak berubah. |

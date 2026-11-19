@@ -1,15 +1,16 @@
 # Rancangan Penyelarasan Jembatan Antarprogram
 
-- **Version:** v0.1.0
+- **Version:** v0.2.0
 - **Last updated:** 2026-11-19
-- **Status:** DRAF untuk keputusan pemilik. Tidak mengubah `silabus.md`, `data/`, atau `src/` program mana pun; penerapannya menunggu persetujuan pemilik atas pertanyaan di bagian 9. Jembatan kuliah-coding ke dewasa-coding jalur `PRO` dirancang karena pemilik menginstruksikan perancangannya mulai 2026-11-19 (sumber: brief tugas ini; syarat keputusan 12.7 silabus dewasa terpenuhi sejak silabus kuliah-coding v1.1.1 disetujui).
-- **Changeset:** Dokumen baru (rancangan, konten karangan menurut [ADR-0007](../architecture/adr/0007-authored-learning-content.md)); tidak mengubah korpus, skema, atau CLI.
+- **Status:** **DITERAPKAN** (v0.2.0): pemilik menyetujui seluruh rekomendasi K1 sampai K8 pada 2026-11-19 lewat dialog pilihan (issue #177; bagian 9.1). Penerapannya lima PR atomik berurutan (K8 opsi 1); status tiap pasangan ada di tabel bagian 9.1 dan diperbarui oleh PR yang menerapkannya. Teks pengganti di bagian 4 sampai 8 menjadi isi silabus program masing-masing (konten karangan, ADR-0007) dan tunduk pada silabus itu setelah diterapkan; dokumen ini tetap sebagai catatan alasan dan analisisnya. Jembatan kuliah-coding ke dewasa-coding jalur `PRO` dirancang karena pemilik menginstruksikan perancangannya mulai 2026-11-19.
+- **Changeset:** v0.2.0: status diterapkan, keputusan pemilik dicatat (bagian 9.1); `.changeset/jembatan-kuliah-dewasa.md` dan changeset PR berikutnya. v0.1.0: dokumen rancangan (konten karangan menurut [ADR-0007](../architecture/adr/0007-authored-learning-content.md)).
 
-> Dokumen ini adalah **rancangan**, bukan transkripsi dan bukan keputusan. Ia
-> tidak menyatakan persetujuan pemilik atas apa pun: teks pengganti di bagian
-> 4 sampai 8 berstatus usulan sampai pemilik memilih di bagian 9, dan setelah
-> itu tetap menjadi konten karangan yang divalidasi lewat silabus
-> programnya. Repositori ini tidak menyimpan data pembelajar
+> Dokumen ini adalah **rancangan dan catatan alasan**, bukan transkripsi.
+> Persetujuan pemilik atas delapan pertanyaan di bagian 9 dicatat di bagian
+> 9.1 (semua opsi yang disarankan, 2026-11-19, issue #177); teks pengganti di
+> bagian 4 sampai 8 dipindahkan ke silabus program masing-masing oleh PR
+> penerapannya dan sesudah itu tetap menjadi konten karangan yang divalidasi
+> lewat silabus programnya. Repositori ini tidak menyimpan data pembelajar
 > ([ADR-0004](../architecture/adr/0004-no-learner-personal-data.md)); semua
 > prosedur pengamatan dan pemeriksaan bukti di bawah dilakukan di sekolah,
 > kampus, atau penyelenggara, bukan di repositori.
@@ -735,6 +736,33 @@ pertama (ditandai **(Disarankan)**). Agent tidak menjawab pertanyaan ini dan
 tidak mencatat persetujuan; hanya jawaban pilihan pemilik yang dicatat
 (AGENTS.md, Pedoman Eksekusi Wajib butir 15). Label bukti mengikuti bagian 0.
 
+### 9.1 Keputusan pemilik (2026-11-19, issue #177)
+
+Pemilik menjawab kedelapan pertanyaan lewat dialog pilihan baku dan
+**menyetujui semua rekomendasi (opsi 1, ditandai Disarankan)**. Pertanyaan di
+bawah dipertahankan sebagai catatan opsi yang ditimbang.
+
+| Pertanyaan | Opsi dipilih |
+| --- | --- |
+| K1 | Opsi 1: pengamatan singkat dan jalur padat di dalam kelas yang sama, tanpa tes, tanpa nilai, tanpa catatan di repositori |
+| K2 | Opsi 1: `smp-coding` tidak mengasumsikan blok; `sd-coding` 7.2 menyatakan apa yang tidak dijamin |
+| K3 | Opsi 1: subbagian baru di silabus SMA; fondasi tetap kelas bersama; koreksi baris 1 `smp-coding` 5.2 |
+| K4 | Opsi 1: pengakuan per CPMK dengan bukti portofolio, riwayat Git, ujian praktik tanpa AI, wawancara kode |
+| K5 | Opsi 1: pengakuan per modul `PRO` dengan status lewati, padatkan, wajib |
+| K6 | Opsi 1: `DW-FND-M1` dan `DW-PRO-M12` wajib bagi semua |
+| K7 | Opsi 1: berkas data baru dengan skema dan parser, ditambah pemeriksaan silang kode lintas program ([ADR-0010](../architecture/adr/0010-pemeriksaan-silang-kode-lintas-program.md)) |
+| K8 | Opsi 1: lima isu dan PR atomik berurutan |
+
+Status penerapan per pasangan (K8 opsi 1; diperbarui oleh PR masing-masing):
+
+| Urutan | Pasangan | Versi | Status |
+| --- | --- | --- | --- |
+| 1 | `kuliah-coding` ke `dewasa-coding` jalur `PRO` | dewasa 1.2.0, kuliah 1.2.0 | Diterapkan |
+| 2 | `sma-coding` dan `kuliah-coding` | kuliah 1.2.0 (sudah naik di urutan 1) | Belum |
+| 3 | `smp-coding` dan `sma-coding` | smp 1.2.0, sma 1.4.0 | Belum |
+| 4 | `sd-coding` dan `smp-coding` | sd 1.1.0 | Belum |
+| 5 | `tk-coding` dan `sd-coding` | tk 1.0.2 | Belum |
+
 ### K1. Cara menangani pengulangan di awal program atas (TK ke SD, SD ke SMP, SMP ke SMA)
 
 Konteks: semua program atas mengajar dari awal dan tidak mewajibkan program
@@ -878,7 +906,8 @@ dicocokkan ulang"); `docs/programs/sma-coding/README.md`.
 - Peran pengakuan modul di `dewasa-coding` tidak punya dasar regulasi yang
   diverifikasi (wewenang penyelenggara); SKKNI tetap hanya sampai judul unit.
 - Tabel tambahan di silabus SMA dan dewasa tidak dicerminkan di data sampai K7
-  diputuskan.
+  diputuskan (diperbarui v0.2.0: K7 opsi 1 dipilih, sehingga tabelnya
+  dicerminkan di berkas data baru dan kodenya diperiksa silang; lihat 9.1).
 - Temuan di luar scope: tabel 6 `docs/riset/ai-rekayasa-perangkat-lunak.md`
   masih menulis bahwa silabus SMA jalur A, B, C belum mengatur pemakaian AI,
   padahal `sma-coding` 7.4 (v1.3.0) sudah mengaturnya untuk semua jalur.
@@ -935,3 +964,4 @@ Weintrop, D., & Wilensky, U. (2017). Comparing Block-Based and Text-Based Progra
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
 | v0.1.0 | 2026-11-19 | Rancangan awal: lima pasangan jembatan, teks usulan pengganti, jembatan baru kuliah-coding ke dewasa-coding jalur PRO, delapan pertanyaan keputusan. Belum disetujui pemilik. |
+| v0.2.0 | 2026-11-19 | Status diterapkan: pemilik menyetujui seluruh rekomendasi K1 sampai K8 (bagian 9.1, issue #177); penerapan bertahap dalam lima PR; pasangan 5 (kuliah-coding ke dewasa-coding `PRO`) diterapkan pertama. |

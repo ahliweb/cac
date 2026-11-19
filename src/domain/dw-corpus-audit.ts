@@ -14,14 +14,18 @@
  * codes named by modules and LSP schemes exist, the default certification
  * option exists).
  *
- * The programme has no cross-programme reference, so the audit takes only
- * the corpus.
+ * The audit takes only the corpus. Codes of other programmes named in the
+ * bridge tables (the `KUL-` codes of `kuliah-bridge.json`) are checked by the
+ * separate cross-programme check (`src/domain/cross-program-refs.ts`,
+ * ADR-0010), which `osn validate` runs with the code sets of the other
+ * corpora.
  */
 
 import type { z } from "zod";
 import { dwBridgeFileSchema } from "../schema/dw-bridge";
 import { dwCertificationFileSchema } from "../schema/dw-certification";
 import { DW_SHARED_MODULE_CODE, DW_SHARED_TRACK_ID, DW_TRACK_IDS } from "../schema/dw-common";
+import { dwKuliahBridgeFileSchema } from "../schema/dw-kuliah-bridge";
 import { dwModulePlanFileSchema } from "../schema/dw-module";
 import { dwSharedFileSchema } from "../schema/dw-shared";
 import { dwSkkniFileSchema } from "../schema/dw-skkni";
@@ -44,6 +48,7 @@ export const DW_DATA_FILE_REGISTRY: readonly DwFileEntry[] = [
   { file: "skkni-units.json", schema: dwSkkniFileSchema },
   { file: "certification.json", schema: dwCertificationFileSchema },
   { file: "bridges.json", schema: dwBridgeFileSchema },
+  { file: "kuliah-bridge.json", schema: dwKuliahBridgeFileSchema },
 ];
 
 /**
@@ -63,6 +68,7 @@ export const DW_EXPECTED_COUNTS = {
   certificationOptions: 3,
   lspSchemes: 2,
   bridges: 6,
+  kuliahBridge: { profiles: 3, modules: 13, impactRows: 3 },
   modules: { PKJ: 8, PRO: 13, PRS: 6, BIS: 8 },
   hours: {
     PKJ: { shared: 8, own: 40, total: 48 },
@@ -150,6 +156,10 @@ function structuralFindings(parsed: Parsed): CorpusFinding[] {
     "certification.json",
   );
   const bridges = typed<z.infer<typeof dwBridgeFileSchema>>(parsed, "bridges.json");
+  const kuliahBridge = typed<z.infer<typeof dwKuliahBridgeFileSchema>>(
+    parsed,
+    "kuliah-bridge.json",
+  );
 
   const count = (file: string, path: string, label: string, actual: number, expected: number) => {
     if (actual !== expected) {
@@ -280,6 +290,19 @@ function structuralFindings(parsed: Parsed): CorpusFinding[] {
   if (bridges !== undefined) {
     count("bridges.json", "bridges", "bridges", bridges.bridges.length, DW_EXPECTED_COUNTS.bridges);
   }
+  if (kuliahBridge !== undefined) {
+    const expected = DW_EXPECTED_COUNTS.kuliahBridge;
+    const file = "kuliah-bridge.json";
+    count(file, "profiles", "entry profiles", kuliahBridge.profiles.length, expected.profiles);
+    count(file, "modules", "PRO modules", kuliahBridge.modules.length, expected.modules);
+    count(
+      file,
+      "hourImpact",
+      "hour-impact rows",
+      kuliahBridge.hourImpact.length,
+      expected.impactRows,
+    );
+  }
   return findings;
 }
 
@@ -302,6 +325,186 @@ function reaches(
     }
   }
   return false;
+}
+
+/** The hours one module costs under a recognition status: L = 1 hour, P = half the module, W = all of it. */
+function statusHours(status: "L" | "P" | "W", hours: number): number {
+  return status === "L" ? 1 : status === "P" ? hours / 2 : hours;
+}
+
+/**
+ * Referential and arithmetic integrity of the kuliah-coding bridge
+ * (`kuliah-bridge.json`, silabus bagian 6.2): the modules are exactly the
+ * PRO modules of the module plan with the same hours, every module has a
+ * status for every profile, the mandatory modules exist and stay mandatory,
+ * and the hour-impact table is what the status counts and the rule
+ * L = 1 hour, P = half the module, W = the whole module give. `KUL-` codes
+ * are checked against the kuliah-coding corpus by the cross-programme check
+ * (ADR-0010), not here.
+ */
+function kuliahBridgeFindings(parsed: Parsed): CorpusFinding[] {
+  const findings: CorpusFinding[] = [];
+  const file = "kuliah-bridge.json";
+  const bridge = typed<z.infer<typeof dwKuliahBridgeFileSchema>>(parsed, file);
+  const plan = typed<z.infer<typeof dwModulePlanFileSchema>>(parsed, "module-plan.json");
+  const shared = typed<z.infer<typeof dwSharedFileSchema>>(parsed, "shared.json");
+  const tracks = typed<z.infer<typeof dwTracksFileSchema>>(parsed, "tracks.json");
+  if (bridge === undefined) {
+    return findings;
+  }
+  const profileIds = bridge.profiles.map((profile) => profile.id);
+  const proModules = new Map(
+    (plan?.modules ?? []).filter((module) => module.track === "PRO").map((m) => [m.code, m]),
+  );
+  const sharedHours = (shared?.modules ?? [])
+    .filter((module) => module.code.startsWith(`DW-${DW_SHARED_TRACK_ID}-`))
+    .reduce((sum, module) => sum + module.hours, 0);
+
+  if (plan !== undefined) {
+    for (const [code] of proModules) {
+      if (!bridge.modules.some((module) => module.code === code)) {
+        findings.push(
+          error(file, "modules", `PRO module ${code} has no row in the recognition table`),
+        );
+      }
+    }
+  }
+  bridge.modules.forEach((module, index) => {
+    const at = `modules[${index}]`;
+    const planned = proModules.get(module.code);
+    if (plan !== undefined && planned === undefined) {
+      findings.push(
+        error(file, `${at}.code`, `"${module.code}" is not a PRO module of module-plan.json`),
+      );
+    } else if (planned !== undefined && planned.hours !== module.hours) {
+      findings.push(
+        error(
+          file,
+          `${at}.hours`,
+          `says ${module.hours} hours but module-plan.json has ${planned.hours} for ${module.code}`,
+        ),
+      );
+    }
+    const keys = Object.keys(module.statuses).sort();
+    if (keys.join(",") !== [...profileIds].sort().join(",")) {
+      findings.push(
+        error(
+          file,
+          `${at}.statuses`,
+          `must have exactly one status per profile [${profileIds.join(", ")}]; found [${keys.join(", ")}]`,
+        ),
+      );
+    }
+  });
+
+  for (const code of bridge.mandatoryModules) {
+    const inShared = (shared?.modules ?? []).some((module) => module.code === code);
+    if (plan !== undefined && shared !== undefined && !inShared && !proModules.has(code)) {
+      findings.push(error(file, "mandatoryModules", `mandatory module "${code}" does not exist`));
+    }
+    const row = bridge.modules.find((module) => module.code === code);
+    if (row !== undefined) {
+      for (const profile of profileIds) {
+        if (row.statuses[profile] !== "W") {
+          findings.push(
+            error(
+              file,
+              "mandatoryModules",
+              `${code} is mandatory but has status ${row.statuses[profile] ?? "(none)"} for ${profile}`,
+            ),
+          );
+        }
+      }
+    }
+  }
+  for (const required of ["DW-FND-M1", "DW-PRO-M12"]) {
+    if (!bridge.mandatoryModules.includes(required)) {
+      findings.push(
+        error(
+          file,
+          "mandatoryModules",
+          `${required} must stay mandatory for every participant (owner decision K6, #177)`,
+        ),
+      );
+    }
+  }
+
+  if (tracks !== undefined) {
+    const pro = tracks.tracks.find((track) => track.id === "PRO");
+    if (pro !== undefined && bridge.baselineHours !== pro.totalHours) {
+      findings.push(
+        error(
+          file,
+          "baselineHours",
+          `is ${bridge.baselineHours} but track PRO totals ${pro.totalHours} hours in tracks.json`,
+        ),
+      );
+    }
+  }
+
+  bridge.hourImpact.forEach((row, index) => {
+    const at = `hourImpact[${index}]`;
+    if (!profileIds.includes(row.profile)) {
+      findings.push(error(file, `${at}.profile`, `profile "${row.profile}" is not in profiles`));
+      return;
+    }
+    const statuses = bridge.modules.map((module) => ({
+      hours: module.hours,
+      status: module.statuses[row.profile],
+    }));
+    if (statuses.some((entry) => entry.status === undefined)) {
+      return;
+    }
+    const countOf = (status: string) => statuses.filter((entry) => entry.status === status).length;
+    const expected = {
+      lewati: countOf("L"),
+      padatkan: countOf("P"),
+      wajib: countOf("W"),
+      moduleHours: statuses.reduce(
+        (sum, entry) => sum + statusHours(entry.status as "L" | "P" | "W", entry.hours),
+        0,
+      ),
+    };
+    for (const key of ["lewati", "padatkan", "wajib", "moduleHours"] as const) {
+      if (row[key] !== expected[key]) {
+        findings.push(
+          error(
+            file,
+            `${at}.${key}`,
+            `is ${row[key]} but the statuses of ${row.profile} give ${expected[key]}`,
+          ),
+        );
+      }
+    }
+    if (shared !== undefined && row.totalHours !== expected.moduleHours + sharedHours) {
+      findings.push(
+        error(
+          file,
+          `${at}.totalHours`,
+          `is ${row.totalHours} but module hours ${expected.moduleHours} plus shared hours ${sharedHours} give ${expected.moduleHours + sharedHours}`,
+        ),
+      );
+    }
+    if (row.reductionHours !== bridge.baselineHours - row.totalHours) {
+      findings.push(
+        error(
+          file,
+          `${at}.reductionHours`,
+          `is ${row.reductionHours} but ${bridge.baselineHours} minus ${row.totalHours} is ${bridge.baselineHours - row.totalHours}`,
+        ),
+      );
+    }
+  });
+  const impactProfiles = bridge.hourImpact
+    .map((row) => row.profile)
+    .sort()
+    .join(",");
+  if (impactProfiles !== [...profileIds].sort().join(",")) {
+    findings.push(
+      error(file, "hourImpact", `must have one row per profile [${profileIds.join(", ")}]`),
+    );
+  }
+  return findings;
 }
 
 function referentialFindings(parsed: Parsed): CorpusFinding[] {
@@ -551,7 +754,8 @@ function referentialFindings(parsed: Parsed): CorpusFinding[] {
 
 /**
  * Audits `source` -- the `data/dewasa-coding/` corpus as file name -> entry.
- * No cross-programme input is needed.
+ * No cross-programme input is needed: the `KUL-` codes of `kuliah-bridge.json` are checked
+ * against the kuliah-coding corpus by the cross-programme check (ADR-0010), in `osn validate`.
  */
 export function auditDewasaCorpus(source: CorpusSource): AuditResult {
   const schema = schemaFindings(source);
@@ -559,6 +763,7 @@ export function auditDewasaCorpus(source: CorpusSource): AuditResult {
     ...schema.findings,
     ...structuralFindings(schema.parsed),
     ...referentialFindings(schema.parsed),
+    ...kuliahBridgeFindings(schema.parsed),
   ];
   const errorCount = findings.filter((finding) => finding.severity === "error").length;
   return {

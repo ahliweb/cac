@@ -68,7 +68,7 @@ describe("dewasa-coding fidelity: data/dewasa-coding vs. the approved silabus", 
 
   test("the registry entry exists and carries the document's version and date", () => {
     expect(entry).toBeDefined();
-    expect(entry?.syllabusVersion).toBe("1.1.2");
+    expect(entry?.syllabusVersion).toBe("1.2.0");
     expect(entry?.syllabusDate).toBe("2026-11-19");
   });
 
@@ -89,8 +89,67 @@ describe("dewasa-coding fidelity: data/dewasa-coding vs. the approved silabus", 
     expect(expected["certification.json"].lspSchemes[0].unitCodes).toHaveLength(8);
     expect(expected["certification.json"].lspSchemes[1].unitCodes).toHaveLength(9);
     expect(expected["bridges.json"].bridges).toHaveLength(6);
-    expect(expected["bridges.json"].bridges[3].status).toBe("ditunda");
+    expect(expected["bridges.json"].bridges[3].status).toBe("dirancang");
     expect(expected["structure.json"].rows).toHaveLength(8);
+  });
+
+  test("bagian 6.2 yields the kuliah-coding bridge: 3 profiles, 13 modules, 3 impact rows", () => {
+    const expected = expectedCorpus(silabus, riset) as Record<string, Json>;
+    const bridge = expected["kuliah-bridge.json"];
+    expect(bridge.sourceSection).toBe("bagian 6.2");
+    expect(bridge.baselineHours).toBe(136);
+    expect(bridge.profiles.map((p: Json) => p.id)).toEqual(["I-lengkap", "I-awal", "U-lengkap"]);
+    expect(bridge.modules).toHaveLength(13);
+    expect(bridge.modules[0].code).toBe("DW-PRO-M1");
+    expect(bridge.modules[5].code).toBe("DW-PRO-M13");
+    expect(bridge.modules[5].hours).toBe(8);
+    expect(bridge.modules[0].statuses).toEqual({
+      "I-lengkap": "L",
+      "I-awal": "P",
+      "U-lengkap": "P",
+    });
+    expect(bridge.hourImpact[0]).toEqual({
+      profile: "I-lengkap",
+      lewati: 7,
+      padatkan: 4,
+      wajib: 2,
+      moduleHours: 47,
+      totalHours: 55,
+      reductionHours: 81,
+    });
+    expect(bridge.mandatoryModules).toEqual(["DW-FND-M1", "DW-PRO-M12"]);
+  });
+});
+
+describe("dewasa-coding fidelity: drift in the kuliah-coding bridge", () => {
+  test("a changed status, profile cell, impact figure and mandatory module are reported", () => {
+    const files = load();
+    const bridge = files["kuliah-bridge.json"];
+    bridge.modules[0].statuses["I-awal"] = "W";
+    bridge.profiles[1].note = "diubah";
+    bridge.hourImpact[2].moduleHours = 84;
+    bridge.mandatoryModules = ["DW-FND-M1"];
+    bridge.baselineHours = 128;
+    const found = contexts(files);
+    expect(found).toContain("kuliah-bridge.json.modules[DW-PRO-M1].statuses.I-awal");
+    expect(found).toContain("kuliah-bridge.json.profiles[I-awal].note");
+    expect(found).toContain("kuliah-bridge.json.hourImpact[2].moduleHours");
+    expect(found).toContain("kuliah-bridge.json.mandatoryModules length");
+    expect(found).toContain("kuliah-bridge.json.baselineHours");
+  });
+
+  test("a bagian 6.2 that loses a table, a status or the mandatory bullet fails loudly", () => {
+    expect(() =>
+      expectedCorpus(silabus.replace("tetap wajib bagi semua peserta", "diulang"), riset),
+    ).toThrow("mandatory modules");
+    expect(() =>
+      expectedCorpus(silabus.replace("| W | W | W |\n\nDampak", "| W | W | Z |\n\nDampak"), riset),
+    ).toThrow("is not L, P or W");
+    expect(() =>
+      expectedCorpus(silabus.replace("Dampak pada jam jalur", "Dampak jam"), riset),
+    ).toThrow("jam dasar");
+    const noImpact = silabus.slice(0, silabus.indexOf("Dampak pada jam jalur"));
+    expect(() => expectedCorpus(`${noImpact}\n## 7. Jalur \`BIS\`\n`, riset)).toThrow();
   });
 });
 
@@ -136,7 +195,7 @@ describe("dewasa-coding fidelity: drift fails hard", () => {
     files["shared.json"].modules[0].topics += " tambahan";
     files["structure.json"].rows[3].value = "Java";
     files["bridges.json"].bridges[0].note = "diubah";
-    files["bridges.json"].bridges[3].status = "dirancang";
+    files["bridges.json"].bridges[3].status = "ditunda";
     files["certification.json"].options[1].advantages = "diubah";
     files["certification.json"].defaultOptionId = "B";
     files["certification.json"].lspSchemes[0].unitCodes.pop();

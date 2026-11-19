@@ -34,11 +34,11 @@ async function runCli(args: readonly string[]): Promise<CliResult> {
 }
 
 describe("osn validate with the dewasa-coding programme", () => {
-  test("--program dewasa-coding validates its seven files, exit 0", async () => {
+  test("--program dewasa-coding validates its eight files, exit 0", async () => {
     const result = await runCli(["validate", "--program", "dewasa-coding"]);
     expect(result.exitCode).toBe(0);
     expect(result.stdout).toContain('programme "dewasa-coding"');
-    expect(result.stdout).toContain("7 data file(s) validated, 0 problem(s) found");
+    expect(result.stdout).toContain("8 data file(s) validated, 0 problem(s) found");
   });
 
   test("--json reports ok, no unregistered file and the programme among all", async () => {
@@ -51,7 +51,7 @@ describe("osn validate with the dewasa-coding programme", () => {
     };
     expect(json.ok).toBe(true);
     expect(json.program).toBe("dewasa-coding");
-    expect(json.summary.filesValidated).toBe(7);
+    expect(json.summary.filesValidated).toBe(8);
     expect(json.summary.filesUnregistered).toBe(0);
 
     const all = await runCli(["validate", "--json"]);
@@ -77,6 +77,31 @@ describe("osn validate with the dewasa-coding programme", () => {
     } finally {
       await rm(dir, { recursive: true, force: true });
     }
+  });
+});
+
+describe("osn validate: cross-programme codes in the dewasa-coding bridges (ADR-0010, #177)", () => {
+  test("a KUL- code that kuliah-coding does not have is reported with exit 1", async () => {
+    const dir = await mkdtemp(join(tmpdir(), "dw-crossref-fixture-"));
+    try {
+      await cp(join(REPO_ROOT, "data", "dewasa-coding"), dir, { recursive: true });
+      const path = join(dir, "kuliah-bridge.json");
+      const file = JSON.parse(await readFile(path, "utf-8"));
+      file.modules[0].basis += "; `KUL-I-199` C9";
+      await writeFile(path, JSON.stringify(file, null, 2));
+      const result = await runCli(["validate", "--program", "dewasa-coding", "--data-dir", dir]);
+      expect(result.exitCode).toBe(1);
+      expect(result.stdout).toContain("kuliah-bridge.json");
+      expect(result.stdout).toContain('"KUL-I-199" is not a course of programme "kuliah-coding"');
+    } finally {
+      await rm(dir, { recursive: true, force: true });
+    }
+  });
+
+  test("the committed bridges name only codes that exist (the scan is clean)", async () => {
+    const result = await runCli(["validate", "--program", "dewasa-coding"]);
+    expect(result.exitCode).toBe(0);
+    expect(result.stdout).not.toContain("ADR-0010");
   });
 });
 

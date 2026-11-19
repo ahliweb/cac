@@ -3,7 +3,9 @@
  * and labelled paragraphs of the owner-approved syllabus
  * (`docs/programs/dewasa-coding/silabus.md`, bagian 1 (tracks), 2
  * (structure), 3.1 (shared module), 4-7 (modules per track), 5.2 (SKKNI
- * claims and LSP schemes), 6.1 (bridges), 8.2 (certification options)) and,
+ * claims and LSP schemes), 6.1 (bridges), 6.2 (the kuliah-coding bridge: entry
+ * profiles, the recognition status of every PRO module, the hour impact and
+ * the mandatory modules), 8.2 (certification options)) and,
  * for the 47 SKKNI unit titles, the table of
  * `docs/programs/dewasa-coding/riset.md` bagian 2.2, and compares the result
  * cell by cell with `data/dewasa-coding/*.json`, so any drift between the
@@ -36,6 +38,7 @@ export const DW_DATA_FILES = [
   "skkni-units.json",
   "certification.json",
   "bridges.json",
+  "kuliah-bridge.json",
 ] as const;
 
 export type DwDataFileName = (typeof DW_DATA_FILES)[number];
@@ -123,6 +126,28 @@ export function sectionLines(markdown: string, headingPrefix: string): string[] 
     result.push(line);
   }
   return result;
+}
+
+/** The data rows (header and separator dropped) of the `n`th (0-based) table in `lines`, as cell arrays. */
+export function nthTableRows(lines: readonly string[], n: number): string[][] {
+  const starts: number[] = [];
+  lines.forEach((line, index) => {
+    if (line.trim().startsWith("|") && !(lines[index - 1] ?? "").trim().startsWith("|")) {
+      starts.push(index);
+    }
+  });
+  const start = starts[n];
+  if (start === undefined) {
+    fail(`table ${n + 1} not found in section (found ${starts.length}).`);
+  }
+  const rows: string[][] = [];
+  for (const line of lines.slice(start + 2)) {
+    if (!line.trim().startsWith("|")) {
+      break;
+    }
+    rows.push(splitTableRow(line));
+  }
+  return rows;
 }
 
 /** The data rows (header and separator dropped) of the first table in `lines`, as cell arrays. */
@@ -470,6 +495,88 @@ function parseBridges(silabus: string): Json[] {
   });
 }
 
+const RECOGNITION_STATUSES = new Set(["L", "P", "W"]);
+
+function integer(text: string, context: string): number {
+  return Number(group(match(/^(\d+)$/, text, context), 1));
+}
+
+/** The kuliah-coding bridge of bagian 6.2: profiles, per-module statuses, hour impact, mandatory modules. */
+function parseKuliahBridge(silabus: string): Json {
+  const section = sectionLines(silabus, "### 6.2 ");
+  const profileRows = nthTableRows(section, 0);
+  const profiles = profileRows.map((row, index) => {
+    const [idCell, coursesText, note] = cells(row, 3, `bagian 6.2 profil row ${index}`);
+    return {
+      id: stripCode(idCell as string),
+      coursesText: coursesText as string,
+      courses: [...(coursesText as string).matchAll(/KUL-[UIK]-\d{3}/g)].map((found) => found[0]),
+      note: note as string,
+    };
+  });
+  const profileIds = profiles.map((profile) => profile.id);
+  const modules = nthTableRows(section, 1).map((row, index) => {
+    const parts = cells(row, 3 + profileIds.length, `bagian 6.2 modul row ${index}`);
+    const [codeCell, hoursCell, basis] = parts;
+    const statuses: Record<string, string> = {};
+    profileIds.forEach((profile, column) => {
+      const status = parts[3 + column] as string;
+      if (!RECOGNITION_STATUSES.has(status)) {
+        fail(`bagian 6.2 modul row ${index}: status ${JSON.stringify(status)} is not L, P or W.`);
+      }
+      statuses[profile] = status;
+    });
+    return {
+      code: stripCode(codeCell as string),
+      hours: integer(hoursCell as string, `bagian 6.2 modul row ${index} Jam`),
+      basis: basis as string,
+      basisCourses: [...(basis as string).matchAll(/KUL-[UIK]-\d{3}/g)].map((found) => found[0]),
+      statuses,
+    };
+  });
+  const hourImpact = nthTableRows(section, 2).map((row, index) => {
+    const [profile, lewati, padatkan, wajib, moduleHours, totalHours, reduction] = cells(
+      row,
+      7,
+      `bagian 6.2 dampak row ${index}`,
+    );
+    const context = `bagian 6.2 dampak row ${index}`;
+    return {
+      profile: stripCode(profile as string),
+      lewati: integer(lewati as string, `${context} L`),
+      padatkan: integer(padatkan as string, `${context} P`),
+      wajib: integer(wajib as string, `${context} W`),
+      moduleHours: integer(moduleHours as string, `${context} Jam modul`),
+      totalHours: integer(totalHours as string, `${context} Jam dengan DW-FND-M1`),
+      reductionHours: Number(
+        group(match(/^(\d+) jam lebih sedikit$/, reduction as string, `${context} Selisih`), 1),
+      ),
+    };
+  });
+  const baseline = match(
+    /Dampak pada jam jalur `PRO` \((\d+) jam bila semua modul/,
+    normalise(section.join("\n")),
+    "bagian 6.2 jam dasar",
+  );
+  const mandatoryLine = section.find((line) => line.startsWith("- `DW-FND-M1`"));
+  if (mandatoryLine === undefined || !mandatoryLine.includes("tetap wajib")) {
+    fail(
+      "bagian 6.2: the bullet naming the mandatory modules (`DW-FND-M1` ... tetap wajib) not found.",
+    );
+  }
+  return {
+    baselineHours: Number(group(baseline, 1)),
+    profiles,
+    modules,
+    hourImpact,
+    mandatoryModules: [
+      ...mandatoryLine
+        .slice(0, mandatoryLine.indexOf("tetap wajib"))
+        .matchAll(/`(DW-[A-Z]+-M\d+)`/g),
+    ].map((found) => group(found, 1)),
+  };
+}
+
 function parseStructure(silabus: string): Json[] {
   return firstTableRows(sectionLines(silabus, "## 2. ")).map((row, index) => {
     const [item, value] = cells(row, 2, `bagian 2 row ${index}`);
@@ -505,6 +612,10 @@ export function expectedCorpus(silabus: string, riset: string): Record<DwDataFil
       ...(parseCertification(silabus) as object),
     },
     "bridges.json": { ...provenance("bagian 6.1"), bridges: parseBridges(silabus) },
+    "kuliah-bridge.json": {
+      ...provenance("bagian 6.2"),
+      ...(parseKuliahBridge(silabus) as object),
+    },
   };
 }
 

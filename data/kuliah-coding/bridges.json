@@ -1,5 +1,5 @@
 {
-  "syllabusVersion": "1.1.1",
+  "syllabusVersion": "1.2.0",
   "syllabusDate": "2026-11-19",
   "sourceSection": "bagian 5",
   "fromSma": [
@@ -42,10 +42,10 @@
       "note": "Durasi dan beban ditetapkan perguruan tinggi (Pasal 18 ayat (6)). Magang bukan mata kuliah draf ini `[asumsi]`."
     },
     {
-      "to": "Program dewasa-coding (disusun paralel; silabusnya kini ada dan disetujui pemilik, issue #131)",
-      "how": "Portofolio proyek KUL-U-301 dan KUL-I-401 menjadi bahan masuk; tamatan jalur U dapat melanjutkan ke jalur kerja di dewasa-coding",
+      "to": "Program dewasa-coding (jalur `PRO`; silabus v1.2, issue #131)",
+      "how": "Portofolio proyek `KUL-U-301` dan `KUL-I-401` menjadi bukti masuk; modul `DW-PRO-*` yang dapat dilewati atau dipadatkan ditentukan per profil (jalur U, I, K) di `dewasa-coding` bagian 6.2",
       "courses": ["KUL-U-301", "KUL-I-401"],
-      "note": "Rujukan silang ke silabus dewasa-coding belum dirancang; tidak diklaim sekarang."
+      "note": "Bukan alih kredit dan bukan sertifikat: pengakuan terjadi di program dewasa-coding, atas dasar bukti yang diperiksa, bukan transkrip. Jalur `PKJ` dan `BIS` belum dirancang `[asumsi]`."
     },
     {
       "to": "Sertifikasi profesi",

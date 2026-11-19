@@ -1,0 +1,201 @@
+{
+  "syllabusVersion": "1.2.0",
+  "syllabusDate": "2026-11-19",
+  "sourceSection": "bagian 6.2",
+  "baselineHours": 136,
+  "profiles": [
+    {
+      "id": "I-lengkap",
+      "coursesText": "Jalur I inti: `KUL-I-101` sampai `KUL-I-205`, `KUL-I-301`, `KUL-I-302`, `KUL-I-401`",
+      "courses": ["KUL-I-101", "KUL-I-205", "KUL-I-301", "KUL-I-302", "KUL-I-401"],
+      "note": "Paling banyak modul yang dapat dilewati; bahasa dasar C++, bukan Python"
+    },
+    {
+      "id": "I-awal",
+      "coursesText": "`KUL-I-101`, `KUL-I-102`, `KUL-I-103` (semester 1-2)",
+      "courses": ["KUL-I-101", "KUL-I-102", "KUL-I-103"],
+      "note": "Dasar saja; mulai dari modul rekayasa dan web"
+    },
+    {
+      "id": "U-lengkap",
+      "coursesText": "Jalur U: `KUL-U-101`, `KUL-U-102`, `KUL-U-201`, `KUL-U-202`, `KUL-U-301`",
+      "courses": ["KUL-U-101", "KUL-U-102", "KUL-U-201", "KUL-U-202", "KUL-U-301"],
+      "note": "Python sudah dikenal; web, basis data, objek, dan tinjau kode belum"
+    }
+  ],
+  "modules": [
+    {
+      "code": "DW-PRO-M1",
+      "hours": 10,
+      "basis": "`KUL-I-101` C4 dan `KUL-U-101` C4 (Git); baris perintah di `KUL-I-203` C3",
+      "basisCourses": ["KUL-I-101", "KUL-U-101", "KUL-I-203"],
+      "statuses": {
+        "I-lengkap": "L",
+        "I-awal": "P",
+        "U-lengkap": "P"
+      }
+    },
+    {
+      "code": "DW-PRO-M2",
+      "hours": 10,
+      "basis": "`KUL-U-101` C2 (Python); `KUL-I-101` C1 (konsep sama, C++)",
+      "basisCourses": ["KUL-U-101", "KUL-I-101"],
+      "statuses": {
+        "I-lengkap": "P",
+        "I-awal": "P",
+        "U-lengkap": "L"
+      }
+    },
+    {
+      "code": "DW-PRO-M3",
+      "hours": 10,
+      "basis": "`KUL-I-102`, `KUL-I-201`, `KUL-K-201`; `KUL-U-101` (list, dict, set)",
+      "basisCourses": ["KUL-I-102", "KUL-I-201", "KUL-K-201", "KUL-U-101"],
+      "statuses": {
+        "I-lengkap": "L",
+        "I-awal": "P",
+        "U-lengkap": "P"
+      }
+    },
+    {
+      "code": "DW-PRO-M4",
+      "hours": 10,
+      "basis": "`KUL-U-101` (modul, pustaka, pengujian dasar); `KUL-I-204`",
+      "basisCourses": ["KUL-U-101", "KUL-I-204"],
+      "statuses": {
+        "I-lengkap": "P",
+        "I-awal": "W",
+        "U-lengkap": "P"
+      }
+    },
+    {
+      "code": "DW-PRO-M5",
+      "hours": 10,
+      "basis": "`KUL-U-101` C3; `KUL-I-101` C3; `KUL-I-204` C2",
+      "basisCourses": ["KUL-U-101", "KUL-I-101", "KUL-I-204"],
+      "statuses": {
+        "I-lengkap": "L",
+        "I-awal": "P",
+        "U-lengkap": "P"
+      }
+    },
+    {
+      "code": "DW-PRO-M13",
+      "hours": 8,
+      "basis": "`KUL-I-204` C4, `KUL-I-401` C4, `KUL-I-301` C4; `KUL-U-202` C3 dan C5",
+      "basisCourses": ["KUL-I-204", "KUL-I-401", "KUL-I-301", "KUL-U-202"],
+      "statuses": {
+        "I-lengkap": "L",
+        "I-awal": "W",
+        "U-lengkap": "P"
+      }
+    },
+    {
+      "code": "DW-PRO-M6",
+      "hours": 10,
+      "basis": "Tidak ada: kuliah-coding tidak memuat pemrograman berorientasi objek (celah paradigma bahasa, bagian 4.2 kuliah)",
+      "basisCourses": [],
+      "statuses": {
+        "I-lengkap": "W",
+        "I-awal": "W",
+        "U-lengkap": "W"
+      }
+    },
+    {
+      "code": "DW-PRO-M7",
+      "hours": 10,
+      "basis": "`KUL-I-202` C2 (SQL); akses dari kode tidak dinyatakan di CPMK",
+      "basisCourses": ["KUL-I-202"],
+      "statuses": {
+        "I-lengkap": "P",
+        "I-awal": "W",
+        "U-lengkap": "W"
+      }
+    },
+    {
+      "code": "DW-PRO-M8",
+      "hours": 10,
+      "basis": "`KUL-I-205` C1",
+      "basisCourses": ["KUL-I-205"],
+      "statuses": {
+        "I-lengkap": "L",
+        "I-awal": "W",
+        "U-lengkap": "W"
+      }
+    },
+    {
+      "code": "DW-PRO-M9",
+      "hours": 10,
+      "basis": "`KUL-I-205` C2; `KUL-U-201` C2 (memakai API publik, bukan membuat)",
+      "basisCourses": ["KUL-I-205", "KUL-U-201"],
+      "statuses": {
+        "I-lengkap": "L",
+        "I-awal": "W",
+        "U-lengkap": "P"
+      }
+    },
+    {
+      "code": "DW-PRO-M10",
+      "hours": 10,
+      "basis": "`KUL-I-204` C2 dan C3; `KUL-I-401`",
+      "basisCourses": ["KUL-I-204", "KUL-I-401"],
+      "statuses": {
+        "I-lengkap": "L",
+        "I-awal": "W",
+        "U-lengkap": "W"
+      }
+    },
+    {
+      "code": "DW-PRO-M11",
+      "hours": 10,
+      "basis": "`KUL-I-203`, `KUL-I-302`; `KUL-U-201` C3 (penjadwalan dan log)",
+      "basisCourses": ["KUL-I-203", "KUL-I-302", "KUL-U-201"],
+      "statuses": {
+        "I-lengkap": "P",
+        "I-awal": "W",
+        "U-lengkap": "P"
+      }
+    },
+    {
+      "code": "DW-PRO-M12",
+      "hours": 10,
+      "basis": "Tidak ada: proyek akhir dan bukti portofolio selalu dikerjakan",
+      "basisCourses": [],
+      "statuses": {
+        "I-lengkap": "W",
+        "I-awal": "W",
+        "U-lengkap": "W"
+      }
+    }
+  ],
+  "hourImpact": [
+    {
+      "profile": "I-lengkap",
+      "lewati": 7,
+      "padatkan": 4,
+      "wajib": 2,
+      "moduleHours": 47,
+      "totalHours": 55,
+      "reductionHours": 81
+    },
+    {
+      "profile": "I-awal",
+      "lewati": 0,
+      "padatkan": 4,
+      "wajib": 9,
+      "moduleHours": 108,
+      "totalHours": 116,
+      "reductionHours": 20
+    },
+    {
+      "profile": "U-lengkap",
+      "lewati": 1,
+      "padatkan": 7,
+      "wajib": 5,
+      "moduleHours": 85,
+      "totalHours": 93,
+      "reductionHours": 43
+    }
+  ],
+  "mandatoryModules": ["DW-FND-M1", "DW-PRO-M12"]
+}

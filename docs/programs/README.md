@@ -1,6 +1,6 @@
 # Peta Jenjang Program Pembelajaran Coding
 
-- **Version:** v2.0.2
+- **Version:** v2.1.0
 - **Last updated:** 2026-11-19
 - **Status:** Dokumen peta (navigasi), bukan silabus. Isinya merangkum keadaan nyata folder program di `docs/programs/`, pembinaan OSN di `docs/silabus/`, dan registri `data/programs.json`. Menyebut status; tidak mengubah isi dokumen program mana pun.
 
@@ -19,7 +19,7 @@
 ```text
 TK/PAUD --> SD --> SMP --> SMA ------------> Kuliah --> Dewasa
 tk-coding  sd-coding smp-coding sma-coding   kuliah-coding dewasa-coding
- (v1.0.1)  (v1.0.2)  (v1.1.2)    (v1.3.1)      (v1.1.1)     (v1.1.2)
+ (v1.0.1)  (v1.0.2)  (v1.1.2)    (v1.3.1)      (v1.2.0)     (v1.2.0)
                                   |
                                   +--> osn (pembinaan OSN, jalur A)
                                         (terdaftar, v2.0)
@@ -41,8 +41,8 @@ Semua versi dan tanggal di bawah sama dengan `data/programs.json`
 | SMP | `smp-coding` | Kelas 7-9 (Fase D); blok ke pseudocode, data, proyek, literasi AI, Python sebagai pengayaan | **Disetujui**, terdaftar, dienkode ke `data/smp-coding/` (7 berkas). Silabus v1.1.2. Belum ada modul `content/smp-coding/`. | Demonstrasi guru tanpa akun murid; asesmen tanpa AI (silabus 7.1) | [`smp-coding/README.md`](smp-coding/README.md), [`riset.md`](smp-coding/riset.md), [`silabus.md`](smp-coding/silabus.md) | [#129](https://github.com/ahliweb/osn/issues/129) (selesai) |
 | SMA | `sma-coding` | Kelas X-XII; jalur A (C++), B (web), C (IoT dan robotika), D (AI dan data, pengayaan), E (kuantum, kelas XI-XII, pengayaan) | **Disetujui**, terdaftar (`syllabusVersion` 1.3.1), dienkode ke `data/sma-coding/` (7 berkas korpus plus `modules.json`). 29 modul draf di `content/sma-coding/modules/` menunggu tinjauan pemilik. | Murid SMA boleh memakai AI dengan etika (silabus 7.4) | [`sma-coding/README.md`](sma-coding/README.md), [`silabus.md`](sma-coding/silabus.md) | [#125](https://github.com/ahliweb/osn/issues/125) (tinjauan modul, terbuka), [#124](https://github.com/ahliweb/osn/issues/124) (modul jalur C, D, E, terbuka); keputusan silabus: #52, #92, #68, #84, #88, #139 |
 | SMA (kompetisi) | `osn` | Pembinaan OSN Informatika 2026 jenjang SMA/sederajat, 28 minggu, 10 rumpun, 7 gerbang | **Disetujui dan terdaftar** (`syllabusVersion` 2.0, 4 September 2026). Transkripsi setia silabus; sepuluh modul disetujui. | [`kebijakan-ai-osn.md`](../operations/kebijakan-ai-osn.md) (prosedur operasional, bukan bagian transkripsi) | [`docs/silabus/README.md`](../silabus/README.md), `data/osn/` | Selesai (M1-M8) |
-| Kuliah | `kuliah-coding` | Mahasiswa; jalur U (semua prodi), I (informatika), K (pemrograman kompetitif) dalam SKS | **Disetujui**, terdaftar, dienkode ke `data/kuliah-coding/` (6 berkas). Silabus v1.1.1. Belum ada `content/kuliah-coding/`. | Kebijakan AI tiga tingkat dengan log pemakaian (silabus 6.3-6.5) | [`kuliah-coding/README.md`](kuliah-coding/README.md), [`riset.md`](kuliah-coding/riset.md), [`silabus.md`](kuliah-coding/silabus.md) | [#130](https://github.com/ahliweb/osn/issues/130) (selesai) |
-| Dewasa | `dewasa-coding` | Orang dewasa; jalur Pekerja, Profesional, Personal, Pebisnis/UMKM; berbasis modul dan jam | **Disetujui**, terdaftar, dienkode ke `data/dewasa-coding/` (7 berkas). Silabus v1.1.2. Belum ada `content/dewasa-coding/`. | Kebijakan penggunaan AI peserta dewasa (silabus 9.1) | [`dewasa-coding/README.md`](dewasa-coding/README.md), [`riset.md`](dewasa-coding/riset.md), [`silabus.md`](dewasa-coding/silabus.md) | [#131](https://github.com/ahliweb/osn/issues/131) (selesai) |
+| Kuliah | `kuliah-coding` | Mahasiswa; jalur U (semua prodi), I (informatika), K (pemrograman kompetitif) dalam SKS | **Disetujui**, terdaftar, dienkode ke `data/kuliah-coding/` (6 berkas). Silabus v1.2.0. Belum ada `content/kuliah-coding/`. | Kebijakan AI tiga tingkat dengan log pemakaian (silabus 6.3-6.5) | [`kuliah-coding/README.md`](kuliah-coding/README.md), [`riset.md`](kuliah-coding/riset.md), [`silabus.md`](kuliah-coding/silabus.md) | [#130](https://github.com/ahliweb/osn/issues/130) (selesai) |
+| Dewasa | `dewasa-coding` | Orang dewasa; jalur Pekerja, Profesional, Personal, Pebisnis/UMKM; berbasis modul dan jam | **Disetujui**, terdaftar, dienkode ke `data/dewasa-coding/` (8 berkas). Silabus v1.2.0. Belum ada `content/dewasa-coding/`. | Kebijakan penggunaan AI peserta dewasa (silabus 9.1) | [`dewasa-coding/README.md`](dewasa-coding/README.md), [`riset.md`](dewasa-coding/riset.md), [`silabus.md`](dewasa-coding/silabus.md) | [#131](https://github.com/ahliweb/osn/issues/131) (selesai) |
 
 Program yang terdaftar tujuh (`osn` dan enam program coding); `osn validate`
 memeriksa ketujuhnya dan `bun run check:fidelity` enam program coding.
@@ -63,10 +63,10 @@ Kolom "Dasar" memuat apa yang tertulis di silabus masing-masing pada saat penuli
 | `sma-coding` jalur A | `osn` | Jembatan disetujui dan terkodekan di `data/sma-coding/osn-bridge.json` (jalur A selaras rumpun `data/osn/topic-families.json`; jalur C sebagian lewat `trackBridges`). |
 | `smp-coding` | `osn` | Silabus SMP (bagian 5.3): tidak ada OSN SMP yang dapat dipastikan; jembatannya klub pengayaan lalu jalur A `sma-coding`. Silabus SD (bagian 8) menyatakan tidak ada jembatan OSN untuk SD. |
 | `sma-coding` jalur A, B, C, D, E; `osn` | `kuliah-coding` | Silabus kuliah (bagian 5.1) menulis jembatan per jalur ke mata kuliah `KUL-*` dengan pengakuan lewat rekognisi pembelajaran lampau; sebagian `[asumsi]` atau `[belum terverifikasi]`. Sepihak dari sisi kuliah; silabus SMA belum merujuknya. |
-| `kuliah-coding` | `dewasa-coding` | Silabus kuliah (bagian 5.2) menulis portofolio sebagai bahan masuk dan menyatakan rujukan silang ke dewasa-coding belum dirancang. Silabus dewasa (12.7) belum merancang jembatan dari kuliah dan menjadikannya pertanyaan terbuka. **Belum selaras**. |
+| `kuliah-coding` | `dewasa-coding` | **Selaras** (keputusan pemilik 2026-11-19, #177; kuliah v1.2.0, dewasa v1.2.0). Silabus kuliah (bagian 5.2) menyebut portofolio `KUL-U-301` dan `KUL-I-401` sebagai bukti masuk jalur `PRO`; silabus dewasa (bagian 6.1 dan 6.2, keputusan 12.7) merancang pengakuan per modul `PRO` dengan status lewati, padatkan, wajib untuk tiga profil masuk, `DW-FND-M1` dan `DW-PRO-M12` tetap wajib. Terkodekan di `data/dewasa-coding/kuliah-bridge.json`; kode `KUL-` dan `DW-` diperiksa silang oleh `osn validate` (ADR-0010). |
 | `sma-coding` jalur A, B, D | `dewasa-coding` | Silabus dewasa (bagian 6.1) memetakan jalur A ke `PRO`, jalur B ke `PRO` dan `BIS`, jalur D ke `PKJ` dan `PRO`, semua `[asumsi]`; juga menyebut pendamping anak ke jalur A atau B. |
 
-Rancangan penyelarasan kelima pasangan di atas (DRAF, menunggu keputusan pemilik; termasuk jembatan kuliah-coding ke dewasa-coding jalur `PRO`): [`rancangan-jembatan-antarprogram.md`](rancangan-jembatan-antarprogram.md).
+Rancangan penyelarasan kelima pasangan di atas (disetujui pemilik pada 2026-11-19, issue #177, seluruh rekomendasi K1 sampai K8; diterapkan bertahap dalam lima PR, pasangan yang sudah berstatus **Selaras** di tabel adalah yang sudah diterapkan): [`rancangan-jembatan-antarprogram.md`](rancangan-jembatan-antarprogram.md).
 
 Ringkas: jembatan tiap program terkodekan di korpusnya sendiri
 (`data/<id>/bridge*.json` atau `osn-bridge.json`) dan diperiksa mesin terhadap
@@ -111,3 +111,4 @@ sumbernya.
 | v2.0.0 | 2026-11-19 | Keadaan nyata: enam program coding disetujui, terdaftar, dan dienkode (versi silabus sama dengan registri); kolom kebijakan AI per program (#139); tautan `silabus.md`; rujukan dua dokumen riset (#127, #128, #129, #130, #131, #133, #139, #140). |
 | v2.0.1 | 2026-11-19 | Versi silabus tk, sd, smp, kuliah, dan dewasa ke revisi patch (issue #165); kalimat riwayat "belum ada" di bagian 3 disesuaikan dengan silabus yang sudah diperbaiki. |
 | v2.0.2 | 2026-11-19 | Tautan ke `rancangan-jembatan-antarprogram.md` (rancangan penyelarasan jembatan, DRAF) di bagian 3; isi peta tidak berubah. |
+| v2.1.0 | 2026-11-19 | Jembatan `kuliah-coding` ke `dewasa-coding` jalur `PRO` selaras (#177): kuliah dan dewasa v1.2.0, `data/dewasa-coding/` 8 berkas; rancangan jembatan disetujui pemilik dan diterapkan bertahap. |

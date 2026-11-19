@@ -7,6 +7,7 @@
 
 import { access, readFile } from "node:fs/promises";
 import { join, resolve } from "node:path";
+import type { CrossProgramCodes, CrossProgramId } from "../domain/cross-program-refs";
 import {
   DEFAULT_PROGRAM_ID,
   findProgram,
@@ -199,4 +200,72 @@ export async function resolveProgramOption(
   }
 
   return { ok: true, program, args: rest, explicit: value };
+}
+
+/** Where each programme keeps the codes the cross-programme check looks up (ADR-0010). */
+const CROSS_PROGRAM_CODE_SOURCES: Readonly<
+  Record<
+    CrossProgramId,
+    ReadonlyArray<{ readonly file: string; readonly list: string; readonly key: string }>
+  >
+> = {
+  "tk-coding": [{ file: "weeks.json", list: "weeks", key: "id" }],
+  "sd-coding": [{ file: "weeks.json", list: "weeks", key: "id" }],
+  "smp-coding": [{ file: "weeks.json", list: "weeks", key: "id" }],
+  "sma-coding": [
+    { file: "foundation.json", list: "weeks", key: "id" },
+    { file: "weeks.json", list: "weeks", key: "id" },
+  ],
+  "kuliah-coding": [{ file: "courses.json", list: "courses", key: "code" }],
+  "dewasa-coding": [
+    { file: "shared.json", list: "modules", key: "code" },
+    { file: "module-plan.json", list: "modules", key: "code" },
+  ],
+};
+
+/**
+ * The week, course and module codes of every registered programme the
+ * cross-programme check knows (ADR-0010), read structurally from the
+ * programme's own corpus files. A programme that is not registered or whose
+ * files cannot be read is left out, and the check skips its codes: that
+ * programme's own audit reports the broken corpus.
+ */
+export async function loadCrossProgramCodes(
+  registry: ProgramRegistry,
+  repoRoot: string = REPO_ROOT,
+): Promise<CrossProgramCodes> {
+  const result: Partial<Record<CrossProgramId, Set<string>>> = {};
+  for (const [id, sources] of Object.entries(CROSS_PROGRAM_CODE_SOURCES) as Array<
+    [CrossProgramId, (typeof CROSS_PROGRAM_CODE_SOURCES)[CrossProgramId]]
+  >) {
+    const program = findProgram(registry, id);
+    if (program === undefined) {
+      continue;
+    }
+    const codes = new Set<string>();
+    let complete = true;
+    for (const source of sources) {
+      try {
+        const path = join(resolve(repoRoot, program.corpusDir), source.file);
+        const parsed = JSON.parse(await readFile(path, "utf-8")) as Record<string, unknown>;
+        const list = parsed[source.list];
+        if (!Array.isArray(list)) {
+          complete = false;
+          continue;
+        }
+        for (const entry of list) {
+          const value = (entry as Record<string, unknown> | null)?.[source.key];
+          if (typeof value === "string") {
+            codes.add(value);
+          }
+        }
+      } catch {
+        complete = false;
+      }
+    }
+    if (complete) {
+      result[id] = codes;
+    }
+  }
+  return result;
 }

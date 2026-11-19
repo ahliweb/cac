@@ -1,9 +1,9 @@
-# Silabus Pembelajaran Coding untuk Dewasa — v1.1
+# Silabus Pembelajaran Coding untuk Dewasa — v1.2
 
-- **Version:** v1.1.2
+- **Version:** v1.2.0
 - **Last updated:** 2026-11-19
-- **Status:** DISETUJUI pemilik program pada 2026-11-19 (dialog pilihan, beserta seluruh rekomendasi penyusun; keputusan di bagian 12). Revisi v1.1.0 (rekayasa perangkat lunak berbantuan AI, kebijakan penggunaan AI per program) disetujui pemilik pada 2026-11-19 lewat keputusan #139 (bagian 12.9). Dienkode ke `data/dewasa-coding/` (skema khusus program, ADR-0008) dan didaftarkan di `data/programs.json` (ADR-0006). Belum ada modul di `content/dewasa-coding/` (ADR-0007).
-- **Changeset:** Silabus program `dewasa-coding` disetujui pemilik pada 2026-11-19 (v1.0.0): empat jalur persona (pekerja, profesional, personal, pebisnis/UMKM), modul berbasis jam, pemetaan ke SKKNI 282/2016 untuk jalur profesional (hanya sampai judul unit), pertanyaan terbuka diganti keputusan pemilik (#131). Revisi v1.1.0 (#139, minor): modul baru `DW-PRO-M13` (rekayasa perangkat lunak berbantuan AI, 8 jam, jalur PRO 128 menjadi 136 jam), butir tambahan di `DW-FND-M1` dan `DW-PKJ-M6`, dan bagian 9.1 Kebijakan penggunaan AI; riwayat di `.changeset/dewasa-coding-v1-1-ai.md`. Revisi patch v1.1.1 (#165): kalimat status yang basi; isi kurikulum tidak berubah.
+- **Status:** DISETUJUI pemilik program pada 2026-11-19 (dialog pilihan, beserta seluruh rekomendasi penyusun; keputusan di bagian 12). Revisi v1.1.0 (rekayasa perangkat lunak berbantuan AI, kebijakan penggunaan AI per program) disetujui pemilik pada 2026-11-19 lewat keputusan #139 (bagian 12.9). Dienkode ke `data/dewasa-coding/` (skema khusus program, ADR-0008) dan didaftarkan di `data/programs.json` (ADR-0006). Belum ada modul di `content/dewasa-coding/` (ADR-0007). Revisi v1.2.0 (jembatan kuliah-coding ke jalur `PRO`, bagian 6.1, 6.2, 12.7 dan 12.8) disetujui pemilik pada 2026-11-19 lewat keputusan #177 (dialog pilihan, seluruh rekomendasi K1 sampai K8).
+- **Changeset:** Silabus program `dewasa-coding` disetujui pemilik pada 2026-11-19 (v1.0.0): empat jalur persona (pekerja, profesional, personal, pebisnis/UMKM), modul berbasis jam, pemetaan ke SKKNI 282/2016 untuk jalur profesional (hanya sampai judul unit), pertanyaan terbuka diganti keputusan pemilik (#131). Revisi v1.1.0 (#139, minor): modul baru `DW-PRO-M13` (rekayasa perangkat lunak berbantuan AI, 8 jam, jalur PRO 128 menjadi 136 jam), butir tambahan di `DW-FND-M1` dan `DW-PKJ-M6`, dan bagian 9.1 Kebijakan penggunaan AI; riwayat di `.changeset/dewasa-coding-v1-1-ai.md`. Revisi patch v1.1.1 (#165): kalimat status yang basi; isi kurikulum tidak berubah. Revisi minor v1.2.0 (#177): jembatan kuliah-coding ke jalur `PRO` dirancang (bagian 6.2: pengakuan per modul dengan status lewati, padatkan, wajib untuk tiga profil masuk; `DW-FND-M1` dan `DW-PRO-M12` tetap wajib) dan dikodekan di `data/dewasa-coding/kuliah-bridge.json`; keputusan 12.7 diganti; modul dan jam `PRO` tidak berubah.
 
 > Dokumen ini konten **karangan** (*authored*) menurut
 > [ADR-0007](../../architecture/adr/0007-authored-learning-content.md),
@@ -244,9 +244,57 @@ bagi peserta yang ingin mendampingi anak (bagian 6.1).
 | sma-coding jalur A (C++) | `PRO` | Dasar struktur data dan algoritma dari jalur A boleh menggantikan `DW-PRO-M3` setelah uji singkat; bahasa inti `PRO` tetap Python, sehingga M2 dan M4 diulang pada Python |
 | sma-coding jalur B (Bun, TypeScript, `awcms-one`) | `PRO` modul M8, M9; `BIS` modul M4 | Lulusan jalur B boleh langsung memulai M8 setelah M1 |
 | sma-coding jalur D (data, AI) | `PKJ` M3-M4, M6; `PRO` M3 | Pengolahan data dan etika AI sebagian sama |
-| kuliah-coding (issue #130, silabusnya kini ada dan disetujui pemilik) | `PRO` | **Belum dapat dirancang** pada revisi ini: jembatan ditunda menurut keputusan 12.7 |
+| kuliah-coding (jalur U, I, K) | `PRO` (modul `DW-PRO-M1` sampai `DW-PRO-M13`) | Pengakuan per modul atas dasar bukti yang diperiksa, dengan tiga status (lewati, padatkan, wajib); `DW-FND-M1` dan `DW-PRO-M12` tetap wajib; rincian dan batas di bagian 6.2 |
 | `PRS` | `PKJ`, `PRO`, `BIS` | Setelah `PRS-M6`, peserta memilih jalur lanjut |
 | `PKJ` | `PRO` | `PKJ-M3` sampai M5 menggantikan sebagian `PRO-M2` |
+
+### 6.2 Jembatan dari kuliah-coding ke `PRO` (v1.2)
+
+Jembatan ini berlaku bagi mahasiswa atau lulusan `kuliah-coding` yang ingin beralih karier atau menjadi pengembang lewat jalur `PRO`. Ia **bukan alih kredit SKS dan bukan sertifikat**: pengakuan hanya berarti modul `PRO` tertentu tidak diulang penuh di program ini, atas dasar bukti yang diperiksa pada saat pendaftaran dan bukan transkrip. Dasar pengakuan di perguruan tinggi (Pasal 14 ayat (3) huruf c Permendiktisaintek 39/2025) mengatur mahasiswa di perguruan tinggi, bukan masuk ke program ini; wewenang penyelenggara mengakui modul `[belum terverifikasi]`. Pemetaan SKKNI tidak berubah: tetap hanya sampai judul unit, dan melewati modul tidak berarti peserta kompeten menurut unit itu (bagian 5.2).
+
+Tiga profil masuk (cuplikan; profil lain dinilai per modul):
+
+| Profil | Mata kuliah yang diselesaikan | Catatan |
+| --- | --- | --- |
+| `I-lengkap` | Jalur I inti: `KUL-I-101` sampai `KUL-I-205`, `KUL-I-301`, `KUL-I-302`, `KUL-I-401` | Paling banyak modul yang dapat dilewati; bahasa dasar C++, bukan Python |
+| `I-awal` | `KUL-I-101`, `KUL-I-102`, `KUL-I-103` (semester 1-2) | Dasar saja; mulai dari modul rekayasa dan web |
+| `U-lengkap` | Jalur U: `KUL-U-101`, `KUL-U-102`, `KUL-U-201`, `KUL-U-202`, `KUL-U-301` | Python sudah dikenal; web, basis data, objek, dan tinjau kode belum |
+
+Jalur K tidak membuka pengakuan sendiri kecuali pada `DW-PRO-M3` (algoritma dan struktur data); mahasiswa jalur K umumnya mengambil jalur I atau U lebih dulu (prasyarat `KUL-K-201`).
+
+Status modul: **L** (lewati: bukti diperiksa singkat, perkiraan 1 jam), **P** (padatkan: konsep dikenal tetapi bahasa atau alat berbeda, perkiraan setengah jam modul), **W** (wajib: dikerjakan penuh). Semua angka jam adalah perkiraan `[asumsi]`, bukan hasil uji coba.
+
+| Modul | Jam | Dasar di kuliah-coding | `I-lengkap` | `I-awal` | `U-lengkap` |
+| --- | --- | --- | --- | --- | --- |
+| `DW-PRO-M1` | 10 | `KUL-I-101` C4 dan `KUL-U-101` C4 (Git); baris perintah di `KUL-I-203` C3 | L | P | P |
+| `DW-PRO-M2` | 10 | `KUL-U-101` C2 (Python); `KUL-I-101` C1 (konsep sama, C++) | P | P | L |
+| `DW-PRO-M3` | 10 | `KUL-I-102`, `KUL-I-201`, `KUL-K-201`; `KUL-U-101` (list, dict, set) | L | P | P |
+| `DW-PRO-M4` | 10 | `KUL-U-101` (modul, pustaka, pengujian dasar); `KUL-I-204` | P | W | P |
+| `DW-PRO-M5` | 10 | `KUL-U-101` C3; `KUL-I-101` C3; `KUL-I-204` C2 | L | P | P |
+| `DW-PRO-M13` | 8 | `KUL-I-204` C4, `KUL-I-401` C4, `KUL-I-301` C4; `KUL-U-202` C3 dan C5 | L | W | P |
+| `DW-PRO-M6` | 10 | Tidak ada: kuliah-coding tidak memuat pemrograman berorientasi objek (celah paradigma bahasa, bagian 4.2 kuliah) | W | W | W |
+| `DW-PRO-M7` | 10 | `KUL-I-202` C2 (SQL); akses dari kode tidak dinyatakan di CPMK | P | W | W |
+| `DW-PRO-M8` | 10 | `KUL-I-205` C1 | L | W | W |
+| `DW-PRO-M9` | 10 | `KUL-I-205` C2; `KUL-U-201` C2 (memakai API publik, bukan membuat) | L | W | P |
+| `DW-PRO-M10` | 10 | `KUL-I-204` C2 dan C3; `KUL-I-401` | L | W | W |
+| `DW-PRO-M11` | 10 | `KUL-I-203`, `KUL-I-302`; `KUL-U-201` C3 (penjadwalan dan log) | P | W | P |
+| `DW-PRO-M12` | 10 | Tidak ada: proyek akhir dan bukti portofolio selalu dikerjakan | W | W | W |
+
+Dampak pada jam jalur `PRO` (136 jam bila semua modul dikerjakan penuh: `DW-FND-M1` 8 jam dan 128 jam modul; diperkirakan dengan L = 1 jam dan P = setengah jam modul):
+
+| Profil | L | P | W | Jam modul `PRO` | Jam dengan `DW-FND-M1` | Selisih terhadap 136 jam |
+| --- | --- | --- | --- | --- | --- | --- |
+| `I-lengkap` | 7 | 4 | 2 | 47 | 55 | 81 jam lebih sedikit |
+| `I-awal` | 0 | 4 | 9 | 108 | 116 | 20 jam lebih sedikit |
+| `U-lengkap` | 1 | 7 | 5 | 85 | 93 | 43 jam lebih sedikit |
+
+Bukti dan pemeriksaan:
+
+- Bukti tiap modul adalah keluaran portofolio kuliah (`KUL-U-301`, `KUL-I-401`, repositori dengan riwayat Git) yang dinilai dengan rubrik bagian 8.1 (ketepatan, keterbacaan, pengujian, dokumentasi, keamanan data), ditambah tugas praktik singkat tanpa AI per kelompok modul. Bukti tidak berupa nilai kuliah.
+- `DW-PRO-M13` (rekayasa perangkat lunak berbantuan AI) hanya dilewati atau dipadatkan setelah **gerbang kesiapan**: peserta dapat menelusuri program pendek, menulis satu uji yang gagal bila kode salah, dan menjelaskan kode dengan kata sendiri. Gerbang ini sama dengan `kuliah-coding` bagian 6.4 dan menjadi dasar `DW-PRO-M5` sebelum `DW-PRO-M13`.
+- Keadaan keahlian berlaku per topik, bukan per orang: peserta yang ahli dalam algoritma tetap pemula dalam web atau basis data, sehingga status L, P, dan W ditetapkan per modul. Keahlian yang sudah lama tidak dipakai diperiksa lewat tugas praktik, bukan lewat riwayat mata kuliah.
+- `DW-FND-M1` (8 jam, keamanan, privasi, dan etika kerja) dan `DW-PRO-M12` (proyek akhir) tetap wajib bagi semua peserta (bagian 12.1); jalur U sudah punya `KUL-U-202`, tetapi kebijakan tempat kerja dan data usaha tidak ada di kuliah-coding.
+- Data peserta, hasil pemeriksaan, dan status modul tidak disimpan di repositori ini (ADR-0004); peserta menyimpan daftar modul selesai sendiri (bagian 8.1).
 
 ## 7. Jalur `BIS` — Pebisnis/UMKM
 
@@ -455,20 +503,19 @@ skrip pada saat encode dan cocok.
 
 ### 12.7 Jembatan dari kuliah-coding
 
-**Keputusan:** opsi A, ditunda sampai draf kuliah-coding (#130) ada.
+**Status (diperbarui):** syarat penundaan keputusan sebelumnya terpenuhi: silabus `kuliah-coding` v1.1.1 disetujui dan terdaftar (2026-11-19, issue #130). Pemilik menginstruksikan agar jembatan mulai dirancang (2026-11-19) dan menyetujui seluruh rekomendasi rancangan (K5, K6 dan K7; issue #177). Jembatan ada di bagian 6.1 (baris kuliah-coding) dan 6.2.
+
+**Keputusan pemilik 2026-11-19 (dialog pilihan, issue #177, K5 dan K6):** opsi A: pengakuan per modul `PRO` dengan tiga status (lewati, padatkan, wajib) atas dasar bukti yang diperiksa; `DW-FND-M1` dan `DW-PRO-M12` tetap wajib bagi semua peserta.
 
 | Opsi | Konsekuensi |
 | --- | --- |
-| **A. Tunda sampai draf kuliah-coding (#130) ada (dipilih)** | tidak mengarang |
-| B. Tulis jembatan dugaan sekarang | cepat; rawan salah |
+| **A. Pengakuan per modul `PRO` dengan status lewati, padatkan, wajib; `DW-FND-M1` dan `DW-PRO-M12` tetap wajib (dipilih)** | jam jalur `PRO` turun sesuai profil (perkiraan 81, 43, dan 20 jam dari 136 pada tiga profil bagian 6.2); butuh pemeriksaan bukti per modul; wewenang penyelenggara mengakui modul `[belum terverifikasi]` |
+| B. Jalur khusus lulusan kuliah (modul `PRO` lanjutan yang baru) | isi lebih sesuai lulusan; modul baru, jam baru, dan korpus yang lebih besar; melanggar bentuk satu program (12.1) bila terpisah |
+| C. Hanya rekomendasi urutan tanpa pengurangan jam | tanpa risiko pengakuan; lulusan kuliah mengulang bahan yang sudah dikuasai (efek keahlian terbalik) |
 
 ### 12.8 Pengerjaan lanjutan
 
-**Keputusan:** skema khusus per program (ADR-0008): skema `src/schema/dw-*.ts`
-(berjam, bukan mingguan), baru `data/dewasa-coding/`, entri registri, lalu
-modul `content/`. Urutan mengikuti AGENTS.md: skema, data, domain, uji. Untuk
-modul `content/`, jalur `PKJ` dan `BIS` dikerjakan lebih dulu karena paling
-sedikit bergantung pada SKKNI dan alat berat.
+**Keputusan:** skema khusus per program (ADR-0008): skema `src/schema/dw-*.ts` (berjam, bukan mingguan), `data/dewasa-coding/` (tujuh berkas), entri registri, dan pemeriksa fidelity sudah ada. Yang tersisa, mengikuti urutan AGENTS.md (skema, data, domain, uji): (1) jembatan kuliah-coding (12.7): **selesai di v1.2.0 (#177, keputusan pemilik K7 opsi 1)**: skema `src/schema/dw-kuliah-bridge.ts`, berkas `data/dewasa-coding/kuliah-bridge.json`, audit di `src/domain/dw-corpus-audit.ts`, pemeriksa fidelity, dan pemeriksaan silang kode `KUL-` terhadap korpus `kuliah-coding` (ADR-0010); (2) modul `content/dewasa-coding/`, jalur `PKJ` dan `BIS` dikerjakan lebih dulu karena paling sedikit bergantung pada SKKNI dan alat berat, jalur `PRO` setelahnya.
 
 ### 12.9 Revisi v1.1.0: rekayasa perangkat lunak berbantuan AI (#139)
 
@@ -509,3 +556,4 @@ M10, dan M12), bukan angka dari sumber. Kebijakan penggunaan AI: bagian 9.1.
 | v1.1.0 | 2026-11-19 | Revisi minor yang disetujui pemilik lewat keputusan #139: modul baru `DW-PRO-M13` rekayasa perangkat lunak berbantuan AI (8 jam; jalur `PRO` 120 menjadi 128 jam, total 128 menjadi 136; tabel 5.1 mendapat kolom jam dan urutan belajar; `DW-PRO-M6` bergantung pada `DW-PRO-M13`); butir tambahan di `DW-FND-M1` (hak cipta dan lisensi keluaran AI, kebijakan tempat kerja, *prompt injection*, energi dan biaya komputasi) dan `DW-PKJ-M6` (catat alat, versi, perintah; hasil tidak identik; uji data sintetis); glosarium istilah AI (3.2); kebijakan penggunaan AI (9.1); keputusan 12.9. Hitungan 34 unit SKKNI yang disentuh tidak berubah (#139). |
 | v1.1.1 | 2026-11-19 | Revisi patch: kalimat status, keputusan pemilik #165; isi kurikulum tidak berubah. |
 | v1.1.2 | 2026-11-19 | Revisi patch: status verifikasi sumber (SK 046, SKKNI 282/2016); koreksi judul unit 47 sesuai lampiran resmi; isi kurikulum lain tidak berubah. |
+| v1.2.0 | 2026-11-19 | Revisi minor yang disetujui pemilik lewat keputusan #177: jembatan kuliah-coding ke jalur `PRO` (bagian 6.1 baris kuliah-coding, subbagian 6.2 baru: tiga profil masuk, status lewati, padatkan, wajib per modul `PRO`, dampak jam, bukti dan pemeriksaan; `DW-FND-M1` dan `DW-PRO-M12` wajib bagi semua); keputusan 12.7 diganti (opsi A dipilih) dan 12.8 diperbarui. Modul, jam, dan pemetaan SKKNI tidak berubah; jalur `PRO` tetap 136 jam secara nominal (#177). |
