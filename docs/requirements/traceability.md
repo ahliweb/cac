@@ -86,11 +86,7 @@ itself.
 | #130 — Research and syllabus for university coding; approved and encoded as `kuliah-coding` v1.1.0 (PR #146) | FR-37, TR-18 |
 | #131 — Research and syllabus for adult coding; approved and encoded as `dewasa-coding` v1.1.0 (PR #147) | FR-38, TR-19 |
 | #139 — AI in software engineering research and the per-programme AI-use policies (PR #159 OSN, #160 SMP, #161 SMA, #162 kuliah, #163 dewasa) | ER-17, FR-36, FR-37, FR-38 |
-| #127 — module index of `tk-coding` (schema, validation, `osn render modul`, learner sheet) | FR-39 |
-| #128 — module index of `sd-coding` (schema, validation, `osn render modul`, learner sheet) | FR-40 |
-| #129 — module index of `smp-coding` (schema, validation, `osn render modul`) | FR-41 |
-| #130 — module index of `kuliah-coding` (schema, validation, `osn render modul`) | FR-42 |
-| #131 — module index of `dewasa-coding` (schema, validation, `osn render modul`) | FR-43 |
+| #172 — module indexes of `tk-coding`, `sd-coding`, `smp-coding`, `kuliah-coding` and `dewasa-coding` (schemas, validation, `osn render modul`, learner sheets for tk and sd) | FR-39, FR-40, FR-41, FR-42, FR-43 |
 
 Rows `#27` and later are not required by the checker: only `#1`-`#26` must be present (the initial
 backlog), while any issue may be cited. A new programme adds its issues here as it adds requirements.
