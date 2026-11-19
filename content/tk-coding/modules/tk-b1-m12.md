@@ -6,7 +6,8 @@ Anak dapat menceritakan program atau permainan favorit.
 
 ## Alat dan bahan
 
-- Karya semester ini, digelar di pojok-pojok kelas dengan alas di lantai atau meja rendah: kartu program robot (`TK-B1-M2`, `TK-B1-M3`, `TK-B1-M11`), pola kotak dari potongan warna (`TK-B1-M4`), kartu "ulang x2" dan kartu tepuk (`TK-B1-M5`), kartu lagu bergambar matahari dan not (`TK-B1-M6`), dua lingkaran dengan benda (`TK-B1-M7`), kertas kolom cuaca (`TK-B1-M8`), serta pompa, roda, dan tuas yang aman (`TK-B1-M9`).- Satu kertas gambar per anak dan krayon yang tidak beracun, untuk menggambar permainan favorit.
+- Karya semester ini, digelar di pojok-pojok kelas dengan alas di lantai atau meja rendah: kartu program robot (`TK-B1-M2`, `TK-B1-M3`, `TK-B1-M11`), pola kotak dari potongan warna (`TK-B1-M4`), kartu "ulang x2" dan kartu tepuk (`TK-B1-M5`), kartu lagu bergambar matahari dan not (`TK-B1-M6`), dua lingkaran dengan benda (`TK-B1-M7`), kertas kolom cuaca (`TK-B1-M8`), serta pompa, roda, dan tuas yang aman (`TK-B1-M9`).
+- Satu kertas gambar per anak dan krayon yang tidak beracun, untuk menggambar permainan favorit.
 - Lembar anak `tk-b1-m12` dicetak satu per anak atau pasangan; gambarnya (SVG buatan penyusun) memuat enam gambar kecil permainan semester ini, untuk dilingkari.
 - Tanpa perangkat digital.
 

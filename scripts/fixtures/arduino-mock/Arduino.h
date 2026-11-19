@@ -75,6 +75,9 @@ class String {
 class HardwareSerial {
  public:
   void begin(unsigned long baud);
+  // Bentuk dengan pin untuk UART tambahan (Serial2 pada ESP32): deklarasi saja,
+  // BUKAN pustaka asli.
+  void begin(unsigned long baud, uint32_t config, int8_t rxPin, int8_t txPin);
   size_t print(const char *text);
   size_t print(const String &text);
   size_t print(char value);
@@ -96,6 +99,8 @@ class HardwareSerial {
   int read();
 };
 extern HardwareSerial Serial;
+// UART kedua inti Arduino-ESP32: deklarasi saja, BUKAN pustaka asli.
+extern HardwareSerial Serial2;
 
 // Pustaka pendamping: deklarasi kosong (hanya nama, tanpa anggota).
 class TwoWire {};

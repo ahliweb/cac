@@ -133,11 +133,10 @@ S5 isi salah: pesan utuh tetapi isi salah: periksa format, satuan, dan rentang
 
 Baca dengan hati-hati. Tiap skenario di atas adalah data **karangan**, dan ambang `bukanCetak * 4 >= byteMasuk` (seperempat byte aneh) hanyalah pilihan contoh. Hasilnya **dugaan pertama**, bukan bukti: tidak ada byte bisa karena daya, kabel, atau `begin()` yang lupa, dan fungsi ini tidak dapat membedakannya. Karena itu langkah berikutnya selalu **satu pengamatan atau satu perubahan** yang membedakan dugaan, lalu dicatat. Untuk skenario S4, misalnya, kedua sisi menghitung jumlah periksa atas bagian yang berbeda (satu menyertakan `$`, satu tidak); satu perubahan pada satu sisi lalu pengamatan ulang cukup untuk memastikan.
 
-Sketsa di bawah adalah alat bantu pada papan penerima: ia hanya menghitung byte yang masuk dan yang aneh, lalu melaporkannya tiap 5 detik ke monitor serial. Ia hanya diperiksa sintaksnya terhadap header tiruan, tidak dijalankan pada papan. Baris `extern` ada karena header tiruan belum mengenal `Serial2`.
+Sketsa di bawah adalah alat bantu pada papan penerima: ia hanya menghitung byte yang masuk dan yang aneh, lalu melaporkannya tiap 5 detik ke monitor serial. Ia hanya diperiksa sintaksnya terhadap header tiruan, tidak dijalankan pada papan.
 
 ```arduino
 // Arduino-C++ untuk ESP32, papan penerima. Diperiksa check:module-code terhadap header tiruan (sintaks dan tipe saja, bukan bukti perilaku papan).
-extern HardwareSerial Serial2;  // sudah ada di inti Arduino-ESP32; ditulis agar header tiruan menerimanya
 
 const unsigned long BAUD = 115200;       // harus sama dengan papan pengirim
 const unsigned long SELANG_LAPOR_MS = 5000;

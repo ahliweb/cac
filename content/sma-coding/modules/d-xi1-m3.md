@@ -6,7 +6,7 @@ Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur D ada
 
 Aturan jalur D yang berlaku: data hanya sintetis (karangan) atau terbuka dengan lisensi jelas, tanpa data yang bisa mengenali orang; wajah, suara, dan foto orang tidak dipakai sebagai data; AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu, dan kamu tidak wajib punya akun. Saran: jawab dulu sendiri, baru minta AI memberi petunjuk bertahap; kode buatan AI dibaca, dijalankan, dan diuji. Setiap soal `Latihan` bertanda `AI: boleh` atau `AI: tanpa AI`.
 
-Catatan untuk guru: semua blok Python dijalankan penyusun dengan `python3 -I` (Python 3.12.3) dan keluarannya ditempel apa adanya; data curah hujan karangan. Karena `-I` tidak menaruh folder skrip pada jalur impor, contoh di sini berdiri sendiri dalam satu berkas.
+Catatan untuk guru: semua blok Python dijalankan penyusun dengan `python3 -I` (Python 3.12.3, per 2026-11) dan keluarannya ditempel apa adanya; data curah hujan karangan. Karena `-I` tidak menaruh folder skrip pada jalur impor, contoh di sini berdiri sendiri dalam satu berkas.
 
 ## Ingat kembali
 

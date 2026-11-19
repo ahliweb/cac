@@ -262,11 +262,10 @@ diterima 4, ditolak 1
 
 Telusuri hasilnya. Pesan kedua mulanya `S,285,2150` dengan jumlah 530, yaitu 18 atau `12`. Satu digit berubah (`5` menjadi `6`, kode naik 1), sehingga isi yang diterima berjumlah 19 (`13`), berbeda dari `12`: **ditolak**. Derau `xx#` sebelum `$` diabaikan, dan `$S,28` yang terputus dibuang oleh `$` berikutnya, jadi pesan ketiga dan keempat diterima. Pesan kelima menunjukkan **batas jumlah periksa**: `281` yang menjadi `218` memiliki jumlah yang sama, karena penjumlahan tidak peduli urutan, sehingga pesan **diterima dengan nilai yang salah**. Jumlah periksa menangkap banyak galat acak, tetapi tidak semua: penukaran karakter dan galat yang saling meniadakan lolos. Jumlah periksa juga **bukan keamanan**: siapa pun dapat menghitungnya dan memalsukan pesan (dibahas di `c-xi2-m2`); fungsinya hanya mendeteksi kerusakan tak sengaja. Hasil ini berasal dari aliran karangan di komputer; derau sungguhan dan waktu belum teruji.
 
-Sketsa pengirim di bawah memakai fungsi yang sama untuk papan A. Penerimanya adalah gabungan `terima` dan `periksaPesan` di atas dengan `Serial2.read()` seperti pada `c-xi1-m10`. Ia hanya diperiksa sintaksnya terhadap header tiruan, tidak dijalankan pada papan. Baris `extern` ada karena header tiruan belum mengenal `Serial2`.
+Sketsa pengirim di bawah memakai fungsi yang sama untuk papan A. Penerimanya adalah gabungan `terima` dan `periksaPesan` di atas dengan `Serial2.read()` seperti pada `c-xi1-m10`. Ia hanya diperiksa sintaksnya terhadap header tiruan, tidak dijalankan pada papan.
 
 ```arduino
 // Arduino-C++ untuk ESP32, papan A (pengirim). Diperiksa check:module-code terhadap header tiruan (sintaks dan tipe saja, bukan bukti perilaku papan).
-extern HardwareSerial Serial2;  // sudah ada di inti Arduino-ESP32; ditulis agar header tiruan menerimanya
 
 const int PIN_SUHU = 34;                 // contoh; periksa papanmu
 const int PIN_CAHAYA = 35;               // contoh; periksa papanmu
