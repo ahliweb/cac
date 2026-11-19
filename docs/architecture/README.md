@@ -26,7 +26,7 @@ data/<program>/*.json  --->  src/schema/  --->  src/domain/  --->  src/render/
    references, assessment model, KPI definitions, playbooks, and more),
    `data/sma-coding/` (8 files plus the optional `modules.json`, syllabus v1.4.0),
    `data/tk-coding/` (7, v1.0.1), `data/kuliah-coding/` (6, v1.2.0),
-   `data/dewasa-coding/` (8, v1.2.0), `data/sd-coding/` (5, v1.0.2) and
+   `data/dewasa-coding/` (8, v1.2.0), `data/sd-coding/` (5, v1.1.0) and
    `data/smp-coding/` (7, v1.2.0), each transcribed from the programme's
    approved `docs/programs/<id>/silabus.md` (CP elements, tracks or levels,
    structure, weekly or module plan, CP mapping, bridges).

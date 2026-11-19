@@ -1,9 +1,9 @@
-# Silabus Pembelajaran Coding SD — v1.0
+# Silabus Pembelajaran Coding SD — v1.1
 
-- **Version:** v1.0.2
+- **Version:** v1.1.0
 - **Last updated:** 2026-11-19
-- **Status:** DISETUJUI pemilik program, 2026-11-19 — kelas 1-6, beserta rekomendasi penyusun atas ketujuh pertanyaan terbuka (issue #128); menjadi sumber corpus `data/sd-coding/` (ADR-0006, ADR-0008). Modul pendamping tidak termasuk persetujuan ini.
-- **Changeset:** Silabus v1.0 disetujui pemilik: draf v0.1.0 menjadi silabus berstatus disetujui, pertanyaan terbuka diganti keputusan pemilik (bagian 13), kutipan CP Fase C dicocokkan ulang dan diganti dengan teks SK Kepala BSKAP 046/H/KR/2025 (bagian 1.2-1.4). Revisi patch v1.0.1 (#165): kalimat status yang basi; isi kurikulum tidak berubah.
+- **Status:** DISETUJUI pemilik program, 2026-11-19 — kelas 1-6, beserta rekomendasi penyusun atas ketujuh pertanyaan terbuka (issue #128); menjadi sumber corpus `data/sd-coding/` (ADR-0006, ADR-0008). Revisi v1.1.0 (jembatan dari TK dan ke SMP, bagian 7) disetujui pemilik pada 2026-11-19 lewat keputusan #177 (seluruh rekomendasi K1 sampai K8). Modul pendamping tidak termasuk persetujuan ini.
+- **Changeset:** Silabus v1.0 disetujui pemilik: draf v0.1.0 menjadi silabus berstatus disetujui, pertanyaan terbuka diganti keputusan pemilik (bagian 13), kutipan CP Fase C dicocokkan ulang dan diganti dengan teks SK Kepala BSKAP 046/H/KR/2025 (bagian 1.2-1.4). Revisi patch v1.0.1 (#165): kalimat status yang basi; isi kurikulum tidak berubah. Revisi minor v1.1.0 (#177): bagian 7 diganti: jembatan menjadi penempatan di dalam kelas dan bukan rantai prasyarat (tidak satu pun program mewajibkan program tetangganya); 7.1: dua sampai tiga minggu pertama kelas 1 sebagai pengamatan lewat permainan rute, tanpa tes dan tanpa nilai angka, jalur padat di kelas yang sama, aturan keamanan tidak dipadatkan; 7.2: menyatakan apa yang tidak dijamin kelas 5-6 (perulangan, percabangan, variabel, blok) dan menunjuk minggu opsional tempat konsepnya diajarkan; rencana minggu, CP, dan jam tidak berubah.
 
 > **Disetujui pemilik program pada 2026-11-19** (keputusan lewat dialog
 > pilihan, dicatat di issue #128 dan bagian 13), beserta rekomendasi
@@ -462,35 +462,19 @@ pembagian materi di sumber: kelas 6 memuat materi lanjutan tiap elemen).
 
 ## 7. Jembatan dari TK dan ke SMP
 
-Program `tk-coding` dan `smp-coding` disusun paralel; silabus keduanya kini
-ada di repositori ini dan disetujui pemilik (2026-11-19), tetapi bagian ini
-disusun sebelum keduanya dibaca: ia hanya menyatakan kemampuan masuk dan
-keluaran yang diharapkan `[asumsi]` dan harus diselaraskan dengan keduanya.
+Program `tk-coding` dan `smp-coding` disetujui pemilik (2026-11-19) dan sudah dibaca untuk menyelaraskan bagian ini (keputusan pemilik 5, bagian 13). Hasil pembacaan: tidak satu pun dari ketiga program mewajibkan program tetangganya. TK tidak wajib bagi murid SD, kelas 1-4 SD berupa pengenalan opsional dan kelas 5-6 mata pelajaran pilihan, dan bentuk program SMP ditentukan sekolah (`smp-coding` bagian 2). Maka jembatan di bawah adalah penempatan di dalam kelas dan bukan rantai prasyarat `[asumsi]`.
 
 ### 7.1 Dari TK (`tk-coding`) ke kelas 1
 
-Prasyarat yang diasumsikan: mengikuti perintah satu atau dua langkah,
-mengurutkan tiga kartu gambar, mengelompokkan benda menurut satu sifat,
-dan bersikap baik pada teman. Kegiatan kelas 1 semester 1 mengulang
-dasar-dasar itu tanpa menganggapnya sudah dikuasai. Bila TK memakai istilah
-atau simbol tertentu, kelas 1 menyepakati simbol bersama di awal tahun.
+Tidak ada prasyarat yang wajib; kelas 1 dirancang untuk murid dengan maupun tanpa latar TK B. Keluaran akhir TK B (`TK-B1-M1` sampai `TK-B2-M12`) mencakup dan melampaui kemampuan masuk yang semula diasumsikan di sini (perintah satu atau dua langkah, mengurutkan tiga kartu, mengelompokkan menurut satu sifat), dan kegiatan `SD1-1-M1` sampai `SD1-1-M10` serta `SD1-2-M1` sampai `SD1-2-M3` banyak yang sama dengan kegiatan TK B: `TK-B1-M5` dan `SD1-1-M8` sama-sama "ulangi dua kali", `TK-B1-M11` dan `SD1-1-M13` sama-sama peta harta, `TK-B1-M6` dan `SD1-2-M11` sama-sama bagian lagu yang berulang. Karena itu dua sampai tiga minggu pertama kelas 1 dipakai guru untuk mengamati lewat permainan rute (bentuknya seperti `SD1-1-M12`), dengan ceklis "terlihat" dan "belum terlihat" per kegiatan; tanpa tes, tanpa nilai angka, dan tanpa catatan di repositori ini (ADR-0004). Murid yang terlihat menguasai kegiatan suatu minggu tidak mengulangnya: ia memimpin permainan atau mengerjakan tantangan lanjutan setingkat `SD2-1-M1` sampai `SD2-1-M3`; murid yang belum terlihat mengikuti urutan penuh, dan minggu cadangan kelas 1 (delapan dari 36 minggu, bagian 2) boleh dipakai untuk penguatan. Kegiatan aturan keamanan perangkat dan rahasia pribadi (`SD1-2-M8`, `SD1-2-M9`) tidak dipadatkan bagi siapa pun. Bila TK memakai simbol arah dan kata "ulang" tertentu, kelas 1 memakainya; bila tidak, kelas 1 menyepakati simbol bersama di awal tahun (keputusan pemilik 5, butir (b)). Dasar `[asumsi]`: efek keahlian terbalik dan latihan berjarak (`docs/riset/ilmu-belajar-kognitif.md` bagian 3.2 dan 3.4); pengamatan, bukan tes, mengikuti `tk-coding` bagian 6.1.
 
 ### 7.2 Dari kelas 6 ke SMP (`smp-coding`)
 
-Keluaran yang diharapkan di akhir kelas 6: menulis instruksi logis
-dengan simbol, menguji dan memperbaikinya, menjelaskan masukan-proses-keluaran,
-menjaga informasi pribadi, membedakan mesin cerdas dan non-cerdas,
-menjelaskan bahwa KA belajar dari data dan bisa keliru. Informatika baru
-menjadi mata pelajaran di SMP (riset bagian 4), dan panduan kodingka
-menyebut SMP mengenalkan pemrograman blok dan konsep KA sederhana (riset
-bagian 2.2). Karena itu `sd-coding` **tidak mengajarkan sintaks
-pemrograman**; blok visual hanya opsi di kelas 6 (bagian 11). Keputusan
-pemilik 5 (bagian 13) mengatur penyelarasan.
+Keluaran yang diharapkan di akhir kelas 6 (daftar "sudah bisa" di `SD6-2-M14`): menulis instruksi logis dengan simbol, menguji dan memperbaikinya, menjelaskan masukan-proses-keluaran, menjaga informasi pribadi, membedakan mesin cerdas dan non-cerdas, menjelaskan bahwa KA belajar dari data dan bisa keliru. Yang tidak dijamin oleh kelas 5-6 (inti Fase C): perulangan, percabangan, dan variabel hanya dibahas di kelas 2-4 yang opsional (`SD2-1-M3`, `SD2-1-M8`, `SD3-1-M3` sampai `SD3-1-M6`, `SD4-1-M6`, `SD4-1-M7`), dan blok visual hanya opsi di `SD6-1-M9` dan `SD6-1-M10`. Informatika baru menjadi mata pelajaran di SMP (riset bagian 4), dan panduan kodingka menyebut SMP mengenalkan pemrograman blok dan konsep KA sederhana (riset bagian 2.2). Karena itu `sd-coding` tidak mengajarkan sintaks pemrograman, dan murid yang masuk SMP hanya dengan kelas 5-6 belum mengenal perulangan, percabangan, ataupun blok, sedangkan murid yang mengikuti kelas 2-4 mengenal konsepnya tanpa layar tetapi belum mengenal Scratch. `smp-coding` bagian 5.1 menyesuaikan diri: tidak mengasumsikan blok, memadatkan hanya minggu tanpa layar, dan memakai `SMP7-1-M1` sebagai pengamatan awal dengan daftar "sudah bisa" ini sebagai bahan. Kegiatan KA kelas 5-6 (`SD5-2-M5` sampai `SD5-2-M8`, `SD6-2-M4`) diulang di `SMP9-2-M8` sampai `SMP9-2-M10` dengan tuntutan lebih tinggi (kualitas data, bias, halusinasi), bukan sebagai pengulangan yang sama.
 
 ### 7.3 Ke SMA
 
-Jembatan tidak langsung: SD, SMP, lalu program `sma-coding` (jalur A dan
-seterusnya). Tidak ada jembatan SD ke SMA di silabus ini.
+Jembatan tidak langsung: SD, SMP, lalu program `sma-coding` (jalur A dan seterusnya). Tidak ada jembatan SD ke SMA di silabus ini.
 
 ## 8. Jembatan opsional ke OSN
 
@@ -622,7 +606,7 @@ Kepala BSKAP 046/H/KR/2025 sebelum dikodekan. Syarat itu dipenuhi pada
 | 2 | Cakupan kelas. | (a) hanya kelas 5-6 (sesuai KKA); (b) kelas 4-6 (kelas 4 jembatan); (c) kelas 1-6 dengan kelas 1-4 sebagai pengantar opsional (seperti draf ini). | (c). Kelas 1-4 ditandai opsional dan di luar CP. |
 | 3 | Alat kelas 5-6. | (a) unplugged saja; (b) unplugged inti + blok visual opsional kelas 6; (c) berlayar penuh. | (b). Bagian 11. |
 | 4 | Cara kelas 1-4 diselenggarakan. | (a) muatan lokal teknologi; (b) ekstrakurikuler; (c) terintegrasi ke mapel lain; (d) netral, keputusan sekolah. | (d). Silabus ini tidak mengunci keputusan sekolah; (a) layak ditawarkan sebagai contoh karena muatan lokal "teknologi" tercantum di peraturan. |
-| 5 | Penyelarasan dengan `tk-coding` dan `smp-coding`. | (a) selaraskan setelah ketiganya berstatus draf; (b) tetapkan kosakata dan simbol bersama lebih dulu; (c) biarkan masing-masing mandiri. | (a), lalu (b) untuk simbol arah dan kosakata instruksi. Penyelarasan dikerjakan ketika `tk-coding` dan `smp-coding` tersedia. |
+| 5 | Penyelarasan dengan `tk-coding` dan `smp-coding`. | (a) selaraskan setelah ketiganya berstatus draf; (b) tetapkan kosakata dan simbol bersama lebih dulu; (c) biarkan masing-masing mandiri. | (a), lalu (b) untuk simbol arah dan kosakata instruksi. Penyelarasan dikerjakan ketika `tk-coding` dan `smp-coding` tersedia: dilakukan di v1.1.0 (keputusan pemilik #177, bagian 7). |
 | 6 | Jembatan OSN dan kompetisi. | (a) tidak ada (draf ini); (b) riset kompetisi komputasi tingkat SD bila ada; (c) pengayaan tanpa label. | (a), dengan (c) sudah ada di kelas 3. Jembatan OSN tidak dikarang. |
 | 7 | Dukungan guru kelas. | (a) panduan guru dan lembar kerja menjadi modul draf di `content/` kelak; (b) hanya silabus; (c) bergantung pada pelatihan resmi. | (a) kelak (ADR-0007: modul berstatus draf). Modul belum ada dan tidak termasuk persetujuan ini. |
 
@@ -657,4 +641,5 @@ Dengan persetujuan ini program `sd-coding` didaftarkan di
 | v1.0.0 | 2026-11-19 | Disetujui pemilik beserta rekomendasi penyusun (issue #128); pertanyaan terbuka diganti keputusan (bagian 13); kutipan CP Fase C dicocokkan dengan SK 046/H/KR/2025 dan dikoreksi (bagian 1.2-1.4, 4); rencana mingguan tidak diubah. |
 | v1.0.1 | 2026-11-19 | Revisi patch: kalimat status, keputusan pemilik #165; isi kurikulum tidak berubah. |
 | v1.0.2 | 2026-11-19 | Revisi patch: status verifikasi sumber (SK 046, SKKNI 282/2016); isi kurikulum lain tidak berubah. |
+| v1.1.0 | 2026-11-19 | Revisi minor yang disetujui pemilik lewat keputusan #177: bagian 7 (jembatan dari TK dan ke SMP) diselaraskan dengan `tk-coding` dan `smp-coding` yang sudah dibaca: penempatan di dalam kelas (pengamatan awal tanpa tes, jalur padat di kelas yang sama, aturan keamanan tidak dipadatkan); 7.2 menyatakan yang tidak dijamin kelas 5-6 (perulangan, percabangan, variabel, blok visual) dan minggu opsional tempat konsepnya diajarkan; rencana minggu, CP, dan jam tidak berubah (#177). |
 | v0.1.0 | 2026-11-19 | Draf awal (issue #128), status DRAF. |

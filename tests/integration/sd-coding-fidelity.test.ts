@@ -78,7 +78,7 @@ describe("sd-coding fidelity: data/sd-coding vs. the approved silabus", () => {
 
   test("the registry entry exists and carries the document's version and date", () => {
     expect(sdEntry).toBeDefined();
-    expect(sdEntry?.syllabusVersion).toBe("1.0.2");
+    expect(sdEntry?.syllabusVersion).toBe("1.1.0");
     expect(sdEntry?.syllabusDate).toBe("2026-11-19");
   });
 
@@ -121,6 +121,25 @@ describe("sd-coding fidelity: data/sd-coding vs. the approved silabus", () => {
     expect(weeks.find((w) => w.id === "SD6-1-M9")?.topic).toBe(
       "`[penguatan]` `[opsi layar]` Instruksi di layar dengan blok",
     );
+  });
+});
+
+describe("sd-coding fidelity: v1.1 bridges (#177)", () => {
+  test("the bridges are placement in the class, not a prerequisite chain, and name what is not guaranteed", () => {
+    const expected = expectedCorpus(markdown) as Record<string, Json>;
+    const file = expected["bridges.json"];
+    expect(file.intro).toContain(
+      "tidak satu pun dari ketiga program mewajibkan program tetangganya",
+    );
+    expect(file.intro).not.toContain("disusun sebelum keduanya dibaca");
+    const [fromTk, toSmp, toSma] = file.bridges;
+    expect(fromTk.id).toBe("tk-ke-kelas-1");
+    expect(fromTk.text).toContain("tanpa tes, tanpa nilai angka");
+    expect(fromTk.text).toContain("`SD1-2-M8`, `SD1-2-M9`) tidak dipadatkan");
+    expect(toSmp.id).toBe("kelas-6-ke-smp");
+    expect(toSmp.text).toContain("Yang tidak dijamin oleh kelas 5-6");
+    expect(toSmp.text).toContain("`SD6-1-M9` dan `SD6-1-M10`");
+    expect(toSma.id).toBe("ke-sma");
   });
 });
 
