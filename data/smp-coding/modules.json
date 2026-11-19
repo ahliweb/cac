@@ -757,6 +757,172 @@
         }
       ],
       "contentPath": "content/smp-coding/modules/smp8-1-m7.md"
+    },
+    {
+      "id": "smp8-1-m8",
+      "title": "Prediksi dari data",
+      "weekCodes": ["SMP8-1-M8"],
+      "cpCodes": ["D-BK-d", "DK-BK-a"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["SMP8-1-M7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "LibreOffice Help (bantuan resmi LibreOffice)",
+          "url": "https://help.libreoffice.org/"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-1-m8.md"
+    },
+    {
+      "id": "smp8-1-m9",
+      "title": "Translasi konsep ke bahasa blok lain",
+      "weekCodes": ["SMP8-1-M9"],
+      "cpCodes": ["D-BK-e"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["SMP7-1-M5", "SMP7-1-M8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        },
+        {
+          "title": "Tentang MakeCode (situs resmi Microsoft MakeCode)",
+          "url": "https://makecode.microbit.org/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-1-m9.md"
+    },
+    {
+      "id": "smp8-1-m10",
+      "title": "Masukan dan keluaran perangkat (simulator)",
+      "weekCodes": ["SMP8-1-M10"],
+      "cpCodes": ["D-LD-f", "D-BK-e"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["SMP8-1-M9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang MakeCode (situs resmi Microsoft MakeCode)",
+          "url": "https://makecode.microbit.org/about"
+        },
+        {
+          "title": "micro:bit user guide: Introduction (Micro:bit Educational Foundation)",
+          "url": "https://microbit.org/get-started/user-guide/overview/"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-1-m10.md"
+    },
+    {
+      "id": "smp8-1-m11",
+      "title": "Proyek perangkat: alarm atau penghitung langkah (simulator; papan fisik opsional)",
+      "weekCodes": ["SMP8-1-M11"],
+      "cpCodes": ["D-BK-e", "DK-BK-c", "DK-BK-b"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["SMP8-1-M10", "SMP7-1-M11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang MakeCode (situs resmi Microsoft MakeCode)",
+          "url": "https://makecode.microbit.org/about"
+        },
+        {
+          "title": "micro:bit user guide: Introduction (Micro:bit Educational Foundation)",
+          "url": "https://microbit.org/get-started/user-guide/overview/"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-1-m11.md"
+    },
+    {
+      "id": "smp8-1-m12",
+      "title": "Jaringan lokal, ponsel, dan internet",
+      "weekCodes": ["SMP8-1-M12"],
+      "cpCodes": ["D-LD-g"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["SMP7-2-M10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-1-m12.md"
+    },
+    {
+      "id": "smp8-1-m13",
+      "title": "Proyek mini: simulasi atau perangkat lintas bidang",
+      "weekCodes": ["SMP8-1-M13"],
+      "cpCodes": ["D-BK-a", "DK-BK-b"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["SMP8-1-M4", "SMP8-1-M11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        },
+        {
+          "title": "Tentang MakeCode (situs resmi Microsoft MakeCode)",
+          "url": "https://makecode.microbit.org/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-1-m13.md"
+    },
+    {
+      "id": "smp8-1-m14",
+      "title": "Asesmen dan refleksi",
+      "weekCodes": ["SMP8-1-M14"],
+      "cpCodes": ["D-BK-a", "D-BK-d", "DK-BK-a"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["SMP8-1-M13"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-1-m14.md"
     }
   ]
 }
