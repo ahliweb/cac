@@ -5,10 +5,13 @@
  * (bagian 5.2) claims about how `PRO` modules touch them.
  *
  * Owner decision 2026-11-19: the mapping goes only down to the unit
- * *title*, and the copy of the list is marked as not verified against the
- * official file. Both facts are data here (`mappingDepth`, and
- * `verification` on every unit) so no reader can mistake a touched unit for
- * a certified competence.
+ * *title*. The verification status of the list is data too (`mappingDepth`,
+ * and `verification` on every unit) so no reader can mistake a touched unit
+ * for a certified competence. The list was first a copy from a scanned LSP
+ * file (`salinan-belum-terverifikasi`); on 2026-11-19 every code and title
+ * was matched word for word against the official JDIH Kemnaker annex
+ * (`judul-cocok-lampiran-resmi`). The old value stays in the enum so history
+ * remains valid.
  */
 
 import { z } from "zod";
@@ -19,7 +22,10 @@ import { dwProvenanceShape, dwSkkniUnitCodeSchema } from "./dw-common";
 export const DW_SKKNI_MAPPING_DEPTHS = ["judul-unit"] as const;
 
 /** Whether a unit entry was checked against the official file. */
-export const DW_SKKNI_VERIFICATIONS = ["salinan-belum-terverifikasi"] as const;
+export const DW_SKKNI_VERIFICATIONS = [
+  "salinan-belum-terverifikasi",
+  "judul-cocok-lampiran-resmi",
+] as const;
 
 export const dwSkkniUnitSchema = z
   .object({
@@ -28,7 +34,11 @@ export const dwSkkniUnitSchema = z
     verification: z
       .enum(DW_SKKNI_VERIFICATIONS)
       .describe(
-        '"salinan-belum-terverifikasi": copied from a scanned copy, not the official file.',
+        '"salinan-belum-terverifikasi": copied from a scanned copy, not the official file. ' +
+          '"judul-cocok-lampiran-resmi": the title was matched word for word against the ' +
+          "official JDIH Kemnaker annex (sha256 8f050a74013ba21e3a311ad7ac6c74dd92a547eae5deba012a5ff33c7c548e88), " +
+          "2026-11-19; code suffixes are inconsistent across parts of the official file, " +
+          "so the suffix follows the bab II.B list.",
       ),
   })
   .strict();

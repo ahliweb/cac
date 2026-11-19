@@ -25,6 +25,7 @@ import {
   type CorpusSource,
   DATA_FILE_REGISTRY,
 } from "../domain/corpus-audit";
+import type { CrossProgramCodes } from "../domain/cross-program-refs";
 import { auditDewasaCorpus, DW_DATA_FILE_REGISTRY } from "../domain/dw-corpus-audit";
 import { auditKulCorpus, KUL_DATA_FILE_REGISTRY } from "../domain/kul-corpus-audit";
 import {
@@ -34,16 +35,22 @@ import {
   parseModulesIndex,
 } from "../domain/modules";
 import { REGISTRY_FILE_NAME } from "../domain/programs";
+import { auditSdCorpus, SD_DATA_FILE_REGISTRY } from "../domain/sd-corpus-audit";
 import { auditSmaCorpus, SMA_DATA_FILE_REGISTRY } from "../domain/sma-corpus-audit";
+import { auditSmpCorpus, SMP_DATA_FILE_REGISTRY } from "../domain/smp-corpus-audit";
 import { auditTkCorpus, TK_DATA_FILE_REGISTRY } from "../domain/tk-corpus-audit";
 import { DEWASA_CODING_PROGRAM_ID } from "../schema/dw-common";
 import { KUL_PROGRAM_ID } from "../schema/kul-common";
 import type { Program } from "../schema/program";
+import { SD_CODING_PROGRAM_ID } from "../schema/sd-common";
 import { SMA_CODING_PROGRAM_ID } from "../schema/sma-common";
+import { SMP_CODING_PROGRAM_ID } from "../schema/smp-common";
 import { TK_CODING_PROGRAM_ID } from "../schema/tk-common";
 import { dewasaCodingFidelity } from "./fidelity/dewasa-coding";
 import { kuliahCodingFidelity } from "./fidelity/kuliah-coding";
+import { sdCodingFidelity } from "./fidelity/sd-coding";
 import { smaCodingFidelity } from "./fidelity/sma-coding";
+import { smpCodingFidelity } from "./fidelity/smp-coding";
 import { tkCodingFidelity } from "./fidelity/tk-coding";
 import type { FidelityModule } from "./fidelity/types";
 
@@ -51,6 +58,8 @@ import type { FidelityModule } from "./fidelity/types";
 export interface ProgramAuditContext {
   /** Ids in `data/osn/topic-families.json` (only loaded when the module sets `needsOsnTopicFamilyIds`). */
   readonly osnTopicFamilyIds?: ReadonlySet<string> | undefined;
+  /** Week, course and module codes of the registered programmes (only loaded when the module sets `crossProgramScan`; ADR-0010). */
+  readonly crossProgramCodes?: CrossProgramCodes | undefined;
 }
 
 /** One data file of a programme's corpus and the schema it must parse against. */
@@ -78,6 +87,12 @@ export interface ProgramModule {
   readonly moduleFindings: (source: CorpusSource, context: ProgramAuditContext) => CorpusFinding[];
   /** Optional check of the corpus against the approved source document, run by `bun run check:fidelity`. */
   readonly fidelity?: FidelityModule;
+  /**
+   * Data files of this programme (bridge tables) whose string values are
+   * scanned for week, course and module codes of any programme, each of
+   * which must exist in the corpus it belongs to (ADR-0010).
+   */
+  readonly crossProgramScan?: readonly string[];
 }
 
 function moduleOptions(context: ProgramAuditContext): ModuleFindingsOptions {
@@ -99,10 +114,12 @@ export const PROGRAM_MODULES: readonly ProgramModule[] = [
     dataFiles: KUL_DATA_FILE_REGISTRY,
     audit: (source) => auditKulCorpus(source),
     needsOsnTopicFamilyIds: false,
-    // No learner modules yet (ADR-0007): no modules.json, no content/kuliah-coding/.
-    parseModulesIndex: () => ({ modules: undefined, findings: [] }),
-    moduleFindings: () => [],
+    // modules.json is optional (ADR-0007); its own schema is src/schema/kul-module.ts.
+    parseModulesIndex: (source) => parseModulesIndex(source, KUL_PROGRAM_ID),
+    moduleFindings: (source, context) =>
+      moduleFindings(source, KUL_PROGRAM_ID, moduleOptions(context)),
     fidelity: kuliahCodingFidelity,
+    crossProgramScan: ["bridges.json"],
   },
   {
     id: SMA_CODING_PROGRAM_ID,
@@ -113,26 +130,56 @@ export const PROGRAM_MODULES: readonly ProgramModule[] = [
     moduleFindings: (source, context) =>
       moduleFindings(source, SMA_CODING_PROGRAM_ID, moduleOptions(context)),
     fidelity: smaCodingFidelity,
+    crossProgramScan: ["smp-bridge.json"],
   },
   {
     id: TK_CODING_PROGRAM_ID,
     dataFiles: TK_DATA_FILE_REGISTRY,
     audit: (source) => auditTkCorpus(source),
     needsOsnTopicFamilyIds: false,
-    // tk-coding has no learning-module index (no modules.json); a stray one is an unregistered file.
-    parseModulesIndex: () => ({ modules: undefined, findings: [] }),
-    moduleFindings: () => [],
+    // modules.json is optional (ADR-0007); its own schema is src/schema/tk-module.ts.
+    parseModulesIndex: (source) => parseModulesIndex(source, TK_CODING_PROGRAM_ID),
+    moduleFindings: (source, context) =>
+      moduleFindings(source, TK_CODING_PROGRAM_ID, moduleOptions(context)),
     fidelity: tkCodingFidelity,
+    crossProgramScan: ["bridge.json"],
   },
   {
     id: DEWASA_CODING_PROGRAM_ID,
     dataFiles: DW_DATA_FILE_REGISTRY,
     audit: (source) => auditDewasaCorpus(source),
     needsOsnTopicFamilyIds: false,
-    // No ADR-0007 learning-content index yet (the module plan is module-plan.json).
-    parseModulesIndex: () => ({ modules: undefined, findings: [] }),
-    moduleFindings: () => [],
+    // modules.json is the optional ADR-0007 content index (src/schema/dw-learning-module.ts);
+    // the syllabus's own module table is module-plan.json.
+    parseModulesIndex: (source) => parseModulesIndex(source, DEWASA_CODING_PROGRAM_ID),
+    moduleFindings: (source, context) =>
+      moduleFindings(source, DEWASA_CODING_PROGRAM_ID, moduleOptions(context)),
     fidelity: dewasaCodingFidelity,
+    crossProgramScan: ["bridges.json", "kuliah-bridge.json"],
+  },
+  {
+    id: SD_CODING_PROGRAM_ID,
+    dataFiles: SD_DATA_FILE_REGISTRY,
+    audit: (source) => auditSdCorpus(source),
+    needsOsnTopicFamilyIds: false,
+    // modules.json is optional (ADR-0007); its own schema is src/schema/sd-module.ts.
+    parseModulesIndex: (source) => parseModulesIndex(source, SD_CODING_PROGRAM_ID),
+    moduleFindings: (source, context) =>
+      moduleFindings(source, SD_CODING_PROGRAM_ID, moduleOptions(context)),
+    fidelity: sdCodingFidelity,
+    crossProgramScan: ["bridges.json"],
+  },
+  {
+    id: SMP_CODING_PROGRAM_ID,
+    dataFiles: SMP_DATA_FILE_REGISTRY,
+    audit: (source) => auditSmpCorpus(source),
+    needsOsnTopicFamilyIds: false,
+    // modules.json is optional (ADR-0007); its own schema is src/schema/smp-module.ts.
+    parseModulesIndex: (source) => parseModulesIndex(source, SMP_CODING_PROGRAM_ID),
+    moduleFindings: (source, context) =>
+      moduleFindings(source, SMP_CODING_PROGRAM_ID, moduleOptions(context)),
+    fidelity: smpCodingFidelity,
+    crossProgramScan: ["bridge.json"],
   },
 ];
 

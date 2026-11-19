@@ -34,6 +34,10 @@
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "The Open Source Definition (Open Source Initiative)",
+          "url": "https://opensource.org/osd"
         }
       ],
       "contentPath": "content/sma-coding/modules/fondasi-software-dan-sistem-operasi.md"
@@ -72,6 +76,14 @@
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "RFC 5737: IPv4 Address Blocks Reserved for Documentation (IETF)",
+          "url": "https://www.rfc-editor.org/rfc/rfc5737"
+        },
+        {
+          "title": "RFC 2606: Reserved Top Level DNS Names (IETF)",
+          "url": "https://www.rfc-editor.org/rfc/rfc2606"
         }
       ],
       "contentPath": "content/sma-coding/modules/fondasi-jaringan-dan-internet.md"
@@ -91,6 +103,10 @@
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "NIST Special Publication 800-63B: Digital Identity Guidelines, Authentication and Authenticator Management",
+          "url": "https://pages.nist.gov/800-63-4/sp800-63b.html"
         }
       ],
       "contentPath": "content/sma-coding/modules/fondasi-keamanan-dasar.md"
@@ -110,6 +126,10 @@
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Web Content Accessibility Guidelines (WCAG) 2.2, kriteria 1.4.3 Contrast (Minimum) (W3C)",
+          "url": "https://www.w3.org/TR/WCAG22/#contrast-minimum"
         }
       ],
       "contentPath": "content/sma-coding/modules/fondasi-perangkat-produktivitas.md"
@@ -148,6 +168,14 @@
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Arithmetic operators, bagian Overflows (cppreference.com)",
+          "url": "https://en.cppreference.com/w/cpp/language/operator_arithmetic"
+        },
+        {
+          "title": "Number.MAX_SAFE_INTEGER (MDN Web Docs)",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER"
         }
       ],
       "contentPath": "content/sma-coding/modules/matkom-bilangan-bertanda-dan-luapan.md"
@@ -167,6 +195,10 @@
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "RFC 3629: UTF-8, a transformation format of ISO 10646 (IETF)",
+          "url": "https://www.rfc-editor.org/rfc/rfc3629"
         }
       ],
       "contentPath": "content/sma-coding/modules/matkom-teks-gambar-suara.md"
@@ -300,6 +332,10 @@
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "AWS, Regions and Availability Zones (contoh bertanggal, dibuka 2026-11-19)",
+          "url": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
         }
       ],
       "contentPath": "content/sma-coding/modules/cloud-layanan-dan-region.md"
@@ -361,6 +397,14 @@
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "UU Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi (JDIH BPK)",
+          "url": "https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022"
+        },
+        {
+          "title": "ITU-T X.1631, kontrol keamanan informasi untuk layanan cloud (kembaran ISO/IEC 27017)",
+          "url": "https://www.itu.int/rec/T-REC-X.1631"
         }
       ],
       "contentPath": "content/sma-coding/modules/cloud-keamanan-dan-privasi.md"
@@ -407,6 +451,22 @@
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Wineburg dan McGrew (2019), Lateral Reading and the Nature of Expertise, Teachers College Record 121(11)",
+          "url": "https://doi.org/10.1177/016146811912101102"
+        },
+        {
+          "title": "Breakstone dkk. (2021), Lateral reading: College students learn to critically evaluate internet sources in an online course, Harvard Kennedy School Misinformation Review",
+          "url": "https://doi.org/10.37016/mr-2020-56"
+        },
+        {
+          "title": "Wineburg dkk. (2022), Lateral reading on the open Internet: A district-wide field study in high school government classes, Journal of Educational Psychology 114(5) (hanya judul yang diverifikasi)",
+          "url": "https://doi.org/10.1037/edu0000740"
+        },
+        {
+          "title": "Vosoughi, Roy, dan Aral (2018), The spread of true and false news online, Science 359",
+          "url": "https://doi.org/10.1126/science.aap9559"
         }
       ],
       "contentPath": "content/sma-coding/modules/pendamping-periksa-fakta-dan-baca-lateral.md"
@@ -483,6 +543,14 @@
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "RFC 5737, IPv4 Address Blocks Reserved for Documentation",
+          "url": "https://www.rfc-editor.org/rfc/rfc5737"
+        },
+        {
+          "title": "RFC 2606, Reserved Top Level DNS Names",
+          "url": "https://www.rfc-editor.org/rfc/rfc2606"
         }
       ],
       "contentPath": "content/sma-coding/modules/pendamping-model-jaringan-dan-troubleshooting.md"
@@ -502,6 +570,14 @@
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Zuiderveen Borgesius dkk. (2016), Should we worry about filter bubbles?, Internet Policy Review 5(1)",
+          "url": "https://doi.org/10.14763/2016.1.401"
+        },
+        {
+          "title": "Nyhan dkk. (2023), Like-minded sources on Facebook are prevalent but not polarizing, Nature",
+          "url": "https://doi.org/10.1038/s41586-023-06297-w"
         }
       ],
       "contentPath": "content/sma-coding/modules/pendamping-teknologi-dan-demokrasi.md"
@@ -559,9 +635,5407 @@
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "RFC 5737, IPv4 Address Blocks Reserved for Documentation",
+          "url": "https://www.rfc-editor.org/rfc/rfc5737"
+        },
+        {
+          "title": "RFC 2606, Reserved Top Level DNS Names",
+          "url": "https://www.rfc-editor.org/rfc/rfc2606"
+        },
+        {
+          "title": "UU Nomor 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik (JDIH BPK)",
+          "url": "https://peraturan.bpk.go.id/Details/37589/uu-no-11-tahun-2008"
+        },
+        {
+          "title": "UU Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana (JDIH BPK)",
+          "url": "https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023"
         }
       ],
       "contentPath": "content/sma-coding/modules/pendamping-keamanan-lanjut-konektivitas.md"
+    },
+    {
+      "id": "c-x1-m8",
+      "title": "Mikrokontroler, papan, dan program pertama; keluaran digital",
+      "cpItems": ["E-BK-d", "E-BK-e"],
+      "weekCodes": ["C-X1-M8"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["FND-X1-M1", "FND-X1-M3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: pinMode()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/digital-io/pinMode/"
+        },
+        {
+          "title": "Arduino: digitalWrite()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/digital-io/digitalwrite/"
+        },
+        {
+          "title": "Arduino: delay()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/delay/"
+        },
+        {
+          "title": "Arduino-ESP32 (Espressif)",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x1-m8.md"
+    },
+    {
+      "id": "c-x1-m9",
+      "title": "Masukan digital, percabangan, logika Boolean",
+      "cpItems": ["E-BK-d"],
+      "weekCodes": ["C-X1-M9"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x1-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: pinMode()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/digital-io/pinMode/"
+        },
+        {
+          "title": "Arduino: digitalRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/digital-io/digitalread/"
+        },
+        {
+          "title": "Arduino-ESP32: GPIO (Espressif)",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/gpio.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x1-m9.md"
+    },
+    {
+      "id": "c-x1-m10",
+      "title": "Perulangan dan keluaran serial",
+      "cpItems": ["E-BK-d"],
+      "weekCodes": ["C-X1-M10"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x1-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: Serial.begin()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/communication/serial/begin/"
+        },
+        {
+          "title": "Arduino: Serial.println()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/communication/serial/println/"
+        },
+        {
+          "title": "Arduino: delay()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/delay/"
+        },
+        {
+          "title": "Arduino-ESP32 (Espressif)",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x1-m10.md"
+    },
+    {
+      "id": "c-x1-m11",
+      "title": "Masukan analog dan tipe data",
+      "cpItems": ["E-BK-d"],
+      "weekCodes": ["C-X1-M11"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x1-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: analogRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/"
+        },
+        {
+          "title": "Arduino: map()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/math/map/"
+        },
+        {
+          "title": "Arduino-ESP32: ADC (Espressif)",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/adc.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x1-m11.md"
+    },
+    {
+      "id": "c-x1-m12",
+      "title": "Fungsi dan array",
+      "cpItems": ["E-BK-d"],
+      "weekCodes": ["C-X1-M12"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x1-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: digitalWrite()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/digital-io/digitalwrite/"
+        },
+        {
+          "title": "Arduino: analogRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/"
+        },
+        {
+          "title": "Arduino-ESP32 (Espressif)",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x1-m12.md"
+    },
+    {
+      "id": "c-x1-m13",
+      "title": "Proyek mini (kelas X semester 1)",
+      "cpItems": ["E-BK-d"],
+      "weekCodes": ["C-X1-M13"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: analogRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/"
+        },
+        {
+          "title": "Arduino: digitalWrite()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/digital-io/digitalwrite/"
+        },
+        {
+          "title": "Arduino-ESP32 (Espressif)",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x1-m13.md"
+    },
+    {
+      "id": "c-x1-m14",
+      "title": "Asesmen dan refleksi (termasuk asesmen formatif fondasi)",
+      "cpItems": [],
+      "weekCodes": ["C-X1-M14"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: digitalRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/digital-io/digitalread/"
+        },
+        {
+          "title": "Arduino: map()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/math/map/"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x1-m14.md"
+    },
+    {
+      "id": "c-x2-m1",
+      "title": "Ulasan dan penelusuran galat perangkat",
+      "cpItems": [],
+      "weekCodes": ["C-X2-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: pinMode()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/digital-io/pinMode/"
+        },
+        {
+          "title": "Arduino: digitalRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/digital-io/digitalread/"
+        },
+        {
+          "title": "Arduino: Serial.println()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/communication/serial/println/"
+        },
+        {
+          "title": "Arduino-ESP32 (Espressif)",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x2-m1.md"
+    },
+    {
+      "id": "c-x2-m2",
+      "title": "Sensor suhu dan kelembapan",
+      "cpItems": [],
+      "weekCodes": ["C-X2-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x2-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: Serial.println()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/communication/serial/println/"
+        },
+        {
+          "title": "Arduino-ESP32 (Espressif)",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x2-m2.md"
+    },
+    {
+      "id": "c-x2-m3",
+      "title": "Data berkualitas dari sensor",
+      "cpItems": ["E-BK-b"],
+      "weekCodes": ["C-X2-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x2-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Arduino-ESP32: ADC (Espressif)",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/adc.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x2-m3.md"
+    },
+    {
+      "id": "c-x2-m4",
+      "title": "Array dan rata-rata bergerak",
+      "cpItems": ["E-BK-a", "E-BK-c"],
+      "weekCodes": ["C-X2-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x2-m3", "c-x1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: analogRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/"
+        },
+        {
+          "title": "Arduino: Serial.println()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/communication/serial/println/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x2-m4.md"
+    },
+    {
+      "id": "c-x2-m5",
+      "title": "Keluaran analog (PWM)",
+      "cpItems": [],
+      "weekCodes": ["C-X2-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x2-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: analogWrite()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogWrite/"
+        },
+        {
+          "title": "Arduino: map()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/math/map/"
+        },
+        {
+          "title": "Arduino: constrain()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/math/constrain/"
+        },
+        {
+          "title": "Arduino-ESP32: LED Control (LEDC)",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/ledc.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x2-m5.md"
+    },
+    {
+      "id": "c-x2-m6",
+      "title": "Aktuator: servo dan buzzer",
+      "cpItems": [],
+      "weekCodes": ["C-X2-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x2-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: pustaka Servo",
+          "url": "https://docs.arduino.cc/libraries/servo/"
+        },
+        {
+          "title": "Arduino-ESP32: LED Control (LEDC)",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/ledc.html"
+        },
+        {
+          "title": "Arduino: tone()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/advanced-io/tone/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x2-m6.md"
+    },
+    {
+      "id": "c-x2-m7",
+      "title": "Waktu tanpa delay dan mesin keadaan sederhana",
+      "cpItems": [],
+      "weekCodes": ["C-X2-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x2-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: millis()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/millis/"
+        },
+        {
+          "title": "Arduino: Blink Without Delay",
+          "url": "https://docs.arduino.cc/built-in-examples/digital/BlinkWithoutDelay/"
+        },
+        {
+          "title": "Arduino-ESP32 (Espressif)",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x2-m7.md"
+    },
+    {
+      "id": "c-x2-m8",
+      "title": "Menampilkan data (F)",
+      "cpItems": [],
+      "weekCodes": ["C-X2-M8"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x2-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: Serial.print()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/communication/serial/print/"
+        },
+        {
+          "title": "Arduino: Serial.println()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/communication/serial/println/"
+        },
+        {
+          "title": "Arduino: millis()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/millis/"
+        },
+        {
+          "title": "Arduino IDE 2: Serial Plotter",
+          "url": "https://docs.arduino.cc/software/ide-v2/tutorials/ide-v2-serial-plotter/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x2-m8.md"
+    },
+    {
+      "id": "c-x2-m9",
+      "title": "Struktur data: tumpukan dan antrian sebagai penyangga",
+      "cpItems": ["E-BK-a", "E-BK-c"],
+      "weekCodes": ["C-X2-M9"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x2-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: Array",
+          "url": "https://docs.arduino.cc/language-reference/en/variables/data-types/array/"
+        },
+        {
+          "title": "cppreference: std::queue",
+          "url": "https://en.cppreference.com/w/cpp/container/queue"
+        },
+        {
+          "title": "cppreference: std::stack",
+          "url": "https://en.cppreference.com/w/cpp/container/stack"
+        },
+        {
+          "title": "Arduino: millis()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/millis/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x2-m9.md"
+    },
+    {
+      "id": "c-x2-m10",
+      "title": "Pencarian dan pengurutan data sensor",
+      "cpItems": ["E-BK-a", "E-BK-c"],
+      "weekCodes": ["C-X2-M10"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x2-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::sort",
+          "url": "https://en.cppreference.com/w/cpp/algorithm/sort"
+        },
+        {
+          "title": "Arduino: Array",
+          "url": "https://docs.arduino.cc/language-reference/en/variables/data-types/array/"
+        },
+        {
+          "title": "Arduino: millis()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/millis/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x2-m10.md"
+    },
+    {
+      "id": "c-x2-m11",
+      "title": "Sensor jarak dan keputusan (F)",
+      "cpItems": [],
+      "weekCodes": ["C-X2-M11"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x2-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "NASA Glenn: Speed of Sound",
+          "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/speed-of-sound-interactive/"
+        },
+        {
+          "title": "Arduino: pulseIn()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/advanced-io/pulseIn/"
+        },
+        {
+          "title": "Arduino: millis()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/millis/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x2-m11.md"
+    },
+    {
+      "id": "c-x2-m12",
+      "title": "Mencatat data",
+      "cpItems": ["E-BK-b"],
+      "weekCodes": ["C-X2-M12"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x2-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: Serial.print()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/communication/serial/print/"
+        },
+        {
+          "title": "Arduino: Serial.println()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/communication/serial/println/"
+        },
+        {
+          "title": "Python: modul csv",
+          "url": "https://docs.python.org/3/library/csv.html"
+        },
+        {
+          "title": "Arduino: millis()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/millis/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x2-m12.md"
+    },
+    {
+      "id": "c-x2-m13",
+      "title": "Proyek mini: stasiun pengamat (F)",
+      "cpItems": ["E-BK-c"],
+      "weekCodes": ["C-X2-M13"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: analogRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/"
+        },
+        {
+          "title": "Arduino: Serial.print()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/communication/serial/print/"
+        },
+        {
+          "title": "Arduino: Serial.println()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/communication/serial/println/"
+        },
+        {
+          "title": "Arduino-ESP32 (Espressif)",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x2-m13.md"
+    },
+    {
+      "id": "c-x2-m14",
+      "title": "Asesmen dan refleksi (kelas X semester 2)",
+      "cpItems": [],
+      "weekCodes": ["C-X2-M14"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["c-x2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: analogRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/"
+        },
+        {
+          "title": "Arduino: millis()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/millis/"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-x2-m14.md"
+    },
+    {
+      "id": "c-xi1-m1",
+      "title": "Proses rekayasa produk IoT",
+      "cpItems": ["F-BK-a"],
+      "weekCodes": ["C-XI1-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-x2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F (Kemendikdasmen, 2025)",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Arduino: millis()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/millis/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi1-m1.md"
+    },
+    {
+      "id": "c-xi1-m2",
+      "title": "Kualitas kode dan pengujian",
+      "cpItems": ["F-BK-a", "F-AP-c"],
+      "weekCodes": ["C-XI1-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi1-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "C++ Core Guidelines",
+          "url": "https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines"
+        },
+        {
+          "title": "Arduino: analogRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi1-m2.md"
+    },
+    {
+      "id": "c-xi1-m3",
+      "title": "Tipe data bentukan",
+      "cpItems": ["F-BK-c", "F-AP-b"],
+      "weekCodes": ["C-XI1-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi1-m2", "c-x1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "C++ Core Guidelines",
+          "url": "https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines"
+        },
+        {
+          "title": "Arduino: millis()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/millis/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi1-m3.md"
+    },
+    {
+      "id": "c-xi1-m4",
+      "title": "Pustaka sendiri (F)",
+      "cpItems": ["F-AP-b", "F-AP-d"],
+      "weekCodes": ["C-XI1-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi1-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "C++ Core Guidelines",
+          "url": "https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines"
+        },
+        {
+          "title": "Arduino: panduan membuat pustaka",
+          "url": "https://docs.arduino.cc/learn/contributions/arduino-creating-library-guide/"
+        },
+        {
+          "title": "Arduino: micros()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/micros/"
+        },
+        {
+          "title": "Arduino: digitalRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/digital-io/digitalread/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi1-m4.md"
+    },
+    {
+      "id": "c-xi1-m5",
+      "title": "Alternatif solusi I: ambang dan histeresis",
+      "cpItems": ["F-BK-b", "F-AP-a", "F-AP-b"],
+      "weekCodes": ["C-XI1-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi1-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: analogRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/"
+        },
+        {
+          "title": "Arduino: digitalWrite()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/digital-io/digitalwrite/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi1-m5.md"
+    },
+    {
+      "id": "c-xi1-m6",
+      "title": "Kendali hidup-mati (F)",
+      "cpItems": ["F-BK-b", "F-AP-a", "F-AP-b"],
+      "weekCodes": ["C-XI1-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi1-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: digitalWrite()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/digital-io/digitalwrite/"
+        },
+        {
+          "title": "Arduino: analogRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/"
+        },
+        {
+          "title": "Arduino: millis()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/millis/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi1-m6.md"
+    },
+    {
+      "id": "c-xi1-m7",
+      "title": "Alternatif solusi II: kendali proporsional (F)",
+      "cpItems": ["F-BK-b", "F-AP-a", "F-AP-b"],
+      "weekCodes": ["C-XI1-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi1-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: constrain()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/math/constrain/"
+        },
+        {
+          "title": "Arduino: map()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/math/map/"
+        },
+        {
+          "title": "Arduino: analogWrite()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogWrite/"
+        },
+        {
+          "title": "Arduino-ESP32 (Espressif): LEDC (PWM)",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/ledc.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi1-m7.md"
+    },
+    {
+      "id": "c-xi1-m8",
+      "title": "Efisiensi memori dan waktu pada mikrokontroler",
+      "cpItems": ["F-BK-b", "F-AP-a"],
+      "weekCodes": ["C-XI1-M8"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi1-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: sizeof",
+          "url": "https://docs.arduino.cc/language-reference/en/variables/utilities/sizeof/"
+        },
+        {
+          "title": "cppreference: sizeof",
+          "url": "https://en.cppreference.com/w/cpp/language/sizeof"
+        },
+        {
+          "title": "cppreference: tipe bilangan bulat berlebar pasti",
+          "url": "https://en.cppreference.com/w/cpp/types/integer"
+        },
+        {
+          "title": "Arduino: micros()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/micros/"
+        },
+        {
+          "title": "Arduino: panduan memori",
+          "url": "https://docs.arduino.cc/learn/programming/memory-guide/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi1-m8.md"
+    },
+    {
+      "id": "c-xi1-m9",
+      "title": "Struktur data: penyangga melingkar",
+      "cpItems": ["F-BK-c"],
+      "weekCodes": ["C-XI1-M9"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi1-m8", "c-x2-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: operator sisa bagi (%)",
+          "url": "https://docs.arduino.cc/language-reference/en/structure/arithmetic-operators/remainder/"
+        },
+        {
+          "title": "Arduino: Array",
+          "url": "https://docs.arduino.cc/language-reference/en/variables/data-types/array/"
+        },
+        {
+          "title": "Arduino: analogRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi1-m9.md"
+    },
+    {
+      "id": "c-xi1-m10",
+      "title": "Pengiriman data antarperangkat I (F)",
+      "cpItems": ["F-BK-d"],
+      "weekCodes": ["C-XI1-M10"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi1-m9", "c-x1-m10", "FND-X1-M5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: Serial",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/communication/serial/"
+        },
+        {
+          "title": "Arduino: Serial.available()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/communication/serial/available/"
+        },
+        {
+          "title": "Arduino: Serial.read()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/communication/serial/read/"
+        },
+        {
+          "title": "Arduino: Serial.println()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/communication/serial/println/"
+        },
+        {
+          "title": "Arduino-ESP32 (Espressif): Serial (UART)",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/serial.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi1-m10.md"
+    },
+    {
+      "id": "c-xi1-m11",
+      "title": "Pengiriman data antarperangkat II",
+      "cpItems": ["F-BK-d"],
+      "weekCodes": ["C-XI1-M11"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi1-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: Serial.read()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/communication/serial/read/"
+        },
+        {
+          "title": "Arduino: Serial.available()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/communication/serial/available/"
+        },
+        {
+          "title": "Arduino-ESP32 (Espressif): Serial (UART)",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/serial.html"
+        },
+        {
+          "title": "cppreference: tipe bilangan bulat berlebar pasti",
+          "url": "https://en.cppreference.com/w/cpp/types/integer"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi1-m11.md"
+    },
+    {
+      "id": "c-xi1-m12",
+      "title": "Pemecahan masalah sambungan (F)",
+      "cpItems": ["F-BK-d"],
+      "weekCodes": ["C-XI1-M12"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi1-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: Serial.begin()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/communication/serial/begin/"
+        },
+        {
+          "title": "Arduino: Serial.available()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/communication/serial/available/"
+        },
+        {
+          "title": "Arduino-ESP32 (Espressif): Serial (UART)",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/serial.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi1-m12.md"
+    },
+    {
+      "id": "c-xi1-m13",
+      "title": "Proyek mini (kelas XI semester 1) (F)",
+      "cpItems": [],
+      "weekCodes": ["C-XI1-M13"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino-ESP32 (Espressif): Serial (UART)",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/serial.html"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi1-m13.md"
+    },
+    {
+      "id": "c-xi1-m14",
+      "title": "Asesmen dan refleksi (kelas XI semester 1)",
+      "cpItems": [],
+      "weekCodes": ["C-XI1-M14"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino-ESP32 (Espressif): Serial (UART)",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/serial.html"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi1-m14.md"
+    },
+    {
+      "id": "c-xi2-m1",
+      "title": "Jaringan nirkabel dan perangkat IoT (F)",
+      "cpItems": ["E-LD-e", "F-BK-d"],
+      "weekCodes": ["C-XI2-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi1-m12", "FND-X1-M4", "FND-X1-M5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino-ESP32 (Espressif): Wi-Fi API",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/wifi.html"
+        },
+        {
+          "title": "IETF RFC 5737: Blok alamat IPv4 untuk dokumentasi",
+          "url": "https://www.rfc-editor.org/rfc/rfc5737"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D - F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi2-m1.md"
+    },
+    {
+      "id": "c-xi2-m2",
+      "title": "Keamanan konektivitas",
+      "cpItems": ["E-LD-e", "F-LD-e", "F-LD-i"],
+      "weekCodes": ["C-XI2-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi2-m1", "FND-X1-M6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "OWASP: Secrets Management Cheat Sheet",
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D - F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi2-m2.md"
+    },
+    {
+      "id": "c-xi2-m3",
+      "title": "Klien HTTP (F)",
+      "cpItems": ["F-BK-d"],
+      "weekCodes": ["C-XI2-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi2-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "MDN: Gambaran umum HTTP (An overview of HTTP)",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview"
+        },
+        {
+          "title": "Arduino-ESP32: pustaka HTTPClient (kode sumber)",
+          "url": "https://github.com/espressif/arduino-esp32/tree/master/libraries/HTTPClient"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi2-m3.md"
+    },
+    {
+      "id": "c-xi2-m4",
+      "title": "Server mini (F)",
+      "cpItems": ["F-BK-d"],
+      "weekCodes": ["C-XI2-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi2-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "MDN: Gambaran umum HTTP (An overview of HTTP)",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview"
+        },
+        {
+          "title": "Arduino-ESP32: pustaka WebServer (kode sumber)",
+          "url": "https://github.com/espressif/arduino-esp32/tree/master/libraries/WebServer"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi2-m4.md"
+    },
+    {
+      "id": "c-xi2-m5",
+      "title": "Publikasi-langganan: konsep",
+      "cpItems": ["F-BK-d"],
+      "weekCodes": ["C-XI2-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi2-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "OASIS: MQTT Version 3.1.1",
+          "url": "https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html"
+        },
+        {
+          "title": "Eclipse Mosquitto (contoh broker MQTT)",
+          "url": "https://mosquitto.org/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi2-m5.md"
+    },
+    {
+      "id": "c-xi2-m6",
+      "title": "Publikasi-langganan: praktik (F)",
+      "cpItems": ["F-BK-d"],
+      "weekCodes": ["C-XI2-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi2-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "PubSubClient (pustaka klien MQTT untuk Arduino)",
+          "url": "https://github.com/knolleary/pubsubclient"
+        },
+        {
+          "title": "OASIS: MQTT Version 3.1.1",
+          "url": "https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html"
+        },
+        {
+          "title": "Eclipse Mosquitto (contoh broker MQTT)",
+          "url": "https://mosquitto.org/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi2-m6.md"
+    },
+    {
+      "id": "c-xi2-m7",
+      "title": "Format data",
+      "cpItems": ["F-BK-d"],
+      "weekCodes": ["C-XI2-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi2-m6", "c-xi1-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IETF RFC 8259: Format pertukaran data JSON",
+          "url": "https://www.rfc-editor.org/rfc/rfc8259"
+        },
+        {
+          "title": "JSON (json.org): pengantar",
+          "url": "https://www.json.org/json-en.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi2-m7.md"
+    },
+    {
+      "id": "c-xi2-m8",
+      "title": "Pemecahan masalah jaringan IoT (F)",
+      "cpItems": ["F-BK-d"],
+      "weekCodes": ["C-XI2-M8"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi2-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino-ESP32 (Espressif): Wi-Fi API",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/wifi.html"
+        },
+        {
+          "title": "OASIS: MQTT Versi 3.1.1 (spesifikasi)",
+          "url": "https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi2-m8.md"
+    },
+    {
+      "id": "c-xi2-m9",
+      "title": "Sumber data terbuka dan legal",
+      "cpItems": ["F-AD-a"],
+      "weekCodes": ["C-XI2-M9"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi2-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Open Definition 2.1",
+          "url": "https://opendefinition.org/od/2.1/en/"
+        },
+        {
+          "title": "Creative Commons: Atribusi 4.0 Internasional (CC BY 4.0), deed",
+          "url": "https://creativecommons.org/licenses/by/4.0/deed.id"
+        },
+        {
+          "title": "Portal Satu Data Indonesia",
+          "url": "https://data.go.id"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi2-m9.md"
+    },
+    {
+      "id": "c-xi2-m10",
+      "title": "Rekap dan visualisasi",
+      "cpItems": ["F-AD-a"],
+      "weekCodes": ["C-XI2-M10"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi2-m9", "c-x2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::map",
+          "url": "https://en.cppreference.com/w/cpp/container/map"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi2-m10.md"
+    },
+    {
+      "id": "c-xi2-m11",
+      "title": "Prediksi sederhana",
+      "cpItems": ["F-AD-a"],
+      "weekCodes": ["C-XI2-M11"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi2-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "NIST/SEMATECH e-Handbook of Statistical Methods: Moving average and smoothing techniques",
+          "url": "https://www.itl.nist.gov/div898/handbook/pmc/section4/pmc42.htm"
+        },
+        {
+          "title": "Python: modul statistics (linear_regression)",
+          "url": "https://docs.python.org/3/library/statistics.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi2-m11.md"
+    },
+    {
+      "id": "c-xi2-m12",
+      "title": "Keputusan otomatis berbasis data (F)",
+      "cpItems": ["F-AD-a"],
+      "weekCodes": ["C-XI2-M12"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi2-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino-ESP32 (Espressif): GPIO",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/gpio.html"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi2-m12.md"
+    },
+    {
+      "id": "c-xi2-m13",
+      "title": "Proyek: sistem IoT lokal (F)",
+      "cpItems": [],
+      "weekCodes": ["C-XI2-M13"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "OASIS: MQTT Versi 3.1.1 (spesifikasi)",
+          "url": "https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi2-m13.md"
+    },
+    {
+      "id": "c-xi2-m14",
+      "title": "Asesmen dan refleksi (kelas XI semester 2)",
+      "cpItems": [],
+      "weekCodes": ["C-XI2-M14"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["c-xi2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "OASIS: MQTT Versi 3.1.1 (spesifikasi)",
+          "url": "https://docs.oasis-open.org/mqtt/mqtt/v3.1.1/os/mqtt-v3.1.1-os.html"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xi2-m14.md"
+    },
+    {
+      "id": "c-xii1-m1",
+      "title": "Merancang kebutuhan sistem",
+      "cpItems": ["F-BK-a", "F-LD-d"],
+      "weekCodes": ["C-XII1-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xi2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D - F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii1-m1.md"
+    },
+    {
+      "id": "c-xii1-m2",
+      "title": "Arsitektur dan pemilihan komponen",
+      "cpItems": ["F-BK-a", "F-LD-d"],
+      "weekCodes": ["C-XII1-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii1-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D - F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii1-m2.md"
+    },
+    {
+      "id": "c-xii1-m3",
+      "title": "Motor DC dan pengendali motor (F)",
+      "cpItems": [],
+      "weekCodes": ["C-XII1-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii1-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino-ESP32 (Espressif): LEDC (PWM)",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/ledc.html"
+        },
+        {
+          "title": "Arduino: digitalWrite()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/digital-io/digitalwrite/"
+        },
+        {
+          "title": "Arduino: constrain()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/math/constrain/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii1-m3.md"
+    },
+    {
+      "id": "c-xii1-m4",
+      "title": "Sensor garis dan jarak (F)",
+      "cpItems": [],
+      "weekCodes": ["C-XII1-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii1-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: analogRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/"
+        },
+        {
+          "title": "Arduino-ESP32 (Espressif): ADC",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/adc.html"
+        },
+        {
+          "title": "Arduino: pulseIn()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/advanced-io/pulseIn/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii1-m4.md"
+    },
+    {
+      "id": "c-xii1-m5",
+      "title": "Mesin keadaan robot (F)",
+      "cpItems": ["F-AP-b"],
+      "weekCodes": ["C-XII1-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii1-m4", "c-x2-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: millis()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/millis/"
+        },
+        {
+          "title": "Arduino: Blink tanpa delay",
+          "url": "https://docs.arduino.cc/built-in-examples/digital/BlinkWithoutDelay/"
+        },
+        {
+          "title": "C++ Core Guidelines",
+          "url": "https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii1-m5.md"
+    },
+    {
+      "id": "c-xii1-m6",
+      "title": "Pengikut garis: strategi 1 (F)",
+      "cpItems": ["F-AP-a", "F-AP-b"],
+      "weekCodes": ["C-XII1-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii1-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: analogRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/"
+        },
+        {
+          "title": "Arduino-ESP32 (Espressif): LEDC (PWM)",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/ledc.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii1-m6.md"
+    },
+    {
+      "id": "c-xii1-m7",
+      "title": "Pengikut garis: strategi 2 (F)",
+      "cpItems": ["F-AP-a", "F-AP-b"],
+      "weekCodes": ["C-XII1-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii1-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: constrain()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/math/constrain/"
+        },
+        {
+          "title": "Arduino: analogRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii1-m7.md"
+    },
+    {
+      "id": "c-xii1-m8",
+      "title": "Membandingkan strategi (F)",
+      "cpItems": ["F-BK-b", "F-AP-a", "F-AP-b"],
+      "weekCodes": ["C-XII1-M8"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii1-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: millis()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/millis/"
+        },
+        {
+          "title": "Arduino: constrain()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/math/constrain/"
+        },
+        {
+          "title": "Arduino: analogRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D - F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii1-m8.md"
+    },
+    {
+      "id": "c-xii1-m9",
+      "title": "Kalibrasi dan pengujian sistematis (F)",
+      "cpItems": [],
+      "weekCodes": ["C-XII1-M9"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii1-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: analogRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/"
+        },
+        {
+          "title": "Arduino-ESP32 (Espressif): ADC",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/adc.html"
+        },
+        {
+          "title": "Arduino: millis()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/millis/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii1-m9.md"
+    },
+    {
+      "id": "c-xii1-m10",
+      "title": "Daya dan keselamatan baterai (F)",
+      "cpItems": [],
+      "weekCodes": ["C-XII1-M10"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii1-m9", "FND-X1-M6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino-ESP32 (Espressif): ADC",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/adc.html"
+        },
+        {
+          "title": "Arduino: analogRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii1-m10.md"
+    },
+    {
+      "id": "c-xii1-m11",
+      "title": "Hukum dan etika sensor",
+      "cpItems": ["F-LD-g"],
+      "weekCodes": ["C-XII1-M11"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii1-m10", "c-xi2-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "UU Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi, JDIH BPK",
+          "url": "https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022"
+        },
+        {
+          "title": "UU Nomor 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik (status dan pencabutan sebagian), JDIH BPK",
+          "url": "https://peraturan.bpk.go.id/Details/37589/uu-no-11-tahun-2008"
+        },
+        {
+          "title": "UU Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana (tanggal berlaku), JDIH BPK",
+          "url": "https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii1-m11.md"
+    },
+    {
+      "id": "c-xii1-m12",
+      "title": "Dokumentasi dan pemeliharaan",
+      "cpItems": ["F-BK-a"],
+      "weekCodes": ["C-XII1-M12"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii1-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino-ESP32 (Espressif): GPIO",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/gpio.html"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D - F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii1-m12.md"
+    },
+    {
+      "id": "c-xii1-m13",
+      "title": "Proyek (kelas XII semester 1)",
+      "cpItems": [],
+      "weekCodes": ["C-XII1-M13"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D - F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii1-m13.md"
+    },
+    {
+      "id": "c-xii1-m14",
+      "title": "Asesmen dan refleksi (kelas XII semester 1)",
+      "cpItems": [],
+      "weekCodes": ["C-XII1-M14"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D - F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii1-m14.md"
+    },
+    {
+      "id": "c-xii2-m1",
+      "title": "Pemeliharaan program I",
+      "cpItems": ["F-AP-c"],
+      "weekCodes": ["C-XII2-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii1-m12", "c-xi1-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: const",
+          "url": "https://docs.arduino.cc/language-reference/en/variables/variable-scope-qualifiers/const/"
+        },
+        {
+          "title": "C++ Core Guidelines",
+          "url": "https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii2-m1.md"
+    },
+    {
+      "id": "c-xii2-m2",
+      "title": "Pemeliharaan program II",
+      "cpItems": ["F-AP-c"],
+      "weekCodes": ["C-XII2-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii2-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: sizeof()",
+          "url": "https://docs.arduino.cc/language-reference/en/variables/utilities/sizeof/"
+        },
+        {
+          "title": "Arduino: const",
+          "url": "https://docs.arduino.cc/language-reference/en/variables/variable-scope-qualifiers/const/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii2-m2.md"
+    },
+    {
+      "id": "c-xii2-m3",
+      "title": "Memodelkan masalah lapangan",
+      "cpItems": [],
+      "weekCodes": ["C-XII2-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii2-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D - F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii2-m3.md"
+    },
+    {
+      "id": "c-xii2-m4",
+      "title": "Ulasan keamanan dan privasi",
+      "cpItems": [],
+      "weekCodes": ["C-XII2-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii2-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "OWASP: Secrets Management Cheat Sheet",
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html"
+        },
+        {
+          "title": "NIST IR 8259A: IoT Device Cybersecurity Capability Core Baseline",
+          "url": "https://csrc.nist.gov/pubs/ir/8259/a/final"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii2-m4.md"
+    },
+    {
+      "id": "c-xii2-m5",
+      "title": "Proyek akhir: rancangan",
+      "cpItems": ["F-BK-a"],
+      "weekCodes": ["C-XII2-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii2-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D - F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii2-m5.md"
+    },
+    {
+      "id": "c-xii2-m6",
+      "title": "Proyek akhir: sprint 1 (perangkat keras) (F)",
+      "cpItems": ["F-BK-a", "F-AP-d"],
+      "weekCodes": ["C-XII2-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii2-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: analogRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/"
+        },
+        {
+          "title": "Arduino-ESP32 (Espressif): ADC",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/adc.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii2-m6.md"
+    },
+    {
+      "id": "c-xii2-m7",
+      "title": "Proyek akhir: sprint 2 (program)",
+      "cpItems": ["F-BK-a", "F-AP-d"],
+      "weekCodes": ["C-XII2-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii2-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: millis()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/millis/"
+        },
+        {
+          "title": "C++ Core Guidelines",
+          "url": "https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii2-m7.md"
+    },
+    {
+      "id": "c-xii2-m8",
+      "title": "Proyek akhir: sprint 3 (jaringan dan data) (F)",
+      "cpItems": ["F-BK-a", "F-AP-d"],
+      "weekCodes": ["C-XII2-M8"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii2-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: millis()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/millis/"
+        },
+        {
+          "title": "Arduino-ESP32 (Espressif): Wi-Fi",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/wifi.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii2-m8.md"
+    },
+    {
+      "id": "c-xii2-m9",
+      "title": "Proyek akhir: sprint 4 (penyempurnaan)",
+      "cpItems": ["F-BK-a", "F-AP-d"],
+      "weekCodes": ["C-XII2-M9"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii2-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D - F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii2-m9.md"
+    },
+    {
+      "id": "c-xii2-m10",
+      "title": "Ulasan sejawat (kelas XII semester 2)",
+      "cpItems": ["F-BK-a"],
+      "weekCodes": ["C-XII2-M10"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii2-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Google Engineering Practices: Code Review (ringkasan)",
+          "url": "https://google.github.io/eng-practices/review/"
+        },
+        {
+          "title": "Google Engineering Practices: The Standard of Code Review",
+          "url": "https://google.github.io/eng-practices/review/reviewer/standard.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii2-m10.md"
+    },
+    {
+      "id": "c-xii2-m11",
+      "title": "Pengujian akhir (kelas XII semester 2)",
+      "cpItems": ["F-BK-a"],
+      "weekCodes": ["C-XII2-M11"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii2-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D - F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii2-m11.md"
+    },
+    {
+      "id": "c-xii2-m12",
+      "title": "Dokumentasi akhir",
+      "cpItems": ["F-BK-a"],
+      "weekCodes": ["C-XII2-M12"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii2-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D - F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii2-m12.md"
+    },
+    {
+      "id": "c-xii2-m13",
+      "title": "Presentasi dan portofolio",
+      "cpItems": [],
+      "weekCodes": ["C-XII2-M13"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D - F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii2-m13.md"
+    },
+    {
+      "id": "c-xii2-m14",
+      "title": "Asesmen dan refleksi (kelas XII semester 2)",
+      "cpItems": [],
+      "weekCodes": ["C-XII2-M14"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii2-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D - F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii2-m14.md"
+    },
+    {
+      "id": "d-x1-m8",
+      "title": "Apa itu AI dan apa yang bukan",
+      "cpItems": [],
+      "weekCodes": ["D-X1-M8"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["FND-X1-M1", "FND-X1-M3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Elements of AI, MinnaLearn dan University of Helsinki (bacaan tambahan)",
+          "url": "https://www.elementsofai.com/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x1-m8.md"
+    },
+    {
+      "id": "d-x1-m9",
+      "title": "Data, fitur, dan label",
+      "cpItems": [],
+      "weekCodes": ["D-X1-M9"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x1-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Orange Data Mining: widget File",
+          "url": "https://orangedatamining.com/widget-catalog/data/file/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x1-m9.md"
+    },
+    {
+      "id": "d-x1-m10",
+      "title": "Klasifikasi tanpa komputer",
+      "cpItems": [],
+      "weekCodes": ["D-X1-M10"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x1-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Orange Data Mining: widget Tree",
+          "url": "https://orangedatamining.com/widget-catalog/model/tree/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x1-m10.md"
+    },
+    {
+      "id": "d-x1-m11",
+      "title": "Orange: memuat dan melihat data",
+      "cpItems": [],
+      "weekCodes": ["D-X1-M11"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x1-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Orange Data Mining: widget File",
+          "url": "https://orangedatamining.com/widget-catalog/data/file/"
+        },
+        {
+          "title": "Orange Data Mining: widget Data Table",
+          "url": "https://orangedatamining.com/widget-catalog/data/datatable/"
+        },
+        {
+          "title": "Orange Data Mining: widget Scatter Plot",
+          "url": "https://orangedatamining.com/widget-catalog/visualize/scatterplot/"
+        },
+        {
+          "title": "Orange Data Mining: halaman unduh",
+          "url": "https://orangedatamining.com/download/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x1-m11.md"
+    },
+    {
+      "id": "d-x1-m12",
+      "title": "Model pertama dan pembagian data latih/uji",
+      "cpItems": [],
+      "weekCodes": ["D-X1-M12"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x1-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Orange Data Mining: widget Tree",
+          "url": "https://orangedatamining.com/widget-catalog/model/tree/"
+        },
+        {
+          "title": "Orange Data Mining: widget Test and Score",
+          "url": "https://orangedatamining.com/widget-catalog/evaluate/testandscore/"
+        },
+        {
+          "title": "Orange Data Mining: widget File",
+          "url": "https://orangedatamining.com/widget-catalog/data/file/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x1-m12.md"
+    },
+    {
+      "id": "d-x1-m13",
+      "title": "Proyek mini (kelas X semester 1)",
+      "cpItems": [],
+      "weekCodes": ["D-X1-M13"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Orange Data Mining: widget Tree",
+          "url": "https://orangedatamining.com/widget-catalog/model/tree/"
+        },
+        {
+          "title": "Orange Data Mining: widget Test and Score",
+          "url": "https://orangedatamining.com/widget-catalog/evaluate/testandscore/"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x1-m13.md"
+    },
+    {
+      "id": "d-x1-m14",
+      "title": "Asesmen dan refleksi (kelas X semester 1)",
+      "cpItems": [],
+      "weekCodes": ["D-X1-M14"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Orange Data Mining: widget Test and Score",
+          "url": "https://orangedatamining.com/widget-catalog/evaluate/testandscore/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x1-m14.md"
+    },
+    {
+      "id": "d-x2-m1",
+      "title": "Dari data ke keputusan; ulasan",
+      "cpItems": [],
+      "weekCodes": ["D-X2-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Orange Data Mining: widget Tree",
+          "url": "https://orangedatamining.com/widget-catalog/model/tree/"
+        },
+        {
+          "title": "Orange Data Mining: widget Test and Score",
+          "url": "https://orangedatamining.com/widget-catalog/evaluate/testandscore/"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x2-m1.md"
+    },
+    {
+      "id": "d-x2-m2",
+      "title": "Bias dan keadilan",
+      "cpItems": [],
+      "weekCodes": ["D-X2-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x2-m1", "d-x1-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Orange Data Mining: widget Tree",
+          "url": "https://orangedatamining.com/widget-catalog/model/tree/"
+        },
+        {
+          "title": "Orange Data Mining: widget Test and Score",
+          "url": "https://orangedatamining.com/widget-catalog/evaluate/testandscore/"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x2-m2.md"
+    },
+    {
+      "id": "d-x2-m3",
+      "title": "Privasi dan data pribadi",
+      "cpItems": [],
+      "weekCodes": ["D-X2-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x2-m2", "FND-X1-M6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi, JDIH BPK",
+          "url": "https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x2-m3.md"
+    },
+    {
+      "id": "d-x2-m4",
+      "title": "Regresi: garis kecenderungan",
+      "cpItems": [],
+      "weekCodes": ["D-X2-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x2-m3", "d-x1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Orange Data Mining: widget Linear Regression",
+          "url": "https://orangedatamining.com/widget-catalog/model/linearregression/"
+        },
+        {
+          "title": "Orange Data Mining: widget Scatter Plot",
+          "url": "https://orangedatamining.com/widget-catalog/visualize/scatterplot/"
+        },
+        {
+          "title": "Orange Data Mining: widget Test and Score",
+          "url": "https://orangedatamining.com/widget-catalog/evaluate/testandscore/"
+        },
+        {
+          "title": "Orange Data Mining: widget Predictions",
+          "url": "https://orangedatamining.com/widget-catalog/evaluate/predictions/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x2-m4.md"
+    },
+    {
+      "id": "d-x2-m5",
+      "title": "Galat dan kelebihan-suai (overfitting)",
+      "cpItems": [],
+      "weekCodes": ["D-X2-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x2-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Orange Data Mining: widget Linear Regression",
+          "url": "https://orangedatamining.com/widget-catalog/model/linearregression/"
+        },
+        {
+          "title": "Orange Data Mining: widget Tree",
+          "url": "https://orangedatamining.com/widget-catalog/model/tree/"
+        },
+        {
+          "title": "Orange Data Mining: widget Test and Score",
+          "url": "https://orangedatamining.com/widget-catalog/evaluate/testandscore/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x2-m5.md"
+    },
+    {
+      "id": "d-x2-m6",
+      "title": "Klasifikasi: pohon keputusan dan tetangga terdekat",
+      "cpItems": [],
+      "weekCodes": ["D-X2-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x2-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Orange Data Mining: widget Tree",
+          "url": "https://orangedatamining.com/widget-catalog/model/tree/"
+        },
+        {
+          "title": "Orange Data Mining: widget kNN",
+          "url": "https://orangedatamining.com/widget-catalog/model/knn/"
+        },
+        {
+          "title": "Orange Data Mining: widget Test and Score",
+          "url": "https://orangedatamining.com/widget-catalog/evaluate/testandscore/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x2-m6.md"
+    },
+    {
+      "id": "d-x2-m7",
+      "title": "Mengevaluasi klasifikasi",
+      "cpItems": [],
+      "weekCodes": ["D-X2-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x2-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Orange Data Mining: widget Confusion Matrix",
+          "url": "https://orangedatamining.com/widget-catalog/evaluate/confusionmatrix/"
+        },
+        {
+          "title": "Orange Data Mining: widget Test and Score",
+          "url": "https://orangedatamining.com/widget-catalog/evaluate/testandscore/"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x2-m7.md"
+    },
+    {
+      "id": "d-x2-m8",
+      "title": "Pengelompokan tanpa label",
+      "cpItems": [],
+      "weekCodes": ["D-X2-M8"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x2-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Orange Data Mining: widget k-Means",
+          "url": "https://orangedatamining.com/widget-catalog/unsupervised/kmeans/"
+        },
+        {
+          "title": "Orange Data Mining: widget Hierarchical Clustering (pengelompokan alternatif, bacaan tambahan)",
+          "url": "https://orangedatamining.com/widget-catalog/unsupervised/hierarchicalclustering/"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x2-m8.md"
+    },
+    {
+      "id": "d-x2-m9",
+      "title": "Visualisasi untuk bercerita",
+      "cpItems": [],
+      "weekCodes": ["D-X2-M9"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x2-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Orange Data Mining: widget Bar Plot",
+          "url": "https://orangedatamining.com/widget-catalog/visualize/barplot/"
+        },
+        {
+          "title": "Orange Data Mining: widget Box Plot",
+          "url": "https://orangedatamining.com/widget-catalog/visualize/boxplot/"
+        },
+        {
+          "title": "Orange Data Mining: widget Scatter Plot",
+          "url": "https://orangedatamining.com/widget-catalog/visualize/scatterplot/"
+        },
+        {
+          "title": "From Data to Viz: Dataviz caveats (bacaan tambahan, bukan sumber resmi)",
+          "url": "https://www.data-to-viz.com/caveats.html"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x2-m9.md"
+    },
+    {
+      "id": "d-x2-m10",
+      "title": "Teks sebagai data",
+      "cpItems": [],
+      "weekCodes": ["D-X2-M10"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x2-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Orange Data Mining: widget Bag of Words (add-on Text Mining)",
+          "url": "https://orangedatamining.com/widget-catalog/text-mining/bagofwords-widget/"
+        },
+        {
+          "title": "Orange Data Mining: widget Preprocess Text (add-on Text Mining)",
+          "url": "https://orangedatamining.com/widget-catalog/text-mining/preprocesstext/"
+        },
+        {
+          "title": "Orange Data Mining: widget Test and Score",
+          "url": "https://orangedatamining.com/widget-catalog/evaluate/testandscore/"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x2-m10.md"
+    },
+    {
+      "id": "d-x2-m11",
+      "title": "AI generatif dan verifikasi",
+      "cpItems": [],
+      "weekCodes": ["D-X2-M11"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x2-m10", "d-x1-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "NIST AI 600-1: Artificial Intelligence Risk Management Framework: Generative Artificial Intelligence Profile, Juli 2024 (bagian 2.2, confabulation)",
+          "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf"
+        },
+        {
+          "title": "Surat Edaran Menteri Komunikasi dan Informatika Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial, JDIH Kemkomdigi",
+          "url": "https://jdih.komdigi.go.id/produk_hukum/view/id/883/t/surat+edaran+menteri+komunikasi+dan+informatika+nomor+9+tahun+2023"
+        },
+        {
+          "title": "Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi, JDIH BPK",
+          "url": "https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022"
+        },
+        {
+          "title": "Undang-Undang Nomor 28 Tahun 2014 tentang Hak Cipta, JDIH BPK",
+          "url": "https://peraturan.bpk.go.id/Details/38690/uu-no-28-tahun-2014"
+        },
+        {
+          "title": "UNESCO: Guidance for generative AI in education and research, 2023",
+          "url": "https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x2-m11.md"
+    },
+    {
+      "id": "d-x2-m12",
+      "title": "HAKI, lisensi data, dan AI",
+      "cpItems": [],
+      "weekCodes": ["D-X2-M12"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x2-m11", "FND-X1-M2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Undang-Undang Nomor 28 Tahun 2014 tentang Hak Cipta, JDIH BPK",
+          "url": "https://peraturan.bpk.go.id/Details/38690/uu-no-28-tahun-2014"
+        },
+        {
+          "title": "Creative Commons: CC BY 4.0 (deed, bahasa Indonesia)",
+          "url": "https://creativecommons.org/licenses/by/4.0/deed.id"
+        },
+        {
+          "title": "Creative Commons: CC BY-SA 4.0 (deed, bahasa Indonesia)",
+          "url": "https://creativecommons.org/licenses/by-sa/4.0/deed.id"
+        },
+        {
+          "title": "Creative Commons: CC BY-NC 4.0 (deed, bahasa Indonesia)",
+          "url": "https://creativecommons.org/licenses/by-nc/4.0/deed.id"
+        },
+        {
+          "title": "Creative Commons: CC0 1.0 (deed, bahasa Indonesia)",
+          "url": "https://creativecommons.org/publicdomain/zero/1.0/deed.id"
+        },
+        {
+          "title": "Creative Commons: Best practices for attribution",
+          "url": "https://wiki.creativecommons.org/wiki/Best_practices_for_attribution"
+        },
+        {
+          "title": "U.S. Copyright Office: Copyright and Artificial Intelligence, Part 2: Copyrightability, Januari 2025",
+          "url": "https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf"
+        },
+        {
+          "title": "Surat Edaran Menteri Komunikasi dan Informatika Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial, JDIH Kemkomdigi",
+          "url": "https://jdih.komdigi.go.id/produk_hukum/view/id/883/t/surat+edaran+menteri+komunikasi+dan+informatika+nomor+9+tahun+2023"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x2-m12.md"
+    },
+    {
+      "id": "d-x2-m13",
+      "title": "Proyek mini (kelas X semester 2)",
+      "cpItems": [],
+      "weekCodes": ["D-X2-M13"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Orange Data Mining: widget Test and Score",
+          "url": "https://orangedatamining.com/widget-catalog/evaluate/testandscore/"
+        },
+        {
+          "title": "Orange Data Mining: widget Confusion Matrix",
+          "url": "https://orangedatamining.com/widget-catalog/evaluate/confusionmatrix/"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x2-m13.md"
+    },
+    {
+      "id": "d-x2-m14",
+      "title": "Asesmen dan refleksi (kelas X semester 2)",
+      "cpItems": [],
+      "weekCodes": ["D-X2-M14"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["X"],
+      "prerequisites": ["d-x2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Orange Data Mining: widget Test and Score",
+          "url": "https://orangedatamining.com/widget-catalog/evaluate/testandscore/"
+        },
+        {
+          "title": "Orange Data Mining: widget k-Means",
+          "url": "https://orangedatamining.com/widget-catalog/unsupervised/kmeans/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-x2-m14.md"
+    },
+    {
+      "id": "d-xi1-m1",
+      "title": "Proses proyek data dan AI",
+      "cpItems": [],
+      "weekCodes": ["D-XI1-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-x2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi1-m1.md"
+    },
+    {
+      "id": "d-xi1-m2",
+      "title": "Python I",
+      "cpItems": [],
+      "weekCodes": ["D-XI1-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi1-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python: tutorial, pengantar (angka dan teks)",
+          "url": "https://docs.python.org/3/tutorial/introduction.html"
+        },
+        {
+          "title": "Python: tutorial, aliran kendali (if, for, while)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi1-m2.md"
+    },
+    {
+      "id": "d-xi1-m3",
+      "title": "Python II",
+      "cpItems": [],
+      "weekCodes": ["D-XI1-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi1-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python: tutorial, aliran kendali (termasuk definisi fungsi)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        },
+        {
+          "title": "Python: tutorial, struktur data (daftar dan kamus)",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi1-m3.md"
+    },
+    {
+      "id": "d-xi1-m4",
+      "title": "Membaca berkas tabel",
+      "cpItems": [],
+      "weekCodes": ["D-XI1-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi1-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python: modul csv",
+          "url": "https://docs.python.org/3/library/csv.html"
+        },
+        {
+          "title": "pandas: read_csv",
+          "url": "https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html"
+        },
+        {
+          "title": "pandas: DataFrame.to_csv",
+          "url": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_csv.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi1-m4.md"
+    },
+    {
+      "id": "d-xi1-m5",
+      "title": "Sumber data terbuka dan legal",
+      "cpItems": [],
+      "weekCodes": ["D-XI1-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi1-m4", "d-x2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "UCI Machine Learning Repository: dataset Iris",
+          "url": "https://archive.ics.uci.edu/dataset/53/iris"
+        },
+        {
+          "title": "Creative Commons: CC BY 4.0 (deed, bahasa Indonesia)",
+          "url": "https://creativecommons.org/licenses/by/4.0/deed.id"
+        },
+        {
+          "title": "Creative Commons: Best practices for attribution",
+          "url": "https://wiki.creativecommons.org/wiki/Best_practices_for_attribution"
+        },
+        {
+          "title": "Open Definition 2.1",
+          "url": "https://opendefinition.org/od/2.1/en/"
+        },
+        {
+          "title": "Portal Satu Data Indonesia",
+          "url": "https://data.go.id"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi1-m5.md"
+    },
+    {
+      "id": "d-xi1-m6",
+      "title": "Membersihkan data",
+      "cpItems": [],
+      "weekCodes": ["D-XI1-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi1-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "pandas: panduan data hilang",
+          "url": "https://pandas.pydata.org/docs/user_guide/missing_data.html"
+        },
+        {
+          "title": "pandas: DataFrame.drop_duplicates",
+          "url": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.drop_duplicates.html"
+        },
+        {
+          "title": "pandas: to_numeric",
+          "url": "https://pandas.pydata.org/docs/reference/api/pandas.to_numeric.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi1-m6.md"
+    },
+    {
+      "id": "d-xi1-m7",
+      "title": "Statistik deskriptif dan grafik",
+      "cpItems": [],
+      "weekCodes": ["D-XI1-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi1-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "pandas: DataFrame.describe",
+          "url": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html"
+        },
+        {
+          "title": "Matplotlib: quick start guide",
+          "url": "https://matplotlib.org/stable/users/explain/quick_start.html"
+        },
+        {
+          "title": "From Data to Viz: Dataviz caveats (bacaan tambahan, bukan sumber resmi)",
+          "url": "https://www.data-to-viz.com/caveats.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi1-m7.md"
+    },
+    {
+      "id": "d-xi1-m8",
+      "title": "Prediksi sederhana",
+      "cpItems": [],
+      "weekCodes": ["D-XI1-M8"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi1-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "NumPy: numpy.polyfit",
+          "url": "https://numpy.org/doc/stable/reference/generated/numpy.polyfit.html"
+        },
+        {
+          "title": "pandas: Series.rolling",
+          "url": "https://pandas.pydata.org/docs/reference/api/pandas.Series.rolling.html"
+        },
+        {
+          "title": "scikit-learn: mean_absolute_error",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_absolute_error.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi1-m8.md"
+    },
+    {
+      "id": "d-xi1-m9",
+      "title": "Klasifikasi dengan `scikit-learn`",
+      "cpItems": [],
+      "weekCodes": ["D-XI1-M9"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi1-m8", "d-x2-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: KNeighborsClassifier",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html"
+        },
+        {
+          "title": "scikit-learn: train_test_split",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html"
+        },
+        {
+          "title": "scikit-learn: DummyClassifier",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.dummy.DummyClassifier.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi1-m9.md"
+    },
+    {
+      "id": "d-xi1-m10",
+      "title": "Evaluasi dan validasi",
+      "cpItems": [],
+      "weekCodes": ["D-XI1-M10"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi1-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: evaluasi model (metrik)",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "scikit-learn: validasi silang",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "scikit-learn: confusion_matrix",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi1-m10.md"
+    },
+    {
+      "id": "d-xi1-m11",
+      "title": "Membandingkan model",
+      "cpItems": [],
+      "weekCodes": ["D-XI1-M11"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi1-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: validasi silang",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "scikit-learn: StratifiedKFold",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.StratifiedKFold.html"
+        },
+        {
+          "title": "scikit-learn: LogisticRegression",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi1-m11.md"
+    },
+    {
+      "id": "d-xi1-m12",
+      "title": "Kebocoran data dan bias evaluasi",
+      "cpItems": [],
+      "weekCodes": ["D-XI1-M12"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi1-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: kesalahan umum dan praktik yang dianjurkan (kebocoran data)",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "scikit-learn: make_pipeline",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.make_pipeline.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi1-m12.md"
+    },
+    {
+      "id": "d-xi1-m13",
+      "title": "Proyek mini (kelas XI semester 1)",
+      "cpItems": [],
+      "weekCodes": ["D-XI1-M13"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "pandas: data hilang (missing data)",
+          "url": "https://pandas.pydata.org/docs/user_guide/missing_data.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi1-m13.md"
+    },
+    {
+      "id": "d-xi1-m14",
+      "title": "Asesmen dan refleksi (kelas XI semester 1)",
+      "cpItems": [],
+      "weekCodes": ["D-XI1-M14"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi1-m14.md"
+    },
+    {
+      "id": "d-xi2-m1",
+      "title": "Pengelompokan dengan Python",
+      "cpItems": [],
+      "weekCodes": ["D-XI2-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi1-m12", "d-x2-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Clustering (bagian k-means)",
+          "url": "https://scikit-learn.org/stable/modules/clustering.html"
+        },
+        {
+          "title": "scikit-learn: StandardScaler",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html"
+        },
+        {
+          "title": "scikit-learn: silhouette_score",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.metrics.silhouette_score.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi2-m1.md"
+    },
+    {
+      "id": "d-xi2-m2",
+      "title": "Pohon keputusan dan ensambel",
+      "cpItems": [],
+      "weekCodes": ["D-XI2-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi2-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Decision Trees",
+          "url": "https://scikit-learn.org/stable/modules/tree.html"
+        },
+        {
+          "title": "scikit-learn: Ensembles (hutan acak)",
+          "url": "https://scikit-learn.org/stable/modules/ensemble.html"
+        },
+        {
+          "title": "scikit-learn: RandomForestClassifier",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi2-m2.md"
+    },
+    {
+      "id": "d-xi2-m3",
+      "title": "Rekayasa fitur",
+      "cpItems": [],
+      "weekCodes": ["D-XI2-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi2-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "pandas: get_dummies",
+          "url": "https://pandas.pydata.org/docs/reference/api/pandas.get_dummies.html"
+        },
+        {
+          "title": "scikit-learn: Feature selection",
+          "url": "https://scikit-learn.org/stable/modules/feature_selection.html"
+        },
+        {
+          "title": "scikit-learn: Pipelines and composite estimators",
+          "url": "https://scikit-learn.org/stable/modules/compose.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi2-m3.md"
+    },
+    {
+      "id": "d-xi2-m4",
+      "title": "Teks: pembersihan dan representasi",
+      "cpItems": [],
+      "weekCodes": ["D-XI2-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi2-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Feature extraction (teks)",
+          "url": "https://scikit-learn.org/stable/modules/feature_extraction.html"
+        },
+        {
+          "title": "scikit-learn: CountVectorizer",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html"
+        },
+        {
+          "title": "scikit-learn: TfidfVectorizer",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html"
+        },
+        {
+          "title": "Python: re (ekspresi reguler)",
+          "url": "https://docs.python.org/3/library/re.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi2-m4.md"
+    },
+    {
+      "id": "d-xi2-m5",
+      "title": "Klasifikasi teks",
+      "cpItems": [],
+      "weekCodes": ["D-XI2-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi2-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Naive Bayes",
+          "url": "https://scikit-learn.org/stable/modules/naive_bayes.html"
+        },
+        {
+          "title": "scikit-learn: Cross-validation",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "scikit-learn: Pipelines and composite estimators",
+          "url": "https://scikit-learn.org/stable/modules/compose.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi2-m5.md"
+    },
+    {
+      "id": "d-xi2-m6",
+      "title": "Gambar sebagai angka",
+      "cpItems": [],
+      "weekCodes": ["D-XI2-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi2-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "NumPy: numpy.array",
+          "url": "https://numpy.org/doc/stable/reference/generated/numpy.array.html"
+        },
+        {
+          "title": "scikit-learn: Nearest Neighbors",
+          "url": "https://scikit-learn.org/stable/modules/neighbors.html"
+        },
+        {
+          "title": "scikit-learn: confusion_matrix",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi2-m6.md"
+    },
+    {
+      "id": "d-xi2-m7",
+      "title": "Gagasan jaringan saraf",
+      "cpItems": [],
+      "weekCodes": ["D-XI2-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi2-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Neural network models (supervised)",
+          "url": "https://scikit-learn.org/stable/modules/neural_networks_supervised.html"
+        },
+        {
+          "title": "Python: math (fungsi matematika)",
+          "url": "https://docs.python.org/3/library/math.html"
+        },
+        {
+          "title": "Elements of AI, MinnaLearn dan University of Helsinki (bacaan tambahan; bukan sumber isi modul)",
+          "url": "https://www.elementsofai.com/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi2-m7.md"
+    },
+    {
+      "id": "d-xi2-m8",
+      "title": "Melatih jaringan kecil",
+      "cpItems": [],
+      "weekCodes": ["D-XI2-M8"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi2-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Neural network models (supervised)",
+          "url": "https://scikit-learn.org/stable/modules/neural_networks_supervised.html"
+        },
+        {
+          "title": "scikit-learn: MLPClassifier",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPClassifier.html"
+        },
+        {
+          "title": "scikit-learn: StandardScaler",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi2-m8.md"
+    },
+    {
+      "id": "d-xi2-m9",
+      "title": "Menjelaskan keputusan model",
+      "cpItems": [],
+      "weekCodes": ["D-XI2-M9"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi2-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Permutation feature importance",
+          "url": "https://scikit-learn.org/stable/modules/permutation_importance.html"
+        },
+        {
+          "title": "scikit-learn: permutation_importance",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.inspection.permutation_importance.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi2-m9.md"
+    },
+    {
+      "id": "d-xi2-m10",
+      "title": "Penyalahgunaan AI dan verifikasi konten",
+      "cpItems": [],
+      "weekCodes": ["D-XI2-M10"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi2-m9", "d-x2-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "NIST AI 100-4: Reducing Risks Posed by Synthetic Content, November 2024",
+          "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-4.pdf"
+        },
+        {
+          "title": "C2PA: Content Credentials",
+          "url": "https://c2pa.org/"
+        },
+        {
+          "title": "Breakstone dkk. (2021), Lateral reading: College students learn to critically evaluate internet sources in an online course, HKS Misinformation Review",
+          "url": "https://doi.org/10.37016/mr-2020-56"
+        },
+        {
+          "title": "Python: urllib.parse",
+          "url": "https://docs.python.org/3/library/urllib.parse.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi2-m10.md"
+    },
+    {
+      "id": "d-xi2-m11",
+      "title": "Layanan lewat API (opsional)",
+      "cpItems": [],
+      "weekCodes": ["D-XI2-M11"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi2-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "The Twelve-Factor App: III. Config",
+          "url": "https://12factor.net/config"
+        },
+        {
+          "title": "OWASP Secrets Management Cheat Sheet",
+          "url": "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html"
+        },
+        {
+          "title": "OWASP Top 10 for LLM Applications 2025",
+          "url": "https://genai.owasp.org/llm-top-10/"
+        },
+        {
+          "title": "Python: urllib.request",
+          "url": "https://docs.python.org/3/library/urllib.request.html"
+        },
+        {
+          "title": "MDN: kode status respons HTTP",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi2-m11.md"
+    },
+    {
+      "id": "d-xi2-m12",
+      "title": "Kartu model dan dokumentasi",
+      "cpItems": [],
+      "weekCodes": ["D-XI2-M12"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi2-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Mitchell dkk. (2019), Model Cards for Model Reporting, FAT* '19",
+          "url": "https://arxiv.org/abs/1810.03993"
+        },
+        {
+          "title": "Luccioni, Jernite, dan Strubell (2024), Power Hungry Processing: Watts Driving the Cost of AI Deployment?, FAccT '24",
+          "url": "https://arxiv.org/abs/2311.16863"
+        },
+        {
+          "title": "Hugging Face: Model Cards (contoh format)",
+          "url": "https://huggingface.co/docs/hub/model-cards"
+        },
+        {
+          "title": "Python: time (perf_counter)",
+          "url": "https://docs.python.org/3/library/time.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi2-m12.md"
+    },
+    {
+      "id": "d-xi2-m13",
+      "title": "Proyek mini (kelas XI semester 2)",
+      "cpItems": [],
+      "weekCodes": ["D-XI2-M13"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: kesalahan umum dan praktik yang dianjurkan (kebocoran data)",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "scikit-learn: Cross-validation",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "Mitchell dkk. (2019), Model Cards for Model Reporting, FAT* '19",
+          "url": "https://arxiv.org/abs/1810.03993"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi2-m13.md"
+    },
+    {
+      "id": "d-xi2-m14",
+      "title": "Asesmen dan refleksi (kelas XI semester 2)",
+      "cpItems": [],
+      "weekCodes": ["D-XI2-M14"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: kesalahan umum dan praktik yang dianjurkan (kebocoran data)",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi2-m14.md"
+    },
+    {
+      "id": "d-xii1-m1",
+      "title": "Merumuskan proyek akhir",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xi2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Nielsen Norman Group: User Interviews 101",
+          "url": "https://www.nngroup.com/articles/user-interviews/"
+        },
+        {
+          "title": "scikit-learn: Metrics and scoring",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m1.md"
+    },
+    {
+      "id": "d-xii1-m2",
+      "title": "Studi kasus AI I",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "WHO: Ethics and governance of artificial intelligence for health",
+          "url": "https://www.who.int/publications/i/item/9789240029200"
+        },
+        {
+          "title": "UNESCO: Guidance for generative AI in education and research",
+          "url": "https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m2.md"
+    },
+    {
+      "id": "d-xii1-m3",
+      "title": "Studi kasus AI II",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "UNESCO: Ethics of Artificial Intelligence",
+          "url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics"
+        },
+        {
+          "title": "Undang-Undang Nomor 28 Tahun 2014 tentang Hak Cipta, JDIH BPK",
+          "url": "https://peraturan.bpk.go.id/Details/38690/uu-no-28-tahun-2014"
+        },
+        {
+          "title": "scikit-learn: LinearRegression",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m3.md"
+    },
+    {
+      "id": "d-xii1-m4",
+      "title": "Hukum dan kebijakan",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m3", "d-x2-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi, JDIH BPK",
+          "url": "https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022"
+        },
+        {
+          "title": "Undang-Undang Nomor 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik, JDIH BPK",
+          "url": "https://peraturan.bpk.go.id/Details/37589/uu-no-11-tahun-2008"
+        },
+        {
+          "title": "Undang-Undang Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana, JDIH BPK",
+          "url": "https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m4.md"
+    },
+    {
+      "id": "d-xii1-m5",
+      "title": "Menyiapkan data proyek",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: train_test_split",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html"
+        },
+        {
+          "title": "NumPy: Random Generator",
+          "url": "https://numpy.org/doc/stable/reference/random/generator.html"
+        },
+        {
+          "title": "Creative Commons: CC BY 4.0 (deed, bahasa Indonesia)",
+          "url": "https://creativecommons.org/licenses/by/4.0/deed.id"
+        },
+        {
+          "title": "Portal Satu Data Indonesia",
+          "url": "https://data.go.id"
+        },
+        {
+          "title": "Gebru dkk.: Datasheets for Datasets (bacaan tambahan; bukan sumber isi modul)",
+          "url": "https://arxiv.org/abs/1803.09010"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m5.md"
+    },
+    {
+      "id": "d-xii1-m6",
+      "title": "Garis dasar dan metrik",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: DummyClassifier",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.dummy.DummyClassifier.html"
+        },
+        {
+          "title": "scikit-learn: Metrics and scoring",
+          "url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        },
+        {
+          "title": "scikit-learn: LogisticRegression",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m6.md"
+    },
+    {
+      "id": "d-xii1-m7",
+      "title": "Iterasi model I",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Cross-validation",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "scikit-learn: cross_validate",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html"
+        },
+        {
+          "title": "scikit-learn: StratifiedKFold",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.StratifiedKFold.html"
+        },
+        {
+          "title": "scikit-learn: Common pitfalls and recommended practices",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m7.md"
+    },
+    {
+      "id": "d-xii1-m8",
+      "title": "Iterasi model II",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M8"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: cross_validate",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html"
+        },
+        {
+          "title": "scikit-learn: kesalahan umum dan praktik yang dianjurkan (kebocoran data, keacakan)",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "Pineau dkk. (2020), Improving Reproducibility in Machine Learning Research (bacaan tambahan; bukan sumber isi modul)",
+          "url": "https://arxiv.org/abs/2003.12206"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m8.md"
+    },
+    {
+      "id": "d-xii1-m9",
+      "title": "Ulasan sejawat (kelas XII semester 1)",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M9"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Kapoor dan Narayanan (2022), Leakage and the Reproducibility Crisis in ML-based Science",
+          "url": "https://arxiv.org/abs/2207.07048"
+        },
+        {
+          "title": "scikit-learn: kesalahan umum dan praktik yang dianjurkan (kebocoran data, keacakan)",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m9.md"
+    },
+    {
+      "id": "d-xii1-m10",
+      "title": "Kualitas kode dan keterulangan",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M10"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "NumPy: numpy.random.default_rng",
+          "url": "https://numpy.org/doc/stable/reference/random/generator.html"
+        },
+        {
+          "title": "Python: importlib.metadata",
+          "url": "https://docs.python.org/3/library/importlib.metadata.html"
+        },
+        {
+          "title": "scikit-learn: kesalahan umum dan praktik yang dianjurkan (kebocoran data, keacakan)",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "Pineau dkk. (2020), Improving Reproducibility in Machine Learning Research (bacaan tambahan; bukan sumber isi modul)",
+          "url": "https://arxiv.org/abs/2003.12206"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m10.md"
+    },
+    {
+      "id": "d-xii1-m11",
+      "title": "Penilaian risiko dan etika proyek",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M11"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "NIST AI 100-1: Artificial Intelligence Risk Management Framework (AI RMF 1.0), Januari 2023",
+          "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf"
+        },
+        {
+          "title": "scikit-learn: cross_val_predict",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_val_predict.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m11.md"
+    },
+    {
+      "id": "d-xii1-m12",
+      "title": "Menyajikan hasil",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M12"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Matplotlib: Axes.bar",
+          "url": "https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.bar.html"
+        },
+        {
+          "title": "Matplotlib: Axes.set_ylim",
+          "url": "https://matplotlib.org/stable/api/_as_gen/matplotlib.axes.Axes.set_ylim.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m12.md"
+    },
+    {
+      "id": "d-xii1-m13",
+      "title": "Proyek (kelas XII semester 1)",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M13"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "scikit-learn: cross_validate",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html"
+        },
+        {
+          "title": "scikit-learn: kesalahan umum dan praktik yang dianjurkan (kebocoran data, keacakan)",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m13.md"
+    },
+    {
+      "id": "d-xii1-m14",
+      "title": "Asesmen dan refleksi (kelas XII semester 1)",
+      "cpItems": [],
+      "weekCodes": ["D-XII1-M14"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: kesalahan umum dan praktik yang dianjurkan (kebocoran data, keacakan)",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii1-m14.md"
+    },
+    {
+      "id": "d-xii2-m1",
+      "title": "Perencanaan proyek akhir",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m13"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025 (Proses Rekayasa)",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "scikit-learn: Cross-validation, evaluating estimator performance",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m1.md"
+    },
+    {
+      "id": "d-xii2-m2",
+      "title": "Rancangan (kelas XII semester 2)",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python: hashlib, secure hashes and message digests",
+          "url": "https://docs.python.org/3/library/hashlib.html"
+        },
+        {
+          "title": "scikit-learn: Cross-validation, evaluating estimator performance",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m2.md"
+    },
+    {
+      "id": "d-xii2-m3",
+      "title": "Sprint 1: data",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Common pitfalls and recommended practices",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "pandas: DataFrame.duplicated",
+          "url": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.duplicated.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m3.md"
+    },
+    {
+      "id": "d-xii2-m4",
+      "title": "Sprint 1: garis dasar",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: DummyClassifier",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.dummy.DummyClassifier.html"
+        },
+        {
+          "title": "scikit-learn: precision_recall_fscore_support",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_recall_fscore_support.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m4.md"
+    },
+    {
+      "id": "d-xii2-m5",
+      "title": "Sprint 2: model",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: cross_validate",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_validate.html"
+        },
+        {
+          "title": "scikit-learn: RandomForestClassifier",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m5.md"
+    },
+    {
+      "id": "d-xii2-m6",
+      "title": "Sprint 2: evaluasi",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: cross_val_predict",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_val_predict.html"
+        },
+        {
+          "title": "scikit-learn: confusion_matrix",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m6.md"
+    },
+    {
+      "id": "d-xii2-m7",
+      "title": "Sprint 3: penyempurnaan",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Tuning the decision threshold for class prediction",
+          "url": "https://scikit-learn.org/stable/modules/classification_threshold.html"
+        },
+        {
+          "title": "scikit-learn: Common pitfalls and recommended practices",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m7.md"
+    },
+    {
+      "id": "d-xii2-m8",
+      "title": "Pengujian akhir (kelas XII semester 2)",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M8"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Cross-validation, evaluating estimator performance",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "scikit-learn: Common pitfalls and recommended practices",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m8.md"
+    },
+    {
+      "id": "d-xii2-m9",
+      "title": "Dokumentasi (kelas XII semester 2)",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M9"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Mitchell dkk. (2019), Model Cards for Model Reporting, FAT* '19",
+          "url": "https://arxiv.org/abs/1810.03993"
+        },
+        {
+          "title": "Hugging Face: Model Cards (contoh format)",
+          "url": "https://huggingface.co/docs/hub/model-cards"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m9.md"
+    },
+    {
+      "id": "d-xii2-m10",
+      "title": "Ulasan etika dan privasi",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M10"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi, JDIH BPK",
+          "url": "https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022"
+        },
+        {
+          "title": "NIST AI 100-1: Artificial Intelligence Risk Management Framework (AI RMF 1.0), Januari 2023",
+          "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-1.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m10.md"
+    },
+    {
+      "id": "d-xii2-m11",
+      "title": "Ulasan sejawat (kelas XII semester 2)",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M11"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Common pitfalls and recommended practices",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "Kapoor dan Narayanan (2022), Leakage and the Reproducibility Crisis in ML-based Science",
+          "url": "https://arxiv.org/abs/2207.07048"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m11.md"
+    },
+    {
+      "id": "d-xii2-m12",
+      "title": "Presentasi (kelas XII semester 2)",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M12"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Mitchell dkk. (2019), Model Cards for Model Reporting, FAT* '19",
+          "url": "https://arxiv.org/abs/1810.03993"
+        },
+        {
+          "title": "scikit-learn: Cross-validation, evaluating estimator performance",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m12.md"
+    },
+    {
+      "id": "d-xii2-m13",
+      "title": "Portofolio dan refleksi",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M13"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python: hashlib, secure hashes and message digests",
+          "url": "https://docs.python.org/3/library/hashlib.html"
+        },
+        {
+          "title": "Pineau dkk. (2020), Improving Reproducibility in Machine Learning Research (bacaan tambahan)",
+          "url": "https://arxiv.org/abs/2003.12206"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m13.md"
+    },
+    {
+      "id": "d-xii2-m14",
+      "title": "Asesmen (kelas XII semester 2)",
+      "cpItems": [],
+      "weekCodes": ["D-XII2-M14"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["d-xii1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Common pitfalls and recommended practices",
+          "url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xii2-m14.md"
+    },
+    {
+      "id": "e-xi1-m1",
+      "title": "Mengapa komputasi kuantum; bit klasik dan acak",
+      "cpItems": [],
+      "weekCodes": ["E-XI1-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": [],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Quirk: Quantum Circuit Simulator",
+          "url": "https://algassert.com/quirk"
+        },
+        {
+          "title": "IBM Quantum Learning: Classical information",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/single-systems/classical-information"
+        },
+        {
+          "title": "IBM Quantum Learning: Quantum information",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/single-systems/quantum-information"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi1-m1.md"
+    },
+    {
+      "id": "e-xi1-m2",
+      "title": "Probabilitas dan vektor",
+      "cpItems": [],
+      "weekCodes": ["E-XI1-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi1-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Classical information",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/single-systems/classical-information"
+        },
+        {
+          "title": "IBM Quantum Learning: Quantum information",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/single-systems/quantum-information"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi1-m2.md"
+    },
+    {
+      "id": "e-xi1-m3",
+      "title": "Matriks",
+      "cpItems": [],
+      "weekCodes": ["E-XI1-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi1-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Classical information",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/single-systems/classical-information"
+        },
+        {
+          "title": "IBM Quantum Learning: Quantum information",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/single-systems/quantum-information"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi1-m3.md"
+    },
+    {
+      "id": "e-xi1-m4",
+      "title": "Bilangan kompleks dasar",
+      "cpItems": [],
+      "weekCodes": ["E-XI1-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi1-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/single-systems/quantum-information"
+        },
+        {
+          "title": "cppreference: std::complex",
+          "url": "https://en.cppreference.com/w/cpp/numeric/complex"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi1-m4.md"
+    },
+    {
+      "id": "e-xi1-m5",
+      "title": "Qubit dan keadaan",
+      "cpItems": [],
+      "weekCodes": ["E-XI1-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi1-m4", "matkom-sistem-bilangan-basis"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/single-systems/quantum-information"
+        },
+        {
+          "title": "cppreference: std::complex",
+          "url": "https://en.cppreference.com/w/cpp/numeric/complex"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi1-m5.md"
+    },
+    {
+      "id": "e-xi1-m6",
+      "title": "Superposisi dan aturan Born",
+      "cpItems": [],
+      "weekCodes": ["E-XI1-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi1-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/single-systems/quantum-information"
+        },
+        {
+          "title": "Quirk: Quantum Circuit Simulator",
+          "url": "https://algassert.com/quirk"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi1-m6.md"
+    },
+    {
+      "id": "e-xi1-m7",
+      "title": "Pengukuran",
+      "cpItems": [],
+      "weekCodes": ["E-XI1-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi1-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/single-systems/quantum-information"
+        },
+        {
+          "title": "Quirk: Quantum Circuit Simulator",
+          "url": "https://algassert.com/quirk"
+        },
+        {
+          "title": "cppreference: std::mersenne_twister_engine",
+          "url": "https://en.cppreference.com/w/cpp/numeric/random/mersenne_twister_engine"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi1-m7.md"
+    },
+    {
+      "id": "e-xi1-m8",
+      "title": "Gerbang satu qubit",
+      "cpItems": [],
+      "weekCodes": ["E-XI1-M8"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi1-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/single-systems/quantum-information"
+        },
+        {
+          "title": "Quirk: Quantum Circuit Simulator",
+          "url": "https://algassert.com/quirk"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi1-m8.md"
+    },
+    {
+      "id": "e-xi1-m9",
+      "title": "Sirkuit satu qubit dan interferensi",
+      "cpItems": [],
+      "weekCodes": ["E-XI1-M9"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi1-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/single-systems/quantum-information"
+        },
+        {
+          "title": "Quirk: Quantum Circuit Simulator",
+          "url": "https://algassert.com/quirk"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi1-m9.md"
+    },
+    {
+      "id": "e-xi1-m10",
+      "title": "Simulator sendiri I",
+      "cpItems": [],
+      "weekCodes": ["E-XI1-M10"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi1-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/single-systems/quantum-information"
+        },
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/w/cpp/container/vector"
+        },
+        {
+          "title": "TypeScript: Everyday Types",
+          "url": "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html"
+        },
+        {
+          "title": "Bun: dokumentasi",
+          "url": "https://bun.sh/docs"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi1-m10.md"
+    },
+    {
+      "id": "e-xi1-m11",
+      "title": "Simulator sendiri II",
+      "cpItems": [],
+      "weekCodes": ["E-XI1-M11"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi1-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/single-systems/quantum-information"
+        },
+        {
+          "title": "cppreference: std::linear_congruential_engine",
+          "url": "https://en.cppreference.com/w/cpp/numeric/random/linear_congruential_engine"
+        },
+        {
+          "title": "TypeScript: Everyday Types",
+          "url": "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi1-m11.md"
+    },
+    {
+      "id": "e-xi1-m12",
+      "title": "Dua qubit dan hasil kali tensor",
+      "cpItems": [],
+      "weekCodes": ["E-XI1-M12"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi1-m11", "e-xi1-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information (multiple systems)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/multiple-systems/quantum-information"
+        },
+        {
+          "title": "Quirk: Quantum Circuit Simulator",
+          "url": "https://algassert.com/quirk"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi1-m12.md"
+    },
+    {
+      "id": "e-xi1-m13",
+      "title": "Proyek mini (kelas XI semester 1)",
+      "cpItems": [],
+      "weekCodes": ["E-XI1-M13"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/single-systems/quantum-information"
+        },
+        {
+          "title": "Quirk: Quantum Circuit Simulator",
+          "url": "https://algassert.com/quirk"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi1-m13.md"
+    },
+    {
+      "id": "e-xi1-m14",
+      "title": "Asesmen dan refleksi (kelas XI semester 1)",
+      "cpItems": [],
+      "weekCodes": ["E-XI1-M14"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/single-systems/quantum-information"
+        },
+        {
+          "title": "IBM Quantum Learning: Quantum information (multiple systems)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/multiple-systems/quantum-information"
+        },
+        {
+          "title": "Quirk: Quantum Circuit Simulator",
+          "url": "https://algassert.com/quirk"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi1-m14.md"
+    },
+    {
+      "id": "e-xi2-m1",
+      "title": "Gerbang dua qubit: CNOT",
+      "cpItems": [],
+      "weekCodes": ["E-XI2-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information (multiple systems)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/multiple-systems/quantum-information"
+        },
+        {
+          "title": "IBM Quantum Learning: Quantum circuits",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/quantum-circuits/circuits"
+        },
+        {
+          "title": "Quirk: Quantum Circuit Simulator",
+          "url": "https://algassert.com/quirk"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi2-m1.md"
+    },
+    {
+      "id": "e-xi2-m2",
+      "title": "Entanglement dan keadaan Bell",
+      "cpItems": [],
+      "weekCodes": ["E-XI2-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi2-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information (multiple systems)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/multiple-systems/quantum-information"
+        },
+        {
+          "title": "IBM Quantum Learning: Quantum circuits",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/quantum-circuits/circuits"
+        },
+        {
+          "title": "Quirk: Quantum Circuit Simulator",
+          "url": "https://algassert.com/quirk"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi2-m2.md"
+    },
+    {
+      "id": "e-xi2-m3",
+      "title": "Mengukur qubit terjerat",
+      "cpItems": [],
+      "weekCodes": ["E-XI2-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi2-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information (multiple systems)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/multiple-systems/quantum-information"
+        },
+        {
+          "title": "Quirk: Quantum Circuit Simulator",
+          "url": "https://algassert.com/quirk"
+        },
+        {
+          "title": "cppreference: tipe bilangan bulat berukuran tetap (uint32_t)",
+          "url": "https://en.cppreference.com/w/cpp/types/integer"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi2-m3.md"
+    },
+    {
+      "id": "e-xi2-m4",
+      "title": "Simulator sendiri III: n qubit",
+      "cpItems": [],
+      "weekCodes": ["E-XI2-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi2-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information (multiple systems)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/multiple-systems/quantum-information"
+        },
+        {
+          "title": "cppreference: operator sizeof",
+          "url": "https://en.cppreference.com/w/cpp/language/sizeof"
+        },
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/w/cpp/container/vector"
+        },
+        {
+          "title": "The TypeScript Handbook",
+          "url": "https://www.typescriptlang.org/docs/handbook/intro.html"
+        },
+        {
+          "title": "Bun: menjalankan TypeScript",
+          "url": "https://bun.sh/docs/runtime/typescript"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi2-m4.md"
+    },
+    {
+      "id": "e-xi2-m5",
+      "title": "Gerbang fase dan rotasi (pengayaan)",
+      "cpItems": [],
+      "weekCodes": ["E-XI2-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi2-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information (single systems)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/single-systems/quantum-information"
+        },
+        {
+          "title": "Qiskit: RYGate",
+          "url": "https://quantum.cloud.ibm.com/docs/en/api/qiskit/qiskit.circuit.library.RYGate"
+        },
+        {
+          "title": "Quirk: Quantum Circuit Simulator",
+          "url": "https://algassert.com/quirk"
+        },
+        {
+          "title": "cppreference: std::complex",
+          "url": "https://en.cppreference.com/w/cpp/numeric/complex"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi2-m5.md"
+    },
+    {
+      "id": "e-xi2-m6",
+      "title": "Reversibilitas",
+      "cpItems": [],
+      "weekCodes": ["E-XI2-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi2-m5", "matkom-himpunan-relasi-fungsi"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information (multiple systems)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/multiple-systems/quantum-information"
+        },
+        {
+          "title": "Quirk: Quantum Circuit Simulator",
+          "url": "https://algassert.com/quirk"
+        },
+        {
+          "title": "cppreference: std::set",
+          "url": "https://en.cppreference.com/w/cpp/container/set"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi2-m6.md"
+    },
+    {
+      "id": "e-xi2-m7",
+      "title": "Tak dapat menggandakan dan teleportasi (konsep)",
+      "cpItems": [],
+      "weekCodes": ["E-XI2-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi2-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum teleportation",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/entanglement-in-action/quantum-teleportation"
+        },
+        {
+          "title": "IBM Quantum Learning: Quantum information (multiple systems)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/multiple-systems/quantum-information"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi2-m7.md"
+    },
+    {
+      "id": "e-xi2-m8",
+      "title": "Pengayaan: permainan CHSH",
+      "cpItems": [],
+      "weekCodes": ["E-XI2-M8"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi2-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: CHSH game",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/entanglement-in-action/chsh-game"
+        },
+        {
+          "title": "IBM Quantum Learning: Quantum information (multiple systems)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/multiple-systems/quantum-information"
+        },
+        {
+          "title": "cppreference: Pseudo-random number generation",
+          "url": "https://en.cppreference.com/w/cpp/numeric/random"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi2-m8.md"
+    },
+    {
+      "id": "e-xi2-m9",
+      "title": "Pengayaan: distribusi kunci (konsep)",
+      "cpItems": [],
+      "weekCodes": ["E-XI2-M9"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi2-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Bennett dan Brassard: Quantum cryptography: Public key distribution and coin tossing (arXiv:2003.06557)",
+          "url": "https://arxiv.org/abs/2003.06557"
+        },
+        {
+          "title": "NCSC: Quantum security technologies",
+          "url": "https://www.ncsc.gov.uk/whitepaper/quantum-key-distribution"
+        },
+        {
+          "title": "cppreference: Pseudo-random number generation",
+          "url": "https://en.cppreference.com/w/cpp/numeric/random"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi2-m9.md"
+    },
+    {
+      "id": "e-xi2-m10",
+      "title": "Oracle dan fungsi Boolean",
+      "cpItems": [],
+      "weekCodes": ["E-XI2-M10"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi2-m9", "matkom-logika-proposisi", "matkom-himpunan-relasi-fungsi"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Deutsch's algorithm",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/quantum-query-algorithms/deutsch-algorithm"
+        },
+        {
+          "title": "IBM Quantum Learning: Deutsch-Jozsa algorithm",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/quantum-query-algorithms/deutsch-jozsa-algorithm"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi2-m10.md"
+    },
+    {
+      "id": "e-xi2-m11",
+      "title": "Algoritma Deutsch",
+      "cpItems": [],
+      "weekCodes": ["E-XI2-M11"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi2-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Deutsch's algorithm",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/quantum-query-algorithms/deutsch-algorithm"
+        },
+        {
+          "title": "TypeScript: Everyday Types",
+          "url": "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html"
+        },
+        {
+          "title": "Bun: dokumentasi",
+          "url": "https://bun.sh/docs"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi2-m11.md"
+    },
+    {
+      "id": "e-xi2-m12",
+      "title": "Algoritma Deutsch-Jozsa",
+      "cpItems": [],
+      "weekCodes": ["E-XI2-M12"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi2-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Deutsch-Jozsa algorithm",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/quantum-query-algorithms/deutsch-jozsa-algorithm"
+        },
+        {
+          "title": "TypeScript: Everyday Types",
+          "url": "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html"
+        },
+        {
+          "title": "Bun: dokumentasi",
+          "url": "https://bun.sh/docs"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi2-m12.md"
+    },
+    {
+      "id": "e-xi2-m13",
+      "title": "Proyek mini (kelas XI semester 2)",
+      "cpItems": [],
+      "weekCodes": ["E-XI2-M13"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum teleportation",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/entanglement-in-action/quantum-teleportation"
+        },
+        {
+          "title": "IBM Quantum Learning: Deutsch-Jozsa algorithm",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/quantum-query-algorithms/deutsch-jozsa-algorithm"
+        },
+        {
+          "title": "IBM Quantum Learning: Quantum information (multiple systems)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/multiple-systems/quantum-information"
+        },
+        {
+          "title": "cppreference: Pseudo-random number generation",
+          "url": "https://en.cppreference.com/w/cpp/numeric/random"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi2-m13.md"
+    },
+    {
+      "id": "e-xi2-m14",
+      "title": "Asesmen dan refleksi (kelas XI semester 2)",
+      "cpItems": [],
+      "weekCodes": ["E-XI2-M14"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["e-xi2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Quantum information (multiple systems)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/multiple-systems/quantum-information"
+        },
+        {
+          "title": "IBM Quantum Learning: Quantum teleportation",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/entanglement-in-action/quantum-teleportation"
+        },
+        {
+          "title": "IBM Quantum Learning: Deutsch's algorithm",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/quantum-query-algorithms/deutsch-algorithm"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xi2-m14.md"
+    },
+    {
+      "id": "e-xii1-m1",
+      "title": "Bernstein-Vazirani",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xi2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: The Deutsch-Jozsa algorithm (termasuk Bernstein-Vazirani)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/quantum-query-algorithms/deutsch-jozsa-algorithm"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m1.md"
+    },
+    {
+      "id": "e-xii1-m2",
+      "title": "Pembalikan fase",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Grover's algorithm (Analysis)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/grover-algorithm/analysis"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m2.md"
+    },
+    {
+      "id": "e-xii1-m3",
+      "title": "Grover I",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Grover's algorithm (Introduction)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/grover-algorithm/introduction"
+        },
+        {
+          "title": "IBM Quantum Learning: Grover's algorithm (Unstructured search)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/grover-algorithm/unstructured-search"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m3.md"
+    },
+    {
+      "id": "e-xii1-m4",
+      "title": "Grover II",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Grover's algorithm (Analysis)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/grover-algorithm/analysis"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m4.md"
+    },
+    {
+      "id": "e-xii1-m5",
+      "title": "Grover III: jumlah iterasi",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m4", "matkom-pertumbuhan-fungsi"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Grover's algorithm (Analysis)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/grover-algorithm/analysis"
+        },
+        {
+          "title": "IBM Quantum Learning: Grover's algorithm (Introduction)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/grover-algorithm/introduction"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m5.md"
+    },
+    {
+      "id": "e-xii1-m6",
+      "title": "Gagasan Fourier kuantum dan Shor (konsep)",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Shor's algorithm",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/phase-estimation-and-factoring/shor-algorithm"
+        },
+        {
+          "title": "NIST: Post-Quantum Cryptography",
+          "url": "https://csrc.nist.gov/projects/post-quantum-cryptography"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m6.md"
+    },
+    {
+      "id": "e-xii1-m7",
+      "title": "Batas komputasi kuantum",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Grover's algorithm (Introduction)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/grover-algorithm/introduction"
+        },
+        {
+          "title": "Bennett, Bernstein, Brassard, Vazirani: Strengths and Weaknesses of Quantum Computing (arXiv)",
+          "url": "https://arxiv.org/abs/quant-ph/9701001"
+        },
+        {
+          "title": "NIST: Post-Quantum Cryptography",
+          "url": "https://csrc.nist.gov/projects/post-quantum-cryptography"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m7.md"
+    },
+    {
+      "id": "e-xii1-m8",
+      "title": "Derau dan dekoherensi",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M8"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Platform: View backend details",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/qpu-information"
+        },
+        {
+          "title": "IBM Quantum Platform: Exact and noisy simulation with Qiskit Aer primitives",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/simulate-with-qiskit-aer"
+        },
+        {
+          "title": "IBM Quantum Platform: Overview of noise management techniques",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/error-mitigation-and-suppression-techniques"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m8.md"
+    },
+    {
+      "id": "e-xii1-m9",
+      "title": "Pustaka Qiskit dan Python I (demonstrasi)",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M9"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Platform: Bit-ordering in the Qiskit SDK",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/bit-ordering"
+        },
+        {
+          "title": "IBM Quantum Platform: Introduction to primitives",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/primitives"
+        },
+        {
+          "title": "IBM Quantum Platform: Install Qiskit",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/install-qiskit"
+        },
+        {
+          "title": "IBM Quantum Platform: Construct circuits",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/construct-circuits"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m9.md"
+    },
+    {
+      "id": "e-xii1-m10",
+      "title": "Pustaka Qiskit dan Python II",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M10"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Platform: Grover's algorithm (tutorial)",
+          "url": "https://quantum.cloud.ibm.com/docs/en/tutorials/grovers-algorithm"
+        },
+        {
+          "title": "IBM Quantum Platform: Bit-ordering in the Qiskit SDK",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/bit-ordering"
+        },
+        {
+          "title": "IBM Quantum Platform: Construct circuits",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/construct-circuits"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m10.md"
+    },
+    {
+      "id": "e-xii1-m11",
+      "title": "Peran cloud quantum",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M11"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Platform: Plans overview",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/plans-overview"
+        },
+        {
+          "title": "IBM Quantum Platform: Fair-share scheduler",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/fair-share-scheduler"
+        },
+        {
+          "title": "IBM Quantum Platform: Monitor or cancel a job",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/monitor-job"
+        },
+        {
+          "title": "IBM Quantum Platform: Introduction to transpilation",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/transpile"
+        },
+        {
+          "title": "IBM Quantum Platform: View backend details",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/qpu-information"
+        },
+        {
+          "title": "IBM Quantum: Products and services (harga paket)",
+          "url": "https://www.ibm.com/quantum/pricing"
+        },
+        {
+          "title": "IBM Quantum Platform: FAQ",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/faq"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m11.md"
+    },
+    {
+      "id": "e-xii1-m12",
+      "title": "Demonstrasi cloud quantum oleh guru",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M12"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Platform: Run your first circuit on hardware",
+          "url": "https://quantum.cloud.ibm.com/docs/en/tutorials/hello-world"
+        },
+        {
+          "title": "IBM Quantum Platform: Sampler examples",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/sampler-examples"
+        },
+        {
+          "title": "IBM Quantum Platform: Monitor or cancel a job",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/monitor-job"
+        },
+        {
+          "title": "IBM Quantum Platform: View backend details",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/qpu-information"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m12.md"
+    },
+    {
+      "id": "e-xii1-m13",
+      "title": "Proyek mini (kelas XII semester 1)",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M13"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Platform: Exact and noisy simulation with Qiskit Aer primitives",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/simulate-with-qiskit-aer"
+        },
+        {
+          "title": "IBM Quantum Platform: View backend details",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/qpu-information"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m13.md"
+    },
+    {
+      "id": "e-xii1-m14",
+      "title": "Asesmen dan refleksi (kelas XII semester 1)",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M14"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Platform: Plans overview",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/plans-overview"
+        },
+        {
+          "title": "IBM Quantum: Products and services (harga paket)",
+          "url": "https://www.ibm.com/quantum/pricing"
+        },
+        {
+          "title": "NIST: Post-Quantum Cryptography (proyek)",
+          "url": "https://csrc.nist.gov/projects/post-quantum-cryptography"
+        },
+        {
+          "title": "IBM Quantum Platform: Exact and noisy simulation with Qiskit Aer primitives",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/simulate-with-qiskit-aer"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m14.md"
+    },
+    {
+      "id": "e-xii2-m1",
+      "title": "Membaca hasil nyata",
+      "cpItems": [],
+      "weekCodes": ["E-XII2-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "NIST/SEMATECH e-Handbook of Statistical Methods: 7.2.4.1. Confidence intervals",
+          "url": "https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm"
+        },
+        {
+          "title": "IBM Quantum Platform: qiskit.primitives.StatevectorSampler",
+          "url": "https://quantum.cloud.ibm.com/docs/en/api/qiskit/qiskit.primitives.StatevectorSampler"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii2-m1.md"
+    },
+    {
+      "id": "e-xii2-m2",
+      "title": "Mitigasi derau (konsep)",
+      "cpItems": [],
+      "weekCodes": ["E-XII2-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii2-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Platform: Overview of noise management techniques",
+          "url": "https://quantum.cloud.ibm.com/docs/en/guides/error-mitigation-and-suppression-techniques"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii2-m2.md"
+    },
+    {
+      "id": "e-xii2-m3",
+      "title": "Pengayaan: algoritma hibrida (konsep)",
+      "cpItems": [],
+      "weekCodes": ["E-XII2-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii2-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Platform: Variational Quantum Eigensolver (tutorial)",
+          "url": "https://quantum.cloud.ibm.com/docs/en/tutorials/variational-quantum-eigensolver"
+        },
+        {
+          "title": "Farhi, Goldstone, Gutmann: A Quantum Approximate Optimization Algorithm (arXiv)",
+          "url": "https://arxiv.org/abs/1411.4028"
+        },
+        {
+          "title": "Peruzzo dkk.: A variational eigenvalue solver on a quantum processor (arXiv)",
+          "url": "https://arxiv.org/abs/1304.3061"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii2-m3.md"
+    },
+    {
+      "id": "e-xii2-m4",
+      "title": "Dampak ke keamanan informasi (konsep)",
+      "cpItems": [],
+      "weekCodes": ["E-XII2-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii2-m3", "e-xii1-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "NIST: Post-Quantum Cryptography (proyek)",
+          "url": "https://csrc.nist.gov/projects/post-quantum-cryptography"
+        },
+        {
+          "title": "NIST: Post-Quantum Cryptography FAQs",
+          "url": "https://csrc.nist.gov/projects/post-quantum-cryptography/faqs"
+        },
+        {
+          "title": "IBM Quantum Learning: Shor's algorithm",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/phase-estimation-and-factoring/shor-algorithm"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii2-m4.md"
+    },
+    {
+      "id": "e-xii2-m5",
+      "title": "Etika, ekspektasi, dan karier",
+      "cpItems": [],
+      "weekCodes": ["E-XII2-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii2-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Preskill: Quantum Computing in the NISQ era and beyond (arXiv)",
+          "url": "https://arxiv.org/abs/1801.00862"
+        },
+        {
+          "title": "NIST: Post-Quantum Cryptography (proyek)",
+          "url": "https://csrc.nist.gov/projects/post-quantum-cryptography"
+        },
+        {
+          "title": "NIST: Post-Quantum Cryptography FAQs",
+          "url": "https://csrc.nist.gov/projects/post-quantum-cryptography/faqs"
+        },
+        {
+          "title": "Bennett, Bernstein, Brassard, Vazirani: Strengths and Weaknesses of Quantum Computing (arXiv)",
+          "url": "https://arxiv.org/abs/quant-ph/9701001"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii2-m5.md"
+    },
+    {
+      "id": "e-xii2-m6",
+      "title": "Proyek akhir: rancangan",
+      "cpItems": [],
+      "weekCodes": ["E-XII2-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii2-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Grover's algorithm (Analysis)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/grover-algorithm/analysis"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii2-m6.md"
+    },
+    {
+      "id": "e-xii2-m7",
+      "title": "Proyek akhir: implementasi I",
+      "cpItems": [],
+      "weekCodes": ["E-XII2-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii2-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Platform: qiskit.quantum_info.Statevector",
+          "url": "https://quantum.cloud.ibm.com/docs/en/api/qiskit/qiskit.quantum_info.Statevector"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii2-m7.md"
+    },
+    {
+      "id": "e-xii2-m8",
+      "title": "Proyek akhir: implementasi II",
+      "cpItems": [],
+      "weekCodes": ["E-XII2-M8"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii2-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Grover's algorithm (Analysis)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/grover-algorithm/analysis"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii2-m8.md"
+    },
+    {
+      "id": "e-xii2-m9",
+      "title": "Proyek akhir: pengujian dan dokumentasi",
+      "cpItems": [],
+      "weekCodes": ["E-XII2-M9"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii2-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "NIST/SEMATECH e-Handbook of Statistical Methods: 7.2.4.1. Confidence intervals",
+          "url": "https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii2-m9.md"
+    },
+    {
+      "id": "e-xii2-m10",
+      "title": "Proyek akhir: pengujian lanjutan",
+      "cpItems": [],
+      "weekCodes": ["E-XII2-M10"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii2-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Platform: qiskit.quantum_info.Statevector",
+          "url": "https://quantum.cloud.ibm.com/docs/en/api/qiskit/qiskit.quantum_info.Statevector"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii2-m10.md"
+    },
+    {
+      "id": "e-xii2-m11",
+      "title": "Proyek akhir: presentasi",
+      "cpItems": [],
+      "weekCodes": ["E-XII2-M11"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii2-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Preskill: Quantum Computing in the NISQ era and beyond (arXiv)",
+          "url": "https://arxiv.org/abs/1801.00862"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii2-m11.md"
+    },
+    {
+      "id": "e-xii2-m12",
+      "title": "Proyek akhir: portofolio",
+      "cpItems": [],
+      "weekCodes": ["E-XII2-M12"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii2-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "NIST: Post-Quantum Cryptography FAQs",
+          "url": "https://csrc.nist.gov/projects/post-quantum-cryptography/faqs"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii2-m12.md"
+    },
+    {
+      "id": "e-xii2-m13",
+      "title": "Cadangan terstruktur: tinjauan",
+      "cpItems": [],
+      "weekCodes": ["E-XII2-M13"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii2-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Preskill: Quantum Computing in the NISQ era and beyond (arXiv)",
+          "url": "https://arxiv.org/abs/1801.00862"
+        },
+        {
+          "title": "Bennett, Bernstein, Brassard, Vazirani: Strengths and Weaknesses of Quantum Computing (arXiv)",
+          "url": "https://arxiv.org/abs/quant-ph/9701001"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii2-m13.md"
+    },
+    {
+      "id": "e-xii2-m14",
+      "title": "Asesmen dan refleksi (kelas XII semester 2)",
+      "cpItems": [],
+      "weekCodes": ["E-XII2-M14"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii2-m13"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "NIST: Post-Quantum Cryptography (proyek)",
+          "url": "https://csrc.nist.gov/projects/post-quantum-cryptography"
+        },
+        {
+          "title": "IBM Quantum Learning: Grover's algorithm (Analysis)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/grover-algorithm/analysis"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii2-m14.md"
     }
   ]
 }

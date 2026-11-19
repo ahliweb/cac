@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" role="img" aria-labelledby="t d">
+  <title id="t">Dua lingkaran sortir: merah dan lingkaran</title>
+  <desc id="d">Dua lingkaran bertumpang. Lingkaran kiri bertanda merah, lingkaran kanan bertanda lingkaran. Bagian tengah berisi kartu merah lingkaran. Hanya kiri berisi merah segitiga dan merah persegi. Hanya kanan berisi biru lingkaran dan hijau lingkaran. Di luar kedua lingkaran ada kartu biru segitiga.</desc>
+  <rect width="640" height="400" fill="#ffffff"/>
+  <defs>
+    <marker id="ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a5d9f"/>
+    </marker>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#b3261e"/>
+    </marker>
+    <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1b7a3d"/>
+    </marker>
+    <marker id="ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#222222"/>
+    </marker>
+  </defs>
+  <circle cx="240" cy="200" r="140" fill="#fdeeee" stroke="#b3261e" stroke-width="3"/>
+  <circle cx="400" cy="200" r="140" fill="#eef3fb" stroke="#2a5d9f" stroke-width="3"/>
+  <text x="170" y="36" font-family="sans-serif" font-size="18" fill="#b3261e" text-anchor="middle" font-weight="bold">merah</text>
+  <text x="470" y="36" font-family="sans-serif" font-size="18" fill="#2a5d9f" text-anchor="middle" font-weight="bold">lingkaran</text>
+  <circle cx="320" cy="190" r="18" fill="#f6c9c6" stroke="#b3261e" stroke-width="3"/>
+  <text x="320" y="228" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">merah</text>
+  <text x="320" y="244" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">lingkaran</text>
+  <polygon points="180,132 198,164.4 162,164.4" fill="#f6c9c6" stroke="#b3261e" stroke-width="3"/>
+  <text x="180" y="188" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">merah segitiga</text>
+  <rect x="163.8" y="223.8" width="32.4" height="32.4" rx="0" fill="#f6c9c6" stroke="#b3261e" stroke-width="3"/>
+  <text x="180" y="278" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">merah persegi</text>
+  <circle cx="460" cy="150" r="18" fill="#cfe0f5" stroke="#2a5d9f" stroke-width="3"/>
+  <text x="460" y="188" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">biru lingkaran</text>
+  <circle cx="460" cy="240" r="18" fill="#cdeed7" stroke="#1b7a3d" stroke-width="3"/>
+  <text x="460" y="278" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">hijau lingkaran</text>
+  <polygon points="590,312 608,344.4 572,344.4" fill="#cfe0f5" stroke="#2a5d9f" stroke-width="3"/>
+  <text x="590" y="372" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">biru segitiga</text>
+  <text x="590" y="388" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">(luar)</text>
+</svg>

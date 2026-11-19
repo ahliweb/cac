@@ -1,5 +1,5 @@
 {
-  "syllabusVersion": "1.2.0",
+  "syllabusVersion": "1.4.1",
   "syllabusDate": "2026-11-19",
   "sourceSection": "bagian 4",
   "mappings": [
@@ -338,7 +338,7 @@
     },
     {
       "cpCode": "F-LD-g",
-      "topic": "hukum (UU ITE, UU PDP)",
+      "topic": "hukum (UU ITE, KUHP UU 1/2023, UU PDP)",
       "weeksText": "B-XI2-M10; B-XII2-M10; C-XII1-M11",
       "weeks": ["B-XI2-M10", "B-XII2-M10", "C-XII1-M11"],
       "tracksText": "B, C (parsial)",
@@ -541,10 +541,10 @@
     {
       "track": "D",
       "cpCode": "F-LD-g",
-      "topic": "pelindungan data pribadi dan UU ITE",
+      "topic": "pelindungan data pribadi, UU ITE, dan ketentuan pidana siber dalam KUHP",
       "weeksText": "D-X2-M3; D-XII1-M4",
       "weeks": ["D-X2-M3", "D-XII1-M4"],
-      "level": "Rendah: pelindungan data pribadi dan UU ITE sebatas pokok."
+      "level": "Rendah: pelindungan data pribadi, UU ITE, dan ketentuan pidana siber dalam KUHP sebatas pokok."
     },
     {
       "track": "D",

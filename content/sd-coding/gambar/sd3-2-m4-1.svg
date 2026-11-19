@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 340" width="640" height="340" role="img" aria-labelledby="t d">
+  <title id="t">Diagram gambar buah: satu kotak sama dengan satu kartu</title>
+  <desc id="d">Tiga baris kotak sama besar yang berderet dari kiri. Baris mangga punya lima kotak kuning, baris pisang empat kotak oranye, dan baris jeruk tiga kotak hijau. Di bawah tertulis satu kotak sama dengan satu kartu.</desc>
+  <rect width="640" height="340" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="20" fill="#222222">
+    <text x="40" y="82">mangga</text>
+    <text x="40" y="162">pisang</text>
+    <text x="40" y="242">jeruk</text>
+  </g>
+  <g stroke="#555555" stroke-width="2">
+    <rect x="160" y="50" width="56" height="48" fill="#ffd54f"/>
+    <rect x="220" y="50" width="56" height="48" fill="#ffd54f"/>
+    <rect x="280" y="50" width="56" height="48" fill="#ffd54f"/>
+    <rect x="340" y="50" width="56" height="48" fill="#ffd54f"/>
+    <rect x="400" y="50" width="56" height="48" fill="#ffd54f"/>
+    <rect x="160" y="130" width="56" height="48" fill="#ff9f43"/>
+    <rect x="220" y="130" width="56" height="48" fill="#ff9f43"/>
+    <rect x="280" y="130" width="56" height="48" fill="#ff9f43"/>
+    <rect x="340" y="130" width="56" height="48" fill="#ff9f43"/>
+    <rect x="160" y="210" width="56" height="48" fill="#8bc34a"/>
+    <rect x="220" y="210" width="56" height="48" fill="#8bc34a"/>
+    <rect x="280" y="210" width="56" height="48" fill="#8bc34a"/>
+  </g>
+  <text x="40" y="310" font-family="sans-serif" font-size="18" fill="#222222">1 kotak = 1 kartu</text>
+</svg>

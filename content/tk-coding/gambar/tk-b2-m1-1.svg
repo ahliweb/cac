@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 520" width="600" height="520" role="img" aria-labelledby="t d">
+  <title id="t">Maju, belok, ulangi</title>
+  <desc id="d">Kisi lima kali lima petak dilihat dari atas. Robot berdiri di petak pojok kanan bawah menghadap ke atas, ditandai mulai. Bendera tujuan ada di petak keempat dari kiri pada baris ketiga dari atas. Di bawah kisi ada empat kotak kosong putus-putus berpanah dan empat kartu untuk ditempel: ulang x2, maju, maju, dan belok kiri.</desc>
+  <rect width="600" height="520" fill="#ffffff"/>
+  <rect x="20" y="12" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="76" y="12" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="132" y="12" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="188" y="12" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="244" y="12" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="20" y="68" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="76" y="68" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="132" y="68" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="188" y="68" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="244" y="68" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="20" y="124" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="76" y="124" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="132" y="124" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="188" y="124" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="244" y="124" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="20" y="180" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="76" y="180" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="132" y="180" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="188" y="180" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="244" y="180" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="20" y="236" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="76" y="236" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="132" y="236" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="188" y="236" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="244" y="236" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <path d="M216 174 V130" stroke="#333333" stroke-width="5" stroke-linecap="round"/>
+  <path d="M216 130 L238 140 L216 150 Z" fill="#e53935" stroke="#333333" stroke-width="3" stroke-linejoin="round"/>
+  <g transform="translate(272,264)">
+    <rect x="-20" y="-20" width="40" height="40" rx="8" fill="#b3e5fc" stroke="#333333" stroke-width="4"/>
+    <path d="M-12 -2 L0 -18 L12 -2 Z" fill="#333333"/>
+    <circle cx="-8" cy="10" r="4" fill="#333333"/><circle cx="8" cy="10" r="4" fill="#333333"/>
+  </g>
+  <text x="312" y="270" font-family="sans-serif" font-size="20" text-anchor="start" fill="#333333">mulai</text>
+  <rect x="30" y="310" width="70" height="56" rx="10" fill="none" stroke="#333333" stroke-width="4" stroke-dasharray="10 8"/>
+  <path d="M102 338 H118 M110 329 L118 338 L110 347" fill="none" stroke="#333333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="122" y="310" width="70" height="56" rx="10" fill="none" stroke="#333333" stroke-width="4" stroke-dasharray="10 8"/>
+  <path d="M194 338 H210 M202 329 L210 338 L202 347" fill="none" stroke="#333333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="214" y="310" width="70" height="56" rx="10" fill="none" stroke="#333333" stroke-width="4" stroke-dasharray="10 8"/>
+  <path d="M286 338 H302 M294 329 L302 338 L294 347" fill="none" stroke="#333333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="306" y="310" width="70" height="56" rx="10" fill="none" stroke="#333333" stroke-width="4" stroke-dasharray="10 8"/>
+  <line x1="20" y1="384" x2="580" y2="384" stroke="#999999" stroke-width="2" stroke-dasharray="4 6"/>
+  <text x="300" y="408" font-family="sans-serif" font-size="18" text-anchor="middle" fill="#333333">kartu untuk ditempel</text>
+  <rect x="30" y="420" width="90" height="82" rx="10" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <path d="M57 440 A15 15 0 1 1 44 449" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round"/>
+  <path d="M35 444 L45 450 L51 438" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="93" y="466" font-family="sans-serif" font-size="26" text-anchor="middle" fill="#333333">x2</text>
+  <text x="75" y="492" font-family="sans-serif" font-size="18" text-anchor="middle" fill="#333333">ulang</text>
+  <rect x="134" y="420" width="90" height="82" rx="10" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <path d="M179 470 V434 M169 444 L179 432 L189 444" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="179" y="492" font-family="sans-serif" font-size="18" text-anchor="middle" fill="#333333">maju</text>
+  <rect x="238" y="420" width="90" height="82" rx="10" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <path d="M283 470 V434 M273 444 L283 432 L293 444" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="283" y="492" font-family="sans-serif" font-size="18" text-anchor="middle" fill="#333333">maju</text>
+  <rect x="342" y="420" width="90" height="82" rx="10" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <path d="M395 470 V448 Q395 440 387 440 H369 M377 430 L367 440 L377 450" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="387" y="492" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#333333">belok kiri</text>
+</svg>

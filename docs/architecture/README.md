@@ -5,8 +5,8 @@ what the four layers are, how a curriculum fact moves through them, the
 rules that keep the dependency graph one-way, and what this repository
 deliberately does not attempt to be.
 
-It is written against the repository as it exists at release v1.0.0
-(issues #1-#25 complete; issue #26, the release itself, in progress):
+The four-layer shape was set at release v1.0.0 and still holds with seven
+programmes (see "More programmes and learner material"):
 `src/schema/`, `src/domain/`, `src/cli/`, `src/render/`, and `data/` all
 carry their full, real content. See `repository-map.md` for the
 exhaustive directory-by-directory version of the same description.
@@ -22,10 +22,14 @@ data/<program>/*.json  --->  src/schema/  --->  src/domain/  --->  src/render/
 ```
 
 1. **`data/<program>/*.json`** (registry: `data/programs.json`, ADR-0006) — the curriculum corpus itself: inert JSON files with
-   no executable logic. Two corpora today: `data/osn/`, 22 files (topic families, weeks, gates,
-   references, assessment model, KPI definitions, playbooks, and more), and
-   `data/sma-coding/`, 6 files transcribed from the approved SMA coding
-   syllabus (CP elements, tracks, structure, weekly plan, CP mapping, OSN bridge).
+   no executable logic. Seven corpora today, one per registered programme: `data/osn/` (22 files: topic families, weeks, gates,
+   references, assessment model, KPI definitions, playbooks, and more),
+   `data/sma-coding/` (8 files plus the optional `modules.json`, syllabus v1.4.1),
+   `data/tk-coding/` (7, v1.0.3), `data/kuliah-coding/` (6, v1.2.0),
+   `data/dewasa-coding/` (8, v1.2.0), `data/sd-coding/` (5, v1.1.0) and
+   `data/smp-coding/` (7, v1.2.0), each transcribed from the programme's
+   approved `docs/programs/<id>/silabus.md` (CP elements, tracks or levels,
+   structure, weekly or module plan, CP mapping, bridges).
 2. **`src/schema/`** — Zod schemas that are the single source of truth for
    both runtime validation and the static TypeScript types inferred from
    them (see ADR-0003). A schema describes the shape a data file must have
@@ -153,37 +157,55 @@ under `src/` or `data/`:
   schema importing from `src/domain/`, is an architecture violation
   regardless of how convenient it looks locally.
 
-## Direction: more programmes and learner material
+## More programmes and learner material
 
-Two decisions accepted on 2026-11-18 extend this architecture; their
-implementation is tracked in milestones M7–M9 (issues #49–#55). The
-programme registry and `--program` selector (#50) and the student learner
-sheet (`osn render lembar-siswa`, #53) and the learning-module index,
-renderer and pilot module (`osn render modul`, #54) have landed; the
-remaining items below are still direction, not current state:
+Three decisions accepted on 2026-11-18 and after extend this architecture.
+Their state today:
 
-- **ADR-0006** — the repository becomes multi-programme: a programme
-  registry, one corpus per programme under `data/<program>/`, and a
-  `--program` selector on the CLI. The first additional programme is a
-  coding programme for senior high schools (SMA), encoded only after its
-  draft syllabus is approved.
+- **ADR-0006** — the repository is multi-programme: a programme
+  registry (`data/programs.json`, seven programmes), one corpus per programme under
+  `data/<program>/`, and a `--program` selector on the CLI. A programme is
+  encoded only after its syllabus is approved by the owner; all six coding
+  programmes are (2026-11-19).
 - **ADR-0007** — learner modules are *authored* content, kept apart from
   the transcribed corpus, and carry a `draf` → `ditinjau` → `disetujui`
   review lifecycle that only a human can complete. Implemented in #54:
   `data/<program>/modules.json` (optional per programme, validated by
   `src/schema/module.ts` and `osn validate`), bodies under
   `content/<program>/modules/`, `osn render modul` with the `DRAF` banner,
-  and `bun run check:module-code` for the C++ examples. All ten OSN
-  modules exist (#55) and were approved by the programme owner on
-  2026-11-18.
-
+  and `bun run check:module-code` for the C++, Arduino and Python examples
+  (syntax only for the last two). All ten OSN modules exist (#55) and were
+  approved by the programme owner on 2026-11-18. Each of the six coding
+  programmes has its own index schema and `modules.json`, and as of
+  2026-11-19 their 599 modules (`tk-coding` 48, `sd-coding` 168,
+  `smp-coding` 84, `sma-coding` 239, `kuliah-coding` 24, `dewasa-coding` 36)
+  are all `draf` awaiting owner review (#125); `tk-coding` and `sd-coding`
+  modules are teacher guides with a learner sheet and SVG illustrations in
+  `content/<program>/lembar/` and `gambar/`. A module body has no `# ` title
+  and no `## Rujukan` section (both come from the index), and
+  `bun run check:learner-assets` fails on a duplicate title.
 - **ADR-0008** — each programme gets its own schemas, audit and (when its
   source is tabular) fidelity module, wired through one programme table,
   `PROGRAM_MODULES` in `src/cli/program-registry.ts`, which `osn validate`
-  and `bun run check:fidelity` use. Implemented in #140 for `osn` and
-  `sma-coding`; the five further coding programmes add one entry each.
+  and `bun run check:fidelity` use. Implemented in #140: all seven programmes
+  have a table entry, and the six coding programmes have a fidelity module
+  (`src/cli/fidelity/<id>.ts`).
+- **ADR-0010** — bridge tables name week, course and module codes of
+  neighbouring programmes in prose cells; `osn validate` scans the bridge
+  files a programme registers (`crossProgramScan` in its table entry) and
+  reports every code that does not exist in the corpus it belongs to
+  (`src/domain/cross-program-refs.ts`; code sets loaded by
+  `loadCrossProgramCodes` in `src/cli/program-loader.ts`). A narrow exception
+  to ADR-0008 (only ids are read, never the other programme's schema or
+  audit), following the OSN topic-family check of `sma-coding` (FR-29).
+  Implemented in #177.
 
-Neither of the first two decisions changes the boundaries below: learner sheets and
+AI-use policy is likewise per programme (decision of #139): in each
+programme's own syllabus, and for OSN in
+`docs/operations/kebijakan-ai-osn.md`. Research documents for the
+cross-programme material live in `docs/riset/`.
+
+None of these decisions changes the boundaries below: learner sheets and
 modules are rendered Markdown, not an LMS, and no learner data is stored.
 
 ## Out of scope

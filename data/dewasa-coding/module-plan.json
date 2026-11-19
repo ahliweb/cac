@@ -1,5 +1,5 @@
 {
-  "syllabusVersion": "1.0.0",
+  "syllabusVersion": "1.2.0",
   "syllabusDate": "2026-11-19",
   "sourceSection": "bagian 4-7",
   "modules": [
@@ -59,8 +59,8 @@
       "number": 6,
       "title": "AI untuk produktivitas kerja",
       "hours": 5,
-      "outcome": "menulis permintaan jelas; meminta draf rumus atau skrip; memeriksa dan menguji keluaran; mengenali halusinasi; menjaga data",
-      "portfolioOutput": "catatan perbandingan keluaran AI dengan hasil uji",
+      "outcome": "menulis permintaan jelas; meminta draf rumus atau skrip; memeriksa dan menguji keluaran; mengenali halusinasi; menjaga data; mencatat alat, versi, dan perintah yang dipakai; menyadari bahwa hasil tidak identik antar permintaan; menguji dengan data sintetis sebelum hasil dipakai",
+      "portfolioOutput": "catatan perbandingan keluaran AI dengan hasil uji, memuat alat, versi, dan perintah",
       "prerequisites": ["DW-PKJ-M5"]
     },
     {
@@ -139,6 +139,22 @@
       "prerequisites": ["DW-PRO-M4"]
     },
     {
+      "code": "DW-PRO-M13",
+      "track": "PRO",
+      "number": 13,
+      "title": "Rekayasa perangkat lunak berbantuan AI",
+      "hours": 8,
+      "outcome": "menulis spesifikasi dan uji sebelum meminta kode dari asisten AI; meninjau kode hasil AI (kebenaran, keamanan, kebergantungan) dan menolak yang tidak dipahami; memeriksa keberadaan dan reputasi paket sebelum dipasang (paket fiktif); memakai analisis kode statis dan uji otomatis sebagai gerbang; mencatat alat, versi, dan perintah; mengikuti kebijakan penggunaan AI tim; mengenal agen kode dengan batas kewenangan dan tinjauan manusia",
+      "skkniUnitCodes": [
+        "J.620100.009.01",
+        "J.620100.033.02",
+        "J.620100.032.01",
+        "J.620100.036.02",
+        "J.620100.019.02"
+      ],
+      "prerequisites": ["DW-PRO-M5"]
+    },
+    {
       "code": "DW-PRO-M6",
       "track": "PRO",
       "number": 6,
@@ -146,7 +162,7 @@
       "hours": 10,
       "outcome": "kelas dan objek; memakai pustaka siap pakai",
       "skkniUnitCodes": ["J.620100.018.02", "J.620100.019.02", "J.620100.003.01"],
-      "prerequisites": ["DW-PRO-M5"]
+      "prerequisites": ["DW-PRO-M13"]
     },
     {
       "code": "DW-PRO-M7",

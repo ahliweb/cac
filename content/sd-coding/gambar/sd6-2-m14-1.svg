@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 240" width="540" height="240" role="img" aria-labelledby="t d">
+  <title id="t">Peta isi semester 2 kelas 6</title>
+  <desc id="d">Dua baris kotak. Baris pertama, literasi dan etika KA: cara kerja KA, dampak KA, aturan KA, dan foto dan suara. Baris kedua, mesin kartu: melatih dan menguji, data timpang, batas mesin, dan proyek.</desc>
+  <rect width="540" height="240" fill="#ffffff"/>
+  <text x="270" y="24" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Literasi dan etika KA</text>
+  <g font-family="sans-serif" font-size="13" font-weight="bold" fill="#222222" text-anchor="middle">
+    <rect x="10" y="36" width="122" height="60" rx="6" fill="#e8f0fb" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="71" y="62">Cara kerja</text>
+    <text x="71" y="80">KA</text>
+    <rect x="144" y="36" width="122" height="60" rx="6" fill="#e8f0fb" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="205" y="62">Dampak</text>
+    <text x="205" y="80">KA</text>
+    <rect x="278" y="36" width="122" height="60" rx="6" fill="#e8f0fb" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="339" y="62">Aturan</text>
+    <text x="339" y="80">KA</text>
+    <rect x="412" y="36" width="118" height="60" rx="6" fill="#e8f0fb" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="471" y="62">Foto dan</text>
+    <text x="471" y="80">suara</text>
+  </g>
+  <text x="270" y="134" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Mesin kartu</text>
+  <g font-family="sans-serif" font-size="13" font-weight="bold" fill="#222222" text-anchor="middle">
+    <rect x="10" y="146" width="122" height="60" rx="6" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+    <text x="71" y="172">Melatih dan</text>
+    <text x="71" y="190">menguji</text>
+    <rect x="144" y="146" width="122" height="60" rx="6" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+    <text x="205" y="172">Data</text>
+    <text x="205" y="190">timpang</text>
+    <rect x="278" y="146" width="122" height="60" rx="6" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+    <text x="339" y="172">Batas</text>
+    <text x="339" y="190">mesin</text>
+    <rect x="412" y="146" width="118" height="60" rx="6" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+    <text x="471" y="181">Proyek</text>
+  </g>
+</svg>

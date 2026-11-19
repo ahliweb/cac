@@ -1,9 +1,11 @@
 # Riset Ilmu Kognitif tentang Cara Belajar Efektif
 
-- **Version:** v0.1.0
+- **Version:** v0.2.1
 - **Last updated:** 2026-11-19
 - **Status:** **DRAF** (riset, bukan keputusan pemilik). Issue #133. Konten karangan menurut [ADR-0007](../architecture/adr/0007-authored-learning-content.md).
 - **Changelog:**
+  - v0.2.1 (2026-11-19): catatan status bagian 8 dimutakhirkan (sinkron dokumen #124): versi silabus sesuai `data/programs.json` dan keberadaan modul belajar; isi riset, rekomendasi, dan daftar pustaka tidak diubah.
+  - v0.2.0 (2026-11-19): status program disesuaikan dengan keadaan repositori (bagian 8): lima program coding tk, sd, smp, kuliah, dewasa kini disetujui pemilik, terdaftar, dan ter-encode; sma-coding silabus v1.3.0; celah kebijakan AI OSN ditangani (PR #159). Isi riset, rekomendasi, dan daftar pustaka tidak diubah; rekomendasi pada 8.3 dan 8.4 ditulis dari dokumen yang dibaca saat riset dan belum diperiksa ulang terhadap silabus yang disetujui.
   - v0.1.0 (2026-11-19): draf awal. Metode dan skala bukti; sembilan kelompok prinsip belajar; verifikasi Prof. Stella Christie; delapan mitos; riset pendidikan komputasi; perkembangan usia; rekomendasi dan celah per program; daftar pustaka dengan status verifikasi.
 
 > **DRAF, bukan keputusan pemilik dan bukan materi resmi lembaga mana pun.**
@@ -607,6 +609,18 @@ Pembedaan: **K** = didukung bukti kuat (`[A]` atau `[B]` untuk prinsipnya);
 **M** = masuk akal tetapi bukti terbatas untuk pemrograman atau untuk usia itu
 (`[inferensi]`).
 
+**Catatan status (v0.2.0, 2026-11-19).** Bagian 8 ditulis ketika hanya `osn`
+dan `sma-coding` ada di `main`. Sekarang tujuh program terdaftar
+(`data/programs.json`, per 2026-11-19): `osn` 2.0, `sma-coding` 1.4.1,
+`tk-coding` 1.0.2, `sd-coding` 1.1.0, `smp-coding` 1.2.0, `kuliah-coding` 1.2.0,
+dan `dewasa-coding` 1.2.0; peta jenjang di
+[`docs/programs/README.md`](../programs/README.md). Modul belajar enam program
+coding juga sudah ada sebagai draf (599 modul: `tk-coding` 48, `sd-coding` 168,
+`smp-coding` 84, `sma-coding` 239, `kuliah-coding` 24, `dewasa-coding` 36;
+`data/<id>/modules.json`), belum ditinjau pemilik. Rekomendasi di bawah
+tetap seperti ditulis dan **belum dicocokkan ulang** dengan silabus yang
+disetujui maupun dengan modul itu, kecuali yang dicatat tersendiri.
+
 ### 8.1 OSN (`data/osn/`, `docs/silabus/`)
 
 Dokumen dibaca pada 2026-11-19. Isi transkripsi **tidak diubah**; yang
@@ -638,7 +652,9 @@ dicatat hanya kesesuaian dan celah.
 3. Tidak ada kebijakan pemakaian AI generatif oleh siswa dan mentor
    dalam dokumen OSN yang dibaca (`grep` istilah terkait di
    `docs/silabus/04` dan `07` tidak menemukan kebijakan); bukti awal 6.6
-   menunjukkan risiko. `M`; keputusan pemilik.
+   menunjukkan risiko. `M`; keputusan pemilik. **Status v0.2.0:** ditangani
+   oleh [`docs/operations/kebijakan-ai-osn.md`](../operations/kebijakan-ai-osn.md)
+   (PR #159, issue #139), di lapisan prosedur operasional.
 4. Tidak ada panduan tidur dan beban istirahat pada fase intensif
    (`learning-load.json` memuat 2 sesi 120 menit dan 4 sampai 8 jam latihan
    mandiri per minggu, tanpa catatan istirahat). Bukti hanya korelasional
@@ -648,7 +664,7 @@ dicatat hanya kesesuaian dan celah.
 
 ### 8.2 `sma-coding` (`docs/programs/sma-coding/silabus.md`, `data/sma-coding/`)
 
-Dibaca sebagian (README, pencarian kata kunci, dan baris terkait pada silabus; tidak dibaca utuh): silabus v1.2 (disetujui pemilik 2026-11-19); pola tiap semester
+Dibaca sebagian (README, pencarian kata kunci, dan baris terkait pada silabus; tidak dibaca utuh): silabus v1.2 (disetujui pemilik 2026-11-19; sejak itu direvisi ke v1.3.0, #139); pola tiap semester
 (minggu 1 sampai 12 materi, 13 proyek mini, 14 asesmen dan refleksi);
 asesmen formatif fondasi; jurnal; kerja berpasangan (mis. M12 Git dan
 kolaborasi dasar); modul M11 AI generatif dan verifikasi pada silabus.
@@ -667,9 +683,9 @@ Celah: asesmen formatif belum dinyatakan sebagai uji mengingat kembali
 berjarak; proyek mini dan refleksi tidak menyebut mekanisme umpan balik yang
 berisi langkah berikutnya (3.8).
 
-### 8.3 `kuliah-coding` (`docs/programs/kuliah-coding/`, status DRAF)
+### 8.3 `kuliah-coding` (`docs/programs/kuliah-coding/`, silabus v1.1.0 disetujui dan terdaftar)
 
-Draf tiga jalur (U, I, K) dalam SKS; hanya bagian awal draf dan riset yang dibaca pada 2026-11-19. Rekomendasi:
+Draf tiga jalur (U, I, K) dalam SKS, yang kini menjadi silabus v1.1.0 disetujui; hanya bagian awal draf dan riset yang dibaca pada 2026-11-19. Rekomendasi:
 
 - Pemrograman berpasangan (`K`, bukti terkuat pada mahasiswa; Hanks dkk., 2011).
 - Soal bercampur dan kuis kumulatif untuk jalur kompetitif (K), dengan
@@ -680,12 +696,17 @@ Draf tiga jalur (U, I, K) dalam SKS; hanya bagian awal draf dan riset yang dibac
   (3.4).
 
 Celah: draf belum memuat rancangan asesmen berjarak atau kebijakan AI
-`[belum terverifikasi]` (draf besar, hanya dibaca bagian awal).
+`[belum terverifikasi]` (draf besar, hanya dibaca bagian awal). Status v0.2.0:
+silabus v1.1.0 memuat penguatan kebijakan AI (bagian 6.3-6.5); asesmen
+berjarak belum dicek ulang.
 
-### 8.4 `tk`, `sd`, `smp`, `dewasa`-coding (sedang disusun paralel; rujuk sebagai rencana)
+### 8.4 `tk`, `sd`, `smp`, `dewasa`-coding (kini disetujui dan terdaftar)
 
-Dokumen belum ada di `main` saat riset ini disusun; semua rekomendasi
-berikut berstatus rencana.
+Dokumen belum ada di `main` saat riset ini disusun, sehingga semua rekomendasi
+berikut ditulis sebagai rencana. Sejak itu keempatnya disetujui pemilik,
+terdaftar, dan ter-encode (`tk-coding` v1.0.0, `sd-coding` v1.0.0,
+`smp-coding` v1.1.0, `dewasa-coding` v1.1.0); rekomendasi belum dicocokkan
+ulang dengan silabus yang disetujui.
 
 | Program | Rekomendasi | Jenis |
 | --- | --- | --- |

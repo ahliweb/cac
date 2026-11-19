@@ -1,9 +1,12 @@
 # Rancangan Seri Modul Cloud Computing untuk Program Coding SMA
 
-- **Version:** v0.3.0
+- **Version:** v0.3.1
 - **Last updated:** 2026-11-19
-- **Status:** Rancangan DISETUJUI pemilik 2026-11-19 beserta ketujuh rekomendasi (issue #89); tujuh modul draf `cloud-*` ada di repositori sejak 2026-11-19 (PR #117), terindeks di `data/sma-coding/modules.json`, berstatus draf sampai ditinjau pemilik; modul yang kelak ditulis berstatus draf sampai ditinjau pemilik
+- **Status:** Rancangan DISETUJUI pemilik 2026-11-19 beserta ketujuh rekomendasi (issue #89); tujuh modul draf `cloud-*` ada di `content/sma-coding/modules/` (PR #117) dan terindeks di `data/sma-coding/modules.json`, berstatus draf sampai ditinjau pemilik
 - **Changeset:** Status: tujuh modul draf `cloud-*` masuk repositori dan terindeks (PR #117).
+
+> **Catatan status (2026-11-19, sinkron dokumen #124).** Kalimat "modulnya belum ditulis ke repositori" di blok kutipan bawah adalah riwayat saat persetujuan: tujuh modul `cloud-*` kini ada di `content/sma-coding/modules/` dan di `data/sma-coding/modules.json`, semua `draf`, belum ditinjau. Baris bagian 6 "`data/sma-coding/modules.json` belum ada" adalah riwayat: indeks sudah ada (239 entri). Fakta layanan penyedia cloud di modul bertanggal; butir yang perlu dicek peninjau: [`../catatan-tinjauan-modul.md`](../catatan-tinjauan-modul.md).
+> Keputusan dan kontrak yang disetujui pemilik di dokumen ini tidak berubah; yang diperbarui hanya klausa status yang basi.
 
 > **Rancangan disetujui pemilik pada 2026-11-19** (dialog pilihan, dicatat
 > di komentar issue #89) beserta **ketujuh rekomendasi** di bagian 7
@@ -283,6 +286,7 @@ Batasan:
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v0.3.1 | 2026-11-19 | Sinkron dokumen (#124): catatan status; klausa "belum ditulis" dan "indeks belum ada" ditandai riwayat. Isi rancangan tidak berubah. |
 | v0.3.0 | 2026-11-19 | Status: tujuh modul draf `cloud-*` masuk repositori dan terindeks (PR #117). |
 | v0.2.0 | 2026-11-19 | Rancangan disetujui pemilik beserta ketujuh rekomendasi (issue #89); status, kotak catatan, dan pertanyaan terbuka diperbarui; kode minggu dipetakan dari v1.0 ke v1.1 (tabel padanan silabus bagian 3.0): `B-X2-M3` (DOM) menjadi `B-X2-M6`, contoh kode di bagian 6 `A-X1-M3` menjadi `A-X1-M9`; kode kelas XI dan XII tidak berubah. |
 | v0.1.0 | 2026-11-18 | Rancangan awal (issue #89): tujuan, tujuh modul dengan pemetaan minggu dan butir CP, opsi praktik tanpa akun siswa dengan rekomendasi, aturan konten, kebutuhan skema indeks, pertanyaan terbuka, sumber. Status DRAF. |

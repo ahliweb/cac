@@ -35,11 +35,11 @@ async function runCli(args: readonly string[]): Promise<CliResult> {
 }
 
 describe("osn validate with the sma-coding programme", () => {
-  test("--program sma-coding validates its seven files, exit 0", async () => {
+  test("--program sma-coding validates its eight files, exit 0", async () => {
     const result = await runCli(["validate", "--program", "sma-coding"]);
     expect(result.exitCode).toBe(0);
     expect(result.stdout).toContain('programme "sma-coding"');
-    expect(result.stdout).toContain("7 data file(s) validated, 0 problem(s) found");
+    expect(result.stdout).toContain("8 data file(s) validated, 0 problem(s) found");
   });
 
   test("--program sma-coding --json reports ok and no unregistered file", async () => {
@@ -52,7 +52,7 @@ describe("osn validate with the sma-coding programme", () => {
     };
     expect(json.ok).toBe(true);
     expect(json.program).toBe("sma-coding");
-    expect(json.summary.filesValidated).toBe(7);
+    expect(json.summary.filesValidated).toBe(8);
     expect(json.summary.filesUnregistered).toBe(0);
   });
 
@@ -94,6 +94,25 @@ describe("osn validate with the sma-coding programme", () => {
 });
 
 // `plan` and `render lembar-siswa` support sma-coding since #77 (tests/integration/cli-sma-plan.test.ts).
+describe("osn validate: cross-programme codes in the sma-coding bridge (ADR-0010, #177)", () => {
+  test("an smp-coding week that does not exist is reported with exit 1", async () => {
+    const dir = await mkdtemp(join(tmpdir(), "sma-coding-crossref-fixture-"));
+    try {
+      await cp(join(REPO_ROOT, "data", "sma-coding"), dir, { recursive: true });
+      const path = join(dir, "smp-bridge.json");
+      const file = JSON.parse(await readFile(path, "utf-8"));
+      file.rows[0].treatment += " Lihat `SMP7-2-M99`.";
+      await writeFile(path, JSON.stringify(file, null, 2));
+      const result = await runCli(["validate", "--program", "sma-coding", "--data-dir", dir]);
+      expect(result.exitCode).toBe(1);
+      expect(result.stdout).toContain("smp-bridge.json");
+      expect(result.stdout).toContain('"SMP7-2-M99" is not a week of programme "smp-coding"');
+    } finally {
+      await rm(dir, { recursive: true, force: true });
+    }
+  });
+});
+
 describe("OSN-only commands refuse --program sma-coding (exit 2, never OSN data)", () => {
   const cases: string[][] = [
     ["render", "weekly", "--week", "1"],
@@ -107,6 +126,9 @@ describe("OSN-only commands refuse --program sma-coding (exit 2, never OSN data)
     const result = await runCli([...args, "--program", "sma-coding"]);
     expect(result.exitCode).toBe(2);
     expect(result.stderr).toContain("belum didukung untuk program sma-coding");
+    expect(result.stderr).toContain(
+      'Untuk program sma-coding tersedia "osn plan --program sma-coding --track <jalur>"',
+    );
     expect(result.stdout).toBe("");
   });
 

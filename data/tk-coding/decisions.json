@@ -1,5 +1,5 @@
 {
-  "syllabusVersion": "1.0.0",
+  "syllabusVersion": "1.0.3",
   "syllabusDate": "2026-11-19",
   "sourceSection": "bagian 9",
   "decidedOn": "2026-11-19",
@@ -50,7 +50,7 @@
       "id": "Q8",
       "question": "Jembatan ke `sd-coding`",
       "decision": "(a) Menunggu silabus `sd-coding` terbit, lalu menyelaraskan kode jembatan (bagian 5)",
-      "consequence": "Jembatan bagian 5 tetap rancangan sepihak sampai disesuaikan."
+      "consequence": "Jembatan bagian 5 disesuaikan dengan silabus `sd-coding` di v1.0.2 (keputusan pemilik #177): kode jembatan kini menyebut kode minggu SD."
     },
     {
       "id": "Q9",

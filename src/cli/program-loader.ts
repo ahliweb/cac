@@ -7,6 +7,7 @@
 
 import { access, readFile } from "node:fs/promises";
 import { join, resolve } from "node:path";
+import type { CrossProgramCodes, CrossProgramId } from "../domain/cross-program-refs";
 import {
   DEFAULT_PROGRAM_ID,
   findProgram,
@@ -15,6 +16,9 @@ import {
   REGISTRY_FILE_NAME,
 } from "../domain/programs";
 import type { Program, ProgramRegistry } from "../schema/program";
+import { SD_CODING_PROGRAM_ID } from "../schema/sd-common";
+import { SMA_CODING_PROGRAM_ID } from "../schema/sma-common";
+import { TK_CODING_PROGRAM_ID } from "../schema/tk-common";
 import { topicFamiliesSchema } from "../schema/topic-family";
 import type { CommandContext } from "./command";
 import { EXIT_USAGE_ERROR, EXIT_VALIDATION_FAILURE } from "./command";
@@ -101,11 +105,28 @@ export async function loadOsnTopicFamilyIds(
   }
 }
 
+/** Programmes whose modules come with a learner sheet for the child (`render modul --lembar`). */
+const LEARNER_SHEET_PROGRAM_IDS: readonly string[] = [TK_CODING_PROGRAM_ID, SD_CODING_PROGRAM_ID];
+
+/** Whether programme `id` has a learner sheet per module (`tk-coding`, `sd-coding`). */
+export function hasLearnerSheets(id: string): boolean {
+  return LEARNER_SHEET_PROGRAM_IDS.includes(id);
+}
+
+/** The `render modul` wording of the refusal message of programme `id` (it needs the programme's `modules.json`). */
+function moduleCommands(id: string): string {
+  const base = `"osn render modul --program ${id} --id <id>"`;
+  return hasLearnerSheets(id)
+    ? `${base} (tambahkan --lembar untuk lembar anak; perlu data/${id}/modules.json)`
+    : `${base} (perlu data/${id}/modules.json)`;
+}
+
 /**
  * Corpus-reading commands that only read the OSN corpus through static
  * imports (`render weekly/checkpoint/sop`, `report`, `checklist`; `plan`
  * and `render lembar-siswa` too, for any programme but `sma-coding`, which
- * has its own branches since issue #77). For any other programme they must
+ * has its own branches since issue #77; `render modul` reads each programme's
+ * own module index and never reaches this function). For any other programme they must
  * refuse rather than silently present OSN data as that programme's (issue
  * #52): returns the exit code (2) after writing the message, or `undefined`
  * when the programme is the OSN one and the command may proceed.
@@ -118,10 +139,15 @@ export function rejectNonOsnProgram(
   if (program.id === DEFAULT_PROGRAM_ID) {
     return undefined;
   }
+  const id = program.id;
+  const supported =
+    id === SMA_CODING_PROGRAM_ID
+      ? `Untuk program ${id} tersedia "osn plan --program ${id} --track <jalur>", "osn render lembar-siswa --program ${id} --week <kode-minggu>", "osn render modul --program ${id} --id <id>", "osn validate --program ${id}" dan "bun run check:fidelity --program ${id}".`
+      : `"osn plan" dan "osn render lembar-siswa" hanya tersedia untuk program "${DEFAULT_PROGRAM_ID}" dan "${SMA_CODING_PROGRAM_ID}"; program ${id} didukung oleh ${moduleCommands(id)}, "osn validate --program ${id}" dan "bun run check:fidelity --program ${id}".`;
   ctx.stderr(
-    `osn ${commandName}: belum didukung untuk program ${program.id}: perintah ini membaca corpus OSN ` +
-      `(program "${DEFAULT_PROGRAM_ID}") saja dan tidak akan menyajikannya sebagai data ${program.id}. ` +
-      `Gunakan "osn validate --program ${program.id}" untuk memvalidasi corpus program ini. Perintah yang didukung untuk program ${program.id}: "osn plan --track <jalur>", "osn render lembar-siswa --week <kode-minggu>" dan "osn render modul --id <id>".\n`,
+    `osn ${commandName}: belum didukung untuk program ${id}: perintah ini membaca corpus OSN ` +
+      `(program "${DEFAULT_PROGRAM_ID}") saja dan tidak akan menyajikannya sebagai data ${id}. ` +
+      `${supported}\n`,
   );
   return EXIT_USAGE_ERROR;
 }
@@ -174,4 +200,72 @@ export async function resolveProgramOption(
   }
 
   return { ok: true, program, args: rest, explicit: value };
+}
+
+/** Where each programme keeps the codes the cross-programme check looks up (ADR-0010). */
+const CROSS_PROGRAM_CODE_SOURCES: Readonly<
+  Record<
+    CrossProgramId,
+    ReadonlyArray<{ readonly file: string; readonly list: string; readonly key: string }>
+  >
+> = {
+  "tk-coding": [{ file: "weeks.json", list: "weeks", key: "id" }],
+  "sd-coding": [{ file: "weeks.json", list: "weeks", key: "id" }],
+  "smp-coding": [{ file: "weeks.json", list: "weeks", key: "id" }],
+  "sma-coding": [
+    { file: "foundation.json", list: "weeks", key: "id" },
+    { file: "weeks.json", list: "weeks", key: "id" },
+  ],
+  "kuliah-coding": [{ file: "courses.json", list: "courses", key: "code" }],
+  "dewasa-coding": [
+    { file: "shared.json", list: "modules", key: "code" },
+    { file: "module-plan.json", list: "modules", key: "code" },
+  ],
+};
+
+/**
+ * The week, course and module codes of every registered programme the
+ * cross-programme check knows (ADR-0010), read structurally from the
+ * programme's own corpus files. A programme that is not registered or whose
+ * files cannot be read is left out, and the check skips its codes: that
+ * programme's own audit reports the broken corpus.
+ */
+export async function loadCrossProgramCodes(
+  registry: ProgramRegistry,
+  repoRoot: string = REPO_ROOT,
+): Promise<CrossProgramCodes> {
+  const result: Partial<Record<CrossProgramId, Set<string>>> = {};
+  for (const [id, sources] of Object.entries(CROSS_PROGRAM_CODE_SOURCES) as Array<
+    [CrossProgramId, (typeof CROSS_PROGRAM_CODE_SOURCES)[CrossProgramId]]
+  >) {
+    const program = findProgram(registry, id);
+    if (program === undefined) {
+      continue;
+    }
+    const codes = new Set<string>();
+    let complete = true;
+    for (const source of sources) {
+      try {
+        const path = join(resolve(repoRoot, program.corpusDir), source.file);
+        const parsed = JSON.parse(await readFile(path, "utf-8")) as Record<string, unknown>;
+        const list = parsed[source.list];
+        if (!Array.isArray(list)) {
+          complete = false;
+          continue;
+        }
+        for (const entry of list) {
+          const value = (entry as Record<string, unknown> | null)?.[source.key];
+          if (typeof value === "string") {
+            codes.add(value);
+          }
+        }
+      } catch {
+        complete = false;
+      }
+    }
+    if (complete) {
+      result[id] = codes;
+    }
+  }
+  return result;
 }

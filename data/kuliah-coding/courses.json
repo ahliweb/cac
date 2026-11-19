@@ -1,5 +1,5 @@
 {
-  "syllabusVersion": "1.0.0",
+  "syllabusVersion": "1.2.0",
   "syllabusDate": "2026-11-19",
   "sourceSection": "bagian 3.1",
   "courses": [
@@ -37,7 +37,7 @@
         }
       ],
       "topics": "berpikir komputasional; Python dasar; struktur data bawaan (list, dict, set); berkas teks dan CSV; modul dan pustaka standar; pengujian dasar; Git dasar",
-      "assessment": "kuis mingguan, tiga tugas pemrograman, proyek kecil di bidang prodi mahasiswa, ujian praktik",
+      "assessment": "kuis mingguan, tiga tugas pemrograman, proyek kecil di bidang prodi mahasiswa, ujian praktik tanpa AI",
       "cplProdi": []
     },
     {
@@ -145,10 +145,15 @@
           "code": "KUL-U-202-C4",
           "text": "menguraikan risiko privasi dan hak cipta",
           "origin": "karangan"
+        },
+        {
+          "code": "KUL-U-202-C5",
+          "text": "memverifikasi keluaran AI dengan uji dan mencatat alat, versi, dan perintah yang dipakai",
+          "origin": "karangan"
         }
       ],
-      "topics": "pembelajaran mesin secara konseptual; model bahasa; rekayasa perintah (prompt) dan evaluasi; privasi dan pelindungan data pribadi; hak cipta; integritas akademik; dampak sosial",
-      "assessment": "studi kasus evaluasi keluaran AI, refleksi berkas pemakaian AI, ujian tertulis",
+      "topics": "pembelajaran mesin secara konseptual; model bahasa; rekayasa perintah (prompt) dan evaluasi; verifikasi keluaran dengan uji; keluaran yang dapat berbeda untuk perintah yang sama (non-determinisme); privasi dan pelindungan data pribadi (data pribadi, kata sandi, dan kunci tidak dimasukkan ke layanan AI); hak cipta dan lisensi keluaran AI (status hukum masih berkembang); energi dan biaya komputasi sekilas (angka bervariasi dan tidak pasti); integritas akademik; gerbang kesiapan (bagian 6.4); dampak sosial",
+      "assessment": "studi kasus evaluasi keluaran AI, refleksi berkas pemakaian AI (log), ujian tertulis",
       "cplProdi": []
     },
     {
@@ -222,7 +227,7 @@
         }
       ],
       "topics": "variabel dan tipe, alur kendali, fungsi, larik dan string, memori, I/O berkas, pengujian",
-      "assessment": "tugas mingguan, ujian praktik, proyek kecil",
+      "assessment": "tugas mingguan, ujian praktik tanpa AI, wawancara kode singkat, proyek kecil",
       "cplProdi": []
     },
     {
@@ -254,7 +259,7 @@
         }
       ],
       "topics": "struktur linear, pohon, hash, heap, graf dasar, pengantar kompleksitas",
-      "assessment": "tugas implementasi, ujian tertulis dan praktik",
+      "assessment": "tugas implementasi, wawancara kode singkat, ujian tertulis dan praktik tanpa AI",
       "cplProdi": []
     },
     {
@@ -416,10 +421,15 @@
           "code": "KUL-I-204-C3",
           "text": "memakai kendali versi dan CI dalam tim",
           "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-204-C4",
+          "text": "menerapkan rekayasa perangkat lunak berbantuan AI: menulis spesifikasi dan uji lebih dulu, meninjau dan memverifikasi kode hasil AI, dan mencatat pemakaian AI",
+          "origin": "karangan"
         }
       ],
-      "topics": "proses, UML ringan, pengujian, tinjau kode, CI, pemeliharaan",
-      "assessment": "proyek tim kecil",
+      "topics": "proses, UML ringan, pengujian, tinjau kode, CI, pemeliharaan; rekayasa perangkat lunak berbantuan AI selama 3-4 minggu: spesifikasi dan uji lebih dulu, tinjau kode hasil AI, CI dengan analis statis, pengantar SSDF dan SLSA, kebijakan AI tim dan log, pengantar agen kode dengan batas kewenangan dan tinjauan manusia",
+      "assessment": "proyek tim kecil dengan log pemakaian AI dan tinjau kode oleh manusia",
       "cplProdi": []
     },
     {
@@ -480,9 +490,14 @@
           "code": "KUL-I-301-C3",
           "text": "menerapkan praktik keamanan dasar",
           "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-301-C4",
+          "text": "mengenali risiko rantai pasok perangkat lunak, termasuk paket fiktif yang disarankan kode hasil AI",
+          "origin": "karangan"
         }
       ],
-      "topics": "model lapisan, TCP/IP, soket, kriptografi dasar, ancaman umum",
+      "topics": "model lapisan, TCP/IP, soket, kriptografi dasar, ancaman umum, pengantar SSDF, rantai pasok dan pemeriksaan paket sebelum dipasang",
       "assessment": "laboratorium, ujian",
       "cplProdi": []
     },
@@ -544,9 +559,14 @@
           "code": "KUL-I-303-C3",
           "text": "membahas etika dan bias",
           "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-303-C4",
+          "text": "memperkirakan biaya komputasi dan energi pelatihan dan pemakaian model secara kasar dengan menyebut ketidakpastiannya",
+          "origin": "karangan"
         }
       ],
-      "topics": "pencarian, regresi dan klasifikasi, evaluasi, jaringan saraf dasar, etika",
+      "topics": "pencarian, regresi dan klasifikasi, evaluasi, jaringan saraf dasar, etika, biaya komputasi dan energi (butir singkat; angka bervariasi dan tidak pasti)",
       "assessment": "proyek, ujian",
       "cplProdi": []
     },
@@ -598,9 +618,14 @@
           "code": "KUL-I-305-C2",
           "text": "menjelaskan hak cipta, lisensi, dan pelindungan data pribadi",
           "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-305-C3",
+          "text": "menjelaskan tata kelola pemakaian AI, termasuk hak cipta dan lisensi keluaran AI (status hukum masih berkembang)",
+          "origin": "karangan"
         }
       ],
-      "topics": "etika, lisensi, privasi, dampak sosial, profesi",
+      "topics": "etika, lisensi, privasi, dampak sosial, profesi, tata kelola AI (pedoman etika kecerdasan artifisial nasional SE 9/2023, kebijakan pemakaian AI di tempat kerja)",
       "assessment": "studi kasus, esai",
       "cplProdi": []
     },
@@ -684,10 +709,15 @@
           "code": "KUL-I-401-C3",
           "text": "menyajikan dan mempertanggungjawabkan hasil",
           "origin": "karangan"
+        },
+        {
+          "code": "KUL-I-401-C4",
+          "text": "menetapkan dan menjalankan kebijakan AI tim",
+          "origin": "karangan"
         }
       ],
-      "topics": "kapstone dengan pemangku kepentingan, tinjau kode, rilis, dokumentasi",
-      "assessment": "proyek, demo, sidang",
+      "topics": "kapstone dengan pemangku kepentingan, tinjau kode, rilis, dokumentasi, kebijakan AI tim dan log pemakaian, tinjauan manusia wajib atas kode yang digabung",
+      "assessment": "proyek, demo, sidang dengan tanya jawab tentang kode sendiri",
       "cplProdi": []
     },
     {
@@ -724,7 +754,7 @@
         }
       ],
       "topics": "templat kode, I/O cepat, pustaka standar, pengurutan dan pencarian biner, greedy, DP dasar, graf dasar (BFS, DFS)",
-      "assessment": "lima kontes mingguan perorangan (soal tertaut, bukan disalin), analisis pascakontes",
+      "assessment": "lima kontes mingguan perorangan (soal tertaut, bukan disalin), analisis pascakontes. Kebijakan AI: Merah saat kontes; setelah kontes, AI boleh menjelaskan solusi dengan pengungkapan, lalu mahasiswa mengerjakan ulang (*re-solve*) tanpa AI",
       "cplProdi": []
     },
     {
@@ -756,7 +786,7 @@
         }
       ],
       "topics": "DP lanjutan, graf lanjutan, teori bilangan, struktur data lanjutan, string, geometri dasar",
-      "assessment": "kontes tim, tugas analisis algoritma",
+      "assessment": "kontes tim, tugas analisis algoritma. Kebijakan AI: Merah saat kontes; setelah kontes, AI untuk menjelaskan solusi dengan pengungkapan dan *re-solve* tanpa AI",
       "cplProdi": []
     },
     {
@@ -793,7 +823,7 @@
         }
       ],
       "topics": "strategi tim, pembagian soal, simulasi kontes, analisis soal yang gagal. Format \"tim tiga orang, satu komputer, lima jam\" mengikuti aturan regional ICPC yang dibuka (`riset.md` bagian 5) tetapi dipakai hanya sebagai bentuk latihan `[asumsi]`",
-      "assessment": "simulasi kontes, penilaian pelatih, refleksi",
+      "assessment": "simulasi kontes, penilaian pelatih, refleksi. Kebijakan AI: Merah saat simulasi kontes; setelah kontes, AI untuk menjelaskan solusi dengan pengungkapan dan *re-solve* tanpa AI",
       "cplProdi": []
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "syllabusVersion": "1.2.0",
+  "syllabusVersion": "1.4.1",
   "syllabusDate": "2026-11-19",
   "sourceSection": "bagian 3.0",
   "weeks": [
@@ -71,9 +71,9 @@
       "phase": "E",
       "week": 6,
       "topic": "Keamanan dasar dan etika digital",
-      "objective": "menyusun kata sandi yang kuat dan memakai manajer kata sandi; menerapkan autentikasi dua langkah secara sederhana; menerapkan konfigurasi privasi dan keamanan pada akun uji; menjelaskan langkah keamanan konektivitas dasar (kata sandi bawaan perangkat jaringan diganti, jaringan nirkabel terenkripsi, kewaspadaan pada jaringan publik, tanda HTTPS); mengenali pesan tipuan (phishing) dasar; menghargai hak atas kekayaan intelektual",
-      "output": "lembar periksa keamanan akun; daftar periksa keamanan konektivitas",
-      "exercise": "audit kata sandi dengan bahan sintetis; mengatur akun uji dengan manajer kata sandi lokal bersumber terbuka `[asumsi]`; demonstrasi autentikasi dua langkah oleh guru (murid tidak wajib memasang apa pun di ponsel pribadi); membandingkan dua konfigurasi privasi pada akun uji; mengenali pesan tipuan sintetis"
+      "objective": "menyusun kata sandi yang kuat dan memakai manajer kata sandi; menerapkan autentikasi dua langkah secara sederhana; menerapkan konfigurasi privasi dan keamanan pada akun uji; menjelaskan langkah keamanan konektivitas dasar (kata sandi bawaan perangkat jaringan diganti, jaringan nirkabel terenkripsi, kewaspadaan pada jaringan publik, tanda HTTPS); mengenali pesan tipuan (phishing) dasar; menghargai hak atas kekayaan intelektual; menerapkan kebijakan pemakaian AI kelas (tanpa data pribadi, kata sandi, atau kunci pada layanan AI; mencatat bila keluaran AI dipakai; menyadari lisensi keluaran AI masih berkembang)",
+      "output": "lembar periksa keamanan akun; daftar periksa keamanan konektivitas; kartu kebijakan AI kelas",
+      "exercise": "audit kata sandi dengan bahan sintetis; mengatur akun uji dengan manajer kata sandi lokal bersumber terbuka `[asumsi]`; demonstrasi autentikasi dua langkah oleh guru (murid tidak wajib memasang apa pun di ponsel pribadi); membandingkan dua konfigurasi privasi pada akun uji; mengenali pesan tipuan sintetis; menyunting contoh permintaan sintetis ke asisten AI agar bebas dari data pribadi dan rahasia"
     },
     {
       "id": "FND-X1-M7",

@@ -4,6 +4,8 @@
  */
 
 import { describe, expect, test } from "bun:test";
+import { cp, mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
+import { tmpdir } from "node:os";
 import { join } from "node:path";
 
 const REPO_ROOT = join(import.meta.dir, "..", "..");
@@ -51,6 +53,25 @@ describe("osn validate with the kuliah-coding programme", () => {
     const result = await run([CLI, "validate"]);
     expect(result.exitCode).toBe(0);
     expect(result.stdout).toContain("kuliah-coding");
+  });
+});
+
+describe("osn validate: cross-programme codes in the kuliah-coding bridges (ADR-0010, #177)", () => {
+  test("a week code that sma-coding does not have is reported with exit 1", async () => {
+    const dir = await mkdtemp(join(tmpdir(), "kul-crossref-fixture-"));
+    try {
+      await cp(join(REPO_ROOT, "data", "kuliah-coding"), dir, { recursive: true });
+      const path = join(dir, "bridges.json");
+      const file = JSON.parse(await readFile(path, "utf-8"));
+      file.fromSma[0].basis += " Lihat `A-X1-M99`.";
+      await writeFile(path, JSON.stringify(file, null, 2));
+      const result = await run([CLI, "validate", "--program", "kuliah-coding", "--data-dir", dir]);
+      expect(result.exitCode).toBe(1);
+      expect(result.stdout).toContain("bridges.json");
+      expect(result.stdout).toContain('"A-X1-M99" is not a week of programme "sma-coding"');
+    } finally {
+      await rm(dir, { recursive: true, force: true });
+    }
   });
 });
 

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 250" width="560" height="250" role="img" aria-labelledby="t d">
+  <title id="t">Peta isi semester 1 kelas 6</title>
+  <desc id="d">Dua baris. Baris pertama, berpikir komputasional: algoritma, simbol, uji dan perbaiki, blok. Baris kedua, literasi digital: internet aman, dampak teknologi, konten positif, tanda hati-hati.</desc>
+  <rect width="560" height="250" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="13" font-weight="bold" fill="#222222">
+    <text x="20" y="28">Berpikir komputasional</text>
+    <text x="20" y="138">Literasi digital</text>
+  </g>
+  <g font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">
+    <rect x="20" y="42" width="118" height="60" rx="8" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="79" y="77">Algoritma</text>
+    <rect x="150" y="42" width="118" height="60" rx="8" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="209" y="77">Simbol</text>
+    <rect x="280" y="42" width="118" height="60" rx="8" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="339" y="72">Uji dan</text>
+    <text x="339" y="90">perbaiki</text>
+    <rect x="410" y="42" width="118" height="60" rx="8" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="469" y="77">Blok</text>
+    <rect x="20" y="152" width="118" height="60" rx="8" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+    <text x="79" y="187">Internet aman</text>
+    <rect x="150" y="152" width="118" height="60" rx="8" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+    <text x="209" y="182">Dampak</text>
+    <text x="209" y="200">teknologi</text>
+    <rect x="280" y="152" width="118" height="60" rx="8" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+    <text x="339" y="182">Konten</text>
+    <text x="339" y="200">positif</text>
+    <rect x="410" y="152" width="118" height="60" rx="8" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+    <text x="469" y="182">Tanda</text>
+    <text x="469" y="200">hati-hati</text>
+  </g>
+</svg>

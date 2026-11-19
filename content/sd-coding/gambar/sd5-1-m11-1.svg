@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 250" width="540" height="250" role="img" aria-labelledby="t d">
+  <title id="t">Simbol instruksi dan satu program</title>
+  <desc id="d">Kiri: daftar simbol kesepakatan kelas, yaitu panah atas untuk MAJU, panah kiri untuk KIRI, panah kanan untuk KANAN, 3x untuk ULANGI, titik penuh untuk AMBIL, dan lingkaran kosong untuk TARUH. Kanan: satu program empat simbol, panah atas, kanan, atas, atas, yang dimulai di a1 menghadap atas dan berakhir di c2.</desc>
+  <rect width="540" height="250" fill="#ffffff"/>
+  <rect x="10" y="10" width="250" height="230" rx="8" fill="#f4f8fd" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="135" y="36" font-family="sans-serif" font-size="13" font-weight="bold" fill="#222222" text-anchor="middle">SIMBOL KESEPAKATAN KELAS</text>
+  <polygon points="40,58 52,70 46,70 46,82 34,82 34,70 28,70" fill="#2a5d9f"/>
+  <text x="60" y="75" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="start">MAJU: maju satu petak</text>
+  <polygon points="28,110 40,98 40,104 52,104 52,116 40,116 40,122" fill="#2a5d9f"/>
+  <text x="60" y="115" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="start">KIRI: putar ke kiri di tempat</text>
+  <polygon points="52,150 40,138 40,144 28,144 28,156 40,156 40,162" fill="#2a5d9f"/>
+  <text x="60" y="155" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="start">KANAN: putar ke kanan di tempat</text>
+  <text x="40" y="190" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">3x</text>
+  <text x="60" y="190" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="start">ULANGI: ulang tiga kali</text>
+  <circle cx="40" cy="220" r="7" fill="#2a5d9f"/>
+  <text x="60" y="224" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="start">AMBIL    </text>
+  <circle cx="125" cy="220" r="7" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="145" y="224" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="start">TARUH</text>
+  <rect x="280" y="10" width="250" height="230" rx="8" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+  <text x="405" y="36" font-family="sans-serif" font-size="13" font-weight="bold" fill="#222222" text-anchor="middle">PROGRAM</text>
+  <rect x="300" y="70" width="48" height="48" rx="5" fill="#ffffff" stroke="#b86a00" stroke-width="2"/>
+  <polygon points="324,82 336,94 330,94 330,106 318,106 318,94 312,94" fill="#2a5d9f"/>
+  <rect x="356" y="70" width="48" height="48" rx="5" fill="#ffffff" stroke="#b86a00" stroke-width="2"/>
+  <polygon points="392,94 380,82 380,88 368,88 368,100 380,100 380,106" fill="#2a5d9f"/>
+  <rect x="412" y="70" width="48" height="48" rx="5" fill="#ffffff" stroke="#b86a00" stroke-width="2"/>
+  <polygon points="436,82 448,94 442,94 442,106 430,106 430,94 424,94" fill="#2a5d9f"/>
+  <rect x="468" y="70" width="48" height="48" rx="5" fill="#ffffff" stroke="#b86a00" stroke-width="2"/>
+  <polygon points="492,82 504,94 498,94 498,106 486,106 486,94 480,94" fill="#2a5d9f"/>
+  <text x="405" y="160" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">mulai di a1 menghadap atas</text>
+  <text x="405" y="184" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">berakhir di c2</text>
+</svg>

@@ -1,0 +1,38 @@
+{
+  "syllabusVersion": "1.1.0",
+  "syllabusDate": "2026-11-19",
+  "sourceSection": "bagian 7",
+  "intro": "Program `tk-coding` dan `smp-coding` disetujui pemilik (2026-11-19) dan sudah dibaca untuk menyelaraskan bagian ini (keputusan pemilik 5, bagian 13). Hasil pembacaan: tidak satu pun dari ketiga program mewajibkan program tetangganya. TK tidak wajib bagi murid SD, kelas 1-4 SD berupa pengenalan opsional dan kelas 5-6 mata pelajaran pilihan, dan bentuk program SMP ditentukan sekolah (`smp-coding` bagian 2). Maka jembatan di bawah adalah penempatan di dalam kelas dan bukan rantai prasyarat `[asumsi]`.",
+  "bridges": [
+    {
+      "id": "tk-ke-kelas-1",
+      "sourceSection": "bagian 7.1",
+      "heading": "Dari TK (`tk-coding`) ke kelas 1",
+      "text": "Tidak ada prasyarat yang wajib; kelas 1 dirancang untuk murid dengan maupun tanpa latar TK B. Keluaran akhir TK B (`TK-B1-M1` sampai `TK-B2-M12`) mencakup dan melampaui kemampuan masuk yang semula diasumsikan di sini (perintah satu atau dua langkah, mengurutkan tiga kartu, mengelompokkan menurut satu sifat), dan kegiatan `SD1-1-M1` sampai `SD1-1-M10` serta `SD1-2-M1` sampai `SD1-2-M3` banyak yang sama dengan kegiatan TK B: `TK-B1-M5` dan `SD1-1-M8` sama-sama \"ulangi dua kali\", `TK-B1-M11` dan `SD1-1-M13` sama-sama peta harta, `TK-B1-M6` dan `SD1-2-M11` sama-sama bagian lagu yang berulang. Karena itu dua sampai tiga minggu pertama kelas 1 dipakai guru untuk mengamati lewat permainan rute (bentuknya seperti `SD1-1-M12`), dengan ceklis \"terlihat\" dan \"belum terlihat\" per kegiatan; tanpa tes, tanpa nilai angka, dan tanpa catatan di repositori ini (ADR-0004). Murid yang terlihat menguasai kegiatan suatu minggu tidak mengulangnya: ia memimpin permainan atau mengerjakan tantangan lanjutan setingkat `SD2-1-M1` sampai `SD2-1-M3`; murid yang belum terlihat mengikuti urutan penuh, dan minggu cadangan kelas 1 (delapan dari 36 minggu, bagian 2) boleh dipakai untuk penguatan. Kegiatan aturan keamanan perangkat dan rahasia pribadi (`SD1-2-M8`, `SD1-2-M9`) tidak dipadatkan bagi siapa pun. Bila TK memakai simbol arah dan kata \"ulang\" tertentu, kelas 1 memakainya; bila tidak, kelas 1 menyepakati simbol bersama di awal tahun (keputusan pemilik 5, butir (b)). Dasar `[asumsi]`: efek keahlian terbalik dan latihan berjarak (`docs/riset/ilmu-belajar-kognitif.md` bagian 3.2 dan 3.4); pengamatan, bukan tes, mengikuti `tk-coding` bagian 6.1."
+    },
+    {
+      "id": "kelas-6-ke-smp",
+      "sourceSection": "bagian 7.2",
+      "heading": "Dari kelas 6 ke SMP (`smp-coding`)",
+      "text": "Keluaran yang diharapkan di akhir kelas 6 (daftar \"sudah bisa\" di `SD6-2-M14`): menulis instruksi logis dengan simbol, menguji dan memperbaikinya, menjelaskan masukan-proses-keluaran, menjaga informasi pribadi, membedakan mesin cerdas dan non-cerdas, menjelaskan bahwa KA belajar dari data dan bisa keliru. Yang tidak dijamin oleh kelas 5-6 (inti Fase C): perulangan, percabangan, dan variabel hanya dibahas di kelas 2-4 yang opsional (`SD2-1-M3`, `SD2-1-M8`, `SD3-1-M3` sampai `SD3-1-M6`, `SD4-1-M6`, `SD4-1-M7`), dan blok visual hanya opsi di `SD6-1-M9` dan `SD6-1-M10`. Informatika baru menjadi mata pelajaran di SMP (riset bagian 4), dan panduan kodingka menyebut SMP mengenalkan pemrograman blok dan konsep KA sederhana (riset bagian 2.2). Karena itu `sd-coding` tidak mengajarkan sintaks pemrograman, dan murid yang masuk SMP hanya dengan kelas 5-6 belum mengenal perulangan, percabangan, ataupun blok, sedangkan murid yang mengikuti kelas 2-4 mengenal konsepnya tanpa layar tetapi belum mengenal Scratch. `smp-coding` bagian 5.1 menyesuaikan diri: tidak mengasumsikan blok, memadatkan hanya minggu tanpa layar, dan memakai `SMP7-1-M1` sebagai pengamatan awal dengan daftar \"sudah bisa\" ini sebagai bahan. Kegiatan KA kelas 5-6 (`SD5-2-M5` sampai `SD5-2-M8`, `SD6-2-M4`) diulang di `SMP9-2-M8` sampai `SMP9-2-M10` dengan tuntutan lebih tinggi (kualitas data, bias, halusinasi), bukan sebagai pengulangan yang sama."
+    },
+    {
+      "id": "ke-sma",
+      "sourceSection": "bagian 7.3",
+      "heading": "Ke SMA",
+      "text": "Jembatan tidak langsung: SD, SMP, lalu program `sma-coding` (jalur A dan seterusnya). Tidak ada jembatan SD ke SMA di silabus ini."
+    }
+  ],
+  "osn": {
+    "status": "tidak-ada",
+    "sourceSection": "bagian 8",
+    "statement": "tidak ada jembatan OSN untuk SD.",
+    "findings": [
+      "Program OSN di repositori ini adalah OSN Informatika (silabus operasional OSN Informatika 2026) dan korpus `data/osn/`; tidak ada data jenjang SD (pencarian di `data/osn`, `README.md`, dan `docs/silabus`: tidak ada rujukan jenjang SD).",
+      "Dari ringkasan hasil pencarian, dokumen penetapan peserta OSN SD (2023 provinsi, 2024 nasional) memuat bidang Matematika dan IPA, tanpa Informatika. Dokumen-dokumen itu **tidak terbuka** (domain tidak terjangkau), jadi `[belum terverifikasi]`; ringkasan yang sama menyebut sesi IPS sebagai uji coba pada 2025, sehingga daftar bidang SD dapat berubah antar tahun.",
+      "Informatika sebagai mata pelajaran tidak ada di SD (riset bagian 4)."
+    ],
+    "enrichmentText": "Maka silabus ini tidak mengarang jembatan OSN. Kegiatan opsional untuk murid yang suka berpikir logis (tanpa label OSN): tantangan \"teka-teki algoritma\" di akhir semester, dan penguatan konsep pengurutan dan pencarian di kelas 3 (`SD3-1-M7`, `SD3-1-M8`) yang kelak menjadi dasar topik OSN. Bila pemilik ingin jembatan resmi ke kompetisi lain, itu perlu riset sendiri (keputusan pemilik 6, bagian 13).",
+    "enrichmentWeeks": ["SD3-1-M7", "SD3-1-M8"]
+  }
+}

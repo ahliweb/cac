@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="600" height="420" role="img" aria-labelledby="t d">
+  <title id="t">Alat di sekitar kita</title>
+  <desc id="d">Dua kolom. Kolom kiri berisi empat alat dari atas ke bawah: sendok, sikat gigi, gunting, dan sisir. Kolom kanan berisi empat gambar kegunaan dengan urutan acak: kertas dengan garis putus-putus, mangkuk berisi nasi, helai rambut bergelombang, dan gigi bersih. Setiap alat dan setiap gambar punya satu titik untuk ujung garis.</desc>
+  <rect width="600" height="420" fill="#ffffff"/>
+  <g stroke="#333333" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- sendok -->
+    <ellipse cx="80" cy="55" rx="22" ry="30" fill="#cfd8dc"/>
+    <path d="M80 85 V135" stroke-width="8"/>
+    <!-- sikat -->
+    <rect x="40" y="176" width="100" height="16" rx="6" fill="#90caf9"/>
+    <rect x="130" y="166" width="50" height="36" rx="4" fill="#ffffff"/>
+    <path d="M138 166 V154 M148 166 V154 M158 166 V154 M168 166 V154 M176 166 V154"/>
+    <!-- gunting -->
+    <circle cx="65" cy="290" r="14"/>
+    <circle cx="105" cy="290" r="14"/>
+    <path d="M70 280 L130 235 M100 280 L40 235"/>
+    <!-- sisir -->
+    <rect x="45" y="345" width="110" height="22" rx="4" fill="#ffcc80"/>
+    <path d="M55 367 V395 M70 367 V395 M85 367 V395 M100 367 V395 M115 367 V395 M130 367 V395 M145 367 V395"/>
+  </g>
+  <g stroke="#333333" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <!-- kertas dengan garis putus-putus -->
+    <rect x="410" y="20" width="110" height="80" rx="4" fill="#fffde7"/>
+    <path d="M420 62 H510" stroke-dasharray="8 6"/>
+    <!-- mangkuk nasi -->
+    <path d="M410 140 H520 Q516 185 465 190 Q414 185 410 140 Z" fill="#fff3e0"/>
+    <path d="M425 138 Q465 105 505 138" fill="#ffffff"/>
+    <!-- rambut -->
+    <path d="M415 215 Q440 235 415 255 Q390 275 415 295 M440 215 Q465 235 440 255 Q415 275 440 295 M465 215 Q490 235 465 255 Q440 275 465 295 M490 215 Q515 235 490 255 Q465 275 490 295"/>
+    <!-- gigi -->
+    <path d="M420 335 Q420 310 445 318 Q465 326 485 318 Q510 310 510 335 Q510 370 495 395 Q480 395 475 375 Q465 360 455 375 Q450 395 435 395 Q420 370 420 335 Z" fill="#ffffff"/>
+  </g>
+  <g fill="#333333">
+    <circle cx="200" cy="75" r="9"/>
+    <circle cx="200" cy="175" r="9"/>
+    <circle cx="200" cy="270" r="9"/>
+    <circle cx="200" cy="355" r="9"/>
+    <circle cx="380" cy="60" r="9"/>
+    <circle cx="380" cy="165" r="9"/>
+    <circle cx="380" cy="255" r="9"/>
+    <circle cx="380" cy="355" r="9"/>
+  </g>
+</svg>

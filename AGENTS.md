@@ -15,15 +15,16 @@ Tables, not prose — drift should be visible at a glance.
 
 | Path | What belongs here |
 | --- | --- |
-| `src/schema/` | Zod schemas that validate curriculum data shapes. |
-| `src/domain/` | Business rules operating on parsed (schema-valid) curriculum data. |
-| `src/cli/` | CLI command handlers (`osn <command>`): `validate`, `plan`, `render`, `report`, `privacy-check`, `checklist`. `program-registry.ts` is the programme table (id → data files + schemas, audit, module-index hooks, optional fidelity module) that `validate` and `check:fidelity` dispatch through; `fidelity/` holds the per-programme fidelity modules (ADR-0008). |
+| `src/schema/` | Zod schemas that validate curriculum data shapes. Per-programme module-index schemas (ADR-0007, ADR-0008): `module.ts` (OSN), `sma-module.ts`, `tk-module.ts`, `sd-module.ts`, `smp-module.ts`, `kul-module.ts`, `dw-learning-module.ts` (not `dw-module.ts`, which is `module-plan.json`); their shared ADR-0007 rules are in `program-module-common.ts`. |
+| `src/domain/` | Business rules operating on parsed (schema-valid) curriculum data, including the module-index rules per programme (`modules.ts` dispatches to `sma-modules.ts`, `tk-modules.ts`, `sd-modules.ts`, `smp-modules.ts`, `kul-modules.ts`, `dw-modules.ts`; shared helpers in `program-modules-common.ts`) and `learner-sheet.ts` (a child's sheet carries no name or identity field). |
+| `src/cli/` | CLI command handlers (`osn <command>`): `validate`, `plan`, `render` (also `render modul --program <id>` and, for `tk-coding` and `sd-coding`, `--lembar`), `report`, `privacy-check`, `checklist`. `program-registry.ts` is the programme table (id → data files + schemas, audit, module-index hooks, optional fidelity module) that `validate` and `check:fidelity` dispatch through; `fidelity/` holds the per-programme fidelity modules (ADR-0008). |
 | `src/render/` | Generators that turn domain data into mentor-facing output and the student learner sheet (`osn render lembar-siswa`). |
 | `src/index.ts` | Package entrypoint. |
 | `data/programs.json` | Programme registry (ADR-0006), validated by `src/schema/program.ts`. |
-| `content/` | Authored learning-module bodies, `content/<program>/modules/<id>.md` (ADR-0007). Indexed by `data/<program>/modules.json` (OSN: `src/schema/module.ts`; `sma-coding`: its own `src/schema/sma-module.ts`); never transcribed syllabus content. |
+| `content/` | Authored learning-module bodies, `content/<program>/modules/<id>.md` (ADR-0007). Indexed by `data/<program>/modules.json` (optional per programme; each programme has its own schema: OSN `src/schema/module.ts`, `sma-coding` `sma-module.ts`, `tk-coding` `tk-module.ts`, `sd-coding` `sd-module.ts`, `smp-coding` `smp-module.ts`, `kuliah-coding` `kul-module.ts`, `dewasa-coding` `dw-learning-module.ts`); one module per programme unit (week, course or syllabus module), its id the unit code in lower case. `tk-coding` and `sd-coding` modules are teacher guides with a separate learner sheet for the child in `content/<program>/lembar/<id>.md`, whose SVG illustrations live in `content/<program>/gambar/` (checked by `check:learner-assets`). Module bodies carry no `# ` title and no `## Rujukan` section (both come from the index). Counts as of 2026-11-19, all `draf`: `tk-coding` 48, `sd-coding` 168, `smp-coding` 84, `sma-coding` 239, `kuliah-coding` 24, `dewasa-coding` 36 modules (plus 48 and 168 learner sheets and SVG for TK and SD); `osn` 10, `disetujui`. Never transcribed syllabus content. Do not create an empty `content/<id>/` directory. |
 | `data/osn/` | The OSN programme corpus (`data/osn/*.json`) and `data/osn/samples/` (synthetic learning records). One `data/<program>/` directory per registered programme. |
-| `data/sma-coding/` | The SMA coding programme corpus (seven JSON files transcribed from `docs/programs/sma-coding/silabus.md` v1.2: CP elements, tracks A–E (jalur D and E are outside the CP wording and only carry `enrichmentLinks`, never CP coverage; jalur E starts in kelas XI), structure, 364-week weekly plan, shared grade-X foundation block `FND-X1`, CP mapping, OSN bridge), validated by the `src/schema/sma-*.ts` schemas and `src/domain/sma-corpus-audit.ts`. |
+| `data/<id>/` (tujuh program) | Satu direktori per program terdaftar, masing-masing dengan skema khusus (`src/schema/<prefix>-*.ts`), audit korpus (`src/domain/<prefix>-corpus-audit.ts`), dan modul fidelity (`src/cli/fidelity/<id>.ts`), dikaitkan di tabel `src/cli/program-registry.ts` (ADR-0008). Berkas korpus (tanpa `modules.json`): `osn` 22, `sma-coding` 8 (silabus v1.4.1; plus `modules.json`), `tk-coding` 7 (v1.0.2), `kuliah-coding` 6 (v1.2.0), `dewasa-coding` 8 (v1.2.0), `sd-coding` 5 (v1.1.0), `smp-coding` 7 (v1.2.0). Awalan skema: `sma-`, `tk-`, `kul-`, `dw-`, `sd-`, `smp-`. |
+| `tests/helpers/` | Support code shared by tests (never a `*.test.ts`): synthetic module-index entries and a temporary repository copy for the end-to-end tests of the module indexes. |
 | `tests/unit/` | One module tested in isolation. Mirrors `src/` loosely. |
 | `tests/integration/` | Cross-module tests (schema → domain → CLI/render). |
 | `docs/architecture/` | System architecture overview, repository map, and ADRs. |
@@ -32,11 +33,11 @@ Tables, not prose — drift should be visible at a glance.
 | `docs/panduan/` | Panduan penggunaan berbahasa Indonesia per peran (mentor OSN, guru SMA, siswa, pemilik/peninjau, kontributor); setiap perintah di dalamnya sudah dijalankan. |
 | `docs/development/` | Engineering process docs (testing, CI/CD, releasing). |
 | `docs/governance/` | Privacy policy, security policy, incident-response procedure. |
-| `docs/operations/` | Operational runbook and syllabus-check procedure. |
+| `docs/operations/` | Operational runbook, syllabus-check procedure, and `kebijakan-ai-osn.md` (kebijakan penggunaan AI untuk pembinaan OSN, #139). |
 | `docs/silabus/` | Faithful Markdown transcription of the source syllabus PDF. |
 | `docs/*.pdf` | The source syllabus document. |
-| `docs/programs/` | Source documents of other programmes, one folder per programme id (ADR-0006), plus the level map `docs/programs/README.md` (TK → SD → SMP → SMA → kuliah → dewasa). `sma-coding/`: the SMA coding syllabus (authored, ADR-0007), v1.2 approved by the owner on 2026-11-19 for tracks A, B, C, D and E — the source for `data/sma-coding/`. `tk-coding/`, `sd-coding/`, `smp-coding/`, `kuliah-coding/`, `dewasa-coding/`: `DRAF` research and draft syllabi (issues #127–#131), not owner-approved, with no `data/` and no registry entry. |
-| `docs/riset/` | Cross-programme research (authored content, ADR-0007): `ilmu-belajar-kognitif.md` (`DRAF`, issue #133), the shared pedagogy reference for every programme. It changes no syllabus or corpus. |
+| `docs/programs/` | Dokumen sumber program selain OSN, satu folder per id program (ADR-0006), plus peta jenjang `README.md` dan `catatan-tinjauan-modul.md` (butir yang perlu dicek peninjau manusia pada modul draf, issue #125). Keenam program berstatus **disetujui pemilik, terdaftar, dan ter-encode** (2026-11-19): `sma-coding` v1.4.1, `tk-coding` v1.0.3, `kuliah-coding` v1.2.0, `dewasa-coding` v1.2.0, `sd-coding` v1.1.0, `smp-coding` v1.2.0; `silabus.md` tiap folder adalah sumber `data/<id>/` (authored, ADR-0007); `rancangan-modul*.md` dan folder pilot `rancangan-modul*-contoh/` adalah rancangan dan riwayat penulisan modul yang kini ada di `content/<id>/`. |
+| `docs/riset/` | Riset lintas program (authored content, ADR-0007, `DRAF`; tidak mengubah silabus atau corpus): `ilmu-belajar-kognitif.md` (ilmu belajar kognitif, rujukan pedagogi bersama, issue #133) dan `ai-rekayasa-perangkat-lunak.md` (AI dalam rekayasa perangkat lunak, dasar kebijakan AI per program, issue #139). |
 | `.changeset/` | Pending changesets — one Markdown file per user-visible change. |
 | `.github/workflows/` | CI pipeline. |
 | `.github/ISSUE_TEMPLATE/` | Bug / feature / curriculum-change issue forms. |
@@ -67,9 +68,10 @@ table.
 | `bun run privacy-check` | `osn privacy-check` — recursively scans `data/` for direct-identifier-shaped keys (GR-04); exits 0 clean / 1 on any finding. |
 | `bun run check:requirements` | `bun run scripts/check-requirements.ts` — verifies the requirements register and traceability matrices are consistent and exhaustive. |
 | `bun run check:checklist-fidelity` | `bun run scripts/check-checklist-fidelity.ts` — verifies §14.1/§14.2 data matches the source syllabus verbatim. |
-| `bun run check:module-code` | `bun run scripts/check-module-code.ts` — compiles every ```` ```cpp ```` block in `content/**/modules/*.md` with `g++ -std=c++17 -fsyntax-only` (nothing is run); fails if `g++` is missing. |
-| `bun run check:fidelity` | `bun run scripts/check-fidelity.ts [--program <id>]` — runs the fidelity module of every registered programme that has one (today `sma-coding`), or of `--program <id>`, from the programme table `src/cli/program-registry.ts` (ADR-0008); exits 0 clean / 1 on drift / 2 on usage error. |
-| `bun run check:sma-fidelity` | `bun run scripts/check-sma-coding-fidelity.ts` — parses the Markdown tables of `docs/programs/sma-coding/silabus.md` (bagian 1.3, 1.4, 2, 3, 4, 5) and compares them cell by cell with `data/sma-coding/*.json`; exits 1 on any drift. |
+| `bun run check:module-code` | `bun run scripts/check-module-code.ts` — checks the fenced code of `content/**/modules/*.md` without running it: ```` ```cpp ```` with `g++ -std=c++17 -fsyntax-only`; ```` ```arduino ```` the same way against the mock `scripts/fixtures/arduino-mock/Arduino.h` (syntax and types only, not board behaviour); ```` ```python ```` with `python3 -I` `ast.parse` (syntax only). A fence indented inside a list item is dedented per CommonMark before checking. A block whose info string carries `setengah-jadi` (e.g. ```` ```cpp setengah-jadi ````) is skipped and counted. Fails if `g++` or `python3` is missing. |
+| `bun run check:learner-assets` | `bun run scripts/check-learner-assets.ts` — checks `content/<program>/gambar/*.svg` (well-formed, `svg` root with `viewBox`, no script/image/foreignObject/`on*`/external `href`/`data:`/`@import`/external `url()`, at most 50 KB) and that every image link in `content/<program>/lembar/*.md` points to an existing file in that `gambar/`; an unreferenced SVG is a warning. Also fails (`DUPLICATE_TITLE_IS_ERROR` in the script is `true`) when a `content/*/modules/*.md` or `lembar/*.md` body starts with its own `# ` title, which `render modul` already prints. |
+| `bun run check:fidelity` | `bun run scripts/check-fidelity.ts [--program <id>]` — menjalankan pemeriksaan fidelity setiap program terdaftar yang punya modul fidelity (`sma-coding`, `tk-coding`, `kuliah-coding`, `dewasa-coding`, `sd-coding`, `smp-coding`) lewat tabel `src/cli/program-registry.ts` (ADR-0008), membandingkan tabel `docs/programs/<id>/silabus.md` dengan `data/<id>/*.json` sel demi sel; exit 1 bila ada drift, 2 untuk salah pakai. |
+| `bun run check:sma-fidelity` | `bun run scripts/check-sma-coding-fidelity.ts` — pemeriksaan fidelity khusus `sma-coding` (bagian 1.3, 1.4, 2, 3, 4, 5 `silabus.md`); exit 1 bila ada drift. |
 | `bun run changeset` | Create a changeset (interactive). |
 | `bun run version` | Consume changesets into `CHANGELOG.md` / bump version. |
 
@@ -156,9 +158,9 @@ not duplicate that policy here; that document is the source of truth.
 - [ ] `bun run validate` passes (corpus validation).
 - [ ] `bun run privacy-check` passes (no direct-identifier-shaped key in `data/`).
 - [ ] `bun run check:requirements` passes if `docs/requirements/` was touched.
-- [ ] `bun run check:module-code` passes (C++ examples in `content/` modules compile).
-- [ ] `bun run check:fidelity` passes if any `data/<program>/` or its source document changed (`check:sma-fidelity` is the same check for `sma-coding` alone).
-- [ ] `bun run check:sma-fidelity` passes if `data/sma-coding/` or `docs/programs/sma-coding/silabus.md` changed.
+- [ ] `bun run check:module-code` passes (C++, Arduino and Python examples in `content/` modules compile or parse).
+- [ ] `bun run check:learner-assets` passes (SVG and image links of learner sheets).
+- [ ] `bun run check:fidelity` passes if any `data/<program>/` or its source document changed (`check:sma-fidelity` is the same check for `sma-coding` alone; run `check:fidelity` on its own to see every registered programme pass).
 - [ ] Every command and path mentioned in any doc you touched actually
       exists — verify, don't assume.
 - [ ] Tests added/updated for the change (per `docs/development/testing.md`).

@@ -40,11 +40,15 @@ matrices and the tests matrix, whose listed test files must exist),
 `docs/programs/sma-coding/silabus.md`). Each has a script of the same purpose
 (`check:requirements`, `check:checklist-fidelity`, `check:sma-fidelity`, and `check:fidelity`, which runs every programme's fidelity module from the programme table, ADR-0008; `tests/integration/check-fidelity.test.ts` covers it and `tests/unit/program-registry.test.ts` the table); the
 scripts are local commands that CI does not run, but the tests run in CI under
-`bun run test:coverage`. `check:module-code` (C++ blocks of `content/` modules
-compile) is the opposite case: a CI step of its own, with unit and integration
-tests of its logic (`tests/unit/check-module-code.test.ts`,
-`tests/integration/check-module-code.test.ts`). See "Local checks that are not
-CI steps" in `docs/development/ci-cd.md`.
+`bun run test:coverage`. `check:module-code` (C++, Arduino and Python blocks of
+`content/` modules compile or parse) and `check:learner-assets` (SVG drawings and
+image links of learner sheets) are the opposite case: each a CI step of its own,
+with unit and integration tests of its logic (`tests/unit/check-module-code.test.ts`,
+`tests/integration/check-module-code.test.ts`, `tests/unit/check-learner-assets.test.ts`,
+`tests/integration/check-learner-assets.test.ts`). Tests that run the real `g++` or
+`python3` carry a 30-second timeout (`GPP_TIMEOUT_MS`); the others use synthetic
+fixtures in a temporary directory. See "Local checks that are not CI steps" in
+`docs/development/ci-cd.md`.
 
 Both directories mirror the shape of `src/` closely enough that a reader can
 find the test for a given module without guessing — exact mirroring is not

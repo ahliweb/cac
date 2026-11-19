@@ -1,0 +1,1876 @@
+{
+  "modules": [
+    {
+      "id": "smp7-1-m1",
+      "title": "Apa itu komputasi: instruksi sehari-hari dan ketepatan",
+      "weekCodes": ["SMP7-1-M1"],
+      "cpCodes": ["D-BK-a"],
+      "gradeLevels": ["7"],
+      "prerequisites": [],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-1-m1.md"
+    },
+    {
+      "id": "smp7-1-m2",
+      "title": "Algoritma: urutan langkah, urutan yang salah",
+      "weekCodes": ["SMP7-1-M2"],
+      "cpCodes": ["D-BK-a", "D-BK-e"],
+      "gradeLevels": ["7"],
+      "prerequisites": ["smp7-1-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-1-m2.md"
+    },
+    {
+      "id": "smp7-1-m3",
+      "title": "Mengenal Scratch: panggung, sprite, blok gerak",
+      "weekCodes": ["SMP7-1-M3"],
+      "cpCodes": ["D-BK-e", "DK-BK-c"],
+      "gradeLevels": ["7"],
+      "prerequisites": ["smp7-1-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-1-m3.md"
+    },
+    {
+      "id": "smp7-1-m4",
+      "title": "Peristiwa dan urutan: menggambar bentuk",
+      "weekCodes": ["SMP7-1-M4"],
+      "cpCodes": ["D-BK-e", "DK-BK-c"],
+      "gradeLevels": ["7"],
+      "prerequisites": ["smp7-1-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-1-m4.md"
+    },
+    {
+      "id": "smp7-1-m5",
+      "title": "Perulangan",
+      "weekCodes": ["SMP7-1-M5"],
+      "cpCodes": ["D-BK-e", "DK-BK-c", "D-BK-a"],
+      "gradeLevels": ["7"],
+      "prerequisites": ["smp7-1-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-1-m5.md"
+    },
+    {
+      "id": "smp7-1-m6",
+      "title": "Dekomposisi: memecah masalah, animasi cerita",
+      "weekCodes": ["SMP7-1-M6"],
+      "cpCodes": ["D-BK-a", "D-BK-e", "DK-BK-c"],
+      "gradeLevels": ["7"],
+      "prerequisites": ["smp7-1-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-1-m6.md"
+    },
+    {
+      "id": "smp7-1-m7",
+      "title": "Pola dan generalisasi",
+      "weekCodes": ["SMP7-1-M7"],
+      "cpCodes": ["D-BK-a"],
+      "gradeLevels": ["7"],
+      "prerequisites": ["smp7-1-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-1-m7.md"
+    },
+    {
+      "id": "smp7-1-m8",
+      "title": "Percabangan (kondisi)",
+      "weekCodes": ["SMP7-1-M8"],
+      "cpCodes": ["D-BK-e", "DK-BK-c"],
+      "gradeLevels": ["7"],
+      "prerequisites": ["smp7-1-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-1-m8.md"
+    },
+    {
+      "id": "smp7-1-m9",
+      "title": "Variabel",
+      "weekCodes": ["SMP7-1-M9"],
+      "cpCodes": ["D-BK-e", "DK-BK-c"],
+      "gradeLevels": ["7"],
+      "prerequisites": ["smp7-1-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-1-m9.md"
+    },
+    {
+      "id": "smp7-1-m10",
+      "title": "Masukan pengguna: kuis",
+      "weekCodes": ["SMP7-1-M10"],
+      "cpCodes": ["D-BK-e", "DK-BK-c"],
+      "gradeLevels": ["7"],
+      "prerequisites": ["smp7-1-m8", "smp7-1-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-1-m10.md"
+    },
+    {
+      "id": "smp7-1-m11",
+      "title": "Debugging: mencari dan memperbaiki kesalahan",
+      "weekCodes": ["SMP7-1-M11"],
+      "cpCodes": ["D-BK-a", "DK-BK-b"],
+      "gradeLevels": ["7"],
+      "prerequisites": ["smp7-1-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-1-m11.md"
+    },
+    {
+      "id": "smp7-1-m12",
+      "title": "Berbagi karya: atribusi, izin, dan data diri",
+      "weekCodes": ["SMP7-1-M12"],
+      "cpCodes": ["D-LD-p", "D-LD-j", "DK-LD-a"],
+      "gradeLevels": ["7"],
+      "prerequisites": ["smp7-1-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Creative Commons, Attribution-ShareAlike 2.0 Generic (CC BY-SA 2.0), ringkasan lisensi",
+          "url": "https://creativecommons.org/licenses/by-sa/2.0/"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-1-m12.md"
+    },
+    {
+      "id": "smp7-1-m13",
+      "title": "Proyek mini: animasi atau game satu layar",
+      "weekCodes": ["SMP7-1-M13"],
+      "cpCodes": ["D-BK-e", "DK-BK-c", "DK-BK-b"],
+      "gradeLevels": ["7"],
+      "prerequisites": ["smp7-1-m8", "smp7-1-m9", "smp7-1-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-1-m13.md"
+    },
+    {
+      "id": "smp7-1-m14",
+      "title": "Asesmen dan refleksi",
+      "weekCodes": ["SMP7-1-M14"],
+      "cpCodes": ["D-BK-e", "DK-BK-c", "D-BK-a"],
+      "gradeLevels": ["7"],
+      "prerequisites": ["smp7-1-m13"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-1-m14.md"
+    },
+    {
+      "id": "smp7-2-m1",
+      "title": "Data dan informasi; data diskrit",
+      "weekCodes": ["SMP7-2-M1"],
+      "cpCodes": ["D-BK-b", "D-BK-a", "DK-BK-a"],
+      "gradeLevels": ["7"],
+      "prerequisites": ["smp7-1-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-2-m1.md"
+    },
+    {
+      "id": "smp7-2-m2",
+      "title": "Kodifikasi: biner",
+      "weekCodes": ["SMP7-2-M2"],
+      "cpCodes": [],
+      "gradeLevels": ["7"],
+      "prerequisites": ["smp7-2-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "CS Unplugged: Binary numbers",
+          "url": "https://www.csunplugged.org/en/topics/binary-numbers/"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-2-m2.md"
+    },
+    {
+      "id": "smp7-2-m3",
+      "title": "Teks dan gambar sebagai data",
+      "weekCodes": ["SMP7-2-M3"],
+      "cpCodes": [],
+      "gradeLevels": ["7"],
+      "prerequisites": ["smp7-2-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "CS Unplugged: Image Representation",
+          "url": "https://www.csunplugged.org/en/topics/image-representation/"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-2-m3.md"
+    },
+    {
+      "id": "smp7-2-m4",
+      "title": "Daftar (list)",
+      "weekCodes": ["SMP7-2-M4"],
+      "cpCodes": ["D-BK-b", "D-BK-e", "D-BK-a"],
+      "gradeLevels": ["7"],
+      "prerequisites": ["smp7-1-m9", "smp7-2-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-2-m4.md"
+    },
+    {
+      "id": "smp7-2-m5",
+      "title": "Mencari dan mengurutkan",
+      "weekCodes": ["SMP7-2-M5"],
+      "cpCodes": ["D-BK-a"],
+      "gradeLevels": ["7"],
+      "prerequisites": ["smp7-2-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "CS Unplugged: Searching algorithms",
+          "url": "https://www.csunplugged.org/en/topics/searching-algorithms/"
+        },
+        {
+          "title": "CS Unplugged: Sorting networks",
+          "url": "https://www.csunplugged.org/en/topics/sorting-networks/"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-2-m5.md"
+    },
+    {
+      "id": "smp7-2-m6",
+      "title": "Mengurutkan dalam program",
+      "weekCodes": ["SMP7-2-M6"],
+      "cpCodes": ["D-BK-e", "DK-BK-c"],
+      "gradeLevels": ["7"],
+      "prerequisites": ["smp7-2-m4", "smp7-2-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-2-m6.md"
+    },
+    {
+      "id": "smp7-2-m7",
+      "title": "Game: koordinat, gerak, tabrakan",
+      "weekCodes": ["SMP7-2-M7"],
+      "cpCodes": ["D-BK-e", "DK-BK-c"],
+      "gradeLevels": ["7"],
+      "prerequisites": ["smp7-1-m8", "smp7-1-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-2-m7.md"
+    },
+    {
+      "id": "smp7-2-m8",
+      "title": "Game: skor, nyawa, level",
+      "weekCodes": ["SMP7-2-M8"],
+      "cpCodes": ["D-BK-e", "DK-BK-c"],
+      "gradeLevels": ["7"],
+      "prerequisites": ["smp7-2-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-2-m8.md"
+    },
+    {
+      "id": "smp7-2-m9",
+      "title": "Pesan antar sprite dan klon",
+      "weekCodes": ["SMP7-2-M9"],
+      "cpCodes": ["D-BK-e", "DK-BK-c"],
+      "gradeLevels": ["7"],
+      "prerequisites": ["smp7-2-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-2-m9.md"
+    },
+    {
+      "id": "smp7-2-m10",
+      "title": "Komputer sebagai sistem: masukan, proses, keluaran",
+      "weekCodes": ["SMP7-2-M10"],
+      "cpCodes": ["D-LD-f"],
+      "gradeLevels": ["7"],
+      "prerequisites": ["smp7-2-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-2-m10.md"
+    },
+    {
+      "id": "smp7-2-m11",
+      "title": "Uji produk oleh teman",
+      "weekCodes": ["SMP7-2-M11"],
+      "cpCodes": ["DK-BK-b"],
+      "gradeLevels": ["7"],
+      "prerequisites": ["smp7-1-m11", "smp7-2-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-2-m11.md"
+    },
+    {
+      "id": "smp7-2-m12",
+      "title": "Menjelaskan produk: laporan dan presentasi singkat",
+      "weekCodes": ["SMP7-2-M12"],
+      "cpCodes": ["DK-LD-a", "D-LD-i", "D-LD-e"],
+      "gradeLevels": ["7"],
+      "prerequisites": ["smp7-2-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "LibreOffice Documentation: panduan pengguna (The Document Foundation)",
+          "url": "https://documentation.libreoffice.org/"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-2-m12.md"
+    },
+    {
+      "id": "smp7-2-m13",
+      "title": "Proyek mini: game",
+      "weekCodes": ["SMP7-2-M13"],
+      "cpCodes": ["D-BK-e", "DK-BK-c", "DK-BK-b"],
+      "gradeLevels": ["7"],
+      "prerequisites": ["smp7-2-m8", "smp7-2-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-2-m13.md"
+    },
+    {
+      "id": "smp7-2-m14",
+      "title": "Asesmen dan refleksi",
+      "weekCodes": ["SMP7-2-M14"],
+      "cpCodes": [],
+      "gradeLevels": ["7"],
+      "prerequisites": ["smp7-2-m13"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-2-m14.md"
+    },
+    {
+      "id": "smp8-1-m1",
+      "title": "Dari soal ke algoritma: pseudocode dengan kosakata terbatas",
+      "weekCodes": ["SMP8-1-M1"],
+      "cpCodes": ["D-BK-a", "D-BK-e"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["smp7-1-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-1-m1.md"
+    },
+    {
+      "id": "smp8-1-m2",
+      "title": "Blok buatan sendiri (fungsi)",
+      "weekCodes": ["SMP8-1-M2"],
+      "cpCodes": ["D-BK-e", "DK-BK-c"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["smp7-1-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-1-m2.md"
+    },
+    {
+      "id": "smp8-1-m3",
+      "title": "Abstraksi",
+      "weekCodes": ["SMP8-1-M3"],
+      "cpCodes": ["D-BK-a"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["smp8-1-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-1-m3.md"
+    },
+    {
+      "id": "smp8-1-m4",
+      "title": "Simulasi sains sederhana",
+      "weekCodes": ["SMP8-1-M4"],
+      "cpCodes": ["D-BK-a", "D-BK-e", "DK-BK-c"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["smp8-1-m3", "smp7-1-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-1-m4.md"
+    },
+    {
+      "id": "smp8-1-m5",
+      "title": "Matematika dengan program: bilangan, faktor, pola",
+      "weekCodes": ["SMP8-1-M5"],
+      "cpCodes": ["D-BK-a"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["smp8-1-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-1-m5.md"
+    },
+    {
+      "id": "smp8-1-m6",
+      "title": "Lembar kerja: pilah, urutkan, saring data",
+      "weekCodes": ["SMP8-1-M6"],
+      "cpCodes": ["D-BK-c", "D-BK-d", "D-LD-e", "DK-BK-a"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["smp7-2-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "LibreOffice Help (bantuan resmi LibreOffice)",
+          "url": "https://help.libreoffice.org/"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-1-m6.md"
+    },
+    {
+      "id": "smp8-1-m7",
+      "title": "Grafik dan interpretasi data",
+      "weekCodes": ["SMP8-1-M7"],
+      "cpCodes": ["D-BK-d", "DK-BK-a"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["smp8-1-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "LibreOffice Help (bantuan resmi LibreOffice)",
+          "url": "https://help.libreoffice.org/"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-1-m7.md"
+    },
+    {
+      "id": "smp8-1-m8",
+      "title": "Prediksi dari data",
+      "weekCodes": ["SMP8-1-M8"],
+      "cpCodes": ["D-BK-d", "DK-BK-a"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["smp8-1-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "LibreOffice Help (bantuan resmi LibreOffice)",
+          "url": "https://help.libreoffice.org/"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-1-m8.md"
+    },
+    {
+      "id": "smp8-1-m9",
+      "title": "Translasi konsep ke bahasa blok lain",
+      "weekCodes": ["SMP8-1-M9"],
+      "cpCodes": ["D-BK-e"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["smp7-1-m5", "smp7-1-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        },
+        {
+          "title": "Tentang MakeCode (situs resmi Microsoft MakeCode)",
+          "url": "https://makecode.microbit.org/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-1-m9.md"
+    },
+    {
+      "id": "smp8-1-m10",
+      "title": "Masukan dan keluaran perangkat (simulator)",
+      "weekCodes": ["SMP8-1-M10"],
+      "cpCodes": ["D-LD-f", "D-BK-e"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["smp8-1-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang MakeCode (situs resmi Microsoft MakeCode)",
+          "url": "https://makecode.microbit.org/about"
+        },
+        {
+          "title": "micro:bit user guide: Introduction (Micro:bit Educational Foundation)",
+          "url": "https://microbit.org/get-started/user-guide/overview/"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-1-m10.md"
+    },
+    {
+      "id": "smp8-1-m11",
+      "title": "Proyek perangkat: alarm atau penghitung langkah (simulator; papan fisik opsional)",
+      "weekCodes": ["SMP8-1-M11"],
+      "cpCodes": ["D-BK-e", "DK-BK-c", "DK-BK-b"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["smp8-1-m10", "smp7-1-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang MakeCode (situs resmi Microsoft MakeCode)",
+          "url": "https://makecode.microbit.org/about"
+        },
+        {
+          "title": "micro:bit user guide: Introduction (Micro:bit Educational Foundation)",
+          "url": "https://microbit.org/get-started/user-guide/overview/"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-1-m11.md"
+    },
+    {
+      "id": "smp8-1-m12",
+      "title": "Jaringan lokal, ponsel, dan internet",
+      "weekCodes": ["SMP8-1-M12"],
+      "cpCodes": ["D-LD-g"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["smp7-2-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-1-m12.md"
+    },
+    {
+      "id": "smp8-1-m13",
+      "title": "Proyek mini: simulasi atau perangkat lintas bidang",
+      "weekCodes": ["SMP8-1-M13"],
+      "cpCodes": ["D-BK-a", "DK-BK-b"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["smp8-1-m4", "smp8-1-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        },
+        {
+          "title": "Tentang MakeCode (situs resmi Microsoft MakeCode)",
+          "url": "https://makecode.microbit.org/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-1-m13.md"
+    },
+    {
+      "id": "smp8-1-m14",
+      "title": "Asesmen dan refleksi",
+      "weekCodes": ["SMP8-1-M14"],
+      "cpCodes": ["D-BK-a", "D-BK-d", "DK-BK-a"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["smp8-1-m13"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-1-m14.md"
+    },
+    {
+      "id": "smp8-2-m1",
+      "title": "Dari blok ke teks: apa yang sama, apa yang beda",
+      "weekCodes": ["SMP8-2-M1"],
+      "cpCodes": ["D-BK-e"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["smp8-1-m1", "smp8-1-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3: Tutorial, 4. More Control Flow Tools (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-2-m1.md"
+    },
+    {
+      "id": "smp8-2-m2",
+      "title": "Keluaran, masukan, variabel",
+      "weekCodes": ["SMP8-2-M2"],
+      "cpCodes": [],
+      "gradeLevels": ["8"],
+      "prerequisites": ["smp8-2-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3: Built-in Functions, termasuk print dan input (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/library/functions.html"
+        },
+        {
+          "title": "Python 3: Tutorial, 3. An Informal Introduction to Python (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/introduction.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-2-m2.md"
+    },
+    {
+      "id": "smp8-2-m3",
+      "title": "Ekspresi dan tipe data",
+      "weekCodes": ["SMP8-2-M3"],
+      "cpCodes": [],
+      "gradeLevels": ["8"],
+      "prerequisites": ["smp8-2-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3: Tutorial, 3. An Informal Introduction to Python (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/introduction.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-2-m3.md"
+    },
+    {
+      "id": "smp8-2-m4",
+      "title": "Percabangan if",
+      "weekCodes": ["SMP8-2-M4"],
+      "cpCodes": [],
+      "gradeLevels": ["8"],
+      "prerequisites": ["smp8-2-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3: Tutorial, 4. More Control Flow Tools (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-2-m4.md"
+    },
+    {
+      "id": "smp8-2-m5",
+      "title": "Perulangan for dan while",
+      "weekCodes": ["SMP8-2-M5"],
+      "cpCodes": [],
+      "gradeLevels": ["8"],
+      "prerequisites": ["smp8-2-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3: Tutorial, 4. More Control Flow Tools (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-2-m5.md"
+    },
+    {
+      "id": "smp8-2-m6",
+      "title": "Menerjemahkan program Scratch ke Python",
+      "weekCodes": ["SMP8-2-M6"],
+      "cpCodes": ["D-BK-e"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["smp8-2-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3: Tutorial, 4. More Control Flow Tools (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-2-m6.md"
+    },
+    {
+      "id": "smp8-2-m7",
+      "title": "Menggambar dengan perulangan (grafik kura-kura)",
+      "weekCodes": ["SMP8-2-M7"],
+      "cpCodes": ["D-BK-e", "DK-BK-c"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["smp8-2-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3: turtle, Turtle graphics (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/library/turtle.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-2-m7.md"
+    },
+    {
+      "id": "smp8-2-m8",
+      "title": "Daftar (list)",
+      "weekCodes": ["SMP8-2-M8"],
+      "cpCodes": [],
+      "gradeLevels": ["8"],
+      "prerequisites": ["smp8-2-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3 Tutorial: Data Structures, lists (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-2-m8.md"
+    },
+    {
+      "id": "smp8-2-m9",
+      "title": "Fungsi",
+      "weekCodes": ["SMP8-2-M9"],
+      "cpCodes": [],
+      "gradeLevels": ["8"],
+      "prerequisites": ["smp8-2-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3 Tutorial: More Control Flow Tools, Defining Functions (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-2-m9.md"
+    },
+    {
+      "id": "smp8-2-m10",
+      "title": "Membaca pesan galat dan debugging",
+      "weekCodes": ["SMP8-2-M10"],
+      "cpCodes": ["D-BK-a"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["smp8-2-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3 Tutorial: Errors and Exceptions (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/errors.html"
+        },
+        {
+          "title": "Python 3: Built-in Exceptions (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/builtins/exceptions.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-2-m10.md"
+    },
+    {
+      "id": "smp8-2-m11",
+      "title": "Kata sandi, akun, dan keamanan diri; data pribadi dan kata sandi tidak ditempel ke layanan AI",
+      "weekCodes": ["SMP8-2-M11"],
+      "cpCodes": ["D-LD-m", "D-LD-p"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["smp7-1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "NIST SP 800-63B: Digital Identity Guidelines, Authentication and Authenticator Management (NIST)",
+          "url": "https://pages.nist.gov/800-63-4/sp800-63b.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-2-m11.md"
+    },
+    {
+      "id": "smp8-2-m12",
+      "title": "Informasi publik dan privat di media sosial",
+      "weekCodes": ["SMP8-2-M12"],
+      "cpCodes": ["D-LD-d", "D-LD-o"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["smp8-2-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "UU Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi (JDIH BPK)",
+          "url": "https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-2-m12.md"
+    },
+    {
+      "id": "smp8-2-m13",
+      "title": "Proyek mini: kuis teks atau gambar",
+      "weekCodes": ["SMP8-2-M13"],
+      "cpCodes": ["DK-BK-b"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["smp8-2-m9", "smp8-2-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3 Tutorial: More Control Flow Tools, Defining Functions (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-2-m13.md"
+    },
+    {
+      "id": "smp8-2-m14",
+      "title": "Asesmen dan refleksi",
+      "weekCodes": ["SMP8-2-M14"],
+      "cpCodes": ["D-BK-a"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["smp8-2-m13"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3 Tutorial: More Control Flow Tools, Defining Functions (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-2-m14.md"
+    },
+    {
+      "id": "smp9-1-m1",
+      "title": "Pemecahan masalah: tinjau ulang dan pola",
+      "weekCodes": ["SMP9-1-M1"],
+      "cpCodes": ["D-BK-a"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["smp7-1-m7", "smp8-1-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-1-m1.md"
+    },
+    {
+      "id": "smp9-1-m2",
+      "title": "Teks (string)",
+      "weekCodes": ["SMP9-1-M2"],
+      "cpCodes": [],
+      "gradeLevels": ["9"],
+      "prerequisites": ["smp8-2-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3: Tutorial, bagian Teks (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/introduction.html"
+        },
+        {
+          "title": "Python 3: Tipe bawaan, metode str (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/library/stdtypes.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-1-m2.md"
+    },
+    {
+      "id": "smp9-1-m3",
+      "title": "Pasangan kunci-nilai (dictionary), pengantar",
+      "weekCodes": ["SMP9-1-M3"],
+      "cpCodes": [],
+      "gradeLevels": ["9"],
+      "prerequisites": ["smp8-2-m8", "smp9-1-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3: Tutorial, Struktur data: Dictionaries (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-1-m3.md"
+    },
+    {
+      "id": "smp9-1-m4",
+      "title": "Membaca berkas teks",
+      "weekCodes": ["SMP9-1-M4"],
+      "cpCodes": ["D-BK-d", "DK-BK-a"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["smp9-1-m2", "smp8-1-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3: Tutorial, Membaca dan menulis berkas (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/inputoutput.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-1-m4.md"
+    },
+    {
+      "id": "smp9-1-m5",
+      "title": "Data tabel kecil: jumlah, rata-rata, terbesar",
+      "weekCodes": ["SMP9-1-M5"],
+      "cpCodes": ["D-BK-d", "DK-BK-a"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["smp9-1-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3: Fungsi bawaan sum, len, max (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/library/functions.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-1-m5.md"
+    },
+    {
+      "id": "smp9-1-m6",
+      "title": "Sumber data terbuka dan legal",
+      "weekCodes": ["SMP9-1-M6"],
+      "cpCodes": ["D-BK-d", "D-LD-b", "DK-BK-a"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["smp8-1-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Creative Commons: lisensi CC (situs resmi Creative Commons)",
+          "url": "https://creativecommons.org/share-your-work/cclicenses/"
+        },
+        {
+          "title": "Portal Satu Data Indonesia (data.go.id)",
+          "url": "https://data.go.id/"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-1-m6.md"
+    },
+    {
+      "id": "smp9-1-m7",
+      "title": "Visualisasi sederhana",
+      "weekCodes": ["SMP9-1-M7"],
+      "cpCodes": ["D-BK-d", "DK-BK-a", "D-LD-e"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["smp8-1-m7", "smp9-1-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3: Tipe bawaan, operasi urutan s * n (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/library/stdtypes.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-1-m7.md"
+    },
+    {
+      "id": "smp9-1-m8",
+      "title": "Lebih dari satu solusi untuk satu masalah",
+      "weekCodes": ["SMP9-1-M8"],
+      "cpCodes": ["D-BK-a"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["smp9-1-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3 Tutorial: More Control Flow Tools, Defining Functions (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        },
+        {
+          "title": "Python 3 Tutorial: An Informal Introduction to Python, pembagian // dan perulangan while (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/introduction.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-1-m8.md"
+    },
+    {
+      "id": "smp9-1-m9",
+      "title": "Mencari dan mengurutkan dengan kode",
+      "weekCodes": ["SMP9-1-M9"],
+      "cpCodes": ["D-BK-a"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["smp7-2-m5", "smp8-2-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3 HOWTO: Sorting Techniques, sorted dan list.sort (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/howto/sorting.html"
+        },
+        {
+          "title": "Python 3 Tutorial: Data Structures, daftar dan list.sort (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-1-m9.md"
+    },
+    {
+      "id": "smp9-1-m10",
+      "title": "Bilangan acak dan simulasi",
+      "weekCodes": ["SMP9-1-M10"],
+      "cpCodes": ["D-BK-a"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["smp8-2-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3: modul random, randint dan seed (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/library/random.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-1-m10.md"
+    },
+    {
+      "id": "smp9-1-m11",
+      "title": "Informasi, hoaks, dan keterbukaan informasi",
+      "weekCodes": ["SMP9-1-M11"],
+      "cpCodes": ["D-LD-b", "D-LD-d"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["smp8-2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "IFLA: How To Spot Fake News, infografik delapan langkah (2017)",
+          "url": "https://repository.ifla.org/handle/20.500.14598/167"
+        },
+        {
+          "title": "UU Nomor 14 Tahun 2008 tentang Keterbukaan Informasi Publik (JDIH BPK)",
+          "url": "https://peraturan.bpk.go.id/Details/39047/uu-no-14-tahun-2008"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-1-m11.md"
+    },
+    {
+      "id": "smp9-1-m12",
+      "title": "Rencana proyek akhir",
+      "weekCodes": ["SMP9-1-M12"],
+      "cpCodes": ["DK-BK-b"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["smp8-2-m13"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-1-m12.md"
+    },
+    {
+      "id": "smp9-1-m13",
+      "title": "Proyek mini: pengolah data kecil",
+      "weekCodes": ["SMP9-1-M13"],
+      "cpCodes": ["D-BK-d", "DK-BK-a", "DK-BK-b"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["smp9-1-m4", "smp9-1-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3 Tutorial: Input and Output, membaca berkas dengan with (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/inputoutput.html"
+        },
+        {
+          "title": "Python 3 Tutorial: Errors and Exceptions, ZeroDivisionError dan ValueError (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/errors.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-1-m13.md"
+    },
+    {
+      "id": "smp9-1-m14",
+      "title": "Asesmen dan refleksi",
+      "weekCodes": ["SMP9-1-M14"],
+      "cpCodes": ["D-BK-a", "D-BK-d", "DK-BK-a"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["smp9-1-m13"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3 Tutorial: More Control Flow Tools, Defining Functions (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        },
+        {
+          "title": "Python 3 Tutorial: Data Structures, daftar dan list.sort (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-1-m14.md"
+    },
+    {
+      "id": "smp9-2-m1",
+      "title": "Mengidentifikasi persoalan masyarakat sekitar",
+      "weekCodes": ["SMP9-2-M1"],
+      "cpCodes": ["DK-BK-b"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["smp9-1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-2-m1.md"
+    },
+    {
+      "id": "smp9-2-m2",
+      "title": "Merancang solusi",
+      "weekCodes": ["SMP9-2-M2"],
+      "cpCodes": ["DK-BK-b", "D-BK-a"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["smp9-2-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-2-m2.md"
+    },
+    {
+      "id": "smp9-2-m3",
+      "title": "Implementasi, tahap 1",
+      "weekCodes": ["SMP9-2-M3"],
+      "cpCodes": ["DK-BK-b", "D-BK-e", "DK-BK-c"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["smp9-2-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3 Tutorial: Defining Functions (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-2-m3.md"
+    },
+    {
+      "id": "smp9-2-m4",
+      "title": "Implementasi, tahap 2",
+      "weekCodes": ["SMP9-2-M4"],
+      "cpCodes": ["DK-BK-b"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["smp9-2-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3: Tipe bawaan, dict.get dan metode str (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/library/stdtypes.html"
+        },
+        {
+          "title": "Python 3: Fungsi bawaan input dan len (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/library/functions.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-2-m4.md"
+    },
+    {
+      "id": "smp9-2-m5",
+      "title": "Pengujian dengan pengguna",
+      "weekCodes": ["SMP9-2-M5"],
+      "cpCodes": ["DK-BK-b"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["smp9-2-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-2-m5.md"
+    },
+    {
+      "id": "smp9-2-m6",
+      "title": "Penyempurnaan",
+      "weekCodes": ["SMP9-2-M6"],
+      "cpCodes": ["DK-BK-b"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["smp9-2-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3: Tipe bawaan, dict.get dan metode str (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/library/stdtypes.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-2-m6.md"
+    },
+    {
+      "id": "smp9-2-m7",
+      "title": "Laporan dan presentasi",
+      "weekCodes": ["SMP9-2-M7"],
+      "cpCodes": ["DK-LD-a", "D-LD-i", "D-LD-e"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["smp9-2-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-2-m7.md"
+    },
+    {
+      "id": "smp9-2-m8",
+      "title": "Pengantar kecerdasan artifisial: penginderaan dan sensor",
+      "weekCodes": ["SMP9-2-M8"],
+      "cpCodes": ["DK-EA-b"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["smp7-2-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "AI4K12: Big Idea 1, Perception (inisiatif AI4K12)",
+          "url": "https://ai4k12.org/big-idea-1-overview/"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-2-m8.md"
+    },
+    {
+      "id": "smp9-2-m9",
+      "title": "Mesin belajar dari contoh dan kualitas data",
+      "weekCodes": ["SMP9-2-M9"],
+      "cpCodes": ["DK-EA-c"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["smp9-2-m8", "smp9-1-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "AI4K12: Big Idea 3, Learning (inisiatif AI4K12)",
+          "url": "https://ai4k12.org/big-idea-3-overview/"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-2-m9.md"
+    },
+    {
+      "id": "smp9-2-m10",
+      "title": "Etika AI: keliru, bias, halusinasi, tiruan palsu (deep fake), ketergantungan, mengalihkan pekerjaan berpikir ke AI",
+      "weekCodes": ["SMP9-2-M10"],
+      "cpCodes": ["DK-EA-e", "DK-EA-f", "DK-EA-g"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["smp9-2-m9", "smp9-1-m11", "smp8-2-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Guidance for generative AI in education and research (UNESCO)",
+          "url": "https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research"
+        },
+        {
+          "title": "Surat Edaran Menteri Komunikasi dan Informatika Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (JDIH Komdigi)",
+          "url": "https://jdih.komdigi.go.id/produk_hukum/view/id/883/t/surat+edaran+menteri+komunikasi+dan+informatika+nomor+9+tahun+2023"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-2-m10.md"
+    },
+    {
+      "id": "smp9-2-m11",
+      "title": "Jembatan ke SMA: membaca kode bahasa lain",
+      "weekCodes": ["SMP9-2-M11"],
+      "cpCodes": ["D-BK-e"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["smp9-1-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3 Tutorial: More Control Flow Tools, Defining Functions (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        },
+        {
+          "title": "Standard C++ Foundation (isocpp.org)",
+          "url": "https://isocpp.org/"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-2-m11.md"
+    },
+    {
+      "id": "smp9-2-m12",
+      "title": "Pameran produk",
+      "weekCodes": ["SMP9-2-M12"],
+      "cpCodes": ["DK-LD-a", "D-LD-i"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["smp9-2-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-2-m12.md"
+    },
+    {
+      "id": "smp9-2-m13",
+      "title": "Portofolio dan refleksi",
+      "weekCodes": ["SMP9-2-M13"],
+      "cpCodes": ["DK-LD-a", "D-LD-i"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["smp9-2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-2-m13.md"
+    },
+    {
+      "id": "smp9-2-m14",
+      "title": "Asesmen akhir",
+      "weekCodes": ["SMP9-2-M14"],
+      "cpCodes": ["DK-BK-b"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["smp9-2-m13"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3: Tipe bawaan, dict.get dan metode str (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/library/stdtypes.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-2-m14.md"
+    }
+  ]
+}

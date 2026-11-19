@@ -68,7 +68,7 @@ describe("dewasa-coding fidelity: data/dewasa-coding vs. the approved silabus", 
 
   test("the registry entry exists and carries the document's version and date", () => {
     expect(entry).toBeDefined();
-    expect(entry?.syllabusVersion).toBe("1.0.0");
+    expect(entry?.syllabusVersion).toBe("1.2.0");
     expect(entry?.syllabusDate).toBe("2026-11-19");
   });
 
@@ -81,7 +81,7 @@ describe("dewasa-coding fidelity: data/dewasa-coding vs. the approved silabus", 
   test("the derived corpus has the expected record counts", () => {
     const expected = expectedCorpus(silabus, riset) as Record<string, Json>;
     expect(expected["tracks.json"].tracks).toHaveLength(4);
-    expect(expected["module-plan.json"].modules).toHaveLength(34);
+    expect(expected["module-plan.json"].modules).toHaveLength(35);
     expect(expected["shared.json"].modules).toHaveLength(1);
     expect(expected["skkni-units.json"].units).toHaveLength(47);
     expect(expected["skkni-units.json"].uncoveredUnitCodes).toHaveLength(13);
@@ -89,8 +89,67 @@ describe("dewasa-coding fidelity: data/dewasa-coding vs. the approved silabus", 
     expect(expected["certification.json"].lspSchemes[0].unitCodes).toHaveLength(8);
     expect(expected["certification.json"].lspSchemes[1].unitCodes).toHaveLength(9);
     expect(expected["bridges.json"].bridges).toHaveLength(6);
-    expect(expected["bridges.json"].bridges[3].status).toBe("ditunda");
+    expect(expected["bridges.json"].bridges[3].status).toBe("dirancang");
     expect(expected["structure.json"].rows).toHaveLength(8);
+  });
+
+  test("bagian 6.2 yields the kuliah-coding bridge: 3 profiles, 13 modules, 3 impact rows", () => {
+    const expected = expectedCorpus(silabus, riset) as Record<string, Json>;
+    const bridge = expected["kuliah-bridge.json"];
+    expect(bridge.sourceSection).toBe("bagian 6.2");
+    expect(bridge.baselineHours).toBe(136);
+    expect(bridge.profiles.map((p: Json) => p.id)).toEqual(["I-lengkap", "I-awal", "U-lengkap"]);
+    expect(bridge.modules).toHaveLength(13);
+    expect(bridge.modules[0].code).toBe("DW-PRO-M1");
+    expect(bridge.modules[5].code).toBe("DW-PRO-M13");
+    expect(bridge.modules[5].hours).toBe(8);
+    expect(bridge.modules[0].statuses).toEqual({
+      "I-lengkap": "L",
+      "I-awal": "P",
+      "U-lengkap": "P",
+    });
+    expect(bridge.hourImpact[0]).toEqual({
+      profile: "I-lengkap",
+      lewati: 7,
+      padatkan: 4,
+      wajib: 2,
+      moduleHours: 47,
+      totalHours: 55,
+      reductionHours: 81,
+    });
+    expect(bridge.mandatoryModules).toEqual(["DW-FND-M1", "DW-PRO-M12"]);
+  });
+});
+
+describe("dewasa-coding fidelity: drift in the kuliah-coding bridge", () => {
+  test("a changed status, profile cell, impact figure and mandatory module are reported", () => {
+    const files = load();
+    const bridge = files["kuliah-bridge.json"];
+    bridge.modules[0].statuses["I-awal"] = "W";
+    bridge.profiles[1].note = "diubah";
+    bridge.hourImpact[2].moduleHours = 84;
+    bridge.mandatoryModules = ["DW-FND-M1"];
+    bridge.baselineHours = 128;
+    const found = contexts(files);
+    expect(found).toContain("kuliah-bridge.json.modules[DW-PRO-M1].statuses.I-awal");
+    expect(found).toContain("kuliah-bridge.json.profiles[I-awal].note");
+    expect(found).toContain("kuliah-bridge.json.hourImpact[2].moduleHours");
+    expect(found).toContain("kuliah-bridge.json.mandatoryModules length");
+    expect(found).toContain("kuliah-bridge.json.baselineHours");
+  });
+
+  test("a bagian 6.2 that loses a table, a status or the mandatory bullet fails loudly", () => {
+    expect(() =>
+      expectedCorpus(silabus.replace("tetap wajib bagi semua peserta", "diulang"), riset),
+    ).toThrow("mandatory modules");
+    expect(() =>
+      expectedCorpus(silabus.replace("| W | W | W |\n\nDampak", "| W | W | Z |\n\nDampak"), riset),
+    ).toThrow("is not L, P or W");
+    expect(() =>
+      expectedCorpus(silabus.replace("Dampak pada jam jalur", "Dampak jam"), riset),
+    ).toThrow("jam dasar");
+    const noImpact = silabus.slice(0, silabus.indexOf("Dampak pada jam jalur"));
+    expect(() => expectedCorpus(`${noImpact}\n## 7. Jalur \`BIS\`\n`, riset)).toThrow();
   });
 });
 
@@ -136,7 +195,7 @@ describe("dewasa-coding fidelity: drift fails hard", () => {
     files["shared.json"].modules[0].topics += " tambahan";
     files["structure.json"].rows[3].value = "Java";
     files["bridges.json"].bridges[0].note = "diubah";
-    files["bridges.json"].bridges[3].status = "dirancang";
+    files["bridges.json"].bridges[3].status = "ditunda";
     files["certification.json"].options[1].advantages = "diubah";
     files["certification.json"].defaultOptionId = "B";
     files["certification.json"].lspSchemes[0].unitCodes.pop();
@@ -150,6 +209,43 @@ describe("dewasa-coding fidelity: drift fails hard", () => {
     expect(found).toContain(
       "certification.json.lspSchemes[junior-web-programmer].unitCodes length",
     );
+  });
+
+  test("DW-PRO-M13 is derived after DW-PRO-M5 with 8 hours and the table order as prerequisites", () => {
+    const expected = expectedCorpus(silabus, riset) as Record<string, Json>;
+    const pro = expected["module-plan.json"].modules.filter(
+      (module: Json) => module.track === "PRO",
+    );
+    expect(pro.map((module: Json) => module.code).slice(4, 8)).toEqual([
+      "DW-PRO-M5",
+      "DW-PRO-M13",
+      "DW-PRO-M6",
+      "DW-PRO-M7",
+    ]);
+    expect(pro[5].hours).toBe(8);
+    expect(pro[5].prerequisites).toEqual(["DW-PRO-M5"]);
+    expect(pro[6].prerequisites).toEqual(["DW-PRO-M13"]);
+    const tracks = expected["tracks.json"].tracks as Json[];
+    expect(tracks[1].hoursPerModule).toBeUndefined();
+    expect(tracks[1].moduleCount).toBe(13);
+    expect(tracks[1].totalHours).toBe(136);
+  });
+
+  test("a changed M13 hours, a dropped M13 and a PRO hours cell that is not updated are reported", () => {
+    const files = load();
+    const m13 = files["module-plan.json"].modules.find(
+      (module: { code: string }) => module.code === "DW-PRO-M13",
+    );
+    m13.hours = 10;
+    files["tracks.json"].tracks[1].totalHours = 128;
+    const found = contexts(files);
+    expect(found).toContain("module-plan.json.modules[DW-PRO-M13].hours");
+    expect(found).toContain("tracks.json.tracks[PRO].totalHours");
+    const dropped = load();
+    dropped["module-plan.json"].modules = dropped["module-plan.json"].modules.filter(
+      (module: { code: string }) => module.code !== "DW-PRO-M13",
+    );
+    expect(contexts(dropped)).toContain("module-plan.json.modules length");
   });
 
   test("a dropped record is reported as a length mismatch, a derived rule as a field mismatch", () => {
@@ -205,13 +301,25 @@ describe("dewasa-coding fidelity: a document that breaks the shape fails loudly"
 
   test("a module code that skips a number is refused", () => {
     const broken = silabus.replace("| `DW-PKJ-M2` |", "| `DW-PKJ-M9` |");
-    expect(() => expectedCorpus(broken, riset)).toThrow("expected DW-PKJ-M2");
+    expect(() => expectedCorpus(broken, riset)).toThrow("module numbers must be 1..8");
   });
 
-  test("a Durasi that disagrees with the module table is refused", () => {
+  test("a Durasi that disagrees with the hours cell or the module table is refused", () => {
     const broken = silabus.replace("(8 modul × 5 jam)", "(9 modul × 5 jam)");
     expect(broken).not.toBe(silabus);
-    expect(() => expectedCorpus(broken, riset)).toThrow("Durasi says 9 modules");
+    expect(() => expectedCorpus(broken, riset)).toThrow("terms add up to 45 hours");
+    const dropped = silabus.replace(/^\| `DW-PKJ-M8` \|.*\n/m, "");
+    expect(dropped).not.toBe(silabus);
+    expect(() => expectedCorpus(dropped, riset)).toThrow("Durasi says 8 modules, the table has 7");
+  });
+
+  test("the PRO table states hours per module that must add up to the track's hours", () => {
+    const bad = silabus.replace(/^(\| `DW-PRO-M13` \|.*?) \| 8 \| (`J)/m, "$1 | 9 | $2");
+    expect(bad).not.toBe(silabus);
+    expect(() => expectedCorpus(bad, riset)).toThrow("module hours add up to 129");
+    const noHours = silabus.replace(/^(\| `DW-PRO-M13` \|.*?) \| 8 \| (`J)/m, "$1 | $2");
+    expect(noHours).not.toBe(silabus);
+    expect(() => expectedCorpus(noHours, riset)).toThrow("expected 5 non-empty cells");
   });
 
   test("a bad hours cell, a missing paragraph and a misordered track are refused", () => {

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320" role="img" aria-labelledby="t d">
+  <title id="t">Dua kotak sortir menurut warna: merah dan biru</title>
+  <desc id="d">Dua kotak berdampingan. Kotak merah bertitik merah berisi apel dan bola merah. Kotak biru bertitik biru berisi topi dan sepatu biru. Nama warna tertulis di bawah tiap gambar.</desc>
+  <rect width="640" height="320" fill="#ffffff"/>
+  <rect x="30" y="20" width="270" height="280" rx="12" fill="#fffdf5" stroke="#888888" stroke-width="3"/>
+  <circle cx="165" cy="52" r="14" fill="#d94f4f" stroke="#8f2a2a" stroke-width="2"/>
+  <rect x="340" y="20" width="270" height="280" rx="12" fill="#fffdf5" stroke="#888888" stroke-width="3"/>
+  <circle cx="475" cy="52" r="14" fill="#2a5d9f" stroke="#1b3f70" stroke-width="2"/>
+  <!-- apel -->
+  <circle cx="95" cy="160" r="38" fill="#d94f4f" stroke="#8f2a2a" stroke-width="3"/>
+  <path d="M95,122 q4,-18 16,-22" fill="none" stroke="#5a3a1a" stroke-width="4"/>
+  <path d="M101,112 q14,-14 24,-2 q-12,10 -24,2 z" fill="#7bbf5a" stroke="#3b7d1f" stroke-width="2"/>
+  <!-- bola -->
+  <circle cx="225" cy="160" r="38" fill="#d94f4f" stroke="#8f2a2a" stroke-width="3"/>
+  <path d="M187,160 q38,-26 76,0 M187,160 q38,26 76,0" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <!-- topi -->
+  <path d="M375,175 q0,-45 45,-45 q45,0 45,45 z" fill="#2a5d9f" stroke="#1b3f70" stroke-width="3"/>
+  <rect x="460" y="168" width="45" height="10" rx="5" fill="#2a5d9f" stroke="#1b3f70" stroke-width="3"/>
+  <!-- sepatu -->
+  <path d="M515,200 v-45 h22 q4,24 34,28 q16,2 16,17 z" fill="#2a5d9f" stroke="#1b3f70" stroke-width="3"/>
+  <g font-family="sans-serif" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">
+    <text x="165" y="86">kotak merah</text>
+    <text x="475" y="86">kotak biru</text>
+  </g>
+  <g font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">
+    <text x="95" y="228">apel, merah</text>
+    <text x="225" y="228">bola, merah</text>
+    <text x="435" y="228">topi, biru</text>
+    <text x="551" y="228">sepatu, biru</text>
+  </g>
+</svg>

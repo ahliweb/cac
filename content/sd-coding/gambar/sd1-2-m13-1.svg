@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" width="640" height="300" role="img" aria-labelledby="t d">
+  <title id="t">Halaman hari-hariku: pagi bangun tidur, siang belajar, malam tidur</title>
+  <desc id="d">Tiga kotak berurutan dengan panah. Kotak pagi: tempat tidur dan matahari terbit. Kotak siang: buku terbuka dan matahari tinggi. Kotak malam: tempat tidur dan bulan.</desc>
+  <rect width="640" height="300" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a5d9f"/>
+    </marker>
+  </defs>
+  <g fill="#fffdf5" stroke="#888888" stroke-width="3">
+    <rect x="20" y="20" width="170" height="260" rx="14"/>
+    <rect x="235" y="20" width="170" height="260" rx="14"/>
+    <rect x="450" y="20" width="170" height="260" rx="14"/>
+  </g>
+  <polyline points="192,150 232,150" fill="none" stroke="#2a5d9f" stroke-width="3" marker-end="url(#a)"/>
+  <polyline points="407,150 447,150" fill="none" stroke="#2a5d9f" stroke-width="3" marker-end="url(#a)"/>
+  <g font-family="sans-serif" font-size="22" font-weight="bold" fill="#222222" text-anchor="middle">
+    <text x="105" y="52">pagi</text>
+    <text x="320" y="52">siang</text>
+    <text x="535" y="52">malam</text>
+  </g>
+  <path d="M60,100 A22,22 0 0 1 104,100 Z" fill="#f2d24b" stroke="#b8960a" stroke-width="3"/>
+  <circle cx="320" cy="85" r="18" fill="#f2d24b" stroke="#b8960a" stroke-width="3"/>
+  <path d="M540,72 A24,24 0 1 0 540,120 A18,24 0 0 1 540,72 Z" fill="#cfd8e8" stroke="#445577" stroke-width="3"/>
+  <g stroke="#444444" stroke-width="3">
+    <rect x="45" y="170" width="120" height="30" rx="6" fill="#64a0e0"/>
+    <rect x="45" y="150" width="35" height="20" rx="6" fill="#ffffff"/>
+    <rect x="60" y="200" width="6" height="25" fill="#444444"/>
+    <rect x="145" y="200" width="6" height="25" fill="#444444"/>
+    <rect x="465" y="170" width="120" height="30" rx="6" fill="#64a0e0"/>
+    <rect x="465" y="150" width="35" height="20" rx="6" fill="#ffffff"/>
+    <rect x="480" y="200" width="6" height="25" fill="#444444"/>
+    <rect x="565" y="200" width="6" height="25" fill="#444444"/>
+    <path d="M262,170 L320,185 L378,170 L378,225 L320,240 L262,225 Z" fill="#ffffff"/>
+    <path d="M320,185 L320,240" fill="none"/>
+  </g>
+</svg>

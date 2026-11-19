@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" width="640" height="300" role="img" aria-labelledby="t d">
+  <title id="t">Dua kartu jika-maka: hujan ke payung dan panas ke topi</title>
+  <desc id="d">Dua baris kartu. Baris pertama: kartu JIKA bergambar awan dengan tetes hujan, panah, kartu MAKA bergambar payung, dan tulisan Jika hujan, maka payung. Baris kedua: kartu JIKA bergambar matahari, panah, kartu MAKA bergambar topi, dan tulisan Jika panas, maka topi.</desc>
+  <rect width="640" height="300" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a5d9f"/>
+    </marker>
+  </defs>
+  <rect x="30" y="25" width="180" height="120" rx="8" fill="#f7f7f7" stroke="#888888" stroke-width="1.5"/>
+  <text x="45" y="50" font-family="sans-serif" font-size="15" fill="#2a5d9f" text-anchor="start" font-weight="bold">JIKA</text>
+  <rect x="260" y="25" width="180" height="120" rx="8" fill="#f7f7f7" stroke="#888888" stroke-width="1.5"/>
+  <text x="275" y="50" font-family="sans-serif" font-size="15" fill="#2e7d32" text-anchor="start" font-weight="bold">MAKA</text>
+  <g fill="#cfd8dc" stroke="#546e7a" stroke-width="2">
+    <circle cx="98" cy="89" r="14"/><circle cx="120" cy="79" r="19"/><circle cx="144" cy="89" r="14"/>
+    <rect x="84" y="89" width="74" height="14" stroke="none"/>
+  </g>
+  <g stroke="#2a5d9f" stroke-width="3" stroke-linecap="round"><line x1="100" y1="113" x2="94" y2="127"/><line x1="120" y1="113" x2="114" y2="127"/><line x1="140" y1="113" x2="134" y2="127"/></g>
+  <path d="M316,85 A34,30 0 0 1 384,85 Z" fill="#d9534f" stroke="#222222" stroke-width="2"/>
+  <path d="M350,85 L350,125 q0,10 -10,8" stroke="#222222" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M215,85 L250,85 M242,78 L251,85 L242,92" stroke="#2a5d9f" stroke-width="3" fill="none"/>
+  <text x="465" y="80" font-family="sans-serif" font-size="17" fill="#222222" text-anchor="start" font-weight="bold">Jika hujan,</text>
+  <text x="465" y="106" font-family="sans-serif" font-size="17" fill="#222222" text-anchor="start" font-weight="bold">maka payung.</text>
+  <rect x="30" y="160" width="180" height="120" rx="8" fill="#f7f7f7" stroke="#888888" stroke-width="1.5"/>
+  <text x="45" y="185" font-family="sans-serif" font-size="15" fill="#2a5d9f" text-anchor="start" font-weight="bold">JIKA</text>
+  <rect x="260" y="160" width="180" height="120" rx="8" fill="#f7f7f7" stroke="#888888" stroke-width="1.5"/>
+  <text x="275" y="185" font-family="sans-serif" font-size="15" fill="#2e7d32" text-anchor="start" font-weight="bold">MAKA</text>
+  <circle cx="120" cy="225" r="17" fill="#ffd54f" stroke="#b86a00" stroke-width="2"/>
+  <g stroke="#b86a00" stroke-width="3" stroke-linecap="round"><line x1="145.0" y1="225.0" x2="156.0" y2="225.0"/><line x1="137.7" y1="242.7" x2="145.5" y2="250.5"/><line x1="120.0" y1="250.0" x2="120.0" y2="261.0"/><line x1="102.3" y1="242.7" x2="94.5" y2="250.5"/><line x1="95.0" y1="225.0" x2="84.0" y2="225.0"/><line x1="102.3" y1="207.3" x2="94.5" y2="199.5"/><line x1="120.0" y1="200.0" x2="120.0" y2="189.0"/><line x1="137.7" y1="207.3" x2="145.5" y2="199.5"/></g>
+  <path d="M328,235 A22,26 0 0 1 372,235 Z" fill="#8d6e63" stroke="#222222" stroke-width="2"/>
+  <rect x="312" y="235" width="76" height="8" rx="4" fill="#6d4c41" stroke="#222222" stroke-width="2"/>
+  <path d="M215,220 L250,220 M242,213 L251,220 L242,227" stroke="#2a5d9f" stroke-width="3" fill="none"/>
+  <text x="465" y="215" font-family="sans-serif" font-size="17" fill="#222222" text-anchor="start" font-weight="bold">Jika panas,</text>
+  <text x="465" y="241" font-family="sans-serif" font-size="17" fill="#222222" text-anchor="start" font-weight="bold">maka topi.</text>
+</svg>

@@ -9,7 +9,8 @@ Setelah mempelajari modul ini, kamu diharapkan bisa:
 - menerapkan konfigurasi privasi dan keamanan pada akun uji;
 - menjelaskan langkah keamanan konektivitas dasar;
 - mengenali pesan tipuan (phishing);
-- menghargai hak atas kekayaan intelektual.
+- menghargai hak atas kekayaan intelektual;
+- menerapkan kebijakan pemakaian AI kelas (tanpa data pribadi, kata sandi, atau kunci pada layanan AI; mencatat bila keluaran AI dipakai; menyadari bahwa lisensi keluaran AI masih berkembang). Butir ini dari rencana minggu silabus v1.3 dan bukan salah satu butir CP yang dikutip di bawah.
 
 Modul ini menyiapkan beberapa butir capaian pembelajaran, antara lain: "menerapkan pengelolaan kata sandi dengan manajer kata sandi, dan menerapkan autentikasi dua langkah secara sederhana", "menerapkan konfigurasi privasi dan keamanan pada akun platform digital", "memahami konsep dan penerapan serta konfigurasi keamanan dasar untuk konektivitas jaringan data lokal dan internet baik kabel maupun nirkabel", serta "menghargai hak atas kekayaan intelektual".
 
@@ -22,13 +23,23 @@ Bagian ini penting dan berlaku untuk semua kegiatan:
 3. **Kamu tidak wajib memasang apa pun di ponsel pribadimu.** Autentikasi dua langkah didemonstrasikan oleh guru. Bila kamu ingin mencobanya di akunmu sendiri, lakukan di rumah bersama orang tua atau wali.
 4. Jangan membagikan kata sandi, kode verifikasi, atau data pribadi (nama lengkap, alamat, nomor telepon, nomor identitas) di kelas. Bila perlu nama, pakai nama samaran seperti Murid-01.
 
+## Ingat kembali
+
+Jawab dari ingatan, tanpa membuka modul jaringan dan internet (FND-X1-M4 dan M5). Cocokkan di bagian kunci.
+
+1. Apa fungsi DNS?
+2. Apa beda HTTP dan HTTPS?
+3. Sebutkan lima tahap diagnosis jaringan dari yang pertama diperiksa.
+4. Murid fiktif tersambung ke jaringan, `ping` ke gateway berhasil, `ping` ke alamat angka di internet berhasil, tetapi membuka halaman dengan nama gagal. Di tahap mana masalahnya?
+5. Apa arti alamat `127.0.0.1`?
+
 ## Kata sandi yang kuat
 
 Kata sandi adalah pintu akunmu. Kata sandi lemah ibarat pintu yang kuncinya tertinggal.
 
 Yang membuat kata sandi kuat:
 
-- **Panjang.** Makin panjang makin sulit ditebak. Utamakan panjang daripada trik huruf.
+- **Panjang.** Makin panjang makin sulit ditebak. Utamakan panjang daripada trik huruf. Pedoman identitas digital NIST (SP 800-63B) juga menekankan panjang minimum dan melarang aturan komposisi yang memaksa campuran jenis karakter.
 - **Acak dan unik.** Jangan pakai nama, tanggal lahir, nomor telepon, atau kata umum seperti `password` dan `123456`.
 - **Berbeda di setiap akun.** Bila satu akun bocor, akun lain tidak ikut.
 - **Frasa sandi (passphrase).** Beberapa kata acak yang tidak berhubungan, misalnya empat sampai enam kata, mudah diingat tetapi panjang.
@@ -75,7 +86,7 @@ Hal yang perlu diperhatikan:
 | Yang kamu miliki | kode dari aplikasi pembangkit kode, perangkat kunci keamanan |
 | Siapa kamu | sidik jari, wajah |
 
-Bila kata sandimu bocor, penyerang masih membutuhkan faktor kedua. Pesan SMS bisa dipakai, tetapi aplikasi pembangkit kode atau kunci keamanan umumnya lebih tahan penipuan. Kode verifikasi bersifat rahasia: jangan beri kode kepada siapa pun, termasuk orang yang mengaku petugas.
+Bila kata sandimu bocor, penyerang masih membutuhkan faktor kedua. Pesan SMS bisa dipakai, tetapi aplikasi pembangkit kode umumnya lebih baik daripada SMS, dan kunci keamanan perangkat keras umumnya paling tahan terhadap penipuan. Tidak ada yang kebal: kode dari aplikasi pun tetap bisa dicuri bila kamu memberikannya kepada penipu. Kode verifikasi bersifat rahasia: jangan beri kode kepada siapa pun, termasuk orang yang mengaku petugas.
 
 **Demonstrasi oleh guru:** guru mengaktifkan autentikasi dua langkah pada akun uji dengan perangkat guru atau perangkat lab, dan murid mengamati langkah-langkahnya. Murid tidak diminta memasang aplikasi pada ponsel pribadi.
 
@@ -96,9 +107,9 @@ Prinsipnya: bagikan seperlunya. Data pribadi yang sudah tersebar sulit ditarik k
 | Langkah | Alasan |
 | --- | --- |
 | Ganti kata sandi bawaan perangkat jaringan (router, titik akses) | kata sandi bawaan sering sama untuk satu model dan mudah ditebak |
-| Pakai jaringan nirkabel terenkripsi dengan kata sandi yang kuat | agar orang luar tidak ikut memakai dan tidak membaca lalu lintas |
+| Pakai jaringan nirkabel terenkripsi (pilih WPA2 atau WPA3, bukan jaringan terbuka) dengan kata sandi yang kuat | agar orang luar tidak ikut memakai dan tidak membaca lalu lintas |
 | Waspada jaringan publik (Wi-Fi terbuka) | pihak lain di jaringan yang sama berpotensi mengintip atau memalsukan jaringan |
-| Periksa tanda HTTPS (gembok) sebelum memasukkan data penting | HTTPS mengenkripsi data antara peramban dan server |
+| Periksa alamat berawalan `https://` (ikon peramban bisa berbeda antarversi) sebelum memasukkan data penting | HTTPS mengenkripsi data antara peramban dan server |
 | Perbarui perangkat dan aplikasi | pembaruan menutup celah yang ditemukan |
 | Jangan mengabaikan peringatan sertifikat pada peramban | peringatan dapat berarti situs palsu atau koneksi disadap |
 
@@ -134,6 +145,21 @@ Karya digital seperti tulisan, gambar, musik, video, dan program dilindungi hak 
 - tidak menyalin tugas teman atau karya orang lain sebagai karyamu sendiri;
 - tidak menyebarkan data atau foto orang lain tanpa izin.
 
+## Memakai AI dengan etika (kebijakan AI kelas)
+
+Silabus `sma-coding` v1.3, bagian 7.4, menetapkan bahwa murid SMA boleh memakai AI generatif dengan etika. Bagian ini hanya ringkasan aturan yang dilatih minggu ini; bila ada perbedaan, teks silabus yang berlaku. Syarat usia dan ketentuan tiap layanan AI, serta kebijakan Kemendikdasmen tentang AI di sekolah, belum diverifikasi; guru memeriksanya sebelum murid memakai layanan apa pun, dan murid tidak wajib punya akun.
+
+| Aspek | Aturan kelas |
+| --- | --- |
+| Privasi | Jangan menaruh data pribadi, kata sandi, kunci, rahasia, atau tugas bernilai pada permintaan ke layanan AI. |
+| Keterbukaan | Catat bila keluaran AI dipakai: alat, tujuan, garis besar perintah, bagian yang dipakai, dan cara kamu memeriksanya. |
+| Kejujuran | Tanggung jawab atas karya tetap padamu; jangan menyajikan keluaran AI sebagai karyamu tanpa keterangan, dan jangan memakai AI untuk menjiplak atau melanggar lisensi. |
+| Lisensi | Status hak cipta dan lisensi keluaran AI masih berkembang; catat sebagai ketidakpastian, bukan kepastian. |
+| Verifikasi | AI bisa memberi jawaban keliru yang terdengar yakin; periksa dengan sumber lain. |
+| Izin | Guru menetapkan per tugas apakah AI boleh dan mengumumkannya di awal tugas; ikuti juga kebijakan sekolah dan orang tua. |
+
+Aturan privasi di atas sejalan dengan aturan kata sandi di modul ini: kata sandi dan kode verifikasi tidak pernah dibagikan, termasuk kepada asisten AI.
+
 ## Kegiatan
 
 **Kegiatan 1: Audit kata sandi dengan bahan sintetis.** Guru membagikan daftar kata sandi fiktif. Kelompok menilai tiap kata sandi: panjang, mudah ditebak atau tidak, ada hubungan dengan data pribadi atau tidak. Isi tabel.
@@ -152,6 +178,17 @@ Karya digital seperti tulisan, gambar, musik, video, dan program dilindungi hak 
 **Kegiatan 4: Membandingkan konfigurasi privasi.** Guru menyiapkan dua akun uji dengan konfigurasi berbeda (satu terbuka, satu tertutup). Murid mencatat apa yang bisa dilihat orang asing pada tiap akun.
 
 **Kegiatan 5: Mengenali pesan tipuan sintetis.** Guru membagikan lima pesan sintetis, sebagian tipuan dan sebagian pesan sah. Murid menandai tanda-tanda dan memutuskan tindakan.
+
+**Kegiatan 6: Menyunting permintaan sintetis ke asisten AI.** Berikut permintaan fiktif. Tulis ulang agar aman dikirim: hapus semua yang tidak boleh ada, pertahankan pertanyaan intinya.
+
+```text
+Tolong periksa jawabanku. Namaku Murid-01, kata sandi akun ujiku
+"kopi-fiktif-123", alamat rumahku Jl. Contoh No. 1. Soalnya: mengapa
+8 huruf kecil lebih mudah ditebak daripada 12 huruf kecil?
+Jawabanku: "karena kemungkinannya lebih sedikit".
+```
+
+**Kartu kebijakan AI kelas** (keluaran minggu ini): pada satu kartu, tulis dengan kata-katamu lima baris: apa yang tidak boleh dikirim, apa yang dicatat, apa yang diperiksa, siapa yang menentukan boleh atau tidaknya pada tiap tugas, dan satu ketidakpastian yang diakui (misalnya lisensi keluaran AI).
 
 **Lembar periksa keamanan akun** (keluaran minggu ini, isi untuk akun uji):
 
@@ -190,6 +227,32 @@ Pada contoh pesan sintetis di atas, tuliskan tiga tanda yang mencurigakan.
 
 Seorang murid fiktif memakai gambar dari internet pada laporannya tanpa menyebut sumber. Apa yang perlu dilakukan?
 
+### Latihan 7: Catatan pemakaian AI
+
+Murid fiktif memakai asisten AI untuk menjelaskan istilah "frasa sandi" dan menyalin dua kalimat jawabannya ke tugas. Tulis catatan pemakaian AI-nya (alat, tujuan, bagian yang dipakai, cara memeriksa), lalu sebutkan satu hal yang harus ia periksa sebelum memercayai jawabannya.
+
+### Latihan 8: Susun respons terhadap pesan mencurigakan (soal Parsons)
+
+Langkah berikut tercampur. Susun menjadi urutan respons yang aman.
+
+```text
+(a) buka situs resmi lewat alamat yang kamu ketik sendiri
+(b) berhenti: jangan klik tautan dan jangan balas
+(c) laporkan kepada guru atau orang dewasa tepercaya
+(d) periksa tanda-tanda: mendesak? meminta kata sandi atau kode? alamat mirip tetapi beda?
+```
+
+## Latihan bercampur dan ulang berjarak
+
+Kerjakan tanpa melihat catatan.
+
+1. Murid fiktif tersambung ke jaringan; `ping` ke `127.0.0.1` berhasil tetapi `ping` ke gateway gagal, dan halaman web tidak terbuka. Tahap diagnosis mana yang diperiksa dulu, dan apakah mengganti kata sandi akun akan membantu? (skenario dari modul jaringan, diubah)
+2. Hitung 26^5. Bandingkan dengan 26^8 dan jelaskan kaitannya dengan panjang kata sandi.
+3. Berikut tiga permintaan ke asisten AI; mana yang aman dikirim apa adanya, mana yang harus disunting, dan mana yang tidak boleh dikirim sama sekali? (i) "Jelaskan apa itu DNS", (ii) "Ini kata sandi akun uji saya, tolong nilai kekuatannya", (iii) "Ini alamat dan nomor telepon temanku, tolong buatkan kartu nama".
+4. Jelaskan dengan kata-katamu mengapa situs ber-HTTPS tetap bisa menipu. (Penjelasan diri.)
+
+Jadwal ulang: jawab lagi tanpa catatan setelah satu hari dan setelah satu minggu. Soal 2 dan 3 dipakai lagi di awal modul berikutnya.
+
 ## Kuis formatif
 
 1. Mengapa kata sandi sebaiknya berbeda di setiap akun?
@@ -221,6 +284,16 @@ Seorang murid fiktif memakai gambar dari internet pada laporannya tanpa menyebut
 **Latihan 5.** Misalnya: mendesak (1 jam); meminta kata sandi; alamat memakai http, bukan https, dan nama situs tidak dikenal.
 
 **Latihan 6.** Menyebut pembuat dan sumber gambar; periksa lisensinya apakah boleh dipakai; bila tidak jelas, ganti dengan gambar yang berlisensi bebas atau buat sendiri.
+
+**Kegiatan 6.** Contoh aman: "Mengapa 8 huruf kecil lebih mudah ditebak daripada 12 huruf kecil? Jawabanku: karena kemungkinannya lebih sedikit. Apakah jawabanku sudah cukup?" Yang dihapus: nama, kata sandi, alamat. Bila kamu masih menyisakan salah satunya, hapus lagi dan baca ulang daftar pada kartu kebijakan.
+
+**Latihan 7.** Contoh catatan: alat: asisten AI (nama dan versi bila diketahui); tujuan: memahami istilah frasa sandi; perintah: minta penjelasan istilah; bagian dipakai: dua kalimat; pemeriksaan: dibandingkan dengan modul ini dan satu sumber lain. Yang diperiksa: apakah penjelasan itu cocok dengan sumber tepercaya, karena jawaban AI bisa keliru. Bila catatanmu tidak menyebut cara memeriksa, tambahkan.
+
+**Latihan 8.** Urutan: (b), (d), (a), (c). Bila urutanmu beda, tanyakan: apakah ada langkah yang menyuruh klik atau membalas sebelum kamu memeriksa? Letakkan "berhenti" paling awal.
+
+**Ingat kembali.** 1: menerjemahkan nama menjadi alamat IP. 2: HTTPS adalah HTTP yang dienkripsi. 3: fisik, alamat IP, gateway, DNS, layanan. 4: DNS. 5: komputer itu sendiri (loopback). Bila ada yang salah, baca ulang bagian itu di modul M4 dan M5 lalu jawab lagi besok.
+
+**Latihan bercampur.** 1: periksa tahap gateway/jaringan lokal (kabel, Wi-Fi, alamat IP, router); mengganti kata sandi akun tidak membantu karena masalahnya di jaringan, bukan di akun. 2: 26^5 = 11.881.376; 26^8 = 208.827.064.576, yaitu 26^3 = 17.576 kali lebih banyak; tiap huruf tambahan mengalikan kemungkinan dengan 26. 3: (i) aman; (ii) tidak boleh dikirim, kata sandi tidak dikirim ke layanan AI; (iii) tidak boleh dikirim, data pribadi orang lain. 4: HTTPS hanya mengenkripsi sambungan ke situs itu; ia tidak menjamin pemilik situs jujur.
 
 **Kuis.**
 

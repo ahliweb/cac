@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 260" width="520" height="260" role="img" aria-labelledby="t d">
+  <title id="t">Indera manusia dan sensor perangkat</title>
+  <desc id="d">Tiga baris berpasangan dengan panah dua arah: mata dengan kamera, telinga dengan mikrofon, kulit dengan sensor suhu. Di bawah tertulis bahwa manusia mengartikan dan sensor mengubah menjadi angka.</desc>
+  <rect width="520" height="260" fill="#ffffff"/>
+  <text x="260" y="24" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222" text-anchor="middle">Indera manusia dan sensor perangkat</text>
+  <text x="110" y="50" font-family="sans-serif" font-size="13" font-weight="bold" fill="#222222" text-anchor="middle">manusia</text>
+  <text x="410" y="50" font-family="sans-serif" font-size="13" font-weight="bold" fill="#222222" text-anchor="middle">perangkat</text>
+  <rect x="30" y="70" width="160" height="42" rx="6" fill="#f4f8fd" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="110" y="96" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">mata</text>
+  <rect x="330" y="70" width="160" height="42" rx="6" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+  <text x="410" y="96" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">kamera</text>
+  <line x1="195" y1="91" x2="325" y2="91" stroke="#444444" stroke-width="2"/>
+  <polygon points="325,91 317,86 317,96" fill="#444444"/>
+  <line x1="325" y1="91" x2="195" y2="91" stroke="#444444" stroke-width="2"/>
+  <polygon points="195,91 203,86 203,96" fill="#444444"/>
+  <rect x="30" y="125" width="160" height="42" rx="6" fill="#f4f8fd" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="110" y="151" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">telinga</text>
+  <rect x="330" y="125" width="160" height="42" rx="6" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+  <text x="410" y="151" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">mikrofon</text>
+  <line x1="195" y1="146" x2="325" y2="146" stroke="#444444" stroke-width="2"/>
+  <polygon points="325,146 317,141 317,151" fill="#444444"/>
+  <line x1="325" y1="146" x2="195" y2="146" stroke="#444444" stroke-width="2"/>
+  <polygon points="195,146 203,141 203,151" fill="#444444"/>
+  <rect x="30" y="180" width="160" height="42" rx="6" fill="#f4f8fd" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="110" y="206" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">kulit</text>
+  <rect x="330" y="180" width="160" height="42" rx="6" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+  <text x="410" y="206" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">sensor suhu</text>
+  <line x1="195" y1="201" x2="325" y2="201" stroke="#444444" stroke-width="2"/>
+  <polygon points="325,201 317,196 317,206" fill="#444444"/>
+  <line x1="325" y1="201" x2="195" y2="201" stroke="#444444" stroke-width="2"/>
+  <polygon points="195,201 203,196 203,206" fill="#444444"/>
+  <text x="260" y="245" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">manusia mengartikan; sensor mengubah jadi angka</text>
+</svg>

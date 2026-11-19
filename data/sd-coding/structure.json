@@ -1,0 +1,133 @@
+{
+  "syllabusVersion": "1.1.0",
+  "syllabusDate": "2026-11-19",
+  "sourceSection": "bagian 2",
+  "stages": [
+    {
+      "id": 1,
+      "name": "Pengenalan",
+      "classes": [1, 2, 3],
+      "status": "Di luar struktur KKA (tidak ada mapel KKA di Tabel 1-3)",
+      "role": "Pengenalan opsional, tanpa layar",
+      "hoursText": "1 JP (35 menit)",
+      "delivery": "Muatan lokal \"teknologi\", kokurikuler, ekstrakurikuler, atau terintegrasi ke mapel lain; keputusan sekolah.",
+      "jpPerWeek": 1,
+      "minutesPerWeek": 35,
+      "meetsCp": false
+    },
+    {
+      "id": 2,
+      "name": "Pengantar lanjutan",
+      "classes": [4],
+      "status": "Di luar struktur KKA (Tabel 3)",
+      "role": "Jembatan ke Fase C; tetap opsional",
+      "hoursText": "1 JP (35 menit)",
+      "delivery": "Sama dengan tahap 1.",
+      "jpPerWeek": 1,
+      "minutesPerWeek": 35,
+      "meetsCp": false
+    },
+    {
+      "id": 3,
+      "name": "Inti KKA",
+      "classes": [5, 6],
+      "status": "Fase C; mapel pilihan resmi",
+      "role": "Memenuhi CP Fase C",
+      "hoursText": "**2 JP (70 menit)**, sesuai peraturan",
+      "delivery": "Mata pelajaran pilihan KKA bila sekolah menyediakannya.",
+      "jpPerWeek": 2,
+      "minutesPerWeek": 70,
+      "meetsCp": true
+    }
+  ],
+  "rows": [
+    {
+      "id": "pertemuan",
+      "item": "Pertemuan",
+      "value": "Kelas 1-4: satu pertemuan 1 JP; kelas 5-6: satu pertemuan 2 JP (atau dua pertemuan 1 JP) per minggu",
+      "status": "JP kelas 5-6 terverifikasi; sisanya `[asumsi]`"
+    },
+    {
+      "id": "semester",
+      "item": "Semester",
+      "value": "Dua per kelas",
+      "status": "`[asumsi]`"
+    },
+    {
+      "id": "minggu-materi",
+      "item": "Minggu materi per semester",
+      "value": "14 minggu (M1-M14)",
+      "status": "`[asumsi]`"
+    },
+    {
+      "id": "minggu-cadangan",
+      "item": "Minggu cadangan",
+      "value": "Kelas 1-5: tersedia 36 minggu per tahun, 28 terpakai, 8 cadangan; kelas 6: 32 minggu, 28 terpakai, 4 cadangan (libur, ujian, remedial)",
+      "status": "Asumsi minggu per tahun terverifikasi (Tabel 1-5); pembagian `[asumsi]`"
+    },
+    {
+      "id": "pola-semester",
+      "item": "Pola semester",
+      "value": "M1-M12 materi dan penguatan; M13 proyek mini; M14 asesmen dan refleksi",
+      "status": "`[asumsi]`"
+    },
+    {
+      "id": "beban-jp",
+      "item": "Beban JP kelas 5-6",
+      "value": "Kelas 5: 28 minggu x 2 JP = 56 dari 72 JP; kelas 6: 28 x 2 = 56 dari 64 JP",
+      "status": "Hitungan dari asumsi di atas"
+    },
+    {
+      "id": "pemilihan",
+      "item": "Pemilihan",
+      "value": "Murid kelas 5-6 memilih KKA bila sekolah menyediakannya (pilihan resmi); kelas 1-4 sepenuhnya kebijakan sekolah",
+      "status": "Pilihan: terverifikasi; sisanya `[asumsi]`"
+    },
+    {
+      "id": "perangkat",
+      "item": "Perangkat",
+      "value": "Tidak wajib ada komputer satu pun untuk menyelesaikan seluruh silabus (bagian 12)",
+      "status": "Rancangan penyusun"
+    }
+  ],
+  "semestersPerClass": 2,
+  "weeksPerSemester": {
+    "teaching": 14
+  },
+  "semesterPattern": {
+    "materiFromWeek": 1,
+    "materiToWeek": 12,
+    "miniProjectWeek": 13,
+    "assessmentWeek": 14
+  },
+  "weeksPerYear": [
+    {
+      "classes": [1, 2, 3, 4, 5],
+      "available": 36,
+      "used": 28,
+      "reserve": 8
+    },
+    {
+      "classes": [6],
+      "available": 32,
+      "used": 28,
+      "reserve": 4
+    }
+  ],
+  "jpLoad": [
+    {
+      "kelas": 5,
+      "weeks": 28,
+      "jpPerWeek": 2,
+      "used": 56,
+      "allocated": 72
+    },
+    {
+      "kelas": 6,
+      "weeks": 28,
+      "jpPerWeek": 2,
+      "used": 56,
+      "allocated": 64
+    }
+  ]
+}

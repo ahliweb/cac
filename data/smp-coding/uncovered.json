@@ -1,0 +1,73 @@
+{
+  "syllabusVersion": "1.2.0",
+  "syllabusDate": "2026-11-19",
+  "sourceSection": "bagian 4",
+  "items": [
+    {
+      "cpCode": "D-LD-a",
+      "coverageText": "**Tidak dicakup** (di luar silabus coding; dicakup Informatika umum atau modul pendamping)",
+      "reason": "luar-silabus",
+      "closure": "modul-pendamping"
+    },
+    {
+      "cpCode": "D-LD-c",
+      "coverageText": "**Tidak dicakup** (di luar silabus coding; dicakup Informatika umum atau modul pendamping)",
+      "reason": "luar-silabus",
+      "closure": "modul-pendamping"
+    },
+    {
+      "cpCode": "D-LD-h",
+      "coverageText": "**Tidak dicakup** (di luar silabus coding; dicakup Informatika umum atau modul pendamping)",
+      "reason": "luar-silabus",
+      "closure": "modul-pendamping"
+    },
+    {
+      "cpCode": "D-LD-k",
+      "coverageText": "**Tidak dicakup** (di luar silabus coding; dicakup Informatika umum atau modul pendamping)",
+      "reason": "luar-silabus",
+      "closure": "modul-pendamping"
+    },
+    {
+      "cpCode": "D-LD-l",
+      "coverageText": "**Tidak dicakup** (di luar silabus coding; dicakup Informatika umum atau modul pendamping)",
+      "reason": "luar-silabus",
+      "closure": "modul-pendamping"
+    },
+    {
+      "cpCode": "D-LD-n",
+      "coverageText": "**Tidak dicakup** (di luar silabus coding; dicakup Informatika umum atau modul pendamping)",
+      "reason": "luar-silabus",
+      "closure": "modul-pendamping"
+    },
+    {
+      "cpCode": "D-LD-q",
+      "coverageText": "**Tidak dicakup** (di luar silabus coding; dicakup Informatika umum atau modul pendamping)",
+      "reason": "luar-silabus",
+      "closure": "modul-pendamping"
+    },
+    {
+      "cpCode": "DK-EA-a",
+      "coverageText": "**Tidak dicakup** (di luar silabus coding; dicakup Informatika umum atau modul pendamping)",
+      "reason": "luar-silabus",
+      "closure": "modul-pendamping"
+    },
+    {
+      "cpCode": "DK-EA-d",
+      "coverageText": "**Tidak dicakup** (di luar silabus coding; dicakup Informatika umum atau modul pendamping)",
+      "reason": "luar-silabus",
+      "closure": "modul-pendamping"
+    },
+    {
+      "cpCode": "DK-PA-a",
+      "coverageText": "Tidak dicakup: tanpa perangkat KA di tangan murid (bagian 7)",
+      "reason": "tanpa-perangkat-ka",
+      "closure": "demonstrasi-guru"
+    },
+    {
+      "cpCode": "DK-PA-b",
+      "coverageText": "Tidak dicakup: tanpa perangkat KA di tangan murid (bagian 7)",
+      "reason": "tanpa-perangkat-ka",
+      "closure": "demonstrasi-guru"
+    }
+  ]
+}

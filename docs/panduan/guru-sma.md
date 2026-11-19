@@ -8,16 +8,20 @@ kelas X-XII. Prasyarat: [`mulai-cepat.md`](mulai-cepat.md). Di halaman ini
 
 | Bagian | Status |
 | --- | --- |
-| Silabus v1.2: jalur A (C++), jalur B (web JS/TS/Bun, template `awcms-one`), jalur C (IoT dan robotika), jalur D (kecerdasan buatan dan analisis data), jalur E (komputasi kuantum), termasuk blok fondasi kelas X | **Disetujui** pemilik program, 2026-11-19 untuk kelima jalur (jalur A dan B: v1.1, 2026-11-19; v1.0: 2026-11-18). Menjadi sumber `data/sma-coding/`. |
+| Silabus v1.4: jalur A (C++), jalur B (web JS/TS/Bun, template `awcms-one`), jalur C (IoT dan robotika), jalur D (kecerdasan buatan dan analisis data), jalur E (komputasi kuantum), termasuk blok fondasi kelas X | **Disetujui** pemilik program, 2026-11-19 untuk kelima jalur (v1.4 menambah subbagian kemampuan masuk dari SMP, issue [#177](https://github.com/ahliweb/osn/issues/177); v1.3 menambah butir dan kebijakan AI, issue [#139](https://github.com/ahliweb/osn/issues/139); jalur A dan B: v1.1, 2026-11-19; v1.0: 2026-11-18). Menjadi sumber `data/sma-coding/`. |
 | Jalur C (IoT dan robotika, C++ gaya Arduino pada ESP32, kelas X-XII) | **Disetujui** v1.2 (issue [#68](https://github.com/ahliweb/osn/issues/68)); dipetakan ke CP lewat prinsip komputasinya. Perangkat dan keselamatan kerja: silabus bagian 3.3. |
 | Jalur D (kecerdasan buatan dan analisis data, kelas X-XII) | **Disetujui** v1.2 (issue [#84](https://github.com/ahliweb/osn/issues/84)) sebagai **pengayaan di luar rumusan CP**: tidak dihitung sebagai pemenuhan CP. |
 | Jalur E (komputasi kuantum dan cloud quantum, **kelas XI-XII saja**, kode minggu `E-XI1-M1`) | **Disetujui** v1.2 (issue [#88](https://github.com/ahliweb/osn/issues/88)) sebagai **pengayaan di luar rumusan CP**. Tidak ada semester kelas X dan tidak ada blok fondasi. |
+| Kemampuan masuk dari SMP dan penempatan di blok fondasi (bagian 3.0, v1.4) | **Berlaku sejak silabus v1.4** (keputusan pemilik 2026-11-19, issue [#177](https://github.com/ahliweb/osn/issues/177)). Silabus tidak mensyaratkan SMP; murid dengan latar SMP yang kuat tetap di kelas bersama dan mengerjakan tugas pendalaman setelah pengamatan awal di `FND-X1-M1` (tanpa tes, tanpa nilai angka, tanpa catatan di repositori); `FND-X1-M6` (keamanan akun dan kebijakan AI kelas) tidak dipadatkan bagi siapa pun. |
 | Blok fondasi informatika dasar kelas X (7 minggu, kelas bersama sebelum memilih jalur, kode `FND-X1-M1..M7`) | **Berlaku sejak silabus v1.1** (bagian 3.0). Rencana kelas X semester 1 dan 2 jalur A dan B disusun ulang; tabel padanan nomor minggu v1.0 ke v1.1 ada di bagian 3.0. Dokumen asal: [`usulan-fondasi-kelas-x.md`](../programs/sma-coding/usulan-fondasi-kelas-x.md). |
-| Modul materi `sma-coding` (29 modul: fondasi kelas X 6, matematika komputasi 7, cloud 7, pendamping literasi digital 9) | **Tersedia sebagai draf** di `content/sma-coding/modules/`, terindeks di `data/sma-coding/modules.json` (issue [#107](https://github.com/ahliweb/osn/issues/107), [#87](https://github.com/ahliweb/osn/issues/87), [#89](https://github.com/ahliweb/osn/issues/89), [#69](https://github.com/ahliweb/osn/issues/69), [#105](https://github.com/ahliweb/osn/issues/105)). Semuanya berspanduk DRAF sampai pemilik menyetujuinya; baca dengan `osn render modul --program sma-coding --id <id>`. |
+| Modul materi `sma-coding` (239 modul per 2026-11-19: fondasi kelas X 6, matematika komputasi 7, cloud 7, pendamping literasi digital 9, jalur C 77, jalur D 77, jalur E 56) | **Tersedia sebagai draf** di `content/sma-coding/modules/`, terindeks di `data/sma-coding/modules.json` (issue [#107](https://github.com/ahliweb/osn/issues/107), [#87](https://github.com/ahliweb/osn/issues/87), [#89](https://github.com/ahliweb/osn/issues/89), [#69](https://github.com/ahliweb/osn/issues/69), [#105](https://github.com/ahliweb/osn/issues/105), [#124](https://github.com/ahliweb/osn/issues/124)). Semuanya berspanduk DRAF sampai pemilik menyetujuinya; baca dengan `osn render modul --program sma-coding --id <id>`, misalnya `--id c-x1-m8`. |
 | Rencana mingguan | Belum diuji di kelas (silabus bagian 8). Rencana jalur C, D, dan E belum ditinjau guru atau mitra; harga, spesifikasi perangkat, dan ketentuan layanan cloud quantum banyak yang `[belum terverifikasi]`. |
 
-Modul materi untuk jalur C, D, dan E belum ada. Daftar issue terbuka terkini:
-`gh issue list -R ahliweb/osn --state open`.
+Jalur A dan B belum punya modul materi mingguan di `content/sma-coding/`
+(rencana mingguannya ada di silabus dan `data/sma-coding/weeks.json`). Butir
+yang masih perlu dicek peninjau manusia dikumpulkan di
+[`catatan-tinjauan-modul.md`](../programs/catatan-tinjauan-modul.md). Daftar
+issue terbuka terkini: `gh issue list -R ahliweb/osn --state open`.
 
 ## Membaca silabus
 
@@ -57,10 +61,10 @@ osn validate --program sma-coding
 
 ```text
 osn validate: programme "sma-coding", corpus at /.../data/sma-coding
-OK -- 7 data file(s) validated, 0 problem(s) found.
+OK -- 8 data file(s) validated, 0 problem(s) found.
 ```
 
-Memeriksa tujuh berkas di `data/sma-coding/`: 6 kutipan CP, 36 butir CP,
+Memeriksa delapan berkas di `data/sma-coding/` (delapan karena tabel kemampuan masuk dari SMP, `smp-bridge.json`, ikut diperiksa): 6 kutipan CP, 36 butir CP,
 26 pemetaan dan 9 irisan jalur pengayaan (D dan E), lima jalur (A-D: enam
 semester; E: empat semester kelas XI-XII; minggu 1-14, khusus kelas X semester 1
 minggu jalur 8-14; 364 minggu seluruh jalur), tujuh minggu fondasi
@@ -106,7 +110,7 @@ dipetakan, dan jembatan OSN (jalur A dan C) bila ada. Bagian awal keluaran nyata
 
 Program: Silabus Pembelajaran Coding SMA
 Cakupan: semester X1
-Sumber: silabus versi 1.2.0, tanggal 2026-11-19.
+Sumber: silabus versi 1.4.1, tanggal 2026-11-19.
 
 ## Semester X1 (kelas X, fase E)
 
@@ -188,7 +192,7 @@ luas dan keliling; pembagian bulat dan sisa; konversi suhu; rata-rata dua bilang
 - [ ] Keluaran selesai: program hitung berformat
 
 ---
-Sumber: Silabus Pembelajaran Coding SMA, versi 1.2.0, tanggal 2026-11-19.
+Sumber: Silabus Pembelajaran Coding SMA, versi 1.4.1, tanggal 2026-11-19.
 ```
 
 Untuk minggu jalur pengayaan (D atau E) lembar menyatakan bahwa jalur itu di
@@ -227,14 +231,14 @@ osn render weekly --week 1 --program sma-coding
 ```
 
 ```text
-osn render weekly: belum didukung untuk program sma-coding: perintah ini membaca corpus OSN (program "osn") saja dan tidak akan menyajikannya sebagai data sma-coding. Gunakan "osn validate --program sma-coding" untuk memvalidasi corpus program ini. Perintah yang didukung untuk program sma-coding: "osn plan --track <jalur>", "osn render lembar-siswa --week <kode-minggu>" dan "osn render modul --id <id>".
+osn render weekly: belum didukung untuk program sma-coding: perintah ini membaca corpus OSN (program "osn") saja dan tidak akan menyajikannya sebagai data sma-coding. Untuk program sma-coding tersedia "osn plan --program sma-coding --track <jalur>", "osn render lembar-siswa --program sma-coding --week <kode-minggu>", "osn render modul --program sma-coding --id <id>", "osn validate --program sma-coding" dan "bun run check:fidelity --program sma-coding".
 ```
 
-Program ini punya perintah baca modul, tetapi selama
-`data/sma-coding/modules.json` belum ada, `osn render modul --id <id> --program
-sma-coding` exit 2 dengan pesan `this programme has no modules.json`.
+Program ini punya perintah baca modul, dan `data/sma-coding/modules.json` sudah
+berisi 239 modul draf. (Untuk program yang belum punya `modules.json`, perintah
+itu exit 2 dengan pesan `this programme has no modules.json`.)
 
-Setelah sebuah modul diindeks, bacalah dengan:
+Bacalah sebuah modul yang sudah diindeks dengan:
 
 ```sh
 osn render modul --id <id-modul> --program sma-coding
@@ -247,7 +251,7 @@ ikut memeriksa indeks modul itu: butir CP, kode minggu (termasuk blok
 fondasi `FND-...`), rumpun OSN yang dijembatani, prasyarat (tanpa siklus),
 dan keberadaan berkas isi.
 
-Untuk sementara, bahan ajar SMA adalah `silabus.md` itu sendiri dan data
+Selain modul draf itu, bahan ajar SMA adalah `silabus.md` itu sendiri dan data
 JSON di bawah ini.
 
 ## Memakai data `data/sma-coding/*.json`
@@ -371,7 +375,7 @@ silabus mengikuti alur di [`pemilik-peninjau.md`](pemilik-peninjau.md).
 | B | Komputer dengan Bun (versi mengikuti `awcms-one`, saat ini 1.4.4), Node tidak wajib, peramban modern, Git, editor; akses internet untuk paket. |
 | B (opsi 1 kelas XII) | Satu atau beberapa mesin lab yang mampu menjalankan Docker dan PostgreSQL; spesifikasi minimum belum terverifikasi. |
 | C | ESP32 DevKit (satu per kelompok tiga murid), komputer lab dengan kompiler C++ dan alat unggah, komponen elektronik dasar, daya USB atau baterai bertegangan rendah (tanpa listrik jaringan); jaringan lab terpisah dan penengah pesan lokal di komputer guru untuk kelas XI semester 2. Sekolah tanpa perangkat: set dipinjamkan mitra bergilir. |
-| D | Komputer lab dengan Orange Data Mining (kelas X); Python dengan `pandas` dan `scikit-learn` mulai kelas XI; spesifikasi minimum menunggu survei lab. Layanan AI daring hanya demonstrasi guru. |
+| D | Komputer lab dengan Orange Data Mining (kelas X); Python dengan `pandas` dan `scikit-learn` mulai kelas XI; spesifikasi minimum menunggu survei lab. Pemakaian AI generatif oleh murid bebas dengan etika (silabus bagian 7.4); murid tidak wajib punya akun pribadi. |
 | E | Peramban untuk Quirk; C++ (jalur A) atau Bun (jalur B) untuk simulator buatan sendiri; demonstrasi guru dengan Python dan Qiskit serta, bila ada, satu akun sekolah atau lembaga untuk cloud quantum. |
 | Umum | Akun uji sintetis; tanpa akun pribadi siswa wajib. |
 
@@ -389,3 +393,23 @@ diaudit mitra, ditinjau pemilik (silabus bagian 3.3 dan 9.3).
 - Proyek web siswa (formulir kontak dan sejenisnya) tidak boleh mengumpulkan
   data pribadi nyata; rahasia dan berkas `.env` tidak boleh di-commit.
 - Hasil kerja dan nilai siswa Anda simpan di sistem sekolah, bukan di sini.
+
+## Kebijakan penggunaan AI (silabus v1.3)
+
+Murid SMA di semua jalur boleh memakai AI generatif **dengan etika** (keputusan
+pemilik 2026-11-19, issue #139); ini menggantikan aturan lama jalur D bahwa
+layanan AI hanya didemonstrasikan guru. Aturan lengkapnya ada di silabus
+bagian 7.4. Ringkasnya untuk guru:
+
+- Murid mencatat pemakaian AI (alat, tujuan, garis besar perintah, bagian yang
+  dipakai, cara memverifikasi); log bersifat sintetis dan tidak disimpan di
+  repositori ini.
+- Tanpa AI: asesmen sumatif, kuis kode, latihan terpadu dan kontes mini jalur
+  A (`A-XII2-M5..M8`), dan tugas yang Anda tandai "tanpa AI" di awal tugas.
+- Tidak menaruh data pribadi, kata sandi, kunci, atau rahasia pada permintaan
+  ke layanan AI.
+- Kode buatan AI dibaca, dijalankan, dan diuji; murid harus dapat menjelaskan
+  kode yang ia serahkan.
+- Pemakaian tunduk pada usia minimum dan ketentuan tiap layanan serta izin
+  sekolah dan orang tua; Anda memeriksanya lebih dulu (belum diverifikasi
+  penyusun). Murid tidak wajib punya akun pribadi.

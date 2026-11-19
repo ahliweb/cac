@@ -86,6 +86,25 @@ describe("osn validate with the tk-coding programme", () => {
   });
 });
 
+describe("osn validate: cross-programme codes in the tk-coding bridge (ADR-0010, #177)", () => {
+  test("an sd-coding week that does not exist is reported with exit 1", async () => {
+    const dir = await mkdtemp(join(tmpdir(), "tk-crossref-fixture-"));
+    try {
+      await cp(join(REPO_ROOT, "data", "tk-coding"), dir, { recursive: true });
+      const path = join(dir, "bridge.json");
+      const file = JSON.parse(await readFile(path, "utf-8"));
+      file.rows[0].prerequisite += " dan `SD1-1-M99`";
+      await writeFile(path, JSON.stringify(file, null, 2));
+      const result = await runCli(["validate", "--program", "tk-coding", "--data-dir", dir]);
+      expect(result.exitCode).toBe(1);
+      expect(result.stdout).toContain("bridge.json");
+      expect(result.stdout).toContain('"SD1-1-M99" is not a week of programme "sd-coding"');
+    } finally {
+      await rm(dir, { recursive: true, force: true });
+    }
+  });
+});
+
 describe("OSN-only commands refuse --program tk-coding (exit 2, never OSN data)", () => {
   const cases: string[][] = [["render", "weekly", "--week", "1"], ["render", "sop"], ["checklist"]];
 
@@ -93,6 +112,26 @@ describe("OSN-only commands refuse --program tk-coding (exit 2, never OSN data)"
     const result = await runCli([...args, "--program", "tk-coding"]);
     expect(result.exitCode).toBe(2);
     expect(result.stderr).toContain("belum didukung untuk program tk-coding");
+    expect(result.stdout).toBe("");
+  });
+});
+
+describe("plan and render lembar-siswa refuse --program tk-coding honestly (exit 2)", () => {
+  const cases: string[][] = [
+    ["plan", "--track", "A"],
+    ["render", "lembar-siswa", "--week", "1"],
+  ];
+
+  test.each(cases)("osn %s", async (...args: string[]) => {
+    const result = await runCli([...args, "--program", "tk-coding"]);
+    expect(result.exitCode).toBe(2);
+    expect(result.stderr).toContain("belum didukung untuk program tk-coding");
+    expect(result.stderr).toContain('hanya tersedia untuk program "osn" dan "sma-coding"');
+    expect(result.stderr).toContain(
+      'program tk-coding didukung oleh "osn render modul --program tk-coding --id <id>" (tambahkan --lembar untuk lembar anak; perlu data/tk-coding/modules.json), "osn validate --program tk-coding" dan "bun run check:fidelity --program tk-coding"',
+    );
+    // The old wording advertised the very commands being refused.
+    expect(result.stderr).not.toContain("Perintah yang didukung untuk program");
     expect(result.stdout).toBe("");
   });
 });

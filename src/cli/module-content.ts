@@ -9,6 +9,7 @@
 import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import type { CorpusFinding, CorpusSource } from "../domain/corpus-audit";
+import { learnerSheetIdentityProblems } from "../domain/learner-sheet";
 import { type ModuleIndexEntry, type ModulesIndex, parseModulesIndex } from "../domain/modules";
 import type { ResolvedModuleReference } from "../render/module";
 import { MODULES_FILE_NAME } from "../schema/module";
@@ -25,7 +26,9 @@ async function readBody(contentPath: string, repoRoot: string): Promise<string |
 }
 
 /**
- * One finding per module whose body file is missing or blank. Skips an absent or invalid index (reported elsewhere).
+ * One finding per module whose body file is missing or blank, and (for the programmes that have learner
+ * sheets, tk-coding and sd-coding) per module whose learner sheet is missing, blank or carries a name or
+ * identity field of the child. Skips an absent or invalid index (reported elsewhere).
  * `parseIndex` is the programme's own index parser (the table entry's `parseModulesIndex`, ADR-0008); by default it is chosen by `programId`.
  */
 export async function moduleContentFindings(
@@ -56,8 +59,39 @@ export async function moduleContentFindings(
         severity: "error",
       });
     }
+    if (module.learnerSheetPath !== undefined) {
+      findings.push(
+        ...(await learnerSheetFindings(module.learnerSheetPath, `modules[${index}]`, repoRoot)),
+      );
+    }
   }
   return findings;
+}
+
+/** Findings about one learner sheet: missing, blank, or with a name or identity field. */
+async function learnerSheetFindings(
+  sheetPath: string,
+  at: string,
+  repoRoot: string,
+): Promise<CorpusFinding[]> {
+  const error = (message: string): CorpusFinding => ({
+    file: MODULES_FILE_NAME,
+    path: `${at}.learnerSheetPath`,
+    message,
+    severity: "error",
+  });
+  const body = await readBody(sheetPath, repoRoot);
+  if (body === undefined) {
+    return [error(`learner sheet "${sheetPath}" does not exist`)];
+  }
+  if (body.trim() === "") {
+    return [error(`learner sheet "${sheetPath}" is empty`)];
+  }
+  return learnerSheetIdentityProblems(body).map((problem) =>
+    error(
+      `learner sheet "${sheetPath}" line ${problem.line} is a name or identity field of the child (${JSON.stringify(problem.text)}); a child's sheet carries none`,
+    ),
+  );
 }
 
 export type ModuleLoadResult =
@@ -66,6 +100,8 @@ export type ModuleLoadResult =
       readonly module: ModuleIndexEntry;
       readonly body: string;
       readonly references: readonly ResolvedModuleReference[];
+      /** The child's learner sheet (`tk-coding`, `sd-coding`); `undefined` for a programme or module without one. */
+      readonly learnerSheet: { readonly path: string; readonly body: string } | undefined;
     }
   | { readonly ok: false; readonly message: string };
 
@@ -109,6 +145,18 @@ export async function loadModule(
     };
   }
 
+  let learnerSheet: { readonly path: string; readonly body: string } | undefined;
+  if (module.learnerSheetPath !== undefined) {
+    const sheetBody = await readBody(module.learnerSheetPath, repoRoot);
+    if (sheetBody === undefined || sheetBody.trim() === "") {
+      return {
+        ok: false,
+        message: `learner sheet "${module.learnerSheetPath}" is missing or empty (run "osn validate")`,
+      };
+    }
+    learnerSheet = { path: module.learnerSheetPath, body: sheetBody };
+  }
+
   const referencesEntry = source.get("references.json");
   const register =
     referencesEntry?.ok === true ? referencesFileSchema.safeParse(referencesEntry.data) : undefined;
@@ -130,5 +178,5 @@ export async function loadModule(
       references.push({ label: null, title: reference.title, url: reference.url });
     }
   }
-  return { ok: true, module, body, references };
+  return { ok: true, module, body, references, learnerSheet };
 }

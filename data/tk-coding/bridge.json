@@ -1,44 +1,44 @@
 {
-  "syllabusVersion": "1.0.0",
+  "syllabusVersion": "1.0.3",
   "syllabusDate": "2026-11-19",
   "sourceSection": "bagian 5",
   "policy": "**Kebijakan.** Kepka 046/H/KR/2025 Diktum KEENAM: CP Fase A \"disusun selaras dengan Capaian Pembelajaran pada fase fondasi untuk memastikan transisi pembelajaran yang berkesinambungan dari PAUD ke SD\" (kutipan penuh enam kemampuan fondasi di riset 2.1). Mata pelajaran koding dan KA pilihan dimulai kelas V SD menurut halaman BBPMP yang dibuka (riset 2.5), bukan di PAUD.",
-  "sdProgram": "**Program `sd-coding`.** Program SD sedang disusun paralel (issue lain); dokumennya **belum ada** di repositori pada 2026-11-19 (`docs/programs/` hanya memuat `sma-coding` dan folder ini). Jembatan berikut bersifat rancangan sepihak dan **harus disesuaikan** setelah silabus `sd-coding` ada `[belum terverifikasi]`.",
+  "sdProgram": "**Program `sd-coding`.** Silabus `sd-coding` (disetujui pemilik pada 2026-11-19) sudah dibaca dan jembatan berikut dipetakan ke kode minggunya (`docs/programs/sd-coding/silabus.md` bagian 5 dan 7.1). Kelas 1-4 SD berada di luar struktur KKA dan berupa pengenalan opsional, sehingga keluaran TK B bukan prasyarat SD dan SD tidak memakai istilah \"Fase A\" untuk kelas 1; kolom kedua tabel menyebut butir pengenalan SD yang disentuh. Keluaran TK B sudah mencakup, dan di beberapa butir melampaui, kemampuan masuk kelas 1, sehingga yang perlu diatur adalah pengulangan, bukan celah `[asumsi]`.",
   "rows": [
     {
       "order": 1,
       "output": "Menyusun dan membetulkan urutan 3-4 langkah (`TK-B1-M2`, `TK-B2-M4`)",
       "outputWeeks": ["TK-B1-M2", "TK-B2-M4"],
-      "prerequisite": "Mengurutkan langkah penyelesaian tugas",
-      "note": "`[asumsi]`"
+      "prerequisite": "Mengurutkan langkah penyelesaian tugas (`SD1-1-M2`, `SD1-1-M3`, `SD1-1-M10`; lanjutannya `SD2-1-M6`, `SD2-1-M7`)",
+      "note": "`[asumsi]` Murid yang terlihat menguasainya tidak mengulang urutan penuh di kelas 1 (`sd-coding` bagian 7.1)."
     },
     {
       "order": 2,
-      "output": "Membuat dan melanjutkan pola (`TK-B1-M4`, `TK-B2-M1`)",
-      "outputWeeks": ["TK-B1-M4", "TK-B2-M1"],
-      "prerequisite": "Pola bilangan dan bentuk",
-      "note": "`[asumsi]`"
+      "output": "Membuat dan melanjutkan pola (`TK-B1-M4`, `TK-B1-M6`)",
+      "outputWeeks": ["TK-B1-M4", "TK-B1-M6"],
+      "prerequisite": "Pola warna, bentuk, gerak, dan bunyi (`SD1-1-M5`, `SD1-1-M6`, `SD2-1-M4`)",
+      "note": "`[asumsi]` Rujukan minggu dikoreksi dari v1.0.1: `TK-B2-M1` melatih arah dan ulang, bukan pola."
     },
     {
       "order": 3,
-      "output": "Kartu arah dan \"program\" di kisi (`TK-B2-M3`)",
-      "outputWeeks": ["TK-B2-M3"],
-      "prerequisite": "Instruksi dan algoritma sederhana tanpa layar",
-      "note": "`[asumsi]`"
+      "output": "Kartu arah, kartu ulang, dan \"program\" di kisi (`TK-B1-M5`, `TK-B2-M1`, `TK-B2-M3`)",
+      "outputWeeks": ["TK-B1-M5", "TK-B2-M1", "TK-B2-M3"],
+      "prerequisite": "Instruksi dan algoritma sederhana tanpa layar (`SD1-1-M4`, `SD1-1-M7`, `SD1-1-M8`, `SD2-1-M1`, `SD2-1-M3`)",
+      "note": "`[asumsi]` Simbol arah dan kata \"ulang\" sama dengan TK bila murid mengenalnya; bila tidak, kelas 1 menyepakati simbol bersama di awal tahun (`sd-coding` bagian 13, nomor 5)."
     },
     {
       "order": 4,
-      "output": "Mengelompokkan dengan dua aturan (`TK-B1-M7`)",
-      "outputWeeks": ["TK-B1-M7"],
-      "prerequisite": "Klasifikasi dan tabel data",
-      "note": "`[asumsi]`"
+      "output": "Mengelompokkan dengan dua aturan dan membaca gambar data (`TK-B1-M7`, `TK-B1-M8`)",
+      "outputWeeks": ["TK-B1-M7", "TK-B1-M8"],
+      "prerequisite": "Klasifikasi dan tabel data (`SD1-2-M1`, `SD1-2-M2`, `SD1-2-M3`; tabel baru di `SD3-2-M3`)",
+      "note": "`[asumsi]` Piktogram TK mendahului tabel SD; kelas 1 tidak perlu mengulang pengelompokan satu sifat bagi murid yang terlihat menguasainya."
     },
     {
       "order": 5,
       "output": "Aturan memakai perangkat digital (`TK-B2-M9`)",
       "outputWeeks": ["TK-B2-M9"],
-      "prerequisite": "Literasi digital dasar dan keamanan",
-      "note": "`[asumsi]`"
+      "prerequisite": "Literasi digital dasar dan keamanan (`SD1-2-M4`, `SD1-2-M8`, `SD1-2-M9`)",
+      "note": "`[asumsi]` Diulang dengan jarak waktu, bukan dipadatkan: aturan keamanan perangkat tidak dilewati karena murid sudah pernah mendengarnya."
     }
   ]
 }

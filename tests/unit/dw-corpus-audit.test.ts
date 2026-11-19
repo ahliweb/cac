@@ -58,21 +58,21 @@ function messages(result: ReturnType<typeof audit>, file: string): string {
 }
 
 describe("auditDewasaCorpus on the committed corpus", () => {
-  test("is clean and validates all seven files", () => {
+  test("is clean and validates all eight files", () => {
     const result = audit(corpus());
     expect(result.findings).toEqual([]);
     expect(result.ok).toBe(true);
-    expect(result.summary.filesValidated).toBe(7);
+    expect(result.summary.filesValidated).toBe(8);
     expect(result.summary.filesMissing).toBe(0);
     expect(result.summary.filesUnregistered).toBe(0);
   });
 
-  test("has the record counts and hours of the approved v1.0 syllabus", () => {
+  test("has the record counts and hours of the approved v1.1 syllabus", () => {
     const files = corpus();
     const tracks = files.get("tracks.json").tracks as Array<Json>;
     expect(tracks.map((track) => track.id)).toEqual([...DW_TRACK_IDS]);
-    expect(tracks.map((track) => track.totalHours)).toEqual([48, 128, 38, 56]);
-    expect(tracks.map((track) => track.sharedHours + track.trackHours)).toEqual([48, 128, 38, 56]);
+    expect(tracks.map((track) => track.totalHours)).toEqual([48, 136, 38, 56]);
+    expect(tracks.map((track) => track.sharedHours + track.trackHours)).toEqual([48, 136, 38, 56]);
     const modules = files.get("module-plan.json").modules as Array<Json>;
     for (const id of DW_TRACK_IDS) {
       const own = modules.filter((module) => module.track === id);
@@ -93,20 +93,59 @@ describe("auditDewasaCorpus on the committed corpus", () => {
     expect(files.get("bridges.json").bridges).toHaveLength(6);
   });
 
-  test("marks the unit copy as unverified and the mapping as title-level (owner decision)", () => {
+  test("marks every unit title as matched against the official annex and the mapping as title-level", () => {
     const skkni = corpus().get("skkni-units.json");
     expect(skkni.mappingDepth).toBe("judul-unit");
     for (const unit of skkni.units) {
-      expect(unit.verification).toBe("salinan-belum-terverifikasi");
+      expect(unit.verification).toBe("judul-cocok-lampiran-resmi");
     }
   });
 
-  test("the first module of every track needs the shared module, the rest the previous one", () => {
+  test("the first module of every track needs the shared module, the rest the previous table row", () => {
     const modules = corpus().get("module-plan.json").modules as Array<Json>;
-    for (const module of modules) {
-      expect(module.prerequisites).toEqual([
-        module.number === 1 ? DW_SHARED_MODULE_CODE : `DW-${module.track}-M${module.number - 1}`,
-      ]);
+    for (const id of DW_TRACK_IDS) {
+      const own = modules.filter((module) => module.track === id);
+      own.forEach((module, index) => {
+        expect(module.prerequisites).toEqual([
+          index === 0 ? DW_SHARED_MODULE_CODE : (own[index - 1] as Json).code,
+        ]);
+      });
+    }
+  });
+
+  test("DW-PRO-M13 is taught after DW-PRO-M5 (8 hours) and DW-PRO-M6 follows it", () => {
+    const files = corpus();
+    const pro = (files.get("module-plan.json").modules as Array<Json>).filter(
+      (module) => module.track === "PRO",
+    );
+    expect(pro.map((module) => module.number)).toEqual([1, 2, 3, 4, 5, 13, 6, 7, 8, 9, 10, 11, 12]);
+    const m13 = pro.find((module) => module.code === "DW-PRO-M13") as Json;
+    expect(m13.hours).toBe(8);
+    expect(m13.prerequisites).toEqual(["DW-PRO-M5"]);
+    expect(pro.filter((module) => module.hours === 10)).toHaveLength(12);
+    expect((pro.find((module) => module.code === "DW-PRO-M6") as Json).prerequisites).toEqual([
+      "DW-PRO-M13",
+    ]);
+  });
+
+  test("only uniform tracks state hoursPerModule; PRO (unequal hours) omits it", () => {
+    const tracks = corpus().get("tracks.json").tracks as Array<Json>;
+    expect(tracks.map((track) => track.hoursPerModule)).toEqual([5, undefined, 5, 6]);
+    expect(tracks.map((track) => track.moduleCount)).toEqual([8, 13, 6, 8]);
+  });
+
+  test("the SKKNI claim is unchanged by DW-PRO-M13: it only names already-touched units", () => {
+    const files = corpus();
+    const modules = files.get("module-plan.json").modules as Array<Json>;
+    const withoutM13 = new Set(
+      modules
+        .filter((module) => module.code !== "DW-PRO-M13")
+        .flatMap((module) => module.skkniUnitCodes ?? []),
+    );
+    const m13 = modules.find((module) => module.code === "DW-PRO-M13") as Json;
+    expect(withoutM13.size).toBe(34);
+    for (const code of m13.skkniUnitCodes) {
+      expect(withoutM13.has(code)).toBe(true);
     }
   });
 
@@ -118,15 +157,17 @@ describe("auditDewasaCorpus on the committed corpus", () => {
 });
 
 describe("auditDewasaCorpus reports corruption", () => {
-  test("a missing, invalid-JSON and unregistered file are reported", () => {
+  test("a missing, invalid-JSON and unregistered file are reported; modules.json is tolerated", () => {
     const files = corpus();
     files.delete("bridges.json");
+    files.set("stray.json", {});
     files.set("modules.json", { modules: [] });
     const result = audit(files);
     expect(result.summary.filesMissing).toBe(1);
     expect(result.summary.filesUnregistered).toBe(1);
     expect(messages(result, "bridges.json")).toContain("required data file is missing");
-    expect(messages(result, "modules.json")).toContain("DW_DATA_FILE_REGISTRY");
+    expect(messages(result, "stray.json")).toContain("DW_DATA_FILE_REGISTRY");
+    expect(messages(result, "modules.json")).toBe("");
 
     const source: CorpusSource = new Map([
       ["tracks.json", { ok: false as const, error: "Unexpected token" }],
@@ -165,9 +206,9 @@ describe("auditDewasaCorpus reports corruption", () => {
     const result = audit(files);
     const text = messages(result, "tracks.json");
     expect(text).toContain("track PRO must have 8");
-    expect(text).toContain("track PRO must have 120");
-    expect(text).toContain("track PRO must total 128");
-    expect(text).toContain("track PRO must have 12 modules");
+    expect(text).toContain("track PRO must have 128");
+    expect(text).toContain("track PRO must total 136");
+    expect(text).toContain("track PRO must have 13 modules");
   });
 
   test("a changed shared hours figure is reported", () => {
@@ -232,7 +273,7 @@ describe("auditDewasaCorpus reports corruption", () => {
     const index = modules.findIndex((module) => module.code === "DW-PRS-M6");
     modules.splice(index, 1);
     const result = audit(files);
-    expect(messages(result, "module-plan.json")).toContain("expected exactly 34 track modules");
+    expect(messages(result, "module-plan.json")).toContain("expected exactly 35 track modules");
     expect(messages(result, "tracks.json")).toContain("says 6 modules but module-plan.json has 5");
   });
 
@@ -363,6 +404,21 @@ describe("dw-* schemas", () => {
     expect(dwTrackSchema.safeParse(track).success).toBe(true);
     expect(dwTrackSchema.safeParse({ ...track, totalHours: 49 }).success).toBe(false);
     expect(dwTrackSchema.safeParse({ ...track, hoursPerModule: 6 }).success).toBe(false);
+  });
+
+  test("a track with unequal modules omits hoursPerModule; its module hours are audited", () => {
+    const files = corpus();
+    const pro = files.get("tracks.json").tracks[1] as Json;
+    expect(pro.hoursPerModule).toBeUndefined();
+    expect(dwTrackSchema.safeParse(pro).success).toBe(true);
+    // Hours that no longer add up to the track's own hours are reported by the audit.
+    const m13 = (files.get("module-plan.json").modules as Array<Json>).find(
+      (module) => module.code === "DW-PRO-M13",
+    ) as Json;
+    m13.hours = 10;
+    expect(messages(audit(files), "tracks.json")).toContain(
+      "is 128 but the PRO modules in module-plan.json add up to 130",
+    );
   });
 
   test("every file schema rejects unknown keys and duplicate records", () => {

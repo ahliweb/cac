@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 420" width="520" height="420" role="img" aria-labelledby="t d">
+  <title id="t">Diagram alir yang salah: jalan tidak ada</title>
+  <desc id="d">Diagram alir yang salah: MULAI, belah ketupat Hujan. Panah ya ke kotak Bawa payung lalu ke SELESAI. Dari belah ketupat tidak ada panah tidak: hanya garis putus-putus ke kotak putus-putus bertanda ke mana. Pion akan macet bila tidak hujan.</desc>
+  <rect width="520" height="420" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444444"/>
+    </marker>
+  </defs>
+  <ellipse cx="260" cy="30" rx="60" ry="18" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="260" y="35" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#222222">MULAI</text>
+  <polyline points="260,48 260,78" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <polygon points="260,78 350,120 260,162 170,120" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+  <text x="260" y="124.5" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#222222">Hujan?</text>
+  <polyline points="170,120 100,120 100,208" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <text x="135" y="112" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#222222">ya</text>
+  <rect x="30" y="210" width="140" height="40" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+  <text x="100.0" y="234.5" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#222222">Bawa payung</text>
+  <polyline points="100,250 100,300 260,300 260,318" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <ellipse cx="260" cy="336" rx="60" ry="18" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="260" y="341" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#222222">SELESAI</text>
+  <polyline points="350,120 410,120" stroke="#b3261e" stroke-width="2" fill="none" stroke-dasharray="5 4"/>
+  <text x="380" y="112" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#b3261e">tidak</text>
+  <rect x="410" y="100" width="100" height="40" fill="#ffffff" stroke="#b3261e" stroke-width="2" stroke-dasharray="5 4"/>
+  <text x="460.0" y="124.5" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#222222">ke mana?</text>
+  <text x="460" y="160" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#b3261e">Panah tidak</text>
+  <text x="460" y="175" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#b3261e">belum ada</text>
+  <text x="260" y="388" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">Kesalahan: belah ketupat hanya punya satu panah keluar.</text>
+  <text x="260" y="406" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">Bila tidak hujan, pion macet.</text>
+</svg>

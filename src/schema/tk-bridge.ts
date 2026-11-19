@@ -1,8 +1,12 @@
 /**
  * Schema for `data/tk-coding/bridge.json`: the bridge to the SD programme
- * (silabus bagian 5). The bridge is a one-sided design until the
- * `sd-coding` syllabus is approved and the codes are aligned (decision Q8),
- * so it names TK weeks only; it never references SD week codes.
+ * (silabus bagian 5). Since v1.0.2 (owner decision 2026-11-19, issue #177,
+ * decision Q8) the bridge is aligned with the `sd-coding` syllabus: the
+ * second column names the SD introduction items it touches with their SD
+ * week codes. The TK week codes of the first column are extracted into
+ * `outputWeeks`; the SD week codes stay in the verbatim `prerequisite` text and
+ * are checked against the `sd-coding` corpus by the cross-programme check
+ * (ADR-0010).
  */
 
 import { z } from "zod";
@@ -16,7 +20,9 @@ export const tkBridgeRowSchema = z
     outputWeeks: z
       .array(tkWeekCodeSchema)
       .describe("The week codes cited in output, in order (may be empty)."),
-    prerequisite: nonEmptyString.describe('The "Prasyarat untuk SD awal (Fase A)" cell, verbatim.'),
+    prerequisite: nonEmptyString.describe(
+      'The second column cell ("Butir pengenalan SD yang disentuh (kelas 1-2)" since v1.0.2; "Prasyarat untuk SD awal (Fase A)" before), verbatim.',
+    ),
     note: nonEmptyString.describe('The "Catatan" cell, verbatim.'),
   })
   .strict();

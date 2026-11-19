@@ -54,10 +54,25 @@ osn validate: programme "osn", corpus at /.../data/osn
 OK -- 22 data file(s) validated, 0 problem(s) found.
 
 osn validate: programme "sma-coding", corpus at /.../data/sma-coding
+OK -- 8 data file(s) validated, 0 problem(s) found.
+
+osn validate: programme "tk-coding", corpus at /.../data/tk-coding
+OK -- 7 data file(s) validated, 0 problem(s) found.
+
+osn validate: programme "kuliah-coding", corpus at /.../data/kuliah-coding
+OK -- 6 data file(s) validated, 0 problem(s) found.
+
+osn validate: programme "dewasa-coding", corpus at /.../data/dewasa-coding
+OK -- 8 data file(s) validated, 0 problem(s) found.
+
+osn validate: programme "sd-coding", corpus at /.../data/sd-coding
+OK -- 5 data file(s) validated, 0 problem(s) found.
+
+osn validate: programme "smp-coding", corpus at /.../data/smp-coding
 OK -- 7 data file(s) validated, 0 problem(s) found.
 ```
 
-Exit code 0 berarti kedua program lolos. Exit 1 berarti ada temuan (daftar
+Exit code 0 berarti ketujuh program lolos. Exit 1 berarti ada temuan (daftar
 lengkap dicetak, dikelompokkan per berkas); exit 2 berarti salah pakai
 (mis. nama program tidak dikenal).
 
@@ -70,7 +85,7 @@ bun run privacy-check
 ```text
 $ bun run src/cli/index.ts privacy-check
 osn privacy-check: scanning /.../data
-OK -- 33 file(s) scanned, 0 direct-identifier-shaped key(s) found.
+OK -- 65 file(s) scanned, 0 direct-identifier-shaped key(s) found.
 ```
 
 ## 3. Cara menjalankan `osn`
@@ -85,7 +100,7 @@ Contoh versi:
 
 ```text
 $ bun run src/cli/index.ts --version
-2.3.0
+2.5.0
 ```
 
 Bentuk pendek `bun src/cli/index.ts ...` juga bekerja (keluaran sama). Dua

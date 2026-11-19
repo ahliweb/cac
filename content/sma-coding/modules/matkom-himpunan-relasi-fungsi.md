@@ -18,6 +18,16 @@ Setelah mempelajari modul ini, kamu diharapkan bisa:
 
 Modul ini membahas himpunan secara matematis, bukan pustaka `set` C++ (untuk itu lihat modul OSN). Contoh C++17 hanya diperiksa bisa dikompilasi, contoh TypeScript diperiksa penyusun secara manual dengan menjalankannya; keduanya bukan bukti benar untuk semua masukan. Bagian pokok dapat dikerjakan di kertas.
 
+## Ingat kembali
+
+Jawab dari ingatan, tanpa membuka modul `matkom-logika-proposisi`. Cocokkan di bagian kunci.
+
+1. Kapan implikasi p → q bernilai salah?
+2. Tulis hukum De Morgan untuk `!(p && q)` dan `!(p || q)`.
+3. Tulis negasi dari "semua bilangan di daftar positif".
+4. Berapa baris tabel kebenaran untuk 3 proposisi dasar?
+5. Mengapa `i < n && data[i] > 0` aman, tetapi urutan terbalik berisiko?
+
 ## Himpunan
 
 **Himpunan** adalah kumpulan objek yang berbeda; objeknya disebut **anggota**. Himpunan ditulis dengan kurung kurawal: A = {1, 2, 3}. Urutan dan pengulangan tidak berpengaruh: {1, 2, 3} = {3, 1, 2, 2}.
@@ -139,6 +149,8 @@ Sifat relasi terlihat pada gambar: refleksif berarti setiap simpul punya panah k
 ## Contoh kode
 
 ### C++17: operasi himpunan dan sifat relasi (opsional)
+
+**Prediksi dulu.** Sebelum membaca komentar keluaran, tebak dan tulis tiga baris yang dicetak. Untuk dua baris terakhir, tiap digit berurutan menyatakan refleksif, simetris, transitif (1 = ya, 0 = tidak); periksa `r2` dan `r3` dengan tangan memakai definisi sifat.
 
 ```cpp
 #include <iostream>
@@ -268,6 +280,43 @@ Berapa banyak fungsi dari {1, 2, 3} ke {p, q, r, s, t}? Berapa di antaranya satu
 
 Fungsi `int hitung(int x) { static int pemanggilan = 0; pemanggilan++; return x + pemanggilan; }` apakah berperilaku seperti fungsi matematis? Jelaskan dengan dua contoh pemanggilan berturut-turut dengan x yang sama.
 
+### Latihan 8: Susun program (soal Parsons)
+
+Empat baris berikut tercampur. Susun menjadi fungsi yang memeriksa sifat simetris sebuah relasi.
+
+```text
+(a) return true;
+(b) }
+(c) for (auto [x, y] : r) if (!r.count({y, x})) return false;
+(d) bool simetris(const Relasi& r) {
+```
+
+### Latihan 9: Lengkapi kode (soal setengah jadi)
+
+Lengkapi pemeriksaan transitif: bila `(x, y)` dan `(p, z)` ada dan `y == p`, maka `(x, z)` harus ada.
+
+```text
+for (auto [x, y] : r) {
+    for (auto [p, z] : r) {
+        if (y == ____ && !r.count({____, z})) {
+            return false;
+        }
+    }
+}
+```
+
+### Latihan bercampur dan ulang berjarak
+
+Kerjakan tanpa melihat catatan.
+
+1. Tulis A × B untuk A = {1, 2} dan B = {x, y}, lalu satu relasi dari A ke B yang merupakan fungsi dan satu yang bukan.
+2. Relasi "habis membagi" pada {1, 2, 3, 4, 6}: periksa refleksif, simetris, dan transitif.
+3. Tulis negasi dari "relasi R simetris" memakai kuantor (modul logika), lalu beri satu contoh relasi yang menyalahkan "R simetris".
+4. Jelaskan dengan kata-katamu mengapa satu contoh tandingan sudah cukup untuk menyalahkan "semua", tetapi satu contoh tidak cukup untuk membenarkannya. (Penjelasan diri.)
+5. Berapa banyak fungsi satu-satu dari {1, 2} ke {a, b, c, d}?
+
+Jadwal ulang: jawab lagi tanpa catatan setelah satu hari dan setelah satu minggu; ganti himpunannya. Soal serupa muncul lagi di awal modul induksi dan rekursi matematis.
+
 ### Kunci singkat
 
 - Latihan 1: A ∪ B = {2, 3, 4, 6, 8, 9, 10, 12}; A ∩ B = {6, 12}; A − B = {2, 4, 8, 10}; Bᶜ = {1, 2, 4, 5, 7, 8, 10, 11}.
@@ -277,6 +326,10 @@ Fungsi `int hitung(int x) { static int pemanggilan = 0; pemanggilan++; return x 
 - Latihan 5: (a) fungsi, bukan satu-satu, pada; (b) bukan fungsi karena 4 tidak punya pasangan.
 - Latihan 6: 5³ = 125; satu-satu 5 · 4 · 3 = 60.
 - Latihan 7: bukan. Pemanggilan pertama `hitung(10)` memberi 11, pemanggilan kedua `hitung(10)` memberi 12, masukan sama tetapi keluaran berbeda karena bergantung pada keadaan `pemanggilan`.
+- Latihan 8: urutan (d), (c), (a), (b). Bila `return true` ditaruh di dalam perulangan, fungsi berhenti terlalu cepat; jalankan urutanmu pada `r2` dan `r3`.
+- Latihan 9: `p` dan `x`. Syarat `(x, z)` memakai `x` dari pasangan pertama dan `z` dari pasangan kedua. Bila kamu menulis `y`, telusuri `r3`.
+- Ingat kembali: 1: hanya bila p benar dan q salah. 2: `!(p && q)` sama dengan `!p || !q`; `!(p || q)` sama dengan `!p && !q`. 3: "ada bilangan di daftar yang tidak positif". 4: 2^3 = 8. 5: jika `i >= n`, ekspresi pertama salah dan `data[i]` tidak dievaluasi (hubung-singkat). Bila ada yang salah, ulangi bagian itu di modul logika lalu jawab lagi besok.
+- Latihan bercampur: 1: A × B = {(1,x), (1,y), (2,x), (2,y)}; fungsi: {(1,x), (2,x)}; bukan fungsi: {(1,x), (1,y)}. 2: refleksif ya; simetris tidak (2 habis membagi 4 tetapi 4 tidak habis membagi 2); transitif ya. 3: "ada pasangan (x, y) di R dengan (y, x) tidak di R"; contoh R = {(1,2)}. 4: satu pelanggar langsung membuktikan "tidak semua", sedangkan membenarkan "semua" menuntut memeriksa seluruh anggota. 5: 4 · 3 = 12.
 
 ## Kesalahan umum
 

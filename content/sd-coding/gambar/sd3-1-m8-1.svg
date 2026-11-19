@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 300" width="520" height="300" role="img" aria-labelledby="t d">
+  <title id="t">Mencari kartu 17: satu per satu dan bagi dua</title>
+  <desc id="d">Dua baris tujuh kartu terurut: 2, 5, 8, 11, 14, 17, 20. Baris atas, satu per satu: kartu dibuka dari kiri sebanyak enam kali sampai 17. Baris bawah, bagi dua: kartu tengah 11 dibuka lebih dulu, tiga kartu di kirinya diabaikan, lalu kartu tengah 17 dibuka; dua kali buka.</desc>
+  <rect width="520" height="300" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a5d9f"/>
+    </marker>
+    <marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#3b7d1f"/>
+    </marker>
+  </defs>
+  <g font-family="sans-serif" font-size="15" fill="#222222" text-anchor="start" font-weight="bold">
+    <text x="20" y="22">Satu per satu: 6 kali buka</text>
+  </g>
+  <rect x="20" y="34" width="60" height="76" rx="8" fill="#fffdf5" stroke="#2a5d9f" stroke-width="3"/>
+  <text x="50" y="82" font-family="sans-serif" font-size="30" font-weight="bold" fill="#2a5d9f" text-anchor="middle">2</text>
+  <circle cx="50" cy="126" r="13" fill="#d94f4f"/>
+  <text x="50" y="131" font-family="sans-serif" font-size="15" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+  <rect x="90" y="34" width="60" height="76" rx="8" fill="#fffdf5" stroke="#2a5d9f" stroke-width="3"/>
+  <text x="120" y="82" font-family="sans-serif" font-size="30" font-weight="bold" fill="#2a5d9f" text-anchor="middle">5</text>
+  <circle cx="120" cy="126" r="13" fill="#d94f4f"/>
+  <text x="120" y="131" font-family="sans-serif" font-size="15" font-weight="bold" fill="#ffffff" text-anchor="middle">2</text>
+  <rect x="160" y="34" width="60" height="76" rx="8" fill="#fffdf5" stroke="#2a5d9f" stroke-width="3"/>
+  <text x="190" y="82" font-family="sans-serif" font-size="30" font-weight="bold" fill="#2a5d9f" text-anchor="middle">8</text>
+  <circle cx="190" cy="126" r="13" fill="#d94f4f"/>
+  <text x="190" y="131" font-family="sans-serif" font-size="15" font-weight="bold" fill="#ffffff" text-anchor="middle">3</text>
+  <rect x="230" y="34" width="60" height="76" rx="8" fill="#fffdf5" stroke="#2a5d9f" stroke-width="3"/>
+  <text x="260" y="82" font-family="sans-serif" font-size="30" font-weight="bold" fill="#2a5d9f" text-anchor="middle">11</text>
+  <circle cx="260" cy="126" r="13" fill="#d94f4f"/>
+  <text x="260" y="131" font-family="sans-serif" font-size="15" font-weight="bold" fill="#ffffff" text-anchor="middle">4</text>
+  <rect x="300" y="34" width="60" height="76" rx="8" fill="#fffdf5" stroke="#2a5d9f" stroke-width="3"/>
+  <text x="330" y="82" font-family="sans-serif" font-size="30" font-weight="bold" fill="#2a5d9f" text-anchor="middle">14</text>
+  <circle cx="330" cy="126" r="13" fill="#d94f4f"/>
+  <text x="330" y="131" font-family="sans-serif" font-size="15" font-weight="bold" fill="#ffffff" text-anchor="middle">5</text>
+  <rect x="370" y="34" width="60" height="76" rx="8" fill="#fffdf5" stroke="#2a5d9f" stroke-width="3"/>
+  <text x="400" y="82" font-family="sans-serif" font-size="30" font-weight="bold" fill="#2a5d9f" text-anchor="middle">17</text>
+  <circle cx="400" cy="126" r="13" fill="#d94f4f"/>
+  <text x="400" y="131" font-family="sans-serif" font-size="15" font-weight="bold" fill="#ffffff" text-anchor="middle">6</text>
+  <rect x="440" y="34" width="60" height="76" rx="8" fill="#ffffff" stroke="#bbbbbb" stroke-width="3"/>
+  <text x="470" y="82" font-family="sans-serif" font-size="30" font-weight="bold" fill="#bbbbbb" text-anchor="middle">20</text>
+  <g font-family="sans-serif" font-size="15" fill="#222222" text-anchor="start" font-weight="bold">
+    <text x="20" y="180">Bagi dua: 2 kali buka</text>
+  </g>
+  <rect x="20" y="192" width="60" height="76" rx="8" fill="#eeeeee" stroke="#bbbbbb" stroke-width="3"/>
+  <text x="50" y="240" font-family="sans-serif" font-size="30" font-weight="bold" fill="#bbbbbb" text-anchor="middle">2</text>
+  <rect x="90" y="192" width="60" height="76" rx="8" fill="#eeeeee" stroke="#bbbbbb" stroke-width="3"/>
+  <text x="120" y="240" font-family="sans-serif" font-size="30" font-weight="bold" fill="#bbbbbb" text-anchor="middle">5</text>
+  <rect x="160" y="192" width="60" height="76" rx="8" fill="#eeeeee" stroke="#bbbbbb" stroke-width="3"/>
+  <text x="190" y="240" font-family="sans-serif" font-size="30" font-weight="bold" fill="#bbbbbb" text-anchor="middle">8</text>
+  <rect x="230" y="192" width="60" height="76" rx="8" fill="#fffdf5" stroke="#3b7d1f" stroke-width="3"/>
+  <text x="260" y="240" font-family="sans-serif" font-size="30" font-weight="bold" fill="#3b7d1f" text-anchor="middle">11</text>
+  <circle cx="260" cy="284" r="13" fill="#d94f4f"/>
+  <text x="260" y="289" font-family="sans-serif" font-size="15" font-weight="bold" fill="#ffffff" text-anchor="middle">1</text>
+  <rect x="300" y="192" width="60" height="76" rx="8" fill="#ffffff" stroke="#2a5d9f" stroke-width="3"/>
+  <text x="330" y="240" font-family="sans-serif" font-size="30" font-weight="bold" fill="#2a5d9f" text-anchor="middle">14</text>
+  <rect x="370" y="192" width="60" height="76" rx="8" fill="#fffdf5" stroke="#3b7d1f" stroke-width="3"/>
+  <text x="400" y="240" font-family="sans-serif" font-size="30" font-weight="bold" fill="#3b7d1f" text-anchor="middle">17</text>
+  <circle cx="400" cy="284" r="13" fill="#d94f4f"/>
+  <text x="400" y="289" font-family="sans-serif" font-size="15" font-weight="bold" fill="#ffffff" text-anchor="middle">2</text>
+  <rect x="440" y="192" width="60" height="76" rx="8" fill="#ffffff" stroke="#2a5d9f" stroke-width="3"/>
+  <text x="470" y="240" font-family="sans-serif" font-size="30" font-weight="bold" fill="#2a5d9f" text-anchor="middle">20</text>
+</svg>

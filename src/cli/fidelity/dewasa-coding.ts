@@ -3,7 +3,9 @@
  * and labelled paragraphs of the owner-approved syllabus
  * (`docs/programs/dewasa-coding/silabus.md`, bagian 1 (tracks), 2
  * (structure), 3.1 (shared module), 4-7 (modules per track), 5.2 (SKKNI
- * claims and LSP schemes), 6.1 (bridges), 8.2 (certification options)) and,
+ * claims and LSP schemes), 6.1 (bridges), 6.2 (the kuliah-coding bridge: entry
+ * profiles, the recognition status of every PRO module, the hour impact and
+ * the mandatory modules), 8.2 (certification options)) and,
  * for the 47 SKKNI unit titles, the table of
  * `docs/programs/dewasa-coding/riset.md` bagian 2.2, and compares the result
  * cell by cell with `data/dewasa-coding/*.json`, so any drift between the
@@ -16,8 +18,11 @@
  *
  * Two derivations are rules, not cells, and are stated here so a change to
  * them is a deliberate edit of this module: a module's `hours` is its
- * track's "(N modul × H jam)" figure, and a module's `prerequisites` is the
- * previous module of the table (the first module names the shared module).
+ * track's "(N modul × H jam)" figure (track PRO, whose modules are unequal
+ * since v1.1.0, has a "Jam" column instead), and a module's `prerequisites`
+ * is the previous row of the table (the first module names the shared
+ * module). A table lists modules in learning order, so a module number may
+ * differ from its row position (`DW-PRO-M13` sits after `DW-PRO-M5`).
  */
 
 import { join } from "node:path";
@@ -33,6 +38,7 @@ export const DW_DATA_FILES = [
   "skkni-units.json",
   "certification.json",
   "bridges.json",
+  "kuliah-bridge.json",
 ] as const;
 
 export type DwDataFileName = (typeof DW_DATA_FILES)[number];
@@ -122,6 +128,28 @@ export function sectionLines(markdown: string, headingPrefix: string): string[] 
   return result;
 }
 
+/** The data rows (header and separator dropped) of the `n`th (0-based) table in `lines`, as cell arrays. */
+export function nthTableRows(lines: readonly string[], n: number): string[][] {
+  const starts: number[] = [];
+  lines.forEach((line, index) => {
+    if (line.trim().startsWith("|") && !(lines[index - 1] ?? "").trim().startsWith("|")) {
+      starts.push(index);
+    }
+  });
+  const start = starts[n];
+  if (start === undefined) {
+    fail(`table ${n + 1} not found in section (found ${starts.length}).`);
+  }
+  const rows: string[][] = [];
+  for (const line of lines.slice(start + 2)) {
+    if (!line.trim().startsWith("|")) {
+      break;
+    }
+    rows.push(splitTableRow(line));
+  }
+  return rows;
+}
+
 /** The data rows (header and separator dropped) of the first table in `lines`, as cell arrays. */
 export function firstTableRows(lines: readonly string[]): string[][] {
   const start = lines.findIndex((line) => line.trim().startsWith("|"));
@@ -206,7 +234,9 @@ interface Track {
   readonly [key: string]: Json;
   readonly id: string;
   readonly moduleCount: number;
-  readonly hoursPerModule: number;
+  /** Hours of every own module; absent when the track's modules take unequal hours. */
+  readonly hoursPerModule?: number;
+  readonly trackHours: number;
 }
 
 function parseTracks(silabus: string): Track[] {
@@ -223,7 +253,19 @@ function parseTracks(silabus: string): Track[] {
     const hours = match(/^(\d+) \+ (\d+) = (\d+)$/, hoursCell as string, `${id} hours cell`);
     const section = sectionLines(silabus, TRACK_HEADINGS[id] as string);
     const durationText = labelledParagraph(section, "**Durasi:**");
-    const modules = match(/\((\d+) modul × (\d+) jam\)/, durationText, `${id} Durasi`);
+    const groups = [...durationText.matchAll(/(\d+) modul × (\d+) jam/g)].map((found) => ({
+      count: Number(group(found, 1)),
+      hours: Number(group(found, 2)),
+    }));
+    if (groups.length === 0) {
+      fail(`${id} Durasi: no "N modul × H jam" term in ${JSON.stringify(durationText)}.`);
+    }
+    const hourSum = groups.reduce((sum, term) => sum + term.count * term.hours, 0);
+    if (hourSum !== Number(group(hours, 2))) {
+      fail(
+        `${id} Durasi: the terms add up to ${hourSum} hours, the hours cell says ${group(hours, 2)}.`,
+      );
+    }
     const prerequisitesText = labelledParagraph(section, "**Prasyarat:**");
     const syntheticProject =
       id === "PRO"
@@ -236,8 +278,8 @@ function parseTracks(silabus: string): Track[] {
       sharedHours: Number(group(hours, 1)),
       trackHours: Number(group(hours, 2)),
       totalHours: Number(group(hours, 3)),
-      moduleCount: Number(group(modules, 1)),
-      hoursPerModule: Number(group(modules, 2)),
+      moduleCount: groups.reduce((sum, term) => sum + term.count, 0),
+      ...(groups.length === 1 ? { hoursPerModule: groups[0]?.hours as number } : {}),
       durationText,
       endOfTrack: endOfTrack as string,
       prerequisitesText,
@@ -260,26 +302,36 @@ function parseModules(silabus: string, tracks: readonly Track[]): Json[] {
     if (rows.length !== track.moduleCount) {
       fail(`${track.id}: Durasi says ${track.moduleCount} modules, the table has ${rows.length}.`);
     }
+    // PRO states each module's hours in a "Jam" column (unequal hours since v1.1.0).
+    const hoursColumn = track.hoursPerModule === undefined;
+    const trackModules: Json[] = [];
+    let previous = DW_SHARED_MODULE_CODE;
     rows.forEach((row, index) => {
-      const [codeCell, title, outcome, last] = cells(row, 4, `${track.id} module row ${index}`);
+      const parts = cells(row, hoursColumn ? 5 : 4, `${track.id} module row ${index}`);
+      const [codeCell, title, outcome] = parts;
+      const last = parts[parts.length - 1];
       const code = stripCode(codeCell as string);
-      const number = index + 1;
-      if (code !== `DW-${track.id}-M${number}`) {
-        fail(`${track.id} row ${index}: expected DW-${track.id}-M${number}, found ${code}.`);
-      }
+      const found = match(
+        new RegExp(`^DW-${track.id}-M([1-9]\\d*)$`),
+        code,
+        `${track.id} row ${index} code`,
+      );
+      const number = Number(group(found, 1));
+      const hours = hoursColumn
+        ? Number(group(match(/^(\d+)$/, parts[3] as string, `${track.id} row ${index} Jam`), 1))
+        : (track.hoursPerModule as number);
       const base = {
         code,
         track: track.id,
         number,
         title: title as string,
-        hours: track.hoursPerModule,
+        hours,
         outcome: outcome as string,
       };
-      const prerequisites = [
-        number === 1 ? DW_SHARED_MODULE_CODE : `DW-${track.id}-M${number - 1}`,
-      ];
+      const prerequisites = [previous];
+      previous = code;
       if (track.id === "PRO") {
-        modules.push({
+        trackModules.push({
           ...base,
           skkniUnitCodes: [...(last as string).matchAll(/J\.620100\.\d{3}\.\d{2}/g)].map(
             (found) => found[0],
@@ -287,9 +339,25 @@ function parseModules(silabus: string, tracks: readonly Track[]): Json[] {
           prerequisites,
         });
       } else {
-        modules.push({ ...base, portfolioOutput: last as string, prerequisites });
+        trackModules.push({ ...base, portfolioOutput: last as string, prerequisites });
       }
     });
+    const numbers = trackModules.map((module) => (module as { number: number }).number);
+    if ([...numbers].sort((a, b) => a - b).some((n, i) => n !== i + 1)) {
+      fail(
+        `${track.id}: module numbers must be 1..${numbers.length} once each; found [${numbers.join(", ")}].`,
+      );
+    }
+    const hourSum = trackModules.reduce<number>(
+      (sum, module) => sum + (module as { hours: number }).hours,
+      0,
+    );
+    if (hourSum !== track.trackHours) {
+      fail(
+        `${track.id}: the module hours add up to ${hourSum}, the track has ${track.trackHours}.`,
+      );
+    }
+    modules.push(...trackModules);
   }
   return modules;
 }
@@ -371,7 +439,7 @@ function parseSkkni(silabus: string, units: ReturnType<typeof parseUnits>): Json
     mappingDepth: "judul-unit",
     touchedUnitCount: Number(group(touched, 1)),
     uncoveredUnitCodes: uncovered,
-    units: units.map((unit) => ({ ...unit, verification: "salinan-belum-terverifikasi" })),
+    units: units.map((unit) => ({ ...unit, verification: "judul-cocok-lampiran-resmi" })),
   };
 }
 
@@ -427,6 +495,88 @@ function parseBridges(silabus: string): Json[] {
   });
 }
 
+const RECOGNITION_STATUSES = new Set(["L", "P", "W"]);
+
+function integer(text: string, context: string): number {
+  return Number(group(match(/^(\d+)$/, text, context), 1));
+}
+
+/** The kuliah-coding bridge of bagian 6.2: profiles, per-module statuses, hour impact, mandatory modules. */
+function parseKuliahBridge(silabus: string): Json {
+  const section = sectionLines(silabus, "### 6.2 ");
+  const profileRows = nthTableRows(section, 0);
+  const profiles = profileRows.map((row, index) => {
+    const [idCell, coursesText, note] = cells(row, 3, `bagian 6.2 profil row ${index}`);
+    return {
+      id: stripCode(idCell as string),
+      coursesText: coursesText as string,
+      courses: [...(coursesText as string).matchAll(/KUL-[UIK]-\d{3}/g)].map((found) => found[0]),
+      note: note as string,
+    };
+  });
+  const profileIds = profiles.map((profile) => profile.id);
+  const modules = nthTableRows(section, 1).map((row, index) => {
+    const parts = cells(row, 3 + profileIds.length, `bagian 6.2 modul row ${index}`);
+    const [codeCell, hoursCell, basis] = parts;
+    const statuses: Record<string, string> = {};
+    profileIds.forEach((profile, column) => {
+      const status = parts[3 + column] as string;
+      if (!RECOGNITION_STATUSES.has(status)) {
+        fail(`bagian 6.2 modul row ${index}: status ${JSON.stringify(status)} is not L, P or W.`);
+      }
+      statuses[profile] = status;
+    });
+    return {
+      code: stripCode(codeCell as string),
+      hours: integer(hoursCell as string, `bagian 6.2 modul row ${index} Jam`),
+      basis: basis as string,
+      basisCourses: [...(basis as string).matchAll(/KUL-[UIK]-\d{3}/g)].map((found) => found[0]),
+      statuses,
+    };
+  });
+  const hourImpact = nthTableRows(section, 2).map((row, index) => {
+    const [profile, lewati, padatkan, wajib, moduleHours, totalHours, reduction] = cells(
+      row,
+      7,
+      `bagian 6.2 dampak row ${index}`,
+    );
+    const context = `bagian 6.2 dampak row ${index}`;
+    return {
+      profile: stripCode(profile as string),
+      lewati: integer(lewati as string, `${context} L`),
+      padatkan: integer(padatkan as string, `${context} P`),
+      wajib: integer(wajib as string, `${context} W`),
+      moduleHours: integer(moduleHours as string, `${context} Jam modul`),
+      totalHours: integer(totalHours as string, `${context} Jam dengan DW-FND-M1`),
+      reductionHours: Number(
+        group(match(/^(\d+) jam lebih sedikit$/, reduction as string, `${context} Selisih`), 1),
+      ),
+    };
+  });
+  const baseline = match(
+    /Dampak pada jam jalur `PRO` \((\d+) jam bila semua modul/,
+    normalise(section.join("\n")),
+    "bagian 6.2 jam dasar",
+  );
+  const mandatoryLine = section.find((line) => line.startsWith("- `DW-FND-M1`"));
+  if (mandatoryLine === undefined || !mandatoryLine.includes("tetap wajib")) {
+    fail(
+      "bagian 6.2: the bullet naming the mandatory modules (`DW-FND-M1` ... tetap wajib) not found.",
+    );
+  }
+  return {
+    baselineHours: Number(group(baseline, 1)),
+    profiles,
+    modules,
+    hourImpact,
+    mandatoryModules: [
+      ...mandatoryLine
+        .slice(0, mandatoryLine.indexOf("tetap wajib"))
+        .matchAll(/`(DW-[A-Z]+-M\d+)`/g),
+    ].map((found) => group(found, 1)),
+  };
+}
+
 function parseStructure(silabus: string): Json[] {
   return firstTableRows(sectionLines(silabus, "## 2. ")).map((row, index) => {
     const [item, value] = cells(row, 2, `bagian 2 row ${index}`);
@@ -462,6 +612,10 @@ export function expectedCorpus(silabus: string, riset: string): Record<DwDataFil
       ...(parseCertification(silabus) as object),
     },
     "bridges.json": { ...provenance("bagian 6.1"), bridges: parseBridges(silabus) },
+    "kuliah-bridge.json": {
+      ...provenance("bagian 6.2"),
+      ...(parseKuliahBridge(silabus) as object),
+    },
   };
 }
 

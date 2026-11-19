@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 240" width="520" height="240" role="img" aria-labelledby="t d">
+  <title id="t">Kartu KA atau bukan KA</title>
+  <desc id="d">Dua kolom. Kolom KA berisi asisten suara dan penyaran lagu. Kolom bukan KA berisi kalkulator dan lampu lalu lintas berjadwal.</desc>
+  <rect width="520" height="240" fill="#ffffff"/>
+  <rect x="10" y="10" width="245" height="220" rx="8" fill="#f4f8fd" stroke="#2a5d9f" stroke-width="2"/>
+  <rect x="265" y="10" width="245" height="220" rx="8" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+  <text x="132" y="34" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">KA</text>
+  <text x="387" y="34" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">BUKAN KA</text>
+  <rect x="30" y="60" width="70" height="60" rx="4" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+  <circle cx="65" cy="90" r="12" fill="#dff0d8" stroke="#444444" stroke-width="2"/>
+  <path d="M108 78 Q118 90 108 102" fill="none" stroke="#444444" stroke-width="2"/>
+  <path d="M116 70 Q132 90 116 110" fill="none" stroke="#444444" stroke-width="2"/>
+  <text x="65" y="138" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">asisten suara</text>
+  <circle cx="185" cy="95" r="14" fill="#dff0d8" stroke="#444444" stroke-width="2"/>
+  <line x1="199" y1="95" x2="199" y2="60" stroke="#444444" stroke-width="2"/>
+  <line x1="199" y1="60" x2="215" y2="66" stroke="#444444" stroke-width="2"/>
+  <text x="185" y="138" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">penyaran lagu</text>
+  <text x="132" y="175" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">belajar dari contoh</text>
+  <text x="132" y="195" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">memberi saran</text>
+  <rect x="290" y="55" width="70" height="100" rx="6" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+  <rect x="298" y="63" width="54" height="22" rx="4" fill="#dff0d8" stroke="#444444" stroke-width="2"/>
+  <rect x="298" y="95" width="14" height="14" rx="4" fill="#cccccc" stroke="#444444" stroke-width="1"/>
+  <rect x="298" y="119" width="14" height="14" rx="4" fill="#cccccc" stroke="#444444" stroke-width="1"/>
+  <rect x="317" y="95" width="14" height="14" rx="4" fill="#cccccc" stroke="#444444" stroke-width="1"/>
+  <rect x="317" y="119" width="14" height="14" rx="4" fill="#cccccc" stroke="#444444" stroke-width="1"/>
+  <rect x="336" y="95" width="14" height="14" rx="4" fill="#cccccc" stroke="#444444" stroke-width="1"/>
+  <rect x="336" y="119" width="14" height="14" rx="4" fill="#cccccc" stroke="#444444" stroke-width="1"/>
+  <text x="325" y="175" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">kalkulator</text>
+  <rect x="410" y="55" width="50" height="100" rx="6" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+  <circle cx="435" cy="76" r="11" fill="#e57373" stroke="#444444" stroke-width="2"/>
+  <circle cx="435" cy="105" r="11" fill="#ffd54f" stroke="#444444" stroke-width="2"/>
+  <circle cx="435" cy="134" r="11" fill="#81c784" stroke="#444444" stroke-width="2"/>
+  <text x="435" y="175" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">lampu berjadwal</text>
+  <text x="387" y="205" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">aturan tetap, waktu tetap</text>
+</svg>

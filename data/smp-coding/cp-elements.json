@@ -1,0 +1,261 @@
+{
+  "syllabusVersion": "1.2.0",
+  "syllabusDate": "2026-11-19",
+  "sourceSection": "bagian 1",
+  "quotes": [
+    {
+      "family": "informatika",
+      "elementId": "BK",
+      "elementTitle": "Berpikir Komputasional",
+      "guideNumber": "1.1",
+      "text": "Pada akhir fase D, murid mampu menerapkan berpikir komputasional untuk problem dalam kehidupan sehari-hari maupun dalam menghadapi masalah komputasi; memahami konsep himpunan data terstruktur dalam kehidupan sehari-hari; memahami konsep lembar kerja pengolah data; menerapkan berpikir komputasional dalam menyelesaikan persoalan yang mengandung himpunan data berstruktur sederhana dengan volume kecil; serta menuliskan sekumpulan instruksi dengan menggunakan sekumpulan kosakata terbatas atau simbol dalam format pseudocode."
+    },
+    {
+      "family": "informatika",
+      "elementId": "LD",
+      "elementTitle": "Literasi Digital",
+      "guideNumber": "1.2",
+      "text": "Pada akhir fase D, murid mampu memahami cara kerja dan penggunaan mesin pencari di internet; mengetahui kualitas informasi dan kredibilitas sumber informasi digital; mengenal ekosistem media pers digital; membedakan fakta, opini, dan hoaks; memahami pemanfaatan perangkat teknologi pengolah dokumen, lembar kerja, dan presentasi; mampu mendeskripsikan komponen, fungsi, dan cara kerja komputer; memahami konsep dan penerapan konektivitas jaringan lokal dan internet baik kabel maupun nirkabel; mengetahui jenis ruang publik virtual; memahami pemanfaatan perangkat teknologi digital untuk produksi dan diseminasi konten; memahami pentingnya menjaga rekam jejak digital, mengamalkan toleransi dan empati di dunia digital, memahami dampak perundungan digital, membuat kata sandi yang aman; memahami pengamanan perangkat dari berbagai jenis malware, memilah informasi yang bersifat privat dan publik, melindungi data pribadi dan identitas digital serta memiliki kesadaran penuh (mindfulness) dalam dunia digital."
+    },
+    {
+      "family": "kka",
+      "elementId": "BK",
+      "elementTitle": "Berpikir Komputasional",
+      "guideNumber": "2.1",
+      "text": "Menerapkan pengelolaan data, pemecahan masalah sederhana dalam kehidupan masyarakat secara sistematis, dan menuliskan instruksi."
+    },
+    {
+      "family": "kka",
+      "elementId": "LD",
+      "elementTitle": "Literasi Digital",
+      "guideNumber": "2.2",
+      "text": "Memproduksi dan mendiseminasi konten digital berupa audio, video, slide, dan infografis."
+    },
+    {
+      "family": "kka",
+      "elementId": "EA",
+      "elementTitle": "Literasi dan Etika Kecerdasan Artifisial",
+      "guideNumber": "2.3",
+      "text": "Memahami perbedaan cara manusia dan KA menggabungkan informasi dari beberapa perangkat penginderaan atau sensor, memahami bagaimana komputer memaknai informasi dari perangkat penginderaan atau sensor, memahami kualitas data, serta manfaat dan dampak KA pada kehidupan masyarakat. Memahami etika penggunaan KA dalam kehidupan sehari-hari seperti menjaga data pribadi dalam menggunakan KA, KA adalah sebagai alat bantu sehingga manusia tidak boleh tergantung dan percaya sepenuhnya pada KA karena KA masih sangat mungkin menghasilkan output yang salah, bias, atau melakukan halusinasi, serta menganalisis konten deep fake dalam bentuk gambar, audio, atau video."
+    },
+    {
+      "family": "kka",
+      "elementId": "PA",
+      "elementTitle": "Pemanfaatan dan Pengembangan Kecerdasan Artifisial",
+      "guideNumber": "2.4",
+      "text": "Menggunakan perangkat KA sederhana dengan kritis dan mampu menuliskan input bermakna ke dalam sistem KA."
+    }
+  ],
+  "items": [
+    {
+      "code": "D-BK-a",
+      "family": "informatika",
+      "elementId": "BK",
+      "label": "berpikir komputasional untuk problem sehari-hari dan masalah komputasi"
+    },
+    {
+      "code": "D-BK-b",
+      "family": "informatika",
+      "elementId": "BK",
+      "label": "konsep himpunan data terstruktur dalam kehidupan sehari-hari"
+    },
+    {
+      "code": "D-BK-c",
+      "family": "informatika",
+      "elementId": "BK",
+      "label": "konsep lembar kerja pengolah data"
+    },
+    {
+      "code": "D-BK-d",
+      "family": "informatika",
+      "elementId": "BK",
+      "label": "berpikir komputasional untuk persoalan dengan himpunan data berstruktur sederhana bervolume kecil"
+    },
+    {
+      "code": "D-BK-e",
+      "family": "informatika",
+      "elementId": "BK",
+      "label": "menuliskan sekumpulan instruksi dengan kosakata terbatas atau simbol dalam format pseudocode"
+    },
+    {
+      "code": "D-LD-a",
+      "family": "informatika",
+      "elementId": "LD",
+      "label": "cara kerja dan penggunaan mesin pencari"
+    },
+    {
+      "code": "D-LD-b",
+      "family": "informatika",
+      "elementId": "LD",
+      "label": "kualitas informasi dan kredibilitas sumber informasi digital"
+    },
+    {
+      "code": "D-LD-c",
+      "family": "informatika",
+      "elementId": "LD",
+      "label": "ekosistem media pers digital"
+    },
+    {
+      "code": "D-LD-d",
+      "family": "informatika",
+      "elementId": "LD",
+      "label": "membedakan fakta, opini, dan hoaks"
+    },
+    {
+      "code": "D-LD-e",
+      "family": "informatika",
+      "elementId": "LD",
+      "label": "perangkat teknologi pengolah dokumen, lembar kerja, dan presentasi"
+    },
+    {
+      "code": "D-LD-f",
+      "family": "informatika",
+      "elementId": "LD",
+      "label": "mendeskripsikan komponen, fungsi, dan cara kerja komputer"
+    },
+    {
+      "code": "D-LD-g",
+      "family": "informatika",
+      "elementId": "LD",
+      "label": "konektivitas jaringan lokal dan internet, kabel maupun nirkabel"
+    },
+    {
+      "code": "D-LD-h",
+      "family": "informatika",
+      "elementId": "LD",
+      "label": "jenis ruang publik virtual"
+    },
+    {
+      "code": "D-LD-i",
+      "family": "informatika",
+      "elementId": "LD",
+      "label": "perangkat teknologi digital untuk produksi dan diseminasi konten"
+    },
+    {
+      "code": "D-LD-j",
+      "family": "informatika",
+      "elementId": "LD",
+      "label": "pentingnya menjaga rekam jejak digital"
+    },
+    {
+      "code": "D-LD-k",
+      "family": "informatika",
+      "elementId": "LD",
+      "label": "mengamalkan toleransi dan empati di dunia digital"
+    },
+    {
+      "code": "D-LD-l",
+      "family": "informatika",
+      "elementId": "LD",
+      "label": "dampak perundungan digital"
+    },
+    {
+      "code": "D-LD-m",
+      "family": "informatika",
+      "elementId": "LD",
+      "label": "membuat kata sandi yang aman"
+    },
+    {
+      "code": "D-LD-n",
+      "family": "informatika",
+      "elementId": "LD",
+      "label": "pengamanan perangkat dari berbagai jenis malware"
+    },
+    {
+      "code": "D-LD-o",
+      "family": "informatika",
+      "elementId": "LD",
+      "label": "memilah informasi privat dan publik"
+    },
+    {
+      "code": "D-LD-p",
+      "family": "informatika",
+      "elementId": "LD",
+      "label": "melindungi data pribadi dan identitas digital"
+    },
+    {
+      "code": "D-LD-q",
+      "family": "informatika",
+      "elementId": "LD",
+      "label": "kesadaran penuh (mindfulness) dalam dunia digital"
+    },
+    {
+      "code": "DK-BK-a",
+      "family": "kka",
+      "elementId": "BK",
+      "label": "menerapkan pengelolaan data"
+    },
+    {
+      "code": "DK-BK-b",
+      "family": "kka",
+      "elementId": "BK",
+      "label": "pemecahan masalah sederhana dalam kehidupan masyarakat secara sistematis"
+    },
+    {
+      "code": "DK-BK-c",
+      "family": "kka",
+      "elementId": "BK",
+      "label": "menuliskan instruksi"
+    },
+    {
+      "code": "DK-LD-a",
+      "family": "kka",
+      "elementId": "LD",
+      "label": "memproduksi dan mendiseminasi konten digital: audio, video, slide, infografis"
+    },
+    {
+      "code": "DK-EA-a",
+      "family": "kka",
+      "elementId": "EA",
+      "label": "perbedaan cara manusia dan KA menggabungkan informasi dari beberapa penginderaan atau sensor"
+    },
+    {
+      "code": "DK-EA-b",
+      "family": "kka",
+      "elementId": "EA",
+      "label": "bagaimana komputer memaknai informasi dari perangkat penginderaan atau sensor"
+    },
+    {
+      "code": "DK-EA-c",
+      "family": "kka",
+      "elementId": "EA",
+      "label": "kualitas data"
+    },
+    {
+      "code": "DK-EA-d",
+      "family": "kka",
+      "elementId": "EA",
+      "label": "manfaat dan dampak KA pada kehidupan masyarakat"
+    },
+    {
+      "code": "DK-EA-e",
+      "family": "kka",
+      "elementId": "EA",
+      "label": "etika penggunaan KA sehari-hari: menjaga data pribadi"
+    },
+    {
+      "code": "DK-EA-f",
+      "family": "kka",
+      "elementId": "EA",
+      "label": "KA sebagai alat bantu: tidak bergantung dan tidak percaya sepenuhnya (output salah, bias, halusinasi)"
+    },
+    {
+      "code": "DK-EA-g",
+      "family": "kka",
+      "elementId": "EA",
+      "label": "menganalisis konten deep fake (gambar, audio, video)"
+    },
+    {
+      "code": "DK-PA-a",
+      "family": "kka",
+      "elementId": "PA",
+      "label": "menggunakan perangkat KA sederhana dengan kritis"
+    },
+    {
+      "code": "DK-PA-b",
+      "family": "kka",
+      "elementId": "PA",
+      "label": "menuliskan input bermakna ke dalam sistem KA"
+    }
+  ]
+}

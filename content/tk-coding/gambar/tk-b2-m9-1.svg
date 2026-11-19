@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 470" width="600" height="470" role="img" aria-labelledby="t d">
+  <title id="t">Alat digital dengan aman</title>
+  <desc id="d">Dua gambar berdampingan. Kiri berjudul minta izin: orang dewasa berdiri di dekat sebuah tablet abu-abu di meja, dan boneka kelinci mengangkat satu tangan untuk bertanya. Kanan berjudul ada batas waktu: sebuah jam pasir dan sebuah bola untuk bermain. Di bawahnya ada satu kotak kosong putus-putus untuk menggambar kegiatan yang disukai tanpa perangkat.</desc>
+  <rect width="600" height="470" fill="#ffffff"/>
+  <text x="155" y="30" font-family="sans-serif" font-size="22" text-anchor="middle" fill="#333333">minta izin</text>
+  <text x="445" y="30" font-family="sans-serif" font-size="22" text-anchor="middle" fill="#333333">ada batas waktu</text>
+  <rect x="20" y="44" width="270" height="220" rx="12" fill="#fafafa" stroke="#333333" stroke-width="3"/>
+  <rect x="310" y="44" width="270" height="220" rx="12" fill="#fafafa" stroke="#333333" stroke-width="3"/>
+  <rect x="40" y="210" width="230" height="14" fill="#d7a86e" stroke="#333333" stroke-width="3"/>
+  <rect x="95" y="165" width="80" height="45" rx="6" fill="#cfd8dc" stroke="#333333" stroke-width="3"/>
+  <rect x="102" y="171" width="66" height="33" rx="2" fill="#eceff1" stroke="#333333" stroke-width="2"/>
+  <circle cx="215" cy="152.8" r="15.399999999999999" fill="#c5cae9" stroke="#333333" stroke-width="3"/>
+  <path d="M197.4 210 L204.0 170.4 H226.0 L232.6 210 Z" fill="#c5cae9" stroke="#333333" stroke-width="3" stroke-linejoin="round"/>
+  <ellipse cx="68" cy="102" rx="6" ry="18" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <ellipse cx="86" cy="102" rx="6" ry="18" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <circle cx="77" cy="140" r="24" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="62" y="162" width="30" height="40" rx="12" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <path d="M92 172 L112 142" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="155" y="250" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#333333">tangan terangkat, bertanya dulu</text>
+  <polygon points="370,80 430,80 400,140" fill="#fff59d" stroke="#333333" stroke-width="3" stroke-linejoin="round"/>
+  <polygon points="370,200 430,200 400,140" fill="#fff59d" stroke="#333333" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M364 76 H436 M364 204 H436" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="500" cy="170" r="32" fill="#ef9a9a" stroke="#333333" stroke-width="3"/>
+  <path d="M468 170 H532 M500 138 Q484 170 500 202 M500 138 Q516 170 500 202" fill="none" stroke="#333333" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="445" y="250" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#333333">waktu habis, ganti bermain</text>
+  <line x1="20" y1="286" x2="580" y2="286" stroke="#999999" stroke-width="2" stroke-dasharray="4 6"/>
+  <text x="300" y="314" font-family="sans-serif" font-size="20" text-anchor="middle" fill="#333333">kegiatan tanpa perangkat yang aku suka</text>
+  <rect x="20" y="326" width="560" height="130" rx="12" fill="#ffffff" stroke="#333333" stroke-width="4" stroke-dasharray="10 8"/>
+</svg>

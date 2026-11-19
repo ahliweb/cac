@@ -1,9 +1,9 @@
-# Silabus Pembelajaran Coding Perguruan Tinggi — v1.0
+# Silabus Pembelajaran Coding Perguruan Tinggi — v1.2
 
-- **Version:** v1.0.0
+- **Version:** v1.2.0
 - **Last updated:** 2026-11-19
-- **Status:** DISETUJUI pemilik program, 2026-11-19 (issue #130), beserta seluruh rekomendasi penyusun atas pertanyaan terbuka (bagian 9). Menjadi sumber corpus program `kuliah-coding` (ADR-0006, ADR-0008).
-- **Changeset:** Silabus v1.0 disetujui pemilik: tiga jalur (U, I, K), 24 mata kuliah dalam SKS dan semester, pemetaan ke 17 knowledge area CS2023, kolom CPL tetap isian program studi pengadopsi, jembatan dari SMA dan ke dunia kerja, kebijakan AI tiga tingkat, dan keputusan pemilik 2026-11-19 atas pertanyaan terbuka (opsi rekomendasi); isi rencana tidak berubah dari draf v0.1.
+- **Status:** DISETUJUI pemilik program. v1.0 disetujui 2026-11-19 (issue #130) beserta seluruh rekomendasi penyusun atas pertanyaan terbuka (bagian 9); revisi v1.1 (rekayasa perangkat lunak berbantuan AI, usulan U-09 sampai U-12) disetujui lewat keputusan pemilik 2026-11-19 (issue #139, bagian 9.1). Revisi v1.2.0 (jembatan dari dan ke program lain, bagian 5.1 dan 5.2) disetujui lewat keputusan pemilik 2026-11-19 (issue #177, seluruh rekomendasi K1 sampai K8). Menjadi sumber corpus program `kuliah-coding` (ADR-0006, ADR-0008).
+- **Changeset:** v1.1 (issue #139): pokok bahasan AI diperluas di KUL-U-202; rekayasa perangkat lunak berbantuan AI diintegrasikan di KUL-I-204, KUL-I-401, KUL-I-301, KUL-I-305, dan KUL-I-303 tanpa menambah SKS; kebijakan AI tiga tingkat diperkuat dengan log pemakaian, wawancara kode, ujian praktik tanpa AI, dan gerbang kesiapan (bagian 6.3 dan 6.4); jalur K Merah saat kontes; glosarium istilah (bagian 6.5). Jumlah mata kuliah dan SKS tidak berubah. Sebelumnya, v1.0: Silabus v1.0 disetujui pemilik: tiga jalur (U, I, K), 24 mata kuliah dalam SKS dan semester, pemetaan ke 17 knowledge area CS2023, kolom CPL tetap isian program studi pengadopsi, jembatan dari SMA dan ke dunia kerja, kebijakan AI tiga tingkat, dan keputusan pemilik 2026-11-19 atas pertanyaan terbuka (opsi rekomendasi); isi rencana tidak berubah dari draf v0.1. Revisi patch v1.1.1 (#165): kalimat status yang basi; isi kurikulum tidak berubah. Revisi minor v1.2.0 (#177): bagian 5 (jembatan) diselaraskan; bagian 5.1 (dari SMA): pengakuan per CPMK, bukan per mata kuliah utuh, dengan bukti portofolio, riwayat Git, ujian praktik tanpa AI, wawancara kode, dan gerbang kesiapan; pemetaan jalur A ke `KUL-I-201`, jalur D ke `KUL-U-102`; rujukan blok fondasi dikoreksi (bukan `KUL-U-101` tetapi `KUL-I-203`, `KUL-I-301`, `KUL-U-202`); bagian 5.2: baris dewasa-coding kini merujuk jalur `PRO` dan bagian 6.2 silabus dewasa-coding v1.2; mata kuliah, SKS, jalur, dan KA tidak berubah.
 
 > **Disetujui pemilik program pada 2026-11-19** (keputusan lewat dialog
 > pilihan, dicatat di issue #130 dan di bagian 9). Dokumen ini konten
@@ -135,7 +135,7 @@ Format tiap mata kuliah: kode, nama, SKS, semester, prasyarat, CPMK
   (list, dict, set); berkas teks dan CSV; modul dan pustaka standar;
   pengujian dasar; Git dasar.
 - Asesmen: kuis mingguan, tiga tugas pemrograman, proyek kecil di bidang
-  prodi mahasiswa, ujian praktik.
+  prodi mahasiswa, ujian praktik tanpa AI.
 - KA CS2023: SDF, AL (pengantar).
 
 **KUL-U-102 Analisis Data dengan Python (3 SKS)**
@@ -167,12 +167,18 @@ Format tiap mata kuliah: kode, nama, SKS, semester, prasyarat, CPMK
 - CPMK: C1 menjelaskan cara kerja sistem AI generatif secara konseptual dan
   keterbatasannya; C2 menilai keluaran AI (verifikasi, bias, halusinasi);
   C3 memakai asisten AI secara bertanggung jawab dan mengungkapkan
-  pemakaiannya; C4 menguraikan risiko privasi dan hak cipta.
+  pemakaiannya; C4 menguraikan risiko privasi dan hak cipta; C5 memverifikasi
+  keluaran AI dengan uji dan mencatat alat, versi, dan perintah yang dipakai.
 - Pokok bahasan: pembelajaran mesin secara konseptual; model bahasa;
-  rekayasa perintah (prompt) dan evaluasi; privasi dan pelindungan data
-  pribadi; hak cipta; integritas akademik; dampak sosial.
-- Asesmen: studi kasus evaluasi keluaran AI, refleksi berkas pemakaian AI,
-  ujian tertulis.
+  rekayasa perintah (prompt) dan evaluasi; verifikasi keluaran dengan uji;
+  keluaran yang dapat berbeda untuk perintah yang sama (non-determinisme);
+  privasi dan pelindungan data pribadi (data pribadi, kata sandi, dan kunci
+  tidak dimasukkan ke layanan AI); hak cipta dan lisensi keluaran AI (status
+  hukum masih berkembang); energi dan biaya komputasi sekilas (angka
+  bervariasi dan tidak pasti); integritas akademik; gerbang kesiapan
+  (bagian 6.4); dampak sosial.
+- Asesmen: studi kasus evaluasi keluaran AI, refleksi berkas pemakaian AI
+  (log), ujian tertulis.
 - KA CS2023: AI, SEP, SEC.
 
 **KUL-U-301 Proyek Komputasi Lintas Disiplin (3 SKS)**
@@ -216,22 +222,32 @@ Ringkasan CPMK dan pokok bahasan jalur I `[karangan]`:
 
 | Kode | CPMK ringkas | Pokok bahasan | Asesmen utama |
 | --- | --- | --- | --- |
-| KUL-I-101 | C1 menulis program prosedural bertipe statis; C2 memakai fungsi, larik, dan penunjuk/referensi; C3 men-debug dengan alat; C4 memakai Git | variabel dan tipe, alur kendali, fungsi, larik dan string, memori, I/O berkas, pengujian | tugas mingguan, ujian praktik, proyek kecil |
-| KUL-I-102 | C1 menerapkan list, stack, queue, pohon, tabel hash, heap, graf; C2 memilih struktur data menurut kebutuhan; C3 menganalisis biaya operasi | struktur linear, pohon, hash, heap, graf dasar, pengantar kompleksitas | tugas implementasi, ujian tertulis dan praktik |
+| KUL-I-101 | C1 menulis program prosedural bertipe statis; C2 memakai fungsi, larik, dan penunjuk/referensi; C3 men-debug dengan alat; C4 memakai Git | variabel dan tipe, alur kendali, fungsi, larik dan string, memori, I/O berkas, pengujian | tugas mingguan, ujian praktik tanpa AI, wawancara kode singkat, proyek kecil |
+| KUL-I-102 | C1 menerapkan list, stack, queue, pohon, tabel hash, heap, graf; C2 memilih struktur data menurut kebutuhan; C3 menganalisis biaya operasi | struktur linear, pohon, hash, heap, graf dasar, pengantar kompleksitas | tugas implementasi, wawancara kode singkat, ujian tertulis dan praktik tanpa AI |
 | KUL-I-103 | C1 memakai logika, himpunan, relasi; C2 membuktikan dengan induksi; C3 menghitung (kombinatorika); C4 memakai teori graf dan bilangan dasar | logika, bukti, himpunan, hitungan, graf, aritmetika modular | kuis, ujian tertulis |
 | KUL-I-201 | C1 merancang algoritma (greedy, divide and conquer, DP); C2 menganalisis kebenaran dan kompleksitas; C3 mengenali masalah sulit | notasi asimtotik, rekurens, DP, graf, pencarian, kelas masalah | tugas rancangan, ujian |
 | KUL-I-202 | C1 memodelkan data (ER, relasional); C2 menulis kueri SQL; C3 menerapkan normalisasi, indeks, transaksi | model data, SQL, normalisasi, transaksi, indeks | proyek basis data, ujian praktik |
 | KUL-I-203 | C1 menjelaskan arsitektur CPU dan memori; C2 menjelaskan proses, penjadwalan, memori virtual; C3 memakai baris perintah dan sistem berkas | representasi data, assembly dasar, proses dan utas, memori, berkas | laboratorium, ujian |
-| KUL-I-204 | C1 mengelola kebutuhan dan rancangan; C2 menerapkan proses iteratif, pengujian, tinjau kode; C3 memakai kendali versi dan CI dalam tim | proses, UML ringan, pengujian, tinjau kode, CI, pemeliharaan | proyek tim kecil |
+| KUL-I-204 | C1 mengelola kebutuhan dan rancangan; C2 menerapkan proses iteratif, pengujian, tinjau kode; C3 memakai kendali versi dan CI dalam tim; C4 menerapkan rekayasa perangkat lunak berbantuan AI: menulis spesifikasi dan uji lebih dulu, meninjau dan memverifikasi kode hasil AI, dan mencatat pemakaian AI | proses, UML ringan, pengujian, tinjau kode, CI, pemeliharaan; rekayasa perangkat lunak berbantuan AI selama 3-4 minggu: spesifikasi dan uji lebih dulu, tinjau kode hasil AI, CI dengan analis statis, pengantar SSDF dan SLSA, kebijakan AI tim dan log, pengantar agen kode dengan batas kewenangan dan tinjauan manusia | proyek tim kecil dengan log pemakaian AI dan tinjau kode oleh manusia |
 | KUL-I-205 | C1 membangun aplikasi web klien dan peladen; C2 merancang API; C3 mengamankan aplikasi web dasar | HTML/CSS, JS/TS, HTTP, REST, autentikasi dasar, aksesibilitas | proyek web, ujian praktik |
-| KUL-I-301 | C1 menjelaskan lapisan protokol; C2 menulis klien-peladen soket; C3 menerapkan praktik keamanan dasar | model lapisan, TCP/IP, soket, kriptografi dasar, ancaman umum | laboratorium, ujian |
+| KUL-I-301 | C1 menjelaskan lapisan protokol; C2 menulis klien-peladen soket; C3 menerapkan praktik keamanan dasar; C4 mengenali risiko rantai pasok perangkat lunak, termasuk paket fiktif yang disarankan kode hasil AI | model lapisan, TCP/IP, soket, kriptografi dasar, ancaman umum, pengantar SSDF, rantai pasok dan pemeriksaan paket sebelum dipasang | laboratorium, ujian |
 | KUL-I-302 | C1 menulis program konkuren; C2 menjelaskan sistem terdistribusi dan konsistensi; C3 memanfaatkan layanan cloud | utas, sinkronisasi, model terdistribusi, kontainer, layanan cloud | proyek, laboratorium |
-| KUL-I-303 | C1 menerapkan pencarian dan pembelajaran terbimbing; C2 mengevaluasi model; C3 membahas etika dan bias | pencarian, regresi dan klasifikasi, evaluasi, jaringan saraf dasar, etika | proyek, ujian |
+| KUL-I-303 | C1 menerapkan pencarian dan pembelajaran terbimbing; C2 mengevaluasi model; C3 membahas etika dan bias; C4 memperkirakan biaya komputasi dan energi pelatihan dan pemakaian model secara kasar dengan menyebut ketidakpastiannya | pencarian, regresi dan klasifikasi, evaluasi, jaringan saraf dasar, etika, biaya komputasi dan energi (butir singkat; angka bervariasi dan tidak pasti) | proyek, ujian |
 | KUL-I-304 | C1 merancang antarmuka berbasis pengguna; C2 mengevaluasi kebergunaan dan aksesibilitas | prinsip rancangan, evaluasi, aksesibilitas | proyek rancangan |
-| KUL-I-305 | C1 menalar kasus etika profesi; C2 menjelaskan hak cipta, lisensi, dan pelindungan data pribadi | etika, lisensi, privasi, dampak sosial, profesi | studi kasus, esai |
+| KUL-I-305 | C1 menalar kasus etika profesi; C2 menjelaskan hak cipta, lisensi, dan pelindungan data pribadi; C3 menjelaskan tata kelola pemakaian AI, termasuk hak cipta dan lisensi keluaran AI (status hukum masih berkembang) | etika, lisensi, privasi, dampak sosial, profesi, tata kelola AI (pedoman etika kecerdasan artifisial nasional SE 9/2023, kebijakan pemakaian AI di tempat kerja) | studi kasus, esai |
 | KUL-I-306 | C1 menjelaskan dasar grafika; C2 membuat visual interaktif sederhana | rendering dasar, transformasi, interaksi | proyek |
 | KUL-I-307 | C1 membangun alur data; C2 menerapkan model terlatih pada data | ETL, fitur, model, evaluasi, penyajian | proyek |
-| KUL-I-401 | C1 mengerjakan produk perangkat lunak dalam tim; C2 mengelola proyek; C3 menyajikan dan mempertanggungjawabkan hasil | kapstone dengan pemangku kepentingan, tinjau kode, rilis, dokumentasi | proyek, demo, sidang |
+| KUL-I-401 | C1 mengerjakan produk perangkat lunak dalam tim; C2 mengelola proyek; C3 menyajikan dan mempertanggungjawabkan hasil; C4 menetapkan dan menjalankan kebijakan AI tim | kapstone dengan pemangku kepentingan, tinjau kode, rilis, dokumentasi, kebijakan AI tim dan log pemakaian, tinjauan manusia wajib atas kode yang digabung | proyek, demo, sidang dengan tanya jawab tentang kode sendiri |
+
+Catatan rekayasa perangkat lunak berbantuan AI (v1.1): pemrograman berbantuan
+AI di sini berarti mahasiswa membaca, menguji, memahami, dan bertanggung jawab
+atas setiap baris yang dipakai (bagian 6.5). Pengenalannya diintegrasikan pada
+mata kuliah yang sudah ada dan **tidak menambah SKS**: 3-4 minggu pada
+`KUL-I-204` (beban S4 tetap 9 SKS), kebijakan dan log pada `KUL-I-401`, rantai
+pasok pada `KUL-I-301`, hak cipta dan tata kelola pada `KUL-I-305`, serta biaya
+komputasi pada `KUL-I-303`. Pengenalan ini dimulai setelah `KUL-I-102` dan
+gerbang kesiapan (bagian 6.4). Dampak tiap butir terhadap belajar dan
+produktivitas belum diukur di kelas `[belum terverifikasi]`.
 
 Catatan KA: jalur I tidak menyentuh unit tertentu di dalam KA karena unit
 CS2023 tidak terverifikasi (`riset.md` bagian 4).
@@ -253,7 +269,9 @@ CS2023 tidak terverifikasi (`riset.md` bagian 4).
 - Pokok bahasan: templat kode, I/O cepat, pustaka standar, pengurutan dan
   pencarian biner, greedy, DP dasar, graf dasar (BFS, DFS).
 - Asesmen: lima kontes mingguan perorangan (soal tertaut, bukan disalin),
-  analisis pascakontes.
+  analisis pascakontes. Kebijakan AI: Merah saat kontes; setelah kontes, AI
+  boleh menjelaskan solusi dengan pengungkapan, lalu mahasiswa mengerjakan
+  ulang (*re-solve*) tanpa AI.
 - KA CS2023: AL, SDF.
 
 **KUL-K-301 Pemrograman Kompetitif II (2 SKS)**
@@ -264,7 +282,9 @@ CS2023 tidak terverifikasi (`riset.md` bagian 4).
   dengan analisis kebenaran.
 - Pokok bahasan: DP lanjutan, graf lanjutan, teori bilangan, struktur data
   lanjutan, string, geometri dasar.
-- Asesmen: kontes tim, tugas analisis algoritma.
+- Asesmen: kontes tim, tugas analisis algoritma. Kebijakan AI: Merah saat
+  kontes; setelah kontes, AI untuk menjelaskan solusi dengan pengungkapan dan
+  *re-solve* tanpa AI.
 - KA CS2023: AL, MSF.
 
 **KUL-K-401 Studio Tim Kompetisi (2 SKS)**
@@ -277,7 +297,9 @@ CS2023 tidak terverifikasi (`riset.md` bagian 4).
   yang gagal. Format "tim tiga orang, satu komputer, lima jam" mengikuti aturan
   regional ICPC yang dibuka (`riset.md` bagian 5) tetapi dipakai hanya sebagai
   bentuk latihan `[asumsi]`.
-- Asesmen: simulasi kontes, penilaian pelatih, refleksi.
+- Asesmen: simulasi kontes, penilaian pelatih, refleksi. Kebijakan AI: Merah
+  saat simulasi kontes; setelah kontes, AI untuk menjelaskan solusi dengan
+  pengungkapan dan *re-solve* tanpa AI.
 - KA CS2023: AL, SEP (kerja tim).
 
 ## 4. Pemetaan
@@ -334,20 +356,22 @@ terbuka).
 
 ### 5.1 Dari SMA
 
+Pengakuan atas pembelajaran di SMA tidak otomatis dan tidak berlaku untuk mata kuliah utuh: bukti yang dibawa mahasiswa diperiksa per CPMK. Bukti yang tersedia di setiap jalur `sma-coding` adalah portofolio akhir (`A-XII2-M13`, `B-XII2-M13`, `C-XII2-M13`, `D-XII2-M13`, `E-XII2-M12`) dan riwayat Git; pemeriksaannya lewat uji penempatan berupa ujian praktik tanpa AI (Merah, bagian 6.3), wawancara kode singkat, dan gerbang kesiapan (bagian 6.4). Kebijakan AI SMA bebas dengan etika (`sma-coding` bagian 7.4) sedangkan mata kuliah dasar di sini Kuning, sehingga gerbang kesiapan dikerjakan lebih dulu pada mahasiswa berlatar SMA. Tata cara pengakuan ditetapkan perguruan tinggi `[belum terverifikasi]`; yang dirancang di sini hanya isi bukti dan peta CPMK `[asumsi]`.
+
 | Dari | Ke | Dasar dan syarat |
 | --- | --- | --- |
-| sma-coding jalur A (C++ algoritmik), v1.2 | KUL-I-101, KUL-I-102, KUL-K-201 | Pengakuan lewat rekognisi pembelajaran lampau (Pasal 14 ayat (3) huruf c); bukti berupa portofolio dan uji penempatan; tata cara ditetapkan perguruan tinggi `[belum terverifikasi]`. Jalur A dan jalur K punya topik yang sama dengan rumpun OSN di `data/osn/topic-families.json` (mis. struktur data, graph-tree, search-sort, rekursi). |
-| sma-coding jalur B (web, JS/TS) | KUL-I-205 | Portofolio web; bahasa sama (TypeScript) `[asumsi]`. |
-| sma-coding jalur C (IoT), D (AI), E (kuantum) | KUL-U-201 (C), KUL-U-202 dan KUL-I-303 (D), pengayaan (E) | Jalur D dan E di sma-coding adalah pengayaan di luar CP; pengakuan di kuliah tidak otomatis `[asumsi]`. |
+| sma-coding jalur A (C++ algoritmik) | KUL-I-101 (sebagian), KUL-I-102 (sebagian), KUL-I-201 (sebagian), KUL-K-201 | Pengakuan per CPMK, bukan per mata kuliah. `KUL-I-101`: C1 dan fungsi serta larik pada C2 dikenali (`A-X1-M9` sampai `A-X1-M12`, `A-X2-M1` sampai `A-X2-M3`); penunjuk atau rujukan, debugging dengan alat, dan Git tidak diajarkan di jalur A (Git hanya di `B-X2-M12` dan `B-XI1-M12`), sehingga C3 dan C4 serta bagian penunjuk pada C2 tetap dipelajari. `KUL-I-102`: struktur linear, antrian prioritas, graf, dan DSU dikenali (`A-X2-M6`, `A-X2-M7`, `A-XI1-M10`, `A-XI2-M5` sampai `A-XI2-M8`, `A-XII1-M4`); daftar berantai dan tabel hash tidak tercantum di jalur A. `KUL-I-201`: greedy, DP, dan graf dikenali (`A-XI1-M5`, `A-XI1-M6`, `A-XI2-M1` sampai `A-XI2-M3`) tetapi prasyaratnya `KUL-I-102` dan `KUL-I-103`. `KUL-K-201`: topik sama dengan rumpun OSN di `data/osn/topic-families.json` (mis. struktur data, graph-tree, search-sort, rekursi), dengan seleksi `[asumsi]`. C++ sama dengan `KUL-I-101`; berbeda dengan Python di jalur U. |
+| sma-coding jalur B (web, JS/TS) | KUL-I-205 (sebagian) | Portofolio web; bahasa sama (TypeScript) `[asumsi]`. Server HTTP, API JSON, validasi, dan keamanan aplikasi (`B-XI2-M1` sampai `B-XI2-M3`, `B-XI2-M10`) dikenali; basis data tidak diajarkan di jalur B padahal prasyarat `KUL-I-205` adalah `KUL-I-202`, sehingga pengakuan hanya atas CPMK yang dapat berdiri sendiri. |
+| sma-coding jalur C (IoT), D (AI), E (kuantum) | KUL-U-201 (C, sebagian), KUL-U-102 (D, sebagian), KUL-U-202 dan KUL-I-303 (D, sebagian), pengayaan (E) | Jalur D dan E di sma-coding adalah pengayaan di luar CP; pengakuan di kuliah tidak otomatis `[asumsi]`. Jalur C: JSON dan HTTP (`C-XI2`) beririsan dengan C2 `KUL-U-201`. Jalur D: Python, pembersihan data, statistik deskriptif, dan evaluasi (`D-XI1-M2` sampai `D-XI1-M7`, `D-XI1-M10`) beririsan dengan C1 sampai C2 `KUL-U-102`; D memakai Python sedangkan jalur I memakai C++. |
 | Pembinaan OSN Informatika (korpus `data/osn/`) | KUL-K-201 | Selaras topik; peserta OSN tidak otomatis memenuhi prasyarat, ada uji penempatan `[asumsi]`. |
-| Blok fondasi kelas X sma-coding | KUL-U-101 | Tumpang tindih berpikir komputasional; prodi menentukan pengakuan. |
+| Blok fondasi kelas X sma-coding (FND-X1-M1..M7) | KUL-I-203 (sebagian), KUL-I-301 (sebagian), KUL-U-202 (sebagian) | Fondasi memuat sistem komputer, jaringan, dan keamanan dasar, bukan berpikir komputasional: irisannya dengan `KUL-I-203` (representasi data, masukan-proses-keluaran, sistem operasi; `FND-X1-M1` sampai `FND-X1-M3`), `KUL-I-301` (konsep jaringan dan keamanan dasar; `FND-X1-M4` sampai `FND-X1-M6`), dan `KUL-U-202` (privasi dan kebijakan AI; `FND-X1-M6`). Tidak ada padanan di jalur U untuk fondasi selain `KUL-U-202`; prodi menentukan pengakuan. Baris ini menggantikan pemetaan ke `KUL-U-101` pada v1.1.1, yang tidak tepat. |
 
 ### 5.2 Ke dunia kerja
 
 | Ke | Bagaimana | Catatan |
 | --- | --- | --- |
 | Magang | Pasal 16 ayat (1) memasukkan magang sebagai bentuk pemenuhan beban belajar; Pasal 18 ayat (4) dan (7) memberi dasar pemenuhan sebagian beban di luar program studi | Durasi dan beban ditetapkan perguruan tinggi (Pasal 18 ayat (6)). Magang bukan mata kuliah draf ini `[asumsi]`. |
-| Program dewasa-coding (disusun paralel; belum ada di repositori saat draf ini ditulis) | Portofolio proyek KUL-U-301 dan KUL-I-401 menjadi bahan masuk; tamatan jalur U dapat melanjutkan ke jalur kerja di dewasa-coding | Rujukan silang dilengkapi setelah program itu ada; tidak diklaim sekarang. |
+| Program dewasa-coding (jalur `PRO`; silabus v1.2, issue #131) | Portofolio proyek `KUL-U-301` dan `KUL-I-401` menjadi bukti masuk; modul `DW-PRO-*` yang dapat dilewati atau dipadatkan ditentukan per profil (jalur U, I, K) di `dewasa-coding` bagian 6.2 | Bukan alih kredit dan bukan sertifikat: pengakuan terjadi di program dewasa-coding, atas dasar bukti yang diperiksa, bukan transkrip. Jalur `PKJ` dan `BIS` belum dirancang `[asumsi]`. |
 | Sertifikasi profesi | Pasal 7 huruf c menyebut "sertifikat profesi" sebagai salah satu tujuan CPL | Skema sertifikasi tertentu (mis. SKKNI) `[belum terverifikasi]`; tidak dipetakan. |
 | Pendidikan lanjutan | Pasal 21 mengatur percepatan pembelajaran bagi mahasiswa berkemampuan luar biasa (dibaca sebagian) | Tidak dikembangkan di draf ini. |
 
@@ -381,14 +405,46 @@ kode sendiri, (e) ketentuan pengungkapan.
 
 | Tingkat | Aturan | Dipakai pada |
 | --- | --- | --- |
-| Hijau | AI boleh dipakai dengan pengungkapan ringkas (alat, tujuan) | Proyek, eksplorasi, dokumentasi |
-| Kuning | AI boleh menjelaskan konsep, tidak boleh menghasilkan solusi yang diserahkan | Tugas dasar pemrograman KUL-U-101, KUL-I-101, KUL-I-102 |
-| Merah | AI tidak boleh | Ujian praktik, kontes, seleksi, tugas penilaian kemampuan dasar |
+| Hijau | AI boleh dipakai dengan pengungkapan ringkas (alat, tujuan) dan log pemakaian wajib (alat dan versi, tujuan, perintah, bagian keluaran yang dipakai); mahasiswa siap menjawab wawancara kode singkat | Proyek, eksplorasi, dokumentasi, termasuk KUL-U-202, KUL-I-204, KUL-I-401 |
+| Kuning | AI boleh menjelaskan konsep, tidak boleh menghasilkan solusi yang diserahkan; dipakai hanya sesudah gerbang kesiapan (bagian 6.4) | Tugas dasar pemrograman KUL-U-101, KUL-I-101, KUL-I-102 |
+| Merah | AI tidak boleh | Ujian praktik, kontes (jalur K: KUL-K-201, KUL-K-301, KUL-K-401), seleksi, tugas penilaian kemampuan dasar |
 
 Dosen menetapkan tingkat per tugas dan menuliskannya di lembar tugas.
 Pemakaian layanan AI daring oleh mahasiswa memerlukan kebijakan privasi
 (bagian 8): dilarang memasukkan data pribadi atau data sensitif ke layanan
 eksternal `[asumsi]`.
+
+### 6.4 Penguatan kebijakan AI (v1.1)
+
+Penguatan ini `[asumsi]` dan `[karangan]` (keputusan pemilik 2026-11-19, bagian
+9.1); kebijakan ini khusus program `kuliah-coding` dan bukan kerangka lintas
+program. Dasar sumber ada di
+[`docs/riset/ai-rekayasa-perangkat-lunak.md`](../../riset/ai-rekayasa-perangkat-lunak.md)
+bagian 4 sampai 6; bukti bahwa tiap langkah di bawah benar-benar menahan
+penyalahgunaan AI belum dibuka `[belum terverifikasi]`.
+
+| Butir | Aturan |
+| --- | --- |
+| Log pemakaian | Pada tingkat Hijau, log wajib: alat dan versi, tujuan, perintah, dan bagian keluaran yang dipakai. Log disimpan mahasiswa di repositorinya sendiri, bukan di repositori ini (bagian 8). |
+| Wawancara kode | Dosen dapat mewawancarai mahasiswa singkat tentang kode yang diserahkan; mahasiswa menjelaskan dan memodifikasi bagian kodenya sendiri. |
+| Ujian praktik tanpa AI | Ujian praktik langsung berlaku Merah, dengan bobot menurut bagian 6.1. |
+| Gerbang kesiapan | Sebelum memakai asisten AI untuk menulis kode, mahasiswa dapat (1) menelusuri (*trace*) program pendek, (2) menulis satu uji yang gagal bila kode salah, dan (3) menjelaskan kode dengan kata sendiri. Pada mata kuliah dasar (Kuning) gerbang ini dipenuhi lebih dulu. |
+| Data dan hak cipta | Data pribadi, kata sandi, dan kunci tidak dimasukkan ke layanan AI. Hak cipta dan lisensi keluaran AI: status hukum masih berkembang; mahasiswa mengungkapkan pemakaian dan memeriksa lisensi kode yang dipakai. |
+| Energi dan biaya komputasi | Butir singkat: energi per perintah kecil tetapi bervariasi puluhan kali lipat antar model dan metode ukur; tidak ada angka terverifikasi per tugas pemrograman `[belum terverifikasi]`. Mahasiswa memilih alat sesuai kebutuhan dan tidak mengulang pembangkitan tanpa menjalankan uji. |
+
+### 6.5 Glosarium istilah AI (v1.1)
+
+- **Pemrograman berbantuan AI**: mahasiswa memakai asisten AI dan
+  membaca, menguji, memahami, serta bertanggung jawab atas setiap baris yang
+  dipakai. Inilah yang dilatih (`KUL-I-204`, `KUL-U-202`).
+- **Vibe coding**: menerima keluaran AI tanpa menelaah kodenya. Hanya dibahas
+  sebagai istilah dan risiko; bukan praktik yang diajarkan dan bukan
+  capaian pembelajaran.
+- **AI-native engineer**: istilah tidak baku yang beredar; tidak dipakai
+  sebagai label capaian atau profil lulusan.
+- **Agen kode**: agen yang merencanakan, menjalankan, dan menguji dengan
+  intervensi manusia minimal; hanya pengenalan terbatas pada `KUL-I-204`,
+  dengan batas kewenangan dan tinjauan manusia.
 
 ## 7. Bahasa dan alat; sarana lab dan cloud
 
@@ -452,6 +508,8 @@ huruf b: tanpa membedakan latar belakang ekonomi).
   dapat di bawah 18 tahun `[asumsi]`; kebijakan per perguruan tinggi.
 - Modul kuliah tidak mensyaratkan akun mahasiswa pada layanan pihak ketiga
   `[asumsi]`.
+- Log pemakaian AI (bagian 6.4) milik mahasiswa; tidak ada log, perintah, atau
+  keluaran AI mahasiswa yang disimpan di repositori ini.
 
 ## 9. Keputusan pemilik atas pertanyaan terbuka (2026-11-19)
 
@@ -472,12 +530,25 @@ pertanyaan terbuka draf v0.1 terjawab dengan opsi rekomendasinya.
 | 9 | Lab dan cloud | **D**: lab kampus dan perangkat milik mahasiswa; cloud hanya untuk KUL-I-302 dan proyek tertentu (bagian 7.3). |
 | 10 | Hubungan ke dewasa-coding | **A**: ditautkan setelah program itu ada (bagian 5.2). |
 
+### 9.1 Keputusan pemilik atas revisi v1.1 (2026-11-19, issue #139)
+
+Usulan U-09 sampai U-12 pada riset AI diterapkan dengan opsi rekomendasi.
+
+| Usulan | Keputusan |
+| --- | --- |
+| U-09 | **A**: pokok bahasan `KUL-U-202` diperluas dalam 2 SKS yang ada (bagian 3.1). |
+| U-10 | **A**: rekayasa perangkat lunak berbantuan AI diintegrasikan 3-4 minggu pada `KUL-I-204`, plus `KUL-I-401`, `KUL-I-301`, `KUL-I-305`, `KUL-I-303`; tanpa menambah SKS (46 SKS jalur I dan 66 SKS total tetap). |
+| U-11 | **A**: kebijakan tiga tingkat diperkuat dengan log pemakaian dan wawancara kode (bagian 6.3 dan 6.4). |
+| U-12 | **A**: jalur K Merah saat kontes; setelah kontes AI untuk menjelaskan solusi dengan pengungkapan dan *re-solve* tanpa AI (bagian 3.3). |
+| Lintas usulan | Kebijakan AI disusun per program; energi dan biaya komputasi sebagai butir singkat dengan ketidakpastian; istilah "vibe coding" dan "AI-native engineer" hanya di glosarium (bagian 6.5). |
+
 ## 10. Sumber dan batasan
 
 - Sumber: [`riset.md`](riset.md) (Permendiktisaintek 39/2025 terbaca penuh;
   17 KA CS2023; aturan regional ICPC; APTIKOM tidak dipakai; MBKM dari berita
   sekunder).
-- Rujukan repositori: `docs/programs/sma-coding/silabus.md` (v1.2, disetujui),
+- Rujukan repositori: `docs/riset/ai-rekayasa-perangkat-lunak.md` (dasar revisi v1.1),
+  `docs/programs/sma-coding/silabus.md` (v1.2, disetujui),
   `data/osn/topic-families.json`, ADR-0004, ADR-0006, ADR-0007.
 - Batasan: rumusan CPMK, topik, SKS, dan semester adalah karangan; tidak ada
   CPL resmi, tidak ada unit CS2023, tidak ada aturan ICPC Indonesia, tidak ada
@@ -489,5 +560,8 @@ pertanyaan terbuka draf v0.1 terjawab dengan opsi rekomendasinya.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v1.2.0 | 2026-11-19 | Revisi minor yang disetujui pemilik lewat keputusan #177: bagian 5.1 (dari SMA): pengakuan per CPMK dengan bukti portofolio, riwayat Git, ujian praktik tanpa AI, wawancara kode, dan gerbang kesiapan; jalur A dipetakan juga ke `KUL-I-201`, jalur D ke `KUL-U-102`; rujukan blok fondasi ke `KUL-U-101` dikoreksi (fondasi memuat sistem komputer, jaringan, dan keamanan: `KUL-I-203`, `KUL-I-301`, `KUL-U-202`); bagian 5.2, baris dewasa-coding, merujuk jalur `PRO` dan bagian 6.2 silabus dewasa-coding v1.2 (portofolio `KUL-U-301` dan `KUL-I-401` menjadi bukti masuk; modul `DW-PRO-*` yang dilewati atau dipadatkan ditentukan per profil); mata kuliah, SKS, jalur, dan KA tidak berubah (#177). |
+| v1.1.1 | 2026-11-19 | Revisi patch: kalimat status, keputusan pemilik #165; isi kurikulum tidak berubah. |
+| v1.1.0 | 2026-11-19 | Rekayasa perangkat lunak berbantuan AI (issue #139, keputusan pemilik U-09 sampai U-12): `KUL-U-202` diperluas; `KUL-I-204`, `KUL-I-401`, `KUL-I-301`, `KUL-I-305`, `KUL-I-303` memuat butir AI tanpa menambah SKS; tiga tingkat AI diperkuat dengan log, wawancara kode, ujian praktik tanpa AI, gerbang kesiapan; jalur K Merah saat kontes; bagian 6.4 (penguatan), 6.5 (glosarium), 9.1 (keputusan). Jumlah mata kuliah, SKS, jalur, dan KA tidak berubah. |
 | v1.0.0 | 2026-11-19 | Disetujui pemilik program beserta rekomendasi penyusun (issue #130). Berkas diganti nama dari `silabus-draf.md`; status menjadi disetujui; pertanyaan terbuka (bagian 9) diganti keputusan pemilik; isi rencana (bagian 1-8) tidak berubah. |
 | v0.1.0 | 2026-11-19 | Draf awal (issue #130): tiga jalur, 24 mata kuliah, pemetaan KA CS2023, jembatan, asesmen, AI, privasi, alat, pertanyaan terbuka. |

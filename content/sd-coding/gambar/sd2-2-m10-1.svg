@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 340" width="640" height="340" role="img" aria-labelledby="t d">
+  <title id="t">Dua pesan untuk Lila: pesan baik dan pesan menyakitkan</title>
+  <desc id="d">Dua kotak pesan. Kiri berwarna hijau: Gambarmu bagus, aku suka warnanya, dengan wajah senang dari garis sederhana. Kanan berwarna merah: Gambarmu jelek, dengan wajah sedih dari garis sederhana. Di bawah ada pesan: baca sekali, tanya aku senang menerimanya.</desc>
+  <rect width="640" height="340" fill="#ffffff"/>
+  <defs>
+    <marker id="ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a5d9f"/>
+    </marker>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#b3261e"/>
+    </marker>
+    <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1b7a3d"/>
+    </marker>
+    <marker id="ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#222222"/>
+    </marker>
+  </defs>
+  <rect x="20" y="20" width="290" height="210" rx="12" fill="#eef8f0" stroke="#1b7a3d" stroke-width="3"/>
+  <text x="165" y="52" font-family="sans-serif" font-size="17" fill="#1b7a3d" text-anchor="middle" font-weight="bold">Pesan A</text>
+  <text x="165" y="90" font-family="sans-serif" font-size="16" fill="#222222" text-anchor="middle">Gambarmu bagus,</text>
+  <text x="165" y="112" font-family="sans-serif" font-size="16" fill="#222222" text-anchor="middle">aku suka warnanya.</text>
+  <circle cx="165" cy="165" r="36" fill="#fff7d6" stroke="#222222" stroke-width="3"/>
+  <circle cx="152.4" cy="157.8" r="3" fill="#222222" stroke="#222222" stroke-width="1"/>
+  <circle cx="177.6" cy="157.8" r="3" fill="#222222" stroke="#222222" stroke-width="1"/>
+  <path d="M148.8,174.0 Q165,193.8 181.2,174.0" fill="none" stroke="#222222" stroke-width="3"/>
+  <rect x="330" y="20" width="290" height="210" rx="12" fill="#fdeeee" stroke="#b3261e" stroke-width="3"/>
+  <text x="475" y="52" font-family="sans-serif" font-size="17" fill="#b3261e" text-anchor="middle" font-weight="bold">Pesan B</text>
+  <text x="475" y="100" font-family="sans-serif" font-size="16" fill="#222222" text-anchor="middle">Gambarmu jelek.</text>
+  <circle cx="475" cy="165" r="36" fill="#fff7d6" stroke="#222222" stroke-width="3"/>
+  <circle cx="462.4" cy="157.8" r="3" fill="#222222" stroke="#222222" stroke-width="1"/>
+  <circle cx="487.6" cy="157.8" r="3" fill="#222222" stroke="#222222" stroke-width="1"/>
+  <path d="M458.8,186.6 Q475,168.6 491.2,186.6" fill="none" stroke="#222222" stroke-width="3"/>
+  <rect x="90" y="262" width="460" height="54" rx="27" fill="#fff3d6" stroke="#b86a00" stroke-width="2"/>
+  <text x="320" y="286" font-family="sans-serif" font-size="17" fill="#222222" text-anchor="middle" font-weight="bold">Baca sekali. Tanya: aku senang</text>
+  <text x="320" y="306" font-family="sans-serif" font-size="17" fill="#222222" text-anchor="middle" font-weight="bold">menerimanya?</text>
+</svg>

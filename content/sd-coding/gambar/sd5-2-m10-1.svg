@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 250" width="560" height="250" role="img" aria-labelledby="t d">
+  <title id="t">Aturan menaruh kartu bulat ke kotak A</title>
+  <desc id="d">Sembilan kartu di kiri: tiga lingkaran, tiga kotak, dan tiga segitiga. Panah ke kotak A membawa tiga lingkaran. Panah ke kotak B membawa enam kartu lain.</desc>
+  <rect width="560" height="250" fill="#ffffff"/>
+  <g stroke="#444444" stroke-width="2">
+    <circle cx="40" cy="50" r="16" fill="#e57373"/>
+    <circle cx="90" cy="50" r="16" fill="#64b5f6"/>
+    <circle cx="140" cy="50" r="16" fill="#ffd54f"/>
+    <rect x="24" y="104" width="32" height="32" rx="3" fill="#e57373"/>
+    <rect x="74" y="104" width="32" height="32" rx="3" fill="#64b5f6"/>
+    <rect x="124" y="104" width="32" height="32" rx="3" fill="#ffd54f"/>
+    <polygon points="24,206 40,174 56,206" fill="#e57373"/>
+    <polygon points="74,206 90,174 106,206" fill="#64b5f6"/>
+    <polygon points="124,206 140,174 156,206" fill="#ffd54f"/>
+  </g>
+  <g stroke="#444444" stroke-width="2" fill="none">
+    <line x1="175" y1="50" x2="360" y2="50"/>
+    <line x1="175" y1="140" x2="360" y2="180"/>
+  </g>
+  <polygon points="372,50 358,43 358,57" fill="#444444"/>
+  <polygon points="372,182 358,173 357,187" fill="#444444"/>
+  <text x="270" y="40" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">bila bulat</text>
+  <text x="250" y="190" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">bila tidak</text>
+  <rect x="380" y="15" width="170" height="70" rx="8" fill="#f4f8fd" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="465" y="42" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">kotak A</text>
+  <text x="465" y="64" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">3 lingkaran</text>
+  <rect x="380" y="145" width="170" height="90" rx="8" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+  <text x="465" y="172" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">kotak B</text>
+  <text x="465" y="194" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">3 kotak dan</text>
+  <text x="465" y="212" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">3 segitiga</text>
+</svg>

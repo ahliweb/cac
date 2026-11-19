@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 540" width="600" height="540" role="img" aria-labelledby="t d">
+  <title id="t">Gambar jadi simbol</title>
+  <desc id="d">Di atas ada empat kartu arti simbol: bintang berarti mulai, panah lurus ke atas berarti maju, panah melengkung ke kiri berarti belok kiri, dan rumah berarti sampai. Di bawahnya ada pesan sandi tujuh kartu: bintang, maju, maju, belok kiri, maju, maju, rumah. Paling bawah ada kisi empat kali empat petak dengan bintang di pojok kanan bawah dan satu robot di sebelahnya.</desc>
+  <rect width="600" height="540" fill="#ffffff"/>
+  <text x="300" y="26" font-family="sans-serif" font-size="20" text-anchor="middle" fill="#333333">arti simbol</text>
+  <rect x="30" y="40" width="100" height="74" rx="10" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <polygon points="80.0,53.0 86.3,68.3 102.8,69.6 90.3,80.3 94.1,96.4 80.0,87.8 65.9,96.4 69.7,80.3 57.2,69.6 73.7,68.3" fill="#ffca28" stroke="#333333" stroke-width="3" stroke-linejoin="round"/>
+  <text x="80" y="134" font-family="sans-serif" font-size="18" text-anchor="middle" fill="#333333">mulai</text>
+  <rect x="170" y="40" width="100" height="74" rx="10" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <path d="M220 95 V59 M210 69 L220 57 L230 69" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="220" y="134" font-family="sans-serif" font-size="18" text-anchor="middle" fill="#333333">maju</text>
+  <rect x="310" y="40" width="100" height="74" rx="10" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <path d="M368 95 V75 Q368 67 360 67 H342 M350 57 L340 67 L350 77" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="360" y="134" font-family="sans-serif" font-size="18" text-anchor="middle" fill="#333333">belok kiri</text>
+  <rect x="450" y="40" width="100" height="74" rx="10" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <rect x="482" y="77.4" width="36" height="21.599999999999998" fill="#ffccbc" stroke="#333333" stroke-width="3"/>
+  <polygon points="477.5,77.4 500,57.599999999999994 522.5,77.4" fill="#e57373" stroke="#333333" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="495.5" y="87.3" width="9.0" height="11.700000000000001" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="500" y="134" font-family="sans-serif" font-size="18" text-anchor="middle" fill="#333333">sampai</text>
+  <line x1="20" y1="148" x2="580" y2="148" stroke="#999999" stroke-width="2" stroke-dasharray="4 6"/>
+  <text x="300" y="174" font-family="sans-serif" font-size="20" text-anchor="middle" fill="#333333">pesan sandi</text>
+  <rect x="20" y="186" width="70" height="70" rx="10" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <polygon points="55.0,201.0 60.3,213.7 74.0,214.8 63.6,223.8 66.8,237.2 55.0,230.0 43.2,237.2 46.4,223.8 36.0,214.8 49.7,213.7" fill="#ffca28" stroke="#333333" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="100" y="186" width="70" height="70" rx="10" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <path d="M135 239 V203 M125 213 L135 201 L145 213" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="180" y="186" width="70" height="70" rx="10" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <path d="M215 239 V203 M205 213 L215 201 L225 213" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="260" y="186" width="70" height="70" rx="10" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <path d="M303 239 V219 Q303 211 295 211 H277 M285 201 L275 211 L285 221" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="340" y="186" width="70" height="70" rx="10" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <path d="M375 239 V203 M365 213 L375 201 L385 213" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="420" y="186" width="70" height="70" rx="10" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <path d="M455 239 V203 M445 213 L455 201 L465 213" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="500" y="186" width="70" height="70" rx="10" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <rect x="520" y="221.0" width="30" height="18.0" fill="#ffccbc" stroke="#333333" stroke-width="3"/>
+  <polygon points="516.25,221.0 535,204.5 553.75,221.0" fill="#e57373" stroke="#333333" stroke-width="3" stroke-linejoin="round"/>
+  <rect x="531.25" y="229.25" width="7.5" height="9.75" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <line x1="20" y1="274" x2="580" y2="274" stroke="#999999" stroke-width="2" stroke-dasharray="4 6"/>
+  <rect x="20" y="292" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="76" y="292" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="132" y="292" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="188" y="292" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="20" y="348" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="76" y="348" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="132" y="348" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="188" y="348" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="20" y="404" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="76" y="404" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="132" y="404" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="188" y="404" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="20" y="460" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="76" y="460" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="132" y="460" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <rect x="188" y="460" width="56" height="56" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <polygon points="216.0,468.0 221.3,480.7 235.0,481.8 224.6,490.8 227.8,504.2 216.0,497.0 204.2,504.2 207.4,490.8 197.0,481.8 210.7,480.7" fill="#ffca28" stroke="#333333" stroke-width="3" stroke-linejoin="round"/>
+  <g transform="translate(330,480)">
+    <rect x="-20" y="-20" width="40" height="40" rx="8" fill="#b3e5fc" stroke="#333333" stroke-width="4"/>
+    <path d="M-12 -2 L0 -18 L12 -2 Z" fill="#333333"/>
+    <circle cx="-8" cy="10" r="4" fill="#333333"/><circle cx="8" cy="10" r="4" fill="#333333"/>
+  </g>
+  <text x="330" y="528" font-family="sans-serif" font-size="18" text-anchor="middle" fill="#333333">robot</text>
+  <text x="440" y="400" font-family="sans-serif" font-size="18" text-anchor="middle" fill="#333333">robot berhenti di mana?</text>
+</svg>

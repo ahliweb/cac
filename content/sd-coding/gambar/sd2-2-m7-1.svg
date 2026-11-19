@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 430" width="640" height="430" role="img" aria-labelledby="t d">
+  <title id="t">Mengurutkan lingkaran dari kecil ke besar</title>
+  <desc id="d">Baris pertama: tiga lingkaran dari kecil ke besar dengan panah ke kanan bertanda lebih besar. Baris kedua: tiga lingkaran yang sama dari besar ke kecil, bertanda bukan kecil ke besar. Baris ketiga: lima lingkaran acak dengan kotak kosong di bawah tiap lingkaran untuk nomor 1 sampai 5.</desc>
+  <rect width="640" height="430" fill="#ffffff"/>
+  <defs>
+    <marker id="ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a5d9f"/>
+    </marker>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#b3261e"/>
+    </marker>
+    <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1b7a3d"/>
+    </marker>
+    <marker id="ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#222222"/>
+    </marker>
+  </defs>
+  <text x="20" y="22" font-family="sans-serif" font-size="15" fill="#2a5d9f" text-anchor="start" font-weight="bold">Contoh: kecil ke besar</text>
+  <circle cx="58" cy="80" r="18" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="3"/>
+  <circle cx="140" cy="80" r="28" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="3"/>
+  <circle cx="244" cy="80" r="40" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="3"/>
+  <line x1="310" y1="80" x2="420" y2="80" stroke="#2a5d9f" stroke-width="3" marker-end="url(#ab)"/>
+  <text x="365" y="66" font-family="sans-serif" font-size="14" fill="#2a5d9f" text-anchor="middle">lebih besar</text>
+  <text x="20" y="150" font-family="sans-serif" font-size="15" fill="#b3261e" text-anchor="start" font-weight="bold">Urutan dibalik: besar ke kecil</text>
+  <circle cx="80" cy="205" r="40" fill="#e8f1fb" stroke="#b3261e" stroke-width="3"/>
+  <circle cx="184" cy="205" r="28" fill="#e8f1fb" stroke="#b3261e" stroke-width="3"/>
+  <circle cx="266" cy="205" r="18" fill="#e8f1fb" stroke="#b3261e" stroke-width="3"/>
+  <text x="420" y="205" font-family="sans-serif" font-size="14" fill="#b3261e" text-anchor="middle">bukan kecil ke besar</text>
+  <text x="20" y="285" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="start" font-weight="bold">Soal: beri nomor 1 sampai 5, dari yang terkecil</text>
+  <circle cx="64" cy="345" r="34" fill="#e8f1fb" stroke="#222222" stroke-width="3"/>
+  <rect x="50" y="400" width="28" height="26" rx="0" fill="#ffffff" stroke="#888888" stroke-width="2"/>
+  <circle cx="128" cy="345" r="16" fill="#e8f1fb" stroke="#222222" stroke-width="3"/>
+  <rect x="114" y="400" width="28" height="26" rx="0" fill="#ffffff" stroke="#888888" stroke-width="2"/>
+  <circle cx="202" cy="345" r="44" fill="#e8f1fb" stroke="#222222" stroke-width="3"/>
+  <rect x="188" y="400" width="28" height="26" rx="0" fill="#ffffff" stroke="#888888" stroke-width="2"/>
+  <circle cx="284" cy="345" r="24" fill="#e8f1fb" stroke="#222222" stroke-width="3"/>
+  <rect x="270" y="400" width="28" height="26" rx="0" fill="#ffffff" stroke="#888888" stroke-width="2"/>
+  <circle cx="374" cy="345" r="52" fill="#e8f1fb" stroke="#222222" stroke-width="3"/>
+  <rect x="360" y="400" width="28" height="26" rx="0" fill="#ffffff" stroke="#888888" stroke-width="2"/>
+</svg>

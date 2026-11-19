@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="600" height="420" role="img" aria-labelledby="t d">
+  <title>Sebab dan akibat</title>
+  <desc id="d">Tiga gambar sebab di kiri: cangkir menuang air ke spons, tangan mendorong bola, dan awan dengan tetes hujan. Di kanan tiap gambar ada kotak kosong putus-putus berpanah. Di bagian bawah ada tiga kartu akibat untuk ditempel: spons dengan tetes air, bola dengan garis gerak, dan tanah dengan genangan.</desc>
+  <rect width="600" height="420" fill="#ffffff"/>
+  <!-- baris 1: air dituang ke spons -->
+  <g stroke="#333333" stroke-width="3" stroke-linejoin="round">
+    <rect x="50" y="75" width="110" height="34" rx="8" fill="#ffee58"/>
+    <path d="M100 18 L140 30 L128 56 L88 44 Z" fill="#e0e0e0"/>
+  </g>
+  <g fill="#1e88e5" stroke="#333333" stroke-width="2">
+    <path d="M122 60 q-5 9 0 12 q5 -3 0 -12 Z"/>
+    <path d="M132 66 q-5 9 0 12 q5 -3 0 -12 Z"/>
+  </g>
+  <path d="M212 70 H246 M234 58 L248 70 L234 82" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="262" y="30" width="150" height="80" rx="10" fill="none" stroke="#333333" stroke-width="4" stroke-dasharray="10 8"/>
+  <!-- baris 2: bola didorong -->
+  <g stroke="#333333" stroke-width="3" stroke-linejoin="round">
+    <rect x="40" y="152" width="40" height="28" rx="12" fill="#ffe0b2"/>
+    <circle cx="118" cy="166" r="26" fill="#e53935"/>
+  </g>
+  <path d="M82 166 H90 M84 158 L92 166 L84 174" fill="none" stroke="#333333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M212 166 H246 M234 154 L248 166 L234 178" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="262" y="126" width="150" height="80" rx="10" fill="none" stroke="#333333" stroke-width="4" stroke-dasharray="10 8"/>
+  <!-- baris 3: hujan turun -->
+  <g stroke="#333333" stroke-width="3" stroke-linejoin="round">
+    <circle cx="70" cy="238" r="20" fill="#cfd8dc"/>
+    <circle cx="100" cy="230" r="26" fill="#cfd8dc"/>
+    <circle cx="132" cy="240" r="20" fill="#cfd8dc"/>
+  </g>
+  <g fill="none" stroke="#1e88e5" stroke-width="4" stroke-linecap="round">
+    <path d="M70 266 V282"/>
+    <path d="M100 266 V286"/>
+    <path d="M130 266 V282"/>
+  </g>
+  <path d="M212 262 H246 M234 250 L248 262 L234 274" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="262" y="222" width="150" height="80" rx="10" fill="none" stroke="#333333" stroke-width="4" stroke-dasharray="10 8"/>
+  <!-- kartu akibat -->
+  <line x1="20" y1="316" x2="580" y2="316" stroke="#999999" stroke-width="2" stroke-dasharray="4 6"/>
+  <text x="300" y="338" font-family="sans-serif" font-size="18" text-anchor="middle" fill="#333333">kartu akibat untuk ditempel</text>
+  <rect x="40" y="350" width="150" height="62" rx="10" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <rect x="62" y="372" width="70" height="26" rx="8" fill="#ffee58" stroke="#333333" stroke-width="3"/>
+  <g fill="#1e88e5" stroke="#333333" stroke-width="2">
+    <path d="M148 362 q-5 9 0 12 q5 -3 0 -12 Z"/>
+    <path d="M162 376 q-5 9 0 12 q5 -3 0 -12 Z"/>
+  </g>
+  <rect x="225" y="350" width="150" height="62" rx="10" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <circle cx="320" cy="381" r="20" fill="#e53935" stroke="#333333" stroke-width="3"/>
+  <path d="M242 372 H286 M248 381 H290 M242 390 H286" stroke="#333333" stroke-width="4" stroke-linecap="round"/>
+  <rect x="410" y="350" width="150" height="62" rx="10" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <rect x="424" y="392" width="122" height="14" fill="#a1887f" stroke="#333333" stroke-width="2"/>
+  <ellipse cx="485" cy="392" rx="36" ry="9" fill="#1e88e5" stroke="#333333" stroke-width="3"/>
+</svg>

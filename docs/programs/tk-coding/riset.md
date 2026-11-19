@@ -1,6 +1,6 @@
 # Riset Pembelajaran Coding (Berpikir Komputasional) untuk Anak TK/PAUD
 
-- **Version:** v0.1.1
+- **Version:** v0.1.2
 - **Last updated:** 2026-11-19
 - **Status:** Riset pendukung (issue #127); silabus yang bersumber darinya disetujui pemilik 2026-11-19 ([`silabus.md`](silabus.md) v1.0.0). Dokumen ini bukan sumber corpus.
 - **Changeset:** Riset awal sumber resmi, panduan waktu layar, pendekatan, dan risiko untuk program `tk-coding`.
@@ -170,6 +170,18 @@ sehingga pemeliharaan jangka panjang tidak pasti, (3) ia memerlukan tablet
 (sarana yang banyak TK tidak punya), dan (4) memakai layar. Karena itu hanya
 dijadikan **opsi demonstrasi** (silabus bagian 8).
 
+### 4.2 Kiri dan kanan pada anak usia TK (dibuka 2026-11-19, #239)
+
+Dasar tujuan 4 silabus (instruksi arah) setelah `belok kanan` dikeluarkan. Ringkasan di bawah dibaca dari abstrak terindeks PubMed (teks lengkap tidak dibuka); angka dikutip dari abstrak.
+
+| Rujukan | Temuan (abstrak) | Dampak pada rencana |
+| --- | --- | --- |
+| Dellatolas dkk. (1998), *Cortex* 34(5):659-76 | Penguasaan kiri-kanan umumnya sekitar usia 6-7 tahun; pada anak prasekolah 5-6,4 tahun yang diminta menunjuk tangan kiri, mata kanan, telinga kiri, tangan kanan, 30% membalik secara sistematis dan 14% membuat 1-3 kesalahan. | Kiri-kanan tubuh sendiri dilatih pelan (`TK-A1-M4`), tanpa menuntut ketepatan; menuntut `belok kanan` pada kisi di TK B tidak realistis. |
+| Rigal (1994), *Percept Mot Skills* 79(3):1259-78 (406 anak) | Diskriminasi dan pengenalan dikuasai jauh lebih awal daripada identifikasi dengan kata kiri/kanan; kata dipakai benar lebih dulu pada tubuh sendiri (sekitar 7 tahun), lalu orang yang membelakangi, lalu yang menghadap (8-9 tahun). | Perintah arah berbasis kata kiri/kanan pada benda lain (robot yang menghadap anak) masih sulit; ditangani dengan anak menjadi robot dan kartu bergambar. |
+| Clark dan Klonoff (1990), *J Clin Exp Neuropsychol* 12(4):459-66 (360 anak 5-13 tahun) | Skor multimodal, konsisten dengan tahap: belum paham, pemahaman egosentris pada tubuh sendiri, lalu generalisasi ke benda luar. | Pemahaman usia TK diperkirakan baru tahap egosentris `[asumsi]`; sebab itu `belok kiri` yang selalu dikaitkan dengan tangan kiri anak. |
+
+Penilaian penyusun: abstrak ini mendukung pembatasan, bukan menetapkan ambang usia untuk rencana ini. Efek `belok kanan` pada belajar kartu panah di TK tidak diuji di sini `[belum terverifikasi]`.
+
 ## 5. Risiko
 
 | Risiko | Penjelasan | Mitigasi dalam rancangan |
@@ -203,6 +215,9 @@ dijadikan **opsi demonstrasi** (silabus bagian 8).
 | 9 | CS Unplugged | `https://www.csunplugged.org/en/` |
 | 10 | ScratchJr di App Store (Britania Raya) | `https://apps.apple.com/gb/app/scratchjr/id895485086` |
 | 11 | Repositori kode ScratchJr (metadata via API GitHub) | `https://github.com/scratchfoundation/scratchjr` |
+| 12 | Dellatolas dkk. 1998 (abstrak PubMed) | `https://pubmed.ncbi.nlm.nih.gov/9872370/` |
+| 13 | Rigal 1994 (abstrak PubMed) | `https://pubmed.ncbi.nlm.nih.gov/7899010/` |
+| 14 | Clark dan Klonoff 1990 (abstrak PubMed) | `https://pubmed.ncbi.nlm.nih.gov/2211970/` |
 
 ## Changelog
 
@@ -210,3 +225,4 @@ dijadikan **opsi demonstrasi** (silabus bagian 8).
 | --- | --- | --- |
 | v0.1.0 | 2026-11-19 | Riset awal (issue #127). |
 | v0.1.1 | 2026-11-19 | Tautan dan status disesuaikan dengan silabus v1.0.0 yang disetujui (`silabus-draf.md` menjadi `silabus.md`; issue #127). |
+| v0.1.2 | 2026-11-19 | Bagian 4.2: bukti perkembangan kiri-kanan anak usia TK untuk menyelaraskan tujuan 4 (#239). |

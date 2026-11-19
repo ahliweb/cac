@@ -1,0 +1,1002 @@
+{
+  "modules": [
+    {
+      "id": "dw-fnd-m1",
+      "title": "Keamanan, privasi, dan etika kerja dengan kode dan AI",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "OWASP Gen AI Security Project, OWASP Top 10 for LLM Applications 2025 (LLM01 Prompt Injection, LLM02 Sensitive Information Disclosure)",
+          "url": "https://genai.owasp.org/llm-top-10/"
+        },
+        {
+          "title": "European Commission, Joint Research Centre, DigComp 3.0, area 4 (hanya pembanding)",
+          "url": "https://joint-research-centre.ec.europa.eu/projects-and-activities/education-and-training/digital-transformation-education/digital-competence-framework-citizens-digcomp/digcomp-framework_en"
+        },
+        {
+          "title": "Python documentation: re, regular expression operations",
+          "url": "https://docs.python.org/3/library/re.html"
+        },
+        {
+          "title": "Git documentation: gitignore",
+          "url": "https://git-scm.com/docs/gitignore"
+        },
+        {
+          "title": "U.S. Copyright Office, Copyright and Artificial Intelligence (hukum AS, bukan hukum Indonesia)",
+          "url": "https://www.copyright.gov/ai/"
+        }
+      ],
+      "moduleCodes": ["DW-FND-M1"],
+      "skkniUnits": [],
+      "track": "FND",
+      "prerequisites": [],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-fnd-m1.md"
+    },
+    {
+      "id": "dw-pkj-m1",
+      "title": "Memetakan pekerjaan berulang",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python Tutorial: an informal introduction to Python",
+          "url": "https://docs.python.org/3/tutorial/introduction.html"
+        }
+      ],
+      "moduleCodes": ["DW-PKJ-M1"],
+      "skkniUnits": [],
+      "track": "PKJ",
+      "prerequisites": ["dw-fnd-m1"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pkj-m1.md"
+    },
+    {
+      "id": "dw-pkj-m2",
+      "title": "Rumus dan pembersihan data lembar kerja",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "LibreOffice Help: Text Functions",
+          "url": "https://help.libreoffice.org/latest/en-US/text/scalc/01/04060110.html"
+        },
+        {
+          "title": "LibreOffice Help: Date & Time Functions",
+          "url": "https://help.libreoffice.org/latest/en-US/text/scalc/01/04060102.html"
+        },
+        {
+          "title": "LibreOffice Help: Logical Functions",
+          "url": "https://help.libreoffice.org/latest/en-US/text/scalc/01/04060105.html"
+        },
+        {
+          "title": "LibreOffice Help: Spreadsheet Functions (termasuk VLOOKUP)",
+          "url": "https://help.libreoffice.org/latest/en-US/text/scalc/01/04060109.html"
+        }
+      ],
+      "moduleCodes": ["DW-PKJ-M2"],
+      "skkniUnits": [],
+      "track": "PKJ",
+      "prerequisites": ["dw-pkj-m1"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pkj-m2.md"
+    },
+    {
+      "id": "dw-pkj-m3",
+      "title": "Pengantar Python untuk data lembar kerja",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python documentation: csv, CSV file reading and writing",
+          "url": "https://docs.python.org/3/library/csv.html"
+        },
+        {
+          "title": "Python Tutorial: more control flow tools (fungsi)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        },
+        {
+          "title": "Python documentation: using Python (pemasangan)",
+          "url": "https://docs.python.org/3/using/index.html"
+        },
+        {
+          "title": "Python documentation: random, generate pseudo-random numbers",
+          "url": "https://docs.python.org/3/library/random.html"
+        }
+      ],
+      "moduleCodes": ["DW-PKJ-M3"],
+      "skkniUnits": [],
+      "track": "PKJ",
+      "prerequisites": ["dw-pkj-m2"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pkj-m3.md"
+    },
+    {
+      "id": "dw-pkj-m4",
+      "title": "Mengolah dan menggabungkan data",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python documentation: csv, CSV file reading and writing",
+          "url": "https://docs.python.org/3/library/csv.html"
+        },
+        {
+          "title": "Python documentation: collections (defaultdict)",
+          "url": "https://docs.python.org/3/library/collections.html"
+        },
+        {
+          "title": "Python Tutorial: data structures (daftar, komprehensi, kamus)",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        }
+      ],
+      "moduleCodes": ["DW-PKJ-M4"],
+      "skkniUnits": [],
+      "track": "PKJ",
+      "prerequisites": ["dw-pkj-m3"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pkj-m4.md"
+    },
+    {
+      "id": "dw-pkj-m5",
+      "title": "Otomasi berkas dan laporan",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python documentation: pathlib, object-oriented filesystem paths",
+          "url": "https://docs.python.org/3/library/pathlib.html"
+        },
+        {
+          "title": "Python documentation: csv, CSV file reading and writing",
+          "url": "https://docs.python.org/3/library/csv.html"
+        },
+        {
+          "title": "Python documentation: shutil, high-level file operations",
+          "url": "https://docs.python.org/3/library/shutil.html"
+        },
+        {
+          "title": "Python documentation: random, generate pseudo-random numbers",
+          "url": "https://docs.python.org/3/library/random.html"
+        }
+      ],
+      "moduleCodes": ["DW-PKJ-M5"],
+      "skkniUnits": [],
+      "track": "PKJ",
+      "prerequisites": ["dw-pkj-m4"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pkj-m5.md"
+    },
+    {
+      "id": "dw-pkj-m6",
+      "title": "AI untuk produktivitas kerja",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "OWASP Top 10 for Large Language Model Applications",
+          "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/"
+        },
+        {
+          "title": "U.S. Copyright Office: Copyright and Artificial Intelligence (hukum AS)",
+          "url": "https://www.copyright.gov/ai/"
+        },
+        {
+          "title": "Python documentation: csv, CSV file reading and writing",
+          "url": "https://docs.python.org/3/library/csv.html"
+        },
+        {
+          "title": "LibreOffice Help: Mathematical Functions",
+          "url": "https://help.libreoffice.org/latest/en-US/text/scalc/01/04060106.html"
+        }
+      ],
+      "moduleCodes": ["DW-PKJ-M6"],
+      "skkniUnits": [],
+      "track": "PKJ",
+      "prerequisites": ["dw-pkj-m5"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pkj-m6.md"
+    },
+    {
+      "id": "dw-pkj-m7",
+      "title": "Visualisasi dan penyajian",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "LibreOffice Help: Charts in LibreOffice",
+          "url": "https://help.libreoffice.org/latest/en-US/text/schart/main0000.html"
+        },
+        {
+          "title": "LibreOffice Help: Chart axis, Scale tab",
+          "url": "https://help.libreoffice.org/latest/en-US/text/schart/01/05040201.html"
+        },
+        {
+          "title": "MDN Web Docs: SVG",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG"
+        }
+      ],
+      "moduleCodes": ["DW-PKJ-M7"],
+      "skkniUnits": [],
+      "track": "PKJ",
+      "prerequisites": ["dw-pkj-m6"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pkj-m7.md"
+    },
+    {
+      "id": "dw-pkj-m8",
+      "title": "Proyek akhir",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python documentation: csv, CSV file reading and writing",
+          "url": "https://docs.python.org/3/library/csv.html"
+        },
+        {
+          "title": "Python documentation: collections (defaultdict)",
+          "url": "https://docs.python.org/3/library/collections.html"
+        },
+        {
+          "title": "Python Language Reference: the assert statement",
+          "url": "https://docs.python.org/3/reference/simple_stmts.html"
+        }
+      ],
+      "moduleCodes": ["DW-PKJ-M8"],
+      "skkniUnits": [],
+      "track": "PKJ",
+      "prerequisites": ["dw-pkj-m7"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pkj-m8.md"
+    },
+    {
+      "id": "dw-pro-m1",
+      "title": "Lingkungan kerja pengembang dan Git",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Pro Git, Scott Chacon dan Ben Straub (buku daring, Git SCM)",
+          "url": "https://git-scm.com/book/en/v2"
+        },
+        {
+          "title": "Git documentation: gitignore",
+          "url": "https://git-scm.com/docs/gitignore"
+        },
+        {
+          "title": "Git documentation: git-commit",
+          "url": "https://git-scm.com/docs/git-commit"
+        },
+        {
+          "title": "Python Tutorial: virtual environments and packages",
+          "url": "https://docs.python.org/3/tutorial/venv.html"
+        }
+      ],
+      "moduleCodes": ["DW-PRO-M1"],
+      "skkniUnits": ["J.620100.011.01", "J.620100.012.01", "J.620100.026.01"],
+      "track": "PRO",
+      "prerequisites": ["dw-fnd-m1"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pro-m1.md"
+    },
+    {
+      "id": "dw-pro-m2",
+      "title": "Dasar pemrograman terstruktur",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python Tutorial: more control flow tools (kondisi, perulangan, fungsi)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        },
+        {
+          "title": "Python Tutorial: an informal introduction to Python",
+          "url": "https://docs.python.org/3/tutorial/introduction.html"
+        }
+      ],
+      "moduleCodes": ["DW-PRO-M2"],
+      "skkniUnits": ["J.620100.013.01", "J.620100.017.02", "J.620100.010.01"],
+      "track": "PRO",
+      "prerequisites": ["dw-pro-m1"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pro-m2.md"
+    },
+    {
+      "id": "dw-pro-m3",
+      "title": "Struktur data dan algoritma dasar",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python Tutorial: data structures (daftar, himpunan, kamus)",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        },
+        {
+          "title": "Python HOWTO: sorting techniques",
+          "url": "https://docs.python.org/3/howto/sorting.html"
+        },
+        {
+          "title": "Python Library Reference: built-in types (set dan dict)",
+          "url": "https://docs.python.org/3/library/stdtypes.html"
+        }
+      ],
+      "moduleCodes": ["DW-PRO-M3"],
+      "skkniUnits": ["J.620100.004.02", "J.620100.022.02"],
+      "track": "PRO",
+      "prerequisites": ["dw-pro-m2"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pro-m3.md"
+    },
+    {
+      "id": "dw-pro-m4",
+      "title": "Fungsi, modul, dan kode yang rapi",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "PEP 8: Style Guide for Python Code",
+          "url": "https://peps.python.org/pep-0008/"
+        },
+        {
+          "title": "PEP 257: Docstring Conventions",
+          "url": "https://peps.python.org/pep-0257/"
+        },
+        {
+          "title": "Python Tutorial: modules",
+          "url": "https://docs.python.org/3/tutorial/modules.html"
+        },
+        {
+          "title": "Python documentation: doctest",
+          "url": "https://docs.python.org/3/library/doctest.html"
+        }
+      ],
+      "moduleCodes": ["DW-PRO-M4"],
+      "skkniUnits": ["J.620100.014.01", "J.620100.015.01", "J.620100.016.01", "J.620100.023.02"],
+      "track": "PRO",
+      "prerequisites": ["dw-pro-m3"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pro-m4.md"
+    },
+    {
+      "id": "dw-pro-m5",
+      "title": "Debugging dan pengujian unit",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python documentation: unittest",
+          "url": "https://docs.python.org/3/library/unittest.html"
+        },
+        {
+          "title": "Python documentation: pdb, the Python debugger",
+          "url": "https://docs.python.org/3/library/pdb.html"
+        },
+        {
+          "title": "Python Tutorial: errors and exceptions",
+          "url": "https://docs.python.org/3/tutorial/errors.html"
+        }
+      ],
+      "moduleCodes": ["DW-PRO-M5"],
+      "skkniUnits": ["J.620100.025.02", "J.620100.033.02"],
+      "track": "PRO",
+      "prerequisites": ["dw-pro-m4"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pro-m5.md"
+    },
+    {
+      "id": "dw-pro-m13",
+      "title": "Rekayasa perangkat lunak berbantuan AI",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "OWASP Top 10 for LLM Applications 2025",
+          "url": "https://genai.owasp.org/llm-top-10/"
+        },
+        {
+          "title": "NIST SP 800-218: Secure Software Development Framework (SSDF) v1.1",
+          "url": "https://csrc.nist.gov/pubs/sp/800/218/final"
+        },
+        {
+          "title": "SLSA specification v1.0: About",
+          "url": "https://slsa.dev/spec/v1.0/about"
+        },
+        {
+          "title": "U.S. Copyright Office: Copyright and Artificial Intelligence (hukum AS)",
+          "url": "https://www.copyright.gov/ai/"
+        },
+        {
+          "title": "SE Menteri Komunikasi dan Informatika Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (JDIH Komdigi)",
+          "url": "https://jdih.komdigi.go.id/produk_hukum/view/id/883/t/surat+edaran+menteri+komunikasi+dan+informatika+nomor+9+tahun+2023"
+        },
+        {
+          "title": "Python documentation: ast (analisis statis)",
+          "url": "https://docs.python.org/3/library/ast.html"
+        }
+      ],
+      "moduleCodes": ["DW-PRO-M13"],
+      "skkniUnits": [
+        "J.620100.009.01",
+        "J.620100.033.02",
+        "J.620100.032.01",
+        "J.620100.036.02",
+        "J.620100.019.02"
+      ],
+      "track": "PRO",
+      "prerequisites": ["dw-pro-m5"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pro-m13.md"
+    },
+    {
+      "id": "dw-pro-m6",
+      "title": "Pemrograman berorientasi objek dan pustaka",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python Tutorial: classes",
+          "url": "https://docs.python.org/3/tutorial/classes.html"
+        },
+        {
+          "title": "Python documentation: json",
+          "url": "https://docs.python.org/3/library/json.html"
+        },
+        {
+          "title": "Python documentation: statistics",
+          "url": "https://docs.python.org/3/library/statistics.html"
+        }
+      ],
+      "moduleCodes": ["DW-PRO-M6"],
+      "skkniUnits": ["J.620100.018.02", "J.620100.019.02", "J.620100.003.01"],
+      "track": "PRO",
+      "prerequisites": ["dw-pro-m13"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pro-m6.md"
+    },
+    {
+      "id": "dw-pro-m7",
+      "title": "SQL dan akses basis data",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python documentation: sqlite3, DB-API interface for SQLite databases",
+          "url": "https://docs.python.org/3/library/sqlite3.html"
+        },
+        {
+          "title": "SQLite: SQL as understood by SQLite",
+          "url": "https://sqlite.org/lang.html"
+        },
+        {
+          "title": "SQLite: foreign key support",
+          "url": "https://sqlite.org/foreignkeys.html"
+        },
+        {
+          "title": "SQLite: CREATE INDEX",
+          "url": "https://sqlite.org/lang_createindex.html"
+        }
+      ],
+      "moduleCodes": ["DW-PRO-M7"],
+      "skkniUnits": ["J.620100.020.02", "J.620100.021.02", "J.620100.007.01"],
+      "track": "PRO",
+      "prerequisites": ["dw-pro-m6"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pro-m7.md"
+    },
+    {
+      "id": "dw-pro-m8",
+      "title": "Antarmuka web: HTML, CSS, JavaScript/TypeScript",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "MDN Web Docs: HTML",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+        },
+        {
+          "title": "MDN Web Docs: CSS",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+        },
+        {
+          "title": "MDN Web Docs: Using media queries",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries"
+        },
+        {
+          "title": "MDN Web Docs: JavaScript",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        {
+          "title": "TypeScript documentation",
+          "url": "https://www.typescriptlang.org/docs/"
+        },
+        {
+          "title": "Bun documentation",
+          "url": "https://bun.sh/docs"
+        }
+      ],
+      "moduleCodes": ["DW-PRO-M8"],
+      "skkniUnits": ["J.620100.005.02", "J.620100.006.01"],
+      "track": "PRO",
+      "prerequisites": ["dw-pro-m7"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pro-m8.md"
+    },
+    {
+      "id": "dw-pro-m9",
+      "title": "Layanan web dan API",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python documentation: http.server, HTTP servers (tidak disarankan untuk produksi)",
+          "url": "https://docs.python.org/3/library/http.server.html"
+        },
+        {
+          "title": "Python documentation: urllib.request",
+          "url": "https://docs.python.org/3/library/urllib.request.html"
+        },
+        {
+          "title": "Python documentation: tomllib",
+          "url": "https://docs.python.org/3/library/tomllib.html"
+        },
+        {
+          "title": "MDN Web Docs: HTTP response status codes",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status"
+        }
+      ],
+      "moduleCodes": ["DW-PRO-M9"],
+      "skkniUnits": ["J.620100.027.01", "J.620100.019.02"],
+      "track": "PRO",
+      "prerequisites": ["dw-pro-m8"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pro-m9.md"
+    },
+    {
+      "id": "dw-pro-m10",
+      "title": "Kolaborasi: tinjau kode dan pengujian lanjut",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python documentation: unittest",
+          "url": "https://docs.python.org/3/library/unittest.html"
+        },
+        {
+          "title": "Python documentation: ast, abstract syntax trees",
+          "url": "https://docs.python.org/3/library/ast.html"
+        },
+        {
+          "title": "Python documentation: sqlite3 (parameter ? dan transaksi)",
+          "url": "https://docs.python.org/3/library/sqlite3.html"
+        },
+        {
+          "title": "OWASP Top 10 (proyek)",
+          "url": "https://owasp.org/www-project-top-ten/"
+        }
+      ],
+      "moduleCodes": ["DW-PRO-M10"],
+      "skkniUnits": ["J.620100.032.01", "J.620100.034.02", "J.620100.036.02"],
+      "track": "PRO",
+      "prerequisites": ["dw-pro-m9"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pro-m10.md"
+    },
+    {
+      "id": "dw-pro-m11",
+      "title": "Konfigurasi, pencatatan, dan operasi dasar",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python HOWTO: Logging",
+          "url": "https://docs.python.org/3/howto/logging.html"
+        },
+        {
+          "title": "The Twelve-Factor App: III. Config",
+          "url": "https://12factor.net/config"
+        },
+        {
+          "title": "Python documentation: sqlite3 (Connection.backup)",
+          "url": "https://docs.python.org/3/library/sqlite3.html"
+        },
+        {
+          "title": "SQLite: PRAGMA statements (user_version)",
+          "url": "https://sqlite.org/pragma.html"
+        }
+      ],
+      "moduleCodes": ["DW-PRO-M11"],
+      "skkniUnits": ["J.620100.042.01", "J.620100.046.01", "J.620100.044.01", "J.620100.047.01"],
+      "track": "PRO",
+      "prerequisites": ["dw-pro-m10"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pro-m11.md"
+    },
+    {
+      "id": "dw-pro-m12",
+      "title": "Proyek akhir dan persiapan portofolio",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Git documentation: gitignore",
+          "url": "https://git-scm.com/docs/gitignore"
+        },
+        {
+          "title": "Python documentation: unittest",
+          "url": "https://docs.python.org/3/library/unittest.html"
+        },
+        {
+          "title": "Python documentation: venv, creation of virtual environments",
+          "url": "https://docs.python.org/3/library/venv.html"
+        },
+        {
+          "title": "OWASP Top 10 (proyek)",
+          "url": "https://owasp.org/www-project-top-ten/"
+        }
+      ],
+      "moduleCodes": ["DW-PRO-M12"],
+      "skkniUnits": ["J.620100.009.01", "J.620100.038.01", "J.620100.039.02", "J.620100.008.01"],
+      "track": "PRO",
+      "prerequisites": ["dw-pro-m11"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pro-m12.md"
+    },
+    {
+      "id": "dw-prs-m1",
+      "title": "Berpikir komputasional tanpa kode",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python Tutorial: more control flow tools (kondisi dan perulangan, bacaan lanjut)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        }
+      ],
+      "moduleCodes": ["DW-PRS-M1"],
+      "skkniUnits": [],
+      "track": "PRS",
+      "prerequisites": ["dw-fnd-m1"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-prs-m1.md"
+    },
+    {
+      "id": "dw-prs-m2",
+      "title": "Program pertama dengan Python",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python Tutorial: an informal introduction to Python (angka, teks, daftar)",
+          "url": "https://docs.python.org/3/tutorial/introduction.html"
+        },
+        {
+          "title": "Python Tutorial: more control flow tools (if, for, range)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        },
+        {
+          "title": "Python documentation: built-in functions (input, print, int)",
+          "url": "https://docs.python.org/3/library/functions.html"
+        }
+      ],
+      "moduleCodes": ["DW-PRS-M2"],
+      "skkniUnits": [],
+      "track": "PRS",
+      "prerequisites": ["dw-prs-m1"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-prs-m2.md"
+    },
+    {
+      "id": "dw-prs-m3",
+      "title": "Data dan berkas",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python Tutorial: data structures (daftar dan kamus)",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        },
+        {
+          "title": "Python Tutorial: input and output (membaca dan menulis berkas)",
+          "url": "https://docs.python.org/3/tutorial/inputoutput.html"
+        },
+        {
+          "title": "Python documentation: built-in functions (open)",
+          "url": "https://docs.python.org/3/library/functions.html"
+        }
+      ],
+      "moduleCodes": ["DW-PRS-M3"],
+      "skkniUnits": [],
+      "track": "PRS",
+      "prerequisites": ["dw-prs-m2"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-prs-m3.md"
+    },
+    {
+      "id": "dw-prs-m4",
+      "title": "Halaman web pertama",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "MDN Web Docs: HTML",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+        },
+        {
+          "title": "MDN Web Docs: CSS",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+        },
+        {
+          "title": "Python documentation: http.server",
+          "url": "https://docs.python.org/3/library/http.server.html"
+        }
+      ],
+      "moduleCodes": ["DW-PRS-M4"],
+      "skkniUnits": [],
+      "track": "PRS",
+      "prerequisites": ["dw-prs-m3"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-prs-m4.md"
+    },
+    {
+      "id": "dw-prs-m5",
+      "title": "Mengotomasi urusan sehari-hari",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python documentation: pathlib, jalur berkas berorientasi objek",
+          "url": "https://docs.python.org/3/library/pathlib.html"
+        },
+        {
+          "title": "Python documentation: datetime",
+          "url": "https://docs.python.org/3/library/datetime.html"
+        },
+        {
+          "title": "Python Tutorial: input and output (format keluaran)",
+          "url": "https://docs.python.org/3/tutorial/inputoutput.html"
+        }
+      ],
+      "moduleCodes": ["DW-PRS-M5"],
+      "skkniUnits": [],
+      "track": "PRS",
+      "prerequisites": ["dw-prs-m4"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-prs-m5.md"
+    },
+    {
+      "id": "dw-prs-m6",
+      "title": "Proyek mandiri dan jalan lanjut",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python documentation: doctest",
+          "url": "https://docs.python.org/3/library/doctest.html"
+        },
+        {
+          "title": "Python Tutorial: more control flow tools (fungsi dan alur)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        },
+        {
+          "title": "MDN Web Docs: HTML",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+        }
+      ],
+      "moduleCodes": ["DW-PRS-M6"],
+      "skkniUnits": [],
+      "track": "PRS",
+      "prerequisites": ["dw-prs-m5"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-prs-m6.md"
+    },
+    {
+      "id": "dw-bis-m1",
+      "title": "Peta digital usaha",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "JDIH BPK: UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi (teks resmi; dibuka 2026-11-19)",
+          "url": "https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022"
+        }
+      ],
+      "moduleCodes": ["DW-BIS-M1"],
+      "skkniUnits": [],
+      "track": "BIS",
+      "prerequisites": ["dw-fnd-m1"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-bis-m1.md"
+    },
+    {
+      "id": "dw-bis-m2",
+      "title": "Pencatatan penjualan di lembar kerja",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "LibreOffice Help: Validity (validasi data)",
+          "url": "https://help.libreoffice.org/latest/en-US/text/scalc/01/12120000.html"
+        },
+        {
+          "title": "LibreOffice Help: Validity, tab Criteria",
+          "url": "https://help.libreoffice.org/latest/en-US/text/scalc/01/12120100.html"
+        },
+        {
+          "title": "LibreOffice Help: Mathematical Functions (SUMIF, SUMIFS, SUMPRODUCT)",
+          "url": "https://help.libreoffice.org/latest/en-US/text/scalc/01/04060106.html"
+        },
+        {
+          "title": "Python documentation: random, pseudo-random numbers",
+          "url": "https://docs.python.org/3/library/random.html"
+        },
+        {
+          "title": "Python documentation: csv, CSV file reading and writing",
+          "url": "https://docs.python.org/3/library/csv.html"
+        }
+      ],
+      "moduleCodes": ["DW-BIS-M2"],
+      "skkniUnits": [],
+      "track": "BIS",
+      "prerequisites": ["dw-bis-m1"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-bis-m2.md"
+    },
+    {
+      "id": "dw-bis-m3",
+      "title": "Membaca data penjualan",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "LibreOffice Help: Creating Pivot Tables",
+          "url": "https://help.libreoffice.org/latest/en-US/text/scalc/guide/datapilot_createtable.html"
+        },
+        {
+          "title": "LibreOffice Help: Updating Pivot Tables",
+          "url": "https://help.libreoffice.org/latest/en-US/text/scalc/guide/datapilot_updatetable.html"
+        },
+        {
+          "title": "LibreOffice Help: Charts in LibreOffice",
+          "url": "https://help.libreoffice.org/latest/en-US/text/schart/main0000.html"
+        },
+        {
+          "title": "LibreOffice Help: Mathematical Functions (SUMIF, SUMIFS)",
+          "url": "https://help.libreoffice.org/latest/en-US/text/scalc/01/04060106.html"
+        }
+      ],
+      "moduleCodes": ["DW-BIS-M3"],
+      "skkniUnits": [],
+      "track": "BIS",
+      "prerequisites": ["dw-bis-m2"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-bis-m3.md"
+    },
+    {
+      "id": "dw-bis-m4",
+      "title": "Situs usaha",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "MDN: What is a domain name?",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_domain_name"
+        },
+        {
+          "title": "MDN: What is a web server?",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_web_server"
+        },
+        {
+          "title": "MDN: The img element (atribut alt)",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/img"
+        },
+        {
+          "title": "MDN: HTML, HyperText Markup Language",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+        },
+        {
+          "title": "PANDI: Daftar Registrar (registrar domain .id harus diakreditasi PANDI; dibuka 2026-11-19)",
+          "url": "https://pandi.id/partner-registrar"
+        }
+      ],
+      "moduleCodes": ["DW-BIS-M4"],
+      "skkniUnits": [],
+      "track": "BIS",
+      "prerequisites": ["dw-bis-m3"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-bis-m4.md"
+    },
+    {
+      "id": "dw-bis-m5",
+      "title": "Toko daring dan pembayaran digital (konsep)",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Bank Indonesia: Quick Response Code Indonesian Standard (QRIS) (dibuka 2026-11-19; fakta dapat berubah)",
+          "url": "https://www.bi.go.id/id/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/QRIS/default.aspx"
+        },
+        {
+          "title": "Bank Indonesia, Cerita BI: Cara Memastikan Pembayaran QRIS Benar-Benar Masuk (11 November 2026)",
+          "url": "https://www.bi.go.id/id/publikasi/ruang-media/cerita-bi/Pages/cara-memastikan-pembayaran-qris-benar-benar-masuk.aspx"
+        },
+        {
+          "title": "JDIH BPK: UU No. 27 Tahun 2022 tentang Pelindungan Data Pribadi (teks resmi; dibuka 2026-11-19)",
+          "url": "https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022"
+        }
+      ],
+      "moduleCodes": ["DW-BIS-M5"],
+      "skkniUnits": [],
+      "track": "BIS",
+      "prerequisites": ["dw-bis-m4"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-bis-m5.md"
+    },
+    {
+      "id": "dw-bis-m6",
+      "title": "Otomasi no-code/low-code",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python documentation: csv, CSV file reading and writing",
+          "url": "https://docs.python.org/3/library/csv.html"
+        },
+        {
+          "title": "Python Tutorial: data structures (set, dictionary)",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        }
+      ],
+      "moduleCodes": ["DW-BIS-M6"],
+      "skkniUnits": [],
+      "track": "BIS",
+      "prerequisites": ["dw-bis-m5"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-bis-m6.md"
+    },
+    {
+      "id": "dw-bis-m7",
+      "title": "AI untuk usaha",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "OWASP Gen AI Security Project, OWASP Top 10 for LLM Applications 2025 (LLM01 Prompt Injection)",
+          "url": "https://genai.owasp.org/llm-top-10/"
+        },
+        {
+          "title": "U.S. Copyright Office, Copyright and Artificial Intelligence (hukum AS, bukan hukum Indonesia)",
+          "url": "https://www.copyright.gov/ai/"
+        }
+      ],
+      "moduleCodes": ["DW-BIS-M7"],
+      "skkniUnits": [],
+      "track": "BIS",
+      "prerequisites": ["dw-bis-m6"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-bis-m7.md"
+    },
+    {
+      "id": "dw-bis-m8",
+      "title": "Proyek akhir: rencana digital usaha",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python documentation: csv, CSV file reading and writing",
+          "url": "https://docs.python.org/3/library/csv.html"
+        },
+        {
+          "title": "Python documentation: collections (defaultdict)",
+          "url": "https://docs.python.org/3/library/collections.html"
+        }
+      ],
+      "moduleCodes": ["DW-BIS-M8"],
+      "skkniUnits": [],
+      "track": "BIS",
+      "prerequisites": ["dw-bis-m7"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-bis-m8.md"
+    }
+  ]
+}

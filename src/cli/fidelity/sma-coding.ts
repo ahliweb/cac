@@ -3,7 +3,8 @@
  * and quotations of the owner-approved syllabus
  * (`docs/programs/sma-coding/silabus.md`, bagian 1.3, 1.4, 2, 3 (incl. the
  * shared foundation block 3.0 and the track summary 3.6), 4 (incl. the
- * enrichment links 4.5) and 5 (per track))
+ * enrichment links 4.5, and the SMP entry-and-placement subsection of 3.0
+ * mirrored in `smp-bridge.json`) and 5 (per track))
  * and compares the result cell by cell with `data/sma-coding/*.json`, so any
  * drift between the approved document and the data fails hard.
  *
@@ -38,6 +39,7 @@ export const SMA_DATA_FILES = [
   "foundation.json",
   "cp-mapping.json",
   "osn-bridge.json",
+  "smp-bridge.json",
 ] as const;
 
 export type SmaDataFileName = (typeof SMA_DATA_FILES)[number];
@@ -149,6 +151,57 @@ function group(result: RegExpExecArray, index: number): string {
     throw new Error(`check-sma-coding-fidelity: missing capture group ${index}.`);
   }
   return value;
+}
+
+/** The paragraphs (blank-line separated, whitespace-normalised) of `lines`, in order. */
+function paragraphsOf(lines: readonly string[]): string[] {
+  const result: string[] = [];
+  let current: string[] = [];
+  for (const line of lines) {
+    if (line.trim() === "" || line.trim().startsWith("|")) {
+      if (current.length > 0) {
+        result.push(current.join(" ").replace(/\s+/g, " ").trim());
+        current = [];
+      }
+    } else {
+      current.push(line.trim());
+    }
+  }
+  if (current.length > 0) {
+    result.push(current.join(" ").replace(/\s+/g, " ").trim());
+  }
+  return result;
+}
+
+/** The heading prefix of the SMP entry subsection of bagian 3.0 (silabus v1.4, #177). */
+const SMP_BRIDGE_HEADING = "#### Kemampuan masuk dari SMP dan penempatan di blok fondasi";
+
+/** Parses the SMP entry-and-placement subsection of bagian 3.0 into the content of `smp-bridge.json`. */
+function parseSmpBridge(markdown: string): { intro: string; rows: Json[]; observation: string } {
+  const section = sectionLines(markdown, SMP_BRIDGE_HEADING);
+  const paragraphs = paragraphsOf(section);
+  const intro = paragraphs[0];
+  const observation = paragraphs.find((paragraph) => paragraph.startsWith("Pengamatan awal:"));
+  if (intro === undefined || observation === undefined) {
+    throw new Error(
+      "check-sma-coding-fidelity: the SMP entry subsection needs an intro paragraph and a paragraph starting 'Pengamatan awal:'.",
+    );
+  }
+  const rows: Json[] = firstTableRows(section).map((row, index) => {
+    expectCells(row, 3, `SMP entry row ${index}`);
+    const smpText = cell(row, 0, `SMP entry row ${index} asal`);
+    const smaText = cell(row, 1, `SMP entry row ${index} minggu`);
+    return {
+      smpText,
+      smpWeeks: [...smpText.matchAll(/SMP[789]-[12]-M\d+/g)].map((found) => found[0]),
+      smaText,
+      smaWeeks: [...smaText.matchAll(/(?:FND-X1|[A-E]-(?:X|XI|XII)[12])-M\d+/g)].map(
+        (found) => found[0],
+      ),
+      treatment: cell(row, 2, `SMP entry row ${index} perlakuan`),
+    };
+  });
+  return { intro, rows, observation };
 }
 
 // --- Expected corpus, derived from the Markdown ----------------------------------
@@ -546,6 +599,7 @@ export function expectedCorpus(markdown: string): Record<SmaDataFileName, Json> 
     "foundation.json": { ...provenance("bagian 3.0"), weeks: foundationWeeks },
     "cp-mapping.json": { ...provenance("bagian 4"), mappings, enrichmentLinks },
     "osn-bridge.json": { ...provenance("bagian 5"), track: bridgeTrack, bridges, trackBridges },
+    "smp-bridge.json": { ...provenance("bagian 3.0"), ...parseSmpBridge(markdown) },
   };
 }
 

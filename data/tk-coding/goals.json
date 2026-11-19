@@ -1,5 +1,5 @@
 {
-  "syllabusVersion": "1.0.0",
+  "syllabusVersion": "1.0.3",
   "syllabusDate": "2026-11-19",
   "sourceSection": "bagian 2",
   "principles": [
@@ -60,7 +60,7 @@
     },
     {
       "order": 4,
-      "text": "memberi dan mengikuti instruksi arah sederhana (maju, belok kiri, belok kanan, berhenti, ulangi) di kisi lantai, serta mengoreksi instruksi yang salah;"
+      "text": "memberi dan mengikuti instruksi arah sederhana (maju, belok kiri, berhenti, ulangi) di kisi lantai, serta mengoreksi instruksi yang salah;"
     },
     {
       "order": 5,

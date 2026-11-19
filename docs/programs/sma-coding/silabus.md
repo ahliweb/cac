@@ -1,13 +1,14 @@
-# Silabus Pembelajaran Coding SMA — v1.2
+# Silabus Pembelajaran Coding SMA — v1.4
 
-- **Version:** v1.2.0
+- **Version:** v1.4.1
 - **Last updated:** 2026-11-19
-- **Status:** DISETUJUI pemilik program, 2026-11-19 — jalur A, B, C, D, dan E (v1.2, issue #68, #84, #88; v1.1 disetujui 2026-11-19, issue #92; v1.0 disetujui 2026-11-18, issue #52). Modul pendamping (#69) tidak termasuk persetujuan ini.
-- **Changeset:** Silabus v1.2 disetujui pemilik: jalur C (IoT dan robotika), D (kecerdasan buatan dan analisis data), dan E (komputasi kuantum) ditambahkan beserta rencana mingguan, pemetaan CP (jalur D dan E sebagai pengayaan di luar CP, tidak dihitung pemenuhan CP), jembatan OSN jalur C, dan keputusan pemilik 2026-11-19 (bagian 9.3); celah F-LD-d dan F-LD-e jalur A dicatat dicakup modul pendamping (issue #105).
+- **Status:** DISETUJUI pemilik program, 2026-11-19 — jalur A, B, C, D, dan E (v1.3, issue #139; v1.2, issue #68, #84, #88; v1.1 disetujui 2026-11-19, issue #92; v1.0 disetujui 2026-11-18, issue #52). Modul pendamping (#69) tidak termasuk persetujuan ini. Revisi v1.4.0 (subbagian kemampuan masuk dari SMP dan penempatan di blok fondasi, bagian 3.0) disetujui lewat keputusan pemilik 2026-11-19 (issue #177, bagian 9.5). Revisi patch v1.4.1 (dasar hukum siber: KUHP UU 1/2023) atas instruksi pemilik 2026-11-19, issue #238.
+- **Changeset:** Silabus v1.3 disetujui pemilik lewat keputusan 2026-11-19 (issue #139, bagian 9.4): butir AI pada lima minggu jalur A, B, C, dan fondasi serta tiga minggu jalur D, aturan pemakaian AI generatif oleh murid SMA diganti menjadi bebas dengan etika, dan bagian 7.4 "Kebijakan penggunaan AI" ditambahkan; tidak ada minggu baru. Sebelumnya, silabus v1.2 disetujui pemilik: jalur C (IoT dan robotika), D (kecerdasan buatan dan analisis data), dan E (komputasi kuantum) ditambahkan beserta rencana mingguan, pemetaan CP (jalur D dan E sebagai pengayaan di luar CP, tidak dihitung pemenuhan CP), jembatan OSN jalur C, dan keputusan pemilik 2026-11-19 (bagian 9.3); celah F-LD-d dan F-LD-e jalur A dicatat dicakup modul pendamping (issue #105). Revisi minor v1.4.0 (#177, bagian 9.5): subbagian baru di bagian 3.0 menyatakan bahwa silabus ini tidak mensyaratkan `smp-coding`, memetakan irisan minggu SMP dengan blok fondasi dan minggu jalur A dan B, serta mengatur pengamatan awal dan tugas pendalaman di dalam kelas bersama; kode minggu, jumlah minggu, pemetaan CP, jalur, dan jembatan OSN tidak berubah. Revisi patch v1.4.1 (#238, instruksi pemilik 2026-11-19): rumusan dasar hukum pada empat minggu (`B-XI2-M10`, `B-XII2-M10`, `C-XII1-M11`, `D-XII1-M4`) dan butir `F-LD-g` diselaraskan dengan UU 1/2023 (KUHP); kode minggu, jumlah minggu, pemetaan CP, dan jalur tidak berubah.
 
 > **Disetujui pemilik program pada 2026-11-19 untuk jalur A, B, C, D, dan E**
 > (v1.2; keputusan lewat dialog pilihan, dicatat di issue #68, #84, dan #88,
-> bagian 9.3). Dokumen ini adalah revisi v1.1 (disetujui 2026-11-19, issue
+> bagian 9.3); revisi v1.3 (issue #139, bagian 9.4) menambahkan butir dan
+> kebijakan AI. Dokumen ini adalah revisi v1.1 (disetujui 2026-11-19, issue
 > #92; v1.0 disetujui 2026-11-18, issue #52) dan konten karangan menurut
 > [ADR-0007](../../architecture/adr/0007-authored-learning-content.md) yang
 > menjadi sumber corpus program `sma-coding` (ADR-0006). Kutipan CP di bagian
@@ -79,9 +80,10 @@ panduan identik huruf demi huruf dengan lampiran SK `[belum terverifikasi]`.
 
 | Butir | Nilai | Status |
 | --- | --- | --- |
-| Keputusan induk CP | Keputusan Kepala BSKAP Nomor 046/H/KR/2025, berlaku sejak 16 Juli 2025, mencabut Keputusan Kepala Badan Nomor 032/H/KR/2024 | `[belum terverifikasi]`: hanya terbaca dari situs sekunder (hasil pencarian: komunitasbelajar.id, kurikulummerdeka.com, pojoksatu.id); teks SK resmi dan URL domain pemerintahnya tidak berhasil dibuka. |
+| Keputusan induk CP | Keputusan Kepala BSKAP Nomor 046/H/KR/2025, berlaku sejak 16 Juli 2025, mencabut Keputusan Kepala Badan Nomor 032/H/KR/2024 | `[terverifikasi 2026-11-19]` dari teks PDF SK (1691 halaman, SHA-256 `45809d2c88a612f90ee5adbd60d71a8952527d6924c626d126ea6926ae3d3394`) yang diunduh dari subdomain resmi `bpmpbabel.kemendikdasmen.go.id` (URL dan hasil pencocokan di [`../smp-coding/riset.md`](../smp-coding/riset.md) bagian 2.1): "Ditetapkan di Jakarta pada tanggal 16 Juli 2025", Diktum KEDELAPAN berlaku sejak ditetapkan, Diktum KETUJUH mencabut 32/H/KR/2024. Padanan di JDIH Kemendikdasmen `[belum terverifikasi]` (tidak ditemukan). |
 | Perubahan 2026 | Keputusan Kepala BKPDM Nomor 020 Tahun 2026, ditetapkan 23 Juni 2026, mengubah 046/H/KR/2025 hanya untuk Agama dan Budi Pekerti; CP mata pelajaran lain (termasuk Informatika) tetap | `[belum terverifikasi]`: dari artikel sekunder (gebrak.id) yang hanya menulis "Sumber: Kemendikdasmen" tanpa tautan. |
 | URL resmi SK | -- | `[belum terverifikasi]`: tidak ditemukan. Pemilik diminta memberi tautan resmi (bagian 9). |
+| Dasar hukum siber dan data pribadi | UU 11/2008 tentang ITE (diubah UU 19/2016 dan UU 1/2024) tetap berlaku, tetapi Pasal 27 ayat (1) dan (3), 28 ayat (2), 30, 31 ayat (1) dan (2), 36, 45 ayat (1) dan (3), 45A ayat (2), 46, 47, dan 51 ayat (2) dicabut oleh UU 1/2023 tentang KUHP (berlaku sejak 2 Januari 2026). Ketentuan pidana siber kini ada di KUHP bagian "Tindak Pidana terhadap Informatika dan Elektronika" (mis. akses tanpa hak ke komputer atau sistem elektronik: Pasal 332; penyadapan transmisi informasi elektronik yang tidak bersifat publik: Pasal 258). Pelindungan data pribadi: UU 27/2022. | `[terverifikasi 2026-11-19]`: daftar pasal dicabut dari JDIH BPK (`https://peraturan.bpk.go.id/Details/37589/uu-no-11-tahun-2008`; status dan tanggal berlaku UU 1/2023 di `https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023`) dan dari naskah UU 1/2023 (PDF di JDIH BPK; ketentuan penutup Pasal 622 ayat (1) huruf r, Pasal 258, dan Pasal 332 dibaca). Naskah UU 1/2023 diubah UU 1/2026 tentang Penyesuaian Pidana (tercatat di JDIH BPK; isinya tidak dibaca). Bunyi pasal tidak dikutip di silabus; materi modul memverifikasi ulang sebelum dipakai. UU 27/2022 tidak dibuka ulang di revisi ini. |
 | Alokasi jam pelajaran (JP) Informatika per kelas/minggu | -- | `[belum terverifikasi]`: dokumen yang dibuka tidak memuat struktur kurikulum SMA. Silabus ini memakai asumsi di bagian 2. |
 
 ### 1.3 Kutipan CP (apa adanya dari panduan, bagian B.d)
@@ -247,7 +249,7 @@ perangkat lab; tidak ada data pribadi siswa (bagian 7.3). Setiap minggu
 | FND-X1-M3 | Representasi data: biner, heksadesimal, teks, gambar sederhana | mengonversi bilangan desimal, biner, dan heksadesimal; menjelaskan bit dan byte; menjelaskan bahwa teks disimpan sebagai kode karakter; menjelaskan gambar sebagai kisi piksel dan warna sebagai komponen merah-hijau-biru | tabel konversi; lembar kode karakter; gambar 8x8 dalam bentuk deret bit | konversi manual dengan lembar kerja; menyandikan kata fiktif dengan tabel kode karakter; menggambar gambar 8x8 hitam-putih di kertas kotak lalu menuliskannya sebagai deret bit; memilih warna dan membaca kode heksadesimalnya di aplikasi gambar |
 | FND-X1-M4 | Jaringan dan internet (konsep) | membedakan jaringan lokal dan jaringan luas, kabel dan nirkabel, klien dan server; menyebut peran router, switch, dan titik akses; menjelaskan alamat IP, DNS, dan HTTP/HTTPS secara konseptual; menguraikan bagaimana halaman web sampai ke peramban | peta jaringan sekolah (disederhanakan); diagram alur "membuka halaman web" | kegiatan utama: permainan peran (klien, server, DNS memakai kartu) untuk satu permintaan halaman; menggambar peta jaringan lab dari penjelasan guru tanpa alamat atau kredensial nyata; melihat alamat IP lokal komputer lab lewat pengaturan sistem |
 | FND-X1-M5 | Pengiriman data dan pemecahan masalah jaringan dasar | menjelaskan data dikirim dalam potongan (paket) antarperangkat; mengurutkan diagnosis dari fisik (kabel, Wi-Fi) ke alamat IP, DNS, lalu layanan; memakai alat uji sederhana | diagram alir diagnosis; catatan diagnosis tiga skenario | kegiatan utama: kartu skenario gangguan sintetis ("kabel lepas", "alamat salah", "DNS tidak menjawab") dengan simulasi peran; `ping` ke gateway lab dan alamat lokal komputer sendiri; opsional bila lab menyediakan jaringan lokal terisolasi: berbagi satu berkas antarkomputer di jaringan itu; uji ke internet publik hanya bila kebijakan sekolah mengizinkan `[asumsi]` |
-| FND-X1-M6 | Keamanan dasar dan etika digital | menyusun kata sandi yang kuat dan memakai manajer kata sandi; menerapkan autentikasi dua langkah secara sederhana; menerapkan konfigurasi privasi dan keamanan pada akun uji; menjelaskan langkah keamanan konektivitas dasar (kata sandi bawaan perangkat jaringan diganti, jaringan nirkabel terenkripsi, kewaspadaan pada jaringan publik, tanda HTTPS); mengenali pesan tipuan (phishing) dasar; menghargai hak atas kekayaan intelektual | lembar periksa keamanan akun; daftar periksa keamanan konektivitas | audit kata sandi dengan bahan sintetis; mengatur akun uji dengan manajer kata sandi lokal bersumber terbuka `[asumsi]`; demonstrasi autentikasi dua langkah oleh guru (murid tidak wajib memasang apa pun di ponsel pribadi); membandingkan dua konfigurasi privasi pada akun uji; mengenali pesan tipuan sintetis |
+| FND-X1-M6 | Keamanan dasar dan etika digital | menyusun kata sandi yang kuat dan memakai manajer kata sandi; menerapkan autentikasi dua langkah secara sederhana; menerapkan konfigurasi privasi dan keamanan pada akun uji; menjelaskan langkah keamanan konektivitas dasar (kata sandi bawaan perangkat jaringan diganti, jaringan nirkabel terenkripsi, kewaspadaan pada jaringan publik, tanda HTTPS); mengenali pesan tipuan (phishing) dasar; menghargai hak atas kekayaan intelektual; menerapkan kebijakan pemakaian AI kelas (tanpa data pribadi, kata sandi, atau kunci pada layanan AI; mencatat bila keluaran AI dipakai; menyadari lisensi keluaran AI masih berkembang) | lembar periksa keamanan akun; daftar periksa keamanan konektivitas; kartu kebijakan AI kelas | audit kata sandi dengan bahan sintetis; mengatur akun uji dengan manajer kata sandi lokal bersumber terbuka `[asumsi]`; demonstrasi autentikasi dua langkah oleh guru (murid tidak wajib memasang apa pun di ponsel pribadi); membandingkan dua konfigurasi privasi pada akun uji; mengenali pesan tipuan sintetis; menyunting contoh permintaan sintetis ke asisten AI agar bebas dari data pribadi dan rahasia |
 | FND-X1-M7 | Perangkat pengolah dokumen, lembar kerja, dan presentasi `[asumsi]` | memilih perangkat yang sesuai kebutuhan (dokumen, lembar kerja, atau presentasi); menyusun dokumen terstruktur (judul, gaya, daftar, tabel, gambar beratribusi); memakai rumus dasar lembar kerja (jumlah, rata-rata, minimum, maksimum, kondisi sederhana) dan membuat grafik sederhana; menyusun presentasi ringkas dan terbaca (satu gagasan per slide, kontras cukup); menyimpan dan menukar berkas dalam format yang dapat dibuka di perangkat lain (misalnya format terbuka atau PDF) | dokumen laporan satu halaman bergaya; lembar kerja dengan rumus dan satu grafik; presentasi empat slide | menyusun laporan kegiatan klub fiktif dengan judul, daftar, dan satu tabel; merekap nilai sintetis (nama samaran seperti Murid-01) dengan rumus lalu membuat grafik batang; menyusun empat slide tentang satu topik fondasi (misalnya peta jaringan lab) dan mengekspornya ke PDF; perangkat mengikuti kesiapan lab (sumber terbuka atau berbasis web) `[asumsi]`; tidak memakai berkas atau data pribadi siswa |
 
 Catatan perancangan:
@@ -336,6 +338,22 @@ Jalur B, semester 2:
 | B-X2-M10 | (dihapus) | HAKI dan lisensi: sudah dicakup FND-X1-M2 dan M6 (keputusan pemilik); lisensi pada proyek tetap muncul di B-XII1-M11. |
 | B-X2-M11, M12 | B-X2-M11, M12 | Mesin pencari dan dokumentasi; Git. |
 | B-X2-M13, M14 | B-X2-M13, M14 | Tetap. |
+
+#### Kemampuan masuk dari SMP dan penempatan di blok fondasi (v1.4)
+
+Silabus ini tidak mensyaratkan `smp-coding`, mata pelajaran Koding dan KA, ataupun Informatika SMP tertentu: murid kelas X berasal dari SMP dengan bentuk program yang berbeda-beda (`smp-coding` bagian 2) `[asumsi]`. Blok fondasi dan minggu jalur kelas X semester 1 mengajar dari awal, sehingga murid dengan latar SMP yang kuat mengulang sebagian isinya. Pengulangan itu diatur, bukan dibiarkan: fondasi tetap kelas bersama lintas jalur (keputusan pemilik, bagian 9.1), dan murid yang sudah menguasai suatu minggu mengerjakan tugas pendalaman di dalam kelas yang sama, bukan keluar dari kelas.
+
+| Asal di SMP (`smp-coding`) | Minggu silabus ini yang beririsan | Perlakuan di dalam kelas bersama `[asumsi]` |
+| --- | --- | --- |
+| `SMP7-2-M10` (komputer sebagai sistem: masukan, proses, keluaran) | `FND-X1-M1` | Murid yang terlihat menguasainya menjelaskan siklus kepada teman dan membaca spesifikasi komputer lab yang lebih rinci. |
+| `SMP7-2-M2`, `SMP7-2-M3` (biner, teks dan gambar sebagai data; keduanya pengayaan di SMP) | `FND-X1-M3` | Tugas pendalaman: heksadesimal dan kode karakter tanpa lembar bantu. |
+| `SMP8-1-M12` (jaringan lokal, ponsel, dan internet) | `FND-X1-M4`, `FND-X1-M5` | Tugas pendalaman: diagnosis tiga skenario gangguan tanpa petunjuk urutan. |
+| `SMP8-2-M11`, `SMP8-2-M12` (kata sandi, akun, informasi publik dan privat) | `FND-X1-M6` | Tidak dipadatkan: keamanan akun dan kebijakan AI kelas dilatih bagi semua murid. |
+| `SMP8-1-M6`, `SMP8-1-M7`, `SMP7-2-M12` (lembar kerja, grafik, laporan) | `FND-X1-M7` | Tugas pendalaman: rumus kondisi dan grafik dari data sintetis yang lebih besar. |
+| `SMP7-1-M12`, `SMP9-1-M6` (atribusi, izin, lisensi data terbuka) | `FND-X1-M2` | Murid memberi atribusi dan memilih lisensi pada karya sendiri. |
+| `SMP8-2-M2` sampai `SMP8-2-M9` (Python: variabel, percabangan, perulangan, daftar, fungsi) | `A-X1-M9` sampai `A-X1-M12`, `B-X1-M9` sampai `B-X1-M12` | Murid berlatar teks memakai tugas baca-dan-prediksi dan soal setengah jadi, lalu menulis dari halaman kosong; sintaks C++ atau JavaScript tetap dipelajari. |
+
+Pengamatan awal: `FND-X1-M1` memuat tugas awal singkat per topik fondasi (sekitar sepuluh menit `[asumsi]`, tanpa nilai angka dan tanpa catatan di repositori ini) dan ceklis "terlihat" dan "belum terlihat" milik guru, yang menentukan murid mana mengerjakan tugas pendalaman di minggu fondasi tertentu. Murid yang memiliki portofolio `SMP9-2-M13` boleh membawanya sebagai bahan bagi guru; portofolio itu milik murid, bukan syarat, dan tidak disimpan di repositori ini. Kebijakan AI bagian 7.4 berlaku sama bagi semua murid; tugas baca-dan-prediksi ditandai guru "tanpa AI" karena tujuannya melatih membaca dan menelusuri kode. Dasar `[asumsi]`: efek keahlian terbalik dan contoh yang dipudarkan (`docs/riset/ilmu-belajar-kognitif.md` bagian 3.4) serta urutan baca-prediksi-selidiki sebelum menulis (bagian 6.3 riset yang sama).
 
 ### 3.1 Jalur A: Algoritmik dengan C++
 
@@ -437,10 +455,10 @@ Minggu 1-7 adalah blok fondasi (bagian 3.0); minggu jalur dimulai dari M8.
 | M2 | Pemeliharaan program II | mengoptimalkan solusi dan mencatat alasan | catatan optimasi | percepat solusi lambat |
 | M3 | Memodelkan masalah | menerjemahkan soal cerita menjadi graf atau DP | lembar pemodelan | 4 soal cerita |
 | M4 | Backtracking dan pruning lanjutan | memangkas ruang pencarian dengan cerdas | program backtracking | teka-teki angka |
-| M5 | Latihan terpadu I | memilih strategi dan struktur data tepat | solusi dan catatan | set soal bergaya OSN (disusun terpisah) |
-| M6 | Latihan terpadu II | sama, dengan batas waktu | solusi dan catatan | kontes mini kelas |
-| M7 | Latihan terpadu III | menganalisis kesalahan jawaban | catatan analisis galat | tinjau jawaban salah |
-| M8 | Latihan terpadu IV | menyajikan beberapa alternatif solusi dan justifikasi | laporan alternatif | satu soal, dua solusi |
+| M5 | Latihan terpadu I | memilih strategi dan struktur data tepat | solusi dan catatan | set soal bergaya OSN (disusun terpisah); tanpa AI (latihan terpadu) |
+| M6 | Latihan terpadu II | sama, dengan batas waktu | solusi dan catatan | kontes mini kelas, tanpa AI |
+| M7 | Latihan terpadu III | menganalisis kesalahan jawaban | catatan analisis galat | tinjau jawaban salah; tanpa AI (menyelesaikan ulang sendiri) |
+| M8 | Latihan terpadu IV | menyajikan beberapa alternatif solusi dan justifikasi | laporan alternatif | satu soal, dua solusi; tanpa AI |
 | M9 | Ulasan struktur data | memilih struktur data untuk kebutuhan | tabel pemilihan | studi kasus |
 | M10 | Ulasan strategi | memilih antara greedy, DP, pencarian lengkap | tabel pemilihan | studi kasus |
 | M11 | Proyek akhir: rancangan | merancang proyek akhir | dokumen rancangan | pilih topik |
@@ -491,14 +509,14 @@ Minggu 1-7 adalah blok fondasi (bagian 3.0); minggu jalur dimulai dari M8.
 | M2 | TypeScript I: tipe dasar | memberi tipe pada variabel dan fungsi | berkas `.ts` | ubah skrip JS ke TS |
 | M3 | TypeScript II: `interface`, `type`, gabungan, generik dasar | memodelkan data dengan tipe | modul bertipe | model data fiktif |
 | M4 | `tsconfig` dan mode ketat | mengatur kompiler dan memahami galat tipe | `tsconfig.json` | perbaiki galat tipe |
-| M5 | Bun: runtime dan pengelola paket | memakai `bun run`, `bun install` | proyek Bun | skrip dan dependensi |
+| M5 | Bun: runtime dan pengelola paket | memakai `bun run`, `bun install`; memeriksa keberadaan dan reputasi paket sebelum `bun install` (nama paket yang disarankan asisten AI bisa fiktif) | proyek Bun | skrip dan dependensi; memeriksa tiga nama paket di registri sebelum memasangnya (satu nama fiktif disiapkan guru) |
 | M6 | Modul ESM dan paket | memecah kode menjadi modul | proyek multi-modul | pustaka kecil |
 | M7 | Pengujian dengan `bun test` | menulis uji unit | berkas `*.test.ts` | uji fungsi pengurutan |
 | M8 | Struktur data kompleks di TS | memakai `Map`, `Set`, kelas, graf (daftar ketetanggaan) | modul struktur data | graf pertemanan sintetis, BFS |
 | M9 | Strategi algoritmik di TS | menerapkan greedy, rekursi, memoisasi | modul strategi | koin; Fibonacci memoisasi |
 | M10 | Efisiensi dan alternatif solusi | mengukur waktu; membandingkan dua solusi | laporan perbandingan | `performance.now` dua pengurutan |
 | M11 | Kualitas kode | memakai linter dan pemformat; menulis kode terbaca | konfigurasi lint | rapikan proyek |
-| M12 | Alur kerja Git: cabang, pull request, ulasan | meninjau kode sejawat | pull request | tinjau PR teman |
+| M12 | Alur kerja Git: cabang, pull request, ulasan | meninjau kode sejawat dan kode buatan AI | pull request | tinjau PR teman; tinjau satu PR sintetis "buatan AI" berisi cacat tertanam yang disiapkan guru |
 | M13 | Proyek mini | membuat pustaka TS teruji | pustaka dan uji | proyek kelompok |
 | M14 | Asesmen dan refleksi | menunjukkan TS, Bun, dan pengujian | uji tulis dan praktik | kuis kode |
 
@@ -515,7 +533,7 @@ Minggu 1-7 adalah blok fondasi (bagian 3.0); minggu jalur dimulai dari M8.
 | M7 | Visualisasi data | menyajikan data sebagai tabel dan grafik SVG | halaman grafik | grafik batang dari data |
 | M8 | Prediksi sederhana | memakai rata-rata bergerak dan garis kecenderungan | skrip prediksi | prediksi dan galat |
 | M9 | Mengonsumsi API publik | memakai `fetch`, `async/await` | halaman yang memuat data | tampilkan data API publik |
-| M10 | Keamanan aplikasi dan UU | mengenali XSS, rahasia di variabel lingkungan, pokok UU ITE dan UU PDP | lembar periksa | audit aplikasi sendiri |
+| M10 | Keamanan aplikasi dan UU | mengenali XSS, rahasia di variabel lingkungan, pokok UU ITE (beserta perubahannya), ketentuan pidana siber dalam KUHP (UU 1/2023), dan UU PDP | lembar periksa | audit aplikasi sendiri |
 | M11 | Jaringan: HTTP dan pemecahan masalah | membaca permintaan/respons; memakai DevTools untuk troubleshooting | catatan jaringan | diagnosis permintaan gagal |
 | M12 | Penyajian statis (opsional) | menerbitkan situs statis | situs statis | publikasi di lab |
 | M13 | Proyek: aplikasi data | membangun aplikasi data kecil | aplikasi dan laporan | proyek kelompok |
@@ -534,7 +552,7 @@ Minggu 1-7 adalah blok fondasi (bagian 3.0); minggu jalur dimulai dari M8.
 | M7 | Tema, CSS, dan aksesibilitas | menyesuaikan tampilan dan memeriksa kontras dan label | situs yang lebih aksesibel | audit aksesibilitas |
 | M8 | SEO dasar | mengatur judul, deskripsi, dan struktur halaman | halaman teroptimasi | audit judul dan deskripsi |
 | M9 | Pengujian dan gerbang mutu | menjalankan `bun test` dan pemeriksaan proyek | laporan pemeriksaan | perbaiki satu kegagalan |
-| M10 | Rahasia dan konfigurasi | memakai `.env`, tidak meng-commit rahasia | lembar periksa | cari rahasia tak sengaja |
+| M10 | Rahasia dan konfigurasi | memakai `.env`, tidak meng-commit rahasia; tidak menempelkan rahasia ke asisten AI | lembar periksa | cari rahasia tak sengaja; periksa contoh permintaan ke asisten AI dari rahasia |
 | M11 | Dokumentasi dan lisensi | memperbarui dokumen; menjaga atribusi MIT | dokumen proyek | perbarui README |
 | M12 | Ulasan sejawat | meninjau kustomisasi teman | catatan ulasan | tinjau PR |
 | M13 | Proyek | menyiapkan kustomisasi untuk proyek akhir | rencana proyek | rencana kerja |
@@ -553,7 +571,7 @@ Minggu 1-7 adalah blok fondasi (bagian 3.0); minggu jalur dimulai dari M8.
 | M7 | Sprint 3: penyempurnaan | memperbaiki kualitas dan aksesibilitas | rilis kandidat | perbaikan |
 | M8 | Sprint 3: dokumentasi | menulis dokumentasi pengguna | dokumen | panduan pengguna |
 | M9 | Ulasan keamanan | memeriksa rahasia, dependensi, dan masukan | laporan keamanan | audit |
-| M10 | Privasi dan hukum | memeriksa pokok UU ITE dan UU PDP terkait proyek | catatan kepatuhan | daftar periksa |
+| M10 | Privasi dan hukum | memeriksa pokok UU ITE (beserta perubahannya), ketentuan pidana siber dalam KUHP (UU 1/2023), dan UU PDP terkait proyek | catatan kepatuhan | daftar periksa |
 | M11 | Ulasan sejawat | menilai proyek tim lain | catatan ulasan | ulasan |
 | M12 | Presentasi | mendemonstrasikan proyek | demo | presentasi |
 | M13 | Portofolio dan refleksi | mengarsipkan karya dan merefleksikan proses | portofolio | refleksi |
@@ -726,7 +744,7 @@ Minggu 1-7 adalah blok fondasi (bagian 3.0); minggu jalur dimulai dari M8.
 | Minggu | Topik | Tujuan | Keluaran | Latihan |
 | --- | --- | --- | --- | --- |
 | M1 | Jaringan nirkabel dan perangkat IoT | menjelaskan penghubungan papan ke jaringan lab dan peran alamat IP | papan terhubung ke jaringan lab | cetak alamat IP papan (F) |
-| M2 | Keamanan konektivitas | menyimpan kredensial di luar kode, mengganti sandi bawaan, memakai jaringan lab terpisah | lembar periksa keamanan | audit kode dari rahasia yang tertanam |
+| M2 | Keamanan konektivitas | menyimpan kredensial di luar kode, mengganti sandi bawaan, memakai jaringan lab terpisah; tidak menempelkan kredensial atau kunci ke layanan AI | lembar periksa keamanan | audit kode dari rahasia yang tertanam; periksa contoh permintaan ke asisten AI dari kredensial |
 | M3 | Klien HTTP | mengirim data sensor ke server lokal guru | program klien | kirim suhu ke server lab (F) |
 | M4 | Server mini | melayani halaman data sederhana dari papan atau komputer lab | halaman data | halaman suhu lokal (F) |
 | M5 | Publikasi-langganan: konsep | menjelaskan pola publikasi-langganan dan penengah pesan (broker) | diagram alir pesan | permainan peran broker |
@@ -754,7 +772,7 @@ Minggu 1-7 adalah blok fondasi (bagian 3.0); minggu jalur dimulai dari M8.
 | M8 | Membandingkan strategi | mengukur dan menjustifikasi pilihan strategi | laporan perbandingan | waktu tempuh dan galat dua strategi |
 | M9 | Kalibrasi dan pengujian sistematis | merancang uji berulang dan mencatat hasil | tabel hasil uji | sepuluh kali uji per strategi |
 | M10 | Daya dan keselamatan baterai | memilih sumber daya aman dan membaca tegangan | lembar periksa daya | rencana daya robot |
-| M11 | Hukum dan etika sensor | menjelaskan pokok UU ITE dan UU PDP terkait perangkat yang merekam | catatan kepatuhan | daftar periksa proyek |
+| M11 | Hukum dan etika sensor | menjelaskan pokok UU ITE (beserta perubahannya), ketentuan pidana siber dalam KUHP (UU 1/2023), dan UU PDP terkait perangkat yang merekam | catatan kepatuhan | daftar periksa proyek |
 | M12 | Dokumentasi dan pemeliharaan | menulis dokumen perakitan dan panduan pengguna | dokumen proyek | panduan perakitan |
 | M13 | Proyek | menyiapkan rancangan proyek akhir | rencana proyek | rencana kerja |
 | M14 | Asesmen dan refleksi | menunjukkan rancangan, kendali, dan pengujian | uji tulis dan praktik | kuis |
@@ -832,8 +850,10 @@ pemilik, bagian 9.3; tiga minggu mungkin kurang, perlu diuji di kelas).
   komputer); Python dengan `pandas` dan `scikit-learn` mulai kelas XI
   semester 1; Orange tetap untuk eksplorasi cepat. Rencana mingguan di bawah
   mengikuti opsi ini.
-- Layanan AI daring (generatif) hanya didemonstrasikan guru; murid tidak
-  memakainya langsung dan tidak wajib punya akun.
+- Pemakaian AI generatif oleh murid: **bebas dengan etika** (keputusan
+  pemilik 2026-11-19, bagian 9.4; menggantikan aturan v1.2 "hanya
+  didemonstrasikan guru"). Aturannya ada di bagian 7.4; murid tidak wajib
+  punya akun pribadi.
 - Teachable Machine hanya sebagai pengayaan dengan data benda (tanpa wajah
   dan suara).
 - Seri Buku AI SMA belum ditautkan: ditautkan setelah guru membaca isinya dan
@@ -853,11 +873,11 @@ dikutip ADR-0004; peserta adalah anak di bawah umur).
 | --- | --- |
 | Tanpa data pribadi siswa | Data latih, data uji, dan contoh tidak memuat nama, kontak, alamat, nomor identitas, sekolah, atau data lain yang dapat mengenali murid. Data bersifat sintetis atau dataset terbuka dan legal. |
 | Tanpa wajah dan suara siswa | Wajah, suara, dan foto murid atau orang lain **tidak** dipakai sebagai data latih atau uji (termasuk di Teachable Machine). Bahan latih berupa benda, gambar atau pola sintetis, atau data tabel. |
-| Tanpa akun pribadi wajib | Tidak ada kegiatan yang mewajibkan murid memiliki atau memakai akun pribadi di layanan daring. Layanan AI daring hanya didemonstrasikan guru (akun sekolah atau guru) tanpa memasukkan data pribadi; syarat usia layanan `[belum terverifikasi]` diperiksa guru lebih dulu. |
-| Tanpa data pribadi pada permintaan | Guru dan murid tidak menaruh data pribadi, rahasia, atau tugas bernilai pada layanan daring. |
+| Tanpa akun pribadi wajib | Tidak ada kegiatan yang mewajibkan murid memiliki akun pribadi di layanan daring. Murid boleh memakai AI generatif dengan etika (bagian 7.4), dengan tunduk pada usia minimum dan ketentuan layanan serta izin sekolah dan orang tua; syarat usia layanan `[belum terverifikasi]` diperiksa guru lebih dulu. |
+| Tanpa data pribadi pada permintaan | Guru dan murid tidak menaruh data pribadi, rahasia, atau tugas bernilai pada layanan daring, termasuk pada permintaan (prompt) ke asisten AI. |
 | Rahasia | Kunci layanan dan `.env` tidak di-commit atau dibagikan. |
 | Data terbuka dan legal | Sumber dataset dan lisensinya dicatat (`D-XI1-M5`); data yang syaratnya tidak jelas tidak dipakai. |
-| Keterbukaan | Murid mencatat bila keluaran AI dipakai dalam tugas; keluaran AI diverifikasi dan tidak disajikan sebagai fakta. |
+| Keterbukaan | Murid mencatat bila keluaran AI dipakai dalam tugas (log pemakaian AI, bagian 7.4); keluaran AI diverifikasi dan tidak disajikan sebagai fakta. |
 | Hasil karya | Model dan data hasil latih tidak memuat data pribadi; tidak ada data murid disimpan di repositori ini. |
 | Kebijakan sekolah | Kebijakan sekolah dan orang tua tentang layanan AI dan perangkat diikuti; penyusun tidak memverifikasi kebijakan Kemendikdasmen tentang AI di sekolah `[belum terverifikasi]`. |
 
@@ -889,7 +909,7 @@ Minggu 1-7 adalah blok fondasi (bagian 3.0); minggu jalur dimulai dari M8.
 | M8 | Pengelompokan tanpa label | melakukan pengelompokan dan menafsirkan kelompok | alur pengelompokan | kelompokkan data sintetis |
 | M9 | Visualisasi untuk bercerita | memilih grafik yang tepat dan jujur | satu halaman visual | grafik dari data sintetis |
 | M10 | Teks sebagai data | menjelaskan teks sebagai fitur; menggolongkan teks sintetis | alur teks | pisahkan kalimat sintetis ke dua kategori |
-| M11 | AI generatif dan verifikasi | menjelaskan cara kerja kasar dan keterbatasannya (jawaban keliru yang meyakinkan); memverifikasi keluaran | lembar verifikasi | guru mendemonstrasikan; murid memeriksa klaim dengan sumber (tanpa akun murid) |
+| M11 | AI generatif dan verifikasi | menjelaskan cara kerja kasar dan keterbatasannya (jawaban keliru yang meyakinkan); memverifikasi keluaran; membedakan AI sebagai subjek (yang dipelajari) dan AI sebagai alat menulis kode; menunjukkan bahwa perintah yang sama dapat memberi keluaran berbeda | lembar verifikasi | perintah yang sama dijalankan berulang dan keluarannya dibandingkan (demonstrasi guru, atau murid sendiri sesuai kebijakan AI, bagian 7.4); murid memeriksa klaim dengan sumber |
 | M12 | HAKI, lisensi data, dan AI | membaca lisensi data; menjelaskan isu hak cipta keluaran generatif | tabel lisensi | baca satu lisensi data terbuka |
 | M13 | Proyek mini | menyelesaikan satu pertanyaan dengan data sintetis dari data hingga evaluasi | laporan | proyek kelompok |
 | M14 | Asesmen dan refleksi | menunjukkan alur data-model-evaluasi dan etika dasar | uji tulis dan praktik; jurnal | kuis |
@@ -928,7 +948,7 @@ Minggu 1-7 adalah blok fondasi (bagian 3.0); minggu jalur dimulai dari M8.
 | M9 | Menjelaskan keputusan model | menafsirkan fitur berpengaruh dan keterbatasan penjelasan | catatan penjelasan | tafsirkan satu model |
 | M10 | Penyalahgunaan AI dan verifikasi konten | mengenali konten palsu, penipuan, dan cara memverifikasi teks, gambar, video | lembar periksa | periksa contoh sintetis |
 | M11 | Layanan lewat API (opsional) | menjelaskan cara aplikasi memakai model lewat layanan; menjaga rahasia | catatan arsitektur | gambar alur permintaan; tanpa kunci pribadi |
-| M12 | Kartu model dan dokumentasi | mendokumentasikan data, tujuan, batasan, dan risiko model | kartu model | tulis kartu model proyek |
+| M12 | Kartu model dan dokumentasi | mendokumentasikan data, tujuan, batasan, dan risiko model; menyatakan perkiraan biaya komputasi dan energi beserta ketidakpastiannya | kartu model (dengan baris biaya komputasi dan energi) | tulis kartu model proyek; sertakan baris perkiraan biaya komputasi dan energi (rentang kasar; tulis "tidak diketahui" bila tak dapat diperkirakan) |
 | M13 | Proyek mini | mengerjakan satu proyek model dari data hingga kartu model | program dan laporan | proyek kelompok |
 | M14 | Asesmen dan refleksi | menunjukkan model, evaluasi, dan etika | uji tulis dan praktik | kuis kode |
 
@@ -939,13 +959,13 @@ Minggu 1-7 adalah blok fondasi (bagian 3.0); minggu jalur dimulai dari M8.
 | M1 | Merumuskan proyek akhir | menentukan masalah dan kebutuhan pengguna fiktif | dokumen kebutuhan | wawancara pengguna fiktif |
 | M2 | Studi kasus AI I | menimbang manfaat dan risiko dari sumber publik (mis. kesehatan, pendidikan) | catatan kasus | baca satu kasus dan tulis manfaat dan risikonya |
 | M3 | Studi kasus AI II | menimbang manfaat dan risiko pada bidang lain (mis. transportasi, pertanian, budaya) | catatan kasus | idem |
-| M4 | Hukum dan kebijakan | menjelaskan pokok UU ITE dan UU PDP terkait proyek AI | daftar periksa kepatuhan | periksa rancangan proyek |
+| M4 | Hukum dan kebijakan | menjelaskan pokok UU ITE (beserta perubahannya), ketentuan pidana siber dalam KUHP (UU 1/2023), dan UU PDP terkait proyek AI | daftar periksa kepatuhan | periksa rancangan proyek |
 | M5 | Menyiapkan data proyek | memilih data terbuka dan legal atau menyintesis data | catatan sumber dan data | siapkan data proyek |
 | M6 | Garis dasar dan metrik | menentukan metrik dan model pembanding sederhana | laporan garis dasar | hitung garis dasar |
 | M7 | Iterasi model I | memperbaiki model berdasarkan bukti | catatan eksperimen | satu perbaikan terukur |
 | M8 | Iterasi model II | mencatat eksperimen agar dapat diulang | tabel eksperimen | tiga eksperimen |
 | M9 | Ulasan sejawat | menilai data dan model tim lain | catatan ulasan | ulasan |
-| M10 | Kualitas kode dan keterulangan | merapikan kode; menetapkan benih acak; menulis README | proyek rapi | refaktor satu skrip |
+| M10 | Kualitas kode dan keterulangan | merapikan kode; menetapkan benih acak; menulis README; mencatat versi model dan perintah bila AI dipakai | proyek rapi | refaktor satu skrip; catat versi model dan perintah AI yang dipakai di README |
 | M11 | Penilaian risiko dan etika proyek | memakai daftar periksa risiko dan dampak | laporan risiko | audit proyek sendiri |
 | M12 | Menyajikan hasil | menyajikan temuan dengan grafik dan narasi jujur | draf presentasi | latihan presentasi |
 | M13 | Proyek | menyiapkan proyek akhir | rencana dan kemajuan | rencana kerja |
@@ -1216,7 +1236,7 @@ adalah pengayaan di luar rumusan CP; kemiripannya dicatat terpisah di bagian
 | F-LD-d | merancang kebutuhan sistem | B-XII2-M1..M2; C-XII1-M1..M2 | B, C |
 | F-LD-e | keamanan jaringan lanjut | B-XI2-M10; C-XI2-M2 | B (parsial), C (parsial) |
 | F-LD-f | mengkreasi konten digital | B-XII1-M6..M7; B-XII2-M3..M8 | B |
-| F-LD-g | hukum (UU ITE, UU PDP) | B-XI2-M10; B-XII2-M10; C-XII1-M11 | B, C (parsial) |
+| F-LD-g | hukum (UU ITE, KUHP UU 1/2023, UU PDP) | B-XI2-M10; B-XII2-M10; C-XII1-M11 | B, C (parsial) |
 | F-LD-i | kata sandi dan autentikasi | B-XII1-M10; C-XI2-M2 | B (parsial), C (parsial) |
 | F-AD-a | data terbuka, keputusan, prediksi | A-XI2-M9..M13; B-XI2-M4..M8; C-XI2-M9..M12 | A, B, C |
 | F-AP-a | konsep strategi algoritmik | A-XI1-M3..M12; A-XI2-M1..M4; B-XI1-M9; C-XI1-M5..M8; C-XII1-M6..M8 | A, B, C (parsial) |
@@ -1280,7 +1300,7 @@ Informatika `[belum terverifikasi]`.
 | D | E-BK-b | kualitas dan pelabelan data | D-X1-M9, M13; D-X2-M1 | Rendah-sedang: kualitas dan pelabelan data. |
 | D | F-LD-b | verifikasi konten buatan AI | D-X2-M11; D-XI2-M10 | Rendah-sedang: verifikasi konten buatan AI. |
 | D | E-LD-g | lisensi data dan keluaran generatif | D-X2-M12 | Rendah: lisensi data dan keluaran generatif. |
-| D | F-LD-g | pelindungan data pribadi dan UU ITE | D-X2-M3; D-XII1-M4 | Rendah: pelindungan data pribadi dan UU ITE sebatas pokok. |
+| D | F-LD-g | pelindungan data pribadi, UU ITE, dan ketentuan pidana siber dalam KUHP | D-X2-M3; D-XII1-M4 | Rendah: pelindungan data pribadi, UU ITE, dan ketentuan pidana siber dalam KUHP sebatas pokok. |
 | D | E-LD-l | privasi pada layanan AI daring | D-X2-M3 | Rendah: privasi pada layanan AI daring. |
 | D | F-AP-d | memakai library untuk model | D-XI1-M3..M4, M9; D-XI2-M2..M8 | Rendah, hanya karena alat memakai coding (Python): memakai library, tetapi struktur data kompleks bukan fokus. |
 | E | F-BK-b | membandingkan algoritma kuantum dengan pendekatan klasik | E-XII1-M5; E-XI2-M12 | Latihan serupa: membandingkan Grover dengan pencarian linear dan Deutsch-Jozsa dengan pendekatan klasik; tidak dihitung. |
@@ -1449,7 +1469,7 @@ Skor ini penilaian penyusun, bukan pengukuran.
 | B | Komputer dengan Bun (versi mengikuti `awcms-one`, saat ini 1.4.4), Node tidak wajib, peramban modern, Git, editor; akses internet untuk paket. |
 | B (opsi 1 kelas XII) | Satu atau beberapa mesin lab berkemampuan menjalankan Docker dan PostgreSQL; spesifikasi minimum `[belum terverifikasi]`. |
 | C | ESP32 DevKit (satu per kelompok tiga murid; set robot kelas XII bergilir bila anggaran ada), komputer lab dengan kompiler C++ dan alat unggah, komponen elektronik dasar, daya USB atau baterai bertegangan rendah tanpa listrik jaringan; jaringan lab terpisah dan penengah pesan lokal di komputer guru untuk kelas XI semester 2; sekolah tanpa perangkat: set dipinjamkan mitra bergilir, simulator sebagai latihan (dukungan simulator `[belum terverifikasi]`). |
-| D | Komputer lab dengan Orange Data Mining (kelas X); Python dengan `pandas` dan `scikit-learn` mulai kelas XI semester 1 (pemasangan paket butuh internet sekali `[belum terverifikasi]`); spesifikasi minimum menunggu survei lab `[belum terverifikasi]`; tanpa akun pribadi murid; layanan AI daring hanya demonstrasi guru. |
+| D | Komputer lab dengan Orange Data Mining (kelas X); Python dengan `pandas` dan `scikit-learn` mulai kelas XI semester 1 (pemasangan paket butuh internet sekali `[belum terverifikasi]`); spesifikasi minimum menunggu survei lab `[belum terverifikasi]`; tanpa akun pribadi wajib untuk murid; pemakaian AI generatif oleh murid bebas dengan etika (bagian 7.4). |
 | E | Peramban untuk Quirk; komputer dengan C++ (jalur A) atau Bun (jalur B) untuk simulator buatan sendiri; demonstrasi guru dengan Python, Qiskit, dan simulator lokal serta, bila ada, satu akun sekolah atau lembaga untuk cloud quantum; tanpa akun murid. |
 | Umum | Akun uji sintetis; tanpa akun pribadi siswa wajib. |
 | Fondasi (kelas X, bersama) | Komputer lab dengan informasi sistem, perangkat pengolah dokumen, lembar kerja, dan presentasi (sumber terbuka atau berbasis web), serta jaringan lab biasa; kartu dan kertas untuk simulasi peran. Komponen bekas dan jaringan lokal terisolasi hanya opsi bila lab menyediakan; internet opsional `[asumsi]`. |
@@ -1471,8 +1491,46 @@ penyelenggara.
   data pribadi nyata; rahasia dan `.env` tidak di-commit.
 - Ketentuan privasi dan keselamatan khusus jalur C, D, dan E ada di bagian
   3.3, 3.4, dan 3.5 (tanpa kamera atau mikrofon yang merekam murid, tanpa wajah
-  dan suara murid sebagai data latih, tanpa akun murid pada layanan AI atau
-  cloud quantum).
+  dan suara murid sebagai data latih, tanpa akun murid pada cloud quantum;
+  pemakaian AI generatif oleh murid bebas dengan etika, aturannya di bagian
+  7.4).
+
+### 7.4 Kebijakan penggunaan AI
+
+Kebijakan ini disusun **khusus untuk program `sma-coding`** (keputusan
+pemilik 2026-11-19, bagian 9.4, issue #139): tiap program memiliki
+kebijakan AI sendiri, bukan satu kerangka lintas program. Dasar buktinya
+ada di [`docs/riset/ai-rekayasa-perangkat-lunak.md`](../../riset/ai-rekayasa-perangkat-lunak.md)
+(riset, bukan keputusan; ketentuan di bawah adalah rancangan penyusun
+`[asumsi]` yang disetujui sebagai bagian dari v1.3).
+
+**Prinsip.** Pemakaian AI generatif oleh murid SMA, di **semua jalur**, adalah
+**bebas dengan etika**. Keputusan ini menggantikan aturan jalur D v1.2
+("layanan AI daring hanya didemonstrasikan guru, tanpa akun murid"). Bebas
+tidak berarti tanpa batas: aturan di bawah berlaku, dan pemakaian tunduk pada
+usia minimum dan ketentuan layanan yang bersangkutan serta izin sekolah dan
+orang tua (syarat usia dan ketentuan tiap layanan `[belum terverifikasi]`;
+guru memeriksanya). Murid tidak diwajibkan memiliki akun pribadi di layanan
+mana pun. Data pribadi murid tetap tidak masuk repositori ini
+([ADR-0004](../../architecture/adr/0004-no-learner-personal-data.md)).
+
+| Aspek | Aturan |
+| --- | --- |
+| Etika | Murid bertanggung jawab penuh atas karya yang diserahkan; tidak menyajikan keluaran AI sebagai karya sendiri tanpa keterangan; tidak memakai AI untuk menipu, menjiplak, atau melanggar lisensi dan hak cipta. Status hak cipta dan lisensi keluaran AI masih berkembang `[belum terverifikasi]`; murid mencatatnya sebagai ketidakpastian, bukan kepastian. |
+| Transparansi dan log | Murid mencatat pemakaian AI pada tugas: alat (dan versi bila diketahui), tujuan, garis besar perintah, bagian keluaran yang dipakai, dan cara memverifikasinya. Log bersifat sintetis dan bebas data pribadi, disimpan murid atau guru, tidak di repositori ini. Di jalur D, catatan versi model dan perintah ada di `D-XII1-M10`. |
+| Kapan tanpa AI | Asesmen sumatif (minggu 14) dan kuis kode; latihan terpadu dan kontes mini jalur A (`A-XII2-M5..M8`), karena tujuannya melatih dan menguji kemampuan menyelesaikan sendiri (*re-solve*); serta tugas lain yang ditandai guru "tanpa AI" di awal tugas. Di luar itu AI boleh dipakai dengan etika dan log. |
+| Privasi | Tidak menaruh data pribadi, kata sandi, kunci, rahasia, atau tugas bernilai pada permintaan ke layanan AI (dilatih di `FND-X1-M6`, `C-XI2-M2`, `B-XII1-M10`). Wajah dan suara murid tidak dipakai sebagai data, termasuk pada alat AI. |
+| Verifikasi kode | Kode buatan AI dibaca, dijalankan, dan diuji sebelum dipakai; murid harus dapat menjelaskan kode yang ia serahkan. Nama paket yang disarankan AI diperiksa keberadaan dan reputasinya sebelum dipasang (`B-XI1-M5`); kode buatan AI ditinjau seperti kode sejawat (`B-XI1-M12`); rahasia tidak ditempel ke asisten AI (`B-XII1-M10`, `C-XI2-M2`). |
+| Penerapan | Guru menetapkan per tugas apakah AI boleh dan mengumumkannya di awal tugas; kebijakan sekolah dan orang tua tentang AI diikuti; kebijakan Kemendikdasmen tentang AI di sekolah `[belum terverifikasi]`. |
+
+**Glosarium (hanya penjelasan istilah, bukan label capaian).** *Vibe coding*:
+istilah populer (2025) untuk menyusun program dengan menyuruh AI dan
+menerima keluarannya tanpa menelaah kodenya; maknanya bergeser dan kini juga
+dipakai lebih luas untuk pemrograman berbantuan AI. *AI-native engineer*:
+istilah populer tanpa definisi baku. Keduanya hanya dijelaskan bila disebut di
+kelas; silabus ini tidak memakainya sebagai label atau sasaran capaian, dan
+yang dituju adalah murid yang memverifikasi serta dapat menjelaskan kode yang
+ia serahkan.
 
 ## 8. Catatan keterbatasan
 
@@ -1486,6 +1544,12 @@ penyelenggara.
   layanan cloud quantum banyak yang `[belum terverifikasi]` (lihat draf
   masing-masing sebagai riwayat) dan harus diselesaikan sebelum anggaran atau
   pelaksanaan. Jalur D dan E bukan bagian CP (bagian 4.5).
+- Butir AI v1.3 (bagian 3.1 sampai 3.4 dan 7.4) adalah rancangan penyusun
+  `[asumsi]` yang disetujui, belum diuji di kelas; syarat usia dan ketentuan
+  layanan AI, status hak cipta keluaran AI, dan kebijakan Kemendikdasmen
+  tentang AI di sekolah `[belum terverifikasi]`; angka biaya komputasi dan
+  energi di `D-XI2-M12` hanya perkiraan kasar dengan ketidakpastian
+  dinyatakan.
 - Rencana mingguan belum diuji di kelas; susunan kelas X v1.1 (tujuh minggu
   fondasi, penggabungan dan penggeseran minggu) adalah rancangan penyusun
   `[asumsi]`; disetujui pemilik sebagai bagian dari v1.1 (bagian 9.2).
@@ -1559,7 +1623,7 @@ tertulis di draf.
 | 6 | Infrastruktur jaringan untuk `C-XI2` | Jaringan lab terpisah dan penengah pesan lokal di komputer guru. |
 | 7 | Murid jalur C yang tidak pernah ambil jalur A | Jalur C mengajarkan dasar pemrograman sendiri (`C-X1-M8..M12`); risiko tujuh minggu padat di kelas X semester 1 diakui. |
 | 8 | Peran mitra pada keselamatan | Mitra menyusun dan mengaudit aturan keselamatan; ditinjau pemilik. |
-| 9 | Isi pasal hukum (UU ITE, UU PDP) di `C-XII1-M11` | Diverifikasi dari sumber resmi sebelum modul ditulis. |
+| 9 | Isi pasal hukum (UU ITE, KUHP, UU PDP) di `C-XII1-M11` | Diverifikasi dari sumber resmi sebelum modul ditulis; pasal ITE yang dicabut KUHP dicatat di bagian 1.2 (v1.4.1). |
 
 **Jalur D (issue #84)**
 
@@ -1567,7 +1631,7 @@ tertulis di draf.
 | --- | --- | --- |
 | 1 | Alat dan coding | Opsi bertahap: tanpa kode di kelas X, Python di kelas XI-XII; cadangan JS/TS selaras jalur B. |
 | 2 | Bahasa pemrograman | Python. |
-| 3 | Layanan AI daring (generatif) | Hanya demonstrasi guru. |
+| 3 | Layanan AI daring (generatif) | Hanya demonstrasi guru. **Digantikan** pada v1.3 oleh keputusan pemilik 2026-11-19: murid SMA bebas dengan etika (bagian 9.4, 7.4). |
 | 4 | Teachable Machine | Pengayaan dengan data benda (tanpa wajah dan suara). |
 | 5 | Seri Buku AI SMA | Ditautkan setelah guru membaca isinya dan lisensi dijelaskan penerbit (minta kejelasan ke InTech Press). |
 | 6 | Prasyarat | Tanpa prasyarat; Python diajarkan di `D-XI1-M2..M4` (tiga minggu mungkin kurang, perlu diuji di kelas). |
@@ -1597,24 +1661,67 @@ memutuskan celah itu ditutup dengan **modul pendamping lintas jalur**
 pemilik, 2026-11-19, untuk jalur A, B, C, D, dan E. Persetujuan ini tidak
 mencakup modul pendamping (#69).
 
+### 9.4 Keputusan atas riset AI dalam rekayasa perangkat lunak; silabus v1.3 (2026-11-19)
+
+Dijawab pemilik lewat dialog pilihan pada 2026-11-19 dan dicatat di issue #139.
+Dasarnya [`docs/riset/ai-rekayasa-perangkat-lunak.md`](../../riset/ai-rekayasa-perangkat-lunak.md)
+(bagian 7, usulan U-02 sampai U-05 untuk program ini). Penyusun tidak mencatat
+keputusan lain di luar yang tertulis di issue.
+
+| No. | Pertanyaan | Keputusan |
+| --- | --- | --- |
+| 1 | Usulan U-02 (kebijakan dan privasi di fondasi dan jalur C) | Diterapkan (opsi rekomendasi): butir pada `FND-X1-M6` dan `C-XI2-M2`; tanpa minggu baru. |
+| 2 | Usulan U-03 (jalur A) | Diterapkan: pernyataan tanpa AI pada latihan terpadu `A-XII2`. Dokumen riset menyebut minggu 6-8; silabus menunjukkan latihan terpadu I-IV di `A-XII2-M5..M8` (kontes mini di M6), sehingga pernyataan dipasang pada keempat minggu itu. |
+| 3 | Usulan U-04 (jalur B) | Diterapkan: meninjau kode buatan AI (`B-XI1-M12`), pemeriksaan paket (`B-XI1-M5`), rahasia (`B-XII1-M10`); tanpa minggu baru. |
+| 4 | Usulan U-05 (jalur D) | Diterapkan: non-determinisme dan pembeda AI sebagai subjek dan alat (`D-X2-M11`), biaya komputasi dan energi sebagai butir singkat dengan ketidakpastian dinyatakan (`D-XI2-M12`), pencatatan versi model dan perintah (`D-XII1-M10`). |
+| 5 | Pemakaian AI generatif oleh murid SMA (semua jalur) | **Bebas dengan etika.** Menggantikan keputusan jalur D v1.2 (bagian 9.3 no. 3). Data pribadi murid tetap tidak masuk repositori (ADR-0004); pemakaian tunduk pada usia minimum dan ketentuan layanan serta izin sekolah dan orang tua. |
+| 6 | Bentuk kebijakan AI | Disusun **per program**; untuk program ini bagian 7.4. |
+| 7 | Istilah "vibe coding" dan "AI-native engineer" | Hanya dijelaskan sebagai glosarium bila disebut (bagian 7.4), bukan label capaian. |
+
+**Silabus v1.3.** Status tetap DISETUJUI pemilik, 2026-11-19, untuk jalur A, B,
+C, D, dan E, dengan perubahan di atas. Kode minggu, jumlah minggu, pemetaan CP,
+dan jembatan OSN tidak berubah.
+
+### 9.5 Keputusan atas penyelarasan jembatan antarprogram; silabus v1.4 (2026-11-19)
+
+Dijawab pemilik lewat dialog pilihan pada 2026-11-19 dan dicatat di issue #177
+(rancangan: [`docs/programs/rancangan-jembatan-antarprogram.md`](../rancangan-jembatan-antarprogram.md),
+bagian 6). Penyusun tidak mencatat keputusan lain di luar yang tertulis di issue.
+
+| No. | Pertanyaan | Keputusan |
+| --- | --- | --- |
+| 1 | K1 (pengulangan di awal program atas) | Opsi 1 (rekomendasi): pengamatan singkat dan tugas pendalaman di dalam kelas yang sama, tanpa tes, tanpa nilai angka, tanpa catatan di repositori. |
+| 2 | K3 (blok fondasi bagi lulusan SMP berpengalaman) | Opsi 1 (rekomendasi): subbagian baru di bagian 3.0; fondasi tetap kelas bersama lintas jalur (keputusan 9.1); murid berpengalaman tidak dibebaskan dari minggu fondasi. |
+| 3 | K7 (pengodean tabel baru) | Opsi 1 (rekomendasi): tabel dicerminkan di `data/sma-coding/smp-bridge.json` dan kode minggu SMP diperiksa silang terhadap korpus `smp-coding` (ADR-0010). |
+
+**Silabus v1.4.** Status tetap DISETUJUI pemilik, 2026-11-19, untuk jalur A, B,
+C, D, dan E, dengan tambahan di atas. Kode minggu, jumlah minggu, pemetaan CP,
+dan jembatan OSN tidak berubah.
+
 ## 10. Daftar rujukan
 
 | Rujukan | Status |
 | --- | --- |
 | Badan Standar, Kurikulum, dan Asesmen Pendidikan, Kemendikdasmen, *Panduan Mata Pelajaran Informatika, Fase D – F*, 2025. `https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf` | Dibuka dan diekstrak, 2026-11-18. |
 | Salinan di portal kurikulum: `https://kurikulum.kemdikbud.go.id/file/panduan/dokumen/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf` | Tidak dibuka (tidak terjangkau). |
-| Keputusan Kepala BSKAP Nomor 046/H/KR/2025 tentang Capaian Pembelajaran (PAUD, SD, SMP, SMA) | `[belum terverifikasi]`; hanya dari situs sekunder; URL resmi tidak ditemukan. |
+| Keputusan Kepala BSKAP Nomor 046/H/KR/2025 tentang Capaian Pembelajaran (PAUD, SD, SMP, SMA) | Teks PDF dibuka dari `https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf` (subdomain resmi `kemendikdasmen.go.id`, SHA-256 `45809d2c...3394`, 2026-11-19; `[terverifikasi 2026-11-19]`). Padanan di JDIH Kemendikdasmen `[belum terverifikasi]` (tidak ditemukan). |
 | Keputusan Kepala BKPDM Nomor 020 Tahun 2026 | `[belum terverifikasi]`; hanya dari artikel sekunder. |
 | `ahliweb/awcms-one` (README, `docs/template.md`, `package.json`, metadata GitHub) `https://github.com/ahliweb/awcms-one` | Dibuka via GitHub API, 2026-11-18. |
 | `data/osn/topic-families.json` (silabus OSN v2.0, 2026-09-04) | Dibaca di repositori ini. |
 | ADR-0004, ADR-0006, ADR-0007 repositori ini | Dibaca. |
+| JDIH BPK: UU 11/2008 `https://peraturan.bpk.go.id/Details/37589/uu-no-11-tahun-2008` dan UU 1/2023 `https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023` (naskah PDF UU 1/2023 diunduh dari tautan Download halaman itu) | Dibuka dan dibaca, 2026-11-19; dasar v1.4.1 (#238). |
 | [`draf-jalur-c-iot.md`](draf-jalur-c-iot.md), [`draf-jalur-d-ai.md`](draf-jalur-d-ai.md), [`draf-jalur-e-kuantum.md`](draf-jalur-e-kuantum.md) (draf jalur C, D, E; issue #68, #84, #88) | Dasar v1.2; riwayat. Sumber web bertanggal akses 2026-11-19 (platform, harga, alat, layanan cloud quantum) dicatat di draf masing-masing dan banyak yang `[belum terverifikasi]`. |
+| [`docs/riset/ai-rekayasa-perangkat-lunak.md`](../../riset/ai-rekayasa-perangkat-lunak.md) (riset AI dalam rekayasa perangkat lunak; keputusan pemilik di issue #139) | Dasar v1.3; dibaca di repositori ini. Riset, bukan transkripsi sumber resmi. |
 | Silabus v1.0 (disetujui 2026-11-18; tersimpan di riwayat git) dan [`usulan-fondasi-kelas-x.md`](usulan-fondasi-kelas-x.md) (usulan blok fondasi, issue #86) | Dasar v1.1; dibaca di repositori ini. |
 
 ## Changelog
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v1.4.1 | 2026-11-19 | Revisi patch atas instruksi pemilik 2026-11-19 ("update peraturan"), issue #238: rumusan dasar hukum pada `B-XI2-M10`, `B-XII2-M10`, `C-XII1-M11`, `D-XII1-M4`, butir `F-LD-g` (bagian 4.1, 4.5), dan keputusan 9 diselaraskan dengan UU 1/2023 (KUHP), yang mencabut sebagian pasal pidana UU ITE; baris baru di bagian 1.2 mencatat sumber (JDIH BPK, dibuka 2026-11-19). Kode minggu, jumlah minggu, pemetaan CP, dan jalur tidak berubah. |
+| v1.4.0 | 2026-11-19 | Revisi minor yang disetujui pemilik lewat keputusan #177 (bagian 9.5): subbagian baru di bagian 3.0, "Kemampuan masuk dari SMP dan penempatan di blok fondasi" (tidak mensyaratkan `smp-coding`; tujuh baris irisan minggu SMP dengan fondasi dan minggu jalur A dan B; pengamatan awal di `FND-X1-M1` dan tugas pendalaman di dalam kelas bersama); dicerminkan di `data/sma-coding/smp-bridge.json`. Kode minggu, jumlah minggu, pemetaan CP, jalur, dan jembatan OSN tidak berubah (#177). |
+| v1.3.1 | 2026-11-19 | Revisi patch: status verifikasi sumber (SK 046, SKKNI 282/2016); isi kurikulum lain tidak berubah. |
+| v1.3.0 | 2026-11-19 | Disetujui pemilik lewat keputusan 2026-11-19 (issue #139; bagian 9.4). Menambahkan butir AI tanpa minggu baru: kebijakan dan privasi pemakaian AI (`FND-X1-M6`, `C-XI2-M2`), tanpa AI pada latihan terpadu jalur A (`A-XII2-M5..M8`), tinjau kode buatan AI, pemeriksaan paket, dan rahasia (`B-XI1-M12`, `B-XI1-M5`, `B-XII1-M10`), non-determinisme, biaya komputasi dan energi, dan pencatatan versi model dan perintah (`D-X2-M11`, `D-XI2-M12`, `D-XII1-M10`). Aturan jalur D "layanan AI daring hanya didemonstrasikan guru" diganti: pemakaian AI generatif oleh murid SMA bebas dengan etika (bagian 3.4, 7.2, 7.3, 9.3, 9.4). Menambahkan bagian 7.4 "Kebijakan penggunaan AI" (per program; etika, log, kapan tanpa AI, privasi, verifikasi kode, glosarium istilah). Kode dan jumlah minggu, pemetaan CP, dan jembatan OSN tidak berubah. |
 | v1.2.0 | 2026-11-19 | Disetujui pemilik program untuk jalur A, B, C, D, dan E (issue #68, #84, #88; bagian 9.3). Menambahkan jalur C (IoT dan robotika), D (kecerdasan buatan dan analisis data), dan E (komputasi kuantum, kelas XI-XII, awalan kode `E-`) beserta rencana mingguan, tujuan, pemetaan CP (jalur C digabung ke bagian 4.1 dan 4.2 dengan tanda parsial per jalur; jalur D dan E sebagai pengayaan di luar CP pada bagian 4.5, tidak dihitung pemenuhan CP), jembatan OSN jalur C (bagian 5.2), ringkasan jalur (bagian 3.6), dan keputusan pemilik atas semua pertanyaan terbuka draf (opsi rekomendasi). Mencatat celah F-LD-d dan F-LD-e jalur A dicakup modul pendamping (issue #105; bagian 4.3). Bagian 1.1-1.4 (kutipan CP) tidak berubah. Ketiga draf menjadi riwayat. |
 | v1.1.0 | 2026-11-19 | Disetujui pemilik program untuk jalur A dan B (issue #92, bagian 9.2). Menerapkan blok fondasi kelas X tujuh minggu (FND-X1-M1..M7, kelas bersama lintas jalur) sesuai delapan keputusan pemilik (bagian 9.1); kelas X semester 1 dan 2 jalur A dan B disusun ulang (minggu jalur dimulai dari M8; array, string, array dua dimensi / objek dan JSON digeser ke awal semester 2; beberapa minggu digabung); `B-X2-M9`/`M10` dihapus; operasi bit dipindah ke `A-XI1-M3` (pengayaan); pemetaan CP (4.1, 4.3, 4.4) dan jembatan OSN (5) diperbarui. Berkas draf `silabus-v1.1-draf.md` dihapus (isinya kini berkas ini). |
 | v1.1.0-draf | 2026-11-18 | Draf (issue #92, tahap 1) yang menjadi dasar v1.1; belum disetujui saat itu. |

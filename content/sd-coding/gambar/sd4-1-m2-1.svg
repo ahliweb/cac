@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 290" width="560" height="290" role="img" aria-labelledby="t d">
+  <title id="t">Memecah acara kelas menjadi empat bagian</title>
+  <desc id="d">Kotak besar Pentas dongeng kelas di atas. Dari kotak itu empat panah turun ke empat kotak kecil: tempat, pemain, cerita, dan penonton, masing-masing dengan satu tugas.</desc>
+  <rect width="560" height="290" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444444"/>
+    </marker>
+  </defs>
+  <rect x="160" y="18" width="240" height="44" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+  <text x="280" y="45" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#222222">Pentas dongeng kelas</text>
+  <polyline points="280,62 280,105" stroke="#444444" stroke-width="2" fill="none"/>
+  <polyline points="75,105 485,105" stroke="#444444" stroke-width="2" fill="none"/>
+  <polyline points="75,105 75,148" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <rect x="15" y="150" width="120" height="70" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+  <text x="75" y="178" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#222222">TEMPAT</text>
+  <text x="75" y="202" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">Tata kursi</text>
+  <polyline points="212,105 212,148" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <rect x="152" y="150" width="120" height="70" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+  <text x="212" y="178" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#222222">PEMAIN</text>
+  <text x="212" y="202" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">Bagi peran</text>
+  <polyline points="349,105 349,148" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <rect x="289" y="150" width="120" height="70" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+  <text x="349" y="178" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#222222">CERITA</text>
+  <text x="349" y="202" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">Tulis urutan</text>
+  <polyline points="486,105 486,148" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <rect x="426" y="150" width="120" height="70" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+  <text x="486" y="178" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#222222">PENONTON</text>
+  <text x="486" y="202" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">Buat undangan</text>
+  <text x="280" y="262" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#222222">Masalah besar dipecah menjadi bagian kecil. Tiap bagian punya satu tugas.</text>
+</svg>

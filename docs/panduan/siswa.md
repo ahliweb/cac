@@ -105,8 +105,26 @@ Tidak ada butir CP yang dipetakan ke minggu ini dalam pemetaan silabus.
 - [ ] Keluaran selesai: tabel konversi; lembar kode karakter; gambar 8x8 dalam bentuk deret bit
 
 ---
-Sumber: Silabus Pembelajaran Coding SMA, versi 1.2.0, tanggal 2026-11-19.
+Sumber: Silabus Pembelajaran Coding SMA, versi 1.4.1, tanggal 2026-11-19.
 ```
+
+### Memakai AI di program coding SMA
+
+Di program coding SMA, kamu boleh memakai AI generatif **dengan etika**
+(silabus v1.3, bagian 7.4). Artinya:
+
+- Kamu bertanggung jawab atas karya yang kamu serahkan, dan harus bisa
+  menjelaskan kodenya. Baca, jalankan, dan uji dulu kode buatan AI.
+- Catat pemakaianmu: alat apa, untuk apa, bagian mana yang dipakai, dan
+  bagaimana kamu memeriksanya.
+- Jangan menaruh data pribadi, kata sandi, kunci, atau rahasia pada permintaan
+  ke AI.
+- Beberapa kegiatan **tanpa AI**: asesmen sumatif, kuis kode, latihan terpadu
+  dan kontes mini jalur A, serta tugas yang ditandai gurumu. Gurumu
+  mengumumkannya di awal tugas.
+- Layanan AI punya batas usia dan ketentuan sendiri, dan sekolah serta orang
+  tuamu perlu mengizinkan. Kamu tidak wajib punya akun pribadi; tanyakan ke
+  gurumu dulu.
 
 ## Modul materi
 

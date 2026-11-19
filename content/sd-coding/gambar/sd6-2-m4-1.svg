@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 230" width="520" height="230" role="img" aria-labelledby="t d">
+  <title id="t">Melatih lalu menguji mesin kartu</title>
+  <desc id="d">Panah dari kartu contoh berlabel ke mesin, lalu ke tabel petunjuk. Kartu uji masuk ke mesin dan keluar sebagai tebakan: Satu, Dua, atau ragu. Label asli dibuka sesudah tebakan ditulis.</desc>
+  <rect width="520" height="230" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444444"/>
+    </marker>
+  </defs>
+  <text x="140" y="22" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">1. Latih</text>
+  <rect x="10" y="35" width="120" height="60" rx="6" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="70" y="60" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">kartu contoh</text>
+  <text x="70" y="78" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">berlabel</text>
+  <line x1="132" y1="65" x2="168" y2="65" stroke="#444444" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="170" y="35" width="150" height="60" rx="6" fill="#f4f8fd" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="245" y="60" font-family="sans-serif" font-size="13" font-weight="bold" fill="#222222" text-anchor="middle">MESIN KARTU</text>
+  <text x="245" y="78" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">tabel petunjuk</text>
+  <text x="140" y="130" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">2. Uji</text>
+  <rect x="10" y="145" width="120" height="60" rx="6" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="70" y="170" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">kartu uji</text>
+  <text x="70" y="188" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">belum dilihat</text>
+  <line x1="132" y1="175" x2="168" y2="175" stroke="#444444" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="170" y="145" width="150" height="60" rx="6" fill="#f4f8fd" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="245" y="180" font-family="sans-serif" font-size="13" font-weight="bold" fill="#222222" text-anchor="middle">MESIN KARTU</text>
+  <line x1="322" y1="175" x2="358" y2="175" stroke="#444444" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="360" y="145" width="150" height="60" rx="6" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+  <text x="435" y="170" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">tebakan:</text>
+  <text x="435" y="188" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">Satu, Dua, atau ragu</text>
+  <line x1="245" y1="97" x2="245" y2="143" stroke="#444444" stroke-width="2" stroke-dasharray="5,4" marker-end="url(#a)"/>
+  <text x="435" y="75" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">label asli dibuka</text>
+  <text x="435" y="93" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">sesudah tebakan ditulis</text>
+</svg>

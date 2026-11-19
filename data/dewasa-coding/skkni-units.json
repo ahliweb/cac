@@ -1,5 +1,5 @@
 {
-  "syllabusVersion": "1.0.0",
+  "syllabusVersion": "1.2.0",
   "syllabusDate": "2026-11-19",
   "sourceSection": "bagian 5.2",
   "unitsSource": "docs/programs/dewasa-coding/riset.md",
@@ -27,237 +27,237 @@
     {
       "code": "J.620100.001.01",
       "title": "Menganalisis Tools",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.002.01",
       "title": "Menganalisis Skalabilitas Perangkat Lunak",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.003.01",
       "title": "Melakukan Identifikasi Library, Komponen atau Framework yang Diperlukan",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.004.02",
       "title": "Menggunakan Struktur Data",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.005.02",
       "title": "Mengimplementasikan User Interface",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.006.01",
       "title": "Merancang User Experience",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.007.01",
       "title": "Mengimplementasikan Rancangan Entitas dan Keterkaitan Antar Entitas",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.008.01",
       "title": "Merancang Arsitektur Aplikasi",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.009.01",
       "title": "Menggunakan Spesifikasi Program",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.010.01",
       "title": "Menerapkan Perintah Eksekusi Bahasa Pemrograman Berbasis Teks, Grafik, dan Multimedia",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.011.01",
       "title": "Melakukan Instalasi Software Tools Pemrograman",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.012.01",
       "title": "Melakukan Pengaturan Software Tools Pemrograman",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.013.01",
       "title": "Menerapkan Pemecahan Permasalahan Menjadi Subrutin",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.014.01",
       "title": "Menerapkan Metode dan Praktik Penggunaan Kembali (Reusable) Subrutin-Subrutin",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.015.01",
       "title": "Menyusun Fungsi, File atau Sumber Daya Pemrograman yang Lain dalam Organisasi yang Rapi",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.016.01",
       "title": "Menulis Kode dengan Prinsip Sesuai Guidelines dan Best Practices",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.017.02",
       "title": "Mengimplementasikan Pemrograman Terstruktur",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.018.02",
       "title": "Mengimplementasikan Pemrograman Berorientasi Objek",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.019.02",
       "title": "Menggunakan Library atau Komponen Pre-Existing",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.020.02",
       "title": "Menggunakan SQL",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.021.02",
       "title": "Menerapkan Akses Basis Data",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.022.02",
       "title": "Mengimplementasikan Algoritma Pemrograman",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.023.02",
       "title": "Membuat Dokumen Kode Program",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.024.02",
       "title": "Melakukan Migrasi Ke Teknologi Baru",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.025.02",
       "title": "Melakukan Debugging",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.026.01",
       "title": "Menggunakan Source Code Versioning",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.027.01",
       "title": "Mengimplementasikan Network Programming",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.028.02",
       "title": "Menerapkan Pemrograman Real Time",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.029.02",
       "title": "Menerapkan Pemrograman Paralel",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.030.02",
       "title": "Menerapkan Pemrograman Multimedia",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.031.01",
       "title": "Melakukan Profiling Program",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.032.01",
       "title": "Menerapkan Code Review",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.033.02",
       "title": "Melaksanakan Pengujian Unit Program",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.034.02",
       "title": "Melaksanakan Pengujian Integrasi Program",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.035.02",
       "title": "Melaksanakan Pengujian Program Sistem",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.036.02",
       "title": "Melaksanakan Pengujian Kode Program Secara Statis",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.037.01",
       "title": "Melaksanakan Stress Test",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.038.01",
       "title": "Melaksanakan Pengujian Oleh Pengguna (UAT)",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.039.02",
       "title": "Memberikan Petunjuk Teknis Kepada Pelanggan",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.040.01",
       "title": "Membuat Paket Instalasi Perangkat Lunak",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.041.01",
       "title": "Melaksanakan Cutover Aplikasi",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.042.01",
       "title": "Melaksanakan Konfigurasi Perangkat Lunak Sesuai Environment (Development, Staging, Production)",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.043.01",
       "title": "Menganalisis Dampak Perubahan Terhadap Aplikasi",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.044.01",
       "title": "Menerapkan Alert Notification Jika Aplikasi Bermasalah",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.045.01",
       "title": "Melakukan Pemantauan Resource yang Digunakan Aplikasi",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.046.01",
       "title": "Melakukan Logging Aplikasi",
-      "verification": "salinan-belum-terverifikasi"
+      "verification": "judul-cocok-lampiran-resmi"
     },
     {
       "code": "J.620100.047.01",
-      "title": "Melakukan Pembaruan Perangkat Lunak",
-      "verification": "salinan-belum-terverifikasi"
+      "title": "Melakukan Pembaharuan Perangkat Lunak",
+      "verification": "judul-cocok-lampiran-resmi"
     }
   ]
 }

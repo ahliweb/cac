@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 340" width="640" height="340" role="img" aria-labelledby="t d">
+  <title id="t">Kartu dua sisi NYALA dan PADAM serta pesan tiga kartu</title>
+  <desc id="d">Di kiri satu kartu dua sisi: sisi kuning bergambar lampu menyala bertulis NYALA dan sisi abu-abu bergambar lampu mati bertulis PADAM. Di kanan tiga kartu pertanyaan, hujan, dingin, dan berangin, dan di bawahnya tiga kartu jawaban: NYALA, PADAM, NYALA.</desc>
+  <rect width="640" height="340" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="16" fill="#222222" text-anchor="middle">
+    <text x="90" y="30" font-weight="bold">Satu kartu</text>
+    <text x="440" y="30" font-weight="bold">Pesan</text>
+  </g>
+  <rect x="30" y="50" width="120" height="100" rx="10" fill="#fff3b0" stroke="#b86a00" stroke-width="2"/>
+  <circle cx="90" cy="90" r="16" fill="#ffd54f" stroke="#b86a00" stroke-width="2"/>
+  <g stroke="#b86a00" stroke-width="2">
+    <line x1="90" y1="62" x2="90" y2="68"/>
+    <line x1="62" y1="90" x2="68" y2="90"/>
+    <line x1="112" y1="90" x2="118" y2="90"/>
+    <line x1="70" y1="70" x2="74" y2="74"/>
+    <line x1="110" y1="70" x2="106" y2="74"/>
+  </g>
+  <text x="90" y="135" font-family="sans-serif" font-size="16" fill="#222222" text-anchor="middle">NYALA</text>
+  <rect x="30" y="180" width="120" height="100" rx="10" fill="#d9d9d9" stroke="#666666" stroke-width="2"/>
+  <circle cx="90" cy="220" r="16" fill="#bdbdbd" stroke="#666666" stroke-width="2"/>
+  <text x="90" y="265" font-family="sans-serif" font-size="16" fill="#222222" text-anchor="middle">PADAM</text>
+  <g font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">
+    <rect x="230" y="60" width="100" height="60" rx="8" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="280" y="96">hujan?</text>
+    <rect x="345" y="60" width="100" height="60" rx="8" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="395" y="96">dingin?</text>
+    <rect x="460" y="60" width="100" height="60" rx="8" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="510" y="96">berangin?</text>
+    <rect x="230" y="150" width="100" height="60" rx="8" fill="#fff3b0" stroke="#b86a00" stroke-width="2"/>
+    <text x="280" y="186">NYALA</text>
+    <rect x="345" y="150" width="100" height="60" rx="8" fill="#d9d9d9" stroke="#666666" stroke-width="2"/>
+    <text x="395" y="186">PADAM</text>
+    <rect x="460" y="150" width="100" height="60" rx="8" fill="#fff3b0" stroke="#b86a00" stroke-width="2"/>
+    <text x="510" y="186">NYALA</text>
+  </g>
+  <g stroke="#2a5d9f" stroke-width="2" fill="none">
+    <line x1="280" y1="122" x2="280" y2="148"/>
+    <line x1="395" y1="122" x2="395" y2="148"/>
+    <line x1="510" y1="122" x2="510" y2="148"/>
+  </g>
+  <text x="395" y="250" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">hujan ya, dingin tidak, berangin ya</text>
+</svg>

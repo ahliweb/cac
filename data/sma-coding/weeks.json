@@ -1,5 +1,5 @@
 {
-  "syllabusVersion": "1.2.0",
+  "syllabusVersion": "1.4.1",
   "syllabusDate": "2026-11-19",
   "sourceSection": "bagian 3",
   "weeks": [
@@ -885,7 +885,7 @@
       "topic": "Latihan terpadu I",
       "objective": "memilih strategi dan struktur data tepat",
       "output": "solusi dan catatan",
-      "exercise": "set soal bergaya OSN (disusun terpisah)"
+      "exercise": "set soal bergaya OSN (disusun terpisah); tanpa AI (latihan terpadu)"
     },
     {
       "id": "A-XII2-M6",
@@ -898,7 +898,7 @@
       "topic": "Latihan terpadu II",
       "objective": "sama, dengan batas waktu",
       "output": "solusi dan catatan",
-      "exercise": "kontes mini kelas"
+      "exercise": "kontes mini kelas, tanpa AI"
     },
     {
       "id": "A-XII2-M7",
@@ -911,7 +911,7 @@
       "topic": "Latihan terpadu III",
       "objective": "menganalisis kesalahan jawaban",
       "output": "catatan analisis galat",
-      "exercise": "tinjau jawaban salah"
+      "exercise": "tinjau jawaban salah; tanpa AI (menyelesaikan ulang sendiri)"
     },
     {
       "id": "A-XII2-M8",
@@ -924,7 +924,7 @@
       "topic": "Latihan terpadu IV",
       "objective": "menyajikan beberapa alternatif solusi dan justifikasi",
       "output": "laporan alternatif",
-      "exercise": "satu soal, dua solusi"
+      "exercise": "satu soal, dua solusi; tanpa AI"
     },
     {
       "id": "A-XII2-M9",
@@ -1338,9 +1338,9 @@
       "phase": "F",
       "week": 5,
       "topic": "Bun: runtime dan pengelola paket",
-      "objective": "memakai `bun run`, `bun install`",
+      "objective": "memakai `bun run`, `bun install`; memeriksa keberadaan dan reputasi paket sebelum `bun install` (nama paket yang disarankan asisten AI bisa fiktif)",
       "output": "proyek Bun",
-      "exercise": "skrip dan dependensi"
+      "exercise": "skrip dan dependensi; memeriksa tiga nama paket di registri sebelum memasangnya (satu nama fiktif disiapkan guru)"
     },
     {
       "id": "B-XI1-M6",
@@ -1429,9 +1429,9 @@
       "phase": "F",
       "week": 12,
       "topic": "Alur kerja Git: cabang, pull request, ulasan",
-      "objective": "meninjau kode sejawat",
+      "objective": "meninjau kode sejawat dan kode buatan AI",
       "output": "pull request",
-      "exercise": "tinjau PR teman"
+      "exercise": "tinjau PR teman; tinjau satu PR sintetis \"buatan AI\" berisi cacat tertanam yang disiapkan guru"
     },
     {
       "id": "B-XI1-M13",
@@ -1585,7 +1585,7 @@
       "phase": "F",
       "week": 10,
       "topic": "Keamanan aplikasi dan UU",
-      "objective": "mengenali XSS, rahasia di variabel lingkungan, pokok UU ITE dan UU PDP",
+      "objective": "mengenali XSS, rahasia di variabel lingkungan, pokok UU ITE (beserta perubahannya), ketentuan pidana siber dalam KUHP (UU 1/2023), dan UU PDP",
       "output": "lembar periksa",
       "exercise": "audit aplikasi sendiri"
     },
@@ -1767,9 +1767,9 @@
       "phase": "F",
       "week": 10,
       "topic": "Rahasia dan konfigurasi",
-      "objective": "memakai `.env`, tidak meng-commit rahasia",
+      "objective": "memakai `.env`, tidak meng-commit rahasia; tidak menempelkan rahasia ke asisten AI",
       "output": "lembar periksa",
-      "exercise": "cari rahasia tak sengaja"
+      "exercise": "cari rahasia tak sengaja; periksa contoh permintaan ke asisten AI dari rahasia"
     },
     {
       "id": "B-XII1-M11",
@@ -1949,7 +1949,7 @@
       "phase": "F",
       "week": 10,
       "topic": "Privasi dan hukum",
-      "objective": "memeriksa pokok UU ITE dan UU PDP terkait proyek",
+      "objective": "memeriksa pokok UU ITE (beserta perubahannya), ketentuan pidana siber dalam KUHP (UU 1/2023), dan UU PDP terkait proyek",
       "output": "catatan kepatuhan",
       "exercise": "daftar periksa"
     },
@@ -2482,9 +2482,9 @@
       "phase": "F",
       "week": 2,
       "topic": "Keamanan konektivitas",
-      "objective": "menyimpan kredensial di luar kode, mengganti sandi bawaan, memakai jaringan lab terpisah",
+      "objective": "menyimpan kredensial di luar kode, mengganti sandi bawaan, memakai jaringan lab terpisah; tidak menempelkan kredensial atau kunci ke layanan AI",
       "output": "lembar periksa keamanan",
-      "exercise": "audit kode dari rahasia yang tertanam"
+      "exercise": "audit kode dari rahasia yang tertanam; periksa contoh permintaan ke asisten AI dari kredensial"
     },
     {
       "id": "C-XI2-M3",
@@ -2781,7 +2781,7 @@
       "phase": "F",
       "week": 11,
       "topic": "Hukum dan etika sensor",
-      "objective": "menjelaskan pokok UU ITE dan UU PDP terkait perangkat yang merekam",
+      "objective": "menjelaskan pokok UU ITE (beserta perubahannya), ketentuan pidana siber dalam KUHP (UU 1/2023), dan UU PDP terkait perangkat yang merekam",
       "output": "catatan kepatuhan",
       "exercise": "daftar periksa proyek"
     },
@@ -3236,9 +3236,9 @@
       "phase": "E",
       "week": 11,
       "topic": "AI generatif dan verifikasi",
-      "objective": "menjelaskan cara kerja kasar dan keterbatasannya (jawaban keliru yang meyakinkan); memverifikasi keluaran",
+      "objective": "menjelaskan cara kerja kasar dan keterbatasannya (jawaban keliru yang meyakinkan); memverifikasi keluaran; membedakan AI sebagai subjek (yang dipelajari) dan AI sebagai alat menulis kode; menunjukkan bahwa perintah yang sama dapat memberi keluaran berbeda",
       "output": "lembar verifikasi",
-      "exercise": "guru mendemonstrasikan; murid memeriksa klaim dengan sumber (tanpa akun murid)"
+      "exercise": "perintah yang sama dijalankan berulang dan keluarannya dibandingkan (demonstrasi guru, atau murid sendiri sesuai kebijakan AI, bagian 7.4); murid memeriksa klaim dengan sumber"
     },
     {
       "id": "D-X2-M12",
@@ -3613,9 +3613,9 @@
       "phase": "F",
       "week": 12,
       "topic": "Kartu model dan dokumentasi",
-      "objective": "mendokumentasikan data, tujuan, batasan, dan risiko model",
-      "output": "kartu model",
-      "exercise": "tulis kartu model proyek"
+      "objective": "mendokumentasikan data, tujuan, batasan, dan risiko model; menyatakan perkiraan biaya komputasi dan energi beserta ketidakpastiannya",
+      "output": "kartu model (dengan baris biaya komputasi dan energi)",
+      "exercise": "tulis kartu model proyek; sertakan baris perkiraan biaya komputasi dan energi (rentang kasar; tulis \"tidak diketahui\" bila tak dapat diperkirakan)"
     },
     {
       "id": "D-XI2-M13",
@@ -3691,7 +3691,7 @@
       "phase": "F",
       "week": 4,
       "topic": "Hukum dan kebijakan",
-      "objective": "menjelaskan pokok UU ITE dan UU PDP terkait proyek AI",
+      "objective": "menjelaskan pokok UU ITE (beserta perubahannya), ketentuan pidana siber dalam KUHP (UU 1/2023), dan UU PDP terkait proyek AI",
       "output": "daftar periksa kepatuhan",
       "exercise": "periksa rancangan proyek"
     },
@@ -3769,9 +3769,9 @@
       "phase": "F",
       "week": 10,
       "topic": "Kualitas kode dan keterulangan",
-      "objective": "merapikan kode; menetapkan benih acak; menulis README",
+      "objective": "merapikan kode; menetapkan benih acak; menulis README; mencatat versi model dan perintah bila AI dipakai",
       "output": "proyek rapi",
-      "exercise": "refaktor satu skrip"
+      "exercise": "refaktor satu skrip; catat versi model dan perintah AI yang dipakai di README"
     },
     {
       "id": "D-XII1-M11",

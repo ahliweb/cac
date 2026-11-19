@@ -18,6 +18,7 @@
  */
 
 import type { z } from "zod";
+import { MODULES_FILE_NAME } from "../schema/module";
 import { tkBridgeFileSchema } from "../schema/tk-bridge";
 import { TK_GROUPS, TK_SEMESTERS, TK_WEEKS_PER_SEMESTER } from "../schema/tk-common";
 import { tkCpElementsFileSchema } from "../schema/tk-cp-elements";
@@ -112,7 +113,8 @@ function schemaFindings(source: CorpusSource) {
   const registered = new Set(TK_DATA_FILE_REGISTRY.map((entry) => entry.file));
   let filesUnregistered = 0;
   for (const file of source.keys()) {
-    if (!registered.has(file)) {
+    // modules.json is the optional learning-module index (ADR-0007), validated by `moduleFindings`.
+    if (!registered.has(file) && file !== MODULES_FILE_NAME) {
       filesUnregistered += 1;
       findings.push(
         error(

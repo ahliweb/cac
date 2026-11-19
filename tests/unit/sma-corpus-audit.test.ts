@@ -51,11 +51,11 @@ function messages(result: ReturnType<typeof audit>, file: string): string {
 }
 
 describe("auditSmaCorpus on the committed corpus", () => {
-  test("is clean and validates all seven files", () => {
+  test("is clean and validates all eight files", () => {
     const result = audit(corpus());
     expect(result.findings).toEqual([]);
     expect(result.ok).toBe(true);
-    expect(result.summary.filesValidated).toBe(7);
+    expect(result.summary.filesValidated).toBe(8);
     expect(result.summary.filesMissing).toBe(0);
     expect(result.summary.filesUnregistered).toBe(0);
   });

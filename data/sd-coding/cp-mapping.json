@@ -1,0 +1,87 @@
+{
+  "syllabusVersion": "1.1.0",
+  "syllabusDate": "2026-11-19",
+  "sourceSection": "bagian 6",
+  "mappings": [
+    {
+      "cpCode": "C-BK-a",
+      "weeksText": "SD5-1-M1, M2, M3",
+      "weeks": ["SD5-1-M1", "SD5-1-M2", "SD5-1-M3"]
+    },
+    {
+      "cpCode": "C-BK-b",
+      "weeksText": "SD5-1-M2, M3, M4, M5; SD6-1-M1",
+      "weeks": ["SD5-1-M2", "SD5-1-M3", "SD5-1-M4", "SD5-1-M5", "SD6-1-M1"]
+    },
+    {
+      "cpCode": "C-BK-c",
+      "weeksText": "SD5-1-M6; SD6-1-M1, M2, M3",
+      "weeks": ["SD5-1-M6", "SD6-1-M1", "SD6-1-M2", "SD6-1-M3"]
+    },
+    {
+      "cpCode": "C-LD-a",
+      "weeksText": "SD5-1-M7; SD6-1-M6",
+      "weeks": ["SD5-1-M7", "SD6-1-M6"]
+    },
+    {
+      "cpCode": "C-LD-b",
+      "weeksText": "SD5-1-M8",
+      "weeks": ["SD5-1-M8"]
+    },
+    {
+      "cpCode": "C-LD-c",
+      "weeksText": "SD5-1-M9, M10; SD6-1-M5, M8",
+      "weeks": ["SD5-1-M9", "SD5-1-M10", "SD6-1-M5", "SD6-1-M8"]
+    },
+    {
+      "cpCode": "C-LD-d",
+      "weeksText": "SD5-1-M10; SD6-1-M5",
+      "weeks": ["SD5-1-M10", "SD6-1-M5"]
+    },
+    {
+      "cpCode": "C-LD-e",
+      "weeksText": "SD6-1-M7, M8",
+      "weeks": ["SD6-1-M7", "SD6-1-M8"]
+    },
+    {
+      "cpCode": "C-LE-a",
+      "weeksText": "SD5-2-M1, M4; SD6-2-M1, M2",
+      "weeks": ["SD5-2-M1", "SD5-2-M4", "SD6-2-M1", "SD6-2-M2"]
+    },
+    {
+      "cpCode": "C-LE-b",
+      "weeksText": "SD5-2-M4; SD6-2-M2, M3",
+      "weeks": ["SD5-2-M4", "SD6-2-M2", "SD6-2-M3"]
+    },
+    {
+      "cpCode": "C-LE-c",
+      "weeksText": "SD5-2-M2",
+      "weeks": ["SD5-2-M2"]
+    },
+    {
+      "cpCode": "C-LE-d",
+      "weeksText": "SD5-2-M3",
+      "weeks": ["SD5-2-M3"]
+    },
+    {
+      "cpCode": "C-LE-e",
+      "weeksText": "SD6-2-M3",
+      "weeks": ["SD6-2-M3"]
+    },
+    {
+      "cpCode": "C-PP-a",
+      "weeksText": "SD5-2-M5, M6, M7; SD6-2-M4, M5",
+      "weeks": ["SD5-2-M5", "SD5-2-M6", "SD5-2-M7", "SD6-2-M4", "SD6-2-M5"]
+    },
+    {
+      "cpCode": "C-PP-b",
+      "weeksText": "SD5-2-M5, M6; SD6-2-M5",
+      "weeks": ["SD5-2-M5", "SD5-2-M6", "SD6-2-M5"]
+    },
+    {
+      "cpCode": "C-PP-c",
+      "weeksText": "SD5-2-M7, M8; SD6-2-M6, M7",
+      "weeks": ["SD5-2-M7", "SD5-2-M8", "SD6-2-M6", "SD6-2-M7"]
+    }
+  ]
+}

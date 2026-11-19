@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 330" width="640" height="330" role="img" aria-labelledby="t d">
+  <title id="t">Dua lingkaran sortir: kiri biru, kanan kotak, kartu biru kotak di tengah</title>
+  <desc id="d">Dua lingkaran beririsan. Lingkaran kiri bertitik biru, lingkaran kanan bergambar kotak. Hanya kiri bernomor 1, tengah bernomor 2, hanya kanan bernomor 3, di luar bernomor 4. Kartu biru kotak ada di bagian tengah.</desc>
+  <rect width="640" height="330" fill="#ffffff"/>
+  <rect x="10" y="10" width="620" height="310" rx="14" fill="none" stroke="#888888" stroke-width="3" stroke-dasharray="8 6"/>
+  <circle cx="245" cy="165" r="115" fill="#cfe3f5" fill-opacity="0.5" stroke="#2a5d9f" stroke-width="5"/>
+  <circle cx="395" cy="165" r="115" fill="#f5e3c8" fill-opacity="0.5" stroke="#b86a00" stroke-width="5"/>
+  <circle cx="190" cy="70" r="16" fill="#64a0e0" stroke="#1b3f70" stroke-width="3"/>
+  <rect x="402" y="54" width="32" height="32" fill="#ffffff" stroke="#b86a00" stroke-width="4"/>
+  <g font-family="sans-serif" font-size="30" font-weight="bold" fill="#222222" text-anchor="middle">
+    <text x="190" y="175">1</text>
+    <text x="320" y="125">2</text>
+    <text x="450" y="175">3</text>
+    <text x="45" y="55">4</text>
+  </g>
+  <rect x="297" y="152" width="46" height="46" fill="#64a0e0" stroke="#1b3f70" stroke-width="3"/>
+  <g font-family="sans-serif" font-size="16" font-weight="bold" fill="#1b3f70" text-anchor="middle">
+    <text x="320" y="215">biru kotak</text>
+    <text x="190" y="40">biru</text>
+    <text x="450" y="40">kotak</text>
+  </g>
+</svg>

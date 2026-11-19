@@ -1,0 +1,58 @@
+{
+  "syllabusVersion": "1.4.1",
+  "syllabusDate": "2026-11-19",
+  "sourceSection": "bagian 3.0",
+  "intro": "Silabus ini tidak mensyaratkan `smp-coding`, mata pelajaran Koding dan KA, ataupun Informatika SMP tertentu: murid kelas X berasal dari SMP dengan bentuk program yang berbeda-beda (`smp-coding` bagian 2) `[asumsi]`. Blok fondasi dan minggu jalur kelas X semester 1 mengajar dari awal, sehingga murid dengan latar SMP yang kuat mengulang sebagian isinya. Pengulangan itu diatur, bukan dibiarkan: fondasi tetap kelas bersama lintas jalur (keputusan pemilik, bagian 9.1), dan murid yang sudah menguasai suatu minggu mengerjakan tugas pendalaman di dalam kelas yang sama, bukan keluar dari kelas.",
+  "rows": [
+    {
+      "smpText": "`SMP7-2-M10` (komputer sebagai sistem: masukan, proses, keluaran)",
+      "smpWeeks": ["SMP7-2-M10"],
+      "smaText": "`FND-X1-M1`",
+      "smaWeeks": ["FND-X1-M1"],
+      "treatment": "Murid yang terlihat menguasainya menjelaskan siklus kepada teman dan membaca spesifikasi komputer lab yang lebih rinci."
+    },
+    {
+      "smpText": "`SMP7-2-M2`, `SMP7-2-M3` (biner, teks dan gambar sebagai data; keduanya pengayaan di SMP)",
+      "smpWeeks": ["SMP7-2-M2", "SMP7-2-M3"],
+      "smaText": "`FND-X1-M3`",
+      "smaWeeks": ["FND-X1-M3"],
+      "treatment": "Tugas pendalaman: heksadesimal dan kode karakter tanpa lembar bantu."
+    },
+    {
+      "smpText": "`SMP8-1-M12` (jaringan lokal, ponsel, dan internet)",
+      "smpWeeks": ["SMP8-1-M12"],
+      "smaText": "`FND-X1-M4`, `FND-X1-M5`",
+      "smaWeeks": ["FND-X1-M4", "FND-X1-M5"],
+      "treatment": "Tugas pendalaman: diagnosis tiga skenario gangguan tanpa petunjuk urutan."
+    },
+    {
+      "smpText": "`SMP8-2-M11`, `SMP8-2-M12` (kata sandi, akun, informasi publik dan privat)",
+      "smpWeeks": ["SMP8-2-M11", "SMP8-2-M12"],
+      "smaText": "`FND-X1-M6`",
+      "smaWeeks": ["FND-X1-M6"],
+      "treatment": "Tidak dipadatkan: keamanan akun dan kebijakan AI kelas dilatih bagi semua murid."
+    },
+    {
+      "smpText": "`SMP8-1-M6`, `SMP8-1-M7`, `SMP7-2-M12` (lembar kerja, grafik, laporan)",
+      "smpWeeks": ["SMP8-1-M6", "SMP8-1-M7", "SMP7-2-M12"],
+      "smaText": "`FND-X1-M7`",
+      "smaWeeks": ["FND-X1-M7"],
+      "treatment": "Tugas pendalaman: rumus kondisi dan grafik dari data sintetis yang lebih besar."
+    },
+    {
+      "smpText": "`SMP7-1-M12`, `SMP9-1-M6` (atribusi, izin, lisensi data terbuka)",
+      "smpWeeks": ["SMP7-1-M12", "SMP9-1-M6"],
+      "smaText": "`FND-X1-M2`",
+      "smaWeeks": ["FND-X1-M2"],
+      "treatment": "Murid memberi atribusi dan memilih lisensi pada karya sendiri."
+    },
+    {
+      "smpText": "`SMP8-2-M2` sampai `SMP8-2-M9` (Python: variabel, percabangan, perulangan, daftar, fungsi)",
+      "smpWeeks": ["SMP8-2-M2", "SMP8-2-M9"],
+      "smaText": "`A-X1-M9` sampai `A-X1-M12`, `B-X1-M9` sampai `B-X1-M12`",
+      "smaWeeks": ["A-X1-M9", "A-X1-M12", "B-X1-M9", "B-X1-M12"],
+      "treatment": "Murid berlatar teks memakai tugas baca-dan-prediksi dan soal setengah jadi, lalu menulis dari halaman kosong; sintaks C++ atau JavaScript tetap dipelajari."
+    }
+  ],
+  "observation": "Pengamatan awal: `FND-X1-M1` memuat tugas awal singkat per topik fondasi (sekitar sepuluh menit `[asumsi]`, tanpa nilai angka dan tanpa catatan di repositori ini) dan ceklis \"terlihat\" dan \"belum terlihat\" milik guru, yang menentukan murid mana mengerjakan tugas pendalaman di minggu fondasi tertentu. Murid yang memiliki portofolio `SMP9-2-M13` boleh membawanya sebagai bahan bagi guru; portofolio itu milik murid, bukan syarat, dan tidak disimpan di repositori ini. Kebijakan AI bagian 7.4 berlaku sama bagi semua murid; tugas baca-dan-prediksi ditandai guru \"tanpa AI\" karena tujuannya melatih membaca dan menelusuri kode. Dasar `[asumsi]`: efek keahlian terbalik dan contoh yang dipudarkan (`docs/riset/ilmu-belajar-kognitif.md` bagian 3.4) serta urutan baca-prediksi-selidiki sebelum menulis (bagian 6.3 riset yang sama)."
+}

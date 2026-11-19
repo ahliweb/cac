@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 250" width="520" height="250" role="img" aria-labelledby="t d">
+  <title id="t">Bagan cara kerja KA dengan empat kotak</title>
+  <desc id="d">Empat kotak. CONTOH: awan tebal Payung, awan tipis Tanpa payung. ATURAN: bila awan tebal, Payung. MASUKAN: awan tebal, angin sedang. KELUARAN: Payung. Panah dari CONTOH ke ATURAN, dari MASUKAN ke ATURAN, dan dari ATURAN ke KELUARAN.</desc>
+  <rect width="520" height="250" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444444"/>
+    </marker>
+  </defs>
+  <rect x="10" y="30" width="140" height="80" rx="6" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="80" y="52" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">CONTOH</text>
+  <text x="80" y="76" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">awan tebal: Payung</text>
+  <text x="80" y="96" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">awan tipis: Tanpa payung</text>
+  <rect x="190" y="30" width="140" height="80" rx="6" fill="#f4f8fd" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="260" y="52" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">ATURAN</text>
+  <text x="260" y="76" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">bila awan tebal,</text>
+  <text x="260" y="96" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">Payung</text>
+  <rect x="370" y="30" width="140" height="80" rx="6" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+  <text x="440" y="52" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">KELUARAN</text>
+  <text x="440" y="82" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">tebakan: Payung</text>
+  <rect x="190" y="160" width="140" height="70" rx="6" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="260" y="182" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">MASUKAN</text>
+  <text x="260" y="204" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">awan tebal,</text>
+  <text x="260" y="220" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">angin sedang</text>
+  <line x1="152" y1="70" x2="186" y2="70" stroke="#444444" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="332" y1="70" x2="366" y2="70" stroke="#444444" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="260" y1="158" x2="260" y2="114" stroke="#444444" stroke-width="2" marker-end="url(#a)"/>
+</svg>

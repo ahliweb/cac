@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-labelledby="t d">
+  <title id="t">Mesin yang kita atur sendiri dan mesin yang mengindra lalu memilih</title>
+  <desc id="d">Dua kotak. Kotak kiri bertanda kita atur sendiri berisi gambar setrika dan kipas. Kotak kanan bertanda mengindra lalu memilih berisi robot penyapu bundar yang berbelok menjauhi kursi persegi lewat panah putus-putus.</desc>
+  <rect width="640" height="360" fill="#ffffff"/>
+  <defs>
+    <marker id="ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a5d9f"/>
+    </marker>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#b3261e"/>
+    </marker>
+    <marker id="ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1b7a3d"/>
+    </marker>
+    <marker id="ak" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#222222"/>
+    </marker>
+  </defs>
+  <rect x="20" y="20" width="290" height="320" rx="10" fill="#f7f7f7" stroke="#888888" stroke-width="2"/>
+  <text x="165" y="52" font-family="sans-serif" font-size="17" fill="#222222" text-anchor="middle" font-weight="bold">kita atur sendiri</text>
+  <polygon points="60,230 190,230 220,260 220,280 60,280" fill="#e8f1fb" stroke="#222222" stroke-width="3"/>
+  <path d="M90,230 Q125,190 170,230" fill="none" stroke="#222222" stroke-width="5"/>
+  <text x="140" y="305" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">setrika</text>
+  <ellipse cx="165" cy="95" rx="12" ry="30" transform="rotate(0 165 120)" fill="#e8f1fb" stroke="#222222" stroke-width="2"/>
+  <ellipse cx="165" cy="95" rx="12" ry="30" transform="rotate(120 165 120)" fill="#e8f1fb" stroke="#222222" stroke-width="2"/>
+  <ellipse cx="165" cy="95" rx="12" ry="30" transform="rotate(240 165 120)" fill="#e8f1fb" stroke="#222222" stroke-width="2"/>
+  <circle cx="165" cy="120" r="8" fill="#888888"/>
+  <text x="250" y="128" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">kipas</text>
+  <rect x="330" y="20" width="290" height="320" rx="10" fill="#eef8f0" stroke="#1b7a3d" stroke-width="2"/>
+  <text x="475" y="52" font-family="sans-serif" font-size="17" fill="#1b7a3d" text-anchor="middle" font-weight="bold">mengindra lalu memilih</text>
+  <rect x="440" y="90" width="60" height="60" fill="#d9d9d9" stroke="#222222" stroke-width="2"/>
+  <text x="470" y="176" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">kursi</text>
+  <circle cx="400" cy="230" r="34" fill="#ffffff" stroke="#222222" stroke-width="3"/>
+  <circle cx="400" cy="230" r="8" fill="#1b7a3d"/>
+  <circle cx="420" cy="214" r="5" fill="#2a5d9f"/>
+  <path d="M436,230 Q480,235 500,200 Q520,170 580,175" fill="none" stroke="#1b7a3d" stroke-width="3" stroke-dasharray="8 6" marker-end="url(#ag)"/>
+  <text x="400" y="290" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">robot penyapu</text>
+  <text x="545" y="225" font-family="sans-serif" font-size="13" fill="#1b7a3d" text-anchor="middle">berbelok</text>
+</svg>

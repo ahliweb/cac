@@ -1,5 +1,5 @@
 {
-  "syllabusVersion": "1.0.0",
+  "syllabusVersion": "1.2.0",
   "syllabusDate": "2026-11-19",
   "sourceSection": "bagian 1-7",
   "tracks": [
@@ -23,11 +23,10 @@
       "persona": "Profesional",
       "goal": "Alih karier atau peningkatan menjadi pengembang perangkat lunak, selaras SKKNI 282/2016",
       "sharedHours": 8,
-      "trackHours": 120,
-      "totalHours": 128,
-      "moduleCount": 12,
-      "hoursPerModule": 10,
-      "durationText": "120 jam `[asumsi]` (12 modul × 10 jam) dengan beban 5 jam per minggu menjadi sekitar 24 minggu.",
+      "trackHours": 128,
+      "totalHours": 136,
+      "moduleCount": 13,
+      "durationText": "128 jam `[asumsi]` (12 modul × 10 jam + 1 modul × 8 jam) dengan beban 5 jam per minggu menjadi sekitar 26 minggu.",
       "endOfTrack": "Portofolio kode lengkap dan opsi uji kompetensi LSP",
       "prerequisitesText": "`DW-FND-M1`; logika dasar dan kemampuan membaca Bahasa Inggris teknis `[asumsi]`. Peserta dari `PKJ` atau sma-coding jalur A/B dapat melewati sebagian modul (bagian 6).",
       "prerequisiteModules": ["DW-FND-M1"],

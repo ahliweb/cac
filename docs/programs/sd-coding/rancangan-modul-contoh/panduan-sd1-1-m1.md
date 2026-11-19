@@ -1,0 +1,70 @@
+> **DRAF, belum ditinjau.** Contoh pilot untuk
+> [`rancangan-modul.md`](../rancangan-modul.md); bukan modul di `content/` dan
+> bukan keputusan pemilik. Banner ini hanya ada di berkas contoh: pada modul
+> sungguhan banner ditambahkan renderer dari status indeks.
+
+# Perintah satu langkah
+
+`SD1-1-M1` · kelas 1, semester 1, minggu 1 · sesi 35 menit (1 JP) · jenis: pengantar `P-BK`, bukan pemenuhan CP
+
+## Tujuan
+
+Murid memberi perintah satu langkah kepada teman ("robot manusia") dan menjalankan perintah satu langkah dari teman, lewat permainan "ikuti perintah". Kegiatan ini persiapan menuju berpikir komputasional, bukan pemenuhan CP.
+
+## Alat dan bahan
+
+- Ruang kelas yang lapang atau lantai berpetak (kapur atau selotip kertas).
+- Dua kartu per kelompok, "jalan" dan "berhenti", dari karton; gambar kaki dan tanda berhenti buatan guru.
+- Tanpa perangkat digital.
+
+## Ingat kembali
+
+Ini minggu pertama program, jadi tidak ada materi minggu lalu. Selama 3 menit guru bertanya, "Pernahkah kamu bermain 'ikuti perintah' di rumah atau di TK? Perintah apa yang kamu ingat?" Murid menjawab lisan atau memperagakan. Bila ada murid yang berasal dari `tk-coding`, guru mengaitkannya dengan permainan "robot" di sana (jembatan silabus bagian 7.1); guru tidak menganggap semua murid sudah menguasainya. Tidak ada jawaban benar atau salah.
+
+## Kegiatan inti
+
+1. **Contoh dulu (5 menit).** Guru memilih satu murid sukarela sebagai "robot". Guru memberi perintah "jalan", dan robot berjalan satu langkah. Guru memberi perintah "berhenti", dan robot berhenti. Guru menjelaskan: "Perintah satu langkah hanya menyuruh satu hal."
+2. **Bandingkan dua contoh (7 menit).** Guru memberi dua perintah kepada robot yang sama. Contoh A: "jalan satu langkah". Contoh B: "ke sana sebentar". Robot mencoba menjalankan keduanya. Guru bertanya, "Apa yang sama pada dua perintah ini? Apa yang berbeda?" Beri petunjuk: "Lihat, mana yang robot langsung tahu harus berbuat apa?" Setelah murid menjawab, guru memberi nama hubungannya: "Perintah A lebih jelas daripada perintah B karena hanya satu langkah dan kita tahu seberapa jauh." Prinsip dinyatakan sesudah murid membandingkan.
+3. **Coba bersama (8 menit).** Murid berpasangan: satu memberi perintah "jalan" atau "berhenti" memakai kartu, satu menjadi robot. Guru berkeliling dan memberi petunjuk bertahap: tunjuk kartu, contohkan, lalu minta murid mencoba lagi.
+4. **Coba sendiri (8 menit).** Murid bertukar peran, lalu bertukar pasangan. Tantangan kecil: "Bisakah kamu membuat robotmu berhenti tepat di garis?"
+5. **Penutup (4 menit).** Satu pasangan sukarela memperagakan di depan. Kelas menyebut bersama, "Perintah satu langkah itu jelas."
+
+## Pertanyaan pemandu
+
+- "Apa yang sama pada perintah 'jalan' dan perintah 'berhenti'? Apa yang berbeda?"
+- "Mana yang lebih jelas bagi robot, 'jalan satu langkah' atau 'ke sana sebentar'? Mengapa?"
+- "Apa yang terjadi bila perintahnya diberikan sebelum robot siap?"
+- "Apa tugas pemberi perintah, dan apa tugas robot? Mengapa keduanya saling membutuhkan?"
+- "Mengapa perintah satu langkah lebih mudah dijalankan daripada banyak langkah sekaligus?"
+
+## Tanda kemajuan
+
+Pengamatan selama bermain, tanpa nilai angka (silabus bagian 9). Catat dalam buku catatan sekolah, bukan di repositori:
+
+- memberi perintah satu langkah dengan jelas;
+- menjalankan perintah teman dengan tepat;
+- mau bertukar peran dan mencoba lagi bila keliru.
+
+Umpan balik berisi apa yang perlu diperbaiki, misalnya "perintahmu belum bilang berapa langkah", bukan hanya "benar" atau "salah".
+
+## Variasi dan dukungan
+
+- **Perlu dukungan:** guru memperagakan perintah dengan kartu dan suara; murid yang belum percaya diri boleh menjadi robot lebih dulu.
+- **Siap tantangan:** perintah "jalan" ditambah angka satu atau dua langkah; jangan menambah perintah baru di minggu ini karena arah baru dipelajari minggu keempat.
+- **Keterbatasan gerak:** robot boleh menggerakkan tangan atau menunjuk, bukan berjalan.
+- **Belum lancar membaca:** kartu memakai gambar kaki dan tanda berhenti; guru membacakan kata.
+- Hindari lomba kecepatan; yang dinilai adalah kejelasan perintah.
+
+## Keselamatan dan privasi
+
+- Permainan di ruang lapang; murid berjalan, tidak berlari; ada jarak antarpasangan; lantai licin dikeringkan.
+- Tanpa foto, video, atau suara murid; tanpa nama murid di bahan kegiatan; lembar tanpa kolom identitas.
+- Tidak ada layanan KA atau perangkat murid dalam kegiatan ini.
+
+## Catatan untuk orang tua
+
+Di rumah, ajak anak bermain "ikuti perintah" sebentar, bergantian memberi perintah satu langkah tanpa layar. Ini hanya ajakan, tidak wajib dan tidak diperiksa.
+
+## Rujukan
+
+- Program Koding dan KA, pendekatan unplugged dan permainan: https://kodingka.kemendikdasmen.go.id/pembelajaran/ (dibuka 2026-11-19; situs resmi pemerintah, hanya ditautkan).

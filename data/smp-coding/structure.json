@@ -1,0 +1,137 @@
+{
+  "syllabusVersion": "1.2.0",
+  "syllabusDate": "2026-11-19",
+  "sourceSection": "bagian 2",
+  "rows": [
+    {
+      "id": "kelas-fase",
+      "item": "Kelas dan fase",
+      "value": "Kelas 7, 8, 9 SMP/MTs = Fase D",
+      "status": "Terverifikasi (bagian 1.1)."
+    },
+    {
+      "id": "status-mapel",
+      "item": "Status mata pelajaran",
+      "value": "Dirancang agar dapat dipakai sebagai mata pelajaran pilihan Koding dan KA, ekstrakurikuler, atau modul terintegrasi di Informatika",
+      "status": "`[asumsi]`; KKA pilihan: pernyataan pejabat, teks regulasi `[belum terverifikasi]`."
+    },
+    {
+      "id": "semester",
+      "item": "Semester",
+      "value": "Dua per kelas, enam semester (`SMP7-1` sampai `SMP9-2`)",
+      "status": "`[asumsi]`"
+    },
+    {
+      "id": "alokasi-jp",
+      "item": "Alokasi JP",
+      "value": "**2 JP per minggu**",
+      "status": "Rekomendasi naskah akademik menurut situs sekunder; angka regulasi `[belum terverifikasi]`; di sini `[asumsi]`. SK 046 dan Panduan tidak menetapkan JP per minggu (Panduan: beban per elemen tidak harus sama)."
+    },
+    {
+      "id": "lama-jp",
+      "item": "Lama 1 JP",
+      "value": "40 menit (80 menit per pertemuan)",
+      "status": "Contoh RPP Fase D kelas 7 di Panduan memakai \"6 JP x 40 menit (2 pertemuan)\"; itu contoh, bukan ketentuan: tetap `[asumsi]`."
+    },
+    {
+      "id": "minggu-per-semester",
+      "item": "Minggu per semester",
+      "value": "14 minggu materi + 2 minggu cadangan (libur, ujian sekolah, remedial)",
+      "status": "`[asumsi]`, mengikuti sma-coding."
+    },
+    {
+      "id": "pola-semester",
+      "item": "Pola tiap semester",
+      "value": "Minggu 1-12 materi; minggu 13 proyek mini; minggu 14 asesmen dan refleksi",
+      "status": "`[asumsi]`, mengikuti sma-coding."
+    },
+    {
+      "id": "total",
+      "item": "Total",
+      "value": "6 semester x 14 minggu = 84 minggu x 2 JP = 168 JP materi",
+      "status": "Hitungan dari asumsi di atas."
+    },
+    {
+      "id": "jalur",
+      "item": "Jalur",
+      "value": "**Satu jalur inti** (blok ke teks) untuk semua murid, ditambah **klub pengayaan opsional** (bagian 3.4)",
+      "status": "Rekomendasi penyusun; keputusan pemilik pada pertanyaan Q4."
+    },
+    {
+      "id": "bahasa-teks",
+      "item": "Bahasa teks",
+      "value": "Python, mulai semester `SMP8-2`; **melampaui rumusan CP Fase D** (tidak ada elemen pemrograman di CP Informatika maupun KKA Fase D)",
+      "status": "Rekomendasi penyusun; keputusan pemilik pada Q3."
+    }
+  ],
+  "classPhases": [
+    {
+      "kelas": "7",
+      "phase": "D"
+    },
+    {
+      "kelas": "8",
+      "phase": "D"
+    },
+    {
+      "kelas": "9",
+      "phase": "D"
+    }
+  ],
+  "semesters": [
+    {
+      "code": "SMP7-1",
+      "kelas": "7",
+      "phase": "D"
+    },
+    {
+      "code": "SMP7-2",
+      "kelas": "7",
+      "phase": "D"
+    },
+    {
+      "code": "SMP8-1",
+      "kelas": "8",
+      "phase": "D"
+    },
+    {
+      "code": "SMP8-2",
+      "kelas": "8",
+      "phase": "D"
+    },
+    {
+      "code": "SMP9-1",
+      "kelas": "9",
+      "phase": "D"
+    },
+    {
+      "code": "SMP9-2",
+      "kelas": "9",
+      "phase": "D"
+    }
+  ],
+  "weeksPerSemester": {
+    "teaching": 14,
+    "reserve": 2
+  },
+  "load": {
+    "jpPerWeek": 2,
+    "minutesPerJp": 40
+  },
+  "semesterPattern": {
+    "materiFromWeek": 1,
+    "materiToWeek": 12,
+    "miniProjectWeek": 13,
+    "assessmentWeek": 14
+  },
+  "totals": {
+    "semesters": 6,
+    "weeks": 84,
+    "jp": 168
+  },
+  "textLanguage": {
+    "name": "Python",
+    "fromSemester": "SMP8-2",
+    "outsideCp": true
+  }
+}

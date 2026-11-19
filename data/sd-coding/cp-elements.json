@@ -1,0 +1,113 @@
+{
+  "syllabusVersion": "1.1.0",
+  "syllabusDate": "2026-11-19",
+  "sourceSection": "bagian 1.3",
+  "quotes": [
+    {
+      "elementId": "BK",
+      "elementTitle": "Berpikir Komputasional",
+      "guideNumber": "1.1",
+      "text": "Memahami permasalahan sederhana dalam kehidupan sehari-hari, menerapkan pemecahan masalah secara sistematis, serta menuliskan instruksi logis dan terstruktur menggunakan sekumpulan kosakata atau simbol."
+    },
+    {
+      "elementId": "LD",
+      "elementTitle": "Literasi Digital",
+      "guideNumber": "1.2",
+      "text": "Memahami konsep dasar, manfaat, dan dampak teknologi digital, memahami sistem komputer tingkat pradasar, menerapkan pengamanan informasi pribadi dalam komunikasi daring, memanfaatkan internet, dan memproduksi serta mendiseminasi konten digital dalam bentuk teks dan gambar."
+    },
+    {
+      "elementId": "LE",
+      "elementTitle": "Literasi dan Etika Kecerdasan Artifisial",
+      "guideNumber": "1.3",
+      "text": "Memahami konsep KA sederhana, manfaat dan dampak KA pada kehidupan sehari-hari, prinsip bahwa KA dikembangkan untuk meningkatkan kesejahteraan manusia dan tidak boleh merugikan manusia, mengetahui perbedaan manusia dan komputer dalam melakukan penginderaan, dan mengetahui perbedaan antara mesin cerdas dan mesin non-cerdas. Memahami etika dasar penggunaan KA seperti empati dan tidak menyakiti orang lain."
+    },
+    {
+      "elementId": "PP",
+      "elementTitle": "Pemanfaatan dan Pengembangan Kecerdasan Artifisial",
+      "guideNumber": "1.4",
+      "text": "Menyimulasikan secara sederhana kerja KA saat mengenali pola, mengklasifikasi benda konkret berdasarkan sifatnya, dan mengetahui bagaimana prediksi sistem KA dipengaruhi input benda konkret."
+    }
+  ],
+  "items": [
+    {
+      "code": "C-BK-a",
+      "elementId": "BK",
+      "label": "memahami permasalahan sederhana dalam kehidupan sehari-hari"
+    },
+    {
+      "code": "C-BK-b",
+      "elementId": "BK",
+      "label": "menerapkan pemecahan masalah secara sistematis"
+    },
+    {
+      "code": "C-BK-c",
+      "elementId": "BK",
+      "label": "menuliskan instruksi logis dan terstruktur menggunakan sekumpulan kosakata atau simbol"
+    },
+    {
+      "code": "C-LD-a",
+      "elementId": "LD",
+      "label": "memahami konsep dasar, manfaat, dan dampak teknologi digital"
+    },
+    {
+      "code": "C-LD-b",
+      "elementId": "LD",
+      "label": "memahami sistem komputer tingkat pradasar"
+    },
+    {
+      "code": "C-LD-c",
+      "elementId": "LD",
+      "label": "menerapkan pengamanan informasi pribadi dalam komunikasi daring"
+    },
+    {
+      "code": "C-LD-d",
+      "elementId": "LD",
+      "label": "memanfaatkan internet"
+    },
+    {
+      "code": "C-LD-e",
+      "elementId": "LD",
+      "label": "memproduksi serta mendiseminasi konten digital dalam bentuk teks dan gambar"
+    },
+    {
+      "code": "C-LE-a",
+      "elementId": "LE",
+      "label": "memahami konsep KA sederhana, manfaat dan dampak KA pada kehidupan sehari-hari"
+    },
+    {
+      "code": "C-LE-b",
+      "elementId": "LE",
+      "label": "prinsip bahwa KA dikembangkan untuk meningkatkan kesejahteraan manusia dan tidak boleh merugikan manusia"
+    },
+    {
+      "code": "C-LE-c",
+      "elementId": "LE",
+      "label": "mengetahui perbedaan manusia dan komputer dalam melakukan penginderaan"
+    },
+    {
+      "code": "C-LE-d",
+      "elementId": "LE",
+      "label": "mengetahui perbedaan antara mesin cerdas dan mesin non-cerdas"
+    },
+    {
+      "code": "C-LE-e",
+      "elementId": "LE",
+      "label": "Memahami etika dasar penggunaan KA seperti empati dan tidak menyakiti orang lain"
+    },
+    {
+      "code": "C-PP-a",
+      "elementId": "PP",
+      "label": "menyimulasikan secara sederhana kerja KA saat mengenali pola"
+    },
+    {
+      "code": "C-PP-b",
+      "elementId": "PP",
+      "label": "mengklasifikasi benda konkret berdasarkan sifatnya"
+    },
+    {
+      "code": "C-PP-c",
+      "elementId": "PP",
+      "label": "mengetahui bagaimana prediksi sistem KA dipengaruhi input benda konkret"
+    }
+  ]
+}

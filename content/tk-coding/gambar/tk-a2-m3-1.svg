@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="600" height="420" role="img" aria-labelledby="t d">
+  <title id="t">Maju dan belok kiri</title>
+  <desc id="d">Satu jalur dilihat dari atas: robot di bagian bawah jalur di sisi kanan menghadap ke atas, jalur lurus ke atas lalu berbelok ke kiri sampai bendera merah. Di bawahnya dua kotak kosong putus-putus dengan tanda panah, dan dua kartu untuk ditempel: maju dengan panah lurus ke atas, dan belok kiri dengan panah melengkung ke kiri.</desc>
+  <rect width="600" height="420" fill="#ffffff"/>
+  <path d="M450 170 V70 H225" fill="none" stroke="#999999" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M450 170 V70 H225" fill="none" stroke="#ffffff" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M450 170 V70 H225" fill="none" stroke="#333333" stroke-width="3" stroke-dasharray="3 14" stroke-linecap="round"/>
+  <g transform="translate(450,150)">
+    <rect x="-24" y="-24" width="48" height="48" rx="8" fill="#b3e5fc" stroke="#333333" stroke-width="4"/>
+    <path d="M-12 -2 L0 -18 L12 -2 Z" fill="#333333"/>
+    <circle cx="-8" cy="10" r="4" fill="#333333"/><circle cx="8" cy="10" r="4" fill="#333333"/>
+  </g>
+  <path d="M180 98 V42" stroke="#333333" stroke-width="5" stroke-linecap="round"/>
+  <path d="M180 42 L214 54 L180 66 Z" fill="#e53935" stroke="#333333" stroke-width="3" stroke-linejoin="round"/>
+  <text x="450" y="214" font-family="sans-serif" font-size="20" text-anchor="middle" fill="#333333">mulai</text>
+  <rect x="110" y="228" width="150" height="76" rx="10" fill="none" stroke="#333333" stroke-width="4" stroke-dasharray="10 8"/>
+  <rect x="340" y="228" width="150" height="76" rx="10" fill="none" stroke="#333333" stroke-width="4" stroke-dasharray="10 8"/>
+  <path d="M268 266 H332 M318 254 L332 266 L318 278" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="20" y1="318" x2="580" y2="318" stroke="#999999" stroke-width="2" stroke-dasharray="4 6"/>
+  <text x="300" y="342" font-family="sans-serif" font-size="20" text-anchor="middle" fill="#333333">kartu untuk ditempel</text>
+  <rect x="110" y="352" width="150" height="62" rx="10" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <path d="M185 380 V362 M175 372 L185 360 L195 372" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="185" y="404" font-family="sans-serif" font-size="18" text-anchor="middle" fill="#333333">maju</text>
+  <rect x="340" y="352" width="150" height="62" rx="10" fill="#fffde7" stroke="#333333" stroke-width="3"/>
+  <path d="M425 380 V378 Q425 370 417 370 H399 M407 360 L397 370 L407 380" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="415" y="404" font-family="sans-serif" font-size="16" text-anchor="middle" fill="#333333">belok kiri</text>
+</svg>

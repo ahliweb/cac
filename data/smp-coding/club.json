@@ -1,0 +1,30 @@
+{
+  "syllabusVersion": "1.2.0",
+  "syllabusDate": "2026-11-19",
+  "sourceSection": "bagian 3.4",
+  "preface": "Bukan bagian dari 168 JP inti. Satu pertemuan per dua minggu di luar jam pelajaran, untuk murid yang berminat; tidak dihitung sebagai pemenuhan butir CP.",
+  "countsAsCpCoverage": false,
+  "stages": [
+    {
+      "kelas": "7",
+      "stage": "Kelas 7",
+      "content": "Teka-teki logika, soal pemikiran komputasional bergaya \"bebras\" (tanpa kode)",
+      "tool": "-",
+      "note": "Gaya soal; kompetisi tertentu `[belum terverifikasi]`"
+    },
+    {
+      "kelas": "8",
+      "stage": "Kelas 8",
+      "content": "Soal pemecahan masalah dengan Python: simulasi, hitung, urutan",
+      "tool": "Python",
+      "note": "Latihan sintetis"
+    },
+    {
+      "kelas": "9",
+      "stage": "Kelas 9",
+      "content": "Pengantar pemecahan masalah gaya olimpiade: masukan dan keluaran, kasus uji; membaca soal OSN (R1) hanya untuk dibaca",
+      "tool": "Python; C++ hanya dibaca",
+      "note": "Menyambung ke `sma-coding` jalur A dan korpus `osn`"
+    }
+  ]
+}

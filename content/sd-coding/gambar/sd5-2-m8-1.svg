@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 270" width="560" height="270" role="img" aria-labelledby="t d">
+  <title id="t">Mengubah kartu masukan</title>
+  <desc id="d">Kartu besar biru bertebakan Dua di kiri. Panah ubah ukuran menuju kartu kecil biru bertebakan Satu, tebakan berubah. Panah ubah warna menuju kartu besar merah bertebakan Dua, tebakan tetap.</desc>
+  <rect width="560" height="270" fill="#ffffff"/>
+  <rect x="20" y="95" width="80" height="80" rx="6" fill="#64b5f6" stroke="#444444" stroke-width="2"/>
+  <text x="60" y="195" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">besar biru</text>
+  <text x="60" y="213" font-family="sans-serif" font-size="13" font-weight="bold" fill="#222222" text-anchor="middle">tebakan: Dua</text>
+  <g stroke="#444444" stroke-width="2" fill="none">
+    <line x1="110" y1="115" x2="260" y2="65"/>
+    <line x1="110" y1="155" x2="260" y2="205"/>
+  </g>
+  <polygon points="270,62 254,60 259,74" fill="#444444"/>
+  <polygon points="270,208 259,196 254,210" fill="#444444"/>
+  <text x="165" y="78" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">ubah ukuran</text>
+  <text x="165" y="200" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">ubah warna</text>
+  <rect x="285" y="35" width="40" height="40" rx="4" fill="#64b5f6" stroke="#444444" stroke-width="2"/>
+  <text x="305" y="95" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">kecil biru</text>
+  <text x="305" y="113" font-family="sans-serif" font-size="13" font-weight="bold" fill="#222222" text-anchor="middle">tebakan: Satu</text>
+  <text x="380" y="60" font-family="sans-serif" font-size="13" fill="#b86a00" text-anchor="start">tebakan berubah</text>
+  <rect x="265" y="165" width="80" height="80" rx="6" fill="#e57373" stroke="#444444" stroke-width="2"/>
+  <text x="305" y="262" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">besar merah, tebakan: Dua</text>
+  <text x="360" y="200" font-family="sans-serif" font-size="13" fill="#2a5d9f" text-anchor="start">tebakan tetap</text>
+</svg>

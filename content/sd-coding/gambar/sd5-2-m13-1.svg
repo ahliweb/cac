@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 230" width="560" height="230" role="img" aria-labelledby="t d">
+  <title id="t">Rencana stan mesin kotak</title>
+  <desc id="d">Tiga bagian dari kiri ke kanan. Masukan: kartu. Mesin kotak dengan aturan: bila bulat, TARUH di kotak A, bila tidak, TARUH di kotak B. Keluaran: kotak A dan kotak B.</desc>
+  <rect width="560" height="230" fill="#ffffff"/>
+  <text x="280" y="26" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222" text-anchor="middle">Stan: bulat atau tidak bulat</text>
+  <g stroke="#444444" stroke-width="2">
+    <rect x="46" y="55" width="32" height="32" rx="3" fill="#64b5f6"/>
+    <circle cx="62" cy="120" r="17" fill="#ffd54f"/>
+    <polygon points="46,178 62,148 78,178" fill="#e57373"/>
+  </g>
+  <text x="62" y="203" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">masukan: kartu</text>
+  <g stroke="#444444" stroke-width="2" fill="none">
+    <line x1="120" y1="135" x2="170" y2="135"/>
+    <line x1="370" y1="135" x2="410" y2="100"/>
+    <line x1="370" y1="135" x2="410" y2="175"/>
+  </g>
+  <polygon points="178,135 166,129 166,141" fill="#444444"/>
+  <polygon points="418,95 405,96 412,107" fill="#444444"/>
+  <polygon points="418,180 412,168 405,179" fill="#444444"/>
+  <rect x="180" y="70" width="190" height="130" rx="8" fill="#f4f8fd" stroke="#2a5d9f" stroke-width="2"/>
+  <g font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">
+    <text x="275" y="96" font-weight="bold">aturan</text>
+    <text x="275" y="126">AMBIL satu kartu.</text>
+    <text x="275" y="146">Bila bulat, TARUH di A.</text>
+    <text x="275" y="166">Bila tidak, TARUH di B.</text>
+  </g>
+  <rect x="425" y="70" width="125" height="50" rx="8" fill="#f4f8fd" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="487" y="101" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">kotak A</text>
+  <rect x="425" y="150" width="125" height="50" rx="8" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+  <text x="487" y="181" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">kotak B</text>
+</svg>
