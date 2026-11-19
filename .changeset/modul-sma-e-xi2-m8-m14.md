@@ -1,0 +1,5 @@
+---
+"kurikulum-informatika": patch
+---
+
+Tujuh modul belajar jalur E (komputasi kuantum) `sma-coding` semester XI2 bagian kedua, `e-xi2-m8` sampai `e-xi2-m14` (issue #124, gelombang E-XI2 menurut `docs/programs/sma-coding/rancangan-modul-cde.md`): pengayaan permainan CHSH, pengayaan distribusi kunci (konsep BB84 beserta batasnya), oracle dan fungsi Boolean, algoritma Deutsch, algoritma Deutsch-Jozsa, proyek mini, serta asesmen dan refleksi semester. Setiap modul mengikuti templat berbasis bukti, memuat latihan dengan penanda pemakaian AI per soal, dan memakai simulator Python murni yang dijalankan penyusun dengan keluaran asli; modul menyatakan batas klaim (simulasi di komputer klasik bukan bukti perilaku alam, hitungan query bukan waktu) dan tidak menjanjikan keunggulan kuantum yang tidak bersumber. Tujuh entri baru ditambahkan di akhir `data/sma-coding/modules.json` berstatus `draf` (jalur E tidak mencatat butir CP; tidak dihitung memenuhi CP). Ketergantungan pada `e-xi2-m1` sampai `e-xi2-m7` disebut di teks, bukan di `prerequisites`, karena modul itu belum terindeks. Tidak ada modul yang disetujui.
