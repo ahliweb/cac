@@ -4398,6 +4398,159 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xii1-m7.md"
+    },
+    {
+      "id": "e-xii1-m1",
+      "title": "Bernstein-Vazirani",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xi2-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: The Deutsch-Jozsa algorithm (termasuk Bernstein-Vazirani)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/quantum-query-algorithms/deutsch-jozsa-algorithm"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m1.md"
+    },
+    {
+      "id": "e-xii1-m2",
+      "title": "Pembalikan fase",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Grover's algorithm (Analysis)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/grover-algorithm/analysis"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m2.md"
+    },
+    {
+      "id": "e-xii1-m3",
+      "title": "Grover I",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Grover's algorithm (Introduction)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/grover-algorithm/introduction"
+        },
+        {
+          "title": "IBM Quantum Learning: Grover's algorithm (Unstructured search)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/grover-algorithm/unstructured-search"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m3.md"
+    },
+    {
+      "id": "e-xii1-m4",
+      "title": "Grover II",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Grover's algorithm (Analysis)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/grover-algorithm/analysis"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m4.md"
+    },
+    {
+      "id": "e-xii1-m5",
+      "title": "Grover III: jumlah iterasi",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m4", "matkom-pertumbuhan-fungsi"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Grover's algorithm (Analysis)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/grover-algorithm/analysis"
+        },
+        {
+          "title": "IBM Quantum Learning: Grover's algorithm (Introduction)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/grover-algorithm/introduction"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m5.md"
+    },
+    {
+      "id": "e-xii1-m6",
+      "title": "Gagasan Fourier kuantum dan Shor (konsep)",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Shor's algorithm",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/phase-estimation-and-factoring/shor-algorithm"
+        },
+        {
+          "title": "NIST: Post-Quantum Cryptography",
+          "url": "https://csrc.nist.gov/projects/post-quantum-cryptography"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m6.md"
+    },
+    {
+      "id": "e-xii1-m7",
+      "title": "Batas komputasi kuantum",
+      "cpItems": [],
+      "weekCodes": ["E-XII1-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["e-xii1-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "IBM Quantum Learning: Grover's algorithm (Introduction)",
+          "url": "https://quantum.cloud.ibm.com/learning/en/courses/fundamentals-of-quantum-algorithms/grover-algorithm/introduction"
+        },
+        {
+          "title": "Bennett, Bernstein, Brassard, Vazirani: Strengths and Weaknesses of Quantum Computing (arXiv)",
+          "url": "https://arxiv.org/abs/quant-ph/9701001"
+        },
+        {
+          "title": "NIST: Post-Quantum Cryptography",
+          "url": "https://csrc.nist.gov/projects/post-quantum-cryptography"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/e-xii1-m7.md"
     }
   ]
 }
