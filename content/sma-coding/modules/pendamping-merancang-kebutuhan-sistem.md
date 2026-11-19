@@ -19,6 +19,17 @@ Setelah mempelajari modul ini, kamu diharapkan bisa:
 3. menerjemahkan kebutuhan menjadi spesifikasi sistem (perangkat keras, perangkat lunak, jaringan, anggaran);
 4. membandingkan beberapa opsi dan membenarkan pilihan secara tertulis.
 
+## Ingat kembali
+
+Tutup catatanmu dan tulis jawaban singkat sebelum membaca lanjut.
+
+1. Sebutkan fungsi CPU, memori, dan penyimpanan. (`FND-X1-M1`)
+2. Apa beda memori dan penyimpanan?
+3. Apa yang tertera pada spesifikasi sebuah laptop yang bisa kamu baca?
+4. Sebutkan tiga tahap siklus input-proses-output.
+
+Cocokkan: (1) CPU memproses instruksi, memori menyimpan sementara yang sedang dipakai, penyimpanan menyimpan lama; (2) memori cepat dan sementara, penyimpanan lebih lambat dan tetap ada saat dimatikan; (3) misalnya jenis prosesor, ukuran memori dan penyimpanan, layar, daya tahan baterai, dan port; (4) masukan, proses, keluaran. Bila ada yang meleset, baca ulang catatan `FND-X1-M1`.
+
 ## Dari kebutuhan ke spesifikasi
 
 Kesalahan umum: memilih perangkat lebih dulu, baru mencari gunanya. Urutan yang benar:
@@ -58,6 +69,12 @@ Kebutuhan ditulis sebagai kalimat yang dapat diperiksa ("laptop menyala sampai 8
 
 Kolom kanan memakai istilah umum dari `FND-X1-M1`; modul ini sengaja tidak memberi angka tetap karena spesifikasi berubah cepat. Angka dicari dari sumber yang kamu tentukan sendiri saat mengerjakan kasus.
 
+Asisten AI generatif boleh membantu menyusun pertanyaan atau membandingkan opsi (kebijakan AI silabus v1.3 bagian 7.4). Perlakukan angka dan spesifikasi dari AI sebagai klaim yang perlu dicek ke sumber bertanggal, dan jangan memasukkan data pribadi pengguna ke layanan AI.
+
+## Prediksi dulu
+
+Sebelum membaca contoh terpandu, baca hanya profil dan tabel kebutuhan "Kios Contoh" di bawah (tutup bagian "Rancangan" dan "Pembenaran"), lalu tulis dulu rancanganmu: perangkat apa yang kamu pilih untuk memenuhi tiap kebutuhan wajib, dan satu hal yang kamu korbankan. Simpan; kamu akan membandingkannya dengan rancangan yang diberikan.
+
 ## Contoh terpandu (fiktif)
 
 **Profil.** "Kios Contoh" adalah usaha fiktif dengan tiga karyawan yang mencatat penjualan, membuat nota, dan mengunggah foto produk ke etalase daring. Anggaran fiktif: cukup untuk dua perangkat dan satu pencetak.
@@ -71,7 +88,7 @@ Kolom kanan memakai istilah umum dari `FND-X1-M1`; modul ini sengaja tidak membe
 | Bekerja saat listrik padam sebentar | Diinginkan |
 | Dipakai di rumah | Diinginkan |
 
-**Rancangan.** Dua laptop berdaya tahan baterai baik (menjawab kebutuhan listrik padam dan dipakai di rumah), aplikasi lembar kerja dan pengolah dokumen, aplikasi sederhana untuk mengubah ukuran foto, satu pencetak, satu penyimpanan eksternal untuk cadangan, dan satu perute Wi-Fi dengan kata sandi kuat.
+**Rancangan (bandingkan dengan tebakanmu).** Dua laptop berdaya tahan baterai baik (menjawab kebutuhan listrik padam dan dipakai di rumah), aplikasi lembar kerja dan pengolah dokumen, aplikasi sederhana untuk mengubah ukuran foto, satu pencetak, satu penyimpanan eksternal untuk cadangan, dan satu perute Wi-Fi dengan kata sandi kuat.
 
 **Pembenaran.** Foto produk hanya perlu diubah ukurannya, bukan disunting berat, sehingga komputer berspesifikasi tertinggi tidak diperlukan; dana yang dihemat dipakai untuk cadangan dan baterai.
 
@@ -92,6 +109,8 @@ Sajikan paling sedikit dua opsi dan nilai dengan kriteria yang sama:
 
 Tabel ini formulir kosong; isi di kertas. Rekomendasi yang baik menyebut juga apa yang dikorbankan.
 
+Contoh terpandu di atas lengkap dengan pembenarannya. Kasus 1 sampai 3 di bawah memudar: kamu mengerjakan semua langkah sendiri, dengan petunjuk jawaban sebagai pembanding.
+
 ## Kegiatan mandiri terbimbing
 
 Kerjakan di kertas. Semua pengguna fiktif; tidak ada wawancara dengan orang sungguhan dan tidak ada data pribadi.
@@ -106,6 +125,37 @@ Kerjakan di kertas. Semua pengguna fiktif; tidak ada wawancara dengan orang sung
 
 **Kasus 5 (wawancara tiruan).** Tulis lima pertanyaan yang akan kamu ajukan kepada pengguna fiktif dari Kasus 2 untuk menggali kebutuhan. Latihan ini hanya menulis pertanyaan, tidak mewawancarai siapa pun.
 
+## Petunjuk jawaban
+
+Jawaban kasus berbentuk rancangan, jadi cocokkan dengan kriteria, bukan jawaban tunggal.
+
+- **Kasus 1.** Profil memuat: banyak petugas bergantian, tidak semua mahir, ruang ramai. Kebutuhan wajib contoh: mencatat peminjaman, memakai pemindai kode batang, akun terpisah per petugas, cadangan data peminjaman. Diinginkan: tetap hidup saat listrik padam sebentar. Rancangan contoh: satu komputer tingkat dasar, pemindai yang cocok dengan sistem operasinya, akun terpisah, cadangan terjadwal ke penyimpanan terpisah, kunci layar. Periksa: setiap pilihan terkait ke satu kebutuhan, dan minimal enam kebutuhan tertulis dengan prioritas.
+- **Kasus 2.** Kebutuhan fungsional: menulis program dan menggambar sketsa; lingkungan: sering dibawa (bobot dan baterai penting); anggaran terbatas. Dua opsi dibandingkan dengan kriteria yang sama, dan setiap opsi menyebut apa yang dikorbankan.
+- **Kasus 3.** Kebutuhan kunci: data tidak hilang saat listrik padam (simpan berkala, cadangan di tempat terpisah), kerja tanpa bergantung pada jaringan lambat (aplikasi yang bekerja luring), keamanan data (kunci layar, akun terpisah). Pilihan contoh: laptop berbaterai ditambah cadangan luring terjadwal; risiko utama: cadangan lupa dijalankan, jadi beri jadwal tertulis.
+- **Kasus 4.** Contoh tulis ulang: "komputer cepat" menjadi "membuka lembar kerja peminjaman buku dalam waktu kurang dari lima detik". Kalimat yang dapat diperiksa memuat apa yang diukur, kondisinya, dan batasnya.
+- **Kasus 5.** Pertanyaan yang baik terbuka dan tentang pemakaian: apa yang paling sering dikerjakan, di mana dan berapa lama, apa yang sekarang paling mengganggu, apa batasan anggaran, apa yang tidak boleh hilang. Pertanyaan "mau laptop merek apa" menanyakan solusi, bukan kebutuhan.
+
+## Latihan bercampur
+
+Tentukan tiap kalimat fiktif sebagai kebutuhan (sebutkan jenisnya) atau spesifikasi, dan tulis ulang yang kabur.
+
+- (a) "Laptop menyala sampai 8 jam tanpa pengisian."
+- (b) "Beli laptop dengan memori besar."
+- (c) "Data klien tidak boleh hilang."
+- (d) "Pakai penyimpanan yang cepat."
+- (e) "Komputer yang bagus."
+- (f) "Dipakai di ruangan tanpa pendingin udara."
+
+Petunjuk jawaban: (a) kebutuhan (kinerja atau lingkungan), dapat diperiksa; (b) spesifikasi tanpa kebutuhan, tanyakan "untuk apa?"; (c) kebutuhan keamanan, diterjemahkan menjadi cadangan terjadwal; (d) spesifikasi, tanyakan kebutuhan yang mendasarinya (misalnya "berkas besar terbuka dalam lima detik"); (e) kabur, tulis ulang menjadi kalimat yang dapat diperiksa; (f) kebutuhan lingkungan, berpengaruh pada pemilihan perangkat yang tahan panas. Bila (b) dan (d) kamu sebut kebutuhan, ingat bahwa kebutuhan menjawab "apa yang harus bisa", spesifikasi menjawab "dengan apa".
+
+## Ulang berjarak
+
+Satu minggu lagi, lalu sebulan lagi, jawab tanpa membuka modul ini lalu cocokkan.
+
+1. Urutkan enam langkah dari kebutuhan ke spesifikasi.
+2. Sebutkan enam jenis kebutuhan dan satu contoh tiap jenis.
+3. Mengapa pilihan tanpa kebutuhan adalah pemborosan dan kebutuhan tanpa pilihan adalah kekurangan?
+
 ## Daftar periksa mandiri
 
 Isi untuk dirimu sendiri; tanpa nilai dan tidak dikumpulkan.
@@ -117,6 +167,8 @@ Isi untuk dirimu sendiri; tanpa nilai dan tidak dikumpulkan.
 - [ ] Saya menyadari batasan anggaran, listrik, dan perawatan.
 - [ ] Saya tahu bahwa kebutuhan keamanan dan cadangan termasuk kebutuhan sistem.
 
+Daftar periksa ini penilaian dirimu, dan penilaian diri sering lebih yakin daripada kenyataan. Yang menunjukkan penguasaan sebenarnya adalah jawabanmu pada Latihan bercampur dan Ulang berjarak.
+
 ## Rujukan
 
 - Panduan Mata Pelajaran Informatika, Fase D – F, 2025: sumber kutipan butir CP di atas.
@@ -127,4 +179,4 @@ Isi untuk dirimu sendiri; tanpa nilai dan tidak dikumpulkan.
 - Jangan meminta siswa mewawancarai orang sungguhan atau menyerahkan data pribadi; seluruh kegiatan memakai pengguna fiktif.
 - Jangan menyebut merek atau harga nyata yang cepat basi; bila perlu, biarkan siswa mencari sendiri dan mencatat sumber serta tanggal.
 - Dapat dikerjakan bersama guru Ekonomi atau Prakarya (opsi lintas mata pelajaran).
-- Ketercapaian dicek lewat daftar periksa mandiri; tidak ada data siswa yang disimpan di repositori ini.
+- Ketercapaian dicek lewat petunjuk jawaban, Latihan bercampur, dan Ulang berjarak; daftar periksa mandiri hanyalah penilaian diri. Ingat kembali, Prediksi dulu, dan Latihan bercampur menambah sekitar 15 menit; bila waktu pendek, berikan Ingat kembali dan Ulang berjarak sebagai tugas rumah tanpa nilai. Tidak ada data siswa yang disimpan di repositori ini.

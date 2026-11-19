@@ -21,6 +21,17 @@ Setelah mempelajari modul ini, kamu diharapkan bisa:
 3. memverifikasi teks, gambar, dan video dengan langkah yang dapat diulang;
 4. memakai membaca lateral pada informasi yang rumit, misalnya yang sebagian benar atau memakai data yang dipotong.
 
+## Ingat kembali
+
+Tutup catatanmu dan tulis jawaban singkat sebelum membaca lanjut. Semuanya dari modul `pendamping-periksa-fakta-dan-baca-lateral`.
+
+1. Apa beda fakta, opini, dan klaim belum terbukti?
+2. Apa beda membaca vertikal dan membaca lateral?
+3. Sebutkan tiga dari lima langkah membaca lateral.
+4. Mengapa "belum cukup bukti" adalah kesimpulan yang sah?
+
+Cocokkan: (1) fakta dapat dicek dengan bukti, opini adalah penilaian, klaim belum terbukti disampaikan seperti fakta tanpa bukti yang bisa dicek; (2) vertikal menilai dari tampilan di halaman itu, lateral membuka sumber lain tentang pembuat halaman dan klaimnya; (3) misalnya siapa di balik informasi, buka tab baru, cari klaimnya, telusuri sumber asli, putuskan; (4) karena menunda lebih baik daripada membagikan yang belum jelas. Bila ada yang meleset, baca ulang modul itu sebelum lanjut.
+
 ## Bagian 1: Riset dengan mesin pencari
 
 **Mulai dari pertanyaan.** Pertanyaan yang baik sempit dan dapat dijawab. Bandingkan: "korupsi" (terlalu luas) dengan "bagaimana cara kerja sistem pengadaan barang secara daring di pemerintah daerah" (terarah).
@@ -38,6 +49,20 @@ Setelah mempelajari modul ini, kamu diharapkan bisa:
 **Menilai sumber** dengan pertanyaan: siapa pembuatnya; apa tujuannya (informasi, hiburan, menjual, memengaruhi); apakah ada tanggal; apakah ada bukti yang dapat diperiksa; apakah sumber lain menyebutkan hal sama; sumber primer atau kutipan.
 
 **Mencatat riset.** Catat kata kunci yang dicoba, sumber yang dibuka, dan alasan memakai atau menolaknya. Catatan membuat riset dapat diulang dan memudahkan mencantumkan sumber.
+
+**Asisten AI dalam riset.** Asisten AI generatif boleh membantu menyusun kata kunci atau menjelaskan istilah (kebijakan AI silabus v1.3 bagian 7.4), tetapi jawabannya bukan sumber: ia dapat keliru atau mengarang rujukan. Perlakukan jawabannya sebagai klaim yang perlu diperiksa dengan langkah di modul ini, cari sumber asli yang ia sebut dan pastikan sumber itu ada dan benar mengatakan hal itu, dan jangan menempelkan data pribadi, kata sandi, atau kunci. Catat pemakaianmu: alat, tujuan, dan cara kamu memeriksa hasilnya.
+
+### Studi kasus pembanding: dua pencarian
+
+Topik fiktif: kecelakaan di Kota Contoh. Dua siswa fiktif mencari jawaban untuk pertanyaan yang sama, "apakah kecelakaan di Kota Contoh naik?".
+
+| | Siswa A | Siswa B |
+| --- | --- | --- |
+| Kata kunci | `kecelakaan kota contoh naik` | `"kecelakaan lalu lintas" "Kota Contoh" data tahunan site:dinas.contoh.example`, ditambah saringan waktu setahun terakhir |
+| Yang dibuka | Tiga unggahan teratas yang saling mengutip | Dokumen data asli dan satu berita yang menyebut dokumen itu |
+| Catatan | Tidak ada | Mencatat kata kunci, sumber, dan alasan memakai atau menolak |
+
+Jawab dengan kalimat sendiri: (1) apa yang sama (pertanyaan dan topiknya)? (2) apa yang berbeda dalam kualitas pertanyaan, teknik pencarian, dan jenis sumber? (3) bila ketiga unggahan yang dibuka A menyalin satu sumber, berapa sumber independen yang ia punya?
 
 ## Bagian 2: Verifikasi teks, gambar, dan video
 
@@ -88,6 +113,37 @@ Kerjakan di kertas atau berkas catatanmu. Semua kasus fiktif.
 
 **Kasus 5 (membaca lateral kompleks).** Seorang pembuat konten fiktif memakai data resmi yang benar untuk menyimpulkan bahwa "teknologi X pasti merusak pekerjaan semua orang". Pecah menjadi klaim kecil, tentukan mana yang didukung data dan mana yang tidak, dan tulis kesimpulan bertingkat.
 
+## Petunjuk jawaban
+
+Cocokkan setelah kamu menulis jawabanmu sendiri. Jawaban lain boleh bila alasannya jelas.
+
+- **Studi kasus pembanding.** (1) Pertanyaan dan topiknya sama. (2) B mempersempit pertanyaan, memakai frasa persis, pembatasan situs, dan saringan waktu, dan membuka sumber primer; A memakai kata kunci luas dan hanya membuka unggahan yang saling mengutip. (3) Satu sumber independen. Bila jawaban (3) kamu "tiga", baca ulang butir "sumber yang tidak saling bergantung" di Bagian 3.
+- **Kasus 1.** Pertanyaan sempit contoh: kapan jembatan mulai dibangun dan siapa pelaksananya; berapa anggarannya menurut dokumen resmi; apa kata laporan kemajuan terbaru. Kalimat pencarian contoh: frasa persis `"jembatan Desa Contoh"`; pembatasan situs ke situs resmi desa fiktif; saringan waktu setahun terakhir. Jenis sumber: dokumen resmi, berita beberapa media, laporan atau data terbuka. Bila ketiga kalimat pencarianmu memakai teknik yang sama, ulangi dengan teknik berbeda.
+- **Kasus 2.** Yang dicari: sumber data resmi, periode pembanding, dan angka mentah. "300 persen" bisa menyesatkan bila angka awal kecil: dari 1 menjadi 4 kejadian adalah kenaikan 300 persen ((4 - 1) / 1 = 3 = 300 persen), tetapi hanya tiga kejadian lebih banyak.
+- **Kasus 3.** Langkah: pencarian gambar balik; cari unggahan paling awal dan keterangan aslinya; cocokkan petunjuk dalam gambar (cuaca, papan nama, tulisan) dengan klaim; kesimpulan: gambar asli tetapi keterangan salah (lama dipasang pada peristiwa baru). Bila kesimpulanmu "foto palsu", bedakan antara gambar yang disunting dan gambar asli dengan keterangan salah.
+- **Kasus 4.** Periksa unggahan paling awal, petunjuk lokasi dan waktu (spanduk, pakaian, suara), bagian yang dipotong atau dipercepat, dan siapa yang menyunting. Kesimpulan: rekaman asli dari festival tahun lalu dengan keterangan salah.
+- **Kasus 5.** Pecahan klaim: (i) data resmi menunjukkan perubahan tertentu (didukung bila datanya diperiksa); (ii) "teknologi X pasti merusak pekerjaan semua orang" (tidak didukung: "pasti" dan "semua" melampaui data); (iii) penyebab (belum jelas tanpa bukti lain). Kesimpulan bertingkat: bagian terbukti, bagian keliru, bagian belum jelas.
+
+## Latihan bercampur
+
+Tiap bahan fiktif di bawah memerlukan teknik verifikasi yang berbeda. Tulis jenis bahannya, dua langkah pertama yang kamu lakukan, dan kesimpulan sementara yang paling jujur.
+
+- (a) Kutipan: "Menteri fiktif berkata semua sekolah akan dibuka kembali Senin."
+- (b) Foto: antrean panjang di depan toko dengan keterangan "Kelangkaan hari ini".
+- (c) Video: pidato pendek dengan teks "Pernyataan terbaru hari ini".
+- (d) Angka: "Pengguna aplikasi naik 500 persen."
+- (e) Jawaban asisten AI: "Menurut studi Universitas Contoh 2021, 80 persen siswa lebih suka belajar daring."
+
+Petunjuk jawaban: (a) teks: cari sumber asli pernyataan, tanggal, dan kutipan utuh; belum cukup bukti sampai ada sumber. (b) gambar: pencarian gambar balik dan unggahan paling awal; bisa gambar lama. (c) video: cari unggahan awal dan keterangan asli, cocokkan waktu; bisa rekaman lama atau disunting. (d) angka: tanya angka mentah, periode, dan pembanding. (e) jawaban AI: anggap klaim; cari studi yang disebut dan pastikan ada dan benar mengatakan itu; bila tidak ketemu, belum cukup bukti. Bila jawaban (e) kamu "benar karena menyebut universitas", baca ulang bagian "Asisten AI dalam riset".
+
+## Ulang berjarak
+
+Satu minggu lagi, lalu sebulan lagi, jawab tanpa membuka modul ini lalu cocokkan.
+
+1. Sebutkan empat teknik pencarian dan fungsinya.
+2. Sebutkan prinsip yang sama untuk memverifikasi teks, gambar, dan video.
+3. Mengapa lima unggahan yang menyalin satu sumber dihitung sebagai satu sumber?
+
 ## Daftar periksa mandiri
 
 Isi untuk dirimu sendiri; tanpa nilai dan tidak dikumpulkan.
@@ -100,10 +156,12 @@ Isi untuk dirimu sendiri; tanpa nilai dan tidak dikumpulkan.
 - [ ] Saya dapat memecah informasi kompleks menjadi klaim kecil.
 - [ ] Saya mencatat sumber dan langkah risetku.
 
+Daftar periksa ini penilaian dirimu, dan penilaian diri sering lebih yakin daripada kenyataan. Yang menunjukkan penguasaan sebenarnya adalah jawabanmu pada Latihan bercampur dan Ulang berjarak.
+
 ## Catatan untuk guru
 
 - Siapkan sendiri bahan gambar dan video contoh yang asal-usulnya diketahui; jangan memakai unggahan nyata yang menuduh orang atau lembaga tertentu, dan jangan memakai foto siswa.
 - Pencarian gambar balik biasanya mengirim gambar ke layanan luar; gunakan hanya gambar contoh yang aman diunggah.
 - Operator pencarian berbeda antar mesin pencari dan dapat berubah; mintalah siswa membaca bantuan mesin pencari yang dipakai.
 - Pertemuan pertama: Bagian 1 dan Kasus 1 sampai 2. Pertemuan kedua: Bagian 2 sampai 3 dan Kasus 3 sampai 5.
-- Ketercapaian dicek lewat daftar periksa mandiri; tidak ada data siswa yang disimpan di repositori ini.
+- Ketercapaian dicek lewat petunjuk jawaban, Latihan bercampur, dan Ulang berjarak; daftar periksa mandiri hanyalah penilaian diri. Ingat kembali, studi kasus pembanding, dan Latihan bercampur menambah sekitar 15 menit; bila waktu pendek, berikan Ingat kembali dan Ulang berjarak sebagai tugas rumah tanpa nilai. Tidak ada data siswa yang disimpan di repositori ini.

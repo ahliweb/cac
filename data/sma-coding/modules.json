@@ -332,6 +332,10 @@
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "AWS, Regions and Availability Zones (contoh bertanggal, dibuka 2026-11-19)",
+          "url": "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"
         }
       ],
       "contentPath": "content/sma-coding/modules/cloud-layanan-dan-region.md"
@@ -393,6 +397,14 @@
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "UU Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi (JDIH BPK)",
+          "url": "https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022"
+        },
+        {
+          "title": "ITU-T X.1631, kontrol keamanan informasi untuk layanan cloud (kembaran ISO/IEC 27017)",
+          "url": "https://www.itu.int/rec/T-REC-X.1631"
         }
       ],
       "contentPath": "content/sma-coding/modules/cloud-keamanan-dan-privasi.md"
@@ -439,6 +451,22 @@
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Wineburg dan McGrew (2019), Lateral Reading and the Nature of Expertise, Teachers College Record 121(11)",
+          "url": "https://doi.org/10.1177/016146811912101102"
+        },
+        {
+          "title": "Breakstone dkk. (2021), Lateral reading: College students learn to critically evaluate internet sources in an online course, Harvard Kennedy School Misinformation Review",
+          "url": "https://doi.org/10.37016/mr-2020-56"
+        },
+        {
+          "title": "Wineburg dkk. (2022), Lateral reading on the open Internet: A district-wide field study in high school government classes, Journal of Educational Psychology 114(5) (hanya judul yang diverifikasi)",
+          "url": "https://doi.org/10.1037/edu0000740"
+        },
+        {
+          "title": "Vosoughi, Roy, dan Aral (2018), The spread of true and false news online, Science 359",
+          "url": "https://doi.org/10.1126/science.aap9559"
         }
       ],
       "contentPath": "content/sma-coding/modules/pendamping-periksa-fakta-dan-baca-lateral.md"
@@ -515,6 +543,14 @@
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "RFC 5737, IPv4 Address Blocks Reserved for Documentation",
+          "url": "https://www.rfc-editor.org/rfc/rfc5737"
+        },
+        {
+          "title": "RFC 2606, Reserved Top Level DNS Names",
+          "url": "https://www.rfc-editor.org/rfc/rfc2606"
         }
       ],
       "contentPath": "content/sma-coding/modules/pendamping-model-jaringan-dan-troubleshooting.md"
@@ -534,6 +570,14 @@
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Zuiderveen Borgesius dkk. (2016), Should we worry about filter bubbles?, Internet Policy Review 5(1)",
+          "url": "https://doi.org/10.14763/2016.1.401"
+        },
+        {
+          "title": "Nyhan dkk. (2023), Like-minded sources on Facebook are prevalent but not polarizing, Nature",
+          "url": "https://doi.org/10.1038/s41586-023-06297-w"
         }
       ],
       "contentPath": "content/sma-coding/modules/pendamping-teknologi-dan-demokrasi.md"
@@ -591,6 +635,22 @@
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "RFC 5737, IPv4 Address Blocks Reserved for Documentation",
+          "url": "https://www.rfc-editor.org/rfc/rfc5737"
+        },
+        {
+          "title": "RFC 2606, Reserved Top Level DNS Names",
+          "url": "https://www.rfc-editor.org/rfc/rfc2606"
+        },
+        {
+          "title": "UU Nomor 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik (JDIH BPK)",
+          "url": "https://peraturan.bpk.go.id/Details/37589/uu-no-11-tahun-2008"
+        },
+        {
+          "title": "UU Nomor 1 Tahun 2023 tentang Kitab Undang-Undang Hukum Pidana (JDIH BPK)",
+          "url": "https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023"
         }
       ],
       "contentPath": "content/sma-coding/modules/pendamping-keamanan-lanjut-konektivitas.md"
