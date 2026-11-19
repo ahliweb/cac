@@ -1247,6 +1247,164 @@
         }
       ],
       "contentPath": "content/smp-coding/modules/smp8-2-m14.md"
+    },
+    {
+      "id": "smp9-1-m1",
+      "title": "Pemecahan masalah: tinjau ulang dan pola",
+      "weekCodes": ["SMP9-1-M1"],
+      "cpCodes": ["D-BK-a"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["SMP7-1-M7", "SMP8-1-M3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-1-m1.md"
+    },
+    {
+      "id": "smp9-1-m2",
+      "title": "Teks (string)",
+      "weekCodes": ["SMP9-1-M2"],
+      "cpCodes": [],
+      "gradeLevels": ["9"],
+      "prerequisites": ["SMP8-2-M3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3: Tutorial, bagian Teks (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/introduction.html"
+        },
+        {
+          "title": "Python 3: Tipe bawaan, metode str (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/library/stdtypes.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-1-m2.md"
+    },
+    {
+      "id": "smp9-1-m3",
+      "title": "Pasangan kunci-nilai (dictionary), pengantar",
+      "weekCodes": ["SMP9-1-M3"],
+      "cpCodes": [],
+      "gradeLevels": ["9"],
+      "prerequisites": ["SMP8-2-M8", "SMP9-1-M2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3: Tutorial, Struktur data: Dictionaries (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-1-m3.md"
+    },
+    {
+      "id": "smp9-1-m4",
+      "title": "Membaca berkas teks",
+      "weekCodes": ["SMP9-1-M4"],
+      "cpCodes": ["D-BK-d", "DK-BK-a"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["SMP9-1-M2", "SMP8-1-M6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3: Tutorial, Membaca dan menulis berkas (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/inputoutput.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-1-m4.md"
+    },
+    {
+      "id": "smp9-1-m5",
+      "title": "Data tabel kecil: jumlah, rata-rata, terbesar",
+      "weekCodes": ["SMP9-1-M5"],
+      "cpCodes": ["D-BK-d", "DK-BK-a"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["SMP9-1-M4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3: Fungsi bawaan sum, len, max (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/library/functions.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-1-m5.md"
+    },
+    {
+      "id": "smp9-1-m6",
+      "title": "Sumber data terbuka dan legal",
+      "weekCodes": ["SMP9-1-M6"],
+      "cpCodes": ["D-BK-d", "D-LD-b", "DK-BK-a"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["SMP8-1-M6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Creative Commons: lisensi CC (situs resmi Creative Commons)",
+          "url": "https://creativecommons.org/share-your-work/cclicenses/"
+        },
+        {
+          "title": "Portal Satu Data Indonesia (data.go.id)",
+          "url": "https://data.go.id/"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-1-m6.md"
+    },
+    {
+      "id": "smp9-1-m7",
+      "title": "Visualisasi sederhana",
+      "weekCodes": ["SMP9-1-M7"],
+      "cpCodes": ["D-BK-d", "DK-BK-a", "D-LD-e"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["SMP8-1-M7", "SMP9-1-M5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3: Tipe bawaan, operasi urutan s * n (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/library/stdtypes.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-1-m7.md"
     }
   ]
 }
