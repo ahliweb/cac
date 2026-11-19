@@ -1,9 +1,10 @@
 # Tinjauan Ilmiah 16 Modul Draf `sma-coding`: Seri Cloud dan Modul Pendamping
 
-- **Version:** v0.1.0
+- **Version:** v0.2.0
 - **Last updated:** 2026-11-19
-- **Status:** **DRAF** (tinjauan penyusun untuk pemilik, issue #125). Bukan persetujuan. Semua modul yang ditinjau tetap berstatus `draf` di `data/sma-coding/modules.json`; hanya pemilik yang dapat menetapkan `disetujui` ([ADR-0007](../../../architecture/adr/0007-authored-learning-content.md)).
+- **Status:** **DRAF** (tinjauan penyusun untuk pemilik, issue #125). Bukan persetujuan. Semua modul yang ditinjau tetap berstatus `draf` di `data/sma-coding/modules.json` (juga setelah revisi); hanya pemilik yang dapat menetapkan `disetujui` ([ADR-0007](../../../architecture/adr/0007-authored-learning-content.md)).
 - **Changelog:**
+  - v0.2.0 (2026-11-19): ditambah kolom "Status setelah revisi" pada tabel bagian 4 dan bagian 8 (apa yang diperbaiki per modul, label `K` atau `M` tiap unsur ilmiah, dan sisa yang menjadi milik pemilik). Isi bagian 1 sampai 7 menggambarkan keadaan sebelum revisi dan tidak diubah, kecuali satu baris di bagian 6.
   - v0.1.0 (2026-11-19): tinjauan awal atas keadaan modul di `main` 8cdd753 (sebelum revisi). Metode, tabel ringkas, temuan rinci per modul, dan keputusan yang tetap milik pemilik.
 
 > **DRAF, bukan keputusan pemilik.** Rekomendasi status di bawah adalah
@@ -56,24 +57,24 @@ Legenda unsur ilmiah (bagian 3 dan 4.3 riset): **IK** ingat kembali (3.1), **EB*
 
 Kolom "Ketepatan", "Kode", "Kunci", "Rujukan", dan "Silabus": **OK** = tidak ada masalah; **Catatan** = masalah kecil; **Masalah** = salah atau menyesatkan (rinci di bagian 5). "Ilmiah ada / kurang" memakai legenda bagian 2.
 
-| Id | Ketepatan | Kode | Kunci | Rujukan | Silabus | Ilmiah ada / kurang | Rekomendasi sebelum revisi |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| `cloud-konsep-dasar` | Catatan (KD-1) | tak ada kode | OK (jawaban tanpa langkah berikutnya) | NIST SP 800-145 terbuka dan cocok; ditandai belum terverifikasi padahal bisa diverifikasi | OK (`B-X2-M6` titik pelekatan) | Ada: PD sebagian. Kurang: IK, EB, LB | **perlu revisi**: ganti penanda dengan fakta terverifikasi; tambah unsur ilmiah. |
-| `cloud-iaas-paas-saas` | OK | tak ada kode | OK (ringkas) | NIST cocok | Catatan (IPS-1: F-BK-a tidak ditopang isi) | Ada: CT sebagian (analogi), PD sebagian (debat). Kurang: IK, EB, LB, contoh terselesaikan | **perlu revisi**: unsur ilmiah dan catatan CP. |
-| `cloud-layanan-dan-region` | Masalah (LR-1: definisi zona kabur, penanda keliru) | tak ada kode | OK (hitungan benar) | AWS cocok; ditandai belum terverifikasi | OK | Ada: UB sebagian. Kurang: IK, EB, PR, LB, CT | **perlu revisi**: definisi zona dan unsur ilmiah. |
-| `cloud-tanggung-jawab-bersama` | OK (kutipan AWS cocok) | tak ada kode | OK | AWS cocok | Catatan (butir hanya konteks) | Ada: IK sebagian (Latihan 1 menulis ulang tabel dari ingatan). Kurang: EB, LB, PD eksplisit | **perlu revisi**: unsur ilmiah; kasus insiden tanpa sumber. |
-| `cloud-biaya-dan-tagihan` | Catatan (BT-1) | tak ada kode | Masalah (BT-2: Latihan 5 meminta lima langkah, kunci memuat tujuh) | AWS dan GitHub cocok | Masalah (BT-3: F-LD-j tidak ditopang isi) | Ada: UB. Kurang: CT, PR, IK, EB, LB | **perlu revisi**. |
-| `cloud-keamanan-dan-privasi` | Catatan (KP-1: ISO) | tak ada kode | OK | UU PDP cocok; ISO tidak terbuka | Catatan (AI) | Ada: UB. Kurang: IK, EB, LB, CT | **perlu revisi**: fakta regulasi bertanggal, privasi AI, unsur ilmiah. |
-| `cloud-deploy-sederhana` | Catatan (DS-1) | `server.ts` dijalankan: benar; modul mengaku "tidak dijalankan" | OK (kurang langkah bila rahasia sudah ter-commit) | Hanya panduan CP (tidak terbuka) | Masalah (DS-3: F-AP-d dan F-AP-c tidak ditopang isi) | Ada: kode lengkap untuk dibaca. Kurang: PR, IK, EB, LB | **perlu revisi**. |
-| `pendamping-periksa-fakta-dan-baca-lateral` | Catatan (PF-1, PF-2) | tak ada kode | Masalah (tidak ada kunci) | Hanya panduan CP; tanpa bukti ilmiah untuk membaca lateral | OK | Ada: CT sebagian (Kasus 2). Kurang: PR, BD, UB, EB | **perlu revisi**. |
-| `pendamping-menyaring-konten-negatif` | OK (satu celah keselamatan, MK-1) | tak ada kode | Masalah (tidak ada kunci) | Hanya panduan CP | OK | Kurang: IK, LB, BD, UB, EB | **perlu revisi**. |
-| `pendamping-riset-dan-verifikasi-konten` | OK | tak ada kode | Masalah (tidak ada kunci) | Hanya panduan CP | OK (AI: RV-1) | Ada: PD sebagian. Kurang: IK, BD, LB, UB, EB | **perlu revisi**. |
-| `pendamping-profesi-informatika-dan-budaya-digital` | Catatan (PB-1: tak ada peran AI) | tak ada kode | Masalah (tidak ada kunci) | Hanya panduan CP | OK | Ada: CT (kartu contoh lalu kartu sendiri). Kurang: BD, UB, EB | **perlu revisi**. |
-| `pendamping-teknologi-dan-demokrasi` | Masalah (TD-1: gelembung informasi dinyatakan sebagai fakta) | tak ada kode | Masalah (tidak ada kunci) | Hanya panduan CP | OK | Kurang: IK, BD, LB, UB, EB | **perlu revisi**. |
-| `pendamping-transaksi-digital-aman` | Catatan (TR-1: saran Wi-Fi umum) | tak ada kode | Masalah (tidak ada kunci) | Hanya panduan CP | OK (AI: lihat temuan lintas) | Kurang: IK, BD, LB, UB, EB | **perlu revisi**. |
-| `pendamping-merancang-kebutuhan-sistem` | OK | tak ada kode | Masalah (tidak ada kunci) | Hanya panduan CP | OK | Ada: CT (contoh terpandu), BD sebagian (tabel opsi). Kurang: IK, PR, UB, EB | **perlu revisi** (ringan). |
-| `pendamping-model-jaringan-dan-troubleshooting` | Masalah (MJ-1, MJ-2, MJ-3) | perintah `ping -c` hanya Linux/macOS; `nslookup contoh.test` selalu gagal di luar DNS lab | Masalah (kartu A sampai E tanpa kunci) | Hanya panduan CP | OK | Ada: CT sebagian (urutan diagnosis). Kurang: IK, PR, LB, UB, EB | **perlu revisi**. |
-| `pendamping-keamanan-lanjut-konektivitas` | Masalah (KL-1: rencana alamat kurang satu segmen; KL-2: UU ITE basi) | tak ada kode | Masalah (tidak ada kunci) | Hanya panduan CP | OK | Ada: CT sebagian (daftar konfigurasi contoh). Kurang: IK, PR, BD, LB, UB, EB | **perlu revisi**. |
+| Id | Ketepatan | Kode | Kunci | Rujukan | Silabus | Ilmiah ada / kurang | Rekomendasi sebelum revisi | Status setelah revisi |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `cloud-konsep-dasar` | Catatan (KD-1) | tak ada kode | OK (jawaban tanpa langkah berikutnya) | NIST SP 800-145 terbuka dan cocok; ditandai belum terverifikasi padahal bisa diverifikasi | OK (`B-X2-M6` titik pelekatan) | Ada: PD sebagian. Kurang: IK, EB, LB | **perlu revisi**: ganti penanda dengan fakta terverifikasi; tambah unsur ilmiah. | **siap disetujui** (bagian 8) |
+| `cloud-iaas-paas-saas` | OK | tak ada kode | OK (ringkas) | NIST cocok | Catatan (IPS-1: F-BK-a tidak ditopang isi) | Ada: CT sebagian (analogi), PD sebagian (debat). Kurang: IK, EB, LB, contoh terselesaikan | **perlu revisi**: unsur ilmiah dan catatan CP. | **siap disetujui** (bagian 8) |
+| `cloud-layanan-dan-region` | Masalah (LR-1: definisi zona kabur, penanda keliru) | tak ada kode | OK (hitungan benar) | AWS cocok; ditandai belum terverifikasi | OK | Ada: UB sebagian. Kurang: IK, EB, PR, LB, CT | **perlu revisi**: definisi zona dan unsur ilmiah. | **siap disetujui** (bagian 8) |
+| `cloud-tanggung-jawab-bersama` | OK (kutipan AWS cocok) | tak ada kode | OK | AWS cocok | Catatan (butir hanya konteks) | Ada: IK sebagian (Latihan 1 menulis ulang tabel dari ingatan). Kurang: EB, LB, PD eksplisit | **perlu revisi**: unsur ilmiah; kasus insiden tanpa sumber. | **siap disetujui** (bagian 8) |
+| `cloud-biaya-dan-tagihan` | Catatan (BT-1) | tak ada kode | Masalah (BT-2: Latihan 5 meminta lima langkah, kunci memuat tujuh) | AWS dan GitHub cocok | Masalah (BT-3: F-LD-j tidak ditopang isi) | Ada: UB. Kurang: CT, PR, IK, EB, LB | **perlu revisi**. | **siap disetujui** (bagian 8) |
+| `cloud-keamanan-dan-privasi` | Catatan (KP-1: ISO) | tak ada kode | OK | UU PDP cocok; ISO tidak terbuka | Catatan (AI) | Ada: UB. Kurang: IK, EB, LB, CT | **perlu revisi**: fakta regulasi bertanggal, privasi AI, unsur ilmiah. | **siap disetujui** (bagian 8) |
+| `cloud-deploy-sederhana` | Catatan (DS-1) | `server.ts` dijalankan: benar; modul mengaku "tidak dijalankan" | OK (kurang langkah bila rahasia sudah ter-commit) | Hanya panduan CP (tidak terbuka) | Masalah (DS-3: F-AP-d dan F-AP-c tidak ditopang isi) | Ada: kode lengkap untuk dibaca. Kurang: PR, IK, EB, LB | **perlu revisi**. | **siap disetujui** (bagian 8) |
+| `pendamping-periksa-fakta-dan-baca-lateral` | Catatan (PF-1, PF-2) | tak ada kode | Masalah (tidak ada kunci) | Hanya panduan CP; tanpa bukti ilmiah untuk membaca lateral | OK | Ada: CT sebagian (Kasus 2). Kurang: PR, BD, UB, EB | **perlu revisi**. | **siap disetujui** (bagian 8) |
+| `pendamping-menyaring-konten-negatif` | OK (satu celah keselamatan, MK-1) | tak ada kode | Masalah (tidak ada kunci) | Hanya panduan CP | OK | Kurang: IK, LB, BD, UB, EB | **perlu revisi**. | **siap disetujui** (bagian 8) |
+| `pendamping-riset-dan-verifikasi-konten` | OK | tak ada kode | Masalah (tidak ada kunci) | Hanya panduan CP | OK (AI: RV-1) | Ada: PD sebagian. Kurang: IK, BD, LB, UB, EB | **perlu revisi**. | **siap disetujui** (bagian 8) |
+| `pendamping-profesi-informatika-dan-budaya-digital` | Catatan (PB-1: tak ada peran AI) | tak ada kode | Masalah (tidak ada kunci) | Hanya panduan CP | OK | Ada: CT (kartu contoh lalu kartu sendiri). Kurang: BD, UB, EB | **perlu revisi**. | **siap disetujui** (bagian 8) |
+| `pendamping-teknologi-dan-demokrasi` | Masalah (TD-1: gelembung informasi dinyatakan sebagai fakta) | tak ada kode | Masalah (tidak ada kunci) | Hanya panduan CP | OK | Kurang: IK, BD, LB, UB, EB | **perlu revisi**. | **siap disetujui** (bagian 8) |
+| `pendamping-transaksi-digital-aman` | Catatan (TR-1: saran Wi-Fi umum) | tak ada kode | Masalah (tidak ada kunci) | Hanya panduan CP | OK (AI: lihat temuan lintas) | Kurang: IK, BD, LB, UB, EB | **perlu revisi**. | **siap disetujui** (bagian 8) |
+| `pendamping-merancang-kebutuhan-sistem` | OK | tak ada kode | Masalah (tidak ada kunci) | Hanya panduan CP | OK | Ada: CT (contoh terpandu), BD sebagian (tabel opsi). Kurang: IK, PR, UB, EB | **perlu revisi** (ringan). | **siap disetujui** (bagian 8) |
+| `pendamping-model-jaringan-dan-troubleshooting` | Masalah (MJ-1, MJ-2, MJ-3) | perintah `ping -c` hanya Linux/macOS; `nslookup contoh.test` selalu gagal di luar DNS lab | Masalah (kartu A sampai E tanpa kunci) | Hanya panduan CP | OK | Ada: CT sebagian (urutan diagnosis). Kurang: IK, PR, LB, UB, EB | **perlu revisi**. | **siap disetujui** (bagian 8) |
+| `pendamping-keamanan-lanjut-konektivitas` | Masalah (KL-1: rencana alamat kurang satu segmen; KL-2: UU ITE basi) | tak ada kode | Masalah (tidak ada kunci) | Hanya panduan CP | OK | Ada: CT sebagian (daftar konfigurasi contoh). Kurang: IK, PR, BD, LB, UB, EB | **perlu revisi**. | **siap disetujui** (bagian 8) |
 
 Ringkasan rekomendasi sebelum revisi: **16 modul `perlu revisi`, 0 `siap disetujui`, 0 `tarik`.** Tidak ada modul yang layak ditarik: isinya aman, selaras dengan rancangan yang disetujui, dan tidak berisi data pribadi atau klaim silabus palsu. Tidak ada yang siap disetujui karena semuanya kekurangan unsur ilmiah yang diminta, dan sembilan di antaranya tidak punya kunci jawaban.
 
@@ -210,7 +211,7 @@ Kutipan CP di sembilan modul cocok dengan `quotes` di `cp-elements.json` (13 kut
 
 Tinjauan ini tidak menyetujui modul dan tidak menjawab keputusan berikut. Hanya orchestrator yang menyajikannya ke pemilik lewat dialog pilihan baku.
 
-1. **Persetujuan per modul** (`draf` ke `disetujui`, blok `review` dengan `approvedOn` dan `reviewerRole`): enam belas keputusan, dapat dijawab sekaligus. Rekomendasi penyusun ada di tabel bagian 4 (sebelum revisi) dan di kolom "Status setelah revisi" pada bagian 8 setelah revisi.
+1. **Persetujuan per modul** (`draf` ke `disetujui`, blok `review` dengan `approvedOn` dan `reviewerRole`): enam belas keputusan, dapat dijawab sekaligus. Rekomendasi penyusun ada di tabel bagian 4 (kolom "Rekomendasi sebelum revisi" dan "Status setelah revisi") dan di bagian 8.
 2. **`cpItems` yang disentuh tetapi tidak dipenuhi** pada modul seri cloud: kosongkan atau pertahankan? Terutama `cloud-biaya-dan-tagihan` (F-LD-j), `cloud-deploy-sederhana` (F-AP-d, F-AP-c), dan `cloud-iaas-paas-saas` (F-BK-a). Mengubahnya mengubah indeks dan perlu disinkronkan dengan rancangan seri cloud yang sudah disetujui; revisi modul hanya menambah kalimat penegas di teks.
 3. **Menyebut nama lembaga pengawas keuangan** (OJK, Bank Indonesia) di `pendamping-transaksi-digital-aman` atau tetap generik. Tinjauan ini membiarkannya generik karena pembagian wewenang tidak diverifikasi.
 4. **Penambahan tiga kutipan ilmiah ke `references` indeks** untuk modul literasi digital (Wineburg dan McGrew 2019; Breakstone dkk. 2021; Vosoughi dkk. 2018 atau Brady dkk. 2017, Zuiderveen Borgesius dkk. 2016, Nyhan dkk. 2023): dilakukan di revisi agar rujukan di teks sesuai indeks; pemilik dapat menolaknya.
@@ -227,4 +228,57 @@ Tinjauan ini tidak menyetujui modul dan tidak menjawab keputusan berikut. Hanya 
 
 ## 8. Status setelah revisi
 
-Diisi pada commit revisi modul.
+Revisi dikerjakan di commit kedua, hanya pada 16 berkas modul dan entri indeksnya (`data/sma-coding/modules.json`: hanya menambah `references`). Tidak ada `status`, `review`, atau `approvedOn` yang diubah; semua modul tetap `draf`.
+
+**Rekomendasi setelah revisi: 16 modul `siap disetujui`, 0 `perlu revisi`, 0 `tarik`.** Arti "siap disetujui": semua kesalahan faktual, kode, kunci, dan rujukan yang ditemukan sudah diperbaiki, fakta mudah basi diberi tanggal dan sumber, dan unsur ilmiah yang kurang sudah ada. Persetujuan tetap hak pemilik, dan masih ada sisa yang bukan urusan teks (butir 1 sampai 6 di bawah tabel).
+
+### 8.1 Yang diperbaiki per modul
+
+| Id | Perbaikan utama | Unsur ilmiah sesudah revisi (legenda bagian 2) |
+| --- | --- | --- |
+| `cloud-konsep-dasar` | KD-1 (lima ciri dicocokkan dengan dokumen NIST, penanda dihapus, empat model penerapan disebut, tahun terbit 2011 dicatat); langkah berikutnya pada petunjuk jawaban. | IK, EB, UB, PD sebagian |
+| `cloud-iaas-paas-saas` | IPS-1 (kalimat konteks CP), IPS-2 (definisi NIST, batas analogi), contoh terselesaikan. | IK, CT lalu *fading*, LB, EB, UB |
+| `cloud-layanan-dan-region` | LR-1 (definisi region dan zona dengan sumber AWS bertanggal, penanda dihapus), LR-2, contoh terselesaikan dan prediksi; entri indeks diberi rujukan AWS. | IK, CT, PR, LB, EB, UB |
+| `cloud-tanggung-jawab-bersama` | TJ-2 (kasus tanpa sumber dinyatakan), kalimat konteks CP, prediksi dan penjelasan diri "mengapa". | IK, PR, PD, LB, EB, UB |
+| `cloud-biaya-dan-tagihan` | BT-1 (kredit dua tahap dan penanda diganti), BT-2 (kunci lima langkah dan catatan riwayat repositori), BT-3 (kalimat konteks CP), BT-6 (larangan menempel kunci ke AI), contoh terselesaikan, prediksi. | IK, CT, PR, LB, EB, UB |
+| `cloud-keamanan-dan-privasi` | KP-1 (UU PDP dengan judul, tanggal, status, dan sumber; ITU-T X.1631 untuk 27017; 27018 tetap tidak terverifikasi), KP-2 (privasi AI); entri indeks diberi UU PDP dan ITU. | IK, LB, EB, UB |
+| `cloud-deploy-sederhana` | DS-1 (hasil uji tertulis bertanggal, catatan `.env`, PowerShell, port), DS-2, DS-3 (kalimat konteks CP), DS-4 (AI). | IK, PR, LB, EB, UB |
+| `pendamping-periksa-fakta-dan-baca-lateral` | PF-1, PF-2 (dasar ilmiah dengan DOI dan batas), PF-3 (kunci), PF-4 (AI); entri indeks diberi empat DOI. | PR, BD, LB, EB, UB |
+| `pendamping-menyaring-konten-negatif` | MK-1 (foto atau video intim), MK-2 (kunci); catatan konten buatan AI. | IK, BD, LB, EB, UB |
+| `pendamping-riset-dan-verifikasi-konten` | RV-1 (asisten AI dalam riset), RV-2 (kunci). | IK, BD, LB, EB, UB |
+| `pendamping-profesi-informatika-dan-budaya-digital` | PB-1 (peran pembelajaran mesin dan catatan AI), PB-2, PB-3 (kunci). | CT lalu *fading*, BD, EB, UB |
+| `pendamping-teknologi-dan-demokrasi` | TD-1 (gelembung informasi dilunakkan dan dirujuk), TD-2, TD-3 (kunci); entri indeks diberi dua DOI. | IK, BD, LB, EB, UB |
+| `pendamping-transaksi-digital-aman` | TR-1, TR-2, TR-3 (kunci); contoh sah dan tipuan dicampur. | IK, PR, BD, LB, EB, UB |
+| `pendamping-merancang-kebutuhan-sistem` | MR-2 (kunci), MR-3, MR-4 (AI). | IK, PR, CT lalu *fading*, BD sebagian, LB, EB, UB |
+| `pendamping-model-jaringan-dan-troubleshooting` | MJ-1 (`ping -n`), MJ-2 (DNS lab dan rentang dokumentasi dijelaskan), MJ-3 (kunci), MJ-4 (model OSI); entri indeks diberi RFC 5737 dan RFC 2606. | IK, PR, LB, EB, UB |
+| `pendamping-keamanan-lanjut-konektivitas` | KL-1 (segmen keempat ditambah), KL-2 (UU ITE dan KUHP bertanggal), KL-3, KL-4 (AI), KL-5 (kunci); entri indeks diberi RFC dan dua UU. | IK, PR, BD, CT, LB, EB, UB |
+
+### 8.2 Label `K` atau `M` untuk tiap unsur yang ditambahkan
+
+| Unsur (judul di modul) | Label | Rujukan riset | Alasan |
+| --- | --- | --- | --- |
+| `## Ingat kembali` | **K** untuk prinsip; **M** untuk transfer ke keterampilan komputasi | 3.1, 3.12 | Bukti uji mengingat kuat `[A]`, tetapi hampir semua dari materi fakta dan konteks WEIRD; modul ini materi konseptual dan fakta sehingga cocok. |
+| `## Ulang berjarak` | **K** untuk prinsip; **M** untuk jadwal (satu minggu, sebulan) | 3.2 | Latihan berjarak `[A]` kuat; jarak optimal bergantung pada kapan materi diperlukan dan datanya dari materi fakta, jadi jadwal tetap `[inferensi]`. |
+| Contoh terselesaikan lalu *fading* (`## Contoh terselesaikan`, kartu profil, contoh terpandu) | **K** untuk pemula pada domain terstruktur (hitungan, pemilihan model); **M** untuk literasi digital | 3.4 | Bukti dari aljabar dan geometri `[B]`; pada literasi digital hanya penerapan masuk akal. |
+| `## Prediksi dulu` | **M** | 6.3, 8.2 | Dasar PRIMM (Sentance dkk., 2019) berasal dari usia 11 sampai 14 dan kuasi-eksperimen; untuk kelas X sampai XII `[inferensi]`. Dipakai hanya pada modul berkode, berkonfigurasi, berhitung, atau diagnosis. |
+| `## Latihan bercampur` | **M** | 3.3 | Interleaving `[A]` sedang dan bergantung materi, terbaik untuk membedakan jenis masalah mirip; dipasang di akhir, setelah dasar dikuasai, dan dipakai untuk membedakan jenis konten, model layanan, dan langkah diagnosis. Tidak diuji pada literasi digital. |
+| Petunjuk jawaban dengan langkah berikutnya | **K** | 3.8 | Isi umpan balik lebih penting daripada ada tidaknya (`[A]` sedang, heterogen). |
+| Pertanyaan "mengapa" (penjelasan diri) | **K** (sedang) | 3.6 | `[B]` sedang dengan studi dasar kecil; besar efek pada literasi digital tidak diukur. |
+| Studi kasus pembanding dua contoh | **M** | 4.3 | Perbandingan kasus `[A]` sedang secara umum (Alfieri dkk., 2013) tetapi tidak ada studi terverifikasi untuk literasi digital atau pemrograman; pola dipakai sesuai 4.3: dua contoh berdampingan, pertanyaan perbandingan, nama untuk pola. |
+| Membaca lateral sebagai strategi (isi modul periksa fakta) | **M** | bukti di luar riset 4.3 | Tiga DOI terverifikasi lewat Crossref; semua dari Amerika Serikat dengan dewasa dan mahasiswa; belum ada studi pada SMA Indonesia, jadi penerapan di kelas adalah `[inferensi]`. |
+| Mengganti penilaian diri sebagai satu-satunya ukuran ketercapaian | **K** | 3.9, 3.1 | Penilaian diri sering tidak sejalan dengan kinerja; daftar periksa dipertahankan, ditambah jawaban yang dicocokkan. |
+
+Klaim pedagogi yang termasuk mitos (bagian 5 riset) tidak ditemukan sebelum maupun sesudah revisi, dan tidak ada yang ditambahkan.
+
+### 8.3 Pemeriksaan sesudah revisi
+
+Dijalankan di cabang kerja setelah revisi: `bun run format:check`, `bun run lint`, `bun run assist:check`, `bun run typecheck`, `bun run validate` (tujuh program, nol masalah), `bun run check:module-code` (116 blok cpp di 39 berkas, semuanya lolos; tidak ada blok cpp baru), `bun run check:sma-fidelity`, `bun run privacy-check`, dan `bun test` (1790 lulus, 0 gagal).
+
+### 8.4 Sisa yang bukan urusan teks
+
+1. Persetujuan 16 modul (bagian 6, butir 1).
+2. `cpItems` yang disentuh tetapi tidak dipenuhi (bagian 6, butir 2). Revisi hanya menambah kalimat penegas di teks `cloud-*`.
+3. URL panduan Kemendikdasmen tetap tidak terverifikasi dari lingkungan peninjau (timeout), dan isi ISO/IEC 27018 tetap tidak terverifikasi (HTTP 403).
+4. Perintah jaringan dan lab di `pendamping-model-jaringan-dan-troubleshooting` (`ping`, DNS lab, alamat privat lab) perlu dicoba guru di lab sungguhan; `ping` tidak dijalankan penyusun, dan sintaks PowerShell di `cloud-deploy-sederhana` juga tidak diuji penyusun.
+5. Kutipan DOI untuk Wineburg dkk. (2022) hanya diverifikasi judul dan penerbitnya; hasilnya tidak dibaca dan tidak diklaim.
+6. Uji coba dengan siswa dan guru (pilot) belum ada.
