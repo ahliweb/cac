@@ -1717,6 +1717,160 @@
         }
       ],
       "contentPath": "content/smp-coding/modules/smp9-2-m7.md"
+    },
+    {
+      "id": "smp9-2-m8",
+      "title": "Pengantar kecerdasan artifisial: penginderaan dan sensor",
+      "weekCodes": ["SMP9-2-M8"],
+      "cpCodes": ["DK-EA-b"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["SMP7-2-M10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "AI4K12: Big Idea 1, Perception (inisiatif AI4K12)",
+          "url": "https://ai4k12.org/big-idea-1-overview/"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-2-m8.md"
+    },
+    {
+      "id": "smp9-2-m9",
+      "title": "Mesin belajar dari contoh dan kualitas data",
+      "weekCodes": ["SMP9-2-M9"],
+      "cpCodes": ["DK-EA-c"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["SMP9-2-M8", "SMP9-1-M6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "AI4K12: Big Idea 3, Learning (inisiatif AI4K12)",
+          "url": "https://ai4k12.org/big-idea-3-overview/"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-2-m9.md"
+    },
+    {
+      "id": "smp9-2-m10",
+      "title": "Etika AI: keliru, bias, halusinasi, tiruan palsu (deep fake), ketergantungan, mengalihkan pekerjaan berpikir ke AI",
+      "weekCodes": ["SMP9-2-M10"],
+      "cpCodes": ["DK-EA-e", "DK-EA-f", "DK-EA-g"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["SMP9-2-M9", "SMP9-1-M11", "SMP8-2-M11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Guidance for generative AI in education and research (UNESCO)",
+          "url": "https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research"
+        },
+        {
+          "title": "Surat Edaran Menteri Komunikasi dan Informatika Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial (JDIH Komdigi)",
+          "url": "https://jdih.komdigi.go.id/produk_hukum/view/id/883/t/surat+edaran+menteri+komunikasi+dan+informatika+nomor+9+tahun+2023"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-2-m10.md"
+    },
+    {
+      "id": "smp9-2-m11",
+      "title": "Jembatan ke SMA: membaca kode bahasa lain",
+      "weekCodes": ["SMP9-2-M11"],
+      "cpCodes": ["D-BK-e"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["SMP9-1-M9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3 Tutorial: More Control Flow Tools, Defining Functions (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        },
+        {
+          "title": "Standard C++ Foundation (isocpp.org)",
+          "url": "https://isocpp.org/"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-2-m11.md"
+    },
+    {
+      "id": "smp9-2-m12",
+      "title": "Pameran produk",
+      "weekCodes": ["SMP9-2-M12"],
+      "cpCodes": ["DK-LD-a", "D-LD-i"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["SMP9-2-M7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-2-m12.md"
+    },
+    {
+      "id": "smp9-2-m13",
+      "title": "Portofolio dan refleksi",
+      "weekCodes": ["SMP9-2-M13"],
+      "cpCodes": ["DK-LD-a", "D-LD-i"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["SMP9-2-M12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-2-m13.md"
+    },
+    {
+      "id": "smp9-2-m14",
+      "title": "Asesmen akhir",
+      "weekCodes": ["SMP9-2-M14"],
+      "cpCodes": ["DK-BK-b"],
+      "gradeLevels": ["9"],
+      "prerequisites": ["SMP9-2-M13"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3: Tipe bawaan, dict.get dan metode str (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/library/stdtypes.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp9-2-m14.md"
     }
   ]
 }
