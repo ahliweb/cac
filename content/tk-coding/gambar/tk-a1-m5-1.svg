@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="600" height="420" role="img" aria-labelledby="t d">
+  <title id="t">Pola merah-biru</title>
+  <desc id="d">Satu baris lima lingkaran berselang-seling merah dan biru, diikuti tiga lingkaran kosong putus-putus untuk dilanjutkan. Lingkaran biru diberi titik putih di tengah agar dapat dibedakan tanpa warna. Di bawah ada dua kartu: lingkaran merah dan lingkaran biru bertitik.</desc>
+  <rect width="600" height="420" fill="#ffffff"/>
+  <g stroke="#333333" stroke-width="4">
+    <circle cx="50" cy="120" r="30" fill="#e53935"/>
+    <circle cx="120" cy="120" r="30" fill="#1e88e5"/>
+    <circle cx="190" cy="120" r="30" fill="#e53935"/>
+    <circle cx="260" cy="120" r="30" fill="#1e88e5"/>
+    <circle cx="330" cy="120" r="30" fill="#e53935"/>
+  </g>
+  <g fill="#ffffff">
+    <circle cx="120" cy="120" r="8"/>
+    <circle cx="260" cy="120" r="8"/>
+  </g>
+  <g fill="none" stroke="#333333" stroke-width="4" stroke-dasharray="8 7">
+    <circle cx="400" cy="120" r="30"/>
+    <circle cx="470" cy="120" r="30"/>
+    <circle cx="540" cy="120" r="30"/>
+  </g>
+  <path d="M30 180 H570" stroke="#999999" stroke-width="2" stroke-dasharray="4 6"/>
+  <text x="300" y="215" font-family="sans-serif" font-size="22" text-anchor="middle" fill="#333333">kartu untuk ditempel</text>
+  <g stroke="#333333" stroke-width="3">
+    <rect x="130" y="240" width="140" height="150" rx="10" fill="#ffebee"/>
+    <rect x="330" y="240" width="140" height="150" rx="10" fill="#e3f2fd"/>
+    <circle cx="200" cy="315" r="40" fill="#e53935"/>
+    <circle cx="400" cy="315" r="40" fill="#1e88e5"/>
+  </g>
+  <circle cx="400" cy="315" r="10" fill="#ffffff"/>
+</svg>

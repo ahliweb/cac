@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 420" width="600" height="420" role="img" aria-labelledby="t d">
+  <title id="t">Dulu, lalu</title>
+  <desc id="d">Dua kotak kosong berdampingan dengan panah ke kanan di antaranya, berlabel dulu dan lalu. Di bawah ada dua kartu: tangan di bawah keran dan mangkuk dengan sendok.</desc>
+  <rect width="600" height="420" fill="#ffffff"/>
+  <rect x="40" y="50" width="200" height="160" rx="12" fill="none" stroke="#333333" stroke-width="4" stroke-dasharray="10 8"/>
+  <rect x="360" y="50" width="200" height="160" rx="12" fill="none" stroke="#333333" stroke-width="4" stroke-dasharray="10 8"/>
+  <path d="M255 130 H335 M315 105 L340 130 L315 155" fill="none" stroke="#333333" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="140" y="38" font-family="sans-serif" font-size="28" text-anchor="middle" fill="#333333">dulu</text>
+  <text x="460" y="38" font-family="sans-serif" font-size="28" text-anchor="middle" fill="#333333">lalu</text>
+  <line x1="40" y1="250" x2="560" y2="250" stroke="#999999" stroke-width="2" stroke-dasharray="4 6"/>
+  <rect x="80" y="270" width="160" height="130" rx="10" fill="#e3f2fd" stroke="#333333" stroke-width="3"/>
+  <path d="M120 300 H170 V315" fill="none" stroke="#333333" stroke-width="6" stroke-linecap="round"/>
+  <path d="M170 322 q-5 12 0 20 M185 322 q-5 12 0 20" fill="none" stroke="#1976d2" stroke-width="3" stroke-linecap="round"/>
+  <path d="M135 385 v-30 a28 28 0 0 1 56 0 v30 z" fill="#ffe0b2" stroke="#333333" stroke-width="3"/>
+  <circle cx="150" cy="352" r="6" fill="#ffffff" stroke="#999999" stroke-width="2"/>
+  <circle cx="172" cy="347" r="8" fill="#ffffff" stroke="#999999" stroke-width="2"/>
+  <rect x="360" y="270" width="160" height="130" rx="10" fill="#fff3e0" stroke="#333333" stroke-width="3"/>
+  <path d="M385 335 h110 a55 45 0 0 1 -110 0 z" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <path d="M410 325 q-6 -14 0 -26 M440 325 q-6 -14 0 -26 M470 325 q-6 -14 0 -26" fill="none" stroke="#999999" stroke-width="3" stroke-linecap="round"/>
+  <path d="M500 305 l-40 60" fill="none" stroke="#333333" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="506" cy="297" rx="9" ry="12" transform="rotate(30 506 297)" fill="#bdbdbd" stroke="#333333" stroke-width="3"/>
+</svg>
