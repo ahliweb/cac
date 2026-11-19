@@ -137,6 +137,136 @@
       "prerequisites": ["dw-pkj-m3"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-pkj-m4.md"
+    },
+    {
+      "id": "dw-pkj-m5",
+      "title": "Otomasi berkas dan laporan",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python documentation: pathlib, object-oriented filesystem paths",
+          "url": "https://docs.python.org/3/library/pathlib.html"
+        },
+        {
+          "title": "Python documentation: csv, CSV file reading and writing",
+          "url": "https://docs.python.org/3/library/csv.html"
+        },
+        {
+          "title": "Python documentation: shutil, high-level file operations",
+          "url": "https://docs.python.org/3/library/shutil.html"
+        },
+        {
+          "title": "Python documentation: random, generate pseudo-random numbers",
+          "url": "https://docs.python.org/3/library/random.html"
+        }
+      ],
+      "moduleCodes": ["DW-PKJ-M5"],
+      "skkniUnits": [],
+      "track": "PKJ",
+      "prerequisites": ["dw-pkj-m4"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pkj-m5.md"
+    },
+    {
+      "id": "dw-pkj-m6",
+      "title": "AI untuk produktivitas kerja",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "OWASP Top 10 for Large Language Model Applications",
+          "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/"
+        },
+        {
+          "title": "U.S. Copyright Office: Copyright and Artificial Intelligence (hukum AS)",
+          "url": "https://www.copyright.gov/ai/"
+        },
+        {
+          "title": "Python documentation: csv, CSV file reading and writing",
+          "url": "https://docs.python.org/3/library/csv.html"
+        },
+        {
+          "title": "LibreOffice Help: Mathematical Functions",
+          "url": "https://help.libreoffice.org/latest/en-US/text/scalc/01/04060106.html"
+        }
+      ],
+      "moduleCodes": ["DW-PKJ-M6"],
+      "skkniUnits": [],
+      "track": "PKJ",
+      "prerequisites": ["dw-pkj-m5"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pkj-m6.md"
+    },
+    {
+      "id": "dw-pkj-m7",
+      "title": "Visualisasi dan penyajian",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "LibreOffice Help: Charts in LibreOffice",
+          "url": "https://help.libreoffice.org/latest/en-US/text/schart/main0000.html"
+        },
+        {
+          "title": "LibreOffice Help: Chart axis, Scale tab",
+          "url": "https://help.libreoffice.org/latest/en-US/text/schart/01/05040201.html"
+        },
+        {
+          "title": "MDN Web Docs: SVG",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/SVG"
+        }
+      ],
+      "moduleCodes": ["DW-PKJ-M7"],
+      "skkniUnits": [],
+      "track": "PKJ",
+      "prerequisites": ["dw-pkj-m6"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pkj-m7.md"
+    },
+    {
+      "id": "dw-pkj-m8",
+      "title": "Proyek akhir",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python documentation: csv, CSV file reading and writing",
+          "url": "https://docs.python.org/3/library/csv.html"
+        },
+        {
+          "title": "Python documentation: collections (defaultdict)",
+          "url": "https://docs.python.org/3/library/collections.html"
+        },
+        {
+          "title": "Python Language Reference: the assert statement",
+          "url": "https://docs.python.org/3/reference/simple_stmts.html"
+        }
+      ],
+      "moduleCodes": ["DW-PKJ-M8"],
+      "skkniUnits": [],
+      "track": "PKJ",
+      "prerequisites": ["dw-pkj-m7"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pkj-m8.md"
+    },
+    {
+      "id": "dw-prs-m1",
+      "title": "Berpikir komputasional tanpa kode",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python Tutorial: more control flow tools (kondisi dan perulangan, bacaan lanjut)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        }
+      ],
+      "moduleCodes": ["DW-PRS-M1"],
+      "skkniUnits": [],
+      "track": "PRS",
+      "prerequisites": ["dw-fnd-m1"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-prs-m1.md"
     }
   ]
 }
