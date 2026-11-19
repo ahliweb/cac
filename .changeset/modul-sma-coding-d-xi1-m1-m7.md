@@ -1,0 +1,5 @@
+---
+"kurikulum-informatika": patch
+---
+
+Tujuh modul belajar jalur D (AI dan analisis data) `sma-coding` semester XI1, `d-xi1-m1` sampai `d-xi1-m7` (issue #124, gelombang D-XI1 menurut `docs/programs/sma-coding/rancangan-modul-cde.md`): proses proyek data dan AI, Python I dan II, membaca berkas tabel (CSV), sumber data terbuka dan legal, membersihkan data, serta statistik deskriptif dan grafik. Setiap modul mengikuti templat berbasis bukti, memuat soal prediksi, contoh setengah jadi (`python setengah-jadi`), soal Parsons, latihan bertanda `AI: boleh` atau `AI: tanpa AI`, dan ulang berjarak yang disambung ke modul sebelumnya. Contoh Python dijalankan dengan `python3 -I` (Python 3.12.3, `pandas` 3.1.1, `matplotlib` 3.11.2) dan keluarannya cocok; data sepenuhnya karangan. Tujuh entri baru ditambahkan di akhir `data/sma-coding/modules.json` berstatus `draf` dengan `cpItems` kosong (jalur D tidak dihitung memenuhi CP); modul pertama tidak mencatat prasyarat karena modul pendahulunya di kelas X semester 2 belum terindeks. Tidak ada modul yang disetujui.

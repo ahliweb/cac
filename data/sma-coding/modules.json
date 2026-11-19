@@ -2194,6 +2194,187 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi1-m7.md"
+    },
+    {
+      "id": "d-xi1-m1",
+      "title": "Proses proyek data dan AI",
+      "cpItems": [],
+      "weekCodes": ["D-XI1-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": [],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi1-m1.md"
+    },
+    {
+      "id": "d-xi1-m2",
+      "title": "Python I",
+      "cpItems": [],
+      "weekCodes": ["D-XI1-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi1-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python: tutorial, pengantar (angka dan teks)",
+          "url": "https://docs.python.org/3/tutorial/introduction.html"
+        },
+        {
+          "title": "Python: tutorial, aliran kendali (if, for, while)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi1-m2.md"
+    },
+    {
+      "id": "d-xi1-m3",
+      "title": "Python II",
+      "cpItems": [],
+      "weekCodes": ["D-XI1-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi1-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python: tutorial, aliran kendali (termasuk definisi fungsi)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        },
+        {
+          "title": "Python: tutorial, struktur data (daftar dan kamus)",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi1-m3.md"
+    },
+    {
+      "id": "d-xi1-m4",
+      "title": "Membaca berkas tabel",
+      "cpItems": [],
+      "weekCodes": ["D-XI1-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi1-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python: modul csv",
+          "url": "https://docs.python.org/3/library/csv.html"
+        },
+        {
+          "title": "pandas: read_csv",
+          "url": "https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html"
+        },
+        {
+          "title": "pandas: DataFrame.to_csv",
+          "url": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_csv.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi1-m4.md"
+    },
+    {
+      "id": "d-xi1-m5",
+      "title": "Sumber data terbuka dan legal",
+      "cpItems": [],
+      "weekCodes": ["D-XI1-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi1-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "UCI Machine Learning Repository: dataset Iris",
+          "url": "https://archive.ics.uci.edu/dataset/53/iris"
+        },
+        {
+          "title": "Creative Commons: CC BY 4.0 (deed, bahasa Indonesia)",
+          "url": "https://creativecommons.org/licenses/by/4.0/deed.id"
+        },
+        {
+          "title": "Creative Commons: Best practices for attribution",
+          "url": "https://wiki.creativecommons.org/wiki/Best_practices_for_attribution"
+        },
+        {
+          "title": "Open Definition 2.1",
+          "url": "https://opendefinition.org/od/2.1/en/"
+        },
+        {
+          "title": "Portal Satu Data Indonesia",
+          "url": "https://data.go.id"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi1-m5.md"
+    },
+    {
+      "id": "d-xi1-m6",
+      "title": "Membersihkan data",
+      "cpItems": [],
+      "weekCodes": ["D-XI1-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi1-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "pandas: panduan data hilang",
+          "url": "https://pandas.pydata.org/docs/user_guide/missing_data.html"
+        },
+        {
+          "title": "pandas: DataFrame.drop_duplicates",
+          "url": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.drop_duplicates.html"
+        },
+        {
+          "title": "pandas: to_numeric",
+          "url": "https://pandas.pydata.org/docs/reference/api/pandas.to_numeric.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi1-m6.md"
+    },
+    {
+      "id": "d-xi1-m7",
+      "title": "Statistik deskriptif dan grafik",
+      "cpItems": [],
+      "weekCodes": ["D-XI1-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi1-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "pandas: DataFrame.describe",
+          "url": "https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.describe.html"
+        },
+        {
+          "title": "Matplotlib: quick start guide",
+          "url": "https://matplotlib.org/stable/users/explain/quick_start.html"
+        },
+        {
+          "title": "From Data to Viz: Dataviz caveats (bacaan tambahan, bukan sumber resmi)",
+          "url": "https://www.data-to-viz.com/caveats.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi1-m7.md"
     }
   ]
 }
