@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 340" width="640" height="340" role="img" aria-labelledby="t d">
+  <title id="t">Enam kartu pola, mesin kotak, kotak A dan kotak B</title>
+  <desc id="d">Di kiri enam kartu pola dalam dua baris. Baris atas tiga kartu bergaris berwarna merah, biru, dan kuning. Baris bawah tiga kartu berbintik berwarna merah, biru, dan kuning. Panah menuju kardus bertulis mesin, lalu dua kotak: kotak A untuk kartu garis dan kotak B untuk kartu bintik.</desc>
+  <rect width="640" height="340" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a5d9f"/>
+    </marker>
+  </defs>
+  <g stroke="#666666" stroke-width="2">
+    <rect x="20" y="60" width="60" height="80" rx="6" fill="#f6c6c6"/>
+    <rect x="90" y="60" width="60" height="80" rx="6" fill="#c9dcf5"/>
+    <rect x="160" y="60" width="60" height="80" rx="6" fill="#fbeaa0"/>
+    <rect x="20" y="170" width="60" height="80" rx="6" fill="#f6c6c6"/>
+    <rect x="90" y="170" width="60" height="80" rx="6" fill="#c9dcf5"/>
+    <rect x="160" y="170" width="60" height="80" rx="6" fill="#fbeaa0"/>
+  </g>
+  <g stroke="#444444" stroke-width="3">
+    <line x1="30" y1="78" x2="70" y2="78"/><line x1="30" y1="96" x2="70" y2="96"/><line x1="30" y1="114" x2="70" y2="114"/><line x1="30" y1="132" x2="70" y2="132"/>
+    <line x1="100" y1="78" x2="140" y2="78"/><line x1="100" y1="96" x2="140" y2="96"/><line x1="100" y1="114" x2="140" y2="114"/><line x1="100" y1="132" x2="140" y2="132"/>
+    <line x1="170" y1="78" x2="210" y2="78"/><line x1="170" y1="96" x2="210" y2="96"/><line x1="170" y1="114" x2="210" y2="114"/><line x1="170" y1="132" x2="210" y2="132"/>
+  </g>
+  <g fill="#444444">
+    <circle cx="35" cy="188" r="4"/><circle cx="65" cy="188" r="4"/><circle cx="50" cy="210" r="4"/><circle cx="35" cy="232" r="4"/><circle cx="65" cy="232" r="4"/>
+    <circle cx="105" cy="188" r="4"/><circle cx="135" cy="188" r="4"/><circle cx="120" cy="210" r="4"/><circle cx="105" cy="232" r="4"/><circle cx="135" cy="232" r="4"/>
+    <circle cx="175" cy="188" r="4"/><circle cx="205" cy="188" r="4"/><circle cx="190" cy="210" r="4"/><circle cx="175" cy="232" r="4"/><circle cx="205" cy="232" r="4"/>
+  </g>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <text x="20" y="48">garis</text>
+    <text x="20" y="162">bintik</text>
+  </g>
+  <line x1="230" y1="155" x2="290" y2="155" stroke="#2a5d9f" stroke-width="3" marker-end="url(#a)"/>
+  <rect x="300" y="105" width="130" height="100" rx="8" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="3"/>
+  <text x="365" y="162" font-family="sans-serif" font-size="20" font-weight="bold" fill="#222222" text-anchor="middle">MESIN</text>
+  <line x1="435" y1="135" x2="500" y2="90" stroke="#2a5d9f" stroke-width="3" marker-end="url(#a)"/>
+  <line x1="435" y1="175" x2="500" y2="220" stroke="#2a5d9f" stroke-width="3" marker-end="url(#a)"/>
+  <rect x="510" y="50" width="110" height="90" rx="8" fill="#e6f4e0" stroke="#3b7d1f" stroke-width="3"/>
+  <rect x="510" y="180" width="110" height="90" rx="8" fill="#fdecd2" stroke="#b86a00" stroke-width="3"/>
+  <g font-family="sans-serif" font-size="22" font-weight="bold" fill="#222222" text-anchor="middle">
+    <text x="565" y="102">A</text>
+    <text x="565" y="232">B</text>
+  </g>
+  <g font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">
+    <text x="565" y="124">bergaris</text>
+    <text x="565" y="254">tidak</text>
+  </g>
+</svg>

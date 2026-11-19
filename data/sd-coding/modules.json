@@ -2689,6 +2689,598 @@
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd1-1-m14.md",
       "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m14.md"
+    },
+    {
+      "id": "sd4-2-m8",
+      "title": "Mesin cerdas dan non-cerdas",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        },
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD4-2-M8"],
+      "cpItems": [],
+      "gradeLevels": [4],
+      "prerequisites": ["SD3-2-M9"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd4-2-m8.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m8.md"
+    },
+    {
+      "id": "sd4-2-m9",
+      "title": "Bagaimana mesin \"melihat\"",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        },
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD4-2-M9"],
+      "cpItems": [],
+      "gradeLevels": [4],
+      "prerequisites": ["SD2-2-M3"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd4-2-m9.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m9.md"
+    },
+    {
+      "id": "sd4-2-m10",
+      "title": "Mengenali pola dengan kartu",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        },
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD4-2-M10"],
+      "cpItems": [],
+      "gradeLevels": [4],
+      "prerequisites": ["SD3-2-M10", "SD4-2-M8"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd4-2-m10.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m10.md"
+    },
+    {
+      "id": "sd4-2-m11",
+      "title": "Empati dan tidak menyakiti",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        },
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD4-2-M11"],
+      "cpItems": [],
+      "gradeLevels": [4],
+      "prerequisites": ["SD3-2-M11"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd4-2-m11.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m11.md"
+    },
+    {
+      "id": "sd4-2-m12",
+      "title": "Penguatan: panduan aman untuk adik kelas",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD4-2-M12"],
+      "cpItems": [],
+      "gradeLevels": [4],
+      "prerequisites": ["SD4-2-M3", "SD4-2-M4", "SD4-2-M6"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd4-2-m12.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m12.md"
+    },
+    {
+      "id": "sd4-2-m13",
+      "title": "Proyek mini: poster panduan",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD4-2-M13"],
+      "cpItems": [],
+      "gradeLevels": [4],
+      "prerequisites": ["SD4-2-M12"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd4-2-m13.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m13.md"
+    },
+    {
+      "id": "sd4-2-m14",
+      "title": "Asesmen dan refleksi",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        },
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD4-2-M14"],
+      "cpItems": [],
+      "gradeLevels": [4],
+      "prerequisites": [
+        "SD4-2-M1",
+        "SD4-2-M2",
+        "SD4-2-M3",
+        "SD4-2-M4",
+        "SD4-2-M5",
+        "SD4-2-M6",
+        "SD4-2-M7",
+        "SD4-2-M8",
+        "SD4-2-M9",
+        "SD4-2-M10",
+        "SD4-2-M11",
+        "SD4-2-M12",
+        "SD4-2-M13"
+      ],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd4-2-m14.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m14.md"
+    },
+    {
+      "id": "sd3-2-m8",
+      "title": "Kata sandi dan privasi",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        },
+        {
+          "title": "UU 27/2022 tentang Pelindungan Data Pribadi (data anak sebagai data pribadi spesifik)",
+          "url": "https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022"
+        }
+      ],
+      "weekCodes": ["SD3-2-M8"],
+      "cpItems": [],
+      "gradeLevels": [3],
+      "prerequisites": ["SD2-2-M5", "SD2-2-M6"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd3-2-m8.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m8.md"
+    },
+    {
+      "id": "sd3-2-m9",
+      "title": "Ciri mesin cerdas",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD3-2-M9"],
+      "cpItems": [],
+      "gradeLevels": [3],
+      "prerequisites": ["SD2-2-M4"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd3-2-m9.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m9.md"
+    },
+    {
+      "id": "sd3-2-m10",
+      "title": "Mesin mengenali pola",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD3-2-M10"],
+      "cpItems": [],
+      "gradeLevels": [3],
+      "prerequisites": ["SD3-2-M9", "SD2-2-M9"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd3-2-m10.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m10.md"
+    },
+    {
+      "id": "sd3-2-m11",
+      "title": "Sopan dan empati di ruang digital",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD3-2-M11"],
+      "cpItems": [],
+      "gradeLevels": [3],
+      "prerequisites": ["SD2-2-M10"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd3-2-m11.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m11.md"
+    },
+    {
+      "id": "sd3-2-m12",
+      "title": "Penguatan: mesin kotak",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD3-2-M12"],
+      "cpItems": [],
+      "gradeLevels": [3],
+      "prerequisites": ["SD3-2-M10"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd3-2-m12.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m12.md"
+    },
+    {
+      "id": "sd3-2-m13",
+      "title": "Proyek mini: poster aturan aman digital",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD3-2-M13"],
+      "cpItems": [],
+      "gradeLevels": [3],
+      "prerequisites": ["SD3-2-M8", "SD2-2-M6"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd3-2-m13.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m13.md"
+    },
+    {
+      "id": "sd3-2-m14",
+      "title": "Asesmen dan refleksi",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD3-2-M14"],
+      "cpItems": [],
+      "gradeLevels": [3],
+      "prerequisites": [
+        "SD3-2-M1",
+        "SD3-2-M2",
+        "SD3-2-M3",
+        "SD3-2-M4",
+        "SD3-2-M5",
+        "SD3-2-M6",
+        "SD3-2-M7",
+        "SD3-2-M8",
+        "SD3-2-M9",
+        "SD3-2-M10",
+        "SD3-2-M11",
+        "SD3-2-M12",
+        "SD3-2-M13"
+      ],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd3-2-m14.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m14.md"
+    },
+    {
+      "id": "sd2-2-m1",
+      "title": "Mesin kotak: masukan, proses, keluaran",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD2-2-M1"],
+      "cpItems": [],
+      "gradeLevels": [2],
+      "prerequisites": [],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd2-2-m1.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m1.md"
+    },
+    {
+      "id": "sd2-2-m2",
+      "title": "Perangkat masukan dan keluaran",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD2-2-M2"],
+      "cpItems": [],
+      "gradeLevels": [2],
+      "prerequisites": ["SD2-2-M1", "SD1-2-M5"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd2-2-m2.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m2.md"
+    },
+    {
+      "id": "sd2-2-m3",
+      "title": "Siapa yang mengindra?",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD2-2-M3"],
+      "cpItems": [],
+      "gradeLevels": [2],
+      "prerequisites": ["SD1-2-M6"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd2-2-m3.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m3.md"
+    },
+    {
+      "id": "sd2-2-m4",
+      "title": "Mesin cerdas atau biasa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD2-2-M4"],
+      "cpItems": [],
+      "gradeLevels": [2],
+      "prerequisites": ["SD2-2-M3"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd2-2-m4.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m4.md"
+    },
+    {
+      "id": "sd2-2-m5",
+      "title": "Kata sandi itu rahasia",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        },
+        {
+          "title": "Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi (data anak sebagai data pribadi; pengaturan di sekolah)",
+          "url": "https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022"
+        }
+      ],
+      "weekCodes": ["SD2-2-M5"],
+      "cpItems": [],
+      "gradeLevels": [2],
+      "prerequisites": ["SD1-2-M8"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd2-2-m5.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m5.md"
+    },
+    {
+      "id": "sd2-2-m6",
+      "title": "Boleh dan tidak dibagikan",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        },
+        {
+          "title": "Undang-Undang Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi (data anak sebagai data pribadi; pengaturan di sekolah)",
+          "url": "https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022"
+        }
+      ],
+      "weekCodes": ["SD2-2-M6"],
+      "cpItems": [],
+      "gradeLevels": [2],
+      "prerequisites": ["SD2-2-M5", "SD1-2-M8"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd2-2-m6.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m6.md"
+    },
+    {
+      "id": "sd2-2-m7",
+      "title": "Mengurutkan menurut ukuran",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD2-2-M7"],
+      "cpItems": [],
+      "gradeLevels": [2],
+      "prerequisites": ["SD1-2-M2"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd2-2-m7.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m7.md"
+    },
+    {
+      "id": "sd1-2-m1",
+      "title": "Mengelompokkan menurut warna",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD1-2-M1"],
+      "cpItems": [],
+      "gradeLevels": [1],
+      "prerequisites": [],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd1-2-m1.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m1.md"
+    },
+    {
+      "id": "sd1-2-m2",
+      "title": "Mengelompokkan menurut dua sifat",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD1-2-M2"],
+      "cpItems": [],
+      "gradeLevels": [1],
+      "prerequisites": ["SD1-2-M1"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd1-2-m2.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m2.md"
+    },
+    {
+      "id": "sd1-2-m3",
+      "title": "Menamai kelompok",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD1-2-M3"],
+      "cpItems": [],
+      "gradeLevels": [1],
+      "prerequisites": ["SD1-2-M2"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd1-2-m3.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m3.md"
+    },
+    {
+      "id": "sd1-2-m4",
+      "title": "Alat digital di rumah",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD1-2-M4"],
+      "cpItems": [],
+      "gradeLevels": [1],
+      "prerequisites": ["SD1-1-M11"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd1-2-m4.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m4.md"
+    },
+    {
+      "id": "sd1-2-m5",
+      "title": "Bagian alat digital",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD1-2-M5"],
+      "cpItems": [],
+      "gradeLevels": [1],
+      "prerequisites": ["SD1-2-M4"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd1-2-m5.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m5.md"
+    },
+    {
+      "id": "sd1-2-m6",
+      "title": "Panca indera manusia",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD1-2-M6"],
+      "cpItems": [],
+      "gradeLevels": [1],
+      "prerequisites": [],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd1-2-m6.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m6.md"
+    },
+    {
+      "id": "sd1-2-m7",
+      "title": "Teman dan perasaan",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
+          "url": "https://kodingka.kemendikdasmen.go.id/pembelajaran/"
+        }
+      ],
+      "weekCodes": ["SD1-2-M7"],
+      "cpItems": [],
+      "gradeLevels": [1],
+      "prerequisites": [],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd1-2-m7.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m7.md"
     }
   ]
 }

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 330" width="640" height="330" role="img" aria-labelledby="t d">
+  <title id="t">Tablet dengan layar, tombol, dan speaker</title>
+  <desc id="d">Tablet tampak dari depan. Layar besar di tengah dilingkari merah. Satu tombol bulat di sisi kanan dilingkari biru. Speaker berpola titik di sisi kiri dilingkari hijau. Nama tiap bagian tertulis dekat lingkaran.</desc>
+  <rect width="640" height="330" fill="#ffffff"/>
+  <rect x="170" y="30" width="300" height="270" rx="22" fill="#d7dde6" stroke="#444444" stroke-width="4"/>
+  <rect x="215" y="55" width="210" height="220" rx="6" fill="#8fb8d9" stroke="#444444" stroke-width="3"/>
+  <circle cx="448" cy="165" r="12" fill="#ffffff" stroke="#444444" stroke-width="3"/>
+  <g fill="#444444">
+    <circle cx="192" cy="130" r="3"/>
+    <circle cx="192" cy="145" r="3"/>
+    <circle cx="192" cy="160" r="3"/>
+    <circle cx="192" cy="175" r="3"/>
+    <circle cx="192" cy="190" r="3"/>
+    <circle cx="192" cy="205" r="3"/>
+  </g>
+  <rect x="208" y="48" width="224" height="234" rx="10" fill="none" stroke="#d94f4f" stroke-width="5" stroke-dasharray="10 6"/>
+  <circle cx="448" cy="165" r="22" fill="none" stroke="#2a5d9f" stroke-width="5"/>
+  <rect x="180" y="118" width="24" height="98" rx="12" fill="none" stroke="#3b7d1f" stroke-width="5"/>
+  <g font-family="sans-serif" font-size="22" font-weight="bold" text-anchor="middle">
+    <text x="320" y="170" fill="#8f2a2a">layar</text>
+    <text x="548" y="172" fill="#1b3f70">tombol</text>
+    <text x="92" y="172" fill="#3b7d1f">speaker</text>
+  </g>
+  <g stroke-width="3" fill="none">
+    <path d="M500,168 L476,166" stroke="#1b3f70"/>
+    <path d="M140,168 L178,166" stroke="#3b7d1f"/>
+  </g>
+</svg>
