@@ -187,7 +187,7 @@ describe("bun run check:module-code (real subprocess)", () => {
     expect(result.exitCode).toBe(0);
     // The module count grows as modules are added (#55); assert the shape only.
     expect(result.stdout).toMatch(
-      /OK -- \d+ cpp, \d+ arduino \(mock Arduino.h\) and \d+ python block\(s\) in \d+ module file\(s\)/,
+      /OK -- \d+ cpp, \d+ arduino \(mock Arduino.h\), \d+ python, \d+ ts and \d+ js block\(s\) in \d+ module file\(s\)/,
     );
   }, 180_000);
 });
