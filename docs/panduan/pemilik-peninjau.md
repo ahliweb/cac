@@ -37,7 +37,7 @@ berlaku untuk setiap modul baru, termasuk modul program `sma-coding`.
 | Aspek | Pertanyaan |
 | --- | --- |
 | Ketepatan teknis | Apakah setiap pernyataan benar? Apakah batas kasus (overflow, input kosong, indeks) diakui, bukan diabaikan? |
-| Contoh kode | Apakah contoh benar untuk masukan wajar, bukan sekadar bisa dikompilasi? (`bun run check:module-code` hanya memastikan semua blok C++ lolos kompilasi `g++ -std=c++17 -fsyntax-only`; contoh tidak dijalankan.) |
+| Contoh kode | Apakah contoh benar untuk masukan wajar, bukan sekadar bisa dikompilasi? (`bun run check:module-code` hanya memastikan blok C++ lolos kompilasi `g++ -std=c++17 -fsyntax-only`, blok Arduino lolos kompilasi terhadap `Arduino.h` tiruan, dan blok Python lolos pemeriksaan sintaks; contoh tidak dijalankan dan bukan bukti perilaku di papan.) |
 | Latihan | Apakah latihan asli (karangan), tingkatannya wajar, dan tidak menyalin soal juri atau kontes? Soal dari sumber luar harus ditautkan. |
 | Rujukan | Apakah rujukan resmi dan benar-benar menopang isi? Apakah `refId` di indeks sesuai isinya? |
 | Bahasa | Apakah bahasa Indonesia jelas untuk siswa SMA, istilah konsisten, tidak menggurui? |
@@ -53,8 +53,10 @@ bun run check:module-code
 
 ```text
 $ bun run scripts/check-module-code.ts
-check-module-code: OK -- 107 cpp block(s) in 10 module file(s) compile with g++ -std=c++17 -fsyntax-only.
+check-module-code: OK -- 116 cpp, 0 arduino (mock Arduino.h) and 0 python block(s) in 39 module file(s) pass (g++ -std=c++17 -fsyntax-only; python3 ast.parse); 0 block(s) marked setengah-jadi skipped.
 ```
+
+Blok soal setengah jadi yang sengaja tidak lengkap diberi kata `setengah-jadi` setelah bahasa pada pagar pembuka (misalnya ```` ```cpp setengah-jadi ````); blok itu dilewati dan dihitung di keluaran. Untuk lembar anak bergambar, `bun run check:learner-assets` memeriksa berkas SVG di `content/<program>/gambar/` dan tautan gambar di `content/<program>/lembar/`.
 
 ## Mencatat keputusan
 

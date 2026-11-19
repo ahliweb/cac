@@ -885,11 +885,37 @@ osn plan: belum didukung untuk program tk-coding: perintah ini membaca corpus OS
 ### Checking a module's code examples
 
 `bun run check:module-code` (`scripts/check-module-code.ts`, run in CI
-after `osn validate`) extracts every ```` ```cpp ```` block from
-`content/**/modules/*.md` and runs `g++ -std=c++17 -fsyntax-only` on it.
-Nothing is executed or linked -- a pass means each example compiles, not
-that it is correct for every input. Exit `0` clean, `1` when a block
-fails to compile or when `g++` is not installed.
+after `osn validate`) extracts the fenced blocks from
+`content/**/modules/*.md` and checks them without running anything:
+
+- ```` ```cpp ```` -- `g++ -std=c++17 -fsyntax-only`.
+- ```` ```arduino ```` -- the same compiler with `#include "Arduino.h"`
+  resolved to the mock header `scripts/fixtures/arduino-mock/Arduino.h`
+  (`pinMode`, `digitalWrite`, `Serial`, `String`, `map`, `constrain`, ...;
+  `setup`/`loop` only declared). This is a syntax and type check against a
+  mock API, not evidence of behaviour on a board.
+- ```` ```python ```` -- `python3 -I -c "import ast,sys; ast.parse(sys.stdin.read())"`;
+  syntax only.
+
+An intentionally incomplete block (a fill-in-the-blank exercise) is excluded
+by adding the word `setengah-jadi` after the language in the opening fence
+(```` ```cpp setengah-jadi ````, ```` ```arduino setengah-jadi ````,
+```` ```python setengah-jadi ````); it is skipped but counted in the output.
+Exit `0` clean, `1` when a block fails or when `g++` or `python3` is not
+installed.
+
+### Checking learner-sheet assets
+
+`bun run check:learner-assets` (`scripts/check-learner-assets.ts`, run in
+CI) checks `content/<program>/gambar/*.svg`: well-formed XML, an `svg` root
+with a `viewBox`, no `<script>`, `<image>` or `<foreignObject>`, no `on*`
+attribute, no `href` / `xlink:href` other than `#fragment`, no `data:` URI,
+no DOCTYPE, no `@import` or `url()` that is not a `#fragment`, and at most
+50 KB. It also checks every image link `![...](...)` in
+`content/<program>/lembar/*.md`: the target must exist inside that
+programme's `gambar/`. An SVG no sheet references is printed as a warning
+and does not change the exit code. Exit `0` clean (warnings allowed), `1` on
+any error.
 
 ### `--out` / `--force` (all `osn render` subcommands)
 

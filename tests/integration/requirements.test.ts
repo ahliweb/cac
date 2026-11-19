@@ -138,6 +138,8 @@ describe("docs/requirements/register.md and traceability.md", () => {
       "TR-17",
       "TR-18",
       "TR-19",
+      "TR-20",
+      "TR-21",
       "ER-17",
       "GR-13",
     ]) {
@@ -175,6 +177,8 @@ describe("docs/requirements/register.md and traceability.md", () => {
       "TR-17",
       "TR-18",
       "TR-19",
+      "TR-20",
+      "TR-21",
       "GR-13",
     ]);
     for (const row of testRows) {
