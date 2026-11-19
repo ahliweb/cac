@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 270" width="540" height="270" role="img" aria-labelledby="t d">
+  <title id="t">Contoh kartu panduan bergambar</title>
+  <desc id="d">Kartu panduan berjudul langkah meminjam buku dengan tiga kotak bernomor yang dihubungkan panah ke bawah. Di sebelahnya daftar ciri panduan yang baik: satu tindakan tiap langkah, bernomor, kata dari daftar, dan ada gambar.</desc>
+  <rect width="540" height="270" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a5d9f"/>
+    </marker>
+  </defs>
+  <rect x="10" y="10" width="300" height="250" rx="8" fill="#fffdf4" stroke="#b86a00" stroke-width="2"/>
+  <text x="160" y="40" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Langkah meminjam buku (contoh)</text>
+  <rect x="30" y="62" width="260" height="46" rx="5" fill="#ffffff" stroke="#b86a00" stroke-width="2"/>
+  <text x="160" y="91" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">1. Cari buku di rak</text>
+  <line x1="160" y1="109" x2="160" y2="123" stroke="#2a5d9f" stroke-width="2.5" marker-end="url(#a)"/>
+  <rect x="30" y="124" width="260" height="46" rx="5" fill="#ffffff" stroke="#b86a00" stroke-width="2"/>
+  <text x="160" y="153" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">2. Bawa buku ke meja pustakawan</text>
+  <line x1="160" y1="171" x2="160" y2="185" stroke="#2a5d9f" stroke-width="2.5" marker-end="url(#a)"/>
+  <rect x="30" y="186" width="260" height="46" rx="5" fill="#ffffff" stroke="#b86a00" stroke-width="2"/>
+  <text x="160" y="215" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">3. Tunggu buku dicatat</text>
+  <rect x="340" y="10" width="190" height="250" rx="8" fill="#f4f8fd" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="435" y="40" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Panduan yang baik</text>
+  <text x="435" y="70" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">satu tindakan</text>
+  <text x="435" y="106" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">per langkah</text>
+  <text x="435" y="142" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">bernomor</text>
+  <text x="435" y="178" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">kata dari daftar</text>
+  <text x="435" y="214" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">ada gambar</text>
+</svg>

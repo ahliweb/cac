@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 250" width="520" height="250" role="img" aria-labelledby="t d">
+  <title id="t">Informasi umum dan informasi pribadi</title>
+  <desc id="d">Dua kolom. Kolom umum berisi warna kesukaan, makanan kesukaan, hewan kesukaan, dan hobi menggambar. Kolom pribadi dengan tulisan jangan bagikan berisi alamat rumah, nomor telepon, kata sandi, dan rumah sedang kosong.</desc>
+  <rect width="520" height="250" fill="#ffffff"/>
+  <rect x="10" y="10" width="245" height="230" rx="8" fill="#eef8ee" stroke="#3a7d3a" stroke-width="2"/>
+  <rect x="265" y="10" width="245" height="230" rx="8" fill="#fdeeee" stroke="#b03030" stroke-width="2"/>
+  <text x="132" y="36" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222" text-anchor="middle">UMUM</text>
+  <text x="387" y="36" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">PRIBADI: JANGAN BAGIKAN</text>
+  <rect x="30" y="56" width="205" height="34" rx="5" fill="#ffffff" stroke="#3a7d3a" stroke-width="2"/>
+  <text x="132" y="78" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">warna kesukaan</text>
+  <rect x="30" y="100" width="205" height="34" rx="5" fill="#ffffff" stroke="#3a7d3a" stroke-width="2"/>
+  <text x="132" y="122" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">makanan kesukaan</text>
+  <rect x="30" y="144" width="205" height="34" rx="5" fill="#ffffff" stroke="#3a7d3a" stroke-width="2"/>
+  <text x="132" y="166" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">hewan kesukaan</text>
+  <rect x="30" y="188" width="205" height="34" rx="5" fill="#ffffff" stroke="#3a7d3a" stroke-width="2"/>
+  <text x="132" y="210" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">hobi menggambar</text>
+  <rect x="285" y="56" width="205" height="34" rx="5" fill="#ffffff" stroke="#b03030" stroke-width="2"/>
+  <text x="387" y="78" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">alamat rumah</text>
+  <rect x="285" y="100" width="205" height="34" rx="5" fill="#ffffff" stroke="#b03030" stroke-width="2"/>
+  <text x="387" y="122" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">nomor telepon</text>
+  <rect x="285" y="144" width="205" height="34" rx="5" fill="#ffffff" stroke="#b03030" stroke-width="2"/>
+  <text x="387" y="166" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">kata sandi</text>
+  <rect x="285" y="188" width="205" height="34" rx="5" fill="#ffffff" stroke="#b03030" stroke-width="2"/>
+  <text x="387" y="210" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">rumah sedang kosong</text>
+</svg>

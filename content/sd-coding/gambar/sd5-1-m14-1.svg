@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 260" width="540" height="260" role="img" aria-labelledby="t d">
+  <title id="t">Peta isi semester 1</title>
+  <desc id="d">Dua baris. Baris pertama, berpikir komputasional minggu satu sampai enam: diketahui dan diminta, empat cara berpikir, langkah memecahkan, diagram langkah, instruksi dengan kata. Baris kedua, literasi digital minggu tujuh sampai sepuluh: teknologi digital, sistem komputer, informasi pribadi, interaksi aman. Di bawahnya catatan bahwa minggu sebelas sampai tiga belas memakai keduanya.</desc>
+  <rect width="540" height="260" fill="#ffffff"/>
+  <text x="270" y="26" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">Peta semester 1</text>
+  <rect x="10" y="40" width="520" height="80" rx="8" fill="#f4f8fd" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="270" y="60" font-family="sans-serif" font-size="13" font-weight="bold" fill="#222222" text-anchor="middle">BERPIKIR KOMPUTASIONAL (M1 sampai M6)</text>
+  <text x="62" y="88" font-family="sans-serif" font-size="11" fill="#222222" text-anchor="middle">diketahui</text>
+  <text x="62" y="104" font-family="sans-serif" font-size="11" fill="#222222" text-anchor="middle">dan diminta</text>
+  <text x="162" y="88" font-family="sans-serif" font-size="11" fill="#222222" text-anchor="middle">empat cara</text>
+  <text x="162" y="104" font-family="sans-serif" font-size="11" fill="#222222" text-anchor="middle">berpikir</text>
+  <text x="262" y="88" font-family="sans-serif" font-size="11" fill="#222222" text-anchor="middle">langkah</text>
+  <text x="262" y="104" font-family="sans-serif" font-size="11" fill="#222222" text-anchor="middle">memecahkan</text>
+  <text x="362" y="88" font-family="sans-serif" font-size="11" fill="#222222" text-anchor="middle">diagram</text>
+  <text x="362" y="104" font-family="sans-serif" font-size="11" fill="#222222" text-anchor="middle">langkah</text>
+  <text x="462" y="88" font-family="sans-serif" font-size="11" fill="#222222" text-anchor="middle">instruksi</text>
+  <text x="462" y="104" font-family="sans-serif" font-size="11" fill="#222222" text-anchor="middle">dengan kata</text>
+  <rect x="10" y="140" width="520" height="80" rx="8" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+  <text x="270" y="160" font-family="sans-serif" font-size="13" font-weight="bold" fill="#222222" text-anchor="middle">LITERASI DIGITAL (M7 sampai M10)</text>
+  <text x="70" y="196" font-family="sans-serif" font-size="11" fill="#222222" text-anchor="middle">teknologi digital</text>
+  <text x="200" y="196" font-family="sans-serif" font-size="11" fill="#222222" text-anchor="middle">sistem komputer</text>
+  <text x="330" y="196" font-family="sans-serif" font-size="11" fill="#222222" text-anchor="middle">informasi pribadi</text>
+  <text x="460" y="196" font-family="sans-serif" font-size="11" fill="#222222" text-anchor="middle">interaksi aman</text>
+  <text x="270" y="244" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">M11 sampai M13: penguatan dan proyek memakai keduanya</text>
+</svg>

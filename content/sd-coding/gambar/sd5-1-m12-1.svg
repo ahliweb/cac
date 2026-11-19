@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 220" width="540" height="220" role="img" aria-labelledby="t d">
+  <title id="t">Empat langkah untuk satu kasus</title>
+  <desc id="d">Empat kotak berurutan dengan panah: pahami (siapa pengirim, apa yang diminta), rencanakan (balas, abaikan, atau tanya orang dewasa), jalankan (lakukan pilihan yang aman), dan periksa (sudah aman, sudah ada bantuan).</desc>
+  <rect width="540" height="220" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a5d9f"/>
+    </marker>
+  </defs>
+  <rect x="10" y="50" width="115" height="110" rx="8" fill="#f4f8fd" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="67" y="80" font-family="sans-serif" font-size="13" font-weight="bold" fill="#222222" text-anchor="middle">PAHAMI</text>
+  <text x="67" y="112" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">siapa pengirim?</text>
+  <text x="67" y="132" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">apa yang diminta?</text>
+  <line x1="127" y1="105" x2="143" y2="105" stroke="#2a5d9f" stroke-width="2.5" marker-end="url(#a)"/>
+  <rect x="145" y="50" width="115" height="110" rx="8" fill="#f4f8fd" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="202" y="80" font-family="sans-serif" font-size="13" font-weight="bold" fill="#222222" text-anchor="middle">RENCANAKAN</text>
+  <text x="202" y="112" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">balas, abaikan,</text>
+  <text x="202" y="132" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">atau tanya?</text>
+  <line x1="262" y1="105" x2="278" y2="105" stroke="#2a5d9f" stroke-width="2.5" marker-end="url(#a)"/>
+  <rect x="280" y="50" width="115" height="110" rx="8" fill="#f4f8fd" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="337" y="80" font-family="sans-serif" font-size="13" font-weight="bold" fill="#222222" text-anchor="middle">JALANKAN</text>
+  <text x="337" y="112" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">lakukan pilihan</text>
+  <text x="337" y="132" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">yang aman</text>
+  <line x1="397" y1="105" x2="413" y2="105" stroke="#2a5d9f" stroke-width="2.5" marker-end="url(#a)"/>
+  <rect x="415" y="50" width="115" height="110" rx="8" fill="#f4f8fd" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="472" y="80" font-family="sans-serif" font-size="13" font-weight="bold" fill="#222222" text-anchor="middle">PERIKSA</text>
+  <text x="472" y="112" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">sudah aman?</text>
+  <text x="472" y="132" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">ada bantuan?</text>
+  <text x="270" y="30" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Empat langkah menghadapi satu kasus</text>
+  <text x="270" y="200" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">Kasus fiktif di kertas, tanpa perangkat dan tanpa data murid</text>
+</svg>

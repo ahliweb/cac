@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 270" width="540" height="270" role="img" aria-labelledby="t d">
+  <title id="t">Komputer manusia: masukan, proses, keluaran, penyimpanan</title>
+  <desc id="d">Tiga kotak berurutan dengan panah: masukan menerima bilangan tiga dan empat, proses menjumlahkan, keluaran menyebut tujuh. Dari proses, satu panah turun ke kotak penyimpanan yang berisi catatan tiga tambah empat sama dengan tujuh.</desc>
+  <rect width="540" height="270" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a5d9f"/>
+    </marker>
+  </defs>
+  <rect x="20" y="30" width="140" height="100" rx="8" fill="#f4f8fd" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="90" y="60" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">MASUKAN</text>
+  <text x="90" y="88" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">menerima dua bilangan</text>
+  <text x="90" y="112" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">3 dan 4</text>
+  <rect x="200" y="30" width="140" height="100" rx="8" fill="#f4f8fd" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="270" y="60" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">PROSES</text>
+  <text x="270" y="88" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">menjumlahkan</text>
+  <text x="270" y="112" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">3 + 4</text>
+  <rect x="380" y="30" width="140" height="100" rx="8" fill="#f4f8fd" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="450" y="60" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">KELUARAN</text>
+  <text x="450" y="88" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">menyebut hasil</text>
+  <text x="450" y="112" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">tujuh</text>
+  <line x1="160" y1="80" x2="198" y2="80" stroke="#2a5d9f" stroke-width="2.5" marker-end="url(#a)"/>
+  <line x1="340" y1="80" x2="378" y2="80" stroke="#2a5d9f" stroke-width="2.5" marker-end="url(#a)"/>
+  <rect x="200" y="180" width="140" height="70" rx="8" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+  <text x="270" y="208" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">PENYIMPANAN</text>
+  <text x="270" y="232" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">kotak: 3 + 4 = 7</text>
+  <line x1="270" y1="130" x2="270" y2="178" stroke="#b86a00" stroke-width="2.5" marker-end="url(#a)"/>
+</svg>
