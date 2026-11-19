@@ -78,6 +78,8 @@ E0 0.02 0.04
 E1 0.56 0.19
 ```
 
+Perhatikan: E1 di sini (recall 0,56) berbeda dari E1 di `d-xii1-m7` dan `d-xii1-m8` (recall 0,63). Model E1 sama, bobot kelas seimbang; yang berbeda datanya, karena data karangan di modul ini lebih sederhana (tanpa kolom `jenis`). Jadi bandingkan angka hanya di dalam satu program dengan data yang sama.
+
 Versi "sesudah": konstanta bernama dan benih di satu tempat, fungsi satu tugas dengan docstring, `main` sebagai titik masuk, dan fungsi `catat_lingkungan` untuk README. Keluaran dua baris pertamanya **sama** dengan "sebelum": itulah bukti refaktor tidak mengubah perilaku.
 
 ```python
