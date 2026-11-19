@@ -1089,6 +1089,164 @@
         }
       ],
       "contentPath": "content/smp-coding/modules/smp8-2-m7.md"
+    },
+    {
+      "id": "smp8-2-m8",
+      "title": "Daftar (list)",
+      "weekCodes": ["SMP8-2-M8"],
+      "cpCodes": [],
+      "gradeLevels": ["8"],
+      "prerequisites": ["SMP8-2-M5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3 Tutorial: Data Structures, lists (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-2-m8.md"
+    },
+    {
+      "id": "smp8-2-m9",
+      "title": "Fungsi",
+      "weekCodes": ["SMP8-2-M9"],
+      "cpCodes": [],
+      "gradeLevels": ["8"],
+      "prerequisites": ["SMP8-2-M8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3 Tutorial: More Control Flow Tools, Defining Functions (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-2-m9.md"
+    },
+    {
+      "id": "smp8-2-m10",
+      "title": "Membaca pesan galat dan debugging",
+      "weekCodes": ["SMP8-2-M10"],
+      "cpCodes": ["D-BK-a"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["SMP8-2-M5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3 Tutorial: Errors and Exceptions (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/errors.html"
+        },
+        {
+          "title": "Python 3: Built-in Exceptions (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/builtins/exceptions.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-2-m10.md"
+    },
+    {
+      "id": "smp8-2-m11",
+      "title": "Kata sandi, akun, dan keamanan diri; data pribadi dan kata sandi tidak ditempel ke layanan AI",
+      "weekCodes": ["SMP8-2-M11"],
+      "cpCodes": ["D-LD-m", "D-LD-p"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["SMP7-1-M12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "NIST SP 800-63B: Digital Identity Guidelines, Authentication and Authenticator Management (NIST)",
+          "url": "https://pages.nist.gov/800-63-4/sp800-63b.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-2-m11.md"
+    },
+    {
+      "id": "smp8-2-m12",
+      "title": "Informasi publik dan privat di media sosial",
+      "weekCodes": ["SMP8-2-M12"],
+      "cpCodes": ["D-LD-d", "D-LD-o"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["SMP8-2-M11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "UU Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi (JDIH BPK)",
+          "url": "https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-2-m12.md"
+    },
+    {
+      "id": "smp8-2-m13",
+      "title": "Proyek mini: kuis teks atau gambar",
+      "weekCodes": ["SMP8-2-M13"],
+      "cpCodes": ["DK-BK-b"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["SMP8-2-M9", "SMP8-2-M10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3 Tutorial: More Control Flow Tools, Defining Functions (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-2-m13.md"
+    },
+    {
+      "id": "smp8-2-m14",
+      "title": "Asesmen dan refleksi",
+      "weekCodes": ["SMP8-2-M14"],
+      "cpCodes": ["D-BK-a"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["SMP8-2-M13"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Python 3 Tutorial: More Control Flow Tools, Defining Functions (dokumentasi resmi Python)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-2-m14.md"
     }
   ]
 }
