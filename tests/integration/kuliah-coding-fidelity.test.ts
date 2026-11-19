@@ -114,6 +114,29 @@ describe("kuliah-coding fidelity: data/kuliah-coding vs. the approved silabus", 
   });
 });
 
+describe("kuliah-coding fidelity: v1.2 bridges (#177)", () => {
+  test("recognition is per CPMK, jalur A also reaches KUL-I-201, and the foundation row is corrected", () => {
+    const corpus = expectedCorpus(markdown) as Record<string, Json>;
+    const fromSma = corpus["bridges.json"].fromSma as Array<Json>;
+    expect(fromSma).toHaveLength(5);
+    expect(fromSma[0].toCourses).toEqual(["KUL-I-101", "KUL-I-102", "KUL-I-201", "KUL-K-201"]);
+    expect(fromSma[0].basis).toContain("Pengakuan per CPMK, bukan per mata kuliah");
+    expect(fromSma[2].toCourses).toEqual(["KUL-U-201", "KUL-U-102", "KUL-U-202", "KUL-I-303"]);
+    // The v1.1.1 row mapped the foundation block to KUL-U-101 ("berpikir komputasional"), which is wrong.
+    expect(fromSma[4].toCourses).toEqual(["KUL-I-203", "KUL-I-301", "KUL-U-202"]);
+    expect(fromSma[4].toCourses).not.toContain("KUL-U-101");
+    expect(fromSma[4].basis).toContain("bukan berpikir komputasional");
+  });
+
+  test("the dewasa-coding row of bagian 5.2 points to jalur PRO and bagian 6.2", () => {
+    const corpus = expectedCorpus(markdown) as Record<string, Json>;
+    const dewasa = (corpus["bridges.json"].toWork as Array<Json>)[1];
+    expect(dewasa.to).toContain("jalur `PRO`");
+    expect(dewasa.how).toContain("bagian 6.2");
+    expect(dewasa.courses).toEqual(["KUL-U-301", "KUL-I-401"]);
+  });
+});
+
 describe("kuliah-coding fidelity: drift fails hard", () => {
   test("a changed course cell is reported with its course code and field", () => {
     const files = load();

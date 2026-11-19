@@ -1,6 +1,6 @@
 # Peta Jenjang Program Pembelajaran Coding
 
-- **Version:** v2.1.0
+- **Version:** v2.2.0
 - **Last updated:** 2026-11-19
 - **Status:** Dokumen peta (navigasi), bukan silabus. Isinya merangkum keadaan nyata folder program di `docs/programs/`, pembinaan OSN di `docs/silabus/`, dan registri `data/programs.json`. Menyebut status; tidak mengubah isi dokumen program mana pun.
 
@@ -62,7 +62,7 @@ Kolom "Dasar" memuat apa yang tertulis di silabus masing-masing pada saat penuli
 | `smp-coding` | `sma-coding` | Silabus SMP (bagian 5.2) memetakan blok kelas 7 ke blok fondasi kelas X (`FND-X1-M1..M7`), Python pengayaan ke jalur D, logika dan fungsi ke jalur A dan B, simulator MakeCode ke jalur C, dan literasi KA kelas 9 ke jalur D. Pemetaan ini ditulis sepihak oleh draf SMP; silabus `sma-coding` (v1.3.1) tidak memuat kata SMP sebagai prasyarat (diperiksa dengan pencarian teks pada `silabus.md`). |
 | `sma-coding` jalur A | `osn` | Jembatan disetujui dan terkodekan di `data/sma-coding/osn-bridge.json` (jalur A selaras rumpun `data/osn/topic-families.json`; jalur C sebagian lewat `trackBridges`). |
 | `smp-coding` | `osn` | Silabus SMP (bagian 5.3): tidak ada OSN SMP yang dapat dipastikan; jembatannya klub pengayaan lalu jalur A `sma-coding`. Silabus SD (bagian 8) menyatakan tidak ada jembatan OSN untuk SD. |
-| `sma-coding` jalur A, B, C, D, E; `osn` | `kuliah-coding` | Silabus kuliah (bagian 5.1) menulis jembatan per jalur ke mata kuliah `KUL-*` dengan pengakuan lewat rekognisi pembelajaran lampau; sebagian `[asumsi]` atau `[belum terverifikasi]`. Sepihak dari sisi kuliah; silabus SMA belum merujuknya. |
+| `sma-coding` jalur A, B, C, D, E; `osn` | `kuliah-coding` | **Selaras** (keputusan pemilik 2026-11-19, #177; kuliah v1.2.0). Silabus kuliah (bagian 5.1) menulis pengakuan **per CPMK**, bukan per mata kuliah utuh, dengan bukti portofolio akhir jalur, riwayat Git, ujian praktik tanpa AI, wawancara kode, dan gerbang kesiapan; jalur A juga ke `KUL-I-201`, jalur D ke `KUL-U-102`, dan rujukan blok fondasi ke `KUL-U-101` dikoreksi ke `KUL-I-203`, `KUL-I-301`, `KUL-U-202`. Sebagian `[asumsi]` atau `[belum terverifikasi]` (tata cara pengakuan ditetapkan perguruan tinggi). Kuliah tidak mensyaratkan SMA, jadi silabus SMA tidak perlu merujuk kuliah; kode minggu `sma-coding` yang disebut diperiksa silang oleh `osn validate` (ADR-0010). |
 | `kuliah-coding` | `dewasa-coding` | **Selaras** (keputusan pemilik 2026-11-19, #177; kuliah v1.2.0, dewasa v1.2.0). Silabus kuliah (bagian 5.2) menyebut portofolio `KUL-U-301` dan `KUL-I-401` sebagai bukti masuk jalur `PRO`; silabus dewasa (bagian 6.1 dan 6.2, keputusan 12.7) merancang pengakuan per modul `PRO` dengan status lewati, padatkan, wajib untuk tiga profil masuk, `DW-FND-M1` dan `DW-PRO-M12` tetap wajib. Terkodekan di `data/dewasa-coding/kuliah-bridge.json`; kode `KUL-` dan `DW-` diperiksa silang oleh `osn validate` (ADR-0010). |
 | `sma-coding` jalur A, B, D | `dewasa-coding` | Silabus dewasa (bagian 6.1) memetakan jalur A ke `PRO`, jalur B ke `PRO` dan `BIS`, jalur D ke `PKJ` dan `PRO`, semua `[asumsi]`; juga menyebut pendamping anak ke jalur A atau B. |
 
@@ -112,3 +112,4 @@ sumbernya.
 | v2.0.1 | 2026-11-19 | Versi silabus tk, sd, smp, kuliah, dan dewasa ke revisi patch (issue #165); kalimat riwayat "belum ada" di bagian 3 disesuaikan dengan silabus yang sudah diperbaiki. |
 | v2.0.2 | 2026-11-19 | Tautan ke `rancangan-jembatan-antarprogram.md` (rancangan penyelarasan jembatan, DRAF) di bagian 3; isi peta tidak berubah. |
 | v2.1.0 | 2026-11-19 | Jembatan `kuliah-coding` ke `dewasa-coding` jalur `PRO` selaras (#177): kuliah dan dewasa v1.2.0, `data/dewasa-coding/` 8 berkas; rancangan jembatan disetujui pemilik dan diterapkan bertahap. |
+| v2.2.0 | 2026-11-19 | Jembatan `sma-coding` dan `kuliah-coding` selaras (#177): pengakuan per CPMK (kuliah v1.2.0 bagian 5.1), koreksi rujukan fondasi. |

@@ -2,7 +2,7 @@
 
 - **Version:** v1.2.0
 - **Last updated:** 2026-11-19
-- **Status:** **DISETUJUI** pemilik program: v1.0 pada 2026-11-19 (issue #130) beserta rekomendasi penyusun, revisi v1.1 (rekayasa perangkat lunak berbantuan AI) lewat keputusan pemilik 2026-11-19 (issue #139). Program **terdaftar** di `data/programs.json` (versi silabus 1.1.0) dan corpusnya ada di `data/kuliah-coding/` (ADR-0006, ADR-0008). Belum ada `content/kuliah-coding/` (modul pendamping). Revisi v1.2.0 (bagian 5, jembatan; baris dewasa-coding di 5.2) disetujui lewat keputusan pemilik 2026-11-19 (issue #177).
+- **Status:** **DISETUJUI** pemilik program: v1.0 pada 2026-11-19 (issue #130) beserta rekomendasi penyusun, revisi v1.1 (rekayasa perangkat lunak berbantuan AI) lewat keputusan pemilik 2026-11-19 (issue #139). Program **terdaftar** di `data/programs.json` (versi silabus 1.1.0) dan corpusnya ada di `data/kuliah-coding/` (ADR-0006, ADR-0008). Belum ada `content/kuliah-coding/` (modul pendamping). Revisi v1.2.0 (bagian 5, jembatan: 5.1 dari SMA dan baris dewasa-coding di 5.2) disetujui lewat keputusan pemilik 2026-11-19 (issue #177).
 
 > Isi folder ini adalah konten **karangan** (*authored*) menurut
 > [ADR-0007](../../architecture/adr/0007-authored-learning-content.md), bukan
@@ -80,7 +80,7 @@ dan audit tetap); hanya isi sel dan versi (1.1.0).
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
-| v1.2.0 | 2026-11-19 | Revisi minor atas keputusan pemilik #177: bagian 5.2 baris dewasa-coding merujuk jalur `PRO` dan bagian 6.2 silabus dewasa-coding v1.2 (portofolio `KUL-U-301` dan `KUL-I-401` sebagai bukti masuk); mata kuliah, SKS, dan KA tidak berubah. |
+| v1.2.0 | 2026-11-19 | Revisi minor atas keputusan pemilik #177: bagian 5.1 (dari SMA) pengakuan per CPMK dengan bukti portofolio, riwayat Git, ujian praktik tanpa AI, wawancara kode, gerbang kesiapan; jalur A juga ke `KUL-I-201`, jalur D ke `KUL-U-102`; rujukan blok fondasi ke `KUL-U-101` dikoreksi ke `KUL-I-203`, `KUL-I-301`, `KUL-U-202`; bagian 5.2 baris dewasa-coding merujuk jalur `PRO` dan bagian 6.2 silabus dewasa-coding v1.2 (portofolio `KUL-U-301` dan `KUL-I-401` sebagai bukti masuk); mata kuliah, SKS, dan KA tidak berubah. |
 | v1.1.1 | 2026-11-19 | Silabus direvisi patch ke v1.1.1 (issue #165): kalimat status yang basi tentang program pasangannya diperbaiki; isi kurikulum dan corpus tidak berubah. |
 | v1.1.0 | 2026-11-19 | Rekayasa perangkat lunak berbantuan AI (issue #139): `KUL-U-202`, `KUL-I-204`, `KUL-I-401`, `KUL-I-301`, `KUL-I-305`, `KUL-I-303`, jalur K, kebijakan AI diperkuat, glosarium; SKS tidak berubah; corpus dan registri ke 1.1.0. |
 | v1.0.0 | 2026-11-19 | Disetujui pemilik (issue #130); `silabus-draf.md` menjadi `silabus.md`; program terdaftar dan di-encode ke `data/kuliah-coding/`. |
