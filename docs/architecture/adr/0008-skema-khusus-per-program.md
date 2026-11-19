@@ -16,6 +16,18 @@ keputusan ini sudah dilaksanakan. Kelima program ter-encode dan terdaftar
 menjalankan enam modul fidelity. Bagian "Context" dan seterusnya
 mencerminkan keadaan saat keputusan dibuat dan sengaja tidak diubah.
 
+**Catatan status pelaksanaan lanjutan (2026-11-19, bukan keputusan baru):**
+pola yang sama kini juga dipakai untuk indeks modul belajar (ADR-0007) lima
+program. Masing-masing punya skema sendiri (`tk-module.ts`, `sd-module.ts`,
+`smp-module.ts`, `kul-module.ts`, `dw-learning-module.ts` di `src/schema/`,
+seperti `sma-module.ts` untuk `sma-coding`), aturan rujukan silang sendiri
+(`<awalan>-modules.ts` di `src/domain/`), dan terhubung lewat kait
+`parseModulesIndex` dan `moduleFindings` pada entri `PROGRAM_MODULES`; hanya
+aturan ADR-0007 yang sama yang dipakai bersama (`program-module-common.ts`).
+`osn render modul` mendukung kelima program, dan `--lembar` merender lembar
+anak program `tk-coding` dan `sd-coding`. Belum ada `modules.json` atau
+modul isi nyata untuk kelima program.
+
 ## Context
 
 Setelah `osn` dan `sma-coding`, lima program coding lain memiliki draf

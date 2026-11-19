@@ -86,13 +86,18 @@ itself.
 | #130 — Research and syllabus for university coding; approved and encoded as `kuliah-coding` v1.1.0 (PR #146) | FR-37, TR-18 |
 | #131 — Research and syllabus for adult coding; approved and encoded as `dewasa-coding` v1.1.0 (PR #147) | FR-38, TR-19 |
 | #139 — AI in software engineering research and the per-programme AI-use policies (PR #159 OSN, #160 SMP, #161 SMA, #162 kuliah, #163 dewasa) | ER-17, FR-36, FR-37, FR-38 |
+| #127 — module index of `tk-coding` (schema, validation, `osn render modul`, learner sheet) | FR-39 |
+| #128 — module index of `sd-coding` (schema, validation, `osn render modul`, learner sheet) | FR-40 |
+| #129 — module index of `smp-coding` (schema, validation, `osn render modul`) | FR-41 |
+| #130 — module index of `kuliah-coding` (schema, validation, `osn render modul`) | FR-42 |
+| #131 — module index of `dewasa-coding` (schema, validation, `osn render modul`) | FR-43 |
 
 Rows `#27` and later are not required by the checker: only `#1`-`#26` must be present (the initial
 backlog), while any issue may be cited. A new programme adds its issues here as it adds requirements.
 
 ## Matrix 3 — Requirement → tests
 
-Requirements `FR-27`-`FR-38`, `TR-12`-`TR-19` and `GR-13` have no OSN syllabus section, so they
+Requirements `FR-27`-`FR-43`, `TR-12`-`TR-19` and `GR-13` have no OSN syllabus section, so they
 are traced by issue (Matrix 2) and by the tests below. Every path must exist; the checker
 (`checkTestLinks`) fails on a missing file, an unregistered ID or a row with no test.
 
@@ -110,6 +115,11 @@ are traced by issue (Matrix 2) and by the tests below. Every path must exist; th
 | FR-36 | `tests/unit/smp-corpus-audit.test.ts`, `tests/integration/cli-smp-coding.test.ts` |
 | FR-37 | `tests/unit/kul-corpus-audit.test.ts`, `tests/integration/cli-kuliah-coding.test.ts` |
 | FR-38 | `tests/unit/dw-corpus-audit.test.ts`, `tests/integration/cli-dewasa-coding.test.ts` |
+| FR-39 | `tests/unit/program-module-schemas.test.ts`, `tests/unit/program-modules-domain.test.ts`, `tests/unit/render-module-learner-sheet.test.ts`, `tests/integration/cli-program-modules-validate.test.ts`, `tests/integration/cli-program-modules-render.test.ts` |
+| FR-40 | `tests/unit/program-module-schemas.test.ts`, `tests/unit/program-modules-domain.test.ts`, `tests/unit/render-module-learner-sheet.test.ts`, `tests/integration/cli-program-modules-validate.test.ts`, `tests/integration/cli-program-modules-render.test.ts` |
+| FR-41 | `tests/unit/program-module-schemas.test.ts`, `tests/unit/program-modules-domain.test.ts`, `tests/integration/cli-program-modules-validate.test.ts`, `tests/integration/cli-program-modules-render.test.ts` |
+| FR-42 | `tests/unit/program-module-schemas.test.ts`, `tests/unit/program-modules-domain.test.ts`, `tests/integration/cli-program-modules-validate.test.ts`, `tests/integration/cli-program-modules-render.test.ts` |
+| FR-43 | `tests/unit/program-module-schemas.test.ts`, `tests/unit/program-modules-domain.test.ts`, `tests/integration/cli-program-modules-validate.test.ts`, `tests/integration/cli-program-modules-render.test.ts` |
 | TR-12 | `tests/integration/sma-coding-fidelity.test.ts` |
 | TR-13 | `tests/unit/check-module-code.test.ts`, `tests/integration/check-module-code.test.ts` |
 | TR-14 | `tests/unit/program-registry.test.ts`, `tests/integration/check-fidelity.test.ts` |
