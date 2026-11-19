@@ -1,8 +1,8 @@
 # Rancangan Seri Modul Jalur A dan B (sma-coding): 154 Modul, Satu per Minggu
 
-- **Version:** v0.1.0
+- **Version:** v0.2.0
 - **Last updated:** 2026-11-19
-- **Status:** **DRAF, menunggu keputusan pemilik.** Rancangan ini belum disetujui; tidak ada modul jalur A atau B yang ditulis, terindeks, atau berstatus apa pun. Ia akan diajukan orchestrator ke pemilik lewat dialog keputusan (bagian 8) sebelum modul ditulis. Pemilik menginstruksikan pada 2026-11-19 "buatkan modulnya" (instruksi pemilik, bukan persetujuan rancangan ini).
+- **Status:** Rancangan **DISETUJUI pemilik 2026-11-19** lewat dialog keputusan (bagian 8): pertanyaan 1 opsi "Setujui, evaluasi guru paralel" (templat dan rancangan disetujui; penulisan tidak dijeda, evaluasi guru nyata berjalan paralel dan temuannya diperbaiki lewat PR revisi), pertanyaan 2 opsi "Per semester, A dan B paralel", pertanyaan 3 opsi "Soal orisinal + tautan resmi". Pertanyaan 4 tidak diajukan ke pemilik; orchestrator memakai opsi yang disarankan (pemeriksaan sintaks `ts`/`js` digabung sebelum P1 B) karena pemeriksaan itu sudah selesai dibuat. Persetujuan ini untuk rancangan, bukan modul: semua modul jalur A dan B yang ditulis berstatus `draf` (ADR-0007).
 - **Changeset:** `.changeset/rancangan-modul-ab.md` (patch): dokumen rancangan saja; tidak mengubah `content/`, `data/`, `src/`, atau silabus.
 - **Issue:** [#237](https://github.com/ahliweb/osn/issues/237); lanjutan dari issue #124 (seri modul belajar siswa SMA).
 
@@ -607,7 +607,7 @@ modul sebelumnya.
 | Putaran | Gelombang (jalur, semester, jumlah modul) | Batch | Catatan |
 | --- | --- | --- | --- |
 | P1 | A-X1 (7), B-X1 (7) | 2 | uji tangan pertama; fondasi sebagai sumber `Ingat kembali`; modul `m9..m12` dengan urutan baca-dan-prediksi |
-| P2 | A-X2 (14), B-X2 (14) | 4 | titik evaluasi dengan guru setelah P2 (pertanyaan 1) |
+| P2 | A-X2 (14), B-X2 (14) | 4 | evaluasi guru berjalan paralel, tanpa jeda (keputusan pemilik pertanyaan 1) |
 | P3 | A-XI1 (14), B-XI1 (14) | 4 | strategi algoritmik A; TypeScript dan Bun B |
 | P4 | A-XI2 (14), B-XI2 (14) | 4 | DP dan graf A; server, data, dan keamanan B |
 | P5 | A-XII1 (14), B-XII1 (14) | 4 | graf lanjut dan struktur data A; `awcms-one` B (demo guru) |
@@ -647,7 +647,7 @@ tinjauan 154 modul tambahan: peninjau berperan, prioritas modul berisiko.
 ## 8. Pertanyaan keputusan untuk pemilik
 
 Disajikan orchestrator lewat dialog pilihan baku; **opsi pertama adalah
-rekomendasi penyusun**. Dokumen ini tidak mencatat jawaban apa pun. Maksimal
+rekomendasi penyusun**. **Jawaban pemilik 2026-11-19:** pertanyaan 1 "Setujui, evaluasi guru paralel" (opsi 2 di bawah, disajikan sebagai opsi disarankan oleh orchestrator), pertanyaan 2 opsi 1, pertanyaan 3 opsi 1; pertanyaan 4 tidak diajukan (opsi 1 dipakai orchestrator, lihat status). Maksimal
 empat, mengikuti batas satu dialog.
 
 1. **Persetujuan rancangan dan titik evaluasi.**
@@ -732,4 +732,5 @@ empat, mengikuti batas satu dialog.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v0.2.0 | 2026-11-19 | Mencatat keputusan pemilik lewat dialog (pertanyaan 1: "Setujui, evaluasi guru paralel"; 2: per semester, A dan B paralel; 3: soal orisinal dan tautan resmi); pertanyaan 4 memakai opsi disarankan oleh orchestrator. Catatan P2 di bagian 7 disesuaikan (tanpa jeda evaluasi). |
 | v0.1.0 | 2026-11-19 | Rancangan awal (issue #237): pemetaan 154 modul (jalur A 77, B 77) dibangkitkan dari `weeks.json` dan `cp-mapping.json` dengan jenis minggu, butir CP (memenuhi dan mendukung), dan prasyarat; jembatan OSN, SMP, dan keterkaitan modul yang ada; aturan khas jalur A (C++17, soal orisinal, kompleksitas) dan B (Bun, keamanan web, demo `awcms-one`); 12 gelombang dan 22 batch; empat pertanyaan keputusan. Status DRAF, menunggu keputusan pemilik. |
