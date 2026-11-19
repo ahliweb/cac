@@ -1,0 +1,75 @@
+{
+  "modules": [
+    {
+      "id": "kul-i-101",
+      "title": "Fondasi Pemrograman",
+      "courseCodes": ["KUL-I-101"],
+      "knowledgeAreas": ["SDF", "FPL"],
+      "semester": "S1",
+      "prerequisites": [],
+      "audience": "mahasiswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Standard C++ Foundation: Get Started",
+          "url": "https://isocpp.org/get-started"
+        },
+        {
+          "title": "GCC: Instrumentation Options (sanitizer)",
+          "url": "https://gcc.gnu.org/onlinedocs/gcc/Instrumentation-Options.html"
+        },
+        {
+          "title": "Debugging with GDB",
+          "url": "https://sourceware.org/gdb/current/onlinedocs/gdb.html/"
+        },
+        { "title": "Git Reference", "url": "https://git-scm.com/docs" }
+      ],
+      "contentPath": "content/kuliah-coding/modules/kul-i-101.md"
+    },
+    {
+      "id": "kul-i-102",
+      "title": "Struktur Data",
+      "courseCodes": ["KUL-I-102"],
+      "knowledgeAreas": ["SDF", "AL"],
+      "semester": "S2",
+      "prerequisites": ["kul-i-101"],
+      "audience": "mahasiswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Standard C++ Foundation: Get Started",
+          "url": "https://isocpp.org/get-started"
+        },
+        {
+          "title": "MIT OpenCourseWare: Introduction to Algorithms (6.006, Spring 2020)",
+          "url": "https://ocw.mit.edu/courses/6-006-introduction-to-algorithms-spring-2020/"
+        }
+      ],
+      "contentPath": "content/kuliah-coding/modules/kul-i-102.md"
+    },
+    {
+      "id": "kul-i-103",
+      "title": "Matematika Diskret untuk Komputasi",
+      "courseCodes": ["KUL-I-103"],
+      "knowledgeAreas": ["MSF"],
+      "semester": "S2",
+      "prerequisites": [],
+      "audience": "mahasiswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Discrete Mathematics: An Open Introduction (Oscar Levin)",
+          "url": "https://discrete.openmathbooks.org/dmoi3.html"
+        },
+        {
+          "title": "MIT OpenCourseWare: Mathematics for Computer Science (6.042J, Spring 2015)",
+          "url": "https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/"
+        }
+      ],
+      "contentPath": "content/kuliah-coding/modules/kul-i-103.md"
+    }
+  ]
+}
