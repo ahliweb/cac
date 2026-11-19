@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 280" width="540" height="280" role="img" aria-labelledby="t d">
+  <title id="t">Tiga pertanyaan sebelum memberikan foto atau suara</title>
+  <desc id="d">Tiga kotak pertanyaan bersusun dari atas ke bawah: siapa yang meminta, untuk apa, dan bisa ditarik kembali. Sebuah panah dari ketiganya menuju kotak keputusan di kanan: bila ada yang tidak jelas, tanya orang dewasa.</desc>
+  <rect width="540" height="280" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a5d9f"/>
+    </marker>
+  </defs>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <rect x="20" y="20" width="240" height="60" rx="6" fill="#e8f0fb" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="34" y="56">1. Siapa yang meminta?</text>
+    <rect x="20" y="110" width="240" height="60" rx="6" fill="#e8f0fb" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="34" y="146">2. Untuk apa?</text>
+    <rect x="20" y="200" width="240" height="60" rx="6" fill="#e8f0fb" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="34" y="236">3. Bisa ditarik kembali?</text>
+  </g>
+  <g stroke="#2a5d9f" stroke-width="3" fill="none" marker-end="url(#a)">
+    <path d="M262,50 L318,120"/>
+    <path d="M262,140 L318,140"/>
+    <path d="M262,230 L318,160"/>
+  </g>
+  <rect x="322" y="95" width="200" height="90" rx="8" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+  <g font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">
+    <text x="422" y="122">Ada yang tidak jelas?</text>
+    <text x="422" y="148" font-weight="bold">TANYA</text>
+    <text x="422" y="168" font-weight="bold">ORANG DEWASA</text>
+  </g>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300" width="560" height="300" role="img" aria-labelledby="t d">
+  <title id="t">Menara tiga kartu dan instruksinya</title>
+  <desc id="d">Di kiri, menara tiga kartu bertumpuk: dasar kartu biru, tengah kartu merah, atas kartu kuning. Di kanan, enam baris instruksi: AMBIL biru, TARUH di meja, AMBIL merah, TARUH di atas biru, AMBIL kuning, TARUH di atas merah.</desc>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a5d9f"/>
+    </marker>
+    <marker id="g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#3b7d1f"/>
+    </marker>
+  </defs>
+  <rect x="40" y="40" width="180" height="60" rx="6" fill="#fff3b0" stroke="#9a7a00" stroke-width="3"/>
+  <text x="130" y="78" font-family="sans-serif" font-size="22" font-weight="bold" fill="#222222" text-anchor="middle">kuning</text>
+  <rect x="40" y="106" width="180" height="60" rx="6" fill="#f7c6c6" stroke="#b03030" stroke-width="3"/>
+  <text x="130" y="144" font-family="sans-serif" font-size="22" font-weight="bold" fill="#222222" text-anchor="middle">merah</text>
+  <rect x="40" y="172" width="180" height="60" rx="6" fill="#c6dcf7" stroke="#2a5d9f" stroke-width="3"/>
+  <text x="130" y="210" font-family="sans-serif" font-size="22" font-weight="bold" fill="#222222" text-anchor="middle">biru</text>
+  <line x1="20" y1="240" x2="240" y2="240" stroke="#555555" stroke-width="4"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">
+    <text x="130" y="268">meja</text>
+  </g>
+  <g font-family="sans-serif" font-size="17" fill="#222222" text-anchor="start">
+    <text x="280" y="56">1. AMBIL biru</text>
+    <text x="280" y="79">2. TARUH di meja</text>
+    <text x="280" y="102">3. AMBIL merah</text>
+    <text x="280" y="125">4. TARUH di atas biru</text>
+    <text x="280" y="148">5. AMBIL kuning</text>
+    <text x="280" y="171">6. TARUH di atas merah</text>
+  </g>
+</svg>

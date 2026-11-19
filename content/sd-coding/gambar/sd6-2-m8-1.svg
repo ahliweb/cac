@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 270" width="520" height="270" role="img" aria-labelledby="t d">
+  <title id="t">Mesin P dengan contoh timpang dan mesin Q dengan contoh adil</title>
+  <desc id="d">Dua kolom. Kolom kiri, mesin P: empat kartu bulat di kelompok Satu dan satu kartu kotak di kelompok Dua; kartu uji kotak merah kecil ditebak Satu dan keliru. Kolom kanan, mesin Q: empat kartu bulat di kelompok Satu dan empat kartu kotak di kelompok Dua; kartu uji kotak merah kecil ditebak Dua dan benar.</desc>
+  <rect width="520" height="270" fill="#ffffff"/>
+  <rect x="10" y="10" width="240" height="250" rx="8" fill="#fdecea" stroke="#c62828" stroke-width="2"/>
+  <text x="130" y="35" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Mesin P: contoh timpang</text>
+  <text x="130" y="62" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">Satu</text>
+  <circle cx="60" cy="86" r="12" fill="#e53935" stroke="#222222" stroke-width="2"/>
+  <circle cx="100" cy="86" r="12" fill="#1e63c5" stroke="#222222" stroke-width="2"/>
+  <circle cx="140" cy="86" r="12" fill="#fbc02d" stroke="#222222" stroke-width="2"/>
+  <circle cx="180" cy="86" r="12" fill="#e53935" stroke="#222222" stroke-width="2"/>
+  <text x="130" y="125" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">Dua</text>
+  <rect x="116" y="134" width="28" height="28" fill="#1e63c5" stroke="#222222" stroke-width="2"/>
+  <text x="130" y="188" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">kartu uji: kotak merah kecil</text>
+  <rect x="120" y="196" width="20" height="20" fill="#e53935" stroke="#222222" stroke-width="2"/>
+  <text x="130" y="244" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">tebakan Satu: keliru</text>
+  <rect x="270" y="10" width="240" height="250" rx="8" fill="#e6f4ea" stroke="#2e7d32" stroke-width="2"/>
+  <text x="390" y="35" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Mesin Q: contoh adil</text>
+  <text x="390" y="62" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">Satu</text>
+  <circle cx="320" cy="86" r="12" fill="#e53935" stroke="#222222" stroke-width="2"/>
+  <circle cx="360" cy="86" r="12" fill="#1e63c5" stroke="#222222" stroke-width="2"/>
+  <circle cx="400" cy="86" r="12" fill="#fbc02d" stroke="#222222" stroke-width="2"/>
+  <circle cx="440" cy="86" r="12" fill="#e53935" stroke="#222222" stroke-width="2"/>
+  <text x="390" y="125" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">Dua</text>
+  <rect x="306" y="134" width="28" height="28" fill="#1e63c5" stroke="#222222" stroke-width="2"/>
+  <rect x="346" y="134" width="28" height="28" fill="#1e63c5" stroke="#222222" stroke-width="2"/>
+  <rect x="386" y="134" width="28" height="28" fill="#fbc02d" stroke="#222222" stroke-width="2"/>
+  <rect x="426" y="134" width="28" height="28" fill="#e53935" stroke="#222222" stroke-width="2"/>
+  <text x="390" y="188" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">kartu uji: kotak merah kecil</text>
+  <rect x="380" y="196" width="20" height="20" fill="#e53935" stroke="#222222" stroke-width="2"/>
+  <text x="390" y="244" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">tebakan Dua: benar</text>
+</svg>

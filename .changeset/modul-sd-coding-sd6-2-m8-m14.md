@@ -1,0 +1,5 @@
+---
+"kurikulum-informatika": patch
+---
+
+Modul belajar `sd-coding` `sd6-2-m8` sampai `sd6-2-m14` (kelas 6, semester 2, minggu 8 sampai 14, penutup program: penguatan data yang timpang pada "mesin kartu", penguatan ujian ciri mesin cerdas atau bukan, penguatan KA dan keselamatan data, penguatan merancang aturan KA kelas, penguatan persiapan proyek akhir, proyek akhir "mesin kartu" dan aturan KA, serta asesmen akhir, refleksi, dan penyambung ke SMP), masing-masing berupa panduan guru, lembar anak, dan satu gambar SVG, semuanya berstatus draf dan belum ditinjau. Seluruh minggu ini penguatan, proyek, atau asesmen sehingga `cpItems` kosong dan tidak ada klaim pemenuhan CP menurut `cp-mapping.json`. Kunci jawaban hanya ada pada lembar formatif minggu 8 sampai 12; minggu 13 memuat rubrik proses dan produk, dan minggu 14 memuat rubrik, daftar "sudah bisa" untuk SMP, dan contoh bentuk soal tanpa kunci. Tanpa akun murid, tanpa transisi blok ke teks, dan tanpa AI generatif untuk anak. Entri indeks ditambahkan ke `data/sd-coding/modules.json`.

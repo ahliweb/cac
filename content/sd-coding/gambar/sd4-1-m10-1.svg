@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 330" width="540" height="330" role="img" aria-labelledby="t d">
+  <title id="t">Kisi 4 kali 4 dan enam kata mesin</title>
+  <desc id="d">Kisi 4 kali 4 dengan kolom a sampai d dan baris 1 sampai 4. Mesin mulai di a1 menghadap atas. Tutup botol di a3. Panah naik dari a1 ke a3 lalu ke kanan sampai c3, tempat tutup botol ditaruh. Di kanan enam kata: MAJU, KIRI, KANAN, ULANGI, AMBIL, TARUH.</desc>
+  <rect width="540" height="330" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444444"/>
+    </marker>
+  </defs>
+  <text x="70" y="32" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">a</text>
+  <text x="130" y="32" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">b</text>
+  <text x="190" y="32" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">c</text>
+  <text x="250" y="32" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">d</text>
+  <text x="26" y="255" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">1</text>
+  <text x="26" y="195" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">2</text>
+  <text x="26" y="135" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">3</text>
+  <text x="26" y="75" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">4</text>
+  <rect x="40" y="220" width="60" height="60" fill="#ffffff" stroke="#999999" stroke-width="1.5"/>
+  <rect x="40" y="160" width="60" height="60" fill="#ffffff" stroke="#999999" stroke-width="1.5"/>
+  <rect x="40" y="100" width="60" height="60" fill="#ffffff" stroke="#999999" stroke-width="1.5"/>
+  <rect x="40" y="40" width="60" height="60" fill="#ffffff" stroke="#999999" stroke-width="1.5"/>
+  <rect x="100" y="220" width="60" height="60" fill="#ffffff" stroke="#999999" stroke-width="1.5"/>
+  <rect x="100" y="160" width="60" height="60" fill="#ffffff" stroke="#999999" stroke-width="1.5"/>
+  <rect x="100" y="100" width="60" height="60" fill="#ffffff" stroke="#999999" stroke-width="1.5"/>
+  <rect x="100" y="40" width="60" height="60" fill="#ffffff" stroke="#999999" stroke-width="1.5"/>
+  <rect x="160" y="220" width="60" height="60" fill="#ffffff" stroke="#999999" stroke-width="1.5"/>
+  <rect x="160" y="160" width="60" height="60" fill="#ffffff" stroke="#999999" stroke-width="1.5"/>
+  <rect x="160" y="100" width="60" height="60" fill="#ffffff" stroke="#999999" stroke-width="1.5"/>
+  <rect x="160" y="40" width="60" height="60" fill="#ffffff" stroke="#999999" stroke-width="1.5"/>
+  <rect x="220" y="220" width="60" height="60" fill="#ffffff" stroke="#999999" stroke-width="1.5"/>
+  <rect x="220" y="160" width="60" height="60" fill="#ffffff" stroke="#999999" stroke-width="1.5"/>
+  <rect x="220" y="100" width="60" height="60" fill="#ffffff" stroke="#999999" stroke-width="1.5"/>
+  <rect x="220" y="40" width="60" height="60" fill="#ffffff" stroke="#999999" stroke-width="1.5"/>
+  <circle cx="70" cy="250" r="6" fill="#2a5d9f"/>
+  <polyline points="70,244 70,130 190,130" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <circle cx="52" cy="112" r="9" fill="#f3c623" stroke="#444444" stroke-width="2"/>
+  <circle cx="172" cy="112" r="9" fill="#ffffff" stroke="#444444" stroke-width="2" stroke-dasharray="3 3"/>
+  <rect x="310" y="44" width="215" height="28" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="1.5"/>
+  <text x="322" y="63" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="start" fill="#222222">MAJU</text>
+  <text x="392" y="63" font-family="sans-serif" font-size="12" text-anchor="start" fill="#222222">maju satu petak</text>
+  <rect x="310" y="78" width="215" height="28" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="1.5"/>
+  <text x="322" y="97" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="start" fill="#222222">KIRI</text>
+  <text x="392" y="97" font-family="sans-serif" font-size="12" text-anchor="start" fill="#222222">putar ke kiri</text>
+  <rect x="310" y="112" width="215" height="28" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="1.5"/>
+  <text x="322" y="131" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="start" fill="#222222">KANAN</text>
+  <text x="392" y="131" font-family="sans-serif" font-size="12" text-anchor="start" fill="#222222">putar ke kanan</text>
+  <rect x="310" y="146" width="215" height="28" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="1.5"/>
+  <text x="322" y="165" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="start" fill="#222222">ULANGI</text>
+  <text x="392" y="165" font-family="sans-serif" font-size="12" text-anchor="start" fill="#222222">ulangi n kali</text>
+  <rect x="310" y="180" width="215" height="28" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="1.5"/>
+  <text x="322" y="199" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="start" fill="#222222">AMBIL</text>
+  <text x="392" y="199" font-family="sans-serif" font-size="12" text-anchor="start" fill="#222222">ambil benda</text>
+  <rect x="310" y="214" width="215" height="28" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="1.5"/>
+  <text x="322" y="233" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="start" fill="#222222">TARUH</text>
+  <text x="392" y="233" font-family="sans-serif" font-size="12" text-anchor="start" fill="#222222">taruh benda</text>
+  <text x="270" y="300" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">Mulai a1, menghadap atas. Lingkaran kuning: tutup botol.</text>
+  <text x="270" y="318" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">Program: MAJU, MAJU, AMBIL, KANAN, MAJU, MAJU, TARUH. Berakhir di c3.</text>
+</svg>

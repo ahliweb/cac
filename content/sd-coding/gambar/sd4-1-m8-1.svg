@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 450" width="520" height="450" role="img" aria-labelledby="t d">
+  <title id="t">Menjalankan diagram alir dengan masukan</title>
+  <desc id="d">Diagram alir: MULAI, kotak Ambil satu kartu angka, belah ketupat Angkanya lebih dari 5. Panah ya ke kotak Tulis BESAR, panah tidak ke kotak Tulis KECIL, keduanya ke SELESAI. Kartu 3 lewat tidak dan hasilnya KECIL. Kartu 8 lewat ya dan hasilnya BESAR.</desc>
+  <rect width="520" height="450" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444444"/>
+    </marker>
+  </defs>
+  <ellipse cx="260" cy="30" rx="60" ry="18" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="260" y="35" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#222222">MULAI</text>
+  <polyline points="260,48 260,75" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <rect x="160" y="75" width="200" height="40" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+  <text x="260.0" y="99.5" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#222222">Ambil satu kartu angka</text>
+  <polyline points="260,115 260,148" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <polygon points="260,148 370,190 260,232 150,190" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+  <text x="260" y="194.5" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#222222">Angkanya lebih dari 5?</text>
+  <polyline points="370,190 440,190 440,278" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <text x="410" y="182" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#222222">ya</text>
+  <polyline points="150,190 80,190 80,278" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <text x="120" y="182" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#222222">tidak</text>
+  <rect x="370" y="280" width="140" height="40" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+  <text x="440.0" y="304.5" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#222222">Tulis BESAR</text>
+  <rect x="10" y="280" width="140" height="40" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+  <text x="80.0" y="304.5" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#222222">Tulis KECIL</text>
+  <polyline points="80,320 80,360 260,360" stroke="#444444" stroke-width="2" fill="none"/>
+  <polyline points="440,320 440,360 260,360" stroke="#444444" stroke-width="2" fill="none"/>
+  <polyline points="260,360 260,376" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <ellipse cx="260" cy="394" rx="60" ry="18" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="260" y="399" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#222222">SELESAI</text>
+  <text x="260" y="434" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">Kartu 3: tidak, KECIL. Kartu 8: ya, BESAR. Diagram sama, jalan berbeda.</text>
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 440" width="520" height="440" role="img" aria-labelledby="t d">
+  <title id="t">Panduan satu halaman dengan diagram alir</title>
+  <desc id="d">Kertas panduan satu halaman dengan empat bagian: 1 Masalah, 2 Bagian kecil, 3 Diagram alir kecil dengan MULAI, belah ketupat, kotak yang kembali, dan SELESAI, 4 Periksa. Di sebelah kanan daftar ciri panduan yang baik.</desc>
+  <rect width="520" height="440" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444444"/>
+    </marker>
+  </defs>
+  <rect x="20" y="10" width="300" height="420" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+  <text x="170" y="32" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#222222">PANDUAN: botol minum tertukar</text>
+  <rect x="30" y="42" width="280" height="40" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+  <text x="170.0" y="59.0" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">1 Masalah: botol minum di rak</text>
+  <text x="170.0" y="74.0" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">sering tertukar.</text>
+  <rect x="30" y="92" width="280" height="52" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+  <text x="170.0" y="115.0" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">2 Bagian kecil: beri tanda,</text>
+  <text x="170.0" y="130.0" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">taruh di rak, periksa.</text>
+  <text x="170" y="164" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle" fill="#222222">3 Diagram alir</text>
+  <ellipse cx="130" cy="182" rx="34" ry="10" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="130" y="187" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#222222">MULAI</text>
+  <polyline points="130,192 130,194" stroke="#444444" stroke-width="2" fill="none"/>
+  <polygon points="130,194 205,222 130,250 55,222" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+  <text x="130" y="219.5" font-family="sans-serif" font-size="11" text-anchor="middle" fill="#222222">Masih ada botol</text>
+  <text x="130" y="233.5" font-family="sans-serif" font-size="11" text-anchor="middle" fill="#222222">tanpa tanda?</text>
+  <polyline points="130,250 130,268" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <text x="144" y="263" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#222222">ya</text>
+  <rect x="48" y="270" width="164" height="28" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+  <text x="130.0" y="288.5" font-family="sans-serif" font-size="11" text-anchor="middle" fill="#222222">Gambar tanda di satu botol</text>
+  <polyline points="48,284 38,284 38,222 55,222" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <polyline points="205,222 238,222" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <text x="221" y="214" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#222222">tidak</text>
+  <ellipse cx="276" cy="222" rx="36" ry="12" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="276" y="227" font-family="sans-serif" font-size="11" font-weight="bold" text-anchor="middle" fill="#222222">SELESAI</text>
+  <rect x="30" y="330" width="280" height="90" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+  <text x="170.0" y="357.0" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">4 Periksa: jalankan dengan</text>
+  <text x="170.0" y="372.0" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">tiga kartu botol. Pion lewat</text>
+  <text x="170.0" y="387.0" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">kotak Gambar tanda</text>
+  <text x="170.0" y="402.0" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">tiga kali.</text>
+  <text x="340" y="52" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#222222">Ciri panduan yang baik</text>
+  <text x="340" y="82" font-family="sans-serif" font-size="12" text-anchor="start" fill="#222222">Masalah ditulis jelas.</text>
+  <text x="340" y="104" font-family="sans-serif" font-size="12" text-anchor="start" fill="#222222">Dipecah menjadi bagian kecil.</text>
+  <text x="340" y="126" font-family="sans-serif" font-size="12" text-anchor="start" fill="#222222">Diagram punya MULAI dan</text>
+  <text x="340" y="148" font-family="sans-serif" font-size="12" text-anchor="start" fill="#222222">SELESAI, panah, dan simbol</text>
+  <text x="340" y="170" font-family="sans-serif" font-size="12" text-anchor="start" fill="#222222">yang disepakati kelas.</text>
+  <text x="340" y="192" font-family="sans-serif" font-size="12" text-anchor="start" fill="#222222">Ada cara memeriksa.</text>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" width="640" height="300" role="img" aria-labelledby="t d">
+  <title id="t">Dua baris kartu memakai sepatu, benar dan tertukar</title>
+  <desc id="d">Dua baris, tiap baris empat kartu. Baris atas dengan tanda centang hijau: kaus kaki, sepatu, tali, jalan. Baris bawah dengan tanda silang merah: sepatu, kaus kaki, tali, jalan; dua kartu pertama diberi panah bolak-balik.</desc>
+  <rect width="640" height="300" fill="#ffffff"/>
+  <g fill="#fffdf5" stroke="#888888" stroke-width="2">
+    <rect x="50" y="15" width="115" height="110" rx="10"/>
+    <rect x="185" y="15" width="115" height="110" rx="10"/>
+    <rect x="320" y="15" width="115" height="110" rx="10"/>
+    <rect x="455" y="15" width="115" height="110" rx="10"/>
+    <rect x="50" y="165" width="115" height="110" rx="10"/>
+    <rect x="185" y="165" width="115" height="110" rx="10"/>
+    <rect x="320" y="165" width="115" height="110" rx="10"/>
+    <rect x="455" y="165" width="115" height="110" rx="10"/>
+  </g>
+  <g font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">
+    <text x="107" y="115">kaus kaki</text>
+    <text x="242" y="115">sepatu</text>
+    <text x="377" y="115">tali</text>
+    <text x="512" y="115">jalan</text>
+    <text x="107" y="265">sepatu</text>
+    <text x="242" y="265">kaus kaki</text>
+    <text x="377" y="265">tali</text>
+    <text x="512" y="265">jalan</text>
+  </g>
+  <!-- baris atas: kaus kaki, sepatu, tali, jalan -->
+  <path d="M90,35 L108,35 L108,65 L128,80 L128,92 L88,92 L90,35 z" fill="#f2d24b" stroke="#b8960a" stroke-width="2"/>
+  <path d="M215,60 L255,60 L255,72 L270,78 L270,92 L215,92 z" fill="#d94f4f" stroke="#8f2a2a" stroke-width="2"/>
+  <path d="M345,45 L375,85 L350,60 L400,85 L360,40" fill="none" stroke="#2a5d9f" stroke-width="3"/>
+  <g fill="#7bbf5a" stroke="#3b7d1f" stroke-width="2">
+    <ellipse cx="500" cy="55" rx="9" ry="16"/>
+    <ellipse cx="526" cy="75" rx="9" ry="16"/>
+  </g>
+  <!-- baris bawah: sepatu, kaus kaki, tali, jalan -->
+  <path d="M80,210 L120,210 L120,222 L135,228 L135,242 L80,242 z" fill="#d94f4f" stroke="#8f2a2a" stroke-width="2"/>
+  <path d="M225,185 L243,185 L243,215 L263,230 L263,242 L223,242 L225,185 z" fill="#f2d24b" stroke="#b8960a" stroke-width="2"/>
+  <path d="M345,195 L375,235 L350,210 L400,235 L360,190" fill="none" stroke="#2a5d9f" stroke-width="3"/>
+  <g fill="#7bbf5a" stroke="#3b7d1f" stroke-width="2">
+    <ellipse cx="500" cy="205" rx="9" ry="16"/>
+    <ellipse cx="526" cy="225" rx="9" ry="16"/>
+  </g>
+  <g stroke="#d94f4f" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M110,160 Q175,145 240,160"/>
+    <line x1="110" y1="160" x2="118" y2="150"/>
+    <line x1="240" y1="160" x2="232" y2="150"/>
+  </g>
+  <path d="M8,50 L18,62 L38,28" fill="none" stroke="#3b7d1f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <g stroke="#d94f4f" stroke-width="6" stroke-linecap="round">
+    <line x1="10" y1="200" x2="34" y2="226"/>
+    <line x1="34" y1="200" x2="10" y2="226"/>
+  </g>
+</svg>
