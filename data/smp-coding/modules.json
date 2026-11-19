@@ -607,6 +607,156 @@
         }
       ],
       "contentPath": "content/smp-coding/modules/smp7-2-m14.md"
+    },
+    {
+      "id": "smp8-1-m1",
+      "title": "Dari soal ke algoritma: pseudocode dengan kosakata terbatas",
+      "weekCodes": ["SMP8-1-M1"],
+      "cpCodes": ["D-BK-a", "D-BK-e"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["SMP7-1-M2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-1-m1.md"
+    },
+    {
+      "id": "smp8-1-m2",
+      "title": "Blok buatan sendiri (fungsi)",
+      "weekCodes": ["SMP8-1-M2"],
+      "cpCodes": ["D-BK-e", "DK-BK-c"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["SMP7-1-M6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-1-m2.md"
+    },
+    {
+      "id": "smp8-1-m3",
+      "title": "Abstraksi",
+      "weekCodes": ["SMP8-1-M3"],
+      "cpCodes": ["D-BK-a"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["SMP8-1-M2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-1-m3.md"
+    },
+    {
+      "id": "smp8-1-m4",
+      "title": "Simulasi sains sederhana",
+      "weekCodes": ["SMP8-1-M4"],
+      "cpCodes": ["D-BK-a", "D-BK-e", "DK-BK-c"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["SMP8-1-M3", "SMP7-1-M9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-1-m4.md"
+    },
+    {
+      "id": "smp8-1-m5",
+      "title": "Matematika dengan program: bilangan, faktor, pola",
+      "weekCodes": ["SMP8-1-M5"],
+      "cpCodes": ["D-BK-a"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["SMP8-1-M3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-1-m5.md"
+    },
+    {
+      "id": "smp8-1-m6",
+      "title": "Lembar kerja: pilah, urutkan, saring data",
+      "weekCodes": ["SMP8-1-M6"],
+      "cpCodes": ["D-BK-c", "D-BK-d", "D-LD-e", "DK-BK-a"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["SMP7-2-M1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "LibreOffice Help (bantuan resmi LibreOffice)",
+          "url": "https://help.libreoffice.org/"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-1-m6.md"
+    },
+    {
+      "id": "smp8-1-m7",
+      "title": "Grafik dan interpretasi data",
+      "weekCodes": ["SMP8-1-M7"],
+      "cpCodes": ["D-BK-d", "DK-BK-a"],
+      "gradeLevels": ["8"],
+      "prerequisites": ["SMP8-1-M6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "LibreOffice Help (bantuan resmi LibreOffice)",
+          "url": "https://help.libreoffice.org/"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp8-1-m7.md"
     }
   ]
 }
