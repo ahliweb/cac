@@ -267,6 +267,136 @@
       "prerequisites": ["dw-fnd-m1"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-prs-m1.md"
+    },
+    {
+      "id": "dw-prs-m2",
+      "title": "Program pertama dengan Python",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python Tutorial: an informal introduction to Python (angka, teks, daftar)",
+          "url": "https://docs.python.org/3/tutorial/introduction.html"
+        },
+        {
+          "title": "Python Tutorial: more control flow tools (if, for, range)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        },
+        {
+          "title": "Python documentation: built-in functions (input, print, int)",
+          "url": "https://docs.python.org/3/library/functions.html"
+        }
+      ],
+      "moduleCodes": ["DW-PRS-M2"],
+      "skkniUnits": [],
+      "track": "PRS",
+      "prerequisites": ["DW-PRS-M1"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-prs-m2.md"
+    },
+    {
+      "id": "dw-prs-m3",
+      "title": "Data dan berkas",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python Tutorial: data structures (daftar dan kamus)",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        },
+        {
+          "title": "Python Tutorial: input and output (membaca dan menulis berkas)",
+          "url": "https://docs.python.org/3/tutorial/inputoutput.html"
+        },
+        {
+          "title": "Python documentation: built-in functions (open)",
+          "url": "https://docs.python.org/3/library/functions.html"
+        }
+      ],
+      "moduleCodes": ["DW-PRS-M3"],
+      "skkniUnits": [],
+      "track": "PRS",
+      "prerequisites": ["dw-prs-m2"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-prs-m3.md"
+    },
+    {
+      "id": "dw-prs-m4",
+      "title": "Halaman web pertama",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "MDN Web Docs: HTML",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+        },
+        {
+          "title": "MDN Web Docs: CSS",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+        },
+        {
+          "title": "Python documentation: http.server",
+          "url": "https://docs.python.org/3/library/http.server.html"
+        }
+      ],
+      "moduleCodes": ["DW-PRS-M4"],
+      "skkniUnits": [],
+      "track": "PRS",
+      "prerequisites": ["dw-prs-m3"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-prs-m4.md"
+    },
+    {
+      "id": "dw-prs-m5",
+      "title": "Mengotomasi urusan sehari-hari",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python documentation: pathlib, jalur berkas berorientasi objek",
+          "url": "https://docs.python.org/3/library/pathlib.html"
+        },
+        {
+          "title": "Python documentation: datetime",
+          "url": "https://docs.python.org/3/library/datetime.html"
+        },
+        {
+          "title": "Python Tutorial: input and output (format keluaran)",
+          "url": "https://docs.python.org/3/tutorial/inputoutput.html"
+        }
+      ],
+      "moduleCodes": ["DW-PRS-M5"],
+      "skkniUnits": [],
+      "track": "PRS",
+      "prerequisites": ["dw-prs-m4"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-prs-m5.md"
+    },
+    {
+      "id": "dw-prs-m6",
+      "title": "Proyek mandiri dan jalan lanjut",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python documentation: doctest",
+          "url": "https://docs.python.org/3/library/doctest.html"
+        },
+        {
+          "title": "Python Tutorial: more control flow tools (fungsi dan alur)",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        },
+        {
+          "title": "MDN Web Docs: HTML",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+        }
+      ],
+      "moduleCodes": ["DW-PRS-M6"],
+      "skkniUnits": [],
+      "track": "PRS",
+      "prerequisites": ["dw-prs-m5"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-prs-m6.md"
     }
   ]
 }
