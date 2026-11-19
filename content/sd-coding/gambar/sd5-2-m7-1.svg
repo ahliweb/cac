@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 230" width="520" height="230" role="img" aria-labelledby="t d">
+  <title id="t">Kartu contoh dan kartu baru</title>
+  <desc id="d">Kiri: kartu contoh berlabel. Kelompok Satu berisi tiga kartu kecil. Kelompok Dua berisi tiga kartu besar. Kanan: kartu baru berukuran besar, tebakannya kelompok Dua karena ukurannya.</desc>
+  <rect width="520" height="230" fill="#ffffff"/>
+  <rect x="10" y="10" width="300" height="210" rx="8" fill="#f4f8fd" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="160" y="32" font-family="sans-serif" font-size="13" font-weight="bold" fill="#222222" text-anchor="middle">KARTU CONTOH (berlabel)</text>
+  <text x="85" y="55" font-family="sans-serif" font-size="13" font-weight="bold" fill="#222222" text-anchor="middle">Satu</text>
+  <text x="235" y="55" font-family="sans-serif" font-size="13" font-weight="bold" fill="#222222" text-anchor="middle">Dua</text>
+  <rect x="75" y="70" width="20" height="20" rx="4" fill="#64b5f6" stroke="#444444" stroke-width="2"/>
+  <rect x="75" y="115" width="20" height="20" rx="4" fill="#e57373" stroke="#444444" stroke-width="2"/>
+  <rect x="75" y="160" width="20" height="20" rx="4" fill="#81c784" stroke="#444444" stroke-width="2"/>
+  <rect x="215" y="62" width="40" height="40" rx="4" fill="#64b5f6" stroke="#444444" stroke-width="2"/>
+  <rect x="215" y="107" width="40" height="40" rx="4" fill="#ffd54f" stroke="#444444" stroke-width="2"/>
+  <rect x="215" y="152" width="40" height="40" rx="4" fill="#e57373" stroke="#444444" stroke-width="2"/>
+  <text x="85" y="207" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">kecil</text>
+  <text x="235" y="207" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">besar</text>
+  <line x1="315" y1="110" x2="355" y2="110" stroke="#444444" stroke-width="2"/>
+  <polygon points="355,110 347,105 347,115" fill="#444444"/>
+  <rect x="360" y="50" width="150" height="120" rx="8" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+  <text x="435" y="72" font-family="sans-serif" font-size="13" font-weight="bold" fill="#222222" text-anchor="middle">KARTU BARU</text>
+  <rect x="415" y="85" width="40" height="40" rx="4" fill="#64b5f6" stroke="#444444" stroke-width="2"/>
+  <text x="435" y="148" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">tebakan: Dua</text>
+  <text x="435" y="165" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">karena ukurannya</text>
+</svg>

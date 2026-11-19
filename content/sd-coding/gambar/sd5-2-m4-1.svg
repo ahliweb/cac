@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 250" width="520" height="250" role="img" aria-labelledby="t d">
+  <title id="t">Manfaat dan batas KA</title>
+  <desc id="d">Dua kolom. Manfaat: menerjemahkan teks, menyarankan lagu, menyapu lantai. Batas: bisa keliru, perlu data dan listrik, manusia yang memeriksa. Di bawah: KA dibuat untuk membantu manusia dan tidak boleh merugikan.</desc>
+  <rect width="520" height="250" fill="#ffffff"/>
+  <rect x="10" y="10" width="245" height="230" rx="8" fill="#f4f8fd" stroke="#2a5d9f" stroke-width="2"/>
+  <rect x="265" y="10" width="245" height="230" rx="8" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+  <text x="132" y="34" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">MANFAAT</text>
+  <text x="387" y="34" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">BATAS</text>
+  <rect x="30" y="52" width="205" height="34" rx="4" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+  <text x="132" y="74" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">menerjemahkan teks</text>
+  <rect x="30" y="94" width="205" height="34" rx="4" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+  <text x="132" y="116" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">menyarankan lagu</text>
+  <rect x="30" y="136" width="205" height="34" rx="4" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+  <text x="132" y="158" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">menyapu lantai</text>
+  <rect x="285" y="52" width="205" height="34" rx="4" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+  <text x="387" y="74" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">bisa keliru</text>
+  <rect x="285" y="94" width="205" height="34" rx="4" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+  <text x="387" y="116" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">perlu data dan listrik</text>
+  <rect x="285" y="136" width="205" height="34" rx="4" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+  <text x="387" y="158" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">manusia yang memeriksa</text>
+  <text x="260" y="205" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">dibuat untuk membantu manusia,</text>
+  <text x="260" y="223" font-family="sans-serif" font-size="12" fill="#222222" text-anchor="middle">tidak boleh merugikan manusia</text>
+</svg>

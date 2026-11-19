@@ -299,6 +299,139 @@
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd5-1-m14.md",
       "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m14.md"
+    },
+    {
+      "id": "sd5-2-m1",
+      "title": "Pengenalan KA",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        }
+      ],
+      "weekCodes": ["SD5-2-M1"],
+      "cpItems": ["C-LE-a"],
+      "gradeLevels": [5],
+      "prerequisites": ["SD4-2-M8"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd5-2-m1.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m1.md"
+    },
+    {
+      "id": "sd5-2-m2",
+      "title": "Perbedaan Manusia dan Komputer dalam Penginderaan",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        }
+      ],
+      "weekCodes": ["SD5-2-M2"],
+      "cpItems": ["C-LE-c"],
+      "gradeLevels": [5],
+      "prerequisites": ["SD4-2-M9"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd5-2-m2.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m2.md"
+    },
+    {
+      "id": "sd5-2-m3",
+      "title": "Mesin Cerdas versus Mesin Non-Cerdas",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        }
+      ],
+      "weekCodes": ["SD5-2-M3"],
+      "cpItems": ["C-LE-d"],
+      "gradeLevels": [5],
+      "prerequisites": ["SD5-2-M1", "SD4-2-M8"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd5-2-m3.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m3.md"
+    },
+    {
+      "id": "sd5-2-m4",
+      "title": "Manfaat KA dalam Kehidupan Sehari-hari",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        }
+      ],
+      "weekCodes": ["SD5-2-M4"],
+      "cpItems": ["C-LE-a", "C-LE-b"],
+      "gradeLevels": [5],
+      "prerequisites": ["SD5-2-M1", "SD5-2-M3"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd5-2-m4.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m4.md"
+    },
+    {
+      "id": "sd5-2-m5",
+      "title": "Konsep Mengenali Pola dan Klasifikasi dalam Situasi Kehidupan",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        }
+      ],
+      "weekCodes": ["SD5-2-M5"],
+      "cpItems": ["C-PP-a", "C-PP-b"],
+      "gradeLevels": [5],
+      "prerequisites": ["SD4-1-M11", "SD4-2-M10"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd5-2-m5.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m5.md"
+    },
+    {
+      "id": "sd5-2-m6",
+      "title": "Mengenali Pola dan Klasifikasi oleh KA",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        }
+      ],
+      "weekCodes": ["SD5-2-M6"],
+      "cpItems": ["C-PP-a", "C-PP-b"],
+      "gradeLevels": [5],
+      "prerequisites": ["SD5-2-M5"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd5-2-m6.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m6.md"
+    },
+    {
+      "id": "sd5-2-m7",
+      "title": "Simulasi Prediksi Pola dan Klasifikasi Sistem KA",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
+          "url": "https://bpmpbabel.kemendikdasmen.go.id/PPID/wp-content/uploads/2025/07/KepKaBSKAP-046_2025-ttg-CP.pdf"
+        }
+      ],
+      "weekCodes": ["SD5-2-M7"],
+      "cpItems": ["C-PP-a", "C-PP-c"],
+      "gradeLevels": [5],
+      "prerequisites": ["SD5-2-M5", "SD5-2-M6"],
+      "audience": "guru",
+      "contentPath": "content/sd-coding/modules/sd5-2-m7.md",
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m7.md"
     }
   ]
 }
