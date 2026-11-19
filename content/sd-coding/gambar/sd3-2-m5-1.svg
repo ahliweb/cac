@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 340" width="640" height="340" role="img" aria-labelledby="t d">
+  <title id="t">Papan ketik, layar, dan pengeras suara dengan fungsinya</title>
+  <desc id="d">Di atas ada kotak bertulis KOMPUTER. Papan ketik, memasukkan huruf dan angka, punya panah ke atas menuju komputer dengan tulisan MASUKAN. Layar, menampilkan gambar dan tulisan, dan pengeras suara, mengeluarkan bunyi, punya panah dari komputer ke bawah menuju tiap perangkat; layar diberi tulisan KELUARAN.</desc>
+  <rect width="640" height="340" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a5d9f"/>
+    </marker>
+  </defs>
+  <rect x="30" y="15" width="530" height="40" rx="6" fill="#dfe6ee" stroke="#555555" stroke-width="2"/>
+  <text x="295" y="42" font-family="sans-serif" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">KOMPUTER</text>
+  <g stroke="#555555" stroke-width="2" fill="#f2f2f2">
+    <rect x="30" y="120" width="160" height="70" rx="6"/>
+  </g>
+  <g fill="#ffffff" stroke="#888888" stroke-width="1.5">
+    <rect x="42" y="132" width="26" height="14"/>
+    <rect x="74" y="132" width="26" height="14"/>
+    <rect x="106" y="132" width="26" height="14"/>
+    <rect x="138" y="132" width="26" height="14"/>
+    <rect x="42" y="152" width="26" height="14"/>
+    <rect x="74" y="152" width="26" height="14"/>
+    <rect x="106" y="152" width="26" height="14"/>
+    <rect x="138" y="152" width="26" height="14"/>
+    <rect x="62" y="172" width="90" height="12"/>
+  </g>
+  <line x1="110" y1="112" x2="110" y2="60" stroke="#2a5d9f" stroke-width="3" marker-end="url(#a)"/>
+  <text x="122" y="90" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f">MASUKAN</text>
+  <rect x="270" y="105" width="140" height="90" rx="6" fill="#e8f1fb" stroke="#555555" stroke-width="2"/>
+  <rect x="285" y="117" width="110" height="66" fill="#ffffff" stroke="#888888" stroke-width="1.5"/>
+  <rect x="325" y="195" width="30" height="14" fill="#f2f2f2" stroke="#555555" stroke-width="2"/>
+  <line x1="340" y1="60" x2="340" y2="100" stroke="#2a5d9f" stroke-width="3" marker-end="url(#a)"/>
+  <text x="352" y="86" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f">KELUARAN</text>
+  <polygon points="470,135 495,135 520,115 520,185 495,165 470,165" fill="#f2f2f2" stroke="#555555" stroke-width="2"/>
+  <g stroke="#555555" stroke-width="2" fill="none">
+    <path d="M532,130 Q545,150 532,170"/>
+    <path d="M542,118 Q562,150 542,182"/>
+  </g>
+  <line x1="495" y1="60" x2="495" y2="105" stroke="#2a5d9f" stroke-width="3" marker-end="url(#a)"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">
+    <text x="110" y="230">papan ketik</text>
+    <text x="110" y="252">memasukkan huruf dan angka</text>
+    <text x="340" y="230">layar</text>
+    <text x="340" y="252">menampilkan gambar dan tulisan</text>
+    <text x="500" y="270">pengeras suara</text>
+    <text x="500" y="292">mengeluarkan bunyi</text>
+  </g>
+</svg>

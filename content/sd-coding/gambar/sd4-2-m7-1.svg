@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 250" width="520" height="250" role="img" aria-labelledby="t d">
+  <title id="t">Tabel dua kolom: dampak baik dan buruk</title>
+  <desc id="d">Tabel dua kolom untuk telepon genggam. Kolom BAIK berisi bisa menelepon nenek di kota lain. Kolom BURUK berisi bila dipakai terus tanpa istirahat, mata lelah dan lupa waktu.</desc>
+  <rect width="520" height="250" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444444"/>
+    </marker>
+  </defs>
+  <text x="260" y="28" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">Telepon genggam</text>
+  <rect x="20" y="45" width="230" height="40" fill="#e9f6ea" stroke="#2b7a33" stroke-width="2"/>
+  <text x="135.0" y="69.5" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#222222">BAIK</text>
+  <rect x="270" y="45" width="230" height="40" fill="#fbe9e9" stroke="#a32020" stroke-width="3"/>
+  <text x="385.0" y="69.5" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#222222">BURUK</text>
+  <rect x="20" y="85" width="230" height="90" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+  <text x="135.0" y="126.5" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#222222">bisa menelepon nenek</text>
+  <text x="135.0" y="142.5" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#222222">di kota lain</text>
+  <rect x="270" y="85" width="230" height="90" fill="#ffffff" stroke="#444444" stroke-width="3"/>
+  <text x="385.0" y="118.5" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#222222">bila dipakai terus tanpa</text>
+  <text x="385.0" y="134.5" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#222222">istirahat: mata lelah</text>
+  <text x="385.0" y="150.5" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#222222">dan lupa waktu</text>
+  <text x="260" y="215" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">Alat yang sama bisa punya dampak baik dan dampak buruk.</text>
+</svg>

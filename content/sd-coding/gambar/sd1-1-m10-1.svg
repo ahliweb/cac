@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320" role="img" aria-labelledby="t d">
+  <title id="t">Petunjuk menanam biji dengan satu langkah salah, lalu diganti</title>
+  <desc id="d">Dua baris, tiap baris empat kartu. Baris atas: siapkan pot, isi tanah, sepatu dengan tanda silang merah dan lingkaran, siram air. Panah ke bawah bertuliskan ganti. Baris bawah: siapkan pot, isi tanah, taruh biji, siram air, dengan tanda centang.</desc>
+  <rect width="640" height="320" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a5d9f"/>
+    </marker>
+  </defs>
+  <rect x="30" y="12" width="130" height="136" rx="10" fill="#fffdf5" stroke="#b86a00" stroke-width="2"/>
+  <polygon points="69.0,68 121.0,68 113.0,104 77.0,104" fill="#c9674a" stroke="#7a3a22" stroke-width="2"/>
+  <text x="95.0" y="138" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">siapkan pot</text>
+  <polyline points="162,74 178,74" fill="none" stroke="#2a5d9f" stroke-width="3" marker-end="url(#a)"/>
+  <rect x="180" y="12" width="130" height="136" rx="10" fill="#fffdf5" stroke="#b86a00" stroke-width="2"/>
+  <polygon points="219.0,68 271.0,68 263.0,104 227.0,104" fill="#c9674a" stroke="#7a3a22" stroke-width="2"/>
+  <path d="M221.0,68 q24,-18 48,0 z" fill="#6b4a2b" stroke="#3c2a18" stroke-width="2"/>
+  <text x="245.0" y="138" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">isi tanah</text>
+  <polyline points="312,74 328,74" fill="none" stroke="#2a5d9f" stroke-width="3" marker-end="url(#a)"/>
+  <rect x="330" y="12" width="130" height="136" rx="10" fill="#fffdf5" stroke="#b86a00" stroke-width="2"/>
+  <path d="M359.0,104 v-30 h18 q4,12 20,14 q18,2 22,16 v0 z" fill="#8a8a8a" stroke="#444444" stroke-width="2"/>
+  <path d="M359.0,104 h72" stroke="#444444" stroke-width="4"/>
+  <text x="395.0" y="138" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">pakai sepatu</text>
+  <polyline points="462,74 478,74" fill="none" stroke="#2a5d9f" stroke-width="3" marker-end="url(#a)"/>
+  <rect x="480" y="12" width="130" height="136" rx="10" fill="#fffdf5" stroke="#b86a00" stroke-width="2"/>
+  <polygon points="519.0,68 571.0,68 563.0,104 527.0,104" fill="#c9674a" stroke="#7a3a22" stroke-width="2"/>
+  <path d="M521.0,68 q24,-18 48,0 z" fill="#6b4a2b" stroke="#3c2a18" stroke-width="2"/>
+  <ellipse cx="545.0" cy="52" rx="7" ry="5" fill="#8a6a2a" stroke="#4a3a10" stroke-width="2"/>
+  <path d="M531.0,38 q-5,9 0,13 q5,-4 0,-13 z" fill="#4aa3df" stroke="#2a6f9f" stroke-width="1.5"/>
+  <path d="M545.0,38 q-5,9 0,13 q5,-4 0,-13 z" fill="#4aa3df" stroke="#2a6f9f" stroke-width="1.5"/>
+  <path d="M559.0,38 q-5,9 0,13 q5,-4 0,-13 z" fill="#4aa3df" stroke="#2a6f9f" stroke-width="1.5"/>
+  <text x="545.0" y="138" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">siram air</text>
+  <rect x="30" y="172" width="130" height="136" rx="10" fill="#fffdf5" stroke="#b86a00" stroke-width="2"/>
+  <polygon points="69.0,228 121.0,228 113.0,264 77.0,264" fill="#c9674a" stroke="#7a3a22" stroke-width="2"/>
+  <text x="95.0" y="298" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">siapkan pot</text>
+  <polyline points="162,234 178,234" fill="none" stroke="#2a5d9f" stroke-width="3" marker-end="url(#a)"/>
+  <rect x="180" y="172" width="130" height="136" rx="10" fill="#fffdf5" stroke="#b86a00" stroke-width="2"/>
+  <polygon points="219.0,228 271.0,228 263.0,264 227.0,264" fill="#c9674a" stroke="#7a3a22" stroke-width="2"/>
+  <path d="M221.0,228 q24,-18 48,0 z" fill="#6b4a2b" stroke="#3c2a18" stroke-width="2"/>
+  <text x="245.0" y="298" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">isi tanah</text>
+  <polyline points="312,234 328,234" fill="none" stroke="#2a5d9f" stroke-width="3" marker-end="url(#a)"/>
+  <rect x="330" y="172" width="130" height="136" rx="10" fill="#fffdf5" stroke="#b86a00" stroke-width="2"/>
+  <polygon points="369.0,228 421.0,228 413.0,264 377.0,264" fill="#c9674a" stroke="#7a3a22" stroke-width="2"/>
+  <path d="M371.0,228 q24,-18 48,0 z" fill="#6b4a2b" stroke="#3c2a18" stroke-width="2"/>
+  <ellipse cx="395.0" cy="212" rx="7" ry="5" fill="#8a6a2a" stroke="#4a3a10" stroke-width="2"/>
+  <text x="395.0" y="298" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">taruh biji</text>
+  <polyline points="462,234 478,234" fill="none" stroke="#2a5d9f" stroke-width="3" marker-end="url(#a)"/>
+  <rect x="480" y="172" width="130" height="136" rx="10" fill="#fffdf5" stroke="#b86a00" stroke-width="2"/>
+  <polygon points="519.0,228 571.0,228 563.0,264 527.0,264" fill="#c9674a" stroke="#7a3a22" stroke-width="2"/>
+  <path d="M521.0,228 q24,-18 48,0 z" fill="#6b4a2b" stroke="#3c2a18" stroke-width="2"/>
+  <ellipse cx="545.0" cy="212" rx="7" ry="5" fill="#8a6a2a" stroke="#4a3a10" stroke-width="2"/>
+  <path d="M531.0,198 q-5,9 0,13 q5,-4 0,-13 z" fill="#4aa3df" stroke="#2a6f9f" stroke-width="1.5"/>
+  <path d="M545.0,198 q-5,9 0,13 q5,-4 0,-13 z" fill="#4aa3df" stroke="#2a6f9f" stroke-width="1.5"/>
+  <path d="M559.0,198 q-5,9 0,13 q5,-4 0,-13 z" fill="#4aa3df" stroke="#2a6f9f" stroke-width="1.5"/>
+  <text x="545.0" y="298" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">siram air</text>
+  <circle cx="395.0" cy="74" r="46" fill="none" stroke="#d94f4f" stroke-width="4"/>
+  <path d="M436,22 l16,16 m0,-16 l-16,16" stroke="#d94f4f" stroke-width="5" fill="none"/>
+  <polyline points="395,150 395,170" fill="none" stroke="#d94f4f" stroke-width="4" marker-end="url(#a)"/>
+  <text x="409.0" y="164" font-family="sans-serif" font-size="14" font-weight="bold" fill="#d94f4f" text-anchor="start">ganti</text>
+  <path d="M582,192 l8,10 l16,-20" stroke="#3b7d1f" stroke-width="5" fill="none"/>
+</svg>

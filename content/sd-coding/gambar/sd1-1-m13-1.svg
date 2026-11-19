@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 310" width="640" height="310" role="img" aria-labelledby="t d">
+  <title id="t">Peta harta karun: rumah di petak 7, harta di petak 3, batu di petak 5</title>
+  <desc id="d">Kisi 3x3 bernomor 1 sampai 9, baris atas 1 2 3. Rumah di petak 7, kotak harta di petak 3, batu abu-abu di petak 5. Empat panah biru: dari 7 ke 8, dari 8 ke 9, dari 9 ke 6, dari 6 ke 3. Jalur tidak lewat batu.</desc>
+  <rect width="640" height="310" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a5d9f"/>
+    </marker>
+  </defs>
+  <g fill="#fffdf5" stroke="#888888" stroke-width="2">
+    <rect x="180" y="15" width="95" height="95"/>
+    <rect x="275" y="15" width="95" height="95"/>
+    <rect x="370" y="15" width="95" height="95"/>
+    <rect x="180" y="110" width="95" height="95"/>
+    <rect x="275" y="110" width="95" height="95"/>
+    <rect x="370" y="110" width="95" height="95"/>
+    <rect x="180" y="205" width="95" height="95"/>
+    <rect x="275" y="205" width="95" height="95"/>
+    <rect x="370" y="205" width="95" height="95"/>
+  </g>
+  <g font-family="sans-serif" font-size="14" fill="#777777">
+    <text x="185" y="31">1</text>
+    <text x="280" y="31">2</text>
+    <text x="375" y="31">3</text>
+    <text x="185" y="126">4</text>
+    <text x="280" y="126">5</text>
+    <text x="375" y="126">6</text>
+    <text x="185" y="221">7</text>
+    <text x="280" y="221">8</text>
+    <text x="375" y="221">9</text>
+  </g>
+  <polygon points="205.5,256.5 227.5,236.5 249.5,256.5" fill="#c9674a" stroke="#7a3a22" stroke-width="2"/>
+  <rect x="210.5" y="256.5" width="34" height="24" fill="#f3e2c1" stroke="#7a3a22" stroke-width="2"/>
+  <rect x="222.5" y="266.5" width="10" height="14" fill="#7a3a22"/>
+  <rect x="395.5" y="62.5" width="44" height="24" rx="3" fill="#a8742a" stroke="#5a3b0f" stroke-width="2"/>
+  <path d="M395.5,62.5 Q417.5,40.5 439.5,62.5 z" fill="#c48a3a" stroke="#5a3b0f" stroke-width="2"/>
+  <rect x="413.5" y="68.5" width="8" height="8" fill="#f2d24b" stroke="#5a3b0f" stroke-width="1.5"/>
+  <rect x="294.5" y="137.5" width="56" height="40" rx="14" fill="#9a9a9a" stroke="#555555" stroke-width="2"/>
+  <text x="322.5" y="162.5" font-family="sans-serif" font-size="13" font-weight="bold" fill="#ffffff" text-anchor="middle">batu</text>
+  <polyline points="256,284 314,284" fill="none" stroke="#2a5d9f" stroke-width="4" marker-end="url(#a)"/>
+  <polyline points="330,284 410,284" fill="none" stroke="#2a5d9f" stroke-width="4" marker-end="url(#a)"/>
+  <polyline points="418,272 418,192" fill="none" stroke="#2a5d9f" stroke-width="4" marker-end="url(#a)"/>
+  <polyline points="418,128 418,96" fill="none" stroke="#2a5d9f" stroke-width="4" marker-end="url(#a)"/>
+</svg>

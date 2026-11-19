@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 250" width="560" height="250" role="img" aria-labelledby="t d">
+  <title id="t">Mesin cuci sebagai tiga kotak</title>
+  <desc id="d">Tiga kotak berpanah dari kiri ke kanan. Kotak MASUKAN berisi pakaian kotor, air, sabun. Kotak PROSES berisi tabung berputar dan membilas. Kotak KELUARAN berisi pakaian bersih.</desc>
+  <rect width="560" height="250" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#444444"/>
+    </marker>
+  </defs>
+  <text x="280" y="30" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">Mesin cuci</text>
+  <rect x="15" y="60" width="160" height="110" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="95.0" y="95.5" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#222222">MASUKAN</text>
+  <text x="95.0" y="111.5" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#222222">pakaian kotor</text>
+  <text x="95.0" y="127.5" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#222222">air</text>
+  <text x="95.0" y="143.5" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#222222">sabun</text>
+  <rect x="200" y="60" width="160" height="110" fill="#ffffff" stroke="#444444" stroke-width="2"/>
+  <text x="280.0" y="103.5" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#222222">PROSES</text>
+  <text x="280.0" y="119.5" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#222222">tabung berputar</text>
+  <text x="280.0" y="135.5" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#222222">dan membilas</text>
+  <rect x="385" y="60" width="160" height="110" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+  <text x="465.0" y="111.5" font-family="sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#222222">KELUARAN</text>
+  <text x="465.0" y="127.5" font-family="sans-serif" font-size="13" text-anchor="middle" fill="#222222">pakaian bersih</text>
+  <polyline points="175,115 198,115" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <polyline points="360,115 383,115" stroke="#444444" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <text x="280" y="215" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#222222">Masukan: yang diberikan. Proses: yang dikerjakan. Keluaran: yang keluar.</text>
+</svg>
