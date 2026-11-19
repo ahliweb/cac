@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" width="640" height="300" role="img" aria-labelledby="t d">
+  <title id="t">Dua kartu pesan dan dua kotak sortir</title>
+  <desc id="d">Di kiri dua kartu pesan. Kartu 1 berbunyi aku suka makan mangga. Kartu 2 berbunyi rumahku dekat pohon beringin nomor 7. Di kanan dua kotak: kotak hijau bertulis boleh dibagikan dan kotak oranye bertulis tanya orang dewasa dulu. Panah dari kartu 1 ke kotak hijau dan dari kartu 2 ke kotak oranye.</desc>
+  <rect width="640" height="300" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a5d9f"/>
+    </marker>
+  </defs>
+  <g font-family="sans-serif" font-size="15" fill="#222222">
+    <rect x="20" y="40" width="230" height="90" rx="8" fill="#fff8e1" stroke="#999999" stroke-width="2"/>
+    <text x="30" y="62" font-weight="bold">Kartu 1</text>
+    <text x="30" y="88">Kancil: "Aku suka</text>
+    <text x="30" y="108">makan mangga."</text>
+    <rect x="20" y="170" width="230" height="90" rx="8" fill="#fff8e1" stroke="#999999" stroke-width="2"/>
+    <text x="30" y="192" font-weight="bold">Kartu 2</text>
+    <text x="30" y="218">Siput: "Rumahku dekat pohon</text>
+    <text x="30" y="238">beringin, nomor 7."</text>
+  </g>
+  <line x1="255" y1="85" x2="385" y2="85" stroke="#2a5d9f" stroke-width="3" marker-end="url(#a)"/>
+  <line x1="255" y1="215" x2="385" y2="215" stroke="#2a5d9f" stroke-width="3" marker-end="url(#a)"/>
+  <rect x="395" y="40" width="225" height="90" rx="10" fill="#e6f4e0" stroke="#3b7d1f" stroke-width="3"/>
+  <rect x="395" y="170" width="225" height="90" rx="10" fill="#fdecd2" stroke="#b86a00" stroke-width="3"/>
+  <g font-family="sans-serif" font-size="17" font-weight="bold" fill="#222222" text-anchor="middle">
+    <text x="507" y="92">BOLEH DIBAGIKAN</text>
+    <text x="507" y="212">TANYA ORANG</text>
+    <text x="507" y="236">DEWASA DULU</text>
+  </g>
+</svg>

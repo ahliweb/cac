@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280" width="640" height="280" role="img" aria-labelledby="t d">
+  <title id="t">Peta semester 2 kelas 3</title>
+  <desc id="d">Tiga kotak berurutan. Kotak satu: simbol, tabel, diagram gambar, pesan lewat kurir, dan mencari informasi, minggu 1 sampai 7. Kotak dua: kata sandi, mesin cerdas, mesin mengenali pola, dan sopan dan empati, minggu 8 sampai 11. Kotak tiga: mesin kotak dan poster aman digital, minggu 12 dan 13.</desc>
+  <rect width="640" height="280" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2a5d9f"/>
+    </marker>
+  </defs>
+  <rect x="10" y="40" width="190" height="200" rx="10" fill="#f4f8fd" stroke="#2a5d9f" stroke-width="3"/>
+  <rect x="225" y="40" width="190" height="200" rx="10" fill="#f4fbf0" stroke="#3b7d1f" stroke-width="3"/>
+  <rect x="440" y="40" width="190" height="200" rx="10" fill="#fff8e1" stroke="#b86a00" stroke-width="3"/>
+  <g font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle" font-weight="bold">
+    <text x="105" y="70">M1 sampai M7</text>
+    <text x="320" y="70">M8 sampai M11</text>
+    <text x="535" y="70">M12 dan M13</text>
+  </g>
+  <g font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">
+    <text x="105" y="105">simbol</text>
+    <text x="105" y="128">tabel</text>
+    <text x="105" y="151">diagram gambar</text>
+    <text x="105" y="174">pesan lewat kurir</text>
+    <text x="105" y="197">mencari informasi</text>
+    <text x="320" y="105">kata sandi</text>
+    <text x="320" y="128">mesin cerdas</text>
+    <text x="320" y="151">mesin mengenali pola</text>
+    <text x="320" y="174">sopan dan empati</text>
+    <text x="535" y="115">mesin kotak</text>
+    <text x="535" y="145">poster aman digital</text>
+  </g>
+  <line x1="203" y1="140" x2="222" y2="140" stroke="#2a5d9f" stroke-width="3" marker-end="url(#a)"/>
+  <line x1="418" y1="140" x2="437" y2="140" stroke="#2a5d9f" stroke-width="3" marker-end="url(#a)"/>
+  <text x="320" y="20" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222" text-anchor="middle">Semester 2</text>
+</svg>

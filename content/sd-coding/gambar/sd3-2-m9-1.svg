@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320" role="img" aria-labelledby="t d">
+  <title id="t">Daftar dua ciri dan kartu kipas serta robot penyapu</title>
+  <desc id="d">Di kiri daftar dua ciri mesin cerdas: belajar dari contoh dan memberi respons. Di kanan dua kartu. Kartu kipas angin punya dua kotak centang kosong. Kartu robot penyapu punya dua kotak centang yang terisi tanda centang.</desc>
+  <rect width="640" height="320" fill="#ffffff"/>
+  <rect x="20" y="30" width="230" height="170" rx="10" fill="#f4f8fd" stroke="#2a5d9f" stroke-width="3"/>
+  <g font-family="sans-serif" font-size="16" fill="#222222">
+    <text x="35" y="60" font-weight="bold">Dua ciri</text>
+    <text x="35" y="95">1. belajar dari contoh</text>
+    <text x="35" y="130">2. memberi respons</text>
+    <text x="35" y="175" font-size="14">Cerdas bila punya keduanya</text>
+  </g>
+  <rect x="290" y="30" width="150" height="250" rx="10" fill="#fff8e1" stroke="#999999" stroke-width="2"/>
+  <rect x="470" y="30" width="150" height="250" rx="10" fill="#fff8e1" stroke="#3b7d1f" stroke-width="3"/>
+  <g font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222" text-anchor="middle">
+    <text x="365" y="60">Kipas angin</text>
+    <text x="545" y="60">Robot penyapu</text>
+  </g>
+  <g stroke="#555555" stroke-width="2" fill="none">
+    <circle cx="365" cy="120" r="22"/>
+    <line x1="365" y1="98" x2="365" y2="142"/>
+    <line x1="343" y1="120" x2="387" y2="120"/>
+    <line x1="365" y1="142" x2="365" y2="175"/>
+    <line x1="345" y1="175" x2="385" y2="175"/>
+    <ellipse cx="545" cy="135" rx="45" ry="22"/>
+    <circle cx="545" cy="135" r="7"/>
+  </g>
+  <g fill="none" stroke="#222222" stroke-width="2">
+    <rect x="305" y="200" width="22" height="22"/>
+    <rect x="305" y="238" width="22" height="22"/>
+    <rect x="485" y="200" width="22" height="22"/>
+    <rect x="485" y="238" width="22" height="22"/>
+  </g>
+  <g fill="none" stroke="#3b7d1f" stroke-width="4">
+    <polyline points="489,212 495,219 505,205"/>
+    <polyline points="489,250 495,257 505,243"/>
+  </g>
+  <g font-family="sans-serif" font-size="13" fill="#222222">
+    <text x="335" y="217">belajar</text>
+    <text x="335" y="255">respons</text>
+    <text x="515" y="217">belajar</text>
+    <text x="515" y="255">respons</text>
+  </g>
+</svg>

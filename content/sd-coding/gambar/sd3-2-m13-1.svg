@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 340" width="640" height="340" role="img" aria-labelledby="t d">
+  <title id="t">Tata letak poster dan dua contoh poster</title>
+  <desc id="d">Di kiri poster besar dengan tiga bagian bernomor: nomor 1 judul aturan di atas, nomor 2 gambar kunci dan pintu di tengah, nomor 3 alasan di bawah. Di kanan poster kecil A hanya bertulis jangan bagikan, dan poster kecil B memuat judul, gambar, dan alasan.</desc>
+  <rect width="640" height="340" fill="#ffffff"/>
+  <rect x="20" y="15" width="300" height="310" rx="8" fill="#fffdf0" stroke="#555555" stroke-width="3"/>
+  <rect x="35" y="30" width="270" height="55" rx="6" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="2"/>
+  <rect x="35" y="100" width="270" height="130" rx="6" fill="#ffffff" stroke="#999999" stroke-width="2"/>
+  <rect x="35" y="245" width="270" height="65" rx="6" fill="#e6f4e0" stroke="#3b7d1f" stroke-width="2"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <text x="45" y="52" font-weight="bold">1 Judul aturan</text>
+    <text x="45" y="72">Kata sandi hanya untuk aku</text>
+    <text x="45" y="268" font-weight="bold">3 Alasan</text>
+    <text x="45" y="290">Supaya orang lain tidak masuk akunku.</text>
+    <text x="45" y="120" font-weight="bold">2 Gambar</text>
+  </g>
+  <g fill="none" stroke="#555555" stroke-width="3">
+    <circle cx="120" cy="175" r="20"/>
+    <line x1="140" y1="175" x2="190" y2="175"/>
+    <line x1="170" y1="175" x2="170" y2="195"/>
+    <line x1="185" y1="175" x2="185" y2="190"/>
+    <rect x="215" y="140" width="55" height="80" rx="4"/>
+  </g>
+  <circle cx="262" cy="182" r="3" fill="#555555"/>
+  <rect x="350" y="15" width="120" height="150" rx="6" fill="#ffffff" stroke="#555555" stroke-width="3"/>
+  <g font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">
+    <text x="410" y="95" font-size="16" font-weight="bold">Jangan</text>
+    <text x="410" y="115" font-size="16" font-weight="bold">bagikan!</text>
+    <text x="410" y="190">Poster A</text>
+  </g>
+  <rect x="500" y="15" width="120" height="150" rx="6" fill="#fffdf0" stroke="#3b7d1f" stroke-width="3"/>
+  <rect x="510" y="25" width="100" height="30" rx="4" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="1.5"/>
+  <rect x="510" y="62" width="100" height="55" rx="4" fill="#ffffff" stroke="#999999" stroke-width="1.5"/>
+  <rect x="510" y="124" width="100" height="30" rx="4" fill="#e6f4e0" stroke="#3b7d1f" stroke-width="1.5"/>
+  <g font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">
+    <text x="560" y="45">judul</text>
+    <text x="560" y="94">gambar</text>
+    <text x="560" y="144">alasan</text>
+    <text x="560" y="190">Poster B</text>
+  </g>
+</svg>
