@@ -611,7 +611,7 @@ Pembedaan: **K** = didukung bukti kuat (`[A]` atau `[B]` untuk prinsipnya);
 
 **Catatan status (v0.2.0, 2026-11-19).** Bagian 8 ditulis ketika hanya `osn`
 dan `sma-coding` ada di `main`. Sekarang tujuh program terdaftar
-(`data/programs.json`, per 2026-11-19): `osn` 2.0, `sma-coding` 1.4.0,
+(`data/programs.json`, per 2026-11-19): `osn` 2.0, `sma-coding` 1.4.1,
 `tk-coding` 1.0.2, `sd-coding` 1.1.0, `smp-coding` 1.2.0, `kuliah-coding` 1.2.0,
 dan `dewasa-coding` 1.2.0; peta jenjang di
 [`docs/programs/README.md`](../programs/README.md). Modul belajar enam program

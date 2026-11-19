@@ -564,7 +564,7 @@ Real output (`osn plan --program sma-coding --track A --semester X1`, abridged):
 
 Program: Silabus Pembelajaran Coding SMA
 Cakupan: semester X1
-Sumber: silabus versi 1.4.0, tanggal 2026-11-19.
+Sumber: silabus versi 1.4.1, tanggal 2026-11-19.
 
 ## Semester X1 (kelas X, fase E)
 
@@ -606,7 +606,7 @@ A pengayaan track states so in the header (`osn plan --program sma-coding --trac
 
 Program: Silabus Pembelajaran Coding SMA
 Cakupan: semester XI1
-Sumber: silabus versi 1.4.0, tanggal 2026-11-19.
+Sumber: silabus versi 1.4.1, tanggal 2026-11-19.
 Catatan: jalur D adalah pengayaan di luar rumusan CP; tidak dihitung sebagai pemenuhan butir CP.
 ```
 
@@ -767,7 +767,7 @@ Tidak ada butir CP yang dipetakan ke minggu ini dalam pemetaan silabus.
 - [ ] Keluaran selesai: tabel konversi; lembar kode karakter; gambar 8x8 dalam bentuk deret bit
 
 ---
-Sumber: Silabus Pembelajaran Coding SMA, versi 1.4.0, tanggal 2026-11-19.
+Sumber: Silabus Pembelajaran Coding SMA, versi 1.4.1, tanggal 2026-11-19.
 ```
 
 Unknown code (exit `2`):
