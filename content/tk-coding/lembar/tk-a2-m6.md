@@ -1,5 +1,3 @@
-# Pola di sekitar kita
-
 ![Tiga gambar pola: ubin, kain, anyaman, dan satu kotak besar kosong untuk menggambar satu pola.](../gambar/tk-a2-m6-1.svg)
 
 `[Gambar: tiga gambar pola berjajar di bagian atas. Pertama "ubin": kotak abu-abu dan putih berselang-seling. Kedua "kain": garis merah dan titik-titik biru bergantian. Ketiga "anyaman": batang mendatar dan batang tegak bergantian.]`

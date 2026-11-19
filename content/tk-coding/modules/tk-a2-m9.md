@@ -1,5 +1,3 @@
-# Bagi-bagi tugas
-
 `TK-A2-M9` · TK A · sesi 20 menit · irisan CP: `FF-DL-c` (memecahkan masalah sederhana), `FF-JD-c` (kerja sama dan membangun hubungan sosial), bukan pemenuhan CP
 
 ## Tujuan

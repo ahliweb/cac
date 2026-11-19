@@ -1,5 +1,3 @@
-# Sebab dan akibat
-
 `TK-A2-M7` · TK A · sesi 20 menit · irisan CP: `FF-DL-c` (hubungan sebab akibat), bukan pemenuhan CP
 
 ## Tujuan

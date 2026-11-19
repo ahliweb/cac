@@ -1,5 +1,3 @@
-# Merancang kipas
-
 `TK-A2-M10` · TK A · sesi 20 menit · irisan CP: `FF-DL-d` (kemampuan awal menggunakan dan merekayasa teknologi), `FF-JD-e` (fungsi gerak), bukan pemenuhan CP
 
 ## Tujuan

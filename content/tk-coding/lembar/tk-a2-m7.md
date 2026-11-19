@@ -1,5 +1,3 @@
-# Sebab dan akibat
-
 ![Tiga gambar sebab di kiri: air dituang ke spons, tangan mendorong bola, hujan turun. Di kanan tiga kotak kosong. Di bawah tiga kartu akibat: spons basah, bola menggelinding, tanah basah.](../gambar/tk-a2-m7-1.svg)
 
 `[Gambar: tiga baris. Baris pertama: cangkir miring menuang air ke spons kuning. Baris kedua: tangan mendorong bola. Baris ketiga: awan dengan tetes hujan. Di kanan tiap baris ada kotak kosong bergaris putus-putus, dihubungkan tanda panah.]`

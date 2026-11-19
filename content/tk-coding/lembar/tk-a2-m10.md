@@ -1,5 +1,3 @@
-# Merancang kipas
-
 ![Tiga langkah membuat kipas: kertas datar, kertas dilipat bolak-balik, lalu kipas terbuka dengan pangkal dijepit. Di bawah satu kotak kosong untuk menggambar kipas yang sudah diubah.](../gambar/tk-a2-m10-1.svg)
 
 `[Gambar: tiga gambar berurutan dari kiri ke kanan, dihubungkan tanda panah. Pertama: selembar kertas persegi panjang. Kedua: kertas dengan garis lipat bergelombang, depan lalu belakang. Ketiga: kipas terbuka berbentuk setengah lingkaran dengan pangkal dijepit.]`

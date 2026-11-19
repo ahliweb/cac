@@ -1,5 +1,3 @@
-# Kumpulan benda
-
 `TK-A1-M7` · TK A · sesi 20 menit · irisan CP: `FF-DL-b` (mengidentifikasi pola), bukan pemenuhan CP
 
 ## Tujuan

@@ -1,5 +1,3 @@
-# Pola warna
-
 ![Baris lingkaran merah dan biru berselang-seling, tiga lingkaran kosong di ujung, dan dua kartu lingkaran merah dan biru.](../gambar/tk-a1-m5-1.svg)
 
 `[Gambar: satu baris lima lingkaran: merah, biru, merah, biru, merah. Lingkaran biru punya titik putih di tengah. Di ujung kanan ada tiga lingkaran kosong dengan garis putus-putus.]`

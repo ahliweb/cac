@@ -1,5 +1,3 @@
-# Tebak aturan
-
 `TK-A1-M8` · TK A · sesi 20 menit · irisan CP: `FF-DL-b` (mengidentifikasi pola), `FF-DL-c` (berpikir runtut dan alasan), bukan pemenuhan CP
 
 ## Tujuan

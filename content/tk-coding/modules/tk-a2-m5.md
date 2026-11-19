@@ -1,5 +1,3 @@
-# Pola tiga unsur
-
 `TK-A2-M5` · TK A · sesi 20 menit · irisan CP: `FF-DL-b` (mengidentifikasi pola), bukan pemenuhan CP
 
 ## Tujuan

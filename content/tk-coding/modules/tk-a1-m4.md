@@ -1,5 +1,3 @@
-# Kiri dan kanan
-
 `TK-A1-M4` · TK A · sesi 20 menit · irisan CP: `FF-DL-b` (kesadaran tentang posisi dan ruang), `FF-JD-e` (fungsi gerak), bukan pemenuhan CP
 
 ## Tujuan

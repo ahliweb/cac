@@ -1,5 +1,3 @@
-# Kegiatan sehari-hariku
-
 `TK-A1-M1` · TK A · sesi 20 menit · irisan CP: `FF-DL-b` (kesadaran mengenai waktu), bukan pemenuhan CP
 
 ## Tujuan

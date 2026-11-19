@@ -1,5 +1,3 @@
-# Pameran kecil dan cerita
-
 ![Empat gambar permainan: pola warna, tepuk dan hentak, kartu urutan, dan robot. Di tengah ada lingkaran putus-putus untuk menempel stiker.](../gambar/tk-a1-m12-1.svg)
 
 `[Gambar: empat gambar permainan di empat sudut kertas. Kiri atas: satu baris lingkaran merah dan biru berselang-seling. Kanan atas: dua tangan bertepuk dan telapak kaki. Kiri bawah: tiga kartu urutan dengan panah di antaranya. Kanan bawah: robot dari kotak dan panah maju. Di tengah ada lingkaran putus-putus.]`

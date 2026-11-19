@@ -1,5 +1,3 @@
-# Permainan besar: jalan robot
-
 `TK-A1-M11` · TK A · sesi 20 menit · irisan CP: `FF-DL-d` (kemampuan awal menggunakan dan merekayasa teknologi), `FF-JD-c` (kerja sama dan bergantian), bukan pemenuhan CP
 
 ## Tujuan

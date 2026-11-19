@@ -1,5 +1,3 @@
-# Peta kisi 3x3
-
 ![Peta sembilan petak dengan boneka di kanan bawah dan bendera di tengah atas, empat kotak kosong, dan kartu: tiga maju, satu belok kiri.](../gambar/tk-a2-m4-1.svg)
 
 `[Gambar: peta tiga kali tiga petak dilihat dari atas. Boneka kecil berdiri di petak pojok kanan bawah menghadap ke atas, ditandai "mulai". Bendera merah ada di petak tengah baris paling atas, ditandai "tujuan". Di bawah peta ada empat kotak kosong bergaris putus-putus, dihubungkan tanda panah.]`

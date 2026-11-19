@@ -1,5 +1,3 @@
-# Memakai alat dengan aman
-
 ![Dua gunting berdampingan, satu berujung ke bawah dengan lingkaran putus-putus untuk stiker, dan satu berujung ke atas. Di bawah ada kertas dengan garis putus-putus.](../gambar/tk-a1-m10-1.svg)
 
 `[Gambar: dua gunting berdampingan. Gunting kiri dipegang dengan ujungnya menghadap ke bawah. Gunting kanan dipegang dengan ujungnya menghadap ke atas. Di bawah gunting kiri ada lingkaran putus-putus untuk stiker. Di bawahnya ada selembar kertas dengan satu garis lurus dan satu garis melengkung berwarna tebal.]`

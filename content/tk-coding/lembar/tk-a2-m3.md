@@ -1,5 +1,3 @@
-# Maju dan belok
-
 ![Jalur dari robot di kanan bawah ke atas lalu ke kiri sampai bendera, dua kotak kosong, dan dua kartu: maju dan belok kiri.](../gambar/tk-a2-m3-1.svg)
 
 `[Gambar: satu jalur dilihat dari atas. Robot kecil di sisi kanan menghadap ke atas, ditandai "mulai". Jalur lurus ke atas, lalu berbelok ke kiri sampai bendera merah. Di bawahnya dua kotak kosong bergaris putus-putus dengan tanda panah di antaranya.]`

@@ -1,5 +1,3 @@
-# Kenapa aku memilih ini?
-
 `TK-A2-M8` · TK A · sesi 20 menit · irisan CP: `FF-DL-c` (menyebutkan alasan, pilihan, atau keputusan), bukan pemenuhan CP
 
 ## Tujuan

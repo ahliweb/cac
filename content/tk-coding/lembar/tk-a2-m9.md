@@ -1,5 +1,3 @@
-# Bagi-bagi tugas
-
 ![Tiga balok dan tiga kain di kiri. Di kanan dua kotak: kotak biru bernomor satu dan kotak merah bernomor dua.](../gambar/tk-a2-m9-1.svg)
 
 `[Gambar: di kiri ada tiga balok persegi dan tiga kain bergelombang berserakan. Di kanan ada dua kotak: kotak biru diberi angka 1 dan kotak merah diberi angka 2. Di samping tiap benda ada titik kecil untuk menarik garis.]`

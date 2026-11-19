@@ -1,5 +1,3 @@
-# Aku robot, kamu pemandu
-
 `TK-A1-M3` · TK A · sesi 20 menit · irisan CP: `FF-DL-d` (kemampuan awal menggunakan dan merekayasa teknologi), `FF-JD-e` (fungsi gerak), bukan pemenuhan CP
 
 ## Tujuan

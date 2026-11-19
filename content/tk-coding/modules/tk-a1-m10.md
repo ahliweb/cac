@@ -1,5 +1,3 @@
-# Memakai alat dengan aman
-
 `TK-A1-M10` · TK A · sesi 20 menit · irisan CP: `FF-DL-d` (kemampuan awal menggunakan dan merekayasa teknologi), `FF-JD-e` (fungsi gerak), bukan pemenuhan CP
 
 ## Tujuan

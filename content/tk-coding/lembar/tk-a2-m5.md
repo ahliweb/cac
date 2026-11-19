@@ -1,5 +1,3 @@
-# Pola tiga unsur
-
 ![Dua baris lingkaran: merah, merah, biru dan merah, biru, kuning, masing-masing dengan tiga lingkaran kosong; di bawahnya tiga kartu warna.](../gambar/tk-a2-m5-1.svg)
 
 `[Gambar: baris pertama lima lingkaran: merah, merah, biru, merah, merah, lalu tiga lingkaran kosong bergaris putus-putus. Baris kedua lima lingkaran: merah, biru, kuning, merah, biru, lalu tiga lingkaran kosong bergaris putus-putus. Lingkaran biru punya titik putih di tengah dan lingkaran kuning punya cincin, supaya dapat dibedakan tanpa warna.]`

@@ -1,5 +1,3 @@
-# Alat di sekitar kita
-
 `TK-A1-M9` · TK A · sesi 20 menit · irisan CP: `FF-DL-d` (kemampuan awal menggunakan dan merekayasa teknologi), bukan pemenuhan CP
 
 ## Tujuan

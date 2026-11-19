@@ -1,16 +1,13 @@
-# Profesi, Etika, dan Masyarakat
-
-> **DRAF — belum ditinjau.** Ini modul belajar untuk mata kuliah `KUL-I-305`
-> (2 SKS, semester 6, jalur I), bagian dari program `kuliah-coding`. Konten
-> karangan menurut ADR-0007; belum disetujui pemilik atau peninjau. Mata
-> kuliah ini sebagian besar tentang **kasus dan penalaran**, bukan kode. Dua
-> blok `cpp` kecil di bagian 3 adalah **C++17** (g++ 13.3, Linux): keduanya
-> dikompilasi dengan `-std=c++17 -Wall -Wextra` tanpa peringatan, dijalankan,
-> dan keluarannya cocok. Semua nama, kasus, dan data **fiktif**. Bagian hukum
-> hanya memuat yang tertulis pada teks resmi yang dibaca penyusun; ini bahan
-> belajar, bukan nasihat hukum.
-
 ## Untuk siapa modul ini
+
+Modul belajar untuk mata kuliah `KUL-I-305` (2 SKS, semester 6, jalur I), bagian
+dari program `kuliah-coding`. Konten ini karangan menurut ADR-0007 dan belum
+disetujui. Mata kuliah ini sebagian besar tentang **kasus dan penalaran**, bukan
+kode. Dua blok `cpp` kecil di bagian 3 adalah **C++17** (g++ 13.3, Linux):
+keduanya dikompilasi dengan `-std=c++17 -Wall -Wextra` tanpa peringatan,
+dijalankan, dan keluarannya cocok. Semua nama, kasus, dan data **fiktif**.
+Bagian hukum hanya memuat yang tertulis pada teks resmi yang dibaca penyusun;
+ini bahan belajar, bukan nasihat hukum.
 
 Mahasiswa semester 6 informatika atau ilmu komputer. Tidak ada prasyarat mata
 kuliah. Satu mata kuliah, satu semester: 14 pertemuan, ujian tengah sesudah

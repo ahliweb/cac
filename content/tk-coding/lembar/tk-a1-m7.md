@@ -1,5 +1,3 @@
-# Kumpulan benda
-
 ![Enam benda bercampur, lingkaran dan persegi berwarna merah dan biru, dan dua kotak putus-putus di bawahnya.](../gambar/tk-a1-m7-1.svg)
 
 `[Gambar: di bagian atas ada enam benda bercampur: dua lingkaran merah, dua lingkaran biru bertitik putih, satu persegi merah, dan satu persegi biru bertitik putih. Di bawahnya ada dua kotak besar dengan garis putus-putus, kotak kiri dan kotak kanan.]`

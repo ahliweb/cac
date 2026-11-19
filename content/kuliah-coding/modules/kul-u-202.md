@@ -1,16 +1,13 @@
-# Literasi, Etika, dan Keamanan AI
-
-> **DRAF — belum ditinjau.** Ini modul belajar untuk mata kuliah `KUL-U-202`
-> (2 SKS, semester 4, jalur U), bagian dari program `kuliah-coding`. Konten
-> karangan menurut ADR-0007; belum disetujui pemilik atau peninjau. Kode di
-> modul ini adalah **Python 3.12** (pustaka standar): tiap blok lengkap
-> dijalankan dengan `python3 -I` dan keluarannya sama dengan yang tertulis;
-> blok `setengah-jadi` berlubang, tetapi versi terisi sudah dijalankan. Semua
-> nama, surel, nomor, dan "kunci" **fiktif**. Bagian hukum hanya memuat yang
-> tertulis pada teks resmi yang dibaca penyusun; ini bahan belajar, bukan
-> nasihat hukum.
-
 ## Untuk siapa modul ini
+
+Modul belajar untuk mata kuliah `KUL-U-202` (2 SKS, semester 4, jalur U), bagian
+dari program `kuliah-coding`. Konten ini karangan menurut ADR-0007 dan belum
+disetujui. Kode di modul ini adalah **Python 3.12** (pustaka standar): tiap blok
+lengkap dijalankan dengan `python3 -I` dan keluarannya sama dengan yang
+tertulis; blok `setengah-jadi` berlubang, tetapi versi terisi sudah dijalankan.
+Semua nama, surel, nomor, dan "kunci" **fiktif**. Bagian hukum hanya memuat yang
+tertulis pada teks resmi yang dibaca penyusun; ini bahan belajar, bukan nasihat
+hukum.
 
 Mahasiswa semester 4 dari program studi mana pun, **termasuk yang belum
 pernah memprogram**. Tidak ada prasyarat; setiap kode dijelaskan. Satu mata kuliah, satu semester: 14 pertemuan, ujian tengah

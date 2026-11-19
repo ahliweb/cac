@@ -1,5 +1,3 @@
-# Peta kisi 3x3
-
 `TK-A2-M4` · TK A · sesi 20 menit · irisan CP: `FF-DL-b` (kesadaran tentang posisi dan ruang), `FF-DL-d` (kemampuan awal menggunakan dan merekayasa teknologi), bukan pemenuhan CP
 
 ## Tujuan

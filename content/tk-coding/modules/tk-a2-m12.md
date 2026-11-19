@@ -1,5 +1,3 @@
-# Pameran dan cerita
-
 `TK-A2-M12` · TK A · sesi 20 menit · irisan CP: `FF-DL-a` (menyimak dan bercerita), bukan pemenuhan CP
 
 ## Tujuan

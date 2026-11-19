@@ -1,5 +1,3 @@
-# Cerita tiga gambar
-
 `TK-A1-M2` · TK A · sesi 20 menit · irisan CP: `FF-DL-a` (menceritakan secara lisan), `FF-DL-c` (hubungan sebab akibat), bukan pemenuhan CP
 
 ## Tujuan

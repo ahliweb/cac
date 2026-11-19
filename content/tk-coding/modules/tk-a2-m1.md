@@ -1,5 +1,3 @@
-# Urutan empat langkah
-
 `TK-A2-M1` · TK A · sesi 20 menit · irisan CP: `FF-DL-b` (kesadaran mengenai waktu), `FF-DL-c` (hubungan sebab akibat), bukan pemenuhan CP
 
 ## Tujuan

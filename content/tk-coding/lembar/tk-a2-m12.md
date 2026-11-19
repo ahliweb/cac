@@ -1,5 +1,3 @@
-# Pameran dan cerita
-
 ![Empat gambar permainan: kartu urutan, peta dengan boneka, pola manik, dan kipas. Di tengah ada lingkaran putus-putus untuk menempel stiker.](../gambar/tk-a2-m12-1.svg)
 
 `[Gambar: empat gambar permainan di empat sudut kertas. Kiri atas: empat kartu urutan dengan panah di antaranya. Kanan atas: peta tiga kali tiga petak dengan bintang dan bendera. Kiri bawah: satu baris manik merah, merah, biru, merah. Kanan bawah: kipas terbuka dari kertas. Di tengah ada lingkaran putus-putus.]`

@@ -1,5 +1,3 @@
-# Eh, ada yang terbalik!
-
 ![Satu baris empat kartu menanam biji yang tertukar: lubang, air, biji, tunas; di bawahnya lingkaran untuk melingkari dua kartu yang salah letak.](../gambar/tk-a2-m2-1.svg)
 
 `[Gambar: satu baris empat kartu bergambar dari kiri ke kanan, dengan bintang dan tanda panah baca di atasnya. Urutan kartu: lubang di tanah, tetesan air di atas tanah, biji di atas lubang, tunas hijau. Dua kartu di tengah sengaja tertukar.]`

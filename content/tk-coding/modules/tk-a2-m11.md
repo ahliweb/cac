@@ -1,5 +1,3 @@
-# Permainan besar: raja urutan
-
 `TK-A2-M11` · TK A · sesi 20 menit · irisan CP: `FF-JD-c` (kerja sama dan membangun hubungan sosial), `FF-DL-b` (kesadaran mengenai waktu), bukan pemenuhan CP
 
 ## Tujuan

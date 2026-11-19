@@ -1,14 +1,11 @@
-# Analisis dan Desain Algoritma
-
-> **DRAF — belum ditinjau.** Ini modul belajar untuk mata kuliah `KUL-I-201`
-> (3 SKS, semester 3, jalur I), bagian dari program `kuliah-coding`. Konten
-> karangan menurut ADR-0007; belum disetujui pemilik atau peninjau. Kode di
-> modul ini adalah **C++17** (g++ 13.3, Linux): tiap blok `cpp` dikompilasi
-> dengan `-std=c++17 -Wall -Wextra` tanpa peringatan, dijalankan, dan
-> keluarannya cocok dengan yang tertulis. Blok berinfo `setengah-jadi`
-> sengaja berlubang dan tidak dijalankan.
-
 ## Untuk siapa modul ini
+
+Modul belajar untuk mata kuliah `KUL-I-201` (3 SKS, semester 3, jalur I), bagian
+dari program `kuliah-coding`. Konten ini karangan menurut ADR-0007 dan belum
+disetujui. Kode di modul ini adalah **C++17** (g++ 13.3, Linux): tiap blok `cpp`
+dikompilasi dengan `-std=c++17 -Wall -Wextra` tanpa peringatan, dijalankan, dan
+keluarannya cocok dengan yang tertulis. Blok berinfo `setengah-jadi` sengaja
+berlubang dan tidak dijalankan.
 
 Mahasiswa semester 3 informatika atau ilmu komputer yang sudah menempuh
 `KUL-I-102` (BFS, pohon, pencarian biner) dan `KUL-I-103` (logika, induksi).

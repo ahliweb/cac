@@ -1,5 +1,3 @@
-# Permainan besar: raja urutan
-
 ![Empat kotak kosong berurutan dihubungkan panah dan mahkota di atasnya. Di bawah empat kartu untuk ditempel: cuci tangan, duduk, makan, simpan kotak bekal.](../gambar/tk-a2-m11-1.svg)
 
 `[Gambar: empat kotak kosong bergaris putus-putus berjajar dari kiri ke kanan, dihubungkan tanda panah. Di atas kotak pertama ada gambar mahkota kecil.]`

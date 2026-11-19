@@ -1,5 +1,3 @@
-# Eh, ada yang terbalik!
-
 `TK-A2-M2` · TK A · sesi 20 menit · irisan CP: `FF-DL-c` (hubungan sebab akibat), bukan pemenuhan CP
 
 ## Tujuan

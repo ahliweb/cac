@@ -1,5 +1,3 @@
-# Pola di sekitar kita
-
 `TK-A2-M6` · TK A · sesi 20 menit · irisan CP: `FF-DL-b` (mengidentifikasi pola), `FF-DL-e` (mengeksplorasi proses seni), bukan pemenuhan CP
 
 ## Tujuan

@@ -1,5 +1,3 @@
-# Maju dan belok
-
 `TK-A2-M3` · TK A · sesi 20 menit · irisan CP: `FF-DL-b` (kesadaran tentang posisi dan ruang), `FF-DL-d` (kemampuan awal menggunakan dan merekayasa teknologi), bukan pemenuhan CP
 
 ## Tujuan
