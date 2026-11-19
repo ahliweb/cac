@@ -3095,6 +3095,203 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xi2-m7.md"
+    },
+    {
+      "id": "d-xi2-m1",
+      "title": "Pengelompokan dengan Python",
+      "cpItems": [],
+      "weekCodes": ["D-XI2-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi1-m7", "d-x2-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Clustering (bagian k-means)",
+          "url": "https://scikit-learn.org/stable/modules/clustering.html"
+        },
+        {
+          "title": "scikit-learn: StandardScaler",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html"
+        },
+        {
+          "title": "scikit-learn: silhouette_score",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.metrics.silhouette_score.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi2-m1.md"
+    },
+    {
+      "id": "d-xi2-m2",
+      "title": "Pohon keputusan dan ensambel",
+      "cpItems": [],
+      "weekCodes": ["D-XI2-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi2-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Decision Trees",
+          "url": "https://scikit-learn.org/stable/modules/tree.html"
+        },
+        {
+          "title": "scikit-learn: Ensembles (hutan acak)",
+          "url": "https://scikit-learn.org/stable/modules/ensemble.html"
+        },
+        {
+          "title": "scikit-learn: RandomForestClassifier",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi2-m2.md"
+    },
+    {
+      "id": "d-xi2-m3",
+      "title": "Rekayasa fitur",
+      "cpItems": [],
+      "weekCodes": ["D-XI2-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi2-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "pandas: get_dummies",
+          "url": "https://pandas.pydata.org/docs/reference/api/pandas.get_dummies.html"
+        },
+        {
+          "title": "scikit-learn: Feature selection",
+          "url": "https://scikit-learn.org/stable/modules/feature_selection.html"
+        },
+        {
+          "title": "scikit-learn: Pipelines and composite estimators",
+          "url": "https://scikit-learn.org/stable/modules/compose.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi2-m3.md"
+    },
+    {
+      "id": "d-xi2-m4",
+      "title": "Teks: pembersihan dan representasi",
+      "cpItems": [],
+      "weekCodes": ["D-XI2-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi2-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Feature extraction (teks)",
+          "url": "https://scikit-learn.org/stable/modules/feature_extraction.html"
+        },
+        {
+          "title": "scikit-learn: CountVectorizer",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html"
+        },
+        {
+          "title": "scikit-learn: TfidfVectorizer",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html"
+        },
+        {
+          "title": "Python: re (ekspresi reguler)",
+          "url": "https://docs.python.org/3/library/re.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi2-m4.md"
+    },
+    {
+      "id": "d-xi2-m5",
+      "title": "Klasifikasi teks",
+      "cpItems": [],
+      "weekCodes": ["D-XI2-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi2-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Naive Bayes",
+          "url": "https://scikit-learn.org/stable/modules/naive_bayes.html"
+        },
+        {
+          "title": "scikit-learn: Cross-validation",
+          "url": "https://scikit-learn.org/stable/modules/cross_validation.html"
+        },
+        {
+          "title": "scikit-learn: Pipelines and composite estimators",
+          "url": "https://scikit-learn.org/stable/modules/compose.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi2-m5.md"
+    },
+    {
+      "id": "d-xi2-m6",
+      "title": "Gambar sebagai angka",
+      "cpItems": [],
+      "weekCodes": ["D-XI2-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi2-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "NumPy: numpy.array",
+          "url": "https://numpy.org/doc/stable/reference/generated/numpy.array.html"
+        },
+        {
+          "title": "scikit-learn: Nearest Neighbors",
+          "url": "https://scikit-learn.org/stable/modules/neighbors.html"
+        },
+        {
+          "title": "scikit-learn: confusion_matrix",
+          "url": "https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi2-m6.md"
+    },
+    {
+      "id": "d-xi2-m7",
+      "title": "Gagasan jaringan saraf",
+      "cpItems": [],
+      "weekCodes": ["D-XI2-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["d-xi2-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "scikit-learn: Neural network models (supervised)",
+          "url": "https://scikit-learn.org/stable/modules/neural_networks_supervised.html"
+        },
+        {
+          "title": "Python: math (fungsi matematika)",
+          "url": "https://docs.python.org/3/library/math.html"
+        },
+        {
+          "title": "Elements of AI, MinnaLearn dan University of Helsinki (bacaan tambahan; bukan sumber isi modul)",
+          "url": "https://www.elementsofai.com/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/d-xi2-m7.md"
     }
   ]
 }
