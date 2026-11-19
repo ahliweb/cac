@@ -1,6 +1,6 @@
 # Traceability Matrices
 
-Three views on the 101 requirements in `register.md`, proving the register is exhaustive in
+Three views on the 106 requirements in `register.md`, proving the register is exhaustive in
 both directions (see `README.md`'s "completeness rule"):
 
 1. **Syllabus section → requirements → issues** — proves every numbered section of the source
