@@ -809,6 +809,194 @@
       "prerequisites": ["dw-pro-m13"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-pro-m6.md"
+    },
+    {
+      "id": "dw-pro-m7",
+      "title": "SQL dan akses basis data",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python documentation: sqlite3, DB-API interface for SQLite databases",
+          "url": "https://docs.python.org/3/library/sqlite3.html"
+        },
+        {
+          "title": "SQLite: SQL as understood by SQLite",
+          "url": "https://sqlite.org/lang.html"
+        },
+        {
+          "title": "SQLite: foreign key support",
+          "url": "https://sqlite.org/foreignkeys.html"
+        },
+        {
+          "title": "SQLite: CREATE INDEX",
+          "url": "https://sqlite.org/lang_createindex.html"
+        }
+      ],
+      "moduleCodes": ["DW-PRO-M7"],
+      "skkniUnits": ["J.620100.020.02", "J.620100.021.02", "J.620100.007.01"],
+      "track": "PRO",
+      "prerequisites": ["DW-PRO-M6"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pro-m7.md"
+    },
+    {
+      "id": "dw-pro-m8",
+      "title": "Antarmuka web: HTML, CSS, JavaScript/TypeScript",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "MDN Web Docs: HTML",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+        },
+        {
+          "title": "MDN Web Docs: CSS",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+        },
+        {
+          "title": "MDN Web Docs: Using media queries",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries"
+        },
+        {
+          "title": "MDN Web Docs: JavaScript",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        {
+          "title": "TypeScript documentation",
+          "url": "https://www.typescriptlang.org/docs/"
+        },
+        {
+          "title": "Bun documentation",
+          "url": "https://bun.sh/docs"
+        }
+      ],
+      "moduleCodes": ["DW-PRO-M8"],
+      "skkniUnits": ["J.620100.005.02", "J.620100.006.01"],
+      "track": "PRO",
+      "prerequisites": ["dw-pro-m7"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pro-m8.md"
+    },
+    {
+      "id": "dw-pro-m9",
+      "title": "Layanan web dan API",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python documentation: http.server, HTTP servers (tidak disarankan untuk produksi)",
+          "url": "https://docs.python.org/3/library/http.server.html"
+        },
+        {
+          "title": "Python documentation: urllib.request",
+          "url": "https://docs.python.org/3/library/urllib.request.html"
+        },
+        {
+          "title": "Python documentation: tomllib",
+          "url": "https://docs.python.org/3/library/tomllib.html"
+        },
+        {
+          "title": "MDN Web Docs: HTTP response status codes",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status"
+        }
+      ],
+      "moduleCodes": ["DW-PRO-M9"],
+      "skkniUnits": ["J.620100.027.01", "J.620100.019.02"],
+      "track": "PRO",
+      "prerequisites": ["dw-pro-m8"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pro-m9.md"
+    },
+    {
+      "id": "dw-pro-m10",
+      "title": "Kolaborasi: tinjau kode dan pengujian lanjut",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python documentation: unittest",
+          "url": "https://docs.python.org/3/library/unittest.html"
+        },
+        {
+          "title": "Python documentation: ast, abstract syntax trees",
+          "url": "https://docs.python.org/3/library/ast.html"
+        },
+        {
+          "title": "Python documentation: sqlite3 (parameter ? dan transaksi)",
+          "url": "https://docs.python.org/3/library/sqlite3.html"
+        },
+        {
+          "title": "OWASP Top 10 (proyek)",
+          "url": "https://owasp.org/www-project-top-ten/"
+        }
+      ],
+      "moduleCodes": ["DW-PRO-M10"],
+      "skkniUnits": ["J.620100.032.01", "J.620100.034.02", "J.620100.036.02"],
+      "track": "PRO",
+      "prerequisites": ["dw-pro-m9"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pro-m10.md"
+    },
+    {
+      "id": "dw-pro-m11",
+      "title": "Konfigurasi, pencatatan, dan operasi dasar",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Python HOWTO: Logging",
+          "url": "https://docs.python.org/3/howto/logging.html"
+        },
+        {
+          "title": "The Twelve-Factor App: III. Config",
+          "url": "https://12factor.net/config"
+        },
+        {
+          "title": "Python documentation: sqlite3 (Connection.backup)",
+          "url": "https://docs.python.org/3/library/sqlite3.html"
+        },
+        {
+          "title": "SQLite: PRAGMA statements (user_version)",
+          "url": "https://sqlite.org/pragma.html"
+        }
+      ],
+      "moduleCodes": ["DW-PRO-M11"],
+      "skkniUnits": ["J.620100.042.01", "J.620100.046.01", "J.620100.044.01", "J.620100.047.01"],
+      "track": "PRO",
+      "prerequisites": ["dw-pro-m10"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pro-m11.md"
+    },
+    {
+      "id": "dw-pro-m12",
+      "title": "Proyek akhir dan persiapan portofolio",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Git documentation: gitignore",
+          "url": "https://git-scm.com/docs/gitignore"
+        },
+        {
+          "title": "Python documentation: unittest",
+          "url": "https://docs.python.org/3/library/unittest.html"
+        },
+        {
+          "title": "Python documentation: venv, creation of virtual environments",
+          "url": "https://docs.python.org/3/library/venv.html"
+        },
+        {
+          "title": "OWASP Top 10 (proyek)",
+          "url": "https://owasp.org/www-project-top-ten/"
+        }
+      ],
+      "moduleCodes": ["DW-PRO-M12"],
+      "skkniUnits": ["J.620100.009.01", "J.620100.038.01", "J.620100.039.02", "J.620100.008.01"],
+      "track": "PRO",
+      "prerequisites": ["dw-pro-m11"],
+      "audience": "peserta",
+      "contentPath": "content/dewasa-coding/modules/dw-pro-m12.md"
     }
   ]
 }
