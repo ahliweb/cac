@@ -4040,6 +4040,187 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi2-m14.md"
+    },
+    {
+      "id": "c-xii1-m1",
+      "title": "Merancang kebutuhan sistem",
+      "cpItems": ["F-BK-a", "F-LD-d"],
+      "weekCodes": ["C-XII1-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xi2-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D - F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Wikipedia: Requirements analysis (bacaan pengantar)",
+          "url": "https://en.wikipedia.org/wiki/Requirements_analysis"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii1-m1.md"
+    },
+    {
+      "id": "c-xii1-m2",
+      "title": "Arsitektur dan pemilihan komponen",
+      "cpItems": ["F-BK-a", "F-LD-d"],
+      "weekCodes": ["C-XII1-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii1-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D - F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii1-m2.md"
+    },
+    {
+      "id": "c-xii1-m3",
+      "title": "Motor DC dan pengendali motor (F)",
+      "cpItems": [],
+      "weekCodes": ["C-XII1-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii1-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino-ESP32 (Espressif): LEDC (PWM)",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/ledc.html"
+        },
+        {
+          "title": "Arduino: digitalWrite()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/digital-io/digitalwrite/"
+        },
+        {
+          "title": "Arduino: constrain()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/math/constrain/"
+        },
+        {
+          "title": "Wikipedia: H-bridge (bacaan pengantar)",
+          "url": "https://en.wikipedia.org/wiki/H-bridge"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii1-m3.md"
+    },
+    {
+      "id": "c-xii1-m4",
+      "title": "Sensor garis dan jarak (F)",
+      "cpItems": [],
+      "weekCodes": ["C-XII1-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii1-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: analogRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/"
+        },
+        {
+          "title": "Arduino-ESP32 (Espressif): ADC",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/adc.html"
+        },
+        {
+          "title": "Arduino: pulseIn()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/advanced-io/pulseIn/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii1-m4.md"
+    },
+    {
+      "id": "c-xii1-m5",
+      "title": "Mesin keadaan robot (F)",
+      "cpItems": ["F-AP-b"],
+      "weekCodes": ["C-XII1-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii1-m4", "c-x2-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Arduino: millis()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/time/millis/"
+        },
+        {
+          "title": "Arduino: Blink tanpa delay",
+          "url": "https://docs.arduino.cc/built-in-examples/digital/BlinkWithoutDelay/"
+        },
+        {
+          "title": "C++ Core Guidelines",
+          "url": "https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii1-m5.md"
+    },
+    {
+      "id": "c-xii1-m6",
+      "title": "Pengikut garis: strategi 1 (F)",
+      "cpItems": ["F-AP-a", "F-AP-b"],
+      "weekCodes": ["C-XII1-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii1-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Wikipedia: Bang-bang control (bacaan pengantar)",
+          "url": "https://en.wikipedia.org/wiki/Bang%E2%80%93bang_control"
+        },
+        {
+          "title": "Arduino: analogRead()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/analog-io/analogRead/"
+        },
+        {
+          "title": "Arduino-ESP32 (Espressif): LEDC (PWM)",
+          "url": "https://docs.espressif.com/projects/arduino-esp32/en/latest/api/ledc.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii1-m6.md"
+    },
+    {
+      "id": "c-xii1-m7",
+      "title": "Pengikut garis: strategi 2 (F)",
+      "cpItems": ["F-AP-a", "F-AP-b"],
+      "weekCodes": ["C-XII1-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["c-xii1-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Wikipedia: Proportional control (bacaan pengantar)",
+          "url": "https://en.wikipedia.org/wiki/Proportional_control"
+        },
+        {
+          "title": "Wikipedia: PID controller (bacaan pengantar)",
+          "url": "https://en.wikipedia.org/wiki/PID_controller"
+        },
+        {
+          "title": "Arduino: constrain()",
+          "url": "https://docs.arduino.cc/language-reference/en/functions/math/constrain/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/c-xii1-m7.md"
     }
   ]
 }
