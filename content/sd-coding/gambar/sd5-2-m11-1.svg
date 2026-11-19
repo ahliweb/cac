@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 260" width="560" height="260" role="img" aria-labelledby="t d">
+  <title id="t">Dua set kartu contoh</title>
+  <desc id="d">Set 1: kartu Satu semuanya kecil merah, kartu Dua semuanya besar biru, sehingga warna ikut membedakan. Set 2: kartu Satu kecil merah dan kecil biru, kartu Dua besar merah dan besar biru, sehingga hanya ukuran yang membedakan.</desc>
+  <rect width="560" height="260" fill="#ffffff"/>
+  <rect x="10" y="10" width="265" height="240" rx="8" fill="#f4f8fd" stroke="#2a5d9f" stroke-width="2"/>
+  <rect x="285" y="10" width="265" height="240" rx="8" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+  <g font-family="sans-serif" fill="#222222" text-anchor="middle">
+    <text x="142" y="36" font-size="15" font-weight="bold">Set 1</text>
+    <text x="417" y="36" font-size="15" font-weight="bold">Set 2</text>
+    <text x="75" y="62" font-size="13">Satu</text>
+    <text x="210" y="62" font-size="13">Dua</text>
+    <text x="350" y="62" font-size="13">Satu</text>
+    <text x="485" y="62" font-size="13">Dua</text>
+    <text x="142" y="236" font-size="12">warna ikut membedakan</text>
+    <text x="417" y="236" font-size="12">hanya ukuran yang membedakan</text>
+  </g>
+  <g stroke="#444444" stroke-width="2">
+    <rect x="55" y="80" width="26" height="26" rx="3" fill="#e57373"/>
+    <rect x="55" y="120" width="26" height="26" rx="3" fill="#e57373"/>
+    <rect x="180" y="80" width="56" height="56" rx="4" fill="#64b5f6"/>
+    <rect x="180" y="146" width="56" height="56" rx="4" fill="#64b5f6"/>
+    <rect x="330" y="80" width="26" height="26" rx="3" fill="#e57373"/>
+    <rect x="330" y="120" width="26" height="26" rx="3" fill="#64b5f6"/>
+    <rect x="455" y="80" width="56" height="56" rx="4" fill="#e57373"/>
+    <rect x="455" y="146" width="56" height="56" rx="4" fill="#64b5f6"/>
+  </g>
+</svg>
