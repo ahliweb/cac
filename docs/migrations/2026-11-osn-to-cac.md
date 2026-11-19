@@ -120,6 +120,7 @@ Source of truth tetap **repository yang sama (GitHub repo ID dipertahankan ketik
 
 ## 9. Referensi
 - ADR-0009; docs/requirements/identity-cac.md; docs/migrations/2026-11-cac-impact-matrix.md; docs/roadmap.md.
+- Bukti F1/02 (#153), kontrak CLI dan golden baseline: [2026-11-cac-cli-contract.md](2026-11-cac-cli-contract.md).
 - GitHub, Renaming a repository: https://docs.github.com/en/repositories/creating-and-managing-repositories/renaming-a-repository
 - SemVer 2.0.0: https://semver.org/
 - NIST SP 800-218 SSDF: https://csrc.nist.gov/pubs/sp/800/218/final
