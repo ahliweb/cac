@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" width="480" height="360" role="img" aria-labelledby="t d">
+  <title id="t">Panduan dengan aturan: tindakan, alasan, dan contoh</title>
+  <desc id="d">Satu lembar panduan berjudul Sebelum Membagikan Karya. Di bawahnya dua aturan bernomor, masing-masing dengan tiga baris berlabel tindakan, alasan, dan contoh.</desc>
+  <rect width="480" height="360" fill="#ffffff"/>
+  <rect x="50" y="12" width="380" height="336" fill="#ffffff" stroke="#888888" stroke-width="2"/>
+  <rect x="66" y="26" width="348" height="40" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="240" y="52" font-family="sans-serif" font-size="17" font-weight="bold" fill="#222222" text-anchor="middle">Sebelum Membagikan Karya</text>
+  <g font-family="sans-serif" font-size="13" fill="#222222">
+    <circle cx="86" cy="96" r="12" fill="#2a5d9f"/>
+    <text x="86" y="101" fill="#ffffff" font-weight="bold" text-anchor="middle">1</text>
+    <text x="108" y="94"><tspan font-weight="bold">Tindakan:</tspan> tulis dengan kata sopan.</text>
+    <text x="108" y="114"><tspan font-weight="bold">Alasan:</tspan> kata kasar menyakiti pembaca.</text>
+    <text x="108" y="134"><tspan font-weight="bold">Contoh:</tspan> "Ayo rapikan bersama".</text>
+    <rect x="66" y="150" width="348" height="1" fill="#cccccc"/>
+    <circle cx="86" cy="186" r="12" fill="#2a5d9f"/>
+    <text x="86" y="191" fill="#ffffff" font-weight="bold" text-anchor="middle">2</text>
+    <text x="108" y="184"><tspan font-weight="bold">Tindakan:</tspan> hapus nama lengkap dan alamat.</text>
+    <text x="108" y="204"><tspan font-weight="bold">Alasan:</tspan> orang asing bisa tahu tempat tinggal.</text>
+    <text x="108" y="224"><tspan font-weight="bold">Contoh:</tspan> tulis "kelas kami".</text>
+  </g>
+  <rect x="66" y="244" width="348" height="92" fill="#f7fbf4" stroke="#888888" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="240" y="296" font-family="sans-serif" font-size="13" fill="#555555" text-anchor="middle">tempat gambar pendukung</text>
+</svg>

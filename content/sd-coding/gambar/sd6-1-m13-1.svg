@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 340" width="520" height="340" role="img" aria-labelledby="t d">
+  <title id="t">Lembar buletin dengan judul, teks, gambar, dan kotak langkah bernomor</title>
+  <desc id="d">Lembar buletin Merawat Tanaman Kelas. Kotak judul di atas, dua garis teks, satu gambar tanaman dalam pot di kiri, dan kotak Langkah di kanan dengan tiga langkah bernomor: cek tanah, siram pelan-pelan, tunggu air meresap.</desc>
+  <rect width="520" height="340" fill="#ffffff"/>
+  <rect x="20" y="12" width="480" height="316" fill="#ffffff" stroke="#888888" stroke-width="2"/>
+  <rect x="36" y="24" width="448" height="42" fill="#e8f1fb" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="260" y="52" font-family="sans-serif" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">Merawat Tanaman Kelas</text>
+  <g font-family="sans-serif" font-size="13" fill="#222222">
+    <text x="40" y="92">Tanaman butuh air.</text>
+    <text x="40" y="112">Kami merawatnya bergiliran.</text>
+  </g>
+  <rect x="36" y="128" width="200" height="184" fill="#f7fbf4" stroke="#888888" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <polygon points="106,260 166,260 159,300 113,300" fill="#c97b3a" stroke="#7a4616" stroke-width="2"/>
+  <path d="M136,260 L136,200" stroke="#2e7d32" stroke-width="4" fill="none"/>
+  <path d="M136,225 C111,222 103,205 105,192 C123,196 135,208 136,225 Z" fill="#7cb342" stroke="#2e7d32" stroke-width="2"/>
+  <path d="M136,210 C161,207 171,190 167,178 C149,182 137,194 136,210 Z" fill="#7cb342" stroke="#2e7d32" stroke-width="2"/>
+  <rect x="256" y="128" width="228" height="184" rx="8" fill="#fdf1e0" stroke="#b86a00" stroke-width="2"/>
+  <text x="370" y="154" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Langkah merawat</text>
+  <g font-family="sans-serif" font-size="13" fill="#222222">
+    <circle cx="280" cy="188" r="11" fill="#2a5d9f"/>
+    <text x="280" y="193" fill="#ffffff" font-weight="bold" text-anchor="middle">1</text>
+    <text x="302" y="193">Cek tanah.</text>
+    <circle cx="280" cy="232" r="11" fill="#2a5d9f"/>
+    <text x="280" y="237" fill="#ffffff" font-weight="bold" text-anchor="middle">2</text>
+    <text x="302" y="237">Siram pelan-pelan.</text>
+    <circle cx="280" cy="276" r="11" fill="#2a5d9f"/>
+    <text x="280" y="281" fill="#ffffff" font-weight="bold" text-anchor="middle">3</text>
+    <text x="302" y="281">Tunggu air meresap.</text>
+  </g>
+</svg>
