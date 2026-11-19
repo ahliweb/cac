@@ -1,0 +1,150 @@
+{
+  "modules": [
+    {
+      "id": "smp7-1-m1",
+      "title": "Apa itu komputasi: instruksi sehari-hari dan ketepatan",
+      "weekCodes": ["SMP7-1-M1"],
+      "cpCodes": ["D-BK-a"],
+      "gradeLevels": ["7"],
+      "prerequisites": [],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-1-m1.md"
+    },
+    {
+      "id": "smp7-1-m2",
+      "title": "Algoritma: urutan langkah, urutan yang salah",
+      "weekCodes": ["SMP7-1-M2"],
+      "cpCodes": ["D-BK-a", "D-BK-e"],
+      "gradeLevels": ["7"],
+      "prerequisites": ["smp7-1-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-1-m2.md"
+    },
+    {
+      "id": "smp7-1-m3",
+      "title": "Mengenal Scratch: panggung, sprite, blok gerak",
+      "weekCodes": ["SMP7-1-M3"],
+      "cpCodes": ["D-BK-e", "DK-BK-c"],
+      "gradeLevels": ["7"],
+      "prerequisites": ["smp7-1-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-1-m3.md"
+    },
+    {
+      "id": "smp7-1-m4",
+      "title": "Peristiwa dan urutan: menggambar bentuk",
+      "weekCodes": ["SMP7-1-M4"],
+      "cpCodes": ["D-BK-e", "DK-BK-c"],
+      "gradeLevels": ["7"],
+      "prerequisites": ["smp7-1-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-1-m4.md"
+    },
+    {
+      "id": "smp7-1-m5",
+      "title": "Perulangan",
+      "weekCodes": ["SMP7-1-M5"],
+      "cpCodes": ["D-BK-e", "DK-BK-c", "D-BK-a"],
+      "gradeLevels": ["7"],
+      "prerequisites": ["smp7-1-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-1-m5.md"
+    },
+    {
+      "id": "smp7-1-m6",
+      "title": "Dekomposisi: memecah masalah, animasi cerita",
+      "weekCodes": ["SMP7-1-M6"],
+      "cpCodes": ["D-BK-a", "D-BK-e", "DK-BK-c"],
+      "gradeLevels": ["7"],
+      "prerequisites": ["smp7-1-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-1-m6.md"
+    },
+    {
+      "id": "smp7-1-m7",
+      "title": "Pola dan generalisasi",
+      "weekCodes": ["SMP7-1-M7"],
+      "cpCodes": ["D-BK-a"],
+      "gradeLevels": ["7"],
+      "prerequisites": ["smp7-1-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        },
+        {
+          "title": "Tentang Scratch (situs resmi Scratch Foundation)",
+          "url": "https://scratch.mit.edu/about"
+        }
+      ],
+      "contentPath": "content/smp-coding/modules/smp7-1-m7.md"
+    }
+  ]
+}
