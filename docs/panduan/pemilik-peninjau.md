@@ -173,7 +173,7 @@ Anda setujui, dikodekan ke `data/<id>/`, dan terdaftar di
 2026-11-18; v1.1, v1.2, v1.3, dan v1.4 pada 2026-11-19; v1.4.1 revisi patch dasar hukum atas instruksi Anda, #238), `tk-coding` v1.0.3 (revisi patch jembatan ke SD, #177; tujuan 4 tanpa belok kanan, #239),
 `sd-coding` v1.1.0, `smp-coding` v1.2.0 (revisi minor jembatan dari SD dan ke SMA, #177), `kuliah-coding` v1.2.0, dan
 `dewasa-coding` v1.2.0 (revisi patch kalimat status, #165; revisi patch status verifikasi sumber SK 046 dan SKKNI 282/2016; revisi minor jembatan kuliah-coding ke jalur `PRO`, #177). Revisi v1.1/v1.3 memuat butir dan kebijakan AI sesuai
-keputusan Anda pada issue [#139](https://github.com/ahliweb/osn/issues/139)
+keputusan Anda pada issue [#139](https://github.com/ahliweb/cac/issues/139)
 (kebijakan disusun per program). Peta statusnya ada di
 [`docs/programs/README.md`](../programs/README.md).
 
@@ -182,7 +182,7 @@ berstatus draf, lalu persetujuan Anda yang dicatat dengan tanggal. Contoh
 yang sudah selesai: blok fondasi kelas X, usulannya
 ([`usulan-fondasi-kelas-x.md`](../programs/sma-coding/usulan-fondasi-kelas-x.md))
 diputuskan 2026-11-18 dan diterapkan di silabus v1.1 yang Anda setujui
-2026-11-19 ([#92](https://github.com/ahliweb/osn/issues/92)).
+2026-11-19 ([#92](https://github.com/ahliweb/cac/issues/92)).
 
 ## Perubahan konten kurikulum (transkripsi)
 
@@ -229,7 +229,7 @@ Daftar issue terbuka, yang paling mudah dibaca sebagai antrean keputusan dan
 pekerjaan:
 
 ```sh
-gh issue list -R ahliweb/osn --state open
+gh issue list -R ahliweb/cac --state open
 ```
 
 Keluaran nyata perintah itu pada 2026-11-19, setelah semua modul masuk

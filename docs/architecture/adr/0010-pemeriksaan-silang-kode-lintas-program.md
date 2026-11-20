@@ -4,7 +4,7 @@
 
 Accepted — 2026-11-19. Keputusan pemilik (dialog pilihan, 2026-11-19), pertanyaan
 K7 opsi 1 pada `docs/programs/rancangan-jembatan-antarprogram.md`, issue
-[#177](https://github.com/ahliweb/osn/issues/177). Melengkapi
+[#177](https://github.com/ahliweb/cac/issues/177). Melengkapi
 [ADR-0008](0008-skema-khusus-per-program.md) dan memakai preseden pengecualiannya;
 tidak menggantikannya.
 

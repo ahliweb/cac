@@ -209,7 +209,7 @@ just coexist:
    git push origin vX.Y.Z
    ```
 
-7. Add a `[vX.Y.Z]: https://github.com/ahliweb/osn/compare/vPREV...vX.Y.Z`
+7. Add a `[vX.Y.Z]: https://github.com/ahliweb/cac/compare/vPREV...vX.Y.Z`
    link-reference entry at the bottom of `CHANGELOG.md` (this is not done
    automatically by `changeset version`) and repoint `[unreleased]` to
    compare from the new tag forward. Commit this as a follow-up if it was

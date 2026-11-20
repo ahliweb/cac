@@ -1,6 +1,6 @@
 # Security policy and ISO/IEC control mapping
 
-Status: internal control document. Issue [#24](https://github.com/ahliweb/osn/issues/24).
+Status: internal control document. Issue [#24](https://github.com/ahliweb/cac/issues/24).
 
 **This repository is not certified to any ISO/IEC standard named below, and
 nothing in this document is a claim of compliance or certification.** §11
@@ -173,7 +173,7 @@ not a restatement of the adjective. Each statement is labelled:
 
 - **[This repository]** This repository's own "backup" is git itself:
   every commit is preserved in a distributed version-control history,
-  mirrored on GitHub (`ahliweb/osn`) and in every contributor's local
+  mirrored on GitHub (`ahliweb/cac`) and in every contributor's local
   clone. There is no database or generated artefact in this repository
   that is not reproducible from source-controlled files (`dist/` is a
   build output of `bun run build`, not a store of anything unique).
@@ -312,7 +312,7 @@ governance, end to end:
 
 1. **Issue** — work starts from a GitHub issue with acceptance criteria
    (`AGENTS.md`, "Atomic-issue workflow", step 1; this document itself
-   implements issue [#24](https://github.com/ahliweb/osn/issues/24)).
+   implements issue [#24](https://github.com/ahliweb/cac/issues/24)).
 2. **Branch** — a branch named `<type>/<short-slug>` per
    `CONTRIBUTING.md`, "Branch naming" (`feat/`, `fix/`, `docs/`,
    `chore/`).

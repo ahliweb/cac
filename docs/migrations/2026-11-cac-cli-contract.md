@@ -4,6 +4,7 @@
 - Version: v1.0.0
 - Last updated: 2026-11-19
 - Status: **Riset dan usulan (DRAF); belum ada keputusan pemilik, belum ada perubahan kode.** Butir bertanda **[KEPUTUSAN PEMILIK]** belum diputuskan.
+- Catatan status 2026-11-20 (pascarename, #274): rename in-place `ahliweb/osn` menjadi `ahliweb/cac` selesai 2026-11-20 (ID repo sama); kalimat "rename belum dilakukan" di dokumen ini adalah keadaan sebelum rename. Bukti: [migration log](2026-11-cac-migration-log.md).
 - Issue: [#153](https://github.com/ahliweb/osn/issues/153) (bagian epik [#150](https://github.com/ahliweb/osn/issues/150)); mengisi IMP-02 dan IMP-03 pada [matriks dampak](2026-11-cac-impact-matrix.md) dan IDENTITY-CAC-002..005 pada [kontrak kebutuhan](../requirements/identity-cac.md).
 - Changeset: Memetakan permukaan CLI saat ini, golden baseline, matriks legacy vs target, dan mengusulkan strategi alias, SemVer, serta uji kontrak F2. Tidak mengubah kode, paket, atau data.
 - Basis: commit `3eb5d89` (main), `package.json` versi 2.5.0, Bun 1.4.4.

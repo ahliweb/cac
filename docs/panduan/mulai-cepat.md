@@ -23,7 +23,7 @@ g++ (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0
 ## 1. Ambil repositori dan pasang dependensi
 
 ```sh
-git clone https://github.com/ahliweb/osn.git
+git clone https://github.com/ahliweb/cac.git
 cd osn
 bun install --frozen-lockfile
 ```

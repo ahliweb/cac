@@ -1,7 +1,7 @@
 # Operational runbook
 
 Status: internal operating procedure. Issue
-[#25](https://github.com/ahliweb/osn/issues/25). Describes how a mentor
+[#25](https://github.com/ahliweb/cac/issues/25). Describes how a mentor
 team actually runs a cohort against the tooling this repository provides
 -- it does not introduce any new rule of its own; every step below points
 back to the syllabus section and the `osn` command that implements it.

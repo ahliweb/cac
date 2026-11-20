@@ -1,6 +1,6 @@
 # Incident response procedure
 
-Status: internal control document. Issue [#24](https://github.com/ahliweb/osn/issues/24).
+Status: internal control document. Issue [#24](https://github.com/ahliweb/cac/issues/24).
 Implements the "incident procedure" control of §13
 (`docs/silabus/13-tata-kelola.md`, "Privacy & Security" row) and is the
 detailed procedure `docs/governance/security.md` ("6. Incident

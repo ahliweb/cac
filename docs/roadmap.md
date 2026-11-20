@@ -1,11 +1,11 @@
 # Roadmap: Identitas Curriculum as Code (CaC) dan Rename Repository
 
 ## Metadata
-- Version: v1.1.0
+- Version: v1.2.0
 - Last updated: 2026-11-20
-- Changeset: Menambahkan roadmap migrasi identitas dari ahliweb/osn menuju ahliweb/cac; memperbarui status F1 (dokumen lengkap dengan #157) dan Gate 9 PASSED (kesiapan F2), serta langkah berikutnya.
+- Changeset: Status pascarename: F1-F3 selesai, F4 berjalan (#274, #273, epik #150). Sebelumnya: menambahkan roadmap migrasi identitas dari ahliweb/osn menuju ahliweb/cac; memperbarui status F1 (dokumen lengkap dengan #157) dan Gate 9 PASSED (kesiapan F2), serta langkah berikutnya.
 - Decision: ADR-0009
-- Status: dokumen F1 lengkap dengan #157; **Gate 9 PASSED** (2026-11-20, kesiapan implementasi F2 saja); F2 dapat dimulai. Repository **belum** diganti nama; Gate 15 belum lulus dan izin eksekusi rename belum diberikan.
+- Status: F1 dan F2 selesai (v2.6.0); **Gate 15 lulus** dan **rename in-place `ahliweb/osn` menjadi `ahliweb/cac` selesai 2026-11-20** (F3 selesai); F4 (pascamigrasi) berjalan, pemantauan 24 jam dan 7 hari menunggu.
 
 ## Visi
 Satu repository primer untuk paradigma Curriculum as Code, yang mengelola banyak program pendidikan terstruktur, tervalidasi, versioned, dengan ID OSN dipertahankan sebagai program. Produk dikenal sebagai AhliKoding Curriculum; URL target pendek ahliweb/cac.
@@ -16,10 +16,10 @@ Roadmap **bukan janji tanggal**. Status fase: rencana, berjalan, selesai, ditund
 ## Fase
 | Fase | Milestone tujuan | Tujuan | Kriteria keluar | Status | Referensi |
 | --- | --- | --- | --- | --- | --- |
-| F1 | F1 Kesiapan dan identitas CaC | ADR, baseline, requirements, impact inventory, rencana kompatibilitas, rollback dan cross-spec | ADR di-review; seluruh risiko & consumer tinggi punya owner; DoR Gate 9 punya evidence | dokumen lengkap (menunggu PR #156 dan #157 digabung); Gate 9 PASSED | ADR-0009; docs/migrations/2026-11-osn-to-cac.md |
-| F2 | F2 Implementasi kompatibilitas | Menambah cac CLI dan alias osn, metadata platform, docs, tests & CI tanpa perubahan data | Semua tests dan CI hijau pada main, dokumen & changeset aktual | dibuka oleh Gate 9; belum diimplementasi | IDENTITY-CAC-002..006, 008..009 |
-| F3 | F3 Readiness dan rename | Audit final, latihan rollback, Gate 15, rename in-place | Bukti Go/No-Go, nama repo baru, repo ID sama, issue/PR/tags/branch terpelihara | rencana | IDENTITY-CAC-001, 007, 010 |
-| F4 | F4 Pascamigrasi | Validasi konsumen, updates URL, pemantauan dan closeout | Tidak ada consumer kritis putus, penerimaan fungsi dan audit sign-off | rencana | IDENTITY-CAC-008..010 |
+| F1 | F1 Kesiapan dan identitas CaC | ADR, baseline, requirements, impact inventory, rencana kompatibilitas, rollback dan cross-spec | ADR di-review; seluruh risiko & consumer tinggi punya owner; DoR Gate 9 punya evidence | selesai | ADR-0009; docs/migrations/2026-11-osn-to-cac.md |
+| F2 | F2 Implementasi kompatibilitas | Menambah cac CLI dan alias osn, metadata platform, docs, tests & CI tanpa perubahan data | Semua tests dan CI hijau pada main, dokumen & changeset aktual | selesai (v2.6.0) | IDENTITY-CAC-002..006, 008..009 |
+| F3 | F3 Readiness dan rename | Audit final, latihan rollback, Gate 15, rename in-place | Bukti Go/No-Go, nama repo baru, repo ID sama, issue/PR/tags/branch terpelihara | selesai 2026-11-20 (Gate 15 lulus; rename in-place, ID sama) | IDENTITY-CAC-001, 007, 010 |
+| F4 | F4 Pascamigrasi | Validasi konsumen, updates URL, pemantauan dan closeout | Tidak ada consumer kritis putus, penerimaan fungsi dan audit sign-off | berjalan (pemantauan 24 jam dan 7 hari menunggu) | IDENTITY-CAC-008..010 |
 
 Milestone GitHub (objek native) dibuat/ditautkan setelah scope dan rights diperiksa; tabel ini **belum mengklaim milestone native sudah dibuat**.
 
@@ -52,17 +52,20 @@ flowchart LR
 Rencana F2–F4 adalah **planned work**; bukan klaim implementasi atau kelulusan gerbang. Tiap issue baru harus memuat sembilan seksi standar, tepat satu label jenis/prioritas/ukuran serta dependensi, dan dapat diuji mandiri.
 
 ## Langkah berikutnya
-1. Gabungkan PR dokumen F1 (#156 dan #157) ke `main`.
-2. Buat dan kerjakan issue F2/01..06 sebagai PR atomik (Gate 9 PASSED, 2026-11-20); paket keputusan K1-K7 mengikuti keputusan pemilik di [tinjauan Gate 9](migrations/2026-11-cac-gate9-review.md).
-3. Persiapan F3 oleh pemilik: jawab U-01..U-07, uji ruleset `main` di repo uji lalu aktifkan, jalankan rehearsal H-01..H-07 di repo uji. Urutan beku dan tinjauan kesiapan Gate 15 ada di [runbook](migrations/2026-11-osn-to-cac.md) bagian 4 dan 9; templat bukti: [migration log](migrations/2026-11-cac-migration-log-template.md).
-4. Rename tetap menunggu Gate 15 dan izin eksekusi terpisah dari pemilik.
+1. Pemantauan pascarename: 1 jam (orchestrator), 24 jam (2026-11-21), 7 hari (2026-11-27) pada [migration log](migrations/2026-11-cac-migration-log.md) bagian 10.
+2. CI pertama di `ahliweb/cac` (PR F4) dan penutupan epik #150 setelah pemantauan lulus.
+3. Pemilik memperbarui berkas inventaris di repositori dokumentasi internal miliknya; klon lokal memakai `git remote set-url origin https://github.com/ahliweb/cac.git`.
+4. Dilarang membuat repo baru bernama `osn` di akun selama masa alias.
 
 ## Ditunda dan dibatalkan
-- Tidak ada implementasi CLI, rename GitHub, deployment atau pengubahan kurikulum yang dilakukan pada fase dokumentasi ini.
+- Rename GitHub dilaksanakan 2026-11-20 setelah Gate 15 (lihat Status); deployment dan pengubahan kurikulum tidak termasuk fase ini.
 - Nama panjang ahliweb/curriculum-as-code tidak dipilih sebagai URL GitHub; tetap menjadi nama konsep Curriculum as Code, tidak perlu membuat repository terpisah.
 - Penghapusan alias osn ditunda tanpa tanggal sampai consumer terverifikasi dan ada keputusan kompatibilitas/MAJOR.
 
 ## Changelog
+### 2026-11-20 - v1.2.0
+- Status pascarename: Gate 15 lulus, rename in-place selesai 2026-11-20, F1-F3 selesai, F4 berjalan (#274, #273, epik #150).
+
 ### 2026-11-20 - v1.1.0
 - Status F1 (dokumen lengkap dengan #157) dan Gate 9 PASSED (kesiapan F2 saja); bagian langkah berikutnya. Rename belum dilakukan.
 

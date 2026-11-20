@@ -1,6 +1,6 @@
 # Privacy policy
 
-Status: internal control document. Issue [#23](https://github.com/ahliweb/osn/issues/23).
+Status: internal control document. Issue [#23](https://github.com/ahliweb/cac/issues/23).
 
 **This is not a legal opinion, and it does not substitute for one.** It
 states, as concretely as this repository can, what a downstream platform
@@ -384,7 +384,7 @@ board, and administrator roles, since those roles' compromise exposes
 `internal`/`personal` data belonging to more than one learner at once).
 The full technical control detail (secure authentication design, backup,
 incident procedure) belongs to the security policy, issue
-[#24](https://github.com/ahliweb/osn/issues/24)
+[#24](https://github.com/ahliweb/cac/issues/24)
 (`docs/governance/security.md`) — this section states
 the requirement so this document's coverage of the §10 callout is
 complete, without duplicating that document's detail.

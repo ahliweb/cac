@@ -11,12 +11,14 @@ product is **AhliKoding Curriculum**, the canonical CLI is `cac`, and the
 private package is `curriculum-as-code`. `osn` remains as an identical
 compatible CLI alias (it is removed only in a MAJOR release, at the earliest
 six months after the announcement and with no active consumer). The
-programme id `osn` and `data/osn/` are unchanged. The repository is still
-`ahliweb/osn` until the rename, so URLs here stay `ahliweb/osn`.
+programme id `osn` and `data/osn/` are unchanged. The repository was renamed
+in place on 2026-11-20 (same repository ID): URLs here are `ahliweb/cac`,
+`ahliweb/osn` only redirects, and nobody may create a new repository named
+`osn` in the account (it would break the redirect; migration runbook).
 
 This file must stay accurate to the *current* state of the repository, not
 aspiration. It is re-verified against the final implementation at the end
-of the programme ([issue #26](https://github.com/ahliweb/osn/issues/26)).
+of the programme ([issue #26](https://github.com/ahliweb/cac/issues/26)).
 Tables, not prose — drift should be visible at a glance.
 
 ## Repository layout
