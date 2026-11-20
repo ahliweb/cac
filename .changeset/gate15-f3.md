@@ -1,0 +1,5 @@
+---
+"curriculum-as-code": patch
+---
+
+Dokumentasi migrasi `osn` ke `cac` setelah F2 selesai (v2.6.0) dan rehearsal dijalankan (#272, #273, epik #150). Runbook v1.2.0 mencatat keputusan pemilik 2026-11-20 (risiko consumer U-01..U-07 diterima tertulis; agent boleh membuat repo uji, mengaktifkan ruleset `main`, dan menjalankan rename atas izin bertanggal; Gate 15 lulus lalu agent rename), status kesiapan Gate 15 per butir G-01..G-14 (G-03, G-07, G-08, G-09 lulus, G-14 diberikan, sisanya dijalankan saat freeze dan preflight), dan hasil rehearsal H-01..H-07. Dokumen keamanan dan recovery v1.1.0 mengoreksi H-02 (Actions mengikuti redirect, kegagalan hanya bila nama lama diambil repo lain) dan menegaskan larangan nama lama serta verifikasi SHA `main` dan ID repo. Inventaris consumer v1.1.0 mencatat risiko diterima tertulis. Berkas baru `docs/migrations/2026-11-cac-migration-log.md` (MIGRASI-001) dibuat dari templat. Rename belum dilakukan; tidak ada perubahan kode, paket, CLI, data, atau setelan GitHub.

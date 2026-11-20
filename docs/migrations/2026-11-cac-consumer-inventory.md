@@ -1,11 +1,11 @@
 # Inventaris Consumer dan Integrasi Repo OSN (Persiapan Migrasi ke CaC)
 
 ## Metadata
-- Version: v1.0.0
-- Last updated: 2026-11-19
+- Version: v1.1.0
+- Last updated: 2026-11-20
 - Status: **Audit selesai untuk bagian yang dapat diperiksa dari repo dan GitHub (read-only); butir unknown menunggu jawaban pemilik. Rename belum dilakukan.**
 - Issue: #152 (bagian epik #150); memenuhi IDENTITY-CAC-008 dan mendukung IMP-01, IMP-05, IMP-08, IMP-10
-- Changeset: Menambahkan inventaris consumer, integrasi, dan URL aktif repo `ahliweb/osn` beserta mitigasi dan butir unknown untuk pemilik.
+- Changeset: Mencatat keputusan pemilik 2026-11-20 atas butir unknown U-01..U-07: risiko diterima tertulis, beserta mitigasi (issues #272, #273, epik #150). Isi audit tidak diubah. Sebelumnya (v1.0.0): menambahkan inventaris consumer, integrasi, dan URL aktif repo `ahliweb/osn` beserta mitigasi dan butir unknown untuk pemilik.
 - Konteks: [ADR-0009](../architecture/adr/0009-cac-platform-identity.md), [rencana migrasi](2026-11-osn-to-cac.md), [matriks dampak](2026-11-cac-impact-matrix.md), [IDENTITY-CAC](../requirements/identity-cac.md)
 - Snapshot audit: cabang `main` pada commit `3eb5d89`, repo `ahliweb/osn` (publik, ID repo numerik `1357521130`), diperiksa 2026-11-19.
 
@@ -124,6 +124,8 @@ Catatan: `gh repo view` menunjukkan `hasWikiEnabled=true` dan `hasProjectsEnable
 Mitigasi non-High yang disarankan: C-04 dan C-05 (tautan lama dibiarkan sebagai sitasi historis, uji sampel tautan setelah rename); C-06 (catat SHA tag sebelum rename); C-12 (perbarui inventaris portofolio setelah rename).
 
 ## 6. Butir unknown yang perlu jawaban pemilik
+**Keputusan 2026-11-20 (dialog pilihan baku):** U-01..U-07 **tidak dijawab satu per satu**. Pemilik memilih opsi **"Terima risiko tertulis"**: risiko consumer tak dikenal diterima. Mitigasi: redirect GitHub (terbukti di rehearsal H-01, H-03), alias `osn` (v2.6.0), pengumuman ke kontributor, dan pemantauan pada 1 jam, 24 jam, dan 7 hari setelah rename. Dampak: G-03 lulus dan R-12 ditutup ([keamanan dan recovery](2026-11-cac-security-recovery.md)); V-14 merujuk keputusan ini. Butir tetap berstatus *unknown* dalam arti faktual (tidak ada bukti); bila jawaban masuk kemudian, dicatat sebagai tambahan. Catatan hasil rehearsal: redirect berhenti bila nama lama diambil repo lain (H-06), sehingga larangan membuat repo `osn` dan `cac` menjadi mitigasi inti.
+
 | ID | Pertanyaan | Mengapa tidak dapat dicek | Dampak bila tidak dijawab |
 | --- | --- | --- | --- |
 | U-01 | Siapa saja kontributor/mesin yang memiliki klon `ahliweb/osn` dan memakainya sebagai `origin`? Adakah pengguna eksternal yang mengunduh/menjalankan CLI `osn` dari repo ini? | Clone lokal orang lain tidak terlihat dari GitHub; lalu lintas clone tidak diatribusikan | High: C-03; menentukan siapa yang harus diberi tahu |
@@ -140,4 +142,5 @@ Mitigasi non-High yang disarankan: C-04 dan C-05 (tautan lama dibiarkan sebagai 
 - Tidak ada perubahan setelan GitHub, rename, issue, PR, atau komentar yang dilakukan oleh audit ini.
 
 ## Changelog
+- v1.1.0 (2026-11-20): Mencatat keputusan pemilik atas U-01..U-07 (opsi "Terima risiko tertulis", mitigasi, R-12 ditutup); isi audit tidak berubah (issues #272, #273).
 - v1.0.0 (2026-11-19): Dokumen pertama: metode audit, 14 consumer observed, 16 butir not in use, 7 butir unknown, mitigasi untuk setiap risiko High (issue #152).
