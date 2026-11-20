@@ -235,7 +235,7 @@ Susun delapan baris berikut (sudah diacak) menjadi program yang mencetak banyak 
 
 ## Ulang berjarak
 
-Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `a-xi1-m10` (pertanyaan 1), sekitar tiga minggu lagi di `a-xi1-m12` (pertanyaan 2), dan sekitar delapan minggu lagi di `a-xi2-m3` (pertanyaan 3). Jawab sekarang lalu simpan.
+Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `a-xi1-m10` (pertanyaan 1), sekitar tiga minggu lagi di `a-xi1-m12` (pertanyaan 2), dan sekitar delapan minggu lagi di `a-xi2-m3` (pertanyaan 2). Jawab sekarang lalu simpan.
 
 1. Apa yang terjadi bila `m["x"]` dibaca padahal kunci `"x"` belum ada di `map`?
 2. Apa beda `set` dan `map`, dan kapan memilih masing-masing?
