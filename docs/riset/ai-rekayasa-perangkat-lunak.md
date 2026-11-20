@@ -1,9 +1,11 @@
 # Riset AI dalam Rekayasa Perangkat Lunak: Vibe Coding, AI-native Engineer, dan Pengembangan Berkelanjutan
 
-- **Version:** v0.2.1
-- **Last updated:** 2026-11-19
+- **Version:** v0.3.0
+- **Last updated:** 2026-11-20
 - **Status:** **DRAF** (riset; dokumen ini sendiri belum disetujui sebagai silabus atau korpus). Issue #139. Keputusan pemilik atas usulan U-01..U-17 dan pertanyaan Q1-Q7 dicatat pada 2026-11-19 (bagian 7.1 dan 8.1), dan usulannya sudah diterapkan di dokumen program masing-masing. Konten karangan menurut [ADR-0007](../architecture/adr/0007-authored-learning-content.md).
+- **Tinjauan berikutnya:** Mei 2027 (enam bulan, keputusan #139, Q7); dicatat di dokumen, tanpa issue terbuka (instruksi pemilik 2026-11-20).
 - **Changelog:**
+  - v0.3.0 (2026-11-20): tinjauan berkala pertama (issue #151), **dipercepat dari jadwal Mei 2027 atas instruksi pemilik 2026-11-20** (syarat alasan waktu atau pemantauan pada issue dihapus; tinjauan dikerjakan sekarang). Semua 54 rujukan dicek ulang (bagian 9.7); empat preprint kini terbit (Hassan dkk. 2024 dan 2025 di TOSEM 2026, Shukla dkk. di ISTAS 2025, Liu dkk. di NeurIPS 2023) dan dua preprint ber-catatan venue terkonfirmasi lewat halaman penyelenggara (Sandoval dkk., Spracklen dkk.) serta satu lewat halaman PPIG (Sarkar dan Drosos); tidak ada tautan mati. Temuan baru 2026 ditambahkan (pembaruan METR Februari 2026, RCT CS1 di TUM, studi pasangan Copilot, meta-analisis produktivitas dan belajar, studi AIware 2025), bagian 4.1, 4.5, 4.6, dan 9. Usulan baru U-18 untuk keputusan pemilik (bagian 7.2); tidak ada program, silabus, atau korpus yang diubah. Rekap bagian 9.6 dihitung ulang (59 rujukan).
   - v0.2.1 (2026-11-19): catatan status di bawah tabel bagian 6 (sinkron dokumen #124): baris SMA jalur A, B, C dan jalur D di tabel itu ditulis sebelum keputusan #139 diterapkan; isi riset, bukti, dan daftar pustaka tidak diubah.
   - v0.2.0 (2026-11-19): status penerapan tiap usulan U-01..U-17 (bagian 7.1) dan keputusan pemilik atas Q1-Q7 (bagian 8.1) dicatat sesuai keputusan pemilik pada issue #139; koreksi U-03 (minggu `A-XII2-M5..M8`, bukan minggu 6-8). Isi riset (bukti, kutipan, daftar pustaka) tidak diubah.
   - v0.1.0 (2026-11-19): draf awal. Metode dan skala bukti; istilah dan asal-usulnya (vibe coding, AI-native engineer, agentic coding, AI pair programming); bukti empiris produktivitas, mutu, keamanan, pemeliharaan, dan belajar pemula; praktik rekayasa perangkat lunak berkelanjutan dengan AI (termasuk energi dan tata kelola); kompetensi per jenjang; usulan pembaruan per program; pertanyaan terbuka; daftar pustaka dengan status verifikasi.
@@ -91,7 +93,7 @@ kita**: bagian "batas" tiap temuan menjelaskan jaraknya.
 
 ### 1.4 Verifikasi rujukan
 
-Setiap rujukan diperiksa pada **2026-11-19** sebelum dicantumkan. Jalur
+Setiap rujukan diperiksa pada **2026-11-19** sebelum dicantumkan dan **diperiksa ulang pada 2026-11-20** (bagian 9.7). Jalur
 verifikasi yang benar-benar dipakai:
 
 | Jalur | Dipakai untuk |
@@ -100,6 +102,7 @@ verifikasi yang benar-benar dipakai:
 | OpenAlex (`api.openalex.org/works/doi:<DOI>`) | Abstrak rujukan ber-DOI yang tidak memuat abstrak di Crossref. |
 | API arXiv (`export.arxiv.org/api/query`) | Rujukan preprint: judul, penulis, tanggal terbit dan revisi, abstrak, dan kolom komentar atau jurnal bila ada. |
 | Halaman web dibuka langsung | Standar, kerangka, laporan lembaga, survei, blog, berita. Isi dibaca lewat perangkat pembaca halaman; kutipan singkat disalin sebagaimana dikembalikan perangkat. |
+| `curl` ke setiap URL rujukan (tinjauan 2026-11-20) | Status HTTP akhir setelah mengikuti pengalihan; untuk DOI penerbit yang menjawab 403 ke klien otomatis, keberadaan DOI dipastikan lewat Crossref. |
 | Berkas PDF disimpan perangkat pembaca halaman ke direktori hasil alat, lalu dibaca (baca saja) dengan `pdftotext` | Laporan Kantor Hak Cipta AS Bagian 2 (halaman ringkas tidak memuat kesimpulan). |
 
 **Keterbatasan yang harus diketahui pembaca:** teks lengkap artikel **tidak**
@@ -126,11 +129,11 @@ Jumlah rujukan per status ada di bagian 9.6.
 | --- | --- | --- | --- |
 | Istilah "vibe coding" | `[E]` (asal istilah dari postingan; sumber primer tidak terbuka) | Dicetuskan Andrej Karpathy pada 2 Februari 2025 untuk gaya yang "melupakan bahwa kodenya ada"; kini dipakai longgar dan oleh Collins didefinisikan jauh lebih luas. | 3.1 |
 | "AI-native engineer" | `[E]` | Tidak ada definisi baku; ada makalah visi (SE 3.0) dan esai blog yang memakainya untuk hal berbeda. | 3.2 |
-| Produktivitas | `[B]` lapangan; `[C]`; `[E] (desain RCT)` | **Bertentangan**: dari 26% lebih banyak tugas selesai (lapangan, 4.867 pengembang) sampai 19% lebih lambat (16 pengembang ahli di proyek matang). Bergantung tugas, pengalaman, dan alat. | 4.1 |
+| Produktivitas | `[B]` lapangan; `[C]`; `[E] (desain RCT)`; `[E] (desain meta-analisis)` | **Bertentangan**: dari 26% lebih banyak tugas selesai (lapangan, 4.867 pengembang) sampai 19% lebih lambat (16 pengembang ahli di proyek matang, awal 2025). Pembaruan METR Februari 2026 menyatakan datanya sendiri tidak andal untuk efek terkini (bias seleksi); meta-analisis 2026 (preprint, 23 studi) menemukan efek positif sedang yang bergantung konteks. Bergantung tugas, pengalaman, dan alat. | 4.1 |
 | Mutu fungsional dan keterulangan | `[E] (desain eksperimen)` untuk uji tipis; `J-R` untuk non-determinisme; tidak ada tinjauan sistematis `[A]` | Uji bawaan benchmark meloloskan kode salah; keluaran untuk perintah sama berbeda-beda. | 4.2 |
 | Keamanan kode hasil AI | `[C]`, `[D]`, `[E]` | Konsisten menunjukkan risiko (sekitar 40% program rentan pada skenario berisiko; pengguna lebih yakin padahal kurang aman), tetapi satu studi pengguna menemukan dampak kecil; alat berubah cepat. | 4.3 |
 | Pemeliharaan jangka panjang | `[D]` | Satu studi kuasi-eksperimen atas repositori: kecepatan naik sementara, kompleksitas dan peringatan analisis statis naik menetap. Bukti jangka panjang sangat sedikit. | 4.4 |
-| Dampak pada belajar pemula | `[B]` (matematika), `[C]`, `[E] (desain RCT)` | Akses tanpa pagar pengaman meningkatkan kinerja saat dipakai tetapi dapat menurunkan belajar; pola pemakaian yang melibatkan berpikir menjaga belajar. | 4.5 |
+| Dampak pada belajar pemula | `[B]` (matematika; RCT CS1 TUM, N = 275), `[C]`, `[E] (desain RCT)`, `[E] (desain meta-analisis)` | Akses tanpa pagar pengaman meningkatkan kinerja saat dipakai tetapi tidak menambah belajar dan dapat menurunkannya; tutor berpagar (petunjuk bertahap) menjaga motivasi; pola pemakaian yang melibatkan berpikir menjaga belajar. Temuan 2026 menguatkan, tidak membalik, kesimpulan sebelumnya. | 4.5 |
 | Praktik berkelanjutan | campuran; banyak `[inferensi]` | Pengujian, tinjauan manusia, spesifikasi, kontrol versi, kewaspadaan rantai pasok, pencatatan keluaran. Dukungan langsung tiap praktik pada kode hasil AI masih tipis. | 5 |
 | Energi dan biaya komputasi | `[C]`/`[D]`/`[E]`; angka tidak pasti | Per-permintaan kecil tetapi bervariasi puluhan kali lipat antarmodel; total pusat data tumbuh cepat; tidak ada angka terverifikasi per tugas pemrograman. | 5.6 |
 | Tata kelola | `[S]` | Kerangka resmi ada (NIST SSDF, NIST AI RMF, SLSA, OWASP, SE Menkominfo 9/2023) tetapi bersifat sukarela atau panduan; ISO/IEC 42001 tidak terverifikasi. | 5.7 |
@@ -171,7 +174,9 @@ rumusan asal dan tidak memuat unsur "tanpa menelaah kode".
   evaluation, and decisions about when to transition between AI-driven and
   manual manipulation of code"; kepercayaan "developed through iterative
   verification rather than blanket acceptance". Catatan arXiv menyebut makalah
-  ini di prosiding PPIG 2025 (tidak diverifikasi ke prosiding). Perhatikan:
+  ini di prosiding PPIG 2025; pada tinjauan 2026-11-20 halaman PPIG 2025 (36th Annual
+  Workshop) untuk makalah ini dibuka dan memuat judul, penulis, dan abstraknya
+  (https://ppig.org/papers/2025-ppig-36th-sarkar/), jadi penerbitannya terkonfirmasi. Perhatikan:
   yang diamati adalah praktisi yang **tetap** mengevaluasi, yaitu lebih dekat
   ke definisi Willison untuk "bukan vibe coding" daripada rumusan asal.
 - Ge dkk. (2025, `P`): tinjauan atas lebih dari 1.000 makalah yang memakai
@@ -195,8 +200,8 @@ Tidak ditemukan definisi baku; dua pemakaian berbeda yang dibuka:
 
 | Pemakaian | Sumber | Isi (`[parafrasa]` kecuali dikutip) | Jenis |
 | --- | --- | --- | --- |
-| **AI-native software engineering (SE 3.0)**: paradigma rekayasa | Hassan dkk. (2024; arXiv 2410.06107, submit 8 Oktober 2024, revisi 9 Januari 2026; halaman tidak mencantumkan venue) | SE 2.0 (pengembangan berbantuan AI) meningkatkan produktivitas tetapi menimbulkan beban kognitif dan inefisiensi; SE 3.0 berpusat pada kolaborasi berbasis maksud (*intent*) dan percakapan antara pengembang dan "rekan tim AI"; tumpukan teknologi usulan `Teammate.next`, `IDE.next`, `Compiler.next`, `Runtime.next`; plus peta jalan tantangan. Ini **makalah visi dan agenda riset**, bukan evaluasi empiris `[parafrasa dari abstrak]`. | `J-P`, `[E]` |
-| **Agentic Software Engineering**: lanjutan visi | Hassan dkk. (2025; arXiv 2509.06216, v4 2 November 2026) | Agen tidak sekadar membuat kode tetapi mengejar tujuan rekayasa; dualitas "SE untuk manusia" dan "SE untuk agen"; dua lingkungan kerja usulan (ACE dan AEE); menyatakan sendiri tujuannya bukan solusi definitif melainkan "conceptual scaffold ... to catalyze a community-wide dialogue". | `J-P`, `[E]` |
+| **AI-native software engineering (SE 3.0)**: paradigma rekayasa | Hassan dkk. (2026; terbit di *ACM Transactions on Software Engineering and Methodology* 35(9), 1-25, DOI 10.1145/3807901, 21 Agustus 2026; versi pra-cetak arXiv 2410.06107, submit 8 Oktober 2024) | SE 2.0 (pengembangan berbantuan AI) meningkatkan produktivitas tetapi menimbulkan beban kognitif dan inefisiensi; SE 3.0 berpusat pada kolaborasi berbasis maksud (*intent*) dan percakapan antara pengembang dan "rekan tim AI"; tumpukan teknologi usulan `Teammate.next`, `IDE.next`, `Compiler.next`, `Runtime.next`; plus peta jalan tantangan. Ini **makalah visi dan agenda riset**, bukan evaluasi empiris `[parafrasa dari abstrak]`. | `J-R` (makalah visi bersejawat), `[D]` |
+| **Agentic Software Engineering**: lanjutan visi | Hassan dkk. (2026; terbit di *ACM Transactions on Software Engineering and Methodology*, nomor artikel 3861334, DOI 10.1145/3861334, 5 November 2026; versi pra-cetak arXiv 2509.06216, v4 2 November 2026) | Agen tidak sekadar membuat kode tetapi mengejar tujuan rekayasa; dualitas "SE untuk manusia" dan "SE untuk agen"; dua lingkungan kerja usulan (ACE dan AEE); menyatakan sendiri tujuannya bukan solusi definitif melainkan "conceptual scaffold ... to catalyze a community-wide dialogue". | `J-R` (makalah visi bersejawat), `[D]` |
 | **AI-native software engineer**: profil individu | Osmani, esai blog "The AI-Native Software Engineer", 1 Juli 2025 | "An AI-native software engineer is one who deeply integrates AI into their daily workflow" (kutipan lewat perangkat pembaca). Praktik yang diuraikan: mulai dari AI, tulis perintah yang jelas, **verifikasi semuanya** (uji keluaran, tinjau seperti kode pengembang junior, waspadai halusinasi), naik bertahap ke mode agen, tetap pegang lingkup, jaga data sensitif, "take ownership of the code". Halaman terbaca sebagian (100.000 dari 108.659 karakter). | `J-O` |
 
 **Kritik dan keterbatasan.**
@@ -207,11 +212,11 @@ Tidak ditemukan definisi baku; dua pemakaian berbeda yang dibuka:
   pemasaran dan perekrutan `[inferensi dari hasil pencarian, tidak dibuka]`.
 - Hassan dkk. sendiri menyebut beban kognitif sebagai masalah SE 2.0; bukti
   empiris di bagian 4 menunjukkan bahwa kemampuan **mengawasi** AI membutuhkan
-  keterampilan yang dibentuk lebih dulu (Shen dan Tamkin, 2026, `P`).
+  keterampilan yang dibentuk lebih dulu (Shen dan Tamkin, 2026, `P`; diperkuat RCT CS1 di TUM, Bassner dkk., 2026, bagian 4.5).
   Konsekuensi `[inferensi]`: label "native" yang menyiratkan tidak perlu
   fondasi pra-AI tidak didukung bukti yang dibuka; arah yang didukung bukti
   adalah fondasi yang kuat **lalu** pemakaian AI yang diawasi.
-- Kedua makalah SE 3.0 adalah visi; belum ada evaluasi bahwa paradigma itu
+- Kedua makalah SE 3.0 adalah visi (kini terbit di TOSEM 2026 dan bersejawat, tetapi tetap makalah visi); belum ada evaluasi bahwa paradigma itu
   menghasilkan perangkat lunak lebih baik `[parafrasa dari abstrak]`.
 
 ### 3.3 *Agentic coding* dan agen kode
@@ -225,7 +230,7 @@ iterating tasks with minimal human intervention". Mereka menyimpulkan
 keduanya dalam siklus hidup berpusat manusia. Contoh tolok ukur agen:
 SWE-bench (Jimenez dkk., 2023; arXiv; catatan arXiv menyebut ICLR 2024),
 2.294 masalah dari isu GitHub nyata pada 12 repositori Python, di mana model
-harus mengedit basis kode untuk menyelesaikan isu. Hassan dkk. (2025)
+harus mengedit basis kode untuk menyelesaikan isu. Hassan dkk. (2026)
 menyebut keluaran agen yang diserahkan ke manusia sebagai "Merge-Readiness
 Packs"; `[inferensi]` ini mencerminkan pandangan bahwa manusia tetap
 pengambil keputusan akhir.
@@ -265,7 +270,9 @@ men-debug keluaran asisten (bagian 4.1) mendukung kehati-hatian ini.
 | Vaithilingam dkk. (2022) | Studi pengguna dalam-subjek, 24 peserta: asisten "did not necessarily improve the task completion time or success rate"; mayoritas tetap menyukainya; peserta sulit memahami, mengedit, dan men-debug potongan yang dihasilkan. | `[C]`. Sampel kecil; alat awal. |
 | Ziegler dkk. (2022) | Studi kasus pengguna Copilot: laju penerimaan saran, bukan metrik ketahanan kode, yang mendorong **persepsi** produktivitas. | `[D]`. Persepsi, bukan pengukuran independen; studi atas produk pembuatnya (afiliasi `[belum terverifikasi]`). |
 | Cui dkk. (2026) | Tiga RCT lapangan (Microsoft, Accenture, satu perusahaan Fortune 100), 4.867 pengembang: gabungan **26,08%** (galat baku 10,3%) lebih banyak tugas selesai; hasil "noisy" dan bervariasi antar eksperimen; pengembang kurang berpengalaman lebih banyak mengadopsi dan lebih besar manfaatnya. | `[B]`. Alat berupa pelengkap kode; ukuran = tugas selesai, bukan mutu atau pemeliharaan. |
-| Becker dkk. (2025) (METR) | RCT, 16 pengembang sumber terbuka berpengalaman rata-rata 5 tahun di proyek matang, 246 tugas; alat awal 2025: AI **menambah waktu penyelesaian 19%**, padahal pengembang memperkirakan sebelumnya mengurangi 24% dan sesudahnya merasa mengurangi 20%. Pengaruh artefak eksperimen "cannot be entirely ruled out". | `[E] (desain RCT)`, `P`. Sampel sangat kecil; satu konteks. |
+| Becker dkk. (2025) (METR) | RCT, 16 pengembang sumber terbuka berpengalaman rata-rata 5 tahun di proyek matang, 246 tugas; alat awal 2025: AI **menambah waktu penyelesaian 19%**, padahal pengembang memperkirakan sebelumnya mengurangi 24% dan sesudahnya merasa mengurangi 20%. Pengaruh artefak eksperimen "cannot be entirely ruled out". | `[E] (desain RCT)`, `P`. Sampel sangat kecil; satu konteks; alat awal 2025. |
+| METR (2026), pembaruan 24 Februari 2026 | Laporan lanjutan oleh tim yang sama. Percobaan baru (mulai Agustus 2025): untuk 10 pengembang dari studi asal perkiraan perubahan waktu penyelesaian -18% (selang -38% sampai +9%), untuk 47 pengembang baru -4% (selang -15% sampai +9%); tanda negatif berarti **lebih cepat** (METR menulis "speedup of -18%"), berlawanan arah dengan +19% (lebih lambat) pada studi awal, tetapi selang keduanya mencakup nol. METR sendiri menyatakan data barunya "an unreliable signal of the current productivity effect" karena banyak pengembang menolak bekerja tanpa AI (bias seleksi ke bawah) dan upah lebih rendah, mengakui bahwa pengembang "likely" kini lebih terbantu daripada awal 2025, tetapi datanya "only very weak evidence for the size of this increase", dan sedang mengubah desain studi. | `J-I` (laporan tim studi), `[E]`. Bukan hasil akhir; bukan bukti bahwa efek 2025 sudah terbantah. Memperlemah penggunaan angka -19% sebagai gambaran alat sekarang. |
+| Maier dkk. (2026) | Meta-analisis 23 studi (27 ukuran efek), pencarian 2019-2025: efek AI pada produktivitas positif dan sedang (g = 0,33; selang 0,09 sampai 0,58) dengan heterogenitas besar; efek lebih besar di setelan eksperimen terkontrol daripada di sumber terbuka dan perusahaan; efek pada belajar (nilai ujian) **tidak signifikan** (g = 0,14; selang -0,18 sampai 0,47). | `[E] (desain meta-analisis)`, `P` (arXiv 2605.04779, 6 Mei 2026; belum ditinjau sejawat menurut halaman yang dibuka). Bila terbit bersejawat naik ke `[A]`. Hanya abstrak dibaca. |
 | Stack Overflow (2025) | Survei: 84% responden memakai atau berencana memakai alat AI (n = 33.662); 66% mengeluh solusi "almost right, but not quite"; 45,2% menyebut debugging kode hasil AI lebih lama; kepercayaan pada akurasi sekitar 33%, ketidakpercayaan sekitar 46%. | `[D]`, `J-I`. Sampel swapilih; persepsi. |
 | DORA (2025) | Laporan industri; halaman yang dibuka hanya menyatakan peran AI sebagai "amplifier, magnifying an organization's existing strengths and weaknesses"; tanpa angka dan tanpa metodologi pada halaman. | `[D]`/`[E]`, `J-I`. Tidak ada klaim angka dikutip. |
 
@@ -282,15 +289,15 @@ pada Perry dkk. (bagian 4.3) lebih yakin padahal kurang aman.
 
 **Kekuatan bukti keseluruhan:** `[B]` untuk efek rata-rata positif pada
 pelengkap kode di perusahaan besar; `[E] (desain RCT)` untuk efek negatif pada
-ahli; **tidak ada** kesimpulan yang berlaku umum. Bukti dari Indonesia dan dari
+ahli (kini dilemahkan oleh pembaruan METR 2026 dan meta-analisis); **tidak ada** kesimpulan yang berlaku umum. Bukti dari Indonesia dan dari
 pembelajar sekolah tidak ditemukan `[belum terverifikasi]`.
 
 ### 4.2 Mutu fungsional dan keterulangan
 
-- Liu dkk. (2023, `P`, catatan arXiv: tanpa venue): EvalPlus memperbesar
+- Liu dkk. (2023, NeurIPS 2023, *Advances in Neural Information Processing Systems 36*, 21558-21572, DOI 10.52202/075280-0943, terkonfirmasi lewat Crossref 2026-11-20; sebelumnya dicatat sebagai preprint tanpa venue): EvalPlus memperbesar
   uji HumanEval 80 kali; pada 26 LLM, uji tambahan menangkap kode salah yang
   tak terdeteksi dan menurunkan pass@k "by up-to 19.3-28.9%", serta mengubah
-  peringkat model. `[E] (desain eksperimen)`. Pesan untuk pengajaran
+  peringkat model. `[C]` (kini bersejawat; desain eksperimen). Pesan untuk pengajaran
   `[inferensi]`: **uji yang tipis meloloskan kode yang salah**; menulis uji
   yang kuat adalah keterampilan inti ketika kode dibuat mesin.
 - Ouyang dkk. (2025, `J-R`, TOSEM, `T-A`): pada 829 soal dari tiga benchmark,
@@ -309,10 +316,10 @@ pembelajar sekolah tidak ditemukan `[belum terverifikasi]`.
 | --- | --- | --- |
 | Pearce dkk. (2022) | 89 skenario berisiko (daftar CWE Top 25), 1.689 program dari Copilot: "approximately 40% to be vulnerable". | `[C]`. Model dan versi 2021; skenario sengaja berisiko. |
 | Perry dkk. (2023) | Studi pengguna: peserta dengan asisten "wrote significantly less secure code" dan "more likely to believe they wrote secure code". | `[C]`. Tugas terkait keamanan; peserta bukan pengembang industri umum. |
-| Sandoval dkk. (2022) | Studi pengguna N = 58 mahasiswa, C tingkat rendah (daftar tertaut): pengguna dengan asisten menghasilkan bug kritis "at a rate no greater than 10% more than the control". **Berlawanan** arah dengan Perry dkk. | `[E] (desain studi pengguna)`; catatan arXiv: USENIX Security 2023 (tidak diverifikasi). Satu tugas. |
+| Sandoval dkk. (2022) | Studi pengguna N = 58 mahasiswa, C tingkat rendah (daftar tertaut): pengguna dengan asisten menghasilkan bug kritis "at a rate no greater than 10% more than the control". **Berlawanan** arah dengan Perry dkk. | `[C]` (desain studi pengguna); terbit di USENIX Security 2023 (halaman usenix.org dibuka 2026-11-20 dan memuat judul makalah ini; metadata arXiv menyatakan hal yang sama). Satu tugas. |
 | Fu dkk. (2025) | Analisis 733 potongan kode hasil Copilot, CodeWhisperer, Codeium di proyek GitHub: kelemahan keamanan pada 29,5% potongan Python dan 24,2% JavaScript, 43 kategori CWE; hingga 55,5% isu dapat diperbaiki asisten bila diberi peringatan analis statis. | `[D]` (observasional), `J-R`, TOSEM. Deteksi lewat alat analisis statis; bukan semua kelemahan eksploitabel `[inferensi]`. |
-| Shukla dkk. (2025) | 400 sampel kode, 40 putaran "perbaikan" dengan empat strategi perintah: "37.6% increase in critical vulnerabilities after just five iterations". | `[E] (desain eksperimen)`, `P`. |
-| Spracklen dkk. (2024) | 576.000 sampel kode, 16 LLM: rata-rata paket "halusinasi" (tidak ada) "at least 5.2% for commercial models and 21.7% for open-source models"; 205.474 nama unik; ancaman rantai pasok. | `[E] (desain eksperimen)`, `P`; catatan arXiv: USENIX Security 2025 (tidak diverifikasi). |
+| Shukla dkk. (2025) | 400 sampel kode, 40 putaran "perbaikan" dengan empat strategi perintah: "37.6% increase in critical vulnerabilities after just five iterations". | `[C]` (desain eksperimen); terbit di 2025 IEEE International Symposium on Technology and Society (ISTAS), 1-8, DOI 10.1109/ISTAS65609.2025.11269659 (Crossref, 2026-11-20); abstrak yang dibaca dari arXiv. |
+| Spracklen dkk. (2024) | 576.000 sampel kode, 16 LLM: rata-rata paket "halusinasi" (tidak ada) "at least 5.2% for commercial models and 21.7% for open-source models"; 205.474 nama unik; ancaman rantai pasok. | `[C]` (desain eksperimen); terbit di USENIX Security 2025 (halaman usenix.org dibuka 2026-11-20 dan memuat judul makalah ini; metadata arXiv menyatakan hal yang sama). |
 
 **Kekuatan bukti keseluruhan:** `[C]`/`[D]` konsisten menunjukkan risiko,
 disertai **satu temuan yang berlawanan**. Hanya Perry dkk. melaporkan
@@ -352,6 +359,9 @@ dalam belajar pemrograman).
 | Lehmann dkk. (2024) | Dua eksperimen lab pra-terdaftar: tidak ada efek keseluruhan; **bergantung pola pemakaian**: siswa yang "substitute" (mis. membuat solusi latihan lewat LLM) menambah cakupan topik tetapi menurunkan pemahaman tiap topik; yang "complement" (mis. meminta penjelasan) tidak menambah cakupan tetapi menambah pemahaman; kesenjangan antara pengetahuan awal rendah dan tinggi melebar. | `[E] (desain eksperimen pra-terdaftar)`, `P`. Domain bukan pemrograman `[inferensi]`: abstrak tidak menyebut pemrograman. |
 | Bastani dkk. (2025) | Eksperimen lapangan hampir seribu siswa SMA, **matematika**: akses GPT-4 meningkatkan nilai latihan (48% GPT Base, 127% GPT Tutor), tetapi setelah akses dicabut "GPT Base" turun 17% dibanding yang tidak pernah punya akses; pagar pengaman "GPT Tutor" "largely mitigated" dampak negatif; siswa memakai AI sebagai "crutch". | `[B]`. Matematika; ekstrapolasi ke coding `[inferensi]`. |
 | Shen dan Tamkin (2026) | Eksperimen acak: pengembang mempelajari pustaka asinkron baru dengan dan tanpa AI; AI "impairs conceptual understanding, code reading, and debugging abilities, without delivering significant efficiency gains on average"; yang mendelegasikan penuh kadang lebih cepat "at the cost of learning"; enam pola interaksi, **tiga di antaranya melibatkan keterlibatan kognitif dan menjaga hasil belajar**. | `[E] (desain RCT)`, `P`. Pengembang dewasa belajar satu pustaka; afiliasi `[belum terverifikasi]`. |
+| Chen dkk. (2025) | Eksperimen terkontrol dengan 24 mahasiswa sarjana (pemula dan menengah) memakai ChatGPT dibanding sumber daring konvensional: meminta solusi lengkap meningkatkan kinerja tugas terutama pada pemula (abstrak terbaca sebagian). | `[C]`. Sampel kecil; terbit di AIware 2025 (DOI 10.1109/AIware69974.2025.00016). |
+| Bassner dkk. (2026) | RCT tiga lengan di mata kuliah pemrograman pengantar (CS1) TUM, N = 275, latihan konkurensi 90 menit: (1) tutor berpagar Iris (petunjuk bertahap tanpa solusi penuh), (2) ChatGPT bebas, (3) kontrol tanpa AI. Kedua lengan AI mendapat skor latihan jauh lebih tinggi, tetapi **tidak** ada kenaikan pengetahuan pra-pasca atau pemahaman kode; frustrasi dan beban kognitif ekstrinsik lebih rendah; hanya Iris menaikkan motivasi intrinsik; mahasiswa menilai ChatGPT lebih mudah dan membantu ("comfort trap"). Kesimpulan penulis: AI "acted primarily as a performance aid rather than a learning enhancer". | `[B]`, `J-R` (*Computers and Education: Artificial Intelligence* 10, 100537, Juni 2026, DOI 10.1016/j.caeai.2025.100537). Satu materi (konkurensi), satu sesi, mahasiswa sarjana; abstrak dibaca dari halaman repositori TUM (Crossref tanpa abstrak). Paling dekat dengan konteks kita sejauh ini. |
+| Gardella dkk. (2026) | Studi terkontrol 22 mahasiswa menulis Python 20 menit berpasangan dengan rekan manusia dan sendiri dengan Copilot, diuji ulang individual seminggu kemudian: skor lebih tinggi dan beban lebih rendah dengan Copilot, tetapi emosi lebih positif dengan rekan manusia, dan penurunan skor uji ulang lebih besar pada kondisi AI (selisih absolut tidak signifikan); penulis menyarankan pendidik meninjau ulang pemrograman berpasangan manusia. | `[E] (desain eksperimen)`, `P` (arXiv 2604.18538, 20 April 2026). Sampel sangat kecil; sinyal belajar tidak signifikan. |
 | Finnie-Ansley dkk. (2022) | Codex mengerjakan soal ujian pemrograman pengantar dan "outscores most students". | `[C]`. Soal ujian era 2021; relevan untuk keabsahan **asesmen**, bukan belajar. |
 | Lee dkk. (2025) | Survei 319 pekerja pengetahuan: keyakinan lebih tinggi pada AI berkaitan dengan **lebih sedikit** berpikir kritis; keyakinan diri berkaitan dengan lebih banyak; AI menggeser berpikir kritis ke verifikasi, integrasi, dan pengelolaan tugas. | `[D]`. Swalaporan; bukan pelajar. |
 | Gerlich (2025) | Survei dan wawancara 666 peserta: korelasi negatif signifikan antara pemakaian AI sering dan kemampuan berpikir kritis, dimediasi *cognitive offloading*; peserta muda lebih bergantung. | `[D]` korelasional; arah sebab-akibat tidak dapat disimpulkan `[inferensi]`. |
@@ -369,7 +379,13 @@ dalam belajar pemrograman).
 3. Pemula yang kesulitan dirugikan paling besar, pemula yang sudah
    mampu paling diuntungkan (Prather; Lehmann; Kazemitabaar), jadi
    **kesenjangan melebar**.
-4. `[inferensi]` Ini konsisten dengan efek keahlian terbalik dan nilai contoh
+4. Temuan 2026 menguatkan butir 1-2 pada setelan pemrograman: pada RCT CS1
+   (Bassner dkk.) AI menaikkan skor latihan tanpa menaikkan belajar, dan tutor
+   berpagar menjaga motivasi; meta-analisis (Maier dkk., preprint) tidak
+   menemukan efek signifikan pada belajar. Ini tidak membuktikan bahwa AI
+   merugikan belajar pada semua kondisi, dan tidak ada temuan 2026 yang dibuka
+   yang membalik kesimpulan.
+5. `[inferensi]` Ini konsisten dengan efek keahlian terbalik dan nilai contoh
    terselesaikan bagi pemula (riset ilmu belajar 3.4): AI yang memberi jawaban
    utuh berperan seperti contoh terselesaikan yang tidak pernah dipudarkan
    (*faded*), sehingga pembelajar tidak membangun skema sendiri. Hubungan ini
@@ -386,7 +402,7 @@ tahun, dan hampir semua studi berdurasi paling lama beberapa minggu.
 | Apakah kode hasil AI benar? | Bisa salah dan lolos uji yang tipis; berbeda tiap permintaan. | Persentase kebenaran umum (bergantung model, tugas, dan uji). |
 | Apakah aman? | Risiko kerentanan dan paket fiktif terdokumentasi; pengguna bisa terlalu yakin. | Bahwa AI "selalu menghasilkan kode tidak aman" (ada temuan berlawanan). |
 | Apakah berkelanjutan? | Satu studi: kompleksitas menetap meski kecepatan transien. | Dampak lima tahun, atau di industri. |
-| Apakah baik untuk pemula? | Dengan pagar pengaman dan pola yang melibatkan berpikir, tidak merugikan dan dapat membantu. | Bahwa akses bebas aman untuk belajar. |
+| Apakah baik untuk pemula? | Dengan pagar pengaman dan pola yang melibatkan berpikir, tidak merugikan dan dapat membantu; akses bebas menaikkan skor latihan tetapi tidak terbukti menaikkan belajar (RCT CS1 TUM, 2026). | Bahwa akses bebas aman atau bermanfaat untuk belajar. |
 
 ## 5. Rekayasa perangkat lunak berkelanjutan dengan AI
 
@@ -408,7 +424,7 @@ menandai sisanya `[inferensi]`.
 | **Keamanan rantai pasok** | Spracklen dkk.: paket fiktif 5,2% (komersial) sampai 21,7% (terbuka); halaman SLSA (pedoman bertingkat, track Build, dikelola kolaborasi industri di bawah Linux Foundation, v1.0 retired, v1.2 terkini); OWASP Top 10 LLM 2025: LLM03 *Supply Chain*, LLM05 *Improper Output Handling*, LLM06 *Excessive Agency*. | `[E]`, `J-S` | OWASP dan SLSA adalah panduan, bukan bukti dampak. |
 | **Privasi data dalam perintah** | OWASP LLM02:2025 *Sensitive Information Disclosure*; SE Menkominfo 9/2023 (nilai "pelindungan data pribadi"); aturan repo (ADR-0004; silabus sma-coding jalur D: tanpa data pribadi pada permintaan); draf dewasa `DW-FND-M1`. | `J-S` | Bukan bukti dampak. |
 | **Keterulangan (*reproducibility*)** | Ouyang dkk. (2025). Praktik: catat alat, versi model, perintah, dan simpan kode hasil; jangan menjadikan perintah sebagai satu-satunya sumber. | `J-R`, praktik `[inferensi]` | Satu model pada saat studi. |
-| **Pembatasan kewenangan agen** | OWASP LLM06; Hassan dkk. (2025) (manusia menerima paket siap-gabung). | `J-S`, `[E]` | Visi dan panduan. |
+| **Pembatasan kewenangan agen** | OWASP LLM06; Hassan dkk. (2026) (manusia menerima paket siap-gabung). | `J-S`, `[D]` | Visi dan panduan. |
 
 ### 5.2 Hak cipta dan lisensi kode hasil AI
 
@@ -622,11 +638,33 @@ U-09..U-15, dengan U-02..U-05 dalam satu revisi `sma-coding`), satu menjadi
 dokumen operasional (U-01), tiga memang tanpa perubahan (U-07, U-08, U-16),
 dan satu tautan (U-17).
 
+### 7.2 Usulan baru dari tinjauan 2026-11-20, untuk keputusan pemilik
+
+Tinjauan pertama (issue #151) tidak mengubah program, silabus, korpus, atau
+`docs/operations/kebijakan-ai-osn.md`. Penilaian ulang usulan terhadap bukti
+terbaru:
+
+| Program | Penilaian terhadap bukti 2026 |
+| --- | --- |
+| `osn` (U-01) | Tetap selaras: tanpa AI saat kerja soal dan *re-solve* didukung RCT CS1 TUM (skor naik, belajar tidak) dan bukti Bastani. Tidak ada usulan. |
+| `tk-coding`, `sd-coding` (U-07, U-08) | Tidak ada bukti baru tentang anak TK dan SD (temuan 2026 pada mahasiswa dan dewasa). Tidak ada usulan. |
+| `smp-coding` (U-06) | Tetap selaras (demonstrasi guru, tanpa akun murid). Tidak ada usulan. |
+| `sma-coding` (U-02..U-05; Q3: murid bebas memakai AI dengan etika) | **Tidak ada bukti yang dibuka bahwa akses bebas merugikan; ada bukti bahwa ia tidak menambah belajar dan bahwa tutor berpagar menjaga motivasi.** Memunculkan usulan U-18 di bawah. |
+| `kuliah-coding` (U-09..U-12), `dewasa-coding` (U-13..U-16) | Selaras dengan tiga tingkat dan log (U-11); tinjauan SSDF: NIST menerbitkan draf awal SP 800-218 Rev. 1 (SSDF 1.2) pada 17 Desember 2025; rujukan butir SSDF di `KUL-I-301` (versi 1.1) tetap benar selama Rev. 1 belum final `[belum terverifikasi: status final tidak dicek]`. Usulan U-18 berlaku juga. |
+
+| Id | Program | Bagian terkena | Usulan | Opsi dan REKOMENDASI | Kekuatan bukti |
+| --- | --- | --- | --- | --- | --- |
+| U-18 | `sma-coding` (kebijakan AI 7.4), `kuliah-coding` (6.3-6.5), `dewasa-coding` jalur PRO (9.1, `DW-PRO-M13`) | Kebijakan pemakaian AI oleh murid dan mahasiswa yang sudah boleh memakai AI | Tambahkan **pagar belajar** yang tidak melarang AI: (a) anjurkan mode tutor atau petunjuk bertahap untuk materi yang sedang dipelajari dan mode bebas untuk pekerjaan rutin; (b) untuk setiap tugas pembentuk keterampilan, sertakan satu **uji ulang singkat tanpa AI** (lisan atau tertulis) beberapa hari kemudian, supaya kinerja dengan AI tidak disamakan dengan belajar; (c) ajarkan murid memeriksa diri ("saya bisa menjelaskan kode ini tanpa AI?") sejalan dengan definisi Willison (bagian 3.1). Tanpa jam atau minggu baru. | **A (Disarankan):** tambahkan butir (a)-(c) pada kebijakan masing-masing program sebagai anjuran, bukan larangan; mempertahankan keputusan Q3 (SMA bebas dengan etika). B: tidak mengubah (bukti baru tidak membuktikan bahaya dan mahasiswa bisa tetap bebas). C: batasi AI pada mode tutor saja untuk materi inti (lebih ketat dari keputusan Q3, tidak disarankan karena bukti belum cukup). Kompleksitas rendah (butir kebijakan); risiko A: beban tambahan guru untuk uji ulang. | `[B]` (Bassner dkk. 2026; Bastani 2025), `[E] (desain meta-analisis)` (Maier dkk. 2026), `[E] (desain RCT)` (Shen dan Tamkin 2026), `[E]` (Gardella dkk. 2026). Konteks mahasiswa dan dewasa; ekstrapolasi ke SMA `[inferensi]`. |
+
+U-18 **diputuskan pemilik 2026-11-20** lewat dialog pilihan baku, opsi **"Tambahkan sebagai anjuran"**: tiga butir pagar belajar
+ditambahkan sebagai anjuran (bukan larangan) pada kebijakan AI `sma-coding` 7.4, `kuliah-coding` 6.3-6.5, dan `dewasa-coding` 9.1;
+penerapannya di silabus dikerjakan di issue terpisah.
+
 ## 8. Batasan dokumen dan pertanyaan terbuka untuk pemilik
 
 **Batasan.**
 - Teks lengkap artikel tidak dibaca; hanya abstrak dan metadata (bagian 1.4).
-- Tujuh belas rujukan berstatus preprint (`P`); klaim darinya adalah bukti
+- Lima belas rujukan berstatus preprint (`P`; sebagian berisi catatan venue yang sudah terkonfirmasi, lihat bagian 9.2); klaim darinya adalah bukti
   awal. Bidang ini bergerak cepat; angka produktivitas dan keamanan dapat
   berubah dengan generasi alat berikutnya.
 - Bukti dari Indonesia tidak ada. Semua penerapan ke siswa Indonesia dan ke
@@ -670,12 +708,12 @@ Q3 pemilik **memilih berbeda dari rekomendasi riset**.
 | Q4 | Jalur I: integrasi di `KUL-I-204` dan `KUL-I-401` (PR #162); jalur PRO: modul baru `DW-PRO-M13` setelah `DW-PRO-M5` (PR #163). | A untuk jalur I, B untuk PRO (Disarankan) |
 | Q5 | Energi dan biaya komputasi sebagai butir singkat dengan ketidakpastian dinyatakan. | A (Disarankan) |
 | Q6 | Dokumen ini ditautkan dari `README.md`, `AGENTS.md`, `docs/architecture/repository-map.md`, dan `docs/programs/README.md`. | Tautkan (Disarankan) |
-| Q7 | Tinjau ulang setiap 6 bulan; dijadwalkan Mei 2027 di issue [#151](https://github.com/ahliweb/cac/issues/151). | Setiap 6 bulan (Disarankan) |
+| Q7 | Tinjau ulang setiap 6 bulan; dijadwalkan Mei 2027 di issue [#151](https://github.com/ahliweb/cac/issues/151). **Diperbarui 2026-11-20:** atas instruksi pemilik 2026-11-20 (syarat alasan waktu atau pemantauan pada issue dihapus) tinjauan pertama dikerjakan sekarang (v0.3.0); tinjauan berikutnya Mei 2027 (enam bulan), dicatat di dokumen ini tanpa issue terbuka. | Setiap 6 bulan (Disarankan) |
 
 ## 9. Daftar pustaka
 
 Format APA. Setiap entri diakhiri status verifikasi (bagian 1.4) dan jenis
-sumber (bagian 1.3). Semua dicek **2026-11-19** (tanggal akses halaman web).
+sumber (bagian 1.3). Semua dicek **2026-11-19** (tanggal akses halaman web) dan dicek ulang **2026-11-20** (bagian 9.7); rujukan baru tinjauan 2026-11-20 diberi tanda "ditambahkan 2026-11-20".
 Entri ber-DOI disalin dari metadata Crossref (kapitalisasi judul mengikuti
 penerbit). Entri arXiv memakai tahun submit pertama; versi yang dibaca
 disebut bila berbeda.
@@ -686,7 +724,11 @@ Bacchelli, A., & Bird, C. (2013). Expectations, outcomes, and challenges of mode
 
 Bastani, H., Bastani, O., Sungu, A., Ge, H., Kabakcı, Ö., & Mariman, R. (2025). Generative AI without guardrails can harm learning: Evidence from high school mathematics. *Proceedings of the National Academy of Sciences*, *122*(26), e2422633122. https://doi.org/10.1073/pnas.2422633122 — `T-A`, `J-R`
 
+Bassner, P., Lenk-Ostendorf, E., Beinstingel, A., Wasner, M., & Krusche, S. (2026). Less stress, better scores, same learning: The dissociation of performance and learning in AI-supported programming education. *Computers and Education: Artificial Intelligence*, *10*, 100537. https://doi.org/10.1016/j.caeai.2025.100537 — `T-A` (abstrak dibaca dari halaman repositori TUM https://portal.fis.tum.de/en/publications/less-stress-better-scores-same-learning-the-dissociation-of-perfo/; Crossref tanpa abstrak; ditambahkan 2026-11-20), `J-R`
+
 Becker, B. A., Denny, P., Finnie-Ansley, J., Luxton-Reilly, A., Prather, J., & Santos, E. A. (2023). Programming Is Hard - Or at Least It Used to Be: Educational Opportunities and Challenges of AI Code Generation. *Proceedings of the 54th ACM Technical Symposium on Computer Science Education V. 1*, 500-506. https://doi.org/10.1145/3545945.3569759 — `T-A`, `J-T` (makalah posisi). Judul lengkap dari OpenAlex; Crossref memotong setelah "Used to Be".
+
+Chen, R., Jiang, S., Shen, J., Moon, A., & Wei, S. (2025). Examining the Usage of Generative AI Models in Student Learning Activities for Software Programming. *2025 2nd IEEE/ACM International Conference on AI-powered Software (AIware)*, 76-86. https://doi.org/10.1109/AIware69974.2025.00016 — `T-A` (abstrak dari arXiv:2511.13271; ditambahkan 2026-11-20), `J-R`. Penulis menurut Crossref.
 
 Cui, K. Z., Demirer, M., Jaffe, S., Musolff, L., Peng, S., & Salz, T. (2026). The Effects of Generative AI on High-Skilled Work: Evidence from Three Field Experiments with Software Developers. *Management Science*, *72*(11), 9408-9420. https://doi.org/10.1287/mnsc.2025.00535 — `T-A`, `J-R`. Versi pra-cetak SSRN: https://doi.org/10.2139/ssrn.4945566.
 
@@ -700,11 +742,17 @@ Gerlich, M. (2025). AI Tools in Society: Impacts on Cognitive Offloading and the
 
 Goddard, K., Roudsari, A., & Wyatt, J. C. (2012). Automation bias: a systematic review of frequency, effect mediators, and mitigators. *Journal of the American Medical Informatics Association*, *19*(1), 121-127. https://doi.org/10.1136/amiajnl-2011-000089 — `T-A`, `J-T` (tinjauan sistematis, konteks kesehatan)
 
+Hassan, A. E., Li, H., Lin, D., Adams, B., Chen, T.-H., Kashiwa, Y., & Qiu, D. (2026). Agentic Software Engineering: Foundational Pillars and a Research Roadmap. *ACM Transactions on Software Engineering and Methodology*, nomor artikel 3861334. https://doi.org/10.1145/3861334 — `T-A` (Crossref 2026-11-20; sebelumnya preprint arXiv:2509.06216, v4 2 November 2026), `J-R` (makalah visi)
+
+Hassan, A. E., Oliva, G. A., Lin, D., Chen, B., & Jiang, Z. M. (2026). Towards AI-Native Software Engineering (SE 3.0): A Vision and a Challenge Roadmap. *ACM Transactions on Software Engineering and Methodology*, *35*(9), 1-25. https://doi.org/10.1145/3807901 — `T-A` (Crossref 2026-11-20; sebelumnya preprint arXiv:2410.06107, v2 9 Januari 2026), `J-R` (makalah visi)
+
 He, H., Miller, C., Agarwal, S., Kästner, C., & Vasilescu, B. (2026). Speed at the Cost of Quality: How Cursor AI Increases Short-Term Velocity and Long-Term Complexity in Open-Source Projects. *Proceedings of the 23rd International Conference on Mining Software Repositories*, 181-193. https://doi.org/10.1145/3793302.3793349 — `T-A` (abstrak dari arXiv:2511.04427v3; Crossref memberi judul pendek "Speed at the Cost of Quality"), `J-R`
 
 Kazemitabaar, M., Chow, J., Ma, C. K. T., Ericson, B. J., Weintrop, D., & Grossman, T. (2023). Studying the effect of AI Code Generators on Supporting Novice Learners in Introductory Programming. *Proceedings of the 2023 CHI Conference on Human Factors in Computing Systems*, 1-23. https://doi.org/10.1145/3544548.3580919 — `T-A`, `J-R`
 
 Lee, H.-P. (Hank), Sarkar, A., Tankelevitch, L., Drosos, I., Rintel, S., Banks, R., & Wilson, N. (2025). The Impact of Generative AI on Critical Thinking: Self-Reported Reductions in Cognitive Effort and Confidence Effects From a Survey of Knowledge Workers. *Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems*, 1-22. https://doi.org/10.1145/3706598.3713778 — `T-A`, `J-R` (survei)
+
+Liu, J., Xia, C. S., Wang, Y., & Zhang, L. (2023). Is Your Code Generated by ChatGPT Really Correct? Rigorous Evaluation of Large Language Models for Code Generation. *Advances in Neural Information Processing Systems 36*, 21558-21572. https://doi.org/10.52202/075280-0943 — `T-A` (Crossref 2026-11-20; abstrak dari arXiv:2305.01210; sebelumnya preprint), `J-R`
 
 Luccioni, S., Jernite, Y., & Strubell, E. (2024). Power Hungry Processing: Watts Driving the Cost of AI Deployment? *The 2024 ACM Conference on Fairness, Accountability, and Transparency*, 85-99. https://doi.org/10.1145/3630106.3658542 — `T-A`, `J-R`
 
@@ -720,25 +768,27 @@ Prather, J., Reeves, B. N., Leinonen, J., MacNeil, S., Randrianasolo, A. S., Bec
 
 Schwartz, R., Dodge, J., Smith, N. A., & Etzioni, O. (2020). Green AI. *Communications of the ACM*, *63*(12), 54-63. https://doi.org/10.1145/3381831 — `T-M` (abstrak hanya satu kalimat), `J-T`
 
+Shukla, S., Joshi, H., & Syed, R. (2025). Security Degradation in Iterative AI Code Generation: A Systematic Analysis of the Paradox. *2025 IEEE International Symposium on Technology and Society (ISTAS)*, 1-8. https://doi.org/10.1109/ISTAS65609.2025.11269659 — `T-A` (Crossref 2026-11-20; abstrak dari arXiv:2506.11022; sebelumnya preprint), `J-R`
+
 Strubell, E., Ganesh, A., & McCallum, A. (2019). Energy and Policy Considerations for Deep Learning in NLP. *Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics*, 3645-3650. https://doi.org/10.18653/v1/P19-1355 — `T-A`, `J-R`
 
 Vaithilingam, P., Zhang, T., & Glassman, E. L. (2022). Expectation vs. Experience: Evaluating the Usability of Code Generation Tools Powered by Large Language Models. *CHI Conference on Human Factors in Computing Systems Extended Abstracts*, 1-7. https://doi.org/10.1145/3491101.3519665 — `T-A`, `J-R`
 
 Ziegler, A., Kalliamvakou, E., Li, X. A., Rice, A., Rifkin, D., Simister, S., Sittampalam, G., & Aftandilian, E. (2022). Productivity assessment of neural code completion. *Proceedings of the 6th ACM SIGPLAN International Symposium on Machine Programming*, 21-29. https://doi.org/10.1145/3520312.3534864 — `T-A`, `J-R` (studi kasus atas produk pembuatnya; afiliasi `[belum terverifikasi]`)
 
-### 9.2 Preprint (arXiv; belum ditinjau sejawat menurut halaman yang dibuka)
+### 9.2 Preprint (arXiv; belum ditinjau sejawat menurut halaman arXiv, kecuali dicatat)
+
+Empat preprint dari daftar 2026-11-19 kini ada di 9.1 karena terbit (Hassan dkk. 2024 dan 2025, Liu dkk., Shukla dkk.).
 
 Becker, J., Rush, N., Barnes, E., & Rein, D. (2025). Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity (arXiv:2507.09089). arXiv. https://arxiv.org/abs/2507.09089 — `P`, `J-P` (v2, 25 Juli 2025; 51 halaman)
 
 Elsworth, C., Huang, K., Patterson, D., Schneider, I., Sedivy, R., Goodman, S., Townsend, B., Ranganathan, P., Dean, J., Vahdat, A., Gomes, B., & Manyika, J. (2025). Measuring the environmental impact of delivering AI at Google Scale (arXiv:2508.15734). arXiv. https://arxiv.org/abs/2508.15734 — `P`, `J-P` (pengukuran oleh penyedia layanan sendiri menurut abstrak)
 
+Gardella, N., Prather, J., Leinonen, J., Denny, P., et al. (2026). Fast and Forgettable: A Controlled Study of Novices' Performance, Learning, Workload, and Emotion in AI-Assisted and Human Pair Programming Paradigms (arXiv:2604.18538). arXiv. https://arxiv.org/abs/2604.18538 — `P`, `J-P` (v1, 20 April 2026; enam penulis menurut arXiv, empat pertama dicantumkan; ditambahkan 2026-11-20)
+
 Ge, Y., Mei, L., Duan, Z., Li, T., Zheng, Y., Wang, Y., Wang, L., Yao, J., Liu, T., Cai, Y., Bi, B., Guo, F., Guo, J., Liu, S., & Cheng, X. (2025). A Survey of Vibe Coding with Large Language Models (arXiv:2510.12399). arXiv. https://arxiv.org/abs/2510.12399 — `P`, `J-P` (v2, 21 Desember 2025)
 
-Hassan, A. E., Oliva, G. A., Lin, D., Chen, B., & Jiang, Z. M. (2024). Towards AI-Native Software Engineering (SE 3.0): A Vision and a Challenge Roadmap (arXiv:2410.06107). arXiv. https://arxiv.org/abs/2410.06107 — `P`, `J-P` (v1 8 Oktober 2024, v2 9 Januari 2026; halaman tidak mencantumkan venue; penulis dan tanggal dari halaman arXiv yang dibuka)
-
-Hassan, A. E., Li, H., Lin, D., Adams, B., Chen, T.-H., Kashiwa, Y., & Qiu, D. (2025). Agentic Software Engineering: Foundational Pillars and a Research Roadmap (arXiv:2509.06216). arXiv. https://arxiv.org/abs/2509.06216 — `P`, `J-P` (v4, 2 November 2026)
-
-Jimenez, C. E., Yang, J., Wettig, A., Yao, S., Pei, K., Press, O., & Narasimhan, K. (2023). SWE-bench: Can Language Models Resolve Real-World GitHub Issues? (arXiv:2310.06770). arXiv. https://arxiv.org/abs/2310.06770 — `P`, `J-P` (catatan arXiv: ICLR 2024, tidak diverifikasi ke prosiding)
+Jimenez, C. E., Yang, J., Wettig, A., Yao, S., Pei, K., Press, O., & Narasimhan, K. (2023). SWE-bench: Can Language Models Resolve Real-World GitHub Issues? (arXiv:2310.06770). arXiv. https://arxiv.org/abs/2310.06770 — `P`, `J-P` (catatan arXiv: ICLR 2024; halaman iclr.cc dibuka 2026-11-20 tetapi isinya tidak dikonfirmasi, halaman OpenReview menjawab tantangan verifikasi; tetap tidak diverifikasi ke prosiding)
 
 Jegham, N., Abdelatti, M., Koh, C. Y., Elmoubarki, L., & Hendawi, A. (2025). How Hungry is AI? Benchmarking Energy, Water, and Carbon Footprint of LLM Inference (arXiv:2505.09598). arXiv. https://arxiv.org/abs/2505.09598 — `P`, `J-P` (v6, 24 November 2025)
 
@@ -746,21 +796,19 @@ Kosmyna, N., Hauptmann, E., Yuan, Y. T., Situ, J., Liao, X.-H., Beresnitzky, A. 
 
 Lehmann, M., Cornelius, P. B., & Sting, F. J. (2024). AI Meets the Classroom: When Do Large Language Models Harm Learning? (arXiv:2409.09047). arXiv. https://arxiv.org/abs/2409.09047 — `P`, `J-P` (v2, 8 Maret 2025)
 
-Liu, J., Xia, C. S., Wang, Y., & Zhang, L. (2023). Is Your Code Generated by ChatGPT Really Correct? Rigorous Evaluation of Large Language Models for Code Generation (arXiv:2305.01210). arXiv. https://arxiv.org/abs/2305.01210 — `P`, `J-P` (v3, 30 Oktober 2023; kolom komentar tanpa venue)
+Maier, S., Gunzenhäuser, M., Schweisthal, J., Schneider, M., et al. (2026). A meta-analysis of the effect of generative AI on productivity and learning in programming (arXiv:2605.04779). arXiv. https://arxiv.org/abs/2605.04779 — `P`, `J-P` (v1, 6 Mei 2026; lima penulis menurut arXiv, empat pertama dicantumkan; ditambahkan 2026-11-20)
 
 Peng, S., Kalliamvakou, E., Cihon, P., & Demirer, M. (2023). The Impact of AI on Developer Productivity: Evidence from GitHub Copilot (arXiv:2302.06590). arXiv. https://arxiv.org/abs/2302.06590 — `P`, `J-P`
 
-Sandoval, G., Pearce, H., Nys, T., Karri, R., Garg, S., & Dolan-Gavitt, B. (2022). Lost at C: A User Study on the Security Implications of Large Language Model Code Assistants (arXiv:2208.09727). arXiv. https://arxiv.org/abs/2208.09727 — `P`, `J-P` (v4, 27 Februari 2023; komentar arXiv: "Accepted for publication in USENIX'23", tidak diverifikasi ke prosiding)
+Sandoval, G., Pearce, H., Nys, T., Karri, R., Garg, S., & Dolan-Gavitt, B. (2022). Lost at C: A User Study on the Security Implications of Large Language Model Code Assistants (arXiv:2208.09727). arXiv. https://arxiv.org/abs/2208.09727 — `P`, `J-P` (v4, 27 Februari 2023; komentar arXiv: "Accepted for publication in USENIX'23"; terkonfirmasi 2026-11-20 lewat halaman https://www.usenix.org/conference/usenixsecurity23/presentation/sandoval)
 
 Sapkota, R., Roumeliotis, K. I., & Karkee, M. (2025). Vibe Coding vs. Agentic Coding: Fundamentals and Practical Implications of Agentic AI (arXiv:2505.19443). arXiv. https://arxiv.org/abs/2505.19443 — `P`, `J-P` (tinjauan)
 
-Sarkar, A., & Drosos, I. (2025). Vibe coding: programming through conversation with artificial intelligence (arXiv:2506.23253). arXiv. https://arxiv.org/abs/2506.23253 — `P`, `J-P` (v2, 3 Oktober 2025; komentar arXiv menyebut PPIG 2025, tidak diverifikasi)
+Sarkar, A., & Drosos, I. (2025). Vibe coding: programming through conversation with artificial intelligence (arXiv:2506.23253). arXiv. https://arxiv.org/abs/2506.23253 — `P`, `J-P` (v2, 3 Oktober 2025; komentar arXiv menyebut PPIG 2025; terkonfirmasi 2026-11-20 lewat halaman https://ppig.org/papers/2025-ppig-36th-sarkar/)
 
 Shen, J. H., & Tamkin, A. (2026). How AI Impacts Skill Formation (arXiv:2601.20245). arXiv. https://arxiv.org/abs/2601.20245 — `P`, `J-P` (v2, 1 Februari 2026)
 
-Shukla, S., Joshi, H., & Syed, R. (2025). Security Degradation in Iterative AI Code Generation -- A Systematic Analysis of the Paradox (arXiv:2506.11022). arXiv. https://arxiv.org/abs/2506.11022 — `P`, `J-P` (v2, 26 September 2025)
-
-Spracklen, J., Wijewickrama, R., Sakib, A. H. M. N., Maiti, A., Viswanath, B., & Jadliwala, M. (2024). We Have a Package for You! A Comprehensive Analysis of Package Hallucinations by Code Generating LLMs (arXiv:2406.10279). arXiv. https://arxiv.org/abs/2406.10279 — `P`, `J-P` (v3, 2 Maret 2025; komentar arXiv: "To appear in the 2025 USENIX Security Symposium", tidak diverifikasi)
+Spracklen, J., Wijewickrama, R., Sakib, A. H. M. N., Maiti, A., Viswanath, B., & Jadliwala, M. (2024). We Have a Package for You! A Comprehensive Analysis of Package Hallucinations by Code Generating LLMs (arXiv:2406.10279). arXiv. https://arxiv.org/abs/2406.10279 — `P`, `J-P` (v3, 2 Maret 2025; komentar arXiv: "To appear in the 2025 USENIX Security Symposium"; terkonfirmasi 2026-11-20 lewat halaman https://www.usenix.org/conference/usenixsecurity25/presentation/spracklen)
 
 ### 9.3 Standar, kerangka, regulasi, dan halaman lembaga resmi
 
@@ -768,7 +816,7 @@ International Energy Agency. (2025, 10 April). *Energy and AI*. https://www.iea.
 
 Kementerian Komunikasi dan Informatika. (2023). *Surat Edaran Menteri Komunikasi dan Informatika Nomor 9 Tahun 2023 tentang Etika Kecerdasan Artifisial*. JDIH Komdigi. https://jdih.komdigi.go.id/produk_hukum/view/id/883/t/surat+edaran+menteri+komunikasi+dan+informatika+nomor+9+tahun+2023 — `T-W`, `J-S` (dibuka 2026-11-19; ditetapkan 19 Desember 2023; status BERLAKU menurut halaman)
 
-National Institute of Standards and Technology. (2022, Februari). *Secure Software Development Framework (SSDF) Version 1.1: Recommendations for Mitigating the Risk of Software Vulnerabilities* (NIST SP 800-218). https://csrc.nist.gov/pubs/sp/800/218/final — `T-W`, `J-S` (dibuka 2026-11-19)
+National Institute of Standards and Technology. (2022, Februari). *Secure Software Development Framework (SSDF) Version 1.1: Recommendations for Mitigating the Risk of Software Vulnerabilities* (NIST SP 800-218). https://csrc.nist.gov/pubs/sp/800/218/final — `T-W`, `J-S` (dibuka 2026-11-19 dan 2026-11-20; catatan 2026-11-20: halaman https://csrc.nist.gov/pubs/sp/800/218/r1/ipd memuat SP 800-218 Rev. 1 (SSDF 1.2), Initial Public Draft 17 Desember 2025, komentar ditutup 30 Januari 2026; status final Rev. 1 `[belum terverifikasi]`)
 
 National Institute of Standards and Technology. (2024, Juli). *Secure Software Development Practices for Generative AI and Dual-Use Foundation Models: An SSDF Community Profile* (NIST SP 800-218A). https://csrc.nist.gov/pubs/sp/800/218/a/final — `T-W`, `J-S` (dibuka 2026-11-19)
 
@@ -778,13 +826,15 @@ OWASP Gen AI Security Project. (2025). *OWASP Top 10 for LLM Applications 2025*.
 
 SLSA. (t.t.). *SLSA specification v1.0: About*. https://slsa.dev/spec/v1.0/about — `T-W`, `J-S` (dibuka 2026-11-19; halaman menyatakan v1.0 retired dan v1.2 terkini; hak cipta Linux Foundation)
 
-UNESCO. (2023, 7 September; diperbarui 2026, 16 Januari). *Guidance for generative AI in education and research*. https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research — `T-W`, `J-S` (dibuka 2026-11-19; teks panduan penuh tidak dibaca)
+UNESCO. (2023, 7 September; diperbarui 2026, 16 Januari). *Guidance for generative AI in education and research*. https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research — `T-W`, `J-S` (dibuka 2026-11-19; teks panduan penuh tidak dibaca; pengecekan ulang 2026-11-20: HTTP 200 tetapi isi halaman tidak terbaca oleh pembaca halaman, jadi tanggal pembaruan 16 Januari 2026 `[belum terverifikasi ulang]`)
 
 U.S. Copyright Office. (2025, Januari). *Copyright and Artificial Intelligence, Part 2: Copyrightability*. https://www.copyright.gov/ai/Copyright-and-Artificial-Intelligence-Part-2-Copyrightability-Report.pdf — `T-W`, `J-S` (PDF diunduh ke direktori baru dan dibaca dengan `pdftotext`, 2026-11-19; ringkasan eksekutif dan Bab V dibaca; hukum AS; halaman indeks: https://www.copyright.gov/ai/)
 
 ### 9.4 Laporan industri dan survei
 
 DORA. (2025). *State of AI-assisted Software Development 2025*. Google Cloud. https://dora.dev/research/2025/dora-report/ — `T-W`, `J-I` (dibuka 2026-11-19; halaman tidak menyebut tanggal rilis, angka, atau metodologi; hanya pernyataan "amplifier" dikutip)
+
+METR. (2026, 24 Februari). *We are Changing our Developer Productivity Experiment Design*. https://metr.org/blog/2026-02-24-uplift-update/ — `T-W`, `J-I` (dibuka 2026-11-20; laporan tim studi Becker dkk. (2025); ditambahkan 2026-11-20)
 
 Stack Overflow. (2025). *2025 Developer Survey: AI*. https://survey.stackoverflow.co/2025/ai — `T-W`, `J-I` (dibuka 2026-11-19; jumlah responden per pertanyaan, bukan total; angka persen berbeda tipis antara teks dan grafik pada halaman)
 
@@ -802,17 +852,39 @@ Willison, S. (2025, 19 Maret). *Not all AI-assisted programming is vibe coding (
 
 | Status | Jumlah | Keterangan |
 | --- | --- | --- |
-| `T-A` (metadata + abstrak) | 20 | Bagian 9.1 |
+| `T-A` (metadata + abstrak) | 26 | Bagian 9.1 |
 | `T-M` (metadata saja) | 2 | Denny dkk. (2024); Schwartz dkk. (2020): tidak ada klaim temuan selain judul dan ringkasan satu kalimat |
-| `P` (preprint arXiv) | 17 | Bagian 9.2 |
-| `T-W` (halaman web dibuka) | 14 | 9 pada bagian 9.3 (IEA, SE Menkominfo, NIST SP 800-218, NIST SP 800-218A, NIST AI RMF, OWASP, SLSA, UNESCO, Kantor Hak Cipta AS), 2 pada bagian 9.4 (DORA, Stack Overflow), 3 pada bagian 9.5 (CNN/KRDO, Osmani, Willison) |
+| `P` (preprint arXiv) | 15 | Bagian 9.2 |
+| `T-W` (halaman web dibuka) | 15 | 9 pada bagian 9.3 (IEA, SE Menkominfo, NIST SP 800-218, NIST SP 800-218A, NIST AI RMF, OWASP, SLSA, UNESCO, Kantor Hak Cipta AS), 3 pada bagian 9.4 (METR, DORA, Stack Overflow), 3 pada bagian 9.5 (CNN/KRDO, Osmani, Willison) |
 | `T-S` (dikutip lewat sumber sekunder) | 1 | O'Toole (ADS-L) mengutip postingan Karpathy |
-| **Total** | **54** | |
+| **Total** | **59** | 54 rujukan awal ditambah 5 baru pada tinjauan 2026-11-20 (Bassner, Chen, Gardella, Maier, METR) |
 | Tidak terverifikasi dan **tidak** dicantumkan sebagai rujukan | | Postingan primer Karpathy (HTTP 402); halaman ISO/IEC 42001 (HTTP 403); Merriam-Webster dan halaman Collins (HTTP 403); The New Stack (HTTP 403); klaim "agentic engineering" oleh Karpathy; tafsir hukum Indonesia atas kode hasil AI; Veracode, GitClear, dan konten vendor atau perekrutan tentang "AI-native"; kebijakan Kemendikdasmen/Kemdiktisaintek tentang AI |
 
-> Rekap dihitung dari daftar bagian 9.1 (22 entri ber-DOI: 20 `T-A`, 2
-> `T-M`), 9.2 (17 `P`), 9.3 (9 `T-W`), 9.4 (2 `T-W`), dan 9.5 (3 `T-W`, 1
+> Rekap dihitung dari daftar bagian 9.1 (28 entri ber-DOI: 26 `T-A`, 2
+> `T-M`), 9.2 (15 `P`), 9.3 (9 `T-W`), 9.4 (3 `T-W`), dan 9.5 (3 `T-W`, 1
 > `T-S`). Bila daftar berubah, hitung ulang. Rujukan yang juga dipakai riset
 > ilmu belajar (#133, 81 entri) pada bagian 6.6 dan 4.4 dan diverifikasi ulang
 > di sini: Bastani dkk. (2025), Denny dkk. (2024), Prather dkk. (2023; 2024),
 > Kazemitabaar dkk. (2023), dan Kosmyna dkk. (2025).
+
+### 9.7 Hasil pengecekan ulang 2026-11-20 (tinjauan pertama, issue #151)
+
+Dikerjakan pada 2026-11-20 atas instruksi pemilik (tinjauan dipercepat dari
+jadwal Mei 2027). Metode: `curl` ke setiap URL (status HTTP akhir), Crossref
+untuk semua DOI, API arXiv untuk semua preprint, pencarian Crossref atas judul
+setiap preprint untuk mencari versi terbit, dan pembacaan ulang halaman web
+untuk klaim utama.
+
+| Pemeriksaan | Hasil |
+| --- | --- |
+| 54 rujukan awal: tautan hidup | 54 hidup, **0 mati**, 0 diganti. Dari 57 URL unik: 35 menjawab HTTP 200, 2 menjawab 202 (DOI IEEE, alamat tujuan terbuka), 20 menjawab 403 (DOI penerbit ACM, PNAS, JAMIA, INFORMS, MDPI, dan SSRN yang menolak klien otomatis); untuk semua 23 DOI Crossref mengembalikan metadata yang cocok (judul, venue, tahun). |
+| 17 preprint arXiv | 17 dari 17 terbuka lewat API arXiv; metadata (tanggal versi) cocok dengan dokumen. |
+| Preprint yang kini terbit di venue bersejawat | 4: Hassan dkk. (SE 3.0) di TOSEM 35(9), 2026; Hassan dkk. (Agentic SE) di TOSEM 2026; Shukla dkk. di ISTAS 2025; Liu dkk. (EvalPlus) di NeurIPS 2023. Catatan venue yang terkonfirmasi lewat halaman penyelenggara: Sandoval dkk. (USENIX Security 2023), Spracklen dkk. (USENIX Security 2025), Sarkar dan Drosos (PPIG 2025). Tidak terkonfirmasi: SWE-bench (ICLR 2024; OpenReview menolak klien otomatis). Tidak ditemukan versi terbit untuk: Becker dkk. (METR), Elsworth dkk., Ge dkk., Jegham dkk., Kosmyna dkk., Lehmann dkk. (hanya pra-cetak SSRN), Peng dkk., Sapkota dkk., Shen dan Tamkin (hanya catatan blog sekunder, tidak dipakai). Pencarian berbasis judul lewat Crossref, bukan pencarian sistematis. |
+| Isi halaman web masih sesuai klaim | Terbaca ulang dan cocok: Willison ("without reviewing the code it writes"), CNN/KRDO (definisi Collins), Osmani, ADS-L (kutipan Karpathy dan tanggal 2 Februari 2025), DORA ("amplifier"), Stack Overflow (84%), IEA (415 TWh pada 2024, sekitar 945 TWh pada 2030), SLSA (v1.0 berstatus Retired), SE Menkominfo 9/2023 (halaman membahas Etika Kecerdasan Artifisial), OWASP (daftar 2025), NIST AI RMF (halaman terbuka). Halaman Kantor Hak Cipta AS: PDF diunduh (HTTP 200, 1,4 MB), isi tidak dibaca ulang. UNESCO: HTTP 200 tetapi isi tidak terbaca (lihat catatan di entri). Tanggal rilis dan angka metodologi DORA tidak ada pada halaman, sama seperti 2026-11-19. |
+| Temuan baru yang ditambahkan | Pembaruan METR 24 Februari 2026; Maier dkk. (meta-analisis, preprint); Bassner dkk. (RCT CS1 TUM, terbit); Gardella dkk. (preprint); Chen dkk. (AIware 2025). Hanya yang abstraknya atau halamannya benar-benar dibuka. Studi lain yang muncul pada hasil pencarian (mis. Contractor dan Reyes 2026, esai bukan pemrograman) dibuka metadatanya tetapi tidak dipakai. |
+| Perubahan kesimpulan | Tidak ada yang membalik. Dilemahkan: angka -19% METR sebagai gambaran alat sekarang. Dikuatkan: AI menaikkan kinerja tanpa menaikkan belajar, tutor berpagar menjaga motivasi (bagian 4.5). Usulan baru U-18 (bagian 7.2). |
+
+Tinjauan berikutnya: **Mei 2027** (enam bulan; keputusan #139, Q7), dicatat
+di dokumen ini tanpa issue terbuka (instruksi pemilik 2026-11-20). Yang perlu
+dicek pada saat itu: status final SSDF Rev. 1, hasil METR dengan desain baru,
+versi terbit Maier dkk., Gardella dkk., dan Shen dan Tamkin.
