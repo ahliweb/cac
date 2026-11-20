@@ -932,7 +932,8 @@ anak**`), a banner taken from the **sheet's** status (`draf`, `ditinjau` or
 verbatim, and a footer `Status lembar: <status>.` with the programme and, for an
 approved sheet, the date and reviewer role of `learnerSheetReview`. The rule
 about a name or identity field applies to these sheets too. Every module of
-the five programmes now has a worksheet, all `draf` (#285 to #289), and their
+the five programmes now has a worksheet (#285 to #289), approved by the
+programme owner on 2026-11-20 (#299), and their
 schemas require one (`*_LEARNER_SHEET_REQUIRED` `true`).
 
 `plan` and `render lembar-siswa` still refuse these programmes (they read
