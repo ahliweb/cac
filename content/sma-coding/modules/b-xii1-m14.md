@@ -12,7 +12,7 @@ Ini inti asesmen: jawab dari ingatan, tanpa melihat catatan, lalu cocokkan denga
 
 1. Mengapa `Disallow` di `robots.txt` bukan cara menyembunyikan halaman dari hasil pencarian, dan apa gantinya?
 2. Satu kalimat apa yang diwajibkan lisensi MIT, dan mengapa `LICENSE` tidak dihapus dari repositori turunan?
-3. Mengapa isi situs latihan memakai nama, alamat, dan surel fiktif berdomain `.example`?
+3. Mengapa isi situs latihan memakai nama, alamat, dan surel fiktif berdomain contoh seperti `example.org`?
 4. Apa yang dibuktikan dan tidak dibuktikan oleh gerbang yang hijau?
 5. Sebutkan empat hal yang membuat sebuah tugas dalam rencana dapat diperiksa orang lain.
 
@@ -66,7 +66,7 @@ Mencoba mengingat lebih dulu, lalu menjarakkan waktu mengulang, membantu ingatan
 
 ## Kunci dan petunjuk
 
-**Ingat kembali.** 1: perayap hanya diminta tidak menjelajahi; URL yang ditautkan dari tempat lain masih bisa diindeks tanpa deskripsi; gantinya `noindex` atau kata sandi. 2: "The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software"; tanpa `LICENSE` pemberitahuan itu hilang dari salinan. 3: agar tidak ada data nyata atau orang yang dapat dikenali di repositori, dan domain `.example` termasuk nama domain yang dicadangkan untuk contoh (RFC 2606) sehingga tidak menuju pihak nyata. 4: dibuktikan bahwa semua pemeriksaan yang ditulis lolos; tidak dibuktikan bahwa situs benar untuk semua masukan atau bahwa pemeriksaannya sudah cukup. 5: pemilik, perkiraan jam kecil (paling lama 4), kriteria selesai yang terukur, dan urutan atau ketergantungannya.
+**Ingat kembali.** 1: perayap hanya diminta tidak menjelajahi; URL yang ditautkan dari tempat lain masih bisa diindeks tanpa deskripsi; gantinya `noindex` atau kata sandi. 2: "The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software"; tanpa `LICENSE` pemberitahuan itu hilang dari salinan. 3: agar tidak ada data nyata atau orang yang dapat dikenali di repositori, dan domain seperti `example.org` dicadangkan untuk contoh (RFC 2606) sehingga tidak menuju pihak nyata; uji repositori pun hanya menerima domain contoh itu. 4: dibuktikan bahwa semua pemeriksaan yang ditulis lolos; tidak dibuktikan bahwa situs benar untuk semua masukan atau bahwa pemeriksaannya sudah cukup. 5: pemilik, perkiraan jam kecil (paling lama 4), kriteria selesai yang terukur, dan urutan atau ketergantungannya.
 
 **Latihan bercampur.** Rubrik singkat: tiap soal dinilai dari ketepatan, penelusuran langkah, dan alasan; jawaban benar tanpa langkah mendapat nilai sebagian.
 

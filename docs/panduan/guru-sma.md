@@ -15,7 +15,7 @@ alias lama yang berperilaku sama).
 | Jalur E (komputasi kuantum dan cloud quantum, **kelas XI-XII saja**, kode minggu `E-XI1-M1`) | **Disetujui** v1.2 (issue [#88](https://github.com/ahliweb/osn/issues/88)) sebagai **pengayaan di luar rumusan CP**. Tidak ada semester kelas X dan tidak ada blok fondasi. |
 | Kemampuan masuk dari SMP dan penempatan di blok fondasi (bagian 3.0, v1.4) | **Berlaku sejak silabus v1.4** (keputusan pemilik 2026-11-19, issue [#177](https://github.com/ahliweb/osn/issues/177)). Silabus tidak mensyaratkan SMP; murid dengan latar SMP yang kuat tetap di kelas bersama dan mengerjakan tugas pendalaman setelah pengamatan awal di `FND-X1-M1` (tanpa tes, tanpa nilai angka, tanpa catatan di repositori); `FND-X1-M6` (keamanan akun dan kebijakan AI kelas) tidak dipadatkan bagi siapa pun. |
 | Blok fondasi informatika dasar kelas X (7 minggu, kelas bersama sebelum memilih jalur, kode `FND-X1-M1..M7`) | **Berlaku sejak silabus v1.1** (bagian 3.0). Rencana kelas X semester 1 dan 2 jalur A dan B disusun ulang; tabel padanan nomor minggu v1.0 ke v1.1 ada di bagian 3.0. Dokumen asal: [`usulan-fondasi-kelas-x.md`](../programs/sma-coding/usulan-fondasi-kelas-x.md). |
-| Modul materi `sma-coding` (365 modul per 2026-11-20: fondasi kelas X 6, matematika komputasi 7, cloud 7, pendamping literasi digital 9, jalur A 63, jalur B 63, jalur C 77, jalur D 77, jalur E 56) | **Tersedia sebagai draf** di `content/sma-coding/modules/`, terindeks di `data/sma-coding/modules.json` (issue [#107](https://github.com/ahliweb/osn/issues/107), [#87](https://github.com/ahliweb/osn/issues/87), [#89](https://github.com/ahliweb/osn/issues/89), [#69](https://github.com/ahliweb/osn/issues/69), [#105](https://github.com/ahliweb/osn/issues/105), [#124](https://github.com/ahliweb/osn/issues/124)). Semuanya berspanduk DRAF sampai pemilik menyetujuinya; baca dengan `osn render modul --program sma-coding --id <id>`, misalnya `--id c-x1-m8`. |
+| Modul materi `sma-coding` (393 modul per 2026-11-20: fondasi kelas X 6, matematika komputasi 7, cloud 7, pendamping literasi digital 9, jalur A 77, jalur B 77, jalur C 77, jalur D 77, jalur E 56) | **Tersedia sebagai draf** di `content/sma-coding/modules/`, terindeks di `data/sma-coding/modules.json` (issue [#107](https://github.com/ahliweb/osn/issues/107), [#87](https://github.com/ahliweb/osn/issues/87), [#89](https://github.com/ahliweb/osn/issues/89), [#69](https://github.com/ahliweb/osn/issues/69), [#105](https://github.com/ahliweb/osn/issues/105), [#124](https://github.com/ahliweb/osn/issues/124)). Semuanya berspanduk DRAF sampai pemilik menyetujuinya; baca dengan `osn render modul --program sma-coding --id <id>`, misalnya `--id c-x1-m8`. |
 | Rencana mingguan | Belum diuji di kelas (silabus bagian 8). Rencana jalur C, D, dan E belum ditinjau guru atau mitra; harga, spesifikasi perangkat, dan ketentuan layanan cloud quantum banyak yang `[belum terverifikasi]`. |
 
 Jalur A dan B belum punya modul materi mingguan di `content/sma-coding/`
@@ -236,7 +236,7 @@ cac render weekly: belum didukung untuk program sma-coding: perintah ini membaca
 ```
 
 Program ini punya perintah baca modul, dan `data/sma-coding/modules.json` sudah
-berisi 365 modul draf. (Untuk program yang belum punya `modules.json`, perintah
+berisi 393 modul draf. (Untuk program yang belum punya `modules.json`, perintah
 itu exit 2 dengan pesan `this programme has no modules.json`.)
 
 Bacalah sebuah modul yang sudah diindeks dengan:

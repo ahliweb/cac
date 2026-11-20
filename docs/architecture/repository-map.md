@@ -41,7 +41,7 @@ run over this directory in CI: `osn validate` per registered programme (and the 
 
 **What must never go here:** transcribed syllabus content (that is `data/`); real learner data; problems copied from judges or competitions (link them instead); a module marked `disetujui` by an AI agent.
 
-**State today:** `content/osn/modules/` holds ten modules, one per OSN topic family; all are `disetujui` (the pilot `dasar-pemrograman` and the other nine approved by the programme owner on 2026-11-18). The six coding programmes hold 725 modules in total as of 2026-11-20, all `draf` and not yet reviewed by the owner: `tk-coding` 48 modules, 48 learner sheets and 48 SVG; `sd-coding` 168 modules, 168 sheets and 168 SVG; `smp-coding` 84; `sma-coding` 365 (29 cross-track plus 336 weekly: A 63, B 63, C 77, D 77, E 56); `kuliah-coding` 24; `dewasa-coding` 36 (counts from each `data/<program>/modules.json`). Points a human reviewer must check are collected in `docs/programs/catatan-tinjauan-modul.md`.
+**State today:** `content/osn/modules/` holds ten modules, one per OSN topic family; all are `disetujui` (the pilot `dasar-pemrograman` and the other nine approved by the programme owner on 2026-11-18). The six coding programmes hold 753 modules in total as of 2026-11-20, all `draf` and not yet reviewed by the owner: `tk-coding` 48 modules, 48 learner sheets and 48 SVG; `sd-coding` 168 modules, 168 sheets and 168 SVG; `smp-coding` 84; `sma-coding` 393 (29 cross-track plus 364 weekly: A 77, B 77, C 77, D 77, E 56); `kuliah-coding` 24; `dewasa-coding` 36 (counts from each `data/<program>/modules.json`). Points a human reviewer must check are collected in `docs/programs/catatan-tinjauan-modul.md`.
 
 ## `src/schema/`
 

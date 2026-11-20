@@ -181,7 +181,9 @@ describe("osn validate with a module index (real subprocess, fixture corpus)", (
 
 describe("bun run check:module-code (real subprocess)", () => {
   // Compiles every cpp block of every module with g++, so it grows with the
-  // module count (#55) and needs more than bun's 5 s default timeout.
+  // module count (#55) and needs more than bun's 5 s default timeout. With
+  // 711 cpp blocks (2026-11-20) a loaded machine takes about 180 s, so the
+  // budget is 600 s; CI takes about two minutes.
   test("passes on the committed modules and counts their cpp blocks", async () => {
     const result = await run(["bun", "run", "scripts/check-module-code.ts"]);
     expect(result.exitCode).toBe(0);
@@ -189,5 +191,5 @@ describe("bun run check:module-code (real subprocess)", () => {
     expect(result.stdout).toMatch(
       /OK -- \d+ cpp, \d+ arduino \(mock Arduino.h\), \d+ python, \d+ ts and \d+ js block\(s\) in \d+ module file\(s\)/,
     );
-  }, 180_000);
+  }, 600_000);
 });

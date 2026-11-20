@@ -1,7 +1,7 @@
 # Rancangan Seri Modul Jalur A dan B (sma-coding): 154 Modul, Satu per Minggu
 
-- **Version:** v0.2.0
-- **Last updated:** 2026-11-19
+- **Version:** v0.2.1
+- **Last updated:** 2026-11-20
 - **Status:** Rancangan **DISETUJUI pemilik 2026-11-19** lewat dialog keputusan (bagian 8): pertanyaan 1 opsi "Setujui, evaluasi guru paralel" (templat dan rancangan disetujui; penulisan tidak dijeda, evaluasi guru nyata berjalan paralel dan temuannya diperbaiki lewat PR revisi), pertanyaan 2 opsi "Per semester, A dan B paralel", pertanyaan 3 opsi "Soal orisinal + tautan resmi". Pertanyaan 4 tidak diajukan ke pemilik; orchestrator memakai opsi yang disarankan (pemeriksaan sintaks `ts`/`js` digabung sebelum P1 B) karena pemeriksaan itu sudah selesai dibuat. Persetujuan ini untuk rancangan, bukan modul: semua modul jalur A dan B yang ditulis berstatus `draf` (ADR-0007).
 - **Changeset:** `.changeset/rancangan-modul-ab.md` (patch): dokumen rancangan saja; tidak mengubah `content/`, `data/`, `src/`, atau silabus.
 - **Issue:** [#237](https://github.com/ahliweb/osn/issues/237); lanjutan dari issue #124 (seri modul belajar siswa SMA).
@@ -504,6 +504,11 @@ acak; modul proyek-akhir jalur B yang berbentuk fase memakai `Rencana sprint`
   `localhost`; data contoh sintetis dan jelas palsu (mis. daftar tugas
   karangan); formulir kontak (`b-xii2-m5`) tidak menyimpan atau mengirim data
   pribadi nyata.
+  Catatan `b-xii2-m5`: profil `landing` `awcms-one` tidak punya formulir
+  kontak, dan FAQ halaman kontak berasal dari pengaturan CMS, bukan dari
+  berkas seed. Modul karena itu membuat formulir sebagai prototipe
+  `localhost` terpisah yang memvalidasi masukan lalu membuangnya (tanpa
+  menyimpan data pribadi nyata); pengisian FAQ di CMS lab adalah tugas guru.
 - **Keamanan web sesuai silabus.** `b-xi2-m10` memperkenalkan XSS, rahasia di
   variabel lingkungan, dan pokok UU ITE dan UU PDP; kerentanan
   didemonstrasikan hanya pada aplikasi kecil milik latihan di mesin lokal
@@ -732,5 +737,6 @@ empat, mengikuti batas satu dialog.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v0.2.1 | 2026-11-20 | Bagian 5.3: catatan `b-xii2-m5` (profil `landing` tanpa formulir kontak; FAQ dari pengaturan CMS; formulir prototipe `localhost` yang memvalidasi lalu membuang data; FAQ di CMS lab tugas guru). |
 | v0.2.0 | 2026-11-19 | Mencatat keputusan pemilik lewat dialog (pertanyaan 1: "Setujui, evaluasi guru paralel"; 2: per semester, A dan B paralel; 3: soal orisinal dan tautan resmi); pertanyaan 4 memakai opsi disarankan oleh orchestrator. Catatan P2 di bagian 7 disesuaikan (tanpa jeda evaluasi). |
 | v0.1.0 | 2026-11-19 | Rancangan awal (issue #237): pemetaan 154 modul (jalur A 77, B 77) dibangkitkan dari `weeks.json` dan `cp-mapping.json` dengan jenis minggu, butir CP (memenuhi dan mendukung), dan prasyarat; jembatan OSN, SMP, dan keterkaitan modul yang ada; aturan khas jalur A (C++17, soal orisinal, kompleksitas) dan B (Bun, keamanan web, demo `awcms-one`); 12 gelombang dan 22 batch; empat pertanyaan keputusan. Status DRAF, menunggu keputusan pemilik. |
