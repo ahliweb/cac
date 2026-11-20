@@ -224,7 +224,7 @@ whose programme is not registered is a draft and is not validated.
 own file set and schemas (`SMA_DATA_FILE_REGISTRY` in
 `src/domain/sma-corpus-audit.ts`; schemas `src/schema/sma-*.ts`), not the
 OSN invariants above. The eight files transcribe the owner-approved
-`docs/programs/sma-coding/silabus.md` v1.4.0 (tracks A to E plus the shared
+`docs/programs/sma-coding/silabus.md` v1.4.2 (tracks A to E plus the shared
 grade-X foundation block): `cp-elements.json`, `tracks.json`,
 `structure.json`, `weeks.json`, `foundation.json`, `cp-mapping.json`,
 `osn-bridge.json` and `smp-bridge.json` (the SMP entry-and-placement table of
@@ -301,8 +301,8 @@ owner-approved (2026-11-19).
 | Programme | Syllabus | Corpus files | Schemas / audit |
 | --- | --- | --- | --- |
 | `tk-coding` | v1.0.3 | 7 (`bridge`, `cp-elements`, `cp-mapping`, `decisions`, `goals`, `structure`, `weeks`) | `src/schema/tk-*.ts`, `src/domain/tk-corpus-audit.ts` |
-| `kuliah-coding` | v1.2.0 | 6 (`ai-policy`, `bridges`, `courses`, `cpl`, `knowledge-areas`, `tracks`) | `src/schema/kul-*.ts`, `src/domain/kul-corpus-audit.ts` |
-| `dewasa-coding` | v1.2.0 | 8 (`bridges`, `certification`, `kuliah-bridge`, `module-plan`, `shared`, `skkni-units`, `structure`, `tracks`) | `src/schema/dw-*.ts`, `src/domain/dw-corpus-audit.ts` |
+| `kuliah-coding` | v1.2.1 | 6 (`ai-policy`, `bridges`, `courses`, `cpl`, `knowledge-areas`, `tracks`) | `src/schema/kul-*.ts`, `src/domain/kul-corpus-audit.ts` |
+| `dewasa-coding` | v1.2.1 | 8 (`bridges`, `certification`, `kuliah-bridge`, `module-plan`, `shared`, `skkni-units`, `structure`, `tracks`) | `src/schema/dw-*.ts`, `src/domain/dw-corpus-audit.ts` |
 | `sd-coding` | v1.1.0 | 5 (`bridges`, `cp-elements`, `cp-mapping`, `structure`, `weeks`) | `src/schema/sd-*.ts`, `src/domain/sd-corpus-audit.ts` |
 | `smp-coding` | v1.2.0 | 7 (`bridge`, `club`, `cp-elements`, `cp-mapping`, `structure`, `uncovered`, `weeks`) | `src/schema/smp-*.ts`, `src/domain/smp-corpus-audit.ts` |
 
@@ -585,7 +585,7 @@ Real output (`cac plan --program sma-coding --track A --semester X1`, abridged):
 
 Program: Silabus Pembelajaran Coding SMA
 Cakupan: semester X1
-Sumber: silabus versi 1.4.1, tanggal 2026-11-19.
+Sumber: silabus versi 1.4.2, tanggal 2026-11-20.
 
 ## Semester X1 (kelas X, fase E)
 
@@ -627,7 +627,7 @@ A pengayaan track states so in the header (`cac plan --program sma-coding --trac
 
 Program: Silabus Pembelajaran Coding SMA
 Cakupan: semester XI1
-Sumber: silabus versi 1.4.1, tanggal 2026-11-19.
+Sumber: silabus versi 1.4.2, tanggal 2026-11-20.
 Catatan: jalur D adalah pengayaan di luar rumusan CP; tidak dihitung sebagai pemenuhan butir CP.
 ```
 
@@ -788,7 +788,7 @@ Tidak ada butir CP yang dipetakan ke minggu ini dalam pemetaan silabus.
 - [ ] Keluaran selesai: tabel konversi; lembar kode karakter; gambar 8x8 dalam bentuk deret bit
 
 ---
-Sumber: Silabus Pembelajaran Coding SMA, versi 1.4.1, tanggal 2026-11-19.
+Sumber: Silabus Pembelajaran Coding SMA, versi 1.4.2, tanggal 2026-11-20.
 ```
 
 Unknown code (exit `2`):

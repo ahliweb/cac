@@ -90,7 +90,7 @@ describe("osn plan --program sma-coding", () => {
       semesters: { semester: string; foundation: unknown[]; weeks: unknown[] }[];
     };
     expect(json.track.id).toBe("A");
-    expect(json.syllabusVersion).toBe("1.4.1");
+    expect(json.syllabusVersion).toBe("1.4.2");
     expect(json.semesters.map((s) => s.semester)).toEqual([
       "X1",
       "X2",
@@ -213,7 +213,7 @@ describe("osn render lembar-siswa --program sma-coding", () => {
     expect(text).toContain("- [ ] ");
     expect(text).not.toContain("[x]");
     expect(text).toContain(
-      "Sumber: Silabus Pembelajaran Coding SMA, versi 1.4.1, tanggal 2026-11-19.",
+      "Sumber: Silabus Pembelajaran Coding SMA, versi 1.4.2, tanggal 2026-11-20.",
     );
   });
 

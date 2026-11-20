@@ -1,10 +1,11 @@
 # Riset AI dalam Rekayasa Perangkat Lunak: Vibe Coding, AI-native Engineer, dan Pengembangan Berkelanjutan
 
-- **Version:** v0.3.0
+- **Version:** v0.3.1
 - **Last updated:** 2026-11-20
 - **Status:** **DRAF** (riset; dokumen ini sendiri belum disetujui sebagai silabus atau korpus). Issue #139. Keputusan pemilik atas usulan U-01..U-17 dan pertanyaan Q1-Q7 dicatat pada 2026-11-19 (bagian 7.1 dan 8.1), dan usulannya sudah diterapkan di dokumen program masing-masing. Konten karangan menurut [ADR-0007](../architecture/adr/0007-authored-learning-content.md).
 - **Tinjauan berikutnya:** Mei 2027 (enam bulan, keputusan #139, Q7); dicatat di dokumen, tanpa issue terbuka (instruksi pemilik 2026-11-20).
 - **Changelog:**
+  - v0.3.1 (2026-11-20): U-18 diterapkan di silabus (#281): `sma-coding` v1.4.2, `kuliah-coding` v1.2.1, `dewasa-coding` v1.2.1.
   - v0.3.0 (2026-11-20): tinjauan berkala pertama (issue #151), **dipercepat dari jadwal Mei 2027 atas instruksi pemilik 2026-11-20** (syarat alasan waktu atau pemantauan pada issue dihapus; tinjauan dikerjakan sekarang). Semua 54 rujukan dicek ulang (bagian 9.7); empat preprint kini terbit (Hassan dkk. 2024 dan 2025 di TOSEM 2026, Shukla dkk. di ISTAS 2025, Liu dkk. di NeurIPS 2023) dan dua preprint ber-catatan venue terkonfirmasi lewat halaman penyelenggara (Sandoval dkk., Spracklen dkk.) serta satu lewat halaman PPIG (Sarkar dan Drosos); tidak ada tautan mati. Temuan baru 2026 ditambahkan (pembaruan METR Februari 2026, RCT CS1 di TUM, studi pasangan Copilot, meta-analisis produktivitas dan belajar, studi AIware 2025), bagian 4.1, 4.5, 4.6, dan 9. Usulan baru U-18 untuk keputusan pemilik (bagian 7.2); tidak ada program, silabus, atau korpus yang diubah. Rekap bagian 9.6 dihitung ulang (59 rujukan).
   - v0.2.1 (2026-11-19): catatan status di bawah tabel bagian 6 (sinkron dokumen #124): baris SMA jalur A, B, C dan jalur D di tabel itu ditulis sebelum keputusan #139 diterapkan; isi riset, bukti, dan daftar pustaka tidak diubah.
   - v0.2.0 (2026-11-19): status penerapan tiap usulan U-01..U-17 (bagian 7.1) dan keputusan pemilik atas Q1-Q7 (bagian 8.1) dicatat sesuai keputusan pemilik pada issue #139; koreksi U-03 (minggu `A-XII2-M5..M8`, bukan minggu 6-8). Isi riset (bukti, kutipan, daftar pustaka) tidak diubah.
@@ -658,7 +659,7 @@ terbaru:
 
 U-18 **diputuskan pemilik 2026-11-20** lewat dialog pilihan baku, opsi **"Tambahkan sebagai anjuran"**: tiga butir pagar belajar
 ditambahkan sebagai anjuran (bukan larangan) pada kebijakan AI `sma-coding` 7.4, `kuliah-coding` 6.3-6.5, dan `dewasa-coding` 9.1;
-penerapannya di silabus dikerjakan di issue terpisah.
+**diterapkan 2026-11-20** (#281): `sma-coding` v1.4.2, `kuliah-coding` v1.2.1 (bagian 6.4), `dewasa-coding` v1.2.1.
 
 ## 8. Batasan dokumen dan pertanyaan terbuka untuk pemilik
 

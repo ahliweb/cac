@@ -1,6 +1,6 @@
 {
-  "syllabusVersion": "1.4.1",
-  "syllabusDate": "2026-11-19",
+  "syllabusVersion": "1.4.2",
+  "syllabusDate": "2026-11-20",
   "sourceSection": "bagian 3.0",
   "intro": "Silabus ini tidak mensyaratkan `smp-coding`, mata pelajaran Koding dan KA, ataupun Informatika SMP tertentu: murid kelas X berasal dari SMP dengan bentuk program yang berbeda-beda (`smp-coding` bagian 2) `[asumsi]`. Blok fondasi dan minggu jalur kelas X semester 1 mengajar dari awal, sehingga murid dengan latar SMP yang kuat mengulang sebagian isinya. Pengulangan itu diatur, bukan dibiarkan: fondasi tetap kelas bersama lintas jalur (keputusan pemilik, bagian 9.1), dan murid yang sudah menguasai suatu minggu mengerjakan tugas pendalaman di dalam kelas yang sama, bukan keluar dari kelas.",
   "rows": [
