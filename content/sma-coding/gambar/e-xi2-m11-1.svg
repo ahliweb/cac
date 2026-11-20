@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 330" width="680" height="330" role="img" aria-labelledby="t d">
+  <title id="t">Sirkuit Deutsch dengan vektor tiap tahap kosong</title>
+  <desc id="d">Dua kawat: qubit query mulai dari |0&gt; dan qubit bantu mulai dari |1&gt;. Urutan: H pada keduanya, oracle U f pada keduanya, H pada qubit query, lalu pembacaan qubit query. Di bawah tiga kotak kosong untuk vektor empat komponen setelah H pada keduanya, setelah oracle, dan setelah H pada qubit query.</desc>
+  <rect width="680" height="330" fill="#ffffff"/>
+  <text x="20" y="24" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">Fungsi: f(0) = 1, f(1) = 0</text>
+  <text x="20" y="69" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">query |0&gt;</text>
+  <text x="20" y="119" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">bantu |1&gt;</text>
+  <line x1="105" y1="65" x2="660" y2="65" stroke="#222222" stroke-width="2"/>
+  <line x1="105" y1="115" x2="660" y2="115" stroke="#222222" stroke-width="2"/>
+  <rect x="130" y="47" width="36" height="36" fill="#ffffff" stroke="#2a5d9f" stroke-width="2.5"/>
+  <text x="148" y="71" font-family="sans-serif" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">H</text>
+  <rect x="130" y="97" width="36" height="36" fill="#ffffff" stroke="#2a5d9f" stroke-width="2.5"/>
+  <text x="148" y="121" font-family="sans-serif" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">H</text>
+  <rect x="210" y="40" width="70" height="100" fill="#ffffff" stroke="#222222" stroke-width="2.5"/>
+  <text x="245" y="95" font-family="sans-serif" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">U_f</text>
+  <rect x="330" y="47" width="36" height="36" fill="#ffffff" stroke="#2a5d9f" stroke-width="2.5"/>
+  <text x="348" y="71" font-family="sans-serif" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">H</text>
+  <rect x="410" y="47" width="70" height="36" fill="#ffffff" stroke="#b3261e" stroke-width="2.5"/>
+  <text x="445" y="71" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222" text-anchor="middle">baca</text>
+  <text x="148" y="160" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">(1)</text>
+  <text x="245" y="160" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">(2)</text>
+  <text x="348" y="160" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">(3)</text>
+  <text x="20" y="207" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">(1) setelah H pada keduanya:</text>
+  <rect x="250" y="185" width="400" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="20" y="252" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">(2) setelah oracle:</text>
+  <rect x="250" y="230" width="400" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="20" y="297" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">(3) setelah H pada qubit query:</text>
+  <rect x="250" y="275" width="400" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="20" y="322" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">Tulis vektor sebagai (komponen 00 ; 01 ; 10 ; 11).</text>
+</svg>

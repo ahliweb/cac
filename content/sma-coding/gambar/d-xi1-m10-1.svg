@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 452" width="570" height="452" role="img" aria-labelledby="t d">
+  <title id="t">Delapan biji dengan label nyata, tebakan, dan matriks kosong</title>
+  <desc id="d">Tabel delapan biji dengan baris nyata dan tebak serta baris sel kosong, dan matriks kebingungan dua kali dua yang kosong dengan baris nyata cacat dan baik dan kolom tebak cacat dan baik.</desc>
+  <rect width="570" height="452" fill="#ffffff"/>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker></defs>
+  <text x="10" y="40" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#222222">biji ke-</text>
+  <text x="10" y="90" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#222222">nyata</text>
+  <text x="10" y="140" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#222222">tebak</text>
+  <text x="10" y="190" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#222222">sel</text>
+  <rect x="100" y="16" width="56" height="36" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="128" y="40" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">1</text>
+  <rect x="100" y="66" width="56" height="36" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="128" y="90" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">1</text>
+  <rect x="100" y="116" width="56" height="36" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="128" y="140" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">1</text>
+  <rect x="100" y="166" width="56" height="36" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="156" y="16" width="56" height="36" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="184" y="40" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">2</text>
+  <rect x="156" y="66" width="56" height="36" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="184" y="90" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">0</text>
+  <rect x="156" y="116" width="56" height="36" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="184" y="140" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">0</text>
+  <rect x="156" y="166" width="56" height="36" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="212" y="16" width="56" height="36" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="240" y="40" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">3</text>
+  <rect x="212" y="66" width="56" height="36" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="240" y="90" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">0</text>
+  <rect x="212" y="116" width="56" height="36" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="240" y="140" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">1</text>
+  <rect x="212" y="166" width="56" height="36" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="268" y="16" width="56" height="36" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="296" y="40" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">4</text>
+  <rect x="268" y="66" width="56" height="36" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="296" y="90" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">1</text>
+  <rect x="268" y="116" width="56" height="36" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="296" y="140" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">0</text>
+  <rect x="268" y="166" width="56" height="36" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="324" y="16" width="56" height="36" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="352" y="40" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">5</text>
+  <rect x="324" y="66" width="56" height="36" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="352" y="90" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">0</text>
+  <rect x="324" y="116" width="56" height="36" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="352" y="140" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">0</text>
+  <rect x="324" y="166" width="56" height="36" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="380" y="16" width="56" height="36" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="408" y="40" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">6</text>
+  <rect x="380" y="66" width="56" height="36" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="408" y="90" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">0</text>
+  <rect x="380" y="116" width="56" height="36" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="408" y="140" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">0</text>
+  <rect x="380" y="166" width="56" height="36" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="436" y="16" width="56" height="36" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="464" y="40" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">7</text>
+  <rect x="436" y="66" width="56" height="36" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="464" y="90" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">0</text>
+  <rect x="436" y="116" width="56" height="36" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="464" y="140" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">0</text>
+  <rect x="436" y="166" width="56" height="36" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="492" y="16" width="56" height="36" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="520" y="40" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">8</text>
+  <rect x="492" y="66" width="56" height="36" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="520" y="90" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">1</text>
+  <rect x="492" y="116" width="56" height="36" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="520" y="140" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">1</text>
+  <rect x="492" y="166" width="56" height="36" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="10" y="232" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">1 = cacat, 0 = baik. Tulis TP, FP, FN, atau TN di baris sel.</text>
+  <text x="330" y="262" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">TEBAK</text>
+  <text x="260" y="282" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">cacat</text>
+  <text x="400" y="282" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">baik</text>
+  <text x="180" y="332" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="end" fill="#222222">nyata: cacat</text>
+  <text x="180" y="402" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="end" fill="#222222">nyata: baik</text>
+  <rect x="190" y="292" width="140" height="70" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="330" y="292" width="140" height="70" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="190" y="362" width="140" height="70" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="330" y="362" width="140" height="70" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+</svg>

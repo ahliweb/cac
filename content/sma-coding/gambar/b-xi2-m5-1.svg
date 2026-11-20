@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" width="640" height="240" role="img" aria-labelledby="t d">
+  <title id="t">Tabel tiga keadaan lisensi data</title>
+  <desc id="d">Tabel dengan kolom Keadaan, Boleh apa menurut halaman resmi, dan Yang kamu lakukan. Tiga baris: CC0 1.0, CC BY 4.0, Tanpa lisensi. Dua kolom lainnya kosong.</desc>
+  <rect width="640" height="240" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <g stroke="#222222" stroke-width="2" fill="#ffffff">
+      <rect x="10" y="8" width="140" height="34" fill="#f2f2f2"/><rect x="150" y="8" width="260" height="34" fill="#f2f2f2"/><rect x="410" y="8" width="220" height="34" fill="#f2f2f2"/>
+      <rect x="10" y="42" width="140" height="62"/><rect x="150" y="42" width="260" height="62" stroke-dasharray="5 4"/><rect x="410" y="42" width="220" height="62" stroke-dasharray="5 4"/>
+      <rect x="10" y="104" width="140" height="62"/><rect x="150" y="104" width="260" height="62" stroke-dasharray="5 4"/><rect x="410" y="104" width="220" height="62" stroke-dasharray="5 4"/>
+      <rect x="10" y="166" width="140" height="62"/><rect x="150" y="166" width="260" height="62" stroke-dasharray="5 4"/><rect x="410" y="166" width="220" height="62" stroke-dasharray="5 4"/>
+    </g>
+    <g font-weight="bold"><text x="16" y="30">Keadaan</text><text x="156" y="30">Boleh apa (halaman resmi)</text><text x="416" y="30">Yang kamu lakukan</text></g>
+    <text x="16" y="78">CC0 1.0</text><text x="16" y="140">CC BY 4.0</text><text x="16" y="202">Tanpa lisensi</text>
+  </g>
+</svg>

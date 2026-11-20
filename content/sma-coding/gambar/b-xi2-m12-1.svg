@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 270" width="640" height="270" role="img" aria-labelledby="t d">
+  <title id="t">Folder situs dan tiga jalur permintaan</title>
+  <desc id="d">Kiri: pohon folder dengan folder situs berisi index.html dan gaya.css, dan berkas rahasia.txt di luar folder situs. Kanan: tabel tiga jalur permintaan, /index.html, /../rahasia.txt, /css/../app.js, dengan kolom kosong untuk menulis boleh atau DITOLAK.</desc>
+  <rect width="640" height="270" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <text x="10" y="24" font-weight="bold">./</text>
+    <g stroke="#222222" stroke-width="2" fill="none"><path d="M22 34 L22 190"/><path d="M22 60 L42 60"/><path d="M22 180 L42 180"/><path d="M62 78 L62 140"/><path d="M62 95 L82 95"/><path d="M62 135 L82 135"/></g>
+    <rect x="46" y="44" width="110" height="26" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="52" y="62" font-weight="bold">situs/ (akar)</text>
+    <text x="88" y="100">index.html</text><text x="88" y="140">gaya.css</text>
+    <text x="48" y="186" fill="#b3261e" font-weight="bold">rahasia.txt (di luar situs)</text>
+    <g stroke="#222222" stroke-width="2" fill="#ffffff">
+      <rect x="300" y="10" width="170" height="32" fill="#f2f2f2"/><rect x="470" y="10" width="160" height="32" fill="#f2f2f2"/>
+      <rect x="300" y="42" width="170" height="44"/><rect x="470" y="42" width="160" height="44" stroke-dasharray="5 4"/>
+      <rect x="300" y="86" width="170" height="44"/><rect x="470" y="86" width="160" height="44" stroke-dasharray="5 4"/>
+      <rect x="300" y="130" width="170" height="44"/><rect x="470" y="130" width="160" height="44" stroke-dasharray="5 4"/>
+    </g>
+    <g font-weight="bold"><text x="306" y="31">Jalur diminta</text><text x="476" y="31">boleh / DITOLAK</text></g>
+    <text x="306" y="69">/index.html</text><text x="306" y="113">/../rahasia.txt</text><text x="306" y="157">/css/../app.js</text>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 250" width="640" height="250" role="img" aria-labelledby="t d">
+  <title id="t">Tabel diagnosis empat gejala</title>
+  <desc id="d">Tabel dengan kolom Gejala, Kelompok, dan Langkah pertama. Empat gejala: ECONNREFUSED; status 404; status 500; halaman menampilkan Gagal TypeError padahal log API menunjukkan permintaan sampai. Dua kolom lain kosong.</desc>
+  <rect width="640" height="250" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <g stroke="#222222" stroke-width="2" fill="#ffffff">
+      <rect x="10" y="8" width="240" height="32" fill="#f2f2f2"/><rect x="250" y="8" width="160" height="32" fill="#f2f2f2"/><rect x="410" y="8" width="220" height="32" fill="#f2f2f2"/>
+      <rect x="10" y="40" width="240" height="50"/><rect x="250" y="40" width="160" height="50"/><rect x="410" y="40" width="220" height="50"/>
+      <rect x="10" y="90" width="240" height="50"/><rect x="250" y="90" width="160" height="50"/><rect x="410" y="90" width="220" height="50"/>
+      <rect x="10" y="140" width="240" height="50"/><rect x="250" y="140" width="160" height="50"/><rect x="410" y="140" width="220" height="50"/>
+      <rect x="10" y="190" width="240" height="56"/><rect x="250" y="190" width="160" height="56"/><rect x="410" y="190" width="220" height="56"/>
+    </g>
+    <g font-weight="bold"><text x="16" y="29">Gejala</text><text x="256" y="29">Kelompok</text><text x="416" y="29">Langkah pertama</text></g>
+    <text x="16" y="70">(a) ECONNREFUSED</text><text x="16" y="120">(b) status 404</text><text x="16" y="170">(c) status 500</text>
+    <text x="16" y="210">(d) halaman: "Gagal: TypeError",</text><text x="16" y="228">log API: permintaan sampai</text>
+  </g>
+</svg>

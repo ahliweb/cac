@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 690 512" width="690" height="512" role="img" aria-labelledby="t d">
+  <title id="t">Jadwal draf proyek akhir minggu 3 sampai 14</title>
+  <desc id="d">Papan jadwal dengan sembilan tugas pada baris dan minggu 3 sampai 14 pada kolom. Sel berwarna menunjukkan minggu kerja tiap tugas dan huruf A, B, atau C adalah penanggung jawabnya. Garis putus-putus memisahkan minggu 13 dari minggu 14. Satu tugas tidak memuat huruf penanggung jawab. Kotak kosong di bawah untuk empat masalah yang kamu temukan.</desc>
+  <rect width="690" height="512" fill="#ffffff"/>
+  <text x="345" y="22" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Jadwal draf: minggu 3 sampai 14</text>
+  <rect x="10" y="36" width="210" height="30" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="115.0" y="56.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">tugas</text>
+  <rect x="220" y="36" width="38" height="30" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="239.0" y="56.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">3</text>
+  <rect x="258" y="36" width="38" height="30" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="277.0" y="56.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">4</text>
+  <rect x="296" y="36" width="38" height="30" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="315.0" y="56.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">5</text>
+  <rect x="334" y="36" width="38" height="30" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="353.0" y="56.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">6</text>
+  <rect x="372" y="36" width="38" height="30" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="391.0" y="56.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">7</text>
+  <rect x="410" y="36" width="38" height="30" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="429.0" y="56.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">8</text>
+  <rect x="448" y="36" width="38" height="30" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="467.0" y="56.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">9</text>
+  <rect x="486" y="36" width="38" height="30" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="505.0" y="56.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">10</text>
+  <rect x="524" y="36" width="38" height="30" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="543.0" y="56.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">11</text>
+  <rect x="562" y="36" width="38" height="30" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="581.0" y="56.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">12</text>
+  <rect x="600" y="36" width="38" height="30" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="619.0" y="56.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">13</text>
+  <rect x="638" y="36" width="38" height="30" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="657.0" y="56.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">14</text>
+  <rect x="10" y="66" width="210" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="18" y="86" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">data dan pemeriksaan</text>
+  <rect x="220" y="66" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="258" y="66" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="296" y="66" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="334" y="66" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="372" y="66" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="410" y="66" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="448" y="66" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="486" y="66" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="524" y="66" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="562" y="66" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="600" y="66" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="638" y="66" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="222" y="69" width="34" height="24" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="239.0" y="86" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">A</text>
+  <rect x="10" y="96" width="210" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="18" y="116" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">garis dasar</text>
+  <rect x="220" y="96" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="258" y="96" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="296" y="96" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="334" y="96" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="372" y="96" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="410" y="96" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="448" y="96" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="486" y="96" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="524" y="96" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="562" y="96" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="600" y="96" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="638" y="96" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="260" y="99" width="34" height="24" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="277.0" y="116" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">B</text>
+  <rect x="10" y="126" width="210" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="18" y="146" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">tiga model</text>
+  <rect x="220" y="126" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="258" y="126" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="296" y="126" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="334" y="126" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="372" y="126" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="410" y="126" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="448" y="126" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="486" y="126" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="524" y="126" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="562" y="126" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="600" y="126" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="638" y="126" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="298" y="129" width="72" height="24" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="334.0" y="146" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">B</text>
+  <rect x="10" y="156" width="210" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="18" y="176" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">analisis galat</text>
+  <rect x="220" y="156" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="258" y="156" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="296" y="156" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="334" y="156" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="372" y="156" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="410" y="156" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="448" y="156" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="486" y="156" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="524" y="156" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="562" y="156" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="600" y="156" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="638" y="156" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="336" y="159" width="34" height="24" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="353.0" y="176" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">B</text>
+  <rect x="10" y="186" width="210" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="18" y="206" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">penyempurnaan</text>
+  <rect x="220" y="186" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="258" y="186" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="296" y="186" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="334" y="186" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="372" y="186" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="410" y="186" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="448" y="186" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="486" y="186" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="524" y="186" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="562" y="186" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="600" y="186" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="638" y="186" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="374" y="189" width="72" height="24" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="410.0" y="206" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">C</text>
+  <rect x="10" y="216" width="210" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="18" y="236" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">uji akhir</text>
+  <rect x="220" y="216" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="258" y="216" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="296" y="216" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="334" y="216" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="372" y="216" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="410" y="216" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="448" y="216" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="486" y="216" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="524" y="216" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="562" y="216" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="600" y="216" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="638" y="216" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="412" y="219" width="34" height="24" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <rect x="10" y="246" width="210" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="18" y="266" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">kartu model dan panduan</text>
+  <rect x="220" y="246" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="258" y="246" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="296" y="246" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="334" y="246" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="372" y="246" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="410" y="246" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="448" y="246" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="486" y="246" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="524" y="246" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="562" y="246" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="600" y="246" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="638" y="246" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="450" y="249" width="34" height="24" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="467.0" y="266" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">A</text>
+  <rect x="10" y="276" width="210" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="18" y="296" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">ulasan etika</text>
+  <rect x="220" y="276" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="258" y="276" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="296" y="276" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="334" y="276" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="372" y="276" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="410" y="276" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="448" y="276" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="486" y="276" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="524" y="276" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="562" y="276" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="600" y="276" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="638" y="276" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="488" y="279" width="34" height="24" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="505.0" y="296" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">C</text>
+  <rect x="10" y="306" width="210" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="18" y="326" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">presentasi</text>
+  <rect x="220" y="306" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="258" y="306" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="296" y="306" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="334" y="306" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="372" y="306" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="410" y="306" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="448" y="306" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="486" y="306" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="524" y="306" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="562" y="306" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="600" y="306" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="638" y="306" width="38" height="30" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="564" y="309" width="110" height="24" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="619.0" y="326" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">A</text>
+  <line x1="638" y1="32" x2="638" y2="342" stroke="#b3261e" stroke-width="2.5" stroke-dasharray="6 4"/>
+  <text x="10" y="382" font-family="sans-serif" font-size="14" fill="#b3261e" text-anchor="start">garis putus-putus = batas minggu 13 (minggu 14 asesmen)</text>
+  <text x="10" y="360" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">sel bergaris biru = minggu kerja; huruf = penanggung jawab</text>
+  <text x="10" y="416" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">Masalah yang kamu temukan:</text>
+  <text x="10" y="452" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">1.</text>
+  <rect x="32" y="426" width="300" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="350" y="452" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">2.</text>
+  <rect x="372" y="426" width="300" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="10" y="492" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">3.</text>
+  <rect x="32" y="466" width="300" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="350" y="492" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">4.</text>
+  <rect x="372" y="466" width="300" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+</svg>

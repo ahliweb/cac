@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" width="640" height="300" role="img" aria-labelledby="t d">
+  <title id="t">Pembagi tegangan dari baterai ke pin</title>
+  <desc id="d">Dari terminal positif baterai, resistor R1 20 kOhm menuju satu titik, lalu resistor R2 10 kOhm menuju tanah, dan dari titik itu ada garis ke pin papan. Kotak kosong untuk mV di pin dan mV di baterai.</desc>
+  <rect width="640" height="300" fill="#ffffff"/>
+  <g stroke="#222222" stroke-width="2" fill="none">
+    <line x1="80" y1="40" x2="240" y2="40"/>
+    <rect x="240" y="26" width="90" height="28" fill="#f2f2f2"/>
+    <line x1="330" y1="40" x2="400" y2="40"/>
+    <line x1="400" y1="40" x2="400" y2="100"/>
+    <rect x="386" y="100" width="28" height="80" fill="#f2f2f2"/>
+    <line x1="400" y1="180" x2="400" y2="250"/>
+    <line x1="80" y1="250" x2="480" y2="250"/>
+    <line x1="80" y1="40" x2="80" y2="110"/>
+    <line x1="80" y1="170" x2="80" y2="250"/>
+    <line x1="400" y1="70" x2="440" y2="70"/>
+  </g>
+  <g stroke="#222222" stroke-width="2">
+    <line x1="60" y1="110" x2="100" y2="110"/>
+    <line x1="70" y1="124" x2="90" y2="124"/>
+    <line x1="60" y1="150" x2="100" y2="150"/>
+    <line x1="70" y1="164" x2="90" y2="164"/>
+  </g>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <text x="105" y="136">baterai</text>
+    <text x="105" y="152" font-size="14">(+ di atas)</text>
+    <text x="260" y="20">R1 = 20 kOhm</text>
+    <text x="422" y="144">R2 = 10 kOhm</text>
+    <text x="446" y="75" font-weight="bold" fill="#2a5d9f">ke pin papan</text>
+    <text x="410" y="270">tanah</text>
+    <text x="30" y="30" font-weight="bold" fill="#b3261e">+</text>
+  </g>
+  <g fill="none" stroke="#222222" stroke-width="2" stroke-dasharray="6 4">
+    <rect x="470" y="200" width="160" height="34"/>
+    <rect x="470" y="244" width="160" height="34"/>
+  </g>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <text x="478" y="222">pin: ______ mV</text>
+    <text x="478" y="266">baterai: ______ mV</text>
+  </g>
+</svg>

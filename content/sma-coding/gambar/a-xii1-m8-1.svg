@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 225" width="540" height="225" role="img" aria-labelledby="t d">
+<title id="t">Tabel penelusuran pangkat modular 3 pangkat 5 modulo 7</title>
+<desc id="d">Tabel kosong dengan kolom putaran, b, hasil, dan a untuk menelusuri pangkatMod(3, 5, 7); baris awal berisi b 5, hasil 1, a 3.</desc>
+<rect width="540" height="225" fill="#ffffff"/>
+
+<g font-family="sans-serif">
+<text x="20" y="28" font-size="14" text-anchor="start" fill="#222222">Telusuri pangkatMod(3, 5, 7). Tulis nilai sesudah tiap putaran.</text>
+<rect x="40" y="45" width="110" height="28" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="95.0" y="64.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">putaran</text>
+<rect x="150" y="45" width="100" height="28" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="200.0" y="64.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">b</text>
+<rect x="250" y="45" width="100" height="28" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="300.0" y="64.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">hasil</text>
+<rect x="350" y="45" width="100" height="28" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="400.0" y="64.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">a</text>
+<rect x="40" y="73" width="110" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="95.0" y="92.25" font-size="15" text-anchor="middle" fill="#222222">awal</text>
+<rect x="150" y="73" width="100" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="200.0" y="92.25" font-size="15" text-anchor="middle" fill="#222222">5</text>
+<rect x="250" y="73" width="100" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="300.0" y="92.25" font-size="15" text-anchor="middle" fill="#222222">1</text>
+<rect x="350" y="73" width="100" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="400.0" y="92.25" font-size="15" text-anchor="middle" fill="#222222">3</text>
+<rect x="40" y="101" width="110" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="95.0" y="120.25" font-size="15" text-anchor="middle" fill="#222222">1</text>
+<rect x="150" y="101" width="100" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="250" y="101" width="100" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="350" y="101" width="100" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="40" y="129" width="110" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="95.0" y="148.25" font-size="15" text-anchor="middle" fill="#222222">2</text>
+<rect x="150" y="129" width="100" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="250" y="129" width="100" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="350" y="129" width="100" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="40" y="157" width="110" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="95.0" y="176.25" font-size="15" text-anchor="middle" fill="#222222">3</text>
+<rect x="150" y="157" width="100" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="250" y="157" width="100" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="350" y="157" width="100" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="40" y="185" width="110" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="95.0" y="204.25" font-size="15" text-anchor="middle" fill="#222222">4</text>
+<rect x="150" y="185" width="100" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="250" y="185" width="100" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="350" y="185" width="100" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+</g>
+</svg>

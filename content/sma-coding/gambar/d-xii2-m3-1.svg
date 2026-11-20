@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 380" width="660" height="380" role="img" aria-labelledby="t d">
+  <title id="t">Pembagian data latih dan uji dengan tabel kelompok</title>
+  <desc id="d">Batang 600 baris terbagi latih 450 baris dan uji 150 baris. Kotak jumlah terlambat kosong di bawah tiap bagian. Tabel kelompok jenis anak 179, referensi 95, umum 326 baris, dengan kolom terlambat dan bagian kosong.</desc>
+  <rect width="660" height="380" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <text x="15" y="22" font-weight="bold">data 600 baris</text>
+    <rect x="15" y="32" width="472" height="44" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="251" y="60" text-anchor="middle">latih: 450 baris</text>
+    <rect x="487" y="32" width="158" height="44" fill="#ffffff" stroke="#b3261e" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="566" y="60" text-anchor="middle">uji: 150 (ditutup)</text>
+    <text x="40" y="108">terlambat:</text>
+    <rect x="130" y="90" width="90" height="28" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <text x="500" y="108">terlambat:</text>
+    <rect x="590" y="90" width="55" height="28" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <text x="15" y="160" font-weight="bold">Kelompok jenis buku</text>
+    <rect x="15" y="170" width="630" height="30" fill="#2a5d9f"/>
+    <text x="110" y="190" fill="#ffffff" text-anchor="middle">jenis</text>
+    <text x="270" y="190" fill="#ffffff" text-anchor="middle">baris</text>
+    <text x="430" y="190" fill="#ffffff" text-anchor="middle">terlambat</text>
+    <text x="570" y="190" fill="#ffffff" text-anchor="middle">bagian</text>
+    <rect x="15" y="200" width="630" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+    <rect x="15" y="238" width="630" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+    <rect x="15" y="276" width="630" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+    <text x="110" y="225" text-anchor="middle">anak</text>
+    <text x="110" y="263" text-anchor="middle">referensi</text>
+    <text x="110" y="301" text-anchor="middle">umum</text>
+    <text x="270" y="225" text-anchor="middle">179</text>
+    <text x="270" y="263" text-anchor="middle">95</text>
+    <text x="270" y="301" text-anchor="middle">326</text>
+    <line x1="190" y1="170" x2="190" y2="314" stroke="#222222" stroke-width="1.5"/>
+    <line x1="350" y1="170" x2="350" y2="314" stroke="#222222" stroke-width="1.5"/>
+    <line x1="510" y1="170" x2="510" y2="314" stroke="#222222" stroke-width="1.5"/>
+    <text x="15" y="345">bagian = terlambat dibagi baris. Isi dua kolom terakhir dengan pensil.</text>
+  </g>
+</svg>

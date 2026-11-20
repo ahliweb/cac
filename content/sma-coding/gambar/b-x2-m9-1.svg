@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 290" width="600" height="290" role="img" aria-labelledby="t d">
+<title id="t">Jejak array [6, 2, 5, 1] untuk bubble sort dan insertion sort dengan isian kosong</title>
+<desc id="d">Dua blok jejak array. Blok kiri bubble sort dan blok kanan insertion sort. Tiap blok dimulai dari baris awal berisi 6 2 5 1, lalu tiga baris kosong berempat kotak: putaran 1 sampai 3 untuk bubble sort dan i sama dengan 1 sampai 3 untuk insertion sort.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#222222"/></marker></defs>
+<rect width="600" height="290" fill="#ffffff"/>
+<text x="20" y="26" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222">Bubble sort</text>
+<text x="20" y="68" font-family="sans-serif" font-size="14" fill="#222222">awal</text>
+<rect x="100" y="44" width="44" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="122" y="69" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">6</text>
+<rect x="144" y="44" width="44" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="166" y="69" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">2</text>
+<rect x="188" y="44" width="44" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="210" y="69" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">5</text>
+<rect x="232" y="44" width="44" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="254" y="69" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">1</text>
+<text x="20" y="120" font-family="sans-serif" font-size="14" fill="#222222">putaran 1</text>
+<rect x="100" y="96" width="44" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="144" y="96" width="44" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="188" y="96" width="44" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="232" y="96" width="44" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="20" y="172" font-family="sans-serif" font-size="14" fill="#222222">putaran 2</text>
+<rect x="100" y="148" width="44" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="144" y="148" width="44" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="188" y="148" width="44" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="232" y="148" width="44" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="20" y="224" font-family="sans-serif" font-size="14" fill="#222222">putaran 3</text>
+<rect x="100" y="200" width="44" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="144" y="200" width="44" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="188" y="200" width="44" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="232" y="200" width="44" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="310" y="26" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222">Insertion sort</text>
+<text x="310" y="68" font-family="sans-serif" font-size="14" fill="#222222">awal</text>
+<rect x="390" y="44" width="44" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="412" y="69" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">6</text>
+<rect x="434" y="44" width="44" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="456" y="69" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">2</text>
+<rect x="478" y="44" width="44" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="500" y="69" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">5</text>
+<rect x="522" y="44" width="44" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="544" y="69" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">1</text>
+<text x="310" y="120" font-family="sans-serif" font-size="14" fill="#222222">i = 1</text>
+<rect x="390" y="96" width="44" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="434" y="96" width="44" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="478" y="96" width="44" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="522" y="96" width="44" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="310" y="172" font-family="sans-serif" font-size="14" fill="#222222">i = 2</text>
+<rect x="390" y="148" width="44" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="434" y="148" width="44" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="478" y="148" width="44" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="522" y="148" width="44" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="310" y="224" font-family="sans-serif" font-size="14" fill="#222222">i = 3</text>
+<rect x="390" y="200" width="44" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="434" y="200" width="44" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="478" y="200" width="44" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="522" y="200" width="44" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="20" y="270" font-family="sans-serif" font-size="14" fill="#222222">Isi isi array setelah tiap putaran atau penyisipan.</text>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 300" width="612" height="300" role="img" aria-labelledby="t d">
+  <title id="t">Tabel uji manual dengan kolom catatan kosong</title>
+  <desc id="d">Tabel empat baris uji U3 sampai U6 dengan kolom Id, Hasil, Bukti, Temuan, dan Catatan. Kolom Catatan kosong untuk diisi pelajar.</desc>
+  <rect width="612" height="300" fill="#ffffff"/>
+  <text x="250" y="30" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Tabel uji manual (sebagian)</text>
+  <rect x="20" y="50" width="50" height="40" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="45.0" y="75.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">Id</text>
+  <rect x="70" y="50" width="80" height="40" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="110.0" y="75.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">Hasil</text>
+  <rect x="150" y="50" width="225" height="40" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="262.5" y="75.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">Bukti</text>
+  <rect x="375" y="50" width="77" height="40" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="413.5" y="75.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">Temuan</text>
+  <rect x="452" y="50" width="140" height="40" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="522.0" y="75.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">Catatan</text>
+  <rect x="20" y="90" width="50" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="45.0" y="115.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">U3</text>
+  <rect x="70" y="90" width="80" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="110.0" y="115.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">lulus</text>
+  <rect x="150" y="90" width="225" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="262.5" y="115.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">tangkapan layar</text>
+  <rect x="375" y="90" width="77" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="413.5" y="115.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">-</text>
+  <rect x="452" y="90" width="140" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="130" width="50" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="45.0" y="155.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">U4</text>
+  <rect x="70" y="130" width="80" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="110.0" y="155.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">belum</text>
+  <rect x="150" y="130" width="225" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="262.5" y="155.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">(kosong)</text>
+  <rect x="375" y="130" width="77" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="413.5" y="155.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">-</text>
+  <rect x="452" y="130" width="140" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="170" width="50" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="45.0" y="195.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">U5</text>
+  <rect x="70" y="170" width="80" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="110.0" y="195.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">gagal</text>
+  <rect x="150" y="170" width="225" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="262.5" y="195.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">favicon.svg memuat BjekMart</text>
+  <rect x="375" y="170" width="77" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="413.5" y="195.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">T1</text>
+  <rect x="452" y="170" width="140" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="210" width="50" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="45.0" y="235.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">U6</text>
+  <rect x="70" y="210" width="80" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="110.0" y="235.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">gagal</text>
+  <rect x="150" y="210" width="225" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="262.5" y="235.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">(kosong)</text>
+  <rect x="375" y="210" width="77" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="413.5" y="235.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">(kosong)</text>
+  <rect x="452" y="210" width="140" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="250" y="280" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Isi kolom Catatan: baris ini cacat atau tidak, dan mengapa.</text>
+</svg>

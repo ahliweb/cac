@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 420" width="660" height="420" role="img" aria-labelledby="t d">
+<title id="t">Formulir rencana proyek akhir dengan kotak isian kosong</title>
+<desc id="d">Formulir dengan kotak isian kosong berlabel: proyek dan jenis, pertanyaan, tiga kriteria selesai, uji tangan yang dihitung dulu, prediksi, dan tiga risiko dengan satu langkah kecil masing-masing.</desc>
+
+<rect width="660" height="420" fill="#ffffff"/>
+<text x="20" y="37.120000000000005" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">Proyek (jenis A / B / C)</text>
+<rect x="250" y="14" width="390" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="20" y="77.12" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">Pertanyaan (satu kalimat)</text>
+<rect x="250" y="54" width="390" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="20" y="114.4" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">Kriteria selesai 1</text>
+<rect x="250" y="94" width="390" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="20" y="150.4" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">Kriteria selesai 2</text>
+<rect x="250" y="130" width="390" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="20" y="186.4" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">Kriteria selesai 3</text>
+<rect x="250" y="166" width="390" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="20" y="225.12" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">Uji tangan (dihitung dulu)</text>
+<rect x="250" y="202" width="390" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="20" y="265.12" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">Prediksi</text>
+<rect x="250" y="242" width="390" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="20" y="302.4" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">Risiko 1 -&gt; langkah kecil</text>
+<rect x="250" y="282" width="390" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="20" y="338.4" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">Risiko 2 -&gt; langkah kecil</text>
+<rect x="250" y="318" width="390" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="20" y="374.4" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">Risiko 3 -&gt; langkah kecil</text>
+<rect x="250" y="354" width="390" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+</svg>

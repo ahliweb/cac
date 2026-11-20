@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-labelledby="t d">
+  <title id="t">Tumpukan dan antrian kosong setelah push 1, 2, 3 dan setelah pop</title>
+  <desc id="d">Dua baris gambar. Baris atas: setelah push 1, 2, 3, sebuah tumpukan vertikal tiga kotak dengan penanda atas dan sebuah antrian horizontal tiga kotak dengan penanda depan dan belakang. Baris bawah: setelah satu pop pada masing-masing, dengan kotak kosong untuk diisi.</desc>
+  <rect width="600" height="400" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker></defs>
+  <text x="20" y="26" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#222222">setelah push(1), push(2), push(3)</text>
+  <text x="90" y="52" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">tumpukan</text>
+  <rect x="60" y="60" width="60" height="40" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="60" y="100" width="60" height="40" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="60" y="140" width="60" height="40" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="128" y="85" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">&lt;- atas</text>
+  <text x="420" y="72" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">antrian</text>
+  <rect x="330" y="80" width="60" height="40" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="390" y="80" width="60" height="40" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="450" y="80" width="60" height="40" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="330" y="140" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">depan</text>
+  <text x="510" y="140" font-family="sans-serif" font-size="14" text-anchor="end" fill="#222222">belakang</text>
+  <text x="20" y="226" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#222222">setelah satu pop() pada masing-masing</text>
+  <text x="90" y="252" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">tumpukan</text>
+  <rect x="60" y="260" width="60" height="40" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="60" y="300" width="60" height="40" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="60" y="340" width="60" height="40" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="128" y="285" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">&lt;- atas</text>
+  <text x="420" y="272" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">antrian</text>
+  <rect x="330" y="280" width="60" height="40" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="390" y="280" width="60" height="40" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="450" y="280" width="60" height="40" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="330" y="340" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">depan</text>
+  <text x="510" y="340" font-family="sans-serif" font-size="14" text-anchor="end" fill="#222222">belakang</text>
+  <text x="20" y="392" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">Tulis angka di tiap kotak yang terisi; kosongkan kotak yang tak terpakai.</text>
+</svg>

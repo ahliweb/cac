@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 200" width="660" height="200" role="img" aria-labelledby="t d">
+<title id="t">Tabel barisan a pangkat x mod N untuk dicari periodenya</title>
+<desc id="d">Tabel dengan baris x bernilai 0 sampai 12 dan baris a pangkat x mod N yang kosong untuk diisi. Di atas tabel tertulis N sama dengan 35 dan a sama dengan 3, dengan isian orde r dan faktor.</desc>
+
+<rect width="660" height="200" fill="#ffffff"/>
+<text x="330" y="26" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold">N = 35, a = 3. Isi baris a^x mod N sampai kembali ke 1.</text>
+<text x="20" y="82" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">x</text>
+<text x="20" y="132" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">a^x mod N</text>
+<rect x="100" y="60" width="43" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="121.5" y="83" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">0</text>
+<rect x="100" y="106" width="43" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="143" y="60" width="43" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="164.5" y="83" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1</text>
+<rect x="143" y="106" width="43" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="186" y="60" width="43" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="207.5" y="83" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">2</text>
+<rect x="186" y="106" width="43" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="229" y="60" width="43" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="250.5" y="83" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">3</text>
+<rect x="229" y="106" width="43" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="272" y="60" width="43" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="293.5" y="83" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">4</text>
+<rect x="272" y="106" width="43" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="315" y="60" width="43" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="336.5" y="83" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">5</text>
+<rect x="315" y="106" width="43" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="358" y="60" width="43" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="379.5" y="83" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">6</text>
+<rect x="358" y="106" width="43" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="401" y="60" width="43" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="422.5" y="83" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">7</text>
+<rect x="401" y="106" width="43" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="444" y="60" width="43" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="465.5" y="83" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">8</text>
+<rect x="444" y="106" width="43" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="487" y="60" width="43" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="508.5" y="83" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">9</text>
+<rect x="487" y="106" width="43" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="530" y="60" width="43" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="551.5" y="83" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">10</text>
+<rect x="530" y="106" width="43" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="573" y="60" width="43" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="594.5" y="83" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">11</text>
+<rect x="573" y="106" width="43" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="616" y="60" width="43" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="637.5" y="83" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">12</text>
+<rect x="616" y="106" width="43" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="20" y="180" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">orde r = ______</text>
+<text x="220" y="180" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">fpb(a^(r/2) - 1, N) = ______</text>
+<text x="450" y="180" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">fpb(a^(r/2) + 1, N) = ______</text>
+</svg>

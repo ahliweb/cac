@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 300" width="540" height="300" role="img" aria-labelledby="t d">
+<title id="t">Dua tabel penelusuran untuk soal telusuri</title>
+<desc id="d">Tabel kiri: i dari 1 sampai 6 dengan kolom f kosong untuk f dikali i sisa bagi 13. Tabel kanan: lima baris kosong untuk nilai i pada perulangan i dimulai 12 dan dikurangi i &amp; -i selama i lebih dari 0.</desc>
+<rect width="540" height="300" fill="#ffffff"/>
+
+<g font-family="sans-serif">
+<text x="20" y="26" font-size="14" text-anchor="start" fill="#222222">Kiri: f = f * i % 13, mulai f = 1. Kanan: i mulai 12, i -= i &amp; -i.</text>
+<rect x="20" y="45" width="50" height="30" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="45.0" y="65.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">i</text>
+<rect x="70" y="45" width="190" height="30" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="165.0" y="65.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">f sesudah putaran</text>
+<rect x="20" y="75" width="50" height="30" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="45.0" y="95.25" font-size="15" text-anchor="middle" fill="#222222">1</text>
+<rect x="70" y="75" width="190" height="30" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="20" y="105" width="50" height="30" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="45.0" y="125.25" font-size="15" text-anchor="middle" fill="#222222">2</text>
+<rect x="70" y="105" width="190" height="30" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="20" y="135" width="50" height="30" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="45.0" y="155.25" font-size="15" text-anchor="middle" fill="#222222">3</text>
+<rect x="70" y="135" width="190" height="30" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="20" y="165" width="50" height="30" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="45.0" y="185.25" font-size="15" text-anchor="middle" fill="#222222">4</text>
+<rect x="70" y="165" width="190" height="30" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="20" y="195" width="50" height="30" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="45.0" y="215.25" font-size="15" text-anchor="middle" fill="#222222">5</text>
+<rect x="70" y="195" width="190" height="30" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="20" y="225" width="50" height="30" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="45.0" y="245.25" font-size="15" text-anchor="middle" fill="#222222">6</text>
+<rect x="70" y="225" width="190" height="30" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="290" y="45" width="90" height="30" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="335.0" y="65.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">langkah</text>
+<rect x="380" y="45" width="120" height="30" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="440.0" y="65.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">i</text>
+<rect x="290" y="75" width="90" height="30" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="335.0" y="95.25" font-size="15" text-anchor="middle" fill="#222222">1</text>
+<rect x="380" y="75" width="120" height="30" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="290" y="105" width="90" height="30" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="335.0" y="125.25" font-size="15" text-anchor="middle" fill="#222222">2</text>
+<rect x="380" y="105" width="120" height="30" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="290" y="135" width="90" height="30" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="335.0" y="155.25" font-size="15" text-anchor="middle" fill="#222222">3</text>
+<rect x="380" y="135" width="120" height="30" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="290" y="165" width="90" height="30" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="335.0" y="185.25" font-size="15" text-anchor="middle" fill="#222222">4</text>
+<rect x="380" y="165" width="120" height="30" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="290" y="195" width="90" height="30" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="335.0" y="215.25" font-size="15" text-anchor="middle" fill="#222222">5</text>
+<rect x="380" y="195" width="120" height="30" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="290" y="255" font-size="14" text-anchor="start" fill="#222222">Tulis i yang dicetak; kosongkan baris lebih.</text>
+</g>
+</svg>

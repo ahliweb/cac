@@ -410,10 +410,11 @@ const GOLDEN: readonly Golden[] = [
   {
     ids: ["06", "07"],
     row: 0,
+    // every sma-coding module has its own-status worksheet since #289 (ADR-0011)
     args: ["render", "modul", "--program", "sma-coding", "--id", "a-x1-m10", "--lembar"],
-    exit: 2,
+    exit: 0,
     kind: "text",
-    err: ['{cli} render modul: module "a-x1-m10" has no learner sheet.'],
+    out: ["# Percabangan dan logika Boolean", "**Lembar kerja**", "> **DRAF"],
   },
   {
     ids: ["06", "07"],

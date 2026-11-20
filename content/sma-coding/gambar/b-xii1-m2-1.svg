@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 690 330" width="690" height="330" role="img" aria-labelledby="t d">
+  <title id="t">Tata letak Dasar dan halaman pemakainya dengan isian kosong</title>
+  <desc id="d">Kiri: halaman yang dikirim ke tata letak Dasar berisi h1 Halaman tanpa judul dan p Isi halaman, tanpa mengirim judul. Kanan: tata letak Dasar.astro dengan head title dan main slot; dua kotak kosong untuk isi title dan tempat h1 dan p muncul.</desc>
+  <rect width="690" height="330" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker></defs>
+  <text x="10" y="28" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#222222">Halaman (tanpa mengirim judul)</text>
+  <rect x="10" y="40" width="290" height="130" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="155.0" y="83.0" font-family="monospace" font-size="14" text-anchor="middle" fill="#222222">&lt;Dasar&gt;</text>
+  <text x="155.0" y="101.0" font-family="monospace" font-size="14" text-anchor="middle" fill="#222222">  &lt;h1&gt;Halaman tanpa judul&lt;/h1&gt;</text>
+  <text x="155.0" y="119.0" font-family="monospace" font-size="14" text-anchor="middle" fill="#222222">  &lt;p&gt;Isi halaman.&lt;/p&gt;</text>
+  <text x="155.0" y="137.0" font-family="monospace" font-size="14" text-anchor="middle" fill="#222222">&lt;/Dasar&gt;</text>
+  <line x1="300" y1="105" x2="350" y2="105" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+  <text x="360" y="28" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#222222">Dasar.astro</text>
+  <rect x="360" y="40" width="320" height="260" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="372" y="66" font-family="monospace" font-size="14" text-anchor="start" fill="#222222">&lt;head&gt;&lt;title&gt;</text>
+  <rect x="372" y="76" width="296" height="36" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="372" y="134" font-family="monospace" font-size="14" text-anchor="start" fill="#222222">| Sekolah Contoh&lt;/title&gt;&lt;/head&gt;</text>
+  <text x="372" y="170" font-family="monospace" font-size="14" text-anchor="start" fill="#222222">&lt;main&gt;</text>
+  <rect x="384" y="180" width="272" height="70" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="372" y="282" font-family="monospace" font-size="14" text-anchor="start" fill="#222222">&lt;/main&gt;</text>
+  <text x="10" y="215" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#222222">Tulis di kotak putus-putus:</text>
+  <text x="10" y="238" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">atas = isi title yang dihasilkan</text>
+  <text x="10" y="260" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">bawah = apa yang muncul di dalam main</text>
+</svg>

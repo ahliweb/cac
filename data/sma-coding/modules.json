@@ -18,6 +18,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/fondasi-komputer-dan-hardware.md",
+      "learnerSheetPath": "content/sma-coding/lembar/fondasi-komputer-dan-hardware.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -45,6 +47,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/fondasi-software-dan-sistem-operasi.md",
+      "learnerSheetPath": "content/sma-coding/lembar/fondasi-software-dan-sistem-operasi.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -68,6 +72,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/fondasi-representasi-data.md",
+      "learnerSheetPath": "content/sma-coding/lembar/fondasi-representasi-data.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -99,6 +105,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/fondasi-jaringan-dan-internet.md",
+      "learnerSheetPath": "content/sma-coding/lembar/fondasi-jaringan-dan-internet.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -126,6 +134,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/fondasi-keamanan-dasar.md",
+      "learnerSheetPath": "content/sma-coding/lembar/fondasi-keamanan-dasar.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -153,6 +163,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/fondasi-perangkat-produktivitas.md",
+      "learnerSheetPath": "content/sma-coding/lembar/fondasi-perangkat-produktivitas.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -176,6 +188,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/matkom-sistem-bilangan-basis.md",
+      "learnerSheetPath": "content/sma-coding/lembar/matkom-sistem-bilangan-basis.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -207,6 +221,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/matkom-bilangan-bertanda-dan-luapan.md",
+      "learnerSheetPath": "content/sma-coding/lembar/matkom-bilangan-bertanda-dan-luapan.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -234,6 +250,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/matkom-teks-gambar-suara.md",
+      "learnerSheetPath": "content/sma-coding/lembar/matkom-teks-gambar-suara.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -257,6 +275,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/matkom-logika-proposisi.md",
+      "learnerSheetPath": "content/sma-coding/lembar/matkom-logika-proposisi.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -280,6 +300,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/matkom-himpunan-relasi-fungsi.md",
+      "learnerSheetPath": "content/sma-coding/lembar/matkom-himpunan-relasi-fungsi.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -303,6 +325,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/matkom-induksi-dan-rekursi-matematis.md",
+      "learnerSheetPath": "content/sma-coding/lembar/matkom-induksi-dan-rekursi-matematis.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -326,6 +350,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/matkom-pertumbuhan-fungsi.md",
+      "learnerSheetPath": "content/sma-coding/lembar/matkom-pertumbuhan-fungsi.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -349,6 +375,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/cloud-konsep-dasar.md",
+      "learnerSheetPath": "content/sma-coding/lembar/cloud-konsep-dasar.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -372,6 +400,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/cloud-iaas-paas-saas.md",
+      "learnerSheetPath": "content/sma-coding/lembar/cloud-iaas-paas-saas.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -399,6 +429,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/cloud-layanan-dan-region.md",
+      "learnerSheetPath": "content/sma-coding/lembar/cloud-layanan-dan-region.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -422,6 +454,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/cloud-tanggung-jawab-bersama.md",
+      "learnerSheetPath": "content/sma-coding/lembar/cloud-tanggung-jawab-bersama.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -449,6 +483,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/cloud-biaya-dan-tagihan.md",
+      "learnerSheetPath": "content/sma-coding/lembar/cloud-biaya-dan-tagihan.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -480,6 +516,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/cloud-keamanan-dan-privasi.md",
+      "learnerSheetPath": "content/sma-coding/lembar/cloud-keamanan-dan-privasi.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -511,6 +549,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/cloud-deploy-sederhana.md",
+      "learnerSheetPath": "content/sma-coding/lembar/cloud-deploy-sederhana.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -550,6 +590,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/pendamping-periksa-fakta-dan-baca-lateral.md",
+      "learnerSheetPath": "content/sma-coding/lembar/pendamping-periksa-fakta-dan-baca-lateral.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -573,6 +615,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/pendamping-profesi-informatika-dan-budaya-digital.md",
+      "learnerSheetPath": "content/sma-coding/lembar/pendamping-profesi-informatika-dan-budaya-digital.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -596,6 +640,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/pendamping-menyaring-konten-negatif.md",
+      "learnerSheetPath": "content/sma-coding/lembar/pendamping-menyaring-konten-negatif.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -619,6 +665,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/pendamping-riset-dan-verifikasi-konten.md",
+      "learnerSheetPath": "content/sma-coding/lembar/pendamping-riset-dan-verifikasi-konten.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -650,6 +698,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/pendamping-model-jaringan-dan-troubleshooting.md",
+      "learnerSheetPath": "content/sma-coding/lembar/pendamping-model-jaringan-dan-troubleshooting.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -681,6 +731,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/pendamping-teknologi-dan-demokrasi.md",
+      "learnerSheetPath": "content/sma-coding/lembar/pendamping-teknologi-dan-demokrasi.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -704,6 +756,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/pendamping-transaksi-digital-aman.md",
+      "learnerSheetPath": "content/sma-coding/lembar/pendamping-transaksi-digital-aman.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -727,6 +781,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/pendamping-merancang-kebutuhan-sistem.md",
+      "learnerSheetPath": "content/sma-coding/lembar/pendamping-merancang-kebutuhan-sistem.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -766,6 +822,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/pendamping-keamanan-lanjut-konektivitas.md",
+      "learnerSheetPath": "content/sma-coding/lembar/pendamping-keamanan-lanjut-konektivitas.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -805,6 +863,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-x1-m8.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-x1-m8.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -836,6 +896,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-x1-m9.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-x1-m9.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -871,6 +933,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-x1-m10.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-x1-m10.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -902,6 +966,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-x1-m11.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-x1-m11.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -933,6 +999,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-x1-m12.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-x1-m12.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -964,6 +1032,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-x1-m13.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-x1-m13.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -995,6 +1065,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-x1-m14.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-x1-m14.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1030,6 +1102,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-x2-m1.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-x2-m1.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1057,6 +1131,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-x2-m2.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-x2-m2.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1084,6 +1160,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-x2-m3.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-x2-m3.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1111,6 +1189,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-x2-m4.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-x2-m4.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1146,6 +1226,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-x2-m5.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-x2-m5.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1177,6 +1259,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-x2-m6.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-x2-m6.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1208,6 +1292,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-x2-m7.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-x2-m7.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1243,6 +1329,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-x2-m8.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-x2-m8.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1278,6 +1366,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-x2-m9.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-x2-m9.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1309,6 +1399,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-x2-m10.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-x2-m10.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1340,6 +1432,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-x2-m11.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-x2-m11.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1375,6 +1469,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-x2-m12.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-x2-m12.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1410,6 +1506,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-x2-m13.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-x2-m13.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1441,6 +1539,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-x2-m14.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-x2-m14.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1468,6 +1568,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xi1-m1.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xi1-m1.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1495,6 +1597,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xi1-m2.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xi1-m2.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1522,6 +1626,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xi1-m3.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xi1-m3.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1557,6 +1663,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xi1-m4.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xi1-m4.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1584,6 +1692,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xi1-m5.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xi1-m5.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1615,6 +1725,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xi1-m6.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xi1-m6.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1650,6 +1762,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xi1-m7.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xi1-m7.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1689,6 +1803,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xi1-m8.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xi1-m8.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1720,6 +1836,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xi1-m9.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xi1-m9.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1759,6 +1877,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xi1-m10.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xi1-m10.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1794,6 +1914,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xi1-m11.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xi1-m11.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1825,6 +1947,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xi1-m12.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xi1-m12.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1852,6 +1976,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xi1-m13.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xi1-m13.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1879,6 +2005,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xi1-m14.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xi1-m14.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1910,6 +2038,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xi2-m1.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xi2-m1.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1937,6 +2067,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xi2-m2.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xi2-m2.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1964,6 +2096,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xi2-m3.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xi2-m3.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1991,6 +2125,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xi2-m4.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xi2-m4.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2018,6 +2154,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xi2-m5.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xi2-m5.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2049,6 +2187,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xi2-m6.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xi2-m6.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2076,6 +2216,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xi2-m7.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xi2-m7.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2103,6 +2245,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xi2-m8.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xi2-m8.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2134,6 +2278,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xi2-m9.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xi2-m9.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2161,6 +2307,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xi2-m10.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xi2-m10.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2188,6 +2336,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xi2-m11.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xi2-m11.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2215,6 +2365,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xi2-m12.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xi2-m12.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2242,6 +2394,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xi2-m13.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xi2-m13.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2269,6 +2423,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xi2-m14.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xi2-m14.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2292,6 +2448,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii1-m1.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xii1-m1.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2315,6 +2473,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii1-m2.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xii1-m2.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2346,6 +2506,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii1-m3.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xii1-m3.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2377,6 +2539,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii1-m4.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xii1-m4.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2408,6 +2572,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii1-m5.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xii1-m5.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2435,6 +2601,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii1-m6.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xii1-m6.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2462,6 +2630,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii1-m7.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xii1-m7.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2497,6 +2667,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii1-m8.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xii1-m8.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2528,6 +2700,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii1-m9.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xii1-m9.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2555,6 +2729,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii1-m10.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xii1-m10.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2586,6 +2762,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii1-m11.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xii1-m11.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2613,6 +2791,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii1-m12.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xii1-m12.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2636,6 +2816,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii1-m13.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xii1-m13.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2659,6 +2841,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii1-m14.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xii1-m14.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2686,6 +2870,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii2-m1.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xii2-m1.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2713,6 +2899,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii2-m2.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xii2-m2.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2736,6 +2924,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii2-m3.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xii2-m3.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2763,6 +2953,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii2-m4.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xii2-m4.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2786,6 +2978,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii2-m5.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xii2-m5.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2813,6 +3007,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii2-m6.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xii2-m6.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2840,6 +3036,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii2-m7.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xii2-m7.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2867,6 +3065,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii2-m8.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xii2-m8.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2890,6 +3090,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii2-m9.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xii2-m9.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2917,6 +3119,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii2-m10.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xii2-m10.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2940,6 +3144,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii2-m11.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xii2-m11.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2963,6 +3169,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii2-m12.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xii2-m12.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -2986,6 +3194,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii2-m13.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xii2-m13.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -3009,6 +3219,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/c-xii2-m14.md",
+      "learnerSheetPath": "content/sma-coding/lembar/c-xii2-m14.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -3036,6 +3248,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-x1-m8.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-x1-m8.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -3063,6 +3277,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-x1-m9.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-x1-m9.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -3090,6 +3306,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-x1-m10.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-x1-m10.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -3125,6 +3343,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-x1-m11.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-x1-m11.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -3156,6 +3376,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-x1-m12.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-x1-m12.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -3187,6 +3409,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-x1-m13.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-x1-m13.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -3214,6 +3438,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-x1-m14.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-x1-m14.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -3245,6 +3471,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-x2-m1.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-x2-m1.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -3276,6 +3504,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-x2-m2.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-x2-m2.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -3303,6 +3533,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-x2-m3.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-x2-m3.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -3338,6 +3570,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-x2-m4.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-x2-m4.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -3369,6 +3603,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-x2-m5.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-x2-m5.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -3400,6 +3636,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-x2-m6.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-x2-m6.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -3431,6 +3669,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-x2-m7.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-x2-m7.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -3462,6 +3702,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-x2-m8.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-x2-m8.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -3501,6 +3743,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-x2-m9.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-x2-m9.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -3536,6 +3780,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-x2-m10.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-x2-m10.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -3579,6 +3825,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-x2-m11.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-x2-m11.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -3630,6 +3878,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-x2-m12.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-x2-m12.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -3661,6 +3911,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-x2-m13.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-x2-m13.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -3692,6 +3944,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-x2-m14.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-x2-m14.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -3715,6 +3969,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xi1-m1.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xi1-m1.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -3742,6 +3998,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xi1-m2.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xi1-m2.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -3769,6 +4027,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xi1-m3.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xi1-m3.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -3800,6 +4060,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xi1-m4.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xi1-m4.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -3839,6 +4101,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xi1-m5.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xi1-m5.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -3870,6 +4134,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xi1-m6.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xi1-m6.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -3901,6 +4167,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xi1-m7.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xi1-m7.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -3932,6 +4200,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xi1-m8.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xi1-m8.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -3963,6 +4233,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xi1-m9.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xi1-m9.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -3994,6 +4266,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xi1-m10.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xi1-m10.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -4025,6 +4299,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xi1-m11.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xi1-m11.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -4052,6 +4328,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xi1-m12.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xi1-m12.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -4079,6 +4357,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xi1-m13.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xi1-m13.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -4102,6 +4382,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xi1-m14.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xi1-m14.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -4133,6 +4415,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xi2-m1.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xi2-m1.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -4164,6 +4448,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xi2-m2.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xi2-m2.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -4195,6 +4481,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xi2-m3.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xi2-m3.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -4230,6 +4518,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xi2-m4.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xi2-m4.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -4261,6 +4551,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xi2-m5.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xi2-m5.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -4296,6 +4588,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xi2-m6.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xi2-m6.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -4327,6 +4621,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xi2-m7.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xi2-m7.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -4358,6 +4654,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xi2-m8.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xi2-m8.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -4385,6 +4683,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xi2-m9.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xi2-m9.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -4420,6 +4720,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xi2-m10.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xi2-m10.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -4459,6 +4761,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xi2-m11.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xi2-m11.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -4494,6 +4798,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xi2-m12.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xi2-m12.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -4525,6 +4831,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xi2-m13.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xi2-m13.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -4552,6 +4860,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xi2-m14.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xi2-m14.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -4579,6 +4889,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xii1-m1.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xii1-m1.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -4606,6 +4918,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xii1-m2.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xii1-m2.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -4637,6 +4951,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xii1-m3.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xii1-m3.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -4668,6 +4984,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xii1-m4.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xii1-m4.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -4707,6 +5025,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xii1-m5.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xii1-m5.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -4738,6 +5058,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xii1-m6.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xii1-m6.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -4773,6 +5095,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xii1-m7.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xii1-m7.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -4804,6 +5128,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xii1-m8.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xii1-m8.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -4831,6 +5157,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xii1-m9.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xii1-m9.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -4866,6 +5194,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xii1-m10.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xii1-m10.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -4893,6 +5223,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xii1-m11.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xii1-m11.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -4920,6 +5252,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xii1-m12.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xii1-m12.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -4951,6 +5285,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xii1-m13.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xii1-m13.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -4978,6 +5314,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xii1-m14.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xii1-m14.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5005,6 +5343,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xii2-m1.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xii2-m1.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5032,6 +5372,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xii2-m2.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xii2-m2.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5059,6 +5401,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xii2-m3.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xii2-m3.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5086,6 +5430,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xii2-m4.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xii2-m4.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5113,6 +5459,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xii2-m5.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xii2-m5.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5140,6 +5488,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xii2-m6.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xii2-m6.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5167,6 +5517,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xii2-m7.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xii2-m7.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5194,6 +5546,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xii2-m8.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xii2-m8.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5221,6 +5575,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xii2-m9.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xii2-m9.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5248,6 +5604,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xii2-m10.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xii2-m10.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5275,6 +5633,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xii2-m11.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xii2-m11.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5302,6 +5662,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xii2-m12.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xii2-m12.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5333,6 +5695,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xii2-m13.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xii2-m13.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5360,6 +5724,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/d-xii2-m14.md",
+      "learnerSheetPath": "content/sma-coding/lembar/d-xii2-m14.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5391,6 +5757,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi1-m1.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xi1-m1.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5418,6 +5786,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi1-m2.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xi1-m2.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5445,6 +5815,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi1-m3.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xi1-m3.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5472,6 +5844,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi1-m4.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xi1-m4.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5499,6 +5873,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi1-m5.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xi1-m5.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5526,6 +5902,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi1-m6.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xi1-m6.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5557,6 +5935,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi1-m7.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xi1-m7.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5584,6 +5964,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi1-m8.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xi1-m8.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5611,6 +5993,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi1-m9.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xi1-m9.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5646,6 +6030,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi1-m10.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xi1-m10.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5677,6 +6063,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi1-m11.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xi1-m11.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5704,6 +6092,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi1-m12.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xi1-m12.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5731,6 +6121,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi1-m13.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xi1-m13.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5762,6 +6154,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi1-m14.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xi1-m14.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5793,6 +6187,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi2-m1.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xi2-m1.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5824,6 +6220,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi2-m2.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xi2-m2.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5855,6 +6253,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi2-m3.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xi2-m3.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5894,6 +6294,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi2-m4.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xi2-m4.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5929,6 +6331,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi2-m5.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xi2-m5.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5960,6 +6364,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi2-m6.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xi2-m6.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -5987,6 +6393,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi2-m7.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xi2-m7.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6018,6 +6426,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi2-m8.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xi2-m8.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6049,6 +6459,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi2-m9.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xi2-m9.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6076,6 +6488,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi2-m10.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xi2-m10.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6107,6 +6521,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi2-m11.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xi2-m11.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6138,6 +6554,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi2-m12.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xi2-m12.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6173,6 +6591,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi2-m13.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xi2-m13.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6204,6 +6624,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xi2-m14.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xi2-m14.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6227,6 +6649,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xii1-m1.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xii1-m1.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6250,6 +6674,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xii1-m2.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xii1-m2.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6277,6 +6703,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xii1-m3.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xii1-m3.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6300,6 +6728,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xii1-m4.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xii1-m4.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6327,6 +6757,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xii1-m5.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xii1-m5.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6354,6 +6786,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xii1-m6.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xii1-m6.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6385,6 +6819,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xii1-m7.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xii1-m7.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6416,6 +6852,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xii1-m8.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xii1-m8.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6451,6 +6889,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xii1-m9.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xii1-m9.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6482,6 +6922,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xii1-m10.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xii1-m10.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6529,6 +6971,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xii1-m11.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xii1-m11.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6564,6 +7008,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xii1-m12.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xii1-m12.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6591,6 +7037,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xii1-m13.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xii1-m13.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6626,6 +7074,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xii1-m14.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xii1-m14.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6653,6 +7103,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xii2-m1.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xii2-m1.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6676,6 +7128,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xii2-m2.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xii2-m2.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6707,6 +7161,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xii2-m3.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xii2-m3.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6738,6 +7194,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xii2-m4.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xii2-m4.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6773,6 +7231,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xii2-m5.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xii2-m5.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6796,6 +7256,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xii2-m6.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xii2-m6.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6819,6 +7281,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xii2-m7.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xii2-m7.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6842,6 +7306,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xii2-m8.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xii2-m8.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6865,6 +7331,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xii2-m9.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xii2-m9.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6888,6 +7356,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xii2-m10.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xii2-m10.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6911,6 +7381,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xii2-m11.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xii2-m11.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6934,6 +7406,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xii2-m12.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xii2-m12.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6961,6 +7435,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xii2-m13.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xii2-m13.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -6988,6 +7464,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/e-xii2-m14.md",
+      "learnerSheetPath": "content/sma-coding/lembar/e-xii2-m14.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7015,6 +7493,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-x1-m8.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-x1-m8.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7054,6 +7534,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-x1-m9.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-x1-m9.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7085,6 +7567,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-x1-m10.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-x1-m10.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7112,6 +7596,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-x1-m11.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-x1-m11.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7135,6 +7621,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-x1-m12.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-x1-m12.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7162,6 +7650,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-x1-m13.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-x1-m13.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7193,6 +7683,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-x1-m14.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-x1-m14.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7232,6 +7724,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-x1-m8.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-x1-m8.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7271,6 +7765,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-x1-m9.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-x1-m9.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7306,6 +7802,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-x1-m10.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-x1-m10.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7341,6 +7839,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-x1-m11.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-x1-m11.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7368,6 +7868,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-x1-m12.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-x1-m12.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7403,6 +7905,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-x1-m13.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-x1-m13.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7434,6 +7938,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-x1-m14.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-x1-m14.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7457,6 +7963,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-x2-m1.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-x2-m1.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7484,6 +7992,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-x2-m2.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-x2-m2.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7507,6 +8017,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-x2-m3.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-x2-m3.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7530,6 +8042,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-x2-m4.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-x2-m4.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7557,6 +8071,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-x2-m5.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-x2-m5.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7580,6 +8096,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-x2-m6.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-x2-m6.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7607,6 +8125,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-x2-m7.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-x2-m7.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7638,6 +8158,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-x2-m8.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-x2-m8.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7665,6 +8187,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-x2-m9.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-x2-m9.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7692,6 +8216,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-x2-m10.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-x2-m10.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7715,6 +8241,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-x2-m11.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-x2-m11.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7742,6 +8270,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-x2-m12.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-x2-m12.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7769,6 +8299,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-x2-m13.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-x2-m13.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7804,6 +8336,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-x2-m14.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-x2-m14.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7835,6 +8369,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-x2-m1.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-x2-m1.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7862,6 +8398,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-x2-m2.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-x2-m2.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7889,6 +8427,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-x2-m3.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-x2-m3.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7916,6 +8456,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-x2-m4.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-x2-m4.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7955,6 +8497,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-x2-m5.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-x2-m5.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -7994,6 +8538,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-x2-m6.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-x2-m6.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -8029,6 +8575,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-x2-m7.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-x2-m7.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -8056,6 +8604,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-x2-m8.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-x2-m8.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -8083,6 +8633,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-x2-m9.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-x2-m9.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -8118,6 +8670,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-x2-m10.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-x2-m10.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -8161,6 +8715,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-x2-m11.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-x2-m11.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -8204,6 +8760,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-x2-m12.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-x2-m12.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -8239,6 +8797,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-x2-m13.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-x2-m13.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -8274,6 +8834,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-x2-m14.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-x2-m14.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -8305,6 +8867,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xi1-m1.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xi1-m1.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -8336,6 +8900,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xi1-m2.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xi1-m2.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -8363,6 +8929,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xi1-m3.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xi1-m3.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -8386,6 +8954,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xi1-m4.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xi1-m4.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -8409,6 +8979,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xi1-m5.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xi1-m5.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -8432,6 +9004,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xi1-m6.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xi1-m6.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -8459,6 +9033,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xi1-m7.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xi1-m7.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -8486,6 +9062,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xi1-m8.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xi1-m8.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -8517,6 +9095,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xi1-m9.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xi1-m9.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -8540,6 +9120,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xi1-m10.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xi1-m10.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -8563,6 +9145,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xi1-m11.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xi1-m11.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -8590,6 +9174,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xi1-m12.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xi1-m12.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -8613,6 +9199,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xi1-m13.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xi1-m13.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -8644,6 +9232,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xi1-m14.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xi1-m14.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -8671,6 +9261,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xi1-m1.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xi1-m1.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -8702,6 +9294,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xi1-m2.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xi1-m2.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -8737,6 +9331,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xi1-m3.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xi1-m3.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -8772,6 +9368,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xi1-m4.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xi1-m4.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -8815,6 +9413,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xi1-m5.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xi1-m5.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -8858,6 +9458,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xi1-m6.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xi1-m6.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -8889,6 +9491,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xi1-m7.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xi1-m7.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -8924,6 +9528,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xi1-m8.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xi1-m8.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -8955,6 +9561,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xi1-m9.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xi1-m9.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -8986,6 +9594,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xi1-m10.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xi1-m10.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -9025,6 +9635,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xi1-m11.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xi1-m11.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -9064,6 +9676,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xi1-m12.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xi1-m12.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -9103,6 +9717,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xi1-m13.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xi1-m13.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -9138,6 +9754,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xi1-m14.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xi1-m14.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -9161,6 +9779,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xi2-m1.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xi2-m1.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -9188,6 +9808,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xi2-m2.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xi2-m2.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -9215,6 +9837,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xi2-m3.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xi2-m3.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -9246,6 +9870,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xi2-m4.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xi2-m4.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -9273,6 +9899,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xi2-m5.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xi2-m5.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -9300,6 +9928,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xi2-m6.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xi2-m6.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -9327,6 +9957,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xi2-m7.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xi2-m7.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -9354,6 +9986,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xi2-m8.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xi2-m8.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -9393,6 +10027,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xi2-m9.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xi2-m9.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -9420,6 +10056,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xi2-m10.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xi2-m10.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -9451,6 +10089,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xi2-m11.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xi2-m11.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -9478,6 +10118,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xi2-m12.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xi2-m12.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -9505,6 +10147,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xi2-m13.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xi2-m13.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -9532,6 +10176,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xi2-m14.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xi2-m14.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -9567,6 +10213,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xi2-m1.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xi2-m1.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -9606,6 +10254,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xi2-m2.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xi2-m2.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -9641,6 +10291,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xi2-m3.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xi2-m3.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -9672,6 +10324,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xi2-m4.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xi2-m4.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -9715,6 +10369,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xi2-m5.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xi2-m5.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -9746,6 +10402,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xi2-m6.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xi2-m6.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -9785,6 +10443,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xi2-m7.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xi2-m7.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -9816,6 +10476,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xi2-m8.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xi2-m8.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -9867,6 +10529,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xi2-m9.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xi2-m9.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -9926,6 +10590,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xi2-m10.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xi2-m10.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -9965,6 +10631,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xi2-m11.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xi2-m11.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -10000,6 +10668,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xi2-m12.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xi2-m12.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -10031,6 +10701,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xi2-m13.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xi2-m13.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -10058,6 +10730,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xi2-m14.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xi2-m14.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -10085,6 +10759,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xii1-m1.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xii1-m1.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -10112,6 +10788,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xii1-m2.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xii1-m2.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -10139,6 +10817,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xii1-m3.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xii1-m3.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -10166,6 +10846,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xii1-m4.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xii1-m4.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -10193,6 +10875,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xii1-m5.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xii1-m5.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -10220,6 +10904,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xii1-m6.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xii1-m6.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -10247,6 +10933,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xii1-m7.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xii1-m7.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -10270,6 +10958,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xii1-m8.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xii1-m8.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -10297,6 +10987,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xii1-m9.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xii1-m9.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -10324,6 +11016,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xii1-m10.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xii1-m10.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -10351,6 +11045,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xii1-m11.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xii1-m11.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -10382,6 +11078,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xii1-m12.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xii1-m12.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -10409,6 +11107,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xii1-m13.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xii1-m13.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -10436,6 +11136,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xii1-m14.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xii1-m14.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -10471,6 +11173,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xii1-m1.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xii1-m1.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -10502,6 +11206,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xii1-m2.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xii1-m2.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -10537,6 +11243,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xii1-m3.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xii1-m3.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -10568,6 +11276,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xii1-m4.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xii1-m4.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -10603,6 +11313,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xii1-m5.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xii1-m5.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -10634,6 +11346,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xii1-m6.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xii1-m6.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -10681,6 +11395,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xii1-m7.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xii1-m7.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -10728,6 +11444,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xii1-m8.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xii1-m8.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -10763,6 +11481,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xii1-m9.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xii1-m9.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -10802,6 +11522,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xii1-m10.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xii1-m10.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -10841,6 +11563,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xii1-m11.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xii1-m11.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -10872,6 +11596,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xii1-m12.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xii1-m12.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -10899,6 +11625,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xii1-m13.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xii1-m13.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -10926,6 +11654,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xii1-m14.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xii1-m14.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -10957,6 +11687,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xii2-m1.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xii2-m1.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -10984,6 +11716,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xii2-m2.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xii2-m2.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -11011,6 +11745,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xii2-m3.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xii2-m3.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -11038,6 +11774,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xii2-m4.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xii2-m4.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -11069,6 +11807,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xii2-m5.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xii2-m5.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -11096,6 +11836,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xii2-m6.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xii2-m6.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -11123,6 +11865,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xii2-m7.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xii2-m7.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -11150,6 +11894,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xii2-m8.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xii2-m8.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -11181,6 +11927,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xii2-m9.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xii2-m9.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -11208,6 +11956,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xii2-m10.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xii2-m10.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -11235,6 +11985,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xii2-m11.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xii2-m11.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -11262,6 +12014,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xii2-m12.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xii2-m12.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -11289,6 +12043,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xii2-m13.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xii2-m13.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -11316,6 +12072,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/a-xii2-m14.md",
+      "learnerSheetPath": "content/sma-coding/lembar/a-xii2-m14.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -11351,6 +12109,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xii2-m1.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xii2-m1.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -11390,6 +12150,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xii2-m2.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xii2-m2.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -11429,6 +12191,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xii2-m3.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xii2-m3.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -11464,6 +12228,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xii2-m4.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xii2-m4.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -11499,6 +12265,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xii2-m5.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xii2-m5.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -11534,6 +12302,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xii2-m6.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xii2-m6.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -11573,6 +12343,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xii2-m7.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xii2-m7.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -11608,6 +12380,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xii2-m8.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xii2-m8.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -11651,6 +12425,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xii2-m9.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xii2-m9.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -11682,6 +12458,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xii2-m10.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xii2-m10.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -11717,6 +12495,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xii2-m11.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xii2-m11.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -11752,6 +12532,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xii2-m12.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xii2-m12.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -11783,6 +12565,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xii2-m13.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xii2-m13.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -11810,6 +12594,8 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xii2-m14.md",
+      "learnerSheetPath": "content/sma-coding/lembar/b-xii2-m14.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"

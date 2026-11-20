@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 345" width="680" height="345" role="img" aria-labelledby="t d">
+  <title id="t">Tabel hasil uji NilaiKilat per gaya</title>
+  <desc id="d">Tabel kosong dengan kolom gaya, esai uji, benar, ketepatan, dan lulus ditolak keliru, baris ketik, tulis, dan semua. Di bawahnya empat kotak kosong untuk sumber bias.</desc>
+  <rect width="680" height="345" fill="#ffffff"/>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker></defs>
+  <rect x="10" y="10" width="100" height="44" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="60" y="37" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">gaya</text>
+  <rect x="110" y="10" width="100" height="44" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="160" y="37" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">esai uji</text>
+  <rect x="210" y="10" width="100" height="44" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="260" y="37" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">benar</text>
+  <rect x="310" y="10" width="120" height="44" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="370" y="37" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">ketepatan</text>
+  <rect x="430" y="10" width="200" height="44" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="530" y="37" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">lulus ditolak keliru</text>
+  <rect x="10" y="54" width="100" height="44" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="110" y="54" width="100" height="44" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="210" y="54" width="100" height="44" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="310" y="54" width="120" height="44" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="430" y="54" width="200" height="44" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="60" y="82" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">ketik</text>
+  <rect x="10" y="98" width="100" height="44" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="110" y="98" width="100" height="44" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="210" y="98" width="100" height="44" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="310" y="98" width="120" height="44" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="430" y="98" width="200" height="44" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="60" y="126" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">tulis</text>
+  <rect x="10" y="142" width="100" height="44" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="110" y="142" width="100" height="44" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="210" y="142" width="100" height="44" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="310" y="142" width="120" height="44" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="430" y="142" width="200" height="44" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="60" y="170" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">semua</text>
+  <text x="10" y="214" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#222222">Sumber bias (tulis satu contoh dari kasus NilaiKilat di tiap kotak):</text>
+  <text x="88" y="240" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">data tidak mewakili</text>
+  <rect x="10" y="250" width="156" height="80" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="253" y="240" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">alat ukur tidak setara</text>
+  <rect x="175" y="250" width="156" height="80" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="418" y="240" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">fitur pengganti (proksi)</text>
+  <rect x="340" y="250" width="156" height="80" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="583" y="240" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">label subjektif</text>
+  <rect x="505" y="250" width="156" height="80" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+</svg>

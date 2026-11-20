@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" width="640" height="260" role="img" aria-labelledby="t d">
+  <title id="t">Tabel lima uji urutNaik</title>
+  <desc id="d">Tabel dengan kolom Uji, Masukan, Harapan yang dihitung tangan, Fungsi 1 sort tanpa pembanding lulus atau gagal, dan Fungsi 2 penyisipan lulus atau gagal. Lima baris uji: tiga angka acak 3,1,2; dua digit 10,9,1; kosong; kembar 2,1,2; masukan asli tidak diubah 3,1,2. Kolom harapan dan hasil kosong.</desc>
+  <rect width="640" height="260" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <g stroke="#222222" stroke-width="2" fill="#ffffff">
+      <rect x="10" y="10" width="200" height="40" fill="#f2f2f2"/><rect x="210" y="10" width="110" height="40" fill="#f2f2f2"/><rect x="320" y="10" width="150" height="40" fill="#f2f2f2"/><rect x="470" y="10" width="80" height="40" fill="#f2f2f2"/><rect x="550" y="10" width="80" height="40" fill="#f2f2f2"/>
+      <rect x="10" y="50" width="200" height="40"/><rect x="210" y="50" width="110" height="40"/><rect x="320" y="50" width="150" height="40"/><rect x="470" y="50" width="80" height="40"/><rect x="550" y="50" width="80" height="40"/>
+      <rect x="10" y="90" width="200" height="40"/><rect x="210" y="90" width="110" height="40"/><rect x="320" y="90" width="150" height="40"/><rect x="470" y="90" width="80" height="40"/><rect x="550" y="90" width="80" height="40"/>
+      <rect x="10" y="130" width="200" height="40"/><rect x="210" y="130" width="110" height="40"/><rect x="320" y="130" width="150" height="40"/><rect x="470" y="130" width="80" height="40"/><rect x="550" y="130" width="80" height="40"/>
+      <rect x="10" y="170" width="200" height="40"/><rect x="210" y="170" width="110" height="40"/><rect x="320" y="170" width="150" height="40"/><rect x="470" y="170" width="80" height="40"/><rect x="550" y="170" width="80" height="40"/>
+      <rect x="10" y="210" width="200" height="40"/><rect x="210" y="210" width="110" height="40"/><rect x="320" y="210" width="150" height="40"/><rect x="470" y="210" width="80" height="40"/><rect x="550" y="210" width="80" height="40"/>
+    </g>
+    <g font-weight="bold"><text x="16" y="35">Uji</text><text x="216" y="35">Masukan</text><text x="326" y="35">Harapan (tangan)</text><text x="476" y="35">Fungsi 1</text><text x="556" y="35">Fungsi 2</text></g>
+    <text x="16" y="75">1 tiga angka acak</text><text x="216" y="75">[3, 1, 2]</text>
+    <text x="16" y="115">2 dua digit</text><text x="216" y="115">[10, 9, 1]</text>
+    <text x="16" y="155">3 data kosong</text><text x="216" y="155">[]</text>
+    <text x="16" y="195">4 angka kembar</text><text x="216" y="195">[2, 1, 2]</text>
+    <text x="16" y="235">5 masukan asli utuh?</text><text x="216" y="235">[3, 1, 2]</text>
+  </g>
+</svg>

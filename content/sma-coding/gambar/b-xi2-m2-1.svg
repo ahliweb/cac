@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 220" width="640" height="220" role="img" aria-labelledby="t d">
+  <title id="t">Tabel tiga permintaan ke API tugas</title>
+  <desc id="d">Tabel dengan kolom Permintaan, Status, dan Badan. Tiga baris: GET /api/tugas/2; POST /api/tugas dengan badan {"judul":""}; DELETE /api/tugas. Kolom status dan badan kosong.</desc>
+  <rect width="640" height="220" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <g stroke="#222222" stroke-width="2" fill="#ffffff">
+      <rect x="10" y="10" width="270" height="34" fill="#f2f2f2"/><rect x="280" y="10" width="100" height="34" fill="#f2f2f2"/><rect x="380" y="10" width="250" height="34" fill="#f2f2f2"/>
+      <rect x="10" y="44" width="270" height="52"/><rect x="280" y="44" width="100" height="52" stroke-dasharray="5 4"/><rect x="380" y="44" width="250" height="52" stroke-dasharray="5 4"/>
+      <rect x="10" y="96" width="270" height="52"/><rect x="280" y="96" width="100" height="52" stroke-dasharray="5 4"/><rect x="380" y="96" width="250" height="52" stroke-dasharray="5 4"/>
+      <rect x="10" y="148" width="270" height="52"/><rect x="280" y="148" width="100" height="52" stroke-dasharray="5 4"/><rect x="380" y="148" width="250" height="52" stroke-dasharray="5 4"/>
+    </g>
+    <g font-weight="bold"><text x="16" y="32">Permintaan</text><text x="286" y="32">Status</text><text x="386" y="32">Badan</text></g>
+    <text x="16" y="75">1. GET /api/tugas/2</text>
+    <text x="16" y="120">2. POST /api/tugas</text><text x="16" y="138">    badan {"judul":""}</text>
+    <text x="16" y="178">3. DELETE /api/tugas</text>
+    <text x="10" y="216">Server baru dinyalakan. Tulis tebakanmu dulu.</text>
+  </g>
+</svg>

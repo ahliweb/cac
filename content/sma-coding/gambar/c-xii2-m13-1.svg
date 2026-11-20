@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 285" width="620" height="285" role="img" aria-labelledby="t d">
+<title id="t">Naskah presentasi lima menit</title>
+<desc id="d">Tabel lima bagian presentasi dengan kolom detik dan isi yang kosong untuk diisi. Di bawahnya tempat menulis jumlah detik.</desc>
+<defs><marker id="ar" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#222222"/></marker></defs>
+<rect width="620" height="285" fill="#ffffff"/>
+<rect x="20" y="20" width="270" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="155.0" y="45.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Bagian presentasi</text>
+<rect x="290" y="20" width="100" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="340.0" y="45.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Detik</text>
+<rect x="390" y="20" width="230" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="505.0" y="45.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Isi (satu frasa)</text>
+<rect x="20" y="60" width="270" height="40" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="155.0" y="85.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Masalah dan pengguna</text>
+<rect x="290" y="60" width="100" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="390" y="60" width="230" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="20" y="100" width="270" height="40" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="155.0" y="125.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Solusi dan arsitektur</text>
+<rect x="290" y="100" width="100" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="390" y="100" width="230" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="20" y="140" width="270" height="40" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="155.0" y="165.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Demo</text>
+<rect x="290" y="140" width="100" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="390" y="140" width="230" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="20" y="180" width="270" height="40" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="155.0" y="205.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Hasil uji</text>
+<rect x="290" y="180" width="100" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="390" y="180" width="230" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="20" y="220" width="270" height="40" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="155.0" y="245.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Pelajaran dan langkah berikutnya</text>
+<rect x="290" y="220" width="100" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="390" y="220" width="230" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/><text x="20" y="265" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">Jumlah detik: ______    Hasil uji yang gagal ditampilkan? ya / tidak</text>
+</svg>

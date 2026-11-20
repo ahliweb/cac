@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 710 356" width="710" height="356" role="img" aria-labelledby="t d">
+<title id="t">Perbandingan dua layanan aduan dengan kotak nomor pertanyaan kosong</title>
+<desc id="d">Tabel empat baris: Penyelenggara, Data yang diminta, Jalur lain, dan Koreksi. Kolom Layanan A Lapor Contoh dan Layanan B Aduan Contoh berisi keterangan fiktif. Kolom terakhir No. pertanyaan berisi kotak kosong untuk diisi nomor pertanyaan menilai.</desc>
+<rect width="710" height="356" fill="#ffffff"/>
+<text x="20" y="24" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Dua layanan aduan fiktif milik Kabupaten Contoh</text>
+<rect x="20" y="36" width="130" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="85" y="58" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle"></text>
+<rect x="150" y="36" width="210" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="255" y="58" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Layanan A: Lapor Contoh</text>
+<rect x="360" y="36" width="210" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="465" y="58" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Layanan B: Aduan Contoh</text>
+<rect x="570" y="36" width="120" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="630" y="58" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">No. pertanyaan</text>
+<rect x="20" y="70" width="130" height="56" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="28" y="103" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Penyelenggara</text>
+<rect x="150" y="70" width="210" height="56" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<rect x="360" y="70" width="210" height="56" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="158" y="93" font-family="sans-serif" font-size="14" fill="#222222">Jelas: dinas fiktif,</text>
+<text x="158" y="113" font-family="sans-serif" font-size="14" fill="#222222">alamat di papan kantor</text>
+<text x="368" y="93" font-family="sans-serif" font-size="14" fill="#222222">Tidak ada keterangan</text>
+<text x="368" y="113" font-family="sans-serif" font-size="14" fill="#222222">siapa pengelolanya</text>
+<rect x="570" y="70" width="120" height="56" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<rect x="595" y="84" width="70" height="28" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="20" y="126" width="130" height="56" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="28" y="159" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Data</text>
+<text x="28" y="176" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">yang diminta</text>
+<rect x="150" y="126" width="210" height="56" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<rect x="360" y="126" width="210" height="56" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="158" y="149" font-family="sans-serif" font-size="14" fill="#222222">Nama, lokasi,</text>
+<text x="158" y="169" font-family="sans-serif" font-size="14" fill="#222222">foto kerusakan</text>
+<text x="368" y="149" font-family="sans-serif" font-size="14" fill="#222222">Nomor induk kependudukan,</text>
+<text x="368" y="169" font-family="sans-serif" font-size="14" fill="#222222">foto kartu identitas</text>
+<rect x="570" y="126" width="120" height="56" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<rect x="595" y="140" width="70" height="28" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="20" y="182" width="130" height="56" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="28" y="215" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Jalur lain</text>
+<rect x="150" y="182" width="210" height="56" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<rect x="360" y="182" width="210" height="56" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="158" y="205" font-family="sans-serif" font-size="14" fill="#222222">Loket kantor</text>
+<text x="158" y="225" font-family="sans-serif" font-size="14" fill="#222222">dan telepon</text>
+<text x="368" y="215" font-family="sans-serif" font-size="14" fill="#222222">Hanya aplikasi</text>
+<rect x="570" y="182" width="120" height="56" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<rect x="595" y="196" width="70" height="28" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="20" y="238" width="130" height="56" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="28" y="271" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Koreksi</text>
+<rect x="150" y="238" width="210" height="56" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<rect x="360" y="238" width="210" height="56" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="158" y="261" font-family="sans-serif" font-size="14" fill="#222222">Nomor tiket dan cara</text>
+<text x="158" y="281" font-family="sans-serif" font-size="14" fill="#222222">mengoreksi aduan</text>
+<text x="368" y="271" font-family="sans-serif" font-size="14" fill="#222222">Tidak ada</text>
+<rect x="570" y="238" width="120" height="56" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<rect x="595" y="252" width="70" height="28" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="20" y="318" font-family="sans-serif" font-size="14" fill="#222222">Tulis di kotak nomor pertanyaan menilai (1 sampai 6)</text>
+<text x="20" y="338" font-family="sans-serif" font-size="14" fill="#222222">yang membedakan kedua layanan pada baris itu.</text>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 330" width="640" height="330" role="img" aria-labelledby="t d">
+  <title id="t">Pemetaan kecepatan ke pin dan urutan kecepatan roda</title>
+  <desc id="d">Tabel kecepatan, IN1, IN2, dan duty dengan kecepatan -300, 0, 80, -255, dan 400 dan kolom lain kosong. Di bawahnya lima kotak berurutan untuk kecepatan roda, kotak pertama berisi +100.</desc>
+  <rect width="640" height="330" fill="#ffffff"/>
+  <rect x="60" y="10" width="130" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="125" y="33" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">kecepatan</text>
+  <rect x="190" y="10" width="130" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="255" y="33" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">IN1</text>
+  <rect x="320" y="10" width="130" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="385" y="33" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">IN2</text>
+  <rect x="450" y="10" width="130" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="515" y="33" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">duty</text>
+  <rect x="60" y="44" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="190" y="44" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="320" y="44" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="450" y="44" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="125" y="67" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">-300</text>
+  <rect x="60" y="78" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="190" y="78" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="320" y="78" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="450" y="78" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="125" y="101" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">0</text>
+  <rect x="60" y="112" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="190" y="112" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="320" y="112" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="450" y="112" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="125" y="135" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">80</text>
+  <rect x="60" y="146" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="190" y="146" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="320" y="146" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="450" y="146" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="125" y="169" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">-255</text>
+  <rect x="60" y="180" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="190" y="180" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="320" y="180" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="450" y="180" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="125" y="203" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">400</text>
+  <text x="60" y="252" font-family="sans-serif" font-size="14" fill="#222222">Kecepatan roda tiap langkah (langkahMaks 60, target -100):</text>
+  <rect x="60" y="266" width="94" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="2" />
+  <text x="107" y="292" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">+100</text>
+  <text x="154" y="292" font-family="sans-serif" font-size="14" fill="#222222">&#8594;</text>
+  <rect x="164" y="266" width="94" height="40" fill="none" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="258" y="292" font-family="sans-serif" font-size="14" fill="#222222">&#8594;</text>
+  <rect x="268" y="266" width="94" height="40" fill="none" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="362" y="292" font-family="sans-serif" font-size="14" fill="#222222">&#8594;</text>
+  <rect x="372" y="266" width="94" height="40" fill="none" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="466" y="292" font-family="sans-serif" font-size="14" fill="#222222">&#8594;</text>
+  <rect x="476" y="266" width="94" height="40" fill="none" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+</svg>

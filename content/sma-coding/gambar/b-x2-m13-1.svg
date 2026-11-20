@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 380" width="560" height="380" role="img" aria-labelledby="t d">
+<title id="t">Tujuh batang berbagai tinggi dengan indeks dan baris hasil akhir kosong</title>
+<desc id="d">Tujuh batang untuk data 5, 3, 8, 1, 9, 2, 7 dengan indeks 0 sampai 6 di bawahnya; tinggi batang sebanding nilainya dan nilai tertulis di tiap batang. Di bawahnya tujuh kotak kosong untuk urutan akhir setelah bubble sort selesai dan isian kosong untuk banyak perbandingan.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#222222"/></marker></defs>
+<rect width="560" height="380" fill="#ffffff"/>
+<text x="20" y="26" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222">Data awal halaman visualisasi</text>
+<rect x="40" y="140" width="50" height="100" fill="#dde7f3" stroke="#2a5d9f" stroke-width="2"/>
+<text x="65" y="134" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">5</text>
+<text x="65" y="260" font-family="sans-serif" font-size="14" fill="#2a5d9f" text-anchor="middle">0</text>
+<rect x="110" y="180" width="50" height="60" fill="#dde7f3" stroke="#2a5d9f" stroke-width="2"/>
+<text x="135" y="174" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">3</text>
+<text x="135" y="260" font-family="sans-serif" font-size="14" fill="#2a5d9f" text-anchor="middle">1</text>
+<rect x="180" y="80" width="50" height="160" fill="#dde7f3" stroke="#2a5d9f" stroke-width="2"/>
+<text x="205" y="74" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">8</text>
+<text x="205" y="260" font-family="sans-serif" font-size="14" fill="#2a5d9f" text-anchor="middle">2</text>
+<rect x="250" y="220" width="50" height="20" fill="#dde7f3" stroke="#2a5d9f" stroke-width="2"/>
+<text x="275" y="214" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">1</text>
+<text x="275" y="260" font-family="sans-serif" font-size="14" fill="#2a5d9f" text-anchor="middle">3</text>
+<rect x="320" y="60" width="50" height="180" fill="#dde7f3" stroke="#2a5d9f" stroke-width="2"/>
+<text x="345" y="54" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">9</text>
+<text x="345" y="260" font-family="sans-serif" font-size="14" fill="#2a5d9f" text-anchor="middle">4</text>
+<rect x="390" y="200" width="50" height="40" fill="#dde7f3" stroke="#2a5d9f" stroke-width="2"/>
+<text x="415" y="194" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">2</text>
+<text x="415" y="260" font-family="sans-serif" font-size="14" fill="#2a5d9f" text-anchor="middle">5</text>
+<rect x="460" y="100" width="50" height="140" fill="#dde7f3" stroke="#2a5d9f" stroke-width="2"/>
+<text x="485" y="94" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">7</text>
+<text x="485" y="260" font-family="sans-serif" font-size="14" fill="#2a5d9f" text-anchor="middle">6</text>
+<line x1="30" y1="240" x2="530" y2="240" stroke="#222222" stroke-width="1.5"/>
+<text x="20" y="296" font-family="sans-serif" font-size="14" fill="#222222">urutan akhir setelah bubble sort:</text>
+<rect x="270" y="274" width="40" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="310" y="274" width="40" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="350" y="274" width="40" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="390" y="274" width="40" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="430" y="274" width="40" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="470" y="274" width="40" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="510" y="274" width="40" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="20" y="340" font-family="sans-serif" font-size="14" fill="#222222">Total perbandingan sampai langkah terakhir: ______</text>
+</svg>

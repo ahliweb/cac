@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 290" width="660" height="290" role="img" aria-labelledby="t d">
+  <title id="t">Jaringan dua masukan, lapis 8 dan 4, satu keluaran, dengan kotak isian parameter</title>
+  <desc id="d">Empat kotak lapisan berurutan dengan panah: masukan 2, tersembunyi 1 berisi 8 neuron, tersembunyi 2 berisi 4 neuron, keluaran 1. Di bawah tiap panah kotak kosong untuk jumlah bobot, di bawah tiga lapis terakhir kotak kosong untuk jumlah bias, dan di dasar kotak kosong untuk seluruh parameter.</desc>
+  <rect width="660" height="290" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  </defs>
+  <g stroke="#2a5d9f" stroke-width="2" fill="#ffffff">
+    <rect x="20" y="40" width="110" height="60" rx="8"/><rect x="195" y="40" width="110" height="60" rx="8"/>
+    <rect x="370" y="40" width="110" height="60" rx="8"/><rect x="545" y="40" width="95" height="60" rx="8"/>
+  </g>
+  <g stroke="#222222" stroke-width="2" marker-end="url(#a)">
+    <line x1="132" y1="70" x2="192" y2="70"/><line x1="307" y1="70" x2="367" y2="70"/><line x1="482" y1="70" x2="542" y2="70"/>
+  </g>
+  <g stroke="#222222" stroke-width="1.5" fill="#f2f2f2">
+    <rect x="97" y="120" width="130" height="34"/><rect x="272" y="120" width="130" height="34"/><rect x="447" y="120" width="130" height="34"/>
+    <rect x="195" y="180" width="110" height="34"/><rect x="370" y="180" width="110" height="34"/><rect x="545" y="180" width="95" height="34"/>
+    <rect x="20" y="238" width="620" height="38"/>
+  </g>
+  <g font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">
+    <g font-weight="bold">
+      <text x="75" y="66">masukan</text><text x="75" y="86">2</text>
+      <text x="250" y="66">tersembunyi 1</text><text x="250" y="86">8 neuron</text>
+      <text x="425" y="66">tersembunyi 2</text><text x="425" y="86">4 neuron</text>
+      <text x="592" y="66">keluaran</text><text x="592" y="86">1</text>
+    </g>
+    <text x="162" y="142">bobot: ____</text><text x="337" y="142">bobot: ____</text><text x="512" y="142">bobot: ____</text>
+    <text x="250" y="202">bias: ____</text><text x="425" y="202">bias: ____</text><text x="592" y="202">bias: ____</text>
+    <text x="330" y="262" font-weight="bold">seluruh parameter = ______</text>
+  </g>
+</svg>

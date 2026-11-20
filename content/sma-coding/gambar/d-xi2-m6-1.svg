@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 306" width="540" height="306" role="img" aria-labelledby="t d">
+  <title id="t">Gambar 4 kali 4 dengan kolom dan baris kosong untuk jumlah</title>
+  <desc id="d">Kisi 4 kali 4 berisi angka piksel, 1 berarti gelap. Baris 1: 1 0 0 1. Baris 2: 0 1 1 0. Baris 3: 0 1 1 0. Baris 4: 1 0 0 1. Sel jumlah tiap baris di kanan dan jumlah tiap kolom di bawah dibiarkan kosong.</desc>
+  <rect width="540" height="306" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222" stroke="#222222" stroke-width="1.5">
+    <text x="20" y="30" stroke="none" font-weight="bold">Piksel: 1 = gelap, 0 = terang</text>
+    <rect x="20" y="46" width="110" height="40" fill="#f2f2f2"/>
+    <rect x="130" y="46" width="70" height="40" fill="#f2f2f2"/>
+    <text x="165" y="71" text-anchor="middle" stroke="none" font-weight="bold">kolom 1</text>
+    <rect x="200" y="46" width="70" height="40" fill="#f2f2f2"/>
+    <text x="235" y="71" text-anchor="middle" stroke="none" font-weight="bold">kolom 2</text>
+    <rect x="270" y="46" width="70" height="40" fill="#f2f2f2"/>
+    <text x="305" y="71" text-anchor="middle" stroke="none" font-weight="bold">kolom 3</text>
+    <rect x="340" y="46" width="70" height="40" fill="#f2f2f2"/>
+    <text x="375" y="71" text-anchor="middle" stroke="none" font-weight="bold">kolom 4</text>
+    <rect x="410" y="46" width="110" height="40" fill="#f2f2f2"/>
+    <text x="465" y="71" text-anchor="middle" stroke="none" font-weight="bold">jumlah baris</text>
+    <rect x="20" y="86" width="110" height="40" fill="#ffffff"/>
+    <text x="75" y="111" text-anchor="middle" stroke="none">baris 1</text>
+    <rect x="130" y="86" width="70" height="40" fill="#ffffff"/>
+    <text x="165" y="111" text-anchor="middle" stroke="none">1</text>
+    <rect x="200" y="86" width="70" height="40" fill="#ffffff"/>
+    <text x="235" y="111" text-anchor="middle" stroke="none">0</text>
+    <rect x="270" y="86" width="70" height="40" fill="#ffffff"/>
+    <text x="305" y="111" text-anchor="middle" stroke="none">0</text>
+    <rect x="340" y="86" width="70" height="40" fill="#ffffff"/>
+    <text x="375" y="111" text-anchor="middle" stroke="none">1</text>
+    <rect x="410" y="86" width="110" height="40" fill="#ffffff"/>
+    <rect x="20" y="126" width="110" height="40" fill="#ffffff"/>
+    <text x="75" y="151" text-anchor="middle" stroke="none">baris 2</text>
+    <rect x="130" y="126" width="70" height="40" fill="#ffffff"/>
+    <text x="165" y="151" text-anchor="middle" stroke="none">0</text>
+    <rect x="200" y="126" width="70" height="40" fill="#ffffff"/>
+    <text x="235" y="151" text-anchor="middle" stroke="none">1</text>
+    <rect x="270" y="126" width="70" height="40" fill="#ffffff"/>
+    <text x="305" y="151" text-anchor="middle" stroke="none">1</text>
+    <rect x="340" y="126" width="70" height="40" fill="#ffffff"/>
+    <text x="375" y="151" text-anchor="middle" stroke="none">0</text>
+    <rect x="410" y="126" width="110" height="40" fill="#ffffff"/>
+    <rect x="20" y="166" width="110" height="40" fill="#ffffff"/>
+    <text x="75" y="191" text-anchor="middle" stroke="none">baris 3</text>
+    <rect x="130" y="166" width="70" height="40" fill="#ffffff"/>
+    <text x="165" y="191" text-anchor="middle" stroke="none">0</text>
+    <rect x="200" y="166" width="70" height="40" fill="#ffffff"/>
+    <text x="235" y="191" text-anchor="middle" stroke="none">1</text>
+    <rect x="270" y="166" width="70" height="40" fill="#ffffff"/>
+    <text x="305" y="191" text-anchor="middle" stroke="none">1</text>
+    <rect x="340" y="166" width="70" height="40" fill="#ffffff"/>
+    <text x="375" y="191" text-anchor="middle" stroke="none">0</text>
+    <rect x="410" y="166" width="110" height="40" fill="#ffffff"/>
+    <rect x="20" y="206" width="110" height="40" fill="#ffffff"/>
+    <text x="75" y="231" text-anchor="middle" stroke="none">baris 4</text>
+    <rect x="130" y="206" width="70" height="40" fill="#ffffff"/>
+    <text x="165" y="231" text-anchor="middle" stroke="none">1</text>
+    <rect x="200" y="206" width="70" height="40" fill="#ffffff"/>
+    <text x="235" y="231" text-anchor="middle" stroke="none">0</text>
+    <rect x="270" y="206" width="70" height="40" fill="#ffffff"/>
+    <text x="305" y="231" text-anchor="middle" stroke="none">0</text>
+    <rect x="340" y="206" width="70" height="40" fill="#ffffff"/>
+    <text x="375" y="231" text-anchor="middle" stroke="none">1</text>
+    <rect x="410" y="206" width="110" height="40" fill="#ffffff"/>
+    <rect x="20" y="246" width="110" height="40" fill="#ffffff"/>
+    <text x="75" y="271" text-anchor="middle" stroke="none">jumlah kolom</text>
+    <rect x="130" y="246" width="70" height="40" fill="#ffffff"/>
+    <rect x="200" y="246" width="70" height="40" fill="#ffffff"/>
+    <rect x="270" y="246" width="70" height="40" fill="#ffffff"/>
+    <rect x="340" y="246" width="70" height="40" fill="#ffffff"/>
+    <rect x="410" y="246" width="110" height="40" fill="#ffffff"/>
+  </g>
+</svg>

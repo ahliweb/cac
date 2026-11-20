@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 670 230" width="670" height="230" role="img" aria-labelledby="t d">
+  <title id="t">Lima kartu tahap penerbitan dalam urutan acak</title>
+  <desc id="d">Lima kartu berlabel A sampai E: rilis, kode, pantau, konfigurasi, dan build, dalam urutan acak. Di bawah tiap kartu ada kotak kosong bertuliskan urutan ke untuk diisi pelajar.</desc>
+  <rect width="670" height="230" fill="#ffffff"/>
+  <text x="335" y="30" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Lima tahap dari lokal ke lingkungan lain, dalam urutan acak</text>
+  <rect x="20" y="50" width="110" height="70" rx="6" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="75.0" y="72" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">A</text>
+  <text x="75.0" y="101.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">rilis</text>
+  <rect x="45.0" y="132" width="60" height="32" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="75.0" y="180" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">urutan ke</text>
+  <rect x="150" y="50" width="110" height="70" rx="6" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="205.0" y="72" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">B</text>
+  <text x="205.0" y="101.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">kode</text>
+  <rect x="175.0" y="132" width="60" height="32" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="205.0" y="180" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">urutan ke</text>
+  <rect x="280" y="50" width="110" height="70" rx="6" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="335.0" y="72" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">C</text>
+  <text x="335.0" y="101.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">pantau</text>
+  <rect x="305.0" y="132" width="60" height="32" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="335.0" y="180" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">urutan ke</text>
+  <rect x="410" y="50" width="110" height="70" rx="6" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="465.0" y="72" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">D</text>
+  <text x="465.0" y="101.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">konfigurasi</text>
+  <rect x="435.0" y="132" width="60" height="32" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="465.0" y="180" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">urutan ke</text>
+  <rect x="540" y="50" width="110" height="70" rx="6" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="595.0" y="72" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">E</text>
+  <text x="595.0" y="101.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">build</text>
+  <rect x="565.0" y="132" width="60" height="32" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="595.0" y="180" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">urutan ke</text>
+</svg>

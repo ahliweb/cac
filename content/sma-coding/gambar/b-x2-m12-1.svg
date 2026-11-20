@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300" role="img" aria-labelledby="t d">
+<title id="t">Graf commit: main dan cabang bercabang dari a.js dan bertemu di kotak kosong</title>
+<desc id="d">Dua jalur commit. Jalur main berisi Tambah a.js lalu Tambah c.js lalu satu kotak putus-putus kosong untuk hasil penggabungan. Jalur cabang berisi Tambah b.js yang bercabang dari Tambah a.js dan menunjuk ke kotak kosong yang sama. Di bawahnya dua isian kosong: berkas di folder pada akhirnya dan apakah ada commit gabungan.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#222222"/></marker></defs>
+<rect width="600" height="300" fill="#ffffff"/>
+<text x="20" y="70" font-family="sans-serif" font-size="15" font-weight="bold" fill="#2a5d9f">main</text>
+<text x="20" y="150" font-family="sans-serif" font-size="15" font-weight="bold" fill="#1b7a3d">cabang</text>
+<rect x="80" y="48" width="110" height="40" rx="4" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="135.0" y="72.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Tambah a.js</text>
+<rect x="250" y="48" width="110" height="40" rx="4" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="305.0" y="72.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Tambah c.js</text>
+<rect x="440" y="48" width="130" height="40" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+<text x="505" y="72" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">setelah merge?</text>
+<rect x="250" y="128" width="110" height="40" rx="4" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="305.0" y="152.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Tambah b.js</text>
+<line x1="190" y1="68" x2="250" y2="68" stroke="#222222" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="360" y1="68" x2="440" y2="68" stroke="#222222" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="160" y1="88" x2="262" y2="128" stroke="#222222" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="360" y1="148" x2="460" y2="90" stroke="#222222" stroke-width="1.5" marker-end="url(#a)"/>
+<text x="20" y="215" font-family="sans-serif" font-size="15" fill="#222222">Berkas di folder pada akhirnya: ______________________</text>
+<text x="20" y="250" font-family="sans-serif" font-size="15" fill="#222222">Apakah ada commit baru khusus untuk penggabungan? ______</text>
+<text x="20" y="280" font-family="sans-serif" font-size="15" fill="#222222">Baris git log --oneline setelah merge: ______</text>
+</svg>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 290" width="540" height="290" role="img" aria-labelledby="t d">
+<title id="t">Pohon ambil atau lewati untuk tiga nilai</title>
+<desc id="d">Pohon biner lengkap empat tingkat: akar tingkat 0, tingkat 1 dua simpul, tingkat 2 empat simpul, tingkat 3 delapan simpul. Cabang kiri berarti ambil dan kanan berarti lewati. Tiap simpul bulatan kosong untuk menulis jumlah. Nilai tiga tingkat: 5, 4, 3.</desc>
+<rect width="540" height="290" fill="#ffffff"/>
+
+<g font-family="sans-serif">
+<line x1="256.6" y1="36.7" x2="153.4" y2="88.3" stroke="#222222" stroke-width="2"/>
+<line x1="283.4" y1="36.7" x2="386.6" y2="88.3" stroke="#222222" stroke-width="2"/>
+<line x1="129.4" y1="105.6" x2="85.6" y2="149.4" stroke="#222222" stroke-width="2"/>
+<line x1="150.6" y1="105.6" x2="194.4" y2="149.4" stroke="#222222" stroke-width="2"/>
+<line x1="389.4" y1="105.6" x2="345.6" y2="149.4" stroke="#222222" stroke-width="2"/>
+<line x1="410.6" y1="105.6" x2="454.4" y2="149.4" stroke="#222222" stroke-width="2"/>
+<line x1="68.3" y1="173.4" x2="49.2" y2="211.6" stroke="#222222" stroke-width="2"/>
+<line x1="81.7" y1="173.4" x2="100.8" y2="211.6" stroke="#222222" stroke-width="2"/>
+<line x1="198.3" y1="173.4" x2="179.2" y2="211.6" stroke="#222222" stroke-width="2"/>
+<line x1="211.7" y1="173.4" x2="230.8" y2="211.6" stroke="#222222" stroke-width="2"/>
+<line x1="328.3" y1="173.4" x2="309.2" y2="211.6" stroke="#222222" stroke-width="2"/>
+<line x1="341.7" y1="173.4" x2="360.8" y2="211.6" stroke="#222222" stroke-width="2"/>
+<line x1="458.3" y1="173.4" x2="439.2" y2="211.6" stroke="#222222" stroke-width="2"/>
+<line x1="471.7" y1="173.4" x2="490.8" y2="211.6" stroke="#222222" stroke-width="2"/>
+<circle cx="270.0" cy="30" r="15" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+<text x="270.0" y="35.6" font-size="16" text-anchor="middle" font-weight="bold" fill="#222222"></text>
+<circle cx="140.0" cy="95" r="15" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+<text x="140.0" y="100.6" font-size="16" text-anchor="middle" font-weight="bold" fill="#222222"></text>
+<circle cx="400.0" cy="95" r="15" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+<text x="400.0" y="100.6" font-size="16" text-anchor="middle" font-weight="bold" fill="#222222"></text>
+<circle cx="75.0" cy="160" r="15" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+<text x="75.0" y="165.6" font-size="16" text-anchor="middle" font-weight="bold" fill="#222222"></text>
+<circle cx="205.0" cy="160" r="15" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+<text x="205.0" y="165.6" font-size="16" text-anchor="middle" font-weight="bold" fill="#222222"></text>
+<circle cx="335.0" cy="160" r="15" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+<text x="335.0" y="165.6" font-size="16" text-anchor="middle" font-weight="bold" fill="#222222"></text>
+<circle cx="465.0" cy="160" r="15" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+<text x="465.0" y="165.6" font-size="16" text-anchor="middle" font-weight="bold" fill="#222222"></text>
+<circle cx="42.5" cy="225" r="15" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+<text x="42.5" y="230.6" font-size="16" text-anchor="middle" font-weight="bold" fill="#222222"></text>
+<circle cx="107.5" cy="225" r="15" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+<text x="107.5" y="230.6" font-size="16" text-anchor="middle" font-weight="bold" fill="#222222"></text>
+<circle cx="172.5" cy="225" r="15" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+<text x="172.5" y="230.6" font-size="16" text-anchor="middle" font-weight="bold" fill="#222222"></text>
+<circle cx="237.5" cy="225" r="15" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+<text x="237.5" y="230.6" font-size="16" text-anchor="middle" font-weight="bold" fill="#222222"></text>
+<circle cx="302.5" cy="225" r="15" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+<text x="302.5" y="230.6" font-size="16" text-anchor="middle" font-weight="bold" fill="#222222"></text>
+<circle cx="367.5" cy="225" r="15" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+<text x="367.5" y="230.6" font-size="16" text-anchor="middle" font-weight="bold" fill="#222222"></text>
+<circle cx="432.5" cy="225" r="15" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+<text x="432.5" y="230.6" font-size="16" text-anchor="middle" font-weight="bold" fill="#222222"></text>
+<circle cx="497.5" cy="225" r="15" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+<text x="497.5" y="230.6" font-size="16" text-anchor="middle" font-weight="bold" fill="#222222"></text>
+<text x="10" y="35" font-size="14" text-anchor="start" fill="#222222">nilai 5</text>
+<text x="10" y="100" font-size="14" text-anchor="start" fill="#222222">nilai 4</text>
+<text x="10" y="165" font-size="14" text-anchor="start" fill="#222222">nilai 3</text>
+<text x="10" y="270" font-size="14" text-anchor="start" fill="#222222">Kiri = ambil, kanan = lewati. Tulis jumlah di tiap simpul.</text>
+</g>
+</svg>

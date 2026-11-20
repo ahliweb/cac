@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 330" width="540" height="330" role="img" aria-labelledby="t d">
+<title id="t">Tabel panggilan jumlah dan tabel daftar perbaikan</title>
+<desc id="d">Tabel pertama: dua baris panggilan jumlah(a, 3) pertama dan kedua dengan kolom total sebelum dan nilai kembali, kosong. Tabel kedua: daftar perbaikan dengan kolom nomor, butir yang diubah, bau kode, dan keluaran sama atau beda, tiga baris kosong.</desc>
+<rect width="540" height="330" fill="#ffffff"/>
+
+<g font-family="sans-serif">
+<text x="20" y="26" font-size="14" text-anchor="start" fill="#222222">Prediksi: fungsi jumlah dipanggil dua kali, total global mulai 0.</text>
+<rect x="20" y="40" width="170" height="30" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="105.0" y="60.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">panggilan</text>
+<rect x="190" y="40" width="150" height="30" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="265.0" y="60.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">total sebelum</text>
+<rect x="340" y="40" width="150" height="30" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="415.0" y="60.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">nilai kembali</text>
+<rect x="20" y="70" width="170" height="30" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="105.0" y="90.25" font-size="15" text-anchor="middle" fill="#222222">jumlah(a, 3) ke-1</text>
+<rect x="190" y="70" width="150" height="30" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="340" y="70" width="150" height="30" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="20" y="100" width="170" height="30" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="105.0" y="120.25" font-size="15" text-anchor="middle" fill="#222222">jumlah(a, 3) ke-2</text>
+<rect x="190" y="100" width="150" height="30" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="340" y="100" width="150" height="30" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="20" y="150" font-size="14" text-anchor="start" fill="#222222">Daftar perbaikan untuk satu solusi lama. Isi satu baris per butir.</text>
+<rect x="20" y="165" width="40" height="34" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="40.0" y="187.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">no</text>
+<rect x="60" y="165" width="200" height="34" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="160.0" y="187.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">butir yang diubah</text>
+<rect x="260" y="165" width="140" height="34" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="330.0" y="187.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">bau kode</text>
+<rect x="400" y="165" width="110" height="34" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="455.0" y="187.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">keluaran</text>
+<rect x="20" y="199" width="40" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="40.0" y="221.25" font-size="15" text-anchor="middle" fill="#222222">1</text>
+<rect x="60" y="199" width="200" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="260" y="199" width="140" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="400" y="199" width="110" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="455.0" y="221.25" font-size="15" text-anchor="middle" fill="#222222">sama / BEDA</text>
+<rect x="20" y="233" width="40" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="40.0" y="255.25" font-size="15" text-anchor="middle" fill="#222222">2</text>
+<rect x="60" y="233" width="200" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="260" y="233" width="140" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="400" y="233" width="110" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="455.0" y="255.25" font-size="15" text-anchor="middle" fill="#222222">sama / BEDA</text>
+<rect x="20" y="267" width="40" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="40.0" y="289.25" font-size="15" text-anchor="middle" fill="#222222">3</text>
+<rect x="60" y="267" width="200" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="260" y="267" width="140" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="400" y="267" width="110" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="455.0" y="289.25" font-size="15" text-anchor="middle" fill="#222222">sama / BEDA</text>
+</g>
+</svg>

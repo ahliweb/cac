@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 265" width="500" height="265" role="img" aria-labelledby="t d">
+  <title id="t">Larik tujuh pembacaan dan larik terurut yang masih kosong</title>
+  <desc id="d">Atas: larik tujuh pembacaan 30, 31, 30, 90, 29, 31, 30 dengan indeks 0 sampai 6. Bawah: tujuh kotak kosong untuk menulis larik setelah diurutkan dari kecil ke besar. Di bawahnya isian median dan rata-rata.</desc>
+  <rect width="500" height="265" fill="#ffffff"/>
+  <text x="250" y="28" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Tujuh pembacaan karangan</text>
+  <text x="57" y="56" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">[0]</text>
+  <rect x="30" y="64" width="54" height="38" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="57" y="89" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">30</text>
+  <text x="121" y="56" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">[1]</text>
+  <rect x="94" y="64" width="54" height="38" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="121" y="89" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">31</text>
+  <text x="185" y="56" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">[2]</text>
+  <rect x="158" y="64" width="54" height="38" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="185" y="89" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">30</text>
+  <text x="249" y="56" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">[3]</text>
+  <rect x="222" y="64" width="54" height="38" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="249" y="89" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">90</text>
+  <text x="313" y="56" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">[4]</text>
+  <rect x="286" y="64" width="54" height="38" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="313" y="89" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">29</text>
+  <text x="377" y="56" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">[5]</text>
+  <rect x="350" y="64" width="54" height="38" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="377" y="89" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">31</text>
+  <text x="441" y="56" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">[6]</text>
+  <rect x="414" y="64" width="54" height="38" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="441" y="89" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">30</text>
+  <text x="250" y="138" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Sesudah diurutkan (kecil ke besar)</text>
+  <text x="57" y="164" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">[0]</text>
+  <rect x="30" y="172" width="54" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="121" y="164" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">[1]</text>
+  <rect x="94" y="172" width="54" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="185" y="164" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">[2]</text>
+  <rect x="158" y="172" width="54" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="249" y="164" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">[3]</text>
+  <rect x="222" y="172" width="54" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="313" y="164" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">[4]</text>
+  <rect x="286" y="172" width="54" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="377" y="164" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">[5]</text>
+  <rect x="350" y="172" width="54" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="441" y="164" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">[6]</text>
+  <rect x="414" y="172" width="54" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="250" y="246" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Median = ______    Rata-rata = ______</text>
+</svg>

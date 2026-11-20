@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 690 320" width="690" height="320" role="img" aria-labelledby="t d">
+  <title id="t">Enam titik karangan dan tabel iterasi k-means</title>
+  <desc id="d">Bidang dengan enam titik P1 sampai P6 dalam dua gerombol dan tabel kosong tiga iterasi untuk pusat 1 dan pusat 2, serta kotak kosong untuk anggota.</desc>
+  <rect width="690" height="320" fill="#ffffff"/>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker></defs>
+  <line x1="50" y1="240" x2="350" y2="240" stroke="#222222" stroke-width="2" marker-end="url(#ar)"/>
+  <line x1="50" y1="240" x2="50" y2="15" stroke="#222222" stroke-width="2" marker-end="url(#ar)"/>
+  <text x="346" y="276" font-family="sans-serif" font-size="14" text-anchor="end" fill="#222222">x</text>
+  <text x="58" y="11" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">y</text>
+  <line x1="50" y1="240" x2="50" y2="246" stroke="#222222" stroke-width="2"/>
+  <text x="50" y="262" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">0</text>
+  <line x1="88" y1="240" x2="88" y2="246" stroke="#222222" stroke-width="2"/>
+  <text x="88" y="262" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">2</text>
+  <line x1="126" y1="240" x2="126" y2="246" stroke="#222222" stroke-width="2"/>
+  <text x="126" y="262" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">4</text>
+  <line x1="164" y1="240" x2="164" y2="246" stroke="#222222" stroke-width="2"/>
+  <text x="164" y="262" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">6</text>
+  <line x1="202" y1="240" x2="202" y2="246" stroke="#222222" stroke-width="2"/>
+  <text x="202" y="262" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">8</text>
+  <line x1="240" y1="240" x2="240" y2="246" stroke="#222222" stroke-width="2"/>
+  <text x="240" y="262" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">10</text>
+  <line x1="44" y1="240" x2="50" y2="240" stroke="#222222" stroke-width="2"/>
+  <text x="40" y="245" font-family="sans-serif" font-size="14" text-anchor="end" fill="#222222">0</text>
+  <line x1="44" y1="202" x2="50" y2="202" stroke="#222222" stroke-width="2"/>
+  <text x="40" y="207" font-family="sans-serif" font-size="14" text-anchor="end" fill="#222222">2</text>
+  <line x1="44" y1="164" x2="50" y2="164" stroke="#222222" stroke-width="2"/>
+  <text x="40" y="169" font-family="sans-serif" font-size="14" text-anchor="end" fill="#222222">4</text>
+  <line x1="44" y1="126" x2="50" y2="126" stroke="#222222" stroke-width="2"/>
+  <text x="40" y="131" font-family="sans-serif" font-size="14" text-anchor="end" fill="#222222">6</text>
+  <line x1="44" y1="88" x2="50" y2="88" stroke="#222222" stroke-width="2"/>
+  <text x="40" y="93" font-family="sans-serif" font-size="14" text-anchor="end" fill="#222222">8</text>
+  <line x1="44" y1="50" x2="50" y2="50" stroke="#222222" stroke-width="2"/>
+  <text x="40" y="55" font-family="sans-serif" font-size="14" text-anchor="end" fill="#222222">10</text>
+  <circle cx="88" cy="221" r="6" fill="#2a5d9f" stroke="#222222" stroke-width="2"/>
+  <text x="102" y="221" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#222222">P1</text>
+  <circle cx="107" cy="202" r="6" fill="#2a5d9f" stroke="#222222" stroke-width="2"/>
+  <text x="121" y="208" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#222222">P2</text>
+  <circle cx="88" cy="183" r="6" fill="#2a5d9f" stroke="#222222" stroke-width="2"/>
+  <text x="102" y="183" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#222222">P3</text>
+  <circle cx="221" cy="88" r="6" fill="#2a5d9f" stroke="#222222" stroke-width="2"/>
+  <text x="209" y="86" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="end" fill="#222222">P4</text>
+  <circle cx="202" cy="69" r="6" fill="#2a5d9f" stroke="#222222" stroke-width="2"/>
+  <text x="190" y="67" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="end" fill="#222222">P5</text>
+  <circle cx="221" cy="50" r="6" fill="#2a5d9f" stroke="#222222" stroke-width="2"/>
+  <text x="209" y="48" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="end" fill="#222222">P6</text>
+  <text x="400" y="30" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#222222">Isi tiap iterasi:</text>
+  <rect x="400" y="42" width="70" height="34" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="435" y="64" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">iterasi</text>
+  <rect x="470" y="42" width="100" height="34" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="520" y="64" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">pusat 1</text>
+  <rect x="570" y="42" width="100" height="34" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="620" y="64" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">pusat 2</text>
+  <rect x="400" y="76" width="70" height="44" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="435" y="103" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">1</text>
+  <rect x="470" y="76" width="100" height="44" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="570" y="76" width="100" height="44" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="400" y="120" width="70" height="44" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="435" y="147" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">2</text>
+  <rect x="470" y="120" width="100" height="44" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="570" y="120" width="100" height="44" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="400" y="164" width="70" height="44" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="435" y="191" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">3</text>
+  <rect x="470" y="164" width="100" height="44" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="570" y="164" width="100" height="44" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="400" y="232" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#222222">Anggota tiap iterasi:</text>
+  <rect x="400" y="242" width="270" height="70" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+</svg>

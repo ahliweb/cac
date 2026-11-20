@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400" width="700" height="400" role="img" aria-labelledby="t d">
+  <title id="t">Tabel enam bidang ulasan dengan kolom bukti dan temuan kosong</title>
+  <desc id="d">Tabel enam bidang ulasan: kebutuhan, konten dan merek, tampilan, fitur dan uji, keamanan dan privasi, dan dokumen. Kolom bukti dan kolom temuan kosong untuk diisi peninjau.</desc>
+  <rect width="700" height="400" fill="#ffffff"/>
+  <rect x="15" y="30" width="200" height="46" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="115.0" y="58.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">bidang</text>
+  <rect x="215" y="30" width="300" height="46" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="365.0" y="58.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">bukti (perintah atau keluaran)</text>
+  <rect x="515" y="30" width="175" height="46" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="602.5" y="58.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">temuan (ya, tidak)</text>
+  <rect x="15" y="76" width="200" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="115.0" y="104.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">Kebutuhan</text>
+  <rect x="215" y="76" width="300" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="515" y="76" width="175" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="122" width="200" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="115.0" y="150.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">Konten dan merek</text>
+  <rect x="215" y="122" width="300" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="515" y="122" width="175" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="168" width="200" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="115.0" y="196.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">Tampilan</text>
+  <rect x="215" y="168" width="300" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="515" y="168" width="175" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="214" width="200" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="115.0" y="242.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">Fitur dan uji</text>
+  <rect x="215" y="214" width="300" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="515" y="214" width="175" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="260" width="200" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="115.0" y="288.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">Keamanan dan privasi</text>
+  <rect x="215" y="260" width="300" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="515" y="260" width="175" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="306" width="200" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="115.0" y="334.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">Dokumen</text>
+  <rect x="215" y="306" width="300" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="515" y="306" width="175" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="350" y="385" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">Tulis prediksi temuan terbanyak sebelum membuka proyek teman.</text>
+</svg>

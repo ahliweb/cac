@@ -59,10 +59,10 @@ function isUnique(values: readonly string[]): boolean {
 }
 
 /**
- * Whether every `sma-coding` module must have a worksheet (`learnerSheetPath`, ADR-0011). `false` until the
- * programme's worksheets are written; a later per-programme change flips it.
+ * Whether every `sma-coding` module must have a worksheet (`learnerSheetPath`, ADR-0011). `true` since
+ * every `sma-coding` module has a worksheet (#289).
  */
-export const SMA_LEARNER_SHEET_REQUIRED = false;
+export const SMA_LEARNER_SHEET_REQUIRED = true;
 
 /** One `sma-coding` module-index entry. */
 export const smaModuleSchema = z

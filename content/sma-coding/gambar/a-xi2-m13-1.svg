@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 420" width="620" height="420" role="img" aria-labelledby="t d">
+  <title id="t">Tabel rencana proyek tujuh bagian</title>
+  <desc id="d">Tabel dua kolom bagian dan isimu. Tujuh bagian: tujuan, masukan, aturan, keluaran, kriteria selesai, daftar uji, dan prediksi. Kolom isimu kosong.</desc>
+  <rect width="620" height="420" fill="#ffffff"/>
+  <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker></defs>
+  <rect x="15" y="12" width="160" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="95.0" y="40.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold">bagian</text>
+  <rect x="175" y="12" width="430" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="390.0" y="40.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold">isimu</text>
+  <rect x="15" y="60" width="160" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="95.0" y="88.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">tujuan</text>
+  <rect x="175" y="60" width="430" height="48" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="15" y="108" width="160" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="95.0" y="136.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">masukan</text>
+  <rect x="175" y="108" width="430" height="48" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="15" y="156" width="160" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="95.0" y="184.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">aturan</text>
+  <rect x="175" y="156" width="430" height="48" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="15" y="204" width="160" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="95.0" y="232.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">keluaran</text>
+  <rect x="175" y="204" width="430" height="48" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="15" y="252" width="160" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="95.0" y="280.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">kriteria selesai</text>
+  <rect x="175" y="252" width="430" height="48" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="15" y="300" width="160" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="95.0" y="328.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">daftar uji</text>
+  <rect x="175" y="300" width="430" height="48" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="15" y="348" width="160" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="95.0" y="376.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">prediksi</text>
+  <rect x="175" y="348" width="430" height="48" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+</svg>

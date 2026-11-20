@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 270" width="600" height="270" role="img" aria-labelledby="t d">
+  <title id="t">Penyempitan tipe Id</title>
+  <desc id="d">Diagram alir: kotak id bertipe number atau string menuju belah ketupat typeof id sama dengan number. Cabang ya dan cabang tidak masing-masing menuju kotak putus-putus kosong untuk menulis tipe id di cabang itu.</desc>
+  <rect width="600" height="270" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker></defs>
+  <g font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">
+    <rect x="190" y="10" width="220" height="40" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="300" y="35">id: number | string</text>
+    <line x1="300" y1="50" x2="300" y2="75" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+    <polygon points="300,75 410,120 300,165 190,120" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+    <text x="300" y="115">typeof id ===</text><text x="300" y="133">"number" ?</text>
+    <g stroke="#222222" stroke-width="2" marker-end="url(#a)" fill="none">
+      <path d="M190 120 L110 120 L110 185"/><path d="M410 120 L490 120 L490 185"/>
+    </g>
+    <text x="150" y="112" font-weight="bold">YA</text><text x="450" y="112" font-weight="bold">TIDAK</text>
+    <g stroke="#222222" stroke-width="2" fill="#ffffff" stroke-dasharray="5 4">
+      <rect x="20" y="190" width="180" height="50"/><rect x="400" y="190" width="180" height="50"/>
+    </g>
+    <text x="110" y="260">tipe id di sini: ______</text><text x="490" y="260">tipe id di sini: ______</text>
+  </g>
+</svg>

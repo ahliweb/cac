@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" width="640" height="300" role="img" aria-labelledby="t d">
+  <title id="t">Tabel penelusuran hubungan rekurens T(n) dan C(n)</title>
+  <desc id="d">Dua tabel. Tabel pertama untuk T(n) dengan n dari 1 sampai 6: T(1) bernilai 1, sisanya kosong. Tabel kedua untuk C(n) dengan n dari 0 sampai 6: C(0) dan C(1) bernilai 1, sisanya kosong. Aturan tertulis di atas tiap tabel.</desc>
+  <rect width="640" height="300" fill="#ffffff"/>
+  <text x="10" y="20" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">T(1) = 1;  T(n) = 2 · T(n−1) + 1</text>
+  <text x="40" y="56" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">n</text>
+  <text x="40" y="96" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">T(n)</text>
+  <rect x="70" y="36" width="64" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="102.0" y="56" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">1</text>
+  <rect x="70" y="72" width="64" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="102.0" y="95" font-family="sans-serif" font-size="16" font-weight="bold" fill="#2a5d9f" text-anchor="middle">1</text>
+  <rect x="140" y="36" width="64" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="172.0" y="56" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">2</text>
+  <rect x="140" y="72" width="64" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="210" y="36" width="64" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="242.0" y="56" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">3</text>
+  <rect x="210" y="72" width="64" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="280" y="36" width="64" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="312.0" y="56" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">4</text>
+  <rect x="280" y="72" width="64" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="350" y="36" width="64" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="382.0" y="56" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">5</text>
+  <rect x="350" y="72" width="64" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="420" y="36" width="64" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="452.0" y="56" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">6</text>
+  <rect x="420" y="72" width="64" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="10" y="150" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">C(0) = C(1) = 1;  C(n) = C(n−1) + C(n−2) + 1</text>
+  <text x="40" y="186" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">n</text>
+  <text x="40" y="226" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">C(n)</text>
+  <rect x="70" y="166" width="64" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="102.0" y="186" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">0</text>
+  <rect x="70" y="202" width="64" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="102.0" y="225" font-family="sans-serif" font-size="16" font-weight="bold" fill="#2a5d9f" text-anchor="middle">1</text>
+  <rect x="140" y="166" width="64" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="172.0" y="186" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">1</text>
+  <rect x="140" y="202" width="64" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="172.0" y="225" font-family="sans-serif" font-size="16" font-weight="bold" fill="#2a5d9f" text-anchor="middle">1</text>
+  <rect x="210" y="166" width="64" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="242.0" y="186" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">2</text>
+  <rect x="210" y="202" width="64" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="280" y="166" width="64" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="312.0" y="186" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">3</text>
+  <rect x="280" y="202" width="64" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="350" y="166" width="64" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="382.0" y="186" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">4</text>
+  <rect x="350" y="202" width="64" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="420" y="166" width="64" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="452.0" y="186" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">5</text>
+  <rect x="420" y="202" width="64" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="490" y="166" width="64" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="522.0" y="186" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">6</text>
+  <rect x="490" y="202" width="64" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="10" y="285" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">Isi kotak abu-abu yang kosong dari kiri ke kanan.</text>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 330" width="560" height="330" role="img" aria-labelledby="t d">
+<title id="t">Model kotak: isi, padding, border, dan margin dengan isian lebar tampak</title>
+<desc id="d">Empat persegi panjang bersarang dari dalam ke luar berlabel isi, padding, border, dan margin. Nilai yang diberikan: width 300px, padding 20px, border 5px, margin 10px. Di bawahnya dua isian kosong untuk lebar tampak tanpa dan dengan box-sizing border-box.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#222222"/></marker></defs>
+<rect width="560" height="330" fill="#ffffff"/>
+<rect x="20" y="15" width="520" height="200" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+<text x="30" y="34" font-family="sans-serif" font-size="14" fill="#222222">margin 10px</text>
+<rect x="50" y="45" width="460" height="150" fill="#ffffff" stroke="#222222" stroke-width="4"/>
+<text x="60" y="64" font-family="sans-serif" font-size="14" fill="#222222">border 5px</text>
+<rect x="80" y="75" width="400" height="100" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="1.5"/>
+<text x="90" y="94" font-family="sans-serif" font-size="14" fill="#222222">padding 20px</text>
+<rect x="130" y="105" width="300" height="55" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="280" y="138" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">isi: width 300px</text>
+<text x="20" y="248" font-family="sans-serif" font-size="14" fill="#222222">Lebar tampak (sampai tepi border) tanpa border-box: ______ px</text>
+<text x="20" y="278" font-family="sans-serif" font-size="14" fill="#222222">Lebar tampak dengan border-box: ______ px</text>
+<text x="20" y="308" font-family="sans-serif" font-size="14" fill="#222222">Lapisan dari dalam ke luar: isi, ______, ______, ______</text>
+</svg>

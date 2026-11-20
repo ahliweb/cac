@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 366" width="640" height="366" role="img" aria-labelledby="t d">
+  <title id="t">Lima slot langkah membaca lateral dengan kotak temuan kosong</title>
+  <desc id="d">Lima baris. Tiap baris punya kotak kiri berlabel langkah 1 sampai 5 dengan slot huruf kosong, dan kotak kanan kosong bergaris putus-putus untuk mencatat temuan atau kalimat pencarian pada Kasus 2.</desc>
+  <rect width="640" height="366" fill="#ffffff"/>
+  <text x="10" y="22" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">Urutan</text>
+  <text x="120" y="22" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">Kasus 2: catat temuan tiap langkah</text>
+  <rect x="10" y="34" width="90" height="52" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="55" y="56" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">langkah 1</text>
+  <rect x="35" y="62" width="40" height="18" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="120" y="34" width="500" height="52" rx="6" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="10" y="96" width="90" height="52" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="55" y="118" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">langkah 2</text>
+  <rect x="35" y="124" width="40" height="18" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="120" y="96" width="500" height="52" rx="6" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="10" y="158" width="90" height="52" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="55" y="180" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">langkah 3</text>
+  <rect x="35" y="186" width="40" height="18" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="120" y="158" width="500" height="52" rx="6" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="10" y="220" width="90" height="52" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="55" y="242" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">langkah 4</text>
+  <rect x="35" y="248" width="40" height="18" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="120" y="220" width="500" height="52" rx="6" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="10" y="282" width="90" height="52" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="55" y="304" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">langkah 5</text>
+  <rect x="35" y="310" width="40" height="18" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="120" y="282" width="500" height="52" rx="6" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="10" y="352" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">Kiri: tulis huruf langkah (soal Susun). Kanan: tulis temuan atau kalimat pencarianmu.</text>
+</svg>

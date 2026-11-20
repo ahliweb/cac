@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 410" width="700" height="410" role="img" aria-labelledby="t d">
+  <title id="t">Tabel rencana portofolio dengan kolom isi dan ikut arsip kosong</title>
+  <desc id="d">Tabel enam bagian portofolio: ringkasan, bukti, lisensi, refleksi proyek, tidak boleh ikut, dan arsip. Kolom berkas atau isi rencanamu dan kolom ikut arsip atau tidak kosong untuk diisi.</desc>
+  <rect width="700" height="410" fill="#ffffff"/>
+  <rect x="15" y="30" width="190" height="48" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="110.0" y="59.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">bagian</text>
+  <rect x="205" y="30" width="330" height="48" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="370.0" y="59.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">berkas atau isi rencanamu</text>
+  <rect x="535" y="30" width="155" height="48" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="612.5" y="59.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">ikut arsip?</text>
+  <rect x="15" y="78" width="190" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="110.0" y="107.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">Ringkasan</text>
+  <rect x="205" y="78" width="330" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="535" y="78" width="155" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="126" width="190" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="110.0" y="155.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">Bukti</text>
+  <rect x="205" y="126" width="330" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="535" y="126" width="155" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="174" width="190" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="110.0" y="203.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">Lisensi</text>
+  <rect x="205" y="174" width="330" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="535" y="174" width="155" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="222" width="190" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="110.0" y="251.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">Refleksi proyek</text>
+  <rect x="205" y="222" width="330" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="535" y="222" width="155" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="270" width="190" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="110.0" y="299.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">Tidak boleh ikut</text>
+  <rect x="205" y="270" width="330" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="535" y="270" width="155" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="318" width="190" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="110.0" y="347.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">Arsip</text>
+  <rect x="205" y="318" width="330" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="535" y="318" width="155" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="350" y="395" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">Tulis ya atau tidak untuk tiap bagian.</text>
+</svg>

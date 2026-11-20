@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 360" width="700" height="360" role="img" aria-labelledby="t d">
+  <title id="t">Empat slide wajib dan anggaran waktu enam menit</title>
+  <desc id="d">Kiri: empat kotak slide Masalah, Hasil, Batas, Etika dengan garis pesan kosong. Kanan: tabel anggaran enam baris masalah, metode, hasil, demo, batas dan etika, penutup, kolom menit kosong, dan baris total kosong.</desc>
+  <rect width="700" height="360" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <text x="15" y="22" font-weight="bold">Slide wajib: satu pesan tiap slide</text>
+    <rect x="15" y="32" width="320" height="70" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="27" y="55" font-weight="bold">1. Masalah</text>
+    <line x1="27" y1="85" x2="323" y2="85" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <rect x="15" y="112" width="320" height="70" rx="6" fill="#f2f2f2" stroke="#1b7a3d" stroke-width="2"/>
+    <text x="27" y="135" font-weight="bold">2. Hasil</text>
+    <line x1="27" y1="165" x2="323" y2="165" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <rect x="15" y="192" width="320" height="70" rx="6" fill="#f2f2f2" stroke="#b3261e" stroke-width="2"/>
+    <text x="27" y="215" font-weight="bold">3. Batas</text>
+    <line x1="27" y1="245" x2="323" y2="245" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <rect x="15" y="272" width="320" height="70" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+    <text x="27" y="295" font-weight="bold">4. Etika</text>
+    <line x1="27" y1="325" x2="323" y2="325" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <text x="360" y="22" font-weight="bold">Anggaran waktu</text>
+    <rect x="360" y="32" width="325" height="32" fill="#2a5d9f"/>
+    <text x="440" y="53" fill="#ffffff" text-anchor="middle">bagian</text>
+    <text x="640" y="53" fill="#ffffff" text-anchor="middle">menit</text>
+    <rect x="360" y="64" width="325" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+    <rect x="360" y="98" width="325" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+    <rect x="360" y="132" width="325" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+    <rect x="360" y="166" width="325" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+    <rect x="360" y="200" width="325" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+    <rect x="360" y="234" width="325" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+    <rect x="360" y="268" width="325" height="34" fill="#ffffff" stroke="#222222" stroke-width="2.5"/>
+    <text x="368" y="87">masalah</text>
+    <text x="368" y="121">metode</text>
+    <text x="368" y="155">hasil</text>
+    <text x="368" y="189">demo</text>
+    <text x="368" y="223">batas dan etika</text>
+    <text x="368" y="257">penutup</text>
+    <text x="368" y="291" font-weight="bold">total</text>
+    <line x1="580" y1="32" x2="580" y2="302" stroke="#222222" stroke-width="1.5"/>
+    <text x="360" y="330">total paling banyak 6 menit</text>
+  </g>
+</svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 330" width="560" height="330" role="img" aria-labelledby="t d">
+  <title id="t">Tabel penelusuran algoritma Euclid untuk fpb(48, 18)</title>
+  <desc id="d">Tabel dengan kolom langkah, a, b, dan a sisa b. Baris pertama berisi a 48 dan b 18. Sel lainnya kosong untuk diisi sampai b menjadi 0.</desc>
+  <rect width="560" height="330" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker></defs>
+  <text x="20" y="26" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#222222">Aturan: selama b bukan 0, ganti (a, b) dengan (b, a % b).</text>
+  <rect x="20" y="40" width="110" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="75.0" y="65.0" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">langkah</text>
+  <rect x="130" y="40" width="110" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="185.0" y="65.0" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">a</text>
+  <rect x="240" y="40" width="110" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="295.0" y="65.0" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">b</text>
+  <rect x="350" y="40" width="130" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="415.0" y="65.0" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">a % b</text>
+  <rect x="20" y="80" width="110" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="75.0" y="105.0" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">1</text>
+  <rect x="130" y="80" width="110" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="185.0" y="105.0" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">48</text>
+  <rect x="240" y="80" width="110" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="295.0" y="105.0" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">18</text>
+  <rect x="350" y="80" width="130" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="20" y="120" width="110" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="75.0" y="145.0" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">2</text>
+  <rect x="130" y="120" width="110" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="240" y="120" width="110" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="350" y="120" width="130" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="20" y="160" width="110" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="75.0" y="185.0" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">3</text>
+  <rect x="130" y="160" width="110" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="240" y="160" width="110" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="350" y="160" width="130" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="20" y="200" width="110" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="75.0" y="225.0" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">4</text>
+  <rect x="130" y="200" width="110" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="240" y="200" width="110" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="350" y="200" width="130" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="20" y="240" width="110" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="75.0" y="265.0" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">5</text>
+  <rect x="130" y="240" width="110" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="240" y="240" width="110" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="350" y="240" width="130" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="20" y="312" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">Baris tak terpakai dibiarkan kosong. Jawaban = nilai a saat b = 0.</text>
+</svg>

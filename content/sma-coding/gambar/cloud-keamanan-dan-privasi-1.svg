@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 536 263" width="536" height="263" role="img" aria-labelledby="t d">
+  <title id="t">Tabel hak akses tiga berkas untuk tiga peran yang kosong</title>
+  <desc id="d">Tabel tiga baris berkas (daftar-acara, anggaran, foto-kegiatan) dan tiga kolom peran (ketua, bendahara, anggota biasa). Semua sel kosong untuk diisi baca, ubah, atau dikosongkan.</desc>
+  <rect width="536" height="263" fill="#ffffff"/>
+  <text x="250" y="30" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Siapa boleh membaca atau mengubah apa</text>
+  <rect x="20" y="50" width="150" height="42" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="95.0" y="76.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">Berkas</text>
+  <rect x="170" y="50" width="110" height="42" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="225.0" y="76.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">Ketua</text>
+  <rect x="280" y="50" width="110" height="42" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="335.0" y="76.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">Bendahara</text>
+  <rect x="390" y="50" width="126" height="42" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="453.0" y="76.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">Anggota biasa</text>
+  <rect x="20" y="92" width="150" height="42" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="95.0" y="118.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">daftar-acara</text>
+  <rect x="170" y="92" width="110" height="42" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="280" y="92" width="110" height="42" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="390" y="92" width="126" height="42" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="134" width="150" height="42" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="95.0" y="160.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">anggaran</text>
+  <rect x="170" y="134" width="110" height="42" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="280" y="134" width="110" height="42" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="390" y="134" width="126" height="42" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="176" width="150" height="42" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="95.0" y="202.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">foto-kegiatan</text>
+  <rect x="170" y="176" width="110" height="42" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="280" y="176" width="110" height="42" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="390" y="176" width="126" height="42" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="250" y="246" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Isi tiap sel: baca, ubah, atau kosongkan.</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" width="640" height="260" role="img" aria-labelledby="t d">
+  <title id="t">Kerangka permintaan HTTP POST</title>
+  <desc id="d">Enam baris permintaan HTTP dengan jalur, nilai Host, Content-Length, dan badan yang kosong, beserta label bagian di sisi kanan.</desc>
+  <rect width="640" height="260" fill="#ffffff"/>
+  <rect x="15" y="15" width="420" height="230" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <g font-family="sans-serif" font-size="15" fill="#222222">
+    <text x="27" y="44">POST ________ HTTP/1.1</text>
+    <text x="27" y="78">Host: ________________</text>
+    <text x="27" y="112">Content-Type: text/plain</text>
+    <text x="27" y="146">Content-Length: ______</text>
+    <text x="27" y="180">Connection: close</text>
+    <text x="27" y="236">________________</text>
+  </g>
+  <line x1="15" y1="192" x2="435" y2="192" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="27" y="208" font-family="sans-serif" font-size="14" fill="#222222">(baris kosong)</text>
+  <g font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f">
+    <text x="455" y="44">&#8592; baris awal</text>
+    <text x="455" y="112">&#8592; header</text>
+    <text x="455" y="208">&#8592; baris kosong</text>
+    <text x="455" y="236">&#8592; badan</text>
+  </g>
+</svg>

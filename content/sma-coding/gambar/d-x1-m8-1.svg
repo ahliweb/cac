@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 325" width="700" height="325" role="img" aria-labelledby="t d">
+<title id="t">Aturan penyaring spam pada enam pesan</title>
+<desc id="d">Tabel enam pesan karangan bernomor satu sampai enam dengan kolom sebenarnya diisi. Kolom tebakan dan benar kosong untuk diisi pelajar.</desc>
+<defs><marker id="ar" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#222222"/></marker></defs>
+<rect width="700" height="325" fill="#ffffff"/>
+<rect x="20" y="20" width="40" height="36" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="40.0" y="43.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">No</text>
+<rect x="60" y="20" width="370" height="36" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="245.0" y="43.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Pesan</text>
+<rect x="430" y="20" width="100" height="36" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="480.0" y="43.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Sebenarnya</text>
+<rect x="530" y="20" width="100" height="36" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="580.0" y="43.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Tebakanmu</text>
+<rect x="630" y="20" width="70" height="36" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="665.0" y="43.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Benar?</text>
+<rect x="20" y="56" width="40" height="36" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="40.0" y="79.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1</text>
+<rect x="60" y="56" width="370" height="36" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="245.0" y="79.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Kamu menang hadiah, klik sekarang</text>
+<rect x="430" y="56" width="100" height="36" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="480.0" y="79.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">spam</text>
+<rect x="530" y="56" width="100" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="630" y="56" width="70" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="20" y="92" width="40" height="36" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="40.0" y="115.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">2</text>
+<rect x="60" y="92" width="370" height="36" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="245.0" y="115.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Rapat piket besok jam 10</text>
+<rect x="430" y="92" width="100" height="36" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="480.0" y="115.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">bukan spam</text>
+<rect x="530" y="92" width="100" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="630" y="92" width="70" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="20" y="128" width="40" height="36" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="40.0" y="151.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">3</text>
+<rect x="60" y="128" width="370" height="36" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="245.0" y="151.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">GRATIS pulsa untuk kamu</text>
+<rect x="430" y="128" width="100" height="36" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="480.0" y="151.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">spam</text>
+<rect x="530" y="128" width="100" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="630" y="128" width="70" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="20" y="164" width="40" height="36" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="40.0" y="187.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">4</text>
+<rect x="60" y="164" width="370" height="36" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="245.0" y="187.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Klaim undian sekarang, tanpa biaya</text>
+<rect x="430" y="164" width="100" height="36" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="480.0" y="187.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">spam</text>
+<rect x="530" y="164" width="100" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="630" y="164" width="70" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="20" y="200" width="40" height="36" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="40.0" y="223.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">5</text>
+<rect x="60" y="200" width="370" height="36" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="245.0" y="223.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Hadiah ulang tahun untuk adikku sudah kubungkus</text>
+<rect x="430" y="200" width="100" height="36" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="480.0" y="223.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">bukan spam</text>
+<rect x="530" y="200" width="100" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="630" y="200" width="70" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="20" y="236" width="40" height="36" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="40.0" y="259.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">6</text>
+<rect x="60" y="236" width="370" height="36" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="245.0" y="259.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Tugas kelompok dikumpulkan Jumat</text>
+<rect x="430" y="236" width="100" height="36" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="480.0" y="259.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">bukan spam</text>
+<rect x="530" y="236" width="100" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="630" y="236" width="70" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/><text x="20" y="282" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">Aturan penyaring: bila pesan memuat kata hadiah atau gratis, tandai spam.</text><text x="20" y="304" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">Benar pada ____ dari 6 pesan.</text>
+</svg>

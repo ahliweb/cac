@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 500" width="700" height="500" role="img" aria-labelledby="t d">
+  <title id="t">Peta tujuh halaman situs dan tabel kontras tiga warna dengan isian kosong</title>
+  <desc id="d">Atas: peta halaman. Beranda tertaut ke Tentang, Jam layanan, Peminjaman buku, Kebijakan privasi, dan Kontak. Halaman arsip-lama ada sebagai kotak terpisah dengan garis tepi merah. Ada kotak kosong untuk jumlah temuan. Bawah: tabel tiga warna dengan kolom rasio dan lolos kosong.</desc>
+  <rect width="700" height="500" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker></defs>
+  <rect x="260" y="15" width="180" height="40" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="350.0" y="40.0" font-family="monospace" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">/ (beranda)</text>
+  <line x1="350" y1="55" x2="70" y2="95" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="10" y="95" width="120" height="44" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="70.0" y="113.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">/halaman/</text>
+  <text x="70.0" y="131.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">tentang</text>
+  <line x1="350" y1="55" x2="210" y2="95" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="150" y="95" width="120" height="44" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="210.0" y="113.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">/halaman/</text>
+  <text x="210.0" y="131.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">jam-layanan</text>
+  <line x1="350" y1="55" x2="350" y2="95" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="290" y="95" width="120" height="44" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="350.0" y="113.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">/halaman/</text>
+  <text x="350.0" y="131.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">peminjaman</text>
+  <line x1="350" y1="55" x2="490" y2="95" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="430" y="95" width="120" height="44" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="490.0" y="113.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">/halaman/</text>
+  <text x="490.0" y="131.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">privasi</text>
+  <line x1="350" y1="55" x2="630" y2="95" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="570" y="95" width="120" height="44" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="630.0" y="122.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">/kontak</text>
+  <rect x="10" y="160" width="160" height="44" rx="4" fill="#ffffff" stroke="#b3261e" stroke-width="2"/>
+  <text x="90.0" y="178.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">/halaman/</text>
+  <text x="90.0" y="196.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">arsip-lama</text>
+  <text x="430" y="176" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#222222">jumlah temuan pada peta:</text>
+  <rect x="430" y="184" width="110" height="34" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="15" y="257" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#222222">Prediksi kontras</text>
+  <rect x="15" y="265" width="260" height="46" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="145.0" y="293.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">warna sebagai teks di latar putih</text>
+  <rect x="275" y="265" width="120" height="46" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="335.0" y="293.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">rasio</text>
+  <rect x="395" y="265" width="120" height="46" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="455.0" y="293.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">lolos 4,5:1?</text>
+  <rect x="15" y="311" width="260" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="145.0" y="339.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">primer #0f766e</text>
+  <rect x="275" y="311" width="120" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="395" y="311" width="120" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="357" width="260" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="145.0" y="385.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">primer-muda #2dd4bf</text>
+  <rect x="275" y="357" width="120" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="395" y="357" width="120" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="403" width="260" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="145.0" y="431.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">aksen #b45309</text>
+  <rect x="275" y="403" width="120" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="395" y="403" width="120" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="350" y="485" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">Tulis prediksimu sebelum menjalankan skrip.</text>
+</svg>

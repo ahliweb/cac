@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 690 330" width="690" height="330" role="img" aria-labelledby="t d">
+  <title id="t">Dua tabel isian: rasio kontras dan baris diff</title>
+  <desc id="d">Tabel pertama berjudul Prediksi kontras: tiga rasio 2,1; 4,5; dan 7,0 dengan kolom lolos kosong. Tabel kedua berjudul Telusuri rahasia: empat baris diff dengan kolom ditandai kosong.</desc>
+  <rect width="690" height="330" fill="#ffffff"/>
+  <text x="15" y="37" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#222222">Prediksi kontras</text>
+  <rect x="15" y="45" width="80" height="46" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="55.0" y="73.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">rasio</text>
+  <rect x="95" y="45" width="90" height="46" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="140.0" y="73.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">lolos?</text>
+  <rect x="15" y="91" width="80" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="55.0" y="119.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">2,1</text>
+  <rect x="95" y="91" width="90" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="137" width="80" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="55.0" y="165.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">4,5</text>
+  <rect x="95" y="137" width="90" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="183" width="80" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="55.0" y="211.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">7,0</text>
+  <rect x="95" y="183" width="90" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="200" y="37" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#222222">Telusuri rahasia</text>
+  <rect x="200" y="45" width="370" height="46" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="385.0" y="73.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">baris diff</text>
+  <rect x="570" y="45" width="110" height="46" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="625.0" y="73.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">ditandai?</text>
+  <rect x="200" y="91" width="370" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="385.0" y="119.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">-TOKEN_LAMA = "KUNCI_PALSU_CONTOH_1"</text>
+  <rect x="570" y="91" width="110" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="200" y="137" width="370" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="385.0" y="165.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">+TOKEN_BARU = "KUNCI_PALSU_CONTOH_2"</text>
+  <rect x="570" y="137" width="110" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="200" y="183" width="370" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="385.0" y="211.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">+const judul = "Kontak"</text>
+  <rect x="570" y="183" width="110" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="200" y="229" width="370" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="385.0" y="257.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">+# tidak ada token di sini</text>
+  <rect x="570" y="229" width="110" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="345" y="310" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">Isi ya atau tidak pada kotak putus-putus.</text>
+</svg>

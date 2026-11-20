@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 250" width="640" height="250" role="img" aria-labelledby="t d">
+  <title id="t">Garis bilangan bagian perangkat alamat 192.0.2.x</title>
+  <desc id="d">Garis bilangan dari 0 sampai 255 dengan tanda di 64, 128, dan 192. Papan di 23 dan komputer guru di 200. Dua baris isian kosong untuk blok jaringan dengan awalan /24 dan /25.</desc>
+  <rect width="640" height="250" fill="#ffffff"/>
+  <text x="20" y="26" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222">Alamat 192.0.2.x: angka terakhir 0 sampai 255</text>
+  <rect x="40" y="80" width="560" height="28" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <g stroke="#222222" stroke-width="2">
+    <line x1="180" y1="74" x2="180" y2="114"/>
+    <line x1="320" y1="74" x2="320" y2="114"/>
+    <line x1="460" y1="74" x2="460" y2="114"/>
+  </g>
+  <g font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">
+    <text x="40" y="132">0</text>
+    <text x="180" y="132">64</text>
+    <text x="320" y="132">128</text>
+    <text x="460" y="132">192</text>
+    <text x="600" y="132">255</text>
+  </g>
+  <path d="M90,78 L83,62 L97,62 Z" fill="#2a5d9f"/>
+  <text x="90" y="52" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">papan (23)</text>
+  <path d="M478,78 L471,62 L485,62 Z" fill="#b3261e"/>
+  <text x="478" y="52" font-family="sans-serif" font-size="14" font-weight="bold" fill="#b3261e" text-anchor="middle">guru (200)</text>
+  <g fill="none" stroke="#222222" stroke-width="2" stroke-dasharray="6 4">
+    <rect x="20" y="150" width="600" height="38"/>
+    <rect x="20" y="198" width="600" height="38"/>
+  </g>
+  <g font-family="sans-serif" font-size="15" fill="#222222">
+    <text x="32" y="175">/24: blok dari ______ sampai ______</text>
+    <text x="32" y="223">/25: blok A ______ sampai ______ ; blok B ______ sampai ______</text>
+  </g>
+</svg>

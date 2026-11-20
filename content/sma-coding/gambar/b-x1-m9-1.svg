@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300" width="560" height="300" role="img" aria-labelledby="t d">
+<title id="t">Tabel hasil ekspresi dengan hitung tangan dan hasil Bun yang kosong</title>
+<desc id="d">Tabel dengan kolom ekspresi, hasil hitung tangan, dan hasil Bun. Lima ekspresi sudah tertulis: 2 + 3 * 4, (2 + 3) * 4, 10 % 4, 2 ** 3, dan 10 / 4. Dua kolom hasil kosong untuk diisi pelajar.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#222222"/></marker></defs>
+<rect width="560" height="300" fill="#ffffff"/>
+<text x="20" y="28" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222">Hitung dengan tangan dulu, baru cocokkan dengan Bun</text>
+<rect x="20" y="44" width="200" height="40" fill="#dde7f3" stroke="#222222" stroke-width="1.5"/>
+<text x="120.0" y="69.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Ekspresi</text>
+<rect x="220" y="44" width="160" height="40" fill="#dde7f3" stroke="#222222" stroke-width="1.5"/>
+<text x="300.0" y="69.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Hitung tangan</text>
+<rect x="380" y="44" width="160" height="40" fill="#dde7f3" stroke="#222222" stroke-width="1.5"/>
+<text x="460.0" y="69.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Hasil Bun</text>
+<rect x="20" y="84" width="200" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="120.0" y="109.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">2 + 3 * 4</text>
+<rect x="220" y="84" width="160" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="380" y="84" width="160" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="20" y="124" width="200" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="120.0" y="149.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">(2 + 3) * 4</text>
+<rect x="220" y="124" width="160" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="380" y="124" width="160" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="20" y="164" width="200" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="120.0" y="189.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">10 % 4</text>
+<rect x="220" y="164" width="160" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="380" y="164" width="160" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="20" y="204" width="200" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="120.0" y="229.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">2 ** 3</text>
+<rect x="220" y="204" width="160" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="380" y="204" width="160" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="20" y="244" width="200" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="120.0" y="269.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">10 / 4</text>
+<rect x="220" y="244" width="160" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="380" y="244" width="160" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 310" width="640" height="310" role="img" aria-labelledby="t d">
+  <title id="t">Rencana proyek satu halaman dengan tujuh kotak kosong</title>
+  <desc id="d">Formulir rencana proyek berisi tujuh kotak kosong berlabel: pertanyaan, data, pembanding, metrik utama dengan alasan, kriteria selesai, prediksi angka, dan risiko.</desc>
+  <rect width="640" height="310" fill="#ffffff"/>
+  <rect x="20" y="16" width="600" height="56" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="30" y="36" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">pertanyaan</text>
+  <rect x="20" y="84" width="295" height="62" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="30" y="104" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">data</text>
+  <rect x="325" y="84" width="295" height="62" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="335" y="104" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">pembanding</text>
+  <rect x="20" y="158" width="295" height="62" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="30" y="178" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">metrik utama dengan alasan</text>
+  <rect x="325" y="158" width="295" height="62" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="335" y="178" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">kriteria selesai</text>
+  <rect x="20" y="232" width="295" height="62" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="30" y="252" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">prediksi angka (ditulis sebelum hasil)</text>
+  <rect x="325" y="232" width="295" height="62" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="335" y="252" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">risiko</text>
+</svg>

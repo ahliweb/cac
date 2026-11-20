@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 260" width="640" height="260" role="img" aria-labelledby="t d">
+  <title id="t">Lima sensor garis dan tiga pola pembacaan</title>
+  <desc id="d">Lima lingkaran sensor pada posisi -30, -15, 0, 15, dan 30 mm. Tiga baris pola 10000, 01110, dan 00011, dengan lingkaran hitam penuh untuk gelap dan kosong untuk terang, dan garis isian galat di kanan tiap baris.</desc>
+  <rect width="640" height="260" fill="#ffffff"/>
+  <text x="60" y="28" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">-30 mm</text>
+  <text x="60" y="48" font-family="sans-serif" font-size="14" fill="#2a5d9f" text-anchor="middle">indeks 0</text>
+  <text x="130" y="28" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">-15 mm</text>
+  <text x="130" y="48" font-family="sans-serif" font-size="14" fill="#2a5d9f" text-anchor="middle">indeks 1</text>
+  <text x="200" y="28" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">0 mm</text>
+  <text x="200" y="48" font-family="sans-serif" font-size="14" fill="#2a5d9f" text-anchor="middle">indeks 2</text>
+  <text x="270" y="28" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">15 mm</text>
+  <text x="270" y="48" font-family="sans-serif" font-size="14" fill="#2a5d9f" text-anchor="middle">indeks 3</text>
+  <text x="340" y="28" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">30 mm</text>
+  <text x="340" y="48" font-family="sans-serif" font-size="14" fill="#2a5d9f" text-anchor="middle">indeks 4</text>
+  <line x1="200" y1="56" x2="200" y2="244" stroke="#222222" stroke-width="1.5" stroke-dasharray="3 4"/>
+  <text x="206" y="252" font-family="sans-serif" font-size="14" fill="#222222">tengah robot</text>
+  <circle cx="60" cy="100" r="16" fill="#222222" stroke="#222222" stroke-width="2"/>
+  <circle cx="130" cy="100" r="16" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <circle cx="200" cy="100" r="16" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <circle cx="270" cy="100" r="16" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <circle cx="340" cy="100" r="16" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="370" y="105" font-family="sans-serif" font-size="15" fill="#222222">10000  galat: ________ mm</text>
+  <circle cx="60" cy="156" r="16" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <circle cx="130" cy="156" r="16" fill="#222222" stroke="#222222" stroke-width="2"/>
+  <circle cx="200" cy="156" r="16" fill="#222222" stroke="#222222" stroke-width="2"/>
+  <circle cx="270" cy="156" r="16" fill="#222222" stroke="#222222" stroke-width="2"/>
+  <circle cx="340" cy="156" r="16" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="370" y="161" font-family="sans-serif" font-size="15" fill="#222222">01110  galat: ________ mm</text>
+  <circle cx="60" cy="212" r="16" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <circle cx="130" cy="212" r="16" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <circle cx="200" cy="212" r="16" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <circle cx="270" cy="212" r="16" fill="#222222" stroke="#222222" stroke-width="2"/>
+  <circle cx="340" cy="212" r="16" fill="#222222" stroke="#222222" stroke-width="2"/>
+  <text x="370" y="217" font-family="sans-serif" font-size="15" fill="#222222">00011  galat: ________ mm</text>
+</svg>

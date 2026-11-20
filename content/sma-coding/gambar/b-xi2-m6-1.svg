@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 290" width="640" height="290" role="img" aria-labelledby="t d">
+  <title id="t">Tiga potongan teks dan tabel garis dan sisa</title>
+  <desc id="d">Tiga kotak potongan berurutan: potongan 1 id,kategori,jumlah newline 1,buku,15; potongan 2 00 newline 2,makanan,2000 newline 3,hi; potongan 3 buran,500 newline. Di bawah tabel dengan kolom Setelah potongan, isi garis, isi sisa, dan transaksi diproses, semua kosong.</desc>
+  <rect width="640" height="290" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <g stroke="#2a5d9f" stroke-width="2" fill="#f2f2f2">
+      <rect x="10" y="26" width="200" height="60" rx="6"/><rect x="220" y="26" width="200" height="60" rx="6"/><rect x="430" y="26" width="200" height="60" rx="6"/>
+    </g>
+    <text x="10" y="18" font-weight="bold">Potongan 1</text><text x="220" y="18" font-weight="bold">Potongan 2</text><text x="430" y="18" font-weight="bold">Potongan 3</text>
+    <text x="18" y="50">id,kategori,jumlah\n</text><text x="18" y="72">1,buku,15</text>
+    <text x="228" y="50">00\n2,makanan,2000\n</text><text x="228" y="72">3,hi</text>
+    <text x="438" y="50">buran,500\n</text>
+    <g stroke="#222222" stroke-width="2" fill="#ffffff">
+      <rect x="10" y="110" width="110" height="30" fill="#f2f2f2"/><rect x="120" y="110" width="200" height="30" fill="#f2f2f2"/><rect x="320" y="110" width="150" height="30" fill="#f2f2f2"/><rect x="470" y="110" width="160" height="30" fill="#f2f2f2"/>
+      <rect x="10" y="140" width="110" height="46"/><rect x="120" y="140" width="200" height="46" stroke-dasharray="5 4"/><rect x="320" y="140" width="150" height="46" stroke-dasharray="5 4"/><rect x="470" y="140" width="160" height="46" stroke-dasharray="5 4"/>
+      <rect x="10" y="186" width="110" height="46"/><rect x="120" y="186" width="200" height="46" stroke-dasharray="5 4"/><rect x="320" y="186" width="150" height="46" stroke-dasharray="5 4"/><rect x="470" y="186" width="160" height="46" stroke-dasharray="5 4"/>
+      <rect x="10" y="232" width="110" height="46"/><rect x="120" y="232" width="200" height="46" stroke-dasharray="5 4"/><rect x="320" y="232" width="150" height="46" stroke-dasharray="5 4"/><rect x="470" y="232" width="160" height="46" stroke-dasharray="5 4"/>
+    </g>
+    <g font-weight="bold"><text x="16" y="130">Setelah</text><text x="126" y="130">isi garis</text><text x="326" y="130">isi sisa</text><text x="476" y="130">transaksi diproses</text></g>
+    <text x="16" y="168">potongan 1</text><text x="16" y="214">potongan 2</text><text x="16" y="260">potongan 3</text>
+  </g>
+</svg>

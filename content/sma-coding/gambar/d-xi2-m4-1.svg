@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 202" width="650" height="202" role="img" aria-labelledby="t d">
+  <title id="t">Matriks hitungan kata kosong untuk tiga kalimat bersih</title>
+  <desc id="d">Tiga baris untuk kalimat aplikasi bagus, bagus bagus murah, dan aplikasi lambat. Enam kolom kosong untuk kosakata berurut abjad; judul kolom dan isi hitungan diisi pelajar.</desc>
+  <rect width="650" height="202" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222" stroke="#222222" stroke-width="1.5">
+    <text x="20" y="30" stroke="none" font-weight="bold">Tulis kosakata berurut abjad di baris judul, lalu hitungannya</text>
+    <rect x="20" y="46" width="190" height="34" fill="#f2f2f2"/>
+    <text x="115" y="68" text-anchor="middle" stroke="none" font-weight="bold">kalimat bersih</text>
+    <rect x="210" y="46" width="70" height="34" fill="#f2f2f2"/>
+    <rect x="280" y="46" width="70" height="34" fill="#f2f2f2"/>
+    <rect x="350" y="46" width="70" height="34" fill="#f2f2f2"/>
+    <rect x="420" y="46" width="70" height="34" fill="#f2f2f2"/>
+    <rect x="490" y="46" width="70" height="34" fill="#f2f2f2"/>
+    <rect x="560" y="46" width="70" height="34" fill="#f2f2f2"/>
+    <rect x="20" y="80" width="190" height="34" fill="#ffffff"/>
+    <text x="115" y="102" text-anchor="middle" stroke="none">aplikasi bagus</text>
+    <rect x="210" y="80" width="70" height="34" fill="#ffffff"/>
+    <rect x="280" y="80" width="70" height="34" fill="#ffffff"/>
+    <rect x="350" y="80" width="70" height="34" fill="#ffffff"/>
+    <rect x="420" y="80" width="70" height="34" fill="#ffffff"/>
+    <rect x="490" y="80" width="70" height="34" fill="#ffffff"/>
+    <rect x="560" y="80" width="70" height="34" fill="#ffffff"/>
+    <rect x="20" y="114" width="190" height="34" fill="#ffffff"/>
+    <text x="115" y="136" text-anchor="middle" stroke="none">bagus bagus murah</text>
+    <rect x="210" y="114" width="70" height="34" fill="#ffffff"/>
+    <rect x="280" y="114" width="70" height="34" fill="#ffffff"/>
+    <rect x="350" y="114" width="70" height="34" fill="#ffffff"/>
+    <rect x="420" y="114" width="70" height="34" fill="#ffffff"/>
+    <rect x="490" y="114" width="70" height="34" fill="#ffffff"/>
+    <rect x="560" y="114" width="70" height="34" fill="#ffffff"/>
+    <rect x="20" y="148" width="190" height="34" fill="#ffffff"/>
+    <text x="115" y="170" text-anchor="middle" stroke="none">aplikasi lambat</text>
+    <rect x="210" y="148" width="70" height="34" fill="#ffffff"/>
+    <rect x="280" y="148" width="70" height="34" fill="#ffffff"/>
+    <rect x="350" y="148" width="70" height="34" fill="#ffffff"/>
+    <rect x="420" y="148" width="70" height="34" fill="#ffffff"/>
+    <rect x="490" y="148" width="70" height="34" fill="#ffffff"/>
+    <rect x="560" y="148" width="70" height="34" fill="#ffffff"/>
+  </g>
+</svg>

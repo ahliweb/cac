@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 538 330" width="538" height="330" role="img" aria-labelledby="t d">
+  <title id="t">Larik lima bilangan dan tabel penelusuran pencarian terkecil yang kosong</title>
+  <desc id="d">Atas: larik a berisi 9, 4, 7, 4, 8 dengan indeks 0 sampai 4. Bawah: tabel empat baris untuk i dari 1 sampai 4 dengan nilai a[i], sedangkan kolom terkecil sesudahnya dan indeks kosong untuk diisi. Awal terkecil adalah 9 dan indeks 0.</desc>
+  <rect width="538" height="330" fill="#ffffff"/>
+  <text x="250" y="26" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Larik a</text>
+  <text x="130" y="52" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">[0]</text>
+  <rect x="105" y="58" width="50" height="36" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="130" y="82" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">9</text>
+  <text x="190" y="52" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">[1]</text>
+  <rect x="165" y="58" width="50" height="36" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="190" y="82" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">4</text>
+  <text x="250" y="52" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">[2]</text>
+  <rect x="225" y="58" width="50" height="36" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="250" y="82" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">7</text>
+  <text x="310" y="52" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">[3]</text>
+  <rect x="285" y="58" width="50" height="36" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="310" y="82" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">4</text>
+  <text x="370" y="52" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">[4]</text>
+  <rect x="345" y="58" width="50" height="36" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="370" y="82" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">8</text>
+  <rect x="40" y="115" width="80" height="34" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="80.0" y="137.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">i</text>
+  <rect x="120" y="115" width="110" height="34" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="175.0" y="137.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">a[i]</text>
+  <rect x="230" y="115" width="178" height="34" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="319.0" y="137.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">terkecil sesudahnya</text>
+  <rect x="408" y="115" width="110" height="34" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="463.0" y="137.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">indeks</text>
+  <rect x="40" y="149" width="80" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="80.0" y="171.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1</text>
+  <rect x="120" y="149" width="110" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="175.0" y="171.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">4</text>
+  <rect x="230" y="149" width="178" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="408" y="149" width="110" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="40" y="183" width="80" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="80.0" y="205.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">2</text>
+  <rect x="120" y="183" width="110" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="175.0" y="205.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">7</text>
+  <rect x="230" y="183" width="178" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="408" y="183" width="110" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="40" y="217" width="80" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="80.0" y="239.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">3</text>
+  <rect x="120" y="217" width="110" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="175.0" y="239.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">4</text>
+  <rect x="230" y="217" width="178" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="408" y="217" width="110" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="40" y="251" width="80" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="80.0" y="273.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">4</text>
+  <rect x="120" y="251" width="110" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="175.0" y="273.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">8</text>
+  <rect x="230" y="251" width="178" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="408" y="251" width="110" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="250" y="313" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Awal: terkecil = a[0] = 9, indeks = 0</text>
+</svg>

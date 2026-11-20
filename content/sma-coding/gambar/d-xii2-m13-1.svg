@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 300" width="700" height="300" role="img" aria-labelledby="t d">
+  <title id="t">Folder portofolio dan tabel status verifikasi</title>
+  <desc id="d">Kiri: folder berisi empat berkas dan manifest. Kanan: tabel berkas, status sesudah diubah, dan alasan, dengan dua kolom terakhir kosong. Laporan uji diubah satu angkanya dan log AI dihapus.</desc>
+  <rect width="700" height="300" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <path d="M15 40 L15 280 L235 280 L235 40 L120 40 L105 24 L15 24 Z" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="25" y="44" font-weight="bold">folder portofolio</text>
+    <text x="30" y="80">README.md</text>
+    <text x="30" y="110">kartu_model.md</text>
+    <text x="30" y="140">laporan_uji.md</text>
+    <text x="30" y="170">log_ai.md</text>
+    <text x="30" y="210" fill="#2a5d9f">manifest.json</text>
+    <text x="30" y="250" font-size="14">sidik tiap berkas dicatat</text>
+    <text x="260" y="22" font-weight="bold">Sesudah laporan_uji.md diubah, log_ai.md dihapus</text>
+    <rect x="260" y="32" width="425" height="32" fill="#2a5d9f"/>
+    <text x="315" y="53" fill="#ffffff" text-anchor="middle">berkas</text>
+    <text x="465" y="53" fill="#ffffff" text-anchor="middle">status</text>
+    <text x="615" y="53" fill="#ffffff" text-anchor="middle">alasan</text>
+    <rect x="260" y="64" width="425" height="42" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+    <rect x="260" y="106" width="425" height="42" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+    <rect x="260" y="148" width="425" height="42" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+    <rect x="260" y="190" width="425" height="42" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+    <text x="268" y="90" font-size="14">README.md</text>
+    <text x="268" y="132" font-size="14">kartu_model.md</text>
+    <text x="268" y="174" font-size="14">laporan_uji.md</text>
+    <text x="268" y="216" font-size="14">log_ai.md</text>
+    <line x1="395" y1="32" x2="395" y2="232" stroke="#222222" stroke-width="1.5"/>
+    <line x1="535" y1="32" x2="535" y2="232" stroke="#222222" stroke-width="1.5"/>
+    <text x="260" y="262">status: tulis utuh, berubah, atau hilang</text>
+  </g>
+</svg>

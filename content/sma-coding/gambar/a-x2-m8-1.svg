@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 370" width="660" height="370" role="img" aria-labelledby="t d">
+  <title id="t">Data terurut dan dua tabel penelusuran pencarian biner</title>
+  <desc id="d">Array terurut 3, 8, 14, 21, 27, 35, 49 dengan indeks 0 sampai 6. Di bawahnya dua tabel kosong dengan kolom kiri, kanan, tengah, dan nilai tengah, satu untuk mencari 35 dan satu untuk mencari 10.</desc>
+  <rect width="660" height="370" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker></defs>
+  <rect x="60" y="16" width="70" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="95.0" y="41.0" font-family="sans-serif" font-size="16" text-anchor="middle" fill="#222222">3</text>
+  <text x="95.0" y="76" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#2a5d9f">0</text>
+  <rect x="130" y="16" width="70" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="165.0" y="41.0" font-family="sans-serif" font-size="16" text-anchor="middle" fill="#222222">8</text>
+  <text x="165.0" y="76" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#2a5d9f">1</text>
+  <rect x="200" y="16" width="70" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="235.0" y="41.0" font-family="sans-serif" font-size="16" text-anchor="middle" fill="#222222">14</text>
+  <text x="235.0" y="76" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#2a5d9f">2</text>
+  <rect x="270" y="16" width="70" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="305.0" y="41.0" font-family="sans-serif" font-size="16" text-anchor="middle" fill="#222222">21</text>
+  <text x="305.0" y="76" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#2a5d9f">3</text>
+  <rect x="340" y="16" width="70" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="375.0" y="41.0" font-family="sans-serif" font-size="16" text-anchor="middle" fill="#222222">27</text>
+  <text x="375.0" y="76" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#2a5d9f">4</text>
+  <rect x="410" y="16" width="70" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="445.0" y="41.0" font-family="sans-serif" font-size="16" text-anchor="middle" fill="#222222">35</text>
+  <text x="445.0" y="76" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#2a5d9f">5</text>
+  <rect x="480" y="16" width="70" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="515.0" y="41.0" font-family="sans-serif" font-size="16" text-anchor="middle" fill="#222222">49</text>
+  <text x="515.0" y="76" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#2a5d9f">6</text>
+  <text x="20" y="110" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#222222">cari 35</text>
+  <rect x="20" y="120" width="75" height="32" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="57.5" y="141.0" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">kiri</text>
+  <rect x="95" y="120" width="75" height="32" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="132.5" y="141.0" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">kanan</text>
+  <rect x="170" y="120" width="75" height="32" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="207.5" y="141.0" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">tengah</text>
+  <rect x="245" y="120" width="75" height="32" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="282.5" y="141.0" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">nilai</text>
+  <rect x="20" y="152" width="75" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="95" y="152" width="75" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="170" y="152" width="75" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="245" y="152" width="75" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="20" y="184" width="75" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="95" y="184" width="75" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="170" y="184" width="75" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="245" y="184" width="75" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="20" y="216" width="75" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="95" y="216" width="75" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="170" y="216" width="75" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="245" y="216" width="75" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="20" y="248" width="75" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="95" y="248" width="75" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="170" y="248" width="75" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="245" y="248" width="75" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="350" y="110" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#222222">cari 10</text>
+  <rect x="350" y="120" width="75" height="32" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="387.5" y="141.0" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">kiri</text>
+  <rect x="425" y="120" width="75" height="32" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="462.5" y="141.0" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">kanan</text>
+  <rect x="500" y="120" width="75" height="32" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="537.5" y="141.0" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">tengah</text>
+  <rect x="575" y="120" width="75" height="32" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="612.5" y="141.0" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">nilai</text>
+  <rect x="350" y="152" width="75" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="425" y="152" width="75" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="500" y="152" width="75" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="575" y="152" width="75" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="350" y="184" width="75" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="425" y="184" width="75" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="500" y="184" width="75" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="575" y="184" width="75" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="350" y="216" width="75" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="425" y="216" width="75" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="500" y="216" width="75" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="575" y="216" width="75" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="350" y="248" width="75" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="425" y="248" width="75" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="500" y="248" width="75" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="575" y="248" width="75" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="20" y="326" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">Satu baris = satu putaran while. Baris tak terpakai dibiarkan kosong.</text>
+  <text x="20" y="350" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">Angka di bawah array = indeks.</text>
+</svg>

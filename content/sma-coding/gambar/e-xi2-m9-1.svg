@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320" role="img" aria-labelledby="t d">
+  <title id="t">Tabel BB84 tanpa penyadap</title>
+  <desc id="d">Tabel enam posisi dengan kolom bit Alice, basis Alice, basis Bob, apakah posisi disimpan, dan hasil Bob. Enam kombinasi bit, basis Alice, basis Bob sudah tertulis: 0 0 0; 1 0 1; 1 1 1; 0 1 0; 0 1 1; 1 0 0. Kolom disimpan dan hasil Bob kosong. Keterangan: basis 0 memakai |0&gt; dan |1&gt;, basis 1 memakai |+&gt; dan |-&gt;.</desc>
+  <rect width="640" height="320" fill="#ffffff"/>
+  <text x="20" y="22" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">Basis 0: |0&gt; dan |1&gt;.  Basis 1: |+&gt; dan |-&gt;.  Tanpa penyadap.</text>
+  <rect x="20" y="34" width="90" height="38" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="65.0" y="58.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">bit Alice</text>
+  <rect x="110" y="34" width="110" height="38" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="165.0" y="58.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">basis Alice</text>
+  <rect x="220" y="34" width="110" height="38" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="275.0" y="58.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">basis Bob</text>
+  <rect x="330" y="34" width="150" height="38" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="405.0" y="58.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">disimpan?</text>
+  <rect x="480" y="34" width="130" height="38" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="545.0" y="58.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">hasil Bob</text>
+  <rect x="20" y="72" width="90" height="38" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="65.0" y="96.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">0</text>
+  <rect x="110" y="72" width="110" height="38" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="165.0" y="96.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">0</text>
+  <rect x="220" y="72" width="110" height="38" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="275.0" y="96.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">0</text>
+  <rect x="334" y="76" width="142" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="330" y="72" width="150" height="38" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="484" y="76" width="122" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="480" y="72" width="130" height="38" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="20" y="110" width="90" height="38" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="65.0" y="134.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1</text>
+  <rect x="110" y="110" width="110" height="38" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="165.0" y="134.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">0</text>
+  <rect x="220" y="110" width="110" height="38" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="275.0" y="134.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1</text>
+  <rect x="334" y="114" width="142" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="330" y="110" width="150" height="38" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="484" y="114" width="122" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="480" y="110" width="130" height="38" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="20" y="148" width="90" height="38" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="65.0" y="172.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1</text>
+  <rect x="110" y="148" width="110" height="38" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="165.0" y="172.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1</text>
+  <rect x="220" y="148" width="110" height="38" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="275.0" y="172.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1</text>
+  <rect x="334" y="152" width="142" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="330" y="148" width="150" height="38" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="484" y="152" width="122" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="480" y="148" width="130" height="38" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="20" y="186" width="90" height="38" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="65.0" y="210.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">0</text>
+  <rect x="110" y="186" width="110" height="38" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="165.0" y="210.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1</text>
+  <rect x="220" y="186" width="110" height="38" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="275.0" y="210.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">0</text>
+  <rect x="334" y="190" width="142" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="330" y="186" width="150" height="38" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="484" y="190" width="122" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="480" y="186" width="130" height="38" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="20" y="224" width="90" height="38" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="65.0" y="248.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">0</text>
+  <rect x="110" y="224" width="110" height="38" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="165.0" y="248.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1</text>
+  <rect x="220" y="224" width="110" height="38" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="275.0" y="248.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1</text>
+  <rect x="334" y="228" width="142" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="330" y="224" width="150" height="38" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="484" y="228" width="122" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="480" y="224" width="130" height="38" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="20" y="262" width="90" height="38" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="65.0" y="286.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1</text>
+  <rect x="110" y="262" width="110" height="38" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="165.0" y="286.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">0</text>
+  <rect x="220" y="262" width="110" height="38" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="275.0" y="286.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">0</text>
+  <rect x="334" y="266" width="142" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="330" y="262" width="150" height="38" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="484" y="266" width="122" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="480" y="262" width="130" height="38" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="20" y="300" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">Isi hasil Bob hanya bila posisi disimpan.</text>
+</svg>

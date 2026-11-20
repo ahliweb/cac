@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 426" width="630" height="426" role="img" aria-labelledby="t d">
+  <title id="t">Rencana proyek satu halaman</title>
+  <desc id="d">Delapan kotak berjudul pertanyaan, data, pembersihan, pembanding, metrik utama, kriteria selesai, prediksi, dan risiko, masing-masing berisi kotak isian kosong.</desc>
+  <rect width="630" height="426" fill="#ffffff"/>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker></defs>
+  <rect x="10" y="10" width="300" height="94" rx="6" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="20" y="32" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#222222">1 pertanyaan</text>
+  <rect x="18" y="42" width="284" height="54" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="320" y="10" width="300" height="94" rx="6" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="330" y="32" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#222222">2 data</text>
+  <rect x="328" y="42" width="284" height="54" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="10" y="114" width="300" height="94" rx="6" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="20" y="136" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#222222">3 pembersihan</text>
+  <rect x="18" y="146" width="284" height="54" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="320" y="114" width="300" height="94" rx="6" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="330" y="136" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#222222">4 pembanding</text>
+  <rect x="328" y="146" width="284" height="54" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="10" y="218" width="300" height="94" rx="6" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="20" y="240" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#222222">5 metrik utama</text>
+  <rect x="18" y="250" width="284" height="54" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="320" y="218" width="300" height="94" rx="6" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="330" y="240" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#222222">6 kriteria selesai</text>
+  <rect x="328" y="250" width="284" height="54" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="10" y="322" width="300" height="94" rx="6" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="20" y="344" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#222222">7 prediksi</text>
+  <rect x="18" y="354" width="284" height="54" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="320" y="322" width="300" height="94" rx="6" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="330" y="344" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#222222">8 risiko</text>
+  <rect x="328" y="354" width="284" height="54" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+</svg>

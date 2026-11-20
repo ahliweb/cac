@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" width="640" height="420" role="img" aria-labelledby="t d">
+  <title id="t">Perkalian matriks dengan vektor dan dengan matriks X</title>
+  <desc id="d">Tiga baris perkalian: A kali vektor 5, 6; A kali X; X kali A, dengan A berisi 1, 2, 3, 4 dan X berisi 0, 1, 1, 0. Kotak hasil kosong berbentuk garis putus-putus. Di bawah ada kotak ya dan tidak untuk apakah A kali X sama dengan X kali A.</desc>
+  <rect width="640" height="420" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="18" fill="#222222">
+    <text x="68" y="56" text-anchor="middle">1</text>
+    <text x="128" y="56" text-anchor="middle">2</text>
+    <text x="68" y="100" text-anchor="middle">3</text>
+    <text x="128" y="100" text-anchor="middle">4</text>
+    <path d="M34 30 L28 30 L28 114 L34 114" fill="none" stroke="#222222" stroke-width="2"/>
+    <path d="M156 30 L162 30 L162 114 L156 114" fill="none" stroke="#222222" stroke-width="2"/>
+    <text x="175" y="78" font-size="20">x</text>
+    <text x="215" y="62" text-anchor="middle">5</text><text x="215" y="106" text-anchor="middle">6</text>
+    <path d="M200 30 L194 30 L194 114 L200 114" fill="none" stroke="#222222" stroke-width="2"/><path d="M232 30 L238 30 L238 114 L232 114" fill="none" stroke="#222222" stroke-width="2"/>
+    <text x="265" y="78" font-size="20">=</text>
+    <rect x="295" y="36" width="56" height="40" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="5 3"/>
+    <rect x="295" y="80" width="56" height="40" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="5 3"/>
+    <path d="M289 30 L283 30 L283 120 L289 120" fill="none" stroke="#222222" stroke-width="2"/><path d="M357 30 L363 30 L363 120 L357 120" fill="none" stroke="#222222" stroke-width="2"/>
+    <text x="450" y="50" font-weight="bold">A kali vektor</text>
+    <text x="68" y="176" text-anchor="middle">1</text>
+    <text x="128" y="176" text-anchor="middle">2</text>
+    <text x="68" y="220" text-anchor="middle">3</text>
+    <text x="128" y="220" text-anchor="middle">4</text>
+    <path d="M34 150 L28 150 L28 234 L34 234" fill="none" stroke="#222222" stroke-width="2"/>
+    <path d="M156 150 L162 150 L162 234 L156 234" fill="none" stroke="#222222" stroke-width="2"/>
+    <text x="175" y="198" font-size="20">x</text>
+    <text x="228" y="176" text-anchor="middle">0</text>
+    <text x="288" y="176" text-anchor="middle">1</text>
+    <text x="228" y="220" text-anchor="middle">1</text>
+    <text x="288" y="220" text-anchor="middle">0</text>
+    <path d="M194 150 L188 150 L188 234 L194 234" fill="none" stroke="#222222" stroke-width="2"/>
+    <path d="M316 150 L322 150 L322 234 L316 234" fill="none" stroke="#222222" stroke-width="2"/>
+    <text x="340" y="198" font-size="20">=</text>
+    <rect x="375" y="150" width="56" height="40" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="5 3"/>
+    <rect x="435" y="150" width="56" height="40" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="5 3"/>
+    <rect x="375" y="194" width="56" height="40" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="5 3"/>
+    <rect x="435" y="194" width="56" height="40" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="5 3"/>
+    <path d="M369 150 L363 150 L363 234 L369 234" fill="none" stroke="#222222" stroke-width="2"/>
+    <path d="M491 150 L497 150 L497 234 L491 234" fill="none" stroke="#222222" stroke-width="2"/>
+    <text x="520" y="170" font-weight="bold">A kali X</text>
+    <text x="68" y="296" text-anchor="middle">0</text>
+    <text x="128" y="296" text-anchor="middle">1</text>
+    <text x="68" y="340" text-anchor="middle">1</text>
+    <text x="128" y="340" text-anchor="middle">0</text>
+    <path d="M34 270 L28 270 L28 354 L34 354" fill="none" stroke="#222222" stroke-width="2"/>
+    <path d="M156 270 L162 270 L162 354 L156 354" fill="none" stroke="#222222" stroke-width="2"/>
+    <text x="175" y="318" font-size="20">x</text>
+    <text x="228" y="296" text-anchor="middle">1</text>
+    <text x="288" y="296" text-anchor="middle">2</text>
+    <text x="228" y="340" text-anchor="middle">3</text>
+    <text x="288" y="340" text-anchor="middle">4</text>
+    <path d="M194 270 L188 270 L188 354 L194 354" fill="none" stroke="#222222" stroke-width="2"/>
+    <path d="M316 270 L322 270 L322 354 L316 354" fill="none" stroke="#222222" stroke-width="2"/>
+    <text x="340" y="318" font-size="20">=</text>
+    <rect x="375" y="270" width="56" height="40" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="5 3"/>
+    <rect x="435" y="270" width="56" height="40" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="5 3"/>
+    <rect x="375" y="314" width="56" height="40" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="5 3"/>
+    <rect x="435" y="314" width="56" height="40" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="5 3"/>
+    <path d="M369 270 L363 270 L363 354 L369 354" fill="none" stroke="#222222" stroke-width="2"/>
+    <path d="M491 270 L497 270 L497 354 L491 354" fill="none" stroke="#222222" stroke-width="2"/>
+    <text x="520" y="290" font-weight="bold">X kali A</text>
+    <text x="40" y="395">A kali X sama dengan X kali A?</text>
+    <rect x="290" y="378" width="20" height="20" fill="#ffffff" stroke="#222222" stroke-width="2"/><text x="316" y="395">ya</text><rect x="360" y="378" width="20" height="20" fill="#ffffff" stroke="#222222" stroke-width="2"/><text x="386" y="395">tidak</text>
+  </g>
+</svg>

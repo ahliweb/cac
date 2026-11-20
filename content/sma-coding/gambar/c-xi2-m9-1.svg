@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 270" width="640" height="270" role="img" aria-labelledby="t d">
+  <title id="t">Tabel suhu sendiri dan data terbuka per jam</title>
+  <desc id="d">Tabel enam jam dengan baris sendiri dan terbuka terisi, dan baris selisih serta baris sah yang kosong. Di bawahnya garis isian untuk bias dan galat mutlak rata-rata.</desc>
+  <rect width="640" height="270" fill="#ffffff"/>
+  <rect x="10" y="14" width="170" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="18" y="38" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">jam</text>
+  <rect x="180" y="14" width="75" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="217" y="38" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1</text>
+  <rect x="255" y="14" width="75" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="292" y="38" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">2</text>
+  <rect x="330" y="14" width="75" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="367" y="38" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">3</text>
+  <rect x="405" y="14" width="75" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="442" y="38" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">4</text>
+  <rect x="480" y="14" width="75" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="517" y="38" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">5</text>
+  <rect x="555" y="14" width="75" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="592" y="38" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">6</text>
+  <rect x="10" y="52" width="170" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="18" y="76" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">sendiri</text>
+  <rect x="180" y="52" width="75" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="217" y="76" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">27,5</text>
+  <rect x="255" y="52" width="75" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="292" y="76" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">28,1</text>
+  <rect x="330" y="52" width="75" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="367" y="76" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">29,0</text>
+  <rect x="405" y="52" width="75" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="442" y="76" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">30,2</text>
+  <rect x="480" y="52" width="75" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="517" y="76" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">hilang</text>
+  <rect x="555" y="52" width="75" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="592" y="76" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">29,4</text>
+  <rect x="10" y="90" width="170" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="18" y="114" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">terbuka</text>
+  <rect x="180" y="90" width="75" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="217" y="114" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">27,0</text>
+  <rect x="255" y="90" width="75" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="292" y="114" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">27,6</text>
+  <rect x="330" y="90" width="75" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="367" y="114" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">28,2</text>
+  <rect x="405" y="90" width="75" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="442" y="114" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">29,5</text>
+  <rect x="480" y="90" width="75" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="517" y="114" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">29,8</text>
+  <rect x="555" y="90" width="75" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="592" y="114" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">28,6</text>
+  <rect x="10" y="128" width="170" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="18" y="152" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">sendiri - terbuka</text>
+  <rect x="180" y="128" width="75" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="255" y="128" width="75" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="330" y="128" width="75" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="405" y="128" width="75" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="480" y="128" width="75" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="555" y="128" width="75" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="10" y="166" width="170" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="18" y="190" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">sah? (ya/tidak)</text>
+  <rect x="180" y="166" width="75" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="255" y="166" width="75" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="330" y="166" width="75" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="405" y="166" width="75" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="480" y="166" width="75" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="555" y="166" width="75" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <g font-family="sans-serif" font-size="15" fill="#222222"><text x="10" y="236">bias = ____________</text><text x="250" y="236">galat mutlak rata-rata = ____________</text></g>
+</svg>

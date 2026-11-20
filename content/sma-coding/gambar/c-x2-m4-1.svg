@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610 300" width="610" height="300" role="img" aria-labelledby="t d">
+  <title id="t">Tabel isi jendela rata-rata bergerak ukuran tiga</title>
+  <desc id="d">Tabel dengan kolom Masuk, jendela[0], jendela[1], jendela[2], terisi, dan Rata-rata. Kolom Masuk berisi 10, 12, 14, 16, dan 30; kolom lain kosong untuk diisi.</desc>
+  <rect width="610" height="300" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker></defs>
+  <rect x="20" y="20" width="80" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="60.0" y="45.0" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">Masuk</text>
+  <rect x="100" y="20" width="100" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="150.0" y="45.0" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">jendela[0]</text>
+  <rect x="200" y="20" width="100" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="250.0" y="45.0" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">jendela[1]</text>
+  <rect x="300" y="20" width="100" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="350.0" y="45.0" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">jendela[2]</text>
+  <rect x="400" y="20" width="80" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="440.0" y="45.0" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">terisi</text>
+  <rect x="480" y="20" width="110" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="535.0" y="45.0" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">Rata-rata</text>
+  <rect x="20" y="60" width="80" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="60.0" y="85.0" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">10</text>
+  <rect x="100" y="60" width="100" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="200" y="60" width="100" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="300" y="60" width="100" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="400" y="60" width="80" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="480" y="60" width="110" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="20" y="100" width="80" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="60.0" y="125.0" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">12</text>
+  <rect x="100" y="100" width="100" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="200" y="100" width="100" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="300" y="100" width="100" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="400" y="100" width="80" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="480" y="100" width="110" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="20" y="140" width="80" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="60.0" y="165.0" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">14</text>
+  <rect x="100" y="140" width="100" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="200" y="140" width="100" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="300" y="140" width="100" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="400" y="140" width="80" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="480" y="140" width="110" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="20" y="180" width="80" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="60.0" y="205.0" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">16</text>
+  <rect x="100" y="180" width="100" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="200" y="180" width="100" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="300" y="180" width="100" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="400" y="180" width="80" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="480" y="180" width="110" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="20" y="220" width="80" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="60.0" y="245.0" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">30</text>
+  <rect x="100" y="220" width="100" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="200" y="220" width="100" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="300" y="220" width="100" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="400" y="220" width="80" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="480" y="220" width="110" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="20" y="288" font-family="sans-serif" font-size="15" text-anchor="start" fill="#222222">Kosongkan sel yang belum terisi (belum ada nilai).</text>
+</svg>

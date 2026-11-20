@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 286" width="500" height="286" role="img" aria-labelledby="t d">
+  <title id="t">Rencana dokumentasi dengan kolom isi kosong</title>
+  <desc id="d">Tabel dua kolom: Bagian dan Isi rencana dokumentasi. Bagian berisi Pembaca, Tujuan panduan, Isi, Bukan isi, dan Bukti baik. Semua isi kosong untuk diisi pelajar.</desc>
+  <rect width="500" height="286" fill="#ffffff"/>
+  <text x="250" y="30" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Rencana dokumentasi untuk Pak Dodi</text>
+  <rect x="20" y="50" width="130" height="36" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="85.0" y="73.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">Bagian</text>
+  <rect x="150" y="50" width="330" height="36" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="315.0" y="73.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">Isi rencana dokumentasi</text>
+  <rect x="20" y="86" width="130" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="85.0" y="109.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Pembaca</text>
+  <rect x="150" y="86" width="330" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="122" width="130" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="85.0" y="145.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Tujuan panduan</text>
+  <rect x="150" y="122" width="330" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="158" width="130" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="85.0" y="181.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Isi</text>
+  <rect x="150" y="158" width="330" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="194" width="130" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="85.0" y="217.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Bukan isi</text>
+  <rect x="150" y="194" width="330" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="230" width="130" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="85.0" y="253.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Bukti baik</text>
+  <rect x="150" y="230" width="330" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 220" width="640" height="220" role="img" aria-labelledby="t d">
+  <title id="t">Dua ratus baris dibagi menjadi data latih dan data uji</title>
+  <desc id="d">Satu batang berisi 200 baris dibagi menjadi bagian latih yang lebih panjang dan bagian uji yang lebih pendek. Dua kotak kosong untuk jumlah baris latih dan uji. Di bawahnya kotak kosong untuk jumlah baris terlambat di data uji.</desc>
+  <rect width="640" height="220" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">
+    <text x="320" y="24" font-weight="bold">200 baris peminjaman (35 berlabel terlambat)</text>
+    <rect x="20" y="40" width="450" height="56" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+    <rect x="470" y="40" width="150" height="56" fill="#ffffff" stroke="#b3261e" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="245" y="64" font-weight="bold">data latih</text>
+    <text x="245" y="84">______ baris</text>
+    <text x="545" y="64" font-weight="bold">data uji</text>
+    <text x="545" y="84">______ baris</text>
+    <text x="320" y="132">test_size = 0,25 dan stratify pada label terlambat</text>
+    <rect x="170" y="150" width="300" height="48" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+    <text x="320" y="180">terlambat di data uji: ______</text>
+  </g>
+</svg>

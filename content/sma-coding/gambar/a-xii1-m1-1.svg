@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 400" width="540" height="400" role="img" aria-labelledby="t d">
+<title id="t">Graf berarah lima simpul dan tabel putaran Bellman-Ford</title>
+<desc id="d">Graf berarah berbobot lima simpul dengan sisi 1 ke 3 bobot 1, 1 ke 2 bobot 4, 3 ke 2 bobot 2, 3 ke 4 bobot 5, 2 ke 4 bobot 1, 4 ke 5 bobot 3, dan tabel kosong d[1] sampai d[5] untuk putaran 1 sampai 4.</desc>
+<rect width="540" height="400" fill="#ffffff"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker></defs>
+<g font-family="sans-serif">
+<line x1="76.3" y1="87.5" x2="170.9" y2="43.8" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+<rect x="107.1" y="42.3" width="24" height="20" fill="#ffffff"/>
+<text x="119.1" y="57.3" font-size="14" text-anchor="middle" font-weight="bold" fill="#b3261e">1</text>
+<line x1="76.3" y1="102.5" x2="170.9" y2="146.2" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+<rect x="107.1" y="127.7" width="24" height="20" fill="#ffffff"/>
+<text x="119.1" y="142.7" font-size="14" text-anchor="middle" font-weight="bold" fill="#b3261e">4</text>
+<line x1="190.0" y1="53.0" x2="190.0" y2="134.0" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+<rect x="164.0" y="85.0" width="24" height="20" fill="#ffffff"/>
+<text x="176.0" y="100.0" font-size="14" text-anchor="middle" font-weight="bold" fill="#b3261e">2</text>
+<line x1="206.5" y1="42.1" x2="310.7" y2="86.7" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+<rect x="253.5" y="42.1" width="24" height="20" fill="#ffffff"/>
+<text x="265.5" y="57.1" font-size="14" text-anchor="middle" font-weight="bold" fill="#b3261e">5</text>
+<line x1="206.5" y1="147.9" x2="310.7" y2="103.3" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+<rect x="253.5" y="127.9" width="24" height="20" fill="#ffffff"/>
+<text x="265.5" y="142.9" font-size="14" text-anchor="middle" font-weight="bold" fill="#b3261e">1</text>
+<line x1="348.0" y1="95.0" x2="449.0" y2="95.0" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+<rect x="388.0" y="71.0" width="24" height="20" fill="#ffffff"/>
+<text x="400.0" y="86.0" font-size="14" text-anchor="middle" font-weight="bold" fill="#b3261e">3</text>
+<circle cx="60" cy="95" r="18" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+<text x="60" y="100.6" font-size="16" text-anchor="middle" font-weight="bold" fill="#222222">1</text>
+<circle cx="190" cy="35" r="18" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+<text x="190" y="40.6" font-size="16" text-anchor="middle" font-weight="bold" fill="#222222">3</text>
+<circle cx="190" cy="155" r="18" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+<text x="190" y="160.6" font-size="16" text-anchor="middle" font-weight="bold" fill="#222222">2</text>
+<circle cx="330" cy="95" r="18" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+<text x="330" y="100.6" font-size="16" text-anchor="middle" font-weight="bold" fill="#222222">4</text>
+<circle cx="470" cy="95" r="18" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+<text x="470" y="100.6" font-size="16" text-anchor="middle" font-weight="bold" fill="#222222">5</text>
+<text x="20" y="200" font-size="14" text-anchor="start" fill="#222222">Awal simpul 1. Sisi diproses berurutan dari atas pada tiap putaran: 4 5, 2 4, 3 4, 3 2, 1 3, 1 2.</text>
+<text x="20" y="222" font-size="14" text-anchor="start" fill="#222222">Belum terjangkau ditulis ~. Isi tabel.</text>
+<rect x="40" y="235" width="90" height="26" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="85.0" y="253.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">putaran</text>
+<rect x="130" y="235" width="70" height="26" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="165.0" y="253.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">d[1]</text>
+<rect x="200" y="235" width="70" height="26" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="235.0" y="253.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">d[2]</text>
+<rect x="270" y="235" width="70" height="26" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="305.0" y="253.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">d[3]</text>
+<rect x="340" y="235" width="70" height="26" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="375.0" y="253.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">d[4]</text>
+<rect x="410" y="235" width="70" height="26" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="445.0" y="253.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">d[5]</text>
+<rect x="40" y="261" width="90" height="26" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="85.0" y="279.25" font-size="15" text-anchor="middle" fill="#222222">awal</text>
+<rect x="130" y="261" width="70" height="26" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="165.0" y="279.25" font-size="15" text-anchor="middle" fill="#222222">0</text>
+<rect x="200" y="261" width="70" height="26" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="235.0" y="279.25" font-size="15" text-anchor="middle" fill="#222222">~</text>
+<rect x="270" y="261" width="70" height="26" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="305.0" y="279.25" font-size="15" text-anchor="middle" fill="#222222">~</text>
+<rect x="340" y="261" width="70" height="26" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="375.0" y="279.25" font-size="15" text-anchor="middle" fill="#222222">~</text>
+<rect x="410" y="261" width="70" height="26" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="445.0" y="279.25" font-size="15" text-anchor="middle" fill="#222222">~</text>
+<rect x="40" y="287" width="90" height="26" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="85.0" y="305.25" font-size="15" text-anchor="middle" fill="#222222">1</text>
+<rect x="130" y="287" width="70" height="26" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="200" y="287" width="70" height="26" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="270" y="287" width="70" height="26" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="340" y="287" width="70" height="26" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="410" y="287" width="70" height="26" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="40" y="313" width="90" height="26" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="85.0" y="331.25" font-size="15" text-anchor="middle" fill="#222222">2</text>
+<rect x="130" y="313" width="70" height="26" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="200" y="313" width="70" height="26" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="270" y="313" width="70" height="26" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="340" y="313" width="70" height="26" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="410" y="313" width="70" height="26" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="40" y="339" width="90" height="26" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="85.0" y="357.25" font-size="15" text-anchor="middle" fill="#222222">3</text>
+<rect x="130" y="339" width="70" height="26" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="200" y="339" width="70" height="26" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="270" y="339" width="70" height="26" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="340" y="339" width="70" height="26" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="410" y="339" width="70" height="26" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="40" y="365" width="90" height="26" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="85.0" y="383.25" font-size="15" text-anchor="middle" fill="#222222">4</text>
+<rect x="130" y="365" width="70" height="26" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="200" y="365" width="70" height="26" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="270" y="365" width="70" height="26" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="340" y="365" width="70" height="26" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="410" y="365" width="70" height="26" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+</g>
+</svg>

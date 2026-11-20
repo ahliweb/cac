@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 260" width="620" height="260" role="img" aria-labelledby="t d">
+<title id="t">Tabel bit impas untuk beberapa biaya langkah kuantum c</title>
+<desc id="d">Tabel dengan baris c sama dengan 10 pangkat 3, 10 pangkat 4, 10 pangkat 6, dan 10 pangkat 9. Kolom bit impas n kosong untuk diisi. Di atas tabel tertulis syarat impas.</desc>
+
+<rect width="620" height="260" fill="#ffffff"/>
+<text x="20" y="26" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">Impas: N/2 = c x (pi/4) x akar(N). Isi bit impas n untuk tiap c.</text>
+<rect x="20" y="40" width="200" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="120.0" y="65.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold">c</text>
+<rect x="220" y="40" width="300" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="370.0" y="65.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold">bit impas n</text>
+<rect x="20" y="80" width="200" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="120.0" y="105.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">10^3</text>
+<rect x="220" y="80" width="300" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="20" y="120" width="200" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="120.0" y="145.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">10^4</text>
+<rect x="220" y="120" width="300" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="20" y="160" width="200" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="120.0" y="185.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">10^6</text>
+<rect x="220" y="160" width="300" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="20" y="200" width="200" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="120.0" y="225.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">10^9</text>
+<rect x="220" y="200" width="300" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+</svg>

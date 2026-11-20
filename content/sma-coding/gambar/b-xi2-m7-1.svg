@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" width="640" height="300" role="img" aria-labelledby="t d">
+  <title id="t">Dua bingkai grafik batang kosong</title>
+  <desc id="d">Dua bingkai grafik batang berdampingan dengan lima kategori: alat-tulis, buku, hiburan, makanan, transportasi. Grafik A sumbu dimulai dari 0, grafik B dimulai dari 199000, keduanya berpuncak di 200370. Batang digambar sendiri oleh pelajar.</desc>
+  <rect width="640" height="300" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <text x="10" y="20" font-weight="bold">Grafik A (mulai 0)</text>
+    <g stroke="#222222" stroke-width="2" fill="none"><line x1="70" y1="35" x2="70" y2="215"/><line x1="70" y1="215" x2="310" y2="215"/></g>
+    <line x1="70" y1="35" x2="310" y2="35" stroke="#222222" stroke-width="1" stroke-dasharray="3 4"/>
+    <text x="66" y="40" text-anchor="end">200370</text>
+    <text x="66" y="220" text-anchor="end">0</text>
+    <text x="94" y="238" text-anchor="middle" font-size="14">alat-tulis</text>
+    <text x="142" y="254" text-anchor="middle" font-size="14">buku</text>
+    <text x="190" y="238" text-anchor="middle" font-size="14">hiburan</text>
+    <text x="238" y="254" text-anchor="middle" font-size="14">makanan</text>
+    <text x="286" y="238" text-anchor="middle" font-size="14">transportasi</text>
+    <text x="330" y="20" font-weight="bold">Grafik B (mulai 199000)</text>
+    <g stroke="#222222" stroke-width="2" fill="none"><line x1="390" y1="35" x2="390" y2="215"/><line x1="390" y1="215" x2="630" y2="215"/></g>
+    <line x1="390" y1="35" x2="630" y2="35" stroke="#222222" stroke-width="1" stroke-dasharray="3 4"/>
+    <text x="386" y="40" text-anchor="end">200370</text>
+    <text x="386" y="220" text-anchor="end">199000</text>
+    <text x="414" y="238" text-anchor="middle" font-size="14">alat-tulis</text>
+    <text x="462" y="254" text-anchor="middle" font-size="14">buku</text>
+    <text x="510" y="238" text-anchor="middle" font-size="14">hiburan</text>
+    <text x="558" y="254" text-anchor="middle" font-size="14">makanan</text>
+    <text x="606" y="238" text-anchor="middle" font-size="14">transportasi</text>
+    <text x="10" y="290">Gambar batang tiap kategori menurut data, lalu bandingkan tinggi buku dan transportasi.</text>
+  </g>
+</svg>

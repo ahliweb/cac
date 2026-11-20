@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" width="640" height="420" role="img" aria-labelledby="t d">
+  <title id="t">Formulir rencana proyek</title>
+  <desc id="d">Tujuh kotak kosong berlabel: masalah dan pengguna fiktif, kebutuhan terukur, rancangan, kriteria selesai, prediksi hasil, rencana kerja per minggu, dan risiko dengan pencegahan dan peran.</desc>
+  <rect width="640" height="420" fill="#ffffff"/>
+  <rect x="10" y="10" width="300" height="100" rx="6" fill="#ffffff" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="20" y="32" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">1 masalah dan pengguna (fiktif)</text>
+  <rect x="330" y="10" width="300" height="100" rx="6" fill="#ffffff" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="340" y="32" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">2 kebutuhan terukur</text>
+  <rect x="10" y="120" width="300" height="100" rx="6" fill="#ffffff" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="20" y="142" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">3 rancangan</text>
+  <rect x="330" y="120" width="300" height="100" rx="6" fill="#ffffff" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="340" y="142" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">4 kriteria selesai</text>
+  <rect x="10" y="230" width="300" height="100" rx="6" fill="#ffffff" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="20" y="252" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">5 prediksi hasil</text>
+  <rect x="330" y="230" width="300" height="100" rx="6" fill="#ffffff" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="340" y="252" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">6 rencana kerja per minggu</text>
+  <rect x="10" y="340" width="620" height="70" rx="6" fill="#ffffff" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="20" y="362" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">7 risiko: pencegahan dan peran</text>
+</svg>

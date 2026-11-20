@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 270" width="640" height="270" role="img" aria-labelledby="t d">
+  <title id="t">Tabel kasus uji fungsi terbesar</title>
+  <desc id="d">Tabel enam baris dengan kolom nama kasus, data, harapan, dan hasil fungsi. Kolom harapan dan hasil kosong untuk diisi.</desc>
+  <rect width="640" height="270" fill="#ffffff"/>
+  <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker></defs>
+  <rect x="15" y="15" width="160" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="95.0" y="36.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold">nama kasus</text>
+  <rect x="175" y="15" width="190" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="270.0" y="36.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold">data</text>
+  <rect x="365" y="15" width="130" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="430.0" y="36.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold">harapan</text>
+  <rect x="495" y="15" width="130" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="560.0" y="36.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold">hasil</text>
+  <rect x="15" y="49" width="160" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="95.0" y="70.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">biasa</text>
+  <rect x="175" y="49" width="190" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="270.0" y="70.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">{3, 8, 1}</text>
+  <rect x="365" y="49" width="130" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="495" y="49" width="130" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="15" y="83" width="160" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="95.0" y="104.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">satu elemen</text>
+  <rect x="175" y="83" width="190" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="270.0" y="104.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">{7}</text>
+  <rect x="365" y="83" width="130" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="495" y="83" width="130" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="15" y="117" width="160" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="95.0" y="138.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">semua sama</text>
+  <rect x="175" y="117" width="190" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="270.0" y="138.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">{4, 4, 4}</text>
+  <rect x="365" y="117" width="130" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="495" y="117" width="130" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="15" y="151" width="160" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="95.0" y="172.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">satu negatif</text>
+  <rect x="175" y="151" width="190" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="270.0" y="172.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">{-5}</text>
+  <rect x="365" y="151" width="130" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="495" y="151" width="130" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="15" y="185" width="160" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="95.0" y="206.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">semua negatif</text>
+  <rect x="175" y="185" width="190" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="270.0" y="206.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">{-5, -2, -9}</text>
+  <rect x="365" y="185" width="130" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="495" y="185" width="130" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="15" y="219" width="160" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="95.0" y="240.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">ada nol</text>
+  <rect x="175" y="219" width="190" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="270.0" y="240.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">{-1, 0, -3}</text>
+  <rect x="365" y="219" width="130" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="495" y="219" width="130" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="15" y="262" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">Beri tanda X pada baris yang harapan dan hasilnya berbeda.</text>
+</svg>

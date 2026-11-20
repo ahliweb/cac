@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300" role="img" aria-labelledby="t d">
+  <title id="t">Kerangka histogram hasil 500 shot</title>
+  <desc id="d">Sumbu tegak jumlah kemunculan dari 0 sampai 500 dengan garis bantu tiap 100. Dua kolom kosong berlabel hasil 0 dan hasil 1 tempat menggambar batang. Di kanan ada kotak kosong untuk jumlah harapan hasil 0, hasil 1, dan simpangan wajar.</desc>
+  <rect width="600" height="300" fill="#ffffff"/>
+  <text x="190" y="24" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Histogram 500 shot, keadaan (0,6 ; 0,8)</text>
+  <line x1="90" y1="40" x2="90" y2="260" stroke="#222222" stroke-width="2"/>
+  <line x1="90" y1="260" x2="350" y2="260" stroke="#222222" stroke-width="2"/>
+  <line x1="85" y1="260.0" x2="90" y2="260.0" stroke="#222222" stroke-width="2"/>
+  <text x="80" y="265.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="end">0</text>
+  <line x1="85" y1="216.0" x2="90" y2="216.0" stroke="#222222" stroke-width="2"/>
+  <text x="80" y="221.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="end">100</text>
+  <line x1="90" y1="216.0" x2="350" y2="216.0" stroke="#2a5d9f" stroke-width="1" stroke-dasharray="6 4"/>
+  <line x1="85" y1="172.0" x2="90" y2="172.0" stroke="#222222" stroke-width="2"/>
+  <text x="80" y="177.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="end">200</text>
+  <line x1="90" y1="172.0" x2="350" y2="172.0" stroke="#2a5d9f" stroke-width="1" stroke-dasharray="6 4"/>
+  <line x1="85" y1="128.0" x2="90" y2="128.0" stroke="#222222" stroke-width="2"/>
+  <text x="80" y="133.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="end">300</text>
+  <line x1="90" y1="128.0" x2="350" y2="128.0" stroke="#2a5d9f" stroke-width="1" stroke-dasharray="6 4"/>
+  <line x1="85" y1="84.0" x2="90" y2="84.0" stroke="#222222" stroke-width="2"/>
+  <text x="80" y="89.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="end">400</text>
+  <line x1="90" y1="84.0" x2="350" y2="84.0" stroke="#2a5d9f" stroke-width="1" stroke-dasharray="6 4"/>
+  <line x1="85" y1="40.0" x2="90" y2="40.0" stroke="#222222" stroke-width="2"/>
+  <text x="80" y="45.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="end">500</text>
+  <line x1="90" y1="40.0" x2="350" y2="40.0" stroke="#2a5d9f" stroke-width="1" stroke-dasharray="6 4"/>
+  <rect x="130" y="50" width="70" height="210" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="240" y="50" width="70" height="210" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="165" y="282" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">hasil 0</text>
+  <text x="275" y="282" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">hasil 1</text>
+  <text x="4" y="155" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">jumlah</text>
+  <text x="380" y="70" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">hasil 0 diharapkan:</text>
+  <rect x="380" y="78" width="190" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="380" y="140" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">hasil 1 diharapkan:</text>
+  <rect x="380" y="148" width="190" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="380" y="210" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">simpangan wajar hasil 0:</text>
+  <rect x="380" y="218" width="190" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+</svg>

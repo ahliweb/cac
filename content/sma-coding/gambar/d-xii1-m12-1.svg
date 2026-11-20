@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300" width="560" height="300" role="img" aria-labelledby="t d">
+  <title id="t">Kerangka grafik batang recall dengan sumbu dari nol</title>
+  <desc id="d">Sumbu tegak recall dari 0 sampai 1 dengan garis putus-putus sasaran 0,60. Dua posisi kosong berlabel E1 dan E2 untuk menggambar batang. Di atas, kotak kosong untuk judul dan label karangan.</desc>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <rect x="20" y="10" width="520" height="36" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="30" y="33" font-weight="bold">judul dan label karangan:</text>
+    <line x1="80" y1="60" x2="80" y2="250" stroke="#222222" stroke-width="2"/>
+    <line x1="80" y1="250" x2="520" y2="250" stroke="#222222" stroke-width="2"/>
+    <g stroke="#222222" stroke-width="1.5">
+      <line x1="74" y1="250" x2="80" y2="250"/><line x1="74" y1="212" x2="80" y2="212"/><line x1="74" y1="174" x2="80" y2="174"/><line x1="74" y1="136" x2="80" y2="136"/><line x1="74" y1="98" x2="80" y2="98"/><line x1="74" y1="60" x2="80" y2="60"/>
+    </g>
+    <g text-anchor="end"><text x="68" y="255">0</text><text x="68" y="217">0,2</text><text x="68" y="179">0,4</text><text x="68" y="141">0,6</text><text x="68" y="103">0,8</text><text x="68" y="65">1,0</text></g>
+    <line x1="80" y1="136" x2="520" y2="136" stroke="#b3261e" stroke-width="2" stroke-dasharray="8 5"/>
+    <text x="520" y="128" text-anchor="end" fill="#b3261e" font-weight="bold">sasaran 0,60</text>
+    <g fill="none" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="5 4">
+      <rect x="150" y="70" width="90" height="180"/><rect x="330" y="70" width="90" height="180"/>
+    </g>
+    <g text-anchor="middle" font-weight="bold"><text x="195" y="274">E1</text><text x="375" y="274">E2</text></g>
+    <text x="285" y="292" text-anchor="middle">sumbu tegak: recall</text>
+  </g>
+</svg>

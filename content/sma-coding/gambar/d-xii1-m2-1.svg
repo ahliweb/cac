@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 226" width="620" height="226" role="img" aria-labelledby="t d">
+  <title id="t">Tabel dua kali tiga untuk seribu pengguna aplikasi penyaring</title>
+  <desc id="d">Tabel dengan baris perlu diperiksa (50 orang), tidak perlu diperiksa, dan jumlah (1.000), serta kolom ditandai, tidak ditandai, dan jumlah. Semua sel isian dibiarkan kosong.</desc>
+  <rect width="620" height="226" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222" stroke="#222222" stroke-width="1.5">
+    <text x="20" y="30" stroke="none" font-weight="bold">Isi dengan sensitivitas 90 persen dan spesifisitas 90 persen</text>
+    <rect x="20" y="46" width="190" height="40" fill="#f2f2f2"/>
+    <rect x="210" y="46" width="130" height="40" fill="#f2f2f2"/>
+    <text x="275" y="71" text-anchor="middle" stroke="none" font-weight="bold">ditandai</text>
+    <rect x="340" y="46" width="150" height="40" fill="#f2f2f2"/>
+    <text x="415" y="71" text-anchor="middle" stroke="none" font-weight="bold">tidak ditandai</text>
+    <rect x="490" y="46" width="110" height="40" fill="#f2f2f2"/>
+    <text x="545" y="71" text-anchor="middle" stroke="none" font-weight="bold">jumlah</text>
+    <rect x="20" y="86" width="190" height="40" fill="#ffffff"/>
+    <text x="115" y="111" text-anchor="middle" stroke="none">perlu diperiksa (50)</text>
+    <rect x="210" y="86" width="130" height="40" fill="#ffffff"/>
+    <rect x="340" y="86" width="150" height="40" fill="#ffffff"/>
+    <rect x="490" y="86" width="110" height="40" fill="#ffffff"/>
+    <rect x="20" y="126" width="190" height="40" fill="#ffffff"/>
+    <text x="115" y="151" text-anchor="middle" stroke="none">tidak perlu diperiksa</text>
+    <rect x="210" y="126" width="130" height="40" fill="#ffffff"/>
+    <rect x="340" y="126" width="150" height="40" fill="#ffffff"/>
+    <rect x="490" y="126" width="110" height="40" fill="#ffffff"/>
+    <rect x="20" y="166" width="190" height="40" fill="#ffffff"/>
+    <text x="115" y="191" text-anchor="middle" stroke="none">jumlah (1.000)</text>
+    <rect x="210" y="166" width="130" height="40" fill="#ffffff"/>
+    <rect x="340" y="166" width="150" height="40" fill="#ffffff"/>
+    <rect x="490" y="166" width="110" height="40" fill="#ffffff"/>
+  </g>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 230" width="560" height="230" role="img" aria-labelledby="t d">
+<title id="t">Larik nilai dengan indeks dan baris sah atau tidak yang kosong</title>
+<desc id="d">Larik enam nilai 85, 105, 70, -3, 100, 0 dengan indeks 0 sampai 5. Di bawah tiap nilai ada kotak kosong untuk menulis sah atau tidak. Rentang sah yang dipakai adalah 0 sampai 100.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#222222"/></marker></defs>
+<rect width="560" height="230" fill="#ffffff"/>
+<text x="20" y="26" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222">Rentang sah: 0 sampai 100</text>
+<rect x="80" y="40" width="70" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="115.0" y="63.0" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">85</text>
+<text x="115.0" y="93" font-family="sans-serif" font-size="14" fill="#2a5d9f" text-anchor="middle">0</text>
+<rect x="150" y="40" width="70" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="185.0" y="63.0" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">105</text>
+<text x="185.0" y="93" font-family="sans-serif" font-size="14" fill="#2a5d9f" text-anchor="middle">1</text>
+<rect x="220" y="40" width="70" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="255.0" y="63.0" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">70</text>
+<text x="255.0" y="93" font-family="sans-serif" font-size="14" fill="#2a5d9f" text-anchor="middle">2</text>
+<rect x="290" y="40" width="70" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="325.0" y="63.0" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">-3</text>
+<text x="325.0" y="93" font-family="sans-serif" font-size="14" fill="#2a5d9f" text-anchor="middle">3</text>
+<rect x="360" y="40" width="70" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="395.0" y="63.0" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">100</text>
+<text x="395.0" y="93" font-family="sans-serif" font-size="14" fill="#2a5d9f" text-anchor="middle">4</text>
+<rect x="430" y="40" width="70" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="465.0" y="63.0" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">0</text>
+<text x="465.0" y="93" font-family="sans-serif" font-size="14" fill="#2a5d9f" text-anchor="middle">5</text>
+<text x="20" y="63" font-family="sans-serif" font-size="14" fill="#222222">nilai</text>
+<text x="20" y="108" font-family="sans-serif" font-size="14" fill="#2a5d9f">indeks</text>
+<text x="20" y="150" font-family="sans-serif" font-size="14" fill="#222222">sah?</text>
+<rect x="80" y="128" width="70" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="150" y="128" width="70" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="220" y="128" width="70" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="290" y="128" width="70" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="360" y="128" width="70" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="430" y="128" width="70" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="20" y="205" font-family="sans-serif" font-size="15" fill="#222222">Indeks yang di luar rentang: ______________</text>
+</svg>

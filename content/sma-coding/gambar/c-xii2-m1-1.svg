@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 275" width="680" height="275" role="img" aria-labelledby="t d">
+<title id="t">Daftar perbaikan untuk fungsi lama</title>
+<desc id="d">Tabel tiga kolom: masalah, contoh di fungsi lama, dan perbaikan. Kolom perbaikan kosong untuk diisi pelajar.</desc>
+<defs><marker id="ar" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#222222"/></marker></defs>
+<rect width="680" height="275" fill="#ffffff"/>
+<rect x="20" y="20" width="260" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="150.0" y="45.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Masalah</text>
+<rect x="280" y="20" width="150" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="355.0" y="45.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Contoh di lama</text>
+<rect x="430" y="20" width="230" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="545.0" y="45.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Perbaikan</text>
+<rect x="20" y="60" width="260" height="40" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="150.0" y="85.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Nama tidak bermakna</text>
+<rect x="280" y="60" width="150" height="40" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="355.0" y="85.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">a, g, n, k</text>
+<rect x="430" y="60" width="230" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="20" y="100" width="260" height="40" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="150.0" y="125.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Angka ajaib</text>
+<rect x="280" y="100" width="150" height="40" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="355.0" y="125.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1800, 150, -3, 4</text>
+<rect x="430" y="100" width="230" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="20" y="140" width="260" height="40" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="150.0" y="165.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Blok yang diulang lima kali</text>
+<rect x="280" y="140" width="150" height="40" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="355.0" y="165.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">if (a &gt; 1800) ...</text>
+<rect x="430" y="140" width="230" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="20" y="180" width="260" height="40" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="150.0" y="205.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Satu fungsi mengerjakan semuanya</text>
+<rect x="280" y="180" width="150" height="40" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="355.0" y="205.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">lama menghitung semuanya</text>
+<rect x="430" y="180" width="230" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/><text x="20" y="255" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">Isi kolom Perbaikan dari ingatanmu.</text>
+</svg>

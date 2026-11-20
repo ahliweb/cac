@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 400" width="560" height="400" role="img" aria-labelledby="t d">
+  <title id="t">Kisi 8x8 untuk menggambar dari deret heksadesimal</title>
+  <desc id="d">Tabel kosong 8 baris dan 8 kolom. Kolom diberi nilai tempat 128, 64, 32, 16, 8, 4, 2, 1. Tiap baris punya satu byte heksadesimal di kiri: 18, 3C, 7E, 18, 18, 18, 18, 18. Kotak bit dibiarkan kosong untuk diisi 0 atau 1.</desc>
+  <rect width="560" height="400" fill="#ffffff"/>
+  <text x="280" y="26" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222" text-anchor="middle">Satu baris = satu byte (8 bit)</text>
+  <text x="70" y="52" font-family="sans-serif" font-size="14" fill="#2a5d9f" text-anchor="middle">heksa</text>
+  <text x="170" y="52" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">128</text>
+  <text x="210" y="52" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">64</text>
+  <text x="250" y="52" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">32</text>
+  <text x="290" y="52" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">16</text>
+  <text x="330" y="52" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">8</text>
+  <text x="370" y="52" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">4</text>
+  <text x="410" y="52" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">2</text>
+  <text x="450" y="52" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1</text>
+  <text x="20" y="86" font-family="sans-serif" font-size="14" fill="#222222">baris 1</text>
+  <text x="100" y="86" font-family="sans-serif" font-size="16" font-weight="bold" fill="#2a5d9f" text-anchor="middle">18</text>
+  <rect x="150" y="60" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="190" y="60" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="230" y="60" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="270" y="60" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="310" y="60" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="350" y="60" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="390" y="60" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="430" y="60" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="20" y="126" font-family="sans-serif" font-size="14" fill="#222222">baris 2</text>
+  <text x="100" y="126" font-family="sans-serif" font-size="16" font-weight="bold" fill="#2a5d9f" text-anchor="middle">3C</text>
+  <rect x="150" y="100" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="190" y="100" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="230" y="100" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="270" y="100" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="310" y="100" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="350" y="100" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="390" y="100" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="430" y="100" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="20" y="166" font-family="sans-serif" font-size="14" fill="#222222">baris 3</text>
+  <text x="100" y="166" font-family="sans-serif" font-size="16" font-weight="bold" fill="#2a5d9f" text-anchor="middle">7E</text>
+  <rect x="150" y="140" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="190" y="140" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="230" y="140" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="270" y="140" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="310" y="140" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="350" y="140" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="390" y="140" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="430" y="140" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="20" y="206" font-family="sans-serif" font-size="14" fill="#222222">baris 4</text>
+  <text x="100" y="206" font-family="sans-serif" font-size="16" font-weight="bold" fill="#2a5d9f" text-anchor="middle">18</text>
+  <rect x="150" y="180" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="190" y="180" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="230" y="180" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="270" y="180" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="310" y="180" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="350" y="180" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="390" y="180" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="430" y="180" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="20" y="246" font-family="sans-serif" font-size="14" fill="#222222">baris 5</text>
+  <text x="100" y="246" font-family="sans-serif" font-size="16" font-weight="bold" fill="#2a5d9f" text-anchor="middle">18</text>
+  <rect x="150" y="220" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="190" y="220" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="230" y="220" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="270" y="220" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="310" y="220" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="350" y="220" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="390" y="220" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="430" y="220" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="20" y="286" font-family="sans-serif" font-size="14" fill="#222222">baris 6</text>
+  <text x="100" y="286" font-family="sans-serif" font-size="16" font-weight="bold" fill="#2a5d9f" text-anchor="middle">18</text>
+  <rect x="150" y="260" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="190" y="260" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="230" y="260" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="270" y="260" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="310" y="260" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="350" y="260" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="390" y="260" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="430" y="260" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="20" y="326" font-family="sans-serif" font-size="14" fill="#222222">baris 7</text>
+  <text x="100" y="326" font-family="sans-serif" font-size="16" font-weight="bold" fill="#2a5d9f" text-anchor="middle">18</text>
+  <rect x="150" y="300" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="190" y="300" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="230" y="300" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="270" y="300" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="310" y="300" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="350" y="300" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="390" y="300" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="430" y="300" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="20" y="366" font-family="sans-serif" font-size="14" fill="#222222">baris 8</text>
+  <text x="100" y="366" font-family="sans-serif" font-size="16" font-weight="bold" fill="#2a5d9f" text-anchor="middle">18</text>
+  <rect x="150" y="340" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="190" y="340" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="230" y="340" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="270" y="340" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="310" y="340" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="350" y="340" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="390" y="340" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="430" y="340" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="280" y="386" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Isi bit tiap baris, lalu hitamkan kotak yang bernilai 1.</text>
+</svg>

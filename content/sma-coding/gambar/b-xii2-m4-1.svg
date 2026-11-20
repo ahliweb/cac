@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420" width="700" height="420" role="img" aria-labelledby="t d">
+  <title id="t">Tabel rasio kontras warna tema dengan kolom rasio dan lolos kosong</title>
+  <desc id="d">Tabel enam baris pasangan warna: empat pasangan teks dan latar dengan batas 4,5 banding 1, dan dua pasangan primer terhadap putih dengan batas 3 banding 1. Kolom rasio dan kolom lolos atau tidak kosong untuk diisi.</desc>
+  <rect width="700" height="420" fill="#ffffff"/>
+  <rect x="15" y="30" width="330" height="46" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="180.0" y="58.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">pasangan warna</text>
+  <rect x="345" y="30" width="100" height="46" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="395.0" y="58.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">batas</text>
+  <rect x="445" y="30" width="110" height="46" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="500.0" y="58.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">rasio</text>
+  <rect x="555" y="30" width="125" height="46" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="617.5" y="58.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">lolos?</text>
+  <rect x="15" y="76" width="330" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="180.0" y="104.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">primary #0f766e, teks #ffffff</text>
+  <rect x="345" y="76" width="100" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="395.0" y="104.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">4,5:1</text>
+  <rect x="445" y="76" width="110" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="555" y="76" width="125" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="122" width="330" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="180.0" y="150.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">primary #2dd4bf, teks #000000</text>
+  <rect x="345" y="122" width="100" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="395.0" y="150.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">4,5:1</text>
+  <rect x="445" y="122" width="110" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="555" y="122" width="125" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="168" width="330" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="180.0" y="196.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">secondary #052522, teks #ffffff</text>
+  <rect x="345" y="168" width="100" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="395.0" y="196.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">4,5:1</text>
+  <rect x="445" y="168" width="110" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="555" y="168" width="125" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="214" width="330" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="180.0" y="242.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">accent #f59e0b, teks #000000</text>
+  <rect x="345" y="214" width="100" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="395.0" y="242.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">4,5:1</text>
+  <rect x="445" y="214" width="110" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="555" y="214" width="125" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="260" width="330" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="180.0" y="288.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">primer #0f766e terhadap putih</text>
+  <rect x="345" y="260" width="100" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="395.0" y="288.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">3:1</text>
+  <rect x="445" y="260" width="110" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="555" y="260" width="125" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="306" width="330" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="180.0" y="334.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">primer #2dd4bf terhadap putih</text>
+  <rect x="345" y="306" width="100" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="395.0" y="334.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">3:1</text>
+  <rect x="445" y="306" width="110" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="555" y="306" width="125" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="350" y="380" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">Hitung dengan kontras(), atau tebak dulu lalu cocokkan.</text>
+  <text x="350" y="402" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">Batas 3:1 untuk komponen antarmuka seperti tepi tombol.</text>
+</svg>

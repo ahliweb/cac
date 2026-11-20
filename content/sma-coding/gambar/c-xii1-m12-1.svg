@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 380" width="640" height="380" role="img" aria-labelledby="t d">
+  <title id="t">Delapan bagian dokumen perakitan</title>
+  <desc id="d">Daftar delapan bagian: tujuan, komponen, tabel pin, langkah, kalibrasi, uji penerimaan, keselamatan, riwayat. Tiap bagian punya garis isian satu kalimat, dan satu garis untuk bagian yang paling sering dilupakan.</desc>
+  <rect width="640" height="380" fill="#ffffff"/>
+  <rect x="10" y="10" width="170" height="34" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="22" y="33" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222">1. tujuan</text>
+  <line x1="196" y1="40" x2="630" y2="40" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <rect x="10" y="48" width="170" height="34" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="22" y="71" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222">2. komponen</text>
+  <line x1="196" y1="78" x2="630" y2="78" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <rect x="10" y="86" width="170" height="34" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="22" y="109" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222">3. tabel pin</text>
+  <line x1="196" y1="116" x2="630" y2="116" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <rect x="10" y="124" width="170" height="34" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="22" y="147" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222">4. langkah</text>
+  <line x1="196" y1="154" x2="630" y2="154" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <rect x="10" y="162" width="170" height="34" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="22" y="185" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222">5. kalibrasi</text>
+  <line x1="196" y1="192" x2="630" y2="192" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <rect x="10" y="200" width="170" height="34" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="22" y="223" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222">6. uji penerimaan</text>
+  <line x1="196" y1="230" x2="630" y2="230" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <rect x="10" y="238" width="170" height="34" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="22" y="261" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222">7. keselamatan</text>
+  <line x1="196" y1="268" x2="630" y2="268" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <rect x="10" y="276" width="170" height="34" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="22" y="299" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222">8. riwayat</text>
+  <line x1="196" y1="306" x2="630" y2="306" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <text x="10" y="346" font-family="sans-serif" font-size="14" fill="#222222">Bagian yang paling sering dilupakan:</text>
+  <line x1="260" y1="348" x2="630" y2="348" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 4"/>
+</svg>

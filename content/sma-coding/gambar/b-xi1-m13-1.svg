@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 330" width="600" height="330" role="img" aria-labelledby="t d">
+  <title id="t">Tabel rencana proyek pustaka</title>
+  <desc id="d">Tabel dua kolom dengan tujuh baris bagian rencana: Tujuan, Pengguna, Antarmuka publik, Kasus uji, Pembagian, Kriteria selesai, Prediksi. Kolom isi dikosongkan untuk diisi kelompok.</desc>
+  <rect width="600" height="330" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <rect x="10" y="10" width="180" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+    <rect x="190" y="10" width="400" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+    <text x="20" y="31" font-weight="bold">Bagian</text>
+    <text x="200" y="31" font-weight="bold">Isi (tulis sendiri)</text>
+    <g stroke="#222222" stroke-width="2" fill="#ffffff">
+      <rect x="10" y="40" width="180" height="40"/><rect x="190" y="40" width="400" height="40"/>
+      <rect x="10" y="80" width="180" height="40"/><rect x="190" y="80" width="400" height="40"/>
+      <rect x="10" y="120" width="180" height="40"/><rect x="190" y="120" width="400" height="40"/>
+      <rect x="10" y="160" width="180" height="40"/><rect x="190" y="160" width="400" height="40"/>
+      <rect x="10" y="200" width="180" height="40"/><rect x="190" y="200" width="400" height="40"/>
+      <rect x="10" y="240" width="180" height="40"/><rect x="190" y="240" width="400" height="40"/>
+      <rect x="10" y="280" width="180" height="40"/><rect x="190" y="280" width="400" height="40"/>
+    </g>
+    <text x="20" y="65">1. Tujuan</text>
+    <text x="20" y="105">2. Pengguna</text>
+    <text x="20" y="145">3. Antarmuka publik</text>
+    <text x="20" y="185">4. Kasus uji</text>
+    <text x="20" y="225">5. Pembagian</text>
+    <text x="20" y="265">6. Kriteria selesai</text>
+    <text x="20" y="305">7. Prediksi</text>
+  </g>
+</svg>
