@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 260" width="520" height="260" role="img" aria-labelledby="t d">
+  <title id="t">Menggabungkan dua larik terurut</title>
+  <desc id="d">Larik a berisi 1, 4, 6 dan larik b berisi 2, 3, 7, masing-masing berindeks 0 sampai 2. Di bawahnya larik hasil enam sel kosong berindeks 0 sampai 5 dan kotak kosong untuk banyak perbandingan.</desc>
+  <rect width="520" height="260" fill="#ffffff"/>
+  <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker></defs>
+  <text x="15" y="50" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">a</text>
+  <rect x="60" y="32" width="50" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="85.0" y="54.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1</text>
+  <text x="85.0" y="26" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">0</text>
+  <rect x="110" y="32" width="50" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="135.0" y="54.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">4</text>
+  <text x="135.0" y="26" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1</text>
+  <rect x="160" y="32" width="50" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="185.0" y="54.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">6</text>
+  <text x="185.0" y="26" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">2</text>
+  <text x="260" y="50" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">b</text>
+  <rect x="300" y="32" width="50" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="325.0" y="54.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">2</text>
+  <text x="325.0" y="26" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">0</text>
+  <rect x="350" y="32" width="50" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="375.0" y="54.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">3</text>
+  <text x="375.0" y="26" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1</text>
+  <rect x="400" y="32" width="50" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="425.0" y="54.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">7</text>
+  <text x="425.0" y="26" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">2</text>
+  <text x="15" y="150" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">hasil</text>
+  <rect x="80" y="132" width="50" height="36" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="105.0" y="126" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">0</text>
+  <rect x="130" y="132" width="50" height="36" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="155.0" y="126" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1</text>
+  <rect x="180" y="132" width="50" height="36" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="205.0" y="126" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">2</text>
+  <rect x="230" y="132" width="50" height="36" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="255.0" y="126" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">3</text>
+  <rect x="280" y="132" width="50" height="36" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="305.0" y="126" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">4</text>
+  <rect x="330" y="132" width="50" height="36" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="355.0" y="126" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">5</text>
+  <text x="15" y="235" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">banyak perbandingan:</text>
+  <rect x="190" y="215" width="100" height="30" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+</svg>

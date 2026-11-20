@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 345" width="700" height="345" role="img" aria-labelledby="t d">
+  <title id="t">Tabel fakta proyek dengan kolom pokok dan keputusan kosong</title>
+  <desc id="d">Tabel empat fakta proyek: formulir, foto orang yang dapat dikenali, skrip pihak ketiga, dan tempat data mengalir. Kolom pokok yang relevan dan kolom keputusan kosong untuk diisi.</desc>
+  <rect width="700" height="345" fill="#ffffff"/>
+  <rect x="15" y="30" width="200" height="56" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="115.0" y="63.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">fakta proyek</text>
+  <rect x="215" y="30" width="250" height="56" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="340.0" y="63.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">pokok yang relevan</text>
+  <rect x="465" y="30" width="225" height="56" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="577.5" y="63.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">keputusan</text>
+  <rect x="15" y="86" width="200" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="115.0" y="119.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">formulir</text>
+  <rect x="215" y="86" width="250" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="465" y="86" width="225" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="142" width="200" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="115.0" y="175.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">foto orang yang dapat dikenali</text>
+  <rect x="215" y="142" width="250" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="465" y="142" width="225" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="198" width="200" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="115.0" y="231.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">skrip pihak ketiga</text>
+  <rect x="215" y="198" width="250" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="465" y="198" width="225" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="254" width="200" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="115.0" y="287.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">tempat data mengalir</text>
+  <rect x="215" y="254" width="250" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="465" y="254" width="225" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="350" y="335" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">Tulis pokok hukum dan keputusan beserta alasannya.</text>
+</svg>

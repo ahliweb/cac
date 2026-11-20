@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 298" width="540" height="298" role="img" aria-labelledby="t d">
+  <title id="t">Tabel situasi dan ciri cloud yang kosong</title>
+  <desc id="d">Tabel dua kolom: lima situasi (tombol tambah ruang simpan, dari ponsel dan laptop, tagihan sesuai pemakaian bulan lalu, ratusan pelanggan di satu pusat data, kapasitas turun saat sepi) dan kolom ciri cloud yang kosong.</desc>
+  <rect width="540" height="298" fill="#ffffff"/>
+  <text x="260" y="30" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Pasangkan situasi dengan ciri cloud</text>
+  <rect x="20" y="50" width="300" height="38" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="170.0" y="74.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">Situasi</text>
+  <rect x="320" y="50" width="200" height="38" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="420.0" y="74.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">Ciri cloud</text>
+  <rect x="20" y="88" width="300" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="170.0" y="112.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">tombol tambah ruang simpan</text>
+  <rect x="320" y="88" width="200" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="126" width="300" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="170.0" y="150.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">dari ponsel dan laptop</text>
+  <rect x="320" y="126" width="200" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="164" width="300" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="170.0" y="188.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">tagihan sesuai pemakaian bulan lalu</text>
+  <rect x="320" y="164" width="200" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="202" width="300" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="170.0" y="226.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">ratusan pelanggan di satu pusat data</text>
+  <rect x="320" y="202" width="200" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="240" width="300" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="170.0" y="264.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">kapasitas turun saat sepi</text>
+  <rect x="320" y="240" width="200" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+</svg>

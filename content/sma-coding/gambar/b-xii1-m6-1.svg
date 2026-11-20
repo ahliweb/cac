@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 290" width="680" height="290" role="img" aria-labelledby="t d">
+  <title id="t">Tabel tiga kasus pemilihan nama situs dengan kolom nama kosong</title>
+  <desc id="d">Tabel dengan tiga kasus. Kasus 1: SITE_NAME tidak diisi dan CMS mengirim X. Kasus 2: SITE_NAME diisi Y dan CMS mengirim X. Kasus 3: SITE_NAME tidak diisi dan CMS tidak mengirim nama. Kolom nama yang dipakai kosong.</desc>
+  <rect width="680" height="290" fill="#ffffff"/>
+  <rect x="15" y="30" width="70" height="56" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="50.0" y="63.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">kasus</text>
+  <rect x="85" y="30" width="170" height="56" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="170.0" y="63.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">SITE_NAME</text>
+  <rect x="255" y="30" width="170" height="56" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="340.0" y="63.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">nama dari CMS</text>
+  <rect x="425" y="30" width="250" height="56" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="550.0" y="63.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">nama yang dipakai</text>
+  <rect x="15" y="86" width="70" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="50.0" y="119.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">1</text>
+  <rect x="85" y="86" width="170" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="170.0" y="119.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">tidak diisi</text>
+  <rect x="255" y="86" width="170" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="340.0" y="119.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">X</text>
+  <rect x="425" y="86" width="250" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="142" width="70" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="50.0" y="175.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">2</text>
+  <rect x="85" y="142" width="170" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="170.0" y="175.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">Y</text>
+  <rect x="255" y="142" width="170" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="340.0" y="175.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">X</text>
+  <rect x="425" y="142" width="250" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="198" width="70" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="50.0" y="231.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">3</text>
+  <rect x="85" y="198" width="170" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="170.0" y="231.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">tidak diisi</text>
+  <rect x="255" y="198" width="170" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="340.0" y="231.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">tidak ada</text>
+  <rect x="425" y="198" width="250" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="340" y="278" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">Aturan: ?? memakai nilai kanan hanya bila nilai kiri null atau undefined.</text>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 295" width="700" height="295" role="img" aria-labelledby="t d">
+<title id="t">Keterlacakan kebutuhan ke uji</title>
+<desc id="d">Tabel lima kebutuhan K1 sampai K5 dengan batas dan cara ukur, dan kolom kosong uji yang menunjuknya. Di bawahnya daftar empat uji U1 sampai U4.</desc>
+<defs><marker id="ar" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#222222"/></marker></defs>
+<rect width="700" height="295" fill="#ffffff"/>
+<rect x="20" y="20" width="60" height="38" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="50.0" y="44.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Kode</text>
+<rect x="80" y="20" width="230" height="38" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="195.0" y="44.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Batas (angka dan satuan)</text>
+<rect x="310" y="20" width="210" height="38" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="415.0" y="44.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Cara ukur</text>
+<rect x="520" y="20" width="180" height="38" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="610.0" y="44.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Uji yang menunjuknya</text>
+<rect x="20" y="58" width="60" height="38" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="50.0" y="82.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">K1</text>
+<rect x="80" y="58" width="230" height="38" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="195.0" y="82.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">paling lama 40 detik untuk 2 m</text>
+<rect x="310" y="58" width="210" height="38" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="415.0" y="82.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">pengatur waktu, 10 lari</text>
+<rect x="520" y="58" width="180" height="38" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="20" y="96" width="60" height="38" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="50.0" y="120.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">K2</text>
+<rect x="80" y="96" width="230" height="38" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="195.0" y="120.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">simpangan paling besar 25 mm</text>
+<rect x="310" y="96" width="210" height="38" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="415.0" y="120.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">penggaris, 10 lari</text>
+<rect x="520" y="96" width="180" height="38" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="20" y="134" width="60" height="38" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="50.0" y="158.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">K3</text>
+<rect x="80" y="134" width="230" height="38" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="195.0" y="158.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">berhenti di AMAN bila garis hilang</text>
+<rect x="310" y="134" width="210" height="38" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="415.0" y="158.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">angkat robot, 5 kali</text>
+<rect x="520" y="134" width="180" height="38" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="20" y="172" width="60" height="38" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="50.0" y="196.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">K4</text>
+<rect x="80" y="172" width="230" height="38" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="195.0" y="196.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">paling sedikit 30 menit</text>
+<rect x="310" y="172" width="210" height="38" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="415.0" y="196.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">(kosong)</text>
+<rect x="520" y="172" width="180" height="38" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="20" y="210" width="60" height="38" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="50.0" y="234.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">K5</text>
+<rect x="80" y="210" width="230" height="38" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="195.0" y="234.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">(kosong)</text>
+<rect x="310" y="210" width="210" height="38" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="415.0" y="234.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">(kosong)</text>
+<rect x="520" y="210" width="180" height="38" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/><text x="20" y="250" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">Uji yang ada: U1 untuk K1, U2 untuk K2, U3 untuk K3, U4 untuk K9.</text><text x="20" y="274" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">Tulis uji pada kolom kanan, atau garis miring bila belum ada.</text>
+</svg>

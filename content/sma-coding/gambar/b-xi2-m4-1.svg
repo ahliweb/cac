@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 270" width="640" height="270" role="img" aria-labelledby="t d">
+  <title id="t">Dua cara menyimpan berkas dan titik proses mati</title>
+  <desc id="d">Dua jalur. Jalur atas, menulis langsung: satu langkah menulis ke data/tugas.json. Jalur bawah, berkas sementara: langkah 1 tulis ke tugas.json.tmp, langkah 2 rename ke tugas.json. Tanda silang bertuliskan mati di sini ada di tengah langkah menulis. Di kanan masing-masing ada kotak kosong untuk menulis isi tugas.json.</desc>
+  <rect width="640" height="270" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker></defs>
+  <g font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">
+    <text x="10" y="22" text-anchor="start" font-weight="bold">A. Menulis langsung</text>
+    <rect x="10" y="32" width="290" height="50" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="155" y="62">tulis isi ke data/tugas.json</text>
+    <text x="155" y="104" fill="#b3261e" font-weight="bold">X  proses mati di tengah menulis</text>
+    <line x1="300" y1="57" x2="340" y2="57" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+    <rect x="345" y="32" width="285" height="50" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="5 4"/>
+    <text x="487" y="105">isi tugas.json sesudahnya (tulis)</text>
+    <text x="10" y="148" text-anchor="start" font-weight="bold">B. Berkas sementara lalu rename</text>
+    <rect x="10" y="158" width="140" height="50" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+    <rect x="160" y="158" width="140" height="50" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="80" y="180">1 tulis ke</text><text x="80" y="198">tugas.json.tmp</text>
+    <text x="230" y="180">2 rename ke</text><text x="230" y="198">tugas.json</text>
+    <line x1="150" y1="183" x2="160" y2="183" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+    <text x="80" y="230" fill="#b3261e" font-weight="bold">X  mati di tengah langkah 1</text>
+    <line x1="300" y1="183" x2="340" y2="183" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+    <rect x="345" y="158" width="285" height="50" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="5 4"/>
+    <text x="487" y="231">isi tugas.json sesudahnya (tulis)</text>
+  </g>
+</svg>

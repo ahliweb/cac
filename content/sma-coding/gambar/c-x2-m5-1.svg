@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 250" width="720" height="250" role="img" aria-labelledby="t d">
+  <title id="t">Dua pembacaan potensiometer dipetakan ke duty</title>
+  <desc id="d">Batang skala atas 0 sampai 4095 dengan tanda pada 512 dan 3000, batang bawah 0 sampai 255, panah putus-putus ke kotak kosong untuk duty dan persen.</desc>
+  <rect width="720" height="250" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker></defs>
+  <text x="60" y="30" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#222222">Pembacaan mentah (0 sampai 4095)</text>
+  <rect x="60" y="45" width="600" height="26" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="60" y="92" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">0</text>
+  <text x="660" y="92" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">4095</text>
+  <line x1="135.01831501831504" y1="45" x2="135.01831501831504" y2="71" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="135.01831501831504" y="112" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#2a5d9f">512</text>
+  <line x1="135.01831501831504" y1="118" x2="135.01831501831504" y2="160" stroke="#222222" stroke-width="2" marker-end="url(#a)" stroke-dasharray="6 4"/>
+  <line x1="499.56043956043953" y1="45" x2="499.56043956043953" y2="71" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="499.56043956043953" y="112" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#2a5d9f">3000</text>
+  <line x1="499.56043956043953" y1="118" x2="499.56043956043953" y2="160" stroke="#222222" stroke-width="2" marker-end="url(#a)" stroke-dasharray="6 4"/>
+  <text x="220" y="150" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#222222">duty (0 sampai 255)</text>
+  <rect x="60" y="165" width="600" height="26" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="60" y="208" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">0</text>
+  <text x="660" y="208" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">255</text>
+  <rect x="75.01831501831504" y="215" width="52" height="30" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="101.01831501831504" y="213" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">duty</text>
+  <rect x="139.01831501831504" y="215" width="52" height="30" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="165.01831501831504" y="213" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">%</text>
+  <rect x="439.56043956043953" y="215" width="52" height="30" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="465.56043956043953" y="213" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">duty</text>
+  <rect x="503.56043956043953" y="215" width="52" height="30" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="529.5604395604396" y="213" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">%</text>
+</svg>

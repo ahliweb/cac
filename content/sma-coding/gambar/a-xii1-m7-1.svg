@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 450" width="540" height="450" role="img" aria-labelledby="t d">
+<title id="t">Segitiga Pascal dan diagram dua himpunan</title>
+<desc id="d">Segitiga Pascal baris 3 berisi 1 3 3 1 dan baris 4 berisi 1 4 6 4 1, baris 5 dan 6 kosong. Di bawahnya dua lingkaran yang beririsan untuk bilangan 1 sampai 30 habis dibagi 2 dan habis dibagi 3, isinya kosong.</desc>
+<rect width="540" height="450" fill="#ffffff"/>
+
+<g font-family="sans-serif">
+<rect x="182.0" y="15" width="40" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="202.0" y="34.25" font-size="15" text-anchor="middle" fill="#222222">1</text>
+<rect x="226.0" y="15" width="40" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="246.0" y="34.25" font-size="15" text-anchor="middle" fill="#222222">3</text>
+<rect x="270.0" y="15" width="40" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="290.0" y="34.25" font-size="15" text-anchor="middle" fill="#222222">3</text>
+<rect x="314.0" y="15" width="40" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="334.0" y="34.25" font-size="15" text-anchor="middle" fill="#222222">1</text>
+<text x="170.0" y="35" font-size="14" text-anchor="end" fill="#222222">baris 3</text>
+<rect x="160.0" y="50" width="40" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="180.0" y="69.25" font-size="15" text-anchor="middle" fill="#222222">1</text>
+<rect x="204.0" y="50" width="40" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="224.0" y="69.25" font-size="15" text-anchor="middle" fill="#222222">4</text>
+<rect x="248.0" y="50" width="40" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="268.0" y="69.25" font-size="15" text-anchor="middle" fill="#222222">6</text>
+<rect x="292.0" y="50" width="40" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="312.0" y="69.25" font-size="15" text-anchor="middle" fill="#222222">4</text>
+<rect x="336.0" y="50" width="40" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="356.0" y="69.25" font-size="15" text-anchor="middle" fill="#222222">1</text>
+<text x="148.0" y="70" font-size="14" text-anchor="end" fill="#222222">baris 4</text>
+<rect x="138.0" y="85" width="40" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+<rect x="182.0" y="85" width="40" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+<rect x="226.0" y="85" width="40" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+<rect x="270.0" y="85" width="40" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+<rect x="314.0" y="85" width="40" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+<rect x="358.0" y="85" width="40" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+<text x="126.0" y="105" font-size="14" text-anchor="end" fill="#222222">baris 5</text>
+<rect x="116.0" y="120" width="40" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+<rect x="160.0" y="120" width="40" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+<rect x="204.0" y="120" width="40" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+<rect x="248.0" y="120" width="40" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+<rect x="292.0" y="120" width="40" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+<rect x="336.0" y="120" width="40" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+<rect x="380.0" y="120" width="40" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+<text x="104.0" y="140" font-size="14" text-anchor="end" fill="#222222">baris 6</text>
+<text x="20" y="175" font-size="14" text-anchor="start" fill="#222222">Tiap angka adalah jumlah dua angka di atasnya. Isi baris 5 dan 6.</text>
+<circle cx="200" cy="290" r="75" fill="none" stroke="#2a5d9f" stroke-width="2.5"/>
+<circle cx="320" cy="290" r="75" fill="none" stroke="#b3261e" stroke-width="2.5" stroke-dasharray="8 4"/>
+<text x="150" y="205" font-size="14" text-anchor="middle" fill="#222222">habis dibagi 2</text>
+<text x="370" y="205" font-size="14" text-anchor="middle" fill="#222222">habis dibagi 3</text>
+<rect x="150" y="275" width="36" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+<rect x="242" y="275" width="36" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+<rect x="334" y="275" width="36" height="28" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+<text x="168" y="385" font-size="14" text-anchor="middle" fill="#222222">hanya 2</text>
+<text x="260" y="385" font-size="14" text-anchor="middle" fill="#222222">keduanya</text>
+<text x="352" y="385" font-size="14" text-anchor="middle" fill="#222222">hanya 3</text>
+<text x="20" y="420" font-size="14" text-anchor="start" fill="#222222">Isi tiga daerah dengan banyak bilangan dari 1 sampai 30.</text>
+</g>
+</svg>

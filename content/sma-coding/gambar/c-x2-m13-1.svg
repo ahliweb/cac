@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 200" width="700" height="200" role="img" aria-labelledby="t d">
+  <title id="t">Diagram alur data stasiun pengamat dengan tiga kotak kosong</title>
+  <desc id="d">Diagram lima kotak berurutan dengan panah: dua sensor (suhu dan cahaya), tiga kotak kosong untuk tahap proses, lalu berkas CSV. Pelajar mengisi tiga kotak kosong.</desc>
+  <rect width="700" height="200" fill="#ffffff"/>
+  <text x="350" y="32" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Alur data stasiun pengamat</text>
+  <rect x="20" y="60" width="104" height="64" rx="6" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="72.0" y="88.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">dua sensor</text>
+  <text x="72.0" y="106.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">(suhu, cahaya)</text>
+  <line x1="127" y1="92.0" x2="145" y2="92.0" stroke="#222222" stroke-width="2"/>
+  <polygon points="150,92.0 142,87.0 142,97.0" fill="#222222"/>
+  <rect x="150" y="60" width="104" height="64" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <line x1="257" y1="92.0" x2="275" y2="92.0" stroke="#222222" stroke-width="2"/>
+  <polygon points="280,92.0 272,87.0 272,97.0" fill="#222222"/>
+  <rect x="280" y="60" width="104" height="64" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <line x1="387" y1="92.0" x2="405" y2="92.0" stroke="#222222" stroke-width="2"/>
+  <polygon points="410,92.0 402,87.0 402,97.0" fill="#222222"/>
+  <rect x="410" y="60" width="104" height="64" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <line x1="517" y1="92.0" x2="535" y2="92.0" stroke="#222222" stroke-width="2"/>
+  <polygon points="540,92.0 532,87.0 532,97.0" fill="#222222"/>
+  <rect x="540" y="60" width="104" height="64" rx="6" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="592.0" y="97.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">berkas CSV</text>
+  <text x="350" y="170" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Isi tiga kotak kosong dengan tahap proses, berurutan.</text>
+</svg>

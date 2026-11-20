@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 714 330" width="714" height="330" role="img" aria-labelledby="t d">
+  <title id="t">Lima rentang jarak dan tabel zona yang masih kosong</title>
+  <desc id="d">Atas: lima rentang jarak kurang dari 2, 2 sampai 20, 20 sampai 50, 50 sampai 400, dan lebih dari 400 sentimeter, masing-masing dengan isian zona. Bawah: tabel jarak 12, 20, 49, dan 500 sentimeter dengan kolom zona kosong.</desc>
+  <rect width="714" height="330" fill="#ffffff"/>
+  <text x="280" y="28" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Batas jarak (cm) dan zona</text>
+  <rect x="20" y="46" width="130" height="64" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="85" y="68" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">&lt; 2 cm</text>
+  <text x="85" y="98" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">zona: ______</text>
+  <rect x="156" y="46" width="130" height="64" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="221" y="68" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">2 sampai 20 cm</text>
+  <text x="221" y="98" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">zona: ______</text>
+  <rect x="292" y="46" width="130" height="64" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="357" y="68" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">20 sampai 50 cm</text>
+  <text x="357" y="98" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">zona: ______</text>
+  <rect x="428" y="46" width="130" height="64" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="493" y="68" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">50 sampai 400 cm</text>
+  <text x="493" y="98" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">zona: ______</text>
+  <rect x="564" y="46" width="130" height="64" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="629" y="68" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">&gt; 400 cm</text>
+  <text x="629" y="98" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">zona: ______</text>
+  <rect x="20" y="140" width="130" height="34" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="85.0" y="162.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">Jarak (cm)</text>
+  <rect x="150" y="140" width="160" height="34" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="230.0" y="162.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">Zona</text>
+  <rect x="20" y="174" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="85.0" y="196.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">12</text>
+  <rect x="150" y="174" width="160" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="208" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="85.0" y="230.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">20</text>
+  <rect x="150" y="208" width="160" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="242" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="85.0" y="264.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">49</text>
+  <rect x="150" y="242" width="160" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="276" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="85.0" y="298.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">500</text>
+  <rect x="150" y="276" width="160" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+</svg>

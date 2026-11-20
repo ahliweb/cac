@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 430" width="680" height="430" role="img" aria-labelledby="t d">
+  <title id="t">Sirkuit teleportasi dan tabel koreksi Bob</title>
+  <desc id="d">Tiga kawat Q, A, dan B. A dan B berada pada keadaan Bell. CNOT dengan Q sebagai kontrol dan A sebagai target, lalu H pada Q, lalu Q dan A dibaca. Dua bit klasik dikirim ke Bob, yang mengoreksi B. Di bawah tabel empat hasil q a dengan kolom gerbang koreksi Bob yang kosong.</desc>
+  <rect width="680" height="430" fill="#ffffff"/>
+  <text x="20" y="22" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">Q = keadaan yang dikirim, A dan B = pasangan Bell</text>
+  <text x="20" y="60" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222" text-anchor="start">Q</text>
+  <line x1="45" y1="55" x2="660" y2="55" stroke="#222222" stroke-width="2"/>
+  <text x="20" y="110" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222" text-anchor="start">A</text>
+  <line x1="45" y1="105" x2="660" y2="105" stroke="#222222" stroke-width="2"/>
+  <text x="20" y="160" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222" text-anchor="start">B</text>
+  <line x1="45" y1="155" x2="660" y2="155" stroke="#222222" stroke-width="2"/>
+  <rect x="70" y="85" width="70" height="90" fill="#ffffff" stroke="#222222" stroke-width="2.5"/>
+  <text x="105" y="128" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Bell</text>
+  <circle cx="200" cy="55" r="6" fill="#222222"/>
+  <line x1="200" y1="55" x2="200" y2="105" stroke="#222222" stroke-width="2"/>
+  <circle cx="200" cy="105" r="14" fill="#ffffff" stroke="#222222" stroke-width="2.5"/>
+  <line x1="200" y1="91" x2="200" y2="119" stroke="#222222" stroke-width="2"/>
+  <line x1="186" y1="105" x2="214" y2="105" stroke="#222222" stroke-width="2"/>
+  <rect x="250" y="37" width="36" height="36" fill="#ffffff" stroke="#2a5d9f" stroke-width="2.5"/>
+  <text x="268" y="61" font-family="sans-serif" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">H</text>
+  <rect x="330" y="38" width="64" height="34" fill="#ffffff" stroke="#b3261e" stroke-width="2.5"/>
+  <text x="362" y="61" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222" text-anchor="middle">baca</text>
+  <rect x="330" y="88" width="64" height="34" fill="#ffffff" stroke="#b3261e" stroke-width="2.5"/>
+  <text x="362" y="111" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222" text-anchor="middle">baca</text>
+  <line x1="394" y1="55" x2="430" y2="55" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="394" y1="105" x2="430" y2="105" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="436" y="85" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">2 bit klasik dikirim ke Bob</text>
+  <rect x="545" y="135" width="110" height="40" fill="#ffffff" stroke="#1b7a3d" stroke-width="2.5"/>
+  <text x="600" y="160" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">koreksi Bob</text>
+  <text x="20" y="205" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">Tabel koreksi Bob (hasil q = bit dari Q, a = bit dari A)</text>
+  <rect x="20" y="215" width="130" height="40" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="85.0" y="240.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">hasil q a</text>
+  <rect x="150" y="215" width="240" height="40" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="270.0" y="240.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">urutan gerbang Bob</text>
+  <rect x="390" y="215" width="270" height="40" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="525.0" y="240.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">alasan singkat</text>
+  <rect x="20" y="255" width="130" height="40" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="85.0" y="280.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">00</text>
+  <rect x="154" y="259" width="232" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="150" y="255" width="240" height="40" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="394" y="259" width="262" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="390" y="255" width="270" height="40" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="20" y="295" width="130" height="40" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="85.0" y="320.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">01</text>
+  <rect x="154" y="299" width="232" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="150" y="295" width="240" height="40" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="394" y="299" width="262" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="390" y="295" width="270" height="40" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="20" y="335" width="130" height="40" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="85.0" y="360.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">10</text>
+  <rect x="154" y="339" width="232" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="150" y="335" width="240" height="40" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="394" y="339" width="262" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="390" y="335" width="270" height="40" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="20" y="375" width="130" height="40" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="85.0" y="400.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">11</text>
+  <rect x="154" y="379" width="232" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="150" y="375" width="240" height="40" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="394" y="379" width="262" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="390" y="375" width="270" height="40" fill="none" stroke="#222222" stroke-width="1.5"/>
+</svg>

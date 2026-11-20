@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 430" width="540" height="430" role="img" aria-labelledby="t d">
+<title id="t">Tiga barang knapsack dan tabel himpunan bagian</title>
+<desc id="d">Tiga kartu barang dengan berat dan nilai: barang 1 berat 6 nilai 30, barang 2 berat 5 nilai 20, barang 3 berat 5 nilai 20, kapasitas 10. Tabel delapan himpunan bagian dengan kolom berat, nilai, dan muat, kosong.</desc>
+<rect width="540" height="430" fill="#ffffff"/>
+
+<g font-family="sans-serif">
+<text x="20" y="24" font-size="14" text-anchor="start" font-weight="bold" fill="#222222">Kapasitas W = 10. Barang (berat, nilai):</text>
+<rect x="20" y="34" width="126" height="34" rx="3" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="1.5"/>
+<text x="83.0" y="55.9" font-size="14" text-anchor="middle" font-weight="bold" fill="#222222">barang 1: (6, 30)</text>
+<rect x="160" y="34" width="126" height="34" rx="3" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="1.5"/>
+<text x="223.0" y="55.9" font-size="14" text-anchor="middle" font-weight="bold" fill="#222222">barang 2: (5, 20)</text>
+<rect x="300" y="34" width="126" height="34" rx="3" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="1.5"/>
+<text x="363.0" y="55.9" font-size="14" text-anchor="middle" font-weight="bold" fill="#222222">barang 3: (5, 20)</text>
+<text x="20" y="98" font-size="14" text-anchor="start" fill="#222222">Cari dengan tangan: isi berat, nilai, dan muat (ya / tidak) tiap himpunan.</text>
+<rect x="20" y="110" width="120" height="34" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="80.0" y="132.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">himpunan</text>
+<rect x="140" y="110" width="100" height="34" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="190.0" y="132.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">berat</text>
+<rect x="240" y="110" width="100" height="34" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="290.0" y="132.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">nilai</text>
+<rect x="340" y="110" width="100" height="34" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="390.0" y="132.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">muat?</text>
+<rect x="20" y="144" width="120" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="80.0" y="166.25" font-size="15" text-anchor="middle" fill="#222222">{ }</text>
+<rect x="140" y="144" width="100" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="240" y="144" width="100" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="340" y="144" width="100" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="20" y="178" width="120" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="80.0" y="200.25" font-size="15" text-anchor="middle" fill="#222222">{1}</text>
+<rect x="140" y="178" width="100" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="240" y="178" width="100" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="340" y="178" width="100" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="20" y="212" width="120" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="80.0" y="234.25" font-size="15" text-anchor="middle" fill="#222222">{2}</text>
+<rect x="140" y="212" width="100" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="240" y="212" width="100" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="340" y="212" width="100" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="20" y="246" width="120" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="80.0" y="268.25" font-size="15" text-anchor="middle" fill="#222222">{3}</text>
+<rect x="140" y="246" width="100" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="240" y="246" width="100" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="340" y="246" width="100" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="20" y="280" width="120" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="80.0" y="302.25" font-size="15" text-anchor="middle" fill="#222222">{1, 2}</text>
+<rect x="140" y="280" width="100" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="240" y="280" width="100" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="340" y="280" width="100" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="20" y="314" width="120" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="80.0" y="336.25" font-size="15" text-anchor="middle" fill="#222222">{1, 3}</text>
+<rect x="140" y="314" width="100" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="240" y="314" width="100" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="340" y="314" width="100" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="20" y="348" width="120" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="80.0" y="370.25" font-size="15" text-anchor="middle" fill="#222222">{2, 3}</text>
+<rect x="140" y="348" width="100" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="240" y="348" width="100" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="340" y="348" width="100" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="20" y="382" width="120" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="80.0" y="404.25" font-size="15" text-anchor="middle" fill="#222222">{1, 2, 3}</text>
+<rect x="140" y="382" width="100" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="240" y="382" width="100" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="340" y="382" width="100" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+</g>
+</svg>

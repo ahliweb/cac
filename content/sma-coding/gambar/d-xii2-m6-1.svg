@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 290" width="700" height="290" role="img" aria-labelledby="t d">
+  <title id="t">Matriks kebingungan dan tabel per jenis buku</title>
+  <desc id="d">Kiri: matriks kebingungan dua kali dua dengan kotak TP, FN, FP, TN kosong. Kanan: tabel jenis anak, referensi, umum dengan kolom baris, terlambat, recall, dan cukup bukti, semuanya kosong.</desc>
+  <rect width="700" height="290" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <text x="150" y="22" font-weight="bold" text-anchor="middle">Matriks kebingungan</text>
+    <text x="150" y="48" text-anchor="middle">tebakan model</text>
+    <text x="115" y="75" text-anchor="middle">terlambat</text>
+    <text x="205" y="75" text-anchor="middle">tepat waktu</text>
+    <text x="22" y="120" text-anchor="middle" transform="rotate(-90 22 130)">aktual</text>
+    <text x="55" y="118" text-anchor="end">terlambat</text>
+    <text x="55" y="184" text-anchor="end">tepat</text>
+    <text x="55" y="200" text-anchor="end">waktu</text>
+    <rect x="65" y="85" width="90" height="70" fill="#f2f2f2" stroke="#1b7a3d" stroke-width="2.5"/>
+    <text x="72" y="103" font-weight="bold">TP</text>
+    <rect x="155" y="85" width="90" height="70" fill="#ffffff" stroke="#b3261e" stroke-width="2.5" stroke-dasharray="6 3"/>
+    <text x="162" y="103" font-weight="bold">FN</text>
+    <rect x="65" y="155" width="90" height="70" fill="#ffffff" stroke="#b3261e" stroke-width="2.5" stroke-dasharray="6 3"/>
+    <text x="72" y="173" font-weight="bold">FP</text>
+    <rect x="155" y="155" width="90" height="70" fill="#f2f2f2" stroke="#1b7a3d" stroke-width="2.5"/>
+    <text x="162" y="173" font-weight="bold">TN</text>
+    <text x="150" y="255" text-anchor="middle">tulis jumlah baris di tiap kotak</text>
+    <text x="500" y="22" font-weight="bold" text-anchor="middle">Per jenis buku</text>
+    <rect x="290" y="35" width="400" height="34" fill="#2a5d9f"/>
+    <text x="335" y="57" fill="#ffffff" text-anchor="middle">jenis</text>
+    <text x="410" y="57" fill="#ffffff" text-anchor="middle">baris</text>
+    <text x="500" y="57" fill="#ffffff" text-anchor="middle">terlambat</text>
+    <text x="582" y="57" fill="#ffffff" text-anchor="middle">recall</text>
+    <text x="650" y="57" fill="#ffffff" text-anchor="middle">cukup?</text>
+    <rect x="290" y="69" width="400" height="44" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+    <rect x="290" y="113" width="400" height="44" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+    <rect x="290" y="157" width="400" height="44" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+    <text x="298" y="97">anak</text>
+    <text x="298" y="141">referensi</text>
+    <text x="298" y="185">umum</text>
+    <line x1="375" y1="35" x2="375" y2="201" stroke="#222222" stroke-width="1.5"/>
+    <line x1="450" y1="35" x2="450" y2="201" stroke="#222222" stroke-width="1.5"/>
+    <line x1="545" y1="35" x2="545" y2="201" stroke="#222222" stroke-width="1.5"/>
+    <line x1="618" y1="35" x2="618" y2="201" stroke="#222222" stroke-width="1.5"/>
+    <text x="490" y="232" text-anchor="middle">cukup? tulis ya atau TIPIS</text>
+  </g>
+</svg>

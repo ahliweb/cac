@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 230" width="640" height="230" role="img" aria-labelledby="t d">
+  <title id="t">Tiga baris kode dan urutan tercetak</title>
+  <desc id="d">Tiga baris kode: console.log("A"); ambil().then lalu console.log("C", nilai); console.log("B"). Di kanan tiap baris ada kotak kosong untuk menulis urutan tercetaknya: pertama, kedua, atau ketiga.</desc>
+  <rect width="640" height="230" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <text x="10" y="22" font-weight="bold">Kode (dibaca dari atas)</text>
+    <text x="470" y="22" font-weight="bold">Tercetak ke-?</text>
+    <g stroke="#2a5d9f" stroke-width="2" fill="#f2f2f2">
+      <rect x="10" y="34" width="440" height="42" rx="6"/><rect x="10" y="84" width="440" height="42" rx="6"/><rect x="10" y="134" width="440" height="42" rx="6"/>
+    </g>
+    <text x="22" y="61">1  console.log("A");</text>
+    <text x="22" y="111">2  ambil().then((nilai) =&gt; console.log("C", nilai));</text>
+    <text x="22" y="161">3  console.log("B");</text>
+    <g stroke="#222222" stroke-width="2" fill="#ffffff" stroke-dasharray="5 4">
+      <rect x="470" y="34" width="150" height="42"/><rect x="470" y="84" width="150" height="42"/><rect x="470" y="134" width="150" height="42"/>
+    </g>
+    <text x="10" y="205">ambil() adalah fungsi async yang mengembalikan "data".</text>
+  </g>
+</svg>

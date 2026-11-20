@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" width="680" height="360" role="img" aria-labelledby="t d">
+  <title id="t">Lima langkah cloud quantum dan antrean pekerjaan</title>
+  <desc id="d">Atas: lima kotak langkah 1 sampai 5 berpanah, masing-masing dengan kotak kosong untuk huruf langkah yang cocok. Bawah: antrean tujuh pekerjaan dengan lama 40, 300, 12, 90, 600, 25, dan milik kita 8 detik, batang dengan panjang sebanding, dan dua kotak kosong untuk detik menunggu dan detik yang dihitung sebagai pemakaian.</desc>
+  <rect width="680" height="360" fill="#ffffff"/>
+  <defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#222222"/></marker></defs>
+  <text x="20" y="22" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">Urutan alur: tulis huruf (a) sampai (e) di tiap kotak</text>
+  <rect x="20" y="34" width="100" height="70" fill="#ffffff" stroke="#2a5d9f" stroke-width="2.5"/>
+  <text x="70" y="56" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">langkah 1</text>
+  <rect x="45" y="64" width="50" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <line x1="120" y1="69" x2="150" y2="69" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="150" y="34" width="100" height="70" fill="#ffffff" stroke="#2a5d9f" stroke-width="2.5"/>
+  <text x="200" y="56" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">langkah 2</text>
+  <rect x="175" y="64" width="50" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <line x1="250" y1="69" x2="280" y2="69" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="280" y="34" width="100" height="70" fill="#ffffff" stroke="#2a5d9f" stroke-width="2.5"/>
+  <text x="330" y="56" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">langkah 3</text>
+  <rect x="305" y="64" width="50" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <line x1="380" y1="69" x2="410" y2="69" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="410" y="34" width="100" height="70" fill="#ffffff" stroke="#2a5d9f" stroke-width="2.5"/>
+  <text x="460" y="56" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">langkah 4</text>
+  <rect x="435" y="64" width="50" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <line x1="510" y1="69" x2="540" y2="69" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="540" y="34" width="100" height="70" fill="#ffffff" stroke="#2a5d9f" stroke-width="2.5"/>
+  <text x="590" y="56" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">langkah 5</text>
+  <rect x="565" y="64" width="50" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="20" y="142" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">Antrean tiruan: detik tiap pekerjaan (satu per satu)</text>
+  <rect x="20.0" y="160" width="23.1" height="36" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="1.5"/>
+  <rect x="43.1" y="160" width="173.0" height="36" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="1.5"/>
+  <rect x="216.1" y="160" width="6.9" height="36" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="1.5"/>
+  <rect x="223.0" y="160" width="51.9" height="36" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="1.5"/>
+  <rect x="274.9" y="160" width="346.0" height="36" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="1.5"/>
+  <rect x="621.0" y="160" width="14.4" height="36" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="1.5"/>
+  <rect x="635.4" y="160" width="4.6" height="36" fill="#f2f2f2" stroke="#b3261e" stroke-width="3"/>
+  <text x="20" y="222" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">urutan: 40, 300, 12, 90, 600, 25, lalu milik kita (garis merah tebal): 8</text>
+  <text x="20" y="262" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">menunggu (detik):</text>
+  <rect x="190" y="242" width="150" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="360" y="262" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">dihitung sebagai pemakaian:</text>
+  <rect x="570" y="242" width="90" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="20" y="312" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">1 RU = 1 menit waktu QPU. Tarif contoh 96 USD per menit.</text>
+</svg>

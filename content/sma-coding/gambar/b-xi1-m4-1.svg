@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 250" width="640" height="250" role="img" aria-labelledby="t d">
+  <title id="t">Tabel galat kacau.ts</title>
+  <desc id="d">Tabel dengan kolom Baris kode kacau.ts, dengan strict false, dan dengan strict true. Tiga baris kode: parameter nama tanpa tipe, tahun bertipe number diisi null, dan awal bertipe number diisi daftar indeks 0. Kolom galat dikosongkan.</desc>
+  <rect width="640" height="250" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <g stroke="#222222" stroke-width="2">
+      <rect x="10" y="10" width="360" height="34" fill="#f2f2f2"/><rect x="370" y="10" width="125" height="34" fill="#f2f2f2"/><rect x="495" y="10" width="135" height="34" fill="#f2f2f2"/>
+      <rect x="10" y="44" width="360" height="50" fill="#ffffff"/><rect x="370" y="44" width="125" height="50" fill="#ffffff"/><rect x="495" y="44" width="135" height="50" fill="#ffffff"/>
+      <rect x="10" y="94" width="360" height="50" fill="#ffffff"/><rect x="370" y="94" width="125" height="50" fill="#ffffff"/><rect x="495" y="94" width="135" height="50" fill="#ffffff"/>
+      <rect x="10" y="144" width="360" height="50" fill="#ffffff"/><rect x="370" y="144" width="125" height="50" fill="#ffffff"/><rect x="495" y="144" width="135" height="50" fill="#ffffff"/>
+    </g>
+    <text x="18" y="32" font-weight="bold">Kode</text><text x="380" y="32" font-weight="bold">strict: false</text><text x="505" y="32" font-weight="bold">strict: true</text>
+    <text x="18" y="74">1. function sapa(nama) {</text>
+    <text x="18" y="124">2. const tahun: number = null;</text>
+    <text x="18" y="174">3. const awal: number = daftar[0];</text>
+    <text x="10" y="220">Tulis kode galat atau tanda "-" bila tidak ada galat.</text>
+    <text x="10" y="240">Jumlah galat: strict false ____ , strict true ____</text>
+  </g>
+</svg>

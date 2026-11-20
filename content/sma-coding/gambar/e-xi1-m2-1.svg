@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 330" width="640" height="330" role="img" aria-labelledby="t d">
+  <title id="t">Vektor 3 4 pada bidang koordinat</title>
+  <desc id="d">Anak panah dari titik asal ke titik 3, 4 membentuk segitiga siku-siku dengan sisi mendatar 3 dan sisi tegak 4. Sisi miring diberi kotak panjang kosong. Di kanan, kotak kosong untuk vektor satuan searah dan jumlah kuadrat komponennya.</desc>
+  <rect width="640" height="330" fill="#ffffff"/>
+  <defs><marker id="p" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#b3261e"/></marker><marker id="s" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#222222"/></marker></defs>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <line x1="40" y1="290" x2="360" y2="290" stroke="#222222" stroke-width="2" marker-end="url(#s)"/>
+    <line x1="40" y1="290" x2="40" y2="20" stroke="#222222" stroke-width="2" marker-end="url(#s)"/>
+    <text x="365" y="295">x</text>
+    <text x="28" y="22">y</text>
+    <line x1="40" y1="290" x2="280" y2="50" stroke="#b3261e" stroke-width="3" marker-end="url(#p)"/>
+    <line x1="280" y1="290" x2="280" y2="50" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <circle cx="280" cy="50" r="4" fill="#222222"/>
+    <text x="290" y="48">(3, 4)</text>
+    <text x="160" y="315" text-anchor="middle">3</text>
+    <text x="294" y="175">4</text>
+    <rect x="75" y="125" width="60" height="26" fill="#f2f2f2" stroke="#222222" stroke-width="2" transform="rotate(-45 105 138)"/>
+    <text x="85" y="95" font-size="14">panjang?</text>
+    <text x="410" y="40" font-weight="bold">Vektor searah, panjang 1</text>
+    <text x="410" y="75">(</text>
+    <rect x="425" y="57" width="70" height="26" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+    <text x="500" y="75">;</text>
+    <rect x="512" y="57" width="70" height="26" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+    <text x="588" y="75">)</text>
+    <text x="410" y="130" font-weight="bold">Jumlah kuadrat komponennya</text>
+    <rect x="410" y="142" width="100" height="26" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  </g>
+</svg>

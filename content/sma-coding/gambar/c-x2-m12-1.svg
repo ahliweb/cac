@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 569 306" width="569" height="306" role="img" aria-labelledby="t d">
+  <title id="t">Lima baris berkas data dengan kolom lolos dan alasan kosong</title>
+  <desc id="d">Tabel lima baris berkas CSV dengan kolom waktu_detik dan suhu_c: 0 dan 28.1, 30 dan 28.2, 60 dan kosong, 90 dan 85.0, 80 dan 28.3. Kolom lolos dan alasan ditolak kosong untuk diisi sesuai aturan di atas tabel.</desc>
+  <rect width="569" height="306" fill="#ffffff"/>
+  <text x="265" y="26" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Aturan: suhu terisi, 15 sampai 45, waktu lebih besar dari baris sebelumnya</text>
+  <rect x="20" y="70" width="109" height="36" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="74.5" y="93.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">waktu_detik</text>
+  <rect x="129" y="70" width="110" height="36" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="184.0" y="93.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">suhu_c</text>
+  <rect x="239" y="70" width="110" height="36" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="294.0" y="93.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">Lolos?</text>
+  <rect x="349" y="70" width="200" height="36" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="449.0" y="93.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">Alasan ditolak</text>
+  <rect x="20" y="106" width="109" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="74.5" y="129.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">0</text>
+  <rect x="129" y="106" width="110" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="184.0" y="129.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">28.1</text>
+  <rect x="239" y="106" width="110" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="349" y="106" width="200" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="142" width="109" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="74.5" y="165.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">30</text>
+  <rect x="129" y="142" width="110" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="184.0" y="165.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">28.2</text>
+  <rect x="239" y="142" width="110" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="349" y="142" width="200" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="178" width="109" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="74.5" y="201.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">60</text>
+  <rect x="129" y="178" width="110" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="184.0" y="201.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">(kosong)</text>
+  <rect x="239" y="178" width="110" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="349" y="178" width="200" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="214" width="109" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="74.5" y="237.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">90</text>
+  <rect x="129" y="214" width="110" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="184.0" y="237.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">85.0</text>
+  <rect x="239" y="214" width="110" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="349" y="214" width="200" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="250" width="109" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="74.5" y="273.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">80</text>
+  <rect x="129" y="250" width="110" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="184.0" y="273.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">28.3</text>
+  <rect x="239" y="250" width="110" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="349" y="250" width="200" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+</svg>

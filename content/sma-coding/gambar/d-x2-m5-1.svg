@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 424" width="600" height="424" role="img" aria-labelledby="t d">
+  <title id="t">Tabel penelusuran galat dan perbandingan model</title>
+  <desc id="d">Tabel lima baris nilai sebenarnya dan tebakan dengan kolom selisih, mutlak, kuadrat kosong dan baris jumlah. Di bawahnya tabel tiga model dengan galat latih dan galat uji kosong.</desc>
+  <rect width="600" height="424" fill="#ffffff"/>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker></defs>
+  <rect x="10" y="10" width="130" height="36" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="75" y="33" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">sebenarnya</text>
+  <rect x="140" y="10" width="110" height="36" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="195" y="33" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">tebakan</text>
+  <rect x="250" y="10" width="110" height="36" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="305" y="33" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">selisih</text>
+  <rect x="360" y="10" width="110" height="36" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="415" y="33" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">mutlak</text>
+  <rect x="470" y="10" width="110" height="36" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="525" y="33" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">kuadrat</text>
+  <rect x="10" y="46" width="130" height="32" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="75" y="67" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">10</text>
+  <rect x="140" y="46" width="110" height="32" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="195" y="67" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">12</text>
+  <rect x="250" y="46" width="110" height="32" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="360" y="46" width="110" height="32" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="470" y="46" width="110" height="32" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="10" y="78" width="130" height="32" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="75" y="99" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">20</text>
+  <rect x="140" y="78" width="110" height="32" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="195" y="99" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">18</text>
+  <rect x="250" y="78" width="110" height="32" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="360" y="78" width="110" height="32" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="470" y="78" width="110" height="32" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="10" y="110" width="130" height="32" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="75" y="131" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">30</text>
+  <rect x="140" y="110" width="110" height="32" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="195" y="131" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">33</text>
+  <rect x="250" y="110" width="110" height="32" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="360" y="110" width="110" height="32" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="470" y="110" width="110" height="32" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="10" y="142" width="130" height="32" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="75" y="163" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">40</text>
+  <rect x="140" y="142" width="110" height="32" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="195" y="163" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">35</text>
+  <rect x="250" y="142" width="110" height="32" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="360" y="142" width="110" height="32" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="470" y="142" width="110" height="32" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="10" y="174" width="130" height="32" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="75" y="195" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">50</text>
+  <rect x="140" y="174" width="110" height="32" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="195" y="195" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">50</text>
+  <rect x="250" y="174" width="110" height="32" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="360" y="174" width="110" height="32" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="470" y="174" width="110" height="32" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="10" y="206" width="130" height="32" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="75" y="227" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">jumlah</text>
+  <rect x="140" y="206" width="110" height="32" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="195" y="227" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222"></text>
+  <rect x="250" y="206" width="110" height="32" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="360" y="206" width="110" height="32" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="470" y="206" width="110" height="32" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="10" y="268" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#222222">Tulis galat dari Orange atau hitunganmu:</text>
+  <rect x="10" y="280" width="220" height="36" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="120" y="303" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">model</text>
+  <rect x="230" y="280" width="160" height="36" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="310" y="303" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">galat latih</text>
+  <rect x="390" y="280" width="160" height="36" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="470" y="303" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">galat uji</text>
+  <rect x="10" y="316" width="220" height="32" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="120" y="337" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">garis linear</text>
+  <rect x="230" y="316" width="160" height="32" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="390" y="316" width="160" height="32" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="10" y="348" width="220" height="32" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="120" y="369" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">pohon bawaan</text>
+  <rect x="230" y="348" width="160" height="32" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="390" y="348" width="160" height="32" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="10" y="380" width="220" height="32" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="120" y="401" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">pohon bebas</text>
+  <rect x="230" y="380" width="160" height="32" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="390" y="380" width="160" height="32" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+</svg>

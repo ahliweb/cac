@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 356" width="640" height="356" role="img" aria-labelledby="t d">
+  <title id="t">Kebutuhan wajib Kios Contoh dengan kotak pilihan kosong</title>
+  <desc id="d">Empat kebutuhan wajib di kiri: mencatat penjualan dan membuat nota, mencetak nota, mengambil dan mengubah ukuran foto, cadangan data penjualan. Tiap kebutuhan dihubungkan garis ke kotak kosong di kanan untuk pilihan perangkat. Di bawah ada satu kotak kosong untuk hal yang dikorbankan.</desc>
+  <rect width="640" height="356" fill="#ffffff"/>
+  <text x="10" y="24" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">Profil: Kios Contoh (fiktif), tiga karyawan</text>
+  <text x="10" y="48" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">Kebutuhan wajib</text>
+  <text x="360" y="48" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">Pilihan perangkat atau aplikasi</text>
+  <rect x="10" y="58" width="300" height="44" rx="6" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="20" y="85" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">1. Mencatat penjualan dan membuat nota</text>
+  <line x1="310" y1="80" x2="350" y2="80" stroke="#2a5d9f" stroke-width="2"/>
+  <rect x="350" y="58" width="280" height="44" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="10" y="112" width="300" height="44" rx="6" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="20" y="139" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">2. Mencetak nota</text>
+  <line x1="310" y1="134" x2="350" y2="134" stroke="#2a5d9f" stroke-width="2"/>
+  <rect x="350" y="112" width="280" height="44" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="10" y="166" width="300" height="44" rx="6" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="20" y="193" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">3. Mengambil dan mengubah ukuran foto</text>
+  <line x1="310" y1="188" x2="350" y2="188" stroke="#2a5d9f" stroke-width="2"/>
+  <rect x="350" y="166" width="280" height="44" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="10" y="220" width="300" height="44" rx="6" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="20" y="247" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">4. Cadangan data penjualan</text>
+  <line x1="310" y1="242" x2="350" y2="242" stroke="#2a5d9f" stroke-width="2"/>
+  <rect x="350" y="220" width="280" height="44" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="10" y="290" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">Satu hal yang kamu korbankan:</text>
+  <rect x="10" y="298" width="620" height="44" rx="6" fill="#f2f2f2" stroke="#b3261e" stroke-width="2" stroke-dasharray="6 4"/>
+</svg>

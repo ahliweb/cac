@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 250" width="620" height="250" role="img" aria-labelledby="t d">
+  <title id="t">Susunan folder paket statistik-kelas</title>
+  <desc id="d">Pohon folder: app berisi main.ts, package.json, dan folder pustaka. Folder pustaka berisi package.json, index.ts, jumlah.ts, rata.ts. Di kanan tiap berkas pustaka ada kotak kosong untuk menulis apa yang bisa diimpor dari luar paket.</desc>
+  <rect width="620" height="250" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <g stroke="#222222" stroke-width="2" fill="none"><path d="M24 30 L24 220"/><path d="M24 70 L44 70"/><path d="M24 100 L44 100"/><path d="M24 130 L44 130"/><path d="M64 150 L64 220"/><path d="M64 165 L84 165"/><path d="M64 190 L84 190"/><path d="M64 215 L84 215"/></g>
+    <text x="10" y="22" font-weight="bold">app/</text>
+    <text x="50" y="75">main.ts</text><text x="50" y="105">package.json</text><text x="50" y="135" font-weight="bold">pustaka/</text>
+    <text x="90" y="170">index.ts</text><text x="90" y="195">jumlah.ts</text><text x="90" y="220">rata.ts</text>
+    <text x="300" y="135" font-weight="bold">Dapat diimpor dari luar paket?</text>
+    <g stroke="#222222" stroke-width="2" fill="#ffffff" stroke-dasharray="5 4">
+      <rect x="300" y="148" width="300" height="24"/><rect x="300" y="173" width="300" height="24"/><rect x="300" y="198" width="300" height="24"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 330" width="640" height="330" role="img" aria-labelledby="t d">
+  <title id="t">Pemeriksaan baris pertama permintaan</title>
+  <desc id="d">Enam kotak pemeriksaan dari atas ke bawah, masing-masing dengan kotak kode jawaban kosong di sebelah kanan.</desc>
+  <rect width="640" height="330" fill="#ffffff"/>
+  <rect x="20" y="12" width="320" height="38" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="32" y="37" font-family="sans-serif" font-size="15" fill="#222222">1. lebih dari 64 karakter?</text>
+  <line x1="342" y1="31" x2="398" y2="31" stroke="#222222" stroke-width="2"/>
+  <rect x="400" y="12" width="200" height="38" fill="none" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="412" y="37" font-family="sans-serif" font-size="15" fill="#222222">kode ________</text>
+  <line x1="180" y1="50" x2="180" y2="64" stroke="#222222" stroke-width="2"/>
+  <text x="190" y="61" font-family="sans-serif" font-size="14" fill="#222222">tidak</text>
+  <rect x="20" y="64" width="320" height="38" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="32" y="89" font-family="sans-serif" font-size="15" fill="#222222">2. tidak punya tiga bagian?</text>
+  <line x1="342" y1="83" x2="398" y2="83" stroke="#222222" stroke-width="2"/>
+  <rect x="400" y="64" width="200" height="38" fill="none" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="412" y="89" font-family="sans-serif" font-size="15" fill="#222222">kode ________</text>
+  <line x1="180" y1="102" x2="180" y2="116" stroke="#222222" stroke-width="2"/>
+  <text x="190" y="113" font-family="sans-serif" font-size="14" fill="#222222">tidak</text>
+  <rect x="20" y="116" width="320" height="38" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="32" y="141" font-family="sans-serif" font-size="15" fill="#222222">3. metode bukan GET?</text>
+  <line x1="342" y1="135" x2="398" y2="135" stroke="#222222" stroke-width="2"/>
+  <rect x="400" y="116" width="200" height="38" fill="none" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="412" y="141" font-family="sans-serif" font-size="15" fill="#222222">kode ________</text>
+  <line x1="180" y1="154" x2="180" y2="168" stroke="#222222" stroke-width="2"/>
+  <text x="190" y="165" font-family="sans-serif" font-size="14" fill="#222222">tidak</text>
+  <rect x="20" y="168" width="320" height="38" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="32" y="193" font-family="sans-serif" font-size="15" fill="#222222">4. jalur /  ?</text>
+  <line x1="342" y1="187" x2="398" y2="187" stroke="#222222" stroke-width="2"/>
+  <rect x="400" y="168" width="200" height="38" fill="none" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="412" y="193" font-family="sans-serif" font-size="15" fill="#222222">kode ________</text>
+  <line x1="180" y1="206" x2="180" y2="220" stroke="#222222" stroke-width="2"/>
+  <text x="190" y="217" font-family="sans-serif" font-size="14" fill="#222222">tidak</text>
+  <rect x="20" y="220" width="320" height="38" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="32" y="245" font-family="sans-serif" font-size="15" fill="#222222">5. jalur /suhu  ?</text>
+  <line x1="342" y1="239" x2="398" y2="239" stroke="#222222" stroke-width="2"/>
+  <rect x="400" y="220" width="200" height="38" fill="none" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="412" y="245" font-family="sans-serif" font-size="15" fill="#222222">kode ________</text>
+  <line x1="180" y1="258" x2="180" y2="272" stroke="#222222" stroke-width="2"/>
+  <text x="190" y="269" font-family="sans-serif" font-size="14" fill="#222222">tidak</text>
+  <rect x="20" y="272" width="320" height="38" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="32" y="297" font-family="sans-serif" font-size="15" fill="#222222">6. jalur lain?</text>
+  <line x1="342" y1="291" x2="398" y2="291" stroke="#222222" stroke-width="2"/>
+  <rect x="400" y="272" width="200" height="38" fill="none" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="412" y="297" font-family="sans-serif" font-size="15" fill="#222222">kode ________</text>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 260" width="520" height="260" role="img" aria-labelledby="t d">
+  <title id="t">Kotak kosong untuk grafik teks pada skala 0 sampai 50</title>
+  <desc id="d">Skala sepuluh kotak dari 0 sampai 50 dan empat baris bernilai 10, 35, 50, dan 4 masing-masing sepuluh kotak kosong untuk digambari tanda #.</desc>
+  <rect width="520" height="260" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker></defs>
+  <text x="120" y="40" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">0</text>
+  <text x="500" y="40" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">50</text>
+  <line x1="130" y1="36" x2="490" y2="36" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+  <text x="20" y="83" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#222222">nilai 10</text>
+  <rect x="110" y="56" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="150" y="56" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="190" y="56" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="230" y="56" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="270" y="56" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="310" y="56" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="350" y="56" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="390" y="56" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="430" y="56" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="470" y="56" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="20" y="131" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#222222">nilai 35</text>
+  <rect x="110" y="104" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="150" y="104" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="190" y="104" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="230" y="104" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="270" y="104" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="310" y="104" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="350" y="104" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="390" y="104" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="430" y="104" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="470" y="104" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="20" y="179" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#222222">nilai 50</text>
+  <rect x="110" y="152" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="150" y="152" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="190" y="152" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="230" y="152" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="270" y="152" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="310" y="152" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="350" y="152" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="390" y="152" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="430" y="152" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="470" y="152" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="20" y="227" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#222222">nilai 4</text>
+  <rect x="110" y="200" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="150" y="200" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="190" y="200" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="230" y="200" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="270" y="200" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="310" y="200" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="350" y="200" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="390" y="200" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="430" y="200" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="470" y="200" width="40" height="36" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="20" y="262" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">Beri tanda # pada kotak yang terisi, mulai dari kiri.</text>
+</svg>

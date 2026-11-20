@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 250" width="660" height="250" role="img" aria-labelledby="t d">
+  <title id="t">Tabel penggolongan fungsi dan tabel oracle</title>
+  <desc id="d">Dua tabel dengan sel kosong. Kiri: fungsi dua bit 0110, 1111, dan 1000 dengan kolom banyak nilai 1 dan golongan. Kanan: oracle untuk f(0)=1 dan f(1)=0, memetakan masukan 00, 01, 10, 11 ke keluaran yang harus diisi.</desc>
+  <rect width="660" height="250" fill="#ffffff"/>
+  <text x="160" y="24" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Golongkan fungsi</text>
+  <rect x="10" y="36" width="90" height="40" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="55.0" y="61.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">f(00..11)</text>
+  <rect x="100" y="36" width="70" height="40" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="135.0" y="61.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">nilai 1</text>
+  <rect x="170" y="36" width="110" height="40" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="225.0" y="61.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">golongan</text>
+  <rect x="10" y="76" width="90" height="40" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="55.0" y="101.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">0110</text>
+  <rect x="104" y="80" width="62" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="100" y="76" width="70" height="40" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="174" y="80" width="102" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="170" y="76" width="110" height="40" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="10" y="116" width="90" height="40" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="55.0" y="141.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1111</text>
+  <rect x="104" y="120" width="62" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="100" y="116" width="70" height="40" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="174" y="120" width="102" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="170" y="116" width="110" height="40" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="10" y="156" width="90" height="40" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="55.0" y="181.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1000</text>
+  <rect x="104" y="160" width="62" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="100" y="156" width="70" height="40" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="174" y="160" width="102" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="170" y="156" width="110" height="40" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="500" y="24" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Oracle f(0)=1, f(1)=0</text>
+  <rect x="370" y="36" width="140" height="40" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="440.0" y="61.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">masukan |x y&gt;</text>
+  <rect x="510" y="36" width="140" height="40" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="580.0" y="61.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">keluaran</text>
+  <rect x="370" y="76" width="140" height="40" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="440.0" y="101.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">|00&gt;</text>
+  <rect x="514" y="80" width="132" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="510" y="76" width="140" height="40" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="370" y="116" width="140" height="40" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="440.0" y="141.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">|01&gt;</text>
+  <rect x="514" y="120" width="132" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="510" y="116" width="140" height="40" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="370" y="156" width="140" height="40" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="440.0" y="181.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">|10&gt;</text>
+  <rect x="514" y="160" width="132" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="510" y="156" width="140" height="40" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="370" y="196" width="140" height="40" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="440.0" y="221.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">|11&gt;</text>
+  <rect x="514" y="200" width="132" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="510" y="196" width="140" height="40" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="10" y="236" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">Golongan: konstan, seimbang, atau bukan keduanya.</text>
+</svg>

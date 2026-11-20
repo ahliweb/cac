@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400" role="img" aria-labelledby="t d">
+  <title id="t">Dokumen rancangan dan tabel ukuran data uji</title>
+  <desc id="d">Atas: lima baris berlabel Data, Model, Aturan pilih, Evaluasi, dan Bila gagal dengan kotak isian kosong. Bawah: tabel n 200, 600, 1000 dengan kolom uji dan dua kolom kosong, terlambat di uji dan geser recall per satu baris.</desc>
+  <rect width="660" height="400" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <text x="15" y="22" font-weight="bold">Dokumen rancangan Pustaka Contoh</text>
+    <rect x="15" y="32" width="630" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+    <text x="25" y="53" font-weight="bold">Data</text>
+    <rect x="15" y="64" width="630" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+    <text x="25" y="85" font-weight="bold">Model</text>
+    <rect x="15" y="96" width="630" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+    <text x="25" y="117" font-weight="bold">Aturan pilih</text>
+    <rect x="15" y="128" width="630" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+    <text x="25" y="149" font-weight="bold">Evaluasi</text>
+    <rect x="15" y="160" width="630" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+    <text x="25" y="181" font-weight="bold">Bila gagal</text>
+    <line x1="140" y1="32" x2="140" y2="192" stroke="#222222" stroke-width="1.5"/>
+    <text x="15" y="228" font-weight="bold">Ukuran data uji (25 persen dari n)</text>
+    <rect x="15" y="238" width="630" height="30" fill="#2a5d9f"/>
+    <text x="65" y="258" fill="#ffffff" text-anchor="middle">n</text>
+    <text x="195" y="258" fill="#ffffff" text-anchor="middle">baris uji</text>
+    <text x="360" y="258" fill="#ffffff" text-anchor="middle">terlambat di uji</text>
+    <text x="545" y="258" fill="#ffffff" text-anchor="middle">geser recall per 1 baris</text>
+    <rect x="15" y="268" width="630" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+    <rect x="15" y="302" width="630" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+    <rect x="15" y="336" width="630" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+    <text x="65" y="291" text-anchor="middle">200</text>
+    <text x="65" y="325" text-anchor="middle">600</text>
+    <text x="65" y="359" text-anchor="middle">1000</text>
+    <text x="195" y="291" text-anchor="middle">50</text>
+    <text x="195" y="325" text-anchor="middle">150</text>
+    <text x="195" y="359" text-anchor="middle">250</text>
+    <line x1="110" y1="238" x2="110" y2="370" stroke="#222222" stroke-width="1.5"/>
+    <line x1="280" y1="238" x2="280" y2="370" stroke="#222222" stroke-width="1.5"/>
+    <line x1="440" y1="238" x2="440" y2="370" stroke="#222222" stroke-width="1.5"/>
+    <text x="330" y="391" font-size="14">isi dua kolom terakhir dengan pensil</text>
+  </g>
+</svg>

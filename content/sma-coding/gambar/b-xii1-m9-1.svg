@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 330" width="680" height="330" role="img" aria-labelledby="t d">
+  <title id="t">Tabel gerbang mutu empat langkah dengan kolom hasil kosong</title>
+  <desc id="d">Tabel empat langkah gerbang berurutan: tipe, uji unit, bangun, dan uji hasil build. Kolom hasil dan kolom dijalankan atau tidak kosong untuk diisi, serta satu baris di bawahnya untuk kode keluar.</desc>
+  <rect width="680" height="330" fill="#ffffff"/>
+  <rect x="15" y="30" width="220" height="46" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="125.0" y="58.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">langkah</text>
+  <rect x="235" y="30" width="220" height="46" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="345.0" y="58.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">dijalankan?</text>
+  <rect x="455" y="30" width="220" height="46" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="565.0" y="58.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">hasil</text>
+  <rect x="15" y="76" width="220" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="125.0" y="104.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">1. tipe</text>
+  <rect x="235" y="76" width="220" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="455" y="76" width="220" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="122" width="220" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="125.0" y="150.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">2. uji unit</text>
+  <rect x="235" y="122" width="220" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="455" y="122" width="220" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="168" width="220" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="125.0" y="196.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">3. bangun</text>
+  <rect x="235" y="168" width="220" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="455" y="168" width="220" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="214" width="220" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="125.0" y="242.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">4. uji hasil build</text>
+  <rect x="235" y="214" width="220" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="455" y="214" width="220" height="46" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="15" y="305" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#222222">Kode keluar rangkaian:</text>
+  <rect x="210" y="285" width="140" height="30" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+</svg>

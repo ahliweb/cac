@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" width="640" height="300" role="img" aria-labelledby="t d">
+  <title id="t">Lima kegiatan pada garis waktu</title>
+  <desc id="d">Garis waktu skala 0 sampai 9 dengan lima batang kegiatan (3, 5), (1, 4), (5, 9), (0, 2), dan (6, 8). Tiap batang punya kotak kosong di ujung kanan untuk menandai terpilih.</desc>
+  <rect width="640" height="300" fill="#ffffff"/>
+  <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker></defs>
+  <line x1="70" y1="28" x2="70" y2="262" stroke="#222222" stroke-width="1" stroke-dasharray="6 4"/>
+  <text x="70" y="20" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">0</text>
+  <line x1="118" y1="28" x2="118" y2="262" stroke="#222222" stroke-width="1" stroke-dasharray="6 4"/>
+  <text x="118" y="20" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1</text>
+  <line x1="166" y1="28" x2="166" y2="262" stroke="#222222" stroke-width="1" stroke-dasharray="6 4"/>
+  <text x="166" y="20" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">2</text>
+  <line x1="214" y1="28" x2="214" y2="262" stroke="#222222" stroke-width="1" stroke-dasharray="6 4"/>
+  <text x="214" y="20" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">3</text>
+  <line x1="262" y1="28" x2="262" y2="262" stroke="#222222" stroke-width="1" stroke-dasharray="6 4"/>
+  <text x="262" y="20" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">4</text>
+  <line x1="310" y1="28" x2="310" y2="262" stroke="#222222" stroke-width="1" stroke-dasharray="6 4"/>
+  <text x="310" y="20" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">5</text>
+  <line x1="358" y1="28" x2="358" y2="262" stroke="#222222" stroke-width="1" stroke-dasharray="6 4"/>
+  <text x="358" y="20" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">6</text>
+  <line x1="406" y1="28" x2="406" y2="262" stroke="#222222" stroke-width="1" stroke-dasharray="6 4"/>
+  <text x="406" y="20" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">7</text>
+  <line x1="454" y1="28" x2="454" y2="262" stroke="#222222" stroke-width="1" stroke-dasharray="6 4"/>
+  <text x="454" y="20" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">8</text>
+  <line x1="502" y1="28" x2="502" y2="262" stroke="#222222" stroke-width="1" stroke-dasharray="6 4"/>
+  <text x="502" y="20" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">9</text>
+  <text x="8" y="58" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">(3, 5)</text>
+  <rect x="214" y="36" width="96" height="28" rx="4" fill="#ffffff" stroke="#2a5d9f" stroke-width="2.5"/>
+  <text x="262.0" y="54.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">3 - 5</text>
+  <rect x="540" y="36" width="60" height="28" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="8" y="104" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">(1, 4)</text>
+  <rect x="118" y="82" width="144" height="28" rx="4" fill="#ffffff" stroke="#2a5d9f" stroke-width="2.5"/>
+  <text x="190.0" y="100.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1 - 4</text>
+  <rect x="540" y="82" width="60" height="28" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="8" y="150" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">(5, 9)</text>
+  <rect x="310" y="128" width="192" height="28" rx="4" fill="#ffffff" stroke="#2a5d9f" stroke-width="2.5"/>
+  <text x="406.0" y="146.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">5 - 9</text>
+  <rect x="540" y="128" width="60" height="28" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="8" y="196" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">(0, 2)</text>
+  <rect x="70" y="174" width="96" height="28" rx="4" fill="#ffffff" stroke="#2a5d9f" stroke-width="2.5"/>
+  <text x="118.0" y="192.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">0 - 2</text>
+  <rect x="540" y="174" width="60" height="28" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="8" y="242" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">(6, 8)</text>
+  <rect x="358" y="220" width="96" height="28" rx="4" fill="#ffffff" stroke="#2a5d9f" stroke-width="2.5"/>
+  <text x="406.0" y="238.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">6 - 8</text>
+  <rect x="540" y="220" width="60" height="28" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="570" y="24" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold">terpilih?</text>
+  <text x="8" y="290" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">Tandai terpilih dengan V, tidak terpilih dengan X.</text>
+</svg>

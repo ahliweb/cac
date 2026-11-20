@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 670 260" width="670" height="260" role="img" aria-labelledby="t d">
+  <title id="t">Skor lima lipatan untuk model A dan B</title>
+  <desc id="d">Tabel skor lima lipatan model A dan B dengan kolom rata-rata dan terendah yang kosong dan satu kotak kosong untuk kesimpulan.</desc>
+  <rect width="670" height="260" fill="#ffffff"/>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker></defs>
+  <rect x="10" y="10" width="70" height="36" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="45" y="33" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">model</text>
+  <rect x="80" y="10" width="80" height="36" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="120" y="33" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">lipatan 1</text>
+  <rect x="160" y="10" width="80" height="36" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="200" y="33" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">lipatan 2</text>
+  <rect x="240" y="10" width="80" height="36" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="280" y="33" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">lipatan 3</text>
+  <rect x="320" y="10" width="80" height="36" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="360" y="33" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">lipatan 4</text>
+  <rect x="400" y="10" width="80" height="36" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="440" y="33" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">lipatan 5</text>
+  <rect x="480" y="10" width="90" height="36" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="525" y="33" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">rata-rata</text>
+  <rect x="570" y="10" width="90" height="36" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="615" y="33" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">terendah</text>
+  <rect x="10" y="46" width="70" height="44" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="45" y="73" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">A</text>
+  <rect x="80" y="46" width="80" height="44" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="120" y="73" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">0,8</text>
+  <rect x="160" y="46" width="80" height="44" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="200" y="73" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">0,9</text>
+  <rect x="240" y="46" width="80" height="44" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="280" y="73" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">0,7</text>
+  <rect x="320" y="46" width="80" height="44" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="360" y="73" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">0,8</text>
+  <rect x="400" y="46" width="80" height="44" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="440" y="73" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">0,8</text>
+  <rect x="480" y="46" width="90" height="44" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="570" y="46" width="90" height="44" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="10" y="90" width="70" height="44" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="45" y="117" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">B</text>
+  <rect x="80" y="90" width="80" height="44" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="120" y="117" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">0,9</text>
+  <rect x="160" y="90" width="80" height="44" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="200" y="117" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">0,8</text>
+  <rect x="240" y="90" width="80" height="44" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="280" y="117" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">0,8</text>
+  <rect x="320" y="90" width="80" height="44" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="360" y="117" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">0,8</text>
+  <rect x="400" y="90" width="80" height="44" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="440" y="117" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">0,8</text>
+  <rect x="480" y="90" width="90" height="44" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="570" y="90" width="90" height="44" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="10" y="164" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#222222">Apakah selisih A dan B cukup untuk menyatakan satu model lebih baik?</text>
+  <rect x="10" y="176" width="650" height="70" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+</svg>

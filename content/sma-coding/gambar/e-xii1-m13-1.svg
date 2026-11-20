@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" width="640" height="420" role="img" aria-labelledby="t d">
+  <title id="t">Kerangka rencana proyek satu halaman dengan pilihan topik</title>
+  <desc id="d">Delapan baris berlabel dengan kotak kosong: topik A, B, atau C, pertanyaan, prediksi angka, cara, pemeriksaan, kriteria selesai, peran, dan batas klaim. Panah di kiri menunjukkan urutan dari pertanyaan sampai kriteria selesai.</desc>
+  <rect width="640" height="420" fill="#ffffff"/>
+  <defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#222222"/></marker></defs>
+  <text x="40" y="39" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">Topik (A/B/C)</text>
+  <rect x="220" y="18" width="400" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="40" y="89" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">1 Pertanyaan</text>
+  <rect x="220" y="68" width="400" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <line x1="22" y1="98" x2="22" y2="126" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+  <text x="40" y="139" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">2 Prediksi (angka)</text>
+  <rect x="220" y="118" width="400" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <line x1="22" y1="148" x2="22" y2="176" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+  <text x="40" y="189" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">3 Cara</text>
+  <rect x="220" y="168" width="400" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <line x1="22" y1="198" x2="22" y2="226" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+  <text x="40" y="239" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">4 Pemeriksaan</text>
+  <rect x="220" y="218" width="400" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <line x1="22" y1="248" x2="22" y2="276" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+  <text x="40" y="289" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">5 Kriteria selesai</text>
+  <rect x="220" y="268" width="400" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="40" y="339" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">6 Peran</text>
+  <rect x="220" y="318" width="400" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="40" y="389" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">7 Batas klaim</text>
+  <rect x="220" y="368" width="400" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+</svg>

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 430" width="660" height="430" role="img" aria-labelledby="t d">
+  <title id="t">Sepuluh permintaan ruang latihan pada garis waktu 0 sampai 12</title>
+  <desc id="d">Garis waktu 0 sampai 12 dengan sepuluh batang untuk permintaan 0-3, 2-4, 3-6, 5-8, 4-5, 7-9, 8-10, 9-12, 6-7, dan 1-2, masing-masing dengan kotak kosong di kanan untuk menandai terpilih atau tidak.</desc>
+  <rect width="660" height="430" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker></defs>
+  <text x="20" y="22" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#222222">permintaan</text>
+  <text x="584" y="22" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#222222">pilih?</text>
+  <text x="20" y="53" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">1: 0-3</text>
+  <rect x="90" y="38" width="120" height="22" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <rect x="584" y="36" width="40" height="26" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="20" y="85" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">2: 2-4</text>
+  <rect x="170" y="70" width="80" height="22" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <rect x="584" y="68" width="40" height="26" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="20" y="117" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">3: 3-6</text>
+  <rect x="210" y="102" width="120" height="22" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <rect x="584" y="100" width="40" height="26" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="20" y="149" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">4: 5-8</text>
+  <rect x="290" y="134" width="120" height="22" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <rect x="584" y="132" width="40" height="26" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="20" y="181" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">5: 4-5</text>
+  <rect x="250" y="166" width="40" height="22" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <rect x="584" y="164" width="40" height="26" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="20" y="213" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">6: 7-9</text>
+  <rect x="370" y="198" width="80" height="22" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <rect x="584" y="196" width="40" height="26" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="20" y="245" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">7: 8-10</text>
+  <rect x="410" y="230" width="80" height="22" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <rect x="584" y="228" width="40" height="26" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="20" y="277" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">8: 9-12</text>
+  <rect x="450" y="262" width="120" height="22" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <rect x="584" y="260" width="40" height="26" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="20" y="309" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">9: 6-7</text>
+  <rect x="330" y="294" width="40" height="22" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <rect x="584" y="292" width="40" height="26" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="20" y="341" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">10: 1-2</text>
+  <rect x="130" y="326" width="40" height="22" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <rect x="584" y="324" width="40" height="26" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="90" y1="362" x2="570" y2="362" stroke="#222222" stroke-width="2"/>
+  <line x1="90" y1="357" x2="90" y2="367" stroke="#222222" stroke-width="2"/>
+  <text x="90" y="384" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">0</text>
+  <line x1="130" y1="357" x2="130" y2="367" stroke="#222222" stroke-width="2"/>
+  <text x="130" y="384" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">1</text>
+  <line x1="170" y1="357" x2="170" y2="367" stroke="#222222" stroke-width="2"/>
+  <text x="170" y="384" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">2</text>
+  <line x1="210" y1="357" x2="210" y2="367" stroke="#222222" stroke-width="2"/>
+  <text x="210" y="384" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">3</text>
+  <line x1="250" y1="357" x2="250" y2="367" stroke="#222222" stroke-width="2"/>
+  <text x="250" y="384" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">4</text>
+  <line x1="290" y1="357" x2="290" y2="367" stroke="#222222" stroke-width="2"/>
+  <text x="290" y="384" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">5</text>
+  <line x1="330" y1="357" x2="330" y2="367" stroke="#222222" stroke-width="2"/>
+  <text x="330" y="384" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">6</text>
+  <line x1="370" y1="357" x2="370" y2="367" stroke="#222222" stroke-width="2"/>
+  <text x="370" y="384" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">7</text>
+  <line x1="410" y1="357" x2="410" y2="367" stroke="#222222" stroke-width="2"/>
+  <text x="410" y="384" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">8</text>
+  <line x1="450" y1="357" x2="450" y2="367" stroke="#222222" stroke-width="2"/>
+  <text x="450" y="384" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">9</text>
+  <line x1="490" y1="357" x2="490" y2="367" stroke="#222222" stroke-width="2"/>
+  <text x="490" y="384" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">10</text>
+  <line x1="530" y1="357" x2="530" y2="367" stroke="#222222" stroke-width="2"/>
+  <text x="530" y="384" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">11</text>
+  <line x1="570" y1="357" x2="570" y2="367" stroke="#222222" stroke-width="2"/>
+  <text x="570" y="384" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">12</text>
+  <text x="20" y="410" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">Tulis ya di kotak permintaan yang dipilih greedy.</text>
+</svg>

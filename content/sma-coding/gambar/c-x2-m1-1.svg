@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 657 298" width="657" height="298" role="img" aria-labelledby="t d">
+  <title id="t">Tabel kasus galat dengan jenis dan perubahan kosong</title>
+  <desc id="d">Tabel lima kasus galat dari a sampai e: pesan expected titik koma sebelum kurung, LED menyala saat tombol dilepas, LED kaki panjang disambung ke GND, program pakai pin 5 sedangkan rangkaian pin 4, dan nilai sensor melompat acak. Kolom jenis galat dan kolom yang diubah kosong.</desc>
+  <rect width="657" height="298" fill="#ffffff"/>
+  <text x="290" y="30" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Golongkan galat: kompilasi, logika, atau rangkaian</text>
+  <rect x="20" y="50" width="327" height="38" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="183.5" y="74.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">Kasus</text>
+  <rect x="347" y="50" width="140" height="38" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="417.0" y="74.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">Jenis galat</text>
+  <rect x="487" y="50" width="150" height="38" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="562.0" y="74.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">Yang diubah</text>
+  <rect x="20" y="88" width="327" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="183.5" y="112.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">(a) pesan: expected ';' before '}'</text>
+  <rect x="347" y="88" width="140" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="487" y="88" width="150" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="126" width="327" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="183.5" y="150.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">(b) LED menyala saat tombol dilepas</text>
+  <rect x="347" y="126" width="140" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="487" y="126" width="150" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="164" width="327" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="183.5" y="188.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">(c) LED kaki panjang disambung ke GND</text>
+  <rect x="347" y="164" width="140" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="487" y="164" width="150" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="202" width="327" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="183.5" y="226.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">(d) program pakai pin 5, rangkaian pin 4</text>
+  <rect x="347" y="202" width="140" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="487" y="202" width="150" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="240" width="327" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="183.5" y="264.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">(e) nilai sensor melompat acak</text>
+  <rect x="347" y="240" width="140" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="487" y="240" width="150" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+</svg>

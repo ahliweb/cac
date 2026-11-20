@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 520" width="700" height="520" role="img" aria-labelledby="t d">
+  <title id="t">Dua tabel isian: empat baris pemindai rahasia dan tiga kasus hukum</title>
+  <desc id="d">Tabel pertama berjudul Telusuri: empat baris kode dengan kolom hasil adaRahasia kosong. Tabel kedua berjudul Hukum dan privasi: tiga kasus a sampai c dengan kolom pokok kosong.</desc>
+  <rect width="700" height="520" fill="#ffffff"/>
+  <text x="15" y="37" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#222222">Telusuri</text>
+  <rect x="15" y="45" width="470" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="250.0" y="72.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">baris</text>
+  <rect x="485" y="45" width="200" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="585.0" y="72.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">adaRahasia?</text>
+  <rect x="15" y="89" width="470" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="250.0" y="116.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">const KUNCI = "KUNCI_PALSU_CONTOH_1";</text>
+  <rect x="485" y="89" width="200" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="133" width="470" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="250.0" y="160.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">// KUNCI dibaca dari lingkungan</text>
+  <rect x="485" y="133" width="200" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="177" width="470" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="250.0" y="204.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">KUNCI_ANALITIK=isi-sendiri</text>
+  <rect x="485" y="177" width="200" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="221" width="470" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="250.0" y="248.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">SANDI_ADMIN: KUNCI_PALSU_CONTOH_2</text>
+  <rect x="485" y="221" width="200" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="15" y="312" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#222222">Hukum dan privasi</text>
+  <rect x="15" y="320" width="470" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="250.0" y="347.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">kasus</text>
+  <rect x="485" y="320" width="200" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="585.0" y="347.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">pokok atau tidak ada</text>
+  <rect x="15" y="364" width="470" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="250.0" y="391.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">(a) murid memindai server sekolah tanpa izin</text>
+  <rect x="485" y="364" width="200" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="408" width="470" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="250.0" y="435.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">(b) situs meminta nama dan telepon tanpa tujuan</text>
+  <rect x="485" y="408" width="200" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="452" width="470" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="250.0" y="479.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">(c) menguji situs sendiri di localhost</text>
+  <rect x="485" y="452" width="200" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+</svg>

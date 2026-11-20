@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 470" width="560" height="470" role="img" aria-labelledby="t d">
+  <title id="t">Diagram alir terbesar dari tiga dengan kotak kosong</title>
+  <desc id="d">Diagram alir: mulai, terbesar diisi nilai awal, dua pertanyaan q lebih besar dari terbesar dan r lebih besar dari terbesar masing-masing dengan cabang ya yang mengisi terbesar, lalu cetak terbesar dan selesai. Tiga kotak langkah dikosongkan untuk diisi.</desc>
+  <rect width="560" height="470" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker></defs>
+  <rect x="110" y="10" width="120" height="36" rx="18" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="170" y="34" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#222222">mulai</text>
+  <line x1="170" y1="46" x2="170" y2="66" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="70" y="66" width="200" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="78" y="91" font-family="sans-serif" font-size="15" text-anchor="start" fill="#222222">terbesar &lt;-</text>
+  <rect x="172" y="74" width="86" height="24" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="170" y1="106" x2="170" y2="124" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+  <polygon points="170,124 280,158 170,192 60,158" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="170" y="163" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">q &gt; terbesar?</text>
+  <line x1="280" y1="158" x2="330" y2="158" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+  <text x="290" y="150" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b7a3d">ya</text>
+  <rect x="330" y="138" width="200" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="338" y="163" font-family="sans-serif" font-size="15" text-anchor="start" fill="#222222">terbesar &lt;-</text>
+  <rect x="430" y="146" width="90" height="24" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="178" y="212" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#b3261e">tidak</text>
+  <line x1="170" y1="192" x2="170" y2="226" stroke="#222222" stroke-width="2"/>
+  <path d="M430,178 L430,222 L170,222" fill="none" stroke="#222222" stroke-width="2"/>
+  <line x1="170" y1="226" x2="170" y2="244" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+  <polygon points="170,244 280,278 170,312 60,278" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="170" y="283" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">r &gt; terbesar?</text>
+  <line x1="280" y1="278" x2="330" y2="278" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+  <text x="290" y="270" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#1b7a3d">ya</text>
+  <rect x="330" y="258" width="200" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="338" y="283" font-family="sans-serif" font-size="15" text-anchor="start" fill="#222222">terbesar &lt;-</text>
+  <rect x="430" y="266" width="90" height="24" rx="0" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="178" y="332" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#b3261e">tidak</text>
+  <line x1="170" y1="312" x2="170" y2="346" stroke="#222222" stroke-width="2"/>
+  <path d="M430,298 L430,342 L170,342" fill="none" stroke="#222222" stroke-width="2"/>
+  <line x1="170" y1="346" x2="170" y2="364" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="80" y="364" width="180" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="170" y="389" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">cetak terbesar</text>
+  <line x1="170" y1="404" x2="170" y2="422" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="110" y="422" width="120" height="36" rx="18" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="170" y="446" font-family="sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#222222">selesai</text>
+</svg>

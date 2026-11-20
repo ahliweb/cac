@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" width="640" height="300" role="img" aria-labelledby="t d">
+<title id="t">Tabel ZZ untuk satu dan tiga CNOT serta ekstrapolasi ke nol derau</title>
+<desc id="d">Tabel dengan baris faktor derau m sama dengan 1, 3, dan 0 (ekstrapolasi). Kolom: rumus ZZ(m) sama dengan satu dikurangi dua p, dipangkatkan m, dan nilai ZZ. Semua nilai kosong. Di bawahnya isian selisih dari nilai ideal 1.</desc>
+
+<rect width="640" height="300" fill="#ffffff"/>
+<text x="20" y="26" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">p = 0,03. Isi nilai ZZ, lalu ekstrapolasikan garis lurus ke m = 0.</text>
+<rect x="20" y="40" width="120" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="80.0" y="67.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold">m</text>
+<rect x="140" y="40" width="260" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="270.0" y="67.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold">ZZ(m) = (1 - 2p)^m</text>
+<rect x="400" y="40" width="200" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="500.0" y="67.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold">nilai ZZ</text>
+<rect x="20" y="84" width="120" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="80.0" y="111.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1</text>
+<rect x="140" y="84" width="260" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="400" y="84" width="200" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="20" y="128" width="120" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="80.0" y="155.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">3</text>
+<rect x="140" y="128" width="260" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="400" y="128" width="200" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="20" y="172" width="120" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="80.0" y="199.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">0 (ekstrapolasi)</text>
+<rect x="140" y="172" width="260" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="400" y="172" width="200" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="20" y="260" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">selisih dari nilai ideal 1 = ______</text>
+</svg>

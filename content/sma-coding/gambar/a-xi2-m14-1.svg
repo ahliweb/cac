@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300" role="img" aria-labelledby="t d">
+  <title id="t">Labirin tiga kali tiga dan tabel jarak</title>
+  <desc id="d">Grid tiga baris dan tiga kolom: baris 0 S titik dinding; baris 1 titik titik dinding; baris 2 titik T titik. Di kanan tabel jarak tiga kali tiga kosong. Kotak kosong untuk banyak sel yang diproses.</desc>
+  <rect width="600" height="300" fill="#ffffff"/>
+  <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker></defs>
+  <text x="15" y="24" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">labirin</text>
+  <rect x="15" y="36" width="56" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="43.0" y="70.3" font-family="sans-serif" font-size="18" fill="#222222" text-anchor="middle" font-weight="bold">S</text>
+  <rect x="71" y="36" width="56" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="99.0" y="70.3" font-family="sans-serif" font-size="18" fill="#222222" text-anchor="middle">.</text>
+  <rect x="127" y="36" width="56" height="56" rx="0" fill="#222222" stroke="#222222" stroke-width="1.5"/>
+  <text x="155.0" y="70.0" font-family="sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">#</text>
+  <rect x="15" y="92" width="56" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="43.0" y="126.3" font-family="sans-serif" font-size="18" fill="#222222" text-anchor="middle">.</text>
+  <rect x="71" y="92" width="56" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="99.0" y="126.3" font-family="sans-serif" font-size="18" fill="#222222" text-anchor="middle">.</text>
+  <rect x="127" y="92" width="56" height="56" rx="0" fill="#222222" stroke="#222222" stroke-width="1.5"/>
+  <text x="155.0" y="126.0" font-family="sans-serif" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold">#</text>
+  <rect x="15" y="148" width="56" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="43.0" y="182.3" font-family="sans-serif" font-size="18" fill="#222222" text-anchor="middle">.</text>
+  <rect x="71" y="148" width="56" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="99.0" y="182.3" font-family="sans-serif" font-size="18" fill="#222222" text-anchor="middle" font-weight="bold">T</text>
+  <rect x="127" y="148" width="56" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="155.0" y="182.3" font-family="sans-serif" font-size="18" fill="#222222" text-anchor="middle">.</text>
+  <text x="260" y="24" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">tabel jarak</text>
+  <rect x="260" y="36" width="56" height="56" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="316" y="36" width="56" height="56" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="372" y="36" width="56" height="56" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="260" y="92" width="56" height="56" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="316" y="92" width="56" height="56" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="372" y="92" width="56" height="56" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="260" y="148" width="56" height="56" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="316" y="148" width="56" height="56" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="372" y="148" width="56" height="56" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="15" y="255" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">sel yang diproses:</text>
+  <rect x="160" y="235" width="90" height="30" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+</svg>

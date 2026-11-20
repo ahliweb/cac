@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 290" width="700" height="290" role="img" aria-labelledby="t d">
+  <title id="t">Enam pasangan amplitudo untuk satu qubit</title>
+  <desc id="d">Tabel enam pasangan amplitudo a sampai f. Kolom jumlah modulus kuadrat kosong, dan kotak sah dan tidak kosong untuk dicentang.</desc>
+  <rect width="700" height="290" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <rect x="15" y="10" width="650" height="34" fill="#2a5d9f"/>
+    <text x="30" y="32" fill="#ffffff">pasangan (a ; b)</text>
+    <text x="440" y="32" fill="#ffffff" text-anchor="middle">jumlah |a|^2 + |b|^2</text>
+    <text x="590" y="32" fill="#ffffff" text-anchor="middle">keadaan sah?</text>
+    <rect x="15" y="44" width="650" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+    <text x="30" y="69" font-weight="bold">a</text><text x="70" y="69">(0,6 ; 0,8)</text>
+    <rect x="395" y="51" width="90" height="24" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+    <rect x="525" y="53" width="20" height="20" fill="#ffffff" stroke="#222222" stroke-width="2"/><text x="551" y="69">sah</text>
+    <rect x="595" y="53" width="20" height="20" fill="#ffffff" stroke="#222222" stroke-width="2"/><text x="621" y="69" font-size="14">tidak</text>
+    <rect x="15" y="82" width="650" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+    <text x="30" y="107" font-weight="bold">b</text><text x="70" y="107">(0,5 ; 0,5)</text>
+    <rect x="395" y="89" width="90" height="24" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+    <rect x="525" y="91" width="20" height="20" fill="#ffffff" stroke="#222222" stroke-width="2"/><text x="551" y="107">sah</text>
+    <rect x="595" y="91" width="20" height="20" fill="#ffffff" stroke="#222222" stroke-width="2"/><text x="621" y="107" font-size="14">tidak</text>
+    <rect x="15" y="120" width="650" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+    <text x="30" y="145" font-weight="bold">c</text><text x="70" y="145">(1 ; 1)</text>
+    <rect x="395" y="127" width="90" height="24" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+    <rect x="525" y="129" width="20" height="20" fill="#ffffff" stroke="#222222" stroke-width="2"/><text x="551" y="145">sah</text>
+    <rect x="595" y="129" width="20" height="20" fill="#ffffff" stroke="#222222" stroke-width="2"/><text x="621" y="145" font-size="14">tidak</text>
+    <rect x="15" y="158" width="650" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+    <text x="30" y="183" font-weight="bold">d</text><text x="70" y="183">(0,6 ; -0,8)</text>
+    <rect x="395" y="165" width="90" height="24" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+    <rect x="525" y="167" width="20" height="20" fill="#ffffff" stroke="#222222" stroke-width="2"/><text x="551" y="183">sah</text>
+    <rect x="595" y="167" width="20" height="20" fill="#ffffff" stroke="#222222" stroke-width="2"/><text x="621" y="183" font-size="14">tidak</text>
+    <rect x="15" y="196" width="650" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+    <text x="30" y="221" font-weight="bold">e</text><text x="70" y="221">(i/akar2 ; 1/akar2)</text>
+    <rect x="395" y="203" width="90" height="24" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+    <rect x="525" y="205" width="20" height="20" fill="#ffffff" stroke="#222222" stroke-width="2"/><text x="551" y="221">sah</text>
+    <rect x="595" y="205" width="20" height="20" fill="#ffffff" stroke="#222222" stroke-width="2"/><text x="621" y="221" font-size="14">tidak</text>
+    <rect x="15" y="234" width="650" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+    <text x="30" y="259" font-weight="bold">f</text><text x="70" y="259">(0,6 ; 0,7)</text>
+    <rect x="395" y="241" width="90" height="24" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+    <rect x="525" y="243" width="20" height="20" fill="#ffffff" stroke="#222222" stroke-width="2"/><text x="551" y="259">sah</text>
+    <rect x="595" y="243" width="20" height="20" fill="#ffffff" stroke="#222222" stroke-width="2"/><text x="621" y="259" font-size="14">tidak</text>
+  </g>
+</svg>

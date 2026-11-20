@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" width="720" height="300" role="img" aria-labelledby="t d">
+<title id="t">Tabel lima baris kode dengan kolom linter dan pemformat yang kosong</title>
+<desc id="d">Tabel dengan kolom baris, isi baris kode, linter memprotes, dan pemformat mengubah. Lima baris program prediksi tertulis; dua kolom terakhir kosong untuk diisi pelajar.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#222222"/></marker></defs>
+<rect width="720" height="300" fill="#ffffff"/>
+<text x="20" y="26" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222">Tandai baris yang diprotes linter atau diubah pemformat</text>
+<rect x="20" y="40" width="44" height="38" fill="#dde7f3" stroke="#222222" stroke-width="1.5"/>
+<text x="42.0" y="64" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">baris</text>
+<rect x="64" y="40" width="440" height="38" fill="#dde7f3" stroke="#222222" stroke-width="1.5"/>
+<text x="284.0" y="64" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">isi</text>
+<rect x="504" y="40" width="95" height="38" fill="#dde7f3" stroke="#222222" stroke-width="1.5"/>
+<text x="551.5" y="64" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">linter?</text>
+<rect x="599" y="40" width="105" height="38" fill="#dde7f3" stroke="#222222" stroke-width="1.5"/>
+<text x="651.5" y="64" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">pemformat?</text>
+<rect x="20" y="78" width="44" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="42.0" y="102" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1</text>
+<rect x="64" y="78" width="440" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="70" y="102" font-family="monospace" font-size="14" fill="#222222">function jumlah(a:number,b:number){ return a+b }</text>
+<rect x="504" y="78" width="95" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="599" y="78" width="105" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="20" y="116" width="44" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="42.0" y="140" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">2</text>
+<rect x="64" y="116" width="440" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="70" y="140" font-family="monospace" font-size="14" fill="#222222">const sisa = 10</text>
+<rect x="504" y="116" width="95" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="599" y="116" width="105" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="20" y="154" width="44" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="42.0" y="178" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">3</text>
+<rect x="64" y="154" width="440" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="70" y="178" font-family="monospace" font-size="14" fill="#222222">let total = 0</text>
+<rect x="504" y="154" width="95" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="599" y="154" width="105" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="20" y="192" width="44" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="42.0" y="216" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">4</text>
+<rect x="64" y="192" width="440" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="70" y="216" font-family="monospace" font-size="14" fill="#222222">for (let i=0;i&lt;3;i++) { total = jumlah(total, i) }</text>
+<rect x="504" y="192" width="95" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="599" y="192" width="105" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="20" y="230" width="44" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="42.0" y="254" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">5</text>
+<rect x="64" y="230" width="440" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="70" y="254" font-family="monospace" font-size="14" fill="#222222">if (total == 3) console.log("tiga")</text>
+<rect x="504" y="230" width="95" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<rect x="599" y="230" width="105" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+</svg>

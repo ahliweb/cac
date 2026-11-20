@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" width="720" height="320" role="img" aria-labelledby="t d">
+  <title id="t">Matriks kebingungan untuk komponen rusak dan normal</title>
+  <desc id="d">Matriks dua kali dua kosong dengan baris sebenarnya rusak dan normal, kolom tebakan rusak dan normal, sel berlabel TP, FN, FP, TN, serta empat kotak kosong untuk dampak tiap sel.</desc>
+  <rect width="720" height="320" fill="#ffffff"/>
+  <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker></defs>
+  <text x="310" y="28" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">TEBAKAN SISTEM</text>
+  <text x="230" y="56" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">rusak</text>
+  <text x="390" y="56" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">normal</text>
+  <text x="70" y="114" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">SEBENARNYA</text>
+  <text x="70" y="134" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">rusak</text>
+  <text x="70" y="214" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">SEBENARNYA</text>
+  <text x="70" y="234" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">normal</text>
+  <rect x="150" y="70" width="160" height="100" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="162" y="92" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#2a5d9f">TP</text>
+  <rect x="310" y="70" width="160" height="100" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="322" y="92" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#2a5d9f">FN</text>
+  <rect x="150" y="170" width="160" height="100" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="162" y="192" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#2a5d9f">FP</text>
+  <rect x="310" y="170" width="160" height="100" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="322" y="192" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#2a5d9f">TN</text>
+  <text x="310" y="300" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">Tulis angka di tiap sel. Positif = rusak.</text>
+  <text x="590" y="28" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">Dampak tiap sel</text>
+  <text x="500" y="62" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#2a5d9f">TP</text>
+  <rect x="536" y="40" width="150" height="44" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="500" y="120" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#2a5d9f">FN</text>
+  <rect x="536" y="98" width="150" height="44" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="500" y="178" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#2a5d9f">FP</text>
+  <rect x="536" y="156" width="150" height="44" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="500" y="236" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#2a5d9f">TN</text>
+  <rect x="536" y="214" width="150" height="44" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+</svg>

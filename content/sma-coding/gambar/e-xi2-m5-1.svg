@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 260" width="660" height="260" role="img" aria-labelledby="t d">
+  <title id="t">Tabel gerbang fase lalu H pada keadaan sama rata</title>
+  <desc id="d">Tabel dengan baris gerbang Z, S, dan T pada keadaan (h ; h). Kolom: keadaan setelah gerbang, peluang membaca 0 langsung, dan peluang membaca 0 bila H dipasang lagi. Semua sel hasil kosong untuk diisi.</desc>
+  <rect width="660" height="260" fill="#ffffff"/>
+  <text x="330" y="24" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Mulai (h ; h), h = 0,7071. Gerbang, lalu (pilihan) H, lalu baca.</text>
+  <rect x="20" y="40" width="90" height="48" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="65.0" y="69.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">gerbang</text>
+  <rect x="110" y="40" width="200" height="48" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="210.0" y="69.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">keadaan setelah gerbang</text>
+  <rect x="310" y="40" width="150" height="48" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="385.0" y="69.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">P(0) langsung</text>
+  <rect x="460" y="40" width="180" height="48" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="550.0" y="69.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">P(0) setelah H</text>
+  <rect x="20" y="88" width="90" height="48" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="65.0" y="117.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Z</text>
+  <rect x="114" y="92" width="192" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="110" y="88" width="200" height="48" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="314" y="92" width="142" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="310" y="88" width="150" height="48" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="464" y="92" width="172" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="460" y="88" width="180" height="48" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="20" y="136" width="90" height="48" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="65.0" y="165.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">S</text>
+  <rect x="114" y="140" width="192" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="110" y="136" width="200" height="48" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="314" y="140" width="142" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="310" y="136" width="150" height="48" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="464" y="140" width="172" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="460" y="136" width="180" height="48" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="20" y="184" width="90" height="48" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="65.0" y="213.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">T</text>
+  <rect x="114" y="188" width="192" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="110" y="184" width="200" height="48" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="314" y="188" width="142" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="310" y="184" width="150" height="48" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="464" y="188" width="172" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="460" y="184" width="180" height="48" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="330" y="246" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Urutkan dari P(0) terkecil ke terbesar pada kolom terakhir.</text>
+</svg>

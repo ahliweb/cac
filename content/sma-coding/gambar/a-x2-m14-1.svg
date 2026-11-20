@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300" width="560" height="300" role="img" aria-labelledby="t d">
+  <title id="t">Tabel penelusuran satu lintasan pertukaran untuk data 5 2 4 1</title>
+  <desc id="d">Tabel dengan kolom indeks 0 sampai 3 dan pertukaran. Baris awal berisi 5, 2, 4, 1. Tiga baris i sama dengan 0, 1, 2 kosong untuk isi a setelah membandingkan a[i] dan a[i + 1].</desc>
+  <rect width="560" height="300" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker></defs>
+  <text x="20" y="24" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#222222">Tulis isi a setelah tiap perbandingan a[i] dan a[i + 1]:</text>
+  <rect x="20" y="36" width="110" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="75.0" y="63.0" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222"></text>
+  <rect x="130" y="36" width="70" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="165.0" y="63.0" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">0</text>
+  <rect x="200" y="36" width="70" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="235.0" y="63.0" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">1</text>
+  <rect x="270" y="36" width="70" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="305.0" y="63.0" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">2</text>
+  <rect x="340" y="36" width="70" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="375.0" y="63.0" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">3</text>
+  <rect x="410" y="36" width="110" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="465.0" y="63.0" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">tukar?</text>
+  <rect x="20" y="80" width="110" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="75.0" y="107.0" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">awal</text>
+  <rect x="130" y="80" width="70" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="165.0" y="107.0" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">5</text>
+  <rect x="200" y="80" width="70" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="235.0" y="107.0" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">2</text>
+  <rect x="270" y="80" width="70" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="305.0" y="107.0" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">4</text>
+  <rect x="340" y="80" width="70" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="375.0" y="107.0" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">1</text>
+  <rect x="410" y="80" width="110" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="20" y="124" width="110" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="75.0" y="151.0" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">i = 0</text>
+  <rect x="130" y="124" width="70" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="200" y="124" width="70" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="270" y="124" width="70" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="340" y="124" width="70" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="410" y="124" width="110" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="20" y="168" width="110" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="75.0" y="195.0" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">i = 1</text>
+  <rect x="130" y="168" width="70" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="200" y="168" width="70" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="270" y="168" width="70" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="340" y="168" width="70" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="410" y="168" width="110" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="20" y="212" width="110" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="75.0" y="239.0" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">i = 2</text>
+  <rect x="130" y="212" width="70" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="200" y="212" width="70" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="270" y="212" width="70" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="340" y="212" width="70" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="410" y="212" width="110" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="20" y="282" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">Kolom tukar?: tulis ya atau tidak.</text>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 290" width="680" height="290" role="img" aria-labelledby="t d">
+  <title id="t">Tabel tiga situasi template init dengan kolom hasil kosong</title>
+  <desc id="d">Tabel dengan tiga situasi: A tanpa terminal interaktif dan flag kurang, B perintah lengkap dijalankan kedua kalinya, C ada berkas belum di-commit tanpa yes. Kolom kode keluar dan kolom yang terjadi kosong untuk diisi.</desc>
+  <rect width="680" height="290" fill="#ffffff"/>
+  <rect x="15" y="30" width="250" height="56" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="140.0" y="63.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">situasi</text>
+  <rect x="265" y="30" width="110" height="56" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="320.0" y="63.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">kode keluar</text>
+  <rect x="375" y="30" width="300" height="56" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="525.0" y="63.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">yang terjadi</text>
+  <rect x="15" y="86" width="250" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="140.0" y="119.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">A: flag kurang, tanpa terminal</text>
+  <rect x="265" y="86" width="110" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="375" y="86" width="300" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="142" width="250" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="140.0" y="175.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">B: perintah lengkap, kali kedua</text>
+  <rect x="265" y="142" width="110" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="375" y="142" width="300" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="198" width="250" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="140.0" y="231.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">C: belum di-commit, tanpa --yes</text>
+  <rect x="265" y="198" width="110" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="375" y="198" width="300" height="56" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="340" y="278" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">Isi kolom kode keluar dan yang terjadi.</text>
+</svg>

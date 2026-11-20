@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 236" width="650" height="236" role="img" aria-labelledby="t d">
+  <title id="t">Tabel empat kolam dengan kolom isian luas, rasio, dan perlu pompa</title>
+  <desc id="d">Tabel kolam dengan panjang dan lebar (5 dan 4, 12 dan 9, 8 dan 14, 3 dan 3). Kolom luas, rasio panjang per lebar, dan perlu pompa dibiarkan kosong untuk diisi.</desc>
+  <rect width="650" height="236" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222" stroke="#222222" stroke-width="1.5">
+    <text x="20" y="30" stroke="none" font-weight="bold">Penanda perlu pompa: luas lebih dari 100 (tulis 1 atau 0)</text>
+    <rect x="20" y="46" width="90" height="34" fill="#f2f2f2"/>
+    <text x="65" y="68" text-anchor="middle" stroke="none" font-weight="bold">kolam</text>
+    <rect x="110" y="46" width="100" height="34" fill="#f2f2f2"/>
+    <text x="160" y="68" text-anchor="middle" stroke="none" font-weight="bold">panjang</text>
+    <rect x="210" y="46" width="100" height="34" fill="#f2f2f2"/>
+    <text x="260" y="68" text-anchor="middle" stroke="none" font-weight="bold">lebar</text>
+    <rect x="310" y="46" width="100" height="34" fill="#f2f2f2"/>
+    <text x="360" y="68" text-anchor="middle" stroke="none" font-weight="bold">luas</text>
+    <rect x="410" y="46" width="100" height="34" fill="#f2f2f2"/>
+    <text x="460" y="68" text-anchor="middle" stroke="none" font-weight="bold">rasio</text>
+    <rect x="510" y="46" width="120" height="34" fill="#f2f2f2"/>
+    <text x="570" y="68" text-anchor="middle" stroke="none" font-weight="bold">perlu pompa</text>
+    <rect x="20" y="80" width="90" height="34" fill="#ffffff"/>
+    <text x="65" y="102" text-anchor="middle" stroke="none">1</text>
+    <rect x="110" y="80" width="100" height="34" fill="#ffffff"/>
+    <text x="160" y="102" text-anchor="middle" stroke="none">5</text>
+    <rect x="210" y="80" width="100" height="34" fill="#ffffff"/>
+    <text x="260" y="102" text-anchor="middle" stroke="none">4</text>
+    <rect x="310" y="80" width="100" height="34" fill="#ffffff"/>
+    <rect x="410" y="80" width="100" height="34" fill="#ffffff"/>
+    <rect x="510" y="80" width="120" height="34" fill="#ffffff"/>
+    <rect x="20" y="114" width="90" height="34" fill="#ffffff"/>
+    <text x="65" y="136" text-anchor="middle" stroke="none">2</text>
+    <rect x="110" y="114" width="100" height="34" fill="#ffffff"/>
+    <text x="160" y="136" text-anchor="middle" stroke="none">12</text>
+    <rect x="210" y="114" width="100" height="34" fill="#ffffff"/>
+    <text x="260" y="136" text-anchor="middle" stroke="none">9</text>
+    <rect x="310" y="114" width="100" height="34" fill="#ffffff"/>
+    <rect x="410" y="114" width="100" height="34" fill="#ffffff"/>
+    <rect x="510" y="114" width="120" height="34" fill="#ffffff"/>
+    <rect x="20" y="148" width="90" height="34" fill="#ffffff"/>
+    <text x="65" y="170" text-anchor="middle" stroke="none">3</text>
+    <rect x="110" y="148" width="100" height="34" fill="#ffffff"/>
+    <text x="160" y="170" text-anchor="middle" stroke="none">8</text>
+    <rect x="210" y="148" width="100" height="34" fill="#ffffff"/>
+    <text x="260" y="170" text-anchor="middle" stroke="none">14</text>
+    <rect x="310" y="148" width="100" height="34" fill="#ffffff"/>
+    <rect x="410" y="148" width="100" height="34" fill="#ffffff"/>
+    <rect x="510" y="148" width="120" height="34" fill="#ffffff"/>
+    <rect x="20" y="182" width="90" height="34" fill="#ffffff"/>
+    <text x="65" y="204" text-anchor="middle" stroke="none">4</text>
+    <rect x="110" y="182" width="100" height="34" fill="#ffffff"/>
+    <text x="160" y="204" text-anchor="middle" stroke="none">3</text>
+    <rect x="210" y="182" width="100" height="34" fill="#ffffff"/>
+    <text x="260" y="204" text-anchor="middle" stroke="none">3</text>
+    <rect x="310" y="182" width="100" height="34" fill="#ffffff"/>
+    <rect x="410" y="182" width="100" height="34" fill="#ffffff"/>
+    <rect x="510" y="182" width="120" height="34" fill="#ffffff"/>
+  </g>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 545 285" width="545" height="285" role="img" aria-labelledby="t d">
+  <title id="t">Daftar berkas dilacak dengan kolom temuan kosong</title>
+  <desc id="d">Tabel empat berkas yang dilacak Git: src/site.ts, README.md, .env.example, dan .env, masing-masing dengan isinya. Kolom Temuan kosong untuk diisi pelajar.</desc>
+  <rect width="545" height="285" fill="#ffffff"/>
+  <text x="250" y="30" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Berkas yang dilacak Git</text>
+  <rect x="20" y="50" width="135" height="38" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="87.5" y="74.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">Berkas dilacak</text>
+  <rect x="155" y="50" width="280" height="38" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="295.0" y="74.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">Isi</text>
+  <rect x="435" y="50" width="90" height="38" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="480.0" y="74.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">Temuan?</text>
+  <rect x="20" y="88" width="135" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="87.5" y="112.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">src/site.ts</text>
+  <rect x="155" y="88" width="280" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="295.0" y="112.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">KUNCI_ANALITIK = "...PALSU_CONTOH"</text>
+  <rect x="435" y="88" width="90" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="126" width="135" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="87.5" y="150.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">README.md</text>
+  <rect x="155" y="126" width="280" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="295.0" y="150.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Salin .env.example ...</text>
+  <rect x="435" y="126" width="90" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="164" width="135" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="87.5" y="188.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">.env.example</text>
+  <rect x="155" y="164" width="280" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="295.0" y="188.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">KUNCI_ANALITIK=isi-sendiri</text>
+  <rect x="435" y="164" width="90" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="202" width="135" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="87.5" y="226.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">.env</text>
+  <rect x="155" y="202" width="280" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="295.0" y="226.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">KUNCI_ANALITIK=...PALSU_CONTOH</text>
+  <rect x="435" y="202" width="90" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="250" y="268" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Isi kolom Temuan?: ya atau tidak, dan alasannya.</text>
+</svg>

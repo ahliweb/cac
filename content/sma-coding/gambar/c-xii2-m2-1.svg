@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 285" width="560" height="285" role="img" aria-labelledby="t d">
+<title id="t">Tata letak rekaman sensor</title>
+<desc id="d">Tabel empat anggota rekaman dengan ukuran masing-masing. Kolom alamat mulai dan byte pengisi kosong untuk diisi.</desc>
+<defs><marker id="ar" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#222222"/></marker></defs>
+<rect width="560" height="285" fill="#ffffff"/>
+<rect x="20" y="20" width="130" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="85.0" y="45.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Anggota</text>
+<rect x="150" y="20" width="100" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="200.0" y="45.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Ukuran (byte)</text>
+<rect x="250" y="20" width="140" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="320.0" y="45.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Alamat mulai</text>
+<rect x="390" y="20" width="150" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="465.0" y="45.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Byte pengisi sesudahnya</text>
+<rect x="20" y="60" width="130" height="40" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="85.0" y="85.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">valid (bool)</text>
+<rect x="150" y="60" width="100" height="40" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="200.0" y="85.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1</text>
+<rect x="250" y="60" width="140" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="390" y="60" width="150" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="20" y="100" width="130" height="40" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="85.0" y="125.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">waktuMs (uint32_t)</text>
+<rect x="150" y="100" width="100" height="40" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="200.0" y="125.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">4</text>
+<rect x="250" y="100" width="140" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="390" y="100" width="150" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="20" y="140" width="130" height="40" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="85.0" y="165.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">nilai (int32_t)</text>
+<rect x="150" y="140" width="100" height="40" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="200.0" y="165.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">4</text>
+<rect x="250" y="140" width="140" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="390" y="140" width="150" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="20" y="180" width="130" height="40" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="85.0" y="205.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">alarm (bool)</text>
+<rect x="150" y="180" width="100" height="40" rx="0" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="200.0" y="205.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1</text>
+<rect x="250" y="180" width="140" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="390" y="180" width="150" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/><text x="20" y="240" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">Urutan asli. Total setelah dibulatkan ke kelipatan 4: ______ byte</text><text x="20" y="265" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">Lalu urutkan dari terbesar ke terkecil dan hitung lagi pada kertasmu.</text>
+</svg>

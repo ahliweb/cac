@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 390" width="660" height="390" role="img" aria-labelledby="t d">
+<title id="t">Langkah sprint perbaikan dan tabel biaya iterasi</title>
+<desc id="d">Bagian atas: lima langkah sprint perbaikan berhuruf A sampai E dalam urutan acak, tiap langkah punya kotak nomor kosong untuk urutan benar. Bagian bawah: tabel iterasi satu gerbang H dan total 40 gerbang H untuk versi lama dan baru pada sepuluh qubit, dengan sel kosong.</desc>
+
+<rect width="660" height="390" fill="#ffffff"/>
+<text x="20" y="26" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">Beri nomor 1 sampai 5 pada kotak kiri.</text>
+<rect x="20" y="38" width="44" height="32" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="74" y="38" width="566" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="86" y="60" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">(A)  ubah satu hal saja</text>
+<rect x="20" y="76" width="44" height="32" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="74" y="76" width="566" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="86" y="98" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">(B)  simpan versi lama sebagai pembanding</text>
+<rect x="20" y="114" width="44" height="32" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="74" y="114" width="566" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="86" y="136" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">(C)  rusak satu bagian dan pastikan ujinya menangkapnya</text>
+<rect x="20" y="152" width="44" height="32" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="74" y="152" width="566" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="86" y="174" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">(D)  tulis uji sifat</text>
+<rect x="20" y="190" width="44" height="32" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="74" y="190" width="566" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="86" y="212" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">(E)  bandingkan versi baru dan lama pada sirkuit yang sama</text>
+<text x="20" y="250" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">n = 10 qubit: iterasi loop gerbang H</text>
+<rect x="20" y="262" width="160" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="100.0" y="284.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold"></text>
+<rect x="180" y="262" width="200" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="280.0" y="284.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold">satu gerbang H</text>
+<rect x="380" y="262" width="200" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="480.0" y="284.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold">40 gerbang H</text>
+<rect x="20" y="296" width="160" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="100.0" y="318.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">versi lama</text>
+<rect x="180" y="296" width="200" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="380" y="296" width="200" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="20" y="330" width="160" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="100.0" y="352.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">versi baru</text>
+<rect x="180" y="330" width="200" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="380" y="330" width="200" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+</svg>

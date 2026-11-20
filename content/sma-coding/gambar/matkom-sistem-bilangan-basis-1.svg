@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 370" width="600" height="370" role="img" aria-labelledby="t d">
+  <title id="t">Tabel bagi berulang untuk mengubah 1000 ke biner</title>
+  <desc id="d">Tabel dengan kolom bilangan, hasil bagi, dan sisa, sepuluh baris. Baris pertama berisi bilangan 1000 dibagi 2. Kotak lain kosong. Di sisi kanan ada panah bertuliskan baca sisa dari bawah ke atas.</desc>
+  <rect width="600" height="370" fill="#ffffff"/>
+  <defs><marker id="p" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,10 L5,0 L10,10 z" fill="#2a5d9f"/></marker></defs>
+  <rect x="10" y="10" width="130" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="75.0" y="31" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">bilangan</text>
+  <rect x="140" y="10" width="170" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="225.0" y="31" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">hasil bagi (÷ 2)</text>
+  <rect x="310" y="10" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="365.0" y="31" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">sisa</text>
+  <rect x="10" y="40" width="130" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="140" y="40" width="170" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="310" y="40" width="110" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="10" y="72" width="130" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="140" y="72" width="170" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="310" y="72" width="110" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="10" y="104" width="130" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="140" y="104" width="170" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="310" y="104" width="110" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="10" y="136" width="130" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="140" y="136" width="170" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="310" y="136" width="110" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="10" y="168" width="130" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="140" y="168" width="170" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="310" y="168" width="110" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="10" y="200" width="130" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="140" y="200" width="170" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="310" y="200" width="110" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="10" y="232" width="130" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="140" y="232" width="170" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="310" y="232" width="110" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="10" y="264" width="130" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="140" y="264" width="170" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="310" y="264" width="110" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="10" y="296" width="130" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="140" y="296" width="170" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="310" y="296" width="110" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="10" y="328" width="130" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="140" y="328" width="170" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="310" y="328" width="110" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="75" y="61" font-family="sans-serif" font-size="16" font-weight="bold" fill="#2a5d9f" text-anchor="middle">1000</text>
+  <line x1="460" y1="350" x2="460" y2="60" stroke="#2a5d9f" stroke-width="2.5" marker-end="url(#p)"/>
+  <text x="480" y="200" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">baca sisa</text>
+  <text x="480" y="220" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">dari bawah</text>
+  <text x="480" y="240" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">ke atas</text>
+  <text x="10" y="365" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">Lanjutkan sampai hasil bagi 0.</text>
+</svg>

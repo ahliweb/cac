@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 290" width="640" height="290" role="img" aria-labelledby="t d">
+  <title id="t">Titik data empat minggu untuk garis kecenderungan</title>
+  <desc id="d">Diagram titik dengan sumbu minggu 1 sampai 6 dan nilai 0 sampai 12. Empat titik data: minggu 1 bernilai 3, minggu 2 bernilai 5, minggu 3 bernilai 6, minggu 4 bernilai 10. Minggu 5 dan 6 kosong untuk ramalan yang digambar sendiri.</desc>
+  <rect width="640" height="290" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <g stroke="#222222" stroke-width="2" fill="none"><line x1="60" y1="20" x2="60" y2="240"/><line x1="60" y1="240" x2="560" y2="240"/></g>
+    <line x1="60" y1="240.0" x2="560" y2="240.0" stroke="#222222" stroke-width="1" stroke-opacity="0.25"/>
+    <text x="52" y="245.0" text-anchor="end">0</text>
+    <line x1="60" y1="203.33333333333334" x2="560" y2="203.33333333333334" stroke="#222222" stroke-width="1" stroke-opacity="0.25"/>
+    <text x="52" y="208.33333333333334" text-anchor="end">2</text>
+    <line x1="60" y1="166.66666666666669" x2="560" y2="166.66666666666669" stroke="#222222" stroke-width="1" stroke-opacity="0.25"/>
+    <text x="52" y="171.66666666666669" text-anchor="end">4</text>
+    <line x1="60" y1="130.0" x2="560" y2="130.0" stroke="#222222" stroke-width="1" stroke-opacity="0.25"/>
+    <text x="52" y="135.0" text-anchor="end">6</text>
+    <line x1="60" y1="93.33333333333334" x2="560" y2="93.33333333333334" stroke="#222222" stroke-width="1" stroke-opacity="0.25"/>
+    <text x="52" y="98.33333333333334" text-anchor="end">8</text>
+    <line x1="60" y1="56.66666666666666" x2="560" y2="56.66666666666666" stroke="#222222" stroke-width="1" stroke-opacity="0.25"/>
+    <text x="52" y="61.66666666666666" text-anchor="end">10</text>
+    <line x1="60" y1="20.0" x2="560" y2="20.0" stroke="#222222" stroke-width="1" stroke-opacity="0.25"/>
+    <text x="52" y="25.0" text-anchor="end">12</text>
+    <text x="100.0" y="260" text-anchor="middle">1</text>
+    <text x="180.0" y="260" text-anchor="middle">2</text>
+    <text x="260.0" y="260" text-anchor="middle">3</text>
+    <text x="340.0" y="260" text-anchor="middle">4</text>
+    <text x="420.0" y="260" text-anchor="middle">5</text>
+    <text x="500.0" y="260" text-anchor="middle">6</text>
+    <text x="300.0" y="282" text-anchor="middle">minggu</text>
+    <circle cx="100.0" cy="185.0" r="6" fill="#2a5d9f" stroke="#222222" stroke-width="2"/>
+    <circle cx="180.0" cy="148.33333333333331" r="6" fill="#2a5d9f" stroke="#222222" stroke-width="2"/>
+    <circle cx="260.0" cy="130.0" r="6" fill="#2a5d9f" stroke="#222222" stroke-width="2"/>
+    <circle cx="340.0" cy="56.66666666666666" r="6" fill="#2a5d9f" stroke="#222222" stroke-width="2"/>
+    <rect x="408.0" y="20.0" width="24" height="220" fill="none" stroke="#b3261e" stroke-width="2" stroke-dasharray="5 4"/>
+    <rect x="488.0" y="20.0" width="24" height="220" fill="none" stroke="#b3261e" stroke-width="2" stroke-dasharray="5 4"/>
+    <text x="460.0" y="14.0" text-anchor="middle" fill="#b3261e">ramalan: gambar sendiri</text>
+    <text x="10" y="284">Titik biru = data nyata. Gambar garis kecenderungan dan tandai ramalan minggu 5 dan 6.</text>
+  </g>
+</svg>

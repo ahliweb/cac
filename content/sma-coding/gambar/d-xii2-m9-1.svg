@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" width="680" height="400" role="img" aria-labelledby="t d">
+  <title id="t">Kartu model dengan delapan bagian</title>
+  <desc id="d">Delapan kotak berlabel Tujuan, Di luar cakupan, Data, Model, Evaluasi, Batasan, Risiko, Biaya. Tiap kotak punya kotak centang berlabel ada di draf dan satu garis kosong.</desc>
+  <rect width="680" height="400" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <rect x="15" y="15" width="325" height="84" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="25" y="39" font-weight="bold">1. Tujuan</text>
+    <rect x="200" y="23" width="20" height="20" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <text x="227" y="39">ada di draf</text>
+    <line x1="25" y1="77" x2="330" y2="77" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <rect x="350" y="15" width="325" height="84" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="360" y="39" font-weight="bold">2. Di luar cakupan</text>
+    <rect x="535" y="23" width="20" height="20" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <text x="562" y="39">ada di draf</text>
+    <line x1="360" y1="77" x2="665" y2="77" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <rect x="15" y="109" width="325" height="84" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="25" y="133" font-weight="bold">3. Data</text>
+    <rect x="200" y="117" width="20" height="20" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <text x="227" y="133">ada di draf</text>
+    <line x1="25" y1="171" x2="330" y2="171" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <rect x="350" y="109" width="325" height="84" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="360" y="133" font-weight="bold">4. Model</text>
+    <rect x="535" y="117" width="20" height="20" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <text x="562" y="133">ada di draf</text>
+    <line x1="360" y1="171" x2="665" y2="171" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <rect x="15" y="203" width="325" height="84" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="25" y="227" font-weight="bold">5. Evaluasi</text>
+    <rect x="200" y="211" width="20" height="20" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <text x="227" y="227">ada di draf</text>
+    <line x1="25" y1="265" x2="330" y2="265" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <rect x="350" y="203" width="325" height="84" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="360" y="227" font-weight="bold">6. Batasan</text>
+    <rect x="535" y="211" width="20" height="20" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <text x="562" y="227">ada di draf</text>
+    <line x1="360" y1="265" x2="665" y2="265" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <rect x="15" y="297" width="325" height="84" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="25" y="321" font-weight="bold">7. Risiko</text>
+    <rect x="200" y="305" width="20" height="20" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <text x="227" y="321">ada di draf</text>
+    <line x1="25" y1="359" x2="330" y2="359" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <rect x="350" y="297" width="325" height="84" rx="6" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="360" y="321" font-weight="bold">8. Biaya</text>
+    <rect x="535" y="305" width="20" height="20" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <text x="562" y="321">ada di draf</text>
+    <line x1="360" y1="359" x2="665" y2="359" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 4"/>
+  </g>
+</svg>

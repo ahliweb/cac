@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 270" width="640" height="270" role="img" aria-labelledby="t d">
+  <title id="t">Satu neuron dengan dua masukan dan kotak isian keluaran</title>
+  <desc id="d">Dua masukan x1 sama dengan 3 dan x2 sama dengan minus 1 menuju satu neuron lewat bobot w1 sama dengan 0,4 dan w2 sama dengan 0,6. Neuron punya bias b sama dengan 0,2. Di kanan empat kotak isian: z, keluaran langkah, ReLU, dan sigmoid.</desc>
+  <rect width="640" height="270" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  </defs>
+  <g stroke="#222222" stroke-width="2" fill="none" marker-end="url(#a)">
+    <line x1="92" y1="75" x2="228" y2="120"/>
+    <line x1="92" y1="195" x2="228" y2="150"/>
+    <line x1="298" y1="135" x2="378" y2="135"/>
+  </g>
+  <g stroke="#2a5d9f" stroke-width="2" fill="#f2f2f2">
+    <circle cx="60" cy="75" r="32"/><circle cx="60" cy="195" r="32"/>
+    <circle cx="265" cy="135" r="36" fill="#ffffff"/>
+  </g>
+  <g stroke="#222222" stroke-width="1.5" fill="#f2f2f2">
+    <rect x="385" y="30" width="235" height="36" rx="4"/><rect x="385" y="82" width="235" height="36" rx="4"/>
+    <rect x="385" y="134" width="235" height="36" rx="4"/><rect x="385" y="186" width="235" height="36" rx="4"/>
+  </g>
+  <g font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">
+    <text x="60" y="80">x1 = 3</text><text x="60" y="200">x2 = -1</text>
+    <text x="150" y="85">w1 = 0,4</text><text x="150" y="185">w2 = 0,6</text>
+    <text x="265" y="132" font-weight="bold">jumlah</text><text x="265" y="149" font-weight="bold">+ b</text>
+    <text x="265" y="195">b = 0,2</text>
+    <text x="338" y="124">z</text>
+    <g text-anchor="start"><text x="395" y="53">z = ______</text><text x="395" y="105">langkah = ______</text><text x="395" y="157">ReLU = ______</text><text x="395" y="209">sigmoid = ______</text></g>
+  </g>
+</svg>

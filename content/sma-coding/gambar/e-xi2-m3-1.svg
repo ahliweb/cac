@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300" width="660" height="300" role="img" aria-labelledby="t d">
+  <title id="t">Dua tabel peluang untuk keadaan dua qubit</title>
+  <desc id="d">Kiri: peluang hasil dua bit 00, 01, 10, 11 untuk keadaan Psi minus dengan kotak kosong. Kanan: untuk keadaan (0,5 ; 0,5 ; 0,5 ; -0,5), baris hasil qubit pertama 0 dan 1 dengan kolom peluang dan keadaan qubit kedua yang kosong.</desc>
+  <rect width="660" height="300" fill="#ffffff"/>
+  <text x="150" y="24" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">(0 ; h ; -h ; 0), h = 0,7071</text>
+  <rect x="10" y="38" width="100" height="44" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="60.0" y="65.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">hasil dua bit</text>
+  <rect x="110" y="38" width="130" height="44" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="175.0" y="65.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">peluang</text>
+  <rect x="10" y="82" width="100" height="44" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="60.0" y="109.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">00</text>
+  <rect x="114" y="86" width="122" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="110" y="82" width="130" height="44" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="10" y="126" width="100" height="44" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="60.0" y="153.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">01</text>
+  <rect x="114" y="130" width="122" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="110" y="126" width="130" height="44" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="10" y="170" width="100" height="44" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="60.0" y="197.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">10</text>
+  <rect x="114" y="174" width="122" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="110" y="170" width="130" height="44" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="10" y="214" width="100" height="44" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="60.0" y="241.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">11</text>
+  <rect x="114" y="218" width="122" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="110" y="214" width="130" height="44" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="490" y="24" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">(0,5 ; 0,5 ; 0,5 ; -0,5)</text>
+  <rect x="265" y="38" width="120" height="44" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="325.0" y="65.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">qubit 1 terbaca</text>
+  <rect x="385" y="38" width="110" height="44" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="440.0" y="65.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">peluang</text>
+  <rect x="495" y="38" width="150" height="44" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="570.0" y="65.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">qubit 2 jadi</text>
+  <rect x="265" y="82" width="120" height="44" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="325.0" y="109.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">0</text>
+  <rect x="389" y="86" width="102" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="385" y="82" width="110" height="44" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="499" y="86" width="142" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="495" y="82" width="150" height="44" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="265" y="126" width="120" height="44" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="325.0" y="153.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1</text>
+  <rect x="389" y="130" width="102" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="385" y="126" width="110" height="44" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="499" y="130" width="142" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="495" y="126" width="150" height="44" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="10" y="282" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">Kiri: seberapa sering dua bit sama? Kanan: tulis keadaan qubit kedua sebagai (x ; y).</text>
+</svg>

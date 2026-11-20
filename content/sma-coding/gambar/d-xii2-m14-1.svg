@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 340" width="700" height="340" role="img" aria-labelledby="t d">
+  <title id="t">Matriks kebingungan dan kotak hitungan metrik</title>
+  <desc id="d">Kiri: matriks kebingungan dua kali dua kosong untuk data uji 120 baris, 30 terlambat, model menandai 40 baris dan 18 di antaranya terlambat. Kanan: kotak kosong untuk ketepatan, tebakan mayoritas, recall, presisi, pengingat, dan dua baris sasaran lama dan baru.</desc>
+  <rect width="700" height="340" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <text x="15" y="22" font-weight="bold">Data uji: 120 baris, 30 terlambat</text>
+    <text x="15" y="42">model menandai 40 baris, 18 di antaranya terlambat</text>
+    <text x="230" y="75" text-anchor="middle">tebakan model</text>
+    <text x="185" y="98" text-anchor="middle">ditandai</text>
+    <text x="275" y="98" text-anchor="middle">tidak ditandai</text>
+    <text x="95" y="150" text-anchor="end">aktual</text>
+    <text x="95" y="168" text-anchor="end">terlambat</text>
+    <text x="95" y="238" text-anchor="end">tepat waktu</text>
+    <rect x="105" y="108" width="90" height="70" fill="#f2f2f2" stroke="#1b7a3d" stroke-width="2.5"/>
+    <text x="112" y="126" font-weight="bold">TP</text>
+    <rect x="195" y="108" width="90" height="70" fill="#ffffff" stroke="#b3261e" stroke-width="2.5" stroke-dasharray="6 3"/>
+    <text x="202" y="126" font-weight="bold">FN</text>
+    <rect x="105" y="178" width="90" height="70" fill="#ffffff" stroke="#b3261e" stroke-width="2.5" stroke-dasharray="6 3"/>
+    <text x="112" y="196" font-weight="bold">FP</text>
+    <rect x="195" y="178" width="90" height="70" fill="#f2f2f2" stroke="#1b7a3d" stroke-width="2.5"/>
+    <text x="202" y="196" font-weight="bold">TN</text>
+    <text x="195" y="275" text-anchor="middle">tulis jumlah baris di tiap kotak</text>
+    <text x="330" y="75" font-weight="bold">Hitungan</text>
+    <text x="330" y="105">ketepatan</text>
+    <rect x="450" y="88" width="80" height="26" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <text x="545" y="105">tebakan mayoritas</text>
+    <rect x="610" y="88" width="75" height="26" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <text x="330" y="140">recall</text>
+    <rect x="450" y="123" width="80" height="26" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <text x="545" y="140">presisi</text>
+    <rect x="610" y="123" width="75" height="26" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <text x="330" y="175">pengingat</text>
+    <rect x="450" y="158" width="80" height="26" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <text x="330" y="215">sasaran lama:</text>
+    <rect x="450" y="198" width="20" height="20" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <text x="476" y="214">terpenuhi</text>
+    <rect x="560" y="198" width="20" height="20" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <text x="586" y="214">belum</text>
+    <text x="330" y="250">sasaran baru:</text>
+    <rect x="450" y="233" width="20" height="20" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <text x="476" y="249">terpenuhi</text>
+    <rect x="560" y="233" width="20" height="20" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <text x="586" y="249">belum</text>
+  </g>
+</svg>

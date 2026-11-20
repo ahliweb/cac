@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" role="img" aria-labelledby="t d">
+<title id="t">Tabel jejak program kartu dengan masukan 5 dan 8</title>
+<desc id="d">Tabel jejak dengan tujuh baris langkah. Kolom kartu sudah terisi program: BACA, SIMPAN M1, BACA, TAMBAH M1, TAMBAH M1, CETAK, BERHENTI. Kolom Akumulator, M1, dan Keluaran kosong untuk diisi. Di atas tabel tertulis masukan 5 dan 8.</desc>
+
+<rect width="640" height="400" fill="#ffffff"/>
+<text x="20" y="26" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">Masukan: 5, 8. Isi Akumulator, M1, dan Keluaran tiap langkah.</text>
+<rect x="20" y="38" width="90" height="38" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="65.0" y="62" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold">langkah</text>
+<rect x="110" y="38" width="150" height="38" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="185.0" y="62" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold">kartu</text>
+<rect x="260" y="38" width="140" height="38" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="330.0" y="62" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold">Akumulator</text>
+<rect x="400" y="38" width="110" height="38" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="455.0" y="62" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold">M1</text>
+<rect x="510" y="38" width="130" height="38" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="575.0" y="62" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold">Keluaran</text>
+<rect x="20" y="76" width="90" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="65.0" y="104" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1</text>
+<rect x="110" y="76" width="150" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="185.0" y="104" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">BACA</text>
+<rect x="260" y="76" width="140" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="400" y="76" width="110" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="510" y="76" width="130" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="20" y="120" width="90" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="65.0" y="148" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">2</text>
+<rect x="110" y="120" width="150" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="185.0" y="148" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">SIMPAN M1</text>
+<rect x="260" y="120" width="140" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="400" y="120" width="110" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="510" y="120" width="130" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="20" y="164" width="90" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="65.0" y="192" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">3</text>
+<rect x="110" y="164" width="150" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="185.0" y="192" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">BACA</text>
+<rect x="260" y="164" width="140" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="400" y="164" width="110" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="510" y="164" width="130" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="20" y="208" width="90" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="65.0" y="236" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">4</text>
+<rect x="110" y="208" width="150" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="185.0" y="236" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">TAMBAH M1</text>
+<rect x="260" y="208" width="140" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="400" y="208" width="110" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="510" y="208" width="130" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="20" y="252" width="90" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="65.0" y="280" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">5</text>
+<rect x="110" y="252" width="150" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="185.0" y="280" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">TAMBAH M1</text>
+<rect x="260" y="252" width="140" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="400" y="252" width="110" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="510" y="252" width="130" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="20" y="296" width="90" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="65.0" y="324" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">6</text>
+<rect x="110" y="296" width="150" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="185.0" y="324" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">CETAK</text>
+<rect x="260" y="296" width="140" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="400" y="296" width="110" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="510" y="296" width="130" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="20" y="340" width="90" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="65.0" y="368" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">7</text>
+<rect x="110" y="340" width="150" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<text x="185.0" y="368" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">BERHENTI</text>
+<rect x="260" y="340" width="140" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="400" y="340" width="110" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="510" y="340" width="130" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+</svg>

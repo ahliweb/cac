@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400" width="700" height="400" role="img" aria-labelledby="t d">
+  <title id="t">Tabel mencocokkan lima perintah dengan efeknya</title>
+  <desc id="d">Kiri: tabel lima perintah huruf a sampai e dengan kolom efek kosong. Kanan: daftar lima efek bernomor romawi i sampai v.</desc>
+  <rect width="700" height="400" fill="#ffffff"/>
+  <rect x="15" y="35" width="50" height="52" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="40.0" y="66.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222"></text>
+  <rect x="65" y="35" width="285" height="52" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="207.5" y="66.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">perintah</text>
+  <rect x="350" y="35" width="70" height="52" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="385.0" y="66.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">efek</text>
+  <rect x="15" y="87" width="50" height="52" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="40.0" y="118.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">(a)</text>
+  <rect x="65" y="87" width="285" height="52" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="207.5" y="118.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">bun run db:up</text>
+  <rect x="350" y="87" width="70" height="52" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="139" width="50" height="52" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="40.0" y="170.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">(b)</text>
+  <rect x="65" y="139" width="285" height="52" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="207.5" y="170.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">bun run db:migrate:cms</text>
+  <rect x="350" y="139" width="70" height="52" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="191" width="50" height="52" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="40.0" y="222.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">(c)</text>
+  <rect x="65" y="191" width="285" height="52" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="207.5" y="222.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">bun run db:seed:cms:profil landing</text>
+  <rect x="350" y="191" width="70" height="52" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="243" width="50" height="52" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="40.0" y="274.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">(d)</text>
+  <rect x="65" y="243" width="285" height="52" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="207.5" y="274.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">bun run dev</text>
+  <rect x="350" y="243" width="70" height="52" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="295" width="50" height="52" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="40.0" y="326.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">(e)</text>
+  <rect x="65" y="295" width="285" height="52" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="207.5" y="326.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">bun run template:init</text>
+  <rect x="350" y="295" width="70" height="52" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="15" y="26" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#222222">Perintah</text>
+  <rect x="440" y="35" width="245" height="260" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="452" y="60" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#222222">Efek</text>
+  <text x="452" y="90" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">(i) mengisi konten contoh</text>
+  <text x="452" y="114" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">      lewat API CMS</text>
+  <text x="452" y="138" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">(ii) menjalankan situs</text>
+  <text x="452" y="162" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">      untuk pengembangan</text>
+  <text x="452" y="186" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">(iii) menyalakan PostgreSQL</text>
+  <text x="452" y="210" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">      lokal</text>
+  <text x="452" y="234" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">(iv) menulis ulang identitas</text>
+  <text x="452" y="258" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">      merek repositori</text>
+  <text x="452" y="282" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">(v) membuat tabel basis data</text>
+  <text x="350" y="385" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">Tulis nomor romawi efek pada kolom efek.</text>
+</svg>

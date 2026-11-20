@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 330" width="640" height="330" role="img" aria-labelledby="t d">
+  <title id="t">Tabel nilai tempat 8 bit komplemen dua</title>
+  <desc id="d">Baris nilai tempat 8 bit komplemen dua: -128, 64, 32, 16, 8, 4, 2, 1. Tiga baris kosong untuk menulis 100, hasil membalik bit, dan hasil menambah 1. Satu baris berisi bit 11101100 dengan kotak kosong untuk menulis jumlah nilai bertanda.</desc>
+  <rect width="640" height="330" fill="#ffffff"/>
+  <text x="350" y="24" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">nilai tempat (bit paling kiri bernilai negatif)</text>
+  <text x="210" y="52" font-family="sans-serif" font-size="14" fill="#b3261e" text-anchor="middle">-128</text>
+  <text x="250" y="52" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">64</text>
+  <text x="290" y="52" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">32</text>
+  <text x="330" y="52" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">16</text>
+  <text x="370" y="52" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">8</text>
+  <text x="410" y="52" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">4</text>
+  <text x="450" y="52" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">2</text>
+  <text x="490" y="52" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1</text>
+  <text x="10" y="88" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">1. +100</text>
+  <rect x="190" y="62" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="230" y="62" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="270" y="62" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="310" y="62" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="350" y="62" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="390" y="62" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="430" y="62" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="470" y="62" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="10" y="138" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">2. balik semua bit</text>
+  <rect x="190" y="112" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="230" y="112" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="270" y="112" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="310" y="112" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="350" y="112" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="390" y="112" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="430" y="112" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="470" y="112" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="10" y="188" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">3. tambah 1 = -100</text>
+  <rect x="190" y="162" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="230" y="162" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="270" y="162" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="310" y="162" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="350" y="162" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="390" y="162" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="430" y="162" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <rect x="470" y="162" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="10" y="238" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">4. bit diberikan</text>
+  <rect x="190" y="212" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="210" y="238" font-family="sans-serif" font-size="16" font-weight="bold" fill="#2a5d9f" text-anchor="middle">1</text>
+  <rect x="230" y="212" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="250" y="238" font-family="sans-serif" font-size="16" font-weight="bold" fill="#2a5d9f" text-anchor="middle">1</text>
+  <rect x="270" y="212" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="290" y="238" font-family="sans-serif" font-size="16" font-weight="bold" fill="#2a5d9f" text-anchor="middle">1</text>
+  <rect x="310" y="212" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="330" y="238" font-family="sans-serif" font-size="16" font-weight="bold" fill="#2a5d9f" text-anchor="middle">0</text>
+  <rect x="350" y="212" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="370" y="238" font-family="sans-serif" font-size="16" font-weight="bold" fill="#2a5d9f" text-anchor="middle">1</text>
+  <rect x="390" y="212" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="410" y="238" font-family="sans-serif" font-size="16" font-weight="bold" fill="#2a5d9f" text-anchor="middle">1</text>
+  <rect x="430" y="212" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="450" y="238" font-family="sans-serif" font-size="16" font-weight="bold" fill="#2a5d9f" text-anchor="middle">0</text>
+  <rect x="470" y="212" width="40" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="490" y="238" font-family="sans-serif" font-size="16" font-weight="bold" fill="#2a5d9f" text-anchor="middle">0</text>
+  <text x="520" y="238" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">= ______</text>
+  <text x="10" y="272" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">Baris 4: tuliskan nilai bertanda dan nilai tak bertanda.</text>
+  <text x="10" y="294" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">bertanda = ______   tak bertanda = ______</text>
+</svg>

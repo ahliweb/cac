@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 230" width="620" height="230" role="img" aria-labelledby="t d">
+  <title id="t">Bingkai pesan lima bagian</title>
+  <desc id="d">Lima kotak: penanda awal $, isi S,5, pemisah *, jumlah periksa kosong, penanda akhir garis baru. Dua kotak kosong untuk jumlah kode desimal dan modulo 256 heksadesimal.</desc>
+  <rect width="620" height="230" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker></defs>
+  <rect x="20" y="20" width="120" height="32" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="80.0" y="41.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">Penanda awal</text>
+  <rect x="20" y="52" width="120" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="80.0" y="79.0" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">$</text>
+  <rect x="140" y="20" width="90" height="32" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="185.0" y="41.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">Isi</text>
+  <rect x="140" y="52" width="90" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="185.0" y="79.0" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">S,5</text>
+  <rect x="230" y="20" width="90" height="32" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="275.0" y="41.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">Pemisah</text>
+  <rect x="230" y="52" width="90" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="275.0" y="79.0" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">*</text>
+  <rect x="320" y="20" width="140" height="32" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="390.0" y="41.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">Jumlah periksa</text>
+  <rect x="320" y="52" width="140" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="460" y="20" width="130" height="32" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="525.0" y="41.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">Penanda akhir</text>
+  <rect x="460" y="52" width="130" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="525.0" y="79.0" font-family="sans-serif" font-size="15" text-anchor="middle" fill="#222222">\n</text>
+  <text x="20" y="140" font-family="sans-serif" font-size="15" text-anchor="start" fill="#222222">jumlah kode isi (desimal):</text>
+  <rect x="300" y="118" width="200" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="20" y="190" font-family="sans-serif" font-size="15" text-anchor="start" fill="#222222">modulo 256 (heksadesimal):</text>
+  <rect x="300" y="168" width="200" height="32" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+</svg>

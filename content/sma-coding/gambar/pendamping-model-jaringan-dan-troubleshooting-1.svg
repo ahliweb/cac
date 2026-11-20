@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 330" width="640" height="330" role="img" aria-labelledby="t d">
+  <title id="t">Model empat lapis jaringan dengan kotak contoh kosong</title>
+  <desc id="d">Empat lapisan bertumpuk dari atas ke bawah: aplikasi, transport, internet, dan akses jaringan. Di tiap lapisan ada dua bagian kosong bergaris putus-putus: satu untuk menulis tugas lapisan dan satu untuk menulis contoh. Garis di kiri menunjukkan data dipotong menjadi paket dan tiap lapisan menambahkan keterangan.</desc>
+  <rect width="640" height="330" fill="#ffffff"/>
+  <text x="10" y="22" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">Model empat lapis</text>
+  <text x="130" y="22" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Tugas</text>
+  <text x="400" y="22" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Contoh</text>
+  <rect x="10" y="34" width="120" height="62" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2.5"/>
+  <text x="70" y="70" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">1. Aplikasi</text>
+  <rect x="140" y="34" width="250" height="62" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="400" y="34" width="230" height="62" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="10" y="106" width="120" height="62" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2.5"/>
+  <text x="70" y="142" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">2. Transport</text>
+  <rect x="140" y="106" width="250" height="62" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="400" y="106" width="230" height="62" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="10" y="178" width="120" height="62" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2.5"/>
+  <text x="70" y="214" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">3. Internet</text>
+  <rect x="140" y="178" width="250" height="62" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="400" y="178" width="230" height="62" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="10" y="250" width="120" height="62" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2.5"/>
+  <text x="70" y="286" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">4. Akses jaringan</text>
+  <rect x="140" y="250" width="250" height="62" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="400" y="250" width="230" height="62" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="10" y="326" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">Isi tugas dan contoh tiap lapisan.</text>
+</svg>

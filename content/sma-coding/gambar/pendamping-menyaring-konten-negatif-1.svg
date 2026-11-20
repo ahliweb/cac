@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 200" width="640" height="200" role="img" aria-labelledby="t d">
+  <title id="t">Lima kotak urutan langkah menjaga diri dengan slot huruf kosong</title>
+  <desc id="d">Lima kotak berurutan dari kiri ke kanan, berlabel langkah 1 sampai langkah 5, dihubungkan panah. Di tiap kotak ada slot kosong bergaris putus-putus untuk menulis huruf langkah.</desc>
+  <rect width="640" height="200" fill="#ffffff"/>
+  <defs><marker id="p" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#2a5d9f"/></marker></defs>
+  <text x="10" y="24" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">Urutan lima langkah menjaga diri</text>
+  <rect x="10" y="44" width="100" height="90" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="60" y="68" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">langkah 1</text>
+  <rect x="35" y="82" width="50" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <line x1="110" y1="89" x2="134" y2="89" stroke="#2a5d9f" stroke-width="2" marker-end="url(#p)"/>
+  <rect x="134" y="44" width="100" height="90" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="184" y="68" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">langkah 2</text>
+  <rect x="159" y="82" width="50" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <line x1="234" y1="89" x2="258" y2="89" stroke="#2a5d9f" stroke-width="2" marker-end="url(#p)"/>
+  <rect x="258" y="44" width="100" height="90" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="308" y="68" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">langkah 3</text>
+  <rect x="283" y="82" width="50" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <line x1="358" y1="89" x2="382" y2="89" stroke="#2a5d9f" stroke-width="2" marker-end="url(#p)"/>
+  <rect x="382" y="44" width="100" height="90" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="432" y="68" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">langkah 4</text>
+  <rect x="407" y="82" width="50" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <line x1="482" y1="89" x2="506" y2="89" stroke="#2a5d9f" stroke-width="2" marker-end="url(#p)"/>
+  <rect x="506" y="44" width="100" height="90" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="556" y="68" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">langkah 5</text>
+  <rect x="531" y="82" width="50" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="10" y="166" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">Tulis huruf langkah (A sampai E) di kotak putus-putus,</text>
+  <text x="10" y="186" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">menurut urutan yang benar dari kiri ke kanan.</text>
+</svg>

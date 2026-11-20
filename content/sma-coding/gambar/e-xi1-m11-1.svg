@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 400" width="680" height="400" role="img" aria-labelledby="t d">
+  <title id="t">Tiga histogram 1000 shot yang masih kosong</title>
+  <desc id="d">Tiga panel: H pada nol, keadaan 0,6 dan 0,8, dan H Z H pada nol. Tiap panel punya dua lajur batang berlabel hasil 0 dan hasil 1 dengan skala 0 sampai 1000, dan kotak kosong untuk harapan hasil 0 dan simpangan.</desc>
+  <rect width="680" height="400" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <rect x="15" y="10" width="650" height="120" rx="6" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+    <text x="25" y="32" font-weight="bold">H pada |0&gt;</text>
+    <text x="25" y="63">hasil 0</text>
+    <rect x="100" y="44" width="400" height="26" fill="#ffffff" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="5 3"/>
+    <text x="25" y="97">hasil 1</text>
+    <rect x="100" y="78" width="400" height="26" fill="#ffffff" stroke="#b3261e" stroke-width="2" stroke-dasharray="5 3"/>
+    <line x1="100" y1="108" x2="100" y2="114" stroke="#222222" stroke-width="1.5"/>
+    <text x="100" y="128" text-anchor="middle" font-size="14">0</text>
+    <line x1="200" y1="108" x2="200" y2="114" stroke="#222222" stroke-width="1.5"/>
+    <text x="200" y="128" text-anchor="middle" font-size="14">250</text>
+    <line x1="300" y1="108" x2="300" y2="114" stroke="#222222" stroke-width="1.5"/>
+    <text x="300" y="128" text-anchor="middle" font-size="14">500</text>
+    <line x1="400" y1="108" x2="400" y2="114" stroke="#222222" stroke-width="1.5"/>
+    <text x="400" y="128" text-anchor="middle" font-size="14">750</text>
+    <line x1="500" y1="108" x2="500" y2="114" stroke="#222222" stroke-width="1.5"/>
+    <text x="500" y="128" text-anchor="middle" font-size="14">1000</text>
+    <text x="520" y="62">harapan hasil 0:</text>
+    <rect x="595" y="46" width="62" height="24" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+    <text x="520" y="96">simpangan:</text>
+    <rect x="595" y="80" width="62" height="24" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+    <rect x="15" y="140" width="650" height="120" rx="6" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+    <text x="25" y="162" font-weight="bold">keadaan (0,6 ; 0,8)</text>
+    <text x="25" y="193">hasil 0</text>
+    <rect x="100" y="174" width="400" height="26" fill="#ffffff" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="5 3"/>
+    <text x="25" y="227">hasil 1</text>
+    <rect x="100" y="208" width="400" height="26" fill="#ffffff" stroke="#b3261e" stroke-width="2" stroke-dasharray="5 3"/>
+    <line x1="100" y1="238" x2="100" y2="244" stroke="#222222" stroke-width="1.5"/>
+    <text x="100" y="258" text-anchor="middle" font-size="14">0</text>
+    <line x1="200" y1="238" x2="200" y2="244" stroke="#222222" stroke-width="1.5"/>
+    <text x="200" y="258" text-anchor="middle" font-size="14">250</text>
+    <line x1="300" y1="238" x2="300" y2="244" stroke="#222222" stroke-width="1.5"/>
+    <text x="300" y="258" text-anchor="middle" font-size="14">500</text>
+    <line x1="400" y1="238" x2="400" y2="244" stroke="#222222" stroke-width="1.5"/>
+    <text x="400" y="258" text-anchor="middle" font-size="14">750</text>
+    <line x1="500" y1="238" x2="500" y2="244" stroke="#222222" stroke-width="1.5"/>
+    <text x="500" y="258" text-anchor="middle" font-size="14">1000</text>
+    <text x="520" y="192">harapan hasil 0:</text>
+    <rect x="595" y="176" width="62" height="24" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+    <text x="520" y="226">simpangan:</text>
+    <rect x="595" y="210" width="62" height="24" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+    <rect x="15" y="270" width="650" height="120" rx="6" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+    <text x="25" y="292" font-weight="bold">H, Z, H pada |0&gt;</text>
+    <text x="25" y="323">hasil 0</text>
+    <rect x="100" y="304" width="400" height="26" fill="#ffffff" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="5 3"/>
+    <text x="25" y="357">hasil 1</text>
+    <rect x="100" y="338" width="400" height="26" fill="#ffffff" stroke="#b3261e" stroke-width="2" stroke-dasharray="5 3"/>
+    <line x1="100" y1="368" x2="100" y2="374" stroke="#222222" stroke-width="1.5"/>
+    <text x="100" y="388" text-anchor="middle" font-size="14">0</text>
+    <line x1="200" y1="368" x2="200" y2="374" stroke="#222222" stroke-width="1.5"/>
+    <text x="200" y="388" text-anchor="middle" font-size="14">250</text>
+    <line x1="300" y1="368" x2="300" y2="374" stroke="#222222" stroke-width="1.5"/>
+    <text x="300" y="388" text-anchor="middle" font-size="14">500</text>
+    <line x1="400" y1="368" x2="400" y2="374" stroke="#222222" stroke-width="1.5"/>
+    <text x="400" y="388" text-anchor="middle" font-size="14">750</text>
+    <line x1="500" y1="368" x2="500" y2="374" stroke="#222222" stroke-width="1.5"/>
+    <text x="500" y="388" text-anchor="middle" font-size="14">1000</text>
+    <text x="520" y="322">harapan hasil 0:</text>
+    <rect x="595" y="306" width="62" height="24" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+    <text x="520" y="356">simpangan:</text>
+    <rect x="595" y="340" width="62" height="24" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  </g>
+</svg>

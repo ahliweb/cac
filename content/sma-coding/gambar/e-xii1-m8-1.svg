@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 300" width="660" height="300" role="img" aria-labelledby="t d">
+<title id="t">Sirkuit Bell berderau dengan kotak hitungan hasil</title>
+<desc id="d">Dua kawat qubit. Pada kawat atas ada gerbang H lalu titik kontrol CNOT yang tersambung ke target pada kawat bawah. Di kanan sirkuit ada empat kotak hasil 00, 01, 10, 11 dengan isian jumlah dari 1000 shot yang kosong. Setelah tiap gerbang bisa terjadi kesalahan dengan peluang p.</desc>
+
+<rect width="660" height="300" fill="#ffffff"/>
+<text x="20" y="60" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">qubit 0</text>
+<text x="20" y="130" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">qubit 1</text>
+<line x1="90" y1="56" x2="400" y2="56" stroke="#222222" stroke-width="2"/>
+<line x1="90" y1="126" x2="400" y2="126" stroke="#222222" stroke-width="2"/>
+<rect x="120" y="36" width="40" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="140" y="62" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold">H</text>
+<circle cx="260" cy="56" r="6" fill="#222222" stroke="#222222" stroke-width="2"/>
+<line x1="260" y1="56" x2="260" y2="126" stroke="#222222" stroke-width="2"/>
+<circle cx="260" cy="126" r="14" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+<line x1="246" y1="126" x2="274" y2="126" stroke="#222222" stroke-width="2"/>
+<line x1="260" y1="112" x2="260" y2="140" stroke="#222222" stroke-width="2"/>
+<text x="260" y="26" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold">CNOT</text>
+<text x="190" y="48" font-family="sans-serif" font-size="14" fill="#b3261e" text-anchor="middle" font-weight="bold">p ?</text>
+<text x="310" y="48" font-family="sans-serif" font-size="14" fill="#b3261e" text-anchor="middle" font-weight="bold">p ?</text>
+<text x="310" y="118" font-family="sans-serif" font-size="14" fill="#b3261e" text-anchor="middle" font-weight="bold">p ?</text>
+<text x="250" y="172" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Setelah tiap gerbang: kesalahan dengan peluang p, p = 0,10</text>
+<rect x="60" y="200" width="110" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="115" y="221" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold">hasil 00</text>
+<rect x="60" y="230" width="110" height="50" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="200" y="200" width="110" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="255" y="221" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold">hasil 01</text>
+<rect x="200" y="230" width="110" height="50" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="340" y="200" width="110" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="395" y="221" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold">hasil 10</text>
+<rect x="340" y="230" width="110" height="50" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<rect x="480" y="200" width="110" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="535" y="221" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold">hasil 11</text>
+<rect x="480" y="230" width="110" height="50" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="330" y="293" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">jumlah dari 1000 shot</text>
+</svg>

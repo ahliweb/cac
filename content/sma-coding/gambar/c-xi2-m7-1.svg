@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 330" width="640" height="330" role="img" aria-labelledby="t d">
+  <title id="t">Pesan JSON dan penyangga 20 byte</title>
+  <desc id="d">Bentuk pesan dengan bidang sensor, suhu, dan detik, tiga baris isian untuk pesan, dan dua baris penyangga masing-masing sepuluh kotak bernomor 1 sampai 20.</desc>
+  <rect width="640" height="330" fill="#ffffff"/>
+  <text x="20" y="28" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222">{"sensor":"...","suhu":...,"detik":...}</text>
+  <g font-family="sans-serif" font-size="14" fill="#2a5d9f"><text x="20" y="50">bidang 1: sensor (teks)</text><text x="230" y="50">bidang 2: suhu</text><text x="400" y="50">bidang 3: detik</text></g>
+  <g font-family="sans-serif" font-size="15" fill="#222222">
+    <text x="20" y="90">1.  ______________________________________________</text>
+    <text x="20" y="124">2.  ______________________________________________</text>
+    <text x="20" y="158">3.  ______________________________________________</text>
+  </g>
+  <text x="20" y="206" font-family="sans-serif" font-size="14" fill="#222222">Penyangga 20 byte, satu karakter per kotak (pesan 1):</text>
+  <rect x="20" y="218" width="54" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <rect x="78" y="218" width="54" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <rect x="136" y="218" width="54" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <rect x="194" y="218" width="54" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <rect x="252" y="218" width="54" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <rect x="310" y="218" width="54" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <rect x="368" y="218" width="54" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <rect x="426" y="218" width="54" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <rect x="484" y="218" width="54" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <rect x="542" y="218" width="54" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <rect x="20" y="268" width="54" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <rect x="78" y="268" width="54" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <rect x="136" y="268" width="54" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <rect x="194" y="268" width="54" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <rect x="252" y="268" width="54" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <rect x="310" y="268" width="54" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <rect x="368" y="268" width="54" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <rect x="426" y="268" width="54" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <rect x="484" y="268" width="54" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <rect x="542" y="268" width="54" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <text x="23" y="231" font-size="14">1</text>
+    <text x="81" y="231" font-size="14">2</text>
+    <text x="139" y="231" font-size="14">3</text>
+    <text x="197" y="231" font-size="14">4</text>
+    <text x="255" y="231" font-size="14">5</text>
+    <text x="313" y="231" font-size="14">6</text>
+    <text x="371" y="231" font-size="14">7</text>
+    <text x="429" y="231" font-size="14">8</text>
+    <text x="487" y="231" font-size="14">9</text>
+    <text x="545" y="231" font-size="14">10</text>
+    <text x="23" y="281" font-size="14">11</text>
+    <text x="81" y="281" font-size="14">12</text>
+    <text x="139" y="281" font-size="14">13</text>
+    <text x="197" y="281" font-size="14">14</text>
+    <text x="255" y="281" font-size="14">15</text>
+    <text x="313" y="281" font-size="14">16</text>
+    <text x="371" y="281" font-size="14">17</text>
+    <text x="429" y="281" font-size="14">18</text>
+    <text x="487" y="281" font-size="14">19</text>
+    <text x="545" y="281" font-size="14">20</text>
+  </g></svg>

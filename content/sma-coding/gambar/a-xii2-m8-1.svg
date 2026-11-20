@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 440" width="540" height="440" role="img" aria-labelledby="t d">
+<title id="t">Kisi pasangan delapan kupon</title>
+<desc id="d">Kisi delapan kali delapan: baris i dan kolom j berlabel nilai kupon 3, 7, 5, 5, 2, 8, 5, 5. Hanya sel dengan i lebih kecil dari j yang putih; sel lain abu-abu. Pelajar menandai pasangan yang jumlahnya T sama dengan 10.</desc>
+<rect width="540" height="440" fill="#ffffff"/>
+
+<g font-family="sans-serif">
+<text x="20" y="28" font-size="14" text-anchor="start" fill="#222222">T = 10. Beri tanda X pada pasangan (i, j), i &lt; j, yang jumlah</text>
+<text x="20" y="46" font-size="14" text-anchor="start" fill="#222222">nilainya T. Sel abu-abu tidak dipakai.</text>
+<text x="108.0" y="89" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">3</text>
+<text x="144.0" y="89" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">7</text>
+<text x="180.0" y="89" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">5</text>
+<text x="216.0" y="89" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">5</text>
+<text x="252.0" y="89" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">2</text>
+<text x="288.0" y="89" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">8</text>
+<text x="324.0" y="89" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">5</text>
+<text x="360.0" y="89" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">5</text>
+<text x="82" y="118.0" font-size="15" text-anchor="end" font-weight="bold" fill="#222222">3</text>
+<rect x="90" y="95" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="126" y="95" width="36" height="36" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="162" y="95" width="36" height="36" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="198" y="95" width="36" height="36" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="234" y="95" width="36" height="36" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="270" y="95" width="36" height="36" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="306" y="95" width="36" height="36" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="342" y="95" width="36" height="36" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="82" y="154.0" font-size="15" text-anchor="end" font-weight="bold" fill="#222222">7</text>
+<rect x="90" y="131" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="126" y="131" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="162" y="131" width="36" height="36" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="198" y="131" width="36" height="36" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="234" y="131" width="36" height="36" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="270" y="131" width="36" height="36" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="306" y="131" width="36" height="36" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="342" y="131" width="36" height="36" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="82" y="190.0" font-size="15" text-anchor="end" font-weight="bold" fill="#222222">5</text>
+<rect x="90" y="167" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="126" y="167" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="162" y="167" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="198" y="167" width="36" height="36" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="234" y="167" width="36" height="36" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="270" y="167" width="36" height="36" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="306" y="167" width="36" height="36" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="342" y="167" width="36" height="36" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="82" y="226.0" font-size="15" text-anchor="end" font-weight="bold" fill="#222222">5</text>
+<rect x="90" y="203" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="126" y="203" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="162" y="203" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="198" y="203" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="234" y="203" width="36" height="36" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="270" y="203" width="36" height="36" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="306" y="203" width="36" height="36" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="342" y="203" width="36" height="36" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="82" y="262.0" font-size="15" text-anchor="end" font-weight="bold" fill="#222222">2</text>
+<rect x="90" y="239" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="126" y="239" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="162" y="239" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="198" y="239" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="234" y="239" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="270" y="239" width="36" height="36" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="306" y="239" width="36" height="36" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="342" y="239" width="36" height="36" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="82" y="298.0" font-size="15" text-anchor="end" font-weight="bold" fill="#222222">8</text>
+<rect x="90" y="275" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="126" y="275" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="162" y="275" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="198" y="275" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="234" y="275" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="270" y="275" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="306" y="275" width="36" height="36" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<rect x="342" y="275" width="36" height="36" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="82" y="334.0" font-size="15" text-anchor="end" font-weight="bold" fill="#222222">5</text>
+<rect x="90" y="311" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="126" y="311" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="162" y="311" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="198" y="311" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="234" y="311" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="270" y="311" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="306" y="311" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="342" y="311" width="36" height="36" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="82" y="370.0" font-size="15" text-anchor="end" font-weight="bold" fill="#222222">5</text>
+<rect x="90" y="347" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="126" y="347" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="162" y="347" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="198" y="347" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="234" y="347" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="270" y="347" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="306" y="347" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<rect x="342" y="347" width="36" height="36" rx="3" fill="#dddddd" stroke="#999999" stroke-width="1.5"/>
+<text x="20" y="411" font-size="14" text-anchor="start" fill="#222222">Banyak X: ______   Banyak sel putih: ______</text>
+</g>
+</svg>

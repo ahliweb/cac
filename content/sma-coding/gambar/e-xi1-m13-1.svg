@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 360" width="700" height="360" role="img" aria-labelledby="t d">
+  <title id="t">Tabel uji frekuensi untuk sirkuit H dengan kolom isian</title>
+  <desc id="d">Tabel uji frekuensi untuk sirkuit H dengan 10000 bit. Lima baris: bit 1 dan pasangan 00, 01, 10, 11. Kolom harapan, simpangan wajar, dan hasil terisi. Kolom selisih, selisih dalam simpangan, dan lolos atau tidak kosong untuk diisi.</desc>
+  <rect width="700" height="360" fill="#ffffff"/>
+  <text x="350" y="24" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Sirkuit H, 10000 bit: bandingkan hasil dengan harapan</text>
+  <rect x="10" y="40" width="108" height="48" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="64.0" y="69.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">hitungan</text>
+  <rect x="118" y="40" width="82" height="48" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="159.0" y="69.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">harapan</text>
+  <rect x="200" y="40" width="98" height="48" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="249.0" y="69.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">simpangan</text>
+  <rect x="298" y="40" width="72" height="48" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="334.0" y="69.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">hasil</text>
+  <rect x="370" y="40" width="90" height="48" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="415.0" y="69.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">selisih</text>
+  <rect x="460" y="40" width="160" height="48" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="540.0" y="69.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">selisih / simpangan</text>
+  <rect x="620" y="40" width="70" height="48" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="655.0" y="69.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">lolos?</text>
+  <rect x="10" y="88" width="108" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="64.0" y="116.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">bit 1</text>
+  <rect x="118" y="88" width="82" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="159.0" y="116.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">5000</text>
+  <rect x="200" y="88" width="98" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="249.0" y="116.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">50</text>
+  <rect x="298" y="88" width="72" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="334.0" y="116.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">5053</text>
+  <rect x="370" y="88" width="90" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="374" y="92" width="82" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="460" y="88" width="160" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="464" y="92" width="152" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="620" y="88" width="70" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="624" y="92" width="62" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="10" y="134" width="108" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="64.0" y="162.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">pasangan 00</text>
+  <rect x="118" y="134" width="82" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="159.0" y="162.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1250</text>
+  <rect x="200" y="134" width="98" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="249.0" y="162.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">30,6</text>
+  <rect x="298" y="134" width="72" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="334.0" y="162.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1198</text>
+  <rect x="370" y="134" width="90" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="374" y="138" width="82" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="460" y="134" width="160" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="464" y="138" width="152" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="620" y="134" width="70" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="624" y="138" width="62" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="10" y="180" width="108" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="64.0" y="208.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">pasangan 01</text>
+  <rect x="118" y="180" width="82" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="159.0" y="208.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1250</text>
+  <rect x="200" y="180" width="98" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="249.0" y="208.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">30,6</text>
+  <rect x="298" y="180" width="72" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="334.0" y="208.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1278</text>
+  <rect x="370" y="180" width="90" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="374" y="184" width="82" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="460" y="180" width="160" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="464" y="184" width="152" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="620" y="180" width="70" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="624" y="184" width="62" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="10" y="226" width="108" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="64.0" y="254.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">pasangan 10</text>
+  <rect x="118" y="226" width="82" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="159.0" y="254.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1250</text>
+  <rect x="200" y="226" width="98" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="249.0" y="254.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">30,6</text>
+  <rect x="298" y="226" width="72" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="334.0" y="254.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1273</text>
+  <rect x="370" y="226" width="90" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="374" y="230" width="82" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="460" y="226" width="160" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="464" y="230" width="152" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="620" y="226" width="70" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="624" y="230" width="62" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="10" y="272" width="108" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="64.0" y="300.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">pasangan 11</text>
+  <rect x="118" y="272" width="82" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="159.0" y="300.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1250</text>
+  <rect x="200" y="272" width="98" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="249.0" y="300.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">30,6</text>
+  <rect x="298" y="272" width="72" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="334.0" y="300.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1251</text>
+  <rect x="370" y="272" width="90" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="374" y="276" width="82" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="460" y="272" width="160" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="464" y="276" width="152" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="620" y="272" width="70" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="624" y="276" width="62" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="10" y="346" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">Isi tiga kolom terakhir tiap baris.</text>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" width="680" height="300" role="img" aria-labelledby="t d">
+  <title id="t">Tabel peluang Grover tiga qubit dan pemetaan label</title>
+  <desc id="d">Kiri: tabel pengulangan t sama dengan 1, 2, 3 dengan kolom peluang item bertanda dan perkiraan jumlah dari 1000 shot, sel kosong. Kanan: pemetaan label Qiskit 011 ke label di simulator dan indeksnya, sel kosong.</desc>
+  <rect width="680" height="300" fill="#ffffff"/>
+  <text x="190" y="22" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Grover N = 8, item bertanda 110 (label Qiskit)</text>
+  <rect x="10" y="34" width="60" height="46" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="40.0" y="62.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">t</text>
+  <rect x="70" y="34" width="150" height="46" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="145.0" y="62.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">peluang item</text>
+  <rect x="220" y="34" width="150" height="46" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="295.0" y="62.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">dari 1000 shot</text>
+  <rect x="10" y="80" width="60" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="40.0" y="108.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1</text>
+  <rect x="74" y="84" width="142" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="70" y="80" width="150" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="224" y="84" width="142" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="220" y="80" width="150" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="10" y="126" width="60" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="40.0" y="154.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">2</text>
+  <rect x="74" y="130" width="142" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="70" y="126" width="150" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="224" y="130" width="142" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="220" y="126" width="150" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="10" y="172" width="60" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="40.0" y="200.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">3</text>
+  <rect x="74" y="176" width="142" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="70" y="172" width="150" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="224" y="176" width="142" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="220" y="172" width="150" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="10" y="236" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">Rumus: sin^2((2t + 1) theta), sin(theta) = 1/akar 8.</text>
+  <text x="530" y="22" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Pemetaan label (tandai 011)</text>
+  <rect x="400" y="34" width="130" height="46" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="465.0" y="62.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">label</text>
+  <rect x="530" y="34" width="140" height="46" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="600.0" y="62.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">isi</text>
+  <rect x="400" y="80" width="130" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="465.0" y="108.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Qiskit</text>
+  <rect x="530" y="80" width="140" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="600.0" y="108.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">011</text>
+  <rect x="400" y="126" width="130" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="465.0" y="154.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">simulatorku</text>
+  <rect x="534" y="130" width="132" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="530" y="126" width="140" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="400" y="172" width="130" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="465.0" y="200.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">indeks</text>
+  <rect x="534" y="176" width="132" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="530" y="172" width="140" height="46" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="10" y="266" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">Isi tabel; di simulator urutan bit dibalik (lihat modul e-xii1-m9).</text>
+</svg>

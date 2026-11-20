@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 260" width="576" height="260" role="img" aria-labelledby="t d">
+  <title id="t">Lembar anggaran dengan subtotal kosong</title>
+  <desc id="d">Tabel empat kolom: Layanan, Pemakaian, Tarif ilustrasi, dan Subtotal. Tiga layanan: komputer 30 hari 24 jam, ruang simpan 500 gigabita, data keluar 2 gigabita dikali 300 unduhan. Kolom subtotal dan baris total kosong untuk diisi.</desc>
+  <rect width="576" height="260" fill="#ffffff"/>
+  <text x="230" y="30" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Lembar anggaran sintetis (angka ilustrasi)</text>
+  <rect x="20" y="50" width="110" height="38" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="75.0" y="74.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">Layanan</text>
+  <rect x="130" y="50" width="155" height="38" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="207.5" y="74.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">Pemakaian</text>
+  <rect x="285" y="50" width="161" height="38" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="365.5" y="74.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">Tarif (ilustrasi)</text>
+  <rect x="446" y="50" width="110" height="38" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="501.0" y="74.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">Subtotal</text>
+  <rect x="20" y="88" width="110" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="75.0" y="112.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">komputer</text>
+  <rect x="130" y="88" width="155" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="207.5" y="112.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">30 hari x 24 jam</text>
+  <rect x="285" y="88" width="161" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="365.5" y="112.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">0,05 per jam</text>
+  <rect x="446" y="88" width="110" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="126" width="110" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="75.0" y="150.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">ruang simpan</text>
+  <rect x="130" y="126" width="155" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="207.5" y="150.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">500 gigabita</text>
+  <rect x="285" y="126" width="161" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="365.5" y="150.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">0,02 per GB/bln</text>
+  <rect x="446" y="126" width="110" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="164" width="110" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="75.0" y="188.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">data keluar</text>
+  <rect x="130" y="164" width="155" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="207.5" y="188.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">2 GB x 300 unduhan</text>
+  <rect x="285" y="164" width="161" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="365.5" y="188.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">0,09 per GB</text>
+  <rect x="446" y="164" width="110" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="202" width="110" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="75.0" y="226.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">total</text>
+  <rect x="130" y="202" width="155" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="207.5" y="226.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle"></text>
+  <rect x="285" y="202" width="161" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="365.5" y="226.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle"></text>
+  <rect x="446" y="202" width="110" height="38" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+</svg>

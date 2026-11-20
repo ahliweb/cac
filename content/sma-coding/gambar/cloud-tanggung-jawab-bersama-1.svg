@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 574 310" width="574" height="310" role="img" aria-labelledby="t d">
+  <title id="t">Tabel pembagian tanggung jawab dengan sel kosong</title>
+  <desc id="d">Tabel lima baris bagian (gedung listrik perangkat keras, sistem operasi dan pembaruannya, aplikasi, data dan siapa boleh mengakses, kata sandi dan akun pengguna) dan tiga kolom IaaS, PaaS, SaaS. Semua sel kosong untuk diisi penyedia atau pengguna.</desc>
+  <rect width="574" height="310" fill="#ffffff"/>
+  <text x="270" y="30" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Siapa bertanggung jawab: penyedia atau pengguna</text>
+  <rect x="20" y="50" width="264" height="40" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="152.0" y="75.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">Bagian</text>
+  <rect x="284" y="50" width="90" height="40" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="329.0" y="75.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">IaaS</text>
+  <rect x="374" y="50" width="90" height="40" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="419.0" y="75.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">PaaS</text>
+  <rect x="464" y="50" width="90" height="40" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="509.0" y="75.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2a5d9f" text-anchor="middle">SaaS</text>
+  <rect x="20" y="90" width="264" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="152.0" y="115.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Gedung, listrik, perangkat keras</text>
+  <rect x="284" y="90" width="90" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="374" y="90" width="90" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="464" y="90" width="90" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="130" width="264" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="152.0" y="155.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Sistem operasi dan pembaruannya</text>
+  <rect x="284" y="130" width="90" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="374" y="130" width="90" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="464" y="130" width="90" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="170" width="264" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="152.0" y="195.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Aplikasi</text>
+  <rect x="284" y="170" width="90" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="374" y="170" width="90" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="464" y="170" width="90" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="210" width="264" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="152.0" y="235.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Data dan siapa boleh mengakses</text>
+  <rect x="284" y="210" width="90" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="374" y="210" width="90" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="464" y="210" width="90" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="250" width="264" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="152.0" y="275.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Kata sandi dan akun pengguna</text>
+  <rect x="284" y="250" width="90" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="374" y="250" width="90" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="464" y="250" width="90" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+</svg>

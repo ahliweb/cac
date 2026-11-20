@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 230" width="540" height="230" role="img" aria-labelledby="t d">
+<title id="t">Sepuluh lantai lift dengan kolom jarak kosong</title>
+<desc id="d">Sepuluh kotak lantai 1 sampai 10 berjajar. Di bawah tiap kotak ada kotak kosong untuk jarak penekanan tombol dari lantai 2; di lantai 2 sudah tertulis 0. Tombol naik 4 lantai dan turun 3 lantai.</desc>
+<rect width="540" height="230" fill="#ffffff"/>
+
+<g font-family="sans-serif">
+<rect x="20" y="45" width="44" height="34" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="42.0" y="67.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">1</text>
+<rect x="20" y="88" width="44" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+<rect x="68" y="45" width="44" height="34" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="90.0" y="67.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">2</text>
+<rect x="68" y="88" width="44" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="90.0" y="110.25" font-size="15" text-anchor="middle" fill="#222222">0</text>
+<rect x="116" y="45" width="44" height="34" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="138.0" y="67.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">3</text>
+<rect x="116" y="88" width="44" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+<rect x="164" y="45" width="44" height="34" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="186.0" y="67.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">4</text>
+<rect x="164" y="88" width="44" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+<rect x="212" y="45" width="44" height="34" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="234.0" y="67.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">5</text>
+<rect x="212" y="88" width="44" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+<rect x="260" y="45" width="44" height="34" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="282.0" y="67.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">6</text>
+<rect x="260" y="88" width="44" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+<rect x="308" y="45" width="44" height="34" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="330.0" y="67.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">7</text>
+<rect x="308" y="88" width="44" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+<rect x="356" y="45" width="44" height="34" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="378.0" y="67.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">8</text>
+<rect x="356" y="88" width="44" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+<rect x="404" y="45" width="44" height="34" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="426.0" y="67.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">9</text>
+<rect x="404" y="88" width="44" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+<rect x="452" y="45" width="44" height="34" rx="3" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+<text x="474.0" y="67.25" font-size="15" text-anchor="middle" font-weight="bold" fill="#222222">10</text>
+<rect x="452" y="88" width="44" height="34" rx="3" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+<text x="20" y="32" font-size="14" text-anchor="start" font-weight="bold" fill="#222222">lantai</text>
+<text x="20" y="145" font-size="14" text-anchor="start" fill="#222222">jarak (jumlah penekanan dari lantai 2); kosongkan bila tak terjangkau</text>
+<text x="20" y="175" font-size="14" text-anchor="start" fill="#222222">Tombol: naik 4 lantai, atau turun 3 lantai bila tujuannya ada.</text>
+<text x="20" y="200" font-size="14" text-anchor="start" fill="#222222">Isi jarak tiap lantai.</text>
+</g>
+</svg>

@@ -911,11 +911,12 @@ that merely begins with the word (`Nama binatang: kucing`) is not a field.
 $ cac render modul --program tk-coding --id tk-a1-m1 --lembar
 cac render modul: the learner sheet of "Kegiatan sehari-hariku" has a name or identity field of the child: line 3 ("Nama: ______"). A child's sheet carries none; remove it from the sheet.
 [exit 1]
-
-$ cac render modul --program sma-coding --id a-x1-m10 --lembar
-cac render modul: module "a-x1-m10" has no learner sheet.
-[exit 2]
 ```
+
+A module whose index entry has no `learnerSheetPath` is refused with exit
+`2` and `cac render modul: module "<id>" has no learner sheet.`. Since every
+module of the seven programmes with an index now has a sheet, and their schemas
+require one, a valid index no longer reaches this message.
 
 The other programmes (`smp-coding`, `kuliah-coding`, `dewasa-coding`)
 render exactly like `sma-coding` modules: the guide for the pupil, student
@@ -930,8 +931,9 @@ anak**`), a banner taken from the **sheet's** status (`draf`, `ditinjau` or
 `ditarik`: the wording says "Lembar ini ..."; none for `disetujui`), the sheet
 verbatim, and a footer `Status lembar: <status>.` with the programme and, for an
 approved sheet, the date and reviewer role of `learnerSheetReview`. The rule
-about a name or identity field applies to these sheets too. Worksheets are
-optional per module for now; none has been added yet.
+about a name or identity field applies to these sheets too. Every module of
+the five programmes now has a worksheet, all `draf` (#285 to #289), and their
+schemas require one (`*_LEARNER_SHEET_REQUIRED` `true`).
 
 `plan` and `render lembar-siswa` still refuse these programmes (they read
 the OSN corpus, or only `sma-coding`'s); the message is honest about it and

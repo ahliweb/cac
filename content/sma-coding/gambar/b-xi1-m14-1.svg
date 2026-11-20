@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 260" width="600" height="260" role="img" aria-labelledby="t d">
+  <title id="t">Graf soal telusur BFS</title>
+  <desc id="d">Graf dengan simpul K, L, M, N, O, P, Q. Sisi: K-L, K-M, L-N, M-N, N-O, P-Q. Di bawah ada tabel kosong dengan kolom simpul, antrian, dan jarak.</desc>
+  <rect width="600" height="260" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="16" fill="#222222" text-anchor="middle">
+    <g stroke="#222222" stroke-width="2">
+      <line x1="60" y1="60" x2="150" y2="30"/><line x1="60" y1="60" x2="150" y2="100"/>
+      <line x1="150" y1="30" x2="250" y2="60"/><line x1="150" y1="100" x2="250" y2="60"/>
+      <line x1="250" y1="60" x2="340" y2="60"/>
+      <line x1="460" y1="60" x2="550" y2="60"/>
+    </g>
+    <g stroke="#2a5d9f" stroke-width="2" fill="#f2f2f2">
+      <circle cx="60" cy="60" r="18"/><circle cx="150" cy="30" r="18"/><circle cx="150" cy="100" r="18"/>
+      <circle cx="250" cy="60" r="18"/><circle cx="340" cy="60" r="18"/><circle cx="460" cy="60" r="18"/><circle cx="550" cy="60" r="18"/>
+    </g>
+    <text x="60" y="66">K</text><text x="150" y="36">L</text><text x="150" y="106">M</text>
+    <text x="250" y="66">N</text><text x="340" y="66">O</text><text x="460" y="66">P</text><text x="550" y="66">Q</text>
+    <g stroke="#222222" stroke-width="2" fill="#ffffff">
+      <rect x="10" y="140" width="100" height="30" fill="#f2f2f2"/><rect x="110" y="140" width="330" height="30" fill="#f2f2f2"/><rect x="440" y="140" width="150" height="30" fill="#f2f2f2"/>
+      <rect x="10" y="170" width="100" height="30"/><rect x="110" y="170" width="330" height="30"/><rect x="440" y="170" width="150" height="30"/>
+      <rect x="10" y="200" width="100" height="30"/><rect x="110" y="200" width="330" height="30"/><rect x="440" y="200" width="150" height="30"/>
+      <rect x="10" y="230" width="100" height="26"/><rect x="110" y="230" width="330" height="26"/><rect x="440" y="230" width="150" height="26"/>
+    </g>
+    <text x="60" y="161" font-weight="bold">Langkah</text><text x="275" y="161" font-weight="bold">Isi antrian</text><text x="515" y="161" font-weight="bold">Jarak</text>
+  </g>
+</svg>

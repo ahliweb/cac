@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 230" width="700" height="230" role="img" aria-labelledby="t d">
+  <title id="t">Empat tahap proses rekayasa program</title>
+  <desc id="d">Empat kotak berurutan dari kiri ke kanan dihubungkan panah. Tiap kotak punya satu pertanyaan utama, kotak kosong untuk nama tahap, dan kotak kosong untuk keluaran tahap.</desc>
+  <rect width="700" height="230" fill="#ffffff"/>
+  <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker></defs>
+  <text x="90" y="22" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold">Tahap 1</text>
+  <rect x="15" y="32" width="150" height="38" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="90" y="56" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">nama: ______</text>
+  <rect x="15" y="80" width="150" height="70" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="90" y="102" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Apa yang harus</text>
+  <text x="90" y="120" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">dilakukan program,</text>
+  <text x="90" y="138" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">untuk masukan apa?</text>
+  <rect x="15" y="162" width="150" height="56" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="23" y="182" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">keluaran:</text>
+  <line x1="167" y1="115" x2="187" y2="115" stroke="#222222" stroke-width="2" marker-end="url(#ah)"/>
+  <text x="265" y="22" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold">Tahap 2</text>
+  <rect x="190" y="32" width="150" height="38" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="265" y="56" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">nama: ______</text>
+  <rect x="190" y="80" width="150" height="70" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="265" y="102" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Bagaimana caranya,</text>
+  <text x="265" y="120" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">dengan data dan</text>
+  <text x="265" y="138" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">fungsi apa?</text>
+  <rect x="190" y="162" width="150" height="56" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="198" y="182" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">keluaran:</text>
+  <line x1="342" y1="115" x2="362" y2="115" stroke="#222222" stroke-width="2" marker-end="url(#ah)"/>
+  <text x="440" y="22" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold">Tahap 3</text>
+  <rect x="365" y="32" width="150" height="38" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="440" y="56" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">nama: ______</text>
+  <rect x="365" y="80" width="150" height="70" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="440" y="102" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Bagaimana rancangan</text>
+  <text x="440" y="120" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">ditulis dalam C++?</text>
+  <text x="440" y="138" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle"></text>
+  <rect x="365" y="162" width="150" height="56" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="373" y="182" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">keluaran:</text>
+  <line x1="517" y1="115" x2="537" y2="115" stroke="#222222" stroke-width="2" marker-end="url(#ah)"/>
+  <text x="615" y="22" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold">Tahap 4</text>
+  <rect x="540" y="32" width="150" height="38" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="615" y="56" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">nama: ______</text>
+  <rect x="540" y="80" width="150" height="70" rx="4" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="615" y="102" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Apakah program</text>
+  <text x="615" y="120" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">sesuai spesifikasi,</text>
+  <text x="615" y="138" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">termasuk data batas?</text>
+  <rect x="540" y="162" width="150" height="56" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="548" y="182" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">keluaran:</text>
+</svg>

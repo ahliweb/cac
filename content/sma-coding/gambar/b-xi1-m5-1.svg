@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 230" width="640" height="230" role="img" aria-labelledby="t d">
+  <title id="t">Tabel pemeriksaan tiga nama paket</title>
+  <desc id="d">Tabel dengan kolom Nama paket, Ada atau tidak, Lisensi, Jumlah versi, Tanggal terbit, Pengelola, dan Keputusan. Tiga baris kosong untuk diisi dari hasil bun info.</desc>
+  <rect width="640" height="230" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <g stroke="#222222" stroke-width="2" fill="#ffffff">
+      <rect x="10" y="30" width="110" height="40" fill="#f2f2f2"/><rect x="120" y="30" width="80" height="40" fill="#f2f2f2"/><rect x="200" y="30" width="80" height="40" fill="#f2f2f2"/><rect x="280" y="30" width="80" height="40" fill="#f2f2f2"/><rect x="360" y="30" width="90" height="40" fill="#f2f2f2"/><rect x="450" y="30" width="90" height="40" fill="#f2f2f2"/><rect x="540" y="30" width="90" height="40" fill="#f2f2f2"/>
+      <rect x="10" y="70" width="110" height="45"/><rect x="120" y="70" width="80" height="45"/><rect x="200" y="70" width="80" height="45"/><rect x="280" y="70" width="80" height="45"/><rect x="360" y="70" width="90" height="45"/><rect x="450" y="70" width="90" height="45"/><rect x="540" y="70" width="90" height="45"/>
+      <rect x="10" y="115" width="110" height="45"/><rect x="120" y="115" width="80" height="45"/><rect x="200" y="115" width="80" height="45"/><rect x="280" y="115" width="80" height="45"/><rect x="360" y="115" width="90" height="45"/><rect x="450" y="115" width="90" height="45"/><rect x="540" y="115" width="90" height="45"/>
+      <rect x="10" y="160" width="110" height="45"/><rect x="120" y="160" width="80" height="45"/><rect x="200" y="160" width="80" height="45"/><rect x="280" y="160" width="80" height="45"/><rect x="360" y="160" width="90" height="45"/><rect x="450" y="160" width="90" height="45"/><rect x="540" y="160" width="90" height="45"/>
+    </g>
+    <text x="10" y="20" font-weight="bold">Hasil bun info (isi dulu, baru pasang)</text>
+    <g font-size="14" font-weight="bold">
+      <text x="16" y="55">Nama paket</text><text x="126" y="55">Ada?</text><text x="206" y="55">Lisensi</text><text x="286" y="55">Versi</text><text x="366" y="55">Terbit</text><text x="456" y="55">Pengelola</text><text x="546" y="55">Pasang?</text>
+    </g>
+    <text x="10" y="224">Jangan memasang sebelum tabel terisi.</text>
+  </g>
+</svg>

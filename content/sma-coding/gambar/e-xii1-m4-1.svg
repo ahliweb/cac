@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" width="600" height="300" role="img" aria-labelledby="t d">
+<title id="t">Diagram amplitudo empat item sebelum dan sesudah cermin terhadap rata-rata</title>
+<desc id="d">Tiga panel batang untuk empat item dengan item keempat ditandai: awal dengan empat amplitudo 0,5, sesudah oracle dengan item keempat di bawah garis nol, dan sesudah cermin yang masih kosong untuk digambar. Tiap panel punya garis nol dan kotak isian untuk rata-rata.</desc>
+
+<rect width="600" height="300" fill="#ffffff"/>
+<text x="100" y="28" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold">awal</text>
+<line x1="20" y1="150" x2="190" y2="150" stroke="#222222" stroke-width="2"/>
+<text x="18" y="154" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="end">0</text>
+<line x1="20" y1="60" x2="20" y2="240" stroke="#222222" stroke-width="1.5"/>
+<text x="48" y="262" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1</text>
+<rect x="34" y="100" width="28" height="50" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="88" y="262" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">2</text>
+<rect x="74" y="100" width="28" height="50" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="128" y="262" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">3</text>
+<rect x="114" y="100" width="28" height="50" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="168" y="262" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">4</text>
+<rect x="154" y="100" width="28" height="50" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="100" y="284" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">item 4 ditandai</text>
+<text x="295" y="28" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold">sesudah oracle</text>
+<line x1="215" y1="150" x2="385" y2="150" stroke="#222222" stroke-width="2"/>
+<text x="213" y="154" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="end">0</text>
+<line x1="215" y1="60" x2="215" y2="240" stroke="#222222" stroke-width="1.5"/>
+<text x="243" y="262" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1</text>
+<rect x="229" y="100" width="28" height="50" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="283" y="262" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">2</text>
+<rect x="269" y="100" width="28" height="50" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="323" y="262" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">3</text>
+<rect x="309" y="100" width="28" height="50" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+<text x="363" y="262" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">4</text>
+<rect x="349" y="150" width="28" height="50" rx="0" fill="#ffffff" stroke="#b3261e" stroke-width="2.5"/>
+<text x="295" y="284" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">rata-rata r = ____</text>
+<text x="490" y="28" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle" font-weight="bold">sesudah cermin</text>
+<line x1="410" y1="150" x2="580" y2="150" stroke="#222222" stroke-width="2"/>
+<text x="408" y="154" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="end">0</text>
+<line x1="410" y1="60" x2="410" y2="240" stroke="#222222" stroke-width="1.5"/>
+<text x="438" y="262" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1</text>
+<text x="478" y="262" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">2</text>
+<text x="518" y="262" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">3</text>
+<text x="558" y="262" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">4</text>
+<rect x="418" y="60" width="160" height="180" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="490" y="284" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">rata-rata r = ____</text>
+</svg>

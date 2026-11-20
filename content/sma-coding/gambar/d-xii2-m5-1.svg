@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 260" width="660" height="260" role="img" aria-labelledby="t d">
+  <title id="t">Tabel tiga kandidat model dari sederhana ke rumit</title>
+  <desc id="d">Tabel tiga baris: regresi logistik seimbang, pohon kedalaman 3, hutan acak. Kolom recall, presisi, F1, dan setara dengan yang tertinggi, semuanya kosong. Di bawahnya garis kosong untuk model yang dipilih.</desc>
+  <rect width="660" height="260" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <rect x="15" y="15" width="630" height="36" fill="#2a5d9f"/>
+    <text x="115" y="38" fill="#ffffff" text-anchor="middle">kandidat</text>
+    <text x="320" y="38" fill="#ffffff" text-anchor="middle">recall</text>
+    <text x="410" y="38" fill="#ffffff" text-anchor="middle">presisi</text>
+    <text x="490" y="38" fill="#ffffff" text-anchor="middle">F1</text>
+    <text x="575" y="38" fill="#ffffff" text-anchor="middle">setara?</text>
+    <rect x="15" y="51" width="630" height="42" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+    <rect x="15" y="93" width="630" height="42" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+    <rect x="15" y="135" width="630" height="42" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+    <text x="25" y="77">1. regresi logistik seimbang</text>
+    <text x="25" y="119">2. pohon kedalaman 3</text>
+    <text x="25" y="161">3. hutan acak</text>
+    <line x1="270" y1="15" x2="270" y2="177" stroke="#222222" stroke-width="1.5"/>
+    <line x1="365" y1="15" x2="365" y2="177" stroke="#222222" stroke-width="1.5"/>
+    <line x1="455" y1="15" x2="455" y2="177" stroke="#222222" stroke-width="1.5"/>
+    <line x1="525" y1="15" x2="525" y2="177" stroke="#222222" stroke-width="1.5"/>
+    <text x="15" y="212">Model yang dipilih:</text>
+    <line x1="165" y1="212" x2="450" y2="212" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 4"/>
+    <text x="15" y="242">Tulis rata-rata dan sebaran (rata-rata +- sebaran) di tiap sel.</text>
+  </g>
+</svg>

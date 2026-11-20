@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 370" width="640" height="370" role="img" aria-labelledby="t d">
+  <title id="t">Tabel rencana aplikasi data</title>
+  <desc id="d">Tabel dua kolom dengan sembilan bagian rencana: Tujuan, Pengguna, Data, Fitur, Keamanan dan privasi, Pengujian, Pembagian, Kriteria selesai, Prediksi. Kolom isi dikosongkan.</desc>
+  <rect width="640" height="370" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <rect x="10" y="8" width="200" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="2"/><rect x="210" y="8" width="420" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+    <text x="18" y="28" font-weight="bold">Bagian</text><text x="218" y="28" font-weight="bold">Isi (tulis sendiri)</text>
+    <g stroke="#222222" stroke-width="2" fill="#ffffff">
+      <rect x="10" y="38" width="200" height="36"/><rect x="210" y="38" width="420" height="36"/>
+      <rect x="10" y="74" width="200" height="36"/><rect x="210" y="74" width="420" height="36"/>
+      <rect x="10" y="110" width="200" height="36"/><rect x="210" y="110" width="420" height="36"/>
+      <rect x="10" y="146" width="200" height="36"/><rect x="210" y="146" width="420" height="36"/>
+      <rect x="10" y="182" width="200" height="36"/><rect x="210" y="182" width="420" height="36"/>
+      <rect x="10" y="218" width="200" height="36"/><rect x="210" y="218" width="420" height="36"/>
+      <rect x="10" y="254" width="200" height="36"/><rect x="210" y="254" width="420" height="36"/>
+      <rect x="10" y="290" width="200" height="36"/><rect x="210" y="290" width="420" height="36"/>
+      <rect x="10" y="326" width="200" height="36"/><rect x="210" y="326" width="420" height="36"/>
+    </g>
+    <text x="18" y="61">1. Tujuan</text><text x="18" y="97">2. Pengguna</text><text x="18" y="133">3. Data</text><text x="18" y="169">4. Fitur</text><text x="18" y="205">5. Keamanan dan privasi</text>
+    <text x="18" y="241">6. Pengujian</text><text x="18" y="277">7. Pembagian</text><text x="18" y="313">8. Kriteria selesai</text><text x="18" y="349">9. Prediksi</text>
+  </g>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 400" width="660" height="400" role="img" aria-labelledby="t d">
+  <title id="t">Sirkuit H lalu CNOT dan tabel uji produk atau terjerat</title>
+  <desc id="d">Atas: dua kawat, qubit pertama sebagai kontrol diberi H lalu titik kontrol CNOT, qubit kedua mulai dari nol dengan lingkaran plus sebagai target, dan kotak kosong untuk vektor akhir. Bawah: tabel tiga vektor A, B, C dengan kolom a kali d, b kali c, dan jenis produk atau terjerat yang kosong.</desc>
+  <rect width="660" height="400" fill="#ffffff"/>
+  <text x="20" y="24" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">Mulai dari |00&gt;</text>
+  <text x="20" y="69" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">qubit 1 |0&gt;</text>
+  <text x="20" y="119" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">qubit 2 |0&gt;</text>
+  <line x1="120" y1="65" x2="640" y2="65" stroke="#222222" stroke-width="2"/>
+  <line x1="120" y1="115" x2="640" y2="115" stroke="#222222" stroke-width="2"/>
+  <rect x="160" y="47" width="36" height="36" fill="#ffffff" stroke="#2a5d9f" stroke-width="2.5"/>
+  <text x="178" y="71" font-family="sans-serif" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">H</text>
+  <circle cx="270" cy="65" r="6" fill="#222222"/>
+  <line x1="270" y1="65" x2="270" y2="115" stroke="#222222" stroke-width="2"/>
+  <circle cx="270" cy="115" r="14" fill="#ffffff" stroke="#222222" stroke-width="2.5"/>
+  <line x1="270" y1="101" x2="270" y2="129" stroke="#222222" stroke-width="2"/>
+  <line x1="256" y1="115" x2="284" y2="115" stroke="#222222" stroke-width="2"/>
+  <text x="270" y="152" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">CNOT (kontrol: qubit 1)</text>
+  <text x="330" y="95" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">vektor akhir:</text>
+  <rect x="330" y="102" width="310" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="20" y="190" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">Uji: apakah vektor (a ; b ; c ; d) produk dua qubit? Bandingkan a*d dan b*c.</text>
+  <rect x="20" y="204" width="200" height="44" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="120.0" y="231.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">vektor</text>
+  <rect x="220" y="204" width="130" height="44" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="285.0" y="231.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">a*d</text>
+  <rect x="350" y="204" width="130" height="44" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="415.0" y="231.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">b*c</text>
+  <rect x="480" y="204" width="160" height="44" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="560.0" y="231.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff" text-anchor="middle">jenis</text>
+  <rect x="20" y="248" width="200" height="44" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="120.0" y="275.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">A = (0,6 ; 0,8 ; 0 ; 0)</text>
+  <rect x="224" y="252" width="122" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="220" y="248" width="130" height="44" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="354" y="252" width="122" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="350" y="248" width="130" height="44" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="484" y="252" width="152" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="480" y="248" width="160" height="44" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="20" y="292" width="200" height="44" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="120.0" y="319.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">B = (0 ; 0,6 ; 0,8 ; 0)</text>
+  <rect x="224" y="296" width="122" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="220" y="292" width="130" height="44" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="354" y="296" width="122" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="350" y="292" width="130" height="44" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="484" y="296" width="152" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="480" y="292" width="160" height="44" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="20" y="336" width="200" height="44" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="120.0" y="363.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">C = (0,6 ; 0 ; 0 ; 0,8)</text>
+  <rect x="224" y="340" width="122" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="220" y="336" width="130" height="44" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="354" y="340" width="122" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="350" y="336" width="130" height="44" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <rect x="484" y="340" width="152" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="480" y="336" width="160" height="44" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="20" y="392" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">Jenis: produk atau terjerat.</text>
+</svg>

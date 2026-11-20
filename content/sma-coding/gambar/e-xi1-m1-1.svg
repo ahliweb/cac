@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 340" width="680" height="340" role="img" aria-labelledby="t d">
+  <title id="t">Tabel penelusuran pengacak klasik dan gerbang H</title>
+  <desc id="d">Blok atas pengacak klasik dengan kolom awal, langkah 1, langkah 2; awal terisi 1 dan 0. Blok bawah gerbang H dengan kolom awal, H pertama, H kedua; awal terisi 1 dan 0, sel lain kosong. Rumus a0 baru dan a1 baru tertulis di bawah.</desc>
+  <rect width="680" height="340" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <text x="15" y="22" font-weight="bold">Pengacak klasik: peluang (P0, P1)</text>
+    <rect x="15" y="30" width="650" height="30" fill="#2a5d9f"/>
+    <text x="115" y="50" fill="#ffffff" text-anchor="middle">awal</text>
+    <text x="320" y="50" fill="#ffffff" text-anchor="middle">langkah 1</text>
+    <text x="545" y="50" fill="#ffffff" text-anchor="middle">langkah 2</text>
+    <rect x="15" y="60" width="650" height="42" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+    <text x="115" y="87" text-anchor="middle">(1, 0)</text>
+    <line x1="215" y1="30" x2="215" y2="102" stroke="#222222" stroke-width="1.5"/>
+    <line x1="430" y1="30" x2="430" y2="102" stroke="#222222" stroke-width="1.5"/>
+    <text x="15" y="138" font-weight="bold">Gerbang H: amplitudo (a0, a1) dan peluang membaca 0</text>
+    <rect x="15" y="146" width="650" height="30" fill="#b3261e"/>
+    <text x="115" y="166" fill="#ffffff" text-anchor="middle">awal</text>
+    <text x="320" y="166" fill="#ffffff" text-anchor="middle">H pertama</text>
+    <text x="545" y="166" fill="#ffffff" text-anchor="middle">H kedua</text>
+    <rect x="15" y="176" width="650" height="42" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+    <rect x="15" y="218" width="650" height="42" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+    <text x="25" y="203" font-size="14">(a0, a1)</text>
+    <text x="25" y="245" font-size="14">P(0)</text>
+    <text x="175" y="203" text-anchor="middle">(1, 0)</text>
+    <text x="175" y="245" text-anchor="middle">1</text>
+    <line x1="215" y1="146" x2="215" y2="260" stroke="#222222" stroke-width="1.5"/>
+    <line x1="430" y1="146" x2="430" y2="260" stroke="#222222" stroke-width="1.5"/>
+    <line x1="75" y1="146" x2="75" y2="260" stroke="#222222" stroke-width="1.5"/>
+    <text x="15" y="292">a0 baru = (a0 + a1) dibagi akar 2</text>
+    <text x="15" y="314">a1 baru = (a0 - a1) dibagi akar 2</text>
+  </g>
+</svg>

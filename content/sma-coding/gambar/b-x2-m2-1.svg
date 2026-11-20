@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 260" width="560" height="260" role="img" aria-labelledby="t d">
+<title id="t">Huruf-huruf string Bun-2026 dengan indeks 0 sampai 7 dan isian kosong</title>
+<desc id="d">String Bun-2026 digambar sebagai delapan kotak, satu huruf per kotak, dengan indeks 0 sampai 7 di bawahnya. Di bawahnya ada tiga isian kosong: s.length, s[3], dan s.slice(0, 3).</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#222222"/></marker></defs>
+<rect width="560" height="260" fill="#ffffff"/>
+<text x="20" y="28" font-family="monospace" font-size="15" font-weight="bold" fill="#222222">const s = "Bun-2026"</text>
+<rect x="20" y="48" width="62" height="40" rx="4" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="51.0" y="72.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">B</text>
+<text x="51" y="110" font-family="sans-serif" font-size="14" fill="#2a5d9f" text-anchor="middle">0</text>
+<rect x="82" y="48" width="62" height="40" rx="4" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="113.0" y="72.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">u</text>
+<text x="113" y="110" font-family="sans-serif" font-size="14" fill="#2a5d9f" text-anchor="middle">1</text>
+<rect x="144" y="48" width="62" height="40" rx="4" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="175.0" y="72.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">n</text>
+<text x="175" y="110" font-family="sans-serif" font-size="14" fill="#2a5d9f" text-anchor="middle">2</text>
+<rect x="206" y="48" width="62" height="40" rx="4" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="237.0" y="72.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">-</text>
+<text x="237" y="110" font-family="sans-serif" font-size="14" fill="#2a5d9f" text-anchor="middle">3</text>
+<rect x="268" y="48" width="62" height="40" rx="4" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="299.0" y="72.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">2</text>
+<text x="299" y="110" font-family="sans-serif" font-size="14" fill="#2a5d9f" text-anchor="middle">4</text>
+<rect x="330" y="48" width="62" height="40" rx="4" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="361.0" y="72.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">0</text>
+<text x="361" y="110" font-family="sans-serif" font-size="14" fill="#2a5d9f" text-anchor="middle">5</text>
+<rect x="392" y="48" width="62" height="40" rx="4" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="423.0" y="72.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">2</text>
+<text x="423" y="110" font-family="sans-serif" font-size="14" fill="#2a5d9f" text-anchor="middle">6</text>
+<rect x="454" y="48" width="62" height="40" rx="4" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+<text x="485.0" y="72.9" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">6</text>
+<text x="485" y="110" font-family="sans-serif" font-size="14" fill="#2a5d9f" text-anchor="middle">7</text>
+<text x="20" y="150" font-family="sans-serif" font-size="14" fill="#2a5d9f">indeks</text>
+<text x="20" y="185" font-family="monospace" font-size="15" fill="#222222">s.length = ______</text>
+<text x="20" y="212" font-family="monospace" font-size="15" fill="#222222">s[3] = ______</text>
+<text x="20" y="239" font-family="monospace" font-size="15" fill="#222222">s.slice(0, 3) = ______</text>
+</svg>

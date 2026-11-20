@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 290" width="640" height="290" role="img" aria-labelledby="t d">
+  <title id="t">Diagram keadaan lampu lalu lintas</title>
+  <desc id="d">Tiga lingkaran MERAH (2000 ms), HIJAU (1000 ms), KUNING (500 ms) dengan panah berurutan MERAH ke HIJAU ke KUNING ke MERAH dan tiga kotak kosong untuk waktu peralihan.</desc>
+  <rect width="640" height="290" fill="#ffffff"/>
+  <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker></defs>
+  <circle cx="110" cy="100" r="55" fill="#f2f2f2" stroke="#b3261e" stroke-width="3"/>
+  <text x="110" y="98" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">MERAH</text>
+  <text x="110" y="118" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">2000 ms</text>
+  <circle cx="320" cy="100" r="55" fill="#f2f2f2" stroke="#1b7a3d" stroke-width="3"/>
+  <text x="320" y="98" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">HIJAU</text>
+  <text x="320" y="118" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">1000 ms</text>
+  <circle cx="530" cy="100" r="55" fill="#f2f2f2" stroke="#222222" stroke-width="3"/>
+  <text x="530" y="98" font-family="sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#222222">KUNING</text>
+  <text x="530" y="118" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">500 ms</text>
+  <line x1="167" y1="100" x2="262" y2="100" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="377" y1="100" x2="472" y2="100" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+  <path d="M530,156 C530,230 110,230 110,158" fill="none" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+  <text x="214" y="38" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">peralihan 1 (ms)</text>
+  <rect x="169" y="44" width="90" height="30" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="424" y="38" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">peralihan 2 (ms)</text>
+  <rect x="379" y="44" width="90" height="30" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="320" y="238" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">peralihan 3 (ms)</text>
+  <rect x="275" y="244" width="90" height="30" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+</svg>

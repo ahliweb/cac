@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 370" width="700" height="370" role="img" aria-labelledby="t d">
+  <title id="t">Tabel rencana demo lima langkah dengan kolom menit, tunjukkan, dan cadangan kosong</title>
+  <desc id="d">Tabel lima langkah demo: tujuan, beranda dan tema, formulir kontak, gerbang hijau, dan pelajaran. Kolom menit, apa yang ditunjukkan, dan cadangan bila gagal kosong untuk diisi. Di bawahnya ada kotak untuk total menit.</desc>
+  <rect width="700" height="370" fill="#ffffff"/>
+  <rect x="15" y="30" width="170" height="48" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="100.0" y="59.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">langkah</text>
+  <rect x="185" y="30" width="80" height="48" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="225.0" y="59.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">menit</text>
+  <rect x="265" y="30" width="230" height="48" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="380.0" y="59.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">tunjukkan</text>
+  <rect x="495" y="30" width="195" height="48" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="592.5" y="59.0" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#222222">cadangan bila gagal</text>
+  <rect x="15" y="78" width="170" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="100.0" y="107.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">1. Tujuan</text>
+  <rect x="185" y="78" width="80" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="265" y="78" width="230" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="495" y="78" width="195" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="126" width="170" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="100.0" y="155.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">2. Beranda dan tema</text>
+  <rect x="185" y="126" width="80" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="265" y="126" width="230" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="495" y="126" width="195" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="174" width="170" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="100.0" y="203.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">3. Formulir kontak</text>
+  <rect x="185" y="174" width="80" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="265" y="174" width="230" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="495" y="174" width="195" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="222" width="170" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="100.0" y="251.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">4. Gerbang hijau</text>
+  <rect x="185" y="222" width="80" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="265" y="222" width="230" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="495" y="222" width="195" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="15" y="270" width="170" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="100.0" y="299.0" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#222222">5. Pelajaran</text>
+  <rect x="185" y="270" width="80" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="265" y="270" width="230" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="495" y="270" width="195" height="48" rx="0" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="15" y="350" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="start" fill="#222222">Total menit:</text>
+  <rect x="120" y="330" width="90" height="30" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="230" y="350" font-family="sans-serif" font-size="14" text-anchor="start" fill="#222222">batas 9 menit tampil</text>
+</svg>

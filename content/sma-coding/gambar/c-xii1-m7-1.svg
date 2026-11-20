@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400" role="img" aria-labelledby="t d">
+  <title id="t">Bidang grafik galat terhadap koreksi</title>
+  <desc id="d">Sumbu mendatar galat dari -30 sampai 30 dan sumbu tegak koreksi dari -15 sampai 15, dengan garis putus-putus batas jepit di 15 dan -15. Di bawahnya tabel galat -30, -15, 0, 15, 30 dengan baris koreksi kosong.</desc>
+  <rect width="640" height="400" fill="#ffffff"/>
+  <line x1="110" y1="20" x2="110" y2="220" stroke="#222222" stroke-width="0.8" opacity="0.4"/>
+  <text x="110" y="240" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">-30</text>
+  <line x1="215" y1="20" x2="215" y2="220" stroke="#222222" stroke-width="0.8" opacity="0.4"/>
+  <text x="215" y="240" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">-15</text>
+  <line x1="320" y1="20" x2="320" y2="220" stroke="#222222" stroke-width="0.8" opacity="0.4"/>
+  <text x="320" y="240" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">0</text>
+  <line x1="425" y1="20" x2="425" y2="220" stroke="#222222" stroke-width="0.8" opacity="0.4"/>
+  <text x="425" y="240" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">15</text>
+  <line x1="530" y1="20" x2="530" y2="220" stroke="#222222" stroke-width="0.8" opacity="0.4"/>
+  <text x="530" y="240" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">30</text>
+  <line x1="110" y1="120" x2="530" y2="120" stroke="#222222" stroke-width="2"/>
+  <line x1="320" y1="20" x2="320" y2="220" stroke="#222222" stroke-width="2"/>
+  <line x1="110" y1="20.0" x2="530" y2="20.0" stroke="#b3261e" stroke-width="2" stroke-dasharray="8 4"/>
+  <text x="102" y="25.0" font-family="sans-serif" font-size="14" fill="#b3261e" text-anchor="end">15</text>
+  <line x1="110" y1="220.0" x2="530" y2="220.0" stroke="#b3261e" stroke-width="2" stroke-dasharray="8 4"/>
+  <text x="102" y="225.0" font-family="sans-serif" font-size="14" fill="#b3261e" text-anchor="end">-15</text>
+  <text x="102" y="125" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="end">0</text>
+  <text x="540" y="240" font-family="sans-serif" font-size="14" fill="#222222">galat</text>
+  <text x="330" y="16" font-family="sans-serif" font-size="14" fill="#222222">koreksi</text>
+  <text x="450" y="38" font-family="sans-serif" font-size="14" fill="#b3261e">garis putus: batas jepit</text>
+  <rect x="10" y="270" width="110" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="65.0" y="296" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">galat</text>
+  <rect x="10" y="310" width="110" height="40" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="65.0" y="336" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">koreksi</text>
+  <rect x="120" y="270" width="100" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="170.0" y="296" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">-30</text>
+  <rect x="120" y="310" width="100" height="40" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="220" y="270" width="100" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="270.0" y="296" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">-15</text>
+  <rect x="220" y="310" width="100" height="40" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="320" y="270" width="100" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="370.0" y="296" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">0</text>
+  <rect x="320" y="310" width="100" height="40" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="420" y="270" width="100" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="470.0" y="296" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">15</text>
+  <rect x="420" y="310" width="100" height="40" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="520" y="270" width="100" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="570.0" y="296" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">30</text>
+  <rect x="520" y="310" width="100" height="40" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+</svg>

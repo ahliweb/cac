@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 380" width="660" height="380" role="img" aria-labelledby="t d">
+<title id="t">Kerangka dokumentasi lima bagian dan keterangan wajib histogram</title>
+<desc id="d">Dua kolom. Kiri: lima kotak isian kosong bernomor satu sampai lima untuk judul bagian dokumentasi proyek. Kanan: enam baris isian kosong untuk keterangan wajib di samping histogram.</desc>
+
+<rect width="660" height="380" fill="#ffffff"/>
+<text x="20" y="28" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">Bagian dokumentasi proyek</text>
+<text x="20" y="76" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">1</text>
+<rect x="44" y="42" width="270" height="50" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="20" y="138" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">2</text>
+<rect x="44" y="104" width="270" height="50" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="20" y="200" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">3</text>
+<rect x="44" y="166" width="270" height="50" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="20" y="262" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">4</text>
+<rect x="44" y="228" width="270" height="50" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="20" y="324" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">5</text>
+<rect x="44" y="290" width="270" height="50" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="350" y="28" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start" font-weight="bold">Keterangan wajib di samping histogram</text>
+<text x="350" y="70" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">-</text>
+<rect x="370" y="42" width="270" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="350" y="120" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">-</text>
+<rect x="370" y="92" width="270" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="350" y="170" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">-</text>
+<rect x="370" y="142" width="270" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="350" y="220" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">-</text>
+<rect x="370" y="192" width="270" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="350" y="270" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">-</text>
+<rect x="370" y="242" width="270" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="350" y="320" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">-</text>
+<rect x="370" y="292" width="270" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+</svg>
