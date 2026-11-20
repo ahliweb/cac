@@ -4,7 +4,7 @@ Modul ini untuk murid kelas XII jalur B (Web dengan JavaScript, TypeScript, dan 
 
 Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Silabus memetakan butir `F-BK-a` dan `F-LD-f` pada minggu ini; modul draf ini belum dihitung memenuhi keduanya. Keluaran minggu ini: konten tahap 1 (halaman utama dan halaman pendukung).
 
-**Batas modul ini.** Kamu mengubah **konten** pada berkas contoh di repositori turunan lab; backend tidak disentuh. Guru yang menyemai berkas ke CMS lab (`bun run db:seed:cms:profil landing`, `[belum terverifikasi]`: penyusun tidak menjalankan Docker, PostgreSQL, atau CMS). Contoh dijalankan dengan Bun 1.4.4 per 2026-11 pada salinan `awcms-one` 0.20.0. Semua nama dan kontak karangan. AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi atau rahasia.
+**Batas modul ini.** Kamu mengubah **konten** pada berkas contoh di repositori turunan lab; backend tidak disentuh. Guru yang menyemai berkas ke CMS lab (`bun run db:seed:cms:profil landing`, `[belum terverifikasi]`: penyusun tidak menjalankan Docker, PostgreSQL, atau CMS). Tanpa CMS lab, pratinjau di bawah jadi cadangannya (`b-xii1-m4`). Dijalankan dengan Bun 1.4.4 pada `awcms-one` 0.20.0. Semua nama dan kontak karangan. AI boleh dipakai dengan etika dan dicatat, tanpa data pribadi atau rahasia.
 
 ## Ingat kembali
 

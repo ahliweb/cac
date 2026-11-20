@@ -71,7 +71,29 @@ SITE_PROFILE="blog" is not a build profile this storefront knows. Use one of: to
 error: "astro" exited with code 1
 ```
 
-Jadi kedua perintah di soal prediksi gagal, dengan dua sebab berbeda. Nilai yang salah **gagal keras** (bukan diam-diam memakai `toko`) agar situs toko tidak terbit untuk yang meminta situs lain. Penyusun juga membangun profil `landing` terhadap **stub uji** milik repositori itu (`apps/storefront/scripts/stub-awcms.mjs`, token palsu `TOKEN_PALSU_CONTOH`): berhasil dan menghasilkan enam halaman HTML. Stub itu hanya tiruan untuk uji, bukan `apps/cms`; ia tidak membuktikan apa pun tentang CMS sungguhan.
+Jadi kedua perintah di soal prediksi gagal, dengan dua sebab berbeda. Nilai yang salah **gagal keras** (bukan diam-diam memakai `toko`) agar situs toko tidak terbit untuk yang meminta situs lain. Build dengan tiruan uji milik repositori ada di bagian berikut.
+
+**Cadangan tanpa Docker.** Tanpa Docker, tiruan uji (`apps/storefront/scripts/stub-awcms.mjs`) cukup untuk membangun profil `landing`. Dijalankan penyusun 2026-11-20 dari `apps/storefront` pada turunan hasil `template:init`:
+
+```sh
+STUB_PORT=34720 bun scripts/stub-awcms.mjs &
+env AWCMS_API_URL=http://localhost:34720 PUBLIC_AWCMS_ORIGIN=http://localhost:34720 \
+  AWCMS_API_TOKEN=TOKEN_PALSU_CONTOH SITE_PROFILE=landing bun --bun astro build
+kill %1
+```
+
+```text
+[stub-awcms] serving fixtures on http://localhost:34720
+  ├─ /404.html
+  ├─ /halaman/kebijakan-privasi.html
+  ├─ /halaman/syarat-dan-ketentuan.html
+  ├─ /halaman/panduan-belanja.html
+  ├─ /kontak.html
+  ├─ /index.html
+[build] Complete!
+```
+
+(Keluaran dipotong.) Batasnya: tanpa penyemaian CMS (`db:seed:cms:profil landing`) dan tanpa FAQ dari CMS; isi halaman berasal dari data tiruan (nama situs "BjekMart (Stub)", tiga halaman, tiga pertanyaan FAQ), bukan dari berkas contohmu, dan tidak membuktikan apa pun tentang CMS sungguhan.
 
 Skrip kecil berikut mengelompokkan skrip `package.json` menurut perintahnya (dijalankan dari folder yang berisi salinan baca-saja dari modul `b-xii1-m3`, `bun run golongkan-skrip.ts`):
 
