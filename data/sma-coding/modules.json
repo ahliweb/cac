@@ -9470,6 +9470,778 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xii1-m14.md"
+    },
+    {
+      "id": "a-xii2-m1",
+      "title": "Pemeliharaan program I",
+      "cpItems": ["F-AP-c"],
+      "weekCodes": ["A-XII2-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["a-xii1-m12", "a-xi1-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/w/cpp/container/vector"
+        },
+        {
+          "title": "cppreference: std::count",
+          "url": "https://en.cppreference.com/w/cpp/algorithm/count"
+        },
+        {
+          "title": "GCC: Warning Options",
+          "url": "https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xii2-m1.md"
+    },
+    {
+      "id": "a-xii2-m2",
+      "title": "Pemeliharaan program II",
+      "cpItems": ["F-AP-c"],
+      "weekCodes": ["A-XII2-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["a-xii2-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/w/cpp/container/vector"
+        },
+        {
+          "title": "GCC: Warning Options",
+          "url": "https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xii2-m2.md"
+    },
+    {
+      "id": "a-xii2-m3",
+      "title": "Memodelkan masalah",
+      "cpItems": [],
+      "weekCodes": ["A-XII2-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["a-xii2-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::queue",
+          "url": "https://en.cppreference.com/w/cpp/container/queue"
+        },
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/w/cpp/container/vector"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xii2-m3.md"
+    },
+    {
+      "id": "a-xii2-m4",
+      "title": "Backtracking dan pruning lanjutan",
+      "cpItems": [],
+      "weekCodes": ["A-XII2-M4"],
+      "bridgeFamilies": ["rekursi"],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["a-xii2-m3", "a-xi1-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/w/cpp/container/vector"
+        },
+        {
+          "title": "cppreference: std::sort",
+          "url": "https://en.cppreference.com/w/cpp/algorithm/sort"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xii2-m4.md"
+    },
+    {
+      "id": "a-xii2-m5",
+      "title": "Latihan terpadu I",
+      "cpItems": [],
+      "weekCodes": ["A-XII2-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["a-xii2-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "OSN Informatika (halaman resmi, hanya tautan)",
+          "url": "https://osn.toki.id/"
+        },
+        {
+          "title": "cppreference: std::multiset",
+          "url": "https://en.cppreference.com/w/cpp/container/multiset"
+        },
+        {
+          "title": "cppreference: std::sort",
+          "url": "https://en.cppreference.com/w/cpp/algorithm/sort"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xii2-m5.md"
+    },
+    {
+      "id": "a-xii2-m6",
+      "title": "Latihan terpadu II",
+      "cpItems": [],
+      "weekCodes": ["A-XII2-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["a-xii2-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "OSN Informatika (halaman resmi, hanya tautan)",
+          "url": "https://osn.toki.id/"
+        },
+        {
+          "title": "cppreference: std::max",
+          "url": "https://en.cppreference.com/w/cpp/algorithm/max"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xii2-m6.md"
+    },
+    {
+      "id": "a-xii2-m7",
+      "title": "Latihan terpadu III",
+      "cpItems": [],
+      "weekCodes": ["A-XII2-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["a-xii2-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "OSN Informatika (halaman resmi, hanya tautan)",
+          "url": "https://osn.toki.id/"
+        },
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/w/cpp/container/vector"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xii2-m7.md"
+    },
+    {
+      "id": "a-xii2-m8",
+      "title": "Latihan terpadu IV",
+      "cpItems": ["F-BK-b"],
+      "weekCodes": ["A-XII2-M8"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["a-xii2-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::map",
+          "url": "https://en.cppreference.com/w/cpp/container/map"
+        },
+        {
+          "title": "cppreference: std::sort",
+          "url": "https://en.cppreference.com/w/cpp/algorithm/sort"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xii2-m8.md"
+    },
+    {
+      "id": "a-xii2-m9",
+      "title": "Ulasan struktur data",
+      "cpItems": [],
+      "weekCodes": ["A-XII2-M9"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["a-xii2-m8", "a-xii1-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::set",
+          "url": "https://en.cppreference.com/w/cpp/container/set"
+        },
+        {
+          "title": "cppreference: std::map",
+          "url": "https://en.cppreference.com/w/cpp/container/map"
+        },
+        {
+          "title": "cppreference: std::priority_queue",
+          "url": "https://en.cppreference.com/w/cpp/container/priority_queue"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xii2-m9.md"
+    },
+    {
+      "id": "a-xii2-m10",
+      "title": "Ulasan strategi",
+      "cpItems": ["F-BK-b"],
+      "weekCodes": ["A-XII2-M10"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["a-xii2-m9", "a-xi2-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::sort",
+          "url": "https://en.cppreference.com/w/cpp/algorithm/sort"
+        },
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/w/cpp/container/vector"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xii2-m10.md"
+    },
+    {
+      "id": "a-xii2-m11",
+      "title": "Proyek akhir: rancangan",
+      "cpItems": ["F-BK-a"],
+      "weekCodes": ["A-XII2-M11"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["a-xii2-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::priority_queue",
+          "url": "https://en.cppreference.com/w/cpp/container/priority_queue"
+        },
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/w/cpp/container/vector"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xii2-m11.md"
+    },
+    {
+      "id": "a-xii2-m12",
+      "title": "Proyek akhir: implementasi dan pengujian",
+      "cpItems": ["F-BK-a"],
+      "weekCodes": ["A-XII2-M12"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["a-xii2-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::priority_queue",
+          "url": "https://en.cppreference.com/w/cpp/container/priority_queue"
+        },
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/w/cpp/container/vector"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xii2-m12.md"
+    },
+    {
+      "id": "a-xii2-m13",
+      "title": "Proyek akhir: presentasi dan portofolio",
+      "cpItems": ["F-BK-a"],
+      "weekCodes": ["A-XII2-M13"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["a-xii2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::priority_queue",
+          "url": "https://en.cppreference.com/w/cpp/container/priority_queue"
+        },
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/w/cpp/container/vector"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xii2-m13.md"
+    },
+    {
+      "id": "a-xii2-m14",
+      "title": "Asesmen dan refleksi (kelas XII semester 2)",
+      "cpItems": [],
+      "weekCodes": ["A-XII2-M14"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["a-xii2-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::sort",
+          "url": "https://en.cppreference.com/w/cpp/algorithm/sort"
+        },
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/w/cpp/container/vector"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xii2-m14.md"
+    },
+    {
+      "id": "b-xii2-m1",
+      "title": "Kebutuhan pengguna",
+      "cpItems": ["F-BK-a", "F-LD-d"],
+      "weekCodes": ["B-XII2-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["b-xii1-m13"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "GOV.UK Service Manual: user research",
+          "url": "https://www.gov.uk/service-manual/user-research"
+        },
+        {
+          "title": "GOV.UK Service Manual: writing user stories",
+          "url": "https://www.gov.uk/service-manual/agile-delivery/writing-user-stories"
+        },
+        {
+          "title": "awcms-one: repositori publik (profil landing, template:init)",
+          "url": "https://github.com/ahliweb/awcms-one"
+        },
+        {
+          "title": "Bun: dokumentasi",
+          "url": "https://bun.sh/docs"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xii2-m1.md"
+    },
+    {
+      "id": "b-xii2-m2",
+      "title": "Rancangan",
+      "cpItems": ["F-BK-a", "F-LD-d"],
+      "weekCodes": ["B-XII2-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["b-xii2-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "W3C: Understanding SC 1.4.3 Contrast (Minimum), WCAG 2.2",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "Google Search Central: influencing title links",
+          "url": "https://developers.google.com/search/docs/appearance/title-link"
+        },
+        {
+          "title": "Google Search Central: control your snippets",
+          "url": "https://developers.google.com/search/docs/appearance/snippet"
+        },
+        {
+          "title": "Astro: pages",
+          "url": "https://docs.astro.build/en/basics/astro-pages/"
+        },
+        {
+          "title": "awcms-one: docs/template.md",
+          "url": "https://github.com/ahliweb/awcms-one/blob/main/docs/template.md"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xii2-m2.md"
+    },
+    {
+      "id": "b-xii2-m3",
+      "title": "Sprint 1: konten",
+      "cpItems": ["F-BK-a", "F-LD-f"],
+      "weekCodes": ["B-XII2-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["b-xii2-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "awcms-one: docs/template.md",
+          "url": "https://github.com/ahliweb/awcms-one/blob/main/docs/template.md"
+        },
+        {
+          "title": "Bun: bun test",
+          "url": "https://bun.sh/docs/cli/test"
+        },
+        {
+          "title": "Astro: environment variables",
+          "url": "https://docs.astro.build/en/guides/environment-variables/"
+        },
+        {
+          "title": "RFC 2606: Reserved Top Level DNS Names",
+          "url": "https://www.rfc-editor.org/rfc/rfc2606"
+        },
+        {
+          "title": "Google Search Central: control your snippets",
+          "url": "https://developers.google.com/search/docs/appearance/snippet"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xii2-m3.md"
+    },
+    {
+      "id": "b-xii2-m4",
+      "title": "Sprint 1: tampilan",
+      "cpItems": ["F-BK-a", "F-LD-f"],
+      "weekCodes": ["B-XII2-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["b-xii2-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "W3C: Understanding SC 1.4.3 Contrast (Minimum), WCAG 2.2",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "W3C: Understanding SC 1.4.11 Non-text Contrast, WCAG 2.2",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html"
+        },
+        {
+          "title": "awcms-one: docs/template.md",
+          "url": "https://github.com/ahliweb/awcms-one/blob/main/docs/template.md"
+        },
+        {
+          "title": "Astro: environment variables",
+          "url": "https://docs.astro.build/en/guides/environment-variables/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xii2-m4.md"
+    },
+    {
+      "id": "b-xii2-m5",
+      "title": "Sprint 2: fitur",
+      "cpItems": ["F-BK-a", "F-LD-f"],
+      "weekCodes": ["B-XII2-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["b-xii2-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "MDN: elemen details",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details"
+        },
+        {
+          "title": "Bun: HTTP server (Bun.serve)",
+          "url": "https://bun.sh/docs/api/http"
+        },
+        {
+          "title": "MDN: Using Fetch",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch"
+        },
+        {
+          "title": "awcms-one: docs/template.md",
+          "url": "https://github.com/ahliweb/awcms-one/blob/main/docs/template.md"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xii2-m5.md"
+    },
+    {
+      "id": "b-xii2-m6",
+      "title": "Sprint 2: pengujian",
+      "cpItems": ["F-BK-a", "F-LD-f"],
+      "weekCodes": ["B-XII2-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["b-xii2-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Bun: bun test",
+          "url": "https://bun.sh/docs/cli/test"
+        },
+        {
+          "title": "W3C WAI: Easy Checks, a first review of web accessibility",
+          "url": "https://www.w3.org/WAI/test-evaluate/easy-checks/"
+        },
+        {
+          "title": "Google Search Central: influencing title links",
+          "url": "https://developers.google.com/search/docs/appearance/title-link"
+        },
+        {
+          "title": "awcms-one: docs/template.md",
+          "url": "https://github.com/ahliweb/awcms-one/blob/main/docs/template.md"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xii2-m6.md"
+    },
+    {
+      "id": "b-xii2-m7",
+      "title": "Sprint 3: penyempurnaan",
+      "cpItems": ["F-BK-a", "F-LD-f"],
+      "weekCodes": ["B-XII2-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["b-xii2-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "W3C WAI: Easy Checks, a first review of web accessibility",
+          "url": "https://www.w3.org/WAI/test-evaluate/easy-checks/"
+        },
+        {
+          "title": "W3C: Understanding SC 1.4.3 Contrast (Minimum), WCAG 2.2",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "axe-core (Deque): pemeriksa aksesibilitas",
+          "url": "https://github.com/dequelabs/axe-core"
+        },
+        {
+          "title": "axe-core-npm: penanganan galat paket Playwright",
+          "url": "https://github.com/dequelabs/axe-core-npm/blob/develop/packages/playwright/error-handling.md"
+        },
+        {
+          "title": "Bun: menjalankan proses (spawn dan spawnSync)",
+          "url": "https://bun.sh/docs/api/spawn"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xii2-m7.md"
+    },
+    {
+      "id": "b-xii2-m8",
+      "title": "Sprint 3: dokumentasi",
+      "cpItems": ["F-BK-a", "F-LD-f"],
+      "weekCodes": ["B-XII2-M8"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["b-xii2-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Diátaxis: how-to guides",
+          "url": "https://diataxis.fr/how-to-guides/"
+        },
+        {
+          "title": "Bun: bun run",
+          "url": "https://bun.sh/docs/cli/run"
+        },
+        {
+          "title": "awcms-one: README",
+          "url": "https://github.com/ahliweb/awcms-one/blob/main/README.md"
+        },
+        {
+          "title": "awcms-one: docs/template.md",
+          "url": "https://github.com/ahliweb/awcms-one/blob/main/docs/template.md"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xii2-m8.md"
+    },
+    {
+      "id": "b-xii2-m9",
+      "title": "Ulasan keamanan",
+      "cpItems": ["F-BK-a"],
+      "weekCodes": ["B-XII2-M9"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["b-xii2-m8", "b-xi2-m10", "b-xii1-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Bun: bun audit",
+          "url": "https://bun.sh/docs/install/audit"
+        },
+        {
+          "title": "Git: git-log",
+          "url": "https://git-scm.com/docs/git-log"
+        },
+        {
+          "title": "Git: gitignore",
+          "url": "https://git-scm.com/docs/gitignore"
+        },
+        {
+          "title": "OWASP: Cross Site Scripting (XSS)",
+          "url": "https://owasp.org/www-community/attacks/xss/"
+        },
+        {
+          "title": "awcms-one: tools/ci/runners/security.ts",
+          "url": "https://github.com/ahliweb/awcms-one/blob/main/tools/ci/runners/security.ts"
+        },
+        {
+          "title": "awcms-one: .gitignore",
+          "url": "https://github.com/ahliweb/awcms-one/blob/main/.gitignore"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xii2-m9.md"
+    },
+    {
+      "id": "b-xii2-m10",
+      "title": "Privasi dan hukum",
+      "cpItems": ["F-BK-a", "F-LD-g"],
+      "weekCodes": ["B-XII2-M10"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["b-xii2-m9", "b-xi2-m10", "FND-X1-M6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "JDIH BPK: UU 27/2022 tentang Pelindungan Data Pribadi",
+          "url": "https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022"
+        },
+        {
+          "title": "JDIH BPK: UU 1/2023 tentang KUHP",
+          "url": "https://peraturan.bpk.go.id/Details/234935/uu-no-1-tahun-2023"
+        },
+        {
+          "title": "JDIH BPK: UU 11/2008 tentang Informasi dan Transaksi Elektronik",
+          "url": "https://peraturan.bpk.go.id/Details/37589/uu-no-11-tahun-2008"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xii2-m10.md"
+    },
+    {
+      "id": "b-xii2-m11",
+      "title": "Ulasan sejawat (kelas XII semester 2)",
+      "cpItems": ["F-BK-a"],
+      "weekCodes": ["B-XII2-M11"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["b-xii2-m10", "b-xii1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Google engineering practices: how to do a code review",
+          "url": "https://google.github.io/eng-practices/review/reviewer/"
+        },
+        {
+          "title": "Git: git-diff",
+          "url": "https://git-scm.com/docs/git-diff"
+        },
+        {
+          "title": "W3C: Web Content Accessibility Guidelines (WCAG) 2.2",
+          "url": "https://www.w3.org/TR/WCAG22/"
+        },
+        {
+          "title": "awcms-one: README (Gates)",
+          "url": "https://github.com/ahliweb/awcms-one/blob/main/README.md"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xii2-m11.md"
+    },
+    {
+      "id": "b-xii2-m12",
+      "title": "Presentasi",
+      "cpItems": ["F-BK-a"],
+      "weekCodes": ["B-XII2-M12"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["b-xii2-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "W3C: Web Content Accessibility Guidelines (WCAG) 2.2",
+          "url": "https://www.w3.org/TR/WCAG22/"
+        },
+        {
+          "title": "Bun: dokumentasi",
+          "url": "https://bun.sh/docs"
+        },
+        {
+          "title": "awcms-one: package.json",
+          "url": "https://github.com/ahliweb/awcms-one/blob/main/package.json"
+        },
+        {
+          "title": "awcms-one: docs/template.md",
+          "url": "https://github.com/ahliweb/awcms-one/blob/main/docs/template.md"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xii2-m12.md"
+    },
+    {
+      "id": "b-xii2-m13",
+      "title": "Portofolio dan refleksi",
+      "cpItems": ["F-BK-a"],
+      "weekCodes": ["B-XII2-M13"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["b-xii2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Git: git-archive",
+          "url": "https://git-scm.com/docs/git-archive"
+        },
+        {
+          "title": "Git: gitignore",
+          "url": "https://git-scm.com/docs/gitignore"
+        },
+        {
+          "title": "Creative Commons: Attribution 4.0 International (deed)",
+          "url": "https://creativecommons.org/licenses/by/4.0/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xii2-m13.md"
+    },
+    {
+      "id": "b-xii2-m14",
+      "title": "Asesmen (kelas XII semester 2)",
+      "cpItems": [],
+      "weekCodes": ["B-XII2-M14"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["b-xii1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Bun: dokumentasi",
+          "url": "https://bun.sh/docs"
+        },
+        {
+          "title": "Git: dokumentasi",
+          "url": "https://git-scm.com/docs"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xii2-m14.md"
     }
   ]
 }

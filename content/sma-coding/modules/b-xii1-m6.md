@@ -4,7 +4,7 @@ Modul ini untuk murid kelas XII jalur B (Web dengan JavaScript, TypeScript, dan 
 
 Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Silabus memetakan butir `F-AP-d` dan `F-LD-f` pada minggu ini; modul draf ini belum dihitung memenuhi keduanya.
 
-**Batas modul ini.** Kamu mengubah **merek, konten, dan tema** pada repositori turunan lab; kamu tidak menyentuh backend dan tidak memakai backend produksi `awcms-one`. CMS lab dijalankan guru; yang kamu ubah adalah berkas konten contoh dan pengaturan merek. Semua nama, alamat, dan surel **fiktif** (domain `.example`). Contoh dijalankan penyusun dengan Bun 1.4.4 per 2026-11 terhadap `awcms-one` `0.20.0`, di salinan lokal, tanpa Docker dan tanpa data nyata. Tugas baca-dan-prediksi `AI: tanpa AI`; selain itu AI boleh dipakai dengan etika dan dicatat, tanpa data pribadi atau rahasia pada permintaanmu.
+**Batas modul ini.** Kamu mengubah **merek, konten, dan tema** pada repositori turunan lab; kamu tidak menyentuh backend dan tidak memakai backend produksi `awcms-one`. CMS lab dijalankan guru; yang kamu ubah adalah berkas konten contoh dan pengaturan merek. Semua nama, alamat, dan surel **fiktif** (domain contoh seperti `example.org`). Contoh dijalankan penyusun dengan Bun 1.4.4 per 2026-11 terhadap `awcms-one` `0.20.0`, di salinan lokal, tanpa Docker dan tanpa data nyata. Tugas baca-dan-prediksi `AI: tanpa AI`; selain itu AI boleh dipakai dengan etika dan dicatat, tanpa data pribadi atau rahasia pada permintaanmu.
 
 ## Ingat kembali
 
@@ -117,7 +117,7 @@ TEMUAN: masih memuat "example.com"
 3 temuan
 ```
 
-Penyusun lalu mengganti empat halaman dan profil dengan "Sekolah Contoh" (judul, ringkasan, dua paragraf tiap halaman, surel `info@sekolah-contoh.example`, telepon dan WhatsApp `null`, tanpa tautan sosial). Pemeriksa kini mencetak `halaman: 4` dan `bersih`, dan `bun tools/seed-cms.ts --profil landing --dry-run` mencetak `pages: 4` dan `site profile: 1 (full replace)` serta `No network calls made (dry-run)`. Batasnya: ketika penyusun sengaja mengubah `slug` menjadi `Layanan Kami!`, `--dry-run` **tetap lolos** dengan angka yang sama. Jadi dry-run menghitung dan memeriksa bentuk dasar; ia tidak membuktikan bahwa isinya benar. Kebenaran akhir terlihat setelah guru menyemai CMS lab dan situs dibangun.
+Penyusun lalu mengganti empat halaman dan profil dengan "Sekolah Contoh" (judul, ringkasan, dua paragraf tiap halaman, surel `info@example.org`, telepon dan WhatsApp `+62 800 0000 0000`, tanpa tautan sosial). Uji repositori `tests/seed-profil.test.mjs` hanya menerima surel berdomain `example.com`, `example.id`, `example.net`, atau `example.org`, hanya telepon berbentuk `+62 800 0000 0000`, dan mewajibkan surel serta telepon kontak terisi; jadi keduanya tetap nomor dan domain cadangan contoh (domain contoh dicadangkan RFC 2606), bukan kontak nyata. Pemeriksa kini mencetak `halaman: 4` dan `bersih`, dan `bun tools/seed-cms.ts --profil landing --dry-run` mencetak `pages: 4` dan `site profile: 1 (full replace)` serta `No network calls made (dry-run)`. Batasnya: ketika penyusun sengaja mengubah `slug` menjadi `Layanan Kami!`, `--dry-run` **tetap lolos** dengan angka yang sama. Jadi dry-run menghitung dan memeriksa bentuk dasar; ia tidak membuktikan bahwa isinya benar. Kebenaran akhir terlihat setelah guru menyemai CMS lab dan situs dibangun.
 
 ## Contoh setengah jadi
 
@@ -147,7 +147,7 @@ bun run template:init ... --nama "Nama Asli Orang Lain"
 
 1. `AI: tanpa AI` Berapa temuan yang dicetak `periksa-konten.ts` pada berkas contoh asli, dan apa saja? Jalankan untuk mencocokkan.
 2. `AI: boleh` Ubah warna primer merekmu dengan `template:init` (mulai dari `--dry-run`), lalu baca `site.ts` dengan `git diff`. Berkas apa saja yang berubah?
-3. `AI: boleh` Tulis dulu profil organisasi fiktifmu: nama, slogan, empat halaman beserta isi singkat, dan kontak `.example`. Baru ubah `pages.json` dan `site-profile.json`, lalu jalankan pemeriksa dan `--dry-run`.
+3. `AI: boleh` Tulis dulu profil organisasi fiktifmu: nama, slogan, empat halaman beserta isi singkat, dan kontak cadangan (`info@example.org`, `+62 800 0000 0000`). Baru ubah `pages.json` dan `site-profile.json`, lalu jalankan pemeriksa dan `--dry-run`.
 4. `AI: tanpa AI` Mengapa halaman kebijakan privasi tidak boleh sekadar menulis "situs ini tidak mengumpulkan data" bila kelak ada formulir kontak?
 5. `AI: boleh` (opsional) Catatan pemakaian AI: alat, tujuan, garis besar perintah, bagian yang dipakai, dan cara memeriksanya.
 
@@ -162,14 +162,14 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `b-xii1-m7` (pertanyaan
 
 1. Dari mana nama situs yang tampil di build diambil, berurutan dari yang diutamakan?
 2. Berkas mana saja yang diubah untuk merek dan warna, dan di jalur mana konten contoh profil `landing` disimpan?
-3. Mengapa isi situs latihan memakai nama, alamat, dan surel fiktif berdomain `.example`?
+3. Mengapa isi situs latihan memakai nama, alamat, dan surel fiktif berdomain contoh seperti `example.org`?
 
 ## Kesalahan umum
 
 - **Mengubah nama di `site.ts` lalu heran tampilannya tetap berbeda.** `SITE_NAME` dan nilai dari CMS lebih diutamakan; pada percobaan penyusun nama dari stub tampil sampai `SITE_NAME` diisi.
 - **Menganggap `--dry-run` lolos berarti benar.** Slug `Layanan Kami!` lolos pada percobaan penyusun.
 - **Menyisakan `PLACEHOLDER` atau nama contoh di halaman.** Pemeriksa kecil menangkapnya; jalankan sebelum diserahkan.
-- **Memakai data nyata.** Nama, alamat, telepon, dan surel nyata tidak masuk berkas konten; pakai karangan dan `.example`.
+- **Memakai data nyata.** Nama, alamat, telepon, dan surel nyata tidak masuk berkas konten; pakai karangan, `example.org`, dan `+62 800 0000 0000`.
 - **Mengubah konten di `dist/`.** Itu hasil build; ubah sumbernya lalu bangun ulang.
 - **Menuliskan kebijakan privasi sembarang.** Isi kebijakan harus sesuai keadaan situs dan ditinjau guru sebelum situs dipublikasikan.
 
@@ -212,7 +212,7 @@ Bawaan
 
 **Latihan bercampur.** 1: `tools/seed-data/profil/landing/` (`pages.json` dan `site-profile.json`); guru menyemainya dengan `bun run db:seed:cms:profil landing`. 2: token itu memberi akses baca ke CMS; bila masuk ke `dist/` yang tersaji, siapa pun dapat mengambilnya. Memeriksa isi `dist/` tetap perlu.
 
-**Ulang berjarak.** 1: variabel `SITE_NAME` bila ada, lalu `siteName` dari CMS, lalu `DEFAULT_IDENTITY.name` hasil `template:init`. 2: merek dan warna: `apps/storefront/src/config/site.ts` (ditulis `template:init`) dan bawaan `apps/storefront/.env.example`; konten contoh: `tools/seed-data/profil/landing/pages.json` dan `site-profile.json`. 3: agar tidak ada data nyata atau orang yang dapat dikenali di repositori, dan domain `.example` termasuk nama domain yang dicadangkan untuk contoh (RFC 2606) sehingga tidak menuju pihak nyata.
+**Ulang berjarak.** 1: variabel `SITE_NAME` bila ada, lalu `siteName` dari CMS, lalu `DEFAULT_IDENTITY.name` hasil `template:init`. 2: merek dan warna: `apps/storefront/src/config/site.ts` (ditulis `template:init`) dan bawaan `apps/storefront/.env.example`; konten contoh: `tools/seed-data/profil/landing/pages.json` dan `site-profile.json`. 3: agar tidak ada data nyata atau orang yang dapat dikenali di repositori, dan domain seperti `example.org` dicadangkan untuk contoh (RFC 2606) sehingga tidak menuju pihak nyata; uji repositori pun hanya menerima domain contoh itu.
 
 ## Langkah berikutnya
 

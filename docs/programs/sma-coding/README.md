@@ -1,6 +1,6 @@
 # Program Pembelajaran Coding SMA (`sma-coding`)
 
-- **Version:** v1.15.0
+- **Version:** v1.16.0
 - **Last updated:** 2026-11-20
 - **Status:** Silabus v1.3 (butir dan kebijakan AI, issue #139) dan sebelumnya v1.2 DISETUJUI pemilik program (2026-11-19) untuk jalur A, B, C, D, dan E, termasuk blok fondasi kelas X (v1.1: 2026-11-19; v1.0: 2026-11-18); jalur D dan E di luar rumusan CP (pengayaan); rancangan seri matematika komputasi, seri cloud, dan modul pendamping DISETUJUI pemilik (2026-11-19), 239 modul drafnya ada di `content/sma-coding/modules/` dan terindeks di `data/sma-coding/modules.json` (29 modul fondasi, matematika komputasi, cloud, dan pendamping, termasuk 6 modul fondasi dan 2 modul pendamping lintas jalur untuk F-LD-d dan F-LD-e, #105; ditambah 210 modul mingguan jalur C, D, dan E, #124), berstatus draf sampai ditinjau pemilik; draf jalur C, D, dan E disetujui pemilik 2026-11-19 beserta semua rekomendasi dan sudah masuk silabus v1.2 (dokumen drafnya tetap sebagai riwayat). Revisi v1.4.0 (kemampuan masuk dari SMP dan penempatan di blok fondasi, bagian 3.0) disetujui lewat keputusan pemilik 2026-11-19 (issue #177).
 
@@ -17,15 +17,15 @@
 > juga menyetujui **rancangan** tiga seri modul (matematika komputasi #87,
 > cloud #89, pendamping literasi digital #69) beserta seluruh rekomendasinya;
 > persetujuan itu atas rancangan, bukan atas isi modul. **Modul sma-coding
-> sudah ada tetapi berstatus `draf`**: 365 modul ada di
+> sudah ada tetapi berstatus `draf`**: 393 modul ada di
 > `content/sma-coding/modules/` dan terindeks di `data/sma-coding/modules.json`
 > (29 modul lintas jalur: 6 fondasi kelas X, 7 matematika komputasi, 7 cloud,
-> dan 9 pendamping literasi digital; ditambah 336 modul mingguan: jalur A 63, B 63, C 77,
+> dan 9 pendamping literasi digital; ditambah 364 modul mingguan: jalur A 77, B 77, C 77,
 > D 77, E 56, [#124](https://github.com/ahliweb/osn/issues/124));
 > semuanya menunggu tinjauan pemilik
 > ([#125](https://github.com/ahliweb/osn/issues/125)). Modul mingguan jalur A dan B
-> sedang ditulis bertahap per putaran
-> ([#237](https://github.com/ahliweb/osn/issues/237), rancangan
+> lengkap ditulis dalam enam putaran P1 sampai P6 (154 modul draf,
+> [#237](https://github.com/ahliweb/osn/issues/237), rancangan
 > [`rancangan-modul-ab.md`](rancangan-modul-ab.md)). Draf jalur C
 > (#68), D (#84), dan E (#88) disetujui pemilik pada 2026-11-19 beserta
 > semua rekomendasi penyusun dan kini menjadi bagian silabus v1.2 (bagian
@@ -59,7 +59,7 @@ disetujui pemilik 2026-11-19 (#69); sembilan modul draf `pendamping-*` ada di
 ## Modul belajar
 
 Status per 2026-11-20, dihitung dari `data/sma-coding/modules.json` dan
-`content/sma-coding/modules/` (365 entri dan 365 berkas, semuanya `draf`,
+`content/sma-coding/modules/` (393 entri dan 393 berkas, semuanya `draf`,
 belum ditinjau pemilik):
 
 | Kelompok | Jumlah | Id | Rancangan |
@@ -71,8 +71,8 @@ belum ditinjau pemilik):
 | Jalur C (IoT dan robotika) | 77 | `c-x1-m1` .. `c-xii2-m14` | [`rancangan-modul-cde.md`](rancangan-modul-cde.md) |
 | Jalur D (AI dan data) | 77 | `d-x1-m1` .. `d-xii2-m14` | [`rancangan-modul-cde.md`](rancangan-modul-cde.md) |
 | Jalur E (kuantum) | 56 | `e-xi1-m1` .. `e-xii2-m14` | [`rancangan-modul-cde.md`](rancangan-modul-cde.md) |
-| Jalur A (algoritmik C++) | 63 | `a-x1-m8` .. `a-xii1-m14` | [`rancangan-modul-ab.md`](rancangan-modul-ab.md) |
-| Jalur B (web JS/TS/Bun) | 63 | `b-x1-m8` .. `b-xii1-m14` | [`rancangan-modul-ab.md`](rancangan-modul-ab.md) |
+| Jalur A (algoritmik C++) | 77 | `a-x1-m8` .. `a-xii2-m14` | [`rancangan-modul-ab.md`](rancangan-modul-ab.md) |
+| Jalur B (web JS/TS/Bun) | 77 | `b-x1-m8` .. `b-xii2-m14` | [`rancangan-modul-ab.md`](rancangan-modul-ab.md) |
 
 Tidak ada `lembar/` dan `gambar/` untuk program ini. Butir yang perlu dicek
 peninjau manusia (#125) dikumpulkan di
@@ -136,6 +136,7 @@ persetujuan atas nama pemilik.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v1.16.0 | 2026-11-20 | Putaran P6 modul jalur A dan B (#237): 28 modul draf `a-xii2-m1..m14` dan `b-xii2-m1..m14` (kelas XII semester 2); seri jalur A dan B lengkap (77 + 77 modul); jumlah modul dan tabel kelompok diperbarui. |
 | v1.15.0 | 2026-11-20 | Putaran P5 modul jalur A dan B (#237): 28 modul draf `a-xii1-m1..m14` dan `b-xii1-m1..m14` (kelas XII semester 1); jumlah modul dan tabel kelompok diperbarui. |
 | v1.14.0 | 2026-11-20 | Putaran P4 modul jalur A dan B (#237): 28 modul draf `a-xi2-m1..m14` dan `b-xi2-m1..m14` (kelas XI semester 2); jumlah modul dan tabel kelompok diperbarui. |
 | v1.13.0 | 2026-11-20 | Putaran P3 modul jalur A dan B (#237): 28 modul draf `a-xi1-m1..m14` dan `b-xi1-m1..m14` (kelas XI semester 1); jumlah modul dan tabel kelompok diperbarui. |

@@ -33,7 +33,7 @@ Rencana ini menyambung minggu sebelumnya: catatan ulasan di `b-xii1-m12` menjadi
 | Pengguna | Pengunjung fiktif yang mencari jam buka dan menu. |
 | Lingkup | Dikerjakan: merek, konten, tema, SEO, dokumentasi. Tidak dikerjakan: `apps/cms`, basis data, formulir yang menyimpan data pribadi. |
 | Konten | Teks karangan sendiri; foto hanya yang berlisensi jelas dan dicatat atribusinya (modul `b-xii1-m11`). |
-| Merek | Nama, warna, dan kontak karangan (`.example`); warna diukur kontrasnya (modul `b-xii1-m12`). |
+| Merek | Nama, warna, dan kontak cadangan contoh (`info@example.org`, `+62 800 0000 0000`); warna diukur kontrasnya (modul `b-xii1-m12`). |
 | Garis dasar | Gerbang di `main` hijau sebelum mulai. |
 | Pembagian | Ani: SEO dan konten. Beni: tema dan kontras. Cici: dokumen dan cermin. Satu cabang per orang; ulasan silang. |
 | Risiko | Cermin terjemahan basi; rahasia tak sengaja; warna kurang kontras. |
