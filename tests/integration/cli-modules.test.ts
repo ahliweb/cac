@@ -124,10 +124,13 @@ describe("osn validate with a module index (real subprocess, fixture corpus)", (
     status: "draf",
     references: [{ refId: "R1" }],
     contentPath: "content/osn/modules/dasar-pemrograman.md",
+    learnerSheetPath: "content/osn/lembar/dasar-pemrograman.md",
+    learnerSheetStatus: "draf",
   };
 
   test("a valid index validates clean", async () => {
-    const dir = await fixture({ modules: [base] });
+    // the real index: every worksheet in content/osn/lembar/ must be referenced (no orphan sheet)
+    const dir = await fixture(await Bun.file(join(REAL_DATA_DIR, "modules.json")).json());
     const result = await cli("validate", "--data-dir", dir);
     expect(result.exitCode).toBe(0);
   });
@@ -148,6 +151,7 @@ describe("osn validate with a module index (real subprocess, fixture corpus)", (
           topicFamilies: ["tidak-ada"],
           weeks: undefined,
           contentPath: "content/osn/modules/rusak.md",
+          learnerSheetPath: "content/osn/lembar/rusak.md",
         },
       ],
     });
@@ -165,6 +169,7 @@ describe("osn validate with a module index (real subprocess, fixture corpus)", (
           id: "rusak",
           topicFamilies: ["tidak-ada"],
           contentPath: "content/osn/modules/rusak.md",
+          learnerSheetPath: "content/osn/lembar/rusak.md",
         },
       ],
     });

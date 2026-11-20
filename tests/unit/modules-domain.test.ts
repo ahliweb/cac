@@ -17,7 +17,7 @@ const REPO_ROOT = join(import.meta.dir, "..", "..");
 const REAL_DATA_DIR = join(REPO_ROOT, "data", "osn");
 
 function entry(overrides: Record<string, unknown> = {}): Record<string, unknown> {
-  return {
+  const merged: Record<string, unknown> = {
     id: "contoh",
     title: "Contoh",
     topicFamilies: ["dasar-pemrograman"],
@@ -28,6 +28,12 @@ function entry(overrides: Record<string, unknown> = {}): Record<string, unknown>
     references: [{ refId: "R1" }],
     contentPath: "content/osn/modules/contoh.md",
     ...overrides,
+  };
+  // every OSN module carries its worksheet (OSN_LEARNER_SHEET_REQUIRED, #285)
+  return {
+    learnerSheetPath: `content/osn/lembar/${String(merged.id)}.md`,
+    learnerSheetStatus: "draf",
+    ...merged,
   };
 }
 
@@ -85,6 +91,7 @@ describe("moduleFindings", () => {
             weeks: [1, 5],
             references: [{ refId: "R999" }, { title: "S", url: "https://contoh.example" }],
             contentPath: "content/lain/modules/contoh.md",
+            learnerSheetPath: "content/lain/lembar/contoh.md",
           }),
         ],
       },
@@ -153,8 +160,15 @@ describe("moduleContentFindings and loadModule", () => {
     return loadCorpusFromDirectory(corpusDir);
   }
 
-  const body = (name: string, text: string) =>
-    writeFile(join(tempRoot, "content", "osn", "modules", `${name}.md`), text);
+  // writes the module body and, so that only the body is under test, a non-empty worksheet
+  const body = async (name: string, text: string) => {
+    await writeFile(join(tempRoot, "content", "osn", "modules", `${name}.md`), text);
+    await mkdir(join(tempRoot, "content", "osn", "lembar"), { recursive: true });
+    await writeFile(
+      join(tempRoot, "content", "osn", "lembar", `${name}.md`),
+      "**Ingat dulu:** isi\n",
+    );
+  };
 
   test("flags a missing and an empty content file; passes a present one", async () => {
     const source = await setModules([
@@ -164,6 +178,11 @@ describe("moduleContentFindings and loadModule", () => {
     ]);
     await body("ada", "## Isi\n");
     await body("kosong", "  \n\n");
+    // "hilang" has no body but does have its worksheet, so only the body is reported
+    await writeFile(
+      join(tempRoot, "content", "osn", "lembar", "hilang.md"),
+      "**Ingat dulu:** isi\n",
+    );
     const findings = await moduleContentFindings(source, tempRoot);
     expect(findings.map((f) => f.path)).toEqual([
       "modules[1].contentPath",

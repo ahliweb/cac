@@ -14,6 +14,8 @@
         }
       ],
       "contentPath": "content/osn/modules/dasar-pemrograman.md",
+      "learnerSheetPath": "content/osn/lembar/dasar-pemrograman.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-18",
         "reviewerRole": "pemilik program"
@@ -33,6 +35,8 @@
         }
       ],
       "contentPath": "content/osn/modules/logika-bitwise.md",
+      "learnerSheetPath": "content/osn/lembar/logika-bitwise.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-18",
         "reviewerRole": "pemilik program"
@@ -52,6 +56,8 @@
         }
       ],
       "contentPath": "content/osn/modules/aritmetika.md",
+      "learnerSheetPath": "content/osn/lembar/aritmetika.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-18",
         "reviewerRole": "pemilik program"
@@ -71,6 +77,8 @@
         }
       ],
       "contentPath": "content/osn/modules/aturan-berhitung.md",
+      "learnerSheetPath": "content/osn/lembar/aturan-berhitung.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-18",
         "reviewerRole": "pemilik program"
@@ -90,6 +98,8 @@
         }
       ],
       "contentPath": "content/osn/modules/rekursi.md",
+      "learnerSheetPath": "content/osn/lembar/rekursi.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-18",
         "reviewerRole": "pemilik program"
@@ -109,6 +119,8 @@
         }
       ],
       "contentPath": "content/osn/modules/search-sort.md",
+      "learnerSheetPath": "content/osn/lembar/search-sort.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-18",
         "reviewerRole": "pemilik program"
@@ -128,6 +140,8 @@
         }
       ],
       "contentPath": "content/osn/modules/strategi-problem-solving.md",
+      "learnerSheetPath": "content/osn/lembar/strategi-problem-solving.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-18",
         "reviewerRole": "pemilik program"
@@ -150,6 +164,8 @@
         }
       ],
       "contentPath": "content/osn/modules/struktur-data.md",
+      "learnerSheetPath": "content/osn/lembar/struktur-data.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-18",
         "reviewerRole": "pemilik program"
@@ -172,6 +188,8 @@
         }
       ],
       "contentPath": "content/osn/modules/graph-tree.md",
+      "learnerSheetPath": "content/osn/lembar/graph-tree.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-18",
         "reviewerRole": "pemilik program"
@@ -194,6 +212,8 @@
         }
       ],
       "contentPath": "content/osn/modules/geometri-dasar.md",
+      "learnerSheetPath": "content/osn/lembar/geometri-dasar.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-18",
         "reviewerRole": "pemilik program"

@@ -105,9 +105,15 @@ for (const c of CASES) {
     const id = c.entry().id as string;
     const path = `content/${c.program}/lembar/${id}.md`;
 
-    test("the sheet is still optional for this programme (flag off)", () => {
-      expect(c.required).toBe(false);
-      expect(messages(c.schema, c.entry())).toEqual([]);
+    test(`the sheet is ${c.required ? "required" : "still optional"} for this programme`, () => {
+      if (c.required) {
+        expect(messages(c.schema, c.entry()).join("\n")).toContain("learnerSheetPath");
+      } else {
+        expect(messages(c.schema, c.entry())).toEqual([]);
+      }
+      expect(
+        messages(c.schema, c.entry({ learnerSheetPath: path, learnerSheetStatus: "draf" })),
+      ).toEqual([]);
     });
 
     test("a draft sheet of an approved module is accepted", () => {

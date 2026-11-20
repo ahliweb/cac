@@ -97,10 +97,10 @@ export function parseContentPath(path: string): { program: string; id: string } 
 }
 
 /**
- * Whether every OSN module must have a worksheet (`learnerSheetPath`, ADR-0011). `false` until the
- * programme's worksheets are written; a later per-programme change flips it.
+ * Whether every OSN module must have a worksheet (`learnerSheetPath`, ADR-0011). `true` since every
+ * OSN module has a worksheet (#285).
  */
-export const OSN_LEARNER_SHEET_REQUIRED = false;
+export const OSN_LEARNER_SHEET_REQUIRED = true;
 
 /** One module-index entry. */
 export const moduleSchema = z

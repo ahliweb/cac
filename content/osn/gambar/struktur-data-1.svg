@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 260" width="560" height="260" role="img" aria-labelledby="t d">
+  <title id="t">Tabel difference array untuk N = 5 dan dua penyiraman</title>
+  <desc id="d">Tabel dengan indeks 1 sampai 6, baris d[i] dan baris jumlah berjalan. Semua sel kosong kecuali kolom 6 pada baris jumlah berjalan yang bertanda strip. Di atas tertulis dua operasi: 1 3 2 dan 2 5 1.</desc>
+  <rect width="560" height="260" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="15" fill="#222222">
+    <text x="14" y="24" font-weight="bold">N = 5. Operasi (l r v): 1 3 2 dan 2 5 1</text>
+    <text x="14" y="46">Semua d[i] awalnya 0. Untuk tiap operasi: d[l] += v dan d[r+1] -= v.</text>
+    <rect x="14" y="62" width="126" height="40" fill="#ffffff" stroke="#222222" stroke-width="2"/><text x="77" y="88" text-anchor="middle" font-weight="bold">i</text>
+    <rect x="14" y="102" width="126" height="50" fill="#ffffff" stroke="#222222" stroke-width="2"/><text x="77" y="132" text-anchor="middle" font-weight="bold">d[i]</text>
+    <rect x="14" y="152" width="126" height="50" fill="#ffffff" stroke="#222222" stroke-width="2"/><text x="77" y="175" text-anchor="middle" font-weight="bold">jumlah</text><text x="77" y="193" text-anchor="middle" font-weight="bold">berjalan</text>
+    <rect x="140" y="62" width="66" height="40" fill="#ffffff" stroke="#222222" stroke-width="2"/><text x="173.0" y="88" text-anchor="middle" font-weight="bold">1</text>
+    <rect x="140" y="102" width="66" height="50" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="140" y="152" width="66" height="50" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="206" y="62" width="66" height="40" fill="#ffffff" stroke="#222222" stroke-width="2"/><text x="239.0" y="88" text-anchor="middle" font-weight="bold">2</text>
+    <rect x="206" y="102" width="66" height="50" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="206" y="152" width="66" height="50" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="272" y="62" width="66" height="40" fill="#ffffff" stroke="#222222" stroke-width="2"/><text x="305.0" y="88" text-anchor="middle" font-weight="bold">3</text>
+    <rect x="272" y="102" width="66" height="50" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="272" y="152" width="66" height="50" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="338" y="62" width="66" height="40" fill="#ffffff" stroke="#222222" stroke-width="2"/><text x="371.0" y="88" text-anchor="middle" font-weight="bold">4</text>
+    <rect x="338" y="102" width="66" height="50" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="338" y="152" width="66" height="50" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="404" y="62" width="66" height="40" fill="#ffffff" stroke="#222222" stroke-width="2"/><text x="437.0" y="88" text-anchor="middle" font-weight="bold">5</text>
+    <rect x="404" y="102" width="66" height="50" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="404" y="152" width="66" height="50" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="470" y="62" width="66" height="40" fill="#ffffff" stroke="#222222" stroke-width="2"/><text x="503.0" y="88" text-anchor="middle" font-weight="bold">6</text>
+    <rect x="470" y="102" width="66" height="50" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="470" y="152" width="66" height="50" fill="#ffffff" stroke="#222222" stroke-width="2"/><text x="503.0" y="182" text-anchor="middle">-</text>
+    <text x="14" y="236">Jumlah berjalan di i: d[1] + ... + d[i] = isi akhir petak i.</text>
+  </g>
+</svg>
