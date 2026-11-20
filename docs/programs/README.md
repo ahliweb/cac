@@ -1,6 +1,6 @@
 # Peta Jenjang Program Pembelajaran Coding
 
-- **Version:** v2.7.0
+- **Version:** v2.7.1
 - **Last updated:** 2026-11-20
 - **Status:** Dokumen peta (navigasi), bukan silabus. Isinya merangkum keadaan nyata folder program di `docs/programs/`, pembinaan OSN di `docs/silabus/`, dan registri `data/programs.json`. Menyebut status; tidak mengubah isi dokumen program mana pun.
 
@@ -98,8 +98,8 @@ semua program:
   (issue [#139](https://github.com/ahliweb/cac/issues/139)): riset AI dalam
   rekayasa perangkat lunak (vibe coding, AI-native engineer, pengembangan
   berkelanjutan) yang menjadi dasar kebijakan AI tiap program (kolom
-  "Kebijakan AI" di bagian 2). Tinjau ulang dijadwalkan Mei 2027
-  ([#151](https://github.com/ahliweb/cac/issues/151)).
+  "Kebijakan AI" di bagian 2). Tinjauan berkala pertama selesai 2026-11-20
+  ([#151](https://github.com/ahliweb/cac/issues/151), dipercepat atas instruksi pemilik); tinjauan berikutnya Mei 2027 dicatat di dokumen riset.
 
 Kedua dokumen tidak mengubah silabus atau korpus; perubahan program dikerjakan
 lewat silabus program yang bersangkutan setelah pemilik menyetujui.
@@ -133,3 +133,4 @@ sumbernya.
 | v2.6.6 | 2026-11-20 | Jumlah modul `sma-coding` mengikuti putaran P6 jalur A dan B (#237): 393 modul, total 753; seri 154 modul jalur A dan B lengkap. |
 | v2.6.0 | 2026-11-19 | Sinkron dokumen (#124): status modul belajar tiap program (599 modul draf di enam program, lembar dan gambar TK dan SD), tautan ke `catatan-tinjauan-modul.md`; isi jembatan tidak berubah. |
 | v2.7.0 | 2026-11-20 | Pemilik menyetujui 753 modul enam program coding lewat dialog pilihan baku (#125); kolom status modul memakai `disetujui`, catatan tinjauan menjadi tindak lanjut revisi. |
+| v2.7.1 | 2026-11-20 | Tinjauan berkala pertama riset AI selesai (#151, dipercepat atas instruksi pemilik); tinjauan berikutnya Mei 2027 dicatat di dokumen riset. |

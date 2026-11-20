@@ -254,8 +254,8 @@ Cara membacanya, per issue:
 | --- | --- | --- | --- |
 | #125 | Tinjauan konten | Sudah Anda putuskan pada 2026-11-20 (dialog pilihan baku): 753 modul enam program coding `disetujui`, butir catatan menjadi tindak lanjut revisi; issue ditutup oleh PR persetujuan (daftar di atas adalah keluaran 2026-11-19, sebelum keputusan) | bagian "Meninjau modul" di atas dan [`catatan-tinjauan-modul.md`](../programs/catatan-tinjauan-modul.md) |
 | #124 | Pekerjaan lanjutan | Penulisan modul: seluruh modul enam program sudah masuk repositori (disetujui 2026-11-20, #125); yang tersisa adalah sinkron dokumen dan revisi dari catatan tinjauan, belum menunggu keputusan Anda | [`programs/README.md`](../programs/README.md) |
-| #151 | Tinjau ulang terjadwal | Meninjau ulang riset AI pada Mei 2027; belum jatuh tempo | [`riset/ai-rekayasa-perangkat-lunak.md`](../riset/ai-rekayasa-perangkat-lunak.md) |
-| #150 sampai #157 | Persiapan migrasi identitas (epik dan turunannya) | Dikerjakan di jalur terpisah (PR draf #158); tidak dibahas panduan ini | lihat issue #150 |
+| #151 | Tinjau ulang terjadwal | Selesai 2026-11-20: tinjauan dipercepat atas instruksi Anda; usulan U-18 (pagar belajar) Anda putuskan "Tambahkan sebagai anjuran"; tinjauan berikutnya Mei 2027 dicatat di dokumen riset, tanpa issue terbuka | [`riset/ai-rekayasa-perangkat-lunak.md`](../riset/ai-rekayasa-perangkat-lunak.md) |
+| #150 sampai #157 | Persiapan migrasi identitas (epik dan turunannya) | Selesai 2026-11-20: repositori di-rename in-place menjadi `ahliweb/cac`; lihat `docs/migrations/2026-11-cac-migration-log.md` | lihat issue #150 |
 
 Issue #127 sampai #131 (draf lima program coding), #133 (riset ilmu
 kognitif), #139 (riset AI; keputusan kebijakan AI per program sudah Anda ambil
