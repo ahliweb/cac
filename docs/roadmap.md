@@ -1,11 +1,11 @@
 # Roadmap: Identitas Curriculum as Code (CaC) dan Rename Repository
 
 ## Metadata
-- Version: v1.2.0
+- Version: v1.3.0
 - Last updated: 2026-11-20
-- Changeset: Status pascarename: F1-F3 selesai, F4 berjalan (#274, #273, epik #150). Sebelumnya: menambahkan roadmap migrasi identitas dari ahliweb/osn menuju ahliweb/cac; memperbarui status F1 (dokumen lengkap dengan #157) dan Gate 9 PASSED (kesiapan F2), serta langkah berikutnya.
+- Changeset: Penutupan F4 dan epik #150 (2026-11-20): pemantauan 24 jam dan 7 hari dihapus atas instruksi langsung pemilik; langkah berikutnya diganti aturan yang tetap berlaku.
 - Decision: ADR-0009
-- Status: F1 dan F2 selesai (v2.6.0); **Gate 15 lulus** dan **rename in-place `ahliweb/osn` menjadi `ahliweb/cac` selesai 2026-11-20** (F3 selesai); F4 (pascamigrasi) berjalan, pemantauan 24 jam dan 7 hari menunggu.
+- Status: F1 dan F2 selesai (v2.6.0); **Gate 15 lulus** dan **rename in-place `ahliweb/osn` menjadi `ahliweb/cac` selesai 2026-11-20** (F3 selesai); F4 (pascamigrasi) selesai 2026-11-20; epik #150 ditutup.
 
 ## Visi
 Satu repository primer untuk paradigma Curriculum as Code, yang mengelola banyak program pendidikan terstruktur, tervalidasi, versioned, dengan ID OSN dipertahankan sebagai program. Produk dikenal sebagai AhliKoding Curriculum; URL target pendek ahliweb/cac.
@@ -19,7 +19,7 @@ Roadmap **bukan janji tanggal**. Status fase: rencana, berjalan, selesai, ditund
 | F1 | F1 Kesiapan dan identitas CaC | ADR, baseline, requirements, impact inventory, rencana kompatibilitas, rollback dan cross-spec | ADR di-review; seluruh risiko & consumer tinggi punya owner; DoR Gate 9 punya evidence | selesai | ADR-0009; docs/migrations/2026-11-osn-to-cac.md |
 | F2 | F2 Implementasi kompatibilitas | Menambah cac CLI dan alias osn, metadata platform, docs, tests & CI tanpa perubahan data | Semua tests dan CI hijau pada main, dokumen & changeset aktual | selesai (v2.6.0) | IDENTITY-CAC-002..006, 008..009 |
 | F3 | F3 Readiness dan rename | Audit final, latihan rollback, Gate 15, rename in-place | Bukti Go/No-Go, nama repo baru, repo ID sama, issue/PR/tags/branch terpelihara | selesai 2026-11-20 (Gate 15 lulus; rename in-place, ID sama) | IDENTITY-CAC-001, 007, 010 |
-| F4 | F4 Pascamigrasi | Validasi konsumen, updates URL, pemantauan dan closeout | Tidak ada consumer kritis putus, penerimaan fungsi dan audit sign-off | berjalan (pemantauan 24 jam dan 7 hari menunggu) | IDENTITY-CAC-008..010 |
+| F4 | F4 Pascamigrasi | Validasi konsumen, updates URL, pemantauan dan closeout | Tidak ada consumer kritis putus, penerimaan fungsi dan audit sign-off | selesai 2026-11-20 (pemeriksaan penutup lulus; pemantauan 24 jam dan 7 hari dihapus atas instruksi pemilik) | IDENTITY-CAC-008..010 |
 
 Milestone GitHub (objek native) dibuat/ditautkan setelah scope dan rights diperiksa; tabel ini **belum mengklaim milestone native sudah dibuat**.
 
@@ -52,10 +52,10 @@ flowchart LR
 Rencana F2–F4 adalah **planned work**; bukan klaim implementasi atau kelulusan gerbang. Tiap issue baru harus memuat sembilan seksi standar, tepat satu label jenis/prioritas/ukuran serta dependensi, dan dapat diuji mandiri.
 
 ## Langkah berikutnya
-1. Pemantauan pascarename: 1 jam (orchestrator), 24 jam (2026-11-21), 7 hari (2026-11-27) pada [migration log](migrations/2026-11-cac-migration-log.md) bagian 10.
-2. CI pertama di `ahliweb/cac` (PR F4) dan penutupan epik #150 setelah pemantauan lulus.
-3. Pemilik memperbarui berkas inventaris di repositori dokumentasi internal miliknya; klon lokal memakai `git remote set-url origin https://github.com/ahliweb/cac.git`.
-4. Dilarang membuat repo baru bernama `osn` di akun selama masa alias.
+Migrasi identitas selesai 2026-11-20 (F1 sampai F4; [migration log](migrations/2026-11-cac-migration-log.md) MIGRASI-001 ditutup). Tidak ada langkah terjadwal. Yang tetap berlaku:
+1. Dilarang membuat repo baru bernama `osn` di akun selama masa alias (gladi H-06).
+2. Alias CLI `osn` tetap; penghapusannya hanya pada rilis MAJOR, paling cepat enam bulan setelah pengumuman, tanpa consumer aktif.
+3. Klon lama memakai `git remote set-url origin https://github.com/ahliweb/cac.git`.
 
 ## Ditunda dan dibatalkan
 - Rename GitHub dilaksanakan 2026-11-20 setelah Gate 15 (lihat Status); deployment dan pengubahan kurikulum tidak termasuk fase ini.
@@ -63,6 +63,9 @@ Rencana F2–F4 adalah **planned work**; bukan klaim implementasi atau kelulusan
 - Penghapusan alias osn ditunda tanpa tanggal sampai consumer terverifikasi dan ada keputusan kompatibilitas/MAJOR.
 
 ## Changelog
+### 2026-11-20 - v1.3.0
+- F4 selesai dan epik #150 ditutup; pemantauan 24 jam dan 7 hari dihapus atas instruksi langsung pemilik 2026-11-20; langkah berikutnya diganti aturan yang tetap berlaku.
+
 ### 2026-11-20 - v1.2.0
 - Status pascarename: Gate 15 lulus, rename in-place selesai 2026-11-20, F1-F3 selesai, F4 berjalan (#274, #273, epik #150).
 

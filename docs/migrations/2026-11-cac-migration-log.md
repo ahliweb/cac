@@ -1,11 +1,11 @@
 # Migration Log MIGRASI-001: Rename ahliweb/osn ke ahliweb/cac
 
 ## Metadata
-- Version: v1.1.0
+- Version: v1.2.0
 - Last updated: 2026-11-20
-- Status: **Rename selesai 2026-11-20; pemantauan berjalan.** Rename in-place `ahliweb/osn` menjadi `ahliweb/cac` dilaksanakan 07:42:51Z sampai 07:42:53Z (ID repo sama). Gate 15 dicatat lulus 2026-11-20 atas keputusan pemilik (bagian 8). Verifikasi V-01..V-18 terisi sejauh dapat dibuktikan hari ini; butir 1 jam, 24 jam, dan 7 hari menunggu.
+- Status: **Selesai dan ditutup 2026-11-20.** Rename selesai; pemeriksaan penutup 08:10Z lulus; pemantauan 24 jam dan 7 hari dihapus atas instruksi langsung pemilik 2026-11-20 ("hapus syarat alasan pemantauan pada semua isu, selesaikan sekarang"). Rename in-place `ahliweb/osn` menjadi `ahliweb/cac` dilaksanakan 07:42:51Z sampai 07:42:53Z (ID repo sama). Gate 15 dicatat lulus 2026-11-20 atas keputusan pemilik (bagian 8). Verifikasi V-01..V-18 terisi sejauh dapat dibuktikan hari ini; butir 1 jam, 24 jam, dan 7 hari menunggu.
 - Issue: #272 (F3/01), #273 (F3/02), #274 (F4/01); turunan epik #150. Memenuhi IDENTITY-CAC-010 dan X-12.
-- Changeset: Mengisi log pascarename (issues #274, #273, epik #150): identitas eksekusi, snapshot sebelum dan sesudah, daftar issue dan PR, bukti CI dan preflight, status langkah 0..5, verifikasi V-01..V-18, keputusan pemilik dan Gate 15 lulus, update consumer, dan jadwal pemantauan. Sebelumnya (v1.0.0): membuka log dari [templat](2026-11-cac-migration-log-template.md) (templat tetap kosong).
+- Changeset: Penutupan log MIGRASI-001 (issue #274, epik #150): V-09, repo uji terhapus, langkah 6 dan 7 lulus, pemeriksaan penutup 08:10:59Z, definisi sukses F4; pemantauan 24 jam dan 7 hari dihapus atas instruksi langsung pemilik 2026-11-20.
 - Konteks: [runbook](2026-11-osn-to-cac.md) (urutan beku F3, bagian 4), [keamanan dan recovery](2026-11-cac-security-recovery.md) (checklist G-01..G-14, hasil rehearsal 4.4), [invariants](2026-11-cac-invariants.md) (metode hash), [inventaris consumer](2026-11-cac-consumer-inventory.md)
 
 ## Cara memakai
@@ -57,26 +57,27 @@ Tautan memakai `ahliweb/cac` (URL `ahliweb/osn` dialihkan).
 
 | Jenis | Nomor atau nama | SHA atau URL | Status |
 | --- | --- | --- | --- |
-| Issue epik | #150 | https://github.com/ahliweb/cac/issues/150 | terbuka sampai penutupan F4 |
+| Issue epik | #150 | https://github.com/ahliweb/cac/issues/150 | ditutup bersama penutupan F4 (2026-11-20) |
 | Issue F1 | #152, #153, #154, #155, #156, #157 | https://github.com/ahliweb/cac/issues/152 dst. | dokumen F1 selesai |
 | Issue F2/01..06 | #251, #252, #253, #254, #255, #256 | https://github.com/ahliweb/cac/issues/251 dst. | implementasi digabung (PR di bawah) |
 | Issue F3/01 | #272 (rehearsal dan readiness) | https://github.com/ahliweb/cac/issues/272 | tertutup |
-| Issue F3/02 | #273 (rename in-place; keputusan, Gate 15, bukti langkah 1..4) | https://github.com/ahliweb/cac/issues/273 | rename dilaksanakan 2026-11-20; penutupan oleh orchestrator |
-| Issue F4/01 | #274 (sinkronisasi tautan aktif dan log ini) | https://github.com/ahliweb/cac/issues/274 | berjalan (PR F4) |
-| Issue pengumuman G-11 | #277 | https://github.com/ahliweb/cac/issues/277 | dipasang 2026-11-20 |
+| Issue F3/02 | #273 (rename in-place; keputusan, Gate 15, bukti langkah 1..4) | https://github.com/ahliweb/cac/issues/273 | rename dilaksanakan 2026-11-20; ditutup oleh PR penutupan F4 |
+| Issue F4/01 | #274 (sinkronisasi tautan aktif dan log ini) | https://github.com/ahliweb/cac/issues/274 | ditutup oleh PR penutupan F4 |
+| Issue pengumuman G-11 | #277 | https://github.com/ahliweb/cac/issues/277 | dipasang 2026-11-20; dilepas dan ditutup saat penutupan F4 |
 | PR yang digabung sebelum freeze | #258 sampai #276 (termasuk identitas F2 #258, #259, #262, #260, #263, #264; rilis #271; persetujuan modul #275; dokumen Gate 15 #276) | `main` = `3c22ea2` pada freeze | PR terbuka 0 saat freeze |
 | Tag rilis kompatibilitas | `v2.6.0` (tag beranotasi) | `e85a9cbe` (merge commit PR #271) | terbit 2026-11-20 |
 | Rilis | `v2.6.0` (GitHub Release "Latest") dan `v2.5.0`; CLI `cac` dan alias `osn`, paket `curriculum-as-code` | https://github.com/ahliweb/cac/releases/tag/v2.6.0 | terbit 2026-11-20; 2 rilis sebelum dan sesudah rename |
 | Bukti G-08 | `git diff --name-only <merge>^1 <merge> -- data src/schema src/domain` = 0 berkas untuk PR #258, #259, #262, #260, #263 | diverifikasi orchestrator | lulus |
-| PR dokumen pascarename | PR F4 (issue #274) | diisi saat PR F4 dibuat | berjalan |
+| PR dokumen pascarename | #278 (tautan aktif dan log langkah 1..5) dan PR penutupan F4 (log ini v1.2.0) | `3b534ca` (merge #278) | #278 digabung 2026-11-20 |
 
 ## 4. Bukti CI
 | Titik | Run (URL) | SHA | Job `Quality` | Waktu |
 | --- | --- | --- | --- | --- |
 | `main` pada snapshot | https://github.com/ahliweb/cac/actions/runs/44692226860 (dibuat saat repo bernama `osn`; tautan lama dialihkan) | `3c22ea2e28059a96c69452141defd1d6ec66cd52` | `SUCCESS` | 2026-11-20 (sebelum freeze) |
 | Preflight (langkah 2) | lokal pada `3c22ea2`: format, lint, assist, typecheck, build, `cac validate`, `osn validate`, privacy-check, check:requirements, check:module-code, check:learner-assets, check:fidelity, check:checklist-fidelity semuanya exit 0; CLI contract 77 pass 0 fail; `bun test` 2250 pass 0 fail; `bun audit` bersih; gitleaks 9 temuan, semuanya contoh palsu di modul (`KUNCI_PALSU_CONTOH_*`, `tok-palsu-12345`, `abcd1234efgh`) = positif palsu | `3c22ea2` | sama dengan baris di atas | 2026-11-20T07:08Z |
-| CI pertama setelah rename | run PR F4 pada `ahliweb/cac` (diisi saat PR F4 dijalankan) | diisi saat PR F4 dijalankan | diisi saat PR F4 dijalankan | diisi saat PR F4 dijalankan |
-| Titik pemantauan 24 jam | menunggu (2026-11-21) | | | |
+| CI pertama setelah rename | https://github.com/ahliweb/cac/actions/runs/44698612080 (PR #278) | `fdc6c69e5e19d53c54a37bf6f24460b0f7ab6d29` | `SUCCESS` | 2026-11-20T07:56:07Z |
+| CI `main` pertama setelah rename | https://github.com/ahliweb/cac/actions/runs/44699323588 (merge PR #278) | `3b534ca6dc31c9e2c5fac7479d7b6f1551a85df5` | `SUCCESS` | 2026-11-20T08:01:51Z |
+| Pemeriksaan penutup (menggantikan titik 24 jam) | 0 run gagal sejak rename (`gh run list`) | `3b534ca` | `SUCCESS` | 2026-11-20T08:10:59Z |
 
 ## 5. Rehearsal repo uji (X-05, G-09)
 Dijalankan 2026-11-20, 06:36 s.d. 06:51 UTC, oleh agent pelaksana atas keputusan pemilik 2026-11-20 (opsi "Izinkan agent"). Repo uji publik sementara, bukan `ahliweb/osn`; tidak ada perubahan pada `ahliweb/osn`.
@@ -96,7 +97,7 @@ Dijalankan 2026-11-20, 06:36 s.d. 06:51 UTC, oleh agent pelaksana atas keputusan
 | H-05 | Rename-balik | 2026-11-20 (06:45:44 UTC) | ID repo sama (1465074607); fetch dari kedua nama berhasil; klon lama dan baru `fetch` exit 0; ruleset, webhook, PR utuh | hanya rename-balik langsung (1 sampai 5 menit), bukan setelah jendela 24 jam; aman hanya selama nama lama tidak diambil | lulus |
 | H-06 | Repo baru bernama lama | 2026-11-20 (06:47:35 s.d. 06:50 UTC) | Redirect nama lama berhenti; nama lama milik repo baru (ID 1465084137); `git ls-remote` HTTPS dan SSH exit 0 tetapi SHA repo baru (`6d43ea8`, bukan `dd210cc`); `git fetch` klon lama exit 0 dengan forced update diam-diam; `gh api` ID baru; consumer Action gagal; ruleset dan webhook tidak ikut ke repo baru | exit code tidak cukup sebagai gerbang: verifikasi wajib membandingkan SHA `main` dan ID repo; mitigasi inti: larangan membuat repo `osn` dan `cac` | lulus (mengonfirmasi R-03 dan R-11; rename-balik tidak aman bila terjadi) |
 | H-07 | Pages | 2026-11-20 (06:44 s.d. 06:45 UTC) | URL lama langsung 404 setelah rename (tanpa redirect Pages), URL baru 200; setelah rename-balik: lama 200, nama baru 404; osn tidak memakai Pages | tautan `*.github.io` ke osn (bila ada) putus seketika | lulus |
-| Repo uji dihapus pemilik pada | `belum` (`ahliweb/cac-gladi-a2`, `ahliweb/cac-gladi-a`, `ahliweb/cac-gladi-b`; token agent tanpa `delete_repo`, jadi pemilik yang menghapus) | | | | `belum` |
+| Repo uji dihapus pemilik pada | 2026-11-20, terverifikasi terhapus 08:01Z dan 08:10Z (`ahliweb/cac-gladi-a2`, `ahliweb/cac-gladi-a`, `ahliweb/cac-gladi-b` HTTP 404) | | | | `lulus` |
 
 Tidak teruji (ringkas): reusable workflow, GHCR, batas waktu redirect, rename-balik setelah 24 jam, ruleset dengan bypass atau review wajib, pengiriman webhook ke penerima nyata, perilaku redirect setelah repo lama dihapus, setelan khusus osn (jumlah issue, tag, rilis, Environments, Secrets). Ringkasan hasil dan implikasi: [keamanan dan recovery](2026-11-cac-security-recovery.md) 4.4; issue #272.
 
@@ -105,14 +106,14 @@ Waktu dalam UTC, 2026-11-20.
 
 | # | Langkah | Pelaksana (peran) | Mulai | Selesai | Status | Bukti (bagian log, URL, atau berkas) | Catatan |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 0 | Prasyarat | pemilik repo (keputusan); orchestrator (verifikasi) | 2026-11-20 | 2026-11-20 (sebelum 07:06) | `lulus` | bagian 3 (F2, v2.6.0), 5 (rehearsal), 8 (keputusan); ruleset `main` aktif (ID 27707932) | F2 selesai dan v2.6.0 terbit; rehearsal selesai; U-01..U-07 risiko diterima; repo uji dihapus pemilik masih tercatat `belum` di bagian 5 |
+| 0 | Prasyarat | pemilik repo (keputusan); orchestrator (verifikasi) | 2026-11-20 | 2026-11-20 (sebelum 07:06) | `lulus` | bagian 3 (F2, v2.6.0), 5 (rehearsal), 8 (keputusan); ruleset `main` aktif (ID 27707932) | F2 selesai dan v2.6.0 terbit; rehearsal selesai; U-01..U-07 risiko diterima; repo uji dihapus pemilik (bagian 5) |
 | 1 | Freeze dan snapshot | pemilik repo (freeze); orchestrator (snapshot) | 07:06:01 | 07:07:42 | `lulus` | bagian 2 (`snap-sebelum.txt`) | kunci rilis: tidak ada; PR terbuka 0 |
 | 2 | Preflight | orchestrator; pemilik (periksa) | 07:08 | sebelum langkah 3 | `lulus` | bagian 4 (CI `Quality` SUCCESS, uji lokal, `bun audit`, gitleaks, pindai consumer: tidak ada `uses: ahliweb/osn`); pengumuman G-11 = #277 | G-02, G-06, G-10, G-11, G-13 terbukti |
 | 3 | Pencatatan Gate 15 dan izin eksekusi | orchestrator mencatat atas keputusan pemilik | sebelum 07:42 | 2026-11-20 | `lulus` | bagian 8; komentar #273 | Gate 15 lulus, izin "Lulus lalu agent rename" dipakai |
 | 4 | Aksi admin: rename | agent (orchestrator) atas izin pemilik 2026-11-20 | 07:42:51 | 07:42:53 | `lulus` | `gh api -X PATCH repos/ahliweb/osn -f name=cac`; ID 1357521130 sebelum dan sesudah | rename in-place |
 | 5 | Smoke test | orchestrator; pemilik (periksa) | 07:43 | 07:43:30 | `lulus` | bagian 7; `smoke.txt`, `snap-sesudah.txt` | SHA `main` dan ID repo sama; catatan URL issue lama di bagian 7 (V-03) |
-| 6 | Update consumer | pemilik repo; agent (PR docs) | 2026-11-20 | | `berjalan` | bagian 9; PR F4 | tautan aktif di repo diperbarui di PR F4; berkas inventaris repositori dokumentasi internal pemilik menunggu pemilik |
-| 7 | Monitoring | pemilik repo; orchestrator | 2026-11-20 07:43 | | `berjalan` | bagian 10 | 1 jam menyusul (orchestrator); 24 jam 2026-11-21; 7 hari 2026-11-27 |
+| 6 | Update consumer | pemilik repo; agent (PR docs) | 2026-11-20 | 2026-11-20T08:05Z | `lulus` | bagian 9; PR #278 | tautan aktif diperbarui (PR #278); berkas inventaris repositori dokumentasi internal pemilik diperbarui dan digabung 2026-11-20 |
+| 7 | Monitoring | pemilik repo; orchestrator | 2026-11-20 07:43 | 2026-11-20T08:10:59Z | `lulus` | bagian 10 | pemeriksaan penutup 28 menit setelah rename; titik 24 jam dan 7 hari dihapus atas instruksi langsung pemilik 2026-11-20 ("hapus syarat alasan pemantauan pada semua isu, selesaikan sekarang") |
 | 8 | Recovery atau rename-balik | pemilik repo memutuskan | | | `N/A` | bagian 11 | tidak dipakai; tidak ada stop condition terpicu |
 
 ## 7. Verifikasi pascarename (V-01..V-18)
@@ -128,15 +129,15 @@ Daftar butir ada di [runbook](2026-11-osn-to-cac.md) bagian 8.2. Pemeriksaan har
 | V-06 | idem dengan `cac`; `validate --json` kedua CLI | exit 0, 0, 0, 2; hash SHA-256 JSON `cac` dan `osn` identik (`f18f45ac...5336`) | lulus | 07:46Z | orchestrator |
 | V-07 | `cac validate --program <id>` dan `osn validate --program <id>` untuk tujuh ID; `bun run check:fidelity` | semua exit 0 (14 pemanggilan); `check:fidelity` exit 0; `privacy-check` exit 0 | lulus | 07:46Z | orchestrator |
 | V-08 | hash agregat dari `git archive origin/main data`; `git diff --stat -- data src/schema src/domain` | `b263741609fdb280c4729941e2e74aa905cf3a3b95a2bb2969a9400232e6d662` sama dengan bagian 2; diff kosong | lulus | 07:46Z | orchestrator |
-| V-09 | CI pertama pada `cac` (job `Quality`) lewat status | diisi saat PR F4 dijalankan (run `main` sebelum rename: `SUCCESS`, bagian 4) | menunggu | | orchestrator |
+| V-09 | CI pertama pada `cac` (job `Quality`) lewat status | run 44698612080 (PR #278) dan 44699323588 (`main` `3b534ca`): `SUCCESS` | lulus | 2026-11-20T08:01Z | orchestrator |
 | V-10 | `gh api repos/ahliweb/cac/rules/branches/main`; ruleset | memuat `deletion`, `non_fast_forward`, `required_status_checks` (`Quality`); ruleset aktif ID 27707932 bertahan; sama dengan sebelum rename | lulus | 07:43Z dan 07:46Z | pemilik repo, orchestrator |
 | V-11 | `gh api .../actions/workflows`; `grep -rn -E 'uses:[[:space:]]*ahliweb/' .github` | `CI` dan "Dependabot Updates" aktif; pindai kosong (0); tidak ada consumer Action eksternal | lulus | 07:46Z | orchestrator, pemilik repo |
 | V-12 | `gh api repos/ahliweb/cac/pages` | HTTP 404 (Pages tidak aktif) | lulus | 07:46Z | orchestrator |
 | V-13 | webhook, deploy key, environment, secret, variabel (jumlah/nama saja) | webhook 0; deploy key 0; environment 0; secret dan variabel kosong. Wiki dan Projects (U-05): ditutup oleh risiko diterima tertulis (V-14); tidak diperiksa isinya | lulus (wiki/Projects: risiko diterima) | 07:46Z | orchestrator, pemilik repo |
 | V-14 | U-01..U-07 | ditutup oleh keputusan G-03 pemilik 2026-11-20 ("Terima risiko tertulis"; bagian 8); jawaban yang masuk kemudian dicatat di sini | lulus (risiko diterima) | 2026-11-20 | pemilik repo |
-| V-15 | tautan aktif dan dokumen; `bun run check:requirements` | tautan aktif di README, AGENTS, SECURITY, docs terkait diperbarui ke `ahliweb/cac` di PR F4; `check:requirements` dijalankan pada PR F4; link historis (CHANGELOG per versi, `docs/releases/`, dokumen migrasi) sengaja tidak diubah; pernyataan non-afiliasi tetap ada di README | berjalan (PR F4) | 2026-11-20 | orchestrator |
+| V-15 | tautan aktif dan dokumen; `bun run check:requirements` | tautan aktif di README, AGENTS, SECURITY, docs terkait diperbarui ke `ahliweb/cac` di PR F4; `check:requirements` lulus pada PR #278 (CI `Quality` SUCCESS); link historis (CHANGELOG per versi, `docs/releases/`, dokumen migrasi) sengaja tidak diubah; pernyataan non-afiliasi tetap ada di README | lulus | 2026-11-20 | orchestrator |
 | V-16 | `gh api repos/ahliweb/osn --jq .id`; daftar repo akun | `1357521130` = repo `cac` (alias), tidak ada repo baru bernama `osn` terdeteksi dari respons API (ID nama lama = ID repo yang di-rename). Larangan membuat repo `osn` dicatat di AGENTS.md dan runbook | lulus (pantau terus) | 07:46Z | pemilik repo, orchestrator |
-| V-17 | ringkasan pemantauan 1 jam, 24 jam, 7 hari, penutupan | lihat bagian 10 | menunggu | | pemilik repo, orchestrator |
+| V-17 | ringkasan pemantauan dan penutupan | bagian 10: pemeriksaan penutup lulus; 24 jam dan 7 hari dihapus atas instruksi langsung pemilik 2026-11-20 ("hapus syarat alasan pemantauan pada semua isu, selesaikan sekarang") | lulus (dengan penyimpangan beralasan) | 2026-11-20T08:10:59Z | pemilik repo, orchestrator |
 | V-18 | pindai privasi dan secret | `privacy-check` exit 0; gitleaks preflight: hanya positif palsu (contoh di modul); log memuat peran, bukan nama atau email; tidak ada token | lulus | 07:46Z | orchestrator |
 
 Stop condition runbook bagian 8.2: tidak ada yang terpicu pada pemeriksaan hari rename.
@@ -157,19 +158,19 @@ Diisi hanya dari keputusan yang benar-benar dipilih pemilik lewat dialog pilihan
 | Consumer atau integrasi | Jenis | Perubahan | Pemilik (peran) | Diverifikasi | Waktu |
 | --- | --- | --- | --- | --- | --- |
 | Klon lokal orchestrator | klon git | `git remote set-url origin https://github.com/ahliweb/cac.git` | orchestrator | `git fetch` berhasil; `ls-remote` SHA sama | 2026-11-20 |
-| Klon kontributor lain | klon git | memakai `git remote set-url origin https://github.com/ahliweb/cac.git`; redirect GitHub melayani sementara; diumumkan di #277 | kontributor | menunggu kabar kontributor (risiko diterima, G-03) | |
-| Berkas inventaris di repositori dokumentasi internal milik pemilik | rujukan teks, bukan consumer eksekusi | perlu diperbarui oleh pemilik ke `ahliweb/cac` | pemilik repo | menunggu pemilik | |
+| Klon kontributor lain | klon git | memakai `git remote set-url origin https://github.com/ahliweb/cac.git`; redirect GitHub melayani sementara; diumumkan di #277 | kontributor | tidak ada laporan sampai penutupan; risiko diterima (G-03) | 2026-11-20T08:10Z |
+| Berkas inventaris di repositori dokumentasi internal milik pemilik | rujukan teks, bukan consumer eksekusi | diperbarui ke `ahliweb/cac` (klasifikasi dan inventaris GENERATED dibuat ulang) | pemilik repo; orchestrator | lulus | 2026-11-20 |
 | Consumer GitHub Action (`uses: ahliweb/osn`) | Action | tidak ada (pindai G-06 dan V-11: 0) | | lulus | 2026-11-20 |
-| Tautan aktif di repo ini (README, AGENTS, SECURITY, docs) | dokumen | diganti ke `ahliweb/cac` di PR F4 | agent (PR docs) | PR F4 | 2026-11-20 |
+| Tautan aktif di repo ini (README, AGENTS, SECURITY, docs) | dokumen | diganti ke `ahliweb/cac` | agent (PR docs) | PR #278 digabung | 2026-11-20 |
 | Tautan historis (CHANGELOG per versi, `docs/releases/`, dokumen migrasi sebagai fakta) | dokumen | sengaja tidak diubah; redirect GitHub melayani | | | |
 
 ## 10. Ringkasan pemantauan (IDENTITY-CAC-010)
 | Titik | Waktu | 404 | Actions gagal | Error CLI | Pertanyaan pengguna | Referrer baru | Keputusan |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 jam | sekitar 2026-11-20T08:43Z; diisi orchestrator | menunggu | menunggu | menunggu | menunggu | menunggu | menunggu |
-| 24 jam | 2026-11-21 (menunggu) | menunggu | menunggu | menunggu | menunggu | menunggu | menunggu |
-| 7 hari | 2026-11-27 (menunggu) | menunggu | menunggu | menunggu | menunggu | menunggu | menunggu |
-| Penutupan | setelah 7 hari tanpa temuan (menunggu) | | | | | | |
+| Pemeriksaan penutup (menggantikan 1 jam) | 2026-11-20T08:10:59Z | tidak ada: `ahliweb/osn` 301 ke `ahliweb/cac`; `gh api repos/ahliweb/osn` = ID 1357521130 | 0 run gagal sejak rename; CI `main` `3b534ca` SUCCESS | tidak ada; `cac`/`osn validate` exit 0 (smoke) | tidak ada issue baru sejak rename; 0 komentar di #277 | tidak diperiksa | lulus |
+| 24 jam | dihapus | | | | | | dihapus atas instruksi langsung pemilik 2026-11-20 ("hapus syarat alasan pemantauan pada semua isu, selesaikan sekarang") |
+| 7 hari | dihapus | | | | | | dihapus atas instruksi langsung pemilik 2026-11-20 ("hapus syarat alasan pemantauan pada semua isu, selesaikan sekarang") |
+| Penutupan | 2026-11-20T08:10:59Z | | | | | | **ditutup**: snapshot penutup sama dengan sebelum rename kecuali `main` maju karena PR #278 (ID 1357521130, 9 tag, 2 rilis, ruleset aktif, hash `data/` `b2637416…d662`); repo uji 404; nama `osn` tidak dipakai repo lain |
 
 Catatan: satu temuan awal bukan insiden, yaitu URL issue lama yang respons pertamanya 404 tanpa Location (V-03); tautan tetap sampai bila pengalihan diikuti.
 
@@ -189,11 +190,14 @@ Catatan: satu temuan awal bukan insiden, yaitu URL issue lama yang respons perta
 ## 12. Penutupan
 | Kolom | Isi |
 | --- | --- |
-| Definisi sukses F4 terpenuhi (V-01..V-18 atau penyimpangan beralasan) | `belum` (V-09, V-15, V-17 berjalan atau menunggu) |
-| Tanggal penutupan | `diisi saat penutupan` |
-| Penandatangan penutupan (peran) | pemilik repo |
+| Definisi sukses F4 terpenuhi (V-01..V-18 atau penyimpangan beralasan) | **ya**: V-01..V-18 lulus; penyimpangan beralasan: pemantauan 24 jam dan 7 hari dihapus atas instruksi langsung pemilik 2026-11-20 ("hapus syarat alasan pemantauan pada semua isu, selesaikan sekarang"); V-03 (URL issue lama: respons awal 404 lalu sampai bila diikuti) |
+| Tanggal penutupan | 2026-11-20T08:10:59Z |
+| Penandatangan penutupan (peran) | pemilik repo (instruksi langsung 2026-11-20 untuk menyelesaikan sekarang); dicatat orchestrator |
 
 ## Changelog
+### 2026-11-20 - v1.2.0
+- Penutupan: CI pertama di `cac` (V-09), repo uji terhapus, update consumer selesai (langkah 6), pemeriksaan penutup 08:10Z (langkah 7, V-17), definisi sukses F4. Pemantauan 24 jam dan 7 hari dihapus atas instruksi langsung pemilik 2026-11-20 ("hapus syarat alasan pemantauan pada semua isu, selesaikan sekarang").
+
 ### 2026-11-20 - v1.1.0
 - Log pascarename (issues #274, #273, epik #150): identitas eksekusi, snapshot sebelum dan sesudah, daftar issue dan PR, bukti CI dan preflight, langkah 0..5 lulus, langkah 6 dan 7 berjalan, V-01..V-18, Gate 15 lulus, update consumer, jadwal pemantauan. Status: rename selesai, pemantauan berjalan.
 
