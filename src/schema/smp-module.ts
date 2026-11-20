@@ -38,10 +38,10 @@ import {
 export const SMP_MODULE_CONTENT_DIR = moduleContentDir(SMP_CODING_PROGRAM_ID);
 
 /**
- * Whether every `smp-coding` module must have a worksheet (`learnerSheetPath`, ADR-0011). `false` until the
- * programme's worksheets are written; a later per-programme change flips it.
+ * Whether every `smp-coding` module must have a worksheet (`learnerSheetPath`, ADR-0011). `true` since
+ * every `smp-coding` module has a worksheet (#288).
  */
-export const SMP_LEARNER_SHEET_REQUIRED = false;
+export const SMP_LEARNER_SHEET_REQUIRED = true;
 
 /** One `smp-coding` module-index entry. */
 export const smpModuleSchema = z

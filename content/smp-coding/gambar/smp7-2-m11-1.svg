@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 208" width="600" height="208" role="img" aria-labelledby="t d">
+  <title id="t">Tabel kasus uji untuk program Q</title>
+  <desc id="d">Tabel lima kolom: Kasus, skor, Hasil diharapkan, Hasil sebenarnya, Lulus. Tiga baris: skor 5 diharapkan Belum, skor 10 diharapkan Menang, skor 15 diharapkan Menang. Kolom Hasil sebenarnya dan Lulus kosong.</desc>
+  <rect width="600" height="208" fill="#ffffff"/>
+  <text x="10" y="26" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222">Kasus uji program Q (isi sendiri)</text>
+  <rect x="10" y="40" width="80" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="50.0" y="62.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Kasus</text>
+  <rect x="90" y="40" width="80" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="130.0" y="62.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">skor</text>
+  <rect x="170" y="40" width="160" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="250.0" y="62.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Hasil diharapkan</text>
+  <rect x="330" y="40" width="160" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="410.0" y="62.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Hasil sebenarnya</text>
+  <rect x="490" y="40" width="100" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="540.0" y="62.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Lulus?</text>
+  <rect x="10" y="74" width="80" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="50.0" y="99.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">1</text>
+  <rect x="90" y="74" width="80" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="130.0" y="99.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">5</text>
+  <rect x="170" y="74" width="160" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="250.0" y="99.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Belum</text>
+  <rect x="330" y="74" width="160" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="490" y="74" width="100" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="114" width="80" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="50.0" y="139.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">2</text>
+  <rect x="90" y="114" width="80" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="130.0" y="139.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">10</text>
+  <rect x="170" y="114" width="160" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="250.0" y="139.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Menang</text>
+  <rect x="330" y="114" width="160" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="490" y="114" width="100" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="154" width="80" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="50.0" y="179.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">3</text>
+  <rect x="90" y="154" width="80" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="130.0" y="179.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">15</text>
+  <rect x="170" y="154" width="160" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="250.0" y="179.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Menang</text>
+  <rect x="330" y="154" width="160" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="490" y="154" width="100" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+</svg>

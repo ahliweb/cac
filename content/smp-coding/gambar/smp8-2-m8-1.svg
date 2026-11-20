@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 180" width="600" height="180" role="img" aria-labelledby="t d">
+  <title id="t">Daftar belanja dengan nomor indeks</title>
+  <desc id="d">Empat kotak berurutan dengan indeks 0 sampai 3. Kotak 0, 1, 2 berisi beras, telur, teh. Kotak 3 kosong untuk diisi isi hasil append. Dua isian di bawah: len dan belanja[3].</desc>
+  <rect width="600" height="180" fill="#ffffff"/>
+  <text x="10" y="24" text-anchor="start" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222">Daftar belanja sesudah belanja.append(...)</text>
+  <rect x="40" y="50" width="110" height="50" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="95" y="81" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">beras</text>
+  <text x="95" y="124" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">0</text>
+  <rect x="170" y="50" width="110" height="50" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="225" y="81" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">telur</text>
+  <text x="225" y="124" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">1</text>
+  <rect x="300" y="50" width="110" height="50" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="355" y="81" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">teh</text>
+  <text x="355" y="124" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">2</text>
+  <rect x="430" y="50" width="110" height="50" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="485" y="124" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">3</text>
+  <text x="10" y="124" text-anchor="start" font-family="sans-serif" font-size="14" fill="#222222">indeks</text>
+  <text x="40" y="160" text-anchor="start" font-family="sans-serif" font-size="14" fill="#222222">len(belanja) = ______</text>
+  <text x="300" y="160" text-anchor="start" font-family="sans-serif" font-size="14" fill="#222222">belanja[3] = ______</text>
+</svg>

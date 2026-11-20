@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 380" width="620" height="380" role="img" aria-labelledby="t d">
+  <title id="t">Kebun 5 x 5 petak untuk robot</title>
+  <desc id="d">Kisi lima kolom kali lima baris. Kolom 1 sampai 5 dari kiri, baris 1 sampai 5 dari bawah. Petak (1, 1) berlabel MULAI dengan panah menghadap atas. Petak (4, 3) berlabel TUJUAN SUSUN.</desc>
+  <rect width="620" height="380" fill="#ffffff"/>
+  <line x1="70" y1="20" x2="70" y2="340" stroke="#222222" stroke-width="1.5"/>
+  <line x1="70" y1="20" x2="390" y2="20" stroke="#222222" stroke-width="1.5"/>
+  <line x1="134" y1="20" x2="134" y2="340" stroke="#222222" stroke-width="1.5"/>
+  <line x1="70" y1="84" x2="390" y2="84" stroke="#222222" stroke-width="1.5"/>
+  <line x1="198" y1="20" x2="198" y2="340" stroke="#222222" stroke-width="1.5"/>
+  <line x1="70" y1="148" x2="390" y2="148" stroke="#222222" stroke-width="1.5"/>
+  <line x1="262" y1="20" x2="262" y2="340" stroke="#222222" stroke-width="1.5"/>
+  <line x1="70" y1="212" x2="390" y2="212" stroke="#222222" stroke-width="1.5"/>
+  <line x1="326" y1="20" x2="326" y2="340" stroke="#222222" stroke-width="1.5"/>
+  <line x1="70" y1="276" x2="390" y2="276" stroke="#222222" stroke-width="1.5"/>
+  <line x1="390" y1="20" x2="390" y2="340" stroke="#222222" stroke-width="1.5"/>
+  <line x1="70" y1="340" x2="390" y2="340" stroke="#222222" stroke-width="1.5"/>
+  <text x="102.0" y="362" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">1</text>
+  <text x="56" y="313.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">1</text>
+  <text x="166.0" y="362" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">2</text>
+  <text x="56" y="249.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">2</text>
+  <text x="230.0" y="362" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">3</text>
+  <text x="56" y="185.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">3</text>
+  <text x="294.0" y="362" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">4</text>
+  <text x="56" y="121.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">4</text>
+  <text x="358.0" y="362" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">5</text>
+  <text x="56" y="57.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">5</text>
+  <text x="230.0" y="384" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">kolom</text>
+  <text x="14" y="180.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" transform="rotate(-90 14 180.0)">baris</text>
+  <rect x="72" y="278" width="60" height="60" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2.5"/>
+  <polygon points="102.0,284 116.0,306 88.0,306" fill="#2a5d9f"/>
+  <text x="102.0" y="328" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">MULAI</text>
+  <rect x="266" y="152" width="56" height="56" fill="#ffffff" stroke="#b3261e" stroke-width="2.5" stroke-dasharray="6 3"/>
+  <text x="294.0" y="178.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">TUJUAN</text>
+  <text x="294.0" y="196.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">SUSUN</text>
+  <polygon points="420,50 432,72 408,72" fill="#2a5d9f"/>
+  <text x="440" y="66" font-family="sans-serif" font-size="14" fill="#222222">robot menghadap atas</text>
+</svg>

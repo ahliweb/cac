@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 280" width="560" height="280" role="img" aria-labelledby="t d">
+  <title id="t">Tabel penelusuran isi variabel program W</title>
+  <desc id="d">Tabel kosong dengan kolom Blok, skor, nyawa. Enam baris: set skor, set nyawa, lalu change skor dan change nyawa untuk putaran 1 dan putaran 2.</desc>
+  <rect width="560" height="280" fill="#ffffff"/>
+  <text x="10" y="26" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222">Penelusuran program W (isi sendiri)</text>
+  <rect x="10" y="40" width="340" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="180.0" y="62.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Blok</text>
+  <rect x="350" y="40" width="100" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="400.0" y="62.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">skor</text>
+  <rect x="450" y="40" width="100" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="500.0" y="62.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">nyawa</text>
+  <rect x="10" y="74" width="340" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="180.0" y="95.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">set [skor] to (10)</text>
+  <rect x="350" y="74" width="100" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="450" y="74" width="100" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="106" width="340" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="180.0" y="127.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">set [nyawa] to (3)</text>
+  <rect x="350" y="106" width="100" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="450" y="106" width="100" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="138" width="340" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="180.0" y="159.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">change [skor] by (5) (putaran 1)</text>
+  <rect x="350" y="138" width="100" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="450" y="138" width="100" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="170" width="340" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="180.0" y="191.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">change [nyawa] by (-1) (putaran 1)</text>
+  <rect x="350" y="170" width="100" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="450" y="170" width="100" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="202" width="340" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="180.0" y="223.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">change [skor] by (5) (putaran 2)</text>
+  <rect x="350" y="202" width="100" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="450" y="202" width="100" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="234" width="340" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="180.0" y="255.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">change [nyawa] by (-1) (putaran 2)</text>
+  <rect x="350" y="234" width="100" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="450" y="234" width="100" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+</svg>

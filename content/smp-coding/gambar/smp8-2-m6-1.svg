@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 258" width="580" height="258" role="img" aria-labelledby="t d">
+  <title id="t">Tabel penelusuran total dan pesan</title>
+  <desc id="d">Tabel kosong empat kolom: Putaran, total, total &gt; 10 ?, Pesan muncul?, dengan lima baris bernomor 1 sampai 5.</desc>
+  <rect width="580" height="258" fill="#ffffff"/>
+  <text x="10" y="34" text-anchor="start" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222">Penelusuran program Y (isi sendiri)</text>
+  <rect x="10" y="44" width="110" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="65.0" y="66.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Putaran</text>
+  <rect x="120" y="44" width="110" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="175.0" y="66.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">total</text>
+  <rect x="230" y="44" width="170" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="315.0" y="66.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">total &gt; 10 ?</text>
+  <rect x="400" y="44" width="170" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="485.0" y="66.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Pesan muncul?</text>
+  <rect x="10" y="78" width="110" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="65.0" y="100.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">1</text>
+  <rect x="120" y="78" width="110" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="230" y="78" width="170" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="400" y="78" width="170" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="112" width="110" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="65.0" y="134.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">2</text>
+  <rect x="120" y="112" width="110" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="230" y="112" width="170" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="400" y="112" width="170" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="146" width="110" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="65.0" y="168.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">3</text>
+  <rect x="120" y="146" width="110" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="230" y="146" width="170" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="400" y="146" width="170" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="180" width="110" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="65.0" y="202.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">4</text>
+  <rect x="120" y="180" width="110" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="230" y="180" width="170" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="400" y="180" width="170" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="214" width="110" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="65.0" y="236.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">5</text>
+  <rect x="120" y="214" width="110" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="230" y="214" width="170" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="400" y="214" width="170" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+</svg>

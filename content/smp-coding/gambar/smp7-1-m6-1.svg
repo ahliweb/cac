@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 230" width="660" height="230" role="img" aria-labelledby="t d">
+  <title id="t">Papan rencana cerita robot kehabisan baterai</title>
+  <desc id="d">Tiga kotak adegan berurutan dengan panah. Adegan 1: robot muncul di (-150, -50), ucapan Baterai habis. Adegan 2: meluncur ke (0, -50), ucapan Toko. Adegan 3: meluncur ke (150, -50), ucapan Siap. Tiap kotak punya isian waktu selesai dalam detik yang dikosongkan.</desc>
+  <rect width="660" height="230" fill="#ffffff"/>
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#222222"/>
+    </marker>
+  </defs>
+  <rect x="10" y="14" width="190" height="200" rx="8" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="105" y="40" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222">Adegan 1</text>
+  <text x="105" y="70" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">gerak:</text>
+  <text x="105" y="90" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">muncul</text>
+  <text x="105" y="108" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">di (-150, -50)</text>
+  <text x="105" y="136" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">say "Baterai habis!" 2 detik</text>
+  <text x="105" y="164" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">selesai pada detik ke-</text>
+  <rect x="65" y="174" width="80" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <line x1="202" y1="114" x2="226" y2="114" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="230" y="14" width="190" height="200" rx="8" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="325" y="40" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222">Adegan 2</text>
+  <text x="325" y="70" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">gerak:</text>
+  <text x="325" y="90" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">meluncur 2 detik</text>
+  <text x="325" y="108" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">ke (0, -50)</text>
+  <text x="325" y="136" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">say "Toko!" 2 detik</text>
+  <text x="325" y="164" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">selesai pada detik ke-</text>
+  <rect x="285" y="174" width="80" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <line x1="422" y1="114" x2="446" y2="114" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="450" y="14" width="190" height="200" rx="8" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="545" y="40" text-anchor="middle" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222">Adegan 3</text>
+  <text x="545" y="70" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">gerak:</text>
+  <text x="545" y="90" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">meluncur 2 detik</text>
+  <text x="545" y="108" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">ke (150, -50)</text>
+  <text x="545" y="136" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">say "Siap!" 2 detik</text>
+  <text x="545" y="164" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">selesai pada detik ke-</text>
+  <rect x="505" y="174" width="80" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+</svg>

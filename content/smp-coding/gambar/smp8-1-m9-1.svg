@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 520" width="560" height="520" role="img" aria-labelledby="t d">
+  <title id="t">Tabel padanan Scratch dan MakeCode dan tabel penelusuran skor</title>
+  <desc id="d">Tabel padanan sepuluh baris dengan kolom Scratch dan MakeCode. Di bawahnya tabel penelusuran kosong dengan kolom Putaran, skor program Scratch P, dan skor program MakeCode Q untuk putaran 1 sampai 3.</desc>
+  <rect width="560" height="520" fill="#ffffff"/>
+  <text x="10" y="24" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Tabel padanan</text>
+  <rect x="10" y="36" width="270" height="28" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="145.0" y="55.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Scratch</text>
+  <rect x="280" y="36" width="260" height="28" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="410.0" y="55.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">MakeCode</text>
+  <rect x="10" y="64" width="270" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="145.0" y="83.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">when green flag clicked</text>
+  <rect x="280" y="64" width="260" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="410.0" y="83.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">on start</text>
+  <rect x="10" y="92" width="270" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="145.0" y="111.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">forever</text>
+  <rect x="280" y="92" width="260" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="410.0" y="111.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">forever</text>
+  <rect x="10" y="120" width="270" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="145.0" y="139.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">repeat (n)</text>
+  <rect x="280" y="120" width="260" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="410.0" y="139.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">repeat n times</text>
+  <rect x="10" y="148" width="270" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="145.0" y="167.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">if &lt;...&gt; then dan else</text>
+  <rect x="280" y="148" width="260" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="410.0" y="167.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">if ... then dan else</text>
+  <rect x="10" y="176" width="270" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="145.0" y="195.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">set [x] to (0)</text>
+  <rect x="280" y="176" width="260" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="410.0" y="195.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">set x to 0</text>
+  <rect x="10" y="204" width="270" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="145.0" y="223.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">change [x] by (1)</text>
+  <rect x="280" y="204" width="260" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="410.0" y="223.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">change x by 1</text>
+  <rect x="10" y="232" width="270" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="145.0" y="251.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">say [teks] for (2) seconds</text>
+  <rect x="280" y="232" width="260" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="410.0" y="251.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">show string "teks"</text>
+  <rect x="10" y="260" width="270" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="145.0" y="279.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">say (x) for (2) seconds</text>
+  <rect x="280" y="260" width="260" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="410.0" y="279.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">show number x</text>
+  <rect x="10" y="288" width="270" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="145.0" y="307.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">wait (1) seconds</text>
+  <rect x="280" y="288" width="260" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="410.0" y="307.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">pause (ms) 1000</text>
+  <rect x="10" y="316" width="270" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="145.0" y="335.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">when key pressed</text>
+  <rect x="280" y="316" width="260" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="410.0" y="335.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">on button A pressed</text>
+  <text x="10" y="372" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Penelusuran P (Scratch) dan Q (MakeCode)</text>
+  <rect x="10" y="384" width="120" height="26" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="70.0" y="402.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Putaran</text>
+  <rect x="130" y="384" width="200" height="26" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="230.0" y="402.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">skor P</text>
+  <rect x="330" y="384" width="200" height="26" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="430.0" y="402.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">skor Q</text>
+  <rect x="10" y="410" width="120" height="26" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="70.0" y="428.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">awal</text>
+  <rect x="130" y="410" width="200" height="26" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="330" y="410" width="200" height="26" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="436" width="120" height="26" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="70.0" y="454.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">1</text>
+  <rect x="130" y="436" width="200" height="26" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="330" y="436" width="200" height="26" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="462" width="120" height="26" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="70.0" y="480.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">2</text>
+  <rect x="130" y="462" width="200" height="26" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="330" y="462" width="200" height="26" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="488" width="120" height="26" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="70.0" y="506.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">3</text>
+  <rect x="130" y="488" width="200" height="26" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="330" y="488" width="200" height="26" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+</svg>

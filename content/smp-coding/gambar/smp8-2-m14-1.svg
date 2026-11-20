@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 224" width="520" height="224" role="img" aria-labelledby="t d">
+  <title id="t">Tabel penelusuran hitung genap</title>
+  <desc id="d">Tabel tiga kolom: n, apakah n genap, total sesudahnya. Empat baris dengan n sama dengan 3, 4, 7, dan 10. Dua kolom terakhir kosong.</desc>
+  <rect width="520" height="224" fill="#ffffff"/>
+  <text x="10" y="34" text-anchor="start" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222">Penelusuran program X (isi sendiri)</text>
+  <rect x="10" y="44" width="100" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="60.0" y="66.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">n</text>
+  <rect x="110" y="44" width="200" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="210.0" y="66.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">n % 2 == 0 ?</text>
+  <rect x="310" y="44" width="200" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="410.0" y="66.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">total sesudahnya</text>
+  <rect x="10" y="78" width="100" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="60.0" y="100.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">3</text>
+  <rect x="110" y="78" width="200" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="310" y="78" width="200" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="112" width="100" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="60.0" y="134.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">4</text>
+  <rect x="110" y="112" width="200" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="310" y="112" width="200" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="146" width="100" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="60.0" y="168.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">7</text>
+  <rect x="110" y="146" width="200" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="310" y="146" width="200" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="180" width="100" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="60.0" y="202.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">10</text>
+  <rect x="110" y="180" width="200" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="310" y="180" width="200" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+</svg>

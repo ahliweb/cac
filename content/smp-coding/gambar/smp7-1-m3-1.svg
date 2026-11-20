@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 330" width="600" height="330" role="img" aria-labelledby="t d">
+  <title id="t">Panggung Scratch dengan sumbu x dan y</title>
+  <desc id="d">Persegi panjang panggung dengan titik tengah (0, 0), x ke kanan sampai 240 dan ke kiri sampai -240, y ke atas sampai 180 dan ke bawah sampai -180. Arah 90 kanan, 0 atas, 180 bawah, -90 kiri. Titik MULAI (-100, 0) dan TUJUAN (0, 80) ditandai.</desc>
+  <rect width="600" height="330" fill="#ffffff"/>
+  <rect x="132.0" y="34.000000000000014" width="336.0" height="252.0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <line x1="132.0" y1="160" x2="468.0" y2="160" stroke="#222222" stroke-width="1.5"/>
+  <line x1="300" y1="34.000000000000014" x2="300" y2="286.0" stroke="#222222" stroke-width="1.5"/>
+  <text x="300" y="26.000000000000014" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">y naik (arah 0)</text>
+  <text x="300" y="306.0" text-anchor="middle" font-family="sans-serif" font-size="14"  fill="#222222">arah 180 (bawah)</text>
+  <text x="476.0" y="152" text-anchor="start" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">x naik</text>
+  <text x="476.0" y="170" text-anchor="start" font-family="sans-serif" font-size="14"  fill="#222222">arah 90</text>
+  <text x="124.0" y="152" text-anchor="end" font-family="sans-serif" font-size="14"  fill="#222222">arah -90</text>
+  <text x="124.0" y="170" text-anchor="end" font-family="sans-serif" font-size="14"  fill="#222222">(kiri)</text>
+  <text x="464.0" y="176" text-anchor="end" font-family="sans-serif" font-size="14"  fill="#222222">240</text>
+  <text x="136.0" y="176" text-anchor="start" font-family="sans-serif" font-size="14"  fill="#222222">-240</text>
+  <text x="306" y="50.000000000000014" text-anchor="start" font-family="sans-serif" font-size="14"  fill="#222222">180</text>
+  <text x="306" y="280.0" text-anchor="start" font-family="sans-serif" font-size="14"  fill="#222222">-180</text>
+  <text x="306" y="176" text-anchor="start" font-family="sans-serif" font-size="14"  fill="#222222">(0, 0)</text>
+  <circle cx="230.0" cy="160" r="6" fill="#2a5d9f"/>
+  <text x="230.0" y="182" text-anchor="middle" font-family="sans-serif" font-size="14"  fill="#222222">MULAI (-100, 0)</text>
+  <rect x="294" y="98.0" width="12" height="12" fill="#ffffff" stroke="#b3261e" stroke-width="2.5"/>
+  <text x="310" y="94.0" text-anchor="start" font-family="sans-serif" font-size="14"  fill="#222222">TUJUAN (0, 80)</text>
+</svg>

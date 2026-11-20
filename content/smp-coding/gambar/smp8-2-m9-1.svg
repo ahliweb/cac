@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 270" width="600" height="270" role="img" aria-labelledby="t d">
+  <title id="t">Alur fungsi dan tabel pemanggilan</title>
+  <desc id="d">Diagram tiga kotak: argumen, fungsi def kuadrat(x), nilai kembali, dihubungkan panah. Di bawahnya tabel kosong tiga kolom untuk tiga pemanggilan: kuadrat(4), sapa Murid-01, kuadrat(a).</desc>
+  <rect width="600" height="270" fill="#ffffff"/>
+  <text x="10" y="24" text-anchor="start" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222">Pemanggilan fungsi</text>
+  <rect x="10" y="40" width="140" height="36" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="80" y="63" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">argumen</text>
+  <line x1="150" y1="58" x2="200" y2="58" stroke="#222222" stroke-width="1.5"/>
+  <polygon points="200,58 191.7,61.5 191.7,54.5" fill="#222222"/>
+  <rect x="200" y="40" width="200" height="36" rx="6" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="300" y="63" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">def kuadrat(x)</text>
+  <line x1="400" y1="58" x2="450" y2="58" stroke="#222222" stroke-width="1.5"/>
+  <polygon points="450,58 441.7,61.5 441.7,54.5" fill="#222222"/>
+  <rect x="450" y="40" width="140" height="36" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="520" y="63" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">nilai kembali</text>
+  <text x="10" y="100" text-anchor="start" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222">Penelusuran program P (isi sendiri)</text>
+  <rect x="10" y="110" width="200" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="110.0" y="132.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Pemanggilan</text>
+  <rect x="210" y="110" width="170" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="295.0" y="132.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Nilai x atau nama</text>
+  <rect x="380" y="110" width="200" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="480.0" y="132.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Dikembalikan</text>
+  <rect x="10" y="144" width="200" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="110.0" y="166.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">kuadrat(4)</text>
+  <rect x="210" y="144" width="170" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="380" y="144" width="200" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="178" width="200" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="110.0" y="200.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">sapa(&quot;Murid-01&quot;)</text>
+  <rect x="210" y="178" width="170" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="380" y="178" width="200" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="212" width="200" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="110.0" y="234.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">kuadrat(a)</text>
+  <rect x="210" y="212" width="170" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="380" y="212" width="200" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+</svg>

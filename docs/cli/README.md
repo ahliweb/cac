@@ -912,8 +912,8 @@ $ cac render modul --program tk-coding --id tk-a1-m1 --lembar
 cac render modul: the learner sheet of "Kegiatan sehari-hariku" has a name or identity field of the child: line 3 ("Nama: ______"). A child's sheet carries none; remove it from the sheet.
 [exit 1]
 
-$ cac render modul --program smp-coding --id smp7-1-m1 --lembar
-cac render modul: module "smp7-1-m1" has no learner sheet.
+$ cac render modul --program sma-coding --id a-x1-m10 --lembar
+cac render modul: module "a-x1-m10" has no learner sheet.
 [exit 2]
 ```
 

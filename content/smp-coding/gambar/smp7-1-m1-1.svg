@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 292" width="620" height="292" role="img" aria-labelledby="t d">
+  <title id="t">Tabel penelusuran robot pembuat teh manis</title>
+  <desc id="d">Tabel kosong dengan tiga kolom: Langkah, Yang dikerjakan robot, Isi gelas sesudahnya. Enam baris bernomor 1 sampai 6 untuk diisi.</desc>
+  <rect width="620" height="292" fill="#ffffff"/>
+  <text x="10" y="26" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222">Penelusuran kartu teh manis (isi sendiri)</text>
+  <rect x="10" y="40" width="80" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="50.0" y="62.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Langkah</text>
+  <rect x="90" y="40" width="260" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="220.0" y="62.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Yang dikerjakan robot</text>
+  <rect x="350" y="40" width="260" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="480.0" y="62.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Isi gelas sesudahnya</text>
+  <rect x="10" y="74" width="80" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="50.0" y="96.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">1</text>
+  <rect x="90" y="74" width="260" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="350" y="74" width="260" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="108" width="80" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="50.0" y="130.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">2</text>
+  <rect x="90" y="108" width="260" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="350" y="108" width="260" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="142" width="80" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="50.0" y="164.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">3</text>
+  <rect x="90" y="142" width="260" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="350" y="142" width="260" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="176" width="80" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="50.0" y="198.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">4</text>
+  <rect x="90" y="176" width="260" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="350" y="176" width="260" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="210" width="80" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="50.0" y="232.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">5</text>
+  <rect x="90" y="210" width="260" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="350" y="210" width="260" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="244" width="80" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="50.0" y="266.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">6</text>
+  <rect x="90" y="244" width="260" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="350" y="244" width="260" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+</svg>

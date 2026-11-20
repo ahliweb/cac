@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 530 258" width="530" height="258" role="img" aria-labelledby="t d">
+  <title id="t">Tabel penelusuran posisi terbesar</title>
+  <desc id="d">Tabel empat kolom: i, daftar[i], hasil, posisi. Satu baris awal dan empat baris dengan i 0 sampai 3 dan daftar[i] 4, 9, 2, 9. Kolom hasil dan posisi kosong.</desc>
+  <rect width="530" height="258" fill="#ffffff"/>
+  <text x="10" y="34" text-anchor="start" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222">Penelusuran program X (isi sendiri)</text>
+  <rect x="10" y="44" width="100" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="60.0" y="66.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">i</text>
+  <rect x="110" y="44" width="150" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="185.0" y="66.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">daftar[i]</text>
+  <rect x="260" y="44" width="130" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="325.0" y="66.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">hasil</text>
+  <rect x="390" y="44" width="130" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="455.0" y="66.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">posisi</text>
+  <rect x="10" y="78" width="100" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="60.0" y="100.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">awal</text>
+  <rect x="110" y="78" width="150" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="185.0" y="100.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">-</text>
+  <rect x="260" y="78" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="390" y="78" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="112" width="100" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="60.0" y="134.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">0</text>
+  <rect x="110" y="112" width="150" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="185.0" y="134.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">4</text>
+  <rect x="260" y="112" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="390" y="112" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="146" width="100" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="60.0" y="168.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">1</text>
+  <rect x="110" y="146" width="150" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="185.0" y="168.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">9</text>
+  <rect x="260" y="146" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="390" y="146" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="180" width="100" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="60.0" y="202.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">2</text>
+  <rect x="110" y="180" width="150" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="185.0" y="202.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">2</text>
+  <rect x="260" y="180" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="390" y="180" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="214" width="100" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="60.0" y="236.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">3</text>
+  <rect x="110" y="214" width="150" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="185.0" y="236.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">9</text>
+  <rect x="260" y="214" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="390" y="214" width="130" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+</svg>
