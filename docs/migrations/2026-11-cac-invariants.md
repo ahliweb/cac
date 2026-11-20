@@ -4,6 +4,7 @@
 - Version: v1.0.0
 - Last updated: 2026-11-19
 - Status: DRAF untuk ditinjau; hanya dokumentasi. Tidak mengubah kode, data, atau silabus. Rename repository belum dilakukan.
+- Catatan status 2026-11-20 (pascarename, #274): rename in-place `ahliweb/osn` menjadi `ahliweb/cac` selesai 2026-11-20 (ID repo sama); kalimat "rename belum dilakukan" di dokumen ini adalah keadaan sebelum rename. Bukti: [migration log](2026-11-cac-migration-log.md).
 - Issue: #154 (turunan epik #150, fase F1)
 - Changeset: Mengunci daftar invariants, baseline hash dan semantik, metode deteksi perubahan tak disengaja (dengan bukti fixture sintetis), dan traceability IDENTITY-CAC-002/005/009 ke tes.
 - Konteks: [ADR-0009](../architecture/adr/0009-cac-platform-identity.md), [kebutuhan IDENTITY-CAC](../requirements/identity-cac.md), [rencana migrasi](2026-11-osn-to-cac.md), [matriks dampak](2026-11-cac-impact-matrix.md).

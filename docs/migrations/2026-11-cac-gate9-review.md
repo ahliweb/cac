@@ -4,6 +4,7 @@
 - Version: v1.2.0
 - Last updated: 2026-11-20
 - Status: **Gate 9 PASSED, diputuskan pemilik 2026-11-20** lewat dialog pilihan (opsi "PASSED (Disarankan)"), hanya untuk kesiapan implementasi F2. Rename repository belum dilakukan dan tetap menunggu Gate 15 serta izin eksekusi terpisah.
+- Catatan status 2026-11-20 (pascarename, #274): rename in-place `ahliweb/osn` menjadi `ahliweb/cac` selesai 2026-11-20 (ID repo sama); kalimat "rename belum dilakukan" di dokumen ini adalah keadaan sebelum rename. Bukti: [migration log](2026-11-cac-migration-log.md).
 - Issue: #156 (turunan epik #150, fase F1); mendukung seluruh IDENTITY-CAC-001..010
 - Changeset: Mencatat tinjauan silang ADR-0009, kebutuhan, roadmap, matriks dampak, runbook, dan empat audit F1; applicability UX/ERD/RBAC/API; tabel bukti per kebutuhan; usulan verdict Gate 9; dan konsolidasi butir keputusan pemilik menjadi empat pertanyaan dialog. Tidak mengubah kode, paket, CLI, data, atau setelan GitHub.
 - Konteks: [ADR-0009](../architecture/adr/0009-cac-platform-identity.md), [IDENTITY-CAC](../requirements/identity-cac.md), [roadmap](../roadmap.md), [matriks dampak](2026-11-cac-impact-matrix.md), [rencana migrasi](2026-11-osn-to-cac.md)

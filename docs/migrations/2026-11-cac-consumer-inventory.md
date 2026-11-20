@@ -4,6 +4,7 @@
 - Version: v1.1.0
 - Last updated: 2026-11-20
 - Status: **Audit selesai untuk bagian yang dapat diperiksa dari repo dan GitHub (read-only); butir unknown menunggu jawaban pemilik. Rename belum dilakukan.**
+- Catatan status 2026-11-20 (pascarename, #274): rename in-place `ahliweb/osn` menjadi `ahliweb/cac` selesai 2026-11-20 (ID repo sama); kalimat "rename belum dilakukan" di dokumen ini adalah keadaan sebelum rename. Bukti: [migration log](2026-11-cac-migration-log.md).
 - Issue: #152 (bagian epik #150); memenuhi IDENTITY-CAC-008 dan mendukung IMP-01, IMP-05, IMP-08, IMP-10
 - Changeset: Mencatat keputusan pemilik 2026-11-20 atas butir unknown U-01..U-07: risiko diterima tertulis, beserta mitigasi (issues #272, #273, epik #150). Isi audit tidak diubah. Sebelumnya (v1.0.0): menambahkan inventaris consumer, integrasi, dan URL aktif repo `ahliweb/osn` beserta mitigasi dan butir unknown untuk pemilik.
 - Konteks: [ADR-0009](../architecture/adr/0009-cac-platform-identity.md), [rencana migrasi](2026-11-osn-to-cac.md), [matriks dampak](2026-11-cac-impact-matrix.md), [IDENTITY-CAC](../requirements/identity-cac.md)

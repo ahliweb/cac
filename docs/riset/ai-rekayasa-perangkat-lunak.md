@@ -670,7 +670,7 @@ Q3 pemilik **memilih berbeda dari rekomendasi riset**.
 | Q4 | Jalur I: integrasi di `KUL-I-204` dan `KUL-I-401` (PR #162); jalur PRO: modul baru `DW-PRO-M13` setelah `DW-PRO-M5` (PR #163). | A untuk jalur I, B untuk PRO (Disarankan) |
 | Q5 | Energi dan biaya komputasi sebagai butir singkat dengan ketidakpastian dinyatakan. | A (Disarankan) |
 | Q6 | Dokumen ini ditautkan dari `README.md`, `AGENTS.md`, `docs/architecture/repository-map.md`, dan `docs/programs/README.md`. | Tautkan (Disarankan) |
-| Q7 | Tinjau ulang setiap 6 bulan; dijadwalkan Mei 2027 di issue [#151](https://github.com/ahliweb/osn/issues/151). | Setiap 6 bulan (Disarankan) |
+| Q7 | Tinjau ulang setiap 6 bulan; dijadwalkan Mei 2027 di issue [#151](https://github.com/ahliweb/cac/issues/151). | Setiap 6 bulan (Disarankan) |
 
 ## 9. Daftar pustaka
 

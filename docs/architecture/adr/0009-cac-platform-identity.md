@@ -1,12 +1,14 @@
 # ADR-0009: Identitas Platform Curriculum as Code (CaC)
 
 ## Metadata
-- Version: v1.0.1
-- Last updated: 2026-11-19
-- Changeset: Mencatat keputusan nama platform dan target rename repo tanpa melaksanakan rename.
+- Version: v1.1.0
+- Last updated: 2026-11-20
+- Changeset: Menambahkan catatan status pelaksanaan: rename in-place ahliweb/osn menjadi ahliweb/cac selesai 2026-11-20 (Gate 15 lulus); keputusan historis tidak diubah.
 
 ## Status
-Accepted (keputusan pemilik, 2026-11-19). **Execution pending**: keputusan identitas bukan izin melompati gerbang kesiapan dan bukan bukti rename telah dilaksanakan.
+Accepted (keputusan pemilik, 2026-11-19). **Execution pending** (status 2026-11-19, dipertahankan sebagai catatan historis): keputusan identitas bukan izin melompati gerbang kesiapan dan bukan bukti rename telah dilaksanakan.
+
+**Catatan status 2026-11-20:** Gate 15 lulus dan rename in-place `ahliweb/osn` menjadi `ahliweb/cac` dilaksanakan 2026-11-20 (ID repo sama). Bukti: [migration log](../../migrations/2026-11-cac-migration-log.md). Keputusan di bawah tidak berubah.
 
 ## Context
 Repositori saat ini bernama ahliweb/osn, package private bernama kurikulum-informatika, CLI bernama osn, sementara ADR-0006 memperluas domain menjadi multi-program (OSN, SMA coding dan rencana TK/SD/SMP/kuliah/dewasa). Nama OSN tepat untuk satu program namun salah untuk platform yang menyimpan beberapa program. ADR-0001 sudah menetapkan paradigma curriculum-as-code; ADR-0005 membedakan versi perangkat lunak dari versi silabus; ADR-0004 melarang penyimpanan data pribadi pembelajar.

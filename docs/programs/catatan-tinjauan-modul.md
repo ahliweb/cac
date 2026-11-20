@@ -8,7 +8,7 @@
 > **Tindak lanjut revisi pascapersetujuan.** Pada 2026-11-20 pemilik
 > program memilih "Setujui semua, catatan jadi tindak lanjut" lewat dialog
 > pilihan baku: seluruh 753 modul enam program coding berstatus `disetujui`
-> ([#125](https://github.com/ahliweb/osn/issues/125)). Persetujuan itu
+> ([#125](https://github.com/ahliweb/cac/issues/125)). Persetujuan itu
 > keputusan pemilik; agent hanya mencatatnya dan **tidak** mengklaim tinjauan
 > manusia atas isi tiap modul. Dokumen ini mengumpulkan butir yang
 > **diketahui** perlu dicek manusia, kini sebagai **tindak lanjut revisi**:

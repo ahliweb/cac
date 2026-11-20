@@ -2,7 +2,7 @@
 
 Versi: v1.0.0. Tanggal: 2026-11-19. Status: prosedur operasional yang
 disetujui pemilik lewat keputusan pada issue
-[#139](https://github.com/ahliweb/osn/issues/139) (2026-11-19: kebijakan AI
+[#139](https://github.com/ahliweb/cac/issues/139) (2026-11-19: kebijakan AI
 diterapkan dengan opsi rekomendasi U-01, disusun per program).
 
 ## Sifat dokumen ini

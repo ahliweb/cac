@@ -21,11 +21,11 @@
 > `content/sma-coding/modules/` dan terindeks di `data/sma-coding/modules.json`
 > (29 modul lintas jalur: 6 fondasi kelas X, 7 matematika komputasi, 7 cloud,
 > dan 9 pendamping literasi digital; ditambah 364 modul mingguan: jalur A 77, B 77, C 77,
-> D 77, E 56, [#124](https://github.com/ahliweb/osn/issues/124));
+> D 77, E 56, [#124](https://github.com/ahliweb/cac/issues/124));
 > butir catatan tinjauannya menjadi tindak lanjut revisi
-> ([#125](https://github.com/ahliweb/osn/issues/125)). Modul mingguan jalur A dan B
+> ([#125](https://github.com/ahliweb/cac/issues/125)). Modul mingguan jalur A dan B
 > lengkap ditulis dalam enam putaran P1 sampai P6 (154 modul,
-> [#237](https://github.com/ahliweb/osn/issues/237), rancangan
+> [#237](https://github.com/ahliweb/cac/issues/237), rancangan
 > [`rancangan-modul-ab.md`](rancangan-modul-ab.md)). Draf jalur C
 > (#68), D (#84), dan E (#88) disetujui pemilik pada 2026-11-19 beserta
 > semua rekomendasi penyusun dan kini menjadi bagian silabus v1.2 (bagian

@@ -6,7 +6,7 @@ Accepted — 2026-11-19. Keputusan pemilik (dialog pilihan, 2026-11-19).
 Melengkapi [ADR-0006](0006-multi-program-repository.md) (repositori
 multi-program) dan [ADR-0007](0007-authored-learning-content.md) (konten
 buatan sendiri); tidak menggantikan keduanya. Issue
-[#140](https://github.com/ahliweb/osn/issues/140).
+[#140](https://github.com/ahliweb/cac/issues/140).
 
 **Catatan status pelaksanaan (2026-11-19, tidak mengubah keputusan):**
 keputusan ini sudah dilaksanakan. Kelima program ter-encode dan terdaftar

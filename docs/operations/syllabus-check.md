@@ -1,7 +1,7 @@
 # Syllabus check procedure
 
 Status: mandatory internal procedure. Issue
-[#25](https://github.com/ahliweb/osn/issues/25). Implements §14.2 rule 8
+[#25](https://github.com/ahliweb/cac/issues/25). Implements §14.2 rule 8
 ("Setiap versi silabus harus memiliki tanggal, changelog, dan syllabus
 check.") and the "Catatan Penutup" closing note of
 `docs/silabus/99-referensi.md` ("Sebelum setiap siklus pembinaan, Tim

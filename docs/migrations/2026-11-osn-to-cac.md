@@ -1,10 +1,10 @@
 # Rencana Migrasi Repository: ahliweb/osn → ahliweb/cac
 
 ## Metadata
-- Version: v1.2.0
+- Version: v1.3.0
 - Last updated: 2026-11-20
-- Changeset: Memperbarui runbook setelah F2 selesai dan rehearsal dijalankan (issues #272, #273, epik #150): status gerbang, keputusan pemilik 2026-11-20 (risiko consumer diterima, agent boleh membuat repo uji, mengaktifkan ruleset, dan menjalankan rename), koreksi hasil H-02, kesiapan Gate 15 per butir, dan migration log MIGRASI-001. Tidak mengubah kode, paket, CLI, data, atau setelan GitHub. Sebelumnya (v1.1.0): memfinalkan runbook (issue #157): urutan beku F3, rehearsal repo uji menjadi wajib (X-05), status Gate 9 PASSED beserta tautan bukti #152 s.d. #156 (X-06), aturan F3 keputusan pemilik, templat migration log (X-12), checklist verifikasi pascarename F4, dan tinjauan kesiapan Gate 15. Tidak mengubah kode, paket, CLI, data, atau setelan GitHub.
-- Status: **RENAME BELUM DILAKUKAN.** Repository tetap `ahliweb/osn`. Gate 9 PASSED; F2 selesai dan terbit sebagai v2.6.0 (2026-11-20); rehearsal H-01..H-07 dijalankan 2026-11-20. Gate 15 **belum dicatat lulus**: pemilik memutuskan 2026-11-20 bahwa Gate 15 dicatat lulus setelah butir G-01..G-14 terbukti (bagian 9), lalu agent menjalankan rename in-place hari itu; butir yang masih "dijalankan saat freeze/preflight" belum terbukti.
+- Changeset: Status pascarename (issues #274, #273, epik #150): rename in-place selesai 2026-11-20 (ID repo sama), Gate 15 lulus dan izin dipakai, F3 selesai dan F4 berjalan, tabel G-xx bagian 9 diisi bukti langkah 1..3, temuan smoke (URL issue lama: respons awal 404 lalu sampai bila pengalihan diikuti), checklist Go/No-Go bagian 12 dicentang. Tidak mengubah kode, paket, CLI, data, atau setelan GitHub. Sebelumnya (v1.2.0): Memperbarui runbook setelah F2 selesai dan rehearsal dijalankan (issues #272, #273, epik #150): status gerbang, keputusan pemilik 2026-11-20 (risiko consumer diterima, agent boleh membuat repo uji, mengaktifkan ruleset, dan menjalankan rename), koreksi hasil H-02, kesiapan Gate 15 per butir, dan migration log MIGRASI-001. Tidak mengubah kode, paket, CLI, data, atau setelan GitHub. Sebelumnya (v1.1.0): memfinalkan runbook (issue #157): urutan beku F3, rehearsal repo uji menjadi wajib (X-05), status Gate 9 PASSED beserta tautan bukti #152 s.d. #156 (X-06), aturan F3 keputusan pemilik, templat migration log (X-12), checklist verifikasi pascarename F4, dan tinjauan kesiapan Gate 15. Tidak mengubah kode, paket, CLI, data, atau setelan GitHub.
+- Status: **RENAME SELESAI 2026-11-20 (in-place, ID sama).** Repository kini `ahliweb/cac` (ID 1357521130, rename 07:42:51Z sampai 07:42:53Z UTC); `ahliweb/osn` hanya dialihkan dan dilarang dibuat ulang. Gate 9 PASSED; F2 selesai (v2.6.0); Gate 15 lulus 2026-11-20 (keputusan pemilik) dan izin eksekusi dipakai; F3 selesai, F4 (pascamigrasi) berjalan; pemantauan 24 jam (2026-11-21) dan 7 hari (2026-11-27) menunggu. Bukti: [migration log](2026-11-cac-migration-log.md). Isi di bawah yang berbunyi "belum dilakukan" atau "target" adalah rencana historis sebelum rename, dipertahankan sebagai catatan, kecuali yang diperbarui di bagian 2.3, 3 (F3, F4), 9, dan 12.
 - Decision: ADR-0009; identitas produk AhliKoding Curriculum, paradigma Curriculum as Code (CaC).
 - Owner keputusan: pemilik repository; approval operasi rename dilakukan terpisah setelah seluruh gerbang dinyatakan lulus. Dokumen ini sendiri bukan izin rename: izin eksekusi ada pada keputusan pemilik 2026-11-20 yang dicatat di 2.4 dan di [migration log](2026-11-cac-migration-log.md) bagian 8. Dokumen ini tidak menyimpan secret, token, atau data pribadi.
 
@@ -35,8 +35,8 @@ Source of truth tetap **repository yang sama (GitHub repo ID dipertahankan ketik
 | Gerbang | Status | Dasar |
 | --- | --- | --- |
 | Gate 9 (Definition of Ready F2) | **PASSED, 2026-11-20** | Keputusan pemilik lewat dialog pilihan; **hanya kesiapan implementasi F2**. Tinjauan: [2026-11-cac-gate9-review.md](2026-11-cac-gate9-review.md). Bukan izin rename |
-| Gate 15 (Go/No-Go rename) | **Belum dicatat lulus** | Keputusan pemilik 2026-11-20 (opsi "Lulus lalu agent rename"): dicatat lulus setelah G-01..G-14 terbukti; status per butir: bagian 9; pencatatan dilakukan setelah langkah 2 ([migration log](2026-11-cac-migration-log.md) bagian 8) |
-| Izin eksekusi rename (G-14) | **Diberikan, 2026-11-20** | Keputusan pemilik lewat dialog pilihan baku, opsi "Lulus lalu agent rename"; berlaku untuk jendela hari itu saja dan hanya jika Gate 15 lulus; pelaksana rename: agent atas izin tersebut |
+| Gate 15 (Go/No-Go rename) | **Lulus, 2026-11-20** | Keputusan pemilik 2026-11-20 (opsi "Lulus lalu agent rename"): dicatat lulus setelah G-01..G-14 terbukti; status per butir: bagian 9; dicatat setelah langkah 2 ([migration log](2026-11-cac-migration-log.md) bagian 8) |
+| Izin eksekusi rename (G-14) | **Diberikan dan dipakai, 2026-11-20** | Keputusan pemilik lewat dialog pilihan baku, opsi "Lulus lalu agent rename"; berlaku untuk jendela hari itu saja dan hanya jika Gate 15 lulus; pelaksana rename: agent atas izin tersebut |
 
 ### 2.4 Keputusan pemilik yang berlaku
 - 2026-11-19 (komentar epik #150): AI menyusun bukti dan usulan; **pemilik memutuskan** Gate 9 lewat dialog. Rename tetap menunggu Gate 9, Gate 15, dan izin eksekusi terpisah.
@@ -67,10 +67,10 @@ Paket keputusan F2 (diterima pemilik 2026-11-20): K1 dua entri tipis `cac` dan `
 
 Syarat tiap PR F2 (S-2, S-3 di tinjauan Gate 9): `git diff --stat -- data/ src/schema/ src/domain/` kosong; hash agregat diukur ulang pada `main` tepat sebelum PR dibuka (bagian 7.2), bukan memakai tabel #154 mentah.
 
-### F3 — Pre-rename readiness, gate dan rename administratif — **diizinkan dan berjalan (2026-11-20)**
-Urutan beku ada di bagian 4; eksekusi dicatat di [migration log](2026-11-cac-migration-log.md) (MIGRASI-001). Rehearsal di repo uji **wajib** (bagian 6) dan sudah dijalankan 2026-11-20. Gate 15 dicatat lulus hanya setelah checklist ([keamanan dan recovery](2026-11-cac-security-recovery.md) bagian 6, G-01..G-14) terbukti; pemilik sudah memutuskan Lulus lalu agent rename (2.4). Jika ada butir yang tidak terbukti, No-Go dan tidak rename.
+### F3 — Pre-rename readiness, gate dan rename administratif — **selesai (2026-11-20)**
+Urutan beku ada di bagian 4; eksekusi dicatat di [migration log](2026-11-cac-migration-log.md) (MIGRASI-001). Rehearsal di repo uji **wajib** (bagian 6) dan sudah dijalankan 2026-11-20. Gate 15 dicatat lulus hanya setelah checklist ([keamanan dan recovery](2026-11-cac-security-recovery.md) bagian 6, G-01..G-14) terbukti; pemilik sudah memutuskan Lulus lalu agent rename (2.4). Jika ada butir yang tidak terbukti, No-Go dan tidak rename. Hasil: semua terbukti, Gate 15 lulus, rename in-place dilaksanakan 07:42:51Z sampai 07:42:53Z, smoke 07:43Z lulus (log bagian 6 dan 7).
 
-### F4 — Post-rename verification dan closeout — **belum diizinkan**
+### F4 — Post-rename verification dan closeout — **berjalan (sejak 2026-11-20)**
 Checklist verifikasi ada di bagian 8. Regenerasi inventaris portofolio pada pusat tata kelola internal tanpa mengekspos lokasi atau namanya ke repo publik; tandai alias historis. Tutup issue setelah kriteria diverifikasi.
 
 ## 4. Urutan beku F3
@@ -190,30 +190,30 @@ Semua butir diisi bukti di migration log; satu butir yang gagal menjalankan atur
 **Stop condition (hentikan rollout):** `git fetch` ke URL baru bukan exit 0; SHA `main` berbeda tanpa penjelasan; ID repo berubah; jumlah issue, PR, tag, atau rilis berbeda; CI pertama di `cac` merah; consumer Action gagal; alias `osn` berbeda dari baseline; ada indikasi data pribadi atau secret. Respons mengikuti langkah 8 (recovery maju dahulu).
 
 ## 9. Tinjauan kesiapan Gate 15
-**Gate 15 belum dicatat lulus. Tabel ini bukan klaim kelulusan penuh.** Status diukur 2026-11-20 setelah F2, rilis v2.6.0, rehearsal, dan keputusan pemilik. Butir G-xx berasal dari [checklist Go/No-Go](2026-11-cac-security-recovery.md) bagian 6; "belum" berarti belum ada bukti, dan butir yang bergantung pada hari freeze tidak dinyatakan lulus sebelum dijalankan.
+**Gate 15 lulus, 2026-11-20** (keputusan pemilik lewat dialog pilihan baku, opsi "Lulus lalu agent rename"; dicatat setelah langkah 0..2 terbukti, [migration log](2026-11-cac-migration-log.md) bagian 8 dan komentar issue #273). Izin eksekusi dipakai untuk rename 07:42:51Z sampai 07:42:53Z. Butir G-xx berasal dari [checklist Go/No-Go](2026-11-cac-security-recovery.md) bagian 6. Status di bawah adalah keadaan pada saat Gate 15 dicatat.
 
-| Butir | Syarat | Status saat ini |
+| Butir | Syarat | Status |
 | --- | --- | --- |
-| G-01 | ADR-0009 dan dokumen F1 ditinjau; Gate 9 tercatat | **Sebagian**: Gate 9 PASSED 2026-11-20 ([tinjauan](2026-11-cac-gate9-review.md)) dan dokumen F1 ada; ditinjau lagi oleh pemilik lewat PR dokumen ini (persetujuan PR tetap tindakan pemilik); belum lulus penuh sebelum PR itu diterima |
-| G-02 | Audit ulang read-only pada hari freeze | **Belum** (dijalankan saat freeze, langkah 1) |
+| G-01 | ADR-0009 dan dokumen F1 ditinjau; Gate 9 tercatat | **Lulus**: Gate 9 PASSED 2026-11-20 ([tinjauan](2026-11-cac-gate9-review.md)); dokumen F1 ada; peninjauan lanjutan oleh pemilik tercakup dalam keputusan Gate 15 |
+| G-02 | Audit ulang read-only pada hari freeze | **Lulus, 2026-11-20**: snapshot 07:06Z (log bagian 2) dan preflight 07:08Z (log bagian 4) |
 | G-03 | U-01..U-07 dijawab atau risiko diterima tertulis; R-12 ditutup | **Lulus, 2026-11-20**: opsi "Terima risiko tertulis"; mitigasi redirect, alias `osn`, pengumuman, pemantauan; R-12 ditutup ([inventaris](2026-11-cac-consumer-inventory.md) bagian 6) |
-| G-04 | Freeze, kunci rilis tercatat, ruleset `main` | **Belum**: ruleset diaktifkan orchestrator setelah PR dokumen ini digabung; freeze dan kunci rilis di langkah 1 |
-| G-05 | Snapshot recovery tersimpan | **Belum** (dijalankan saat freeze; [migration log](2026-11-cac-migration-log.md) bagian 2 menunggu langkah 1) |
-| G-06 | Pindai consumer Action kosong | **Belum** (dijalankan saat preflight, langkah 2; audit F1 menemukan 0) |
+| G-04 | Freeze, kunci rilis tercatat, ruleset `main` | **Lulus, 2026-11-20**: freeze mulai 07:06:01Z; kunci rilis tidak ada; PR terbuka 0; ruleset `main` aktif (ID 27707932, dibuat di #272) |
+| G-05 | Snapshot recovery tersimpan | **Lulus, 2026-11-20**: snapshot 07:06Z (`snap-sebelum.txt`, repo ID, SHA `main`, root, 9 tag, rilis, issue dan PR, ruleset, hash `data/**/*.json`) |
+| G-06 | Pindai consumer Action kosong | **Lulus, 2026-11-20**: tidak ada `uses: ahliweb/osn`; rujukan teks hanya berkas inventaris repositori dokumentasi internal pemilik (bukan consumer eksekusi) |
 | G-07 | Alias legacy dan canonical lulus tes dan CI di `main` | **Lulus**: F2/01..06 digabung di `main` dan terbit v2.6.0 (tag `v2.6.0` pada `e85a9cbe`); CI `main` diperiksa lewat status |
-| G-08 | Invariants lulus pada PR identitas | **Lulus**: `git diff --name-only <merge>^1 <merge> -- data src/schema src/domain` = 0 berkas untuk PR #258, #259, #262, #260, #263 (diverifikasi orchestrator); hash diukur ulang saat freeze |
-| G-09 | Rehearsal repo uji H-01..H-07 termasuk rename-balik | **Lulus, 2026-11-20** ([migration log](2026-11-cac-migration-log.md) bagian 5), dengan sisa risiko tidak teruji: reusable workflow, GHCR, batas waktu redirect, rename-balik setelah 24 jam, ruleset dengan bypass atau review wajib. Repo uji belum dihapus pemilik |
-| G-10 | `ahliweb/cac` tersedia dan admin diverifikasi saat eksekusi | **Belum** (HTTP 404 pada 2026-11-20; diulang saat preflight) |
-| G-11 | Komunikasi ke kontributor dan penerima tautan | **Belum** (dijalankan saat preflight dan langkah 6) |
-| G-12 | Keputusan recovery vs rename-balik dan jendela | **Sebagian**: aturan 24 jam dan lainnya diputuskan (bagian 5); izin eksekusi bertanggal 2026-11-20; ketersediaan pemilik pada jendela belum dikonfirmasi di log |
-| G-13 | Check wajib `SUCCESS`, tanpa blocker P0/P1, Gate 15 dinyatakan pemilik | **Belum** (preflight; pernyataan Gate 15 dicatat setelah langkah 2) |
-| G-14 | Izin eksekusi rename eksplisit dan terpisah | **Diberikan, 2026-11-20**: opsi "Lulus lalu agent rename", jendela hari itu; berlaku hanya bila Gate 15 lulus |
-| Tambahan | Migration log terisi lengkap sampai langkah 2 | **Belum**: log [MIGRASI-001](2026-11-cac-migration-log.md) dibuat; langkah 0 berjalan |
+| G-08 | Invariants lulus pada PR identitas | **Lulus**: `git diff --name-only <merge>^1 <merge> -- data src/schema src/domain` = 0 berkas untuk PR #258, #259, #262, #260, #263 (diverifikasi orchestrator); hash diukur ulang saat freeze dan sama sesudah rename |
+| G-09 | Rehearsal repo uji H-01..H-07 termasuk rename-balik | **Lulus, 2026-11-20** ([migration log](2026-11-cac-migration-log.md) bagian 5), dengan sisa risiko tidak teruji: reusable workflow, GHCR, batas waktu redirect, rename-balik setelah 24 jam, ruleset dengan bypass atau review wajib. Penghapusan repo uji oleh pemilik masih `belum` di log |
+| G-10 | `ahliweb/cac` tersedia dan admin diverifikasi saat eksekusi | **Lulus, 2026-11-20**: HTTP 404 pada 07:06Z (nama bebas); kolaborator `admin` = 1 |
+| G-11 | Komunikasi ke kontributor dan penerima tautan | **Lulus, 2026-11-20**: pengumuman di issue #277 |
+| G-12 | Keputusan recovery vs rename-balik dan jendela | **Lulus**: aturan 24 jam dan lainnya diputuskan (bagian 5); rename dilaksanakan dalam jendela izin 2026-11-20 sesuai keputusan pemilik |
+| G-13 | Check wajib `SUCCESS`, tanpa blocker P0/P1, Gate 15 dinyatakan pemilik | **Lulus, 2026-11-20**: CI `Quality` `SUCCESS` pada `3c22ea2` (run 44692226860); uji lokal, `bun audit`, gitleaks (hanya positif palsu); Gate 15 dinyatakan pemilik |
+| G-14 | Izin eksekusi rename eksplisit dan terpisah | **Diberikan dan dipakai, 2026-11-20**: opsi "Lulus lalu agent rename", jendela hari itu |
+| Tambahan | Migration log terisi lengkap sampai langkah 2 | **Lulus**: log [MIGRASI-001](2026-11-cac-migration-log.md) |
 | Tambahan | Nama paket `curriculum-as-code` dan alias terbit di rilis minor | **Lulus**: v2.6.0 (2026-11-20) |
 
-Ringkasan: dari 14 butir G-xx, **5 lulus atau diberikan** (G-03, G-07, G-08, G-09 lulus; G-14 diberikan), **2 sebagian** (G-01, G-12), dan **7 belum** (G-02, G-04, G-05, G-06, G-10, G-11, G-13); dari 2 butir tambahan, 1 lulus dan 1 belum. Rename tidak boleh dijalankan selama ada butir yang tidak terbukti; Gate 15 dicatat lulus hanya setelah 7 butir yang belum dan 2 butir yang sebagian terbukti.
+Ringkasan: 14 dari 14 butir G-xx lulus atau diberikan dan 2 dari 2 butir tambahan lulus pada saat rename. Temuan smoke (07:43Z): URL issue lama `https://github.com/ahliweb/osn/issues/150` memberi respons pertama 404 tanpa header `Location`, tetapi bila pengalihan diikuti (`curl -L`) berakhir 200 di `.../cac/issues/150`; URL web, PR, blob, dan tree lama 301 ke `cac`. Ini bukan stop condition; tautan issue lama tetap sampai bagi peramban.
 
-## 10. Daftar file dan perubahan (target, belum dilaksanakan)
+## 10. Daftar file dan perubahan (rencana awal; tautan aktif dilaksanakan di PR F4)
 | Berkas/pola | Jenis | Tindakan |
 | --- | --- | --- |
 | README.md, AGENTS.md, CONTRIBUTING.md | Docs | identitas platform dan konteks non-afiliasi OSN, perintah baru, migrasi links |
@@ -246,19 +246,19 @@ Matriks risiko lengkap (19 risiko), gladi lokal recovery dan rename-back, serta 
 
 ## 12. Go/No-Go objektif
 **Go** hanya jika seluruh butir berikut **terbukti** (bukti di migration log):
-- [ ] ADR-0009 dan dokumen spec sudah di-review (menunggu tinjauan PR dokumen ini), README/agent docs tersinkron pada rencana.
+- [x] ADR-0009 dan dokumen spec sudah di-review (keputusan Gate 15 pemilik, 2026-11-20); README/agent docs disinkronkan ke `ahliweb/cac` di PR F4.
 - [x] Gate 9 dicatat lulus sebelum perubahan kode (PASSED, 2026-11-20; kesiapan F2 saja).
 - [x] Alias legacy+canonical lolos tes dan CI di main (bukan hanya branch): v2.6.0, 2026-11-20.
 - [x] Tidak ada perubahan tak direncanakan pada program IDs/syllabus versions/corpus pada PR identitas (diff 0 berkas, G-08); hash diukur ulang saat freeze (bagian 7.2).
 - [x] Semua consumer eksternal berisiko tinggi diinventaris dan ada owner/mitigasi; U-01..U-07: risiko diterima tertulis 2026-11-20 (G-03).
 - [x] Alias GitHub Action/Pages telah diverifikasi di repo uji (H-02, H-07); osn tidak memakai Pages dan tidak punya consumer Action yang ditemukan; dipindai ulang saat preflight (G-06).
-- [ ] Repo target cac tersedia; admin permission diverifikasi.
+- [x] Repo target cac tersedia (404 pada 07:06Z); admin permission diverifikasi (G-10).
 - [x] **Rehearsal H-01..H-07 di repo uji selesai** (bagian 6, 2026-11-20); recovery dicatat; komunikasi ke kontributor dijalankan di preflight.
-- [ ] Ruleset `main` aktif (belum; diaktifkan setelah PR dokumen ini digabung) dan terbukti bertahan melewati rename di repo uji (H-04, terbukti).
-- [ ] Gate 15 dicatat lulus oleh pemilik, tidak ada blocker P0/P1.
+- [x] Ruleset `main` aktif (ID 27707932) dan bertahan melewati rename (H-04 di repo uji; di osn: ruleset sama sebelum dan sesudah, log V-10).
+- [x] Gate 15 dicatat lulus oleh pemilik (2026-11-20), tidak ada blocker P0/P1.
 - [x] Izin operasi rename dari pemilik diberikan 2026-11-20 (opsi "Lulus lalu agent rename"; berlaku bila Gate 15 lulus).
 
-**No-Go** bila ada butir yang tidak terbukti. Persetujuan nama sekarang hanya mencakup identitas target, bukan Go operasional. **Rename belum dilakukan.**
+**No-Go** bila ada butir yang tidak terbukti. Persetujuan nama sekarang hanya mencakup identitas target, bukan Go operasional. **Rename dilaksanakan 2026-11-20 setelah semua butir terbukti.**
 
 ## 13. Referensi
 - ADR-0009; docs/requirements/identity-cac.md; docs/migrations/2026-11-cac-impact-matrix.md; docs/roadmap.md.
@@ -271,6 +271,9 @@ Matriks risiko lengkap (19 risiko), gladi lokal recovery dan rename-back, serta 
 - ISO/IEC 27001, 27002, 27005, ISO/IEC 20000-1, ISO 22301 dan prinsip change management sebagai rujukan praktik, bukan klaim sertifikasi.
 
 ## Changelog
+### 2026-11-20 - v1.3.0
+- Status pascarename (issues #274, #273, epik #150): rename in-place selesai 2026-11-20 (ID 1357521130 sama), Gate 15 lulus dan izin dipakai, F3 selesai, F4 berjalan; tabel G-xx diisi bukti langkah 1..3; temuan smoke URL issue lama; checklist Go/No-Go dicentang.
+
 ### 2026-11-20 - v1.2.0
 - Pembaruan setelah F2 selesai dan rehearsal (issues #272, #273, epik #150): status F2 selesai dan v2.6.0; F3 diizinkan dan berjalan; status gerbang 2.3; keputusan pemilik 2026-11-20 (risiko consumer diterima, agent membuat repo uji dan mengaktifkan ruleset, Gate 15 lulus lalu agent rename); langkah 3 dan 4 dan aturan bagian 5 disesuaikan; hasil rehearsal bagian 6 dengan koreksi H-02; kesiapan Gate 15 per butir bagian 9; centang Go/No-Go bagian 12; tautan [migration log](2026-11-cac-migration-log.md). Rename belum dilakukan.
 

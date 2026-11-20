@@ -9,20 +9,20 @@ alias lama yang berperilaku sama).
 
 | Bagian | Status |
 | --- | --- |
-| Silabus v1.4: jalur A (C++), jalur B (web JS/TS/Bun, template `awcms-one`), jalur C (IoT dan robotika), jalur D (kecerdasan buatan dan analisis data), jalur E (komputasi kuantum), termasuk blok fondasi kelas X | **Disetujui** pemilik program, 2026-11-19 untuk kelima jalur (v1.4 menambah subbagian kemampuan masuk dari SMP, issue [#177](https://github.com/ahliweb/osn/issues/177); v1.3 menambah butir dan kebijakan AI, issue [#139](https://github.com/ahliweb/osn/issues/139); jalur A dan B: v1.1, 2026-11-19; v1.0: 2026-11-18). Menjadi sumber `data/sma-coding/`. |
-| Jalur C (IoT dan robotika, C++ gaya Arduino pada ESP32, kelas X-XII) | **Disetujui** v1.2 (issue [#68](https://github.com/ahliweb/osn/issues/68)); dipetakan ke CP lewat prinsip komputasinya. Perangkat dan keselamatan kerja: silabus bagian 3.3. |
-| Jalur D (kecerdasan buatan dan analisis data, kelas X-XII) | **Disetujui** v1.2 (issue [#84](https://github.com/ahliweb/osn/issues/84)) sebagai **pengayaan di luar rumusan CP**: tidak dihitung sebagai pemenuhan CP. |
-| Jalur E (komputasi kuantum dan cloud quantum, **kelas XI-XII saja**, kode minggu `E-XI1-M1`) | **Disetujui** v1.2 (issue [#88](https://github.com/ahliweb/osn/issues/88)) sebagai **pengayaan di luar rumusan CP**. Tidak ada semester kelas X dan tidak ada blok fondasi. |
-| Kemampuan masuk dari SMP dan penempatan di blok fondasi (bagian 3.0, v1.4) | **Berlaku sejak silabus v1.4** (keputusan pemilik 2026-11-19, issue [#177](https://github.com/ahliweb/osn/issues/177)). Silabus tidak mensyaratkan SMP; murid dengan latar SMP yang kuat tetap di kelas bersama dan mengerjakan tugas pendalaman setelah pengamatan awal di `FND-X1-M1` (tanpa tes, tanpa nilai angka, tanpa catatan di repositori); `FND-X1-M6` (keamanan akun dan kebijakan AI kelas) tidak dipadatkan bagi siapa pun. |
+| Silabus v1.4: jalur A (C++), jalur B (web JS/TS/Bun, template `awcms-one`), jalur C (IoT dan robotika), jalur D (kecerdasan buatan dan analisis data), jalur E (komputasi kuantum), termasuk blok fondasi kelas X | **Disetujui** pemilik program, 2026-11-19 untuk kelima jalur (v1.4 menambah subbagian kemampuan masuk dari SMP, issue [#177](https://github.com/ahliweb/cac/issues/177); v1.3 menambah butir dan kebijakan AI, issue [#139](https://github.com/ahliweb/cac/issues/139); jalur A dan B: v1.1, 2026-11-19; v1.0: 2026-11-18). Menjadi sumber `data/sma-coding/`. |
+| Jalur C (IoT dan robotika, C++ gaya Arduino pada ESP32, kelas X-XII) | **Disetujui** v1.2 (issue [#68](https://github.com/ahliweb/cac/issues/68)); dipetakan ke CP lewat prinsip komputasinya. Perangkat dan keselamatan kerja: silabus bagian 3.3. |
+| Jalur D (kecerdasan buatan dan analisis data, kelas X-XII) | **Disetujui** v1.2 (issue [#84](https://github.com/ahliweb/cac/issues/84)) sebagai **pengayaan di luar rumusan CP**: tidak dihitung sebagai pemenuhan CP. |
+| Jalur E (komputasi kuantum dan cloud quantum, **kelas XI-XII saja**, kode minggu `E-XI1-M1`) | **Disetujui** v1.2 (issue [#88](https://github.com/ahliweb/cac/issues/88)) sebagai **pengayaan di luar rumusan CP**. Tidak ada semester kelas X dan tidak ada blok fondasi. |
+| Kemampuan masuk dari SMP dan penempatan di blok fondasi (bagian 3.0, v1.4) | **Berlaku sejak silabus v1.4** (keputusan pemilik 2026-11-19, issue [#177](https://github.com/ahliweb/cac/issues/177)). Silabus tidak mensyaratkan SMP; murid dengan latar SMP yang kuat tetap di kelas bersama dan mengerjakan tugas pendalaman setelah pengamatan awal di `FND-X1-M1` (tanpa tes, tanpa nilai angka, tanpa catatan di repositori); `FND-X1-M6` (keamanan akun dan kebijakan AI kelas) tidak dipadatkan bagi siapa pun. |
 | Blok fondasi informatika dasar kelas X (7 minggu, kelas bersama sebelum memilih jalur, kode `FND-X1-M1..M7`) | **Berlaku sejak silabus v1.1** (bagian 3.0). Rencana kelas X semester 1 dan 2 jalur A dan B disusun ulang; tabel padanan nomor minggu v1.0 ke v1.1 ada di bagian 3.0. Dokumen asal: [`usulan-fondasi-kelas-x.md`](../programs/sma-coding/usulan-fondasi-kelas-x.md). |
-| Modul materi `sma-coding` (393 modul per 2026-11-20: fondasi kelas X 6, matematika komputasi 7, cloud 7, pendamping literasi digital 9, jalur A 77, jalur B 77, jalur C 77, jalur D 77, jalur E 56) | **Tersedia dan disetujui pemilik program pada 2026-11-20** (keputusan lewat dialog pilihan baku, #125; catatan tinjauannya masih tindak lanjut revisi, jadi periksa lagi fakta bertanggal dan penanda `[belum terverifikasi]` sebelum dipakai) di `content/sma-coding/modules/`, terindeks di `data/sma-coding/modules.json` (issue [#107](https://github.com/ahliweb/osn/issues/107), [#87](https://github.com/ahliweb/osn/issues/87), [#89](https://github.com/ahliweb/osn/issues/89), [#69](https://github.com/ahliweb/osn/issues/69), [#105](https://github.com/ahliweb/osn/issues/105), [#124](https://github.com/ahliweb/osn/issues/124)). Modul yang kelak ditarik atau direvisi berspanduk sesuai statusnya; baca dengan `osn render modul --program sma-coding --id <id>`, misalnya `--id c-x1-m8`. |
+| Modul materi `sma-coding` (393 modul per 2026-11-20: fondasi kelas X 6, matematika komputasi 7, cloud 7, pendamping literasi digital 9, jalur A 77, jalur B 77, jalur C 77, jalur D 77, jalur E 56) | **Tersedia dan disetujui pemilik program pada 2026-11-20** (keputusan lewat dialog pilihan baku, #125; catatan tinjauannya masih tindak lanjut revisi, jadi periksa lagi fakta bertanggal dan penanda `[belum terverifikasi]` sebelum dipakai) di `content/sma-coding/modules/`, terindeks di `data/sma-coding/modules.json` (issue [#107](https://github.com/ahliweb/cac/issues/107), [#87](https://github.com/ahliweb/cac/issues/87), [#89](https://github.com/ahliweb/cac/issues/89), [#69](https://github.com/ahliweb/cac/issues/69), [#105](https://github.com/ahliweb/cac/issues/105), [#124](https://github.com/ahliweb/cac/issues/124)). Modul yang kelak ditarik atau direvisi berspanduk sesuai statusnya; baca dengan `osn render modul --program sma-coding --id <id>`, misalnya `--id c-x1-m8`. |
 | Rencana mingguan | Belum diuji di kelas (silabus bagian 8). Rencana jalur C, D, dan E belum ditinjau guru atau mitra; harga, spesifikasi perangkat, dan ketentuan layanan cloud quantum banyak yang `[belum terverifikasi]`. |
 
 Jalur A dan B belum punya modul materi mingguan di `content/sma-coding/`
 (rencana mingguannya ada di silabus dan `data/sma-coding/weeks.json`). Butir
 yang masih perlu dicek peninjau manusia dikumpulkan di
 [`catatan-tinjauan-modul.md`](../programs/catatan-tinjauan-modul.md). Daftar
-issue terbuka terkini: `gh issue list -R ahliweb/osn --state open`.
+issue terbuka terkini: `gh issue list -R ahliweb/cac --state open`.
 
 ## Membaca silabus
 
@@ -86,7 +86,7 @@ check-sma-coding-fidelity: OK -- every cell of data/sma-coding/*.json matches do
 
 Dua perintah menurunkan keluaran **hanya** dari corpus `data/sma-coding/`
 yang lolos validasi (keputusan pemilik 2026-11-18, issue
-[#77](https://github.com/ahliweb/osn/issues/77)).
+[#77](https://github.com/ahliweb/cac/issues/77)).
 
 **Rencana per semester satu jalur:**
 

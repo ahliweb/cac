@@ -1,7 +1,7 @@
 # Security Policy
 
 Status: internal control document, implementing issue
-[#24](https://github.com/ahliweb/osn/issues/24) (§13 "Privacy & Security" —
+[#24](https://github.com/ahliweb/cac/issues/24) (§13 "Privacy & Security" —
 `docs/silabus/13-tata-kelola.md` — "incident procedure" control, and the
 vulnerability-disclosure expectation of §11's ISO/IEC mapping,
 `docs/silabus/11-pemetaan-iso.md`).

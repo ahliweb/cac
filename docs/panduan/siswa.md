@@ -136,8 +136,8 @@ untuk satu rumpun materi, misalnya Rekursi atau Struktur Data.
 Buka halaman repositori di peramban, lalu masuk ke folder
 `content/osn/modules/`. Tiap modul adalah satu berkas, misalnya:
 
-- <https://github.com/ahliweb/osn/blob/main/content/osn/modules/dasar-pemrograman.md>
-- <https://github.com/ahliweb/osn/blob/main/content/osn/modules/rekursi.md>
+- <https://github.com/ahliweb/cac/blob/main/content/osn/modules/dasar-pemrograman.md>
+- <https://github.com/ahliweb/cac/blob/main/content/osn/modules/rekursi.md>
 
 Sepuluh modul yang ada: `dasar-pemrograman`, `logika-bitwise`, `aritmetika`,
 `aturan-berhitung`, `rekursi`, `search-sort`, `strategi-problem-solving`,
