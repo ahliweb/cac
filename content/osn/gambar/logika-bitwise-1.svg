@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 310" width="520" height="310" role="img" aria-labelledby="t d">
+  <title id="t">Tabel bit untuk 12 dan 10 beserta hasil operasi bit</title>
+  <desc id="d">Tabel dengan empat kolom bit, dari bit ke-3 bernilai 8 sampai bit ke-0 bernilai 1, dan satu kolom nilai desimal. Lima baris kosong: 12, 10, 12 AND 10, 12 OR 10, dan 12 XOR 10, untuk diisi pelajar.</desc>
+  <rect width="520" height="310" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="15" fill="#222222">
+    <text x="178" y="30" text-anchor="middle" font-weight="bold">bit ke-3</text><text x="178" y="50" text-anchor="middle">(8)</text>
+    <text x="238" y="30" text-anchor="middle" font-weight="bold">bit ke-2</text><text x="238" y="50" text-anchor="middle">(4)</text>
+    <text x="298" y="30" text-anchor="middle" font-weight="bold">bit ke-1</text><text x="298" y="50" text-anchor="middle">(2)</text>
+    <text x="358" y="30" text-anchor="middle" font-weight="bold">bit ke-0</text><text x="358" y="50" text-anchor="middle">(1)</text>
+    <text x="460" y="40" text-anchor="middle" font-weight="bold">desimal</text>
+    <text x="14" y="88">12</text>
+    <rect x="150" y="64" width="56" height="34" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="210" y="64" width="56" height="34" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="270" y="64" width="56" height="34" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="330" y="64" width="56" height="34" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="420" y="64" width="80" height="34" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="14" y="136">10</text>
+    <rect x="150" y="112" width="56" height="34" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="210" y="112" width="56" height="34" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="270" y="112" width="56" height="34" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="330" y="112" width="56" height="34" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="420" y="112" width="80" height="34" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="14" y="184">12 &amp; 10 (AND)</text>
+    <rect x="150" y="160" width="56" height="34" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="210" y="160" width="56" height="34" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="270" y="160" width="56" height="34" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="330" y="160" width="56" height="34" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="420" y="160" width="80" height="34" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="14" y="232">12 | 10 (OR)</text>
+    <rect x="150" y="208" width="56" height="34" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="210" y="208" width="56" height="34" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="270" y="208" width="56" height="34" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="330" y="208" width="56" height="34" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="420" y="208" width="80" height="34" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="14" y="280">12 ^ 10 (XOR)</text>
+    <rect x="150" y="256" width="56" height="34" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="210" y="256" width="56" height="34" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="270" y="256" width="56" height="34" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="330" y="256" width="56" height="34" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+    <rect x="420" y="256" width="80" height="34" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  </g>
+</svg>

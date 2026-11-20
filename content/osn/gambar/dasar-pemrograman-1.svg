@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 330" width="520" height="330" role="img" aria-labelledby="t d">
+  <title id="t">Tabel dry-run untuk program dengan n = 6</title>
+  <desc id="d">Tabel dengan kolom i, apakah i genap, dan s sesudah putaran. Baris awal menunjukkan s bernilai 0 sebelum perulangan. Enam baris putaran untuk i dari 1 sampai 6 memiliki kolom kedua dan ketiga yang kosong.</desc>
+  <rect width="520" height="330" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="15" fill="#222222">
+    <text x="20" y="26" font-weight="bold">Dry-run dengan n = 6</text>
+    <g stroke="#222222" stroke-width="2" fill="#ffffff">
+      <rect x="20" y="40" width="80" height="36"/><rect x="100" y="40" width="200" height="36"/><rect x="300" y="40" width="200" height="36"/>
+    </g>
+    <g font-weight="bold" text-anchor="middle">
+      <text x="60" y="64">i</text><text x="200" y="64">i % 2 == 0 ?</text><text x="400" y="64">s sesudah putaran</text>
+    </g>
+    <g stroke="#222222" stroke-width="2" fill="#ffffff">
+      <rect x="20" y="76" width="80" height="34"/><rect x="100" y="76" width="200" height="34"/><rect x="300" y="76" width="200" height="34"/>
+    </g>
+    <g text-anchor="middle">
+      <text x="60" y="99">awal</text><text x="200" y="99">-</text><text x="400" y="99">0</text>
+    </g>
+    <g stroke="#222222" stroke-width="2"><rect x="20" y="110" width="80" height="34" fill="#f2f2f2"/><rect x="100" y="110" width="200" height="34" fill="#f2f2f2" stroke-dasharray="6 4"/><rect x="300" y="110" width="200" height="34" fill="#f2f2f2" stroke-dasharray="6 4"/></g>
+    <text x="60" y="133" text-anchor="middle">1</text>
+    <g stroke="#222222" stroke-width="2"><rect x="20" y="144" width="80" height="34" fill="#f2f2f2"/><rect x="100" y="144" width="200" height="34" fill="#f2f2f2" stroke-dasharray="6 4"/><rect x="300" y="144" width="200" height="34" fill="#f2f2f2" stroke-dasharray="6 4"/></g>
+    <text x="60" y="167" text-anchor="middle">2</text>
+    <g stroke="#222222" stroke-width="2"><rect x="20" y="178" width="80" height="34" fill="#f2f2f2"/><rect x="100" y="178" width="200" height="34" fill="#f2f2f2" stroke-dasharray="6 4"/><rect x="300" y="178" width="200" height="34" fill="#f2f2f2" stroke-dasharray="6 4"/></g>
+    <text x="60" y="201" text-anchor="middle">3</text>
+    <g stroke="#222222" stroke-width="2"><rect x="20" y="212" width="80" height="34" fill="#f2f2f2"/><rect x="100" y="212" width="200" height="34" fill="#f2f2f2" stroke-dasharray="6 4"/><rect x="300" y="212" width="200" height="34" fill="#f2f2f2" stroke-dasharray="6 4"/></g>
+    <text x="60" y="235" text-anchor="middle">4</text>
+    <g stroke="#222222" stroke-width="2"><rect x="20" y="246" width="80" height="34" fill="#f2f2f2"/><rect x="100" y="246" width="200" height="34" fill="#f2f2f2" stroke-dasharray="6 4"/><rect x="300" y="246" width="200" height="34" fill="#f2f2f2" stroke-dasharray="6 4"/></g>
+    <text x="60" y="269" text-anchor="middle">5</text>
+    <g stroke="#222222" stroke-width="2"><rect x="20" y="280" width="80" height="34" fill="#f2f2f2"/><rect x="100" y="280" width="200" height="34" fill="#f2f2f2" stroke-dasharray="6 4"/><rect x="300" y="280" width="200" height="34" fill="#f2f2f2" stroke-dasharray="6 4"/></g>
+    <text x="60" y="303" text-anchor="middle">6</text>
+    <text x="20" y="324" >Keluaran program: ______</text>
+  </g>
+</svg>

@@ -7,7 +7,7 @@ import { describe, expect, test } from "bun:test";
 import { moduleSchema, modulesFileSchema, parseContentPath } from "../../src/schema/module";
 
 function valid(overrides: Record<string, unknown> = {}): Record<string, unknown> {
-  return {
+  const merged: Record<string, unknown> = {
     id: "contoh",
     title: "Contoh",
     topicFamilies: ["dasar-pemrograman"],
@@ -18,6 +18,12 @@ function valid(overrides: Record<string, unknown> = {}): Record<string, unknown>
     references: [{ refId: "R1" }],
     contentPath: "content/osn/modules/contoh.md",
     ...overrides,
+  };
+  // every OSN module carries its worksheet (OSN_LEARNER_SHEET_REQUIRED, #285)
+  return {
+    learnerSheetPath: `content/osn/lembar/${String(merged.id)}.md`,
+    learnerSheetStatus: "draf",
+    ...merged,
   };
 }
 

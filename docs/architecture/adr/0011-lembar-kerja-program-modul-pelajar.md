@@ -57,9 +57,9 @@ Bentuk teknisnya: tiga kolom opsional pada entri indeks modul kelima program.
 ada, dilarang bila tidak), dan `learnerSheetReview` (rekaman persetujuan peran
 dan tanggal; wajib persis bila status lembar `disetujui`, dilarang bila tidak).
 Skema `tk-coding` dan `sd-coding` tidak berubah (objek `strict` menolak kolom
-baru). Tiap skema punya konstanta `*_LEARNER_SHEET_REQUIRED`, kini `false`, yang
-kelak dibalik satu program pada PR programnya agar lembar wajib untuk semua
-modulnya.
+baru). Tiap skema punya konstanta `*_LEARNER_SHEET_REQUIRED`, awalnya `false`, yang
+dibalik satu program pada PR programnya agar lembar wajib untuk semua
+modulnya (`osn`: #285).
 
 `osn validate` memeriksa lembar program-program itu seperti TK/SD (berkas ada
 dan tidak kosong, tanpa kolom nama atau identitas) dan melaporkan lembar yatim
