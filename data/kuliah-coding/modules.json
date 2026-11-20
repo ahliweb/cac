@@ -30,7 +30,11 @@
       ],
       "contentPath": "content/kuliah-coding/modules/kul-u-101.md",
       "learnerSheetPath": "content/kuliah-coding/lembar/kul-u-101.md",
-      "learnerSheetStatus": "draf",
+      "learnerSheetStatus": "disetujui",
+      "learnerSheetReview": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      },
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -74,7 +78,11 @@
       ],
       "contentPath": "content/kuliah-coding/modules/kul-u-102.md",
       "learnerSheetPath": "content/kuliah-coding/lembar/kul-u-102.md",
-      "learnerSheetStatus": "draf",
+      "learnerSheetStatus": "disetujui",
+      "learnerSheetReview": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      },
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -118,7 +126,11 @@
       ],
       "contentPath": "content/kuliah-coding/modules/kul-u-201.md",
       "learnerSheetPath": "content/kuliah-coding/lembar/kul-u-201.md",
-      "learnerSheetStatus": "draf",
+      "learnerSheetStatus": "disetujui",
+      "learnerSheetReview": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      },
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -182,7 +194,11 @@
       ],
       "contentPath": "content/kuliah-coding/modules/kul-u-202.md",
       "learnerSheetPath": "content/kuliah-coding/lembar/kul-u-202.md",
-      "learnerSheetStatus": "draf",
+      "learnerSheetStatus": "disetujui",
+      "learnerSheetReview": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      },
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -226,7 +242,11 @@
       ],
       "contentPath": "content/kuliah-coding/modules/kul-u-301.md",
       "learnerSheetPath": "content/kuliah-coding/lembar/kul-u-301.md",
-      "learnerSheetStatus": "draf",
+      "learnerSheetStatus": "disetujui",
+      "learnerSheetReview": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      },
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -266,7 +286,11 @@
       ],
       "contentPath": "content/kuliah-coding/modules/kul-i-101.md",
       "learnerSheetPath": "content/kuliah-coding/lembar/kul-i-101.md",
-      "learnerSheetStatus": "draf",
+      "learnerSheetStatus": "disetujui",
+      "learnerSheetReview": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      },
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -302,7 +326,11 @@
       ],
       "contentPath": "content/kuliah-coding/modules/kul-i-102.md",
       "learnerSheetPath": "content/kuliah-coding/lembar/kul-i-102.md",
-      "learnerSheetStatus": "draf",
+      "learnerSheetStatus": "disetujui",
+      "learnerSheetReview": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      },
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -338,7 +366,11 @@
       ],
       "contentPath": "content/kuliah-coding/modules/kul-i-103.md",
       "learnerSheetPath": "content/kuliah-coding/lembar/kul-i-103.md",
-      "learnerSheetStatus": "draf",
+      "learnerSheetStatus": "disetujui",
+      "learnerSheetReview": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      },
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -378,7 +410,11 @@
       ],
       "contentPath": "content/kuliah-coding/modules/kul-i-201.md",
       "learnerSheetPath": "content/kuliah-coding/lembar/kul-i-201.md",
-      "learnerSheetStatus": "draf",
+      "learnerSheetStatus": "disetujui",
+      "learnerSheetReview": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      },
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -426,7 +462,11 @@
       ],
       "contentPath": "content/kuliah-coding/modules/kul-i-202.md",
       "learnerSheetPath": "content/kuliah-coding/lembar/kul-i-202.md",
-      "learnerSheetStatus": "draf",
+      "learnerSheetStatus": "disetujui",
+      "learnerSheetReview": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      },
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -478,7 +518,11 @@
       ],
       "contentPath": "content/kuliah-coding/modules/kul-i-203.md",
       "learnerSheetPath": "content/kuliah-coding/lembar/kul-i-203.md",
-      "learnerSheetStatus": "draf",
+      "learnerSheetStatus": "disetujui",
+      "learnerSheetReview": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      },
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -534,7 +578,11 @@
       ],
       "contentPath": "content/kuliah-coding/modules/kul-i-204.md",
       "learnerSheetPath": "content/kuliah-coding/lembar/kul-i-204.md",
-      "learnerSheetStatus": "draf",
+      "learnerSheetStatus": "disetujui",
+      "learnerSheetReview": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      },
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -594,7 +642,11 @@
       ],
       "contentPath": "content/kuliah-coding/modules/kul-i-205.md",
       "learnerSheetPath": "content/kuliah-coding/lembar/kul-i-205.md",
-      "learnerSheetStatus": "draf",
+      "learnerSheetStatus": "disetujui",
+      "learnerSheetReview": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      },
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -666,7 +718,11 @@
       ],
       "contentPath": "content/kuliah-coding/modules/kul-i-301.md",
       "learnerSheetPath": "content/kuliah-coding/lembar/kul-i-301.md",
-      "learnerSheetStatus": "draf",
+      "learnerSheetStatus": "disetujui",
+      "learnerSheetReview": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      },
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -722,7 +778,11 @@
       ],
       "contentPath": "content/kuliah-coding/modules/kul-i-302.md",
       "learnerSheetPath": "content/kuliah-coding/lembar/kul-i-302.md",
-      "learnerSheetStatus": "draf",
+      "learnerSheetStatus": "disetujui",
+      "learnerSheetReview": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      },
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -766,7 +826,11 @@
       ],
       "contentPath": "content/kuliah-coding/modules/kul-i-303.md",
       "learnerSheetPath": "content/kuliah-coding/lembar/kul-i-303.md",
-      "learnerSheetStatus": "draf",
+      "learnerSheetStatus": "disetujui",
+      "learnerSheetReview": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      },
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -806,7 +870,11 @@
       ],
       "contentPath": "content/kuliah-coding/modules/kul-i-304.md",
       "learnerSheetPath": "content/kuliah-coding/lembar/kul-i-304.md",
-      "learnerSheetStatus": "draf",
+      "learnerSheetStatus": "disetujui",
+      "learnerSheetReview": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      },
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -874,7 +942,11 @@
       ],
       "contentPath": "content/kuliah-coding/modules/kul-i-305.md",
       "learnerSheetPath": "content/kuliah-coding/lembar/kul-i-305.md",
-      "learnerSheetStatus": "draf",
+      "learnerSheetStatus": "disetujui",
+      "learnerSheetReview": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      },
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -910,7 +982,11 @@
       ],
       "contentPath": "content/kuliah-coding/modules/kul-i-306.md",
       "learnerSheetPath": "content/kuliah-coding/lembar/kul-i-306.md",
-      "learnerSheetStatus": "draf",
+      "learnerSheetStatus": "disetujui",
+      "learnerSheetReview": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      },
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -954,7 +1030,11 @@
       ],
       "contentPath": "content/kuliah-coding/modules/kul-i-307.md",
       "learnerSheetPath": "content/kuliah-coding/lembar/kul-i-307.md",
-      "learnerSheetStatus": "draf",
+      "learnerSheetStatus": "disetujui",
+      "learnerSheetReview": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      },
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -994,7 +1074,11 @@
       ],
       "contentPath": "content/kuliah-coding/modules/kul-i-401.md",
       "learnerSheetPath": "content/kuliah-coding/lembar/kul-i-401.md",
-      "learnerSheetStatus": "draf",
+      "learnerSheetStatus": "disetujui",
+      "learnerSheetReview": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      },
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1030,7 +1114,11 @@
       ],
       "contentPath": "content/kuliah-coding/modules/kul-k-201.md",
       "learnerSheetPath": "content/kuliah-coding/lembar/kul-k-201.md",
-      "learnerSheetStatus": "draf",
+      "learnerSheetStatus": "disetujui",
+      "learnerSheetReview": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      },
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1066,7 +1154,11 @@
       ],
       "contentPath": "content/kuliah-coding/modules/kul-k-301.md",
       "learnerSheetPath": "content/kuliah-coding/lembar/kul-k-301.md",
-      "learnerSheetStatus": "draf",
+      "learnerSheetStatus": "disetujui",
+      "learnerSheetReview": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      },
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1102,7 +1194,11 @@
       ],
       "contentPath": "content/kuliah-coding/modules/kul-k-401.md",
       "learnerSheetPath": "content/kuliah-coding/lembar/kul-k-401.md",
-      "learnerSheetStatus": "draf",
+      "learnerSheetStatus": "disetujui",
+      "learnerSheetReview": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      },
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"

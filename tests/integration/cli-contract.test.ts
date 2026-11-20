@@ -410,11 +410,16 @@ const GOLDEN: readonly Golden[] = [
   {
     ids: ["06", "07"],
     row: 0,
-    // every sma-coding module has its own-status worksheet since #289 (ADR-0011)
+    // every sma-coding module has its own-status worksheet since #289, approved by the owner (#299)
     args: ["render", "modul", "--program", "sma-coding", "--id", "a-x1-m10", "--lembar"],
     exit: 0,
     kind: "text",
-    out: ["# Percabangan dan logika Boolean", "**Lembar kerja**", "> **DRAF"],
+    out: [
+      "# Percabangan dan logika Boolean",
+      "**Lembar kerja**",
+      "Status lembar: disetujui.",
+      "Disetujui pada 2026-11-20 oleh peninjau dengan peran: pemilik program.",
+    ],
   },
   {
     ids: ["06", "07"],
