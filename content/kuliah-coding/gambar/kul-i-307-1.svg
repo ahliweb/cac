@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 300" width="640" height="300" role="img" aria-labelledby="t d">
+  <title id="t">Matriks konfusi dengan kotak isian akurasi, presisi, dan recall</title>
+  <desc id="d">Matriks dua kali dua. Baris: aktual kembali dan aktual tidak kembali. Kolom: tebakan kembali dan tebakan tidak kembali. Sel berisi TP 40, FN 20, FP 10, TN 130. Di kanan ada tiga kotak kosong untuk akurasi, presisi, dan recall.</desc>
+  <rect width="640" height="300" fill="#ffffff"/>
+  <text x="20" y="26" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222">Matriks konfusi (data sintetis)</text>
+  <text x="250" y="58" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">tebakan: kembali</text>
+  <text x="380" y="58" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">tebakan: tidak</text>
+  <text x="165" y="115" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="end">aktual: kembali</text>
+  <text x="165" y="195" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="end">aktual: tidak</text>
+  <rect x="185" y="70" width="130" height="70" fill="#f2f2f2" stroke="#1b7a3d" stroke-width="3"/>
+  <text x="250" y="97" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">TP</text>
+  <text x="250" y="124" font-family="sans-serif" font-size="20" font-weight="bold" fill="#222222" text-anchor="middle">40</text>
+  <rect x="315" y="70" width="130" height="70" fill="#f2f2f2" stroke="#b3261e" stroke-width="3" stroke-dasharray="8 4"/>
+  <text x="380" y="97" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">FN</text>
+  <text x="380" y="124" font-family="sans-serif" font-size="20" font-weight="bold" fill="#222222" text-anchor="middle">20</text>
+  <rect x="185" y="140" width="130" height="70" fill="#f2f2f2" stroke="#b3261e" stroke-width="3" stroke-dasharray="8 4"/>
+  <text x="250" y="167" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">FP</text>
+  <text x="250" y="194" font-family="sans-serif" font-size="20" font-weight="bold" fill="#222222" text-anchor="middle">10</text>
+  <rect x="315" y="140" width="130" height="70" fill="#f2f2f2" stroke="#1b7a3d" stroke-width="3"/>
+  <text x="380" y="167" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">TN</text>
+  <text x="380" y="194" font-family="sans-serif" font-size="20" font-weight="bold" fill="#222222" text-anchor="middle">130</text>
+  <text x="185" y="238" font-family="sans-serif" font-size="14" fill="#222222">garis tegas = tebakan benar, garis putus = tebakan salah</text>
+  <text x="470" y="84" font-family="sans-serif" font-size="14" fill="#222222">akurasi =</text>
+  <rect x="540" y="66" width="85" height="26" fill="#ffffff" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="5 3"/>
+  <text x="470" y="134" font-family="sans-serif" font-size="14" fill="#222222">presisi =</text>
+  <rect x="540" y="116" width="85" height="26" fill="#ffffff" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="5 3"/>
+  <text x="470" y="184" font-family="sans-serif" font-size="14" fill="#222222">recall =</text>
+  <rect x="540" y="166" width="85" height="26" fill="#ffffff" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="5 3"/>
+</svg>

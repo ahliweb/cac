@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 370" width="720" height="370" role="img" aria-labelledby="t d">
+  <title id="t">Garis waktu kiriman tiga tim dengan kotak isian jumlah soal dan total waktu</title>
+  <desc id="d">Garis waktu 0 sampai 100 menit. Tim Alfa: soal A diterima menit 12; soal B WA menit 35, CE menit 50, diterima menit 58. Tim Beta: soal A WA menit 20, diterima menit 31; soal B TLE menit 70, diterima menit 85. Tim Gama: soal C WA menit 90. Di kanan tiap tim ada kotak kosong untuk jumlah soal dan total waktu.</desc>
+  <rect width="720" height="370" fill="#ffffff"/>
+  <text x="20" y="24" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222">Log kiriman (data sintetis), waktu dalam menit</text>
+  <text x="590" y="52" font-family="sans-serif" font-size="14" fill="#222222">soal | total</text>
+  <line x1="100.0" y1="60" x2="100.0" y2="320" stroke="#f2f2f2" stroke-width="1"/>
+  <text x="100.0" y="342" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">0</text>
+  <line x1="146.0" y1="60" x2="146.0" y2="320" stroke="#f2f2f2" stroke-width="1"/>
+  <text x="146.0" y="342" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">10</text>
+  <line x1="192.0" y1="60" x2="192.0" y2="320" stroke="#f2f2f2" stroke-width="1"/>
+  <text x="192.0" y="342" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">20</text>
+  <line x1="238.0" y1="60" x2="238.0" y2="320" stroke="#f2f2f2" stroke-width="1"/>
+  <text x="238.0" y="342" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">30</text>
+  <line x1="284.0" y1="60" x2="284.0" y2="320" stroke="#f2f2f2" stroke-width="1"/>
+  <text x="284.0" y="342" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">40</text>
+  <line x1="330.0" y1="60" x2="330.0" y2="320" stroke="#f2f2f2" stroke-width="1"/>
+  <text x="330.0" y="342" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">50</text>
+  <line x1="376.0" y1="60" x2="376.0" y2="320" stroke="#f2f2f2" stroke-width="1"/>
+  <text x="376.0" y="342" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">60</text>
+  <line x1="422.0" y1="60" x2="422.0" y2="320" stroke="#f2f2f2" stroke-width="1"/>
+  <text x="422.0" y="342" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">70</text>
+  <line x1="468.0" y1="60" x2="468.0" y2="320" stroke="#f2f2f2" stroke-width="1"/>
+  <text x="468.0" y="342" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">80</text>
+  <line x1="514.0" y1="60" x2="514.0" y2="320" stroke="#f2f2f2" stroke-width="1"/>
+  <text x="514.0" y="342" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">90</text>
+  <line x1="560.0" y1="60" x2="560.0" y2="320" stroke="#f2f2f2" stroke-width="1"/>
+  <text x="560.0" y="342" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">100</text>
+  <text x="20" y="95" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Tim Alfa</text>
+  <line x1="100" y1="90" x2="560" y2="90" stroke="#222222" stroke-width="2"/>
+  <circle cx="155.2" cy="90" r="7" fill="#1b7a3d" stroke="#222222" stroke-width="1.5"/>
+  <text x="155.2" y="76" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">A AC</text>
+  <rect x="255.0" y="84" width="12" height="12" fill="#b3261e" stroke="#222222" stroke-width="1.5"/>
+  <text x="261.0" y="116" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">B WA</text>
+  <polygon points="330.0,82 338.0,97 322.0,97" fill="#2a5d9f" stroke="#222222" stroke-width="1.5"/>
+  <text x="330.0" y="76" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">B CE</text>
+  <circle cx="366.8" cy="90" r="7" fill="#1b7a3d" stroke="#222222" stroke-width="1.5"/>
+  <text x="366.8" y="116" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">B AC</text>
+  <rect x="590" y="76" width="50" height="28" fill="#ffffff" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="5 3"/>
+  <rect x="650" y="76" width="50" height="28" fill="#ffffff" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="5 3"/>
+  <text x="20" y="195" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Tim Beta</text>
+  <line x1="100" y1="190" x2="560" y2="190" stroke="#222222" stroke-width="2"/>
+  <rect x="186.0" y="184" width="12" height="12" fill="#b3261e" stroke="#222222" stroke-width="1.5"/>
+  <text x="192.0" y="176" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">A WA</text>
+  <circle cx="242.6" cy="190" r="7" fill="#1b7a3d" stroke="#222222" stroke-width="1.5"/>
+  <text x="242.6" y="216" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">A AC</text>
+  <rect x="416.0" y="184" width="12" height="12" fill="#b3261e" stroke="#222222" stroke-width="1.5"/>
+  <text x="422.0" y="176" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">B TLE</text>
+  <circle cx="491.0" cy="190" r="7" fill="#1b7a3d" stroke="#222222" stroke-width="1.5"/>
+  <text x="491.0" y="216" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">B AC</text>
+  <rect x="590" y="176" width="50" height="28" fill="#ffffff" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="5 3"/>
+  <rect x="650" y="176" width="50" height="28" fill="#ffffff" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="5 3"/>
+  <text x="20" y="295" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Tim Gama</text>
+  <line x1="100" y1="290" x2="560" y2="290" stroke="#222222" stroke-width="2"/>
+  <rect x="508.0" y="284" width="12" height="12" fill="#b3261e" stroke="#222222" stroke-width="1.5"/>
+  <text x="514.0" y="276" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">C WA</text>
+  <rect x="590" y="276" width="50" height="28" fill="#ffffff" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="5 3"/>
+  <rect x="650" y="276" width="50" height="28" fill="#ffffff" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="5 3"/>
+  <text x="20" y="364" font-family="sans-serif" font-size="14" fill="#222222">lingkaran = AC, kotak = WA atau TLE, segitiga = CE; kotak putus-putus diisi sendiri</text>
+</svg>

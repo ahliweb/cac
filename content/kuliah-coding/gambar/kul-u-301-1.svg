@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" width="720" height="300" role="img" aria-labelledby="t d">
+  <title id="t">Diagram ketergantungan tujuh tugas proyek dengan kotak isian nomor urutan</title>
+  <desc id="d">Tujuh tugas dan panah ketergantungan: proposal ke data sintetis, data sintetis ke prototipe 1, prototipe 1 ke uji 1 dan ke dokumentasi, uji 1 ke prototipe 2, prototipe 2 ke demo, dokumentasi ke demo. Tiap tugas punya kotak kosong bertanda no. untuk nomor urutan pengerjaan.</desc>
+  <rect width="720" height="300" fill="#ffffff"/>
+  <defs><marker id="p" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker></defs>
+  <text x="20" y="26" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222">Panah A ke B: B menunggu A. Beri nomor urutan 1 sampai 7.</text>
+  <line x1="130" y1="152.0" x2="150" y2="152.0" stroke="#222222" stroke-width="2" marker-end="url(#p)"/>
+  <line x1="260" y1="152.0" x2="280" y2="152.0" stroke="#222222" stroke-width="2" marker-end="url(#p)"/>
+  <line x1="390" y1="152.0" x2="430" y2="82.0" stroke="#222222" stroke-width="2" marker-end="url(#p)"/>
+  <line x1="390" y1="152.0" x2="430" y2="222.0" stroke="#222222" stroke-width="2" marker-end="url(#p)"/>
+  <line x1="540" y1="82.0" x2="580" y2="82.0" stroke="#222222" stroke-width="2" marker-end="url(#p)"/>
+  <line x1="635.0" y1="104" x2="635.0" y2="200" stroke="#222222" stroke-width="2" marker-end="url(#p)"/>
+  <line x1="540" y1="222.0" x2="580" y2="222.0" stroke="#222222" stroke-width="2" marker-end="url(#p)"/>
+  <rect x="20" y="130" width="110" height="44" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="75.0" y="157" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">proposal</text>
+  <rect x="150" y="130" width="110" height="44" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="205.0" y="157" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">data sintetis</text>
+  <rect x="280" y="130" width="110" height="44" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="335.0" y="157" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">prototipe 1</text>
+  <rect x="430" y="60" width="110" height="44" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="485.0" y="87" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">uji 1</text>
+  <rect x="430" y="200" width="110" height="44" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="485.0" y="227" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">dokumentasi</text>
+  <rect x="580" y="60" width="110" height="44" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="635.0" y="87" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">prototipe 2</text>
+  <rect x="580" y="200" width="110" height="44" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="635.0" y="227" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">demo</text>
+  <rect x="25" y="180" width="70" height="24" fill="#ffffff" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="5 3"/>
+  <text x="30" y="197" font-family="sans-serif" font-size="14" fill="#222222">no.</text>
+  <rect x="155" y="180" width="70" height="24" fill="#ffffff" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="5 3"/>
+  <text x="160" y="197" font-family="sans-serif" font-size="14" fill="#222222">no.</text>
+  <rect x="285" y="180" width="70" height="24" fill="#ffffff" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="5 3"/>
+  <text x="290" y="197" font-family="sans-serif" font-size="14" fill="#222222">no.</text>
+  <rect x="435" y="110" width="70" height="24" fill="#ffffff" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="5 3"/>
+  <text x="440" y="127" font-family="sans-serif" font-size="14" fill="#222222">no.</text>
+  <rect x="435" y="250" width="70" height="24" fill="#ffffff" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="5 3"/>
+  <text x="440" y="267" font-family="sans-serif" font-size="14" fill="#222222">no.</text>
+  <rect x="585" y="110" width="70" height="24" fill="#ffffff" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="5 3"/>
+  <text x="590" y="127" font-family="sans-serif" font-size="14" fill="#222222">no.</text>
+  <rect x="585" y="250" width="70" height="24" fill="#ffffff" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="5 3"/>
+  <text x="590" y="267" font-family="sans-serif" font-size="14" fill="#222222">no.</text>
+</svg>

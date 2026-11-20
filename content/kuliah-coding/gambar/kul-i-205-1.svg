@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400" role="img" aria-labelledby="t d">
+  <title id="t">Pohon elemen halaman HTML dengan kotak masalah kosong</title>
+  <desc id="d">Pohon elemen halaman contoh: html berisi head dengan title Toko Contoh dan body. Body berisi gambar logo.png tanpa atribut alt, gambar promo.png dengan alt Diskon akhir pekan, label untuk cari, input id cari bertipe text, dan input id email bertipe email. Di kanan tiap elemen ada kotak kosong bertanda masalah untuk diisi pelajar.</desc>
+  <rect width="600" height="400" fill="#ffffff"/>
+  <text x="465" y="20" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222">masalah?</text>
+  <rect x="20" y="30" width="49" height="30" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="28" y="50" font-family="sans-serif" font-size="14" fill="#222222">html</text>
+  <rect x="465" y="30" width="115" height="30" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="50" y="70" width="49" height="30" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="58" y="90" font-family="sans-serif" font-size="14" fill="#222222">head</text>
+  <line x1="35" y1="85" x2="50" y2="85" stroke="#222222" stroke-width="2"/>
+  <line x1="35" y1="60" x2="35" y2="85" stroke="#222222" stroke-width="2"/>
+  <rect x="465" y="70" width="115" height="30" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="80" y="110" width="164" height="30" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="88" y="130" font-family="sans-serif" font-size="14" fill="#222222">title: Toko Contoh</text>
+  <line x1="65" y1="125" x2="80" y2="125" stroke="#222222" stroke-width="2"/>
+  <line x1="65" y1="100" x2="65" y2="125" stroke="#222222" stroke-width="2"/>
+  <rect x="465" y="110" width="115" height="30" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="50" y="150" width="49" height="30" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="58" y="170" font-family="sans-serif" font-size="14" fill="#222222">body</text>
+  <line x1="35" y1="165" x2="50" y2="165" stroke="#222222" stroke-width="2"/>
+  <line x1="35" y1="140" x2="35" y2="165" stroke="#222222" stroke-width="2"/>
+  <rect x="465" y="150" width="115" height="30" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="80" y="190" width="164" height="30" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="88" y="210" font-family="sans-serif" font-size="14" fill="#222222">img src="logo.png"</text>
+  <line x1="65" y1="205" x2="80" y2="205" stroke="#222222" stroke-width="2"/>
+  <line x1="65" y1="180" x2="65" y2="205" stroke="#222222" stroke-width="2"/>
+  <rect x="465" y="190" width="115" height="30" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="80" y="230" width="377" height="30" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="88" y="250" font-family="sans-serif" font-size="14" fill="#222222">img src="promo.png" alt="Diskon akhir pekan"</text>
+  <line x1="65" y1="245" x2="80" y2="245" stroke="#222222" stroke-width="2"/>
+  <line x1="65" y1="220" x2="65" y2="245" stroke="#222222" stroke-width="2"/>
+  <rect x="465" y="230" width="115" height="30" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="80" y="270" width="196" height="30" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="88" y="290" font-family="sans-serif" font-size="14" fill="#222222">label for="cari": Cari</text>
+  <line x1="65" y1="285" x2="80" y2="285" stroke="#222222" stroke-width="2"/>
+  <line x1="65" y1="260" x2="65" y2="285" stroke="#222222" stroke-width="2"/>
+  <rect x="465" y="270" width="115" height="30" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="80" y="310" width="237" height="30" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="88" y="330" font-family="sans-serif" font-size="14" fill="#222222">input id="cari" type="text"</text>
+  <line x1="65" y1="325" x2="80" y2="325" stroke="#222222" stroke-width="2"/>
+  <line x1="65" y1="300" x2="65" y2="325" stroke="#222222" stroke-width="2"/>
+  <rect x="465" y="310" width="115" height="30" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="80" y="350" width="254" height="30" rx="4" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="88" y="370" font-family="sans-serif" font-size="14" fill="#222222">input id="email" type="email"</text>
+  <line x1="65" y1="365" x2="80" y2="365" stroke="#222222" stroke-width="2"/>
+  <line x1="65" y1="340" x2="65" y2="365" stroke="#222222" stroke-width="2"/>
+  <rect x="465" y="350" width="115" height="30" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+</svg>

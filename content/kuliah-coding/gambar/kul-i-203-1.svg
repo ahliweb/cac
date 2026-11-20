@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 260" width="620" height="260" role="img" aria-labelledby="t d">
+  <title id="t">Tabel halaman dan tabel terjemahan alamat kosong</title>
+  <desc id="d">Di kiri tabel halaman berukuran halaman 4096 byte: halaman 0 ke bingkai 5, halaman 1 ke bingkai 2, halaman 2 bernilai -1 artinya tidak sah, halaman 3 ke bingkai 0. Di kanan tabel terjemahan dengan kolom alamat 4660, 4096, 8200, 20000 dan kolom halaman, offset, serta fisik atau galat yang kosong.</desc>
+  <rect width="620" height="260" fill="#ffffff"/>
+  <text x="20" y="26" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222">Tabel halaman (halaman = 4096 byte)</text>
+  <text x="250" y="26" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222">Terjemahan (isi sendiri)</text>
+  <rect x="20" y="40" width="100" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="70.0" y="63.0" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">halaman</text>
+  <rect x="120" y="40" width="100" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="170.0" y="63.0" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">bingkai</text>
+  <rect x="20" y="76" width="100" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="70.0" y="99.0" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">0</text>
+  <rect x="120" y="76" width="100" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="170.0" y="99.0" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">5</text>
+  <rect x="20" y="112" width="100" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="70.0" y="135.0" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">1</text>
+  <rect x="120" y="112" width="100" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="170.0" y="135.0" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">2</text>
+  <rect x="20" y="148" width="100" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="70.0" y="171.0" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">2</text>
+  <rect x="120" y="148" width="100" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="170.0" y="171.0" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">-1</text>
+  <rect x="20" y="184" width="100" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="70.0" y="207.0" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">3</text>
+  <rect x="120" y="184" width="100" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="170.0" y="207.0" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">0</text>
+  <text x="20" y="226" font-family="sans-serif" font-size="14" fill="#222222">-1 = halaman tidak sah.</text>
+  <rect x="250" y="40" width="80" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="290.0" y="63.0" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">alamat</text>
+  <rect x="330" y="40" width="80" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="370.0" y="63.0" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">halaman</text>
+  <rect x="410" y="40" width="80" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="450.0" y="63.0" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">offset</text>
+  <rect x="490" y="40" width="130" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="555.0" y="63.0" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222" text-anchor="middle">fisik / galat</text>
+  <rect x="250" y="76" width="80" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="290.0" y="99.0" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">4660</text>
+  <rect x="330" y="76" width="80" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="410" y="76" width="80" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="490" y="76" width="130" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="250" y="112" width="80" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="290.0" y="135.0" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">4096</text>
+  <rect x="330" y="112" width="80" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="410" y="112" width="80" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="490" y="112" width="130" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="250" y="148" width="80" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="290.0" y="171.0" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">8200</text>
+  <rect x="330" y="148" width="80" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="410" y="148" width="80" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="490" y="148" width="130" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="250" y="184" width="80" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <text x="290.0" y="207.0" font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">20000</text>
+  <rect x="330" y="184" width="80" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="410" y="184" width="80" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="490" y="184" width="130" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+</svg>

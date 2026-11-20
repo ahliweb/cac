@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 454" width="700" height="454" role="img" aria-labelledby="t d">
+  <title id="t">Tabel kedai.csv sebelas baris dengan kolom isian masalah</title>
+  <desc id="d">Tabel data penjualan sintetis dengan kolom tanggal, cabang, menu, jumlah, harga, dan satu kolom kosong bernama masalah untuk diisi. Baris 3 punya jumlah kosong, baris 4 menu Teh Tarik dengan spasi di ujung, baris 5 harga 22.000, baris 6 jumlah 120, baris 9 dan 10 sama persis.</desc>
+  <rect width="700" height="454" fill="#ffffff"/>
+  <text x="20" y="26" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222">kedai.csv (data sintetis): tandai masalah di tiap baris</text>
+  <rect x="20" y="44" width="110" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="26" y="64" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">tanggal</text>
+  <rect x="130" y="44" width="70" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="136" y="64" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">cabang</text>
+  <rect x="200" y="44" width="110" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="206" y="64" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">menu</text>
+  <rect x="310" y="44" width="70" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="316" y="64" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">jumlah</text>
+  <rect x="380" y="44" width="80" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="386" y="64" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">harga</text>
+  <rect x="470" y="44" width="210" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="476" y="64" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">masalah? (isi)</text>
+  <rect x="20" y="74" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="26" y="94" font-family="sans-serif" font-size="14" fill="#222222">2026-03-02</text>
+  <rect x="130" y="74" width="70" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="136" y="94" font-family="sans-serif" font-size="14" fill="#222222">Barat</text>
+  <rect x="200" y="74" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="206" y="94" font-family="sans-serif" font-size="14" fill="#222222">kopi susu</text>
+  <rect x="310" y="74" width="70" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="316" y="94" font-family="sans-serif" font-size="14" fill="#222222">12</text>
+  <rect x="380" y="74" width="80" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="386" y="94" font-family="sans-serif" font-size="14" fill="#222222">18000</text>
+  <rect x="470" y="74" width="210" height="30" fill="#ffffff" stroke="#2a5d9f" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="104" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="26" y="124" font-family="sans-serif" font-size="14" fill="#222222">2026-03-02</text>
+  <rect x="130" y="104" width="70" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="136" y="124" font-family="sans-serif" font-size="14" fill="#222222">Timur</text>
+  <rect x="200" y="104" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="206" y="124" font-family="sans-serif" font-size="14" fill="#222222">teh tarik</text>
+  <rect x="310" y="104" width="70" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="316" y="124" font-family="sans-serif" font-size="14" fill="#222222">8</text>
+  <rect x="380" y="104" width="80" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="386" y="124" font-family="sans-serif" font-size="14" fill="#222222">15000</text>
+  <rect x="470" y="104" width="210" height="30" fill="#ffffff" stroke="#2a5d9f" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="134" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="26" y="154" font-family="sans-serif" font-size="14" fill="#222222">2026-03-03</text>
+  <rect x="130" y="134" width="70" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="136" y="154" font-family="sans-serif" font-size="14" fill="#222222">Barat</text>
+  <rect x="200" y="134" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="206" y="154" font-family="sans-serif" font-size="14" fill="#222222">kopi susu</text>
+  <rect x="310" y="134" width="70" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <rect x="380" y="134" width="80" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="386" y="154" font-family="sans-serif" font-size="14" fill="#222222">18000</text>
+  <rect x="470" y="134" width="210" height="30" fill="#ffffff" stroke="#2a5d9f" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="164" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="26" y="184" font-family="sans-serif" font-size="14" fill="#222222">2026-03-03</text>
+  <rect x="130" y="164" width="70" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="136" y="184" font-family="sans-serif" font-size="14" fill="#222222">Timur</text>
+  <rect x="200" y="164" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="206" y="184" font-family="sans-serif" font-size="14" fill="#222222">Teh Tarik</text>
+  <rect x="310" y="164" width="70" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="316" y="184" font-family="sans-serif" font-size="14" fill="#222222">6</text>
+  <rect x="380" y="164" width="80" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="386" y="184" font-family="sans-serif" font-size="14" fill="#222222">15000</text>
+  <rect x="470" y="164" width="210" height="30" fill="#ffffff" stroke="#2a5d9f" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="194" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="26" y="214" font-family="sans-serif" font-size="14" fill="#222222">2026-03-04</text>
+  <rect x="130" y="194" width="70" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="136" y="214" font-family="sans-serif" font-size="14" fill="#222222">Barat</text>
+  <rect x="200" y="194" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="206" y="214" font-family="sans-serif" font-size="14" fill="#222222">roti bakar</text>
+  <rect x="310" y="194" width="70" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="316" y="214" font-family="sans-serif" font-size="14" fill="#222222">5</text>
+  <rect x="380" y="194" width="80" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="386" y="214" font-family="sans-serif" font-size="14" fill="#222222">22.000</text>
+  <rect x="470" y="194" width="210" height="30" fill="#ffffff" stroke="#2a5d9f" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="224" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="26" y="244" font-family="sans-serif" font-size="14" fill="#222222">2026-03-04</text>
+  <rect x="130" y="224" width="70" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="136" y="244" font-family="sans-serif" font-size="14" fill="#222222">Timur</text>
+  <rect x="200" y="224" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="206" y="244" font-family="sans-serif" font-size="14" fill="#222222">kopi susu</text>
+  <rect x="310" y="224" width="70" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="316" y="244" font-family="sans-serif" font-size="14" fill="#222222">120</text>
+  <rect x="380" y="224" width="80" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="386" y="244" font-family="sans-serif" font-size="14" fill="#222222">18000</text>
+  <rect x="470" y="224" width="210" height="30" fill="#ffffff" stroke="#2a5d9f" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="254" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="26" y="274" font-family="sans-serif" font-size="14" fill="#222222">2026-03-05</text>
+  <rect x="130" y="254" width="70" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="136" y="274" font-family="sans-serif" font-size="14" fill="#222222">Barat</text>
+  <rect x="200" y="254" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="206" y="274" font-family="sans-serif" font-size="14" fill="#222222">teh tarik</text>
+  <rect x="310" y="254" width="70" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="316" y="274" font-family="sans-serif" font-size="14" fill="#222222">9</text>
+  <rect x="380" y="254" width="80" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="386" y="274" font-family="sans-serif" font-size="14" fill="#222222">15000</text>
+  <rect x="470" y="254" width="210" height="30" fill="#ffffff" stroke="#2a5d9f" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="284" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="26" y="304" font-family="sans-serif" font-size="14" fill="#222222">2026-03-05</text>
+  <rect x="130" y="284" width="70" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="136" y="304" font-family="sans-serif" font-size="14" fill="#222222">Timur</text>
+  <rect x="200" y="284" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="206" y="304" font-family="sans-serif" font-size="14" fill="#222222">roti bakar</text>
+  <rect x="310" y="284" width="70" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="316" y="304" font-family="sans-serif" font-size="14" fill="#222222">7</text>
+  <rect x="380" y="284" width="80" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="386" y="304" font-family="sans-serif" font-size="14" fill="#222222">22000</text>
+  <rect x="470" y="284" width="210" height="30" fill="#ffffff" stroke="#2a5d9f" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="314" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="26" y="334" font-family="sans-serif" font-size="14" fill="#222222">2026-03-06</text>
+  <rect x="130" y="314" width="70" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="136" y="334" font-family="sans-serif" font-size="14" fill="#222222">Barat</text>
+  <rect x="200" y="314" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="206" y="334" font-family="sans-serif" font-size="14" fill="#222222">kopi susu</text>
+  <rect x="310" y="314" width="70" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="316" y="334" font-family="sans-serif" font-size="14" fill="#222222">14</text>
+  <rect x="380" y="314" width="80" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="386" y="334" font-family="sans-serif" font-size="14" fill="#222222">18000</text>
+  <rect x="470" y="314" width="210" height="30" fill="#ffffff" stroke="#2a5d9f" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="344" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="26" y="364" font-family="sans-serif" font-size="14" fill="#222222">2026-03-06</text>
+  <rect x="130" y="344" width="70" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="136" y="364" font-family="sans-serif" font-size="14" fill="#222222">Barat</text>
+  <rect x="200" y="344" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="206" y="364" font-family="sans-serif" font-size="14" fill="#222222">kopi susu</text>
+  <rect x="310" y="344" width="70" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="316" y="364" font-family="sans-serif" font-size="14" fill="#222222">14</text>
+  <rect x="380" y="344" width="80" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="386" y="364" font-family="sans-serif" font-size="14" fill="#222222">18000</text>
+  <rect x="470" y="344" width="210" height="30" fill="#ffffff" stroke="#2a5d9f" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="20" y="374" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="26" y="394" font-family="sans-serif" font-size="14" fill="#222222">2026-03-06</text>
+  <rect x="130" y="374" width="70" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="136" y="394" font-family="sans-serif" font-size="14" fill="#222222">Timur</text>
+  <rect x="200" y="374" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="206" y="394" font-family="sans-serif" font-size="14" fill="#222222">teh tarik</text>
+  <rect x="310" y="374" width="70" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="316" y="394" font-family="sans-serif" font-size="14" fill="#222222">10</text>
+  <rect x="380" y="374" width="80" height="30" fill="#ffffff" stroke="#222222" stroke-width="1"/>
+  <text x="386" y="394" font-family="sans-serif" font-size="14" fill="#222222">15000</text>
+  <rect x="470" y="374" width="210" height="30" fill="#ffffff" stroke="#2a5d9f" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="20" y="430" font-family="sans-serif" font-size="14" fill="#222222">sel jumlah kosong pada baris 3 memang kosong; kolom putus-putus diisi sendiri</text>
+</svg>

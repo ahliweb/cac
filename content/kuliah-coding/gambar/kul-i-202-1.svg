@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 270" width="720" height="270" role="img" aria-labelledby="t d">
+  <title id="t">Diagram ER toko buku dengan kotak kunci kosong</title>
+  <desc id="d">Lima tabel berderet: penerbit, buku, item_pesanan, pesanan, pelanggan. Garis penghubung berlabel 1 dan N: penerbit 1 ke N buku, buku 1 ke N item_pesanan, pesanan 1 ke N item_pesanan, pelanggan 1 ke N pesanan. Tiap tabel punya kotak kosong KU untuk kunci utama dan KA untuk kunci asing.</desc>
+  <rect width="720" height="270" fill="#ffffff"/>
+  <rect x="10" y="40" width="108" height="100" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2.5"/>
+  <line x1="10" y1="66" x2="118" y2="66" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="64.0" y="59" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">penerbit</text>
+  <text x="18" y="91" font-family="sans-serif" font-size="14" fill="#222222">KU</text>
+  <rect x="46" y="74" width="66" height="24" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="18" y="125" font-family="sans-serif" font-size="14" fill="#222222">KA</text>
+  <rect x="46" y="108" width="66" height="24" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="158" y="40" width="108" height="100" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2.5"/>
+  <line x1="158" y1="66" x2="266" y2="66" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="212.0" y="59" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">buku</text>
+  <text x="166" y="91" font-family="sans-serif" font-size="14" fill="#222222">KU</text>
+  <rect x="194" y="74" width="66" height="24" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="166" y="125" font-family="sans-serif" font-size="14" fill="#222222">KA</text>
+  <rect x="194" y="108" width="66" height="24" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="306" y="40" width="108" height="100" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2.5"/>
+  <line x1="306" y1="66" x2="414" y2="66" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="360.0" y="59" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">item_pesanan</text>
+  <text x="314" y="91" font-family="sans-serif" font-size="14" fill="#222222">KU</text>
+  <rect x="342" y="74" width="66" height="24" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="314" y="125" font-family="sans-serif" font-size="14" fill="#222222">KA</text>
+  <rect x="342" y="108" width="66" height="24" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="454" y="40" width="108" height="100" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2.5"/>
+  <line x1="454" y1="66" x2="562" y2="66" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="508.0" y="59" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">pesanan</text>
+  <text x="462" y="91" font-family="sans-serif" font-size="14" fill="#222222">KU</text>
+  <rect x="490" y="74" width="66" height="24" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="462" y="125" font-family="sans-serif" font-size="14" fill="#222222">KA</text>
+  <rect x="490" y="108" width="66" height="24" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="602" y="40" width="108" height="100" fill="#f2f2f2" stroke="#2a5d9f" stroke-width="2.5"/>
+  <line x1="602" y1="66" x2="710" y2="66" stroke="#2a5d9f" stroke-width="2"/>
+  <text x="656.0" y="59" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">pelanggan</text>
+  <text x="610" y="91" font-family="sans-serif" font-size="14" fill="#222222">KU</text>
+  <rect x="638" y="74" width="66" height="24" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="610" y="125" font-family="sans-serif" font-size="14" fill="#222222">KA</text>
+  <rect x="638" y="108" width="66" height="24" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <line x1="118" y1="90" x2="158" y2="90" stroke="#222222" stroke-width="2.5"/>
+  <text x="122" y="84" font-family="sans-serif" font-size="14" font-weight="bold" fill="#b3261e">1</text>
+  <text x="154" y="84" font-family="sans-serif" font-size="14" font-weight="bold" fill="#b3261e" text-anchor="end">N</text>
+  <line x1="266" y1="90" x2="306" y2="90" stroke="#222222" stroke-width="2.5"/>
+  <text x="270" y="84" font-family="sans-serif" font-size="14" font-weight="bold" fill="#b3261e">1</text>
+  <text x="302" y="84" font-family="sans-serif" font-size="14" font-weight="bold" fill="#b3261e" text-anchor="end">N</text>
+  <line x1="414" y1="90" x2="454" y2="90" stroke="#222222" stroke-width="2.5"/>
+  <text x="418" y="84" font-family="sans-serif" font-size="14" font-weight="bold" fill="#b3261e">N</text>
+  <text x="450" y="84" font-family="sans-serif" font-size="14" font-weight="bold" fill="#b3261e" text-anchor="end">1</text>
+  <line x1="562" y1="90" x2="602" y2="90" stroke="#222222" stroke-width="2.5"/>
+  <text x="566" y="84" font-family="sans-serif" font-size="14" font-weight="bold" fill="#b3261e">N</text>
+  <text x="598" y="84" font-family="sans-serif" font-size="14" font-weight="bold" fill="#b3261e" text-anchor="end">1</text>
+  <text x="10" y="190" font-family="sans-serif" font-size="14" fill="#222222">KU = kunci utama, KA = kunci asing. Tulis nama kolomnya di kotak putus-putus.</text>
+  <text x="10" y="214" font-family="sans-serif" font-size="14" fill="#222222">item_pesanan adalah tabel penghubung pesanan dan buku (atribut jumlah).</text>
+  <text x="10" y="238" font-family="sans-serif" font-size="14" fill="#222222">1 = satu, N = banyak.</text>
+</svg>
