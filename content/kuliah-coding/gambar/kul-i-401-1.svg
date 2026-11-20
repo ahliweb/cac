@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280" width="640" height="280" role="img" aria-labelledby="t d">
+  <title id="t">Tiga perubahan dari versi 1.4.2 dengan kotak isian nomor versi berikutnya</title>
+  <desc id="d">Tiga baris. Tiap baris dimulai dari kotak versi sekarang 1.4.2, panah, jenis perubahan, panah, lalu kotak kosong untuk nomor versi berikutnya. Baris 1: satu perbaikan. Baris 2: perbaikan dan fitur. Baris 3: satu perubahan yang merusak.</desc>
+  <rect width="640" height="280" fill="#ffffff"/>
+  <text x="20" y="26" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222">Nomor versi MAJOR.MINOR.PATCH (SemVer)</text>
+  <g font-family="sans-serif" font-size="14" fill="#222222">
+    <rect x="20" y="50" width="100" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+    <text x="70" y="75" text-anchor="middle">1.4.2</text>
+    <line x1="120" y1="70" x2="170" y2="70" stroke="#222222" stroke-width="2"/>
+    <polygon points="170,64 182,70 170,76" fill="#222222"/>
+    <rect x="186" y="50" width="250" height="40" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="311" y="75" text-anchor="middle">satu perbaikan saja</text>
+    <line x1="436" y1="70" x2="470" y2="70" stroke="#222222" stroke-width="2"/>
+    <polygon points="470,64 482,70 470,76" fill="#222222"/>
+    <rect x="486" y="50" width="130" height="40" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+
+    <rect x="20" y="120" width="100" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+    <text x="70" y="145" text-anchor="middle">1.4.2</text>
+    <line x1="120" y1="140" x2="170" y2="140" stroke="#222222" stroke-width="2"/>
+    <polygon points="170,134 182,140 170,146" fill="#222222"/>
+    <rect x="186" y="120" width="250" height="40" fill="#ffffff" stroke="#2a5d9f" stroke-width="2"/>
+    <text x="311" y="145" text-anchor="middle">perbaikan dan fitur</text>
+    <line x1="436" y1="140" x2="470" y2="140" stroke="#222222" stroke-width="2"/>
+    <polygon points="470,134 482,140 470,146" fill="#222222"/>
+    <rect x="486" y="120" width="130" height="40" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+
+    <rect x="20" y="190" width="100" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+    <text x="70" y="215" text-anchor="middle">1.4.2</text>
+    <line x1="120" y1="210" x2="170" y2="210" stroke="#222222" stroke-width="2"/>
+    <polygon points="170,204 182,210 170,216" fill="#222222"/>
+    <rect x="186" y="190" width="250" height="40" fill="#ffffff" stroke="#b3261e" stroke-width="2"/>
+    <text x="311" y="215" text-anchor="middle">satu perubahan yang merusak</text>
+    <line x1="436" y1="210" x2="470" y2="210" stroke="#222222" stroke-width="2"/>
+    <polygon points="470,204 482,210 470,216" fill="#222222"/>
+    <rect x="486" y="190" width="130" height="40" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="20" y="262">kotak putus-putus = nomor versi berikutnya (isi sendiri)</text>
+  </g>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 270" width="600" height="270" role="img" aria-labelledby="t d">
+  <title id="t">Tabel kebenaran kosong untuk implikasi, kontraposisi, dan konvers</title>
+  <desc id="d">Tabel dengan kolom p dan q berisi empat kombinasi 0 0, 0 1, 1 0, 1 1, lalu tiga kolom kosong berlabel p → q, ¬q → ¬p, dan q → p. Di bawahnya satu kotak kosong untuk menulis mana yang ekuivalen dengan p → q.</desc>
+  <rect width="600" height="270" fill="#ffffff"/>
+  <g fill="#f2f2f2" stroke="#222222" stroke-width="2">
+    <rect x="20" y="15" width="60" height="36"/>
+    <rect x="80" y="15" width="60" height="36"/>
+    <rect x="140" y="15" width="140" height="36"/>
+    <rect x="280" y="15" width="170" height="36"/>
+    <rect x="450" y="15" width="130" height="36"/>
+  </g>
+  <g font-family="sans-serif" font-size="16" fill="#222222" text-anchor="middle">
+    <text x="50" y="39">p</text>
+    <text x="110" y="39">q</text>
+    <text x="210" y="39">p → q</text>
+    <text x="365" y="39">¬q → ¬p</text>
+    <text x="515" y="39">q → p</text>
+  </g>
+  <g fill="#ffffff" stroke="#222222" stroke-width="2">
+    <rect x="20" y="51" width="60" height="36"/><rect x="80" y="51" width="60" height="36"/><rect x="140" y="51" width="140" height="36"/><rect x="280" y="51" width="170" height="36"/><rect x="450" y="51" width="130" height="36"/>
+    <rect x="20" y="87" width="60" height="36"/><rect x="80" y="87" width="60" height="36"/><rect x="140" y="87" width="140" height="36"/><rect x="280" y="87" width="170" height="36"/><rect x="450" y="87" width="130" height="36"/>
+    <rect x="20" y="123" width="60" height="36"/><rect x="80" y="123" width="60" height="36"/><rect x="140" y="123" width="140" height="36"/><rect x="280" y="123" width="170" height="36"/><rect x="450" y="123" width="130" height="36"/>
+    <rect x="20" y="159" width="60" height="36"/><rect x="80" y="159" width="60" height="36"/><rect x="140" y="159" width="140" height="36"/><rect x="280" y="159" width="170" height="36"/><rect x="450" y="159" width="130" height="36"/>
+  </g>
+  <g font-family="sans-serif" font-size="16" fill="#222222" text-anchor="middle">
+    <text x="50" y="75">0</text><text x="110" y="75">0</text>
+    <text x="50" y="111">0</text><text x="110" y="111">1</text>
+    <text x="50" y="147">1</text><text x="110" y="147">0</text>
+    <text x="50" y="183">1</text><text x="110" y="183">1</text>
+  </g>
+  <text x="20" y="233" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222">Ekuivalen dengan p → q:</text>
+  <rect x="220" y="212" width="360" height="34" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+</svg>

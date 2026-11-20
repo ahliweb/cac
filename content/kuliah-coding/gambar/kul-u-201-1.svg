@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 250" width="640" height="250" role="img" aria-labelledby="t d">
+  <title id="t">Rencana ganti nama tiga berkas dengan kotak isian nama baru</title>
+  <desc id="d">Tiga berkas di folder uji: Laporan Maret.TXT, Catatan Rapat.TXT, dan foto.jpg. Di kanan tiap berkas ada panah ke kotak kosong untuk nama setelah rencana ganti nama dijalankan.</desc>
+  <rect width="640" height="250" fill="#ffffff"/>
+  <text x="20" y="26" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222">Folder uji: rencana ganti nama (hanya *.TXT, huruf kecil, spasi jadi _, ekstensi .txt)</text>
+  <text x="20" y="56" font-family="sans-serif" font-size="14" fill="#222222">nama sekarang</text>
+  <text x="360" y="56" font-family="sans-serif" font-size="14" fill="#222222">nama sesudah rencana dijalankan</text>
+  <rect x="20" y="70" width="260" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="32" y="94" font-family="sans-serif" font-size="16" fill="#222222">Laporan Maret.TXT</text>
+  <line x1="280" y1="88" x2="340" y2="88" stroke="#222222" stroke-width="2"/>
+  <polygon points="340,82 352,88 340,94" fill="#222222"/>
+  <rect x="360" y="70" width="260" height="36" fill="#ffffff" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="20" y="120" width="260" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="32" y="144" font-family="sans-serif" font-size="16" fill="#222222">Catatan Rapat.TXT</text>
+  <line x1="280" y1="138" x2="340" y2="138" stroke="#222222" stroke-width="2"/>
+  <polygon points="340,132 352,138 340,144" fill="#222222"/>
+  <rect x="360" y="120" width="260" height="36" fill="#ffffff" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="20" y="170" width="260" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="32" y="194" font-family="sans-serif" font-size="16" fill="#222222">foto.jpg</text>
+  <line x1="280" y1="188" x2="340" y2="188" stroke="#222222" stroke-width="2"/>
+  <polygon points="340,182 352,188 340,194" fill="#222222"/>
+  <rect x="360" y="170" width="260" height="36" fill="#ffffff" stroke="#2a5d9f" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="20" y="236" font-family="sans-serif" font-size="14" fill="#222222">kotak putus-putus = isi sendiri (tulis tanda strip bila berkas tidak berubah)</text>
+</svg>

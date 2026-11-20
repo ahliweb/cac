@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 290" width="600" height="290" role="img" aria-labelledby="t d">
+  <title id="t">Petak bit oktet terakhir untuk alamat 192.0.2.77 dengan prefiks 26</title>
+  <desc id="d">Empat baris petak delapan bit untuk oktet terakhir: alamat .77, topeng prefiks 26, alamat jaringan, dan alamat siaran. Tiap baris punya kotak kosong di kanan untuk nilai desimalnya. Semua petak kosong untuk diisi pelajar.</desc>
+  <rect width="600" height="290" fill="#ffffff"/>
+  <text x="20" y="26" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222">192.0.2.77/26: oktet terakhir (8 bit)</text>
+  <text x="490" y="26" font-family="sans-serif" font-size="15" font-weight="bold" fill="#222222">desimal</text>
+  <text x="20" y="74" font-family="sans-serif" font-size="15" fill="#222222">alamat .77</text>
+  <rect x="150" y="50" width="38" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="188" y="50" width="38" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="226" y="50" width="38" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="264" y="50" width="38" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="302" y="50" width="38" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="340" y="50" width="38" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="378" y="50" width="38" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="416" y="50" width="38" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="490" y="50" width="90" height="36" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="20" y="129" font-family="sans-serif" font-size="15" fill="#222222">topeng /26</text>
+  <rect x="150" y="105" width="38" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="188" y="105" width="38" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="226" y="105" width="38" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="264" y="105" width="38" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="302" y="105" width="38" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="340" y="105" width="38" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="378" y="105" width="38" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="416" y="105" width="38" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="490" y="105" width="90" height="36" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="20" y="184" font-family="sans-serif" font-size="15" fill="#222222">jaringan</text>
+  <rect x="150" y="160" width="38" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="188" y="160" width="38" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="226" y="160" width="38" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="264" y="160" width="38" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="302" y="160" width="38" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="340" y="160" width="38" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="378" y="160" width="38" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="416" y="160" width="38" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="490" y="160" width="90" height="36" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="20" y="239" font-family="sans-serif" font-size="15" fill="#222222">siaran</text>
+  <rect x="150" y="215" width="38" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="188" y="215" width="38" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="226" y="215" width="38" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="264" y="215" width="38" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="302" y="215" width="38" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="340" y="215" width="38" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="378" y="215" width="38" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="416" y="215" width="38" height="36" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="490" y="215" width="90" height="36" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="169" y="284" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">7</text>
+  <text x="207" y="284" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">6</text>
+  <text x="245" y="284" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">5</text>
+  <text x="283" y="284" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">4</text>
+  <text x="321" y="284" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">3</text>
+  <text x="359" y="284" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">2</text>
+  <text x="397" y="284" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1</text>
+  <text x="435" y="284" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">0</text>
+  <text x="20" y="284" font-family="sans-serif" font-size="14" fill="#222222">nomor bit</text>
+</svg>

@@ -38,10 +38,10 @@ import {
 export const KUL_MODULE_CONTENT_DIR = moduleContentDir(KUL_PROGRAM_ID);
 
 /**
- * Whether every `kuliah-coding` module must have a worksheet (`learnerSheetPath`, ADR-0011). `false` until the
- * programme's worksheets are written; a later per-programme change flips it.
+ * Whether every `kuliah-coding` module must have a worksheet (`learnerSheetPath`, ADR-0011). `true` since
+ * every `kuliah-coding` module has a worksheet (#287).
  */
-export const KUL_LEARNER_SHEET_REQUIRED = false;
+export const KUL_LEARNER_SHEET_REQUIRED = true;
 
 /** One `kuliah-coding` module-index entry. */
 export const kulModuleSchema = z

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 330" width="600" height="330" role="img" aria-labelledby="t d">
+  <title id="t">Daftar tiga elemen dan tabel penelusuran kosong untuk fungsi terbesar</title>
+  <desc id="d">Daftar berisi 3, 9, 4 dengan indeks 0, 1, 2. Di bawahnya tabel penelusuran dengan kolom putaran, x, apakah x lebih besar dari hasil, dan hasil sesudah putaran. Tiga baris putaran, semua sel kosong untuk diisi.</desc>
+  <rect width="600" height="330" fill="#ffffff"/>
+  <text x="20" y="26" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222">terbesar([3, 9, 4]): hasil = daftar[0], lalu for x in daftar</text>
+  <rect x="60" y="60" width="70" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="95" y="87" font-family="sans-serif" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">3</text>
+  <text x="95" y="120" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">indeks 0</text>
+  <rect x="130" y="60" width="70" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="165" y="87" font-family="sans-serif" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">9</text>
+  <text x="165" y="120" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">indeks 1</text>
+  <rect x="200" y="60" width="70" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="235" y="87" font-family="sans-serif" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">4</text>
+  <text x="235" y="120" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">indeks 2</text>
+  <text x="20" y="87" font-family="sans-serif" font-size="14" fill="#222222">daftar</text>
+  <rect x="40" y="150" width="100" height="44" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="90.0" y="177" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">putaran</text>
+  <rect x="140" y="150" width="100" height="44" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="190.0" y="177" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">x</text>
+  <rect x="240" y="150" width="170" height="44" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="325.0" y="169" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">x lebih besar</text>
+  <text x="325.0" y="187" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">dari hasil?</text>
+  <rect x="410" y="150" width="150" height="44" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="485.0" y="169" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">hasil</text>
+  <text x="485.0" y="187" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">sesudah putaran</text>
+  <rect x="40" y="194" width="100" height="44" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="140" y="194" width="100" height="44" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="240" y="194" width="170" height="44" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="410" y="194" width="150" height="44" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="90" y="222" font-family="sans-serif" font-size="16" fill="#222222" text-anchor="middle">1</text>
+  <rect x="40" y="238" width="100" height="44" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="140" y="238" width="100" height="44" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="240" y="238" width="170" height="44" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="410" y="238" width="150" height="44" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="90" y="266" font-family="sans-serif" font-size="16" fill="#222222" text-anchor="middle">2</text>
+  <rect x="40" y="282" width="100" height="44" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+  <rect x="140" y="282" width="100" height="44" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="240" y="282" width="170" height="44" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <rect x="410" y="282" width="150" height="44" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="90" y="310" font-family="sans-serif" font-size="16" fill="#222222" text-anchor="middle">3</text>
+  <text x="40" y="322" font-family="sans-serif" font-size="14" fill="#222222">sel putus-putus = isi sendiri</text>
+</svg>
