@@ -1,8 +1,8 @@
 /**
  * The output side of `osn render modul`: turns one loaded module (see
  * `loadModule` in `src/cli/module-content.ts`) into the Markdown that the
- * command prints, either the module itself or, with `--lembar` (`tk-coding`
- * and `sd-coding`), the child's learner sheet. Flag parsing and corpus
+ * command prints, either the module itself or, with `--lembar`, its learner
+ * sheet (any programme whose index entry has a `learnerSheetPath`). Flag parsing and corpus
  * loading stay in `src/cli/commands/render.ts`; the rendering is pure
  * (`src/render/module.ts`).
  */

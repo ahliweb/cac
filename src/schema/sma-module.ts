@@ -27,7 +27,13 @@
 
 import { z } from "zod";
 import { nonEmptyString, slugSchema } from "./common";
-import { moduleExplicitReferenceSchema, moduleReviewSchema, moduleStatusSchema } from "./module";
+import { addLearnerSheetIssues } from "./learner-sheet-rules";
+import {
+  moduleExplicitReferenceSchema,
+  moduleReviewSchema,
+  moduleStatusSchema,
+  ownStatusLearnerSheetShape,
+} from "./module";
 import {
   cpCodeSchema,
   SMA_CODING_PROGRAM_ID,
@@ -51,6 +57,12 @@ export const smaModulePrerequisiteSchema = z.union([slugSchema, smaFoundationWee
 function isUnique(values: readonly string[]): boolean {
   return new Set(values).size === values.length;
 }
+
+/**
+ * Whether every `sma-coding` module must have a worksheet (`learnerSheetPath`, ADR-0011). `false` until the
+ * programme's worksheets are written; a later per-programme change flips it.
+ */
+export const SMA_LEARNER_SHEET_REQUIRED = false;
 
 /** One `sma-coding` module-index entry. */
 export const smaModuleSchema = z
@@ -86,6 +98,7 @@ export const smaModuleSchema = z
       .describe("Required when status is `disetujui`, forbidden otherwise."),
     references: z.array(moduleExplicitReferenceSchema).min(1),
     contentPath: nonEmptyString.describe("`content/sma-coding/modules/<id>.md`."),
+    ...ownStatusLearnerSheetShape,
   })
   .strict()
   .refine((module) => (module.status === "disetujui") === (module.review !== undefined), {
@@ -98,6 +111,10 @@ export const smaModuleSchema = z
     message: `must be "${SMA_MODULE_CONTENT_DIR}<id>.md" with <id> equal to the module id`,
   })
   .superRefine((module, ctx) => {
+    addLearnerSheetIssues(module, ctx, {
+      programId: SMA_CODING_PROGRAM_ID,
+      required: SMA_LEARNER_SHEET_REQUIRED,
+    });
     const lists = {
       cpItems: module.cpItems,
       weekCodes: module.weekCodes,

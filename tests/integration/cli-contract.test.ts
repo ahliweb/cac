@@ -413,7 +413,7 @@ const GOLDEN: readonly Golden[] = [
     args: ["render", "modul", "--program", "sma-coding", "--id", "a-x1-m10", "--lembar"],
     exit: 2,
     kind: "text",
-    err: ["{cli} render modul: --lembar ", "sma-coding"],
+    err: ['{cli} render modul: module "a-x1-m10" has no learner sheet.'],
   },
   {
     ids: ["06", "07"],

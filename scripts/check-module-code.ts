@@ -1,7 +1,8 @@
 /**
  * Code-example check for the learning modules (ADR-0007, issues #54 and
  * #178). It extracts the fenced code blocks of `content/**\/modules/*.md`
- * and checks each one without ever executing it -- this repository is not a
+ * and of the learner sheets `content/**\/lembar/*.md` (worksheets and the
+ * children's sheets of tk-coding and sd-coding; ADR-0011) and checks each one without ever executing it -- this repository is not a
  * judge (ADR-0004), so a passing check means only "the example is
  * well-formed", never "the example is correct for every input":
  *
@@ -258,8 +259,11 @@ const zeroCounts = (): Record<Language, number> => ({
   js: 0,
 });
 
+/** The globs of the checked Markdown: module bodies and learner sheets. */
+export const CONTENT_GLOBS = ["content/**/modules/*.md", "content/**/lembar/*.md"] as const;
+
 /**
- * Finds every `content/**\/modules/*.md` under `repoRoot` (sorted) and checks
+ * Finds every `content/**\/modules/*.md` and `content/**\/lembar/*.md` under `repoRoot` (sorted) and checks
  * each cpp, arduino, python, ts and js block. `checkers` may be one function applied
  * to every language (convenient for tests) or one checker per language.
  */
@@ -269,8 +273,10 @@ export async function checkModuleCode(
 ): Promise<CheckResult> {
   const checkerFor = (language: Language): Compiler =>
     typeof checkers === "function" ? checkers : checkers[language];
-  const glob = new Bun.Glob("content/**/modules/*.md");
-  const files = (await Array.fromAsync(glob.scan({ cwd: repoRoot }))).sort();
+  const found = await Promise.all(
+    CONTENT_GLOBS.map((pattern) => Array.fromAsync(new Bun.Glob(pattern).scan({ cwd: repoRoot }))),
+  );
+  const files = found.flat().sort();
   const blocksChecked = zeroCounts();
   const blocksSkipped = zeroCounts();
   const failures: string[] = [];

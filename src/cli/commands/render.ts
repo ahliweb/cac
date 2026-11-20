@@ -20,12 +20,7 @@ import type { Command } from "../command";
 import { cliOf, DEFAULT_CLI_NAME, EXIT_SUCCESS, EXIT_USAGE_ERROR } from "../command";
 import { loadModule } from "../module-content";
 import { writeOutputFile } from "../output-writer";
-import {
-  hasLearnerSheets,
-  REPO_ROOT,
-  rejectNonOsnProgram,
-  resolveProgramOption,
-} from "../program-loader";
+import { REPO_ROOT, rejectNonOsnProgram, resolveProgramOption } from "../program-loader";
 import { buildModuleOutput } from "../render-module-output";
 import { buildSmaLembarSiswa } from "../sma-commands";
 
@@ -54,7 +49,10 @@ module ("modul": authored learning content from data/<program>/modules.json;
 unless its status is "disetujui" it starts with a DRAF/DITARIK banner). For
 tk-coding and sd-coding a module is a teacher guide, and "modul --lembar"
 renders the separate learner sheet for the child instead (same banner; a sheet
-with a name or identity field of the child is refused).
+with a name or identity field of the child is refused). For osn, smp-coding,
+sma-coding, kuliah-coding and dewasa-coding a module that has a worksheet
+(learnerSheetPath in modules.json) renders it with "modul --lembar"; its banner
+follows the sheet's own status (learnerSheetStatus), not the module's.
 
 Usage:
   ${cli} render weekly --week <1-28> [--out <path>] [--force]
@@ -64,7 +62,7 @@ Usage:
   ${cli} render lembar-siswa --program sma-coding --week <week-code> [--out <path>] [--force]
   ${cli} render modul --id <module-id> [--out <path>] [--force]
   ${cli} render modul --program <id> --id <module-id> [--out <path>] [--force]
-  ${cli} render modul --program <tk-coding|sd-coding> --id <module-id> --lembar [--out <path>] [--force]
+  ${cli} render modul --program <id> --id <module-id> --lembar [--out <path>] [--force]
 
 Options:
   --week <n>      Week number, 1-28. Required for "weekly" and "lembar-siswa".
@@ -73,9 +71,11 @@ Options:
                   unknown code exits 2 listing valid examples.
   --number <n>    Checkpoint number, 1-7. Required for "checkpoint".
   --id <id>       Module id from the programme's modules.json. Required for "modul".
-  --lembar        With "modul", for tk-coding and sd-coding only: render the
-                  child's learner sheet (content/<program>/lembar/<id>.md)
-                  instead of the teacher guide. Exit 2 for any other programme.
+  --lembar        With "modul": render the module's learner sheet
+                  (content/<program>/lembar/<id>.md) instead of the module body:
+                  the child's sheet of tk-coding and sd-coding, or the worksheet
+                  of any other programme's module whose index entry has a
+                  learnerSheetPath. Exit 2 when the module has no sheet.
   --out <path>    Write the rendered Markdown to this path instead of
                   stdout.
   --force         Overwrite --out if it already exists. Without it, an
@@ -94,12 +94,12 @@ Options:
 Exit codes:
   0   success.
   1   the sma-coding corpus fails validation (run ${cli} validate), or the
-      learner sheet asked for with --lembar has a name or identity field.
+      sheet asked for with --lembar has a name or identity field.
   2   usage error: missing/unknown subcommand, a missing required flag
       (--week/--number/--id), --week/--number outside its valid range (or an
       unknown sma-coding week code), an unknown or unreadable module,
-      --lembar for a programme without learner sheets or with another
-      subcommand than "modul", or
+      --lembar for a module without a sheet or with another subcommand
+      than "modul", or
       --out already exists without --force, or an unknown --program.`;
 }
 
@@ -229,12 +229,6 @@ export const renderCommand: Command = {
         return EXIT_USAGE_ERROR;
       }
       const lembar = rest.includes("--lembar");
-      if (lembar && !hasLearnerSheets(resolved.program.id)) {
-        ctx.stderr(
-          `${cli} render modul: --lembar berlaku untuk program tk-coding dan sd-coding saja (panduan guru plus lembar anak); program ${resolved.program.id} tidak punya lembar anak.\n`,
-        );
-        return EXIT_USAGE_ERROR;
-      }
       const loaded = await loadModule(
         resolve(REPO_ROOT, resolved.program.corpusDir),
         id,

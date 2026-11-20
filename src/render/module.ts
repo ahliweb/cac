@@ -18,6 +18,10 @@ import { RenderRequestError } from "./errors";
 
 /** What the renderer needs of an index entry; the module of every programme satisfies it. */
 export type RenderableModule = Pick<Module, "title" | "status" | "review"> & {
+  /** The five own-status-sheet programmes only (ADR-0011): the sheet's own status; absent for `tk-coding` and `sd-coding`. */
+  readonly learnerSheetStatus?: ModuleStatus | undefined;
+  /** The approval record of the sheet; present exactly when `learnerSheetStatus` is `disetujui`. */
+  readonly learnerSheetReview?: Module["review"];
   /** `tk-coding` only: CP Fase Fondasi items the week overlaps in the author's interpretation (never fulfilment). */
   readonly cpOverlap?: readonly string[] | undefined;
 };
@@ -45,6 +49,20 @@ export function moduleBanner(status: ModuleStatus): string | null {
       return "> **DRAF — sedang ditinjau, belum disetujui.** Modul ini sedang ditinjau oleh manusia dan belum disetujui. Isinya dapat berubah atau memuat kekeliruan; periksa ke rujukan resmi di bagian bawah.";
     case "ditarik":
       return "> **DITARIK — jangan dipakai.** Modul ini sudah ditarik dari pemakaian dan dipertahankan hanya sebagai arsip.";
+    case "disetujui":
+      return null;
+  }
+}
+
+/** The banner line of a worksheet with its own status (ADR-0011), or `null` for `disetujui`. Exported for tests. */
+export function sheetBanner(status: ModuleStatus): string | null {
+  switch (status) {
+    case "draf":
+      return "> **DRAF — belum ditinjau.** Lembar ini ditulis oleh tim (termasuk draf yang disusun agen AI) dan belum ditinjau oleh manusia. Isinya dapat memuat kekeliruan; periksa ke modul dan rujukan resmi sebelum dipakai.";
+    case "ditinjau":
+      return "> **DRAF — sedang ditinjau, belum disetujui.** Lembar ini sedang ditinjau oleh manusia dan belum disetujui. Isinya dapat berubah atau memuat kekeliruan; periksa ke modul dan rujukan resmi.";
+    case "ditarik":
+      return "> **DITARIK — jangan dipakai.** Lembar ini sudah ditarik dari pemakaian dan dipertahankan hanya sebagai arsip.";
     case "disetujui":
       return null;
   }
@@ -91,10 +109,13 @@ export function renderModule(
 }
 
 /**
- * Renders the child's learner sheet of a `tk-coding` or `sd-coding` module
- * (`content/<program>/lembar/<id>.md`): the module's title, the same status
- * banner as {@link renderModule}, the sheet body verbatim and a footer with
- * status and programme. A child's sheet must carry no name or identity field
+ * Renders the learner sheet of a module (`content/<program>/lembar/<id>.md`):
+ * the module's title, a status banner, the sheet body verbatim and a footer
+ * with status and programme. For `tk-coding` and `sd-coding` (the child's
+ * sheet; no `learnerSheetStatus`) the banner and status are the module's,
+ * as {@link renderModule}; for a module with `learnerSheetStatus` (the five
+ * other programmes, ADR-0011) the label is "Lembar kerja" and banner,
+ * status and approval are those of the sheet, never of the module. A child's sheet must carry no name or identity field
  * of the child (privacy, ADR-0004): a sheet with one is **refused**
  * (`RenderRequestError` naming the lines), never printed.
  *
@@ -115,9 +136,15 @@ export function renderModuleLearnerSheet(
     );
   }
 
-  const lines: string[] = [`# ${module.title}`, "", "**Lembar anak**", ""];
+  const ownStatus = module.learnerSheetStatus;
+  const lines: string[] = [
+    `# ${module.title}`,
+    "",
+    ownStatus === undefined ? "**Lembar anak**" : "**Lembar kerja**",
+    "",
+  ];
 
-  const banner = moduleBanner(module.status);
+  const banner = ownStatus === undefined ? moduleBanner(module.status) : sheetBanner(ownStatus);
   if (banner !== null) {
     lines.push(banner, "");
   }
@@ -125,11 +152,13 @@ export function renderModuleLearnerSheet(
   lines.push(sheetBody.trim(), "");
 
   lines.push("---");
-  lines.push(`Status modul: ${module.status}.`);
+  const status = ownStatus ?? module.status;
+  const review = ownStatus === undefined ? module.review : module.learnerSheetReview;
+  lines.push(ownStatus === undefined ? `Status modul: ${status}.` : `Status lembar: ${status}.`);
   lines.push(`Program: ${program.name} (${program.id}).`);
-  if (module.status === "disetujui" && module.review !== undefined) {
+  if (status === "disetujui" && review !== undefined) {
     lines.push(
-      `Disetujui pada ${module.review.approvedOn} oleh peninjau dengan peran: ${module.review.reviewerRole}.`,
+      `Disetujui pada ${review.approvedOn} oleh peninjau dengan peran: ${review.reviewerRole}.`,
     );
   }
 

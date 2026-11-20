@@ -84,3 +84,11 @@ Option 1.
   that students learn from. Mitigation: mandatory references, checkable
   code examples, the visible draft banner, and human review before
   approval.
+
+## Addendum — lembar kerja dengan status sendiri (2026-11-20)
+
+[ADR-0011](0011-lembar-kerja-program-modul-pelajar.md) menambahkan lembar kerja
+cetak per modul untuk lima program yang modulnya dibaca pelajar. Lembar itu
+adalah konten karangan juga, dengan status tinjauan sendiri
+(`learnerSheetStatus`, awalnya `draf`) terpisah dari modul, dan aturan di atas
+berlaku padanya: hanya manusia yang menyetujui lembar.

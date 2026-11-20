@@ -7,7 +7,7 @@
  * are never touched, and no real module content is written anywhere.
  */
 
-import { cp, mkdir, mkdtemp, rm, symlink, writeFile } from "node:fs/promises";
+import { cp, mkdir, mkdtemp, readdir, rm, symlink, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
 
@@ -79,6 +79,14 @@ export async function createProgramModulesRepo(): Promise<ProgramModulesRepo> {
     },
     async setIndex(program, modules) {
       await write(`data/${program}/modules.json`, JSON.stringify({ modules }, null, 2));
+      // The copy holds the repository's real sheets; keep only those the synthetic index points at, so a
+      // test starts without orphan sheets (`validate` reports a sheet no entry points at).
+      const keep = new Set(modules.map((module) => String(module.learnerSheetPath)));
+      for (const name of await readdir(join(root, "content", program, "lembar")).catch(() => [])) {
+        if (!keep.has(`content/${program}/lembar/${name}`)) {
+          await rm(join(root, "content", program, "lembar", name), { force: true });
+        }
+      }
     },
     write,
     async dispose() {

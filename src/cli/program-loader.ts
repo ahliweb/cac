@@ -105,10 +105,10 @@ export async function loadOsnTopicFamilyIds(
   }
 }
 
-/** Programmes whose modules come with a learner sheet for the child (`render modul --lembar`). */
+/** Programmes whose every module has a learner sheet for the child (`render modul --lembar`; the sheet follows the module status). */
 const LEARNER_SHEET_PROGRAM_IDS: readonly string[] = [TK_CODING_PROGRAM_ID, SD_CODING_PROGRAM_ID];
 
-/** Whether programme `id` has a learner sheet per module (`tk-coding`, `sd-coding`). */
+/** Whether every module of programme `id` has a child's sheet (`tk-coding`, `sd-coding`); the others' worksheets are optional (ADR-0011). */
 export function hasLearnerSheets(id: string): boolean {
   return LEARNER_SHEET_PROGRAM_IDS.includes(id);
 }

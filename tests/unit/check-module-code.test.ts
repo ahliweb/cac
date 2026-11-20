@@ -247,6 +247,27 @@ describe("checkModuleCode", () => {
     expect((await checkModuleCode(root)).filesChecked).toBe(0);
   });
 
+  test("learner sheets under content/**/lembar/ are scanned too, with the same rules (ADR-0011)", async () => {
+    await mkdir(join(root, "content", "smp-coding", "lembar"), { recursive: true });
+    await write(
+      "content/smp-coding/lembar/a.md",
+      `\`\`\`cpp\n${VALID}\n\`\`\`\n\n\`\`\`cpp\nGAGAL\n\`\`\`\n\n\`\`\`cpp setengah-jadi\nint ____;\n\`\`\`\n`,
+    );
+    await write("content/osn/modules/b.md", `\`\`\`cpp\n${VALID}\n\`\`\`\n`);
+    const fake: Compiler = async (code) =>
+      code.includes("GAGAL")
+        ? { ok: false, diagnostics: "kesalahan palsu" }
+        : { ok: true, diagnostics: "" };
+    const result = await checkModuleCode(root, fake);
+    expect(result.filesChecked).toBe(2);
+    expect(result.blocksChecked.cpp).toBe(3);
+    expect(result.blocksSkipped.cpp).toBe(1);
+    expect(result.failures).toHaveLength(1);
+    expect(result.failures[0]).toContain(
+      "content/smp-coding/lembar/a.md: cpp block 3 (starting at line 6) does not compile",
+    );
+  });
+
   test("uses the injected compiler and reports each failing block", async () => {
     await write(
       "content/osn/modules/a.md",
