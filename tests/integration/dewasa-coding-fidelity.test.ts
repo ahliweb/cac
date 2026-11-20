@@ -68,8 +68,8 @@ describe("dewasa-coding fidelity: data/dewasa-coding vs. the approved silabus", 
 
   test("the registry entry exists and carries the document's version and date", () => {
     expect(entry).toBeDefined();
-    expect(entry?.syllabusVersion).toBe("1.2.0");
-    expect(entry?.syllabusDate).toBe("2026-11-19");
+    expect(entry?.syllabusVersion).toBe("1.2.1");
+    expect(entry?.syllabusDate).toBe("2026-11-20");
   });
 
   test("the programme table runs it against the repository: clean", async () => {

@@ -169,10 +169,10 @@ Draf silabus program (mis. `docs/programs/sma-coding/`) adalah konten
 karangan. Ia menjadi sumber corpus `data/<program>/` hanya setelah Anda
 menyetujuinya (ADR-0006). Keadaan 2026-11-19: keenam program coding sudah
 Anda setujui, dikodekan ke `data/<id>/`, dan terdaftar di
-`data/programs.json` (ADR-0008): `sma-coding` v1.4.1 (v1.0 disetujui
-2026-11-18; v1.1, v1.2, v1.3, dan v1.4 pada 2026-11-19; v1.4.1 revisi patch dasar hukum atas instruksi Anda, #238), `tk-coding` v1.0.3 (revisi patch jembatan ke SD, #177; tujuan 4 tanpa belok kanan, #239),
-`sd-coding` v1.1.0, `smp-coding` v1.2.0 (revisi minor jembatan dari SD dan ke SMA, #177), `kuliah-coding` v1.2.0, dan
-`dewasa-coding` v1.2.0 (revisi patch kalimat status, #165; revisi patch status verifikasi sumber SK 046 dan SKKNI 282/2016; revisi minor jembatan kuliah-coding ke jalur `PRO`, #177). Revisi v1.1/v1.3 memuat butir dan kebijakan AI sesuai
+`data/programs.json` (ADR-0008): `sma-coding` v1.4.2 (v1.0 disetujui
+2026-11-18; v1.1, v1.2, v1.3, dan v1.4 pada 2026-11-19; v1.4.1 revisi patch dasar hukum atas instruksi Anda, #238; v1.4.2 revisi patch pagar belajar U-18, #281), `tk-coding` v1.0.3 (revisi patch jembatan ke SD, #177; tujuan 4 tanpa belok kanan, #239),
+`sd-coding` v1.1.0, `smp-coding` v1.2.0 (revisi minor jembatan dari SD dan ke SMA, #177), `kuliah-coding` v1.2.1 (revisi patch pagar belajar U-18, #281), dan
+`dewasa-coding` v1.2.1 (revisi patch pagar belajar U-18, #281; revisi patch kalimat status, #165; revisi patch status verifikasi sumber SK 046 dan SKKNI 282/2016; revisi minor jembatan kuliah-coding ke jalur `PRO`, #177). Revisi v1.1/v1.3 memuat butir dan kebijakan AI sesuai
 keputusan Anda pada issue [#139](https://github.com/ahliweb/cac/issues/139)
 (kebijakan disusun per program). Peta statusnya ada di
 [`docs/programs/README.md`](../programs/README.md).

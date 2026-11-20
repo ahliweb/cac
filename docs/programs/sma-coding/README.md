@@ -1,6 +1,6 @@
 # Program Pembelajaran Coding SMA (`sma-coding`)
 
-- **Version:** v1.17.0
+- **Version:** v1.17.1
 - **Last updated:** 2026-11-20
 - **Status:** Silabus v1.3 (butir dan kebijakan AI, issue #139) dan sebelumnya v1.2 DISETUJUI pemilik program (2026-11-19) untuk jalur A, B, C, D, dan E, termasuk blok fondasi kelas X (v1.1: 2026-11-19; v1.0: 2026-11-18); jalur D dan E di luar rumusan CP (pengayaan); rancangan seri matematika komputasi, seri cloud, dan modul pendamping DISETUJUI pemilik (2026-11-19), 393 modulnya (per 2026-11-20) ada di `content/sma-coding/modules/` dan terindeks di `data/sma-coding/modules.json` (29 modul fondasi, matematika komputasi, cloud, dan pendamping, termasuk 6 modul fondasi dan 2 modul pendamping lintas jalur untuk F-LD-d dan F-LD-e, #105; ditambah 364 modul mingguan jalur A sampai E, #124 dan #237), berstatus `disetujui` sejak 2026-11-20 (keputusan pemilik lewat dialog pilihan baku, #125; bukan tinjauan isi per modul); draf jalur C, D, dan E disetujui pemilik 2026-11-19 beserta semua rekomendasi dan sudah masuk silabus v1.2 (dokumen drafnya tetap sebagai riwayat). Revisi v1.4.0 (kemampuan masuk dari SMP dan penempatan di blok fondasi, bagian 3.0) disetujui lewat keputusan pemilik 2026-11-19 (issue #177).
 
@@ -119,7 +119,7 @@ persetujuan atas nama pemilik.
 | Berkas | Isi |
 | --- | --- |
 | `README.md` | Dokumen ini: tujuan, status, keputusan, daftar berkas. |
-| `silabus.md` | Silabus v1.4.1: sumber resmi dan kutipan CP, struktur, blok fondasi kelas X bersama (`FND-X1-M1..M7`) dan rencana mingguan jalur A, B, C, D, dan E (ringkasan jalur di bagian 3.6), pemetaan CP (jalur D dan E sebagai pengayaan di luar CP, bagian 4.5), jembatan OSN (jalur A dan C), kelayakan `awcms-one`, asesmen, perangkat, privasi, kebijakan penggunaan AI (bagian 7.4), keputusan pemilik, rujukan, changelog. |
+| `silabus.md` | Silabus v1.4.2: sumber resmi dan kutipan CP, struktur, blok fondasi kelas X bersama (`FND-X1-M1..M7`) dan rencana mingguan jalur A, B, C, D, dan E (ringkasan jalur di bagian 3.6), pemetaan CP (jalur D dan E sebagai pengayaan di luar CP, bagian 4.5), jembatan OSN (jalur A dan C), kelayakan `awcms-one`, asesmen, perangkat, privasi, kebijakan penggunaan AI (bagian 7.4), keputusan pemilik, rujukan, changelog. |
 | `usulan-fondasi-kelas-x.md` | Usulan blok fondasi informatika dasar wajib di kelas X (issue #86): topik per minggu, pemetaan ke butir CP v1.0, tiga opsi panjang blok dengan dampak ke kelas X, bentuk modul, hubungan dengan #68, #69, #84. Usulan asal blok fondasi yang kini diterapkan di silabus v1.1 (bagian 3.0); dokumen itu sendiri tetap berstatus DRAF sebagai riwayat usulan. |
 | `draf-jalur-c-iot.md` | Draf jalur C IoT/robotika (issue #68): disetujui pemilik 2026-11-19 dan masuk silabus v1.2; riwayat draf (perbandingan platform, harga bertanggal, sumber). |
 | `draf-jalur-d-ai.md` | Draf jalur D kecerdasan buatan dan analisis data (issue #84): disetujui pemilik 2026-11-19 dan masuk silabus v1.2; riwayat draf (perbandingan alat, sumber). |
@@ -136,6 +136,7 @@ persetujuan atas nama pemilik.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v1.17.1 | 2026-11-20 | Silabus direvisi patch ke v1.4.2 atas keputusan pemilik 2026-11-20 (#281, dialog pilihan baku): bagian 7.4 memuat baris "Pagar belajar (anjuran)" (tiga anjuran U-18: mode tutor atau petunjuk bertahap, uji ulang singkat tanpa AI, cek diri); anjuran, bukan larangan; keputusan "bebas dengan etika" tetap; tanpa minggu atau jam baru; isi korpus tidak berubah selain versi dan tanggal. |
 | v1.17.0 | 2026-11-20 | Pemilik menyetujui 393 modul belajar lewat dialog pilihan baku ("Setujui semua, catatan jadi tindak lanjut", #125): indeks `modules.json` berstatus `disetujui`; butir catatan tinjauan jadi tindak lanjut revisi; isi silabus dan corpus tidak berubah. |
 | v1.16.0 | 2026-11-20 | Putaran P6 modul jalur A dan B (#237): 28 modul draf `a-xii2-m1..m14` dan `b-xii2-m1..m14` (kelas XII semester 2); seri jalur A dan B lengkap (77 + 77 modul); jumlah modul dan tabel kelompok diperbarui. |
 | v1.15.0 | 2026-11-20 | Putaran P5 modul jalur A dan B (#237): 28 modul draf `a-xii1-m1..m14` dan `b-xii1-m1..m14` (kelas XII semester 1); jumlah modul dan tabel kelompok diperbarui. |

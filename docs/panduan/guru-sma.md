@@ -111,7 +111,7 @@ dipetakan, dan jembatan OSN (jalur A dan C) bila ada. Bagian awal keluaran nyata
 
 Program: Silabus Pembelajaran Coding SMA
 Cakupan: semester X1
-Sumber: silabus versi 1.4.1, tanggal 2026-11-19.
+Sumber: silabus versi 1.4.2, tanggal 2026-11-20.
 
 ## Semester X1 (kelas X, fase E)
 
@@ -193,7 +193,7 @@ luas dan keliling; pembagian bulat dan sisa; konversi suhu; rata-rata dua bilang
 - [ ] Keluaran selesai: program hitung berformat
 
 ---
-Sumber: Silabus Pembelajaran Coding SMA, versi 1.4.1, tanggal 2026-11-19.
+Sumber: Silabus Pembelajaran Coding SMA, versi 1.4.2, tanggal 2026-11-20.
 ```
 
 Untuk minggu jalur pengayaan (D atau E) lembar menyatakan bahwa jalur itu di
