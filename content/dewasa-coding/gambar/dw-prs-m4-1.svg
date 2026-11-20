@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="600" height="340" role="img" aria-labelledby="t d">
+  <title id="t">Kerangka halaman HTML dengan kotak head dan body kosong</title>
+  <desc id="d">Kotak besar html berisi dua kotak kosong bernama head dan body. Di atasnya daftar enam tag: title, h1, link, ul, meta, table, yang harus ditulis ke kotak head atau body.</desc>
+  <rect width="600" height="340" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="15" fill="#222222">
+    <text x="20" y="28" font-weight="bold">tag: title, h1, link, ul, meta, table</text>
+    <rect x="20" y="45" width="560" height="280" rx="8" fill="#ffffff" stroke="#222222" stroke-width="2.5"/>
+    <text x="36" y="70" font-weight="bold" fill="#2a5d9f">html</text>
+    <rect x="40" y="85" width="520" height="105" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="54" y="108" font-weight="bold">head (keterangan tentang halaman)</text>
+    <rect x="40" y="205" width="520" height="105" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="54" y="228" font-weight="bold">body (yang tampil)</text>
+  </g>
+</svg>

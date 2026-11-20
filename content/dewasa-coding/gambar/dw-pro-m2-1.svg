@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" width="720" height="320" role="img" aria-labelledby="t d">
+  <title id="t">Ambang diskon dan tabel penelusuran subtotal</title>
+  <desc id="d">Garis bilangan subtotal dengan ambang 50.000 dan 100.000 yang membagi tiga daerah, tiap daerah punya kotak kosong untuk persen diskon. Di bawahnya tabel penelusuran tiga putaran dengan kolom harga baris dan subtotal kosong.</desc>
+  <rect width="720" height="320" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">
+    <path d="M30 70 H690 M682 64 L690 70 L682 76" fill="none" stroke="#222222" stroke-width="2.5"/>
+    <path d="M250 55 V85 M470 55 V85" stroke="#2a5d9f" stroke-width="3"/>
+    <text x="250" y="48">50.000</text>
+    <text x="470" y="48">100.000</text>
+    <text x="40" y="95" text-anchor="start" font-size="14">0</text>
+    <text x="690" y="95" text-anchor="end" font-size="14">subtotal (rupiah)</text>
+    <rect x="70" y="105" width="150" height="34" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+    <text x="145" y="127">diskon ___ persen</text>
+    <rect x="290" y="105" width="150" height="34" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+    <text x="365" y="127">diskon ___ persen</text>
+    <rect x="500" y="105" width="150" height="34" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+    <text x="575" y="127">diskon ___ persen</text>
+    <g font-weight="bold">
+      <rect x="20" y="165" width="90" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+      <rect x="110" y="165" width="250" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+      <rect x="360" y="165" width="170" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+      <rect x="530" y="165" width="170" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+      <text x="65" y="188">putaran</text>
+      <text x="235" y="188">barang</text>
+      <text x="445" y="188">harga baris</text>
+      <text x="615" y="188">subtotal</text>
+    </g>
+    <rect x="20" y="199" width="90" height="38" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <rect x="110" y="199" width="250" height="38" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <rect x="360" y="199" width="170" height="38" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="5 3"/>
+    <rect x="530" y="199" width="170" height="38" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="5 3"/>
+    <text x="65" y="224">1</text><text x="235" y="224">pensil x 10 (3.000)</text>
+    <rect x="20" y="237" width="90" height="38" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <rect x="110" y="237" width="250" height="38" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <rect x="360" y="237" width="170" height="38" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="5 3"/>
+    <rect x="530" y="237" width="170" height="38" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="5 3"/>
+    <text x="65" y="262">2</text><text x="235" y="262">buku tulis x 6 (8.500)</text>
+    <rect x="20" y="275" width="90" height="38" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <rect x="110" y="275" width="250" height="38" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <rect x="360" y="275" width="170" height="38" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="5 3"/>
+    <rect x="530" y="275" width="170" height="38" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="5 3"/>
+    <text x="65" y="300">3</text><text x="235" y="300">spidol x 3 (12.000)</text>
+  </g>
+</svg>

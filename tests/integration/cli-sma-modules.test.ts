@@ -7,9 +7,10 @@
  */
 
 import { afterAll, beforeAll, describe, expect, test } from "bun:test";
-import { cp, mkdir, mkdtemp, rm, symlink, writeFile } from "node:fs/promises";
+import { cp, mkdir, mkdtemp, readdir, rm, symlink, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
+import { withSheet } from "../helpers/program-module-entries";
 
 const REPO_ROOT = join(import.meta.dir, "..", "..");
 const REFERENCE = {
@@ -40,7 +41,8 @@ async function cli(...args: string[]): Promise<CliResult> {
 }
 
 function entry(id: string, overrides: Record<string, unknown> = {}): Record<string, unknown> {
-  return {
+  // with the worksheet of its final id, so it is valid whatever SMA_LEARNER_SHEET_REQUIRED is (ADR-0011)
+  return withSheet("sma-coding", {
     id,
     title: `Modul ${id}`,
     cpItems: ["E-BK-a"],
@@ -54,7 +56,7 @@ function entry(id: string, overrides: Record<string, unknown> = {}): Record<stri
     references: [REFERENCE],
     contentPath: `content/sma-coding/modules/${id}.md`,
     ...overrides,
-  };
+  });
 }
 
 async function setIndex(modules: Record<string, unknown>[]): Promise<void> {
@@ -62,6 +64,19 @@ async function setIndex(modules: Record<string, unknown>[]): Promise<void> {
     join(repo, "data", "sma-coding", "modules.json"),
     JSON.stringify({ modules }, null, 2),
   );
+  // The copy may hold the repository's real sheets; keep only what the synthetic index points at (no
+  // orphan sheet) and give each entry a non-empty worksheet, so only the body is under test.
+  const lembarDir = join(repo, "content", "sma-coding", "lembar");
+  await mkdir(lembarDir, { recursive: true });
+  const keep = new Set(modules.map((module) => `${String(module.id)}.md`));
+  for (const name of await readdir(lembarDir)) {
+    if (!keep.has(name)) {
+      await rm(join(lembarDir, name), { force: true });
+    }
+  }
+  for (const name of keep) {
+    await writeFile(join(lembarDir, name), "**Ingat dulu:** isi\n");
+  }
 }
 
 beforeAll(async () => {

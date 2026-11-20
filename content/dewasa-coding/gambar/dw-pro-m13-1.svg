@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 330" width="720" height="330" role="img" aria-labelledby="t d">
+  <title id="t">Titik uji diskon dan rantai lima langkah kerja dengan AI</title>
+  <desc id="d">Garis bilangan subtotal dengan titik 499.999, 500.000, 500.030, dan 1.000.000, masing-masing dengan kotak kosong potongan. Di bawahnya rantai lima kotak kosong bernomor 1 sampai 5 yang dihubungkan panah.</desc>
+  <rect width="720" height="330" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">
+    <path d="M20 80 H700 M692 74 L700 80 L692 86" fill="none" stroke="#222222" stroke-width="2.5"/>
+    <g stroke="#2a5d9f" stroke-width="3"><path d="M110 65 V95 M270 65 V95 M430 65 V95 M600 65 V95"/></g>
+    <text x="110" y="52">499.999</text><text x="270" y="52">500.000</text><text x="430" y="52">500.030</text><text x="600" y="52">1.000.000</text>
+    <g fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3">
+      <rect x="50" y="110" width="120" height="34" rx="4"/><rect x="210" y="110" width="120" height="34" rx="4"/><rect x="370" y="110" width="120" height="34" rx="4"/><rect x="540" y="110" width="120" height="34" rx="4"/>
+    </g>
+    <text x="110" y="132">potongan ___</text><text x="270" y="132">potongan ___</text><text x="430" y="132">potongan ___</text><text x="600" y="132">potongan ___</text>
+    <text x="360" y="195" font-size="14">isi kotak dengan: spesifikasi, uji, draf AI, tinjauan, catatan asal</text>
+    <g fill="#f2f2f2" stroke="#222222" stroke-width="2" stroke-dasharray="5 3">
+      <rect x="20" y="215" width="105" height="70" rx="6"/><rect x="170" y="215" width="105" height="70" rx="6"/><rect x="320" y="215" width="105" height="70" rx="6"/><rect x="470" y="215" width="105" height="70" rx="6"/><rect x="620" y="215" width="80" height="70" rx="6"/>
+    </g>
+    <g font-weight="bold" fill="#2a5d9f">
+      <text x="72" y="238">1</text><text x="222" y="238">2</text><text x="372" y="238">3</text><text x="522" y="238">4</text><text x="660" y="238">5</text>
+    </g>
+    <path d="M127 250 H168 M160 244 L168 250 L160 256 M277 250 H318 M310 244 L318 250 L310 256 M427 250 H468 M460 244 L468 250 L460 256 M577 250 H618 M610 244 L618 250 L610 256" fill="none" stroke="#2a5d9f" stroke-width="2.5"/>
+  </g>
+</svg>

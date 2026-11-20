@@ -10,18 +10,28 @@
 import { describe, expect, test } from "bun:test";
 import type { z } from "zod";
 import {
+  DW_LEARNER_SHEET_REQUIRED,
   dwLearningModuleSchema,
   dwLearningModulesFileSchema,
 } from "../../src/schema/dw-learning-module";
-import { kulModuleSchema, kulModulesFileSchema } from "../../src/schema/kul-module";
+import {
+  KUL_LEARNER_SHEET_REQUIRED,
+  kulModuleSchema,
+  kulModulesFileSchema,
+} from "../../src/schema/kul-module";
 import {
   moduleContentDir,
   moduleLembarDir,
   unitCodeToModuleId,
 } from "../../src/schema/program-module-common";
 import { sdModuleSchema, sdModulesFileSchema } from "../../src/schema/sd-module";
-import { smpModuleSchema, smpModulesFileSchema } from "../../src/schema/smp-module";
+import {
+  SMP_LEARNER_SHEET_REQUIRED,
+  smpModuleSchema,
+  smpModulesFileSchema,
+} from "../../src/schema/smp-module";
 import { tkModuleSchema, tkModulesFileSchema } from "../../src/schema/tk-module";
+import { withSheet } from "../helpers/program-module-entries";
 
 const REFERENCE = {
   title: "Panduan Pembelajaran Koding dan Kecerdasan Artifisial, 2025",
@@ -67,7 +77,7 @@ function sdEntry(overrides: Record<string, unknown> = {}): Record<string, unknow
 }
 
 function smpEntry(overrides: Record<string, unknown> = {}): Record<string, unknown> {
-  return {
+  return withSheet("smp-coding", {
     id: "smp7-1-m1",
     ...lifecycle("smp-coding", "smp7-1-m1"),
     weekCodes: ["SMP7-1-M1"],
@@ -76,11 +86,11 @@ function smpEntry(overrides: Record<string, unknown> = {}): Record<string, unkno
     prerequisites: [],
     audience: "siswa",
     ...overrides,
-  };
+  });
 }
 
 function kulEntry(overrides: Record<string, unknown> = {}): Record<string, unknown> {
-  return {
+  return withSheet("kuliah-coding", {
     id: "kul-u-101",
     ...lifecycle("kuliah-coding", "kul-u-101"),
     courseCodes: ["KUL-U-101"],
@@ -89,11 +99,11 @@ function kulEntry(overrides: Record<string, unknown> = {}): Record<string, unkno
     prerequisites: [],
     audience: "mahasiswa",
     ...overrides,
-  };
+  });
 }
 
 function dwEntry(overrides: Record<string, unknown> = {}): Record<string, unknown> {
-  return {
+  return withSheet("dewasa-coding", {
     id: "dw-pro-m1",
     ...lifecycle("dewasa-coding", "dw-pro-m1"),
     moduleCodes: ["DW-PRO-M1"],
@@ -102,7 +112,7 @@ function dwEntry(overrides: Record<string, unknown> = {}): Record<string, unknow
     prerequisites: ["DW-FND-M1"],
     audience: "peserta",
     ...overrides,
-  };
+  });
 }
 
 interface Case {
@@ -117,6 +127,8 @@ interface Case {
   readonly otherUnit: string;
   readonly otherId: string;
   readonly hasLearnerSheet: boolean;
+  /** `*_LEARNER_SHEET_REQUIRED` of an own-status programme (ADR-0011); unused for tk/sd. */
+  readonly sheetRequired?: boolean;
   /** A prerequisite value that is neither a slug nor a unit code of the programme. */
   readonly badPrerequisite: string;
   readonly goodPrerequisite: string;
@@ -162,6 +174,7 @@ const CASES: readonly Case[] = [
     otherUnit: "SMP7-1-M2",
     otherId: "smp7-1-m2",
     hasLearnerSheet: false,
+    sheetRequired: SMP_LEARNER_SHEET_REQUIRED,
     badPrerequisite: "SD5-1-M3",
     goodPrerequisite: "SMP7-1-M2",
   },
@@ -176,6 +189,7 @@ const CASES: readonly Case[] = [
     otherUnit: "KUL-U-102",
     otherId: "kul-u-102",
     hasLearnerSheet: false,
+    sheetRequired: KUL_LEARNER_SHEET_REQUIRED,
     badPrerequisite: "KUL-U-1",
     goodPrerequisite: "KUL-U-102",
   },
@@ -190,6 +204,7 @@ const CASES: readonly Case[] = [
     otherUnit: "DW-PRO-M2",
     otherId: "dw-pro-m2",
     hasLearnerSheet: false,
+    sheetRequired: DW_LEARNER_SHEET_REQUIRED,
     badPrerequisite: "DW-XYZ-M1",
     goodPrerequisite: "DW-PRO-M2",
   },
@@ -322,16 +337,16 @@ for (const c of CASES) {
       });
     } else {
       test("learnerSheetPath is optional with its own status (ADR-0011, tests/unit/learner-sheet-rules.test.ts)", () => {
-        expect(messages(c.schema, c.entry())).toEqual([]);
-        expect(
-          messages(
-            c.schema,
-            c.entry({
-              learnerSheetPath: `content/${c.program}/lembar/${c.entry().id}.md`,
-              learnerSheetStatus: "draf",
-            }),
-          ),
-        ).toEqual([]);
+        // the entry factory carries a sheet; strip it to see the programme's own rule
+        const { learnerSheetPath, learnerSheetStatus, ...without } = c.entry();
+        if (c.sheetRequired) {
+          expect(messages(c.schema, without).join("\n")).toContain("learnerSheetPath");
+        } else {
+          expect(messages(c.schema, without)).toEqual([]);
+        }
+        expect(messages(c.schema, { ...without, learnerSheetPath, learnerSheetStatus })).toEqual(
+          [],
+        );
       });
     }
   });

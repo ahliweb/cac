@@ -20,7 +20,14 @@ import type { CorpusEntry, CorpusSource } from "../../src/domain/corpus-audit";
 import { learnerSheetIdentityProblems } from "../../src/domain/learner-sheet";
 import { moduleFindings, parseModulesIndex } from "../../src/domain/modules";
 import { auditTkCorpus } from "../../src/domain/tk-corpus-audit";
-import { dw, kul, REFERENCE, sd, smp, tk } from "../helpers/program-module-entries";
+import {
+  dwSheeted as dw,
+  kulSheeted as kul,
+  REFERENCE,
+  sd,
+  smpSheeted as smp,
+  tk,
+} from "../helpers/program-module-entries";
 
 const REPO_ROOT = join(import.meta.dir, "..", "..");
 const index = (...modules: Record<string, unknown>[]): CorpusEntry => ({
@@ -508,12 +515,17 @@ describe("module content, learner sheet and loader", () => {
     for (const program of PROGRAMS) {
       await mkdir(join(repo, "content", program, "modules"), { recursive: true });
     }
-    await mkdir(join(repo, "content", "tk-coding", "lembar"), { recursive: true });
-    await mkdir(join(repo, "content", "sd-coding", "lembar"), { recursive: true });
+    for (const program of PROGRAMS) {
+      await mkdir(join(repo, "content", program, "lembar"), { recursive: true });
+    }
   });
   afterEach(async () => {
     await rm(repo, { recursive: true, force: true });
   });
+
+  // a non-empty worksheet, so that only the module body is under test (own-status programmes, ADR-0011)
+  const sheetOf = (program: string, id: unknown) =>
+    writeFile(join(repo, `content/${program}/lembar/${id}.md`), "**Ingat dulu:** isi\n");
 
   const parser = (program: string) => (source: CorpusSource) => parseModulesIndex(source, program);
 
@@ -525,6 +537,8 @@ describe("module content, learner sheet and loader", () => {
     };
     for (const [program, [absent, blank]] of Object.entries(entries)) {
       await writeFile(join(repo, `content/${program}/modules/${blank?.id}.md`), "  \n");
+      await sheetOf(program, absent?.id);
+      await sheetOf(program, blank?.id);
       const source = sourceWith(program, index(absent as never, blank as never));
       const findings = await moduleContentFindings(source, repo, program);
       expect(findings.map((f) => f.path)).toEqual([
@@ -569,6 +583,7 @@ describe("module content, learner sheet and loader", () => {
 
   test("moduleContentFindings uses the programme's own parser (default by id)", async () => {
     const source = sourceWith("smp-coding", index(smp("SMP7-1-M1")));
+    await sheetOf("smp-coding", "smp7-1-m1");
     expect(
       await moduleContentFindings(source, repo, "smp-coding", parser("smp-coding")),
     ).toHaveLength(1);

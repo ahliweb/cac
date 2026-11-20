@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 290" width="720" height="290" role="img" aria-labelledby="t d">
+  <title id="t">Tiga tahap Git dan tabel status tiga berkas</title>
+  <desc id="d">Tiga kotak berlabel 1 berkas berubah, 2 siap dicatat, dan 3 riwayat dihubungkan dua panah. Di bawah tiap panah ada kotak kosong untuk nama perintah. Di bawahnya tabel dengan baris README.md, .gitignore, dan .env, serta dua kolom kosong: status sekarang dan status sesudah add dan commit.</desc>
+  <rect width="720" height="290" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">
+    <rect x="20" y="15" width="150" height="55" rx="6" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <text x="95" y="48">1 berkas berubah</text>
+    <rect x="285" y="15" width="150" height="55" rx="6" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <text x="360" y="48">2 siap dicatat</text>
+    <rect x="550" y="15" width="150" height="55" rx="6" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <text x="625" y="48">3 riwayat</text>
+    <path d="M172 42 H283 M275 36 L283 42 L275 48" fill="none" stroke="#2a5d9f" stroke-width="2.5"/>
+    <path d="M437 42 H548 M540 36 L548 42 L540 48" fill="none" stroke="#2a5d9f" stroke-width="2.5"/>
+    <rect x="182" y="78" width="90" height="32" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+    <text x="227" y="99" font-size="14">perintah</text>
+    <rect x="447" y="78" width="90" height="32" rx="4" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+    <text x="492" y="99" font-size="14">perintah</text>
+    <rect x="20" y="135" width="200" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+    <rect x="220" y="135" width="240" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+    <rect x="460" y="135" width="240" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+    <text x="120" y="158" font-weight="bold">berkas</text>
+    <text x="340" y="158" font-weight="bold">status sekarang</text>
+    <text x="580" y="158" font-weight="bold">sesudah add dan commit</text>
+    <rect x="20" y="169" width="200" height="38" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <rect x="220" y="169" width="240" height="38" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="5 3"/>
+    <rect x="460" y="169" width="240" height="38" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="5 3"/>
+    <text x="120" y="193">README.md</text>
+    <rect x="20" y="207" width="200" height="38" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <rect x="220" y="207" width="240" height="38" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="5 3"/>
+    <rect x="460" y="207" width="240" height="38" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="5 3"/>
+    <text x="120" y="231">.gitignore</text>
+    <rect x="20" y="245" width="200" height="38" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <rect x="220" y="245" width="240" height="38" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="5 3"/>
+    <rect x="460" y="245" width="240" height="38" fill="#ffffff" stroke="#222222" stroke-width="2" stroke-dasharray="5 3"/>
+    <text x="120" y="269">.env</text>
+  </g>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400" role="img" aria-labelledby="t d">
+  <title id="t">Rantai bagian aplikasi inventaris dan tabel pemeriksaan portofolio</title>
+  <desc id="d">Rantai kotak berpanah dari halaman ke API, ke akses data, ke SQLite. Di bawahnya kotak konfigurasi dan log. Di bawah rantai ada tabel empat pemeriksaan portofolio dengan kolom kosong terpenuhi dan temuan.</desc>
+  <rect width="720" height="400" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="15" fill="#222222" text-anchor="middle">
+    <rect x="20" y="15" width="140" height="56" rx="6" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <text x="90" y="38">halaman</text><text x="90" y="58" font-size="14">stok.html, stok.ts</text>
+    <rect x="205" y="15" width="140" height="56" rx="6" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <text x="275" y="38">API</text><text x="275" y="58" font-size="14">api.py</text>
+    <rect x="390" y="15" width="140" height="56" rx="6" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <text x="460" y="38">akses data</text><text x="460" y="58" font-size="14">gudang_db.py</text>
+    <rect x="575" y="15" width="125" height="56" rx="6" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <text x="637" y="48">SQLite</text>
+    <path d="M162 43 H203 M195 37 L203 43 L195 49 M347 43 H388 M380 37 L388 43 L380 49 M532 43 H573 M565 37 L573 43 L565 49" fill="none" stroke="#2a5d9f" stroke-width="2.5"/>
+    <text x="165" y="35" font-size="14" fill="#2a5d9f">HTTP/JSON</text>
+    <rect x="20" y="90" width="330" height="40" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+    <text x="185" y="116">konfigurasi.toml + variabel lingkungan</text>
+    <rect x="390" y="90" width="310" height="40" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+    <text x="545" y="116">log (operasi.py)</text>
+    <g font-weight="bold">
+      <rect x="20" y="160" width="330" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/><text x="185" y="183">pemeriksaan</text>
+      <rect x="350" y="160" width="130" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/><text x="415" y="183">terpenuhi?</text>
+      <rect x="480" y="160" width="220" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/><text x="590" y="183">temuan</text>
+    </g>
+    <g stroke="#222222" stroke-width="2" fill="#ffffff">
+      <rect x="20" y="194" width="330" height="48"/><rect x="350" y="194" width="130" height="48" stroke-dasharray="5 3"/><rect x="480" y="194" width="220" height="48" stroke-dasharray="5 3"/>
+      <rect x="20" y="242" width="330" height="48"/><rect x="350" y="242" width="130" height="48" stroke-dasharray="5 3"/><rect x="480" y="242" width="220" height="48" stroke-dasharray="5 3"/>
+      <rect x="20" y="290" width="330" height="48"/><rect x="350" y="290" width="130" height="48" stroke-dasharray="5 3"/><rect x="480" y="290" width="220" height="48" stroke-dasharray="5 3"/>
+      <rect x="20" y="338" width="330" height="48"/><rect x="350" y="338" width="130" height="48" stroke-dasharray="5 3"/><rect x="480" y="338" width="220" height="48" stroke-dasharray="5 3"/>
+    </g>
+    <g text-anchor="start">
+      <text x="30" y="224">bagian README (empat bagian)</text>
+      <text x="30" y="272">berkas uji_*.py</text>
+      <text x="30" y="320">.gitignore menolak .env</text>
+      <text x="30" y="368">pola kredensial</text>
+    </g>
+  </g>
+</svg>

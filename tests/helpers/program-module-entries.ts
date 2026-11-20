@@ -24,6 +24,24 @@ function lembar(program: string, id: string): Record<string, unknown> {
   return { learnerSheetPath: `content/${program}/lembar/${id}.md` };
 }
 
+/**
+ * The own-status worksheet fields (ADR-0011) of an entry of `smp-coding`,
+ * `kuliah-coding`, `dewasa-coding` or `sma-coding`, derived from its final id.
+ * The factories below stay sheet-free (they are the "no sheet" case of
+ * `tests/unit/learner-sheet-rules.test.ts`); a test that needs a schema-valid
+ * entry whatever the programme's `*_LEARNER_SHEET_REQUIRED` flag is wraps it.
+ */
+export function withSheet(
+  program: string,
+  entry: Record<string, unknown>,
+): Record<string, unknown> {
+  return {
+    learnerSheetPath: `content/${program}/lembar/${String(entry.id)}.md`,
+    learnerSheetStatus: "draf",
+    ...entry,
+  };
+}
+
 const slug = (code: string) => code.toLowerCase();
 
 export function tk(code: string, overrides: Record<string, unknown> = {}): Record<string, unknown> {
@@ -103,3 +121,11 @@ export function dw(code: string, overrides: Record<string, unknown> = {}): Recor
     ...overrides,
   };
 }
+
+/** The entries above with their own-status worksheet (ADR-0011): valid whatever the programme's flag is. */
+export const smpSheeted = (code: string, overrides: Record<string, unknown> = {}) =>
+  withSheet("smp-coding", smp(code, overrides));
+export const kulSheeted = (code: string, overrides: Record<string, unknown> = {}) =>
+  withSheet("kuliah-coding", kul(code, overrides));
+export const dwSheeted = (code: string, overrides: Record<string, unknown> = {}) =>
+  withSheet("dewasa-coding", dw(code, overrides));

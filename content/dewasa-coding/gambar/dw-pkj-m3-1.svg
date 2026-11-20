@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 290" width="600" height="290" role="img" aria-labelledby="t d">
+  <title id="t">Daftar nilai_faktur dengan indeks dan kotak keluaran kosong</title>
+  <desc id="d">Daftar nilai_faktur berisi empat angka 27500, 204000, 48000, 50000 dengan indeks 0 sampai 3 di atas tiap kotak. Di bawah tiap angka ada kotak kosong untuk menulis keluaran besar atau kecil bila batasnya 100000. Di bawahnya kotak kosong untuk nilai maksimum dan jumlah.</desc>
+  <rect width="600" height="290" fill="#ffffff"/>
+  <text x="20" y="28" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">nilai_faktur</text>
+  <text x="80" y="60" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">indeks 0</text>
+  <rect x="20" y="70" width="120" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="80" y="96" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">27500</text>
+  <line x1="80" y1="115" x2="80" y2="140" stroke="#222222" stroke-width="2"/>
+  <polygon points="80,140 76,132 84,132" fill="#222222" stroke="#222222" stroke-width="2"/>
+  <rect x="20" y="145" width="120" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="215" y="60" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">indeks 1</text>
+  <rect x="155" y="70" width="120" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="215" y="96" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">204000</text>
+  <line x1="215" y1="115" x2="215" y2="140" stroke="#222222" stroke-width="2"/>
+  <polygon points="215,140 211,132 219,132" fill="#222222" stroke="#222222" stroke-width="2"/>
+  <rect x="155" y="145" width="120" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="350" y="60" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">indeks 2</text>
+  <rect x="290" y="70" width="120" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="350" y="96" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">48000</text>
+  <line x1="350" y1="115" x2="350" y2="140" stroke="#222222" stroke-width="2"/>
+  <polygon points="350,140 346,132 354,132" fill="#222222" stroke="#222222" stroke-width="2"/>
+  <rect x="290" y="145" width="120" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="485" y="60" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">indeks 3</text>
+  <rect x="425" y="70" width="120" height="40" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="485" y="96" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">50000</text>
+  <line x1="485" y1="115" x2="485" y2="140" stroke="#222222" stroke-width="2"/>
+  <polygon points="485,140 481,132 489,132" fill="#222222" stroke="#222222" stroke-width="2"/>
+  <rect x="425" y="145" width="120" height="40" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="20" y="205" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">Aturan: bila nilai &gt;= 100000 cetak besar, bila tidak cetak kecil.</text>
+  <text x="20" y="240" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">Jumlah anggota (len):</text>
+  <rect x="210" y="220" width="90" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="330" y="240" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">Jumlah semua nilai:</text>
+  <rect x="490" y="220" width="100" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+</svg>

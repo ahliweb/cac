@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 300" width="700" height="300" role="img" aria-labelledby="t d">
+  <title id="t">Modul stok.py dipakai laporan.py</title>
+  <desc id="d">Dua kotak berkas. Kotak stok.py memuat AMBANG_MENIPIS, rapikan_kode, total_stok, dan barang_menipis. Kotak laporan.py memuat DATA dan main(). Panah berlabel import menuju laporan.py. Di bawahnya dua kotak kosong untuk apa yang terjadi pada main() bila laporan.py dijalankan langsung dan bila di-impor.</desc>
+  <rect width="700" height="300" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="15" fill="#222222">
+    <rect x="20" y="15" width="270" height="135" rx="6" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <text x="155" y="40" text-anchor="middle" font-weight="bold">stok.py</text>
+    <text x="40" y="70">AMBANG_MENIPIS</text>
+    <text x="40" y="94">rapikan_kode</text>
+    <text x="40" y="118">total_stok</text>
+    <text x="40" y="142">barang_menipis</text>
+    <rect x="410" y="15" width="270" height="135" rx="6" fill="#ffffff" stroke="#222222" stroke-width="2"/>
+    <text x="545" y="40" text-anchor="middle" font-weight="bold">laporan.py</text>
+    <text x="430" y="76">DATA</text>
+    <text x="430" y="104">main()</text>
+    <path d="M292 82 H404 M396 76 L404 82 L396 88" fill="none" stroke="#2a5d9f" stroke-width="2.5"/>
+    <text x="348" y="70" text-anchor="middle" fill="#2a5d9f">import</text>
+    <rect x="20" y="180" width="320" height="95" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="180" y="208" text-anchor="middle">laporan.py dijalankan langsung:</text>
+    <text x="180" y="236" text-anchor="middle">main() ______</text>
+    <rect x="360" y="180" width="320" height="95" rx="6" fill="#f2f2f2" stroke="#222222" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="520" y="208" text-anchor="middle">laporan.py di-impor:</text>
+    <text x="520" y="236" text-anchor="middle">main() ______</text>
+  </g>
+</svg>

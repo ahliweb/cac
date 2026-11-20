@@ -209,6 +209,8 @@ function fixture(): SmaCorpus {
           status: "draf",
           references: [{ title: "r", url: "https://example.org/r" }],
           contentPath: "content/sma-coding/modules/modul-uji.md",
+          learnerSheetPath: "content/sma-coding/lembar/modul-uji.md",
+          learnerSheetStatus: "draf",
         },
       ],
     },
@@ -361,6 +363,8 @@ describe("loadSmaCorpus", () => {
           status: "draf",
           references: [{ title: "r", url: "https://example.org/r" }],
           contentPath: "content/sma-coding/modules/modul-uji.md",
+          learnerSheetPath: "content/sma-coding/lembar/modul-uji.md",
+          learnerSheetStatus: "draf",
         },
       ],
     };
