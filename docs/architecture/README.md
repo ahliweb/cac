@@ -186,6 +186,14 @@ Their state today:
   `content/<program>/lembar/` and `gambar/`. A module body has no `# ` title
   and no `## Rujukan` section (both come from the index), and
   `bun run check:learner-assets` fails on a duplicate title.
+- **ADR-0011** — the five programmes whose modules learners read directly
+  (`osn`, `smp-coding`, `sma-coding`, `kuliah-coding`, `dewasa-coding`) may
+  have a printable worksheet per module, `content/<program>/lembar/<id>.md`,
+  with its **own** review status (`learnerSheetStatus`, initially `draf`)
+  while the module stays `disetujui`: three optional index fields, checked by
+  `osn validate` (with an orphan-sheet check for every programme), printed by
+  `osn render modul --lembar` and covered by `check:module-code`. Infrastructure
+  only (#284); no worksheet exists yet.
 - **ADR-0008** — each programme gets its own schemas, audit and (when its
   source is tabular) fidelity module, wired through one programme table,
   `PROGRAM_MODULES` in `src/cli/program-registry.ts`, which `osn validate`

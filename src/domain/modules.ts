@@ -18,6 +18,7 @@ import { KUL_PROGRAM_ID } from "../schema/kul-common";
 import {
   MODULES_FILE_NAME,
   type Module,
+  type ModuleStatus,
   type ModulesFile,
   modulesFileSchema,
 } from "../schema/module";
@@ -45,8 +46,15 @@ export type ModuleIndexEntry = Pick<
   Module,
   "id" | "title" | "status" | "review" | "references" | "contentPath"
 > & {
-  /** `tk-coding` and `sd-coding` only: the child's learner sheet, `content/<program>/lembar/<id>.md`. */
+  /**
+   * The learner sheet, `content/<program>/lembar/<id>.md`: required for `tk-coding` and `sd-coding` (the
+   * sheet follows the module status), optional for the other five programmes (ADR-0011).
+   */
   readonly learnerSheetPath?: string | undefined;
+  /** The five other programmes only: the sheet's own review status; present exactly when `learnerSheetPath` is. */
+  readonly learnerSheetStatus?: ModuleStatus | undefined;
+  /** The five other programmes only: the sheet's approval record; present exactly when its status is `disetujui`. */
+  readonly learnerSheetReview?: Module["review"];
   /** `tk-coding` only: the CP Fase Fondasi items the week overlaps (interpreted overlap, never fulfilment). */
   readonly cpOverlap?: readonly string[] | undefined;
 };

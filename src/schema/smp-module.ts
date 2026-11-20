@@ -24,6 +24,7 @@ import {
   DUPLICATE_MODULE_ID_MESSAGE,
   isUnique,
   moduleContentDir,
+  ownStatusLearnerSheetShape,
   programModuleLifecycleShape,
 } from "./program-module-common";
 import {
@@ -35,6 +36,12 @@ import {
 
 /** The `smp-coding` module-content directory, `content/smp-coding/modules/`. */
 export const SMP_MODULE_CONTENT_DIR = moduleContentDir(SMP_CODING_PROGRAM_ID);
+
+/**
+ * Whether every `smp-coding` module must have a worksheet (`learnerSheetPath`, ADR-0011). `false` until the
+ * programme's worksheets are written; a later per-programme change flips it.
+ */
+export const SMP_LEARNER_SHEET_REQUIRED = false;
 
 /** One `smp-coding` module-index entry. */
 export const smpModuleSchema = z
@@ -61,11 +68,13 @@ export const smpModuleSchema = z
       ),
     audience: z.literal("siswa"),
     contentPath: nonEmptyString.describe("`content/smp-coding/modules/<id>.md`."),
+    ...ownStatusLearnerSheetShape,
   })
   .strict()
   .superRefine((module, ctx) => {
     addCommonModuleIssues(module, ctx, {
       programId: SMP_CODING_PROGRAM_ID,
+      ownStatusLearnerSheet: { required: SMP_LEARNER_SHEET_REQUIRED },
       unitCodes: module.weekCodes,
       uniqueLists: {
         weekCodes: module.weekCodes,

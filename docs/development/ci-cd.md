@@ -54,7 +54,8 @@ The workflow is defined in `.github/workflows/ci.yml`. It has a single job,
     it); this step names a missing interpreter before the check does.
 15. **Check module code examples** — `bun run check:module-code`
     (`scripts/check-module-code.ts`). Extracts the fenced blocks of
-    `content/**/modules/*.md` and checks them; nothing is executed (this
+    `content/**/modules/*.md` and of the learner sheets
+    `content/**/lembar/*.md` (ADR-0011) and checks them; nothing is executed (this
     repository is not a judge, ADR-0004). ```` ```cpp ```` runs
     `g++ -std=c++17 -fsyntax-only`; ```` ```arduino ```` runs the same
     compiler with `#include "Arduino.h"` against the mock header in

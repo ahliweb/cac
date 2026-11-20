@@ -105,6 +105,14 @@ cac render modul --program sd-coding --id sd1-1-m1 --lembar
 cac render modul --program sma-coding --id c-x1-m8
 ```
 
+Untuk `osn`, `smp-coding`, `sma-coding`, `kuliah-coding`, dan `dewasa-coding`,
+sebuah modul dapat punya lembar kerja cetak (`content/<program>/lembar/<id>.md`)
+dengan status tinjauan **sendiri** (`learnerSheetStatus`, awalnya `draf`) yang
+terpisah dari status modul (ADR-0011). `render modul ... --lembar` mencetaknya
+dengan spanduk dari status lembar, dan persetujuan lembar kelak Anda putuskan
+lewat dialog pilihan baku seperti persetujuan modul. Belum ada lembar kerja yang
+ditulis.
+
 Isi modul tidak memuat judul `# ` atau bagian `## Rujukan` sendiri: judul dan
 rujukan dicetak dari indeks `data/<program>/modules.json`, dan
 `bun run check:learner-assets` menolak judul ganda.

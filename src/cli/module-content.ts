@@ -6,12 +6,13 @@
  * `src/domain/modules.ts`; the renderer in `src/render/module.ts`.
  */
 
-import { readFile } from "node:fs/promises";
+import { readdir, readFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import type { CorpusFinding, CorpusSource } from "../domain/corpus-audit";
 import { learnerSheetIdentityProblems } from "../domain/learner-sheet";
 import { type ModuleIndexEntry, type ModulesIndex, parseModulesIndex } from "../domain/modules";
 import type { ResolvedModuleReference } from "../render/module";
+import { moduleLembarDir } from "../schema/learner-sheet-rules";
 import { MODULES_FILE_NAME } from "../schema/module";
 import { referencesFileSchema } from "../schema/reference";
 import { loadCorpusFromDirectory } from "./corpus-loader";
@@ -26,9 +27,10 @@ async function readBody(contentPath: string, repoRoot: string): Promise<string |
 }
 
 /**
- * One finding per module whose body file is missing or blank, and (for the programmes that have learner
- * sheets, tk-coding and sd-coding) per module whose learner sheet is missing, blank or carries a name or
- * identity field of the child. Skips an absent or invalid index (reported elsewhere).
+ * One finding per module whose body file is missing or blank, per module whose learner sheet (required for
+ * tk-coding and sd-coding, optional for the other programmes, ADR-0011) is missing, blank or carries a name
+ * or identity field, and per orphan sheet: a `content/<program>/lembar/*.md` file no index entry points at.
+ * Skips an absent or invalid index (reported elsewhere).
  * `parseIndex` is the programme's own index parser (the table entry's `parseModulesIndex`, ADR-0008); by default it is chosen by `programId`.
  */
 export async function moduleContentFindings(
@@ -65,7 +67,33 @@ export async function moduleContentFindings(
       );
     }
   }
+  findings.push(...(await orphanSheetFindings(programId, modules, repoRoot)));
   return findings;
+}
+
+/** One finding per `content/<program>/lembar/*.md` file that no entry of `modules` names as its `learnerSheetPath`. */
+async function orphanSheetFindings(
+  programId: string,
+  modules: ModulesIndex,
+  repoRoot: string,
+): Promise<CorpusFinding[]> {
+  const dir = moduleLembarDir(programId);
+  let names: string[];
+  try {
+    names = await readdir(resolve(repoRoot, dir));
+  } catch {
+    return [];
+  }
+  const indexed = new Set(modules.modules.map((module) => module.learnerSheetPath));
+  return names
+    .filter((name) => name.endsWith(".md") && !indexed.has(`${dir}${name}`))
+    .sort()
+    .map((name) => ({
+      file: MODULES_FILE_NAME,
+      path: "(root)",
+      message: `orphan learner sheet "${dir}${name}": no module entry has it as learnerSheetPath`,
+      severity: "error" as const,
+    }));
 }
 
 /** Findings about one learner sheet: missing, blank, or with a name or identity field. */
@@ -100,7 +128,7 @@ export type ModuleLoadResult =
       readonly module: ModuleIndexEntry;
       readonly body: string;
       readonly references: readonly ResolvedModuleReference[];
-      /** The child's learner sheet (`tk-coding`, `sd-coding`); `undefined` for a programme or module without one. */
+      /** The module's learner sheet (child's sheet or worksheet); `undefined` for a module without one. */
       readonly learnerSheet: { readonly path: string; readonly body: string } | undefined;
     }
   | { readonly ok: false; readonly message: string };

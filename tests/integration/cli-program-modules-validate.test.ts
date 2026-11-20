@@ -227,4 +227,76 @@ describe("osn validate --program <id> with a module index", () => {
       expect(result.stdout).toContain("line 3 is a name or identity field of the child");
     });
   }
+
+  describe("own-status worksheets (smp-coding, kuliah-coding, dewasa-coding; ADR-0011)", () => {
+    const sheetEntry = (scenario: Scenario, extra: Entry = {}): Entry => {
+      const entry = scenario.valid[0] as Entry;
+      return {
+        ...entry,
+        learnerSheetPath: `content/${scenario.program}/lembar/${String(entry.id)}.md`,
+        learnerSheetStatus: "draf",
+        ...extra,
+      };
+    };
+
+    for (const scenario of SCENARIOS.filter((s) => !s.sheets)) {
+      test(`${scenario.program}: a draft worksheet is clean, a bad one is checked like TK/SD`, async () => {
+        const entry = sheetEntry(scenario);
+        const path = String(entry.learnerSheetPath);
+        await repo.setIndex(scenario.program, [entry]);
+        await repo.write(String(entry.contentPath), "## Isi\n\nTeks.\n");
+
+        // missing
+        expect((await repo.cli("validate", "--program", scenario.program)).stdout).toContain(
+          `learner sheet "${path}" does not exist`,
+        );
+        // empty
+        await repo.write(path, "\n");
+        expect((await repo.cli("validate", "--program", scenario.program)).stdout).toContain(
+          `learner sheet "${path}" is empty`,
+        );
+        // a name field
+        await repo.write(path, "## Latihan\n\nNama: ______\n");
+        const named = await repo.cli("validate", "--program", scenario.program);
+        expect(named.exitCode).toBe(1);
+        expect(named.stdout).toContain("line 3 is a name or identity field of the child");
+        // clean
+        await repo.write(path, "## Latihan\n\nKerjakan tiga soal.\n");
+        const clean = await repo.cli("validate", "--program", scenario.program);
+        expect(clean.stderr).toBe("");
+        expect(clean.stdout).not.toContain("modules.json");
+        expect(clean.exitCode).toBe(0);
+      });
+
+      test(`${scenario.program}: a sheet status without a path, or a path without status, is exit 1`, async () => {
+        const entry = sheetEntry(scenario);
+        await repo.setIndex(scenario.program, [{ ...entry, learnerSheetStatus: undefined }]);
+        const noStatus = await repo.cli("validate", "--program", scenario.program);
+        expect(noStatus.exitCode).toBe(1);
+        expect(noStatus.stdout).toContain("`learnerSheetStatus` is required exactly when");
+        await repo.setIndex(scenario.program, [{ ...entry, learnerSheetPath: undefined }]);
+        const noPath = await repo.cli("validate", "--program", scenario.program);
+        expect(noPath.exitCode).toBe(1);
+        expect(noPath.stdout).toContain("`learnerSheetStatus` is required exactly when");
+      });
+    }
+  });
+
+  describe("orphan sheets", () => {
+    for (const scenario of SCENARIOS) {
+      test(`${scenario.program}: a lembar file no index entry points at is exit 1`, async () => {
+        await repo.setIndex(scenario.program, scenario.valid);
+        await writeContent(scenario.valid, scenario.sheets);
+        const orphan = `content/${scenario.program}/lembar/tidak-terindeks.md`;
+        await repo.write(orphan, "## Latihan\n");
+        const result = await repo.cli("validate", "--program", scenario.program);
+        expect(result.exitCode).toBe(1);
+        expect(result.stdout).toContain(
+          `orphan learner sheet "${orphan}": no module entry has it as learnerSheetPath`,
+        );
+        await rm(`${repo.root}/${orphan}`);
+        expect((await repo.cli("validate", "--program", scenario.program)).exitCode).toBe(0);
+      });
+    }
+  });
 });

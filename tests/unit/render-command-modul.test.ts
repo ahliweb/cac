@@ -42,12 +42,10 @@ describe("renderCommand.run: modul and --lembar (in-process)", () => {
     expect(unknown.stderr.join("")).toContain("unknown module");
   });
 
-  test("--lembar is refused for a programme without learner sheets", async () => {
+  test("--lembar is a usage error for a module without a sheet, or an unknown module", async () => {
     const osn = makeContext();
     expect(await renderCommand.run(["modul", "--id", "x", "--lembar"], osn.ctx)).toBe(2);
-    expect(osn.stderr.join("")).toContain(
-      "--lembar berlaku untuk program tk-coding dan sd-coding saja",
-    );
+    expect(osn.stderr.join("")).toContain("unknown module");
     const smp = makeContext();
     expect(
       await renderCommand.run(
@@ -55,7 +53,7 @@ describe("renderCommand.run: modul and --lembar (in-process)", () => {
         smp.ctx,
       ),
     ).toBe(2);
-    expect(smp.stderr.join("")).toContain("program smp-coding tidak punya lembar anak");
+    expect(smp.stderr.join("")).toContain("unknown module");
   });
 
   test("--lembar with another subcommand is refused", async () => {

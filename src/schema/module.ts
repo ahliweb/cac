@@ -20,6 +20,7 @@
 
 import { z } from "zod";
 import { nonEmptyString, slugSchema } from "./common";
+import { addLearnerSheetIssues } from "./learner-sheet-rules";
 import { MAX_WEEK, MIN_WEEK } from "./week";
 
 /** The index file's name inside a programme's corpus directory; optional per programme. */
@@ -48,6 +49,27 @@ export const moduleReviewSchema = z
   })
   .strict();
 
+/**
+ * The three optional own-status learner-sheet fields (ADR-0011) of the five programmes whose modules
+ * learners read directly; the shared rule is `addLearnerSheetIssues` (`./learner-sheet-rules`).
+ * `tk-coding` and `sd-coding` do not spread this (their sheet follows the module status).
+ */
+export const ownStatusLearnerSheetShape = {
+  learnerSheetPath: nonEmptyString
+    .optional()
+    .describe(
+      "`content/<program>/lembar/<id>.md` (the printable worksheet), when the module has one.",
+    ),
+  learnerSheetStatus: moduleStatusSchema
+    .optional()
+    .describe(
+      "The worksheet's own review status; required exactly when `learnerSheetPath` is present.",
+    ),
+  learnerSheetReview: moduleReviewSchema
+    .optional()
+    .describe("Required when `learnerSheetStatus` is `disetujui`, forbidden otherwise."),
+};
+
 /** An explicit reference: a title and an https URL (shared with the `sma-coding` module schema). */
 export const moduleExplicitReferenceSchema = z
   .object({
@@ -74,6 +96,12 @@ export function parseContentPath(path: string): { program: string; id: string } 
   return match === null ? null : { program: match[1] as string, id: match[2] as string };
 }
 
+/**
+ * Whether every OSN module must have a worksheet (`learnerSheetPath`, ADR-0011). `false` until the
+ * programme's worksheets are written; a later per-programme change flips it.
+ */
+export const OSN_LEARNER_SHEET_REQUIRED = false;
+
 /** One module-index entry. */
 export const moduleSchema = z
   .object({
@@ -95,6 +123,7 @@ export const moduleSchema = z
       .describe("Required when status is `disetujui`, forbidden otherwise."),
     references: z.array(moduleReferenceSchema).min(1),
     contentPath: nonEmptyString.describe("`content/<program>/modules/<id>.md`."),
+    ...ownStatusLearnerSheetShape,
   })
   .strict()
   .refine((module) => (module.status === "disetujui") === (module.review !== undefined), {
@@ -112,6 +141,14 @@ export const moduleSchema = z
       message: 'must be "content/<program>/modules/<id>.md" with <id> equal to the module id',
     },
   )
+  .superRefine((module, ctx) => {
+    const parsed = parseContentPath(module.contentPath);
+    // The sheet lies in the same programme segment as the module body (`content/<program>/lembar/<id>.md`).
+    addLearnerSheetIssues(module, ctx, {
+      programId: parsed?.program ?? "osn",
+      required: OSN_LEARNER_SHEET_REQUIRED,
+    });
+  })
   .refine((module) => new Set(module.topicFamilies).size === module.topicFamilies.length, {
     path: ["topicFamilies"],
     message: "topic family ids must be unique",

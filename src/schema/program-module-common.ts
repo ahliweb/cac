@@ -19,17 +19,20 @@
 
 import { z } from "zod";
 import { nonEmptyString } from "./common";
-import { moduleExplicitReferenceSchema, moduleReviewSchema, moduleStatusSchema } from "./module";
+import { addLearnerSheetIssues, moduleLembarDir } from "./learner-sheet-rules";
+import {
+  moduleExplicitReferenceSchema,
+  moduleReviewSchema,
+  moduleStatusSchema,
+  ownStatusLearnerSheetShape,
+} from "./module";
 
 /** The module-content directory of programme `programId`, `content/<id>/modules/`. */
 export function moduleContentDir(programId: string): string {
   return `content/${programId}/modules/`;
 }
 
-/** The learner-sheet directory of programme `programId`, `content/<id>/lembar/` (tk-coding, sd-coding). */
-export function moduleLembarDir(programId: string): string {
-  return `content/${programId}/lembar/`;
-}
+export { moduleLembarDir, ownStatusLearnerSheetShape };
 
 /**
  * The module id of a programme-unit code: lower case, dots replaced by
@@ -63,6 +66,8 @@ interface CommonModuleFields {
   readonly review?: unknown;
   readonly contentPath: string;
   readonly learnerSheetPath?: string | undefined;
+  readonly learnerSheetStatus?: string | undefined;
+  readonly learnerSheetReview?: unknown;
 }
 
 /** Options for {@link addCommonModuleIssues}. */
@@ -74,6 +79,12 @@ interface CommonModuleOptions {
   readonly uniqueLists: Readonly<Record<string, readonly string[]>>;
   /** When `true`, `learnerSheetPath` must be `content/<program>/lembar/<id>.md`. */
   readonly requiresLearnerSheet?: boolean;
+  /**
+   * The programme has own-status learner sheets (ADR-0011): `learnerSheetPath`, `learnerSheetStatus` and
+   * `learnerSheetReview` are optional fields checked by `addLearnerSheetIssues`; `required` makes the sheet
+   * mandatory for every module (off for all five programmes until its worksheets are written).
+   */
+  readonly ownStatusLearnerSheet?: { readonly required: boolean };
 }
 
 /** Adds the rules every programme's module entry shares (see the file docblock) to `ctx`. */
@@ -105,6 +116,12 @@ export function addCommonModuleIssues(
       code: "custom",
       path: ["learnerSheetPath"],
       message: `must be "${moduleLembarDir(options.programId)}<id>.md" with <id> equal to the module id`,
+    });
+  }
+  if (options.ownStatusLearnerSheet !== undefined) {
+    addLearnerSheetIssues(module, ctx, {
+      programId: options.programId,
+      required: options.ownStatusLearnerSheet.required,
     });
   }
   const [unitCode] = options.unitCodes;

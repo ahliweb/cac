@@ -58,7 +58,7 @@ bun run check:fidelity
 | `bun run privacy-check` | Tidak ada kunci berbentuk data pribadi di `data/`. | Selalu. |
 | `bun run check:requirements` | Register kebutuhan dan matriks keterlacakan konsisten. | Bila `docs/requirements/` disentuh. |
 | `bun run check:checklist-fidelity` | Data §14.1/§14.2 sama persis dengan silabus sumber. | Bila data atau dokumen itu disentuh. |
-| `bun run check:module-code` | Blok `cpp` dan `arduino` di modul lolos `g++ -fsyntax-only` (`arduino` terhadap `Arduino.h` tiruan) dan blok `python` lolos `ast.parse`; hanya sintaks dan tipe, bukan perilaku (`g++` dan `python3` wajib ada). | Bila modul di `content/` berubah. |
+| `bun run check:module-code` | Blok `cpp` dan `arduino` di modul dan lembar (`content/*/lembar/*.md`) lolos `g++ -fsyntax-only` (`arduino` terhadap `Arduino.h` tiruan) dan blok `python` lolos `ast.parse`; hanya sintaks dan tipe, bukan perilaku (`g++` dan `python3` wajib ada). | Bila modul atau lembar di `content/` berubah. |
 | `bun run check:learner-assets` | SVG di `content/<program>/gambar/` dan tautan gambar di `content/<program>/lembar/` sah; judul `# ` ganda di `content/*/modules/*.md` atau `lembar/*.md` adalah galat. | Bila modul, lembar, atau gambar di `content/` berubah. |
 | `bun run check:fidelity` | Fidelity semua program yang punya modul fidelity (atau `--program <id>`), lewat tabel program (ADR-0008). | Bila `data/<program>/` atau dokumen sumbernya berubah. |
 | `bun run check:sma-fidelity` | `data/sma-coding/` sama sel demi sel dengan `silabus.md`. | Bila `data/sma-coding/` atau silabus itu berubah. |

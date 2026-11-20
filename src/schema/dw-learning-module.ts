@@ -36,6 +36,7 @@ import {
   DUPLICATE_MODULE_ID_MESSAGE,
   isUnique,
   moduleContentDir,
+  ownStatusLearnerSheetShape,
   programModuleLifecycleShape,
 } from "./program-module-common";
 
@@ -46,6 +47,12 @@ export const DW_MODULE_CONTENT_DIR = moduleContentDir(DEWASA_CODING_PROGRAM_ID);
 export const dwModuleTrackSchema = z
   .enum([...DW_TRACK_IDS, DW_SHARED_TRACK_ID])
   .describe('"PKJ", "PRO", "PRS", "BIS" or "FND" (the shared module).');
+
+/**
+ * Whether every `dewasa-coding` module must have a worksheet (`learnerSheetPath`, ADR-0011). `false` until the
+ * programme's worksheets are written; a later per-programme change flips it.
+ */
+export const DW_LEARNER_SHEET_REQUIRED = false;
 
 /** One `dewasa-coding` module-index entry. */
 export const dwLearningModuleSchema = z
@@ -71,11 +78,13 @@ export const dwLearningModuleSchema = z
       ),
     audience: z.literal("peserta"),
     contentPath: nonEmptyString.describe("`content/dewasa-coding/modules/<id>.md`."),
+    ...ownStatusLearnerSheetShape,
   })
   .strict()
   .superRefine((module, ctx) => {
     addCommonModuleIssues(module, ctx, {
       programId: DEWASA_CODING_PROGRAM_ID,
+      ownStatusLearnerSheet: { required: DW_LEARNER_SHEET_REQUIRED },
       unitCodes: module.moduleCodes,
       uniqueLists: {
         moduleCodes: module.moduleCodes,

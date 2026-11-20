@@ -45,7 +45,9 @@ Untuk `tk-coding`, `sd-coding`, `smp-coding`, `kuliah-coding`, dan
 untuk program <id>"; pesannya menyebut bahwa kedua perintah itu hanya ada untuk
 `osn` dan `sma-coding`, dan bahwa program itu didukung `render modul`,
 `validate` dan `check:fidelity`). `render modul` untuk kelima program itu
-(dengan `--id <id> --lembar` untuk lembar anak `tk-coding` dan `sd-coding`)
+(dengan `--id <id> --lembar` untuk lembar anak `tk-coding` dan `sd-coding`,
+dan untuk lembar kerja lima program lain yang entri modulnya punya
+`learnerSheetPath`; belum ada lembar kerja yang ditulis, ADR-0011)
 sudah ada dan bekerja: per 2026-11-20 `data/<id>/modules.json` berisi 48
 (`tk-coding`), 168 (`sd-coding`), 84 (`smp-coding`), 24 (`kuliah-coding`), dan
 36 (`dewasa-coding`) modul, semuanya `disetujui` sejak 2026-11-20. Program tanpa `modules.json` exit 2 dengan

@@ -40,6 +40,8 @@ file.
 | [0007](0007-authored-learning-content.md) | Authored learning content with a review lifecycle | Accepted |
 | [0008](0008-skema-khusus-per-program.md) | Skema khusus per program dan titik sambung audit/fidelity | Accepted |
 | [0009](0009-cac-platform-identity.md) | Curriculum as Code (CaC): target ahliweb/cac dan kompatibilitas migrasi | Accepted (rename pending) |
+| [0010](0010-pemeriksaan-silang-kode-lintas-program.md) | Pemeriksaan silang kode lintas program pada tabel jembatan | Accepted |
+| [0011](0011-lembar-kerja-program-modul-pelajar.md) | Lembar kerja cetak untuk program yang modulnya dibaca pelajar | Accepted |
 
 ADRs 0001–0005 satisfy requirement **TR-05** in
 `docs/requirements/register.md` ("Architecture documentation and ADRs...

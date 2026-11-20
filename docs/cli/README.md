@@ -199,9 +199,18 @@ whose programme is not registered is a draft and is not validated.
    prerequisite (another module's id, or a unit code of the programme) that is
    unknown or closes a cycle (a module cannot require itself); a duplicate id;
    an `id` that is not the lower-case unit code; a missing or blank Markdown
-   body; for `tk-coding` and `sd-coding` also a missing or blank learner sheet
-   (`content/<program>/lembar/<id>.md`) or one with a name or identity field of
-   the child (see `cac render modul --lembar`). A reference file that a used
+   body; a missing or blank learner sheet (`content/<program>/lembar/<id>.md`)
+   or one with a name or identity field of the child (see `cac render modul
+   --lembar`), for the modules that have one (every module of `tk-coding` and
+   `sd-coding`; the other five programmes may have a worksheet per module with
+   its own status, ADR-0011, see the three optional fields below); and an
+   orphan sheet: a `content/<program>/lembar/*.md` file that no module entry
+   names as its `learnerSheetPath`. The optional fields `learnerSheetPath`
+   (`content/<program>/lembar/<id>.md`), `learnerSheetStatus` (required exactly
+   when the path is present) and `learnerSheetReview` (required exactly when
+   the status is `disetujui`) are accepted by `osn`, `smp-coding`, `sma-coding`,
+   `kuliah-coding` and `dewasa-coding` and rejected by `tk-coding` and
+   `sd-coding`. A reference file that a used
    field needs but that is missing or invalid is itself reported ("cannot be
    checked"), never skipped silently.
 
@@ -651,7 +660,7 @@ cac render checkpoint --number <1-7> [--out <path>] [--force]
 cac render sop [--out <path>] [--force]
 cac render lembar-siswa --week <1-28> [--out <path>] [--force]
 cac render modul [--program <id>] --id <module-id> [--out <path>] [--force]
-cac render modul --program <tk-coding|sd-coding> --id <module-id> --lembar [--out <path>] [--force]
+cac render modul [--program <id>] --id <module-id> --lembar [--out <path>] [--force]
 ```
 
 The actual rendering logic (`renderWeeklyPlan`, `renderCheckpointSheet`,
@@ -837,7 +846,7 @@ modules.json`), an invalid index, a missing or blank body, or a dangling
 | Flag | Meaning |
 | --- | --- |
 | `--id <id>` | The module id. **Required.** |
-| `--lembar` | `tk-coding` and `sd-coding` only: render the child's learner sheet instead of the teacher guide. Exit `2` for any other programme or any other `render` subcommand. |
+| `--lembar` | Render the module's learner sheet (`content/<program>/lembar/<id>.md`) instead of the module body: the child's sheet of `tk-coding` and `sd-coding`, or the worksheet ("lembar kerja") of a module of any other programme whose index entry has a `learnerSheetPath` (ADR-0011). Exit `2` when the module has no sheet or with any other `render` subcommand. |
 
 #### Examples (synthetic fixture)
 
@@ -903,14 +912,26 @@ $ cac render modul --program tk-coding --id tk-a1-m1 --lembar
 cac render modul: the learner sheet of "Kegiatan sehari-hariku" has a name or identity field of the child: line 3 ("Nama: ______"). A child's sheet carries none; remove it from the sheet.
 [exit 1]
 
-$ cac render modul --program smp-coding --id x --lembar
-cac render modul: --lembar berlaku untuk program tk-coding dan sd-coding saja (panduan guru plus lembar anak); program smp-coding tidak punya lembar anak.
+$ cac render modul --program smp-coding --id smp7-1-m1 --lembar
+cac render modul: module "smp7-1-m1" has no learner sheet.
 [exit 2]
 ```
 
 The other programmes (`smp-coding`, `kuliah-coding`, `dewasa-coding`)
 render exactly like `sma-coding` modules: the guide for the pupil, student
 or participant, with its own `Program:` footer line.
+
+**Worksheets with their own status (ADR-0011).** For `osn`, `smp-coding`,
+`sma-coding`, `kuliah-coding` and `dewasa-coding` a module may have a printable
+worksheet whose review status is its own (`learnerSheetStatus`), apart from the
+module's (the module may be `disetujui` while its worksheet is still `draf`).
+`--lembar` prints the title, the label `**Lembar kerja**` (instead of `**Lembar
+anak**`), a banner taken from the **sheet's** status (`draf`, `ditinjau` or
+`ditarik`: the wording says "Lembar ini ..."; none for `disetujui`), the sheet
+verbatim, and a footer `Status lembar: <status>.` with the programme and, for an
+approved sheet, the date and reviewer role of `learnerSheetReview`. The rule
+about a name or identity field applies to these sheets too. Worksheets are
+optional per module for now; none has been added yet.
 
 `plan` and `render lembar-siswa` still refuse these programmes (they read
 the OSN corpus, or only `sma-coding`'s); the message is honest about it and
@@ -926,7 +947,8 @@ cac plan: belum didukung untuk program tk-coding: perintah ini membaca corpus OS
 
 `bun run check:module-code` (`scripts/check-module-code.ts`, run in CI
 after `cac validate`) extracts the fenced blocks from
-`content/**/modules/*.md` and checks them without running anything:
+`content/**/modules/*.md` and from the learner sheets
+`content/**/lembar/*.md` (ADR-0011) and checks them without running anything:
 
 - ```` ```cpp ```` -- `g++ -std=c++17 -fsyntax-only`.
 - ```` ```arduino ```` -- the same compiler with `#include "Arduino.h"`
@@ -982,7 +1004,7 @@ so the title would appear twice. This is an **error** (exit code 1;
 
 | Flag | Meaning |
 | --- | --- |
-| `--program <id>` | The registered programme whose corpus to use. Default `osn`; an unknown id is exit `2`. `sma-coding` is supported by `render lembar-siswa` (with a week code, see below) and `render modul`; `weekly`, `checkpoint` and `sop` read the OSN corpus only and exit `2` with "belum didukung untuk program <id>" for every programme other than `osn`; the five other coding programmes (everything but `osn` and `sma-coding`) also refuse `render lembar-siswa` the same way (the message now names `render modul`), and support `render modul` once they have a `modules.json` (`--lembar` for `tk-coding` and `sd-coding`), else exit `2` with "this programme has no modules.json". |
+| `--program <id>` | The registered programme whose corpus to use. Default `osn`; an unknown id is exit `2`. `sma-coding` is supported by `render lembar-siswa` (with a week code, see below) and `render modul`; `weekly`, `checkpoint` and `sop` read the OSN corpus only and exit `2` with "belum didukung untuk program <id>" for every programme other than `osn`; the five other coding programmes (everything but `osn` and `sma-coding`) also refuse `render lembar-siswa` the same way (the message now names `render modul`), and support `render modul` once they have a `modules.json` (`--lembar` for any module whose index entry has a `learnerSheetPath`), else exit `2` with "this programme has no modules.json". |
 | `--out <path>` | Write the rendered Markdown to this path instead of printing it to stdout. Resolved against the process's current working directory. |
 | `--force` | Required to overwrite a file that already exists at `--out`. Without it, an existing file is left byte-for-byte untouched (the write itself never opens the file for truncation) and the command exits `2` -- a mentor should never silently lose an edited worksheet to a repeated `cac render ... --out` invocation. |
 
@@ -994,8 +1016,8 @@ written to disk.
 | Code | Meaning |
 | --- | --- |
 | `0` | Success. |
-| `1` | (`render lembar-siswa --program sma-coding` only) the programme corpus fails validation. |
-| `2` | Usage error: a missing or unknown subcommand, a missing required flag (`--week`/`--number`/`--id`), a `--week`/`--number` value outside its valid range (or not an integer, or, for `sma-coding`, an unknown week code), an unknown or unreadable module (`render modul`), or `--out` already exists without `--force`. |
+| `1` | (`render lembar-siswa --program sma-coding` only) the programme corpus fails validation; or (`render modul --lembar`) the learner sheet has a name or identity field. |
+| `2` | Usage error: a missing or unknown subcommand, a missing required flag (`--week`/`--number`/`--id`), a `--week`/`--number` value outside its valid range (or not an integer, or, for `sma-coding`, an unknown week code), an unknown or unreadable module, or a module without a learner sheet when `--lembar` is given (`render modul`), or `--out` already exists without `--force`. |
 
 ### Example
 

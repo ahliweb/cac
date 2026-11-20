@@ -250,22 +250,81 @@ describe("osn render modul --lembar", () => {
   }
 
   for (const sample of SAMPLES.filter((s) => s.sheet === undefined)) {
-    test(`${sample.program}: --lembar is exit 2 (no learner sheets for this programme)`, async () => {
-      const entry = await install(sample);
-      const result = await repo.cli(
-        "render",
-        "modul",
-        "--program",
-        sample.program,
-        "--id",
-        String(entry.id),
-        "--lembar",
-      );
-      expect(result.exitCode).toBe(2);
-      expect(result.stdout).toBe("");
-      expect(result.stderr).toContain(
-        "--lembar berlaku untuk program tk-coding dan sd-coding saja",
-      );
+    describe(`${sample.program} (own-status worksheet, ADR-0011)`, () => {
+      const SHEET = "Kerjakan tiga soal berikut.";
+      const sheetFields = (id: string, extra: Entry = {}): Entry => ({
+        learnerSheetPath: `content/${sample.program}/lembar/${id}.md`,
+        learnerSheetStatus: "draf",
+        ...extra,
+      });
+      const render = (id: string) =>
+        repo.cli("render", "modul", "--program", sample.program, "--id", id, "--lembar");
+
+      test("a module without a sheet: --lembar is exit 2", async () => {
+        const entry = await install(sample);
+        const result = await render(String(entry.id));
+        expect(result.exitCode).toBe(2);
+        expect(result.stdout).toBe("");
+        expect(result.stderr).toContain(`module "${String(entry.id)}" has no learner sheet`);
+      });
+
+      test("a draft worksheet of an approved module has the sheet's DRAF banner and status", async () => {
+        const id = String(sample.entry.id);
+        const entry = await install(sample, {
+          status: "disetujui",
+          review: { approvedOn: "2026-11-20", reviewerRole: "pemilik" },
+          ...sheetFields(id),
+        });
+        await repo.write(String(entry.learnerSheetPath), `## Latihan\n\n${SHEET}\n`);
+        const result = await render(id);
+        expect(result.stderr).toBe("");
+        expect(result.exitCode).toBe(0);
+        const lines = result.stdout.split("\n");
+        expect(lines[0]).toBe(`# ${String(entry.title)}`);
+        expect(lines[2]).toBe("**Lembar kerja**");
+        expect(lines[4]).toStartWith("> **DRAF — belum ditinjau.** Lembar ini");
+        expect(result.stdout).toContain(SHEET);
+        expect(result.stdout).toContain("Status lembar: draf.");
+        expect(result.stdout).not.toContain("Disetujui pada");
+        expect(result.stdout).not.toContain("Teks isi sintetis");
+        expect(result.stdout).not.toContain("## Rujukan");
+      });
+
+      test("an approved worksheet has no banner and records its own approval", async () => {
+        const id = String(sample.entry.id);
+        const entry = await install(sample, {
+          ...sheetFields(id, {
+            learnerSheetStatus: "disetujui",
+            learnerSheetReview: { approvedOn: "2026-12-01", reviewerRole: "mentor" },
+          }),
+        });
+        await repo.write(String(entry.learnerSheetPath), `${SHEET}\n`);
+        const result = await render(id);
+        expect(result.exitCode).toBe(0);
+        expect(result.stdout).not.toContain("DRAF");
+        expect(result.stdout).toContain("Status lembar: disetujui.");
+        expect(result.stdout).toContain(
+          "Disetujui pada 2026-12-01 oleh peninjau dengan peran: mentor.",
+        );
+      });
+
+      test("a worksheet with a name field is refused (exit 1)", async () => {
+        const id = String(sample.entry.id);
+        const entry = await install(sample, sheetFields(id));
+        await repo.write(String(entry.learnerSheetPath), "## Latihan\n\nNama: ______\n");
+        const result = await render(id);
+        expect(result.exitCode).toBe(1);
+        expect(result.stdout).toBe("");
+        expect(result.stderr).toContain('line 3 ("Nama: ______")');
+      });
+
+      test("a sheet field set without its status fails the index (exit 2, validate says why)", async () => {
+        const id = String(sample.entry.id);
+        await install(sample, { learnerSheetPath: `content/${sample.program}/lembar/${id}.md` });
+        const result = await render(id);
+        expect(result.exitCode).toBe(2);
+        expect(result.stderr).toContain("learnerSheetStatus");
+      });
     });
   }
 

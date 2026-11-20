@@ -321,10 +321,17 @@ for (const c of CASES) {
         }
       });
     } else {
-      test("has no learner sheet field", () => {
+      test("learnerSheetPath is optional with its own status (ADR-0011, tests/unit/learner-sheet-rules.test.ts)", () => {
+        expect(messages(c.schema, c.entry())).toEqual([]);
         expect(
-          messages(c.schema, c.entry({ learnerSheetPath: "content/x/lembar/y.md" })),
-        ).not.toEqual([]);
+          messages(
+            c.schema,
+            c.entry({
+              learnerSheetPath: `content/${c.program}/lembar/${c.entry().id}.md`,
+              learnerSheetStatus: "draf",
+            }),
+          ),
+        ).toEqual([]);
       });
     }
   });

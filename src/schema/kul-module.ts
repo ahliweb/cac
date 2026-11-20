@@ -30,11 +30,18 @@ import {
   DUPLICATE_MODULE_ID_MESSAGE,
   isUnique,
   moduleContentDir,
+  ownStatusLearnerSheetShape,
   programModuleLifecycleShape,
 } from "./program-module-common";
 
 /** The `kuliah-coding` module-content directory, `content/kuliah-coding/modules/`. */
 export const KUL_MODULE_CONTENT_DIR = moduleContentDir(KUL_PROGRAM_ID);
+
+/**
+ * Whether every `kuliah-coding` module must have a worksheet (`learnerSheetPath`, ADR-0011). `false` until the
+ * programme's worksheets are written; a later per-programme change flips it.
+ */
+export const KUL_LEARNER_SHEET_REQUIRED = false;
 
 /** One `kuliah-coding` module-index entry. */
 export const kulModuleSchema = z
@@ -62,11 +69,13 @@ export const kulModuleSchema = z
       ),
     audience: z.literal("mahasiswa"),
     contentPath: nonEmptyString.describe("`content/kuliah-coding/modules/<id>.md`."),
+    ...ownStatusLearnerSheetShape,
   })
   .strict()
   .superRefine((module, ctx) => {
     addCommonModuleIssues(module, ctx, {
       programId: KUL_PROGRAM_ID,
+      ownStatusLearnerSheet: { required: KUL_LEARNER_SHEET_REQUIRED },
       unitCodes: module.courseCodes,
       uniqueLists: {
         courseCodes: module.courseCodes,
