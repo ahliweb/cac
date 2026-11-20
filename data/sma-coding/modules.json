@@ -7154,6 +7154,758 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-x2-m14.md"
+    },
+    {
+      "id": "a-xi1-m1",
+      "title": "Proses rekayasa program",
+      "cpItems": ["F-BK-a"],
+      "weekCodes": ["A-XI1-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["a-x2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "GCC: Warning Options",
+          "url": "https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html"
+        },
+        {
+          "title": "cppreference: std::setprecision",
+          "url": "https://en.cppreference.com/w/cpp/io/manip/setprecision"
+        },
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/w/cpp/container/vector"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xi1-m1.md"
+    },
+    {
+      "id": "a-xi1-m2",
+      "title": "Kualitas kode dan pengujian",
+      "cpItems": ["F-AP-c", "F-BK-a"],
+      "weekCodes": ["A-XI1-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["a-xi1-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "GCC: Warning Options",
+          "url": "https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html"
+        },
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/w/cpp/container/vector"
+        },
+        {
+          "title": "cppreference: std::numeric_limits",
+          "url": "https://en.cppreference.com/w/cpp/types/numeric_limits"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xi1-m2.md"
+    },
+    {
+      "id": "a-xi1-m3",
+      "title": "Pencarian lengkap (complete search); operasi bit dasar (pengayaan, dari A-X2-M12 v1.0)",
+      "cpItems": ["F-AP-a", "F-AP-b", "F-BK-b"],
+      "weekCodes": ["A-XI1-M3"],
+      "bridgeFamilies": ["logika-bitwise", "strategi-problem-solving"],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["a-xi1-m2", "a-x2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: Arithmetic operators",
+          "url": "https://en.cppreference.com/w/cpp/language/operator_arithmetic"
+        },
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/w/cpp/container/vector"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xi1-m3.md"
+    },
+    {
+      "id": "a-xi1-m4",
+      "title": "Pencarian lengkap dan pemangkasan",
+      "cpItems": ["F-AP-a", "F-AP-b", "F-BK-b"],
+      "weekCodes": ["A-XI1-M4"],
+      "bridgeFamilies": ["strategi-problem-solving"],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["a-xi1-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/w/cpp/container/vector"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xi1-m4.md"
+    },
+    {
+      "id": "a-xi1-m5",
+      "title": "Greedy I",
+      "cpItems": ["F-AP-a", "F-AP-b", "F-BK-b"],
+      "weekCodes": ["A-XI1-M5"],
+      "bridgeFamilies": ["strategi-problem-solving"],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["a-xi1-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/w/cpp/container/vector"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xi1-m5.md"
+    },
+    {
+      "id": "a-xi1-m6",
+      "title": "Greedy II",
+      "cpItems": ["F-AP-a", "F-AP-b", "F-BK-b"],
+      "weekCodes": ["A-XI1-M6"],
+      "bridgeFamilies": ["strategi-problem-solving"],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["a-xi1-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: for loop",
+          "url": "https://en.cppreference.com/w/cpp/language/for"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xi1-m6.md"
+    },
+    {
+      "id": "a-xi1-m7",
+      "title": "Rekursi dan divide-and-conquer",
+      "cpItems": ["F-AP-a", "F-AP-b", "F-BK-b"],
+      "weekCodes": ["A-XI1-M7"],
+      "bridgeFamilies": ["rekursi", "strategi-problem-solving"],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["a-xi1-m6", "a-x2-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::binary_search",
+          "url": "https://en.cppreference.com/w/cpp/algorithm/binary_search"
+        },
+        {
+          "title": "cppreference: Functions",
+          "url": "https://en.cppreference.com/w/cpp/language/functions"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xi1-m7.md"
+    },
+    {
+      "id": "a-xi1-m8",
+      "title": "Merge sort, quick sort, `std::sort`",
+      "cpItems": ["F-AP-a", "F-AP-b"],
+      "weekCodes": ["A-XI1-M8"],
+      "bridgeFamilies": ["search-sort"],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["a-xi1-m7", "a-x2-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::sort",
+          "url": "https://en.cppreference.com/w/cpp/algorithm/sort"
+        },
+        {
+          "title": "cppreference: std::stable_sort",
+          "url": "https://en.cppreference.com/w/cpp/algorithm/stable_sort"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xi1-m8.md"
+    },
+    {
+      "id": "a-xi1-m9",
+      "title": "Pustaka standar: `pair`, `set`, `map`",
+      "cpItems": ["F-AP-a", "F-AP-b", "F-AP-d", "F-BK-c"],
+      "weekCodes": ["A-XI1-M9"],
+      "bridgeFamilies": ["struktur-data"],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["a-xi1-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::pair",
+          "url": "https://en.cppreference.com/w/cpp/utility/pair"
+        },
+        {
+          "title": "cppreference: std::set",
+          "url": "https://en.cppreference.com/w/cpp/container/set"
+        },
+        {
+          "title": "cppreference: std::map",
+          "url": "https://en.cppreference.com/w/cpp/container/map"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xi1-m9.md"
+    },
+    {
+      "id": "a-xi1-m10",
+      "title": "Antrian prioritas (heap)",
+      "cpItems": ["F-AP-a", "F-AP-b", "F-AP-d", "F-BK-c"],
+      "weekCodes": ["A-XI1-M10"],
+      "bridgeFamilies": ["struktur-data"],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["a-xi1-m9", "a-x2-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::priority_queue",
+          "url": "https://en.cppreference.com/w/cpp/container/priority_queue"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xi1-m10.md"
+    },
+    {
+      "id": "a-xi1-m11",
+      "title": "Backtracking",
+      "cpItems": ["F-AP-a", "F-AP-b", "F-BK-b"],
+      "weekCodes": ["A-XI1-M11"],
+      "bridgeFamilies": ["rekursi", "strategi-problem-solving"],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["a-xi1-m10", "a-xi1-m4", "a-x2-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::next_permutation",
+          "url": "https://en.cppreference.com/w/cpp/algorithm/next_permutation"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xi1-m11.md"
+    },
+    {
+      "id": "a-xi1-m12",
+      "title": "Membandingkan strategi",
+      "cpItems": ["F-AP-a", "F-AP-b", "F-BK-b"],
+      "weekCodes": ["A-XI1-M12"],
+      "bridgeFamilies": ["strategi-problem-solving"],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["a-xi1-m11"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::min",
+          "url": "https://en.cppreference.com/w/cpp/algorithm/min"
+        },
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/w/cpp/container/vector"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xi1-m12.md"
+    },
+    {
+      "id": "a-xi1-m13",
+      "title": "Proyek mini",
+      "cpItems": ["F-AP-b"],
+      "weekCodes": ["A-XI1-M13"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["a-xi1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::sort",
+          "url": "https://en.cppreference.com/w/cpp/algorithm/sort"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xi1-m13.md"
+    },
+    {
+      "id": "a-xi1-m14",
+      "title": "Asesmen dan refleksi (kelas XI semester 1)",
+      "cpItems": [],
+      "weekCodes": ["A-XI1-M14"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["a-xi1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "GCC: Warning Options",
+          "url": "https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html"
+        },
+        {
+          "title": "cppreference: std::sort",
+          "url": "https://en.cppreference.com/w/cpp/algorithm/sort"
+        },
+        {
+          "title": "cppreference: std::map",
+          "url": "https://en.cppreference.com/w/cpp/container/map"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xi1-m14.md"
+    },
+    {
+      "id": "b-xi1-m1",
+      "title": "Proses rekayasa produk digital",
+      "cpItems": ["F-BK-a"],
+      "weekCodes": ["B-XI1-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["b-x2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/"
+        },
+        {
+          "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
+          "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xi1-m1.md"
+    },
+    {
+      "id": "b-xi1-m2",
+      "title": "TypeScript I: tipe dasar",
+      "cpItems": [],
+      "weekCodes": ["B-XI1-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["b-xi1-m1", "b-x1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "TypeScript Handbook: Everyday Types",
+          "url": "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html"
+        },
+        {
+          "title": "Bun: TypeScript",
+          "url": "https://bun.sh/docs/typescript"
+        },
+        {
+          "title": "Bun: Type checking (bun check)",
+          "url": "https://bun.sh/docs/runtime/check"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xi1-m2.md"
+    },
+    {
+      "id": "b-xi1-m3",
+      "title": "TypeScript II: `interface`, `type`, gabungan, generik dasar",
+      "cpItems": [],
+      "weekCodes": ["B-XI1-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["b-xi1-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "TypeScript Handbook: Object Types",
+          "url": "https://www.typescriptlang.org/docs/handbook/2/objects.html"
+        },
+        {
+          "title": "TypeScript Handbook: Narrowing",
+          "url": "https://www.typescriptlang.org/docs/handbook/2/narrowing.html"
+        },
+        {
+          "title": "TypeScript Handbook: Generics",
+          "url": "https://www.typescriptlang.org/docs/handbook/2/generics.html"
+        },
+        {
+          "title": "TypeScript Handbook: Everyday Types",
+          "url": "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xi1-m3.md"
+    },
+    {
+      "id": "b-xi1-m4",
+      "title": "`tsconfig` dan mode ketat",
+      "cpItems": ["F-AP-c"],
+      "weekCodes": ["B-XI1-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["b-xi1-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "TypeScript: TSConfig Reference",
+          "url": "https://www.typescriptlang.org/tsconfig/"
+        },
+        {
+          "title": "TypeScript Handbook: What is a tsconfig.json",
+          "url": "https://www.typescriptlang.org/docs/handbook/tsconfig-json.html"
+        },
+        {
+          "title": "Bun: TypeScript",
+          "url": "https://bun.sh/docs/typescript"
+        },
+        {
+          "title": "Bun: Type checking (bun check)",
+          "url": "https://bun.sh/docs/runtime/check"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xi1-m4.md"
+    },
+    {
+      "id": "b-xi1-m5",
+      "title": "Bun: runtime dan pengelola paket",
+      "cpItems": [],
+      "weekCodes": ["B-XI1-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["b-xi1-m4", "b-x1-m8"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Bun: bun install",
+          "url": "https://bun.sh/docs/pm/cli/install"
+        },
+        {
+          "title": "Bun: bun add",
+          "url": "https://bun.sh/docs/pm/cli/add"
+        },
+        {
+          "title": "Bun: bun info",
+          "url": "https://bun.sh/docs/pm/cli/info"
+        },
+        {
+          "title": "Bun: Lockfile (bun.lock)",
+          "url": "https://bun.sh/docs/pm/lockfile"
+        },
+        {
+          "title": "Bun: Type checking (bun check)",
+          "url": "https://bun.sh/docs/runtime/check"
+        },
+        {
+          "title": "Git: gitignore",
+          "url": "https://git-scm.com/docs/gitignore"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xi1-m5.md"
+    },
+    {
+      "id": "b-xi1-m6",
+      "title": "Modul ESM dan paket",
+      "cpItems": [],
+      "weekCodes": ["B-XI1-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["b-xi1-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "MDN: Modul JavaScript (Guide)",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules"
+        },
+        {
+          "title": "MDN: export",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export"
+        },
+        {
+          "title": "MDN: import",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import"
+        },
+        {
+          "title": "TypeScript Handbook: Modules Introduction",
+          "url": "https://www.typescriptlang.org/docs/handbook/modules/introduction.html"
+        },
+        {
+          "title": "Bun: Module resolution",
+          "url": "https://bun.sh/docs/runtime/module-resolution"
+        },
+        {
+          "title": "Bun: bun add",
+          "url": "https://bun.sh/docs/pm/cli/add"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xi1-m6.md"
+    },
+    {
+      "id": "b-xi1-m7",
+      "title": "Pengujian dengan `bun test`",
+      "cpItems": ["F-AP-c"],
+      "weekCodes": ["B-XI1-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["b-xi1-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Bun: Test runner",
+          "url": "https://bun.sh/docs/test"
+        },
+        {
+          "title": "Bun: Writing tests",
+          "url": "https://bun.sh/docs/test/writing-tests"
+        },
+        {
+          "title": "Bun: Type checking (bun check)",
+          "url": "https://bun.sh/docs/runtime/check"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xi1-m7.md"
+    },
+    {
+      "id": "b-xi1-m8",
+      "title": "Struktur data kompleks di TS",
+      "cpItems": ["F-AP-b", "F-AP-d", "F-BK-c"],
+      "weekCodes": ["B-XI1-M8"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["b-xi1-m7", "b-x2-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "MDN: Map",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map"
+        },
+        {
+          "title": "MDN: Set",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set"
+        },
+        {
+          "title": "TypeScript: generik",
+          "url": "https://www.typescriptlang.org/docs/handbook/2/generics.html"
+        },
+        {
+          "title": "TypeScript: kelas",
+          "url": "https://www.typescriptlang.org/docs/handbook/2/classes.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xi1-m8.md"
+    },
+    {
+      "id": "b-xi1-m9",
+      "title": "Strategi algoritmik di TS",
+      "cpItems": ["F-AP-a", "F-AP-b", "F-BK-b"],
+      "weekCodes": ["B-XI1-M9"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["b-xi1-m8", "b-x2-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "MDN: Rekursi (daftar istilah)",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/Recursion"
+        },
+        {
+          "title": "MDN: Memoisasi (daftar istilah)",
+          "url": "https://developer.mozilla.org/en-US/docs/Glossary/Memoization"
+        },
+        {
+          "title": "MDN: Map",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xi1-m9.md"
+    },
+    {
+      "id": "b-xi1-m10",
+      "title": "Efisiensi dan alternatif solusi",
+      "cpItems": ["F-BK-b"],
+      "weekCodes": ["B-XI1-M10"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["b-xi1-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "MDN: Performance.now()",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/API/Performance/now"
+        },
+        {
+          "title": "MDN: Array.prototype.sort",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort"
+        },
+        {
+          "title": "MDN: Set",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xi1-m10.md"
+    },
+    {
+      "id": "b-xi1-m11",
+      "title": "Kualitas kode",
+      "cpItems": ["F-AP-c"],
+      "weekCodes": ["B-XI1-M11"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["b-xi1-m10", "b-xi1-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Biome: panduan memulai",
+          "url": "https://biomejs.dev/guides/getting-started/"
+        },
+        {
+          "title": "Biome: aturan noDoubleEquals",
+          "url": "https://biomejs.dev/linter/rules/no-double-equals/"
+        },
+        {
+          "title": "MDN: operator kesamaan ketat",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Strict_equality"
+        },
+        {
+          "title": "Bun: bun run",
+          "url": "https://bun.sh/docs/cli/run"
+        },
+        {
+          "title": "TypeScript: referensi tsconfig",
+          "url": "https://www.typescriptlang.org/tsconfig/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xi1-m11.md"
+    },
+    {
+      "id": "b-xi1-m12",
+      "title": "Alur kerja Git: cabang, pull request, ulasan",
+      "cpItems": ["F-AP-c", "F-BK-a"],
+      "weekCodes": ["B-XI1-M12"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["b-xi1-m11", "b-x2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Git: git-diff",
+          "url": "https://git-scm.com/docs/git-diff"
+        },
+        {
+          "title": "Git: git-merge",
+          "url": "https://git-scm.com/docs/git-merge"
+        },
+        {
+          "title": "Git: git-request-pull",
+          "url": "https://git-scm.com/docs/git-request-pull"
+        },
+        {
+          "title": "Git: git-branch",
+          "url": "https://git-scm.com/docs/git-branch"
+        },
+        {
+          "title": "Pro Git: percabangan dan penggabungan dasar",
+          "url": "https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xi1-m12.md"
+    },
+    {
+      "id": "b-xi1-m13",
+      "title": "Proyek mini",
+      "cpItems": ["F-AP-b"],
+      "weekCodes": ["B-XI1-M13"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["b-xi1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Bun: bun test",
+          "url": "https://bun.sh/docs/cli/test"
+        },
+        {
+          "title": "Bun: menulis uji",
+          "url": "https://bun.sh/docs/test/writing-tests"
+        },
+        {
+          "title": "TypeScript: modul",
+          "url": "https://www.typescriptlang.org/docs/handbook/2/modules.html"
+        },
+        {
+          "title": "TypeScript: generik",
+          "url": "https://www.typescriptlang.org/docs/handbook/2/generics.html"
+        },
+        {
+          "title": "MDN: export",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xi1-m13.md"
+    },
+    {
+      "id": "b-xi1-m14",
+      "title": "Asesmen dan refleksi (kelas XI semester 1)",
+      "cpItems": [],
+      "weekCodes": ["B-XI1-M14"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XI"],
+      "prerequisites": ["b-xi1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Bun: dokumentasi",
+          "url": "https://bun.sh/docs"
+        },
+        {
+          "title": "Bun: bun test",
+          "url": "https://bun.sh/docs/cli/test"
+        },
+        {
+          "title": "MDN: JavaScript",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        },
+        {
+          "title": "TypeScript: dokumentasi",
+          "url": "https://www.typescriptlang.org/docs/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xi1-m14.md"
     }
   ]
 }

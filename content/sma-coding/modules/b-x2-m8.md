@@ -10,7 +10,7 @@ Contoh dijalankan penyusun dengan Bun 1.4.4 per 2026-11. Tugas baca-dan-prediksi
 
 Jawab dari ingatan dulu, baru cek di bagian kunci. Soal 1 dari `b-x2-m7`, soal 2 dari `b-x2-m5`, soal 3 dari `b-x1-m13`.
 
-1. Apa beda LIFO dan FIFO? Beri satu contoh sehari-hari untuk masing-masing.
+1. Apa beda LIFO dan FIFO? Beri satu contoh sehari-hari untuk tiap-tiapnya.
 2. Mengapa `#khusus` mengalahkan `.penting` dan `.penting` mengalahkan `p`, walaupun urutan penulisannya berbeda?
 3. Berapa tebakan terbanyak yang cukup untuk menemukan angka 1 sampai 100 bila selalu menebak tengah-tengah rentang?
 
