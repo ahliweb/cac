@@ -9,7 +9,17 @@
  */
 
 import { afterAll, beforeAll, describe, expect, test } from "bun:test";
-import { dw, kul, REFERENCE, sd, smp, tk } from "../helpers/program-module-entries";
+import { DW_LEARNER_SHEET_REQUIRED } from "../../src/schema/dw-learning-module";
+import { KUL_LEARNER_SHEET_REQUIRED } from "../../src/schema/kul-module";
+import { SMP_LEARNER_SHEET_REQUIRED } from "../../src/schema/smp-module";
+import {
+  dwSheeted,
+  kulSheeted,
+  REFERENCE,
+  sd,
+  smpSheeted,
+  tk,
+} from "../helpers/program-module-entries";
 import { createProgramModulesRepo, type ProgramModulesRepo } from "../helpers/program-modules-repo";
 
 let repo: ProgramModulesRepo;
@@ -46,26 +56,40 @@ const SAMPLES: readonly Sample[] = [
   {
     program: "smp-coding",
     name: "Silabus Pembelajaran Coding SMP",
-    entry: smp("SMP7-1-M1", { cpCodes: ["D-BK-a"] }),
+    entry: smpSheeted("SMP7-1-M1", { cpCodes: ["D-BK-a"] }),
   },
   {
     program: "kuliah-coding",
     name: "Silabus Pembelajaran Coding Perguruan Tinggi",
-    entry: kul("KUL-U-101", { knowledgeAreas: ["SDF"] }),
+    entry: kulSheeted("KUL-U-101", { knowledgeAreas: ["SDF"] }),
   },
   {
     program: "dewasa-coding",
     name: "Silabus Pembelajaran Coding untuk Dewasa",
-    entry: dw("DW-PRO-M1", { skkniUnits: ["J.620100.011.01"], prerequisites: ["DW-FND-M1"] }),
+    entry: dwSheeted("DW-PRO-M1", {
+      skkniUnits: ["J.620100.011.01"],
+      prerequisites: ["DW-FND-M1"],
+    }),
   },
 ];
+
+/** `*_LEARNER_SHEET_REQUIRED` of the own-status programmes (ADR-0011): a module without a sheet is then an invalid index. */
+const SHEET_REQUIRED: Record<string, boolean> = {
+  "smp-coding": SMP_LEARNER_SHEET_REQUIRED,
+  "kuliah-coding": KUL_LEARNER_SHEET_REQUIRED,
+  "dewasa-coding": DW_LEARNER_SHEET_REQUIRED,
+};
 
 async function install(sample: Sample, overrides: Entry = {}): Promise<Entry> {
   const entry = { ...sample.entry, ...overrides };
   await repo.setIndex(sample.program, [entry]);
   await repo.write(String(entry.contentPath), `## Isi ${String(entry.id)}\n\nTeks isi sintetis.\n`);
-  if (sample.sheet !== undefined) {
-    await repo.write(String(entry.learnerSheetPath), `## Lembar\n\n${sample.sheet}\n`);
+  if (entry.learnerSheetPath !== undefined) {
+    // tk/sd: the child's sheet; the other programmes: a non-empty worksheet next to the body
+    await repo.write(
+      String(entry.learnerSheetPath),
+      `## Lembar\n\n${sample.sheet ?? "Kerjakan soal sintetis."}\n`,
+    );
   }
   return entry;
 }
@@ -261,11 +285,20 @@ describe("osn render modul --lembar", () => {
         repo.cli("render", "modul", "--program", sample.program, "--id", id, "--lembar");
 
       test("a module without a sheet: --lembar is exit 2", async () => {
-        const entry = await install(sample);
+        // the entry is built explicitly without the worksheet fields (the factory carries them)
+        const entry = await install(sample, {
+          learnerSheetPath: undefined,
+          learnerSheetStatus: undefined,
+        });
         const result = await render(String(entry.id));
         expect(result.exitCode).toBe(2);
         expect(result.stdout).toBe("");
-        expect(result.stderr).toContain(`module "${String(entry.id)}" has no learner sheet`);
+        // while the sheet is still optional the module is valid and has no sheet; once required, the index is invalid
+        expect(result.stderr).toContain(
+          SHEET_REQUIRED[sample.program]
+            ? `content/${sample.program}/lembar/<id>.md`
+            : `module "${String(entry.id)}" has no learner sheet`,
+        );
       });
 
       test("a draft worksheet of an approved module has the sheet's DRAF banner and status", async () => {
@@ -320,7 +353,10 @@ describe("osn render modul --lembar", () => {
 
       test("a sheet field set without its status fails the index (exit 2, validate says why)", async () => {
         const id = String(sample.entry.id);
-        await install(sample, { learnerSheetPath: `content/${sample.program}/lembar/${id}.md` });
+        await install(sample, {
+          learnerSheetPath: `content/${sample.program}/lembar/${id}.md`,
+          learnerSheetStatus: undefined,
+        });
         const result = await render(id);
         expect(result.exitCode).toBe(2);
         expect(result.stderr).toContain("learnerSheetStatus");

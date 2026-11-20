@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 350" width="680" height="350" role="img" aria-labelledby="t d">
+  <title id="t">Tabel produk dan tabel transaksi dengan kolom hasil kosong</title>
+  <desc id="d">Dua tabel sintetis. Kiri tabel produk dengan kode, kategori, dan harga. Kanan tabel transaksi dengan nomor, kode produk, jumlah, dan dua kolom kosong: nilai dan cocok. Di bawah dua kotak kosong untuk total alat-tulis dan total minuman.</desc>
+  <rect width="680" height="350" fill="#ffffff"/>
+  <text x="20" y="24" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">produk</text>
+  <rect x="20" y="34" width="55" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="47.5" y="56.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">kode</text>
+  <rect x="75" y="34" width="100" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="125.0" y="56.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">kategori</text>
+  <rect x="175" y="34" width="70" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="210.0" y="56.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">harga</text>
+  <rect x="20" y="68" width="55" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="47.5" y="90.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">P01</text>
+  <rect x="75" y="68" width="100" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="125.0" y="90.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">alat-tulis</text>
+  <rect x="175" y="68" width="70" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="210.0" y="90.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">2500</text>
+  <rect x="20" y="102" width="55" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="47.5" y="124.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">P02</text>
+  <rect x="75" y="102" width="100" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="125.0" y="124.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">alat-tulis</text>
+  <rect x="175" y="102" width="70" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="210.0" y="124.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">4000</text>
+  <rect x="20" y="136" width="55" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="47.5" y="158.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">P03</text>
+  <rect x="75" y="136" width="100" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="125.0" y="158.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">minuman</text>
+  <rect x="175" y="136" width="70" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="210.0" y="158.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">1500</text>
+  <rect x="20" y="170" width="55" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="47.5" y="192.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">P04</text>
+  <rect x="75" y="170" width="100" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="125.0" y="192.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">minuman</text>
+  <rect x="175" y="170" width="70" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="210.0" y="192.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">2000</text>
+  <text x="300" y="24" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">transaksi</text>
+  <rect x="300" y="34" width="60" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="330.0" y="54.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">no</text>
+  <rect x="360" y="34" width="60" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="390.0" y="54.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">kode</text>
+  <rect x="420" y="34" width="70" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="455.0" y="54.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">jumlah</text>
+  <rect x="490" y="34" width="90" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="535.0" y="54.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">nilai</text>
+  <rect x="580" y="34" width="80" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="620.0" y="54.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">cocok?</text>
+  <rect x="300" y="64" width="60" height="30" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="330.0" y="84.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">T001</text>
+  <rect x="360" y="64" width="60" height="30" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="390.0" y="84.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">P01</text>
+  <rect x="420" y="64" width="70" height="30" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="455.0" y="84.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">10</text>
+  <rect x="490" y="64" width="90" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="580" y="64" width="80" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="300" y="94" width="60" height="30" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="330.0" y="114.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">T002</text>
+  <rect x="360" y="94" width="60" height="30" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="390.0" y="114.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">P03</text>
+  <rect x="420" y="94" width="70" height="30" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="455.0" y="114.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">24</text>
+  <rect x="490" y="94" width="90" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="580" y="94" width="80" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="300" y="124" width="60" height="30" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="330.0" y="144.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">T003</text>
+  <rect x="360" y="124" width="60" height="30" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="390.0" y="144.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">P02</text>
+  <rect x="420" y="124" width="70" height="30" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="455.0" y="144.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">5</text>
+  <rect x="490" y="124" width="90" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="580" y="124" width="80" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="300" y="154" width="60" height="30" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="330.0" y="174.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">T004</text>
+  <rect x="360" y="154" width="60" height="30" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="390.0" y="174.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">P04</text>
+  <rect x="420" y="154" width="70" height="30" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="455.0" y="174.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">12</text>
+  <rect x="490" y="154" width="90" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="580" y="154" width="80" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="300" y="184" width="60" height="30" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="330.0" y="204.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">T005</text>
+  <rect x="360" y="184" width="60" height="30" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="390.0" y="204.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">P03</text>
+  <rect x="420" y="184" width="70" height="30" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="455.0" y="204.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">6</text>
+  <rect x="490" y="184" width="90" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="580" y="184" width="80" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="300" y="214" width="60" height="30" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="330.0" y="234.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">T006</text>
+  <rect x="360" y="214" width="60" height="30" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="390.0" y="234.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">P99</text>
+  <rect x="420" y="214" width="70" height="30" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="455.0" y="234.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">3</text>
+  <rect x="490" y="214" width="90" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="580" y="214" width="80" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="300" y="244" width="60" height="30" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="330.0" y="264.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">T007</text>
+  <rect x="360" y="244" width="60" height="30" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="390.0" y="264.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">P01</text>
+  <rect x="420" y="244" width="70" height="30" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="455.0" y="264.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">4</text>
+  <rect x="490" y="244" width="90" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="580" y="244" width="80" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="20" y="244" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">Total alat-tulis:</text>
+  <rect x="150" y="224" width="110" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="20" y="290" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">Total minuman:</text>
+  <rect x="150" y="270" width="110" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="20" y="336" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">nilai = jumlah x harga</text>
+</svg>

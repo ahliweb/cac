@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 330" width="680" height="330" role="img" aria-labelledby="t d">
+  <title id="t">Tabel penelusuran anggaran jajan lima hari</title>
+  <desc id="d">Tabel lima baris Senin sampai Jumat. Kolom pengeluaran terisi 25.000, 18.000, 30.000, 22.000, 15.000. Dua kolom kosong: sisa sesudah dikurangi dan sisa kurang dari 0. Anggaran awal Rp 100.000.</desc>
+  <rect width="680" height="330" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="15" fill="#222222">
+    <text x="20" y="26" font-weight="bold">sisa awal = 100.000</text>
+    <g font-weight="bold">
+      <rect x="20" y="40" width="110" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="2"/><text x="30" y="63">hari</text>
+      <rect x="130" y="40" width="150" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="2"/><text x="140" y="63">pengeluaran</text>
+      <rect x="280" y="40" width="200" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="2"/><text x="290" y="63">sisa sesudah dikurangi</text>
+      <rect x="480" y="40" width="180" height="36" fill="#f2f2f2" stroke="#222222" stroke-width="2"/><text x="490" y="63">sisa kurang dari 0?</text>
+    </g>
+    <g stroke="#222222" stroke-width="2" fill="#ffffff">
+      <rect x="20" y="76" width="110" height="46"/><rect x="130" y="76" width="150" height="46"/><rect x="280" y="76" width="200" height="46" stroke-dasharray="5 3"/><rect x="480" y="76" width="180" height="46" stroke-dasharray="5 3"/>
+      <rect x="20" y="122" width="110" height="46"/><rect x="130" y="122" width="150" height="46"/><rect x="280" y="122" width="200" height="46" stroke-dasharray="5 3"/><rect x="480" y="122" width="180" height="46" stroke-dasharray="5 3"/>
+      <rect x="20" y="168" width="110" height="46"/><rect x="130" y="168" width="150" height="46"/><rect x="280" y="168" width="200" height="46" stroke-dasharray="5 3"/><rect x="480" y="168" width="180" height="46" stroke-dasharray="5 3"/>
+      <rect x="20" y="214" width="110" height="46"/><rect x="130" y="214" width="150" height="46"/><rect x="280" y="214" width="200" height="46" stroke-dasharray="5 3"/><rect x="480" y="214" width="180" height="46" stroke-dasharray="5 3"/>
+      <rect x="20" y="260" width="110" height="46"/><rect x="130" y="260" width="150" height="46"/><rect x="280" y="260" width="200" height="46" stroke-dasharray="5 3"/><rect x="480" y="260" width="180" height="46" stroke-dasharray="5 3"/>
+    </g>
+    <text x="30" y="105">Senin</text><text x="140" y="105">25.000</text>
+    <text x="30" y="151">Selasa</text><text x="140" y="151">18.000</text>
+    <text x="30" y="197">Rabu</text><text x="140" y="197">30.000</text>
+    <text x="30" y="243">Kamis</text><text x="140" y="243">22.000</text>
+    <text x="30" y="289">Jumat</text><text x="140" y="289">15.000</text>
+  </g>
+</svg>

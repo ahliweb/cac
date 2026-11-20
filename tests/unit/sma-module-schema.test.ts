@@ -6,6 +6,7 @@
 
 import { describe, expect, test } from "bun:test";
 import { smaModuleSchema, smaModulesFileSchema } from "../../src/schema/sma-module";
+import { withSheet } from "../helpers/program-module-entries";
 
 const PANDUAN_2025 = {
   title: "Panduan Mata Pelajaran Informatika, Fase D – F, BSKAP Kemendikdasmen, 2025",
@@ -13,7 +14,8 @@ const PANDUAN_2025 = {
 };
 
 function entry(overrides: Record<string, unknown> = {}): Record<string, unknown> {
-  return {
+  // with the worksheet of its final id, so it is valid whatever SMA_LEARNER_SHEET_REQUIRED is (ADR-0011)
+  return withSheet("sma-coding", {
     id: "contoh-modul",
     title: "Modul Contoh",
     cpItems: ["E-BK-a"],
@@ -27,7 +29,7 @@ function entry(overrides: Record<string, unknown> = {}): Record<string, unknown>
     references: [PANDUAN_2025],
     contentPath: "content/sma-coding/modules/contoh-modul.md",
     ...overrides,
-  };
+  });
 }
 
 const messages = (value: unknown) => {

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320" role="img" aria-labelledby="t d">
+  <title id="t">Tiga nama berkas lama dengan kotak nama baru kosong</title>
+  <desc id="d">Tabel tiga nama berkas sintetis di folder laporan_masuk: rekap-maret-2026.csv, Rekap_April_2026.csv, REKAP MEI 2026.csv. Kolom nama baru dan kolom hasil bila skrip dijalankan kedua kali kosong. Pola nama baru tertulis di bawah: TTTT-BB.csv.</desc>
+  <rect width="640" height="320" fill="#ffffff"/>
+  <text x="20" y="26" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">Folder laporan_masuk</text>
+  <rect x="20" y="38" width="230" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="135.0" y="65.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Nama lama</text>
+  <rect x="250" y="38" width="170" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="335.0" y="65.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Nama baru</text>
+  <rect x="420" y="38" width="200" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="520.0" y="65.0" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="middle">Jalankan kedua kali</text>
+  <rect x="20" y="82" width="230" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="135.0" y="109.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">rekap-maret-2026.csv</text>
+  <rect x="250" y="82" width="170" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="420" y="82" width="200" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="20" y="126" width="230" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="135.0" y="153.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Rekap_April_2026.csv</text>
+  <rect x="250" y="126" width="170" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="420" y="126" width="200" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="20" y="170" width="230" height="44" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="135.0" y="197.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">REKAP MEI 2026.csv</text>
+  <rect x="250" y="170" width="170" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="420" y="170" width="200" height="44" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="20" y="244" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">Pola nama baru: TTTT-BB.csv (tahun, tanda hubung, bulan dua angka).</text>
+  <text x="20" y="272" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">Bila dua berkas mendapat nama baru yang sama, tulis apa yang sebaiknya terjadi:</text>
+  <rect x="20" y="282" width="600" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+</svg>

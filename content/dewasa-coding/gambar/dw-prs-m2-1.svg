@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 440" width="720" height="440" role="img" aria-labelledby="t d">
+  <title id="t">Diagram alir kalkulator patungan dan tabel tiga masukan</title>
+  <desc id="d">Diagram alir: baca tagihan, baca jumlah orang, keputusan orang kurang dari atau sama dengan 0. Bila ya, cetak pesan jumlah orang harus lebih dari 0. Bila tidak, hitung per_orang dan sisa, cetak per_orang, lalu keputusan sisa lebih dari 0 yang bila ya mencetak sisa. Di bawahnya tabel tiga masukan dengan kolom keluaran kosong.</desc>
+  <rect width="720" height="440" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">
+    <rect x="20" y="20" width="130" height="44" rx="6" fill="#fff" stroke="#222222" stroke-width="2"/><text x="85" y="47">baca tagihan</text>
+    <rect x="190" y="20" width="130" height="44" rx="6" fill="#fff" stroke="#222222" stroke-width="2"/><text x="255" y="47">baca orang</text>
+    <path d="M152 42 H188 M180 36 L188 42 L180 48 M322 42 H358 M350 36 L358 42 L350 48" fill="none" stroke="#2a5d9f" stroke-width="2.5"/>
+    <path d="M430 14 L500 42 L430 70 L360 42 Z" fill="#fff" stroke="#222222" stroke-width="2"/><text x="430" y="47">orang &lt;= 0?</text>
+    <path d="M500 42 H560" fill="none" stroke="#b3261e" stroke-width="2.5"/><text x="530" y="34" fill="#b3261e">ya</text>
+    <rect x="562" y="14" width="140" height="56" rx="6" fill="#fff" stroke="#b3261e" stroke-width="2"/><text x="632" y="38">cetak pesan</text><text x="632" y="58">"harus lebih dari 0"</text>
+    <path d="M430 70 V100" fill="none" stroke="#1b7a3d" stroke-width="2.5"/><text x="450" y="90" fill="#1b7a3d" text-anchor="start">tidak</text>
+    <rect x="320" y="100" width="220" height="60" rx="6" fill="#fff" stroke="#222222" stroke-width="2"/><text x="430" y="124">per_orang = tagihan // orang</text><text x="430" y="146">sisa = tagihan % orang</text>
+    <path d="M430 160 V178" fill="none" stroke="#2a5d9f" stroke-width="2.5"/>
+    <rect x="340" y="178" width="180" height="34" rx="6" fill="#fff" stroke="#222222" stroke-width="2"/><text x="430" y="200">cetak per_orang</text>
+    <path d="M430 212 V226" fill="none" stroke="#2a5d9f" stroke-width="2.5"/>
+    <path d="M430 226 L490 248 L430 270 L370 248 Z" fill="#fff" stroke="#222222" stroke-width="2"/><text x="430" y="253">sisa &gt; 0?</text>
+    <path d="M490 248 H540" fill="none" stroke="#1b7a3d" stroke-width="2.5"/><text x="515" y="240" fill="#1b7a3d">ya</text>
+    <rect x="542" y="232" width="130" height="34" rx="6" fill="#fff" stroke="#222222" stroke-width="2"/><text x="607" y="254">cetak sisa</text>
+    <g font-weight="bold">
+      <rect x="20" y="300" width="110" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/><text x="75" y="322">tagihan</text>
+      <rect x="130" y="300" width="110" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/><text x="185" y="322">orang</text>
+      <rect x="240" y="300" width="450" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="2"/><text x="465" y="322">keluaran</text>
+    </g>
+    <g stroke="#222222" stroke-width="2" fill="#fff">
+      <rect x="20" y="334" width="110" height="34"/><rect x="130" y="334" width="110" height="34"/><rect x="240" y="334" width="450" height="34" stroke-dasharray="5 3"/>
+      <rect x="20" y="368" width="110" height="34"/><rect x="130" y="368" width="110" height="34"/><rect x="240" y="368" width="450" height="34" stroke-dasharray="5 3"/>
+      <rect x="20" y="402" width="110" height="34"/><rect x="130" y="402" width="110" height="34"/><rect x="240" y="402" width="450" height="34" stroke-dasharray="5 3"/>
+    </g>
+    <text x="75" y="356">120000</text><text x="185" y="356">4</text>
+    <text x="75" y="390">100000</text><text x="185" y="390">3</text>
+    <text x="75" y="424">100000</text><text x="185" y="424">0</text>
+  </g>
+</svg>

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 340" width="660" height="340" role="img" aria-labelledby="t d">
+  <title id="t">Data kotor sintetis dengan kolom hasil pembersihan kosong</title>
+  <desc id="d">Tabel enam baris data kotor sintetis: id, kategori, tanggal teks, nilai teks. Baris F-002 muncul dua kali. Kolom kategori bersih, nilai angka, dan penanda ganda kosong. Di kanan ada tabel acuan alat-tulis Gudang A dan minuman Gudang B.</desc>
+  <rect width="660" height="340" fill="#ffffff"/>
+  <rect x="10" y="12" width="55" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="37.5" y="34.0" font-family="sans-serif" font-size="13" font-weight="bold" fill="#222222" text-anchor="middle">id</text>
+  <rect x="65" y="12" width="105" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="117.5" y="34.0" font-family="sans-serif" font-size="13" font-weight="bold" fill="#222222" text-anchor="middle">kategori</text>
+  <rect x="170" y="12" width="95" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="217.5" y="34.0" font-family="sans-serif" font-size="13" font-weight="bold" fill="#222222" text-anchor="middle">tanggal</text>
+  <rect x="265" y="12" width="100" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="315.0" y="34.0" font-family="sans-serif" font-size="13" font-weight="bold" fill="#222222" text-anchor="middle">nilai</text>
+  <rect x="365" y="12" width="115" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="422.5" y="34.0" font-family="sans-serif" font-size="13" font-weight="bold" fill="#222222" text-anchor="middle">kategori bersih</text>
+  <rect x="480" y="12" width="90" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="525.0" y="34.0" font-family="sans-serif" font-size="13" font-weight="bold" fill="#222222" text-anchor="middle">nilai angka</text>
+  <rect x="570" y="12" width="80" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="610.0" y="34.0" font-family="sans-serif" font-size="13" font-weight="bold" fill="#222222" text-anchor="middle">ganda?</text>
+  <rect x="10" y="46" width="55" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="37.5" y="68.0" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">F-001</text>
+  <rect x="65" y="46" width="105" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="117.5" y="68.0" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle"> alat-tulis </text>
+  <rect x="170" y="46" width="95" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="217.5" y="68.0" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">05/03/2026</text>
+  <rect x="265" y="46" width="100" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="315.0" y="68.0" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">Rp 125.000</text>
+  <rect x="365" y="46" width="115" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="480" y="46" width="90" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="570" y="46" width="80" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="10" y="80" width="55" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="37.5" y="102.0" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">F-002</text>
+  <rect x="65" y="80" width="105" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="117.5" y="102.0" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">MINUMAN</text>
+  <rect x="170" y="80" width="95" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="217.5" y="102.0" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">12/03/2026</text>
+  <rect x="265" y="80" width="100" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="315.0" y="102.0" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">Rp 80.500</text>
+  <rect x="365" y="80" width="115" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="480" y="80" width="90" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="570" y="80" width="80" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="10" y="114" width="55" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="37.5" y="136.0" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">F-003</text>
+  <rect x="65" y="114" width="105" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="117.5" y="136.0" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">Alat-Tulis</text>
+  <rect x="170" y="114" width="95" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="217.5" y="136.0" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">19/03/2026</text>
+  <rect x="265" y="114" width="100" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="315.0" y="136.0" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">Rp 42.000</text>
+  <rect x="365" y="114" width="115" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="480" y="114" width="90" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="570" y="114" width="80" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="10" y="148" width="55" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="37.5" y="170.0" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">F-004</text>
+  <rect x="65" y="148" width="105" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="117.5" y="170.0" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">minuman </text>
+  <rect x="170" y="148" width="95" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="217.5" y="170.0" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">26/03/2026</text>
+  <rect x="265" y="148" width="100" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="315.0" y="170.0" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">Rp 215.000</text>
+  <rect x="365" y="148" width="115" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="480" y="148" width="90" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="570" y="148" width="80" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="10" y="182" width="55" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="37.5" y="204.0" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">F-005</text>
+  <rect x="65" y="182" width="105" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="117.5" y="204.0" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">makanan</text>
+  <rect x="170" y="182" width="95" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="217.5" y="204.0" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">02/04/2026</text>
+  <rect x="265" y="182" width="100" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="315.0" y="204.0" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">Rp 60.000</text>
+  <rect x="365" y="182" width="115" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="480" y="182" width="90" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="570" y="182" width="80" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="10" y="216" width="55" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="37.5" y="238.0" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">F-002</text>
+  <rect x="65" y="216" width="105" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="117.5" y="238.0" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">MINUMAN</text>
+  <rect x="170" y="216" width="95" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="217.5" y="238.0" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">12/03/2026</text>
+  <rect x="265" y="216" width="100" height="34" rx="0" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="315.0" y="238.0" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">Rp 80.500</text>
+  <rect x="365" y="216" width="115" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="480" y="216" width="90" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <rect x="570" y="216" width="80" height="34" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="10" y="278" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">Tabel acuan:</text>
+  <rect x="130" y="258" width="150" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="205" y="278" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">alat-tulis = Gudang A</text>
+  <rect x="290" y="258" width="150" height="30" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="2"/>
+  <text x="365" y="278" font-family="sans-serif" font-size="13" fill="#222222" text-anchor="middle">minuman = Gudang B</text>
+  <text x="10" y="316" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">Tanda kutip menunjukkan spasi: ' alat-tulis ' punya spasi di awal dan akhir.</text>
+</svg>

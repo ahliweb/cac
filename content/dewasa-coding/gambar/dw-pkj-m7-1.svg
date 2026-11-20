@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" width="640" height="360" role="img" aria-labelledby="t d">
+  <title id="t">Bingkai grafik batang kosong untuk penjualan enam bulan</title>
+  <desc id="d">Bingkai grafik kosong dengan sumbu tegak 0 sampai 140.000 rupiah. Di bawah sumbu mendatar enam bulan Jan sampai Jun dengan total sintetis 118000, 121500, 119000, 124500, 123000, 126000. Di bawahnya tiga kotak kosong untuk persen kenaikan, bulan tertinggi, dan bulan terendah.</desc>
+  <rect width="640" height="360" fill="#ffffff"/>
+  <text x="20" y="22" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">Rupiah (data sintetis)</text>
+  <line x1="90" y1="34" x2="90" y2="230" stroke="#222222" stroke-width="2"/>
+  <line x1="90" y1="230" x2="620" y2="230" stroke="#222222" stroke-width="2"/>
+  <line x1="86" y1="230.0" x2="94" y2="230.0" stroke="#222222" stroke-width="2"/>
+  <text x="82" y="235.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="end">0</text>
+  <line x1="94" y1="230.0" x2="620" y2="230.0" stroke="#b3b3b3" stroke-width="1" stroke-dasharray="6 4"/>
+  <line x1="86" y1="181.0" x2="94" y2="181.0" stroke="#222222" stroke-width="2"/>
+  <text x="82" y="186.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="end">35.000</text>
+  <line x1="94" y1="181.0" x2="620" y2="181.0" stroke="#b3b3b3" stroke-width="1" stroke-dasharray="6 4"/>
+  <line x1="86" y1="132.0" x2="94" y2="132.0" stroke="#222222" stroke-width="2"/>
+  <text x="82" y="137.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="end">70.000</text>
+  <line x1="94" y1="132.0" x2="620" y2="132.0" stroke="#b3b3b3" stroke-width="1" stroke-dasharray="6 4"/>
+  <line x1="86" y1="83.0" x2="94" y2="83.0" stroke="#222222" stroke-width="2"/>
+  <text x="82" y="88.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="end">105.000</text>
+  <line x1="94" y1="83.0" x2="620" y2="83.0" stroke="#b3b3b3" stroke-width="1" stroke-dasharray="6 4"/>
+  <line x1="86" y1="34.0" x2="94" y2="34.0" stroke="#222222" stroke-width="2"/>
+  <text x="82" y="39.0" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="end">140.000</text>
+  <line x1="94" y1="34.0" x2="620" y2="34.0" stroke="#b3b3b3" stroke-width="1" stroke-dasharray="6 4"/>
+  <text x="130" y="250" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Jan</text>
+  <text x="130" y="268" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">118000</text>
+  <text x="215" y="250" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Feb</text>
+  <text x="215" y="268" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">121500</text>
+  <text x="300" y="250" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Mar</text>
+  <text x="300" y="268" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">119000</text>
+  <text x="385" y="250" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Apr</text>
+  <text x="385" y="268" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">124500</text>
+  <text x="470" y="250" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Mei</text>
+  <text x="470" y="268" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">123000</text>
+  <text x="555" y="250" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">Jun</text>
+  <text x="555" y="268" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="middle">126000</text>
+  <text x="20" y="300" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">Persen kenaikan Jan ke Jun:</text>
+  <rect x="240" y="281" width="90" height="28" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="350" y="300" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">Tertinggi:</text>
+  <rect x="430" y="281" width="70" height="28" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="510" y="300" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222" text-anchor="start">Terendah:</text>
+  <rect x="585" y="281" width="45" height="28" rx="0" fill="#f2f2f2" stroke="#222222" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="20" y="340" font-family="sans-serif" font-size="14" fill="#222222" text-anchor="start">Gambar batang enam bulan; sumbu dari nol.</text>
+</svg>

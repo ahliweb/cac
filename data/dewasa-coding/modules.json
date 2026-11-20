@@ -33,6 +33,8 @@
       "prerequisites": [],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-fnd-m1.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-fnd-m1.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -55,6 +57,8 @@
       "prerequisites": ["dw-fnd-m1"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-pkj-m1.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-pkj-m1.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -89,6 +93,8 @@
       "prerequisites": ["dw-pkj-m1"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-pkj-m2.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-pkj-m2.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -123,6 +129,8 @@
       "prerequisites": ["dw-pkj-m2"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-pkj-m3.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-pkj-m3.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -153,6 +161,8 @@
       "prerequisites": ["dw-pkj-m3"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-pkj-m4.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-pkj-m4.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -187,6 +197,8 @@
       "prerequisites": ["dw-pkj-m4"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-pkj-m5.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-pkj-m5.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -221,6 +233,8 @@
       "prerequisites": ["dw-pkj-m5"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-pkj-m6.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-pkj-m6.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -251,6 +265,8 @@
       "prerequisites": ["dw-pkj-m6"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-pkj-m7.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-pkj-m7.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -281,6 +297,8 @@
       "prerequisites": ["dw-pkj-m7"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-pkj-m8.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-pkj-m8.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -315,6 +333,8 @@
       "prerequisites": ["dw-fnd-m1"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-pro-m1.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-pro-m1.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -341,6 +361,8 @@
       "prerequisites": ["dw-pro-m1"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-pro-m2.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-pro-m2.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -371,6 +393,8 @@
       "prerequisites": ["dw-pro-m2"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-pro-m3.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-pro-m3.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -405,6 +429,8 @@
       "prerequisites": ["dw-pro-m3"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-pro-m4.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-pro-m4.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -435,6 +461,8 @@
       "prerequisites": ["dw-pro-m4"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-pro-m5.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-pro-m5.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -483,6 +511,8 @@
       "prerequisites": ["dw-pro-m5"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-pro-m13.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-pro-m13.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -513,6 +543,8 @@
       "prerequisites": ["dw-pro-m13"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-pro-m6.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-pro-m6.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -547,6 +579,8 @@
       "prerequisites": ["dw-pro-m6"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-pro-m7.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-pro-m7.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -589,6 +623,8 @@
       "prerequisites": ["dw-pro-m7"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-pro-m8.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-pro-m8.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -623,6 +659,8 @@
       "prerequisites": ["dw-pro-m8"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-pro-m9.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-pro-m9.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -657,6 +695,8 @@
       "prerequisites": ["dw-pro-m9"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-pro-m10.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-pro-m10.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -691,6 +731,8 @@
       "prerequisites": ["dw-pro-m10"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-pro-m11.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-pro-m11.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -725,6 +767,8 @@
       "prerequisites": ["dw-pro-m11"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-pro-m12.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-pro-m12.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -747,6 +791,8 @@
       "prerequisites": ["dw-fnd-m1"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-prs-m1.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-prs-m1.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -777,6 +823,8 @@
       "prerequisites": ["dw-prs-m1"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-prs-m2.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-prs-m2.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -807,6 +855,8 @@
       "prerequisites": ["dw-prs-m2"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-prs-m3.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-prs-m3.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -837,6 +887,8 @@
       "prerequisites": ["dw-prs-m3"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-prs-m4.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-prs-m4.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -867,6 +919,8 @@
       "prerequisites": ["dw-prs-m4"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-prs-m5.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-prs-m5.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -897,6 +951,8 @@
       "prerequisites": ["dw-prs-m5"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-prs-m6.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-prs-m6.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -919,6 +975,8 @@
       "prerequisites": ["dw-fnd-m1"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-bis-m1.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-bis-m1.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -957,6 +1015,8 @@
       "prerequisites": ["dw-bis-m1"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-bis-m2.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-bis-m2.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -991,6 +1051,8 @@
       "prerequisites": ["dw-bis-m2"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-bis-m3.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-bis-m3.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1029,6 +1091,8 @@
       "prerequisites": ["dw-bis-m3"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-bis-m4.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-bis-m4.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1059,6 +1123,8 @@
       "prerequisites": ["dw-bis-m4"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-bis-m5.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-bis-m5.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1085,6 +1151,8 @@
       "prerequisites": ["dw-bis-m5"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-bis-m6.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-bis-m6.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1111,6 +1179,8 @@
       "prerequisites": ["dw-bis-m6"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-bis-m7.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-bis-m7.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"
@@ -1137,6 +1207,8 @@
       "prerequisites": ["dw-bis-m7"],
       "audience": "peserta",
       "contentPath": "content/dewasa-coding/modules/dw-bis-m8.md",
+      "learnerSheetPath": "content/dewasa-coding/lembar/dw-bis-m8.md",
+      "learnerSheetStatus": "draf",
       "review": {
         "approvedOn": "2026-11-20",
         "reviewerRole": "pemilik program"

@@ -49,10 +49,10 @@ export const dwModuleTrackSchema = z
   .describe('"PKJ", "PRO", "PRS", "BIS" or "FND" (the shared module).');
 
 /**
- * Whether every `dewasa-coding` module must have a worksheet (`learnerSheetPath`, ADR-0011). `false` until the
- * programme's worksheets are written; a later per-programme change flips it.
+ * Whether every `dewasa-coding` module must have a worksheet (`learnerSheetPath`, ADR-0011). `true` since every
+ * `dewasa-coding` module has a worksheet (#286).
  */
-export const DW_LEARNER_SHEET_REQUIRED = false;
+export const DW_LEARNER_SHEET_REQUIRED = true;
 
 /** One `dewasa-coding` module-index entry. */
 export const dwLearningModuleSchema = z

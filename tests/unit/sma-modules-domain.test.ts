@@ -14,6 +14,7 @@ import type { CorpusEntry, CorpusSource } from "../../src/domain/corpus-audit";
 import { moduleFindings, parseModulesIndex } from "../../src/domain/modules";
 import { auditSmaCorpus } from "../../src/domain/sma-corpus-audit";
 import { renderModule } from "../../src/render/module";
+import { withSheet } from "../helpers/program-module-entries";
 
 const REPO_ROOT = join(import.meta.dir, "..", "..");
 const SMA_DIR = join(REPO_ROOT, "data", "sma-coding");
@@ -25,7 +26,8 @@ const REFERENCE = {
 
 function entry(overrides: Record<string, unknown> = {}): Record<string, unknown> {
   const id = (overrides.id as string | undefined) ?? "contoh";
-  return {
+  // with the worksheet of its final id, so it is valid whatever SMA_LEARNER_SHEET_REQUIRED is (ADR-0011)
+  return withSheet("sma-coding", {
     id: "contoh",
     title: "Contoh",
     cpItems: ["E-BK-a"],
@@ -39,7 +41,7 @@ function entry(overrides: Record<string, unknown> = {}): Record<string, unknown>
     references: [REFERENCE],
     contentPath: `content/sma-coding/modules/${id}.md`,
     ...overrides,
-  };
+  });
 }
 
 let base: CorpusSource;
@@ -267,13 +269,21 @@ describe("sma-coding module content and loader", () => {
   beforeEach(async () => {
     repo = await mkdtemp(join(tmpdir(), "osn-sma-modul-"));
     await mkdir(join(repo, "content", "sma-coding", "modules"), { recursive: true });
+    await mkdir(join(repo, "content", "sma-coding", "lembar"), { recursive: true });
   });
+
+  // a non-empty worksheet next to the body, so that only the body is under test (ADR-0011)
+  const sheetOf = (id: string) =>
+    writeFile(join(repo, `content/sma-coding/lembar/${id}.md`), "**Ingat dulu:** isi\n");
   afterEach(async () => {
     await rm(repo, { recursive: true, force: true });
   });
 
   test("moduleContentFindings flags a missing and a blank body", async () => {
     await writeFile(join(repo, "content/sma-coding/modules/kosong.md"), "  \n");
+    for (const id of ["hilang", "kosong", "ada"]) {
+      await sheetOf(id);
+    }
     const source = sourceWith(
       index(
         entry({ id: "hilang", contentPath: "content/sma-coding/modules/hilang.md" }),
@@ -302,6 +312,7 @@ describe("sma-coding module content and loader", () => {
 
   test("loadModule loads an sma-coding module and renders it with the DRAF banner and its references", async () => {
     await writeFile(join(repo, "content/sma-coding/modules/contoh.md"), "## Isi\n\nTeks.\n");
+    await sheetOf("contoh");
     const dir = await corpusDir([entry()]);
     const loaded = await loadModule(dir, "contoh", repo, "sma-coding");
     if (!loaded.ok) {

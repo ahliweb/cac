@@ -9,7 +9,13 @@
 
 import { afterAll, beforeAll, describe, expect, test } from "bun:test";
 import { rm } from "node:fs/promises";
-import { dw, kul, sd, smp, tk } from "../helpers/program-module-entries";
+import {
+  dwSheeted as dw,
+  kulSheeted as kul,
+  sd,
+  smpSheeted as smp,
+  tk,
+} from "../helpers/program-module-entries";
 import { createProgramModulesRepo, type ProgramModulesRepo } from "../helpers/program-modules-repo";
 
 let repo: ProgramModulesRepo;
@@ -30,14 +36,17 @@ interface Scenario {
   /** An invalid index (with its content files written) and what `osn validate` must say. */
   readonly bad: Entry[];
   readonly fragments: readonly string[];
-  /** Whether the entries are learner-sheet programmes. */
+  /** Whether the entries carry a sheet (tk/sd: the child's sheet; the others: an own-status worksheet). */
   readonly sheets: boolean;
+  /** Whether the sheet has its own status (ADR-0011): smp, kuliah, dewasa. */
+  readonly ownStatus: boolean;
 }
 
 const SCENARIOS: readonly Scenario[] = [
   {
     program: "tk-coding",
     sheets: true,
+    ownStatus: false,
     valid: [
       tk("TK-A1-M1", { cpOverlap: ["FF-DL-b"] }),
       tk("TK-A1-M2", { prerequisites: ["tk-a1-m1"] }),
@@ -55,6 +64,7 @@ const SCENARIOS: readonly Scenario[] = [
   {
     program: "sd-coding",
     sheets: true,
+    ownStatus: false,
     valid: [sd("SD5-1-M3", { cpItems: ["C-BK-a"] }), sd("SD1-1-M1")],
     bad: [
       sd("SD5-1-M3", { cpItems: ["C-LD-a"], prerequisites: ["sd1-1-m1"] }),
@@ -70,7 +80,8 @@ const SCENARIOS: readonly Scenario[] = [
   },
   {
     program: "smp-coding",
-    sheets: false,
+    sheets: true,
+    ownStatus: true,
     valid: [smp("SMP7-1-M1", { cpCodes: ["D-BK-a"] }), smp("SMP8-2-M2")],
     bad: [
       smp("SMP7-1-M1", { cpCodes: ["D-LD-a"] }),
@@ -86,7 +97,8 @@ const SCENARIOS: readonly Scenario[] = [
   },
   {
     program: "kuliah-coding",
-    sheets: false,
+    sheets: true,
+    ownStatus: true,
     valid: [
       kul("KUL-U-101", { knowledgeAreas: ["SDF", "AL"] }),
       kul("KUL-U-102", { semester: "S2", prerequisites: ["kul-u-101"] }),
@@ -105,7 +117,8 @@ const SCENARIOS: readonly Scenario[] = [
   },
   {
     program: "dewasa-coding",
-    sheets: false,
+    sheets: true,
+    ownStatus: true,
     valid: [
       dw("DW-FND-M1"),
       dw("DW-PRO-M1", {
@@ -239,12 +252,14 @@ describe("osn validate --program <id> with a module index", () => {
       };
     };
 
-    for (const scenario of SCENARIOS.filter((s) => !s.sheets)) {
+    for (const scenario of SCENARIOS.filter((s) => s.ownStatus)) {
       test(`${scenario.program}: a draft worksheet is clean, a bad one is checked like TK/SD`, async () => {
         const entry = sheetEntry(scenario);
         const path = String(entry.learnerSheetPath);
         await repo.setIndex(scenario.program, [entry]);
         await repo.write(String(entry.contentPath), "## Isi\n\nTeks.\n");
+        // the copy may hold the repository's real sheet for this id; the first case needs it absent
+        await rm(`${repo.root}/${path}`, { force: true });
 
         // missing
         expect((await repo.cli("validate", "--program", scenario.program)).stdout).toContain(
