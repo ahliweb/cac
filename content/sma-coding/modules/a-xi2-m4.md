@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur A (Algoritmik dengan C++), minggu `A-XI2-M4` silabus v1.4.1: DP pada string, bagian pengayaan. Prasyarat: modul `a-xi2-m3` (knapsack 0/1, tabel dua dimensi) dan `a-x2-m2` (string).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-AP-a`, `F-AP-b`, dan `F-BK-b` dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan. Keluarga materi OSN yang bertaut: `strategi-problem-solving`. Topik minggu ini ditandai pengayaan (P) di silabus: seluruh modul ini boleh dilewati oleh kelas reguler dan dikerjakan murid yang menuju OSN; modul berikutnya tidak bergantung padanya. Modul tidak menjanjikan kedalaman soal OSN.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-AP-a`, `F-AP-b`, dan `F-BK-b` dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul. Keluarga materi OSN yang bertaut: `strategi-problem-solving`. Topik minggu ini ditandai pengayaan (P) di silabus: seluruh modul ini boleh dilewati oleh kelas reguler dan dikerjakan murid yang menuju OSN; modul berikutnya tidak bergantung padanya. Modul tidak menjanjikan kedalaman soal OSN.
 
 Tiap soal latihan bertanda `AI: boleh` atau `AI: tanpa AI`. Masukan program diberikan lewat berkas: `./program < masukan.txt`. Semua data karangan.
 

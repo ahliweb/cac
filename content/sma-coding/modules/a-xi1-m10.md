@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur A (Algoritmik dengan C++), minggu `A-XI1-M10` silabus v1.4.1: antrian prioritas (heap) dengan `priority_queue`. Prasyarat: modul `a-xi1-m9` (`pair`, `set`, `map`) dan `a-x2-m7` (tumpukan dan antrian).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-AP-a`, `F-AP-b`, `F-AP-d`, dan `F-BK-c` dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan. Keluarga materi OSN yang bertaut: `struktur-data`; heap ditandai pengayaan (P) di jembatan OSN, sehingga bagian `Pengayaan (P)` (cara kerja heap di dalam larik) boleh dilewati oleh kelas reguler. Memakai `priority_queue` sendiri tetap bagian modul. Modul ini tidak menjanjikan kedalaman soal OSN.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-AP-a`, `F-AP-b`, `F-AP-d`, dan `F-BK-c` dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul. Keluarga materi OSN yang bertaut: `struktur-data`; heap ditandai pengayaan (P) di jembatan OSN, sehingga bagian `Pengayaan (P)` (cara kerja heap di dalam larik) boleh dilewati oleh kelas reguler. Memakai `priority_queue` sendiri tetap bagian modul. Modul ini tidak menjanjikan kedalaman soal OSN.
 
 Tiap soal latihan bertanda `AI: boleh` atau `AI: tanpa AI`. Masukan program diberikan lewat berkas: `./program < masukan.txt`. Semua data karangan.
 

@@ -1,6 +1,6 @@
 ## Untuk siapa modul ini
 
-Modul ini untuk siswa SMA reguler kelas X yang ingin tahu bagaimana teks, gambar, dan suara disimpan sebagai bit. Ia bagian dari seri Matematika Komputasi Dasar dan berstatus DRAF: karangan penyusun, belum disetujui pemilik, dan tidak dihitung sebagai pemenuhan butir capaian pembelajaran. Topiknya berdekatan dengan pengolahan media digital (butir F-LD-f), tetapi tidak dihitung sebagai pemenuhannya.
+Modul ini untuk siswa SMA reguler kelas X yang ingin tahu bagaimana teks, gambar, dan suara disimpan sebagai bit. Ia bagian dari seri Matematika Komputasi Dasar dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi); isinya karangan penyusun, dan tidak dihitung sebagai pemenuhan butir capaian pembelajaran. Topiknya berdekatan dengan pengolahan media digital (butir F-LD-f), tetapi tidak dihitung sebagai pemenuhannya.
 
 Prasyarat: pengantar representasi data di `FND-X1-M3` (teks sebagai kode karakter, gambar sebagai kisi piksel, warna RGB) dan modul `matkom-sistem-bilangan-basis` (basis 2 dan 16).
 

@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XII1-M11` silabus v1.4.1: dokumentasi dan lisensi. Prasyarat: modul `b-xii1-m10` dan fondasi `FND-X1-M2` (perangkat lunak, berkas, dan lisensi).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Silabus tidak memetakan butir capaian pembelajaran pada minggu ini. Bagian lisensi **bukan nasihat hukum**; pertanyaan lisensi yang sebenarnya kamu bawa ke gurumu.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Silabus tidak memetakan butir capaian pembelajaran pada minggu ini. Bagian lisensi **bukan nasihat hukum**; pertanyaan lisensi yang sebenarnya kamu bawa ke gurumu.
 
 **Konteks semester ini.** Kelasmu mengkustomisasi profil `landing` dari `awcms-one` sebagai studi kasus: kamu hanya mengubah merek, konten, tema, SEO, dan dokumentasi, tanpa menyentuh backend. Fakta `awcms-one` dibaca dari repositori publiknya (`main`, 2026-11-20). Contoh dijalankan penyusun dengan Bun 1.4.4 per 2026-11 pada salinan sementara repositori turunan, tanpa akun. Baca-dan-prediksi `AI: tanpa AI`; selain itu AI boleh dipakai dengan etika, tanpa data pribadi atau rahasia.
 

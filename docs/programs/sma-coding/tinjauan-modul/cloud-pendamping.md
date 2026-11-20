@@ -1,9 +1,10 @@
 # Tinjauan Ilmiah 16 Modul Draf `sma-coding`: Seri Cloud dan Modul Pendamping
 
-- **Version:** v0.2.0
-- **Last updated:** 2026-11-19
-- **Status:** **DRAF** (tinjauan penyusun untuk pemilik, issue #125). Bukan persetujuan. Semua modul yang ditinjau tetap berstatus `draf` di `data/sma-coding/modules.json` (juga setelah revisi); hanya pemilik yang dapat menetapkan `disetujui` ([ADR-0007](../../../architecture/adr/0007-authored-learning-content.md)).
+- **Version:** v0.3.0
+- **Last updated:** 2026-11-20
+- **Status:** **DRAF** (tinjauan penyusun untuk pemilik, issue #125). Bukan persetujuan. Laporan ini tidak mengubah status modul. Keadaan saat laporan ditulis (2026-11-19): semua modul yang ditinjau `draf` (juga setelah revisi). Pada 2026-11-20 pemilik menyetujui seluruh 753 modul enam program coding, termasuk 16 modul ini, lewat dialog pilihan baku ("Setujui semua, catatan jadi tindak lanjut", #125), sehingga kalimat "tetap `draf`" di bawah adalah riwayat; hanya pemilik yang dapat menetapkan `disetujui` ([ADR-0007](../../../architecture/adr/0007-authored-learning-content.md)).
 - **Changelog:**
+  - v0.3.0 (2026-11-20): catatan status persetujuan pemilik atas 753 modul (#125); isi tinjauan tidak berubah.
   - v0.2.0 (2026-11-19): ditambah kolom "Status setelah revisi" pada tabel bagian 4 dan bagian 8 (apa yang diperbaiki per modul, label `K` atau `M` tiap unsur ilmiah, dan sisa yang menjadi milik pemilik). Isi bagian 1 sampai 7 menggambarkan keadaan sebelum revisi dan tidak diubah, kecuali satu baris di bagian 6.
   - v0.1.0 (2026-11-19): tinjauan awal atas keadaan modul di `main` 8cdd753 (sebelum revisi). Metode, tabel ringkas, temuan rinci per modul, dan keputusan yang tetap milik pemilik.
 

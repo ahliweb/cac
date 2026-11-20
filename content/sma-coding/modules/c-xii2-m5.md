@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur C (IoT dan robotika), minggu `C-XII2-M5` silabus v1.4: proyek akhir, rancangan. Prasyarat: modul `c-xii2-m4` (ulasan keamanan dan privasi). Kamu memakai rencana proyek dari `C-XII1-M13`, ulasan keamanan minggu lalu, dan lembar pemodelan dari `c-xii2-m3`; `C-XII1-M13` belum terindeks saat modul ini ditulis.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-BK-a` (alur proses pengembangan program atau produk digital) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: dokumen rancangan. Latihan silabusnya: memilih topik. Rancangan ini dipakai pada `C-XII2-M6` sampai `C-XII2-M13`.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-BK-a` (alur proses pengembangan program atau produk digital) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: dokumen rancangan. Latihan silabusnya: memilih topik. Rancangan ini dipakai pada `C-XII2-M6` sampai `C-XII2-M13`.
 
 Minggu ini kerja di kertas dan komputer, dalam kelompok kecil dengan peran tertentu. Keselamatan perangkat: rancangan menentukan keselamatan nanti, jadi tulis batas daya (USB atau baterai AA/AAA dari guru, tanpa listrik jaringan 220 V, tanpa baterai litium tanpa pelindung, tanpa solder). Proyek akhir tidak mengumpulkan data pribadi nyata.
 

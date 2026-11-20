@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur C (IoT dan robotika), minggu `C-XI1-M3` silabus v1.3: tipe data bentukan. Prasyarat: modul `c-xi1-m2` (kualitas kode dan pengujian) dan `c-x1-m12` (fungsi dan larik). Kamu juga memakai penyangga dari `c-x2-m9` dan pemeriksaan data dari `c-x2-m12`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-BK-c` (memilih solusi terbaik dengan struktur data yang lebih kompleks dan abstrak) dan `F-AP-b` (program terstruktur berdasarkan strategi algoritmik) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: modul data. Latihan silabusnya: `struct Pembacaan`.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-BK-c` (memilih solusi terbaik dengan struktur data yang lebih kompleks dan abstrak) dan `F-AP-b` (program terstruktur berdasarkan strategi algoritmik) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: modul data. Latihan silabusnya: `struct Pembacaan`.
 
 Minggu ini tidak bertanda (F): semua bagian pokok dikerjakan **tanpa papan**, dengan kertas dan program C++ biasa di komputer. Bila kamu mencoba dengan papan, ikuti aturan keselamatan modul sebelumnya (daya USB saja, cabut kabel sebelum mengubah rangkaian). Nomor pin dan rumus suhu pada contoh Arduino hanya contoh `[belum terverifikasi]` untuk papanmu. Data pada contoh adalah karangan.
 

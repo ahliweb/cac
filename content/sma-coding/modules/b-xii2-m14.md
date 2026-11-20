@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XII2-M14` silabus v1.4.1: asesmen yang menilai seluruh jalur. Prasyarat formal: modul `b-xii1-m12`; modul ini menilai seluruh `b-xii2-m1` sampai `b-xii2-m13`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik, dan tidak dihitung sebagai pemenuhan butir capaian pembelajaran. Asesmen ini **tanpa AI**: jangan memakai AI generatif saat mengerjakannya (silabus 7.4), karena tujuannya melihat apa yang bisa kamu selesaikan sendiri. Bobot nilai dan predikat mengikuti kebijakan sekolah `[belum terverifikasi]`; modul ini hanya memberi soal dan kunci latihan.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi), dan tidak dihitung sebagai pemenuhan butir capaian pembelajaran. Asesmen ini **tanpa AI**: jangan memakai AI generatif saat mengerjakannya (silabus 7.4), karena tujuannya melihat apa yang bisa kamu selesaikan sendiri. Bobot nilai dan predikat mengikuti kebijakan sekolah `[belum terverifikasi]`; modul ini hanya memberi soal dan kunci latihan.
 
 Bagian praktik dikerjakan di komputer dengan Bun (1.4.4 dipakai penyusun per 2026-11) dan Git, di `localhost`, tanpa akun dan tanpa layanan luar. Data dan nama di soal karangan; konteksnya proyek kustomisasi profil `landing` dari `awcms-one` (`main`, 2026-11-20).
 

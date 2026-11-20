@@ -1,20 +1,23 @@
-# Catatan Tinjauan Modul Draf untuk Peninjau Manusia
+# Catatan Tinjauan Modul: Tindak Lanjut Revisi
 
-- **Version:** v0.3.0
+- **Version:** v0.4.0
 - **Last updated:** 2026-11-20
-- **Status:** **DRAF** (catatan kerja untuk peninjau manusia, bukan keputusan pemilik dan bukan persetujuan modul apa pun). Konten karangan menurut [ADR-0007](../architecture/adr/0007-authored-learning-content.md). Tidak mengubah silabus, korpus, atau isi modul.
-- **Changeset:** `.changeset/sinkron-dokumen-modul-belajar.md` (patch): dokumen baru, sinkron dokumen modul belajar enam program (#124); `.changeset/modul-ab-p6.md` (patch): butir jalur A dan B (#237); `.changeset/jalur-b-keputusan-269.md` (patch): keputusan pemilik butir 14 dan 15 (#269).
+- **Status:** **DRAF** (catatan kerja tindak lanjut revisi; dokumen ini sendiri bukan keputusan pemilik dan bukan bukti tinjauan modul apa pun, sedangkan persetujuan 753 modul dicatat di `data/<program>/modules.json`). Konten karangan menurut [ADR-0007](../architecture/adr/0007-authored-learning-content.md). Tidak mengubah silabus, korpus, atau isi modul.
+- **Changeset:** `.changeset/sinkron-dokumen-modul-belajar.md` (patch): dokumen baru, sinkron dokumen modul belajar enam program (#124); `.changeset/modul-ab-p6.md` (patch): butir jalur A dan B (#237); `.changeset/jalur-b-keputusan-269.md` (patch): keputusan pemilik butir 14 dan 15 (#269); `.changeset/persetujuan-modul-125.md` (minor): persetujuan 753 modul oleh pemilik (#125).
 
-> **DRAF, bukan keputusan pemilik.** Dokumen ini mengumpulkan butir yang
-> **diketahui** perlu dicek manusia pada modul draf, supaya tinjauan
-> ([#125](https://github.com/ahliweb/osn/issues/125)) dan penulisan modul
-> baru tidak mengulang pencarian. Daftarnya **tidak lengkap**: modul yang tidak
-> disebut di sini tetap belum ditinjau. Seluruh 753 modul enam program coding
-> berstatus `draf` per 2026-11-20. Agent tidak pernah mengubah status modul
-> menjadi `ditinjau` atau `disetujui` dan tidak mencatat persetujuan atas nama
-> pemilik. Butir yang berakhir pada keputusan (perubahan silabus, tingkat AI,
-> aturan permainan) adalah hak pemilik; peninjau hanya memeriksa dan
-> melaporkan.
+> **Tindak lanjut revisi pascapersetujuan.** Pada 2026-11-20 pemilik
+> program memilih "Setujui semua, catatan jadi tindak lanjut" lewat dialog
+> pilihan baku: seluruh 753 modul enam program coding berstatus `disetujui`
+> ([#125](https://github.com/ahliweb/osn/issues/125)). Persetujuan itu
+> keputusan pemilik; agent hanya mencatatnya dan **tidak** mengklaim tinjauan
+> manusia atas isi tiap modul. Dokumen ini mengumpulkan butir yang
+> **diketahui** perlu dicek manusia, kini sebagai **tindak lanjut revisi**:
+> butirnya tidak dihapus dan tidak ditandai selesai, dan penanda
+> `[belum terverifikasi]` di modul tetap berlaku. Daftarnya **tidak lengkap**:
+> modul yang tidak disebut di sini belum pernah diperiksa butir demi butir.
+> Status modul dapat ditarik (`ditarik`) bila revisi menuntutnya. Butir yang
+> berakhir pada keputusan (perubahan silabus, tingkat AI, aturan permainan)
+> adalah hak pemilik; peninjau hanya memeriksa dan melaporkan.
 
 ## 0. Cara memakai catatan ini
 
@@ -24,10 +27,10 @@
 - Daftar periksa umum tinjauan (fakta bertanggal, regulasi, unsur ilmiah,
   kode dijalankan, tanpa data pribadi, kebijakan AI per program) ada di
   [`docs/panduan/pemilik-peninjau.md`](../panduan/pemilik-peninjau.md), bagian
-  "Meninjau modul draf".
+  "Meninjau modul".
 - Membaca modul: `osn render modul --program <id-program> --id <id-modul>`
   (tambahkan `--lembar` untuk lembar anak `tk-coding` dan `sd-coding`).
-- Modul draf berspanduk `DRAF`; hapus spanduk itu hanya lewat siklus ulas
+- Modul yang tidak berstatus `disetujui` berspanduk `DRAF`; ubah status hanya lewat siklus ulas
   ADR-0007 oleh manusia.
 
 ## 1. Nama blok dan menu belum dicocokkan ke dokumentasi resmi
@@ -94,6 +97,7 @@ tinjauan; catatan ini bukan bukti bahwa modul sudah ditinjau.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v0.4.0 | 2026-11-20 | Pemilik menyetujui 753 modul enam program coding lewat dialog pilihan baku ("Setujui semua, catatan jadi tindak lanjut", #125); dokumen menjadi daftar tindak lanjut revisi, 16 butir dan penanda `[belum terverifikasi]` tetap terbuka. |
 | v0.3.0 | 2026-11-20 | Butir 14 dan 15 mencatat keputusan pemilik 2026-11-20 (formulir kontak di situs; cadangan tanpa Docker boleh dengan batas jelas; temuan kontras footer dilaporkan ke `awcms-one`) dan tindak lanjutnya (#269). Tidak ada butir yang ditandai selesai. |
 | v0.2.0 | 2026-11-20 | Butir 12 dan 13 diperbarui setelah 154 modul draf jalur A dan B ditulis (#237); butir baru 14 (`b-xii2-m5` tanpa formulir pada profil `landing`), 15 (fakta `awcms-one` jalur B dan dua keputusan pemilik yang terbuka), 16 (pasal hukum `b-xi2-m10` dan `b-xii2-m10`). Tidak ada butir yang ditandai selesai. |
 | v0.1.0 | 2026-11-19 | Dokumen pertama (#124, #125): 13 butir tinjauan yang sudah diketahui untuk modul draf enam program. |

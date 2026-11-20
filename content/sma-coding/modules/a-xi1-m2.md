@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur A (Algoritmik dengan C++), minggu `A-XI1-M2` silabus v1.4.1: kualitas kode dan pengujian. Prasyarat: modul `a-xi1-m1` (proses rekayasa program). Kamu akan menulis kasus uji dan menjaga agar kodemu mudah dibaca dan diubah.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-AP-c` dan `F-BK-a` dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan. Tidak ada keluarga materi OSN yang dipetakan untuk minggu ini.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-AP-c` dan `F-BK-a` dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul. Tidak ada keluarga materi OSN yang dipetakan untuk minggu ini.
 
 Bila kamu pernah memakai Python: pengujian di sini sama gagasannya dengan menulis beberapa pemanggilan fungsi dan membandingkan hasilnya, hanya tanpa pustaka tambahan. Tiap soal latihan bertanda `AI: boleh` atau `AI: tanpa AI`. Masukan program diberikan lewat berkas: `./program < masukan.txt`.
 

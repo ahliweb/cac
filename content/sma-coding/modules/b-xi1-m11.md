@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XI1-M11` silabus v1.4.1: kualitas kode. Prasyarat: modul `b-xi1-m10` (efisiensi) dan `b-xi1-m7` (pengujian dengan `bun test`).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-AP-c` (pemeliharaan dan kualitas kode) dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan butir itu.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-AP-c` (pemeliharaan dan kualitas kode) dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul.
 
 Contoh dijalankan penyusun dengan Bun 1.4.4, TypeScript 7.0.2, dan Biome 2.6.8 per 2026-11. Biome dipasang dari registri paket publik dengan `bun add -d @biomejs/biome`: tidak ada akun, tetapi perlu jaringan sekali; gurumu dapat menyiapkan paketnya lebih dulu. Pesan Biome dan nomor versi di komputermu bisa sedikit berbeda. Tugas baca-dan-prediksi ditandai `AI: tanpa AI`; selain itu AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu.
 

@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur A (Algoritmik dengan C++), minggu `A-XII2-M4` silabus v1.4.1: backtracking dan pruning lanjutan, yaitu memangkas ruang pencarian dengan cerdas. Prasyarat: modul `a-xii2-m3` (memodelkan masalah) dan `a-xi1-m11` (backtracking).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Silabus tidak memetakan butir capaian pembelajaran untuk minggu ini, jadi modul ini tidak dihitung memenuhi butir CP apa pun. Keluarga materi OSN yang bertaut: `rekursi` (rekursi, divide-and-conquer, backtracking); jembatan OSN tidak menandainya pengayaan, sehingga modul ini tak punya bagian `Pengayaan (P)`. Modul tidak menjanjikan kedalaman soal OSN dan tidak menggantikan pembinaan OSN.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Silabus tidak memetakan butir capaian pembelajaran untuk minggu ini, jadi modul ini tidak dihitung memenuhi butir CP apa pun. Keluarga materi OSN yang bertaut: `rekursi` (rekursi, divide-and-conquer, backtracking); jembatan OSN tidak menandainya pengayaan, sehingga modul ini tak punya bagian `Pengayaan (P)`. Modul tidak menjanjikan kedalaman soal OSN dan tidak menggantikan pembinaan OSN.
 
 Tiap soal latihan bertanda `AI: boleh` atau `AI: tanpa AI`. Masukan program diberikan lewat berkas: `./program < masukan.txt`. Semua soal karangan.
 

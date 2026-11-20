@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas X jalur A (Algoritmik dengan C++), minggu `A-X2-M7` silabus v1.4.1: struktur data tumpukan (stack) dan antrian (queue). Prasyarat: modul `a-x2-m6` (`vector`). Kamu tidak perlu pernah memprogram sebelum jalur ini.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `E-BK-a` dan `E-BK-c` dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan. Keluarga materi OSN yang bertaut: `struktur-data` (stack dan queue sesuai CP, bukan pengayaan).
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `E-BK-a` dan `E-BK-c` dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul. Keluarga materi OSN yang bertaut: `struktur-data` (stack dan queue sesuai CP, bukan pengayaan).
 
 Bila kamu pernah memakai Python: kamu mungkin memakai `list` sebagai tumpukan atau antrian. Di C++ keduanya adalah wadah tersendiri yang sengaja membatasi akses ke ujungnya saja. Tiap soal latihan bertanda `AI: boleh` atau `AI: tanpa AI`. Masukan program diberikan lewat berkas: `./program < masukan.txt`.
 

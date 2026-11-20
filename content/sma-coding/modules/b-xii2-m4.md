@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XII2-M4` silabus v1.4.1: sprint 1, tampilan (merek dan tema). Dikerjakan berkelompok dua sampai tiga orang. Prasyarat: modul `b-xii2-m3` (konten tahap 1).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Silabus memetakan butir `F-BK-a` dan `F-LD-f` pada minggu ini; modul draf ini belum dihitung memenuhi keduanya. Keluaran minggu ini: tampilan tahap 1.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Silabus memetakan butir `F-BK-a` dan `F-LD-f` pada minggu ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul. Keluaran minggu ini: tampilan tahap 1.
 
 **Batas modul ini.** Kamu mengubah **merek dan tema** pada repositori turunan lab; backend tidak disentuh. Contoh dijalankan dengan Bun 1.4.4 per 2026-11 pada salinan `awcms-one` 0.20.0 (Astro 7.4.12), tanpa Docker dan CMS. Semua nama dan kontak karangan. Tugas baca-dan-prediksi `AI: tanpa AI`; selain itu AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi atau rahasia.
 

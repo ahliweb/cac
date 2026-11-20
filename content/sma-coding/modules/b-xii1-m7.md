@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XII1-M7` silabus v1.4.1: tema, CSS, dan aksesibilitas. Prasyarat: modul `b-xii1-m6` dan `b-x2-m5`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Silabus memetakan butir `F-LD-f` pada minggu ini; modul draf ini belum dihitung memenuhinya.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Silabus memetakan butir `F-LD-f` pada minggu ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul.
 
 Kamu hanya mengubah **tema dan tampilan**; backend tidak disentuh. Contoh dijalankan penyusun dengan Bun 1.4.4, Astro 7.4.13, `@axe-core/playwright` 4.14.0 (`axe-core` 4.14.1), `playwright-core` 1.65.1, dan Google Chrome 158.0.8127.36, semua per 2026-11, di folder sementara tanpa akun. **Penyusun tidak menilai tampilan visual**: yang ditempel hanya keluaran alat. Alat otomatis hanya menemukan sebagian masalah (lihat bagian bawah). Tugas baca-dan-prediksi `AI: tanpa AI`; selain itu AI boleh dipakai dengan etika dan dicatat, tanpa data pribadi atau rahasia pada permintaanmu.
 

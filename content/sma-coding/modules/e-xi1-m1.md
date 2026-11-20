@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI1-M1` silabus v1.4: mengapa komputasi kuantum, bit klasik dan acak. Ini modul pembuka jalur, jadi tidak ada prasyarat modul jalur E; cukup ingat bit dan bilangan biner dari `matkom-sistem-bilangan-basis` dan `FND-X1-M3`. Alat: peramban untuk Quirk (simulator visual di halaman web, tanpa akun). Contoh C++ opsional untuk murid yang sudah belajar C++ (jalur A).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur E adalah pengayaan di luar rumusan capaian pembelajaran (CP); minggu ini tidak punya irisan pengayaan, jadi modul ini tidak dihitung memenuhi butir CP mana pun.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Jalur E adalah pengayaan di luar rumusan capaian pembelajaran (CP); minggu ini tidak punya irisan pengayaan, jadi modul ini tidak dihitung memenuhi butir CP mana pun.
 
 Aturan AI jalur ini: AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu, dan tanpa akun wajib. Saran: jawab dulu sendiri, baru minta penjelasan atau petunjuk bertahap. Setiap soal `Latihan` bertanda `AI: boleh` atau `AI: tanpa AI`.
 

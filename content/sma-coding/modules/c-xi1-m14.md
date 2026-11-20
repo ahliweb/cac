@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur C (IoT dan robotika), minggu `C-XI1-M14` silabus v1.3: asesmen dan refleksi semester 1. Prasyarat: modul `c-xi1-m12` dan seluruh materi semester ini, `c-xi1-m1` sampai `c-xi1-m13`; modul ini menilai semuanya.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik, dan tidak dihitung sebagai pemenuhan butir capaian pembelajaran. Asesmen ini **tanpa AI**: jangan memakai AI generatif saat mengerjakannya (silabus 7.4). Bobot nilai dan predikat mengikuti kebijakan sekolah `[belum terverifikasi]`; modul ini hanya memberi soal dan kunci latihan.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi), dan tidak dihitung sebagai pemenuhan butir capaian pembelajaran. Asesmen ini **tanpa AI**: jangan memakai AI generatif saat mengerjakannya (silabus 7.4). Bobot nilai dan predikat mengikuti kebijakan sekolah `[belum terverifikasi]`; modul ini hanya memberi soal dan kunci latihan.
 
 Bagian praktik dapat dikerjakan **dengan dua papan** bila tersedia, atau **tanpa papan** di kertas dan komputer. Bila memakai papan, ikuti aturan keselamatan modul sebelumnya: daya USB saja, cabut kabel USB sebelum mengubah sambungan, GND bersama, dan jangan menyambung pin ke daya atau perangkat bertegangan lain.
 

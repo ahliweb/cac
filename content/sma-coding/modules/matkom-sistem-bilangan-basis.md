@@ -1,6 +1,6 @@
 ## Untuk siapa modul ini
 
-Modul ini untuk siswa SMA reguler kelas X yang ingin memahami bilangan seperti yang dipahami komputer. Modul ini bagian dari seri Matematika Komputasi Dasar dan berstatus DRAF: isinya karangan penyusun, belum disetujui pemilik, dan bukan bagian dari capaian pembelajaran yang dihitung.
+Modul ini untuk siswa SMA reguler kelas X yang ingin memahami bilangan seperti yang dipahami komputer. Modul ini bagian dari seri Matematika Komputasi Dasar dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi); isinya karangan penyusun, dan bukan bagian dari capaian pembelajaran yang dihitung.
 
 Prasyarat: pengantar representasi data pada minggu fondasi `FND-X1-M3` (bit, byte, konversi desimal-biner-heksadesimal secara kasar). Modul ini tidak mengulang pengantar itu, tetapi memperdalamnya.
 

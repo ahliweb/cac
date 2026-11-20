@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur C (IoT dan robotika), minggu `C-XI2-M5` silabus v1.4: publikasi-langganan, konsep. Prasyarat: modul `c-xi2-m4` (server mini); kamu juga memakai klien HTTP dari `c-xi2-m3` sebagai pembanding.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-BK-d` (model jaringan, pengiriman data, dan pemecahan masalah) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: diagram alir pesan. Latihan silabusnya: permainan peran broker.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-BK-d` (model jaringan, pengiriman data, dan pemecahan masalah) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: diagram alir pesan. Latihan silabusnya: permainan peran broker.
 
 Seluruh modul ini dapat dikerjakan **tanpa papan**: kamu memainkan peran dengan kartu, menggambar diagram, dan menjalankan "broker tiruan" di komputer. Modul ini tidak memakai perangkat fisik; aturan keselamatan perangkat dari modul sebelumnya tetap berlaku bila kamu menyentuh papan. Semua topik, nama, dan nilai di modul ini karangan.
 

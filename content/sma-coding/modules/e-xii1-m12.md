@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur E (komputasi kuantum), minggu `E-XII1-M12` silabus v1.4: demonstrasi cloud quantum oleh guru, yaitu mengamati satu pekerjaan Bell kecil pada perangkat nyata dan membandingkannya dengan simulator, dengan keluaran histogram perangkat lawan simulator. Prasyarat: modul `e-xii1-m11`. **Hanya guru** yang memakai akun sekolah atau lembaga; murid mengamati layar guru atau hasil agregatnya, **tanpa akun murid, tanpa token, tanpa kunci**. Bila akses tidak tersedia, kelas memakai arsip sintetis di modul ini, yang bukan hasil perangkat nyata. Di luar indeks, bagian kode (pembanding histogram) memerlukan dasar pemrograman setara `A-X1-M9..M12` (C++); bagian konsep terbuka bagi semua murid. Alat murid: kertas, kalkulator, dan program C++ kecil di bawah.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur E adalah pengayaan di luar rumusan CP; minggu ini tanpa irisan pengayaan, jadi modul ini tidak dihitung memenuhi butir CP mana pun.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Jalur E adalah pengayaan di luar rumusan CP; minggu ini tanpa irisan pengayaan, jadi modul ini tidak dihitung memenuhi butir CP mana pun.
 
 Aturan AI jalur ini: AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu, dan tanpa akun wajib. Saran: jawab dulu sendiri, baru minta petunjuk bertahap; kode buatan AI kamu baca, jalankan, dan uji. Setiap soal `Latihan` bertanda `AI: boleh` atau `AI: tanpa AI`.
 

@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur A (Algoritmik dengan C++), minggu `A-XI1-M12` silabus v1.4.1: membandingkan strategi. Prasyarat: modul `a-xi1-m11` (backtracking) dan seluruh modul strategi sebelumnya, terutama greedy dan pencarian lengkap.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-AP-a`, `F-AP-b`, dan `F-BK-b` dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan. Keluarga materi OSN yang bertaut: `strategi-problem-solving`. Pemrograman dinamis (DP) baru dibahas penuh di semester berikutnya; di sini kamu hanya mencicipi "DP kecil" sebagai pembanding dan tidak diharapkan menguasainya.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-AP-a`, `F-AP-b`, dan `F-BK-b` dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul. Keluarga materi OSN yang bertaut: `strategi-problem-solving`. Pemrograman dinamis (DP) baru dibahas penuh di semester berikutnya; di sini kamu hanya mencicipi "DP kecil" sebagai pembanding dan tidak diharapkan menguasainya.
 
 Tiap soal latihan bertanda `AI: boleh` atau `AI: tanpa AI`. Semua soal karangan.
 

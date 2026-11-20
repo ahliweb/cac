@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur A (Algoritmik dengan C++), minggu `A-XI2-M5` silabus v1.4.1: graf dan representasinya. Prasyarat: modul `a-xi2-m4` (urutan modul; materi DP string tidak dipakai di sini), `a-x2-m3` (array dua dimensi), dan `a-x2-m6` (`vector`).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-BK-c` dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan. Keluarga materi OSN yang bertaut: `graph-tree`, yang seluruhnya ditandai pengayaan (P) di jembatan OSN (graf tidak disebut di butir CP yang dikutip silabus). Maka kelas reguler boleh melewati modul ini beserta `a-xi2-m6`, `a-xi2-m7`, dan `a-xi2-m8`; murid yang menuju OSN mengerjakannya. Modul tidak menjanjikan kedalaman soal OSN.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-BK-c` dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul. Keluarga materi OSN yang bertaut: `graph-tree`, yang seluruhnya ditandai pengayaan (P) di jembatan OSN (graf tidak disebut di butir CP yang dikutip silabus). Maka kelas reguler boleh melewati modul ini beserta `a-xi2-m6`, `a-xi2-m7`, dan `a-xi2-m8`; murid yang menuju OSN mengerjakannya. Modul tidak menjanjikan kedalaman soal OSN.
 
 Tiap soal latihan bertanda `AI: boleh` atau `AI: tanpa AI`. Masukan program diberikan lewat berkas: `./program < masukan.txt`. Semua data karangan.
 

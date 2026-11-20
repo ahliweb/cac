@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XI1-M13` silabus v1.4.1: proyek mini, pustaka TypeScript teruji, dikerjakan berkelompok dua sampai tiga orang. Prasyarat: modul `b-xi1-m12` (alur kerja Git dan ulasan).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-AP-b` (program terstruktur berdasarkan strategi) dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan butir itu. Penilaian memakai rubrik gurumu; modul ini tidak menilai.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-AP-b` (program terstruktur berdasarkan strategi) dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul. Penilaian memakai rubrik gurumu; modul ini tidak menilai.
 
 Contoh dijalankan penyusun dengan Bun 1.4.4, TypeScript 7.0.2, dan Biome 2.6.8 per 2026-11. Tanpa akun dan tanpa layanan luar: repositori pusat berupa folder seperti di `b-xi1-m12`. AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu; kode buatan AI harus kamu baca, jalankan, uji, dan jelaskan sendiri.
 

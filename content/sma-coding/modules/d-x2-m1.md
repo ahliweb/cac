@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas X jalur D (kecerdasan buatan dan analisis data), untuk minggu `D-X2-M1` silabus v1.3: dari data ke keputusan; ulasan. Prasyarat: modul `d-x1-m12` (model pertama dan pembagian data latih dan uji). Kegiatan utamanya memakai kertas dan tabel; Orange hanya dipakai untuk memeriksa sebuah hitungan, dan bagian itu bisa dilewati.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur D adalah pengayaan di luar rumusan capaian pembelajaran (CP). Minggu ini beririsan dengan butir `E-BK-b` (kualitas dan pelabelan data) pada tingkat rendah sampai sedang; irisan itu **tidak dihitung** sebagai pemenuhan CP.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Jalur D adalah pengayaan di luar rumusan capaian pembelajaran (CP). Minggu ini beririsan dengan butir `E-BK-b` (kualitas dan pelabelan data) pada tingkat rendah sampai sedang; irisan itu **tidak dihitung** sebagai pemenuhan CP.
 
 Aturan jalur D yang berlaku: data hanya sintetis (karangan) atau terbuka dengan lisensi jelas, tanpa data yang bisa mengenali orang; wajah, suara, dan foto orang tidak dipakai sebagai data; AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu, dan kamu tidak wajib punya akun. Saran: jawab dulu sendiri, baru minta AI menjelaskan atau memberi petunjuk bertahap. Setiap soal `Latihan` bertanda `AI: boleh` atau `AI: tanpa AI`.
 

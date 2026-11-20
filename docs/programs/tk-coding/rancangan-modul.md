@@ -1,9 +1,11 @@
 # Rancangan Modul Lengkap TK/PAUD (`tk-coding`)
 
-- **Version:** v0.1.1
-- **Last updated:** 2026-11-19
+- **Version:** v0.1.2
+- **Last updated:** 2026-11-20
 - **Status:** Rancangan **DISETUJUI pemilik 2026-11-19** lewat dialog keputusan (opsi "Setujui, tambah gambar SVG": semua rekomendasi disetujui, Q3 memakai opsi b, SVG buatan penyusun per lembar). Persetujuan ini untuk rancangan, bukan modul. Modulnya **sudah ditulis** per 2026-11-19: 48 panduan guru di `content/tk-coding/modules/`, 48 lembar anak di `content/tk-coding/lembar/`, 48 gambar SVG di `content/tk-coding/gambar/`, terindeks di `data/tk-coding/modules.json`; semuanya berstatus `draf`.
 - **Changeset:** Rancangan modul TK: pemetaan 48 minggu, templat berbasis bukti, gelombang penulisan, gerbang mutu, pertanyaan keputusan, dan satu modul pilot.
+
+> **Catatan status (2026-11-20, #125).** Pernyataan "berstatus `draf`" atau "modul draf" di dokumen ini adalah keadaan saat rancangan ditulis. Pada 2026-11-20 pemilik program memilih "Setujui semua, catatan jadi tindak lanjut" lewat dialog pilihan baku, sehingga seluruh 753 modul enam program coding berstatus `disetujui` di `data/<id>/modules.json` (bukan hasil tinjauan isi per modul; butir [`catatan-tinjauan-modul.md`](../catatan-tinjauan-modul.md) menjadi tindak lanjut revisi). Pernyataan status modul di bawah, termasuk aturan "modul baru berstatus `draf`", adalah riwayat atau aturan untuk modul baru.
 
 > **Catatan status (2026-11-19, sinkron dokumen #124).** Frasa "modulnya belum ditulis" di bawah adalah riwayat: modul nyatanya ada di `content/tk-coding/` (48 modul, 48 lembar, 48 SVG, indeks `data/tk-coding/modules.json`, semua `draf`, belum ditinjau). Pilot `rancangan-modul-contoh/` kini riwayat; modul nyatanya `tk-a1-m1` (`content/tk-coding/modules/tk-a1-m1.md` dan `content/tk-coding/lembar/tk-a1-m1.md`). Gambar lembar kini berupa SVG di `content/tk-coding/gambar/`, diperiksa oleh `bun run check:learner-assets`; Q3 di bawah dibiarkan sebagai catatan rancangan. Skema indeks khusus program sudah ada (`src/schema/tk-module.ts`). Judul `#` dan bagian `## Rujukan` tidak lagi ada di tubuh modul (judul dan rujukan dirender dari indeks); judul ganda kini galat di `bun run check:learner-assets`.
 > Keputusan dan kontrak yang disetujui pemilik di dokumen ini tidak berubah; yang diperbarui hanya klausa status yang basi.
@@ -324,3 +326,4 @@ rekomendasi.
 | --- | --- | --- |
 | v0.1.0 | 2026-11-19 | Draf awal rancangan modul TK: pemetaan 48 minggu, templat panduan dan lembar, aturan rujukan, gelombang, gerbang mutu, tiga pertanyaan keputusan, dan pilot `tk-a1-m1`. |
 | v0.1.1 | 2026-11-19 | Sinkron dokumen (#124): catatan status; modul, lembar, dan gambar SVG kini ada di `content/tk-coding/`; pilot menjadi riwayat. Isi rancangan tidak berubah. |
+| v0.1.2 | 2026-11-20 | Catatan status 2026-11-20: pemilik menyetujui 753 modul enam program coding (#125); pernyataan `draf` di dokumen ini menjadi riwayat; isi rancangan tidak berubah. |

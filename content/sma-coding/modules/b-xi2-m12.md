@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XI2-M12` silabus v1.4.1: penyajian statis, **opsional**. Prasyarat: modul `b-xi2-m11` (jaringan: HTTP dan pemecahan masalah). Melewati modul ini tidak mengurangi apa pun pada minggu berikutnya.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Silabus tidak memetakan butir capaian pembelajaran pada minggu ini.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Silabus tidak memetakan butir capaian pembelajaran pada minggu ini.
 
 **Batas modul ini.** Situs disajikan hanya di `localhost` atau di jaringan lab sekolah atas izin dan arahan gurumu. Modul ini tidak memakai layanan hosting luar yang meminta akun, kunci, atau pembayaran, dan tidak menerbitkan apa pun ke internet. Contoh dijalankan penyusun dengan Bun 1.4.4 per 2026-11, `curl`, dan Chrome tanpa kepala. Tugas baca-dan-prediksi `AI: tanpa AI`; selain itu AI boleh dipakai dengan etika dan dicatat, tanpa data pribadi atau rahasia pada permintaanmu.
 

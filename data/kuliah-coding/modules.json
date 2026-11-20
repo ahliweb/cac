@@ -9,7 +9,7 @@
       "prerequisites": [],
       "audience": "mahasiswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "The Python Tutorial, Python Software Foundation",
@@ -28,7 +28,11 @@
           "url": "https://csed.acm.org/knowledge-areas/"
         }
       ],
-      "contentPath": "content/kuliah-coding/modules/kul-u-101.md"
+      "contentPath": "content/kuliah-coding/modules/kul-u-101.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "kul-u-102",
@@ -39,7 +43,7 @@
       "prerequisites": ["kul-u-101"],
       "audience": "mahasiswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "pandas documentation, pandas",
@@ -66,7 +70,11 @@
           "url": "https://csed.acm.org/knowledge-areas/"
         }
       ],
-      "contentPath": "content/kuliah-coding/modules/kul-u-102.md"
+      "contentPath": "content/kuliah-coding/modules/kul-u-102.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "kul-u-201",
@@ -77,7 +85,7 @@
       "prerequisites": ["kul-u-101"],
       "audience": "mahasiswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "The Python Standard Library, Python Software Foundation",
@@ -104,7 +112,11 @@
           "url": "https://csed.acm.org/knowledge-areas/"
         }
       ],
-      "contentPath": "content/kuliah-coding/modules/kul-u-201.md"
+      "contentPath": "content/kuliah-coding/modules/kul-u-201.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "kul-u-202",
@@ -115,7 +127,7 @@
       "prerequisites": [],
       "audience": "mahasiswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Python: The Python Standard Library",
@@ -162,7 +174,11 @@
           "url": "https://csed.acm.org/knowledge-areas/"
         }
       ],
-      "contentPath": "content/kuliah-coding/modules/kul-u-202.md"
+      "contentPath": "content/kuliah-coding/modules/kul-u-202.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "kul-u-301",
@@ -173,7 +189,7 @@
       "prerequisites": ["kul-u-102", "kul-u-201"],
       "audience": "mahasiswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Python: The Python Standard Library",
@@ -200,7 +216,11 @@
           "url": "https://csed.acm.org/knowledge-areas/"
         }
       ],
-      "contentPath": "content/kuliah-coding/modules/kul-u-301.md"
+      "contentPath": "content/kuliah-coding/modules/kul-u-301.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "kul-i-101",
@@ -211,7 +231,7 @@
       "prerequisites": [],
       "audience": "mahasiswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Standard C++ Foundation: Get Started",
@@ -234,7 +254,11 @@
           "url": "https://csed.acm.org/knowledge-areas/"
         }
       ],
-      "contentPath": "content/kuliah-coding/modules/kul-i-101.md"
+      "contentPath": "content/kuliah-coding/modules/kul-i-101.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "kul-i-102",
@@ -245,7 +269,7 @@
       "prerequisites": ["kul-i-101"],
       "audience": "mahasiswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Standard C++ Foundation: Get Started",
@@ -264,7 +288,11 @@
           "url": "https://csed.acm.org/knowledge-areas/"
         }
       ],
-      "contentPath": "content/kuliah-coding/modules/kul-i-102.md"
+      "contentPath": "content/kuliah-coding/modules/kul-i-102.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "kul-i-103",
@@ -275,7 +303,7 @@
       "prerequisites": [],
       "audience": "mahasiswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Discrete Mathematics: An Open Introduction (Oscar Levin)",
@@ -294,7 +322,11 @@
           "url": "https://csed.acm.org/knowledge-areas/"
         }
       ],
-      "contentPath": "content/kuliah-coding/modules/kul-i-103.md"
+      "contentPath": "content/kuliah-coding/modules/kul-i-103.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "kul-i-201",
@@ -305,7 +337,7 @@
       "prerequisites": ["kul-i-102", "kul-i-103"],
       "audience": "mahasiswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "MIT OpenCourseWare: Design and Analysis of Algorithms (6.046J, Spring 2015)",
@@ -328,7 +360,11 @@
           "url": "https://csed.acm.org/knowledge-areas/"
         }
       ],
-      "contentPath": "content/kuliah-coding/modules/kul-i-201.md"
+      "contentPath": "content/kuliah-coding/modules/kul-i-201.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "kul-i-202",
@@ -339,7 +375,7 @@
       "prerequisites": ["kul-i-102"],
       "audience": "mahasiswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "SQLite: Documentation",
@@ -370,7 +406,11 @@
           "url": "https://csed.acm.org/knowledge-areas/"
         }
       ],
-      "contentPath": "content/kuliah-coding/modules/kul-i-202.md"
+      "contentPath": "content/kuliah-coding/modules/kul-i-202.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "kul-i-203",
@@ -381,7 +421,7 @@
       "prerequisites": ["kul-i-101"],
       "audience": "mahasiswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "GNU Binutils: Using as (GNU assembler)",
@@ -416,7 +456,11 @@
           "url": "https://csed.acm.org/knowledge-areas/"
         }
       ],
-      "contentPath": "content/kuliah-coding/modules/kul-i-203.md"
+      "contentPath": "content/kuliah-coding/modules/kul-i-203.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "kul-i-204",
@@ -427,7 +471,7 @@
       "prerequisites": ["kul-i-102"],
       "audience": "mahasiswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Bun, test runner (bun test)",
@@ -466,7 +510,11 @@
           "url": "https://csed.acm.org/knowledge-areas/"
         }
       ],
-      "contentPath": "content/kuliah-coding/modules/kul-i-204.md"
+      "contentPath": "content/kuliah-coding/modules/kul-i-204.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "kul-i-205",
@@ -477,7 +525,7 @@
       "prerequisites": ["kul-i-202"],
       "audience": "mahasiswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Bun Documentation (HTTP server, HTMLRewriter, SQLite, password hashing)",
@@ -520,7 +568,11 @@
           "url": "https://csed.acm.org/knowledge-areas/"
         }
       ],
-      "contentPath": "content/kuliah-coding/modules/kul-i-205.md"
+      "contentPath": "content/kuliah-coding/modules/kul-i-205.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "kul-i-301",
@@ -531,7 +583,7 @@
       "prerequisites": ["kul-i-203"],
       "audience": "mahasiswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "RFC 9293, Transmission Control Protocol (TCP), IETF",
@@ -586,7 +638,11 @@
           "url": "https://arxiv.org/abs/2406.10279"
         }
       ],
-      "contentPath": "content/kuliah-coding/modules/kul-i-301.md"
+      "contentPath": "content/kuliah-coding/modules/kul-i-301.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "kul-i-302",
@@ -597,7 +653,7 @@
       "prerequisites": ["kul-i-203"],
       "audience": "mahasiswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Standard C++ Foundation",
@@ -636,7 +692,11 @@
           "url": "https://docs.docker.com/reference/cli/docker/container/run/"
         }
       ],
-      "contentPath": "content/kuliah-coding/modules/kul-i-302.md"
+      "contentPath": "content/kuliah-coding/modules/kul-i-302.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "kul-i-303",
@@ -647,7 +707,7 @@
       "prerequisites": ["kul-i-201"],
       "audience": "mahasiswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Russell dan Norvig, Artificial Intelligence: A Modern Approach (situs buku)",
@@ -674,7 +734,11 @@
           "url": "https://jdih.komdigi.go.id/produk_hukum/view/id/883/t/surat+edaran+menteri+komunikasi+dan+informatika+nomor+9+tahun+2023"
         }
       ],
-      "contentPath": "content/kuliah-coding/modules/kul-i-303.md"
+      "contentPath": "content/kuliah-coding/modules/kul-i-303.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "kul-i-304",
@@ -685,7 +749,7 @@
       "prerequisites": ["kul-i-205"],
       "audience": "mahasiswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Nielsen Norman Group, 10 Usability Heuristics for User Interface Design",
@@ -708,7 +772,11 @@
           "url": "https://csed.acm.org/knowledge-areas/"
         }
       ],
-      "contentPath": "content/kuliah-coding/modules/kul-i-304.md"
+      "contentPath": "content/kuliah-coding/modules/kul-i-304.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "kul-i-305",
@@ -719,7 +787,7 @@
       "prerequisites": [],
       "audience": "mahasiswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "UU Nomor 27 Tahun 2022 tentang Pelindungan Data Pribadi (JDIH BPK)",
@@ -770,7 +838,11 @@
           "url": "https://csed.acm.org/knowledge-areas/"
         }
       ],
-      "contentPath": "content/kuliah-coding/modules/kul-i-305.md"
+      "contentPath": "content/kuliah-coding/modules/kul-i-305.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "kul-i-306",
@@ -781,7 +853,7 @@
       "prerequisites": ["kul-i-102"],
       "audience": "mahasiswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "ACM/IEEE-CS/AAAI Computer Science Curricula 2023: Knowledge Areas (daftar 17 KA)",
@@ -800,7 +872,11 @@
           "url": "https://www.w3.org/WAI/WCAG22/Understanding/three-flashes-or-below-threshold.html"
         }
       ],
-      "contentPath": "content/kuliah-coding/modules/kul-i-306.md"
+      "contentPath": "content/kuliah-coding/modules/kul-i-306.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "kul-i-307",
@@ -811,7 +887,7 @@
       "prerequisites": ["kul-i-202"],
       "audience": "mahasiswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Python: sqlite3, antarmuka DB-API untuk SQLite",
@@ -838,7 +914,11 @@
           "url": "https://arxiv.org/abs/1810.03993"
         }
       ],
-      "contentPath": "content/kuliah-coding/modules/kul-i-307.md"
+      "contentPath": "content/kuliah-coding/modules/kul-i-307.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "kul-i-401",
@@ -849,7 +929,7 @@
       "prerequisites": ["kul-i-204"],
       "audience": "mahasiswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Semantic Versioning 2.0.0",
@@ -872,7 +952,11 @@
           "url": "https://csed.acm.org/knowledge-areas/"
         }
       ],
-      "contentPath": "content/kuliah-coding/modules/kul-i-401.md"
+      "contentPath": "content/kuliah-coding/modules/kul-i-401.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "kul-k-201",
@@ -883,7 +967,7 @@
       "prerequisites": ["kul-i-102", "kul-u-101"],
       "audience": "mahasiswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "cppreference: Algorithms library (C++)",
@@ -902,7 +986,11 @@
           "url": "https://cp-algorithms.com/"
         }
       ],
-      "contentPath": "content/kuliah-coding/modules/kul-k-201.md"
+      "contentPath": "content/kuliah-coding/modules/kul-k-201.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "kul-k-301",
@@ -913,7 +1001,7 @@
       "prerequisites": ["kul-k-201"],
       "audience": "mahasiswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "CP-Algorithms",
@@ -932,7 +1020,11 @@
           "url": "https://en.cppreference.com/w/cpp/algorithm"
         }
       ],
-      "contentPath": "content/kuliah-coding/modules/kul-k-301.md"
+      "contentPath": "content/kuliah-coding/modules/kul-k-301.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "kul-k-401",
@@ -943,7 +1035,7 @@
       "prerequisites": ["kul-k-301"],
       "audience": "mahasiswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "ICPC Europe Championship 2026: rules (halaman aturan regional)",
@@ -962,7 +1054,11 @@
           "url": "https://cses.fi/problemset/"
         }
       ],
-      "contentPath": "content/kuliah-coding/modules/kul-k-401.md"
+      "contentPath": "content/kuliah-coding/modules/kul-k-401.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     }
   ]
 }

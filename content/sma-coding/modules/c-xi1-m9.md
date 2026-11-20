@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur C (IoT dan robotika), minggu `C-XI1-M9` silabus v1.3: struktur data penyangga melingkar. Prasyarat: modul `c-xi1-m8` (efisiensi memori dan waktu) dan `c-x2-m9` (tumpukan dan antrian sebagai penyangga). Kamu juga memakai `struct` dari `c-xi1-m3` dan rata-rata bergerak dari `c-x2-m4`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-BK-c` (struktur data yang lebih kompleks dan abstrak) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun; pemetaan `F-BK-c` untuk jalur C bersifat parsial. Keluaran minggu ini: program penyangga. Latihan silabusnya: rata-rata bergerak dengan penyangga.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-BK-c` (struktur data yang lebih kompleks dan abstrak) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun; pemetaan `F-BK-c` untuk jalur C bersifat parsial. Keluaran minggu ini: program penyangga. Latihan silabusnya: rata-rata bergerak dengan penyangga.
 
 Minggu ini tidak bertanda (F): semua bagian pokok dikerjakan **tanpa papan**, dengan kertas dan program C++ biasa di komputer yang memakai pembacaan karangan. Bila kamu mencoba dengan papan, ikuti aturan keselamatan modul sebelumnya: daya USB saja dan cabut kabel sebelum mengubah rangkaian. Nomor pin pada contoh hanya contoh `[belum terverifikasi]` untuk papanmu.
 

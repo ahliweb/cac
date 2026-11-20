@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas X jalur A (Algoritmik dengan C++), minggu `A-X2-M4` silabus v1.4.1: ulasan dan penelusuran galat, serta aritmetika dasar. Prasyarat: modul `a-x2-m3` (array dua dimensi) dan `a-x1-m12` (fungsi). Kamu tidak perlu pernah memprogram sebelum jalur ini.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Silabus tidak memetakan butir capaian pembelajaran untuk minggu ini, jadi modul ini tidak dihitung memenuhi butir CP apa pun. Keluarga materi OSN yang bertaut: `aritmetika` (paritas, habis dibagi, dan sisa bagi sesuai CP, bukan pengayaan).
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Silabus tidak memetakan butir capaian pembelajaran untuk minggu ini, jadi modul ini tidak dihitung memenuhi butir CP apa pun. Keluarga materi OSN yang bertaut: `aritmetika` (paritas, habis dibagi, dan sisa bagi sesuai CP, bukan pengayaan).
 
 Separuh pertama modul adalah cara menemukan galat; separuh kedua adalah alat hitung yang akan kamu pakai terus. Tiap soal latihan bertanda `AI: boleh` atau `AI: tanpa AI`. Masukan program diberikan lewat berkas: `./program < masukan.txt`.
 

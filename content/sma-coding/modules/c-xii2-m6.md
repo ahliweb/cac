@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur C (IoT dan robotika), minggu `C-XII2-M6` silabus v1.4: proyek akhir, sprint 1 (perangkat keras) (F). Prasyarat: modul `c-xii2-m5` (proyek akhir: rancangan). Kamu memakai rancangan minggu lalu dan daya baterai dari `C-XII1-M10` (belum terindeks saat modul ini ditulis).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-BK-a` dan `F-AP-d`, dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: rangkaian teruji. Latihan silabusnya: perakitan.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-BK-a` dan `F-AP-d`, dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: rangkaian teruji. Latihan silabusnya: perakitan.
 
 Ada dua cara mengerjakan. **Dengan papan (F):** kelompok merakit rangkaian dari rancangan dan mengujinya bertahap. **Tanpa papan:** kelompok menghitung tegangan dan arus pada rangkaian karangan, menulis lembar uji, dan menjalankan program papan tiruan di komputer. Nomor pin dan angka pada contoh hanya contoh `[belum terverifikasi]` untuk papanmu.
 

@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur E (komputasi kuantum), minggu `E-XII2-M6` silabus v1.4: proyek akhir, fase rancangan, dengan keluaran dokumen rancangan. Prasyarat: modul `e-xii2-m5`; modul `e-xii1-m12` belum terindeks, jadi guru memeriksanya. Di luar indeks, proyek yang berkode memerlukan dasar pemrograman setara `A-X1-M9..M12` (C++) atau `B-X1-M9..M12` (TypeScript dengan Bun); proyek studi banding tidak memerlukannya. Proyek dikerjakan perorangan atau berpasangan selama tujuh minggu (`E-XII2-M6` sampai `E-XII2-M12`). Alat: kertas, kalkulator, dan simulator atau bahasa pilihanmu (tanpa akun).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur E adalah pengayaan di luar rumusan CP; minggu ini tanpa irisan pengayaan, jadi modul ini tidak dihitung memenuhi butir CP mana pun.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Jalur E adalah pengayaan di luar rumusan CP; minggu ini tanpa irisan pengayaan, jadi modul ini tidak dihitung memenuhi butir CP mana pun.
 
 Aturan AI jalur ini: AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu, dan tanpa akun wajib. Saran: jawab dulu sendiri, baru minta petunjuk bertahap; kode buatan AI kamu baca, jalankan, dan uji. Catat pemakaian AI di log proyek (alat, tujuan, garis besar perintah, bagian yang dipakai, cara memeriksanya).
 

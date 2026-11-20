@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XI1-M7` silabus v1.4.1: pengujian dengan `bun test`. Prasyarat: modul `b-xi1-m6` (modul ESM dan paket). Kamu juga memakai pengurutan dari `b-x2-m9` dan tipe dari `b-xi1-m4`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-AP-c` (pengembangan, pemeliharaan, penyempurnaan algoritma standar, kualitas kode) dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan butir itu.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-AP-c` (pengembangan, pemeliharaan, penyempurnaan algoritma standar, kualitas kode) dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul.
 
 Semua contoh dijalankan penyusun dengan Bun 1.4.4 per 2026-11 dan diperiksa dengan `bun check` (TypeScript 7.0.2) di proyek hasil `bun init`. Waktu dalam keluaran (angka dalam kurung siku) berbeda di komputermu. Tidak ada akun dan tidak ada data nyata. Tugas baca-dan-prediksi ditandai `AI: tanpa AI`; selain itu AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu.
 

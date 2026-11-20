@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur C (IoT dan robotika), minggu `C-XII2-M14` silabus v1.4: asesmen dan refleksi semester 2. Prasyarat terindeks: `c-xii2-m13`, dengan `c-xii2-m8` sampai `c-xii2-m12` dari batch ini; materi `C-XII2-M1` sampai `C-XII2-M7` belum terindeks saat modul ini ditulis. Modul ini menilai semuanya.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik, dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Asesmen ini **tanpa AI**: jangan memakai AI generatif saat mengerjakannya (silabus 7.4). Bobot nilai, predikat, dan rubrik proyek mengikuti kebijakan sekolah `[belum terverifikasi]`; modul ini hanya memberi soal dan kunci latihan.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi), dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Asesmen ini **tanpa AI**: jangan memakai AI generatif saat mengerjakannya (silabus 7.4). Bobot nilai, predikat, dan rubrik proyek mengikuti kebijakan sekolah `[belum terverifikasi]`; modul ini hanya memberi soal dan kunci latihan.
 
 Bagian praktik dapat dikerjakan **dengan papan (F)** atau **tanpa papan** di kertas dan komputer. Bila memakai papan, ikuti aturan keselamatan sprint 1: daya USB atau baterai AA/AAA dari guru, tanpa listrik 220 V atau solder, cabut daya sebelum mengubah rangkaian, roda terangkat, tombol berhenti terpasang, dan pemutus daya diketahui letaknya.
 

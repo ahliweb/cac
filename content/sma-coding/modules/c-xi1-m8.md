@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur C (IoT dan robotika), minggu `C-XI1-M8` silabus v1.3: efisiensi memori dan waktu pada mikrokontroler. Prasyarat formal di indeks: modul `c-x1-m12` (fungsi dan larik); urutan belajarnya setelah `c-xi1-m7` (kendali proporsional), yang belum terindeks saat modul ini ditulis dan diperiksa guru. Kamu juga memakai `struct` dari `c-xi1-m3`, jendela rata-rata bergerak dari `c-x2-m4`, dan antrian berkapasitas tetap dari `c-x2-m9`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-BK-b` (lebih dari satu solusi, justifikasi efisiensi) dan `F-AP-a` (konsep strategi algoritmik), dan tidak dihitung memenuhi butir capaian pembelajaran mana pun; pemetaan `F-BK-b` untuk jalur C bersifat parsial. Keluaran minggu ini: tabel perbandingan. Latihan silabusnya: larik melawan penyangga melingkar.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-BK-b` (lebih dari satu solusi, justifikasi efisiensi) dan `F-AP-a` (konsep strategi algoritmik), dan tidak dihitung memenuhi butir capaian pembelajaran mana pun; pemetaan `F-BK-b` untuk jalur C bersifat parsial. Keluaran minggu ini: tabel perbandingan. Latihan silabusnya: larik melawan penyangga melingkar.
 
 Minggu ini tidak bertanda (F): semua bagian pokok dikerjakan **tanpa papan**, dengan kertas dan program C++ biasa di komputer. Bila kamu mencoba dengan papan, ikuti aturan keselamatan modul sebelumnya: daya USB saja dan cabut kabel sebelum mengubah rangkaian. Ukuran tipe pada contoh adalah ukuran di komputer penulis; ukuran di papanmu **periksa sendiri** dengan `sizeof` `[belum terverifikasi]`.
 

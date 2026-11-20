@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur C (IoT dan robotika), minggu `C-XII2-M8` silabus v1.4: proyek akhir, sprint 3 (jaringan dan data) (F). Prasyarat terindeks: `c-xii1-m14`; belum terindeks: `C-XII2-M7` (sprint 2: program) dan `C-XII2-M4` (ulasan keamanan dan privasi).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-BK-a` dan `F-AP-d`, dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran: sistem terhubung. Latihan silabus: integrasi (F).
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-BK-a` dan `F-AP-d`, dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran: sistem terhubung. Latihan silabus: integrasi (F).
 
 **Dengan papan (F):** kelompok menyambungkan robot ke jaringan lab milik guru dan mengirim log. **Tanpa papan:** kamu menelusuri program papan tiruan dengan jaringan karangan yang bisa putus. Alamat dan angka pada contoh hanya contoh `[belum terverifikasi]` untuk labmu.
 

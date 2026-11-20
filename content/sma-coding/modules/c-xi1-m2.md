@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur C (IoT dan robotika), minggu `C-XI1-M2` silabus v1.3: kualitas kode dan pengujian. Prasyarat: modul `c-xi1-m1` (proses rekayasa produk IoT). Kamu juga memakai fungsi dan larik dari `c-x1-m12`, pemeriksaan data dari `c-x2-m12`, dan pembacaan analog dari `c-x1-m11`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-BK-a` (alur proses pengembangan program atau produk digital) dan `F-AP-c` (pengembangan, pemeliharaan, penyempurnaan algoritma standar, dan kualitas kode) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: berkas kasus uji. Latihan silabusnya: uji tepi pembacaan sensor.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-BK-a` (alur proses pengembangan program atau produk digital) dan `F-AP-c` (pengembangan, pemeliharaan, penyempurnaan algoritma standar, dan kualitas kode) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: berkas kasus uji. Latihan silabusnya: uji tepi pembacaan sensor.
 
 Minggu ini semua bagian pokok dikerjakan **tanpa papan**, dengan kertas dan program C++ biasa di komputer. Nilai batas cahaya pada contoh hanya contoh `[belum terverifikasi]` untuk rangkaianmu: ukur sendiri. Bila kamu mencoba dengan papan, ikuti aturan keselamatan modul sebelumnya: daya USB saja dan cabut kabel sebelum mengubah rangkaian.
 

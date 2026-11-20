@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XI1-M5` silabus v1.4.1: Bun sebagai runtime dan pengelola paket. Prasyarat: modul `b-xi1-m4` (`tsconfig` dan mode ketat) dan `b-x1-m8` (lingkungan kerja: terminal, editor, Bun, Git).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir CP untuk minggu ini tidak dipetakan silabus; modul ini tidak dihitung memenuhi butir CP apa pun.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir CP untuk minggu ini tidak dipetakan silabus; modul ini tidak dihitung memenuhi butir CP apa pun.
 
 Semua contoh dijalankan penyusun dengan Bun 1.4.4 dan TypeScript 7.0.2 per 2026-11. Pemasangan paket butuh sambungan ke registri paket npm; bila jaringan labmu membatasinya, tanyakan gurumu. Paket yang dipasang hanya `nanoid` dan dua paket alat dari `bun init`; tidak ada akun, kunci API, atau data nyata. Angka versi dan waktu di bawah adalah hasil percobaan penyusun dan berubah dari waktu ke waktu. Tugas baca-dan-prediksi ditandai `AI: tanpa AI`; selain itu AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu.
 

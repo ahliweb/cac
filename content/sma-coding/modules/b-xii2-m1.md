@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XII2-M1` silabus v1.4.1: kebutuhan pengguna, sprint pertama dari proyek akhir semester 2. Dikerjakan berkelompok dua sampai tiga orang. Prasyarat: modul `b-xii1-m13` (rencana kustomisasi).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Silabus memetakan butir `F-BK-a` dan `F-LD-d` pada minggu ini; modul draf ini belum dihitung memenuhi keduanya. Keluaran minggu ini: dokumen kebutuhan.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Silabus memetakan butir `F-BK-a` dan `F-LD-d` pada minggu ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul. Keluaran minggu ini: dokumen kebutuhan.
 
 **Konteks proyek akhir.** Kelasmu mengkustomisasi profil `landing` dari `awcms-one` sebagai studi kasus: kamu hanya mengubah merek, konten, tema, SEO, dan dokumentasi. Lingkungannya disiapkan gurumu dan kamu tidak menyentuh backend. Fakta `awcms-one` (versi 0.20.0, cabang `main` per 2026-11-19) dibaca dari repositori publiknya. Contoh dijalankan penyusun dengan Bun 1.4.4 per 2026-11. **Wawancara di modul ini hanya dengan tokoh karangan.** Semua nama, kutipan, dan organisasi ("Perpustakaan Komunitas Contoh") adalah karangan penyusun; jangan mewawancarai atau mencatat orang nyata. AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi atau rahasia pada permintaanmu.
 

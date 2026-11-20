@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur C (IoT dan robotika), minggu `C-XII1-M4` silabus v1.4: sensor garis dan jarak (F). Prasyarat: modul `c-xii1-m3` (motor DC dan pengendali motor). Kamu juga memakai ambang dari pengukuran (`c-x1-m11`), sensor jarak (`c-x2-m11`), dan histeresis (`c-xi1-m5`).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik, dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: program sensor. Latihan silabusnya: kalibrasi sensor garis.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi), dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: program sensor. Latihan silabusnya: kalibrasi sensor garis.
 
 Ada dua cara mengerjakan. **Dengan papan (F):** kelompok memasang satu larik lima sensor garis dan satu sensor jarak sesuai lembar guru. **Tanpa papan:** kamu menjalankan "papan tiruan" di komputer dengan data kalibrasi dan pembacaan karangan. Nomor pin, rentang nilai, dan arah nilai (hitam lebih besar atau lebih kecil) bergantung rangkaian: ukur dan baca lembar guru `[belum terverifikasi]`.
 

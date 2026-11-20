@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur E (komputasi kuantum), minggu `E-XII2-M11` silabus v1.4: proyek akhir, presentasi, dengan keluaran presentasi dan latihan demo. Prasyarat: modul `e-xii2-m10`. Di luar indeks, ringkasan histogram di bawah memakai TypeScript dengan Bun (setara `B-X1-M9..M12`); presentasinya sendiri tidak memerlukan pemrograman. Alat: kertas, perangkat presentasi apa pun yang ada di sekolah, dan Bun bila ingin menjalankan contoh (tanpa akun). Kerja minggu ini satu sprint: menyiapkan dan berlatih.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur E adalah pengayaan di luar rumusan CP; minggu ini tanpa irisan pengayaan, jadi modul ini tidak dihitung memenuhi butir CP mana pun.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Jalur E adalah pengayaan di luar rumusan CP; minggu ini tanpa irisan pengayaan, jadi modul ini tidak dihitung memenuhi butir CP mana pun.
 
 Aturan AI jalur ini: AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu, dan tanpa akun wajib. Saran: susun isi presentasi sendiri; AI boleh dipakai untuk menguji pertanyaan yang mungkin muncul, bukan untuk menulis klaim. Catat pemakaian AI di log proyek.
 

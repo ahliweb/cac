@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas X jalur C (IoT dan robotika), minggu `C-X2-M7` silabus v1.3: waktu tanpa `delay` dan mesin keadaan sederhana. Prasyarat: modul `c-x2-m6` (aktuator). Kamu juga memakai perulangan dan keluaran serial dari `c-x1-m10`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik, dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: diagram keadaan dan program. Latihan silabusnya: lampu lalu lintas mini.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi), dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: diagram keadaan dan program. Latihan silabusnya: lampu lalu lintas mini.
 
 Minggu ini tidak bertanda (F): semua bagian pokok dikerjakan **tanpa papan**, dengan kertas dan "papan tiruan" di komputer. Bila kamu mencoba dengan papan, ikuti aturan keselamatan modul sebelumnya: daya USB saja, LED selalu bersama resistor, dan cabut kabel sebelum mengubah rangkaian. Nomor pin pada contoh hanya contoh `[belum terverifikasi]` untuk papanmu.
 

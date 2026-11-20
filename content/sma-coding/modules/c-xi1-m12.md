@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur C (IoT dan robotika), minggu `C-XI1-M12` silabus v1.3: pemecahan masalah sambungan, yaitu mendiagnosis urutan daya, kabel, kode, dan format pesan (F). Prasyarat: modul `c-xi1-m11` (pengiriman data antarperangkat II). Kamu juga memakai penerima dari `c-xi1-m10`, kasus uji dari `c-xi1-m2`, dan kebiasaan mengubah satu hal pada satu waktu dari `c-x2-m1`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-BK-d` (jaringan; untuk jalur C: pengiriman data antarperangkat) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun; pemetaan `F-BK-d` untuk jalur C bersifat parsial. Keluaran minggu ini: diagram alir diagnosis. Latihan silabusnya: tiga skenario gangguan sintetis.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-BK-d` (jaringan; untuk jalur C: pengiriman data antarperangkat) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun; pemetaan `F-BK-d` untuk jalur C bersifat parsial. Keluaran minggu ini: diagram alir diagnosis. Latihan silabusnya: tiga skenario gangguan sintetis.
 
 Ada dua cara mengerjakan. **Dengan dua papan (F):** guru menyiapkan gangguan yang disengaja pada sambungan, dan kelompok mendiagnosisnya. **Tanpa papan:** kamu mendiagnosis dari catatan hitungan karangan di komputer dan di kertas. Semua bagian pokok dapat dikerjakan tanpa papan. Nilai ambang pada contoh hanya contoh untuk data karangan.
 

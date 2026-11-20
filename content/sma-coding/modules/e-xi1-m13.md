@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI1-M13` silabus v1.4: proyek mini semester 1. Prasyarat: modul `e-xi1-m12` dan seluruh materi semester ini, `e-xi1-m1` sampai `e-xi1-m12`. Alat: kertas, Quirk (peramban, tanpa akun), dan simulatormu dari `e-xi1-m10` dan `e-xi1-m11` (C++ untuk jalur A atau TypeScript dengan Bun untuk jalur B). Murid tanpa dasar pemrograman dapat mengerjakan versi tangan: sirkuit, prediksi, dan hitungan peluang tanpa simulator, ditambah pengamatan di Quirk.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur E adalah pengayaan di luar rumusan capaian pembelajaran (CP); minggu ini tidak punya irisan pengayaan, jadi modul ini tidak dihitung memenuhi butir CP mana pun.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Jalur E adalah pengayaan di luar rumusan capaian pembelajaran (CP); minggu ini tidak punya irisan pengayaan, jadi modul ini tidak dihitung memenuhi butir CP mana pun.
 
 Aturan AI jalur ini: AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu, dan tanpa akun wajib. Proyek ini mensyaratkan **log pemakaian AI** (alat, tujuan, garis besar perintah, bagian yang dipakai, cara memeriksa). Seluruh data proyek adalah bit hasil simulasi; tanpa data pribadi, nama nyata, atau foto.
 

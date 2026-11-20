@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas X jalur A (Algoritmik dengan C++), minggu `A-X1-M9` silabus v1.4.1: variabel, tipe data, ekspresi, serta masukan dan keluaran. Prasyarat: modul `a-x1-m8` (mengompilasi dan menjalankan program, pseudocode). Modul ini mengajar dari awal; kamu tidak perlu pernah memprogram sebelumnya.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `E-BK-d` dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan. Keluarga materi OSN yang bertaut: `dasar-pemrograman` (sesuai CP, bukan pengayaan).
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `E-BK-d` dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul. Keluarga materi OSN yang bertaut: `dasar-pemrograman` (sesuai CP, bukan pengayaan).
 
 Bila kamu pernah memakai bahasa teks seperti Python, konsepnya sama tetapi aturannya beda: di C++ tipe variabel ditulis dan tetap, pernyataan diakhiri titik koma, dan program dikompilasi dulu. Karena itu urutan modul ini membaca dan menebak dulu, lalu melengkapi, baru menulis dari kosong. Tiap soal latihan bertanda `AI: boleh` atau `AI: tanpa AI`. Masukan program diberikan lewat berkas: `./program < masukan.txt`.
 

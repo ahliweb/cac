@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur C (IoT dan robotika), minggu `C-XI2-M3` silabus v1.4: klien HTTP (F). Prasyarat: modul `c-xi2-m2` (keamanan konektivitas); kamu juga memakai papan yang tersambung dari `c-xi2-m1`, pola waktu `millis()` dari `c-x2-m7`, dan penyangga dari `c-x2-m9`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-BK-d` (model jaringan, pengiriman data, dan pemecahan masalah) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: program klien. Latihan silabusnya: mengirim suhu ke server lab.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-BK-d` (model jaringan, pengiriman data, dan pemecahan masalah) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: program klien. Latihan silabusnya: mengirim suhu ke server lab.
 
 Ada dua cara mengerjakan. **Dengan papan (F):** papan mengirim suhu ke server lokal di komputer guru. **Tanpa papan:** kamu menyusun teks permintaan, membaca kode jawaban, dan menjalankan "klien tiruan" di komputer dengan jawaban server yang dikarang. Alamat server dan jalurnya dari lembar guru; alamat di modul ini hanya contoh. Server guru dibuat dan dijalankan guru; menulisnya bukan tugasmu minggu ini.
 

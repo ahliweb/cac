@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XI2-M11` silabus v1.4.1: jaringan, yaitu HTTP dan pemecahan masalah. Prasyarat: modul `b-xi2-m10` dan fondasi `FND-X1-M4` dan `FND-X1-M5` (konsep jaringan dan diagnosis dasar).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-BK-d` (jaringan) hanya didukung sebagian oleh jalur ini: modul ini hanya mendukung sebagian butir itu, yaitu pengiriman data HTTP, dan belum dihitung memenuhinya. Pendalaman model dan lapisan jaringan ada di `pendamping-model-jaringan-dan-troubleshooting`.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-BK-d` (jaringan) hanya didukung sebagian oleh jalur ini: modul ini hanya mendukung sebagian butir itu, yaitu pengiriman data HTTP, dan belum dihitung memenuhinya. Pendalaman model dan lapisan jaringan ada di `pendamping-model-jaringan-dan-troubleshooting`.
 
 Contoh dijalankan penyusun dengan Bun 1.4.4 per 2026-11, `curl`, dan Chrome tanpa kepala, seluruhnya di `localhost`. Tangkapan layar DevTools tidak disertakan; langkahnya mengikuti dokumentasi resmi dan tampilannya bisa berbeda di versi peramban lain. Tugas baca-dan-prediksi `AI: tanpa AI`; selain itu AI boleh dipakai dengan etika dan dicatat, tanpa data pribadi atau rahasia pada permintaanmu.
 

@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XI2-M1` silabus v1.4.1: server HTTP dengan Bun. Prasyarat: modul `b-xi1-m12` (Git, cabang, dan ulasan) serta blok fondasi `FND-X1-M4` dan `FND-X1-M5` (konsep jaringan dan internet, pengiriman data, pemecahan masalah dasar); keduanya dapat dibaca ulang di `fondasi-jaringan-dan-internet`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-AP-d` dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan butir itu.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-AP-d` dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul.
 
 Semua contoh dijalankan penyusun dengan Bun 1.4.4 dan TypeScript 7.0.2 per 2026-11 di Linux; tanggal pada keluaran dan alamat folder di komputermu berbeda. **Server di modul ini hanya berjalan di `localhost`, tidak memakai akun, kunci, atau layanan luar, dan semua datanya karangan.** Tugas baca-dan-prediksi ditandai `AI: tanpa AI`; selain itu AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu.
 

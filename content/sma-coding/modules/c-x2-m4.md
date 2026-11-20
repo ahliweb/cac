@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas X jalur C (IoT dan robotika), minggu `C-X2-M4` silabus v1.3: larik (array) dan rata-rata bergerak. Prasyarat: modul `c-x2-m3` (data berkualitas) dan modul `c-x1-m12` (fungsi dan larik).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `E-BK-a` (konsep struktur data dan algoritma standar) dan `E-BK-c` (menerapkan algoritma dan struktur data standar) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: program penyaring. Latihan silabusnya: rata-rata 5 pembacaan terakhir.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `E-BK-a` (konsep struktur data dan algoritma standar) dan `E-BK-c` (menerapkan algoritma dan struktur data standar) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: program penyaring. Latihan silabusnya: rata-rata 5 pembacaan terakhir.
 
 Minggu ini tidak bertanda (F): semua bagian pokok dikerjakan **tanpa papan**, dengan kertas dan "papan tiruan" di komputer. Bila kamu mencoba dengan papan, ikuti aturan keselamatan modul sebelumnya (daya USB saja, cabut kabel sebelum mengubah rangkaian). Nomor pin pada contoh hanya contoh `[belum terverifikasi]` untuk papanmu.
 

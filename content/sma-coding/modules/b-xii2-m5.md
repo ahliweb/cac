@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XII2-M5` silabus v1.4.1: sprint 2, fitur sesuai profil `landing`. Dikerjakan berkelompok dua sampai tiga orang. Prasyarat: modul `b-xii2-m4` (tampilan tahap 1).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Silabus memetakan butir `F-BK-a` dan `F-LD-f` pada minggu ini; modul draf ini belum dihitung memenuhi keduanya. Keluaran minggu ini: fitur tahap 2.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Silabus memetakan butir `F-BK-a` dan `F-LD-f` pada minggu ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul. Keluaran minggu ini: fitur tahap 2.
 
 **Batas modul ini.** Fitur di sini berarti fitur bawaan profil `landing` yang diisi lewat konten, ditambah satu yang kamu tulis sendiri: **formulir kontak di situsmu** (`apps/storefront/src/pages/kontak.astro`, repositori turunanmu). Backend tidak disentuh, dan formulir **tidak mengirim, menyimpan, atau mencatat data**: tidak ada `fetch`, `localStorage`, atau endpoint. Dijalankan penyusun 2026-11-20 dengan Bun 1.4.4 pada salinan `awcms-one` 0.20.0 hasil `template:init` (`b-xii1-m5`). Tugas prediksi `AI: tanpa AI`; selain itu AI boleh dipakai dengan etika dan dicatat, tanpa data pribadi atau rahasia.
 

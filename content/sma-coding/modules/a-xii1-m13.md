@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur A (Algoritmik dengan C++), minggu `A-XII1-M13` silabus v1.4.1: proyek. Prasyarat: modul `a-xii1-m12` dan modul struktur data sebelumnya (`a-xii1-m9`, `a-xii1-m10`). Dikerjakan berkelompok atau mandiri.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Silabus tidak memetakan butir capaian pembelajaran untuk minggu ini, jadi modul ini tidak dihitung memenuhi butir CP apa pun. Penilaian proyek memakai rubrik dari gurumu; modul ini tidak menilai. Datamu **sintetis** (buatanmu sendiri); tidak ada data murid atau orang nyata.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Silabus tidak memetakan butir capaian pembelajaran untuk minggu ini, jadi modul ini tidak dihitung memenuhi butir CP apa pun. Penilaian proyek memakai rubrik dari gurumu; modul ini tidak menilai. Datamu **sintetis** (buatanmu sendiri); tidak ada data murid atau orang nyata.
 
 ## Ingat kembali
 

@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur C (IoT dan robotika), minggu `C-XII1-M10` silabus v1.4: daya dan keselamatan baterai (F). Prasyarat: modul `c-xii1-m9` (kalibrasi dan pengujian sistematis) dan `FND-X1-M6` (keselamatan dan etika digital). Kamu juga memakai perkiraan waktu operasi dari `c-xii1-m2`, yang belum terindeks saat modul ini ditulis.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik, dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: lembar periksa daya. Latihan silabusnya: rencana daya robot.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi), dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: lembar periksa daya. Latihan silabusnya: rencana daya robot.
 
 Ada dua cara mengerjakan. **Dengan papan (F):** kelompok memasang pembagi tegangan dan memantau baterai robot dengan bimbingan guru. **Tanpa papan:** kamu menjalankan program lembar periksa di komputer dengan pembacaan karangan. Semua angka baterai, resistor, dan arus hanya contoh `[belum terverifikasi]`; ambil dari lembar data komponenmu dan dari pengukuran.
 

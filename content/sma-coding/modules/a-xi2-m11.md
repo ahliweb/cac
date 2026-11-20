@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur A (Algoritmik dengan C++), minggu `A-XI2-M11` silabus v1.4.1: sumber data terbuka dan legal. Prasyarat: modul `a-xi2-m10` dan fondasi `FND-X1-M2` (perangkat lunak, berkas, dan lisensi).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-AD-a` dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan. Modul ini bukan nasihat hukum: bila ragu, tanyakan gurumu dan jangan memakai datanya. Semua data contoh adalah **karangan** dengan alamat berakhiran `.example`; tidak ada data murid atau orang nyata. Tiap soal latihan bertanda `AI: boleh` atau `AI: tanpa AI`. Masukan lewat berkas: `./program < sumber.csv`.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-AD-a` dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul. Modul ini bukan nasihat hukum: bila ragu, tanyakan gurumu dan jangan memakai datanya. Semua data contoh adalah **karangan** dengan alamat berakhiran `.example`; tidak ada data murid atau orang nyata. Tiap soal latihan bertanda `AI: boleh` atau `AI: tanpa AI`. Masukan lewat berkas: `./program < sumber.csv`.
 
 ## Ingat kembali
 

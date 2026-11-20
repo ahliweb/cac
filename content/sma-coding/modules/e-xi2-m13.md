@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M13` silabus v1.4: proyek mini semester 2, yaitu menyajikan satu fenomena (Bell, teleportasi, atau Deutsch-Jozsa) lewat simulasi dan poster, dikerjakan berkelompok. Prasyarat: modul `e-xi2-m12`; modul `e-xi2-m2`, `e-xi2-m7`, dan `e-xi2-m4` (simulator n qubit) sesuai fenomena yang kamu pilih. Alat: kertas, kalkulator, simulatormu dari `e-xi2-m4` (C++17 atau TypeScript dengan Bun; tanpa akun).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur E adalah pengayaan di luar rumusan CP; minggu ini tanpa irisan pengayaan, jadi modul ini tidak dihitung memenuhi butir CP mana pun. Jangan menaruh nama lengkap, foto, atau suara murid pada poster atau berkas; pakai nama peran.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Jalur E adalah pengayaan di luar rumusan CP; minggu ini tanpa irisan pengayaan, jadi modul ini tidak dihitung memenuhi butir CP mana pun. Jangan menaruh nama lengkap, foto, atau suara murid pada poster atau berkas; pakai nama peran.
 
 Aturan AI jalur ini: AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu, dan tanpa akun wajib. Saran: tulis rencana dan prediksimu dulu, baru minta petunjuk bertahap; kode buatan AI kamu baca, jalankan, dan uji. Catat pemakaian AI pada Daftar periksa.
 

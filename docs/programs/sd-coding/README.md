@@ -1,7 +1,7 @@
 # Program Pembelajaran Coding SD (`sd-coding`)
 
-- **Version:** v1.2.0
-- **Last updated:** 2026-11-19
+- **Version:** v1.3.0
+- **Last updated:** 2026-11-20
 - **Status:** Silabus v1.0 DISETUJUI pemilik program (2026-11-19) untuk kelas 1-6 beserta rekomendasi penyusun (issue #128); sudah dikodekan ke `data/sd-coding/` (lima berkas) dan terdaftar di `data/programs.json` ([ADR-0006](../../architecture/adr/0006-multi-program-repository.md), [ADR-0008](../../architecture/adr/0008-skema-khusus-per-program.md)). Modul belajar (tidak termasuk persetujuan silabus; [ADR-0007](../../architecture/adr/0007-authored-learning-content.md)): 168 modul draf (panduan guru) di `content/sd-coding/modules/`, 168 lembar anak di `content/sd-coding/lembar/`, dan 168 gambar SVG di `content/sd-coding/gambar/`, terindeks di `data/sd-coding/modules.json`; semuanya berstatus `draf` dan belum ditinjau pemilik (per 2026-11-19). Revisi v1.1.0 (jembatan dari TK dan ke SMP, bagian 7) disetujui lewat keputusan pemilik 2026-11-19 (issue #177).
 - **Changeset:** Silabus disetujui dan dikodekan: `silabus-draf.md` menjadi `silabus.md` v1.0.0 dengan keputusan pemilik menggantikan pertanyaan terbuka, kutipan CP Fase C dikoreksi dengan teks SK 046/H/KR/2025, corpus `data/sd-coding/` dan pendaftaran program (issue #128).
 
@@ -83,10 +83,9 @@ Status per 2026-11-19, dihitung dari repositori:
 | Modul panduan guru | 168 (`sd1-1-m1` sampai `sd6-2-m14`; 6 kelas x 2 semester x 14 minggu) | `content/sd-coding/modules/<id>.md` |
 | Lembar anak | 168 | `content/sd-coding/lembar/<id>.md` |
 | Gambar SVG lembar | 168 | `content/sd-coding/gambar/` |
-| Indeks | 168 entri, semuanya `draf` | `data/sd-coding/modules.json` (skema `src/schema/sd-module.ts`) |
+| Indeks | 168 entri, semuanya `disetujui` | `data/sd-coding/modules.json` (skema `src/schema/sd-module.ts`) |
 
-Semua modul berstatus `draf` dan belum ditinjau pemilik; tinjauan modul
-dilacak di issue #125 dan butir yang perlu dicek peninjau dikumpulkan di
+Semua modul berstatus `disetujui` sejak 2026-11-20 atas keputusan pemilik program lewat dialog pilihan baku (#125), bukan hasil tinjauan isi per modul; butir yang perlu dicek dikumpulkan sebagai tindak lanjut revisi di
 [`../catatan-tinjauan-modul.md`](../catatan-tinjauan-modul.md). Modul
 mengikuti [`rancangan-modul.md`](rancangan-modul.md). Perintah:
 `bun run check:learner-assets` (SVG dan tautan gambar lembar) dan
@@ -102,3 +101,4 @@ mengikuti [`rancangan-modul.md`](rancangan-modul.md). Perintah:
 | v1.2.0 | 2026-11-19 | Sinkron dokumen (#124): status modul belajar (168 modul draf, 168 lembar, 168 gambar SVG, indeks `modules.json`), `rancangan-modul.md` dan pilot masuk daftar berkas; isi silabus dan corpus tidak berubah. |
 | v1.0.0 | 2026-11-19 | Silabus disetujui pemilik dan dikodekan ke `data/sd-coding/`; `silabus-draf.md` menjadi `silabus.md`; keputusan pemilik dicatat; CP dicocokkan dengan SK 046/H/KR/2025 (issue #128). |
 | v0.1.0 | 2026-11-19 | Folder program dibuat: README, riset, dan draf silabus (issue #128). |
+| v1.3.0 | 2026-11-20 | Pemilik menyetujui 168 modul belajar lewat dialog pilihan baku ("Setujui semua, catatan jadi tindak lanjut", #125): indeks `modules.json` berstatus `disetujui`; butir catatan tinjauan jadi tindak lanjut revisi; isi silabus dan corpus tidak berubah. |

@@ -1,10 +1,12 @@
 # Rancangan Seri Modul Jalur A dan B (sma-coding): 154 Modul, Satu per Minggu
 
-- **Version:** v0.3.0
+- **Version:** v0.3.1
 - **Last updated:** 2026-11-20
 - **Status:** Rancangan **DISETUJUI pemilik 2026-11-19** lewat dialog keputusan (bagian 8): pertanyaan 1 opsi "Setujui, evaluasi guru paralel" (templat dan rancangan disetujui; penulisan tidak dijeda, evaluasi guru nyata berjalan paralel dan temuannya diperbaiki lewat PR revisi), pertanyaan 2 opsi "Per semester, A dan B paralel", pertanyaan 3 opsi "Soal orisinal + tautan resmi". Pertanyaan 4 tidak diajukan ke pemilik; orchestrator memakai opsi yang disarankan (pemeriksaan sintaks `ts`/`js` digabung sebelum P1 B) karena pemeriksaan itu sudah selesai dibuat. Persetujuan ini untuk rancangan, bukan modul: semua modul jalur A dan B yang ditulis berstatus `draf` (ADR-0007). Dua keputusan lanjutan pemilik 2026-11-20 (formulir kontak `b-xii2-m5` dan cadangan lab tanpa Docker; issue #269) dicatat di bagian 8.
 - **Changeset:** `.changeset/rancangan-modul-ab.md` (patch): dokumen rancangan saja; tidak mengubah `content/`, `data/`, `src/`, atau silabus.
 - **Issue:** [#237](https://github.com/ahliweb/osn/issues/237); lanjutan dari issue #124 (seri modul belajar siswa SMA).
+
+> **Catatan status (2026-11-20, #125).** Pernyataan "berstatus `draf`" atau "modul draf" di dokumen ini adalah keadaan saat rancangan ditulis. Pada 2026-11-20 pemilik program memilih "Setujui semua, catatan jadi tindak lanjut" lewat dialog pilihan baku, sehingga seluruh 753 modul enam program coding berstatus `disetujui` di `data/<id>/modules.json` (bukan hasil tinjauan isi per modul; butir [`catatan-tinjauan-modul.md`](../catatan-tinjauan-modul.md) menjadi tindak lanjut revisi). Pernyataan status modul di bawah, termasuk aturan "modul baru berstatus `draf`", adalah riwayat atau aturan untuk modul baru.
 
 > **Konten karangan.** Dokumen ini konten karangan menurut
 > [ADR-0007](../../architecture/adr/0007-authored-learning-content.md), bukan
@@ -770,6 +772,7 @@ tafsir silabus, bukan persetujuan isi modul; semua modul tetap `draf`.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v0.3.1 | 2026-11-20 | Catatan status 2026-11-20: pemilik menyetujui 753 modul enam program coding (#125); pernyataan `draf` di dokumen ini menjadi riwayat; isi rancangan tidak berubah. |
 | v0.3.0 | 2026-11-20 | Mencatat dua keputusan lanjutan pemilik 2026-11-20 (issue #269): "Formulir harus di situs" (bagian 5.3: formulir `b-xii2-m5` ada di repositori turunan `landing` murid, bukan prototipe `localhost`) dan "Boleh, dengan batas jelas" (cadangan lab tanpa Docker; bagian 8, 5.3, 9). |
 | v0.2.1 | 2026-11-20 | Bagian 5.3: catatan `b-xii2-m5` (profil `landing` tanpa formulir kontak; FAQ dari pengaturan CMS; formulir prototipe `localhost` yang memvalidasi lalu membuang data; FAQ di CMS lab tugas guru). |
 | v0.2.0 | 2026-11-19 | Mencatat keputusan pemilik lewat dialog (pertanyaan 1: "Setujui, evaluasi guru paralel"; 2: per semester, A dan B paralel; 3: soal orisinal dan tautan resmi); pertanyaan 4 memakai opsi disarankan oleh orchestrator. Catatan P2 di bagian 7 disesuaikan (tanpa jeda evaluasi). |

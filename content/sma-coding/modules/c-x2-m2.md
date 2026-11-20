@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas X jalur C (IoT dan robotika), minggu `C-X2-M2` silabus v1.3: sensor suhu dan kelembapan (F). Prasyarat: modul `c-x2-m1` (penelusuran galat). Kamu juga memakai tipe data dari `c-x1-m11`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik, dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: program pembacaan sensor. Latihan silabusnya: menampilkan suhu ruang kelas.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi), dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: program pembacaan sensor. Latihan silabusnya: menampilkan suhu ruang kelas.
 
 Ada dua cara mengerjakan. **Dengan papan (F):** kelompok merakit sensor suhu dan kelembapan sesuai lembar guru dan membaca nilainya di monitor serial. **Tanpa papan:** kamu menelusuri program di kertas dan menjalankan "papan tiruan" di komputer yang memberi pembacaan karangan. Pustaka sensor di modul ini adalah **contoh karangan** untuk belajar pola; pustaka sungguhan untuk sensormu punya nama fungsi sendiri, jadi baca dokumentasinya `[belum terverifikasi]`.
 

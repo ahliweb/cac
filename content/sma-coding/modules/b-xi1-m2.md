@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XI1-M2` silabus v1.4.1: TypeScript I, tipe dasar. Prasyarat: modul `b-xi1-m1` (proses rekayasa produk digital) dan `b-x1-m12` (fungsi). Kamu juga memakai array dari `b-x2-m1`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir CP untuk minggu ini tidak dipetakan silabus; modul ini tidak dihitung memenuhi butir CP apa pun.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir CP untuk minggu ini tidak dipetakan silabus; modul ini tidak dihitung memenuhi butir CP apa pun.
 
 Semua contoh dijalankan penyusun dengan Bun 1.4.4 dan TypeScript 7.0.2 (hasil `bunx tsc --version`) per 2026-11; pesan galat TypeScript berbahasa Inggris dan nomor kolomnya bisa berbeda di versi lain. Tidak ada akun dan tidak ada data nyata. Tugas baca-dan-prediksi ditandai `AI: tanpa AI`; selain itu AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu.
 

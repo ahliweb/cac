@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur C (IoT dan robotika), minggu `C-XI2-M1` silabus v1.4: jaringan nirkabel dan perangkat IoT (F). Prasyarat: modul `c-xi1-m7`, serta `FND-X1-M4` dan `FND-X1-M5` (konsep jaringan, alamat IP, dan urutan diagnosis). Sebaiknya kamu juga sudah mengerjakan `C-XI1-M10` sampai `C-XI1-M12` (pengiriman data antarperangkat); modul itu belum terindeks saat modul ini ditulis, jadi tidak ditulis sebagai prasyarat resmi.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `E-LD-e` (keamanan dasar konektivitas jaringan; minggu ini baru tahap sambungan) dan `F-BK-d` (model jaringan, pengiriman data, dan pemecahan masalah), dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: papan terhubung ke jaringan lab. Latihan silabusnya: mencetak alamat IP papan.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `E-LD-e` (keamanan dasar konektivitas jaringan; minggu ini baru tahap sambungan) dan `F-BK-d` (model jaringan, pengiriman data, dan pemecahan masalah), dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: papan terhubung ke jaringan lab. Latihan silabusnya: mencetak alamat IP papan.
 
 Ada dua cara mengerjakan. **Dengan papan (F):** kelompok menghubungkan papan ESP32 ke jaringan lab yang disiapkan guru. **Tanpa papan:** kamu menghitung dengan kertas dan menjalankan program di komputer yang memeriksa apakah dua alamat berada di jaringan yang sama. Semua alamat di modul ini adalah alamat contoh; jaringan lab sungguhan memakai alamat dari gurumu.
 

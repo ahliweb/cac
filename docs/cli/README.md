@@ -843,8 +843,10 @@ modules.json`), an invalid index, a missing or blank body, or a dangling
 
 The examples below were produced against a temporary copy of the repository
 with a synthetic `data/tk-coding/modules.json` and synthetic content files
-(`tk-a1-m1`); the repository itself has no module index for these
-programmes yet.
+(`tk-a1-m1`) whose status is `draf`, to show the draft banner; the
+repository's own module indexes of these programmes exist and every entry is
+`disetujui` since 2026-11-20 (no banner, footer `Disetujui pada 2026-11-20 oleh
+peninjau dengan peran: pemilik program.`).
 
 A `tk-coding` module is a **teacher guide**; its status banner is the same as
 for every programme, and `cpOverlap` is shown as an interpreted overlap:

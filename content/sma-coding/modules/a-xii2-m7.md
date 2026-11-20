@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur A (Algoritmik dengan C++), minggu `A-XII2-M7` silabus v1.4.1: latihan terpadu III, yaitu menganalisis kesalahan jawaban. Prasyarat: modul `a-xii2-m6` (latihan terpadu II); bawa jawabanmu yang salah atau kurang dari kontes mini.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Silabus tidak memetakan butir capaian pembelajaran untuk minggu ini, jadi modul ini tidak dihitung memenuhi butir CP apa pun. Modul ini **seluruhnya tanpa AI**: semua soal bertanda `AI: tanpa AI` (silabus bagian 7.4), karena tujuannya menyelesaikan ulang sendiri. Soal karangan bergaya kompetitif, ditulis orisinal, bukan salinan atau parafrase soal OSN, TOKI, IOI, atau platform lain; sumber resmi hanya ditautkan: <https://osn.toki.id/>. Modul tidak menjanjikan kedalaman soal OSN.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Silabus tidak memetakan butir capaian pembelajaran untuk minggu ini, jadi modul ini tidak dihitung memenuhi butir CP apa pun. Modul ini **seluruhnya tanpa AI**: semua soal bertanda `AI: tanpa AI` (silabus bagian 7.4), karena tujuannya menyelesaikan ulang sendiri. Soal karangan bergaya kompetitif, ditulis orisinal, bukan salinan atau parafrase soal OSN, TOKI, IOI, atau platform lain; sumber resmi hanya ditautkan: <https://osn.toki.id/>. Modul tidak menjanjikan kedalaman soal OSN.
 
 Masukan program diberikan lewat berkas: `./program < masukan.txt`. Semua data karangan.
 

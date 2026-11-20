@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XI1-M1` silabus v1.4.1: proses rekayasa produk digital. Prasyarat: modul `b-x2-m12` (Git dan kolaborasi dasar). Kamu juga memakai larik dan fungsi dari `b-x1-m12` dan `b-x2-m1`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-BK-a` (alur proses pengembangan program atau produk digital) dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan butir itu.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-BK-a` (alur proses pengembangan program atau produk digital) dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul.
 
 Semua contoh adalah kasus karangan: aplikasi "daftar tugas kelas" milik pengguna fiktif, tanpa data nyata, tanpa akun, dan tanpa layanan luar. Kode dijalankan penyusun dengan Bun 1.4.4 per 2026-11. Tugas baca-dan-prediksi ditandai `AI: tanpa AI`; selain itu AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu.
 

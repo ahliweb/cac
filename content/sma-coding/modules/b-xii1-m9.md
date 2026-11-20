@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XII1-M9` silabus v1.4.1: pengujian dan gerbang mutu. Prasyarat: modul `b-xii1-m8` (SEO dasar) dan `b-xi1-m7` (pengujian dengan `bun test`).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-AP-c` (pemeliharaan dan kualitas kode) dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan butir itu.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-AP-c` (pemeliharaan dan kualitas kode) dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul.
 
 **Konteks semester ini.** Kelasmu mengkustomisasi profil `landing` dari `awcms-one` sebagai studi kasus: kamu hanya mengubah merek, konten, tema, SEO, dan dokumentasi, tanpa menyentuh backend. Fakta `awcms-one` dibaca dari repositori publiknya (`main`, 2026-11-20); yang tak bisa dicek ditandai `[belum terverifikasi]`.
 

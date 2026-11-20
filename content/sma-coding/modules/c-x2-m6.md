@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas X jalur C (IoT dan robotika), minggu `C-X2-M6` silabus v1.3: aktuator servo dan buzzer (F). Prasyarat: modul `c-x2-m5` (PWM). Kamu juga memakai fungsi dari `c-x1-m12`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik, dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: program aktuator. Latihan silabusnya: palang pintu mini.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi), dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: program aktuator. Latihan silabusnya: palang pintu mini.
 
 Ada dua cara mengerjakan. **Dengan papan (F):** kelompok merakit servo dan buzzer sesuai lembar guru. **Tanpa papan:** kamu menelusuri program di kertas dan menjalankan "papan tiruan" di komputer yang mencetak apa yang akan dilakukan servo dan buzzer. Nomor pin, rentang sudut, dan pustaka servo pada contoh hanya contoh `[belum terverifikasi]` untuk papan dan servomu.
 

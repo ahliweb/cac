@@ -1,7 +1,7 @@
 # Program Pembelajaran Coding Perguruan Tinggi (`kuliah-coding`)
 
-- **Version:** v1.3.0
-- **Last updated:** 2026-11-19
+- **Version:** v1.4.0
+- **Last updated:** 2026-11-20
 - **Status:** **DISETUJUI** pemilik program: v1.0 pada 2026-11-19 (issue #130) beserta rekomendasi penyusun, revisi v1.1 (rekayasa perangkat lunak berbantuan AI) lewat keputusan pemilik 2026-11-19 (issue #139). Program **terdaftar** di `data/programs.json` (versi silabus 1.1.0) dan corpusnya ada di `data/kuliah-coding/` (ADR-0006, ADR-0008). Modul belajar (ADR-0007): 24 modul draf (satu per mata kuliah) di `content/kuliah-coding/modules/`, terindeks di `data/kuliah-coding/modules.json`; semuanya berstatus `draf` dan belum ditinjau pemilik (per 2026-11-19). Revisi v1.2.0 (bagian 5, jembatan: 5.1 dari SMA dan baris dewasa-coding di 5.2) disetujui lewat keputusan pemilik 2026-11-19 (issue #177).
 
 > Isi folder ini adalah konten **karangan** (*authored*) menurut
@@ -76,12 +76,9 @@ Status per 2026-11-19, dihitung dari repositori:
 | Bagian | Jumlah | Lokasi |
 | --- | --- | --- |
 | Modul | 24: jalur U 5 (`kul-u-101`..), jalur I 16 (`kul-i-101`..), jalur K 3 (`kul-k-201`, `kul-k-301`, `kul-k-401`) | `content/kuliah-coding/modules/<id>.md` |
-| Indeks | 24 entri, semuanya `draf` | `data/kuliah-coding/modules.json` (skema `src/schema/kul-module.ts`) |
+| Indeks | 24 entri, semuanya `disetujui` | `data/kuliah-coding/modules.json` (skema `src/schema/kul-module.ts`) |
 
-Tidak ada `lembar/` dan `gambar/` untuk program ini. Semua modul berstatus
-`draf` dan belum ditinjau pemilik; tinjauan dilacak di issue #125 dan butir
-yang perlu dicek peninjau (termasuk tingkat AI `kul-i-306` dan `kul-i-307`
-yang `[asumsi]`) dikumpulkan di
+Tidak ada `lembar/` dan `gambar/` untuk program ini. Semua modul berstatus `disetujui` sejak 2026-11-20 atas keputusan pemilik program lewat dialog pilihan baku (#125), bukan hasil tinjauan isi per modul; butir yang perlu dicek dikumpulkan sebagai tindak lanjut revisi di (termasuk tingkat AI `kul-i-306` dan `kul-i-307` yang `[asumsi]`)
 [`../catatan-tinjauan-modul.md`](../catatan-tinjauan-modul.md). Modul
 mengikuti [`rancangan-modul.md`](rancangan-modul.md).
 
@@ -104,3 +101,4 @@ dan audit tetap); hanya isi sel dan versi (1.1.0).
 | v1.1.0 | 2026-11-19 | Rekayasa perangkat lunak berbantuan AI (issue #139): `KUL-U-202`, `KUL-I-204`, `KUL-I-401`, `KUL-I-301`, `KUL-I-305`, `KUL-I-303`, jalur K, kebijakan AI diperkuat, glosarium; SKS tidak berubah; corpus dan registri ke 1.1.0. |
 | v1.0.0 | 2026-11-19 | Disetujui pemilik (issue #130); `silabus-draf.md` menjadi `silabus.md`; program terdaftar dan di-encode ke `data/kuliah-coding/`. |
 | v0.1.0 | 2026-11-19 | Draf awal folder program (issue #130): README, riset, silabus draf. |
+| v1.4.0 | 2026-11-20 | Pemilik menyetujui 24 modul belajar lewat dialog pilihan baku ("Setujui semua, catatan jadi tindak lanjut", #125): indeks `modules.json` berstatus `disetujui`; butir catatan tinjauan jadi tindak lanjut revisi; isi silabus dan corpus tidak berubah. |

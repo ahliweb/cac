@@ -1,6 +1,6 @@
 ## Untuk siapa modul ini
 
-Modul ini untuk siswa SMA reguler kelas X yang sudah mengenal basis 2 dan konversi bilangan bulat. Ia bagian dari seri Matematika Komputasi Dasar dan berstatus DRAF: karangan penyusun, belum disetujui pemilik, dan tidak dihitung sebagai pemenuhan butir capaian pembelajaran (hanya mendukung pemahaman model komputer pada butir E-BK-e).
+Modul ini untuk siswa SMA reguler kelas X yang sudah mengenal basis 2 dan konversi bilangan bulat. Ia bagian dari seri Matematika Komputasi Dasar dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi); isinya karangan penyusun, dan tidak dihitung sebagai pemenuhan butir capaian pembelajaran (hanya mendukung pemahaman model komputer pada butir E-BK-e).
 
 Prasyarat: modul `matkom-sistem-bilangan-basis` (nilai tempat, konversi, aritmetika biner), dan pengantar representasi data di `FND-X1-M3`.
 

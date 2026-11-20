@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XI1-M3` silabus v1.4.1: TypeScript II, yaitu `interface`, `type`, tipe gabungan, dan generik dasar. Prasyarat: modul `b-xi1-m2` (TypeScript I: tipe dasar). Kamu juga memakai objek dari `b-x2-m3` dan pengurutan dari `b-x2-m9`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir CP untuk minggu ini tidak dipetakan silabus; modul ini tidak dihitung memenuhi butir CP apa pun.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir CP untuk minggu ini tidak dipetakan silabus; modul ini tidak dihitung memenuhi butir CP apa pun.
 
 Semua contoh dijalankan penyusun dengan Bun 1.4.4 dan diperiksa dengan TypeScript 7.0.2 (`bunx tsc --noEmit`) per 2026-11. Data berupa katalog buku karangan, tanpa data nyata dan tanpa akun. Tugas baca-dan-prediksi ditandai `AI: tanpa AI`; selain itu AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu.
 

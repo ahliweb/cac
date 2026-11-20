@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XII1-M12` silabus v1.4.1: ulasan sejawat atas kustomisasi temanmu. Prasyarat: modul `b-xii1-m11` dan modul `b-xi1-m12` (cabang, permintaan penggabungan, dan ulasan kode).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-AP-c` (pemeliharaan dan kualitas kode) dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan butir itu.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-AP-c` (pemeliharaan dan kualitas kode) dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul.
 
 **Konteks semester ini.** Kelasmu mengkustomisasi profil `landing` dari `awcms-one` sebagai studi kasus: kamu hanya mengubah merek, konten, tema, SEO, dan dokumentasi, tanpa menyentuh backend. Fakta `awcms-one` dibaca dari repositori publiknya (`main`, 2026-11-20). Contoh dijalankan penyusun dengan Bun 1.4.4 dan Git 2.43.0 per 2026-11 pada salinan sementara repositori turunan; tidak ada akun dan tidak ada layanan luar. Permintaan penggabungan adalah fitur situs hosting yang tidak dibuka penyusun `[belum terverifikasi]`; di sini ulasan dilakukan lewat cabang lokal, seperti di `b-xi1-m12`. Baca-dan-prediksi `AI: tanpa AI`.
 

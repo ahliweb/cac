@@ -1,9 +1,11 @@
 # Rancangan Modul Pendamping Literasi Digital (SMA Coding)
 
-- **Version:** v0.4.1
-- **Last updated:** 2026-11-19
+- **Version:** v0.4.2
+- **Last updated:** 2026-11-20
 - **Status:** Rancangan DISETUJUI pemilik 2026-11-19 beserta keenam rekomendasi (issue #69); sembilan modul draf `pendamping-*` (tujuh sejak PR #118, dua untuk #105) ada di `content/sma-coding/modules/` dan terindeks di `data/sma-coding/modules.json`, berstatus draf sampai ditinjau pemilik
 - **Changeset:** Status: dua modul pendamping tambahan untuk F-LD-d dan F-LD-e (#105) masuk repositori dan terindeks; total sembilan modul `pendamping-*`.
+
+> **Catatan status (2026-11-20, #125).** Pernyataan "berstatus `draf`" atau "modul draf" di dokumen ini adalah keadaan saat rancangan ditulis. Pada 2026-11-20 pemilik program memilih "Setujui semua, catatan jadi tindak lanjut" lewat dialog pilihan baku, sehingga seluruh 753 modul enam program coding berstatus `disetujui` di `data/<id>/modules.json` (bukan hasil tinjauan isi per modul; butir [`catatan-tinjauan-modul.md`](../catatan-tinjauan-modul.md) menjadi tindak lanjut revisi). Pernyataan status modul di bawah, termasuk aturan "modul baru berstatus `draf`", adalah riwayat atau aturan untuk modul baru.
 
 > **Catatan status (2026-11-19, sinkron dokumen #124).** Kalimat "modulnya belum ditulis ke repositori" di blok kutipan bawah adalah riwayat saat persetujuan: sembilan modul `pendamping-*` kini ada di `content/sma-coding/modules/` dan di `data/sma-coding/modules.json` (skema `src/schema/sma-module.ts`), semua `draf`, belum ditinjau. Analisis bagian 7 ("kebutuhan skema indeks") adalah riwayat: skema indeks sma-coding sudah ada dan `data/sma-coding/modules.json` berisi 239 entri.
 > Keputusan dan kontrak yang disetujui pemilik di dokumen ini tidak berubah; yang diperbarui hanya klausa status yang basi.
@@ -328,6 +330,7 @@ dicatat sebagai issue terpisah (#105). Modul ditulis berstatus `draf`.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v0.4.2 | 2026-11-20 | Catatan status 2026-11-20: pemilik menyetujui 753 modul enam program coding (#125); pernyataan `draf` di dokumen ini menjadi riwayat; isi rancangan tidak berubah. |
 | v0.4.1 | 2026-11-19 | Sinkron dokumen (#124): catatan status; klausa "modulnya belum ditulis" dan analisis skema ditandai riwayat. Isi rancangan tidak berubah. |
 | v0.4.0 | 2026-11-19 | Dua modul tambahan lintas jalur untuk celah F-LD-d dan F-LD-e (keputusan pemilik di issue #105): bagian 3.3 baru, pemetaan bagian 5 diperbarui; modul draf `pendamping-merancang-kebutuhan-sistem` dan `pendamping-keamanan-lanjut-konektivitas` terindeks. |
 | v0.3.0 | 2026-11-19 | Status: tujuh modul draf `pendamping-*` masuk repositori dan terindeks (PR #118). |

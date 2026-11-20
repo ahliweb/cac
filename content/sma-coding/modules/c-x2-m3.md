@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas X jalur C (IoT dan robotika), minggu `C-X2-M3` silabus v1.3: data berkualitas dari sensor. Prasyarat: modul `c-x2-m2` (membaca sensor).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `E-BK-b` (proses komputasi manusia untuk data berkualitas) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: tabel data bersih. Latihan silabusnya: validasi rentang dan menandai lonjakan palsu.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `E-BK-b` (proses komputasi manusia untuk data berkualitas) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: tabel data bersih. Latihan silabusnya: validasi rentang dan menandai lonjakan palsu.
 
 Minggu ini tidak bertanda (F): semua bagian pokok dikerjakan **tanpa papan**, dengan kertas dan program di komputer. Bila kamu mencoba dengan papan, ikuti aturan keselamatan modul sebelumnya (daya USB saja, cabut kabel sebelum mengubah rangkaian). Semua angka di modul ini karangan.
 

@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XI2-M10` silabus v1.4.1: keamanan aplikasi dan UU. Prasyarat: modul `b-xi2-m9` dan fondasi `FND-X1-M6`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-LD-g` (hukum) dipetakan silabus sebagai dipenuhi jalur ini dan `F-LD-e` (keamanan jaringan lanjut) hanya didukung sebagian; modul draf ini belum dihitung memenuhi keduanya.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-LD-g` (hukum) dipetakan silabus sebagai dipenuhi jalur ini dan `F-LD-e` (keamanan jaringan lanjut) hanya didukung sebagian; pemenuhan butir mengikuti pemetaan silabus, bukan status modul.
 
 **Aturan keselamatan modul ini.** Kerentanan hanya diperlihatkan pada aplikasi latihan kecil di komputermu sendiri (`localhost`) dengan masukan sintetis. Jangan mencoba apa pun dari modul ini pada situs, aplikasi, atau jaringan milik orang lain, termasuk sekolah, tanpa izin tertulis pemiliknya. Semua "rahasia" di sini bernilai palsu (`KUNCI_PALSU_CONTOH`). Bagian hukum **bukan nasihat hukum**.
 

@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XII2-M13` silabus v1.4.1: portofolio dan refleksi, yaitu mengarsipkan karyamu dan merefleksikan prosesnya. Dikerjakan perorangan di atas hasil kelompok. Prasyarat: modul `b-xii2-m12` (presentasi).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-BK-a` (proses rekayasa) dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung memenuhinya. Keluaran minggu ini: portofolio dan refleksi. Penilaian memakai rubrik gurumu.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-BK-a` (proses rekayasa) dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul. Keluaran minggu ini: portofolio dan refleksi. Penilaian memakai rubrik gurumu.
 
 **Konteks semester ini.** Kelasmu mengkustomisasi profil `landing` dari `awcms-one` sebagai studi kasus (`main`, 2026-11-20). Portofolio dibuat **tanpa akun layanan luar**: berupa folder dan arsip di komputermu, yang kamu serahkan pada guru lewat cara yang disediakan sekolah. Contoh dijalankan penyusun dengan Bun 1.4.4 dan Git 2.43.0 per 2026-11 di repositori sementara. Semua nama dan konten karangan. AI boleh dipakai dengan etika dan dicatat, tanpa data pribadi atau rahasia pada permintaanmu.
 

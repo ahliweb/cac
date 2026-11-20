@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XI1-M4` silabus v1.4.1: `tsconfig` dan mode ketat. Prasyarat: modul `b-xi1-m3` (TypeScript II). Kamu juga memakai pemeriksaan data dari `b-x2-m10` dan alur dari `b-xi1-m1`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-AP-c` (pengembangan, pemeliharaan, penyempurnaan algoritma standar, kualitas kode) dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan butir itu.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-AP-c` (pengembangan, pemeliharaan, penyempurnaan algoritma standar, kualitas kode) dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul.
 
 Semua contoh dijalankan penyusun dengan Bun 1.4.4 dan TypeScript 7.0.2 (`bunx tsc`) per 2026-11. Pada versi lain pesan, nilai bawaan, dan isi `tsc --init` bisa berbeda. Tidak ada akun dan tidak ada data nyata. Tugas baca-dan-prediksi ditandai `AI: tanpa AI`; selain itu AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu.
 

@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur A (Algoritmik dengan C++), minggu `A-XII2-M8` silabus v1.4.1: latihan terpadu IV. Prasyarat: modul `a-xii2-m7`. Keluaran minggu ini adalah **laporan alternatif**: satu soal, dua solusi, dan alasan memilih salah satu.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir capaian pembelajaran yang bertaut: `F-BK-b` (beberapa strategi dan justifikasi efisiensi). Seluruh modul ini **tanpa AI** (silabus 7.4): latihan terpadu melatih kemampuan menyelesaikan ulang soal sendiri, jadi jangan memakai AI generatif untuk bagian mana pun, termasuk tugas baca-dan-prediksi. Soalnya dibuat orisinal oleh penyusun dan bergaya soal kompetitif; ia tidak menyalin atau memparafrasekan soal lomba atau platform mana pun. Semua angka dan data karangan, dan masukan program diberikan lewat berkas: `./program < masukan.txt`.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir capaian pembelajaran yang bertaut: `F-BK-b` (beberapa strategi dan justifikasi efisiensi). Seluruh modul ini **tanpa AI** (silabus 7.4): latihan terpadu melatih kemampuan menyelesaikan ulang soal sendiri, jadi jangan memakai AI generatif untuk bagian mana pun, termasuk tugas baca-dan-prediksi. Soalnya dibuat orisinal oleh penyusun dan bergaya soal kompetitif; ia tidak menyalin atau memparafrasekan soal lomba atau platform mana pun. Semua angka dan data karangan, dan masukan program diberikan lewat berkas: `./program < masukan.txt`.
 
 ## Ingat kembali
 

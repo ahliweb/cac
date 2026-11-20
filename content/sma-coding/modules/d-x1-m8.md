@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas X jalur D (kecerdasan buatan dan analisis data), untuk minggu `D-X1-M8` silabus v1.3: apa itu AI dan apa yang bukan. Prasyarat: `FND-X1-M1` (model Input-Proses-Output) dan `FND-X1-M3` (representasi data). Tidak perlu memprogram dan tidak perlu akun. Semua kegiatan memakai kertas dan diskusi (*unplugged*); Orange baru dipakai mulai `D-X1-M11`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur D adalah pengayaan di luar rumusan capaian pembelajaran (CP), jadi modul ini tidak dihitung memenuhi butir CP mana pun, dan minggu ini tidak punya irisan pengayaan.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Jalur D adalah pengayaan di luar rumusan capaian pembelajaran (CP), jadi modul ini tidak dihitung memenuhi butir CP mana pun, dan minggu ini tidak punya irisan pengayaan.
 
 **Aturan jalur D yang berlaku di setiap modul:**
 

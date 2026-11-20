@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur C (IoT dan robotika), minggu `C-XII1-M3` silabus v1.4: motor DC dan pengendali motor (F). Prasyarat: modul `c-xii1-m2` (arsitektur dan pemilihan komponen). Kamu juga memakai PWM dari `c-x2-m5` dan `millis()` dari `c-x2-m7`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik, dan tidak dihitung memenuhi butir capaian pembelajaran mana pun (keterampilan perakitan tidak dihitung sebagai butir CP). Keluaran minggu ini: program motor. Latihan silabusnya: robot maju-mundur-belok.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi), dan tidak dihitung memenuhi butir capaian pembelajaran mana pun (keterampilan perakitan tidak dihitung sebagai butir CP). Keluaran minggu ini: program motor. Latihan silabusnya: robot maju-mundur-belok.
 
 Ada dua cara mengerjakan. **Dengan papan (F):** kelompok merakit dua motor DC kecil, satu modul pengendali motor, dan satu tombol berhenti sesuai lembar guru. **Tanpa papan:** kamu menjalankan "papan tiruan" di komputer yang mencetak sinyal yang akan dikirim ke modul pengendali. Pemetaan pin arah dan cara modulmu menerima PWM bervariasi: baca lembar guru `[belum terverifikasi]`. Nomor pin pada contoh hanya contoh.
 

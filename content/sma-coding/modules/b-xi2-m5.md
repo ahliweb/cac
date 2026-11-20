@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XI2-M5` silabus v1.4.1: sumber data terbuka dan legal. Prasyarat: modul `b-xi2-m4` (berkas dan data JSON) dan blok fondasi `FND-X1-M2` (perangkat lunak, berkas, dan lisensi); keduanya dapat dibaca ulang di `fondasi-software-dan-sistem-operasi`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-AD-a` dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan butir itu.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-AD-a` dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul.
 
 Contoh dijalankan penyusun dengan Bun 1.4.4, TypeScript 7.0.2, dan Zod 4.6.7 per 2026-11, pada 2026-11-20. Isi halaman lisensi dibaca penyusun dari halaman resminya pada tanggal itu. Modul ini **bukan nasihat hukum** dan tidak membahas hukum hak cipta di Indonesia `[belum terverifikasi]`; ragu soal lisensi berarti bertanya kepada guru dan tidak memakai datanya. Pengunduhan butuh internet; di lab tanpa internet guru menyediakan salinan berkas yang sama. Tugas baca-dan-prediksi ditandai `AI: tanpa AI`; selain itu AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu.
 

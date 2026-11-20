@@ -12,13 +12,13 @@ alias lama yang berperilaku sama).
 | Jenis | Contoh | Aturan |
 | --- | --- | --- |
 | Transkripsi | `data/osn/*.json` (dari PDF silabus OSN), `data/<program>/*.json` (disalin setia dari `silabus.md` program yang sudah Anda setujui), lembar belajar yang diturunkan dari corpus | Disalin setia dari sumber. Berubah hanya lewat syllabus check dan form `curriculum-change` (OSN) atau revisi silabus yang Anda setujui (program coding); `bun run check:fidelity` memeriksa data terhadap silabusnya. |
-| Karangan | Modul di `content/<program>/modules/`, silabus program coding di `docs/programs/<id>/silabus.md`, kebijakan AI per program | Ditulis tim, termasuk draf agent AI. Berstatus `draf` sampai **manusia** menyetujuinya; silabus program berlaku setelah Anda menyetujuinya. |
+| Karangan | Modul di `content/<program>/modules/`, silabus program coding di `docs/programs/<id>/silabus.md`, kebijakan AI per program | Ditulis tim, termasuk draf agent AI. Berstatus `draf` sampai **manusia** menyetujuinya (753 modul enam program coding Anda setujui pada 2026-11-20 lewat dialog pilihan baku); silabus program berlaku setelah Anda menyetujuinya. |
 
 Agent AI boleh membuat dan menyunting draf, tetapi **tidak pernah**
 menetapkan `disetujui` atas inisiatif sendiri dan tidak pernah mencatat
 persetujuan yang tidak Anda pilih.
 
-## Meninjau modul draf
+## Meninjau modul
 
 ### 1. Baca modulnya
 
@@ -31,9 +31,15 @@ Atau buka berkasnya langsung di GitHub:
 [`mentor-osn.md`](mentor-osn.md); sumber kebenarannya `data/osn/modules.json`.
 Per 2026-11-18 kesepuluh modul OSN sudah `disetujui`: `dasar-pemrograman`
 lebih dulu, sembilan lainnya menyusul pada hari yang sama. Langkah di bawah
-berlaku untuk setiap modul baru, termasuk 753 modul draf enam program coding
-(`sma-coding` 393 modul, `sd-coding` 168, `smp-coding` 84, `tk-coding` 48,
-`dewasa-coding` 36, `kuliah-coding` 24; per 2026-11-20 semuanya `draf`).
+berlaku untuk setiap modul baru dan untuk revisi modul yang sudah disetujui,
+termasuk 753 modul enam program coding (`sma-coding` 393 modul, `sd-coding` 168,
+`smp-coding` 84, `tk-coding` 48, `dewasa-coding` 36, `kuliah-coding` 24). Pada
+2026-11-20 Anda memilih "Setujui semua, catatan jadi tindak lanjut" lewat
+dialog pilihan baku: ke-753 modul `disetujui` (`review`: `approvedOn`
+2026-11-20, `reviewerRole` "pemilik program"), tanpa tinjauan isi per modul;
+butir di `catatan-tinjauan-modul.md` dan penanda `[belum terverifikasi]` tetap
+menjadi tindak lanjut revisi. Modul yang kemudian ternyata bermasalah dapat
+ditarik dengan status `ditarik`.
 
 ### 2. Daftar periksa review
 
@@ -70,12 +76,13 @@ $ bun run scripts/check-learner-assets.ts
 check-learner-assets: OK -- 216 SVG file(s), 216 image link(s) in 216 sheet(s); 0 warning(s).
 ```
 
-### 3. Tambahan untuk modul draf program coding
+### 3. Tambahan untuk modul program coding
 
-Ada 753 modul draf enam program coding per 2026-11-20 (`tk-coding` 48,
+Ada 753 modul enam program coding per 2026-11-20 (`tk-coding` 48,
 `sd-coding` 168, `smp-coding` 84, `sma-coding` 393, `kuliah-coding` 24,
-`dewasa-coding` 36), semuanya `draf`. Selain tabel di atas, periksa butir
-berikut; butir khusus yang sudah diketahui perlu dicek per modul dikumpulkan di
+`dewasa-coding` 36), semuanya `disetujui` sejak 2026-11-20. Saat merevisi atau
+meninjau modul, selain tabel di atas, periksa butir
+berikut; butir khusus yang sudah diketahui perlu dicek per modul (tindak lanjut revisi) dikumpulkan di
 [`catatan-tinjauan-modul.md`](../programs/catatan-tinjauan-modul.md).
 
 | Aspek | Pertanyaan |
@@ -245,8 +252,8 @@ Cara membacanya, per issue:
 
 | Issue | Jenis | Yang menunggu Anda | Dokumen untuk dibaca |
 | --- | --- | --- | --- |
-| #125 | Tinjauan konten | Meninjau modul draf: awalnya 29 modul `sma-coding` (judul issue belum diperbarui), kini 753 modul draf enam program coding | bagian "Meninjau modul draf" di atas dan [`catatan-tinjauan-modul.md`](../programs/catatan-tinjauan-modul.md) |
-| #124 | Pekerjaan lanjutan | Penulisan modul: seluruh modul enam program sudah masuk repositori sebagai draf; yang tersisa adalah sinkron dokumen dan tinjauan, belum menunggu keputusan Anda | [`programs/README.md`](../programs/README.md) |
+| #125 | Tinjauan konten | Sudah Anda putuskan pada 2026-11-20 (dialog pilihan baku): 753 modul enam program coding `disetujui`, butir catatan menjadi tindak lanjut revisi; issue ditutup oleh PR persetujuan (daftar di atas adalah keluaran 2026-11-19, sebelum keputusan) | bagian "Meninjau modul" di atas dan [`catatan-tinjauan-modul.md`](../programs/catatan-tinjauan-modul.md) |
+| #124 | Pekerjaan lanjutan | Penulisan modul: seluruh modul enam program sudah masuk repositori (disetujui 2026-11-20, #125); yang tersisa adalah sinkron dokumen dan revisi dari catatan tinjauan, belum menunggu keputusan Anda | [`programs/README.md`](../programs/README.md) |
 | #151 | Tinjau ulang terjadwal | Meninjau ulang riset AI pada Mei 2027; belum jatuh tempo | [`riset/ai-rekayasa-perangkat-lunak.md`](../riset/ai-rekayasa-perangkat-lunak.md) |
 | #150 sampai #157 | Persiapan migrasi identitas (epik dan turunannya) | Dikerjakan di jalur terpisah (PR draf #158); tidak dibahas panduan ini | lihat issue #150 |
 
@@ -255,19 +262,19 @@ kognitif), #139 (riset AI; keputusan kebijakan AI per program sudah Anda ambil
 dan diterapkan: OSN #159, SMP #160, SMA #161, kuliah #162, dewasa #163; tinjau
 ulang terjadwal di #151) dan #140 (titik sambung audit dan fidelity) sudah
 selesai dan tertutup. Persetujuan silabus tidak otomatis menyetujui materi:
-modul kelima program itu sudah ada sebagai draf di `content/`, tetapi belum
-ditinjau, dan `plan` serta `render lembar-siswa` belum mendukungnya
-(`render modul` mendukung).
+modul kelima program itu sudah ada di `content/` dan Anda setujui pada
+2026-11-20 (tanpa tinjauan isi per modul), dan `plan` serta
+`render lembar-siswa` belum mendukungnya (`render modul` mendukung).
 
-Kandidat tinjauan Anda berikutnya:
+Kandidat revisi dan tinjauan lanjutan berikutnya:
 
-- 393 modul draf `sma-coding` di `content/sma-coding/modules/` (fondasi,
+- 393 modul `sma-coding` (disetujui 2026-11-20) di `content/sma-coding/modules/` (fondasi,
   matematika komputasi, cloud, pendamping, dan jalur A, B, C, D, E; baca dengan
   `cac render modul --program sma-coding --id <id>`, daftar id di
   `data/sma-coding/modules.json`), issue #125.
-- Modul draf lima program coding lainnya (`tk-coding` 48, `sd-coding` 168,
+- Modul lima program coding lainnya (disetujui 2026-11-20; `tk-coding` 48, `sd-coding` 168,
   `smp-coding` 84, `kuliah-coding` 24, `dewasa-coding` 36), dibaca dengan
   `cac render modul --program <id> --id <id-modul>`; butir yang perlu dicek
   dikumpulkan di [`catatan-tinjauan-modul.md`](../programs/catatan-tinjauan-modul.md).
 - Silabus v1.1 (#92), v1.2 (#68, #84, #88), dan v1.3 (#139) sudah Anda
-  setujui. Jalur A dan B `sma-coding` belum punya modul materi mingguan.
+  setujui; modul materi mingguan jalur A dan B `sma-coding` sudah ada dan ikut disetujui pada 2026-11-20.

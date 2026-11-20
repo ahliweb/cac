@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur C (IoT dan robotika), minggu `C-XI2-M13` silabus v1.4: proyek sistem IoT lokal (F). Prasyarat: modul `c-xi2-m12` (keputusan otomatis berbasis data). Kamu memakai hasil modul sebelumnya di semester ini: sambungan dan alamat (`C-XI2-M1`), keamanan konektivitas (`C-XI2-M2`), publikasi-langganan (`C-XI2-M5` dan `C-XI2-M6`), format JSON (`C-XI2-M7`), diagnosis (`C-XI2-M8`), rekap (`C-XI2-M10`), prediksi (`C-XI2-M11`), dan keputusan (`C-XI2-M12`). Modul itu belum semuanya terindeks saat modul ini ditulis, jadi tidak ditulis sebagai prasyarat resmi.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia tidak dihitung memenuhi butir capaian pembelajaran mana pun; proyek ini menyatukan keterampilan modul sebelumnya. Keluaran minggu ini: sistem dan laporan. Latihan silabusnya: proyek kelompok.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia tidak dihitung memenuhi butir capaian pembelajaran mana pun; proyek ini menyatukan keterampilan modul sebelumnya. Keluaran minggu ini: sistem dan laporan. Latihan silabusnya: proyek kelompok.
 
 Ada dua cara mengerjakan. **Dengan papan (F):** kelompok merakit papan pengirim, menyambungkannya lewat broker lokal guru ke penerima, dan menghubungkan kipas lewat modul pengendali. **Tanpa papan:** kelompok menjalankan "papan tiruan" di komputer untuk pengirim, saluran, dan penerima dengan aliran pesan karangan; semua bagian pokok tetap dikerjakan, tetapi perilaku Wi-Fi, broker sungguhan, dan kipas tidak teruji. Nomor pin, alamat, dan ambang pada contoh hanya contoh `[belum terverifikasi]` untuk jaringan dan rangkaianmu.
 

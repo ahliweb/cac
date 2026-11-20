@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas X jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-X1-M9` silabus v1.4.1: variabel, tipe, dan ekspresi di JavaScript, serta masukan dan keluaran. Prasyarat: modul `b-x1-m8` (menjalankan skrip dengan Bun, `console.log`, dan menukar dua nilai). Modul ini mengajar dari awal dan tidak mengandaikan kamu pernah memprogram, termasuk di SMP. Bila kamu sudah pernah memakai bahasa lain, urutannya tetap sama: tebak dulu, lengkapi contoh, susun baris, baru menulis dari halaman kosong.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `E-BK-d` (solusi program sederhana dalam format pseudocode) dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan butir itu.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `E-BK-d` (solusi program sederhana dalam format pseudocode) dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul.
 
 Contoh dijalankan penyusun dengan Bun 1.4.4 per 2026-11. Tugas baca-dan-prediksi ditandai `AI: tanpa AI` karena tujuannya melatih membaca dan menelusuri kode sendiri. Selain itu AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu. Saran: jawab dulu sendiri, baru minta penjelasan atau petunjuk bertahap.
 

@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur C (IoT dan robotika), minggu `C-XI1-M1` silabus v1.3: proses rekayasa produk IoT. Prasyarat: modul `c-x2-m12` (mencatat data) dan `c-x2-m14` (asesmen kelas X semester 2); keduanya diperiksa guru karena belum terindeks saat modul ini ditulis. Kamu juga memakai `millis()` dari `c-x2-m7`, larik dari `c-x1-m12`, dan gagasan "uji dengan data karangan" dari `c-x2-m12`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-BK-a` (alur proses pengembangan program atau produk digital) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: dokumen rancangan satu halaman. Latihan silabusnya: rancang perangkat pemantau.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-BK-a` (alur proses pengembangan program atau produk digital) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: dokumen rancangan satu halaman. Latihan silabusnya: rancang perangkat pemantau.
 
 Minggu ini semua bagian pokok dikerjakan **tanpa papan**, dengan kertas dan "papan tiruan" di komputer. Bila kamu mencoba dengan papan, ikuti aturan keselamatan modul sebelumnya: daya USB saja, tanpa listrik jaringan 220 V, dan cabut kabel sebelum mengubah rangkaian. Nilai batas pada contoh hanya contoh `[belum terverifikasi]` untuk perangkatmu. Data yang dibahas hanya suhu ruangan dan data karangan; tidak ada nama atau identitas.
 

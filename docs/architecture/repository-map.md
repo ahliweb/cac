@@ -41,7 +41,7 @@ run over this directory in CI: `osn validate` per registered programme (and the 
 
 **What must never go here:** transcribed syllabus content (that is `data/`); real learner data; problems copied from judges or competitions (link them instead); a module marked `disetujui` by an AI agent.
 
-**State today:** `content/osn/modules/` holds ten modules, one per OSN topic family; all are `disetujui` (the pilot `dasar-pemrograman` and the other nine approved by the programme owner on 2026-11-18). The six coding programmes hold 753 modules in total as of 2026-11-20, all `draf` and not yet reviewed by the owner: `tk-coding` 48 modules, 48 learner sheets and 48 SVG; `sd-coding` 168 modules, 168 sheets and 168 SVG; `smp-coding` 84; `sma-coding` 393 (29 cross-track plus 364 weekly: A 77, B 77, C 77, D 77, E 56); `kuliah-coding` 24; `dewasa-coding` 36 (counts from each `data/<program>/modules.json`). Points a human reviewer must check are collected in `docs/programs/catatan-tinjauan-modul.md`.
+**State today:** `content/osn/modules/` holds ten modules, one per OSN topic family; all are `disetujui` (the pilot `dasar-pemrograman` and the other nine approved by the programme owner on 2026-11-18). The six coding programmes hold 753 modules in total as of 2026-11-20, all `disetujui` since 2026-11-20 by the programme owner's decision through the standard choice dialog (#125; the decision is not a per-module human review of the content, and the notes below remain follow-up revisions; an approved module can be set to `ditarik`): `tk-coding` 48 modules, 48 learner sheets and 48 SVG; `sd-coding` 168 modules, 168 sheets and 168 SVG; `smp-coding` 84; `sma-coding` 393 (29 cross-track plus 364 weekly: A 77, B 77, C 77, D 77, E 56); `kuliah-coding` 24; `dewasa-coding` 36 (counts from each `data/<program>/modules.json`). Points that remain follow-up revisions after the approval are collected in `docs/programs/catatan-tinjauan-modul.md`.
 
 ## `src/schema/`
 
@@ -226,8 +226,8 @@ encoded:
   `README.md`, `riset.md`, `silabus.md` and the module design `rancangan-modul.md`
   with its pilot in `rancangan-modul-contoh/` (kept as history), approved by the owner on 2026-11-19
   (issues #127–#131; v1.1 revisions #139), registered in `data/programs.json`
-  and encoded into `data/<id>/`. Each has its learner modules in `content/<id>/` (draft, indexed by `data/<id>/modules.json`).
-- `catatan-tinjauan-modul.md` — points for the human reviewer of the draft modules (issue #125), authored content marked `DRAF`.
+  and encoded into `data/<id>/`. Each has its learner modules in `content/<id>/` (approved 2026-11-20, indexed by `data/<id>/modules.json`).
+- `catatan-tinjauan-modul.md` — follow-up revision notes for the modules approved on 2026-11-20 (issue #125), authored content marked `DRAF` as a document until the owner approves it.
 
 **What must never go here:** machine-readable data (belongs in
 `data/<program>/`, and only after the source is approved); learner data;

@@ -9,14 +9,18 @@
       "prerequisites": [],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp7-1-m1.md"
+      "contentPath": "content/smp-coding/modules/smp7-1-m1.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp7-1-m2",
@@ -27,14 +31,18 @@
       "prerequisites": ["smp7-1-m1"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp7-1-m2.md"
+      "contentPath": "content/smp-coding/modules/smp7-1-m2.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp7-1-m3",
@@ -45,7 +53,7 @@
       "prerequisites": ["smp7-1-m2"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -56,7 +64,11 @@
           "url": "https://scratch.mit.edu/about"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp7-1-m3.md"
+      "contentPath": "content/smp-coding/modules/smp7-1-m3.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp7-1-m4",
@@ -67,7 +79,7 @@
       "prerequisites": ["smp7-1-m3"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -78,7 +90,11 @@
           "url": "https://scratch.mit.edu/about"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp7-1-m4.md"
+      "contentPath": "content/smp-coding/modules/smp7-1-m4.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp7-1-m5",
@@ -89,7 +105,7 @@
       "prerequisites": ["smp7-1-m4"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -100,7 +116,11 @@
           "url": "https://scratch.mit.edu/about"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp7-1-m5.md"
+      "contentPath": "content/smp-coding/modules/smp7-1-m5.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp7-1-m6",
@@ -111,7 +131,7 @@
       "prerequisites": ["smp7-1-m5"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -122,7 +142,11 @@
           "url": "https://scratch.mit.edu/about"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp7-1-m6.md"
+      "contentPath": "content/smp-coding/modules/smp7-1-m6.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp7-1-m7",
@@ -133,7 +157,7 @@
       "prerequisites": ["smp7-1-m5"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -144,7 +168,11 @@
           "url": "https://scratch.mit.edu/about"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp7-1-m7.md"
+      "contentPath": "content/smp-coding/modules/smp7-1-m7.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp7-1-m8",
@@ -155,7 +183,7 @@
       "prerequisites": ["smp7-1-m5"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -166,7 +194,11 @@
           "url": "https://scratch.mit.edu/about"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp7-1-m8.md"
+      "contentPath": "content/smp-coding/modules/smp7-1-m8.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp7-1-m9",
@@ -177,7 +209,7 @@
       "prerequisites": ["smp7-1-m4"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -188,7 +220,11 @@
           "url": "https://scratch.mit.edu/about"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp7-1-m9.md"
+      "contentPath": "content/smp-coding/modules/smp7-1-m9.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp7-1-m10",
@@ -199,7 +235,7 @@
       "prerequisites": ["smp7-1-m8", "smp7-1-m9"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -210,7 +246,11 @@
           "url": "https://scratch.mit.edu/about"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp7-1-m10.md"
+      "contentPath": "content/smp-coding/modules/smp7-1-m10.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp7-1-m11",
@@ -221,7 +261,7 @@
       "prerequisites": ["smp7-1-m10"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -232,7 +272,11 @@
           "url": "https://scratch.mit.edu/about"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp7-1-m11.md"
+      "contentPath": "content/smp-coding/modules/smp7-1-m11.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp7-1-m12",
@@ -243,7 +287,7 @@
       "prerequisites": ["smp7-1-m3"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -258,7 +302,11 @@
           "url": "https://scratch.mit.edu/about"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp7-1-m12.md"
+      "contentPath": "content/smp-coding/modules/smp7-1-m12.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp7-1-m13",
@@ -269,7 +317,7 @@
       "prerequisites": ["smp7-1-m8", "smp7-1-m9", "smp7-1-m11"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -280,7 +328,11 @@
           "url": "https://scratch.mit.edu/about"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp7-1-m13.md"
+      "contentPath": "content/smp-coding/modules/smp7-1-m13.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp7-1-m14",
@@ -291,7 +343,7 @@
       "prerequisites": ["smp7-1-m13"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -302,7 +354,11 @@
           "url": "https://scratch.mit.edu/about"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp7-1-m14.md"
+      "contentPath": "content/smp-coding/modules/smp7-1-m14.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp7-2-m1",
@@ -313,14 +369,18 @@
       "prerequisites": ["smp7-1-m2"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp7-2-m1.md"
+      "contentPath": "content/smp-coding/modules/smp7-2-m1.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp7-2-m2",
@@ -331,7 +391,7 @@
       "prerequisites": ["smp7-2-m1"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -342,7 +402,11 @@
           "url": "https://www.csunplugged.org/en/topics/binary-numbers/"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp7-2-m2.md"
+      "contentPath": "content/smp-coding/modules/smp7-2-m2.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp7-2-m3",
@@ -353,7 +417,7 @@
       "prerequisites": ["smp7-2-m2"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -364,7 +428,11 @@
           "url": "https://www.csunplugged.org/en/topics/image-representation/"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp7-2-m3.md"
+      "contentPath": "content/smp-coding/modules/smp7-2-m3.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp7-2-m4",
@@ -375,7 +443,7 @@
       "prerequisites": ["smp7-1-m9", "smp7-2-m1"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -386,7 +454,11 @@
           "url": "https://scratch.mit.edu/about"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp7-2-m4.md"
+      "contentPath": "content/smp-coding/modules/smp7-2-m4.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp7-2-m5",
@@ -397,7 +469,7 @@
       "prerequisites": ["smp7-2-m1"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -412,7 +484,11 @@
           "url": "https://www.csunplugged.org/en/topics/sorting-networks/"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp7-2-m5.md"
+      "contentPath": "content/smp-coding/modules/smp7-2-m5.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp7-2-m6",
@@ -423,7 +499,7 @@
       "prerequisites": ["smp7-2-m4", "smp7-2-m5"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -434,7 +510,11 @@
           "url": "https://scratch.mit.edu/about"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp7-2-m6.md"
+      "contentPath": "content/smp-coding/modules/smp7-2-m6.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp7-2-m7",
@@ -445,7 +525,7 @@
       "prerequisites": ["smp7-1-m8", "smp7-1-m9"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -456,7 +536,11 @@
           "url": "https://scratch.mit.edu/about"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp7-2-m7.md"
+      "contentPath": "content/smp-coding/modules/smp7-2-m7.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp7-2-m8",
@@ -467,7 +551,7 @@
       "prerequisites": ["smp7-2-m7"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -478,7 +562,11 @@
           "url": "https://scratch.mit.edu/about"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp7-2-m8.md"
+      "contentPath": "content/smp-coding/modules/smp7-2-m8.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp7-2-m9",
@@ -489,7 +577,7 @@
       "prerequisites": ["smp7-2-m7"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -500,7 +588,11 @@
           "url": "https://scratch.mit.edu/about"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp7-2-m9.md"
+      "contentPath": "content/smp-coding/modules/smp7-2-m9.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp7-2-m10",
@@ -511,14 +603,18 @@
       "prerequisites": ["smp7-2-m1"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp7-2-m10.md"
+      "contentPath": "content/smp-coding/modules/smp7-2-m10.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp7-2-m11",
@@ -529,7 +625,7 @@
       "prerequisites": ["smp7-1-m11", "smp7-2-m7"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -540,7 +636,11 @@
           "url": "https://scratch.mit.edu/about"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp7-2-m11.md"
+      "contentPath": "content/smp-coding/modules/smp7-2-m11.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp7-2-m12",
@@ -551,7 +651,7 @@
       "prerequisites": ["smp7-2-m11"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -562,7 +662,11 @@
           "url": "https://documentation.libreoffice.org/"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp7-2-m12.md"
+      "contentPath": "content/smp-coding/modules/smp7-2-m12.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp7-2-m13",
@@ -573,7 +677,7 @@
       "prerequisites": ["smp7-2-m8", "smp7-2-m11"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -584,7 +688,11 @@
           "url": "https://scratch.mit.edu/about"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp7-2-m13.md"
+      "contentPath": "content/smp-coding/modules/smp7-2-m13.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp7-2-m14",
@@ -595,7 +703,7 @@
       "prerequisites": ["smp7-2-m13"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -606,7 +714,11 @@
           "url": "https://scratch.mit.edu/about"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp7-2-m14.md"
+      "contentPath": "content/smp-coding/modules/smp7-2-m14.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp8-1-m1",
@@ -617,14 +729,18 @@
       "prerequisites": ["smp7-1-m2"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp8-1-m1.md"
+      "contentPath": "content/smp-coding/modules/smp8-1-m1.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp8-1-m2",
@@ -635,7 +751,7 @@
       "prerequisites": ["smp7-1-m6"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -646,7 +762,11 @@
           "url": "https://scratch.mit.edu/about"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp8-1-m2.md"
+      "contentPath": "content/smp-coding/modules/smp8-1-m2.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp8-1-m3",
@@ -657,7 +777,7 @@
       "prerequisites": ["smp8-1-m2"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -668,7 +788,11 @@
           "url": "https://scratch.mit.edu/about"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp8-1-m3.md"
+      "contentPath": "content/smp-coding/modules/smp8-1-m3.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp8-1-m4",
@@ -679,7 +803,7 @@
       "prerequisites": ["smp8-1-m3", "smp7-1-m9"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -690,7 +814,11 @@
           "url": "https://scratch.mit.edu/about"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp8-1-m4.md"
+      "contentPath": "content/smp-coding/modules/smp8-1-m4.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp8-1-m5",
@@ -701,7 +829,7 @@
       "prerequisites": ["smp8-1-m3"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -712,7 +840,11 @@
           "url": "https://scratch.mit.edu/about"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp8-1-m5.md"
+      "contentPath": "content/smp-coding/modules/smp8-1-m5.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp8-1-m6",
@@ -723,7 +855,7 @@
       "prerequisites": ["smp7-2-m1"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -734,7 +866,11 @@
           "url": "https://help.libreoffice.org/"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp8-1-m6.md"
+      "contentPath": "content/smp-coding/modules/smp8-1-m6.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp8-1-m7",
@@ -745,7 +881,7 @@
       "prerequisites": ["smp8-1-m6"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -756,7 +892,11 @@
           "url": "https://help.libreoffice.org/"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp8-1-m7.md"
+      "contentPath": "content/smp-coding/modules/smp8-1-m7.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp8-1-m8",
@@ -767,7 +907,7 @@
       "prerequisites": ["smp8-1-m7"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -778,7 +918,11 @@
           "url": "https://help.libreoffice.org/"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp8-1-m8.md"
+      "contentPath": "content/smp-coding/modules/smp8-1-m8.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp8-1-m9",
@@ -789,7 +933,7 @@
       "prerequisites": ["smp7-1-m5", "smp7-1-m8"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -804,7 +948,11 @@
           "url": "https://makecode.microbit.org/about"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp8-1-m9.md"
+      "contentPath": "content/smp-coding/modules/smp8-1-m9.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp8-1-m10",
@@ -815,7 +963,7 @@
       "prerequisites": ["smp8-1-m9"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -830,7 +978,11 @@
           "url": "https://microbit.org/get-started/user-guide/overview/"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp8-1-m10.md"
+      "contentPath": "content/smp-coding/modules/smp8-1-m10.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp8-1-m11",
@@ -841,7 +993,7 @@
       "prerequisites": ["smp8-1-m10", "smp7-1-m11"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -856,7 +1008,11 @@
           "url": "https://microbit.org/get-started/user-guide/overview/"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp8-1-m11.md"
+      "contentPath": "content/smp-coding/modules/smp8-1-m11.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp8-1-m12",
@@ -867,14 +1023,18 @@
       "prerequisites": ["smp7-2-m10"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp8-1-m12.md"
+      "contentPath": "content/smp-coding/modules/smp8-1-m12.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp8-1-m13",
@@ -885,7 +1045,7 @@
       "prerequisites": ["smp8-1-m4", "smp8-1-m11"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -900,7 +1060,11 @@
           "url": "https://makecode.microbit.org/about"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp8-1-m13.md"
+      "contentPath": "content/smp-coding/modules/smp8-1-m13.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp8-1-m14",
@@ -911,7 +1075,7 @@
       "prerequisites": ["smp8-1-m13"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -922,7 +1086,11 @@
           "url": "https://scratch.mit.edu/about"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp8-1-m14.md"
+      "contentPath": "content/smp-coding/modules/smp8-1-m14.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp8-2-m1",
@@ -933,7 +1101,7 @@
       "prerequisites": ["smp8-1-m1", "smp8-1-m9"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -948,7 +1116,11 @@
           "url": "https://scratch.mit.edu/about"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp8-2-m1.md"
+      "contentPath": "content/smp-coding/modules/smp8-2-m1.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp8-2-m2",
@@ -959,7 +1131,7 @@
       "prerequisites": ["smp8-2-m1"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -974,7 +1146,11 @@
           "url": "https://docs.python.org/3/tutorial/introduction.html"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp8-2-m2.md"
+      "contentPath": "content/smp-coding/modules/smp8-2-m2.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp8-2-m3",
@@ -985,7 +1161,7 @@
       "prerequisites": ["smp8-2-m2"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -996,7 +1172,11 @@
           "url": "https://docs.python.org/3/tutorial/introduction.html"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp8-2-m3.md"
+      "contentPath": "content/smp-coding/modules/smp8-2-m3.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp8-2-m4",
@@ -1007,7 +1187,7 @@
       "prerequisites": ["smp8-2-m3"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -1018,7 +1198,11 @@
           "url": "https://docs.python.org/3/tutorial/controlflow.html"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp8-2-m4.md"
+      "contentPath": "content/smp-coding/modules/smp8-2-m4.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp8-2-m5",
@@ -1029,7 +1213,7 @@
       "prerequisites": ["smp8-2-m4"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -1040,7 +1224,11 @@
           "url": "https://docs.python.org/3/tutorial/controlflow.html"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp8-2-m5.md"
+      "contentPath": "content/smp-coding/modules/smp8-2-m5.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp8-2-m6",
@@ -1051,7 +1239,7 @@
       "prerequisites": ["smp8-2-m5"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -1066,7 +1254,11 @@
           "url": "https://scratch.mit.edu/about"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp8-2-m6.md"
+      "contentPath": "content/smp-coding/modules/smp8-2-m6.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp8-2-m7",
@@ -1077,7 +1269,7 @@
       "prerequisites": ["smp8-2-m5"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -1088,7 +1280,11 @@
           "url": "https://docs.python.org/3/library/turtle.html"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp8-2-m7.md"
+      "contentPath": "content/smp-coding/modules/smp8-2-m7.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp8-2-m8",
@@ -1099,7 +1295,7 @@
       "prerequisites": ["smp8-2-m5"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -1110,7 +1306,11 @@
           "url": "https://docs.python.org/3/tutorial/datastructures.html"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp8-2-m8.md"
+      "contentPath": "content/smp-coding/modules/smp8-2-m8.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp8-2-m9",
@@ -1121,7 +1321,7 @@
       "prerequisites": ["smp8-2-m8"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -1132,7 +1332,11 @@
           "url": "https://docs.python.org/3/tutorial/controlflow.html"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp8-2-m9.md"
+      "contentPath": "content/smp-coding/modules/smp8-2-m9.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp8-2-m10",
@@ -1143,7 +1347,7 @@
       "prerequisites": ["smp8-2-m5"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -1158,7 +1362,11 @@
           "url": "https://docs.python.org/3/builtins/exceptions.html"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp8-2-m10.md"
+      "contentPath": "content/smp-coding/modules/smp8-2-m10.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp8-2-m11",
@@ -1169,7 +1377,7 @@
       "prerequisites": ["smp7-1-m12"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -1180,7 +1388,11 @@
           "url": "https://pages.nist.gov/800-63-4/sp800-63b.html"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp8-2-m11.md"
+      "contentPath": "content/smp-coding/modules/smp8-2-m11.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp8-2-m12",
@@ -1191,7 +1403,7 @@
       "prerequisites": ["smp8-2-m11"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -1202,7 +1414,11 @@
           "url": "https://peraturan.bpk.go.id/Details/229798/uu-no-27-tahun-2022"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp8-2-m12.md"
+      "contentPath": "content/smp-coding/modules/smp8-2-m12.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp8-2-m13",
@@ -1213,7 +1429,7 @@
       "prerequisites": ["smp8-2-m9", "smp8-2-m10"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -1224,7 +1440,11 @@
           "url": "https://docs.python.org/3/tutorial/controlflow.html"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp8-2-m13.md"
+      "contentPath": "content/smp-coding/modules/smp8-2-m13.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp8-2-m14",
@@ -1235,7 +1455,7 @@
       "prerequisites": ["smp8-2-m13"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -1246,7 +1466,11 @@
           "url": "https://docs.python.org/3/tutorial/controlflow.html"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp8-2-m14.md"
+      "contentPath": "content/smp-coding/modules/smp8-2-m14.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp9-1-m1",
@@ -1257,14 +1481,18 @@
       "prerequisites": ["smp7-1-m7", "smp8-1-m3"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp9-1-m1.md"
+      "contentPath": "content/smp-coding/modules/smp9-1-m1.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp9-1-m2",
@@ -1275,7 +1503,7 @@
       "prerequisites": ["smp8-2-m3"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -1290,7 +1518,11 @@
           "url": "https://docs.python.org/3/library/stdtypes.html"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp9-1-m2.md"
+      "contentPath": "content/smp-coding/modules/smp9-1-m2.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp9-1-m3",
@@ -1301,7 +1533,7 @@
       "prerequisites": ["smp8-2-m8", "smp9-1-m2"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -1312,7 +1544,11 @@
           "url": "https://docs.python.org/3/tutorial/datastructures.html"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp9-1-m3.md"
+      "contentPath": "content/smp-coding/modules/smp9-1-m3.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp9-1-m4",
@@ -1323,7 +1559,7 @@
       "prerequisites": ["smp9-1-m2", "smp8-1-m6"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -1334,7 +1570,11 @@
           "url": "https://docs.python.org/3/tutorial/inputoutput.html"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp9-1-m4.md"
+      "contentPath": "content/smp-coding/modules/smp9-1-m4.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp9-1-m5",
@@ -1345,7 +1585,7 @@
       "prerequisites": ["smp9-1-m4"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -1356,7 +1596,11 @@
           "url": "https://docs.python.org/3/library/functions.html"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp9-1-m5.md"
+      "contentPath": "content/smp-coding/modules/smp9-1-m5.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp9-1-m6",
@@ -1367,7 +1611,7 @@
       "prerequisites": ["smp8-1-m6"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -1382,7 +1626,11 @@
           "url": "https://data.go.id/"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp9-1-m6.md"
+      "contentPath": "content/smp-coding/modules/smp9-1-m6.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp9-1-m7",
@@ -1393,7 +1641,7 @@
       "prerequisites": ["smp8-1-m7", "smp9-1-m5"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -1404,7 +1652,11 @@
           "url": "https://docs.python.org/3/library/stdtypes.html"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp9-1-m7.md"
+      "contentPath": "content/smp-coding/modules/smp9-1-m7.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp9-1-m8",
@@ -1415,7 +1667,7 @@
       "prerequisites": ["smp9-1-m1"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -1430,7 +1682,11 @@
           "url": "https://docs.python.org/3/tutorial/introduction.html"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp9-1-m8.md"
+      "contentPath": "content/smp-coding/modules/smp9-1-m8.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp9-1-m9",
@@ -1441,7 +1697,7 @@
       "prerequisites": ["smp7-2-m5", "smp8-2-m8"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -1456,7 +1712,11 @@
           "url": "https://docs.python.org/3/tutorial/datastructures.html"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp9-1-m9.md"
+      "contentPath": "content/smp-coding/modules/smp9-1-m9.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp9-1-m10",
@@ -1467,7 +1727,7 @@
       "prerequisites": ["smp8-2-m5"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -1478,7 +1738,11 @@
           "url": "https://docs.python.org/3/library/random.html"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp9-1-m10.md"
+      "contentPath": "content/smp-coding/modules/smp9-1-m10.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp9-1-m11",
@@ -1489,7 +1753,7 @@
       "prerequisites": ["smp8-2-m12"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -1504,7 +1768,11 @@
           "url": "https://peraturan.bpk.go.id/Details/39047/uu-no-14-tahun-2008"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp9-1-m11.md"
+      "contentPath": "content/smp-coding/modules/smp9-1-m11.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp9-1-m12",
@@ -1515,14 +1783,18 @@
       "prerequisites": ["smp8-2-m13"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp9-1-m12.md"
+      "contentPath": "content/smp-coding/modules/smp9-1-m12.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp9-1-m13",
@@ -1533,7 +1805,7 @@
       "prerequisites": ["smp9-1-m4", "smp9-1-m5"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -1548,7 +1820,11 @@
           "url": "https://docs.python.org/3/tutorial/errors.html"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp9-1-m13.md"
+      "contentPath": "content/smp-coding/modules/smp9-1-m13.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp9-1-m14",
@@ -1559,7 +1835,7 @@
       "prerequisites": ["smp9-1-m13"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -1574,7 +1850,11 @@
           "url": "https://docs.python.org/3/tutorial/datastructures.html"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp9-1-m14.md"
+      "contentPath": "content/smp-coding/modules/smp9-1-m14.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp9-2-m1",
@@ -1585,14 +1865,18 @@
       "prerequisites": ["smp9-1-m12"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp9-2-m1.md"
+      "contentPath": "content/smp-coding/modules/smp9-2-m1.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp9-2-m2",
@@ -1603,14 +1887,18 @@
       "prerequisites": ["smp9-2-m1"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp9-2-m2.md"
+      "contentPath": "content/smp-coding/modules/smp9-2-m2.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp9-2-m3",
@@ -1621,7 +1909,7 @@
       "prerequisites": ["smp9-2-m2"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -1632,7 +1920,11 @@
           "url": "https://docs.python.org/3/tutorial/controlflow.html"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp9-2-m3.md"
+      "contentPath": "content/smp-coding/modules/smp9-2-m3.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp9-2-m4",
@@ -1643,7 +1935,7 @@
       "prerequisites": ["smp9-2-m3"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -1658,7 +1950,11 @@
           "url": "https://docs.python.org/3/library/functions.html"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp9-2-m4.md"
+      "contentPath": "content/smp-coding/modules/smp9-2-m4.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp9-2-m5",
@@ -1669,14 +1965,18 @@
       "prerequisites": ["smp9-2-m4"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp9-2-m5.md"
+      "contentPath": "content/smp-coding/modules/smp9-2-m5.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp9-2-m6",
@@ -1687,7 +1987,7 @@
       "prerequisites": ["smp9-2-m5"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -1698,7 +1998,11 @@
           "url": "https://docs.python.org/3/library/stdtypes.html"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp9-2-m6.md"
+      "contentPath": "content/smp-coding/modules/smp9-2-m6.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp9-2-m7",
@@ -1709,14 +2013,18 @@
       "prerequisites": ["smp9-2-m6"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp9-2-m7.md"
+      "contentPath": "content/smp-coding/modules/smp9-2-m7.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp9-2-m8",
@@ -1727,7 +2035,7 @@
       "prerequisites": ["smp7-2-m10"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -1738,7 +2046,11 @@
           "url": "https://ai4k12.org/big-idea-1-overview/"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp9-2-m8.md"
+      "contentPath": "content/smp-coding/modules/smp9-2-m8.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp9-2-m9",
@@ -1749,7 +2061,7 @@
       "prerequisites": ["smp9-2-m8", "smp9-1-m6"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -1760,7 +2072,11 @@
           "url": "https://ai4k12.org/big-idea-3-overview/"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp9-2-m9.md"
+      "contentPath": "content/smp-coding/modules/smp9-2-m9.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp9-2-m10",
@@ -1771,7 +2087,7 @@
       "prerequisites": ["smp9-2-m9", "smp9-1-m11", "smp8-2-m11"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -1786,7 +2102,11 @@
           "url": "https://jdih.komdigi.go.id/produk_hukum/view/id/883/t/surat+edaran+menteri+komunikasi+dan+informatika+nomor+9+tahun+2023"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp9-2-m10.md"
+      "contentPath": "content/smp-coding/modules/smp9-2-m10.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp9-2-m11",
@@ -1797,7 +2117,7 @@
       "prerequisites": ["smp9-1-m9"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -1812,7 +2132,11 @@
           "url": "https://isocpp.org/"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp9-2-m11.md"
+      "contentPath": "content/smp-coding/modules/smp9-2-m11.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp9-2-m12",
@@ -1823,14 +2147,18 @@
       "prerequisites": ["smp9-2-m7"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp9-2-m12.md"
+      "contentPath": "content/smp-coding/modules/smp9-2-m12.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp9-2-m13",
@@ -1841,14 +2169,18 @@
       "prerequisites": ["smp9-2-m12"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
           "url": "https://repositori.kemendikdasmen.go.id/33634/1/32.%20Panduan%20Mata%20Pelajaran%20Informatika.pdf"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp9-2-m13.md"
+      "contentPath": "content/smp-coding/modules/smp9-2-m13.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "smp9-2-m14",
@@ -1859,7 +2191,7 @@
       "prerequisites": ["smp9-2-m13"],
       "audience": "siswa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Panduan Mata Pelajaran Informatika, Fase D – F, 2025",
@@ -1870,7 +2202,11 @@
           "url": "https://docs.python.org/3/library/stdtypes.html"
         }
       ],
-      "contentPath": "content/smp-coding/modules/smp9-2-m14.md"
+      "contentPath": "content/smp-coding/modules/smp9-2-m14.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     }
   ]
 }

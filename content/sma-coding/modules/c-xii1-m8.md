@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur C (IoT dan robotika), minggu `C-XII1-M8` silabus v1.4: membandingkan strategi (F). Prasyarat terindeks: `c-xi2-m14`. Kamu juga memakai pengikut garis dari `c-xii1-m6` (hidup-mati) dan `c-xii1-m7` (proporsional), yang belum terindeks saat modul ini ditulis.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-BK-b` (lebih dari satu solusi, justifikasi efisiensi), `F-AP-a` (konsep strategi algoritmik), dan `F-AP-b` (program terstruktur berdasarkan strategi), dan tidak dihitung memenuhi butir capaian pembelajaran mana pun; pemetaan `F-AP-a` untuk jalur C bersifat parsial. Keluaran minggu ini: laporan perbandingan. Latihan silabusnya: waktu tempuh dan galat dua strategi.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-BK-b` (lebih dari satu solusi, justifikasi efisiensi), `F-AP-a` (konsep strategi algoritmik), dan `F-AP-b` (program terstruktur berdasarkan strategi), dan tidak dihitung memenuhi butir capaian pembelajaran mana pun; pemetaan `F-AP-a` untuk jalur C bersifat parsial. Keluaran minggu ini: laporan perbandingan. Latihan silabusnya: waktu tempuh dan galat dua strategi.
 
 Ada dua cara mengerjakan. **Dengan papan (F):** kelompok memakai robot dan lintasan pita hitam yang sama dengan modul 6 dan 7, dengan pencatat lari di bawah. **Tanpa papan:** kamu menjalankan simulasi di komputer, dengan model sederhana karangan (bukan fisika robot nyata). Nomor pin, ambang, dan angka kecepatan hanya contoh `[belum terverifikasi]` untuk robotmu.
 

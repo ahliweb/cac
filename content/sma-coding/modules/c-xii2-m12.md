@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur C (IoT dan robotika), minggu `C-XII2-M12` silabus v1.4: proyek akhir, dokumentasi akhir. Prasyarat terindeks: `c-xii2-m11`. Kamu memakai laporan uji minggu lalu, tabel pin dari `C-XII2-M6`, dan rancangan `C-XII2-M5` yang belum terindeks saat modul ini ditulis.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-BK-a` dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: dokumen proyek. Latihan silabusnya: panduan pengguna.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-BK-a` dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: dokumen proyek. Latihan silabusnya: panduan pengguna.
 
 Dengan papan atau tanpa papan, dokumen ditulis dan diuji di komputer dan di kertas. Keselamatan perangkat: panduan perakitan harus memuat aturan sprint 1 (daya USB atau baterai AA/AAA dari guru, tanpa listrik 220 V atau solder, cabut daya sebelum mengubah rangkaian, roda terangkat, tombol berhenti). Nomor pin pada contoh hanya contoh `[belum terverifikasi]` untuk papanmu.
 

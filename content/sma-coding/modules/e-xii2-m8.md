@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur E (komputasi kuantum), minggu `E-XII2-M8` silabus v1.4: proyek akhir, implementasi II, yaitu menguji dan membandingkan dengan perhitungan tangan, dengan keluaran uji dan catatan. Prasyarat: modul `e-xii1-m14`; modul `e-xii2-m7` (inti proyek dan log sprint pertamamu) belum terindeks, jadi guru memeriksanya. Di luar indeks, bagian kode memerlukan dasar pemrograman setara `A-X1-M9..M12` (C++) atau `B-X1-M9..M12` (TypeScript dengan Bun); proyek studi banding memakai tabel yang sama untuk angka sumber. Alat: kertas, kalkulator, dan program C++ di bawah (tanpa akun). Kerja minggu ini satu sprint.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur E adalah pengayaan di luar rumusan CP; minggu ini tanpa irisan pengayaan, jadi modul ini tidak dihitung memenuhi butir CP mana pun.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Jalur E adalah pengayaan di luar rumusan CP; minggu ini tanpa irisan pengayaan, jadi modul ini tidak dihitung memenuhi butir CP mana pun.
 
 Aturan AI jalur ini: AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu, dan tanpa akun wajib. Saran: jawab dulu sendiri, baru minta petunjuk; kode buatan AI kamu baca, jalankan, dan uji. Catat pemakaian AI di log proyek.
 

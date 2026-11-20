@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur C (IoT dan robotika), minggu `C-XII2-M9` silabus v1.4: proyek akhir, sprint 4 (penyempurnaan). Prasyarat terindeks: `c-xii2-m8`. Kamu memakai lembar uji `C-XII2-M6` dan program inti `C-XII2-M7` yang belum terindeks saat modul ini ditulis, serta kebutuhan K1 sampai K5 dari rancangan `C-XII2-M5`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-BK-a` dan `F-AP-d`, dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: rilis kandidat. Latihan silabusnya: perbaikan.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-BK-a` dan `F-AP-d`, dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: rilis kandidat. Latihan silabusnya: perbaikan.
 
 Dengan papan atau tanpa papan, bagian pokok dikerjakan di komputer dengan perangkat tiruan. Keselamatan perangkat: bila kamu mengunggah ke robot, ikuti aturan sprint 1 (roda terangkat, tombol berhenti terpasang, daya dari guru, tanpa listrik 220 V atau solder). Angka dan batas pada contoh hanya contoh karangan.
 

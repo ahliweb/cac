@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur C (IoT dan robotika), minggu `C-XII2-M3` silabus v1.4: memodelkan masalah lapangan. Prasyarat: modul `c-xii2-m2` (pemeliharaan program II). Kamu juga memakai kebutuhan terukur dari `c-xii1-m1`, histeresis dari `c-xi1-m5`, dan perbandingan strategi dari `c-xii1-m8` (belum terindeks saat modul ini ditulis).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik, dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: lembar pemodelan. Latihan silabusnya: tiga masalah fiktif.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi), dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: lembar pemodelan. Latihan silabusnya: tiga masalah fiktif.
 
 Semua pekerjaan di komputer dan kertas; tidak perlu papan. Keselamatan perangkat: tidak ada perangkat yang dirakit minggu ini. Semua masalah dan data bersifat karangan: tanpa sekolah, orang, atau tempat nyata, dan tanpa merekam orang. Angka pada contoh (kelembapan, daya kipas) hanya karangan, bukan fisika ruangan nyata.
 

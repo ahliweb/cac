@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur E (komputasi kuantum), minggu `E-XII1-M13` silabus v1.4: proyek mini semester 1, yaitu membandingkan simulator dan hasil perangkat, dikerjakan berkelompok dengan keluaran laporan; kelompok memilih topiknya. Prasyarat: modul `e-xii1-m12`; sesuai topik, modul `e-xii1-m8` (derau), `e-xii1-m10` (Grover), dan simulatormu (C++17 atau TypeScript dengan Bun). Di luar indeks, bagian kode memerlukan dasar pemrograman setara `A-X1-M9..M12` (C++). Hasil perangkat hanya berasal dari demonstrasi guru (`e-xii1-m12`) atau arsip sintetis; **tanpa akun murid, tanpa token**. Alat: kertas, kalkulator, dan program C++ di bawah.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur E adalah pengayaan di luar rumusan CP; minggu ini tanpa irisan pengayaan, jadi modul ini tidak dihitung memenuhi butir CP mana pun. Jangan menaruh nama lengkap, foto, atau suara murid pada laporan; pakai nama peran.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Jalur E adalah pengayaan di luar rumusan CP; minggu ini tanpa irisan pengayaan, jadi modul ini tidak dihitung memenuhi butir CP mana pun. Jangan menaruh nama lengkap, foto, atau suara murid pada laporan; pakai nama peran.
 
 Aturan AI jalur ini: AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu, dan tanpa akun wajib. Saran: tulis rencana dan prediksimu dulu, baru minta petunjuk bertahap; kode buatan AI kamu baca, jalankan, dan uji. Catat pemakaian AI pada Daftar periksa.
 

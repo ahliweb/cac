@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur C (IoT dan robotika), minggu `C-XII2-M1` silabus v1.4: pemeliharaan program I. Prasyarat: modul `c-xii1-m7` (pengikut garis, strategi 2) dan `c-xi1-m2` (kualitas kode dan pengujian). Kamu juga memakai dokumentasi dan pemeliharaan dari `C-XII1-M12`, yang belum terindeks saat modul ini ditulis.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-AP-c` (pengembangan, pemeliharaan, dan penyempurnaan algoritma standar ke dalam kode dengan memperhatikan kualitasnya) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: daftar perbaikan. Latihan silabusnya: merapikan (refaktor) satu proyek semester lalu.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-AP-c` (pengembangan, pemeliharaan, dan penyempurnaan algoritma standar ke dalam kode dengan memperhatikan kualitasnya) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: daftar perbaikan. Latihan silabusnya: merapikan (refaktor) satu proyek semester lalu.
 
 Ada dua cara mengerjakan. **Dengan papan:** kamu merapikan program robot semester lalu di komputer, lalu mengunggahnya dan mengujinya lagi dengan roda terangkat. **Tanpa papan:** seluruh kerja di komputer dengan program pembanding. Keselamatan perangkat: modul ini bekerja di komputer; bila kamu mengunggah ke robot, ikuti aturan daya USB atau baterai AA/AAA dari guru, cabut daya sebelum mengubah rangkaian, dan uji dengan roda terangkat. Angka ambang dan kecepatan pada contoh hanya contoh `[belum terverifikasi]` untuk robotmu.
 

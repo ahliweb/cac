@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur D (kecerdasan buatan dan analisis data), untuk minggu `D-XI1-M5` silabus v1.3: sumber data terbuka dan legal. Prasyarat: modul `d-xi1-m4`. Alat: peramban untuk membaca halaman dataset dan lisensinya, serta Python 3 untuk satu skrip kecil. Tanpa akun.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur D adalah pengayaan di luar rumusan capaian pembelajaran (CP). Minggu ini beririsan dengan butir `F-AD-a` (data terbuka dan legal, prediksi) pada tingkat sedang; irisan itu **tidak dihitung** sebagai pemenuhan CP. Modul ini ringkasan belajar, **bukan nasihat hukum**.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Jalur D adalah pengayaan di luar rumusan capaian pembelajaran (CP). Minggu ini beririsan dengan butir `F-AD-a` (data terbuka dan legal, prediksi) pada tingkat sedang; irisan itu **tidak dihitung** sebagai pemenuhan CP. Modul ini ringkasan belajar, **bukan nasihat hukum**.
 
 Aturan jalur D yang berlaku: data hanya sintetis (karangan) atau terbuka dengan lisensi jelas, tanpa data yang bisa mengenali orang; wajah, suara, dan foto orang tidak dipakai sebagai data; AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu, dan kamu tidak wajib punya akun. Saran: jawab dulu sendiri, baru minta AI memberi petunjuk bertahap; ringkasan lisensi dari AI bisa keliru, jadi baca teks lisensinya sendiri. Setiap soal `Latihan` bertanda `AI: boleh` atau `AI: tanpa AI`.
 

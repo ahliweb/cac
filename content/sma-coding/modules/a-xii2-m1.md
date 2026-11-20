@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur A (Algoritmik dengan C++), minggu `A-XII2-M1` silabus v1.4.1: pemeliharaan program I, yaitu memperbaiki dan merapikan solusi lama. Prasyarat: modul `a-xii1-m12` (program multi-berkas) dan `a-xi1-m2` (kualitas kode dan pengujian).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-AP-c` dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan. Silabus tidak memetakan keluarga materi OSN untuk minggu ini.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-AP-c` dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul. Silabus tidak memetakan keluarga materi OSN untuk minggu ini.
 
 Bahan kerjamu adalah dua solusi yang pernah kamu tulis di semester lalu; siapkan keduanya sebelum mulai. Tiap soal latihan bertanda `AI: boleh` atau `AI: tanpa AI`. Masukan program diberikan lewat berkas: `./program < masukan.txt`. Semua data karangan.
 

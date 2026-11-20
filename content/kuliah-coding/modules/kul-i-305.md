@@ -1,8 +1,7 @@
 ## Untuk siapa modul ini
 
 Modul belajar untuk mata kuliah `KUL-I-305` (2 SKS, semester 6, jalur I), bagian
-dari program `kuliah-coding`. Konten ini karangan menurut ADR-0007 dan belum
-disetujui. Mata kuliah ini sebagian besar tentang **kasus dan penalaran**, bukan
+dari program `kuliah-coding`. Konten ini karangan menurut ADR-0007 dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Mata kuliah ini sebagian besar tentang **kasus dan penalaran**, bukan
 kode. Dua blok `cpp` kecil di bagian 3 adalah **C++17** (g++ 13.3, Linux):
 keduanya dikompilasi dengan `-std=c++17 -Wall -Wextra` tanpa peringatan,
 dijalankan, dan keluarannya cocok. Semua nama, kasus, dan data **fiktif**.

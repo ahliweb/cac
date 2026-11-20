@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XII2-M9` silabus v1.4.1: ulasan keamanan, yaitu memeriksa rahasia, dependensi, dan masukan pada proyekmu sendiri. Prasyarat: modul `b-xii2-m8`, `b-xi2-m10` (XSS, rahasia, hukum), dan `b-xii1-m10` (rahasia dan konfigurasi).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-BK-a` dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung memenuhinya. Keluaran minggu ini: laporan keamanan.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-BK-a` dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul. Keluaran minggu ini: laporan keamanan.
 
 **Aturan keselamatan.** Periksa **hanya proyek milikmu sendiri di komputermu** (`localhost`) atau repositori latihan yang disiapkan gurumu. Jangan memeriksa situs, server, atau jaringan orang lain, termasuk sekolah, tanpa izin tertulis pemiliknya. Semua "rahasia" di sini bernilai palsu (`KUNCI_PALSU_CONTOH`). Contoh dijalankan penyusun dengan Bun 1.4.4 dan Git 2.43.0 per 2026-11. Konteksnya profil `landing` dari `awcms-one` (`main`, 2026-11-20), tanpa backend; semua nama dan konten karangan. AI boleh dipakai dengan etika; **jangan menempelkan rahasia atau data pribadi ke asisten AI.**
 

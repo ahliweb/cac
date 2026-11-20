@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XII1-M4` silabus v1.4.1: menjalankan `awcms-one` secara lokal sebagai **demonstrasi guru**. Prasyarat: modul `b-xii1-m3`. Prasyarat di luar indeks: mesin lab yang disiapkan guru.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Silabus memetakan butir `F-AP-d` pada minggu ini; modul draf ini belum dihitung memenuhinya.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Silabus memetakan butir `F-AP-d` pada minggu ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul.
 
 **Batas modul ini (keputusan pemilik silabus, 2026-11-18).** Lingkungan Docker, PostgreSQL, dan `apps/cms` disiapkan dan dijalankan **guru**, bukan murid. Kamu menonton, memprediksi, dan mencatat. Kamu tidak menyentuh backend dan tidak memakai backend produksi `awcms-one` (aturan template-only, ADR-0024). Penyusun **tidak** menjalankan Docker, PostgreSQL, maupun `apps/cms`; langkah yang bergantung pada itu diambil dari README dan `docs/template.md` pada 2026-11-20 dan ditandai `[belum terverifikasi]`.
 

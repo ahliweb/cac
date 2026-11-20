@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur C (IoT dan robotika), minggu `C-XI1-M10` silabus v1.3: pengiriman data antarperangkat I, yaitu mengirim data antar dua papan lewat serial (F). Prasyarat: modul `c-xi1-m9` (penyangga melingkar), `c-x1-m10` (keluaran serial), dan `FND-X1-M5` (data dikirim dalam potongan dan pemecahan masalah jaringan dasar). Kamu juga memakai `struct` dari `c-xi1-m3` dan kasus uji dari `c-xi1-m2`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-BK-d` (jaringan; untuk jalur C: pengiriman data antarperangkat) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun; pemetaan `F-BK-d` untuk jalur C bersifat parsial. Keluaran minggu ini: protokol sederhana. Latihan silabusnya: kirim pembacaan dari papan A ke papan B.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-BK-d` (jaringan; untuk jalur C: pengiriman data antarperangkat) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun; pemetaan `F-BK-d` untuk jalur C bersifat parsial. Keluaran minggu ini: protokol sederhana. Latihan silabusnya: kirim pembacaan dari papan A ke papan B.
 
 Ada dua cara mengerjakan. **Dengan dua papan (F):** kelompok menyambung dua papan sesuai lembar guru. **Tanpa papan:** kamu menjalankan "papan tiruan" di komputer yang menerima aliran karakter karangan, dan semua bagian pokok tetap dapat dikerjakan. Nama dan nomor pin serial kedua (`Serial2`) berbeda antar papan, dan sebagian papan ESP32 tidak punya UART ketiga; periksa dokumentasi papanmu dan lembar guru `[belum terverifikasi]`. Nilai kecepatan dan ukuran pada contoh hanya contoh.
 

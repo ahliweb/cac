@@ -2,9 +2,9 @@
 
 Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M14` silabus v1.4: asesmen dan refleksi semester 2. Prasyarat: modul `e-xi2-m12` dan seluruh materi semester ini; modul ini menilai semuanya. Alat: kertas, kalkulator, dan simulatormu dari `e-xi2-m4` bila ingin memeriksa.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur E adalah pengayaan di luar rumusan capaian pembelajaran (CP), dan asesmen ini tidak dihitung sebagai pemenuhan butir CP. Asesmen ini **tanpa AI**: jangan memakai AI generatif saat mengerjakannya (silabus 7.4). Bobot nilai dan predikat mengikuti kebijakan sekolah `[belum terverifikasi]`; modul ini hanya memberi soal, rubrik singkat, dan kunci. Murid tanpa dasar pemrograman mengerjakan soal dengan tangan dan kalkulator saja.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Jalur E adalah pengayaan di luar rumusan capaian pembelajaran (CP), dan asesmen ini tidak dihitung sebagai pemenuhan butir CP. Asesmen ini **tanpa AI**: jangan memakai AI generatif saat mengerjakannya (silabus 7.4). Bobot nilai dan predikat mengikuti kebijakan sekolah `[belum terverifikasi]`; modul ini hanya memberi soal, rubrik singkat, dan kunci. Murid tanpa dasar pemrograman mengerjakan soal dengan tangan dan kalkulator saja.
 
-Catatan untuk guru: soal memakai angka yang dihitung ulang penyusun dengan program kecil; Qiskit dan layanan cloud tidak dipakai. Soal 6 dan 7 bersandar pada modul `e-xi2-m8`, `e-xi2-m9`, `e-xi2-m11`, dan `e-xi2-m12`, yang masih berstatus DRAF.
+Catatan untuk guru: soal memakai angka yang dihitung ulang penyusun dengan program kecil; Qiskit dan layanan cloud tidak dipakai. Soal 6 dan 7 bersandar pada modul `e-xi2-m8`, `e-xi2-m9`, `e-xi2-m11`, dan `e-xi2-m12`, yang disetujui pemilik program pada 2026-11-20 (catatan tinjauannya masih tindak lanjut revisi).
 
 ## Ingat kembali
 

@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas X jalur C (IoT dan robotika), minggu `C-X2-M1` silabus v1.3: ulasan dan penelusuran galat perangkat (F). Prasyarat: modul `c-x1-m12`; sebaiknya kamu juga sudah mengerjakan materi `c-x1-m8` sampai `c-x1-m13`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik, dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: daftar galat umum (galat kode dan galat kabel). Latihan silabusnya: memperbaiki lima rangkaian dan program rusak.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi), dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: daftar galat umum (galat kode dan galat kabel). Latihan silabusnya: memperbaiki lima rangkaian dan program rusak.
 
 Ada dua cara mengerjakan. **Dengan papan (F):** guru menyiapkan rangkaian dan program rusak, dan kamu menelusurinya. **Tanpa papan:** kamu mengerjakan kelima kasus tertulis di bagian Latihan dan menjalankan "papan tiruan" di komputer. Nomor pin pada contoh hanya contoh `[belum terverifikasi]` untuk papanmu.
 
