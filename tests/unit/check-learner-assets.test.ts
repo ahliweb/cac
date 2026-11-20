@@ -165,6 +165,18 @@ describe("extractImageLinks", () => {
     ]);
   });
 
+  test("alt text may hold balanced brackets and escaped brackets (CommonMark)", () => {
+    const markdown = [
+      "![larik a[2] dan b[0]](../gambar/larik.svg)",
+      "![kurung \\] lolos](../gambar/lolos.svg)",
+      "![tak seimbang [ ](../gambar/bukan.svg)",
+    ].join("\n");
+    expect(extractImageLinks(markdown)).toEqual([
+      { line: 1, target: "../gambar/larik.svg" },
+      { line: 2, target: "../gambar/lolos.svg" },
+    ]);
+  });
+
   test("ignores links inside fenced code", () => {
     expect(extractImageLinks("```md\n![a](x.svg)\n```\n![b](y.svg)")).toEqual([
       { line: 4, target: "y.svg" },

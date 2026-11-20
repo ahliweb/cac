@@ -281,8 +281,9 @@ export function extractImageLinks(markdown: string): ImageLink[] {
     if (fenced) {
       return;
     }
+    // alt text may hold backslash escapes and one level of balanced brackets (CommonMark), e.g. `![a[2]](x.svg)`
     for (const match of line.matchAll(
-      /!\[[^\]]*\]\(\s*<?([^)\s>]+)>?(?:\s+(?:"[^"]*"|'[^']*'))?\s*\)/g,
+      /!\[(?:[^[\]\\]|\\.|\[(?:[^[\]\\]|\\.)*\])*\]\(\s*<?([^)\s>]+)>?(?:\s+(?:"[^"]*"|'[^']*'))?\s*\)/g,
     )) {
       links.push({ line: index + 1, target: match[1] ?? "" });
     }
