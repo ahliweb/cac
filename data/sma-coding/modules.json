@@ -8714,6 +8714,762 @@
         }
       ],
       "contentPath": "content/sma-coding/modules/b-xi2-m14.md"
+    },
+    {
+      "id": "a-xii1-m1",
+      "title": "Lintasan terpendek I",
+      "cpItems": ["F-BK-c"],
+      "weekCodes": ["A-XII1-M1"],
+      "bridgeFamilies": ["graph-tree"],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["a-xi2-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::deque",
+          "url": "https://en.cppreference.com/cpp/container/deque"
+        },
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/cpp/container/vector"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xii1-m1.md"
+    },
+    {
+      "id": "a-xii1-m2",
+      "title": "Dijkstra",
+      "cpItems": ["F-BK-c"],
+      "weekCodes": ["A-XII1-M2"],
+      "bridgeFamilies": ["graph-tree"],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["a-xii1-m1", "a-xi1-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::priority_queue",
+          "url": "https://en.cppreference.com/cpp/container/priority_queue"
+        },
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/cpp/container/vector"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xii1-m2.md"
+    },
+    {
+      "id": "a-xii1-m3",
+      "title": "Pohon rentang minimum",
+      "cpItems": ["F-BK-c"],
+      "weekCodes": ["A-XII1-M3"],
+      "bridgeFamilies": ["graph-tree"],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["a-xii1-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::sort",
+          "url": "https://en.cppreference.com/cpp/algorithm/sort"
+        },
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/cpp/container/vector"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xii1-m3.md"
+    },
+    {
+      "id": "a-xii1-m4",
+      "title": "Himpunan saling lepas (DSU)",
+      "cpItems": ["F-BK-c"],
+      "weekCodes": ["A-XII1-M4"],
+      "bridgeFamilies": ["graph-tree", "struktur-data"],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["a-xii1-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::swap",
+          "url": "https://en.cppreference.com/cpp/algorithm/swap"
+        },
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/cpp/container/vector"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xii1-m4.md"
+    },
+    {
+      "id": "a-xii1-m5",
+      "title": "Pohon berakar dan LCA",
+      "cpItems": ["F-BK-c"],
+      "weekCodes": ["A-XII1-M5"],
+      "bridgeFamilies": ["graph-tree"],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["a-xii1-m4", "a-xi2-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::queue",
+          "url": "https://en.cppreference.com/cpp/container/queue"
+        },
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/cpp/container/vector"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xii1-m5.md"
+    },
+    {
+      "id": "a-xii1-m6",
+      "title": "Aturan berhitung I",
+      "cpItems": [],
+      "weekCodes": ["A-XII1-M6"],
+      "bridgeFamilies": ["aturan-berhitung"],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["a-xii1-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::next_permutation",
+          "url": "https://en.cppreference.com/cpp/algorithm/next_permutation"
+        },
+        {
+          "title": "cppreference: Numeric limits (climits)",
+          "url": "https://en.cppreference.com/cpp/types/climits"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xii1-m6.md"
+    },
+    {
+      "id": "a-xii1-m7",
+      "title": "Aturan berhitung II",
+      "cpItems": [],
+      "weekCodes": ["A-XII1-M7"],
+      "bridgeFamilies": ["aturan-berhitung"],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["a-xii1-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::next_permutation",
+          "url": "https://en.cppreference.com/cpp/algorithm/next_permutation"
+        },
+        {
+          "title": "cppreference: std::iota",
+          "url": "https://en.cppreference.com/cpp/algorithm/iota"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xii1-m7.md"
+    },
+    {
+      "id": "a-xii1-m8",
+      "title": "Aritmetika modular",
+      "cpItems": [],
+      "weekCodes": ["A-XII1-M8"],
+      "bridgeFamilies": ["aritmetika"],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["a-xii1-m7", "a-x2-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: operator aritmetika dan bitwise",
+          "url": "https://en.cppreference.com/w/cpp/language/operator_arithmetic"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xii1-m8.md"
+    },
+    {
+      "id": "a-xii1-m9",
+      "title": "Pohon Fenwick",
+      "cpItems": ["F-BK-c"],
+      "weekCodes": ["A-XII1-M9"],
+      "bridgeFamilies": ["struktur-data"],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["a-xii1-m8", "a-xi1-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: operator aritmetika dan bitwise",
+          "url": "https://en.cppreference.com/w/cpp/language/operator_arithmetic"
+        },
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/w/cpp/container/vector"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xii1-m9.md"
+    },
+    {
+      "id": "a-xii1-m10",
+      "title": "Segment tree (pengayaan)",
+      "cpItems": ["F-BK-c"],
+      "weekCodes": ["A-XII1-M10"],
+      "bridgeFamilies": ["struktur-data"],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["a-xii1-m9"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::min",
+          "url": "https://en.cppreference.com/w/cpp/algorithm/min"
+        },
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/w/cpp/container/vector"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xii1-m10.md"
+    },
+    {
+      "id": "a-xii1-m11",
+      "title": "Geometri dasar",
+      "cpItems": [],
+      "weekCodes": ["A-XII1-M11"],
+      "bridgeFamilies": ["geometri-dasar"],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["a-xii1-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::hypot",
+          "url": "https://en.cppreference.com/w/cpp/numeric/math/hypot"
+        },
+        {
+          "title": "cppreference: std::sqrt",
+          "url": "https://en.cppreference.com/w/cpp/numeric/math/sqrt"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xii1-m11.md"
+    },
+    {
+      "id": "a-xii1-m12",
+      "title": "Program multi-berkas dan library",
+      "cpItems": ["F-AP-d"],
+      "weekCodes": ["A-XII1-M12"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["a-xii1-m11", "a-xi1-m2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "GCC: Options Controlling the Kind of Output",
+          "url": "https://gcc.gnu.org/onlinedocs/gcc/Overall-Options.html"
+        },
+        {
+          "title": "CPP: Once-Only Headers",
+          "url": "https://gcc.gnu.org/onlinedocs/cpp/Once-Only-Headers.html"
+        },
+        {
+          "title": "GNU Make manual",
+          "url": "https://www.gnu.org/software/make/manual/make.html"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xii1-m12.md"
+    },
+    {
+      "id": "a-xii1-m13",
+      "title": "Proyek",
+      "cpItems": [],
+      "weekCodes": ["A-XII1-M13"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["a-xii1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/w/cpp/container/vector"
+        },
+        {
+          "title": "cppreference: std::min",
+          "url": "https://en.cppreference.com/w/cpp/algorithm/min"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xii1-m13.md"
+    },
+    {
+      "id": "a-xii1-m14",
+      "title": "Asesmen dan refleksi (kelas XII semester 1)",
+      "cpItems": [],
+      "weekCodes": ["A-XII1-M14"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["a-xii1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "cppreference: std::queue",
+          "url": "https://en.cppreference.com/w/cpp/container/queue"
+        },
+        {
+          "title": "cppreference: std::vector",
+          "url": "https://en.cppreference.com/w/cpp/container/vector"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/a-xii1-m14.md"
+    },
+    {
+      "id": "b-xii1-m1",
+      "title": "Astro: halaman statis dan komponen",
+      "cpItems": ["F-AP-d"],
+      "weekCodes": ["B-XII1-M1"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["b-xi2-m12", "b-xi1-m6"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Astro: komponen",
+          "url": "https://docs.astro.build/en/basics/astro-components/"
+        },
+        {
+          "title": "Astro: halaman",
+          "url": "https://docs.astro.build/en/basics/astro-pages/"
+        },
+        {
+          "title": "Astro: TypeScript",
+          "url": "https://docs.astro.build/en/guides/typescript/"
+        },
+        {
+          "title": "Bun: dokumentasi",
+          "url": "https://bun.sh/docs"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xii1-m1.md"
+    },
+    {
+      "id": "b-xii1-m2",
+      "title": "Tata letak dan konten",
+      "cpItems": ["F-AP-d"],
+      "weekCodes": ["B-XII1-M2"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["b-xii1-m1"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Astro: tata letak",
+          "url": "https://docs.astro.build/en/basics/layouts/"
+        },
+        {
+          "title": "Astro: perutean",
+          "url": "https://docs.astro.build/en/guides/routing/"
+        },
+        {
+          "title": "Astro: komponen",
+          "url": "https://docs.astro.build/en/basics/astro-components/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xii1-m2.md"
+    },
+    {
+      "id": "b-xii1-m3",
+      "title": "Menjelajahi `awcms-one`",
+      "cpItems": ["F-AP-d"],
+      "weekCodes": ["B-XII1-M3"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["b-xii1-m2", "b-xi1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "awcms-one: README",
+          "url": "https://github.com/ahliweb/awcms-one/blob/main/README.md"
+        },
+        {
+          "title": "awcms-one: LICENSE",
+          "url": "https://github.com/ahliweb/awcms-one/blob/main/LICENSE"
+        },
+        {
+          "title": "awcms-one: ADR-0024 (template-only)",
+          "url": "https://github.com/ahliweb/awcms-one/blob/main/docs/adr/0024-awcms-one-is-template-only-derived-apps-own-their-backend.md"
+        },
+        {
+          "title": "Git: git-clone",
+          "url": "https://git-scm.com/docs/git-clone"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xii1-m3.md"
+    },
+    {
+      "id": "b-xii1-m4",
+      "title": "Menjalankan `awcms-one` secara lokal (demo terpandu)",
+      "cpItems": ["F-AP-d"],
+      "weekCodes": ["B-XII1-M4"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["b-xii1-m3"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "awcms-one: docs/template.md",
+          "url": "https://github.com/ahliweb/awcms-one/blob/main/docs/template.md"
+        },
+        {
+          "title": "awcms-one: ADR-0018 (profil build dan init)",
+          "url": "https://github.com/ahliweb/awcms-one/blob/main/docs/adr/0018-awcms-one-is-a-template-with-build-profiles-and-an-idempotent-init.md"
+        },
+        {
+          "title": "awcms-one: ADR-0024 (template-only)",
+          "url": "https://github.com/ahliweb/awcms-one/blob/main/docs/adr/0024-awcms-one-is-template-only-derived-apps-own-their-backend.md"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xii1-m4.md"
+    },
+    {
+      "id": "b-xii1-m5",
+      "title": "`template:init` dan profil `landing`",
+      "cpItems": ["F-AP-d"],
+      "weekCodes": ["B-XII1-M5"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["b-xii1-m4"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "awcms-one: docs/template.md",
+          "url": "https://github.com/ahliweb/awcms-one/blob/main/docs/template.md"
+        },
+        {
+          "title": "awcms-one: README",
+          "url": "https://github.com/ahliweb/awcms-one/blob/main/README.md"
+        },
+        {
+          "title": "GitHub: membuat repositori dari template",
+          "url": "https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template"
+        },
+        {
+          "title": "Git: git-clone",
+          "url": "https://git-scm.com/docs/git-clone"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xii1-m5.md"
+    },
+    {
+      "id": "b-xii1-m6",
+      "title": "Kustomisasi merek dan konten",
+      "cpItems": ["F-AP-d", "F-LD-f"],
+      "weekCodes": ["B-XII1-M6"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["b-xii1-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "awcms-one: docs/template.md",
+          "url": "https://github.com/ahliweb/awcms-one/blob/main/docs/template.md"
+        },
+        {
+          "title": "RFC 2606: nama domain tingkat atas yang dicadangkan",
+          "url": "https://www.rfc-editor.org/rfc/rfc2606"
+        },
+        {
+          "title": "Astro: variabel lingkungan",
+          "url": "https://docs.astro.build/en/guides/environment-variables/"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xii1-m6.md"
+    },
+    {
+      "id": "b-xii1-m7",
+      "title": "Tema, CSS, dan aksesibilitas",
+      "cpItems": ["F-LD-f"],
+      "weekCodes": ["B-XII1-M7"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["b-xii1-m6", "b-x2-m5"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "WCAG 2.2",
+          "url": "https://www.w3.org/TR/WCAG22/"
+        },
+        {
+          "title": "Memahami Contrast (Minimum)",
+          "url": "https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html"
+        },
+        {
+          "title": "W3C WAI: label formulir",
+          "url": "https://www.w3.org/WAI/tutorials/forms/labels/"
+        },
+        {
+          "title": "MDN: properti kustom CSS",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties"
+        },
+        {
+          "title": "axe-core",
+          "url": "https://github.com/dequelabs/axe-core"
+        },
+        {
+          "title": "Playwright: BrowserType",
+          "url": "https://playwright.dev/docs/api/class-browsertype"
+        },
+        {
+          "title": "awcms-one: docs/aksesibilitas.md",
+          "url": "https://github.com/ahliweb/awcms-one/blob/main/docs/aksesibilitas.md"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xii1-m7.md"
+    },
+    {
+      "id": "b-xii1-m8",
+      "title": "SEO dasar",
+      "cpItems": [],
+      "weekCodes": ["B-XII1-M8"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["b-xii1-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Google Search Central: SEO Starter Guide",
+          "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+        },
+        {
+          "title": "Google Search Central: influencing title links",
+          "url": "https://developers.google.com/search/docs/appearance/title-link"
+        },
+        {
+          "title": "Google Search Central: control your snippets",
+          "url": "https://developers.google.com/search/docs/appearance/snippet"
+        },
+        {
+          "title": "Google Search Central: introduction to robots.txt",
+          "url": "https://developers.google.com/search/docs/crawling-indexing/robots/intro"
+        },
+        {
+          "title": "Google Search Central: canonical URLs (rel=canonical)",
+          "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls"
+        },
+        {
+          "title": "Google Search Central: learn about sitemaps",
+          "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/overview"
+        },
+        {
+          "title": "awcms-one: docs/seo.md",
+          "url": "https://github.com/ahliweb/awcms-one/blob/main/docs/seo.md"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xii1-m8.md"
+    },
+    {
+      "id": "b-xii1-m9",
+      "title": "Pengujian dan gerbang mutu",
+      "cpItems": ["F-AP-c"],
+      "weekCodes": ["B-XII1-M9"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["b-xii1-m8", "b-xi1-m7"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Bun: bun test",
+          "url": "https://bun.sh/docs/cli/test"
+        },
+        {
+          "title": "Astro: CLI reference (astro check)",
+          "url": "https://docs.astro.build/en/reference/cli-reference/"
+        },
+        {
+          "title": "awcms-one: README (Gates)",
+          "url": "https://github.com/ahliweb/awcms-one/blob/main/README.md"
+        },
+        {
+          "title": "awcms-one: docs/template.md",
+          "url": "https://github.com/ahliweb/awcms-one/blob/main/docs/template.md"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xii1-m9.md"
+    },
+    {
+      "id": "b-xii1-m10",
+      "title": "Rahasia dan konfigurasi",
+      "cpItems": ["F-LD-i"],
+      "weekCodes": ["B-XII1-M10"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["b-xii1-m9", "FND-X1-M6", "b-xi2-m10"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Astro: environment variables",
+          "url": "https://docs.astro.build/en/guides/environment-variables/"
+        },
+        {
+          "title": "Bun: environment variables",
+          "url": "https://bun.sh/docs/runtime/env"
+        },
+        {
+          "title": "Git: gitignore",
+          "url": "https://git-scm.com/docs/gitignore"
+        },
+        {
+          "title": "awcms-one: apps/storefront/.env.example",
+          "url": "https://github.com/ahliweb/awcms-one/blob/main/apps/storefront/.env.example"
+        },
+        {
+          "title": "awcms-one: .gitignore",
+          "url": "https://github.com/ahliweb/awcms-one/blob/main/.gitignore"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xii1-m10.md"
+    },
+    {
+      "id": "b-xii1-m11",
+      "title": "Dokumentasi dan lisensi",
+      "cpItems": [],
+      "weekCodes": ["B-XII1-M11"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["b-xii1-m10", "FND-X1-M2"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "Open Source Initiative: The MIT License",
+          "url": "https://opensource.org/license/mit"
+        },
+        {
+          "title": "Choose a License: MIT License",
+          "url": "https://choosealicense.com/licenses/mit/"
+        },
+        {
+          "title": "Creative Commons: Attribution 4.0 International (deed)",
+          "url": "https://creativecommons.org/licenses/by/4.0/"
+        },
+        {
+          "title": "awcms-one: LICENSE",
+          "url": "https://github.com/ahliweb/awcms-one/blob/main/LICENSE"
+        },
+        {
+          "title": "awcms-one: docs/template.md",
+          "url": "https://github.com/ahliweb/awcms-one/blob/main/docs/template.md"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xii1-m11.md"
+    },
+    {
+      "id": "b-xii1-m12",
+      "title": "Ulasan sejawat (kelas XII semester 1)",
+      "cpItems": ["F-AP-c"],
+      "weekCodes": ["B-XII1-M12"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["b-xii1-m11", "b-xi1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "W3C: Web Content Accessibility Guidelines (WCAG) 2.2",
+          "url": "https://www.w3.org/TR/WCAG22/"
+        },
+        {
+          "title": "Git: git-diff",
+          "url": "https://git-scm.com/docs/git-diff"
+        },
+        {
+          "title": "awcms-one: README (Gates)",
+          "url": "https://github.com/ahliweb/awcms-one/blob/main/README.md"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xii1-m12.md"
+    },
+    {
+      "id": "b-xii1-m13",
+      "title": "Proyek",
+      "cpItems": [],
+      "weekCodes": ["B-XII1-M13"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["b-xii1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "awcms-one: docs/template.md",
+          "url": "https://github.com/ahliweb/awcms-one/blob/main/docs/template.md"
+        },
+        {
+          "title": "awcms-one: README",
+          "url": "https://github.com/ahliweb/awcms-one/blob/main/README.md"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xii1-m13.md"
+    },
+    {
+      "id": "b-xii1-m14",
+      "title": "Asesmen dan refleksi (kelas XII semester 1)",
+      "cpItems": [],
+      "weekCodes": ["B-XII1-M14"],
+      "bridgeFamilies": [],
+      "gradeLevels": ["XII"],
+      "prerequisites": ["b-xii1-m12"],
+      "audience": "siswa",
+      "language": "id",
+      "status": "draf",
+      "references": [
+        {
+          "title": "awcms-one: docs/template.md",
+          "url": "https://github.com/ahliweb/awcms-one/blob/main/docs/template.md"
+        },
+        {
+          "title": "Bun: dokumentasi",
+          "url": "https://bun.sh/docs"
+        }
+      ],
+      "contentPath": "content/sma-coding/modules/b-xii1-m14.md"
     }
   ]
 }
