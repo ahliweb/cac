@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 268" width="570" height="268" role="img" aria-labelledby="t d">
+  <title id="t">Tabel penelusuran program Q</title>
+  <desc id="d">Tabel kosong dengan kolom Blok, answer, Kondisi, skor. Lima baris: set skor, ask soal pertama, if jawaban sama dengan 42, ask soal kedua, if jawaban sama dengan 90. Jawaban pemain 42 lalu 80.</desc>
+  <rect width="570" height="268" fill="#ffffff"/>
+  <text x="10" y="26" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222">Penelusuran program Q, pemain mengetik 42 lalu 80 (isi sendiri)</text>
+  <rect x="10" y="40" width="250" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="135.0" y="62.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Blok</text>
+  <rect x="260" y="40" width="90" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="305.0" y="62.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">answer</text>
+  <rect x="350" y="40" width="130" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="415.0" y="62.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Kondisi</text>
+  <rect x="480" y="40" width="80" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="520.0" y="62.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">skor</text>
+  <rect x="10" y="74" width="250" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="135.0" y="97.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">set [skor] to (0)</text>
+  <rect x="260" y="74" width="90" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="350" y="74" width="130" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="480" y="74" width="80" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="110" width="250" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="135.0" y="133.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">ask [Berapa 6 x 7?]</text>
+  <rect x="260" y="110" width="90" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="350" y="110" width="130" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="480" y="110" width="80" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="146" width="250" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="135.0" y="169.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">if &lt;(answer) = [42]&gt;</text>
+  <rect x="260" y="146" width="90" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="350" y="146" width="130" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="480" y="146" width="80" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="182" width="250" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="135.0" y="205.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">ask [Berapa derajat ...]</text>
+  <rect x="260" y="182" width="90" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="350" y="182" width="130" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="480" y="182" width="80" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="218" width="250" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="135.0" y="241.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">if &lt;(answer) = [90]&gt;</text>
+  <rect x="260" y="218" width="90" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="350" y="218" width="130" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="480" y="218" width="80" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+</svg>

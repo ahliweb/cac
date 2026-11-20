@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 328" width="580" height="328" role="img" aria-labelledby="t d">
+  <title id="t">Tabel rekaan survei kelas kecil</title>
+  <desc id="d">Tabel empat kolom: Murid, Jumlah saudara, Cara ke sekolah, Buku dibawa. Delapan baris Murid-01 sampai Murid-08 dengan data rekaan.</desc>
+  <rect width="580" height="328" fill="#ffffff"/>
+  <text x="10" y="26" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222">Survei kelas kecil (data rekaan)</text>
+  <rect x="10" y="40" width="130" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="75.0" y="62.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Murid</text>
+  <rect x="140" y="40" width="150" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="215.0" y="62.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Jumlah saudara</text>
+  <rect x="290" y="40" width="150" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="365.0" y="62.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Cara ke sekolah</text>
+  <rect x="440" y="40" width="130" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="505.0" y="62.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Buku dibawa</text>
+  <rect x="10" y="74" width="130" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="75.0" y="94.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Murid-01</text>
+  <rect x="140" y="74" width="150" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="215.0" y="94.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">1</text>
+  <rect x="290" y="74" width="150" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="365.0" y="94.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">jalan</text>
+  <rect x="440" y="74" width="130" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="505.0" y="94.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">5</text>
+  <rect x="10" y="104" width="130" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="75.0" y="124.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Murid-02</text>
+  <rect x="140" y="104" width="150" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="215.0" y="124.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">2</text>
+  <rect x="290" y="104" width="150" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="365.0" y="124.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">sepeda</text>
+  <rect x="440" y="104" width="130" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="505.0" y="124.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">6</text>
+  <rect x="10" y="134" width="130" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="75.0" y="154.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Murid-03</text>
+  <rect x="140" y="134" width="150" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="215.0" y="154.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">0</text>
+  <rect x="290" y="134" width="150" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="365.0" y="154.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">jalan</text>
+  <rect x="440" y="134" width="130" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="505.0" y="154.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">5</text>
+  <rect x="10" y="164" width="130" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="75.0" y="184.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Murid-04</text>
+  <rect x="140" y="164" width="150" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="215.0" y="184.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">3</text>
+  <rect x="290" y="164" width="150" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="365.0" y="184.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">angkutan</text>
+  <rect x="440" y="164" width="130" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="505.0" y="184.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">7</text>
+  <rect x="10" y="194" width="130" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="75.0" y="214.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Murid-05</text>
+  <rect x="140" y="194" width="150" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="215.0" y="214.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">1</text>
+  <rect x="290" y="194" width="150" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="365.0" y="214.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">jalan</text>
+  <rect x="440" y="194" width="130" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="505.0" y="214.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">6</text>
+  <rect x="10" y="224" width="130" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="75.0" y="244.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Murid-06</text>
+  <rect x="140" y="224" width="150" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="215.0" y="244.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">2</text>
+  <rect x="290" y="224" width="150" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="365.0" y="244.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">sepeda</text>
+  <rect x="440" y="224" width="130" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="505.0" y="244.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">5</text>
+  <rect x="10" y="254" width="130" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="75.0" y="274.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Murid-07</text>
+  <rect x="140" y="254" width="150" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="215.0" y="274.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">1</text>
+  <rect x="290" y="254" width="150" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="365.0" y="274.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">jalan</text>
+  <rect x="440" y="254" width="130" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="505.0" y="274.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">7</text>
+  <rect x="10" y="284" width="130" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="75.0" y="304.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Murid-08</text>
+  <rect x="140" y="284" width="150" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="215.0" y="304.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">0</text>
+  <rect x="290" y="284" width="150" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="365.0" y="304.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">angkutan</text>
+  <rect x="440" y="284" width="130" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="505.0" y="304.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">6</text>
+</svg>

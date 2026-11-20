@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 420" width="560" height="420" role="img" aria-labelledby="t d">
+  <title id="t">Tabel penelusuran skor, nyawa, dan level</title>
+  <desc id="d">Dua tabel. Tabel pertama untuk program P: putaran 1 sampai 4 dengan kolom skor sesudah change, skor lebih dari 25, dan nyawa kosong. Tabel kedua untuk skrip game: putaran 1 sampai 5 dengan kolom touching terisi tidak, ya, tidak, ya, ya, sedangkan skor, nyawa, dan level kosong.</desc>
+  <rect width="560" height="420" fill="#ffffff"/>
+  <text x="10" y="24" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Program P (nyawa awal 3): isi tiap putaran</text>
+  <rect x="10" y="36" width="90" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="55.0" y="56.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Putaran</text>
+  <rect x="100" y="36" width="190" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="195.0" y="56.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">skor sesudah change</text>
+  <rect x="290" y="36" width="130" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="355.0" y="56.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">skor &gt; 25?</text>
+  <rect x="420" y="36" width="100" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="470.0" y="56.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">nyawa</text>
+  <rect x="10" y="66" width="90" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="55.0" y="86.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">1</text>
+  <rect x="100" y="66" width="190" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="290" y="66" width="130" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="420" y="66" width="100" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="96" width="90" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="55.0" y="116.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">2</text>
+  <rect x="100" y="96" width="190" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="290" y="96" width="130" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="420" y="96" width="100" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="126" width="90" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="55.0" y="146.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">3</text>
+  <rect x="100" y="126" width="190" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="290" y="126" width="130" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="420" y="126" width="100" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="156" width="90" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="55.0" y="176.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">4</text>
+  <rect x="100" y="156" width="190" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="290" y="156" width="130" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="420" y="156" width="100" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="10" y="210" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Skrip game: Pemain bersentuhan dengan Musuh pada putaran 2, 4, 5</text>
+  <rect x="10" y="222" width="100" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="60.0" y="242.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Putaran</text>
+  <rect x="110" y="222" width="110" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="165.0" y="242.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">skor</text>
+  <rect x="220" y="222" width="110" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="275.0" y="242.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">touching?</text>
+  <rect x="330" y="222" width="110" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="385.0" y="242.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">nyawa</text>
+  <rect x="440" y="222" width="110" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="495.0" y="242.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">level</text>
+  <rect x="10" y="252" width="100" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="60.0" y="272.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">1</text>
+  <rect x="110" y="252" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="220" y="252" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="275.0" y="272.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">tidak</text>
+  <rect x="330" y="252" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="440" y="252" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="282" width="100" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="60.0" y="302.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">2</text>
+  <rect x="110" y="282" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="220" y="282" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="275.0" y="302.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">ya</text>
+  <rect x="330" y="282" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="440" y="282" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="312" width="100" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="60.0" y="332.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">3</text>
+  <rect x="110" y="312" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="220" y="312" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="275.0" y="332.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">tidak</text>
+  <rect x="330" y="312" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="440" y="312" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="342" width="100" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="60.0" y="362.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">4</text>
+  <rect x="110" y="342" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="220" y="342" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="275.0" y="362.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">ya</text>
+  <rect x="330" y="342" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="440" y="342" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="372" width="100" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="60.0" y="392.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">5</text>
+  <rect x="110" y="372" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="220" y="372" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="275.0" y="392.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">ya</text>
+  <rect x="330" y="372" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="440" y="372" width="110" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+</svg>

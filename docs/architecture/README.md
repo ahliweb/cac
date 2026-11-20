@@ -192,7 +192,7 @@ Their state today:
   with its **own** review status (`learnerSheetStatus`, initially `draf`)
   while the module stays `disetujui`: three optional index fields, checked by
   `osn validate` (with an orphan-sheet check for every programme), printed by
-  `osn render modul --lembar` and covered by `check:module-code`. Worksheets, all `draf`, required by the schema: `osn` 10 (#285), `dewasa-coding` 36 (#286), `kuliah-coding` 24 (#287). The other programmes follow per programme (epic #283).
+  `osn render modul --lembar` and covered by `check:module-code`. Worksheets, all `draf`, required by the schema: `osn` 10 (#285), `dewasa-coding` 36 (#286), `kuliah-coding` 24 (#287), `smp-coding` 84 (#288). The other programmes follow per programme (epic #283).
 - **ADR-0008** — each programme gets its own schemas, audit and (when its
   source is tabular) fidelity module, wired through one programme table,
   `PROGRAM_MODULES` in `src/cli/program-registry.ts`, which `osn validate`

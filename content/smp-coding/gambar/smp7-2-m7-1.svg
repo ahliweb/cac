@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" width="720" height="360" role="img" aria-labelledby="t d">
+  <title id="t">Panggung Scratch dan tabel posisi</title>
+  <desc id="d">Bidang koordinat dengan sumbu x dan y yang berpotongan di (0, 0), garis bantu tiap 20 satuan, dan tabel kosong posisi x dan y sesudah tiap blok program P.</desc>
+  <rect width="720" height="360" fill="#ffffff"/>
+  <line x1="42.0" y1="40" x2="42.0" y2="320" stroke="#f2f2f2" stroke-width="1"/>
+  <text x="42.0" y="340" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">-60</text>
+  <line x1="112.0" y1="40" x2="112.0" y2="320" stroke="#f2f2f2" stroke-width="1"/>
+  <text x="112.0" y="340" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">-40</text>
+  <line x1="182.0" y1="40" x2="182.0" y2="320" stroke="#f2f2f2" stroke-width="1"/>
+  <text x="182.0" y="340" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">-20</text>
+  <line x1="252.0" y1="40" x2="252.0" y2="320" stroke="#222222" stroke-width="2"/>
+  <text x="252.0" y="340" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">0</text>
+  <line x1="322.0" y1="40" x2="322.0" y2="320" stroke="#f2f2f2" stroke-width="1"/>
+  <text x="322.0" y="340" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">20</text>
+  <line x1="392.0" y1="40" x2="392.0" y2="320" stroke="#f2f2f2" stroke-width="1"/>
+  <text x="392.0" y="340" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">40</text>
+  <line x1="462.0" y1="40" x2="462.0" y2="320" stroke="#f2f2f2" stroke-width="1"/>
+  <text x="462.0" y="340" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">60</text>
+  <line x1="42" y1="320.0" x2="462" y2="320.0" stroke="#f2f2f2" stroke-width="1"/>
+  <text x="34" y="325.0" text-anchor="end" font-family="sans-serif" font-size="14" fill="#222222">-40</text>
+  <line x1="42" y1="250.0" x2="462" y2="250.0" stroke="#f2f2f2" stroke-width="1"/>
+  <text x="34" y="255.0" text-anchor="end" font-family="sans-serif" font-size="14" fill="#222222">-20</text>
+  <line x1="42" y1="180.0" x2="462" y2="180.0" stroke="#222222" stroke-width="2"/>
+  <line x1="42" y1="110.0" x2="462" y2="110.0" stroke="#f2f2f2" stroke-width="1"/>
+  <text x="34" y="115.0" text-anchor="end" font-family="sans-serif" font-size="14" fill="#222222">20</text>
+  <line x1="42" y1="40.0" x2="462" y2="40.0" stroke="#f2f2f2" stroke-width="1"/>
+  <text x="34" y="45.0" text-anchor="end" font-family="sans-serif" font-size="14" fill="#222222">40</text>
+  <rect x="42" y="40" width="420" height="280" fill="none" stroke="#222222" stroke-width="1.5"/>
+  <text x="466" y="174" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">x</text>
+  <text x="258" y="34" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">y</text>
+  <text x="258" y="198" font-family="sans-serif" font-size="14" fill="#222222">(0, 0)</text>
+  <text x="10" y="24" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Panggung (tandai posisi sprite)</text>
+  <text x="475" y="24" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Program P (isi sendiri)</text>
+  <rect x="475" y="36" width="150" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="550.0" y="58.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Blok</text>
+  <rect x="625" y="36" width="45" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="647.5" y="58.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">x</text>
+  <rect x="670" y="36" width="45" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="692.5" y="58.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">y</text>
+  <rect x="475" y="70" width="150" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="550.0" y="92.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">go to x: (0) y: (0)</text>
+  <rect x="625" y="70" width="45" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="670" y="70" width="45" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="475" y="104" width="150" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="550.0" y="126.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">change x by (30)</text>
+  <rect x="625" y="104" width="45" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="670" y="104" width="45" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="475" y="138" width="150" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="550.0" y="160.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">change y by (-20)</text>
+  <rect x="625" y="138" width="45" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="670" y="138" width="45" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="475" y="172" width="150" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="550.0" y="194.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">change x by (-50)</text>
+  <rect x="625" y="172" width="45" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="670" y="172" width="45" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+</svg>

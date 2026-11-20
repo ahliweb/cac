@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 258" width="560" height="258" role="img" aria-labelledby="t d">
+  <title id="t">Tabel hasil dan jenis nilai</title>
+  <desc id="d">Tabel kosong tiga kolom: Ekspresi, Hasil, Jenis nilai. Lima ekspresi: 7 / 2, 7 // 2, 7 % 2, teks 7 ditambah teks 2, dan 7 + 2.</desc>
+  <rect width="560" height="258" fill="#ffffff"/>
+  <text x="10" y="34" text-anchor="start" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222">Hasil dan jenis nilai (isi sendiri)</text>
+  <rect x="10" y="44" width="200" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="110.0" y="66.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Ekspresi</text>
+  <rect x="210" y="44" width="170" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="295.0" y="66.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Hasil</text>
+  <rect x="380" y="44" width="170" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="465.0" y="66.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Jenis nilai</text>
+  <rect x="10" y="78" width="200" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="110.0" y="100.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">7 / 2</text>
+  <rect x="210" y="78" width="170" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="380" y="78" width="170" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="112" width="200" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="110.0" y="134.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">7 // 2</text>
+  <rect x="210" y="112" width="170" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="380" y="112" width="170" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="146" width="200" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="110.0" y="168.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">7 % 2</text>
+  <rect x="210" y="146" width="170" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="380" y="146" width="170" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="180" width="200" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="110.0" y="202.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">&quot;7&quot; + &quot;2&quot;</text>
+  <rect x="210" y="180" width="170" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="380" y="180" width="170" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="214" width="200" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="110.0" y="236.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">7 + 2</text>
+  <rect x="210" y="214" width="170" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="380" y="214" width="170" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+</svg>

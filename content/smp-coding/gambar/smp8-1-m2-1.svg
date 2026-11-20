@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 400" width="560" height="400" role="img" aria-labelledby="t d">
+  <title id="t">Tabel posisi dan arah sprite sesudah tiap panggilan</title>
+  <desc id="d">Dua tabel dengan kolom Panggilan, x, y, arah. Tabel pertama untuk program P dengan tiga panggilan langkah-belok; tabel kedua untuk blok langkah-belok dengan dua masukan dipanggil empat kali dengan 20 dan 90. Baris mulai terisi 0, 0, 90; sel lain kosong.</desc>
+  <rect width="560" height="400" fill="#ffffff"/>
+  <text x="10" y="24" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Program P: langkah-belok dengan jarak 50, 30, 50</text>
+  <rect x="10" y="36" width="220" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="120.0" y="56.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Panggilan</text>
+  <rect x="230" y="36" width="90" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="275.0" y="56.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">x</text>
+  <rect x="320" y="36" width="90" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="365.0" y="56.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">y</text>
+  <rect x="410" y="36" width="90" height="30" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="455.0" y="56.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">arah</text>
+  <rect x="10" y="66" width="220" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="120.0" y="86.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">mulai</text>
+  <rect x="230" y="66" width="90" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="275.0" y="86.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">0</text>
+  <rect x="320" y="66" width="90" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="365.0" y="86.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">0</text>
+  <rect x="410" y="66" width="90" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="455.0" y="86.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">90</text>
+  <rect x="10" y="96" width="220" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="120.0" y="116.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">langkah-belok (50)</text>
+  <rect x="230" y="96" width="90" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="320" y="96" width="90" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="410" y="96" width="90" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="126" width="220" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="120.0" y="146.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">langkah-belok (30)</text>
+  <rect x="230" y="126" width="90" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="320" y="126" width="90" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="410" y="126" width="90" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="156" width="220" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="120.0" y="176.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">langkah-belok (50)</text>
+  <rect x="230" y="156" width="90" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="320" y="156" width="90" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="410" y="156" width="90" height="30" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="10" y="210" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Blok dengan dua masukan: jarak 20, sudut 90, empat kali</text>
+  <rect x="10" y="222" width="220" height="28" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="120.0" y="241.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Panggilan</text>
+  <rect x="230" y="222" width="90" height="28" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="275.0" y="241.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">x</text>
+  <rect x="320" y="222" width="90" height="28" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="365.0" y="241.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">y</text>
+  <rect x="410" y="222" width="90" height="28" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="455.0" y="241.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">arah</text>
+  <rect x="10" y="250" width="220" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="120.0" y="269.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">mulai</text>
+  <rect x="230" y="250" width="90" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="275.0" y="269.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">0</text>
+  <rect x="320" y="250" width="90" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="365.0" y="269.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">0</text>
+  <rect x="410" y="250" width="90" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="455.0" y="269.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">90</text>
+  <rect x="10" y="278" width="220" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="120.0" y="297.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">panggilan 1</text>
+  <rect x="230" y="278" width="90" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="320" y="278" width="90" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="410" y="278" width="90" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="306" width="220" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="120.0" y="325.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">panggilan 2</text>
+  <rect x="230" y="306" width="90" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="320" y="306" width="90" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="410" y="306" width="90" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="334" width="220" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="120.0" y="353.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">panggilan 3</text>
+  <rect x="230" y="334" width="90" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="320" y="334" width="90" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="410" y="334" width="90" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="362" width="220" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="120.0" y="381.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">panggilan 4</text>
+  <rect x="230" y="362" width="90" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="320" y="362" width="90" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="410" y="362" width="90" height="28" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+</svg>

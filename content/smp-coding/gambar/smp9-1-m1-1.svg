@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610 122" width="610" height="122" role="img" aria-labelledby="t d">
+  <title id="t">Tabel suku barisan 3, 7, 11, 15</title>
+  <desc id="d">Tabel dengan baris suku ke 1 sampai 10 dan baris nilai. Empat nilai pertama terisi 3, 7, 11, 15. Enam nilai sisanya kosong.</desc>
+  <rect width="610" height="122" fill="#ffffff"/>
+  <text x="10" y="34" text-anchor="start" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222">Barisan 3, 7, 11, 15, ... (isi sendiri)</text>
+  <rect x="10" y="44" width="90" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="55.0" y="66.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">suku ke</text>
+  <rect x="100" y="44" width="50" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="125.0" y="66.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">1</text>
+  <rect x="150" y="44" width="50" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="175.0" y="66.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">2</text>
+  <rect x="200" y="44" width="50" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="225.0" y="66.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">3</text>
+  <rect x="250" y="44" width="50" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="275.0" y="66.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">4</text>
+  <rect x="300" y="44" width="50" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="325.0" y="66.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">5</text>
+  <rect x="350" y="44" width="50" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="375.0" y="66.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">6</text>
+  <rect x="400" y="44" width="50" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="425.0" y="66.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">7</text>
+  <rect x="450" y="44" width="50" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="475.0" y="66.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">8</text>
+  <rect x="500" y="44" width="50" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="525.0" y="66.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">9</text>
+  <rect x="550" y="44" width="50" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="575.0" y="66.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">10</text>
+  <rect x="10" y="78" width="90" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="55.0" y="100.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">nilai</text>
+  <rect x="100" y="78" width="50" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="125.0" y="100.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">3</text>
+  <rect x="150" y="78" width="50" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="175.0" y="100.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">7</text>
+  <rect x="200" y="78" width="50" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="225.0" y="100.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">11</text>
+  <rect x="250" y="78" width="50" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="275.0" y="100.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">15</text>
+  <rect x="300" y="78" width="50" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="350" y="78" width="50" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="400" y="78" width="50" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="450" y="78" width="50" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="500" y="78" width="50" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="550" y="78" width="50" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+</svg>

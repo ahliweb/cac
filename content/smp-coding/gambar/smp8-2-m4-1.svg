@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="600" height="360" role="img" aria-labelledby="t d">
+  <title id="t">Bagan alir dua pernyataan if</title>
+  <desc id="d">Bagan alir program P. Mulai dengan x sama dengan 5. Kotak keputusan pertama x lebih dari 5: ya menuju print A, tidak langsung lanjut. Kotak keputusan kedua x sama dengan 5: ya menuju print B, tidak menuju print C. Di bawah ada kotak kosong untuk menulis apa yang tercetak.</desc>
+  <rect width="600" height="360" fill="#ffffff"/>
+  <text x="10" y="24" text-anchor="start" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222">Bagan alir program P (x = 5)</text>
+  <rect x="220" y="36" width="160" height="32" rx="16" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="300" y="57" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">mulai: x = 5</text>
+  <line x1="300" y1="68" x2="300" y2="88" stroke="#222222" stroke-width="1.5"/>
+  <polygon points="300,88 296.5,79.7 303.5,79.7" fill="#222222"/>
+  <polygon points="300,88 390,120 300,152 210,120" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="300" y="125" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">x &gt; 5 ?</text>
+  <line x1="390" y1="120" x2="450" y2="120" stroke="#222222" stroke-width="1.5"/>
+  <polygon points="450,120 441.7,123.5 441.7,116.5" fill="#222222"/>
+  <text x="420" y="112" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">ya</text>
+  <rect x="450" y="104" width="130" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="515" y="125" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">print(&quot;A&quot;)</text>
+  <line x1="515" y1="136" x2="515" y2="196" stroke="#222222" stroke-width="1.5"/>
+  <line x1="515" y1="196" x2="300" y2="196" stroke="#222222" stroke-width="1.5"/>
+  <line x1="300" y1="152" x2="300" y2="196" stroke="#222222" stroke-width="1.5"/>
+  <text x="310" y="172" text-anchor="start" font-family="sans-serif" font-size="14" fill="#222222">tidak</text>
+  <line x1="300" y1="196" x2="300" y2="214" stroke="#222222" stroke-width="1.5"/>
+  <polygon points="300,214 296.5,205.7 303.5,205.7" fill="#222222"/>
+  <polygon points="300,214 390,246 300,278 210,246" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="300" y="251" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">x == 5 ?</text>
+  <line x1="210" y1="246" x2="150" y2="246" stroke="#222222" stroke-width="1.5"/>
+  <polygon points="150,246 158.3,242.5 158.3,249.5" fill="#222222"/>
+  <text x="180" y="238" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">ya</text>
+  <rect x="20" y="230" width="130" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="85" y="251" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">print(&quot;B&quot;)</text>
+  <line x1="390" y1="246" x2="450" y2="246" stroke="#222222" stroke-width="1.5"/>
+  <polygon points="450,246 441.7,249.5 441.7,242.5" fill="#222222"/>
+  <text x="420" y="238" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">tidak</text>
+  <rect x="450" y="230" width="130" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="515" y="251" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">print(&quot;C&quot;)</text>
+  <line x1="300" y1="278" x2="300" y2="306" stroke="#222222" stroke-width="1.5"/>
+  <polygon points="300,306 296.5,297.7 303.5,297.7" fill="#222222"/>
+  <rect x="240" y="306" width="240" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="230" y="330" text-anchor="end" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Tercetak:</text>
+</svg>

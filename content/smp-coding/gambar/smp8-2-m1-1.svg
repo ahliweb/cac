@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 292" width="580" height="292" role="img" aria-labelledby="t d">
+  <title id="t">Pasangan blok Scratch dan baris Python</title>
+  <desc id="d">Tabel dua kolom: Scratch dan Python. Kolom Scratch berisi enam blok: set x to 0, change x by 1, repeat 3, if kondisi then, else, say x. Kolom Python kosong untuk diisi.</desc>
+  <rect width="580" height="292" fill="#ffffff"/>
+  <text x="10" y="34" text-anchor="start" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222">Pasangan Scratch dan Python (isi kolom Python)</text>
+  <rect x="10" y="44" width="260" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="140.0" y="66.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Scratch</text>
+  <rect x="270" y="44" width="300" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="420.0" y="66.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Python</text>
+  <rect x="10" y="78" width="260" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="140.0" y="100.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">set [x] to (0)</text>
+  <rect x="270" y="78" width="300" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="112" width="260" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="140.0" y="134.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">change [x] by (1)</text>
+  <rect x="270" y="112" width="300" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="146" width="260" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="140.0" y="168.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">repeat (3)</text>
+  <rect x="270" y="146" width="300" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="180" width="260" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="140.0" y="202.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">if &lt;...&gt; then</text>
+  <rect x="270" y="180" width="300" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="214" width="260" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="140.0" y="236.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">else</text>
+  <rect x="270" y="214" width="300" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="248" width="260" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="140.0" y="270.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">say (x)</text>
+  <rect x="270" y="248" width="300" height="34" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+</svg>

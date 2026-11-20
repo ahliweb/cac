@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 360" width="680" height="360" role="img" aria-labelledby="t d">
+  <title id="t">Dua bidang grafik batang kosong</title>
+  <desc id="d">Dua bidang grafik batang kosong dengan sumbu tegak 0 sampai 20 dan garis bantu tiap 5. Bidang kiri berlabel Senin sampai Jumat; bidang kanan berlabel Kelompok A dan Kelompok B. Batang digambar sendiri.</desc>
+  <rect width="680" height="360" fill="#ffffff"/>
+  <text x="30" y="24" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Buku dipinjam per hari</text>
+  <line x1="60" y1="260.0" x2="380" y2="260.0" stroke="#222222" stroke-width="2"/>
+  <text x="52" y="265.0" text-anchor="end" font-family="sans-serif" font-size="14" fill="#222222">0</text>
+  <line x1="60" y1="207.5" x2="380" y2="207.5" stroke="#f2f2f2" stroke-width="1"/>
+  <text x="52" y="212.5" text-anchor="end" font-family="sans-serif" font-size="14" fill="#222222">5</text>
+  <line x1="60" y1="155.0" x2="380" y2="155.0" stroke="#f2f2f2" stroke-width="1"/>
+  <text x="52" y="160.0" text-anchor="end" font-family="sans-serif" font-size="14" fill="#222222">10</text>
+  <line x1="60" y1="102.5" x2="380" y2="102.5" stroke="#f2f2f2" stroke-width="1"/>
+  <text x="52" y="107.5" text-anchor="end" font-family="sans-serif" font-size="14" fill="#222222">15</text>
+  <line x1="60" y1="50.0" x2="380" y2="50.0" stroke="#f2f2f2" stroke-width="1"/>
+  <text x="52" y="55.0" text-anchor="end" font-family="sans-serif" font-size="14" fill="#222222">20</text>
+  <line x1="60" y1="50" x2="60" y2="260" stroke="#222222" stroke-width="2"/>
+  <rect x="68.0" y="50" width="48.0" height="210" fill="none" stroke="#222222" stroke-width="1" stroke-dasharray="5 3"/>
+  <text x="92.0" y="282" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Senin</text>
+  <rect x="132.0" y="50" width="48.0" height="210" fill="none" stroke="#222222" stroke-width="1" stroke-dasharray="5 3"/>
+  <text x="156.0" y="282" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Selasa</text>
+  <rect x="196.0" y="50" width="48.0" height="210" fill="none" stroke="#222222" stroke-width="1" stroke-dasharray="5 3"/>
+  <text x="220.0" y="282" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Rabu</text>
+  <rect x="260.0" y="50" width="48.0" height="210" fill="none" stroke="#222222" stroke-width="1" stroke-dasharray="5 3"/>
+  <text x="284.0" y="282" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Kamis</text>
+  <rect x="324.0" y="50" width="48.0" height="210" fill="none" stroke="#222222" stroke-width="1" stroke-dasharray="5 3"/>
+  <text x="348.0" y="282" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Jumat</text>
+  <text x="220.0" y="310" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">buku dipinjam</text>
+  <text x="420" y="24" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Buku per kelompok</text>
+  <line x1="450" y1="260.0" x2="650" y2="260.0" stroke="#222222" stroke-width="2"/>
+  <text x="442" y="265.0" text-anchor="end" font-family="sans-serif" font-size="14" fill="#222222">0</text>
+  <line x1="450" y1="207.5" x2="650" y2="207.5" stroke="#f2f2f2" stroke-width="1"/>
+  <text x="442" y="212.5" text-anchor="end" font-family="sans-serif" font-size="14" fill="#222222">5</text>
+  <line x1="450" y1="155.0" x2="650" y2="155.0" stroke="#f2f2f2" stroke-width="1"/>
+  <text x="442" y="160.0" text-anchor="end" font-family="sans-serif" font-size="14" fill="#222222">10</text>
+  <line x1="450" y1="102.5" x2="650" y2="102.5" stroke="#f2f2f2" stroke-width="1"/>
+  <text x="442" y="107.5" text-anchor="end" font-family="sans-serif" font-size="14" fill="#222222">15</text>
+  <line x1="450" y1="50.0" x2="650" y2="50.0" stroke="#f2f2f2" stroke-width="1"/>
+  <text x="442" y="55.0" text-anchor="end" font-family="sans-serif" font-size="14" fill="#222222">20</text>
+  <line x1="450" y1="50" x2="450" y2="260" stroke="#222222" stroke-width="2"/>
+  <rect x="458.0" y="50" width="84.0" height="210" fill="none" stroke="#222222" stroke-width="1" stroke-dasharray="5 3"/>
+  <text x="500.0" y="282" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Kelompok A</text>
+  <rect x="558.0" y="50" width="84.0" height="210" fill="none" stroke="#222222" stroke-width="1" stroke-dasharray="5 3"/>
+  <text x="600.0" y="282" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Kelompok B</text>
+  <text x="550.0" y="310" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">buku dipinjam</text>
+</svg>

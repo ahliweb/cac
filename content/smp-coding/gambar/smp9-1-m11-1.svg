@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 334" width="600" height="334" role="img" aria-labelledby="t d">
+  <title id="t">Lembar periksa sumber tiga kartu</title>
+  <desc id="d">Tabel dengan enam pertanyaan pemeriksa sumber sebagai baris dan tiga kolom Kartu P, Kartu Q, Kartu R yang kosong.</desc>
+  <rect width="600" height="334" fill="#ffffff"/>
+  <text x="10" y="34" text-anchor="start" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222">Lembar periksa sumber (isi sendiri)</text>
+  <rect x="10" y="44" width="250" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="135.0" y="69.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Pertanyaan</text>
+  <rect x="260" y="44" width="110" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="315.0" y="69.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Kartu P</text>
+  <rect x="370" y="44" width="110" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="425.0" y="69.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Kartu Q</text>
+  <rect x="480" y="44" width="110" height="40" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="535.0" y="69.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Kartu R</text>
+  <rect x="10" y="84" width="250" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="135.0" y="109.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Siapa penerbitnya?</text>
+  <rect x="260" y="84" width="110" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="370" y="84" width="110" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="480" y="84" width="110" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="124" width="250" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="135.0" y="149.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Siapa penulisnya?</text>
+  <rect x="260" y="124" width="110" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="370" y="124" width="110" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="480" y="124" width="110" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="164" width="250" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="135.0" y="189.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Kapan terbit?</text>
+  <rect x="260" y="164" width="110" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="370" y="164" width="110" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="480" y="164" width="110" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="204" width="250" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="135.0" y="229.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Bukti yang bisa dibuka?</text>
+  <rect x="260" y="204" width="110" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="370" y="204" width="110" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="480" y="204" width="110" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="244" width="250" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="135.0" y="269.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Mendesak atau memancing emosi?</text>
+  <rect x="260" y="244" width="110" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="370" y="244" width="110" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="480" y="244" width="110" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="284" width="250" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="135.0" y="309.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Label dan alasan</text>
+  <rect x="260" y="284" width="110" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="370" y="284" width="110" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="480" y="284" width="110" height="40" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+</svg>

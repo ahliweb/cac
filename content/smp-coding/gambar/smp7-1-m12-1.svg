@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 710 340" width="710" height="340" role="img" aria-labelledby="t d">
+  <title id="t">Tabel isi karya Petualangan Kucing</title>
+  <desc id="d">Tabel tiga kolom: Isi karya, Tebakan, Keputusan. Tujuh baris isi karya rekaan Murid-01; kolom Tebakan dan Keputusan kosong.</desc>
+  <rect width="710" height="340" fill="#ffffff"/>
+  <text x="10" y="26" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222">Petualangan Kucing (rekaan): isi karya</text>
+  <rect x="10" y="40" width="430" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="225.0" y="62.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Isi karya</text>
+  <rect x="440" y="40" width="110" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="495.0" y="62.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Tebakan</text>
+  <rect x="550" y="40" width="150" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="625.0" y="62.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Keputusan</text>
+  <rect x="10" y="74" width="430" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="225.0" y="97.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Layar judul: "Dibuat oleh Murid-01"</text>
+  <rect x="440" y="74" width="110" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="550" y="74" width="150" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="110" width="430" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="225.0" y="133.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Layar judul: nama lengkap dan nama sekolah asli</text>
+  <rect x="440" y="110" width="110" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="550" y="110" width="150" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="146" width="430" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="225.0" y="169.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Kostum sprite: foto wajah Murid-01</text>
+  <rect x="440" y="146" width="110" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="550" y="146" width="150" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="182" width="430" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="225.0" y="205.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Latar: gambar yang digambar sendiri</text>
+  <rect x="440" y="182" width="110" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="550" y="182" width="150" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="218" width="430" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="225.0" y="241.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Musik latar yang diunduh dari situs, tanpa keterangan izin</text>
+  <rect x="440" y="218" width="110" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="550" y="218" width="150" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="254" width="430" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="225.0" y="277.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Teks: "Rumahku di dekat pasar dekat jalan itu"</text>
+  <rect x="440" y="254" width="110" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="550" y="254" width="150" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="290" width="430" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="225.0" y="313.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Suara: rekaman suara teman tanpa izin</text>
+  <rect x="440" y="290" width="110" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="550" y="290" width="150" height="36" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 316" width="620" height="316" role="img" aria-labelledby="t d">
+  <title id="t">Tabel bagian laporan A dan laporan B</title>
+  <desc id="d">Tabel tiga kolom: Bagian, Laporan A, Laporan B. Enam baris bagian: Judul dan pembuat samaran, Tujuan, Cara bermain, Hasil uji, Perbaikan, Bahan orang lain. Dua kolom laporan kosong untuk diberi tanda.</desc>
+  <rect width="620" height="316" fill="#ffffff"/>
+  <text x="10" y="26" font-family="sans-serif" font-size="16" font-weight="bold" fill="#222222">Bagian laporan: beri tanda (isi sendiri)</text>
+  <rect x="10" y="40" width="300" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="160.0" y="62.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Bagian</text>
+  <rect x="310" y="40" width="150" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="385.0" y="62.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Laporan A</text>
+  <rect x="460" y="40" width="150" height="34" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="535.0" y="62.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Laporan B</text>
+  <rect x="10" y="74" width="300" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="160.0" y="98.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Judul dan pembuat samaran</text>
+  <rect x="310" y="74" width="150" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="460" y="74" width="150" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="112" width="300" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="160.0" y="136.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Tujuan</text>
+  <rect x="310" y="112" width="150" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="460" y="112" width="150" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="150" width="300" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="160.0" y="174.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Cara bermain</text>
+  <rect x="310" y="150" width="150" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="460" y="150" width="150" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="188" width="300" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="160.0" y="212.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Hasil uji</text>
+  <rect x="310" y="188" width="150" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="460" y="188" width="150" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="226" width="300" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="160.0" y="250.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Perbaikan</text>
+  <rect x="310" y="226" width="150" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="460" y="226" width="150" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="264" width="300" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="160.0" y="288.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Bahan orang lain</text>
+  <rect x="310" y="264" width="150" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="460" y="264" width="150" height="38" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+</svg>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 400" width="560" height="400" role="img" aria-labelledby="t d">
+  <title id="t">Tabel waktu dan garis waktu pesan antar sprite</title>
+  <desc id="d">Tabel kosong dengan kolom Sprite, Ucapan, Mulai dan Selesai dalam detik untuk tiga ucapan, dan garis waktu 0 sampai 4 detik dengan tiga lajur kosong: Pemain Mulai, Pemain Selesai, dan Penjaga Aku jalan.</desc>
+  <rect width="560" height="400" fill="#ffffff"/>
+  <text x="10" y="24" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Tabel waktu (bendera hijau diklik pada detik 0)</text>
+  <rect x="10" y="36" width="100" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="60.0" y="57.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Sprite</text>
+  <rect x="110" y="36" width="150" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="185.0" y="57.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Ucapan</text>
+  <rect x="260" y="36" width="150" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="335.0" y="57.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Mulai (detik)</text>
+  <rect x="410" y="36" width="150" height="32" fill="#f2f2f2" stroke="#222222" stroke-width="1.5"/>
+  <text x="485.0" y="57.0" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Selesai (detik)</text>
+  <rect x="10" y="68" width="100" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="60.0" y="89.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Pemain</text>
+  <rect x="110" y="68" width="150" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="185.0" y="89.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Mulai</text>
+  <rect x="260" y="68" width="150" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="410" y="68" width="150" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="100" width="100" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="60.0" y="121.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Pemain</text>
+  <rect x="110" y="100" width="150" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="185.0" y="121.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Selesai</text>
+  <rect x="260" y="100" width="150" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="410" y="100" width="150" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="10" y="132" width="100" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="60.0" y="153.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Penjaga</text>
+  <rect x="110" y="132" width="150" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5"/>
+  <text x="185.0" y="153.0" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">Aku jalan</text>
+  <rect x="260" y="132" width="150" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <rect x="410" y="132" width="150" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="10" y="196" font-family="sans-serif" font-size="14" font-weight="bold" fill="#222222">Garis waktu (gambar batang dari mulai sampai selesai)</text>
+  <line x1="190" y1="214" x2="190" y2="340" stroke="#222222" stroke-width="1"/>
+  <text x="190" y="360" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">0</text>
+  <line x1="278" y1="214" x2="278" y2="340" stroke="#222222" stroke-width="1"/>
+  <text x="278" y="360" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">1</text>
+  <line x1="366" y1="214" x2="366" y2="340" stroke="#222222" stroke-width="1"/>
+  <text x="366" y="360" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">2</text>
+  <line x1="454" y1="214" x2="454" y2="340" stroke="#222222" stroke-width="1"/>
+  <text x="454" y="360" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">3</text>
+  <line x1="542" y1="214" x2="542" y2="340" stroke="#222222" stroke-width="1"/>
+  <text x="542" y="360" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">4</text>
+  <text x="366" y="384" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#222222">detik</text>
+  <text x="10" y="244" font-family="sans-serif" font-size="14" fill="#222222">Pemain: Mulai</text>
+  <rect x="190" y="222" width="352" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="10" y="284" font-family="sans-serif" font-size="14" fill="#222222">Pemain: Selesai</text>
+  <rect x="190" y="262" width="352" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="10" y="324" font-family="sans-serif" font-size="14" fill="#222222">Penjaga: Aku jalan</text>
+  <rect x="190" y="302" width="352" height="32" fill="#ffffff" stroke="#222222" stroke-width="1.5" stroke-dasharray="5 3"/>
+</svg>
