@@ -2,7 +2,7 @@
 
 Panduan berbahasa Indonesia, berorientasi tugas ("saya ingin ... lalu
 jalankan ..."), untuk memakai repositori `curriculum-as-code`. Setiap
-perintah di panduan ini sudah dijalankan pada repositori versi 2.5.0 dan
+perintah di panduan ini sudah dijalankan pada repositori versi 2.6.0 dan
 contoh keluarannya diambil dari keluaran nyata (kadang dipotong dengan `...`).
 Referensi lengkap per perintah ada di [`docs/cli/README.md`](../cli/README.md)
 (berbahasa Inggris).

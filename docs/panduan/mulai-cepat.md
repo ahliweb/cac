@@ -111,7 +111,7 @@ Contoh versi:
 
 ```text
 $ bun run src/cli/cac.ts --version
-2.5.0
+2.6.0
 ```
 
 Bentuk pendek `bun src/cli/cac.ts ...` juga bekerja (keluaran sama). Alias
