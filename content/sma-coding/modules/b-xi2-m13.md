@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XI2-M13` silabus v1.4.1: proyek aplikasi data, dikerjakan berkelompok dua sampai tiga orang. Prasyarat: modul `b-xi2-m12` (dan, melalui modul itu, materi server, data, keamanan, dan jaringan semester ini).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Silabus tidak memetakan butir capaian pembelajaran pada minggu ini. Penilaian memakai rubrik gurumu.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Silabus tidak memetakan butir capaian pembelajaran pada minggu ini. Penilaian memakai rubrik gurumu.
 
 Contoh dijalankan penyusun dengan Bun 1.4.4 dan TypeScript 7.0.2 per 2026-11, tanpa pustaka tambahan, tanpa akun, dan seluruhnya di `localhost`. **Data yang dipakai harus karangan atau terbuka dengan lisensi yang tercatat**; tidak ada data murid atau orang nyata. AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi atau rahasia pada permintaanmu; kode buatan AI harus kamu baca, jalankan, uji, dan jelaskan sendiri.
 

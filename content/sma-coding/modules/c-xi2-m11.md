@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur C (IoT dan robotika), minggu `C-XI2-M11` silabus v1.4: prediksi sederhana. Prasyarat: modul `c-xi2-m10` (rekap dan visualisasi); kamu memakai rata-rata dan penjagaan pembagian nol dari modul sebelumnya.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-AD-a` (data terbuka, keputusan, dan prediksi) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: program prediksi. Latihan silabusnya: memprediksi suhu berikutnya dan galatnya.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-AD-a` (data terbuka, keputusan, dan prediksi) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: program prediksi. Latihan silabusnya: memprediksi suhu berikutnya dan galatnya.
 
 Seluruh modul ini dapat dikerjakan **tanpa papan**: program berjalan di komputer dengan data karangan. Dengan papan, kamu dapat memakai catatan suhu yang kamu kumpulkan sendiri. Modul ini tidak memakai perangkat fisik; aturan keselamatan dari modul sebelumnya tetap berlaku bila kamu memakai papan.
 

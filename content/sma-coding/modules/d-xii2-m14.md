@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur D (kecerdasan buatan dan analisis data), untuk minggu `D-XII2-M14` silabus v1.3: asesmen, yaitu menunjukkan seluruh jalur lewat uji praktik dan rubrik proyek. Prasyarat terindeks: modul `d-xii1-m12`. Modul `d-xii2-m1` sampai `d-xii2-m13` ditulis dalam seri yang sama; bahannya diujikan di sini. Alat: Python 3 dengan `numpy` dan `scikit-learn` untuk bagian praktik, kertas untuk bagian tulis, tanpa akun.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur D adalah pengayaan di luar rumusan capaian pembelajaran (CP); minggu ini tidak punya irisan pengayaan, jadi tidak dihitung memenuhi butir CP mana pun, dan hasilnya bukan nilai resmi.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Jalur D adalah pengayaan di luar rumusan capaian pembelajaran (CP); minggu ini tidak punya irisan pengayaan, jadi tidak dihitung memenuhi butir CP mana pun, dan hasilnya bukan nilai resmi.
 
 **Asesmen ini tanpa AI** (silabus bagian 7.4): jawab Ingat kembali dan Latihan bercampur dari ingatan dan pemahamanmu sendiri, tanpa asisten AI dan tanpa catatan, sampai kamu membuka `Kunci dan petunjuk`. Tujuannya melihat apa yang sungguh kamu kuasai, bukan menilai orang. Bagian `Refleksi` ditulis sendiri dan tidak disimpan di repositori ini.
 

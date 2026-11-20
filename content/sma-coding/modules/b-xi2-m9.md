@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XI2-M9` silabus v1.4.1: mengonsumsi API publik dengan `fetch` dan `async/await`. Prasyarat: modul `b-xi2-m8` (prediksi sederhana) dan `b-xi2-m2` (rute dan API JSON).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Silabus tidak memetakan butir capaian pembelajaran pada minggu ini.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Silabus tidak memetakan butir capaian pembelajaran pada minggu ini.
 
 Contoh dijalankan penyusun dengan Bun 1.4.4 dan TypeScript 7.0.2 per 2026-11. Seluruh latihan memakai **server tiruan di komputermu sendiri** (`localhost`) dengan data karangan. Satu contoh memanggil layanan luar yang **terbuka tanpa kunci dan tanpa akun** (diakses penyusun 2026-11-20); tanpa internet, lewati contoh itu. Tugas baca-dan-prediksi ditandai `AI: tanpa AI`; selain itu AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi atau kata sandi pada permintaanmu.
 

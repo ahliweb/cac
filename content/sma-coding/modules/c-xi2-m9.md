@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur C (IoT dan robotika), minggu `C-XI2-M9` silabus v1.4: sumber data terbuka dan legal. Prasyarat: modul `c-xi2-m8` (pemecahan masalah jaringan IoT); ia dipakai bersama pengetahuan format data dan pengelolaan sensor dari modul semester sebelumnya.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-AD-a` (data terbuka, keputusan, dan prediksi) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: catatan sumber. Latihan silabusnya: membaca lisensi satu dataset.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-AD-a` (data terbuka, keputusan, dan prediksi) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: catatan sumber. Latihan silabusnya: membaca lisensi satu dataset.
 
 Seluruh modul ini dapat dikerjakan **tanpa papan**: kamu membaca lisensi dan menjalankan program di komputer. Modul ini tidak memakai perangkat fisik; aturan keselamatan dari modul sebelumnya tetap berlaku bila kamu memakai papan untuk mencatat data sendiri. Dataset, penerbit, dan nilai di modul ini **karangan**; dataset sungguhan dipilih oleh gurumu, dan hanya data tanpa data pribadi yang dipakai.
 

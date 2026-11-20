@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas X jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-X1-M8` silabus v1.4.1: lingkungan kerja (peramban, editor, Bun, Git) serta algoritma dan pseudocode. Prasyarat: modul fondasi `fondasi-komputer-dan-hardware` (FND-X1-M1) dan `fondasi-software-dan-sistem-operasi` (FND-X1-M2). Kamu belum perlu pernah memprogram sebelum modul ini.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `E-BK-d` (solusi program sederhana dalam format pseudocode) dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan butir itu.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `E-BK-d` (solusi program sederhana dalam format pseudocode) dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul.
 
 Alat yang dipakai: peramban, editor teks, Bun, dan Git, di komputer lab atau komputer sendiri. Guru yang memasangnya (caranya ada di dokumentasi resmi Bun); kamu tidak perlu membuat akun di layanan mana pun. Semua contoh dijalankan penyusun dengan Bun 1.4.4 dan Git 2.43.0 per 2026-11; versi di komputermu mungkin berbeda.
 

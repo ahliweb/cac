@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur C (IoT dan robotika), minggu `C-XI2-M4` silabus v1.4: server mini (F). Prasyarat: modul `c-xi2-m3` (klien HTTP); kamu juga memakai alamat IP dari `c-xi2-m1` dan penyangga berukuran tetap dari `c-xi1-m10` (modul `c-xi1-m10` belum terindeks saat modul ini ditulis, jadi tidak ditulis sebagai prasyarat resmi).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-BK-d` (model jaringan, pengiriman data, dan pemecahan masalah) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: halaman data. Latihan silabusnya: halaman suhu lokal.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-BK-d` (model jaringan, pengiriman data, dan pemecahan masalah) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: halaman data. Latihan silabusnya: halaman suhu lokal.
 
 Ada dua cara mengerjakan. **Dengan papan (F):** papan ESP32 melayani halaman suhu, dan kamu membukanya dari peramban komputer yang berada di jaringan lab yang sama; bila gurumu memilih, layanan dijalankan di komputer lab. **Tanpa papan:** kamu menjalankan program di komputer yang menjawab permintaan karangan dan membaca kode serta isinya. Alamat dari lembar guru; angka suhu di modul ini karangan.
 

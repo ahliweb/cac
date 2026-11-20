@@ -46,9 +46,9 @@ untuk program <id>"; pesannya menyebut bahwa kedua perintah itu hanya ada untuk
 `osn` dan `sma-coding`, dan bahwa program itu didukung `render modul`,
 `validate` dan `check:fidelity`). `render modul` untuk kelima program itu
 (dengan `--id <id> --lembar` untuk lembar anak `tk-coding` dan `sd-coding`)
-sudah ada dan bekerja: per 2026-11-19 `data/<id>/modules.json` berisi 48
+sudah ada dan bekerja: per 2026-11-20 `data/<id>/modules.json` berisi 48
 (`tk-coding`), 168 (`sd-coding`), 84 (`smp-coding`), 24 (`kuliah-coding`), dan
-36 (`dewasa-coding`) modul draf. Program tanpa `modules.json` exit 2 dengan
+36 (`dewasa-coding`) modul, semuanya `disetujui` sejak 2026-11-20. Program tanpa `modules.json` exit 2 dengan
 pesan `this programme has no modules.json`.
 
 ## Anda siapa? Baca halaman ini
@@ -59,7 +59,7 @@ pesan `this programme has no modules.json`.
 | Mentor pembinaan OSN | Kalender kohort, rencana sesi, lembar checkpoint, laporan KPI. | [`mentor-osn.md`](mentor-osn.md) |
 | Guru SMA (program `sma-coding`) | Membaca silabus, mencari minggu tertentu, menyiapkan lab. | [`guru-sma.md`](guru-sma.md) |
 | Siswa | Memakai lembar belajar dan modul materi. | [`siswa.md`](siswa.md) |
-| Pemilik program atau peninjau | Meninjau modul draf, mencatat keputusan, merilis. | [`pemilik-peninjau.md`](pemilik-peninjau.md) |
+| Pemilik program atau peninjau | Meninjau dan merevisi modul, mencatat keputusan, merilis. | [`pemilik-peninjau.md`](pemilik-peninjau.md) |
 | Kontributor (manusia atau agent AI) | Mengubah repositori lewat issue dan PR. | [`kontributor.md`](kontributor.md) |
 
 ## Istilah penting

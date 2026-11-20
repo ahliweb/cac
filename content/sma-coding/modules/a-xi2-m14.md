@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur A (Algoritmik dengan C++), minggu `A-XI2-M14` silabus v1.4.1: asesmen dan refleksi semester 2 kelas XI. Prasyarat: modul `a-xi2-m12` dan seluruh modul `a-xi2-m1` sampai `a-xi2-m13`; modul ini menilai pemrograman dinamis, graf, dan data.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik, dan tidak dihitung sebagai pemenuhan butir capaian pembelajaran. Asesmen ini **tanpa AI**: jangan memakai AI generatif saat mengerjakannya (silabus 7.4), karena tujuannya melihat apa yang bisa kamu selesaikan sendiri. Bobot nilai dan predikat mengikuti kebijakan sekolah `[belum terverifikasi]`; modul ini hanya memberi soal dan kunci latihan. Semua data di soal adalah karangan.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi), dan tidak dihitung sebagai pemenuhan butir capaian pembelajaran. Asesmen ini **tanpa AI**: jangan memakai AI generatif saat mengerjakannya (silabus 7.4), karena tujuannya melihat apa yang bisa kamu selesaikan sendiri. Bobot nilai dan predikat mengikuti kebijakan sekolah `[belum terverifikasi]`; modul ini hanya memberi soal dan kunci latihan. Semua data di soal adalah karangan.
 
 ## Ingat kembali
 

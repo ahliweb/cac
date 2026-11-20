@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI1-M14` silabus v1.4: asesmen dan refleksi semester 1. Prasyarat: modul `e-xi1-m12` dan seluruh materi semester ini; modul ini menilai semuanya. Alat: kertas, kalkulator, Quirk (peramban, tanpa akun), dan simulatormu dari `e-xi1-m10` dan `e-xi1-m11`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur E adalah pengayaan di luar rumusan capaian pembelajaran (CP), dan asesmen ini tidak dihitung sebagai pemenuhan butir CP. Asesmen ini **tanpa AI**: jangan memakai AI generatif saat mengerjakannya (silabus 7.4). Bobot nilai dan predikat mengikuti kebijakan sekolah `[belum terverifikasi]`; modul ini hanya memberi soal, rubrik singkat, dan kunci.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Jalur E adalah pengayaan di luar rumusan capaian pembelajaran (CP), dan asesmen ini tidak dihitung sebagai pemenuhan butir CP. Asesmen ini **tanpa AI**: jangan memakai AI generatif saat mengerjakannya (silabus 7.4). Bobot nilai dan predikat mengikuti kebijakan sekolah `[belum terverifikasi]`; modul ini hanya memberi soal, rubrik singkat, dan kunci.
 
 Murid tanpa dasar pemrograman mengerjakan soal 1 sampai 7 dan melewati soal 8 (praktik kode) dengan menghitung harapan dan simpangannya dengan tangan.
 

@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur A (Algoritmik dengan C++), minggu `A-XI1-M13` silabus v1.4.1: proyek mini yang memadukan strategi pada satu masalah. Prasyarat: modul `a-xi1-m12` dan modul strategi yang kamu perlukan, terutama pengurutan dengan pembanding, greedy, dan pencarian lengkap.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-AP-b` dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan. Penilaian proyek memakai rubrik dari gurumu; modul ini tidak menilai. Semua data di proyek ini **sintetis atau karangan**; jangan memakai data orang atau tempat yang nyata.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-AP-b` dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul. Penilaian proyek memakai rubrik dari gurumu; modul ini tidak menilai. Semua data di proyek ini **sintetis atau karangan**; jangan memakai data orang atau tempat yang nyata.
 
 ## Ingat kembali
 

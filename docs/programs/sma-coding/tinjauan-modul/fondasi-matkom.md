@@ -1,9 +1,9 @@
 # Tinjauan Ilmiah Modul Draf `fondasi-*` dan `matkom-*` (sma-coding)
 
-- **Version:** v0.2.0
-- **Last updated:** 2026-11-19
-- **Status:** DRAF. Ini laporan tinjauan untuk membantu pemilik; **bukan persetujuan**. Seluruh 13 modul tetap berstatus `draf` di `data/sma-coding/modules.json` dan tidak memiliki blok `review` atau `approvedOn` (ADR-0007). Persetujuan hanya oleh pemilik.
-- **Changeset:** v0.2.0: kolom "status setelah revisi" dan bagian 7 (isi revisi modul) ditambahkan setelah revisi 13 modul (issue #125). v0.1.0: laporan awal sebelum revisi (keadaan pada `main` 8cdd753); bagian 2 dan 3 tetap menggambarkan keadaan sebelum revisi.
+- **Version:** v0.3.0
+- **Last updated:** 2026-11-20
+- **Status:** DRAF. Ini laporan tinjauan untuk membantu pemilik; **bukan persetujuan**. Laporan ini sendiri tidak mengubah status modul. Keadaan saat laporan ditulis (2026-11-19): seluruh 13 modul `draf`. Pada 2026-11-20 pemilik menyetujui seluruh 753 modul enam program coding, termasuk 13 modul ini, lewat dialog pilihan baku ("Setujui semua, catatan jadi tindak lanjut", #125; ADR-0007), sehingga kalimat "tetap `draf`" di bawah adalah riwayat. Persetujuan hanya oleh pemilik.
+- **Changeset:** v0.3.0: catatan status 2026-11-20 (persetujuan pemilik, #125). v0.2.0: kolom "status setelah revisi" dan bagian 7 (isi revisi modul) ditambahkan setelah revisi 13 modul (issue #125). v0.1.0: laporan awal sebelum revisi (keadaan pada `main` 8cdd753); bagian 2 dan 3 tetap menggambarkan keadaan sebelum revisi.
 
 ## 1. Cakupan dan metode
 

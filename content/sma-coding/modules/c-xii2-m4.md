@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur C (IoT dan robotika), minggu `C-XII2-M4` silabus v1.4: ulasan keamanan dan privasi. Prasyarat: modul `c-xii2-m3` (memodelkan masalah lapangan). Kamu juga memakai keamanan konektivitas dari `c-xi2-m2` dan hukum dan etika sensor dari `C-XII1-M11` (belum terindeks saat modul ini ditulis).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik, dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: laporan keamanan. Latihan silabusnya: mengaudit proyek sendiri.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi), dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: laporan keamanan. Latihan silabusnya: mengaudit proyek sendiri.
 
 Semua pekerjaan di komputer dan kertas; papan hanya dibaca programnya. Keselamatan perangkat: audit ini tidak mengubah rangkaian; bila kamu memperbaiki lalu mengunggah ke papan, ikuti aturan daya USB atau baterai dari guru dan cabut daya sebelum mengubah rangkaian. Semua kata sandi, token, dan alamat pada contoh adalah karangan dan bukan milik siapa pun.
 

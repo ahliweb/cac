@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur C (IoT dan robotika), minggu `C-XII2-M7` silabus v1.4: proyek akhir, sprint 2 (program). Prasyarat: modul `c-xii2-m6` (sprint 1: perangkat keras). Kamu juga memakai penyangga melingkar dari `c-xi1-m9`, mesin keadaan dari `c-xii1-m5` (belum terindeks saat modul ini ditulis), dan kendali proporsional dari `c-xii1-m7`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-BK-a` dan `F-AP-d` (struktur data dan pemakaian library atau perangkat yang tersedia), dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: program inti. Latihan silabusnya: implementasi.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-BK-a` dan `F-AP-d` (struktur data dan pemakaian library atau perangkat yang tersedia), dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: program inti. Latihan silabusnya: implementasi.
 
 Dengan papan atau tanpa papan, bagian pokok dikerjakan di komputer dengan perangkat tiruan; menyambungkannya ke papan nyata adalah sprint berikutnya. Keselamatan perangkat: minggu ini tidak ada rangkaian yang diubah; bila kamu mengunggah ke robot, ikuti aturan sprint 1 (roda terangkat, tombol berhenti, daya dari guru). Angka koreksi dan kecepatan hanya contoh `[belum terverifikasi]` untuk robotmu.
 

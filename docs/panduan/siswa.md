@@ -72,7 +72,7 @@ menjalankan
 topik, **Tujuan**, **Keluaran**, **Latihan dan kegiatan**, **Butir CP terkait**
 (beserta kutipan Capaian Pembelajaran-nya), **Jembatan ke OSN** (kalau ada),
 **Modul terkait** (kalau ada; modul bertanda **DRAF** belum ditinjau
-manusia, jadi periksa lagi ke rujukan resminya), dan **Daftar periksa mandiri**
+manusia, jadi periksa lagi ke rujukan resminya; modul yang `disetujui` tidak bertanda), dan **Daftar periksa mandiri**
 berisi kotak kosong. Cara memakainya sama dengan lembar OSN di atas. Lembar ini
 juga tanpa kolom nama. Cuplikan nyata lembar `FND-X1-M3`:
 
@@ -156,7 +156,10 @@ Hasilnya modul lengkap dengan spanduk status dan daftar rujukan di akhir.
 
 ### Arti DRAF
 
-Sejak 2026-11-18 kesepuluh modul OSN sudah disetujui pemilik program. Modul
+Sejak 2026-11-18 kesepuluh modul OSN sudah disetujui pemilik program, dan sejak
+2026-11-20 pemilik program juga menyetujui 753 modul enam program coding
+(keputusannya dicatat sebagai tanggal persetujuan; catatan tinjauan modul masih
+dikerjakan sebagai revisi, jadi tetap cocokkan dengan rujukan). Modul
 yang belum disetujui (misalnya modul baru) berstatus **draf** dan diawali
 spanduk ini:
 

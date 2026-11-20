@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XII1-M3` silabus v1.4.1: menjelajahi `awcms-one`. Prasyarat: modul `b-xii1-m2` dan `b-xi1-m12` (ulasan sejawat dan membaca kode orang lain). Prasyarat di luar indeks: tidak ada; modul ini hanya **membaca**.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Silabus memetakan butir `F-AP-d` pada minggu ini; modul draf ini belum dihitung memenuhinya.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Silabus memetakan butir `F-AP-d` pada minggu ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul.
 
 **Batas modul ini.** `awcms-one` dipakai sebagai **studi kasus** di kelas XII (keputusan pemilik silabus, 2026-11-18). Kamu membaca repositori publiknya dan tidak menjalankan apa pun dari sana pada modul ini. Basis data, Docker, dan backend disiapkan guru pada modul berikutnya; kamu tidak menyentuhnya. Fakta di bawah dibaca penyusun dari repositori publik pada 2026-11-20 (versi paket `0.20.0`, commit `66b9985a`); repositori itu terus berubah, jadi cocokkan dengan keadaan terbaru. Contoh dijalankan dengan Bun 1.4.4 per 2026-11. Tugas baca-dan-prediksi `AI: tanpa AI`; selain itu AI boleh dipakai dengan etika dan dicatat, tanpa data pribadi atau rahasia pada permintaanmu.
 

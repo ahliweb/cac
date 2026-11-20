@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur C (IoT dan robotika), minggu `C-XII1-M5` silabus v1.4: mesin keadaan robot (F). Prasyarat: modul `c-xii1-m4` (sensor garis dan jarak) dan `c-x2-m7` (waktu tanpa `delay` dan mesin keadaan sederhana). Kamu juga memakai kendali roda dari `c-xii1-m3`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-AP-b` (program terstruktur berdasarkan strategi algoritmik) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: diagram keadaan. Latihan silabusnya: robot menghindari halangan.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-AP-b` (program terstruktur berdasarkan strategi algoritmik) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: diagram keadaan. Latihan silabusnya: robot menghindari halangan.
 
 Ada dua cara mengerjakan. **Dengan papan (F):** kelompok memakai robot dari modul 3 dan 4 (dua motor, modul pengendali, satu sensor jarak, satu tombol mulai). **Tanpa papan:** kamu menjalankan mesin keadaan di komputer dengan urutan jarak karangan. Nomor pin, batas jarak, dan kecepatan pada contoh hanya contoh `[belum terverifikasi]` untuk robotmu.
 

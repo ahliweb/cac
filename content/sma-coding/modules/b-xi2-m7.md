@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XI2-M7` silabus v1.4.1: visualisasi data. Prasyarat: modul `b-xi2-m6` (pengolahan data bervolume lebih besar) dan `b-x2-m6` (DOM dan penanganan peristiwa).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-AD-a` dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan butir itu.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-AD-a` dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul.
 
 Contoh dijalankan penyusun dengan Bun 1.4.4 dan TypeScript 7.0.2 per 2026-11. Halaman hasilnya dibuka penyusun di Chrome 158 mode *headless* dan ditangkap sebagai gambar; yang dilaporkan di bawah adalah apa yang terlihat pada gambar itu. Datanya sintetis (rekap dari `b-xi2-m6`). Tugas baca-dan-prediksi ditandai `AI: tanpa AI`; selain itu AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu.
 

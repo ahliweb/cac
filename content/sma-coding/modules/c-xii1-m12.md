@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur C (IoT dan robotika), minggu `C-XII1-M12` silabus v1.4: dokumentasi dan pemeliharaan (F). Prasyarat: modul `c-xii1-m11` (hukum dan etika sensor). Kamu juga memakai kalibrasi dari `c-xii1-m4` dan hasil uji dari `c-xii1-m9`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-BK-a` (alur proses pengembangan program atau produk digital) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: dokumen proyek. Latihan silabusnya: panduan perakitan.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-BK-a` (alur proses pengembangan program atau produk digital) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: dokumen proyek. Latihan silabusnya: panduan perakitan.
 
 Ada dua cara mengerjakan. **Dengan papan (F):** kelompok menulis panduan perakitan untuk robotnya, lalu kelompok lain mencoba merakit hanya dari panduan itu. **Tanpa papan:** kamu menulis panduan untuk rangkaian karangan dan memakai program pembuat tabel pin di komputer. Nomor pin hanya contoh `[belum terverifikasi]` untuk papanmu.
 

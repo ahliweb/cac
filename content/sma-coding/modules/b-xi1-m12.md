@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XI1-M12` silabus v1.4.1: alur kerja Git dengan cabang, permintaan penggabungan (*pull request*), dan ulasan kode. Prasyarat: modul `b-xi1-m11` (kualitas kode) dan `b-x2-m12` (Git dan kolaborasi dasar).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-AP-c` dan `F-BK-a` dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan kedua butir itu.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-AP-c` dan `F-BK-a` dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul.
 
 Semua perintah dijalankan penyusun dengan Git 2.43.0, Bun 1.4.4, dan TypeScript 7.0.2 per 2026-11; kode di depan pesan commit dan alamat folder di komputermu berbeda (di bawah alamat diringkas menjadi `...`). **Tidak ada akun dan tidak ada layanan luar.** Permintaan penggabungan adalah fitur situs hosting kode yang dokumentasinya tidak dibuka penyusun `[belum terverifikasi]`; di sini alurnya disimulasikan dengan repositori pusat berupa folder, seperti di `b-x2-m12`. Nama karangan (`@contoh.example`). Tugas baca-dan-prediksi ditandai `AI: tanpa AI`; selain itu AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu. Modul ini juga melatih meninjau kode buatan AI **seperti kode sejawat**.
 

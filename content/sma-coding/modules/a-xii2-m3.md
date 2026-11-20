@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur A (Algoritmik dengan C++), minggu `A-XII2-M3` silabus v1.4.1: memodelkan masalah, yaitu menerjemahkan soal cerita menjadi graf atau DP. Prasyarat: modul `a-xii2-m2` (pemeliharaan program II).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Silabus tidak memetakan butir capaian pembelajaran untuk minggu ini, jadi modul ini tidak dihitung memenuhi butir CP apa pun. Keluarga materi OSN yang dipetakan juga tidak ada untuk minggu ini. Modul memakai BFS (modul `a-xi2-m6`) dan DP satu dimensi (modul `a-xi2-m2`) sebagai alat; keduanya tidak diajarkan ulang di sini.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Silabus tidak memetakan butir capaian pembelajaran untuk minggu ini, jadi modul ini tidak dihitung memenuhi butir CP apa pun. Keluarga materi OSN yang dipetakan juga tidak ada untuk minggu ini. Modul memakai BFS (modul `a-xi2-m6`) dan DP satu dimensi (modul `a-xi2-m2`) sebagai alat; keduanya tidak diajarkan ulang di sini.
 
 Tiap soal latihan bertanda `AI: boleh` atau `AI: tanpa AI`. Masukan program diberikan lewat berkas: `./program < masukan.txt`. Semua soal cerita karangan.
 

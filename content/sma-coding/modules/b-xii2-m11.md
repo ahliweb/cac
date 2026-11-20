@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XII2-M11` silabus v1.4.1: ulasan sejawat, yaitu menilai proyek tim lain terhadap kebutuhan dan rancangannya. Dikerjakan berkelompok dua sampai tiga orang; tiap kelompok meninjau satu proyek dan ditinjau satu kelompok. Prasyarat: modul `b-xii2-m10` dan `b-xii1-m12` (ulasan sejawat semester lalu).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-BK-a` (proses rekayasa) dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung memenuhinya. Keluaran minggu ini: catatan ulasan.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-BK-a` (proses rekayasa) dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul. Keluaran minggu ini: catatan ulasan.
 
 **Konteks semester ini.** Kelasmu mengkustomisasi profil `landing` dari `awcms-one` sebagai studi kasus: hanya merek, konten, tema, SEO, dokumentasi, dan satu formulir kontak, tanpa menyentuh backend (`main`, 2026-11-20). Contoh dijalankan penyusun dengan Bun 1.4.4 dan Git 2.43.0 per 2026-11 di repositori sementara; tidak ada akun dan tidak ada layanan luar. Semua nama dan konten karangan. Menilai pekerjaan teman adalah menilai karya, bukan orangnya.
 

@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas X yang mengambil jalur C (IoT dan robotika). Ia mendampingi minggu `C-X1-M8` silabus v1.3: mikrokontroler, papan, dan program pertama, dengan keluaran digital. Prasyarat: `FND-X1-M1` (model Input-Proses-Output, modul `fondasi-komputer-dan-hardware`) dan `FND-X1-M3` (biner, modul `fondasi-representasi-data`). Tidak perlu pernah memprogram.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik, dan tidak dihitung sebagai pemenuhan butir capaian pembelajaran. Ia mendukung butir `E-BK-d` (solusi program sederhana dalam format pseudocode) dan, pada bagian model I-P-O saja, butir `E-BK-e` (peran sistem operasi tidak dibahas di sini).
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi), dan tidak dihitung sebagai pemenuhan butir capaian pembelajaran. Ia mendukung butir `E-BK-d` (solusi program sederhana dalam format pseudocode) dan, pada bagian model I-P-O saja, butir `E-BK-e` (peran sistem operasi tidak dibahas di sini).
 
 Ada dua cara mengerjakan. **Dengan papan (F):** kamu mengunggah program ke papan ESP32 bersama kelompokmu. **Tanpa papan:** kamu menelusuri program di kertas dan menjalankan "papan tiruan" di komputer. Semua bagian pokok bisa dikerjakan tanpa papan. Nomor pin dan perilaku papan tertentu pada modul ini `[belum terverifikasi]`: periksa lembar papanmu dan tanya guru.
 

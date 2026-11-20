@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas X jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-X2-M4` silabus v1.4.1: HTML dasar. Prasyarat: modul `b-x2-m3` (objek dan JSON) dan, di luar jalur ini, `FND-X1-M4` (bagaimana halaman web sampai ke peramban).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `E-LD-f` (media digital untuk produksi dan diseminasi konten, partisipasi, kolaborasi) dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan butir itu.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `E-LD-f` (media digital untuk produksi dan diseminasi konten, partisipasi, kolaborasi) dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul.
 
 Minggu ini kamu menulis halaman, bukan program: HTML menyatakan isi dan artinya; tampilan diatur CSS (`b-x2-m5`) dan perilaku oleh JavaScript (`b-x2-m6`). Berkas HTML dibuka langsung di peramban. Blok `html` tidak diperiksa otomatis; penyusun membukanya di Chrome tanpa kepala dan mencatat yang tampak. Tugas baca-dan-prediksi ditandai `AI: tanpa AI`; selain itu AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu. Profil di modul ini karangan; jangan menaruh data dirimu atau orang lain di halaman latihan.
 

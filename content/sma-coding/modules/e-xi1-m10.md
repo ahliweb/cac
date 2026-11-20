@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI1-M10` silabus v1.4: simulator sendiri I. Prasyarat: modul `e-xi1-m9` (sirkuit satu qubit). Bagian pemrograman mensyaratkan dasar setara `A-X1-M9..M12` (C++) atau `B-X1-M9..M12` (TypeScript dengan Bun), yang tidak diindeks sebagai prasyarat modul ini; bagian konsep (vektor keadaan disimpan sebagai larik, gerbang sebagai matriks) terbuka bagi semua murid. Alat: kertas, kalkulator, dan kompilator C++ atau Bun.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur E adalah pengayaan di luar rumusan capaian pembelajaran (CP). Minggu ini menyentuh butir pengayaan `F-AP-d` (program dengan struktur data kompleks memakai library atau perangkat) hanya lewat simulator vektor keadaan buatan sendiri; irisan itu tidak dihitung memenuhi CP.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Jalur E adalah pengayaan di luar rumusan capaian pembelajaran (CP). Minggu ini menyentuh butir pengayaan `F-AP-d` (program dengan struktur data kompleks memakai library atau perangkat) hanya lewat simulator vektor keadaan buatan sendiri; irisan itu tidak dihitung memenuhi CP.
 
 Aturan AI jalur ini: AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu, dan tanpa akun wajib. Saran: jawab dulu sendiri, baru minta penjelasan atau petunjuk bertahap. Setiap soal `Latihan` bertanda `AI: boleh` atau `AI: tanpa AI`.
 

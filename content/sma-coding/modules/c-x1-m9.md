@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas X jalur C (IoT dan robotika), minggu `C-X1-M9` silabus v1.3: masukan digital, percabangan, dan logika Boolean. Prasyarat: modul `c-x1-m8` (`setup()`, `loop()`, `digitalWrite`, `delay`). Kamu belum perlu pernah memprogram sebelum jalur ini.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `E-BK-d` (solusi program sederhana dalam format pseudocode) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `E-BK-d` (solusi program sederhana dalam format pseudocode) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun.
 
 Ada dua cara mengerjakan. **Dengan papan (F):** kamu merakit satu tombol dan satu LED bersama kelompokmu. **Tanpa papan:** kamu menelusuri program di kertas dan menjalankan "papan tiruan" di komputer. Semua bagian pokok bisa dikerjakan tanpa papan. Nomor pin dan cara tombol disambung pada papanmu `[belum terverifikasi]`: ikuti lembar guru.
 

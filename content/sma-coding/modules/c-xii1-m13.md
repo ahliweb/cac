@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur C (IoT dan robotika), minggu `C-XII1-M13` silabus v1.4: proyek, menyiapkan rancangan proyek akhir (F). Prasyarat: modul `c-xii1-m12` (dokumentasi dan pemeliharaan). Kamu memakai hasil modul 1 sampai 12 semester ini, yang sebagian belum terindeks saat modul ini ditulis.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik, dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: rencana proyek. Latihan silabusnya: rencana kerja. Rencana ini dipakai pada `C-XII2-M5` (rancangan) sampai `C-XII2-M13` (presentasi).
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi), dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: rencana proyek. Latihan silabusnya: rencana kerja. Rencana ini dipakai pada `C-XII2-M5` (rancangan) sampai `C-XII2-M13` (presentasi).
 
 Ada dua cara mengerjakan. **Dengan papan (F):** kelompok merencanakan proyek yang akan dirakit pada robotnya. **Tanpa papan:** kamu merencanakan proyek yang bisa dibangun dan diuji dengan simulasi di komputer. Kerjakan dalam kelompok kecil dan bagi tugas menurut peran.
 

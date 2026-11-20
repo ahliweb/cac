@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur A (Algoritmik dengan C++), minggu `A-XII1-M12` silabus v1.4.1: program multi-berkas dan library. Prasyarat: modul `a-xii1-m11` dan `a-xi1-m2` (kualitas kode dan pengujian).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-AP-d` dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan. Tidak ada keluarga materi OSN yang dipetakan untuk minggu ini.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-AP-d` dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul. Tidak ada keluarga materi OSN yang dipetakan untuk minggu ini.
 
 Perintah di modul ini dijalankan sungguhan di direktori sementara dengan g++ 13.3.0 dan GNU Make 4.3 (per 2026-11); kamu mengetik perintah yang sama di terminal di direktori kerjamu. Tiap soal latihan bertanda `AI: boleh` atau `AI: tanpa AI`. Semua data karangan.
 

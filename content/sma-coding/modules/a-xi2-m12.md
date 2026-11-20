@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur A (Algoritmik dengan C++), minggu `A-XI2-M12` silabus v1.4.1: prediksi sederhana. Prasyarat: modul `a-xi2-m11` (catatan sumber) dan `a-xi2-m10` (rekap); bilangan desimal dari `a-x1-m9` dipakai di sini.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-AD-a` dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan. Semua data di modul ini **sintetis**: deretan angka karangan penyusun, tanpa data murid atau orang nyata. Prediksi di sini sangat sederhana dan bukan ramalan pasti. Tiap soal latihan bertanda `AI: boleh` atau `AI: tanpa AI`. Masukan program diberikan lewat berkas: `./program < data.txt`.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-AD-a` dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul. Semua data di modul ini **sintetis**: deretan angka karangan penyusun, tanpa data murid atau orang nyata. Prediksi di sini sangat sederhana dan bukan ramalan pasti. Tiap soal latihan bertanda `AI: boleh` atau `AI: tanpa AI`. Masukan program diberikan lewat berkas: `./program < data.txt`.
 
 ## Ingat kembali
 

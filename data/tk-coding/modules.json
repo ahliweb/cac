@@ -9,7 +9,7 @@
       "prerequisites": [],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -17,7 +17,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-a1-m1.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-a1-m1.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-a1-m1.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-a1-m2",
@@ -28,7 +32,7 @@
       "prerequisites": ["TK-A1-M1"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -36,7 +40,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-a1-m2.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-a1-m2.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-a1-m2.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-a1-m3",
@@ -47,7 +55,7 @@
       "prerequisites": [],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -55,7 +63,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-a1-m3.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-a1-m3.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-a1-m3.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-a1-m4",
@@ -66,7 +78,7 @@
       "prerequisites": ["TK-A1-M3"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -74,7 +86,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-a1-m4.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-a1-m4.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-a1-m4.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-a1-m5",
@@ -85,7 +101,7 @@
       "prerequisites": [],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -93,7 +109,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-a1-m5.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-a1-m5.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-a1-m5.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-a1-m6",
@@ -104,7 +124,7 @@
       "prerequisites": ["TK-A1-M5"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -112,7 +132,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-a1-m6.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-a1-m6.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-a1-m6.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-a1-m7",
@@ -123,7 +147,7 @@
       "prerequisites": [],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -131,7 +155,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-a1-m7.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-a1-m7.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-a1-m7.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-a1-m8",
@@ -142,7 +170,7 @@
       "prerequisites": ["TK-A1-M7"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -150,7 +178,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-a1-m8.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-a1-m8.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-a1-m8.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-a1-m9",
@@ -161,7 +193,7 @@
       "prerequisites": [],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -169,7 +201,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-a1-m9.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-a1-m9.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-a1-m9.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-a1-m10",
@@ -180,7 +216,7 @@
       "prerequisites": ["TK-A1-M9"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -188,7 +224,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-a1-m10.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-a1-m10.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-a1-m10.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-a1-m11",
@@ -199,7 +239,7 @@
       "prerequisites": ["TK-A1-M3", "TK-A1-M4"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -207,7 +247,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-a1-m11.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-a1-m11.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-a1-m11.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-a1-m12",
@@ -230,7 +274,7 @@
       ],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -238,7 +282,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-a1-m12.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-a1-m12.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-a1-m12.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-a2-m1",
@@ -249,7 +297,7 @@
       "prerequisites": ["TK-A1-M2"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -257,7 +305,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-a2-m1.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-a2-m1.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-a2-m1.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-a2-m2",
@@ -268,7 +320,7 @@
       "prerequisites": ["TK-A2-M1"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -276,7 +328,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-a2-m2.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-a2-m2.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-a2-m2.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-a2-m3",
@@ -287,7 +343,7 @@
       "prerequisites": ["TK-A1-M3", "TK-A1-M4"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -295,7 +351,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-a2-m3.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-a2-m3.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-a2-m3.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-a2-m4",
@@ -306,7 +366,7 @@
       "prerequisites": ["TK-A2-M3"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -314,7 +374,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-a2-m4.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-a2-m4.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-a2-m4.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-a2-m5",
@@ -325,7 +389,7 @@
       "prerequisites": ["TK-A1-M5"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -333,7 +397,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-a2-m5.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-a2-m5.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-a2-m5.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-a2-m6",
@@ -344,7 +412,7 @@
       "prerequisites": ["TK-A2-M5", "TK-A1-M6"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -352,7 +420,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-a2-m6.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-a2-m6.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-a2-m6.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-a2-m7",
@@ -363,7 +435,7 @@
       "prerequisites": [],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -371,7 +443,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-a2-m7.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-a2-m7.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-a2-m7.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-a2-m8",
@@ -382,7 +458,7 @@
       "prerequisites": ["TK-A2-M4"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -390,7 +466,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-a2-m8.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-a2-m8.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-a2-m8.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-a2-m9",
@@ -401,7 +481,7 @@
       "prerequisites": ["TK-A1-M7"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -409,7 +489,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-a2-m9.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-a2-m9.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-a2-m9.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-a2-m10",
@@ -420,7 +504,7 @@
       "prerequisites": ["TK-A1-M10"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -428,7 +512,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-a2-m10.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-a2-m10.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-a2-m10.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-a2-m11",
@@ -439,7 +527,7 @@
       "prerequisites": ["TK-A2-M1", "TK-A2-M2"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -447,7 +535,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-a2-m11.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-a2-m11.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-a2-m11.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-a2-m12",
@@ -470,7 +562,7 @@
       ],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -478,7 +570,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-a2-m12.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-a2-m12.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-a2-m12.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-b1-m1",
@@ -489,7 +585,7 @@
       "prerequisites": ["TK-A2-M3", "TK-A2-M4"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -497,7 +593,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-b1-m1.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-b1-m1.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-b1-m1.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-b1-m2",
@@ -508,7 +608,7 @@
       "prerequisites": ["TK-B1-M1"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -516,7 +616,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-b1-m2.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-b1-m2.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-b1-m2.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-b1-m3",
@@ -527,7 +631,7 @@
       "prerequisites": ["TK-B1-M2", "TK-A2-M2"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -535,7 +639,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-b1-m3.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-b1-m3.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-b1-m3.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-b1-m4",
@@ -546,7 +654,7 @@
       "prerequisites": ["TK-A2-M5"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -554,7 +662,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-b1-m4.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-b1-m4.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-b1-m4.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-b1-m5",
@@ -565,7 +677,7 @@
       "prerequisites": ["TK-B1-M2", "TK-A1-M6"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -573,7 +685,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-b1-m5.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-b1-m5.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-b1-m5.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-b1-m6",
@@ -584,7 +700,7 @@
       "prerequisites": ["TK-B1-M5"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -592,7 +708,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-b1-m6.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-b1-m6.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-b1-m6.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-b1-m7",
@@ -603,7 +723,7 @@
       "prerequisites": ["TK-A1-M7", "TK-A1-M8"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -611,7 +731,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-b1-m7.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-b1-m7.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-b1-m7.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-b1-m8",
@@ -622,7 +746,7 @@
       "prerequisites": ["TK-A1-M7"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -630,7 +754,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-b1-m8.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-b1-m8.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-b1-m8.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-b1-m9",
@@ -641,7 +769,7 @@
       "prerequisites": ["TK-A1-M9"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -649,7 +777,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-b1-m9.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-b1-m9.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-b1-m9.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-b1-m10",
@@ -660,7 +792,7 @@
       "prerequisites": [],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -668,7 +800,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-b1-m10.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-b1-m10.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-b1-m10.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-b1-m11",
@@ -679,7 +815,7 @@
       "prerequisites": ["TK-B1-M2", "TK-B1-M3", "TK-B1-M5"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -687,7 +823,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-b1-m11.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-b1-m11.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-b1-m11.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-b1-m12",
@@ -710,7 +850,7 @@
       ],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -718,7 +858,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-b1-m12.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-b1-m12.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-b1-m12.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-b2-m1",
@@ -729,7 +873,7 @@
       "prerequisites": ["TK-B1-M2", "TK-B1-M5"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -737,7 +881,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-b2-m1.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-b2-m1.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-b2-m1.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-b2-m2",
@@ -748,7 +896,7 @@
       "prerequisites": ["TK-B2-M1", "TK-B1-M3"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -756,7 +904,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-b2-m2.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-b2-m2.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-b2-m2.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-b2-m3",
@@ -767,7 +919,7 @@
       "prerequisites": ["TK-B2-M1"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -775,7 +927,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-b2-m3.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-b2-m3.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-b2-m3.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-b2-m4",
@@ -786,7 +942,7 @@
       "prerequisites": ["TK-B2-M2", "TK-B1-M3"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -794,7 +950,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-b2-m4.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-b2-m4.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-b2-m4.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-b2-m5",
@@ -805,7 +965,7 @@
       "prerequisites": ["TK-A2-M9"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -813,7 +973,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-b2-m5.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-b2-m5.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-b2-m5.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-b2-m6",
@@ -824,7 +988,7 @@
       "prerequisites": ["TK-B2-M5"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -832,7 +996,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-b2-m6.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-b2-m6.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-b2-m6.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-b2-m7",
@@ -843,7 +1011,7 @@
       "prerequisites": ["TK-B1-M2"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -851,7 +1019,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-b2-m7.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-b2-m7.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-b2-m7.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-b2-m8",
@@ -862,7 +1034,7 @@
       "prerequisites": ["TK-A1-M2", "TK-A2-M1"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -870,7 +1042,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-b2-m8.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-b2-m8.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-b2-m8.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-b2-m9",
@@ -881,7 +1057,7 @@
       "prerequisites": [],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -893,7 +1069,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-b2-m9.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-b2-m9.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-b2-m9.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-b2-m10",
@@ -904,7 +1084,7 @@
       "prerequisites": ["TK-B2-M7", "TK-B1-M5"],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -912,7 +1092,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-b2-m10.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-b2-m10.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-b2-m10.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-b2-m11",
@@ -934,7 +1118,7 @@
       ],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -942,7 +1126,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-b2-m11.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-b2-m11.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-b2-m11.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "tk-b2-m12",
@@ -965,7 +1153,7 @@
       ],
       "audience": "guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Kepmendikdasmen 127/P/2025, pedoman implementasi koding dan kecerdasan artifisial pada PAUD, dikdas, dan dikmen (pengumuman resmi Kemendikdasmen)",
@@ -973,7 +1161,11 @@
         }
       ],
       "contentPath": "content/tk-coding/modules/tk-b2-m12.md",
-      "learnerSheetPath": "content/tk-coding/lembar/tk-b2-m12.md"
+      "learnerSheetPath": "content/tk-coding/lembar/tk-b2-m12.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     }
   ]
 }

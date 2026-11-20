@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur C (IoT dan robotika), minggu `C-XI1-M11` silabus v1.3: pengiriman data antarperangkat II, yaitu merancang format pesan dan pemeriksaan galat sederhana. Prasyarat: modul `c-xi1-m10` (pengiriman data antarperangkat I). Kamu juga memakai `struct` dari `c-xi1-m3`, kasus uji dari `c-xi1-m2`, dan larik berukuran tetap dari `c-xi1-m8`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-BK-d` (jaringan; untuk jalur C: pengiriman data antarperangkat) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun; pemetaan `F-BK-d` untuk jalur C bersifat parsial. Keluaran minggu ini: spesifikasi pesan. Latihan silabusnya: tambahkan penanda awal dan jumlah periksa.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-BK-d` (jaringan; untuk jalur C: pengiriman data antarperangkat) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun; pemetaan `F-BK-d` untuk jalur C bersifat parsial. Keluaran minggu ini: spesifikasi pesan. Latihan silabusnya: tambahkan penanda awal dan jumlah periksa.
 
 Minggu ini tidak bertanda (F): semua bagian pokok dikerjakan **tanpa papan**, dengan kertas dan program C++ biasa di komputer yang menerima aliran karakter karangan. Bila kamu mencoba dengan dua papan, ikuti aturan keselamatan modul sebelumnya: daya USB saja, cabut kabel USB sebelum mengubah sambungan, dan GND bersama. Nama dan pin `Serial2` bergantung papan `[belum terverifikasi]`.
 

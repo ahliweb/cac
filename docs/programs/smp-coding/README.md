@@ -1,7 +1,7 @@
 # Program Pembelajaran Coding SMP (`smp-coding`)
 
-- **Version:** v1.3.0
-- **Last updated:** 2026-11-19
+- **Version:** v1.4.0
+- **Last updated:** 2026-11-20
 - **Status:** DISETUJUI pemilik program, 2026-11-19 — silabus v1.1.2 (revisi patch status verifikasi sumber SK 046; v1.1.1 revisi patch kalimat status, #165; v1.0.0 beserta semua rekomendasi penyusun, issue #129; v1.1.0 menambah butir dan kebijakan AI, keputusan di issue #139). Program **terdaftar** di `data/programs.json` dan corpusnya di `data/smp-coding/` (skema khusus program, ADR-0008). Modul belajar (ADR-0007): 84 modul draf (satu per minggu) di `content/smp-coding/modules/`, terindeks di `data/smp-coding/modules.json`; semuanya berstatus `draf` dan belum ditinjau pemilik (per 2026-11-19). Revisi v1.2.0 (jembatan dari SD dan ke SMA, bagian 5.1 dan 5.2) disetujui lewat keputusan pemilik 2026-11-19 (issue #177).
 
 > Isi folder ini adalah konten **karangan** (*authored*) menurut
@@ -64,12 +64,10 @@ Status per 2026-11-19, dihitung dari repositori:
 | Bagian | Jumlah | Lokasi |
 | --- | --- | --- |
 | Modul | 84 (`smp7-1-m1` sampai `smp9-2-m14`; 6 semester x 14 minggu) | `content/smp-coding/modules/<id>.md` |
-| Indeks | 84 entri, semuanya `draf` | `data/smp-coding/modules.json` (skema `src/schema/smp-module.ts`) |
+| Indeks | 84 entri, semuanya `disetujui` | `data/smp-coding/modules.json` (skema `src/schema/smp-module.ts`) |
 
 Tidak ada `lembar/` dan `gambar/` untuk program ini (hanya `tk-coding` dan
-`sd-coding` punya lembar anak). Semua modul berstatus `draf` dan belum
-ditinjau pemilik; tinjauan dilacak di issue #125 dan butir yang perlu dicek
-peninjau dikumpulkan di
+`sd-coding` punya lembar anak). Semua modul berstatus `disetujui` sejak 2026-11-20 atas keputusan pemilik program lewat dialog pilihan baku (#125), bukan hasil tinjauan isi per modul; butir yang perlu dicek dikumpulkan sebagai tindak lanjut revisi di
 [`../catatan-tinjauan-modul.md`](../catatan-tinjauan-modul.md). Modul
 mengikuti [`rancangan-modul.md`](rancangan-modul.md); contoh Python di modul
 diperiksa sintaksnya oleh `bun run check:module-code`.
@@ -87,6 +85,7 @@ diperiksa sintaksnya oleh `bun run check:module-code`.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v1.4.0 | 2026-11-20 | Pemilik menyetujui 84 modul belajar lewat dialog pilihan baku ("Setujui semua, catatan jadi tindak lanjut", #125): indeks `modules.json` berstatus `disetujui`; butir catatan tinjauan jadi tindak lanjut revisi; isi silabus dan corpus tidak berubah. |
 | v1.3.0 | 2026-11-19 | Sinkron dokumen (#124): status modul belajar (84 modul draf dan indeks `modules.json`), `rancangan-modul.md` dan pilot masuk daftar berkas, "Pekerjaan lanjutan" yang sudah selesai dihapus; isi silabus dan corpus tidak berubah. |
 | v1.2.0 | 2026-11-19 | Revisi minor atas keputusan pemilik #177: bagian 5.1 tidak lagi mengasumsikan blok, perulangan, dan percabangan dari SD (`SMP7-1-M1` pengamatan awal, hanya `SMP7-1-M1` dan `SMP7-1-M2` boleh dipadatkan); bagian 5.2 memperinci pemetaan ke SMA per kode minggu dan mengoreksi pemetaan blok kelas 7 ke fondasi `FND-X1-M1..M7`; rencana minggu, CP, dan jam tidak berubah. |
 | v1.1.1 | 2026-11-19 | Silabus direvisi patch ke v1.1.1 (issue #165): kalimat status yang basi tentang program pasangannya diperbaiki; isi kurikulum dan corpus tidak berubah. |

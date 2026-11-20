@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur C (IoT dan robotika), minggu `C-XI2-M6` silabus v1.4: publikasi-langganan, praktik (F). Prasyarat: modul `c-xi2-m5` (konsep publikasi-langganan); kamu juga memakai sambungan Wi-Fi dari `c-xi2-m1`, pola `millis()` dari `c-x2-m7`, dan keamanan dari `c-xi2-m2`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-BK-d` (model jaringan, pengiriman data, dan pemecahan masalah) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: program penerbit dan pelanggan. Latihan silabusnya: dua papan bertukar data lewat broker lokal.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-BK-d` (model jaringan, pengiriman data, dan pemecahan masalah) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: program penerbit dan pelanggan. Latihan silabusnya: dua papan bertukar data lewat broker lokal.
 
 Ada dua cara mengerjakan. **Dengan papan (F):** dua papan (satu penerbit, satu pelanggan) tersambung ke broker lokal di komputer guru. **Tanpa papan:** kamu menjalankan "papan tiruan" di komputer yang meniru broker dan pemanggil balik. Alamat dan port broker dari lembar guru `[belum terverifikasi]`; guru biasanya memakai broker seperti Mosquitto.
 

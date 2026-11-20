@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur D (kecerdasan buatan dan analisis data), untuk minggu `D-XII1-M5` silabus v1.3: menyiapkan data proyek, yaitu memilih data terbuka dan legal atau menyintesis data, dengan keluaran catatan sumber dan data. Prasyarat: modul `d-xii1-m4`. Alat: Python 3 dengan `numpy`, `pandas`, dan `scikit-learn`, tanpa akun.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur D adalah pengayaan di luar rumusan capaian pembelajaran (CP). Minggu ini beririsan dengan butir `F-AD-a` (data terbuka dan legal, prediksi) pada tingkat sedang, karena rumusan butir itu tidak menyebut AI atau pembelajaran mesin; irisan itu **tidak dihitung** sebagai pemenuhan CP.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Jalur D adalah pengayaan di luar rumusan capaian pembelajaran (CP). Minggu ini beririsan dengan butir `F-AD-a` (data terbuka dan legal, prediksi) pada tingkat sedang, karena rumusan butir itu tidak menyebut AI atau pembelajaran mesin; irisan itu **tidak dihitung** sebagai pemenuhan CP.
 
 Aturan jalur D yang berlaku: data hanya sintetis (karangan) atau terbuka dengan lisensi jelas, tanpa data yang bisa mengenali orang; wajah, suara, dan foto orang tidak dipakai sebagai data; AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu, dan kamu tidak wajib punya akun. Saran: jawab dulu sendiri, baru minta AI memberi petunjuk bertahap; kode buatan AI dibaca, dijalankan, dan diuji. Setiap soal `Latihan` bertanda `AI: boleh` atau `AI: tanpa AI`.
 

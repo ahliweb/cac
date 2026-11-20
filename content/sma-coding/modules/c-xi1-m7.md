@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur C (IoT dan robotika), minggu `C-XI1-M7` silabus v1.3: alternatif solusi II, kendali proporsional, yaitu membandingkan kendali hidup-mati dan proporsional (F). Prasyarat: modul `c-xi1-m6` (kendali hidup-mati). Kamu juga memakai histeresis dari `c-xi1-m5`, kasus uji dari `c-xi1-m2`, dan keluaran analog (PWM) dari `c-x2-m5`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-BK-b` (lebih dari satu solusi, strategi algoritmik, justifikasi efisiensi), `F-AP-a`, dan `F-AP-b`, dan tidak dihitung memenuhi butir capaian pembelajaran mana pun; pemetaan butir `F-BK-b` untuk jalur C bersifat parsial. Keluaran minggu ini: laporan perbandingan. Latihan silabusnya: kecerahan proporsional terhadap cahaya.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-BK-b` (lebih dari satu solusi, strategi algoritmik, justifikasi efisiensi), `F-AP-a`, dan `F-AP-b`, dan tidak dihitung memenuhi butir capaian pembelajaran mana pun; pemetaan butir `F-BK-b` untuk jalur C bersifat parsial. Keluaran minggu ini: laporan perbandingan. Latihan silabusnya: kecerahan proporsional terhadap cahaya.
 
 Ada dua cara mengerjakan. **Dengan papan (F):** kelompok merakit satu sensor cahaya dan satu LED dengan resistor sesuai lembar guru. **Tanpa papan:** kamu menjalankan "papan tiruan" di komputer yang membaca data cahaya karangan. Cara menghasilkan PWM pada ESP32 bergantung pada versi inti Arduino-ESP32 (ada `analogWrite` dan antarmuka `ledc`): periksa dokumentasinya dan lembar guru `[belum terverifikasi]`. Nomor pin dan angka cahaya pada contoh hanya contoh untuk rangkaianmu; ukur sendiri.
 

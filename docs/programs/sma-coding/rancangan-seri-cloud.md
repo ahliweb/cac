@@ -1,9 +1,11 @@
 # Rancangan Seri Modul Cloud Computing untuk Program Coding SMA
 
-- **Version:** v0.3.1
-- **Last updated:** 2026-11-19
+- **Version:** v0.3.2
+- **Last updated:** 2026-11-20
 - **Status:** Rancangan DISETUJUI pemilik 2026-11-19 beserta ketujuh rekomendasi (issue #89); tujuh modul draf `cloud-*` ada di `content/sma-coding/modules/` (PR #117) dan terindeks di `data/sma-coding/modules.json`, berstatus draf sampai ditinjau pemilik
 - **Changeset:** Status: tujuh modul draf `cloud-*` masuk repositori dan terindeks (PR #117).
+
+> **Catatan status (2026-11-20, #125).** Pernyataan "berstatus `draf`" atau "modul draf" di dokumen ini adalah keadaan saat rancangan ditulis. Pada 2026-11-20 pemilik program memilih "Setujui semua, catatan jadi tindak lanjut" lewat dialog pilihan baku, sehingga seluruh 753 modul enam program coding berstatus `disetujui` di `data/<id>/modules.json` (bukan hasil tinjauan isi per modul; butir [`catatan-tinjauan-modul.md`](../catatan-tinjauan-modul.md) menjadi tindak lanjut revisi). Pernyataan status modul di bawah, termasuk aturan "modul baru berstatus `draf`", adalah riwayat atau aturan untuk modul baru.
 
 > **Catatan status (2026-11-19, sinkron dokumen #124).** Kalimat "modulnya belum ditulis ke repositori" di blok kutipan bawah adalah riwayat saat persetujuan: tujuh modul `cloud-*` kini ada di `content/sma-coding/modules/` dan di `data/sma-coding/modules.json`, semua `draf`, belum ditinjau. Baris bagian 6 "`data/sma-coding/modules.json` belum ada" adalah riwayat: indeks sudah ada (239 entri). Fakta layanan penyedia cloud di modul bertanggal; butir yang perlu dicek peninjau: [`../catatan-tinjauan-modul.md`](../catatan-tinjauan-modul.md).
 > Keputusan dan kontrak yang disetujui pemilik di dokumen ini tidak berubah; yang diperbarui hanya klausa status yang basi.
@@ -286,6 +288,7 @@ Batasan:
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v0.3.2 | 2026-11-20 | Catatan status 2026-11-20: pemilik menyetujui 753 modul enam program coding (#125); pernyataan `draf` di dokumen ini menjadi riwayat; isi rancangan tidak berubah. |
 | v0.3.1 | 2026-11-19 | Sinkron dokumen (#124): catatan status; klausa "belum ditulis" dan "indeks belum ada" ditandai riwayat. Isi rancangan tidak berubah. |
 | v0.3.0 | 2026-11-19 | Status: tujuh modul draf `cloud-*` masuk repositori dan terindeks (PR #117). |
 | v0.2.0 | 2026-11-19 | Rancangan disetujui pemilik beserta ketujuh rekomendasi (issue #89); status, kotak catatan, dan pertanyaan terbuka diperbarui; kode minggu dipetakan dari v1.0 ke v1.1 (tabel padanan silabus bagian 3.0): `B-X2-M3` (DOM) menjadi `B-X2-M6`, contoh kode di bagian 6 `A-X1-M3` menjadi `A-X1-M9`; kode kelas XI dan XII tidak berubah. |

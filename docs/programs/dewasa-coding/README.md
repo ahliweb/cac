@@ -1,7 +1,7 @@
 # Program Pembelajaran Coding untuk Dewasa (`dewasa-coding`)
 
-- **Version:** v1.3.0
-- **Last updated:** 2026-11-19
+- **Version:** v1.4.0
+- **Last updated:** 2026-11-20
 - **Status:** DISETUJUI pemilik pada 2026-11-19 (dialog pilihan, beserta rekomendasi penyusun; issue #131). Silabus dienkode ke `data/dewasa-coding/` dengan skema khusus program (ADR-0008) dan didaftarkan di `data/programs.json`. Modul pembelajaran (ADR-0007): 36 modul draf di `content/dewasa-coding/modules/`, terindeks di `data/dewasa-coding/modules.json`; semuanya berstatus `draf` dan belum ditinjau pemilik (per 2026-11-19). Revisi v1.1.0 (rekayasa perangkat lunak berbantuan AI) disetujui pemilik pada 2026-11-19 lewat keputusan #139. Revisi v1.2.0 (jembatan kuliah-coding ke jalur `PRO`) disetujui lewat keputusan #177.
 - **Changeset:** `.changeset/encode-dewasa-coding.md` (minor): silabus disetujui dan dienkode (#131). Revisi v1.1.0: `.changeset/dewasa-coding-v1-1-ai.md` (minor, #139). Riwayat: `.changeset/draf-dewasa-coding.md` (patch), dokumen riset dan silabus draf. Revisi v1.2.0 (#177): `.changeset/jembatan-kuliah-dewasa.md` (minor).
 
@@ -72,11 +72,9 @@ Status per 2026-11-19, dihitung dari repositori:
 | Bagian | Jumlah | Lokasi |
 | --- | --- | --- |
 | Modul | 36: `dw-fnd` 1, `dw-pkj` 8, `dw-pro` 13, `dw-prs` 6, `dw-bis` 8 | `content/dewasa-coding/modules/<id>.md` |
-| Indeks | 36 entri, semuanya `draf` | `data/dewasa-coding/modules.json` (skema `src/schema/dw-learning-module.ts`) |
+| Indeks | 36 entri, semuanya `disetujui` | `data/dewasa-coding/modules.json` (skema `src/schema/dw-learning-module.ts`) |
 
-Tidak ada `lembar/` dan `gambar/` untuk program ini. Semua modul berstatus
-`draf` dan belum ditinjau pemilik; tinjauan dilacak di issue #125 dan butir
-yang perlu dicek peninjau dikumpulkan di
+Tidak ada `lembar/` dan `gambar/` untuk program ini. Semua modul berstatus `disetujui` sejak 2026-11-20 atas keputusan pemilik program lewat dialog pilihan baku (#125), bukan hasil tinjauan isi per modul; butir yang perlu dicek dikumpulkan sebagai tindak lanjut revisi di
 [`../catatan-tinjauan-modul.md`](../catatan-tinjauan-modul.md). Modul
 mengikuti [`rancangan-modul.md`](rancangan-modul.md).
 
@@ -97,7 +95,7 @@ Rincian opsi ada di bagian 12 `silabus.md`. Semua rekomendasi penyusun dipilih:
 | 12.9 | Revisi v1.1.0, rekayasa perangkat lunak berbantuan AI (#139, 2026-11-19) | U-13 butir tambahan di `DW-FND-M1`; U-14 butir tambahan di `DW-PKJ-M6`; U-15 modul baru `DW-PRO-M13` setelah `DW-PRO-M5` (8 jam `[asumsi]`); U-16 tanpa perubahan; kebijakan AI per program (bagian 9.1); energi dan biaya komputasi sebagai butir singkat dengan ketidakpastian |
 
 Modul `content/dewasa-coding/modules/` bukan bagian dari issue #131; modulnya
-ditulis kemudian dan kini ada sebagai draf (lihat "Modul belajar").
+ditulis kemudian dan kini ada serta disetujui pemilik pada 2026-11-20 (lihat "Modul belajar").
 
 ## Cara mengusulkan perubahan
 
@@ -117,3 +115,4 @@ dicatat dengan tanggal) dan, karena data dienkode dari silabus, mengubah
 | v1.1.2 | 2026-11-19 | Silabus direvisi patch ke v1.1.2: judul 47 unit SKKNI dicocokkan dengan lampiran resmi JDIH Kemnaker, judul unit 47 dikoreksi menjadi "Melakukan Pembaharuan Perangkat Lunak" (`riset.md` v1.0.2), status unit di `skkni-units.json` menjadi `judul-cocok-lampiran-resmi`. |
 | v1.3.0 | 2026-11-19 | Sinkron dokumen (#124): status modul belajar (36 modul draf dan indeks `modules.json`), `rancangan-modul.md` dan pilot masuk daftar berkas; keterangan nama `module-plan.json` dan `modules.json` diperbarui; isi silabus dan corpus tidak berubah. |
 | v1.2.0 | 2026-11-19 | Revisi minor atas keputusan pemilik #177: jembatan kuliah-coding ke jalur `PRO` (bagian 6.1 baris kuliah-coding, bagian 6.2 baru, keputusan 12.7 dan 12.8), berkas data baru `kuliah-bridge.json` dengan skema dan audit, pemeriksaan silang kode lintas program (ADR-0010); modul dan jam `PRO` tidak berubah. |
+| v1.4.0 | 2026-11-20 | Pemilik menyetujui 36 modul belajar lewat dialog pilihan baku ("Setujui semua, catatan jadi tindak lanjut", #125): indeks `modules.json` berstatus `disetujui`; butir catatan tinjauan jadi tindak lanjut revisi; isi silabus dan corpus tidak berubah. |

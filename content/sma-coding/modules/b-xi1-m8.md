@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XI1-M8` silabus v1.4.1: struktur data kompleks di TypeScript. Prasyarat: modul `b-xi1-m7` (pengujian dengan `bun test`) dan `b-x2-m7` (tumpukan dan antrian).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-AP-b`, `F-AP-d`, dan `F-BK-c` dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan butir-butir itu.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-AP-b`, `F-AP-d`, dan `F-BK-c` dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul.
 
 Contoh dijalankan penyusun dengan Bun 1.4.4 dan TypeScript 7.0.2 per 2026-11 (`bun run berkas.ts`; pemeriksaan tipe dengan `bunx tsc --noEmit`). Ingat: `bun run` hanya menjalankan, sedangkan yang memeriksa tipe adalah `tsc`. Tugas baca-dan-prediksi ditandai `AI: tanpa AI`; selain itu AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu. Semua nama di contoh karangan, bukan orang nyata.
 

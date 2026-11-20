@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur C (IoT dan robotika), minggu `C-XII1-M1` silabus v1.4: merancang kebutuhan sistem. Prasyarat: modul `c-xi2-m7` (format data), modul C terakhir yang sudah terindeks saat modul ini ditulis. Urutan sebenarnya melewati `C-XI2-M8` sampai `C-XI2-M14`; modul itu belum terindeks sehingga tidak ditulis sebagai prasyarat resmi. Kamu juga memakai pengertian kebutuhan dan kriteria selesai dari `c-xi1-m1`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-BK-a` (alur proses pengembangan program atau produk digital) dan `F-LD-d` (merancang kebutuhan sistem komputer sesuai kebutuhan pengguna), dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: dokumen kebutuhan. Latihan silabusnya: wawancara pengguna fiktif untuk robot sederhana.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-BK-a` (alur proses pengembangan program atau produk digital) dan `F-LD-d` (merancang kebutuhan sistem komputer sesuai kebutuhan pengguna), dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: dokumen kebutuhan. Latihan silabusnya: wawancara pengguna fiktif untuk robot sederhana.
 
 Seluruh modul ini dikerjakan **tanpa papan**, dengan kertas dan program C++ di komputer. Modul ini tidak memakai perangkat fisik; aturan keselamatan perangkat dari modul sebelumnya tetap berlaku bila kamu menyentuh papan. Semua tokoh, nama, dan angka adalah karangan.
 

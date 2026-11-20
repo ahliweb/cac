@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur A (Algoritmik dengan C++), minggu `A-XII1-M6` silabus v1.4.1: aturan berhitung I. Prasyarat: modul `a-xii1-m5` (urutan modul; materi graf tidak dipakai di sini). `long long` dan perulangan dari `a-x1-m11` dan `a-x2-m4` dipakai.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Silabus tidak memetakan butir capaian pembelajaran untuk minggu ini, jadi modul ini tidak dihitung memenuhi butir CP apa pun. Keluarga materi OSN yang bertaut: `aturan-berhitung`, yang ditandai pengayaan (P) di jembatan OSN, sehingga kelas reguler boleh melewatinya. Modul tidak menjanjikan kedalaman soal OSN.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Silabus tidak memetakan butir capaian pembelajaran untuk minggu ini, jadi modul ini tidak dihitung memenuhi butir CP apa pun. Keluarga materi OSN yang bertaut: `aturan-berhitung`, yang ditandai pengayaan (P) di jembatan OSN, sehingga kelas reguler boleh melewatinya. Modul tidak menjanjikan kedalaman soal OSN.
 
 Tiap soal latihan bertanda `AI: boleh` atau `AI: tanpa AI`. Masukan program lewat berkas: `./program < masukan.txt`. Semua data karangan.
 

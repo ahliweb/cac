@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XII1-M2` silabus v1.4.1: tata letak dan konten. Prasyarat: modul `b-xii1-m1` (Astro: halaman statis dan komponen).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Silabus memetakan butir `F-AP-d` pada minggu ini; modul draf ini belum dihitung memenuhinya.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Silabus memetakan butir `F-AP-d` pada minggu ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul.
 
 Contoh dijalankan penyusun dengan Bun 1.4.4 dan Astro 7.4.13 per 2026-11, di folder sementara, tanpa akun. Sekolah, klub, dan surel dalam contoh karangan (domain `.example`). Tugas baca-dan-prediksi `AI: tanpa AI`; selain itu AI boleh dipakai dengan etika dan dicatat, tanpa data pribadi atau rahasia pada permintaanmu.
 

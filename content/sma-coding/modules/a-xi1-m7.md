@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur A (Algoritmik dengan C++), minggu `A-XI1-M7` silabus v1.4.1: rekursi dan divide-and-conquer. Prasyarat: modul `a-xi1-m6` dan `a-x2-m11` (pengantar rekursi).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-AP-a`, `F-AP-b`, dan `F-BK-b` dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan. Keluarga materi OSN yang bertaut: `rekursi` dan `strategi-problem-solving` (rekursi dan divide-and-conquer ada di panduan, bukan pengayaan). Modul tidak menjanjikan kedalaman soal OSN dan tidak menggantikan pembinaan OSN.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-AP-a`, `F-AP-b`, dan `F-BK-b` dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul. Keluarga materi OSN yang bertaut: `rekursi` dan `strategi-problem-solving` (rekursi dan divide-and-conquer ada di panduan, bukan pengayaan). Modul tidak menjanjikan kedalaman soal OSN dan tidak menggantikan pembinaan OSN.
 
 Bila kamu pernah memakai Python: gagasannya sama; yang baru adalah memperkirakan banyak langkah dari cara masalah dibelah. Tiap soal latihan bertanda `AI: boleh` atau `AI: tanpa AI`. Masukan program diberikan lewat berkas: `./program < masukan.txt`.
 

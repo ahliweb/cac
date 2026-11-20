@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur A (Algoritmik dengan C++), minggu `A-XI2-M13` silabus v1.4.1: proyek analisis data terbuka. Prasyarat: modul `a-xi2-m12` dan modul data sebelumnya (`a-xi2-m9` sampai `a-xi2-m11`). Dikerjakan mandiri atau berkelompok.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-AD-a` dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan. Penilaian proyek memakai rubrik dari gurumu; modul ini tidak menilai. Datamu **sintetis** (buatanmu sendiri) atau **data terbuka berlisensi yang kamu baca dari halaman resminya dan kamu catat**; tidak ada data murid atau orang nyata.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-AD-a` dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul. Penilaian proyek memakai rubrik dari gurumu; modul ini tidak menilai. Datamu **sintetis** (buatanmu sendiri) atau **data terbuka berlisensi yang kamu baca dari halaman resminya dan kamu catat**; tidak ada data murid atau orang nyata.
 
 ## Ingat kembali
 

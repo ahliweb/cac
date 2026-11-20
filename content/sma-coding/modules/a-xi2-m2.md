@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur A (Algoritmik dengan C++), minggu `A-XI2-M2` silabus v1.4.1: DP satu dimensi. Prasyarat: modul `a-xi2-m1` (gagasan DP: memoisasi dan tabel).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-AP-a`, `F-AP-b`, dan `F-BK-b` dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan. Keluarga materi OSN yang bertaut: `strategi-problem-solving`; DP termasuk panduan, bukan pengayaan, sehingga modul ini tidak punya bagian `Pengayaan (P)`. Modul tidak menjanjikan kedalaman soal OSN.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-AP-a`, `F-AP-b`, dan `F-BK-b` dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul. Keluarga materi OSN yang bertaut: `strategi-problem-solving`; DP termasuk panduan, bukan pengayaan, sehingga modul ini tidak punya bagian `Pengayaan (P)`. Modul tidak menjanjikan kedalaman soal OSN.
 
 Tiap soal latihan bertanda `AI: boleh` atau `AI: tanpa AI`. Masukan program diberikan lewat berkas: `./program < masukan.txt`. Semua data karangan.
 

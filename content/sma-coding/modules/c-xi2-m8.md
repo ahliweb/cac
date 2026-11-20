@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur C (IoT dan robotika), minggu `C-XI2-M8` silabus v1.4: pemecahan masalah jaringan IoT (F). Prasyarat: modul `c-xi1-m14` (modul semester sebelumnya, termasuk diagnosis sambungan di `c-xi1-m12`). Kamu juga memakai `C-XI2-M1` (alamat IP), `C-XI2-M5` dan `C-XI2-M6` (broker) dan `C-XI2-M7` (format data); modul itu belum terindeks saat modul ini ditulis, jadi tidak ditulis sebagai prasyarat resmi.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-BK-d` (model jaringan, pengiriman data, dan pemecahan masalah) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: catatan diagnosis. Latihan silabusnya: tiga gangguan sintetis.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-BK-d` (model jaringan, pengiriman data, dan pemecahan masalah) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: catatan diagnosis. Latihan silabusnya: tiga gangguan sintetis.
 
 Ada dua cara mengerjakan. **Dengan papan (F):** gurumu menyiapkan tiga gangguan di jaringan lab dan kelompok mendiagnosisnya. **Tanpa papan:** kamu memakai program "pemeriksa lapis" di komputer dengan pengamatan karangan. Semua alamat adalah alamat contoh; jaringan lab sungguhan memakai alamat dari gurumu.
 

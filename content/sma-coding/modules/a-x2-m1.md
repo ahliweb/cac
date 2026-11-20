@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas X jalur A (Algoritmik dengan C++), minggu `A-X2-M1` silabus v1.4.1: array satu dimensi. Prasyarat: modul `a-x1-m12` (fungsi dan parameter). Kamu tidak perlu pernah memprogram sebelum jalur ini, tetapi modul ini memakai perulangan dan fungsi dari semester 1.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `E-BK-d` dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan. Keluarga materi OSN yang bertaut: `struktur-data` (array sesuai CP, bukan pengayaan).
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `E-BK-d` dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul. Keluarga materi OSN yang bertaut: `struktur-data` (array sesuai CP, bukan pengayaan).
 
 Bila kamu pernah memakai Python: array C++ berukuran tetap, semua elemennya bertipe sama, dan tidak ada pengecekan batas indeks. Urutan modul: tebak dulu, lengkapi, susun, baru menulis dari kosong. Tiap soal latihan bertanda `AI: boleh` atau `AI: tanpa AI`. Masukan program diberikan lewat berkas: `./program < masukan.txt`.
 

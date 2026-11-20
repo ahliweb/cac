@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XII2-M10` silabus v1.4.1: privasi dan hukum, yaitu memeriksa proyekmu terhadap pokok UU ITE (beserta perubahannya), ketentuan pidana siber dalam KUHP (UU 1/2023), dan UU PDP. Dikerjakan berkelompok dua sampai tiga orang. Prasyarat: modul `b-xii2-m9`, `b-xi2-m10` (pengantar keamanan dan hukum), dan fondasi `FND-X1-M6`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-LD-g` (hukum) dipetakan silabus sebagai dipenuhi jalur ini, dan `F-BK-a` sebagai dipenuhi jalur ini; modul draf ini belum dihitung memenuhi keduanya. Keluaran minggu ini: catatan kepatuhan.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-LD-g` (hukum) dipetakan silabus sebagai dipenuhi jalur ini, dan `F-BK-a` sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul. Keluaran minggu ini: catatan kepatuhan.
 
 **Bukan nasihat hukum.** Modul ini melatih mengenali pokok dan mencatat keputusan rancangan, bukan menafsirkan atau memutus perkara. Pasal hanya dikutip dari naskah resmi yang dibuka penyusun di JDIH BPK (peraturan.bpk.go.id) pada 2026-11-20; yang tidak dibuka ditandai `[belum terverifikasi]`. Peraturan dapat berubah atau diuji di pengadilan: periksa status terbaru sebelum mengutip. Semua nama dan konten karangan; formulir contoh tidak menyimpan atau mengirim data pribadi nyata. Konteksnya profil `landing` dari `awcms-one` (`main`, 2026-11-20), tanpa backend. Contoh dijalankan dengan Bun 1.4.4 per 2026-11. AI boleh dipakai dengan etika, tanpa data pribadi atau rahasia pada permintaanmu.
 

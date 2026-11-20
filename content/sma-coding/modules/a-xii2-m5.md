@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur A (Algoritmik dengan C++), minggu `A-XII2-M5` silabus v1.4.1: latihan terpadu I, yaitu memilih strategi dan struktur data yang tepat. Prasyarat: modul `a-xii2-m4` (backtracking dan pruning lanjutan).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Silabus tidak memetakan butir capaian pembelajaran untuk minggu ini, jadi modul ini tidak dihitung memenuhi butir CP apa pun. Modul ini **seluruhnya tanpa AI**: semua soal bertanda `AI: tanpa AI` (silabus bagian 7.4), karena tujuannya melatih kemampuan menyelesaikan masalah sendiri dari awal. Soal latihan adalah **soal karangan bergaya kompetitif**: ditulis ulang orisinal oleh penyusun, bukan salinan atau parafrase soal OSN, TOKI, IOI, atau platform lain. Sumber resmi hanya ditautkan: <https://osn.toki.id/>. Modul tidak menjanjikan kedalaman soal OSN dan tidak menggantikan pembinaan OSN.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Silabus tidak memetakan butir capaian pembelajaran untuk minggu ini, jadi modul ini tidak dihitung memenuhi butir CP apa pun. Modul ini **seluruhnya tanpa AI**: semua soal bertanda `AI: tanpa AI` (silabus bagian 7.4), karena tujuannya melatih kemampuan menyelesaikan masalah sendiri dari awal. Soal latihan adalah **soal karangan bergaya kompetitif**: ditulis ulang orisinal oleh penyusun, bukan salinan atau parafrase soal OSN, TOKI, IOI, atau platform lain. Sumber resmi hanya ditautkan: <https://osn.toki.id/>. Modul tidak menjanjikan kedalaman soal OSN dan tidak menggantikan pembinaan OSN.
 
 Masukan program diberikan lewat berkas: `./program < masukan.txt`. Semua data karangan.
 

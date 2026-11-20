@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur C (IoT dan robotika), minggu `C-XII1-M9` silabus v1.4: kalibrasi dan pengujian sistematis (F). Prasyarat: modul `c-xii1-m8` (membandingkan strategi). Kamu juga memakai kalibrasi sensor dari `c-xii1-m4`, yang belum terindeks saat modul ini ditulis.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik, dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: tabel hasil uji. Latihan silabusnya: sepuluh kali uji per strategi.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi), dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: tabel hasil uji. Latihan silabusnya: sepuluh kali uji per strategi.
 
 Ada dua cara mengerjakan. **Dengan papan (F):** kelompok mengalibrasi sensor dan menjalankan sepuluh lari per strategi pada lintasan modul 8. **Tanpa papan:** kamu menjalankan simulasi yang sama dengan derau berbenih (seed), model sederhana karangan. Nomor pin, ambang, dan angka kontras hanya contoh `[belum terverifikasi]` untuk robotmu.
 

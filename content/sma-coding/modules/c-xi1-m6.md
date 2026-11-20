@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur C (IoT dan robotika), minggu `C-XI1-M6` silabus v1.3: kendali hidup-mati, yaitu merancang kendali hidup-mati pada kasus pemanas atau kipas simulasi (F). Prasyarat: modul `c-xi1-m5` (alternatif solusi I: ambang dan histeresis). Kamu juga memakai struktur data dari `c-xi1-m3`, kasus uji dari `c-xi1-m2`, dan pembacaan data dari `c-x2-m12`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-BK-b` (lebih dari satu solusi, strategi algoritmik, justifikasi efisiensi), `F-AP-a`, dan `F-AP-b`, dan tidak dihitung memenuhi butir capaian pembelajaran mana pun; pemetaan butir `F-BK-b` untuk jalur C bersifat parsial. Keluaran minggu ini: program kendali. Latihan silabusnya: termostat mini.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-BK-b` (lebih dari satu solusi, strategi algoritmik, justifikasi efisiensi), `F-AP-a`, dan `F-AP-b`, dan tidak dihitung memenuhi butir capaian pembelajaran mana pun; pemetaan butir `F-BK-b` untuk jalur C bersifat parsial. Keluaran minggu ini: program kendali. Latihan silabusnya: termostat mini.
 
 Ada dua cara mengerjakan. **Dengan papan (F):** kelompok merakit satu sensor suhu dan satu LED yang berperan sebagai "pemanas" sesuai lembar guru. **Tanpa papan:** kamu menjalankan "papan tiruan" di komputer yang mensimulasikan ruangan karangan. Model ruangan di modul ini **bukan fisika ruangan nyata**, hanya mainan dengan dua angka. Nomor pin, rumus suhu, dan angka lain pada contoh hanya contoh `[belum terverifikasi]` untuk papanmu.
 

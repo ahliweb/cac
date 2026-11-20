@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XII2-M6` silabus v1.4.1: sprint 2, pengujian. Dikerjakan berkelompok dua sampai tiga orang. Prasyarat: modul `b-xii2-m5` (fitur tahap 2).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Silabus memetakan butir `F-BK-a` dan `F-LD-f` pada minggu ini; modul draf ini belum dihitung memenuhi keduanya. Keluaran minggu ini: laporan uji.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Silabus memetakan butir `F-BK-a` dan `F-LD-f` pada minggu ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul. Keluaran minggu ini: laporan uji.
 
 **Batas modul ini.** Kamu menguji hasil kustomisasi (merek, konten, tema, SEO, dokumentasi) pada repositori turunan lab; backend tidak disentuh dan tidak diuji. Dijalankan dengan Bun 1.4.4 per 2026-11 pada `awcms-one` 0.20.0, dibangun terhadap tiruan uji tanpa CMS. Semua nama dan kontak karangan. AI boleh dipakai dengan etika dan dicatat, tanpa data pribadi atau rahasia.
 

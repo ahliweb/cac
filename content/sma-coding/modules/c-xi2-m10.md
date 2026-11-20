@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur C (IoT dan robotika), minggu `C-XI2-M10` silabus v1.4: rekap dan visualisasi. Prasyarat: modul `c-xi2-m9` (sumber data terbuka dan legal) dan `c-x2-m12` (pencatatan data); kamu juga memakai pengetahuan rata-rata dan penjagaan pembagian nol dari semester-semester sebelumnya.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-AD-a` (data terbuka, keputusan, dan prediksi) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: tabel dan grafik. Latihan silabusnya: rekap suhu per jam.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-AD-a` (data terbuka, keputusan, dan prediksi) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: tabel dan grafik. Latihan silabusnya: rekap suhu per jam.
 
 Seluruh modul ini dapat dikerjakan **tanpa papan**: program berjalan di komputer dengan data karangan, dan grafiknya berupa teks. Dengan papan, kamu dapat merekap data dari catatan yang kamu kumpulkan sendiri. Modul ini tidak memakai perangkat fisik; aturan keselamatan dari modul sebelumnya tetap berlaku bila kamu memakai papan.
 

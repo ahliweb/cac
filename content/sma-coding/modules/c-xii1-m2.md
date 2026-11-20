@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur C (IoT dan robotika), minggu `C-XII1-M2` silabus v1.4: arsitektur dan pemilihan komponen. Prasyarat: modul `c-xii1-m1` (merancang kebutuhan sistem); kebutuhan K1 sampai K5 dari modul itu menjadi masukan di sini. Kamu juga memakai struktur data bentukan dari `c-xi1-m3`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-BK-a` (alur proses pengembangan program atau produk digital) dan `F-LD-d` (merancang kebutuhan sistem komputer sesuai kebutuhan pengguna), dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: tabel pemilihan komponen. Latihan silabusnya: bandingkan dua susunan komponen.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-BK-a` (alur proses pengembangan program atau produk digital) dan `F-LD-d` (merancang kebutuhan sistem komputer sesuai kebutuhan pengguna), dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: tabel pemilihan komponen. Latihan silabusnya: bandingkan dua susunan komponen.
 
 Seluruh modul ini dikerjakan **tanpa papan**, dengan kertas dan program C++ di komputer. Tidak ada perangkat fisik; aturan keselamatan perangkat dari modul sebelumnya tetap berlaku bila kamu menyentuh papan. Semua angka komponen pada contoh adalah **karangan** untuk latihan, bukan data produk nyata; di proyekmu ambil angka dari lembar data dan pengukuranmu sendiri, dan tulis "belum diketahui" bila tidak ada.
 

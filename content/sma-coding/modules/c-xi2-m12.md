@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur C (IoT dan robotika), minggu `C-XI2-M12` silabus v1.4: keputusan otomatis berbasis data (F). Prasyarat: modul `c-xi2-m11` (prediksi sederhana). Kamu juga memakai keputusan ambang dan histeresis dari semester sebelumnya (`c-xi1-m5` dan `c-xi1-m6`).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-AD-a` (data terbuka, keputusan, dan prediksi) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: sistem keputusan. Latihan silabusnya: kipas menyala dari tren suhu.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-AD-a` (data terbuka, keputusan, dan prediksi) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: sistem keputusan. Latihan silabusnya: kipas menyala dari tren suhu.
 
 Ada dua cara mengerjakan. **Dengan papan (F):** kelompok menghubungkan kipas kecil lewat modul pengendali sesuai lembar guru. **Tanpa papan:** kamu menjalankan program keputusan di komputer dengan data karangan dan menelusuri keluarannya. Semua bagian pokok bisa dikerjakan tanpa papan; yang tidak teruji adalah perilaku kipas, derau, dan waktu sungguhan. Nomor pin dan ambang pada contoh hanya contoh `[belum terverifikasi]` untuk rangkaianmu.
 

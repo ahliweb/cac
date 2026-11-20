@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur A (Algoritmik dengan C++), minggu `A-XII2-M12` silabus v1.4.1: proyek akhir, tahap implementasi dan pengujian. Prasyarat: modul `a-xii2-m11` (dokumen rancanganmu). Keluaran minggu ini: **program dan uji**.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir capaian pembelajaran yang bertaut: `F-BK-a` (proses rekayasa). **Tanpa data orang nyata:** data pengujianmu buatanmu sendiri. Pemakaian AI generatif boleh dengan etika dan dicatat; kode buatan AI kamu baca, jalankan, dan uji seperti kode sejawat.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir capaian pembelajaran yang bertaut: `F-BK-a` (proses rekayasa). **Tanpa data orang nyata:** data pengujianmu buatanmu sendiri. Pemakaian AI generatif boleh dengan etika dan dicatat; kode buatan AI kamu baca, jalankan, dan uji seperti kode sejawat.
 
 ## Ingat kembali
 

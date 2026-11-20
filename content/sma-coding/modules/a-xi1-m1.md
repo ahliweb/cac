@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur A (Algoritmik dengan C++), minggu `A-XI1-M1` silabus v1.4.1: proses rekayasa program. Prasyarat: modul `a-x2-m12` (efisiensi intuitif). Di kelas X kamu menulis program dari soal yang sudah jelas; di sini kamu belajar apa yang dikerjakan sebelum dan sesudah menulis kode.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-BK-a` dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan. Tidak ada keluarga materi OSN yang dipetakan untuk minggu ini.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-BK-a` dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul. Tidak ada keluarga materi OSN yang dipetakan untuk minggu ini.
 
 Bila kamu pernah memakai Python: tahapnya sama untuk bahasa apa pun. Tiap soal latihan bertanda `AI: boleh` atau `AI: tanpa AI`. Masukan program diberikan lewat berkas: `./program < masukan.txt`.
 

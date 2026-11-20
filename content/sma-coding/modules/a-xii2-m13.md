@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur A (Algoritmik dengan C++), minggu `A-XII2-M13` silabus v1.4.1: proyek akhir, tahap presentasi dan portofolio. Prasyarat: modul `a-xii2-m12` (programmu dan ujinya). Keluaran minggu ini: **presentasi** dan **portofolio**.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir capaian pembelajaran yang bertaut: `F-BK-a` (proses rekayasa). **Tanpa data orang nyata:** demo dan portofolio hanya memuat data karangan. **Tanpa akun layanan luar:** presentasi dan portofolio dibuat dan disimpan di komputer lab, perangkatmu, atau media lokal; tidak ada yang wajib diunggah ke layanan daring. Pemakaian AI generatif boleh dengan etika dan dicatat.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir capaian pembelajaran yang bertaut: `F-BK-a` (proses rekayasa). **Tanpa data orang nyata:** demo dan portofolio hanya memuat data karangan. **Tanpa akun layanan luar:** presentasi dan portofolio dibuat dan disimpan di komputer lab, perangkatmu, atau media lokal; tidak ada yang wajib diunggah ke layanan daring. Pemakaian AI generatif boleh dengan etika dan dicatat.
 
 ## Ingat kembali
 

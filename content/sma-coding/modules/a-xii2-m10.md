@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur A (Algoritmik dengan C++), minggu `A-XII2-M10` silabus v1.4.1: ulasan strategi. Prasyarat: modul `a-xii2-m9` dan `a-xi2-m4` (DP pada string). Keluaran minggu ini adalah **tabel pemilihan** antara greedy, pemrograman dinamis (DP), dan pencarian lengkap, dengan justifikasi efisiensi.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir capaian pembelajaran yang bertaut: `F-BK-b` (beberapa strategi dan justifikasi efisiensi). Tiap soal latihan bertanda `AI: boleh` atau `AI: tanpa AI`. Masukan program diberikan lewat berkas: `./program < masukan.txt`. Semua angka dan data karangan.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir capaian pembelajaran yang bertaut: `F-BK-b` (beberapa strategi dan justifikasi efisiensi). Tiap soal latihan bertanda `AI: boleh` atau `AI: tanpa AI`. Masukan program diberikan lewat berkas: `./program < masukan.txt`. Semua angka dan data karangan.
 
 ## Ingat kembali
 

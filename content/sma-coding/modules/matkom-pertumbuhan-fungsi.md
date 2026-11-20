@@ -1,6 +1,6 @@
 ## Untuk siapa modul ini
 
-Modul ini untuk siswa SMA reguler kelas X semester 2 sampai kelas XI yang ingin menilai secara kasar seberapa cepat atau lambat sebuah program, tanpa harus menjalankannya. Ia bagian dari seri Matematika Komputasi Dasar dan berstatus DRAF: karangan penyusun, belum disetujui pemilik, dan tidak dihitung sebagai pemenuhan butir capaian pembelajaran (hanya mendukung butir F-BK-b, justifikasi efisiensi, secara intuitif; bagian notasi O berada di luar rumusan capaian yang dikutip silabus).
+Modul ini untuk siswa SMA reguler kelas X semester 2 sampai kelas XI yang ingin menilai secara kasar seberapa cepat atau lambat sebuah program, tanpa harus menjalankannya. Ia bagian dari seri Matematika Komputasi Dasar dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi); isinya karangan penyusun, dan tidak dihitung sebagai pemenuhan butir capaian pembelajaran (hanya mendukung butir F-BK-b, justifikasi efisiensi, secara intuitif; bagian notasi O berada di luar rumusan capaian yang dikutip silabus).
 
 Prasyarat: modul `matkom-sistem-bilangan-basis` (pangkat dua dan gagasan membagi dua berulang pada konversi basis). Logaritma basis 2 sendiri tidak dibahas di modul itu; ia diperkenalkan di modul ini sebagai "berapa kali dibagi dua". Disarankan, tetapi tidak wajib: modul `matkom-induksi-dan-rekursi-matematis` (hubungan rekurens).
 

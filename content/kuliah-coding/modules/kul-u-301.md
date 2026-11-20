@@ -1,8 +1,7 @@
 ## Untuk siapa modul ini
 
 Modul belajar untuk mata kuliah `KUL-U-301` (3 SKS, semester 6, jalur U), bagian
-dari program `kuliah-coding`. Konten ini karangan menurut ADR-0007 dan belum
-disetujui. Kode di modul ini adalah **Python 3.12** (pustaka standar dan Git
+dari program `kuliah-coding`. Konten ini karangan menurut ADR-0007 dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Kode di modul ini adalah **Python 3.12** (pustaka standar dan Git
 2.43): tiap blok lengkap dijalankan dan keluarannya sama dengan yang tertulis;
 blok `setengah-jadi` berlubang, tetapi versi terisi sudah dijalankan. Semua
 nama, data, dan surel **fiktif**; proyek nyata memakai data sintetis atau

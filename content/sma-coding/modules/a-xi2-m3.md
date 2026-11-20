@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur A (Algoritmik dengan C++), minggu `A-XI2-M3` silabus v1.4.1: knapsack 0/1. Prasyarat: modul `a-xi2-m2` (DP satu dimensi).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-AP-a`, `F-AP-b`, dan `F-BK-b` dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan. Keluarga materi OSN yang bertaut: `strategi-problem-solving`; DP termasuk panduan, bukan pengayaan, sehingga modul ini tidak punya bagian `Pengayaan (P)`. Modul tidak menjanjikan kedalaman soal OSN.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-AP-a`, `F-AP-b`, dan `F-BK-b` dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul. Keluarga materi OSN yang bertaut: `strategi-problem-solving`; DP termasuk panduan, bukan pengayaan, sehingga modul ini tidak punya bagian `Pengayaan (P)`. Modul tidak menjanjikan kedalaman soal OSN.
 
 Tiap soal latihan bertanda `AI: boleh` atau `AI: tanpa AI`. Masukan program diberikan lewat berkas: `./program < masukan.txt`. Semua data karangan.
 

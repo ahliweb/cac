@@ -177,9 +177,11 @@ Their state today:
   (syntax only for the last two). All ten OSN modules exist (#55) and were
   approved by the programme owner on 2026-11-18. Each of the six coding
   programmes has its own index schema and `modules.json`, and as of
-  2026-11-19 their 599 modules (`tk-coding` 48, `sd-coding` 168,
-  `smp-coding` 84, `sma-coding` 239, `kuliah-coding` 24, `dewasa-coding` 36)
-  are all `draf` awaiting owner review (#125); `tk-coding` and `sd-coding`
+  2026-11-20 their 753 modules (`tk-coding` 48, `sd-coding` 168,
+  `smp-coding` 84, `sma-coding` 393, `kuliah-coding` 24, `dewasa-coding` 36)
+  are all `disetujui` by the owner's decision of 2026-11-20 through the
+  standard choice dialog (#125; the reviewer's notes remain follow-up
+  revisions, and an approved module can be set to `ditarik`); `tk-coding` and `sd-coding`
   modules are teacher guides with a learner sheet and SVG illustrations in
   `content/<program>/lembar/` and `gambar/`. A module body has no `# ` title
   and no `## Rujukan` section (both come from the index), and

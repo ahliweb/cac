@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas X jalur C (IoT dan robotika), minggu `C-X2-M8` silabus v1.3: menampilkan data (F). Prasyarat: modul `c-x1-m12` (fungsi dan larik) dan keluaran serial dari `c-x1-m10`. Kamu juga memakai `millis()` dari `c-x2-m7` (waktu tanpa `delay`), pembacaan analog dari `c-x1-m11`, dan `map()` dari `c-x2-m5`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik, dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: program tampilan. Latihan silabusnya: grafik suhu di plotter serial.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi), dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: program tampilan. Latihan silabusnya: grafik suhu di plotter serial.
 
 Ada dua cara mengerjakan. **Dengan papan (F):** kelompok membuka plotter serial di komputer dan menggambar pembacaan sensor suhu dari lembar guru. **Tanpa papan:** kamu menelusuri program di kertas dan menjalankan "papan tiruan" yang menggambar grafik dari huruf `#` di layar komputer. Nomor pin pada contoh hanya contoh `[belum terverifikasi]` untuk papanmu. Layar kecil (modul tampilan yang disambung ke papan) bergantung pada pustaka dan lembar guru; modul ini hanya memakai monitor dan plotter serial.
 

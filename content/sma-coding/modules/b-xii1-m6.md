@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XII1-M6` silabus v1.4.1: kustomisasi merek dan konten. Prasyarat: modul `b-xii1-m5`. Prasyarat di luar indeks: repositori turunan lab yang disiapkan guru.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Silabus memetakan butir `F-AP-d` dan `F-LD-f` pada minggu ini; modul draf ini belum dihitung memenuhi keduanya.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Silabus memetakan butir `F-AP-d` dan `F-LD-f` pada minggu ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul.
 
 **Batas modul ini.** Kamu mengubah **merek, konten, dan tema** pada repositori turunan lab; kamu tidak menyentuh backend dan tidak memakai backend produksi `awcms-one`. CMS lab dijalankan guru; kamu mengubah berkas konten contoh dan pengaturan merek. Tanpa CMS lab (cadangan di `b-xii1-m4`), build memakai data tiruan dan kontenmu tidak tampil. Semua nama, alamat, dan surel **fiktif** (domain `example.org`). Dijalankan penyusun dengan Bun 1.4.4 terhadap `awcms-one` `0.20.0` di salinan lokal tanpa Docker dan data nyata. Tugas prediksi `AI: tanpa AI`; selain itu AI boleh dipakai dengan etika dan dicatat, tanpa data pribadi atau rahasia.
 

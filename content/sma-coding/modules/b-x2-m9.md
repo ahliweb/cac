@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas X jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-X2-M9` silabus v1.4.1: pengurutan dengan bubble sort dan insertion sort. Prasyarat: modul `b-x2-m8` (pencarian sekuensial dan biner), yang butuh data terurut.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `E-BK-a` dan `E-BK-c` dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan kedua butir itu.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `E-BK-a` dan `E-BK-c` dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul.
 
 Contoh dijalankan penyusun dengan Bun 1.4.4 per 2026-11. Tugas baca-dan-prediksi ditandai `AI: tanpa AI`; selain itu AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu. Tiap soal `Latihan` bertanda `AI: boleh` atau `AI: tanpa AI`.
 

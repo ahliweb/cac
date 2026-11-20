@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas X jalur C (IoT dan robotika), minggu `C-X2-M9` silabus v1.3: struktur data tumpukan dan antrian sebagai penyangga. Prasyarat: modul `c-x2-m8` (menampilkan data). Kamu juga memakai larik dan fungsi dari `c-x1-m12`, penggeseran isi larik dari `c-x2-m4`, dan `millis()` dari `c-x2-m7`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `E-BK-a` (konsep struktur data dan algoritma standar) dan `E-BK-c` (menerapkan algoritma dan struktur data standar), dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: program stack/queue. Latihan silabusnya: simulasi antrian pembacaan (sintetis).
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `E-BK-a` (konsep struktur data dan algoritma standar) dan `E-BK-c` (menerapkan algoritma dan struktur data standar), dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: program stack/queue. Latihan silabusnya: simulasi antrian pembacaan (sintetis).
 
 Minggu ini tidak bertanda (F): semua bagian pokok dikerjakan **tanpa papan**, dengan kertas dan "papan tiruan" di komputer yang memakai pembacaan karangan. Bila kamu mencoba dengan papan, ikuti aturan keselamatan modul sebelumnya: daya USB saja dan cabut kabel sebelum mengubah rangkaian. Nomor pin pada contoh hanya contoh `[belum terverifikasi]` untuk papanmu.
 

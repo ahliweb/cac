@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas X jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-X2-M6` silabus v1.4.1: DOM dan peristiwa. Prasyarat: modul `b-x2-m5` (CSS dasar dan responsif) dan `b-x1-m12` (fungsi); kamu memakai halaman HTML dan CSS dari minggu-minggu sebelumnya.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `E-LD-f` (media digital untuk produksi dan diseminasi konten, partisipasi, kolaborasi) dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan butir itu.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `E-LD-f` (media digital untuk produksi dan diseminasi konten, partisipasi, kolaborasi) dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul.
 
 Skrip halaman web berjalan di peramban, bukan di Bun. Penyusun membukanya di Google Chrome 158 tanpa kepala (per 2026-11) lewat halaman uji yang memanggil `click()` pada tombol (klik buatan, bukan klik manusia) lalu membaca isi halaman; hasil di bawah adalah hasil bacaan itu. `check:module-code` hanya memeriksa sintaks blok skrip peramban. `Latihan bercampur` berupa skrip Bun biasa. Tugas baca-dan-prediksi ditandai `AI: tanpa AI`; selain itu AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi atau tugas bernilai pada permintaanmu. Semua isi contoh karangan.
 

@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur E (komputasi kuantum), minggu `E-XII2-M9` silabus v1.4: proyek akhir, pengujian dan dokumentasi, dengan keluaran dokumentasi dan latihan tinjau sejawat. Prasyarat: modul `e-xii2-m8`. Di luar indeks, pemeriksa kecil di bawah memakai TypeScript dengan Bun (setara `B-X1-M9..M12`); dokumentasinya sendiri tidak memerlukan pemrograman. Alat: kertas, penyunting teks, dan Bun bila ingin menjalankan pemeriksa (tanpa akun). Kerja minggu ini satu sprint.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur E adalah pengayaan di luar rumusan CP; minggu ini tanpa irisan pengayaan, jadi modul ini tidak dihitung memenuhi butir CP mana pun.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Jalur E adalah pengayaan di luar rumusan CP; minggu ini tanpa irisan pengayaan, jadi modul ini tidak dihitung memenuhi butir CP mana pun.
 
 Aturan AI jalur ini: AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu, dan tanpa akun wajib. Saran: tulis dokumentasimu sendiri dulu; bila meminta AI merapikan bahasa, jangan menempelkan data pribadi, token, atau isi log akun. Catat pemakaian AI di log proyek.
 

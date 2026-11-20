@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur C (IoT dan robotika), minggu `C-XII1-M11` silabus v1.4: hukum dan etika sensor (F). Prasyarat: modul `c-xii1-m10` (daya dan keselamatan baterai) dan `c-xi2-m2` (keamanan konektivitas).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-LD-g` (hukum dan perundang-undangan terkait isu digital) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun; pemetaan untuk jalur C bersifat parsial, hanya pokok yang terkait perangkat yang merekam. Keluaran minggu ini: catatan kepatuhan. Latihan silabusnya: daftar periksa proyek.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-LD-g` (hukum dan perundang-undangan terkait isu digital) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun; pemetaan untuk jalur C bersifat parsial, hanya pokok yang terkait perangkat yang merekam. Keluaran minggu ini: catatan kepatuhan. Latihan silabusnya: daftar periksa proyek.
 
 Ini **bukan nasihat hukum**. Bagian hukum memuat pokok yang dibaca penyusun dari naskah UU Nomor 27 Tahun 2022 dan halaman JDIH BPK untuk UU Nomor 11 Tahun 2008 dan UU Nomor 1 Tahun 2023 (per 2026-11). Peraturan pelaksana tidak dibahas; guru atau ahli hukum yang memutuskan kasus nyata.
 

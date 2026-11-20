@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas X jalur A (Algoritmik dengan C++), minggu `A-X2-M9` silabus v1.4.1: pengurutan dengan bubble sort. Prasyarat: modul `a-x2-m8` (pencarian sekuensial dan biner). Kamu tidak perlu pernah memprogram sebelum jalur ini.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `E-BK-a` dan `E-BK-c` dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan. Keluarga materi OSN yang bertaut: `search-sort` (pengurutan dasar sesuai CP, bukan pengayaan).
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `E-BK-a` dan `E-BK-c` dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul. Keluarga materi OSN yang bertaut: `search-sort` (pengurutan dasar sesuai CP, bukan pengayaan).
 
 Bila kamu pernah memakai Python: `sorted(daftar)` mengurutkan dengan satu panggilan. Di sini kamu menulis pengurutnya sendiri supaya paham apa yang terjadi di dalamnya dan berapa langkahnya. Tiap soal latihan bertanda `AI: boleh` atau `AI: tanpa AI`. Masukan program diberikan lewat berkas: `./program < masukan.txt`.
 

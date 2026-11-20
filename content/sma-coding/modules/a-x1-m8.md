@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas X yang mengambil jalur A (Algoritmik dengan C++). Ia mendampingi minggu `A-X1-M8` silabus v1.4.1: lingkungan g++, algoritma, pseudocode, dan diagram alir. Prasyarat: `FND-X1-M1` (model Input-Proses-Output, modul `fondasi-komputer-dan-hardware`) dan `FND-X1-M3` (biner dan heksadesimal, modul `fondasi-representasi-data`). Kamu belum perlu pernah memprogram.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `E-BK-d` (solusi program sederhana dalam format pseudocode) dipetakan silabus sebagai dipenuhi jalur ini pada minggu ini; modul draf ini belum dihitung sebagai pemenuhan. Minggu ini belum bertaut ke keluarga materi OSN; keluarga pertama muncul di `a-x1-m9`.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `E-BK-d` (solusi program sederhana dalam format pseudocode) dipetakan silabus sebagai dipenuhi jalur ini pada minggu ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul. Minggu ini belum bertaut ke keluarga materi OSN; keluarga pertama muncul di `a-x1-m9`.
 
 Jalankan semua contoh di komputer, lalu kerjakan latihan. Tiap soal latihan bertanda `AI: boleh` atau `AI: tanpa AI`. Pemeriksaan otomatis repositori hanya memastikan program bisa dikompilasi, bukan benar untuk semua masukan.
 

@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur C (IoT dan robotika), minggu `C-XII2-M2` silabus v1.4: pemeliharaan program II. Prasyarat: modul `c-xii2-m1` (pemeliharaan program I). Kamu juga memakai penyangga melingkar dari `c-xi1-m9`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-AP-c` (pengembangan, pemeliharaan, dan penyempurnaan algoritma standar ke dalam kode dengan memperhatikan kualitasnya) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: catatan optimasi. Latihan silabusnya: mengurangi pemakaian memori.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-AP-c` (pengembangan, pemeliharaan, dan penyempurnaan algoritma standar ke dalam kode dengan memperhatikan kualitasnya) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: catatan optimasi. Latihan silabusnya: mengurangi pemakaian memori.
 
 Ada dua cara mengerjakan. **Dengan papan:** kamu mencetak `sizeof` langsung di papan lewat Serial untuk melihat ukuran sebenarnya. **Tanpa papan:** kamu memakai ukuran dari komputer, yang dapat berbeda dari papanmu `[belum terverifikasi]`. Keselamatan perangkat: modul ini bekerja di komputer; bila kamu mengunggah ke papan, ikuti aturan daya USB, cabut daya sebelum mengubah rangkaian, dan tanpa solder.
 

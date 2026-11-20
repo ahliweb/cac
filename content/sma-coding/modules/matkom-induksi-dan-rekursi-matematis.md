@@ -1,6 +1,6 @@
 ## Untuk siapa modul ini
 
-Modul ini untuk siswa SMA reguler kelas X semester 2 sampai kelas XI yang ingin bernalar tentang kebenaran rumus dan fungsi rekursif, bukan hanya mencobanya pada beberapa contoh. Ia bagian dari seri Matematika Komputasi Dasar dan berstatus DRAF: karangan penyusun, belum disetujui pemilik, dan tidak dihitung sebagai pemenuhan butir capaian pembelajaran (hanya mendukung butir F-AP-a dan F-BK-b, konsep strategi algoritmik dan justifikasi solusi).
+Modul ini untuk siswa SMA reguler kelas X semester 2 sampai kelas XI yang ingin bernalar tentang kebenaran rumus dan fungsi rekursif, bukan hanya mencobanya pada beberapa contoh. Ia bagian dari seri Matematika Komputasi Dasar dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi); isinya karangan penyusun, dan tidak dihitung sebagai pemenuhan butir capaian pembelajaran (hanya mendukung butir F-AP-a dan F-BK-b, konsep strategi algoritmik dan justifikasi solusi).
 
 Prasyarat: modul `matkom-logika-proposisi` (implikasi) dan `matkom-himpunan-relasi-fungsi` (fungsi dengan domain bilangan asli). Pernah menulis fungsi rekursif sederhana membantu.
 

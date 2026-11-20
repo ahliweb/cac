@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XII1-M10` silabus v1.4.1: rahasia dan konfigurasi. Prasyarat: modul `b-xii1-m9`, modul `b-xi2-m10` (keamanan aplikasi), dan fondasi `FND-X1-M6`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-LD-i` (kata sandi dan autentikasi) hanya didukung sebagian oleh modul ini menurut pemetaan silabus; modul draf ini belum dihitung memenuhinya.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-LD-i` (kata sandi dan autentikasi) hanya didukung sebagian oleh modul ini menurut pemetaan silabus; pemenuhan butir mengikuti pemetaan silabus, bukan status modul.
 
 **Aturan modul ini.** Semua "rahasia" di sini bernilai palsu (`KUNCI_PALSU_CONTOH`). Jangan menempelkan rahasia, kata sandi, atau data pribadi ke asisten AI, termasuk saat meminta bantuan memperbaiki galat. Berkas `.env` selalu masuk `.gitignore`. Rahasia lingkungan kelas dipegang gurumu; kamu tidak menyentuh backend.
 

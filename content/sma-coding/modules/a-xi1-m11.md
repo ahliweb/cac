@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur A (Algoritmik dengan C++), minggu `A-XI1-M11` silabus v1.4.1: backtracking. Prasyarat: modul `a-xi1-m10` (antrian prioritas), `a-xi1-m4` (pencarian lengkap dan pemangkasan), dan `a-x2-m11` (rekursi).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-AP-a`, `F-AP-b`, dan `F-BK-b` dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan. Keluarga materi OSN yang bertaut: `rekursi` dan `strategi-problem-solving`; pencarian lengkap dan pemangkasan ditandai pengayaan (P), sehingga bagian `Pengayaan (P)` boleh dilewati oleh kelas reguler. Modul ini tidak menjanjikan kedalaman soal OSN.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-AP-a`, `F-AP-b`, dan `F-BK-b` dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul. Keluarga materi OSN yang bertaut: `rekursi` dan `strategi-problem-solving`; pencarian lengkap dan pemangkasan ditandai pengayaan (P), sehingga bagian `Pengayaan (P)` boleh dilewati oleh kelas reguler. Modul ini tidak menjanjikan kedalaman soal OSN.
 
 Tiap soal latihan bertanda `AI: boleh` atau `AI: tanpa AI`. Masukan program diberikan lewat berkas: `./program < masukan.txt`. Semua soal karangan.
 

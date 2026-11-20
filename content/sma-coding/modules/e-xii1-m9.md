@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur E (komputasi kuantum), minggu `E-XII1-M9` silabus v1.4: pustaka Qiskit dan Python I, sebagai **demonstrasi guru**, dengan keluaran sirkuit Qiskit. Prasyarat: modul `e-xii1-m8`. Guru menjalankan Python dan Qiskit di komputer sekolah memakai simulator lokal bawaan Qiskit; murid **tidak menjalankan Python atau Qiskit, tidak membuat akun, dan tidak memakai token**. Murid membaca kode itu dan membandingkannya dengan simulator buatannya sendiri (C++17 atau TypeScript dengan Bun). Di luar indeks, bagian kode simulator memerlukan dasar pemrograman setara `A-X1-M9..M12` (C++); bagian membaca terbuka bagi semua murid. Alat murid: kertas, kalkulator, dan simulatormu.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur E adalah pengayaan di luar rumusan CP; minggu ini punya irisan pengayaan `F-AP-d` (simulator vektor keadaan dan Qiskit), tetapi hanya menyentuh butir itu dan tidak dihitung memenuhi butir CP mana pun.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Jalur E adalah pengayaan di luar rumusan CP; minggu ini punya irisan pengayaan `F-AP-d` (simulator vektor keadaan dan Qiskit), tetapi hanya menyentuh butir itu dan tidak dihitung memenuhi butir CP mana pun.
 
 Aturan AI jalur ini: AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu, dan tanpa akun wajib. Saran: jawab dulu sendiri, baru minta petunjuk bertahap; kode buatan AI kamu baca, jalankan, dan uji. Setiap soal `Latihan` bertanda `AI: boleh` atau `AI: tanpa AI`.
 

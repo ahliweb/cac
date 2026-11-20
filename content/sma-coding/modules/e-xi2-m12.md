@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI2-M12` silabus v1.4: algoritma Deutsch-Jozsa, yaitu menjelaskan dan menyimulasikannya pada tiga qubit. Prasyarat: modul `e-xi2-m11` (algoritma Deutsch). Di luar indeks, bagian kode memerlukan simulator `e-xi2-m4` (n qubit) dan dasar pemrograman setara `A-X1-M9..M12` (C++) atau `B-X1-M9..M12` (TypeScript/Bun); guru memeriksanya. Bagian konsep dan hitungan terbuka bagi semua murid. Alat: kertas, kalkulator, dan simulatormu (tanpa akun).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur E adalah pengayaan di luar rumusan CP. Irisan pengayaan minggu ini `F-BK-b` (membandingkan beberapa strategi) tidak dihitung; modul ini tidak dihitung memenuhi butir CP mana pun.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Jalur E adalah pengayaan di luar rumusan CP. Irisan pengayaan minggu ini `F-BK-b` (membandingkan beberapa strategi) tidak dihitung; modul ini tidak dihitung memenuhi butir CP mana pun.
 
 Aturan AI jalur ini: AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu, dan tanpa akun wajib. Saran: jawab dulu sendiri, baru minta petunjuk bertahap; kode buatan AI kamu baca, jalankan, dan uji. Setiap soal `Latihan` bertanda `AI: boleh` atau `AI: tanpa AI`.
 

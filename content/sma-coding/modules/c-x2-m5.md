@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas X jalur C (IoT dan robotika), minggu `C-X2-M5` silabus v1.3: keluaran analog (PWM) (F). Prasyarat: modul `c-x2-m4` (larik dan rata-rata bergerak). Kamu juga memakai masukan analog dari `c-x1-m11`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik, dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: program PWM. Latihan silabusnya: meredupkan dan menerangkan LED dengan potensiometer.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi), dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: program PWM. Latihan silabusnya: meredupkan dan menerangkan LED dengan potensiometer.
 
 Ada dua cara mengerjakan. **Dengan papan (F):** kelompok merakit potensiometer dan LED sesuai lembar guru. **Tanpa papan:** kamu menelusuri program di kertas dan menjalankan "papan tiruan" di komputer yang mencetak nilai duty. Nomor pin dan batas pembacaan pada contoh hanya contoh `[belum terverifikasi]` untuk papanmu.
 

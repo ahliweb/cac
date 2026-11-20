@@ -1,6 +1,6 @@
 ## Untuk siapa modul ini
 
-Modul ini untuk siswa SMA reguler kelas X semester 2 sampai kelas XI yang ingin memakai himpunan, relasi, dan fungsi sebagai bahasa untuk menyatakan data dan hubungan antardata. Ia bagian dari seri Matematika Komputasi Dasar dan berstatus DRAF: karangan penyusun, belum disetujui pemilik, dan tidak dihitung sebagai pemenuhan butir capaian pembelajaran (hanya mendukung butir F-BK-c dan F-AP-d, pemilihan solusi dengan struktur data abstrak).
+Modul ini untuk siswa SMA reguler kelas X semester 2 sampai kelas XI yang ingin memakai himpunan, relasi, dan fungsi sebagai bahasa untuk menyatakan data dan hubungan antardata. Ia bagian dari seri Matematika Komputasi Dasar dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi); isinya karangan penyusun, dan tidak dihitung sebagai pemenuhan butir capaian pembelajaran (hanya mendukung butir F-BK-c dan F-AP-d, pemilihan solusi dengan struktur data abstrak).
 
 Prasyarat: modul `matkom-logika-proposisi` (proposisi, konektif, kuantor). Pengetahuan fungsi pada pemrograman membantu tetapi tidak wajib.
 

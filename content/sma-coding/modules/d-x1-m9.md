@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas X jalur D (kecerdasan buatan dan analisis data), untuk minggu `D-X1-M9` silabus v1.3: data, fitur, dan label. Prasyarat: modul `d-x1-m8` (apa itu AI dan apa yang bukan). Tidak perlu memprogram, tidak perlu akun, dan tidak perlu komputer: semua kegiatan memakai kertas, kartu, dan diskusi (*unplugged*).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur D adalah pengayaan di luar rumusan capaian pembelajaran (CP). Minggu ini beririsan dengan butir `E-BK-b` (kualitas dan pelabelan data) pada tingkat rendah sampai sedang; irisan itu **tidak dihitung** sebagai pemenuhan CP.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Jalur D adalah pengayaan di luar rumusan capaian pembelajaran (CP). Minggu ini beririsan dengan butir `E-BK-b` (kualitas dan pelabelan data) pada tingkat rendah sampai sedang; irisan itu **tidak dihitung** sebagai pemenuhan CP.
 
 Aturan jalur D yang berlaku: data hanya sintetis (karangan) atau terbuka dengan lisensi jelas, tanpa data yang bisa mengenali orang; wajah, suara, dan foto orang tidak dipakai sebagai data; AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu, dan kamu tidak wajib punya akun. Saran: jawab dulu sendiri, baru minta AI menjelaskan atau memberi petunjuk bertahap. Setiap soal `Latihan` bertanda `AI: boleh` atau `AI: tanpa AI`.
 

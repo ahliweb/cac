@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur C (IoT dan robotika), minggu `C-XI2-M7` silabus v1.4: format data. Prasyarat: modul `c-xi2-m6` (publikasi-langganan, praktik); kamu juga memakai pesan antarperangkat dari `C-XI1-M11` (modul itu belum terindeks saat modul ini ditulis, jadi tidak ditulis sebagai prasyarat resmi).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-BK-d` (model jaringan, pengiriman data, dan pemecahan masalah) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: pesan JSON. Latihan silabusnya: mengubah pembacaan menjadi JSON.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-BK-d` (model jaringan, pengiriman data, dan pemecahan masalah) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: pesan JSON. Latihan silabusnya: mengubah pembacaan menjadi JSON.
 
 Seluruh modul ini dapat dikerjakan **tanpa papan**: kamu menulis dan memeriksa teks JSON di komputer. Sketsa papan disertakan sebagai pembanding dan hanya diperiksa sintaksnya. Modul ini tidak memakai perangkat fisik; aturan keselamatan perangkat dari modul sebelumnya tetap berlaku bila kamu menyentuh papan. Semua nama sensor dan nilai karangan.
 

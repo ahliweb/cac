@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur C (IoT dan robotika), minggu `C-XII2-M13` silabus v1.4: proyek akhir, presentasi dan portofolio. Prasyarat terindeks: `c-xii2-m12`. Kamu memakai laporan uji `c-xii2-m11`, dokumen proyek `c-xii2-m12`, dan rancangan `C-XII2-M5` yang belum terindeks saat modul ini ditulis.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: demo dan portofolio. Latihan silabusnya: presentasi. Portofolio milik muridnya, tidak dikumpulkan di repositori ini.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: demo dan portofolio. Latihan silabusnya: presentasi. Portofolio milik muridnya, tidak dikumpulkan di repositori ini.
 
 Dengan papan atau tanpa papan, demo memakai robot bila ada dan skenario tiruan di komputer bila tidak. Keselamatan perangkat: demo di meja bertepi dengan roda terangkat atau lintasan yang aman, tombol berhenti dalam jangkauan, daya dari guru, penonton menjauh dari bagian bergerak, dan tidak ada kamera atau perekam yang menyorot orang.
 

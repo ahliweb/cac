@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur D (kecerdasan buatan dan analisis data), untuk minggu `D-XII1-M4` silabus v1.3: hukum dan kebijakan, yaitu menjelaskan pokok UU ITE dan UU PDP yang terkait proyek AI, dengan keluaran daftar periksa kepatuhan. Prasyarat: modul `d-xii1-m3` dan `d-x2-m3`. Alat: kertas, dan Python 3 saja (hanya pustaka standar) untuk satu pemeriksa kolom; tanpa akun.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur D adalah pengayaan di luar rumusan capaian pembelajaran (CP). Minggu ini beririsan dengan butir `F-LD-g` (pelindungan data pribadi dan UU ITE, sebatas pokok) pada tingkat rendah; irisan itu **tidak dihitung** sebagai pemenuhan CP.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Jalur D adalah pengayaan di luar rumusan capaian pembelajaran (CP). Minggu ini beririsan dengan butir `F-LD-g` (pelindungan data pribadi dan UU ITE, sebatas pokok) pada tingkat rendah; irisan itu **tidak dihitung** sebagai pemenuhan CP.
 
 Aturan jalur D yang berlaku: data hanya sintetis (karangan) atau terbuka dengan lisensi jelas, tanpa data yang bisa mengenali orang; wajah, suara, dan foto orang tidak dipakai sebagai data; AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu, dan kamu tidak wajib punya akun. Saran: jawab dulu sendiri, baru minta AI memberi petunjuk bertahap; kode buatan AI dibaca, dijalankan, dan diuji. Setiap soal `Latihan` bertanda `AI: boleh` atau `AI: tanpa AI`.
 

@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-XI2-M4` silabus v1.4.1: berkas dan data JSON. Prasyarat: modul `b-xi2-m3` (validasi dengan skema) dan `b-x2-m3` (objek dan JSON).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-AD-a` dipetakan silabus sebagai dipenuhi jalur ini (bersama dua modul berikutnya); modul draf ini belum dihitung sebagai pemenuhan butir itu.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-AD-a` dipetakan silabus sebagai dipenuhi jalur ini (bersama dua modul berikutnya); pemenuhan butir mengikuti pemetaan silabus, bukan status modul.
 
 Contoh dijalankan penyusun dengan Bun 1.4.4, TypeScript 7.0.2, dan Zod 4.6.7 per 2026-11. Berkas data modul ini berisi data karangan; berkas yang bisa memuat data orang tidak dimasukkan ke Git (`data/` ditulis di `.gitignore`). Server hanya di `localhost`. Tugas baca-dan-prediksi ditandai `AI: tanpa AI`; selain itu AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu.
 

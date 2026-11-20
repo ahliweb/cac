@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur C (IoT dan robotika), minggu `C-XII1-M6` silabus v1.4: pengikut garis, strategi 1 (F). Prasyarat: modul `c-xii1-m5` (mesin keadaan robot). Kamu juga memakai `c-xii1-m4` (sensor garis), `c-xii1-m3` (roda), dan `c-xi1-m6` (hidup-mati).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-AP-a` (konsep strategi algoritmik) dan `F-AP-b` (program terstruktur berdasarkan strategi algoritmik), dan tidak dihitung memenuhi butir capaian pembelajaran mana pun; pemetaan `F-AP-a` untuk jalur C bersifat parsial. Keluaran minggu ini: program pengikut garis. Latihan silabusnya: lintasan uji.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-AP-a` (konsep strategi algoritmik) dan `F-AP-b` (program terstruktur berdasarkan strategi algoritmik), dan tidak dihitung memenuhi butir capaian pembelajaran mana pun; pemetaan `F-AP-a` untuk jalur C bersifat parsial. Keluaran minggu ini: program pengikut garis. Latihan silabusnya: lintasan uji.
 
 Ada dua cara mengerjakan. **Dengan papan (F):** kelompok memakai robot dari modul 3 dan 4 pada lintasan pita hitam di permukaan putih. **Tanpa papan:** kamu menjalankan simulasi di komputer, dengan **model sederhana karangan**, bukan fisika robot nyata: robot nyata punya kelembaman arah dan berayun lebih besar. Nomor pin, ambang, dan angka kecepatan hanya contoh `[belum terverifikasi]` untuk robotmu.
 

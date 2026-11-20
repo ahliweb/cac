@@ -1,9 +1,11 @@
 # Usulan Blok Fondasi Informatika Dasar Wajib di Kelas X
 
-- **Version:** v0.6.0
-- **Last updated:** 2026-11-19
+- **Version:** v0.6.1
+- **Last updated:** 2026-11-20
 - **Status:** DRAF — kedelapan keputusan pemilik dicatat (2026-11-18); sudah diterapkan di [silabus v1.1](silabus.md) (issue #92), yang disetujui pemilik 2026-11-19; dokumen usulan ini tetap menjadi riwayat usulan
 - **Changeset:** Bagian 5: keenam modul draf fondasi masuk repositori (PR #115) dan terindeks (skema #106).
+
+> **Catatan status (2026-11-20, #125).** Pernyataan "berstatus `draf`" atau "modul draf" di dokumen ini adalah keadaan saat rancangan ditulis. Pada 2026-11-20 pemilik program memilih "Setujui semua, catatan jadi tindak lanjut" lewat dialog pilihan baku, sehingga seluruh 753 modul enam program coding berstatus `disetujui` di `data/<id>/modules.json` (bukan hasil tinjauan isi per modul; butir [`catatan-tinjauan-modul.md`](../catatan-tinjauan-modul.md) menjadi tindak lanjut revisi). Pernyataan status modul di bawah, termasuk aturan "modul baru berstatus `draf`", adalah riwayat atau aturan untuk modul baru.
 
 > **Keputusan pemilik (2026-11-18, dialog pilihan, dicatat di issue #86):**
 > blok fondasi **7 minggu** — paket enam minggu opsi (b) ditambah **satu
@@ -378,6 +380,7 @@ yang dipilih; jalur C dan D memulai minggu materinya setelah blok fondasi.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v0.6.1 | 2026-11-20 | Catatan status 2026-11-20: pemilik menyetujui 753 modul enam program coding (#125); pernyataan `draf` di dokumen ini menjadi riwayat; isi rancangan tidak berubah. |
 | v0.6.0 | 2026-11-19 | Bagian 5: keenam modul draf fondasi masuk repositori (PR #115) dan terindeks (skema #106). |
 | v0.5.0 | 2026-11-19 | Bagian 5: menambah catatan keadaan nyata, yaitu modul fondasi dikerjakan di #107 (draf ditulis, belum masuk repositori) dan menunggu skema indeks #106. Isi usulan lainnya tidak diubah. |
 | v0.4.0 | 2026-11-19 | Merujuk silabus v1.1 yang disetujui (issue #92); berkas draf `silabus-v1.1-draf.md` dihapus. Isi usulan tidak diubah. |

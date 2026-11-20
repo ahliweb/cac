@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur E (komputasi kuantum), minggu `E-XI1-M2` silabus v1.4: probabilitas dan vektor. Prasyarat: modul `e-xi1-m1`. Probabilitas dan vektor dibangun di sini dari awal tanpa mengandalkan Matematika sekolah, karena apakah materi itu sudah kamu terima belum diverifikasi `[belum terverifikasi]`; bila sudah, modul ini menjadi ulasan. Alat: kertas dan kalkulator. Contoh C++ bersifat opsional untuk murid yang sudah punya dasar pemrograman (setara jalur A atau B); bagian pokok tidak memerlukannya.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Jalur E adalah pengayaan di luar rumusan capaian pembelajaran (CP); minggu ini tidak punya irisan pengayaan, jadi modul ini tidak dihitung memenuhi butir CP mana pun.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Jalur E adalah pengayaan di luar rumusan capaian pembelajaran (CP); minggu ini tidak punya irisan pengayaan, jadi modul ini tidak dihitung memenuhi butir CP mana pun.
 
 Aturan AI jalur ini: AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi, kata sandi, atau tugas bernilai pada permintaanmu, dan tanpa akun wajib. Saran: jawab dulu sendiri, baru minta penjelasan atau petunjuk bertahap. Setiap soal `Latihan` bertanda `AI: boleh` atau `AI: tanpa AI`.
 

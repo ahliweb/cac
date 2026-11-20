@@ -1,8 +1,7 @@
 ## Untuk siapa modul ini
 
 Modul belajar untuk mata kuliah `KUL-I-203` (3 SKS, semester 4, jalur I), bagian
-dari program `kuliah-coding`. Konten ini karangan menurut ADR-0007 dan belum
-disetujui. Kode di modul ini adalah **C++17** (g++ 13.3, Linux x86-64),
+dari program `kuliah-coding`. Konten ini karangan menurut ADR-0007 dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Kode di modul ini adalah **C++17** (g++ 13.3, Linux x86-64),
 **assembly x86-64** (GNU as 2.42, sintaks Intel), dan perintah **bash 5.2** (GNU
 coreutils 9.4). Blok `cpp` dikompilasi dengan `-std=c++17 -Wall -Wextra` tanpa
 peringatan, dijalankan, dan keluarannya cocok dengan yang tertulis; assembly

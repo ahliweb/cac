@@ -4,7 +4,7 @@
       "id": "sd1-1-m1",
       "title": "Perintah satu langkah",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -17,13 +17,17 @@
       "prerequisites": [],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd1-1-m1.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m1.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m1.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd1-1-m2",
       "title": "Urutan kegiatan sehari-hari",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -36,13 +40,17 @@
       "prerequisites": [],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd1-1-m2.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m2.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m2.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd1-1-m3",
       "title": "Urutan benar dan salah",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -55,13 +63,17 @@
       "prerequisites": ["SD1-1-M2"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd1-1-m3.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m3.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m3.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd1-1-m4",
       "title": "Maju, kiri, kanan",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -78,13 +90,17 @@
       "prerequisites": ["SD1-1-M1"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd1-1-m4.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m4.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m4.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd1-1-m5",
       "title": "Pola warna dan bentuk",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -97,13 +113,17 @@
       "prerequisites": [],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd1-1-m5.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m5.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m5.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd1-1-m6",
       "title": "Pola gerak dan bunyi",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -116,13 +136,17 @@
       "prerequisites": ["SD1-1-M5"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd1-1-m6.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m6.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m6.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd1-1-m7",
       "title": "Perintah dengan gambar panah",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -139,13 +163,17 @@
       "prerequisites": ["SD1-1-M4"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd1-1-m7.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m7.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m7.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd1-1-m8",
       "title": "Mengulang",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -162,13 +190,17 @@
       "prerequisites": ["SD1-1-M4", "SD1-1-M6"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd1-1-m8.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m8.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m8.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd1-1-m9",
       "title": "Memecah tugas menjadi langkah",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -181,13 +213,17 @@
       "prerequisites": ["SD1-1-M2"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd1-1-m9.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m9.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m9.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd1-1-m10",
       "title": "Mencari kesalahan",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -200,13 +236,17 @@
       "prerequisites": ["SD1-1-M3", "SD1-1-M9"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd1-1-m10.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m10.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m10.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd1-1-m11",
       "title": "Benda di sekitar yang memakai listrik",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -219,13 +259,17 @@
       "prerequisites": [],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd1-1-m11.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m11.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m11.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd1-1-m12",
       "title": "Penguatan: permainan rute",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -242,13 +286,17 @@
       "prerequisites": ["SD1-1-M4", "SD1-1-M7", "SD1-1-M8"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd1-1-m12.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m12.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m12.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd1-1-m13",
       "title": "Proyek mini: peta harta karun kelas",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -265,13 +313,17 @@
       "prerequisites": ["SD1-1-M7", "SD1-1-M12"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd1-1-m13.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m13.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m13.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd1-1-m14",
       "title": "Asesmen dan refleksi",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -298,13 +350,17 @@
       ],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd1-1-m14.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m14.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-1-m14.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd1-2-m1",
       "title": "Mengelompokkan menurut warna",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -317,13 +373,17 @@
       "prerequisites": [],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd1-2-m1.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m1.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m1.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd1-2-m2",
       "title": "Mengelompokkan menurut dua sifat",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -336,13 +396,17 @@
       "prerequisites": ["SD1-2-M1"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd1-2-m2.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m2.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m2.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd1-2-m3",
       "title": "Menamai kelompok",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -355,13 +419,17 @@
       "prerequisites": ["SD1-2-M2"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd1-2-m3.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m3.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m3.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd1-2-m4",
       "title": "Alat digital di rumah",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -374,13 +442,17 @@
       "prerequisites": ["SD1-1-M11"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd1-2-m4.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m4.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m4.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd1-2-m5",
       "title": "Bagian alat digital",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -393,13 +465,17 @@
       "prerequisites": ["SD1-2-M4"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd1-2-m5.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m5.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m5.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd1-2-m6",
       "title": "Panca indera manusia",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -412,13 +488,17 @@
       "prerequisites": [],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd1-2-m6.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m6.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m6.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd1-2-m7",
       "title": "Teman dan perasaan",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -431,13 +511,17 @@
       "prerequisites": [],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd1-2-m7.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m7.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m7.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd1-2-m8",
       "title": "Rahasia pribadi",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -454,13 +538,17 @@
       "prerequisites": ["SD1-2-M4"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd1-2-m8.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m8.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m8.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd1-2-m9",
       "title": "Minta izin orang dewasa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -473,13 +561,17 @@
       "prerequisites": ["SD1-2-M4", "SD1-2-M8"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd1-2-m9.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m9.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m9.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd1-2-m10",
       "title": "Awal-tengah-akhir",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -492,13 +584,17 @@
       "prerequisites": ["SD1-1-M2"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd1-2-m10.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m10.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m10.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd1-2-m11",
       "title": "Pengulangan dalam lagu",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -511,13 +607,17 @@
       "prerequisites": ["SD1-1-M8"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd1-2-m11.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m11.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m11.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd1-2-m12",
       "title": "Penguatan: kartu sortir",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -530,13 +630,17 @@
       "prerequisites": ["SD1-2-M1", "SD1-2-M2", "SD1-2-M3"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd1-2-m12.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m12.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m12.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd1-2-m13",
       "title": "Proyek mini: buku gambar hari-hariku",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -549,13 +653,17 @@
       "prerequisites": ["SD1-1-M2", "SD1-2-M10"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd1-2-m13.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m13.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m13.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd1-2-m14",
       "title": "Asesmen dan refleksi",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -582,13 +690,17 @@
       ],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd1-2-m14.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m14.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd1-2-m14.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd2-1-m1",
       "title": "Panah pada kisi 4x4",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -601,13 +713,17 @@
       "prerequisites": ["SD1-1-M7"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd2-1-m1.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m1.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m1.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd2-1-m2",
       "title": "Program kertas dua langkah",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -620,13 +736,17 @@
       "prerequisites": ["SD2-1-M1"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd2-1-m2.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m2.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m2.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd2-1-m3",
       "title": "Pengulangan \"ulangi n kali\"",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -639,13 +759,17 @@
       "prerequisites": ["SD2-1-M2", "SD1-1-M8"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd2-1-m3.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m3.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m3.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd2-1-m4",
       "title": "Pola berulang",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -658,13 +782,17 @@
       "prerequisites": ["SD1-1-M5", "SD1-1-M6"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd2-1-m4.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m4.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m4.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd2-1-m5",
       "title": "Memecah tugas besar",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -677,13 +805,17 @@
       "prerequisites": ["SD1-1-M9"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd2-1-m5.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m5.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m5.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd2-1-m6",
       "title": "Menguji instruksi teman",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -696,13 +828,17 @@
       "prerequisites": ["SD2-1-M2"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd2-1-m6.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m6.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m6.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd2-1-m7",
       "title": "Memperbaiki instruksi",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -715,13 +851,17 @@
       "prerequisites": ["SD2-1-M6", "SD1-1-M10"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd2-1-m7.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m7.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m7.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd2-1-m8",
       "title": "Kartu \"jika ... maka ...\"",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -734,13 +874,17 @@
       "prerequisites": [],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd2-1-m8.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m8.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m8.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd2-1-m9",
       "title": "Dua pilihan dalam permainan jalur",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -753,13 +897,17 @@
       "prerequisites": ["SD2-1-M8"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd2-1-m9.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m9.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m9.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd2-1-m10",
       "title": "Kode warna",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -772,13 +920,17 @@
       "prerequisites": ["SD2-1-M1"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd2-1-m10.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m10.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m10.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd2-1-m11",
       "title": "Sandi huruf ke angka",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -791,13 +943,17 @@
       "prerequisites": ["SD2-1-M10"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd2-1-m11.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m11.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m11.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd2-1-m12",
       "title": "Penguatan: labirin kelas",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -810,13 +966,17 @@
       "prerequisites": ["SD2-1-M1", "SD2-1-M3"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd2-1-m12.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m12.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m12.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd2-1-m13",
       "title": "Proyek mini: labirin dan sandi",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -829,13 +989,17 @@
       "prerequisites": ["SD2-1-M10", "SD2-1-M12"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd2-1-m13.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m13.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m13.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd2-1-m14",
       "title": "Asesmen dan refleksi",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -862,13 +1026,17 @@
       ],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd2-1-m14.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m14.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-1-m14.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd2-2-m1",
       "title": "Mesin kotak: masukan, proses, keluaran",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -881,13 +1049,17 @@
       "prerequisites": [],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd2-2-m1.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m1.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m1.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd2-2-m2",
       "title": "Perangkat masukan dan keluaran",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -900,13 +1072,17 @@
       "prerequisites": ["SD2-2-M1", "SD1-2-M5"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd2-2-m2.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m2.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m2.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd2-2-m3",
       "title": "Siapa yang mengindra?",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -919,13 +1095,17 @@
       "prerequisites": ["SD1-2-M6"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd2-2-m3.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m3.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m3.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd2-2-m4",
       "title": "Mesin cerdas atau biasa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -938,13 +1118,17 @@
       "prerequisites": ["SD2-2-M3"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd2-2-m4.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m4.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m4.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd2-2-m5",
       "title": "Kata sandi itu rahasia",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -961,13 +1145,17 @@
       "prerequisites": ["SD1-2-M8"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd2-2-m5.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m5.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m5.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd2-2-m6",
       "title": "Boleh dan tidak dibagikan",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -984,13 +1172,17 @@
       "prerequisites": ["SD2-2-M5", "SD1-2-M8"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd2-2-m6.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m6.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m6.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd2-2-m7",
       "title": "Mengurutkan menurut ukuran",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -1003,13 +1195,17 @@
       "prerequisites": ["SD1-2-M2"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd2-2-m7.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m7.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m7.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd2-2-m8",
       "title": "Mengelompokkan dengan dua aturan",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -1022,13 +1218,17 @@
       "prerequisites": ["SD2-2-M7", "SD1-2-M2"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd2-2-m8.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m8.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m8.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd2-2-m9",
       "title": "Menebak kelompok kartu rahasia",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -1041,13 +1241,17 @@
       "prerequisites": ["SD2-2-M8"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd2-2-m9.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m9.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m9.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd2-2-m10",
       "title": "Bersikap baik di dunia maya",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -1060,13 +1264,17 @@
       "prerequisites": ["SD1-2-M7"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd2-2-m10.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m10.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m10.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd2-2-m11",
       "title": "Teknologi membantu manusia",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -1079,13 +1287,17 @@
       "prerequisites": ["SD2-2-M4"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd2-2-m11.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m11.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m11.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd2-2-m12",
       "title": "Penguatan: sortir cerdas dan biasa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -1098,13 +1310,17 @@
       "prerequisites": ["SD2-2-M4"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd2-2-m12.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m12.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m12.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd2-2-m13",
       "title": "Proyek mini: pameran alat cerdas dan biasa",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -1117,13 +1333,17 @@
       "prerequisites": ["SD2-2-M4", "SD2-2-M12"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd2-2-m13.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m13.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m13.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd2-2-m14",
       "title": "Asesmen dan refleksi",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged dan permainan)",
@@ -1150,13 +1370,17 @@
       ],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd2-2-m14.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m14.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd2-2-m14.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd3-1-m1",
       "title": "Algoritma sebagai resep atau rute",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -1169,13 +1393,17 @@
       "prerequisites": ["SD2-1-M5"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd3-1-m1.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m1.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m1.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd3-1-m2",
       "title": "Algoritma tertulis dengan kosakata terbatas",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -1188,13 +1416,17 @@
       "prerequisites": ["SD2-1-M1", "SD2-1-M2"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd3-1-m2.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m2.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m2.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd3-1-m3",
       "title": "Variabel: kotak berlabel",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -1207,13 +1439,17 @@
       "prerequisites": [],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd3-1-m3.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m3.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m3.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd3-1-m4",
       "title": "Percabangan jika-maka-jika tidak",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -1226,13 +1462,17 @@
       "prerequisites": ["SD2-1-M8", "SD2-1-M9"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd3-1-m4.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m4.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m4.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd3-1-m5",
       "title": "Pengulangan dengan syarat",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -1245,13 +1485,17 @@
       "prerequisites": ["SD2-1-M3", "SD2-1-M4"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd3-1-m5.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m5.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m5.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd3-1-m6",
       "title": "Menggabungkan pengulangan dan percabangan",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -1264,13 +1508,17 @@
       "prerequisites": ["SD3-1-M4", "SD3-1-M5"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd3-1-m6.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m6.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m6.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd3-1-m7",
       "title": "Mengurutkan kartu bilangan",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -1283,13 +1531,17 @@
       "prerequisites": [],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd3-1-m7.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m7.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m7.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd3-1-m8",
       "title": "Mencari kartu tersembunyi",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -1302,13 +1554,17 @@
       "prerequisites": ["SD3-1-M7"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd3-1-m8.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m8.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m8.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd3-1-m9",
       "title": "Menguji dan memperbaiki",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -1321,13 +1577,17 @@
       "prerequisites": ["SD3-1-M2", "SD2-1-M6", "SD2-1-M7"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd3-1-m9.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m9.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m9.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd3-1-m10",
       "title": "Membandingkan dua algoritma",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -1340,13 +1600,17 @@
       "prerequisites": ["SD3-1-M9"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd3-1-m10.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m10.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m10.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd3-1-m11",
       "title": "Algoritma untuk \"robot\" teman",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -1359,13 +1623,17 @@
       "prerequisites": ["SD3-1-M2", "SD3-1-M9"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd3-1-m11.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m11.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m11.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd3-1-m12",
       "title": "Penguatan: lomba rute robot manusia",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -1378,13 +1646,17 @@
       "prerequisites": ["SD3-1-M2", "SD3-1-M5"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd3-1-m12.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m12.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m12.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd3-1-m13",
       "title": "Proyek mini: permainan jalur sendiri",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -1397,13 +1669,17 @@
       "prerequisites": ["SD3-1-M6"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd3-1-m13.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m13.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m13.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd3-1-m14",
       "title": "Asesmen dan refleksi",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -1430,13 +1706,17 @@
       ],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd3-1-m14.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m14.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-1-m14.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd3-2-m1",
       "title": "Simbol pengganti kata",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -1449,13 +1729,17 @@
       "prerequisites": ["SD3-1-M2"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd3-2-m1.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m1.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m1.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd3-2-m2",
       "title": "Dua keadaan: nyala dan padam",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -1468,13 +1752,17 @@
       "prerequisites": ["SD3-2-M1"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd3-2-m2.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m2.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m2.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd3-2-m3",
       "title": "Data: tabel sederhana",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -1487,13 +1775,17 @@
       "prerequisites": [],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd3-2-m3.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m3.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m3.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd3-2-m4",
       "title": "Diagram gambar",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -1506,13 +1798,17 @@
       "prerequisites": ["SD3-2-M3"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd3-2-m4.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m4.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m4.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd3-2-m5",
       "title": "Perangkat dan fungsinya",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -1525,13 +1821,17 @@
       "prerequisites": ["SD2-2-M2"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd3-2-m5.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m5.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m5.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd3-2-m6",
       "title": "Pesan lewat kurir",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -1544,13 +1844,17 @@
       "prerequisites": ["SD3-2-M5"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd3-2-m6.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m6.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m6.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd3-2-m7",
       "title": "Mencari informasi, didampingi guru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -1563,13 +1867,17 @@
       "prerequisites": ["SD3-2-M5", "SD3-2-M6"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd3-2-m7.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m7.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m7.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd3-2-m8",
       "title": "Kata sandi dan privasi",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -1586,13 +1894,17 @@
       "prerequisites": ["SD2-2-M5", "SD2-2-M6"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd3-2-m8.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m8.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m8.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd3-2-m9",
       "title": "Ciri mesin cerdas",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -1605,13 +1917,17 @@
       "prerequisites": ["SD2-2-M4"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd3-2-m9.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m9.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m9.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd3-2-m10",
       "title": "Mesin mengenali pola",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -1624,13 +1940,17 @@
       "prerequisites": ["SD3-2-M9", "SD2-2-M9"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd3-2-m10.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m10.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m10.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd3-2-m11",
       "title": "Sopan dan empati di ruang digital",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -1643,13 +1963,17 @@
       "prerequisites": ["SD2-2-M10"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd3-2-m11.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m11.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m11.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd3-2-m12",
       "title": "Penguatan: mesin kotak",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -1662,13 +1986,17 @@
       "prerequisites": ["SD3-2-M10"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd3-2-m12.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m12.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m12.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd3-2-m13",
       "title": "Proyek mini: poster aturan aman digital",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -1681,13 +2009,17 @@
       "prerequisites": ["SD3-2-M8", "SD2-2-M6"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd3-2-m13.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m13.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m13.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd3-2-m14",
       "title": "Asesmen dan refleksi",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -1714,13 +2046,17 @@
       ],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd3-2-m14.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m14.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd3-2-m14.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd4-1-m1",
       "title": "Apa itu berpikir komputasional",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -1737,13 +2073,17 @@
       "prerequisites": ["SD3-1-M1"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd4-1-m1.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m1.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m1.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd4-1-m2",
       "title": "Dekomposisi",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -1760,13 +2100,17 @@
       "prerequisites": ["SD4-1-M1", "SD2-1-M5"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd4-1-m2.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m2.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m2.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd4-1-m3",
       "title": "Mengenali pola dalam masalah",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -1783,13 +2127,17 @@
       "prerequisites": ["SD4-1-M2", "SD2-1-M4"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd4-1-m3.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m3.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m3.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd4-1-m4",
       "title": "Abstraksi",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -1806,13 +2154,17 @@
       "prerequisites": ["SD4-1-M3"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd4-1-m4.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m4.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m4.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd4-1-m5",
       "title": "Algoritma dengan diagram alir",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -1829,13 +2181,17 @@
       "prerequisites": ["SD3-1-M1", "SD3-1-M2"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd4-1-m5.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m5.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m5.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd4-1-m6",
       "title": "Percabangan dalam diagram alir",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -1852,13 +2208,17 @@
       "prerequisites": ["SD4-1-M5", "SD3-1-M4"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd4-1-m6.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m6.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m6.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd4-1-m7",
       "title": "Pengulangan dalam diagram alir",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -1875,13 +2235,17 @@
       "prerequisites": ["SD4-1-M5", "SD3-1-M5"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd4-1-m7.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m7.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m7.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd4-1-m8",
       "title": "Menguji di atas kertas",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -1898,13 +2262,17 @@
       "prerequisites": ["SD4-1-M6", "SD4-1-M7"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd4-1-m8.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m8.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m8.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd4-1-m9",
       "title": "Memperbaiki kesalahan",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -1921,13 +2289,17 @@
       "prerequisites": ["SD4-1-M8"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd4-1-m9.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m9.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m9.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd4-1-m10",
       "title": "Instruksi untuk mesin dengan kosakata terbatas",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -1944,13 +2316,17 @@
       "prerequisites": ["SD3-1-M2", "SD3-1-M5"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd4-1-m10.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m10.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m10.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd4-1-m11",
       "title": "Sifat benda dan tabel sifat",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -1967,13 +2343,17 @@
       "prerequisites": ["SD3-2-M3", "SD2-2-M8"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd4-1-m11.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m11.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m11.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd4-1-m12",
       "title": "Penguatan: memecahkan masalah sekolah",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -1990,13 +2370,17 @@
       "prerequisites": ["SD4-1-M5", "SD4-1-M9"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd4-1-m12.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m12.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m12.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd4-1-m13",
       "title": "Proyek mini: panduan memecahkan masalah",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2013,13 +2397,17 @@
       "prerequisites": ["SD4-1-M5", "SD4-1-M12"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd4-1-m13.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m13.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m13.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd4-1-m14",
       "title": "Asesmen dan refleksi",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2050,13 +2438,17 @@
       ],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd4-1-m14.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m14.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-1-m14.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd4-2-m1",
       "title": "Perangkat keras dan perangkat lunak",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2073,13 +2465,17 @@
       "prerequisites": ["SD3-2-M5"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd4-2-m1.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m1.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m1.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd4-2-m2",
       "title": "Masukan-proses-keluaran dalam keseharian",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -2092,13 +2488,17 @@
       "prerequisites": ["SD2-2-M1", "SD4-2-M1"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd4-2-m2.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m2.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m2.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd4-2-m3",
       "title": "Informasi pribadi dan alasan melindunginya",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2115,13 +2515,17 @@
       "prerequisites": ["SD3-2-M8"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd4-2-m3.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m3.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m3.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd4-2-m4",
       "title": "Kata sandi kuat",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "NIST SP 800-63B-4: pedoman kata sandi untuk penyedia layanan (panjang, daftar kata umum yang ditolak)",
@@ -2138,13 +2542,17 @@
       "prerequisites": ["SD4-2-M3", "SD3-2-M8"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd4-2-m4.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m4.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m4.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd4-2-m5",
       "title": "Mencari informasi dengan kata kunci",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2161,13 +2569,17 @@
       "prerequisites": ["SD3-2-M7"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd4-2-m5.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m5.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m5.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd4-2-m6",
       "title": "Informasi benar atau keliru",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -2180,13 +2592,17 @@
       "prerequisites": ["SD4-2-M5"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd4-2-m6.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m6.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m6.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd4-2-m7",
       "title": "Dampak teknologi: baik dan buruk",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2203,13 +2619,17 @@
       "prerequisites": ["SD4-2-M1", "SD3-2-M5"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd4-2-m7.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m7.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m7.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd4-2-m8",
       "title": "Mesin cerdas dan non-cerdas",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2226,13 +2646,17 @@
       "prerequisites": ["SD3-2-M9"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd4-2-m8.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m8.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m8.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd4-2-m9",
       "title": "Bagaimana mesin \"melihat\"",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2249,13 +2673,17 @@
       "prerequisites": ["SD2-2-M3"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd4-2-m9.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m9.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m9.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd4-2-m10",
       "title": "Mengenali pola dengan kartu",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2272,13 +2700,17 @@
       "prerequisites": ["SD3-2-M10", "SD4-2-M8"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd4-2-m10.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m10.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m10.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd4-2-m11",
       "title": "Empati dan tidak menyakiti",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2295,13 +2727,17 @@
       "prerequisites": ["SD3-2-M11"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd4-2-m11.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m11.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m11.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd4-2-m12",
       "title": "Penguatan: panduan aman untuk adik kelas",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -2314,13 +2750,17 @@
       "prerequisites": ["SD4-2-M3", "SD4-2-M4", "SD4-2-M6"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd4-2-m12.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m12.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m12.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd4-2-m13",
       "title": "Proyek mini: poster panduan",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Program Koding dan KA (pendekatan unplugged)",
@@ -2333,13 +2773,17 @@
       "prerequisites": ["SD4-2-M12"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd4-2-m13.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m13.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m13.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd4-2-m14",
       "title": "Asesmen dan refleksi",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2370,13 +2814,17 @@
       ],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd4-2-m14.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m14.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd4-2-m14.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd5-1-m1",
       "title": "Pengenalan Berpikir Komputasional",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2393,13 +2841,17 @@
       "prerequisites": ["SD4-1-M1"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd5-1-m1.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m1.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m1.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd5-1-m2",
       "title": "Konsep Dasar Berpikir Komputasional",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2412,13 +2864,17 @@
       "prerequisites": ["SD5-1-M1"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd5-1-m2.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m2.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m2.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd5-1-m3",
       "title": "Pemecahan Masalah dalam Kehidupan Sehari-hari",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2431,13 +2887,17 @@
       "prerequisites": ["SD5-1-M1", "SD5-1-M2"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd5-1-m3.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m3.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m3.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd5-1-m4",
       "title": "Pemecahan Masalah Multi-langkah",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2450,13 +2910,17 @@
       "prerequisites": ["SD5-1-M3"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd5-1-m4.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m4.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m4.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd5-1-m5",
       "title": "Proyek Pemecahan Masalah Multi-langkah",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2469,13 +2933,17 @@
       "prerequisites": ["SD5-1-M2", "SD5-1-M4"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd5-1-m5.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m5.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m5.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd5-1-m6",
       "title": "Menuliskan Urutan Instruksi secara Logis",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2488,13 +2956,17 @@
       "prerequisites": ["SD5-1-M2", "SD4-1-M10"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd5-1-m6.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m6.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m6.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd5-1-m7",
       "title": "Konsep Dasar Teknologi Digital",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2507,13 +2979,17 @@
       "prerequisites": ["SD4-2-M7"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd5-1-m7.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m7.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m7.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd5-1-m8",
       "title": "Sistem Komputer Tingkat Pra Dasar",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2530,13 +3006,17 @@
       "prerequisites": ["SD4-2-M1", "SD4-2-M2"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd5-1-m8.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m8.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m8.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd5-1-m9",
       "title": "Keamanan Informasi Pribadi",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2553,13 +3033,17 @@
       "prerequisites": ["SD4-2-M3", "SD4-2-M4"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd5-1-m9.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m9.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m9.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd5-1-m10",
       "title": "Interaksi Aman dan Efektif di Beranda Digital",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2572,13 +3056,17 @@
       "prerequisites": ["SD5-1-M9", "SD4-2-M6"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd5-1-m10.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m10.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m10.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd5-1-m11",
       "title": "Penguatan: Instruksi logis dengan simbol",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2591,13 +3079,17 @@
       "prerequisites": ["SD5-1-M6"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd5-1-m11.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m11.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m11.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd5-1-m12",
       "title": "Penguatan: Aman di dunia digital: studi kasus",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2610,13 +3102,17 @@
       "prerequisites": ["SD5-1-M9", "SD5-1-M10"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd5-1-m12.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m12.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m12.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd5-1-m13",
       "title": "Proyek mini: panduan \"langkah aman memakai internet\"",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2633,13 +3129,17 @@
       "prerequisites": ["SD5-1-M6", "SD5-1-M9"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd5-1-m13.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m13.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m13.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd5-1-m14",
       "title": "Asesmen dan refleksi",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2670,13 +3170,17 @@
       ],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd5-1-m14.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m14.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-1-m14.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd5-2-m1",
       "title": "Pengenalan KA",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2689,13 +3193,17 @@
       "prerequisites": ["SD4-2-M8"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd5-2-m1.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m1.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m1.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd5-2-m2",
       "title": "Perbedaan Manusia dan Komputer dalam Penginderaan",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2708,13 +3216,17 @@
       "prerequisites": ["SD4-2-M9"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd5-2-m2.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m2.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m2.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd5-2-m3",
       "title": "Mesin Cerdas versus Mesin Non-Cerdas",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2727,13 +3239,17 @@
       "prerequisites": ["SD5-2-M1", "SD4-2-M8"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd5-2-m3.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m3.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m3.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd5-2-m4",
       "title": "Manfaat KA dalam Kehidupan Sehari-hari",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2746,13 +3262,17 @@
       "prerequisites": ["SD5-2-M1", "SD5-2-M3"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd5-2-m4.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m4.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m4.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd5-2-m5",
       "title": "Konsep Mengenali Pola dan Klasifikasi dalam Situasi Kehidupan",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2765,13 +3285,17 @@
       "prerequisites": ["SD4-1-M11", "SD4-2-M10"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd5-2-m5.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m5.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m5.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd5-2-m6",
       "title": "Mengenali Pola dan Klasifikasi oleh KA",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2784,13 +3308,17 @@
       "prerequisites": ["SD5-2-M5"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd5-2-m6.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m6.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m6.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd5-2-m7",
       "title": "Simulasi Prediksi Pola dan Klasifikasi Sistem KA",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2803,13 +3331,17 @@
       "prerequisites": ["SD5-2-M5", "SD5-2-M6"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd5-2-m7.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m7.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m7.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd5-2-m8",
       "title": "Pengaruh Data Input terhadap Hasil Mengenali Pola dan Klasifikasi KA",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2822,13 +3354,17 @@
       "prerequisites": ["SD5-2-M7"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd5-2-m8.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m8.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m8.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd5-2-m9",
       "title": "Penguatan: Survei mesin di rumah",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2841,13 +3377,17 @@
       "prerequisites": ["SD5-2-M3"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd5-2-m9.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m9.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m9.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd5-2-m10",
       "title": "Penguatan: Pengklasifikasi kartu",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2860,13 +3400,17 @@
       "prerequisites": ["SD5-2-M5", "SD5-2-M6"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd5-2-m10.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m10.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m10.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd5-2-m11",
       "title": "Penguatan: Instruksi untuk mesin yang belajar",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2879,13 +3423,17 @@
       "prerequisites": ["SD5-1-M6", "SD5-2-M7"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd5-2-m11.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m11.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m11.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd5-2-m12",
       "title": "Penguatan: KA untuk kesejahteraan",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2898,13 +3446,17 @@
       "prerequisites": ["SD5-2-M4"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd5-2-m12.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m12.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m12.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd5-2-m13",
       "title": "Proyek mini: pameran \"mesin kotak\"",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2917,13 +3469,17 @@
       "prerequisites": ["SD5-2-M6", "SD5-2-M7", "SD5-2-M8"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd5-2-m13.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m13.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m13.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd5-2-m14",
       "title": "Asesmen dan refleksi",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2950,13 +3506,17 @@
       ],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd5-2-m14.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m14.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd5-2-m14.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd6-1-m1",
       "title": "Pemanfaatan Algoritma Sederhana",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2969,13 +3529,17 @@
       "prerequisites": ["SD5-1-M3", "SD5-1-M6"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd6-1-m1.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m1.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m1.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd6-1-m2",
       "title": "Pengenalan Representasi Simbol dalam Instruksi",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -2988,13 +3552,17 @@
       "prerequisites": ["SD6-1-M1", "SD5-1-M6"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd6-1-m2.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m2.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m2.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd6-1-m3",
       "title": "Eksperimen dengan Instruksi Logis",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -3007,13 +3575,17 @@
       "prerequisites": ["SD6-1-M2"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd6-1-m3.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m3.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m3.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd6-1-m4",
       "title": "Penguatan: Menguji dan memperbaiki instruksi",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -3026,13 +3598,17 @@
       "prerequisites": ["SD6-1-M3"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd6-1-m4.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m4.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m4.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd6-1-m5",
       "title": "Pemanfaatan Internet Secara Aman dan Produktif",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -3049,13 +3625,17 @@
       "prerequisites": ["SD5-1-M9", "SD5-1-M10"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd6-1-m5.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m5.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m5.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd6-1-m6",
       "title": "Dampak Teknologi Digital",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -3068,13 +3648,17 @@
       "prerequisites": ["SD5-1-M7"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd6-1-m6.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m6.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m6.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd6-1-m7",
       "title": "Produksi dan Diseminasi Konten Digital Sederhana",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -3091,13 +3675,17 @@
       "prerequisites": ["SD6-1-M5", "SD5-1-M9"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd6-1-m7.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m7.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m7.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd6-1-m8",
       "title": "Konten Digital Positif",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -3114,13 +3702,17 @@
       "prerequisites": ["SD6-1-M7", "SD5-1-M9"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd6-1-m8.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m8.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m8.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd6-1-m9",
       "title": "Penguatan: Instruksi di layar dengan blok",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -3137,13 +3729,17 @@
       "prerequisites": ["SD6-1-M3"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd6-1-m9.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m9.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m9.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd6-1-m10",
       "title": "Penguatan: Lanjutan M9 atau alternatif kertas",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -3160,13 +3756,17 @@
       "prerequisites": ["SD6-1-M9"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd6-1-m10.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m10.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m10.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd6-1-m11",
       "title": "Penguatan: Tanda hati-hati di internet",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -3183,13 +3783,17 @@
       "prerequisites": ["SD6-1-M5", "SD5-1-M10"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd6-1-m11.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m11.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m11.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd6-1-m12",
       "title": "Penguatan: Panduan konten positif",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -3206,13 +3810,17 @@
       "prerequisites": ["SD6-1-M8"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd6-1-m12.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m12.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m12.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd6-1-m13",
       "title": "Proyek mini: media kelas (poster atau lembar buletin)",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -3229,13 +3837,17 @@
       "prerequisites": ["SD6-1-M7", "SD6-1-M8"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd6-1-m13.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m13.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m13.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd6-1-m14",
       "title": "Asesmen dan refleksi",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -3266,13 +3878,17 @@
       ],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd6-1-m14.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m14.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-1-m14.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd6-2-m1",
       "title": "Cara kerja KA secara sederhana",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -3285,13 +3901,17 @@
       "prerequisites": ["SD5-2-M1", "SD5-2-M6"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd6-2-m1.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m1.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m1.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd6-2-m2",
       "title": "Dampak Kecerdasan Artifisial",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -3304,13 +3924,17 @@
       "prerequisites": ["SD6-2-M1", "SD5-2-M4"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd6-2-m2.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m2.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m2.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd6-2-m3",
       "title": "Etika Dasar Penggunaan KA",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -3327,13 +3951,17 @@
       "prerequisites": ["SD6-2-M2", "SD4-2-M11"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd6-2-m3.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m3.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m3.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd6-2-m4",
       "title": "Cara KA Belajar dari Data",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -3346,13 +3974,17 @@
       "prerequisites": ["SD5-2-M6", "SD5-2-M7"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd6-2-m4.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m4.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m4.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd6-2-m5",
       "title": "Model Pola dan Klasifikasi Sederhana",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -3365,13 +3997,17 @@
       "prerequisites": ["SD6-2-M4", "SD5-2-M6"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd6-2-m5.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m5.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m5.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd6-2-m6",
       "title": "Faktor yang Mempengaruhi Prediksi KA",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -3384,13 +4020,17 @@
       "prerequisites": ["SD6-2-M4", "SD5-2-M8"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd6-2-m6.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m6.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m6.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd6-2-m7",
       "title": "Batasan Sederhana KA",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -3403,13 +4043,17 @@
       "prerequisites": ["SD6-2-M6"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd6-2-m7.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m7.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m7.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd6-2-m8",
       "title": "Penguatan: Data yang timpang",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -3426,13 +4070,17 @@
       "prerequisites": ["SD6-2-M6"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd6-2-m8.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m8.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m8.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd6-2-m9",
       "title": "Penguatan: Mesin cerdas atau bukan: ujian ciri",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -3449,13 +4097,17 @@
       "prerequisites": ["SD5-2-M3"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd6-2-m9.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m9.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m9.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd6-2-m10",
       "title": "Penguatan: KA dan keselamatan data",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -3472,13 +4124,17 @@
       "prerequisites": ["SD5-1-M9", "SD6-2-M3"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd6-2-m10.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m10.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m10.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd6-2-m11",
       "title": "Penguatan: Merancang aturan KA kelas",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -3495,13 +4151,17 @@
       "prerequisites": ["SD6-2-M3"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd6-2-m11.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m11.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m11.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd6-2-m12",
       "title": "Penguatan: Persiapan proyek akhir",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -3518,13 +4178,17 @@
       "prerequisites": ["SD6-2-M4", "SD6-2-M5"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd6-2-m12.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m12.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m12.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd6-2-m13",
       "title": "Proyek akhir: \"mesin kartu\" dan aturan KA",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -3541,13 +4205,17 @@
       "prerequisites": ["SD6-2-M3", "SD6-2-M4", "SD6-2-M6", "SD6-2-M7"],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd6-2-m13.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m13.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m13.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     },
     {
       "id": "sd6-2-m14",
       "title": "Asesmen akhir, refleksi, penyambung ke SMP",
       "language": "id",
-      "status": "draf",
+      "status": "disetujui",
       "references": [
         {
           "title": "Keputusan Kepala BSKAP 046/H/KR/2025 tentang Capaian Pembelajaran (teks CP Fase C)",
@@ -3578,7 +4246,11 @@
       ],
       "audience": "guru",
       "contentPath": "content/sd-coding/modules/sd6-2-m14.md",
-      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m14.md"
+      "learnerSheetPath": "content/sd-coding/lembar/sd6-2-m14.md",
+      "review": {
+        "approvedOn": "2026-11-20",
+        "reviewerRole": "pemilik program"
+      }
     }
   ]
 }

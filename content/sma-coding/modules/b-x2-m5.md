@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas X jalur B (Web dengan JavaScript, TypeScript, dan Bun), minggu `B-X2-M5` silabus v1.4.1: CSS dasar dan responsif. Prasyarat: modul `b-x2-m4` (HTML dasar); kamu memakai halaman HTML yang kamu tulis di sana.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `E-LD-f` (media digital untuk produksi konten, partisipasi, kolaborasi) dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan butir itu.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `E-LD-f` (media digital untuk produksi konten, partisipasi, kolaborasi) dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul.
 
 Blok `html` dan `css` tidak diperiksa otomatis. Penyusun membukanya di Google Chrome 158 tanpa kepala (per 2026-11) dan mencatat angka yang terukur serta tangkapan layar; yang tidak dilihat tidak diklaim. Tugas baca-dan-prediksi ditandai `AI: tanpa AI`; selain itu AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi atau tugas bernilai pada permintaanmu. Semua isi halaman karangan.
 

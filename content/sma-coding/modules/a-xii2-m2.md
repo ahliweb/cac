@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur A (Algoritmik dengan C++), minggu `A-XII2-M2` silabus v1.4.1: pemeliharaan program II, yaitu mengoptimalkan solusi dan mencatat alasannya. Prasyarat: modul `a-xii2-m1` (pemeliharaan program I).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-AP-c` dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan. Silabus tidak memetakan keluarga materi OSN untuk minggu ini.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `F-AP-c` dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul. Silabus tidak memetakan keluarga materi OSN untuk minggu ini.
 
 Siapkan satu solusi lambat milikmu; di akhir kamu menulis catatan optimasi untuknya. Tiap soal latihan bertanda `AI: boleh` atau `AI: tanpa AI`. Masukan program diberikan lewat berkas: `./program < masukan.txt`. Semua data karangan.
 

@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur C (IoT dan robotika), minggu `C-XII2-M10` silabus v1.4: proyek akhir, ulasan sejawat. Prasyarat terindeks: `c-xii2-m9`. Kamu memakai rilis kandidat dan matriks keterlacakan dari sprint 4, dan daftar kebutuhan dari rancangan `C-XII2-M5` yang belum terindeks saat modul ini ditulis.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-BK-a` dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: catatan ulasan. Latihan silabusnya: tinjau proyek.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-BK-a` dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: catatan ulasan. Latihan silabusnya: tinjau proyek.
 
 Pekerjaan minggu ini membaca dan menguji tiruan, dengan atau tanpa papan. Keselamatan perangkat: bila menjalankan robot kelompok lain, penulisnya mendampingi, roda terangkat, tombol berhenti terpasang, dan daya dari guru. Jangan membuka berkas rahasia atau data kelompok lain di luar yang diserahkan untuk ulasan.
 

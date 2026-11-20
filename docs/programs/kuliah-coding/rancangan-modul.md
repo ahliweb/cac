@@ -1,9 +1,11 @@
 # Rancangan Modul Belajar `kuliah-coding` (24 modul)
 
-- **Version:** v0.1.1
-- **Last updated:** 2026-11-19
+- **Version:** v0.1.2
+- **Last updated:** 2026-11-20
 - **Status:** Rancangan **DISETUJUI pemilik 2026-11-19** lewat dialog keputusan (opsi "Setujui semua rekomendasi", termasuk tingkat AI baku `[asumsi]` untuk mata kuliah yang belum ditetapkan silabus). Persetujuan ini untuk rancangan, bukan modul. Modulnya **sudah ditulis** per 2026-11-19: 24 modul di `content/kuliah-coding/modules/`, terindeks di `data/kuliah-coding/modules.json`; semuanya berstatus `draf`.
 - **Changeset:** v0.1.0: dokumen pertama (rancangan modul belajar `kuliah-coding`, satu modul per mata kuliah, 24 modul, struktur internal per pekan atau pokok bahasan), bersama pilot `kul-u-101`.
+
+> **Catatan status (2026-11-20, #125).** Pernyataan "berstatus `draf`" atau "modul draf" di dokumen ini adalah keadaan saat rancangan ditulis. Pada 2026-11-20 pemilik program memilih "Setujui semua, catatan jadi tindak lanjut" lewat dialog pilihan baku, sehingga seluruh 753 modul enam program coding berstatus `disetujui` di `data/<id>/modules.json` (bukan hasil tinjauan isi per modul; butir [`catatan-tinjauan-modul.md`](../catatan-tinjauan-modul.md) menjadi tindak lanjut revisi). Pernyataan status modul di bawah, termasuk aturan "modul baru berstatus `draf`", adalah riwayat atau aturan untuk modul baru.
 
 > **Catatan status (2026-11-19, sinkron dokumen #124).** Frasa "belum satu pun modul ditulis" dan "belum ada `modules.json`" di bawah adalah riwayat: 24 modul ada di `content/kuliah-coding/modules/` (jalur U 5, I 16, K 3) dan terindeks di `data/kuliah-coding/modules.json` (skema `src/schema/kul-module.ts`), semua `draf`, belum ditinjau. Pilot `rancangan-modul-contoh/` kini riwayat; modul nyatanya `content/kuliah-coding/modules/kul-u-101.md`. Aturan "agen penulis tidak menyunting indeks" adalah aturan masa penulisan. Judul `#` dan bagian `## Rujukan` tidak lagi ada di tubuh modul (judul dan rujukan dirender dari indeks); judul ganda kini galat di `bun run check:learner-assets`.
 > Keputusan dan kontrak yang disetujui pemilik di dokumen ini tidak berubah; yang diperbarui hanya klausa status yang basi.
@@ -578,3 +580,4 @@ sementara. Tautan Python tutorial, modul `csv`, dan referensi Git dibuka
 | --- | --- | --- |
 | v0.1.0 | 2026-11-19 | Dokumen pertama: pemetaan 24 modul, struktur internal per mata kuliah, templat berbasis bukti, aturan rujukan, gelombang dan gerbang mutu, tiga pertanyaan keputusan, dan pilot `kul-u-101`. |
 | v0.1.1 | 2026-11-19 | Sinkron dokumen (#124): catatan status; 24 modul kini ada di `content/kuliah-coding/` dan terindeks; pilot menjadi riwayat. Isi rancangan tidak berubah. |
+| v0.1.2 | 2026-11-20 | Catatan status 2026-11-20: pemilik menyetujui 753 modul enam program coding (#125); pernyataan `draf` di dokumen ini menjadi riwayat; isi rancangan tidak berubah. |

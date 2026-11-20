@@ -1,8 +1,7 @@
 ## Untuk siapa modul ini
 
 Modul belajar untuk mata kuliah `KUL-U-202` (2 SKS, semester 4, jalur U), bagian
-dari program `kuliah-coding`. Konten ini karangan menurut ADR-0007 dan belum
-disetujui. Kode di modul ini adalah **Python 3.12** (pustaka standar): tiap blok
+dari program `kuliah-coding`. Konten ini karangan menurut ADR-0007 dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Kode di modul ini adalah **Python 3.12** (pustaka standar): tiap blok
 lengkap dijalankan dengan `python3 -I` dan keluarannya sama dengan yang
 tertulis; blok `setengah-jadi` berlubang, tetapi versi terisi sudah dijalankan.
 Semua nama, surel, nomor, dan "kunci" **fiktif**. Bagian hukum hanya memuat yang

@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur C (IoT dan robotika), minggu `C-XII1-M7` silabus v1.4: pengikut garis, strategi 2 (F). Prasyarat: modul `c-xii1-m6` (pengikut garis, strategi 1). Kamu juga memakai kendali proporsional dari `c-xi1-m7` dan sensor garis dari `c-xii1-m4`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-AP-a` (konsep strategi algoritmik) dan `F-AP-b` (program terstruktur berdasarkan strategi algoritmik), dan tidak dihitung memenuhi butir capaian pembelajaran mana pun; pemetaan `F-AP-a` untuk jalur C bersifat parsial. Keluaran minggu ini: program proporsional. Latihan silabusnya: lintasan uji yang sama dengan modul 6.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-AP-a` (konsep strategi algoritmik) dan `F-AP-b` (program terstruktur berdasarkan strategi algoritmik), dan tidak dihitung memenuhi butir capaian pembelajaran mana pun; pemetaan `F-AP-a` untuk jalur C bersifat parsial. Keluaran minggu ini: program proporsional. Latihan silabusnya: lintasan uji yang sama dengan modul 6.
 
 Ada dua cara mengerjakan. **Dengan papan (F):** kelompok memakai robot dan lintasan pita hitam yang sama dengan modul 6. **Tanpa papan:** kamu menjalankan simulasi yang sama dengan modul 6 di komputer, dengan model sederhana karangan (bukan fisika robot nyata). Nomor pin, ambang, dan angka kecepatan hanya contoh `[belum terverifikasi]` untuk robotmu.
 

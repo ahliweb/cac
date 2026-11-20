@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas X jalur A (Algoritmik dengan C++), minggu `A-X2-M2` silabus v1.4.1: string. Prasyarat: modul `a-x2-m1` (array satu dimensi). Kamu tidak perlu pernah memprogram sebelum jalur ini.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `E-BK-d` dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan. Keluarga materi OSN yang bertaut: `struktur-data` (string sesuai CP, bukan pengayaan).
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Butir `E-BK-d` dipetakan silabus sebagai dipenuhi jalur ini; pemenuhan butir mengikuti pemetaan silabus, bukan status modul. Keluarga materi OSN yang bertaut: `struktur-data` (string sesuai CP, bukan pengayaan).
 
 Bila kamu pernah memakai Python: `string` di C++ bisa diubah per karakter, karakter ditulis dengan tanda kutip tunggal (`'a'`), dan teks dengan tanda kutip ganda (`"a"`). Tiap soal latihan bertanda `AI: boleh` atau `AI: tanpa AI`. Masukan program diberikan lewat berkas: `./program < masukan.txt`.
 

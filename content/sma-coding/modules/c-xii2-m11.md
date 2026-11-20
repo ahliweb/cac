@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XII jalur C (IoT dan robotika), minggu `C-XII2-M11` silabus v1.4: proyek akhir, pengujian akhir. Prasyarat terindeks: `c-xii2-m10`. Kamu memakai kebutuhan dari rancangan `C-XII2-M5`, rilis kandidat `c-xii2-m9`, dan lembar uji `C-XII2-M6` yang belum terindeks saat modul ini ditulis.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-BK-a` dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: laporan uji. Latihan silabusnya: uji penerimaan.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-BK-a` dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: laporan uji. Latihan silabusnya: uji penerimaan.
 
 Perhitungan dan laporan dikerjakan di komputer; uji lari dan uji lama pakai robot bila ada, dan bila tidak ada, pakai data karangan seperti di bawah. Keselamatan perangkat: uji lari di meja atau lintasan yang aman dengan tombol berhenti terpasang; uji lama beroperasi dengan roda terangkat atau diawasi; daya baterai AA/AAA dari guru; berhenti bila tegangan di bawah ambang atau ada bagian panas atau berbau. Angka pada contoh hanya karangan.
 

@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur C (IoT dan robotika), minggu `C-XI1-M4` silabus v1.3: pustaka sendiri, yaitu membuat kelas atau pustaka kecil untuk sebuah sensor (F). Prasyarat: modul `c-xi1-m3` (tipe data bentukan). Kamu juga memakai fungsi dan konstanta dari `c-x1-m12`, waktu dari `c-x2-m7`, sensor jarak dari `c-x2-m11`, dan kasus uji dari `c-xi1-m2`.
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia mendukung butir `F-AP-b` (program terstruktur berdasarkan strategi algoritmik) dan `F-AP-d` (program dengan struktur data kompleks memakai pustaka atau perangkat) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: pustaka sensor. Latihan silabusnya: pustaka sensor jarak.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia mendukung butir `F-AP-b` (program terstruktur berdasarkan strategi algoritmik) dan `F-AP-d` (program dengan struktur data kompleks memakai pustaka atau perangkat) dan tidak dihitung memenuhi butir capaian pembelajaran mana pun. Keluaran minggu ini: pustaka sensor. Latihan silabusnya: pustaka sensor jarak.
 
 Ada dua cara mengerjakan. **Dengan papan (F):** kelompok merakit satu sensor jarak ultrasonik sesuai lembar guru. **Tanpa papan:** kamu menelusuri kelas di kertas dan menjalankan "papan tiruan" di komputer yang menguji bagian murninya (konversi dan rentang) dengan waktu gema karangan. Nama pin, lebar pulsa pemicu, kecepatan suara, dan batas rentang pada contoh hanya contoh `[belum terverifikasi]` untuk sensormu: baca lembar datanya.
 

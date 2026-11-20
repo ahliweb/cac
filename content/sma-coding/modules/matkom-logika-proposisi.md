@@ -1,6 +1,6 @@
 ## Untuk siapa modul ini
 
-Modul ini untuk siswa SMA reguler kelas X yang ingin menulis kondisi program dengan benar dan rapi. Ia bagian dari seri Matematika Komputasi Dasar dan berstatus DRAF: karangan penyusun, belum disetujui pemilik, dan tidak dihitung sebagai pemenuhan butir capaian pembelajaran (hanya mendukung butir E-BK-d, solusi program sederhana dalam pseudocode).
+Modul ini untuk siswa SMA reguler kelas X yang ingin menulis kondisi program dengan benar dan rapi. Ia bagian dari seri Matematika Komputasi Dasar dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi); isinya karangan penyusun, dan tidak dihitung sebagai pemenuhan butir capaian pembelajaran (hanya mendukung butir E-BK-d, solusi program sederhana dalam pseudocode).
 
 Prasyarat: tidak ada modul seri yang harus dibaca lebih dulu. Cukup tahu `if` dan operator perbandingan secara umum.
 

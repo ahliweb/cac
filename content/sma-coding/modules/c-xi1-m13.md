@@ -2,7 +2,7 @@
 
 Modul ini untuk murid kelas XI jalur C (IoT dan robotika), minggu `C-XI1-M13` silabus v1.3: proyek mini kelas XI semester 1, yaitu membuat sistem dua papan teruji (F). Prasyarat: modul `c-xi1-m12` (pemecahan masalah sambungan). Kamu memakai hasil modul sebelumnya: kasus uji (`c-xi1-m2`), `struct` (`c-xi1-m3`), keputusan histeresis (`c-xi1-m5` dan `c-xi1-m6`), penyangga melingkar (`c-xi1-m9`), pesan antar papan (`c-xi1-m10` dan `c-xi1-m11`), dan diagnosis (`c-xi1-m12`).
 
-Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Ia tidak dihitung memenuhi butir capaian pembelajaran mana pun; proyek ini menyatukan keterampilan modul sebelumnya. Keluaran minggu ini: perangkat, uji, dan laporan. Latihan silabusnya: proyek kelompok.
+Modul ini karangan penyusun dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Ia tidak dihitung memenuhi butir capaian pembelajaran mana pun; proyek ini menyatukan keterampilan modul sebelumnya. Keluaran minggu ini: perangkat, uji, dan laporan. Latihan silabusnya: proyek kelompok.
 
 Ada dua cara mengerjakan. **Dengan dua papan (F):** kelompok merakit dua papan sesuai lembar guru. **Tanpa papan:** kelompok menjalankan "papan tiruan" di komputer untuk pengirim, saluran, dan penerima, memakai aliran karangan; semua bagian pokok tetap dikerjakan, tetapi perilaku kabel, derau, dan waktu tidak teruji. Nomor pin dan ambang pada contoh hanya contoh `[belum terverifikasi]` untuk rangkaianmu.
 

@@ -1,8 +1,7 @@
 ## Untuk siapa modul ini
 
 Modul belajar untuk mata kuliah `KUL-K-301` (2 SKS, semester 5, jalur K),
-bagian dari program `kuliah-coding`. Konten ini karangan menurut ADR-0007 dan
-belum disetujui. Kode di modul adalah **C++17** (g++ 13.3, Linux): tiap blok
+bagian dari program `kuliah-coding`. Konten ini karangan menurut ADR-0007 dan disetujui pemilik program pada 2026-11-20 (keputusan lewat dialog; catatan tinjauan menjadi tindak lanjut revisi). Kode di modul adalah **C++17** (g++ 13.3, Linux): tiap blok
 `cpp` yang lengkap dikompilasi dengan `-std=c++17 -Wall -Wextra` tanpa
 peringatan, dijalankan, dan keluarannya cocok dengan yang tertulis.
 
