@@ -1,9 +1,9 @@
 # Catatan Tinjauan Modul: Tindak Lanjut Revisi
 
-- **Version:** v0.4.0
+- **Version:** v0.5.0
 - **Last updated:** 2026-11-20
 - **Status:** **DRAF** (catatan kerja tindak lanjut revisi; dokumen ini sendiri bukan keputusan pemilik dan bukan bukti tinjauan modul apa pun, sedangkan persetujuan 753 modul dicatat di `data/<program>/modules.json`). Konten karangan menurut [ADR-0007](../architecture/adr/0007-authored-learning-content.md). Tidak mengubah silabus, korpus, atau isi modul.
-- **Changeset:** `.changeset/sinkron-dokumen-modul-belajar.md` (patch): dokumen baru, sinkron dokumen modul belajar enam program (#124); `.changeset/modul-ab-p6.md` (patch): butir jalur A dan B (#237); `.changeset/jalur-b-keputusan-269.md` (patch): keputusan pemilik butir 14 dan 15 (#269); `.changeset/persetujuan-modul-125.md` (minor): persetujuan 753 modul oleh pemilik (#125).
+- **Changeset:** `.changeset/sinkron-dokumen-modul-belajar.md` (patch): dokumen baru, sinkron dokumen modul belajar enam program (#124); `.changeset/modul-ab-p6.md` (patch): butir jalur A dan B (#237); `.changeset/jalur-b-keputusan-269.md` (patch): keputusan pemilik butir 14 dan 15 (#269); `.changeset/persetujuan-modul-125.md` (minor): persetujuan 753 modul oleh pemilik (#125); `.changeset/temuan-modul-lembar.md` (patch): butir 17 sampai 20 dari penulisan lembar kerja (#283).
 
 > **Tindak lanjut revisi pascapersetujuan.** Pada 2026-11-20 pemilik
 > program memilih "Setujui semua, catatan jadi tindak lanjut" lewat dialog
@@ -86,6 +86,17 @@
 | 12 | Jalur A dan B `sma-coding` | Per 2026-11-19 belum ada modul mingguan jalur A dan B. **Keadaan per 2026-11-20:** 154 modul draf (jalur A 77, B 77) ditulis menurut [`rancangan-modul-ab.md`](sma-coding/rancangan-modul-ab.md) yang disetujui pemilik (#237); belum ada yang ditinjau manusia (#125). Butir khusus jalur B ada di butir 14 sampai 16. | `data/sma-coding/modules.json`; `docs/programs/sma-coding/README.md` bagian "Modul belajar" |
 | 13 | Jembatan `smp-coding` ke `sma-coding` | `data/smp-coding/bridge.json` dan `data/sma-coding/smp-bridge.json` menyebut minggu `A-X1-M9` sampai `A-X1-M12` (dan `B-X1-M9` sampai `B-X1-M12`) sebagai tempat "mengajar dari awal", padahal saat catatan ini dibuat modul mingguan jalur A dan B belum ada. **Keadaan per 2026-11-20:** modul `a-x1-m9` sampai `a-x1-m12` dan `b-x1-m9` sampai `b-x1-m12` kini ada (draf, #237). Peninjau memeriksa bahwa isinya memang mengajar dari awal seperti yang dijanjikan jembatan, dan bahwa tidak ada modul SMP yang menyebut modul A atau B sebagai prasyarat. | `data/smp-coding/bridge.json`; `data/sma-coding/smp-bridge.json` |
 
+## 8. Temuan saat menulis lembar kerja (epik #283)
+
+Butir ini ditemukan agent penulis lembar kerja pada 2026-11-20 dan dicek ulang orchestrator terhadap teks modul pada hari yang sama. Modul **tidak** diubah: lembar kerja mengikuti isi modul apa adanya, dan revisi modul menunggu peninjau manusia.
+
+| Butir | Modul | Yang dicek | Sumber |
+| --- | --- | --- | --- |
+| 17 | `smp7-1-m1` | Bagian "Susun urutannya" menulis "Tujuh kartu berikut", padahal kartunya enam (A sampai F). Perbaiki angkanya atau tambahkan kartu yang hilang. | `content/smp-coding/modules/smp7-1-m1.md` bagian "Susun urutannya" |
+| 18 | `smp7-1-m3` | Bagian Parsons menulis "Tujuh blok berikut", padahal bloknya enam (A sampai F). | `content/smp-coding/modules/smp7-1-m3.md` bagian Parsons |
+| 19 | `c-xi1-m12` | Teks menyebut fungsi `diagnosa` membaca "enam hitungan", tetapi yang disebut lima (`byteMasuk`, `bukanCetak`, `barisSah`, `gagalPeriksa`, `gagalFormat`). Cocokkan dengan kode fungsinya, lalu perbaiki angkanya atau sebut hitungan keenam. | `content/sma-coding/modules/c-xi1-m12.md` |
+| 20 | `d-xi2-m8` | Bagian "Prediksi dulu" meminta murid menebak bentuk bobot, bias, dan jumlah parameter, tetapi keluaran yang ditebak (`[(2, 4), (4, 1)]`, `[(4,), (1,)]`, `17`) tercetak tepat di bawah kode, sehingga jawabannya bocor. Jawaban yang sama sudah ada di bagian kunci. Pertimbangkan memindahkan blok keluaran itu. | `content/sma-coding/modules/d-xi2-m8.md` bagian "Prediksi dulu" |
+
 ## Cara memperbarui catatan ini
 
 Tambahkan butir baru saat penulis atau peninjau menemukannya, dengan tiga
@@ -97,6 +108,7 @@ tinjauan; catatan ini bukan bukti bahwa modul sudah ditinjau.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v0.5.0 | 2026-11-20 | Bagian 8 baru: butir 17 sampai 20 dari penulisan lembar kerja (epik #283), dicek ulang terhadap teks modul; modul tidak diubah. |
 | v0.4.0 | 2026-11-20 | Pemilik menyetujui 753 modul enam program coding lewat dialog pilihan baku ("Setujui semua, catatan jadi tindak lanjut", #125); dokumen menjadi daftar tindak lanjut revisi, 16 butir dan penanda `[belum terverifikasi]` tetap terbuka. |
 | v0.3.0 | 2026-11-20 | Butir 14 dan 15 mencatat keputusan pemilik 2026-11-20 (formulir kontak di situs; cadangan tanpa Docker boleh dengan batas jelas; temuan kontras footer dilaporkan ke `awcms-one`) dan tindak lanjutnya (#269). Tidak ada butir yang ditandai selesai. |
 | v0.2.0 | 2026-11-20 | Butir 12 dan 13 diperbarui setelah 154 modul draf jalur A dan B ditulis (#237); butir baru 14 (`b-xii2-m5` tanpa formulir pada profil `landing`), 15 (fakta `awcms-one` jalur B dan dua keputusan pemilik yang terbuka), 16 (pasal hukum `b-xi2-m10` dan `b-xii2-m10`). Tidak ada butir yang ditandai selesai. |
