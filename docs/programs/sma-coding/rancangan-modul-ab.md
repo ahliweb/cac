@@ -1,8 +1,8 @@
 # Rancangan Seri Modul Jalur A dan B (sma-coding): 154 Modul, Satu per Minggu
 
-- **Version:** v0.2.1
+- **Version:** v0.3.0
 - **Last updated:** 2026-11-20
-- **Status:** Rancangan **DISETUJUI pemilik 2026-11-19** lewat dialog keputusan (bagian 8): pertanyaan 1 opsi "Setujui, evaluasi guru paralel" (templat dan rancangan disetujui; penulisan tidak dijeda, evaluasi guru nyata berjalan paralel dan temuannya diperbaiki lewat PR revisi), pertanyaan 2 opsi "Per semester, A dan B paralel", pertanyaan 3 opsi "Soal orisinal + tautan resmi". Pertanyaan 4 tidak diajukan ke pemilik; orchestrator memakai opsi yang disarankan (pemeriksaan sintaks `ts`/`js` digabung sebelum P1 B) karena pemeriksaan itu sudah selesai dibuat. Persetujuan ini untuk rancangan, bukan modul: semua modul jalur A dan B yang ditulis berstatus `draf` (ADR-0007).
+- **Status:** Rancangan **DISETUJUI pemilik 2026-11-19** lewat dialog keputusan (bagian 8): pertanyaan 1 opsi "Setujui, evaluasi guru paralel" (templat dan rancangan disetujui; penulisan tidak dijeda, evaluasi guru nyata berjalan paralel dan temuannya diperbaiki lewat PR revisi), pertanyaan 2 opsi "Per semester, A dan B paralel", pertanyaan 3 opsi "Soal orisinal + tautan resmi". Pertanyaan 4 tidak diajukan ke pemilik; orchestrator memakai opsi yang disarankan (pemeriksaan sintaks `ts`/`js` digabung sebelum P1 B) karena pemeriksaan itu sudah selesai dibuat. Persetujuan ini untuk rancangan, bukan modul: semua modul jalur A dan B yang ditulis berstatus `draf` (ADR-0007). Dua keputusan lanjutan pemilik 2026-11-20 (formulir kontak `b-xii2-m5` dan cadangan lab tanpa Docker; issue #269) dicatat di bagian 8.
 - **Changeset:** `.changeset/rancangan-modul-ab.md` (patch): dokumen rancangan saja; tidak mengubah `content/`, `data/`, `src/`, atau silabus.
 - **Issue:** [#237](https://github.com/ahliweb/osn/issues/237); lanjutan dari issue #124 (seri modul belajar siswa SMA).
 
@@ -500,15 +500,22 @@ acak; modul proyek-akhir jalur B yang berbentuk fase memakai `Rencana sprint`
   memenuhi, modul memakai berkas JSON lokal sebagai tiruan. `b-xi2-m12`
   (penyajian statis, opsional) hanya di lab atau jaringan sekolah, bukan di
   layanan hosting luar yang butuh akun.
-- **Server dan formulir hanya lokal.** Server (`b-xi2-m1..m3`) di
-  `localhost`; data contoh sintetis dan jelas palsu (mis. daftar tugas
-  karangan); formulir kontak (`b-xii2-m5`) tidak menyimpan atau mengirim data
-  pribadi nyata.
-  Catatan `b-xii2-m5`: profil `landing` `awcms-one` tidak punya formulir
-  kontak, dan FAQ halaman kontak berasal dari pengaturan CMS, bukan dari
-  berkas seed. Modul karena itu membuat formulir sebagai prototipe
-  `localhost` terpisah yang memvalidasi masukan lalu membuangnya (tanpa
-  menyimpan data pribadi nyata); pengisian FAQ di CMS lab adalah tugas guru.
+- **Server hanya lokal; formulir tanpa kirim dan simpan.** Server
+  (`b-xi2-m1..m3`) di `localhost`; data contoh sintetis dan jelas palsu (mis.
+  daftar tugas karangan). Formulir kontak (`b-xii2-m5`) tidak menyimpan,
+  mencatat, atau mengirim data pribadi nyata.
+  Catatan `b-xii2-m5` (keputusan pemilik 2026-11-20, opsi "Formulir harus di
+  situs"): silabus meminta "formulir kontak (tanpa menyimpan data pribadi
+  nyata)". Profil `landing` `awcms-one` tidak punya formulir kontak, dan FAQ
+  halaman kontak berasal dari pengaturan CMS, bukan dari berkas seed. Modul
+  karena itu menambahkan **bagian formulir pada halaman `/kontak` di
+  repositori turunan `landing` murid sendiri** (storefront Astro): validasi
+  di peramban, galat dan konfirmasi yang aksesibel, tanpa `fetch`,
+  `localStorage`, atau endpoint, sehingga tidak ada data yang dikirim,
+  disimpan, atau dicatat. Modul menjelaskan mengapa produk nyata butuh
+  backend dan dasar hukum (UU PDP) sebelum menerima pesan. Prototipe
+  `localhost` terpisah yang dirancang sebelumnya tidak lagi dipakai.
+  Pengisian FAQ di CMS lab tetap tugas guru.
 - **Keamanan web sesuai silabus.** `b-xi2-m10` memperkenalkan XSS, rahasia di
   variabel lingkungan, dan pokok UU ITE dan UU PDP; kerentanan
   didemonstrasikan hanya pada aplikasi kecil milik latihan di mesin lokal
@@ -525,7 +532,8 @@ acak; modul proyek-akhir jalur B yang berbentuk fase memakai `Rencana sprint`
   profil `landing` saja di kelas XII. `b-xii1-m4` adalah **demonstrasi
   guru**; lingkungan Docker, PostgreSQL, dan `apps/cms` disiapkan dan
   dijalankan **guru**, bukan murid; murid hanya mengubah merek, konten, tema,
-  SEO, dan dokumentasi, tidak menyentuh backend, dan tidak memakai backend
+  SEO, dan dokumentasi serta menambahkan satu formulir kontak pada storefront
+  turunannya (`b-xii2-m5`), tidak menyentuh backend, dan tidak memakai backend
   produksi `awcms-one`. Fakta tentang repositori itu (perintah, profil,
   struktur) dicek penulis dari repositori publik saat menulis dan ditandai
   `[belum terverifikasi]` bila tidak dibuka; tidak ada rahasia atau data nyata.
@@ -701,6 +709,29 @@ empat, mengikuti batas satu dialog.
      dengan hasil eksekusi). Mutu paling tinggi, tetapi menyentuh `scripts/`
      dan CI di luar rancangan ini dan butuh issue terpisah.
 
+### Keputusan lanjutan pemilik 2026-11-20
+
+Dicatat dari dialog pilihan baku (issue #269). Keduanya atas rancangan dan
+tafsir silabus, bukan persetujuan isi modul; semua modul tetap `draf`.
+
+1. **Formulir kontak `b-xii2-m5`:** opsi terpilih **"Formulir harus di
+   situs"**. Silabus minggu `B-XII2-M5` ("menambah fitur sesuai profil
+   `landing` | fitur tahap 2 | formulir kontak (tanpa menyimpan data pribadi
+   nyata)") dipenuhi dengan formulir yang berada di repositori turunan
+   `landing` murid, bukan prototipe `localhost` terpisah. Konsekuensi: murid
+   menambah kode pada storefront (satu halaman, satu skrip, satu berkas
+   gaya, satu uji) tetapi tetap tidak menyentuh backend; modul `b-xii2-m2`,
+   `m8`, `m11`, `m12` menyebut formulir pada pernyataan lingkup.
+2. **Cadangan lab tanpa Docker:** opsi terpilih **"Boleh, dengan batas
+   jelas"**. Profil `landing` dapat di-build dengan data tiruan uji
+   repositori, tanpa Docker dan tanpa CMS. Modul jalur B yang langkahnya
+   memerlukan Docker, PostgreSQL, atau CMS lab memuat catatan "Cadangan tanpa
+   Docker": `b-xii1-m4` (perintah dan batas lengkap), `b-xii1-m6`,
+   `b-xii2-m3`, `b-xii2-m5` (rujukan singkat), dan `b-xii2-m8`. Batasnya: tanpa
+   penyemaian CMS (`db:seed:cms:profil landing`), tanpa pengisian FAQ di CMS,
+   dan isi halaman berasal dari data tiruan, bukan dari berkas contoh murid.
+   Cadangan tidak membuktikan apa pun tentang CMS sungguhan.
+
 ## 9. Batasan dan temuan
 
 - Tabel jenis, prasyarat, dan keterkaitan adalah rancangan penyusun
@@ -718,8 +749,10 @@ empat, mengikuti batas satu dialog.
 - **Bergantung pekerjaan lain:** pemeriksaan sintaks `ts`/`js` di
   `check:module-code` (agent lain; belum digabung). Kontrak bagian 5.5 berlaku
   setelah itu ada.
-- **Kelayakan `awcms-one`:** profil `landing` tanpa `apps/cms` hidup belum
-  diverifikasi (silabus bagian 6); modul `b-xii1-m3..m13` dan `b-xii2-m*`
+- **Kelayakan `awcms-one`:** profil `landing` terbukti dapat di-build tanpa
+  `apps/cms` hidup terhadap tiruan uji repositori (dijalankan 2026-11-20,
+  `awcms-one` 0.20.0); perilakunya dengan CMS sungguhan belum diverifikasi
+  (silabus bagian 6); modul `b-xii1-m3..m13` dan `b-xii2-m*`
   memerlukan penulis membuka repositori publik itu saat menulis.
 - **Soal jalur A:** silabus menyebut "set soal bergaya OSN (disusun
   terpisah)" untuk `a-xii2-m5`; belum ada set itu di repositori. Pertanyaan
@@ -737,6 +770,7 @@ empat, mengikuti batas satu dialog.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v0.3.0 | 2026-11-20 | Mencatat dua keputusan lanjutan pemilik 2026-11-20 (issue #269): "Formulir harus di situs" (bagian 5.3: formulir `b-xii2-m5` ada di repositori turunan `landing` murid, bukan prototipe `localhost`) dan "Boleh, dengan batas jelas" (cadangan lab tanpa Docker; bagian 8, 5.3, 9). |
 | v0.2.1 | 2026-11-20 | Bagian 5.3: catatan `b-xii2-m5` (profil `landing` tanpa formulir kontak; FAQ dari pengaturan CMS; formulir prototipe `localhost` yang memvalidasi lalu membuang data; FAQ di CMS lab tugas guru). |
 | v0.2.0 | 2026-11-19 | Mencatat keputusan pemilik lewat dialog (pertanyaan 1: "Setujui, evaluasi guru paralel"; 2: per semester, A dan B paralel; 3: soal orisinal dan tautan resmi); pertanyaan 4 memakai opsi disarankan oleh orchestrator. Catatan P2 di bagian 7 disesuaikan (tanpa jeda evaluasi). |
 | v0.1.0 | 2026-11-19 | Rancangan awal (issue #237): pemetaan 154 modul (jalur A 77, B 77) dibangkitkan dari `weeks.json` dan `cp-mapping.json` dengan jenis minggu, butir CP (memenuhi dan mendukung), dan prasyarat; jembatan OSN, SMP, dan keterkaitan modul yang ada; aturan khas jalur A (C++17, soal orisinal, kompleksitas) dan B (Bun, keamanan web, demo `awcms-one`); 12 gelombang dan 22 batch; empat pertanyaan keputusan. Status DRAF, menunggu keputusan pemilik. |

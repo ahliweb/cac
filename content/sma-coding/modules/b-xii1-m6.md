@@ -4,7 +4,7 @@ Modul ini untuk murid kelas XII jalur B (Web dengan JavaScript, TypeScript, dan 
 
 Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Silabus memetakan butir `F-AP-d` dan `F-LD-f` pada minggu ini; modul draf ini belum dihitung memenuhi keduanya.
 
-**Batas modul ini.** Kamu mengubah **merek, konten, dan tema** pada repositori turunan lab; kamu tidak menyentuh backend dan tidak memakai backend produksi `awcms-one`. CMS lab dijalankan guru; yang kamu ubah adalah berkas konten contoh dan pengaturan merek. Semua nama, alamat, dan surel **fiktif** (domain contoh seperti `example.org`). Contoh dijalankan penyusun dengan Bun 1.4.4 per 2026-11 terhadap `awcms-one` `0.20.0`, di salinan lokal, tanpa Docker dan tanpa data nyata. Tugas baca-dan-prediksi `AI: tanpa AI`; selain itu AI boleh dipakai dengan etika dan dicatat, tanpa data pribadi atau rahasia pada permintaanmu.
+**Batas modul ini.** Kamu mengubah **merek, konten, dan tema** pada repositori turunan lab; kamu tidak menyentuh backend dan tidak memakai backend produksi `awcms-one`. CMS lab dijalankan guru; kamu mengubah berkas konten contoh dan pengaturan merek. Tanpa CMS lab (cadangan di `b-xii1-m4`), build memakai data tiruan dan kontenmu tidak tampil. Semua nama, alamat, dan surel **fiktif** (domain `example.org`). Dijalankan penyusun dengan Bun 1.4.4 terhadap `awcms-one` `0.20.0` di salinan lokal tanpa Docker dan data nyata. Tugas prediksi `AI: tanpa AI`; selain itu AI boleh dipakai dengan etika dan dicatat, tanpa data pribadi atau rahasia.
 
 ## Ingat kembali
 
@@ -57,7 +57,7 @@ Reset (one-time):
   (already run once — CHANGELOG.md, .changesets/, and package.json's version are left as this repo's own history)
 ```
 
-Hanya `site.ts` yang berubah. Setelah dibangun terhadap stub uji milik repositori (bukan CMS; token palsu `TOKEN_PALSU_CONTOH`), `theme-tokens.css` berisi:
+Hanya `site.ts` yang berubah. Setelah dibangun terhadap stub uji repositori (bukan CMS), `theme-tokens.css` berisi:
 
 ```text
 :root {

@@ -4,7 +4,7 @@ Modul ini untuk murid kelas XII jalur B (Web dengan JavaScript, TypeScript, dan 
 
 Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-BK-a` (proses rekayasa) dan `F-LD-f` (mengkreasi konten digital) dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung sebagai pemenuhan butir itu. Keluaran minggu ini: dokumen panduan pengguna.
 
-**Konteks semester ini.** Kelasmu mengkustomisasi profil `landing` dari `awcms-one` sebagai studi kasus: hanya merek, konten, tema, SEO, dan dokumentasi; lingkungannya disiapkan gurumu dan kamu tidak menyentuh backend. Fakta `awcms-one` dibaca dari repositori publiknya (`main`, 2026-11-20); apakah profil `landing` berjalan penuh tanpa `apps/cms` hidup belum diverifikasi penyusun `[belum terverifikasi]`. Contoh dijalankan penyusun dengan Bun 1.4.4 per 2026-11. **Semua nama, kontak, dan konten karangan.** AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi atau rahasia pada permintaanmu.
+**Konteks semester ini.** Kelasmu mengkustomisasi profil `landing` dari `awcms-one` sebagai studi kasus: hanya merek, konten, tema, SEO, dokumentasi, dan satu formulir kontak; lingkungannya disiapkan gurumu dan kamu tidak menyentuh backend. Fakta `awcms-one` dibaca dari repositori publiknya (`main`, 2026-11-20); profil `landing` dibangun penyusun tanpa `apps/cms` hidup, terhadap tiruan uji repositori (cadangan di `b-xii1-m4`); perilakunya dengan CMS sungguhan tidak dijalankan `[belum terverifikasi]`. Contoh dijalankan penyusun dengan Bun 1.4.4 per 2026-11. **Semua nama, kontak, dan konten karangan.** AI generatif boleh dipakai dengan etika dan dicatat, tanpa data pribadi atau rahasia pada permintaanmu.
 
 ## Ingat kembali
 

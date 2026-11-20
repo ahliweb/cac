@@ -4,13 +4,13 @@ Modul ini untuk murid kelas XII jalur B (Web dengan JavaScript, TypeScript, dan 
 
 Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Silabus memetakan butir `F-BK-a` dan `F-LD-f` pada minggu ini; modul draf ini belum dihitung memenuhi keduanya. Keluaran minggu ini: laporan uji.
 
-**Batas modul ini.** Kamu menguji hasil kustomisasi (merek, konten, tema, SEO, dokumentasi) pada repositori turunan lab; backend tidak disentuh dan tidak diuji. Contoh dijalankan dengan Bun 1.4.4 per 2026-11 pada salinan `awcms-one` 0.20.0, dibangun terhadap tiruan uji tanpa CMS. Semua nama dan kontak karangan. AI boleh dipakai dengan etika dan dicatat, tanpa data pribadi atau rahasia.
+**Batas modul ini.** Kamu menguji hasil kustomisasi (merek, konten, tema, SEO, dokumentasi) pada repositori turunan lab; backend tidak disentuh dan tidak diuji. Dijalankan dengan Bun 1.4.4 per 2026-11 pada `awcms-one` 0.20.0, dibangun terhadap tiruan uji tanpa CMS. Semua nama dan kontak karangan. AI boleh dipakai dengan etika dan dicatat, tanpa data pribadi atau rahasia.
 
 ## Ingat kembali
 
 Jawab dari ingatan dulu, baru cek di bagian kunci. Soal 1 dari `b-xii2-m5`, soal 2 dari `b-xii2-m3`, soal 3 dari `b-xii1-m12`.
 
-1. Mengapa prototipe formulir tidak mencatat isi pesan di log dan tidak menyimpannya?
+1. Mengapa formulir kontak di situsmu tidak mengirim atau menyimpan isian, dan apa yang dibutuhkan produk nyata sebelum menerima pesan?
 2. Mengapa surel contoh di berkas seed memakai `example.org`, bukan domain karanganmu?
 3. Bagaimana kamu menanggapi komentar ulasan yang tidak kamu setujui?
 
@@ -172,7 +172,7 @@ Pertanyaan ini akan muncul lagi di `Ingat kembali` modul `b-xii2-m7` (pertanyaan
 
 ## Kunci dan petunjuk
 
-**Ingat kembali.** 1: log mudah bocor atau dibaca orang lain, dan menyimpan data pribadi menambah kewajiban dan risiko; catat hanya jumlah dan hasil. 2: uji repositori hanya mengizinkan domain `example.com`, `example.id`, `example.net`, `example.org` pada berkas seed. 3: tanyakan alasan komentar, tunjukkan bukti (uji, audit, angka), dan bila masih berbeda minta guru memutuskan; jangan mengabaikannya.
+**Ingat kembali.** 1: validasi di peramban bisa dilewati dan situs statis tidak punya peladen, jadi isian tidak boleh dikirim atau disimpan; produk nyata butuh backend yang memeriksa ulang masukan, membatasi laju, dan menyimpan dengan aman, serta dasar pemrosesan dan pemberitahuan menurut UU PDP (UU 27/2022, Pasal 20 dan 21; bukan nasihat hukum). 2: uji repositori hanya mengizinkan domain `example.com`, `example.id`, `example.net`, `example.org` pada berkas seed. 3: tanyakan alasan komentar, tunjukkan bukti (uji, audit, angka), dan bila masih berbeda minta guru memutuskan; jangan mengabaikannya.
 
 **Rencana sprint.** Prediksi: tidak ada jawaban tunggal; periksa bahwa perkiraan ditulis sebelum menguji. Keluaran dijalankan penyusun. Angka uji repositori dari `bun test` pada salinan lab (waktu berbeda tiap mesin). Perilaku `bun test` yang menimpa `dist/` dibaca dari `apps/storefront/tests/build-smoke.test.ts`, yang menghapus `dist` lalu membangun ulang. Pada `ringkas-uji.ts`: `U6` menghasilkan dua catatan, dan hasil ringkasan `lulus 3, gagal 2, belum 1`.
 

@@ -375,6 +375,7 @@ silabus mengikuti alur di [`pemilik-peninjau.md`](pemilik-peninjau.md).
 | A | Komputer dengan g++ (C++17 atau lebih baru), editor, terminal; tanpa internet pun memadai. |
 | B | Komputer dengan Bun (versi mengikuti `awcms-one`, saat ini 1.4.4), Node tidak wajib, peramban modern, Git, editor; akses internet untuk paket. |
 | B (opsi 1 kelas XII) | Satu atau beberapa mesin lab yang mampu menjalankan Docker dan PostgreSQL; spesifikasi minimum belum terverifikasi. |
+| B (cadangan tanpa Docker, kelas XII) | Bila mesin lab tidak menjalankan Docker dan PostgreSQL, profil `landing` tetap dapat di-build dengan tiruan uji milik repositori turunan (`apps/storefront/scripts/stub-awcms.mjs`; perintahnya di modul `b-xii1-m4`, dijalankan penyusun 2026-11-20 pada `awcms-one` 0.20.0). Batasnya: tanpa penyemaian CMS (`db:seed:cms:profil landing`) dan tanpa pengisian FAQ di CMS; isi halaman berasal dari data tiruan, bukan dari berkas contoh murid, dan tidak membuktikan apa pun tentang CMS sungguhan. |
 | C | ESP32 DevKit (satu per kelompok tiga murid), komputer lab dengan kompiler C++ dan alat unggah, komponen elektronik dasar, daya USB atau baterai bertegangan rendah (tanpa listrik jaringan); jaringan lab terpisah dan penengah pesan lokal di komputer guru untuk kelas XI semester 2. Sekolah tanpa perangkat: set dipinjamkan mitra bergilir. |
 | D | Komputer lab dengan Orange Data Mining (kelas X); Python dengan `pandas` dan `scikit-learn` mulai kelas XI; spesifikasi minimum menunggu survei lab. Pemakaian AI generatif oleh murid bebas dengan etika (silabus bagian 7.4); murid tidak wajib punya akun pribadi. |
 | E | Peramban untuk Quirk; C++ (jalur A) atau Bun (jalur B) untuk simulator buatan sendiri; demonstrasi guru dengan Python dan Qiskit serta, bila ada, satu akun sekolah atau lembaga untuk cloud quantum. |
@@ -392,7 +393,8 @@ diaudit mitra, ditinjau pemilik (silabus bagian 3.3 dan 9.3).
 - Contoh data di silabus bersifat sintetis. Latihan kata sandi dan privasi
   memakai akun uji, bukan akun pribadi siswa.
 - Proyek web siswa (formulir kontak dan sejenisnya) tidak boleh mengumpulkan
-  data pribadi nyata; rahasia dan berkas `.env` tidak boleh di-commit.
+  data pribadi nyata; formulir kontak modul `b-xii2-m5` ada di situs turunan
+  murid dan tidak mengirim, menyimpan, atau mencatat apa pun; rahasia dan berkas `.env` tidak boleh di-commit.
 - Hasil kerja dan nilai siswa Anda simpan di sistem sekolah, bukan di sini.
 
 ## Kebijakan penggunaan AI (silabus v1.3)

@@ -4,7 +4,7 @@ Modul ini untuk murid kelas XII jalur B (Web dengan JavaScript, TypeScript, dan 
 
 Modul ini berstatus DRAF: karangan penyusun, belum ditinjau pemilik. Butir `F-BK-a` (proses rekayasa) dipetakan silabus sebagai dipenuhi jalur ini; modul draf ini belum dihitung memenuhinya. Keluaran minggu ini: demo. Penilaian memakai rubrik gurumu; bobot dan predikat mengikuti kebijakan sekolah `[belum terverifikasi]`.
 
-**Konteks semester ini.** Kelasmu mengkustomisasi profil `landing` dari `awcms-one` sebagai studi kasus: hanya merek, konten, tema, SEO, dan dokumentasi, tanpa menyentuh backend (`main`, 2026-11-20). Demo dijalankan di `localhost` pada komputer lab. Contoh dijalankan penyusun dengan Bun 1.4.4 per 2026-11. Perintah `bun run build` dan `bun run serve` ada di `package.json` `awcms-one` (dibaca 2026-11-20); penyusun tidak menjalankannya pada repositori turunan `[belum terverifikasi]`, jadi gurumu yang memastikan lingkungannya. Semua nama dan konten karangan.
+**Konteks semester ini.** Kelasmu mengkustomisasi profil `landing` dari `awcms-one` sebagai studi kasus: hanya merek, konten, tema, SEO, dokumentasi, dan satu formulir kontak, tanpa menyentuh backend (`main`, 2026-11-20). Demo dijalankan di `localhost` pada komputer lab. Contoh dijalankan penyusun dengan Bun 1.4.4 per 2026-11. Perintah `bun run build` dan `bun run serve` ada di `package.json` `awcms-one` (dibaca 2026-11-20); penyusun tidak menjalankannya pada repositori turunan `[belum terverifikasi]`, jadi gurumu yang memastikan lingkungannya. Semua nama dan konten karangan.
 
 ## Ingat kembali
 
