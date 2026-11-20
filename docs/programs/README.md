@@ -127,6 +127,6 @@ sumbernya.
 | v2.6.2 | 2026-11-20 | Jumlah modul `sma-coding` mengikuti putaran P2 jalur A dan B (#237): 281 modul, total 641. |
 | v2.6.3 | 2026-11-20 | Jumlah modul `sma-coding` mengikuti putaran P3 jalur A dan B (#237): 309 modul, total 669. |
 | v2.6.4 | 2026-11-20 | Jumlah modul `sma-coding` mengikuti putaran P4 jalur A dan B (#237): 337 modul, total 697. |
-| v2.6.6 | 2026-11-20 | Jumlah modul `sma-coding` mengikuti putaran P6 jalur A dan B (#237): 393 modul, total 753; seri 154 modul jalur A dan B lengkap. |
 | v2.6.5 | 2026-11-20 | Jumlah modul `sma-coding` mengikuti putaran P5 jalur A dan B (#237): 365 modul, total 725. |
+| v2.6.6 | 2026-11-20 | Jumlah modul `sma-coding` mengikuti putaran P6 jalur A dan B (#237): 393 modul, total 753; seri 154 modul jalur A dan B lengkap. |
 | v2.6.0 | 2026-11-19 | Sinkron dokumen (#124): status modul belajar tiap program (599 modul draf di enam program, lembar dan gambar TK dan SD), tautan ke `catatan-tinjauan-modul.md`; isi jembatan tidak berubah. |

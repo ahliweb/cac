@@ -11,7 +11,7 @@ programme's own syllabus version (`syllabusVersion` / `syllabusDate`), which
 tracks that programme's source document and is registered per programme in
 `data/programs.json` (ADR-0006). Currently seven programmes are
 registered: `osn` at syllabus version `2.0`, dated `2026-09-04`,
-`sma-coding` at `1.4.0`, `tk-coding` at `1.0.2`, `sd-coding` at `1.1.0`,
+`sma-coding` at `1.4.1`, `tk-coding` at `1.0.3`, `sd-coding` at `1.1.0`,
 `smp-coding` at `1.2.0`, `kuliah-coding` at `1.2.0` and `dewasa-coding` at
 `1.2.0`. See
 [`docs/development/releasing.md`](docs/development/releasing.md) for how the
@@ -20,6 +20,101 @@ two relate.
 ## [Unreleased]
 
 Nothing yet.
+
+## [2.6.0] — 2026-11-20
+
+Curriculum as Code identity in the code (the canonical CLI `cac`, the package
+`curriculum-as-code`), the complete track A and B module series of
+`sma-coding`, and two syllabus patch revisions. **No breaking changes** — see
+[`docs/releases/v2.6.0.md`](docs/releases/v2.6.0.md). Every module is a draft:
+all 753 modules of the six coding programmes (`tk-coding` 48, `sd-coding` 168,
+`smp-coding` 84, `sma-coding` 393, `kuliah-coding` 24, `dewasa-coding` 36)
+have status `draf`, and none is approved by the owner. The OSN corpus
+(transcribed syllabus content) and `docs/silabus/` are unchanged since
+v2.5.0.
+
+### Added
+
+- **`cac` command** ([#251], part of epic #150): `cac` (`bin.cac`, entry
+  `src/cli/cac.ts`) is the canonical CLI name; `osn` stays as an alias that
+  behaves identically. Both thin entries call one `runCli`, which receives
+  the caller name, so usage, help and message prefixes follow it
+  (`cac validate: ...` versus `osn validate: ...`). `osn` output is unchanged
+  (checked against the golden baseline of [#153]), `--json` and exit codes
+  are identical, Markdown artefact titles are unchanged, and no deprecation
+  warning is printed. No change to data, schemas or domain.
+- **154 draft modules for `sma-coding` tracks A (C++) and B (web with
+  JavaScript, TypeScript and Bun)** ([#237], continuing [#124]): 77 + 77
+  modules in six rounds (grade X to XII), each with its entry in
+  `data/sma-coding/modules.json`, following the design document
+  `docs/programs/sma-coding/rancangan-modul-ab.md` approved by the owner.
+  Track B uses `awcms-one` only as a case study of the `landing` profile.
+  `sma-coding` now has 393 modules and the six programmes 753; all `draf`
+  (ADR-0007).
+- **Identity requirements** `IDENTITY-CAC-001..010` registered and checked
+  by `check:requirements`; CI runs `validate` with both CLI names and runs
+  `check:requirements` ([#255]).
+- **Contract tests** for both CLI names, every programme and the registry
+  invariants ([#254], `tests/integration/cli-contract.test.ts`).
+- **Migration preparation documents** (phase F1, [#152], [#153], [#154],
+  [#155], [#156], [#157]) in `docs/migrations/`: consumer inventory, CLI
+  contract, invariants (sha256 baseline of 71 `data/**/*.json` files),
+  security and recovery, Gate 9 review, final runbook with a migration-log
+  template. Documentation only; the repository rename has not happened.
+- **Release notes** `docs/releases/v2.6.0.md` ([#256]).
+- **`check:module-code` checks `ts` and `js`**: fenced `ts`/`typescript` and
+  `js`/`javascript` blocks in `content/**/modules/*.md` are checked with the
+  built-in `Bun.Transpiler` (syntax only, no type check, nothing run; no new
+  dependency). A `ts setengah-jadi` block is skipped and counted.
+
+### Changed
+
+- **Package renamed** ([#252], Gate 9 decision K6, ADR-0009 item 5):
+  `package.json` `name` from `kurikulum-informatika` to `curriculum-as-code`,
+  plus `bun.lock` and `packageInfo.name` in `src/index.ts`. The package stays
+  `private: true` and unpublished; the SemVer (`--version`) and every
+  `syllabusVersion` are unchanged. A consumer that reads `packageInfo.name`
+  or the lockfile package name must adopt the new name.
+- **Documentation aligned with CaC** ([#253]): README, AGENTS.md, CLI
+  reference, user guides and governance documents write `cac` as the
+  canonical command and `osn` as the compatible alias with its removal policy
+  (only in a MAJOR release, at the earliest six months after the
+  announcement, with no active consumer). The programme id `osn`, data,
+  syllabi, the non-affiliation notice and the repository URL `ahliweb/osn`
+  are unchanged.
+- **Syllabus patch revisions**: `sma-coding` v1.4.1 ([#238], owner
+  instruction 2026-11-19) aligns the legal-basis wording of `B-XI2-M10`,
+  `B-XII2-M10`, `C-XII1-M11`, `D-XII1-M4`, item `F-LD-g` (sections 4.1 and
+  4.5) and decision 9 with UU 1/2023 (KUHP), which since 2 January 2026
+  repeals part of the criminal provisions of the ITE Law; week codes, week
+  count, CP mapping and tracks are unchanged. `tk-coding` v1.0.3 ([#239]):
+  objective 4 no longer mentions "belok kanan"; the 48-week plan trains only
+  left and left-right of the body. `syllabusVersion` in the affected
+  `data/<id>/*.json` and `data/programs.json` moved with them, and the tests
+  that pin the versions were updated.
+- **Review notes of the modules verified** ([#125]): points of
+  `docs/programs/catatan-tinjauan-modul.md` were checked against official
+  sources (MakeCode micro:bit and Scratch block names, an over-long "Ingat
+  kembali" trimmed to five questions, vocabulary of the box and card machines
+  explained, IBM Quantum service facts and Qiskit version rechecked for
+  2026-11). The file records the result and what remains for a human
+  reviewer; no approval or human review is recorded.
+- **Owner follow-up on track B** (decision 2026-11-20, [#269]): module
+  `b-xii2-m5` is rewritten so the contact form lives on the `/kontak` page of
+  the learner's own `landing` derivative site, with in-browser validation,
+  accessible errors and confirmation, and without storing, logging or sending
+  the input; the modules that refer to it were aligned. `b-xii1-m4` gained a
+  "Cadangan tanpa Docker" note (building the `landing` profile with the test
+  mock data of the repository, no CMS, with its limits), referenced from four
+  other modules. `rancangan-modul-ab.md` and `catatan-tinjauan-modul.md`
+  moved to v0.3.0.
+
+### Notes
+
+- All 753 modules are `draf`. Human review of the modules is still open
+  ([#125]); a parallel evaluation by teachers has not happened.
+- The repository is still `ahliweb/osn`. The rename to `ahliweb/cac` (phase
+  F3) waits for Gate 15 and the owner's explicit permission ([#150]).
 
 ## [2.5.0] — 2026-11-19
 
@@ -650,7 +745,8 @@ documentation the syllabus itself mandates.
   and the entry says so; the next check must perform the live verification
   per [`docs/operations/syllabus-check.md`](docs/operations/syllabus-check.md).
 
-[Unreleased]: https://github.com/ahliweb/osn/compare/v2.5.0...HEAD
+[Unreleased]: https://github.com/ahliweb/osn/compare/v2.6.0...HEAD
+[2.6.0]: https://github.com/ahliweb/osn/compare/v2.5.0...v2.6.0
 [2.5.0]: https://github.com/ahliweb/osn/compare/v2.4.0...v2.5.0
 [2.4.0]: https://github.com/ahliweb/osn/compare/v2.3.0...v2.4.0
 [2.3.0]: https://github.com/ahliweb/osn/compare/v2.2.0...v2.3.0
@@ -683,3 +779,20 @@ documentation the syllabus itself mandates.
 [#140]: https://github.com/ahliweb/osn/issues/140
 [#151]: https://github.com/ahliweb/osn/issues/151
 [#165]: https://github.com/ahliweb/osn/issues/165
+[#150]: https://github.com/ahliweb/osn/issues/150
+[#152]: https://github.com/ahliweb/osn/issues/152
+[#153]: https://github.com/ahliweb/osn/issues/153
+[#154]: https://github.com/ahliweb/osn/issues/154
+[#155]: https://github.com/ahliweb/osn/issues/155
+[#156]: https://github.com/ahliweb/osn/issues/156
+[#157]: https://github.com/ahliweb/osn/issues/157
+[#237]: https://github.com/ahliweb/osn/issues/237
+[#238]: https://github.com/ahliweb/osn/issues/238
+[#239]: https://github.com/ahliweb/osn/issues/239
+[#251]: https://github.com/ahliweb/osn/issues/251
+[#252]: https://github.com/ahliweb/osn/issues/252
+[#253]: https://github.com/ahliweb/osn/issues/253
+[#254]: https://github.com/ahliweb/osn/issues/254
+[#255]: https://github.com/ahliweb/osn/issues/255
+[#256]: https://github.com/ahliweb/osn/issues/256
+[#269]: https://github.com/ahliweb/osn/issues/269
