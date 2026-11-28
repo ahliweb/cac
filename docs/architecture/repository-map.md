@@ -241,7 +241,9 @@ approves). Today: `ilmu-belajar-kognitif.md` (issue #133), the
 cognitive-science reference on effective learning with per-programme
 recommendations, and `ai-rekayasa-perangkat-lunak.md` (issue #139), the
 research on AI in software engineering behind the per-programme AI-use
-policies. They change no syllabus, corpus or programme document by
+policies; and `ai-assisted-discovery-design-specification-2026-11-28.md`, a draft
+evidence review on AI-assisted discovery, design and specification (input for
+issues #302 and #304, proposals only). They change no syllabus, corpus or programme document by
 themselves; the policies live in each programme's own syllabus (and, for OSN,
 in `docs/operations/kebijakan-ai-osn.md`).
 
