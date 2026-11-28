@@ -142,6 +142,8 @@ issues backing each milestone.
 
 ## Further reading
 
+- [`docs/riset/osn-video-pembahasan-2026.md`](docs/riset/osn-video-pembahasan-2026.md) — DRAF kurasi video pembahasan OSN Informatika, validasi per soal dan rencana pengayaan 28 minggu (#306–#309); bukan materi yang sudah disetujui.
+
 - [`docs/development/testing.md`](docs/development/testing.md) — testing strategy and coverage gate.
 - [`docs/development/ci-cd.md`](docs/development/ci-cd.md) — what CI runs and why.
 - [`docs/development/releasing.md`](docs/development/releasing.md) — changesets, versioning, release procedure.
