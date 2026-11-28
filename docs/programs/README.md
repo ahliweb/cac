@@ -1,7 +1,7 @@
 # Peta Jenjang Program Pembelajaran Coding
 
-- **Version:** v2.7.2
-- **Last updated:** 2026-11-20
+- **Version:** v2.8.0
+- **Last updated:** 2026-11-28
 - **Status:** Dokumen peta (navigasi), bukan silabus. Isinya merangkum keadaan nyata folder program di `docs/programs/`, pembinaan OSN di `docs/silabus/`, dan registri `data/programs.json`. Menyebut status; tidak mengubah isi dokumen program mana pun.
 
 > Ketujuh program (OSN dan enam program coding) **disetujui pemilik dan
@@ -104,6 +104,10 @@ semua program:
 Kedua dokumen tidak mengubah silabus atau korpus; perubahan program dikerjakan
 lewat silabus program yang bersangkutan setelah pemilik menyetujui.
 
+### Materi pengayaan lintas program — AWSES
+
+[Panduan belajar AhliWeb Software Engineering Standard (AWSES)](awses.md) adalah materi karangan publik berstatus DRAF. Peta penerapan dari TK/SD hingga SMA, kuliah dan dewasa, contoh sintetis, latihan serta rubrik tersedia di sana. Tidak menambah program, SKS atau jam belajar dan tidak mengubah korpus/silabus yang disetujui. Integrasi formal mengikuti ADR-0007 dan review program; pagar AI per jenjang tetap berlaku.
+
 ## 5. Cara memperbarui peta ini
 
 Perbarui bila: sebuah silabus disetujui, direvisi, atau didaftarkan (`data/programs.json`
@@ -116,6 +120,7 @@ sumbernya.
 
 | Versi | Tanggal | Perubahan |
 | --- | --- | --- |
+| v2.8.0 | 2026-11-28 | Indeks panduan pengayaan AWSES (DRAF), tanpa perubahan korpus atau silabus (#302). |
 | v1.0.0 | 2026-11-19 | Peta awal: alur jenjang TK sampai dewasa, tabel program dan status nyata, jembatan, dan rujukan riset ilmu kognitif (issue #127, #128, #129, #130, #131, #133). |
 | v2.0.0 | 2026-11-19 | Keadaan nyata: enam program coding disetujui, terdaftar, dan dienkode (versi silabus sama dengan registri); kolom kebijakan AI per program (#139); tautan `silabus.md`; rujukan dua dokumen riset (#127, #128, #129, #130, #131, #133, #139, #140). |
 | v2.0.1 | 2026-11-19 | Versi silabus tk, sd, smp, kuliah, dan dewasa ke revisi patch (issue #165); kalimat riwayat "belum ada" di bagian 3 disesuaikan dengan silabus yang sudah diperbaiki. |

@@ -140,6 +140,10 @@ See `gh issue list --repo ahliweb/cac --state all` (or the
 [Issues](https://github.com/ahliweb/cac/issues) tab) for the individual
 issues backing each milestone.
 
+## AWSES — public software engineering learning guide
+
+[AhliWeb Software Engineering Standard (AWSES)](docs/programs/awses.md) is an Indonesian, technology-neutral **draft supplementary learning guide** covering requirements, business processes, architecture, security, contracts, testing, AI-assisted engineering, release and continuous improvement. It is not a new registered programme or approved syllabus; age-appropriate AI policies and curriculum review remain in force.
+
 ## Further reading
 
 - [`docs/development/testing.md`](docs/development/testing.md) — testing strategy and coverage gate.
