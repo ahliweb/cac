@@ -82,7 +82,7 @@ bun test
 | `docs/silabus/` | The faithful Markdown transcription of the source syllabus PDF. |
 | `docs/*.pdf` | The source syllabus document itself. |
 | `docs/programs/` | Source documents of the programmes other than OSN (ADR-0006), one folder per programme id, and the level map `README.md` (TK → SD → SMP → SMA → university → adult). All six programmes are approved by the owner, registered and encoded (2026-11-19): `sma-coding` syllabus v1.4.2 (tracks A–E), `tk-coding` v1.0.3, `kuliah-coding` v1.2.1, `dewasa-coding` v1.2.1, `sd-coding` v1.1.0 and `smp-coding` v1.2.0. Each folder's `silabus.md` is the authored source of `data/<id>/` (ADR-0007). |
-| `docs/riset/` | Cross-programme research (authored): `ilmu-belajar-kognitif.md` (cognitive science of effective learning) and `ai-rekayasa-perangkat-lunak.md` (AI in software engineering, the basis of the per-programme AI policies, issue [#139](https://github.com/ahliweb/cac/issues/139)). |
+| `docs/riset/` | Cross-programme research (authored): `ilmu-belajar-kognitif.md` (cognitive science of effective learning) and `ai-rekayasa-perangkat-lunak.md` (AI in software engineering, the basis of the per-programme AI policies, issue [#139](https://github.com/ahliweb/cac/issues/139)); plus `ai-assisted-discovery-design-specification-2026-11-28.md` (draft evidence review on AI-assisted discovery, design and specification, input for #302 and #304; proposals only). |
 | `.github/workflows/` | CI pipeline (`ci.yml`). |
 | `.github/ISSUE_TEMPLATE/` | Bug, feature, and curriculum-change issue forms. |
 | `.changeset/` | Pending changesets (see `docs/development/releasing.md`). |
